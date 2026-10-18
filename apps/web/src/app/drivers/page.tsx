@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next';
 import { getData, type Driver } from '@/lib/api';
 export const metadata: Metadata = { title: 'Пилоты' };
