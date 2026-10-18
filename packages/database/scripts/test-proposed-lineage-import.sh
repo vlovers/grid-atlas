@@ -9,14 +9,19 @@ INSERT INTO data_sources(slug,homepage_url,attribution)
 VALUES ('lineage-import-ci','https://example.org','Disposable integration fixture')
 ON CONFLICT(slug) DO NOTHING;
 INSERT INTO external_identities(source_id,entity_kind,external_id)
-SELECT id,'constructor',v.external_id FROM data_sources
-CROSS JOIN (VALUES ('alpha'),('beta')) AS v(external_id)
+SELECT id,v.kind,v.external_id FROM data_sources
+CROSS JOIN (VALUES ('constructor','alpha'),('constructor','beta'),('entrant','entrant-a'),('entrant','entrant-b')) AS v(kind,external_id)
 WHERE slug='lineage-import-ci'
 ON CONFLICT DO NOTHING;
 INSERT INTO historical_constructors(external_identity_id,display_name)
 SELECT x.id,x.external_id FROM external_identities x
 JOIN data_sources s ON s.id=x.source_id
 WHERE s.slug='lineage-import-ci' AND x.entity_kind='constructor'
+ON CONFLICT(external_identity_id) DO NOTHING;
+INSERT INTO historical_entrants(external_identity_id,display_name)
+SELECT x.id,x.external_id FROM external_identities x
+JOIN data_sources s ON s.id=x.source_id
+WHERE s.slug='lineage-import-ci' AND x.entity_kind='entrant'
 ON CONFLICT(external_identity_id) DO NOTHING;
 SQL
 python3 - "$tmp" <<'PY'
@@ -32,6 +37,15 @@ def item(target):
  "evidence_note":"Synthetic fixture only","accessed_at":"2026-10-18"}
 (root/"good.json").write_text(json.dumps([item("beta")]))
 (root/"bad.json").write_text(json.dumps([item("beta"),item("missing")]))
+entrant = item("entrant-b")
+entrant["entity_type"] = "entrant"
+entrant["subject"]["external_id"] = "entrant-a"
+entrant["relation_type"] = "assets_acquired_by"
+entrant["source_url"] = "https://example.org/entrant-fixture"
+(root/"entrant.json").write_text(json.dumps([entrant]))
+bad_entrant = dict(entrant)
+bad_entrant["object"] = {"source_slug":"lineage-import-ci","external_id":"missing-entrant"}
+(root/"bad-entrant.json").write_text(json.dumps([entrant,bad_entrant]))
 PY
 if python3 packages/database/scripts/import-proposed-lineage.py "$tmp/bad.json"; then
  echo "Expected unresolved identity to fail" >&2; exit 1
@@ -63,4 +77,24 @@ DO $$ BEGIN
  THEN RAISE EXCEPTION 'Reviewed claim changed'; END IF;
 END $$;
 SQL
-echo "Lineage importer integration passed."
+if python3 packages/database/scripts/import-proposed-lineage.py "$tmp/bad-entrant.json"; then
+ echo "Expected unresolved entrant identity to fail" >&2; exit 1
+fi
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -Atc "SELECT count(*) FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture'" | grep -qx 0
+python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.json"
+python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.json"
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
+DO $check$ BEGIN
+ IF (SELECT count(*) FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture')<>1
+ THEN RAISE EXCEPTION 'Entrant import was not idempotent'; END IF;
+ IF EXISTS (SELECT 1 FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture' AND review_status<>'proposed')
+ THEN RAISE EXCEPTION 'Entrant import must be proposed'; END IF;
+END $check$;
+UPDATE historical_entrant_lineage_claims SET review_status='rejected',reviewer='integration-test',reviewed_at=now()
+WHERE source_url='https://example.org/entrant-fixture';
+SQL
+if python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.json"; then
+ echo "Expected rejected entrant claim protection" >&2; exit 1
+fi
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -Atc "SELECT count(*) FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture' AND review_status='rejected'" | grep -qx 1
+echo "Constructor and entrant lineage importer integration passed."
