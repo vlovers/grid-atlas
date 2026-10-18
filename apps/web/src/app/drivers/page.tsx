@@ -27,7 +27,7 @@ export default async function Drivers({ searchParams }: { searchParams: Promise<
     <h1>Пилоты</h1>
     <p className="lead">Исторический каталог пилотов Формулы-1 в алфавитном порядке. Страница {page}.</p>
     {drivers.length ? <div className="driver-grid">{drivers.map(d =>
-      <article className="driver" key={d.id}><span className="index">{d.external_id}</span><h2>{d.name}</h2></article>
+      <Link className="driver" key={d.id} href={`/drivers/${d.id}`}><span className="index">{d.external_id}</span><h2>{d.name}</h2></Link>
     )}</div> : <p>На этой странице пилотов нет.</p>}
     <nav className="actions" aria-label="Страницы каталога пилотов">
       {page > 1 && <Link className="secondary" href={page === 2 ? '/drivers' : `/drivers?page=${page - 1}`}>← Предыдущая</Link>}
