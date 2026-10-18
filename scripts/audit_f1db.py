@@ -12,7 +12,12 @@ import sys
 import zipfile
 from collections import Counter
 from pathlib import Path
-from scripts.f1db_relationships import verify
+try:
+    from scripts.f1db_relationships import verify
+except ModuleNotFoundError as exc:
+    if exc.name != "scripts":
+        raise
+    from f1db_relationships import verify
 
 ASSET = "f1db-json-splitted.zip"
 EXPECTED_CATEGORIES = ("drivers", "constructors", "entrants", "races", "seasons")
