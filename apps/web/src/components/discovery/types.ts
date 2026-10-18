@@ -1,6 +1,11 @@
 /** All text and number/date formatting belong to the caller's locale. */
 export type ArchiveLink = Readonly<{ href: string; label: string }>;
 
+export type RelatedEntityLink = ArchiveLink & Readonly<{
+  /** Canonical entity kind + ID, independent of locale, label, and URL. */
+  id: string;
+}>;
+
 export type Disclosure = Readonly<{
   label: string;
   text: string;
@@ -34,15 +39,17 @@ export type CareerEntry = Readonly<{
   title: string;
   summary: string;
   destination?: ArchiveLink;
-  /** One entry may contain several teams or other independently named records. */
   detail?: Disclosure;
-  entities?: readonly ArchiveLink[];
+  /** Multiple canonical entities are allowed; repeated IDs retain the first link within this entry. */
+  entities?: readonly RelatedEntityLink[];
 }>;
 
 export type RelatedJourney = Readonly<{
+  /** Stable verified relation ID. Repeated IDs collapse; distinct relations remain. */
   id: string;
   kind: string;
   destination: ArchiveLink;
+  /** Verified observation or reviewed editorial relation; never inferred from names. */
   relationship: string;
   context?: string;
 }>;

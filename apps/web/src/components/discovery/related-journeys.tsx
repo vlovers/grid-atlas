@@ -1,4 +1,5 @@
 import type { RelatedJourney } from './types';
+import { uniqueById } from './unique-by-id';
 import styles from './discovery.module.css';
 
 export type RelatedJourneysProps = Readonly<{
@@ -10,7 +11,7 @@ export type RelatedJourneysProps = Readonly<{
 export function RelatedJourneys({ label, items, emptyLabel }: RelatedJourneysProps) {
   return <nav className={styles.surface} aria-label={label}>
     {items.length ? <ul className={styles.journeys}>
-      {items.map(item => <li key={item.id}>
+      {uniqueById(items).map(item => <li key={item.id}>
         <a className={styles.journey} href={item.destination.href}>
           <span className={styles.journeyKind}>{item.kind}</span>
           <span className={styles.journeyContent}>

@@ -1,5 +1,6 @@
 import type { CareerEntry } from './types';
 import { RecordDetail } from './record-detail';
+import { uniqueById } from './unique-by-id';
 import styles from './discovery.module.css';
 
 export type CareerTimelineProps = Readonly<{
@@ -20,7 +21,7 @@ export function CareerTimeline({ label, entries, emptyLabel, note }: CareerTimel
           <h3 className={styles.entryTitle}>{entry.title}</h3>
           <p className={styles.copy}>{entry.summary}</p>
           {!!entry.entities?.length && <ul className={styles.entityLinks}>
-            {entry.entities.map(entity => <li key={entity.href}><a className={styles.entityLink} href={entity.href}>{entity.label}<span aria-hidden="true"> ↗</span></a></li>)}
+            {uniqueById(entry.entities).map(entity => <li key={entity.id}><a className={styles.entityLink} href={entity.href}>{entity.label}<span aria-hidden="true"> ↗</span></a></li>)}
           </ul>}
           {entry.destination && <a className={styles.textLink} href={entry.destination.href}>{entry.destination.label}<span aria-hidden="true"> ↗</span></a>}
           {entry.detail && <RecordDetail detail={entry.detail} />}

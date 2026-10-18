@@ -26,10 +26,10 @@ const cards: readonly DiscoveryItem[] = [
 const career: readonly CareerEntry[] = [
   { id: '2001', period: '2001', title: 'Two supplied constructor records', summary: '3 recorded entries · 0 wins',
     destination: { href: '/preview/season-2001', label: 'Explore fixture season' },
-    entities: [{ href: '/preview/constructor-a', label: 'Fixture Constructor A' }, { href: '/preview/constructor-b', label: 'Fixture Constructor B' }],
+    entities: [{ id: 'constructor:a', href: '/preview/constructor-a', label: 'Fixture Constructor A' }, { id: 'constructor:b', href: '/preview/constructor-b', label: 'Fixture Constructor B' }],
     detail: { label: 'Read entry context', text: 'This synthetic entry exercises a season with multiple constructors. No merger, rename or continuous identity is implied.' } },
   { id: '2003', period: '2003', title: 'Another supplied season', summary: 'Only supplied entries appear. No record is inferred for the intervening year.',
-    entities: [{ href: '/preview/constructor-b', label: 'Fixture Constructor B' }] },
+    entities: [{ id: 'constructor:b', href: '/preview/constructor-b', label: 'Fixture Constructor B' }] },
 ];
 
 const journeys: readonly RelatedJourney[] = [
@@ -41,12 +41,29 @@ const journeys: readonly RelatedJourney[] = [
     relationship: 'Connects the supplied driver and constructor records', context: 'Relationships come from fixture data, not name matching.' },
 ];
 
+// Duplicate source observations exercise ID-based deduplication, without merging names or URLs.
+const repeatedCareer: readonly CareerEntry[] = career.map(entry => ({ ...entry, entities: [
+  { id: 'constructor:a', href: '/preview/constructor-a', label: 'Shared fixture name' },
+  { id: 'constructor:a', href: '/preview/constructor-a?duplicate=1', label: 'Duplicate constructor row' },
+  { id: 'constructor:b', href: '/preview/constructor-b', label: 'Shared fixture name' },
+] }));
+const repeatedJourneys: readonly RelatedJourney[] = [
+  { ...journeys[0], id: 'driver:a:result-season:2001', relationship: 'Recorded in the 2001 fixture season' },
+  { ...journeys[0], id: 'driver:a:result-season:2001', relationship: 'Duplicate observation row',
+    destination: { href: '/preview/driver-a?duplicate=1', label: 'Duplicate driver row' } },
+  { ...journeys[0], id: 'driver:a:result-season:2003', relationship: 'Recorded in the 2003 fixture season' },
+];
+
 export function ComponentPreview({ variant = 'default' }: { variant?: string }) {
   const empty = variant === 'empty';
   const stress = variant === 'stress';
   const french = variant === 'fr';
+  const identity = variant === 'identity';
   const longLabel = 'LongUnbrokenFixtureRecord'.repeat(7);
-  const previewFacts = french ? [
+  const previewFacts = identity ? [
+    { id: 'result-entries', label: 'Result entries', value: '3' },
+    { id: 'distinct-races', label: 'Distinct races with recorded results', value: '2' },
+  ] : french ? [
     { id: 'points', label: 'Points', value: new Intl.NumberFormat('fr-FR').format(1234.5) },
     { id: 'wins', label: 'Victoires', value: '0', detail: { label: 'Comprendre ce chiffre', text: 'Données fictives pour tester le composant.' } },
     { id: 'unknown', label: 'Valeur indisponible', value: null },
@@ -54,7 +71,7 @@ export function ComponentPreview({ variant = 'default' }: { variant?: string }) 
 
   return <>
     <header className="preview-header"><span>GRID ATLAS / COMPONENT LAB</span><nav aria-label="Preview variants">
-      <a href="/">Default</a><a href="/?variant=empty">Empty</a><a href="/?variant=stress">Long content</a><a href="/?variant=fr">French props</a>
+      <a href="/">Default</a><a href="/?variant=empty">Empty</a><a href="/?variant=stress">Long content</a><a href="/?variant=fr">French props</a><a href="/?variant=identity">Identity and duplicates</a>
     </nav></header>
     <main className="preview-main">
       <p className="preview-kicker">SYNTHETIC COMPONENT FIXTURES · NO HISTORICAL CLAIMS</p>
@@ -72,11 +89,11 @@ export function ComponentPreview({ variant = 'default' }: { variant?: string }) 
       <section className="preview-section"><h2>A career, one entry at a time</h2>
         <CareerTimeline label="Recorded career" emptyLabel="No supplied career entries."
           note="Caller-supplied order and coverage. The gap between entries makes no claim about activity."
-          entries={empty ? [] : stress ? career.map(entry => ({ ...entry, period: longLabel, title: longLabel, entities: [{ href: '/preview/constructor-a', label: longLabel }] })) : career} />
+          entries={empty ? [] : identity ? repeatedCareer : stress ? career.map(entry => ({ ...entry, period: longLabel, title: longLabel, entities: [{ id: 'constructor:a', href: '/preview/constructor-a', label: longLabel }] })) : career} />
       </section>
       <section className="preview-section"><h2>Where next?</h2>
         <RelatedJourneys label="Related archive journeys" emptyLabel="No supplied related records."
-          items={empty ? [] : stress ? journeys.map(item => ({ ...item, kind: longLabel, destination: { ...item.destination, label: longLabel } })) : journeys} />
+          items={empty ? [] : identity ? repeatedJourneys : stress ? journeys.map(item => ({ ...item, kind: longLabel, destination: { ...item.destination, label: longLabel } })) : journeys} />
       </section>
     </main>
     <footer className="preview-footer">Isolated component preview · no API, database, licensed artwork or production routes.</footer>

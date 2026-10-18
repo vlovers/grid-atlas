@@ -65,6 +65,28 @@ test('timeline preserves supplied periods and multiple constructors without infe
   await expect(timeline.getByText(/No merger, rename or continuous identity is implied/)).toBeVisible();
 });
 
+test('stable identities deduplicate repeated rows without merging names, seasons or distinct relations', async ({ page, previewURL }) => {
+  await page.goto(`${previewURL}/?variant=identity`);
+  const facts = page.getByRole('region', { name: 'Career quick facts' });
+  await expect(facts.getByRole('term')).toHaveText(['Result entries', 'Distinct races with recorded results']);
+  await expect(facts.getByRole('definition')).toHaveText(['3', '2']);
+  const entries = page.getByRole('region', { name: 'Recorded career' }).locator(':scope > ol > li');
+  await expect(entries).toHaveCount(2);
+  for (const entry of await entries.all()) {
+    const constructors = entry.getByRole('link', { name: 'Shared fixture name' });
+    await expect(constructors).toHaveCount(2);
+    await expect(constructors.nth(0)).toHaveAttribute('href', '/preview/constructor-a');
+    await expect(constructors.nth(1)).toHaveAttribute('href', '/preview/constructor-b');
+  }
+  const journeys = page.getByRole('navigation', { name: 'Related archive journeys' }).getByRole('link');
+  await expect(journeys).toHaveCount(2);
+  await expect(journeys.nth(0)).toContainText('Recorded in the 2001 fixture season');
+  await expect(journeys.nth(1)).toContainText('Recorded in the 2003 fixture season');
+  for (const link of await journeys.all()) await expect(link).toHaveAttribute('href', '/preview/driver-a');
+  await expect(page.getByText(/Duplicate (constructor|driver|observation) row/)).toHaveCount(0);
+  await expect(page.locator('main a[href*="duplicate"]')).toHaveCount(0);
+});
+
 test('discovery cards and related journeys retain contextual destinations and work without scripts', async ({ page, previewURL }) => {
   await page.goto(previewURL);
   expect(await page.locator('script').count()).toBe(0);
