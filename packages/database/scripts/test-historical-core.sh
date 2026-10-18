@@ -36,3 +36,39 @@ BEGIN
 END $$;
 ROLLBACK;
 SQL
+
+# Lineage claims must have evidence, distinct endpoints and an explicit review before publication.
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
+BEGIN;
+INSERT INTO data_sources(slug, homepage_url, attribution) VALUES
+ ('lineage-test','https://example.org','Fixture only');
+INSERT INTO external_identities(source_id,entity_kind,external_id)
+SELECT id,'constructor','lineage-a' FROM data_sources WHERE slug='lineage-test';
+INSERT INTO external_identities(source_id,entity_kind,external_id)
+SELECT id,'constructor','lineage-b' FROM data_sources WHERE slug='lineage-test';
+INSERT INTO historical_constructors(external_identity_id,display_name)
+SELECT id,'Fixture Team A' FROM external_identities WHERE external_id='lineage-a';
+INSERT INTO historical_constructors(external_identity_id,display_name)
+SELECT id,'Fixture Team B' FROM external_identities WHERE external_id='lineage-b';
+INSERT INTO historical_lineage_claims(subject_constructor_id,object_constructor_id,relation_type,effective_year,source_url,source_title,source_publisher,evidence_note,accessed_at)
+SELECT a.id,b.id,'operations_succeeded_by',2000,'https://example.org/history','Fixture','Fixture publisher','Fixture evidence only',CURRENT_DATE
+FROM historical_constructors a CROSS JOIN historical_constructors b
+WHERE a.display_name='Fixture Team A' AND b.display_name='Fixture Team B';
+DO $$
+BEGIN
+ IF (SELECT count(*) FROM historical_lineage_claims WHERE review_status='proposed') <> 1 THEN
+   RAISE EXCEPTION 'Lineage default review status invalid';
+ END IF;
+ BEGIN
+   UPDATE historical_lineage_claims SET review_status='verified';
+   RAISE EXCEPTION 'Verified claim without reviewer should fail';
+ EXCEPTION WHEN check_violation THEN NULL;
+ END;
+ BEGIN
+   UPDATE historical_lineage_claims SET object_constructor_id=subject_constructor_id;
+   RAISE EXCEPTION 'Self lineage must fail';
+ EXCEPTION WHEN check_violation THEN NULL;
+ END;
+END $$;
+ROLLBACK;
+SQL
