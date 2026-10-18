@@ -84,12 +84,12 @@ psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -Atc "SELECT count(*) FROM historical
 python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.json"
 python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.json"
 psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
-DO $ BEGIN
+DO $check$ BEGIN
  IF (SELECT count(*) FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture')<>1
  THEN RAISE EXCEPTION 'Entrant import was not idempotent'; END IF;
  IF EXISTS (SELECT 1 FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture' AND review_status<>'proposed')
  THEN RAISE EXCEPTION 'Entrant import must be proposed'; END IF;
-END $;
+END $check$;
 UPDATE historical_entrant_lineage_claims SET review_status='rejected',reviewer='integration-test',reviewed_at=now()
 WHERE source_url='https://example.org/entrant-fixture';
 SQL
