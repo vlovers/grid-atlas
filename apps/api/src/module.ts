@@ -2,7 +2,7 @@ import { Module, OnApplicationShutdown, Inject, Injectable } from '@nestjs/commo
 import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
 
-export const DB = 'POSTGRES_POOL';
+import { DB } from './tokens';
 @Injectable()
 export class PoolShutdown implements OnApplicationShutdown {
   constructor(@Inject(DB) private readonly pool: Pool) {}

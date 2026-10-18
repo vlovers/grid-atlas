@@ -1,6 +1,6 @@
 import { BadRequestException, Controller, Get, Inject, Param, Query } from '@nestjs/common';
 import { Pool } from 'pg';
-import { DB } from './module';
+import { DB } from './tokens';
 
 function integer(value: string | undefined, fallback: number, min: number, max: number, label: string): number {
   if (value === undefined) return fallback;
