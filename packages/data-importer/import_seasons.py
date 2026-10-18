@@ -19,7 +19,13 @@ SOURCE = "f1db"
 
 
 def verified_seasons(archive, checksums):
-    from scripts.audit_f1db import checksum_for
+    import re
+    def checksum_for(text, filename):
+        for line in text.splitlines():
+            match = re.fullmatch(r"([0-9a-fA-F]{64})\\s+\\*?(.+?)\\s*", line)
+            if match and Path(match.group(2)).name == filename:
+                return match.group(1).lower()
+        raise ValueError(f"No checksum for {filename}")
     path = Path(archive)
     if path.name != ASSET:
         raise ValueError(f"Expected {ASSET}")
@@ -58,6 +64,16 @@ SELECT pg_advisory_xact_lock(17021951);
 INSERT INTO data_sources(slug,homepage_url,attribution)
 VALUES ('f1db','https://github.com/f1db/f1db','F1DB, CC BY 4.0')
 ON CONFLICT (slug) DO NOTHING;
+DO $guard$
+BEGIN
+ IF EXISTS (
+  SELECT 1 FROM source_releases r JOIN data_sources s ON s.id=r.source_id
+  WHERE s.slug='f1db' AND r.release_tag='v2026.17.0'
+    AND r.artifact_name='f1db-json-splitted.zip' AND r.sha256 <> '${digest}'
+ ) THEN
+  RAISE EXCEPTION 'F1DB release checksum changed';
+ END IF;
+END $guard$;
 INSERT INTO source_releases(source_id,release_tag,artifact_name,sha256)
 SELECT id,'{RELEASE}','{ASSET}','{digest}' FROM data_sources WHERE slug='f1db'
 ON CONFLICT (source_id,release_tag,artifact_name)
