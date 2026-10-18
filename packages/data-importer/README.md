@@ -25,3 +25,15 @@ python3 packages/data-importer/import_drivers.py \
 The importer validates the pinned official F1DB release, loads driver identities, adds source-specific external IDs and SHA-256 per-record observations. Existing display names are **not overwritten** on repeat imports. The PostgreSQL integration CI runs the real release twice and checks that all 917 drivers have exactly one identity and observation. This does not yet import driver race results, biographies or other historical relations.
 
 For now these import utilities are Python scripts inside the pnpm monorepository, deliberately dependency-free. A TypeScript importer package can be considered when API and cross-package code sharing warrant it.
+
+## Constructors, entrants and circuits — phase 3
+
+After the seasons import, run:
+
+```sh
+python3 packages/data-importer/import_teams_circuits.py \
+  --archive /path/to/f1db-json-splitted.zip \
+  --checksums /path/to/checksums_sha256.txt
+```
+
+The importer reads 187 constructors, 830 entrants and 78 circuits in pinned F1DB v2026.17.0; each is a **separate identity kind**. Their source identifiers and per-record SHA-256 observations are stored without overwriting existing display names. CI imports the actual release twice and asserts unchanged counts. Constructor chronology, legal team ownership, circuit layouts, race results and descriptions are out of scope.
