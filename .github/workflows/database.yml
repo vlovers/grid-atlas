@@ -32,4 +32,4 @@ jobs:
       - name: Install PostgreSQL client
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Test forward migration on fresh PostgreSQL
-        run: bash packages/database/scripts/test-migrations.sh
+        run: bash packages/database/scripts/test-historical-core.sh
