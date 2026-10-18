@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 : "${DATABASE_URL:?Set DATABASE_URL}"
-bash packages/database/scripts/apply-migrations.sh
+python3 packages/database/scripts/migrate.py
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
