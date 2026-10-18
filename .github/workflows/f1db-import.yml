@@ -4,6 +4,7 @@ on:
     paths:
       - 'packages/data-importer/**'
       - 'tests/test_import_seasons.py'
+      - 'tests/test_import_drivers.py'
       - '.github/workflows/f1db-import.yml'
   push:
     branches: [main]
@@ -34,7 +35,9 @@ jobs:
       - name: Install PostgreSQL client
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Test importer fixtures
-        run: python3 -m unittest discover -s tests -p test_import_seasons.py -v
+        run: |
+          python3 -m unittest discover -s tests -p test_import_seasons.py -v
+          python3 -m unittest discover -s tests -p test_import_drivers.py -v
       - name: Download and check pinned release
         shell: bash
         run: |
@@ -54,3 +57,13 @@ jobs:
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_seasons')" = 77
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM source_releases')" = 1
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT min(year), max(year) FROM historical_seasons')" = '1950|2026'
+      - name: Import drivers twice without duplicating records
+        shell: bash
+        run: |
+          set -euo pipefail
+          for i in 1 2; do
+            python3 packages/data-importer/import_drivers.py --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
+          done
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_drivers')" = 917
+          test "$(psql "$DATABASE_URL" -X -Atc "SELECT count(*) FROM external_identities WHERE entity_kind='driver'")" = 917
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM source_observations')" = 917

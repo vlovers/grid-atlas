@@ -11,3 +11,17 @@ python3 packages/data-importer/import_seasons.py --archive /path/to/f1db-json-sp
 Guarantees: rejects altered archives, non-integer/duplicate years; insert-only seasons, stable source record, release checksum match and transaction. Repeated import must produce the same count. CI downloads and imports the published release twice into disposable PostgreSQL.
 
 Current limitations: no schema validation beyond the season shape; no full-repository importer, external copyright clearance, or user-defined curated update strategy yet. Source release identity is immutable for a given tag/asset/hash; a conflicting digest causes a DB error on insert if an existing release exists.
+
+## Drivers — phase 2
+
+After importing seasons, run:
+
+```sh
+python3 packages/data-importer/import_drivers.py \
+  --archive /path/to/f1db-json-splitted.zip \
+  --checksums /path/to/checksums_sha256.txt
+```
+
+The importer validates the pinned official F1DB release, loads driver identities, adds source-specific external IDs and SHA-256 per-record observations. Existing display names are **not overwritten** on repeat imports. The PostgreSQL integration CI runs the real release twice and checks that all 917 drivers have exactly one identity and observation. This does not yet import driver race results, biographies or other historical relations.
+
+For now these import utilities are Python scripts inside the pnpm monorepository, deliberately dependency-free. A TypeScript importer package can be considered when API and cross-package code sharing warrant it.
