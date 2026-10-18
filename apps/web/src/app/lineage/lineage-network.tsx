@@ -9,6 +9,12 @@ const relationLabels: Record<string, string> = {
  renamed_to: 'Переименование', ownership_transferred_to: 'Смена владельца',
  operations_succeeded_by: 'Операционная преемственность', assets_acquired_by: 'Передача активов',
 };
+const relationStyles: Record<string, { dash: string; label: string }> = {
+ renamed_to: { dash: '', label: 'Сплошная — переименование' },
+ ownership_transferred_to: { dash: '8 4', label: 'Штриховая — смена владельца' },
+ operations_succeeded_by: { dash: '3 4', label: 'Пунктир — операционная преемственность' },
+ assets_acquired_by: { dash: '12 4 2 4', label: 'Штрих-пунктир — передача активов' },
+};
 const W = 960;
 const NODE_W = 190;
 const NODE_H = 54;
@@ -97,6 +103,7 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
  return <section aria-label="Схема подтверждённых связей">
    <h2>Карта связей</h2>
    <p>Выберите стрелку, чтобы посмотреть тип перехода, год и первоисточник. Схема показывает подтверждённые отношения, а не юридическую преемственность.</p>
+   <p aria-label="Условные обозначения типов связей">{[...new Set(edges.map(edge => edge.relation_type))].map(type => relationStyles[type]?.label ?? relationLabels[type] ?? type).join(' · ')}</p>
    <div className="lineage-controls">
      <label>Выделить команду <select value={focusedTeam} onChange={event => { setFocusedTeam(event.target.value); setSelected(null); }}>
        <option value="all">Все команды</option>
@@ -129,7 +136,7 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
          const key = edge.entity_type + ':' + edge.id;
          const muted = focusedTeam !== 'all' && !focusedEdges.includes(edge);
          return <g key={key} onClick={() => setSelected(key)} role="button" tabIndex={0} onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelected(key); } }} aria-label={`${edge.subject_name} → ${edge.object_name}, ${relationLabels[edge.relation_type] ?? edge.relation_type}`} style={{ cursor: 'pointer' }}>
-           <line x1={startX} y1={startY} x2={endX} y2={endY} stroke="currentColor" strokeWidth={selected === key ? 3 : 1.5} opacity={muted ? 0.12 : selected && selected !== key ? 0.25 : 0.65} markerEnd="url(#lineage-arrowhead)" />
+           <line x1={startX} y1={startY} x2={endX} y2={endY} stroke="currentColor" strokeDasharray={relationStyles[edge.relation_type]?.dash || undefined} strokeWidth={selected === key ? 3 : 1.5} opacity={muted ? 0.12 : selected && selected !== key ? 0.25 : 0.65} markerEnd="url(#lineage-arrowhead)" />
            <circle cx={(startX+endX)/2} cy={(startY+endY)/2} r="12" fill="var(--background, #fff)" stroke="currentColor" />
            <text x={(startX+endX)/2} y={(startY+endY)/2+4} fontSize="11" textAnchor="middle" fill="currentColor">{edge.effective_year ?? '?'}</text>
          </g>;
