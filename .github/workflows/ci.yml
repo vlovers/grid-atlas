@@ -21,3 +21,5 @@ jobs:
         run: npm run check
       - name: Run foundation tests
         run: npm test
+      - name: Run all offline Python tests
+        run: python3 -m unittest discover -s tests -v

@@ -1,22 +1,23 @@
-# Provenance DB foundation (PR 4)
+# PostgreSQL historical database
 
-Initial SQL for source attribution and stable external identities, *not* the full F1 historical ontology.
+Five forward-only migrations implement provenance, source-qualified external identities, drivers, constructors, entrants, seasons, circuits, races, race results and separate constructor / entrant lineage claims. Entity kinds are distinct; source identities do not imply corporate continuity.
 
-- `data_sources` stores the provider and human-readable attribution.
-- `source_releases` records archive tag, asset name and SHA-256.
-- `external_identities` separates source ID, entity type and original identifier; it does **not** equate entrant with constructor.
-- `source_observations` records the content digest seen for an identity in a particular release.
+```sh
+DATABASE_URL=postgresql://... python3 packages/database/scripts/migrate.py
+```
 
-## Design constraints
+The versioned runner serializes migrations with an advisory transaction lock, tracks file checksums, safely replays completed migrations and rejects altered historical files. Add a new numbered migration rather than changing an applied file. `apply-migrations.sh` is a legacy clean-database helper used by early constraint suites; it is not the application migration command.
 
-- No inferred ownership/lineage edges at this stage.
-- No production importer, auto-synchronization or write access from a public API.
-- Never delete source attribution or silently overwrite observations.
-- Hashes prove byte identity, not correctness of external history.
-- Migration SQL runs once against a fresh database. The runner is deliberately basic; migration tracking, incremental upgrades and rollback policy need a separate PR before production use.
+Source releases retain tags, asset names and SHA-256; source observations retain per-identity content hashes. Imports preserve existing historical rows and curated names. Result rows are linked to imported driver / constructor / race identities, but do not yet have independent per-row observation records or an upgrade/reconciliation policy for new release pins.
 
-## Testing
+Lineage has required evidence, distinct endpoints, proposed/verified/rejected review states and review metadata required for verified rows. Independent review is a procedural publication gate; SQL cannot prove a reviewer is independent. Never automatically promote claims. See the [publication runbook](../../docs/data-sources/lineage-publication-runbook.md).
 
-`DATABASE_URL=postgresql://... bash packages/database/scripts/test-migrations.sh`
+Tests require disposable PostgreSQL. Legacy suites expect **separate fresh databases**:
 
-CI executes this against a disposable PostgreSQL 17 instance. A clean application database is required.
+- `bash packages/database/scripts/test-versioned-migrations.sh`: fresh/replayed/appended migrations and checksum rejection.
+- `bash packages/database/scripts/test-migrations.sh`: provenance constraints.
+- `bash packages/database/scripts/test-historical-core.sh`: historical and lineage constraints.
+- `bash packages/database/scripts/test-proposed-lineage-import.sh`: transactional/idempotent proposed-only imports and reviewed-claim protection.
+- `python3 packages/database/scripts/test-lineage-identity-integration.py`: exact source/kind resolution and read-only failures in an owned random schema.
+
+All use `DATABASE_URL`. The API's integration/browser suites also own random schemas. Use the [root README](../../README.md) for complete local import/startup. Production backup/restore, concurrency/load testing and deployment migration rehearsal remain release gates.

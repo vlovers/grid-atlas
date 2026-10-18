@@ -5,12 +5,16 @@ on:
       - 'apps/api/**'
       - 'packages/database/**'
       - 'pnpm-workspace.yaml'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
       - '.github/workflows/api.yml'
   push:
     branches: [main]
     paths:
       - 'apps/api/**'
       - 'packages/database/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
 permissions:
   contents: read
 jobs:
@@ -41,7 +45,7 @@ jobs:
       - name: Install pnpm
         run: corepack enable && corepack prepare pnpm@10.18.3 --activate
       - name: Install API dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Typecheck and build API
         run: pnpm --filter @grid-atlas/api build
       - name: Test verified-only lineage over HTTP and PostgreSQL

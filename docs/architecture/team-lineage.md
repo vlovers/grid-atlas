@@ -2,6 +2,8 @@
 
 Status: proposal, **not** a claim that F1DB already contains team succession data.
 
+Implementation update: migrations 0004/0005 now store constructor and entrant claims separately; the proposed-only importer, exact identity preflight, verified-only public API and interactive explorer are implemented and integration tested. The design notes below retain the original proposal context. Actual relation names are constrained by those migrations; organization identity, cycle policy and append-only review history are still future work. See the [beta audit](../beta-audit.md).
+
 ## Why the existing entities are insufficient
 
 `historical_constructors` and `historical_entrants` are separate entities with namespace-scoped external identities. Race results establish that a driver raced for a constructor, but **do not establish** that one organization succeeded another. Rebranding, chassis constructor naming, entrant naming, ownership transfer, and factory/team continuity must remain distinct.

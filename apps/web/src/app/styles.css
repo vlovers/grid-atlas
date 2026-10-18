@@ -36,3 +36,30 @@
 .lineage-arrow span:nth-child(2){font-size:28px;line-height:1}
 .lineage-arrow small{overflow-wrap:anywhere}
 @media(max-width:650px){.lineage-edge{grid-template-columns:minmax(0,1fr);gap:8px}.lineage-arrow span:nth-child(2){transform:rotate(90deg)}}
+
+:root{--background:#141b22;color-scheme:dark}
+button,input,select{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default;opacity:.5}
+input,select{background:#141b22;color:#eff2f4;border:1px solid #56616b;border-radius:4px;padding:12px;min-width:0;max-width:100%}
+input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid #ed5b48;outline-offset:4px}
+.catalogue-search{margin:32px 0;max-width:760px}
+.catalogue-search label{display:block;color:#b4bec8}
+.catalogue-search .actions{margin-top:10px;gap:12px}
+.catalogue-search input{flex:1 1 240px}
+.lineage-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0}
+.lineage-controls label{display:flex;flex-direction:column;gap:6px;max-width:100%}
+.lineage-controls button{min-width:44px;min-height:44px;padding:10px 16px;background:#141b22;color:#eff2f4;border:1px solid #56616b;border-radius:4px}
+.lineage-controls button[aria-pressed=true]{border-color:#ec624e;background:#572a26}
+.lineage-controls input,.lineage-controls select{width:100%}
+.result-note{display:block;margin-top:5px}
+.mobile-hint{display:none;color:#aebbc4;font-size:13px}
+.source-card{border:1px solid #313941;padding:24px;margin:24px 0;overflow-wrap:anywhere}
+.checksum{font-size:13px;overflow-wrap:anywhere}
+.page a:hover,footer a:hover{text-decoration:underline}
+.skip-link{position:absolute;left:16px;top:-100px;background:#ec624e;color:#101014;padding:12px;z-index:10}
+.skip-link:focus{top:12px}
+.driver,.record,.hero h1,.page h1{overflow-wrap:anywhere}
+.record{grid-template-columns:65px minmax(0,1fr) 20px}
+@media(max-width:750px){.topbar{flex-wrap:wrap;gap:14px}.topbar nav{flex-wrap:wrap;gap:4px 16px;width:100%;font-size:14px}.topbar nav a{display:inline-flex;align-items:center;min-height:44px}.record{grid-template-columns:54px minmax(0,1fr) 16px}.position{font-size:21px}.lineage-controls label{width:100%}}
+@media(max-width:750px){.mobile-hint{display:block}}

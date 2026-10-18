@@ -10,6 +10,12 @@ function integer(value: string | undefined, fallback: number, min: number, max: 
   return n;
 }
 
+function searchTerm(value: string | undefined): string {
+  if (value === undefined) return '';
+  if (typeof value !== 'string' || value.length > 100) throw new BadRequestException('q must be a string of at most 100 characters');
+  return value.trim();
+}
+
 @Controller()
 export class HistoricalController {
   constructor(@Inject(DB) private readonly db: Pool) {}
@@ -17,9 +23,25 @@ export class HistoricalController {
   @Get('health')
   health() { return { status: 'ok' }; }
 
+  @Get('sources')
+  async sources() {
+    const { rows } = await this.db.query(`SELECT s.slug, s.homepage_url, s.attribution,
+      r.release_tag, r.artifact_name, r.sha256 FROM source_releases r
+      JOIN data_sources s ON s.id = r.source_id ORDER BY s.slug, r.created_at DESC, r.id DESC`);
+    return { data: rows };
+  }
+
   @Get('seasons')
   async seasons() {
     const { rows } = await this.db.query('SELECT year FROM historical_seasons ORDER BY year DESC');
+    return { data: rows };
+  }
+
+  @Get('seasons/:year')
+  async season(@Param('year') year: string) {
+    const y = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query('SELECT year FROM historical_seasons WHERE year = $1', [y]);
+    if (!rows.length) throw new NotFoundException('Season not found');
     return { data: rows };
   }
 
@@ -28,8 +50,8 @@ export class HistoricalController {
     const y = integer(year, 1950, 1950, 2200, 'year');
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
-    const { rows } = await this.db.query(`SELECT r.id::text AS id, r.round, r.race_date, r.official_name,
-      c.display_name AS circuit_name FROM historical_races r
+    const { rows } = await this.db.query(`SELECT r.id::text AS id, r.round, r.race_date::text, r.official_name,
+      c.id::text AS circuit_id, c.display_name AS circuit_name FROM historical_races r
       LEFT JOIN historical_circuits c ON c.id = r.circuit_id
       WHERE r.season_year = $1 ORDER BY r.round LIMIT $2 OFFSET $3`, [y, l, o]);
     return { data: rows, limit: l, offset: o };
@@ -53,12 +75,14 @@ export class HistoricalController {
   }
 
   @Get('drivers')
-  async drivers(@Query('limit') limit?: string, @Query('offset') offset?: string) {
+  async drivers(@Query('limit') limit?: string, @Query('offset') offset?: string, @Query('q') query?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
+    const q = searchTerm(query);
     const { rows } = await this.db.query(`SELECT d.id::text AS id, d.display_name AS name, e.external_id
       FROM historical_drivers d JOIN external_identities e ON e.id = d.external_identity_id
-      ORDER BY d.display_name, d.id LIMIT $1 OFFSET $2`, [l, o]);
+      WHERE strpos(lower(d.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+      ORDER BY d.display_name, d.id LIMIT $1 OFFSET $2`, [l, o, q]);
     return { data: rows, limit: l, offset: o };
   }
 
@@ -168,12 +192,14 @@ export class HistoricalController {
   }
 
   @Get('constructors')
-  async constructors(@Query('limit') limit?: string, @Query('offset') offset?: string) {
+  async constructors(@Query('limit') limit?: string, @Query('offset') offset?: string, @Query('q') query?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
+    const q = searchTerm(query);
     const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id
       FROM historical_constructors c JOIN external_identities e ON e.id = c.external_identity_id
-      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o]);
+      WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o, q]);
     return { data: rows, limit: l, offset: o };
   }
 
@@ -230,13 +256,61 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('circuits')
+  async circuits(@Query('limit') limit?: string, @Query('offset') offset?: string, @Query('q') query?: string) {
+    const l = integer(limit, 50, 1, 100, 'limit');
+    const o = integer(offset, 0, 0, 100000, 'offset');
+    const q = searchTerm(query);
+    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id
+      FROM historical_circuits c JOIN external_identities e ON e.id = c.external_identity_id
+      WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o, q]);
+    return { data: rows, limit: l, offset: o };
+  }
+
+  @Get('circuits/:id')
+  async circuitProfile(@Param('id') id: string) {
+    const circuitId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id,
+      COUNT(r.id)::int AS races, MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season
+      FROM historical_circuits c JOIN external_identities e ON e.id = c.external_identity_id
+      LEFT JOIN historical_races r ON r.circuit_id = c.id
+      WHERE c.id = $1 GROUP BY c.id, c.display_name, e.external_id`, [circuitId]);
+    if (!rows.length) throw new NotFoundException('Circuit not found');
+    return { data: rows };
+  }
+
+  @Get('circuits/:id/races')
+  async circuitRaces(@Param('id') id: string, @Query('limit') limit?: string, @Query('offset') offset?: string) {
+    const circuitId = integer(id, 0, 1, 2147483647, 'id');
+    const l = integer(limit, 50, 1, 100, 'limit');
+    const o = integer(offset, 0, 0, 100000, 'offset');
+    const { rows } = await this.db.query(`SELECT r.id::text AS id, r.season_year, r.round,
+      r.race_date::text, r.official_name FROM historical_races r
+      WHERE r.circuit_id = $1 ORDER BY r.season_year DESC, r.round DESC LIMIT $2 OFFSET $3`, [circuitId, l, o]);
+    return { data: rows, limit: l, offset: o };
+  }
+
+  @Get('races/:id')
+  async raceProfile(@Param('id') id: string) {
+    const raceId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT r.id::text AS id, r.season_year, r.round,
+      r.race_date::text, r.official_name, c.id::text AS circuit_id, c.display_name AS circuit_name,
+      e.external_id FROM historical_races r
+      JOIN external_identities e ON e.id = r.external_identity_id
+      LEFT JOIN historical_circuits c ON c.id = r.circuit_id WHERE r.id = $1`, [raceId]);
+    if (!rows.length) throw new NotFoundException('Race not found');
+    return { data: rows };
+  }
+
   @Get('races/:id/results')
   async results(@Param('id') id: string, @Query('limit') limit?: string, @Query('offset') offset?: string) {
     const race = integer(id, 0, 1, 2147483647, 'id');
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
     const { rows } = await this.db.query(`SELECT rr.position_display_order, rr.position_number, rr.position_text,
-      d.display_name AS driver, c.display_name AS constructor, rr.points::text AS points,
+      d.id::text AS driver_id, d.display_name AS driver,
+      c.id::text AS constructor_id, c.display_name AS constructor, rr.points::text AS points,
       rr.laps, rr.reason_retired, rr.shared_car
       FROM historical_race_results rr
       JOIN historical_drivers d ON d.id = rr.driver_id

@@ -7,7 +7,8 @@ export const dynamic = 'force-dynamic';
 
 export default async function SeasonPage({ params }: { params: Promise<{ year: string }> }) {
   const { year } = await params;
-  if (!/^(19[5-9][0-9]|20[0-9]{2}|21[0-9]{2})$/.test(year)) notFound();
+  if (!/^[0-9]{4}$/.test(year) || Number(year) < 1950 || Number(year) > 2200) notFound();
+  await getData<{ year: number }>(`/api/seasons/${year}`);
   const [races, lineups] = await Promise.all([
     getData<Race>(`/api/seasons/${year}/races?limit=100`),
     getData<Lineup>(`/api/seasons/${year}/lineups`),

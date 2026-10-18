@@ -122,7 +122,7 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
    </div>
    <p>На телефоне прокручивайте карту по горизонтали. Кнопки меняют масштаб, не затрагивая данные.</p>
    <div ref={viewport} tabIndex={0} role="region" aria-label="Прокручиваемая карта исторических связей" style={{ overflow: 'auto', maxHeight: 'min(70vh, 720px)', WebkitOverflowScrolling: 'touch' }}>
-     <svg viewBox={`0 0 ${graph.width} ${graph.height}`} width={Math.round(graph.width * zoom)} height={Math.round(graph.height * zoom)} role="img" aria-label="Схема команд и направленных исторических переходов">
+     <svg viewBox={`0 0 ${graph.width} ${graph.height}`} width={Math.round(graph.width * zoom)} height={Math.round(graph.height * zoom)} role="group" aria-label="Схема команд и направленных исторических переходов">
        <defs><marker id="lineage-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" /></marker></defs>
        {edges.map(edge => {
          const from = graph.positions.get(edge.entity_type + ':' + edge.subject_id);
@@ -130,19 +130,21 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
          if (!from || !to) return null;
          const x1 = from.x + NODE_W / 2, y1 = from.y + NODE_H / 2;
          const x2 = to.x + NODE_W / 2, y2 = to.y + NODE_H / 2;
-         const dx = x2-x1, dy = y2-y1, distance = Math.hypot(dx,dy) || 1;
-         const startX = x1 + dx/distance * 35, startY = y1 + dy/distance * 35;
-         const endX = x2 - dx/distance * 35, endY = y2 - dy/distance * 35;
+         const dx = x2-x1, dy = y2-y1;
+         // Stop outside the rectangular nodes so their fills cannot hide arrowheads.
+         const inset = Math.min((NODE_W / 2 + 6) / (Math.abs(dx) || 1), (NODE_H / 2 + 6) / (Math.abs(dy) || 1));
+         const startX = x1 + dx * inset, startY = y1 + dy * inset;
+         const endX = x2 - dx * inset, endY = y2 - dy * inset;
          const key = edge.entity_type + ':' + edge.id;
          const muted = focusedTeam !== 'all' && !focusedEdges.includes(edge);
          return <g key={key} onClick={() => setSelected(key)} role="button" tabIndex={0} onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelected(key); } }} aria-label={`${edge.subject_name} → ${edge.object_name}, ${relationLabels[edge.relation_type] ?? edge.relation_type}`} style={{ cursor: 'pointer' }}>
            <line x1={startX} y1={startY} x2={endX} y2={endY} stroke="currentColor" strokeDasharray={relationStyles[edge.relation_type]?.dash || undefined} strokeWidth={selected === key ? 3 : 1.5} opacity={muted ? 0.12 : selected && selected !== key ? 0.25 : 0.65} markerEnd="url(#lineage-arrowhead)" />
-           <circle cx={(startX+endX)/2} cy={(startY+endY)/2} r="12" fill="var(--background, #fff)" stroke="currentColor" />
+           <circle cx={(startX+endX)/2} cy={(startY+endY)/2} r="16" fill="var(--background, #141b22)" stroke="currentColor" />
            <text x={(startX+endX)/2} y={(startY+endY)/2+4} fontSize="11" textAnchor="middle" fill="currentColor">{edge.effective_year ?? '?'}</text>
          </g>;
        })}
        {graph.nodes.map(node => <g key={node.key} opacity={focusedTeam === 'all' || focusedKeys.has(node.key) ? 1 : 0.22}>
-         <rect x={node.x} y={node.y} width={NODE_W} height={NODE_H} rx="10" fill="var(--background, #fff)" stroke="currentColor" opacity=".95" />
+         <rect x={node.x} y={node.y} width={NODE_W} height={NODE_H} rx="10" fill="var(--background, #141b22)" stroke="currentColor" opacity=".95" />
          <text x={node.x+10} y={node.y+19} fontSize="11" fill="currentColor" opacity=".7">{node.kind === 'constructor' ? 'Конструктор' : 'Участник'}</text>
          <text x={node.x+10} y={node.y+39} fontSize="14" fontWeight="600" fill="currentColor">{node.name.length > 23 ? node.name.slice(0,22) + '…' : node.name}</text>
        </g>)}

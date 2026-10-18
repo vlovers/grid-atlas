@@ -37,3 +37,13 @@ mobile navigation, usable loading / empty / error / not-found states; reproducib
 passing API, database, frontend and production-build checks. Championship standings, circuit layouts,
 biographies, live timing and broader lineage research can follow. Driver-result points are not official
 championship totals; constructor identities and entrant identities remain separate.
+
+## Implemented after the audit
+
+PR #56 was reviewed, wired into CI and merged after both checks passed. [PR #57](https://github.com/vlovers/grid-atlas/pull/57) fixed shared-car constructor wins and added exact PostgreSQL identity and public HTTP review-filter regressions; all six workflows passed before merge.
+
+The connected archive changes add catalogue search, circuit/race pages, source release visibility, correct missing-record handling, loading/mobile/graph fixes, a frozen lockfile and lint/browser CI. Nine API/PostgreSQL checks and fourteen desktop/mobile browser checks passed locally with production builds, including explicit outage and not-found flows. The graph fix also moves arrowheads outside node rectangles so their fills cannot obscure direction. README/roadmap/package documentation now describe the working application.
+
+Local production acceptance also passed against the real imported archive: 77 seasons and 78 circuits, Senna search/profile navigation using the imported full name, Silverstone → the 2026 British Grand Prix → linked results, source-release display and an empty verified-only lineage state. There were no browser runtime errors or page-level mobile overflow. The proposed 2021 claim remained absent from public output. `scripts/import-f1db.sh` was replayed successfully against the same disposable release database.
+
+Remaining: independent editorial approval; main protection rules; external deployment/traffic/readiness monitoring and backup/restore rehearsal; full source schema/semantic validation and release-update reconciliation. Driver API `starts` is still a result-row count, not a validated official start count. Claims are not append-only/audit-history enforced and database constraints cannot establish reviewer independence. No production database or historical review status was changed.

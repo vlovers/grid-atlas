@@ -30,4 +30,4 @@ Candidate relations above are **hypotheses**, not asserted facts. The current sc
 5. Obtain independent editorial review before setting `verified`; only verified claims appear in `/api/lineage/network`.
 6. Do not connect the historic 1959–60 Aston Martin entry to the modern team merely because the name matches.
 
-**Deliberately no manifest JSON yet:** manufacturing a source note or an unreviewed relation to make the graph nonempty would undermine the project's provenance promise.
+The [2021 proposed manifest](manifests/silverstone-2021.proposed.json) now exists and has passed the pinned-release/imported-identity preflight in disposable PostgreSQL. It remains proposed; no independent editorial approval or historical publication is implied. Do not manufacture verified relations to make the graph nonempty.

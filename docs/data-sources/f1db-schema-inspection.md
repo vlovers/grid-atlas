@@ -2,6 +2,8 @@
 
 Date: 2026-10-18. Source repository: [f1db/f1db](https://github.com/f1db/f1db).
 
+Historical inspection notes below describe that stage of the project. The archive-retrieval and PostgreSQL blockers at the end have since been resolved; see [current measured evidence](../beta-audit.md) and [pinned release results](f1db-v2026.17.0-results.md). Independent editorial approval and full semantic verification remain outstanding.
+
 ## Actual upstream files inspected
 
 - [Constructor chronology JSON Schema](https://github.com/f1db/f1db/blob/main/src/schema/current/splitted/f1db-constructors-chronology.schema.json), schema ID `v6.5.0`.
