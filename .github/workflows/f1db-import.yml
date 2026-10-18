@@ -7,6 +7,7 @@ on:
       - 'tests/test_import_drivers.py'
       - 'tests/test_import_teams_circuits.py'
       - 'tests/test_import_races.py'
+      - 'tests/test_import_race_results.py'
       - '.github/workflows/f1db-import.yml'
   push:
     branches: [main]
@@ -42,6 +43,7 @@ jobs:
           python3 -m unittest discover -s tests -p test_import_drivers.py -v
           python3 -m unittest discover -s tests -p test_import_teams_circuits.py -v
           python3 -m unittest discover -s tests -p test_import_races.py -v
+          python3 -m unittest discover -s tests -p test_import_race_results.py -v
       - name: Download and check pinned release
         shell: bash
         run: |
