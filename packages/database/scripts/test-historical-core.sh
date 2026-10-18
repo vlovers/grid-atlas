@@ -72,3 +72,38 @@ BEGIN
 END $$;
 ROLLBACK;
 SQL
+
+# Entrant lineage claims are independent from constructors and require review.
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
+BEGIN;
+INSERT INTO data_sources(slug,homepage_url,attribution) VALUES ('entrant-lineage-fixture','https://example.org','Test only');
+INSERT INTO external_identities(source_id,entity_kind,external_id)
+SELECT id,'entrant','lineage-entrant-a' FROM data_sources WHERE slug='entrant-lineage-fixture';
+INSERT INTO external_identities(source_id,entity_kind,external_id)
+SELECT id,'entrant','lineage-entrant-b' FROM data_sources WHERE slug='entrant-lineage-fixture';
+INSERT INTO historical_entrants(external_identity_id,display_name)
+SELECT id,'Lineage Entrant A' FROM external_identities WHERE external_id='lineage-entrant-a';
+INSERT INTO historical_entrants(external_identity_id,display_name)
+SELECT id,'Lineage Entrant B' FROM external_identities WHERE external_id='lineage-entrant-b';
+INSERT INTO historical_entrant_lineage_claims(subject_entrant_id,object_entrant_id,relation_type,effective_year,source_url,source_title,source_publisher,evidence_note,accessed_at)
+SELECT a.id,b.id,'assets_acquired_by',2018,'https://example.org/evidence','Fixture evidence','Fixture publisher','Test case only',CURRENT_DATE
+FROM historical_entrants a CROSS JOIN historical_entrants b
+WHERE a.display_name='Lineage Entrant A' AND b.display_name='Lineage Entrant B';
+DO $$
+BEGIN
+ IF (SELECT count(*) FROM historical_entrant_lineage_claims WHERE review_status='proposed') <> 1 THEN
+   RAISE EXCEPTION 'Unexpected entrant lineage status';
+ END IF;
+ BEGIN
+   UPDATE historical_entrant_lineage_claims SET review_status='verified';
+   RAISE EXCEPTION 'Unreviewed claim accepted';
+ EXCEPTION WHEN check_violation THEN NULL;
+ END;
+ BEGIN
+   UPDATE historical_entrant_lineage_claims SET object_entrant_id=subject_entrant_id;
+   RAISE EXCEPTION 'Self-link accepted';
+ EXCEPTION WHEN check_violation THEN NULL;
+ END;
+END $$;
+ROLLBACK;
+SQL
