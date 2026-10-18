@@ -5,6 +5,7 @@ Read-only by design. This command never inserts, updates or verifies claims.
 Usage: python3 packages/database/scripts/validate-lineage-manifest.py path.json
 """
 import json
+from datetime import date
 import re
 import sys
 from pathlib import Path
@@ -22,6 +23,7 @@ def validate(path):
     claims = json.loads(Path(path).read_text(encoding="utf-8"))
     if not isinstance(claims, list):
         raise ValueError("Manifest must be an array")
+    seen = set()
     for i, claim in enumerate(claims):
         if not isinstance(claim, dict) or set(claim) != KEYS:
             raise ValueError(f"Claim {i}: expected exactly {sorted(KEYS)}")
@@ -34,6 +36,12 @@ def validate(path):
                 raise ValueError(f"Claim {i}: {field} must contain source_slug and external_id")
             if not all(isinstance(v, str) and v.strip() for v in ident.values()):
                 raise ValueError(f"Claim {i}: empty identity")
+        identity = (kind, claim["subject"]["source_slug"], claim["subject"]["external_id"],
+                    claim["object"]["source_slug"], claim["object"]["external_id"],
+                    claim["relation_type"], claim["source_url"])
+        if identity in seen:
+            raise ValueError(f"Claim {i}: duplicate relationship and source")
+        seen.add(identity)
         if claim["subject"] == claim["object"]:
             raise ValueError(f"Claim {i}: self edge")
         year = claim["effective_year"]
@@ -46,6 +54,10 @@ def validate(path):
                 raise ValueError(f"Claim {i}: missing {field}")
         if not isinstance(claim["accessed_at"], str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", claim["accessed_at"]):
             raise ValueError(f"Claim {i}: accessed_at must be YYYY-MM-DD")
+        try:
+            date.fromisoformat(claim["accessed_at"])
+        except ValueError as exc:
+            raise ValueError(f"Claim {i}: invalid calendar date") from exc
     print(f"Validated {len(claims)} proposed claim(s); no database changes made.")
 
 
