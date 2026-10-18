@@ -115,6 +115,32 @@ jobs:
             END IF;
           END $audit$;
           SQL
+      - name: Import proposed 2021 lineage into disposable PostgreSQL
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 packages/database/scripts/import-proposed-lineage.py docs/data-sources/manifests/silverstone-2021.proposed.json
+          python3 packages/database/scripts/import-proposed-lineage.py docs/data-sources/manifests/silverstone-2021.proposed.json
+          psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
+          DO $assert$
+          BEGIN
+            IF (SELECT count(*)
+                FROM historical_lineage_claims c
+                JOIN historical_constructors a ON a.id=c.subject_constructor_id
+                JOIN external_identities ax ON ax.id=a.external_identity_id
+                JOIN historical_constructors b ON b.id=c.object_constructor_id
+                JOIN external_identities bx ON bx.id=b.external_identity_id
+                WHERE ax.external_id='racing-point' AND bx.external_id='aston-martin'
+                  AND c.relation_type='renamed_to' AND c.effective_year=2021
+                  AND c.review_status='proposed') <> 1 THEN
+              RAISE EXCEPTION 'Expected exactly one proposed 2021 Racing Point rename';
+            END IF;
+            IF EXISTS (SELECT 1 FROM historical_lineage_claims WHERE review_status='verified')
+              OR EXISTS (SELECT 1 FROM historical_entrant_lineage_claims WHERE review_status='verified') THEN
+              RAISE EXCEPTION 'Import must never auto-verify lineage';
+            END IF;
+          END $assert$;
+          SQL
       - name: Import historical races twice
         shell: bash
         run: |
