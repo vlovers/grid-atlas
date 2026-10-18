@@ -17,6 +17,7 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
  const [selected, setSelected] = useState<string | null>(null);
  const [zoom, setZoom] = useState(1);
  const [focusedTeam, setFocusedTeam] = useState<string>('all');
+ const [focusDepth, setFocusDepth] = useState<'direct' | 'connected'>('direct');
  const viewport = useRef<HTMLDivElement>(null);
  const graph = useMemo(() => {
    const keys = new Map<string, { id: string; name: string; kind: Node['kind'] }>();
@@ -62,10 +63,33 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
    return { nodes, positions, width: Math.max(W, 60 + (maxLayer + 1) * 240), height: Math.max(170, 60 + maxRows * 130) };
  }, [edges]);
  if (!edges.length) return null;
- const focusedEdges = focusedTeam === 'all' ? edges : edges.filter(edge =>
-   edge.entity_type + ':' + edge.subject_id === focusedTeam ||
-   edge.entity_type + ':' + edge.object_id === focusedTeam
- );
+ const focusedEdges = (() => {
+   if (focusedTeam === 'all') return edges;
+   if (focusDepth === 'direct') return edges.filter(edge =>
+     edge.entity_type + ':' + edge.subject_id === focusedTeam ||
+     edge.entity_type + ':' + edge.object_id === focusedTeam
+   );
+   // Connected history is an undirected traversal of documented relations.
+   // It is NOT a claim of legal succession or a new inferred edge.
+   const visited = new Set([focusedTeam]);
+   const queue = [focusedTeam];
+   for (let i = 0; i < queue.length; i++) {
+     const key = queue[i];
+     for (const edge of edges) {
+       const from = edge.entity_type + ':' + edge.subject_id;
+       const to = edge.entity_type + ':' + edge.object_id;
+       const neighbor = from === key ? to : to === key ? from : null;
+       if (neighbor && !visited.has(neighbor)) {
+         visited.add(neighbor);
+         queue.push(neighbor);
+       }
+     }
+   }
+   return edges.filter(edge =>
+     visited.has(edge.entity_type + ':' + edge.subject_id) &&
+     visited.has(edge.entity_type + ':' + edge.object_id)
+   );
+ })();
  const focusedKeys = new Set(focusedEdges.flatMap(edge => [
    edge.entity_type + ':' + edge.subject_id, edge.entity_type + ':' + edge.object_id,
  ]));
@@ -78,6 +102,9 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
        <option value="all">Все команды</option>
        {graph.nodes.map(node => <option key={node.key} value={node.key}>{node.name} ({node.kind === 'constructor' ? 'конструктор' : 'участник'})</option>)}
      </select></label>
+     {focusedTeam !== 'all' && <label>Глубина <select value={focusDepth} onChange={event => setFocusDepth(event.target.value as typeof focusDepth)}>
+       <option value="direct">Прямые связи</option><option value="connected">Вся связанная история</option>
+     </select></label>}
      {focusedTeam !== 'all' && <span role="status">Связей с командой: {focusedEdges.length}</span>}
    </div>
    <div className="lineage-controls" aria-label="Управление масштабом карты">
