@@ -106,4 +106,5 @@ if python3 packages/database/scripts/import-proposed-lineage.py "$tmp/entrant.js
  echo "Expected rejected entrant claim protection" >&2; exit 1
 fi
 psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -Atc "SELECT count(*) FROM historical_entrant_lineage_claims WHERE source_url='https://example.org/entrant-fixture' AND review_status='rejected'" | grep -qx 1
+python3 packages/database/scripts/validate-lineage-manifest.py docs/data-sources/manifests/silverstone-2021.proposed.json
 echo "Constructor and entrant lineage importer integration passed."
