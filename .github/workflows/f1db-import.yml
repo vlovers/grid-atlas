@@ -86,6 +86,35 @@ jobs:
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_entrants')" = 830
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_circuits')" = 78
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM source_observations')" = 2012
+      - name: Resolve Silverstone constructors from imported source identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
+          DO $audit$
+          DECLARE expected text[] := ARRAY['jordan','midland','spyker','force-india','racing-point','aston-martin'];
+          DECLARE resolved integer;
+          BEGIN
+            SELECT count(*) INTO resolved
+            FROM historical_constructors c
+            JOIN external_identities x ON x.id=c.external_identity_id
+            JOIN data_sources s ON s.id=x.source_id
+            WHERE s.slug='f1db' AND x.entity_kind='constructor'
+              AND x.external_id = ANY(expected);
+            IF resolved <> array_length(expected,1) THEN
+              RAISE EXCEPTION 'Expected 6 source-qualified Silverstone constructors, found %', resolved;
+            END IF;
+            IF EXISTS (
+              SELECT 1 FROM unnest(expected) AS ident(id)
+              WHERE (SELECT count(*) FROM historical_constructors c
+                JOIN external_identities x ON x.id=c.external_identity_id
+                JOIN data_sources s ON s.id=x.source_id
+                WHERE s.slug='f1db' AND x.entity_kind='constructor' AND x.external_id=ident.id) <> 1
+            ) THEN
+              RAISE EXCEPTION 'Silverstone constructor identity missing or duplicated';
+            END IF;
+          END $audit$;
+          SQL
       - name: Import historical races twice
         shell: bash
         run: |
