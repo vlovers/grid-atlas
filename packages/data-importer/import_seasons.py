@@ -70,7 +70,7 @@ BEGIN
  IF EXISTS (
   SELECT 1 FROM source_releases r JOIN data_sources s ON s.id=r.source_id
   WHERE s.slug='f1db' AND r.release_tag='v2026.17.0'
-    AND r.artifact_name='f1db-json-splitted.zip' AND r.sha256 <> '${digest}'
+    AND r.artifact_name='f1db-json-splitted.zip' AND r.sha256 <> '{digest}'
  ) THEN
   RAISE EXCEPTION 'F1DB release checksum changed';
  END IF;
