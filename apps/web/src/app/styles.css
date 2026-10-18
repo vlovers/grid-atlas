@@ -7,3 +7,12 @@
 .lineup-team ul{list-style:none;margin:0;padding:0}
 .lineup-team li{display:flex;flex-direction:column;gap:3px;border-top:1px solid #303840;padding:12px 0}
 .lineup-team li span{font-size:12px;color:#aebbc4}
+
+.timeline-scroll{overflow-x:auto;margin:22px 0 48px;padding:8px 0 18px}
+.timeline-track{display:grid;gap:5px;min-width:max-content}
+.timeline-year{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;min-height:86px;padding:13px 6px;border:1px solid #313941;border-radius:3px;font-size:12px}
+.timeline-year.active{background:#572a26;border-color:#b94e40}
+.timeline-year.active:hover,.timeline-year.active:focus-visible{background:#a84638;color:#fff}
+.timeline-year.inactive{background:#141b22;color:#78848e}
+.timeline-year strong{font-size:12px;color:#fff}
+.timeline-year small{font-size:12px}
