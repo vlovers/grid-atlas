@@ -35,6 +35,23 @@ export default async function DriverProfile({ params }: Props) {
       {([['Сезоны', driver.seasons], ['Выступления', driver.starts], ['Победы', driver.wins], ['Подиумы', driver.podiums], ['Очки', driver.points]] as const).map(([label, value]) =>
         <article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>
+    <h2>Временная шкала карьеры</h2>
+    <p>Годы и команды, за которые пилот имеет зафиксированные результаты. Несколько команд в одном году отображаются отдельно.</p>
+    {driver.first_season !== null && driver.last_season !== null && teams.length > 0 &&
+      <div className="timeline-scroll" role="region" aria-label="История карьеры по сезонам" tabIndex={0}>
+        <div className="career-timeline" style={{ gridTemplateColumns: `repeat(${driver.last_season - driver.first_season + 1}, minmax(140px,1fr))` }}>
+          {Array.from({ length: driver.last_season - driver.first_season + 1 }, (_, i) => {
+            const year = driver.first_season! + i;
+            const entries = teams.filter(t => t.year === year);
+            return <section className={entries.length ? 'career-year active' : 'career-year inactive'} key={year}>
+              <Link href={`/seasons/${year}`} className="career-year-label">{year} ↗</Link>
+              {entries.length ? entries.map(t => <Link key={t.constructor_id} className="career-team" href={`/constructors/${t.constructor_id}`} title={`${t.races} гонок, ${t.wins} побед`}>
+                <strong>{t.constructor_name}</strong><small>{t.races} гонок · {t.wins} побед</small>
+              </Link>) : <small>Нет результатов</small>}
+            </section>;
+          })}
+        </div>
+      </div>}
     <h2>Результаты по сезонам</h2>
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>Сезон</th><th>Выступления</th><th>Победы</th><th>Подиумы</th><th>Очки</th></tr></thead><tbody>{seasons.map(s =>
       <tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.starts}</td><td>{s.wins}</td><td>{s.podiums}</td><td>{s.points}</td></tr>

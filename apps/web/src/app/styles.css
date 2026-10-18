@@ -16,3 +16,13 @@
 .timeline-year.inactive{background:#141b22;color:#78848e}
 .timeline-year strong{font-size:12px;color:#fff}
 .timeline-year small{font-size:12px}
+
+.career-timeline{display:grid;gap:8px;min-width:max-content}
+.career-year{display:flex;flex-direction:column;gap:10px;padding:12px;border:1px solid #313941;background:#141b22;min-height:140px}
+.career-year.active{border-top:3px solid #ec624e}
+.career-year.inactive{opacity:.6}
+.career-year-label{font-size:16px;font-weight:800;color:#ec624e}
+.career-team{display:flex;flex-direction:column;gap:5px;padding:9px;border:1px solid #454d55;border-radius:3px;white-space:normal;overflow-wrap:anywhere}
+.career-team:hover{border-color:#ec624e}
+.career-team strong{font-size:13px}
+.career-team small{font-size:11px}
