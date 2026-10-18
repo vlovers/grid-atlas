@@ -1,0 +1,56 @@
+name: F1DB seasons import integration
+on:
+  pull_request:
+    paths:
+      - 'packages/data-importer/**'
+      - 'tests/test_import_seasons.py'
+      - '.github/workflows/f1db-import.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'packages/data-importer/**'
+      - 'tests/test_import_seasons.py'
+permissions:
+  contents: read
+jobs:
+  seasons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: grid_atlas
+          POSTGRES_PASSWORD: integration_only
+          POSTGRES_DB: grid_atlas
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U grid_atlas -d grid_atlas"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    env:
+      DATABASE_URL: postgresql://grid_atlas:integration_only@localhost:5432/grid_atlas
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+      - name: Test importer fixtures
+        run: python3 -m unittest discover -s tests -p test_import_seasons.py -v
+      - name: Download and check pinned release
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/f1db
+          base=https://github.com/f1db/f1db/releases/download/v2026.17.0
+          curl -fLsS --retry 3 "$base/checksums_sha256.txt" -o /tmp/f1db/checksums_sha256.txt
+          curl -fLsS --retry 3 "$base/f1db-json-splitted.zip" -o /tmp/f1db/f1db-json-splitted.zip
+      - name: Migrate and import twice
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 packages/database/scripts/migrate.py
+          for i in 1 2; do
+            python3 packages/data-importer/import_seasons.py --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
+          done
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_seasons')" = 77
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM source_releases')" = 1
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT min(year), max(year) FROM historical_seasons')" = '1950|2026'
