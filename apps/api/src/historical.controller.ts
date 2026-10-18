@@ -114,6 +114,32 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('lineage/network')
+  async lineageNetwork() {
+    const { rows } = await this.db.query(`SELECT 'constructor' AS entity_type,
+      lc.id::text AS id, lc.subject_constructor_id::text AS subject_id,
+      a.display_name AS subject_name, lc.object_constructor_id::text AS object_id,
+      b.display_name AS object_name, lc.relation_type, lc.effective_year,
+      lc.source_url, lc.source_title, lc.source_publisher
+      FROM historical_lineage_claims lc
+      JOIN historical_constructors a ON a.id = lc.subject_constructor_id
+      JOIN historical_constructors b ON b.id = lc.object_constructor_id
+      WHERE lc.review_status = 'verified'
+      UNION ALL
+      SELECT 'entrant' AS entity_type,
+      ec.id::text AS id, ec.subject_entrant_id::text AS subject_id,
+      a.display_name AS subject_name, ec.object_entrant_id::text AS object_id,
+      b.display_name AS object_name, ec.relation_type, ec.effective_year,
+      ec.source_url, ec.source_title, ec.source_publisher
+      FROM historical_entrant_lineage_claims ec
+      JOIN historical_entrants a ON a.id = ec.subject_entrant_id
+      JOIN historical_entrants b ON b.id = ec.object_entrant_id
+      WHERE ec.review_status = 'verified'
+      ORDER BY effective_year NULLS LAST, entity_type, id
+      LIMIT 500`);
+    return { data: rows };
+  }
+
   @Get('entrants/:id/lineage')
   async entrantLineage(@Param('id') id: string) {
     const entrantId = integer(id, 0, 1, 2147483647, 'id');
