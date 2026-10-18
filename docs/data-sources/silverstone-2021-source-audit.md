@@ -12,6 +12,14 @@
 
 The official Formula 1 article states that Racing Point would become the Aston Martin works team in 2021. It reports team principal Otmar Szafnauer explicitly confirming that the Racing Point name would remain through 2020 and change to Aston Martin F1 Team at the start of 2021. This supports the narrow **team/constructor branding transition**, `renamed_to`, effective year **2021**.
 
+## Independent-in-time corroborating official reports
+
+- **18 January 2021 — Formula 1:** [Transition from Racing Point to Aston Martin has been ‘mammoth task’, says Szafnauer](https://www.formula1.com/en/latest/article/transition-from-racing-point-to-aston-martin-has-been-mammoth-task-says.1xOYAPIqoKsM8iJq85E9i4). The article describes the 2021 transition of the Racing Point squad to the Aston Martin works-team name.
+- **19 January 2021 — Formula 1:** [Stroll wants Aston Martin to make people sit up and take notice on F1 return](https://www.formula1.com/en/latest/article/stroll-wants-aston-martin-to-make-people-sit-up-and-take-notice-on-f1-return.3ugk3ql9tsv7noygXIuvJk). The report explicitly describes Racing Point as having become Aston Martin F1 Team that season.
+- **3 March 2021 — Formula 1:** [Watch Aston Martin reveal their first F1 car in more than 60 years](https://www.formula1.com/en/latest/article/watch-aston-martin-reveal-their-first-f1-car-in-more-than-60-years.01FwviM5I74DP56DEralsU). This contemporaneous report identifies Racing Point as the predecessor team name.
+
+These are **additional articles from the same publisher**, not an independent publisher or independent editorial review. They corroborate the public branding transition but do not resolve the exact imported F1DB constructor IDs or corporate continuity.
+
 ## Existing proposed manifest
 
 `docs/data-sources/manifests/silverstone-2021.proposed.json` contains the proposed constructor edge:
