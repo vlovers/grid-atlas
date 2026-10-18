@@ -35,6 +35,23 @@ export class HistoricalController {
     return { data: rows, limit: l, offset: o };
   }
 
+  @Get('seasons/:year/lineups')
+  async seasonLineups(@Param('year') year: string) {
+    const y = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query(`SELECT c.id::text AS constructor_id, c.display_name AS constructor_name,
+      d.id::text AS driver_id, d.display_name AS driver_name,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_constructors c ON c.id = rr.constructor_id
+      JOIN historical_drivers d ON d.id = rr.driver_id
+      WHERE r.season_year = $1
+      GROUP BY c.id, c.display_name, d.id, d.display_name
+      ORDER BY c.display_name, d.display_name`, [y]);
+    return { data: rows };
+  }
+
   @Get('drivers')
   async drivers(@Query('limit') limit?: string, @Query('offset') offset?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
