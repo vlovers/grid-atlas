@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import type { LineageEdge } from './lineage-explorer';
 
@@ -15,6 +15,8 @@ const NODE_H = 54;
 
 export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
  const [selected, setSelected] = useState<string | null>(null);
+ const [zoom, setZoom] = useState(1);
+ const viewport = useRef<HTMLDivElement>(null);
  const graph = useMemo(() => {
    const keys = new Map<string, { id: string; name: string; kind: Node['kind'] }>();
    for (const edge of edges) {
@@ -63,8 +65,15 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
  return <section aria-label="Схема подтверждённых связей">
    <h2>Карта связей</h2>
    <p>Выберите стрелку, чтобы посмотреть тип перехода, год и первоисточник. Схема показывает подтверждённые отношения, а не юридическую преемственность.</p>
-   <div style={{ overflowX: 'auto' }}>
-     <svg viewBox={`0 0 ${graph.width} ${graph.height}`} width={graph.width} role="img" aria-label="Схема команд и направленных исторических переходов">
+   <div className="lineage-controls" aria-label="Управление масштабом карты">
+     <button type="button" onClick={() => setZoom(value => Math.max(0.5, Math.round((value - 0.25) * 100) / 100))} disabled={zoom <= 0.5} aria-label="Уменьшить масштаб">−</button>
+     <span aria-live="polite">Масштаб {Math.round(zoom * 100)}%</span>
+     <button type="button" onClick={() => setZoom(value => Math.min(2, Math.round((value + 0.25) * 100) / 100))} disabled={zoom >= 2} aria-label="Увеличить масштаб">+</button>
+     <button type="button" onClick={() => { setZoom(1); viewport.current?.scrollTo({ left: 0, top: 0, behavior: 'smooth' }); }}>Сбросить</button>
+   </div>
+   <p>На телефоне прокручивайте карту по горизонтали. Кнопки меняют масштаб, не затрагивая данные.</p>
+   <div ref={viewport} tabIndex={0} role="region" aria-label="Прокручиваемая карта исторических связей" style={{ overflow: 'auto', maxHeight: 'min(70vh, 720px)', WebkitOverflowScrolling: 'touch' }}>
+     <svg viewBox={`0 0 ${graph.width} ${graph.height}`} width={Math.round(graph.width * zoom)} height={Math.round(graph.height * zoom)} role="img" aria-label="Схема команд и направленных исторических переходов">
        <defs><marker id="lineage-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" /></marker></defs>
        {edges.map(edge => {
          const from = graph.positions.get(edge.entity_type + ':' + edge.subject_id);
