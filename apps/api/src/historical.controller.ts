@@ -98,6 +98,22 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('drivers/:id/teams')
+  async driverTeams(@Param('id') id: string) {
+    const driverId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT r.season_year AS year,
+      c.id::text AS constructor_id, c.display_name AS constructor_name,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_constructors c ON c.id = rr.constructor_id
+      WHERE rr.driver_id = $1
+      GROUP BY r.season_year, c.id, c.display_name
+      ORDER BY r.season_year DESC, c.display_name`, [driverId]);
+    return { data: rows };
+  }
+
   @Get('constructors')
   async constructors(@Query('limit') limit?: string, @Query('offset') offset?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
