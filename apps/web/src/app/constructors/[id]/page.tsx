@@ -49,6 +49,21 @@ export default async function ConstructorProfile({ params }: Props) {
     </tbody></table></div> : <p>Результаты пока не загружены.</p>}
     <h2>Исторические связи</h2>
     <p>Здесь отображаются только проверенные связи с опубликованными источниками. Отсутствие связей не означает отсутствия исторической преемственности.</p>
+    {lineage.length > 0 && <div className="lineage-graph" role="region" aria-label="Граф подтверждённых связей конструкторов">
+      {lineage.map(edge => <div className="lineage-edge" key={edge.id}>
+        <Link className="lineage-node" href={`/constructors/${edge.subject_id}`}>
+          <small>Конструктор</small><strong>{edge.subject_name}</strong>
+        </Link>
+        <div className="lineage-arrow" aria-label={edge.relation_type.replaceAll('_', ' ')}>
+          <span>{edge.effective_year ?? 'Дата неизвестна'}</span>
+          <span aria-hidden="true">→</span>
+          <small>{edge.relation_type.replaceAll('_', ' ')}</small>
+        </div>
+        <Link className="lineage-node" href={`/constructors/${edge.object_id}`}>
+          <small>Конструктор</small><strong>{edge.object_name}</strong>
+        </Link>
+      </div>)}
+    </div>}
     {lineage.length ? <div className="lineup-grid">{lineage.map(edge => <article className="lineup-team" key={edge.id}>
       <p className="eyebrow">{edge.relation_type.replaceAll('_', ' ')} {edge.effective_year ?? ''}</p>
       <h3><Link href={`/constructors/${edge.subject_id}`}>{edge.subject_name}</Link> → <Link href={`/constructors/${edge.object_id}`}>{edge.object_name}</Link></h3>
