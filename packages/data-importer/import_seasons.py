@@ -19,12 +19,13 @@ SOURCE = "f1db"
 
 
 def verified_seasons(archive, checksums):
-    import re
     def checksum_for(text, filename):
         for line in text.splitlines():
-            match = re.fullmatch(r"([0-9a-fA-F]{64})\\s+\\*?(.+?)\\s*", line)
-            if match and Path(match.group(2)).name == filename:
-                return match.group(1).lower()
+            parts = line.split()
+            if len(parts) >= 2 and Path(parts[-1].lstrip("*")).name == filename:
+                digest = parts[0].lower()
+                if len(digest) == 64 and all(c in "0123456789abcdef" for c in digest):
+                    return digest
         raise ValueError(f"No checksum for {filename}")
     path = Path(archive)
     if path.name != ASSET:
