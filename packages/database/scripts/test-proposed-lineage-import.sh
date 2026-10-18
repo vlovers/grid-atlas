@@ -37,6 +37,10 @@ def item(target):
  "evidence_note":"Synthetic fixture only","accessed_at":"2026-10-18"}
 (root/"good.json").write_text(json.dumps([item("beta")]))
 (root/"bad.json").write_text(json.dumps([item("beta"),item("missing")]))
+(root/"duplicate.json").write_text(json.dumps([item("beta"),item("beta")]))
+invalid_date = item("beta")
+invalid_date["accessed_at"] = "2026-02-30"
+(root/"invalid-date.json").write_text(json.dumps([invalid_date]))
 entrant = item("entrant-b")
 entrant["entity_type"] = "entrant"
 entrant["subject"]["external_id"] = "entrant-a"
@@ -47,6 +51,11 @@ bad_entrant = dict(entrant)
 bad_entrant["object"] = {"source_slug":"lineage-import-ci","external_id":"missing-entrant"}
 (root/"bad-entrant.json").write_text(json.dumps([entrant,bad_entrant]))
 PY
+for invalid in duplicate invalid-date; do
+ if python3 packages/database/scripts/validate-lineage-manifest.py "$tmp/$invalid.json"; then
+   echo "Expected invalid manifest to fail: $invalid" >&2; exit 1
+ fi
+done
 if python3 packages/database/scripts/import-proposed-lineage.py "$tmp/bad.json"; then
  echo "Expected unresolved identity to fail" >&2; exit 1
 fi
