@@ -1,51 +1,15 @@
-# F1DB seasons importer — phase 1
+# Pinned F1DB importers
 
-Imports only the `year` values from the checksum-verified F1DB v2026.17.0 official split JSON archive into `historical_seasons`. This is a deliberately small first slice, **not** the whole dataset.
-
-Run the versioned migrations first, then set `DATABASE_URL` and execute:
+Dependency-free Python / psql loaders for official **F1DB v2026.17.0** split JSON. Apply the versioned database migrations first, export `DATABASE_URL`, and run from the repository root using the same archive and checksum file for every stage:
 
 ```sh
-python3 packages/data-importer/import_seasons.py --archive /path/to/f1db-json-splitted.zip --checksums /path/to/checksums_sha256.txt
+bash scripts/import-f1db.sh /path/to/f1db-json-splitted.zip /path/to/checksums_sha256.txt
 ```
 
-Guarantees: rejects altered archives, non-integer/duplicate years; insert-only seasons, stable source record, release checksum match and transaction. Repeated import must produce the same count. CI downloads and imports the published release twice into disposable PostgreSQL.
+Import order follows foreign keys. Expected pinned counts: 77 seasons; 917 drivers; 187 constructors, 830 entrants and 78 circuits; 1,172 races; 27,665 result rows. CI downloads the official assets and imports each stage twice into disposable PostgreSQL. See [measured audit](../../docs/beta-audit.md).
 
-Current limitations: no schema validation beyond the season shape; no full-repository importer, external copyright clearance, or user-defined curated update strategy yet. Source release identity is immutable for a given tag/asset/hash; a conflicting digest causes a DB error on insert if an existing release exists.
+Each loader verifies SHA-256 against the published checksum file, validates the fields it consumes and imports transactionally. The release tag/asset digest is registered and cannot silently change. Driver, constructor, entrant, circuit and race identities retain per-record source observations. Existing historical records, results and curated display names are not overwritten. A repeat run is insert-only/idempotent; it is not a reconciliation report or proof that existing edited rows still equal upstream.
 
-## Drivers — phase 2
+`audit_silverstone_release.py --archive ... --checksums ...` checks the six named constructor IDs against the pinned archive. `packages/database/scripts/audit-lineage-manifest-identities.py FILE.json` resolves exact source/kind endpoints in an imported database without persistent changes. The separate proposed importer never verifies historical claims; independent editorial review remains mandatory.
 
-After importing seasons, run:
-
-```sh
-python3 packages/data-importer/import_drivers.py \
-  --archive /path/to/f1db-json-splitted.zip \
-  --checksums /path/to/checksums_sha256.txt
-```
-
-The importer validates the pinned official F1DB release, loads driver identities, adds source-specific external IDs and SHA-256 per-record observations. Existing display names are **not overwritten** on repeat imports. The PostgreSQL integration CI runs the real release twice and checks that all 917 drivers have exactly one identity and observation. This does not yet import driver race results, biographies or other historical relations.
-
-For now these import utilities are Python scripts inside the pnpm monorepository, deliberately dependency-free. A TypeScript importer package can be considered when API and cross-package code sharing warrant it.
-
-## Constructors, entrants and circuits — phase 3
-
-After the seasons import, run:
-
-```sh
-python3 packages/data-importer/import_teams_circuits.py \
-  --archive /path/to/f1db-json-splitted.zip \
-  --checksums /path/to/checksums_sha256.txt
-```
-
-The importer reads 187 constructors, 830 entrants and 78 circuits in pinned F1DB v2026.17.0; each is a **separate identity kind**. Their source identifiers and per-record SHA-256 observations are stored without overwriting existing display names. CI imports the actual release twice and asserts unchanged counts. Constructor chronology, legal team ownership, circuit layouts, race results and descriptions are out of scope.
-
-## Races — phase 4
-
-After seasons and circuits are imported, run:
-
-```sh
-python3 packages/data-importer/import_races.py \
-  --archive /path/to/f1db-json-splitted.zip \
-  --checksums /path/to/checksums_sha256.txt
-```
-
-This imports source-attributed F1DB race IDs, season years, rounds, circuit references, race dates and official names. It validates duplicate race IDs/season rounds, date format and required input fields, and rejects missing related seasons/circuits. The full pinned release is imported twice in disposable PostgreSQL CI; existing race rows are not overwritten. **Results, timings, standings, circuit layouts and editorial history remain out of scope.**
+Limitations: field validation is narrower than full JSON Schema / semantic verification; race-result rows lack separate per-row provenance observations; no standings, sprint imports, layouts, chronology-to-lineage inference, legal entity reconciliation or multi-release update policy. Do not change the release pin without a new audit and reviewed reconciliation plan. Checksums prove byte agreement, not historical truth.

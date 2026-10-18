@@ -4,12 +4,16 @@ on:
   pull_request:
     paths:
       - 'scripts/audit_f1db.py'
+      - 'scripts/f1db_relationships.py'
+      - 'tests/test_f1db_relationships.py'
       - 'tests/test_f1db_audit.py'
       - '.github/workflows/f1db-audit.yml'
   push:
     branches: [main]
     paths:
       - 'scripts/audit_f1db.py'
+      - 'scripts/f1db_relationships.py'
+      - 'tests/test_f1db_relationships.py'
       - 'tests/test_f1db_audit.py'
   workflow_dispatch:
 
@@ -23,7 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Test audit script with synthetic fixtures
-        run: python3 -m unittest discover -s tests -p 'test_f1db_audit.py' -v
+        run: |
+          python3 -m unittest discover -s tests -p 'test_f1db_audit.py' -v
+          python3 -m unittest discover -s tests -p 'test_f1db_relationships.py' -v
 
   pinned-release-audit:
     runs-on: ubuntu-latest

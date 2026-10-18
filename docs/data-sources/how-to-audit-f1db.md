@@ -16,6 +16,6 @@ python3 -m unittest discover -s tests -p 'test_f1db_audit.py' -v
 
 Do not commit the zip or entire upstream dataset. Save a reproducible summary with release tag, SHA-256 and counts. A verified checksum only proves downloaded bytes match the published checksum file; it does not guarantee data accuracy or licensing rights.
 
-**Current coverage:** SHA-256, archive safety, collection counts, ID duplicate checks, null rows, non-array warnings. **Not yet included:** schema validation against the pinned release schema, referential integrity, complete field nullability stats, years coverage, semantic lineage validation, rights audit. A report with no findings is *not* certification of F1DB data quality.
+**Current coverage:** SHA-256, archive safety, collection counts, ID duplicate checks, null rows, non-array warnings, eight configured cross-collection reference checks and season-year coverage. **Not yet included:** full JSON Schema validation, every reference/composite-key check, complete field nullability statistics, semantic lineage validation or rights review. A report with no findings is not certification of F1DB historical accuracy.
 
-The full upstream archive has not been executed through this script in this environment. That must happen before proceeding to production importer/schema acceptance.
+The pinned upstream archive has been audited and imported twice into disposable PostgreSQL. See [measured release results](f1db-v2026.17.0-results.md) and the [current beta audit](../beta-audit.md).

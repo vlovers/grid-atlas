@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 const { randomUUID } = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 const { resolve } = require('node:path');
+const { readFileSync } = require('node:fs');
 const { Pool } = require('pg');
 const { NestFactory } = require('@nestjs/core');
 const { AppModule } = require('../dist/module');
@@ -25,40 +26,7 @@ before(async () => {
   scopedUrl.searchParams.set('options', `-c search_path=${schema}`);
   process.env.DATABASE_URL = scopedUrl.toString();
   db = new Pool({ connectionString: scopedUrl.toString() });
-  await db.query(`
-    INSERT INTO data_sources(slug,homepage_url,attribution)
-      VALUES ('synthetic','https://example.org','Synthetic fixtures; no historical claims');
-    INSERT INTO external_identities(source_id,entity_kind,external_id)
-      SELECT 1,k.kind,v.ident FROM (VALUES ('constructor'),('entrant')) k(kind)
-      CROSS JOIN (VALUES ('alpha'),('beta')) v(ident);
-    INSERT INTO historical_constructors(external_identity_id,display_name)
-      SELECT id,external_id FROM external_identities WHERE entity_kind='constructor';
-    INSERT INTO historical_entrants(external_identity_id,display_name)
-      SELECT id,external_id FROM external_identities WHERE entity_kind='entrant';
-    INSERT INTO external_identities(source_id,entity_kind,external_id)
-      VALUES (1,'driver','driver-a'),(1,'driver','driver-b'),(1,'race','shared-car-race');
-    INSERT INTO historical_drivers(external_identity_id,display_name)
-      SELECT id,external_id FROM external_identities WHERE entity_kind='driver';
-    INSERT INTO historical_seasons(year) VALUES (1950);
-    INSERT INTO historical_races(external_identity_id,season_year,round,official_name)
-      SELECT id,1950,1,'Synthetic shared-car race' FROM external_identities WHERE entity_kind='race';
-    INSERT INTO historical_race_results(race_id,driver_id,constructor_id,position_display_order,
-      position_number,position_text,driver_number,points,shared_car)
-      VALUES (1,1,1,1,1,'1','2',4,true),(1,2,1,2,1,'1','2',4,true);
-  `);
-  for (const [table, subject, object] of [
-    ['historical_lineage_claims', 'subject_constructor_id', 'object_constructor_id'],
-    ['historical_entrant_lineage_claims', 'subject_entrant_id', 'object_entrant_id'],
-  ]) {
-    for (const status of ['proposed', 'verified', 'rejected']) {
-      await db.query(`INSERT INTO ${table} (${subject},${object},relation_type,effective_year,
-        source_url,source_title,source_publisher,evidence_note,accessed_at,review_status,reviewer,reviewed_at)
-        VALUES (1,2,'renamed_to',2000,$1,$2,'Synthetic integration fixture','No historical assertion',
-          CURRENT_DATE,$3,$4,$5)`,
-      [`https://example.org/${table}/${status}`, `${status} fixture`, status,
-        status === 'proposed' ? null : 'synthetic-test-reviewer', status === 'proposed' ? null : new Date()]);
-    }
-  }
+  await db.query(readFileSync(resolve(__dirname, 'fixtures.sql'), 'utf8'));
   app = await NestFactory.create(AppModule, { logger: false });
   app.setGlobalPrefix('api');
   await app.listen(0, '127.0.0.1');
@@ -127,4 +95,56 @@ test('shared-car winners count as one constructor win and separate driver podium
   const [season] = await get('constructors/1/seasons');
   assert.equal(season.wins, 1);
   assert.equal(season.podium_finishes, 2);
+});
+
+test('catalogues search names and source IDs case-insensitively with bounded pagination', async () => {
+  for (const path of ['drivers', 'constructors', 'circuits']) {
+    const all = await get(path);
+    assert.equal(all.length, 2);
+    assert.deepEqual(await get(`${path}?limit=1&offset=1`), [all[1]]);
+    assert.deepEqual(await get(`${path}?q=${encodeURIComponent(all[0].name.toUpperCase())}`), [all[0]]);
+    assert.deepEqual(await get(`${path}?q=${encodeURIComponent(all[0].external_id)}`), [all[0]]);
+    assert.deepEqual(await get(`${path}?q=no-match`), []);
+    assert.deepEqual(await get(`${path}?q=${encodeURIComponent("' OR 1=1 --")}`), []);
+    for (const query of ['limit=101', 'offset=-1', `q=${'a'.repeat(101)}`, 'q=a&q=b']) {
+      assert.equal((await fetch(`${base}/api/${path}?${query}`)).status, 400);
+    }
+  }
+  assert.equal((await get('circuits?q=%25')).length, 1);
+  assert.equal((await get('circuits?q=_')).length, 1);
+});
+
+test('circuit history, named race, date-only values and result links agree', async () => {
+  const [circuit] = await get('circuits/1');
+  assert.equal(circuit.races, 1);
+  assert.equal(circuit.first_season, 1950);
+  const [race] = await get('races/1');
+  assert.equal(race.official_name, 'Synthetic shared-car race');
+  assert.equal(race.circuit_id, circuit.id);
+  assert.equal(race.race_date, '1950-05-13');
+  assert.equal((await get('circuits/1/races'))[0].id, race.id);
+  assert.equal((await get('seasons/1950/races'))[0].race_date, '1950-05-13');
+  const results = await get('races/1/results');
+  assert.equal(results[0].driver_id, '1');
+  assert.equal(results[0].constructor_id, '1');
+  assert.equal(results[0].shared_car, true);
+  assert.deepEqual(await get('circuits/2/races'), []);
+  assert.deepEqual(await get('seasons/1951/races'), []);
+});
+
+test('missing profiles return 404 and invalid IDs return 400', async () => {
+  for (const path of ['drivers', 'constructors', 'entrants', 'circuits', 'races']) {
+    assert.equal((await fetch(`${base}/api/${path}/999999`)).status, 404);
+    assert.equal((await fetch(`${base}/api/${path}/invalid`)).status, 400);
+  }
+  assert.equal((await fetch(`${base}/api/seasons/2199`)).status, 404);
+  assert.equal((await fetch(`${base}/api/seasons/1949`)).status, 400);
+});
+
+test('source endpoint reports the registered release and checksum', async () => {
+  const [source] = await get('sources');
+  assert.equal(source.slug, 'synthetic');
+  assert.equal(source.release_tag, 'vfixture');
+  assert.equal(source.sha256, 'a'.repeat(64));
+  assert.equal(source.artifact_name, 'fixture.json');
 });
