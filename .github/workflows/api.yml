@@ -1,0 +1,29 @@
+name: Historical API
+on:
+  pull_request:
+    paths:
+      - 'apps/api/**'
+      - 'pnpm-workspace.yaml'
+      - '.github/workflows/api.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/api/**'
+permissions:
+  contents: read
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pnpm
+        run: corepack enable && corepack prepare pnpm@10.18.3 --activate
+      - name: Install API dependencies
+        run: pnpm install --no-frozen-lockfile
+      - name: Typecheck and build API
+        run: pnpm --filter @grid-atlas/api build
+      - name: Verify HTTP controller declarations
+        run: test -f apps/api/dist/historical.controller.js
