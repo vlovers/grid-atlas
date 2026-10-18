@@ -52,6 +52,8 @@ jobs:
           base=https://github.com/f1db/f1db/releases/download/v2026.17.0
           curl -fLsS --retry 3 "$base/checksums_sha256.txt" -o /tmp/f1db/checksums_sha256.txt
           curl -fLsS --retry 3 "$base/f1db-json-splitted.zip" -o /tmp/f1db/f1db-json-splitted.zip
+      - name: Verify Silverstone identities in pinned archive
+        run: python3 packages/data-importer/audit_silverstone_release.py --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
       - name: Migrate and import twice
         shell: bash
         run: |
