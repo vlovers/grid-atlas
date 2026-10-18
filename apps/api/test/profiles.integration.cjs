@@ -219,3 +219,41 @@ test('career IDs remain exact BIGINT strings; missing and malformed requests dif
     }
   }
 });
+
+
+test('Explorer returns bounded, canonical driver-to-constructor connections for one season', async () => {
+  const response = await fetch(`${base}/api/explorer/drivers/1/connections?year=1950`);
+  assert.equal(response.status, 200);
+  const { data } = await response.json();
+  assert.equal(data.focus, 'driver:1');
+  assert.equal(data.year, 1950);
+  assert.equal(data.truncated, false);
+  assert.deepEqual(data.nodes.map(node => node.key), ['driver:1', 'constructor:1', 'constructor:2']);
+  assert.deepEqual(data.edges.map(edge => [edge.key, edge.races, edge.result_entries]),
+    [
+      ['driver:1:constructor:1:year:1950', 2, 2],
+      ['driver:1:constructor:2:year:1950', 1, 1],
+    ]);
+  assert.ok(data.edges.every(edge => edge.provenance === 'imported-result-association'));
+  assert.ok(data.limitations.includes('entity_source_not_per_result_provenance'));
+  assert.ok(!JSON.stringify(data).includes('Separate entrant alpha'));
+});
+
+test('Explorer does not infer participation in a season gap or from another season', async () => {
+  const gap = await get('explorer/drivers/1/connections?year=1951');
+  assert.deepEqual(gap.nodes.map(node => node.key), ['driver:1']);
+  assert.deepEqual(gap.edges, []);
+  const later = await get('explorer/drivers/1/connections?year=1952');
+  assert.deepEqual(later.edges.map(edge => edge.to), ['constructor:2']);
+  assert.equal(later.edges[0].year, 1952);
+});
+
+test('Explorer rejects malformed inputs and distinguishes missing driver', async () => {
+  for (const query of ['','?year=0','?year=1949','?year=2201','?year=1950&year=1952','?year=abc']) {
+    assert.equal((await fetch(`${base}/api/explorer/drivers/1/connections${query}`)).status, 400, query);
+  }
+  for (const id of ['0','01','invalid','9223372036854775808']) {
+    assert.equal((await fetch(`${base}/api/explorer/drivers/${id}/connections?year=1950`)).status, 400, id);
+  }
+  assert.equal((await fetch(`${base}/api/explorer/drivers/999999/connections?year=1950`)).status, 404);
+});
