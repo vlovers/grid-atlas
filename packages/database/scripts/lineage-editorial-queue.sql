@@ -1,7 +1,7 @@
 -- Read-only editorial queue. Run against an imported database with migrations 0004 and 0005.
 -- Proposed claims remain private and are never published by this query.
 SELECT 'constructor' AS entity_type, c.id AS claim_id,
-       s.name AS subject_name, o.name AS object_name,
+       s.display_name AS subject_name, o.display_name AS object_name,
        c.relation_type, c.effective_year, c.source_publisher,
        c.source_title, c.source_url, c.evidence_note, c.accessed_at,
        c.created_at
@@ -11,7 +11,7 @@ JOIN historical_constructors o ON o.id = c.object_constructor_id
 WHERE c.review_status = 'proposed'
 UNION ALL
 SELECT 'entrant' AS entity_type, c.id AS claim_id,
-       s.name AS subject_name, o.name AS object_name,
+       s.display_name AS subject_name, o.display_name AS object_name,
        c.relation_type, c.effective_year, c.source_publisher,
        c.source_title, c.source_url, c.evidence_note, c.accessed_at,
        c.created_at
