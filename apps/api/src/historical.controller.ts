@@ -145,6 +145,23 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('constructors/:id/lineage')
+  async constructorLineage(@Param('id') id: string) {
+    const constructorId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT lc.id::text AS id,
+      lc.subject_constructor_id::text AS subject_id, source_team.display_name AS subject_name,
+      lc.object_constructor_id::text AS object_id, target_team.display_name AS object_name,
+      lc.relation_type, lc.effective_year, lc.source_url, lc.source_title,
+      lc.source_publisher, lc.evidence_note
+      FROM historical_lineage_claims lc
+      JOIN historical_constructors source_team ON source_team.id = lc.subject_constructor_id
+      JOIN historical_constructors target_team ON target_team.id = lc.object_constructor_id
+      WHERE lc.review_status = 'verified'
+        AND (lc.subject_constructor_id = $1 OR lc.object_constructor_id = $1)
+      ORDER BY lc.effective_year NULLS LAST, lc.id`, [constructorId]);
+    return { data: rows };
+  }
+
   @Get('constructors/:id/seasons')
   async constructorSeasons(@Param('id') id: string) {
     const constructorId = integer(id, 0, 1, 2147483647, 'id');
