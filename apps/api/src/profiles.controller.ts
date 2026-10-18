@@ -80,8 +80,8 @@ export class ProfilesController {
         COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_result_entries,
         SUM(rr.points)::text AS recorded_points, COUNT(rr.points)::int AS points_recorded,
         COUNT(*) FILTER (WHERE rr.points IS NULL)::int AS points_missing,
-        (array_agg(${race} ORDER BY r.round, rr.position_display_order))[1] AS first_race,
-        (array_agg(${race} ORDER BY r.round DESC, rr.position_display_order DESC))[1] AS last_race
+        (array_agg(${race} ORDER BY r.round, r.id, rr.position_display_order, rr.id))[1] AS first_race,
+        (array_agg(${race} ORDER BY r.round DESC, r.id DESC, rr.position_display_order DESC, rr.id DESC))[1] AS last_race
         FROM historical_race_results rr JOIN historical_races r ON r.id = rr.race_id
         JOIN ${entity.relatedTable} related ON related.id = rr.${entity.relatedColumn}
         JOIN external_identities x ON x.id = related.external_identity_id AND x.entity_kind = $2

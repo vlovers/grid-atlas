@@ -89,6 +89,36 @@ test('milestones use season/round rather than insertion IDs or nullable dates', 
   assert.deepEqual(last_win, last_appearance);
 });
 
+test('repeated entries at both participation boundaries keep first/last races and every result', async () => {
+  // Insert the later round first and give both repeats the same display order.
+  // Result IDs, insertion order and dates must not override season/round order.
+  const { rows: inserted } = await db.query(`INSERT INTO historical_race_results
+    (race_id,driver_id,constructor_id,position_display_order,position_text,driver_number,shared_car)
+    VALUES (2,1,1,4,'DNF','11',true), (3,1,1,4,'DNF','11',true)
+    RETURNING id::text`);
+  try {
+    for (const kind of ['drivers', 'constructors']) {
+      const [profile] = await get(`${kind}/1/career`);
+      const participation = profile.participation.find(row => row.year === 1950 && row.related_id === '1');
+      assert.equal(participation.result_entries, 4);
+      assert.equal(participation.races, 2);
+      assert.equal(participation.first_race.id, '3');
+      assert.equal(participation.first_race.round, 1);
+      assert.equal(participation.last_race.id, '2');
+      assert.equal(participation.last_race.round, 2);
+      assert.deepEqual(profile.milestones.first_appearance.race, participation.first_race);
+      assert.deepEqual(profile.milestones.first_appearance.results.map(row => row.position_display_order), [1, 4]);
+      assert.deepEqual(profile.milestones.first_win.race, participation.last_race);
+      assert.deepEqual(profile.milestones.first_win.results.map(row => row.position_display_order),
+        kind === 'drivers' ? [1, 3, 4] : [1, 2, 4]);
+      // A second request must preserve boundary selection and result ordering.
+      assert.deepEqual((await get(`${kind}/1/career`))[0], profile);
+    }
+  } finally {
+    await db.query('DELETE FROM historical_race_results WHERE id = ANY($1::bigint[])', [inserted.map(row => row.id)]);
+  }
+});
+
 test('constructor career deduplicates shared-car wins and links actual drivers', async () => {
   const [profile] = await get('constructors/1/career');
   assert.equal(profile.entity_type, 'constructor');
@@ -121,6 +151,14 @@ test('provenance includes exact observed entity releases, never unrelated regist
   assert.equal((await get('constructors/1/career'))[0].observations[0].content_hash, 'e'.repeat(64));
   assert.deepEqual((await get('drivers/2/career'))[0].observations, []);
   assert.ok(driver.limitations.includes('entity_observations_not_result_provenance'));
+  for (const profile of [driver, (await get('constructors/1/career'))[0]]) {
+    for (const row of profile.participation) assert.equal(Object.hasOwn(row, 'observations'), false);
+    for (const milestone of Object.values(profile.milestones)) {
+      if (!milestone) continue;
+      assert.equal(Object.hasOwn(milestone.race, 'observations'), false);
+      for (const result of milestone.results) assert.equal(Object.hasOwn(result, 'observations'), false);
+    }
+  }
 });
 
 test('known profiles with no results have honest empty careers and no invented milestones', async () => {

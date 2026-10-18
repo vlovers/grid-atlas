@@ -39,6 +39,13 @@ contract dates, contiguous employment stints or every season between endpoints.
 Counts across related entities can overlap in one race and must not be summed to
 reconstruct a distinct-race total.
 
+Within each participation row, boundary races use round, race ID, result display
+order and result ID, ascending for `first_race` and descending for `last_race`.
+The current schema already makes `(season_year, round)` unique for races and
+`(race_id, position_display_order)` unique for results; the explicit ID
+tie-breakers make the total order clear even with repeated driver/constructor
+entries. Repeated results remain separate entries and cannot change race order.
+
 A `race` contains string `id`, integer `year` and `round`, `name`, nullable
 date-only `date` (`YYYY-MM-DD`) and nullable string `circuit_id`.
 Use these canonical IDs to link to the existing race, season and circuit routes;
@@ -73,6 +80,21 @@ inferred from names, proposed lineage or unimported upstream fields.
 Results in one request use a read-only repeatable-read snapshot. No editorial or
 lineage records are written. Proposed/rejected lineage remains excluded from the
 existing public lineage endpoints; career associations do not approve claims.
+
+## Presentation boundary
+
+`observations` belongs only to the profile's entity identity. It is not attached
+to participation rows, milestone races or individual results, and cannot support
+labels such as "verified result" or "source for this result." A consumer may
+display it as entity import/source information with the
+`entity_observations_not_result_provenance` limitation alongside it. Source release
+registration alone does not establish which release supplied a result row.
+
+The current web routes do not consume `/career` or display these observations.
+Future localized profile/History Explorer adapters must translate all limitation
+codes into Ukrainian/English presentation copy and label `result_entries` as
+result entries/appearances, never official starts. Reusable components receive
+those labels from their adapter; source links must reflect the entity-only scope.
 
 ## Pinned-source audit before implementation
 
