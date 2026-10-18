@@ -1,4 +1,4 @@
-import { BadRequestException, Controller, Get, Inject, Param, Query } from '@nestjs/common';
+import { BadRequestException, NotFoundException, Controller, Get, Inject, Param, Query } from '@nestjs/common';
 import { Pool } from 'pg';
 import { DB } from './tokens';
 
@@ -43,6 +43,42 @@ export class HistoricalController {
       FROM historical_drivers d JOIN external_identities e ON e.id = d.external_identity_id
       ORDER BY d.display_name, d.id LIMIT $1 OFFSET $2`, [l, o]);
     return { data: rows, limit: l, offset: o };
+  }
+
+  @Get('drivers/:id')
+  async driverProfile(@Param('id') id: string) {
+    const driverId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT d.id::text AS id, d.display_name AS name, e.external_id,
+      COUNT(rr.id)::int AS starts,
+      COUNT(DISTINCT r.season_year)::int AS seasons,
+      MIN(r.season_year) AS first_season,
+      MAX(r.season_year) AS last_season,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podiums,
+      COALESCE(SUM(rr.points), 0)::text AS points
+      FROM historical_drivers d
+      JOIN external_identities e ON e.id = d.external_identity_id
+      LEFT JOIN historical_race_results rr ON rr.driver_id = d.id
+      LEFT JOIN historical_races r ON r.id = rr.race_id
+      WHERE d.id = $1
+      GROUP BY d.id, d.display_name, e.external_id`, [driverId]);
+    if (!rows.length) throw new NotFoundException('Driver not found');
+    return { data: rows };
+  }
+
+  @Get('drivers/:id/seasons')
+  async driverSeasons(@Param('id') id: string) {
+    const driverId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT r.season_year AS year,
+      COUNT(rr.id)::int AS starts,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podiums,
+      COALESCE(SUM(rr.points), 0)::text AS points
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      WHERE rr.driver_id = $1
+      GROUP BY r.season_year ORDER BY r.season_year DESC`, [driverId]);
+    return { data: rows };
   }
 
   @Get('races/:id/results')
