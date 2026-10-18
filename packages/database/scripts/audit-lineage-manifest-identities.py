@@ -30,7 +30,7 @@ def main(path):
         for kind, slug, external_id in identities
     ]).encode()).decode()
     sql = r"""\set ON_ERROR_STOP on
-BEGIN READ ONLY;
+BEGIN;
 CREATE TEMP TABLE lineage_identity_preflight ON COMMIT DROP AS
 SELECT kind, source_slug, external_id FROM jsonb_to_recordset(
  convert_from(decode('PAYLOAD', 'base64'), 'UTF8')::jsonb)
@@ -59,7 +59,7 @@ DO $check$ BEGIN
 END $check$;
 ROLLBACK;
 """.replace("PAYLOAD", payload)
-    # TEMP TABLE creation is permitted in a read-only transaction on PostgreSQL.
+    # A temporary staging table is rolled back; no persistent tables are modified.
     result = subprocess.run(["psql", url, "-X", "-v", "ON_ERROR_STOP=1"],
                             input=sql, text=True, check=False)
     if result.returncode:
