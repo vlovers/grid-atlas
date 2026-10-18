@@ -92,3 +92,13 @@ jobs:
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_races')" = 1172
           test "$(psql "$DATABASE_URL" -X -Atc "SELECT count(*) FROM external_identities WHERE entity_kind='race'")" = 1172
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM source_observations')" = 3184
+      - name: Import race results twice
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 packages/database/scripts/migrate.py
+          for i in 1 2; do
+            python3 packages/data-importer/import_race_results.py --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
+          done
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_race_results')" = 27665
+          test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_race_results WHERE driver_id IS NULL OR race_id IS NULL OR constructor_id IS NULL')" = 0
