@@ -21,11 +21,42 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
      keys.set(edge.entity_type + ':' + edge.subject_id, { id: edge.subject_id, name: edge.subject_name, kind: edge.entity_type });
      keys.set(edge.entity_type + ':' + edge.object_id, { id: edge.object_id, name: edge.object_name, kind: edge.entity_type });
    }
-   const nodes = [...keys.entries()].sort((a,b) => a[1].name.localeCompare(b[1].name)).map(([key, value], i) => ({
-     key, ...value, x: 25 + (i % 4) * 240, y: 35 + Math.floor(i / 4) * 130,
-   }));
+   // Layer nodes by directed reachability. Cycles are kept in a stable fallback
+   // layer rather than triggering unbounded traversal.
+   const indegree = new Map([...keys.keys()].map(key => [key, 0]));
+   const adjacency = new Map([...keys.keys()].map(key => [key, new Set<string>()]));
+   for (const edge of edges) {
+     const from = edge.entity_type + ':' + edge.subject_id;
+     const to = edge.entity_type + ':' + edge.object_id;
+     if (!adjacency.get(from)?.has(to)) {
+       adjacency.get(from)?.add(to);
+       indegree.set(to, (indegree.get(to) ?? 0) + 1);
+     }
+   }
+   const layers = new Map([...keys.keys()].map(key => [key, 0]));
+   const queue = [...keys.keys()].filter(key => indegree.get(key) === 0).sort();
+   for (let i = 0; i < queue.length; i++) {
+     const from = queue[i];
+     for (const to of adjacency.get(from) ?? []) {
+       layers.set(to, Math.max(layers.get(to) ?? 0, (layers.get(from) ?? 0) + 1));
+       indegree.set(to, (indegree.get(to) ?? 1) - 1);
+       if (indegree.get(to) === 0) queue.push(to);
+     }
+   }
+   const byLayer = new Map<number, string[]>();
+   for (const key of keys.keys()) {
+     const layer = layers.get(key) ?? 0;
+     byLayer.set(layer, [...(byLayer.get(layer) ?? []), key]);
+   }
+   const nodes = [...keys.entries()].map(([key, value]) => {
+     const layer = layers.get(key) ?? 0;
+     const peers = (byLayer.get(layer) ?? []).sort((a,b) => (keys.get(a)?.name ?? '').localeCompare(keys.get(b)?.name ?? ''));
+     return { key, ...value, x: 25 + layer * 240, y: 35 + peers.indexOf(key) * 130 };
+   });
    const positions = new Map(nodes.map(node => [node.key, node]));
-   return { nodes, positions, height: Math.max(170, 60 + Math.ceil(nodes.length / 4) * 130) };
+   const maxLayer = Math.max(0, ...layers.values());
+   const maxRows = Math.max(1, ...[...byLayer.values()].map(group => group.length));
+   return { nodes, positions, width: Math.max(W, 60 + (maxLayer + 1) * 240), height: Math.max(170, 60 + maxRows * 130) };
  }, [edges]);
  if (!edges.length) return null;
  const active = edges.find(edge => edge.entity_type + ':' + edge.id === selected);
@@ -33,7 +64,7 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
    <h2>Карта связей</h2>
    <p>Выберите стрелку, чтобы посмотреть тип перехода, год и первоисточник. Схема показывает подтверждённые отношения, а не юридическую преемственность.</p>
    <div style={{ overflowX: 'auto' }}>
-     <svg viewBox={`0 0 ${W} ${graph.height}`} width={W} role="img" aria-label="Схема команд и направленных исторических переходов">
+     <svg viewBox={`0 0 ${graph.width} ${graph.height}`} width={graph.width} role="img" aria-label="Схема команд и направленных исторических переходов">
        <defs><marker id="lineage-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" /></marker></defs>
        {edges.map(edge => {
          const from = graph.positions.get(edge.entity_type + ':' + edge.subject_id);
