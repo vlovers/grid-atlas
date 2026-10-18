@@ -185,7 +185,7 @@ export class HistoricalController {
       COUNT(DISTINCT rr.race_id)::int AS races,
       COUNT(DISTINCT r.season_year)::int AS seasons,
       MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season,
-      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
       COALESCE(SUM(rr.points), 0)::text AS driver_points
       FROM historical_constructors c
@@ -220,7 +220,7 @@ export class HistoricalController {
     const constructorId = integer(id, 0, 1, 2147483647, 'id');
     const { rows } = await this.db.query(`SELECT r.season_year AS year,
       COUNT(DISTINCT rr.race_id)::int AS races,
-      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
       COALESCE(SUM(rr.points), 0)::text AS driver_points
       FROM historical_race_results rr

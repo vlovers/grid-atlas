@@ -36,7 +36,8 @@ def audit(archive, checksums, *, expect_name=ASSET):
     expected = checksum_for(Path(checksums).read_text(encoding="utf-8"), expect_name)
     if archive.name != expect_name:
         raise ValueError(f"Expected official asset filename {expect_name!r}")
-    sha = hashlib.file_digest(archive.open("rb"), "sha256").hexdigest()
+    with archive.open("rb") as stream:
+        sha = hashlib.file_digest(stream, "sha256").hexdigest()
     if sha != expected:
         raise ValueError(f"SHA-256 mismatch: expected {expected}, got {sha}")
     report = {"asset": archive.name, "sha256": sha, "collections": {}, "findings": []}

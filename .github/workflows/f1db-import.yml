@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'packages/data-importer/**'
+      - 'packages/database/**'
+      - 'scripts/f1db_relationships.py'
+      - 'scripts/audit_f1db.py'
       - 'tests/test_import_seasons.py'
       - 'tests/test_import_drivers.py'
       - 'tests/test_import_teams_circuits.py'
@@ -13,6 +16,9 @@ on:
     branches: [main]
     paths:
       - 'packages/data-importer/**'
+      - 'packages/database/**'
+      - 'scripts/f1db_relationships.py'
+      - 'scripts/audit_f1db.py'
       - 'tests/test_import_seasons.py'
 permissions:
   contents: read
@@ -115,10 +121,11 @@ jobs:
             END IF;
           END $audit$;
           SQL
-      - name: Import proposed 2021 lineage into disposable PostgreSQL
+      - name: Preflight and import proposed 2021 lineage into disposable PostgreSQL
         shell: bash
         run: |
           set -euo pipefail
+          python3 packages/database/scripts/audit-lineage-manifest-identities.py docs/data-sources/manifests/silverstone-2021.proposed.json
           python3 packages/database/scripts/import-proposed-lineage.py docs/data-sources/manifests/silverstone-2021.proposed.json
           python3 packages/database/scripts/import-proposed-lineage.py docs/data-sources/manifests/silverstone-2021.proposed.json
           psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'

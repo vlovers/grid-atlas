@@ -33,6 +33,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Test lineage identity preflight guards
         run: python3 packages/database/scripts/test-audit-lineage-manifest-identities.py
+      - name: Test exact identity resolution against PostgreSQL
+        run: python3 packages/database/scripts/test-lineage-identity-integration.py
       - name: Test forward migration on fresh PostgreSQL
         run: |
           bash packages/database/scripts/test-versioned-migrations.sh
