@@ -18,12 +18,20 @@ export default function LineageExplorer({ edges }: { edges: LineageEdge[] }) {
  const [kind, setKind] = useState<'all' | 'constructor' | 'entrant'>('all');
  const [query, setQuery] = useState('');
  const [relation, setRelation] = useState('all');
+ const [sort, setSort] = useState<'oldest' | 'newest' | 'name'>('oldest');
  const relations = useMemo(() => [...new Set(edges.map(edge => edge.relation_type))].sort(), [edges]);
  const visible = useMemo(() => edges.filter(edge =>
    (kind === 'all' || edge.entity_type === kind) &&
    (relation === 'all' || edge.relation_type === relation) &&
    (!query.trim() || [edge.subject_name, edge.object_name].some(name => name.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase())))
- ), [edges, kind, query, relation]);
+ ).sort((a, b) => {
+   if (sort === 'name') return a.subject_name.localeCompare(b.subject_name) || a.object_name.localeCompare(b.object_name);
+   const aYear = a.effective_year ?? (sort === 'oldest' ? Infinity : -Infinity);
+   const bYear = b.effective_year ?? (sort === 'oldest' ? Infinity : -Infinity);
+   return (sort === 'oldest' ? aYear - bYear : bYear - aYear)
+     || a.subject_name.localeCompare(b.subject_name)
+     || a.object_name.localeCompare(b.object_name);
+ }), [edges, kind, query, relation, sort]);
  return <section aria-label="Поиск исторических связей">
    <div className="lineage-controls">
      <label>Поиск команды <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Например, Jordan" /></label>
@@ -32,6 +40,9 @@ export default function LineageExplorer({ edges }: { edges: LineageEdge[] }) {
      </select></label>
      <label>Тип связи <select value={relation} onChange={event => setRelation(event.target.value)}>
        <option value="all">Все связи</option>{relations.map(value => <option key={value} value={value}>{labels[value] ?? value}</option>)}
+     </select></label>
+     <label>Порядок <select value={sort} onChange={event => setSort(event.target.value as typeof sort)}>
+       <option value="oldest">Сначала ранние</option><option value="newest">Сначала новые</option><option value="name">По названию команды</option>
      </select></label>
    </div>
    <p role="status">Показано связей: {visible.length} из {edges.length}</p>
