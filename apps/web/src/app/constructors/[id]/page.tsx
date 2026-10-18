@@ -5,6 +5,7 @@ import { getData } from '@/lib/api';
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; result_entries: number; races: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podium_finishes: number; driver_points: string };
 type Season = { year: number; races: number; wins: number; podium_finishes: number; driver_points: string };
+type Lineage = { id: string; subject_id: string; subject_name: string; object_id: string; object_name: string; relation_type: string; effective_year: number | null; source_url: string; source_title: string; source_publisher: string; evidence_note: string };
 type Props = { params: Promise<{ id: string }> };
 const valid = (id: string) => /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -16,9 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ConstructorProfile({ params }: Props) {
   const { id } = await params;
   if (!valid(id)) notFound();
-  const [profiles, seasons] = await Promise.all([
+  const [profiles, seasons, lineage] = await Promise.all([
     getData<Profile>(`/api/constructors/${id}`),
     getData<Season>(`/api/constructors/${id}/seasons`),
+    getData<Lineage>(`/api/constructors/${id}/lineage`),
   ]);
   const team = profiles[0];
   if (!team) notFound();
@@ -45,6 +47,14 @@ export default async function ConstructorProfile({ params }: Props) {
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>Сезон</th><th>Гонки</th><th>Победы</th><th>Подиумы пилотов</th><th>Очки пилотов</th></tr></thead><tbody>
       {seasons.map(s=><tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{s.driver_points}</td></tr>)}
     </tbody></table></div> : <p>Результаты пока не загружены.</p>}
+    <h2>Исторические связи</h2>
+    <p>Здесь отображаются только проверенные связи с опубликованными источниками. Отсутствие связей не означает отсутствия исторической преемственности.</p>
+    {lineage.length ? <div className="lineup-grid">{lineage.map(edge => <article className="lineup-team" key={edge.id}>
+      <p className="eyebrow">{edge.relation_type.replaceAll('_', ' ')} {edge.effective_year ?? ''}</p>
+      <h3><Link href={`/constructors/${edge.subject_id}`}>{edge.subject_name}</Link> → <Link href={`/constructors/${edge.object_id}`}>{edge.object_name}</Link></h3>
+      <p>{edge.evidence_note}</p>
+      <a className="back" href={edge.source_url} target="_blank" rel="noopener noreferrer">Источник: {edge.source_title} · {edge.source_publisher} ↗</a>
+    </article>)}</div> : <p>Проверенные исторические связи пока не опубликованы.</p>}
     <Link className="back" href="/constructors">← Все конструкторы</Link>
   </section>;
 }
