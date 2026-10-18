@@ -148,11 +148,23 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
        </g>)}
      </svg>
    </div>
-   {active && <div role="status" className="lineage-edge">
-     <strong>{active.subject_name} → {active.object_name}</strong>
-     <span>{relationLabels[active.relation_type] ?? active.relation_type} · {active.effective_year ?? 'Год неизвестен'}</span>
-     <Link href={`/${active.entity_type === 'constructor' ? 'constructors' : 'entrants'}/${active.subject_id}`}>Открыть исходную команду</Link>
-     <a href={active.source_url} target="_blank" rel="noopener noreferrer">Источник: {active.source_title} ↗</a>
-   </div>}
+   {active && <aside aria-label="Подробности исторического перехода" className="lineage-edge">
+     <div>
+       <h3>{active.subject_name} → {active.object_name}</h3>
+       <p><strong>{relationLabels[active.relation_type] ?? active.relation_type}</strong> · {active.effective_year ?? 'Год неизвестен'}</p>
+       <p>Тип записи: {active.entity_type === 'constructor' ? 'Конструкторы' : 'Участники чемпионата'}. Статус: подтверждено источником.</p>
+       <p>Связь отражает указанное историческое событие и сама по себе не устанавливает юридическую преемственность.</p>
+     </div>
+     <div>
+       <p><strong>Первоисточник:</strong> {active.source_publisher}</p>
+       <a href={active.source_url} target="_blank" rel="noopener noreferrer">{active.source_title} ↗</a>
+     </div>
+     <div>
+       <Link href={`/${active.entity_type === 'constructor' ? 'constructors' : 'entrants'}/${active.subject_id}`}>Исходная команда</Link>
+       {' · '}
+       <Link href={`/${active.entity_type === 'constructor' ? 'constructors' : 'entrants'}/${active.object_id}`}>Следующая команда</Link>
+     </div>
+     <button type="button" onClick={() => setSelected(null)}>Закрыть подробности</button>
+   </aside>}
  </section>;
 }
