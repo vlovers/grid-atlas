@@ -37,3 +37,15 @@ python3 packages/data-importer/import_teams_circuits.py \
 ```
 
 The importer reads 187 constructors, 830 entrants and 78 circuits in pinned F1DB v2026.17.0; each is a **separate identity kind**. Their source identifiers and per-record SHA-256 observations are stored without overwriting existing display names. CI imports the actual release twice and asserts unchanged counts. Constructor chronology, legal team ownership, circuit layouts, race results and descriptions are out of scope.
+
+## Races — phase 4
+
+After seasons and circuits are imported, run:
+
+```sh
+python3 packages/data-importer/import_races.py \
+  --archive /path/to/f1db-json-splitted.zip \
+  --checksums /path/to/checksums_sha256.txt
+```
+
+This imports source-attributed F1DB race IDs, season years, rounds, circuit references, race dates and official names. It validates duplicate race IDs/season rounds, date format and required input fields, and rejects missing related seasons/circuits. The full pinned release is imported twice in disposable PostgreSQL CI; existing race rows are not overwritten. **Results, timings, standings, circuit layouts and editorial history remain out of scope.**
