@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import LineageNetwork from './lineage-network';
 
 export type LineageEdge = {
  id: string; entity_type: 'constructor' | 'entrant'; subject_id: string;
@@ -18,6 +19,7 @@ export default function LineageExplorer({ edges }: { edges: LineageEdge[] }) {
  const [kind, setKind] = useState<'all' | 'constructor' | 'entrant'>('all');
  const [query, setQuery] = useState('');
  const [relation, setRelation] = useState('all');
+ const [view, setView] = useState<'list' | 'map'>('list');
  const [sort, setSort] = useState<'oldest' | 'newest' | 'name'>('oldest');
  const relations = useMemo(() => [...new Set(edges.map(edge => edge.relation_type))].sort(), [edges]);
  const visible = useMemo(() => edges.filter(edge =>
@@ -45,8 +47,9 @@ export default function LineageExplorer({ edges }: { edges: LineageEdge[] }) {
        <option value="oldest">Сначала ранние</option><option value="newest">Сначала новые</option><option value="name">По названию команды</option>
      </select></label>
    </div>
+   <div className="lineage-controls"><button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>Список</button><button type="button" aria-pressed={view === 'map'} onClick={() => setView('map')}>Карта связей</button></div>
    <p role="status">Показано связей: {visible.length} из {edges.length}</p>
-   {visible.length ? <div className="lineage-graph" role="list">{visible.map(edge => {
+   {view === 'map' && visible.length > 0 ? <LineageNetwork edges={visible} /> : visible.length ? <div className="lineage-graph" role="list">{visible.map(edge => {
      const prefix = edge.entity_type === 'constructor' ? 'constructors' : 'entrants';
      return <div className="lineage-edge" role="listitem" key={edge.entity_type + '-' + edge.id}>
        <Link className="lineage-node" href={`/${prefix}/${edge.subject_id}`}><small>{edge.entity_type === 'constructor' ? 'Конструктор' : 'Участник'}</small><strong>{edge.subject_name}</strong></Link>
