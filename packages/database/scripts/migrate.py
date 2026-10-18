@@ -43,7 +43,7 @@ def run():
         # inside DO. Use savepoint-free SQL via psql \gset and \if.
         lines.extend([
             f"""DO $check$ BEGIN IF EXISTS (SELECT 1 FROM schema_migrations WHERE version = '{name}' AND checksum <> '{digest}') THEN RAISE EXCEPTION 'Changed migration checksum: {name}'; END IF; END $check$;""",
-            f"SELECT CASE WHEN EXISTS (SELECT 1 FROM schema_migrations WHERE version = '{name}') THEN 'false' ELSE 'true' END AS should_apply \gset",
+            f"SELECT CASE WHEN EXISTS (SELECT 1 FROM schema_migrations WHERE version = '{name}') THEN 'false' ELSE 'true' END AS should_apply \\gset",
             "\\if :should_apply",
             path.read_text(encoding="utf-8").replace("BEGIN;", "", 1).rsplit("COMMIT;", 1)[0],
             f"INSERT INTO schema_migrations(version, checksum) VALUES ('{name}', '{digest}');",

@@ -3,12 +3,14 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'packages/database/**'
       - 'pnpm-workspace.yaml'
       - '.github/workflows/api.yml'
   push:
     branches: [main]
     paths:
       - 'apps/api/**'
+      - 'packages/database/**'
 permissions:
   contents: read
 jobs:
@@ -42,6 +44,8 @@ jobs:
         run: pnpm install --no-frozen-lockfile
       - name: Typecheck and build API
         run: pnpm --filter @grid-atlas/api build
+      - name: Test verified-only lineage over HTTP and PostgreSQL
+        run: pnpm --filter @grid-atlas/api test:integration
       - name: Verify HTTP controller declarations
         run: test -f apps/api/dist/historical.controller.js
       - name: Seed minimal historical fixtures
