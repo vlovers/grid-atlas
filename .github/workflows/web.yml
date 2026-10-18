@@ -1,0 +1,30 @@
+name: Next.js web
+on:
+  pull_request:
+    paths:
+      - 'apps/web/**'
+      - 'pnpm-workspace.yaml'
+      - '.github/workflows/web.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/web/**'
+permissions:
+  contents: read
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pnpm
+        run: corepack enable && corepack prepare pnpm@10.18.3 --activate
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+      - name: Build Next.js frontend
+        env:
+          API_BASE_URL: http://127.0.0.1:3001
+        run: pnpm --filter @grid-atlas/web build
