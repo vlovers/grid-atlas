@@ -12,6 +12,7 @@ import sys
 import zipfile
 from collections import Counter
 from pathlib import Path
+from f1db_relationships import verify
 
 ASSET = "f1db-json-splitted.zip"
 EXPECTED_CATEGORIES = ("drivers", "constructors", "entrants", "races", "seasons")
@@ -34,6 +35,7 @@ def audit(archive, checksums, *, expect_name=ASSET):
     if sha != expected:
         raise ValueError(f"SHA-256 mismatch: expected {expected}, got {sha}")
     report = {"asset": archive.name, "sha256": sha, "collections": {}, "findings": []}
+    collections = {}
     with zipfile.ZipFile(archive) as bundle:
         names = set()
         for member in bundle.infolist():
@@ -57,6 +59,9 @@ def audit(archive, checksums, *, expect_name=ASSET):
             duplicates = sorted(k for k, n in Counter(ids).items() if n > 1)
             nulls = sum(1 for item in data if item is None)
             category = Path(member.filename).stem
+            if category in collections:
+                raise ValueError(f"Duplicate collection basename: {category}")
+            collections[category] = data
             report["collections"][category] = {
                 "file": member.filename, "rows": len(data),
                 "ids": len(ids), "duplicate_ids": duplicates[:25],
@@ -66,6 +71,10 @@ def audit(archive, checksums, *, expect_name=ASSET):
                 report["findings"].append({"file": member.filename, "error": "duplicate id values", "count": len(duplicates)})
     if not report["collections"]:
         raise ValueError("No JSON array collections found in ZIP")
+    report["integrity"] = verify(collections)
+    for check in report["integrity"]["checks"]:
+        if check["orphan_count"]:
+            report["findings"].append({"error": "orphaned reference", **check})
     return report
 
 
