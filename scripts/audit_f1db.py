@@ -12,7 +12,7 @@ import sys
 import zipfile
 from collections import Counter
 from pathlib import Path
-from f1db_relationships import verify
+from scripts.f1db_relationships import verify
 
 ASSET = "f1db-json-splitted.zip"
 EXPECTED_CATEGORIES = ("drivers", "constructors", "entrants", "races", "seasons")
