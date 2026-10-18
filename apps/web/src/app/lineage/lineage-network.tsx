@@ -16,6 +16,7 @@ const NODE_H = 54;
 export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
  const [selected, setSelected] = useState<string | null>(null);
  const [zoom, setZoom] = useState(1);
+ const [focusedTeam, setFocusedTeam] = useState<string>('all');
  const viewport = useRef<HTMLDivElement>(null);
  const graph = useMemo(() => {
    const keys = new Map<string, { id: string; name: string; kind: Node['kind'] }>();
@@ -61,10 +62,24 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
    return { nodes, positions, width: Math.max(W, 60 + (maxLayer + 1) * 240), height: Math.max(170, 60 + maxRows * 130) };
  }, [edges]);
  if (!edges.length) return null;
+ const focusedEdges = focusedTeam === 'all' ? edges : edges.filter(edge =>
+   edge.entity_type + ':' + edge.subject_id === focusedTeam ||
+   edge.entity_type + ':' + edge.object_id === focusedTeam
+ );
+ const focusedKeys = new Set(focusedEdges.flatMap(edge => [
+   edge.entity_type + ':' + edge.subject_id, edge.entity_type + ':' + edge.object_id,
+ ]));
  const active = edges.find(edge => edge.entity_type + ':' + edge.id === selected);
  return <section aria-label="Схема подтверждённых связей">
    <h2>Карта связей</h2>
    <p>Выберите стрелку, чтобы посмотреть тип перехода, год и первоисточник. Схема показывает подтверждённые отношения, а не юридическую преемственность.</p>
+   <div className="lineage-controls">
+     <label>Выделить команду <select value={focusedTeam} onChange={event => { setFocusedTeam(event.target.value); setSelected(null); }}>
+       <option value="all">Все команды</option>
+       {graph.nodes.map(node => <option key={node.key} value={node.key}>{node.name} ({node.kind === 'constructor' ? 'конструктор' : 'участник'})</option>)}
+     </select></label>
+     {focusedTeam !== 'all' && <span role="status">Связей с командой: {focusedEdges.length}</span>}
+   </div>
    <div className="lineage-controls" aria-label="Управление масштабом карты">
      <button type="button" onClick={() => setZoom(value => Math.max(0.5, Math.round((value - 0.25) * 100) / 100))} disabled={zoom <= 0.5} aria-label="Уменьшить масштаб">−</button>
      <span aria-live="polite">Масштаб {Math.round(zoom * 100)}%</span>
@@ -85,13 +100,14 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
          const startX = x1 + dx/distance * 35, startY = y1 + dy/distance * 35;
          const endX = x2 - dx/distance * 35, endY = y2 - dy/distance * 35;
          const key = edge.entity_type + ':' + edge.id;
+         const muted = focusedTeam !== 'all' && !focusedEdges.includes(edge);
          return <g key={key} onClick={() => setSelected(key)} role="button" tabIndex={0} onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelected(key); } }} aria-label={`${edge.subject_name} → ${edge.object_name}, ${relationLabels[edge.relation_type] ?? edge.relation_type}`} style={{ cursor: 'pointer' }}>
-           <line x1={startX} y1={startY} x2={endX} y2={endY} stroke="currentColor" strokeWidth={selected === key ? 3 : 1.5} opacity={selected && selected !== key ? 0.25 : 0.65} markerEnd="url(#lineage-arrowhead)" />
+           <line x1={startX} y1={startY} x2={endX} y2={endY} stroke="currentColor" strokeWidth={selected === key ? 3 : 1.5} opacity={muted ? 0.12 : selected && selected !== key ? 0.25 : 0.65} markerEnd="url(#lineage-arrowhead)" />
            <circle cx={(startX+endX)/2} cy={(startY+endY)/2} r="12" fill="var(--background, #fff)" stroke="currentColor" />
            <text x={(startX+endX)/2} y={(startY+endY)/2+4} fontSize="11" textAnchor="middle" fill="currentColor">{edge.effective_year ?? '?'}</text>
          </g>;
        })}
-       {graph.nodes.map(node => <g key={node.key}>
+       {graph.nodes.map(node => <g key={node.key} opacity={focusedTeam === 'all' || focusedKeys.has(node.key) ? 1 : 0.22}>
          <rect x={node.x} y={node.y} width={NODE_W} height={NODE_H} rx="10" fill="var(--background, #fff)" stroke="currentColor" opacity=".95" />
          <text x={node.x+10} y={node.y+19} fontSize="11" fill="currentColor" opacity=".7">{node.kind === 'constructor' ? 'Конструктор' : 'Участник'}</text>
          <text x={node.x+10} y={node.y+39} fontSize="14" fontWeight="600" fill="currentColor">{node.name.length > 23 ? node.name.slice(0,22) + '…' : node.name}</text>
