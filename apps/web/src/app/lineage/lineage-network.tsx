@@ -165,6 +165,6 @@ export default function LineageNetwork({ edges }: { edges: LineageEdge[] }) {
        <Link href={`/${active.entity_type === 'constructor' ? 'constructors' : 'entrants'}/${active.object_id}`}>Следующая команда</Link>
      </div>
      <button type="button" onClick={() => setSelected(null)}>Закрыть подробности</button>
-   </aside>
+   </aside>}
  </section>;
 }
