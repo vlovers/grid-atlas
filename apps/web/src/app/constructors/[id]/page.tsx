@@ -28,6 +28,19 @@ export default async function ConstructorProfile({ params }: Props) {
     <div className="driver-grid" aria-label="Статистика конструктора">
       {([['Сезоны',team.seasons],['Гонки',team.races],['Победы',team.wins],['Подиумы пилотов',team.podium_finishes],['Очки пилотов',team.driver_points]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>
+    <h2>Временная шкала выступлений</h2>
+    <p>Каждая отметка — сезон с зафиксированными результатами. Пропуски означают отсутствие результатов в загруженном архиве.</p>
+    {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label="Временная шкала конструктора" tabIndex={0}>
+      <div className="timeline-track" style={{ gridTemplateColumns: `repeat(${team.last_season - team.first_season + 1}, minmax(46px,1fr))` }}>
+        {Array.from({ length: team.last_season - team.first_season + 1 }, (_, i) => {
+          const year = team.first_season! + i;
+          const season = seasons.find(s => s.year === year);
+          return season
+            ? <Link className="timeline-year active" key={year} href={`/seasons/${year}`} title={`${year}: ${season.races} гонок, ${season.wins} побед`}><span>{year}</span><strong>{season.wins} W</strong></Link>
+            : <div className="timeline-year inactive" key={year} title={`${year}: нет результатов`}><span>{year}</span><small>—</small></div>;
+        })}
+      </div>
+    </div>}
     <h2>История по сезонам</h2>
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>Сезон</th><th>Гонки</th><th>Победы</th><th>Подиумы пилотов</th><th>Очки пилотов</th></tr></thead><tbody>
       {seasons.map(s=><tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{s.driver_points}</td></tr>)}
