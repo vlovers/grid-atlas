@@ -114,6 +114,33 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('entrants/:id/lineage')
+  async entrantLineage(@Param('id') id: string) {
+    const entrantId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT lc.id::text AS id,
+      lc.subject_entrant_id::text AS subject_id, source_team.display_name AS subject_name,
+      lc.object_entrant_id::text AS object_id, target_team.display_name AS object_name,
+      lc.relation_type, lc.effective_year, lc.source_url, lc.source_title,
+      lc.source_publisher, lc.evidence_note
+      FROM historical_entrant_lineage_claims lc
+      JOIN historical_entrants source_team ON source_team.id = lc.subject_entrant_id
+      JOIN historical_entrants target_team ON target_team.id = lc.object_entrant_id
+      WHERE lc.review_status = 'verified'
+        AND (lc.subject_entrant_id = $1 OR lc.object_entrant_id = $1)
+      ORDER BY lc.effective_year NULLS LAST, lc.id`, [entrantId]);
+    return { data: rows };
+  }
+
+  @Get('entrants/:id')
+  async entrantProfile(@Param('id') id: string) {
+    const entrantId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT e.id::text AS id, e.display_name AS name, x.external_id
+      FROM historical_entrants e JOIN external_identities x ON x.id = e.external_identity_id
+      WHERE e.id = $1`, [entrantId]);
+    if (!rows.length) throw new NotFoundException('Entrant not found');
+    return { data: rows };
+  }
+
   @Get('constructors')
   async constructors(@Query('limit') limit?: string, @Query('offset') offset?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
