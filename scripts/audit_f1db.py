@@ -52,7 +52,7 @@ def audit(archive, checksums, *, expect_name=ASSET):
             if member.filename in names:
                 raise ValueError(f"Duplicate archive path: {member.filename}")
             names.add(member.filename)
-            if not member.filename.lower().endswith(".json"):
+            if not member.filename.lower().endswith(".json") or member.filename.lower().endswith(".schema.json"):
                 continue
             if member.file_size > 200_000_000:
                 raise ValueError(f"Unexpectedly large JSON member: {member.filename}")

@@ -33,6 +33,13 @@ class AuditTests(unittest.TestCase):
         data = audit(self.archive, self.checksums)
         self.assertEqual(data["collections"]["drivers"]["duplicate_id_count"], 1)
 
+    def test_schema_files_ignored(self):
+        self.write_zip({"f1db-drivers.json": [{"id": "x"}],
+                        "f1db-drivers.schema.json": {"type": "array"}})
+        report = audit(self.archive, self.checksums)
+        self.assertEqual(len(report["collections"]), 1)
+        self.assertFalse(report["findings"])
+
     def test_tampering_detected(self):
         self.write_zip({"drivers.json": [{"id": "x"}]})
         self.checksums.write_text("0" * 64 + f"  {ASSET}\n")
