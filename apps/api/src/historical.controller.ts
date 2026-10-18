@@ -81,6 +81,52 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('constructors')
+  async constructors(@Query('limit') limit?: string, @Query('offset') offset?: string) {
+    const l = integer(limit, 50, 1, 100, 'limit');
+    const o = integer(offset, 0, 0, 100000, 'offset');
+    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id
+      FROM historical_constructors c JOIN external_identities e ON e.id = c.external_identity_id
+      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o]);
+    return { data: rows, limit: l, offset: o };
+  }
+
+  @Get('constructors/:id')
+  async constructorProfile(@Param('id') id: string) {
+    const constructorId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id,
+      COUNT(rr.id)::int AS result_entries,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(DISTINCT r.season_year)::int AS seasons,
+      MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
+      COALESCE(SUM(rr.points), 0)::text AS driver_points
+      FROM historical_constructors c
+      JOIN external_identities e ON e.id = c.external_identity_id
+      LEFT JOIN historical_race_results rr ON rr.constructor_id = c.id
+      LEFT JOIN historical_races r ON r.id = rr.race_id
+      WHERE c.id = $1
+      GROUP BY c.id, c.display_name, e.external_id`, [constructorId]);
+    if (!rows.length) throw new NotFoundException('Constructor not found');
+    return { data: rows };
+  }
+
+  @Get('constructors/:id/seasons')
+  async constructorSeasons(@Param('id') id: string) {
+    const constructorId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT r.season_year AS year,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
+      COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
+      COALESCE(SUM(rr.points), 0)::text AS driver_points
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      WHERE rr.constructor_id = $1
+      GROUP BY r.season_year ORDER BY r.season_year DESC`, [constructorId]);
+    return { data: rows };
+  }
+
   @Get('races/:id/results')
   async results(@Param('id') id: string, @Query('limit') limit?: string, @Query('offset') offset?: string) {
     const race = integer(id, 0, 1, 2147483647, 'id');
