@@ -6,6 +6,7 @@ import { getData } from '@/lib/api';
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; starts: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podiums: number; points: string };
 type SeasonSummary = { year: number; starts: number; wins: number; podiums: number; points: string };
+type TeamSeason = { year: number; constructor_id: string; constructor_name: string; races: number; wins: number };
 type Props = { params: Promise<{ id: string }> };
 function validId(id: string) { return /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647; }
 
@@ -19,9 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function DriverProfile({ params }: Props) {
   const { id } = await params;
   if (!validId(id)) notFound();
-  const [profiles, seasons] = await Promise.all([
+  const [profiles, seasons, teams] = await Promise.all([
     getData<Profile>(`/api/drivers/${id}`),
     getData<SeasonSummary>(`/api/drivers/${id}/seasons`),
+    getData<TeamSeason>(`/api/drivers/${id}/teams`),
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
@@ -37,6 +39,11 @@ export default async function DriverProfile({ params }: Props) {
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>Сезон</th><th>Выступления</th><th>Победы</th><th>Подиумы</th><th>Очки</th></tr></thead><tbody>{seasons.map(s =>
       <tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.starts}</td><td>{s.wins}</td><td>{s.podiums}</td><td>{s.points}</td></tr>
     )}</tbody></table></div> : <p>Результаты пока не загружены.</p>}
+    <h2>Команды по сезонам</h2>
+    <p>Выступления восстановлены по результатам гонок. В одном сезоне у пилота могло быть несколько конструкторов.</p>
+    {teams.length ? <div className="table-scroll"><table><thead><tr><th>Сезон</th><th>Конструктор</th><th>Гонки</th><th>Победы</th></tr></thead><tbody>{teams.map(t=>
+      <tr key={`${t.year}-${t.constructor_id}`}><td><Link href={`/seasons/${t.year}`}>{t.year}</Link></td><td><Link href={`/constructors/${t.constructor_id}`}>{t.constructor_name} ↗</Link></td><td>{t.races}</td><td>{t.wins}</td></tr>
+    )}</tbody></table></div> : <p>История команд пока не загружена.</p>}
     <Link className="back" href="/drivers">← Все пилоты</Link>
   </section>;
 }
