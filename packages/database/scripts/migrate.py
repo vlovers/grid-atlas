@@ -37,16 +37,6 @@ def run():
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         # SQL file contents are from trusted, reviewed repository migrations.
         # psql's \gexec executes conditionally only for unapplied migrations.
-        lines.extend([
-            f"""DO $mig$
-            BEGIN
-              IF EXISTS (SELECT 1 FROM schema_migrations WHERE version = '{name}' AND checksum <> '{digest}') THEN
-                RAISE EXCEPTION 'Migration checksum changed: {name}';
-              END IF;
-            END $mig$;""",
-            f"""SELECT CASE WHEN NOT EXISTS (SELECT 1 FROM schema_migrations WHERE version = '{name}')
-                     THEN 'SELECT 1 AS apply_{path.stem};' ELSE 'SELECT 1 AS skip_{path.stem};' END \gexec""",
-        ])
         # We must not use \i unconditionally. A separate shell executor is simpler
         # but would drop the lock. Instead embed migration SQL conditionally via a
         # PostgreSQL stored procedure? PostgreSQL cannot run transaction control
