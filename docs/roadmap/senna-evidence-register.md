@@ -32,3 +32,18 @@
 ## Publication guardrail
 
 This file is intentionally outside the public biography API and does not mutate editorial approval state. It must never be ingested as verified content by an automated pipeline.
+
+## Located exact source pages (research, not editorial approval)
+
+These are concrete public records located during research. They still require an identified human reviewer to inspect each assertion and source context before any status changes to `verified`.
+
+| Claim | Precise URL | Passage / table to inspect | Remaining check |
+| --- | --- | --- | --- |
+| senna-001 | https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ | Hall of Fame biography, McLaren period and titles in 1988/1990/1991 | Cross-check championship years with official year-by-year classifications |
+| senna-002 | https://www.formula1.com/en/results/1984/drivers/AYRSEN01/ayrton-senna.html | 1984 driver results, Brazil on 25 March and Toleman Hart team column | Reconcile starts vs entries with pinned F1DB |
+| senna-003 | https://www.formula1.com/en/latest/article/who-was-ayrton-senna-and-why-is-he-regarded-as-one-of-f1s-greatest-drivers.2GZEdmgHd9mPeCae2n6n4K | Section 'What happened after that?' on Lotus 1985 and McLaren 1988 | Cross-check constructor relationships in F1DB |
+| senna-004 | https://www.formula1.com/en/results/1988/drivers | 1988 Drivers' Standings: Senna P1, McLaren Honda, 90 points | Explicitly explain best-11-results scoring rather than raw points |
+| senna-004 | https://www.formula1.com/en/latest/article/the-elite-group-norris-joins-as-a-mclaren-world-champion.5zxR12eN0M4IM0onxSXR0F.5zxR12eN0M4IM0onxSXR0F | Section 'Ayrton Senna – 1988, 1990, 1991' on discarded results | Historical scoring cross-check; source is F1, not independent corroboration |
+| senna-005 | https://www.formula1.com/en/latest/article/who-was-ayrton-senna-and-why-is-he-regarded-as-one-of-f1s-greatest-drivers.2GZEdmgHd9mPeCae2n6n4K | Career conclusion / 1994 Imola weekend | Find independent contemporary reporting; avoid unsourced medical causation |
+
+**Independence note:** multiple Formula 1 pages share a publisher and are not independent corroboration. Source URLs are candidates for human review, not verified evidence records. No content or approval state is changed by this document.
