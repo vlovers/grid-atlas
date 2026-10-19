@@ -5,7 +5,7 @@ import { Link } from '@/i18n/navigation';
 import type { ExplorerGraph } from '@/lib/explorer-contract';
 import styles from './explorer-graph.module.css';
 
-type Props = { graph: ExplorerGraph; locale: 'en' | 'uk' };
+type Props = { graph: ExplorerGraph; locale: 'en' | 'uk'; selectedId?: string };
 const DISPLAY_LIMIT = 10;
 const WIDTH = 840;
 const HEIGHT = 540;
@@ -15,13 +15,22 @@ const RADIUS_X = 287;
 const RADIUS_Y = 191;
 
 /** Bounded observed-result graph and synchronized accessible edge inspector. */
-export default function ExplorerGraph({ graph, locale }: Props) {
+export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
   const uk = locale === 'uk';
   const constructorFocus = graph.focus.startsWith('constructor:');
   const neighborRoute = constructorFocus ? 'drivers' : 'constructors';
   const focus = graph.nodes.find(node => node.key === graph.focus);
   const visible = graph.edges.slice(0, DISPLAY_LIMIT);
-  const [selectedKey, setSelectedKey] = useState<string | null>(graph.edges[0]?.key ?? null);
+  const initialSelection = graph.edges.find(edge =>
+    graph.nodes.find(node => node.key === edge.to)?.entity_id === selectedId);
+  const [selectedKey, setSelectedKey] = useState<string | null>(
+    initialSelection?.key ?? graph.edges[0]?.key ?? null);
+  const selectEdge = (key: string, nodeId: string) => {
+    setSelectedKey(key);
+    const url = new URL(window.location.href);
+    url.searchParams.set('selected', nodeId);
+    window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+  };
   const selected = graph.edges.find(edge => edge.key === selectedKey) ?? graph.edges[0];
   const selectedNode = selected && graph.nodes.find(node => node.key === selected.to);
 
@@ -71,7 +80,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
         const x = CENTER_X + RADIUS_X * Math.cos(angle);
         const y = CENTER_Y + RADIUS_Y * Math.sin(angle);
         return <a key={edge.key} href="#explorer-inspector"
-          onClick={() => setSelectedKey(edge.key)}
+          onClick={() => selectEdge(edge.key, node.entity_id)}
           className={styles.nodeLink}
           aria-label={uk ? `${node.name}, переглянути зв’язок` : `${node.name}, inspect connection`}
           aria-current={edge.key === selected?.key ? 'true' : undefined}>
@@ -114,7 +123,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
-      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
+      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}&selected=${selectedNode.entity_id}`}>
         {uk ? 'Переглянути гонки, що підтверджують зв’язок →' : 'See races behind this connection →'}
       </a></p>
       <Link href={`/${neighborRoute}/${selectedNode.entity_id}`}>
