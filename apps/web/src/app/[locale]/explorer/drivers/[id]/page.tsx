@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import { getExplorerGraph } from '@/lib/explorer-api';
+import ExplorerGraph from '@/components/explorer-graph';
 
 export const dynamic = 'force-dynamic';
 
@@ -41,6 +42,7 @@ export default async function ExplorerDriverPage({ params, searchParams }: Props
       <p>{uk ? 'Сезон' : 'Season'}: <strong>{graph.year}</strong>.{' '}
         <Link href={`/drivers/${id}`}>{uk ? 'Повернутися до пілота' : 'Back to driver'}</Link>
       </p>
+      {graph.edges.length > 0 && <ExplorerGraph graph={graph} locale={uk ? 'uk' : 'en'} />}
       <h2>{uk ? 'Зафіксовані зв’язки' : 'Recorded connections'}</h2>
       {graph.edges.length === 0
         ? <p>{uk ? 'У цьому сезоні немає записаних результатів для пілота.' : 'No recorded results for this driver in this season.'}</p>
