@@ -11,7 +11,7 @@ for (const locale of ['uk', 'en'] as const) {
     const context = inspector.getByLabel(locale === 'uk'
       ? 'Пояснення даних результатів' : 'Understanding result records');
     await expect(context).toBeVisible();
-    await expect(context.getByRole('heading', { level: 3 })).toHaveText(locale === 'uk'
+    await expect(context.locator('strong')).toHaveText(locale === 'uk'
       ? 'Що означає цей зв’язок?' : 'What does this connection mean?');
     await expect(context).toContainText('1950');
     await expect(context).toContainText('driver-b');
