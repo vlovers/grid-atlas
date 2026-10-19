@@ -27,7 +27,7 @@ test('Ukrainian and English contain the same complete, nonempty interface messag
 });
 
 test('every interface message formats in both languages without missing ICU values', () => {
-  const values = { page: 2, count: 5, query: 'Jordan', year: 2021, races: 2, wins: 1, first: 1950,
+  const values = { page: 2, count: 5, query: 'Jordan', year: 2021, races: 2, entries: 3, wins: 1, first: 1950,
     last: 2026, name: 'fixture.json', title: 'Fixture source', round: 1, percent: 125, type: 'constructor', total: 10 };
   for (const [locale, messages] of [['uk', uk], ['en', en]]) {
     const errors = [];
