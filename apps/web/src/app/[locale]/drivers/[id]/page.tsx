@@ -71,7 +71,7 @@ export default async function DriverProfile({ params }: Props) {
     />}
     {career && <RelatedJourneys
       label={t('goldenJourneys')}
-      journeys={career.participation.slice(0, 3).map(row => ({
+      items={career.participation.slice(0, 3).map(row => ({
         id: `driver:${id}:constructor:${row.related_id}:year:${row.year}`,
         kind: t('constructor'),
         destination: { href: `/constructors/${row.related_id}`, label: row.related_name },
