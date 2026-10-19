@@ -11,7 +11,7 @@
 
 -- Fail closed when source identities are absent or ambiguous. An empty result
 -- must never be mistaken for a valid zero-win or zero-point season.
-DO $
+DO $audit$
 DECLARE matched INTEGER;
 BEGIN
   SELECT COUNT(*) INTO matched
@@ -22,7 +22,7 @@ BEGIN
   IF matched <> 2 THEN
     RAISE EXCEPTION 'Expected exactly 2 canonical F1DB driver identities; found %. Inspect external_identities before proceeding', matched;
   END IF;
-END $;
+END $audit$;
 
 WITH target_drivers AS (
   SELECT d.id, d.display_name, ei.external_id
