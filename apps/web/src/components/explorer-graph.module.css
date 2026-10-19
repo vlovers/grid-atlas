@@ -137,3 +137,13 @@
 .permalink a:hover, .permalink a:focus-visible {
   color: #fff;
 }
+
+.resultContext {
+  margin-block: 1rem;
+  border-inline-start: 3px solid #ff7468;
+  padding: .75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  background: #253541;
+}
+.resultContext h3 { font-size: 1rem; margin: 0 0 .5rem; }
+.resultContext p { margin: .5rem 0; line-height: 1.5; color: #e1e8ed; }
