@@ -10,6 +10,38 @@ if (!year || !driver || !constructorId) {
 }
 
 for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: real no-data year is honest and does not invent edges`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/drivers/${driver}?year=2200`);
+    await expect(page.getByText(locale === 'uk'
+      ? 'У цьому сезоні немає записаних результатів для пілота.'
+      : 'No recorded results for this driver in this season.')).toBeVisible();
+    await expect(page.getByRole('region', {
+      name: locale === 'uk' ? 'Прокручувана карта зв’язків' : 'Scrollable connection map',
+    })).toHaveCount(0);
+  });
+
+  test(`${locale}: real imported graph viewport supports keyboard focus and mobile pan`, async ({ page, isMobile }) => {
+    await page.goto(`/${locale}/explorer/drivers/${driver}?year=${year}&selected=${constructorId}`);
+    const viewport = page.getByRole('region', {
+      name: locale === 'uk' ? 'Прокручувана карта зв’язків' : 'Scrollable connection map',
+    });
+    await expect(viewport).toBeVisible();
+    await viewport.focus();
+    await expect(viewport).toBeFocused();
+    if (isMobile) {
+      const geometry = await viewport.evaluate(element => ({
+        scrollWidth: element.scrollWidth,
+        clientWidth: element.clientWidth,
+      }));
+      expect(geometry.scrollWidth).toBeGreaterThan(geometry.clientWidth);
+    }
+    const inspector = page.getByRole('complementary', {
+      name: locale === 'uk' ? 'Деталі зв’язку' : 'Connection details',
+    });
+    await expect(inspector).toContainText(locale === 'uk'
+      ? 'не доказ офіційних стартів' : 'not evidence of official starts');
+  });
+
   test(`${locale}: real archive graph -> evidence -> back -> reciprocal graph`, async ({ page }) => {
     const driverUrl = `/${locale}/explorer/drivers/${driver}?year=${year}&selected=${constructorId}`;
     const constructorUrl = `/${locale}/explorer/constructors/${constructorId}?year=${year}&selected=${driver}`;
