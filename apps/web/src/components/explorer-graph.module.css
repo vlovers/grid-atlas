@@ -109,3 +109,19 @@
   outline-offset: 2px;
 }
 .edgeNavigation [aria-disabled="true"] { color: #8795a2; }
+
+.reverseExplore a {
+  display: inline-block;
+  border: 1px solid #ff7468;
+  border-radius: 8px;
+  padding: .65rem .9rem;
+  color: #fff;
+  background: #562a32;
+  font-weight: 700;
+  text-decoration: none;
+}
+.reverseExplore a:hover, .reverseExplore a:focus-visible {
+  border-color: #fff;
+  background: #79323b;
+  outline-offset: 3px;
+}

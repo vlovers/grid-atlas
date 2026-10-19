@@ -147,6 +147,13 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
+      <p className={styles.reverseExplore}>
+        <a href={`/${locale}/explorer/${constructorFocus ? 'drivers' : 'constructors'}/${selectedNode.entity_id}?year=${graph.year}&selected=${focus?.entity_id}#explorer-inspector`}>
+          {constructorFocus
+            ? (uk ? 'Дослідити зв’язки цього пілота →' : 'Explore this driver’s connections →')
+            : (uk ? 'Дослідити зв’язки цього конструктора →' : 'Explore this constructor’s connections →')}
+        </a>
+      </p>
       <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}&selected=${selectedNode.entity_id}`}>
         {uk ? 'Переглянути гонки, що підтверджують зв’язок →' : 'See races behind this connection →'}
       </a></p>
