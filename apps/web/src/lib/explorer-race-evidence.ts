@@ -32,16 +32,19 @@ const fail = (): never => { throw new Error('Malformed Explorer race evidence re
 export function parsePairRaceEvidence(payload: unknown, driverId: string, constructorId: string, year: number): PairRaceEvidence {
   if (!positiveId(driverId) || !positiveId(constructorId) ||
     !Number.isInteger(year) || year < 1950 || year > 2200 || !record(payload)) fail();
-  const data: unknown = payload.data;
-  if (!record(data)) fail();
-  if (!record(data.driver) || !record(data.constructor) ||
-    data.driver.id !== driverId || data.constructor.id !== constructorId ||
-    !text(data.driver.name) || !text(data.constructor.name) ||
+  const envelope = payload as Record<string, unknown>;
+  if (!record(envelope.data)) fail();
+  const data = envelope.data as Record<string, unknown>;
+  if (!record(data.driver) || !record(data.constructor)) fail();
+  const driver = data.driver as Record<string, unknown>;
+  const constructor = data.constructor as Record<string, unknown>;
+  const races: unknown[] = Array.isArray(data.races) ? data.races : fail();
+  const limitations: unknown[] = Array.isArray(data.limitations) ? data.limitations : fail();
+  if (driver.id !== driverId || constructor.id !== constructorId ||
+    !text(driver.name) || !text(constructor.name) ||
     data.year !== year || data.provenance !== 'imported-main-race-results' ||
     typeof data.truncated !== 'boolean' || data.limit !== 100 ||
-    !Array.isArray(data.races) || !Array.isArray(data.limitations) ||
-    !data.limitations.every(text)) fail();
-  const races: unknown[] = data.races as unknown[];
+    !limitations.every(text)) fail();
   const seen = new Set<string>();
   for (const item of races) {
     if (!record(item)) fail();
