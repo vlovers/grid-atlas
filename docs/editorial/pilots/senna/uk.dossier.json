@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "driver_id": "ayrton-senna",
+  "locale": "uk",
+  "title": "Айртон Сенна — дослідна чернетка про чемпіонські титули",
+  "author": "Codex-assisted research; accountable human author not yet assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "senna-fia-winners",
+      "source_url": "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+      "title": "2018 United States Grand Prix pocket guide",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "2018 event guide; PDF pp. 79–80 (printed pp. 76–77); inspected 2026-10-20",
+      "independence_group": "fia"
+    },
+    {
+      "source_id": "senna-f1-standings",
+      "source_url": "https://www.formula1.com/en/results/1988/drivers",
+      "title": "1988 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live results table inspected 2026-10-20; no immutable page revision supplied",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "ayrton-senna-championships",
+      "topic": "championships",
+      "statement": "Айртон Сенна здобув титул чемпіона світу серед пілотів у 1988, 1990 та 1991 роках, виступаючи за McLaren.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-fia-winners",
+          "locator": "PDF page 80 (1-based), printed page 77, Drivers’ World Championship Winners table: 1988, 1990 and 1991 rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "ayrton-senna-1988-standings",
+      "topic": "championships",
+      "statement": "В офіційній підсумковій таблиці чемпіонату серед пілотів за 1988 рік Айртон Сенна посідає перше місце з 90 очками, а Ален Прост — друге з 87.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-f1-standings",
+          "locator": "1988 Drivers’ Standings table, first two rows, Pos. / Driver / Pts. columns; championship table, not a sum of race-result points",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "championships",
+      "title": "Результати чемпіонатів",
+      "claim_ids": [
+        "ayrton-senna-championships",
+        "ayrton-senna-1988-standings"
+      ]
+    }
+  ],
+  "gaps": [
+    "Assign an accountable human author and reconcile canonical identity against the pinned F1DB release.",
+    "Reopen each precise source passage and independently review this locale; research observations are not human approval.",
+    "This is a two-claim pilot, not the complete PR #71 biography. See SENNA_PILOT_AUDIT.md for omitted claims and missing evidence."
+  ],
+  "media": []
+}
