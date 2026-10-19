@@ -73,7 +73,7 @@ export class ExplorerController {
             key: `driver:${id}:constructor:${row.id}:year:${year}`,
             from: `driver:${id}`,
             to: `constructor:${row.id}`,
-            relation_type: 'driver_competed_for_constructor',
+            relation_type: 'driver_recorded_result_for_constructor',
             year,
             result_entries: row.result_entries,
             races: row.races,
