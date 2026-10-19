@@ -69,7 +69,7 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
         edge.provenance !== 'imported-result-association' || edge.year !== year ||
         !count(edge.result_entries) || !count(edge.races) || !count(edge.winning_races) ||
         edge.races > edge.result_entries || edge.winning_races > edge.races) fail();
-    edges.add(edge.key);
+    edges.add(edge.key as string);
   }
   if (edges.size > graphLimit || nodes.size !== edges.size + 1 ||
       (graph.truncated && edges.size !== graphLimit)) fail();
