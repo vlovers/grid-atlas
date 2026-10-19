@@ -80,7 +80,8 @@ export class TimeMachineController {
 
       const pairs = new Map<string, { id: string; name: string; from: CountRow | null; to: CountRow | null }>();
       for (const row of result.rows) {
-        const entry = pairs.get(row.id) ?? { id: row.id, name: row.name, from: null, to: null };
+        const entry: { id: string; name: string; from: CountRow | null; to: CountRow | null } =
+          pairs.get(row.id) ?? { id: row.id, name: row.name, from: null, to: null };
         const values = { result_entries: row.result_entries, races: row.races, winning_races: row.winning_races };
         if (row.year === fromYear) entry.from = values;
         else entry.to = values;
