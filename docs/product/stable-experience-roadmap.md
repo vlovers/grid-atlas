@@ -13,13 +13,14 @@ This document records merged GitHub work and known blockers, not an approval to 
 | Edge inspector and exact race-evidence drilldown | #92, #95, #96 | Distinct recorded races vs result rows; no per-result primary-source citations |
 | Responsive polish, selected edge URLs and neighbor navigation | #97–#99 | Synthetic desktop/mobile browser coverage; real-archive audit pending |
 | Reciprocal-focus traversal and shareable relationship links | #100, #101 | Year and canonical identities preserved across two-way navigation |
+| Result-count explanation in inspector | #102 | User-facing clarification without official starts or career-win inference |
 | UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
 
-## Work currently not merged
+## Remaining unmerged drafts and editorial reviews
 
-- [PR #102](https://github.com/vlovers/grid-atlas/pull/102): explanatory inspector copy, **draft until both CI checks pass and regression verified**.
+- [PR #102](https://github.com/vlovers/grid-atlas/pull/102): **merged** after Foundation and Next.js web CI passed; result-count explanations are in main.
 - [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
-- [PR #59](https://github.com/vlovers/grid-atlas/pull/59): old Explorer product draft; reconcile against merged docs before closing.
+- [PR #59](https://github.com/vlovers/grid-atlas/pull/59): old Explorer product draft; **six documentation files are not in main**; audit their unique useful material before closing.
 
 ## Prioritized work items
 
