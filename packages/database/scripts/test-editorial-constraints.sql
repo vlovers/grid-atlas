@@ -8,11 +8,13 @@ DECLARE
  c BIGINT;
  s BIGINT;
 BEGIN
- SELECT id INTO d FROM historical_drivers ORDER BY id LIMIT 1;
- IF d IS NULL THEN
-   RAISE NOTICE 'No historical drivers imported: editorial constraint test skipped';
-   RETURN;
- END IF;
+ INSERT INTO data_sources(slug,homepage_url,attribution)
+ VALUES('editorial-ci-fixture','https://example.org','Disposable test fixture');
+ INSERT INTO external_identities(source_id,entity_kind,external_id)
+ SELECT id,'driver','editorial-ci-driver' FROM data_sources WHERE slug='editorial-ci-fixture';
+ INSERT INTO historical_drivers(external_identity_id,display_name)
+ SELECT id,'Editorial CI Driver' FROM external_identities WHERE external_id='editorial-ci-driver'
+ RETURNING id INTO d;
  INSERT INTO content_articles(subject_driver_id,locale,slug,title)
  VALUES(d,'en','editorial-constraint-test','Editorial constraint test') RETURNING id INTO a;
  BEGIN
