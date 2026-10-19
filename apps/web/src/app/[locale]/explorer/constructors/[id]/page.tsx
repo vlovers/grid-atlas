@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 type Props = {
   params: Promise<{ id: string; locale: string }>;
-  searchParams: Promise<{ year?: string | string[] }>;
+  searchParams: Promise<{ year?: string | string[]; selected?: string | string[] }>;
 };
 const validId = (value: string) => /^[1-9][0-9]{0,18}$/.test(value) &&
   BigInt(value) <= 9223372036854775807n;
@@ -18,7 +18,10 @@ const validYear = (value: unknown): value is string =>
 export default async function ConstructorExplorerPage({ params, searchParams }: Props) {
   const { id, locale } = await params;
   if (!validId(id) || !['en', 'uk'].includes(locale)) notFound();
-  const requested = (await searchParams).year;
+  const query = await searchParams;
+  const requested = query.year;
+  const selected = typeof query.selected === 'string' && /^[1-9][0-9]{0,18}$/.test(query.selected)
+    ? query.selected : undefined;
   const uk = locale === 'uk';
   const selectedYear = validYear(requested) ? Number(requested) : null;
   const graph = selectedYear === null ? null : await getConstructorExplorerGraph(id, selectedYear);
@@ -43,7 +46,7 @@ export default async function ConstructorExplorerPage({ params, searchParams }: 
         <Link href={`/constructors/${id}`}>{uk ? 'Повернутися до конструктора' : 'Back to constructor'}</Link>
       </p>
       {graph.edges.length > 0
-        ? <ExplorerGraph graph={graph} locale={uk ? 'uk' : 'en'} />
+        ? <ExplorerGraph graph={graph} locale={uk ? 'uk' : 'en'} selectedId={selected} />
         : <p>{uk ? 'У цьому сезоні немає записаних результатів для конструктора.' : 'No recorded results for this constructor in this season.'}</p>}
       {graph.truncated && <p role="status">{uk
         ? `Показано лише перших ${graph.limit} пілотів.`

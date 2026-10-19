@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 type Props = {
   params: Promise<{ driverId: string; constructorId: string; locale: string }>;
-  searchParams: Promise<{ year?: string | string[]; from?: string | string[] }>;
+  searchParams: Promise<{ year?: string | string[]; from?: string | string[]; selected?: string | string[] }>;
 };
 const validId = (value: string) => /^[1-9][0-9]{0,18}$/.test(value) &&
   BigInt(value) <= 9223372036854775807n;
@@ -16,15 +16,19 @@ const validYear = (value: unknown): value is string =>
 
 export default async function ExplorerRaceEvidencePage({ params, searchParams }: Props) {
   const { driverId, constructorId, locale } = await params;
-  const { year: rawYear, from } = await searchParams;
+  const { year: rawYear, from, selected } = await searchParams;
   if (!validId(driverId) || !validId(constructorId) ||
       !validYear(rawYear) || !['uk', 'en'].includes(locale)) notFound();
   const year = Number(rawYear);
   const uk = locale === 'uk';
   const evidence = await getPairRaceEvidence(driverId, constructorId, year);
+  // The selected neighbor is the driver for constructor focus and vice versa.
+  // Ignore any mismatched or repeated query value rather than reflecting arbitrary input.
+  const matchingNeighbor = from === 'constructor' ? driverId : constructorId;
+  const selectedQuery = selected === matchingNeighbor ? `&selected=${matchingNeighbor}` : '';
   const backHref = from === 'constructor'
-    ? `/explorer/constructors/${constructorId}?year=${year}`
-    : `/explorer/drivers/${driverId}?year=${year}`;
+    ? `/explorer/constructors/${constructorId}?year=${year}${selectedQuery}`
+    : `/explorer/drivers/${driverId}?year=${year}${selectedQuery}`;
 
   return <main className="page">
     <p className="eyebrow">{uk ? 'Історія Формули-1' : 'Formula 1 history'} / Explorer</p>

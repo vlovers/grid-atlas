@@ -5,7 +5,7 @@ import { Link } from '@/i18n/navigation';
 import type { ExplorerGraph } from '@/lib/explorer-contract';
 import styles from './explorer-graph.module.css';
 
-type Props = { graph: ExplorerGraph; locale: 'en' | 'uk' };
+type Props = { graph: ExplorerGraph; locale: 'en' | 'uk'; selectedId?: string };
 const DISPLAY_LIMIT = 10;
 const WIDTH = 840;
 const HEIGHT = 540;
@@ -15,13 +15,24 @@ const RADIUS_X = 287;
 const RADIUS_Y = 191;
 
 /** Bounded observed-result graph and synchronized accessible edge inspector. */
-export default function ExplorerGraph({ graph, locale }: Props) {
+export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
   const uk = locale === 'uk';
   const constructorFocus = graph.focus.startsWith('constructor:');
   const neighborRoute = constructorFocus ? 'drivers' : 'constructors';
   const focus = graph.nodes.find(node => node.key === graph.focus);
   const visible = graph.edges.slice(0, DISPLAY_LIMIT);
-  const [selectedKey, setSelectedKey] = useState<string | null>(graph.edges[0]?.key ?? null);
+  const initialSelection = graph.edges.find(edge =>
+    graph.nodes.find(node => node.key === edge.to)?.entity_id === selectedId);
+  const [selectedKey, setSelectedKey] = useState<string | null>(
+    initialSelection?.key ?? graph.edges[0]?.key ?? null);
+  const selectEdge = (key: string, nodeId: string, anchor = false) => {
+    setSelectedKey(key);
+    const url = new URL(window.location.href);
+    url.searchParams.set('selected', nodeId);
+    // A full navigation makes the query the canonical selection; Next's router
+    // can otherwise restore its previous search params after replaceState.
+    window.location.assign(url.pathname + url.search + (anchor ? '#explorer-inspector' : url.hash));
+  };
   const selected = graph.edges.find(edge => edge.key === selectedKey) ?? graph.edges[0];
   const selectedNode = selected && graph.nodes.find(node => node.key === selected.to);
 
@@ -71,7 +82,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
         const x = CENTER_X + RADIUS_X * Math.cos(angle);
         const y = CENTER_Y + RADIUS_Y * Math.sin(angle);
         return <a key={edge.key} href="#explorer-inspector"
-          onClick={() => setSelectedKey(edge.key)}
+          onClick={event => { event.preventDefault(); selectEdge(edge.key, node.entity_id, true); }}
           className={styles.nodeLink}
           aria-label={uk ? `${node.name}, переглянути зв’язок` : `${node.name}, inspect connection`}
           aria-current={edge.key === selected?.key ? 'true' : undefined}>
@@ -114,7 +125,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
-      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
+      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}&selected=${selectedNode.entity_id}`}>
         {uk ? 'Переглянути гонки, що підтверджують зв’язок →' : 'See races behind this connection →'}
       </a></p>
       <Link href={`/${neighborRoute}/${selectedNode.entity_id}`}>
@@ -127,7 +138,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
       if (!node) return null;
       return <li key={edge.key}>
         <button type="button" aria-pressed={edge.key === selected?.key}
-          onClick={() => setSelectedKey(edge.key)}>{node.name}</button>
+          onClick={() => selectEdge(edge.key, node.entity_id)}>{node.name}</button>
         {' — '}{edge.races} {uk ? 'гонок із результатами' : 'races with results'}
         {' · '}{edge.result_entries} {uk ? 'записів результатів' : 'result entries'}
         {' · '}<Link href={`/${neighborRoute}/${node.entity_id}`}>{uk ? 'Профіль' : 'Profile'}</Link>
