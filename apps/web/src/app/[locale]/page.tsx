@@ -1,5 +1,9 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { getLocale } from 'next-intl/server';
+import { routeMetadata } from '@/lib/seo';
+export const generateMetadata = async () => routeMetadata(await getLocale(), '/');
+
 export default function Home() {
   const t = useTranslations('UI');
   return <><section className="hero"><p className="eyebrow">{t('homeEyebrow')}</p><h1><em>{t('homeTitle')}</em><br/>{t('homeSubtitle')}</h1>

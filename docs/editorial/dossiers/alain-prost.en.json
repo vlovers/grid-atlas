@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "driver_id": "alain-prost",
+  "locale": "en",
+  "title": "Alain Prost",
+  "author": "Codex-assisted research; requires accountable human editor",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "prost-f1",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alain-prost.6xkomcqkRL5K0HgmPX4zAH",
+      "title": "Alain Prost — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-19",
+      "version": "Undated live retrospective; read 2026-10-19; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "prost-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/alain-prost/",
+      "title": "Alain Prost",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-19",
+      "version": "Undated heritage profile; read 2026-10-19; no immutable revision supplied",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "prost-williams",
+      "source_url": "https://www.williamsf1.com/articles/89ecefbc-19af-44aa-af49-08f02a62616b/happy-71st-birthday-alain-prost",
+      "title": "Happy 71st Birthday, Alain Prost",
+      "publisher": "Williams F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-19",
+      "version": "Published 2026-02-24; live page read 2026-10-19",
+      "independence_group": "williams"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "alain-prost-nationality",
+      "topic": "identity",
+      "statement": "Alain Prost is a French racing driver.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "First-victory paragraph identifies Prost as French",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Opening narrative paragraph identifies Prost as French",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-birth",
+      "topic": "birth",
+      "statement": "He was born on 24 February 1955.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Birth paragraph near Saint Chamond",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Born field above the narrative",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-junior-career",
+      "topic": "early_career",
+      "statement": "Before entering Formula 1, Prost won the 1979 European Formula Three championship and tested for McLaren at Paul Ricard.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 2 (Paul Ricard).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-teams",
+      "topic": "teams_seasons",
+      "statement": "His Formula 1 career took him from McLaren in 1980 to Renault in 1981–1983, back to McLaren in 1984–1989, then to Ferrari in 1990–1991. After sitting out 1992, he returned with Williams in 1993.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Renault, return to McLaren, Ferrari and 1993 Williams paragraphs",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-titles",
+      "topic": "championships",
+      "statement": "Prost won the drivers’ world championship in 1985, 1986 and 1989 with McLaren, and in 1993 with Williams.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Hall of Fame heading and McLaren/Ferrari/Williams chronology",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "1985 and 1986 title paragraphs, 1989 third title and final Williams paragraph",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-first-victory",
+      "topic": "key_events",
+      "statement": "His first Formula 1 victory came at Dijon in the 1981 French Grand Prix, driving for Renault.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "First Formula 1 victory paragraph",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-1984",
+      "topic": "key_events",
+      "statement": "In 1984 he won seven races, but McLaren team-mate Niki Lauda secured the championship by half a point. More race wins did not by themselves decide the title.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 5 (1984 championship).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-1993",
+      "topic": "key_events",
+      "statement": "Second place at Estoril in the 1993 Portuguese Grand Prix secured his fourth title. He had returned from a year away to partner Damon Hill, and announced that weekend that he would retire at the end of the season.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-williams",
+          "locator": "Quadruple Champion du Monde section: sabbatical, Friday announcement and second-place finish",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-style",
+      "topic": "driving_style",
+      "statement": "Formula 1’s retrospective describes Prost’s race management as conserving brakes and tyres early, with pace held back for a later challenge. The familiar nickname “The Professor” reflects that analytical reputation.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Paragraph introducing The Professor and describing an economical driving style",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-context",
+      "topic": "significance",
+      "statement": "His McLaren years spanned a major technical change: in 1984, the ban on mid-race refuelling increased the importance of fuel economy. McLaren’s heritage account places its TAG-powered car and Prost’s results in that context.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 5 (1984 refuelling).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-rivalry",
+      "topic": "significance",
+      "statement": "Prost and Ayrton Senna became McLaren team-mates in 1988. Their rivalry accompanied a season in which the team won 15 of 16 races, and continued after Prost moved to Ferrari.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraphs 8–10 and 12 (Senna).",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "background",
+      "title": "Background",
+      "claim_ids": [
+        "alain-prost-nationality",
+        "alain-prost-birth",
+        "alain-prost-junior-career"
+      ]
+    },
+    {
+      "section_id": "career",
+      "title": "Teams and championships",
+      "claim_ids": [
+        "alain-prost-teams",
+        "alain-prost-titles",
+        "alain-prost-first-victory",
+        "alain-prost-1984",
+        "alain-prost-1993"
+      ]
+    },
+    {
+      "section_id": "assessment",
+      "title": "Style and historical significance",
+      "claim_ids": [
+        "alain-prost-style",
+        "alain-prost-context",
+        "alain-prost-rivalry"
+      ]
+    }
+  ],
+  "gaps": [
+    "All claims and English wording require independent human review; no approval is recorded.",
+    "Ukrainian draft and separate locale review are missing.",
+    "Pinned F1DB identifies the full name as Alain Marie Pascal Prost. The opened narrative sources use Alain Prost; corroborate the expanded name before adding it to prose.",
+    "The first-victory claim and the detailed 1984 and 1993 events need additional independent corroboration; publisher-group counts are only a research aid.",
+    "The 1989 and 1990 Suzuka collisions need contemporary records and careful attribution. This outline does not assign intent or reproduce retrospective accusations.",
+    "Do not copy the F1 profile’s description of Japan 1990 as the season finale without checking the calendar: Australia followed it.",
+    "McLaren’s Grands Prix figure is not defined as starts. Do not import it as a start count or infer championship points from raw race results.",
+    "Team/season ranges were checked against the pinned result chronology; exact entry/start and championship-scoring reconciliation remains separate.",
+    "Death date is not asserted; no death claim was researched for this retired driver. No photographs or reuse rights are claimed.",
+    "Source pages are live and not archived snapshots; re-open them during human review. Post-driving team ownership is outside this initial outline."
+  ],
+  "media": []
+}

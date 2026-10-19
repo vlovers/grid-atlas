@@ -8,6 +8,36 @@ pnpm --filter @grid-atlas/web build
 API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web start --hostname 127.0.0.1 --port 3000
 ```
 
+## Search discovery
+
+Set `SITE_URL` on the Next.js server to the public origin (for example,
+`https://your-public-host.example`, with no path/query/credentials). The same
+origin supplies canonical URLs, language alternates, JSON-LD and the sitemap.
+Do not derive it from request headers. Leave it unset on private previews:
+pages then emit `noindex`, robots disallows crawling, and the sitemap is empty.
+Malformed origins fail explicitly. This setting is evaluated at request time.
+
+`/robots.txt` and `/sitemap.xml` bypass locale redirects. The dynamic sitemap
+enumerates the existing public API, including all catalogue/race pages and
+entrants exposed by verified lineage. It never reads editorial files or draft
+APIs, and does not invent modification dates. An API failure fails the response
+instead of publishing a partial sitemap. Indexable historical profiles do not
+require a biography; only the existing publication-gated API can supply one.
+
+Each localized public page has its own canonical. Search results are `noindex,
+follow`; genuine catalogue/circuit pagination has its own canonical, and empty
+overflow pages are `noindex`. Tracking parameters and page-one aliases resolve
+to the clean canonical. Unsupported IDs/routes retain Next's `noindex` fallback.
+Detail pages expose visible breadcrumbs and matching `WebPage` / `BreadcrumbList`
+JSON-LD. No `Article`, sporting record, legal succession, or event facts are inferred.
+
+`tests/seo.test.mjs` tests origin/canonical rules, sitemap enumeration/failure
+handling and script-safe JSON-LD. `tests/browser/seo.spec.ts` checks raw production
+HTML before hydration, crawls every synthetic sitemap URL, and covers both locales
+on desktop/mobile. See [the SEO audit](../../docs/seo-audit.md) for scope and limitations.
+Run production builds/tests in a separate checkout if a development server is
+running: Next 15 development and production builds share `.next`.
+
 API requests run on the Next.js server and do not need browser CORS. They have an eight-second timeout and no persistent fetch cache, so rejected/revoked lineage is not retained for an hour. Missing API profiles render not-found; outages have a retry state.
 
 Implemented: searchable/paginated drivers, constructors and circuits; profiles and career/season timelines; season calendars and result-derived lineups; circuit race history; named race results with profile links; source release and attribution; verified-only lineage list and interactive map with filters, evidence, keyboard selection and zoom. The interface is Ukrainian-first (`/uk`) with English (`/en`), preserving the existing visual design. Unprefixed URLs default to Ukrainian independently of browser language or cookies. The language switcher preserves the current path, canonical IDs and search parameters.

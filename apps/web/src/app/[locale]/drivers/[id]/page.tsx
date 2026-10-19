@@ -3,13 +3,13 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getData } from '@/lib/api';
+import { getData, getPublishedArticle } from '@/lib/api';
 
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; starts: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podiums: number; points: string };
 type SeasonSummary = { year: number; starts: number; wins: number; podiums: number; points: string };
 type TeamSeason = { year: number; constructor_id: string; constructor_name: string; races: number; wins: number };
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ id: string; locale: string }> };
 type Career = {
   summary: { result_entries: number; races: number; seasons: number; winning_races: number; recorded_points: string | null };
   participation: { year: number; related_id: string; related_name: string; races: number; result_entries: number }[];
@@ -28,13 +28,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function DriverProfile({ params }: Props) {
   const t = await getTranslations('UI');
-  const { id } = await params;
+  const { id, locale } = await params;
   if (!validId(id)) notFound();
-  const [profiles, seasons, teams, careers] = await Promise.all([
+  const [profiles, seasons, teams, careers, article] = await Promise.all([
     getData<Profile>(`/api/drivers/${id}`),
     getData<SeasonSummary>(`/api/drivers/${id}/seasons`),
     getData<TeamSeason>(`/api/drivers/${id}/teams`),
     getData<Career>(`/api/drivers/${id}/career`),
+    getPublishedArticle(id, locale === 'en' ? 'en' : 'uk'),
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
@@ -51,6 +52,17 @@ export default async function DriverProfile({ params }: Props) {
     <p className="eyebrow">{t('archive')} / {t('driver')} · {driver.external_id}</p>
     <h1>{driver.name}</h1>
     <p className="lead">{t('driverLead')}</p>
+    {article && <section aria-label={article.title} className="editorial-article">
+      <h2>{article.title}</h2>
+      {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, index) =>
+        <p key={index}>{paragraph}</p>)}
+      {article.references?.length > 0 && <aside aria-label={locale === 'uk' ? 'Джерела' : 'Sources'}>
+        <h3>{locale === 'uk' ? 'Джерела' : 'Sources'}</h3>
+        <ol>{article.references.map(source => <li key={source.url}>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> — {source.publisher}
+        </li>)}</ol>
+      </aside>}
+    </section>}
     {career && <QuickFacts
       label={t('goldenFacts')}
       unavailableLabel={t('goldenUnknown')}
