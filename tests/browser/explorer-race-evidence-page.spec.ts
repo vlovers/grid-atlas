@@ -3,30 +3,136 @@ import { test, expect } from '@playwright/test';
 // Browser data comes from owned synthetic PostgreSQL fixtures.
 for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: selected driver graph edge opens observed race evidence and returns`, async ({ page }) => {
-    await page.goto(`/${locale}/explorer/drivers/1?year=1950`);
+    await page.goto(`/${locale}/explorer/drivers/1?year=1950&selected=1`);
     await page.getByRole('link', {
       name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
     }).click();
-    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=driver$`));
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=driver&selected=1$`));
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(locale === 'uk'
       ? 'Гонки, що підтверджують зв’язок' : 'Races behind this connection');
     await expect(page.getByRole('link', { name: /Synthetic shared-car race/ })).toHaveAttribute('href', `/${locale}/races/1`);
     const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
-    await expect(back).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950`);
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950&selected=1`);
     await back.click();
-    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950$`));
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950&selected=1$`));
   });
 
   test(`${locale}: constructor graph uses same evidence pair but preserves return focus`, async ({ page }) => {
-    await page.goto(`/${locale}/explorer/constructors/1?year=1950`);
+    await page.goto(`/${locale}/explorer/constructors/1?year=1950&selected=1`);
     await page.getByRole('link', {
       name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
     }).click();
-    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=constructor$`));
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=constructor&selected=1$`));
     const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
-    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950`);
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950&selected=1`);
     await back.click();
-    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950$`));
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950&selected=1$`));
+  });
+
+  test(`${locale}: selecting a second driver persists through race evidence and back`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/constructors/1?year=1950`);
+    await page.getByRole('button', { name: 'driver-b' }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\\\?year=1950&selected=2import { test, expect } from '@playwright/test';
+
+// Browser data comes from owned synthetic PostgreSQL fixtures.
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: selected driver graph edge opens observed race evidence and returns`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=driver&selected=1$`));
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(locale === 'uk'
+      ? 'Гонки, що підтверджують зв’язок' : 'Races behind this connection');
+    await expect(page.getByRole('link', { name: /Synthetic shared-car race/ })).toHaveAttribute('href', `/${locale}/races/1`);
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950&selected=1$`));
+  });
+
+  test(`${locale}: constructor graph uses same evidence pair but preserves return focus`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=constructor&selected=1$`));
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950&selected=1$`));
+  });
+));
+    await expect(page.getByRole('button', { name: 'driver-b' })).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/2/1\\\\?year=1950&from=constructor&selected=2import { test, expect } from '@playwright/test';
+
+// Browser data comes from owned synthetic PostgreSQL fixtures.
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: selected driver graph edge opens observed race evidence and returns`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=driver&selected=1$`));
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(locale === 'uk'
+      ? 'Гонки, що підтверджують зв’язок' : 'Races behind this connection');
+    await expect(page.getByRole('link', { name: /Synthetic shared-car race/ })).toHaveAttribute('href', `/${locale}/races/1`);
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950&selected=1$`));
+  });
+
+  test(`${locale}: constructor graph uses same evidence pair but preserves return focus`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=constructor&selected=1$`));
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950&selected=1$`));
+  });
+));
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950&selected=2`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\\\?year=1950&selected=2import { test, expect } from '@playwright/test';
+
+// Browser data comes from owned synthetic PostgreSQL fixtures.
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: selected driver graph edge opens observed race evidence and returns`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=driver&selected=1$`));
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(locale === 'uk'
+      ? 'Гонки, що підтверджують зв’язок' : 'Races behind this connection');
+    await expect(page.getByRole('link', { name: /Synthetic shared-car race/ })).toHaveAttribute('href', `/${locale}/races/1`);
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950&selected=1$`));
+  });
+
+  test(`${locale}: constructor graph uses same evidence pair but preserves return focus`, async ({ page }) => {
+    await page.goto(`/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки, що підтверджують зв’язок/ : /See races behind this connection/,
+    }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/1/1\\?year=1950&from=constructor&selected=1$`));
+    const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
+    await expect(back).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950&selected=1`);
+    await back.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950&selected=1$`));
+  });
+));
+    await expect(page.getByRole('button', { name: 'driver-b' })).toHaveAttribute('aria-pressed', 'true');
   });
 
   test(`${locale}: pair with no results shows explicit empty evidence`, async ({ page }) => {
