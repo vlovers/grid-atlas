@@ -42,8 +42,10 @@ export function parseComparison(payload: unknown, kind: FocusKind, id: string,
     if (!Array.isArray(rawRows)) fail();
     const rows = rawRows as unknown[];
     if (rows.length > 500) fail();
-    for (const n of rows) {
-      if (!object(n) || n.entity_type !== neighborType || typeof n.entity_id !== 'string' ||
+    for (const raw of rows) {
+      if (!object(raw)) fail();
+      const n = raw as Record<string, unknown>;
+      if (n.entity_type !== neighborType || typeof n.entity_id !== 'string' ||
         !validId(n.entity_id) || seen.has(n.entity_id) ||
         typeof n.name !== 'string' || !n.name.trim() ||
         (n.from !== null && !metrics(n.from)) ||
