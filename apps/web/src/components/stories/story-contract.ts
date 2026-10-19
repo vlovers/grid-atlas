@@ -46,10 +46,10 @@ export function validatePublishedStory(value: unknown): ApprovedStory {
   const chapters = new Set<string>();
   for (const chapter of story.chapters) {
     if (!validId.test(chapter.id) || chapters.has(chapter.id) || !chapter.heading.trim() || !chapter.paragraphs.length ||
-        chapter.paragraphs.some(p => !p.trim())) throw new Error('Invalid chapter');
+        chapter.paragraphs.some((p: string) => !p.trim())) throw new Error('Invalid chapter');
     chapters.add(chapter.id);
-    if (chapter.citations.some(id => !ids.has(id))) throw new Error('Orphan citation');
-    if (chapter.links.some(link => !link.label.trim() || !safePath.test(link.href) || !link.href.startsWith('/' + story.locale + '/')))
+    if (chapter.citations.some((id: string) => !ids.has(id))) throw new Error('Orphan citation');
+    if (chapter.links.some((link: { label: string; href: string }) => !link.label.trim() || !safePath.test(link.href) || !link.href.startsWith('/' + story.locale + '/')))
       throw new Error('Unresolved or unsafe internal link');
   }
   return story as ApprovedStory;
