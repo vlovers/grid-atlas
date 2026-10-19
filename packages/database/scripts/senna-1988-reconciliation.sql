@@ -9,6 +9,21 @@
 -- points but NOT starting grid positions or pole-position records.
 -- Do not infer pole counts from finishing order.
 
+-- Fail closed when source identities are absent or ambiguous. An empty result
+-- must never be mistaken for a valid zero-win or zero-point season.
+DO $
+DECLARE matched INTEGER;
+BEGIN
+  SELECT COUNT(*) INTO matched
+  FROM historical_drivers d
+  JOIN external_identities ei ON ei.id = d.external_identity_id
+  WHERE ei.entity_kind = 'driver'
+    AND ei.external_id IN ('ayrton-senna', 'alain-prost');
+  IF matched <> 2 THEN
+    RAISE EXCEPTION 'Expected exactly 2 canonical F1DB driver identities; found %. Inspect external_identities before proceeding', matched;
+  END IF;
+END $;
+
 WITH target_drivers AS (
   SELECT d.id, d.display_name, ei.external_id
   FROM historical_drivers d
