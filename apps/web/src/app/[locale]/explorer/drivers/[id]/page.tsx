@@ -42,18 +42,9 @@ export default async function ExplorerDriverPage({ params, searchParams }: Props
       <p>{uk ? 'Сезон' : 'Season'}: <strong>{graph.year}</strong>.{' '}
         <Link href={`/drivers/${id}`}>{uk ? 'Повернутися до пілота' : 'Back to driver'}</Link>
       </p>
-      {graph.edges.length > 0 && <ExplorerGraph graph={graph} locale={uk ? 'uk' : 'en'} />}
-      <h2>{uk ? 'Зафіксовані зв’язки' : 'Recorded connections'}</h2>
-      {graph.edges.length === 0
-        ? <p>{uk ? 'У цьому сезоні немає записаних результатів для пілота.' : 'No recorded results for this driver in this season.'}</p>
-        : <ul>{graph.edges.map(edge => {
-          const node = graph.nodes.find(item => item.key === edge.to);
-          return <li key={edge.key}>
-            <Link href={`/constructors/${node!.entity_id}`}>{node!.name}</Link>
-            {' — '}{edge.races} {uk ? 'гонок із результатами' : 'races with results'}
-            {' · '}{edge.result_entries} {uk ? 'записів результатів' : 'result entries'}
-          </li>;
-        })}</ul>}
+      {graph.edges.length > 0
+        ? <ExplorerGraph graph={graph} locale={uk ? 'uk' : 'en'} />
+        : <p>{uk ? 'У цьому сезоні немає записаних результатів для пілота.' : 'No recorded results for this driver in this season.'}</p>}
       {graph.truncated && <p role="status">{uk
         ? `Показано лише перші ${graph.limit} конструкторів.`
         : `Showing only the first ${graph.limit} constructors.`}</p>}
