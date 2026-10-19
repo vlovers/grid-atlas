@@ -148,7 +148,7 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
         ? 'Зафіксована асоціація результатів, не доказ офіційних стартів або контрактів.'
         : 'Recorded result association, not evidence of official starts or contracts.'}</p>
       <div className={styles.resultContext} aria-label={uk ? 'Пояснення даних результатів' : 'Understanding result records'}>
-        <h3>{uk ? 'Що означає цей зв’язок?' : 'What does this connection mean?'}</h3>
+        <p className={styles.resultContextTitle}><strong>{uk ? 'Що означає цей зв’язок?' : 'What does this connection mean?'}</strong></p>
         <p>{uk
           ? `У сезоні ${selected.year} архів містить записи результатів для пари «${focus?.name} — ${selectedNode.name}» у ${selected.races} гонках.`
           : `In the ${selected.year} season, the archive contains result records for the ${focus?.name} — ${selectedNode.name} pair across ${selected.races} races.`}</p>
