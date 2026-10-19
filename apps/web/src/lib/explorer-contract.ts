@@ -35,12 +35,12 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
   if (!record(envelope.data)) fail();
   const graph = envelope.data as Record<string, unknown>;
   const focus = `driver:${driverId}`;
-  const graphNodes = graph.nodes;
-  const graphEdges = graph.edges;
-  const graphLimit = graph.limit;
-  if (graph.focus !== focus || graph.year !== year || !Array.isArray(graphNodes) ||
-      !Array.isArray(graphEdges) || typeof graph.truncated !== 'boolean' ||
-      !count(graphLimit) || graphLimit < 1 || graphLimit > 25 ||
+  const graphNodes: unknown[] = Array.isArray(graph.nodes) ? graph.nodes : fail();
+  const graphEdges: unknown[] = Array.isArray(graph.edges) ? graph.edges : fail();
+  const graphLimit: number = count(graph.limit) ? graph.limit as number : fail();
+  if (graph.focus !== focus || graph.year !== year ||
+      typeof graph.truncated !== 'boolean' ||
+      graphLimit < 1 || graphLimit > 25 ||
       !record(graph.source) || !nonempty(graph.source.slug) ||
       !nonempty(graph.source.homepage_url) || !nonempty(graph.source.attribution) ||
       !Array.isArray(graph.limitations) || !graph.limitations.every(nonempty)) fail();
