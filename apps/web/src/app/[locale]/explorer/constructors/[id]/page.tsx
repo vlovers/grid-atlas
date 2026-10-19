@@ -33,7 +33,7 @@ export default async function ConstructorExplorerPage({ params, searchParams }: 
     <p className="lead">{uk
       ? 'Пілоти, пов’язані з конструктором записами результатів вибраного сезону.'
       : 'Drivers associated with this constructor by recorded results in the selected season.'}</p>
-    <p><a href={`/${locale}/explorer/compare/${isDriver?"drivers":"constructors"}/${id}?fromYear=${selectedYear ?? 1950}&toYear=${(selectedYear ?? 1950) + 1}`}>
+    <p><a href={`/${locale}/explorer/compare/constructors/${id}?fromYear=${selectedYear ?? 1950}&toYear=${(selectedYear ?? 1950) + 1}`}>
       {uk ? 'Порівняти два сезони →' : 'Compare two seasons →'}</a></p>
     <form method="get">
       <label htmlFor="explorer-year">{uk ? 'Сезон' : 'Season'}</label>{' '}
