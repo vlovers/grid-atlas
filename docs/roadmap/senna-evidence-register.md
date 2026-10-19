@@ -47,3 +47,10 @@ These are concrete public records located during research. They still require an
 | senna-005 | https://www.formula1.com/en/latest/article/who-was-ayrton-senna-and-why-is-he-regarded-as-one-of-f1s-greatest-drivers.2GZEdmgHd9mPeCae2n6n4K | Career conclusion / 1994 Imola weekend | Find independent contemporary reporting; avoid unsourced medical causation |
 
 **Independence note:** multiple Formula 1 pages share a publisher and are not independent corroboration. Source URLs are candidates for human review, not verified evidence records. No content or approval state is changed by this document.
+
+## Direct page verification notes (2026-10-19)
+
+- `senna-002`: Opened the official [1984 Ayrton Senna driver results](https://www.formula1.com/en/results/1984/drivers/AYRSEN01/ayrton-senna.html). Its **Grand Prix / Date / Team / Race Pos. / Pts.** table shows **Brazil, 25 Mar, Toleman Hart, DNF, 0** in the first listed row. This supports the limited statement that Senna competed in the 1984 Brazilian Grand Prix for Toleman; it does not by itself settle an independently defined entry-vs-start count.
+- `senna-004`: Opened the official [1988 Drivers' Standings](https://www.formula1.com/en/results/1988/drivers). Its **Pos. / Driver / Nationality / Team / Pts.** table shows **1 Ayrton Senna, McLaren Honda, 90** and **2 Alain Prost, McLaren Honda, 87**. This supports the published *championship standings* under the era's scoring rules, not a claim about total raw points earned across all races.
+
+These checks verify what the cited public tables display, **not** the separate human editorial sign-off required by Grid Atlas. Claim status remains `needs_review`. Do not claim that F1DB reconciliation has been completed.
