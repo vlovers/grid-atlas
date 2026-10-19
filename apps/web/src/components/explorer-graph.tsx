@@ -147,6 +147,27 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
       <p className={styles.caption}>{uk
         ? 'Зафіксована асоціація результатів, не доказ офіційних стартів або контрактів.'
         : 'Recorded result association, not evidence of official starts or contracts.'}</p>
+      <div className={styles.resultContext} aria-label={uk ? 'Пояснення даних результатів' : 'Understanding result records'}>
+        <p className={styles.resultContextTitle}><strong>{uk ? 'Що означає цей зв’язок?' : 'What does this connection mean?'}</strong></p>
+        <p>{uk
+          ? `У сезоні ${selected.year} архів містить записи результатів для пари «${focus?.name} — ${selectedNode.name}» у ${selected.races} гонках.`
+          : `In the ${selected.year} season, the archive contains result records for the ${focus?.name} — ${selectedNode.name} pair across ${selected.races} races.`}</p>
+        <p>{selected.result_entries > selected.races
+          ? (uk
+            ? `Записів результатів (${selected.result_entries}) більше, ніж гонок (${selected.races}): одна гонка може мати кілька записів для цієї пари.`
+            : `There are more result entries (${selected.result_entries}) than races (${selected.races}); one race can contribute multiple entries for this pair.`)
+          : (uk
+            ? 'Лічильник гонок рахує окремі гонки з записами цієї пари, а не офіційні старти.'
+            : 'The race count covers distinct races with records for this pair, not official starts.')}</p>
+        <p>{selected.winning_races === 0
+          ? (uk
+            ? 'У цих записах немає гонок із переможним результатом.'
+            : 'None of these records are associated with a winning race result.')
+          : (uk
+            ? `Серед них ${selected.winning_races} гонок із записаним переможним результатом; це не автоматично статистика перемог у кар’єрі.`
+            : `Of those races, ${selected.winning_races} have a recorded winning result; this is not automatically a career win total.`)}</p>
+      </div>
+
       <p className={styles.caption}>{constructorFocus ? (uk ? 'Джерело ідентичності конструктора' : 'Constructor identity source') : (uk ? 'Джерело ідентичності пілота' : 'Driver identity source')}:{' '}
         <a href={graph.source.homepage_url} target="_blank" rel="noopener noreferrer">
           {graph.source.attribution}</a>.{' '}

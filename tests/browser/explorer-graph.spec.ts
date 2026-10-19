@@ -18,7 +18,8 @@ for (const locale of ['uk', 'en'] as const) {
     });
     await expect(inspector).toBeVisible();
     await expect(inspector.getByRole('heading')).toContainText('alpha');
-    await expect(inspector.getByText('1950')).toBeVisible();
+    await expect(inspector.getByRole('heading', { level: 2 })).toBeVisible();
+    await expect(inspector.locator('p').filter({ hasText: /1950/ }).first()).toBeVisible();
     await expect(inspector.getByText('1', { exact: true })).toHaveCount(3);
     await expect(page.getByRole('button', { name: 'alpha' })).toHaveAttribute('aria-pressed', 'true');
     const profile = inspector.getByRole('link', {
