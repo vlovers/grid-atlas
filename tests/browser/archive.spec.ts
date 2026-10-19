@@ -25,9 +25,15 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
     test('empty search is clear and can be reset', async ({ page }) => {
       await page.goto(path('/constructors?q=no-match'));
       await expect(page.getByText(t.noMatches, { exact: true })).toBeVisible();
+      const navigation = page.waitForRequest(request => {
+        const url = new URL(request.url());
+        return request.isNavigationRequest() && url.pathname === path('/constructors') && url.search === '';
+      });
       await page.getByRole('link', { name: t.resetSearch }).click();
+      expect((await navigation).method()).toBe('GET');
       await expect(page.locator('.driver-grid > a')).toHaveCount(2);
       await expect(page).toHaveURL(new RegExp(`/${locale}/constructors$`));
+      await expect(page.getByLabel(t.searchLabel)).toHaveValue('');
     });
 
     test('circuit, race, profile and source identities stay unchanged', async ({ page }) => {

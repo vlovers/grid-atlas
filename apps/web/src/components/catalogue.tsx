@@ -12,6 +12,7 @@ type Props = {
 
 export default async function Catalogue({ path, title, description, searchParams }: Props) {
   const t = await getTranslations('UI');
+  const cataloguePath = getPathname({ locale: await getLocale(), href: path });
   const { page, offset, q } = catalogueParams(await searchParams);
   const query = new URLSearchParams({ limit: String(PAGE_SIZE), offset: String(offset), q });
   const records = await getData<Driver>(`/api${path}?${query}`);
@@ -22,11 +23,11 @@ export default async function Catalogue({ path, title, description, searchParams
   return <section className="page">
     <p className="eyebrow">{t('archive')} / {title}</p><h1>{title}</h1>
     <p className="lead">{description}</p>
-    <form className="catalogue-search" action={getPathname({ locale: await getLocale(), href: path })} role="search">
+    <form className="catalogue-search" action={cataloguePath} role="search">
       <label htmlFor="catalogue-query">{t('searchLabel')}</label>
       <div className="actions"><input id="catalogue-query" name="q" type="search" defaultValue={q} maxLength={100} placeholder={t('searchPlaceholder')} />
         <button className="primary" type="submit">{t('search')}</button>
-        {q && <Link className="secondary" href={path}>{t('resetSearch')}</Link>}
+        {q && <a className="secondary" href={cataloguePath}>{t('resetSearch')}</a>}
       </div>
     </form>
     <p role="status">{t('catalogueStatus', { page, count: records.length })}{q ? ` · ${t('queryStatus', { query: q })}` : ''}</p>
