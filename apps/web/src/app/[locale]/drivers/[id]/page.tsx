@@ -63,6 +63,11 @@ export default async function DriverProfile({ params }: Props) {
         </li>)}</ol>
       </aside>}
     </section>}
+    {career && career.participation.length > 0 && <p>
+      <Link href={`/explorer/drivers/${id}?year=${career.participation[0].year}`}>
+        {locale === 'uk' ? 'Дослідити зв’язки за сезоном →' : 'Explore season connections →'}
+      </Link>
+    </p>}
     {career && <QuickFacts
       label={t('goldenFacts')}
       unavailableLabel={t('goldenUnknown')}
