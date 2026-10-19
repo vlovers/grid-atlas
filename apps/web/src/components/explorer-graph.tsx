@@ -114,9 +114,9 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
-      <p><Link href={`/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
+      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
         {uk ? 'Переглянути гонки, що підтверджують зв’язок →' : 'See races behind this connection →'}
-      </Link></p>
+      </a></p>
       <Link href={`/${neighborRoute}/${selectedNode.entity_id}`}>
         {constructorFocus ? (uk ? 'Відкрити профіль пілота →' : 'Open driver profile →') : (uk ? 'Відкрити профіль конструктора →' : 'Open constructor profile →')}
       </Link>
