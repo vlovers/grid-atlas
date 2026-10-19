@@ -22,7 +22,7 @@ function seasonYear(value: unknown): number {
 
 /**
  * A bounded one-hop read of imported result associations.
- * This endpoint does NOT assert contracts, entrant identity, rivalry, lineage or official starts.
+ * A result entry may be DNS; this endpoint does NOT assert that the driver started.\n * It also does not assert contracts, entrant identity, rivalry or lineage.
  */
 @Controller('explorer')
 export class ExplorerController {
@@ -73,7 +73,7 @@ export class ExplorerController {
             key: `driver:${id}:constructor:${row.id}:year:${year}`,
             from: `driver:${id}`,
             to: `constructor:${row.id}`,
-            relation_type: 'driver_competed_for_constructor',
+            relation_type: 'driver_recorded_result_for_constructor',
             year,
             result_entries: row.result_entries,
             races: row.races,
