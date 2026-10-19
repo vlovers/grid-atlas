@@ -54,7 +54,7 @@ export function parsePairRaceEvidence(payload: unknown, driverId: string, constr
     seen.add(race.race_id as string);
   }
   if (races.length > 100 || (data.truncated && races.length !== 100)) fail();
-  return data as PairRaceEvidence;
+  return data as unknown as PairRaceEvidence;
 }
 
 export async function getPairRaceEvidence(driverId: string, constructorId: string, year: number): Promise<PairRaceEvidence> {
