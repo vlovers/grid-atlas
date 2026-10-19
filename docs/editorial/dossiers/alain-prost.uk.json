@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "driver_id": "alain-prost",
+  "locale": "uk",
+  "title": "Ален Прост",
+  "author": "AI-assisted Ukrainian translation; accountable human author not assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "prost-f1",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alain-prost.6xkomcqkRL5K0HgmPX4zAH",
+      "title": "Alain Prost — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-19",
+      "version": "Undated live retrospective; read 2026-10-19; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "prost-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/alain-prost/",
+      "title": "Alain Prost",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-19",
+      "version": "Undated heritage profile; read 2026-10-19; no immutable revision supplied",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "prost-williams",
+      "source_url": "https://www.williamsf1.com/articles/89ecefbc-19af-44aa-af49-08f02a62616b/happy-71st-birthday-alain-prost",
+      "title": "Happy 71st Birthday, Alain Prost",
+      "publisher": "Williams F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-19",
+      "version": "Published 2026-02-24; live page read 2026-10-19",
+      "independence_group": "williams"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "alain-prost-nationality",
+      "topic": "identity",
+      "statement": "Ален Прост — французький автогонщик.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "First-victory paragraph identifies Prost as French",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Opening narrative paragraph identifies Prost as French",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-birth",
+      "topic": "birth",
+      "statement": "Він народився 24 лютого 1955 року.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Birth paragraph near Saint Chamond",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Born field above the narrative",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-junior-career",
+      "topic": "early_career",
+      "statement": "До дебюту у Формулі-1 Прост виграв європейський чемпіонат Формули-3 1979 року та випробував болід McLaren на трасі Поль-Рікар.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 2 (Paul Ricard).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-teams",
+      "topic": "teams_seasons",
+      "statement": "Кар'єра Проста у Формулі-1 почалася з McLaren у 1980 році. У 1981–1983 роках він виступав за Renault, у 1984–1989 знову за McLaren, у 1990–1991 — за Ferrari. Пропустивши 1992 рік, він повернувся до Williams у 1993 році.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Renault, return to McLaren, Ferrari and 1993 Williams paragraphs",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-titles",
+      "topic": "championships",
+      "statement": "Прост здобув титули чемпіона світу серед пілотів у 1985, 1986 і 1989 роках з McLaren, а в 1993 році — з Williams.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Hall of Fame heading and McLaren/Ferrari/Williams chronology",
+          "supports": true
+        },
+        {
+          "source_id": "prost-mclaren",
+          "locator": "1985 and 1986 title paragraphs, 1989 third title and final Williams paragraph",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-first-victory",
+      "topic": "key_events",
+      "statement": "Його перша перемога у Формулі-1 відбулася на Гран-прі Франції 1981 року в Діжоні за кермом Renault.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "First Formula 1 victory paragraph",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-1984",
+      "topic": "key_events",
+      "statement": "У 1984 році Прост виграв сім гонок, але чемпіоном з перевагою в пів очка став його напарник по McLaren Нікі Лауда. Сама кількість перемог не визначала титул.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 5 (1984 championship).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-1993",
+      "topic": "key_events",
+      "statement": "Друге місце на Гран-прі Португалії 1993 року в Ешторілі забезпечило Просту четвертий титул. Він повернувся після річної перерви, став напарником Деймона Гілла та того вікенду оголосив про завершення кар'єри наприкінці сезону.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-williams",
+          "locator": "Quadruple Champion du Monde section: sabbatical, Friday announcement and second-place finish",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-style",
+      "topic": "driving_style",
+      "statement": "Огляд Formula 1 описує манеру Проста як ощадливе використання шин і гальм на початку гонки зі збереженням темпу для пізньої атаки. Прізвисько «Професор» відображає цю аналітичну репутацію.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-f1",
+          "locator": "Paragraph introducing The Professor and describing an economical driving style",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-context",
+      "topic": "significance",
+      "statement": "У 1984 році заборона дозаправлення під час гонок підвищила важливість економії пального. Історичний огляд McLaren пов'язує це з болідом команди з двигуном TAG і результатами Проста.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraph 5 (1984 refuelling).",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alain-prost-rivalry",
+      "topic": "significance",
+      "statement": "Прост і Айртон Сенна стали напарниками McLaren у 1988 році. Їхнє суперництво супроводжувало сезон, коли команда виграла 15 із 16 гонок, і тривало після переходу Проста до Ferrari.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-mclaren",
+          "locator": "Narrative paragraphs 8–10 and 12 (Senna).",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "background",
+      "title": "Походження та рання кар'єра",
+      "claim_ids": [
+        "alain-prost-nationality",
+        "alain-prost-birth",
+        "alain-prost-junior-career"
+      ]
+    },
+    {
+      "section_id": "career",
+      "title": "Кар'єра і титули",
+      "claim_ids": [
+        "alain-prost-teams",
+        "alain-prost-titles",
+        "alain-prost-first-victory",
+        "alain-prost-1984",
+        "alain-prost-1993"
+      ]
+    },
+    {
+      "section_id": "assessment",
+      "title": "Стиль та історичне значення",
+      "claim_ids": [
+        "alain-prost-style",
+        "alain-prost-context",
+        "alain-prost-rivalry"
+      ]
+    }
+  ],
+  "gaps": [
+    "All claims and English wording require independent human review; no approval is recorded.",
+    "Pinned F1DB identifies the full name as Alain Marie Pascal Prost. The opened narrative sources use Alain Prost; corroborate the expanded name before adding it to prose.",
+    "The first-victory claim and the detailed 1984 and 1993 events need additional independent corroboration; publisher-group counts are only a research aid.",
+    "The 1989 and 1990 Suzuka collisions need contemporary records and careful attribution. This outline does not assign intent or reproduce retrospective accusations.",
+    "Do not copy the F1 profile’s description of Japan 1990 as the season finale without checking the calendar: Australia followed it.",
+    "McLaren’s Grands Prix figure is not defined as starts. Do not import it as a start count or infer championship points from raw race results.",
+    "Team/season ranges were checked against the pinned result chronology; exact entry/start and championship-scoring reconciliation remains separate.",
+    "Death date is not asserted; no death claim was researched for this retired driver. No photographs or reuse rights are claimed.",
+    "Source pages are live and not archived snapshots; re-open them during human review. Post-driving team ownership is outside this initial outline.",
+    "Українські формулювання є дослідницьким перекладом. Потрібна окрема незалежна людська перевірка всіх тверджень щодо наведених джерел."
+  ],
+  "media": []
+}
