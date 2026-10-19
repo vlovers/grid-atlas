@@ -28,6 +28,36 @@
       "accessed_on": "2026-10-20",
       "version": "Live results table inspected 2026-10-20; no immutable page revision supplied",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "senna-monaco-1984-result",
+      "source_url": "https://www.formula1.com/en/results/1984/races/471/monaco/race-result",
+      "title": "1984 Monaco Grand Prix race result",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live historical race result table; exact page revision unavailable; checked 2026-10-20",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "senna-portugal-1985-result",
+      "source_url": "https://www.formula1.com/en/results/1985/races/483/portugal/race-result",
+      "title": "1985 Portuguese Grand Prix race result",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live historical race result table; exact page revision unavailable; checked 2026-10-20",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "senna-monaco-1993-result",
+      "source_url": "https://www.formula1.com/en/results/1993/races/595/monaco/race-result",
+      "title": "1993 Monaco Grand Prix race result",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live historical race result table; exact page revision unavailable; checked 2026-10-20",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -56,6 +86,45 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "ayrton-senna-monaco-1984-p2",
+      "topic": "key_events",
+      "statement": "On 3 June 1984 Ayrton Senna finished second at the Monaco Grand Prix for Toleman-Hart, behind winner Alain Prost.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-monaco-1984-result",
+          "locator": "3 June 1984 result, position 1 Prost / McLaren TAG and position 2 Senna / Toleman Hart",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "ayrton-senna-portugal-1985-p1",
+      "topic": "key_events",
+      "statement": "On 21 April 1985 Ayrton Senna won the Portuguese Grand Prix driving for Lotus-Renault.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-portugal-1985-result",
+          "locator": "21 April 1985 result, position 1 Senna / Lotus Renault",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "ayrton-senna-monaco-1993-p1",
+      "topic": "key_events",
+      "statement": "On 23 May 1993 Ayrton Senna won the Monaco Grand Prix driving for McLaren-Ford.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-monaco-1993-result",
+          "locator": "23 May 1993 result, position 1 Senna / McLaren Ford",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -66,12 +135,23 @@
         "ayrton-senna-championships",
         "ayrton-senna-1988-standings"
       ]
+    },
+    {
+      "section_id": "race-milestones",
+      "title": "Selected Grand Prix results (draft)",
+      "claim_ids": [
+        "ayrton-senna-monaco-1984-p2",
+        "ayrton-senna-portugal-1985-p1",
+        "ayrton-senna-monaco-1993-p1"
+      ]
     }
   ],
   "gaps": [
     "Assign an accountable human author and reconcile canonical identity against the pinned F1DB release.",
     "Reopen each precise source passage and independently review this locale; research observations are not human approval.",
-    "This is a two-claim pilot, not the complete PR #71 biography. See SENNA_PILOT_AUDIT.md for omitted claims and missing evidence."
+    "This is a two-claim pilot, not the complete PR #71 biography. See SENNA_PILOT_AUDIT.md for omitted claims and missing evidence.",
+    "New race-result claims are observed classification rows only, not an independent proof of first podium, first win, historical all-time records or driver/team contracts.",
+    "Revision-bound human claim reviews must be recorded separately for each language after independent review; all added decisions remain null."
   ],
   "media": []
 }
