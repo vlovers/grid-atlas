@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'apps/web/**'
+      - 'tests/real-archive/**'
+      - 'playwright.real-archive.config.ts'
       - 'packages/database/**'
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
@@ -12,6 +15,9 @@ on:
     branches: [main]
     paths:
       - 'apps/api/**'
+      - 'apps/web/**'
+      - 'tests/real-archive/**'
+      - 'playwright.real-archive.config.ts'
       - 'packages/database/**'
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
@@ -23,7 +29,7 @@ permissions:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     services:
       postgres:
         image: postgres:17-alpine
@@ -64,3 +70,27 @@ jobs:
           API_PID=$!
           trap 'kill "$API_PID" 2>/dev/null || true; cat /tmp/grid-atlas-api.log' EXIT
           python3 scripts/verify-real-archive.py
+
+      - name: Build Next.js web and install browser
+        env:
+          API_BASE_URL: http://127.0.0.1:3350
+        run: |
+          pnpm --filter @grid-atlas/web build
+          pnpm exec playwright install --with-deps chromium
+      - name: Select a real pair for browser navigation
+        run: |
+          PAIR="$(psql "$DATABASE_URL" -X -t -A -v ON_ERROR_STOP=1 -c "SELECT CONCAT_WS('|',r.season_year,rr.driver_id,rr.constructor_id) FROM historical_race_results rr JOIN historical_races r ON r.id=rr.race_id GROUP BY r.season_year,rr.driver_id,rr.constructor_id ORDER BY r.season_year,rr.driver_id,rr.constructor_id LIMIT 1")"
+          IFS='|' read -r YEAR DRIVER CONSTRUCTOR <<< "$PAIR"
+          test -n "$YEAR" && test -n "$DRIVER" && test -n "$CONSTRUCTOR"
+          echo "SMOKE_YEAR=$YEAR" >> "$GITHUB_ENV"
+          echo "SMOKE_DRIVER_ID=$DRIVER" >> "$GITHUB_ENV"
+          echo "SMOKE_CONSTRUCTOR_ID=$CONSTRUCTOR" >> "$GITHUB_ENV"
+      - name: Test actual imported archive via production web browser
+        run: pnpm exec playwright test --config playwright.real-archive.config.ts
+      - name: Upload real archive browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-archive-browser-failure
+          path: test-results/
+          retention-days: 7
