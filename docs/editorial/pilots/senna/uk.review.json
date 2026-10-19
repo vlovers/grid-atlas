@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "senna-fia-winners": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "FIA official championship register in a 2018 event guide. Exact publication day not stated in the inspected document; event dates are not a publication date."
+    },
+    "senna-f1-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official result classification table, not a narrative retrospective. Exact original publication date is not displayed; access date is recorded separately."
+    }
+  },
+  "claim_reviews": {
+    "ayrton-senna-championships": null,
+    "ayrton-senna-1988-standings": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [
+    {
+      "claim_id": "ayrton-senna-1988-standings",
+      "kind": "missing_evidence",
+      "note": "The table does not establish a raw season points sum or explain the best-results scoring rule. Keep wording limited to the final standings; reconcile pinned F1DB metrics before adding a scoring explanation.",
+      "resolution": null
+    }
+  ],
+  "media": [],
+  "publication": null
+}

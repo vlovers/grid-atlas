@@ -1,5 +1,10 @@
 # Unpublished evidence dossiers and quality reports
 
+The next repository milestone adds a separate [publication review record](PUBLICATION_REVIEW.md)
+for exact-revision human decisions and readiness checks. The v1 draft dossier,
+attachment behavior and coverage inventory below remain unchanged. The isolated
+[Senna pilot audit](SENNA_PILOT_AUDIT.md) records the new, unapproved UK/EN examples.
+
 This slice complements [PR #84](https://github.com/vlovers/grid-atlas/pull/84).
 It does not replace that PR's batch manifest validator, identity preflight,
 statistics extraction or chronology builder. It runs on main without #84 installed.

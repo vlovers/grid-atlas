@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from typing import Literal, TypedDict
 from urllib.parse import urlsplit
 import zipfile
 
@@ -21,6 +22,54 @@ from import_seasons import RELEASE
 TOPICS = ("identity", "full_name", "birth", "early_career", "teams_seasons",
           "championships", "key_events", "driving_style", "significance")
 ID = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
+
+
+class Source(TypedDict):
+    source_id: str
+    source_url: str
+    title: str
+    publisher: str
+    author: str | None
+    accessed_on: str
+    version: str
+    independence_group: str
+
+
+class Evidence(TypedDict):
+    source_id: str
+    locator: str
+    supports: bool
+
+
+class Claim(TypedDict):
+    claim_id: str
+    topic: str
+    statement: str
+    status: Literal["draft", "needs_review"]
+    evidence: list[Evidence]
+
+
+class Section(TypedDict):
+    section_id: str
+    title: str
+    claim_ids: list[str]
+
+
+class Dossier(TypedDict):
+    schema_version: Literal[1]
+    driver_id: str
+    locale: Literal["en", "uk"]
+    title: str
+    author: str
+    status: Literal["draft", "needs_review"]
+    publication_status: Literal["unpublished"]
+    reviewer: None
+    reviewed_at: None
+    sources: list[Source]
+    claims: list[Claim]
+    sections: list[Section]
+    gaps: list[str]
+    media: list  # Must remain empty; rights candidates live in the review record.
 
 
 def require(condition, message):
@@ -64,7 +113,7 @@ def source_url(value):
         raise ValueError("invalid source URL: expected HTTPS document") from None
 
 
-def validate_dossier(doc, canonical_ids, as_of):
+def validate_dossier(doc: Dossier, canonical_ids: set[str], as_of: dt.date) -> None:
     """Reject malformed/approved content; missing research is reported separately."""
     keys(doc, "schema_version driver_id locale title author status publication_status reviewer reviewed_at sources claims sections gaps media", "dossier")
     require(type(doc["schema_version"]) is int and doc["schema_version"] == 1,
