@@ -1,40 +1,54 @@
-# Grid Atlas — History Explorer delivery status and next steps
+# Grid Atlas — MVP status, delivery order and release gates
 
-Updated 19 October 2026. This status reflects the merged GitHub PRs; it is not a production deployment approval.
+Updated 20 October 2026. **Code and CI state are distinct from production acceptance.**
+This document records merged GitHub work and known blockers, not an approval to publish.
 
 ## Implemented in main
 
-| Scope | Merged PR | Boundary |
+| Area | Relevant merged PRs | Actual boundary |
 | --- | --- | --- |
-| HX-01 driver → constructor one-hop season associations | #66 | Recorded result association, not official race starts or contracts |
-| Golden driver career page | #67 | Summaries and timeline derived from imported records, separate reviewed editorial content |
-| HX-02 integration contract | #87 | Lists acceptance criteria and data limitations |
-| Strict graph payload validator | #88 | Preserves BIGINT IDs as strings, validates nodes, edges and provenance |
-| Driver-focused Explorer page, season URL, list and navigation | #89 | Localized Ukrainian/English route; no reciprocal constructor focus |
-| SVG radial graph v1 | #90 | Keyboard-linked constructors, capped visual nodes; accessible full list remains |
+| Pinned historical archive, ingestion and linked catalogue/race/profile pages | baseline through #67 | F1DB v2026.17.0; result-based summaries rather than official standings |
+| Driver → constructor and reciprocal constructor → driver seasonal result associations | #66, #89, #93, #94 | Observed result records, not contracts or official starts |
+| Strict Explorer graph contract and accessible radial display | #87–#90 | Bounded view with full-list fallback and explicit imported-data limitations |
+| Edge inspector and exact race-evidence drilldown | #92, #95, #96 | Distinct recorded races vs result rows; no per-result primary-source citations |
+| Responsive polish, selected edge URLs and neighbor navigation | #97–#99 | Synthetic desktop/mobile browser coverage; real-archive audit pending |
+| Reciprocal-focus traversal and shareable relationship links | #100, #101 | Year and canonical identities preserved across two-way navigation |
+| UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
 
-## Remaining priorities
+## Work currently not merged
 
-### P0 — independently verify release quality
-1. Run fresh pinned-dataset import and restart, then end-to-end real-archive golden journey. Synthetic PostgreSQL/browser CI establishes behavior, **not** historical content correctness.
-2. Check narrow viewport, keyboard navigation, reduced motion, graph legibility and graph/list parity on real content.
-3. Keep editorial lineage in the verified-only view, separate from imported result associations. Audit actual copy/claims against source registry before publication.
-4. Review and resolve redundant old Draft PRs without treating previous code-audit notes as current runtime verification.
+- [PR #102](https://github.com/vlovers/grid-atlas/pull/102): explanatory inspector copy, **draft until both CI checks pass and regression verified**.
+- [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
+- [PR #59](https://github.com/vlovers/grid-atlas/pull/59): old Explorer product draft; reconcile against merged docs before closing.
 
-### P1 — finish the core exploration journey
-1. Connection inspector: focus, type, observed-result counts, year and source-scope caveat; synchronized selected edge in graph and list.
-2. Reciprocal constructor → driver season endpoint and page, preserving constructor/entrant identity separation.
-3. Race-level evidence drilldown with result-row vs distinct-race semantics and accurate provenance.
-4. URL focus/year restoration and keyboard/mobile browser regression tests for all supported directions.
-5. Localize Explorer strings through the existing next-intl message dictionaries and keep parity tests.
+## Prioritized work items
 
-### P2 — differentiate through evidence and interaction
-1. Time Machine: compare independently observed seasonal associations with explicit additions/removals.
-2. Reviewed, bilingual, source-linked historical journeys; no auto-generated biography claims.
-3. More polished responsive visual presentation with purposeful motion and reduced-motion fallback; no unlicensed official F1 branding or media.
+### P0 — release confidence and operational gates
+1. [#103](https://github.com/vlovers/grid-atlas/issues/103) Fresh checksum-validated pinned F1DB import in disposable PostgreSQL, API/web restart, SQL parity and real-archive UK/EN mobile/desktop/keyboard Explorer acceptance. Synthetic CI success is not historical proof.
+2. [#104](https://github.com/vlovers/grid-atlas/issues/104) Protected main and required checks, hosting/domain, DB readiness, private connectivity, TLS, observability, rate limits, backup **restore rehearsal**, SITE_URL, sitemap production checks.
 
-## Release gate
+### P1 — useful product differentiation
+3. [#105](https://github.com/vlovers/grid-atlas/issues/105) Time Machine backend: compare observed driver/constructor associations between two seasons with deterministic, bounded additions/removals/unchanged, accurate evidence and unknown-vs-zero rules.
+4. [#106](https://github.com/vlovers/grid-atlas/issues/106) Time Machine bilingual UI, deep links, accessibility, reduced motion and evidence traversal. Depends on #105; avoid speculative transfers or legal succession.
+5. [#107](https://github.com/vlovers/grid-atlas/issues/107) Editorial pilot: independently source, fact-check and approve bilingual biographies. Source attribution for imported identities is **not** a citation for biography claims.
+6. [#108](https://github.com/vlovers/grid-atlas/issues/108) Close stale draft work only after reconciliation; synchronize all product/technical status docs and consider centralizing Explorer UI translations.
 
-A clean local import and restart succeed; Node/typecheck/lint/build, integration and browser tests pass; a **real archive** driver → constructor → Back journey is manually verified in both languages, on mobile and keyboard. Season and canonical identity persist in URLs. Unknown is not zero; recorded results are not called official starts; source attribution is not falsely presented as per-result evidence. No unverified lineage becomes a factual edge.
+## Non-negotiable content boundaries
 
-See [the HX-02 contract](hx02-explorer-ui-contract.md) for strict response rules and [the October competitor notes](competitor-landscape-2026-10.md) for earlier positioning hypotheses.
+- **Result row ≠ distinct race ≠ official race start**; constructor-point sums ≠ official standings.
+- Driver, constructor and entrant are distinct canonical identities; constructor association ≠ contract or legal succession.
+- F1DB checksum proves byte integrity, **not historical truth or row-level provenance**.
+- Only independently reviewed verified lineage is publishable. The Racing Point → Aston Martin 2021 candidate remains proposed.
+- Missing evidence is not proof an event never occurred. A season comparison reflects the **imported result coverage** only.
+- No invented biographies, editorial approvals, images, logos or historical citations.
+
+## Acceptance milestone: first public beta
+
+- Pinned import reproducible, migration/startup and real-archive human acceptance documented.
+- CI green for affected areas (Foundation, API/PostgreSQL, real import, web browsers) and branch protections verified.
+- UK/EN key journeys work on desktop, mobile and keyboard; error, zero-data, truncation and source-limits states are honest.
+- At least a small **independently verified** editorial slice ready, or explicitly ship a statistical archive without claiming biographies.
+- Domain and host selected, DB credentials private, TLS, production readiness/alerting and backup restore demonstrated.
+- Canonicals, robots, sitemap and actual public API verified on real origin before indexing.
+
+Time Machine and broad biography coverage are **product goals**, not excuses to delay basic correctness or release safety. Dates and percentages are planning estimates, never verified delivery evidence.
