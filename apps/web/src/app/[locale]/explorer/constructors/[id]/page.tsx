@@ -50,7 +50,7 @@ export default async function ConstructorExplorerPage({ params, searchParams }: 
         : <p>{uk ? 'У цьому сезоні немає записаних результатів для конструктора.' : 'No recorded results for this constructor in this season.'}</p>}
       {graph.truncated && <p role="status">{uk
         ? `Показано лише перших ${graph.limit} пілотів.`
-        : `Showing only the first ${graph.limit} drivers.`}</p>{' '}
+        : `Showing only the first ${graph.limit} drivers.`}{' '}
         <a href={`/${locale}/explorer/connections/constructors/${id}?year=${graph.year}&offset=25`}>
           {uk ? 'Переглянути решту зв’язків →' : 'Browse remaining connections →'}
         </a></p>}
