@@ -50,10 +50,10 @@ export function parsePairRaceEvidence(payload: unknown, driverId: string, constr
     if (!record(item)) fail();
     const race = item as Record<string, unknown>;
     if (!positiveId(race.race_id) || seen.has(race.race_id) ||
-      !count(race.round) || race.round < 1 || !text(race.official_name) ||
+      !count(race.round) || Number(race.round) < 1 || !text(race.official_name) ||
       !(race.race_date === null || typeof race.race_date === 'string') ||
-      !count(race.result_entries) || race.result_entries < 1 ||
-      !count(race.winning_result_entries) || race.winning_result_entries > race.result_entries) fail();
+      !count(race.result_entries) || Number(race.result_entries) < 1 ||
+      !count(race.winning_result_entries) || Number(race.winning_result_entries) > Number(race.result_entries)) fail();
     seen.add(race.race_id as string);
   }
   if (races.length > 100 || (data.truncated && races.length !== 100)) fail();
