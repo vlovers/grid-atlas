@@ -10,6 +10,7 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
+      - 'scripts/select-real-archive-stress.py'
       - '.github/workflows/real-archive.yml'
   push:
     branches: [main]
@@ -22,6 +23,7 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
+      - 'scripts/select-real-archive-stress.py'
       - '.github/workflows/real-archive.yml'
   workflow_dispatch:
 permissions:
@@ -85,6 +87,8 @@ jobs:
           echo "SMOKE_YEAR=$YEAR" >> "$GITHUB_ENV"
           echo "SMOKE_DRIVER_ID=$DRIVER" >> "$GITHUB_ENV"
           echo "SMOKE_CONSTRUCTOR_ID=$CONSTRUCTOR" >> "$GITHUB_ENV"
+      - name: Select real high-degree and long-name cases
+        run: python3 scripts/select-real-archive-stress.py
       - name: Test actual imported archive via production web browser
         run: pnpm exec playwright test --config playwright.real-archive.config.ts
       - name: Upload real archive browser failure evidence
