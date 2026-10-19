@@ -1,6 +1,6 @@
 # Grid Atlas
 
-A source-backed Formula 1 historical encyclopedia, with searchable drivers, constructors and circuits, season calendars, race results and an interactive team-lineage explorer.
+A source-backed Formula 1 historical encyclopedia, with searchable drivers, constructors and circuits, season calendars, race results an interactive verified-lineage network, and seasonal driver–constructor History Explorer.
 
 The public beta is in preparation. The archive uses pinned **F1DB v2026.17.0**, covering 1950–2026 through that release, rather than live updates. The interface defaults to Ukrainian at `/uk`, with English at `/en`. Unprefixed routes redirect to Ukrainian; imported names, identifiers and historical evidence are unchanged. Lineage is independently reviewed editorial data: proposed and rejected claims are never public. The 2021 Racing Point → Aston Martin candidate remains **proposed**.
 
@@ -66,6 +66,22 @@ pnpm test:browser
 ```
 
 Browser tests use production API / web processes on localhost ports 3339–3341, real PostgreSQL and clearly synthetic fixtures. They cover desktop and mobile navigation, search paging, circuit/race/profile links, lineage evidence and zoom, not-found and API outage states. No synthetic facts enter the real imported archive.
+
+## Current Explorer and Time Machine state
+
+The merged History Explorer supports UK/EN driver and constructor focus, year
+selection, exact recorded-race evidence, reciprocal links and URL-permalinks.
+An accessible paginated list exposes all observed associations beyond the
+initial 25-edge graph API window; the SVG intentionally renders at most 10.
+The read-only Time Machine **comparison API** is also merged and tested
+([API contract](docs/api/time-machine-comparison.md)); its **bilingual UI is
+still a Draft PR #118**, not a shipped feature.
+
+The [pinned F1DB real-archive acceptance report](docs/real-archive-acceptance-2026-10.md)
+records repeated imports, representative SQL parity, and real-browser tests
+over UK/EN desktop/mobile. Those results establish import consistency and
+sampled UI behavior, not independently verified historical claims or public
+hosting readiness.
 
 ## Data and boundaries
 
