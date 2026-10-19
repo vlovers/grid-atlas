@@ -110,3 +110,35 @@ McLaren виграла 15 із 16 гонок сезону 1988 року. Сен�
 - [ ] Convert six chapters into exact-revision linked source claims and have independent human reviewers sign both locales.
 - [ ] Validate link targets, licensing and browser presentation after design/UI work merges.
 - [ ] Keep story unpublished until reviewed; no false approval.
+
+
+---
+
+## Suzuka race-result evidence supplement — EN/UK (research only)
+
+**Checked 2026-10-20; no human signoff.** Official race tables support classifications, not motives, regulatory interpretation or responsibility for incidents.
+
+| Event | Official source | Observable facts | Unresolved |
+| --- | --- | --- | --- |
+| Monaco 1988 | https://www.formula1.com/en/results/1988/races/529/monaco/race-result | Prost won; Senna listed NC after 66 laps | Senna's precise retirement cause |
+| Japan 1988 | https://www.formula1.com/en/results/1988/races/541/japan/race-result | Senna P1, Prost P2 (+13.363 s), McLaren Honda | Title-scoring explanation needs period rules |
+| Japan 1989 grid | https://www.formula1.com/en/results/1989/races/557/japan/starting-grid | Senna P1, Prost P2 | Race incident and rulings |
+| Japan 1989 classification | https://www.formula1.com/en/results/1989/races/557/japan/race-result | Nannini won; Prost shown NC after 46 laps; Senna absent from displayed table | Why Senna was absent, regulatory basis of any disqualification |
+| Japan 1990 grid | https://www.formula1.com/en/results/1990/races/78/japan/starting-grid | Senna P1 for McLaren Honda; Prost P2 for Ferrari | Choice of grid side / disputed advantage |
+| Japan 1990 race | https://www.formula1.com/en/results/1990/races/78/japan/race-result | Official classification available; detailed event sequence requires separate research | Intent, fault, rule interpretations |
+| 1990 standings | https://www.formula1.com/en/results/1990/drivers | Senna P1 78 points, Prost P2 71 | Scoring interpretation |
+
+### EN — linked scene
+
+At the 1988 Japanese Grand Prix, Ayrton Senna finished ahead of Alain Prost, the pair taking first and second in their McLaren-Hondas. The 1989 Japanese Grand Prix ended with Alessandro Nannini listed as the winner: Prost appears as not classified and Senna does not appear in the displayed official race table. On the 1990 Suzuka starting grid, Senna qualified first for McLaren-Honda while Prost lined up second for Ferrari. The race records establish the chronology, but they do not on their own settle the arguments about responsibility for either collision.
+
+### Українська — епізод із джерелами
+
+На Гран-прі Японії 1988 року Айртон Сенна фінішував попереду Алена Проста: пілоти McLaren-Honda посіли перше та друге місця. Переможцем Гран-прі Японії 1989 року в офіційному протоколі зазначено Алессандро Нанніні; Прост не був класифікований, а Сенни немає у показаній таблиці результатів. На стартовій решітці Судзуки 1990 року Сенна був першим за McLaren-Honda, а Прост — другим за Ferrari. Ці документи встановлюють послідовність подій, але самі по собі не пояснюють відповідальності за зіткнення.
+
+### Before publication
+
+- Obtain contemporary 1989/1990 steward decisions and original regulations; record exact passages, dissenting accounts and dates.
+- Check Senna's 1989 result status with an independent classification. Absence from one displayed table alone cannot prove a specific penalty.
+- Confirm the relevant canonical driver, constructor and race IDs against the pinned F1DB archive, including definitions of NC, DNF, DSQ and starts.
+- Review both language versions independently; no claims, media or story are approved.
