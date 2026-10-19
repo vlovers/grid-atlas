@@ -261,3 +261,30 @@ test('Explorer rejects malformed inputs and distinguishes missing driver', async
   }
   assert.equal((await fetch(`${base}/api/explorer/drivers/999999/connections?year=1950`)).status, 404);
 });
+
+test('Explorer reports a bounded graph for 26 observed constructors', async () => {
+  const identities = [];
+  const constructors = [];
+  try {
+    for (let index = 0; index < 26; index++) {
+      const identity = await db.query("INSERT INTO external_identities(source_id, entity_kind, external_id) VALUES (1, 'constructor', $1) RETURNING id::text", ['hx-cap-' + index]);
+      identities.push(identity.rows[0].id);
+      const constructor = await db.query('INSERT INTO historical_constructors(external_identity_id, display_name) VALUES ($1, $2) RETURNING id::text', [identity.rows[0].id, 'HX cap ' + index]);
+      constructors.push(constructor.rows[0].id);
+      await db.query("INSERT INTO historical_race_results(race_id, driver_id, constructor_id, position_display_order, position_text, driver_number) VALUES (3, 1, $1, $2, 'DNS', '1')", [constructor.rows[0].id, index + 10]);
+    }
+    const graph = await get('explorer/drivers/1/connections?year=1950');
+    assert.equal(graph.truncated, true);
+    assert.equal(graph.limit, 25);
+    assert.equal(graph.edges.length, 25);
+    assert.equal(graph.nodes.length, 26);
+    assert.equal(new Set(graph.edges.map(edge => edge.to)).size, 25);
+    assert.deepEqual((await get('explorer/drivers/1/connections?year=1950')).edges, graph.edges);
+  } finally {
+    if (constructors.length) {
+      await db.query('DELETE FROM historical_race_results WHERE constructor_id = ANY($1::bigint[])', [constructors]);
+      await db.query('DELETE FROM historical_constructors WHERE id = ANY($1::bigint[])', [constructors]);
+    }
+    if (identities.length) await db.query('DELETE FROM external_identities WHERE id = ANY($1::bigint[])', [identities]);
+  }
+});
