@@ -32,7 +32,7 @@ for (const locale of ['uk', 'en'] as const) {
     await evidence.click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/evidence/${driver}/${constructorId}\\?`));
     await expect(page.getByRole('table')).toBeVisible();
-    await expect(page.getByRole('row').count()).resolves.toBeGreaterThan(1);
+    expect(await page.getByRole('row').count()).toBeGreaterThan(1);
 
     const back = page.getByRole('link', { name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/ });
     await expect(back).toHaveAttribute('href', driverUrl);
