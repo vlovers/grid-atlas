@@ -25,13 +25,13 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
     graph.nodes.find(node => node.key === edge.to)?.entity_id === selectedId);
   const [selectedKey, setSelectedKey] = useState<string | null>(
     initialSelection?.key ?? graph.edges[0]?.key ?? null);
-  const selectEdge = (key: string, nodeId: string) => {
+  const selectEdge = (key: string, nodeId: string, anchor = false) => {
     setSelectedKey(key);
     const url = new URL(window.location.href);
     url.searchParams.set('selected', nodeId);
     // A full navigation makes the query the canonical selection; Next's router
     // can otherwise restore its previous search params after replaceState.
-    window.location.assign(url.pathname + url.search + url.hash);
+    window.location.assign(url.pathname + url.search + (anchor ? '#explorer-inspector' : url.hash));
   };
   const selected = graph.edges.find(edge => edge.key === selectedKey) ?? graph.edges[0];
   const selectedNode = selected && graph.nodes.find(node => node.key === selected.to);
@@ -82,7 +82,7 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
         const x = CENTER_X + RADIUS_X * Math.cos(angle);
         const y = CENTER_Y + RADIUS_Y * Math.sin(angle);
         return <a key={edge.key} href="#explorer-inspector"
-          onClick={() => selectEdge(edge.key, node.entity_id)}
+          onClick={event => { event.preventDefault(); selectEdge(edge.key, node.entity_id, true); }}
           className={styles.nodeLink}
           aria-label={uk ? `${node.name}, переглянути зв’язок` : `${node.name}, inspect connection`}
           aria-current={edge.key === selected?.key ? 'true' : undefined}>
