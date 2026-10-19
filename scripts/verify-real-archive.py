@@ -163,11 +163,11 @@ def main():
                 else "added" if neighbor_id in second else "removed")
             assert status == expected_status, (focus_type, neighbor_id, status, expected_status)
             for season_key, source in (("from", first), ("to", second)):
-                counts = item[season_key]
+                count_values = item[season_key]
                 if neighbor_id not in source:
-                    assert counts is None
+                    assert count_values is None
                 else:
-                    assert counts == {k: source[neighbor_id][k] for k in
+                    assert count_values == {k: source[neighbor_id][k] for k in
                         ("races", "result_entries", "winning_races")}
         assert comparison["provenance"] == "imported-main-race-results"
         print(f"PASS Time Machine {focus_type} 1950/1951 set comparison:",
