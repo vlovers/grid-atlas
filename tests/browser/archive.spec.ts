@@ -44,10 +44,14 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
     });
 
     test('missing profiles and unknown paths retain localized fallback and retry', async ({ page }) => {
-      for (const value of ['/drivers/999999', '/constructors/999999', '/entrants/999999', '/circuits/999999', '/races/999999', '/seasons/2199', '/unknown']) {
-        await page.goto(path(value));
+      for (const value of ['/drivers/999999', '/constructors/999999', '/entrants/999999', '/circuits/999999', '/races/999999', '/seasons/2199', '/unknown', '/missing.txt']) {
+        const response = await page.goto(path(value));
+        // Next preserves 200 once streaming has started; missing pages must still
+        // opt out of indexing in both streamed and non-streamed responses.
+        expect([200, 404]).toContain(response?.status());
         await expect(page.getByRole('heading', { name: t.notFoundTitle })).toBeVisible();
         await expect(page.locator('html')).toHaveAttribute('lang', locale);
+        await expect(page.locator('meta[name="robots"][content~="noindex"]').first()).toBeAttached();
       }
       await page.goto(`http://127.0.0.1:3341${path('/drivers')}`);
       await expect(page.getByRole('heading', { name: t.errorTitle })).toBeVisible();

@@ -31,9 +31,11 @@ test('language switch preserves path, canonical ID and query parameters', async 
 
 test('unsupported locales and unknown dotted paths have Ukrainian fallbacks', async ({ page }) => {
   for (const path of ['/ru/drivers', '/fr/drivers', '/missing.txt']) {
-    await page.goto(path);
+    const response = await page.goto(path);
+    expect([200, 404]).toContain(response?.status());
     await expect(page.getByRole('heading', { name: uk.UI.notFoundTitle })).toBeVisible();
     await expect(page.locator('html')).toHaveAttribute('lang', 'uk');
+    await expect(page.locator('meta[name="robots"][content~="noindex"]').first()).toBeAttached();
     await expect(page.locator('a[href^="/ru"]')).toHaveCount(0);
   }
 });
