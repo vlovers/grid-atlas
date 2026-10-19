@@ -45,7 +45,11 @@ class DossierTests(unittest.TestCase):
 
     def test_real_dossiers_are_unapproved_and_render_all_registered_claims(self):
         dossiers = load_dossiers((ROOT / "docs/editorial/dossiers").glob("*.json"), IDS, AS_OF)
-        self.assertEqual(len(dossiers), 2)
+        self.assertGreaterEqual(len(dossiers), 2)
+        self.assertIn(("alain-prost", "en"), dossiers)
+        self.assertIn(("alain-prost", "uk"), dossiers)
+        self.assertIn(("michael-schumacher", "en"), dossiers)
+        self.assertIn(("michael-schumacher", "uk"), dossiers)
         for doc in dossiers.values():
             text = render_draft(doc)
             self.assertIn("UNPUBLISHED RESEARCH DRAFT", text)
