@@ -178,4 +178,60 @@ export class ExplorerController {
       client.release();
     }
   }
+
+  /**
+   * Evidence drilldown for one observed driver/constructor association.
+   * Returned items describe imported main-race result rows only, not official starts.
+   */
+  @Get('drivers/:id/constructors/:constructorId/races')
+  async connectionRaces(@Param('id') rawDriverId: string,
+    @Param('constructorId') rawConstructorId: string, @Query('year') rawYear: unknown) {
+    const driverId = positiveBigint(rawDriverId);
+    const constructorId = positiveBigint(rawConstructorId);
+    const year = seasonYear(rawYear);
+    const client = await this.db.connect();
+    try {
+      await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ READ ONLY');
+      const { rows: identities } = await client.query(`SELECT
+        (SELECT display_name FROM historical_drivers WHERE id = $1) AS driver_name,
+        (SELECT display_name FROM historical_constructors WHERE id = $2) AS constructor_name`,
+        [driverId, constructorId]);
+      if (!identities[0]?.driver_name || !identities[0]?.constructor_name) {
+        throw new NotFoundException('Driver or constructor not found');
+      }
+      // MAX 100 distinct races. Multiple result rows in one race stay visible
+      // as an entry count instead of being silently labeled separate starts.
+      const { rows } = await client.query(`SELECT r.id::text AS race_id,
+        r.round, r.race_date::text AS race_date, r.official_name,
+        COUNT(*)::int AS result_entries,
+        COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS winning_result_entries
+        FROM historical_race_results rr
+        JOIN historical_races r ON r.id = rr.race_id
+        WHERE rr.driver_id = $1 AND rr.constructor_id = $2 AND r.season_year = $3
+        GROUP BY r.id, r.round, r.race_date, r.official_name
+        ORDER BY r.round, r.id
+        LIMIT 101`, [driverId, constructorId, year]);
+      const truncated = rows.length > 100;
+      await client.query('COMMIT');
+      return { data: {
+        driver: { id: driverId, name: identities[0].driver_name },
+        constructor: { id: constructorId, name: identities[0].constructor_name },
+        year,
+        races: rows.slice(0, 100),
+        truncated,
+        limit: 100,
+        provenance: 'imported-main-race-results',
+        limitations: [
+          'result_association_not_official_starts',
+          'result_rows_not_per_row_source_provenance',
+          'constructor_not_entrant_or_legal_continuity',
+        ],
+      } };
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+  }
 }
