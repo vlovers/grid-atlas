@@ -13,14 +13,26 @@
 -- must never be mistaken for a valid zero-win or zero-point season.
 DO $audit$
 DECLARE matched INTEGER;
+DECLARE result_rows INTEGER;
 BEGIN
   SELECT COUNT(*) INTO matched
   FROM historical_drivers d
   JOIN external_identities ei ON ei.id = d.external_identity_id
+  JOIN data_sources ds ON ds.id = ei.source_id AND ds.slug = 'f1db'
   WHERE ei.entity_kind = 'driver'
     AND ei.external_id IN ('ayrton-senna', 'alain-prost');
   IF matched <> 2 THEN
     RAISE EXCEPTION 'Expected exactly 2 canonical F1DB driver identities; found %. Inspect external_identities before proceeding', matched;
+  END IF;
+  SELECT COUNT(*) INTO result_rows
+  FROM historical_race_results rr
+  JOIN historical_races r ON r.id = rr.race_id AND r.season_year = 1988
+  JOIN historical_drivers d ON d.id = rr.driver_id
+  JOIN external_identities ei ON ei.id = d.external_identity_id
+  JOIN data_sources ds ON ds.id = ei.source_id AND ds.slug = 'f1db'
+  WHERE ei.entity_kind = 'driver' AND ei.external_id IN ('ayrton-senna','alain-prost');
+  IF result_rows <> 32 THEN
+    RAISE EXCEPTION 'Expected 32 Senna/Prost 1988 result rows (16 rounds each), found %', result_rows;
   END IF;
 END $audit$;
 
@@ -28,6 +40,7 @@ WITH target_drivers AS (
   SELECT d.id, d.display_name, ei.external_id
   FROM historical_drivers d
   JOIN external_identities ei ON ei.id = d.external_identity_id
+  JOIN data_sources ds ON ds.id = ei.source_id AND ds.slug = 'f1db'
   WHERE ei.entity_kind = 'driver'
     AND ei.external_id IN ('ayrton-senna', 'alain-prost')
 ),
@@ -51,6 +64,7 @@ WITH target_drivers AS (
   SELECT d.id, d.display_name, ei.external_id
   FROM historical_drivers d
   JOIN external_identities ei ON ei.id = d.external_identity_id
+  JOIN data_sources ds ON ds.id = ei.source_id AND ds.slug = 'f1db'
   WHERE ei.entity_kind = 'driver'
     AND ei.external_id IN ('ayrton-senna', 'alain-prost')
 )
