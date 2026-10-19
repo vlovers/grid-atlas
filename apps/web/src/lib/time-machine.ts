@@ -51,7 +51,7 @@ export function parseComparison(payload: unknown, kind: FocusKind, id: string,
     }
   }
   if (seen.size > 500) fail();
-  return data as SeasonComparison;
+  return data as unknown as SeasonComparison;
 }
 
 const apiBase = process.env.API_BASE_URL || 'http://127.0.0.1:3001';
