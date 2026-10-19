@@ -51,3 +51,36 @@
   border-color: #ff7a6f;
   background: #603039;
 }
+
+/* Focus-first motion is decorative; the recorded associations do not animate. */
+.mapViewport {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 12px;
+  overscroll-behavior-inline: contain;
+}
+.mapViewport:focus-visible {
+  outline: 2px solid #ff9b91;
+  outline-offset: -2px;
+}
+.orbitOuter, .orbitInner {
+  transform-origin: 420px 270px;
+  pointer-events: none;
+}
+.orbitOuter { animation: explorer-orbit 80s linear infinite; }
+.orbitInner { animation: explorer-orbit 110s linear infinite reverse; }
+.core { filter: drop-shadow(0 0 16px rgba(245, 62, 51, .46)); }
+.connectionLine { transition: stroke-width 180ms ease, stroke-opacity 180ms ease; }
+.mobileHint { display: none; font-size: .85rem; color: #e0e8ef; }
+@keyframes explorer-orbit {
+  to { transform: rotate(360deg); }
+}
+@media (max-width: 600px) {
+  .mapViewport .map { width: 680px; max-width: none; min-width: 680px; }
+  .mobileHint { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbitOuter, .orbitInner { animation: none; }
+  .connectionLine { transition: none; }
+}

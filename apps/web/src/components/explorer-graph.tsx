@@ -30,6 +30,9 @@ export default function ExplorerGraph({ graph, locale }: Props) {
       <strong>{uk ? 'Карта сезону' : 'Season map'} · {graph.year}</strong>
       <span>{constructorFocus ? (uk ? 'Конструктор у центрі' : 'Constructor at center') : (uk ? 'Пілот у центрі' : 'Driver at center')}</span>
     </div>
+    <div className={styles.mapViewport} role="region"
+      aria-label={uk ? 'Прокручувана карта зв’язків' : 'Scrollable connection map'}
+      tabIndex={0}>
     <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className={styles.map} role="img"
       aria-label={uk
         ? `Граф зв’язків ${constructorFocus ? 'конструктора з пілотами' : 'пілота з конструкторами'}: ${visible.length} у сезоні ${graph.year}`
@@ -39,16 +42,21 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           <stop offset="1" stopColor="#e53935" stopOpacity="0" /></radialGradient>
       </defs>
       <circle cx={CENTER_X} cy={CENTER_Y} r="225" fill="url(#hx02-glow)" />
+      <circle className={styles.orbitOuter} cx={CENTER_X} cy={CENTER_Y} r="114"
+        fill="none" stroke="#ff7468" strokeWidth="1.5" strokeDasharray="4 12" />
+      <circle className={styles.orbitInner} cx={CENTER_X} cy={CENTER_Y} r="99"
+        fill="none" stroke="#e7726d" strokeWidth="1" strokeDasharray="2 9" />
       {visible.map((edge, i) => {
         const angle = -Math.PI / 2 + i * 2 * Math.PI / visible.length;
         const x = CENTER_X + RADIUS_X * Math.cos(angle);
         const y = CENTER_Y + RADIUS_Y * Math.sin(angle);
-        return <line key={edge.key} x1={CENTER_X} y1={CENTER_Y} x2={x} y2={y}
+        return <line key={edge.key} className={styles.connectionLine} x1={CENTER_X} y1={CENTER_Y} x2={x} y2={y}
           stroke={edge.key === selected?.key ? '#ff7a6f' : '#f04438'}
           strokeOpacity={edge.key === selected?.key ? '1' : '.45'}
           strokeWidth={edge.key === selected?.key ? '4' : '2'} strokeDasharray="5 5" />;
       })}
-      <circle cx={CENTER_X} cy={CENTER_Y} r="87" fill="#c91e23" stroke="#ff6b67" strokeWidth="3" />
+      <circle className={styles.core} cx={CENTER_X} cy={CENTER_Y} r="87"
+        fill="#c91e23" stroke="#ff6b67" strokeWidth="3" />
       <text x={CENTER_X} y={CENTER_Y - 18} textAnchor="middle" fill="#fff" fontSize="13" fontWeight="700">
         {constructorFocus ? (uk ? 'КОНСТРУКТОР' : 'CONSTRUCTOR') : (uk ? 'ПІЛОТ' : 'DRIVER')}
       </text>
@@ -78,6 +86,10 @@ export default function ExplorerGraph({ graph, locale }: Props) {
         </a>;
       })}
     </svg>
+    </div>
+    <p className={styles.mobileHint}>{uk
+      ? 'На вузькому екрані прокручуйте карту горизонтально або обирайте зв’язок у списку нижче.'
+      : 'On smaller screens, scroll the map sideways or select a connection in the list below.'}</p>
     <p className={styles.caption}>{uk
       ? 'Лінії показують записи результатів, а не контракти чи правонаступництво.'
       : 'Lines represent recorded results, not contracts or team succession.'}
@@ -102,9 +114,9 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
-      <p><Link href={`/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
+      <p><a href={`/${locale}/explorer/evidence/${constructorFocus ? selectedNode.entity_id : focus?.entity_id}/${constructorFocus ? focus?.entity_id : selectedNode.entity_id}?year=${graph.year}&from=${constructorFocus ? 'constructor' : 'driver'}`}>
         {uk ? 'Переглянути гонки, що підтверджують зв’язок →' : 'See races behind this connection →'}
-      </Link></p>
+      </a></p>
       <Link href={`/${neighborRoute}/${selectedNode.entity_id}`}>
         {constructorFocus ? (uk ? 'Відкрити профіль пілота →' : 'Open driver profile →') : (uk ? 'Відкрити профіль конструктора →' : 'Open constructor profile →')}
       </Link>
