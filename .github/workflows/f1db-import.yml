@@ -168,3 +168,16 @@ jobs:
           done
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_race_results')" = 27665
           test "$(psql "$DATABASE_URL" -X -Atc 'SELECT count(*) FROM historical_race_results WHERE driver_id IS NULL OR race_id IS NULL OR constructor_id IS NULL')" = 0
+      - name: Export Senna and Prost 1988 reconciliation from pinned F1DB import
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/grid-atlas-evidence
+          psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -f packages/database/scripts/senna-1988-reconciliation.sql > /tmp/grid-atlas-evidence/senna-prost-1988.txt
+          test -s /tmp/grid-atlas-evidence/senna-prost-1988.txt
+      - name: Upload reconciliation evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: senna-prost-1988-f1db-reconciliation
+          path: /tmp/grid-atlas-evidence/senna-prost-1988.txt
+          retention-days: 30
