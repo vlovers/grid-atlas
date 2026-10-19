@@ -11,6 +11,13 @@ on:
       - 'tests/test_import_teams_circuits.py'
       - 'tests/test_import_races.py'
       - 'tests/test_import_race_results.py'
+      - 'scripts/editorial_career.py'
+      - 'scripts/prepare_editorial_batch.py'
+      - 'scripts/validate_editorial_batch.py'
+      - 'docs/editorial/batches/**'
+      - 'tests/test_editorial_career.py'
+      - 'tests/test_prepare_editorial_batch.py'
+      - 'tests/test_editorial_batch.py'
       - '.github/workflows/f1db-import.yml'
   push:
     branches: [main]
@@ -50,6 +57,11 @@ jobs:
           python3 -m unittest discover -s tests -p test_import_teams_circuits.py -v
           python3 -m unittest discover -s tests -p test_import_races.py -v
           python3 -m unittest discover -s tests -p test_import_race_results.py -v
+      - name: Test editorial batch pipeline
+        run: |
+          python3 -m unittest discover -s tests -p test_editorial_batch.py -v
+          python3 -m unittest discover -s tests -p test_prepare_editorial_batch.py -v
+          python3 -m unittest discover -s tests -p test_editorial_career.py -v
       - name: Download and check pinned release
         shell: bash
         run: |
@@ -58,6 +70,18 @@ jobs:
           base=https://github.com/f1db/f1db/releases/download/v2026.17.0
           curl -fLsS --retry 3 "$base/checksums_sha256.txt" -o /tmp/f1db/checksums_sha256.txt
           curl -fLsS --retry 3 "$base/f1db-json-splitted.zip" -o /tmp/f1db/f1db-json-splitted.zip
+      - name: Validate priority editorial batch against pinned F1DB IDs
+        run: python3 scripts/validate_editorial_batch.py docs/editorial/batches/priority-legends-001.json --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
+      - name: Prepare unpublished priority driver research packets
+        run: |
+          python3 scripts/prepare_editorial_batch.py docs/editorial/batches/priority-legends-001.json --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt --output /tmp/priority-legends-001.research.json
+          python3 -c 'import json; p=json.load(open("/tmp/priority-legends-001.research.json")); assert len(p["profiles"]) == 5 and p["publication_status"] == "unpublished" and all(not x["claims"] and all(v is None for v in x["drafts"].values()) for x in p["profiles"])'
+      - name: Upload unpublished editorial research packets
+        uses: actions/upload-artifact@v4
+        with:
+          name: priority-legends-001-research-unpublished
+          path: /tmp/priority-legends-001.research.json
+          retention-days: 14
       - name: Verify Silverstone identities in pinned archive
         run: python3 packages/data-importer/audit_silverstone_release.py --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
       - name: Migrate and import twice
