@@ -22,7 +22,7 @@ for (const locale of ['uk', 'en'] as const) {
     });
     await expect(panel).toBeVisible();
     const graphSection = page.getByRole('region', { name: locale === 'uk'
-      ? 'Карта зв’язків' : 'Connection map' });
+      ? 'Карта зв’язків' : 'Connection map', exact: true });
     const expectedEdges = Math.min(busyDegree, MAX_API_EDGES);
     const fullList = graphSection.locator('ul li');
     await expect(fullList).toHaveCount(expectedEdges);
@@ -56,12 +56,14 @@ for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: longest imported driver label remains readable outside abbreviated SVG`, async ({ page }) => {
     await page.goto(`/${locale}/explorer/drivers/${longDriver}?year=${longYear}&selected=${longConstructor}`);
     const heading = page.getByRole('heading', { level: 1 });
-    const fullName = (await heading.textContent())?.trim() ?? '';
-    expect(fullName.length).toBeGreaterThan(15);
     const inspector = page.getByRole('complementary', {
       name: locale === 'uk' ? 'Деталі зв’язку' : 'Connection details',
     });
     await expect(inspector).toBeVisible();
+    // Wait for Next.js streaming/loading UI before reading the real name.
+    await expect(heading).not.toHaveText(/Loading the archive|Завантаження архіву/);
+    const fullName = (await heading.textContent())?.trim() ?? '';
+    expect(fullName.length).toBeGreaterThan(15);
     await expect(inspector).toContainText(fullName);
     await expect(page.getByRole('region', {
       name: locale === 'uk' ? 'Прокручувана карта зв’язків' : 'Scrollable connection map',
