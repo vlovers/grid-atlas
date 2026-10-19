@@ -28,6 +28,16 @@
       "accessed_on": "2026-10-20",
       "version": "Live results classification observed 2026-10-20; immutable revision unavailable",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "jim-clark-fia-winners",
+      "source_url": "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+      "title": "FIA 2018 United States Grand Prix pocket guide — championship winners",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "2018 event guide, PDF page 80 (1-based), printed page 77; publication day unknown",
+      "independence_group": "fia"
     }
   ],
   "claims": [
@@ -40,6 +50,11 @@
         {
           "source_id": "jim-clark-f1-hall",
           "locator": "Hall of Fame heading: 1963, 1965",
+          "supports": true
+        },
+        {
+          "source_id": "jim-clark-fia-winners",
+          "locator": "PDF page 80 / printed page 77, Drivers’ World Championship Winners table; corresponding driver and championship years",
           "supports": true
         }
       ]
@@ -80,7 +95,8 @@
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
-    "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group."
+    "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group.",
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
   ],
   "media": []
 }
