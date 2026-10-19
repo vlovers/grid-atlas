@@ -1,6 +1,10 @@
 import unittest
+import json
+import tempfile
+import zipfile
+from pathlib import Path
 
-from scripts.prepare_editorial_batch import build_packets, build_statistics
+from scripts.prepare_editorial_batch import build_packets, build_statistics, extract_result_observations
 
 
 class PrepareEditorialBatchTests(unittest.TestCase):
@@ -33,6 +37,27 @@ class PrepareEditorialBatchTests(unittest.TestCase):
         self.assertEqual(stats["classified_first_rows"], 1)
         self.assertEqual(stats["raw_result_points_sum"], "9")
         self.assertIn("NOT championship points", stats["points_semantics"])
+
+    def test_extracts_selected_drivers_from_archive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "sample.zip"
+            rows = [
+                {"driverId": "ayrton-senna", "raceId": 7, "constructorId": "mclaren", "positionNumber": 1, "points": 9},
+                {"driverId": "other-driver", "raceId": 8, "constructorId": "other", "positionNumber": 2, "points": 6},
+            ]
+            with zipfile.ZipFile(archive, "w") as bundle:
+                bundle.writestr("data/f1db-races-race-results.json", json.dumps(rows))
+            result = extract_result_observations(archive, {"ayrton-senna"})
+            self.assertEqual(len(result["ayrton-senna"]), 1)
+            self.assertEqual(result["ayrton-senna"][0]["constructor_id"], "mclaren")
+
+    def test_missing_results_collection_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "sample.zip"
+            with zipfile.ZipFile(archive, "w") as bundle:
+                bundle.writestr("unrelated.json", "[]")
+            with self.assertRaisesRegex(ValueError, "exactly one"):
+                extract_result_observations(archive, {"ayrton-senna"})
 
     def test_unknown_driver_fails(self):
         self.manifest["drivers"] = ["not-a-driver"]
