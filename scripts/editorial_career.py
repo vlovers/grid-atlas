@@ -9,6 +9,9 @@ def build_career_observations(results, races_by_id, constructor_names):
     grouped = defaultdict(lambda: {"race_result_rows": 0, "classified_first_rows": 0})
     for row in results:
         race_id = row["race_id"]
+        if race_id in seen_races:
+            raise ValueError(f"Duplicate race-result row for race {race_id}")
+        seen_races.add(race_id)
         if race_id not in races_by_id:
             raise ValueError(f"Unknown F1DB race ID {race_id}")
         constructor_id = row["constructor_id"]
