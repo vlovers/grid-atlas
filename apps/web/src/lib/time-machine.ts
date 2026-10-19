@@ -26,8 +26,10 @@ const metrics = (v: unknown): v is Counts =>
   (v.winning_races as number) <= (v.races as number);
 export function parseComparison(payload: unknown, kind: FocusKind, id: string,
   fromYear: number, toYear: number): SeasonComparison {
-  if (!object(payload) || !object(payload.data)) fail();
-  const data = payload.data as Record<string, unknown>;
+  if (!object(payload)) fail();
+  const envelope = payload as Record<string, unknown>;
+  if (!object(envelope.data)) fail();
+  const data = envelope.data as Record<string, unknown>;
   if (!object(data.focus) || data.focus.entity_type !== kind ||
       data.focus.entity_id !== id || typeof data.focus.name !== 'string' || !data.focus.name.trim() ||
       data.from_year !== fromYear || data.to_year !== toYear ||
@@ -36,8 +38,10 @@ export function parseComparison(payload: unknown, kind: FocusKind, id: string,
   const neighborType = kind === 'driver' ? 'constructor' : 'driver';
   const seen = new Set<string>();
   for (const status of ['added','removed','unchanged'] as const) {
-    const rows = data[status];
-    if (!Array.isArray(rows) || rows.length > 500) fail();
+    const rawRows = data[status];
+    if (!Array.isArray(rawRows)) fail();
+    const rows = rawRows as unknown[];
+    if (rows.length > 500) fail();
     for (const n of rows) {
       if (!object(n) || n.entity_type !== neighborType || typeof n.entity_id !== 'string' ||
         !validId(n.entity_id) || seen.has(n.entity_id) ||
