@@ -33,6 +33,11 @@ export default async function ConstructorProfile({ params }: Props) {
     <div className="driver-grid" aria-label={t('constructorStats')}>
       {([[t('seasons'),team.seasons],[t('races'),team.races],[t('wins'),team.wins],[t('driverPodiums'),team.podium_finishes],[t('driverPoints'),team.driver_points]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>
+    {seasons.length > 0 && <p>
+      <Link href={`/explorer/constructors/${id}?year=${seasons[0].year}`}>
+        {t('constructor')}: {t('season')} {seasons[0].year} → Explorer
+      </Link>
+    </p>}
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>
