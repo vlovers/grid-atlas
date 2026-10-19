@@ -40,5 +40,7 @@ jobs:
           bash packages/database/scripts/test-versioned-migrations.sh
       - name: Test editorial publication constraints against PostgreSQL
         run: psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -f packages/database/scripts/test-editorial-constraints.sql
+      - name: Test editorial approval invalidation on PostgreSQL
+        run: psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -f packages/database/scripts/test-editorial-review-invalidation.sql
       - name: Test proposed lineage importer against PostgreSQL
         run: bash packages/database/scripts/test-proposed-lineage-import.sh

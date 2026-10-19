@@ -17,11 +17,10 @@ BEGIN
  RETURNING id INTO d;
  INSERT INTO content_articles(subject_driver_id,locale,slug,title)
  VALUES(d,'en','editorial-constraint-test','Editorial constraint test') RETURNING id INTO a;
- BEGIN
-   UPDATE content_articles SET status='published',body_markdown='Unreviewed article',published_at=now() WHERE id=a;
+ UPDATE content_articles SET status='published',body_markdown='Unreviewed article',published_at=now() WHERE id=a;
+ IF EXISTS (SELECT 1 FROM content_articles WHERE id=a AND status='published') THEN
    RAISE EXCEPTION 'Published article without reviewer';
- EXCEPTION WHEN check_violation THEN NULL;
- END;
+ END IF;
  INSERT INTO content_claims(subject_driver_id,statement) VALUES(d,'Unreviewed claim') RETURNING id INTO c;
  BEGIN
    UPDATE content_claims SET status='verified' WHERE id=c;
@@ -39,7 +38,8 @@ BEGIN
  INSERT INTO content_claim_evidence(claim_id,source_id,locator,supports)
  VALUES(c,s,'Page 1',true);
  UPDATE content_claims SET status='verified',reviewer='Test reviewer',reviewed_at=now() WHERE id=c;
- UPDATE content_articles SET status='published',body_markdown='Test article',reviewer='Test reviewer',reviewed_at=now(),published_at=now() WHERE id=a;
+ UPDATE content_articles SET body_markdown='Test article' WHERE id=a;
+ UPDATE content_articles SET status='published',reviewer='Test reviewer',reviewed_at=now(),published_at=now() WHERE id=a;
  IF (SELECT status FROM content_articles WHERE id=a) <> 'published' THEN
    RAISE EXCEPTION 'Reviewed article could not be published';
  END IF;
