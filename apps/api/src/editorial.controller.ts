@@ -35,6 +35,7 @@ export class EditorialController {
          AND a.status = 'published'
          AND a.reviewer IS NOT NULL AND a.reviewed_at IS NOT NULL
          AND a.published_at IS NOT NULL
+         AND EXISTS (SELECT 1 FROM content_article_claims ac WHERE ac.article_id = a.id)
          AND NOT EXISTS (
            SELECT 1 FROM content_article_claims ac
            JOIN content_claims c ON c.id = ac.claim_id
