@@ -17,11 +17,10 @@ BEGIN
  RETURNING id INTO d;
  INSERT INTO content_articles(subject_driver_id,locale,slug,title)
  VALUES(d,'en','editorial-constraint-test','Editorial constraint test') RETURNING id INTO a;
- BEGIN
-   UPDATE content_articles SET status='published',body_markdown='Unreviewed article',published_at=now() WHERE id=a;
+ UPDATE content_articles SET status='published',body_markdown='Unreviewed article',published_at=now() WHERE id=a;
+ IF EXISTS (SELECT 1 FROM content_articles WHERE id=a AND status='published') THEN
    RAISE EXCEPTION 'Published article without reviewer';
- EXCEPTION WHEN check_violation THEN NULL;
- END;
+ END IF;
  INSERT INTO content_claims(subject_driver_id,statement) VALUES(d,'Unreviewed claim') RETURNING id INTO c;
  BEGIN
    UPDATE content_claims SET status='verified' WHERE id=c;
