@@ -19,11 +19,11 @@ This document records merged GitHub work and known blockers, not an approval to 
 | Paginated complete association list beyond initial radial graph | #120 | 34-association 1960 stress case: all accessible; SVG still limited to 10 |
 | UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
 
-## Remaining unmerged drafts and editorial reviews
+## Editorial and interface drafts (not merged)
 
 - [PR #118](https://github.com/vlovers/grid-atlas/pull/118): bilingual Time Machine UI **Draft**, not shipped or included in main until reviewed and tested.
 - [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
-- [PR #59](https://github.com/vlovers/grid-atlas/pull/59): legacy Explorer product draft; unique design notes under reconciliation, not current API contract. See [legacy specification review](legacy-explorer-spec-review.md).
+- [PR #59](https://github.com/vlovers/grid-atlas/pull/59): **closed, superseded without merge** after retaining distinct useful notes in the [legacy specification review](legacy-explorer-spec-review.md). Old API sketches are not current contracts.
 
 ## Prioritized work items
 
