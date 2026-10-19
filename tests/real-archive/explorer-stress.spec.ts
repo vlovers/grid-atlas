@@ -53,6 +53,29 @@ for (const locale of ['uk', 'en'] as const) {
     }
   });
 
+  test(`${locale}: every real high-degree association has a bounded evidence path`, async ({ page }) => {
+    test.skip(busyDegree <= MAX_API_EDGES, 'Pinned dataset has no second page for this sample');
+    await page.goto(`/${locale}/explorer/constructors/${busyConstructor}?year=${busyYear}`);
+    const more = page.getByRole('link', {
+      name: locale === 'uk' ? /Переглянути решту зв’язків/ : /Browse remaining connections/,
+    });
+    await expect(more).toHaveAttribute('href',
+      `/${locale}/explorer/connections/constructors/${busyConstructor}?year=${busyYear}&offset=25`);
+    await more.click();
+    await expect(page).toHaveURL(/offset=25/);
+    await expect(page.getByRole('status')).toContainText(`26–${busyDegree} / ${busyDegree}`);
+    const rows = page.locator('main ol li');
+    await expect(rows).toHaveCount(busyDegree - MAX_API_EDGES);
+    const evidence = rows.first().getByRole('link', {
+      name: locale === 'uk' ? /Переглянути гонки/ : /View race evidence/,
+    });
+    await evidence.click();
+    await expect(page.getByRole('table')).toBeVisible();
+    await expect(page.getByRole('link', {
+      name: locale === 'uk' ? /Повернутися до графа/ : /Back to graph/,
+    })).toBeVisible();
+  });
+
   test(`${locale}: longest imported driver label remains readable outside abbreviated SVG`, async ({ page }) => {
     await page.goto(`/${locale}/explorer/drivers/${longDriver}?year=${longYear}&selected=${longConstructor}`);
     const heading = page.getByRole('heading', { level: 1 });
