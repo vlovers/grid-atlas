@@ -3,6 +3,7 @@ import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
 import { ProfilesController } from './profiles.controller';
 import { ExplorerController } from './explorer.controller';
+import { TimeMachineController } from './time-machine.controller';
 import { EditorialController } from './editorial.controller';
 
 import { DB } from './tokens';
@@ -21,6 +22,7 @@ export class PoolShutdown implements OnApplicationShutdown {
     HistoricalController,
     ProfilesController,
     ExplorerController,
+    TimeMachineController,
     EditorialController,
   ],
   providers: [
