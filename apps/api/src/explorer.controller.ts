@@ -102,4 +102,80 @@ export class ExplorerController {
       client.release();
     }
   }
+
+  /**
+   * Reciprocal, bounded constructor → driver result associations for one season.
+   * Constructor identity is independent of entrants or legal successors.
+   */
+  @Get('constructors/:id/connections')
+  async constructorConnections(@Param('id') rawId: string, @Query('year') rawYear: unknown) {
+    const id = positiveBigint(rawId);
+    const year = seasonYear(rawYear);
+    const client = await this.db.connect();
+    try {
+      await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ READ ONLY');
+      const { rows: constructors } = await client.query(`SELECT c.id::text AS id, c.display_name AS name,
+        s.slug AS source_slug, s.homepage_url AS source_url, s.attribution
+        FROM historical_constructors c
+        JOIN external_identities x ON x.id = c.external_identity_id AND x.entity_kind = 'constructor'
+        JOIN data_sources s ON s.id = x.source_id
+        WHERE c.id = $1`, [id]);
+      if (!constructors.length) throw new NotFoundException('Constructor not found');
+      const { rows } = await client.query(`SELECT d.id::text AS id, d.display_name AS name,
+        COUNT(*)::int AS result_entries,
+        COUNT(DISTINCT rr.race_id)::int AS races,
+        COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS winning_races
+        FROM historical_race_results rr
+        JOIN historical_races r ON r.id = rr.race_id
+        JOIN historical_drivers d ON d.id = rr.driver_id
+        WHERE rr.constructor_id = $1 AND r.season_year = $2
+        GROUP BY d.id, d.display_name
+        ORDER BY MIN(r.round), d.id
+        LIMIT $3`, [id, year, MAX_CONSTRUCTORS + 1]);
+      const truncated = rows.length > MAX_CONSTRUCTORS;
+      const related = rows.slice(0, MAX_CONSTRUCTORS);
+      await client.query('COMMIT');
+      return {
+        data: {
+          focus: `constructor:${id}`,
+          year,
+          nodes: [
+            { key: `constructor:${id}`, type: 'constructor', entity_id: id, name: constructors[0].name },
+            ...related.map(row => ({
+              key: `driver:${row.id}`, type: 'driver', entity_id: row.id, name: row.name,
+            })),
+          ],
+          edges: related.map(row => ({
+            key: `constructor:${id}:driver:${row.id}:year:${year}`,
+            from: `constructor:${id}`,
+            to: `driver:${row.id}`,
+            relation_type: 'constructor_recorded_result_with_driver',
+            year,
+            result_entries: row.result_entries,
+            races: row.races,
+            winning_races: row.winning_races,
+            provenance: 'imported-result-association',
+          })),
+          truncated,
+          limit: MAX_CONSTRUCTORS,
+          source: {
+            slug: constructors[0].source_slug,
+            homepage_url: constructors[0].source_url,
+            attribution: constructors[0].attribution,
+          },
+          limitations: [
+            'result_association_not_official_starts',
+            'entity_source_not_per_result_provenance',
+            'constructor_not_entrant_or_legal_continuity',
+            'imported_main_race_results_only',
+          ],
+        },
+      };
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+  }
 }
