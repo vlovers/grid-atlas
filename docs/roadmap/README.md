@@ -29,20 +29,22 @@ Keep follow-ups focused on useful, testable behavior. Never fabricate lineage ed
 
 ## Active delivery board (20 October 2026)
 
-The previous list is the implemented archive foundation, not a production-release
-certificate. History Explorer's two-way seasonal result graph, inspector, race
-evidence, reciprocal navigation and permalinks have since merged through PR #101.
-Result-context explanations are proposed in [PR #102](https://github.com/vlovers/grid-atlas/pull/102)
-and are not considered shipped until its tests pass.
+The pinned historical archive and Explorer are implemented, with reproducible
+[real F1DB acceptance](../real-archive-acceptance-2026-10.md). This is **not**
+independent verification of every historical claim or production-release approval.
 
-- **P0:** [#103](https://github.com/vlovers/grid-atlas/issues/103) real pinned F1DB import/Explorer acceptance;
-  [#104](https://github.com/vlovers/grid-atlas/issues/104) branch protections, hosting, monitoring,
-  backup restore and production launch controls
-- **P1:** [#105](https://github.com/vlovers/grid-atlas/issues/105) Time Machine comparison contract;
-  [#106](https://github.com/vlovers/grid-atlas/issues/106) accessible bilingual comparison UI;
-  [#107](https://github.com/vlovers/grid-atlas/issues/107) independently reviewed biography pilot;
-  [#108](https://github.com/vlovers/grid-atlas/issues/108) documentation/draft reconciliation
+- **Completed:** [#103](https://github.com/vlovers/grid-atlas/issues/103)
+  pinned import/API/browser acceptance; [#105](https://github.com/vlovers/grid-atlas/issues/105)
+  bounded Time Machine API + negative integration tests; [#115](https://github.com/vlovers/grid-atlas/issues/115)
+  browse all imported connections beyond the radial graph cap.
+- **In progress:** [#106](https://github.com/vlovers/grid-atlas/issues/106)
+  Time Machine UI (Draft PR #118); [#108](https://github.com/vlovers/grid-atlas/issues/108)
+  review historic product draft and reconcile documentation.
+- **Release blockers:** [#104](https://github.com/vlovers/grid-atlas/issues/104)
+  production deployment/branch protections/backup restore;
+  [#107](https://github.com/vlovers/grid-atlas/issues/107)
+  independently verified bilingual editorial content.
 
-See [MVP release gates and implementation detail](../product/stable-experience-roadmap.md).
-Tests on synthetic PostgreSQL fixtures do not independently verify historical
-facts or constitute a real-production acceptance pass.
+See [current product roadmap](../product/stable-experience-roadmap.md) and
+[review of historic product drafts](../product/legacy-explorer-spec-review.md).
+Only independently reviewed historical editorial claims may be published.
