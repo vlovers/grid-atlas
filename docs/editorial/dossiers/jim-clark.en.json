@@ -18,6 +18,16 @@
       "accessed_on": "2026-10-20",
       "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "jim-clark-second-source",
+      "source_url": "https://www.formula1.com/en/results/1965/drivers/JIMCLA01/jim-clark.html",
+      "title": "1965 Jim Clark Driver Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live results classification observed 2026-10-20; immutable revision unavailable",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -33,6 +43,19 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "jim-clark-1965-six-wins",
+      "topic": "key_events",
+      "statement": "In the 1965 Formula One season, Jim Clark won the South African, Belgian, French, British, Dutch and German Grands Prix driving a Lotus-Climax.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "jim-clark-second-source",
+          "locator": "1965 Jim Clark Driver Standings, race rows South Africa, Belgium, France, Great Britain, Netherlands, Germany; Race Pos. = 1",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -42,6 +65,13 @@
       "claim_ids": [
         "jim-clark-titles"
       ]
+    },
+    {
+      "section_id": "season-milestone",
+      "title": "Season milestone",
+      "claim_ids": [
+        "jim-clark-1965-six-wins"
+      ]
     }
   ],
   "gaps": [
@@ -49,7 +79,8 @@
     "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
-    "No licensed media selected; no publishing decision or human reviewer assigned."
+    "No licensed media selected; no publishing decision or human reviewer assigned.",
+    "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group."
   ],
   "media": []
 }
