@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: Promise<{ year: string }> }) {
   const t = await getTranslations('UI');
   const { year } = await params;
-  return { title: t('seasonTitle', { year }), description: t('seasonLead') };
+  return { title: t('seasonTitle', { year }) };
 }
 
 export default async function SeasonPage({ params }: { params: Promise<{ year: string }> }) {

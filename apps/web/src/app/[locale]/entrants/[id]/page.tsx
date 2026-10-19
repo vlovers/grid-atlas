@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   if (!valid(id)) return { title: t('entrantMissing') };
   const data = await getData<Entrant>(`/api/entrants/${id}`);
-  return { title: data[0]?.name ?? t('entrantMissing') };
+  return { title: data[0] ? `${data[0].name} — ${t('entrant')}` : t('entrantMissing') };
 }
 export default async function EntrantPage({ params }: Props) {
   const t = await getTranslations('UI');

@@ -109,7 +109,7 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
       }
       await page.goto(path('/drivers'));
       await expect(page).toHaveTitle(`${t.driversTitle} | GRID ATLAS`);
-      await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', t.metadataDescription);
+      await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', t.driversLead);
       await expect(page.getByRole('navigation', { name: t.mainNavigation }).getByRole('link', { name: t.circuitsTitle })).toBeVisible();
     });
   });
