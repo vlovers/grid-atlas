@@ -47,25 +47,29 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
 
   const nodes = new Map<string, ExplorerNode>();
   for (const item of graphNodes) {
-    if (!record(item) || (item.type !== 'driver' && item.type !== 'constructor') ||
-        !id(item.entity_id) || item.key !== `${item.type}:${item.entity_id}` ||
-        !nonempty(item.name) || nodes.has(item.key)) fail();
-    nodes.set(item.key as string, item as unknown as ExplorerNode);
+    if (!record(item)) fail();
+    const node = item as Record<string, unknown>;
+    if ((node.type !== 'driver' && node.type !== 'constructor') ||
+        !id(node.entity_id) || node.key !== `${node.type}:${node.entity_id}` ||
+        !nonempty(node.name) || nodes.has(node.key)) fail();
+    nodes.set(node.key as string, node as unknown as ExplorerNode);
   }
   if (nodes.size === 0 || !nodes.has(focus) || nodes.get(focus)?.type !== 'driver' ||
       [...nodes.values()].filter(node => node.type === 'driver').length !== 1) fail();
 
   const edges = new Set<string>();
   for (const item of graphEdges) {
-    if (!record(item) || !nonempty(item.key) || edges.has(item.key) ||
-        item.from !== focus || typeof item.to !== 'string' ||
-        nodes.get(item.to)?.type !== 'constructor' ||
-        item.key !== `${focus}:${item.to}:year:${year}` ||
-        item.relation_type !== 'driver_recorded_result_for_constructor' ||
-        item.provenance !== 'imported-result-association' || item.year !== year ||
-        !count(item.result_entries) || !count(item.races) || !count(item.winning_races) ||
-        item.races > item.result_entries || item.winning_races > item.races) fail();
-    edges.add(item.key);
+    if (!record(item)) fail();
+    const edge = item as Record<string, unknown>;
+    if (!nonempty(edge.key) || edges.has(edge.key) ||
+        edge.from !== focus || typeof edge.to !== 'string' ||
+        nodes.get(edge.to)?.type !== 'constructor' ||
+        edge.key !== `${focus}:${edge.to}:year:${year}` ||
+        edge.relation_type !== 'driver_recorded_result_for_constructor' ||
+        edge.provenance !== 'imported-result-association' || edge.year !== year ||
+        !count(edge.result_entries) || !count(edge.races) || !count(edge.winning_races) ||
+        edge.races > edge.result_entries || edge.winning_races > edge.races) fail();
+    edges.add(edge.key);
   }
   if (edges.size > graphLimit || nodes.size !== edges.size + 1 ||
       (graph.truncated && edges.size !== graphLimit)) fail();
