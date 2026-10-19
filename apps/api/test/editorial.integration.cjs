@@ -86,6 +86,10 @@ test('published article needs a verified, supported claim and does not leak revi
     reviewed_at=now() WHERE id=$1`, [claimId]);
   await db.query(`UPDATE content_articles SET status='published',reviewer='Editor',
     reviewed_at=now(),published_at=now() WHERE id=$1`, [articleId]);
+  assert.equal((await read()).status, 404, 'evidence edit resets verification');
+  await db.query(`UPDATE content_claims SET status='verified',reviewer='Editor',reviewed_at=now() WHERE id=$1`, [claimId]);
+  assert.equal((await read()).status, 404, 'article linkage resets publication');
+  await db.query(`UPDATE content_articles SET status='published',reviewer='Editor',reviewed_at=now(),published_at=now() WHERE id=$1`, [articleId]);
   const response = await read();
   assert.equal(response.status, 200);
   const body = (await response.json()).data;
