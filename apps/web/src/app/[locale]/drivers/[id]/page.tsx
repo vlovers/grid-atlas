@@ -80,27 +80,6 @@ export default async function DriverProfile({ params }: Props) {
       }))}
       emptyLabel={t('noTeams')}
     />}
-    <div className="driver-grid" aria-label={t('careerStats')}>
-      {([[t('seasons'), driver.seasons], [t('appearances'), driver.starts], [t('wins'), driver.wins], [t('podiums'), driver.podiums], [t('points'), driver.points]] as const).map(([label, value]) =>
-        <article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
-    </div>
-    <h2>{t('careerTimeline')}</h2>
-    <p>{t('careerLead')}</p>
-    {driver.first_season !== null && driver.last_season !== null && teams.length > 0 &&
-      <div className="timeline-scroll" role="region" aria-label={t('careerRegion')} tabIndex={0}>
-        <div className="career-timeline" style={{ gridTemplateColumns: `repeat(${driver.last_season - driver.first_season + 1}, minmax(140px,1fr))` }}>
-          {Array.from({ length: driver.last_season - driver.first_season + 1 }, (_, i) => {
-            const year = driver.first_season! + i;
-            const entries = teams.filter(t => t.year === year);
-            return <section className={entries.length ? 'career-year active' : 'career-year inactive'} key={year}>
-              <Link href={`/seasons/${year}`} className="career-year-label">{year} ↗</Link>
-              {entries.length ? entries.map(team => <Link key={team.constructor_id} className="career-team" href={`/constructors/${team.constructor_id}`} title={t('raceWins', { races: team.races, wins: team.wins })}>
-                <strong>{team.constructor_name}</strong><small>{t('raceWins', { races: team.races, wins: team.wins })}</small>
-              </Link>) : <small>{t('noResultsShort')}</small>}
-            </section>;
-          })}
-        </div>
-      </div>}
     <h2>{t('seasonResults')}</h2>
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>{t('season')}</th><th>{t('appearances')}</th><th>{t('wins')}</th><th>{t('podiums')}</th><th>{t('points')}</th></tr></thead><tbody>{seasons.map(s =>
       <tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.starts}</td><td>{s.wins}</td><td>{s.podiums}</td><td>{s.points}</td></tr>
