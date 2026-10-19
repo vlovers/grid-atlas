@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.prepare_editorial_batch import build_packets
+from scripts.prepare_editorial_batch import build_packets, build_statistics
 
 
 class PrepareEditorialBatchTests(unittest.TestCase):
@@ -23,6 +23,16 @@ class PrepareEditorialBatchTests(unittest.TestCase):
         self.assertEqual(result["profiles"][0]["drafts"], {"en": None, "uk": None})
         self.assertEqual(result["profiles"][0]["claims"], [])
         self.assertEqual(result["profiles"][0]["source_display_name"], "Ayrton Senna")
+
+    def test_result_statistics_do_not_claim_championship_points(self):
+        stats = build_statistics([
+            {"race_id": 10, "position_number": 1, "points": 9},
+            {"race_id": 11, "position_number": None, "points": 0},
+        ])
+        self.assertEqual(stats["race_result_rows"], 2)
+        self.assertEqual(stats["classified_first_rows"], 1)
+        self.assertEqual(stats["raw_result_points_sum"], "9")
+        self.assertIn("NOT championship points", stats["points_semantics"])
 
     def test_unknown_driver_fails(self):
         self.manifest["drivers"] = ["not-a-driver"]
