@@ -22,3 +22,32 @@
 @media (prefers-reduced-motion: reduce) {
   .nodeLink circle { transition: none; }
 }
+
+.inspector {
+  scroll-margin-top: 1.5rem;
+  border: 1px solid #687688;
+  border-radius: 14px;
+  background: #1c2833;
+  padding: 1rem 1.25rem;
+  margin-block: 1.1rem;
+}
+.inspector h2 { margin-top: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.facts > div { min-width: 130px; }
+.facts dt { font-size: .82rem; color: #d4dde4; }
+.facts dd { margin: .25rem 0; font-size: 1.5rem; font-weight: 700; }
+.list { padding-inline-start: 1.25rem; }
+.list li { margin-block: .6rem; }
+.list button {
+  cursor: pointer;
+  border: 1px solid #8c9ba7;
+  border-radius: 8px;
+  background: #24313e;
+  color: #fff;
+  padding: .35rem .65rem;
+  font: inherit;
+}
+.list button:hover, .list button:focus-visible, .list button[aria-pressed="true"] {
+  border-color: #ff7a6f;
+  background: #603039;
+}
