@@ -50,7 +50,7 @@ export default async function ExplorerDriverPage({ params, searchParams }: Props
         : <p>{uk ? 'У цьому сезоні немає записаних результатів для пілота.' : 'No recorded results for this driver in this season.'}</p>}
       {graph.truncated && <p role="status">{uk
         ? `Показано лише перші ${graph.limit} конструкторів.`
-        : `Showing only the first ${graph.limit} constructors.`}</p>{' '}
+        : `Showing only the first ${graph.limit} constructors.`}{' '}
         <a href={`/${locale}/explorer/connections/drivers/${id}?year=${graph.year}&offset=25`}>
           {uk ? 'Переглянути решту зв’язків →' : 'Browse remaining connections →'}
         </a></p>}
