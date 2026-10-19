@@ -44,7 +44,7 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
     if (!record(item) || (item.type !== 'driver' && item.type !== 'constructor') ||
         !id(item.entity_id) || item.key !== `${item.type}:${item.entity_id}` ||
         !nonempty(item.name) || nodes.has(item.key)) fail();
-    nodes.set(item.key as string, item as ExplorerNode);
+    nodes.set(item.key as string, item as unknown as ExplorerNode);
   }
   if (nodes.size === 0 || !nodes.has(focus) || nodes.get(focus)?.type !== 'driver' ||
       [...nodes.values()].filter(node => node.type === 'driver').length !== 1) fail();
@@ -63,5 +63,5 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
   }
   if (edges.size > graph.limit || nodes.size !== edges.size + 1 ||
       (graph.truncated && edges.size !== graph.limit)) fail();
-  return graph as ExplorerGraph;
+  return graph as unknown as ExplorerGraph;
 }
