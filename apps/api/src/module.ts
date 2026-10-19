@@ -2,6 +2,7 @@ import { Module, OnApplicationShutdown, Inject, Injectable } from '@nestjs/commo
 import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
 import { ProfilesController } from './profiles.controller';
+import { ExplorerController } from './explorer.controller';
 
 import { DB } from './tokens';
 @Injectable()
@@ -10,7 +11,7 @@ export class PoolShutdown implements OnApplicationShutdown {
   async onApplicationShutdown(): Promise<void> { await this.pool.end(); }
 }
 @Module({
-  controllers: [HistoricalController, ProfilesController],
+  controllers: [HistoricalController, ProfilesController, ExplorerController],
   providers: [
     { provide: DB, useFactory: () => {
       if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required');
