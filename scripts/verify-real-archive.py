@@ -140,6 +140,39 @@ def main():
     assert len(empty["nodes"]) == 1
     print("PASS no-data season: empty edge list (not inferred participation)")
 
+    # The Time Machine view must be the set-difference of observed season
+    # associations. Cross-check against two independently fetched graph years
+    # for both focus directions, on this real pinned dataset.
+    for focus_type, focus_id in (("drivers", driver), ("constructors", constructor)):
+        year_a, year_b = 1950, 1951
+        before = get(f"/explorer/{focus_type}/{focus_id}/connections?year={year_a}")
+        after = get(f"/explorer/{focus_type}/{focus_id}/connections?year={year_b}")
+        assert not before["truncated"] and not after["truncated"]
+        comparison = get(f"/explorer/{focus_type}/{focus_id}/compare?fromYear={year_a}&toYear={year_b}")
+        assert comparison["from_year"] == year_a and comparison["to_year"] == year_b
+        first = {e["to"].split(":")[1]: e for e in before["edges"]}
+        second = {e["to"].split(":")[1]: e for e in after["edges"]}
+        actual = {}
+        for status in ("added", "removed", "unchanged"):
+            for neighbor in comparison[status]:
+                assert neighbor["entity_id"] not in actual
+                actual[neighbor["entity_id"]] = (status, neighbor)
+        assert set(actual) == set(first) | set(second)
+        for neighbor_id, (status, item) in actual.items():
+            expected_status = ("unchanged" if neighbor_id in first and neighbor_id in second
+                else "added" if neighbor_id in second else "removed")
+            assert status == expected_status, (focus_type, neighbor_id, status, expected_status)
+            for season_key, source in (("from", first), ("to", second)):
+                counts = item[season_key]
+                if neighbor_id not in source:
+                    assert counts is None
+                else:
+                    assert counts == {k: source[neighbor_id][k] for k in
+                        ("races", "result_entries", "winning_races")}
+        assert comparison["provenance"] == "imported-main-race-results"
+        print(f"PASS Time Machine {focus_type} 1950/1951 set comparison:",
+              {key: len(comparison[key]) for key in ("added", "removed", "unchanged")})
+
     print("PASS pinned release counts:", counts)
     print("PASS reciprocal real-archive graph + race evidence SQL parity:",
           {"year": year, "driver_id": driver, "constructor_id": constructor, **expected_edge})
