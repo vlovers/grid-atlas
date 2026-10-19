@@ -10,7 +10,8 @@ from collections import defaultdict
 from decimal import Decimal
 from pathlib import Path
 
-from scripts.validate_editorial_batch import validate, validate_source_ids, load_verified_ids
+from scripts.validate_editorial_batch import validate, validate_source_ids
+from scripts.editorial_career import build_career_observations
 
 
 def extract_result_observations(archive, target_ids):
@@ -36,7 +37,10 @@ def extract_result_observations(archive, target_ids):
             raise ValueError("Invalid result points")
         if position is not None and (type(position) is not int or position < 1):
             raise ValueError("Invalid finishing position")
-        by_driver[driver].append({"race_id": race_id, "position_number": position, "points": points})
+        constructor = row.get("constructorId")
+        if not isinstance(constructor, str) or not constructor:
+            raise ValueError("Invalid constructor ID")
+        by_driver[driver].append({"race_id": race_id, "constructor_id": constructor, "position_number": position, "points": points})
     return by_driver
 
 
@@ -50,7 +54,7 @@ def build_statistics(observations):
     }
 
 
-def build_packets(manifest, driver_rows, results_by_driver=None):
+def build_packets(manifest, driver_rows, results_by_driver=None, races_by_id=None, constructor_names=None):
     validate(manifest)
     by_id = {driver_id: name for driver_id, name, _hash in driver_rows}
     validate_source_ids(manifest, by_id)
@@ -65,6 +69,7 @@ def build_packets(manifest, driver_rows, results_by_driver=None):
                 "source_display_name": by_id[driver_id],
                 "source": manifest["source"],
                 "statistical_observations": build_statistics(results_by_driver.get(driver_id, [])),
+                "career_result_chronology": build_career_observations(results_by_driver.get(driver_id, []), races_by_id, constructor_names) if races_by_id is not None and constructor_names is not None else [],
                 "narrative_status": "needs_review",
                 "drafts": {locale: None for locale in manifest["locale_targets"]},
                 "claims": [],
@@ -96,7 +101,14 @@ def main():
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     driver_rows, _digest = read_drivers(args.archive, args.checksums)
     observations = extract_result_observations(args.archive, set(manifest["drivers"]))
-    packets = build_packets(manifest, driver_rows, observations)
+    from import_races import read_races
+    from import_teams_circuits import read_entities
+    race_rows, _ = read_races(args.archive, args.checksums)
+    # Race importer tuples: race ID, season, round, ...; use the exact validated fields.
+    races_by_id = {int(row[0]): int(row[1]) for row in race_rows}
+    entity_rows, _ = read_entities(args.archive, args.checksums)
+    constructors = {entity_id: name for kind, entity_id, name, _hash in entity_rows if kind == "constructor"}
+    packets = build_packets(manifest, driver_rows, observations, races_by_id, constructors)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(packets, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Prepared {len(packets['profiles'])} unpublished driver research packets: {args.output}")
