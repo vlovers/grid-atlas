@@ -51,7 +51,8 @@ def main():
     expected_edge = dict(result_entries=int(entries), races=int(races), winning_races=int(wins))
     for attempt in range(40):
         try:
-            get("/health")
+            with urlopen(BASE + "/health", timeout=12) as response:
+                assert response.status == 200
             break
         except (OSError, URLError):
             if attempt == 39:
