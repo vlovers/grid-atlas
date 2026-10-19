@@ -7,6 +7,7 @@ from collections import defaultdict
 
 def build_career_observations(results, races_by_id, constructor_names):
     grouped = defaultdict(lambda: {"race_result_rows": 0, "classified_first_rows": 0})
+    seen_races = set()
     for row in results:
         race_id = row["race_id"]
         if race_id in seen_races:
