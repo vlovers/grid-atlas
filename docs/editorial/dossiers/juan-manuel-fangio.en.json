@@ -18,6 +18,16 @@
       "accessed_on": "2026-10-20",
       "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "juan-manuel-fangio-fia-winners",
+      "source_url": "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+      "title": "FIA 2018 United States Grand Prix pocket guide — championship winners",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "2018 event guide, PDF page 80 (1-based), printed page 77; publication day unknown",
+      "independence_group": "fia"
     }
   ],
   "claims": [
@@ -30,6 +40,11 @@
         {
           "source_id": "juan-manuel-fangio-f1-hall",
           "locator": "Hall of Fame heading: 1951, 1954–57; introductory paragraph",
+          "supports": true
+        },
+        {
+          "source_id": "juan-manuel-fangio-fia-winners",
+          "locator": "PDF page 80 / printed page 77, Drivers’ World Championship Winners table; corresponding driver and championship years",
           "supports": true
         }
       ]
@@ -49,7 +64,8 @@
     "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
-    "No licensed media selected; no publishing decision or human reviewer assigned."
+    "No licensed media selected; no publishing decision or human reviewer assigned.",
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
   ],
   "media": []
 }
