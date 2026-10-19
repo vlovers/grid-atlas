@@ -35,9 +35,11 @@ export function parsePairRaceEvidence(payload: unknown, driverId: string, constr
   const envelope = payload as Record<string, unknown>;
   if (!record(envelope.data)) fail();
   const data = envelope.data as Record<string, unknown>;
-  if (!record(data.driver) || !record(data.constructor)) fail();
-  const driver = data.driver as Record<string, unknown>;
-  const constructor = data.constructor as Record<string, unknown>;
+  const driverValue: unknown = data['driver'];
+  const constructorValue: unknown = data['constructor'];
+  if (!record(driverValue) || !record(constructorValue)) fail();
+  const driver = driverValue as Record<string, unknown>;
+  const constructor = constructorValue as Record<string, unknown>;
   const races: unknown[] = Array.isArray(data.races) ? data.races : fail();
   const limitations: unknown[] = Array.isArray(data.limitations) ? data.limitations : fail();
   if (driver.id !== driverId || constructor.id !== constructorId ||
