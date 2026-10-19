@@ -125,3 +125,15 @@
   background: #79323b;
   outline-offset: 3px;
 }
+
+.permalink {
+  font-size: .875rem;
+  margin-block: .4rem 1rem;
+}
+.permalink a {
+  color: #ffe0dc;
+  text-underline-offset: .2em;
+}
+.permalink a:hover, .permalink a:focus-visible {
+  color: #fff;
+}
