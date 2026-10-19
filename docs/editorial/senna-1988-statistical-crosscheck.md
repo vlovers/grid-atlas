@@ -21,7 +21,7 @@ The remaining race win was Gerhard Berger at the Italian Grand Prix; the remaini
 
 ## Scoring nuance to verify before publication
 
-The 1988 championship used an 11-best-results counting rule. A comparison of season points must distinguish total earned points from points counted in the official championship standings. Confirm the exact rule from period regulations or a reliable historical rules reference before including any explanatory numeric comparison in a published article.
+The 1988 championship used an 11-best-results counting rule. [The Race's historical analysis](https://www.the-race.com/formula-1/what-happened-last-time-f1-used-dropped-scores/) reports **105 raw points for Prost and 94 for Senna**, reduced to **87 and 90 championship-counted points** respectively. Formula 1's [McLaren champions retrospective](https://www.formula1.com/en/latest/article/the-elite-group-norris-joins-as-a-mclaren-world-champion.5zxR12eN0M4IM0onxSXR0F.5zxR12eN0M4IM0onxSXR0F) independently confirms the best-11 rule and the 90–87 standings. These figures remain secondary-source observations pending exact calculation from the pinned F1DB race rows and editorial sign-off.
 
 ## Required F1DB reconciliation
 
@@ -33,3 +33,8 @@ The 1988 championship used an 11-best-results counting rule. A comparison of sea
 6. Have a named human editor review the resulting claim evidence and approve only the precisely supported wording.
 
 No new claim has been marked `verified`; this note must not be automatically ingested into published biography content.
+
+## Additional independently published source
+
+- [The Race — What happened last time F1 used dropped scores?](https://www.the-race.com/formula-1/what-happened-last-time-f1-used-dropped-scores/): detailed explanation of the 1988 best-11 rule and raw-vs-counted totals. The Race is a separate publisher from Formula 1; this is corroboration, not proof that the pinned F1DB data has been reconciled.
+- [Ayrton Senna historical archive — 1988 season](https://ayrton-senna.com/seasons/1988/): a further research candidate listing eight wins and thirteen poles; inspect provenance before treating it as independent.
