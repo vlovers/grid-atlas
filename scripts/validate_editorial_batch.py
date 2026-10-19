@@ -44,15 +44,39 @@ def validate(manifest):
     return len(drivers)
 
 
+def validate_source_ids(manifest, canonical_ids):
+    """Reject missing IDs; caller must supply IDs from a checksum-verified F1DB release."""
+    known = set(canonical_ids)
+    missing = sorted(set(manifest["drivers"]) - known)
+    if missing:
+        raise ValueError(f"driver IDs absent from pinned F1DB: {', '.join(missing)}")
+
+
+def load_verified_ids(archive, checksums):
+    # Reuse the exact release verification used by the production importer.
+    importer_dir = Path(__file__).resolve().parents[1] / "packages" / "data-importer"
+    sys.path.insert(0, str(importer_dir))
+    from import_drivers import read_drivers
+    rows, _digest = read_drivers(archive, checksums)
+    return {row[0] for row in rows}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("manifest", type=Path)
+    parser.add_argument("--archive", type=Path, help="Pinned F1DB split JSON archive")
+    parser.add_argument("--checksums", type=Path, help="Pinned release checksums")
     args = parser.parse_args()
     try:
-        count = validate(json.loads(args.manifest.read_text(encoding="utf-8")))
+        manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+        count = validate(manifest)
+        if bool(args.archive) != bool(args.checksums):
+            raise ValueError("--archive and --checksums must be supplied together")
+        if args.archive:
+            validate_source_ids(manifest, load_verified_ids(args.archive, args.checksums))
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         parser.exit(1, f"Invalid editorial batch: {exc}\n")
-    print(f"Valid unpublished batch: {count} driver IDs (identity lookup against F1DB still required)")
+    print(f"Valid unpublished batch: {count} driver IDs; source identity check: {'passed' if args.archive else 'not run'}")
 
 
 if __name__ == "__main__":
