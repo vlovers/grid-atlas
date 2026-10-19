@@ -35,6 +35,15 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
   };
   const selected = graph.edges.find(edge => edge.key === selectedKey) ?? graph.edges[0];
   const selectedNode = selected && graph.nodes.find(node => node.key === selected.to);
+  const selectedIndex = graph.edges.findIndex(edge => edge.key === selected?.key);
+  const adjacentNode = (step: number) => {
+    const edge = graph.edges[selectedIndex + step];
+    return edge && graph.nodes.find(node => node.key === edge.to);
+  };
+  const previous = adjacentNode(-1);
+  const next = adjacentNode(1);
+  const graphHref = `/${locale}/explorer/${constructorFocus ? 'constructors' : 'drivers'}/${focus?.entity_id}?year=${graph.year}`;
+
 
   return <section className={styles.panel} aria-label={uk ? 'Карта зв’язків' : 'Connection map'}>
     <div className={styles.header}>
@@ -110,6 +119,19 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
     </p>
     {selected && selectedNode && <aside id="explorer-inspector" className={styles.inspector}
       aria-label={uk ? 'Деталі зв’язку' : 'Connection details'} tabIndex={-1}>
+      <nav className={styles.edgeNavigation} aria-label={uk ? 'Перемикання зв’язків' : 'Browse connections'}>
+        <span>{uk ? 'Зв’язок' : 'Connection'} {selectedIndex + 1} / {graph.edges.length}</span>
+        {previous
+          ? <a href={`${graphHref}&selected=${previous.entity_id}#explorer-inspector`}>
+              ← {uk ? 'Попередній' : 'Previous'}
+            </a>
+          : <span aria-disabled="true">← {uk ? 'Попередній' : 'Previous'}</span>}
+        {next
+          ? <a href={`${graphHref}&selected=${next.entity_id}#explorer-inspector`}>
+              {uk ? 'Наступний' : 'Next'} →
+            </a>
+          : <span aria-disabled="true">{uk ? 'Наступний' : 'Next'} →</span>}
+      </nav>
       <h2>{uk ? 'Деталі зв’язку' : 'Connection details'}: {selectedNode.name}</h2>
       <p>{focus?.name} → {selectedNode.name} · {selected.year}</p>
       <dl className={styles.facts}>

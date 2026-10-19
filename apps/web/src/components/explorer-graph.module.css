@@ -84,3 +84,28 @@
   .orbitOuter, .orbitInner { animation: none; }
   .connectionLine { transition: none; }
 }
+
+.edgeNavigation {
+  display: flex;
+  align-items: center;
+  gap: .75rem 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #4c5e6b;
+  padding-bottom: .85rem;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+}
+.edgeNavigation > span:first-child { color: #d4dde4; margin-right: auto; }
+.edgeNavigation a {
+  display: inline-block;
+  border: 1px solid #ff7468;
+  border-radius: 7px;
+  color: #fff;
+  padding: .45rem .65rem;
+  text-decoration: none;
+}
+.edgeNavigation a:hover, .edgeNavigation a:focus-visible {
+  background: #603039;
+  outline-offset: 2px;
+}
+.edgeNavigation [aria-disabled="true"] { color: #8795a2; }
