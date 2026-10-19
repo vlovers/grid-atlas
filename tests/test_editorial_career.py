@@ -15,6 +15,11 @@ class CareerChronologyTests(unittest.TestCase):
         self.assertEqual(rows[0]["classified_first_rows"], 1)
         self.assertIn("not contract dates", rows[0]["semantics"])
 
+    def test_duplicate_race_rows_fail_closed(self):
+        duplicate = {"race_id": 1, "constructor_id": "mclaren", "position_number": 1}
+        with self.assertRaisesRegex(ValueError, "Duplicate race-result"):
+            build_career_observations([duplicate, duplicate], {1: 1988}, {"mclaren": "McLaren"})
+
     def test_unknown_race_fails_closed(self):
         with self.assertRaisesRegex(ValueError, "Unknown F1DB race"):
             build_career_observations([{"race_id": 4, "constructor_id": "x", "position_number": 1}], {}, {"x": "X"})
