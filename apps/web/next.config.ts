@@ -1,3 +1,5 @@
 import type { NextConfig } from 'next';
-const nextConfig: NextConfig = { reactStrictMode: true };
-export default nextConfig;
+import createNextIntlPlugin from 'next-intl/plugin';
+// Preserve the incoming origin when Next 15 handles locale-prefix redirects.
+const nextConfig: NextConfig = { reactStrictMode: true, skipMiddlewareUrlNormalize: true };
+export default createNextIntlPlugin()(nextConfig);
