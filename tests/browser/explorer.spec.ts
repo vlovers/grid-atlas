@@ -11,7 +11,7 @@ for (const locale of ['uk', 'en'] as const) {
     await explore.click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950$`));
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('driver-a');
-    await expect(page.getByRole('link', { name: 'alpha', exact: true })).toHaveAttribute('href', `/${locale}/constructors/1`);
+    await expect(page.getByRole('button', { name: 'alpha', exact: true })).toHaveAttribute('aria-pressed', 'true');
     await page.getByRole('spinbutton', { name: locale === 'uk' ? 'Сезон' : 'Season' }).fill('1951');
     await page.getByRole('button', { name: locale === 'uk' ? 'Показати' : 'Explore' }).click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1951$`));
@@ -20,6 +20,6 @@ for (const locale of ['uk', 'en'] as const) {
       : 'No recorded results for this driver in this season.')).toBeVisible();
     await page.goBack();
     await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/drivers/1\\?year=1950$`));
-    await expect(page.getByRole('link', { name: 'alpha', exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'alpha', exact: true })).toBeVisible();
   });
 }
