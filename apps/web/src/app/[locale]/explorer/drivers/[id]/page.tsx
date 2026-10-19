@@ -33,7 +33,7 @@ export default async function ExplorerDriverPage({ params, searchParams }: Props
     <p className="lead">{uk
       ? 'Зв’язки з конструкторами, підтверджені записами результатів вибраного сезону.'
       : 'Constructor connections documented by recorded results for a selected season.'}</p>
-    <p><a href={`/${locale}/explorer/compare/${isDriver?"drivers":"constructors"}/${id}?fromYear=${selectedYear ?? 1950}&toYear=${(selectedYear ?? 1950) + 1}`}>
+    <p><a href={`/${locale}/explorer/compare/drivers/${id}?fromYear=${selectedYear ?? 1950}&toYear=${(selectedYear ?? 1950) + 1}`}>
       {uk ? 'Порівняти два сезони →' : 'Compare two seasons →'}</a></p>
     <form method="get">
       <label htmlFor="explorer-year">{uk ? 'Сезон' : 'Season'}</label>{' '}
