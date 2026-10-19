@@ -29,8 +29,11 @@ const count = (value: unknown): value is number =>
 const fail = (): never => { throw new Error('Malformed HX-01 Explorer response'); };
 
 export function parseExplorerGraph(payload: unknown, driverId: string, year: number): ExplorerGraph {
-  if (!id(driverId) || !Number.isInteger(year) || year < 1950 || year > 2200 || !record(payload) || !record(payload.data)) fail();
-  const graph = payload.data;
+  if (!id(driverId) || !Number.isInteger(year) || year < 1950 || year > 2200) fail();
+  if (!record(payload)) fail();
+  const envelope = payload as Record<string, unknown>;
+  if (!record(envelope.data)) fail();
+  const graph = envelope.data as Record<string, unknown>;
   const focus = `driver:${driverId}`;
   if (graph.focus !== focus || graph.year !== year || !Array.isArray(graph.nodes) ||
       !Array.isArray(graph.edges) || typeof graph.truncated !== 'boolean' ||
