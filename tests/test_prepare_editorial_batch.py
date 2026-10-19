@@ -51,6 +51,19 @@ class PrepareEditorialBatchTests(unittest.TestCase):
             self.assertEqual(len(result["ayrton-senna"]), 1)
             self.assertEqual(result["ayrton-senna"][0]["constructor_id"], "mclaren")
 
+    def test_duplicate_driver_race_rows_fail(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "sample.zip"
+            row = {"driverId": "ayrton-senna", "raceId": 7, "constructorId": "mclaren", "positionNumber": 1, "points": 9}
+            with zipfile.ZipFile(archive, "w") as bundle:
+                bundle.writestr("f1db-races-race-results.json", json.dumps([row, row]))
+            with self.assertRaisesRegex(ValueError, "Duplicate race result"):
+                extract_result_observations(archive, {"ayrton-senna"})
+
+    def test_partial_driver_coverage_fails(self):
+        with self.assertRaisesRegex(ValueError, "No race results"):
+            build_packets(self.manifest, self.rows, {"ayrton-senna": [{"race_id": 7, "position_number": 1, "points": 9}]})
+
     def test_missing_results_collection_fails(self):
         with tempfile.TemporaryDirectory() as directory:
             archive = Path(directory) / "sample.zip"
