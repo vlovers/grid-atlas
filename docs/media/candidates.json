@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "lane": "candidates",
+  "assets": [
+    {
+      "id": "ayrton-senna-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "ayrton-senna"
+      },
+      "kind": "portrait",
+      "source_url": "https://www.flickr.com/photos/madagascarica/35116366790/",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ayrton_Senna_1989_Belgian_GP_podium_(cropped).jpg",
+      "creator": "madagascarica from Verneuil Grand, France",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0",
+        "restrictions": [
+          "Observed license metadata only; review actual terms, credit chain, personality rights and any visible trademarks before reuse."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 744,
+        "height": 1079
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons page oldid=1070636551; file SHA-1 e7afb6898774f3033d9eff3d1e949bb68cedc369; file timestamp 2024-12-14T14:37:01Z",
+      "inspected_on": "2026-10-20",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Automated metadata/page research only. Reopen the original Flickr source and crop history; identity, reuse context and UK/EN captions require independent human review.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "juan-manuel-fangio-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "juan-manuel-fangio"
+      },
+      "kind": "portrait",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1957ArgentineGP04.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:J.M._Fangio_1957.jpg",
+      "creator": null,
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "restrictions": [
+          "Observed license metadata only; review actual terms, credit chain, personality rights and any visible trademarks before reuse."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 190,
+        "height": 352
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons page oldid=958088047; file SHA-1 905b65e3f6109645614325e1323d63dae7b7f277; file timestamp 2013-11-01T03:41:51Z",
+      "inspected_on": "2026-10-20",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Creator chain unresolved: crop metadata names Spin2Win; parent description credits Carlos Alberto Navarro. Do not equate uploader and photographer.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "lewis-hamilton-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "lewis-hamilton"
+      },
+      "kind": "portrait",
+      "source_url": "https://www.flickr.com/photos/35mmman/27333186713/",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_(27333186713).jpg",
+      "creator": "35mmMan",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0",
+        "restrictions": [
+          "Observed license metadata only; review actual terms, credit chain, personality rights and any visible trademarks before reuse."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 2060,
+        "height": 2060
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons page oldid=996794117; file SHA-1 678dd9819dbfa1c363d0b376f504a551d5352afb; file timestamp 2021-08-28T07:38:06Z",
+      "inspected_on": "2026-10-20",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Automated metadata/page research only. Reopen the original Flickr source and crop history; identity, reuse context and UK/EN captions require independent human review.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "monaco-4-f1db-pilot",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "circuit-diagram",
+      "source_url": "https://raw.githubusercontent.com/f1db/f1db/3c980fd510ef97ea0de577aff7ecee193869de65/src/assets/circuits/white/monaco-4.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/3c980fd510ef97ea0de577aff7ecee193869de65/src/assets/circuits/white/monaco-4.svg",
+      "creator": "Jules Roy (credited for circuit SVG assets in the pinned F1DB README)",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Credit F1DB and its credited SVG artist, link the exact source and license, and record modifications; human rights review still required."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "F1DB v2026.17.0; git 3c980fd510ef97ea0de577aff7ecee193869de65; original SVG SHA-256 855a7bf6da10ed1b9b8e90973519010bce85866ae9f76310abe6224b92630722",
+      "inspected_on": "2026-10-20",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Pinned LICENSE says Attribution 4.0 and README credits Jules Roy. Its unused CC BY Plaintext link points to BY-SA; preserve this discrepancy for human review. SVG has no embedded creator/license metadata. No publication approval.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": {
+        "id": "monaco-4",
+        "race_ids": [
+          "394"
+        ],
+        "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+        "source_revision": "f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; exact race.circuitId and race.circuitLayoutId observations"
+      }
+    },
+    {
+      "id": "monaco-6-f1db-pilot",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "circuit-diagram",
+      "source_url": "https://raw.githubusercontent.com/f1db/f1db/3c980fd510ef97ea0de577aff7ecee193869de65/src/assets/circuits/white/monaco-6.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/3c980fd510ef97ea0de577aff7ecee193869de65/src/assets/circuits/white/monaco-6.svg",
+      "creator": "Jules Roy (credited for circuit SVG assets in the pinned F1DB README)",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Credit F1DB and its credited SVG artist, link the exact source and license, and record modifications; human rights review still required."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "F1DB v2026.17.0; git 3c980fd510ef97ea0de577aff7ecee193869de65; original SVG SHA-256 b9c9f1f81c57d43a202f43c8d7154aa8fb7b64f312682a9fa581233988bcbe64",
+      "inspected_on": "2026-10-20",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Pinned LICENSE says Attribution 4.0 and README credits Jules Roy. Its unused CC BY Plaintext link points to BY-SA; preserve this discrepancy for human review. SVG has no embedded creator/license metadata. No publication approval.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": {
+        "id": "monaco-6",
+        "race_ids": [
+          "941"
+        ],
+        "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+        "source_revision": "f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; exact race.circuitId and race.circuitLayoutId observations"
+      }
+    }
+  ]
+}
