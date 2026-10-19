@@ -11,9 +11,11 @@ on:
       - 'tests/test_import_teams_circuits.py'
       - 'tests/test_import_races.py'
       - 'tests/test_import_race_results.py'
+      - 'scripts/editorial_career.py'
       - 'scripts/prepare_editorial_batch.py'
       - 'scripts/validate_editorial_batch.py'
       - 'docs/editorial/batches/**'
+      - 'tests/test_editorial_career.py'
       - 'tests/test_prepare_editorial_batch.py'
       - 'tests/test_editorial_batch.py'
       - '.github/workflows/f1db-import.yml'
@@ -55,6 +57,11 @@ jobs:
           python3 -m unittest discover -s tests -p test_import_teams_circuits.py -v
           python3 -m unittest discover -s tests -p test_import_races.py -v
           python3 -m unittest discover -s tests -p test_import_race_results.py -v
+      - name: Test editorial batch pipeline
+        run: |
+          python3 -m unittest discover -s tests -p test_editorial_batch.py -v
+          python3 -m unittest discover -s tests -p test_prepare_editorial_batch.py -v
+          python3 -m unittest discover -s tests -p test_editorial_career.py -v
       - name: Download and check pinned release
         shell: bash
         run: |
