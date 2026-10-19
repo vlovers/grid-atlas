@@ -53,7 +53,7 @@ export function parseComparison(payload: unknown, kind: FocusKind, id: string,
       if ((status === 'added' && (n.from !== null || n.to === null)) ||
           (status === 'removed' && (n.from === null || n.to !== null)) ||
           (status === 'unchanged' && (n.from === null || n.to === null))) fail();
-      seen.add(n.entity_id);
+      seen.add(n.entity_id as string);
     }
   }
   if (seen.size > 500) fail();
