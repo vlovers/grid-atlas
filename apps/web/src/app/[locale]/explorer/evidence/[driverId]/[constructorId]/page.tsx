@@ -59,6 +59,6 @@ export default async function ExplorerRaceEvidencePage({ params, searchParams }:
     <p><small>{uk
       ? 'Дані: імпортовані результати основних гонок. Для окремих рядків немає незалежного посилання на джерело.'
       : 'Source scope: imported main-race results. Individual rows do not have independently linked provenance.'}</small></p>
-    <p><Link href={backHref}>← {uk ? 'Повернутися до графа' : 'Back to graph'}</Link></p>
+    <p><a href={`/${locale}${backHref}`}>← {uk ? 'Повернутися до графа' : 'Back to graph'}</a></p>
   </main>;
 }
