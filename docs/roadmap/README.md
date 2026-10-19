@@ -26,3 +26,23 @@
 - Broader source-schema/semantic validation and a reviewed data-update/reconciliation policy.
 
 Keep follow-ups focused on useful, testable behavior. Never fabricate lineage edges to make the explorer look populated, infer legal continuity from naming, or overwrite editorial changes during import.
+
+## Active delivery board (20 October 2026)
+
+The previous list is the implemented archive foundation, not a production-release
+certificate. History Explorer's two-way seasonal result graph, inspector, race
+evidence, reciprocal navigation and permalinks have since merged through PR #101.
+Result-context explanations are proposed in [PR #102](https://github.com/vlovers/grid-atlas/pull/102)
+and are not considered shipped until its tests pass.
+
+- **P0:** [#103](https://github.com/vlovers/grid-atlas/issues/103) real pinned F1DB import/Explorer acceptance;
+  [#104](https://github.com/vlovers/grid-atlas/issues/104) branch protections, hosting, monitoring,
+  backup restore and production launch controls
+- **P1:** [#105](https://github.com/vlovers/grid-atlas/issues/105) Time Machine comparison contract;
+  [#106](https://github.com/vlovers/grid-atlas/issues/106) accessible bilingual comparison UI;
+  [#107](https://github.com/vlovers/grid-atlas/issues/107) independently reviewed biography pilot;
+  [#108](https://github.com/vlovers/grid-atlas/issues/108) documentation/draft reconciliation
+
+See [MVP release gates and implementation detail](../product/stable-experience-roadmap.md).
+Tests on synthetic PostgreSQL fixtures do not independently verify historical
+facts or constitute a real-production acceptance pass.
