@@ -81,6 +81,11 @@ test('published article needs a verified, supported claim and does not leak revi
     RETURNING id::text`);
   await db.query(`INSERT INTO content_claim_evidence(claim_id,source_id,locator,supports)
     VALUES($1,$2,'paragraph 1',true)`, [claimId,source.id]);
+  assert.equal((await read()).status, 404, 'evidence insertion invalidates claim review');
+  await db.query(`UPDATE content_claims SET status='verified',reviewer='Editor',
+    reviewed_at=now() WHERE id=$1`, [claimId]);
+  await db.query(`UPDATE content_articles SET status='published',reviewer='Editor',
+    reviewed_at=now(),published_at=now() WHERE id=$1`, [articleId]);
   const response = await read();
   assert.equal(response.status, 200);
   const body = (await response.json()).data;
