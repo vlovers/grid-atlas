@@ -134,6 +134,11 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
       </nav>
       <h2>{uk ? 'Деталі зв’язку' : 'Connection details'}: {selectedNode.name}</h2>
       <p>{focus?.name} → {selectedNode.name} · {selected.year}</p>
+      <p className={styles.permalink}>
+        <a href={`${graphHref}&selected=${selectedNode.entity_id}#explorer-inspector`}>
+          {uk ? 'Постійне посилання на цей зв’язок ↗' : 'Open a link to this connection ↗'}
+        </a>
+      </p>
       <dl className={styles.facts}>
         <div><dt>{uk ? 'Гонки з результатами' : 'Races with results'}</dt><dd>{selected.races}</dd></div>
         <div><dt>{uk ? 'Записи результатів' : 'Result entries'}</dt><dd>{selected.result_entries}</dd></div>
