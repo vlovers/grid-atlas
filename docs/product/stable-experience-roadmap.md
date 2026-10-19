@@ -29,8 +29,8 @@ This document records merged GitHub work and known blockers, not an approval to 
 2. [#104](https://github.com/vlovers/grid-atlas/issues/104) Protected main and required checks, hosting/domain, DB readiness, private connectivity, TLS, observability, rate limits, backup **restore rehearsal**, SITE_URL, sitemap production checks.
 
 ### P1 — useful product differentiation
-3. [#105](https://github.com/vlovers/grid-atlas/issues/105) Time Machine backend: compare observed driver/constructor associations between two seasons with deterministic, bounded additions/removals/unchanged, accurate evidence and unknown-vs-zero rules.
-4. [#106](https://github.com/vlovers/grid-atlas/issues/106) Time Machine bilingual UI, deep links, accessibility, reduced motion and evidence traversal. Depends on #105; avoid speculative transfers or legal succession.
+3. [#105](https://github.com/vlovers/grid-atlas/issues/105) Time Machine backend delivered in [PR #117](https://github.com/vlovers/grid-atlas/pull/117); the read-only contract, deterministic diff, bounds and provenance limits are documented in [the API reference](../api/time-machine-comparison.md).
+4. [#106](https://github.com/vlovers/grid-atlas/issues/106) Time Machine bilingual UI, deep links, accessibility, reduced motion and evidence traversal. The UI is under review in a Draft PR; the separate genuine-import review journey is documented in [time-machine-real-import-journey.md](time-machine-real-import-journey.md).
 5. [#107](https://github.com/vlovers/grid-atlas/issues/107) Editorial pilot: independently source, fact-check and approve bilingual biographies. Source attribution for imported identities is **not** a citation for biography claims.
 6. [#108](https://github.com/vlovers/grid-atlas/issues/108) Close stale draft work only after reconciliation; synchronize all product/technical status docs and consider centralizing Explorer UI translations.
 
