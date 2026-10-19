@@ -138,7 +138,7 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
       if (!node) return null;
       return <li key={edge.key}>
         <button type="button" aria-pressed={edge.key === selected?.key}
-          onClick={() => setSelectedKey(edge.key)}>{node.name}</button>
+          onClick={() => selectEdge(edge.key, node.entity_id)}>{node.name}</button>
         {' — '}{edge.races} {uk ? 'гонок із результатами' : 'races with results'}
         {' · '}{edge.result_entries} {uk ? 'записів результатів' : 'result entries'}
         {' · '}<Link href={`/${neighborRoute}/${node.entity_id}`}>{uk ? 'Профіль' : 'Profile'}</Link>
