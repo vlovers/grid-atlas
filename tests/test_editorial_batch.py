@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.validate_editorial_batch import validate
+from scripts.validate_editorial_batch import validate, validate_source_ids
 
 
 def manifest():
@@ -36,6 +36,14 @@ class BatchManifestTests(unittest.TestCase):
         m["source"]["release"] = "latest"
         with self.assertRaises(ValueError):
             validate(m)
+
+    def test_source_ids_must_exist(self):
+        m = manifest()
+        with self.assertRaisesRegex(ValueError, "alain-prost"):
+            validate_source_ids(m, {"ayrton-senna"})
+
+    def test_source_ids_match(self):
+        validate_source_ids(manifest(), {"ayrton-senna", "alain-prost"})
 
     def test_oversized_batch_fails(self):
         m = manifest()
