@@ -2,13 +2,13 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getData } from '@/lib/api';
+import { getData, getPublishedArticle } from '@/lib/api';
 
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; starts: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podiums: number; points: string };
 type SeasonSummary = { year: number; starts: number; wins: number; podiums: number; points: string };
 type TeamSeason = { year: number; constructor_id: string; constructor_name: string; races: number; wins: number };
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ id: string; locale: string }> };
 function validId(id: string) { return /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647; }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -21,12 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function DriverProfile({ params }: Props) {
   const t = await getTranslations('UI');
-  const { id } = await params;
+  const { id, locale } = await params;
   if (!validId(id)) notFound();
-  const [profiles, seasons, teams] = await Promise.all([
+  const [profiles, seasons, teams, article] = await Promise.all([
     getData<Profile>(`/api/drivers/${id}`),
     getData<SeasonSummary>(`/api/drivers/${id}/seasons`),
     getData<TeamSeason>(`/api/drivers/${id}/teams`),
+    getPublishedArticle(id, locale === 'en' ? 'en' : 'uk'),
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
@@ -34,6 +35,11 @@ export default async function DriverProfile({ params }: Props) {
     <p className="eyebrow">{t('archive')} / {t('driver')} · {driver.external_id}</p>
     <h1>{driver.name}</h1>
     <p className="lead">{t('driverLead')}</p>
+    {article && <section aria-label={article.title} className="editorial-article">
+      <h2>{article.title}</h2>
+      {article.body_markdown.split(/\\n\\s*\\n/).filter(Boolean).map((paragraph, index) =>
+        <p key={index}>{paragraph}</p>)}
+    </section>}
     <div className="driver-grid" aria-label={t('careerStats')}>
       {([[t('seasons'), driver.seasons], [t('appearances'), driver.starts], [t('wins'), driver.wins], [t('podiums'), driver.podiums], [t('points'), driver.points]] as const).map(([label, value]) =>
         <article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
