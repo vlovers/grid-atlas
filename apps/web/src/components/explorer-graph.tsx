@@ -17,6 +17,8 @@ const RADIUS_Y = 191;
 /** Bounded observed-result graph and synchronized accessible edge inspector. */
 export default function ExplorerGraph({ graph, locale }: Props) {
   const uk = locale === 'uk';
+  const constructorFocus = graph.focus.startsWith('constructor:');
+  const neighborRoute = constructorFocus ? 'drivers' : 'constructors';
   const focus = graph.nodes.find(node => node.key === graph.focus);
   const visible = graph.edges.slice(0, DISPLAY_LIMIT);
   const [selectedKey, setSelectedKey] = useState<string | null>(graph.edges[0]?.key ?? null);
@@ -26,12 +28,12 @@ export default function ExplorerGraph({ graph, locale }: Props) {
   return <section className={styles.panel} aria-label={uk ? 'Карта зв’язків' : 'Connection map'}>
     <div className={styles.header}>
       <strong>{uk ? 'Карта сезону' : 'Season map'} · {graph.year}</strong>
-      <span>{uk ? 'Пілот у центрі' : 'Driver at center'}</span>
+      <span>{constructorFocus ? (uk ? 'Конструктор у центрі' : 'Constructor at center') : (uk ? 'Пілот у центрі' : 'Driver at center')}</span>
     </div>
     <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className={styles.map} role="img"
       aria-label={uk
-        ? `Граф зв’язків пілота з ${visible.length} конструкторами у сезоні ${graph.year}`
-        : `Driver connections to ${visible.length} constructors in season ${graph.year}`}>
+        ? `Граф зв’язків ${constructorFocus ? 'конструктора з пілотами' : 'пілота з конструкторами'}: ${visible.length} у сезоні ${graph.year}`
+        : `${constructorFocus ? 'Constructor connections to drivers' : 'Driver connections to constructors'}: ${visible.length} in season ${graph.year}`}>
       <defs>
         <radialGradient id="hx02-glow"><stop offset="0" stopColor="#e53935" stopOpacity=".25" />
           <stop offset="1" stopColor="#e53935" stopOpacity="0" /></radialGradient>
@@ -48,7 +50,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
       })}
       <circle cx={CENTER_X} cy={CENTER_Y} r="87" fill="#c91e23" stroke="#ff6b67" strokeWidth="3" />
       <text x={CENTER_X} y={CENTER_Y - 18} textAnchor="middle" fill="#fff" fontSize="13" fontWeight="700">
-        {uk ? 'ПІЛОТ' : 'DRIVER'}
+        {constructorFocus ? (uk ? 'КОНСТРУКТОР' : 'CONSTRUCTOR') : (uk ? 'ПІЛОТ' : 'DRIVER')}
       </text>
       <text x={CENTER_X} y={CENTER_Y + 8} textAnchor="middle" fill="#fff" fontSize="17" fontWeight="700">
         {(focus?.name ?? graph.focus).slice(0, 22)}
@@ -95,13 +97,13 @@ export default function ExplorerGraph({ graph, locale }: Props) {
       <p className={styles.caption}>{uk
         ? 'Зафіксована асоціація результатів, не доказ офіційних стартів або контрактів.'
         : 'Recorded result association, not evidence of official starts or contracts.'}</p>
-      <p className={styles.caption}>{uk ? 'Джерело ідентичності пілота' : 'Driver identity source'}:{' '}
+      <p className={styles.caption}>{constructorFocus ? (uk ? 'Джерело ідентичності конструктора' : 'Constructor identity source') : (uk ? 'Джерело ідентичності пілота' : 'Driver identity source')}:{' '}
         <a href={graph.source.homepage_url} target="_blank" rel="noopener noreferrer">
           {graph.source.attribution}</a>.{' '}
         {uk ? 'Не є джерелом кожного окремого запису.' : 'Not per-result provenance.'}
       </p>
-      <Link href={`/constructors/${selectedNode.entity_id}`}>
-        {uk ? 'Відкрити профіль конструктора →' : 'Open constructor profile →'}
+      <Link href={`/${neighborRoute}/${selectedNode.entity_id}`}>
+        {constructorFocus ? (uk ? 'Відкрити профіль пілота →' : 'Open driver profile →') : (uk ? 'Відкрити профіль конструктора →' : 'Open constructor profile →')}
       </Link>
     </aside>}
     <h2>{uk ? 'Зафіксовані зв’язки' : 'Recorded connections'}</h2>
@@ -113,7 +115,7 @@ export default function ExplorerGraph({ graph, locale }: Props) {
           onClick={() => setSelectedKey(edge.key)}>{node.name}</button>
         {' — '}{edge.races} {uk ? 'гонок із результатами' : 'races with results'}
         {' · '}{edge.result_entries} {uk ? 'записів результатів' : 'result entries'}
-        {' · '}<Link href={`/constructors/${node.entity_id}`}>{uk ? 'Профіль' : 'Profile'}</Link>
+        {' · '}<Link href={`/${neighborRoute}/${node.entity_id}`}>{uk ? 'Профіль' : 'Profile'}</Link>
       </li>;
     })}</ul>
   </section>;

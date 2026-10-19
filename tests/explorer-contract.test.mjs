@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseExplorerGraph } from '../apps/web/src/lib/explorer-contract.ts';
+import { parseExplorerGraph, parseConstructorExplorerGraph } from '../apps/web/src/lib/explorer-contract.ts';
 
 const fixture = () => ({
   data: {
@@ -66,4 +66,30 @@ test('supports exact BIGINT strings larger than Number.MAX_SAFE_INTEGER', () => 
   value.data.edges[0].from = `driver:${id}`;
   value.data.edges[0].key = `driver:${id}:constructor:456:year:1988`;
   assert.equal(parseExplorerGraph(value, id, 1988).focus, `driver:${id}`);
+});
+
+test('reciprocal constructor graph accepts distinct driver associations', () => {
+  const value = fixture();
+  value.data.focus = 'constructor:456';
+  value.data.nodes = [
+    { key: 'constructor:456', type: 'constructor', entity_id: '456', name: 'Fixture Constructor' },
+    { key: 'driver:123', type: 'driver', entity_id: '123', name: 'Fixture Driver' },
+  ];
+  value.data.edges = [{
+    key: 'constructor:456:driver:123:year:1988',
+    from: 'constructor:456', to: 'driver:123',
+    relation_type: 'constructor_recorded_result_with_driver',
+    year: 1988, result_entries: 4, races: 3, winning_races: 1,
+    provenance: 'imported-result-association',
+  }];
+  assert.equal(parseConstructorExplorerGraph(value, '456', 1988).edges[0].to, 'driver:123');
+  assert.throws(() => parseExplorerGraph(value, '123', 1988), /Malformed HX-01/);
+  value.data.edges[0].relation_type = 'driver_recorded_result_for_constructor';
+  assert.throws(() => parseConstructorExplorerGraph(value, '456', 1988), /Malformed HX-01/);
+});
+
+test('reciprocal constructor graph rejects dangling focus, mismatched year and list payload', () => {
+  const value = fixture();
+  assert.throws(() => parseConstructorExplorerGraph(value, '456', 1988), /Malformed HX-01/);
+  assert.throws(() => parseConstructorExplorerGraph({ data: [] }, '456', 1988), /Malformed HX-01/);
 });
