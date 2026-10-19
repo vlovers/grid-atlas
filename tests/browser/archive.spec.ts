@@ -10,14 +10,26 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
     test('search preserves locale/query across pages and resets page on submit', async ({ page }) => {
       await page.goto(path('/drivers?q=Synthetic'));
       await expect(page.locator('.driver-grid > a')).toHaveCount(100);
+      const navigation = page.waitForRequest(request => request.isNavigationRequest()
+        && request.url().endsWith(path('/drivers?q=Synthetic&page=2')));
       await page.getByRole('link', { name: `${t.next} →`, exact: true }).click();
+      expect((await navigation).method()).toBe('GET');
       await expect(page).toHaveURL(new RegExp(`/${locale}/drivers\\?q=Synthetic&page=2`));
+      await expect(page.locator('.driver-grid > a')).toHaveCount(5);
+      await page.getByRole('link', { name: `← ${t.previous}`, exact: true }).click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/drivers\\?q=Synthetic$`));
+      await expect(page.locator('.driver-grid > a')).toHaveCount(100);
+      await page.getByRole('link', { name: `${t.next} →`, exact: true }).click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/drivers\\?q=Synthetic&page=2$`));
       await expect(page.locator('.driver-grid > a')).toHaveCount(5);
       await page.getByLabel(t.searchLabel).fill('driver-a');
       await page.getByRole('button', { name: t.search, exact: true }).click();
       await expect(page).toHaveURL(new RegExp(`/${locale}/drivers\\?q=driver-a$`));
       await expect(page.locator('.driver-grid > a')).toHaveCount(1);
+      const profile = page.waitForRequest(request => request.isNavigationRequest()
+        && request.url().endsWith(path('/drivers/1')));
       await page.locator('.driver-grid > a').click();
+      expect((await profile).method()).toBe('GET');
       await expect(page.getByRole('heading', { level: 1 })).toHaveText('driver-a');
       await expect(page).toHaveURL(new RegExp(`/${locale}/drivers/1$`));
     });

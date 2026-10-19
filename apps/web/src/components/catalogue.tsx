@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server';
-import { getPathname, Link } from '@/i18n/navigation';
+import { getPathname } from '@/i18n/navigation';
 import { getData, type Driver } from '@/lib/api';
 import { catalogueParams, pageHref, PAGE_SIZE, MAX_OFFSET, type CatalogueParams } from '@/lib/catalogue';
 
@@ -12,7 +12,8 @@ type Props = {
 
 export default async function Catalogue({ path, title, description, searchParams }: Props) {
   const t = await getTranslations('UI');
-  const cataloguePath = getPathname({ locale: await getLocale(), href: path });
+  const locale = await getLocale();
+  const cataloguePath = getPathname({ locale, href: path });
   const { page, offset, q } = catalogueParams(await searchParams);
   const query = new URLSearchParams({ limit: String(PAGE_SIZE), offset: String(offset), q });
   const records = await getData<Driver>(`/api${path}?${query}`);
@@ -32,11 +33,11 @@ export default async function Catalogue({ path, title, description, searchParams
     </form>
     <p role="status">{t('catalogueStatus', { page, count: records.length })}{q ? ` · ${t('queryStatus', { query: q })}` : ''}</p>
     {records.length ? <div className="driver-grid">{records.map(record =>
-      <Link prefetch={false} className="driver" href={`${path}/${record.id}`} key={record.id}><span className="index">{record.external_id}</span><h2>{record.name}</h2></Link>
+      <a className="driver" href={getPathname({ locale, href: `${path}/${record.id}` })} key={record.id}><span className="index">{record.external_id}</span><h2>{record.name}</h2></a>
     )}</div> : <p>{q ? t('noMatches') : t('noRecords')}</p>}
     <nav className="actions" aria-label={t('cataloguePages')}>
-      {page > 1 && <Link className="secondary" href={pageHref(path, page - 1, q)}>← {t('previous')}</Link>}
-      {next && <Link className="secondary" href={pageHref(path, page + 1, q)}>{t('next')} →</Link>}
+      {page > 1 && <a className="secondary" href={getPathname({ locale, href: pageHref(path, page - 1, q) })}>← {t('previous')}</a>}
+      {next && <a className="secondary" href={getPathname({ locale, href: pageHref(path, page + 1, q) })}>{t('next')} →</a>}
     </nav>
   </section>;
 }
