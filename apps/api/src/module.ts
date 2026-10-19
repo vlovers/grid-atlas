@@ -3,7 +3,6 @@ import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
 import { ProfilesController } from './profiles.controller';
 import { EditorialController } from './editorial.controller';
-import { EditorialController } from './editorial.controller';
 
 import { DB } from './tokens';
 @Injectable()
