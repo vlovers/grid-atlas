@@ -234,6 +234,10 @@ test('Explorer returns bounded, canonical driver-to-constructor connections for 
       ['driver:1:constructor:1:year:1950', 2, 2],
       ['driver:1:constructor:2:year:1950', 1, 1],
     ]);
+  assert.ok(data.edges.every(edge => edge.relation_type === 'driver_recorded_result_for_constructor'));
+  // The first result is DNS: an association is not proof of an actual start.
+  const { rows: dns } = await db.query("SELECT 1 FROM historical_race_results WHERE race_id = 3 AND driver_id = 1 AND constructor_id = 1 AND position_text = 'DNS'");
+  assert.equal(dns.length, 1);
   assert.ok(data.edges.every(edge => edge.provenance === 'imported-result-association'));
   assert.ok(data.limitations.includes('entity_source_not_per_result_provenance'));
   assert.ok(!JSON.stringify(data).includes('Separate entrant alpha'));
