@@ -1,6 +1,6 @@
 # Grid Atlas — MVP status, delivery order and release gates
 
-Updated 20 October 2026 (after PR #120). **Code and CI state are distinct from production acceptance.**
+Updated 20 October 2026 (after PR #120; Time Machine UI under review in PR #124). **Code and CI state are distinct from production acceptance.**
 This document records merged GitHub work and known blockers, not an approval to publish.
 
 ## Implemented in main
@@ -15,13 +15,13 @@ This document records merged GitHub work and known blockers, not an approval to 
 | Reciprocal-focus traversal and shareable relationship links | #100, #101 | Year and canonical identities preserved across two-way navigation |
 | Result-count explanation in inspector | #102 | User-facing clarification without official starts or career-win inference |
 | Real pinned import, SQL parity, browser acceptance and reproducible report | #111–#114, #116 | Verified consistency on sampled actual archive rows; not independent historical fact-checking |
-| Time Machine bounded season comparison API and boundary tests | #117, #119 | Read-only observed results only; UI remains draft (#118) |
+| Time Machine bounded season comparison API and boundary tests | #117, #119 | Read-only observed results only; UI under review (#124) |
 | Paginated complete association list beyond initial radial graph | #120 | 34-association 1960 stress case: all accessible; SVG still limited to 10 |
 | UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
 
 ## Editorial and interface drafts (not merged)
 
-- [PR #118](https://github.com/vlovers/grid-atlas/pull/118): bilingual Time Machine UI **Draft**, not shipped or included in main until reviewed and tested.
+- [PR #124](https://github.com/vlovers/grid-atlas/pull/124): bilingual Time Machine UI **Draft**, not shipped or included in main until reviewed and tested. PR #118 is a competing earlier draft; do not merge both.
 - [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
 - [PR #59](https://github.com/vlovers/grid-atlas/pull/59): **closed, superseded without merge** after retaining distinct useful notes in the [legacy specification review](legacy-explorer-spec-review.md). Old API sketches are not current contracts.
 
@@ -33,7 +33,7 @@ This document records merged GitHub work and known blockers, not an approval to 
 
 ### P1 — useful product differentiation
 3. [#105](https://github.com/vlovers/grid-atlas/issues/105) **Completed:** bounded Time Machine backend and PostgreSQL boundary tests; [contract](../api/time-machine-comparison.md).
-4. [#106](https://github.com/vlovers/grid-atlas/issues/106) **In progress (Draft PR #118):** bilingual Time Machine UI, deep links, accessibility and evidence traversal. Review independently before merge.
+4. [#106](https://github.com/vlovers/grid-atlas/issues/106) **In progress (Draft PR #124):** bilingual Time Machine UI, deep links, accessibility and evidence traversal. Review independently before merge.
 5. [#107](https://github.com/vlovers/grid-atlas/issues/107) Editorial pilot: independently source, fact-check and approve bilingual biographies. Source attribution for imported identities is **not** a citation for biography claims.
 6. [#108](https://github.com/vlovers/grid-atlas/issues/108) Reconcile stale draft docs, synchronize project status and track whether to centralize inline Explorer translations.
 7. [#115](https://github.com/vlovers/grid-atlas/issues/115) **Completed:** browse all large constructor-season result associations using bounded pagination (#120).

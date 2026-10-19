@@ -28,7 +28,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <nav className={styles.navigation} aria-label={t('mainNavigation')}>
         <Link href="/seasons">{t('seasons')}</Link><Link href="/drivers">{t('driversTitle')}</Link>
         <Link href="/constructors">{t('constructorsTitle')}</Link><Link href="/circuits">{t('circuitsTitle')}</Link>
-        <Link href="/lineage">{t('lineageTitle')}</Link>
+        <Link href="/time-machine">{t('timeMachineNav')}</Link><Link href="/lineage">{t('lineageTitle')}</Link>
       </nav>
       <Suspense><LanguageSwitcher /></Suspense>
     </header>

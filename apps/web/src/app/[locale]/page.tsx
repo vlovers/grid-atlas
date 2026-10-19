@@ -10,6 +10,7 @@ export default function Home() {
     <p className="lead">{t('homeLead')}</p><div className="actions">
       <Link className="primary" href="/seasons">{t('exploreSeasons')} ↗</Link><Link className="secondary" href="/drivers">{t('findDriver')} →</Link>
       <Link className="secondary" href="/constructors">{t('findConstructor')} →</Link><Link className="secondary" href="/circuits">{t('exploreCircuits')} →</Link>
+      <Link className="secondary" href="/time-machine">{t('timeMachineNav')} →</Link>
     </div></section><section className="columns">
       <article><span className="index">01 / {t('seasons')}</span><h2><Link href="/seasons">{t('seasonBySeason')} ↗</Link></h2><p>{t('homeSeasons')}</p></article>
       <article><span className="index">02 / {t('lineageTitle')}</span><h2><Link href="/lineage">{t('lineageTitle')} ↗</Link></h2><p>{t('homeLineage')}</p></article>

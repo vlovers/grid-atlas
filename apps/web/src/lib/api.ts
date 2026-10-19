@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 const base = process.env.API_BASE_URL || 'http://127.0.0.1:3001';
 export type Season = { year: number };
 export type Driver = { id: string; name: string; external_id: string };
+export type CatalogueEntity = { id: string; name: string; external_id: string };
 export type Race = { id: string; round: number; race_date: string | null; official_name: string; circuit_id: string | null; circuit_name: string | null };
 export type RaceProfile = Race & { season_year: number; external_id: string };
 export type Result = { position_display_order: number; position_number: number | null; position_text: string; driver_id: string; driver: string; constructor_id: string; constructor: string; points: string | null; laps: number | null; reason_retired: string | null; shared_car: boolean };
