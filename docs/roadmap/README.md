@@ -2,6 +2,8 @@
 
 ## Implemented
 
+- Ukrainian-first `/uk` and English `/en` routes, locale-preserving navigation/search/language switching, translated metadata and accessible loading/error/not-found states. Historical facts, names and IDs remain source-neutral.
+
 - Next.js frontend, NestJS read API, PostgreSQL historical/provenance schema, forward-only checksummed migrations.
 - Checksum-validated, repeatable F1DB v2026.17.0 imports of seasons, drivers, constructors, entrants, circuits, races and results.
 - Search and pagination for driver, constructor and circuit catalogues; career/season summaries; circuit race history; named race results linked to profiles and seasons.
@@ -20,7 +22,7 @@
 
 - Official driver/constructor standings with historical scoring rules and sprint results, distinct from race-result summaries.
 - Circuit layout history, further source-backed lineage research, and better season filters when browsing evidence supports the need.
-- Localization and content improvements based on user feedback.
+- Ukrainian/English translation review and content improvements based on user feedback.
 - Broader source-schema/semantic validation and a reviewed data-update/reconciliation policy.
 
 Keep follow-ups focused on useful, testable behavior. Never fabricate lineage edges to make the explorer look populated, infer legal continuity from naming, or overwrite editorial changes during import.

@@ -19,6 +19,10 @@ jobs:
           node-version: '24'
       - name: Validate foundation
         run: npm run check
+      - name: Install workspace dependencies for localization tests
+        run: |
+          corepack enable && corepack prepare pnpm@10.18.3 --activate
+          pnpm install --frozen-lockfile
       - name: Run foundation tests
         run: npm test
       - name: Run all offline Python tests

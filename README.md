@@ -2,7 +2,7 @@
 
 A source-backed Formula 1 historical encyclopedia, with searchable drivers, constructors and circuits, season calendars, race results and an interactive team-lineage explorer.
 
-The public beta is in preparation. The archive uses pinned **F1DB v2026.17.0**, covering 1950–2026 through that release, rather than live updates. The current interface is in Russian. Lineage is independently reviewed editorial data: proposed and rejected claims are never public. The 2021 Racing Point → Aston Martin candidate remains **proposed**.
+The public beta is in preparation. The archive uses pinned **F1DB v2026.17.0**, covering 1950–2026 through that release, rather than live updates. The interface defaults to Ukrainian at `/uk`, with English at `/en`. Unprefixed routes redirect to Ukrainian; imported names, identifiers and historical evidence are unchanged. Lineage is independently reviewed editorial data: proposed and rejected claims are never public. The 2021 Racing Point → Aston Martin candidate remains **proposed**.
 
 ## Run locally
 
@@ -42,7 +42,7 @@ DATABASE_URL=postgresql://grid_atlas:grid_atlas_local@127.0.0.1:5432/grid_atlas 
 API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web dev --port 3000
 ```
 
-Open http://localhost:3000. For local production processes, run `pnpm build`, then the API start command and `API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web start --hostname 127.0.0.1 --port 3000`. External hosting has not been deployed by this work.
+Open http://localhost:3000/uk (Ukrainian) or http://localhost:3000/en (English). For local production processes, run `pnpm build`, then the API start command and `API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web start --hostname 127.0.0.1 --port 3000`. External hosting has not been deployed by this work.
 
 ## Checks
 
@@ -73,7 +73,7 @@ Browser tests use production API / web processes on localhost ports 3339–3341,
 - Drivers, constructors and entrants are different identities. F1DB's constructor grouping is not proof of corporate continuity.
 - Career and season figures summarize imported race-result rows. Driver points exclude sprint standings calculations and historical dropped-score rules. Constructor points are sums of driver-result points, not official championship totals; shared-car victories count once per constructor race.
 - Circuit layouts, championship standings, biographies, photographs and live timing are not implemented.
-- The public `/sources` page shows registered releases, checksums, attribution and statistical limitations. F1DB data is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); Grid Atlas selects fields and derives summaries. No licensed F1 logos or photos are bundled.
+- The localized `/uk/sources` and `/en/sources` pages show registered releases, checksums, attribution and statistical limitations. F1DB data is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); Grid Atlas selects fields and derives summaries. No licensed F1 logos or photos are bundled.
 - Only verified, cited lineage edges appear in the network. An empty graph is an honest editorial state. [Independent review is required](docs/data-sources/lineage-publication-runbook.md).
 
 The monorepo contains [Next.js web](apps/web/README.md), [NestJS API](apps/api/README.md), [PostgreSQL migrations](packages/database/README.md), and dependency-free Python importers. See the [architecture](docs/architecture/overview.md), [beta audit](docs/beta-audit.md) and [roadmap](docs/roadmap/README.md) for implementation status and release gates.

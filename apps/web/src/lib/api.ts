@@ -12,7 +12,7 @@ export async function getData<T>(path: string): Promise<T[]> {
     res = await fetch(new URL(path, base), { cache: 'no-store', signal: AbortSignal.timeout(8000) });
   } catch (error) {
     console.error('Grid Atlas API request failed:', path, error);
-    throw new Error('Исторические данные сейчас недоступны. Попробуйте позже.', { cause: error });
+    throw new Error('Historical data is temporarily unavailable.', { cause: error });
   }
   // Keep missing records distinct from API outages, including metadata requests.
   if (res.status === 404) notFound();
@@ -23,6 +23,6 @@ export async function getData<T>(path: string): Promise<T[]> {
     return data.data as T[];
   } catch (error) {
     console.error('Grid Atlas API request failed:', path, error);
-    throw new Error('Исторические данные сейчас недоступны. Попробуйте позже.', { cause: error });
+    throw new Error('Historical data is temporarily unavailable.', { cause: error });
   }
 }
