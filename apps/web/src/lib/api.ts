@@ -31,6 +31,7 @@ export async function getData<T>(path: string): Promise<T[]> {
 export type PublishedArticle = {
   id: string; locale: 'uk' | 'en'; slug: string;
   title: string; body_markdown: string; published_at: string;
+  references: { url: string; title: string; publisher: string }[];
 };
 export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en'): Promise<PublishedArticle | null> {
   const path = `/api/drivers/${driverId}/article?locale=${locale}`;
