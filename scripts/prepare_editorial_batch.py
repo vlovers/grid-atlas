@@ -28,6 +28,7 @@ def extract_result_observations(archive, target_ids):
     if not isinstance(rows, list):
         raise ValueError("Invalid race-results collection")
     by_driver = defaultdict(list)
+    seen = set()
     for row in rows:
         if not isinstance(row, dict):
             raise ValueError("Invalid race-result row")
@@ -41,6 +42,10 @@ def extract_result_observations(archive, target_ids):
             raise ValueError("Invalid result points")
         if position is not None and (type(position) is not int or position < 1):
             raise ValueError("Invalid finishing position")
+        key = (driver, race_id)
+        if key in seen:
+            raise ValueError(f"Duplicate race result for {driver} at race {race_id}")
+        seen.add(key)
         constructor = row.get("constructorId")
         if not isinstance(constructor, str) or not constructor:
             raise ValueError("Invalid constructor ID")
@@ -63,6 +68,10 @@ def build_packets(manifest, driver_rows, results_by_driver=None, races_by_id=Non
     by_id = {driver_id: name for driver_id, name, _hash in driver_rows}
     validate_source_ids(manifest, by_id)
     results_by_driver = results_by_driver or {}
+    if results_by_driver:
+        missing = [driver_id for driver_id in manifest["drivers"] if not results_by_driver.get(driver_id)]
+        if missing:
+            raise ValueError("No race results for batch drivers: " + ", ".join(missing))
     return {
         "batch_id": manifest["batch_id"],
         "source": manifest["source"],
@@ -103,6 +112,7 @@ def main():
     from import_drivers import read_drivers
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     driver_rows, _digest = read_drivers(args.archive, args.checksums)
+    validate(manifest)
     observations = extract_result_observations(args.archive, set(manifest["drivers"]))
     from import_races import read_races
     from import_teams_circuits import read_entities
