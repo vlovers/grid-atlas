@@ -91,6 +91,11 @@ test('published article needs a verified, supported claim and does not leak revi
   const body = (await response.json()).data;
   assert.equal(body.title, 'Synthetic biography');
   assert.equal(body.body_markdown, 'A test statement');
+  assert.deepEqual(body.references, [{
+    url: 'https://example.org/editorial-evidence',
+    title: 'Synthetic source',
+    publisher: 'Example',
+  }]);
   assert.equal(body.reviewer, undefined);
   assert.equal(body.reviewed_at, undefined);
   assert.equal((await read('uk')).status, 404);
