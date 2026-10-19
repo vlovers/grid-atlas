@@ -27,12 +27,12 @@ const metrics = (v: unknown): v is Counts =>
 export function parseComparison(payload: unknown, kind: FocusKind, id: string,
   fromYear: number, toYear: number): SeasonComparison {
   if (!object(payload) || !object(payload.data)) fail();
-  const data = payload.data;
+  const data = payload.data as Record<string, unknown>;
   if (!object(data.focus) || data.focus.entity_type !== kind ||
       data.focus.entity_id !== id || typeof data.focus.name !== 'string' || !data.focus.name.trim() ||
       data.from_year !== fromYear || data.to_year !== toYear ||
       data.provenance !== 'imported-main-race-results' ||
-      !Array.isArray(data.limitations) || !data.limitations.every(v => typeof v === 'string' && v.length > 0)) fail();
+      !Array.isArray(data.limitations) || !data.limitations.every((v: unknown) => typeof v === 'string' && v.length > 0)) fail();
   const neighborType = kind === 'driver' ? 'constructor' : 'driver';
   const seen = new Set<string>();
   for (const status of ['added','removed','unchanged'] as const) {
