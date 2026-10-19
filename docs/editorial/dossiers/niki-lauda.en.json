@@ -18,6 +18,16 @@
       "accessed_on": "2026-10-20",
       "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "niki-lauda-second-source",
+      "source_url": "https://www.formula1.com/en/results/1975/drivers",
+      "title": "1975 Drivers' Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Live results classification observed 2026-10-20; immutable revision unavailable",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -33,6 +43,19 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "niki-lauda-1975-standings",
+      "topic": "championships",
+      "statement": "The official 1975 drivers' championship classification lists Niki Lauda first for Ferrari on 64.5 points, ahead of Emerson Fittipaldi on 45.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "niki-lauda-second-source",
+          "locator": "1975 Drivers' Standings, positions 1 and 2, driver/team/points columns (classification points, not raw per-race sum)",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -42,6 +65,13 @@
       "claim_ids": [
         "niki-lauda-titles"
       ]
+    },
+    {
+      "section_id": "season-milestone",
+      "title": "Season milestone",
+      "claim_ids": [
+        "niki-lauda-1975-standings"
+      ]
     }
   ],
   "gaps": [
@@ -49,7 +79,8 @@
     "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
-    "No licensed media selected; no publishing decision or human reviewer assigned."
+    "No licensed media selected; no publishing decision or human reviewer assigned.",
+    "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group."
   ],
   "media": []
 }

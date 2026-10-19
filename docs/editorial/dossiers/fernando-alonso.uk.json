@@ -33,6 +33,19 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "fernando-alonso-birth-location",
+      "topic": "birth",
+      "statement": "Згідно з історичним профілем Formula 1, Фернандо Алонсо народився 29 липня 1981 року в Ов'єдо, Астурія, Іспанія.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fernando-alonso-f1-hall",
+          "locator": "Opening biographical paragraph beginning 'Fernando Alonso Diaz ... was born on 29 July, 1981, in Oviedo'",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -42,6 +55,13 @@
       "claim_ids": [
         "fernando-alonso-titles"
       ]
+    },
+    {
+      "section_id": "background",
+      "title": "Біографічні відомості",
+      "claim_ids": [
+        "fernando-alonso-birth-location"
+      ]
     }
   ],
   "gaps": [
@@ -49,7 +69,8 @@
     "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
-    "No licensed media selected; no publishing decision or human reviewer assigned."
+    "No licensed media selected; no publishing decision or human reviewer assigned.",
+    "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group."
   ],
   "media": []
 }
