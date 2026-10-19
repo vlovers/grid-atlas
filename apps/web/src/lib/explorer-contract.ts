@@ -35,15 +35,18 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
   if (!record(envelope.data)) fail();
   const graph = envelope.data as Record<string, unknown>;
   const focus = `driver:${driverId}`;
-  if (graph.focus !== focus || graph.year !== year || !Array.isArray(graph.nodes) ||
-      !Array.isArray(graph.edges) || typeof graph.truncated !== 'boolean' ||
-      !count(graph.limit) || graph.limit < 1 || graph.limit > 25 ||
+  const graphNodes = graph.nodes;
+  const graphEdges = graph.edges;
+  const graphLimit = graph.limit;
+  if (graph.focus !== focus || graph.year !== year || !Array.isArray(graphNodes) ||
+      !Array.isArray(graphEdges) || typeof graph.truncated !== 'boolean' ||
+      !count(graphLimit) || graphLimit < 1 || graphLimit > 25 ||
       !record(graph.source) || !nonempty(graph.source.slug) ||
       !nonempty(graph.source.homepage_url) || !nonempty(graph.source.attribution) ||
       !Array.isArray(graph.limitations) || !graph.limitations.every(nonempty)) fail();
 
   const nodes = new Map<string, ExplorerNode>();
-  for (const item of graph.nodes) {
+  for (const item of graphNodes) {
     if (!record(item) || (item.type !== 'driver' && item.type !== 'constructor') ||
         !id(item.entity_id) || item.key !== `${item.type}:${item.entity_id}` ||
         !nonempty(item.name) || nodes.has(item.key)) fail();
@@ -53,7 +56,7 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
       [...nodes.values()].filter(node => node.type === 'driver').length !== 1) fail();
 
   const edges = new Set<string>();
-  for (const item of graph.edges) {
+  for (const item of graphEdges) {
     if (!record(item) || !nonempty(item.key) || edges.has(item.key) ||
         item.from !== focus || typeof item.to !== 'string' ||
         nodes.get(item.to)?.type !== 'constructor' ||
@@ -64,7 +67,7 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
         item.races > item.result_entries || item.winning_races > item.races) fail();
     edges.add(item.key);
   }
-  if (edges.size > graph.limit || nodes.size !== edges.size + 1 ||
-      (graph.truncated && edges.size !== graph.limit)) fail();
+  if (edges.size > graphLimit || nodes.size !== edges.size + 1 ||
+      (graph.truncated && edges.size !== graphLimit)) fail();
   return graph as unknown as ExplorerGraph;
 }
