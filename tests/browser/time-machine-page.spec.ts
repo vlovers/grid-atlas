@@ -24,7 +24,7 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(removed).toContainText('driver-b');
     await expect(removed.getByRole('link', { name: /1950/ })).toHaveCount(2);
     await page.goto(`/${locale}/explorer/compare/constructors/1?fromYear=1950&toYear=1950`);
-    await expect(page.getByRole('alert')).toContainText(locale === 'uk'
+    await expect(page.getByRole('alert').filter({ hasText: locale === 'uk' ? 'Виберіть два різні роки' : 'Choose two different years' })).toContainText(locale === 'uk'
       ? 'Виберіть два різні роки' : 'Choose two different years');
   });
 
