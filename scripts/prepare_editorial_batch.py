@@ -9,6 +9,10 @@ import zipfile
 from collections import defaultdict
 from decimal import Decimal
 from pathlib import Path
+import sys
+
+# Allow both `python -m scripts.prepare_editorial_batch` and direct CLI execution.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.validate_editorial_batch import validate, validate_source_ids
 from scripts.editorial_career import build_career_observations
@@ -95,7 +99,6 @@ def main():
     args = parser.parse_args()
 
     # Reuse importer checksum verification and its exact canonical identity parser.
-    import sys
     sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "packages" / "data-importer"))
     from import_drivers import read_drivers
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
