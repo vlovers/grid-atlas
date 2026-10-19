@@ -8,7 +8,7 @@ This endpoint is a first, bounded, one-hop **historical observation** graph, not
 - `year`: required, four-digit integer in 1950–2200.
 - Returns `{data: {focus, year, nodes, edges, truncated, limit, source, limitations}}`.
 - `nodes`: driver focus and up to 25 distinct constructors with result records in that season.
-- `edges`: one `driver_competed_for_constructor` relation per distinct constructor and selected season. `result_entries` counts rows, `races` counts distinct races, `winning_races` counts distinct winning races.
+- `edges`: one `driver_recorded_result_for_constructor` relation per distinct constructor and selected season. `result_entries` counts rows, `races` counts distinct races, `winning_races` counts distinct winning races.
 - `truncated`: true when more than 25 constructors exist; this first slice intentionally has no pagination.
 - Ordering: first recorded season round, then canonical constructor ID. Stable keys use canonical IDs and year, never translated names.
 - `source`: archive's registered source attribution for the focus driver, **not per-result citations**.

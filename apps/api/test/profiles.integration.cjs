@@ -235,6 +235,10 @@ test('Explorer returns bounded, canonical driver-to-constructor connections for 
       ['driver:1:constructor:2:year:1950', 1, 1],
     ]);
   assert.ok(data.edges.every(edge => edge.provenance === 'imported-result-association'));
+  assert.ok(data.edges.every(edge => edge.relation_type === 'driver_recorded_result_for_constructor'));
+  assert.equal(data.edges[0].result_entries, 2); // Includes the DNS result entry; not official starts.
+  assert.equal(data.source.slug, 'synthetic');
+  assert.ok(!Object.hasOwn(data.edges[0], 'source_url'));
   assert.ok(data.limitations.includes('entity_source_not_per_result_provenance'));
   assert.ok(!JSON.stringify(data).includes('Separate entrant alpha'));
 });
