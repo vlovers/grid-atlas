@@ -37,8 +37,14 @@ export default async function DriverProfile({ params }: Props) {
     <p className="lead">{t('driverLead')}</p>
     {article && <section aria-label={article.title} className="editorial-article">
       <h2>{article.title}</h2>
-      {article.body_markdown.split(/\\n\\s*\\n/).filter(Boolean).map((paragraph, index) =>
+      {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, index) =>
         <p key={index}>{paragraph}</p>)}
+      {article.references?.length > 0 && <aside aria-label={locale === 'uk' ? 'Джерела' : 'Sources'}>
+        <h3>{locale === 'uk' ? 'Джерела' : 'Sources'}</h3>
+        <ol>{article.references.map(source => <li key={source.url}>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a> — {source.publisher}
+        </li>)}</ol>
+      </aside>}
     </section>}
     <div className="driver-grid" aria-label={t('careerStats')}>
       {([[t('seasons'), driver.seasons], [t('appearances'), driver.starts], [t('wins'), driver.wins], [t('podiums'), driver.podiums], [t('points'), driver.points]] as const).map(([label, value]) =>

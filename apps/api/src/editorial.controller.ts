@@ -52,6 +52,15 @@ export class EditorialController {
       [id, locale],
     );
     if (!rows.length) throw new NotFoundException('Published article not found');
-    return { data: rows[0] };
+    const { rows: references } = await this.db.query(
+      `SELECT DISTINCT s.source_url AS url, s.title, s.publisher
+       FROM content_article_claims ac
+       JOIN content_claim_evidence e ON e.claim_id = ac.claim_id AND e.supports = true
+       JOIN content_sources s ON s.id = e.source_id
+       WHERE ac.article_id = $1
+       ORDER BY s.title, s.source_url, s.publisher`,
+      [rows[0].id],
+    );
+    return { data: { ...rows[0], references } };
   }
 }
