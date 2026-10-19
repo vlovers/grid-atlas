@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "driver_id": "sebastian-vettel",
+  "locale": "en",
+  "title": "Sebastian Vettel — championship research pilot",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "sebastian-vettel-f1-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+      "title": "Sebastian Vettel — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "sebastian-vettel-titles",
+      "topic": "championships",
+      "statement": "Sebastian Vettel won four consecutive Formula One Drivers’ World Championships from 2010 through 2013.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "sebastian-vettel-f1-hall",
+          "locator": "Hall of Fame heading: 2010–2013",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "championships",
+      "title": "World championship titles",
+      "claim_ids": [
+        "sebastian-vettel-titles"
+      ]
+    }
+  ],
+  "gaps": [
+    "This is a single-claim research seed, NOT a complete biography.",
+    "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
+    "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
+    "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
+    "No licensed media selected; no publishing decision or human reviewer assigned."
+  ],
+  "media": []
+}

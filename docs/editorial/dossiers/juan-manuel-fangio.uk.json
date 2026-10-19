@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "driver_id": "juan-manuel-fangio",
+  "locale": "uk",
+  "title": "Хуан-Мануель Фанхіо — championship research pilot",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "juan-manuel-fangio-f1-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv",
+      "title": "Juan Manuel Fangio — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-20",
+      "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "juan-manuel-fangio-titles",
+      "topic": "championships",
+      "statement": "Хуан-Мануель Фанхіо п’ять разів ставав чемпіоном світу Формули-1 серед пілотів: у 1951 році та щороку з 1954 до 1957 року.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "juan-manuel-fangio-f1-hall",
+          "locator": "Hall of Fame heading: 1951, 1954–57; introductory paragraph",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "championships",
+      "title": "Чемпіонські титули",
+      "claim_ids": [
+        "juan-manuel-fangio-titles"
+      ]
+    }
+  ],
+  "gaps": [
+    "This is a single-claim research seed, NOT a complete biography.",
+    "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
+    "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
+    "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
+    "No licensed media selected; no publishing decision or human reviewer assigned."
+  ],
+  "media": []
+}
