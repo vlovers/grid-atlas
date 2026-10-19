@@ -7,7 +7,7 @@ export type ExplorerNode = {
 };
 export type ExplorerEdge = {
   key: string; from: string; to: string;
-  relation_type: 'driver_recorded_result_for_constructor';
+  relation_type: 'driver_recorded_result_for_constructor' | 'constructor_recorded_result_with_driver';
   year: number; result_entries: number; races: number; winning_races: number;
   provenance: 'imported-result-association';
 };
@@ -29,12 +29,23 @@ const count = (value: unknown): value is number =>
 const fail = (): never => { throw new Error('Malformed HX-01 Explorer response'); };
 
 export function parseExplorerGraph(payload: unknown, driverId: string, year: number): ExplorerGraph {
-  if (!id(driverId) || !Number.isInteger(year) || year < 1950 || year > 2200) fail();
+  return parseSeasonExplorerGraph(payload, 'driver', driverId, year);
+}
+
+export function parseConstructorExplorerGraph(payload: unknown, constructorId: string, year: number): ExplorerGraph {
+  return parseSeasonExplorerGraph(payload, 'constructor', constructorId, year);
+}
+
+function parseSeasonExplorerGraph(payload: unknown, focusType: 'driver' | 'constructor', focusId: string, year: number): ExplorerGraph {
+  if (!id(focusId) || !Number.isInteger(year) || year < 1950 || year > 2200) fail();
   if (!record(payload)) fail();
   const envelope = payload as Record<string, unknown>;
   if (!record(envelope.data)) fail();
   const graph = envelope.data as Record<string, unknown>;
-  const focus = `driver:${driverId}`;
+  const focus = `${focusType}:${focusId}`;
+  const neighborType = focusType === 'driver' ? 'constructor' : 'driver';
+  const relationType = focusType === 'driver'
+    ? 'driver_recorded_result_for_constructor' : 'constructor_recorded_result_with_driver';
   const graphNodes: unknown[] = Array.isArray(graph.nodes) ? graph.nodes : fail();
   const graphEdges: unknown[] = Array.isArray(graph.edges) ? graph.edges : fail();
   const graphLimit: number = count(graph.limit) ? graph.limit as number : fail();
@@ -54,8 +65,8 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
         !nonempty(node.name) || nodes.has(node.key)) fail();
     nodes.set(node.key as string, node as unknown as ExplorerNode);
   }
-  if (nodes.size === 0 || !nodes.has(focus) || nodes.get(focus)?.type !== 'driver' ||
-      [...nodes.values()].filter(node => node.type === 'driver').length !== 1) fail();
+  if (nodes.size === 0 || !nodes.has(focus) || nodes.get(focus)?.type !== focusType ||
+      [...nodes.values()].filter(node => node.type === focusType).length !== 1) fail();
 
   const edges = new Set<string>();
   for (const item of graphEdges) {
@@ -63,9 +74,9 @@ export function parseExplorerGraph(payload: unknown, driverId: string, year: num
     const edge = item as Record<string, unknown>;
     if (!nonempty(edge.key) || edges.has(edge.key) ||
         edge.from !== focus || typeof edge.to !== 'string' ||
-        nodes.get(edge.to)?.type !== 'constructor' ||
+        nodes.get(edge.to)?.type !== neighborType ||
         edge.key !== `${focus}:${edge.to}:year:${year}` ||
-        edge.relation_type !== 'driver_recorded_result_for_constructor' ||
+        edge.relation_type !== relationType ||
         edge.provenance !== 'imported-result-association' || edge.year !== year ||
         !count(edge.result_entries) || !count(edge.races) || !count(edge.winning_races) ||
         edge.races > edge.result_entries || edge.winning_races > edge.races) fail();
