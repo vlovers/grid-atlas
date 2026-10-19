@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   if (!valid(id)) return { title: t('constructorMissing') };
   const data = await getData<Profile>(`/api/constructors/${id}`);
-  return { title: data[0]?.name ?? t('constructorMissing') };
+  return { title: data[0] ? `${data[0].name} — ${t('constructor')}` : t('constructorMissing') };
 }
 export default async function ConstructorProfile({ params }: Props) {
   const t = await getTranslations('UI');

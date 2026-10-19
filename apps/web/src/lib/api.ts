@@ -26,3 +26,32 @@ export async function getData<T>(path: string): Promise<T[]> {
     throw new Error('Historical data is temporarily unavailable.', { cause: error });
   }
 }
+
+/** A missing article is expected; transport errors are not silently swallowed. */
+export type PublishedArticle = {
+  id: string; locale: 'uk' | 'en'; slug: string;
+  title: string; body_markdown: string; published_at: string;
+  references: { url: string; title: string; publisher: string }[];
+};
+export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en'): Promise<PublishedArticle | null> {
+  const path = `/api/drivers/${driverId}/article?locale=${locale}`;
+  let response: Response;
+  try {
+    response = await fetch(new URL(path, base), { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+  } catch (error) {
+    console.error('Grid Atlas editorial API request failed:', path, error);
+    throw new Error('Editorial content is temporarily unavailable.', { cause: error });
+  }
+  if (response.status === 404) return null;
+  if (!response.ok) throw new Error(`Editorial API status ${response.status}`);
+  const payload: unknown = await response.json();
+  if (!payload || typeof payload !== 'object' || !('data' in payload)) {
+    throw new Error('Malformed editorial API response');
+  }
+  const article = (payload as { data: unknown }).data;
+  if (!article || typeof article !== 'object' || !('body_markdown' in article) ||
+    typeof article.body_markdown !== 'string' || !('title' in article) || typeof article.title !== 'string') {
+    throw new Error('Malformed editorial article');
+  }
+  return article as PublishedArticle;
+}

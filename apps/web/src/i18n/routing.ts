@@ -6,6 +6,8 @@ export const routing = defineRouting({
   localePrefix: 'always',
   localeDetection: false,
   localeCookie: false,
+  // The Metadata API uses SITE_URL for hreflang; avoid request-host Link headers.
+  alternateLinks: false,
 });
 
 export type Locale = (typeof routing.locales)[number];

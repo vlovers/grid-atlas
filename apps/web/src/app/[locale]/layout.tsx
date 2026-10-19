@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from '@/i18n/language-switcher';
+import { siteOrigin } from '@/lib/seo';
 import styles from '@/i18n/language-switcher.module.css';
 import '../styles.css';
 
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({ locale, namespace: 'UI' });
-  return { title: { default: t('metadataTitle'), template: '%s | GRID ATLAS' }, description: t('metadataDescription') };
+  return { robots: { index: Boolean(siteOrigin()), follow: true }, title: { default: t('metadataTitle'), template: '%s | GRID ATLAS' }, description: t('metadataDescription') };
 }
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
