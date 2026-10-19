@@ -1,0 +1,25 @@
+name: Foundation CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  foundation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate foundation
+        run: npm run check
+      - name: Run foundation tests
+        run: npm test
+      - name: Run all offline Python tests
+        run: python3 -m unittest discover -s tests -v
