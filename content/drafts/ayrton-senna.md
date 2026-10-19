@@ -1,6 +1,6 @@
 # Ayrton Senna — source dossier v0.1
 
-**Editorial status: DRAFT — not approved for publication.** Original bilingual working copy below; no image is cleared for reuse. Resolve driver canonical identity before database insertion. Historical stats displayed by the app must come from its imported archive, with metric semantics checked against the cited official figures.
+**Editorial status: DRAFT — not approved for publication. Source spot-check completed 2026-10-19 for selected Formula1.com pages; no human editorial sign-off.** Original bilingual working copy below; no image is cleared for reuse. Resolve driver canonical identity before database insertion. Historical stats displayed by the app must come from its imported archive, with metric semantics checked against the cited official figures.
 
 ## Claim-to-source matrix
 
@@ -15,6 +15,25 @@
 | Died following crash during 1994 San Marino GP | [F1 retrospective](https://www.formula1.com/en/latest/article/who-was-ayrton-senna-and-why-is-he-regarded-as-one-of-f1s-greatest-drivers.2GZEdmgHd9mPeCae2n6n4K) | Avoid sensationalism and unsupported causal detail |
 
 These URLs are editorial leads; a human must inspect the specific cited passages before marking individual claims `verified`. No source access dates or reviewer signatures have been invented.
+
+## Source spot-check log (2026-10-19)
+
+The following pages were opened for source-level cross-checking. This is **not** a claim-level editorial approval and does not imply the underlying imported F1DB metrics have been reconciled.
+
+| Exact fact | Source URL | Location / observation | Result |
+| --- | --- | --- | --- |
+| Three world titles: 1988, 1990, 1991 | https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ | Hall of Fame heading | Source supports claim |
+| 41 wins, 65 poles, 80 podiums, 161 starts | https://www.formula1.com/en/latest/article/vital-statistics-ayrton-senna-edition.3FeFGQfeljXvziRTfVuUYF.3FeFGQfeljXvziRTfVuUYF | Career statistics table | Source supports stated definitions |
+| Toleman, Lotus, McLaren, Williams | https://www.formula1.com/en/latest/article/vital-statistics-ayrton-senna-edition.3FeFGQfeljXvziRTfVuUYF.3FeFGQfeljXvziRTfVuUYF | “Teams raced for” | Source supports claim |
+| First win in Portugal, 1985 | https://www.formula1.com/en/latest/article/vital-statistics-ayrton-senna-edition.3FeFGQfeljXvziRTfVuUYF.3FeFGQfeljXvziRTfVuUYF | “First win” | Source supports claim |
+| Eight wins in 1988 and 1988 championship | https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ | McLaren 1988 paragraph | Source supports claim |
+| Senna finished first in 1988 championship | https://www.formula1.com/en/results/1988/drivers | Driver standings, first row | Source supports claim; historic dropped-score points rules require separate explanation |
+| Six Monaco victories, years 1987 and 1989–1993 | https://www.formula1.com/en/latest/article/vital-statistics-ayrton-senna-edition.3FeFGQfeljXvziRTfVuUYF.3FeFGQfeljXvziRTfVuUYF | Records section | Source supports claim |
+| 1984 Monaco second place in wet conditions | https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ | Early-career paragraph | Source supports claim |
+
+**Source-quality caution:** Formula1.com is an authoritative historical publisher but is not independent corroboration of itself across multiple articles. The FIA PDF links above are *candidate* references, not checked in this spot-check. One Formula1.com retrospective currently labels the first Portugal victory “1991” in a subheading despite describing the 1985 season in its text; prefer the explicit 1985 career-statistics entry and race results rather than reproducing that typo. Do not use its heading as evidence.
+
+**Content caveat:** the 1988 championship points table reflects period-specific counting rules; do not imply raw totals directly determine the champion without explaining those rules. Rivalry accounts, responsibility for collisions, and causal interpretations remain editorially sensitive and require independent sources and attribution.
 
 ## Українська — чернетка
 
