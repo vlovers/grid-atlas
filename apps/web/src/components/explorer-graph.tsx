@@ -29,7 +29,9 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
     setSelectedKey(key);
     const url = new URL(window.location.href);
     url.searchParams.set('selected', nodeId);
-    window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+    // A full navigation makes the query the canonical selection; Next's router
+    // can otherwise restore its previous search params after replaceState.
+    window.location.assign(url.pathname + url.search + url.hash);
   };
   const selected = graph.edges.find(edge => edge.key === selectedKey) ?? graph.edges[0];
   const selectedNode = selected && graph.nodes.find(node => node.key === selected.to);
