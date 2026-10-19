@@ -11,6 +11,8 @@ on:
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
       - 'scripts/select-real-archive-stress.py'
+      - 'scripts/verify-media-identities.py'
+      - 'docs/media/pilot-identities.json'
       - '.github/workflows/real-archive.yml'
   push:
     branches: [main]
@@ -24,6 +26,8 @@ on:
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
       - 'scripts/select-real-archive-stress.py'
+      - 'scripts/verify-media-identities.py'
+      - 'docs/media/pilot-identities.json'
       - '.github/workflows/real-archive.yml'
   workflow_dispatch:
 permissions:
@@ -60,6 +64,8 @@ jobs:
           mkdir -p /tmp/grid-atlas-f1db
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+      - name: Verify media subject and historical circuit-layout references
+        run: python3 scripts/verify-media-identities.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt
       - name: Import genuine pinned F1DB release twice into ephemeral PostgreSQL
         run: |
           bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt

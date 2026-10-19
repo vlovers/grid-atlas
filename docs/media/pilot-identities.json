@@ -1,0 +1,68 @@
+{
+  "source": {
+    "slug": "f1db",
+    "release": "v2026.17.0",
+    "artifact": "f1db-json-splitted.zip",
+    "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8"
+  },
+  "subjects": [
+    {
+      "type": "driver",
+      "id": "ayrton-senna",
+      "name": "Ayrton Senna da Silva",
+      "record_sha256": "c702aaf24f3a08f4995459cfafa5d361f8412e6734f1ac260b3e9cce15411052"
+    },
+    {
+      "type": "driver",
+      "id": "juan-manuel-fangio",
+      "name": "Juan Manuel Fangio Déramo",
+      "record_sha256": "697b47dba1d0a09ed9512dc76386cf774247dfcad49f1c213b190489a04c4512"
+    },
+    {
+      "type": "driver",
+      "id": "lewis-hamilton",
+      "name": "Lewis Carl Davidson Hamilton",
+      "record_sha256": "4723a33cffa341f56090f0931360484da0ddb9a512cdce5d68b1614272f4feaf"
+    },
+    {
+      "type": "constructor",
+      "id": "ferrari",
+      "name": "Scuderia Ferrari",
+      "record_sha256": "3e62239831d07ba8fab0e37e32a9f22b89f15df7ee24ac23fffca63551b32fd6"
+    },
+    {
+      "type": "circuit",
+      "id": "monaco",
+      "name": "Circuit de Monaco",
+      "record_sha256": "0084b81d28ae9ab37f23ad07952e9a1904d1754421366e48655123f0c99e9576"
+    },
+    {
+      "type": "race",
+      "id": "394",
+      "name": "Grand Prix de Monaco 1984",
+      "record_sha256": "2b9adfc90140726008c651ce53d1a4399b406a3f9d9b57c8b13da2ab484cde98"
+    },
+    {
+      "type": "race",
+      "id": "941",
+      "name": "Formula 1 Grand Prix de Monaco 2016",
+      "record_sha256": "46289c0b974fbeb9e25357854e725febf08ea87d7caea8b2c74df1a6b59b1426"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "monaco-4",
+      "circuit_id": "monaco",
+      "race_ids": [
+        "394"
+      ]
+    },
+    {
+      "id": "monaco-6",
+      "circuit_id": "monaco",
+      "race_ids": [
+        "941"
+      ]
+    }
+  ]
+}

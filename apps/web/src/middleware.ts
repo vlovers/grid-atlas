@@ -2,5 +2,6 @@ import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 
 export default createMiddleware(routing);
-// Keep discovery endpoints at the origin root; other dotted paths still 404.
-export const config = { matcher: '/((?!api(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|sitemap\\.xml$|robots\\.txt$).*)' };
+// Keep static reviewed media and discovery endpoints at the origin root.
+// Other dotted paths still receive the existing localized not-found behavior.
+export const config = { matcher: '/((?!api(?:/|$)|media(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|sitemap\\.xml$|robots\\.txt$).*)' };
