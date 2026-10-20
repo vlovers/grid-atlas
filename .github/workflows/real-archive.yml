@@ -10,7 +10,8 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
-      - 'scripts/reconcile-1988-f1db.py'\n      - 'scripts/build-1988-editorial-cards.py'
+      - 'scripts/reconcile-1988-f1db.py'
+      - 'scripts/build-1988-editorial-cards.py'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -27,7 +28,8 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
-      - 'scripts/reconcile-1988-f1db.py'\n      - 'scripts/build-1988-editorial-cards.py'
+      - 'scripts/reconcile-1988-f1db.py'
+      - 'scripts/build-1988-editorial-cards.py'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -76,7 +78,9 @@ jobs:
           bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt
       - name: Verify 1988 Senna-Prost race evidence against actual pinned import
         run: python3 scripts/reconcile-1988-f1db.py --output /tmp/grid-atlas-1988-parity.json
-      - name: Build 16 nonpublic 1988 editorial evidence cards\n        run: python3 scripts/build-1988-editorial-cards.py --parity /tmp/grid-atlas-1988-parity.json --output /tmp/grid-atlas-1988-editorial-cards.json\n      - name: Build production API
+      - name: Build 16 nonpublic 1988 editorial evidence cards
+        run: python3 scripts/build-1988-editorial-cards.py --parity /tmp/grid-atlas-1988-parity.json --output /tmp/grid-atlas-1988-editorial-cards.json
+      - name: Build production API
         run: pnpm --filter @grid-atlas/api build
       - name: Cross-check real archive SQL and reciprocal API
         run: |
