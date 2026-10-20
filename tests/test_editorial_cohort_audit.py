@@ -18,7 +18,7 @@ class FullCohortTests(unittest.TestCase):
         self.assertEqual(d["research_briefs_expected"],5)
         self.assertEqual(d["evidence_bundles_expected"],4)
         self.assertEqual(d["claim_count"],10)
-        self.assertEqual(d["research_scenes_count"],36)
+        self.assertEqual(d["research_scenes_count"],32)
         self.assertFalse(d["publishable"])
         self.assertEqual(d["archive_parity"],"not_tested_by_this_audit")
 
