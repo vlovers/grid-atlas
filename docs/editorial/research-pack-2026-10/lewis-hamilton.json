@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "editorial_research_brief",
+  "subject": {
+    "type": "driver",
+    "canonical_lookup_slug": "lewis-hamilton",
+    "display_name": "Lewis Hamilton",
+    "identity_status": "requires_f1db_join"
+  },
+  "visibility": "internal_only",
+  "editorial_status": "research_required",
+  "locale_policy": [
+    "uk",
+    "en"
+  ],
+  "hero_angle": {
+    "en": "Change across generations of Formula 1",
+    "uk": "Зміни крізь покоління Формули-1"
+  },
+  "chapters": [
+    {
+      "chapter_id": "lewis-hamilton-chapter-1",
+      "heading": {
+        "en": "Debut season",
+        "uk": "Дебютний сезон"
+      },
+      "research_prompts": [
+        "earliest imported race entries",
+        "season constructor association"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "lewis-hamilton-chapter-2",
+      "heading": {
+        "en": "The title years",
+        "uk": "Роки боротьби за титули"
+      },
+      "research_prompts": [
+        "race-level milestones",
+        "official championships as separate source"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "lewis-hamilton-chapter-3",
+      "heading": {
+        "en": "Teams and eras",
+        "uk": "Команди й епохи"
+      },
+      "research_prompts": [
+        "recorded constructor-year evidence",
+        "technical/regulatory source candidates"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "lewis-hamilton-chapter-4",
+      "heading": {
+        "en": "Records with definitions",
+        "uk": "Рекорди та методологія"
+      },
+      "research_prompts": [
+        "race-result derived wins",
+        "official record definitions separately"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    }
+  ],
+  "historical_assertions": [],
+  "source_candidates": [
+    {
+      "publisher": "F1DB",
+      "url": "https://github.com/f1db/f1db",
+      "scope": "pinned result record and identity only",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "FIA",
+      "url": "https://www.fia.com/",
+      "scope": "official documents, championship standings and regulations when identified",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "scope": "dated historical coverage, independently assessed",
+      "review_status": "not_checked_in_this_batch"
+    }
+  ],
+  "media": {
+    "status": "no_asset_approved_here",
+    "candidate_lookup": "docs/media/candidates.json",
+    "publication_allowed": false
+  },
+  "limitations": [
+    "Pinned archive is not live and may differ from latest race results.",
+    "Never treat derived race points as official championships.",
+    "Contemporary assertions require dated primary sources."
+  ],
+  "approval": {
+    "historical_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_rights_review": false,
+    "publication_allowed": false
+  }
+}
