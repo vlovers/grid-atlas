@@ -22,7 +22,7 @@ The aggregated report contains a list of failures, a **nonpublishable** status, 
 - Five research briefs with UK/EN headings.
 - One Senna/Prost bundle and three independently bounded season evidence bundles.
 - Ten source-located claim observations in total, each still `needs_human_review`.
-- Thirty-six research scenes, none representing approved prose.
+- Thirty-two research scenes, none representing approved prose.
 - No approved photos, invented human reviewers, implicit live data, legal team succession or official starts.
 - Stable source IDs within bundles and unique claim IDs across bundles.
 
