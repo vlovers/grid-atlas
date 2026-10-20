@@ -1,0 +1,105 @@
+.art {
+  --art-color:#ef604f;
+  --art-light:#ffd0ae;
+  --art-dark:#6f272e;
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  isolation:isolate;
+}
+.mint {
+  --art-color:#74c5be;
+  --art-light:#d6ffe9;
+  --art-dark:#214b5f;
+}
+.violet {
+  --art-color:#9882cb;
+  --art-light:#ede0ff;
+  --art-dark:#3d325a;
+}
+.gold {
+  --art-color:#e4b25f;
+  --art-light:#fff1bd;
+  --art-dark:#75522e;
+}
+.art svg {
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  position:relative;
+  z-index:1;
+}
+.texture {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  background-image:repeating-linear-gradient(0deg,#ffffff04 0,#ffffff04 1px,transparent 1px,transparent 3px),radial-gradient(#f3f0e818 .6px,transparent .6px);
+  background-size:auto,5px 5px;
+  mix-blend-mode:soft-light;
+  opacity:.65;
+}
+.machine {
+  transform-origin:600px 400px;
+}
+.apex svg {
+  transform:scale(1.22);
+}
+.helmet svg {
+  transform:scale(1.18);
+}
+@media(prefers-reduced-motion:no-preference) {
+  .speed {
+    animation:streak 7s linear infinite;
+  }
+  .machine {
+    animation:float 9s ease-in-out infinite;
+  }
+  .apexLines {
+    stroke-dasharray:2000;
+    animation:trace 9s ease-out 1;
+  }
+  .helmetShape {
+    animation:breathe 12s ease-in-out infinite;
+  }
+  @keyframes streak {
+    from {
+      transform:translateX(-90px);
+      opacity:.15;
+    }
+    50% {
+      opacity:.7;
+    }
+    to {
+      transform:translateX(90px);
+      opacity:.15;
+    }
+  }
+  @keyframes float {
+    50% {
+      translate:0 -14px;
+    }
+  }
+  @keyframes trace {
+    from {
+      stroke-dashoffset:1700;
+    }
+    to {
+      stroke-dashoffset:0;
+    }
+  }
+  @keyframes breathe {
+    50% {
+      translate:0 -9px;
+    }
+  }
+}
+@media(forced-colors:active) {
+  .art {
+    opacity:.15;
+  }
+  .texture {
+    display:none;
+  }
+}
