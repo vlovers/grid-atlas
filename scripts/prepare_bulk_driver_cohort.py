@@ -16,7 +16,15 @@ def existing_ids(directory):
     for file in sorted(directory.glob("*.json")):
         payload=json.loads(file.read_text(encoding="utf-8"))
         if isinstance(payload,dict) and isinstance(payload.get("drivers"),list):
-            used.update(payload["drivers"])
+            for driver in payload["drivers"]:
+                if isinstance(driver, str):
+                    used.add(driver)
+                elif isinstance(driver, dict):
+                    canonical_id = driver.get("driver_id") or driver.get("id")
+                    if isinstance(canonical_id, str):
+                        used.add(canonical_id)
+                else:
+                    raise ValueError(f"Unexpected driver entry in {file}")
     return used
 
 def plan(driver_rows, results,excluded,size=50):
