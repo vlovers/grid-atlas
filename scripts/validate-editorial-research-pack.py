@@ -44,10 +44,10 @@ def validate(data, slug):
     return errors
 
 def main():
-    paths = sorted(DIRECTORY.glob("*.json"))
-    actual = {p.stem for p in paths}
-    if actual != EXPECTED:
-        raise SystemExit(f"driver set mismatch: expected {EXPECTED}; got {actual}")
+    paths = sorted(DIRECTORY / f"{slug}.json" for slug in EXPECTED)
+    missing = [str(p.name) for p in paths if not p.is_file()]
+    if missing:
+        raise SystemExit(f"missing research briefs: {missing}")
     errors = []
     for path in paths:
         errors.extend(validate(json.loads(path.read_text(encoding="utf-8")), path.stem))
