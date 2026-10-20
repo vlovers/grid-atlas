@@ -11,6 +11,7 @@ for (const locale of ['uk', 'en'] as const) {
       expect(identity).toBeTruthy();
       const career = (await (await request.get(`${api}/api/drivers/${identity.id}/career?locale=${locale}`)).json()).data[0];
       const seasons = (await (await request.get(`${api}/api/drivers/${identity.id}/seasons`)).json()).data;
+      const errors: string[] = []; page.on('pageerror', error => errors.push(error.message));
       const remote: string[] = [];
       page.on('request', r => { if (new URL(r.url()).hostname !== '127.0.0.1') remote.push(r.url()); });
       await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -31,6 +32,7 @@ for (const locale of ['uk', 'en'] as const) {
       expect((await request.get(`${api}/api/drivers/${identity.id}/article?locale=${locale}`)).status()).toBe(404);
       expect(await profile.innerText()).not.toContain('By the opening of the 1988 Formula One season');
       expect(remote).toEqual([]);
+      expect(errors).toEqual([]);
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
       await page.screenshot({ path: testInfo.outputPath(`${subject}-${locale}.png`), fullPage: true, scale: 'css' });
       if (subject === 'ayrton-senna') console.log(`Senna ${locale} ${isMobile ? 'mobile' : 'desktop'} closed archive height:`, await page.evaluate(() => document.documentElement.scrollHeight));

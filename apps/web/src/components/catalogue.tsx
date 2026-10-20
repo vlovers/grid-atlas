@@ -1,3 +1,5 @@
+import { StoryHeader } from '@/components/stories/story-header';
+import { storyCopy } from '@/components/stories/copy';
 import { atlasCopy } from '@/components/atlas/copy';
 import styles from './atlas/catalogue.module.css';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -26,8 +28,8 @@ export default async function Catalogue({ path, title, description, searchParams
   const next = records.length === PAGE_SIZE && offset + PAGE_SIZE <= MAX_OFFSET
     && (await getData<Driver>(`/api${path}?${query}`)).length > 0;
   return <section className={`page ${driverIndex ? styles.catalogue : ''}`} data-testid={driverIndex ? 'driver-catalogue' : undefined}>
-    <header className={driverIndex ? styles.heading : undefined}><div><p className="eyebrow">{driverIndex ? copy.index : t('archive')} / GRID ATLAS</p><h1>{title}</h1></div>
-    <p className="lead">{driverIndex ? copy.indexLead : description}</p></header>
+    {driverIndex ? <header className={styles.heading}><div><p className="eyebrow">{copy.index} / GRID ATLAS</p><h1>{title}</h1></div><p className="lead">{copy.indexLead}</p></header>
+      : <StoryHeader title={title} eyebrow={path === '/circuits' ? storyCopy[locale as 'uk' | 'en'].circuits : storyCopy[locale as 'uk' | 'en'].constructorHeader} locale={locale as 'uk' | 'en'} kind={path === '/circuits' ? 'apex' : 'velocity'} lead={description} />}
     <form className={`catalogue-search ${driverIndex ? styles.search : ''}`} action={cataloguePath} role="search">
       <label htmlFor="catalogue-query">{t('searchLabel')}</label>
       <div className="actions"><input id="catalogue-query" name="q" type="search" defaultValue={q} maxLength={100} placeholder={t('searchPlaceholder')} />

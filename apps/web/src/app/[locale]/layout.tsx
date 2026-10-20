@@ -7,6 +7,7 @@ import { routing } from '@/i18n/routing';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from '@/i18n/language-switcher';
 import { siteOrigin } from '@/lib/seo';
+import { StoryExperience } from '@/components/stories/experience';
 import { AtlasNavigation } from '@/components/atlas/navigation';
 import styles from '@/components/atlas/shell.module.css';
 import '../tokens.css';
@@ -35,6 +36,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <Suspense><LanguageSwitcher /></Suspense>
     </header>
     <main id="content" tabIndex={-1}>{children}</main>
+    <StoryExperience locale={locale} />
     <footer className={styles.footer}><div><strong>GRID ATLAS</strong><p>{t('footer')}</p></div><div><p>{t('dataCredit')}</p><Link href="/sources">{t('sourceLink')} ↗</Link></div></footer>
   </NextIntlClientProvider></body></html>;
 }
