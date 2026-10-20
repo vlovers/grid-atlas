@@ -10,6 +10,12 @@ DRIVERS=("ayrton-senna","alain-prost")
 def build_cards(timeline,report):
     problems=[]
     if report.get("problems"):problems.append("reconciliation reported discrepancies")
+    if report.get("publishable") is not False or report.get("historical_source_human_review") is not False or report.get("championship_points_reconciled") is not False:
+        problems.append("parity report must retain explicit unapproved provenance flags")
+    if report.get("race_records_compared") != 16:
+        problems.append("parity report must cover exactly 16 imported records")
+    if report.get("winner_matches") != {"ayrton-senna":8,"alain-prost":7,"gerhard-berger":1}:
+        problems.append("winner reconciliation summary differs")
     if report.get("season")!=1988 or report.get("import")!="F1DB v2026.17.0":problems.append("wrong archive/season")
     rows=report.get("rows",[])
     expected=timeline.get("races",[])
@@ -52,6 +58,8 @@ def build_cards(timeline,report):
             "historical_narrative":None
         })
     if len(cards)!=16:problems.append("card coverage incomplete")
+    ids=[c["source_race_external_id"] for c in cards]
+    if len(set(ids)) != len(ids):problems.append("duplicate canonical race references")
     if problems:raise ValueError("; ".join(problems))
     return {
         "schema_version":1,"type":"nonpublic_race_card_research_bundle",
