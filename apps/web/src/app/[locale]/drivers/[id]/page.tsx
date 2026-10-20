@@ -105,12 +105,24 @@ export default async function DriverProfile({ params }: Props) {
         { id: 'points', label: t('goldenRecordedPoints'), value: career.summary.recorded_points },
       ]}
     />}
-    {career && <CareerTimeline
-      label={t('goldenCareer')}
-      entries={timeline}
-      emptyLabel={t('noTeams')}
-      note={t('goldenCareerScope')}
-    />}
+    {career && <section className={styles.careerOverview} aria-label={locale === 'uk' ? 'Огляд кар’єри' : 'Career overview'}>
+      <div className={styles.sectionHeading}>
+        <div><p className={styles.kicker}>{locale === 'uk' ? 'ШЛЯХ ПІЛОТА' : 'DRIVER JOURNEY'}</p>
+          <h2>{t('goldenCareer')}</h2></div>
+        <p>{locale === 'uk' ? 'Команди й сезони на основі результатів F1DB' : 'Teams and seasons based on F1DB results'}</p>
+      </div>
+      <ol className={styles.eraList}>{Array.from(new Map(career.participation.map(row =>
+        [row.related_id, { id: row.related_id, name: row.related_name, years: career.participation.filter(item => item.related_id === row.related_id).map(item => item.year) }]
+      )).values()).map(team => <li key={team.id}>
+        <span className={styles.eraYears}>{Math.min(...team.years)}{Math.max(...team.years) === Math.min(...team.years) ? '' : '–' + Math.max(...team.years)}</span>
+        <strong>{team.name}</strong>
+        <Link href={`/constructors/${team.id}`} aria-label={team.name}>{locale === 'uk' ? 'Команда' : 'Team'} ↗</Link>
+      </li>)}</ol>
+      <details className={styles.fullCareer}>
+        <summary>{locale === 'uk' ? 'Показати повну хронологію за сезонами' : 'Show full season-by-season timeline'} ({timeline.length})</summary>
+        <CareerTimeline label={t('goldenCareer')} entries={timeline} emptyLabel={t('noTeams')} note={t('goldenCareerScope')} />
+      </details>
+    </section>}
     {career && <RelatedJourneys
       label={t('goldenJourneys')}
       items={career.participation.slice(0, 3).map(row => ({
