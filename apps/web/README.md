@@ -40,11 +40,17 @@ running: Next 15 development and production builds share `.next`.
 
 API requests run on the Next.js server and do not need browser CORS. They have an eight-second timeout and no persistent fetch cache, so rejected/revoked lineage is not retained for an hour. Missing API profiles render not-found; outages have a retry state.
 
-Implemented: searchable/paginated drivers, constructors and circuits; profiles and career/season timelines; season calendars and result-derived lineups; circuit race history; named race results with profile links; source release and attribution; verified-only lineage list and interactive map with filters, evidence, keyboard selection and zoom. The interface is Ukrainian-first (`/uk`) with English (`/en`), preserving the existing visual design. Unprefixed URLs default to Ukrainian independently of browser language or cookies. The language switcher preserves the current path, canonical IDs and search parameters.
+Implemented: searchable/paginated drivers, constructors and circuits; profiles and career/season timelines; season calendars and result-derived lineups; circuit race history; named race results with profile links; source release and attribution; verified-only lineage list and interactive map with filters, evidence, keyboard selection and zoom. The interface is Ukrainian-first (`/uk`) with English (`/en`). The shared visual design is still undergoing redesign; new driver-profile navigation and editorial hero foundations do not constitute a site-wide visual refresh. Unprefixed URLs default to Ukrainian independently of browser language or cookies. The language switcher preserves the current path, canonical IDs and search parameters.
 
 `pnpm lint`, `pnpm typecheck`, `pnpm build` and `DATABASE_URL=postgresql://... pnpm test:browser` run from the root. Browser tests start production servers on ports 3339–3341 and use real PostgreSQL with isolated, synthetic fixtures on desktop/mobile. Trace/screenshots are retained on failure.
 
 Not yet implemented: official standings and historical scoring rules, circuit configurations, live updates, additional languages or production hosting. Editorial story/biography and licensed-media infrastructure is present, but draft biographies and unapproved or unlicensed media are not public content. Do not imply that every driver has a published biography or image; publication remains gated by editorial review and rights clearance. Lineage can be empty until independently approved claims exist. Do not manufacture verified data for the UI.
+
+## History Explorer and Time Machine
+
+The merged History Explorer exposes bounded driver–constructor seasonal connections, keyboard-operable graph exploration, a paginated accessible list beyond the initial graph cap, reciprocal navigation and exact imported race-evidence drilldown. The bilingual `/uk/time-machine` and `/en/time-machine` pages compare recorded associations between two seasons for a selected driver or constructor. Links preserve focus and years. Counts describe imported result records and distinct recorded races, not official starts, contracts or championship standings. See [Time Machine API contract](../../docs/api/time-machine-comparison.md) and [real-import visual acceptance checklist](../../docs/product/time-machine-real-import-journey.md).
+
+Driver profiles also have section navigation, compact career journeys and foundations for a publication-gated story reader and licensed-media hero. Unreviewed editorial stories and unlicensed media must not be presented as published. Senna Showcase and the overall redesign remain separate workstreams.
 
 ## Localization
 
