@@ -88,7 +88,7 @@ hosting readiness.
 - The measured pinned import contains 77 seasons, 917 drivers, 187 constructors, 830 entrants, 78 circuits, 1,172 races and 27,665 result rows. See [audit evidence](docs/beta-audit.md).
 - Drivers, constructors and entrants are different identities. F1DB's constructor grouping is not proof of corporate continuity.
 - Career and season figures summarize imported race-result rows. Driver points exclude sprint standings calculations and historical dropped-score rules. Constructor points are sums of driver-result points, not official championship totals; shared-car victories count once per constructor race.
-- Circuit layouts, championship standings, biographies, photographs and live timing are not implemented.
+- Circuit layouts, official championship standings and live timing are not implemented. Driver editorial/story and licensed-media foundations exist, but public biographies and photographs require separate review, approval and rights clearance; do not treat draft content or registry entries as published assets.
 - The localized `/uk/sources` and `/en/sources` pages show registered releases, checksums, attribution and statistical limitations. F1DB data is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); Grid Atlas selects fields and derives summaries. No licensed F1 logos or photos are bundled.
 - Only verified, cited lineage edges appear in the network. An empty graph is an honest editorial state. [Independent review is required](docs/data-sources/lineage-publication-runbook.md).
 
