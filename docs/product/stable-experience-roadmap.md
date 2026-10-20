@@ -18,11 +18,13 @@ This document records merged GitHub work and known blockers, not an approval to 
 | Time Machine bounded season comparison API and boundary tests | #117, #119 | Read-only observed results only; UI under review (#124) |
 | Paginated complete association list beyond initial radial graph | #120 | 34-association 1960 stress case: all accessible; SVG still limited to 10 |
 | UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
+| Driver profile visual/navigation foundations | #140–#144 | Story reader is private by default; licensed-media registry does not imply approved images; accessible section navigation and compact career overview merged |
 
 ## Editorial and interface drafts (not merged)
 
 - [PR #124](https://github.com/vlovers/grid-atlas/pull/124): bilingual Time Machine UI **Draft**, not shipped or included in main until reviewed and tested. PR #118 is a competing earlier draft; do not merge both.
 - [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
+- [Issue #145](https://github.com/vlovers/grid-atlas/issues/145): Senna showcase implementation in progress on `feat/senna-showcase-v1`; do not mark it shipped until its changes are pushed, reviewed and merged.
 - [PR #59](https://github.com/vlovers/grid-atlas/pull/59): **closed, superseded without merge** after retaining distinct useful notes in the [legacy specification review](legacy-explorer-spec-review.md). Old API sketches are not current contracts.
 
 ## Prioritized work items
