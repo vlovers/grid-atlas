@@ -70,7 +70,13 @@ export default async function DriverProfile({ params }: Props) {
         <LicensedMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'driver', id: driver.external_id }} label={driver.name} locale={locale === 'en' ? 'en' : 'uk'} />
       </div>
     </header>
-    {article && <section aria-label={article.title} className="editorial-article">
+    <nav className={styles.sectionNav} aria-label={locale === 'uk' ? 'Розділи профілю' : 'Profile sections'}>
+      {article && <a href="#driver-biography">{locale === 'uk' ? 'Біографія' : 'Biography'} <span aria-hidden="true">↘</span></a>}
+      {career && <a href="#driver-career">{locale === 'uk' ? 'Кар’єра' : 'Career'} <span aria-hidden="true">↘</span></a>}
+      <a href="#driver-seasons">{locale === 'uk' ? 'Результати сезонів' : 'Season results'} <span aria-hidden="true">↘</span></a>
+      <a href="#driver-teams">{locale === 'uk' ? 'Команди' : 'Teams'} <span aria-hidden="true">↘</span></a>
+    </nav>
+    {article && <section id="driver-biography" aria-label={article.title} className="editorial-article">
       <h2>{article.title}</h2>
       {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, index) =>
         <p key={index}>{paragraph}</p>)}
@@ -86,6 +92,7 @@ export default async function DriverProfile({ params }: Props) {
         {locale === 'uk' ? 'Дослідити зв’язки за сезоном →' : 'Explore season connections →'}
       </Link>
     </p>}
+    <div id="driver-career" className={styles.sectionAnchor} />
     {career && <QuickFacts
       label={t('goldenFacts')}
       unavailableLabel={t('goldenUnknown')}
@@ -115,11 +122,11 @@ export default async function DriverProfile({ params }: Props) {
       }))}
       emptyLabel={t('noTeams')}
     />}
-    <h2>{t('seasonResults')}</h2>
+    <h2 id="driver-seasons" className={styles.sectionAnchor}>{t('seasonResults')}</h2>
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>{t('season')}</th><th>{t('appearances')}</th><th>{t('wins')}</th><th>{t('podiums')}</th><th>{t('points')}</th></tr></thead><tbody>{seasons.map(s =>
       <tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.starts}</td><td>{s.wins}</td><td>{s.podiums}</td><td>{s.points}</td></tr>
     )}</tbody></table></div> : <p>{t('noResults')}</p>}
-    <h2>{t('seasonTeams')}</h2>
+    <h2 id="driver-teams" className={styles.sectionAnchor}>{t('seasonTeams')}</h2>
     <p>{t('seasonTeamsLead')}</p>
     {teams.length ? <div className="table-scroll"><table><thead><tr><th>{t('season')}</th><th>{t('constructor')}</th><th>{t('races')}</th><th>{t('wins')}</th></tr></thead><tbody>{teams.map(team=>
       <tr key={`${team.year}-${team.constructor_id}`}><td><Link href={`/seasons/${team.year}`}>{team.year}</Link></td><td><Link href={`/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</Link></td><td>{team.races}</td><td>{team.wins}</td></tr>
