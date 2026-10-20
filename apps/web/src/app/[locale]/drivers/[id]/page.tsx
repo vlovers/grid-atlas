@@ -1,3 +1,7 @@
+import { LicensedMedia } from '@/components/media/licensed-media';
+import type { MediaAsset } from '@/components/media/registry';
+import mediaPublication from '@/components/media/publication.json';
+import styles from './driver-hero.module.css';
 import { QuickFacts, CareerTimeline, RelatedJourneys } from '@/components/discovery';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -49,9 +53,23 @@ export default async function DriverProfile({ params }: Props) {
     destination: { href: `/seasons/${row.year}`, label: t('goldenExploreSeason') },
   })) ?? [];
   return <section className="page">
-    <p className="eyebrow">{t('archive')} / {t('driver')} · {driver.external_id}</p>
-    <h1>{driver.name}</h1>
-    <p className="lead">{t('driverLead')}</p>
+    <header className={styles.hero}>
+      <div className={styles.heroCopy}>
+        <p className="eyebrow">{t('archive')} / {t('driver')} · {driver.external_id}</p>
+        <h1>{driver.name}</h1>
+        <p className="lead">{t('driverLead')}</p>
+        <div className={styles.metrics} aria-label={locale === 'uk' ? 'Показники архіву' : 'Archive indicators'}>
+          <div><strong>{driver.seasons}</strong><span>{t('seasons')}</span></div>
+          <div><strong>{driver.wins}</strong><span>{t('wins')}</span></div>
+          <div><strong>{driver.podiums}</strong><span>{t('podiums')}</span></div>
+        </div>
+        <p className={styles.scope}>{t('goldenArchiveScope')}</p>
+        {driver.first_season !== null && <Link className={styles.jump} href={`/seasons/${driver.first_season}`}>{locale === 'uk' ? 'Почати з першого сезону' : 'Start with first recorded season'} ↗</Link>}
+      </div>
+      <div className={styles.visual}>
+        <LicensedMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'driver', id: driver.external_id }} label={driver.name} locale={locale === 'en' ? 'en' : 'uk'} />
+      </div>
+    </header>
     {article && <section aria-label={article.title} className="editorial-article">
       <h2>{article.title}</h2>
       {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, index) =>
