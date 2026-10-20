@@ -91,3 +91,11 @@ test('Time Machine shows a localized error state when the API is unavailable', a
   await expect(page.locator('p[role="alert"]')).toContainText('temporarily unavailable');
   await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible();
 });
+
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: unsupported comparison entity kinds do not silently fall back to driver`, async ({ page }) => {
+    await page.goto(`/${locale}/time-machine?kind=team&id=1&from=1950&to=1951`);
+    await expect(page.getByRole('heading', { level: 1, name: locale === 'uk' ? 'Сторінку не знайдено' : 'Page not found' })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 2, name: 'driver-a' })).toHaveCount(0);
+  });
+}

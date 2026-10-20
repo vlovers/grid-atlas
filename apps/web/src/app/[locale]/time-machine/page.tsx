@@ -89,7 +89,8 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
   const t = await getTranslations('UI');
   const query = await searchParams;
   const kindValue = one(query.kind) ?? 'driver';
-  const kind = kindValue === 'constructor' ? 'constructor' : 'driver';
+  if (kindValue !== 'driver' && kindValue !== 'constructor') notFound();
+  const kind = kindValue;
   const id = one(query.id);
   const search = (one(query.q) ?? '').trim().slice(0, 100);
   const requestedFrom = one(query.from);
@@ -183,7 +184,6 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
         <Link href={kind === 'driver' ? `/explorer/drivers/${id}?year=${toYear}` : `/explorer/constructors/${id}?year=${toYear}`}>{t('timeMachineGraphFocus', { year: toYear })} ↗</Link>
       </nav>
     </>}
-    {!comparison && !compareError && id && entityValid && <p className={styles.empty}>{t('timeMachineLoading')}</p>}
   </section>;
 }
 
