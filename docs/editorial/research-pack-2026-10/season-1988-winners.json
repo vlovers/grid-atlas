@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "kind": "historical_race_winner_research_series",
+  "season": 1988,
+  "visibility": "internal_only",
+  "publication_allowed": false,
+  "source_context_status": "machine_transcribed_pending_human_review",
+  "last_accessed": "2026-10-21",
+  "source": {
+    "publisher": "Formula 1",
+    "title": "1988 RACE RESULTS",
+    "url": "https://www.formula1.com/en/results/1988/races",
+    "locator": "All races, winner table, 16 rows"
+  },
+  "standing_source": {
+    "publisher": "Formula 1",
+    "title": "1988 Drivers' Standings",
+    "url": "https://www.formula1.com/en/results/1988/drivers",
+    "locator": "first and second rows"
+  },
+  "races": [
+    {
+      "round": 1,
+      "grand_prix": "Brazil",
+      "date": "1988-04-03",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 2,
+      "grand_prix": "San Marino",
+      "date": "1988-05-01",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 3,
+      "grand_prix": "Monaco",
+      "date": "1988-05-15",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 4,
+      "grand_prix": "Mexico",
+      "date": "1988-05-29",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 5,
+      "grand_prix": "Canada",
+      "date": "1988-06-12",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 6,
+      "grand_prix": "Detroit",
+      "date": "1988-06-19",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 7,
+      "grand_prix": "France",
+      "date": "1988-07-03",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 8,
+      "grand_prix": "Great Britain",
+      "date": "1988-07-10",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 9,
+      "grand_prix": "Germany",
+      "date": "1988-07-24",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 10,
+      "grand_prix": "Hungary",
+      "date": "1988-08-07",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 11,
+      "grand_prix": "Belgium",
+      "date": "1988-08-28",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 12,
+      "grand_prix": "Italy",
+      "date": "1988-09-11",
+      "winner_key": "gerhard-berger",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 13,
+      "grand_prix": "Portugal",
+      "date": "1988-09-25",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 14,
+      "grand_prix": "Spain",
+      "date": "1988-10-02",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 15,
+      "grand_prix": "Japan",
+      "date": "1988-10-30",
+      "winner_key": "ayrton-senna",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    },
+    {
+      "round": 16,
+      "grand_prix": "Australia",
+      "date": "1988-11-13",
+      "winner_key": "alain-prost",
+      "winner_source": "1988-race-results",
+      "individual_result_status": "not_included",
+      "race_article_review": "needs_human_review"
+    }
+  ],
+  "observed_final_standings": [
+    {
+      "position": 1,
+      "driver_key": "ayrton-senna",
+      "official_points": 90
+    },
+    {
+      "position": 2,
+      "driver_key": "alain-prost",
+      "official_points": 87
+    }
+  ],
+  "review": {
+    "human_review": false,
+    "translation_review": false,
+    "archive_parity": false,
+    "media_clearance": false
+  },
+  "limitations": [
+    "Winner rows do not represent full race classifications or official start counts.",
+    "Official standings points are not derived by summing imported result rows.",
+    "No narrative statements of collision intent, psychological cause or title-deciding incidents.",
+    "F1DB archive parity and localized article approval are not performed here."
+  ]
+}
