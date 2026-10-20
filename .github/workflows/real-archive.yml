@@ -109,6 +109,18 @@ jobs:
         run: |
           python3 scripts/render-1988-duel-preview.py --output /tmp/grid-atlas-1988-preview.html
           node scripts/check-1988-editorial-preview.mjs /tmp/grid-atlas-1988-preview.html
+      - name: Attach private 1988 editorial preview for review
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-1988-editorial-preview
+          path: |
+            /tmp/grid-atlas-1988-preview.html
+            /tmp/grid-atlas-1988-parity.json
+            /tmp/grid-atlas-1988-editorial-cards.json
+            /tmp/grid-atlas-1988-review-queue.json
+          retention-days: 7
+          if-no-files-found: error
       - name: Select a real pair for browser navigation
         run: |
           PAIR="$(psql "$DATABASE_URL" -X -t -A -v ON_ERROR_STOP=1 -c "SELECT CONCAT_WS('|',r.season_year,rr.driver_id,rr.constructor_id) FROM historical_race_results rr JOIN historical_races r ON r.id=rr.race_id GROUP BY r.season_year,rr.driver_id,rr.constructor_id ORDER BY r.season_year,rr.driver_id,rr.constructor_id LIMIT 1")"
