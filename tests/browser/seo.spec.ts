@@ -17,8 +17,8 @@ async function inspect(page: Page, html: string) {
       alternates: [...doc.querySelectorAll('link[rel="alternate"]')].map(node => [node.getAttribute('hreflang'), node.getAttribute('href')]),
       robots: [...doc.querySelectorAll('meta[name="robots"]')].map(node => node.getAttribute('content')).join(' '),
       // Next streams completed sections outside the initial <main> shell.
-      // Require the actual archive heading, never the loading fallback.\n      // Avoid coupling SEO checks to the homepage's visual CSS class names.
-      h1: doc.querySelector('main section:not([role="status"]) h1')?.textContent,
+      // Require the actual archive heading, never the loading fallback.\n      // Catalogue and profile pages can stream outside the initial main shell;\n      // the redesigned home uses a scoped CSS-module masthead.
+      h1: doc.querySelector('section.page:not([role="status"]) h1, section.hero h1, section[class*="masthead"] h1')?.textContent,
       hrefs: [...doc.querySelectorAll('a[href]')].map(node => node.getAttribute('href')),
       crumbs: [...doc.querySelectorAll('nav ol li')].map(node => node.textContent),
       jsonLd: [...doc.querySelectorAll('script[type="application/ld+json"]')].map(node => JSON.parse(node.textContent!)),
