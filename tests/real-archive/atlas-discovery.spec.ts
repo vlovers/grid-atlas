@@ -1,0 +1,57 @@
+import { test, expect } from '@playwright/test';
+import { atlasCopy } from '../../apps/web/src/components/atlas/copy';
+
+const api = 'http://127.0.0.1:3350';
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: museum discovery follows pinned identities, imported eras and a valid comparison`, async ({ page, request, isMobile }, testInfo) => {
+    const t = atlasCopy[locale];
+    const identities = (await (await request.get(`${api}/api/drivers?q=ayrton-senna&limit=10`)).json()).data;
+    const senna = identities.find((d: { external_id: string }) => d.external_id === 'ayrton-senna');
+    expect(senna).toBeTruthy();
+    const seasons = (await (await request.get(`${api}/api/seasons`)).json()).data;
+    const driverSeasons = (await (await request.get(`${api}/api/drivers/${senna.id}/seasons`)).json()).data;
+    const years: number[] = driverSeasons.map((s: { year: number }) => s.year).sort((a: number, b: number) => a - b);
+    await page.setViewportSize(isMobile ? { width: 375, height: 812 } : { width: 1440, height: 1000 });
+    const remote: string[] = [];
+    page.on('request', r => { if (new URL(r.url()).hostname !== '127.0.0.1') remote.push(r.url()); });
+    await page.goto(`/${locale}`);
+    const home = page.getByTestId('atlas-home');
+    await expect(home.getByTestId('career-signature')).toContainText(senna.name);
+    await expect(home).toContainText(new Intl.NumberFormat(locale).format(seasons.length));
+    const latest = Math.max(...seasons.map((s: { year: number }) => s.year));
+    const decade = Math.floor(latest / 10) * 10;
+    const decadeNav = home.getByRole('navigation', { name: t.decade });
+    await decadeNav.getByRole('button', { name: String(decade), exact: true }).press('Enter');
+    await expect(decadeNav.getByRole('button', { name: String(decade), exact: true })).toHaveAttribute('aria-pressed', 'true');
+    const yearNav = home.getByRole('navigation', { name: t.seasonLabel });
+    const expectedYears = seasons.filter((s: { year: number }) => s.year >= decade && s.year < decade + 10);
+    await expect(yearNav.getByRole('link')).toHaveCount(expectedYears.length);
+    await expect(yearNav.locator(`a[href="/${locale}/seasons/${latest + 1}"]`)).toHaveCount(0);
+    await yearNav.getByRole('link', { name: String(latest), exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/seasons/${latest}$`));
+    await page.goBack();
+    await expect(home).toBeVisible();
+    const form = home.locator('form[action$="/time-machine"]');
+    await expect(form.getByLabel(t.from)).toHaveValue(String(years[0]));
+    await expect(form.getByLabel(t.to)).toHaveValue(String(years.at(-1)));
+    await form.getByLabel(t.to).selectOption(String(years[1]));
+    await form.getByLabel(t.from).selectOption(String(years.at(-2)));
+    // Moving the earlier year ahead of the later year repairs the pair, never submits a reversed range.
+    await expect(form.getByLabel(t.to)).toHaveValue(String(years.at(-1)));
+    await expect(form.getByLabel(t.to).getByRole('option')).toHaveCount(1);
+    await form.getByRole('button', { name: `${t.compare} ↗`, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/time-machine\\?kind=driver&id=${senna.id}&from=${years.at(-2)}&to=${years.at(-1)}$`));
+    await expect(page.getByRole('heading', { level: 2, name: senna.name, exact: true })).toBeVisible();
+    await page.goto(`/${locale}`);
+    await page.screenshot({ path: testInfo.outputPath(`atlas-${locale}.png`), fullPage: true, scale: 'css' });
+    await home.getByLabel(t.search, { exact: true }).fill('ayrton-senna');
+    await home.getByRole('button', { name: t.searchAction }).press('Enter');
+    const catalogue = page.getByTestId('driver-catalogue');
+    await expect(catalogue.locator('.driver-grid > a')).toHaveCount(1);
+    await catalogue.getByRole('link', { name: new RegExp(senna.name) }).click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/drivers/${senna.id}$`));
+    await expect(page.getByTestId('driver-showcase').getByRole('heading', { level: 1 })).toHaveText(senna.name);
+    expect(remote).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  });
+}

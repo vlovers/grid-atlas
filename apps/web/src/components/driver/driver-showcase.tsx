@@ -1,3 +1,5 @@
+import { CareerMap } from '@/components/atlas/career-map';
+import { CareerSignature } from '@/components/atlas/career-signature';
 import { CareerTimeline } from '@/components/discovery';
 import { LicensedMedia } from '@/components/media/licensed-media';
 import type { MediaAsset } from '@/components/media/registry';
@@ -19,6 +21,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
   const years = [...new Set(seasons.map(s => s.year))].sort((a, b) => a - b);
   const selected = seasons.find(s => String(s.year) === selectedSeason) ?? peakSeasons[0] ?? seasons.at(-1);
   const eras = teamEras(career?.participation ?? []);
+  const constructorCount = new Set(career?.participation.map(row => row.related_id) ?? []).size;
   const moments = career ? raceMoments(career.milestones) : [];
   const winningMoments = moments.filter(moment => moment.labels.some(label => label === 'first_win' || label === 'last_win'));
   const featuredMoments = winningMoments.length ? winningMoments : moments;
@@ -42,16 +45,18 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         <p className={styles.kicker}>{t.archive} <span aria-hidden="true">/</span> {driver.external_id}</p>
         <p className={styles.period}><strong>{range}</strong><span>{t.period}</span></p>
         <h1>{driver.name}</h1>
-        <p className={styles.declaration}>{t.intro}</p>
+        <p className={styles.declaration}>{career && career.summary.result_entries > 0
+          ? locale === 'uk' ? `Зафіксовані сезони: ${format(career.summary.seasons)}. Різні конструктори: ${format(constructorCount)}. Простежте зв’язки між ними через записи гонок.`
+            : `Recorded seasons: ${format(career.summary.seasons)}. Distinct constructors: ${format(constructorCount)}. Follow the race records that connect them.`
+          : t.intro}</p>
         <div className={styles.actions}><a className={styles.primary} href="#driver-career">{t.begin} <span aria-hidden="true">↓</span></a>
           {compare && <a className={styles.textLink} href={`/${locale}${compare}`}>{t.compare} <span aria-hidden="true">↗</span></a>}</div>
       </div>
       <div className={styles.heroVisual}>
         <span className={styles.visualRule} aria-hidden="true" />
         {portrait ? <LicensedMedia assets={media} assetId={portrait.id} subject={{ type: 'driver', id: driver.external_id }} label={driver.name} locale={locale} />
-          : <div className={styles.portraitEmpty} role="img" aria-label={`${driver.name}: ${t.portraitPending}`}>
-            <span className={styles.portraitMark} aria-hidden="true"><i /><i /><i /></span>
-            <p>{t.portraitPending}</p><span>{t.portraitNote}</span></div>}
+          : <CareerSignature seasons={seasons} name={driver.name} locale={locale} />}
+
       </div>
       <dl className={styles.heroFacts}>
         {[{ label: t.races, value: career?.summary.races }, { label: t.wins, value: career?.summary.winning_races },
@@ -66,6 +71,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         [t.biography, 'driver-biography'], [t.statistics, 'driver-archive']].map(([label, anchor], index) =>
         <a href={`#${anchor}`} key={anchor}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{label}</a>)}
     </nav>
+
+    <CareerMap rows={career?.participation ?? []} driverId={driver.id} locale={locale} />
 
     <section id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
       <SectionHeading kicker={t.seasonKicker} title={t.seasonTitle} id="driver-season-title" note={t.seasonNote} />

@@ -1,0 +1,126 @@
+.header {
+  max-width:var(--measure);
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:16px var(--gutter);
+  position:relative;
+  border-bottom:1px solid var(--line);
+}
+.brand {
+  display:inline-flex;
+  flex-direction:column;
+  gap:0;
+  font-size:1.2rem;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-.05em;
+  min-height:44px;
+  justify-content:center;
+  flex-shrink:0;
+}
+.brand>span {
+  font-size:.6rem;
+  letter-spacing:.36em;
+  color:var(--muted);
+  font-weight:500;
+  margin-top:6px;
+}
+.brand strong span {
+  color:var(--accent);
+}
+.navigation {
+  display:flex;
+  align-items:center;
+  gap:4px 20px;
+  flex-wrap:wrap;
+}
+.navigation a {
+  font-size:.82rem;
+  color:var(--muted);
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;
+}
+.navigation a[aria-current=page] {
+  color:var(--ink);
+  border-color:var(--accent);
+}
+.navigation a:hover {
+  color:var(--ink);
+}
+.footer {
+  max-width:var(--measure);
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:36px;
+  padding:48px var(--gutter);
+  border-top:1px solid var(--line);
+  font-size:.85rem;
+  color:var(--muted);
+}
+.footer strong {
+  font-size:1.1rem;
+  color:var(--ink);
+}
+.footer p {
+  max-width:48ch;
+  line-height:1.7;
+}
+.footer>div+div {
+  justify-self:end;
+  max-width:45ch;
+}
+.footer a {
+  text-decoration:underline;
+  text-underline-offset:5px;
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  color:var(--ink);
+}
+@media(max-width:1100px) {
+  .header {
+    flex-wrap:wrap;
+    gap:8px 20px;
+  }
+  .navigation {
+    order:3;
+    width:100%;
+    gap:4px 22px;
+  }
+}
+@media(max-width:600px) {
+  .header {
+    padding-top:12px;
+    padding-bottom:8px;
+  }
+  .navigation {
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    gap:20px;
+  }
+  .navigation a {
+    white-space:nowrap;
+    font-size:.85rem;
+    flex-shrink:0;
+  }
+  .footer {
+    grid-template-columns:1fr;
+    gap:20px;
+    padding-top:36px;
+  }
+  .footer>div+div {
+    justify-self:start;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .navigation a {
+    transition:none;
+  }
+}

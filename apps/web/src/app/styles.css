@@ -37,7 +37,7 @@
 .lineage-arrow small{overflow-wrap:anywhere}
 @media(max-width:650px){.lineage-edge{grid-template-columns:minmax(0,1fr);gap:8px}.lineage-arrow span:nth-child(2){transform:rotate(90deg)}}
 
-:root{--background:#141b22;color-scheme:dark}
+:root{color-scheme:dark}
 button,input,select{font:inherit}
 button{cursor:pointer}
 button:disabled{cursor:default;opacity:.5}
@@ -63,3 +63,8 @@ input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px so
 .record{grid-template-columns:65px minmax(0,1fr) 20px}
 @media(max-width:750px){.topbar{flex-wrap:wrap;gap:14px}.topbar nav{flex-wrap:wrap;gap:4px 16px;width:100%;font-size:14px}.topbar nav a{display:inline-flex;align-items:center;min-height:44px}.record{grid-template-columns:54px minmax(0,1fr) 16px}.position{font-size:21px}.lineage-controls label{width:100%}}
 @media(max-width:750px){.mobile-hint{display:block}}
+
+/* Atlas 2 foundation. Legacy archive hooks remain for the later entity-page batch. */
+html{background:var(--background);color:var(--ink);scroll-padding-top:24px}body{font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}::selection{background:#ef604f55;color:var(--ink)}button,input,select{min-height:44px}input,select{background:var(--background);border-color:#61717f;border-radius:0;color:var(--ink)}a,button,summary,input,select,[tabindex]{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent-ink);outline-offset:5px}.page{max-width:var(--measure);padding-inline:var(--gutter)}.primary{background:var(--accent);border-color:var(--accent);color:#0b0f14;border-radius:0;font-size:.9rem}.secondary{border-color:#61717f;border-radius:0;font-size:.9rem}.eyebrow,.index{color:var(--accent-ink)}.lead{color:var(--muted)}footer{font-size:.85rem}.skip-link{background:var(--accent);z-index:100}.page h1{text-wrap:balance}.page a:hover{text-decoration-thickness:1px;text-underline-offset:5px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}.primary,.secondary{transition:background .2s,border-color .2s,transform .2s}.primary:hover,.secondary:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

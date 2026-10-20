@@ -1,0 +1,231 @@
+.signature {
+  margin:0;
+  position:relative;
+  padding:32px;
+  background:linear-gradient(140deg,#182632cc,#0b0f14);
+  border:1px solid var(--line);
+  overflow:hidden;
+  min-width:0;
+}
+.signature:before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:linear-gradient(#99a6b207 1px,transparent 1px),linear-gradient(90deg,#99a6b207 1px,transparent 1px);
+  background-size:32px 32px;
+  pointer-events:none;
+}
+.signature figcaption {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  position:relative;
+}
+.signature figcaption>span {
+  font-size:.75rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.signature figcaption strong {
+  font-size:clamp(1.2rem,2vw,1.8rem);
+  letter-spacing:-.04em;
+  line-height:1.2;
+}
+.signature figcaption small {
+  font-size:.8rem;
+  color:var(--muted);
+}
+.signature svg {
+  display:block;
+  width:100%;
+  height:auto;
+  margin:32px 0 0;
+  overflow:visible;
+}
+.signature text {
+  fill:var(--muted);
+  font:16px Arial,sans-serif;
+}
+.grid {
+  stroke:#99a6b225;
+  stroke-width:1;
+}
+.entries {
+  stroke:#557581;
+  stroke-width:12;
+}
+.wins {
+  stroke:var(--accent);
+  stroke-width:12;
+}
+.dot {
+  fill:var(--ink);
+}
+.legend {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  margin:20px 0 0;
+  font-size:.75rem;
+  color:var(--muted);
+  position:relative;
+}
+.legend span:before {
+  content:'';
+  display:inline-block;
+  width:8px;
+  height:8px;
+  background:#557581;
+  margin-right:8px;
+}
+.legend span+span:before {
+  background:var(--accent);
+}
+.empty {
+  padding:40px 0;
+  color:var(--muted);
+}
+.seasonBrowser {
+  border-top:1px solid var(--line);
+}
+.decades {
+  display:flex;
+  gap:8px;
+  padding:20px 0;
+  overflow:auto;
+}
+.decades button {
+  background:transparent;
+  border:0;
+  border-bottom:2px solid transparent;
+  color:var(--muted);
+  font-size:1rem;
+  min-height:48px;
+  padding:8px 18px;
+  white-space:nowrap;
+}
+.decades button[aria-pressed=true] {
+  color:var(--ink);
+  border-color:var(--accent);
+}
+.decades button:hover {
+  color:var(--ink);
+  background:var(--surface);
+}
+.decades button span {
+  font-size:.75rem;
+}
+.yearDisplay {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:48px;
+  align-items:center;
+  padding:32px 0 48px;
+}
+.decadeNumber {
+  font-size:clamp(5rem,12vw,10rem);
+  line-height:.9;
+  letter-spacing:-.09em;
+  margin:0;
+  font-weight:800;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.decadeNumber>span {
+  color:var(--accent);
+  display:block;
+  font-weight:400;
+  line-height:.6;
+}
+.seasonLinks {
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:0 24px;
+}
+.seasonLinks a {
+  border-bottom:1px solid var(--line);
+  padding:20px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:6px;
+  font-size:clamp(1rem,2vw,1.4rem);
+  font-variant-numeric:tabular-nums;
+}
+.seasonLinks a:hover {
+  color:var(--accent);
+}
+.seasonLinks a span {
+  font-size:.85rem;
+  color:var(--accent);
+}
+.noScriptYear {
+  display:inline-flex;
+  padding:12px;
+}
+@media(max-width:700px) {
+  .signature {
+    padding:24px;
+  }
+  .yearDisplay {
+    grid-template-columns:1fr;
+    gap:32px;
+    padding-top:24px;
+  }
+  .decadeNumber {
+    font-size:6rem;
+  }
+  .decadeNumber>span {
+    display:inline;
+  }
+  .seasonLinks {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:0 20px;
+  }
+  .decades {
+    margin-right:-20px;
+  }
+  .decades button {
+    padding:8px 12px;
+  }
+  .signature figcaption strong {
+    font-size:1.3rem;
+  }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .signature .dot {
+    animation:signal 3s ease-in-out 2;
+  }
+  .seasonLinks a {
+    transition:color .2s,transform .2s;
+  }
+  .seasonLinks a:hover {
+    transform:translateY(-3px);
+  }
+  @keyframes signal {
+    50% {
+      opacity:.3;
+    }
+  }
+}
+@media(forced-colors:active) {
+  .signature {
+    background:Canvas;
+  }
+  .entries,.grid {
+    stroke:CanvasText;
+  }
+  .wins {
+    stroke:Highlight;
+  }
+  .dot {
+    fill:CanvasText;
+  }
+  .decades button[aria-pressed=true] {
+    border-color:Highlight;
+  }
+  .signature text {
+    fill:CanvasText;
+  }
+}
