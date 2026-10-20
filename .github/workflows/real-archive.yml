@@ -13,6 +13,9 @@ on:
       - 'scripts/reconcile-1988-f1db.py'
       - 'scripts/build-1988-editorial-cards.py'
       - 'scripts/build-1988-editorial-review-queue.py'
+      - 'scripts/render-1988-duel-preview.py'
+      - 'scripts/check-1988-editorial-preview.mjs'
+      - 'docs/editorial/research-pack-2026-10/duel-preview.template.html'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -32,6 +35,9 @@ on:
       - 'scripts/reconcile-1988-f1db.py'
       - 'scripts/build-1988-editorial-cards.py'
       - 'scripts/build-1988-editorial-review-queue.py'
+      - 'scripts/render-1988-duel-preview.py'
+      - 'scripts/check-1988-editorial-preview.mjs'
+      - 'docs/editorial/research-pack-2026-10/duel-preview.template.html'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -99,6 +105,10 @@ jobs:
         run: |
           pnpm --filter @grid-atlas/web build
           pnpm exec playwright install --with-deps chromium
+      - name: Test local 1988 private editorial preview in Chromium
+        run: |
+          python3 scripts/render-1988-duel-preview.py --output /tmp/grid-atlas-1988-preview.html
+          node scripts/check-1988-editorial-preview.mjs /tmp/grid-atlas-1988-preview.html
       - name: Select a real pair for browser navigation
         run: |
           PAIR="$(psql "$DATABASE_URL" -X -t -A -v ON_ERROR_STOP=1 -c "SELECT CONCAT_WS('|',r.season_year,rr.driver_id,rr.constructor_id) FROM historical_race_results rr JOIN historical_races r ON r.id=rr.race_id GROUP BY r.season_year,rr.driver_id,rr.constructor_id ORDER BY r.season_year,rr.driver_id,rr.constructor_id LIMIT 1")"
