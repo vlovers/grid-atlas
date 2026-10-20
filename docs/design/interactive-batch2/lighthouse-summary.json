@@ -1,0 +1,34 @@
+{
+  "tool": "Lighthouse 13.5.0",
+  "mode": "default mobile emulation, localhost production build, disposable pinned archive",
+  "production_benchmark": false,
+  "pages": [
+    {
+      "page": "explorer",
+      "scores": {
+        "performance": 87,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "label_in_name_passed": true,
+      "notes": [
+        "Back/forward cache audit reports the existing no-store policy."
+      ]
+    },
+    {
+      "page": "machine",
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 91
+      },
+      "label_in_name_passed": true,
+      "notes": [
+        "Back/forward cache audit reports the existing no-store policy.",
+        "Meta-description audit reported missing description; existing localized metadata workflow is retained."
+      ]
+    }
+  ]
+}
