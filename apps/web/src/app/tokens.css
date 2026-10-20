@@ -1,0 +1,13 @@
+:root {
+  --background:#0b0f14;
+  --surface:#131c25;
+  --surface-raised:#1b2933;
+  --ink:#f3f0e8;
+  --muted:#99a6b2;
+  --accent:#ef604f;
+  --accent-ink:#ff8c7d;
+  --line:#34424d;
+  --measure:1440px;
+  --gutter:clamp(20px,5vw,80px);
+  color-scheme:dark;
+}

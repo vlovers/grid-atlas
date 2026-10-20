@@ -1,0 +1,141 @@
+.map {
+  margin:0 0 48px;
+  padding:28px;
+  background:var(--surface);
+  border-top:2px solid var(--accent);
+}
+.map figcaption {
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:24px;
+}
+.map figcaption strong {
+  font-size:1.2rem;
+  letter-spacing:-.03em;
+}
+.map figcaption>span {
+  font-size:.8rem;
+  color:var(--muted);
+}
+.map>p {
+  font-size:.75rem;
+  line-height:1.7;
+  color:var(--muted);
+  margin:24px 0 0;
+  max-width:90ch;
+}
+.scroll {
+  overflow-x:auto;
+  padding:6px;
+  max-width:100%;
+}
+.track {
+  display:grid;
+  min-width:max-content;
+}
+.row {
+  display:contents;
+}
+.key {
+  font-size:.7rem;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  padding:12px 16px 12px 0;
+}
+.year {
+  padding:16px 6px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.75rem;
+  font-variant-numeric:tabular-nums;
+  border-bottom:1px solid #99a6b244;
+}
+.name {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:700;
+  font-size:.85rem;
+  padding:22px 24px 22px 0;
+  border-bottom:1px solid var(--line);
+  max-width:220px;
+}
+.name>span {
+  font-size:.65rem;
+  color:var(--accent-ink);
+  font-weight:400;
+}
+.observed,.gap {
+  display:grid;
+  place-items:center;
+  font-size:.75rem;
+  font-variant-numeric:tabular-nums;
+  position:relative;
+  min-height:64px;
+  border-bottom:1px solid var(--line);
+}
+.observed {
+  background:linear-gradient(0deg,transparent 37%,#ef604f88 38%,#ef604f88 62%,transparent 63%);
+  color:var(--ink);
+}
+.observed>span {
+  border:1px solid #fa8b7a;
+  background:#422a29;
+  min-width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  font-size:.75rem;
+}
+.observed:hover>span {
+  background:var(--accent);
+  color:#0b0f14;
+}
+.gap:before {
+  content:'';
+  height:1px;
+  width:12px;
+  background:#65717b44;
+}
+@media(max-width:650px) {
+  .map {
+    padding:24px 16px;
+    margin-bottom:36px;
+  }
+  .map figcaption strong {
+    font-size:1.1rem;
+  }
+  .map figcaption>span {
+    font-size:.75rem;
+  }
+  .name {
+    max-width:160px;
+    padding-right:16px;
+  }
+  .map>p {
+    font-size:.75rem;
+  }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .observed>span {
+    transition:transform .2s,background .2s;
+  }
+  .observed:hover>span {
+    transform:scale(1.15);
+  }
+}
+@media(forced-colors:active) {
+  .observed {
+    background:Canvas;
+  }
+  .observed>span {
+    border-color:CanvasText;
+    background:Canvas;
+    color:CanvasText;
+  }
+}

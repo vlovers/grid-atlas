@@ -1,0 +1,227 @@
+.catalogue {
+  padding-top:56px;
+}
+.heading {
+  display:grid;
+  grid-template-columns:1fr .75fr;
+  align-items:end;
+  gap:48px;
+  margin-bottom:48px;
+}
+.catalogue .heading h1 {
+  font-size:clamp(4rem,8vw,7rem);
+  letter-spacing:-.075em;
+  line-height:1;
+  margin:12px 0 0;
+  display:flex;
+  align-items:baseline;
+  gap:32px;
+}
+.headingArrow {
+  font-size:.6em;
+  color:var(--accent);
+  font-weight:400;
+}
+.heading :global(.lead) {
+  font-size:1.1rem;
+  line-height:1.7;
+  margin:0;
+  max-width:40ch;
+}
+.hidden {
+  display:none;
+}
+.catalogue .search {
+  max-width:none;
+  background:var(--surface);
+  padding:28px 32px;
+  margin:0;
+  border-top:1px solid #61717f;
+}
+.catalogue .search label {
+  font-size:.85rem;
+  color:var(--ink);
+  font-weight:700;
+}
+.catalogue .search input {
+  background:transparent;
+  border:0;
+  border-bottom:1px solid #61717f;
+  font-size:1.2rem;
+  padding:12px 0;
+  flex-basis:300px;
+}
+.catalogue .search :global(.actions) {
+  gap:12px;
+}
+.searchTip {
+  color:var(--muted);
+  max-width:90ch;
+  font-size:.8rem;
+  line-height:1.7;
+  margin:18px 0 0;
+}
+.status {
+  color:var(--muted);
+  font-size:.85rem;
+  padding:20px 0;
+  margin:0;
+  border-bottom:1px solid var(--line);
+}
+.indexMeta {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  color:var(--muted);
+  font-size:.75rem;
+  padding:16px 0;
+}
+.indexMeta p {
+  margin:0;
+}
+.indexMeta strong {
+  font-size:1.6rem;
+  color:var(--ink);
+  letter-spacing:-.04em;
+  margin-right:8px;
+}
+.catalogue .index {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 48px;
+  margin-top:0;
+}
+.catalogue .index>a {
+  background:transparent;
+  border:0;
+  border-top:1px solid var(--line);
+  padding:24px 0;
+  min-height:122px;
+  display:grid;
+  grid-template-columns:36px minmax(0,1fr) 1.5rem;
+  gap:18px;
+  align-items:center;
+  position:relative;
+  transition:background .2s,color .2s;
+}
+.catalogue .index>a:nth-child(-n+2) {
+  min-height:160px;
+}
+.catalogue .index>a:hover {
+  background:#16232c;
+  text-decoration:none;
+}
+.catalogue .index>a:hover h2 {
+  color:var(--accent-ink);
+}
+.catalogue .index h2 {
+  font-size:clamp(1.25rem,2vw,1.7rem);
+  font-weight:600;
+  letter-spacing:-.04em;
+  line-height:1.2;
+  margin:8px 0 0;
+  overflow-wrap:anywhere;
+}
+.catalogue .index>a:nth-child(-n+2) h2 {
+  font-size:clamp(1.6rem,2.5vw,2.2rem);
+}
+.catalogue .index :global(.index) {
+  font-size:.7rem;
+  letter-spacing:.03em;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.ordinal {
+  align-self:start;
+  margin-top:4px;
+  font-size:.7rem;
+  color:var(--accent-ink);
+  font-variant-numeric:tabular-nums;
+}
+.arrow {
+  color:var(--accent);
+  font-size:1.4rem;
+}
+.empty {
+  padding:56px 24px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+}
+.empty>span {
+  font-size:4rem;
+  color:var(--accent);
+}
+.empty>p {
+  font-size:1.1rem;
+  color:var(--muted);
+}
+@media(max-width:750px) {
+  .catalogue {
+    padding-top:40px;
+  }
+  .heading {
+    grid-template-columns:1fr;
+    gap:24px;
+    margin-bottom:32px;
+  }
+  .catalogue .heading h1 {
+    font-size:clamp(3.2rem,14vw,5rem);
+    gap:16px;
+  }
+  .heading :global(.lead) {
+    font-size:1rem;
+  }
+  .catalogue .search {
+    padding:24px 20px;
+  }
+  .catalogue .search input {
+    font-size:1rem;
+    flex-basis:100%;
+  }
+  .catalogue .search button,.catalogue .search a {
+    flex:1;
+    justify-content:center;
+  }
+  .catalogue .index {
+    grid-template-columns:1fr;
+  }
+  .catalogue .index>a,.catalogue .index>a:nth-child(-n+2) {
+    min-height:120px;
+    padding:22px 0;
+    gap:12px;
+    grid-template-columns:30px minmax(0,1fr) 1.5rem;
+  }
+  .catalogue .index h2,.catalogue .index>a:nth-child(-n+2) h2 {
+    font-size:1.6rem;
+  }
+  .indexMeta {
+    align-items:start;
+    flex-direction:column;
+    gap:8px;
+    padding:20px 0;
+  }
+  .searchTip {
+    font-size:.8rem;
+  }
+  .status {
+    font-size:.8rem;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .catalogue .index>a {
+    transition:none;
+  }
+}
+@media(forced-colors:active) {
+  .catalogue .search,.catalogue .index>a:hover {
+    background:Canvas;
+  }
+  .arrow,.ordinal {
+    color:LinkText;
+  }
+  .catalogue .index>a {
+    border-color:CanvasText;
+  }
+}
