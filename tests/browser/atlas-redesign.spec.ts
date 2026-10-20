@@ -46,6 +46,13 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goto(`/${locale}/drivers/1`);
     const profile = page.getByTestId('driver-showcase');
     await expect(profile.getByTestId('career-signature')).toContainText(copy.signatureNote);
+    const disclosure = profile.locator('#driver-timeline');
+    const summary = disclosure.locator('summary');
+    await expect(summary).toBeVisible();
+    await summary.focus();
+    await expect(summary).toBeFocused();
+    await summary.press('Enter');
+    await expect(disclosure).toHaveAttribute('open', '');
     const map = profile.getByRole('figure').filter({ hasText: copy.chapter });
     await expect(map).toBeVisible();
     await expect(map.getByRole('link', { name: 'alpha, 1950: 1 ' + copy.recordedRaces })).toHaveAttribute('href', `/${locale}/explorer/drivers/1?year=1950&selected=1`);

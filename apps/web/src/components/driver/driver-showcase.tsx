@@ -1,3 +1,6 @@
+import { MotorsportArt } from '@/components/stories/motorsport-art';
+import { storyCopy } from '@/components/stories/copy';
+import { openingRecord, seasonStories } from '@/components/stories/story-model';
 import { CareerMap } from '@/components/atlas/career-map';
 import { CareerSignature } from '@/components/atlas/career-signature';
 import { CareerTimeline } from '@/components/discovery';
@@ -5,7 +8,7 @@ import { LicensedMedia } from '@/components/media/licensed-media';
 import type { MediaAsset } from '@/components/media/registry';
 import { selectMedia } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
-import { raceMoments, seasonMilestones, seasonPoints, teamEras, timeMachinePath,
+import { raceMoments, seasonPoints, teamEras, timeMachinePath,
   type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam } from './showcase-model';
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
@@ -16,12 +19,13 @@ type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: Driv
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
 export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason }: Props) {
   const t = showcaseCopy[locale];
+  const story = storyCopy[locale];
+  const opening = openingRecord(career);
   const format = (value: number | null | undefined) => value == null ? t.unavailable : new Intl.NumberFormat(locale).format(value);
-  const peakSeasons = seasonMilestones(seasons);
+  const peakSeasons = seasonStories(seasons);
   const years = [...new Set(seasons.map(s => s.year))].sort((a, b) => a - b);
   const selected = seasons.find(s => String(s.year) === selectedSeason) ?? peakSeasons[0] ?? seasons.at(-1);
   const eras = teamEras(career?.participation ?? []);
-  const constructorCount = new Set(career?.participation.map(row => row.related_id) ?? []).size;
   const moments = career ? raceMoments(career.milestones) : [];
   const winningMoments = moments.filter(moment => moment.labels.some(label => label === 'first_win' || label === 'last_win'));
   const featuredMoments = winningMoments.length ? winningMoments : moments;
@@ -41,21 +45,19 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
 
   return <section className={`page ${styles.showcase}`} data-testid="driver-showcase">
     <header className={styles.hero}>
+      <div className={styles.coverArt}><MotorsportArt kind="helmet" tone="mint" /></div>
       <div className={styles.heroCopy}>
-        <p className={styles.kicker}>{t.archive} <span aria-hidden="true">/</span> {driver.external_id}</p>
+        <p className={styles.kicker}>{story.driverCover} <span aria-hidden="true">/</span> {driver.external_id}</p>
         <p className={styles.period}><strong>{range}</strong><span>{t.period}</span></p>
         <h1>{driver.name}</h1>
-        <p className={styles.declaration}>{career && career.summary.result_entries > 0
-          ? locale === 'uk' ? `Зафіксовані сезони: ${format(career.summary.seasons)}. Різні конструктори: ${format(constructorCount)}. Простежте зв’язки між ними через записи гонок.`
-            : `Recorded seasons: ${format(career.summary.seasons)}. Distinct constructors: ${format(constructorCount)}. Follow the race records that connect them.`
-          : t.intro}</p>
+        <p className={styles.declaration}>{story.driverLead}</p>
         <div className={styles.actions}><a className={styles.primary} href="#driver-career">{t.begin} <span aria-hidden="true">↓</span></a>
           {compare && <a className={styles.textLink} href={`/${locale}${compare}`}>{t.compare} <span aria-hidden="true">↗</span></a>}</div>
       </div>
       <div className={styles.heroVisual}>
         <span className={styles.visualRule} aria-hidden="true" />
         {portrait ? <LicensedMedia assets={media} assetId={portrait.id} subject={{ type: 'driver', id: driver.external_id }} label={driver.name} locale={locale} />
-          : <CareerSignature seasons={seasons} name={driver.name} locale={locale} />}
+          : <p className={styles.artCredit}>{story.art}<span>{story.artNote}</span></p>}
 
       </div>
       <dl className={styles.heroFacts}>
@@ -72,17 +74,21 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         <a href={`#${anchor}`} key={anchor}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{label}</a>)}
     </nav>
 
-    <CareerMap rows={career?.participation ?? []} driverId={driver.id} locale={locale} />
+    {opening && <section className={styles.openingScene} aria-labelledby="driver-opening-title" data-story-reveal data-testid="driver-opening">
+      <div className={styles.openingArt}><MotorsportArt kind="velocity" /><span aria-hidden="true">{opening.race.year}</span><small>{story.artNote}</small></div>
+      <div className={styles.openingCopy}><p className={styles.kicker}>{story.opening}</p><h2 id="driver-opening-title">{story.openingTitle}</h2><p>{story.openingNote}</p>
+        <span className={styles.openingLabel}>{career?.milestones.first_win ? story.firstWin : story.firstRace} / {opening.race.year}</span>
+        <h3><a href={`/${locale}/races/${opening.race.id}`}>{opening.race.name}</a></h3><a className={styles.primary} href={`/${locale}/races/${opening.race.id}`}>{story.openRace} ↗</a></div>
+    </section>}
 
-    <section id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
-      <SectionHeading kicker={t.seasonKicker} title={t.seasonTitle} id="driver-season-title" note={t.seasonNote} />
+    <section data-story-reveal id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
+      <SectionHeading kicker={t.seasonKicker} title={story.seasonTitle} id="driver-season-title" note={story.seasonNote} />
       {peakSeasons.length > 0 ? <ol className={styles.seasonMilestones}>{peakSeasons.map((season, index) =>
-        <li key={season.year}><span className={styles.cardIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        <li key={season.year}><div className={styles.seasonArt}><MotorsportArt kind={index === 1 ? 'grid' : 'velocity'} tone={index === 1 ? 'gold' : index === 2 ? 'violet' : 'coral'} /></div><span className={styles.cardIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
           <a href={`/${locale}/seasons/${season.year}`} className={styles.yearLink}>{season.year} <span aria-hidden="true">↗</span></a>
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
-      <aside className={styles.coverage}><strong>{t.titleGap}</strong><p>{t.titleGapNote}</p></aside>
       {years.length > 0 && <div className={styles.seasonExplorer}>
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
           href={`/${locale}/drivers/${driver.id}?season=${year}#driver-career`} aria-current={selected?.year === year ? 'true' : undefined}>{year}</a>)}</nav>
@@ -95,7 +101,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       </div>}
     </section>
 
-    <section id="driver-teams" className={styles.chapter} aria-labelledby="driver-team-title" tabIndex={-1}>
+    <section data-story-reveal id="driver-teams" className={styles.chapter} aria-labelledby="driver-team-title" tabIndex={-1}>
       <SectionHeading kicker={t.teamKicker} title={t.teamTitle} id="driver-team-title" note={t.teamNote} />
       {eras.length ? <ol className={styles.eras}>{eras.map((era, index) => <li key={era.key}>
         <div className={styles.eraRail}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
@@ -107,9 +113,10 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       </li>)}</ol> : <p className={styles.empty}>{t.empty}</p>}
     </section>
 
-    <section id="driver-moments" className={styles.chapter} aria-labelledby="driver-moments-title" tabIndex={-1}>
+    <section data-story-reveal id="driver-moments" className={styles.chapter} aria-labelledby="driver-moments-title" tabIndex={-1}>
       <SectionHeading kicker={t.momentKicker} title={t.momentTitle} id="driver-moments-title" note={t.momentNote} />
       {moments.length ? <ol className={styles.moments}>{featuredMoments.map(moment => <li key={moment.race.id}>
+        <div className={styles.momentArt}><MotorsportArt kind="grid" tone="gold" /></div>
         <div className={styles.momentTop}><span>{moment.race.year}</span><span>{t.round} {moment.race.round}</span></div>
         <p className={styles.momentLabel}>{moment.labels.map(label => t[label]).join(' / ')}</p>
         <h3><a href={`/${locale}/races/${moment.race.id}`}>{moment.race.name}</a></h3>
@@ -122,7 +129,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       </li>)}</ul>}
     </section>
 
-    {compare && <aside className={styles.timeMachine}><div><p className={styles.kicker}>TIME MACHINE / {range}</p>
+    {compare && <aside className={styles.timeMachine}><div className={styles.compareArt}><MotorsportArt kind="duel" tone="violet" /></div><div><p className={styles.kicker}>TIME MACHINE / {range}</p>
       <h2>{t.compareTitle}</h2><p>{t.compareNote}</p></div><a className={styles.primary} href={`/${locale}${compare}`}>{t.compare} ↗</a></aside>}
 
     <section id="driver-biography" className={styles.chapter} aria-labelledby="driver-editorial-title" tabIndex={-1}>
@@ -134,7 +141,9 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
     </section>
 
     <section id="driver-archive" className={styles.chapter} aria-labelledby="driver-archive-title" tabIndex={-1}>
-      <SectionHeading kicker={t.archiveKicker} title={t.archiveTitle} id="driver-archive-title" note={t.archiveNote} />
+      <SectionHeading kicker={t.archiveKicker} title={story.records} id="driver-archive-title" note={t.archiveNote} />
+      <aside className={styles.coverage}><strong>{t.titleGap}</strong><p>{t.titleGapNote}</p></aside>
+      <details id="driver-graphic" className={styles.disclosure}><summary>{story.graphic}</summary><CareerSignature seasons={seasons} name={driver.name} locale={locale} /></details>
       <details id="driver-seasons" className={styles.disclosure}><summary>{t.seasonsTable} <span>{format(seasons.length)}</span></summary>
         {seasons.length ? <div className={styles.tableScroll} role="region" aria-label={t.seasonsTable} tabIndex={0}><table><caption>{t.seasonsTable} · {driver.name}</caption><thead><tr>
           {[t.season, t.resultEntries, t.winningEntries, t.podiums, t.points].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead><tbody>
@@ -147,7 +156,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         {teams.length ? <div className={styles.tableScroll} role="region" aria-label={t.teamsTable} tabIndex={0}><table><caption>{t.teamsTable} · {driver.name}</caption><thead><tr>{[t.season, t.constructor, t.races, t.winningEntries].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead>
           <tbody>{teams.map(team => <tr key={`${team.year}:${team.constructor_id}`}><th scope="row"><a href={`/${locale}/seasons/${team.year}`}>{team.year}</a></th><td><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</a></td><td>{format(team.races)}</td><td>{format(team.wins)}</td></tr>)}</tbody></table></div> : <p>{t.empty}</p>}
       </details>
-      <details className={styles.disclosure}><summary>{t.timeline} <span>{format(timeline.length)}</span></summary>
+      <details id="driver-timeline" className={styles.disclosure}><summary>{t.timeline} <span>{format(timeline.length)}</span></summary>
+        <CareerMap rows={career?.participation ?? []} driverId={driver.id} locale={locale} />
         <CareerTimeline label={t.timeline} entries={timeline} emptyLabel={t.empty} note={t.teamNote} />
       </details>
       <details className={styles.disclosure}><summary>{t.sourceTitle}</summary>

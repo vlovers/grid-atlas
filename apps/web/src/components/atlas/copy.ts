@@ -1,6 +1,6 @@
 const en = {
-  exhibit: 'An independent atlas of Formula 1', title: 'Every era.', titleEnd: 'Connected.',
-  lead: 'Follow the people, machines and races that shaped the archive. Find your own way through Formula 1 history.',
+  exhibit: 'An independent atlas of Formula 1', title: 'Driven by', titleEnd: 'history.',
+  lead: 'The people. The places. The moments. Find your next story in Formula 1’s recorded history.',
   search: 'Find a driver', placeholder: 'Name or F1DB identifier', searchAction: 'Search archive',
   start: 'Enter the archive', scroll: 'Discover the atlas', live: 'Imported archive · not a live feed',
   seasons: 'Seasons to explore', era: '01 / THE PASSAGE OF TIME', eraTitle: 'Choose your starting line.',
@@ -28,8 +28,8 @@ const en = {
 };
 type Copy = { [K in keyof typeof en]: string };
 const uk: Copy = {
-  exhibit: 'Незалежний атлас Формули-1', title: 'Кожна епоха.', titleEnd: 'У зв’язках.',
-  lead: 'Досліджуйте людей, машини й гонки з історичного архіву. Знайдіть власний шлях крізь історію Формули-1.',
+  exhibit: 'Незалежний атлас Формули-1', title: 'На швидкості', titleEnd: 'історії.',
+  lead: 'Люди. Місця. Моменти. Знайдіть наступну історію в гоночних записах Формули-1.',
   search: 'Знайти пілота', placeholder: 'Ім’я або ідентифікатор F1DB', searchAction: 'Шукати в архіві',
   start: 'Відкрити архів', scroll: 'Відкрийте для себе атлас', live: 'Завантажений архів · без прямих оновлень',
   seasons: 'Сезони для дослідження', era: '01 / ПЛИН ЧАСУ', eraTitle: 'Оберіть точку відліку.',

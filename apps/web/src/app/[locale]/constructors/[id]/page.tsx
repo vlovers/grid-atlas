@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+import { StoryHeader } from '@/components/stories/story-header';
+import { storyCopy } from '@/components/stories/copy';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -25,11 +27,11 @@ export default async function ConstructorProfile({ params }: Props) {
     getData<Season>(`/api/constructors/${id}/seasons`),
     getData<Lineage>(`/api/constructors/${id}/lineage`),
   ]);
+  const locale = await getLocale() as 'uk' | 'en';
   const team = profiles[0];
   if (!team) notFound();
   return <section className="page">
-    <p className="eyebrow">{t('archive')} / {t('constructor')} · {team.external_id}</p><h1>{team.name}</h1>
-    <p className="lead">{t('constructorLead')}</p>
+    <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
     <div className="driver-grid" aria-label={t('constructorStats')}>
       {([[t('seasons'),team.seasons],[t('races'),team.races],[t('wins'),team.wins],[t('driverPodiums'),team.podium_finishes],[t('driverPoints'),team.driver_points]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>

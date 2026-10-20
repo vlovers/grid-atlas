@@ -726,7 +726,9 @@
   }
 }
 @media(max-width:650px) {
-  .heroVisual:before { display:none; }
+  .heroVisual:before {
+    display:none;
+  }
   .showcase {
     padding-top:24px;
   }
@@ -974,4 +976,540 @@
   .heroFacts,.eraRail,.disclosure {
     border-color:CanvasText;
   }
+}
+/* Cover-story composition. Archive primitives remain below the visual narrative. */ .showcase {
+  padding-top:16px;
+}
+.hero {
+  position:relative;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  isolation:isolate;
+  min-height:760px;
+  padding:64px 40px 24px;
+  gap:28px 48px;
+  border:0;
+  margin-inline:-40px;
+  overflow:hidden;
+  background:#13282d;
+}
+.coverArt {
+  position:absolute;
+  inset:-22% -30% -10% 20%;
+  z-index:-3;
+}
+.hero:after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,#0d1922f5,transparent 85%),linear-gradient(0deg,#0b0f14,transparent 50%);
+  z-index:-2;
+}
+.heroCopy {
+  align-self:center;
+  padding:30px 0;
+}
+.heroCopy>.kicker {
+  color:#c8e2dc;
+}
+.period {
+  margin-top:28px;
+}
+.period strong {
+  color:#a1c7c1;
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:2.8rem;
+}
+.showcase .hero h1 {
+  font-size:clamp(3.5rem,7.4vw,7.2rem);
+  font-weight:900;
+  letter-spacing:-.08em;
+  line-height:.94;
+  max-width:12ch;
+  position:relative;
+  text-shadow:0 5px 50px #08111955;
+}
+.declaration {
+  color:#d5e2e5;
+  font-size:1.25rem;
+  max-width:30ch;
+}
+.heroVisual {
+  align-self:end;
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  padding:0;
+}
+.heroVisual:before {
+  display:none;
+}
+.artCredit {
+  font-size:.7rem;
+  line-height:1.7;
+  color:#c2d6da;
+  padding:20px 0 0;
+  margin:0;
+}
+.artCredit>span {
+  display:block;
+  color:#9eb5bd;
+  font-size:.65rem;
+  margin-top:8px;
+}
+.heroFacts {
+  border-top:1px solid #b4ceda44;
+  gap:20px;
+  padding-top:20px;
+  position:relative;
+  z-index:1;
+}
+.heroFacts dd {
+  font-size:clamp(2rem,3.5vw,3.2rem);
+}
+.heroFacts dt {
+  font-size:.75rem;
+  color:#aec5cf;
+}
+.heroScope {
+  color:#a9bdc8;
+  max-width:100ch;
+  font-size:.7rem;
+  margin-top:-8px;
+}
+.chapters {
+  margin-bottom:48px;
+  background:var(--background);
+  position:relative;
+}
+.openingScene {
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:0;
+  background:#eadfcd;
+  color:#17232b;
+  margin-bottom:70px;
+  overflow:hidden;
+}
+.openingArt {
+  position:relative;
+  min-height:500px;
+  overflow:hidden;
+  background:radial-gradient(ellipse at 80% 10%,#6a423b,#202837 75%);
+}
+.openingArt>div {
+  inset:-20% -30%;
+}
+.openingArt>span {
+  position:absolute;
+  left:24px;
+  bottom:-20px;
+  font-size:clamp(7rem,13vw,12rem);
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-.09em;
+  color:#fff4dc;
+  mix-blend-mode:screen;
+}
+.openingCopy {
+  padding:40px;
+  align-self:center;
+}
+.openingCopy>.kicker {
+  color:#a43b30;
+}
+.openingCopy>h2 {
+  font-size:clamp(2rem,3.5vw,3.2rem);
+  line-height:1.03;
+  letter-spacing:-.06em;
+  margin:0 0 24px;
+  text-wrap:balance;
+}
+.openingCopy>p:not(.kicker) {
+  font-size:.95rem;
+  color:#4f5f67;
+  line-height:1.7;
+  margin:0 0 28px;
+}
+.openingLabel {
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:#805241;
+}
+.openingCopy h3 {
+  font-size:1.3rem;
+  line-height:1.25;
+  letter-spacing:-.04em;
+  margin:14px 0 24px;
+  max-width:27ch;
+}
+.openingCopy h3 a {
+  text-decoration:underline;
+  text-underline-offset:5px;
+}
+.openingCopy .primary {
+  background:#172b35;
+  color:#f5ecd9;
+}
+.sectionHeading h2 {
+  white-space:pre-line;
+  font-size:clamp(2.1rem,3.9vw,3.4rem);
+}
+.seasonMilestones {
+  gap:20px;
+}
+.seasonMilestones>li {
+  padding:260px 24px 24px;
+  background:#18252f;
+  border:0;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+.seasonArt {
+  position:absolute;
+  inset:0 0 auto;
+  height:285px;
+  z-index:-2;
+  background:linear-gradient(145deg,#665044,#26313c);
+}
+.seasonArt>div {
+  inset:-5% -30%;
+}
+.seasonMilestones>li:after {
+  content:'';
+  position:absolute;
+  inset:180px 0 0;
+  background:linear-gradient(0deg,#15222c 60%,transparent);
+  z-index:-1;
+}
+.cardIndex {
+  color:#f0dfbf;
+  top:18px;
+  right:20px;
+  z-index:1;
+}
+.yearLink {
+  font-size:4.5rem;
+  font-weight:900;
+  color:#f3f0e8;
+  margin-bottom:20px;
+}
+.yearLink>span {
+  color:#ff9c85;
+}
+.seasonMilestones p {
+  font-size:.85rem;
+  color:#d1dce1;
+}
+.seasonMilestones li>span:last-child {
+  color:#b2c4ce;
+}
+.coverage {
+  margin-bottom:28px;
+}
+.selectedSeason {
+  background:linear-gradient(125deg,#203642,#111d28);
+  border-top:1px solid #879ca8;
+}
+.eras>li {
+  position:relative;
+}
+.eraBody {
+  background:linear-gradient(90deg,#28414b33,transparent);
+  padding-left:24px;
+}
+.moments {
+  gap:24px;
+}
+.moments>li {
+  padding-top:260px;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  border:0;
+  background:#17232c;
+}
+.momentArt {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:255px;
+  background:#484139;
+  z-index:-2;
+}
+.momentArt>div {
+  inset:-15% -20%;
+}
+.moments>li:after {
+  content:'';
+  position:absolute;
+  inset:180px 0 0;
+  z-index:-1;
+  background:linear-gradient(0deg,#17232c 75%,transparent);
+}
+.momentTop {
+  border-bottom-color:#98acb655;
+}
+.momentTop span:first-child {
+  font-weight:900;
+  font-size:3rem;
+}
+.timeMachine {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:#26263a;
+  padding:44px;
+}
+.compareArt {
+  position:absolute!important;
+  inset:-20% -10% -60% 30%;
+  z-index:-2;
+  opacity:.4;
+  max-width:none!important;
+}
+.timeMachine:after {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(90deg,#272637,transparent);
+}
+.timeMachine h2 {
+  font-size:2.8rem;
+  max-width:18ch;
+}
+.timeMachine p:last-child {
+  color:#c2c2d5;
+}
+.disclosure>figure {
+  margin-block:24px;
+}
+.editorialEmpty {
+  background:#131f27;
+  padding:28px 24px;
+}
+.disclosure {
+  padding-inline:16px;
+}
+.showcase .back {
+  margin-bottom:24px;
+}
+@media(max-width:1000px) {
+  .hero {
+    padding:48px 28px 24px;
+    margin-inline:-28px;
+    min-height:720px;
+  }
+  .coverArt {
+    inset:-15% -45% -5% 0;
+  }
+  .showcase .hero h1 {
+    font-size:clamp(3.2rem,7.5vw,6rem);
+  }
+  .openingScene {
+    grid-template-columns:1fr 1fr;
+  }
+  .openingCopy {
+    padding:28px;
+  }
+  .openingArt {
+    min-height:480px;
+  }
+  .seasonMilestones>li {
+    padding-inline:20px;
+    padding-top:220px;
+  }
+  .seasonArt {
+    height:245px;
+  }
+  .yearLink {
+    font-size:3.5rem;
+  }
+  .heroVisual {
+    align-self:end;
+  }
+  .eraBody {
+    padding-left:18px;
+  }
+}
+@media(max-width:650px) {
+  .showcase {
+    padding-top:12px;
+  }
+  .hero {
+    grid-template-columns:1fr;
+    margin-inline:-20px;
+    padding:300px 20px 24px;
+    min-height:0;
+    gap:24px;
+  }
+  .coverArt {
+    inset:-10% -65% 30% -45%;
+    opacity:.85;
+  }
+  .hero:after {
+    background:linear-gradient(0deg,#0b0f14 38%,#0b0f1488 75%,transparent);
+  }
+  .heroCopy {
+    padding:0;
+  }
+  .heroCopy>.kicker {
+    font-size:.65rem;
+  }
+  .period {
+    margin-top:20px;
+  }
+  .period strong {
+    font-size:2rem;
+  }
+  .showcase .hero h1 {
+    font-size:clamp(3rem,12vw,4.5rem);
+    max-width:13ch;
+    margin-bottom:24px;
+  }
+  .declaration {
+    font-size:1rem;
+    max-width:30ch;
+  }
+  .heroVisual {
+    grid-column:auto;
+    grid-row:auto;
+    padding:0;
+  }
+  .artCredit {
+    font-size:.65rem;
+    padding:0;
+    max-width:45ch;
+  }
+  .artCredit>span {
+    font-size:.6rem;
+  }
+  .heroFacts {
+    gap:24px;
+    padding-top:24px;
+  }
+  .heroFacts dd {
+    font-size:2.6rem;
+  }
+  .heroScope {
+    font-size:.68rem;
+    margin-top:0;
+  }
+  .chapters {
+    margin-bottom:36px;
+  }
+  .openingScene {
+    grid-template-columns:1fr;
+    margin-inline:-20px;
+    margin-bottom:48px;
+  }
+  .openingArt {
+    min-height:330px;
+  }
+  .openingArt>span {
+    font-size:7rem;
+    bottom:-10px;
+    left:16px;
+  }
+  .openingCopy {
+    padding:32px 24px;
+  }
+  .openingCopy>h2 {
+    font-size:2.4rem;
+  }
+  .openingCopy>p:not(.kicker) {
+    font-size:.9rem;
+  }
+  .sectionHeading h2 {
+    font-size:2.3rem;
+  }
+  .seasonMilestones {
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .seasonMilestones>li {
+    display:block;
+    padding:215px 24px 24px;
+    min-height:350px;
+  }
+  .seasonArt {
+    height:270px;
+  }
+  .yearLink {
+    font-size:3.7rem;
+    display:flex;
+    justify-content:space-between;
+    margin:0 0 18px;
+  }
+  .seasonMilestones p {
+    margin-bottom:8px;
+  }
+  .cardIndex {
+    display:block;
+    font-size:.7rem;
+  }
+  .moments>li {
+    padding:235px 24px 24px;
+  }
+  .momentArt {
+    height:260px;
+  }
+  .moments h3 {
+    font-size:1.6rem;
+  }
+  .eraBody {
+    padding-left:24px;
+  }
+  .timeMachine {
+    padding:32px 24px;
+    margin-inline:-20px;
+  }
+  .timeMachine h2 {
+    font-size:2.3rem;
+  }
+  .compareArt {
+    inset:-15% -70% 0 10%;
+    opacity:.2;
+  }
+  .editorialEmpty {
+    padding:24px 18px;
+  }
+  .disclosure {
+    padding-inline:4px;
+  }
+}
+@media(forced-colors:active) {
+  .hero,.openingScene,.openingArt,.seasonMilestones>li,.seasonArt,.momentArt,.timeMachine,.editorialEmpty {
+    background:Canvas;
+    color:CanvasText;
+    border:1px solid CanvasText;
+  }
+  .hero:after,.seasonMilestones>li:after,.moments>li:after,.timeMachine:after {
+    display:none;
+  }
+  .coverArt,.openingArt>div,.seasonArt>div,.momentArt>div {
+    opacity:.12;
+  }
+  .declaration,.heroFacts dt,.period strong,.heroScope,.openingCopy>p:not(.kicker),.timeMachine p:last-child {
+    color:CanvasText;
+  }
+  .heroCopy>.kicker,.artCredit,.artCredit>span,.yearLink,.seasonMilestones p,.seasonMilestones li>span:last-child {
+    color:CanvasText;
+  }
+}
+.openingArt>small {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  font-size: .65rem;
+  line-height: 1.6;
+  color: #f0e3d4;
+  max-width: 50ch;
 }

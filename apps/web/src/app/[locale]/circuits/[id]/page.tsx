@@ -1,3 +1,5 @@
+import { StoryHeader } from '@/components/stories/story-header';
+import { storyCopy } from '@/components/stories/copy';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
@@ -41,8 +43,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const currentCrumbs = crumbs.map((crumb, index) => index === crumbs.length - 1
     ? { ...crumb, path: pageHref(path, page) } : crumb);
   return <><SeoBreadcrumbs locale={locale} crumbs={currentCrumbs} description={description} /><section className="page">
-    <p className="eyebrow">{t('archive')} / {t('circuit')} · {circuit.external_id}</p><h1>{circuit.name}</h1>
-    <p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>
+    <StoryHeader title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader} locale={locale as 'uk' | 'en'} marker={circuit.first_season ?? undefined}
+      lead={<p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>} />
     <h2>{t('grandPrixHistory')}</h2>
     {races.length ? <div className="records">{races.map(race => <Link className="record" key={race.id} href={`/races/${race.id}`}>
       <span className="position">{race.season_year}</span><span><strong>{race.official_name}</strong><small>{t('round', { round: race.round })}{race.race_date ? ` · ${race.race_date}` : ''}</small></span><span aria-hidden="true">↗</span>

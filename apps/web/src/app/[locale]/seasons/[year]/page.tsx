@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+import { StoryHeader } from '@/components/stories/story-header';
+import { storyCopy } from '@/components/stories/copy';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import { getData, type Race } from '@/lib/api';
@@ -21,14 +23,14 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
     getData<Race>(`/api/seasons/${year}/races?limit=100`),
     getData<Lineup>(`/api/seasons/${year}/lineups`),
   ]);
+  const locale = await getLocale() as 'uk' | 'en';
   const teams = new Map<string, { id: string; name: string; drivers: Lineup[] }>();
   for (const row of lineups) {
     if (!teams.has(row.constructor_id)) teams.set(row.constructor_id, { id: row.constructor_id, name: row.constructor_name, drivers: [] });
     teams.get(row.constructor_id)!.drivers.push(row);
   }
   return <section className="page">
-    <p className="eyebrow">{t('archive')} / {t('season')}</p><h1>{t('seasonTitle', { year })}</h1>
-    <p className="lead">{t('seasonLead')}</p>
+    <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>
       <Link key={r.id} className="record" href={`/races/${r.id}`}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>

@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+import { StoryHeader } from '@/components/stories/story-header';
+import { storyCopy } from '@/components/stories/copy';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function RacePage({ params }: Props) {
+  const locale = await getLocale() as 'uk' | 'en';
   const t = await getTranslations('UI');
   const { id } = await params;
   if (!validId(id)) notFound();
@@ -25,8 +28,8 @@ export default async function RacePage({ params }: Props) {
   ]);
   if (!race) notFound();
   return <section className="page">
-    <p className="eyebrow">{t('archive')} / {t('grandsPrix')} · {race.season_year} · {t('round', { round: race.round })}</p><h1>{race.official_name}</h1>
-    <p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>
+    <StoryHeader title={race.official_name} eyebrow={`${storyCopy[locale].raceHeader} / ${race.season_year} · ${t('round', { round: race.round })}`} locale={locale} kind="grid" marker={race.season_year}
+      lead={<p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>} />
     <h2>{t('raceResults')}</h2>
     <p>{t('raceResultsLead')}</p>
     <p className="mobile-hint">{t('scrollTable')}</p>
