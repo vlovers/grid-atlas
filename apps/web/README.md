@@ -44,7 +44,7 @@ Implemented: searchable/paginated drivers, constructors and circuits; profiles a
 
 `pnpm lint`, `pnpm typecheck`, `pnpm build` and `DATABASE_URL=postgresql://... pnpm test:browser` run from the root. Browser tests start production servers on ports 3339–3341 and use real PostgreSQL with isolated, synthetic fixtures on desktop/mobile. Trace/screenshots are retained on failure.
 
-Not yet implemented: standings and historical scoring rules, circuit configurations, media/biographies, live updates, additional languages or production hosting. Lineage can be empty until independently approved claims exist. Do not manufacture verified data for the UI.
+Not yet implemented: official standings and historical scoring rules, circuit configurations, live updates, additional languages or production hosting. Editorial story/biography and licensed-media infrastructure is present, but draft biographies and unapproved or unlicensed media are not public content. Do not imply that every driver has a published biography or image; publication remains gated by editorial review and rights clearance. Lineage can be empty until independently approved claims exist. Do not manufacture verified data for the UI.
 
 ## Localization
 
