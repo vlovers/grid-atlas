@@ -27,7 +27,7 @@ class ReconciliationTests(unittest.TestCase):
         s,p=fixtures();p["races"].pop()
         self.assertTrue(mod.verify(s,p)["problems"])
     def test_unexpected_winner(self):
-        s,p=fixtures();p["races"][0]["results"][0]["position"]=1
+        s,p=fixtures();p["races"][0]["results"][1]["position"]=2
         self.assertTrue(mod.verify(s,p)["problems"])
     def test_missing_driver(self):
         s,p=fixtures();p["races"][0]["results"]=[x for x in p["races"][0]["results"] if x["driver_external_id"]!="alain-prost"]
