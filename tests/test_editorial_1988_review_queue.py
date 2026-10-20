@@ -14,6 +14,16 @@ class ReviewQueueTests(unittest.TestCase):
     def test_every_claim_has_sources_and_locales(self):
         x=m.build()
         self.assertTrue(all(i["sources"] and i["uk"] and i["en"] for i in x["items"]))
+    def test_every_reference_has_precise_locator(self):
+        d=m.build()
+        self.assertTrue(all(src.get("url") and src.get("locator") for item in d["items"] for src in item["sources"]))
+    def test_sequence_captions_have_specific_race_locator(self):
+        d=m.build()
+        for item in d["items"]:
+            if item["scope"]=="winner_sequence_caption":
+                self.assertIn(str(item["round"]),item["sources"][0]["locator"])
+    def test_all_items_unapproved(self):
+        self.assertTrue(all(item["approved"] is False for item in m.build()["items"]))
     def test_ids_unique(self):
         x=m.build()
         self.assertEqual(len(set(i["id"] for i in x["items"])),24)
