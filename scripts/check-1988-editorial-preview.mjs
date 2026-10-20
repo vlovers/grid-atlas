@@ -31,8 +31,22 @@ try {
   assert.equal(await page.locator('#chart-lines polyline').count(),2);
   assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex,nofollow,noarchive');
   assert.deepEqual(errors,[],'runtime script must not error');
+  // Keyboard-only users must be able to navigate and activate the race rail.
+  const firstRace=page.locator('#rounds button').first();
+  await firstRace.focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await firstRace.getAttribute('aria-pressed'),'true');
+  await page.locator('#rounds button').nth(14).focus();
+  await page.keyboard.press('Space');
+  assert.equal(await page.locator('#selected-race').innerText(),'Japan');
+  assert.equal(await page.locator('#rounds button').nth(14).getAttribute('aria-pressed'),'true');
+  await page.locator('#rounds button').nth(15).click();
   await page.setViewportSize({width:375,height:812});
   assert.equal(await page.locator('#rounds button').count(),16,'mobile retains full round navigation');
+  assert.equal(await page.locator('#uk').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#counted').getAttribute('aria-pressed'),'true');
+  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
+  assert.equal(overflow,false,'mobile preview must not overflow horizontally');
   console.log('PASS: 1988 private preview browser interactions, both locales, both scores, mobile navigation');
 } finally {
   await browser.close();
