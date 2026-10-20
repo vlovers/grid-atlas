@@ -1,10 +1,18 @@
 import importlib.util
 import unittest
+import json
+import tempfile
 from pathlib import Path
 P=Path(__file__).resolve().parents[1]/"scripts/prepare_bulk_driver_cohort.py"
 spec=importlib.util.spec_from_file_location("bulk_cohort",P)
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 class SelectionTests(unittest.TestCase):
+    def test_existing_legacy_and_structured_manifest_entries(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base=Path(tmp)
+            (base/'manifest.json').write_text(json.dumps({'drivers':['driver-a','driver-b']}))
+            (base/'qa.json').write_text(json.dumps({'drivers':[{'driver_id':'driver-c'},{'id':'driver-d'}]}))
+            self.assertEqual(m.existing_ids(base),{'driver-a','driver-b','driver-c','driver-d'})
     def test_fifty_excluding_existing(self):
         rows=[(f"driver-{i}",f"Driver {i}","hash") for i in range(75)]
         results=[f"driver-{i}" for i in range(75) for _ in range(75-i)]
