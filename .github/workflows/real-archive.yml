@@ -12,6 +12,7 @@ on:
       - 'scripts/verify-real-archive.py'
       - 'scripts/reconcile-1988-f1db.py'
       - 'scripts/build-1988-editorial-cards.py'
+      - 'scripts/build-1988-editorial-review-queue.py'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -30,6 +31,7 @@ on:
       - 'scripts/verify-real-archive.py'
       - 'scripts/reconcile-1988-f1db.py'
       - 'scripts/build-1988-editorial-cards.py'
+      - 'scripts/build-1988-editorial-review-queue.py'
       - 'docs/editorial/research-pack-2026-10/season-1988-winners.json'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
@@ -80,6 +82,8 @@ jobs:
         run: python3 scripts/reconcile-1988-f1db.py --output /tmp/grid-atlas-1988-parity.json
       - name: Build 16 nonpublic 1988 editorial evidence cards
         run: python3 scripts/build-1988-editorial-cards.py --parity /tmp/grid-atlas-1988-parity.json --output /tmp/grid-atlas-1988-editorial-cards.json
+      - name: Verify full 1988 editorial review queue remains unapproved
+        run: python3 scripts/build-1988-editorial-review-queue.py --output /tmp/grid-atlas-1988-review-queue.json
       - name: Build production API
         run: pnpm --filter @grid-atlas/api build
       - name: Cross-check real archive SQL and reciprocal API
