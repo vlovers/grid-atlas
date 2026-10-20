@@ -10,6 +10,9 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
+      - 'scripts/prepare_bulk_driver_cohort.py'
+      - 'scripts/prepare_editorial_batch.py'
+      - 'tests/test_bulk_driver_cohort.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
       - 'docs/media/pilot-identities.json'
@@ -70,6 +73,17 @@ jobs:
         run: |
           bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt
           bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt
+      - name: Generate 50-driver unpublished evidence cohort
+        run: |
+          python3 scripts/prepare_bulk_driver_cohort.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt --output /tmp/grid-atlas-bulk-fifty
+          python3 -m unittest discover -s tests -p 'test_bulk_driver_cohort.py' -v
+      - name: Upload 50-driver research pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-driver-research-fifty
+          path: /tmp/grid-atlas-bulk-fifty/
+          retention-days: 7
+          if-no-files-found: error
       - name: Build production API
         run: pnpm --filter @grid-atlas/api build
       - name: Cross-check real archive SQL and reciprocal API
