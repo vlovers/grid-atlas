@@ -72,7 +72,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
         title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
         note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
-      <dl className={styles.heroFacts}>
+      <dl className={styles.quickFacts}>
         {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
           <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
         {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
