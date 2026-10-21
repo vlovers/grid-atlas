@@ -116,7 +116,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
           <span className="index">{locale === 'uk' ? 'Сезон' : 'Season'} · {season.year}</span>
           <h3><Link href={`/seasons/${season.year}`}>{season.wins} {locale === 'uk' ? 'перемог' : 'wins'} ↗</Link></h3>
           <p>{season.races} {locale === 'uk' ? 'гонок у протоколах' : 'recorded races'}</p>
-          <Link href={`/time-machine?kind=constructor&id=${team.id}&from=${season.year}&to=${season.year}`}>{locale === 'uk' ? 'Дослідити сезон' : 'Explore season'} ↗</Link>
+          <Link href={`/constructors/${team.id}?season=${season.year}`}>{locale === 'uk' ? 'Пілоти та результати сезону' : 'Season drivers and results'} ↗</Link>
         </article>)}</div> : <p>{locale === 'uk' ? 'Немає зафіксованих сезонів.' : 'No seasons recorded.'}</p>}
       <p>{locale === 'uk' ? 'Учасники, юридична спадковість, шасі й силові установки потребують окремих перевірених джерел. Не ототожнюємо однойменні команди та конструкторів без доказів.' : 'Entrants, legal succession, chassis and power units need separate verified evidence. Constructor identity alone does not establish legal team continuity.'}</p>
     </section>
