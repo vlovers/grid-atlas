@@ -131,3 +131,26 @@ test('archive synopsis generates bilingual verified-result descriptions, not cha
   assert.equal(driverArchiveOverview(driver,null,'en'),null);
   assert.equal(driverArchiveOverview(driver,{...career,summary:{...career.summary,races:0}},'en'),null);
 });
+
+test('archive-backed story expansion works for every driver without fabricated life facts', () => {
+  const driver = { id: '9', external_id: 'sample', name: 'Sample Driver' };
+  const first = { race: race('10', 1950, 1), results: [] };
+  const last = { race: race('33', 1952, 7), results: [] };
+  const win = { race: race('21', 1951, 4), results: [] };
+  const career = {
+    summary: { races: 12, first_season: 1950, last_season: 1952, winning_races: 1, podium_result_entries: 3 },
+    participation: [row(1950)],
+    milestones: { first_appearance: first, last_appearance: last, first_win: win, last_win: win },
+  };
+  const en = driverArchiveOverview(driver, career, 'en');
+  const uk = driverArchiveOverview(driver, career, 'uk');
+  assert.equal(en.paragraphs.length, 5);
+  assert.equal(uk.paragraphs.length, 5);
+  assert.match(en.paragraphs[3], /1950 Synthetic race 10.*1952 Synthetic race 33/);
+  assert.match(uk.paragraphs[4], /1951.*Synthetic race 21/);
+  for (const result of [en, uk]) {
+    assert.equal(result.firstRace.id, '10');
+    assert.equal(result.firstWin.id, '21');
+    assert.doesNotMatch(result.paragraphs.join(' '), /championship title|світов(им|ий) чемпіон/);
+  }
+});
