@@ -168,3 +168,15 @@ test('season ledger and roster reject malformed IDs and years', async () => {
     assert.equal((await fetch(`${base}/api/${path}`)).status, 400);
   }
 });
+
+test('circuit history exposes shared-car winners without inventing a single winner', async () => {
+  const history = await get('circuits/1/history');
+  assert.equal(history.length, 1);
+  assert.equal(history[0].season_year, 1950);
+  assert.equal(history[0].recorded_drivers, 2);
+  assert.equal(history[0].recorded_constructors, 1);
+  assert.equal(history[0].winner_entries, 2);
+  assert.equal(history[0].winners.length, 2);
+  assert.deepEqual(await get('circuits/2/history'), []);
+  assert.equal((await fetch(`${base}/api/circuits/invalid/history`)).status, 400);
+});
