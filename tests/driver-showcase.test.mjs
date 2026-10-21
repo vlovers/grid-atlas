@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { fork } from 'node:child_process';
 import { once } from 'node:events';
 import { request as httpRequest } from 'node:http';
-import { raceMoments, teamEras, seasonMilestones, seasonPoints, timeMachinePath } from '../apps/web/src/components/driver/showcase-model.ts';
+import { driverArchiveOverview, raceMoments, teamEras, seasonMilestones, seasonPoints, timeMachinePath } from '../apps/web/src/components/driver/showcase-model.ts';
 import { showcaseCopy } from '../apps/web/src/components/driver/showcase-copy.ts';
 import { renderReview, reviewChapters, startReview } from '../scripts/preview-story-review.mjs';
 
@@ -107,4 +107,27 @@ test('local preview requires its ephemeral path, rejects foreign Host and public
   });
   assert.equal(foreignHostStatus, 404);
   assert.equal((await fetch(url, { method: 'POST' })).status, 404);
+});
+
+test('archive synopsis generates bilingual verified-result descriptions, not championship claims', () => {
+  const driver = { id:'72', name:'Test Driver', external_id:'test-driver' };
+  const first = {race: race('100',1980,1),results:[]};
+  const winning = {race: race('101',1981,2),results:[]};
+  const career = {
+    summary:{races:3,first_season:1980,last_season:1982,winning_races:1,podium_result_entries:2},
+    participation:[row(1980,'1'),row(1981,'1'),row(1982,'2')],
+    milestones:{first_appearance:first,first_win:winning}
+  };
+  const before=JSON.stringify(career);
+  const en=driverArchiveOverview(driver,career,'en');
+  const uk=driverArchiveOverview(driver,career,'uk');
+  assert.match(en.paragraphs[0],/3 distinct races.*1980–1982/);
+  assert.match(en.paragraphs[1],/Constructor 1, Constructor 2/);
+  assert.match(uk.paragraphs[0],/3 окремих гонок/);
+  assert.equal(en.firstRace.race.id,'100');
+  assert.equal(en.firstWin.race.id,'101');
+  assert.equal(JSON.stringify(career),before);
+  assert.ok(!en.paragraphs.join(' ').includes('champion'));
+  assert.equal(driverArchiveOverview(driver,null,'en'),null);
+  assert.equal(driverArchiveOverview(driver,{...career,summary:{...career.summary,races:0}},'en'),null);
 });
