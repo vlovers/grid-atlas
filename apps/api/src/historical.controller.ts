@@ -256,6 +256,22 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('constructors/:id/seasons/:year/drivers')
+  async constructorSeasonDrivers(@Param('id') id: string, @Param('year') year: string) {
+    const constructorId = integer(id, 0, 1, 2147483647, 'id');
+    const seasonYear = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query(`SELECT d.id::text AS driver_id, d.display_name AS driver_name,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_drivers d ON d.id = rr.driver_id
+      WHERE rr.constructor_id = $1 AND r.season_year = $2
+      GROUP BY d.id, d.display_name ORDER BY races DESC, d.display_name, d.id`,
+      [constructorId, seasonYear]);
+    return { data: rows };
+  }
+
   @Get('circuits')
   async circuits(@Query('limit') limit?: string, @Query('offset') offset?: string, @Query('q') query?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
