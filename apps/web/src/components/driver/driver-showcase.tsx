@@ -9,15 +9,15 @@ import type { MediaAsset } from '@/components/media/registry';
 import { selectMedia } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
 import { raceMoments, seasonPoints, teamEras, timeMachinePath,
-  type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam } from './showcase-model';
+  type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam, type DriverSeasonResult } from './showcase-model';
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
 type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[];
-  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string };
+  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[] };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults }: Props) {
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
   const opening = openingRecord(career);
@@ -136,6 +136,27 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
             </div>
             <p>{locale === 'uk' ? 'Групування за конструктором у записах гонок, не за контрактами. Спільні автомобілі та відсутні очки можуть впливати на підсумки.' : 'Grouped by constructor in recorded race results, not by contracts. Shared cars and missing points may affect totals.'}</p>
           </div>}
+          <section className={styles.seasonRaceLedger} aria-label={locale === 'uk' ? 'Результати гонок обраного сезону' : 'Selected season race results'}>
+            <h4>{locale === 'uk' ? 'Усі результати гонок' : 'Race-by-race results'} · {selected.year}</h4>
+            <p>{locale === 'uk' ? 'Кожен запис результату показано окремо: спільні автомобілі можуть створювати кілька записів для одного Гран-прі. Це не офіційна таблиця чемпіонату.' : 'Every recorded result entry is preserved; shared cars may produce multiple entries per Grand Prix. This is not an official championship classification.'}</p>
+            {seasonResults.length ? <div className={styles.raceTableScroll}><table>
+              <thead><tr>
+                <th>{locale === 'uk' ? 'Етап' : 'Round'}</th>
+                <th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th>
+                <th>{locale === 'uk' ? 'Команда' : 'Constructor'}</th>
+                <th>{locale === 'uk' ? 'Результат' : 'Result'}</th>
+                <th>{locale === 'uk' ? 'Кола' : 'Laps'}</th>
+                <th>{locale === 'uk' ? 'Очки' : 'Points'}</th>
+              </tr></thead>
+              <tbody>{seasonResults.map((result, index) => <tr key={`${result.race_id}:${result.constructor_id}:${result.position_display_order}:${index}`}>
+                <td>{result.round}</td>
+                <td><a href={`/${locale}/races/${result.race_id}`}>{result.race_name}</a>{result.race_date && <small>{result.race_date}</small>}</td>
+                <td><a href={`/${locale}/constructors/${result.constructor_id}?season=${selected.year}`}>{result.constructor_name}</a></td>
+                <td>{result.position_text}{result.shared_car && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}{result.reason_retired && <small>{result.reason_retired}</small>}</td>
+                <td>{result.laps ?? '—'}</td><td>{result.points ?? '—'}</td>
+              </tr>)}</tbody>
+            </table></div> : <p>{locale === 'uk' ? 'Результатів у цьому сезоні немає.' : 'No race results recorded for this season.'}</p>}
+          </section>
           <a className={styles.outlineLink} href={`/${locale}/explorer/drivers/${driver.id}?year=${selected.year}`}>{t.exploreConnections} ↗</a>
         </section>}
       </div>}
