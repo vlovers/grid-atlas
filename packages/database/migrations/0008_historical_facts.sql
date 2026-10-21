@@ -14,6 +14,7 @@ CREATE TABLE historical_technical_facts (
   source_publisher TEXT NOT NULL CHECK (length(btrim(source_publisher)) > 0),
   source_locator TEXT NOT NULL CHECK (length(btrim(source_locator)) > 0),
   source_accessed_on DATE NOT NULL,
+  publication_status TEXT NOT NULL DEFAULT 'unpublished' CHECK (publication_status = 'unpublished'),
   review_status TEXT NOT NULL DEFAULT 'draft'
     CHECK (review_status IN ('draft', 'reviewed', 'rejected')),
   reviewer TEXT,
@@ -35,13 +36,15 @@ CREATE TABLE historical_technical_facts (
     OR (entity_kind = 'circuit_layout' AND field_key IN ('length_m', 'turns', 'direction', 'svg_path'))
     OR (entity_kind = 'race_event' AND field_key IN ('scheduled_laps', 'drs_zones', 'tyre_compounds'))
   ),
+  CONSTRAINT technical_fact_entity_id CHECK (entity_id <= 2147483647),
   CONSTRAINT technical_fact_value CHECK (
     (field_key IN ('length_m', 'turns', 'scheduled_laps', 'drs_zones')
       AND jsonb_typeof(value) = 'number'
       AND value::text ~ '^[0-9]+$'
       AND (field_key = 'drs_zones' OR value::numeric > 0))
     OR (field_key = 'tyre_compounds' AND jsonb_typeof(value) = 'array'
-      AND jsonb_array_length(value) BETWEEN 1 AND 10)
+      AND jsonb_array_length(value) BETWEEN 1 AND 10
+      AND NOT jsonb_path_exists(value, '$[*] ? (@.type() != "string")'))
     OR (field_key NOT IN ('length_m', 'turns', 'scheduled_laps', 'drs_zones', 'tyre_compounds')
       AND jsonb_typeof(value) = 'string' AND length(btrim(value #>> '{}')) BETWEEN 1 AND 50000)
   )
