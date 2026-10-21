@@ -61,6 +61,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "fernando-alonso-early-f1",
+      "topic": "early_career",
+      "statement": "Алонсо дебютував у Формулі-1 за Minardi у 2001 році, став тестовим пілотом Renault у 2002-му, а з 2003 року виступав за цю команду.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fernando-alonso-f1-hall",
+          "locator": "Career section covering Minardi, Renault testing and the 2003 race seat.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "fernando-alonso-first-win",
+      "topic": "first_win",
+      "statement": "Алонсо здобув свою першу перемогу на Гран-прі Формули-1 у 2003 році в Угорщині за кермом Renault.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fernando-alonso-f1-hall",
+          "locator": "Paragraph on pole positions in Malaysia and Hungary and first Grand Prix victory.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -77,6 +103,20 @@
       "claim_ids": [
         "fernando-alonso-birth-location"
       ]
+    },
+    {
+      "section_id": "early-f1",
+      "title": "Початок кар’єри у Формулі-1",
+      "claim_ids": [
+        "fernando-alonso-early-f1"
+      ]
+    },
+    {
+      "section_id": "first-win",
+      "title": "Перша перемога на Гран-прі",
+      "claim_ids": [
+        "fernando-alonso-first-win"
+      ]
     }
   ],
   "gaps": [
@@ -86,7 +126,8 @@
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
     "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "Additional source-located career claims researched 2026-10-21; one Formula 1 publisher group for these claims. Cross-publisher verification and human EN/UK review remain outstanding."
   ],
   "media": []
 }
