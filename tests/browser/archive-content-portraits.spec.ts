@@ -10,6 +10,14 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(story).toContainText(locale === 'uk' ? 'не є офіційним' : 'not an official');
   });
 
+  test(`${locale}: constructor history portrait links source-backed drivers`, async ({ page }) => {
+    await page.goto(`/${locale}/constructors/1`);
+    const story = page.getByTestId('constructor-archive-portrait');
+    await expect(story).toBeVisible();
+    await expect(story).toContainText(locale === 'uk' ? 'протокол' : 'race-result');
+    await expect(story).toContainText(locale === 'uk' ? 'не виводяться' : 'not inferred');
+  });
+
   test(`${locale}: circuit winning-driver coverage is source bounded`, async ({ page }) => {
     await page.goto(`/${locale}/circuits/1`);
     const story = page.getByTestId('circuit-result-legends');
