@@ -29,6 +29,13 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
     if (!teams.has(row.constructor_id)) teams.set(row.constructor_id, { id: row.constructor_id, name: row.constructor_name, drivers: [] });
     teams.get(row.constructor_id)!.drivers.push(row);
   }
+  const prominentTeams = [...teams.values()].map(team => ({
+    ...team,
+    recordedWins: team.drivers.reduce((sum, driver) => sum + driver.wins, 0),
+    recordedRaces: Math.max(0, ...team.drivers.map(driver => driver.races)),
+  })).sort((a,b) => b.recordedWins - a.recordedWins || a.name.localeCompare(b.name)).slice(0, 5);
+  const participatingDrivers = new Set(lineups.map(driver => driver.driver_id)).size;
+  const raceCalendar = [...races].sort((a,b) => a.round-b.round);
   return <section className="page">
     <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
     <section aria-labelledby="season-journey" data-testid="season-journey">
@@ -42,6 +49,27 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
           </li>)}
       </ol> : <p>{t('noRaces')}</p>}
       <p>{locale === 'uk' ? 'Результати окремих гонок не дорівнюють офіційним підсумкам чемпіонату через історичні системи нарахування та відкидання очок.' : 'Individual race points cannot be treated as official championship totals because historical scoring and dropped-results rules varied.'}</p>
+    </section>
+    <section aria-labelledby="season-archive-story" data-testid="season-archive-story">
+      <h2 id="season-archive-story">{locale === 'uk' ? 'Портрет сезону за архівом' : 'An archive portrait of the season'}</h2>
+      <p>{locale === 'uk'
+        ? `Архів сезону ${year} містить ${races.length} етапів календаря, ${teams.size} конструкторів із гоночними результатами та ${participatingDrivers} пілотів із зафіксованими виступами. Це облік участі, а не офіційна кількість заявок на чемпіонат.`
+        : `The ${year} archive contains ${races.length} calendar rounds, ${teams.size} constructors with recorded results and ${participatingDrivers} drivers with observed participation. These are result-derived entries, not official full-season registration totals.`}</p>
+      {raceCalendar.length > 0 && <p>{locale === 'uk' ? 'Календар відкриває' : 'The recorded calendar opens with'}{' '}
+        <Link href={`/races/${raceCalendar[0].id}`}>{raceCalendar[0].official_name}</Link>
+        {raceCalendar.length > 1 && <> {locale === 'uk' ? 'і завершує' : 'and closes with'}{' '}
+          <Link href={`/races/${raceCalendar[raceCalendar.length - 1].id}`}>{raceCalendar[raceCalendar.length - 1].official_name}</Link></>}.
+      </p>}
+      <h3>{locale === 'uk' ? 'Конструктори з найбільшою кількістю перемог у результатах' : 'Constructors with the most recorded race-result wins'}</h3>
+      {prominentTeams.length ? <ol className="records">{prominentTeams.map(team =>
+        <li className="record" key={team.id}>
+          <span className="position">{team.recordedWins}</span>
+          <span><strong><Link href={`/constructors/${team.id}?season=${year}`}>{team.name} ↗</Link></strong>
+          <small>{team.drivers.length} {locale === 'uk' ? 'пілотів у результатах' : 'drivers in results'}</small></span>
+        </li>)}</ol> : <p>{t('noLineups')}</p>}
+      <p>{locale === 'uk'
+        ? 'Перемоги підсумовано за записами пілотів; історичні спільні автомобілі можуть впливати на облік. Цей список не є офіційним заліком Кубка конструкторів або підтвердженням титулу.'
+        : 'Wins are summed from driver result aggregates; historical shared drives may affect counting. This is not an official Constructors’ Championship table or a title claim.'}</p>
     </section>
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>

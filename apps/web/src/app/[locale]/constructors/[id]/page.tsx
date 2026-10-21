@@ -73,6 +73,29 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       </div>
       <p>{locale === 'uk' ? 'Показники відображають зафіксовані результати перегонів, а не офіційні очки чи місце в Кубку конструкторів. Технічні характеристики болідів і керівництво команди будуть показані лише після перевірки джерел для конкретного року.' : 'Figures reflect recorded race results, not official Constructors’ Championship points or standings. Chassis, engine and team leadership require independently verified season-specific sources.'}</p>
     </section>
+    <section aria-labelledby="constructor-archive-portrait" data-testid="constructor-archive-portrait">
+      <h2 id="constructor-archive-portrait">{locale === 'uk' ? 'Історія конструктора за сезонами' : 'Constructor history across seasons'}</h2>
+      <p>{locale === 'uk'
+        ? `В історичній базі конструктор ${team.name} має ${team.seasons} сезонів із зафіксованими результатами, ${team.races} різних гонок і ${drivers.length} пілотів у протоколах. Це не доказ безперервної юридичної історії команди.`
+        : `In the historical database, constructor ${team.name} has ${team.seasons} seasons with recorded results, ${team.races} distinct races and ${drivers.length} drivers in classifications. This does not establish an uninterrupted legal team history.`}</p>
+      {firstRecordedSeason && selectedSeason && <p>{locale === 'uk' ? 'Почніть із' : 'Start with'}{' '}
+        <Link href={`/constructors/${team.id}?season=${firstRecordedSeason.year}`}>{firstRecordedSeason.year}</Link>
+        {firstRecordedSeason.year !== selectedSeason.year && <> {locale === 'uk' ? 'або дослідіть' : 'or explore'}{' '}
+          <Link href={`/constructors/${team.id}?season=${selectedSeason.year}`}>{selectedSeason.year}</Link></>}.
+      </p>}
+      <h3>{locale === 'uk' ? 'Найбільш результативні пілоти за переможними записами' : 'Drivers with the most recorded winning results'}</h3>
+      {drivers.length ? <ol className="records">{[...drivers].map(driver => {
+        const rows = career?.participation.filter(row => row.related_id === driver.id) ?? [];
+        return { ...driver, winningRaces: rows.reduce((sum, row) => sum + row.winning_races, 0) };
+      }).sort((a,b) => b.winningRaces-a.winningRaces || a.name.localeCompare(b.name)).slice(0,5).map(driver =>
+        <li className="record" key={driver.id}><span className="position">{driver.winningRaces}</span>
+          <span><strong><Link href={`/drivers/${driver.id}`}>{driver.name} ↗</Link></strong>
+            <small>{[...driver.years].sort((a,b) => a-b).join(' · ')}</small></span></li>)}</ol>
+        : <p>{locale === 'uk' ? 'Немає зафіксованих пілотів.' : 'No recorded drivers.'}</p>}
+      <p>{locale === 'uk'
+        ? 'Підсумок спирається лише на протоколи перегонів. Спільні автомобілі та історичні правила можуть відрізнятися від сучасного визначення перемоги; офіційні титули не виводяться.'
+        : 'This summary uses race-result rows only. Shared cars and historical rules may differ from modern win definitions; official titles are not inferred.'}</p>
+    </section>
     {selectedSeason && <section aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
       <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
       <nav className="timeline-scroll" aria-label={locale === 'uk' ? 'Оберіть сезон' : 'Select a season'}>
