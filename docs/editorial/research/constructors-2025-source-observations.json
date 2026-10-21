@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "publication": "unpublished",
+  "review_status": "needs_review",
+  "scope": "point_in_time_2025",
+  "retrieved_on": "2026-10-21",
+  "disclaimer": "Research-only source-backed observations. No F1DB constructor IDs, review approval, external reproduction rights or public API publication are inferred. Team principals can change within the season; January preview is not a season-long contract.",
+  "sources": {
+    "ferrari-launch": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/first-look-ferrari-unveil-new-2025-car-after-sf-25-livery-reveal-during-f1.1IvvOTzHsJr2KsZoPPJNjE",
+      "published_on": "2025-02-18",
+      "source_scope": "Ferrari SF-25 unveiling; 2025 line-up and team principal",
+      "accessed_on": "2026-10-21"
+    },
+    "ferrari-tech": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/tech-analysis-the-significant-changes-that-are-giving-ferrari-confidence-in.2XQT2NTtK70LNqMKCaEGZO",
+      "published_on": "2025-02-19",
+      "source_scope": "Technical analysis: 2025 SF-25 front suspension",
+      "accessed_on": "2026-10-21"
+    },
+    "mclaren-tech": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/tech-analysis-how-mclarens-mcl39-has-benefitted-from-an-aggressive-evolution.5m6ljEuYuybirNZAB86Vun",
+      "published_on": "2025-02-13",
+      "source_scope": "2025 McLaren MCL39 and Andrea Stella technical remarks",
+      "accessed_on": "2026-10-21"
+    },
+    "mercedes-tech": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/tech-analysis-how-mercedes-have-targeted-their-key-weaknesses-through-the.01qX10KtcigWQeyCCLAYvm",
+      "published_on": "2025-02-25",
+      "source_scope": "2025 Mercedes W16 and James Allison remarks",
+      "accessed_on": "2026-10-21"
+    },
+    "team-principals-2025": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/who-are-the-2025-f1-team-principals.2GSAsHzQG3pHubcnxBOV8t",
+      "published_on": "2025-01-23",
+      "source_scope": "F1 2025 team principals before season (point-in-time)",
+      "accessed_on": "2026-10-21"
+    },
+    "mclaren-power": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/mclaren-agree-extension-to-use-mercedes-power-until-2030.10wqQXRsRIS84r4mi0vhT5",
+      "published_on": "2023-11-24",
+      "source_scope": "McLaren Mercedes power units from 2021 and through planned 2030 agreement",
+      "accessed_on": "2026-10-21"
+    },
+    "mercedes-preview": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/team-preview-the-post-hamilton-era-has-arrived-2025-is-the-start-of-mercedes.1SrRneGmH9e5sj5XZ3wDXv",
+      "published_on": "2025-02-22",
+      "source_scope": "Mercedes 2025 Russell and Antonelli roster",
+      "accessed_on": "2026-10-21"
+    },
+    "mclaren-stella": {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/latest/article/brown-hails-secret-weapon-stella-as-the-best-team-principal-in-f1-amid.2go6UUh6p4aL6qMzPpr3w0",
+      "published_on": "2025-04-02",
+      "source_scope": "Andrea Stella McLaren team principal, appointment in December 2022",
+      "accessed_on": "2026-10-21"
+    }
+  },
+  "claims": [
+    {
+      "entity_slug": "ferrari",
+      "season_year": 2025,
+      "field": "chassis",
+      "value": "SF-25",
+      "source_id": "ferrari-launch",
+      "locator": "The first images of their new challenger – the SF-25",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "ferrari",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Fred Vasseur",
+      "source_id": "ferrari-launch",
+      "locator": "Team Principal Fred Vasseur",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "ferrari",
+      "season_year": 2025,
+      "field": "technical_note",
+      "value": "Front pull-rod suspension, rear pull-rod",
+      "source_id": "ferrari-tech",
+      "locator": "Technical analysis: switch ... push rod front suspension to a pull rod layout; rear remains pull rod",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "ferrari",
+      "season_year": 2025,
+      "field": "driver_lineup",
+      "value": "Lewis Hamilton; Charles Leclerc",
+      "source_id": "ferrari-launch",
+      "locator": "new driver line-up of Lewis Hamilton and Charles Leclerc",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "mclaren",
+      "season_year": 2025,
+      "field": "chassis",
+      "value": "MCL39",
+      "source_id": "mclaren-tech",
+      "locator": "new McLaren MCL39",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "mclaren",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Andrea Stella",
+      "source_id": "mclaren-tech",
+      "locator": "Team Principal Andrea Stella",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "mclaren",
+      "season_year": 2025,
+      "field": "power_unit",
+      "value": "Mercedes",
+      "source_id": "mclaren-power",
+      "locator": "The British team have run Mercedes power since 2021",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "mercedes",
+      "season_year": 2025,
+      "field": "chassis",
+      "value": "W16",
+      "source_id": "mercedes-tech",
+      "locator": "TECH ANALYSIS headline: Russell and Antonelli’s brand-new W16 (2025 Mercedes chassis)",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "mercedes",
+      "season_year": 2025,
+      "field": "technical_chief",
+      "value": "James Allison",
+      "source_id": "mercedes-tech",
+      "locator": "Technical Director James Allison",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "mercedes",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Toto Wolff",
+      "source_id": "team-principals-2025",
+      "locator": "Mercedes – Toto Wolff",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "mercedes",
+      "season_year": 2025,
+      "field": "driver_lineup",
+      "value": "George Russell; Kimi Antonelli",
+      "source_id": "mercedes-preview",
+      "locator": "Drivers for 2025: Andrea Kimi Antonelli; George Russell",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Source indicates the specified 2025 team/event; model and equipment are season-specific."
+    },
+    {
+      "entity_slug": "williams",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "James Vowles",
+      "source_id": "team-principals-2025",
+      "locator": "Williams | James Vowles",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "aston-martin",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Andy Cowell",
+      "source_id": "team-principals-2025",
+      "locator": "Aston Martin | Andy Cowell",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "alpine",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Oliver Oakes",
+      "source_id": "team-principals-2025",
+      "locator": "Alpine | Oliver Oakes",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    },
+    {
+      "entity_slug": "racing-bulls",
+      "season_year": 2025,
+      "field": "team_principal",
+      "value": "Laurent Mekies",
+      "source_id": "team-principals-2025",
+      "locator": "Racing Bulls | Laurent Mekies",
+      "internal_constructor_id": null,
+      "human_reviewed": false,
+      "publication_allowed": false,
+      "media": [],
+      "limitation": "Point-in-time source, not proof of office for every day of 2025."
+    }
+  ]
+}
