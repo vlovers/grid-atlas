@@ -48,6 +48,19 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-1957-germany",
+      "topic": "key_events",
+      "statement": "На Гран-прі Німеччини 1957 року Фанхіо відіграв відставання після піт-стопу та здобув перемогу.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "juan-manuel-fangio-f1-hall",
+          "locator": "1957 German Grand Prix Nürburgring comeback paragraph",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -56,6 +69,13 @@
       "title": "Чемпіонські титули",
       "claim_ids": [
         "juan-manuel-fangio-titles"
+      ]
+    },
+    {
+      "section_id": "1957-germany",
+      "title": "Гран-прі Німеччини 1957",
+      "claim_ids": [
+        "juan-manuel-fangio-1957-germany"
       ]
     }
   ],
