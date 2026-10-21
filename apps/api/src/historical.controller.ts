@@ -122,6 +122,24 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('drivers/:id/seasons/:year/results')
+  async driverSeasonResults(@Param('id') id: string, @Param('year') year: string) {
+    const driverId = integer(id, 0, 1, 2147483647, 'id');
+    const seasonYear = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query(`SELECT r.id::text AS race_id, r.round,
+      r.race_date::text AS race_date, r.official_name AS race_name,
+      c.id::text AS constructor_id, c.display_name AS constructor_name,
+      rr.position_display_order, rr.position_number, rr.position_text,
+      rr.points::text AS points, rr.laps, rr.reason_retired, rr.shared_car
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_constructors c ON c.id = rr.constructor_id
+      WHERE rr.driver_id = $1 AND r.season_year = $2
+      ORDER BY r.round, r.race_date NULLS LAST, r.id, rr.position_display_order, rr.id`,
+      [driverId, seasonYear]);
+    return { data: rows };
+  }
+
   @Get('drivers/:id/teams')
   async driverTeams(@Param('id') id: string) {
     const driverId = integer(id, 0, 1, 2147483647, 'id');
