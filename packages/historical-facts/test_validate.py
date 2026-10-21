@@ -61,6 +61,28 @@ class ValidationTests(unittest.TestCase):
         del row["source"]
         self.assertTrue(module.validate(row))
 
+    def test_reject_private_source(self):
+        row = fact()
+        row["source"]["url"] = "https://127.0.0.1/internal"
+        self.assertTrue(module.validate(row))
+
+    def test_reject_invalid_calendar_date(self):
+        row = fact()
+        row["source"]["accessed_on"] = "2026-02-31"
+        self.assertTrue(module.validate(row))
+
+    def test_require_layout_for_all_circuit_fields(self):
+        row = fact()
+        row.update(entity_kind="circuit_layout", field="turns", value=12)
+        self.assertTrue(module.validate(row))
+        row["layout_version"] = "sample"
+        self.assertEqual(module.validate(row), [])
+
+    def test_reject_svg_without_move(self):
+        row = fact()
+        row.update(entity_kind="circuit_layout", field="svg_path", value="L 1 1 Z", layout_version="sample")
+        self.assertTrue(module.validate(row))
+
     def test_reject_out_of_range_year(self):
         row = fact()
         row["year"] = 1900
