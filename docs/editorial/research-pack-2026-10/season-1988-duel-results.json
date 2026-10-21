@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "kind": "official_f1_driver_race_record_comparison",
+  "season": 1988,
+  "visibility": "internal_only",
+  "publication_allowed": false,
+  "source_observation": "official_f1_tables_read_not_independently_editorially_approved",
+  "sources": [
+    {
+      "id": "senna-driver-1988",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/1988/drivers/AYRSEN01/ayrton-senna",
+      "locator": "1988 Ayrton Senna driver standings, all 16 Grand Prix rows"
+    },
+    {
+      "id": "prost-driver-1988",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/1988/drivers/ALAPRO01/alain-prost",
+      "locator": "1988 Alain Prost driver standings, all 16 Grand Prix rows"
+    },
+    {
+      "id": "official-1988",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/1988/drivers",
+      "locator": "Final 1988 drivers classification positions 1 and 2"
+    }
+  ],
+  "races": [
+    {
+      "round": 1,
+      "grand_prix": "Brazil",
+      "senna": {
+        "race_position": "DNF",
+        "listed_points": 0,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 2,
+      "grand_prix": "San Marino",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 3,
+      "grand_prix": "Monaco",
+      "senna": {
+        "race_position": "DNF",
+        "listed_points": 0,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 4,
+      "grand_prix": "Mexico",
+      "senna": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 5,
+      "grand_prix": "Canada",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 6,
+      "grand_prix": "Detroit",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 7,
+      "grand_prix": "France",
+      "senna": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 8,
+      "grand_prix": "Great Britain",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": "DNF",
+        "listed_points": 0,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 9,
+      "grand_prix": "Germany",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 10,
+      "grand_prix": "Hungary",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 11,
+      "grand_prix": "Belgium",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 12,
+      "grand_prix": "Italy",
+      "senna": {
+        "race_position": "DNF",
+        "listed_points": 0,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": "DNF",
+        "listed_points": 0,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 13,
+      "grand_prix": "Portugal",
+      "senna": {
+        "race_position": 6,
+        "listed_points": 1,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 14,
+      "grand_prix": "Spain",
+      "senna": {
+        "race_position": 4,
+        "listed_points": 3,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 15,
+      "grand_prix": "Japan",
+      "senna": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    },
+    {
+      "round": 16,
+      "grand_prix": "Australia",
+      "senna": {
+        "race_position": 2,
+        "listed_points": 6,
+        "source_id": "senna-driver-1988"
+      },
+      "prost": {
+        "race_position": 1,
+        "listed_points": 9,
+        "source_id": "prost-driver-1988"
+      },
+      "claim_status": "needs_independent_human_review"
+    }
+  ],
+  "official_final_standings": {
+    "senna": 90,
+    "prost": 87
+  },
+  "pitfalls": [
+    "Per-race points listed on the official driver page do not necessarily sum to championship points under the period's counting rules.",
+    "DNF is a display value in the F1 driver page, not an imported PostgreSQL position_number.",
+    "Driver standings tables alone do not establish lap-by-lap race developments or technical causes.",
+    "Official-source transcription and pinned F1DB parity are distinct gates.",
+    "Independent human review, locale copy approval and media rights remain outstanding."
+  ],
+  "review": {
+    "historical_human": false,
+    "uk": false,
+    "en": false,
+    "media": false,
+    "publish": false
+  }
+}
