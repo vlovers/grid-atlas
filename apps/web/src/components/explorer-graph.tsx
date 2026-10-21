@@ -93,19 +93,31 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
         panel?.scrollIntoView({ block: "nearest" });
       });
   };
+  // Next.js can update search-param props after a history traversal without
+  // remounting this graph. Keep selection synchronized with both navigation
+  // events and the eventual server-provided selectedId.
   useEffect(() => {
-    const sync = () => {
-      const id = new URL(window.location.href).searchParams.get("selected");
+    const syncSelection = (id: string | null) => {
       const index = graph.edges.findIndex(
         (edge) =>
           graph.nodes.find((node) => node.key === edge.to)?.entity_id === id,
       );
       setSelectedKey(graph.edges[Math.max(0, index)]?.key);
-      setWindowIndex(Math.floor(index / pageSize));
+      setWindowIndex(Math.floor(Math.max(0, index) / pageSize));
     };
-    window.addEventListener("popstate", sync);
-    return () => window.removeEventListener("popstate", sync);
+    const onPopState = () =>
+      syncSelection(new URL(window.location.href).searchParams.get("selected"));
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, [graph, pageSize]);
+  useEffect(() => {
+    const index = graph.edges.findIndex(
+      (edge) =>
+        graph.nodes.find((node) => node.key === edge.to)?.entity_id === selectedId,
+    );
+    setSelectedKey(graph.edges[Math.max(0, index)]?.key);
+    setWindowIndex(Math.floor(Math.max(0, index) / pageSize));
+  }, [selectedId, graph, pageSize]);
   useEffect(() => {
     const el = viewport.current;
     if (el) el.scrollLeft = (el.scrollWidth - el.clientWidth) / 2;
