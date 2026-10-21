@@ -40,6 +40,15 @@ export default async function ConstructorProfile({ params }: Props) {
         {t('constructor')}: {t('season')} {seasons[0].year} → Explorer
       </Link>
     </p>}
+    <section aria-label={locale === 'uk' ? 'Історичний профіль команди' : 'Constructor history facts'}>
+      <h2>{locale === 'uk' ? 'Історичні факти' : 'Historical quick facts'}</h2>
+      <div className="driver-grid">
+        {team.first_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Перший сезон у базі' : 'First recorded season'}</span><h3><Link href={`/seasons/${team.first_season}`}>{team.first_season}</Link></h3></article>}
+        {team.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останній сезон у базі' : 'Latest recorded season'}</span><h3><Link href={`/seasons/${team.last_season}`}>{team.last_season}</Link></h3></article>}
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Подіуми пілотів у результатах' : 'Driver podium result entries'}</span><h3>{team.podium_finishes}</h3></article>
+      </div>
+      <p>{locale === 'uk' ? 'Показники відображають зафіксовані результати перегонів, а не офіційні очки чи місце в Кубку конструкторів. Технічні характеристики болідів і керівництво команди будуть показані лише після перевірки джерел для конкретного року.' : 'Figures reflect recorded race results, not official Constructors’ Championship points or standings. Chassis, engine and team leadership require independently verified season-specific sources.'}</p>
+    </section>
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>
