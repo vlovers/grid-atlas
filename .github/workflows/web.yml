@@ -42,6 +42,7 @@ jobs:
           --health-interval 5s --health-timeout 5s --health-retries 12
     env:
       DATABASE_URL: postgresql://grid_atlas:integration_only@localhost:5432/grid_atlas
+      GRID_ATLAS_NEXT_DIST_DIR: .next-test
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

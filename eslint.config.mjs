@@ -6,7 +6,7 @@ import next from '@next/eslint-plugin-next';
 import { fileURLToPath } from 'node:url';
 
 export default ts.config(
-  { ignores: ['**/node_modules/**', '**/dist/**', '**/.next/**', '**/next-env.d.ts', 'test-results/**', 'playwright-report/**'] },
+  { ignores: ['**/node_modules/**', '**/dist/**', '**/.next/**', '**/.next-test/**', '**/next-env.d.ts', 'test-results/**', 'playwright-report/**'] },
   js.configs.recommended,
   ...ts.configs.recommended,
   { languageOptions: { globals: { ...globals.node, ...globals.browser } }, plugins: { '@next/next': next }, settings: { next: { rootDir: fileURLToPath(new URL('./apps/web/', import.meta.url)) } } },

@@ -1,10 +1,10 @@
 /** Public profile/career API fields only. No editorial or championship inference. */
 export type DriverProfile = { id: string; name: string; external_id: string; seasons: number;
   first_season: number | null; last_season: number | null; wins: number; podiums: number };
-export type DriverSeason = { year: number; starts: number; wins: number; podiums: number; points: string };
+export type DriverSeason = { year: number; starts: number; wins: number; podiums: number; points: string | null; points_missing?: number };
 export type DriverSeasonResult = { race_id: string; round: number; race_date: string | null; race_name: string;
   constructor_id: string; constructor_name: string; position_display_order: number; position_number: number | null;
-  position_text: string; points: string | null; laps: number | null; reason_retired: string | null; shared_car: boolean };
+  position_text: string; points: string | null; driver_number?: string; laps: number | null; reason_retired: string | null; shared_car: boolean };
 export type DriverTeam = { year: number; constructor_id: string; constructor_name: string; races: number; wins: number };
 export type CareerRace = { id: string; year: number; round: number; name: string; date: string | null; circuit_id: string | null };
 export type CareerResult = { driver_id: string; constructor_id: string; position_display_order: number;
@@ -67,7 +67,7 @@ export function seasonMilestones(seasons: readonly DriverSeason[]) {
 export function seasonPoints(season: DriverSeason, participation: readonly Participation[]) {
   const rows = participation.filter(row => row.year === season.year);
   return { value: rows.length && rows.every(row => row.recorded_points === null) ? null : season.points,
-    partial: rows.some(row => row.points_missing > 0) };
+    partial: (season.points_missing ?? 0) > 0 || rows.some(row => row.points_missing > 0) };
 }
 
 export function timeMachinePath(id: string, years: readonly number[]) {

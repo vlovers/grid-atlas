@@ -10,6 +10,9 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
+      - 'scripts/audit-encyclopedia.py'
+      - 'tests/test_import_identity_details.py'
+      - 'tests/test_encyclopedia_audit.py'
       - 'scripts/prepare_bulk_driver_cohort.py'
       - 'scripts/prepare_editorial_batch.py'
       - 'tests/test_bulk_driver_cohort.py'
@@ -28,6 +31,7 @@ on:
       - 'packages/data-importer/**'
       - 'scripts/import-f1db.sh'
       - 'scripts/verify-real-archive.py'
+      - 'scripts/audit-encyclopedia.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
       - 'docs/media/pilot-identities.json'
@@ -38,7 +42,7 @@ permissions:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     services:
       postgres:
         image: postgres:17-alpine
@@ -52,6 +56,7 @@ jobs:
           --health-interval 5s --health-timeout 5s --health-retries 12
     env:
       DATABASE_URL: postgresql://grid_atlas:integration_only@127.0.0.1:5432/grid_atlas
+      GRID_ATLAS_NEXT_DIST_DIR: .next-test
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -107,10 +112,31 @@ jobs:
           echo "SMOKE_YEAR=$YEAR" >> "$GITHUB_ENV"
           echo "SMOKE_DRIVER_ID=$DRIVER" >> "$GITHUB_ENV"
           echo "SMOKE_CONSTRUCTOR_ID=$CONSTRUCTOR" >> "$GITHUB_ENV"
+      - name: Audit every archive entity, season API and UK/EN canonical profile
+        run: |
+          HOST=127.0.0.1 PORT=3350 node apps/api/dist/main.js > /tmp/encyclopedia-api.log 2>&1 &
+          API_PID=$!
+          API_BASE_URL=http://127.0.0.1:3350 SITE_URL=http://127.0.0.1:3351 node apps/web/node_modules/next/dist/bin/next start apps/web --hostname 127.0.0.1 --port 3351 > /tmp/encyclopedia-web.log 2>&1 &
+          WEB_PID=$!
+          trap 'kill "$API_PID" "$WEB_PID" 2>/dev/null || true; wait "$API_PID" "$WEB_PID" 2>/dev/null || true; cat /tmp/encyclopedia-api.log; tail -40 /tmp/encyclopedia-web.log' EXIT
+          for i in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:3350/api/health && curl --fail --silent http://127.0.0.1:3351/en > /dev/null; then break; fi
+            sleep 1
+          done
+          python3 scripts/audit-encyclopedia.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt --api-url http://127.0.0.1:3350/api --web-url http://127.0.0.1:3351 --output /tmp/encyclopedia-coverage.json
       - name: Select real high-degree and long-name cases
         run: python3 scripts/select-real-archive-stress.py
       - name: Test actual imported archive via production web browser
         run: pnpm exec playwright test --config playwright.real-archive.config.ts
+      - name: Upload full coverage audit and browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: encyclopedia-coverage-and-screenshots
+          path: |
+            /tmp/encyclopedia-coverage.json
+            test-results/
+          retention-days: 14
       - name: Upload real archive browser failure evidence
         if: failure()
         uses: actions/upload-artifact@v4

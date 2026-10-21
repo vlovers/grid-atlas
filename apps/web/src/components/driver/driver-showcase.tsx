@@ -16,10 +16,10 @@ import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
 type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[];
-  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[] };
+  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults, identity }: Props) {
   const pilot = releasePilot(driver.external_id);
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
@@ -71,6 +71,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       </dl>
       <p className={styles.heroScope}>{t.scope}</p>
     </header>
+
+    {identity}
 
     {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
       <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
@@ -148,6 +150,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
                 <th>{locale === 'uk' ? 'Етап' : 'Round'}</th>
                 <th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th>
                 <th>{locale === 'uk' ? 'Команда' : 'Constructor'}</th>
+                <th>{locale === 'uk' ? 'Номер у гонці' : 'Race number'}</th>
                 <th>{locale === 'uk' ? 'Результат' : 'Result'}</th>
                 <th>{locale === 'uk' ? 'Кола' : 'Laps'}</th>
                 <th>{locale === 'uk' ? 'Очки' : 'Points'}</th>
@@ -156,6 +159,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
                 <td>{result.round}</td>
                 <td><a href={`/${locale}/races/${result.race_id}`}>{result.race_name}</a>{result.race_date && <small>{result.race_date}</small>}</td>
                 <td><a href={`/${locale}/constructors/${result.constructor_id}?season=${selected.year}`}>{result.constructor_name}</a></td>
+                <td>{result.driver_number ?? '—'}</td>
                 <td>{result.position_text}{result.shared_car && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}{result.reason_retired && <small>{result.reason_retired}</small>}</td>
                 <td>{result.laps ?? '—'}</td><td>{result.points ?? '—'}</td>
               </tr>)}</tbody>

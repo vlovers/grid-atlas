@@ -13,7 +13,7 @@
     "typecheck": "pnpm -r --if-present typecheck",
     "build": "pnpm -r --if-present build",
     "test:integration": "pnpm --filter @grid-atlas/api test:integration",
-    "test:browser": "pnpm build && playwright test"
+    "test:browser": "GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build && GRID_ATLAS_NEXT_DIST_DIR=.next-test playwright test"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
