@@ -25,7 +25,7 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const { id, locale: requestedLocale } = await params;
   if (!validId(id)) notFound();
   const locale = requestedLocale === 'en' ? 'en' : 'uk';
-  const [profiles, seasons, teams, careers, article, query, identities] = await Promise.all([
+  const [profiles, seasons, teams, careers, article, championships, query, identities] = await Promise.all([
     getData<DriverProfile>(`/api/drivers/${id}`), getData<DriverSeason>(`/api/drivers/${id}/seasons`),
     getData<DriverTeam>(`/api/drivers/${id}/teams`), getData<DriverCareer>(`/api/drivers/${id}/career?locale=${locale}`),
     getPublishedArticle(id, locale), getData<ChampionshipRow>(`/api/drivers/${id}/championships`), searchParams, getData<IdentityDetails>(`/api/drivers/${id}/identity`),
