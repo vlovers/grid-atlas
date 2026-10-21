@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "primary_classification_verification_only",
+  "verified_on": "2026-10-21",
+  "verified_by": "AI-assisted public source inspection",
+  "publication_allowed": false,
+  "independent_editorial_approval": false,
+  "records": [
+    {
+      "id": "prost-dijon-1981",
+      "url": "https://www.formula1.com/en/results/1981/races/429/france/race-result",
+      "date": "1981-07-05",
+      "winner": "Alain Prost",
+      "team": "Renault",
+      "laps": 80,
+      "p2": "John Watson",
+      "p2gap": "+2.290s",
+      "p3": "Nelson Piquet",
+      "p3gap": "+24.220s",
+      "status": "primary_result_checked",
+      "gaps": [
+        "No independent contemporary account of tactical circumstances",
+        "First career win additionally corroborated by the season winner sequence"
+      ]
+    },
+    {
+      "id": "schumacher-spa-1992",
+      "url": "https://www.formula1.com/en/results/1992/races/585/belgium/race-result",
+      "date": "1992-08-30",
+      "winner": "Michael Schumacher",
+      "team": "Benetton Ford",
+      "laps": 44,
+      "p2": "Nigel Mansell",
+      "p2gap": "+36.595s",
+      "p3": "Riccardo Patrese",
+      "p3gap": "+43.897s",
+      "status": "primary_result_checked",
+      "gaps": [
+        "Weather, tyre strategy and stop timing not verified from classification",
+        "Independent first-career-win context requires separate source"
+      ]
+    },
+    {
+      "id": "prost-estoril-1993",
+      "url": "https://www.formula1.com/en/results/1993/races/602/portugal/race-result",
+      "date": "1993-09-26",
+      "winner": "Michael Schumacher",
+      "team": "Benetton Ford",
+      "laps": 71,
+      "p2": "Alain Prost",
+      "p2gap": "+0.982s",
+      "p3": "Damon Hill",
+      "p3gap": "+8.206s",
+      "status": "primary_result_checked",
+      "gaps": [
+        "Championship clinch requires the actual season classification and point rules",
+        "A second independent source is needed for championship implications"
+      ]
+    }
+  ]
+}
