@@ -98,7 +98,26 @@ export function driverArchiveOverview(driver: DriverProfile, career: DriverCaree
     : (locale === 'en'
       ? `There are no winning races in the imported results; ${n(career.summary.podium_result_entries)} podium result entries are recorded.`
       : `В імпортованих результатах немає переможних гонок; зафіксовано ${n(career.summary.podium_result_entries)} подіумних записів результатів.`);
-  return { paragraphs: [opener, teams, wins].filter((v): v is string => Boolean(v)),
-    firstRace: career.milestones.first_appearance?.race ?? null,
-    firstWin: career.milestones.first_win?.race ?? null };
+  // Every driver with race-result evidence gets a concise, fully archive-bound
+  // chronology without claiming that a research dossier has editorial approval.
+  const first = career.milestones.first_appearance?.race;
+  const last = career.milestones.last_appearance?.race;
+  const chronology = first && last
+    ? (first.id === last.id
+      ? (locale === 'en'
+        ? `The recorded appearance is the ${first.year} ${first.name}; this archive synopsis does not establish a complete life story.`
+        : `У цьому архіві зафіксовано участь у ${first.year} році на ${first.name}; цей огляд не є повною біографією.`)
+      : (locale === 'en'
+        ? `The archive trail runs from the ${first.year} ${first.name} to the ${last.year} ${last.name}. Those are recorded result boundaries, not evidence of an uninterrupted contract or every attempted start.`
+        : `Архівна хронологія простягається від ${first.year} року (${first.name}) до ${last.year} року (${last.name}). Це межі зафіксованих результатів, а не підтвердження безперервного контракту чи кожної спроби старту.`))
+    : null;
+  const breakthrough = career.milestones.first_win?.race;
+  const firstWin = breakthrough
+    ? (locale === 'en'
+      ? `The first recorded winning result is associated with the ${breakthrough.year} ${breakthrough.name}; open the race evidence to inspect the underlying classification.`
+      : `Перший зафіксований переможний результат пов’язаний із ${breakthrough.year} роком і гонкою ${breakthrough.name}; перейдіть до протоколу гонки, щоб перевірити класифікацію.`)
+    : null;
+  return { paragraphs: [opener, teams, wins, chronology, firstWin].filter((v): v is string => Boolean(v)),
+    firstRace: first ?? null,
+    firstWin: breakthrough ?? null };
 }

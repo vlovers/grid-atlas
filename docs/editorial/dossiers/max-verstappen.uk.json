@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "driver_id": "max-verstappen",
+  "locale": "uk",
+  "title": "Max Verstappen",
+  "author": "AI-assisted research draft; accountable human author not yet assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "max-f1-profile",
+      "source_url": "https://www.formula1.com/en/drivers/max-verstappen",
+      "title": "Max Verstappen driver profile",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "max-f1-2016",
+      "source_url": "https://www.formula1.com/en/results/2016/drivers/MAXVER01/max-verstappen",
+      "title": "2016 Max Verstappen Driver Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "max-f1-oral",
+      "source_url": "https://www.formula1.com/en/latest/article/oral-history-verstappens-remarkable-debut-red-bull-win-remembered-by-those-who-witnessed-it.7aXZLi1hvcLH7hhXCMxFI8.7aXZLi1hvcLH7hhXCMxFI8",
+      "title": "Verstappen’s remarkable debut Red Bull win: oral history",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "max-f1-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-max-verstappen.2DttvntAuFvHYrBY2tV8fN",
+      "title": "Max Verstappen Hall of Fame",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "max-fia-2024",
+      "source_url": "https://www.fia.com/events/fia-formula-one-world-championship/season-2024/2024-classifications-0",
+      "title": "2024 FIA Formula One World Championship classifications",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "FIA 2024 classifications archive, current page as accessed 2026-10-21",
+      "independence_group": "fia"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "verstappen-debut",
+      "topic": "debut",
+      "statement": "Макс Ферстаппен дебютував у Формулі-1 у 2015 році за Scuderia Toro Rosso у віці 17 років.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-profile",
+          "locator": "Biography: youngest driver, first win and championship chronology",
+          "supports": true
+        },
+        {
+          "source_id": "max-f1-hall",
+          "locator": "2015 debut, May 2016 promotion and first victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "verstappen-red-bull",
+      "topic": "red-bull",
+      "statement": "Протягом сезону 2016 року Ферстаппен перейшов із Toro Rosso до Red Bull Racing.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-2016",
+          "locator": "2016 round-by-round constructor and race results",
+          "supports": true
+        },
+        {
+          "source_id": "max-f1-hall",
+          "locator": "2015 debut, May 2016 promotion and first victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "verstappen-first-win",
+      "topic": "first-win",
+      "statement": "15 травня 2016 року Ферстаппен виграв Гран-прі Іспанії у своїй першій гонці за Red Bull Racing.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-2016",
+          "locator": "2016 round-by-round constructor and race results",
+          "supports": true
+        },
+        {
+          "source_id": "max-f1-oral",
+          "locator": "Retrospective published 15 May 2026, 2015 debut and 2016 win",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "verstappen-youngest-winner",
+      "topic": "youngest-winner",
+      "statement": "На момент першої перемоги на Гран-прі Іспанії 2016 року Ферстаппену було 18 років і 228 днів — він став наймолодшим переможцем гонки Формули-1.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-profile",
+          "locator": "Biography: youngest driver, first win and championship chronology",
+          "supports": true
+        },
+        {
+          "source_id": "max-f1-oral",
+          "locator": "Retrospective published 15 May 2026, 2015 debut and 2016 win",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "verstappen-championships",
+      "topic": "championships",
+      "statement": "Офіційна біографія Формули-1 зазначає чотири поспіль чемпіонські титули Ферстаппена серед пілотів у 2021–2024 роках.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-profile",
+          "locator": "Biography: youngest driver, first win and championship chronology",
+          "supports": true
+        },
+        {
+          "source_id": "max-fia-2024",
+          "locator": "2024 Drivers classification: Max Verstappen first in championship; other individual title years remain sourced from Formula 1 Hall of Fame",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "verstappen-season-2023",
+      "topic": "season-2023",
+      "statement": "За даними біографії на сайті Формули-1, у 2023 році Ферстаппен переміг у 19 із 23 Гран-прі.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "max-f1-profile",
+          "locator": "Biography: youngest driver, first win and championship chronology",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "debut",
+      "title": "Перші сезони",
+      "claim_ids": [
+        "verstappen-debut",
+        "verstappen-red-bull"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Перша перемога",
+      "claim_ids": [
+        "verstappen-first-win",
+        "verstappen-youngest-winner"
+      ]
+    },
+    {
+      "section_id": "championships",
+      "title": "Чемпіонські сезони",
+      "claim_ids": [
+        "verstappen-championships",
+        "verstappen-season-2023"
+      ]
+    }
+  ],
+  "gaps": [
+    "Every statement, source locator, translation and identity still requires independent human verification and accountable author/reviewer sign-off.",
+    "Official championship titles must be reconciled with season classification records, not inferred from F1DB race-result points.",
+    "Sources are live webpages; record stable snapshots where possible and re-open during review.",
+    "No photographs or other media have cleared a reuse-rights review; this is unpublished research.",
+    "All championship results require independent official FIA season classification checks before publication."
+  ],
+  "media": []
+}

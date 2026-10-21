@@ -2,34 +2,141 @@
   "schema_version": 1,
   "driver_id": "lewis-hamilton",
   "locale": "en",
-  "title": "Lewis Hamilton — championship research pilot",
-  "author": "AI-assisted source review; accountable human author not yet assigned",
+  "title": "Lewis Hamilton",
+  "author": "AI-assisted research draft; accountable human author not yet assigned",
   "status": "needs_review",
   "publication_status": "unpublished",
   "reviewer": null,
   "reviewed_at": null,
   "sources": [
     {
-      "source_id": "lewis-hamilton-f1-hall",
+      "source_id": "hamilton-f1-2007",
+      "source_url": "https://www.formula1.com/en/results/2007/drivers/LEWHAM01/lewis-hamilton",
+      "title": "2007 Lewis Hamilton Driver Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-canada-2007",
+      "source_url": "https://www.formula1.com/en/results/2007/races/813/canada/race-result",
+      "title": "2007 Canadian Grand Prix race result",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-f1-history",
+      "source_url": "https://www.formula1.com/en/latest/article/lewis-hamilton-40-birthday-f1-icon-mclaren-mercedes-ferrari.7xouhy1Guqt84fydAPyGny",
+      "title": "40 times Lewis Hamilton showed he was an F1 icon",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-f1-championship",
       "source_url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-drivers-championship.53MjXJzTDxQnfxfoCLnxNZ",
       "title": "The beginner’s guide to the F1 Drivers’ Championship",
       "publisher": "Formula 1",
       "author": null,
-      "accessed_on": "2026-10-20",
-      "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
+      "accessed_on": "2026-10-21",
+      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-fia-2020",
+      "source_url": "https://www.fia.com/news/f1-hamilton-wins-turkey-clinch-record-equalling-seventh-world-title",
+      "title": "F1 – Hamilton wins in Turkey to clinch record-equalling seventh world title",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "FIA news report dated 2020-11-15",
+      "independence_group": "fia"
     }
   ],
   "claims": [
     {
-      "claim_id": "lewis-hamilton-titles",
-      "topic": "championships",
-      "statement": "Lewis Hamilton won the Formula One Drivers’ World Championship in 2008, 2014, 2015, 2017, 2018, 2019 and 2020.",
+      "claim_id": "hamilton-debut",
+      "topic": "debut",
+      "statement": "Hamilton finished third in the 2007 Australian Grand Prix on his Formula 1 debut with McLaren.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "lewis-hamilton-f1-hall",
-          "locator": "Historical champion paragraph listing Hamilton's seven championship years",
+          "source_id": "hamilton-f1-2007",
+          "locator": "Formula 1 results archive, round-by-round 2007",
+          "supports": true
+        },
+        {
+          "source_id": "hamilton-f1-history",
+          "locator": "The big milestones, debut win and debut race",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "hamilton-first-win",
+      "topic": "first-win",
+      "statement": "His first Formula 1 victory came at the 2007 Canadian Grand Prix, where he finished ahead of Nick Heidfeld.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-canada-2007",
+          "locator": "Race classification, 10 June 2007",
+          "supports": true
+        },
+        {
+          "source_id": "hamilton-f1-history",
+          "locator": "The big milestones, debut win and debut race",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "hamilton-rookie-season",
+      "topic": "rookie-season",
+      "statement": "In his debut season in 2007, Hamilton won the Canadian, United States, Hungarian and Japanese Grands Prix.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-f1-2007",
+          "locator": "Formula 1 results archive, round-by-round 2007",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-titles",
+      "topic": "title-years",
+      "statement": "Hamilton won the Drivers’ World Championship in 2008, 2014, 2015, 2017, 2018, 2019 and 2020.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-f1-championship",
+          "locator": "Historical champions listing",
+          "supports": true
+        },
+        {
+          "source_id": "hamilton-fia-2020",
+          "locator": "Opening FIA report confirms seventh Drivers' World Championship crown in 2020; individual prior title-year list remains sourced from Formula 1",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "hamilton-early-mclaren",
+      "topic": "early-mclaren",
+      "statement": "McLaren was the constructor recorded for Hamilton throughout his 2007 Formula 1 debut season.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-f1-2007",
+          "locator": "Formula 1 results archive, round-by-round 2007",
           "supports": true
         }
       ]
@@ -37,19 +144,29 @@
   ],
   "sections": [
     {
-      "section_id": "championships",
-      "title": "World championship titles",
+      "section_id": "beginnings",
+      "title": "Debut and breakthrough",
+      "claim_ids": [
+        "hamilton-debut",
+        "hamilton-first-win",
+        "hamilton-rookie-season",
+        "hamilton-early-mclaren"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Championship record",
       "claim_ids": [
         "lewis-hamilton-titles"
       ]
     }
   ],
   "gaps": [
-    "This is a single-claim research seed, NOT a complete biography.",
-    "Championship claim requires independent human editorial verification and second-source corroboration (for example the FIA championship winners register).",
-    "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
-    "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
-    "No licensed media selected; no publishing decision or human reviewer assigned."
+    "Every statement, source locator, translation and identity still requires independent human verification and accountable author/reviewer sign-off.",
+    "Official championship titles must be reconciled with season classification records, not inferred from F1DB race-result points.",
+    "Sources are live webpages; record stable snapshots where possible and re-open during review.",
+    "No photographs or other media have cleared a reuse-rights review; this is unpublished research.",
+    "Existing single-claim Hamilton pilot was expanded, but independent FIA title-source verification remains open."
   ],
   "media": []
 }
