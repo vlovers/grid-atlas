@@ -145,6 +145,36 @@
   max-width:24ch;
   line-height:1.6;
 }
+.quickFacts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+  margin:0 0 24px;
+}
+.quickFacts>div {
+  min-width:0;
+  padding:20px 0;
+  border-top:1px solid var(--line);
+}
+.quickFacts dt {
+  color:var(--muted);
+  font-size:.8rem;
+  line-height:1.6;
+}
+.quickFacts dd {
+  margin:10px 0 0;
+  font-size:clamp(1.05rem,1.6vw,1.5rem);
+  font-weight:650;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.quickFacts a {
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+@media(max-width:650px) {
+  .quickFacts { grid-template-columns:1fr; }
+}
 .heroScope {
   grid-column:1/-1;
   font-size:.75rem;
