@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { CIRCUIT_ARTWORK } from './circuit-layout-registry';
 import styles from './circuit-experience.module.css';
 
 type Layout = {
@@ -33,6 +35,11 @@ const labels = {
     measurements: 'Виміри конкретних етапів', showAll: 'Показати всі записи',
     note: 'Кожен рядок — вимір конкретної гонки. Довжина і кількість поворотів не переносяться автоматично на інші роки.',
     notMap: 'Схематична шкала вимірів, не географічна карта траси',
+    graphic: 'Контур історичної конфігурації',
+    illustration: 'Контур конфігурації за матеріалами F1DB, не масштабна інженерна карта',
+    credit: 'Автор контурів: Jules Roy · CC BY 4.0',
+    selectForMap: 'Оберіть конфігурацію, щоб побачити контур',
+    noGraphic: 'Перевірений контур для цієї конфігурації недоступний.',
   },
   en: {
     kicker: 'LAYOUTS / HISTORY', title: 'The circuit through time',
@@ -46,6 +53,11 @@ const labels = {
     measurements: 'Event-specific measurements', showAll: 'Show all records',
     note: 'Every row is specific to one event. Length and corner counts are not assumed valid for other years.',
     notMap: 'Abstract measurement scale, not a geographic track map',
+    graphic: 'Historical layout outline',
+    illustration: 'F1DB-sourced layout outline, not an engineering scale map',
+    credit: 'Outline artwork: Jules Roy · CC BY 4.0',
+    selectForMap: 'Choose a layout to view its outline',
+    noGraphic: 'No verified outline available for this layout.',
   },
 } as const;
 
@@ -56,6 +68,7 @@ export function CircuitExperience({ layouts, events, locale }: {
   const [selected, setSelected] = useState(layouts.find(l => l.effective)?.id ?? layouts[0]?.id ?? '');
   const [showAll, setShowAll] = useState(false);
   const current = layouts.find(l => l.id === selected);
+  const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
   const matching = useMemo(() => events.filter(e => !selected || e.layout_id === selected), [events, selected]);
   const visible = showAll ? matching : matching.slice(0, 12);
   const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
@@ -65,6 +78,21 @@ export function CircuitExperience({ layouts, events, locale }: {
     <p className={styles.kicker}>{t.kicker}</p>
     <h2 id="circuit-experience-title">{t.title}</h2>
     <p className={styles.lead}>{t.lead}</p>
+    <figure className={styles.trackVisual} data-testid="circuit-track-visual">
+      <div className={styles.trackGlow} aria-hidden="true" />
+      {artwork ? <>
+        <Image key={artwork.layout_id} className={styles.trackOutline}
+          src={artwork.path} width={500} height={500} unoptimized
+          alt={`${t.graphic}: ${current?.external_layout_id}`} priority={false} />
+        <figcaption className={styles.trackCredit}>
+          <span>{t.illustration}</span>
+          <a href={artwork.source_url} target="_blank" rel="noopener noreferrer">{t.credit} ↗</a>
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">License ↗</a>
+        </figcaption>
+      </> : <p className={styles.trackFallback}>
+        {current ? t.noGraphic : t.selectForMap}
+      </p>}
+    </figure>
     <div className={styles.layout}>
       <div className={styles.selector}>
         <label htmlFor="circuit-layout-select">{t.select}</label>

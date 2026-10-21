@@ -31,3 +31,14 @@
 .provenance code{display:block;white-space:normal;overflow-wrap:anywhere;font-size:.72rem;margin-top:.5rem}
 .more{background:#253c66;color:white;border:1px solid #728ab3;padding:.85rem;border-radius:.7rem;cursor:pointer}
 @media(max-width:700px){.layout{grid-template-columns:minmax(0,1fr)}.eventStats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Graphics V3: original presentation of pinned CC BY 4.0 F1DB SVG contours. */
+.trackVisual{isolation:isolate;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:clamp(17rem,42vw,31rem);background:radial-gradient(ellipse at 58% 42%,#294d82 0,#0c1b34 55%,#080d17 100%);border:1px solid #385174;border-radius:1.2rem;margin:1.6rem 0 2rem;padding:1rem;min-width:0}
+.trackGlow{position:absolute;inset:13% 18%;z-index:-1;background:radial-gradient(ellipse,#355da04d 0,transparent 70%);pointer-events:none}
+.trackOutline{width:min(100%,31rem);height:auto;max-height:28rem;object-fit:contain;filter:drop-shadow(7px 13px 0 #132641) drop-shadow(0 0 16px #7c9cc866);animation:trackReveal 650ms ease-out both}
+.trackCredit{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.45rem 1rem;text-align:center;margin-top:.3rem;max-width:75ch;color:#b1c5df;font-size:.72rem;line-height:1.5}
+.trackCredit a{color:#d5e7ff;text-decoration:underline;text-underline-offset:3px}
+.trackFallback{font-size:.92rem;color:#cbd7e7;text-align:center;max-width:30ch}
+@keyframes trackReveal{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.trackOutline{animation:none}}
+@media(max-width:700px){.trackVisual{padding:.65rem;min-height:15rem}.trackOutline{width:min(100%,23rem)}}
