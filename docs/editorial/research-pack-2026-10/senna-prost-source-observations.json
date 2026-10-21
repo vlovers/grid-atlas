@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "pack_id": "senna-prost-evidence-1985-1989",
+  "status": "source_observed_needs_independent_human_review",
+  "accessed_on": "2026-10-21",
+  "subjects": [
+    "ayrton-senna",
+    "alain-prost"
+  ],
+  "archive_release": "v2026.17.0",
+  "publication_allowed": false,
+  "sources": [
+    {
+      "id": "f1-1985-portugal",
+      "publisher": "Formula 1",
+      "title": "1985 Portuguese Grand Prix — race result",
+      "url": "https://www.formula1.com/en/results/1985/races/483/portugal/race-result",
+      "locator": "Race Result, positions 1–3",
+      "category": "official_results"
+    },
+    {
+      "id": "f1-1988-standings",
+      "publisher": "Formula 1",
+      "title": "1988 Drivers' Standings",
+      "url": "https://www.formula1.com/en/results/1988/drivers",
+      "locator": "Drivers standings, rows 1–2",
+      "category": "official_classification"
+    },
+    {
+      "id": "f1-1988-races",
+      "publisher": "Formula 1",
+      "title": "1988 Race Results",
+      "url": "https://www.formula1.com/en/results/1988/races",
+      "locator": "Race winners, all 16 listed Grands Prix",
+      "category": "official_results"
+    },
+    {
+      "id": "f1-1989-races",
+      "publisher": "Formula 1",
+      "title": "1989 Race Results",
+      "url": "https://www.formula1.com/en/results/1989/races",
+      "locator": "Race winners, Japan 22 October row",
+      "category": "official_results"
+    }
+  ],
+  "claims": [
+    {
+      "id": "senna-1985-portugal-win",
+      "subjects": [
+        "ayrton-senna"
+      ],
+      "en": "Ayrton Senna won the Portuguese Grand Prix on 21 April 1985, driving a Lotus Renault.",
+      "uk": "Айртон Сенна переміг на Гран-прі Португалії 21 квітня 1985 року за кермом Lotus Renault.",
+      "source_ids": [
+        "f1-1985-portugal"
+      ],
+      "observed_fields": {
+        "date": "1985-04-21",
+        "race": "Portugal",
+        "winner": "Ayrton Senna",
+        "team": "Lotus Renault"
+      },
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "senna-prost-1988-official-classification",
+      "subjects": [
+        "ayrton-senna",
+        "alain-prost"
+      ],
+      "en": "The official 1988 drivers' classification lists Ayrton Senna first with 90 points and Alain Prost second with 87.",
+      "uk": "В офіційній підсумковій класифікації пілотів 1988 року Айртон Сенна посів перше місце з 90 очками, а Ален Прост — друге з 87.",
+      "source_ids": [
+        "f1-1988-standings"
+      ],
+      "observed_fields": {
+        "year": 1988,
+        "senna_position": 1,
+        "senna_points": 90,
+        "prost_position": 2,
+        "prost_points": 87
+      },
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "senna-prost-1988-winner-rows",
+      "subjects": [
+        "ayrton-senna",
+        "alain-prost"
+      ],
+      "en": "The Formula 1 1988 race-winner table names Senna as winner at eight Grands Prix and Prost at seven; Gerhard Berger won the remaining race.",
+      "uk": "У таблиці переможців перегонів Формули-1 за 1988 рік Сенна зазначений переможцем восьми Гран-прі, Прост — семи, а решту гонку виграв Герхард Бергер.",
+      "source_ids": [
+        "f1-1988-races"
+      ],
+      "observed_fields": {
+        "season": 1988,
+        "listed_races": 16,
+        "senna_win_rows": 8,
+        "prost_win_rows": 7,
+        "berger_win_rows": 1
+      },
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "japan-1989-winner-listed",
+      "subjects": [
+        "ayrton-senna",
+        "alain-prost"
+      ],
+      "en": "The 1989 Japanese Grand Prix results list Alessandro Nannini as the race winner.",
+      "uk": "У результатах Гран-прі Японії 1989 року переможцем зазначений Алессандро Нанніні.",
+      "source_ids": [
+        "f1-1989-races"
+      ],
+      "observed_fields": {
+        "year": 1989,
+        "grand_prix": "Japan",
+        "winner": "Alessandro Nannini"
+      },
+      "review_status": "needs_human_review"
+    }
+  ],
+  "interpretation_constraints": [
+    "Do not derive raw season point totals from official 1988 championship points.",
+    "Do not infer disciplinary decisions, collision intent or title causation from winner tables.",
+    "Do not treat source observations as human approval or publishable biography.",
+    "Formula 1 is the publisher of all sources; these are not four independent publisher corroborations.",
+    "A winner table does not establish all qualifying, fastest-lap, entry, start or championship semantics."
+  ],
+  "review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "source_context_check": false,
+    "language_uk_check": false,
+    "language_en_check": false,
+    "statistics_reconciled_with_pinned_import": false,
+    "publication_allowed": false
+  }
+}
