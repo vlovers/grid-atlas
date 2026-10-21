@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "prost-f1": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "prost-mclaren": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "prost-williams": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "prost-1988-classification": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    }
+  },
+  "claim_reviews": {
+    "alain-prost-nationality": null,
+    "alain-prost-birth": null,
+    "alain-prost-junior-career": null,
+    "alain-prost-teams": null,
+    "alain-prost-titles": null,
+    "alain-prost-first-victory": null,
+    "alain-prost-1984": null,
+    "alain-prost-1993": null,
+    "alain-prost-style": null,
+    "alain-prost-context": null,
+    "alain-prost-rivalry": null,
+    "alain-prost-1988-classification": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "All claims and English wording require independent human review; no approval is recorded.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Pinned F1DB identifies the full name as Alain Marie Pascal Prost. The opened narrative sources use Alain Prost; corroborate the expanded name before adding it to prose.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "The first-victory claim and the detailed 1984 and 1993 events need additional independent corroboration; publisher-group counts are only a research aid.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "The 1989 and 1990 Suzuka collisions need contemporary records and careful attribution. This outline does not assign intent or reproduce retrospective accusations.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Do not copy the F1 profile’s description of Japan 1990 as the season finale without checking the calendar: Australia followed it.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "McLaren’s Grands Prix figure is not defined as starts. Do not import it as a start count or infer championship points from raw race results.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Team/season ranges were checked against the pinned result chronology; exact entry/start and championship-scoring reconciliation remains separate.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Death date is not asserted; no death claim was researched for this retired driver. No photographs or reuse rights are claimed.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Source pages are live and not archived snapshots; re-open them during human review. Post-driving team ownership is outside this initial outline.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Українські формулювання є дослідницьким перекладом. Потрібна окрема незалежна людська перевірка всіх тверджень щодо наведених джерел.",
+      "resolution": null
+    }
+  ],
+  "media": [],
+  "publication": null
+}

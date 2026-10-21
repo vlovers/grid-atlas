@@ -4,7 +4,7 @@
 
 The repository currently has public, archive-backed **statistics pages**, unpublished research dossiers and drafts, an **offline approval sidecar validator**, and a **PostgreSQL public read gate** (`GET /api/drivers/:id/article?locale=uk|en`).
 
-**There is no approved bulk publication adapter from dossier JSON to SQL.** The Python validator never publishes, and Git merge of a draft does not publish a biography. Do not claim otherwise. This is the reason source-located chapter copy is not visible as an article on the public site.
+The [approved text-only release pipeline](APPROVED_RELEASE_PIPELINE.md) now exports exact-revision human-approved dossiers and publishes through an explicitly authorized PostgreSQL transaction. The Python validator and Git merge never publish a biography. No historical dossier in the [five-driver release](releases/v1/README.md) has the required human approvals; public record journeys work independently of these drafts.
 
 ## Fastest trustworthy path: approve one complete pilot, then batches
 

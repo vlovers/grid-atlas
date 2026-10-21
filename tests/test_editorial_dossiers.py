@@ -14,7 +14,8 @@ from scripts.editorial_dossiers import (
     quality_report, render_draft, validate_dossier, write_new_or_identical,
 )
 
-AS_OF = dt.date(2026, 10, 19)
+# Fixed inspection date for the current canonical dossier revisions.
+AS_OF = dt.date(2026, 10, 21)
 IDS = {"alain-prost", "michael-schumacher"}
 
 

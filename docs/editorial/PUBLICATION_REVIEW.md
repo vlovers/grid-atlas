@@ -47,14 +47,14 @@ Markdown biography in PR #71 is research input, not a second publishable body.
 4. **Published** (`published`): only a separate, explicitly authorized human publication
    operation can make content public. This tool merely validates a record of that
    decision in `publication`; its note should identify the published revision and
-   operation. The actual publication adapter and immutable database revision mapping
-   remain future work. Do not insert these files into `content_articles` or translate
-   a passing report into an automatic SQL status update.
+   operation. The approved text-only export/publication adapter is implemented; immutable
+   database revision mapping remains future work. Do not insert dossier files directly
+   into `content_articles` or turn a passing report into an automatic SQL status update.
 
 Keep lifecycle changes in reviewed Git commits. The dossier itself remains a valid,
 unpublished v1 research document; the sidecar records the additional human workflow.
 The SQL article status model has no `approved` state and is not a direct mapping.
-The public API's existing verified-claim gate is still required for any future importer.
+The public API's existing verified-claim gate is still required for the explicit publication adapter.
 
 ## Review record fields
 
@@ -122,7 +122,7 @@ python3 scripts/editorial_review.py \
   --review docs/editorial/pilots/senna/en.review.json \
   --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
   --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
-  --as-of 2026-10-20
+  --as-of 2026-10-21
 # Repeat with uk.dossier.json and uk.review.json for Ukrainian.
 ```
 
@@ -143,3 +143,7 @@ media rights and deterministic CLI exit behavior. Synthetic approvals are test-o
 Offline validation checks structure and recorded review decisions; humans must still
 check source truth, complete prose coverage, originality and copyright. See the
 [Senna audit](SENNA_PILOT_AUDIT.md) for the current manual work.
+
+## Current release integration
+
+The [five-driver release](releases/v1/README.md) reuses these exact-revision checks in ten locale sidecars. The [approved export/publication adapter](APPROVED_RELEASE_PIPELINE.md) is implemented; it remains explicit, text-only and human-gated. Structural validation never supplies a human decision.

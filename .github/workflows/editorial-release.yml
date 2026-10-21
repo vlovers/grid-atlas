@@ -1,0 +1,40 @@
+name: Editorial release preflight
+on:
+  pull_request:
+    paths:
+      - 'docs/editorial/**'
+      - 'scripts/editorial_release.py'
+      - 'scripts/editorial_dossiers.py'
+      - 'scripts/editorial_review.py'
+      - 'tests/test_editorial_release.py'
+      - '.github/workflows/editorial-release.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/editorial/**'
+      - 'scripts/editorial_release.py'
+      - 'scripts/editorial_dossiers.py'
+      - 'scripts/editorial_review.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the pinned archive and published checksum
+        run: |
+          mkdir -p /tmp/editorial-f1db
+          curl --fail --location --retry 3 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/editorial-f1db/checksums_sha256.txt
+          curl --fail --location --retry 3 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/editorial-f1db/f1db-json-splitted.zip
+      - name: Validate all release identities, locales, evidence and unsigned review state
+        run: |
+          python3 scripts/editorial_release.py --archive /tmp/editorial-f1db/f1db-json-splitted.zip --checksums /tmp/editorial-f1db/checksums_sha256.txt > editorial-release-preflight.json
+      - name: Upload readiness evidence (structural success is not editorial approval)
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-release-preflight
+          path: editorial-release-preflight.json
+          retention-days: 14

@@ -92,3 +92,16 @@ test('sitemap never silently publishes a partial response on API failure or inva
   await assert.rejects(sitemapPaths(async path => path.startsWith('/api/drivers?')
     ? Array.from({ length: 100 }, (_, i) => ({ id: String(i + 1) })) : []), /pagination did not advance/);
 });
+
+
+test('story sitemap requires an actual canonical F1DB identity, not a similar external name', async () => {
+  for (const source of ['f1db', 'other']) {
+    const paths = await sitemapPaths(async path => {
+      if (path.startsWith('/api/drivers?')) return [{id:'42',external_id:'ayrton-senna'}];
+      if (path === '/api/drivers/42/career') return [{id:'42',external_id:'ayrton-senna',source_slug:source}];
+      return [];
+    });
+    assert.equal(paths.includes('/stories/ayrton-senna'), source === 'f1db');
+    assert.equal(paths.includes('/stories/lewis-hamilton'), false);
+  }
+});

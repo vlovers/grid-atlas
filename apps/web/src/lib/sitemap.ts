@@ -1,11 +1,12 @@
-type Row = { id?: unknown; year?: unknown; entity_type?: unknown; subject_id?: unknown; object_id?: unknown };
+import { releasePilot } from '../components/stories/release-model.ts';
+type Row = { external_id?: unknown; source_slug?: unknown; id?: unknown; year?: unknown; entity_type?: unknown; subject_id?: unknown; object_id?: unknown };
 type Read = (path: string) => Promise<Row[]>;
 const limit = 100;
 
 /** Enumerate existing public records, including every API page. Fail closed on
  * incomplete/invalid responses instead of publishing a misleading partial map. */
 export async function sitemapPaths(read: Read): Promise<string[]> {
-  const paths = new Set(['/', '/drivers', '/constructors', '/circuits', '/seasons', '/lineage', '/sources']);
+  const paths = new Set(['/', '/drivers', '/constructors', '/circuits', '/seasons', '/lineage', '/sources', '/stories']);
   const addId = (kind: string, id: unknown) => {
     if (typeof id !== 'string' || !/^[1-9][0-9]*$/.test(id) || Number(id) > 2147483647) throw new Error('Invalid sitemap record ID');
     paths.add(`/${kind}/${id}`);
@@ -19,6 +20,10 @@ export async function sitemapPaths(read: Read): Promise<string[]> {
         if (seen.has(row.id)) throw new Error('Repeated sitemap record; pagination did not advance');
         seen.add(row.id);
         addId(kind, row.id);
+        if (kind === 'drivers' && typeof row.external_id === 'string' && releasePilot(row.external_id)) {
+          const career = await read(`/api/drivers/${row.id}/career`);
+          if (career.length === 1 && career[0].external_id === row.external_id && career[0].source_slug === 'f1db') paths.add(`/stories/${row.external_id}`);
+        }
       }
       if (rows.length < limit) return;
     }

@@ -58,6 +58,16 @@
       "accessed_on": "2026-10-20",
       "version": "Live historical race result table; exact page revision unavailable; checked 2026-10-20",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "senna-f1-career",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ",
+      "title": "Ayrton Senna — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -125,12 +135,65 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "ayrton-senna-opening",
+      "topic": "early_career",
+      "statement": "Сенна прийшов у Формулу-1 з Toleman у 1984 році, а 1985-го перейшов до Lotus. Перший чемпіонський титул він здобув із McLaren у 1988 році.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-f1-career",
+          "locator": "Career paragraphs: Toleman debut, Lotus move and first McLaren championship",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "ayrton-senna-teams",
+      "topic": "teams_seasons",
+      "statement": "Після трьох сезонів із Lotus Сенна виступав за McLaren у 1988–1993 роках, а 1994-го приєднався до Williams.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-f1-career",
+          "locator": "Lotus 1985–1987; McLaren 1988–1993; Williams 1994 career passages",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "ayrton-senna-prost-context",
+      "topic": "significance",
+      "statement": "У ретроспективі Формули-1 Джеральд Дональдсон описує спільні виступи Сенни й Алена Проста за McLaren як суперництво, що продовжилося в чемпіонатній боротьбі в Судзуці 1989 та 1990 років. Це атрибутований ретроспективний погляд, а не доказ намірів пілотів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "senna-f1-career",
+          "locator": "McLaren/Prost rivalry and 1989–1990 Suzuka paragraphs; motives deliberately not adopted",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
     {
+      "section_id": "opening",
+      "title": "Кар’єра в русі",
+      "claim_ids": [
+        "ayrton-senna-opening"
+      ]
+    },
+    {
+      "section_id": "teams",
+      "title": "Зміна розділів",
+      "claim_ids": [
+        "ayrton-senna-teams"
+      ]
+    },
+    {
       "section_id": "championships",
-      "title": "Результати чемпіонатів",
+      "title": "Чемпіонатні класифікації",
       "claim_ids": [
         "ayrton-senna-championships",
         "ayrton-senna-1988-standings"
@@ -138,20 +201,27 @@
     },
     {
       "section_id": "race-milestones",
-      "title": "Вибрані результати Гран-прі (чернетка)",
+      "title": "Три гоночні протоколи",
       "claim_ids": [
         "ayrton-senna-monaco-1984-p2",
         "ayrton-senna-portugal-1985-p1",
         "ayrton-senna-monaco-1993-p1"
+      ]
+    },
+    {
+      "section_id": "rivalry",
+      "title": "Сенна та Прост: атрибутований контекст",
+      "claim_ids": [
+        "ayrton-senna-prost-context"
       ]
     }
   ],
   "gaps": [
     "Assign an accountable human author and reconcile canonical identity against the pinned F1DB release.",
     "Reopen each precise source passage and independently review this locale; research observations are not human approval.",
-    "This is a two-claim pilot, not the complete PR #71 biography. See SENNA_PILOT_AUDIT.md for omitted claims and missing evidence.",
     "New race-result claims are observed classification rows only, not an independent proof of first podium, first win, historical all-time records or driver/team contracts.",
-    "Revision-bound human claim reviews must be recorded separately for each language after independent review; all added decisions remain null."
+    "Revision-bound human claim reviews must be recorded separately for each language after independent review; all added decisions remain null.",
+    "Expanded career context remains a source-bound draft, not the complete PR #71 manuscript. Contemporary Suzuka records and balanced independent context remain required; no intent is asserted."
   ],
   "media": []
 }

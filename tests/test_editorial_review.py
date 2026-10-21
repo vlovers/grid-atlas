@@ -267,7 +267,7 @@ class EditorialReviewTests(unittest.TestCase):
         for locale in ("en", "uk"):
             dossier = load_json(PILOT / f"{locale}.dossier.json")
             review = load_json(PILOT / f"{locale}.review.json")
-            report = validate_review(dossier, review, {"ayrton-senna"}, AS_OF)
+            report = validate_review(dossier, review, {"ayrton-senna"}, dt.date(2026, 10, 21))
             self.assertEqual(report["locale"], locale)
             self.assertFalse(report["ready_for_publication"])
             self.assertEqual(review["stage"], "evidence_review")

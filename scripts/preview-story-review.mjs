@@ -41,10 +41,10 @@ export function renderReview(markdown, locale, base) {
     </body></html>`;
 }
 
-export function startReview({ port = 3359, acknowledged = false } = {}) {
+export function startReview({ port = 3359, acknowledged = false, render } = {}) {
   if (!acknowledged) throw new Error('Required: --acknowledge-unreviewed-draft. No publication or human approval is implied.');
   if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error('Port must be an integer from 0 to 65535');
-  const markdown = readFileSync(draftPath, 'utf8');
+  const markdown = render ? null : readFileSync(draftPath, 'utf8');
   const token = randomBytes(24).toString('hex');
   const base = `/review/${token}`;
   const server = createServer((request, response) => {
@@ -60,7 +60,7 @@ export function startReview({ port = 3359, acknowledged = false } = {}) {
     }
     const locale = request.url.endsWith('/uk') ? 'uk' : 'en';
     response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    response.end(renderReview(markdown, locale, base));
+    response.end(render ? render(locale, base) : renderReview(markdown, locale, base));
   });
   server.listen(port, '127.0.0.1', () => {
     const url = `http://127.0.0.1:${server.address().port}${base}/en`;

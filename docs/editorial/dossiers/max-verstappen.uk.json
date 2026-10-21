@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "driver_id": "max-verstappen",
+  "locale": "uk",
+  "title": "Макс Ферстаппен",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "verstappen-2016-results",
+      "source_url": "https://www.formula1.com/en/results/2016/drivers/MAXVER01/max-verstappen",
+      "title": "Max Verstappen — 2016 race classifications",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "verstappen-2021-standings",
+      "source_url": "https://www.formula1.com/en/results/2021/drivers",
+      "title": "2021 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "verstappen-2023-standings",
+      "source_url": "https://www.formula1.com/en/results/2023/drivers",
+      "title": "2023 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "verstappen-2024-standings",
+      "source_url": "https://www.formula1.com/en/results/2024/drivers",
+      "title": "2024 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "verstappen-spain-report",
+      "source_url": "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
+      "title": "Verstappen stuns with maiden win in Spain",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "max-verstappen-opening",
+      "topic": "key_events",
+      "statement": "Ферстаппен виграв Гран-прі Іспанії 2016 року під час першого гоночного виступу за Red Bull. У репортажі Формули-1 цю перемогу описано як його першу в чемпіонаті.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-spain-report",
+          "locator": "Opening race report: first Red Bull race, maiden victory ahead of Räikkönen",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-teams",
+      "topic": "teams_seasons",
+      "statement": "Класифікація 2016 року вказує Ферстаппена з Toro Rosso Ferrari до російського етапу включно, а від Іспанії — з Red Bull Racing TAG Heuer. Це зафіксовані назви конструкторів, а не доказ умов контрактів або юридичного правонаступництва.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2016-results",
+          "locator": "Team column: opening four rounds Toro Rosso Ferrari; Spain onward Red Bull Racing TAG Heuer",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-spain",
+      "topic": "key_events",
+      "statement": "Іспанський рядок результатів фіксує перше місце 15 травня 2016 року; бразильський рядок того самого сезону — третє місце 13 листопада. Це два окремі протоколи для дослідження, а не повний опис перебігу гонок.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2016-results",
+          "locator": "Spain 15 May P1 and Brazil 13 November P3 rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-2021",
+      "topic": "championships",
+      "statement": "В офіційній підсумковій таблиці пілотів 2021 року Ферстаппен очолює залік із 395,5 очка, а Хемілтон іде слідом із 387,5. Класифікація підтверджує чемпіонатний підсумок; пояснення суперечок навколо фінальної гонки потребує окремих доказів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2021-standings",
+          "locator": "Final classification rows 1–2: Verstappen 395.5, Hamilton 387.5",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-2023",
+      "topic": "championships",
+      "statement": "Офіційний залік пілотів 2023 року вказує Ферстаппена першим із 575 очками та Серхіо Переса другим із 285, обох під назвою Red Bull Racing Honda RBPT. Це чемпіонатні підсумки, які не слід відтворювати лише з рядків результатів основних гонок.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2023-standings",
+          "locator": "Final classification rows 1–2: Verstappen 575, Perez 285",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-2024",
+      "topic": "championships",
+      "statement": "Підсумкова таблиця 2024 року ставить Ферстаппена на перше місце з 437 очками, а Ландо Норріса — на друге з 374. Твердження обмежене 2024 роком і не стосується титулів наступних сезонів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2024-standings",
+          "locator": "Final classification rows 1–2: Verstappen 437, Norris 374",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "opening",
+      "title": "Новий розділ в Іспанії",
+      "claim_ids": [
+        "max-verstappen-opening"
+      ]
+    },
+    {
+      "section_id": "teams",
+      "title": "Дві назви конструкторів за рік",
+      "claim_ids": [
+        "max-verstappen-teams"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Іспанія та Бразилія",
+      "claim_ids": [
+        "max-verstappen-spain"
+      ]
+    },
+    {
+      "section_id": "championships",
+      "title": "Обрані чемпіонатні таблиці",
+      "claim_ids": [
+        "max-verstappen-2023",
+        "max-verstappen-2024"
+      ]
+    },
+    {
+      "section_id": "opponents",
+      "title": "Спільний сезон із Хемілтоном",
+      "claim_ids": [
+        "max-verstappen-2021"
+      ]
+    }
+  ],
+  "gaps": [
+    "Assign an accountable human author, reconcile the canonical identity with pinned F1DB and review every claim independently in both locales.",
+    "This bounded pilot covers selected 2016, 2021, 2023 and 2024 records, not a complete biography or exhaustive title-year list. Early racing and 2022 need separate sourced treatment.",
+    "Formula 1 is one publisher group. FIA or other independent source corroboration and exact historical scoring checks remain open.",
+    "The 2021 controversy requires contemporary FIA records and balanced independent context; no claims about intent, rule legality or final-race causation are included.",
+    "Live pages are not immutable snapshots. Reopen exact passages and review original wording and transliteration. No photographs, licences or human approvals are supplied."
+  ],
+  "media": []
+}

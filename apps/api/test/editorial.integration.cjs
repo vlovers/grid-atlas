@@ -86,11 +86,19 @@ test('published article needs a verified, supported claim and does not leak revi
     reviewed_at=now() WHERE id=$1`, [claimId]);
   await db.query(`UPDATE content_articles SET status='published',reviewer='Editor',
     reviewed_at=now(),published_at=now() WHERE id=$1`, [articleId]);
+  assert.equal((await read()).status, 404, 'unapproved prose cannot borrow a verified claim');
+  await db.query('UPDATE content_articles SET body_markdown=$1 WHERE id=$2', ['## Career\n\nSynthetic claim', articleId]);
+  assert.equal((await read()).status, 404, 'editing text invalidates article approval');
+  await db.query("UPDATE content_articles SET status='published',reviewer='Editor',reviewed_at=now(),published_at=now() WHERE id=$1", [articleId]);
   const response = await read();
   assert.equal(response.status, 200);
   const body = (await response.json()).data;
   assert.equal(body.title, 'Synthetic biography');
-  assert.equal(body.body_markdown, 'A test statement');
+  assert.equal(body.body_markdown, '## Career\n\nSynthetic claim');
+  assert.deepEqual(body.sections, [{ heading: 'Career', claim_ids: [claimId] }]);
+  assert.equal(body.claims[0].statement, 'Synthetic claim');
+  assert.equal(body.claims[0].evidence[0].locator, 'paragraph 1');
+  assert.equal(body.claims[0].reviewer, undefined);
   assert.deepEqual(body.references, [{
     url: 'https://example.org/editorial-evidence',
     title: 'Synthetic source',

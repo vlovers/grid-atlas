@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "verstappen-2016-results": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "verstappen-2021-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "verstappen-2023-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "verstappen-2024-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "verstappen-spain-report": {
+      "kind": "primary",
+      "published_on": "2016-05-15",
+      "publication_note": "Contemporary Formula 1 race report, timestamp displayed on source page; same publisher group as the result archive."
+    }
+  },
+  "claim_reviews": {
+    "max-verstappen-opening": null,
+    "max-verstappen-teams": null,
+    "max-verstappen-spain": null,
+    "max-verstappen-2021": null,
+    "max-verstappen-2023": null,
+    "max-verstappen-2024": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Assign an accountable human author, reconcile the canonical identity with pinned F1DB and review every claim independently in both locales.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "This bounded pilot covers selected 2016, 2021, 2023 and 2024 records, not a complete biography or exhaustive title-year list. Early racing and 2022 need separate sourced treatment.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Formula 1 is one publisher group. FIA or other independent source corroboration and exact historical scoring checks remain open.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "The 2021 controversy requires contemporary FIA records and balanced independent context; no claims about intent, rule legality or final-race causation are included.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Live pages are not immutable snapshots. Reopen exact passages and review original wording and transliteration. No photographs, licences or human approvals are supplied.",
+      "resolution": null
+    }
+  ],
+  "media": [],
+  "publication": null
+}

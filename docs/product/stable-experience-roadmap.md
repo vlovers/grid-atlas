@@ -3,6 +3,10 @@
 Updated 20 October 2026 (Time Machine UI verified present in `main`; production acceptance remains separate). **Code and CI state are distinct from production acceptance.**
 This document records merged GitHub work and known blockers, not an approval to publish.
 
+## Editorial release V1 review candidate
+
+The [five-driver release](../editorial/releases/v1/README.md) adds canonical UK/EN record journeys and source-located chapter rendering, consolidates ten unapproved dossiers and reuses the merged #178 approval/export pipeline. This candidate does not approve historical biographies, media or production deployment. See its verification report for executed checks.
+
 ## Implemented in main
 
 | Area | Relevant merged PRs | Actual boundary |
