@@ -1,6 +1,7 @@
 import { Module, OnApplicationShutdown, Inject, Injectable } from '@nestjs/common';
 import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
+import { HistoricalFactsController } from './historical-facts.controller';
 import { ProfilesController } from './profiles.controller';
 import { ExplorerController } from './explorer.controller';
 import { ExplorerPagesController } from './explorer-pages.controller';
@@ -21,6 +22,7 @@ export class PoolShutdown implements OnApplicationShutdown {
 @Module({
   controllers: [
     HistoricalController,
+    HistoricalFactsController,
     ProfilesController,
     ExplorerController,
     ExplorerPagesController,
