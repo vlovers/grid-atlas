@@ -71,6 +71,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "jim-clark-lotus-1960",
+      "topic": "early_career",
+      "statement": "Jim Clark joined Team Lotus during the 1960 Formula 1 season after competing in Lotus Formula Junior.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "jim-clark-f1-hall",
+          "locator": "Hall of Fame paragraph about 1958 Lotus Elite, Colin Chapman and promotion to Team Lotus in 1960.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-indy-1965",
+      "topic": "key_events",
+      "statement": "Jim Clark won the Indianapolis 500 in 1965.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "jim-clark-f1-hall",
+          "locator": "Hall of Fame paragraph about Clark's American popularity and 1965 Indianapolis 500 victory.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -87,6 +113,20 @@
       "claim_ids": [
         "jim-clark-1965-six-wins"
       ]
+    },
+    {
+      "section_id": "lotus-1960",
+      "title": "Career milestone",
+      "claim_ids": [
+        "jim-clark-lotus-1960"
+      ]
+    },
+    {
+      "section_id": "indy-1965",
+      "title": "Career milestone",
+      "claim_ids": [
+        "jim-clark-indy-1965"
+      ]
     }
   ],
   "gaps": [
@@ -96,7 +136,8 @@
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
     "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "New claims need independent publisher corroboration and responsible human UK/EN editorial sign-off."
   ],
   "media": []
 }
