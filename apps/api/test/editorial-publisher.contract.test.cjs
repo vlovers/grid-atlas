@@ -39,3 +39,11 @@ test('existing article never silently overwritten',async()=>{
  return {rowCount:0,rows:[]};}};
  await assert.rejects(()=>publish(client,sample()),/refuse overwrite/);assert.equal(calls.at(-1),'ROLLBACK');
 });
+
+for (const body of ['Unreviewed extra text.', '## Career\n\nA documented claim.\n\nUnreviewed extra text.', '## Empty', 'A documented claim.\n\nA documented claim.']) {
+ test(`reject prose outside exact claim coverage: ${body}`,()=>{const x=sample();x.body_markdown=body;assert.throws(()=>assertBundle(x))});
+}
+test('direct publish cannot bypass prose validation or begin a transaction',async()=>{
+ const x=sample();x.body_markdown='Unreviewed text';let calls=0;
+ await assert.rejects(()=>publish({query:async()=>{calls++}},x));assert.equal(calls,0);
+});

@@ -38,6 +38,16 @@
       "accessed_on": "2026-10-19",
       "version": "Published 2026-02-24; live page read 2026-10-19",
       "independence_group": "williams"
+    },
+    {
+      "source_id": "prost-1988-classification",
+      "source_url": "https://www.formula1.com/en/results/1988/drivers",
+      "title": "1988 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -198,12 +208,25 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "alain-prost-1988-classification",
+      "topic": "championships",
+      "statement": "В офіційній підсумковій класифікації пілотів 1988 року Прост посів друге місце з 87 заліковими очками, поступившись Сенні з 90. Це чемпіонатний підсумок, а не сума всіх імпортованих рядків результатів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "prost-1988-classification",
+          "locator": "Final classification rows 1–2: Senna 90, Prost 87; historical counted totals only",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
     {
-      "section_id": "background",
-      "title": "Походження та рання кар'єра",
+      "section_id": "opening",
+      "title": "До Формули-1",
       "claim_ids": [
         "alain-prost-nationality",
         "alain-prost-birth",
@@ -211,23 +234,42 @@
       ]
     },
     {
-      "section_id": "career",
-      "title": "Кар'єра і титули",
+      "section_id": "teams",
+      "title": "Конструкторські розділи",
       "claim_ids": [
-        "alain-prost-teams",
+        "alain-prost-teams"
+      ]
+    },
+    {
+      "section_id": "championships",
+      "title": "Чемпіонати світу",
+      "claim_ids": [
         "alain-prost-titles",
+        "alain-prost-1988-classification"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Діжон, мінімальна перевага, повернення",
+      "claim_ids": [
         "alain-prost-first-victory",
         "alain-prost-1984",
         "alain-prost-1993"
       ]
     },
     {
-      "section_id": "assessment",
-      "title": "Стиль та історичне значення",
+      "section_id": "rivalry",
+      "title": "Разом із Сенною в McLaren",
+      "claim_ids": [
+        "alain-prost-rivalry"
+      ]
+    },
+    {
+      "section_id": "interpretation",
+      "title": "Атрибутована оцінка",
       "claim_ids": [
         "alain-prost-style",
-        "alain-prost-context",
-        "alain-prost-rivalry"
+        "alain-prost-context"
       ]
     }
   ],

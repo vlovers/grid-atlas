@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "release_id": "editorial-content-v1",
+  "as_of": "2026-10-21",
+  "status": "research_only",
+  "drivers": [
+    {
+      "driver_id": "ayrton-senna",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/pilots/senna/en.dossier.json",
+          "review": "docs/editorial/pilots/senna/en.review.json",
+          "attributed_interpretation_claims": [
+            "ayrton-senna-prost-context"
+          ]
+        },
+        "uk": {
+          "dossier": "docs/editorial/pilots/senna/uk.dossier.json",
+          "review": "docs/editorial/pilots/senna/uk.review.json",
+          "attributed_interpretation_claims": [
+            "ayrton-senna-prost-context"
+          ]
+        }
+      }
+    },
+    {
+      "driver_id": "alain-prost",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/alain-prost.en.json",
+          "review": "docs/editorial/releases/v1/reviews/alain-prost.en.review.json",
+          "attributed_interpretation_claims": [
+            "alain-prost-style",
+            "alain-prost-context",
+            "alain-prost-rivalry"
+          ]
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/alain-prost.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/alain-prost.uk.review.json",
+          "attributed_interpretation_claims": [
+            "alain-prost-style",
+            "alain-prost-context",
+            "alain-prost-rivalry"
+          ]
+        }
+      }
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/michael-schumacher.en.json",
+          "review": "docs/editorial/releases/v1/reviews/michael-schumacher.en.review.json",
+          "attributed_interpretation_claims": [
+            "michael-schumacher-style",
+            "michael-schumacher-significance"
+          ]
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/michael-schumacher.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/michael-schumacher.uk.review.json",
+          "attributed_interpretation_claims": [
+            "michael-schumacher-style",
+            "michael-schumacher-significance"
+          ]
+        }
+      }
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/lewis-hamilton.en.json",
+          "review": "docs/editorial/releases/v1/reviews/lewis-hamilton.en.review.json",
+          "attributed_interpretation_claims": []
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/lewis-hamilton.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/lewis-hamilton.uk.review.json",
+          "attributed_interpretation_claims": []
+        }
+      }
+    },
+    {
+      "driver_id": "max-verstappen",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/max-verstappen.en.json",
+          "review": "docs/editorial/releases/v1/reviews/max-verstappen.en.review.json",
+          "attributed_interpretation_claims": []
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/max-verstappen.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/max-verstappen.uk.review.json",
+          "attributed_interpretation_claims": []
+        }
+      }
+    }
+  ]
+}

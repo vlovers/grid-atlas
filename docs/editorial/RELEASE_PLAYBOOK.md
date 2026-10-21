@@ -4,7 +4,7 @@
 
 The repository currently has public, archive-backed **statistics pages**, unpublished research dossiers and drafts, an **offline approval sidecar validator**, and a **PostgreSQL public read gate** (`GET /api/drivers/:id/article?locale=uk|en`).
 
-**A gated export and PostgreSQL publisher now exist**, but they do not replace independent editorial approval. See [Approved release pipeline](APPROVED_RELEASE_PIPELINE.md). An offline validator or Git merge never publishes a biography; an editor must approve the exact locale-specific revision and an authorized operator must publish the reviewed bundle. The existing pilot still has no real sign-off.
+The [approved text-only release pipeline](APPROVED_RELEASE_PIPELINE.md) now exports exact-revision human-approved dossiers and publishes through an explicitly authorized PostgreSQL transaction. The Python validator and Git merge never publish a biography. No historical dossier in the [five-driver release](releases/v1/README.md) has the required human approvals; public record journeys work independently of these drafts.
 
 ## Fastest trustworthy path: approve one complete pilot, then batches
 
@@ -33,17 +33,17 @@ python3 scripts/editorial_review.py \
 
 Repeat with `uk.dossier.json` and `uk.review.json`. A failure from `--require-ready` means the given locale is not approved. The accountable editor must sign each **exact digest**; any change of prose/evidence invalidates previous decisions. A second independent editor should be the reviewer. Do not auto-fill `actor: human` with code.
 
-### 3. Use the existing approval-controlled publisher
+### 3. Publication requires a separate engineering PR
 
-Do **not** implement a second SQL importer or approval system. After independent human review of the exact dossier revision, follow [the current release pipeline](APPROVED_RELEASE_PIPELINE.md):
+After the pilot passes, build an **authorization-controlled importer** that:
+- reconciles canonical F1DB **external** driver identity with the correct internal `historical_drivers.id` in PostgreSQL;
+- imports only the independently approved exact revision and source-located claims into the existing `content_sources`, `content_claims`, `content_claim_evidence`, `content_articles` and `content_article_claims` tables;
+- validates constraints and applies a transaction per locale/revision, with idempotency, preview/dry-run and rollback;
+- never turns a draft or a missing UK translation into a public article, and never infers approval from a successful research validator;
+- checks that the API returns an approved, published article only for the specified driver and locale, with proper citations; rejects withdrawn/stale revisions;
+- is covered by PostgreSQL integration tests including unauthorized import attempts, partial failures, repeated imports, edit invalidation and withdrawal.
 
-1. Validate the signed EN or UK sidecar with `scripts/editorial_review.py --require-ready`.
-2. Export only the approved exact revision with `scripts/export_approved_editorial.py`.
-3. Validate the bundle offline with `node apps/api/scripts/publish-editorial.cjs <bundle> --dry-run`.
-4. Have an authorized operator inspect the signed revision and run the restricted `--publish` operation with the documented confirmation environment variables.
-5. Verify `GET /api/drivers/:id/article?locale=uk|en`; an unapproved or unpublished locale must remain inaccessible.
-
-The release pipeline does not cryptographically authenticate a human reviewer, does not offer arbitrary overwrites or a public CMS, and must not be run as an automatic publishing CI job. Existing publication-invalidation SQL remains active. Never forge reviewer metadata or grant approval based on tests.
+Existing DB migration `0006_editorial_content.sql`, `0007_editorial_review_invalidation.sql`, `apps/api/src/editorial.controller.ts` and `docs/editorial/PUBLICATION_REVIEW.md` are the starting contracts. Do not build a second publication schema.
 
 ### 4. What can be published sooner?
 
@@ -51,6 +51,6 @@ Results-backed pages and explicitly labeled archive statistics already exist. Hu
 
 ### 5. Batch to scale without 20 tiny PRs
 
-Group the existing nine-driver, 22-chapter cohort into one editorial review milestone. Have an editor review independent source packets per claim and locale; track review completion using the queue report. The adapter already has PostgreSQL integration checks. Ship **one content PR per meaningful reviewed cohort** after actual editorial approval; never label unreviewed research as approved. Keep Codex's History Atlas files untouched.
+Group the existing nine-driver, 22-chapter cohort into one editorial review milestone. Have an editor review independent source packets per claim and locale; track review completion using the queue report. Once the pilot importer passes real PostgreSQL integration and source checks, ship **one content PR per 10–20 approved drivers**. Keep Codex's History Atlas files untouched.
 
 **Never publish unlicensed photographs, third-party maps, BoxBox illustrations or historic car imagery solely because they are online.** Text-only approved articles are a valid first release.

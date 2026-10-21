@@ -124,3 +124,7 @@ new database importer. Existing historical F1DB importers remain unchanged.
 
 The content is a sporting-career research outline, not a complete approved biography.
 It does not alter Senna's existing drafts or expose any prose to the public app.
+
+## Five-driver release V1
+
+The [release manifest and review process](releases/v1/README.md) reference the canonical Senna pilot and Prost, Schumacher, Hamilton and Verstappen dossiers in both locales. Ten bounded drafts exist; no historical publication approval is supplied. Use the read-only release audit for current counts and exact blockers. Older coverage snapshots describe their own dates.

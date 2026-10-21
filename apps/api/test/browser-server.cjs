@@ -37,6 +37,24 @@ async function main() {
       SELECT id,'Synthetic Driver '||substring(external_id from 11)
       FROM external_identities WHERE external_id LIKE 'synthetic-%';
   `);
+  // Test-only publication for an existing synthetic identity; no historical dossier is approved.
+  await fixture.query(`
+    INSERT INTO content_claims(subject_driver_id,statement)
+      SELECT d.id,'Synthetic browser claim, not a historical assertion.' FROM historical_drivers d
+      JOIN external_identities e ON e.id=d.external_identity_id WHERE e.external_id='synthetic-105';
+    INSERT INTO content_sources(source_url,title,publisher,accessed_on)
+      VALUES('https://example.org/browser-editorial-source','Synthetic source','Test publisher','2026-10-21');
+    INSERT INTO content_claim_evidence(claim_id,source_id,locator,supports)
+      SELECT c.id,s.id,'Synthetic fixture paragraph 1',true FROM content_claims c CROSS JOIN content_sources s;
+    UPDATE content_claims SET status='verified',reviewer='Synthetic human test fixture',reviewed_at=now();
+    INSERT INTO content_articles(subject_driver_id,locale,slug,title,body_markdown)
+      SELECT subject_driver_id,'en','synthetic-approved-en','Synthetic approved fixture','## Context' || E'\\n\\n' || statement FROM content_claims;
+    INSERT INTO content_article_claims(article_id,claim_id)
+      SELECT a.id,c.id FROM content_articles a JOIN content_claims c ON c.subject_driver_id=a.subject_driver_id;
+    UPDATE content_articles SET status='published',reviewer='Synthetic human test fixture',reviewed_at=now(),published_at=now();
+    INSERT INTO content_articles(subject_driver_id,locale,slug,title,body_markdown)
+      SELECT subject_driver_id,'uk','synthetic-private-uk','PRIVATE UK DRAFT SHOULD NEVER APPEAR','Private untranslated fixture' FROM content_claims;
+  `);
   app = await NestFactory.create(AppModule, { logger: false });
   app.setGlobalPrefix('api');
   await app.listen(3339, '127.0.0.1');

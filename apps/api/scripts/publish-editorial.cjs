@@ -3,6 +3,7 @@
  * Default mode is a database-free dry run. Only a human-authorized revision can publish.
  */
 const fs = require('node:fs');
+const { articleSections } = require('./editorial-body.cjs');
 
 function assertBundle(bundle) {
   if (!bundle || bundle.schema_version !== 1 || bundle.release_kind !== 'approved_text_only' ||
@@ -31,9 +32,11 @@ function assertBundle(bundle) {
           !/^\d{4}-\d{2}-\d{2}$/.test(source.accessed_on)) throw Error('incomplete source provenance');
     }
   }
+  articleSections(bundle.body_markdown, bundle.claims);
   return bundle;
 }
 async function publish(client, bundle) {
+  assertBundle(bundle);
   await client.query('BEGIN');
   try {
     await client.query('SELECT pg_advisory_xact_lock(20261021)');

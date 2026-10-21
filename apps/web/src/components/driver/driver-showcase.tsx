@@ -1,3 +1,5 @@
+import { PublishedChapters } from '@/components/stories/published-chapters';
+import { releasePilot } from '@/components/stories/release-model';
 import { MotorsportArt } from '@/components/stories/motorsport-art';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, seasonStories } from '@/components/stories/story-model';
@@ -18,6 +20,7 @@ type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: Driv
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
 export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults }: Props) {
+  const pilot = releasePilot(driver.external_id);
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
   const opening = openingRecord(career);
@@ -52,7 +55,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         <p className={styles.period}><strong>{range}</strong><span>{t.period}</span></p>
         <h1>{driver.name}</h1>
         <p className={styles.declaration}>{story.driverLead}</p>
-        <div className={styles.actions}><a className={styles.primary} href="#driver-career">{t.begin} <span aria-hidden="true">↓</span></a>
+        <div className={styles.actions}>{pilot && <a className={styles.primary} href={`/${locale}/stories/${pilot.slug}`}>{locale === 'uk' ? 'Дослідити історію' : 'Explore the story'} ↗</a>}<a className={styles.primary} href="#driver-career">{t.begin} <span aria-hidden="true">↓</span></a>
           {compare && <a className={styles.textLink} href={`/${locale}${compare}`}>{t.compare} <span aria-hidden="true">↗</span></a>}</div>
       </div>
       <div className={styles.heroVisual}>
@@ -210,10 +213,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         </a></li>}</ul>
         <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
       </article>}
-      {article ? <article className={styles.biography}><h3>{article.title}</h3>
-        {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-        {article.references.length > 0 && <aside><h4>{t.sourceTitle}</h4><ol>{article.references.map((source, i) => <li key={`${source.url}:${i}`}><a href={source.url} rel="noreferrer">{source.title}</a> — {source.publisher}</li>)}</ol></aside>}
-      </article> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h2 id="driver-editorial-title">{t.unpublished}</h2><p>{t.unpublishedNote}</p></div></div>}
+      {article ? <div><h2 id="driver-editorial-title">{t.biography}</h2><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h2 id="driver-editorial-title">{t.unpublished}</h2><p>{t.unpublishedNote}</p></div></div>}
     </section>
 
     <section id="driver-archive" className={styles.chapter} aria-labelledby="driver-archive-title" tabIndex={-1}>

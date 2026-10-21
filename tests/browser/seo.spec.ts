@@ -18,7 +18,7 @@ async function inspect(page: Page, html: string) {
       robots: [...doc.querySelectorAll('meta[name="robots"]')].map(node => node.getAttribute('content')).join(' '),
       // Next streams completed sections outside the initial <main> shell.
       // Require the actual archive heading, never the loading fallback.\n      // Catalogue and profile pages can stream outside the initial main shell;\n      // the redesigned home uses a scoped CSS-module masthead.
-      h1: doc.querySelector('section.page:not([role="status"]) h1, section.hero h1, section[class*="masthead"] h1')?.textContent,
+      h1: doc.querySelector('.page:not([role="status"]) h1, section.hero h1, section[class*="masthead"] h1')?.textContent,
       hrefs: [...doc.querySelectorAll('a[href]')].map(node => node.getAttribute('href')),
       crumbs: [...doc.querySelectorAll('nav ol li')].map(node => node.textContent),
       jsonLd: [...doc.querySelectorAll('script[type="application/ld+json"]')].map(node => JSON.parse(node.textContent!)),
@@ -28,7 +28,7 @@ async function inspect(page: Page, html: string) {
 
 for (const [locale, messages] of [['en', en], ['uk', uk]] as const) {
   test(`${locale}: public routes expose distinct metadata, canonical URLs and links in server HTML`, async ({ request, page }) => {
-    const routes = ['', '/drivers', '/constructors', '/circuits', '/seasons', '/sources', '/lineage',
+    const routes = ['', '/stories', '/drivers', '/constructors', '/circuits', '/seasons', '/sources', '/lineage',
       '/drivers/1', '/constructors/1', '/seasons/1950', '/seasons/1951', '/races/1', '/circuits/1', '/entrants/1'];
     const titles = new Set();
     const descriptions = new Set();
@@ -103,9 +103,9 @@ test('sitemap and robots are root endpoints with complete, unique localized publ
     return [...doc.querySelectorAll('loc')].map(node => node.textContent!);
   }, xml);
   expect(new Set(urls).size).toBe(urls.length);
-  expect(urls.length).toBe(246); // (7 roots + 107 drivers + 2 teams + 2 circuits + 2 seasons + 1 race + 2 entrants) × 2 locales
+  expect(urls.length).toBe(248); // (8 roots + 107 drivers + 2 teams + 2 circuits + 2 seasons + 1 race + 2 entrants) × 2 locales
   for (const locale of ['uk', 'en']) {
-    for (const route of ['', '/drivers/107', '/constructors/2', '/circuits/2', '/seasons/1951', '/races/1', '/entrants/2']) {
+    for (const route of ['', '/stories', '/drivers/107', '/constructors/2', '/circuits/2', '/seasons/1951', '/races/1', '/entrants/2']) {
       expect(urls).toContain(`${origin}/${locale}${route}`);
     }
   }

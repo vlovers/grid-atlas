@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "schumacher-f1": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "schumacher-mercedes": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "schumacher-aci": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "schumacher-2006-classification": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    }
+  },
+  "claim_reviews": {
+    "michael-schumacher-identity": null,
+    "michael-schumacher-name": null,
+    "michael-schumacher-birth": null,
+    "michael-schumacher-junior": null,
+    "michael-schumacher-teams": null,
+    "michael-schumacher-titles": null,
+    "michael-schumacher-spa": null,
+    "michael-schumacher-suzuka": null,
+    "michael-schumacher-return": null,
+    "michael-schumacher-style": null,
+    "michael-schumacher-significance": null,
+    "michael-schumacher-alonso-classification": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Every claim and the English wording remain needs_review; a human must verify evidence and approve the exact revision.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "The precise Hürth birthplace is supported by Mercedes; F1 gives the wider Cologne area. Do not present the two locators as equally precise corroboration.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Spa debut/first-win details and driving-style assessments need further independent sources before publication.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "A balanced full biography needs the 1994 and 1997 title-deciding incidents and the 1997 sanction checked against FIA or contemporary archival records. Do not adopt the F1 page’s blanket points-removal wording without verification.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "The F1 and Mercedes retrospectives contain record claims tied to earlier eras. This draft does not repeat their present-tense most-successful or nearly-every-record assertions.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Team/season ranges were checked against pinned result chronology; official starts, points and standings require their own metric reconciliation.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "No current health or death claim is made; private medical details are outside this sporting-career outline. No image license has been asserted.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Ferrari pages returned a browser-verification challenge and the attempted official personal biography URL failed. Neither is included as evidence.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "These are live source pages, not immutable snapshots. Re-open the passages during review; team testimony is interested testimony, not neutral independent assessment.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Українські формулювання є дослідницьким перекладом. Потрібна окрема незалежна людська перевірка всіх тверджень щодо наведених джерел.",
+      "resolution": null
+    }
+  ],
+  "media": [],
+  "publication": null
+}

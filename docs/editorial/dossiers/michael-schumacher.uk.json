@@ -38,6 +38,16 @@
       "accessed_on": "2026-10-19",
       "version": "Published 2020-10-08; archive page read 2026-10-19",
       "independence_group": "aci"
+    },
+    {
+      "source_id": "schumacher-2006-classification",
+      "source_url": "https://www.formula1.com/en/results/2006/drivers",
+      "title": "2006 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
@@ -203,12 +213,25 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "michael-schumacher-alonso-classification",
+      "topic": "championships",
+      "statement": "В офіційному заліку пілотів 2006 року Фернандо Алонсо став першим із Renault та 134 очками, а Шумахер — другим із Ferrari та 121 очком. Класифікація фіксує підсумок, але не доводить особистої ворожнечі й не пояснює спірних гоночних епізодів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "schumacher-2006-classification",
+          "locator": "Final classification rows 1–2: Alonso/Renault 134 and Schumacher/Ferrari 121",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
     {
-      "section_id": "background",
-      "title": "Походження та рання кар'єра",
+      "section_id": "opening",
+      "title": "Шлях до Формули-1",
       "claim_ids": [
         "michael-schumacher-identity",
         "michael-schumacher-name",
@@ -217,19 +240,38 @@
       ]
     },
     {
-      "section_id": "career",
-      "title": "Хронологія Формули-1",
+      "section_id": "teams",
+      "title": "Конструкторські розділи",
       "claim_ids": [
         "michael-schumacher-teams",
-        "michael-schumacher-titles",
-        "michael-schumacher-spa",
-        "michael-schumacher-suzuka",
         "michael-schumacher-return"
       ]
     },
     {
-      "section_id": "assessment",
-      "title": "Стиль та історичне значення",
+      "section_id": "championships",
+      "title": "Чемпіонські роки",
+      "claim_ids": [
+        "michael-schumacher-titles"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Спа та Судзука",
+      "claim_ids": [
+        "michael-schumacher-spa",
+        "michael-schumacher-suzuka"
+      ]
+    },
+    {
+      "section_id": "opponents",
+      "title": "Сезон поруч з Алонсо",
+      "claim_ids": [
+        "michael-schumacher-alonso-classification"
+      ]
+    },
+    {
+      "section_id": "interpretation",
+      "title": "Оцінки з атрибуцією",
       "claim_ids": [
         "michael-schumacher-style",
         "michael-schumacher-significance"

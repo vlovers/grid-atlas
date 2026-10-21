@@ -2,141 +2,172 @@
   "schema_version": 1,
   "driver_id": "lewis-hamilton",
   "locale": "uk",
-  "title": "Lewis Hamilton",
-  "author": "AI-assisted research draft; accountable human author not yet assigned",
+  "title": "Льюїс Гамільтон — championship research pilot",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
   "status": "needs_review",
   "publication_status": "unpublished",
   "reviewer": null,
   "reviewed_at": null,
   "sources": [
     {
-      "source_id": "hamilton-f1-2007",
-      "source_url": "https://www.formula1.com/en/results/2007/drivers/LEWHAM01/lewis-hamilton",
-      "title": "2007 Lewis Hamilton Driver Standings",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-canada-2007",
-      "source_url": "https://www.formula1.com/en/results/2007/races/813/canada/race-result",
-      "title": "2007 Canadian Grand Prix race result",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-f1-history",
-      "source_url": "https://www.formula1.com/en/latest/article/lewis-hamilton-40-birthday-f1-icon-mclaren-mercedes-ferrari.7xouhy1Guqt84fydAPyGny",
-      "title": "40 times Lewis Hamilton showed he was an F1 icon",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-f1-championship",
+      "source_id": "lewis-hamilton-f1-hall",
       "source_url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-drivers-championship.53MjXJzTDxQnfxfoCLnxNZ",
       "title": "The beginner’s guide to the F1 Drivers’ Championship",
       "publisher": "Formula 1",
       "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "accessed_on": "2026-10-20",
+      "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
       "independence_group": "formula1"
     },
     {
-      "source_id": "hamilton-fia-2020",
-      "source_url": "https://www.fia.com/news/f1-hamilton-wins-turkey-clinch-record-equalling-seventh-world-title",
-      "title": "F1 – Hamilton wins in Turkey to clinch record-equalling seventh world title",
-      "publisher": "FIA",
+      "source_id": "hamilton-2007-results",
+      "source_url": "https://www.formula1.com/en/results/2007/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2007 race classifications",
+      "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "FIA news report dated 2020-11-15",
-      "independence_group": "fia"
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2008-results",
+      "source_url": "https://www.formula1.com/en/results/2008/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2008 race classifications",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2013-results",
+      "source_url": "https://www.formula1.com/en/results/2013/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2013 race classifications",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2008-standings",
+      "source_url": "https://www.formula1.com/en/results/2008/drivers",
+      "title": "2008 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2020-standings",
+      "source_url": "https://www.formula1.com/en/results/2020/drivers",
+      "title": "2020 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2021-standings",
+      "source_url": "https://www.formula1.com/en/results/2021/drivers",
+      "title": "2021 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
     {
-      "claim_id": "hamilton-debut",
-      "topic": "debut",
-      "statement": "У дебютному Гран-прі Формули-1 — Австралії 2007 року — Льюїс Гамільтон посів третє місце за McLaren.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-f1-history",
-          "locator": "The big milestones, debut win and debut race",
-          "supports": true
-        }
-      ]
-    },
-    {
-      "claim_id": "hamilton-first-win",
-      "topic": "first-win",
-      "statement": "Першу перемогу у Формулі-1 Гамільтон здобув на Гран-прі Канади 2007 року, фінішувавши попереду Ніка Гайдфельда.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-canada-2007",
-          "locator": "Race classification, 10 June 2007",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-f1-history",
-          "locator": "The big milestones, debut win and debut race",
-          "supports": true
-        }
-      ]
-    },
-    {
-      "claim_id": "hamilton-rookie-season",
-      "topic": "rookie-season",
-      "statement": "У дебютному сезоні 2007 року Гамільтон виграв Гран-прі Канади, США, Угорщини та Японії.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
-          "supports": true
-        }
-      ]
-    },
-    {
       "claim_id": "lewis-hamilton-titles",
-      "topic": "title-years",
-      "statement": "Гамільтон став чемпіоном світу серед пілотів у 2008, 2014, 2015, 2017, 2018, 2019 і 2020 роках.",
+      "topic": "championships",
+      "statement": "Льюїс Гамільтон здобув титул чемпіона світу Формули-1 серед пілотів у 2008, 2014, 2015, 2017, 2018, 2019 та 2020 роках.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "hamilton-f1-championship",
-          "locator": "Historical champions listing",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-fia-2020",
-          "locator": "Opening FIA report confirms seventh Drivers' World Championship crown in 2020; individual prior title-year list remains sourced from Formula 1",
+          "source_id": "lewis-hamilton-f1-hall",
+          "locator": "Historical champion paragraph listing Hamilton's seven championship years",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "hamilton-early-mclaren",
-      "topic": "early-mclaren",
-      "statement": "В усіх зафіксованих результатах дебютного сезону Гамільтона у Формулі-1 2007 року його конструктором був McLaren.",
+      "claim_id": "lewis-hamilton-opening",
+      "topic": "early_career",
+      "statement": "Гоночний протокол Хемілтона за 2007 рік починається з третього місця в Австралії за McLaren Mercedes. На канадському етапі 10 червня той самий архів класифікацій уже фіксує його переможцем.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
+          "source_id": "hamilton-2007-results",
+          "locator": "Australia 18 March P3 and Canada 10 June P1 rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-2008",
+      "topic": "championships",
+      "statement": "У підсумковому заліку пілотів 2008 року Хемілтон став першим із 98 очками, а Феліпе Масса — другим із 97. Перевага в одне очко належить офіційній чемпіонатній класифікації, а не обчисленню стартів за архівом.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2008-standings",
+          "locator": "Final drivers’ classification rows 1–2",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-brazil",
+      "topic": "key_events",
+      "statement": "В офіційному результаті Гран-прі Бразилії 2 листопада 2008 року Хемілтона зазначено п’ятим за McLaren Mercedes. Цей гоночний протокол слід читати поруч із підсумковою таблицею чемпіонату, розрізняючи два види результатів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2008-results",
+          "locator": "Brazil, 2 November, position 5, McLaren Mercedes row",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-mercedes",
+      "topic": "teams_seasons",
+      "statement": "У класифікації гонок 2013 року Хемілтон зазначений із Mercedes, зокрема з перемогою в Угорщині 28 липня. Ці записи окреслюють розділ Mercedes, але не встановлюють умов контракту пілота.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2013-results",
+          "locator": "2013 team column and Hungary 28 July P1 row",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-2020",
+      "topic": "championships",
+      "statement": "Хемілтон очолює офіційну таблицю пілотів 2020 року з 347 очками за Mercedes, випереджаючи Валттері Боттаса з 223. Це класифікація конкретного сезону, а не твердження про абсолютні рекорди.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2020-standings",
+          "locator": "Final classification rows 1–2: Hamilton 347, Bottas 223",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-verstappen",
+      "topic": "championships",
+      "statement": "Підсумкова таблиця 2021 року фіксує Ферстаппена першим із 395,5 очка та Хемілтона другим із 387,5. Ці числа описують щільний чемпіонатний підсумок, але самі по собі не пояснюють рішень на останній гонці.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2021-standings",
+          "locator": "Final classification rows 1–2: Verstappen 395.5, Hamilton 387.5",
           "supports": true
         }
       ]
@@ -144,29 +175,55 @@
   ],
   "sections": [
     {
-      "section_id": "beginnings",
-      "title": "Дебют і перший прорив",
+      "section_id": "opening",
+      "title": "Перший сезон",
       "claim_ids": [
-        "hamilton-debut",
-        "hamilton-first-win",
-        "hamilton-rookie-season",
-        "hamilton-early-mclaren"
+        "lewis-hamilton-opening"
       ]
     },
     {
-      "section_id": "titles",
+      "section_id": "teams",
+      "title": "Розділ Mercedes",
+      "claim_ids": [
+        "lewis-hamilton-mercedes"
+      ]
+    },
+    {
+      "section_id": "championships",
       "title": "Чемпіонські роки",
       "claim_ids": [
         "lewis-hamilton-titles"
       ]
+    },
+    {
+      "section_id": "seasons",
+      "title": "Дві чемпіонатні таблиці",
+      "claim_ids": [
+        "lewis-hamilton-2008",
+        "lewis-hamilton-2020"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Бразилія у власному протоколі",
+      "claim_ids": [
+        "lewis-hamilton-brazil"
+      ]
+    },
+    {
+      "section_id": "opponents",
+      "title": "Хемілтон та Ферстаппен",
+      "claim_ids": [
+        "lewis-hamilton-verstappen"
+      ]
     }
   ],
   "gaps": [
-    "Every statement, source locator, translation and identity still requires independent human verification and accountable author/reviewer sign-off.",
-    "Official championship titles must be reconciled with season classification records, not inferred from F1DB race-result points.",
-    "Sources are live webpages; record stable snapshots where possible and re-open during review.",
-    "No photographs or other media have cleared a reuse-rights review; this is unpublished research.",
-    "Existing single-claim Hamilton pilot was expanded, but independent FIA title-source verification remains open."
+    "Assign an accountable human author and independently review every claim and each locale against the exact revision.",
+    "FIA or other independent corroboration of title years and classification details remains required; Formula 1 pages form one publisher group.",
+    "Full career chronology, early racing and the Ferrari chapter are not covered by this bounded pilot. Do not describe the 2013 table as a contract or the completed biography.",
+    "A balanced 2021 rivalry narrative needs contemporary FIA decisions and independent context. No motives, legal conclusions or final-race causation are asserted.",
+    "Live sources have no immutable revision. Reopen passages; validate spelling/transliteration and original writing. No images or reuse rights are claimed."
   ],
   "media": []
 }

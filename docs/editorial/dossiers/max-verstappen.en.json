@@ -3,163 +3,138 @@
   "driver_id": "max-verstappen",
   "locale": "en",
   "title": "Max Verstappen",
-  "author": "AI-assisted research draft; accountable human author not yet assigned",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
   "status": "needs_review",
   "publication_status": "unpublished",
   "reviewer": null,
   "reviewed_at": null,
   "sources": [
     {
-      "source_id": "max-f1-profile",
-      "source_url": "https://www.formula1.com/en/drivers/max-verstappen",
-      "title": "Max Verstappen driver profile",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "max-f1-2016",
+      "source_id": "verstappen-2016-results",
       "source_url": "https://www.formula1.com/en/results/2016/drivers/MAXVER01/max-verstappen",
-      "title": "2016 Max Verstappen Driver Standings",
+      "title": "Max Verstappen — 2016 race classifications",
       "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
       "independence_group": "formula1"
     },
     {
-      "source_id": "max-f1-oral",
-      "source_url": "https://www.formula1.com/en/latest/article/oral-history-verstappens-remarkable-debut-red-bull-win-remembered-by-those-who-witnessed-it.7aXZLi1hvcLH7hhXCMxFI8.7aXZLi1hvcLH7hhXCMxFI8",
-      "title": "Verstappen’s remarkable debut Red Bull win: oral history",
+      "source_id": "verstappen-2021-standings",
+      "source_url": "https://www.formula1.com/en/results/2021/drivers",
+      "title": "2021 Drivers’ Standings",
       "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
       "independence_group": "formula1"
     },
     {
-      "source_id": "max-f1-hall",
-      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-max-verstappen.2DttvntAuFvHYrBY2tV8fN",
-      "title": "Max Verstappen Hall of Fame",
+      "source_id": "verstappen-2023-standings",
+      "source_url": "https://www.formula1.com/en/results/2023/drivers",
+      "title": "2023 Drivers’ Standings",
       "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
       "independence_group": "formula1"
     },
     {
-      "source_id": "max-fia-2024",
-      "source_url": "https://www.fia.com/events/fia-formula-one-world-championship/season-2024/2024-classifications-0",
-      "title": "2024 FIA Formula One World Championship classifications",
-      "publisher": "FIA",
+      "source_id": "verstappen-2024-standings",
+      "source_url": "https://www.formula1.com/en/results/2024/drivers",
+      "title": "2024 Drivers’ Standings",
+      "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "FIA 2024 classifications archive, current page as accessed 2026-10-21",
-      "independence_group": "fia"
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "verstappen-spain-report",
+      "source_url": "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
+      "title": "Verstappen stuns with maiden win in Spain",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
     {
-      "claim_id": "verstappen-debut",
-      "topic": "debut",
-      "statement": "Verstappen made his Formula 1 debut in 2015 with Scuderia Toro Rosso at the age of 17.",
+      "claim_id": "max-verstappen-opening",
+      "topic": "key_events",
+      "statement": "Verstappen won the 2016 Spanish Grand Prix on his first race appearance for Red Bull. Formula 1’s report describes the victory as his first in the championship.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "max-f1-profile",
-          "locator": "Biography: youngest driver, first win and championship chronology",
-          "supports": true
-        },
-        {
-          "source_id": "max-f1-hall",
-          "locator": "2015 debut, May 2016 promotion and first victory",
+          "source_id": "verstappen-spain-report",
+          "locator": "Opening race report: first Red Bull race, maiden victory ahead of Räikkönen",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "verstappen-red-bull",
-      "topic": "red-bull",
-      "statement": "He moved from Toro Rosso to Red Bull Racing during the 2016 season.",
+      "claim_id": "max-verstappen-teams",
+      "topic": "teams_seasons",
+      "statement": "The 2016 classification lists Verstappen with Toro Rosso Ferrari through the Russian round, then Red Bull Racing TAG Heuer from Spain. These are recorded constructor labels, not evidence of contractual terms or legal succession.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "max-f1-2016",
-          "locator": "2016 round-by-round constructor and race results",
-          "supports": true
-        },
-        {
-          "source_id": "max-f1-hall",
-          "locator": "2015 debut, May 2016 promotion and first victory",
+          "source_id": "verstappen-2016-results",
+          "locator": "Team column: opening four rounds Toro Rosso Ferrari; Spain onward Red Bull Racing TAG Heuer",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "verstappen-first-win",
-      "topic": "first-win",
-      "statement": "On 15 May 2016, Verstappen won the Spanish Grand Prix in his first race for Red Bull Racing.",
+      "claim_id": "max-verstappen-spain",
+      "topic": "key_events",
+      "statement": "The Spanish result row records first place on 15 May 2016; the same season’s Brazilian row records third place on 13 November. They offer two distinct race records to explore, not a complete account of how either race unfolded.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "max-f1-2016",
-          "locator": "2016 round-by-round constructor and race results",
-          "supports": true
-        },
-        {
-          "source_id": "max-f1-oral",
-          "locator": "Retrospective published 15 May 2026, 2015 debut and 2016 win",
+          "source_id": "verstappen-2016-results",
+          "locator": "Spain 15 May P1 and Brazil 13 November P3 rows",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "verstappen-youngest-winner",
-      "topic": "youngest-winner",
-      "statement": "He was 18 years and 228 days old at his first Grand Prix victory in Spain in 2016, becoming Formula 1’s youngest race winner.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "max-f1-profile",
-          "locator": "Biography: youngest driver, first win and championship chronology",
-          "supports": true
-        },
-        {
-          "source_id": "max-f1-oral",
-          "locator": "Retrospective published 15 May 2026, 2015 debut and 2016 win",
-          "supports": true
-        }
-      ]
-    },
-    {
-      "claim_id": "verstappen-championships",
+      "claim_id": "max-verstappen-2021",
       "topic": "championships",
-      "statement": "Formula 1's driver biography records four consecutive Drivers’ World Championships for Verstappen from 2021 through 2024.",
+      "statement": "In the official final 2021 drivers’ table, Verstappen leads with 395.5 points and Hamilton follows with 387.5. This classification supports the title outcome; explaining the final-race controversy requires separate evidence.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "max-f1-profile",
-          "locator": "Biography: youngest driver, first win and championship chronology",
-          "supports": true
-        },
-        {
-          "source_id": "max-fia-2024",
-          "locator": "2024 Drivers classification: Max Verstappen first in championship; other individual title years remain sourced from Formula 1 Hall of Fame",
+          "source_id": "verstappen-2021-standings",
+          "locator": "Final classification rows 1–2: Verstappen 395.5, Hamilton 387.5",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "verstappen-season-2023",
-      "topic": "season-2023",
-      "statement": "The Formula 1 biography reports that Verstappen won 19 of the 23 Grands Prix held in 2023.",
+      "claim_id": "max-verstappen-2023",
+      "topic": "championships",
+      "statement": "The official 2023 drivers’ standings list Verstappen first with 575 points and Sergio Perez second with 285, both under Red Bull Racing Honda RBPT. These totals include championship scoring and must not be reconstructed from race-only rows.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "max-f1-profile",
-          "locator": "Biography: youngest driver, first win and championship chronology",
+          "source_id": "verstappen-2023-standings",
+          "locator": "Final classification rows 1–2: Verstappen 575, Perez 285",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "max-verstappen-2024",
+      "topic": "championships",
+      "statement": "The final 2024 table places Verstappen first with 437 points and Lando Norris second with 374. The statement is bounded to 2024; it makes no claim about titles in later seasons.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "verstappen-2024-standings",
+          "locator": "Final classification rows 1–2: Verstappen 437, Norris 374",
           "supports": true
         }
       ]
@@ -167,36 +142,48 @@
   ],
   "sections": [
     {
-      "section_id": "debut",
-      "title": "First seasons",
+      "section_id": "opening",
+      "title": "A new chapter in Spain",
       "claim_ids": [
-        "verstappen-debut",
-        "verstappen-red-bull"
+        "max-verstappen-opening"
       ]
     },
     {
-      "section_id": "breakthrough",
-      "title": "The first victory",
+      "section_id": "teams",
+      "title": "Two constructor labels in one year",
       "claim_ids": [
-        "verstappen-first-win",
-        "verstappen-youngest-winner"
+        "max-verstappen-teams"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Spain and Brazil",
+      "claim_ids": [
+        "max-verstappen-spain"
       ]
     },
     {
       "section_id": "championships",
-      "title": "Championship seasons",
+      "title": "Selected championship tables",
       "claim_ids": [
-        "verstappen-championships",
-        "verstappen-season-2023"
+        "max-verstappen-2023",
+        "max-verstappen-2024"
+      ]
+    },
+    {
+      "section_id": "opponents",
+      "title": "A season shared with Hamilton",
+      "claim_ids": [
+        "max-verstappen-2021"
       ]
     }
   ],
   "gaps": [
-    "Every statement, source locator, translation and identity still requires independent human verification and accountable author/reviewer sign-off.",
-    "Official championship titles must be reconciled with season classification records, not inferred from F1DB race-result points.",
-    "Sources are live webpages; record stable snapshots where possible and re-open during review.",
-    "No photographs or other media have cleared a reuse-rights review; this is unpublished research.",
-    "All championship results require independent official FIA season classification checks before publication."
+    "Assign an accountable human author, reconcile the canonical identity with pinned F1DB and review every claim independently in both locales.",
+    "This bounded pilot covers selected 2016, 2021, 2023 and 2024 records, not a complete biography or exhaustive title-year list. Early racing and 2022 need separate sourced treatment.",
+    "Formula 1 is one publisher group. FIA or other independent source corroboration and exact historical scoring checks remain open.",
+    "The 2021 controversy requires contemporary FIA records and balanced independent context; no claims about intent, rule legality or final-race causation are included.",
+    "Live pages are not immutable snapshots. Reopen exact passages and review original wording and transliteration. No photographs, licences or human approvals are supplied."
   ],
   "media": []
 }

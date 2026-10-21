@@ -2,141 +2,172 @@
   "schema_version": 1,
   "driver_id": "lewis-hamilton",
   "locale": "en",
-  "title": "Lewis Hamilton",
-  "author": "AI-assisted research draft; accountable human author not yet assigned",
+  "title": "Lewis Hamilton — championship research pilot",
+  "author": "AI-assisted source review; accountable human author not yet assigned",
   "status": "needs_review",
   "publication_status": "unpublished",
   "reviewer": null,
   "reviewed_at": null,
   "sources": [
     {
-      "source_id": "hamilton-f1-2007",
-      "source_url": "https://www.formula1.com/en/results/2007/drivers/LEWHAM01/lewis-hamilton",
-      "title": "2007 Lewis Hamilton Driver Standings",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-canada-2007",
-      "source_url": "https://www.formula1.com/en/results/2007/races/813/canada/race-result",
-      "title": "2007 Canadian Grand Prix race result",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-f1-history",
-      "source_url": "https://www.formula1.com/en/latest/article/lewis-hamilton-40-birthday-f1-icon-mclaren-mercedes-ferrari.7xouhy1Guqt84fydAPyGny",
-      "title": "40 times Lewis Hamilton showed he was an F1 icon",
-      "publisher": "Formula 1",
-      "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
-      "independence_group": "formula1"
-    },
-    {
-      "source_id": "hamilton-f1-championship",
+      "source_id": "lewis-hamilton-f1-hall",
       "source_url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-f1-drivers-championship.53MjXJzTDxQnfxfoCLnxNZ",
       "title": "The beginner’s guide to the F1 Drivers’ Championship",
       "publisher": "Formula 1",
       "author": null,
-      "accessed_on": "2026-10-21",
-      "version": "Live reference inspected 2026-10-21; no immutable snapshot",
+      "accessed_on": "2026-10-20",
+      "version": "Formula 1 live source inspected 2026-10-20; no immutable revision supplied",
       "independence_group": "formula1"
     },
     {
-      "source_id": "hamilton-fia-2020",
-      "source_url": "https://www.fia.com/news/f1-hamilton-wins-turkey-clinch-record-equalling-seventh-world-title",
-      "title": "F1 – Hamilton wins in Turkey to clinch record-equalling seventh world title",
-      "publisher": "FIA",
+      "source_id": "hamilton-2007-results",
+      "source_url": "https://www.formula1.com/en/results/2007/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2007 race classifications",
+      "publisher": "Formula 1",
       "author": null,
       "accessed_on": "2026-10-21",
-      "version": "FIA news report dated 2020-11-15",
-      "independence_group": "fia"
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2008-results",
+      "source_url": "https://www.formula1.com/en/results/2008/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2008 race classifications",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2013-results",
+      "source_url": "https://www.formula1.com/en/results/2013/drivers/LEWHAM01/lewis-hamilton",
+      "title": "Lewis Hamilton — 2013 race classifications",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2008-standings",
+      "source_url": "https://www.formula1.com/en/results/2008/drivers",
+      "title": "2008 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2020-standings",
+      "source_url": "https://www.formula1.com/en/results/2020/drivers",
+      "title": "2020 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-2021-standings",
+      "source_url": "https://www.formula1.com/en/results/2021/drivers",
+      "title": "2021 Drivers’ Standings",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "Live source inspected 2026-10-21; no immutable revision supplied",
+      "independence_group": "formula1"
     }
   ],
   "claims": [
     {
-      "claim_id": "hamilton-debut",
-      "topic": "debut",
-      "statement": "Hamilton finished third in the 2007 Australian Grand Prix on his Formula 1 debut with McLaren.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-f1-history",
-          "locator": "The big milestones, debut win and debut race",
-          "supports": true
-        }
-      ]
-    },
-    {
-      "claim_id": "hamilton-first-win",
-      "topic": "first-win",
-      "statement": "His first Formula 1 victory came at the 2007 Canadian Grand Prix, where he finished ahead of Nick Heidfeld.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-canada-2007",
-          "locator": "Race classification, 10 June 2007",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-f1-history",
-          "locator": "The big milestones, debut win and debut race",
-          "supports": true
-        }
-      ]
-    },
-    {
-      "claim_id": "hamilton-rookie-season",
-      "topic": "rookie-season",
-      "statement": "In his debut season in 2007, Hamilton won the Canadian, United States, Hungarian and Japanese Grands Prix.",
-      "status": "needs_review",
-      "evidence": [
-        {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
-          "supports": true
-        }
-      ]
-    },
-    {
       "claim_id": "lewis-hamilton-titles",
-      "topic": "title-years",
-      "statement": "Hamilton won the Drivers’ World Championship in 2008, 2014, 2015, 2017, 2018, 2019 and 2020.",
+      "topic": "championships",
+      "statement": "Lewis Hamilton won the Formula One Drivers’ World Championship in 2008, 2014, 2015, 2017, 2018, 2019 and 2020.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "hamilton-f1-championship",
-          "locator": "Historical champions listing",
-          "supports": true
-        },
-        {
-          "source_id": "hamilton-fia-2020",
-          "locator": "Opening FIA report confirms seventh Drivers' World Championship crown in 2020; individual prior title-year list remains sourced from Formula 1",
+          "source_id": "lewis-hamilton-f1-hall",
+          "locator": "Historical champion paragraph listing Hamilton's seven championship years",
           "supports": true
         }
       ]
     },
     {
-      "claim_id": "hamilton-early-mclaren",
-      "topic": "early-mclaren",
-      "statement": "McLaren was the constructor recorded for Hamilton throughout his 2007 Formula 1 debut season.",
+      "claim_id": "lewis-hamilton-opening",
+      "topic": "early_career",
+      "statement": "Hamilton’s 2007 race record opens with third place in Australia for McLaren Mercedes. By the Canadian round on 10 June, the same classification archive records him as the winner.",
       "status": "needs_review",
       "evidence": [
         {
-          "source_id": "hamilton-f1-2007",
-          "locator": "Formula 1 results archive, round-by-round 2007",
+          "source_id": "hamilton-2007-results",
+          "locator": "Australia 18 March P3 and Canada 10 June P1 rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-2008",
+      "topic": "championships",
+      "statement": "The final 2008 drivers’ standings place Hamilton first with 98 points and Felipe Massa second with 97. This one-point margin belongs to the official championship classification, not to an archive-derived start count.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2008-standings",
+          "locator": "Final drivers’ classification rows 1–2",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-brazil",
+      "topic": "key_events",
+      "statement": "At the Brazilian Grand Prix on 2 November 2008, the official result lists Hamilton fifth for McLaren Mercedes. Read that race classification alongside the final championship table to keep the two kinds of result distinct.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2008-results",
+          "locator": "Brazil, 2 November, position 5, McLaren Mercedes row",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-mercedes",
+      "topic": "teams_seasons",
+      "statement": "The 2013 race classification lists Hamilton with Mercedes, including a victory in Hungary on 28 July. These records anchor the Mercedes chapter without supplying the terms of a driver contract.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2013-results",
+          "locator": "2013 team column and Hungary 28 July P1 row",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-2020",
+      "topic": "championships",
+      "statement": "Hamilton heads the official 2020 drivers’ table with 347 points for Mercedes, ahead of Valtteri Bottas on 223. This is a season-specific classification, not a claim about all-time records.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2020-standings",
+          "locator": "Final classification rows 1–2: Hamilton 347, Bottas 223",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lewis-hamilton-verstappen",
+      "topic": "championships",
+      "statement": "The 2021 final table records Verstappen first on 395.5 points and Hamilton second on 387.5. Those totals describe a close championship outcome; they do not by themselves explain the decisions at the final race.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hamilton-2021-standings",
+          "locator": "Final classification rows 1–2: Verstappen 395.5, Hamilton 387.5",
           "supports": true
         }
       ]
@@ -144,29 +175,55 @@
   ],
   "sections": [
     {
-      "section_id": "beginnings",
-      "title": "Debut and breakthrough",
+      "section_id": "opening",
+      "title": "An opening season",
       "claim_ids": [
-        "hamilton-debut",
-        "hamilton-first-win",
-        "hamilton-rookie-season",
-        "hamilton-early-mclaren"
+        "lewis-hamilton-opening"
       ]
     },
     {
-      "section_id": "titles",
-      "title": "Championship record",
+      "section_id": "teams",
+      "title": "The Mercedes chapter",
+      "claim_ids": [
+        "lewis-hamilton-mercedes"
+      ]
+    },
+    {
+      "section_id": "championships",
+      "title": "Championship years",
       "claim_ids": [
         "lewis-hamilton-titles"
+      ]
+    },
+    {
+      "section_id": "seasons",
+      "title": "Two championship tables",
+      "claim_ids": [
+        "lewis-hamilton-2008",
+        "lewis-hamilton-2020"
+      ]
+    },
+    {
+      "section_id": "race-moments",
+      "title": "Brazil in its own record",
+      "claim_ids": [
+        "lewis-hamilton-brazil"
+      ]
+    },
+    {
+      "section_id": "opponents",
+      "title": "Hamilton and Verstappen",
+      "claim_ids": [
+        "lewis-hamilton-verstappen"
       ]
     }
   ],
   "gaps": [
-    "Every statement, source locator, translation and identity still requires independent human verification and accountable author/reviewer sign-off.",
-    "Official championship titles must be reconciled with season classification records, not inferred from F1DB race-result points.",
-    "Sources are live webpages; record stable snapshots where possible and re-open during review.",
-    "No photographs or other media have cleared a reuse-rights review; this is unpublished research.",
-    "Existing single-claim Hamilton pilot was expanded, but independent FIA title-source verification remains open."
+    "Assign an accountable human author and independently review every claim and each locale against the exact revision.",
+    "FIA or other independent corroboration of title years and classification details remains required; Formula 1 pages form one publisher group.",
+    "Full career chronology, early racing and the Ferrari chapter are not covered by this bounded pilot. Do not describe the 2013 table as a contract or the completed biography.",
+    "A balanced 2021 rivalry narrative needs contemporary FIA decisions and independent context. No motives, legal conclusions or final-race causation are asserted.",
+    "Live sources have no immutable revision. Reopen passages; validate spelling/transliteration and original writing. No images or reuse rights are claimed."
   ],
   "media": []
 }

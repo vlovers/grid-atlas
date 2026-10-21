@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "lewis-hamilton-f1-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Retrospective or interested team account, not independent contemporary evidence. Exact publication day is not verified; do not confuse access date with publication date."
+    },
+    "hamilton-2007-results": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "hamilton-2008-results": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "hamilton-2013-results": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "hamilton-2008-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "hamilton-2020-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    },
+    "hamilton-2021-standings": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Official classification table (primary result evidence)."
+    }
+  },
+  "claim_reviews": {
+    "lewis-hamilton-titles": null,
+    "lewis-hamilton-opening": null,
+    "lewis-hamilton-2008": null,
+    "lewis-hamilton-brazil": null,
+    "lewis-hamilton-mercedes": null,
+    "lewis-hamilton-2020": null,
+    "lewis-hamilton-verstappen": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Assign an accountable human author and independently review every claim and each locale against the exact revision.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "FIA or other independent corroboration of title years and classification details remains required; Formula 1 pages form one publisher group.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Full career chronology, early racing and the Ferrari chapter are not covered by this bounded pilot. Do not describe the 2013 table as a contract or the completed biography.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "A balanced 2021 rivalry narrative needs contemporary FIA decisions and independent context. No motives, legal conclusions or final-race causation are asserted.",
+      "resolution": null
+    },
+    {
+      "claim_id": null,
+      "kind": "missing_evidence",
+      "note": "Live sources have no immutable revision. Reopen passages; validate spelling/transliteration and original writing. No images or reuse rights are claimed.",
+      "resolution": null
+    }
+  ],
+  "media": [],
+  "publication": null
+}

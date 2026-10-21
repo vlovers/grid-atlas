@@ -1,3 +1,5 @@
+import { parsePublishedArticle, type PublishedArticle } from '@/components/stories/published-article';
+export type { PublishedArticle } from '@/components/stories/published-article';
 import { notFound } from 'next/navigation';
 
 const base = process.env.API_BASE_URL || 'http://127.0.0.1:3001';
@@ -29,11 +31,6 @@ export async function getData<T>(path: string): Promise<T[]> {
 }
 
 /** A missing article is expected; transport errors are not silently swallowed. */
-export type PublishedArticle = {
-  id: string; locale: 'uk' | 'en'; slug: string;
-  title: string; body_markdown: string; published_at: string;
-  references: { url: string; title: string; publisher: string }[];
-};
 export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en'): Promise<PublishedArticle | null> {
   const path = `/api/drivers/${driverId}/article?locale=${locale}`;
   let response: Response;
@@ -49,10 +46,5 @@ export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en')
   if (!payload || typeof payload !== 'object' || !('data' in payload)) {
     throw new Error('Malformed editorial API response');
   }
-  const article = (payload as { data: unknown }).data;
-  if (!article || typeof article !== 'object' || !('body_markdown' in article) ||
-    typeof article.body_markdown !== 'string' || !('title' in article) || typeof article.title !== 'string') {
-    throw new Error('Malformed editorial article');
-  }
-  return article as PublishedArticle;
+  return parsePublishedArticle((payload as { data: unknown }).data, locale);
 }
