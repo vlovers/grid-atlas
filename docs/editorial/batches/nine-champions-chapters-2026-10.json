@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "kind": "nine_champion_bilingual_editorial_chapters",
+  "status": "research_copy_needs_human_review",
+  "publication_allowed": false,
+  "reviewed_by_human": false,
+  "generated_from": "existing source-located dossier claims in docs/editorial/dossiers",
+  "note": "22 chapters, 44 bilingual localized original research passages; independent editorial verification and publication still blocked.",
+  "chapters": [
+    {
+      "driver_id": "juan-manuel-fangio",
+      "editorial_title": {
+        "en": "Five seasons at the summit",
+        "uk": "П’ять сезонів на вершині"
+      },
+      "body": {
+        "en": "The early championship had a defining figure: Juan Manuel Fangio. His five titles came in 1951 and in four consecutive seasons from 1954 to 1957. That compact sequence makes him a natural doorway into Formula 1’s formative decade. The next chapter should examine each campaign separately rather than reducing five different seasons to a single number.",
+        "uk": "У ранній історії чемпіонату особливе місце посідає Хуан-Мануель Фанхіо. Він здобув п’ять титулів: у 1951 році та в чотирьох сезонах поспіль — із 1954-го до 1957-го. Ця послідовність допомагає почати знайомство з Формулою-1 її перших десятиліть. Кожен чемпіонський сезон варто дослідити окремо, а не зводити п’ять різних історій до одного числа."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/juan-manuel-fangio.en.json",
+        "uk": "docs/editorial/dossiers/juan-manuel-fangio.uk.json"
+      },
+      "based_on_claim_ids": [
+        "juan-manuel-fangio-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "jim-clark",
+      "editorial_title": {
+        "en": "Six victories in one season",
+        "uk": "Шість перемог за один сезон"
+      },
+      "body": {
+        "en": "The 1965 season offers a precise way into Jim Clark’s career: six Grand Prix victories, in South Africa, Belgium, France, Britain, the Netherlands and Germany, recorded for Lotus-Climax. He was world champion in both 1963 and 1965. Those results tell us what happened; a complete chapter still needs independent evidence for how each win unfolded and what made his driving distinctive.",
+        "uk": "Сезон 1965 року дає конкретну точку входу в кар’єру Джима Кларка: шість перемог на Гран-прі Південної Африки, Бельгії, Франції, Великої Британії, Нідерландів і Німеччини за Lotus-Climax. Кларк ставав чемпіоном світу в 1963 та 1965 роках. Результати показують, що сталося на трасі; повноцінна історія ще потребує незалежних джерел про перебіг кожної гонки та особливості його пілотування."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/jim-clark.en.json",
+        "uk": "docs/editorial/dossiers/jim-clark.uk.json"
+      },
+      "based_on_claim_ids": [
+        "jim-clark-titles",
+        "jim-clark-1965-six-wins"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "editorial_title": {
+        "en": "Three championships, three chapters",
+        "uk": "Три титули, три розділи"
+      },
+      "body": {
+        "en": "Jackie Stewart’s championship years—1969, 1971 and 1973—give this profile its initial structure. Rather than presenting the titles as an isolated trophy count, Grid Atlas can open each season’s actual race record and compare the evidence. The sporting and personal stories behind those campaigns remain editorial work, not facts inferred from a winners list.",
+        "uk": "Роки чемпіонських титулів Джекі Стюарта — 1969, 1971 і 1973 — формують початкову структуру цього профілю. Замість окремого переліку нагород Grid Atlas може відкрити результати кожного сезону та зіставити підтверджені дані. Спортивні й особисті історії цих кампаній ще потребують редакційного дослідження: їх не можна виводити лише зі списку чемпіонів."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/jackie-stewart.en.json",
+        "uk": "docs/editorial/dossiers/jackie-stewart.uk.json"
+      },
+      "based_on_claim_ids": [
+        "jackie-stewart-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "niki-lauda",
+      "editorial_title": {
+        "en": "A title measured in half-points",
+        "uk": "Чемпіонство з половиною очка"
+      },
+      "body": {
+        "en": "Niki Lauda’s three championship seasons were 1975, 1977 and 1984. The official 1975 table places him first for Ferrari on 64.5 points, ahead of Emerson Fittipaldi on 45. That half-point is a reminder that historical scoring is not always as simple as today’s totals. A future article should explain the period’s race and points rules from contemporary sources before drawing further conclusions.",
+        "uk": "Нікі Лауда здобував чемпіонські титули в 1975, 1977 та 1984 роках. В офіційному заліку 1975 року він посів перше місце за Ferrari з 64,5 очка, випередивши Емерсона Фіттіпальді з 45 очками. Половина очка нагадує, що історичні системи підрахунку не завжди схожі на сучасну. Майбутня стаття має пояснити правила того періоду за тогочасними джерелами, перш ніж робити ширші висновки."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/niki-lauda.en.json",
+        "uk": "docs/editorial/dossiers/niki-lauda.uk.json"
+      },
+      "based_on_claim_ids": [
+        "niki-lauda-titles",
+        "niki-lauda-1975-standings"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "A career across four constructors",
+        "uk": "Кар’єра через чотири команди"
+      },
+      "body": {
+        "en": "Alain Prost’s Formula 1 path crossed McLaren, Renault, Ferrari and Williams. He drove for McLaren in 1980, Renault in 1981–1983, returned to McLaren for 1984–1989, joined Ferrari in 1990–1991 and returned with Williams in 1993. His titles came with McLaren in 1985, 1986 and 1989, and with Williams in 1993. Those season-by-season moves should anchor a navigable career chronology, not an unsupported story about team contracts or corporate lineage.",
+        "uk": "Шлях Алена Проста у Формулі-1 пролягав через McLaren, Renault, Ferrari та Williams. У 1980 році він виступав за McLaren, у 1981–1983 роках — за Renault, повернувся до McLaren на 1984–1989 роки, перейшов до Ferrari у 1990–1991 роках, а в 1993-му повернувся з Williams. Його титули пов’язані з McLaren у 1985, 1986 і 1989 роках та Williams у 1993-му. Ці підтверджені етапи мають стати основою хронології, без припущень про контракти чи юридичну спадковість команд."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-teams",
+        "alain-prost-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "From a 1991 debut to a return",
+        "uk": "Від дебюту 1991-го до повернення"
+      },
+      "body": {
+        "en": "Michael Schumacher’s recorded team chronology begins with Jordan and Benetton in 1991. He remained with Benetton through 1995, raced for Ferrari from 1996 to 2006, then returned with Mercedes for 2010–2012. Before Formula 1, his 1990 German Formula Three title and entry into Mercedes’ sports-car programme provide a separate opening chapter. Dates establish the sequence; the motives behind each move require independent reporting.",
+        "uk": "Хронологія команд Міхаеля Шумахера починається з Jordan і Benetton у 1991 році. Він залишався з Benetton до 1995-го, виступав за Ferrari у 1996–2006 роках, а згодом повернувся до Формули-1 з Mercedes на сезони 2010–2012. Окремим початком історії можуть стати титул у німецькій Формулі-3 1990 року та участь у програмі спортивних автомобілів Mercedes. Дати встановлюють послідовність, але мотиви переходів потрібно перевіряти за незалежними джерелами."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-junior",
+        "michael-schumacher-teams"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "editorial_title": {
+        "en": "Two consecutive championships",
+        "uk": "Два чемпіонства поспіль"
+      },
+      "body": {
+        "en": "Fernando Alonso won the drivers’ world championship in 2005 and 2006 with Renault. These two consecutive seasons form a clear starting point for a deeper profile: races, results and the championship records can be explored side by side. They do not, by themselves, support claims about tactics, rivalries or why individual Grands Prix were won.",
+        "uk": "Фернандо Алонсо здобув титули чемпіона світу в 2005 та 2006 роках у складі Renault. Два послідовні сезони — зрозуміла відправна точка для глибшого профілю: гонки, результати й чемпіонські записи можна порівнювати поряд. Самі таблиці не підтверджують тверджень про тактику, суперництво чи причини перемоги в окремих Гран-прі."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/fernando-alonso.en.json",
+        "uk": "docs/editorial/dossiers/fernando-alonso.uk.json"
+      },
+      "based_on_claim_ids": [
+        "fernando-alonso-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "editorial_title": {
+        "en": "Four years, four titles",
+        "uk": "Чотири роки, чотири титули"
+      },
+      "body": {
+        "en": "Sebastian Vettel claimed four consecutive drivers’ world championships from 2010 through 2013. The uninterrupted sequence gives readers four season records to explore, compare and revisit. A complete narrative must still distinguish verified race results from interpretations about the car, the team and the pressure of defending a title.",
+        "uk": "Себастьян Феттель здобув чотири чемпіонські титули поспіль — із 2010 до 2013 року. Ця безперервна серія відкриває читачам чотири сезони для перегляду й порівняння. Повноцінна історія має чітко відділяти підтверджені результати гонок від оцінок боліда, роботи команди та тиску захисту титулу."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/sebastian-vettel.en.json",
+        "uk": "docs/editorial/dossiers/sebastian-vettel.uk.json"
+      },
+      "based_on_claim_ids": [
+        "sebastian-vettel-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "editorial_title": {
+        "en": "Seven title-winning seasons",
+        "uk": "Сім чемпіонських сезонів"
+      },
+      "body": {
+        "en": "Lewis Hamilton’s seven drivers’ championships came in 2008, 2014, 2015, 2017, 2018, 2019 and 2020. Those dates offer seven distinct starting points for exploring race evidence. They are a verified chronology of title years, not a substitute for examining the individual seasons, rivalries or changes in regulations.",
+        "uk": "Льюїс Гамільтон вигравав чемпіонат світу сім разів: у 2008, 2014, 2015, 2017, 2018, 2019 та 2020 роках. Кожен із цих сезонів може стати окремою точкою входу до результатів гонок. Ці дати утворюють хронологію титулів, але не замінюють дослідження кожного чемпіонату, суперництва та змін у регламенті."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/lewis-hamilton.en.json",
+        "uk": "docs/editorial/dossiers/lewis-hamilton.uk.json"
+      },
+      "based_on_claim_ids": [
+        "lewis-hamilton-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "The half-point season",
+        "uk": "Сезон половини очка"
+      },
+      "body": {
+        "en": "In 1984 Prost won seven Grands Prix, but it was his McLaren team-mate Niki Lauda who finished the championship half a point ahead. A record of victories and a championship classification can tell two different stories. In this case, the distinction is essential: counting the individual wins alone would hide how close the season finished. The next step for a complete 1984 chapter is to present race-by-race evidence and explain the applicable scoring rules, rather than implying that seven wins necessarily meant seven decisive results.",
+        "uk": "У 1984 році Прост виграв сім Гран-прі, але його напарник по McLaren Нікі Лауда випередив його в чемпіонаті на половину очка. Перелік перемог та підсумкова таблиця можуть розповідати різні історії. Тут ця відмінність особливо важлива: сам підрахунок перемог не показує, наскільки близьким був фінал сезону. Для повноцінного розділу про 1984 рік потрібно показати результати кожного етапу й пояснити тогочасні правила нарахування очок, не припускаючи, що сім перемог автоматично означали сім вирішальних результатів."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-1984"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "A first win, then a final title",
+        "uk": "Перша перемога й останній титул"
+      },
+      "body": {
+        "en": "Prost took his first Formula 1 victory for Renault at the 1981 French Grand Prix in Dijon. Twelve years later, second place in the Portuguese Grand Prix at Estoril secured his fourth drivers’ championship with Williams. These two milestones frame a long career without pretending that every season between them followed a straight line. The documented chronology includes a year away before his 1993 return, and his announcement during the Portuguese Grand Prix weekend that he would retire after that season.",
+        "uk": "Першу перемогу у Формулі-1 Прост здобув за Renault на Гран-прі Франції 1981 року в Діжоні. Дванадцять років потому друге місце на Гран-прі Португалії в Ешторілі забезпечило йому четвертий чемпіонський титул із Williams. Ці два моменти обрамлюють тривалу кар’єру, але не означають, що всі проміжні сезони були прямим шляхом до успіху. Підтверджена хронологія охоплює річну перерву перед поверненням у 1993-му та оголошення під час португальського етапу про завершення кар’єри після сезону."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-first-victory",
+        "alain-prost-1993"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "When team-mates became rivals",
+        "uk": "Коли напарники стали суперниками"
+      },
+      "body": {
+        "en": "Ayrton Senna joined Prost at McLaren in 1988. McLaren won 15 of that season’s 16 races, a result that makes it tempting to describe everything as a story of two drivers. Yet the team's overall record and the personal rivalry are different kinds of evidence. Our detailed 1988 comparison must distinguish each driver’s race results, championship scoring and the claims made about events away from the timing sheets. Their rivalry continued after Prost moved to Ferrari; the causes and emotional interpretations require individually checked contemporary reporting.",
+        "uk": "Айртон Сенна став напарником Проста в McLaren у 1988 році. Команда виграла 15 із 16 гонок сезону, і тому всю історію легко звести до протистояння двох пілотів. Проте командний результат та особисте суперництво — це різні типи свідчень. Детальне порівняння 1988 року має окремо показувати результати кожного гонщика, правила чемпіонського заліку та твердження про події поза протоколами. Суперництво тривало й після переходу Проста до Ferrari; його причини та емоційні оцінки потребують окремо перевірених тогочасних джерел."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-rivalry"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "Spa: the first two milestones",
+        "uk": "Спа: перші дві віхи"
+      },
+      "body": {
+        "en": "The Belgian Grand Prix at Spa-Francorchamps connects Schumacher’s first two Formula 1 milestones. He made his debut there with Jordan in 1991 and returned the following year as a Benetton driver to claim his first Grand Prix victory. The shared location offers a natural way to navigate between two separate race records. It does not prove anything by itself about the circumstances of the debut, the machinery’s comparative performance or the tactical details of the victory: those questions need the individual race reports.",
+        "uk": "Гран-прі Бельгії на Спа-Франкоршам пов’язує дві перші віхи Шумахера у Формулі-1. У 1991 році він дебютував там за Jordan, а наступного року повернувся вже як пілот Benetton і здобув першу перемогу на Гран-прі. Спільна траса дає природний перехід між двома різними протоколами перегонів. Але вона сама собою нічого не доводить про обставини дебюту, порівняльні можливості болідів або тактичні деталі перемоги: для цього потрібні звіти про кожну гонку."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-spa"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "The Suzuka turning point",
+        "uk": "Переломний момент на Судзуці"
+      },
+      "body": {
+        "en": "On 8 October 2000, at Suzuka, Michael Schumacher secured his first drivers’ world championship with Ferrari. It ended Ferrari’s wait for a drivers’ title that stretched back to Jody Scheckter in 1979. That date is a pivotal landmark in Schumacher’s Ferrari period, which ran from 1996 to 2006 and eventually included five consecutive championships from 2000 to 2004. The dates and titles are the starting evidence; a richer race narrative still needs direct race reporting and independently reviewed quotations.",
+        "uk": "8 жовтня 2000 року на Судзуці Міхаель Шумахер здобув свій перший чемпіонський титул із Ferrari. Так завершилося очікування команди на чемпіона серед пілотів, що тривало від титулу Джоді Шектера 1979 року. Ця дата — ключова віха у періоді Шумахера за Ferrari з 1996 до 2006 року, коли він зрештою здобув п’ять титулів поспіль у 2000–2004 роках. Дати та титули — вихідна доказова основа; для повнішої історії гонки потрібні прямі репортажі та незалежно перевірені цитати."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-suzuka",
+        "michael-schumacher-teams",
+        "michael-schumacher-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "Seven titles, two eras",
+        "uk": "Сім титулів, дві епохи"
+      },
+      "body": {
+        "en": "Schumacher’s seven titles separate into two championships with Benetton, in 1994 and 1995, and five consecutive championships with Ferrari, from 2000 through 2004. The gap between those groups matters. It prevents a career spanning different teams and seasons from collapsing into a single unbroken winning streak. His later return with Mercedes in 2010–2012 did not add another Grand Prix victory. To understand why, race-by-race evidence and careful historical context will be more useful than retrospective certainty.",
+        "uk": "Сім титулів Шумахера поділяються на два чемпіонства з Benetton — 1994 і 1995 років — та п’ять поспіль із Ferrari з 2000-го до 2004-го. Перерва між цими серіями має значення: вона не дозволяє звести кар’єру в різних командах та сезонах до однієї безперервної переможної смуги. Пізніше повернення з Mercedes у 2010–2012 роках не принесло нової перемоги на Гран-прі. Щоб зрозуміти цей період, потрібні результати кожного етапу та обережний історичний контекст, а не впевнені ретроспективні судження."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-titles",
+        "michael-schumacher-return"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "editorial_title": {
+        "en": "The four-year sequence",
+        "uk": "Чотири роки поспіль"
+      },
+      "body": {
+        "en": "The sequence from 1954 to 1957 is one of the most striking facts in the early world championship: Fangio appears as champion four years in succession, following his earlier title in 1951. But an honest retrospective should not flatten those four campaigns into a single uninterrupted story. Each year has its own calendar, individual race results and championship classification. Grid Atlas can let readers move from the overview into those separate seasons, clearly distinguishing a confirmed list of titles from the not-yet-researched reasons behind each outcome.",
+        "uk": "Послідовність 1954–1957 років — один із найпомітніших фактів ранньої історії чемпіонату світу: після першого титулу 1951 року Фанхіо став чемпіоном чотири сезони поспіль. Але якісний історичний матеріал не повинен перетворювати ці чотири кампанії на одну нероздільну оповідь. Кожен рік має власний календар, результати перегонів і чемпіонський залік. Grid Atlas має вести читача від загальної картини до окремих сезонів, відділяючи підтверджений список титулів від ще не досліджених причин кожного результату."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/juan-manuel-fangio.en.json",
+        "uk": "docs/editorial/dossiers/juan-manuel-fangio.uk.json"
+      },
+      "based_on_claim_ids": [
+        "juan-manuel-fangio-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "jim-clark",
+      "editorial_title": {
+        "en": "A route through the 1965 calendar",
+        "uk": "Маршрут календарем 1965 року"
+      },
+      "body": {
+        "en": "Instead of treating Clark's 1965 championship merely as another title, begin with the six winning Grands Prix in the recorded season: South Africa, Belgium, France, Britain, the Netherlands and Germany. Each can become a stop in a documentary route with its date, circuit, qualifying and finishing evidence where available. What the list cannot tell us is how the race unfolded from lap to lap or how much of a victory to attribute to car, driver or strategy. Those explanations belong to a separately sourced narrative, not to a result-table caption.",
+        "uk": "Чемпіонський сезон Кларка 1965 року краще показати не лише черговим титулом, а маршрутом шести переможних Гран-прі: Південної Африки, Бельгії, Франції, Великої Британії, Нідерландів і Німеччини. Кожна гонка може стати окремою зупинкою документальної історії з датою, трасою, кваліфікацією та результатом, якщо відповідні записи доступні. Однак перелік не пояснює перебіг боротьби коло за колом або внесок боліда, гонщика й стратегії. Такі пояснення належать до окремо підтвердженої історичної оповіді, а не до підпису під таблицею."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/jim-clark.en.json",
+        "uk": "docs/editorial/dossiers/jim-clark.uk.json"
+      },
+      "based_on_claim_ids": [
+        "jim-clark-1965-six-wins",
+        "jim-clark-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "editorial_title": {
+        "en": "The spaces between titles",
+        "uk": "Роки між титулами"
+      },
+      "body": {
+        "en": "Stewart's three championship years—1969, 1971 and 1973—were not consecutive. That simple calendar fact offers a more useful reading path than a single number: compare the winning campaigns with the intervening seasons, then open individual race evidence rather than assigning a reason to changes in standings without investigation. The published championship list supports the dates; a richer account of the person, the teams and the environment of the time still needs independently checked reporting.",
+        "uk": "Три чемпіонські сезони Стюарта — 1969, 1971 і 1973 — не йшли поспіль. Цей простий календарний факт підказує цікавіший шлях знайомства з кар’єрою, ніж одне число: зіставити чемпіонські роки з проміжними сезонами, а потім відкрити підтверджені результати окремих гонок, не вигадуючи пояснень змін у заліку. Список чемпіонів підтверджує дати; докладніша історія людини, команд та епохи ще потребує незалежно перевірених джерел."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/jackie-stewart.en.json",
+        "uk": "docs/editorial/dossiers/jackie-stewart.uk.json"
+      },
+      "based_on_claim_ids": [
+        "jackie-stewart-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "niki-lauda",
+      "editorial_title": {
+        "en": "Three titles across a decade",
+        "uk": "Три титули протягом десятиліття"
+      },
+      "body": {
+        "en": "Lauda's championship years—1975, 1977 and 1984—are separated by gaps. The 1975 classification gives a precise opening: Ferrari's Lauda led the standings with 64.5 points, ahead of Emerson Fittipaldi on 45. Readers should be able to follow the official score directly before encountering any interpretive account of the season. Comparing 1975, 1977 and 1984 requires sensitivity to period scoring rules and independently verified context; the gap between titles is chronology, not evidence of a particular cause.",
+        "uk": "Чемпіонські роки Лауди — 1975, 1977 і 1984 — розділені перервами. Підсумкова таблиця 1975 року дає точну відправну точку: Лауда з Ferrari очолив залік із 64,5 очка, випередивши Емерсона Фіттіпальді з 45. Читач має змогу самостійно перейти до офіційного заліку, перш ніж читати тлумачення перебігу сезону. Для порівняння 1975, 1977 та 1984 років потрібно враховувати історичні правила нарахування очок і незалежно перевірений контекст; перерва між титулами є фактом хронології, а не доказом певної причини."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/niki-lauda.en.json",
+        "uk": "docs/editorial/dossiers/niki-lauda.uk.json"
+      },
+      "based_on_claim_ids": [
+        "niki-lauda-titles",
+        "niki-lauda-1975-standings"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "editorial_title": {
+        "en": "A paired-season journey",
+        "uk": "Два сезони поруч"
+      },
+      "body": {
+        "en": "The titles of 2005 and 2006 allow Alonso's early championship career to be viewed as a matched pair. Both seasons ended with the Renault driver as world champion; their race calendars and official classifications can be explored separately. Presenting the seasons side by side can reveal what the records say, while resisting the temptation to invent a single dramatic explanation for two championships. A deeper chapter must eventually include sourced accounts of the races and the people involved.",
+        "uk": "Титули 2005 та 2006 років дають змогу розглядати ранній чемпіонський етап кар’єри Алонсо як два пов’язані сезони. В обох випадках пілот Renault став чемпіоном світу, але календарі перегонів та офіційні підсумкові таблиці слід відкривати окремо. Порівняння сезонів поруч показує факти з архіву й допомагає уникнути вигаданого єдиного драматичного пояснення двох титулів. Докладніша глава згодом має спиратися на перевірені розповіді про гонки та їхніх учасників."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/fernando-alonso.en.json",
+        "uk": "docs/editorial/dossiers/fernando-alonso.uk.json"
+      },
+      "based_on_claim_ids": [
+        "fernando-alonso-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "editorial_title": {
+        "en": "The uninterrupted championship run",
+        "uk": "Безперервна чемпіонська серія"
+      },
+      "body": {
+        "en": "Four consecutive titles, 2010 through 2013, provide a clear timeline for Vettel. The word 'consecutive' is significant: unlike a career total accumulated across widely separated periods, these four championship years form a single uninterrupted run in the winners register. But the register does not explain each year's path to the title. A strong encyclopedic treatment will let readers inspect season results, see what was changing, and only then read independently sourced historical interpretations.",
+        "uk": "Чотири титули поспіль, з 2010 до 2013 року, утворюють зрозумілу хронологію кар’єри Феттеля. Слово «поспіль» тут важливе: на відміну від загальної кількості титулів, здобутих із великими перервами, ці чотири чемпіонські роки становлять безперервну серію в переліку переможців. Але сам перелік не пояснює шляху до титулу в кожному сезоні. Повноцінна енциклопедична історія дасть змогу відкрити результати, простежити зміни й лише після цього прочитати незалежно підтверджені історичні пояснення."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/sebastian-vettel.en.json",
+        "uk": "docs/editorial/dossiers/sebastian-vettel.uk.json"
+      },
+      "based_on_claim_ids": [
+        "sebastian-vettel-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "editorial_title": {
+        "en": "One title, then another era",
+        "uk": "Один титул і нова серія"
+      },
+      "body": {
+        "en": "Hamilton's title chronology begins in 2008, with the next recorded championship years in 2014 and 2015, and later 2017, 2018, 2019 and 2020. Simply saying 'seven titles' conceals the gap between the first title and the later sequence. A season-led story can make the chronology visible without turning it into a claim about the reasons for success. For each title year, the result archive is the evidence layer; technical changes, rivalries and decisive moments need their own carefully sourced chapters.",
+        "uk": "Хронологія титулів Гамільтона починається з 2008 року. Наступні чемпіонства припадають на 2014 і 2015 роки, а далі — на 2017, 2018, 2019 і 2020-й. Формула «сім титулів» приховує проміжок між першою перемогою в чемпіонаті та пізнішою серією. Історія, побудована за сезонами, дозволяє показати цю послідовність, не приписуючи їй непідтверджених причин. Для кожного чемпіонського року архів результатів становить доказову основу; технічні зміни, суперництво та вирішальні моменти потребують окремих перевірених глав."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/lewis-hamilton.en.json",
+        "uk": "docs/editorial/dossiers/lewis-hamilton.uk.json"
+      },
+      "based_on_claim_ids": [
+        "lewis-hamilton-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    }
+  ]
+}
