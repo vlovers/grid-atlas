@@ -145,6 +145,36 @@
   max-width:24ch;
   line-height:1.6;
 }
+.quickFacts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+  margin:0 0 24px;
+}
+.quickFacts>div {
+  min-width:0;
+  padding:20px 0;
+  border-top:1px solid var(--line);
+}
+.quickFacts dt {
+  color:var(--muted);
+  font-size:.8rem;
+  line-height:1.6;
+}
+.quickFacts dd {
+  margin:10px 0 0;
+  font-size:clamp(1.05rem,1.6vw,1.5rem);
+  font-weight:650;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.quickFacts a {
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+@media(max-width:650px) {
+  .quickFacts { grid-template-columns:1fr; }
+}
 .heroScope {
   grid-column:1/-1;
   font-size:.75rem;
@@ -1513,3 +1543,31 @@
   color: #f0e3d4;
   max-width: 50ch;
 }
+
+/* Selected-season race-backed constructor breakdown, independent of championship standings. */
+.seasonTeamBreakdown {
+  grid-column:1/-1;
+  min-width:0;
+  border-top:1px solid var(--line);
+  padding-top:22px;
+}
+.seasonTeamBreakdown>h4 { margin:0 0 18px; font-size:1.1rem; }
+.seasonTeamRows { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:16px; }
+.seasonTeamRows article { min-width:0; padding:18px; border:1px solid var(--line); }
+.seasonTeamRows h5 { margin:0 0 16px; font-size:1.05rem; }
+.seasonTeamRows dl { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.seasonTeamRows dt { color:var(--muted); font-size:.7rem; line-height:1.4; }
+.seasonTeamRows dd { font-size:1.4rem; margin:6px 0 0; font-variant-numeric:tabular-nums; }
+.seasonTeamRows p,.seasonTeamBreakdown>p { color:var(--muted); font-size:.8rem; line-height:1.6; }
+.seasonTeamRows a { text-decoration:underline; text-underline-offset:3px; }
+
+.seasonRaceLedger { grid-column:1/-1; min-width:0; border-top:1px solid var(--line); padding-top:24px; }
+.seasonRaceLedger h4 { margin:0 0 10px; font-size:1.15rem; }
+.seasonRaceLedger>p { color:var(--muted); font-size:.82rem; line-height:1.65; }
+.raceTableScroll { overflow-x:auto; max-width:100%; }
+.raceTableScroll table { width:100%; min-width:690px; border-collapse:collapse; text-align:left; font-variant-numeric:tabular-nums; }
+.raceTableScroll th { color:var(--muted); font-size:.72rem; font-weight:600; }
+.raceTableScroll th,.raceTableScroll td { padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.raceTableScroll td { font-size:.84rem; }
+.raceTableScroll td small { display:block; margin-top:4px; font-size:.7rem; color:var(--muted); }
+.raceTableScroll a { text-decoration:underline; text-underline-offset:3px; }
