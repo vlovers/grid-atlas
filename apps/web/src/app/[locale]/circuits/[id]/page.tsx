@@ -40,6 +40,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
   ]);
   if (!circuit) notFound();
+  const chronologicalHistory = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round || Number(a.race_id) - Number(b.race_id));
   const path = `/circuits/${id}`;
   const decades = new Map<number, Race[]>();
   for (const race of races) {
@@ -64,8 +65,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <section aria-labelledby="circuit-era-journey" data-testid="circuit-era-journey">
       <h2 id="circuit-era-journey">{locale === 'uk' ? 'Подорож крізь історію траси' : 'Explore the circuit across eras'}</h2>
       <p>{locale === 'uk' ? 'Переходьте від першого зафіксованого етапу до останнього та відкривайте протоколи гонок. Послідовність відображає використання ідентифікатора траси в архіві, а не підтверджує однакову конфігурацію.' : 'Follow the circuit from its earliest to its latest archived event, and open each race classification. This is an identity-based history, not evidence that the layout stayed unchanged.'}</p>
-      {history.length > 0 && <ol className="records">
-        {[history[0], ...(history.length > 2 ? [history[Math.floor((history.length - 1) / 2)]] : []), ...(history.length > 1 ? [history[history.length - 1]] : [])].map((race, index) =>
+      {chronologicalHistory.length > 0 && <ol className="records">
+        {[chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map((race, index) =>
           <li className="record" key={race.race_id}>
             <span className="position">{String(index + 1).padStart(2, '0')}</span>
             <span><strong><Link href={`/races/${race.race_id}`}>{race.season_year} · {race.race_name}</Link></strong>
