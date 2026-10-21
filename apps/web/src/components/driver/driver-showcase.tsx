@@ -68,6 +68,23 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       <p className={styles.heroScope}>{t.scope}</p>
     </header>
 
+    {career && <section className={styles.chapter} aria-label={locale === 'uk' ? 'Ключові факти про пілота' : 'Driver quick facts'}>
+      <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
+        title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
+        note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
+      <dl className={styles.heroFacts}>
+        {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
+        {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
+        <div><dt>{locale === 'uk' ? 'Команди за кар’єру' : 'Career constructors'}</dt>
+          <dd>{new Set(career.participation.map(row => row.related_id)).size}</dd></div>
+        <div><dt>{locale === 'uk' ? 'Зафіксовані результати' : 'Recorded result entries'}</dt>
+          <dd>{format(career.summary.result_entries)}</dd></div>
+      </dl>
+      <p>{locale === 'uk' ? 'Титули чемпіона світу, поул-позиції та сходи не виводяться без окремого перевіреного джерела. Кількість команд означає унікальні ідентифікатори конструкторів у результатах.' : 'World titles, pole positions and retirements are not inferred without separately verified sources. Constructor count reflects distinct constructor IDs in race results.'}</p>
+    </section>}
+
     <nav className={styles.chapters} aria-label={t.chapters}>
       {[[t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'],
         [t.biography, 'driver-biography'], [t.statistics, 'driver-archive']].map(([label, anchor], index) =>
