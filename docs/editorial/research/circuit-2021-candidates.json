@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "source_release": "F1DB v2026.17.0 (identity reconciliation pending)",
+  "publication": "unpublished",
+  "purpose": "research_candidates_only",
+  "records": [
+    {
+      "venue": "Silverstone",
+      "event": "Great Britain",
+      "season_year": 2021,
+      "length_m": 5891,
+      "scheduled_laps": 52,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Great Britain Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/great-britain",
+        "locator": "Circuit > Circuit Length (5.891km); Number of Laps (52)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "[FIA classification](https://www.fia.com/events/fia-formula-one-world-championship/season-2021/british-grand-prix/race-classification); FIA Race Classification 2021: leader Lewis Hamilton 52 laps; this confirms race completion, not independent geometry"
+    },
+    {
+      "venue": "Monaco",
+      "event": "Monaco",
+      "season_year": 2021,
+      "length_m": 3337,
+      "scheduled_laps": 78,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Monaco Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/monaco",
+        "locator": "Circuit > Circuit Length (3.337km); Number of Laps (78)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "FIA independent geometry cross-check pending"
+    },
+    {
+      "venue": "Monza",
+      "event": "Italy",
+      "season_year": 2021,
+      "length_m": 5793,
+      "scheduled_laps": 53,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Italy Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/italy",
+        "locator": "Circuit > Circuit Length (5.793km); Number of Laps (53)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "FIA independent geometry cross-check pending"
+    },
+    {
+      "venue": "Spa-Francorchamps",
+      "event": "Belgium",
+      "season_year": 2021,
+      "length_m": 7004,
+      "scheduled_laps": 44,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Belgium Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/belgium",
+        "locator": "Circuit > Circuit Length (7.004km); Number of Laps (44)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Listed scheduled laps are NOT actual completed laps at the rain-affected 2021 race; do not interpret as race distance achieved"
+    },
+    {
+      "venue": "Imola",
+      "event": "Emilia Romagna",
+      "season_year": 2021,
+      "length_m": 4909,
+      "scheduled_laps": 63,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Emilia Romagna Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/emiliaromagna",
+        "locator": "Circuit > Circuit Length (4.909km); Number of Laps (63)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "FIA independent geometry cross-check pending"
+    },
+    {
+      "venue": "Red Bull Ring",
+      "event": "Austria",
+      "season_year": 2021,
+      "length_m": 4318,
+      "scheduled_laps": 71,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Austria Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/austria",
+        "locator": "Circuit > Circuit Length (4.318km); Number of Laps (71)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Circuit's historic Österreichring and later A1-Ring identity/configurations must not be conflated"
+    },
+    {
+      "venue": "Hungaroring",
+      "event": "Hungary",
+      "season_year": 2021,
+      "length_m": 4381,
+      "scheduled_laps": 70,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Hungary Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/hungary",
+        "locator": "Circuit > Circuit Length (4.381km); Number of Laps (70)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Verify 2021 layout identity and event schedule independently; no geometry reuse permission."
+    },
+    {
+      "venue": "Zandvoort",
+      "event": "Netherlands",
+      "season_year": 2021,
+      "length_m": 4259,
+      "scheduled_laps": 72,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Netherlands Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/netherlands",
+        "locator": "Circuit > Circuit Length (4.259km); Number of Laps (72)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Restored 2021 event, do not infer 1950s circuit geometry from this page."
+    },
+    {
+      "venue": "Baku City Circuit",
+      "event": "Azerbaijan",
+      "season_year": 2021,
+      "length_m": 6003,
+      "scheduled_laps": 51,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Azerbaijan Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/azerbaijan",
+        "locator": "Circuit > Circuit Length (6.003km); Number of Laps (51)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Street circuit: 2021 layout and source geometry licensing remain unverified."
+    },
+    {
+      "venue": "Istanbul Park",
+      "event": "Turkey",
+      "season_year": 2021,
+      "length_m": 5338,
+      "scheduled_laps": 58,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Turkey Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/turkey",
+        "locator": "Circuit > Circuit Length (5.338km); Number of Laps (58)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Exact layout revision and independent FIA confirmation pending."
+    },
+    {
+      "venue": "Circuit of The Americas",
+      "event": "United States",
+      "season_year": 2021,
+      "length_m": 5513,
+      "scheduled_laps": 56,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 United States Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/united-states",
+        "locator": "Circuit > Circuit Length (5.513km); Number of Laps (56)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "Independently verify configuration/year and avoid assuming licensed source drawings."
+    },
+    {
+      "venue": "Circuit Paul Ricard",
+      "event": "France",
+      "season_year": 2021,
+      "length_m": 5842,
+      "scheduled_laps": 53,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 France Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/france",
+        "locator": "Circuit > Circuit Length (5.842km); Number of Laps (53)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "F1 event circuit section; explicitly for France 2021; independently reviewed FIA layout evidence pending."
+    },
+    {
+      "venue": "Autódromo Hermanos Rodríguez",
+      "event": "Mexico City",
+      "season_year": 2021,
+      "length_m": 4304,
+      "scheduled_laps": 71,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Mexico City Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/mexico",
+        "locator": "Circuit > Circuit Length (4.304km); Number of Laps (71)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "2021 track path through Foro Sol differs from original 1960s circuit; independently reviewed FIA layout evidence pending."
+    },
+    {
+      "venue": "Lusail International Circuit",
+      "event": "Qatar",
+      "season_year": 2021,
+      "length_m": 5380,
+      "scheduled_laps": 57,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Qatar Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/qatar",
+        "locator": "Circuit > Circuit Length (5.380km); Number of Laps (57)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "2021 source length differs from Formula 1 2026 Qatar event listing (5.419 km); cannot infer geometry lineage; independently reviewed FIA layout evidence pending."
+    },
+    {
+      "venue": "Jeddah Corniche Circuit",
+      "event": "Saudi Arabia",
+      "season_year": 2021,
+      "length_m": 6174,
+      "scheduled_laps": 50,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Saudi Arabia Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/saudi-arabia",
+        "locator": "Circuit > Circuit Length (6.174km); Number of Laps (50)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "2021 street-circuit geometry cannot be assumed stable in later seasons; independently reviewed FIA layout evidence pending."
+    },
+    {
+      "venue": "Yas Marina Circuit",
+      "event": "Abu Dhabi",
+      "season_year": 2021,
+      "length_m": 5281,
+      "scheduled_laps": 58,
+      "source": {
+        "publisher": "Formula 1",
+        "title": "2021 Abu Dhabi Grand Prix event page",
+        "url": "https://www.formula1.com/en/racing/2021/united-arab-emirates",
+        "locator": "Circuit > Circuit Length (5.281km); Number of Laps (58)",
+        "accessed_on": "2026-10-21"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewer": null,
+        "reviewed_on": null
+      },
+      "canonical_identity": {
+        "circuit_id": null,
+        "race_id": null,
+        "layout_version": null
+      },
+      "independent_verification": "pending",
+      "media_license": "not_assessed",
+      "limitations": "2020 event lists 5.554 km and 55 laps: historical configuration clearly differs; independently reviewed FIA layout evidence pending."
+    }
+  ]
+}
