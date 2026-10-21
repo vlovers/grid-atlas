@@ -50,7 +50,7 @@ jobs:
         run: pnpm --filter @grid-atlas/api build
       - name: Test verified-only lineage over HTTP and PostgreSQL
         run: pnpm --filter @grid-atlas/api test:integration
-      - name: Verify HTTP controller declarations
+      - name: Test editorial publication bundle contracts\n        run: node --test apps/api/test/editorial-publisher.contract.test.cjs\n      - name: Verify HTTP controller declarations
         run: test -f apps/api/dist/historical.controller.js
       - name: Seed minimal historical fixtures
         run: |
@@ -67,7 +67,7 @@ jobs:
           INSERT INTO historical_race_results(race_id,driver_id,constructor_id,position_display_order,position_number,position_text,driver_number,points)
           VALUES(1,1,1,1,1,'1','2',9);
           SQL
-      - name: Smoke-test HTTP endpoints and input validation
+      - name: Verify editorial publish transaction against PostgreSQL\n        run: node --test apps/api/test/editorial-publisher.integration.cjs\n      - name: Smoke-test HTTP endpoints and input validation
         shell: bash
         run: |
           set -euo pipefail
