@@ -48,6 +48,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-1957-germany",
+      "topic": "key_events",
+      "statement": "In the 1957 German Grand Prix at the Nürburgring, Fangio recovered from a costly pit stop to beat Mike Hawthorn and Peter Collins.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "juan-manuel-fangio-f1-hall",
+          "locator": "Paragraph beginning 'Even on those occasions when his team let him down' describing the 1957 Nürburgring race.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-1952-injury",
+      "topic": "key_events",
+      "statement": "Fangio suffered a broken neck in a 1952 non-championship accident at Monza.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "juan-manuel-fangio-f1-hall",
+          "locator": "Paragraph about all-night Alpine drive and 1952 non-championship Monza accident.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -57,6 +83,20 @@
       "claim_ids": [
         "juan-manuel-fangio-titles"
       ]
+    },
+    {
+      "section_id": "1957-germany",
+      "title": "Career milestone — 1957 germany",
+      "claim_ids": [
+        "juan-manuel-fangio-1957-germany"
+      ]
+    },
+    {
+      "section_id": "1952-injury",
+      "title": "Career milestone — 1952 injury",
+      "claim_ids": [
+        "juan-manuel-fangio-1952-injury"
+      ]
     }
   ],
   "gaps": [
@@ -65,7 +105,8 @@
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "2026-10-21 historical career expansion: source-located F1 retrospective; independent publisher corroboration, cross-language review and named human approval pending."
   ],
   "media": []
 }
