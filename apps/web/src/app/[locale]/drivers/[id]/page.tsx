@@ -30,7 +30,7 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
-  const selectedYear = typeof query.season === 'string' && /^\\d{4}$/.test(query.season) ? Number(query.season) : null;
+  const selectedYear = typeof query.season === 'string' && /^[0-9]{4}$/.test(query.season) ? Number(query.season) : null;
   const defaultYear = seasons.reduce<number | null>((year, season) => year === null || season.year > year ? season.year : year, null);
   const year = selectedYear !== null && seasons.some(season => season.year === selectedYear) ? selectedYear : defaultYear;
   const seasonResults = year === null ? [] : await getData<DriverSeasonResult>(`/api/drivers/${id}/seasons/${year}/results`);
