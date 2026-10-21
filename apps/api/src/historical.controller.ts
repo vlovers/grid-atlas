@@ -57,6 +57,58 @@ export class HistoricalController {
     return { data: rows, limit: l, offset: o };
   }
 
+  // F1DB's official-style season classification source rows, not sums of race points.
+  // The 2026 release is pinned during the active season: positions are provisional.
+  @Get('seasons/:year/standings/:kind')
+  async seasonStandings(@Param('year') year: string, @Param('kind') kind: string) {
+    const y = integer(year, 1950, 1950, 2200, 'year');
+    if (kind !== 'drivers' && kind !== 'constructors') {
+      throw new BadRequestException('kind must be drivers or constructors');
+    }
+    const entity = kind === 'drivers' ? 'driver' : 'constructor';
+    const { rows } = await this.db.query(`SELECT st.position_display_order, st.position_number,
+      st.position_text, st.points::text AS championship_points, st.championship_won,
+      COALESCE(d.id,c.id)::text AS entity_id,
+      COALESCE(d.display_name,c.display_name) AS entity_name,
+      st.engine_manufacturer_external_id, st.source_locator, sr.release_tag,
+      sr.sha256 AS release_sha256, st.content_hash,
+      CASE WHEN st.season_year >= 2026 THEN 'provisional' ELSE 'source_reported_final' END AS classification_status
+      FROM historical_championship_standings st
+      JOIN source_releases sr ON sr.id=st.release_id
+      LEFT JOIN historical_drivers d ON d.id=st.driver_id
+      LEFT JOIN historical_constructors c ON c.id=st.constructor_id
+      WHERE st.season_year=$1 AND st.entity_kind=$2
+      ORDER BY st.position_display_order`, [y, entity]);
+    return { data: rows };
+  }
+
+  @Get('drivers/:id/championships')
+  async driverChampionships(@Param('id') id: string) {
+    return this.entityChampionships('driver', integer(id, 0, 1, 2147483647, 'id'));
+  }
+
+  @Get('constructors/:id/championships')
+  async constructorChampionships(@Param('id') id: string) {
+    return this.entityChampionships('constructor', integer(id, 0, 1, 2147483647, 'id'));
+  }
+
+  private async entityChampionships(kind: 'driver' | 'constructor', id: number) {
+    const table = kind === 'driver' ? 'historical_drivers' : 'historical_constructors';
+    const fk = kind === 'driver' ? 'driver_id' : 'constructor_id';
+    const { rows: existence } = await this.db.query(`SELECT id FROM ${table} WHERE id=$1`, [id]);
+    if (!existence.length) throw new NotFoundException('Entity not found');
+    const { rows } = await this.db.query(`SELECT st.season_year AS year, st.position_display_order,
+      st.position_number, st.position_text, st.points::text AS championship_points,
+      st.championship_won, st.engine_manufacturer_external_id,
+      st.source_locator, sr.release_tag, sr.sha256 AS release_sha256,
+      st.content_hash,
+      CASE WHEN st.season_year >= 2026 THEN 'provisional' ELSE 'source_reported_final' END AS classification_status
+      FROM historical_championship_standings st
+      JOIN source_releases sr ON sr.id=st.release_id
+      WHERE st.${fk}=$1 ORDER BY st.season_year DESC, st.position_display_order`, [id]);
+    return { data: rows };
+  }
+
   @Get('seasons/:year/lineups')
   async seasonLineups(@Param('year') year: string) {
     const y = integer(year, 1950, 1950, 2200, 'year');
