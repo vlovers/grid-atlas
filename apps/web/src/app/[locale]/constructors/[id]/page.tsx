@@ -8,6 +8,7 @@ import { getData } from '@/lib/api';
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; result_entries: number; races: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podium_finishes: number; driver_points: string };
 type Season = { year: number; races: number; wins: number; podium_finishes: number; driver_points: string };
+type DriverRoster = { driver_id: string; driver_name: string; races: number; wins: number };
 type Lineage = { id: string; subject_id: string; subject_name: string; object_id: string; object_name: string; relation_type: string; effective_year: number | null; source_url: string; source_title: string; source_publisher: string; evidence_note: string };
 type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ season?: string | string[] }> };
 const valid = (id: string) => /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647;
@@ -34,6 +35,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   const requestedYear = typeof query.season === 'string' && /^\d{4}$/.test(query.season) ? Number(query.season) : null;
   const selectedSeason = seasons.find(season => season.year === requestedYear) ?? seasons.reduce<Season | undefined>((latest, season) => !latest || season.year > latest.year ? season : latest, undefined);
   const firstRecordedSeason = seasons.reduce<Season | undefined>((earliest, season) => !earliest || season.year < earliest.year ? season : earliest, undefined);
+  const roster = selectedSeason ? await getData<DriverRoster>(`/api/constructors/${id}/seasons/${selectedSeason.year}/drivers`) : [];
   return <section className="page">
     <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
     <div className="driver-grid" aria-label={t('constructorStats')}>
@@ -68,6 +70,14 @@ export default async function ConstructorProfile({ params, searchParams }: Props
           <article className="driver" key={label}><span className="index">{label}</span><h3>{value}</h3></article>)}
       </div>
       <p>{locale === 'uk' ? 'Це статистика результатів гонок, а не офіційний залік Кубка конструкторів. Склад пілотів і технічні дані за сезонами потребують окремих підтверджених записів.' : 'These are race-result statistics, not official Constructors’ Championship standings. Season-specific lineups and technical facts require separately verified records.'}</p>
+    </section>}
+    {selectedSeason && <section aria-label={locale === 'uk' ? 'Пілоти команди в обраному сезоні' : 'Constructor drivers in selected season'}>
+      <h2>{locale === 'uk' ? 'Пілоти сезону' : 'Season driver roster'} · {selectedSeason.year}</h2>
+      {roster.length > 0 ? <div className="lineup-grid">{roster.map(driver => <article className="lineup-team" key={driver.driver_id}>
+        <h3><Link href={`/drivers/${driver.driver_id}`}>{driver.driver_name}</Link></h3>
+        <p>{locale === 'uk' ? 'Гонки з результатами' : 'Races with recorded results'}: {driver.races} · {locale === 'uk' ? 'Перемоги' : 'Wins'}: {driver.wins}</p>
+      </article>)}</div> : <p>{locale === 'uk' ? 'У цьому сезоні немає записів про пілотів.' : 'No driver entries are recorded for this season.'}</p>}
+      <p>{locale === 'uk' ? 'Склад сформовано з результатів перегонів, а не з контрактів або заявок на весь сезон.' : 'This roster is derived from race results, not full-season contracts or entry lists.'}</p>
     </section>}
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
