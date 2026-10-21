@@ -32,15 +32,16 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   if (!team) notFound();
   const query = await searchParams;
   const requestedYear = typeof query.season === 'string' && /^\d{4}$/.test(query.season) ? Number(query.season) : null;
-  const selectedSeason = seasons.find(season => season.year === requestedYear) ?? seasons.at(-1);
+  const selectedSeason = seasons.find(season => season.year === requestedYear) ?? seasons.reduce<Season | undefined>((latest, season) => !latest || season.year > latest.year ? season : latest, undefined);
+  const firstRecordedSeason = seasons.reduce<Season | undefined>((earliest, season) => !earliest || season.year < earliest.year ? season : earliest, undefined);
   return <section className="page">
     <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
     <div className="driver-grid" aria-label={t('constructorStats')}>
       {([[t('seasons'),team.seasons],[t('races'),team.races],[t('wins'),team.wins],[t('driverPodiums'),team.podium_finishes],[t('driverPoints'),team.driver_points]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>
     {seasons.length > 0 && <p>
-      <Link href={`/explorer/constructors/${id}?year=${seasons[0].year}`}>
-        {t('constructor')}: {t('season')} {seasons[0].year} → Explorer
+      <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason?.year}`}>
+        {t('constructor')}: {t('season')} {firstRecordedSeason?.year} → Explorer
       </Link>
     </p>}
     <section aria-label={locale === 'uk' ? 'Історичний профіль команди' : 'Constructor history facts'}>
