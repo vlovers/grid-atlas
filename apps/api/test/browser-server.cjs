@@ -46,6 +46,15 @@ async function main() {
       SELECT id,'Synthetic Driver '||substring(external_id from 11)
       FROM external_identities WHERE external_id LIKE 'synthetic-%';
   `);
+  // Synthetic circuit V2 fixtures; not real track measurements or geometry.
+  await fixture.query(`
+    INSERT INTO historical_circuit_layouts(circuit_id,external_layout_id,effective,length_km,turns,release_id,source_locator,content_hash)
+    VALUES(1,'fixture-original',false,5.123,14,1,'f1db-circuits-layouts.json#id=fixture-original',repeat('c',64)),
+          (1,'fixture-current',true,5.456,18,1,'f1db-circuits-layouts.json#id=fixture-current',repeat('d',64));
+    INSERT INTO historical_race_circuit_facts(race_id,layout_id,course_length_km,turns,laps,distance_km,
+      scheduled_laps,scheduled_distance_km,direction,release_id,source_locator,content_hash)
+    VALUES(1,1,5.123,14,60,307.38,NULL,NULL,'CLOCKWISE',1,'f1db-races.json#id=1',repeat('e',64));
+  `);
   // Test-only publication for an existing synthetic identity; no historical dossier is approved.
   await fixture.query(`
     INSERT INTO content_claims(subject_driver_id,statement)
