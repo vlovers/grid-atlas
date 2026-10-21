@@ -34,6 +34,15 @@ BEGIN
     INSERT INTO historical_technical_facts
     (entity_kind,entity_id,season_year,field_key,value,source_url,source_title,
      source_publisher,source_locator,source_accessed_on)
+    VALUES ('race_event',4,2008,'tyre_compounds','[1,2]',
+      'https://example.org/archive','Fixture','Fixture','page 4','2026-10-21');
+    RAISE EXCEPTION 'Expected non-string tyre compounds to fail';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+  BEGIN
+    INSERT INTO historical_technical_facts
+    (entity_kind,entity_id,season_year,field_key,value,source_url,source_title,
+     source_publisher,source_locator,source_accessed_on)
     VALUES ('constructor_season',1,2008,'chassis','"EXAMPLE-ONLY"',
       'https://example.org/archive','Fixture','Fixture','page 1','2026-10-21');
     RAISE EXCEPTION 'Expected duplicate source claim to fail';
