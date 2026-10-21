@@ -19,7 +19,7 @@ test('rollback entire transaction when identity is absent',async()=>{
  assert.equal(calls[0],'BEGIN');assert.equal(calls.at(-1),'ROLLBACK');
 });
 test('safe insertion order and commit on synthetic approved fixture',async()=>{
- let seq=0;const calls=[];
+ const calls=[];
  const client={query:async(sql)=>{calls.push(sql);if(sql.includes('SELECT d.id::text'))return {rowCount:1,rows:[{id:'77'}]};
  if(sql.includes('SELECT id FROM content_articles'))return {rowCount:0,rows:[]};
  if(sql.includes('INSERT INTO content_claims'))return {rowCount:1,rows:[{id:'12'}]};
