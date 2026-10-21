@@ -39,6 +39,11 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   ]);
   if (!circuit) notFound();
   const path = `/circuits/${id}`;
+  const decades = new Map<number, Race[]>();
+  for (const race of races) {
+    const decade = Math.floor(race.season_year / 10) * 10;
+    decades.set(decade, [...(decades.get(decade) ?? []), race]);
+  }
   const { crumbs, description } = await entitySeo('circuits', id, locale);
   const currentCrumbs = crumbs.map((crumb, index) => index === crumbs.length - 1
     ? { ...crumb, path: pageHref(path, page) } : crumb);
@@ -53,9 +58,17 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       <p>{locale === 'uk' ? 'Запис про трасу не підтверджує незмінність її конфігурації, довжини чи рекордів кола в різні роки. Схеми трас публікуватимуться лише після перевірки історичної конфігурації та прав на зображення.' : 'A circuit identity does not establish that its layout, length or lap records stayed the same across eras. Track maps require separate historical-layout verification and image-rights clearance.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
     </section>
     <h2>{t('grandPrixHistory')}</h2>
-    {races.length ? <div className="records">{races.map(race => <Link className="record" key={race.id} href={`/races/${race.id}`}>
-      <span className="position">{race.season_year}</span><span><strong>{race.official_name}</strong><small>{t('round', { round: race.round })}{race.race_date ? ` · ${race.race_date}` : ''}</small></span><span aria-hidden="true">↗</span>
-    </Link>)}</div> : <p>{t('noCircuitRaces')}</p>}
+    {races.length ? <div data-testid="circuit-decade-history">
+      <p>{locale === 'uk' ? 'Гран-прі за десятиліттями в межах цієї сторінки архіву. Кожен запис веде до конкретної гонки; рік — до сезону.' : 'Grand Prix by decade within this archive page. Each result links to its race; the year links to its season.'}</p>
+      {[...decades].map(([decade, events]) => <section key={decade} aria-label={`${decade}s`}>
+        <h3>{decade}–{decade + 9}</h3>
+        <div className="records">{events.map(race => <div className="record" key={race.id}>
+          <span className="position"><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></span>
+          <span><strong><Link href={`/races/${race.id}`}>{race.official_name} ↗</Link></strong>
+            <small>{t('round', { round: race.round })}{race.race_date ? ` · ${race.race_date}` : ''}</small></span>
+        </div>)}</div>
+      </section>)}
+    </div> : <p>{t('noCircuitRaces')}</p>}
     <nav className="actions" aria-label={t('circuitPages')}>
       {page > 1 && <Link className="secondary" href={pageHref(path, page - 1)}>← {t('previous')}</Link>}
       {offset + PAGE_SIZE < circuit.races && offset + PAGE_SIZE <= MAX_OFFSET && <Link className="secondary" href={pageHref(path, page + 1)}>{t('next')} →</Link>}
