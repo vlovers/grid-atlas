@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "driver_season_source_observation",
+  "subject": {
+    "slug": "max-verstappen",
+    "identity_status": "requires_f1db_join"
+  },
+  "status": "source_observed_needs_independent_human_review",
+  "publication_allowed": false,
+  "source_access_date": "2026-10-21",
+  "sources": [
+    {
+      "id": "official-season-standing",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2023/drivers",
+      "locator": "Drivers' Standings 2023, rows 1–2",
+      "source_role": "official_classification"
+    },
+    {
+      "id": "official-driver-race-record",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2023/drivers/MAXVER01/max-verstappen",
+      "locator": "2023 driver season race table, Singapore row",
+      "source_role": "official_driver_result"
+    }
+  ],
+  "claims": [
+    {
+      "id": "max-verstappen-2023-points",
+      "text": {
+        "en": "The official 2023 driver standings list Max Verstappen in first position with 575 points, ahead of Sergio Perez on 285.",
+        "uk": "В офіційній класифікації пілотів 2023 року цей гонщик посів перше місце з 575 очками, випередивши Sergio Perez (285 очок)."
+      },
+      "observed_fields": {
+        "year": 2023,
+        "position": 1,
+        "points": 575,
+        "runner_up": "Sergio Perez",
+        "runner_up_points": 285
+      },
+      "source_ids": [
+        "official-season-standing"
+      ],
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "max-verstappen-2023-singapore",
+      "text": {
+        "en": "The Formula 1 2023 season race-by-race table lists Singapore on 2023-09-17 as position 5 for Red Bull Racing Honda RBPT.",
+        "uk": "У таблиці результатів Формули-1 за 2023 рік для Singapore (2023-09-17) вказано 5-ту позицію команди Red Bull Racing Honda RBPT."
+      },
+      "observed_fields": {
+        "race": "Singapore",
+        "date": "2023-09-17",
+        "position": "5",
+        "constructor_label": "Red Bull Racing Honda RBPT"
+      },
+      "source_ids": [
+        "official-driver-race-record"
+      ],
+      "review_status": "needs_human_review"
+    }
+  ],
+  "chapter_treatments": [
+    {
+      "id": "scene-1",
+      "headline": {
+        "en": "Opening race records",
+        "uk": "Перші результати сезону"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-2",
+      "headline": {
+        "en": "A sequence of race finishes",
+        "uk": "Послідовність гоночних фінішів"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-3",
+      "headline": {
+        "en": "Singapore: an instructive contrast",
+        "uk": "Сінгапур: показовий контраст"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-4",
+      "headline": {
+        "en": "Final standings in context",
+        "uk": "Підсумкова класифікація"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    }
+  ],
+  "constraints": [
+    "Result-row observations are not automatically official starts or championships.",
+    "The official classification total is not interchangeable with uncorrected imported raw points.",
+    "A single publisher does not constitute independent corroboration.",
+    "Images and historical interpretations require separate rights and factual review.",
+    "Canonical F1DB driver identity and precise race record must be reconciled in a disposable pinned import."
+  ],
+  "approval": {
+    "human_editor": null,
+    "reviewed_at": null,
+    "claim_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_review": false,
+    "publication_allowed": false
+  }
+}
