@@ -1,3 +1,4 @@
+import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -19,9 +20,11 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   const { year } = await params;
   if (!/^[0-9]{4}$/.test(year) || Number(year) < 1950 || Number(year) > 2200) notFound();
   await getData<{ year: number }>(`/api/seasons/${year}`);
-  const [races, lineups] = await Promise.all([
+  const [races, lineups, driverStandings, constructorStandings] = await Promise.all([
     getData<Race>(`/api/seasons/${year}/races?limit=100`),
     getData<Lineup>(`/api/seasons/${year}/lineups`),
+    getData<ChampionshipRow>(`/api/seasons/${year}/standings/drivers`),
+    getData<ChampionshipRow>(`/api/seasons/${year}/standings/constructors`),
   ]);
   const locale = await getLocale() as 'uk' | 'en';
   const teams = new Map<string, { id: string; name: string; drivers: Lineup[] }>();
@@ -71,6 +74,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
         ? 'Перемоги підсумовано за записами пілотів; історичні спільні автомобілі можуть впливати на облік. Цей список не є офіційним заліком Кубка конструкторів або підтвердженням титулу.'
         : 'Wins are summed from driver result aggregates; historical shared drives may affect counting. This is not an official Constructors’ Championship table or a title claim.'}</p>
     </section>
+    <ChampionshipTable rows={driverStandings} locale={locale} kind="drivers" scope="season" />
+    <ChampionshipTable rows={constructorStandings} locale={locale} kind="constructors" scope="season" />
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>
       <Link key={r.id} className="record" href={`/races/${r.id}`}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>
