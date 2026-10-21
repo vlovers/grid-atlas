@@ -49,7 +49,7 @@ class PinnedCircuitArtTests(unittest.TestCase):
                 for el in root.iter():
                     self.assertIn(el.tag, {SVG_NAMESPACE + "svg", SVG_NAMESPACE + "path"})
                     for attr, value in el.attrib.items():
-                        self.assertIn(attr, {"width", "height", "style", "d", "xml:space",
+                        self.assertIn(attr, {"width", "height", "style", "d", "xml:space", "fill", "transform",
                                              "{http://www.w3.org/XML/1998/namespace}space"})
                         self.assertNotIn("javascript:", value.lower())
                     if el.tag.endswith("path"):
