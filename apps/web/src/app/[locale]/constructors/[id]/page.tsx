@@ -8,6 +8,15 @@ import { getData } from '@/lib/api';
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; result_entries: number; races: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podium_finishes: number; driver_points: string };
 type Season = { year: number; races: number; wins: number; podium_finishes: number; driver_points: string };
+type ConstructorCareer = {
+  summary: { races: number; result_entries: number; winning_races: number };
+  participation: { year: number; related_id: string; related_name: string;
+    races: number; result_entries: number; winning_races: number;
+    first_race: { id: string; name: string; year: number; round: number };
+    last_race: { id: string; name: string; year: number; round: number } }[];
+  milestones: { first_appearance: { race: { id: string; name: string; year: number } } | null;
+    first_win: { race: { id: string; name: string; year: number } } | null };
+};
 type Lineage = { id: string; subject_id: string; subject_name: string; object_id: string; object_name: string; relation_type: string; effective_year: number | null; source_url: string; source_title: string; source_publisher: string; evidence_note: string };
 type Props = { params: Promise<{ id: string }> };
 const valid = (id: string) => /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647;
@@ -22,13 +31,22 @@ export default async function ConstructorProfile({ params }: Props) {
   const t = await getTranslations('UI');
   const { id } = await params;
   if (!valid(id)) notFound();
-  const [profiles, seasons, lineage] = await Promise.all([
+  const [profiles, seasons, lineage, careers] = await Promise.all([
     getData<Profile>(`/api/constructors/${id}`),
     getData<Season>(`/api/constructors/${id}/seasons`),
     getData<Lineage>(`/api/constructors/${id}/lineage`),
+    getData<ConstructorCareer>(`/api/constructors/${id}/career?locale=${(await getLocale()) === 'en' ? 'en' : 'uk'}`),
   ]);
   const locale = await getLocale() as 'uk' | 'en';
   const team = profiles[0];
+  const career = careers[0];
+  const driverYears = new Map<string, { id: string; name: string; years: Set<number> }>();
+  for (const row of career?.participation ?? []) {
+    const prior = driverYears.get(row.related_id);
+    if (prior) { prior.years.add(row.year); }
+    else driverYears.set(row.related_id, { id: row.related_id, name: row.related_name, years: new Set([row.year]) });
+  }
+  const drivers = [...driverYears.values()].sort((a,b) => Math.min(...a.years) - Math.min(...b.years) || a.name.localeCompare(b.name));
   if (!team) notFound();
   return <section className="page">
     <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
@@ -68,6 +86,23 @@ export default async function ConstructorProfile({ params }: Props) {
     {seasons.length ? <div className="table-scroll"><table><thead><tr><th>{t('season')}</th><th>{t('races')}</th><th>{t('wins')}</th><th>{t('driverPodiums')}</th><th>{t('driverPoints')}</th></tr></thead><tbody>
       {seasons.map(s=><tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{s.driver_points}</td></tr>)}
     </tbody></table></div> : <p>{t('noResults')}</p>}
+    <section aria-labelledby="constructor-driver-history" data-testid="constructor-driver-history">
+      <h2 id="constructor-driver-history">{locale === 'uk' ? 'Пілоти в історії результатів команди' : 'Drivers in this constructor’s race records'}</h2>
+      <p>{locale === 'uk' ? 'Кожен зв’язок підтверджується імпортованими гоночними результатами. Періоди означають зафіксовані сезони, а не контракти чи історію заявок.' : 'Each connection comes from imported race-result records. Years reflect recorded seasons, not employment contracts or entrant histories.'}</p>
+      {drivers.length ? <div className="table-scroll" role="region" tabIndex={0} aria-label={locale === 'uk' ? 'Пілоти за сезонами' : 'Drivers by season'}>
+        <table><thead><tr><th scope="col">{locale === 'uk' ? 'Пілот' : 'Driver'}</th><th scope="col">{locale === 'uk' ? 'Сезони' : 'Recorded seasons'}</th><th scope="col">{locale === 'uk' ? 'Перша зафіксована гонка' : 'First recorded race'}</th></tr></thead>
+          <tbody>{drivers.map(driver => {
+            const rows = (career?.participation ?? []).filter(row => row.related_id === driver.id);
+            const first = [...rows].sort((a,b) => a.year-b.year || a.first_race.round-b.first_race.round)[0]?.first_race;
+            return <tr key={driver.id}><th scope="row"><Link href={`/drivers/${driver.id}`}>{driver.name}</Link></th>
+              <td>{[...driver.years].sort((a,b) => a-b).join(', ')}</td>
+              <td>{first ? <Link href={`/races/${first.id}`}>{first.year} · {first.name} ↗</Link> : '—'}</td></tr>;
+          })}</tbody></table>
+      </div> : <p>{locale === 'uk' ? 'Немає зафіксованих зв’язків із пілотами.' : 'No recorded driver associations.'}</p>}
+      {career?.milestones.first_win && <p>{locale === 'uk' ? 'Перша зафіксована перемога конструктора' : 'First recorded constructor winning race'}:{' '}
+        <Link href={`/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name} ↗</Link>
+      </p>}
+    </section>
     <h2>{t('historicalRelations')}</h2>
     <p>{t('relationsLead')}</p>
     {lineage.length > 0 && <div className="lineage-graph" role="region" aria-label={t('constructorGraph')}>
