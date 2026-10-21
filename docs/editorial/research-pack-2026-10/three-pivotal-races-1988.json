@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "kind": "three_race_narrative_evidence_pack",
+  "status": "needs_independent_human_review",
+  "visibility": "internal_only",
+  "publication_allowed": false,
+  "source_accessed_on": "2026-10-21",
+  "season": 1988,
+  "editorial_scope": "three source-specific pivotal race record treatments",
+  "scenes": [
+    {
+      "round": 3,
+      "slug": "monaco-1988",
+      "title": {
+        "en": "Victory and retirement in Monaco",
+        "uk": "Перемога та сходження в Монако"
+      },
+      "claims": [
+        {
+          "id": "monaco-prost-victory",
+          "en": "Alain Prost finished first at the 1988 Monaco Grand Prix, completing 78 laps.",
+          "uk": "Ален Прост переміг на Гран-прі Монако 1988 року, подолавши 78 кіл.",
+          "evidence": "race-result",
+          "observed": {
+            "driver": "alain-prost",
+            "position": 1,
+            "laps": 78
+          }
+        },
+        {
+          "id": "monaco-senna-dnf",
+          "en": "The race classification lists Ayrton Senna as not classified, with 66 laps and a DNF.",
+          "uk": "У класифікації гонки Айртона Сенну позначено як такого, що не класифікувався: 66 кіл і DNF.",
+          "evidence": "race-result",
+          "observed": {
+            "driver": "ayrton-senna",
+            "position_text": "NC",
+            "laps": 66
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "race-result",
+          "url": "https://www.formula1.com/en/results/1988/races/529/monaco/race-result",
+          "locator": "Race classification, Prost position 1; Senna NC row"
+        }
+      ],
+      "unresolved": [
+        "Cause of Senna retirement requires race-specific corroboration.",
+        "Do not claim driver psychological state."
+      ],
+      "claim_review": "needs_human_review",
+      "translation_review": "needs_human_review",
+      "editorial_copy_status": "source_based_draft_only"
+    },
+    {
+      "round": 12,
+      "slug": "italy-1988",
+      "title": {
+        "en": "The season's exception at Monza",
+        "uk": "Виняток сезону в Монці"
+      },
+      "claims": [
+        {
+          "id": "italy-berger-win",
+          "en": "Gerhard Berger won the 1988 Italian Grand Prix for Ferrari.",
+          "uk": "Герхард Бергер переміг на Гран-прі Італії 1988 року за Ferrari.",
+          "evidence": "season-winners",
+          "observed": {
+            "driver": "gerhard-berger",
+            "winner": true
+          }
+        },
+        {
+          "id": "italy-senna-pole",
+          "en": "The overall qualifying table puts Ayrton Senna first with a time of 1:25.974.",
+          "uk": "У підсумковій таблиці кваліфікації Айртон Сенна перший із часом 1:25.974.",
+          "evidence": "qualifying",
+          "observed": {
+            "driver": "ayrton-senna",
+            "qualifying_position": 1,
+            "time": "1:25.974"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "season-winners",
+          "url": "https://www.formula1.com/en/results/1988/races",
+          "locator": "Italy row, winner Berger, Ferrari"
+        },
+        {
+          "id": "qualifying",
+          "url": "https://www.formula1.com/en/results/1988/races/538/italy/qualifying",
+          "locator": "Overall qualifying, row 1, Senna"
+        }
+      ],
+      "unresolved": [
+        "Do not infer the cause of McLaren's loss from winning records.",
+        "Race incident narrative requires independent detail."
+      ],
+      "claim_review": "needs_human_review",
+      "translation_review": "needs_human_review",
+      "editorial_copy_status": "source_based_draft_only"
+    },
+    {
+      "round": 15,
+      "slug": "japan-1988",
+      "title": {
+        "en": "Senna and Prost at Suzuka",
+        "uk": "Сенна та Прост у Судзуці"
+      },
+      "claims": [
+        {
+          "id": "japan-senna-first",
+          "en": "The official 1988 Japanese Grand Prix classification lists Ayrton Senna first, completing 51 laps.",
+          "uk": "Офіційна класифікація Гран-прі Японії 1988 року зазначає Айртона Сенну першим після 51 кола.",
+          "evidence": "race-result",
+          "observed": {
+            "driver": "ayrton-senna",
+            "position": 1,
+            "laps": 51
+          }
+        },
+        {
+          "id": "japan-prost-second",
+          "en": "Alain Prost was classified second, 13.363 seconds behind Senna.",
+          "uk": "Ален Прост фінішував другим із відставанням 13,363 секунди від Сенни.",
+          "evidence": "race-result",
+          "observed": {
+            "driver": "alain-prost",
+            "position": 2,
+            "gap_seconds": 13.363
+          }
+        },
+        {
+          "id": "japan-grid-first-two",
+          "en": "The starting grid lists Senna first and Prost second.",
+          "uk": "На стартовій решітці Сенна зазначений першим, а Прост — другим.",
+          "evidence": "starting-grid",
+          "observed": {
+            "senna_grid": 1,
+            "prost_grid": 2
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "race-result",
+          "url": "https://www.formula1.com/en/results/1988/races/541/japan/race-result",
+          "locator": "Race classification rows 1 and 2"
+        },
+        {
+          "id": "starting-grid",
+          "url": "https://www.formula1.com/en/results/1988/races/541/japan/starting-grid",
+          "locator": "Starting grid rows 1 and 2"
+        }
+      ],
+      "unresolved": [
+        "Do not reconstruct lap-by-lap lead changes without lap chart.",
+        "Do not interpret championship clinching mechanics without FIA regulations."
+      ],
+      "claim_review": "needs_human_review",
+      "translation_review": "needs_human_review",
+      "editorial_copy_status": "source_based_draft_only"
+    }
+  ],
+  "overall_review": {
+    "historical_human": false,
+    "uk": false,
+    "en": false,
+    "media": false,
+    "publication": false
+  },
+  "limitations": [
+    "Source-backed race observations are not independently human-approved biography claims.",
+    "Qualifying, grid, result and championship standings are different metrics.",
+    "No racing incident causality or emotions asserted.",
+    "No historical photographs or copyrighted marks are included."
+  ]
+}
