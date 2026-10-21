@@ -1560,3 +1560,14 @@
 .seasonTeamRows dd { font-size:1.4rem; margin:6px 0 0; font-variant-numeric:tabular-nums; }
 .seasonTeamRows p,.seasonTeamBreakdown>p { color:var(--muted); font-size:.8rem; line-height:1.6; }
 .seasonTeamRows a { text-decoration:underline; text-underline-offset:3px; }
+
+.seasonRaceLedger { grid-column:1/-1; min-width:0; border-top:1px solid var(--line); padding-top:24px; }
+.seasonRaceLedger h4 { margin:0 0 10px; font-size:1.15rem; }
+.seasonRaceLedger>p { color:var(--muted); font-size:.82rem; line-height:1.65; }
+.raceTableScroll { overflow-x:auto; max-width:100%; }
+.raceTableScroll table { width:100%; min-width:690px; border-collapse:collapse; text-align:left; font-variant-numeric:tabular-nums; }
+.raceTableScroll th { color:var(--muted); font-size:.72rem; font-weight:600; }
+.raceTableScroll th,.raceTableScroll td { padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.raceTableScroll td { font-size:.84rem; }
+.raceTableScroll td small { display:block; margin-top:4px; font-size:.7rem; color:var(--muted); }
+.raceTableScroll a { text-decoration:underline; text-underline-offset:3px; }
