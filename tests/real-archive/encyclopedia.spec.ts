@@ -24,6 +24,10 @@ for (const locale of ['uk', 'en'] as const) {
       const screenshot = testInfo.outputPath(`${kind}-${locale}.png`);
       await page.screenshot({ path: screenshot, fullPage: true, scale: 'css' });
       await testInfo.attach(`${kind}-${locale}`, { path: screenshot, contentType: 'image/png' });
+      await facts.scrollIntoViewIfNeeded();
+      const identityScreenshot = testInfo.outputPath(`identity-${kind}-${locale}.png`);
+      await page.screenshot({ path: identityScreenshot, scale: 'css' });
+      await testInfo.attach(`identity-${kind}-${locale}`, { path: identityScreenshot, contentType: 'image/png' });
       if (kind === 'constructors') {
         const roster = page.getByRole('region', { name: locale === 'uk' ? 'Пілоти команди в обраному сезоні' : 'Constructor drivers in selected season' });
         const race = roster.locator('a[href*="/races/"]').first();
@@ -32,6 +36,18 @@ for (const locale of ['uk', 'en'] as const) {
         await expect(page.getByTestId('race-classification').or(page.getByRole('table').first())).toBeVisible();
       } else if (kind === 'circuits') {
         await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
+        const history = (await (await request.get(`${api}/circuits/${entity.id}/history`)).json()).data;
+        await expect(page.getByRole('table').locator('tbody tr')).toHaveCount(Math.min(25, history.length));
+        if (history.length > 25) {
+          const next = page.getByRole('navigation', { name: locale === 'uk' ? 'Сторінки історії траси' : 'Circuit history pages' }).getByRole('link').last();
+          const navigation = page.waitForRequest(r => r.isNavigationRequest() && r.url().endsWith(`/${locale}/circuits/${entity.id}?page=2`));
+          await next.click();
+          expect((await navigation).method()).toBe('GET');
+          await expect(page).toHaveURL(/page=2$/);
+          await expect(page.getByRole('table').locator('tbody tr')).toHaveCount(Math.min(25, history.length - 25));
+          await expect(page.getByRole('table').locator('tbody tr').first().getByRole('link').nth(1)).toHaveAttribute('href', `/${locale}/races/${history[25].race_id}`);
+          await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `http://127.0.0.1:3351/${locale}/circuits/${entity.id}?page=2`);
+        }
         const winner = page.getByTestId('circuit-result-legends').getByRole('link').first();
         await winner.click();
         await expect(page.getByTestId('driver-showcase')).toBeVisible();

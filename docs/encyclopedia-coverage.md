@@ -22,7 +22,7 @@ again. The new identity backfill was also repeated independently.
 | Race-result entries | 27,665 |
 
 All 1,182 profile identities have source-bound details. The final exhaustive
-run checked 11,504 API requests, 2,364 localized profile responses and 53,204
+run checked 11,504 API requests, 2,364 localized profiles (2,406 responses including circuit pagination) and 53,942
 rendered archive links, with zero missing entities, API failures, row mismatches
 or dead archive links. It compared all 1,172 race rows and 27,665 result rows,
 and verified 18 malformed/unknown localized missing responses. The measured
@@ -55,7 +55,7 @@ the separately imported race-specific driver number.
   localized; source names and dates are preserved.
 - Constructor season rosters link to recorded first/last race boundaries and
   complete pair evidence. These do not establish uninterrupted contracts.
-- Circuit winners and chronological event lists share pagination instead of
+- Circuit winners and chronological event lists share 25-race native GET pages instead of
   repeating an unbounded winner table on every archive page.
 - Profile and season point sums preserve null, zero and partial data. Constructors
   identify incomplete sums. Statistics remain race-result summaries, with
@@ -107,7 +107,8 @@ Local checks passed: foundation validation, lint, typecheck, production build,
 85 Node tests, 271 Python tests, 41 API integration tests (one existing opt-in
 editorial test skipped), 342 synthetic browser tests, fresh/repeated migrations
 and checksum-tampering rejection, repeated real imports and the existing
-real-archive SQL/API smoke. The real-archive browser suite and GitHub CI are
+real-archive SQL/API smoke. All 92 real-archive browser tests passed. The final circuit pagination also has
+a dedicated 16-test UK/EN desktop/mobile verification; GitHub CI results are
 reported on the implementation PR.
 
 ## Remaining boundaries

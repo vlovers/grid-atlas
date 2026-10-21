@@ -16,7 +16,7 @@ import re
 import subprocess
 import sys
 import threading
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 from urllib.error import HTTPError
 from urllib.request import urlopen
 import zipfile
@@ -102,7 +102,7 @@ def audit(args):
     valid = {kind: {r['id'] for r in rows} for kind, rows in db.items()}
     valid['seasons'] = {str(y) for y in seasons}
     report = {'release': RELEASE, 'sha256': digest, 'entities': {}, 'rows': {},
-              'api_requests': 0, 'web_profiles': 0, 'rendered_archive_links': 0, 'failures': []}
+              'api_requests': 0, 'web_profiles': 0, 'web_pages': 0, 'rendered_archive_links': 0, 'failures': []}
     lock = threading.Lock()
     def check(condition, context, expected=None, actual=None):
         if not condition:
@@ -260,17 +260,33 @@ def audit(args):
                 marker = {'drivers': 'driver-showcase', 'constructors': 'constructor-archive-portrait', 'circuits': 'circuit-result-legends'}[kind]
                 for locale in ('uk', 'en'):
                     web_path = '/' + locale + path
-                    with urlopen(args.web_url.rstrip('/') + web_path, timeout=60) as response:
-                        document = ProfileHTML()
-                        document.feed(response.read().decode())
-                    check(marker in document.markers and 'identity-facts' in document.markers, web_path + ': rendered profile markers')
-                    check(not document.noindex and document.canonical is not None and urlparse(document.canonical).path == web_path, web_path + ': canonical/indexability')
-                    for link in document.links:
-                        match = re.fullmatch(r'/(uk|en)/(drivers|constructors|circuits|races|seasons)/([^/]+)', urlparse(link).path)
-                        if match:
-                            check(match[3] in valid[match[2]], web_path + ': dead archive link', None, link)
-                            with lock:
-                                report['rendered_archive_links'] += 1
+                    queue, visited = [web_path], set()
+                    while queue:
+                        current = queue.pop(0)
+                        if current in visited:
+                            continue
+                        visited.add(current)
+                        with urlopen(args.web_url.rstrip('/') + current, timeout=60) as response:
+                            document = ProfileHTML()
+                            document.feed(response.read().decode())
+                        check(marker in document.markers and 'identity-facts' in document.markers, current + ': rendered profile markers')
+                        canonical = urlparse(document.canonical or '')
+                        check(not document.noindex and canonical.path == web_path and canonical.query == urlparse(current).query,
+                              current + ': canonical/indexability')
+                        for link in document.links:
+                            target = urlparse(link)
+                            match = re.fullmatch(r'/(uk|en)/(drivers|constructors|circuits|races|seasons)/([^/]+)', target.path)
+                            if match:
+                                check(match[3] in valid[match[2]], current + ': dead archive link', None, link)
+                                with lock:
+                                    report['rendered_archive_links'] += 1
+                            if kind == 'circuits' and target.path == web_path and parse_qs(target.query).get('page'):
+                                queue.append(target.path + '?' + target.query)
+                        check(len(visited) <= 1001, current + ': circuit pagination terminated')
+                        if len(visited) > 1001:
+                            break
+                        with lock:
+                            report['web_pages'] += 1
                     with lock:
                         report['web_profiles'] += 1
         except Exception as error:

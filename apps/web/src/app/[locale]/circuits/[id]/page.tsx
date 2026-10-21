@@ -9,9 +9,10 @@ import { entitySeo } from '@/lib/entity-seo';
 import SeoBreadcrumbs from '@/components/seo-breadcrumbs';
 import { getData } from '@/lib/api';
 import { IdentityFacts, type IdentityDetails } from '@/components/identity-facts';
-import { catalogueParams, pageHref, PAGE_SIZE, MAX_OFFSET, validId, type CatalogueParams } from '@/lib/catalogue';
+import { catalogueParams, pageHref, MAX_OFFSET, validId, type CatalogueParams } from '@/lib/catalogue';
 
 export const dynamic = 'force-dynamic';
+const CIRCUIT_PAGE_SIZE = 25;
 type Circuit = { id: string; name: string; external_id: string; races: number; first_season: number | null; last_season: number | null };
 type Race = { id: string; season_year: number; round: number; race_date: string | null; official_name: string };
 type CircuitHistory = { race_id: string; season_year: number; round: number; race_date: string | null; race_name: string; recorded_drivers: number; recorded_constructors: number; winner_entries: number; winners: { driver_id: string; driver_name: string; constructor_id: string; constructor_name: string }[] };
@@ -24,7 +25,8 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const [{ title, description }, [circuit]] = await Promise.all([
     entitySeo('circuits', id, locale), getData<Circuit>(`/api/circuits/${id}`),
   ]);
-  const { page, offset } = catalogueParams(await searchParams);
+  const { page } = catalogueParams(await searchParams);
+  const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
   const suffix = page > 1 ? ` · ${locale === 'uk' ? 'Сторінка' : 'Page'} ${page}` : '';
   return { ...routeMetadata(locale, pageHref(`/circuits/${id}`, page), page > 1 && offset >= circuit.races),
     title: `${title}${suffix}`, description: `${description}${suffix}` };
@@ -34,10 +36,11 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const t = await getTranslations('UI');
   const { id, locale } = await params;
   if (!validId(id)) notFound();
-  const { page, offset } = catalogueParams(await searchParams);
+  const { page } = catalogueParams(await searchParams);
+  const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
   const [[circuit], races, history, identities] = await Promise.all([
     getData<Circuit>(`/api/circuits/${id}`),
-    getData<Race>(`/api/circuits/${id}/races?limit=${PAGE_SIZE}&offset=${offset}`),
+    getData<Race>(`/api/circuits/${id}/races?limit=${CIRCUIT_PAGE_SIZE}&offset=${offset}`),
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
     getData<IdentityDetails>(`/api/circuits/${id}/identity`),
   ]);
@@ -111,7 +114,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       <h2>{locale === 'uk' ? 'Переможці та результати' : 'Winners and results'}</h2>
       {history.length ? <div className="table-scroll"><table>
         <thead><tr><th>{locale === 'uk' ? 'Сезон' : 'Season'}</th><th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th>{locale === 'uk' ? 'Переможні записи' : 'Winning entries'}</th><th>{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
-        <tbody>{history.slice(offset, offset + PAGE_SIZE).map(race => <tr key={race.race_id}>
+        <tbody>{history.slice(offset, offset + CIRCUIT_PAGE_SIZE).map(race => <tr key={race.race_id}>
           <td><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></td>
           <td><Link href={`/races/${race.race_id}`}>{race.race_name}</Link></td>
           <td>{race.winners.length ? race.winners.map(winner => <div key={`${winner.driver_id}:${winner.constructor_id}`}><Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> · <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></div>) : '—'}</td>
@@ -139,8 +142,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       </section>)}
     </div> : <p>{t('noCircuitRaces')}</p>}
     <nav className="actions" aria-label={t('circuitPages')}>
-      {page > 1 && <Link className="secondary" href={pageHref(path, page - 1)}>← {t('previous')}</Link>}
-      {offset + PAGE_SIZE < circuit.races && offset + PAGE_SIZE <= MAX_OFFSET && <Link className="secondary" href={pageHref(path, page + 1)}>{t('next')} →</Link>}
+      {page > 1 && <a className="secondary" href={`/${locale}${pageHref(path, page - 1)}`}>← {t('previous')}</a>}
+      {offset + CIRCUIT_PAGE_SIZE < circuit.races && offset + CIRCUIT_PAGE_SIZE <= MAX_OFFSET && <a className="secondary" href={`/${locale}${pageHref(path, page + 1)}`}>{t('next')} →</a>}
     </nav>
     <Link className="back" href="/circuits">← {t('allCircuits')}</Link>
   </section></>;
