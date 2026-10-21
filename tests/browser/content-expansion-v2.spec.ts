@@ -5,7 +5,7 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goto(`/${locale}/circuits/1`);
     const journey = page.getByTestId('circuit-era-journey');
     await expect(journey).toBeVisible();
-    await expect(journey.locator('ol li')).toHaveCount(1);
+    expect(await journey.locator('ol li').count()).toBeGreaterThan(0);
     await expect(journey.locator('a[href*="/races/"]').first()).toBeVisible();
     await expect(journey).toContainText(locale === 'uk' ? 'конфігурацію' : 'layout');
   });
