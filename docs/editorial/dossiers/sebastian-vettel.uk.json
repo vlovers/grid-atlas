@@ -48,6 +48,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "sebastian-vettel-toro-rosso-win",
+      "topic": "first_win",
+      "statement": "Феттель здобув першу перемогу у Формулі-1 у Монці 2008 року за Toro Rosso.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "sebastian-vettel-f1-hall",
+          "locator": "2008 Toro Rosso season paragraph describing the Italian Grand Prix.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-red-bull-step",
+      "topic": "career",
+      "statement": "Феттель перейшов до Red Bull Racing у 2009 році та переміг на Гран-прі Китаю — це була перша перемога команди у Формулі-1.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "sebastian-vettel-f1-hall",
+          "locator": "2009 Red Bull Racing paragraph describing the China race.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -57,6 +83,20 @@
       "claim_ids": [
         "sebastian-vettel-titles"
       ]
+    },
+    {
+      "section_id": "toro-rosso-win",
+      "title": "Перша перемога на Гран-прі",
+      "claim_ids": [
+        "sebastian-vettel-toro-rosso-win"
+      ]
+    },
+    {
+      "section_id": "red-bull-step",
+      "title": "Етапи кар’єри",
+      "claim_ids": [
+        "sebastian-vettel-red-bull-step"
+      ]
     }
   ],
   "gaps": [
@@ -65,7 +105,8 @@
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "Additional source-located career claims researched 2026-10-21; one Formula 1 publisher group for these claims. Cross-publisher verification and human EN/UK review remain outstanding."
   ],
   "media": []
 }
