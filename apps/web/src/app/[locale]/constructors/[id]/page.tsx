@@ -40,6 +40,17 @@ export default async function ConstructorProfile({ params }: Props) {
         {t('constructor')}: {t('season')} {seasons[0].year} → Explorer
       </Link>
     </p>}
+    <section aria-labelledby="constructor-archive-overview" data-testid="constructor-archive-overview">
+      <h2 id="constructor-archive-overview">{locale === 'uk' ? 'Історія за результатами' : 'History through race results'}</h2>
+      <p>{locale === 'uk'
+        ? `Архів містить ${team.races} гонок за участю конструктора ${team.name}${team.first_season !== null ? ` від сезону ${team.first_season}` : ''}${team.last_season !== null && team.last_season !== team.first_season ? ` до ${team.last_season} року` : ''}. Зафіксовано ${team.wins} переможних гонок у цьому наборі результатів.`
+        : `The archive records ${team.races} races associated with constructor ${team.name}${team.first_season !== null ? ` from the ${team.first_season} season` : ''}${team.last_season !== null && team.last_season !== team.first_season ? ` through ${team.last_season}` : ''}. It includes ${team.wins} distinct winning races in the imported results.`}</p>
+      {seasons.length > 0 && <p>{locale === 'uk' ? 'Перегляньте зафіксовані сезони:' : 'Explore the recorded seasons:'}{' '}
+        {seasons.slice(0, 6).map((season, index) => <span key={season.year}>{index > 0 ? ' · ' : ''}<Link href={`/seasons/${season.year}`}>{season.year}</Link></span>)}
+        {seasons.length > 6 && <span> · {locale === 'uk' ? `ще ${seasons.length - 6} у таблиці нижче` : `${seasons.length - 6} more in the table below`}</span>}
+      </p>}
+      <p>{locale === 'uk' ? 'Це опис участі за протоколами, а не перевірена історія власності, контрактів чи юридичної спадковості команди. Сумарні очки пілотів не є офіційними очками Кубка конструкторів.' : 'This is a summary of recorded participation, not a verified history of team ownership, contracts or legal succession. Summed driver points are not official constructors championship points.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
+    </section>
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>
