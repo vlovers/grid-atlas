@@ -68,7 +68,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       <p className={styles.heroScope}>{t.scope}</p>
     </header>
 
-    {career && <section className={styles.chapter} aria-label={locale === 'uk' ? 'Ключові факти про пілота' : 'Driver quick facts'}>
+    {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
       <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
         title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
         note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
@@ -117,7 +117,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
             <h4>{locale === 'uk' ? 'Команди цього сезону' : 'Teams this season'}</h4>
             <ul>{teams.filter(team => team.year === selected.year).map(team =>
               <li key={team.constructor_id}><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name}</a> · {format(team.races)} {t.races}</li>)}</ul>
-            <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}</p>
+            <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}{seasonPoints(selected, career?.participation ?? []).partial && <> · {t.partialPoints}</>}</p>
             <p>{locale === 'uk' ? 'Позиція в чемпіонаті, поули й сходи не виводяться без перевірених сезонних даних.' : 'Championship position, poles and retirements are omitted until verified season data is available.'}</p>
           </div>
           <a className={styles.outlineLink} href={`/${locale}/explorer/drivers/${driver.id}?year=${selected.year}`}>{t.exploreConnections} ↗</a>
