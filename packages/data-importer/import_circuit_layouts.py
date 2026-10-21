@@ -17,7 +17,9 @@ import zipfile
 from decimal import Decimal, InvalidOperation
 from import_seasons import ASSET, RELEASE, verified_seasons
 
-def decimal_field(row, key):
+def decimal_field(row, key, optional=False):
+    if optional and row.get(key) is None:
+        return None
     value = row.get(key)
     if isinstance(value, bool) or not isinstance(value, (int, float)):
         raise ValueError(f"Invalid {key}")
@@ -29,7 +31,9 @@ def decimal_field(row, key):
         raise ValueError(f"Invalid {key}")
     return str(n)
 
-def count_field(row, key):
+def count_field(row, key, optional=False):
+    if optional and row.get(key) is None:
+        return None
     value = row.get(key)
     if type(value) is not int or value < 0:
         raise ValueError(f"Invalid {key}")
@@ -78,7 +82,7 @@ def read_circuit_facts(archive, checksums):
             canonical = json.dumps(row, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
             races.append((rid, layout_id, decimal_field(row, "courseLength"),
                 count_field(row, "turns"), count_field(row, "laps"), decimal_field(row, "distance"),
-                count_field(row, "scheduledLaps"), decimal_field(row, "scheduledDistance"),
+                count_field(row, "scheduledLaps", optional=True), decimal_field(row, "scheduledDistance", optional=True),
                 direction, hashlib.sha256(canonical.encode()).hexdigest(),
                 f"f1db-races.json#id={rid}"))
     return layouts, races, digest
