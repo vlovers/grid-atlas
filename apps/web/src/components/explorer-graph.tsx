@@ -111,9 +111,13 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
     return () => window.removeEventListener("popstate", onPopState);
   }, [graph, pageSize]);
   useEffect(() => {
+    // During Back/Forward, server props may lag behind the browser URL.
+    // The visible URL is authoritative: stale selectedId props must never
+    // overwrite the selection restored by popstate.
+    const currentId = new URL(window.location.href).searchParams.get("selected");
     const index = graph.edges.findIndex(
       (edge) =>
-        graph.nodes.find((node) => node.key === edge.to)?.entity_id === selectedId,
+        graph.nodes.find((node) => node.key === edge.to)?.entity_id === currentId,
     );
     setSelectedKey(graph.edges[Math.max(0, index)]?.key);
     setWindowIndex(Math.floor(Math.max(0, index) / pageSize));
