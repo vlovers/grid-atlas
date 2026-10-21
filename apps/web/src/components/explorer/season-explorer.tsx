@@ -80,6 +80,7 @@ export async function SeasonExplorer({
         className={styles.journeyLinks}
         aria-label={uk ? "Подальше дослідження" : "Continue exploring"}
       >
+        {year !== null && <a href={`/${locale}/atlas?kind=${kind}&id=${id}&year=${year}${selected ? `&selected=${selected}` : ''}`}>{uk ? 'Відкрити Атлас історії' : 'Open History Atlas'} ↗</a>}
         <a href={focusPath}>
           ←{" "}
           {kind === "driver"
