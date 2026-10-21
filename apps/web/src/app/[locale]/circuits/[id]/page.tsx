@@ -1,3 +1,4 @@
+import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
 import { getTranslations } from 'next-intl/server';
@@ -38,11 +39,13 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   if (!validId(id)) notFound();
   const { page } = catalogueParams(await searchParams);
   const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
-  const [[circuit], races, history, identities] = await Promise.all([
+  const [[circuit], races, history, identities, layouts, technicalEvents] = await Promise.all([
     getData<Circuit>(`/api/circuits/${id}`),
     getData<Race>(`/api/circuits/${id}/races?limit=${CIRCUIT_PAGE_SIZE}&offset=${offset}`),
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
     getData<IdentityDetails>(`/api/circuits/${id}/identity`),
+    getData<CircuitLayout>(`/api/circuits/${id}/layouts`),
+    getData<CircuitTechnicalEvent>(`/api/circuits/${id}/technical-history`),
   ]);
   if (!circuit) notFound();
   const chronologicalHistory = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round || Number(a.race_id) - Number(b.race_id));
@@ -66,6 +69,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <StoryHeader title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader} locale={locale as 'uk' | 'en'} marker={circuit.first_season ?? undefined}
       lead={<p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>} />
     <IdentityFacts identity={identities[0]} locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitExperience layouts={layouts} events={technicalEvents} locale={locale === 'en' ? 'en' : 'uk'} />
     <section aria-label={locale === 'uk' ? 'Історичні факти про трасу' : 'Circuit history facts'}>
       <h2>{locale === 'uk' ? 'Паспорт траси' : 'Circuit quick facts'}</h2>
       <div className="driver-grid">
