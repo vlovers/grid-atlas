@@ -77,7 +77,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         {circuit.first_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Перше використання у базі' : 'First archived appearance'}</span><h3><Link href={`/seasons/${circuit.first_season}`}>{circuit.first_season}</Link></h3></article>}
         {circuit.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останнє використання у базі' : 'Latest archived appearance'}</span><h3><Link href={`/seasons/${circuit.last_season}`}>{circuit.last_season}</Link></h3></article>}
       </div>
-      <p>{locale === 'uk' ? 'Довжина, кількість поворотів, сектори, DRS і рекорди залежать від конфігурації та року. Поки ці дані не підтверджені, ми не показуємо припущень.' : 'Length, corners, sectors, DRS and lap records depend on the layout and event year. Unverified technical figures are deliberately omitted.'}</p>
+      <p>{locale === 'uk' ? 'Довжина та кількість поворотів нижче наведені за конкретними записами F1DB і не переносяться на інші роки. Сектори, DRS і рекорди без підтверджених джерел не показані.' : 'Lap lengths and corner counts below come from specific F1DB records and are not assumed valid in other years. Sectors, DRS and records without verified evidence are omitted.'}</p>
     </section>
     <section aria-labelledby="circuit-result-legends" data-testid="circuit-result-legends">
       <h2 id="circuit-result-legends">{locale === 'uk' ? 'Пілоти, що неодноразово перемагали тут' : 'Drivers with repeated recorded wins here'}</h2>
