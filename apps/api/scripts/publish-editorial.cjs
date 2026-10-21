@@ -3,7 +3,6 @@
  * Default mode is a database-free dry run. Only a human-authorized revision can publish.
  */
 const fs = require('node:fs');
-const crypto = require('node:crypto');
 
 function assertBundle(bundle) {
   if (!bundle || bundle.schema_version !== 1 || bundle.release_kind !== 'approved_text_only' ||
