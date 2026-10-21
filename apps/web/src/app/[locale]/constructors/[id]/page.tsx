@@ -108,6 +108,18 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       </p>}
       <p>{locale === 'uk' ? 'Це опис участі за протоколами, а не перевірена історія власності, контрактів чи юридичної спадковості команди. Сумарні очки пілотів не є офіційними очками Кубка конструкторів.' : 'This is a summary of recorded participation, not a verified history of team ownership, contracts or legal succession. Summed driver points are not official constructors championship points.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
     </section>
+    <section aria-labelledby="constructor-key-eras" data-testid="constructor-key-eras">
+      <h2 id="constructor-key-eras">{locale === 'uk' ? 'Епохи конструктора' : 'Constructor eras'}</h2>
+      <p>{locale === 'uk' ? 'Сезони з найбільшою кількістю переможних гонок у цьому архіві. Це порівняння результатів, а не рейтинг офіційних чемпіонських титулів.' : 'Seasons with the most race wins in this archive. These are recorded winning races, not official championship titles.'}</p>
+      {seasons.length > 0 ? <div className="driver-grid">{[...seasons].sort((a,b) => b.wins - a.wins || a.year - b.year).slice(0, 4).map(season =>
+        <article className="driver" key={season.year}>
+          <span className="index">{locale === 'uk' ? 'Сезон' : 'Season'} · {season.year}</span>
+          <h3><Link href={`/seasons/${season.year}`}>{season.wins} {locale === 'uk' ? 'перемог' : 'wins'} ↗</Link></h3>
+          <p>{season.races} {locale === 'uk' ? 'гонок у протоколах' : 'recorded races'}</p>
+          <Link href={`/constructors/${team.id}?season=${season.year}`}>{locale === 'uk' ? 'Пілоти та результати сезону' : 'Season drivers and results'} ↗</Link>
+        </article>)}</div> : <p>{locale === 'uk' ? 'Немає зафіксованих сезонів.' : 'No seasons recorded.'}</p>}
+      <p>{locale === 'uk' ? 'Учасники, юридична спадковість, шасі й силові установки потребують окремих перевірених джерел. Не ототожнюємо однойменні команди та конструкторів без доказів.' : 'Entrants, legal succession, chassis and power units need separate verified evidence. Constructor identity alone does not establish legal team continuity.'}</p>
+    </section>
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>

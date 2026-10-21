@@ -31,6 +31,18 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   }
   return <section className="page">
     <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
+    <section aria-labelledby="season-journey" data-testid="season-journey">
+      <h2 id="season-journey">{locale === 'uk' ? 'Сезон у трьох етапах' : 'Season in three moments'}</h2>
+      <p>{locale === 'uk' ? 'Від початку календаря через середину до фінального зафіксованого етапу. Це точки навігації по архіву, а не редакційний вибір найважливіших подій.' : 'From the opening race through the middle of the calendar to the last recorded round. These are archive navigation points, not editorial claims about the most important moments.'}</p>
+      {races.length ? <ol className="records">
+        {[races[0], ...(races.length > 2 ? [races[Math.floor((races.length - 1) / 2)]] : []), ...(races.length > 1 ? [races[races.length - 1]] : [])].map((entry, index) =>
+          <li className="record" key={entry.id}><span className="position">{String(index + 1).padStart(2, '0')}</span>
+            <span><strong><Link href={`/races/${entry.id}`}>{entry.official_name} ↗</Link></strong>
+            <small>{locale === 'uk' ? 'Раунд' : 'Round'} {entry.round} · {entry.circuit_name ?? t('unknownCircuit')}</small></span>
+          </li>)}
+      </ol> : <p>{t('noRaces')}</p>}
+      <p>{locale === 'uk' ? 'Результати окремих гонок не дорівнюють офіційним підсумкам чемпіонату через історичні системи нарахування та відкидання очок.' : 'Individual race points cannot be treated as official championship totals because historical scoring and dropped-results rules varied.'}</p>
+    </section>
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>
       <Link key={r.id} className="record" href={`/races/${r.id}`}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>
