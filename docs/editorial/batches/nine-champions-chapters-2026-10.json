@@ -5,7 +5,7 @@
   "publication_allowed": false,
   "reviewed_by_human": false,
   "generated_from": "existing source-located dossier claims in docs/editorial/dossiers",
-  "note": "Original explanatory prose; not independently approved or fact-checked against source pages in this change. Do not publish.",
+  "note": "Original source-linked research copy; 15 chapters and 30 localized passages. No automatic publication or human approval.",
   "chapters": [
     {
       "driver_id": "juan-manuel-fangio",
@@ -195,6 +195,136 @@
       },
       "based_on_claim_ids": [
         "lewis-hamilton-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "The half-point season",
+        "uk": "Сезон половини очка"
+      },
+      "body": {
+        "en": "In 1984 Prost won seven Grands Prix, but it was his McLaren team-mate Niki Lauda who finished the championship half a point ahead. A record of victories and a championship classification can tell two different stories. In this case, the distinction is essential: counting the individual wins alone would hide how close the season finished. The next step for a complete 1984 chapter is to present race-by-race evidence and explain the applicable scoring rules, rather than implying that seven wins necessarily meant seven decisive results.",
+        "uk": "У 1984 році Прост виграв сім Гран-прі, але його напарник по McLaren Нікі Лауда випередив його в чемпіонаті на половину очка. Перелік перемог та підсумкова таблиця можуть розповідати різні історії. Тут ця відмінність особливо важлива: сам підрахунок перемог не показує, наскільки близьким був фінал сезону. Для повноцінного розділу про 1984 рік потрібно показати результати кожного етапу й пояснити тогочасні правила нарахування очок, не припускаючи, що сім перемог автоматично означали сім вирішальних результатів."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-1984"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "A first win, then a final title",
+        "uk": "Перша перемога й останній титул"
+      },
+      "body": {
+        "en": "Prost took his first Formula 1 victory for Renault at the 1981 French Grand Prix in Dijon. Twelve years later, second place in the Portuguese Grand Prix at Estoril secured his fourth drivers’ championship with Williams. These two milestones frame a long career without pretending that every season between them followed a straight line. The documented chronology includes a year away before his 1993 return, and his announcement during the Portuguese Grand Prix weekend that he would retire after that season.",
+        "uk": "Першу перемогу у Формулі-1 Прост здобув за Renault на Гран-прі Франції 1981 року в Діжоні. Дванадцять років потому друге місце на Гран-прі Португалії в Ешторілі забезпечило йому четвертий чемпіонський титул із Williams. Ці два моменти обрамлюють тривалу кар’єру, але не означають, що всі проміжні сезони були прямим шляхом до успіху. Підтверджена хронологія охоплює річну перерву перед поверненням у 1993-му та оголошення під час португальського етапу про завершення кар’єри після сезону."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-first-victory",
+        "alain-prost-1993"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "alain-prost",
+      "editorial_title": {
+        "en": "When team-mates became rivals",
+        "uk": "Коли напарники стали суперниками"
+      },
+      "body": {
+        "en": "Ayrton Senna joined Prost at McLaren in 1988. McLaren won 15 of that season’s 16 races, a result that makes it tempting to describe everything as a story of two drivers. Yet the team's overall record and the personal rivalry are different kinds of evidence. Our detailed 1988 comparison must distinguish each driver’s race results, championship scoring and the claims made about events away from the timing sheets. Their rivalry continued after Prost moved to Ferrari; the causes and emotional interpretations require individually checked contemporary reporting.",
+        "uk": "Айртон Сенна став напарником Проста в McLaren у 1988 році. Команда виграла 15 із 16 гонок сезону, і тому всю історію легко звести до протистояння двох пілотів. Проте командний результат та особисте суперництво — це різні типи свідчень. Детальне порівняння 1988 року має окремо показувати результати кожного гонщика, правила чемпіонського заліку та твердження про події поза протоколами. Суперництво тривало й після переходу Проста до Ferrari; його причини та емоційні оцінки потребують окремо перевірених тогочасних джерел."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/alain-prost.en.json",
+        "uk": "docs/editorial/dossiers/alain-prost.uk.json"
+      },
+      "based_on_claim_ids": [
+        "alain-prost-rivalry"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "Spa: the first two milestones",
+        "uk": "Спа: перші дві віхи"
+      },
+      "body": {
+        "en": "The Belgian Grand Prix at Spa-Francorchamps connects Schumacher’s first two Formula 1 milestones. He made his debut there with Jordan in 1991 and returned the following year as a Benetton driver to claim his first Grand Prix victory. The shared location offers a natural way to navigate between two separate race records. It does not prove anything by itself about the circumstances of the debut, the machinery’s comparative performance or the tactical details of the victory: those questions need the individual race reports.",
+        "uk": "Гран-прі Бельгії на Спа-Франкоршам пов’язує дві перші віхи Шумахера у Формулі-1. У 1991 році він дебютував там за Jordan, а наступного року повернувся вже як пілот Benetton і здобув першу перемогу на Гран-прі. Спільна траса дає природний перехід між двома різними протоколами перегонів. Але вона сама собою нічого не доводить про обставини дебюту, порівняльні можливості болідів або тактичні деталі перемоги: для цього потрібні звіти про кожну гонку."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-spa"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "The Suzuka turning point",
+        "uk": "Переломний момент на Судзуці"
+      },
+      "body": {
+        "en": "On 8 October 2000, at Suzuka, Michael Schumacher secured his first drivers’ world championship with Ferrari. It ended Ferrari’s wait for a drivers’ title that stretched back to Jody Scheckter in 1979. That date is a pivotal landmark in Schumacher’s Ferrari period, which ran from 1996 to 2006 and eventually included five consecutive championships from 2000 to 2004. The dates and titles are the starting evidence; a richer race narrative still needs direct race reporting and independently reviewed quotations.",
+        "uk": "8 жовтня 2000 року на Судзуці Міхаель Шумахер здобув свій перший чемпіонський титул із Ferrari. Так завершилося очікування команди на чемпіона серед пілотів, що тривало від титулу Джоді Шектера 1979 року. Ця дата — ключова віха у періоді Шумахера за Ferrari з 1996 до 2006 року, коли він зрештою здобув п’ять титулів поспіль у 2000–2004 роках. Дати та титули — вихідна доказова основа; для повнішої історії гонки потрібні прямі репортажі та незалежно перевірені цитати."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-suzuka",
+        "michael-schumacher-teams",
+        "michael-schumacher-titles"
+      ],
+      "status": "needs_review",
+      "human_editor_approved": false,
+      "media": []
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "editorial_title": {
+        "en": "Seven titles, two eras",
+        "uk": "Сім титулів, дві епохи"
+      },
+      "body": {
+        "en": "Schumacher’s seven titles separate into two championships with Benetton, in 1994 and 1995, and five consecutive championships with Ferrari, from 2000 through 2004. The gap between those groups matters. It prevents a career spanning different teams and seasons from collapsing into a single unbroken winning streak. His later return with Mercedes in 2010–2012 did not add another Grand Prix victory. To understand why, race-by-race evidence and careful historical context will be more useful than retrospective certainty.",
+        "uk": "Сім титулів Шумахера поділяються на два чемпіонства з Benetton — 1994 і 1995 років — та п’ять поспіль із Ferrari з 2000-го до 2004-го. Перерва між цими серіями має значення: вона не дозволяє звести кар’єру в різних командах та сезонах до однієї безперервної переможної смуги. Пізніше повернення з Mercedes у 2010–2012 роках не принесло нової перемоги на Гран-прі. Щоб зрозуміти цей період, потрібні результати кожного етапу та обережний історичний контекст, а не впевнені ретроспективні судження."
+      },
+      "dossier_files": {
+        "en": "docs/editorial/dossiers/michael-schumacher.en.json",
+        "uk": "docs/editorial/dossiers/michael-schumacher.uk.json"
+      },
+      "based_on_claim_ids": [
+        "michael-schumacher-titles",
+        "michael-schumacher-return"
       ],
       "status": "needs_review",
       "human_editor_approved": false,
