@@ -8,7 +8,7 @@ import { LicensedMedia } from '@/components/media/licensed-media';
 import type { MediaAsset } from '@/components/media/registry';
 import { selectMedia } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
-import { raceMoments, seasonPoints, teamEras, timeMachinePath,
+import { driverArchiveOverview, raceMoments, seasonPoints, teamEras, timeMachinePath,
   type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam } from './showcase-model';
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
@@ -21,6 +21,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
   const opening = openingRecord(career);
+  const overview = driverArchiveOverview(driver, career, locale);
   const format = (value: number | null | undefined) => value == null ? t.unavailable : new Intl.NumberFormat(locale).format(value);
   const peakSeasons = seasonStories(seasons);
   const years = [...new Set(seasons.map(s => s.year))].sort((a, b) => a - b);
@@ -134,6 +135,20 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
 
     <section id="driver-biography" className={styles.chapter} aria-labelledby="driver-editorial-title" tabIndex={-1}>
       {article && <SectionHeading kicker={t.editorialKicker} title={t.editorialTitle} id="driver-editorial-title" />}
+      {overview && <article className={styles.biography} data-testid="driver-archive-overview">
+        <h3>{locale === 'en' ? 'Career in the historical record' : 'Кар’єра за історичними протоколами'}</h3>
+        {overview.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+        <p>{locale === 'en'
+          ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
+          : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
+        <ul>{overview.firstRace && <li><a href={`/${locale}/races/${overview.firstRace.id}`}>
+          {locale === 'en' ? 'First recorded race' : 'Перша зафіксована гонка'}: {overview.firstRace.name} ({overview.firstRace.year}) ↗
+        </a></li>}
+        {overview.firstWin && <li><a href={`/${locale}/races/${overview.firstWin.id}`}>
+          {locale === 'en' ? 'First recorded win' : 'Перша зафіксована перемога'}: {overview.firstWin.name} ({overview.firstWin.year}) ↗
+        </a></li>}</ul>
+        <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
+      </article>}
       {article ? <article className={styles.biography}><h3>{article.title}</h3>
         {article.body_markdown.split(/\n\s*\n/).filter(Boolean).map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         {article.references.length > 0 && <aside><h4>{t.sourceTitle}</h4><ol>{article.references.map((source, i) => <li key={`${source.url}:${i}`}><a href={source.url} rel="noreferrer">{source.title}</a> — {source.publisher}</li>)}</ol></aside>}
