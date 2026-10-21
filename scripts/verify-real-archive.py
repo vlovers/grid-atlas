@@ -39,6 +39,29 @@ def main():
     expected = "77|917|187|830|78|1172|27665"
     assert counts == expected, f"Unexpected pinned-release counts: {counts} != {expected}"
 
+    # Structural track-layout census from the same pinned F1DB release.
+    technical_counts = sql("""SELECT CONCAT_WS('|',
+      (SELECT count(*) FROM historical_circuit_layouts),
+      (SELECT count(*) FROM historical_race_circuit_facts),
+      (SELECT count(*) FROM historical_circuit_layouts l
+        LEFT JOIN historical_circuits c ON c.id=l.circuit_id WHERE c.id IS NULL),
+      (SELECT count(*) FROM historical_race_circuit_facts f
+        LEFT JOIN historical_races r ON r.id=f.race_id WHERE r.id IS NULL),
+      (SELECT count(*) FROM historical_race_circuit_facts f
+        JOIN historical_races r ON r.id=f.race_id
+        JOIN historical_circuit_layouts l ON l.id=f.layout_id
+        WHERE l.circuit_id<>r.circuit_id))""")
+    assert technical_counts == "160|1172|0|0|0", (
+        f"Unexpected layout and event coverage: {technical_counts}")
+    sample_layout = sql("""SELECT CONCAT_WS('|', l.external_layout_id, f.course_length_km,
+      f.turns, f.laps, r.season_year)
+      FROM historical_race_circuit_facts f
+      JOIN historical_races r ON r.id=f.race_id
+      JOIN historical_circuit_layouts l ON l.id=f.layout_id
+      ORDER BY r.season_year, r.round LIMIT 1""")
+    assert len(sample_layout.split('|')) == 5, sample_layout
+
+
     # Derive one verified-in-DB example, never assume local auto-increment IDs
     # or hard-code a real person's name/affiliation.
     pair = sql("""SELECT CONCAT_WS('|', r.season_year, rr.driver_id, rr.constructor_id,
