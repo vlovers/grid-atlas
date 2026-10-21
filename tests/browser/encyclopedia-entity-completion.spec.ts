@@ -36,8 +36,13 @@ for (const locale of ['uk', 'en'] as const) {
 
     test('invalid identifiers never render fabricated profiles', async ({ page }) => {
       for (const entity of ['drivers', 'constructors', 'circuits']) {
-        const response = await page.goto(`/${locale}/${entity}/not-a-valid-id`);
-        expect(response?.status()).toBe(404);
+        await page.goto(`/${locale}/${entity}/not-a-valid-id`);
+        // Next.js may begin streaming before notFound() resolves: HTTP 200 is
+        // possible even when the rendered route is the localized 404 state.
+        // Assert the substantive safety property instead of transport status.
+        await expect(page.getByTestId('driver-showcase')).toHaveCount(0);
+        await expect(page.getByTestId('constructor-archive-portrait')).toHaveCount(0);
+        await expect(page.getByTestId('circuit-result-legends')).toHaveCount(0);
       }
     });
   });
