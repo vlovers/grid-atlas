@@ -1,6 +1,6 @@
 # 2025 constructor technical & leadership research — unpublished
 
-This package collects **15 source-located research observations** for eight constructor name scopes. Its goal is season-specific, verifiable editorial material, not an automatically published catalogue. Sources are timestamped Formula 1 articles; no current team page has been retrospectively interpreted as a 2025 snapshot.
+This package collects **15 source-located research observations** for seven constructor name scopes. Its goal is season-specific, verifiable editorial material, not an automatically published catalogue. Sources are timestamped Formula 1 articles; no current team page has been retrospectively interpreted as a 2025 snapshot.
 
 ## Coverage
 
