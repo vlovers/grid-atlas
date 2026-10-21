@@ -71,6 +71,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "niki-lauda-1976-return",
+      "topic": "key_events",
+      "statement": "Niki Lauda returned at the 1976 Italian Grand Prix, six weeks after his German Grand Prix accident, and finished fourth.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "niki-lauda-f1-hall",
+          "locator": "Hall of Fame paragraph starting 'Six weeks later', documenting the Italian Grand Prix return and fourth place.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-1982-mclaren",
+      "topic": "career",
+      "statement": "Lauda returned to Formula 1 with McLaren in 1982 after leaving the championship in 1979.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "niki-lauda-f1-hall",
+          "locator": "Hall of Fame passages describing his 1979 retirement in Canada and 1982 McLaren signing.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -87,6 +113,20 @@
       "claim_ids": [
         "niki-lauda-1975-standings"
       ]
+    },
+    {
+      "section_id": "1976-return",
+      "title": "Career milestone",
+      "claim_ids": [
+        "niki-lauda-1976-return"
+      ]
+    },
+    {
+      "section_id": "1982-mclaren",
+      "title": "Career milestone",
+      "claim_ids": [
+        "niki-lauda-1982-mclaren"
+      ]
     }
   ],
   "gaps": [
@@ -96,7 +136,8 @@
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
     "New research claim requires independent source verification and pinned F1DB chronological reconciliation; official F1 pages are a single independence group.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "New claims need independent publisher corroboration and responsible human UK/EN editorial sign-off."
   ],
   "media": []
 }
