@@ -41,6 +41,13 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   ]);
   if (!circuit) notFound();
   const chronologicalHistory = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round || Number(a.race_id) - Number(b.race_id));
+  const winnerCounts = new Map<string, { id: string; name: string; races: Set<string> }>();
+  for (const race of history) for (const winner of race.winners) {
+    const prior = winnerCounts.get(winner.driver_id);
+    if (prior) prior.races.add(race.race_id);
+    else winnerCounts.set(winner.driver_id, { id: winner.driver_id, name: winner.driver_name, races: new Set([race.race_id]) });
+  }
+  const leadingWinners = [...winnerCounts.values()].sort((a,b) => b.races.size-a.races.size || a.name.localeCompare(b.name)).slice(0,6);
   const path = `/circuits/${id}`;
   const decades = new Map<number, Race[]>();
   for (const race of races) {
@@ -61,6 +68,17 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         {circuit.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останнє використання у базі' : 'Latest archived appearance'}</span><h3><Link href={`/seasons/${circuit.last_season}`}>{circuit.last_season}</Link></h3></article>}
       </div>
       <p>{locale === 'uk' ? 'Довжина, кількість поворотів, сектори, DRS і рекорди залежать від конфігурації та року. Поки ці дані не підтверджені, ми не показуємо припущень.' : 'Length, corners, sectors, DRS and lap records depend on the layout and event year. Unverified technical figures are deliberately omitted.'}</p>
+    </section>
+    <section aria-labelledby="circuit-result-legends" data-testid="circuit-result-legends">
+      <h2 id="circuit-result-legends">{locale === 'uk' ? 'Пілоти, що неодноразово перемагали тут' : 'Drivers with repeated recorded wins here'}</h2>
+      <p>{locale === 'uk'
+        ? 'Показано кількість різних гонок, де пілот має запис із першою позицією на цій трасі. Це не універсальний офіційний рекорд усіх конфігурацій.'
+        : 'Counts are distinct archived Grands Prix with a first-position result entry for that driver at this circuit identity. This is not an official all-layout record.'}</p>
+      {leadingWinners.length ? <ol className="records">{leadingWinners.map(driver =>
+        <li className="record" key={driver.id}><span className="position">{driver.races.size}</span>
+          <span><strong><Link href={`/drivers/${driver.id}`}>{driver.name} ↗</Link></strong>
+          <small>{locale === 'uk' ? 'Гонки з першою позицією в результатах' : 'Races with first-position entries'}</small></span></li>)}</ol>
+        : <p>{locale === 'uk' ? 'Переможних записів у цьому архіві немає.' : 'No first-position entries in this archive.'}</p>}
     </section>
     <section aria-labelledby="circuit-era-journey" data-testid="circuit-era-journey">
       <h2 id="circuit-era-journey">{locale === 'uk' ? 'Подорож крізь історію траси' : 'Explore the circuit across eras'}</h2>
