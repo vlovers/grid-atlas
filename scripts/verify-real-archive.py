@@ -5,6 +5,7 @@ Uses a disposable CI PostgreSQL database. It is NOT a verification of historical
 truth, official starts, biographical assertions or legal team succession.
 """
 import json
+from pathlib import Path
 import os
 import subprocess
 import sys
@@ -53,6 +54,22 @@ def main():
         WHERE l.circuit_id<>r.circuit_id))""")
     assert technical_counts == "160|1172|0|0|0", (
         f"Unexpected layout and event coverage: {technical_counts}")
+    # Every archive layout needs exactly one vendored and attributed contour.
+    artwork_manifest = json.loads((
+        Path(__file__).resolve().parents[1]
+        / "apps/web/src/components/circuit-layout-manifest.json"
+    ).read_text(encoding="utf-8"))
+    source_layout_ids = set(sql(
+        "SELECT external_layout_id FROM historical_circuit_layouts ORDER BY external_layout_id"
+    ).splitlines())
+    artwork_ids = {item["layout_id"] for item in artwork_manifest}
+    assert len(artwork_manifest) == len(artwork_ids) == 160
+    assert artwork_ids == source_layout_ids, (
+        "Historical layout SVG mismatch: "
+        f"missing={sorted(source_layout_ids - artwork_ids)}, "
+        f"extra={sorted(artwork_ids - source_layout_ids)}"
+    )
+
     sample_layout = sql("""SELECT CONCAT_WS('|', l.external_layout_id, f.course_length_km,
       f.turns, f.laps, r.season_year)
       FROM historical_race_circuit_facts f
