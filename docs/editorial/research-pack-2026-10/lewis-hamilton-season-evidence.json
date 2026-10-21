@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "driver_season_source_observation",
+  "subject": {
+    "slug": "lewis-hamilton",
+    "identity_status": "requires_f1db_join"
+  },
+  "status": "source_observed_needs_independent_human_review",
+  "publication_allowed": false,
+  "source_access_date": "2026-10-21",
+  "sources": [
+    {
+      "id": "official-season-standing",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2008/drivers",
+      "locator": "Drivers' Standings 2008, rows 1–2",
+      "source_role": "official_classification"
+    },
+    {
+      "id": "official-driver-race-record",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2008/drivers/LEWHAM01/lewis-hamilton",
+      "locator": "2008 driver season race table, Brazil row",
+      "source_role": "official_driver_result"
+    }
+  ],
+  "claims": [
+    {
+      "id": "lewis-hamilton-2008-points",
+      "text": {
+        "en": "The official 2008 driver standings list Lewis Hamilton in first position with 98 points, ahead of Felipe Massa on 97.",
+        "uk": "В офіційній класифікації пілотів 2008 року цей гонщик посів перше місце з 98 очками, випередивши Felipe Massa (97 очок)."
+      },
+      "observed_fields": {
+        "year": 2008,
+        "position": 1,
+        "points": 98,
+        "runner_up": "Felipe Massa",
+        "runner_up_points": 97
+      },
+      "source_ids": [
+        "official-season-standing"
+      ],
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "lewis-hamilton-2008-brazil",
+      "text": {
+        "en": "The Formula 1 2008 season race-by-race table lists Brazil on 2008-11-02 as position 5 for McLaren Mercedes.",
+        "uk": "У таблиці результатів Формули-1 за 2008 рік для Brazil (2008-11-02) вказано 5-ту позицію команди McLaren Mercedes."
+      },
+      "observed_fields": {
+        "race": "Brazil",
+        "date": "2008-11-02",
+        "position": "5",
+        "constructor_label": "McLaren Mercedes"
+      },
+      "source_ids": [
+        "official-driver-race-record"
+      ],
+      "review_status": "needs_human_review"
+    }
+  ],
+  "chapter_treatments": [
+    {
+      "id": "scene-1",
+      "headline": {
+        "en": "Opening weekends",
+        "uk": "Перші гоночні вікенди"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-2",
+      "headline": {
+        "en": "Recorded wins",
+        "uk": "Зафіксовані перемоги"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-3",
+      "headline": {
+        "en": "Brazil race classification",
+        "uk": "Класифікація Гран-прі Бразилії"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-4",
+      "headline": {
+        "en": "One-point standings margin",
+        "uk": "Одне очко різниці"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    }
+  ],
+  "constraints": [
+    "Result-row observations are not automatically official starts or championships.",
+    "The official classification total is not interchangeable with uncorrected imported raw points.",
+    "A single publisher does not constitute independent corroboration.",
+    "Images and historical interpretations require separate rights and factual review.",
+    "Canonical F1DB driver identity and precise race record must be reconciled in a disposable pinned import."
+  ],
+  "approval": {
+    "human_editor": null,
+    "reviewed_at": null,
+    "claim_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_review": false,
+    "publication_allowed": false
+  }
+}

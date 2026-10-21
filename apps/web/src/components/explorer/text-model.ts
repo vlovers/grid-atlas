@@ -2,6 +2,13 @@
 export function textViewParams(path: string) {
   const url = new URL(path, "http://grid-atlas.local");
   if (url.origin !== "http://grid-atlas.local") return null;
+  const atlas = url.pathname.match(/^\/(uk|en)\/atlas$/);
+  if (atlas) {
+    const query = new URLSearchParams(url.search);
+    if (!query.has('id') || !query.has('year')) return null;
+    query.set('experience', 'network');
+    return { locale: atlas[1] as 'uk' | 'en', query };
+  }
   const match = url.pathname.match(
     /^\/(uk|en)\/(explorer\/(?:connections\/)?(drivers|constructors)\/([1-9][0-9]*)|time-machine|explorer\/evidence\/([1-9][0-9]*)\/([1-9][0-9]*))$/,
   );

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>1988 — Senna / Prost | PRIVATE Grid Atlas editorial preview</title>
+<style>
+:root{color-scheme:dark;font:16px/1.5 system-ui,-apple-system,sans-serif;background:#080c13;color:#edf2f7}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse 80% 55% at 25% 0%,#1a2a39,transparent),#080c13}main{width:min(1160px,calc(100% - 34px));margin:0 auto;padding:26px 0 72px}
+header,.controls,.figures,.detail{display:flex;gap:18px;justify-content:space-between;align-items:center;flex-wrap:wrap}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:#ff5c5c;text-transform:uppercase}
+h1{font-size:clamp(46px,9vw,116px);letter-spacing:-.085em;line-height:.96;margin:25px 0}h1 span{color:#ff5151}
+.lede{max-width:720px;color:#bdc7d2;font-size:17px;margin:24px 0 42px}
+button{font:inherit;cursor:pointer;border:1px solid #475164;border-radius:8px;background:#172230;color:#edf2f7;padding:11px 15px}
+button[aria-pressed=true]{border-color:#ff5656;background:#57212b}button:focus-visible,a:focus-visible{outline:3px solid #fcd56e;outline-offset:3px}
+button:hover{border-color:#ff7373}.notice{border:1px solid #96404d;background:#351b24;border-radius:8px;padding:12px;color:#ffd5da;font-size:13px}
+.panel{background:#111923;border:1px solid #2d3747;border-radius:20px;padding:clamp(18px,4vw,36px);margin:24px 0}
+.figures{margin:25px 0}.figure{flex:1;min-width:180px}.figure strong{font-size:clamp(42px,6vw,72px);letter-spacing:-.08em;line-height:1}.figure span{display:block;color:#a9b7c8;font-size:13px}
+.red{color:#ff6464}.blue{color:#83cfff}.controls{align-items:end}.group{display:flex;gap:8px;flex-wrap:wrap}label{color:#b0bece;font-size:13px;display:block;margin-bottom:8px}
+svg{display:block;width:100%;height:auto;overflow:visible}#chart{width:100%;margin-top:28px}.gridline{stroke:#334257;stroke-dasharray:4 6}.line-senna,.line-prost{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.line-senna{stroke:#ff6464}.line-prost{stroke:#83cfff}.gridlabel{font:12px system-ui;fill:#9baabe}
+.rounds{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:7px;margin:26px 0}.rounds button{padding:10px 3px;font-size:12px}.rounds button small{display:block;opacity:.65}
+.detail{align-items:stretch}.stat{flex:1;min-width:140px;padding:14px;border-radius:12px;background:#172334}.stat b{font-size:25px}.stat small{display:block;color:#9eb0c6}
+a{color:#bddcff}p{max-width:74ch}.footer{color:#9caec0;font-size:13px;margin-top:25px}
+@media(max-width:650px){.rounds{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:no-preference){button{transition:background .15s,border-color .15s}}
+</style></head>
+<body><main>
+<header><strong class="eyebrow">GRID ATLAS / EDITORIAL LAB</strong><div class="group" aria-label="Language"><button id="en" aria-pressed="true">EN</button><button id="uk" aria-pressed="false">УКР</button></div></header>
+<h1>1988<span>.</span><br>Senna <span>/</span> Prost</h1>
+<div class="notice" role="note" id="warning">PRIVATE RESEARCH PREVIEW — historical interpretation and translations not approved for publication</div>
+<p class="lede" id="lede">Sixteen races. Two teammates. Two ways of measuring points. Explore the difference between all race points and the championship's best-eleven calculation.</p>
+<section class="panel" aria-labelledby="chart-heading"><div class="controls"><div><span class="eyebrow">1988 / POINTS ENGINE</span><h2 id="chart-heading">The title fight</h2></div><div><label id="mode-label">Points view</label><div class="group"><button id="counted" aria-pressed="true">Best 11</button><button id="raw" aria-pressed="false">All race points</button></div></div></div>
+<div class="figures"><div class="figure"><span>AYRTON SENNA</span><strong class="red" id="total-senna">90</strong><span id="senna-label">Counted championship points</span></div><div class="figure"><span>ALAIN PROST</span><strong class="blue" id="total-prost">87</strong><span id="prost-label">Counted championship points</span></div></div>
+<svg id="chart" viewBox="0 0 760 290" role="img" aria-labelledby="svg-title svg-desc"><title id="svg-title">Points progression chart</title><desc id="svg-desc">Compare the selected scoring series for both drivers across sixteen Grands Prix. The individual round buttons show exact values.</desc><g id="chart-lines"></g></svg>
+<p id="method" class="footer">Best eleven = sum of the eleven largest result-point values recorded by this round. This is a reconstruction, not an independently verified period leaderboard.</p>
+<div class="rounds" id="rounds" aria-label="Select race"></div>
+<div class="detail" aria-live="polite"><div class="stat"><small id="race-label">SELECTED GRAND PRIX</small><b id="selected-race">Australia</b><small id="round-date">Round 16</small></div><div class="stat"><small>SENNA</small><b id="senna-finish">P2</b><small id="senna-points">+6 race points</small></div><div class="stat"><small>PROST</small><b id="prost-finish">P1</b><small id="prost-points">+9 race points</small></div></div></section>
+<section class="panel"><h2 id="sources-heading">Evidence & limitations</h2><p id="context">Displayed points come from official race-result tables. The best-eleven series is back-calculated; championship rules require independent period-regulation review before publication.</p><div class="group"><a target="_blank" rel="noopener noreferrer" href="https://www.formula1.com/en/results/1988/drivers/AYRSEN01/ayrton-senna">Senna source ↗</a><a target="_blank" rel="noopener noreferrer" href="https://www.formula1.com/en/results/1988/drivers/ALAPRO01/alain-prost">Prost source ↗</a><a target="_blank" rel="noopener noreferrer" href="https://www.formula1.com/en/results/1988/drivers">Final standings ↗</a></div></section>
+<p class="footer">Standalone editorial prototype. No photos, copyrighted marks, approved biographies, external dependencies, publishing route, or production data mutations.</p>
+</main><script>
+const data=/*INJECT_DATA*/;
+let locale='en',mode='counted',round=16;
+const dictionary={
+en:{warning:'PRIVATE RESEARCH PREVIEW — historical interpretation and translations not approved for publication',lede:"Sixteen races. Two teammates. Two ways of measuring points. Explore the difference between all race points and the championship's best-eleven calculation.",heading:'The title fight',view:'Points view',counted:'Best 11',raw:'All race points',labelCounted:'Counted championship points',labelRaw:'Accumulated race points',selected:'SELECTED GRAND PRIX',method:'Best eleven = sum of the eleven largest result-point values recorded by this round. This is a reconstruction, not an independently verified period leaderboard.',sources:'Evidence & limitations',context:"Displayed points come from official race-result tables. The best-eleven series is back-calculated; championship rules require independent period-regulation review before publication.",round:'Round',points:'race points'},
+uk:{warning:'ПРИВАТНА ДОСЛІДНИЦЬКА ВЕРСІЯ — історичні пояснення та переклади ще не схвалено до публікації',lede:'Шістнадцять перегонів. Два напарники. Два способи підрахунку очок. Порівняйте всі набрані очки та підсумок за одинадцятьма найкращими результатами.',heading:'Боротьба за титул',view:'Показник очок',counted:'11 найкращих',raw:'Усі очки',labelCounted:'Залікові очки чемпіонату',labelRaw:'Усі набрані очки',selected:'ОБРАНИЙ ГРАН-ПРІ',method:'Одинадцять найкращих = сума одинадцяти найбільших результатів на цей момент. Це реконструкція, а не незалежно підтверджена тогочасна таблиця чемпіонату.',sources:'Джерела й обмеження',context:'Очки за етапи взято з офіційних таблиць результатів. Графік одинадцяти найкращих результатів — зворотний розрахунок; історичний регламент потребує незалежної перевірки перед публікацією.',round:'Етап',points:'очок за гонку'}};
+function render(){
+const t=dictionary[locale],list=data.series,sel=list[round-1];
+for(const k of ['en','uk','counted','raw'])document.getElementById(k).setAttribute('aria-pressed',String(k===locale||k===mode));
+document.documentElement.lang=locale;for(const [id,value] of Object.entries({warning:t.warning,lede:t.lede,'chart-heading':t.heading,'mode-label':t.view,counted:t.counted,raw:t.raw,'senna-label':mode==='counted'?t.labelCounted:t.labelRaw,'prost-label':mode==='counted'?t.labelCounted:t.labelRaw,method:t.method,'sources-heading':t.sources,context:t.context,'race-label':t.selected,'selected-race':sel.race,'round-date':t.round+' '+round,'senna-finish':String(sel.driver.senna.position),'prost-finish':String(sel.driver.prost.position),'senna-points':'+'+sel.driver.senna.racePoints+' '+t.points,'prost-points':'+'+sel.driver.prost.racePoints+' '+t.points,'total-senna':String(sel.driver.senna[mode]),'total-prost':String(sel.driver.prost[mode])}))document.getElementById(id).textContent=value;
+const group=document.getElementById('rounds');group.replaceChildren();
+list.forEach(x=>{const btn=document.createElement('button');btn.type='button';btn.setAttribute('aria-pressed',String(round===x.round));btn.textContent=String(x.round).padStart(2,'0');const small=document.createElement('small');small.textContent=x.race;btn.appendChild(small);btn.onclick=()=>{round=x.round;render()};group.appendChild(btn)});
+const lines=document.getElementById('chart-lines');lines.replaceChildren();
+const make=(tag,attrs,text)=>{const el=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);if(text!==undefined)el.textContent=text;lines.appendChild(el);return el};
+const yMax=110,x=(n)=>42+(n-1)*44,y=(v)=>248-v/yMax*215;
+for(const v of [0,25,50,75,100]){make('line',{x1:42,y1:y(v),x2:712,y2:y(v),class:'gridline'});make('text',{x:4,y:y(v)+4,class:'gridlabel'},String(v))}
+for(const k of ['senna','prost']){const points=list.map(d=>x(d.round)+','+y(d.driver[k][mode])).join(' ');make('polyline',{points,class:'line-'+k});make('circle',{cx:x(round),cy:y(sel.driver[k][mode]),r:6,fill:k==='senna'?'#ff6464':'#83cfff'})}
+}
+document.getElementById('en').onclick=()=>{locale='en';render()};document.getElementById('uk').onclick=()=>{locale='uk';render()};document.getElementById('counted').onclick=()=>{mode='counted';render()};document.getElementById('raw').onclick=()=>{mode='raw';render()};render();
+</script></body></html>

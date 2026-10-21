@@ -29,6 +29,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <header className={styles.header}>
       <Link href="/" className={styles.brand}><strong>GRID<span>ATLAS</span></strong><span>{locale === 'uk' ? 'ІСТОРІЯ / ЗВ’ЯЗКИ' : 'HISTORY / CONNECTED'}</span></Link>
       <AtlasNavigation locale={locale} label={t('mainNavigation')} items={[
+        { href: '/atlas', label: locale === 'uk' ? 'Атлас історії' : 'History Atlas' },
         { href: '/seasons', label: t('seasons') }, { href: '/drivers', label: t('driversTitle') },
         { href: '/constructors', label: t('constructorsTitle') }, { href: '/circuits', label: t('circuitsTitle') },
         { href: '/time-machine', label: t('timeMachineNav') }, { href: '/lineage', label: t('lineageTitle') },

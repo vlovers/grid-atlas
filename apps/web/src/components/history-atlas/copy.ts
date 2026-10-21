@@ -1,0 +1,176 @@
+const en = {
+  title: "History Atlas",
+  kicker: "FOLLOW THE RECORDS / FIND THE CONNECTIONS",
+  intro:
+    "One season. A different perspective. Trace the recorded connections between drivers, constructors and races.",
+  search: "Find your starting point",
+  query: "Name or source ID",
+  kind: "Identity type",
+  driver: "Driver",
+  constructor: "Constructor",
+  find: "Find identities",
+  results: "Matching identities",
+  next: "Next identities",
+  previous: "Previous identities",
+  noResults: "No matching identities. Try a different name or source ID.",
+  choose: "Choose an identity to open its map.",
+  season: "Season",
+  timeline: "Recorded-season timeline",
+  timelineNote:
+    "Only seasons with imported results for this identity are marked. Gaps remain gaps.",
+  open: "Open season",
+  trail: "Your exploration trail",
+  restart: "New exploration",
+  back: "Previous focus",
+  trailLimit: "Your six most recent focus changes are retained in this URL.",
+  map: "Season relationship map",
+  focus: "At the center",
+  selected: "Selected connection",
+  list: "Connections / accessible list",
+  listNote:
+    "Select any loaded identity to inspect the pair. Open its map to change the focus.",
+  bounded:
+    "The map displays up to 8 associations at a time; the list contains the loaded API slice (up to 25).",
+  truncated:
+    "More associations exist beyond this slice. Use the complete paginated list.",
+  all: "All season connections",
+  empty: "No observed connections in this season.",
+  emptyNote:
+    "Missing imported records do not prove an association never existed.",
+  noYears: "No seasons with recorded results for this identity.",
+  invalid:
+    "Some URL selections are invalid. Choose a valid identity and a year from 1950 to 2200.",
+  invalidSelected:
+    "That connection is outside the loaded slice. Showing its first association; the full list may contain other records.",
+  invalidTrail:
+    "The exploration trail was invalid and has been cleared. Your current focus is unchanged.",
+  inspect: "Inspect",
+  pivot: "Make this the focus",
+  profile: "Open profile",
+  evidence: "Open all race evidence",
+  classic: "Open seasonal Explorer",
+  machine: "Compare seasons in Time Machine",
+  lineage: "Explore independently reviewed lineage",
+  lineageNote:
+    "Lineage is a separate, reviewed claim set. Result associations on this map do not establish legal succession or entrant identity.",
+  races: "Races with results",
+  entries: "Result entries",
+  wins: "Races with winning results",
+  limits: "Source & historical boundaries",
+  limitations:
+    "Imported main-race result associations are not proof of official starts, contracts, transfers or constructor succession. Drivers, constructors and entrants are distinct identities.",
+  source: "Identity source",
+  sourceNote:
+    "Identity attribution is not per-result provenance. Open the race records to inspect the underlying results.",
+  credit:
+    "Archive: F1DB · CC BY 4.0. Grid Atlas derives this relationship view from imported results.",
+  share: "Permalink to this selection",
+  copied: "Link copied",
+  copy: "Copy link",
+  copyFailed: "Copy unavailable. Use the permalink.",
+  help: "Drag the background to pan; pinch or use the zoom controls. Tab reaches identities; Enter selects. Focused nodes are brought into view. The list provides the same evidence without navigating the canvas.",
+  fit: "Fit map",
+  reset: "Reset map",
+  zoomIn: "Zoom in",
+  zoomOut: "Zoom out",
+  previousMap: "Previous map window",
+  nextMap: "Next map window",
+  window: "Map window",
+  loading: "Loading the historical map…",
+  unavailable: "The Atlas is temporarily unavailable.",
+  failure:
+    "The archive could not be reached or its response could not be verified. Your URL keeps your selections. Try again.",
+  retry: "Try again",
+  text: "Open the text view without JavaScript",
+  focusNode: "Focus identity",
+  connectionNode: "Recorded connection",
+};
+const uk: Record<keyof typeof en, string> = {
+  title: "Атлас історії",
+  kicker: "ПРОСТЕЖТЕ ЗАПИСИ / ВІДКРИЙТЕ ЗВ’ЯЗКИ",
+  intro:
+    "Один сезон. Інший погляд. Досліджуйте зафіксовані зв’язки між пілотами, конструкторами й гонками.",
+  search: "Знайдіть початок подорожі",
+  query: "Ім’я, назва або ID джерела",
+  kind: "Тип ідентичності",
+  driver: "Пілот",
+  constructor: "Конструктор",
+  find: "Знайти ідентичності",
+  results: "Знайдені ідентичності",
+  next: "Наступні ідентичності",
+  previous: "Попередні ідентичності",
+  noResults:
+    "Ідентичностей не знайдено. Спробуйте інше ім’я, назву або ID джерела.",
+  choose: "Оберіть ідентичність, щоб відкрити її мапу.",
+  season: "Сезон",
+  timeline: "Шкала зафіксованих сезонів",
+  timelineNote:
+    "Позначено лише сезони з імпортованими результатами для цієї ідентичності. Прогалини залишаються прогалинами.",
+  open: "Відкрити сезон",
+  trail: "Ваш шлях дослідження",
+  restart: "Нове дослідження",
+  back: "Попередній фокус",
+  trailLimit: "URL зберігає шість останніх змін фокуса.",
+  map: "Мапа зв’язків сезону",
+  focus: "У центрі",
+  selected: "Вибраний зв’язок",
+  list: "Зв’язки / доступний список",
+  listNote:
+    "Оберіть завантажену ідентичність, щоб дослідити пару. Відкрийте її мапу, щоб змінити фокус.",
+  bounded:
+    "Мапа показує до 8 зв’язків одночасно; список містить завантажений зріз API (до 25).",
+  truncated:
+    "Поза цим зрізом є інші зв’язки. Скористайтеся повним списком зі сторінками.",
+  all: "Усі зв’язки сезону",
+  empty: "У цьому сезоні немає спостережуваних зв’язків.",
+  emptyNote:
+    "Відсутність імпортованих записів не доводить, що зв’язку ніколи не було.",
+  noYears: "Для цієї ідентичності немає сезонів із зафіксованими результатами.",
+  invalid:
+    "Деякі параметри URL некоректні. Оберіть ідентичність і рік від 1950 до 2200.",
+  invalidSelected:
+    "Цей зв’язок поза завантаженим зрізом. Показано перший; інші записи можуть бути в повному списку.",
+  invalidTrail:
+    "Некоректний шлях дослідження очищено. Поточний фокус збережено.",
+  inspect: "Дослідити",
+  pivot: "Зробити центром мапи",
+  profile: "Відкрити профіль",
+  evidence: "Відкрити всі записи гонок",
+  classic: "Відкрити дослідник сезону",
+  machine: "Порівняти сезони в Машині часу",
+  lineage: "Дослідити незалежно перевірену спадкоємність",
+  lineageNote:
+    "Спадкоємність — окремий набір перевірених тверджень. Зв’язки результатів на цій мапі не доводять правонаступництва чи ідентичності заявника.",
+  races: "Гонки з результатами",
+  entries: "Записи результатів",
+  wins: "Гонки з переможними результатами",
+  limits: "Джерело й історичні обмеження",
+  limitations:
+    "Імпортовані зв’язки результатів основних гонок не доводять офіційних стартів, контрактів, переходів чи правонаступництва конструкторів. Пілоти, конструктори й заявники — різні ідентичності.",
+  source: "Джерело ідентичності",
+  sourceNote:
+    "Атрибуція ідентичності не є походженням кожного результату. Перегляньте записи гонок, щоб дослідити результати.",
+  credit:
+    "Архів: F1DB · CC BY 4.0. Grid Atlas формує цей вигляд зв’язків з імпортованих результатів.",
+  share: "Постійне посилання на цей вибір",
+  copied: "Посилання скопійовано",
+  copy: "Копіювати посилання",
+  copyFailed: "Копіювання недоступне. Скористайтеся постійним посиланням.",
+  help: "Перетягуйте тло для переміщення; використовуйте жест масштабування або кнопки. Tab переходить між ідентичностями, Enter обирає. Вузол у фокусі з’являється у видимій області. Список надає ті самі записи без навігації полотном.",
+  fit: "Вмістити мапу",
+  reset: "Скинути мапу",
+  zoomIn: "Збільшити",
+  zoomOut: "Зменшити",
+  previousMap: "Попереднє вікно мапи",
+  nextMap: "Наступне вікно мапи",
+  window: "Вікно мапи",
+  loading: "Завантаження історичної мапи…",
+  unavailable: "Атлас тимчасово недоступний.",
+  failure:
+    "Не вдалося зв’язатися з архівом або перевірити відповідь. Ваш вибір збережено в URL. Спробуйте знову.",
+  retry: "Спробувати знову",
+  text: "Відкрити текстовий вигляд без JavaScript",
+  focusNode: "Ідентичність у фокусі",
+  connectionNode: "Зафіксований зв’язок",
+};
+export const historyAtlasCopy = { en, uk };

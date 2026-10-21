@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "kind": "season_1988_remaining_race_scene_research",
+  "publication_allowed": false,
+  "visibility": "internal_only",
+  "source_status": "official_winner_rows_context_requires_human_review",
+  "source": {
+    "publisher": "Formula 1",
+    "url": "https://www.formula1.com/en/results/1988/races",
+    "locator": "Season 1988, race-winner rows 1–16"
+  },
+  "excluded_scene_rounds": [
+    3,
+    12,
+    15
+  ],
+  "scenes": [
+    {
+      "round": 1,
+      "grand_prix": "Brazil",
+      "draft_microcopy": {
+        "en": "Prost opened the season as the recorded race winner.",
+        "uk": "Прост відкрив сезон перемогою в гонці."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 2,
+      "grand_prix": "San Marino",
+      "draft_microcopy": {
+        "en": "Senna took the next recorded victory.",
+        "uk": "Наступну зафіксовану перемогу здобув Сенна."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 4,
+      "grand_prix": "Mexico",
+      "draft_microcopy": {
+        "en": "Prost's second consecutive winner entry followed Monaco.",
+        "uk": "Після Монако Прост вдруге поспіль став переможцем етапу."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 5,
+      "grand_prix": "Canada",
+      "draft_microcopy": {
+        "en": "Senna is the named winner as the calendar reached Canada.",
+        "uk": "У Канаді переможцем зазначений Сенна."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 6,
+      "grand_prix": "Detroit",
+      "draft_microcopy": {
+        "en": "Senna's Detroit victory followed the Canadian result.",
+        "uk": "Перемога Сенни в Детройті відбулася після канадського етапу."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 7,
+      "grand_prix": "France",
+      "draft_microcopy": {
+        "en": "Prost returned to the winners column at his home Grand Prix.",
+        "uk": "Прост знову очолив список переможців на Гран-прі Франції."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 8,
+      "grand_prix": "Great Britain",
+      "draft_microcopy": {
+        "en": "The British race began a four-round sequence of Senna wins.",
+        "uk": "Із Гран-прі Великої Британії почалася серія з чотирьох перемог Сенни."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 9,
+      "grand_prix": "Germany",
+      "draft_microcopy": {
+        "en": "Senna won the German round, the second in that sequence.",
+        "uk": "Сенна виграв німецький етап — другий у цій серії."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 10,
+      "grand_prix": "Hungary",
+      "draft_microcopy": {
+        "en": "Hungary extended Senna's consecutive winner entries to three.",
+        "uk": "В Угорщині серія перемог Сенни сягнула трьох."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 11,
+      "grand_prix": "Belgium",
+      "draft_microcopy": {
+        "en": "Belgium completed a four-race Senna winning sequence.",
+        "uk": "У Бельгії Сенна завершив серію з чотирьох перемог поспіль."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 13,
+      "grand_prix": "Portugal",
+      "draft_microcopy": {
+        "en": "Prost appears as winner in Portugal.",
+        "uk": "У Португалії переможцем зазначений Прост."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 14,
+      "grand_prix": "Spain",
+      "draft_microcopy": {
+        "en": "Prost followed Portugal with victory in Spain.",
+        "uk": "Після Португалії Прост переміг і в Іспанії."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    },
+    {
+      "round": 16,
+      "grand_prix": "Australia",
+      "draft_microcopy": {
+        "en": "Prost closed the sixteen-round winner chronology in Australia.",
+        "uk": "Прост завершив хронологію переможців сезону в Австралії."
+      },
+      "statement_scope": "winner_sequence_only",
+      "review_status": "needs_independent_human_review",
+      "narrative_approved": false,
+      "media_approved": false,
+      "context_questions": [
+        "Which independent contemporary source explains the race dynamics?",
+        "Which exact imported race IDs and full classifications support a richer visual comparison?"
+      ],
+      "no_causal_claims": true
+    }
+  ],
+  "review": {
+    "human_editor": null,
+    "source_recheck": false,
+    "uk": false,
+    "en": false,
+    "rights": false,
+    "publication": false
+  }
+}

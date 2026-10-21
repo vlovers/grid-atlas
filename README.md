@@ -69,10 +69,21 @@ Browser tests use production API / web processes on localhost ports 3339–3341,
 
 ## Current Explorer and Time Machine state
 
+The bilingual **History Atlas** at `/uk/atlas` and `/en/atlas` combines bounded
+identity search, a recorded-season timeline, a React Flow relationship map,
+exact race-evidence inspection and a shareable six-step exploration trail.
+Select a connection, make it the focus, then return through the trail without
+losing the earlier season or selected pair. The map displays at most eight
+neighbors on desktop and two on mobile; the accessible list and existing
+pagination expose the rest. Reviewed lineage remains a separate claim set.
+See [architecture, library decision, preview and limitations](docs/design/history-atlas/README.md)
+and [verification](docs/design/history-atlas/verification.md).
+
 The merged History Explorer supports UK/EN driver and constructor focus, year
 selection, exact recorded-race evidence, reciprocal links and URL-permalinks.
 An accessible paginated list exposes all observed associations beyond the
-initial 25-edge graph API window; the SVG intentionally renders at most 10.
+initial 25-edge graph API window; the legacy SVG displays windows of at most
+eight neighbors on desktop and four on mobile.
 The read-only Time Machine comparison API **and bilingual UI are present in `main`**
 ([API contract](docs/api/time-machine-comparison.md)). The UI supports UK/EN
 entity search, two-season comparison, shareable links, observed-result counts,
