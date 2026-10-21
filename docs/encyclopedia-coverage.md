@@ -107,9 +107,18 @@ Local checks passed: foundation validation, lint, typecheck, production build,
 85 Node tests, 271 Python tests, 41 API integration tests (one existing opt-in
 editorial test skipped), 342 synthetic browser tests, fresh/repeated migrations
 and checksum-tampering rejection, repeated real imports and the existing
-real-archive SQL/API smoke. All 92 real-archive browser tests passed. The final circuit pagination also has
-a dedicated 16-test UK/EN desktop/mobile verification; GitHub CI results are
-reported on the implementation PR.
+real-archive SQL/API smoke. All 92 real-archive browser tests passed. The final circuit pagination also
+passed a dedicated 16-test UK/EN desktop/mobile verification.
+
+Representative screenshots from those production browser runs:
+
+| Profile | EN desktop | UK desktop | EN mobile | UK mobile |
+| --- | --- | --- | --- | --- |
+| Drivers | [EN desktop](verification/encyclopedia/screenshots/drivers-en-desktop.png) | [UK desktop](verification/encyclopedia/screenshots/drivers-uk-desktop.png) | [EN mobile](verification/encyclopedia/screenshots/drivers-en-mobile.png) | [UK mobile](verification/encyclopedia/screenshots/drivers-uk-mobile.png) |
+| Constructors | [EN desktop](verification/encyclopedia/screenshots/constructors-en-desktop.png) | [UK desktop](verification/encyclopedia/screenshots/constructors-uk-desktop.png) | [EN mobile](verification/encyclopedia/screenshots/constructors-en-mobile.png) | [UK mobile](verification/encyclopedia/screenshots/constructors-uk-mobile.png) |
+| Circuits | [EN desktop](verification/encyclopedia/screenshots/circuits-en-desktop.png) | [UK desktop](verification/encyclopedia/screenshots/circuits-uk-desktop.png) | [EN mobile](verification/encyclopedia/screenshots/circuits-en-mobile.png) | [UK mobile](verification/encyclopedia/screenshots/circuits-uk-mobile.png) |
+
+GitHub CI results are reported on the implementation PR.
 
 ## Remaining boundaries
 
