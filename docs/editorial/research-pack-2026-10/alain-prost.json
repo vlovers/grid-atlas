@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "editorial_research_brief",
+  "subject": {
+    "type": "driver",
+    "canonical_lookup_slug": "alain-prost",
+    "display_name": "Alain Prost",
+    "identity_status": "requires_f1db_join"
+  },
+  "visibility": "internal_only",
+  "editorial_status": "research_required",
+  "locale_policy": [
+    "uk",
+    "en"
+  ],
+  "hero_angle": {
+    "en": "The precision behind a long career",
+    "uk": "Точність протягом довгої кар'єри"
+  },
+  "chapters": [
+    {
+      "chapter_id": "alain-prost-chapter-1",
+      "heading": {
+        "en": "Early career",
+        "uk": "Початок кар'єри"
+      },
+      "research_prompts": [
+        "first result rows",
+        "constructor chronology"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "alain-prost-chapter-2",
+      "heading": {
+        "en": "The championship years",
+        "uk": "Чемпіонські роки"
+      },
+      "research_prompts": [
+        "season race records",
+        "independent FIA standings"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "alain-prost-chapter-3",
+      "heading": {
+        "en": "Shared McLaren history",
+        "uk": "Спільна історія McLaren"
+      },
+      "research_prompts": [
+        "same-season driver associations",
+        "specific race evidence for comparisons"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "alain-prost-chapter-4",
+      "heading": {
+        "en": "Return and perspective",
+        "uk": "Повернення та спадщина"
+      },
+      "research_prompts": [
+        "later seasons",
+        "retrospective interviews reviewed separately"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    }
+  ],
+  "historical_assertions": [],
+  "source_candidates": [
+    {
+      "publisher": "F1DB",
+      "url": "https://github.com/f1db/f1db",
+      "scope": "pinned result record and identity only",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "FIA",
+      "url": "https://www.fia.com/",
+      "scope": "official documents, championship standings and regulations when identified",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "scope": "dated historical coverage, independently assessed",
+      "review_status": "not_checked_in_this_batch"
+    }
+  ],
+  "media": {
+    "status": "no_asset_approved_here",
+    "candidate_lookup": "docs/media/candidates.json",
+    "publication_allowed": false
+  },
+  "limitations": [
+    "Points totals are not equivalent to championship classifications.",
+    "Avoid one-sided psychological characterization.",
+    "Do not derive driver employment from entry results."
+  ],
+  "approval": {
+    "historical_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_rights_review": false,
+    "publication_allowed": false
+  }
+}

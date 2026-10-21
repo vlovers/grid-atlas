@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "official_result_source_spotcheck",
+  "checked_on": "2026-10-21",
+  "method": "manual_web_source_read",
+  "human_editor_approved": false,
+  "publication_allowed": false,
+  "scope": "Seven claims across Monaco, Italy, Japan 1988; official F1 records only",
+  "observations": [
+    {
+      "id": "monaco-prost-victory",
+      "url": "https://www.formula1.com/en/results/1988/races/529/monaco/race-result",
+      "locator": "Prost row 1, Laps 78",
+      "source_fields": {
+        "position": "1",
+        "driver": "Alain Prost",
+        "laps": 78
+      },
+      "assessment": "supports_narrow_claim"
+    },
+    {
+      "id": "monaco-senna-dnf",
+      "url": "https://www.formula1.com/en/results/1988/races/529/monaco/race-result",
+      "locator": "Senna NC row, Laps 66, Time/Retired DNF",
+      "source_fields": {
+        "position": "NC",
+        "driver": "Ayrton Senna",
+        "laps": 66,
+        "status": "DNF"
+      },
+      "assessment": "supports_narrow_claim"
+    },
+    {
+      "id": "italy-berger-win",
+      "url": "https://www.formula1.com/en/results/1988/races",
+      "locator": "Italy row, Winner Gerhard Berger, Team Ferrari",
+      "source_fields": {
+        "winner": "Gerhard Berger",
+        "team": "Ferrari"
+      },
+      "assessment": "supports_narrow_claim"
+    },
+    {
+      "id": "italy-senna-pole",
+      "url": "https://www.formula1.com/en/results/1988/races/538/italy/qualifying",
+      "locator": "Overall qualifying, Senna P1, 1:25.974",
+      "source_fields": {
+        "position": 1,
+        "driver": "Ayrton Senna",
+        "time": "1:25.974"
+      },
+      "assessment": "supports_narrow_claim",
+      "caution": "Overall qualifying is not itself a separately verified starting-grid record."
+    },
+    {
+      "id": "japan-senna-first",
+      "url": "https://www.formula1.com/en/results/1988/races/541/japan/race-result",
+      "locator": "Race result Senna row 1, 51 laps",
+      "source_fields": {
+        "position": 1,
+        "driver": "Ayrton Senna",
+        "laps": 51
+      },
+      "assessment": "supports_narrow_claim"
+    },
+    {
+      "id": "japan-prost-second",
+      "url": "https://www.formula1.com/en/results/1988/races/541/japan/race-result",
+      "locator": "Race result Prost row 2, +13.363s",
+      "source_fields": {
+        "position": 2,
+        "driver": "Alain Prost",
+        "gap": "+13.363s"
+      },
+      "assessment": "supports_narrow_claim"
+    },
+    {
+      "id": "japan-grid-first-two",
+      "url": "https://www.formula1.com/en/results/1988/races/541/japan/starting-grid",
+      "locator": "Starting grid rows 1, 2",
+      "source_fields": {
+        "first": "Ayrton Senna",
+        "second": "Alain Prost"
+      },
+      "assessment": "supports_narrow_claim"
+    }
+  ],
+  "outstanding": [
+    "Full historical context and independent second-source corroboration",
+    "UK/EN editorial copy edits by an independent human editor",
+    "Incident causation, interviews, memories, rule-book scoring evidence",
+    "Per-media asset rights and publication authorization"
+  ],
+  "release_status": "blocked"
+}

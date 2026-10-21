@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "editorial_research_brief",
+  "subject": {
+    "type": "driver",
+    "canonical_lookup_slug": "michael-schumacher",
+    "display_name": "Michael Schumacher",
+    "identity_status": "requires_f1db_join"
+  },
+  "visibility": "internal_only",
+  "editorial_status": "research_required",
+  "locale_policy": [
+    "uk",
+    "en"
+  ],
+  "hero_angle": {
+    "en": "Tracing an era through seasons and teams",
+    "uk": "Епоха крізь сезони та команди"
+  },
+  "chapters": [
+    {
+      "chapter_id": "michael-schumacher-chapter-1",
+      "heading": {
+        "en": "Arrival",
+        "uk": "Початок у Формулі-1"
+      },
+      "research_prompts": [
+        "first recorded race",
+        "first constructor"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "michael-schumacher-chapter-2",
+      "heading": {
+        "en": "First peak",
+        "uk": "Перший злет"
+      },
+      "research_prompts": [
+        "early season milestones",
+        "results by constructor"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "michael-schumacher-chapter-3",
+      "heading": {
+        "en": "Ferrari period",
+        "uk": "Період Ferrari"
+      },
+      "research_prompts": [
+        "year-by-year constructor associations",
+        "race evidence"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "michael-schumacher-chapter-4",
+      "heading": {
+        "en": "Return and wider legacy",
+        "uk": "Повернення та спадщина"
+      },
+      "research_prompts": [
+        "later seasons",
+        "independent safety/regulation context"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    }
+  ],
+  "historical_assertions": [],
+  "source_candidates": [
+    {
+      "publisher": "F1DB",
+      "url": "https://github.com/f1db/f1db",
+      "scope": "pinned result record and identity only",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "FIA",
+      "url": "https://www.fia.com/",
+      "scope": "official documents, championship standings and regulations when identified",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "scope": "dated historical coverage, independently assessed",
+      "review_status": "not_checked_in_this_batch"
+    }
+  ],
+  "media": {
+    "status": "no_asset_approved_here",
+    "candidate_lookup": "docs/media/candidates.json",
+    "publication_allowed": false
+  },
+  "limitations": [
+    "Do not state title counts without independently sourced championship record.",
+    "Avoid unsourced personal or medical details.",
+    "Constructors are not legal entities or contracts."
+  ],
+  "approval": {
+    "historical_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_rights_review": false,
+    "publication_allowed": false
+  }
+}

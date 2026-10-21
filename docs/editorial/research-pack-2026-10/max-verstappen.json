@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "editorial_research_brief",
+  "subject": {
+    "type": "driver",
+    "canonical_lookup_slug": "max-verstappen",
+    "display_name": "Max Verstappen",
+    "identity_status": "requires_f1db_join"
+  },
+  "visibility": "internal_only",
+  "editorial_status": "research_required",
+  "locale_policy": [
+    "uk",
+    "en"
+  ],
+  "hero_angle": {
+    "en": "A modern career anchored in race evidence",
+    "uk": "Сучасна кар'єра, підтверджена результатами перегонів"
+  },
+  "chapters": [
+    {
+      "chapter_id": "max-verstappen-chapter-1",
+      "heading": {
+        "en": "First seasons",
+        "uk": "Перші сезони"
+      },
+      "research_prompts": [
+        "first recorded race",
+        "constructor/year evidence"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "max-verstappen-chapter-2",
+      "heading": {
+        "en": "Development",
+        "uk": "Розвиток"
+      },
+      "research_prompts": [
+        "season-by-season race outcomes",
+        "recorded constructor relationships"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "max-verstappen-chapter-3",
+      "heading": {
+        "en": "Key race weekends",
+        "uk": "Ключові гоночні вікенди"
+      },
+      "research_prompts": [
+        "race milestones",
+        "source-backed regulations where relevant"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    },
+    {
+      "chapter_id": "max-verstappen-chapter-4",
+      "heading": {
+        "en": "The evolving record",
+        "uk": "Статистика, що змінюється"
+      },
+      "research_prompts": [
+        "archive release boundaries",
+        "official title classifications separately"
+      ],
+      "claim_status": "unverified",
+      "narrative_copy": null,
+      "source_locators": [],
+      "human_reviewer": null
+    }
+  ],
+  "historical_assertions": [],
+  "source_candidates": [
+    {
+      "publisher": "F1DB",
+      "url": "https://github.com/f1db/f1db",
+      "scope": "pinned result record and identity only",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "FIA",
+      "url": "https://www.fia.com/",
+      "scope": "official documents, championship standings and regulations when identified",
+      "review_status": "not_checked_in_this_batch"
+    },
+    {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "scope": "dated historical coverage, independently assessed",
+      "review_status": "not_checked_in_this_batch"
+    }
+  ],
+  "media": {
+    "status": "no_asset_approved_here",
+    "candidate_lookup": "docs/media/candidates.json",
+    "publication_allowed": false
+  },
+  "limitations": [
+    "Do not equate current-season imported data with completed seasons.",
+    "Championship titles require verified standings.",
+    "No invented future race outcomes or unreviewed commentary."
+  ],
+  "approval": {
+    "historical_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_rights_review": false,
+    "publication_allowed": false
+  }
+}
