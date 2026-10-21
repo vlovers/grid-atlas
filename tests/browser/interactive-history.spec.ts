@@ -74,6 +74,7 @@ for (const locale of ["uk", "en"] as const) {
       network.getByRole("button", { name: "driver-b", exact: true }),
     ).toHaveAttribute("aria-pressed", "true");
     await page.goForward();
+    await expect(page).toHaveURL(/selected=1/);
     await expect(
       network.getByRole("button", { name: "driver-a", exact: true }),
     ).toHaveAttribute("aria-pressed", "true");

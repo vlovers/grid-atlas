@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'scripts/smoke-deployment.mjs'
       - 'packages/database/**'
       - 'pnpm-workspace.yaml'
       - 'package.json'
@@ -12,6 +13,7 @@ on:
     branches: [main]
     paths:
       - 'apps/api/**'
+      - 'scripts/smoke-deployment.mjs'
       - 'packages/database/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
@@ -20,6 +22,7 @@ permissions:
 jobs:
   api:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     services:
       postgres:
         image: postgres:17-alpine
@@ -58,6 +61,8 @@ jobs:
         run: |
           psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 <<'SQL'
           INSERT INTO data_sources(slug,homepage_url,attribution) VALUES('fixture','https://example.org','Test only');
+          INSERT INTO source_releases(source_id,release_tag,artifact_name,sha256)
+          VALUES(1,'synthetic','ci-fixture.json',repeat('a',64));
           INSERT INTO external_identities(source_id,entity_kind,external_id)
           VALUES (1,'driver','driver-fixture'),(1,'constructor','constructor-fixture'),(1,'circuit','circuit-fixture'),(1,'race','race-fixture');
           INSERT INTO historical_drivers(external_identity_id,display_name) VALUES(1,'Fixture Driver');
@@ -80,10 +85,11 @@ jobs:
           trap 'kill "$server_pid" || true; cat /tmp/grid-atlas-api.log' EXIT
           ready=0
           for i in $(seq 1 30); do
-            if curl -fsS http://127.0.0.1:3001/api/health >/dev/null; then ready=1; break; fi
+            if curl -fsS http://127.0.0.1:3001/api/ready >/dev/null; then ready=1; break; fi
             sleep 1
           done
           test "$ready" -eq 1
+          node scripts/smoke-deployment.mjs --api-origin http://127.0.0.1:3001
           curl -fsS http://127.0.0.1:3001/api/seasons | python3 -c 'import json,sys; assert json.load(sys.stdin)["data"][0]["year"]==1950'
           curl -fsS http://127.0.0.1:3001/api/seasons/1950/races | python3 -c 'import json,sys; assert json.load(sys.stdin)["data"][0]["official_name"]=="Fixture Grand Prix"'
           curl -fsS http://127.0.0.1:3001/api/drivers | python3 -c 'import json,sys; assert json.load(sys.stdin)["data"][0]["name"]=="Fixture Driver"'

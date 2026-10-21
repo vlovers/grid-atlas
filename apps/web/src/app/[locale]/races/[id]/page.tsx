@@ -40,6 +40,26 @@ export default async function RacePage({ params }: Props) {
       </div>
       <p>{locale === 'uk' ? 'Таблиця показує не більше 100 записів, а не обов’язково повний склад учасників. Кількість записів не завжди дорівнює кількості унікальних пілотів або стартових автомобілів: історичні гонки включали спільні автомобілі. Дані практик, кваліфікації, погоди та шин не виводяться без окремих підтверджених джерел.' : 'The table shows up to 100 result entries, not necessarily the full field. Entries do not necessarily equal unique drivers or starting cars: historical races included shared drives. Practice, qualifying, weather and tyre data require separate verified sources.'}</p>
     </section>
+    <section aria-labelledby="race-evidence-journey" data-testid="race-evidence-journey">
+      <h2 id="race-evidence-journey">{locale === 'uk' ? 'Дослідіть цей Гран-прі' : 'Explore this Grand Prix'}</h2>
+      <p>{locale === 'uk' ? 'Від конкретного етапу — до його сезону, траси й учасників. Усі зв’язки нижче походять з імпортованих результатів.' : 'Follow this event into its season, circuit and recorded participants. Every link below comes from the imported historical records.'}</p>
+      <div className="driver-grid">
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Контекст сезону' : 'Season context'}</span>
+          <h3><Link href={`/seasons/${race.season_year}`}>{race.season_year} ↗</Link></h3></article>
+        {race.circuit_id && <article className="driver"><span className="index">{locale === 'uk' ? 'Історія траси' : 'Circuit history'}</span>
+          <h3><Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name ?? race.circuit_id} ↗</Link></h3></article>}
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Пілоти в результатах' : 'Drivers in results'}</span>
+          <h3>{new Set(results.map(result => result.driver_id)).size}</h3></article>
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Конструктори в результатах' : 'Constructors in results'}</span>
+          <h3>{new Set(results.map(result => result.constructor_id)).size}</h3></article>
+      </div>
+      {results.length > 0 && <p>{locale === 'uk' ? 'Перший запис у таблиці:' : 'First displayed classification entry:'}{' '}
+        <Link href={`/drivers/${results[0].driver_id}`}>{results[0].driver}</Link>{' · '}
+        <Link href={`/constructors/${results[0].constructor_id}`}>{results[0].constructor}</Link>.
+        {locale === 'uk' ? ' Порядок записів не є самостійним підтвердженням офіційного переможця.' : ' Row order alone is not independent proof of the official winner.'}
+      </p>}
+      <p>{locale === 'uk' ? 'Показано не більше 100 записів результатів. Унікальні пілоти та конструктори обчислені тільки для показаних записів, а не всього заявочного списку.' : 'Up to 100 result entries are displayed. Unique driver and constructor counts describe only these entries, not the complete entry list.'}</p>
+    </section>
     <h2>{t('raceResults')}</h2>
     <p>{t('raceResultsLead')}</p>
     <p className="mobile-hint">{t('scrollTable')}</p>

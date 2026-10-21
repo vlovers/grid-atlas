@@ -1,4 +1,4 @@
-import { Module, OnApplicationShutdown, Inject, Injectable } from '@nestjs/common';
+import { Logger, Module } from '@nestjs/common';
 import { Pool } from 'pg';
 import { HistoricalController } from './historical.controller';
 import { ProfilesController } from './profiles.controller';
@@ -8,18 +8,12 @@ import { TimeMachineController } from './time-machine.controller';
 import { EditorialController } from './editorial.controller';
 
 import { DB } from './tokens';
-
-@Injectable()
-export class PoolShutdown implements OnApplicationShutdown {
-  constructor(@Inject(DB) private readonly pool: Pool) {}
-
-  async onApplicationShutdown(): Promise<void> {
-    await this.pool.end();
-  }
-}
+import { apiConfig } from './config';
+import { ApiRuntime, ReadinessController } from './runtime';
 
 @Module({
   controllers: [
+    ReadinessController,
     HistoricalController,
     ProfilesController,
     ExplorerController,
@@ -31,17 +25,16 @@ export class PoolShutdown implements OnApplicationShutdown {
     {
       provide: DB,
       useFactory: () => {
-        if (!process.env.DATABASE_URL) {
-          throw new Error('DATABASE_URL is required');
-        }
-        return new Pool({
-          connectionString: process.env.DATABASE_URL,
+        const pool = new Pool({
+          connectionString: apiConfig().databaseUrl,
           max: 10,
           connectionTimeoutMillis: 5000,
         });
+        pool.on('error', () => new Logger('Database').error({ event: 'database_pool_error' }));
+        return pool;
       },
     },
-    PoolShutdown,
+    ApiRuntime,
   ],
 })
 export class AppModule {}
