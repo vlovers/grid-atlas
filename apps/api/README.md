@@ -1,17 +1,23 @@
 # Historical read API
 
-NestJS / PostgreSQL inside the pnpm monorepo. Requires Node 24, frozen workspace installation and all five migrations. Start after importing data:
+NestJS / PostgreSQL inside the pnpm monorepo. Requires Node 24, frozen workspace installation and all versioned migrations. Start after importing data:
 
 ```sh
 pnpm --filter @grid-atlas/api build
 DATABASE_URL=postgresql://... pnpm --filter @grid-atlas/api start
 ```
 
-The API defaults to `127.0.0.1:3001`; `HOST` and `PORT` are configurable. `/api/health` is process liveness, not database readiness. The public API is read-only; deployment still needs private database credentials, TLS/traffic controls and operational monitoring.
+The API defaults to `127.0.0.1:3001`; `HOST`, `PORT` and the shape of `DATABASE_URL`
+are validated before binding. `/api/health` is process liveness. `/api/ready` returns
+200 only after a bounded PostgreSQL `SELECT 1`, or a generic 503 while unavailable
+or draining; it does not certify migrations, imports or historical correctness.
+The public API is read-only; deployment still needs private database credentials,
+TLS/traffic controls and operational monitoring. See the [operations runbook](../../docs/operations/phase-1.md)
+for probe budgets, structured logs, shutdown, smoke checks and the disposable restore rehearsal.
 
 | Endpoint under `/api` | Behavior |
 | --- | --- |
-| `/health`, `/sources` | Liveness; registered source releases and attribution |
+| `/health`, `/ready`, `/sources` | Liveness; database connectivity readiness; registered source releases and attribution |
 | `/seasons`, `/seasons/:year` | Seasons and season existence |
 | `/seasons/:year/races`, `/seasons/:year/lineups` | Calendar and result-derived driver/constructor lineups |
 | `/drivers?q=...`, `/constructors?q=...`, `/circuits?q=...` | Literal case-insensitive substring search on display name or source ID |
