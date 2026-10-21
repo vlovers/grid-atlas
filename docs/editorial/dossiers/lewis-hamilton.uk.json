@@ -48,6 +48,16 @@
       "accessed_on": "2026-10-21",
       "version": "Live reference inspected 2026-10-21; no immutable snapshot",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "hamilton-fia-2020",
+      "source_url": "https://www.fia.com/news/f1-hamilton-wins-turkey-clinch-record-equalling-seventh-world-title",
+      "title": "F1 – Hamilton wins in Turkey to clinch record-equalling seventh world title",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "FIA news report dated 2020-11-15",
+      "independence_group": "fia"
     }
   ],
   "claims": [
@@ -109,6 +119,11 @@
         {
           "source_id": "hamilton-f1-championship",
           "locator": "Historical champions listing",
+          "supports": true
+        },
+        {
+          "source_id": "hamilton-fia-2020",
+          "locator": "Opening FIA report confirms seventh Drivers' World Championship crown in 2020; individual prior title-year list remains sourced from Formula 1",
           "supports": true
         }
       ]

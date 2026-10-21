@@ -48,6 +48,16 @@
       "accessed_on": "2026-10-21",
       "version": "Live reference inspected 2026-10-21; no immutable snapshot",
       "independence_group": "formula1"
+    },
+    {
+      "source_id": "max-fia-2024",
+      "source_url": "https://www.fia.com/events/fia-formula-one-world-championship/season-2024/2024-classifications-0",
+      "title": "2024 FIA Formula One World Championship classifications",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-21",
+      "version": "FIA 2024 classifications archive, current page as accessed 2026-10-21",
+      "independence_group": "fia"
     }
   ],
   "claims": [
@@ -132,6 +142,11 @@
         {
           "source_id": "max-f1-profile",
           "locator": "Biography: youngest driver, first win and championship chronology",
+          "supports": true
+        },
+        {
+          "source_id": "max-fia-2024",
+          "locator": "2024 Drivers classification: Max Verstappen first in championship; other individual title years remain sourced from Formula 1 Hall of Fame",
           "supports": true
         }
       ]
