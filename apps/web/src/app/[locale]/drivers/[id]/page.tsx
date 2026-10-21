@@ -6,6 +6,7 @@ import { DriverShowcase } from '@/components/driver/driver-showcase';
 import type { DriverProfile, DriverCareer, DriverSeason, DriverTeam, DriverSeasonResult } from '@/components/driver/showcase-model';
 import type { MediaAsset } from '@/components/media/registry';
 import mediaPublication from '@/components/media/publication.json';
+import { IdentityFacts, type IdentityDetails } from '@/components/identity-facts';
 
 export const dynamic = 'force-dynamic';
 type Props = { params: Promise<{ id: string; locale: string }>; searchParams: Promise<{ season?: string | string[] }> };
@@ -23,10 +24,10 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const { id, locale: requestedLocale } = await params;
   if (!validId(id)) notFound();
   const locale = requestedLocale === 'en' ? 'en' : 'uk';
-  const [profiles, seasons, teams, careers, article, query] = await Promise.all([
+  const [profiles, seasons, teams, careers, article, query, identities] = await Promise.all([
     getData<DriverProfile>(`/api/drivers/${id}`), getData<DriverSeason>(`/api/drivers/${id}/seasons`),
     getData<DriverTeam>(`/api/drivers/${id}/teams`), getData<DriverCareer>(`/api/drivers/${id}/career?locale=${locale}`),
-    getPublishedArticle(id, locale), searchParams,
+    getPublishedArticle(id, locale), searchParams, getData<IdentityDetails>(`/api/drivers/${id}/identity`),
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
@@ -35,6 +36,7 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const year = selectedYear !== null && seasons.some(season => season.year === selectedYear) ? selectedYear : defaultYear;
   const seasonResults = year === null ? [] : await getData<DriverSeasonResult>(`/api/drivers/${id}/seasons/${year}/results`);
   return <DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
+    identity={<IdentityFacts identity={identities[0]} locale={locale} />}
     article={article} media={mediaPublication.assets as MediaAsset[]} locale={locale}
     selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />;
 }

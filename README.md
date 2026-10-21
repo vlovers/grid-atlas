@@ -29,6 +29,11 @@ curl -fL --retry 3 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1d
 bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt
 ```
 
+The full import also backfills source-reported identity details for every driver,
+constructor and circuit. Existing installations must apply migration 0009 and
+rerun the import to populate those fields. Names and canonical IDs are preserved.
+See the [identity API contract](apps/api/docs/encyclopedia-identities.md).
+
 Each importer validates the checksum and uses transactions; repeat imports preserve existing records and curated names. Importing these assets does not import or verify lineage. See [import details](packages/data-importer/README.md).
 
 Start the API, then the web app in another terminal:
@@ -98,6 +103,18 @@ records repeated imports, representative SQL parity, and real-browser tests
 over UK/EN desktop/mobile. Those results establish import consistency and
 sampled UI behavior, not independently verified historical claims or public
 hosting readiness.
+
+Run the exhaustive encyclopedia audit against a genuine imported database and
+running production API/web (set `SITE_URL` on the web process):
+
+```sh
+python3 scripts/audit-encyclopedia.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt --api-url http://127.0.0.1:3001/api --web-url http://127.0.0.1:3000 --output /tmp/encyclopedia-coverage.json
+```
+
+This checks every archive identity, every imported race/result row, all profile
+and season APIs, UK/EN canonical profile rendering and rendered archive links.
+Real-archive CI publishes the JSON report and desktop/mobile screenshots. See
+[measured encyclopedia coverage and limits](docs/encyclopedia-coverage.md).
 
 ## Data and boundaries
 

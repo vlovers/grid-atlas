@@ -177,6 +177,46 @@ test('known profiles with no results have honest empty careers and no invented m
   }
 });
 
+test('profile and season totals distinguish unknown points, zero and partial records', async () => {
+  for (const kind of ['drivers', 'constructors']) {
+    const [empty] = await get(`${kind}/3`);
+    assert.equal(empty[kind === 'drivers' ? 'points' : 'driver_points'], null);
+    assert.equal(empty.points_missing, 0);
+    const [profile] = await get(`${kind}/1`);
+    assert.ok(profile.points_missing > 0);
+    const seasons = await get(`${kind}/1/seasons`);
+    assert.ok(seasons.some(row => row.points_missing > 0));
+  }
+  const seasons = await get('drivers/1/seasons');
+  assert.equal(seasons.find(row => row.year === 1952).points, '0.00');
+});
+
+test('identity details are optional, source-bound and do not fabricate fields', async () => {
+  for (const kind of ['drivers', 'constructors']) {
+    const [empty] = await get(`${kind}/3/identity`);
+    assert.deepEqual(empty.fields, {});
+    assert.equal(empty.provenance, null);
+    assert.equal((await fetch(`${base}/api/${kind}/999999/identity`)).status, 404);
+    assert.equal((await fetch(`${base}/api/${kind}/01/identity`)).status, 400);
+  }
+  await db.query(`INSERT INTO historical_identity_details(external_identity_id,release_id,source_locator,fields)
+    SELECT external_identity_id,release_id,'fixture#alpha','{"permanent_number":"0","nationality":"Synthetic"}'::jsonb
+    FROM source_observations WHERE content_hash=repeat('d',64)`);
+  try {
+    const [identity] = await get('drivers/1/identity');
+    assert.equal(identity.external_id, 'alpha');
+    assert.deepEqual(identity.fields, { permanent_number: '0', nationality: 'Synthetic' });
+    assert.equal(identity.provenance.release_tag, 'vfixture');
+    assert.equal(identity.provenance.content_hash, 'd'.repeat(64));
+    assert.equal(identity.provenance.source_locator, 'fixture#alpha');
+    assert.equal(identity.provenance.method, 'source_reported');
+    const [large] = await get('drivers/9007199254740993/identity');
+    assert.equal(large.id, '9007199254740993');
+  } finally {
+    await db.query('DELETE FROM historical_identity_details');
+  }
+});
+
 test('a participating nonwinner has no win milestones', async () => {
   await db.query(`INSERT INTO historical_race_results
     (race_id,driver_id,constructor_id,position_display_order,position_text,driver_number)

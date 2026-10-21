@@ -31,6 +31,15 @@ async function main() {
   fixture = new Pool({ connectionString: scoped.toString() });
   await fixture.query(readFileSync(resolve(__dirname, 'fixtures.sql'), 'utf8'));
   await fixture.query(`
+    INSERT INTO source_observations(release_id,external_identity_id,content_hash)
+      SELECT 1,id,repeat('b',64) FROM external_identities
+      WHERE external_id IN ('driver-a','alpha','circuit-fixture') AND entity_kind IN ('driver','constructor','circuit');
+    INSERT INTO historical_identity_details(external_identity_id,release_id,source_locator,fields)
+      SELECT id,1,'fixture.json#id='||external_id,
+        CASE entity_kind WHEN 'driver' THEN '{"full_name":"Synthetic driver full name","permanent_number":"0","date_of_birth":"1990-01-02","nationality":"Synthetic Country"}'::jsonb
+        WHEN 'constructor' THEN '{"country":"Synthetic Country"}'::jsonb
+        ELSE '{"place_name":"Synthetic City","circuit_type":"STREET","country":"Synthetic Country"}'::jsonb END
+      FROM external_identities WHERE external_id IN ('driver-a','alpha','circuit-fixture') AND entity_kind IN ('driver','constructor','circuit');
     INSERT INTO external_identities(source_id,entity_kind,external_id)
       SELECT 1,'driver','synthetic-'||lpad(n::text,3,'0') FROM generate_series(1,105) n;
     INSERT INTO historical_drivers(external_identity_id,display_name)

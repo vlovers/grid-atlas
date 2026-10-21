@@ -8,6 +8,7 @@ import { routeMetadata } from '@/lib/seo';
 import { entitySeo } from '@/lib/entity-seo';
 import SeoBreadcrumbs from '@/components/seo-breadcrumbs';
 import { getData } from '@/lib/api';
+import { IdentityFacts, type IdentityDetails } from '@/components/identity-facts';
 import { catalogueParams, pageHref, PAGE_SIZE, MAX_OFFSET, validId, type CatalogueParams } from '@/lib/catalogue';
 
 export const dynamic = 'force-dynamic';
@@ -34,10 +35,11 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const { id, locale } = await params;
   if (!validId(id)) notFound();
   const { page, offset } = catalogueParams(await searchParams);
-  const [[circuit], races, history] = await Promise.all([
+  const [[circuit], races, history, identities] = await Promise.all([
     getData<Circuit>(`/api/circuits/${id}`),
     getData<Race>(`/api/circuits/${id}/races?limit=${PAGE_SIZE}&offset=${offset}`),
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
+    getData<IdentityDetails>(`/api/circuits/${id}/identity`),
   ]);
   if (!circuit) notFound();
   const chronologicalHistory = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round || Number(a.race_id) - Number(b.race_id));
@@ -60,6 +62,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   return <><SeoBreadcrumbs locale={locale} crumbs={currentCrumbs} description={description} /><section className="page">
     <StoryHeader title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader} locale={locale as 'uk' | 'en'} marker={circuit.first_season ?? undefined}
       lead={<p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>} />
+    <IdentityFacts identity={identities[0]} locale={locale === 'en' ? 'en' : 'uk'} />
     <section aria-label={locale === 'uk' ? 'Історичні факти про трасу' : 'Circuit history facts'}>
       <h2>{locale === 'uk' ? 'Паспорт траси' : 'Circuit quick facts'}</h2>
       <div className="driver-grid">
@@ -108,7 +111,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       <h2>{locale === 'uk' ? 'Переможці та результати' : 'Winners and results'}</h2>
       {history.length ? <div className="table-scroll"><table>
         <thead><tr><th>{locale === 'uk' ? 'Сезон' : 'Season'}</th><th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th>{locale === 'uk' ? 'Переможні записи' : 'Winning entries'}</th><th>{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
-        <tbody>{history.map(race => <tr key={race.race_id}>
+        <tbody>{history.slice(offset, offset + PAGE_SIZE).map(race => <tr key={race.race_id}>
           <td><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></td>
           <td><Link href={`/races/${race.race_id}`}>{race.race_name}</Link></td>
           <td>{race.winners.length ? race.winners.map(winner => <div key={`${winner.driver_id}:${winner.constructor_id}`}><Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> · <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></div>) : '—'}</td>

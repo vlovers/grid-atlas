@@ -96,7 +96,8 @@ export class HistoricalController {
       MAX(r.season_year) AS last_season,
       COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podiums,
-      COALESCE(SUM(rr.points), 0)::text AS points
+      SUM(rr.points)::text AS points,
+      COUNT(rr.id) FILTER (WHERE rr.points IS NULL)::int AS points_missing
       FROM historical_drivers d
       JOIN external_identities e ON e.id = d.external_identity_id
       LEFT JOIN historical_race_results rr ON rr.driver_id = d.id
@@ -114,7 +115,8 @@ export class HistoricalController {
       COUNT(rr.id)::int AS starts,
       COUNT(*) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podiums,
-      COALESCE(SUM(rr.points), 0)::text AS points
+      SUM(rr.points)::text AS points,
+      COUNT(rr.id) FILTER (WHERE rr.points IS NULL)::int AS points_missing
       FROM historical_race_results rr
       JOIN historical_races r ON r.id = rr.race_id
       WHERE rr.driver_id = $1
@@ -130,7 +132,7 @@ export class HistoricalController {
       r.race_date::text AS race_date, r.official_name AS race_name,
       c.id::text AS constructor_id, c.display_name AS constructor_name,
       rr.position_display_order, rr.position_number, rr.position_text,
-      rr.points::text AS points, rr.laps, rr.reason_retired, rr.shared_car
+      rr.points::text AS points, rr.driver_number, rr.laps, rr.reason_retired, rr.shared_car
       FROM historical_race_results rr
       JOIN historical_races r ON r.id = rr.race_id
       JOIN historical_constructors c ON c.id = rr.constructor_id
@@ -231,7 +233,8 @@ export class HistoricalController {
       MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season,
       COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
-      COALESCE(SUM(rr.points), 0)::text AS driver_points
+      SUM(rr.points)::text AS driver_points,
+      COUNT(rr.id) FILTER (WHERE rr.points IS NULL)::int AS points_missing
       FROM historical_constructors c
       JOIN external_identities e ON e.id = c.external_identity_id
       LEFT JOIN historical_race_results rr ON rr.constructor_id = c.id
@@ -266,7 +269,8 @@ export class HistoricalController {
       COUNT(DISTINCT rr.race_id)::int AS races,
       COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins,
       COUNT(*) FILTER (WHERE rr.position_number BETWEEN 1 AND 3)::int AS podium_finishes,
-      COALESCE(SUM(rr.points), 0)::text AS driver_points
+      SUM(rr.points)::text AS driver_points,
+      COUNT(rr.id) FILTER (WHERE rr.points IS NULL)::int AS points_missing
       FROM historical_race_results rr
       JOIN historical_races r ON r.id = rr.race_id
       WHERE rr.constructor_id = $1

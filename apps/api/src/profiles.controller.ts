@@ -27,6 +27,36 @@ function editorialLocale(value: unknown): 'uk' | 'en' {
 export class ProfilesController {
   constructor(@Inject(DB) private readonly db: Pool) {}
 
+  @Get('drivers/:id/identity')
+  driverIdentity(@Param('id') id: string) { return this.identity('driver', profileId(id)); }
+
+  @Get('constructors/:id/identity')
+  constructorIdentity(@Param('id') id: string) { return this.identity('constructor', profileId(id)); }
+
+  @Get('circuits/:id/identity')
+  circuitIdentity(@Param('id') id: string) { return this.identity('circuit', profileId(id)); }
+
+  private async identity(kind: 'driver' | 'constructor' | 'circuit', id: string) {
+    const table = kind === 'circuit' ? 'historical_circuits' : entities[kind].table;
+    const { rows } = await this.db.query(`SELECT h.id::text AS id, x.external_id,
+      s.slug AS source_slug, s.homepage_url AS source_url, s.attribution,
+      COALESCE(d.fields, '{}'::jsonb) AS fields,
+      CASE WHEN d.external_identity_id IS NOT NULL THEN jsonb_build_object(
+        'release_tag', r.release_tag, 'artifact_name', r.artifact_name,
+        'sha256', r.sha256, 'source_locator', d.source_locator,
+        'content_hash', o.content_hash, 'imported_at', o.imported_at,
+        'method', 'source_reported') ELSE NULL END AS provenance
+      FROM ${table} h
+      JOIN external_identities x ON x.id=h.external_identity_id AND x.entity_kind=$2
+      JOIN data_sources s ON s.id=x.source_id
+      LEFT JOIN historical_identity_details d ON d.external_identity_id=x.id
+      LEFT JOIN source_releases r ON r.id=d.release_id AND r.source_id=x.source_id
+      LEFT JOIN source_observations o ON o.release_id=r.id AND o.external_identity_id=x.id
+      WHERE h.id=$1`, [id, kind]);
+    if (!rows.length) throw new NotFoundException('Identity not found');
+    return { data: rows };
+  }
+
   @Get('drivers/:id/career')
   driverCareer(@Param('id') id: string, @Query('locale') locale?: string) {
     return this.career('driver', profileId(id), editorialLocale(locale));

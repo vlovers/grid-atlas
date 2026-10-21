@@ -7,6 +7,6 @@ if [ "$#" -ne 2 ]; then
 fi
 : "${DATABASE_URL:?Set DATABASE_URL}"
 python3 packages/database/scripts/migrate.py
-for importer in import_seasons import_drivers import_teams_circuits import_races import_race_results; do
+for importer in import_seasons import_drivers import_teams_circuits import_races import_race_results import_identity_details; do
   python3 "packages/data-importer/$importer.py" --archive "$1" --checksums "$2"
 done
