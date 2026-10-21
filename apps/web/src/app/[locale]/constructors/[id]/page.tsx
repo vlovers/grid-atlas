@@ -1,3 +1,4 @@
+import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -33,12 +34,13 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   const t = await getTranslations('UI');
   const { id } = await params;
   if (!valid(id)) notFound();
-  const [profiles, seasons, lineage, careers, identities] = await Promise.all([
+  const [profiles, seasons, lineage, careers, identities, championships] = await Promise.all([
     getData<Profile>(`/api/constructors/${id}`),
     getData<Season>(`/api/constructors/${id}/seasons`),
     getData<Lineage>(`/api/constructors/${id}/lineage`),
     getData<ConstructorCareer>(`/api/constructors/${id}/career?locale=${(await getLocale()) === 'en' ? 'en' : 'uk'}`),
     getData<IdentityDetails>(`/api/constructors/${id}/identity`),
+    getData<ChampionshipRow>(`/api/constructors/${id}/championships`),
   ]);
   const locale = await getLocale() as 'uk' | 'en';
   const team = profiles[0];
@@ -210,6 +212,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <p>{edge.evidence_note}</p>
       <a className="back" href={edge.source_url} target="_blank" rel="noopener noreferrer">{t('source')}: {edge.source_title} · {edge.source_publisher} ↗</a>
     </article>)}</div> : <p>{t('noVerifiedRelations')}</p>}
+    <ChampionshipTable rows={championships} locale={locale} kind="constructors" scope="career" />
     <Link className="back" href="/constructors">← {t('allConstructors')}</Link>
   </section>;
 }
