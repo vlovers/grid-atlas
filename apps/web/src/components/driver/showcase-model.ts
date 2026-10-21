@@ -72,3 +72,30 @@ export function timeMachinePath(id: string, years: readonly number[]) {
   return sorted.length > 1 ? `/time-machine?${new URLSearchParams({ kind: 'driver', id,
     from: String(sorted[0]), to: String(sorted.at(-1)) })}` : null;
 }
+
+/** Public, source-bound career synopsis. Never represents an approved biography. */
+export function driverArchiveOverview(driver: DriverProfile, career: DriverCareer | null, locale: 'en' | 'uk') {
+  if (!career || career.summary.races === 0) return null;
+  const years = [career.summary.first_season, career.summary.last_season];
+  const validYears = years.every((x): x is number => x !== null);
+  const range = validYears ? (years[0] === years[1] ? String(years[0]) : years.join('–')) : null;
+  const constructors = [...new Map(career.participation.map(row => [row.related_id, row.related_name])).values()];
+  const shown = constructors.slice(0, 4);
+  const remainder = constructors.length - shown.length;
+  const n = (v: number) => new Intl.NumberFormat(locale).format(v);
+  const opener = locale === 'en'
+    ? `The imported Formula 1 race-result archive records ${n(career.summary.races)} distinct races for ${driver.name}${range ? ` across ${range}` : ''}.`
+    : `Імпортований архів результатів Формули-1 містить ${n(career.summary.races)} окремих гонок за участю ${driver.name}${range ? ` у ${range} роках` : ''}.`;
+  const teams = shown.length ? (locale === 'en'
+    ? `The records associate this driver with ${shown.join(', ')}${remainder ? ` and ${n(remainder)} more constructor${remainder === 1 ? '' : 's'}` : ''}.`
+    : `У протоколах зафіксовано зв’язки з конструкторами ${shown.join(', ')}${remainder ? ` та ще ${n(remainder)}` : ''}.`) : null;
+  const wins = career.summary.winning_races > 0 ? (locale === 'en'
+    ? `These records include ${n(career.summary.winning_races)} distinct winning races and ${n(career.summary.podium_result_entries)} podium result entries.`
+    : `Серед них — ${n(career.summary.winning_races)} окремих переможних гонок і ${n(career.summary.podium_result_entries)} подіумних записів результатів.`)
+    : (locale === 'en'
+      ? `There are no winning races in the imported results; ${n(career.summary.podium_result_entries)} podium result entries are recorded.`
+      : `В імпортованих результатах немає переможних гонок; зафіксовано ${n(career.summary.podium_result_entries)} подіумних записів результатів.`);
+  return { paragraphs: [opener, teams, wins].filter((v): v is string => Boolean(v)),
+    firstRace: career.milestones.first_appearance?.race ?? null,
+    firstWin: career.milestones.first_win?.race ?? null };
+}
