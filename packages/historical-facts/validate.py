@@ -3,6 +3,8 @@
 import json
 import re
 import sys
+import ipaddress
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -15,6 +17,7 @@ ENTITY_FIELDS = {
 NUMERIC = {"length_m", "turns", "scheduled_laps", "drs_zones"}
 POSITIVE = {"length_m", "turns", "scheduled_laps"}
 STATUSES = {"draft", "reviewed", "rejected"}
+LAYOUT_FIELDS = {"length_m", "turns", "direction", "svg_path"}
 SVG_COMMANDS = re.compile(r"^[MmLlHhVvCcSsQqTtAaZz0-9.,+\-\s]+$")
 
 
@@ -32,6 +35,9 @@ def validate(record):
     year = record.get("year")
     if type(year) is not int or not 1950 <= year <= 2100:
         errors.append("year must be an integer between 1950 and 2100")
+    layout_version = record.get("layout_version")
+    if kind == "circuit_layout" and (not isinstance(layout_version, str) or not layout_version.strip() or len(layout_version) > 120):
+        errors.append("circuit layout requires nonempty layout_version")
     value = record.get("value")
     if field in NUMERIC:
         if type(value) is not int or value < (1 if field in POSITIVE else 0):
@@ -51,7 +57,13 @@ def validate(record):
         errors.append("source object required")
     else:
         parsed = urlparse(str(source.get("url", "")))
-        if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
+        hostname = parsed.hostname or ""
+        try:
+            address = ipaddress.ip_address(hostname)
+            is_public_host = address.is_global
+        except ValueError:
+            is_public_host = bool(re.fullmatch(r"[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)+", hostname)) and hostname.lower() not in {"localhost", "localhost.localdomain"}
+        if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password or not is_public_host:
             errors.append("source.url must be a public HTTPS URL")
         for key in ("title", "publisher", "locator", "accessed_on"):
             if not isinstance(source.get(key), str) or not source[key].strip():
@@ -66,8 +78,8 @@ def validate(record):
                 errors.append(f"{key} required for reviewed facts")
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(record.get("reviewed_on", ""))):
             errors.append("reviewed_on must be ISO date")
-    if field == "svg_path" and not isinstance(record.get("layout_version"), str):
-        errors.append("svg_path requires layout_version")
+    if field == "svg_path" and isinstance(value, str) and not re.search(r"[Mm]", value):
+        errors.append("svg_path requires a move command")
     return errors
 
 
