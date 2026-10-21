@@ -42,7 +42,7 @@ class PinnedCircuitArtTests(unittest.TestCase):
                 ).hexdigest()
                 self.assertEqual(git_sha, entry["source_git_blob_sha"])
                 source = payload.decode("utf-8")
-                self.assertNotRegex(source, r"(?i)<script|foreignObject|<image|href\\s*=|on[a-z]+\\s*=|url\\(|@import|<style")
+                self.assertNotRegex(source, r"(?i)<script|foreignObject|<image|href\s*=|on[a-z]+\s*=|url\(|@import|<style")
                 root = ET.fromstring(payload)
                 self.assertEqual(root.tag, SVG_NAMESPACE + "svg")
                 self.assertTrue(list(root))
