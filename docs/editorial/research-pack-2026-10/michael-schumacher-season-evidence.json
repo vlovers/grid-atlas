@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "driver_season_source_observation",
+  "subject": {
+    "slug": "michael-schumacher",
+    "identity_status": "requires_f1db_join"
+  },
+  "status": "source_observed_needs_independent_human_review",
+  "publication_allowed": false,
+  "source_access_date": "2026-10-21",
+  "sources": [
+    {
+      "id": "official-season-standing",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2000/drivers",
+      "locator": "Drivers' Standings 2000, rows 1–2",
+      "source_role": "official_classification"
+    },
+    {
+      "id": "official-driver-race-record",
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/results/2000/drivers/MICSCH01/michael-schumacher",
+      "locator": "2000 driver season race table, Japan row",
+      "source_role": "official_driver_result"
+    }
+  ],
+  "claims": [
+    {
+      "id": "michael-schumacher-2000-points",
+      "text": {
+        "en": "The official 2000 driver standings list Michael Schumacher in first position with 108 points, ahead of Mika Hakkinen on 89.",
+        "uk": "В офіційній класифікації пілотів 2000 року цей гонщик посів перше місце з 108 очками, випередивши Mika Hakkinen (89 очок)."
+      },
+      "observed_fields": {
+        "year": 2000,
+        "position": 1,
+        "points": 108,
+        "runner_up": "Mika Hakkinen",
+        "runner_up_points": 89
+      },
+      "source_ids": [
+        "official-season-standing"
+      ],
+      "review_status": "needs_human_review"
+    },
+    {
+      "id": "michael-schumacher-2000-japan",
+      "text": {
+        "en": "The Formula 1 2000 season race-by-race table lists Japan on 2000-10-08 as position 1 for Ferrari.",
+        "uk": "У таблиці результатів Формули-1 за 2000 рік для Japan (2000-10-08) вказано 1-ту позицію команди Ferrari."
+      },
+      "observed_fields": {
+        "race": "Japan",
+        "date": "2000-10-08",
+        "position": "1",
+        "constructor_label": "Ferrari"
+      },
+      "source_ids": [
+        "official-driver-race-record"
+      ],
+      "review_status": "needs_human_review"
+    }
+  ],
+  "chapter_treatments": [
+    {
+      "id": "scene-1",
+      "headline": {
+        "en": "Early momentum",
+        "uk": "Початковий темп"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-2",
+      "headline": {
+        "en": "The middle stretch",
+        "uk": "Середина сезону"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-3",
+      "headline": {
+        "en": "Japan as a race record",
+        "uk": "Японія в гоночних результатах"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    },
+    {
+      "id": "scene-4",
+      "headline": {
+        "en": "Final classification",
+        "uk": "Підсумкова класифікація"
+      },
+      "editorial_intent": "A short record-led scene with links to official result tables and imported race evidence, not a finished biography",
+      "copy_status": "research_only"
+    }
+  ],
+  "constraints": [
+    "Result-row observations are not automatically official starts or championships.",
+    "The official classification total is not interchangeable with uncorrected imported raw points.",
+    "A single publisher does not constitute independent corroboration.",
+    "Images and historical interpretations require separate rights and factual review.",
+    "Canonical F1DB driver identity and precise race record must be reconciled in a disposable pinned import."
+  ],
+  "approval": {
+    "human_editor": null,
+    "reviewed_at": null,
+    "claim_review": false,
+    "uk_review": false,
+    "en_review": false,
+    "media_review": false,
+    "publication_allowed": false
+  }
+}
