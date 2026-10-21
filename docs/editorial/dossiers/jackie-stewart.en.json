@@ -48,6 +48,32 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "jackie-stewart-brm-debut",
+      "topic": "early_career",
+      "statement": "Stewart joined the BRM Formula 1 team in 1965 and drove for it for three seasons.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "jackie-stewart-f1-hall",
+          "locator": "1965 BRM and three seasons paragraph.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-safety-advocacy",
+      "topic": "legacy",
+      "statement": "Stewart publicly campaigned for improved Formula 1 safety measures, including barriers, run-off areas and better medical facilities.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "jackie-stewart-f1-hall",
+          "locator": "Safety reform paragraphs on barriers, run-off areas and travelling medical support.",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -57,6 +83,20 @@
       "claim_ids": [
         "jackie-stewart-titles"
       ]
+    },
+    {
+      "section_id": "brm-debut",
+      "title": "Early Formula 1 career",
+      "claim_ids": [
+        "jackie-stewart-brm-debut"
+      ]
+    },
+    {
+      "section_id": "safety-advocacy",
+      "title": "Safety legacy",
+      "claim_ids": [
+        "jackie-stewart-safety-advocacy"
+      ]
     }
   ],
   "gaps": [
@@ -65,7 +105,8 @@
     "Canonical identity and underlying season records require reconciliation with checksum-verified pinned F1DB archive.",
     "Research and editorial review of career chronology, early life, racing milestones, disputed claims and each locale remains incomplete.",
     "No licensed media selected; no publishing decision or human reviewer assigned.",
-    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved."
+    "FIA independent source candidate must be re-opened by a human reviewer; neither language approved.",
+    "Additional source-located career claims researched 2026-10-21; one Formula 1 publisher group for these claims. Cross-publisher verification and human EN/UK review remain outstanding."
   ],
   "media": []
 }
