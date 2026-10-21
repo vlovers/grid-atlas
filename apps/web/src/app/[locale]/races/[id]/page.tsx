@@ -27,6 +27,9 @@ export default async function RacePage({ params }: Props) {
     getData<Result>(`/api/races/${id}/results?limit=100`),
   ]);
   if (!race) notFound();
+  const podium = results.filter(r => ['1', '2', '3'].includes(r.position_text));
+  const sharedCount = results.filter(r => r.shared_car).length;
+  const retirements = results.filter(r => Boolean(r.reason_retired)).length;
   return <section className="page">
     <StoryHeader title={race.official_name} eyebrow={`${storyCopy[locale].raceHeader} / ${race.season_year} · ${t('round', { round: race.round })}`} locale={locale} kind="grid" marker={race.season_year}
       lead={<p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>} />
@@ -59,6 +62,21 @@ export default async function RacePage({ params }: Props) {
         {locale === 'uk' ? ' Порядок записів не є самостійним підтвердженням офіційного переможця.' : ' Row order alone is not independent proof of the official winner.'}
       </p>}
       <p>{locale === 'uk' ? 'Показано не більше 100 записів результатів. Унікальні пілоти та конструктори обчислені тільки для показаних записів, а не всього заявочного списку.' : 'Up to 100 result entries are displayed. Unique driver and constructor counts describe only these entries, not the complete entry list.'}</p>
+    </section>
+    <section aria-labelledby="race-results-story" data-testid="race-results-story">
+      <h2 id="race-results-story">{locale === 'uk' ? 'Історія гонки за класифікацією' : 'Race story in the classification'}</h2>
+      <p>{locale === 'uk'
+        ? `Серед ${results.length} показаних записів: ${podium.length} результатів із позиціями 1–3, ${sharedCount} записів про спільний автомобіль і ${retirements} записів із зазначеною причиною вибуття.`
+        : `Among ${results.length} displayed entries: ${podium.length} results in positions 1–3, ${sharedCount} shared-car entries and ${retirements} entries with retirement reasons.`}</p>
+      {podium.length > 0 && <ol className="records">{podium.map(result =>
+        <li key={result.position_display_order} className="record">
+          <span className="position">{result.position_text}</span>
+          <span><strong><Link href={`/drivers/${result.driver_id}`}>{result.driver}</Link></strong>
+            <small><Link href={`/constructors/${result.constructor_id}`}>{result.constructor}</Link></small></span>
+        </li>)}</ol>}
+      <p>{locale === 'uk'
+        ? 'Ці відомості походять із показаних рядків бази, а не з незалежно перевіреного офіційного протоколу. Вони не відтворюють перебіг гонки.'
+        : 'These facts come from displayed archive rows, not an independently checked official classification. They do not reconstruct events during the race.'}</p>
     </section>
     <h2>{t('raceResults')}</h2>
     <p>{t('raceResultsLead')}</p>
