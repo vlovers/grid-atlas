@@ -2,7 +2,7 @@ const {test}=require('node:test');const assert=require('node:assert/strict');con
 const digest='b'.repeat(64);
 const bundle={schema_version:1,release_kind:'approved_text_only',publication_status:'not_yet_published',driver_external_id:'publication-test-driver',slug:'publication-test-driver',locale:'en',revision_sha256:digest,title:'Verified integration fixture',body_markdown:'## Career\n\nSynthetic recorded claim.',author:'Synthetic test author',reviewer:'Synthetic independent test reviewer',reviewed_on:'2026-10-21',
  claims:[{claim_id:'fixture-claim',statement:'Synthetic recorded claim.',reviewer:'Synthetic independent test reviewer',reviewed_on:'2026-10-21',evidence:[{url:'https://example.org/approved-fixture-record',title:'Synthetic fixture evidence',publisher:'Test publisher',author:null,accessed_on:'2026-10-21',locator:'Fixture line one'}]}]};
-test('publication creates only exact approved locale and repeat attempt rolls back',async()=>{
+test('publication creates only exact approved locale and repeat attempt rolls back', {skip: process.env.RUN_EDITORIAL_PUBLICATION_DB_ACCEPTANCE !== '1'}, async()=>{
  const pool=new Pool({connectionString:process.env.DATABASE_URL});
  const client=await pool.connect();
  try {
