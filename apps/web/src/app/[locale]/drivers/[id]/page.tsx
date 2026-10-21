@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!driver) return { title: t('driverMissing') };
   // Search previews may quote only text that has passed the public publication gate.
   const approvedSummary = article?.body_markdown
-    .replace(/[#*_~`>\[\]]/g, ' ')
+    .replace(/[#*_~`>]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 155);
