@@ -148,3 +148,23 @@ test('source endpoint reports the registered release and checksum', async () => 
   assert.equal(source.sha256, 'a'.repeat(64));
   assert.equal(source.artifact_name, 'fixture.json');
 });
+
+test('driver season ledger preserves shared-car entries and constructor roster evidence', async () => {
+  const results = await get('drivers/1/seasons/1950/results');
+  assert.ok(results.length > 0);
+  assert.ok(results.every(row => row.race_id && row.constructor_id && row.position_text));
+  assert.ok(results.some(row => row.shared_car === true));
+  assert.ok(results.every(row => row.round === 1));
+  const roster = await get('constructors/1/seasons/1950/drivers');
+  assert.ok(roster.some(row => row.driver_id === '1'));
+  assert.ok(roster.every(row => Number.isInteger(row.races) && Number.isInteger(row.wins)));
+  assert.deepEqual(await get('drivers/1/seasons/1951/results'), []);
+  assert.deepEqual(await get('constructors/1/seasons/1951/drivers'), []);
+});
+
+test('season ledger and roster reject malformed IDs and years', async () => {
+  for (const path of ['drivers/invalid/seasons/1950/results', 'drivers/1/seasons/1949/results',
+    'constructors/invalid/seasons/1950/drivers', 'constructors/1/seasons/1949/drivers']) {
+    assert.equal((await fetch(`${base}/api/${path}`)).status, 400);
+  }
+});
