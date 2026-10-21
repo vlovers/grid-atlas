@@ -96,6 +96,13 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
           <div><span className={styles.kicker}>{t.season}</span><h3>{selected.year}</h3><a className={styles.textLink} href={`/${locale}/seasons/${selected.year}`}>{t.seasonsTable} ↗</a></div>
           <dl>{[{ label: t.resultEntries, value: selected.starts }, { label: t.winningEntries, value: selected.wins },
             { label: t.podiums, value: selected.podiums }].map(fact => <div key={fact.label}><dt>{fact.label}</dt><dd>{format(fact.value)}</dd></div>)}</dl>
+          <div>
+            <h4>{locale === 'uk' ? 'Команди цього сезону' : 'Teams this season'}</h4>
+            <ul>{teams.filter(team => team.year === selected.year).map(team =>
+              <li key={team.constructor_id}><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name}</a> · {format(team.races)} {t.races}</li>)}</ul>
+            <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}</p>
+            <p>{locale === 'uk' ? 'Позиція в чемпіонаті, поули й сходи не виводяться без перевірених сезонних даних.' : 'Championship position, poles and retirements are omitted until verified season data is available.'}</p>
+          </div>
           <a className={styles.outlineLink} href={`/${locale}/explorer/drivers/${driver.id}?year=${selected.year}`}>{t.exploreConnections} ↗</a>
         </section>}
       </div>}
