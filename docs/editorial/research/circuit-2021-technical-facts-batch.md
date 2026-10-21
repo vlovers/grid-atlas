@@ -1,6 +1,6 @@
 # Research batch: 2021 Grand Prix circuit configurations (UNPUBLISHED)
 
-**Audit date:** 2026-10-21 · **Scope:** six 2021 event pages · **Status:** `needs_review` · **Media:** none.
+**Audit date:** 2026-10-21 · **Scope:** eleven 2021 event pages · **Status:** `needs_review` · **Media:** none.
 
 This is a source-located factual research register, **not** an approved/public dataset, SVG map, or database seed. Official Formula 1 event pages may change their lap-record labels retrospectively: only the 2021 event's explicitly displayed circuit length and scheduled race laps are transcribed. A calendar/venue identity is not sufficient to prove a historical circuit layout; assign reviewed layout versions and pinned imported entity IDs only after reconciliation with F1DB v2026.17.0. Conversion: kilometers × 1000 = integer meters. Cross-source values from race classifications **do not** independently establish track length. No image reuse rights are implied by the cited pages.
 
@@ -12,6 +12,11 @@ This is a source-located factual research register, **not** an approved/public d
 | Spa-Francorchamps | Belgium | 7004 | 44 | [Formula 1](https://www.formula1.com/en/racing/2021/belgium) | Circuit > Circuit Length (7.004km); Number of Laps (44) | Listed scheduled laps are NOT actual completed laps at the rain-affected 2021 race; do not interpret as race distance achieved |
 | Imola | Emilia Romagna | 4909 | 63 | [Formula 1](https://www.formula1.com/en/racing/2021/emiliaromagna) | Circuit > Circuit Length (4.909km); Number of Laps (63) | FIA independent geometry cross-check pending |
 | Red Bull Ring | Austria | 4318 | 71 | [Formula 1](https://www.formula1.com/en/racing/2021/austria) | Circuit > Circuit Length (4.318km); Number of Laps (71) | Circuit's historic Österreichring and later A1-Ring identity/configurations must not be conflated |
+| Hungaroring | Hungary | 4381 | 70 | [Formula 1](https://www.formula1.com/en/racing/2021/hungary) | Circuit > Circuit Length (4.381km); Number of Laps (70) | Verify 2021 layout identity and event schedule independently; no geometry reuse permission. |
+| Zandvoort | Netherlands | 4259 | 72 | [Formula 1](https://www.formula1.com/en/racing/2021/netherlands) | Circuit > Circuit Length (4.259km); Number of Laps (72) | Restored 2021 event, do not infer 1950s circuit geometry from this page. |
+| Baku City Circuit | Azerbaijan | 6003 | 51 | [Formula 1](https://www.formula1.com/en/racing/2021/azerbaijan) | Circuit > Circuit Length (6.003km); Number of Laps (51) | Street circuit: 2021 layout and source geometry licensing remain unverified. |
+| Istanbul Park | Turkey | 5338 | 58 | [Formula 1](https://www.formula1.com/en/racing/2021/turkey) | Circuit > Circuit Length (5.338km); Number of Laps (58) | Exact layout revision and independent FIA confirmation pending. |
+| Circuit of The Americas | United States | 5513 | 56 | [Formula 1](https://www.formula1.com/en/racing/2021/united-states) | Circuit > Circuit Length (5.513km); Number of Laps (56) | Independently verify configuration/year and avoid assuming licensed source drawings. |
 
 ## Publication gates (not satisfied)
 
