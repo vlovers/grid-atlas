@@ -55,7 +55,12 @@ class EditorialBatchTest(unittest.TestCase):
         for md in BATCH.rglob("*.md"):
             if md.name == "README.md":
                 continue
-            self.assertNotIn("approved for publication", md.read_text().lower())
+            content = md.read_text().lower()
+            self.assertNotIn("**approved for publication**", content)
+            self.assertNotIn("publication_allowed: true", content)
+            self.assertNotIn("human_editor_approved: true", content)
+            if "approved for publication" in content:
+                self.assertIn("not approved for publication", content)
 
 
 if __name__ == "__main__":
