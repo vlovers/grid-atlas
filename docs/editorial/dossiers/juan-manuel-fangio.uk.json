@@ -61,6 +61,19 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-1952-injury",
+      "topic": "key_events",
+      "statement": "У 1952 році Фанхіо потрапив в аварію на позачемпіонатних перегонах у Монці та був змушений відновлюватися після травми.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "juan-manuel-fangio-f1-hall",
+          "locator": "Hall of Fame: 1952 Monza non-championship accident paragraph",
+          "supports": true
+        }
+      ]
     }
   ],
   "sections": [
@@ -76,6 +89,13 @@
       "title": "Гран-прі Німеччини 1957",
       "claim_ids": [
         "juan-manuel-fangio-1957-germany"
+      ]
+    },
+    {
+      "section_id": "1952-injury",
+      "title": "Сезон 1952",
+      "claim_ids": [
+        "juan-manuel-fangio-1952-injury"
       ]
     }
   ],
