@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "type": "source_located_race_story_research",
+  "locales": [
+    "en",
+    "uk"
+  ],
+  "publication_allowed": false,
+  "human_reviewed": false,
+  "notes": "Original prose from officially published result rows; titles and milestone context from existing dossiers; source rows alone do not establish tactics, weather or championship mathematics.",
+  "stories": [
+    {
+      "id": "prost-dijon-1981",
+      "driver_id": "alain-prost",
+      "event": "French Grand Prix",
+      "date": "1981-07-05",
+      "circuit": "Dijon-Prenois",
+      "winner": "Alain Prost",
+      "source": "https://www.formula1.com/en/results/1981/races/429/france/race-result",
+      "locator": "Race Result: Prost P1 80 laps; Watson P2 +2.290; Piquet P3 +24.220",
+      "en": {
+        "title": "Dijon: the first victory",
+        "body": "On 5 July 1981, Alain Prost won the French Grand Prix at Dijon-Prenois for Renault. The official classification records 80 laps, with John Watson second, 2.290 seconds behind, and Nelson Piquet third, 24.220 seconds back. The finish alone makes a compelling beginning: a future four-time champion appears here as a first-time winner, with two established rivals on the same results sheet. This is what the classification establishes. A narrative of the race's restarts, weather or tactical decisions needs contemporary race reports and must not be inferred from finishing gaps."
+      },
+      "uk": {
+        "title": "Діжон: перша перемога",
+        "body": "5 липня 1981 року Ален Прост виграв Гран-прі Франції на трасі Діжон-Пренуа за Renault. Офіційний протокол фіксує 80 кіл: Джон Вотсон фінішував другим із відставанням 2,290 секунди, а Нельсон Піке — третім із відставанням 24,220 секунди. Цей фініш сам по собі відкриває сильну історію: майбутній чотириразовий чемпіон вперше перемагає у Формулі-1, а поруч у таблиці — двоє відомих суперників. Саме це доводить протокол. Обставини рестартів, погоди чи тактичних рішень потребують окремих тогочасних джерел, а не припущень за різницею на фініші."
+      },
+      "review_status": "needs_independent_historical_and_translation_review",
+      "approved": false,
+      "media": []
+    },
+    {
+      "id": "schumacher-spa-1992",
+      "driver_id": "michael-schumacher",
+      "event": "Belgian Grand Prix",
+      "date": "1992-08-30",
+      "circuit": "Spa-Francorchamps",
+      "winner": "Michael Schumacher",
+      "source": "https://www.formula1.com/en/results/1992/races/585/belgium/race-result",
+      "locator": "Race Result: Schumacher P1 44 laps 1:36:10.721, Mansell P2 +36.595, Patrese P3 +43.897",
+      "en": {
+        "title": "Spa: a first victory",
+        "body": "On 30 August 1992, Michael Schumacher drove a Benetton-Ford to victory in the Belgian Grand Prix at Spa-Francorchamps. The official record lists 44 laps and a winning time of 1:36:10.721; Nigel Mansell finished second, 36.595 seconds behind, with Riccardo Patrese third. The result gives the story a clear anchor, one year after Schumacher's Formula 1 debut at the same circuit. It does not, by itself, establish the strategic or weather-related explanation for the margin. Those details belong to a separately sourced race narrative."
+      },
+      "uk": {
+        "title": "Спа: перша перемога",
+        "body": "30 серпня 1992 року Міхаель Шумахер на Benetton-Ford переміг на Гран-прі Бельгії на Спа-Франкоршам. Офіційний результат містить 44 кола та час переможця 1:36:10,721; Найджел Менселл фінішував другим із відставанням 36,595 секунди, а Ріккардо Патрезе — третім. Це точна основа оповіді, що розгортається через рік після дебюту Шумахера у Формулі-1 на тій самій трасі. Сам протокол не пояснює стратегії чи ролі погоди в підсумковій перевазі. Для таких деталей необхідна окрема історична перевірка."
+      },
+      "review_status": "needs_independent_historical_and_translation_review",
+      "approved": false,
+      "media": []
+    },
+    {
+      "id": "prost-estoril-1993",
+      "driver_id": "alain-prost",
+      "event": "Portuguese Grand Prix",
+      "date": "1993-09-26",
+      "circuit": "Estoril",
+      "winner": "Michael Schumacher",
+      "source": "https://www.formula1.com/en/results/1993/races/602/portugal/race-result",
+      "locator": "Race Result: Schumacher P1; Prost P2 Williams Renault +0.982s; Hill P3 +8.206s",
+      "en": {
+        "title": "Estoril: second place, fourth title",
+        "body": "At Estoril on 26 September 1993, Alain Prost crossed the line second in the Portuguese Grand Prix for Williams-Renault. Michael Schumacher won in a Benetton-Ford, 0.982 seconds ahead; Prost's team-mate Damon Hill finished third. This was the weekend Prost secured his fourth drivers' championship. The race result illustrates how a title-winning moment does not always require winning that day's Grand Prix. The mathematical championship clinch should be corroborated using the contemporary standings, rather than treated as a conclusion derived from this one result."
+      },
+      "uk": {
+        "title": "Ешторіл: друге місце й четвертий титул",
+        "body": "26 вересня 1993 року в Ешторілі Ален Прост на Williams-Renault фінішував другим на Гран-прі Португалії. Переміг Міхаель Шумахер на Benetton-Ford, випередивши Проста на 0,982 секунди; третім став напарник Проста Деймон Гілл. Саме того вікенду Прост забезпечив собі четвертий чемпіонський титул. Результат нагадує, що чемпіонський момент не обов’язково збігається з перемогою в конкретному Гран-прі. Математичне підтвердження титулу потребує перевірки за тодішнім заліком, а не виведення лише з результату цієї гонки."
+      },
+      "review_status": "needs_independent_historical_and_translation_review",
+      "approved": false,
+      "media": []
+    }
+  ]
+}
