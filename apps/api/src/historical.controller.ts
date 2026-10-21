@@ -370,6 +370,45 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('circuits/:id/layouts')
+  async circuitLayouts(@Param('id') id: string) {
+    const circuitId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows: found } = await this.db.query('SELECT id FROM historical_circuits WHERE id=$1', [circuitId]);
+    if (!found.length) throw new NotFoundException('Circuit not found');
+    const { rows } = await this.db.query(`SELECT l.id::text AS id, l.external_layout_id,
+      l.effective, l.length_km::text, l.turns, l.source_locator,
+      sr.release_tag, sr.sha256 AS release_sha256, l.content_hash,
+      COUNT(f.race_id)::int AS linked_races,
+      MIN(r.season_year) AS first_recorded_year, MAX(r.season_year) AS last_recorded_year
+      FROM historical_circuit_layouts l
+      JOIN source_releases sr ON sr.id=l.release_id
+      LEFT JOIN historical_race_circuit_facts f ON f.layout_id=l.id
+      LEFT JOIN historical_races r ON r.id=f.race_id
+      WHERE l.circuit_id=$1
+      GROUP BY l.id,sr.release_tag,sr.sha256
+      ORDER BY MAX(r.season_year) DESC NULLS LAST,l.external_layout_id`, [circuitId]);
+    return { data: rows };
+  }
+
+  @Get('circuits/:id/technical-history')
+  async circuitTechnicalHistory(@Param('id') id: string) {
+    const circuitId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows: found } = await this.db.query('SELECT id FROM historical_circuits WHERE id=$1', [circuitId]);
+    if (!found.length) throw new NotFoundException('Circuit not found');
+    const { rows } = await this.db.query(`SELECT r.id::text AS race_id,
+      r.season_year, r.round, r.official_name AS race_name,
+      f.layout_id::text, l.external_layout_id, f.course_length_km::text,
+      f.turns, f.laps, f.distance_km::text, f.scheduled_laps,
+      f.scheduled_distance_km::text, f.direction,
+      f.source_locator, sr.release_tag, sr.sha256 AS release_sha256, f.content_hash
+      FROM historical_races r JOIN historical_race_circuit_facts f ON f.race_id=r.id
+      LEFT JOIN historical_circuit_layouts l ON l.id=f.layout_id
+      JOIN source_releases sr ON sr.id=f.release_id
+      WHERE r.circuit_id=$1
+      ORDER BY r.season_year DESC,r.round DESC,r.id DESC`, [circuitId]);
+    return { data: rows };
+  }
+
   @Get('circuits/:id/history')
   async circuitHistory(@Param('id') id: string) {
     const circuitId = integer(id, 0, 1, 2147483647, 'id');

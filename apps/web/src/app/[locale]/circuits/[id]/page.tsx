@@ -1,3 +1,4 @@
+import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
 import { getTranslations } from 'next-intl/server';
@@ -38,11 +39,13 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   if (!validId(id)) notFound();
   const { page } = catalogueParams(await searchParams);
   const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
-  const [[circuit], races, history, identities] = await Promise.all([
+  const [[circuit], races, history, identities, layouts, technicalEvents] = await Promise.all([
     getData<Circuit>(`/api/circuits/${id}`),
     getData<Race>(`/api/circuits/${id}/races?limit=${CIRCUIT_PAGE_SIZE}&offset=${offset}`),
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
     getData<IdentityDetails>(`/api/circuits/${id}/identity`),
+    getData<CircuitLayout>(`/api/circuits/${id}/layouts`),
+    getData<CircuitTechnicalEvent>(`/api/circuits/${id}/technical-history`),
   ]);
   if (!circuit) notFound();
   const chronologicalHistory = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round || Number(a.race_id) - Number(b.race_id));
@@ -66,6 +69,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <StoryHeader title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader} locale={locale as 'uk' | 'en'} marker={circuit.first_season ?? undefined}
       lead={<p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>} />
     <IdentityFacts identity={identities[0]} locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitExperience layouts={layouts} events={technicalEvents} locale={locale === 'en' ? 'en' : 'uk'} />
     <section aria-label={locale === 'uk' ? 'Історичні факти про трасу' : 'Circuit history facts'}>
       <h2>{locale === 'uk' ? 'Паспорт траси' : 'Circuit quick facts'}</h2>
       <div className="driver-grid">
@@ -73,7 +77,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         {circuit.first_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Перше використання у базі' : 'First archived appearance'}</span><h3><Link href={`/seasons/${circuit.first_season}`}>{circuit.first_season}</Link></h3></article>}
         {circuit.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останнє використання у базі' : 'Latest archived appearance'}</span><h3><Link href={`/seasons/${circuit.last_season}`}>{circuit.last_season}</Link></h3></article>}
       </div>
-      <p>{locale === 'uk' ? 'Довжина, кількість поворотів, сектори, DRS і рекорди залежать від конфігурації та року. Поки ці дані не підтверджені, ми не показуємо припущень.' : 'Length, corners, sectors, DRS and lap records depend on the layout and event year. Unverified technical figures are deliberately omitted.'}</p>
+      <p>{locale === 'uk' ? 'Довжина та кількість поворотів нижче наведені за конкретними записами F1DB і не переносяться на інші роки. Сектори, DRS і рекорди без підтверджених джерел не показані.' : 'Lap lengths and corner counts below come from specific F1DB records and are not assumed valid in other years. Sectors, DRS and records without verified evidence are omitted.'}</p>
     </section>
     <section aria-labelledby="circuit-result-legends" data-testid="circuit-result-legends">
       <h2 id="circuit-result-legends">{locale === 'uk' ? 'Пілоти, що неодноразово перемагали тут' : 'Drivers with repeated recorded wins here'}</h2>
