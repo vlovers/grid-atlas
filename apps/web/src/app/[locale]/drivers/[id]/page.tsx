@@ -12,26 +12,11 @@ type Props = { params: Promise<{ id: string; locale: string }>; searchParams: Pr
 function validId(id: string) { return /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647; }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id, locale: rawLocale } = await params;
-  const locale = rawLocale === 'en' ? 'en' : 'uk';
-  const t = await getTranslations({ locale, namespace: 'UI' });
+  const t = await getTranslations('UI');
+  const { id } = await params;
   if (!validId(id)) return { title: t('driverMissing') };
-  const [profiles, article] = await Promise.all([
-    getData<DriverProfile>(`/api/drivers/${id}`),
-    getPublishedArticle(id, locale),
-  ]);
-  const driver = profiles[0];
-  if (!driver) return { title: t('driverMissing') };
-  // Search previews may quote only text that has passed the public publication gate.
-  const approvedSummary = article?.body_markdown
-    .replace(/[#*_~`>]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .slice(0, 155);
-  const description = approvedSummary || (locale === 'uk'
-    ? `Історичний профіль ${driver.name}: сезони, конструктори, гонки та підтверджені записи результатів в архіві Grid Atlas.`
-    : `Historical profile of ${driver.name}: seasons, constructors, races and sourced result records in the Grid Atlas archive.`);
-  return { title: article?.title || driver.name, description };
+  const profiles = await getData<DriverProfile>(`/api/drivers/${id}`);
+  return { title: profiles[0]?.name ?? t('driverMissing') };
 }
 
 export default async function DriverProfilePage({ params, searchParams }: Props) {
