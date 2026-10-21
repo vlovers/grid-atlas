@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; result_entries: number; races: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podium_finishes: number; driver_points: string };
 type Season = { year: number; races: number; wins: number; podium_finishes: number; driver_points: string };
 type Lineage = { id: string; subject_id: string; subject_name: string; object_id: string; object_name: string; relation_type: string; effective_year: number | null; source_url: string; source_title: string; source_publisher: string; evidence_note: string };
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ season?: string | string[] }> };
 const valid = (id: string) => /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations('UI');
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getData<Profile>(`/api/constructors/${id}`);
   return { title: data[0] ? `${data[0].name} — ${t('constructor')}` : t('constructorMissing') };
 }
-export default async function ConstructorProfile({ params }: Props) {
+export default async function ConstructorProfile({ params, searchParams }: Props) {
   const t = await getTranslations('UI');
   const { id } = await params;
   if (!valid(id)) notFound();
@@ -30,6 +30,9 @@ export default async function ConstructorProfile({ params }: Props) {
   const locale = await getLocale() as 'uk' | 'en';
   const team = profiles[0];
   if (!team) notFound();
+  const query = await searchParams;
+  const requestedYear = typeof query.season === 'string' && /^\d{4}$/.test(query.season) ? Number(query.season) : null;
+  const selectedSeason = seasons.find(season => season.year === requestedYear) ?? seasons.at(-1);
   return <section className="page">
     <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
     <div className="driver-grid" aria-label={t('constructorStats')}>
@@ -49,6 +52,22 @@ export default async function ConstructorProfile({ params }: Props) {
       </div>
       <p>{locale === 'uk' ? 'Показники відображають зафіксовані результати перегонів, а не офіційні очки чи місце в Кубку конструкторів. Технічні характеристики болідів і керівництво команди будуть показані лише після перевірки джерел для конкретного року.' : 'Figures reflect recorded race results, not official Constructors’ Championship points or standings. Chassis, engine and team leadership require independently verified season-specific sources.'}</p>
     </section>
+    {selectedSeason && <section aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
+      <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
+      <nav className="timeline-scroll" aria-label={locale === 'uk' ? 'Оберіть сезон' : 'Select a season'}>
+        {seasons.map(season => <Link key={season.year} href={`/constructors/${id}?season=${season.year}`}
+          aria-current={selectedSeason.year === season.year ? 'page' : undefined}
+          className={selectedSeason.year === season.year ? 'timeline-year active' : 'timeline-year'}>{season.year}</Link>)}
+      </nav>
+      <div className="driver-grid">
+        {([[locale === 'uk' ? 'Гонки' : 'Races', selectedSeason.races],
+          [locale === 'uk' ? 'Перемоги' : 'Wins', selectedSeason.wins],
+          [locale === 'uk' ? 'Подіуми пілотів' : 'Driver podium entries', selectedSeason.podium_finishes],
+          [locale === 'uk' ? 'Очки пілотів у результатах' : 'Driver result points', selectedSeason.driver_points]] as const).map(([label, value]) =>
+          <article className="driver" key={label}><span className="index">{label}</span><h3>{value}</h3></article>)}
+      </div>
+      <p>{locale === 'uk' ? 'Це статистика результатів гонок, а не офіційний залік Кубка конструкторів. Склад пілотів і технічні дані за сезонами потребують окремих підтверджених записів.' : 'These are race-result statistics, not official Constructors’ Championship standings. Season-specific lineups and technical facts require separately verified records.'}</p>
+    </section>}
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>
