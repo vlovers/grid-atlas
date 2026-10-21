@@ -30,6 +30,16 @@ export default async function RacePage({ params }: Props) {
   return <section className="page">
     <StoryHeader title={race.official_name} eyebrow={`${storyCopy[locale].raceHeader} / ${race.season_year} · ${t('round', { round: race.round })}`} locale={locale} kind="grid" marker={race.season_year}
       lead={<p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>} />
+    <section aria-label={locale === 'uk' ? 'Паспорт Гран-прі' : 'Grand Prix quick facts'}>
+      <h2>{locale === 'uk' ? 'Гран-прі в цифрах' : 'Grand Prix at a glance'}</h2>
+      <div className="driver-grid">
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Сезон' : 'Season'}</span><h3><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></h3></article>
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Раунд' : 'Round'}</span><h3>{race.round}</h3></article>
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Показані записи результатів' : 'Displayed result entries'}</span><h3>{results.length}</h3></article>
+        {race.circuit_id && race.circuit_name && <article className="driver"><span className="index">{locale === 'uk' ? 'Траса' : 'Circuit'}</span><h3><Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name}</Link></h3></article>}
+      </div>
+      <p>{locale === 'uk' ? 'Таблиця показує не більше 100 записів, а не обов’язково повний склад учасників. Кількість записів не завжди дорівнює кількості унікальних пілотів або стартових автомобілів: історичні гонки включали спільні автомобілі. Дані практик, кваліфікації, погоди та шин не виводяться без окремих підтверджених джерел.' : 'The table shows up to 100 result entries, not necessarily the full field. Entries do not necessarily equal unique drivers or starting cars: historical races included shared drives. Practice, qualifying, weather and tyre data require separate verified sources.'}</p>
+    </section>
     <h2>{t('raceResults')}</h2>
     <p>{t('raceResultsLead')}</p>
     <p className="mobile-hint">{t('scrollTable')}</p>

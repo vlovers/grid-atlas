@@ -9,15 +9,15 @@ import type { MediaAsset } from '@/components/media/registry';
 import { selectMedia } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
 import { driverArchiveOverview, raceMoments, seasonPoints, teamEras, timeMachinePath,
-  type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam } from './showcase-model';
+  type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam, type DriverSeasonResult } from './showcase-model';
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
 type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[];
-  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string };
+  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[] };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults }: Props) {
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
   const opening = openingRecord(career);
@@ -69,6 +69,23 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       <p className={styles.heroScope}>{t.scope}</p>
     </header>
 
+    {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
+      <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
+        title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
+        note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
+      <dl className={styles.quickFacts}>
+        {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
+        {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
+        <div><dt>{locale === 'uk' ? 'Команди за кар’єру' : 'Career constructors'}</dt>
+          <dd>{new Set(career.participation.map(row => row.related_id)).size}</dd></div>
+        <div><dt>{locale === 'uk' ? 'Зафіксовані результати' : 'Recorded result entries'}</dt>
+          <dd>{format(career.summary.result_entries)}</dd></div>
+      </dl>
+      <p>{locale === 'uk' ? 'Титули чемпіона світу, поул-позиції та сходи не виводяться без окремого перевіреного джерела. Кількість команд означає унікальні ідентифікатори конструкторів у результатах.' : 'World titles, pole positions and retirements are not inferred without separately verified sources. Constructor count reflects distinct constructor IDs in race results.'}</p>
+    </section>}
+
     <nav className={styles.chapters} aria-label={t.chapters}>
       {[[t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'],
         [t.biography, 'driver-biography'], [t.statistics, 'driver-archive']].map(([label, anchor], index) =>
@@ -97,6 +114,50 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
           <div><span className={styles.kicker}>{t.season}</span><h3>{selected.year}</h3><a className={styles.textLink} href={`/${locale}/seasons/${selected.year}`}>{t.seasonsTable} ↗</a></div>
           <dl>{[{ label: t.resultEntries, value: selected.starts }, { label: t.winningEntries, value: selected.wins },
             { label: t.podiums, value: selected.podiums }].map(fact => <div key={fact.label}><dt>{fact.label}</dt><dd>{format(fact.value)}</dd></div>)}</dl>
+          <div>
+            <h4>{locale === 'uk' ? 'Команди цього сезону' : 'Teams this season'}</h4>
+            <ul>{teams.filter(team => team.year === selected.year).map(team =>
+              <li key={team.constructor_id}><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name}</a> · {format(team.races)} {t.races}</li>)}</ul>
+            <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}{seasonPoints(selected, career?.participation ?? []).partial && <> · {t.partialPoints}</>}</p>
+            <p>{locale === 'uk' ? 'Позиція в чемпіонаті, поули й сходи не виводяться без перевірених сезонних даних.' : 'Championship position, poles and retirements are omitted until verified season data is available.'}</p>
+          </div>
+          {career && <div className={styles.seasonTeamBreakdown}>
+            <h4>{locale === 'uk' ? 'Результати за командами' : 'Results by constructor'} · {selected.year}</h4>
+            <div className={styles.seasonTeamRows}>
+              {career.participation.filter(row => row.year === selected.year).map(row => <article key={row.related_id}>
+                <h5><a href={`/${locale}/constructors/${row.related_id}?season=${selected.year}`}>{row.related_name}</a></h5>
+                <dl>
+                  <div><dt>{locale === 'uk' ? 'Гонки' : 'Races'}</dt><dd>{format(row.races)}</dd></div>
+                  <div><dt>{locale === 'uk' ? 'Записи результатів' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
+                  <div><dt>{locale === 'uk' ? 'Переможні гонки' : 'Winning races'}</dt><dd>{format(row.winning_races)}</dd></div>
+                </dl>
+                <p>{locale === 'uk' ? 'Очки у результатах' : 'Recorded result points'}: {row.recorded_points ?? t.unavailable}{row.points_missing > 0 ? ` · ${locale === 'uk' ? 'Є пропуски' : 'Incomplete'}` : ''}</p>
+                <p><a href={`/${locale}/races/${row.first_race.id}`}>{locale === 'uk' ? 'Перша гонка' : 'First race'} ↗</a> · <a href={`/${locale}/races/${row.last_race.id}`}>{locale === 'uk' ? 'Остання гонка' : 'Last race'} ↗</a></p>
+              </article>)}
+            </div>
+            <p>{locale === 'uk' ? 'Групування за конструктором у записах гонок, не за контрактами. Спільні автомобілі та відсутні очки можуть впливати на підсумки.' : 'Grouped by constructor in recorded race results, not by contracts. Shared cars and missing points may affect totals.'}</p>
+          </div>}
+          <section className={styles.seasonRaceLedger} aria-label={locale === 'uk' ? 'Результати гонок обраного сезону' : 'Selected season race results'}>
+            <h4>{locale === 'uk' ? 'Усі результати гонок' : 'Race-by-race results'} · {selected.year}</h4>
+            <p>{locale === 'uk' ? 'Кожен запис результату показано окремо: спільні автомобілі можуть створювати кілька записів для одного Гран-прі. Це не офіційна таблиця чемпіонату.' : 'Every recorded result entry is preserved; shared cars may produce multiple entries per Grand Prix. This is not an official championship classification.'}</p>
+            {seasonResults.length ? <div className={styles.raceTableScroll}><table>
+              <thead><tr>
+                <th>{locale === 'uk' ? 'Етап' : 'Round'}</th>
+                <th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th>
+                <th>{locale === 'uk' ? 'Команда' : 'Constructor'}</th>
+                <th>{locale === 'uk' ? 'Результат' : 'Result'}</th>
+                <th>{locale === 'uk' ? 'Кола' : 'Laps'}</th>
+                <th>{locale === 'uk' ? 'Очки' : 'Points'}</th>
+              </tr></thead>
+              <tbody>{seasonResults.map((result, index) => <tr key={`${result.race_id}:${result.constructor_id}:${result.position_display_order}:${index}`}>
+                <td>{result.round}</td>
+                <td><a href={`/${locale}/races/${result.race_id}`}>{result.race_name}</a>{result.race_date && <small>{result.race_date}</small>}</td>
+                <td><a href={`/${locale}/constructors/${result.constructor_id}?season=${selected.year}`}>{result.constructor_name}</a></td>
+                <td>{result.position_text}{result.shared_car && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}{result.reason_retired && <small>{result.reason_retired}</small>}</td>
+                <td>{result.laps ?? '—'}</td><td>{result.points ?? '—'}</td>
+              </tr>)}</tbody>
+            </table></div> : <p>{locale === 'uk' ? 'Результатів у цьому сезоні немає.' : 'No race results recorded for this season.'}</p>}
+          </section>
           <a className={styles.outlineLink} href={`/${locale}/explorer/drivers/${driver.id}?year=${selected.year}`}>{t.exploreConnections} ↗</a>
         </section>}
       </div>}

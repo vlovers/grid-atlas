@@ -8,6 +8,7 @@ import { getData } from '@/lib/api';
 export const dynamic = 'force-dynamic';
 type Profile = { id: string; name: string; external_id: string; result_entries: number; races: number; seasons: number; first_season: number | null; last_season: number | null; wins: number; podium_finishes: number; driver_points: string };
 type Season = { year: number; races: number; wins: number; podium_finishes: number; driver_points: string };
+type DriverRoster = { driver_id: string; driver_name: string; races: number; wins: number };
 type ConstructorCareer = {
   summary: { races: number; result_entries: number; winning_races: number };
   participation: { year: number; related_id: string; related_name: string;
@@ -18,7 +19,7 @@ type ConstructorCareer = {
     first_win: { race: { id: string; name: string; year: number } } | null };
 };
 type Lineage = { id: string; subject_id: string; subject_name: string; object_id: string; object_name: string; relation_type: string; effective_year: number | null; source_url: string; source_title: string; source_publisher: string; evidence_note: string };
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ id: string }>; searchParams: Promise<{ season?: string | string[] }> };
 const valid = (id: string) => /^[1-9][0-9]*$/.test(id) && Number(id) <= 2147483647;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations('UI');
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getData<Profile>(`/api/constructors/${id}`);
   return { title: data[0] ? `${data[0].name} — ${t('constructor')}` : t('constructorMissing') };
 }
-export default async function ConstructorProfile({ params }: Props) {
+export default async function ConstructorProfile({ params, searchParams }: Props) {
   const t = await getTranslations('UI');
   const { id } = await params;
   if (!valid(id)) notFound();
@@ -48,16 +49,54 @@ export default async function ConstructorProfile({ params }: Props) {
   }
   const drivers = [...driverYears.values()].sort((a,b) => Math.min(...a.years) - Math.min(...b.years) || a.name.localeCompare(b.name));
   if (!team) notFound();
+  const query = await searchParams;
+  const requestedYear = typeof query.season === 'string' && /^\d{4}$/.test(query.season) ? Number(query.season) : null;
+  const selectedSeason = seasons.find(season => season.year === requestedYear) ?? seasons.reduce<Season | undefined>((latest, season) => !latest || season.year > latest.year ? season : latest, undefined);
+  const firstRecordedSeason = seasons.reduce<Season | undefined>((earliest, season) => !earliest || season.year < earliest.year ? season : earliest, undefined);
+  const roster = selectedSeason ? await getData<DriverRoster>(`/api/constructors/${id}/seasons/${selectedSeason.year}/drivers`) : [];
   return <section className="page">
     <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
     <div className="driver-grid" aria-label={t('constructorStats')}>
       {([[t('seasons'),team.seasons],[t('races'),team.races],[t('wins'),team.wins],[t('driverPodiums'),team.podium_finishes],[t('driverPoints'),team.driver_points]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
     </div>
     {seasons.length > 0 && <p>
-      <Link href={`/explorer/constructors/${id}?year=${seasons[0].year}`}>
-        {t('constructor')}: {t('season')} {seasons[0].year} → Explorer
+      <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason?.year}`}>
+        {t('constructor')}: {t('season')} {firstRecordedSeason?.year} → Explorer
       </Link>
     </p>}
+    <section aria-label={locale === 'uk' ? 'Історичний профіль команди' : 'Constructor history facts'}>
+      <h2>{locale === 'uk' ? 'Історичні факти' : 'Historical quick facts'}</h2>
+      <div className="driver-grid">
+        {team.first_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Перший сезон у базі' : 'First recorded season'}</span><h3><Link href={`/seasons/${team.first_season}`}>{team.first_season}</Link></h3></article>}
+        {team.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останній сезон у базі' : 'Latest recorded season'}</span><h3><Link href={`/seasons/${team.last_season}`}>{team.last_season}</Link></h3></article>}
+        <article className="driver"><span className="index">{locale === 'uk' ? 'Подіуми пілотів у результатах' : 'Driver podium result entries'}</span><h3>{team.podium_finishes}</h3></article>
+      </div>
+      <p>{locale === 'uk' ? 'Показники відображають зафіксовані результати перегонів, а не офіційні очки чи місце в Кубку конструкторів. Технічні характеристики болідів і керівництво команди будуть показані лише після перевірки джерел для конкретного року.' : 'Figures reflect recorded race results, not official Constructors’ Championship points or standings. Chassis, engine and team leadership require independently verified season-specific sources.'}</p>
+    </section>
+    {selectedSeason && <section aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
+      <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
+      <nav className="timeline-scroll" aria-label={locale === 'uk' ? 'Оберіть сезон' : 'Select a season'}>
+        {seasons.map(season => <Link key={season.year} href={`/constructors/${id}?season=${season.year}`}
+          aria-current={selectedSeason.year === season.year ? 'page' : undefined}
+          className={selectedSeason.year === season.year ? 'timeline-year active' : 'timeline-year'}>{season.year}</Link>)}
+      </nav>
+      <div className="driver-grid">
+        {([[locale === 'uk' ? 'Гонки' : 'Races', selectedSeason.races],
+          [locale === 'uk' ? 'Перемоги' : 'Wins', selectedSeason.wins],
+          [locale === 'uk' ? 'Подіуми пілотів' : 'Driver podium entries', selectedSeason.podium_finishes],
+          [locale === 'uk' ? 'Очки пілотів у результатах' : 'Driver result points', selectedSeason.driver_points]] as const).map(([label, value]) =>
+          <article className="driver" key={label}><span className="index">{label}</span><h3>{value}</h3></article>)}
+      </div>
+      <p>{locale === 'uk' ? 'Це статистика результатів гонок, а не офіційний залік Кубка конструкторів. Склад пілотів і технічні дані за сезонами потребують окремих підтверджених записів.' : 'These are race-result statistics, not official Constructors’ Championship standings. Season-specific lineups and technical facts require separately verified records.'}</p>
+    </section>}
+    {selectedSeason && <section aria-label={locale === 'uk' ? 'Пілоти команди в обраному сезоні' : 'Constructor drivers in selected season'}>
+      <h2>{locale === 'uk' ? 'Пілоти сезону' : 'Season driver roster'} · {selectedSeason.year}</h2>
+      {roster.length > 0 ? <div className="lineup-grid">{roster.map(driver => <article className="lineup-team" key={driver.driver_id}>
+        <h3><Link href={`/drivers/${driver.driver_id}`}>{driver.driver_name}</Link></h3>
+        <p>{locale === 'uk' ? 'Гонки з результатами' : 'Races with recorded results'}: {driver.races} · {locale === 'uk' ? 'Перемоги' : 'Wins'}: {driver.wins}</p>
+      </article>)}</div> : <p>{locale === 'uk' ? 'У цьому сезоні немає записів про пілотів.' : 'No driver entries are recorded for this season.'}</p>}
+      <p>{locale === 'uk' ? 'Склад сформовано з результатів перегонів, а не з контрактів або заявок на весь сезон.' : 'This roster is derived from race results, not full-season contracts or entry lists.'}</p>
+    </section>}
     <section aria-labelledby="constructor-archive-overview" data-testid="constructor-archive-overview">
       <h2 id="constructor-archive-overview">{locale === 'uk' ? 'Історія за результатами' : 'History through race results'}</h2>
       <p>{locale === 'uk'

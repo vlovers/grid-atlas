@@ -122,6 +122,24 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('drivers/:id/seasons/:year/results')
+  async driverSeasonResults(@Param('id') id: string, @Param('year') year: string) {
+    const driverId = integer(id, 0, 1, 2147483647, 'id');
+    const seasonYear = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query(`SELECT r.id::text AS race_id, r.round,
+      r.race_date::text AS race_date, r.official_name AS race_name,
+      c.id::text AS constructor_id, c.display_name AS constructor_name,
+      rr.position_display_order, rr.position_number, rr.position_text,
+      rr.points::text AS points, rr.laps, rr.reason_retired, rr.shared_car
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_constructors c ON c.id = rr.constructor_id
+      WHERE rr.driver_id = $1 AND r.season_year = $2
+      ORDER BY r.round, r.race_date NULLS LAST, r.id, rr.position_display_order, rr.id`,
+      [driverId, seasonYear]);
+    return { data: rows };
+  }
+
   @Get('drivers/:id/teams')
   async driverTeams(@Param('id') id: string) {
     const driverId = integer(id, 0, 1, 2147483647, 'id');
@@ -256,6 +274,22 @@ export class HistoricalController {
     return { data: rows };
   }
 
+  @Get('constructors/:id/seasons/:year/drivers')
+  async constructorSeasonDrivers(@Param('id') id: string, @Param('year') year: string) {
+    const constructorId = integer(id, 0, 1, 2147483647, 'id');
+    const seasonYear = integer(year, 1950, 1950, 2200, 'year');
+    const { rows } = await this.db.query(`SELECT d.id::text AS driver_id, d.display_name AS driver_name,
+      COUNT(DISTINCT rr.race_id)::int AS races,
+      COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number = 1)::int AS wins
+      FROM historical_race_results rr
+      JOIN historical_races r ON r.id = rr.race_id
+      JOIN historical_drivers d ON d.id = rr.driver_id
+      WHERE rr.constructor_id = $1 AND r.season_year = $2
+      GROUP BY d.id, d.display_name ORDER BY races DESC, d.display_name, d.id`,
+      [constructorId, seasonYear]);
+    return { data: rows };
+  }
+
   @Get('circuits')
   async circuits(@Query('limit') limit?: string, @Query('offset') offset?: string, @Query('q') query?: string) {
     const l = integer(limit, 50, 1, 100, 'limit');
@@ -277,6 +311,28 @@ export class HistoricalController {
       LEFT JOIN historical_races r ON r.circuit_id = c.id
       WHERE c.id = $1 GROUP BY c.id, c.display_name, e.external_id`, [circuitId]);
     if (!rows.length) throw new NotFoundException('Circuit not found');
+    return { data: rows };
+  }
+
+  @Get('circuits/:id/history')
+  async circuitHistory(@Param('id') id: string) {
+    const circuitId = integer(id, 0, 1, 2147483647, 'id');
+    const { rows } = await this.db.query(`SELECT r.id::text AS race_id, r.season_year,
+      r.round, r.race_date::text AS race_date, r.official_name AS race_name,
+      COUNT(DISTINCT rr.driver_id)::int AS recorded_drivers,
+      COUNT(DISTINCT rr.constructor_id)::int AS recorded_constructors,
+      COUNT(DISTINCT rr.driver_id) FILTER (WHERE rr.position_number = 1)::int AS winner_entries,
+      COALESCE(json_agg(DISTINCT jsonb_build_object(
+        'driver_id', d.id::text, 'driver_name', d.display_name,
+        'constructor_id', c.id::text, 'constructor_name', c.display_name
+      )) FILTER (WHERE rr.position_number = 1), '[]'::json) AS winners
+      FROM historical_races r
+      LEFT JOIN historical_race_results rr ON rr.race_id = r.id
+      LEFT JOIN historical_drivers d ON d.id = rr.driver_id
+      LEFT JOIN historical_constructors c ON c.id = rr.constructor_id
+      WHERE r.circuit_id = $1
+      GROUP BY r.id, r.season_year, r.round, r.race_date, r.official_name
+      ORDER BY r.season_year DESC, r.round DESC, r.id DESC`, [circuitId]);
     return { data: rows };
   }
 

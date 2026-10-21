@@ -52,7 +52,7 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
       await page.goto(path('/circuits?q=circuit-fixture'));
       await page.locator('.driver-grid > a').click();
       await expect(page.getByRole('heading', { level: 1 })).toHaveText('100%_ Test Circuit');
-      await page.getByRole('link', { name: /Synthetic shared-car race/ }).click();
+      await page.getByRole('link', { name: 'Synthetic shared-car race', exact: true }).click();
       await expect(page.getByRole('heading', { level: 1 })).toHaveText('Synthetic shared-car race');
       await expect(page.getByText(t.sharedCar, { exact: true })).toHaveCount(2);
       await expect(page.getByRole('link', { name: 'driver-a ↗' })).toHaveAttribute('href', path('/drivers/1'));

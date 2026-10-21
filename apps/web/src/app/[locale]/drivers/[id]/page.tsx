@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getData, getPublishedArticle } from '@/lib/api';
 import { DriverShowcase } from '@/components/driver/driver-showcase';
-import type { DriverProfile, DriverCareer, DriverSeason, DriverTeam } from '@/components/driver/showcase-model';
+import type { DriverProfile, DriverCareer, DriverSeason, DriverTeam, DriverSeasonResult } from '@/components/driver/showcase-model';
 import type { MediaAsset } from '@/components/media/registry';
 import mediaPublication from '@/components/media/publication.json';
 
@@ -30,7 +30,11 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
+  const selectedYear = typeof query.season === 'string' && /^[0-9]{4}$/.test(query.season) ? Number(query.season) : null;
+  const defaultYear = seasons.reduce<number | null>((year, season) => year === null || season.year > year ? season.year : year, null);
+  const year = selectedYear !== null && seasons.some(season => season.year === selectedYear) ? selectedYear : defaultYear;
+  const seasonResults = year === null ? [] : await getData<DriverSeasonResult>(`/api/drivers/${id}/seasons/${year}/results`);
   return <DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
     article={article} media={mediaPublication.assets as MediaAsset[]} locale={locale}
-    selectedSeason={typeof query.season === 'string' ? query.season : undefined} />;
+    selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />;
 }

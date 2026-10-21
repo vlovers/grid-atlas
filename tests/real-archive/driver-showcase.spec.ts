@@ -26,7 +26,13 @@ for (const locale of ['uk', 'en'] as const) {
       const nav = profile.getByRole('navigation', { name: locale === 'uk' ? 'Навігація за зафіксованими сезонами' : 'Recorded season navigation' });
       await expect(nav.getByRole('link')).toHaveCount(seasons.length);
       await expect(profile.locator('details[open]')).toHaveCount(0);
-      await expect(profile.getByRole('table')).toHaveCount(0);
+      // The selected-season race ledger is intentionally visible; detailed archival
+      // tables must remain closed until a reader expands their disclosures.
+      const ledger = profile.getByRole('region', { name: locale === 'uk' ? 'Результати гонок обраного сезону' : 'Selected season race results' });
+      await expect(ledger.getByRole('table')).toHaveCount(1);
+      const latestYear = Math.max(...seasons.map((season: { year: number }) => season.year));
+      const raceResults = (await (await request.get(`${api}/api/drivers/${identity.id}/seasons/${latestYear}/results`)).json()).data;
+      await expect(ledger.locator('tbody tr')).toHaveCount(raceResults.length);
       await expect(profile.locator('img')).toHaveCount(0);
       await expect(profile.getByText(locale === 'uk' ? 'Біографія очікує на публікацію' : 'Biography awaiting publication', { exact: true })).toBeVisible();
       expect((await request.get(`${api}/api/drivers/${identity.id}/article?locale=${locale}`)).status()).toBe(404);
