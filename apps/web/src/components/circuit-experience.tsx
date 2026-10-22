@@ -43,6 +43,7 @@ const labels = {
     yearBrowse: 'Досліджуйте за сезоном', yearHint: 'Оберіть рік, щоб переглянути конфігурацію, використану в архівних перегонах.',
     yearSelected: 'Вибраний сезон', noLayoutForYear: 'Для цього сезону немає пов’язаної конфігурації.',
     compare: 'Порівняння конфігурацій', compareHint: 'Порівняння лише параметрів, зафіксованих у F1DB для кожної конфігурації; це не оцінка швидкості чи складності.',
+    yearLayouts: 'Конфігурації цього сезону', yearLayoutHint: 'Оберіть конфігурацію, якщо в одному сезоні зафіксовано декілька.',
     exploreTimeline: 'Хронологія Гран-прі', timelineHint: 'Оберіть зафіксований сезон, щоб переглянути конфігурацію та пов’язані перегони.',
     compareYear: 'Зафіксовані роки', compareMissing: 'Немає достатньо даних для порівняння.',
     previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Гран-прі обраного сезону', clearYear: 'Показати всі роки',
@@ -67,6 +68,7 @@ const labels = {
     yearBrowse: 'Explore by season', yearHint: 'Choose a year to see the layout recorded for its Grands Prix.',
     yearSelected: 'Selected season', noLayoutForYear: 'No linked layout is recorded for this season.',
     compare: 'Layout comparison', compareHint: 'Compare only measurements recorded by F1DB for each layout. This is not a speed or difficulty ranking.',
+    yearLayouts: 'Layouts in this season', yearLayoutHint: 'Choose a layout when multiple are recorded for one season.',
     exploreTimeline: 'Grand Prix timeline', timelineHint: 'Choose a recorded season to inspect its layout and linked races.',
     compareYear: 'Recorded years', compareMissing: 'Not enough layout data to compare.',
     previous: 'Previous season', next: 'Next season', seasonEvents: 'Grands Prix in selected season', clearYear: 'Show all years',
@@ -87,6 +89,7 @@ export function CircuitExperience({ layouts, events, locale }: {
     setSelectedYear(year); setSelected(event.layout_id); setShowAll(false);
   };
   const yearIndex = selectedYear === null ? -1 : recordedYears.indexOf(selectedYear);
+  const yearLayouts = selectedYear === null ? [] : layouts.filter(layout => events.some(event => event.season_year === selectedYear && event.layout_id === layout.id));
   const current = layouts.find(l => l.id === selected);
   const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
   const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
@@ -111,6 +114,14 @@ export function CircuitExperience({ layouts, events, locale }: {
         {selectedYear !== null && <button type="button" className={styles.clearYear} onClick={() => { setSelectedYear(null); setShowAll(false); }}>{t.clearYear}</button>}
       </div>
     </div>}
+    {yearLayouts.length > 1 && <fieldset className={styles.yearLayouts} data-testid="circuit-year-layouts">
+      <legend>{t.yearLayouts}</legend><p>{t.yearLayoutHint}</p>
+      <div>{yearLayouts.map(layout => <label key={layout.id}>
+        <input type="radio" name="circuit-year-layout" value={layout.id} checked={selected === layout.id}
+          onChange={() => { setSelected(layout.id); setShowAll(false); }} />
+        <span>{layout.external_layout_id}</span>
+      </label>)}</div>
+    </fieldset>}
     <figure className={styles.trackVisual} data-testid="circuit-track-visual">
       <div className={styles.trackGlow} aria-hidden="true" />
       {artwork ? <>
