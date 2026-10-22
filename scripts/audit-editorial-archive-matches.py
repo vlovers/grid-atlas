@@ -19,7 +19,7 @@ def validate(evidence,leads):
         if not item.get("date","").startswith(str(item.get("year"))):errors.append(f"{sid}: year mismatch")
         if not item.get("official_name") or not item.get("circuit_external_id") or not item.get("winner",{}).get("driver_external_id") or not item.get("winner",{}).get("constructor_external_id"):errors.append(f"{sid}: incomplete event")
         claim=expected.get(sid,{}).get("claims",[{}])[0]
-        m=re.search(r"-(19\\d{2}|20\\d{2})-winner$",claim.get("id",""))
+        m=re.search(r"-(19\d{2}|20\d{2})-winner$",claim.get("id",""))
         if m and int(m.group(1))!=item.get("year"):errors.append(f"{sid}: lead year mismatch")
         if sid.startswith("constructor-") and item.get("winner",{}).get("constructor_external_id") not in {"williams","mercedes","red-bull"}:errors.append(f"{sid}: constructor not associated with winner")
     return errors
