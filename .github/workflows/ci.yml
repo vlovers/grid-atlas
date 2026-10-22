@@ -27,3 +27,8 @@ jobs:
         run: npm test
       - name: Run all offline Python tests
         run: python3 -m unittest discover -s tests -v
+      - name: Audit repository assets (read-only)
+        run: python3 scripts/audit-repository-assets.py --json > /tmp/grid-atlas-repository-audit.json
+      - name: Audit local documentation links (informational)
+        continue-on-error: true
+        run: python3 scripts/audit-doc-links.py --json | tee /tmp/grid-atlas-doc-links.json
