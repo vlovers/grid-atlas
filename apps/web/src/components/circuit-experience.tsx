@@ -90,6 +90,7 @@ export function CircuitExperience({ layouts, events, locale }: {
   const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
   const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
+  const timelineYears = [...new Set(events.map(e => e.season_year))].sort((a, b) => a - b);
   const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
   const maxYear = events.length ? Math.max(...events.map(e => e.season_year)) : null;
   return <section className={styles.shell} aria-labelledby="circuit-experience-title" data-testid="circuit-experience">
@@ -160,9 +161,9 @@ export function CircuitExperience({ layouts, events, locale }: {
     {minYear !== null && maxYear !== null && <div className={styles.timeline} aria-label={t.notMap}>
       <div className={styles.timelineHeading}><strong>{minYear}</strong><span>{t.notMap}</span><strong>{maxYear}</strong></div>
       <div className={styles.timelineBar} aria-hidden="true">
-        {events.slice(0, 120).map(e => <span key={e.race_id}
-          className={selected && e.layout_id !== selected ? styles.dimmed : ''}
-          style={{ left: `${maxYear === minYear ? 50 : ((e.season_year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
+        {timelineYears.map(year => <span key={year}
+          className={selected && !events.some(e => e.season_year === year && e.layout_id === selected) ? styles.dimmed : ''}
+          style={{ left: `${maxYear === minYear ? 50 : ((year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
       </div>
     </div>}
     <h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`}</h3>
