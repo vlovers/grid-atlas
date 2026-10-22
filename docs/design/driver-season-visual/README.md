@@ -5,7 +5,7 @@ This is a reusable, server-rendered **data visualization**, not an AI-generated 
 ## Historical semantics
 - `starts` is the API's recorded season result-entry measure, not a claim about race starts under all historical regulations.
 - `wins` and `podiums` are archive-derived result counts; do not infer titles, poles, retirements or official championship standings.
-- Bar heights are independently normalized for starts and wins, and this is explicitly disclosed. Do not compare the *absolute heights across series*.
+- Bar heights are independently normalized for result entries, wins and podiums, and this is explicitly disclosed. Do not compare the *absolute heights across series*.
 - Exact counts remain in screen-reader labels and the detailed season ledger. Missing seasons are not interpolated.
 - Clicking a year selects that season via a regular URL. No-JavaScript navigation works.
 
