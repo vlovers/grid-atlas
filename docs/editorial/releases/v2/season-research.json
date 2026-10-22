@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "status": "source_located_season_research_unapproved",
+  "as_of": "2026-10-22",
+  "scope": "Four additional UK/EN seasons with official standings and bounded race context; no claims of independent human review.",
+  "items": [
+    {
+      "subject_id": "season-1976",
+      "title": {
+        "en": "1976 — one point between Hunt and Lauda",
+        "uk": "1976 — одне очко між Гантом і Лаудою"
+      },
+      "lead": {
+        "en": "James Hunt finished the 1976 drivers' championship with 69 points, one ahead of Niki Lauda on 68. The result is a narrow numerical conclusion to a season whose race-by-race record needs to be read on its own terms.",
+        "uk": "Джеймс Гант завершив чемпіонат пілотів 1976 року з 69 очками, випередивши Нікі Лауду на одне очко. Ця мінімальна різниця — підсумок сезону, події якого потрібно розглядати за окремими протоколами гонок."
+      },
+      "claim_records": [
+        {
+          "id": "1976-final-top-two",
+          "type": "official_classification",
+          "text": {
+            "en": "The 1976 drivers' championship ended with James Hunt first (69 points) and Niki Lauda second (68 points).",
+            "uk": "У чемпіонаті пілотів 1976 року James Hunt посів перше місце (69 очок), а Niki Lauda — друге (68 очок)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1976/drivers",
+            "locator": "1976 Drivers' Standings, positions 1–2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "1976-japan-result",
+          "type": "event_context",
+          "text": {
+            "en": "Lauda's Japan entry is recorded as DNF in the official driver-by-race table.",
+            "uk": "У таблиці результатів Лауди за гонками етап у Японії позначено як DNF."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1976/drivers/NIKLAU01/niki-lauda",
+            "locator": "Niki Lauda 1976 driver standings, Japan 24 Oct DNF",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "editorial_sections": [
+        {
+          "id": "classification",
+          "title": {
+            "en": "The official final table",
+            "uk": "Офіційна підсумкова таблиця"
+          },
+          "body": {
+            "en": "James Hunt finished the 1976 drivers' championship with 69 points, one ahead of Niki Lauda on 68. The result is a narrow numerical conclusion to a season whose race-by-race record needs to be read on its own terms.",
+            "uk": "Джеймс Гант завершив чемпіонат пілотів 1976 року з 69 очками, випередивши Нікі Лауду на одне очко. Ця мінімальна різниця — підсумок сезону, події якого потрібно розглядати за окремими протоколами гонок."
+          },
+          "claim_ids": [
+            "1976-final-top-two"
+          ]
+        },
+        {
+          "id": "interpretation",
+          "title": {
+            "en": "Beyond the final margin",
+            "uk": "Поза підсумковою різницею"
+          },
+          "body": {
+            "en": "A season cannot be reduced to a championship margin. The next research pass must follow the individual race classifications and the scoring rules in force that year before drawing conclusions about turning points.",
+            "uk": "Історію сезону не можна звести до різниці очок. Наступний етап дослідження має простежити протоколи окремих гонок і правила нарахування очок того року, перш ніж робити висновки про поворотні моменти."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "unapproved_research",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2008",
+      "title": {
+        "en": "2008 — a championship by one point",
+        "uk": "2008 — чемпіонат із перевагою в одне очко"
+      },
+      "lead": {
+        "en": "Lewis Hamilton took the 2008 drivers' title with 98 points against Felipe Massa's 97. The Brazilian Grand Prix closed the season with Massa as the race winner, while the championship classification favored Hamilton.",
+        "uk": "Льюїс Гамільтон здобув титул 2008 року з 98 очками проти 97 у Феліпе Масси. Сезон завершився Гран-прі Бразилії, який виграв Масса, тоді як підсумкова класифікація чемпіонату залишила першість Гамільтону."
+      },
+      "claim_records": [
+        {
+          "id": "2008-final-top-two",
+          "type": "official_classification",
+          "text": {
+            "en": "The 2008 drivers' championship ended with Lewis Hamilton first (98 points) and Felipe Massa second (97 points).",
+            "uk": "У чемпіонаті пілотів 2008 року Lewis Hamilton посів перше місце (98 очок), а Felipe Massa — друге (97 очок)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/latest/article/history-re-written-how-fastest-lap-points-would-have-swung-two-key.4M4gV6GjUMhnoeNhi18rsY",
+            "locator": "2008, ACTUAL RESULT table",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "2008-brazil-result",
+          "type": "event_context",
+          "text": {
+            "en": "Felipe Massa won the 2008 Brazilian Grand Prix.",
+            "uk": "Феліпе Масса виграв Гран-прі Бразилії 2008 року."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/2008/races",
+            "locator": "2008 Race Results, Brazil 02 Nov",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "editorial_sections": [
+        {
+          "id": "classification",
+          "title": {
+            "en": "The official final table",
+            "uk": "Офіційна підсумкова таблиця"
+          },
+          "body": {
+            "en": "Lewis Hamilton took the 2008 drivers' title with 98 points against Felipe Massa's 97. The Brazilian Grand Prix closed the season with Massa as the race winner, while the championship classification favored Hamilton.",
+            "uk": "Льюїс Гамільтон здобув титул 2008 року з 98 очками проти 97 у Феліпе Масси. Сезон завершився Гран-прі Бразилії, який виграв Масса, тоді як підсумкова класифікація чемпіонату залишила першість Гамільтону."
+          },
+          "claim_ids": [
+            "2008-final-top-two"
+          ]
+        },
+        {
+          "id": "interpretation",
+          "title": {
+            "en": "Beyond the final margin",
+            "uk": "Поза підсумковою різницею"
+          },
+          "body": {
+            "en": "A season cannot be reduced to a championship margin. The next research pass must follow the individual race classifications and the scoring rules in force that year before drawing conclusions about turning points.",
+            "uk": "Історію сезону не можна звести до різниці очок. Наступний етап дослідження має простежити протоколи окремих гонок і правила нарахування очок того року, перш ніж робити висновки про поворотні моменти."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "unapproved_research",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2012",
+      "title": {
+        "en": "2012 — three points at the summit",
+        "uk": "2012 — три очки на вершині"
+      },
+      "lead": {
+        "en": "Sebastian Vettel led the final 2012 drivers' classification with 281 points. Fernando Alonso finished second with 278. The three-point gap gives the season its closing margin, not a complete explanation of how it unfolded.",
+        "uk": "Себастьян Феттель очолив підсумкову класифікацію пілотів 2012 року з 281 очком. Фернандо Алонсо посів друге місце з 278. Різниця у три очки показує підсумок сезону, але не пояснює всієї історії боротьби."
+      },
+      "claim_records": [
+        {
+          "id": "2012-final-top-two",
+          "type": "official_classification",
+          "text": {
+            "en": "The 2012 drivers' championship ended with Sebastian Vettel first (281 points) and Fernando Alonso second (278 points).",
+            "uk": "У чемпіонаті пілотів 2012 року Sebastian Vettel посів перше місце (281 очок), а Fernando Alonso — друге (278 очок)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/2012/drivers",
+            "locator": "2012 Drivers' Standings, positions 1–2",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "editorial_sections": [
+        {
+          "id": "classification",
+          "title": {
+            "en": "The official final table",
+            "uk": "Офіційна підсумкова таблиця"
+          },
+          "body": {
+            "en": "Sebastian Vettel led the final 2012 drivers' classification with 281 points. Fernando Alonso finished second with 278. The three-point gap gives the season its closing margin, not a complete explanation of how it unfolded.",
+            "uk": "Себастьян Феттель очолив підсумкову класифікацію пілотів 2012 року з 281 очком. Фернандо Алонсо посів друге місце з 278. Різниця у три очки показує підсумок сезону, але не пояснює всієї історії боротьби."
+          },
+          "claim_ids": [
+            "2012-final-top-two"
+          ]
+        },
+        {
+          "id": "interpretation",
+          "title": {
+            "en": "Beyond the final margin",
+            "uk": "Поза підсумковою різницею"
+          },
+          "body": {
+            "en": "A season cannot be reduced to a championship margin. The next research pass must follow the individual race classifications and the scoring rules in force that year before drawing conclusions about turning points.",
+            "uk": "Історію сезону не можна звести до різниці очок. Наступний етап дослідження має простежити протоколи окремих гонок і правила нарахування очок того року, перш ніж робити висновки про поворотні моменти."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "unapproved_research",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2021",
+      "title": {
+        "en": "2021 — eight points, twenty-two rounds",
+        "uk": "2021 — вісім очок, двадцять два етапи"
+      },
+      "lead": {
+        "en": "Max Verstappen finished the 2021 championship on 395.5 points, ahead of Lewis Hamilton on 387.5. The calendar records 22 rounds; the Belgian Grand Prix was a shortened event with half points, an important reminder that race results and scoring rules need context.",
+        "uk": "Макс Ферстаппен завершив чемпіонат 2021 року з 395,5 очка, випередивши Льюїса Гамільтона з 387,5. Календар містив 22 етапи; Гран-прі Бельгії був скороченою гонкою з половинними очками. Це нагадує, що результати й правила нарахування очок потребують контексту."
+      },
+      "claim_records": [
+        {
+          "id": "2021-final-top-two",
+          "type": "official_classification",
+          "text": {
+            "en": "The 2021 drivers' championship ended with Max Verstappen first (395.5 points) and Lewis Hamilton second (387.5 points).",
+            "uk": "У чемпіонаті пілотів 2021 року Max Verstappen посів перше місце (395.5 очок), а Lewis Hamilton — друге (387.5 очок)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/2021/drivers",
+            "locator": "2021 Drivers' Standings, positions 1–2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "2021-belgium-result",
+          "type": "event_context",
+          "text": {
+            "en": "The 2021 Belgian Grand Prix was rain-shortened and half points were awarded.",
+            "uk": "Гран-прі Бельгії 2021 року скоротили через дощ, а очки нарахували в половинному розмірі."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/latest/article/how-hamilton-and-verstappens-battle-evolved-over-the-2021-season.733vQgLMqampix5fLefN62",
+            "locator": "Section 5: half-point Belgian GP",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "editorial_sections": [
+        {
+          "id": "classification",
+          "title": {
+            "en": "The official final table",
+            "uk": "Офіційна підсумкова таблиця"
+          },
+          "body": {
+            "en": "Max Verstappen finished the 2021 championship on 395.5 points, ahead of Lewis Hamilton on 387.5. The calendar records 22 rounds; the Belgian Grand Prix was a shortened event with half points, an important reminder that race results and scoring rules need context.",
+            "uk": "Макс Ферстаппен завершив чемпіонат 2021 року з 395,5 очка, випередивши Льюїса Гамільтона з 387,5. Календар містив 22 етапи; Гран-прі Бельгії був скороченою гонкою з половинними очками. Це нагадує, що результати й правила нарахування очок потребують контексту."
+          },
+          "claim_ids": [
+            "2021-final-top-two"
+          ]
+        },
+        {
+          "id": "interpretation",
+          "title": {
+            "en": "Beyond the final margin",
+            "uk": "Поза підсумковою різницею"
+          },
+          "body": {
+            "en": "A season cannot be reduced to a championship margin. The next research pass must follow the individual race classifications and the scoring rules in force that year before drawing conclusions about turning points.",
+            "uk": "Історію сезону не можна звести до різниці очок. Наступний етап дослідження має простежити протоколи окремих гонок і правила нарахування очок того року, перш ніж робити висновки про поворотні моменти."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "unapproved_research",
+      "publication": false
+    }
+  ]
+}
