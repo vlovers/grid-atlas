@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "status": "official_f1_result_crosscheck_research_not_editorially_approved",
+  "accessed_on": "2026-10-22",
+  "items": [
+    {
+      "subject_id": "constructor-williams",
+      "event": "1979 British GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1979/races/415/great-britain/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Clay Regazzoni",
+      "team": "Williams Ford",
+      "venue": "Silverstone Circuit",
+      "winning_laps": 68,
+      "runner_up": "Rene Arnoux",
+      "third_place": "Jean-Pierre Jarier",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "constructor-mercedes",
+      "event": "1954 French GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1954/races/129/france/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Juan Manuel Fangio",
+      "team": "Mercedes-Benz",
+      "venue": "Circuit de Reims-Gueux",
+      "winning_laps": 61,
+      "runner_up": "Karl Kling",
+      "third_place": "Robert Manzon",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "constructor-red-bull-racing",
+      "event": "2009 Chinese GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/2009/races",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Sebastian Vettel",
+      "team": "RBR Renault",
+      "venue": "Shanghai International Circuit",
+      "winning_laps": 56,
+      "runner_up": "Mark Webber",
+      "third_place": "Jenson Button",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-spa-francorchamps",
+      "event": "1950 Belgian GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1950/races/98/belgium/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Juan Manuel Fangio",
+      "team": "Alfa Romeo",
+      "venue": "Circuit de Spa-Francorchamps",
+      "winning_laps": 35,
+      "runner_up": "Luigi Fagioli",
+      "third_place": "Louis Rosier",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-monza",
+      "event": "1950 Italian GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1950/races",
+        "locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Nino Farina",
+      "team": "Alfa Romeo",
+      "venue": "Monza",
+      "winning_laps": 80,
+      "runner_up": null,
+      "third_place": null,
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-suzuka",
+      "event": "1987 Japanese GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1987/races/525/japan/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Gerhard Berger",
+      "team": "Ferrari",
+      "venue": "Suzuka Circuit",
+      "winning_laps": 51,
+      "runner_up": "Ayrton Senna",
+      "third_place": "Stefan Johansson",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-interlagos",
+      "event": "1973 Brazilian GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Emerson Fittipaldi",
+      "team": "Lotus Ford",
+      "venue": "Autódromo José Carlos Pace",
+      "winning_laps": 40,
+      "runner_up": "Jackie Stewart",
+      "third_place": "Denny Hulme",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-n-rburgring",
+      "event": "1951 German GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1951/races",
+        "locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Alberto Ascari",
+      "team": "Ferrari",
+      "venue": "Nürburgring",
+      "winning_laps": 20,
+      "runner_up": null,
+      "third_place": null,
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-imola",
+      "event": "1981 San Marino GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1981/races/425/san-marino/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Nelson Piquet",
+      "team": "Brabham Ford",
+      "venue": "Autodromo Internazionale Enzo e Dino Ferrari",
+      "winning_laps": 60,
+      "runner_up": "Riccardo Patrese",
+      "third_place": "Carlos Reutemann",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-circuit-of-the-americas",
+      "event": "2012 United States GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/2012/races",
+        "locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Lewis Hamilton",
+      "team": "McLaren Mercedes",
+      "venue": "Circuit of the Americas",
+      "winning_laps": 56,
+      "runner_up": null,
+      "third_place": null,
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    },
+    {
+      "subject_id": "circuit-albert-park",
+      "event": "1996 Australian GP",
+      "source": {
+        "url": "https://www.formula1.com/en/results/1996/races/638/australia/race-result",
+        "locator": "Race Result classification positions 1–3, winner laps and venue heading",
+        "publisher": "Formula 1",
+        "accessed_on": "2026-10-22"
+      },
+      "winner": "Damon Hill",
+      "team": "Williams Renault",
+      "venue": "Albert Park Grand Prix Circuit",
+      "winning_laps": 58,
+      "runner_up": "Jacques Villeneuve",
+      "third_place": "Eddie Irvine",
+      "independent_crosscheck_status": "official_f1_results_index_or_event_page_compared_to_pinned_f1db",
+      "editorial_review": "pending_independent_human_review",
+      "published": false
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "status": "bilingual_source_linked_story_drafts_not_approved",
+  "items": [
+    {
+      "subject_id": "constructor-williams",
+      "kind": "constructor_race_story",
+      "title": {
+        "en": "Silverstone, 1979",
+        "uk": "Сільверстоун, 1979"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "At Silverstone Circuit in 1979, Clay Regazzoni won for Williams Ford. The official result gives this constructor's timeline a precise race and a named driver, rather than a vague reference to an era.",
+            "uk": "У 1979 році на трасі Silverstone Circuit Клей Регаццоні здобув перемогу за Williams Ford. Офіційний результат пов’язує історію конструктора з конкретною гонкою та пілотом, а не з розмитим описом епохи."
+          },
+          "evidence_subject_id": "constructor-williams"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Rene Arnoux finished second and Jean-Pierre Jarier third. The race distance recorded for the winner is 68 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Рене Арну на другому місці та Жан-П'єр Жар'є на третьому. Для переможця вказано 68 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "constructor-williams"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1979/races/415/great-britain/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "constructor-mercedes",
+      "kind": "constructor_race_story",
+      "title": {
+        "en": "Reims, 1954",
+        "uk": "Реймс, 1954"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "At Circuit de Reims-Gueux in 1954, Juan Manuel Fangio won for Mercedes-Benz. The official result gives this constructor's timeline a precise race and a named driver, rather than a vague reference to an era.",
+            "uk": "У 1954 році на трасі Circuit de Reims-Gueux Хуан-Мануель Фанхіо здобув перемогу за Mercedes-Benz. Офіційний результат пов’язує історію конструктора з конкретною гонкою та пілотом, а не з розмитим описом епохи."
+          },
+          "evidence_subject_id": "constructor-mercedes"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Karl Kling finished second and Robert Manzon third. The race distance recorded for the winner is 61 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Карл Клінг на другому місці та Робер Манзон на третьому. Для переможця вказано 61 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "constructor-mercedes"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1954/races/129/france/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "constructor-red-bull-racing",
+      "kind": "constructor_race_story",
+      "title": {
+        "en": "Shanghai, 2009",
+        "uk": "Шанхай, 2009"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "At Shanghai International Circuit in 2009, Sebastian Vettel won for RBR Renault. The official result gives this constructor's timeline a precise race and a named driver, rather than a vague reference to an era.",
+            "uk": "У 2009 році на трасі Shanghai International Circuit Себастьян Феттель здобув перемогу за RBR Renault. Офіційний результат пов’язує історію конструктора з конкретною гонкою та пілотом, а не з розмитим описом епохи."
+          },
+          "evidence_subject_id": "constructor-red-bull-racing"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Mark Webber finished second and Jenson Button third. The race distance recorded for the winner is 56 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Марк Веббер на другому місці та Дженсон Баттон на третьому. Для переможця вказано 56 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "constructor-red-bull-racing"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/2009/races",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-spa-francorchamps",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Spa, 1950",
+        "uk": "Спа, 1950"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1950, Circuit de Spa-Francorchamps hosted a championship race won by Juan Manuel Fangio for Alfa Romeo. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1950 році на трасі Circuit de Spa-Francorchamps переміг Хуан-Мануель Фанхіо за кермом Alfa Romeo. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-spa-francorchamps"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Luigi Fagioli finished second and Louis Rosier third. The race distance recorded for the winner is 35 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Луїджі Фаджолі на другому місці та Луї Розьє на третьому. Для переможця вказано 35 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "circuit-spa-francorchamps"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1950/races/98/belgium/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-monza",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Monza, 1950",
+        "uk": "Монца, 1950"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1950, Monza hosted a championship race won by Nino Farina for Alfa Romeo. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1950 році на трасі Monza переміг Ніно Фаріна за кермом Alfa Romeo. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-monza"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "What the index confirms",
+            "uk": "Що підтверджує таблиця"
+          },
+          "body": {
+            "en": "The official season index credits Nino Farina with the victory over 80 laps. The current research packet does not separately substantiate the other podium positions from an event-specific result page, so they are deliberately omitted.",
+            "uk": "Офіційна сезонна таблиця зазначає перемогу Ніно Фаріна після 80 кіл. Інші місця на подіумі наразі не підтверджені окремим протоколом у цьому пакеті, тому їх свідомо не наведено."
+          },
+          "evidence_subject_id": "circuit-monza"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1950/races",
+      "source_locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-suzuka",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Suzuka, 1987",
+        "uk": "Сузука, 1987"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1987, Suzuka Circuit hosted a championship race won by Gerhard Berger for Ferrari. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1987 році на трасі Suzuka Circuit переміг Герхард Бергер за кермом Ferrari. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-suzuka"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Ayrton Senna finished second and Stefan Johansson third. The race distance recorded for the winner is 51 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Айртон Сенна на другому місці та Стефан Юханссон на третьому. Для переможця вказано 51 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "circuit-suzuka"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1987/races/525/japan/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-interlagos",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Interlagos, 1973",
+        "uk": "Інтерлагос, 1973"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1973, Autódromo José Carlos Pace hosted a championship race won by Emerson Fittipaldi for Lotus Ford. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1973 році на трасі Autódromo José Carlos Pace переміг Емерсон Фіттіпальді за кермом Lotus Ford. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-interlagos"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Jackie Stewart finished second and Denny Hulme third. The race distance recorded for the winner is 40 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Джекі Стюарт на другому місці та Денні Гальм на третьому. Для переможця вказано 40 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "circuit-interlagos"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-n-rburgring",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Nürburgring, 1951",
+        "uk": "Нюрбургринг, 1951"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1951, Nürburgring hosted a championship race won by Alberto Ascari for Ferrari. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1951 році на трасі Nürburgring переміг Альберто Аскарі за кермом Ferrari. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-n-rburgring"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "What the index confirms",
+            "uk": "Що підтверджує таблиця"
+          },
+          "body": {
+            "en": "The official season index credits Alberto Ascari with the victory over 20 laps. The current research packet does not separately substantiate the other podium positions from an event-specific result page, so they are deliberately omitted.",
+            "uk": "Офіційна сезонна таблиця зазначає перемогу Альберто Аскарі після 20 кіл. Інші місця на подіумі наразі не підтверджені окремим протоколом у цьому пакеті, тому їх свідомо не наведено."
+          },
+          "evidence_subject_id": "circuit-n-rburgring"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1951/races",
+      "source_locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-imola",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Imola, 1981",
+        "uk": "Імола, 1981"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1981, Autodromo Internazionale Enzo e Dino Ferrari hosted a championship race won by Nelson Piquet for Brabham Ford. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1981 році на трасі Autodromo Internazionale Enzo e Dino Ferrari переміг Нельсон Піке за кермом Brabham Ford. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-imola"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Riccardo Patrese finished second and Carlos Reutemann third. The race distance recorded for the winner is 60 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Ріккардо Патрезе на другому місці та Карлос Ройтеманн на третьому. Для переможця вказано 60 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "circuit-imola"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1981/races/425/san-marino/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-circuit-of-the-americas",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Austin, 2012",
+        "uk": "Остін, 2012"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 2012, Circuit of the Americas hosted a championship race won by Lewis Hamilton for McLaren Mercedes. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 2012 році на трасі Circuit of the Americas переміг Льюїс Гамільтон за кермом McLaren Mercedes. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-circuit-of-the-americas"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "What the index confirms",
+            "uk": "Що підтверджує таблиця"
+          },
+          "body": {
+            "en": "The official season index credits Lewis Hamilton with the victory over 56 laps. The current research packet does not separately substantiate the other podium positions from an event-specific result page, so they are deliberately omitted.",
+            "uk": "Офіційна сезонна таблиця зазначає перемогу Льюїс Гамільтон після 56 кіл. Інші місця на подіумі наразі не підтверджені окремим протоколом у цьому пакеті, тому їх свідомо не наведено."
+          },
+          "evidence_subject_id": "circuit-circuit-of-the-americas"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/2012/races",
+      "source_locator": "Season Race Results winner/team/laps row; venue from pinned F1DB event identity, not independently checked on this page",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    },
+    {
+      "subject_id": "circuit-albert-park",
+      "kind": "circuit_race_story",
+      "title": {
+        "en": "Melbourne, 1996",
+        "uk": "Мельбурн, 1996"
+      },
+      "sections": [
+        {
+          "id": "result-scene",
+          "title": {
+            "en": "A race with a date",
+            "uk": "Гонка з конкретною датою"
+          },
+          "body": {
+            "en": "In 1996, Albert Park Grand Prix Circuit hosted a championship race won by Damon Hill for Williams Renault. This result anchors the circuit story to one identifiable event rather than an undated image of the venue.",
+            "uk": "У 1996 році на трасі Albert Park Grand Prix Circuit переміг Деймон Гілл за кермом Williams Renault. Цей результат прив’язує історію автодрому до конкретного етапу, а не до зображення траси без дати."
+          },
+          "evidence_subject_id": "circuit-albert-park"
+        },
+        {
+          "id": "classification-scene",
+          "title": {
+            "en": "The finishing order",
+            "uk": "Порядок на фініші"
+          },
+          "body": {
+            "en": "The classification continues beyond the winner: Jacques Villeneuve finished second and Eddie Irvine third. The race distance recorded for the winner is 58 laps. These positions make a useful, bounded snapshot of this Grand Prix; they do not establish the whole season's standings.",
+            "uk": "Позаду переможця фінішували Жак Вільньов на другому місці та Едді Ірвайн на третьому. Для переможця вказано 58 кіл. Це конкретний зріз одного Гран-прі, а не підсумкова таблиця всього сезону."
+          },
+          "evidence_subject_id": "circuit-albert-park"
+        }
+      ],
+      "source_url": "https://www.formula1.com/en/results/1996/races/638/australia/race-result",
+      "source_locator": "Race Result classification positions 1–3, winner laps and venue heading",
+      "review_state": "pending_independent_human_review",
+      "approved": false,
+      "published": false,
+      "historical_layout_id": null
+    }
+  ]
+}
