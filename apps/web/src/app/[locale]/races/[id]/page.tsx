@@ -1,4 +1,5 @@
 import { RaceClassification } from '@/components/stories/race-classification';
+import { RaceConstructorField } from '@/components/stories/race-constructor-field';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
@@ -37,6 +38,7 @@ export default async function RacePage({ params }: Props) {
       lead={<p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>} />
     <ArchiveJourney testId="race-visual-journey" locale={locale} title={locale === 'uk' ? 'Шлях за межі гонки' : 'Beyond this Grand Prix'} description={locale === 'uk' ? 'Перейдіть від конкретного результату до сезону, траси та записів пілотів.' : 'Follow this race into its season, venue and recorded driver histories.'} items={[{ id: 'season', href: `/seasons/${race.season_year}`, year: race.season_year, overline: locale === 'uk' ? 'Чемпіонат' : 'Championship', title: `${race.season_year}` }, ...(race.circuit_id ? [{ id: 'circuit', href: `/circuits/${race.circuit_id}`, year: race.season_year, overline: locale === 'uk' ? 'Траса' : 'Circuit', title: race.circuit_name ?? race.circuit_id }] : []), ...results.filter(result => result.position_text === '1').slice(0, 1).map(result => ({ id: `driver-${result.driver_id}`, href: `/drivers/${result.driver_id}`, year: race.season_year, overline: locale === 'uk' ? 'Перша позиція у протоколі' : 'First-position result entry', title: result.driver, detail: result.constructor }))]} />
     <RaceClassification locale={locale} entries={results.map(result => ({ id: String(result.position_display_order), position: result.position_text, driverId: result.driver_id, driver: result.driver, constructorId: result.constructor_id, constructor: result.constructor, sharedCar: Boolean(result.shared_car) }))} />
+    <RaceConstructorField locale={locale} entries={results.map(result => ({ driverId: result.driver_id, driver: result.driver, constructorId: result.constructor_id, constructor: result.constructor, position: result.position_text, sharedCar: Boolean(result.shared_car) }))} />
     <section aria-label={locale === 'uk' ? 'Паспорт Гран-прі' : 'Grand Prix quick facts'}>
       <h2>{locale === 'uk' ? 'Гран-прі в цифрах' : 'Grand Prix at a glance'}</h2>
       <div className="driver-grid">
