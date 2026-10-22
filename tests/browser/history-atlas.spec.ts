@@ -110,12 +110,16 @@ for (const locale of ["en", "uk"] as const) {
     ).toHaveText("driver-b");
     if (!isMobile) {
       await canvas.scrollIntoViewIfNeeded();
+      // History restoration also schedules React Flow's fit operation. Let its
+      // frame settle, then compare panning with the current restored viewport.
+      await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+      const beforePan = await viewport.getAttribute("style");
       const box = (await canvas.boundingBox())!;
       await page.mouse.move(box.x + 20, box.y + 20);
       await page.mouse.down();
-      await page.mouse.move(box.x + 80, box.y + 60);
+      await page.mouse.move(box.x + 80, box.y + 60, { steps: 8 });
       await page.mouse.up();
-      await expect(viewport).not.toHaveAttribute("style", original!);
+      await expect(viewport).not.toHaveAttribute("style", beforePan!);
     }
     expect(
       await page.evaluate(

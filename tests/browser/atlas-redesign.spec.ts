@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { editorialCopy } from '../../apps/web/src/components/editorial/copy';
 import { atlasCopy } from '../../apps/web/src/components/atlas/copy';
 import uk from '../../apps/web/messages/uk.json';
 import en from '../../apps/web/messages/en.json';
@@ -9,7 +10,7 @@ for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: discovery uses available archive identities and years, then submits a bounded driver search`, async ({ page }) => {
     await page.goto(`/${locale}`);
     const home = page.getByTestId('atlas-home');
-    await expect(home.getByRole('heading', { level: 1 })).toHaveText(`${copy.title}${copy.titleEnd}`);
+    await expect(home.getByRole('heading', { level: 1 })).toHaveText(editorialCopy[locale].homeTitle);
     await expect(home.getByTestId('career-signature')).toContainText('Synthetic Driver 001');
     await expect(home.getByTestId('career-signature')).toContainText(copy.noSignature);
     const decades = home.getByRole('navigation', { name: copy.decade });

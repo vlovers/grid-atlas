@@ -93,7 +93,7 @@ for (const [locale, messages] of [['uk', uk], ['en', en]] as const) {
       await expect(page.getByRole('link', { name: 'verified fixture ↗' })).toHaveAttribute('href', 'https://example.org/constructor/verified');
       await page.getByRole('button', { name: t.zoomIn }).click();
       await expect(page.getByText(t.zoom.replace('{percent}', '125'), { exact: true })).toBeVisible();
-      expect(await page.locator('svg rect').first().evaluate(node => getComputedStyle(node).fill)).toBe('rgb(11, 15, 20)');
+      expect(await page.locator('svg rect').first().evaluate(node => getComputedStyle(node).fill)).toBe('rgb(9, 11, 13)');
       expect(Number(await page.locator('svg line').first().getAttribute('x2'))).toBeLessThan(Number(await page.locator('svg rect').nth(1).getAttribute('x')));
     });
 

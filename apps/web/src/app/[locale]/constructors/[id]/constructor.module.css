@@ -1,0 +1,48 @@
+.dossier { padding-top: 2.5rem; }
+.dossier > * { min-width: 0; }
+.dossier > section, .classifications { margin-block: var(--space-section); scroll-margin-top: 2rem; }
+.dossier h2 { font: 500 clamp(2.3rem, 3.7vw, 4rem)/1.05 var(--font-display); max-width: 22ch; margin-block: 0 1.5rem; letter-spacing: -.025em; }
+.dossier h3 { font: 500 1.8rem/1.15 var(--font-display); }
+.dossier > section p, .classifications p { font-size: .86rem; line-height: 1.9; color: var(--muted); max-width: 85ch; }
+.dossier :global(.driver-grid) { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 0; margin-block: 2rem; }
+.dossier :global(.driver) { background: transparent; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 1.5rem 1.5rem 1.5rem 0; min-height: 0; box-shadow: none; }
+.dossier :global(.driver) h3 { margin: 1rem 0; }
+.dossier :global(.index) { font: .65rem/1.8 var(--font-mono); color: var(--muted); }
+.portrait { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1rem 5rem; }
+.portrait > header { grid-column: 1/-1; }
+.portrait > h3 { grid-column: 2; grid-row: 2; margin: 0; }
+.portrait > ol { grid-column: 2; grid-row: 3/6; margin: 0; }
+.portrait > p { grid-column: 1; margin-top: 0; }
+.portrait :global(.record) { background: transparent; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 1.2rem 0; grid-template-columns: 3.5rem 1fr; }
+.portrait :global(.position) { font: 2rem var(--font-mono); color: var(--ink); }
+.portrait :global(.record) strong { font: 500 1.65rem/1.1 var(--font-display); }
+.portrait :global(.record) small { color: var(--muted); font: .65rem/1.8 var(--font-mono); margin-top: .7rem; }
+.seasonPicker { display: grid; grid-template-columns: minmax(0,1fr) minmax(120px,.5fr) auto; align-items: end; gap: 1.5rem; padding: 1.7rem 0; border-block: 1px solid var(--line); }
+.seasonPicker label { align-self: center; font-size: .8rem; color: var(--muted); }
+.seasonPicker select { width: 100%; min-height: 48px; background: var(--surface); border-radius: 0; font: 1rem var(--font-mono); }
+.seasonPicker button { min-height: 48px; padding-inline: 1.2rem; background: var(--accent); color: #fff; border: 0; border-radius: 0; font-size: .75rem; }
+.yearNav { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-block: 1.5rem 2rem; }
+.yearNav a { color: var(--muted); min-height: 44px; align-items: center; display: inline-flex; font: .75rem var(--font-mono); }
+.yearNav a[aria-current] { color: var(--ink); border-bottom: 2px solid var(--accent); }
+.dossier :global(.lineup-grid) { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 3rem; }
+.dossier :global(.lineup-team) { padding: 1.5rem 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
+.roster :global(.lineup-team) h3 { font-size: clamp(2rem,3vw,3rem); margin-block: .5rem 1.5rem; }
+.roster :global(.lineup-team) a { text-underline-offset: .3rem; }
+.overview { max-width: var(--measure-reading); margin-left: auto; }
+.eras :global(.driver) { border-top-color: var(--accent); }
+.eras :global(.driver) h3 { font-size: 2.7rem; }
+.dossier :global(.timeline-year), .dossier :global(.lineage-node) { border-radius: 0; background: var(--surface); }
+.archive :global(.table-scroll) { margin-block: 2rem; }
+.archive table { font-size: .78rem; }
+.archive :global(.timeline-scroll) { margin-bottom: 3rem; }
+.dossier :global(.chapter) h2 { max-width: 24ch; }
+@media (max-width: 1050px) { .portrait { gap: 1rem 2.5rem; } .dossier :global(.driver-grid) { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 700px) {
+  .dossier { padding-top: 1rem; }
+  .portrait, .dossier :global(.lineup-grid) { display: block; }
+  .portrait > h3 { margin-top: 2rem; }
+  .seasonPicker { grid-template-columns: 1fr; gap: 1rem; }
+  .seasonPicker button { justify-self: start; }
+  .dossier :global(.driver-grid) { grid-template-columns: 1fr; }
+  .dossier :global(.lineup-team) { margin-block: 2rem; }
+}

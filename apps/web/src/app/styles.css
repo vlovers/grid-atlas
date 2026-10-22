@@ -70,3 +70,16 @@ html{background:var(--background);color:var(--ink);scroll-padding-top:24px}body{
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 html[data-story-motion=paused] *,html[data-story-motion=paused] *:before,html[data-story-motion=paused] *:after{animation-play-state:paused!important;scroll-behavior:auto!important;transition:none!important}
+
+/* Editorial Racing foundation. Existing archive/graph behavior remains local. */
+body { font-family: var(--font-sans); font-size: 1rem; background: var(--background); }
+main { min-height: calc(100svh - 100px); }
+h1, h2, h3 { text-wrap: balance; overflow-wrap: anywhere; }
+button, input, select { font-family: var(--font-sans); }
+.page h1 { font-family: var(--font-display); font-weight: 500; letter-spacing: -.035em; }
+.page h2 { font-family: var(--font-display); font-weight: 500; }
+.page { padding-top: 2.5rem; }
+th, .position, .checksum, .timeline-year, code { font-family: var(--font-mono); }
+th { font-weight: 400; letter-spacing: .06em; }
+.primary { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+.skip-link { color: #fff; }

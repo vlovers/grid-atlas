@@ -1,4 +1,4 @@
-import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
+import { type ChampionshipRow } from '@/components/championship-table';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -36,9 +36,12 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const defaultYear = seasons.reduce<number | null>((year, season) => year === null || season.year > year ? season.year : year, null);
   const year = selectedYear !== null && seasons.some(season => season.year === selectedYear) ? selectedYear : defaultYear;
   const seasonResults = year === null ? [] : await getData<DriverSeasonResult>(`/api/drivers/${id}/seasons/${year}/results`);
-  return <><DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
-    identity={<IdentityFacts identity={identities[0]} locale={locale} />}
+  // Bound enrichment to two observed constructors; never infer a personal rivalry.
+  const constructorIds = [...new Set(teams.filter(team => team.year === year).map(team => team.constructor_id))].slice(0, 2);
+  const rosters = await Promise.all(constructorIds.map(constructorId => getData<{ driver_id: string; driver_name: string }>(`/api/constructors/${constructorId}/seasons/${year}/drivers`)));
+  const relatedDrivers = [...new Map(rosters.flat().filter(row => row.driver_id !== id).map(row => [row.driver_id, row])).values()].slice(0, 3);
+  return <DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
+    identity={identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />} identityDetails={identities[0]} championships={championships} relatedDrivers={relatedDrivers}
     article={article} media={mediaPublication.assets as MediaAsset[]} locale={locale}
-    selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />
-    <ChampionshipTable rows={championships} locale={locale} kind="drivers" scope="career" /></>;
+    selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />;
 }
