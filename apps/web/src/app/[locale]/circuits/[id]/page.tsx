@@ -118,7 +118,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         </article>;
       })}</div>
       <h2>{locale === 'uk' ? 'Переможці та результати' : 'Winners and results'}</h2>
-      {history.length ? <div className="table-scroll"><table>
+      {history.length ? <div className="table-scroll"><table data-testid="circuit-history-table">
         <thead><tr><th>{locale === 'uk' ? 'Сезон' : 'Season'}</th><th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th>{locale === 'uk' ? 'Переможні записи' : 'Winning entries'}</th><th>{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
         <tbody>{history.slice(offset, offset + CIRCUIT_PAGE_SIZE).map(race => <tr key={race.race_id}>
           <td><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></td>
