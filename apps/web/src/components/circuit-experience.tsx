@@ -42,7 +42,7 @@ const labels = {
     noGraphic: 'Перевірений контур для цієї конфігурації недоступний.',
     yearBrowse: 'Досліджуйте за сезоном', yearHint: 'Оберіть рік, щоб переглянути конфігурацію, використану в архівних перегонах.',
     yearSelected: 'Вибраний сезон', noLayoutForYear: 'Для цього сезону немає пов’язаної конфігурації.',
-    previous: 'Попередній сезон', next: 'Наступний сезон',
+    previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Гран-прі обраного сезону', clearYear: 'Показати всі роки',
   },
   en: {
     kicker: 'LAYOUTS / HISTORY', title: 'The circuit through time',
@@ -63,7 +63,7 @@ const labels = {
     noGraphic: 'No verified outline available for this layout.',
     yearBrowse: 'Explore by season', yearHint: 'Choose a year to see the layout recorded for its Grands Prix.',
     yearSelected: 'Selected season', noLayoutForYear: 'No linked layout is recorded for this season.',
-    previous: 'Previous season', next: 'Next season',
+    previous: 'Previous season', next: 'Next season', seasonEvents: 'Grands Prix in selected season', clearYear: 'Show all years',
   },
 } as const;
 
@@ -83,7 +83,7 @@ export function CircuitExperience({ layouts, events, locale }: {
   const yearIndex = selectedYear === null ? -1 : recordedYears.indexOf(selectedYear);
   const current = layouts.find(l => l.id === selected);
   const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
-  const matching = useMemo(() => events.filter(e => !selected || e.layout_id === selected), [events, selected]);
+  const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
   const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
   const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
@@ -101,6 +101,7 @@ export function CircuitExperience({ layouts, events, locale }: {
           {recordedYears.map(year => <option key={year} value={year}>{year}</option>)}
         </select></label>
         <button type="button" disabled={yearIndex < 0 || yearIndex >= recordedYears.length-1} onClick={() => selectYear(recordedYears[yearIndex+1])} aria-label={t.next}>›</button>
+        {selectedYear !== null && <button type="button" className={styles.clearYear} onClick={() => { setSelectedYear(null); setShowAll(false); }}>{t.clearYear}</button>}
       </div>
     </div>}
     <figure className={styles.trackVisual} data-testid="circuit-track-visual">
@@ -144,7 +145,7 @@ export function CircuitExperience({ layouts, events, locale }: {
           style={{ left: `${maxYear === minYear ? 50 : ((e.season_year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
       </div>
     </div>}
-    <h3>{t.measurements}</h3>
+    <h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`}</h3>
     <p>{t.note}</p>
     {matching.length ? <div className={styles.events}>
       {visible.map(e => <article key={e.race_id} className={styles.event}>
