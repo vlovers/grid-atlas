@@ -1,6 +1,6 @@
 # Data completeness: measured archive versus historical storytelling
 
-This is a **baseline field-coverage matrix**, not a new import or a claim of individual-record completeness. It uses the measured exhaustive [encyclopedia audit](../../encyclopedia-coverage.md), whose verified baseline is F1DB v2026.17.0. The machine-readable [archive-readiness.json](archive-readiness.json) distinguishes measured fields from known editorial gaps.
+This is a **baseline field-coverage matrix**, not a new import or a claim of individual-record completeness. It uses the measured exhaustive [encyclopedia audit](../../../encyclopedia-coverage.md), whose verified baseline is F1DB v2026.17.0. The machine-readable [archive-readiness.json](archive-readiness.json) distinguishes measured fields from known editorial gaps.
 
 ## Verified archive strengths
 
