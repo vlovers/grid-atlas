@@ -1,5 +1,9 @@
 import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
-import { StoryHeader } from '@/components/stories/story-header';
+import { EditorialHero, EditorialMedia, EditorialTabs, SectionHeading, SourceAttribution, StatisticStrip, EmptyMediaState } from '@/components/editorial/primitives';
+import { editorialCopy } from '@/components/editorial/copy';
+import mediaPublication from '@/components/media/publication.json';
+import type { MediaAsset } from '@/components/media/registry';
+import styles from './constructor.module.css';
 import { storyCopy } from '@/components/stories/copy';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -59,28 +63,19 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   const firstRecordedSeason = seasons.reduce<Season | undefined>((earliest, season) => !earliest || season.year < earliest.year ? season : earliest, undefined);
   const roster = selectedSeason ? await getData<DriverRoster>(`/api/constructors/${id}/seasons/${selectedSeason.year}/drivers`) : [];
   const points = (value: string | null, missing: number) => `${value ?? '—'}${missing > 0 ? ` · ${locale === 'uk' ? 'Неповні дані' : 'Incomplete data'} (${missing})` : ''}`;
-  return <section className="page">
-    <StoryHeader title={team.name} eyebrow={storyCopy[locale].constructorHeader} locale={locale} kind="velocity" marker={team.first_season ?? undefined} lead={t('constructorLead')} />
-    <IdentityFacts identity={identities[0]} locale={locale} />
-    <div className="driver-grid" aria-label={t('constructorStats')}>
-      {([[t('seasons'),team.seasons],[t('races'),team.races],[t('wins'),team.wins],[t('driverPodiums'),team.podium_finishes],[t('driverPoints'),points(team.driver_points, team.points_missing)]] as const).map(([label,value])=><article className="driver" key={label}><span className="index">{label}</span><h2>{value}</h2></article>)}
-    </div>
-    {seasons.length > 0 && <p>
-      <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason?.year}`}>
-        {t('constructor')}: {t('season')} {firstRecordedSeason?.year} → Explorer
-      </Link>
-    </p>}
-    <section aria-label={locale === 'uk' ? 'Історичний профіль команди' : 'Constructor history facts'}>
-      <h2>{locale === 'uk' ? 'Історичні факти' : 'Historical quick facts'}</h2>
-      <div className="driver-grid">
-        {team.first_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Перший сезон у базі' : 'First recorded season'}</span><h3><Link href={`/seasons/${team.first_season}`}>{team.first_season}</Link></h3></article>}
-        {team.last_season !== null && <article className="driver"><span className="index">{locale === 'uk' ? 'Останній сезон у базі' : 'Latest recorded season'}</span><h3><Link href={`/seasons/${team.last_season}`}>{team.last_season}</Link></h3></article>}
-        <article className="driver"><span className="index">{locale === 'uk' ? 'Подіуми пілотів у результатах' : 'Driver podium result entries'}</span><h3>{team.podium_finishes}</h3></article>
-      </div>
-      <p>{locale === 'uk' ? 'Показники відображають зафіксовані результати перегонів, а не офіційні очки чи місце в Кубку конструкторів. Технічні характеристики болідів і керівництво команди будуть показані лише після перевірки джерел для конкретного року.' : 'Figures reflect recorded race results, not official Constructors’ Championship points or standings. Chassis, engine and team leadership require independently verified season-specific sources.'}</p>
-    </section>
-    <section aria-labelledby="constructor-archive-portrait" data-testid="constructor-archive-portrait">
-      <h2 id="constructor-archive-portrait">{locale === 'uk' ? 'Історія конструктора за сезонами' : 'Constructor history across seasons'}</h2>
+  const e = editorialCopy[locale];
+  const range = team.first_season === null ? '—' : team.first_season === team.last_season ? String(team.first_season) : `${team.first_season}—${team.last_season}`;
+  const format = (value: number) => new Intl.NumberFormat(locale).format(value);
+  return <section className={`page ${styles.dossier}`} data-testid="constructor-dossier">
+    <EditorialHero title={team.name} eyebrow={`${storyCopy[locale].constructorHeader} / ${team.external_id}`}
+      context={<><span>{range}</span>{identities[0]?.fields.country && <span>{identities[0].fields.country}</span>}</>}
+      lead={e.constructorLead} media={<EditorialMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'constructor', id: team.external_id }} title={team.name} years={range} locale={locale} />}
+      actions={<><a href="#constructor-season">{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
+      statistics={[{ label: t('seasons'), value: format(team.seasons) }, { label: t('races'), value: format(team.races) }, { label: t('wins'), value: format(team.wins) }, { label: t('driverPodiums'), value: format(team.podium_finishes) }]} scope={e.recordScope} />
+    <SourceAttribution locale={locale} />
+    <EditorialTabs label={e.contents} items={[{ id: 'constructor-archive-portrait', label: e.overview }, { id: 'constructor-key-eras', label: e.seasons }, { id: 'constructor-season', label: e.drivers }, { id: 'constructor-classifications', label: e.classifications }, { id: 'constructor-archive', label: e.archive }]} />
+    <section className={styles.portrait} aria-labelledby="constructor-archive-portrait" data-testid="constructor-archive-portrait">
+      <SectionHeading kicker={e.overview} id="constructor-archive-portrait" title={locale === 'uk' ? 'Історія конструктора за сезонами' : 'Constructor history across seasons'} />
       <p>{locale === 'uk'
         ? `В історичній базі конструктор ${team.name} має ${team.seasons} сезонів із зафіксованими результатами, ${team.races} різних гонок і ${drivers.length} пілотів у протоколах. Це не доказ безперервної юридичної історії команди.`
         : `In the historical database, constructor ${team.name} has ${team.seasons} seasons with recorded results, ${team.races} distinct races and ${drivers.length} drivers in classifications. This does not establish an uninterrupted legal team history.`}</p>
@@ -102,23 +97,25 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         ? 'Підсумок спирається лише на протоколи перегонів. Спільні автомобілі та історичні правила можуть відрізнятися від сучасного визначення перемоги; офіційні титули не виводяться.'
         : 'This summary uses race-result rows only. Shared cars and historical rules may differ from modern win definitions; official titles are not inferred.'}</p>
     </section>
-    {selectedSeason && <section aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
+    {selectedSeason && <section id="constructor-season" className={styles.selectedSeason} aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
       <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
-      <nav className="timeline-scroll" aria-label={locale === 'uk' ? 'Оберіть сезон' : 'Select a season'}>
-        {seasons.map(season => <Link key={season.year} href={`/constructors/${id}?season=${season.year}`}
-          aria-current={selectedSeason.year === season.year ? 'page' : undefined}
-          className={selectedSeason.year === season.year ? 'timeline-year active' : 'timeline-year'}>{season.year}</Link>)}
+      <form method="get" action={`/${locale}/constructors/${id}#constructor-season`} className={styles.seasonPicker}>
+        <label htmlFor="constructor-season-select">{e.seasonLabel}</label>
+        <select id="constructor-season-select" name="season" defaultValue={selectedSeason.year}>{seasons.map(season => <option key={season.year} value={season.year}>{season.year}</option>)}</select>
+        <button type="submit">{e.viewSeason} ↗</button>
+      </form>
+      <nav className={styles.yearNav} aria-label={locale === 'uk' ? 'Оберіть сезон' : 'Select a season'}>
+        {seasons.map(season => <a key={season.year} href={`/${locale}/constructors/${id}?season=${season.year}#constructor-season`} aria-current={selectedSeason.year === season.year ? 'page' : undefined}>{season.year}</a>)}
       </nav>
-      <div className="driver-grid">
-        {([[locale === 'uk' ? 'Гонки' : 'Races', selectedSeason.races],
-          [locale === 'uk' ? 'Перемоги' : 'Wins', selectedSeason.wins],
-          [locale === 'uk' ? 'Подіуми пілотів' : 'Driver podium entries', selectedSeason.podium_finishes],
-          [locale === 'uk' ? 'Очки пілотів у результатах' : 'Driver result points', points(selectedSeason.driver_points, selectedSeason.points_missing)]] as const).map(([label, value]) =>
-          <article className="driver" key={label}><span className="index">{label}</span><h3>{value}</h3></article>)}
-      </div>
+      <StatisticStrip stats={[
+        { label: locale === 'uk' ? 'Гонки' : 'Races', value: selectedSeason.races },
+        { label: locale === 'uk' ? 'Перемоги' : 'Wins', value: selectedSeason.wins },
+        { label: locale === 'uk' ? 'Подіуми пілотів' : 'Driver podium entries', value: selectedSeason.podium_finishes },
+        { label: locale === 'uk' ? 'Очки пілотів у результатах' : 'Driver result points', value: points(selectedSeason.driver_points, selectedSeason.points_missing) },
+      ]} />
       <p>{locale === 'uk' ? 'Це статистика результатів гонок, а не офіційний залік Кубка конструкторів. Склад пілотів і технічні дані за сезонами потребують окремих підтверджених записів.' : 'These are race-result statistics, not official Constructors’ Championship standings. Season-specific lineups and technical facts require separately verified records.'}</p>
     </section>}
-    {selectedSeason && <section aria-label={locale === 'uk' ? 'Пілоти команди в обраному сезоні' : 'Constructor drivers in selected season'}>
+    {selectedSeason && <section className={styles.roster} aria-label={locale === 'uk' ? 'Пілоти команди в обраному сезоні' : 'Constructor drivers in selected season'}>
       <h2>{locale === 'uk' ? 'Пілоти сезону' : 'Season driver roster'} · {selectedSeason.year}</h2>
       {roster.length > 0 ? <div className="lineup-grid">{roster.map(driver => <article className="lineup-team" key={driver.driver_id}>
         <h3><Link href={`/drivers/${driver.driver_id}`}>{driver.driver_name}</Link></h3>
@@ -132,7 +129,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       </article>)}</div> : <p>{locale === 'uk' ? 'У цьому сезоні немає записів про пілотів.' : 'No driver entries are recorded for this season.'}</p>}
       <p>{locale === 'uk' ? 'Склад сформовано з результатів перегонів, а не з контрактів або заявок на весь сезон.' : 'This roster is derived from race results, not full-season contracts or entry lists.'}</p>
     </section>}
-    <section aria-labelledby="constructor-archive-overview" data-testid="constructor-archive-overview">
+    <section className={styles.overview} aria-labelledby="constructor-archive-overview" data-testid="constructor-archive-overview">
       <h2 id="constructor-archive-overview">{locale === 'uk' ? 'Історія за результатами' : 'History through race results'}</h2>
       <p>{locale === 'uk'
         ? `Архів містить ${team.races} гонок за участю конструктора ${team.name}${team.first_season !== null ? ` від сезону ${team.first_season}` : ''}${team.last_season !== null && team.last_season !== team.first_season ? ` до ${team.last_season} року` : ''}. Зафіксовано ${team.wins} переможних гонок у цьому наборі результатів.`
@@ -143,7 +140,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       </p>}
       <p>{locale === 'uk' ? 'Це опис участі за протоколами, а не перевірена історія власності, контрактів чи юридичної спадковості команди. Сумарні очки пілотів не є офіційними очками Кубка конструкторів.' : 'This is a summary of recorded participation, not a verified history of team ownership, contracts or legal succession. Summed driver points are not official constructors championship points.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
     </section>
-    <section aria-labelledby="constructor-key-eras" data-testid="constructor-key-eras">
+    <section className={styles.eras} aria-labelledby="constructor-key-eras" data-testid="constructor-key-eras">
       <h2 id="constructor-key-eras">{locale === 'uk' ? 'Епохи конструктора' : 'Constructor eras'}</h2>
       <p>{locale === 'uk' ? 'Сезони з найбільшою кількістю переможних гонок у цьому архіві. Це порівняння результатів, а не рейтинг офіційних чемпіонських титулів.' : 'Seasons with the most race wins in this archive. These are recorded winning races, not official championship titles.'}</p>
       {seasons.length > 0 ? <div className="driver-grid">{[...seasons].sort((a,b) => b.wins - a.wins || a.year - b.year).slice(0, 4).map(season =>
@@ -155,6 +152,10 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         </article>)}</div> : <p>{locale === 'uk' ? 'Немає зафіксованих сезонів.' : 'No seasons recorded.'}</p>}
       <p>{locale === 'uk' ? 'Учасники, юридична спадковість, шасі й силові установки потребують окремих перевірених джерел. Не ототожнюємо однойменні команди та конструкторів без доказів.' : 'Entrants, legal succession, chassis and power units need separate verified evidence. Constructor identity alone does not establish legal team continuity.'}</p>
     </section>
+    <EmptyMediaState title={e.cars} note={e.carsNote} locale={locale} />
+    <section id="constructor-archive" className={styles.archive}>
+    <SectionHeading kicker={e.archive} title={e.fullArchive} id="constructor-archive-title" />
+    {identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />}
     <h2>{t('participationTimeline')}</h2>
     <p>{t('participationLead')}</p>
     {seasons.length > 0 && team.first_season !== null && team.last_season !== null && <div className="timeline-scroll" role="region" aria-label={t('constructorRegion')} tabIndex={0}>
@@ -189,6 +190,8 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         <Link href={`/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name} ↗</Link>
       </p>}
     </section>
+    </section>
+    <section className={styles.relations}>
     <h2>{t('historicalRelations')}</h2>
     <p>{t('relationsLead')}</p>
     {lineage.length > 0 && <div className="lineage-graph" role="region" aria-label={t('constructorGraph')}>
@@ -212,7 +215,8 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <p>{edge.evidence_note}</p>
       <a className="back" href={edge.source_url} target="_blank" rel="noopener noreferrer">{t('source')}: {edge.source_title} · {edge.source_publisher} ↗</a>
     </article>)}</div> : <p>{t('noVerifiedRelations')}</p>}
-    <ChampionshipTable rows={championships} locale={locale} kind="constructors" scope="career" />
+    </section>
+    <div id="constructor-classifications" className={styles.classifications}><ChampionshipTable rows={championships} locale={locale} kind="constructors" scope="career" /></div>
     <Link className="back" href="/constructors">← {t('allConstructors')}</Link>
   </section>;
 }

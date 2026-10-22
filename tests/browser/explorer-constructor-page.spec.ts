@@ -1,10 +1,11 @@
+import { editorialCopy } from '../../apps/web/src/components/editorial/copy';
 import { test, expect } from '@playwright/test';
 
 // Synthetic test archive: no historical claims.
 for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: constructor profile to two drivers, select and navigate`, async ({ page }) => {
     await page.goto(`/${locale}/constructors/1`);
-    const entry = page.getByRole('link', { name: /Explorer/ });
+    const entry = page.getByRole('link', { name: `${editorialCopy[locale].atlas} ↗`, exact: true });
     await expect(entry).toHaveAttribute('href', `/${locale}/explorer/constructors/1?year=1950`);
     await entry.click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/explorer/constructors/1\\?year=1950$`));
