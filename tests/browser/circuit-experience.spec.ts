@@ -40,3 +40,21 @@ for (const locale of ['uk', 'en'] as const) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }
+
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: circuit era rail links recorded seasons to event evidence`, async ({ page }) => {
+    await page.goto(`/${locale}/circuits/1`);
+    const experience = page.getByTestId('circuit-experience');
+    const rail = experience.getByTestId('circuit-era-rail');
+    const years = rail.getByRole('button');
+    await expect(rail).toBeVisible();
+    expect(await years.count()).toBeGreaterThan(0);
+    const year = years.first();
+    const yearLabel = (await year.locator('strong').innerText()).trim();
+    await year.click();
+    await expect(year).toHaveAttribute('aria-pressed', 'true');
+    await expect(experience.getByTestId('circuit-year-select')).toHaveValue(yearLabel);
+    await expect(experience.locator('a[href*="/races/"]').first()).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  });
+}
