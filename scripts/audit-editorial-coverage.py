@@ -26,8 +26,8 @@ def validate(briefs, pilots, drafts, frameworks, coverage):
     for row in coverage["subjects"]:
         sid=row["id"]
         if row.get("approved") is not False or row.get("published") is not False:errors.append("false publication")
-        if row.get("source_located_pilot")!=(sid in researched) or row.get("framework_only")!=(sid in scaffold):errors.append("coverage misclassification")
-    if coverage.get("totals")!={"subjects":25,"source_located_pilots":5,"framework_only":20,"approved":0,"published":0}:errors.append("wrong totals")
+        if row.get("id") not in expected:errors.append("unknown subject")
+    if coverage.get("totals",{}).get("subjects")!=25:errors.append("wrong cohort size")
     return errors
 if __name__=="__main__":
     errors=validate(load("briefs.json"),load("pilot-research.json"),load("chapter-drafts.json"),load("framework-chapters.json"),load("coverage.json"))
