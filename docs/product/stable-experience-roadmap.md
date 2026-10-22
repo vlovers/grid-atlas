@@ -1,7 +1,15 @@
 # Grid Atlas — MVP status, delivery order and release gates
 
-Updated 20 October 2026 (Time Machine UI verified present in `main`; production acceptance remains separate). **Code and CI state are distinct from production acceptance.**
+Historical baseline updated 20 October 2026; implementation delta checked against merged PRs through #201 on 22 October 2026. Production acceptance remains separate. **Code and CI state are distinct from production acceptance.**
 This document records merged GitHub work and known blockers, not an approval to publish.
+
+## Merged product delta — 22 October 2026
+
+- Circuit Experience V2 added event-linked layout identities, sourced technical history, and UK/EN circuit pages. [V2 contract](circuit-experience-v2.md).
+- Circuit Graphics V3 added 160 pinned historical SVG layout assets with explicit CC BY 4.0 provenance; see [SVG attribution and source limits](../media/historical-circuit-svg-provenance.md).
+- [PR #201](https://github.com/vlovers/grid-atlas/pull/201) merged the V4 chronological year explorer, year-specific layout selection, keyboard/accessibility improvements and real-archive coverage. This is **implemented in main**, not a pending feature.
+- Historical circuit geometry is an attributed illustration, **not** a measured geographic map. Missing sector/DRS/tyre/elevation facts are not inferred.
+- The latest merged feature is not proof of production deployment, independent FIA verification, or editorial approval.
 
 ## Editorial release V1 review candidate
 
@@ -24,11 +32,11 @@ The [five-driver release](../editorial/releases/v1/README.md) adds canonical UK/
 | UK/EN archive routing, sources, SEO groundwork | existing merged work | External domain, Search Console and production crawl not verified |
 | Driver profile visual/navigation foundations | #140–#144 | Story reader is private by default; licensed-media registry does not imply approved images; accessible section navigation and compact career overview merged |
 
-## Editorial and interface drafts (not merged)
+## Historical editorial and interface PR notes (status at time of original audit)
 
 - [PR #124](https://github.com/vlovers/grid-atlas/pull/124): historical Time Machine UI implementation; PR is closed and equivalent feature files are present in `main`. Do not re-merge its divergent branch. Real-import visual acceptance remains outstanding.
 - [PR #71](https://github.com/vlovers/grid-atlas/pull/71): sourced Senna biography draft; **independent editorial review required**, no automatic publication.
-- [Issue #145](https://github.com/vlovers/grid-atlas/issues/145): Senna showcase implementation in progress on `feat/senna-showcase-v1`; do not mark it shipped until its changes are pushed, reviewed and merged.
+- [Issue #145](https://github.com/vlovers/grid-atlas/issues/145): historical Senna showcase tracking issue. Later design and dossier work merged; reassess the issue acceptance criteria against current `main` before closing.
 - [PR #59](https://github.com/vlovers/grid-atlas/pull/59): **closed, superseded without merge** after retaining distinct useful notes in the [legacy specification review](legacy-explorer-spec-review.md). Old API sketches are not current contracts.
 
 ## Prioritized work items
