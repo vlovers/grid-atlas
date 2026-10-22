@@ -34,9 +34,13 @@ def targets(text):
         yield source.count("\n", 0, match.start()) + 1, match.group(1).strip("<>")
 
 
-def audit():
+def tracked_paths():
     raw = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT)
-    tracked = {p.decode("utf-8") for p in raw.split(b"\0") if p}
+    return {p.decode("utf-8") for p in raw.split(b"\0") if p}
+
+
+def audit():
+    tracked = tracked_paths()
     failures = []
     for file in sorted(p for p in tracked if p.endswith(".md") and (p.startswith("docs/") or p == "README.md")):
         for line, target in targets((ROOT / file).read_text(encoding="utf-8")):
