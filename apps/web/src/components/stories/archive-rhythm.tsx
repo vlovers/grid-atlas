@@ -30,6 +30,9 @@ export function ArchiveRhythm({ entries, locale, title, description, testId, axi
   }
   const maxCount = Math.max(1, ...[...buckets.values()].map(items => items.length));
   const hasSingleYear = first === last;
+  const distributionLabel = axis === 'round'
+    ? (locale === 'uk' ? 'Розподіл записів за раундами' : 'Records by round')
+    : (locale === 'uk' ? 'Розподіл записів за роками' : 'Records by year');
   return <section className={styles.section} aria-label={title} data-testid={testId}>
     <div className={styles.header}>
       <div><span className={styles.eyebrow}>{locale === 'uk' ? 'АРХІВ У ЧАСІ' : 'ARCHIVE IN TIME'}</span><h2>{title}</h2></div>
@@ -38,7 +41,7 @@ export function ArchiveRhythm({ entries, locale, title, description, testId, axi
     <div className={styles.summary} aria-label={locale === 'uk' ? 'Охоплення архіву' : 'Archive coverage'}>
       <span>{axis === 'round' ? (locale === 'uk' ? `Раунд ${first}` : `Round ${first}`) : first}</span><span>{entries.length} {locale === 'uk' ? 'записів' : 'records'}</span><span>{axis === 'round' ? (locale === 'uk' ? `Раунд ${last}` : `Round ${last}`) : last}</span>
     </div>
-    <div className={styles.plot} role="list" aria-label={locale === 'uk' ? 'Розподіл записів за роками' : 'Records by year'}>
+    <div className={styles.plot} role="list" aria-label={distributionLabel}>
       {years.map(year => {
         const items = buckets.get(year)!;
         return <div key={year} className={styles.point} role="listitem" style={{ left: hasSingleYear ? '50%' : `${((year - first) / span) * 100}%` }}>
