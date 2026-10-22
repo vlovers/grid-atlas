@@ -6,7 +6,7 @@ verify F1 history, biographies, lineage, rights or individual row provenance.
 
 ## Reproducible procedure
 
-Workflow: [Pinned F1DB real-archive acceptance](../../.github/workflows/real-archive.yml).
+Workflow: [Pinned F1DB real-archive acceptance](../.github/workflows/real-archive.yml).
 
 1. Download published split JSON ZIP + checksum list; verify SHA-256 through the
    existing importer, apply checksummed migrations, import twice to a disposable
