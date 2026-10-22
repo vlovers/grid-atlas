@@ -4,6 +4,10 @@ A source-backed Formula 1 historical encyclopedia, with searchable drivers, cons
 
 The public beta is in preparation. The archive uses pinned **F1DB v2026.17.0**, covering 1950–2026 through that release, rather than live updates. The interface defaults to Ukrainian at `/uk`, with English at `/en`. Unprefixed routes redirect to Ukrainian; imported names, identifiers and historical evidence are unchanged. Lineage is independently reviewed editorial data: proposed and rejected claims are never public. The 2021 Racing Point → Aston Martin candidate remains **proposed**.
 
+## Documentation
+
+Start with the [documentation guide](docs/README.md) for current architecture, product status, data provenance, editorial and media review policies, operations, and dated historical evidence. Old audits and screenshots document the state at the time they were captured; they are not current release approvals.
+
 ## Run locally
 
 Requirements: Node 24, pnpm 10.18.3, Python 3.11+, PostgreSQL 17 / Docker and the `psql` client. Run commands from the repository root.
