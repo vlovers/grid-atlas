@@ -42,6 +42,8 @@ const labels = {
     noGraphic: 'Перевірений контур для цієї конфігурації недоступний.',
     yearBrowse: 'Досліджуйте за сезоном', yearHint: 'Оберіть рік, щоб переглянути конфігурацію, використану в архівних перегонах.',
     yearSelected: 'Вибраний сезон', noLayoutForYear: 'Для цього сезону немає пов’язаної конфігурації.',
+    compare: 'Порівняння конфігурацій', compareHint: 'Порівняння лише параметрів, зафіксованих у F1DB для кожної конфігурації; це не оцінка швидкості чи складності.',
+    compareYear: 'Зафіксовані роки', compareMissing: 'Немає достатньо даних для порівняння.',
     previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Гран-прі обраного сезону', clearYear: 'Показати всі роки',
   },
   en: {
@@ -63,6 +65,8 @@ const labels = {
     noGraphic: 'No verified outline available for this layout.',
     yearBrowse: 'Explore by season', yearHint: 'Choose a year to see the layout recorded for its Grands Prix.',
     yearSelected: 'Selected season', noLayoutForYear: 'No linked layout is recorded for this season.',
+    compare: 'Layout comparison', compareHint: 'Compare only measurements recorded by F1DB for each layout. This is not a speed or difficulty ranking.',
+    compareYear: 'Recorded years', compareMissing: 'Not enough layout data to compare.',
     previous: 'Previous season', next: 'Next season', seasonEvents: 'Grands Prix in selected season', clearYear: 'Show all years',
   },
 } as const;
@@ -86,6 +90,7 @@ export function CircuitExperience({ layouts, events, locale }: {
   const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
   const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
+  const timelineYears = [...new Set(events.map(e => e.season_year))].sort((a, b) => a - b);
   const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
   const maxYear = events.length ? Math.max(...events.map(e => e.season_year)) : null;
   return <section className={styles.shell} aria-labelledby="circuit-experience-title" data-testid="circuit-experience">
@@ -139,12 +144,26 @@ export function CircuitExperience({ layouts, events, locale }: {
         {current.effective && <p className={styles.effective}>{t.effective}</p>}
       </div>}
     </div>
+    {layouts.length > 1 && <section className={styles.compare} aria-labelledby="circuit-layout-comparison-title" data-testid="circuit-layout-comparison">
+      <h3 id="circuit-layout-comparison-title">{t.compare}</h3>
+      <p>{t.compareHint}</p>
+      <div className={styles.compareScroll} role="region" aria-label={t.compare} tabIndex={0}>
+        <table className={styles.compareTable}>
+          <thead><tr><th scope="col">{t.select}</th><th scope="col">{t.length}</th><th scope="col">{t.turns}</th><th scope="col">{t.events}</th><th scope="col">{t.compareYear}</th></tr></thead>
+          <tbody>{layouts.map(layout => <tr key={layout.id} className={selected === layout.id ? styles.selectedLayout : undefined}>
+            <th scope="row"><button type="button" aria-pressed={selected === layout.id} onClick={() => { setSelected(layout.id); setSelectedYear(null); setShowAll(false); }}>{layout.external_layout_id}</button></th>
+            <td>{layout.length_km} km</td><td>{layout.turns}</td><td>{layout.linked_races}</td>
+            <td>{layout.first_recorded_year ?? '—'} – {layout.last_recorded_year ?? '—'}</td>
+          </tr>)}</tbody>
+        </table>
+      </div>
+    </section>}
     {minYear !== null && maxYear !== null && <div className={styles.timeline} aria-label={t.notMap}>
       <div className={styles.timelineHeading}><strong>{minYear}</strong><span>{t.notMap}</span><strong>{maxYear}</strong></div>
       <div className={styles.timelineBar} aria-hidden="true">
-        {events.slice(0, 120).map(e => <span key={e.race_id}
-          className={selected && e.layout_id !== selected ? styles.dimmed : ''}
-          style={{ left: `${maxYear === minYear ? 50 : ((e.season_year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
+        {timelineYears.map(year => <span key={year}
+          className={selected && !events.some(e => e.season_year === year && e.layout_id === selected) ? styles.dimmed : ''}
+          style={{ left: `${maxYear === minYear ? 50 : ((year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
       </div>
     </div>}
     <h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`}</h3>

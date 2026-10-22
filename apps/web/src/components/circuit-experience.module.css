@@ -51,3 +51,20 @@
 @media(max-width:700px){.yearExplorerControls{width:100%}.yearPickerLabel{flex:1}.yearPickerLabel select{width:100%}}
 
 .yearExplorerControls{flex-wrap:wrap}.yearExplorerControls .clearYear{font-size:.8rem;padding:.55rem .7rem;min-width:0}
+
+/* Historical layout comparison: horizontally scrollable without truncating evidence. */
+.compare{margin:2rem 0;padding:clamp(1rem,2.5vw,1.6rem);border:1px solid #3c5375;border-radius:1rem;background:#0b1a2e}
+.compare h3{font-size:clamp(1.3rem,2.5vw,1.8rem);margin:0 0 .6rem}
+.compare>p{color:#c7d6ed;max-width:65ch;line-height:1.55}
+.compareScroll{overflow-x:auto;max-width:100%;margin-top:1.3rem}
+.compareScroll:focus-visible{outline:3px solid #94caff;outline-offset:3px}
+.compareTable{border-collapse:collapse;min-width:42rem;width:100%;font-variant-numeric:tabular-nums}
+.compareTable th,.compareTable td{padding:1rem .85rem;border-bottom:1px solid #334c6b;text-align:left;white-space:nowrap}
+.compareTable thead th{font-size:.78rem;color:#b4cbe9}
+.compareTable tbody th{font-weight:650}
+.compareTable button{cursor:pointer;background:transparent;border:1px solid transparent;color:#e8f3ff;padding:.4rem .6rem;border-radius:.4rem;font:inherit;text-align:left}
+.compareTable button:hover{border-color:#94caff}
+.compareTable button:focus-visible{outline:3px solid #94caff;outline-offset:2px}
+.selectedLayout{background:#1d385c}
+.selectedLayout button{border-color:#94caff}
+@media(forced-colors:active){.selectedLayout{outline:2px solid Highlight;outline-offset:-2px}}
