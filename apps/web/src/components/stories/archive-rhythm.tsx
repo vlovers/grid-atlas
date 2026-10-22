@@ -1,3 +1,4 @@
+import { archiveDistribution, archivePointPosition } from '@/lib/archive-distribution';
 import { Link } from '@/i18n/navigation';
 import styles from './archive-rhythm.module.css';
 
@@ -19,17 +20,7 @@ export function ArchiveRhythm({ entries, locale, title, description, testId, axi
   axis?: 'year' | 'round';
 }) {
   if (!entries.length) return null;
-  const years = [...new Set(entries.map(entry => axis === 'round' ? (entry.position ?? entry.year) : entry.year))].sort((a, b) => a - b);
-  const first = years[0];
-  const last = years[years.length - 1];
-  const span = Math.max(1, last - first);
-  const buckets = new Map<number, ArchiveRhythmEntry[]>();
-  for (const entry of entries) {
-    const key = axis === 'round' ? (entry.position ?? entry.year) : entry.year;
-    buckets.set(key, [...(buckets.get(key) ?? []), entry]);
-  }
-  const maxCount = Math.max(1, ...[...buckets.values()].map(items => items.length));
-  const hasSingleYear = first === last;
+  const { keys: years, counts, first, last, maxCount } = archiveDistribution(entries, axis);
   const distributionLabel = axis === 'round'
     ? (locale === 'uk' ? 'Розподіл записів за раундами' : 'Records by round')
     : (locale === 'uk' ? 'Розподіл записів за роками' : 'Records by year');
@@ -42,11 +33,11 @@ export function ArchiveRhythm({ entries, locale, title, description, testId, axi
       <span>{axis === 'round' ? (locale === 'uk' ? `Раунд ${first}` : `Round ${first}`) : first}</span><span>{entries.length} {locale === 'uk' ? 'записів' : 'records'}</span><span>{axis === 'round' ? (locale === 'uk' ? `Раунд ${last}` : `Round ${last}`) : last}</span>
     </div>
     <div className={styles.plot} role="list" aria-label={distributionLabel}>
-      {years.map(year => {
-        const items = buckets.get(year)!;
-        return <div key={year} className={styles.point} role="listitem" style={{ left: hasSingleYear ? '50%' : `${((year - first) / span) * 100}%` }}>
-          <span className={styles.bar} style={{ height: `${Math.max(12, items.length / maxCount * 100)}%` }} />
-          <span className={styles.srOnly}>{axis === 'round' ? (locale === 'uk' ? 'Раунд' : 'Round') : (locale === 'uk' ? 'Рік' : 'Year')} {year}: {items.length}</span>
+      {years.map((year, index) => {
+        const count = counts[index];
+        return <div key={year} className={styles.point} role="listitem" style={{ left: `${archivePointPosition(year, first, last)}%` }}>
+          <span className={styles.bar} style={{ height: `${Math.max(12, count / maxCount * 100)}%` }} />
+          <span className={styles.srOnly}>{axis === 'round' ? (locale === 'uk' ? 'Раунд' : 'Round') : (locale === 'uk' ? 'Рік' : 'Year')} {year}: {count}</span>
         </div>;
       })}
     </div>
