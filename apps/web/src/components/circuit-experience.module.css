@@ -49,3 +49,5 @@
 .yearExplorerControls{display:flex;align-items:stretch;gap:.5rem}.yearExplorerControls button{min-width:2.8rem;border:1px solid #698ab7;border-radius:.65rem;background:#1b3456;color:#fff;font-size:1.65rem;cursor:pointer}.yearExplorerControls button:disabled{opacity:.35;cursor:not-allowed}.yearExplorerControls button:focus-visible,.yearExplorerControls select:focus-visible{outline:3px solid #94caff;outline-offset:2px}
 .yearPickerLabel{display:flex;flex-direction:column;gap:.25rem;font-size:.75rem;color:#c4d6ef}.yearPickerLabel select{background:#152741;color:#fff;border:1px solid #7795c2;border-radius:.6rem;min-height:2.8rem;padding:.4rem .75rem;font:inherit;font-size:1rem}
 @media(max-width:700px){.yearExplorerControls{width:100%}.yearPickerLabel{flex:1}.yearPickerLabel select{width:100%}}
+
+.yearExplorerControls{flex-wrap:wrap}.yearExplorerControls .clearYear{font-size:.8rem;padding:.55rem .7rem;min-width:0}
