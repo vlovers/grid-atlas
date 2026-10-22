@@ -1,21 +1,21 @@
 .showcase { padding-top: 2.5rem; overflow-wrap: anywhere; }
 .showcase > * { min-width: 0; }
-.chapter { margin-block: var(--space-section); scroll-margin-top: 2rem; }
+.chapter { margin-block: clamp(2.75rem, 5vw, 5rem); scroll-margin-top: 2rem; }
 .kicker { color: var(--muted); font: .65rem/1.8 var(--font-sans); letter-spacing: .14em; text-transform: uppercase; }
-.chapter p { max-width: 80ch; line-height: 1.9; color: var(--muted); font-size: .88rem; }
-.quickFacts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; border-block: 1px solid var(--line); padding-block: 2rem; }
+.chapter p { max-width: 72ch; line-height: 1.72; color: var(--muted); font-size: clamp(.95rem, 1vw, 1.06rem); }
+.quickFacts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 2rem); border-block: 1px solid var(--line); padding-block: 1.6rem; }
 .quickFacts > div { min-width: 0; }
-.quickFacts dt, .sourceFacts dt { color: var(--muted); font-size: .7rem; margin-bottom: .8rem; }
+.quickFacts dt, .sourceFacts dt { color: var(--muted); font-size: .85rem; line-height: 1.4; margin-bottom: .7rem; }
 .quickFacts dd { margin: 0; font: 500 clamp(1.5rem, 2.2vw, 2.6rem)/1.15 var(--font-display); }
 .quickFacts a { display: inline-block; max-width: 100%; }
 .openingScene { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 6rem); margin-block: var(--space-section); border-block: 1px solid var(--line); }
-.openingArt { position: relative; min-height: 330px; background: var(--surface); border-left: 3px solid var(--accent); padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
+.openingArt { position: relative; min-height: 260px; background: var(--surface); border-left: 3px solid var(--accent); padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
 .openingArt > span { font: 400 clamp(5rem, 11vw, 11rem)/1 var(--font-display); letter-spacing: -.06em; color: var(--ink); }
 .openingArt small { color: var(--muted); font: .65rem/1.8 var(--font-mono); }
-.openingCopy { align-self: center; padding-block: 2.5rem; }
+.openingCopy { align-self: center; padding-block: 1.5rem; }
 .openingArt, .openingCopy { min-width: 0; }
 .openingCopy h2 { font: 500 clamp(2.5rem, 4vw, 4.5rem)/1 var(--font-display); margin: 1rem 0; max-width: 16ch; }
-.openingCopy > p { color: var(--muted); font-size: .85rem; max-width: 45ch; }
+.openingCopy > p { color: var(--muted); font-size: 1rem; line-height: 1.65; max-width: 45ch; }
 .openingCopy h3 { font: 500 2rem/1.1 var(--font-display); }
 .openingLabel { color: var(--muted); font: .65rem var(--font-mono); }
 .primary, .textLink, .outlineLink { display: inline-flex; align-items: center; min-height: 44px; font-size: .8rem; border-bottom: 1px solid var(--accent); gap: .5rem; }
@@ -28,11 +28,11 @@
 .yearLink span { font: 1rem var(--font-sans); }
 .seasonMilestones p { margin-bottom: .3rem; }
 .seasonMilestones > li > span:last-child { font-size: .7rem; color: var(--muted); }
-.seasonExplorer { margin-top: 3rem; }
+.seasonExplorer { margin-top: 2rem; }
 .yearNav { display: flex; flex-wrap: wrap; gap: .4rem 1rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
 .yearNav a { display: inline-flex; align-items: center; min-height: 44px; font: .78rem var(--font-mono); color: var(--muted); padding-inline: .3rem; }
 .yearNav a[aria-current] { color: var(--ink); border-bottom: 2px solid var(--accent); }
-.selectedSeason { display: grid; grid-template-columns: minmax(180px,.6fr) minmax(0,1.4fr); gap: 2rem 4rem; margin-top: 2.5rem; }
+.selectedSeason { display: grid; grid-template-columns: minmax(180px,.6fr) minmax(0,1.4fr); gap: 1.5rem 3rem; margin-top: 1.5rem; }
 .selectedSeason h3 { font: 400 5.5rem/1 var(--font-display); margin: .5rem 0 1rem; }
 .selectedSeason > dl { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; align-content: center; border-block: 1px solid var(--line); padding-block: 1.5rem; }
 .selectedSeason dt { color: var(--muted); font-size: .68rem; }
@@ -47,8 +47,8 @@
 .raceTableScroll, .tableScroll { max-width: 100%; overflow-x: auto; margin-block: 1.5rem; }
 .raceTableScroll table, .tableScroll table { min-width: 640px; width: 100%; border-collapse: collapse; }
 .raceTableScroll th, .tableScroll th { white-space: normal; }
-.raceTableScroll td, .raceTableScroll th, .tableScroll td, .tableScroll th { padding: 1rem .8rem; font-size: .75rem; border-bottom: 1px solid var(--line); text-align: left; }
-.raceTableScroll small, .partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .65rem; }
+.raceTableScroll td, .raceTableScroll th, .tableScroll td, .tableScroll th { padding: .85rem .75rem; font-size: clamp(.83rem, .9vw, .96rem); line-height: 1.45; border-bottom: 1px solid var(--line); text-align: left; }
+.raceTableScroll small, .partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .78rem; }
 .eras { list-style: none; margin: 0; padding: 0; }
 .eras > li { display: grid; grid-template-columns: minmax(180px,.6fr) minmax(0,1.4fr); gap: 4rem; border-top: 1px solid var(--line); padding-block: 2rem; }
 .eraRail { display: flex; gap: 1.5rem; align-items: baseline; }
@@ -71,15 +71,15 @@
 .timeMachine { border-block: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; padding-block: 3rem; }
 .timeMachine h2 { font: 500 clamp(2.5rem,4vw,4rem)/1 var(--font-display); max-width: 18ch; margin: 1rem 0; }
 .timeMachine p { max-width: 55ch; color: var(--muted); font-size: .85rem; }
-.biography { max-width: 1050px; margin-left: auto; columns: 2; column-gap: 4rem; }
+.biography { max-width: 1100px; margin-inline: auto; columns: 2; column-gap: clamp(2rem, 4vw, 4rem); }
 .biography h3 { margin-top: 0; font: 500 2rem/1.1 var(--font-display); }
 .biography p { margin-top: 0; break-inside: avoid; }
-.biography ul { padding-left: 1rem; font-size: .8rem; line-height: 1.8; break-inside: avoid; }
-.biography > a { font-size: .75rem; }
+.biography ul { padding-left: 1.25rem; font-size: .96rem; line-height: 1.7; break-inside: avoid; }
+.biography > a { font-size: .95rem; }
 .editorialEmpty { display: flex; align-items: baseline; gap: 1.5rem; border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.5rem; }
 .editorialEmpty > span { font: 2rem var(--font-display); color: var(--muted); }
 .editorialEmpty h3 { font: 500 1.7rem/1.1 var(--font-display); margin: 0; }
-.editorialEmpty p { font-size: .75rem; }
+.editorialEmpty p { font-size: .95rem; }
 .related { list-style: none; padding: 0; margin: 0; }
 .related li { border-top: 1px solid var(--line); }
 .related a { display: flex; justify-content: space-between; align-items: center; padding-block: 1.2rem; font: 500 2rem/1.1 var(--font-display); }
@@ -88,7 +88,7 @@
 .disclosure { border-bottom: 1px solid var(--line); padding-block: .5rem; }
 .disclosure summary { cursor: pointer; padding-block: 1.2rem; font: 500 1.2rem var(--font-display); }
 .disclosure summary span { color: var(--muted); font: .7rem var(--font-mono); margin-left: 1rem; }
-.disclosure code { display: block; overflow-wrap: anywhere; font-size: .65rem; }
+.disclosure code { display: block; overflow-wrap: anywhere; font-size: .82rem; line-height: 1.5; }
 .disclosure ul { padding-left: 1rem; }
 .sourceFacts { display: flex; flex-wrap: wrap; gap: 2rem; }
 .sourceFacts dd { margin: 0; font: 1.5rem var(--font-mono); }
@@ -108,7 +108,18 @@
   .selectedSeason > dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
   .selectedSeason dd { font-size: 1.7rem; }
   .eraRail { flex-wrap: wrap; }
-  .chapter p { font-size: .85rem; }
+  .chapter p { font-size: .96rem; }
 }
 @media (forced-colors: active) { .yearNav a[aria-current], .moments > li { border-color: CanvasText; } }
 .editorialEmpty > div { min-width: 0; }
+
+/* Readability: avoid tiny supporting copy in data-dense dossier sections. */
+.showcase :is(a, button, summary):focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.seasonMilestones > li > span:last-child, .momentLabel, .boundaries span, .boundaries small, .disclosure summary span { font-size: .82rem; line-height: 1.5; }
+.eraYears a, .eraLinks a, .yearNav a { font-size: .86rem; }
+@media (max-width: 700px) {
+  .raceTableScroll, .tableScroll { margin-inline: -.5rem; padding-inline: .5rem; }
+  .quickFacts dd { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .openingScene { gap: 0; }
+  .biography { max-width: 100%; }
+}
