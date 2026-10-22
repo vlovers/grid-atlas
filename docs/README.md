@@ -31,4 +31,4 @@ This directory contains **current operating documentation**, **historical implem
 4. When moving Markdown, update relative links and run the docs link audit. Keep root README short and route readers here.
 5. An old issue, a passing CI run, and a published release are different statuses. Verify each independently.
 
-See [repository hygiene audit](repository-hygiene-2026-10.md) for identified cleanup work and deliberately retained historical material.
+See [open issue triage](issue-triage-2026-10.md) for the 12 issue acceptance decisions and [repository hygiene audit](repository-hygiene-2026-10.md) for identified cleanup work and deliberately retained historical material.
