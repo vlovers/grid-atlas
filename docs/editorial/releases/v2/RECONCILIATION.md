@@ -1,15 +1,15 @@
-# Offline canonical race candidate reconciliation
+# Pinned-archive event reconciliation — execution and review contract
 
-The [reconciliation script](../../../scripts/reconcile-editorial-event-leads.py) reads the official pinned F1DB v2026.17.0 split ZIP **without modifying the database or editorial drafts**. It validates the measured ZIP digest against the official manifest, then produces a report of all races in the year named by each of the eleven event leads, including exact source race IDs, circuit external IDs, dates, rounds, and winning driver/constructor external IDs from race-result rows.
+The read-only [script](../../../scripts/reconcile-editorial-event-leads.py) enumerates **all** source races for each of the 11 event-lead years, with exact F1DB race, circuit, driver and constructor external IDs and the result rows reporting first position. It checks the archive against the measured v2026.17.0 SHA-256 and requires an **exact asset filename** in the official checksum manifest. Hashing is streamed; candidates are deterministically ordered by round and race ID.
 
 ```sh
-python3 scripts/reconcile-editorial-event-leads.py \\
-  --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \\
-  --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \\
+python3 scripts/reconcile-editorial-event-leads.py \
+  --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
+  --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
   --output /tmp/grid-atlas-event-candidates.json
 python3 -m unittest discover -s tests -p 'test_editorial_reconcile_event_leads.py'
 ```
 
-**This is candidate enumeration, not automated verification.** A human or separately reviewed deterministic match must select the correct race using the official event name and evidence, then confirm that its circuit ID corresponds to the intended venue or that its winning result belongs to the intended constructor. The script intentionally never fills the research JSON's `identity_reconciliation` IDs, never marks a claim verified, and never changes publication flags. Circuit layouts require a separate event-to-layout audit.
+The output is a **candidate report, not a verified historical claim**. A reviewer must select the right race from the year's candidates, verify the event against a specific official results page, and reconcile the subject's constructor or circuit identity. An event name is not a venue ID; a driver win is not necessarily a win for the subject constructor. The layout ID requires separate event-specific evidence. Shared-car and other result anomalies must be reviewed rather than silently resolved. Do not copy candidates into `identity_reconciliation` or approve/publish a chapter automatically.
 
-The committed tests use synthetic race fixtures. A real pinned-archive run and its output are **not claimed** until the ZIP and manifest are supplied and execution is recorded.
+The committed tests are synthetic. Real-archive execution remains unverified until the official ZIP and checksum manifest are available and a report is retained. No claim is made that all eleven stories are ready for publication.
