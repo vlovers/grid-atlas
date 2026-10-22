@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { CIRCUIT_ARTWORK } from './circuit-layout-registry';
 import styles from './circuit-experience.module.css';
 
@@ -107,9 +107,9 @@ export function CircuitExperience({ layouts, events, locale }: {
     <figure className={styles.trackVisual} data-testid="circuit-track-visual">
       <div className={styles.trackGlow} aria-hidden="true" />
       {artwork ? <>
-        <Image key={artwork.layout_id} className={styles.trackOutline}
-          src={artwork.path} width={500} height={500} unoptimized
-          alt={`${t.graphic}: ${current?.external_layout_id}`} priority={false} />
+        <img key={artwork.layout_id} className={styles.trackOutline}
+          src={artwork.path} width={500} height={500} loading="lazy"
+          alt={`${t.graphic}: ${current?.external_layout_id}`} />
         <figcaption className={styles.trackCredit}>
           <span>{t.illustration}</span>
           <a href={artwork.source_url} target="_blank" rel="noopener noreferrer">{t.credit} ↗</a>
