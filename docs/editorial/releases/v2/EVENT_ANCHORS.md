@@ -1,7 +1,7 @@
-# Eleven constructor and circuit event anchors
+# Event-result leads: verification required before history publication
 
-This batch advances the **11 previously framework-only subjects** to subject-specific historical research with **11 UK/EN event-result claims** and **22 short bilingual sections**. It deliberately uses official Formula 1 race-result indexes as narrow source leads and does not infer a constructor's first victory, a venue's inaugural race, a precise circuit configuration, or legal team succession from one result.
+The 11 constructor/circuit event anchors are **research leads only**. The URL of a Formula 1 annual results index does not, by itself, prove a claim about a specific circuit or constructor. In particular, a Grand Prix name can refer to different venues; a race winner does not establish that their car was entered by the subject constructor.
 
-The results are **not yet independently corroborated or approved**. In particular, a Grand Prix title can be associated with different venues over time; before publication each circuit claim must be joined to a canonical race record and exact venue/layout identity in the pinned F1DB archive. The event-anchor section is not a complete long-form article.
+Each lead now has an explicit `identity_reconciliation` gate, initially `pending`, with null `race_id`, `circuit_id`, `constructor_id`, and `layout_id`. Never fill these from intuition. Resolve each against the pinned F1DB race and result identities, verify the official race result page, and record independent source evidence where needed. Only then convert a lead into an editorial claim. The audit rejects invented IDs, fabricated verification states and publication flags.
 
-The existing [coverage.json](coverage.json) records the earlier research batches; it is updated separately when these new anchors have been reconciled. Until then, do not present its totals as current.
+The correct research inventory is **14 subjects with source-located material (31 claims)** plus **11 subjects with unverified event leads**, not 25 verified researched subjects. All 25 have briefs; none of these 25 subjects is approved or published. Existing source-located material itself still needs independent human editorial approval.

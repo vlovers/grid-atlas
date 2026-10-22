@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "status": "source_located_event_anchors_unapproved",
+  "status": "unverified_event_result_leads_unapproved",
   "as_of": "2026-10-22",
-  "note": "11 bilingual subject-specific event anchors. Each source is a research lead; event names are not proof of precise circuit geometry. No first-win claim is made.",
+  "note": "11 candidate event-result leads, not independently checked event/venue/constructor associations. Research leads must not count as verified historical claims.",
   "items": [
     {
       "subject_id": "constructor-williams",
       "subject": "Williams",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Williams: a race result that anchors the timeline",
         "uk": "Williams: результат гонки як опора хронології"
@@ -23,7 +23,7 @@
             "url": "https://www.formula1.com/en/results/1979/races",
             "locator": "1979 Race Results table, Great Britain row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -56,12 +56,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "constructor-mercedes",
       "subject": "Mercedes",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Mercedes: a race result that anchors the timeline",
         "uk": "Mercedes: результат гонки як опора хронології"
@@ -77,7 +85,7 @@
             "url": "https://www.formula1.com/en/results/1954/races",
             "locator": "1954 Race Results table, France row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -110,12 +118,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "constructor-red-bull-racing",
       "subject": "Red Bull Racing",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Red Bull Racing: a race result that anchors the timeline",
         "uk": "Red Bull Racing: результат гонки як опора хронології"
@@ -131,7 +147,7 @@
             "url": "https://www.formula1.com/en/results/2009/races",
             "locator": "2009 Race Results table, China row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -164,12 +180,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-spa-francorchamps",
       "subject": "Spa-Francorchamps",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Spa-Francorchamps: a race result that anchors the timeline",
         "uk": "Spa-Francorchamps: результат гонки як опора хронології"
@@ -185,7 +209,7 @@
             "url": "https://www.formula1.com/en/results/1950/races",
             "locator": "1950 Race Results table, Belgium row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -218,12 +242,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-monza",
       "subject": "Monza",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Monza: a race result that anchors the timeline",
         "uk": "Monza: результат гонки як опора хронології"
@@ -239,7 +271,7 @@
             "url": "https://www.formula1.com/en/results/1950/races",
             "locator": "1950 Race Results table, Italy row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -272,12 +304,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-suzuka",
       "subject": "Suzuka",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Suzuka: a race result that anchors the timeline",
         "uk": "Suzuka: результат гонки як опора хронології"
@@ -293,7 +333,7 @@
             "url": "https://www.formula1.com/en/results/1987/races",
             "locator": "1987 Race Results table, Japan row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -326,12 +366,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-interlagos",
       "subject": "Interlagos",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Interlagos: a race result that anchors the timeline",
         "uk": "Interlagos: результат гонки як опора хронології"
@@ -347,7 +395,7 @@
             "url": "https://www.formula1.com/en/results/1973/races",
             "locator": "1973 Race Results table, Brazil row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -380,12 +428,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-n-rburgring",
       "subject": "Nürburgring",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Nürburgring: a race result that anchors the timeline",
         "uk": "Nürburgring: результат гонки як опора хронології"
@@ -401,7 +457,7 @@
             "url": "https://www.formula1.com/en/results/1951/races",
             "locator": "1951 Race Results table, Germany row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -434,12 +490,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-imola",
       "subject": "Imola",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Imola: a race result that anchors the timeline",
         "uk": "Imola: результат гонки як опора хронології"
@@ -455,7 +519,7 @@
             "url": "https://www.formula1.com/en/results/1981/races",
             "locator": "1981 Race Results table, San Marino row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -488,12 +552,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-circuit-of-the-americas",
       "subject": "Circuit of the Americas",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Circuit of the Americas: a race result that anchors the timeline",
         "uk": "Circuit of the Americas: результат гонки як опора хронології"
@@ -509,7 +581,7 @@
             "url": "https://www.formula1.com/en/results/2012/races",
             "locator": "2012 Race Results table, United States row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -542,12 +614,20 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     },
     {
       "subject_id": "circuit-albert-park",
       "subject": "Albert Park",
-      "scope": "event_anchor_only",
+      "scope": "unverified_event_result_lead",
       "headline": {
         "en": "Albert Park: a race result that anchors the timeline",
         "uk": "Albert Park: результат гонки як опора хронології"
@@ -563,7 +643,7 @@
             "url": "https://www.formula1.com/en/results/1996/races",
             "locator": "1996 Race Results table, Australia row, winner column",
             "accessed": "2026-10-22",
-            "kind": "official_result_index_research_lead"
+            "kind": "unverified_official_index_lead"
           }
         }
       ],
@@ -596,7 +676,15 @@
         }
       ],
       "review_state": "pending_independent_human_review",
-      "published": false
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
     }
   ]
 }
