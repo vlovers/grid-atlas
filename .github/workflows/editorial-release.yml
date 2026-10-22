@@ -10,6 +10,8 @@ on:
       - 'scripts/audit-editorial-event-candidates.py'
       - 'scripts/audit-editorial-archive-matches.py'
       - 'scripts/audit-editorial-official-crosschecks.py'
+      - 'scripts/audit-editorial-event-stories.py'
+      - 'tests/test_editorial_event_stories.py'
       - 'tests/test_editorial_official_crosschecks.py'
       - 'tests/test_editorial_archive_matches.py'
       - 'scripts/audit-editorial-chapter-coverage.py'
@@ -45,6 +47,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate the entire bilingual manuscript and research inventory
         run: |
+          python3 scripts/audit-editorial-event-stories.py
+          python3 -m unittest discover -s tests -p 'test_editorial_event_stories.py' -v
           python3 scripts/audit-editorial-official-crosschecks.py
           python3 -m unittest discover -s tests -p 'test_editorial_official_crosschecks.py' -v
           python3 scripts/audit-editorial-archive-matches.py
