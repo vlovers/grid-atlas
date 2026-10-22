@@ -18,6 +18,13 @@
 3. Choose hosting and configure private database access, TLS, public traffic limits, health/readiness monitoring and backups. Rehearse restore and incremental migration in that environment. Local production processes are validated; external deployment still needs approval.
 4. Review public source/licensing presentation and historical scope, and perform a maintainer acceptance pass against the imported archive. See [beta audit](../beta-audit.md).
 
+## Current visual and editorial delivery (22 October 2026)
+
+- Editorial Racing homepage and driver/constructor dossier redesign merged in PR #205. Responsive historical journey links merged in #206, driver reading-density improvements in #208, and bilingual driver-season visual charts in #209.
+- Historical circuit SVG outlines exist in the pinned asset set. PR #207 is still a draft at this snapshot and must not be described as a verified rendering fix until its web and real-archive checks pass and the PR is merged.
+- Draft editorial subjects, source-located research, and manuscript gates are not public biographies or independently verified historical facts. Photography is not approved for public display merely because a candidate or registry entry exists.
+- Next coherent visual milestone: circuit/season/race editorial templates and archive-backed interactive storytelling, with UK/EN parity, reduced-motion, keyboard support, real-archive browser verification, and per-asset licensing approval. Prefer one reviewable batch over overlapping small PRs.
+
 ## After the first useful beta
 
 - Official driver/constructor standings with historical scoring rules and sprint results, distinct from race-result summaries.
@@ -27,7 +34,7 @@
 
 Keep follow-ups focused on useful, testable behavior. Never fabricate lineage edges to make the explorer look populated, infer legal continuity from naming, or overwrite editorial changes during import.
 
-## Active delivery board (20 October 2026)
+## Historical delivery board snapshot (20 October 2026 — not current)
 
 The pinned historical archive and Explorer are implemented, with reproducible
 [real F1DB acceptance](../real-archive-acceptance-2026-10.md). This is **not**
