@@ -4,7 +4,7 @@ Grid Atlas is a pnpm monorepo targeting Node 24. Its existing boundaries remain 
 
 - `apps/web`: Next.js App Router server-rendered archive and client-side lineage explorer. It calls the API on the server through `API_BASE_URL`; API 404s render not-found pages. Fetches are uncached so editorial revocations are not retained in the frontend cache.
 - `apps/api`: NestJS read-only HTTP API with parameterized PostgreSQL queries. Lists have bounded pagination and catalogue search. BIGINT IDs and numeric points are strings in JSON.
-- `packages/database`: PostgreSQL provenance, external identities, historical records, results and separate constructor/entrant lineage claims. Five forward-only migrations are checksum tracked and serialized with an advisory lock.
+- `packages/database`: PostgreSQL provenance, external identities, historical records, results and separate constructor/entrant lineage claims. Eleven forward-only migrations are checksum tracked and serialized with an advisory lock.
 - `packages/data-importer`: dependency-free Python/psql loaders of pinned, checksum-checked F1DB assets. Imports are transactional and preserve existing curated records.
 
 A constructor is not an entrant or a legal organization. Lineage claims have typed endpoints, relation type, optional year, citation/evidence and review metadata. Public queries return verified claims only. A separate person's editorial approval remains a procedural requirement; a nonempty reviewer field alone is not evidence that independent review occurred.
