@@ -8,6 +8,13 @@ on:
       - 'scripts/editorial_review.py'
       - 'scripts/reconcile-editorial-event-leads.py'
       - 'scripts/audit-editorial-event-candidates.py'
+      - 'scripts/audit-editorial-chapter-coverage.py'
+      - 'scripts/audit-editorial-season-chapters.py'
+      - 'scripts/audit-editorial-season-chapters-batch-2.py'
+      - 'scripts/audit-editorial-coverage-current.py'
+      - 'tests/test_editorial_chapter_coverage.py'
+      - 'tests/test_editorial_season_chapters.py'
+      - 'tests/test_editorial_season_chapters_batch_2.py'
       - 'tests/test_editorial_reconcile_event_leads.py'
       - 'tests/test_editorial_event_candidates.py'
       - 'tests/test_editorial_release.py'
@@ -19,6 +26,10 @@ on:
       - 'scripts/editorial_release.py'
       - 'scripts/editorial_dossiers.py'
       - 'scripts/editorial_review.py'
+      - 'scripts/audit-editorial-chapter-coverage.py'
+      - 'scripts/audit-editorial-season-chapters.py'
+      - 'scripts/audit-editorial-season-chapters-batch-2.py'
+      - 'scripts/audit-editorial-coverage-current.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,6 +39,16 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Validate the entire bilingual manuscript and research inventory
+        run: |
+          python3 scripts/audit-editorial-coverage-current.py
+          python3 scripts/audit-editorial-chapter-coverage.py
+          python3 scripts/audit-editorial-season-chapters.py
+          python3 scripts/audit-editorial-season-chapters-batch-2.py
+          python3 -m unittest discover -s tests -p 'test_editorial_coverage_current.py' -v
+          python3 -m unittest discover -s tests -p 'test_editorial_chapter_coverage.py' -v
+          python3 -m unittest discover -s tests -p 'test_editorial_season_chapters.py' -v
+          python3 -m unittest discover -s tests -p 'test_editorial_season_chapters_batch_2.py' -v
       - name: Download the pinned archive and published checksum
         run: |
           mkdir -p /tmp/editorial-f1db
