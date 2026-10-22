@@ -45,6 +45,18 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
     <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
     <ArchiveRhythm testId="season-archive-rhythm" axis="round" locale={locale} title={locale === 'uk' ? 'Календар у деталях' : 'The calendar in detail'} description={locale === 'uk' ? 'Усі раунди сезону з прямими посиланнями на протоколи гонок.' : 'Every recorded round, linked to its race classification.'} entries={raceCalendar.map(race => ({ id: race.id, year: Number(year), position: race.round, label: race.official_name, href: `/races/${race.id}`, detail: race.circuit_name ?? undefined }))} />
     <ArchiveJourney testId="season-visual-journey" locale={locale} title={locale === 'uk' ? 'Маршрут сезону' : 'The season route'} description={locale === 'uk' ? 'Початок, середина та фінал календаря. Вибір за позицією у календарі, без непідтверджених тверджень про драматичність.' : 'Opening, midpoint and final calendar round. Selected by chronology, not invented dramatic significance.'} items={raceCalendar.length ? [raceCalendar[0], ...(raceCalendar.length > 2 ? [raceCalendar[Math.floor((raceCalendar.length - 1) / 2)]] : []), ...(raceCalendar.length > 1 ? [raceCalendar[raceCalendar.length - 1]] : [])].map(entry => ({ id: entry.id, href: `/races/${entry.id}`, year: Number(year), overline: `${locale === 'uk' ? 'Раунд' : 'Round'} ${entry.round}`, title: entry.official_name, detail: entry.circuit_name ?? undefined })) : []} />
+    <section aria-labelledby="season-journey" data-testid="season-journey">
+      <h2 id="season-journey">{locale === 'uk' ? 'Сезон у трьох етапах' : 'Season in three moments'}</h2>
+      <p>{locale === 'uk' ? 'Від початку календаря через середину до фінального зафіксованого етапу. Це точки навігації по архіву, а не редакційний вибір найважливіших подій.' : 'From the opening race through the middle of the calendar to the last recorded round. These are archive navigation points, not editorial claims about the most important moments.'}</p>
+      {races.length ? <ol className="records">
+        {[races[0], ...(races.length > 2 ? [races[Math.floor((races.length - 1) / 2)]] : []), ...(races.length > 1 ? [races[races.length - 1]] : [])].map((entry, index) =>
+          <li className="record" key={entry.id}><span className="position">{String(index + 1).padStart(2, '0')}</span>
+            <span><strong><Link href={`/races/${entry.id}`}>{entry.official_name} ↗</Link></strong>
+            <small>{locale === 'uk' ? 'Раунд' : 'Round'} {entry.round} · {entry.circuit_name ?? t('unknownCircuit')}</small></span>
+          </li>)}
+      </ol> : <p>{t('noRaces')}</p>}
+      <p>{locale === 'uk' ? 'Результати окремих гонок не дорівнюють офіційним підсумкам чемпіонату через історичні системи нарахування та відкидання очок.' : 'Individual race points cannot be treated as official championship totals because historical scoring and dropped-results rules varied.'}</p>
+    </section>
     <section aria-labelledby="season-archive-story" data-testid="season-archive-story">
       <h2 id="season-archive-story">{locale === 'uk' ? 'Портрет сезону за архівом' : 'An archive portrait of the season'}</h2>
       <p>{locale === 'uk'
