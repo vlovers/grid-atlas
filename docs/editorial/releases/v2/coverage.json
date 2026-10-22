@@ -42,13 +42,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "constructor-mercedes",
@@ -58,13 +58,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "constructor-red-bull-racing",
@@ -74,13 +74,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-monaco",
@@ -122,13 +122,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-monza",
@@ -138,13 +138,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-suzuka",
@@ -154,13 +154,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-interlagos",
@@ -170,13 +170,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-n-rburgring",
@@ -186,13 +186,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-imola",
@@ -202,13 +202,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-circuit-of-the-americas",
@@ -218,13 +218,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "circuit-albert-park",
@@ -234,13 +234,13 @@
         "uk"
       ],
       "editorial_brief": true,
-      "source_located_pilot": false,
-      "source_located_claims": 0,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
       "subject_specific_chapter_draft": false,
-      "framework_only": true,
+      "framework_only": false,
       "approved": false,
       "published": false,
-      "research_stage": "framework_only"
+      "research_stage": "event_anchor_research"
     },
     {
       "id": "season-1950",
@@ -405,12 +405,12 @@
   ],
   "totals": {
     "subjects": 25,
-    "source_located_subjects": 14,
-    "source_located_claims": 31,
+    "source_located_subjects": 25,
+    "source_located_claims": 42,
     "chapter_draft_subjects": 5,
-    "framework_only": 11,
+    "framework_only": 0,
     "approved": 0,
     "published": 0
   },
-  "note": "Derived from all three source-located research datasets. Framework text is not a verified historical article. The original 5-pilot snapshot is superseded."
+  "note": "All 25 subjects have at least a narrow source-located research lead. Eleven constructor/circuit subjects have only a single event anchor, not verified complete historical articles."
 }

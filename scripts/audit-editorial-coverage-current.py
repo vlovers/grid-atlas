@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 D=Path(__file__).resolve().parents[1]/"docs/editorial/releases/v2"
 def read(name):return json.loads((D/name).read_text(encoding="utf-8"))
-def validate(coverage,pilots,season1,season2):
+def validate(coverage,pilots,season1,season2,anchors):
     errors=[]
     records={}
     for item in pilots["items"]:
@@ -14,6 +14,10 @@ def validate(coverage,pilots,season1,season2):
             sid=item["subject_id"]
             if sid in records:errors.append(f"duplicate subject {sid}")
             records[sid]=(len(item[key]),"sourced_research")
+    for item in anchors["items"]:
+        sid=item["subject_id"]
+        if sid in records:errors.append(f"duplicate anchor {sid}")
+        records[sid]=(len(item["claims"]),"event_anchor_research")
     subjects=coverage["subjects"]
     if len(subjects)!=25 or len({s["id"] for s in subjects})!=25:errors.append("cohort identity mismatch")
     for s in subjects:
@@ -25,6 +29,6 @@ def validate(coverage,pilots,season1,season2):
     if coverage.get("totals")!=totals:errors.append("stale totals")
     return errors
 if __name__=="__main__":
-    errors=validate(read("coverage.json"),read("pilot-research.json"),read("season-research.json"),read("season-research-batch-2.json"))
-    print("Current coverage: "+("; ".join(errors) if errors else "14 researched subjects, 31 claims, 11 frameworks, 0 approved"))
+    errors=validate(read("coverage.json"),read("pilot-research.json"),read("season-research.json"),read("season-research-batch-2.json"),read("subject-event-anchors.json"))
+    print("Current coverage: "+("; ".join(errors) if errors else "25 researched subjects, 42 claims, 11 event anchors, 0 approved"))
     raise SystemExit(bool(errors))
