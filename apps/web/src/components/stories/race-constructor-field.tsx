@@ -38,7 +38,7 @@ export function RaceConstructorField({ entries, locale }: { entries: Entry[]; lo
         <ul>{group.entries.map((entry, index) => <li key={`${entry.driverId}-${index}`}>
           <span className={styles.position}>{entry.position || '—'}</span>
           <Link href={`/${locale}/drivers/${entry.driverId}`}>{entry.driver}</Link>
-          {entry.sharedCar && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}
+          {entry.sharedCar && <small>{locale === 'uk' ? 'Спільний запис' : 'Shared-drive entry'}</small>}
         </li>)}</ul>
       </article>)}
     </div>
