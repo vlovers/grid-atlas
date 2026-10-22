@@ -94,20 +94,6 @@ export default async function CircuitPage({ params, searchParams }: Props) {
           <small>{locale === 'uk' ? 'Гонки з першою позицією в результатах' : 'Races with first-position entries'}</small></span></li>)}</ol>
         : <p>{locale === 'uk' ? 'Переможних записів у цьому архіві немає.' : 'No first-position entries in this archive.'}</p>}
     </section>
-    <section aria-labelledby="circuit-era-journey" data-testid="circuit-era-journey">
-      <h2 id="circuit-era-journey">{locale === 'uk' ? 'Подорож крізь історію траси' : 'Explore the circuit across eras'}</h2>
-      <p>{locale === 'uk' ? 'Переходьте від першого зафіксованого етапу до останнього та відкривайте протоколи гонок. Послідовність відображає використання ідентифікатора траси в архіві, а не підтверджує однакову конфігурацію.' : 'Follow the circuit from its earliest to its latest archived event, and open each race classification. This is an identity-based history, not evidence that the layout stayed unchanged.'}</p>
-      {chronologicalHistory.length > 0 && <ol className="records">
-        {[chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map((race, index) =>
-          <li className="record" key={race.race_id}>
-            <span className="position">{String(index + 1).padStart(2, '0')}</span>
-            <span><strong><Link href={`/races/${race.race_id}`}>{race.season_year} · {race.race_name}</Link></strong>
-              <small>{locale === 'uk' ? 'Пілоти у протоколі' : 'Drivers in classification'}: {race.recorded_drivers} · {locale === 'uk' ? 'Конструктори' : 'Constructors'}: {race.recorded_constructors}</small></span>
-            <span aria-hidden="true">↗</span>
-          </li>)}
-      </ol>}
-      <p>{locale === 'uk' ? 'Різні епохи могли використовувати різні схеми, довжину кола та правила. Технічні характеристики не переносяться між роками без окремого підтвердження.' : 'Different eras may have different layouts, lap lengths and rules. Technical attributes must be established for each specific event year.'}</p>
-    </section>
     <section aria-label={locale === 'uk' ? 'Історія траси за десятиліттями' : 'Circuit history by decade'}>
       <h2>{locale === 'uk' ? 'Епохи траси' : 'Circuit eras'}</h2>
       <p>{locale === 'uk' ? 'Гран-прі згруповано за десятиліттями за датами в архіві. Кількість переможців — це записи з першою позицією, а не окремо підтверджений офіційний протокол.' : 'Grands Prix are grouped by archived decades. Winners are first-position result entries, not independently verified official classifications.'}</p>
