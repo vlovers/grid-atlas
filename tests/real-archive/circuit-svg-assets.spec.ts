@@ -40,7 +40,15 @@ for (const locale of ['en', 'uk'] as const) {
     const layout = page.getByTestId('circuit-layout-select');
     const firstLayout = await layout.inputValue();
     const firstSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
+    const nextYear = page.getByRole('button', {name:locale === 'en' ? 'Next season' : 'Наступний сезон'});
+    const previousYear = page.getByRole('button', {name:locale === 'en' ? 'Previous season' : 'Попередній сезон'});
+    await expect(previousYear).toBeDisabled();
+    await nextYear.click();
+    await expect(picker).toHaveValue(choices[1]);
+    await previousYear.click();
+    await expect(picker).toHaveValue(choices[0]);
     await picker.selectOption(choices[choices.length - 1]);
+    await expect(nextYear).toBeDisabled();
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[choices.length - 1]);
     await expect(eventCards.first()).toContainText(choices[choices.length - 1]);
     const lastLayout = await layout.inputValue();
