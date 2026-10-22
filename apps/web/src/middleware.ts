@@ -14,4 +14,4 @@ export default function middleware(request: NextRequest) {
 // Keep static reviewed media and discovery endpoints at the origin root.
 // Other dotted paths still receive the existing localized not-found behavior.
 // prettier-ignore
-export const config = { matcher: '/((?!api(?:/|$)|media(?:/|$)|fonts(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|sitemap\\.xml$|robots\\.txt$).*)' };
+export const config = { matcher: '/((?!api(?:/|$)|media(?:/|$)|circuit-layouts(?:/|$)|fonts(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|sitemap\\.xml$|robots\\.txt$).*)' };
