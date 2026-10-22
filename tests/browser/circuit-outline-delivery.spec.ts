@@ -16,7 +16,8 @@ for (const locale of ['uk', 'en'] as const) {
     // AVUS is a historic layout; explicitly select it rather than assuming the default.
     const options = await select.locator('option').evaluateAll(nodes => nodes.map(n => ({ value: (n as HTMLOptionElement).value, text: n.textContent ?? '' })));
     const avus = options.find(o => /avus-1/i.test(o.text));
-    if (avus) await select.selectOption(avus.value);
+    expect(avus, 'AVUS layout must be selectable in the circuit archive').toBeDefined();
+    await select.selectOption(avus!.value);
     const outline = page.getByTestId('circuit-track-visual').locator('img');
     await expect(outline).toHaveAttribute('src', /\/circuit-layouts\/avus-1\.svg$/);
     await expect.poll(() => outline.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
