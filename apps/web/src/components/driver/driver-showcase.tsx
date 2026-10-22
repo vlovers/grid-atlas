@@ -3,6 +3,7 @@ import { releasePilot } from '@/components/stories/release-model';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, seasonStories } from '@/components/stories/story-model';
 import { CareerMap } from '@/components/atlas/career-map';
+import { DriverSeasonChart } from './driver-season-chart';
 import { CareerSignature } from '@/components/atlas/career-signature';
 import { CareerTimeline } from '@/components/discovery';
 import type { MediaAsset } from '@/components/media/registry';
@@ -109,6 +110,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
+      <DriverSeasonChart seasons={seasons} locale={locale} driverId={driver.id} selectedYear={selected?.year} />
       {years.length > 0 && <div className={styles.seasonExplorer}>
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
           href={`/${locale}/drivers/${driver.id}?season=${year}#driver-career`} aria-current={selected?.year === year ? 'true' : undefined}>{year}</a>)}</nav>
