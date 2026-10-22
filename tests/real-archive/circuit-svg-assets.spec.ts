@@ -34,11 +34,15 @@ for (const locale of ['en', 'uk'] as const) {
     expect(choices.length).toBeGreaterThan(1);
     await picker.selectOption(choices[0]);
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[0]);
+    const eventCards = page.locator('[class*="circuit-experience_eventHead"]');
+    await expect(page.getByRole('heading', {name:new RegExp(choices[0])})).toBeVisible();
+    await expect(eventCards.first()).toContainText(choices[0]);
     const layout = page.getByTestId('circuit-layout-select');
     const firstLayout = await layout.inputValue();
     const firstSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
     await picker.selectOption(choices[choices.length - 1]);
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[choices.length - 1]);
+    await expect(eventCards.first()).toContainText(choices[choices.length - 1]);
     const lastLayout = await layout.inputValue();
     const lastSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
     expect(firstLayout).toBeTruthy();
@@ -46,6 +50,8 @@ for (const locale of ['en', 'uk'] as const) {
     expect(firstSrc).toContain('/circuit-layouts/');
     expect(lastSrc).toContain('/circuit-layouts/');
     // The same track geometry can cover different years; do not require every year to change its SVG.
+    await page.getByRole('button', {name:locale === 'en' ? 'Show all years' : 'Показати всі роки'}).click();
+    await expect(picker).toHaveValue('');
     await layout.selectOption(firstLayout);
     await expect(picker).toHaveValue('');
     await expect(page.getByTestId('circuit-track-visual').getByRole('img')).toHaveAttribute('src', firstSrc!);
