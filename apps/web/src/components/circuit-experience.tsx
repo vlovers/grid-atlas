@@ -107,6 +107,8 @@ export function CircuitExperience({ layouts, events, locale }: {
     <figure className={styles.trackVisual} data-testid="circuit-track-visual">
       <div className={styles.trackGlow} aria-hidden="true" />
       {artwork ? <>
+        {/* Licensed local SVG is served directly; Next image transformation is unnecessary. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img key={artwork.layout_id} className={styles.trackOutline}
           src={artwork.path} width={500} height={500} loading="lazy"
           alt={`${t.graphic}: ${current?.external_layout_id}`} />
