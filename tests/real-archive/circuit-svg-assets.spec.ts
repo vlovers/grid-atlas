@@ -35,7 +35,7 @@ for (const locale of ['en', 'uk'] as const) {
     await picker.selectOption(choices[0]);
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[0]);
     const eventCards = page.locator('[class*="circuit-experience_eventHead"]');
-    await expect(page.getByRole('heading', {name:new RegExp(choices[0])})).toBeVisible();
+    await expect(page.getByTestId('circuit-year-explorer').getByRole('heading', {name:new RegExp(choices[0])})).toBeVisible();
     await expect(eventCards.first()).toContainText(choices[0]);
     const layout = page.getByTestId('circuit-layout-select');
     const firstLayout = await layout.inputValue();
