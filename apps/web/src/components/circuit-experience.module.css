@@ -42,3 +42,12 @@
 @keyframes trackReveal{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){.trackOutline{animation:none}}
 @media(max-width:700px){.trackVisual{padding:.65rem;min-height:15rem}.trackOutline{width:min(100%,23rem)}}
+
+/* V4: chronological discovery remains accessible without animation or pointer gestures. */
+.yearExplorer{border:1px solid #3c5375;background:#0b1a2e;border-radius:1rem;padding:1rem 1.25rem;margin:1.25rem 0;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.yearExplorerHeading{display:flex;flex-direction:column;gap:.35rem}.yearExplorerHeading strong{font-size:1.05rem}.yearExplorerHeading p{margin:0;color:#c7d6ed;font-size:.84rem;max-width:48ch}.yearExplorerHeading>span{color:#9bcaff;font-size:.85rem;min-height:1.25rem}
+.yearExplorerControls{display:flex;align-items:stretch;gap:.5rem}.yearExplorerControls button{min-width:2.8rem;border:1px solid #698ab7;border-radius:.65rem;background:#1b3456;color:#fff;font-size:1.65rem;cursor:pointer}.yearExplorerControls button:disabled{opacity:.35;cursor:not-allowed}.yearExplorerControls button:focus-visible,.yearExplorerControls select:focus-visible{outline:3px solid #94caff;outline-offset:2px}
+.yearPickerLabel{display:flex;flex-direction:column;gap:.25rem;font-size:.75rem;color:#c4d6ef}.yearPickerLabel select{background:#152741;color:#fff;border:1px solid #7795c2;border-radius:.6rem;min-height:2.8rem;padding:.4rem .75rem;font:inherit;font-size:1rem}
+@media(max-width:700px){.yearExplorerControls{width:100%}.yearPickerLabel{flex:1}.yearPickerLabel select{width:100%}}
+
+.yearExplorerControls{flex-wrap:wrap}.yearExplorerControls .clearYear{font-size:.8rem;padding:.55rem .7rem;min-width:0}

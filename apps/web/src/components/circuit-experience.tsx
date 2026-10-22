@@ -40,6 +40,9 @@ const labels = {
     credit: 'Автор контурів: Jules Roy · CC BY 4.0',
     selectForMap: 'Оберіть конфігурацію, щоб побачити контур',
     noGraphic: 'Перевірений контур для цієї конфігурації недоступний.',
+    yearBrowse: 'Досліджуйте за сезоном', yearHint: 'Оберіть рік, щоб переглянути конфігурацію, використану в архівних перегонах.',
+    yearSelected: 'Вибраний сезон', noLayoutForYear: 'Для цього сезону немає пов’язаної конфігурації.',
+    previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Гран-прі обраного сезону', clearYear: 'Показати всі роки',
   },
   en: {
     kicker: 'LAYOUTS / HISTORY', title: 'The circuit through time',
@@ -58,6 +61,9 @@ const labels = {
     credit: 'Outline artwork: Jules Roy · CC BY 4.0',
     selectForMap: 'Choose a layout to view its outline',
     noGraphic: 'No verified outline available for this layout.',
+    yearBrowse: 'Explore by season', yearHint: 'Choose a year to see the layout recorded for its Grands Prix.',
+    yearSelected: 'Selected season', noLayoutForYear: 'No linked layout is recorded for this season.',
+    previous: 'Previous season', next: 'Next season', seasonEvents: 'Grands Prix in selected season', clearYear: 'Show all years',
   },
 } as const;
 
@@ -67,9 +73,17 @@ export function CircuitExperience({ layouts, events, locale }: {
   const t = labels[locale];
   const [selected, setSelected] = useState(layouts.find(l => l.effective)?.id ?? layouts[0]?.id ?? '');
   const [showAll, setShowAll] = useState(false);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const recordedYears = useMemo(() => [...new Set(events.filter(e => e.layout_id && layouts.some(l => l.id === e.layout_id)).map(e => e.season_year))].sort((a,b) => a-b), [events, layouts]);
+  const selectYear = (year: number) => {
+    const event = events.find(e => e.season_year === year && e.layout_id && layouts.some(l => l.id === e.layout_id));
+    if (!event?.layout_id) return;
+    setSelectedYear(year); setSelected(event.layout_id); setShowAll(false);
+  };
+  const yearIndex = selectedYear === null ? -1 : recordedYears.indexOf(selectedYear);
   const current = layouts.find(l => l.id === selected);
   const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
-  const matching = useMemo(() => events.filter(e => !selected || e.layout_id === selected), [events, selected]);
+  const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
   const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
   const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
@@ -78,6 +92,18 @@ export function CircuitExperience({ layouts, events, locale }: {
     <p className={styles.kicker}>{t.kicker}</p>
     <h2 id="circuit-experience-title">{t.title}</h2>
     <p className={styles.lead}>{t.lead}</p>
+    {recordedYears.length > 0 && <div className={styles.yearExplorer} data-testid="circuit-year-explorer">
+      <div className={styles.yearExplorerHeading}><div><strong>{t.yearBrowse}</strong><p>{t.yearHint}</p></div><span aria-live="polite">{selectedYear === null ? '' : `${t.yearSelected}: ${selectedYear}`}</span></div>
+      <div className={styles.yearExplorerControls}>
+        <button type="button" disabled={yearIndex <= 0} onClick={() => selectYear(recordedYears[yearIndex-1])} aria-label={t.previous}>‹</button>
+        <label className={styles.yearPickerLabel}>{t.year}<select data-testid="circuit-year-select" value={selectedYear ?? ''} onChange={e => { if (e.target.value) selectYear(Number(e.target.value)); }}>
+          <option value="">—</option>
+          {recordedYears.map(year => <option key={year} value={year}>{year}</option>)}
+        </select></label>
+        <button type="button" disabled={yearIndex < 0 || yearIndex >= recordedYears.length-1} onClick={() => selectYear(recordedYears[yearIndex+1])} aria-label={t.next}>›</button>
+        {selectedYear !== null && <button type="button" className={styles.clearYear} onClick={() => { setSelectedYear(null); setShowAll(false); }}>{t.clearYear}</button>}
+      </div>
+    </div>}
     <figure className={styles.trackVisual} data-testid="circuit-track-visual">
       <div className={styles.trackGlow} aria-hidden="true" />
       {artwork ? <>
@@ -97,7 +123,7 @@ export function CircuitExperience({ layouts, events, locale }: {
       <div className={styles.selector}>
         <label htmlFor="circuit-layout-select">{t.select}</label>
         <select id="circuit-layout-select" data-testid="circuit-layout-select" value={selected}
-          onChange={e => { setSelected(e.target.value); setShowAll(false); }}>
+          onChange={e => { setSelected(e.target.value); setSelectedYear(null); setShowAll(false); }}>
           <option value="">{t.all}</option>
           {layouts.map(l => <option key={l.id} value={l.id}>{l.external_layout_id} · {l.length_km} km</option>)}
         </select>
@@ -119,7 +145,7 @@ export function CircuitExperience({ layouts, events, locale }: {
           style={{ left: `${maxYear === minYear ? 50 : ((e.season_year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
       </div>
     </div>}
-    <h3>{t.measurements}</h3>
+    <h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`}</h3>
     <p>{t.note}</p>
     {matching.length ? <div className={styles.events}>
       {visible.map(e => <article key={e.race_id} className={styles.event}>
