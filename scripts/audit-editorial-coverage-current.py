@@ -27,7 +27,10 @@ def validate(coverage,pilots,season1,season2,anchors):
         if s.get("unverified_event_leads",0)!=(1 if expected[1]=="unverified_event_lead" else 0):errors.append(f"{sid}: unverified lead mismatch")
         if s.get("approved") is not False or s.get("published") is not False:errors.append(f"{sid}: false approval")
     totals={"subjects":25,"source_located_subjects":sum(v[1]!="unverified_event_lead" for v in records.values()),"source_located_claims":sum(v[0] for v in records.values()),"unverified_event_lead_subjects":sum(v[1]=="unverified_event_lead" for v in records.values()),"unverified_event_leads":sum(v[1]=="unverified_event_lead" for v in records.values()),"chapter_draft_subjects":sum(v[1]=="chapter_draft" for v in records.values()),"framework_only":25-len(records),"approved":0,"published":0}
-    if coverage.get("totals")!=totals:errors.append("stale totals")
+    if any(coverage.get("totals",{}).get(key)!=value for key,value in totals.items()):errors.append("stale totals")
+    # Additional chapter inventory metrics are validated against actual manuscripts
+    # by audit-editorial-chapter-coverage.py, not discarded as unknown fields.
+    if set(coverage.get("totals",{}))-set(totals)-{"expanded_season_draft_subjects","expanded_season_sections"}:errors.append("unknown totals")
     return errors
 if __name__=="__main__":
     errors=validate(read("coverage.json"),read("pilot-research.json"),read("season-research.json"),read("season-research-batch-2.json"),read("subject-event-anchors.json"))
