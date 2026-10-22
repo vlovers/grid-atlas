@@ -21,7 +21,7 @@ def tracked_files(root=ROOT):
 
 def inventory(root=ROOT, files=None):
     files = tracked_files(root) if files is None else files
-    scripts = [p for p in files if p.startswith("scripts/") and Path(p).is_file() is False] if False else [
+    scripts = [
         p for p in files if p.startswith("scripts/") and Path(p).suffix in {".py", ".mjs", ".js", ".sh"}
     ]
     images = [p for p in files if Path(p).suffix.lower() in IMAGES]
