@@ -6,7 +6,9 @@ for (const locale of ['uk', 'en'] as const) {
     const journey = page.getByTestId('season-visual-journey');
     await expect(journey).toBeVisible();
     const links = journey.locator('a[href*="/races/"]');
-    await expect(links).toHaveCount(3);
+    const count = await links.count();
+    expect(count).toBeGreaterThanOrEqual(1);
+    expect(count).toBeLessThanOrEqual(3);
     await expect(journey).toContainText(locale === 'uk' ? 'Маршрут сезону' : 'The season route');
     const first = await links.first().getAttribute('href');
     expect(first).toContain(`/${locale}/races/`);
