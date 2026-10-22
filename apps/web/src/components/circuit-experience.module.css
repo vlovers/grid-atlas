@@ -68,3 +68,16 @@
 .selectedLayout{background:#1d385c}
 .selectedLayout button{border-color:#94caff}
 @media(forced-colors:active){.selectedLayout{outline:2px solid Highlight;outline-offset:-2px}}
+
+/* V5: accessible chronological exploration, preserving source-backed layout links. */
+.eraRail{padding:clamp(1rem,2.5vw,1.8rem);margin:2rem 0;background:linear-gradient(125deg,#132c4c,#0b1728);border:1px solid #405c80;border-radius:1rem;min-width:0}
+.eraRailIntro h3{font-size:clamp(1.3rem,2.8vw,2rem);margin:0 0 .45rem}
+.eraRailIntro p{max-width:62ch;color:#c4d5ed;line-height:1.55}
+.eraRailYears{display:flex;gap:.55rem;overflow-x:auto;overscroll-behavior-inline:contain;padding:.5rem .25rem 1rem;scrollbar-width:thin}
+.eraRailYears button{flex:0 0 auto;min-width:5.25rem;padding:.8rem .65rem;background:#152d4d;color:#eff6ff;border:1px solid #58739a;border-radius:.7rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.3rem}
+.eraRailYears button strong{font-size:1rem;font-variant-numeric:tabular-nums}
+.eraRailYears button span{font-size:.75rem;color:#c5d6ec}
+.eraRailYears button:hover{border-color:#acd2ff;background:#1c3c67}
+.eraRailYears button:focus-visible{outline:3px solid #94caff;outline-offset:2px}
+.eraRailYears .activeYear{border-color:#b5dbff;background:#315b91;box-shadow:inset 0 0 0 1px #b5dbff}
+@media(forced-colors:active){.eraRailYears .activeYear{outline:2px solid Highlight}}
