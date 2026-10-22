@@ -1,3 +1,4 @@
+import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
 import { StoryHeader } from '@/components/stories/story-header';
 import { storyCopy } from '@/components/stories/copy';
@@ -41,6 +42,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   const raceCalendar = [...races].sort((a,b) => a.round-b.round);
   return <section className="page">
     <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
+    <ArchiveJourney testId="season-visual-journey" locale={locale} title={locale === 'uk' ? 'Маршрут сезону' : 'The season route'} description={locale === 'uk' ? 'Початок, середина та фінал календаря. Вибір за позицією у календарі, без непідтверджених тверджень про драматичність.' : 'Opening, midpoint and final calendar round. Selected by chronology, not invented dramatic significance.'} items={raceCalendar.length ? [raceCalendar[0], ...(raceCalendar.length > 2 ? [raceCalendar[Math.floor((raceCalendar.length - 1) / 2)]] : []), ...(raceCalendar.length > 1 ? [raceCalendar[raceCalendar.length - 1]] : [])].map(entry => ({ id: entry.id, href: `/races/${entry.id}`, year: Number(year), overline: `${locale === 'uk' ? 'Раунд' : 'Round'} ${entry.round}`, title: entry.official_name, detail: entry.circuit_name ?? undefined })) : []} />
     <section aria-labelledby="season-journey" data-testid="season-journey">
       <h2 id="season-journey">{locale === 'uk' ? 'Сезон у трьох етапах' : 'Season in three moments'}</h2>
       <p>{locale === 'uk' ? 'Від початку календаря через середину до фінального зафіксованого етапу. Це точки навігації по архіву, а не редакційний вибір найважливіших подій.' : 'From the opening race through the middle of the calendar to the last recorded round. These are archive navigation points, not editorial claims about the most important moments.'}</p>
