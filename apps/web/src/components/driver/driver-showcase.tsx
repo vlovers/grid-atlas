@@ -4,6 +4,7 @@ import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, seasonStories } from '@/components/stories/story-model';
 import { CareerMap } from '@/components/atlas/career-map';
 import { DriverSeasonChart } from './driver-season-chart';
+import { CareerEraRail } from './career-era-rail';
 import { CareerSignature } from '@/components/atlas/career-signature';
 import { CareerTimeline } from '@/components/discovery';
 import type { MediaAsset } from '@/components/media/registry';
@@ -110,6 +111,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
+      <CareerEraRail teams={teams} seasons={seasons} driverId={driver.id} locale={locale} />
       <DriverSeasonChart seasons={seasons} locale={locale} driverId={driver.id} selectedYear={selected?.year} />
       {years.length > 0 && <div className={styles.seasonExplorer}>
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
