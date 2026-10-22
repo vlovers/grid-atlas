@@ -21,3 +21,36 @@ for (const locale of ['en', 'uk'] as const) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }
+
+for (const locale of ['en', 'uk'] as const) {
+  test(`${locale}: year journey updates historical layout and can be overridden manually`, async ({ page, request }) => {
+    const response = await request.get('http://127.0.0.1:3350/api/circuits?q=monza');
+    const body = await response.json();
+    const item = body.data.find((row: {external_id:string}) => row.external_id === 'monza');
+    expect(item).toBeTruthy();
+    await page.goto(`/${locale}/circuits/${item.id}`);
+    const picker = page.getByTestId('circuit-year-select');
+    const choices = await picker.locator('option:not([value=""])').evaluateAll(nodes => nodes.map(node => (node as HTMLOptionElement).value));
+    expect(choices.length).toBeGreaterThan(1);
+    await picker.selectOption(choices[0]);
+    await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[0]);
+    const layout = page.getByTestId('circuit-layout-select');
+    const firstLayout = await layout.inputValue();
+    const firstSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
+    await picker.selectOption(choices[choices.length - 1]);
+    await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[choices.length - 1]);
+    const lastLayout = await layout.inputValue();
+    const lastSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
+    expect(firstLayout).toBeTruthy();
+    expect(lastLayout).toBeTruthy();
+    expect(firstSrc).toContain('/circuit-layouts/');
+    expect(lastSrc).toContain('/circuit-layouts/');
+    // The same track geometry can cover different years; do not require every year to change its SVG.
+    await layout.selectOption(firstLayout);
+    await expect(picker).toHaveValue('');
+    await expect(page.getByTestId('circuit-track-visual').getByRole('img')).toHaveAttribute('src', firstSrc!);
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.setViewportSize({width:375,height:812});
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  });
+}
