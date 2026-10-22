@@ -24,7 +24,7 @@ export function RaceClassification({ entries, locale }: { entries: Classificatio
       <span className={styles.position}>{entry.position.padStart(2, '0')}</span>
       <div className={styles.identity}><strong><Link href={`/drivers/${entry.driverId}`}>{entry.driver}</Link></strong>
         <span><Link href={`/constructors/${entry.constructorId}`}>{entry.constructor}</Link></span>
-        {entry.sharedCar && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}
+
       </div>
       <span aria-hidden="true" className={styles.arrow}>↗</span>
     </li>)}</ol>
