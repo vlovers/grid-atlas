@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "status": "editorial_draft_not_approved",
+  "as_of": "2026-10-22",
+  "description": "Original, bilingual chapter manuscripts. Each section maps to source-located claim IDs in pilot-research.json; interpretive guidance is editorial, not new historical facts. No public publication.",
+  "articles": [
+    {
+      "subject_id": "constructor-ferrari",
+      "chapters": [
+        {
+          "chapter_id": "constructor-ferrari-chapter-1",
+          "title": {
+            "en": "The absent opener",
+            "uk": "Відсутність на старті"
+          },
+          "body": {
+            "en": "The championship's opening race and Ferrari's entry into it are separate milestones. Starting the story at Silverstone makes that distinction visible rather than treating the first championship event as the team's first race.",
+            "uk": "Перший етап чемпіонату та дебют Ferrari — різні історичні події. Початок розповіді зі Сільверстоуна дозволяє побачити цю різницю, а не ототожнювати старт чемпіонату з першим виступом команди."
+          },
+          "claim_ids": [
+            "ferrari-1950-opening"
+          ]
+        },
+        {
+          "chapter_id": "constructor-ferrari-chapter-2",
+          "title": {
+            "en": "Monaco, 1950",
+            "uk": "Монако, 1950"
+          },
+          "body": {
+            "en": "Ferrari's first championship appearance came at Monaco. Alberto Ascari's second-place finish gives the debut a precise sporting result, without turning one race into a claim about the team's entire future.",
+            "uk": "Перший виступ Ferrari у чемпіонаті відбувся в Монако. Друге місце Альберто Аскарі — конкретний спортивний результат дебюту, який не слід перетворювати на узагальнення всієї подальшої історії команди."
+          },
+          "claim_ids": [
+            "ferrari-debut",
+            "ferrari-ascari"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review"
+    },
+    {
+      "subject_id": "constructor-mclaren",
+      "chapters": [
+        {
+          "chapter_id": "constructor-mclaren-chapter-1",
+          "title": {
+            "en": "A car under a new name",
+            "uk": "Автомобіль під новим ім’ям"
+          },
+          "body": {
+            "en": "The 1966 Monaco Grand Prix marks McLaren's World Championship debut. The M2B identifies the machine behind that entry; a constructor history should preserve the distinction between the chassis and the team.",
+            "uk": "Гран-прі Монако 1966 року став дебютом McLaren у чемпіонаті світу. M2B позначає шасі цього старту: в історії конструктора важливо не змішувати автомобіль і команду."
+          },
+          "claim_ids": [
+            "mclaren-debut",
+            "mclaren-car"
+          ]
+        },
+        {
+          "chapter_id": "constructor-mclaren-chapter-2",
+          "title": {
+            "en": "The first victory",
+            "uk": "Перша перемога"
+          },
+          "body": {
+            "en": "Two years after the Monaco debut, Bruce McLaren won the Belgian Grand Prix in a McLaren. This is the team's first championship Grand Prix victory, not a claim about every competition in which Bruce McLaren raced.",
+            "uk": "Через два роки після дебюту в Монако Брюс Макларен виграв Гран-прі Бельгії за кермом McLaren. Йдеться про першу перемогу команди в Гран-прі чемпіонату, а не про всі змагання, у яких виступав Брюс Макларен."
+          },
+          "claim_ids": [
+            "mclaren-first-win"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review"
+    },
+    {
+      "subject_id": "circuit-monaco",
+      "chapters": [
+        {
+          "chapter_id": "circuit-monaco-chapter-1",
+          "title": {
+            "en": "Before the world championship",
+            "uk": "До чемпіонату світу"
+          },
+          "body": {
+            "en": "The Monaco Grand Prix existed before Formula 1's World Championship. The 1929 origin belongs to the event's history; it must not be mislabeled as the debut of a World Championship race.",
+            "uk": "Гран-прі Монако існував ще до чемпіонату світу Формули-1. Дата 1929 року стосується історії події, а не дебюту гонки в межах чемпіонату світу."
+          },
+          "claim_ids": [
+            "monaco-first-event"
+          ]
+        },
+        {
+          "chapter_id": "circuit-monaco-chapter-2",
+          "title": {
+            "en": "The championship arrives",
+            "uk": "Чемпіонат приходить у Монако"
+          },
+          "body": {
+            "en": "In 1950 Monaco entered the World Championship calendar. Juan Manuel Fangio won that race. These event results should be shown against the corresponding historical layout, not against an assumed modern configuration.",
+            "uk": "1950 року Монако з’явилося в календарі чемпіонату світу. Перемогу здобув Хуан-Мануель Фанхіо. Ці результати слід пов’язувати з відповідною історичною конфігурацією, а не автоматично із сучасною трасою."
+          },
+          "claim_ids": [
+            "monaco-first-championship",
+            "monaco-1950-winner"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review"
+    },
+    {
+      "subject_id": "circuit-silverstone",
+      "chapters": [
+        {
+          "chapter_id": "circuit-silverstone-chapter-1",
+          "title": {
+            "en": "13 May 1950",
+            "uk": "13 травня 1950"
+          },
+          "body": {
+            "en": "Silverstone's significance in Formula 1 history is anchored in a specific date: the first World Championship race. This is an event milestone, not a statement that every later Grand Prix used the same circuit configuration.",
+            "uk": "Місце Сільверстоуна в історії Формули-1 пов’язане з конкретною датою — першою гонкою чемпіонату світу. Це віха в історії події, а не твердження, що всі наступні Гран-прі проходили на незмінній конфігурації."
+          },
+          "claim_ids": [
+            "silverstone-inaugural"
+          ]
+        },
+        {
+          "chapter_id": "circuit-silverstone-chapter-2",
+          "title": {
+            "en": "A different first corner",
+            "uk": "Інший перший поворот"
+          },
+          "body": {
+            "en": "Woodcote was the first corner in 1950. A historical track illustration therefore needs the 1950 layout identity; projecting a modern outline backward would change what the reader thinks the drivers faced.",
+            "uk": "У 1950 році першим поворотом був Woodcote. Отже, для історичної схеми потрібна конфігурація саме 1950 року: перенесення сучасного контуру в минуле спотворило б уявлення про трасу тієї гонки."
+          },
+          "claim_ids": [
+            "silverstone-woodcote"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review"
+    },
+    {
+      "subject_id": "season-1988",
+      "chapters": [
+        {
+          "chapter_id": "season-1988-chapter-1",
+          "title": {
+            "en": "The official classification",
+            "uk": "Офіційна класифікація"
+          },
+          "body": {
+            "en": "Ayrton Senna leads the official 1988 drivers' classification on 90 points, with Alain Prost on 87. This is a championship classification, not an unrestricted sum of all points awarded at each event. Any raw-total visualization must carry its own metric label and historical scoring explanation.",
+            "uk": "Айртон Сенна очолює офіційну класифікацію пілотів 1988 року з 90 очками, Ален Прост має 87. Це підсумок чемпіонату, а не необмежена сума всіх очок за етапи. Графік сирих сум потребує окремого підпису показника й пояснення історичних правил нарахування."
+          },
+          "claim_ids": [
+            "1988-official-standing"
+          ]
+        },
+        {
+          "chapter_id": "season-1988-chapter-2",
+          "title": {
+            "en": "Sixteen weekends",
+            "uk": "Шістнадцять гоночних вікендів"
+          },
+          "body": {
+            "en": "The archive records sixteen championship races. The season narrative should connect each result to the official calendar before it interprets momentum, strategy or the title contest.",
+            "uk": "Архів містить шістнадцять гонок чемпіонату. Розповідь про сезон має спочатку пов’язувати кожен результат з офіційним календарем, а вже потім пояснювати перебіг боротьби за титул."
+          },
+          "claim_ids": [
+            "1988-races"
+          ]
+        },
+        {
+          "chapter_id": "season-1988-chapter-3",
+          "title": {
+            "en": "Monaco and Japan",
+            "uk": "Монако та Японія"
+          },
+          "body": {
+            "en": "Alain Prost won Monaco; Ayrton Senna won Japan. These two race results offer distinct points of entry into the season. They should lead to the corresponding race records, rather than stand in for unsupported psychological accounts of the drivers.",
+            "uk": "Ален Прост виграв Монако, Айртон Сенна — Японію. Ці два результати дають різні точки входу в історію сезону. Вони мають вести до відповідних гоночних протоколів, а не підміняти їх непідтвердженими психологічними оцінками пілотів."
+          },
+          "claim_ids": [
+            "1988-monaco",
+            "1988-japan"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review"
+    }
+  ]
+}
