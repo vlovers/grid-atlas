@@ -16,15 +16,21 @@ def targets(text):
     clean = []
     fence = None
     for line in text.splitlines():
-        marker = re.match(r"^\s*(\x60{3,}|~{3,})", line)
+        marker = re.match(r"^\s*(" + chr(96) + r"{3,}|~{3,})", line)
         if marker:
-            kind = marker.group(1)[0]
-            fence = kind if fence is None else (None if fence == kind else fence)
+            token = marker.group(1)
+            if fence is None:
+                fence = (token[0], len(token))
+            elif token[0] == fence[0] and len(token) >= fence[1]:
+                fence = None
             clean.append("")
         else:
             clean.append("" if fence else line)
     source = "\n".join(clean)
-    for match in list(LINK.finditer(source)) + list(REFERENCE.finditer(source)):
+    for match in sorted(
+        [*LINK.finditer(source), *REFERENCE.finditer(source)],
+        key=lambda item: item.start()
+    ):
         yield source.count("\n", 0, match.start()) + 1, match.group(1).strip("<>")
 
 
