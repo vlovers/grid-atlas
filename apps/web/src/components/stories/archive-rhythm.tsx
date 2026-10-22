@@ -24,6 +24,7 @@ export function ArchiveRhythm({ entries, locale, title, description, testId }: {
   const buckets = new Map<number, ArchiveRhythmEntry[]>();
   for (const entry of entries) buckets.set(entry.year, [...(buckets.get(entry.year) ?? []), entry]);
   const maxCount = Math.max(1, ...[...buckets.values()].map(items => items.length));
+  const hasSingleYear = first === last;
   return <section className={styles.section} aria-label={title} data-testid={testId}>
     <div className={styles.header}>
       <div><span className={styles.eyebrow}>{locale === 'uk' ? 'АРХІВ У ЧАСІ' : 'ARCHIVE IN TIME'}</span><h2>{title}</h2></div>
@@ -35,7 +36,7 @@ export function ArchiveRhythm({ entries, locale, title, description, testId }: {
     <div className={styles.plot} role="list" aria-label={locale === 'uk' ? 'Розподіл записів за роками' : 'Records by year'}>
       {years.map(year => {
         const items = buckets.get(year)!;
-        return <div key={year} className={styles.point} role="listitem" style={{ left: `${((year - first) / span) * 100}%` }}>
+        return <div key={year} className={styles.point} role="listitem" style={{ left: hasSingleYear ? '50%' : `${((year - first) / span) * 100}%` }}>
           <span className={styles.bar} style={{ height: `${Math.max(12, items.length / maxCount * 100)}%` }} />
           <span className={styles.srOnly}>{year}: {items.length}</span>
         </div>;
