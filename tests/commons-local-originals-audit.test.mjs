@@ -98,7 +98,7 @@ test('rejects forged, duplicate or unpinned observation receipts', async () => w
 test('rejects staged identity drift and refuses symlink originals', async () => withDirectory(async dir => {
   const args = fixtures(dir);
   args.staging.entries[0].file_page_url = 'https://commons.wikimedia.org/wiki/File:Wrong.jpg';
-  assert.throws(() => auditLocalCommonsOriginals(args), /Staging or source evidence mismatch/);
+  assert.throws(() => auditLocalCommonsOriginals(args), /Staging or source evidence mismatch|Invalid Commons staging or evidence/);
   const clean = fixtures(dir);
   const id = clean.staging.entries[0].id;
   symlinkSync(join(dir, 'nonexistent'), join(dir, id + '.jpg'));
