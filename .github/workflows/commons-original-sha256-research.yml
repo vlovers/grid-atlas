@@ -10,6 +10,9 @@ on:
         default: pending-three
         options:
           - pending-three
+          - mclaren-only
+          - ferrari-only
+          - silverstone-only
           - all-five
 
 permissions:
@@ -42,6 +45,15 @@ jobs:
           case "${{ inputs.scope }}" in
             pending-three)
               ids="research-mclaren-mp44-2007,research-ferrari-f2004-2004,research-silverstone-2019"
+              ;;
+            mclaren-only)
+              ids="research-mclaren-mp44-2007"
+              ;;
+            ferrari-only)
+              ids="research-ferrari-f2004-2004"
+              ;;
+            silverstone-only)
+              ids="research-silverstone-2019"
               ;;
             all-five)
               ids="research-schumacher-portrait-2007,research-alonso-2024,research-mclaren-mp44-2007,research-ferrari-f2004-2004,research-silverstone-2019"
