@@ -58,3 +58,16 @@ for (const locale of ['uk', 'en'] as const) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }
+
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: synthetic circuit never borrows a real F1DB cover outline`, async ({ page }) => {
+    await page.goto(`/${locale}/circuits/1`);
+    const header = page.getByTestId('story-header');
+    await expect(header).toBeVisible();
+    // Browser fixture uses fixture-original/fixture-current, absent from the licensed manifest.
+    // An unrelated historical SVG must not appear merely to fill the cover.
+    await expect(header.locator('img')).toHaveCount(0);
+    await expect(header.locator('h1')).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  });
+}

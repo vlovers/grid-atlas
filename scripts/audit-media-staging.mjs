@@ -19,7 +19,7 @@ export function auditStaging(staging, strictCandidates, publication, pilot) {
     if (!isText(asset?.id) || !asset.id.startsWith('research-') || ids.has(asset.id) || strictIds.has(asset.id)) errors.push(label + ': invalid, duplicate or already registered ID');
     if (isText(asset?.id)) ids.add(asset.id);
     let url;
-    try { url = new URL(asset.file_page_url); } catch {}
+    try { url = new URL(asset.file_page_url); } catch { url = undefined; }
     if (!url || url.protocol !== 'https:' || url.hostname !== 'commons.wikimedia.org' || !url.pathname.startsWith('/wiki/File:') || url.search || url.hash || pages.has(url.href) || strictPages.has(url.href)) {
       errors.push(label + ': invalid, duplicate or already registered Commons file page');
     }
