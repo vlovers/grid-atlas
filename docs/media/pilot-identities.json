@@ -47,6 +47,30 @@
       "id": "941",
       "name": "Formula 1 Grand Prix de Monaco 2016",
       "record_sha256": "46289c0b974fbeb9e25357854e725febf08ea87d7caea8b2c74df1a6b59b1426"
+    },
+    {
+      "type": "circuit",
+      "id": "silverstone",
+      "name": "Silverstone Circuit",
+      "record_sha256": "0dd1e97acd66fd5b194aa9baef9f2c5df725f93ceda60ff623510b2c50c6b6c7"
+    },
+    {
+      "type": "constructor",
+      "id": "mclaren",
+      "name": "McLaren Racing",
+      "record_sha256": "48417fc44f717a438880a78d5caac84d4050cca153622e5995c3ec4289df293d"
+    },
+    {
+      "type": "driver",
+      "id": "fernando-alonso",
+      "name": "Fernando Alonso Díaz",
+      "record_sha256": "d3011b2971626079329ce918b607d333f2ab0511d80f6dda36e557869579064d"
+    },
+    {
+      "type": "driver",
+      "id": "michael-schumacher",
+      "name": "Michael Schumacher",
+      "record_sha256": "48ab62d5bb5dafc3dffdd108753540058f2657daeccda7bc607d9e321d1d1442"
     }
   ],
   "layouts": [
