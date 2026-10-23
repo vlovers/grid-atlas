@@ -19,11 +19,11 @@ import { driverArchiveOverview, raceMoments, seasonPoints, teamEras, timeMachine
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
-type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[];
+type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[]; editorialUnavailable?: boolean;
   article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode; identityDetails?: IdentityDetails; championships: ChampionshipRow[]; relatedDrivers: { driver_id: string; driver_name: string }[] };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults, identity, identityDetails, championships, relatedDrivers }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, editorialUnavailable, media, locale, selectedSeason, seasonResults, identity, identityDetails, championships, relatedDrivers }: Props) {
   const pilot = releasePilot(driver.external_id);
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
@@ -77,7 +77,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         </a></li>}</ul>
         <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
       </article>}
-      {article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h3>{t.unpublished}</h3><p>{t.unpublishedNote}</p></div></div>}
+      {editorialUnavailable ? <p role="status" data-testid="editorial-unavailable">{locale === 'uk' ? 'Редакційний матеріал тимчасово недоступний. Архівні записи доступні нижче.' : 'Editorial content is temporarily unavailable. Archive records remain available below.'}</p>
+        : article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h3>{t.unpublished}</h3><p>{t.unpublishedNote}</p></div></div>}
     </section>
 
     {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">

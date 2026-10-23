@@ -174,13 +174,29 @@ test('SQL failures stay generic and logs exclude raw paths, query strings and cr
   const server = await api(t, missing.toString());
   await listening(server);
   const response = await get(server, '/api/seasons?token=secret-canary');
-  assert.equal(response.status, 500);
-  assert.deepEqual(await response.json(), { statusCode: 500, message: 'Internal server error' });
+  assert.equal(response.status, 503);
+  assert.deepEqual(await response.json(), { status: 'not_ready' });
+  assert.equal((await get(server, '/api/ready')).status, 503);
   assert.equal((await get(server, '/api/secret-canary')).status, 404);
   await delay(20);
   assert.ok(!server.output().includes('secret-canary'));
   const logs = server.output().trim().split('\n').map(line => JSON.parse(line));
   assert.ok(logs.some(row => row.message.event === 'request_failed'));
   assert.ok(logs.some(row => row.message.event === 'http_request' && row.message.route === '/api/seasons' &&
-    row.message.status === 500 && Number.isInteger(row.message.duration_ms)));
+    row.message.status === 503 && Number.isInteger(row.message.duration_ms)));
+  assert.ok(logs.some(row => row.message.event === 'request_failed' && row.message.database_code === '42P01' && row.message.route === '/api/seasons'));
+});
+
+test('a populated old schema is not ready, and readiness recovers after the ledger is repaired', async () => {
+  const { ApiRuntime } = require('../dist/runtime');
+  const required = require('../dist/schema-contract.json');
+  const rows = Object.entries(required).map(([version, checksum]) => ({ version, checksum }));
+  const runtime = new ApiRuntime({ query: async () => ({ rows }) });
+  assert.equal(await runtime.ready(), true);
+  const last = rows.pop();
+  assert.equal(await runtime.ready(), false);
+  rows.push({ ...last, checksum: '0'.repeat(64) });
+  assert.equal(await runtime.ready(), false);
+  rows[rows.length - 1] = last;
+  assert.equal(await runtime.ready(), true);
 });

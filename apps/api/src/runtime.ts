@@ -4,6 +4,7 @@ import {
 } from '@nestjs/common';
 import { Pool, QueryConfig } from 'pg';
 import { DB } from './tokens';
+import schemaContract from './schema-contract.json';
 
 @Injectable()
 export class ApiRuntime implements OnModuleDestroy, OnApplicationShutdown {
@@ -19,8 +20,11 @@ export class ApiRuntime implements OnModuleDestroy, OnApplicationShutdown {
     if (!this.draining) {
       try {
         // Pool acquisition is bounded by connectionTimeoutMillis (5s); query by 2s.
-        await this.pool.query({ text: 'SELECT 1', query_timeout: 2000 } as QueryConfig & { query_timeout: number });
-        ready = !this.draining;
+        const { rows } = await this.pool.query({ text: 'SELECT version, checksum FROM schema_migrations', query_timeout: 2000 } as QueryConfig & { query_timeout: number });
+        const applied = new Map(rows.map(row => [row.version, row.checksum]));
+        const missing = Object.entries(schemaContract).filter(([version, checksum]) => applied.get(version) !== checksum).map(([version]) => version);
+        ready = missing.length === 0 && !this.draining;
+        if (!ready && this.lastReady !== false) this.logger.error({ event: 'schema_not_ready', migrations: missing, action: 'Run the checked-in migrator and pinned archive import' });
       } catch { /* No database error, SQL or connection details in public responses/logs. */ }
     }
     if (ready !== this.lastReady) {

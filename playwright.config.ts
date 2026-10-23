@@ -9,6 +9,7 @@ export default defineConfig({
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },
     { name: 'mobile', use: { ...devices['Pixel 7'] } },
+    { name: 'webkit-reliability', testMatch: 'route-reliability.spec.ts', use: { ...devices['Desktop Safari'] } },
   ],
   webServer: [
     { command: 'node apps/api/test/browser-server.cjs', url: 'http://127.0.0.1:3339/api/health', reuseExistingServer: false, gracefulShutdown: { signal: 'SIGTERM', timeout: 5000 } },
