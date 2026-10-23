@@ -93,8 +93,26 @@ test('rejects tampered earlier receipts and a changed hash for a previously veri
 test('rejects incomplete pinned inventories and any staged publication state', () => {
   const args = fixtures();
   args.evidence.entries.pop();
-  assert.throws(() => build(args), /Staging and evidence coverage differ|unpinned/);
+  assert.throws(() => build(args), /Staging and evidence coverage differ|unpinned|Invalid Commons staging or evidence/);
   const published = fixtures();
   published.staging.entries[0].delivery.local_path = '/media/forbidden.jpg';
-  assert.throws(() => build(published), /publishable staged candidate/);
+  assert.throws(() => build(published), /publishable staged candidate|Invalid Commons staging or evidence/);
+});
+
+test('incremental receipt rejects staged publication hash and source URL drift', () => {
+  const published = fixtures();
+  published.staging.entries[0].content_sha256 = 'f'.repeat(64);
+  assert.throws(() => build(published), /Invalid Commons staging or evidence/);
+
+  const drift = fixtures();
+  drift.staging.entries[0].source_url = 'https://commons.wikimedia.org/wiki/File:Unrelated.jpg';
+  assert.throws(() => build(drift), /Invalid Commons staging or evidence/);
+});
+
+test('incremental receipt rejects duplicate Commons source pages even with matching source evidence', () => {
+  const args = fixtures();
+  args.staging.entries[1].file_page_url = args.staging.entries[0].file_page_url;
+  args.staging.entries[1].source_url = args.staging.entries[0].file_page_url;
+  args.evidence.entries[1].file_page_url = args.staging.entries[0].file_page_url;
+  assert.throws(() => build(args), /Invalid Commons staging or evidence/);
 });

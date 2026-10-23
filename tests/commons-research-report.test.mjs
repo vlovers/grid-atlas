@@ -44,7 +44,7 @@ test('rejects missing or blocked originals instead of creating partial evidence'
   assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Incomplete Commons batch/);
   const args2 = fixtures();
   args2.batch.results[0].status = 'blocked';
-  assert.throws(() => buildCommonsResearchReport(args2.batch, args2.evidence, args2.staging), /Unverified or mismatched Commons receipt/);
+  assert.throws(() => buildCommonsResearchReport(args2.batch, args2.evidence, args2.staging), /Unverified or mismatched Commons receipt|Invalid Commons staging or evidence/);
 });
 
 test('rejects checksum, source page and publication-boundary drift', () => {
@@ -66,7 +66,7 @@ test('rejects duplicate receipts and duplicate pinned evidence', () => {
   assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /duplicate batch result/);
   const args2 = fixtures();
   args2.evidence.entries[1].research_id = args2.evidence.entries[0].research_id;
-  assert.throws(() => buildCommonsResearchReport(args2.batch, args2.evidence, args2.staging), /duplicate Commons source evidence/);
+  assert.throws(() => buildCommonsResearchReport(args2.batch, args2.evidence, args2.staging), /duplicate Commons source evidence|Invalid Commons staging or evidence/);
 });
 
 test('rejects tampered MIME, dimensions, creator and license in a research receipt', () => {
@@ -79,7 +79,7 @@ test('rejects tampered MIME, dimensions, creator and license in a research recei
   ]) {
     const args = fixtures();
     mutate(args);
-    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt/);
+    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt|Invalid Commons staging or evidence/);
   }
 });
 
@@ -95,4 +95,20 @@ test('rejects forged original URLs and malformed source timestamps', () => {
     mutate(args);
     assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt/);
   }
+});
+
+test('complete research receipt rejects staged publication data and Commons source identity drift', () => {
+  const published = fixtures();
+  published.staging.entries[0].content_sha256 = 'a'.repeat(64);
+  assert.throws(() => buildCommonsResearchReport(published.batch, published.evidence, published.staging), /Invalid Commons staging or evidence/);
+
+  const drift = fixtures();
+  drift.staging.entries[0].source_url = 'https://commons.wikimedia.org/wiki/File:Different.jpg';
+  assert.throws(() => buildCommonsResearchReport(drift.batch, drift.evidence, drift.staging), /Invalid Commons staging or evidence/);
+
+  const duplicate = fixtures();
+  duplicate.staging.entries[1].file_page_url = duplicate.staging.entries[0].file_page_url;
+  duplicate.staging.entries[1].source_url = duplicate.staging.entries[0].file_page_url;
+  duplicate.evidence.entries[1].file_page_url = duplicate.staging.entries[0].file_page_url;
+  assert.throws(() => buildCommonsResearchReport(duplicate.batch, duplicate.evidence, duplicate.staging), /Invalid Commons staging or evidence/);
 });

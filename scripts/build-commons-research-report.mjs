@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
+import { auditCommonsEvidence } from './audit-commons-evidence.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 
@@ -29,6 +30,8 @@ export function buildCommonsResearchReport(batch, evidence, staging) {
       staging.lane !== 'research_only' || staging.publication_allowed !== false || !Array.isArray(staging.entries)) {
     throw Error('Invalid research-only input manifests');
   }
+  const sourceAudit = auditCommonsEvidence(staging, evidence);
+  if (!sourceAudit.ok) throw Error('Invalid Commons staging or evidence: ' + sourceAudit.errors.join('; '));
   const byId = new Map();
   for (const result of batch.results) {
     if (typeof result?.research_id !== 'string' || byId.has(result.research_id)) throw Error('Invalid or duplicate batch result');

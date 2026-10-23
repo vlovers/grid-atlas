@@ -98,11 +98,29 @@ test('rejects forged, duplicate or unpinned observation receipts', async () => w
 test('rejects staged identity drift and refuses symlink originals', async () => withDirectory(async dir => {
   const args = fixtures(dir);
   args.staging.entries[0].file_page_url = 'https://commons.wikimedia.org/wiki/File:Wrong.jpg';
-  assert.throws(() => auditLocalCommonsOriginals(args), /Staging or source evidence mismatch/);
+  assert.throws(() => auditLocalCommonsOriginals(args), /Staging or source evidence mismatch|Invalid Commons staging or evidence/);
   const clean = fixtures(dir);
   const id = clean.staging.entries[0].id;
   symlinkSync(join(dir, 'nonexistent'), join(dir, id + '.jpg'));
   const report = auditLocalCommonsOriginals(clean);
   assert.equal(report.ok, false);
   assert.equal(report.blocked, 1);
+}));
+
+test('local audit rejects research publication fields and duplicate staged source pages', async () => withDirectory(async dir => {
+  const approved = fixtures(dir);
+  approved.staging.entries[0].content_sha256 = 'a'.repeat(64);
+  assert.throws(() => auditLocalCommonsOriginals(approved), /publication data/);
+
+  const duplicate = fixtures(dir);
+  duplicate.staging.entries[1].file_page_url = duplicate.staging.entries[0].file_page_url;
+  duplicate.staging.entries[1].source_url = duplicate.staging.entries[0].file_page_url;
+  duplicate.sourceEvidence.entries[1].file_page_url = duplicate.staging.entries[0].file_page_url;
+  assert.throws(() => auditLocalCommonsOriginals(duplicate), /duplicate staging page|duplicate/);
+}));
+
+test('local audit rejects a single binary SHA-256 attributed to two originals', async () => withDirectory(async dir => {
+  const args = fixtures(dir);
+  args.observations.entries[1].sha256 = args.observations.entries[0].sha256;
+  assert.throws(() => auditLocalCommonsOriginals(args), /Invalid, duplicate or unpinned/);
 }));
