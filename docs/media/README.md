@@ -8,7 +8,7 @@ Phase 1 supplies a repository registry, review gates and reusable display compon
 
 ## Current original-ingestion tooling (23 October 2026)
 
-The research-only [Commons batch ingestion command](commons-batch-ingestion.md) can fetch the two source-evidenced originals (Schumacher and Silverstone) into an existing **private** directory with source SHA-1, byte-count, dimension and locally computed SHA-256 checks. This is an optional command, not evidence that these files were downloaded or rights-approved. It does not change the empty public photographic registry. The remaining research candidates lack equivalent pinned original evidence.
+The research-only [Commons batch ingestion command](commons-batch-ingestion.md) now has pinned original SHA-1, byte-count, dimensions and description revisions for **all five** staged Commons candidates (Schumacher, Alonso, McLaren MP4/4, Ferrari F2004 and Silverstone). Run `node scripts/audit-commons-evidence.mjs` for an offline coverage check. Before downloading, the ingester also compares the current Commons API SHA-1 to the pin, then computes local SHA-256 from the downloaded original. This is optional tooling, **not evidence that any file was downloaded or rights-approved**. The public photographic registry remains empty. Four candidate identities are not yet in the small pilot F1DB identity snapshot and still require pinned-archive verification.
 
 ## Architecture and ownership audit
 
