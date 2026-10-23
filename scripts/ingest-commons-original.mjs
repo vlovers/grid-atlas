@@ -43,7 +43,7 @@ function exactImageInfo(payload, title, evidence) {
     : url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password ? 'origin'
     : !safeTracking || url.search || url.hash ? 'query or fragment'
     : !url.pathname.startsWith('/wikipedia/commons/') ? 'path prefix'
-    : !/\\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
+    : !/\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
     : null;
   if (unsafeReason) throw Error('Commons API supplied an unsafe original URL (' + unsafeReason + ')');
   return { originalUrl: url.href, sourceTimestamp: info.timestamp ?? null };
