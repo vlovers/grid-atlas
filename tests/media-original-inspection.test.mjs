@@ -56,9 +56,20 @@ test('checks SHA-256, MIME, dimensions, symlinks and approval boundaries',()=>{
   const bytes=png(),filePath=join(dir,'original.png');writeFileSync(filePath,bytes);
   const sha=createHash('sha256').update(bytes).digest('hex');
   const sha1=createHash('sha1').update(bytes).digest('hex');
-  const result=inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:sha,expectedSha1:sha1,expectedBytes:bytes.length});
+  const evidence={schema_version:1,lane:'research_only',publication_allowed:false,entries:[{
+    research_id:'research-test',file_page_url:'https://commons.wikimedia.org/wiki/File:Test.jpg',
+    description_oldid:123,sha1,bytes:bytes.length,width:4,height:5
+  }]};
+  const result=inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:sha,expectedSha1:sha1,expectedBytes:bytes.length,sourceEvidence:evidence});
   assert.equal(result.local_original.sha256,sha);
   assert.equal(result.local_original.sha1,sha1);
+  assert.equal(result.source_evidence.matched,true);
+  const mismatch=structuredClone(evidence);mismatch.entries[0].sha1='0'.repeat(40);
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),sourceEvidence:mismatch}),/SHA-1/);
+  const badPage=structuredClone(evidence);badPage.entries[0].file_page_url='https://commons.wikimedia.org/wiki/File:Other.jpg';
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),sourceEvidence:badPage}),/page mismatch/);
+  const badDimensions=structuredClone(evidence);badDimensions.entries[0].width=99;
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),sourceEvidence:badDimensions}),/source evidence dimensions/);
   assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha1:'0'.repeat(40)}),/SHA-1/);
   assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedBytes:bytes.length+1}),/byte count/);
   assert.equal(result.publication_allowed,false);
