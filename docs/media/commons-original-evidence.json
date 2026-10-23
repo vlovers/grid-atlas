@@ -2,7 +2,7 @@
   "schema_version": 1,
   "lane": "research_only",
   "publication_allowed": false,
-  "source": "Wikimedia Commons file description and structured data, observed 2026-10-23",
+  "source": "Wikimedia Commons file descriptions and structured original metadata, observed 2026-10-23; SHA-1 copied from Commons, not computed from downloaded bytes",
   "entries": [
     {
       "research_id": "research-schumacher-portrait-2007",
@@ -15,6 +15,42 @@
       "source_license": "CC-BY-SA-3.0",
       "source_author": "Gunnar Richter",
       "note": "Source description also mentions Daniel Milbord; independent provenance review required."
+    },
+    {
+      "research_id": "research-alonso-2024",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Fernando_Alonso_(53838437751).jpg",
+      "description_oldid": 1157917780,
+      "sha1": "c7ddbbd82e80328c91631e43fcc9f0bc316e7895",
+      "bytes": 4329507,
+      "width": 4302,
+      "height": 2689,
+      "source_license": "CC-BY-SA-2.0",
+      "source_author": "Peter Menzel",
+      "note": "Commons records a 5 July 2024 Silverstone photograph sourced from Flickr (pmenzel86), with FlickreviewR 2 review on 8 July 2024. Confirm portrait subject, original Flickr rights chain and intended use independently."
+    },
+    {
+      "research_id": "research-mclaren-mp44-2007",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-4.jpg",
+      "description_oldid": 1248162600,
+      "sha1": "5f73fce72ec07ddaab187f07cbc90a7196a2c684",
+      "bytes": 1582072,
+      "width": 2848,
+      "height": 2136,
+      "source_license": "CC-BY-SA-3.0",
+      "source_author": "John Chapman (Pyrope)",
+      "note": "Commons lists several selectable licenses including CC BY-SA 3.0 and GFDL. This is a 22 August 2007 museum photograph of the MP4/4, not a 1988 race photograph. Independently verify attribution and car context."
+    },
+    {
+      "research_id": "research-ferrari-f2004-2004",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ferrari_F2004.jpg",
+      "description_oldid": 1082605957,
+      "sha1": "d6f0c2a0fd9a57d8bd3ad76d447507cc4df1736a",
+      "bytes": 1188730,
+      "width": 1536,
+      "height": 2048,
+      "source_license": "CC-BY-SA-2.0",
+      "source_author": "storem",
+      "note": "Commons lists a 27 September 2004 capture from Flickr (storem), FlickreviewR 2 reviewed 25 June 2024. No exact race location or event established by this file description; independent provenance and historical review required."
     },
     {
       "research_id": "research-silverstone-2019",
