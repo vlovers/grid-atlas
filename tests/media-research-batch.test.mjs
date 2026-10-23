@@ -17,9 +17,13 @@ test('plans the entire media batch without auto-publication', () => {
   assert.ok(result.reviewQueue.every(x => x.readyForPublication === false));
   assert.equal(result.byPriority.P0 + result.byPriority.P1 + result.byPriority.P2, 16);
 });
-test('flags subjects missing from the narrow pilot identity allowlist', () => {
+test('distinguishes newly source-pinned subjects from research identities still absent', () => {
   const result = planMediaBatch(csv, identity, candidates, publication);
-  assert.ok(result.identityNotInPilot.includes('schumacher-portrait-2007'));
+  assert.ok(!result.identityNotInPilot.includes('schumacher-portrait-2007'));
+  assert.ok(!result.identityNotInPilot.includes('alonso-2024'));
+  assert.ok(!result.identityNotInPilot.includes('mclaren-mp44-2007'));
+  assert.ok(!result.identityNotInPilot.includes('silverstone-2019'));
+  assert.ok(result.identityNotInPilot.includes('verstappen-2016'));
   assert.ok(!result.identityNotInPilot.includes('ferrari-f2004-2004'));
 });
 test('flags duplicate source pages already registered as candidates', () => {
