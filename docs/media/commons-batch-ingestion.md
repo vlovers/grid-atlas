@@ -5,7 +5,7 @@ This command groups **already pinned** Wikimedia Commons originals into one sequ
 ## Prerequisites
 
 - Use Node 24+ and a **new existing owner-only directory outside the repository** (mode `0700`), with sufficient disk space. The CLI now rejects repository-contained paths (including `apps/web/public/media` and paths reached through symlinked parents), direct directory symlinks, and group/world-readable directories. It resolves the canonical destination before writing.
-- Review `docs/media/commons-original-evidence.json` and `docs/media/cross-era-staging.json` before running. All five staged research IDs now have **observed Commons original** SHA-1, exact byte count, dimensions and description-page revision recorded. This is source metadata, not a local binary verification or rights approval. Run `node scripts/audit-commons-evidence.mjs` to check the offline evidence coverage before attempting any network download.
+- Review `docs/media/commons-original-evidence.json` and `docs/media/cross-era-staging.json` before running. All five staged research IDs now have **observed Commons original** SHA-1, exact byte count, dimensions and description-page revision recorded. This is source metadata, not a local binary verification or rights approval. Run `node scripts/audit-commons-evidence.mjs` to check the offline evidence coverage before attempting any network download. **Every staged candidate must have exactly one pinned source evidence entry**: missing evidence is a nonzero audit failure, even though the report still lists the missing IDs for investigation. This is a research integrity gate, not a rights clearance.
 - Network access to the official Commons API and original file host is required. This is a live operation; upstream files may change. Respect API errors and retry later rather than bypassing the checks.
 
 ## Run
@@ -37,7 +37,7 @@ Independent review must still resolve original/derivative source chains, attribu
 ## Tests
 
 ```sh
-node --test tests/commons-evidence-audit.test.mjs tests/commons-batch-ingestion.test.mjs tests/commons-original-ingestion.test.mjs tests/media-original-inspection.test.mjs tests/private-original-directory.test.mjs
+node --test tests/commons-evidence-audit.test.mjs tests/commons-evidence-completeness.test.mjs tests/commons-batch-ingestion.test.mjs tests/commons-original-ingestion.test.mjs tests/media-original-inspection.test.mjs tests/private-original-directory.test.mjs
 ```
 
 Tests mock the network and never fetch or publish third-party media. Both single and batch ingestion use the same destination guard; `tests/private-original-directory.test.mjs` covers repository paths, parent-symlink aliases, direct symlinks, and unsafe permissions.
