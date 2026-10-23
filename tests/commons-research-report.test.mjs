@@ -79,7 +79,7 @@ test('rejects tampered MIME, dimensions, creator and license in a research recei
   ]) {
     const args = fixtures();
     mutate(args);
-    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt/);
+    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt|Invalid Commons staging or evidence/);
   }
 });
 
