@@ -1,7 +1,12 @@
-import test from 'node:test';
+import test, { after } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync, symlinkSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { inspectOriginalBatch } from '../scripts/inspect-media-batch.mjs';
+
+const originalsDir = mkdtempSync(join(tmpdir(), 'grid-atlas-media-batch-'));
+after(() => rmSync(originalsDir, { recursive: true, force: true }));
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const inputs = () => ({
@@ -10,7 +15,7 @@ const inputs = () => ({
   candidates: load('docs/media/candidates.json'),
   publication: load('apps/web/src/components/media/publication.json'),
   pilot: load('docs/media/pilot-identities.json'),
-  originalsDir: '/tmp',
+  originalsDir,
   manifest: { schema_version: 1, lane: 'offline_originals', publication_allowed: false,
     entries: [{ research_id: 'research-schumacher-portrait-2007', file: 'not-present.jpg', expected_sha256: null }] }
 });
@@ -43,4 +48,11 @@ test('rejects mismatched staged approval state', () => {
   const args = inputs();
   args.staging.entries[0].status = 'verified';
   assert.throws(() => inspectOriginalBatch(args), /Staging integrity failed/);
+});
+
+test('rejects symlinked originals directory even when its target is a real directory', () => {
+  const link = join(originalsDir, 'linked-originals');
+  symlinkSync(originalsDir, link, 'dir');
+  assert.throws(() => inspectOriginalBatch({ ...inputs(), originalsDir: link }),
+    /Originals directory must be a real directory/);
 });
