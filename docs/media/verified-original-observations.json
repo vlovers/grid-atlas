@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "lane": "research_only",
+  "publication_allowed": false,
+  "source_run_url": "https://github.com/vlovers/grid-atlas/actions/runs/39994989972",
+  "observed_on": "2026-10-23",
+  "note": "SHA-256 of two original binaries checked on an ephemeral GitHub Actions runner. Three other originals have no verified SHA-256 yet. These are not rights or subject approvals.",
+  "entries": [
+    {
+      "research_id": "research-schumacher-portrait-2007",
+      "sha256": "6b0431b9d58148d4c15d6e1342aa206ec050a84967a203fdc4d5a0ee612aad5a",
+      "sha1": "2e2f13a317874fe4aaee0b0190a4fd8432afa2ec",
+      "bytes": 215440
+    },
+    {
+      "research_id": "research-alonso-2024",
+      "sha256": "f08b0868a18207ca769328a8799c1e67c12227abf59d6e14b27aaf3691dc89a8",
+      "sha1": "c7ddbbd82e80328c91631e43fcc9f0bc316e7895",
+      "bytes": 4329507
+    }
+  ]
+}
