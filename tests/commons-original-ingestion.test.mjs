@@ -108,3 +108,44 @@ test('single ingestion refuses a public repository destination before any networ
   await assert.rejects(() => ingestCommonsOriginal({ researchId: id, outputDir, ...fixtures(bytes), fetchImpl: mock.fetchImpl }), /outside the repository/);
   assert.equal(mock.calls.length, 0);
 });
+
+test('rejects oversized Commons API metadata before requesting original bytes', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-commons-'));
+ try {
+  for (const response of [
+   new Response('{}', { status: 200, headers: { 'content-length': '1048577' } }),
+   new Response(' '.repeat(1024 * 1024 + 1), { status: 200 })
+  ]) {
+   const calls = [];
+   const fetchImpl = async input => {
+    calls.push(input);
+    if (calls.length > 1) throw Error('Original download must not be attempted');
+    return response;
+   };
+   await assert.rejects(
+    () => ingestCommonsOriginal({ researchId: id, outputDir: dir, ...fixtures(bytes), fetchImpl }),
+    /Commons API response exceeds metadata size limit/
+   );
+   assert.equal(calls.length, 1);
+   assert.equal(existsSync(join(dir, id + '.png')), false);
+  }
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('rejects malformed Commons API metadata without downloading originals', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-commons-'));
+ try {
+  let calls = 0;
+  const fetchImpl = async () => {
+   calls++;
+   if (calls > 1) throw Error('Original download must not be attempted');
+   return new Response('{not-json', { status: 200 });
+  };
+  await assert.rejects(
+   () => ingestCommonsOriginal({ researchId: id, outputDir: dir, ...fixtures(bytes), fetchImpl }),
+   /Commons API response is not valid UTF-8 JSON/
+  );
+  assert.equal(calls, 1);
+  assert.equal(existsSync(join(dir, id + '.png')), false);
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});
