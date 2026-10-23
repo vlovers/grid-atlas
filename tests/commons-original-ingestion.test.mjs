@@ -29,12 +29,12 @@ function fixtures(bytes=png()) {
  const sourceEvidence={schema_version:1,lane:'research_only',publication_allowed:false,entries:[{research_id:id,file_page_url:filePage,sha1:createHash('sha1').update(bytes).digest('hex'),bytes:bytes.length,width:4,height:5,description_oldid:1}]};
  return {staging,sourceEvidence};
 }
-function mockFetch(bytes, { url=originalUrl, size=bytes.length, responseBytes=bytes, redirect=false }={}) {
+function mockFetch(bytes, { url=originalUrl, size=bytes.length, sha1=createHash('sha1').update(bytes).digest('hex'), responseBytes=bytes, redirect=false }={}) {
  const calls=[];
  const fetchImpl=async (input,options)=>{
   calls.push({input,options});
   if(input.startsWith('https://commons.wikimedia.org/w/api.php')) {
-   return new Response(JSON.stringify({query:{pages:[{title:'File:Test.png',imageinfo:[{url,size,width:4,height:5,timestamp:'2026-10-23T00:00:00Z'}]}]}}),{status:200,headers:{'content-type':'application/json'}});
+   return new Response(JSON.stringify({query:{pages:[{title:'File:Test.png',imageinfo:[{url,size,sha1,width:4,height:5,timestamp:'2026-10-23T00:00:00Z'}]}]}}),{status:200,headers:{'content-type':'application/json'}});
   }
   if(redirect) return new Response(null,{status:302,headers:{location:'https://example.com/evil'}});
   return new Response(responseBytes,{status:200,headers:{'content-length':String(responseBytes.length)}});
@@ -72,7 +72,7 @@ test('rejects modified bytes and leaves no original behind',async()=>{
 test('rejects unexpected origin, metadata changes and redirects',async()=>{
  const bytes=png(),dir=mkdtempSync(join(tmpdir(),'grid-atlas-commons-'));
  try{
-  for(const opts of [{url:'https://example.com/Test.png'},{size:bytes.length+1},{redirect:true}]) {
+  for(const opts of [{url:'https://example.com/Test.png'},{size:bytes.length+1},{sha1:'0'.repeat(40)},{redirect:true}]) {
    const mock=mockFetch(bytes,opts);
    await assert.rejects(()=>ingestCommonsOriginal({researchId:id,outputDir:dir,...fixtures(bytes),fetchImpl:mock.fetchImpl}));
   }
@@ -87,4 +87,14 @@ test('does not overwrite existing originals or follow output-directory symlinks'
   const link=join(dir,'linked');symlinkSync(dir,link);
   await assert.rejects(()=>ingestCommonsOriginal({researchId:id,outputDir:link,...fixtures(bytes),fetchImpl:mockFetch(bytes).fetchImpl}),/symlink/);
  }finally{rmSync(dir,{recursive:true,force:true});}
+});
+
+test('rejects stale Commons API checksum before requesting original bytes', async()=>{
+ const bytes=png(),dir=mkdtempSync(join(tmpdir(),'grid-atlas-commons-'));
+ try {
+  const mock=mockFetch(bytes,{sha1:'0'.repeat(40)});
+  await assert.rejects(()=>ingestCommonsOriginal({researchId:id,outputDir:dir,...fixtures(bytes),fetchImpl:mock.fetchImpl}),/API original SHA-1 differs/);
+  assert.equal(mock.calls.length,1);
+  assert.equal(existsSync(join(dir,id+'.png')),false);
+ } finally {rmSync(dir,{recursive:true,force:true});}
 });
