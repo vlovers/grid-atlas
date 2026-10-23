@@ -4,7 +4,8 @@
 production approval. PR A is [#222](https://github.com/vlovers/grid-atlas/pull/222),
 commit `77fe1456c0bdda37d2f6c2faa463b72f8438dadb`, merged externally as
 `90b401035896a988c29557835a3fab4c3e457fa4`. Its four CI jobs passed.
-The visual/media batch is based on main `41612ad`, preserving the reliability,
+The visual/media batch is PR [#255](https://github.com/vlovers/grid-atlas/pull/255),
+integrating main through `ffd9656` and preserving the reliability,
 SVG-cover and Commons research changes merged during implementation.
 
 ## Reproduced failures and root causes
@@ -73,22 +74,30 @@ history instead of claiming it is absent.
 
 The reproducible stack uses Node 24, locked pnpm dependencies, production Next/API
 builds and PostgreSQL. Browser fixtures use owned schemas; genuine acceptance
-uses pinned F1DB v2026.17.0. Final browser/coverage results are recorded after the
-last run; CI is checked against the published PR head.
+uses pinned F1DB v2026.17.0. The full and genuine browser runs cover the final application changes except
+the subsequent circuit-description correction; the 24-case visual run and 36
+captures use the final copy. Later merged changes affect only offline Commons
+reporting; all 212 Node tests were rerun after integration.
+[CI checks](https://github.com/vlovers/grid-atlas/pull/255/checks) are authoritative
+for the published PR head.
 
 | Check | Result |
 | --- | --- |
 | Lint | Passed |
 | TypeScript | Passed |
 | Production API/web build | Passed |
-| Node tests | 203 passed |
+| Node tests | 212 passed |
 | Offline Python/database/import/media tests | 364 passed |
 | API/PostgreSQL integration | 42 passed; one existing skip |
-| Full production browser suite | Final run in progress |
-| Genuine-import browser suite | Final run in progress |
-| Dedicated Chromium/mobile/WebKit visual acceptance | Final run pending |
-| Exhaustive pinned archive/API/page/link audit | Final run in progress |
+| Full production browser suite | 492 passed; zero retries |
+| Genuine-import browser suite | 120 passed |
+| Dedicated Chromium/mobile/WebKit visual acceptance | 24 passed |
+| Exhaustive pinned archive/API/page/link audit | Passed: 11,504 API requests; 2,364 localized profiles; 2,406 pages; 73,068 links; all 1,172 race and 27,665 result rows compared; zero failures |
 | Real screenshots | 36 captures passed across nine templates, EN desktop / UK mobile, Chromium / WebKit |
+
+The [archive coverage report](archive-coverage.json) preserves the complete
+acceptance counts and declared limits. Foundation checks, documentation links
+and read-only repository/media audits also pass; publication assets remain zero.
 
 The full browser suite includes main's four-locale/project circuit stress cases
 and the installed-vendored-renderer regression, plus direct navigation, internal

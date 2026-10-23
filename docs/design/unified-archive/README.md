@@ -1,6 +1,6 @@
 # Unified archive experience and media foundation
 
-Initial audit base: main `c30d657`; rebased onto `41612ad` after concurrent media
+Initial audit base: main `c30d657`; integrated main through `ffd9656` after concurrent media
 and reliability merges. This is the visual/media batch paired with reliability
 PR [#222](https://github.com/vlovers/grid-atlas/pull/222). PR A was merged externally after its CI rerun passed. This branch targets current
 main and preserves the newly merged SVG covers and research-ingestion tools. Both use the same genuine pinned F1DB import for acceptance.
@@ -16,7 +16,7 @@ statistics, tabs, section headings and source attribution now cover:
   link the first/latest recorded seasons. Empty/search states retain the complete
   index behavior. Failed optional discovery does not remove the searchable index.
 - `/uk|en/seasons`: existing interactive decade browser plus a complete static
-  decade index, so every recorded season remains linkable with or without JS.
+  decade index, so every recorded season has a link independently of the selected decade.
 - `/uk|en/seasons/:year`: calendar cover, imported-field statistics, section
   navigation and reading guidance. Source championship classifications remain
   separate from race-result sums.
