@@ -10,7 +10,7 @@ function safeOriginalUrl(value) {
     const url = new URL(value);
     return url.protocol === 'https:' && url.hostname === 'upload.wikimedia.org' &&
       !url.port && !url.username && !url.password && !url.search && !url.hash &&
-      /^\\/wikipedia\\/commons\\/[a-f0-9]\\/[a-f0-9]{2}\\/[^/]+\\.(?:jpe?g|png)$/i.test(url.pathname);
+      /^\/wikipedia\/commons\/[a-f0-9]\/[a-f0-9]{2}\/[^/]+\.(?:jpe?g|png)$/i.test(url.pathname);
   } catch {
     return false;
   }
@@ -72,7 +72,7 @@ export function buildCommonsResearchReport(batch, evidence, staging) {
         !safeOriginalUrl(result.source_observation?.api_original_url) ||
         (result.source_observation.api_timestamp != null &&
           (typeof result.source_observation.api_timestamp !== 'string' ||
-           !/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$/.test(result.source_observation.api_timestamp) ||
+           !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(result.source_observation.api_timestamp) ||
            !Number.isFinite(Date.parse(result.source_observation.api_timestamp))))) {
       throw Error('Unverified or mismatched Commons receipt: ' + id);
     }
