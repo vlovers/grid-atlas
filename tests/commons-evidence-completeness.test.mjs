@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import { auditCommonsEvidence } from '../scripts/audit-commons-evidence.mjs';
 
 const candidate = id => ({
-  id, status: 'candidate', review: null, content_sha256: null,\n  alt: { uk: null, en: null }, caption: { uk: null, en: null },\n  source_url: 'https://commons.wikimedia.org/wiki/File:Example.jpg',
+  id, status: 'candidate', review: null, content_sha256: null,
+  alt: { uk: null, en: null }, caption: { uk: null, en: null },
+  source_url: 'https://commons.wikimedia.org/wiki/File:Example.jpg',
   delivery: { local_path: null, remote_url: null },
   file_page_url: 'https://commons.wikimedia.org/wiki/File:Example.jpg',
   creator: 'Example creator', license: { identifier: 'CC-BY-SA-4.0' },
