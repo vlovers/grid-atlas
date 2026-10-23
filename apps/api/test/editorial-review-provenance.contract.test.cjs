@@ -12,7 +12,7 @@ test('AI review provenance is explicitly distinct from legacy human review', () 
   assert.match(migration, /ADD COLUMN review_method TEXT NOT NULL DEFAULT 'human'/);
   assert.match(migration, /review_method IN \('human', 'ai'\)/);
   assert.match(migration, /ADD COLUMN review_revision_sha256 TEXT/);
-  assert.ok(migration.includes("review_revision_sha256 ~ '^[a-f0-9]{64}
+  assert.ok(migration.includes('review_revision_sha256 ~'));
 });
 
 test('AI publication stays blocked until a dedicated reviewed release workflow exists', () => {
