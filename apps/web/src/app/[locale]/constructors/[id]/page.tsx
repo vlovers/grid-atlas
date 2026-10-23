@@ -1,3 +1,5 @@
+import { RecordGraphic } from '@/components/editorial/record-graphic';
+import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
 import { ParticipationHistory } from '@/components/participation/history';
 import type { Participation } from '@/components/driver/showcase-model';
@@ -69,11 +71,11 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   return <section className={`page ${styles.dossier}`} data-testid="constructor-dossier">
     <EditorialHero title={team.name} eyebrow={`${storyCopy[locale].constructorHeader} / ${team.external_id}`}
       context={<><span>{range}</span>{identities[0]?.fields.country && <span>{identities[0].fields.country}</span>}</>}
-      lead={e.constructorLead} media={<EditorialMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'constructor', id: team.external_id }} title={team.name} years={range} locale={locale} />}
-      actions={<><a href="#constructor-season">{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
+      lead={e.constructorLead} media={<EditorialMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'constructor', id: team.external_id }} title={team.name} years={range} locale={locale}><RecordGraphic rows={seasons.map(season => ({ year: season.year, records: season.races, wins: season.wins }))} label={locale === 'uk' ? 'Зафіксовані гонки' : 'Recorded races'} winsLabel={locale === 'uk' ? 'Переможні гонки' : 'Winning races'} locale={locale} /></EditorialMedia>}
+      actions={<><a href={selectedSeason ? "#constructor-season" : "#constructor-archive"}>{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
       statistics={[{ label: t('seasons'), value: format(team.seasons) }, { label: t('races'), value: format(team.races) }, { label: t('wins'), value: format(team.wins) }, { label: t('driverPodiums'), value: format(team.podium_finishes) }]} scope={e.recordScope} />
     <SourceAttribution locale={locale} />
-    <EditorialTabs label={e.contents} items={[{ id: 'constructor-archive-portrait', label: e.overview }, { id: 'constructor-key-eras', label: e.seasons }, { id: 'constructor-season', label: e.drivers }, { id: 'constructor-classifications', label: e.classifications }, { id: 'constructor-archive', label: e.archive }]} />
+    <EditorialTabs label={e.contents} items={[{ id: 'constructor-archive-portrait', label: e.overview }, { id: 'constructor-key-eras', label: e.seasons }, ...(selectedSeason ? [{ id: 'constructor-season', label: e.drivers }] : []), { id: 'constructor-classifications', label: e.classifications }, { id: 'constructor-archive', label: e.archive }]} />
     <section className={styles.portrait} aria-labelledby="constructor-archive-portrait" data-testid="constructor-archive-portrait">
       <SectionHeading kicker={e.overview} id="constructor-archive-portrait" title={locale === 'uk' ? 'Історія конструктора за сезонами' : 'Constructor history across seasons'} />
       <p>{locale === 'uk'
@@ -97,7 +99,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         ? 'Підсумок спирається лише на протоколи перегонів. Спільні автомобілі та історичні правила можуть відрізнятися від сучасного визначення перемоги; офіційні титули не виводяться.'
         : 'This summary uses race-result rows only. Shared cars and historical rules may differ from modern win definitions; official titles are not inferred.'}</p>
     </section>
-    {selectedSeason && <section id="constructor-season" className={styles.selectedSeason} aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
+    {selectedSeason && <section id="constructor-season" tabIndex={-1} className={styles.selectedSeason} aria-label={locale === 'uk' ? 'Показники команди за сезон' : 'Constructor season results'}>
       <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
       <form method="get" action={`/${locale}/constructors/${id}#constructor-season`} className={styles.seasonPicker}>
         <label htmlFor="constructor-season-select">{e.seasonLabel}</label>
@@ -140,7 +142,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <p>{locale === 'uk' ? 'Це опис участі за протоколами, а не перевірена історія власності, контрактів чи юридичної спадковості команди. Сумарні очки пілотів не є офіційними очками Кубка конструкторів.' : 'This is a summary of recorded participation, not a verified history of team ownership, contracts or legal succession. Summed driver points are not official constructors championship points.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
     </section>
     <section className={styles.eras} aria-labelledby="constructor-key-eras" data-testid="constructor-key-eras">
-      <h2 id="constructor-key-eras">{locale === 'uk' ? 'Епохи конструктора' : 'Constructor eras'}</h2>
+      <h2 id="constructor-key-eras" tabIndex={-1}>{locale === 'uk' ? 'Епохи конструктора' : 'Constructor eras'}</h2>
       <p>{locale === 'uk' ? 'Сезони з найбільшою кількістю переможних гонок у цьому архіві. Це порівняння результатів, а не рейтинг офіційних чемпіонських титулів.' : 'Seasons with the most race wins in this archive. These are recorded winning races, not official championship titles.'}</p>
       {seasons.length > 0 ? <div className="driver-grid">{[...seasons].sort((a,b) => b.wins - a.wins || a.year - b.year).slice(0, 4).map(season =>
         <article className="driver" key={season.year}>
@@ -152,7 +154,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <p>{locale === 'uk' ? 'Учасники, юридична спадковість, шасі й силові установки потребують окремих перевірених джерел. Не ототожнюємо однойменні команди та конструкторів без доказів.' : 'Entrants, legal succession, chassis and power units need separate verified evidence. Constructor identity alone does not establish legal team continuity.'}</p>
     </section>
     <MediaCollection assets={mediaPublication.assets as MediaAsset[]} subject={{type:'constructor',id:team.external_id}} label={team.name} locale={locale}/>
-    <section id="constructor-archive" className={styles.archive}>
+    <section id="constructor-archive" tabIndex={-1} className={styles.archive}>
     <SectionHeading kicker={e.archive} title={e.fullArchive} id="constructor-archive-title" />
     {identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />}
     <h2>{t('participationTimeline')}</h2>
@@ -169,13 +171,13 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       </div>
     </div>}
     <h2>{t('seasonHistory')}</h2>
-    {seasons.length ? <div className="table-scroll"><table><thead><tr><th>{t('season')}</th><th>{t('races')}</th><th>{t('wins')}</th><th>{t('driverPodiums')}</th><th>{t('driverPoints')}</th></tr></thead><tbody>
-      {seasons.map(s=><tr key={s.year}><td><Link href={`/seasons/${s.year}`}>{s.year}</Link></td><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{points(s.driver_points, s.points_missing)}</td></tr>)}
-    </tbody></table></div> : <p>{t('noResults')}</p>}
+    {seasons.length ? <ArchiveTable label={t('seasonHistory')} locale={locale}><table><thead><tr><th scope="col">{t('season')}</th><th scope="col">{t('races')}</th><th scope="col">{t('wins')}</th><th scope="col">{t('driverPodiums')}</th><th scope="col">{t('driverPoints')}</th></tr></thead><tbody>
+      {seasons.map(s=><tr key={s.year}><th scope="row"><Link href={`/seasons/${s.year}`}>{s.year}</Link></th><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{points(s.driver_points, s.points_missing)}</td></tr>)}
+    </tbody></table></ArchiveTable> : <p>{t('noResults')}</p>}
     <section aria-labelledby="constructor-driver-history" data-testid="constructor-driver-history">
       <h2 id="constructor-driver-history">{locale === 'uk' ? 'Пілоти в історії результатів команди' : 'Drivers in this constructor’s race records'}</h2>
       <p>{locale === 'uk' ? 'Кожен зв’язок підтверджується імпортованими гоночними результатами. Періоди означають зафіксовані сезони, а не контракти чи історію заявок.' : 'Each connection comes from imported race-result records. Years reflect recorded seasons, not employment contracts or entrant histories.'}</p>
-      {drivers.length ? <div className="table-scroll" role="region" tabIndex={0} aria-label={locale === 'uk' ? 'Пілоти за сезонами' : 'Drivers by season'}>
+      {drivers.length ? <ArchiveTable label={locale === 'uk' ? 'Пілоти за сезонами' : 'Drivers by season'} locale={locale}>
         <table><thead><tr><th scope="col">{locale === 'uk' ? 'Пілот' : 'Driver'}</th><th scope="col">{locale === 'uk' ? 'Сезони' : 'Recorded seasons'}</th><th scope="col">{locale === 'uk' ? 'Перша зафіксована гонка' : 'First recorded race'}</th></tr></thead>
           <tbody>{drivers.map(driver => {
             const rows = (career?.participation ?? []).filter(row => row.related_id === driver.id);
@@ -184,7 +186,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
               <td>{[...driver.years].sort((a,b) => a-b).join(', ')}</td>
               <td>{first ? <Link href={`/races/${first.id}`}>{first.year} · {first.name} ↗</Link> : '—'}</td></tr>;
           })}</tbody></table>
-      </div> : <p>{locale === 'uk' ? 'Немає зафіксованих зв’язків із пілотами.' : 'No recorded driver associations.'}</p>}
+      </ArchiveTable> : <p>{locale === 'uk' ? 'Немає зафіксованих зв’язків із пілотами.' : 'No recorded driver associations.'}</p>}
       {career?.milestones.first_win && <p>{locale === 'uk' ? 'Перша зафіксована перемога конструктора' : 'First recorded constructor winning race'}:{' '}
         <Link href={`/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name} ↗</Link>
       </p>}
@@ -215,7 +217,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <a className="back" href={edge.source_url} target="_blank" rel="noopener noreferrer">{t('source')}: {edge.source_title} · {edge.source_publisher} ↗</a>
     </article>)}</div> : <p>{t('noVerifiedRelations')}</p>}
     </section>
-    <div id="constructor-classifications" className={styles.classifications}><ChampionshipTable rows={championships} locale={locale} kind="constructors" scope="career" /></div>
+    <div id="constructor-classifications" tabIndex={-1} className={styles.classifications}><ChampionshipTable rows={championships} locale={locale} kind="constructors" scope="career" /></div>
     <Link className="back" href="/constructors">← {t('allConstructors')}</Link>
   </section>;
 }

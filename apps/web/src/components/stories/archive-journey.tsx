@@ -10,15 +10,16 @@ export type ArchiveJourneyItem = {
   year?: number;
 };
 
-export function ArchiveJourney({ title, description, items, locale, testId }: {
+export function ArchiveJourney({ title, description, items, locale, testId, editorial = false }: {
   title: string;
   description: string;
   items: ArchiveJourneyItem[];
   locale: 'uk' | 'en';
   testId: string;
+  editorial?: boolean;
 }) {
   if (!items.length) return null;
-  return <section className={styles.section} aria-label={title} data-testid={testId}>
+  return <section className={`${styles.section} ${editorial ? styles.editorial : ''}`} aria-label={title} data-testid={testId}>
     <header className={styles.heading}>
       <div><span className={styles.eyebrow}>{locale === 'uk' ? 'ІСТОРИЧНИЙ АРХІВ' : 'HISTORICAL ARCHIVE'}</span><h2>{title}</h2></div>
       <p>{description}</p>

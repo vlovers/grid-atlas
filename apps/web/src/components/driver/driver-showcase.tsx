@@ -1,3 +1,5 @@
+import { RecordGraphic } from '@/components/editorial/record-graphic';
+import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
 import { PublishedChapters } from '@/components/stories/published-chapters';
 import { releasePilot } from '@/components/stories/release-model';
@@ -53,7 +55,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
     <EditorialHero title={driver.name} eyebrow={`${story.driverCover} / ${driver.external_id}`}
       context={<><span>{range}</span>{identityDetails?.fields.nationality && <span>{identityDetails.fields.nationality}</span>}</>}
       lead={story.driverLead}
-      media={<EditorialMedia assets={media} subject={{ type: 'driver', id: driver.external_id }} title={driver.name} years={range} locale={locale} />}
+      media={<EditorialMedia assets={media} subject={{ type: 'driver', id: driver.external_id }} title={driver.name} years={range} locale={locale}><RecordGraphic rows={seasons.map(season => ({ year: season.year, records: season.starts, wins: season.wins }))} label={t.resultEntries} winsLabel={t.winningEntries} locale={locale} /></EditorialMedia>}
       actions={<>{pilot && <a href={`/${locale}/stories/${pilot.slug}`}>{locale === 'uk' ? 'Дослідити історію' : 'Explore the story'} ↗</a>}<a href="#driver-career">{t.begin} ↓</a>{compare && <a href={`/${locale}${compare}`}>{t.compare} ↗</a>}</>}
       statistics={[{ label: t.races, value: format(career?.summary.races) }, { label: t.wins, value: format(career?.summary.winning_races) },
         { label: t.podiums, value: format(career?.summary.podium_result_entries) }, { label: t.period, value: format(driver.seasons) }]} scope={t.scope} />
@@ -148,7 +150,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
           <section className={styles.seasonRaceLedger} aria-label={locale === 'uk' ? 'Результати гонок обраного сезону' : 'Selected season race results'}>
             <h4>{locale === 'uk' ? 'Усі результати гонок' : 'Race-by-race results'} · {selected.year}</h4>
             <p>{locale === 'uk' ? 'Кожен запис результату показано окремо: спільні автомобілі можуть створювати кілька записів для одного Гран-прі. Це не офіційна таблиця чемпіонату.' : 'Every recorded result entry is preserved; shared cars may produce multiple entries per Grand Prix. This is not an official championship classification.'}</p>
-            {seasonResults.length ? <div className={styles.raceTableScroll}><table>
+            {seasonResults.length ? <ArchiveTable label={locale === 'uk' ? 'Результати гонок сезону' : 'Season race results'} locale={locale}><table>
               <thead><tr>
                 <th>{locale === 'uk' ? 'Етап' : 'Round'}</th>
                 <th>{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th>
@@ -166,7 +168,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
                 <td>{result.position_text}{result.shared_car && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}{result.reason_retired && <small>{result.reason_retired}</small>}</td>
                 <td>{result.laps ?? '—'}</td><td>{result.points ?? '—'}</td>
               </tr>)}</tbody>
-            </table></div> : <p>{locale === 'uk' ? 'Результатів у цьому сезоні немає.' : 'No race results recorded for this season.'}</p>}
+            </table></ArchiveTable> : <p>{locale === 'uk' ? 'Результатів у цьому сезоні немає.' : 'No race results recorded for this season.'}</p>}
           </section>
           <a className={styles.outlineLink} href={`/${locale}/explorer/drivers/${driver.id}?year=${selected.year}`}>{t.exploreConnections} ↗</a>
         </section>}
@@ -207,23 +209,23 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       <SectionHeading kicker={e.connections} title={e.perspectives} note={e.perspectivesNote} id="driver-perspectives-title" />
       {relatedDrivers.length ? <ul className={styles.related}>{relatedDrivers.map(related => <li key={related.driver_id}><a href={`/${locale}/drivers/${related.driver_id}?season=${selected?.year}`}>{related.driver_name} <span aria-hidden="true">↗</span></a></li>)}</ul> : <p>{e.noPerspectives}</p>}
     </section>
-    <div id="driver-classifications" className={styles.chapter}><ChampionshipTable rows={championships} locale={locale} kind="drivers" scope="career" /></div>
+    <div id="driver-classifications" tabIndex={-1} className={styles.chapter}><ChampionshipTable rows={championships} locale={locale} kind="drivers" scope="career" /></div>
     <section id="driver-archive" className={styles.chapter} aria-labelledby="driver-archive-title" tabIndex={-1}>
       <SectionHeading kicker={t.archiveKicker} title={story.records} id="driver-archive-title" note={t.archiveNote} />
       {identity}
       <aside className={styles.coverage}><strong>{t.titleGap}</strong><p>{t.titleGapNote}</p></aside>
       <details id="driver-graphic" className={styles.disclosure}><summary>{story.graphic}</summary><CareerSignature seasons={seasons} name={driver.name} locale={locale} /></details>
       <details id="driver-seasons" className={styles.disclosure}><summary>{t.seasonsTable} <span>{format(seasons.length)}</span></summary>
-        {seasons.length ? <div className={styles.tableScroll} role="region" aria-label={t.seasonsTable} tabIndex={0}><table><caption>{t.seasonsTable} · {driver.name}</caption><thead><tr>
+        {seasons.length ? <ArchiveTable label={t.seasonsTable} locale={locale}><table><caption>{t.seasonsTable} · {driver.name}</caption><thead><tr>
           {[t.season, t.resultEntries, t.winningEntries, t.podiums, t.points].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead><tbody>
           {seasons.map(season => { const points = seasonPoints(season, career?.participation ?? []); return <tr key={season.year}><th scope="row"><a href={`/${locale}/seasons/${season.year}`}>{season.year}</a></th>
             <td>{format(season.starts)}</td><td>{format(season.wins)}</td><td>{format(season.podiums)}</td><td>{points.value ?? t.unavailable}{points.value !== null && points.partial && <small className={styles.partialPoints}>{t.partialPoints}</small>}</td></tr>; })}
-        </tbody></table></div> : <p>{t.empty}</p>}
+        </tbody></table></ArchiveTable> : <p>{t.empty}</p>}
         <p className={styles.note}>{t.sourceNote}</p>
       </details>
       <details className={styles.disclosure}><summary>{t.teamsTable} <span>{format(teams.length)}</span></summary>
-        {teams.length ? <div className={styles.tableScroll} role="region" aria-label={t.teamsTable} tabIndex={0}><table><caption>{t.teamsTable} · {driver.name}</caption><thead><tr>{[t.season, t.constructor, t.races, t.winningEntries].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead>
-          <tbody>{teams.map(team => <tr key={`${team.year}:${team.constructor_id}`}><th scope="row"><a href={`/${locale}/seasons/${team.year}`}>{team.year}</a></th><td><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</a></td><td>{format(team.races)}</td><td>{format(team.wins)}</td></tr>)}</tbody></table></div> : <p>{t.empty}</p>}
+        {teams.length ? <ArchiveTable label={t.teamsTable} locale={locale}><table><caption>{t.teamsTable} · {driver.name}</caption><thead><tr>{[t.season, t.constructor, t.races, t.winningEntries].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead>
+          <tbody>{teams.map(team => <tr key={`${team.year}:${team.constructor_id}`}><th scope="row"><a href={`/${locale}/seasons/${team.year}`}>{team.year}</a></th><td><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</a></td><td>{format(team.races)}</td><td>{format(team.wins)}</td></tr>)}</tbody></table></ArchiveTable> : <p>{t.empty}</p>}
       </details>
       <details id="driver-timeline" className={styles.disclosure}><summary>{t.timeline} <span>{format(timeline.length)}</span></summary>
         <CareerMap rows={career?.participation ?? []} driverId={driver.id} locale={locale} />

@@ -16,3 +16,11 @@
 @media(max-width:720px){.heading{display:block}.heading p{margin-top:16px}.track{grid-template-columns:1fr}.card{min-height:220px}.year{font-size:3.8rem;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover,.card:focus-visible{transform:none}}
 @media(forced-colors:active){.section,.card{background:Canvas;color:CanvasText;border:1px solid CanvasText}.year,.overline,.detail,.heading p,.action{color:CanvasText}.counter{background:Highlight;color:HighlightText}}
+.editorial { background: none; border-color: var(--line); padding-inline: 0; border-inline: 0; }
+.editorial .card { background: var(--surface); border-color: var(--line); }
+.editorial .eyebrow, .editorial .overline, .editorial .action { color: var(--accent-ink); }
+.editorial .counter { background: var(--accent); color: var(--ink); border-radius: 0; font: .85rem var(--font-mono); }
+.editorial .year { color: var(--muted); font: 400 clamp(3rem, 5vw, 4.5rem)/1 var(--font-display); letter-spacing: -.04em; }
+.editorial .card strong { font: 500 1.7rem/1.15 var(--font-display); }
+.editorial .detail { color: var(--muted); }
+.editorial .card:hover, .editorial .card:focus-visible { border-color: var(--accent-ink); }
