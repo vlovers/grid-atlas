@@ -39,6 +39,9 @@ export function buildCommonsMediaReadiness(staging, evidence, observations) {
     file_page_url: item.file_page_url,
     original_binary: receipts.has(item.id) ? 'sha256_observed' : 'pending_original',
     original_sha256: receipts.get(item.id)?.sha256 ?? null,
+    next_action: receipts.has(item.id)
+      ? 'independent_rights_and_subject_review'
+      : 'verify_original_binary_sha256',
     rights_review: 'pending',
     subject_review: 'pending',
     locale_copy: 'pending',
@@ -53,6 +56,10 @@ export function buildCommonsMediaReadiness(staging, evidence, observations) {
     binary_sha256_pending: candidates.length - receipts.size,
     rights_approved: 0,
     publication_ready: 0,
+    work_queue: {
+      verify_original_binary_sha256: candidates.filter(item => item.next_action === 'verify_original_binary_sha256').map(item => item.research_id),
+      independent_rights_and_subject_review: candidates.filter(item => item.next_action === 'independent_rights_and_subject_review').map(item => item.research_id)
+    },
     observation_run_url: observations.source_run_url,
     observed_on: observations.observed_on,
     candidates
@@ -68,14 +75,18 @@ export function renderCommonsMediaReadiness(report) {
     '| Observed original SHA-256 | ' + report.binary_sha256_observed + ' |',
     '| Original SHA-256 still pending | ' + report.binary_sha256_pending + ' |',
     '| Rights approved | 0 |', '| Publication ready | 0 |', '',
-    '| Research ID | Subject | Original binary | Rights | Publication |',
+    '| Research ID | Subject | Original binary | Next action | Publication |',
     '| --- | --- | --- | --- | --- |'
   ];
   for (const item of report.candidates) {
     lines.push('| ' + item.research_id + ' | ' + item.subject.type + ':' + item.subject.id +
-      ' | ' + item.original_binary + ' | pending | blocked |');
+      ' | ' + item.original_binary + ' | ' + item.next_action + ' | blocked |');
   }
-  lines.push('', 'Original observation: ' + report.observed_on + ' (' + report.observation_run_url + ')',
+  lines.push('', '## Research work queue', '',
+    'Original SHA-256 verification: ' + report.work_queue.verify_original_binary_sha256.join(', '),
+    '',
+    'Independent rights and subject review: ' + report.work_queue.independent_rights_and_subject_review.join(', '),
+    '', 'Original observation: ' + report.observed_on + ' (' + report.observation_run_url + ')',
     '', 'Missing original hashes require actual original-byte verification. Human identity, rights, and UK/EN copy review remain separate prerequisites.', '');
   return lines.join('\n');
 }
