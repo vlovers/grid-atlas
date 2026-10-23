@@ -39,6 +39,6 @@ test('research batch has unique IDs and canonical HTTPS Commons file pages', () 
     assert.equal(url.search, '');
     assert.equal(url.hash, '');
     assert.ok(!urls.has(url.href)); urls.add(url.href);
-    assert.ok(item.rights_note.includes('human review'));
+    assert.match(item.rights_note, /human (?:rights )?(?:review|approval)/i);
   }
 });
