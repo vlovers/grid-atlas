@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { buildCommonsResearchReport } from './build-commons-research-report.mjs';
+import { auditCommonsEvidence } from './audit-commons-evidence.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const hex40 = /^[a-f0-9]{40}$/;
@@ -21,6 +22,8 @@ export function buildIncrementalCommonsResearchReport(batch, evidence, staging, 
       observations.publication_allowed !== false || !Array.isArray(observations.entries)) {
     throw Error('Invalid research-only manifests');
   }
+  const sourceAudit = auditCommonsEvidence(staging, evidence);
+  if (!sourceAudit.ok) throw Error('Invalid Commons staging or evidence: ' + sourceAudit.errors.join('; '));
   const sources = new Map(), candidates = new Map(), prior = new Map();
   for (const item of evidence.entries) {
     if (typeof item?.research_id !== 'string' || sources.has(item.research_id) ||
