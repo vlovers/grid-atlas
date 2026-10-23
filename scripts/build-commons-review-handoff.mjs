@@ -3,6 +3,7 @@ import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { auditStaging } from './audit-media-staging.mjs';
 import { auditCommonsEvidence } from './audit-commons-evidence.mjs';
+import { renderCommonsReviewMarkdown } from './render-commons-review-markdown.mjs';
 
 const read = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const sha256 = /^[a-f0-9]{64}$/;
@@ -118,7 +119,8 @@ export function buildCommonsReviewHandoff({ staging, evidence, observations, ide
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   try {
-    const { values } = parseArgs({ options: { output: { type: 'string' } } });
+    const { values } = parseArgs({ options: { output: { type: 'string' }, format: { type: 'string' } } });
+    if (values.format && !['json', 'markdown'].includes(values.format)) throw Error('Expected --format json or markdown');
     const report = buildCommonsReviewHandoff({
       staging: read('docs/media/cross-era-staging.json'),
       evidence: read('docs/media/commons-original-evidence.json'),
@@ -127,7 +129,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       candidates: read('docs/media/candidates.json'),
       publication: read('apps/web/src/components/media/publication.json')
     });
-    const serialized = JSON.stringify(report, null, 2) + '\n';
+    const serialized = values.format === 'markdown' ? renderCommonsReviewMarkdown(report) : JSON.stringify(report, null, 2) + '\n';
     if (values.output) writeFileSync(values.output, serialized, { flag: 'wx', mode: 0o600 });
     else process.stdout.write(serialized);
   } catch (error) {
