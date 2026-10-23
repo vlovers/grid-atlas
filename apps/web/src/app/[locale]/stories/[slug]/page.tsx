@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import { CIRCUIT_ARTWORK } from '@/components/circuit-layout-registry';
+import { getData, type RaceProfile } from '@/lib/api';
+import type { CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { notFound } from 'next/navigation';
 import { releasePilot, journeyYears, selectedYear } from '@/components/stories/release-model';
 import { resolveReleaseDriver, releaseResults } from '@/components/stories/release-data';
@@ -37,6 +40,10 @@ export default async function DriverStory({ params, searchParams }: Props) {
   ]);
   const sennaFirstWin = slug === 'ayrton-senna' ? records.find(record => record.pick.year === 1985 && record.pick.round === 2) : undefined;
   const firstWinRows = sennaFirstWin?.rows.filter(row => row.position_text === '1' && /portug/i.test(row.race_name)) ?? [];
+  const episodeRace = firstWinRows.length === 1 ? (await getData<RaceProfile>(`/api/races/${firstWinRows[0].race_id}`))[0] : undefined;
+  const episodeEvents = episodeRace?.circuit_id ? await getData<CircuitTechnicalEvent>(`/api/circuits/${episodeRace.circuit_id}/technical-history`) : [];
+  const episodeEvent = episodeEvents.find(event => event.race_id === firstWinRows[0]?.race_id && event.season_year === 1985 && event.round === 2);
+  const episodeArtwork = episodeEvent?.external_layout_id ? CIRCUIT_ARTWORK.get(episodeEvent.external_layout_id) : undefined;
   const related = peer && career.participation.some(r => r.year === pilot.peerYear) && peer.career.participation.some(r => r.year === pilot.peerYear) ? peer : null;
   const first = career.milestones.first_appearance?.race;
   const selected = career.participation.filter(r => r.year === year);
@@ -75,6 +82,11 @@ export default async function DriverStory({ params, searchParams }: Props) {
       {!records.some(r => r.rows.length) && <p>{uk ? 'Обраних гоночних записів у цьому імпорті немає.' : 'The selected race records are absent from this import.'}</p>}</div></section>
     {firstWinRows.length > 0 && <section className={styles.firstWin} aria-labelledby="first-win-title" data-testid="senna-first-win-evidence">
       <div><p className={styles.eyebrow}>{uk ? '1985 / АРХІВНИЙ ЕПІЗОД' : '1985 / ARCHIVE EPISODE'}</p><h2 id="first-win-title">{uk ? 'Португалія: результат у протоколі' : 'Portugal: the result on record'}</h2><p>{uk ? 'Цей епізод показує лише записи результатів із поточного імпорту. Історичний коментар з’явиться після окремого редакційного схвалення.' : 'This episode shows result entries from the current import only. Historical interpretation requires separate editorial approval.'}</p></div>
+      {episodeArtwork && <figure className={styles.firstWinCircuit} data-testid="senna-first-win-layout">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={episodeArtwork.path} width={440} height={440} loading="lazy" alt={uk ? 'Історичний контур траси цього Гран-прі' : 'Historical circuit outline linked to this Grand Prix'} />
+        <figcaption>{uk ? 'Контур F1DB; не інженерна карта.' : 'F1DB outline; not an engineering map.'} <a href={episodeArtwork.source_url} rel="noopener noreferrer" target="_blank">Jules Roy · CC BY 4.0 ↗</a> <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">{uk ? 'Ліцензія' : 'License'} ↗</a></figcaption>
+      </figure>}
       <div className={styles.firstWinEvidence}><p className={styles.eyebrow}>{uk ? 'ПЕРЕВІРЮВАНИЙ ЗАПИС' : 'TRACEABLE RECORD'}</p><strong className={styles.firstWinPosition}>P1</strong>{firstWinRows.map((row, index) => <div key={index}><h3><a href={`/${locale}/races/${row.race_id}`}>{row.race_name} ↗</a></h3><p>{driver.name} · {row.constructor_name}</p><p><a href={`/${locale}/drivers/${driver.id}?season=1985#driver-archive`}>{uk ? 'Відкрити результати сезону' : 'Inspect season results'} →</a></p></div>)}<small>{uk ? 'Позначка P1 походить із запису результату, а не з редакційного тексту.' : 'P1 is read from the result entry, not from editorial prose.'}</small></div>
     </section>}
     <section id="story-connections" className={styles.connections} aria-labelledby="connections-title" tabIndex={-1} data-story-reveal><div className={styles.connectionArt}><MotorsportArt kind="grid" tone={pilot.tone} /></div><div><p className={styles.eyebrow}>04 / {uk ? 'ІНШИЙ ПОГЛЯД' : 'ANOTHER PERSPECTIVE'}</p><h2 id="connections-title">{uk ? 'Один сезон. Дві траєкторії.' : 'One season. Two trajectories.'}</h2>
