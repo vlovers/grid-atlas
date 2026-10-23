@@ -28,19 +28,3 @@ test('changing provenance or revision invalidates earlier approval', () => {
   assert.match(migration, /NEW\.published_at := NULL;/);
   assert.match(migration, /NEW\.status := 'draft';/);
 });
-"));
-});
-
-test('AI publication stays blocked until a dedicated reviewed release workflow exists', () => {
-  assert.match(migration, /ADD CONSTRAINT content_ai_publication_requires_dedicated_gate/);
-  assert.match(migration, /CHECK \(review_method <> 'ai' OR status <> 'published'\)/);
-});
-
-test('changing provenance or revision invalidates earlier approval', () => {
-  assert.match(migration, /NEW\.review_method, NEW\.review_revision_sha256/);
-  assert.match(migration, /OLD\.review_method, OLD\.review_revision_sha256/);
-  assert.match(migration, /NEW\.reviewer := NULL;/);
-  assert.match(migration, /NEW\.reviewed_at := NULL;/);
-  assert.match(migration, /NEW\.published_at := NULL;/);
-  assert.match(migration, /NEW\.status := 'draft';/);
-});
