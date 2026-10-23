@@ -5,6 +5,7 @@ import { existsSync, mkdtempSync, readFileSync, rmSync, symlinkSync, writeFileSy
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { deflateSync } from 'node:zlib';
+import { fileURLToPath } from 'node:url';
 import { commonsFileTitle, ingestCommonsOriginal } from '../scripts/ingest-commons-original.mjs';
 
 function crc32(bytes) {
@@ -98,4 +99,12 @@ test('rejects stale Commons API checksum before requesting original bytes', asyn
   assert.equal(mock.calls.length,1);
   assert.equal(existsSync(join(dir,id+'.png')),false);
  } finally {rmSync(dir,{recursive:true,force:true});}
+});
+
+
+test('single ingestion refuses a public repository destination before any network request', async () => {
+  const bytes = png(), mock = mockFetch(bytes);
+  const outputDir = fileURLToPath(new URL('../apps/web/public/', import.meta.url));
+  await assert.rejects(() => ingestCommonsOriginal({ researchId: id, outputDir, ...fixtures(bytes), fetchImpl: mock.fetchImpl }), /outside the repository/);
+  assert.equal(mock.calls.length, 0);
 });
