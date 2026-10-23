@@ -1,9 +1,9 @@
-import { lstatSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { auditStaging } from './audit-media-staging.mjs';
 import { ingestCommonsOriginal } from './ingest-commons-original.mjs';
+import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
 
 const repoJson = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const idPattern = /^research-[a-z0-9-]+$/;
@@ -28,10 +28,7 @@ export async function ingestCommonsBatch({
       new Set(researchIds).size !== researchIds.length) {
     throw Error('Supply 1–20 distinct research IDs');
   }
-  if (typeof outputDir !== 'string' || !outputDir) throw Error('Existing private output directory required');
-  const directory = resolve(outputDir);
-  const dirStat = lstatSync(directory);
-  if (!dirStat.isDirectory() || dirStat.isSymbolicLink()) throw Error('Output directory must not be a symlink');
+  const directory = assertPrivateOriginalDirectory(outputDir);
   const evidenceIds = new Set();
   for (const item of sourceEvidence.entries) {
     if (!idPattern.test(item?.research_id ?? '') || evidenceIds.has(item.research_id)) {
