@@ -95,3 +95,19 @@ Both claims assert the 21 April 1985 Portuguese Grand Prix victory for Lotus-Ren
 - A public statistics/evidence view can continue to use the archive read API without implying that this unpublished claim has been editorially approved.
 - The story reader must not import the research JSON into public frontend bundles. Use the existing approved publication read model only after review and explicit publication.
 - Preserve the UK/EN claim pairing and do not duplicate the same claim under a second ID merely to power the visual design.
+
+## Existing public journey wiring (verified against main)
+
+No new story route is needed for this pilot. The current public page is `apps/web/src/app/[locale]/stories/[slug]/page.tsx`; it resolves the driver by exact canonical F1DB external ID and reads the approved article only through `getPublishedArticle`. Its `releaseResults` helper loads `/api/drivers/{id}/seasons/{year}/results` using the resolved ID, not a guessed constant.
+
+The existing curation file `apps/web/src/components/stories/release-model.ts` already contains a Senna race pick `{year:1985, round:2}` and a 1985 season entry. This is a **curated record coordinate**, not yet a verified Grid Atlas race ID or an approved first-win interpretation. Reuse it for the visual chapter and verify it against the pinned archive before changing public UI.
+
+The public journey should keep its current behavior when `getPublishedArticle` returns no approved article: archive navigation stays available and unreviewed biography text stays private. The exact constructor and circuit links must be resolved from race results, not inferred from a display label. Do not introduce a second route, duplicate Senna slug, or separate editorial publication system.
+
+### Implementation handoff for Codex (after research clearance)
+
+1. Add a chapter anchor or focused race-evidence panel within the existing Senna journey, not a new `/stories/senna-first-win` page.
+2. Resolve `1985, round 2` through the existing race result read model and verify the returned event, winner, constructor and race identity; if unavailable, omit the focused chapter with an accessible fallback.
+3. Link to the exact locale-prefixed race page using the returned canonical ID; never construct a link from Formula 1's unrelated URL ID `483`.
+4. Use only approved article claims for narrative paragraphs; use neutral data-led labels for unapproved results.
+5. Preserve keyboard support, reduced-motion styling, UK/EN parity, mobile layout, no-JavaScript navigation and Playwright coverage.
