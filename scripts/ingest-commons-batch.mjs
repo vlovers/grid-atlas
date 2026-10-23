@@ -45,17 +45,24 @@ export async function ingestCommonsBatch({
     }
     try {
       const inspection = await ingestImpl({ researchId: id, outputDir: directory, staging, sourceEvidence });
-      if (inspection.publication_allowed !== false || inspection.research_id !== id ||
-          !/^[a-f0-9]{64}$/.test(inspection.local_original?.sha256 ?? '') ||
-          inspection.source_evidence?.matched !== true) {
+      const original = inspection?.local_original;
+      const entry = staging.entries.find(item => item.id === id);
+      const source = sourceEvidence.entries.find(item => item.research_id === id);
+      if (inspection?.publication_allowed !== false || inspection.research_id !== id ||
+          !/^[a-f0-9]{64}$/.test(original?.sha256 ?? '') ||
+          inspection.source_evidence?.matched !== true ||
+          inspection.source_file_page !== source.file_page_url ||
+          original.sha1 !== source.sha1 || original.bytes !== source.bytes ||
+          original.mime !== entry.image?.mime ||
+          original.width !== source.width || original.height !== source.height ||
+          inspection.source_observation?.commons_file_page !== source.file_page_url) {
         throw Error('Ingestion did not return a verified research-only original');
       }
       results.push({
-        research_id: id, status: 'ingested', sha256: inspection.local_original.sha256,
-        sha1: inspection.local_original.sha1, bytes: inspection.local_original.bytes,
-        mime: inspection.local_original.mime, width: inspection.local_original.width,
-        height: inspection.local_original.height,
-        source_observation: inspection.source_observation ?? null
+        research_id: id, status: 'ingested', sha256: original.sha256,
+        sha1: original.sha1, bytes: original.bytes,
+        mime: original.mime, width: original.width, height: original.height,
+        source_observation: inspection.source_observation
       });
     } catch (error) {
       results.push({ research_id: id, status: 'blocked', reason: error instanceof Error ? error.message : String(error) });
