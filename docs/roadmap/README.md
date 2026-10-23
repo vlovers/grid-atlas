@@ -18,17 +18,18 @@
 3. Choose hosting and configure private database access, TLS, public traffic limits, health/readiness monitoring and backups. Rehearse restore and incremental migration in that environment. Local production processes are validated; external deployment still needs approval.
 4. Review public source/licensing presentation and historical scope, and perform a maintainer acceptance pass against the imported archive. See [beta audit](../beta-audit.md).
 
-## Current visual and editorial delivery (22 October 2026)
+## Current visual and editorial delivery (23 October 2026)
 
 - Editorial Racing homepage and driver/constructor dossier redesign merged in PR #205. Responsive historical journey links merged in #206, driver reading-density improvements in #208, and bilingual driver-season visual charts in #209.
-- Historical circuit SVG outlines exist in the pinned asset set. PR #207 is still a draft at this snapshot and must not be described as a verified rendering fix until its web and real-archive checks pass and the PR is merged.
+- PR #207 merged the circuit SVG rendering fix. All 160 pinned layout assets are present; independent per-asset rights review and unsupported overlays remain separate boundaries.
 - Draft editorial subjects, source-located research, and manuscript gates are not public biographies or independently verified historical facts. Photography is not approved for public display merely because a candidate or registry entry exists.
+- This sprint adds shared driver/constructor participation calendars, observed roster changes, source-backed milestones and rights-gated image archives. See the [implemented behavior, screenshots and limits](../design/visual-storytelling-v2/README.md) and [current audit](../sprint-audit-2026-10-23.md).
 - Next coherent visual milestone: circuit/season/race editorial templates and archive-backed interactive storytelling, with UK/EN parity, reduced-motion, keyboard support, real-archive browser verification, and per-asset licensing approval. Prefer one reviewable batch over overlapping small PRs.
 
 ## After the first useful beta
 
-- Official driver/constructor standings with historical scoring rules and sprint results, distinct from race-result summaries.
-- Circuit layout history, further source-backed lineage research, and better season filters when browsing evidence supports the need.
+- Expand independent scoring-rule verification and sprint coverage. Source-reported driver/constructor classifications already exist (#197), separate from result summaries; do not describe them as independently recalculated FIA classifications.
+- Further source-backed lineage research and evidence-led improvements to existing circuit layout/season navigation.
 - Ukrainian/English translation review and content improvements based on user feedback.
 - Broader source-schema/semantic validation and a reviewed data-update/reconciliation policy.
 

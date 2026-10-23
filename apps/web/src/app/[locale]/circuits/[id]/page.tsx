@@ -1,3 +1,6 @@
+import { MediaCollection } from '@/components/media/collection';
+import mediaPublication from '@/components/media/publication.json';
+import type { MediaAsset } from '@/components/media/registry';
 import { ArchiveRhythm } from '@/components/stories/archive-rhythm';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
@@ -73,6 +76,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <ArchiveRhythm testId="circuit-archive-rhythm" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Хронологія Гран-прі' : 'Grand Prix chronology'} description={locale === 'uk' ? 'Усі зафіксовані етапи на цій трасі за роками.' : 'All recorded events at this circuit, arranged by year.'} entries={chronologicalHistory.map(race => ({ id: race.race_id, year: race.season_year, label: race.race_name, href: `/races/${race.race_id}`, detail: `R${race.round}` }))} />
     <ArchiveJourney testId="circuit-visual-journey" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Гран-прі крізь роки' : 'Grands Prix across the years'} description={locale === 'uk' ? 'Події з історичного архіву цієї траси. Це хронологічна навігація, а не рейтинг найважливіших гонок.' : 'Recorded events at this circuit. A chronological archive journey, not a ranking of the most important races.'} items={chronologicalHistory.length ? [chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map(entry => ({ id: entry.race_id, href: `/races/${entry.race_id}`, year: entry.season_year, overline: `R${entry.round}`, title: entry.race_name, detail: entry.winners.length ? entry.winners.map(w => w.driver_name).join(', ') : undefined })) : []} />
     <IdentityFacts identity={identities[0]} locale={locale === 'en' ? 'en' : 'uk'} />
+    <MediaCollection assets={mediaPublication.assets as MediaAsset[]} subject={{type:'circuit',id:circuit.external_id}} label={circuit.name} locale={locale==='en'?'en':'uk'}/>
     <CircuitExperience layouts={layouts} events={technicalEvents} locale={locale === 'en' ? 'en' : 'uk'} />
     <section aria-label={locale === 'uk' ? 'Історичні факти про трасу' : 'Circuit history facts'}>
       <h2>{locale === 'uk' ? 'Паспорт траси' : 'Circuit quick facts'}</h2>

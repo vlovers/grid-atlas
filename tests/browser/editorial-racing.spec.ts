@@ -1,3 +1,4 @@
+import { mediaCollectionCopy } from '../../apps/web/src/components/media/collection-copy';
 import { test, expect } from '@playwright/test';
 import { editorialCopy } from '../../apps/web/src/components/editorial/copy';
 
@@ -42,7 +43,7 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(page).toHaveURL(new RegExp(`/${locale}/constructors/1\\?season=1950#constructor-season$`));
       await expect(picker).toHaveValue('1950');
       await expect(page.locator('#constructor-season a[aria-current="page"]')).toHaveText('1950');
-      await expect(page.getByTestId('editorial-empty-media')).toContainText(t.carsNote);
+      await expect(page.getByTestId('editorial-empty-media')).toContainText(mediaCollectionCopy[locale].empty);
     } finally { await context.close(); }
   });
 

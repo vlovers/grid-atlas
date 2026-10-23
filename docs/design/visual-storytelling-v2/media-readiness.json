@@ -1,0 +1,136 @@
+{
+  "checked_on": "2026-10-23",
+  "source": {
+    "slug": "f1db",
+    "release": "v2026.17.0",
+    "artifact": "f1db-json-splitted.zip",
+    "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8"
+  },
+  "candidates": 5,
+  "approved_publication_assets": 0,
+  "subjects": [
+    {
+      "type": "driver",
+      "candidates": 3,
+      "approved": 0
+    },
+    {
+      "type": "constructor",
+      "candidates": 0,
+      "approved": 0
+    },
+    {
+      "type": "circuit",
+      "candidates": 2,
+      "approved": 0
+    },
+    {
+      "type": "race",
+      "candidates": 0,
+      "approved": 0
+    }
+  ],
+  "pending": [
+    {
+      "id": "ayrton-senna-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "ayrton-senna"
+      },
+      "kind": "portrait",
+      "blocking_fields": [
+        "attribution: required for publication",
+        "modifications: required for publication",
+        "content_sha256: ingested file checksum required",
+        "uk: independent alt text and caption required",
+        "en: independent alt text and caption required",
+        "delivery: choose exactly one local path or approved remote URL",
+        "review: independent human rights/identity review required"
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "juan-manuel-fangio"
+      },
+      "kind": "portrait",
+      "blocking_fields": [
+        "creator: required for publication",
+        "attribution: required for publication",
+        "modifications: required for publication",
+        "content_sha256: ingested file checksum required",
+        "uk: independent alt text and caption required",
+        "en: independent alt text and caption required",
+        "delivery: choose exactly one local path or approved remote URL",
+        "review: independent human rights/identity review required"
+      ]
+    },
+    {
+      "id": "lewis-hamilton-commons-pilot",
+      "subject": {
+        "type": "driver",
+        "id": "lewis-hamilton"
+      },
+      "kind": "portrait",
+      "blocking_fields": [
+        "attribution: required for publication",
+        "modifications: required for publication",
+        "content_sha256: ingested file checksum required",
+        "uk: independent alt text and caption required",
+        "en: independent alt text and caption required",
+        "delivery: choose exactly one local path or approved remote URL",
+        "review: independent human rights/identity review required"
+      ]
+    },
+    {
+      "id": "monaco-4-f1db-pilot",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "circuit-diagram",
+      "blocking_fields": [
+        "attribution: required for publication",
+        "modifications: required for publication",
+        "content_sha256: ingested file checksum required",
+        "uk: independent alt text and caption required",
+        "en: independent alt text and caption required",
+        "delivery: choose exactly one local path or approved remote URL",
+        "review: independent human rights/identity review required"
+      ]
+    },
+    {
+      "id": "monaco-6-f1db-pilot",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "circuit-diagram",
+      "blocking_fields": [
+        "attribution: required for publication",
+        "modifications: required for publication",
+        "content_sha256: ingested file checksum required",
+        "uk: independent alt text and caption required",
+        "en: independent alt text and caption required",
+        "delivery: choose exactly one local path or approved remote URL",
+        "review: independent human rights/identity review required"
+      ]
+    }
+  ],
+  "circuit_artwork": {
+    "source_attributed_layouts": 160,
+    "lane": "Separate pinned circuit artwork manifest; not photographic approval."
+  },
+  "boundaries": {
+    "automatic_approvals": false,
+    "downloads": false,
+    "remote_hotlinking": false,
+    "publication_changes": false
+  },
+  "limitations": [
+    "A valid metadata fingerprint does not prove a reviewer’s independence or legal rights.",
+    "Image decoding, subject identity, historical context and license conditions still need independent review.",
+    "Photographic candidates and the dedicated attributed circuit SVG collection are different approval lanes."
+  ]
+}

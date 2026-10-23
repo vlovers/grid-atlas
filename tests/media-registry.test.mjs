@@ -5,7 +5,7 @@ import { mkdtempSync, mkdirSync, readFileSync, rmSync, symlinkSync, writeFileSyn
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { assertSimpleSvg, auditPublicMedia, validateLocalFile, validatePilot } from '../scripts/validate-media-registry.mjs';
-import { mediaFingerprint, parseMediaRegistry, publicationProblems, selectMedia as select } from '../apps/web/src/components/media/registry.ts';
+import { mediaFingerprint, parseMediaRegistry, publicationProblems, selectMediaCollection, selectMedia as select } from '../apps/web/src/components/media/registry.ts';
 
 const asOf = '2026-10-20';
 const selectMedia = (assets, id, subject, raceId, origins = []) => select(assets, id, subject, raceId, origins, asOf);
@@ -181,4 +181,21 @@ test('public media must be registered and verified; withdrawal requires removing
   }
   rmSync(join(publicRoot, 'media/fixture.svg'));
   auditPublicMedia([asset], publicRoot);
+});
+
+
+test('subject galleries retain review, withdrawal, kind and exact-identity boundaries', () => {
+  const image=approved();
+  assert.deepEqual(selectMediaCollection([image],image.subject,asOf).map(a=>a.id),[image.id]);
+  assert.deepEqual(selectMediaCollection([image],{type:'constructor',id:image.subject.id},asOf),[]);
+  const illustration=approved();illustration.kind='car-illustration';illustration.review.payload_sha256=mediaFingerprint(illustration);
+  assert.deepEqual(selectMediaCollection([illustration],illustration.subject,asOf),[]);
+  const stale=approved();stale.caption.en='Changed without re-review';
+  assert.deepEqual(selectMediaCollection([stale],stale.subject,asOf),[]);
+  const withdrawn=approved();withdrawn.status='withdrawn';
+  assert.deepEqual(selectMediaCollection([withdrawn],withdrawn.subject,asOf),[]);
+  const car=approved();car.subject={type:'constructor',id:'fixture-constructor'};car.kind='car-illustration';car.review.payload_sha256=mediaFingerprint(car);
+  assert.equal(selectMediaCollection([car],car.subject,asOf).length,1);
+  const contour=approved();contour.subject={type:'circuit',id:'fixture-circuit'};contour.kind='circuit-diagram';contour.review.payload_sha256=mediaFingerprint(contour);
+  assert.deepEqual(selectMediaCollection([contour],contour.subject,asOf),[]);
 });

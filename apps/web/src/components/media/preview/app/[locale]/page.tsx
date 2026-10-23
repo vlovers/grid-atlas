@@ -1,7 +1,8 @@
+import { MediaCollection } from '../../../collection';
 import { CircuitDiagram, LicensedMedia } from '../../../licensed-media';
 import publication from '../../../publication.json';
 import type { MediaRegistry } from '../../../registry';
-import { syntheticAsset } from '../../fixtures';
+import { syntheticAsset, syntheticCollectionAsset } from '../../fixtures';
 
 export default async function MediaPreview({ params, searchParams }: {
   params: Promise<{ locale: string }>; searchParams: Promise<{ test?: string }>;
@@ -11,6 +12,7 @@ export default async function MediaPreview({ params, searchParams }: {
   const { test } = await searchParams;
   const synthetic = test && ['verified', 'missing', 'withdrawn', 'wrong-race'].includes(test) ? syntheticAsset(test) : null;
   const assets = (publication as MediaRegistry).assets;
+  const collectionFixture = test && ['gallery-verified','gallery-withdrawn','gallery-stale','gallery-car'].includes(test) ? syntheticCollectionAsset(test) : null;
   return <main>
     <header><a href={`/${uk ? 'en' : 'uk'}`}>{uk ? 'English' : 'Українська'}</a>
       <p className="eyebrow">GRID ATLAS / {uk ? 'МЕДІА · ЛОКАЛЬНИЙ ПЕРЕГЛЯД' : 'MEDIA · LOCAL PREVIEW'}</p>
@@ -18,7 +20,7 @@ export default async function MediaPreview({ params, searchParams }: {
       <p className="intro">{uk ? 'Місце для історичних зображень — з перевіреною особою чи об’єктом, авторством і правами на використання.' : 'A place for historical images, with checked identity, creator credit and reuse rights.'}</p>
       <p className="notice">{uk ? 'Жодного реального зображення ще не схвалено. Тут показано чесні резервні стани.' : 'No real image has been approved yet. These are honest fallback states.'}</p>
     </header>
-    {synthetic ? <section aria-label="Synthetic test fixture">
+    {collectionFixture ? <section aria-label="Synthetic collection fixture"><h2>SYNTHETIC TEST DATA — not historical imagery or a real approval</h2><MediaCollection assets={[collectionFixture]} subject={collectionFixture.subject} label="NON-HISTORICAL TEST FIXTURE" locale={locale} asOf="2026-10-20" /></section> : synthetic ? <section aria-label="Synthetic test fixture">
       <h2>SYNTHETIC TEST DATA — not historical media or a real approval</h2>
       <div className="single"><CircuitDiagram assets={[synthetic]} assetId={synthetic.id} circuitId="fixture-circuit"
         raceId={test === 'wrong-race' ? 'different-race' : 'fixture-race'} label="NON-GEOGRAPHIC TEST FIXTURE" locale={locale} asOf="2026-10-20" /></div>

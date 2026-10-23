@@ -166,3 +166,16 @@ export function selectMedia(assets: readonly MediaAsset[], id: string | undefine
   if (asset.kind === 'circuit-diagram' && (!raceId || !asset.layout?.race_ids.includes(raceId))) return null;
   return asset;
 }
+
+/** A circuit contour or a car illustration must never become a driver portrait. */
+export function subjectMediaKinds(subject: MediaSubject): readonly MediaAsset['kind'][] {
+  return subject.type === 'driver' ? ['photograph', 'portrait']
+    : subject.type === 'constructor' ? ['photograph', 'car-illustration'] : ['photograph'];
+}
+
+/** Bounded presentation still applies the same live rights and withdrawal gate. */
+export function selectMediaCollection(assets: readonly MediaAsset[], subject: MediaSubject,
+  asOf = new Date().toISOString().slice(0, 10)): MediaAsset[] {
+  const kinds = subjectMediaKinds(subject);
+  return assets.filter(asset => kinds.includes(asset.kind) && selectMedia(assets, asset.id, subject, undefined, [], asOf));
+}

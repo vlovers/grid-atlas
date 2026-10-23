@@ -92,3 +92,25 @@ test('withdrawn media and mismatched historical layouts never request the image'
     page.off('request', listener);
   }
 });
+
+
+for (const locale of ['uk','en'] as const) {
+  test(`${locale}: image collections preserve attribution, distinguish illustrations and revoke changed assets`, async ({page,previewURL})=>{
+    for (const variant of ['gallery-verified','gallery-car']) {
+      await page.goto(`${previewURL}/${locale}?test=${variant}`);
+      const collection=page.getByTestId('media-collection');
+      await expect(collection.locator('img')).toHaveCount(1);
+      await expect(collection).toContainText('Synthetic Fixture Creator');
+      await expect(collection.getByRole('link',{name:'Synthetic license fixture'})).toHaveAttribute('href','https://example.org/test-license');
+      await expect(collection.locator('figcaption')).toContainText(variant==='gallery-car'?(locale==='uk'?'Ілюстрація боліда':'Car illustration'):(locale==='uk'?'Портрет':'Portrait'));
+    }
+    for (const variant of ['gallery-withdrawn','gallery-stale']) {
+      const requests:string[]=[];const listener=(r:{url():string})=>{if(r.url().includes('/media/fixture.svg'))requests.push(r.url());};
+      page.on('request',listener);
+      await page.goto(`${previewURL}/${locale}?test=${variant}`);
+      await expect(page.getByTestId('media-collection').locator('img')).toHaveCount(0);
+      await expect(page.getByTestId('editorial-empty-media')).toBeVisible();
+      expect(requests).toEqual([]);page.off('request',listener);
+    }
+  });
+}
