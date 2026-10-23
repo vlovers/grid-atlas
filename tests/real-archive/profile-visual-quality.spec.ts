@@ -18,7 +18,9 @@ for (const locale of ['en', 'uk'] as const) {
       await expect(page.locator('html')).toHaveAttribute('lang', locale);
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `http://127.0.0.1:3351${route}`);
       for (const language of ['en', 'uk']) await expect(page.locator(`link[rel="alternate"][hreflang="${language}"]`)).toHaveAttribute('href', `http://127.0.0.1:3351/${language}/${kind}/${identity.id}`);
-      expect(await page.locator('meta[name="description"]').getAttribute('content')).toBeTruthy();
+      const description = await page.locator('meta[name="description"]').getAttribute('content');
+      expect(description).toBeTruthy();
+      if (kind === 'circuits') expect(description).toContain(locale === 'en' ? 'historical circuit layouts' : 'історичні конфігурації трас');
       if (kind !== 'circuits') {
         const seasons = (await (await request.get(`${api}/${kind}/${identity.id}/seasons`)).json()).data;
         const desc = await page.getByTestId('profile-record-graphic').locator('desc').textContent();

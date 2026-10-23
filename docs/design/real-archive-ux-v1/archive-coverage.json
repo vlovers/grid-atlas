@@ -1,0 +1,172 @@
+{
+  "release": "v2026.17.0",
+  "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+  "entities": {
+    "drivers": {
+      "checked": 917,
+      "without_recorded_races": 57
+    },
+    "constructors": {
+      "checked": 187,
+      "without_recorded_races": 1
+    },
+    "circuits": {
+      "checked": 78,
+      "without_recorded_races": 0
+    }
+  },
+  "rows": {
+    "drivers": 917,
+    "constructors": 187,
+    "circuits": 78,
+    "races": 1172,
+    "entrants": 830,
+    "seasons": 77,
+    "result_entries": 27665
+  },
+  "api_requests": 11504,
+  "web_profiles": 2364,
+  "web_pages": 2406,
+  "rendered_archive_links": 72984,
+  "failures": [],
+  "archive_result_rows_compared": 27665,
+  "archive_race_rows_compared": 1172,
+  "missing_state_responses": [
+    {
+      "path": "/uk/drivers/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/drivers/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/drivers/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/drivers/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/drivers/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/drivers/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/constructors/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/constructors/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/constructors/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/constructors/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/constructors/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/constructors/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/circuits/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/circuits/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/uk/circuits/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/circuits/not-a-valid-id",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/circuits/01",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    },
+    {
+      "path": "/en/circuits/999999",
+      "status": 404,
+      "missing_in_html": false,
+      "missing_in_stream": true
+    }
+  ],
+  "identity_field_coverage": {
+    "driver": {
+      "abbreviation": 917,
+      "date_of_birth": 917,
+      "date_of_death": 506,
+      "full_name": 917,
+      "nationality": 917,
+      "permanent_number": 28,
+      "place_of_birth": 917,
+      "second_nationality": 7
+    },
+    "constructor": {
+      "country": 187,
+      "full_name": 187
+    },
+    "circuit": {
+      "circuit_type": 78,
+      "country": 78,
+      "full_name": 78,
+      "place_name": 78
+    }
+  },
+  "passed": true,
+  "limits": [
+    "Archive consistency, not independent historical verification",
+    "No official standings, year-specific technical measurements or image rights inferred",
+    "HTTP rendering for every profile; interactive browser journeys are a separate suite"
+  ]
+}

@@ -30,6 +30,8 @@ presentation and navigation, not historical records or publication eligibility.
 - Circuit chronology uses one first/middle/latest visual journey instead of a
   second duplicate journey. Winner records, paginated race history, decade
   navigation, identity provenance and rights-gated empty media remain available.
+- Circuit catalogue and profile metadata now describe the available historical
+  layouts in EN/UK, replacing the obsolete claim that layouts are not represented.
 - Participation calendars have larger supporting text and keyboard targets.
   Existing gaps, shared drives, unknown observations and historical caveats remain.
 
@@ -86,7 +88,16 @@ text, forced colors and empty/high-degree profiles. Additional real identities a
 Hamilton, Ferrari, Monaco, Adderly Fong and FIRST. Existing SSR-without-JavaScript,
 metadata, licensing, pagination and circuit-asset checks are retained.
 
-Final executed check results are recorded in the PR. The original 18 before views
+Executed checks: lint, typecheck and production API/web build passed; **210 Node**
+and **364 Python** tests passed. The full production browser suite passed
+**484 cases** before the final metadata-copy correction; the focused UX/SEO/locale
+rerun after it passed **30 cases**. The complete real-archive suite passed
+**128 cases**, with all **8** new real-profile cases rerun after the copy correction.
+API/PostgreSQL integration: **42 passed, one existing skip**. Final CI results are
+recorded in the PR.
+The [exhaustive archive audit](archive-coverage.json) passed **11,504 API requests**,
+**2,406 web pages**, **72,984 rendered archive links** and comparison of all
+**27,665 imported result rows**. The original 18 before views
 and the first 18 after views each recorded zero overflow and zero browser errors.
 The first real-archive run passed all 128 cases. The new keyboard regression also
 caught the constructor archive focus defect against the earlier build; adding a
