@@ -7,57 +7,119 @@ import { pathToFileURL } from 'node:url';
 const MAX_BYTES = 40 * 1024 * 1024;
 const jpgSOF = new Set([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf]);
 
-/** Decode dimensions from the original file bytes; never trust an extension or HTTP Content-Type. */
-export function inspectImageBytes(buffer) {
-  if (!Buffer.isBuffer(buffer) || buffer.length < 16) throw Error('Truncated or unsupported image');
-  if (buffer.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))) {
-    if (buffer.length < 33 || buffer.toString('ascii',12,16) !== 'IHDR' || buffer.readUInt32BE(8) !== 13) throw Error('Invalid PNG IHDR');
-    const width=buffer.readUInt32BE(16), height=buffer.readUInt32BE(20);
-    if (!width || !height || ![0,2,3,4,6].includes(buffer[25])) throw Error('Invalid PNG dimensions or color type');
-    return { mime:'image/png',width,height };
+
+const MAX_PIXELS = 80_000_000;
+const PNG_SIGNATURE = Buffer.from([137,80,78,71,13,10,26,10]);
+function dimensions(width,height) {
+  if(!Number.isInteger(width)||!Number.isInteger(height)||width<1||height<1||width*height>MAX_PIXELS) throw Error('Invalid image dimensions or pixel limit exceeded');
+  return {width,height};
+}
+function crc32(bytes,start,end) {
+  let crc=0xffffffff;
+  for(let i=start;i<end;i++){
+    crc^=bytes[i];
+    for(let bit=0;bit<8;bit++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);
   }
-  if (buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) {
-    let i=2;
-    while(i < buffer.length) {
-      if(buffer[i] !== 0xff) throw Error('Invalid JPEG marker boundary');
-      while(buffer[i] === 0xff) i++;
-      if(i >= buffer.length) break;
-      const marker=buffer[i++];
-      if(marker === 0xd9 || marker === 0xda) break;
-      if(marker === 0x01 || (marker>=0xd0 && marker<=0xd7)) continue;
-      if(i+2 > buffer.length) break;
-      const size=buffer.readUInt16BE(i);
-      if(size<2 || i+size>buffer.length) throw Error('Truncated JPEG segment');
-      if(jpgSOF.has(marker)) {
-        if(size<7) throw Error('Invalid JPEG SOF');
-        const height=buffer.readUInt16BE(i+3),width=buffer.readUInt16BE(i+5);
-        if(!width || !height) throw Error('Invalid JPEG dimensions');
-        return {mime:'image/jpeg',width,height};
-      }
-      i+=size;
+  return (crc^0xffffffff)>>>0;
+}
+function inspectPng(bytes){
+  let pos=8,chunkCount=0,width,height,sawIHDR=false,sawIDAT=false,sawIEND=false;
+  while(pos<bytes.length){
+    if(bytes.length-pos<12)throw Error('Truncated PNG chunk');
+    const length=bytes.readUInt32BE(pos),end=pos+12+length;
+    if(length>MAX_BYTES||end>bytes.length)throw Error('Truncated or oversized PNG chunk');
+    const type=bytes.toString('ascii',pos+4,pos+8);
+    if(!/^[A-Za-z]{4}$/.test(type))throw Error('Invalid PNG chunk type');
+    if(crc32(bytes,pos+4,end-4)!==bytes.readUInt32BE(end-4))throw Error('PNG CRC mismatch');
+    if(++chunkCount>100000)throw Error('Too many PNG chunks');
+    if(!sawIHDR){
+      if(type!=='IHDR'||length!==13)throw Error('Invalid PNG IHDR');
+      width=bytes.readUInt32BE(pos+8);height=bytes.readUInt32BE(pos+12);
+      dimensions(width,height);
+      const depth=bytes[pos+16],color=bytes[pos+17];
+      const legal={0:[1,2,4,8,16],2:[8,16],3:[1,2,4,8],4:[8,16],6:[8,16]};
+      if(!legal[color]?.includes(depth)||bytes[pos+18]!==0||bytes[pos+19]!==0||![0,1].includes(bytes[pos+20]))throw Error('Invalid PNG IHDR encoding');
+      sawIHDR=true;
+    }else if(type==='IHDR')throw Error('Duplicate PNG IHDR');
+    if(type==='IDAT')sawIDAT=true;
+    if(type==='IEND'){
+      if(length!==0||!sawIDAT||end!==bytes.length)throw Error('Invalid PNG IEND or trailing data');
+      sawIEND=true;break;
     }
-    throw Error('JPEG has no valid SOF segment');
+    pos=end;
   }
-  throw Error('Only JPEG and PNG original files are currently supported');
+  if(!sawIEND)throw Error('PNG missing IEND');
+  return {mime:'image/png',width,height};
+}
+function inspectJpeg(bytes){
+  let pos=2,width,height,sawSOS=false,sawEOI=false,markerCount=0;
+  while(pos<bytes.length){
+    if(bytes[pos]!==0xff)throw Error('Invalid JPEG marker boundary');
+    while(bytes[pos]===0xff)pos++;
+    if(pos>=bytes.length)throw Error('Truncated JPEG marker');
+    const marker=bytes[pos++];
+    if(++markerCount>100000)throw Error('Too many JPEG markers');
+    if(marker===0xd9){sawEOI=true;break;}
+    if(marker===0x00)throw Error('Unexpected JPEG byte stuffing');
+    if(marker===0x01||(marker>=0xd0&&marker<=0xd7))continue;
+    if(pos+2>bytes.length)throw Error('Truncated JPEG segment length');
+    const size=bytes.readUInt16BE(pos);
+    if(size<2||pos+size>bytes.length)throw Error('Truncated JPEG segment');
+    if(jpgSOF.has(marker)){
+      if(size<8||width!==undefined)throw Error('Invalid or duplicate JPEG SOF');
+      height=bytes.readUInt16BE(pos+3);width=bytes.readUInt16BE(pos+5);dimensions(width,height);
+    }
+    if(marker===0xda){
+      if(width===undefined)throw Error('JPEG SOS precedes SOF');
+      sawSOS=true;pos+=size;
+      while(pos<bytes.length){
+        if(bytes[pos++]!==0xff)continue;
+        if(pos>=bytes.length)throw Error('Truncated JPEG scan');
+        const next=bytes[pos++];
+        if(next===0x00||(next>=0xd0&&next<=0xd7))continue;
+        if(next===0xd9){sawEOI=true;break;}
+        pos-=2;break;
+      }
+      if(sawEOI)break;
+      continue;
+    }
+    pos+=size;
+  }
+  if(width===undefined||!sawSOS||!sawEOI||pos!==bytes.length)throw Error('JPEG missing SOF, SOS or EOI or has trailing bytes');
+  return {mime:'image/jpeg',width,height};
+}
+/** Structural inspection only; never a full decode, malware scan or license approval. */
+export function inspectImageBytes(buffer) {
+  if(!Buffer.isBuffer(buffer)||buffer.length<16||buffer.length>MAX_BYTES)throw Error('Truncated or oversized image');
+  if(buffer.subarray(0,8).equals(PNG_SIGNATURE))return inspectPng(buffer);
+  if(buffer[0]===0xff&&buffer[1]===0xd8&&buffer[2]===0xff)return inspectJpeg(buffer);
+  throw Error('Only JPEG and PNG original files are supported');
 }
 
 export function inspectOriginal({filePath,researchId,staging,expectedSha256}) {
-  const entry=staging?.entries?.find(e=>e.id===researchId);
-  if(!entry || staging.lane!=='research_only' || staging.publication_allowed!==false) throw Error('Unknown research ID or invalid staging lane');
+  if(staging?.schema_version!==1||staging.lane!=='research_only'||staging.publication_allowed!==false||!Array.isArray(staging.entries))throw Error('Invalid research-only staging manifest');
+  const matches=staging.entries.filter(e=>e.id===researchId);
+  if(matches.length!==1)throw Error('Unknown or duplicate research ID');
+  const entry=matches[0];
+  if(entry.status!=='candidate'||entry.review!==null||entry.delivery?.local_path!==null||entry.delivery?.remote_url!==null)throw Error('Research entry must remain unpublished and unapproved');
   if(!['image/jpeg','image/png'].includes(entry.image?.mime)) throw Error('Staged image MIME is unsupported');
+  if(typeof filePath!=='string'||!filePath)throw Error('Missing original file path');
   const absolute=resolve(filePath);
   const stat=lstatSync(absolute);
   if(!stat.isFile() || stat.isSymbolicLink() || stat.size>MAX_BYTES || stat.size<16) throw Error('Original must be a regular file of 16 bytes to 40 MiB');
   const bytes=readFileSync(absolute);
+  if(bytes.length!==stat.size)throw Error('Original changed during inspection');
   const decoded=inspectImageBytes(bytes);
   if(decoded.mime!==entry.image.mime) throw Error('Original signature does not match staged MIME');
+  if(entry.image.width!==null&&entry.image.width!==decoded.width)throw Error('Original width does not match staged dimensions');
+  if(entry.image.height!==null&&entry.image.height!==decoded.height)throw Error('Original height does not match staged dimensions');
   const sha256=createHash('sha256').update(bytes).digest('hex');
-  if(expectedSha256 && (!/^[a-f0-9]{64}$/i.test(expectedSha256) || sha256!==expectedSha256.toLowerCase())) throw Error('Original SHA-256 does not match supplied expectation');
+  if(expectedSha256!==undefined && (!/^[a-f0-9]{64}$/i.test(expectedSha256) || sha256!==expectedSha256.toLowerCase())) throw Error('Original SHA-256 does not match supplied expectation');
   return {
     schema_version:1,kind:'local_original_inspection_not_rights_approval',
     research_id:researchId,source_file_page:entry.file_page_url,
     local_original:{sha256,bytes:bytes.length,mime:decoded.mime,width:decoded.width,height:decoded.height},
-    unresolved:{commons_revision:true,creator_license_chain:true,independent_human_review:true},
+    unresolved:{commons_revision:true,creator_license_chain:true,independent_human_review:true,full_image_decode:true},
     publication_allowed:false
   };
 }
