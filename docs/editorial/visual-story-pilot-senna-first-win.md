@@ -66,3 +66,14 @@ Do not add this story to public pages, media publication registry, or database. 
 - Formula 1, historical article about Senna's first win: https://www.formula1.com/en/latest/article/he-obliterated-the-opposition-remembering-sennas-first-f1-win.1nwtFllIepudRwA7iesUaj
 
 The race-result page identifies Senna as the winner for Lotus Renault, car 12, with 67 laps and 2:00:28.006. The classification lists Alboreto second and Tambay third. Treat these as source-reported facts requiring editorial review and pinned-import reconciliation. Both references belong to Formula 1 and are not independent publisher groups. The Formula 1 URL race ID is not a Grid Atlas race ID. No media rights are conveyed by these URLs.
+
+## Existing editorial dossier reuse — verified repository references
+
+The current research release already contains a Senna claim for this exact event. Reuse it instead of creating a competing content record:
+
+- `docs/editorial/pilots/senna/en.dossier.json`: claim `ayrton-senna-portugal-1985-p1`, evidence source `senna-portugal-1985-result`, locator `21 April 1985 result, position 1 Senna / Lotus Renault`.
+- `docs/editorial/pilots/senna/uk.dossier.json`: check the paired claim and translation against the same event before editing either dossier.
+- `docs/editorial/releases/v1/manifest.json`: `ayrton-senna` already points to the existing EN/UK dossiers and review sidecars; release status is `research_only`.
+- `docs/editorial/APPROVED_RELEASE_PIPELINE.md`: existing revision-bound human approval, export and explicit operator publication remain mandatory.
+
+**Deduplication decision:** the visual story is a presentation of the existing researched event, not a new independently approved biography or new CMS entity. The added Formula 1 result link is already present in the English dossier; do not duplicate it there. The supplementary retrospective is a candidate research source, not an approved replacement for the dossier's evidence. The published story must read approved claim text through the existing release path once a human reviewer approves the exact revision.
