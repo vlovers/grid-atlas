@@ -23,6 +23,8 @@ test('missing original blocks publication rather than approving research', () =>
 test('missing Commons evidence blocks an otherwise valid research ID', () => {
   const args = inputs();
   args.manifest.entries[0].research_id = 'research-ferrari-f2004-2004';
+  // Missing evidence is a supported research state even though the checked-in set now covers all five.
+  args.sourceEvidence.entries = args.sourceEvidence.entries.filter(item => item.research_id !== 'research-ferrari-f2004-2004');
   const report = inspectOriginalBatch(args);
   assert.equal(report.blocked, 1);
   assert.match(report.results[0].reason, /No pinned Commons original evidence/);
