@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { inspectOriginal } from './inspect-media-original.mjs';
+import { auditCommonsEvidence } from './audit-commons-evidence.mjs';
 import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
@@ -27,7 +28,9 @@ export function auditLocalCommonsOriginals({
       observations.publication_allowed !== false || !Array.isArray(observations.entries)) {
     throw Error('Invalid research-only manifests');
   }
-  const byId = new Map(), observed = new Map();
+  const sourceAudit = auditCommonsEvidence(staging, sourceEvidence);
+  if (!sourceAudit.ok) throw Error('Invalid Commons staging or evidence: ' + sourceAudit.errors.join('; '));
+  const byId = new Map(), observed = new Map(), observedHashes = new Set();
   for (const source of sourceEvidence.entries) {
     if (!/^research-[a-z0-9-]+$/.test(source?.research_id ?? '') ||
         byId.has(source.research_id) || !hex40.test(source.sha1 ?? '') ||
@@ -42,10 +45,12 @@ export function auditLocalCommonsOriginals({
     const source = byId.get(receipt?.research_id);
     if (!source || observed.has(receipt.research_id) ||
         !hex64.test(receipt.sha256 ?? '') ||
-        receipt.sha1 !== source.sha1 || receipt.bytes !== source.bytes) {
+        receipt.sha1 !== source.sha1 || receipt.bytes !== source.bytes ||
+        observedHashes.has(receipt.sha256)) {
       throw Error('Invalid, duplicate or unpinned observed original SHA-256');
     }
     observed.set(receipt.research_id, receipt);
+    observedHashes.add(receipt.sha256);
   }
   const ids = new Set(), results = [];
   for (const entry of staging.entries) {
