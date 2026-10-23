@@ -50,11 +50,12 @@ test('rejects invalid SHA-1 and source license drift', () => {
   assert.equal(auditCommonsEvidence(...args2).ok, false);
 });
 
-test('missing original evidence is reported without promoting the candidate', () => {
+test('missing original evidence blocks the audit without promoting the candidate', () => {
   const args = fixtures();
   args[1].entries.pop();
   const report = auditCommonsEvidence(...args);
-  assert.equal(report.ok, true);
+  assert.equal(report.ok, false);
+  assert.match(report.errors.join('; '), /research-silverstone-2019: missing pinned Commons source evidence/);
   assert.deepEqual(report.missing_source_evidence, ['research-silverstone-2019']);
   assert.equal(report.publication_allowed, false);
 });
