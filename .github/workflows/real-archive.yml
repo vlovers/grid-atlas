@@ -21,6 +21,9 @@ on:
       - 'tests/test_bulk_driver_cohort.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/audit-cross-era-identities.py'
+      - 'tests/test_audit_cross_era_identities.py'
+      - 'docs/media/cross-era-staging.json'
       - 'docs/media/pilot-identities.json'
       - '.github/workflows/real-archive.yml'
   push:
@@ -40,6 +43,9 @@ on:
       - 'scripts/audit-encyclopedia.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/audit-cross-era-identities.py'
+      - 'tests/test_audit_cross_era_identities.py'
+      - 'docs/media/cross-era-staging.json'
       - 'docs/media/pilot-identities.json'
       - '.github/workflows/real-archive.yml'
   workflow_dispatch:
@@ -80,6 +86,20 @@ jobs:
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
       - name: Verify media subject and historical circuit-layout references
         run: python3 scripts/verify-media-identities.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt
+      - name: Audit cross-era media identities against exact F1DB source rows
+        run: |
+          python3 -m unittest discover -s tests -p 'test_audit_cross_era_identities.py' -v
+          python3 scripts/audit-cross-era-identities.py \
+            --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
+            --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
+            --output /tmp/grid-atlas-cross-era-identities.json
+      - name: Upload unpublished identity audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-cross-era-identity-audit
+          path: /tmp/grid-atlas-cross-era-identities.json
+          retention-days: 7
+          if-no-files-found: error
       - name: Import genuine pinned F1DB release twice into ephemeral PostgreSQL
         run: |
           bash scripts/import-f1db.sh /tmp/grid-atlas-f1db/f1db-json-splitted.zip /tmp/grid-atlas-f1db/checksums_sha256.txt
