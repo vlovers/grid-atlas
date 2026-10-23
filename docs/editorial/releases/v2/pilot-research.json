@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "status": "source_located_research_unapproved",
+  "as_of": "2026-10-22",
+  "disclaimer": "Original EN/UK pilot narrative based on explicitly located sources. Research evidence only; not independent human approval, not approved for publication.",
+  "items": [
+    {
+      "subject_id": "constructor-ferrari",
+      "headline": {
+        "en": "Ferrari: the championship begins without Ferrari",
+        "uk": "Ferrari: чемпіонат починається без Ferrari"
+      },
+      "narrative": {
+        "en": "The first Formula 1 World Championship began at Silverstone without Ferrari. The Scuderia entered at Monaco, where Alberto Ascari finished second. That distinction—between the championship's first race and Ferrari's first entry—is essential to telling the team's story accurately.",
+        "uk": "Перший чемпіонат світу Формули-1 розпочався в Сільверстоуні без Ferrari. Скудерія дебютувала в Монако, де Альберто Аскарі фінішував другим. Для історії команди важливо розрізняти першу гонку чемпіонату та перший старт Ferrari."
+      },
+      "claims": [
+        {
+          "id": "ferrari-1950-opening",
+          "text": {
+            "en": "The 1950 championship began at Silverstone; Ferrari did not enter that opening race.",
+            "uk": "Чемпіонат 1950 року розпочався в Сільверстоуні; Ferrari не брала участі у стартовій гонці."
+          },
+          "evidence": {
+            "url": "https://www.ferrari.com/en-CL/history/moments/1950/debut-in-f1/more",
+            "locator": "Paragraph beginning 'The 1950 season began'",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "ferrari-debut",
+          "text": {
+            "en": "Ferrari made its championship Formula 1 debut at Monaco on 21 May 1950.",
+            "uk": "Ferrari дебютувала в чемпіонаті Формули-1 у Монако 21 травня 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.ferrari.com/en-CL/history/moments/1950/debut-in-f1/more",
+            "locator": "Paragraph beginning 'Enzo Ferrari decided'",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "ferrari-ascari",
+          "text": {
+            "en": "Alberto Ascari finished second in the 1950 Monaco Grand Prix driving a Ferrari.",
+            "uk": "Альберто Аскарі фінішував другим у Гран-прі Монако 1950 року за кермом Ferrari."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1950/races/95/monaco/race-result?sub_id=undefined",
+            "locator": "Race Result table, Ascari row",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        }
+      ],
+      "review": {
+        "state": "pending_independent_human_review",
+        "media": "none",
+        "publication": false
+      }
+    },
+    {
+      "subject_id": "constructor-mclaren",
+      "headline": {
+        "en": "McLaren: a beginning in Monaco",
+        "uk": "McLaren: початок у Монако"
+      },
+      "narrative": {
+        "en": "McLaren's Formula 1 history begins with a car built under Bruce McLaren's name. Its first World Championship entry came at Monaco in 1966; the first victory followed at Spa in 1968. Between those milestones lies a story of an entrant becoming a lasting constructor.",
+        "uk": "Історія McLaren у Формулі-1 починається з автомобіля під ім’ям Брюса Макларена. Перший старт у чемпіонаті світу відбувся в Монако 1966 року, а перша перемога — у Спа 1968-го. Між цими подіями — історія становлення команди-конструктора."
+      },
+      "claims": [
+        {
+          "id": "mclaren-debut",
+          "text": {
+            "en": "McLaren debuted in the Formula 1 World Championship at Monaco on 22 May 1966.",
+            "uk": "McLaren дебютувала в чемпіонаті світу Формули-1 у Монако 22 травня 1966 року."
+          },
+          "evidence": {
+            "url": "https://www.mclaren.com/racing/heritage/the-journey-to-1000/",
+            "locator": "Paragraph beginning 'On 22 May 1966'",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "mclaren-car",
+          "text": {
+            "en": "The debut chassis was the McLaren M2B.",
+            "uk": "Дебютним шасі McLaren було M2B."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/latest/article/mclaren-50-facts-stats-stand-out-moments.3DAHLmd7S6qfh3AxuDupc6.3DAHLmd7S6qfh3AxuDupc6",
+            "locator": "Debut race: 1966 Monaco Grand Prix",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "mclaren-first-win",
+          "text": {
+            "en": "Bruce McLaren won the 1968 Belgian Grand Prix in a McLaren, the team's first championship Grand Prix win.",
+            "uk": "Брюс Макларен виграв Гран-прі Бельгії 1968 року на McLaren — першу перемогу команди в Гран-прі чемпіонату."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/latest/article/mclaren-50-facts-stats-stand-out-moments.3DAHLmd7S6qfh3AxuDupc6.3DAHLmd7S6qfh3AxuDupc6",
+            "locator": "Maiden win: 1968 Belgian Grand Prix",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        }
+      ],
+      "review": {
+        "state": "pending_independent_human_review",
+        "media": "none",
+        "publication": false
+      }
+    },
+    {
+      "subject_id": "circuit-monaco",
+      "headline": {
+        "en": "Monaco: the city as circuit",
+        "uk": "Монако: місто як траса"
+      },
+      "narrative": {
+        "en": "Monaco's racing history predates the Formula 1 World Championship. Its first Grand Prix was held in 1929, while its first World Championship event came in 1950. The layout and event belong to different historical timelines and should not be reduced to a single modern track statistic.",
+        "uk": "Гоночна історія Монако почалася ще до чемпіонату світу Формули-1. Перший Гран-прі відбувся 1929 року, а перший етап чемпіонату світу — 1950-го. Історію події та історію конфігурації траси потрібно розглядати окремо, не зводячи їх до сучасних показників."
+      },
+      "claims": [
+        {
+          "id": "monaco-first-event",
+          "text": {
+            "en": "The first Monaco Grand Prix was held in 1929.",
+            "uk": "Перший Гран-прі Монако відбувся 1929 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/information/monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ",
+            "locator": "When was its first Grand Prix?",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "monaco-first-championship",
+          "text": {
+            "en": "Monaco hosted a Formula 1 World Championship Grand Prix in 1950.",
+            "uk": "Монако приймало етап чемпіонату світу Формули-1 у 1950 році."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1950/races/95/monaco/race-result?sub_id=undefined",
+            "locator": "1950 Monaco Grand Prix race result heading",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "monaco-1950-winner",
+          "text": {
+            "en": "Juan Manuel Fangio won the 1950 Monaco Grand Prix.",
+            "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Монако 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1950/races/95/monaco/race-result?sub_id=undefined",
+            "locator": "Race Result table, first row",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        }
+      ],
+      "review": {
+        "state": "pending_independent_human_review",
+        "media": "none",
+        "publication": false
+      }
+    },
+    {
+      "subject_id": "circuit-silverstone",
+      "headline": {
+        "en": "Silverstone: where the championship started",
+        "uk": "Сільверстоун: де почався чемпіонат"
+      },
+      "narrative": {
+        "en": "Silverstone hosted the opening race of the Formula 1 World Championship on 13 May 1950. The first layout was not today's circuit: Woodcote was the opening corner. Studying Silverstone means following both the history of the championship and the evolution of the track.",
+        "uk": "13 травня 1950 року Сільверстоун прийняв першу гонку чемпіонату світу Формули-1. Тодішня конфігурація відрізнялася від сучасної: першим поворотом був Woodcote. Історія Сільверстоуна — це водночас історія чемпіонату та змін самої траси."
+      },
+      "claims": [
+        {
+          "id": "silverstone-inaugural",
+          "text": {
+            "en": "The first Formula 1 World Championship race took place at Silverstone on 13 May 1950.",
+            "uk": "Перша гонка чемпіонату світу Формули-1 відбулася в Сільверстоуні 13 травня 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/latest/article/10-fascinating-facts-about-the-very-first-f1-grand-prix-held-on-this-day-70.14iQuQ4N2IbV93EZj4Ruuj",
+            "locator": "Article introduction and section 1",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "silverstone-woodcote",
+          "text": {
+            "en": "Woodcote was the first corner on the 1950 Silverstone championship layout.",
+            "uk": "Woodcote був першим поворотом конфігурації Сільверстоуна під час гонки чемпіонату 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/latest/article/10-fascinating-facts-about-the-very-first-f1-race-held-at-silverstone-on.31fH6fHiwjnE5eFpPERxwd",
+            "locator": "Section 2, Woodcote was the first corner",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        }
+      ],
+      "review": {
+        "state": "pending_independent_human_review",
+        "media": "none",
+        "publication": false
+      }
+    },
+    {
+      "subject_id": "season-1988",
+      "headline": {
+        "en": "1988: a title decided beyond raw points",
+        "uk": "1988: титул, який не пояснити сумою очок"
+      },
+      "narrative": {
+        "en": "The 1988 championship standings list Ayrton Senna first on 90 points and Alain Prost second on 87. Yet understanding the rivalry requires more than reading a final table: the era's dropped-score rules must be kept separate from the raw points accumulated across races. The official race archive records 16 Grands Prix.",
+        "uk": "В офіційній таблиці чемпіонату 1988 року Айртон Сенна посідає перше місце з 90 очками, а Ален Прост — друге з 87. Але історію їхнього суперництва не пояснити однією таблицею: правила врахування найкращих результатів потрібно відокремлювати від суми очок за всі гонки. Архів сезону містить 16 Гран-прі."
+      },
+      "claims": [
+        {
+          "id": "1988-official-standing",
+          "text": {
+            "en": "The official 1988 drivers' standings list Ayrton Senna first with 90 points and Alain Prost second with 87.",
+            "uk": "В офіційній таблиці пілотів 1988 року Айртон Сенна перший із 90 очками, Ален Прост другий із 87."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1988/drivers",
+            "locator": "Drivers standings rows 1 and 2",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "1988-races",
+          "text": {
+            "en": "The Formula 1 results archive lists 16 championship races in 1988.",
+            "uk": "Архів результатів Формули-1 містить 16 гонок чемпіонату 1988 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1988/races",
+            "locator": "1988 Race Results, Brazil through Australia",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "1988-monaco",
+          "text": {
+            "en": "Alain Prost won the 1988 Monaco Grand Prix.",
+            "uk": "Ален Прост виграв Гран-прі Монако 1988 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1988/races",
+            "locator": "Monaco, 15 May row",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        },
+        {
+          "id": "1988-japan",
+          "text": {
+            "en": "Ayrton Senna won the 1988 Japanese Grand Prix.",
+            "uk": "Айртон Сенна виграв Гран-прі Японії 1988 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1988/races",
+            "locator": "Japan, 30 October row",
+            "accessed": "2026-10-22",
+            "kind": "source_lead_verified_in_research",
+            "independence_note": "Publisher source; corroborate claims independently where applicable"
+          }
+        }
+      ],
+      "review": {
+        "state": "pending_independent_human_review",
+        "media": "none",
+        "publication": false
+      }
+    }
+  ]
+}

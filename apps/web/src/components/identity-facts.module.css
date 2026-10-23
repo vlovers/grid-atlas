@@ -1,4 +1,4 @@
-.identity { margin-block: 2.5rem; padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--line, #46505c); border-radius: 1rem; }
+.identity { margin-block: 2.5rem; padding-block: 2rem; border-block: 1px solid var(--line); }
 .identity header p { font-size: .75rem; letter-spacing: .12em; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.5rem; margin-block: 1.5rem; }
 .facts div { min-width: 0; }

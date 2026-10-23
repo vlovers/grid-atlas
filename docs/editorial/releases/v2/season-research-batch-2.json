@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "status": "source_located_season_research_unapproved",
+  "as_of": "2026-10-22",
+  "items": [
+    {
+      "subject_id": "season-1950",
+      "title": {
+        "en": "1950: the championship in its own numbers",
+        "uk": "1950: чемпіонат у цифрах своєї епохи"
+      },
+      "lead": {
+        "en": "Nino Farina led the final 1950 drivers' standings with 30 points, ahead of Juan Manuel Fangio on 27. The 3-point gap belongs to the official championship classification; it should not be presented as a complete account of the season.",
+        "uk": "Ніно Фаріна очолив підсумкову таблицю пілотів 1950 року з 30 очками, випередивши Хуан-Мануель Фанхіо з 27. Різниця у 3 очка стосується офіційної класифікації й не замінює історії всього сезону."
+      },
+      "claims": [
+        {
+          "id": "1950-standings-top-two",
+          "type": "official_driver_classification",
+          "text": {
+            "en": "The official 1950 standings list Nino Farina first (30) and Juan Manuel Fangio second (27).",
+            "uk": "Офіційна таблиця 1950 року містить Ніно Фаріна на першому місці (30) та Хуан-Мануель Фанхіо на другому (27)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1950/drivers",
+            "locator": "Drivers' Standings table, positions 1 and 2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "1950-great-britain-winner",
+          "type": "race_result",
+          "text": {
+            "en": "Nino Farina won the 1950 Great Britain Grand Prix.",
+            "uk": "Ніно Фаріна виграв Гран-прі Велика Британія 1950 року."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1950/races",
+            "locator": "Great Britain 13 May winner",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "title": {
+            "en": "The championship result",
+            "uk": "Підсумок чемпіонату"
+          },
+          "body": {
+            "en": "The official 1950 drivers' classification places Nino Farina ahead of Juan Manuel Fangio. This result is the starting point for a source-led account, not evidence for unverified claims about the drivers' intentions or the technical causes of individual race outcomes.",
+            "uk": "Офіційна класифікація пілотів 1950 року ставить Ніно Фаріна вище за Хуан-Мануель Фанхіо. Цей результат є відправною точкою дослідження за джерелами, а не доказом неперевірених тверджень про наміри пілотів чи технічні причини результатів окремих гонок."
+          },
+          "claim_ids": [
+            "1950-standings-top-two"
+          ]
+        },
+        {
+          "title": {
+            "en": "A race in focus: Great Britain",
+            "uk": "Гонка у фокусі: Велика Британія"
+          },
+          "body": {
+            "en": "The official archive lists Nino Farina as the winner of the 1950 Great Britain Grand Prix. The finished chapter must reconstruct the race from the event's own classification and contemporary evidence before explaining its wider significance.",
+            "uk": "Офіційний архів називає Ніно Фаріна переможцем Гран-прі Велика Британія 1950 року. Повний розділ має відтворити події за протоколом конкретної гонки та свідченнями того часу, перш ніж оцінювати її значення."
+          },
+          "claim_ids": [
+            "1950-great-britain-winner"
+          ]
+        }
+      ],
+      "review_state": "unapproved_research",
+      "published": false
+    },
+    {
+      "subject_id": "season-1961",
+      "title": {
+        "en": "1961: the championship in its own numbers",
+        "uk": "1961: чемпіонат у цифрах своєї епохи"
+      },
+      "lead": {
+        "en": "Phil Hill led the final 1961 drivers' standings with 34 points, ahead of Wolfgang von Trips on 33. The 1-point gap belongs to the official championship classification; it should not be presented as a complete account of the season.",
+        "uk": "Філ Гілл очолив підсумкову таблицю пілотів 1961 року з 34 очками, випередивши Вольфганг фон Тріпс з 33. Різниця у 1 очка стосується офіційної класифікації й не замінює історії всього сезону."
+      },
+      "claims": [
+        {
+          "id": "1961-standings-top-two",
+          "type": "official_driver_classification",
+          "text": {
+            "en": "The official 1961 standings list Phil Hill first (34) and Wolfgang von Trips second (33).",
+            "uk": "Офіційна таблиця 1961 року містить Філ Гілл на першому місці (34) та Вольфганг фон Тріпс на другому (33)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1961/drivers",
+            "locator": "Drivers' Standings table, positions 1 and 2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "1961-italy-winner",
+          "type": "race_result",
+          "text": {
+            "en": "Phil Hill won the 1961 Italy Grand Prix.",
+            "uk": "Філ Гілл виграв Гран-прі Італія 1961 року."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1961/races",
+            "locator": "Italy 10 Sep winner",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "title": {
+            "en": "The championship result",
+            "uk": "Підсумок чемпіонату"
+          },
+          "body": {
+            "en": "The official 1961 drivers' classification places Phil Hill ahead of Wolfgang von Trips. This result is the starting point for a source-led account, not evidence for unverified claims about the drivers' intentions or the technical causes of individual race outcomes.",
+            "uk": "Офіційна класифікація пілотів 1961 року ставить Філ Гілл вище за Вольфганг фон Тріпс. Цей результат є відправною точкою дослідження за джерелами, а не доказом неперевірених тверджень про наміри пілотів чи технічні причини результатів окремих гонок."
+          },
+          "claim_ids": [
+            "1961-standings-top-two"
+          ]
+        },
+        {
+          "title": {
+            "en": "A race in focus: Italy",
+            "uk": "Гонка у фокусі: Італія"
+          },
+          "body": {
+            "en": "The official archive lists Phil Hill as the winner of the 1961 Italy Grand Prix. The finished chapter must reconstruct the race from the event's own classification and contemporary evidence before explaining its wider significance.",
+            "uk": "Офіційний архів називає Філ Гілл переможцем Гран-прі Італія 1961 року. Повний розділ має відтворити події за протоколом конкретної гонки та свідченнями того часу, перш ніж оцінювати її значення."
+          },
+          "claim_ids": [
+            "1961-italy-winner"
+          ]
+        }
+      ],
+      "review_state": "unapproved_research",
+      "published": false
+    },
+    {
+      "subject_id": "season-1984",
+      "title": {
+        "en": "1984: the championship in its own numbers",
+        "uk": "1984: чемпіонат у цифрах своєї епохи"
+      },
+      "lead": {
+        "en": "Niki Lauda led the final 1984 drivers' standings with 72 points, ahead of Alain Prost on 71.5. The 0.5-point gap belongs to the official championship classification; it should not be presented as a complete account of the season.",
+        "uk": "Нікі Лауда очолив підсумкову таблицю пілотів 1984 року з 72 очками, випередивши Ален Прост з 71,5. Різниця у 0,5 очка стосується офіційної класифікації й не замінює історії всього сезону."
+      },
+      "claims": [
+        {
+          "id": "1984-standings-top-two",
+          "type": "official_driver_classification",
+          "text": {
+            "en": "The official 1984 standings list Niki Lauda first (72) and Alain Prost second (71.5).",
+            "uk": "Офіційна таблиця 1984 року містить Нікі Лауда на першому місці (72) та Ален Прост на другому (71,5)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1984/drivers",
+            "locator": "Drivers' Standings table, positions 1 and 2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "1984-portugal-winner",
+          "type": "race_result",
+          "text": {
+            "en": "Alain Prost won the 1984 Portugal Grand Prix.",
+            "uk": "Ален Прост виграв Гран-прі Португалія 1984 року."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1984/races",
+            "locator": "Portugal 21 Oct winner",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "title": {
+            "en": "The championship result",
+            "uk": "Підсумок чемпіонату"
+          },
+          "body": {
+            "en": "The official 1984 drivers' classification places Niki Lauda ahead of Alain Prost. This result is the starting point for a source-led account, not evidence for unverified claims about the drivers' intentions or the technical causes of individual race outcomes.",
+            "uk": "Офіційна класифікація пілотів 1984 року ставить Нікі Лауда вище за Ален Прост. Цей результат є відправною точкою дослідження за джерелами, а не доказом неперевірених тверджень про наміри пілотів чи технічні причини результатів окремих гонок."
+          },
+          "claim_ids": [
+            "1984-standings-top-two"
+          ]
+        },
+        {
+          "title": {
+            "en": "A race in focus: Portugal",
+            "uk": "Гонка у фокусі: Португалія"
+          },
+          "body": {
+            "en": "The official archive lists Alain Prost as the winner of the 1984 Portugal Grand Prix. The finished chapter must reconstruct the race from the event's own classification and contemporary evidence before explaining its wider significance.",
+            "uk": "Офіційний архів називає Ален Прост переможцем Гран-прі Португалія 1984 року. Повний розділ має відтворити події за протоколом конкретної гонки та свідченнями того часу, перш ніж оцінювати її значення."
+          },
+          "claim_ids": [
+            "1984-portugal-winner"
+          ]
+        }
+      ],
+      "review_state": "unapproved_research",
+      "published": false
+    },
+    {
+      "subject_id": "season-1994",
+      "title": {
+        "en": "1994: the championship in its own numbers",
+        "uk": "1994: чемпіонат у цифрах своєї епохи"
+      },
+      "lead": {
+        "en": "Michael Schumacher led the final 1994 drivers' standings with 92 points, ahead of Damon Hill on 91. The 1-point gap belongs to the official championship classification; it should not be presented as a complete account of the season.",
+        "uk": "Міхаель Шумахер очолив підсумкову таблицю пілотів 1994 року з 92 очками, випередивши Деймон Гілл з 91. Різниця у 1 очка стосується офіційної класифікації й не замінює історії всього сезону."
+      },
+      "claims": [
+        {
+          "id": "1994-standings-top-two",
+          "type": "official_driver_classification",
+          "text": {
+            "en": "The official 1994 standings list Michael Schumacher first (92) and Damon Hill second (91).",
+            "uk": "Офіційна таблиця 1994 року містить Міхаель Шумахер на першому місці (92) та Деймон Гілл на другому (91)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/1994/drivers",
+            "locator": "Drivers' Standings table, positions 1 and 2",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "title": {
+            "en": "The championship result",
+            "uk": "Підсумок чемпіонату"
+          },
+          "body": {
+            "en": "The official 1994 drivers' classification places Michael Schumacher ahead of Damon Hill. This result is the starting point for a source-led account, not evidence for unverified claims about the drivers' intentions or the technical causes of individual race outcomes.",
+            "uk": "Офіційна класифікація пілотів 1994 року ставить Міхаель Шумахер вище за Деймон Гілл. Цей результат є відправною точкою дослідження за джерелами, а не доказом неперевірених тверджень про наміри пілотів чи технічні причини результатів окремих гонок."
+          },
+          "claim_ids": [
+            "1994-standings-top-two"
+          ]
+        }
+      ],
+      "review_state": "unapproved_research",
+      "published": false
+    },
+    {
+      "subject_id": "season-2000",
+      "title": {
+        "en": "2000: the championship in its own numbers",
+        "uk": "2000: чемпіонат у цифрах своєї епохи"
+      },
+      "lead": {
+        "en": "Michael Schumacher led the final 2000 drivers' standings with 108 points, ahead of Mika Hakkinen on 89. The 19-point gap belongs to the official championship classification; it should not be presented as a complete account of the season.",
+        "uk": "Міхаель Шумахер очолив підсумкову таблицю пілотів 2000 року з 108 очками, випередивши Міка Гаккінен з 89. Різниця у 19 очка стосується офіційної класифікації й не замінює історії всього сезону."
+      },
+      "claims": [
+        {
+          "id": "2000-standings-top-two",
+          "type": "official_driver_classification",
+          "text": {
+            "en": "The official 2000 standings list Michael Schumacher first (108) and Mika Hakkinen second (89).",
+            "uk": "Офіційна таблиця 2000 року містить Міхаель Шумахер на першому місці (108) та Міка Гаккінен на другому (89)."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/2000/drivers",
+            "locator": "Drivers' Standings table, positions 1 and 2",
+            "accessed_on": "2026-10-22"
+          }
+        },
+        {
+          "id": "2000-japan-winner",
+          "type": "race_result",
+          "text": {
+            "en": "Michael Schumacher won the 2000 Japan Grand Prix.",
+            "uk": "Міхаель Шумахер виграв Гран-прі Японія 2000 року."
+          },
+          "source": {
+            "url": "https://www.formula1.com/en/results/2000/races",
+            "locator": "Japan 08 Oct winner",
+            "accessed_on": "2026-10-22"
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "title": {
+            "en": "The championship result",
+            "uk": "Підсумок чемпіонату"
+          },
+          "body": {
+            "en": "The official 2000 drivers' classification places Michael Schumacher ahead of Mika Hakkinen. This result is the starting point for a source-led account, not evidence for unverified claims about the drivers' intentions or the technical causes of individual race outcomes.",
+            "uk": "Офіційна класифікація пілотів 2000 року ставить Міхаель Шумахер вище за Міка Гаккінен. Цей результат є відправною точкою дослідження за джерелами, а не доказом неперевірених тверджень про наміри пілотів чи технічні причини результатів окремих гонок."
+          },
+          "claim_ids": [
+            "2000-standings-top-two"
+          ]
+        },
+        {
+          "title": {
+            "en": "A race in focus: Japan",
+            "uk": "Гонка у фокусі: Японія"
+          },
+          "body": {
+            "en": "The official archive lists Michael Schumacher as the winner of the 2000 Japan Grand Prix. The finished chapter must reconstruct the race from the event's own classification and contemporary evidence before explaining its wider significance.",
+            "uk": "Офіційний архів називає Міхаель Шумахер переможцем Гран-прі Японія 2000 року. Повний розділ має відтворити події за протоколом конкретної гонки та свідченнями того часу, перш ніж оцінювати її значення."
+          },
+          "claim_ids": [
+            "2000-japan-winner"
+          ]
+        }
+      ],
+      "review_state": "unapproved_research",
+      "published": false
+    }
+  ],
+  "warning": "Five sourced season openings and bounded race-result chapters; no independent human review or canonical F1DB reconciliation."
+}

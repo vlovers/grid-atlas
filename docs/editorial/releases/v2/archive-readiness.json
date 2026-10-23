@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-22",
+  "baseline": "F1DB v2026.17.0 measured exhaustive import",
+  "baseline_doc": "docs/encyclopedia-coverage.md",
+  "warning": "This matrix reports measured aggregate fields and explicit known gaps, not per-record missingness.",
+  "rows": [
+    {
+      "entity": "drivers",
+      "field": "identity",
+      "value": "917/917",
+      "kind": "measured",
+      "interpretation": "F1DB identity fields: full name, code, birth date, birthplace and nationality"
+    },
+    {
+      "entity": "drivers",
+      "field": "race_result_evidence",
+      "value": "860/917",
+      "kind": "measured",
+      "interpretation": "57 drivers have no imported race-result evidence; does not prove nonparticipation"
+    },
+    {
+      "entity": "drivers",
+      "field": "death_date",
+      "value": "506/917",
+      "kind": "measured",
+      "interpretation": "Missing death date is unknown, not proof of being alive"
+    },
+    {
+      "entity": "drivers",
+      "field": "permanent_number",
+      "value": "28/917",
+      "kind": "measured",
+      "interpretation": "Identity number does not establish race-specific number"
+    },
+    {
+      "entity": "drivers",
+      "field": "second_nationality",
+      "value": "7/917",
+      "kind": "measured",
+      "interpretation": "Optional source field; missing does not mean one nationality"
+    },
+    {
+      "entity": "constructors",
+      "field": "identity",
+      "value": "187/187",
+      "kind": "measured",
+      "interpretation": "Full name and country are source-reported"
+    },
+    {
+      "entity": "constructors",
+      "field": "race_result_evidence",
+      "value": "186/187",
+      "kind": "measured",
+      "interpretation": "One constructor lacks imported result evidence"
+    },
+    {
+      "entity": "circuits",
+      "field": "identity",
+      "value": "78/78",
+      "kind": "measured",
+      "interpretation": "Full name, country, location, type"
+    },
+    {
+      "entity": "circuits",
+      "field": "historical_layout_artwork",
+      "value": "160 SVG across archive",
+      "kind": "measured",
+      "interpretation": "Artwork count is not 160 distinct circuits; layout drawings are not surveyed geometry"
+    },
+    {
+      "entity": "seasons",
+      "field": "archive_records",
+      "value": "77",
+      "kind": "measured",
+      "interpretation": "1950–2026 in pinned release"
+    },
+    {
+      "entity": "races",
+      "field": "archive_records",
+      "value": "1172",
+      "kind": "measured",
+      "interpretation": "Archive race records; not a full independently verified event chronology"
+    },
+    {
+      "entity": "race_results",
+      "field": "archive_records",
+      "value": "27665",
+      "kind": "measured",
+      "interpretation": "Result rows are not necessarily starts or distinct races"
+    },
+    {
+      "entity": "seasons",
+      "field": "official_driver_standings",
+      "value": "not implemented",
+      "kind": "known_gap",
+      "interpretation": "Race-result point sums are not official classifications under historical drop-score rules"
+    },
+    {
+      "entity": "constructors",
+      "field": "legal_lineage",
+      "value": "independently reviewed only",
+      "kind": "known_gap",
+      "interpretation": "Constructor grouping cannot establish corporate succession"
+    },
+    {
+      "entity": "constructors",
+      "field": "chassis_engine_timeline",
+      "value": "not complete",
+      "kind": "known_gap",
+      "interpretation": "Requires dated sources per constructor and season"
+    },
+    {
+      "entity": "circuits",
+      "field": "precise_corners_sectors_drs",
+      "value": "not implemented",
+      "kind": "known_gap",
+      "interpretation": "No invented corner counts, sector coordinates or DRS overlays"
+    },
+    {
+      "entity": "circuits",
+      "field": "layout_asset_publication_rights",
+      "value": "review pending",
+      "kind": "known_gap",
+      "interpretation": "CC BY 4.0 provenance recorded; per-asset rights review remains"
+    },
+    {
+      "entity": "drivers",
+      "field": "biography_publication",
+      "value": "independent review pending",
+      "kind": "known_gap",
+      "interpretation": "Identity fields and race results are not biography sources"
+    },
+    {
+      "entity": "media",
+      "field": "portraits_logos",
+      "value": "not approved",
+      "kind": "known_gap",
+      "interpretation": "Online availability is not a license"
+    }
+  ],
+  "editorial_publication": {
+    "approved_subjects": 0,
+    "published_subjects": 0,
+    "required": "independent exact-revision human review and per-asset rights clearance"
+  }
+}

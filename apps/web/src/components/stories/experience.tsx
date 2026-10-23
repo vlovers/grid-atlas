@@ -13,8 +13,8 @@ export function StoryExperience({ locale }: { locale: 'uk' | 'en' }) {
     const observer = new IntersectionObserver(entries => {
       for (const entry of entries) if (entry.isIntersecting) {
         if (!preference.matches && document.documentElement.dataset.storyMotion !== 'paused') {
-          const animation = entry.target.animate([{ opacity: .4, transform: 'translateY(30px)' }, { opacity: 1, transform: 'translateY(0)' }],
-            { duration: 750, easing: 'cubic-bezier(.2,.7,.2,1)' });
+          const animation = entry.target.animate([{ opacity: .4, transform: 'translateY(16px)' }, { opacity: 1, transform: 'translateY(0)' }],
+            { duration: 550, easing: 'cubic-bezier(.2,.7,.2,1)' });
           running.add(animation); animation.onfinish = () => running.delete(animation);
         }
         observer.unobserve(entry.target);

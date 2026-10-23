@@ -1,28 +1,32 @@
 import { PublishedChapters } from '@/components/stories/published-chapters';
 import { releasePilot } from '@/components/stories/release-model';
-import { MotorsportArt } from '@/components/stories/motorsport-art';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, seasonStories } from '@/components/stories/story-model';
 import { CareerMap } from '@/components/atlas/career-map';
+import { DriverSeasonChart } from './driver-season-chart';
+import { CareerEraRail } from './career-era-rail';
 import { CareerSignature } from '@/components/atlas/career-signature';
 import { CareerTimeline } from '@/components/discovery';
-import { LicensedMedia } from '@/components/media/licensed-media';
 import type { MediaAsset } from '@/components/media/registry';
-import { selectMedia } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
+import type { IdentityDetails } from '@/components/identity-facts';
+import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
+import { EditorialHero, EditorialMedia, EditorialTabs, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
+import { editorialCopy } from '@/components/editorial/copy';
 import { driverArchiveOverview, raceMoments, seasonPoints, teamEras, timeMachinePath,
   type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam, type DriverSeasonResult } from './showcase-model';
 import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
 type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[];
-  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode };
+  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode; identityDetails?: IdentityDetails; championships: ChampionshipRow[]; relatedDrivers: { driver_id: string; driver_name: string }[] };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults, identity }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, media, locale, selectedSeason, seasonResults, identity, identityDetails, championships, relatedDrivers }: Props) {
   const pilot = releasePilot(driver.external_id);
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
+  const e = editorialCopy[locale];
   const opening = openingRecord(career);
   const overview = driverArchiveOverview(driver, career, locale);
   const format = (value: number | null | undefined) => value == null ? t.unavailable : new Intl.NumberFormat(locale).format(value);
@@ -35,9 +39,6 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
   const featuredMoments = winningMoments.length ? winningMoments : moments;
   const boundaries = moments.filter(moment => !featuredMoments.includes(moment));
   const compare = timeMachinePath(driver.id, years);
-  const portrait = media.find(a => a.status === 'verified' && a.subject.type === 'driver' &&
-    a.subject.id === driver.external_id && ['photograph', 'portrait'].includes(a.kind) &&
-    selectMedia(media, a.id, { type: 'driver', id: driver.external_id }));
   const range = driver.first_season === null ? t.unavailable : driver.first_season === driver.last_season
     ? String(driver.first_season) : `${driver.first_season}—${driver.last_season}`;
   const timeline = (career?.participation ?? []).map(row => ({
@@ -48,31 +49,35 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
   }));
 
   return <section className={`page ${styles.showcase}`} data-testid="driver-showcase">
-    <header className={styles.hero}>
-      <div className={styles.coverArt}><MotorsportArt kind="helmet" tone="mint" /></div>
-      <div className={styles.heroCopy}>
-        <p className={styles.kicker}>{story.driverCover} <span aria-hidden="true">/</span> {driver.external_id}</p>
-        <p className={styles.period}><strong>{range}</strong><span>{t.period}</span></p>
-        <h1>{driver.name}</h1>
-        <p className={styles.declaration}>{story.driverLead}</p>
-        <div className={styles.actions}>{pilot && <a className={styles.primary} href={`/${locale}/stories/${pilot.slug}`}>{locale === 'uk' ? 'Дослідити історію' : 'Explore the story'} ↗</a>}<a className={styles.primary} href="#driver-career">{t.begin} <span aria-hidden="true">↓</span></a>
-          {compare && <a className={styles.textLink} href={`/${locale}${compare}`}>{t.compare} <span aria-hidden="true">↗</span></a>}</div>
-      </div>
-      <div className={styles.heroVisual}>
-        <span className={styles.visualRule} aria-hidden="true" />
-        {portrait ? <LicensedMedia assets={media} assetId={portrait.id} subject={{ type: 'driver', id: driver.external_id }} label={driver.name} locale={locale} />
-          : <p className={styles.artCredit}>{story.art}<span>{story.artNote}</span></p>}
+    <EditorialHero title={driver.name} eyebrow={`${story.driverCover} / ${driver.external_id}`}
+      context={<><span>{range}</span>{identityDetails?.fields.nationality && <span>{identityDetails.fields.nationality}</span>}</>}
+      lead={story.driverLead}
+      media={<EditorialMedia assets={media} subject={{ type: 'driver', id: driver.external_id }} title={driver.name} years={range} locale={locale} />}
+      actions={<>{pilot && <a href={`/${locale}/stories/${pilot.slug}`}>{locale === 'uk' ? 'Дослідити історію' : 'Explore the story'} ↗</a>}<a href="#driver-career">{t.begin} ↓</a>{compare && <a href={`/${locale}${compare}`}>{t.compare} ↗</a>}</>}
+      statistics={[{ label: t.races, value: format(career?.summary.races) }, { label: t.wins, value: format(career?.summary.winning_races) },
+        { label: t.podiums, value: format(career?.summary.podium_result_entries) }, { label: t.period, value: format(driver.seasons) }]} scope={t.scope} />
+    <SourceAttribution locale={locale} />
+    <EditorialTabs label={t.chapters} items={[[t.biography, 'driver-biography'], [t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'], [e.classifications, 'driver-classifications'], [t.statistics, 'driver-archive']].map(([label, id]) => ({ label, id }))} />
 
-      </div>
-      <dl className={styles.heroFacts}>
-        {[{ label: t.races, value: career?.summary.races }, { label: t.wins, value: career?.summary.winning_races },
-          { label: t.podiums, value: career?.summary.podium_result_entries }, { label: t.period, value: driver.seasons }].map(fact =>
-          <div key={fact.label}><dt>{fact.label}</dt><dd>{format(fact.value)}</dd></div>)}
-      </dl>
-      <p className={styles.heroScope}>{t.scope}</p>
-    </header>
 
-    {identity}
+    <section id="driver-biography" className={styles.chapter} aria-labelledby="driver-editorial-title" tabIndex={-1}>
+      <SectionHeading kicker={t.editorialKicker} title={t.editorialTitle} id="driver-editorial-title" />
+      {overview && <article className={styles.biography} data-testid="driver-archive-overview">
+        <h3>{locale === 'en' ? 'Career in the historical record' : 'Кар’єра за історичними протоколами'}</h3>
+        {overview.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+        <p>{locale === 'en'
+          ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
+          : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
+        <ul>{overview.firstRace && <li><a href={`/${locale}/races/${overview.firstRace.id}`}>
+          {locale === 'en' ? 'First recorded race' : 'Перша зафіксована гонка'}: {overview.firstRace.name} ({overview.firstRace.year}) ↗
+        </a></li>}
+        {overview.firstWin && <li><a href={`/${locale}/races/${overview.firstWin.id}`}>
+          {locale === 'en' ? 'First recorded win' : 'Перша зафіксована перемога'}: {overview.firstWin.name} ({overview.firstWin.year}) ↗
+        </a></li>}</ul>
+        <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
+      </article>}
+      {article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h3>{t.unpublished}</h3><p>{t.unpublishedNote}</p></div></div>}
+    </section>
 
     {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
       <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
@@ -91,14 +96,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       <p>{locale === 'uk' ? 'Титули чемпіона світу, поул-позиції та сходи не виводяться без окремого перевіреного джерела. Кількість команд означає унікальні ідентифікатори конструкторів у результатах.' : 'World titles, pole positions and retirements are not inferred without separately verified sources. Constructor count reflects distinct constructor IDs in race results.'}</p>
     </section>}
 
-    <nav className={styles.chapters} aria-label={t.chapters}>
-      {[[t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'],
-        [t.biography, 'driver-biography'], [t.statistics, 'driver-archive']].map(([label, anchor], index) =>
-        <a href={`#${anchor}`} key={anchor}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{label}</a>)}
-    </nav>
-
     {opening && <section className={styles.openingScene} aria-labelledby="driver-opening-title" data-story-reveal data-testid="driver-opening">
-      <div className={styles.openingArt}><MotorsportArt kind="velocity" /><span aria-hidden="true">{opening.race.year}</span><small>{story.artNote}</small></div>
+      <div className={styles.openingArt}><span>{opening.race.year}</span><small>{career?.milestones.first_win ? e.firstWin : e.firstRecord}</small></div>
       <div className={styles.openingCopy}><p className={styles.kicker}>{story.opening}</p><h2 id="driver-opening-title">{story.openingTitle}</h2><p>{story.openingNote}</p>
         <span className={styles.openingLabel}>{career?.milestones.first_win ? story.firstWin : story.firstRace} / {opening.race.year}</span>
         <h3><a href={`/${locale}/races/${opening.race.id}`}>{opening.race.name}</a></h3><a className={styles.primary} href={`/${locale}/races/${opening.race.id}`}>{story.openRace} ↗</a></div>
@@ -107,11 +106,13 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
     <section data-story-reveal id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
       <SectionHeading kicker={t.seasonKicker} title={story.seasonTitle} id="driver-season-title" note={story.seasonNote} />
       {peakSeasons.length > 0 ? <ol className={styles.seasonMilestones}>{peakSeasons.map((season, index) =>
-        <li key={season.year}><div className={styles.seasonArt}><MotorsportArt kind={index === 1 ? 'grid' : 'velocity'} tone={index === 1 ? 'gold' : index === 2 ? 'violet' : 'coral'} /></div><span className={styles.cardIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        <li key={season.year}><span className={styles.cardIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
           <a href={`/${locale}/seasons/${season.year}`} className={styles.yearLink}>{season.year} <span aria-hidden="true">↗</span></a>
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
+      <CareerEraRail teams={teams} seasons={seasons} driverId={driver.id} locale={locale} />
+      <DriverSeasonChart seasons={seasons} locale={locale} driverId={driver.id} selectedYear={selected?.year} />
       {years.length > 0 && <div className={styles.seasonExplorer}>
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
           href={`/${locale}/drivers/${driver.id}?season=${year}#driver-career`} aria-current={selected?.year === year ? 'true' : undefined}>{year}</a>)}</nav>
@@ -124,7 +125,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
             <ul>{teams.filter(team => team.year === selected.year).map(team =>
               <li key={team.constructor_id}><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name}</a> · {format(team.races)} {t.races}</li>)}</ul>
             <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}{seasonPoints(selected, career?.participation ?? []).partial && <> · {t.partialPoints}</>}</p>
-            <p>{locale === 'uk' ? 'Позиція в чемпіонаті, поули й сходи не виводяться без перевірених сезонних даних.' : 'Championship position, poles and retirements are omitted until verified season data is available.'}</p>
+            <p>{locale === 'uk' ? 'Класифікації F1DB показано в окремому розділі нижче. Поули й сходи не виводяться з цих підсумків.' : 'F1DB classifications appear in a separate section below. Poles and retirements are not inferred from these totals.'}</p>
           </div>
           {career && <div className={styles.seasonTeamBreakdown}>
             <h4>{locale === 'uk' ? 'Результати за командами' : 'Results by constructor'} · {selected.year}</h4>
@@ -185,7 +186,6 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
     <section data-story-reveal id="driver-moments" className={styles.chapter} aria-labelledby="driver-moments-title" tabIndex={-1}>
       <SectionHeading kicker={t.momentKicker} title={t.momentTitle} id="driver-moments-title" note={t.momentNote} />
       {moments.length ? <ol className={styles.moments}>{featuredMoments.map(moment => <li key={moment.race.id}>
-        <div className={styles.momentArt}><MotorsportArt kind="grid" tone="gold" /></div>
         <div className={styles.momentTop}><span>{moment.race.year}</span><span>{t.round} {moment.race.round}</span></div>
         <p className={styles.momentLabel}>{moment.labels.map(label => t[label]).join(' / ')}</p>
         <h3><a href={`/${locale}/races/${moment.race.id}`}>{moment.race.name}</a></h3>
@@ -198,30 +198,17 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
       </li>)}</ul>}
     </section>
 
-    {compare && <aside className={styles.timeMachine}><div className={styles.compareArt}><MotorsportArt kind="duel" tone="violet" /></div><div><p className={styles.kicker}>TIME MACHINE / {range}</p>
+    {compare && <aside className={styles.timeMachine}><div><p className={styles.kicker}>TIME MACHINE / {range}</p>
       <h2>{t.compareTitle}</h2><p>{t.compareNote}</p></div><a className={styles.primary} href={`/${locale}${compare}`}>{t.compare} ↗</a></aside>}
 
-    <section id="driver-biography" className={styles.chapter} aria-labelledby="driver-editorial-title" tabIndex={-1}>
-      {article && <SectionHeading kicker={t.editorialKicker} title={t.editorialTitle} id="driver-editorial-title" />}
-      {overview && <article className={styles.biography} data-testid="driver-archive-overview">
-        <h3>{locale === 'en' ? 'Career in the historical record' : 'Кар’єра за історичними протоколами'}</h3>
-        {overview.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-        <p>{locale === 'en'
-          ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
-          : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
-        <ul>{overview.firstRace && <li><a href={`/${locale}/races/${overview.firstRace.id}`}>
-          {locale === 'en' ? 'First recorded race' : 'Перша зафіксована гонка'}: {overview.firstRace.name} ({overview.firstRace.year}) ↗
-        </a></li>}
-        {overview.firstWin && <li><a href={`/${locale}/races/${overview.firstWin.id}`}>
-          {locale === 'en' ? 'First recorded win' : 'Перша зафіксована перемога'}: {overview.firstWin.name} ({overview.firstWin.year}) ↗
-        </a></li>}</ul>
-        <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
-      </article>}
-      {article ? <div><h2 id="driver-editorial-title">{t.biography}</h2><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h2 id="driver-editorial-title">{t.unpublished}</h2><p>{t.unpublishedNote}</p></div></div>}
+    <section id="driver-perspectives" className={styles.chapter} aria-labelledby="driver-perspectives-title" data-testid="driver-perspectives">
+      <SectionHeading kicker={e.connections} title={e.perspectives} note={e.perspectivesNote} id="driver-perspectives-title" />
+      {relatedDrivers.length ? <ul className={styles.related}>{relatedDrivers.map(related => <li key={related.driver_id}><a href={`/${locale}/drivers/${related.driver_id}?season=${selected?.year}`}>{related.driver_name} <span aria-hidden="true">↗</span></a></li>)}</ul> : <p>{e.noPerspectives}</p>}
     </section>
-
+    <div id="driver-classifications" className={styles.chapter}><ChampionshipTable rows={championships} locale={locale} kind="drivers" scope="career" /></div>
     <section id="driver-archive" className={styles.chapter} aria-labelledby="driver-archive-title" tabIndex={-1}>
       <SectionHeading kicker={t.archiveKicker} title={story.records} id="driver-archive-title" note={t.archiveNote} />
+      {identity}
       <aside className={styles.coverage}><strong>{t.titleGap}</strong><p>{t.titleGapNote}</p></aside>
       <details id="driver-graphic" className={styles.disclosure}><summary>{story.graphic}</summary><CareerSignature seasons={seasons} name={driver.name} locale={locale} /></details>
       <details id="driver-seasons" className={styles.disclosure}><summary>{t.seasonsTable} <span>{format(seasons.length)}</span></summary>
@@ -252,8 +239,4 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
     </section>
     <a className={styles.back} href={`/${locale}/drivers`}>← {t.back}</a>
   </section>;
-}
-
-function SectionHeading({ kicker, title, note, id }: { kicker: string; title: string; note?: string; id: string }) {
-  return <header className={styles.sectionHeading}><div><p className={styles.kicker}>{kicker}</p><h2 id={id}>{title}</h2></div>{note && <p>{note}</p>}</header>;
 }

@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "status": "pinned_archive_event_identity_matches_not_editorially_approved",
+  "archive_release": "f1db/v2026.17.0",
+  "source": {
+    "repository": "f1db/f1db",
+    "artifact_name": "editorial-event-candidates-unapproved",
+    "artifact_id": 12412077337,
+    "workflow_run_id": 39747904966,
+    "archive_sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+    "derivation": "One unique candidate selected by matching event title, year, winner external ID and venue external ID against the 11 existing editorial leads; the full year-scoped CI report remains the source of truth."
+  },
+  "items": [
+    {
+      "subject_id": "constructor-williams",
+      "race_id": 322,
+      "date": "1979-07-14",
+      "year": 1979,
+      "round": 9,
+      "official_name": "1979 Marlboro British Grand Prix",
+      "circuit_external_id": "silverstone",
+      "winner": {
+        "driver_external_id": "clay-regazzoni",
+        "constructor_external_id": "williams"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "constructor-mercedes",
+      "race_id": 36,
+      "date": "1954-07-04",
+      "year": 1954,
+      "round": 4,
+      "official_name": "Grand Prix de France 1954",
+      "circuit_external_id": "reims",
+      "winner": {
+        "driver_external_id": "juan-manuel-fangio",
+        "constructor_external_id": "mercedes"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "constructor-red-bull-racing",
+      "race_id": 806,
+      "date": "2009-04-19",
+      "year": 2009,
+      "round": 3,
+      "official_name": "2009 Formula 1 Chinese Grand Prix",
+      "circuit_external_id": "shanghai",
+      "winner": {
+        "driver_external_id": "sebastian-vettel",
+        "constructor_external_id": "red-bull"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-spa-francorchamps",
+      "race_id": 5,
+      "date": "1950-06-18",
+      "year": 1950,
+      "round": 5,
+      "official_name": "1950 Belgian Grand Prix",
+      "circuit_external_id": "spa-francorchamps",
+      "winner": {
+        "driver_external_id": "juan-manuel-fangio",
+        "constructor_external_id": "alfa-romeo"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-monza",
+      "race_id": 7,
+      "date": "1950-09-03",
+      "year": 1950,
+      "round": 7,
+      "official_name": "Gran Premio d'Italia 1950",
+      "circuit_external_id": "monza",
+      "winner": {
+        "driver_external_id": "nino-farina",
+        "constructor_external_id": "alfa-romeo"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-suzuka",
+      "race_id": 451,
+      "date": "1987-11-01",
+      "year": 1987,
+      "round": 15,
+      "official_name": "1987 Fuji Television Japanese Grand Prix",
+      "circuit_external_id": "suzuka",
+      "winner": {
+        "driver_external_id": "gerhard-berger",
+        "constructor_external_id": "ferrari"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-interlagos",
+      "race_id": 222,
+      "date": "1973-02-11",
+      "year": 1973,
+      "round": 2,
+      "official_name": "Grande Prêmio do Brasil 1973",
+      "circuit_external_id": "interlagos",
+      "winner": {
+        "driver_external_id": "emerson-fittipaldi",
+        "constructor_external_id": "lotus"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-n-rburgring",
+      "race_id": 13,
+      "date": "1951-07-29",
+      "year": 1951,
+      "round": 6,
+      "official_name": "Grosser Preis von Deutschland 1951",
+      "circuit_external_id": "nurburgring",
+      "winner": {
+        "driver_external_id": "alberto-ascari",
+        "constructor_external_id": "ferrari"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-imola",
+      "race_id": 346,
+      "date": "1981-05-03",
+      "year": 1981,
+      "round": 4,
+      "official_name": "Gran Premio di San Marino 1981",
+      "circuit_external_id": "imola",
+      "winner": {
+        "driver_external_id": "nelson-piquet",
+        "constructor_external_id": "brabham"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-circuit-of-the-americas",
+      "race_id": 877,
+      "date": "2012-11-18",
+      "year": 2012,
+      "round": 19,
+      "official_name": "2012 Formula 1 United States Grand Prix",
+      "circuit_external_id": "austin",
+      "winner": {
+        "driver_external_id": "lewis-hamilton",
+        "constructor_external_id": "mclaren"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    },
+    {
+      "subject_id": "circuit-albert-park",
+      "race_id": 582,
+      "date": "1996-03-10",
+      "year": 1996,
+      "round": 1,
+      "official_name": "1996 Transurban Australian Grand Prix",
+      "circuit_external_id": "melbourne",
+      "winner": {
+        "driver_external_id": "damon-hill",
+        "constructor_external_id": "williams"
+      },
+      "identity_status": "matched_in_pinned_archive",
+      "editorial_status": "requires_independent_source_review",
+      "historical_layout_id": null,
+      "approved": false,
+      "published": false
+    }
+  ]
+}

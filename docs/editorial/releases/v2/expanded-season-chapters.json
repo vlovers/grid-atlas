@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "status": "expanded_bilingual_season_drafts_unapproved",
+  "source_basis": [
+    "pilot-research.json",
+    "season-research.json"
+  ],
+  "as_of": "2026-10-22",
+  "note": "Five three-section narrative drafts grounded only in existing source-located claim IDs; not independent review or publication.",
+  "items": [
+    {
+      "subject_id": "season-1976",
+      "title": {
+        "en": "1976: a single point",
+        "uk": "1976: одне очко"
+      },
+      "sections": [
+        {
+          "id": "chapter-1",
+          "title": {
+            "en": "The classification",
+            "uk": "Класифікація"
+          },
+          "body": {
+            "en": "James Hunt's 69 points and Niki Lauda's 68 sit next to each other in the official 1976 championship table. One point is a precise measurement of the final classification; it is not, on its own, an explanation of how the season unfolded. The story needs both the season-wide record and the individual events that changed each driver's opportunity to score.",
+            "uk": "69 очок Джеймса Ганта й 68 очок Нікі Лауди стоять поруч в офіційній таблиці чемпіонату 1976 року. Одне очко точно описує підсумкову різницю, але саме по собі не пояснює перебіг сезону. Для історії потрібні і загальна таблиця, і протоколи окремих етапів, що впливали на можливість кожного пілота набирати очки."
+          },
+          "claim_ids": [
+            "1976-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "title": {
+            "en": "The Japanese result",
+            "uk": "Результат у Японії"
+          },
+          "body": {
+            "en": "The official race-by-race record marks Lauda's Japanese Grand Prix entry as DNF. That classification is a documented part of the final chapter, but the table does not establish a driver's motive or the conditions of a withdrawal. Those details require contemporary race reporting rather than interpretation of a three-letter result code.",
+            "uk": "Офіційний перелік результатів Лауди за гонками позначає Гран-прі Японії як DNF. Це зафіксована частина фіналу сезону, але сама таблиця не пояснює мотивів пілота або обставин сходу. Такі деталі потребують тогочасних репортажів, а не тлумачення трилітерного коду результату."
+          },
+          "claim_ids": [
+            "1976-japan-result"
+          ]
+        },
+        {
+          "id": "chapter-3",
+          "title": {
+            "en": "Reading the margin",
+            "uk": "Як читати різницю"
+          },
+          "body": {
+            "en": "A one-point finish makes every apparent turning point tempting to elevate into the decisive moment. An evidence-led account should resist that shortcut: reconstruct the championship rules, the chronology and the official classifications before deciding which races mattered most. The table tells us who finished ahead, not which single event caused the title.",
+            "uk": "Коли чемпіонат вирішує одне очко, кожен поворот сезону легко назвати вирішальним. Історія, побудована на джерелах, має уникати такого спрощення: спочатку відтворити правила підрахунку очок, хронологію та офіційні класифікації. Таблиця показує, хто фінішував попереду, але не доводить, яка саме гонка визначила титул."
+          },
+          "claim_ids": [
+            "1976-final-top-two"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "publication": false
+    },
+    {
+      "subject_id": "season-1988",
+      "title": {
+        "en": "1988: two different scoreboards",
+        "uk": "1988: дві різні таблиці очок"
+      },
+      "sections": [
+        {
+          "id": "chapter-1",
+          "title": {
+            "en": "The official verdict",
+            "uk": "Офіційний підсумок"
+          },
+          "body": {
+            "en": "The official drivers' standings put Ayrton Senna first on 90 points and Alain Prost second on 87. Those figures must not be silently replaced with the sum of every race-result points entry. A historical championship page has to distinguish the season's classification from a raw statistical aggregation.",
+            "uk": "Офіційна таблиця пілотів ставить Айртона Сенну на перше місце з 90 очками, а Алена Проста — на друге з 87. Ці показники не можна непомітно заміняти сумою очок з усіх протоколів гонок. Історична сторінка чемпіонату має відрізняти офіційну класифікацію від простої статистичної суми."
+          },
+          "claim_ids": [
+            "1988-official-standing"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "title": {
+            "en": "Sixteen chapters",
+            "uk": "Шістнадцять розділів"
+          },
+          "body": {
+            "en": "The archive lists sixteen championship races for 1988. That calendar gives the story a structure more useful than a single winner card: readers can move through events in order and examine how the official title narrative developed. Each race still requires its own sourced account rather than a retrospective invented explanation.",
+            "uk": "Архів містить шістнадцять гонок чемпіонату 1988 року. Цей календар дає історії структуру, цікавішу за одну картку чемпіона: читач може пройти етапи послідовно й побачити, як формувалася боротьба за титул. Кожна гонка водночас потребує власного підтвердженого опису, а не вигаданого пояснення заднім числом."
+          },
+          "claim_ids": [
+            "1988-races"
+          ]
+        },
+        {
+          "id": "chapter-3",
+          "title": {
+            "en": "Monaco and Japan",
+            "uk": "Монако та Японія"
+          },
+          "body": {
+            "en": "Two results create a useful contrast in the archive: Alain Prost won at Monaco, while Ayrton Senna won in Japan. Neither result alone explains the championship, and neither should be used to infer an unsupported account of strategy or driving technique. Together they offer two entry points into the event-by-event record.",
+            "uk": "Два результати створюють промовистий контраст: Ален Прост переміг у Монако, а Айртон Сенна — в Японії. Жоден із них окремо не пояснює чемпіонат і не дозволяє вигадувати деталі стратегії чи пілотування. Натомість це дві точки входу до послідовної історії гонок."
+          },
+          "claim_ids": [
+            "1988-monaco",
+            "1988-japan"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2008",
+      "title": {
+        "en": "2008: winning the race, losing the title",
+        "uk": "2008: виграти гонку, програти титул"
+      },
+      "sections": [
+        {
+          "id": "chapter-1",
+          "title": {
+            "en": "One point",
+            "uk": "Одне очко"
+          },
+          "body": {
+            "en": "Lewis Hamilton's 98 points and Felipe Massa's 97 define the official 2008 championship margin. The closeness makes the final classification compelling, but the number by itself does not show what happened at each circuit. A responsible historical account should keep the standings distinct from the race narrative.",
+            "uk": "98 очок Льюїса Гамільтона та 97 Феліпе Масси визначають офіційну різницю в чемпіонаті 2008 року. Така близькість робить підсумок особливо напруженим, але сама цифра не розповідає про події на кожній трасі. Історичний виклад має розділяти підсумкову таблицю й історію окремих гонок."
+          },
+          "claim_ids": [
+            "2008-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "title": {
+            "en": "Brazil's split result",
+            "uk": "Два підсумки Бразилії"
+          },
+          "body": {
+            "en": "Felipe Massa won the Brazilian Grand Prix, the closing race of the season. The championship, however, went to Hamilton. That contrast is the central verified fact for this chapter: a race victory and a world title are different classifications, decided by different sets of results.",
+            "uk": "Феліпе Масса виграв Гран-прі Бразилії, останній етап сезону. Однак чемпіонський титул дістався Гамільтону. Цей контраст — головний підтверджений факт розділу: перемога в гонці й перемога в чемпіонаті є різними підсумками, які визначаються різними наборами результатів."
+          },
+          "claim_ids": [
+            "2008-brazil-result",
+            "2008-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-3",
+          "title": {
+            "en": "The evidence still needed",
+            "uk": "Яких свідчень бракує"
+          },
+          "body": {
+            "en": "To turn that contrast into a scene-by-scene feature, the next pass must use the official classification, lap chronology and contemporary reports of the final event. We should not invent a radio message, an emotional reaction or a decisive on-track moment from the points table alone.",
+            "uk": "Щоб перетворити цей контраст на повноцінний репортаж із послідовністю подій, наступний етап має спиратися на офіційний протокол, хронологію кіл і тогочасні матеріали про фінал. Не можна вигадувати радіопереговори, емоційні реакції або вирішальний епізод лише за таблицею очок."
+          },
+          "claim_ids": [
+            "2008-final-top-two",
+            "2008-brazil-result"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2012",
+      "title": {
+        "en": "2012: three points at the finish",
+        "uk": "2012: три очки на фініші"
+      },
+      "sections": [
+        {
+          "id": "chapter-1",
+          "title": {
+            "en": "A narrow classification",
+            "uk": "Мінімальна перевага"
+          },
+          "body": {
+            "en": "Sebastian Vettel finished the 2012 drivers' championship with 281 points; Fernando Alonso had 278. Three points separate the first two positions in the official table. It is a compelling final measurement, but not a substitute for reconstructing the races that produced it.",
+            "uk": "Себастьян Феттель завершив чемпіонат пілотів 2012 року з 281 очком, Фернандо Алонсо — з 278. Перші дві позиції офіційної таблиці розділяють три очки. Це промовистий підсумок, але він не замінює відтворення гонок, з яких склався результат."
+          },
+          "claim_ids": [
+            "2012-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "title": {
+            "en": "A title is not a single race",
+            "uk": "Титул — не одна гонка"
+          },
+          "body": {
+            "en": "A final margin this small invites a simplified story of one decisive pass or one lost opportunity. The official standings establish the championship result; they do not identify a unique cause. A stronger narrative will pair the final table with race-by-race evidence, including the scoring rules used that year.",
+            "uk": "За такої малої різниці легко звести сезон до одного обгону чи однієї втраченої нагоди. Офіційна таблиця встановлює результат чемпіонату, але не називає єдиної причини. Сильніша історія поєднає підсумкові очки з протоколами кожної гонки та правилами нарахування очок того року."
+          },
+          "claim_ids": [
+            "2012-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-3",
+          "title": {
+            "en": "The next source layer",
+            "uk": "Наступний шар джерел"
+          },
+          "body": {
+            "en": "The championship table provides a reliable opening, not a complete narrative arc. Before describing momentum, technical advantage or pressure, the editorial team must source those themes to contemporary reporting and dated results. Where evidence is absent, the story should say less rather than guess.",
+            "uk": "Таблиця чемпіонату дає надійний початок, але не завершену драматургію. Перш ніж писати про зміну ініціативи, технічну перевагу чи психологічний тиск, редакція має підтвердити ці теми тогочасними повідомленнями й датованими результатами. Коли свідчень бракує, краще сказати менше, ніж припускати."
+          },
+          "claim_ids": [
+            "2012-final-top-two"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "publication": false
+    },
+    {
+      "subject_id": "season-2021",
+      "title": {
+        "en": "2021: points and exceptions",
+        "uk": "2021: очки та винятки"
+      },
+      "sections": [
+        {
+          "id": "chapter-1",
+          "title": {
+            "en": "The official outcome",
+            "uk": "Офіційний результат"
+          },
+          "body": {
+            "en": "The final 2021 drivers' table records Max Verstappen on 395.5 points and Lewis Hamilton on 387.5. The half-point in the winning total is a reminder that historical scoring is not always represented by whole numbers. The official classification must remain the authority for the title, rather than an unqualified sum generated by a modern interface.",
+            "uk": "Підсумкова таблиця чемпіонату 2021 року фіксує 395,5 очка Макса Ферстаппена та 387,5 очка Льюїса Гамільтона. Половина очка в результаті чемпіона нагадує, що історичні системи нарахування не завжди дають цілі числа. Авторитетним джерелом титулу має залишатися офіційна класифікація, а не некритично підрахована сума в сучасному інтерфейсі."
+          },
+          "claim_ids": [
+            "2021-final-top-two"
+          ]
+        },
+        {
+          "id": "chapter-2",
+          "title": {
+            "en": "Belgium and half points",
+            "uk": "Бельгія та половинні очки"
+          },
+          "body": {
+            "en": "The 2021 Belgian Grand Prix was shortened by rain, and half points were awarded. That event is a concrete example of why an encyclopedia should explain exceptional race classifications rather than flatten them into an ordinary finish. The race record and the championship table answer related, but different, questions.",
+            "uk": "Гран-прі Бельгії 2021 року скоротили через дощ, а учасникам нарахували половинні очки. Це конкретний приклад того, чому енциклопедія має пояснювати виняткові класифікації, а не подавати їх як звичайний фініш. Протокол гонки й таблиця чемпіонату відповідають на пов’язані, але різні запитання."
+          },
+          "claim_ids": [
+            "2021-belgium-result"
+          ]
+        },
+        {
+          "id": "chapter-3",
+          "title": {
+            "en": "Reconstructing the season",
+            "uk": "Відтворення сезону"
+          },
+          "body": {
+            "en": "The standings and the exceptional Belgian result offer two verifiable anchors, not a complete explanation of the championship. An expanded feature must source the individual races, sporting decisions and chronology independently. It should also distinguish a documented ruling from later commentary about that ruling.",
+            "uk": "Підсумкова таблиця та незвичний бельгійський результат дають дві перевірювані опорні точки, а не повне пояснення чемпіонату. Розгорнутий матеріал має окремо підтвердити події гонок, спортивні рішення та хронологію. Також важливо відрізняти документально зафіксоване рішення від пізніших оцінок цього рішення."
+          },
+          "claim_ids": [
+            "2021-final-top-two",
+            "2021-belgium-result"
+          ]
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "publication": false
+    }
+  ]
+}

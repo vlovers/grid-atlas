@@ -1,0 +1,755 @@
+{
+  "schema_version": 1,
+  "status": "research_planning_not_approved",
+  "as_of": "2026-10-22",
+  "locale_policy": [
+    "en",
+    "uk"
+  ],
+  "description": "Editorial scaffolding and original bilingual decks; not independently verified historical claims, biographies or published content.",
+  "publication_gate": "Human independent review bound to claim digests is mandatory. User authorization to proceed is not a historical source review.",
+  "sources_to_inspect": [
+    {
+      "name": "F1DB pinned v2026.17.0",
+      "url": "https://github.com/f1db/f1db",
+      "role": "candidate structured race and identity records; verify exact row semantics"
+    },
+    {
+      "name": "FIA",
+      "url": "https://www.fia.com/",
+      "role": "candidate official classifications, decisions and regulations; locate event/year documents"
+    },
+    {
+      "name": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "role": "candidate event retrospectives and archival context; corroborate independently"
+    }
+  ],
+  "records": [
+    {
+      "id": "constructor-ferrari",
+      "type": "constructor",
+      "subject": "Ferrari",
+      "editorial": {
+        "en": {
+          "headline": "Ferrari",
+          "deck": "Identity, continuity and constructor lineage"
+        },
+        "uk": {
+          "headline": "Ferrari",
+          "deck": "Ідентичність, спадкоємність і лінія конструкторів"
+        }
+      },
+      "chapters": [
+        "identity-and-lineage",
+        "season-by-season-eras",
+        "people-and-machines",
+        "defining-races",
+        "legacy-and-uncertainty"
+      ],
+      "verification": [
+        "constructor versus entrant and sponsor naming",
+        "era-specific chassis and engine provenance",
+        "season roster and driver round validity",
+        "first race and championship counts by definition",
+        "media rights and date-specific imagery"
+      ]
+    },
+    {
+      "id": "constructor-mclaren",
+      "type": "constructor",
+      "subject": "McLaren",
+      "editorial": {
+        "en": {
+          "headline": "McLaren",
+          "deck": "The people and machines behind changing eras"
+        },
+        "uk": {
+          "headline": "McLaren",
+          "deck": "Люди й машини на перетині епох"
+        }
+      },
+      "chapters": [
+        "identity-and-lineage",
+        "season-by-season-eras",
+        "people-and-machines",
+        "defining-races",
+        "legacy-and-uncertainty"
+      ],
+      "verification": [
+        "constructor versus entrant and sponsor naming",
+        "era-specific chassis and engine provenance",
+        "season roster and driver round validity",
+        "first race and championship counts by definition",
+        "media rights and date-specific imagery"
+      ]
+    },
+    {
+      "id": "constructor-williams",
+      "type": "constructor",
+      "subject": "Williams",
+      "editorial": {
+        "en": {
+          "headline": "Williams",
+          "deck": "Engineering identity across generations"
+        },
+        "uk": {
+          "headline": "Williams",
+          "deck": "Інженерна ідентичність крізь покоління"
+        }
+      },
+      "chapters": [
+        "identity-and-lineage",
+        "season-by-season-eras",
+        "people-and-machines",
+        "defining-races",
+        "legacy-and-uncertainty"
+      ],
+      "verification": [
+        "constructor versus entrant and sponsor naming",
+        "era-specific chassis and engine provenance",
+        "season roster and driver round validity",
+        "first race and championship counts by definition",
+        "media rights and date-specific imagery"
+      ]
+    },
+    {
+      "id": "constructor-mercedes",
+      "type": "constructor",
+      "subject": "Mercedes",
+      "editorial": {
+        "en": {
+          "headline": "Mercedes",
+          "deck": "Two eras under a familiar name"
+        },
+        "uk": {
+          "headline": "Mercedes",
+          "deck": "Дві епохи під знайомою назвою"
+        }
+      },
+      "chapters": [
+        "identity-and-lineage",
+        "season-by-season-eras",
+        "people-and-machines",
+        "defining-races",
+        "legacy-and-uncertainty"
+      ],
+      "verification": [
+        "constructor versus entrant and sponsor naming",
+        "era-specific chassis and engine provenance",
+        "season roster and driver round validity",
+        "first race and championship counts by definition",
+        "media rights and date-specific imagery"
+      ]
+    },
+    {
+      "id": "constructor-red-bull-racing",
+      "type": "constructor",
+      "subject": "Red Bull Racing",
+      "editorial": {
+        "en": {
+          "headline": "Red Bull Racing",
+          "deck": "Building a modern racing institution"
+        },
+        "uk": {
+          "headline": "Red Bull Racing",
+          "deck": "Як формується сучасна гоночна команда"
+        }
+      },
+      "chapters": [
+        "identity-and-lineage",
+        "season-by-season-eras",
+        "people-and-machines",
+        "defining-races",
+        "legacy-and-uncertainty"
+      ],
+      "verification": [
+        "constructor versus entrant and sponsor naming",
+        "era-specific chassis and engine provenance",
+        "season roster and driver round validity",
+        "first race and championship counts by definition",
+        "media rights and date-specific imagery"
+      ]
+    },
+    {
+      "id": "circuit-monaco",
+      "type": "circuit",
+      "subject": "Monaco",
+      "editorial": {
+        "en": {
+          "headline": "Monaco",
+          "deck": "A street circuit across generations"
+        },
+        "uk": {
+          "headline": "Монако",
+          "deck": "Міська траса крізь покоління"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-silverstone",
+      "type": "circuit",
+      "subject": "Silverstone",
+      "editorial": {
+        "en": {
+          "headline": "Silverstone",
+          "deck": "How the layout evolved"
+        },
+        "uk": {
+          "headline": "Сільверстоун",
+          "deck": "Як змінювалася конфігурація"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-spa-francorchamps",
+      "type": "circuit",
+      "subject": "Spa-Francorchamps",
+      "editorial": {
+        "en": {
+          "headline": "Spa-Francorchamps",
+          "deck": "A circuit transformed by its history"
+        },
+        "uk": {
+          "headline": "Спа-Франкоршам",
+          "deck": "Траса, яку змінювала історія"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-monza",
+      "type": "circuit",
+      "subject": "Monza",
+      "editorial": {
+        "en": {
+          "headline": "Monza",
+          "deck": "The shape of speed through time"
+        },
+        "uk": {
+          "headline": "Монца",
+          "deck": "Як змінювалася геометрія швидкості"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-suzuka",
+      "type": "circuit",
+      "subject": "Suzuka",
+      "editorial": {
+        "en": {
+          "headline": "Suzuka",
+          "deck": "A venue for defining race weekends"
+        },
+        "uk": {
+          "headline": "Судзука",
+          "deck": "Місце вирішальних гоночних вікендів"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-interlagos",
+      "type": "circuit",
+      "subject": "Interlagos",
+      "editorial": {
+        "en": {
+          "headline": "Interlagos",
+          "deck": "Names, layouts and eras"
+        },
+        "uk": {
+          "headline": "Інтерлагос",
+          "deck": "Назви, конфігурації та епохи"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-n-rburgring",
+      "type": "circuit",
+      "subject": "Nürburgring",
+      "editorial": {
+        "en": {
+          "headline": "Nürburgring",
+          "deck": "Different circuits under one name"
+        },
+        "uk": {
+          "headline": "Нюрбургринг",
+          "deck": "Різні траси під однією назвою"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-imola",
+      "type": "circuit",
+      "subject": "Imola",
+      "editorial": {
+        "en": {
+          "headline": "Imola",
+          "deck": "Change, memory and safety"
+        },
+        "uk": {
+          "headline": "Імола",
+          "deck": "Зміни, пам’ять і безпека"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-circuit-of-the-americas",
+      "type": "circuit",
+      "subject": "Circuit of the Americas",
+      "editorial": {
+        "en": {
+          "headline": "Circuit of the Americas",
+          "deck": "A modern circuit in historical context"
+        },
+        "uk": {
+          "headline": "Траса Америк",
+          "deck": "Сучасна траса в історичному контексті"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "circuit-albert-park",
+      "type": "circuit",
+      "subject": "Albert Park",
+      "editorial": {
+        "en": {
+          "headline": "Albert Park",
+          "deck": "A changing urban race venue"
+        },
+        "uk": {
+          "headline": "Альберт-Парк",
+          "deck": "Міська гоночна локація, що змінюється"
+        }
+      },
+      "chapters": [
+        "origin-and-identity",
+        "layout-evolution",
+        "race-history",
+        "defining-moments",
+        "technical-facts-and-sources"
+      ],
+      "verification": [
+        "match historical layout ID to each event",
+        "avoid mixing event and circuit statistics",
+        "record category/year for lap records",
+        "do not infer sector DRS elevation or tyre ratings",
+        "credit licensed SVG and audit photographic rights"
+      ]
+    },
+    {
+      "id": "season-1950",
+      "type": "season",
+      "subject": "1950",
+      "editorial": {
+        "en": {
+          "headline": "The 1950 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1950 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-1961",
+      "type": "season",
+      "subject": "1961",
+      "editorial": {
+        "en": {
+          "headline": "The 1961 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1961 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-1976",
+      "type": "season",
+      "subject": "1976",
+      "editorial": {
+        "en": {
+          "headline": "The 1976 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1976 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-1984",
+      "type": "season",
+      "subject": "1984",
+      "editorial": {
+        "en": {
+          "headline": "The 1984 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1984 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-1988",
+      "type": "season",
+      "subject": "1988",
+      "editorial": {
+        "en": {
+          "headline": "The 1988 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1988 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-1994",
+      "type": "season",
+      "subject": "1994",
+      "editorial": {
+        "en": {
+          "headline": "The 1994 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 1994 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-2000",
+      "type": "season",
+      "subject": "2000",
+      "editorial": {
+        "en": {
+          "headline": "The 2000 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 2000 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-2008",
+      "type": "season",
+      "subject": "2008",
+      "editorial": {
+        "en": {
+          "headline": "The 2008 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 2008 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-2012",
+      "type": "season",
+      "subject": "2012",
+      "editorial": {
+        "en": {
+          "headline": "The 2012 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 2012 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    },
+    {
+      "id": "season-2021",
+      "type": "season",
+      "subject": "2021",
+      "editorial": {
+        "en": {
+          "headline": "The 2021 season",
+          "deck": "The championship told through its races, decisions and competing perspectives."
+        },
+        "uk": {
+          "headline": "Сезон 2021 року",
+          "deck": "Історія чемпіонату через гонки, рішення та різні погляди учасників."
+        }
+      },
+      "chapters": [
+        "opening-context",
+        "turning-points",
+        "championship-contenders",
+        "decisive-races",
+        "what-the-records-can-and-cannot-say"
+      ],
+      "verification": [
+        "official scoring rules and dropped results for year",
+        "season classification from appropriate primary documents",
+        "race order and canceled or non-championship events",
+        "separate results rows from starts and entries",
+        "avoid present-day constructor lineage assumptions"
+      ]
+    }
+  ]
+}

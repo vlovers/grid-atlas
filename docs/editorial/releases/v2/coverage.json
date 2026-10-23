@@ -1,0 +1,431 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-10-22",
+  "subjects": [
+    {
+      "id": "constructor-ferrari",
+      "type": "constructor",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 3,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "chapter_draft"
+    },
+    {
+      "id": "constructor-mclaren",
+      "type": "constructor",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 3,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "chapter_draft"
+    },
+    {
+      "id": "constructor-williams",
+      "type": "constructor",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "constructor-mercedes",
+      "type": "constructor",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "constructor-red-bull-racing",
+      "type": "constructor",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-monaco",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 3,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "chapter_draft"
+    },
+    {
+      "id": "circuit-silverstone",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "chapter_draft"
+    },
+    {
+      "id": "circuit-spa-francorchamps",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-monza",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-suzuka",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-interlagos",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-n-rburgring",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-imola",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-circuit-of-the-americas",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "circuit-albert-park",
+      "type": "circuit",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": false,
+      "source_located_claims": 0,
+      "subject_specific_chapter_draft": false,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "unverified_event_lead",
+      "unverified_event_leads": 1
+    },
+    {
+      "id": "season-1950",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-1961",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-1976",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-1984",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-1988",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 4,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "chapter_draft"
+    },
+    {
+      "id": "season-1994",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-2000",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-2008",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-2012",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 1,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    },
+    {
+      "id": "season-2021",
+      "type": "season",
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "editorial_brief": true,
+      "source_located_pilot": true,
+      "source_located_claims": 2,
+      "subject_specific_chapter_draft": true,
+      "framework_only": false,
+      "approved": false,
+      "published": false,
+      "research_stage": "sourced_research"
+    }
+  ],
+  "totals": {
+    "subjects": 25,
+    "source_located_subjects": 14,
+    "source_located_claims": 31,
+    "unverified_event_lead_subjects": 11,
+    "unverified_event_leads": 11,
+    "chapter_draft_subjects": 5,
+    "framework_only": 0,
+    "approved": 0,
+    "published": 0,
+    "expanded_season_draft_subjects": 10,
+    "expanded_season_sections": 30
+  },
+  "note": "Source-located evidence is not the same as a verified historical claim. Eleven constructor/circuit subjects have unverified official-result index leads pending F1DB identity reconciliation; exclude these from sourced-claim counts."
+}

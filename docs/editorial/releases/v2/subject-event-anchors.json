@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "status": "unverified_event_result_leads_unapproved",
+  "as_of": "2026-10-22",
+  "note": "11 candidate event-result leads, not independently checked event/venue/constructor associations. Research leads must not count as verified historical claims.",
+  "items": [
+    {
+      "subject_id": "constructor-williams",
+      "subject": "Williams",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Williams: a race result that anchors the timeline",
+        "uk": "Williams: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "constructor-williams-1979-winner",
+          "text": {
+            "en": "Clay Regazzoni won the 1979 Great Britain Grand Prix.",
+            "uk": "Клей Регаццоні виграв Гран-прі Велика Британія 1979 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1979/races",
+            "locator": "1979 Race Results table, Great Britain row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Clay Regazzoni as the winner of the 1979 Great Britain Grand Prix. That result gives this constructor story a dated reference point. It does not by itself establish corporate continuity, car specifications or the team's complete sporting history.",
+            "uk": "Архів результатів Формули-1 називає Клей Регаццоні переможцем Гран-прі Велика Британія 1979 року. Цей результат дає історії конструктора датовану опорну точку. Сам собою він не доводить юридичну спадкоємність, характеристики боліда чи повну спортивну історію команди."
+          },
+          "claim_ids": [
+            "constructor-williams-1979-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full team history must distinguish the constructor from the entrant and connect each era to contemporary team documents, chassis and engine records, and race-by-race evidence. An isolated result is a starting point, not proof of a first victory.",
+            "uk": "Повна історія команди має розрізняти конструктора й учасника чемпіонату та пов’язувати кожну епоху з тогочасними документами команди, даними про шасі й двигуни та протоколами гонок. Окремий результат — початок дослідження, а не доказ першої перемоги."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "constructor-mercedes",
+      "subject": "Mercedes",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Mercedes: a race result that anchors the timeline",
+        "uk": "Mercedes: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "constructor-mercedes-1954-winner",
+          "text": {
+            "en": "Juan Manuel Fangio won the 1954 France Grand Prix.",
+            "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Франція 1954 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1954/races",
+            "locator": "1954 Race Results table, France row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Juan Manuel Fangio as the winner of the 1954 France Grand Prix. That result gives this constructor story a dated reference point. It does not by itself establish corporate continuity, car specifications or the team's complete sporting history.",
+            "uk": "Архів результатів Формули-1 називає Хуан-Мануель Фанхіо переможцем Гран-прі Франція 1954 року. Цей результат дає історії конструктора датовану опорну точку. Сам собою він не доводить юридичну спадкоємність, характеристики боліда чи повну спортивну історію команди."
+          },
+          "claim_ids": [
+            "constructor-mercedes-1954-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full team history must distinguish the constructor from the entrant and connect each era to contemporary team documents, chassis and engine records, and race-by-race evidence. An isolated result is a starting point, not proof of a first victory.",
+            "uk": "Повна історія команди має розрізняти конструктора й учасника чемпіонату та пов’язувати кожну епоху з тогочасними документами команди, даними про шасі й двигуни та протоколами гонок. Окремий результат — початок дослідження, а не доказ першої перемоги."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "constructor-red-bull-racing",
+      "subject": "Red Bull Racing",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Red Bull Racing: a race result that anchors the timeline",
+        "uk": "Red Bull Racing: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "constructor-red-bull-racing-2009-winner",
+          "text": {
+            "en": "Sebastian Vettel won the 2009 China Grand Prix.",
+            "uk": "Себастьян Феттель виграв Гран-прі Китай 2009 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/2009/races",
+            "locator": "2009 Race Results table, China row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Sebastian Vettel as the winner of the 2009 China Grand Prix. That result gives this constructor story a dated reference point. It does not by itself establish corporate continuity, car specifications or the team's complete sporting history.",
+            "uk": "Архів результатів Формули-1 називає Себастьян Феттель переможцем Гран-прі Китай 2009 року. Цей результат дає історії конструктора датовану опорну точку. Сам собою він не доводить юридичну спадкоємність, характеристики боліда чи повну спортивну історію команди."
+          },
+          "claim_ids": [
+            "constructor-red-bull-racing-2009-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full team history must distinguish the constructor from the entrant and connect each era to contemporary team documents, chassis and engine records, and race-by-race evidence. An isolated result is a starting point, not proof of a first victory.",
+            "uk": "Повна історія команди має розрізняти конструктора й учасника чемпіонату та пов’язувати кожну епоху з тогочасними документами команди, даними про шасі й двигуни та протоколами гонок. Окремий результат — початок дослідження, а не доказ першої перемоги."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-spa-francorchamps",
+      "subject": "Spa-Francorchamps",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Spa-Francorchamps: a race result that anchors the timeline",
+        "uk": "Spa-Francorchamps: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-spa-francorchamps-1950-winner",
+          "text": {
+            "en": "Juan Manuel Fangio won the 1950 Belgium Grand Prix.",
+            "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Бельгія 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1950/races",
+            "locator": "1950 Race Results table, Belgium row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Juan Manuel Fangio as the winner of the 1950 Belgium Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Хуан-Мануель Фанхіо переможцем Гран-прі Бельгія 1950 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-spa-francorchamps-1950-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-monza",
+      "subject": "Monza",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Monza: a race result that anchors the timeline",
+        "uk": "Monza: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-monza-1950-winner",
+          "text": {
+            "en": "Nino Farina won the 1950 Italy Grand Prix.",
+            "uk": "Ніно Фаріна виграв Гран-прі Італія 1950 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1950/races",
+            "locator": "1950 Race Results table, Italy row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Nino Farina as the winner of the 1950 Italy Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Ніно Фаріна переможцем Гран-прі Італія 1950 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-monza-1950-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-suzuka",
+      "subject": "Suzuka",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Suzuka: a race result that anchors the timeline",
+        "uk": "Suzuka: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-suzuka-1987-winner",
+          "text": {
+            "en": "Gerhard Berger won the 1987 Japan Grand Prix.",
+            "uk": "Герхард Бергер виграв Гран-прі Японія 1987 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1987/races",
+            "locator": "1987 Race Results table, Japan row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Gerhard Berger as the winner of the 1987 Japan Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Герхард Бергер переможцем Гран-прі Японія 1987 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-suzuka-1987-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-interlagos",
+      "subject": "Interlagos",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Interlagos: a race result that anchors the timeline",
+        "uk": "Interlagos: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-interlagos-1973-winner",
+          "text": {
+            "en": "Emerson Fittipaldi won the 1973 Brazil Grand Prix.",
+            "uk": "Емерсон Фіттіпальді виграв Гран-прі Бразилія 1973 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1973/races",
+            "locator": "1973 Race Results table, Brazil row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Emerson Fittipaldi as the winner of the 1973 Brazil Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Емерсон Фіттіпальді переможцем Гран-прі Бразилія 1973 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-interlagos-1973-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-n-rburgring",
+      "subject": "Nürburgring",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Nürburgring: a race result that anchors the timeline",
+        "uk": "Nürburgring: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-n-rburgring-1951-winner",
+          "text": {
+            "en": "Alberto Ascari won the 1951 Germany Grand Prix.",
+            "uk": "Альберто Аскарі виграв Гран-прі Німеччина 1951 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1951/races",
+            "locator": "1951 Race Results table, Germany row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Alberto Ascari as the winner of the 1951 Germany Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Альберто Аскарі переможцем Гран-прі Німеччина 1951 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-n-rburgring-1951-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-imola",
+      "subject": "Imola",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Imola: a race result that anchors the timeline",
+        "uk": "Imola: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-imola-1981-winner",
+          "text": {
+            "en": "Nelson Piquet won the 1981 San Marino Grand Prix.",
+            "uk": "Нельсон Піке виграв Гран-прі Сан-Марино 1981 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1981/races",
+            "locator": "1981 Race Results table, San Marino row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Nelson Piquet as the winner of the 1981 San Marino Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Нельсон Піке переможцем Гран-прі Сан-Марино 1981 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-imola-1981-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-circuit-of-the-americas",
+      "subject": "Circuit of the Americas",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Circuit of the Americas: a race result that anchors the timeline",
+        "uk": "Circuit of the Americas: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-circuit-of-the-americas-2012-winner",
+          "text": {
+            "en": "Lewis Hamilton won the 2012 United States Grand Prix.",
+            "uk": "Льюїс Гамільтон виграв Гран-прі США 2012 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/2012/races",
+            "locator": "2012 Race Results table, United States row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Lewis Hamilton as the winner of the 2012 United States Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Льюїс Гамільтон переможцем Гран-прі США 2012 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-circuit-of-the-americas-2012-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    },
+    {
+      "subject_id": "circuit-albert-park",
+      "subject": "Albert Park",
+      "scope": "unverified_event_result_lead",
+      "headline": {
+        "en": "Albert Park: a race result that anchors the timeline",
+        "uk": "Albert Park: результат гонки як опора хронології"
+      },
+      "claims": [
+        {
+          "id": "circuit-albert-park-1996-winner",
+          "text": {
+            "en": "Damon Hill won the 1996 Australia Grand Prix.",
+            "uk": "Деймон Гілл виграв Гран-прі Австралія 1996 року."
+          },
+          "evidence": {
+            "url": "https://www.formula1.com/en/results/1996/races",
+            "locator": "1996 Race Results table, Australia row, winner column",
+            "accessed": "2026-10-22",
+            "kind": "unverified_official_index_lead"
+          }
+        }
+      ],
+      "sections": [
+        {
+          "id": "race-anchor",
+          "title": {
+            "en": "One documented race",
+            "uk": "Одна задокументована гонка"
+          },
+          "body": {
+            "en": "The Formula 1 results archive records Damon Hill as the winner of the 1996 Australia Grand Prix. That result gives this circuit story a dated reference point. It does not by itself establish the exact track geometry, the circuit's first-ever event or all later layout changes.",
+            "uk": "Архів результатів Формули-1 називає Деймон Гілл переможцем Гран-прі Австралія 1996 року. Цей результат дає історії траси датовану опорну точку. Сам собою він не доводить точну геометрію траси, дату її першої гонки або всі подальші зміни конфігурації."
+          },
+          "claim_ids": [
+            "circuit-albert-park-1996-winner"
+          ]
+        },
+        {
+          "id": "research-path",
+          "title": {
+            "en": "What the archive cannot tell us",
+            "uk": "Чого не розповідає архів"
+          },
+          "body": {
+            "en": "A full circuit history needs event-specific layout identification and dated evidence of modifications. The event title alone cannot tell readers which corners, sectors or lap-record category applied in a given year.",
+            "uk": "Повна історія траси потребує визначення конфігурації для кожного етапу та датованих свідчень про зміни. Сама назва Гран-прі не визначає, які повороти, сектори чи категорія рекорду кола були актуальними в певному році."
+          },
+          "claim_ids": []
+        }
+      ],
+      "review_state": "pending_independent_human_review",
+      "published": false,
+      "identity_reconciliation": {
+        "status": "pending",
+        "race_id": null,
+        "circuit_id": null,
+        "constructor_id": null,
+        "layout_id": null,
+        "warning": "Do not publish or associate this event with the subject until the exact F1DB race, circuit/layout and constructor identities have been reconciled."
+      }
+    }
+  ]
+}

@@ -118,17 +118,18 @@
 }
 .yearDisplay {
   display:grid;
-  grid-template-columns:.8fr 1.2fr;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
   gap:48px;
   align-items:center;
   padding:32px 0 48px;
 }
 .decadeNumber {
+  font-family:var(--font-display);
   font-size:clamp(5rem,12vw,10rem);
   line-height:.9;
   letter-spacing:-.09em;
   margin:0;
-  font-weight:800;
+  font-weight:400;
   color:var(--ink);
   font-variant-numeric:tabular-nums;
 }
@@ -169,12 +170,12 @@
     padding:24px;
   }
   .yearDisplay {
-    grid-template-columns:1fr;
+    grid-template-columns:minmax(0,1fr);
     gap:32px;
     padding-top:24px;
   }
   .decadeNumber {
-    font-size:6rem;
+    font-size:clamp(2.5rem,17vw,6rem);
   }
   .decadeNumber>span {
     display:inline;
