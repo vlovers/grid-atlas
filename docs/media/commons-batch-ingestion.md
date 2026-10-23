@@ -18,7 +18,7 @@ node scripts/ingest-commons-batch.mjs \
   --output-dir /tmp/grid-atlas-private-originals
 ```
 
-The tool checks research-only staging integrity, duplicate IDs, source evidence and output-directory safety before downloading. Each candidate then uses `ingest-commons-original.mjs`: the official Commons API supplies the original URL; expected byte count, dimensions **and current API SHA-1** are checked before the binary request; downloaded bytes must also match the pinned Commons SHA-1. A local SHA-256 is calculated and reported. Writes use a temporary file and no-clobber publication into the **private originals directory**.
+The tool checks research-only staging integrity, duplicate IDs, source evidence and output-directory safety before downloading. Each candidate then uses `ingest-commons-original.mjs`: the official Commons API supplies the original URL; expected byte count, dimensions **and current API SHA-1** are checked before the binary request; downloaded bytes must also match the pinned Commons SHA-1. A local SHA-256 is calculated and reported. Commons API metadata is streamed with a **1 MiB hard response limit** (including when Content-Length is absent or misleading) and must decode as UTF-8 JSON before the original binary is requested. Writes use a temporary file and no-clobber publication into the **private originals directory**.
 
 The report includes `ingested`, `blocked`, per-candidate SHA-256 and the observed Commons API source. If any item is blocked, the command exits nonzero while retaining independently verified originals from earlier items. An existing original is never overwritten. Re-running the same command will report the existing file as blocked; use the offline inspector to recheck it instead:
 
