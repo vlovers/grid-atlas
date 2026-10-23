@@ -30,11 +30,20 @@ function exactImageInfo(payload, title, evidence) {
   if (info.size !== evidence.bytes || info.width !== evidence.width || info.height !== evidence.height) throw Error('Commons metadata differs from pinned original evidence');
   if (typeof info.sha1 !== 'string' || !/^[a-f0-9]{40}$/.test(info.sha1) || info.sha1 !== evidence.sha1) throw Error('Commons API original SHA-1 differs from pinned evidence');
   const url = new URL(info.url);
+  // Commons imageinfo currently appends campaign tracking parameters to some
+  // original URLs. Drop only these observed keys; never send them to the file
+  // host and never accept arbitrary query parameters or redirects.
+  const trackingKeys = new Set(['utm_source', 'utm_campaign', 'utm_content']);
+  const queryKeys = [...url.searchParams.keys()];
+  const safeTracking = queryKeys.length <= trackingKeys.size &&
+    new Set(queryKeys).size === queryKeys.length &&
+    queryKeys.every(key => trackingKeys.has(key));
+  if (safeTracking) for (const key of queryKeys) url.searchParams.delete(key);
   const unsafeReason = url.protocol !== 'https:' ? 'protocol'
     : url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password ? 'origin'
-    : url.search || url.hash ? 'query or fragment (keys=' + [...url.searchParams.keys()].slice(0, 4).map(key => key.slice(0, 40)).join(',') + ', fragment=' + Boolean(url.hash) + ')'
+    : !safeTracking || url.search || url.hash ? 'query or fragment'
     : !url.pathname.startsWith('/wikipedia/commons/') ? 'path prefix'
-    : !/\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
+    : !/\\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
     : null;
   if (unsafeReason) throw Error('Commons API supplied an unsafe original URL (' + unsafeReason + ')');
   return { originalUrl: url.href, sourceTimestamp: info.timestamp ?? null };
