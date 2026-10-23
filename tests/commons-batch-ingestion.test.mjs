@@ -56,6 +56,8 @@ test('rejects duplicate IDs before any download', async () => inPrivateDir(async
 test('blocks unpinned IDs but continues valid candidates', async () => inPrivateDir(async dir => {
   const args = fixtures(dir);
   args.researchIds = ['research-ferrari-f2004-2004', ids[0]];
+  // Simulate an otherwise valid staged candidate whose Commons original is not pinned.
+  args.sourceEvidence.entries = args.sourceEvidence.entries.filter(item => item.research_id !== 'research-ferrari-f2004-2004');
   const calls = [];
   args.ingestImpl = async ({ researchId }) => { calls.push(researchId); return receipt(researchId); };
   const result = await ingestCommonsBatch(args);

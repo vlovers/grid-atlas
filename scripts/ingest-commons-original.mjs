@@ -26,6 +26,7 @@ function exactImageInfo(payload, title, evidence) {
   if (page.title.replaceAll('_', ' ') !== title) throw Error('Commons API returned a different file title');
   const info = page.imageinfo[0];
   if (info.size !== evidence.bytes || info.width !== evidence.width || info.height !== evidence.height) throw Error('Commons metadata differs from pinned original evidence');
+  if (typeof info.sha1 !== 'string' || !/^[a-f0-9]{40}$/.test(info.sha1) || info.sha1 !== evidence.sha1) throw Error('Commons API original SHA-1 differs from pinned evidence');
   const url = new URL(info.url);
   if (url.protocol !== 'https:' || url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password || url.search || url.hash || !url.pathname.startsWith('/wikipedia/commons/') || !/\.(?:jpg|jpeg|png)$/i.test(url.pathname)) {
     throw Error('Commons API supplied an unsafe original URL');
@@ -59,7 +60,7 @@ export async function ingestCommonsOriginal({ researchId, outputDir, staging, so
   const dirStat = lstatSync(directory);
   if (!dirStat.isDirectory() || dirStat.isSymbolicLink()) throw Error('Output directory must not be a symlink');
   const apiUrl = new URL('https://commons.wikimedia.org/w/api.php');
-  for (const [key, value] of Object.entries({ action: 'query', prop: 'imageinfo', iiprop: 'url|size|timestamp', titles: title, format: 'json', formatversion: '2' })) apiUrl.searchParams.set(key, value);
+  for (const [key, value] of Object.entries({ action: 'query', prop: 'imageinfo', iiprop: 'url|size|sha1|timestamp', titles: title, format: 'json', formatversion: '2' })) apiUrl.searchParams.set(key, value);
   const apiResponse = await responseOrFail(await fetchImpl(apiUrl.href, { redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { accept: 'application/json' } }), 'Commons API request');
   const metadata = await apiResponse.json();
   const { originalUrl, sourceTimestamp } = exactImageInfo(metadata, title, evidence);
