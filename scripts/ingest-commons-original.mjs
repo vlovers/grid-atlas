@@ -32,7 +32,7 @@ function exactImageInfo(payload, title, evidence) {
   const url = new URL(info.url);
   const unsafeReason = url.protocol !== 'https:' ? 'protocol'
     : url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password ? 'origin'
-    : url.search || url.hash ? 'query or fragment'
+    : url.search || url.hash ? 'query or fragment (keys=' + [...url.searchParams.keys()].slice(0, 4).map(key => key.slice(0, 40)).join(',') + ', fragment=' + Boolean(url.hash) + ')'
     : !url.pathname.startsWith('/wikipedia/commons/') ? 'path prefix'
     : !/\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
     : null;
