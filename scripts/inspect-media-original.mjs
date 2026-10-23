@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { lstatSync, readFileSync } from 'node:fs';
+import { closeSync, constants, fstatSync, lstatSync, openSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
@@ -107,8 +107,24 @@ export function inspectOriginal({filePath,researchId,staging,expectedSha256,expe
   const absolute=resolve(filePath);
   const stat=lstatSync(absolute);
   if(!stat.isFile() || stat.isSymbolicLink() || stat.size>MAX_BYTES || stat.size<16) throw Error('Original must be a regular file of 16 bytes to 40 MiB');
-  const bytes=readFileSync(absolute);
-  if(bytes.length!==stat.size)throw Error('Original changed during inspection');
+  // Inspect through the opened descriptor, not a path re-resolved after lstat:
+  // replacing a checked path with a symlink must never redirect our read.
+  let fd, bytes;
+  try {
+    fd=openSync(absolute,constants.O_RDONLY | (constants.O_NOFOLLOW ?? 0));
+    const opened=fstatSync(fd);
+    if(!opened.isFile() || opened.dev!==stat.dev || opened.ino!==stat.ino || opened.size!==stat.size) {
+      throw Error('Original changed between path validation and opening');
+    }
+    bytes=readFileSync(fd);
+    const after=fstatSync(fd);
+    if(bytes.length!==opened.size || after.size!==opened.size ||
+       after.mtimeMs!==opened.mtimeMs || after.ctimeMs!==opened.ctimeMs) {
+      throw Error('Original changed during inspection');
+    }
+  } finally {
+    if(fd!==undefined)closeSync(fd);
+  }
   if(expectedBytes!==undefined&&(!Number.isSafeInteger(expectedBytes)||expectedBytes<1||bytes.length!==expectedBytes))throw Error('Original byte count does not match source evidence');
   const decoded=inspectImageBytes(bytes);
   if(decoded.mime!==entry.image.mime) throw Error('Original signature does not match staged MIME');
