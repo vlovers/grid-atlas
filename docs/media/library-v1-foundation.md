@@ -59,9 +59,14 @@ owns a historical photograph. No verified CC0 pilot was established in this pass
 An independently licensed photograph needs recorded permission for the intended
 use; public accessibility and noncommercial intent do not substitute for it.
 
-Research PR [#221](https://github.com/vlovers/grid-atlas/pull/221) was opened
-during implementation. Its additional metadata-only candidates remain separate
-research, with zero approvals. This batch does not duplicate that inventory.
+Research PR [#221](https://github.com/vlovers/grid-atlas/pull/221) and follow-up
+media work merged during implementation. Current main also has pinned Commons
+original evidence and safe research-only ingestion through #233. This batch was
+rebased onto that work: it preserves those tools and does not duplicate the
+inventory or promote research files into public delivery. See the current
+[primary-source observations](commons-primary-source-checks-2026-10-23.md) and
+[batch-ingestion contract](commons-batch-ingestion.md). These additions do not
+clear the earlier Senna/Hamilton/Fangio candidates or supply human approval.
 
 ## Next review batch
 

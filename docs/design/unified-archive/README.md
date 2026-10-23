@@ -1,8 +1,9 @@
 # Unified archive experience and media foundation
 
-Base: main `c30d657`. This is the visual/media batch paired with reliability
-PR [#222](https://github.com/vlovers/grid-atlas/pull/222). Each branch targets main
-independently. Both use the same genuine pinned F1DB import for acceptance.
+Initial audit base: main `c30d657`; rebased onto `888e899` after concurrent media
+and reliability merges. This is the visual/media batch paired with reliability
+PR [#222](https://github.com/vlovers/grid-atlas/pull/222). PR A was merged externally after its CI rerun passed. This branch targets current
+main and preserves the newly merged SVG covers and research-ingestion tools. Both use the same genuine pinned F1DB import for acceptance.
 
 ## Routes and design
 
@@ -19,7 +20,7 @@ statistics, tabs, section headings and source attribution now cover:
 - `/uk|en/seasons/:year`: calendar cover, imported-field statistics, section
   navigation and reading guidance. Source championship classifications remain
   separate from race-result sums.
-- `/uk|en/circuits/:id`: historical-event cover and statistics, source-backed
+- `/uk|en/circuits/:id`: source-backed SVG cover (record preview when unavailable) and statistics, source-backed
   layout experience moved ahead of ancillary history, consistent editorial
   colors/typography, and readable section links. Existing exact race/layout
   associations, SVG bytes/attribution and controls remain intact.
@@ -71,5 +72,6 @@ suite remains enabled. Screenshots and final executed results are listed in
 the accompanying verification report.
 
 No merge or external deployment is part of this batch. Rights review, researched
-biographies, the previously observed intermittent circuit hydration event and
-the operational launch gates remain explicit follow-ups.
+biographies, the operational launch gates remain explicit follow-ups. The shared renderer
+hydration defect was subsequently fixed in main through PR #234; this batch
+retains that focused upstream backport and its deterministic regressions.

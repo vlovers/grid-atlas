@@ -28,9 +28,11 @@ export function syntheticAsset(variant: string): MediaAsset {
 
 export function syntheticCollectionAsset(variant: string): MediaAsset {
   const asset=syntheticAsset('verified');
+  const illustration=variant==='gallery-car'||variant==='gallery-ai';
   asset.id='synthetic-collection';
-  asset.subject={type:variant==='gallery-car'?'constructor':'driver',id:'fixture-subject'};
-  asset.kind=variant==='gallery-car'?'car-illustration':'portrait';
+  asset.subject={type:illustration?'constructor':'driver',id:'fixture-subject'};
+  asset.kind=illustration?'car-illustration':'portrait';
+  asset.ai_generated=variant==='gallery-ai';
   asset.layout=null;
   asset.review!.payload_sha256=mediaFingerprint(asset);
   if(variant==='gallery-withdrawn')asset.status='withdrawn';
