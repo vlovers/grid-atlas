@@ -35,11 +35,13 @@ export function auditCommonsEvidence(staging, evidence) {
     if (entry.source_author !== candidate.creator || entry.source_license !== candidate.license?.identifier) errors.push(id + ': author or license differs from staged observation');
     if (candidate.image?.mime !== 'image/jpeg' && candidate.image?.mime !== 'image/png') errors.push(id + ': unsupported staged MIME');
   }
+  const missing = [...candidates.keys()].filter(id => !ids.has(id));
+  for (const id of missing) errors.push(id + ': missing pinned Commons source evidence');
   return {
     ok: errors.length === 0,
     source_evidenced: ids.size,
     staged: staging.entries.length,
-    missing_source_evidence: [...candidates.keys()].filter(id => !ids.has(id)),
+    missing_source_evidence: missing,
     pending_independent_review: [...ids],
     publication_allowed: false,
     errors
