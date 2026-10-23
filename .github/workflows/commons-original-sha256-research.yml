@@ -2,15 +2,6 @@ name: Commons originals SHA-256 research (unpublished)
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - '.github/workflows/commons-original-sha256-research.yml'
-      - 'scripts/ingest-commons-original.mjs'
-      - 'scripts/ingest-commons-batch.mjs'
-      - 'scripts/inspect-media-original.mjs'
-      - 'scripts/build-commons-research-report.mjs'
-      - 'docs/media/commons-original-evidence.json'
-      - 'docs/media/cross-era-staging.json'
 
 permissions:
   contents: read
