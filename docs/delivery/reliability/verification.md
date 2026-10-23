@@ -68,3 +68,11 @@ replays; 35 development journeys under CPU throttling also did not reproduce it.
 The navigation regression now anchors the destination URL exactly and records the
 active URL with any browser error. The cause of the isolated hydration event
 remains unconfirmed; a successful rerun does not constitute a root-cause repair.
+
+
+Follow-up, 24 October: main subsequently merged the confirmed renderer repair in
+PR [#234](https://github.com/vlovers/grid-atlas/pull/234). The
+[separate investigation](circuit-hydration-232.md) records deterministic before/after
+reproduction and the scoped upstream backport. The visual/media batch includes
+that merged fix and revalidates its revised circuit cover and genuine archive
+journeys; the earlier paragraph describes what was known at PR A's initial run.

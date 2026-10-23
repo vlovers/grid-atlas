@@ -1,6 +1,6 @@
 # Unified archive experience and media foundation
 
-Initial audit base: main `c30d657`; rebased onto `888e899` after concurrent media
+Initial audit base: main `c30d657`; rebased onto `41612ad` after concurrent media
 and reliability merges. This is the visual/media batch paired with reliability
 PR [#222](https://github.com/vlovers/grid-atlas/pull/222). PR A was merged externally after its CI rerun passed. This branch targets current
 main and preserves the newly merged SVG covers and research-ingestion tools. Both use the same genuine pinned F1DB import for acceptance.
@@ -69,7 +69,7 @@ statistic label. Both now wrap without clipping or weakening the assertions.
 `playwright.unified.config.ts` reuses the real PostgreSQL/production-web fixture
 harness and adds a separate WebKit acceptance job. The established full browser
 suite remains enabled. Screenshots and final executed results are listed in
-the accompanying verification report.
+the [verification report](verification.md).
 
 No merge or external deployment is part of this batch. Rights review, researched
 biographies, the operational launch gates remain explicit follow-ups. The shared renderer

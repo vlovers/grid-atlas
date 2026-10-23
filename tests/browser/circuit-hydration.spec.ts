@@ -27,9 +27,11 @@ for (const locale of ['en', 'uk'] as const) {
             const html = await response!.text();
             expect(html).toContain('<option value="2" selected="">');
             const serverIds = [...html.matchAll(/<linearGradient id="([^"]+)"/g)].map(match => match[1]);
-            expect(serverIds).toHaveLength(2);
-            await expect(page.getByTestId('story-header').locator('linearGradient')).toHaveCount(2);
-            expect(await page.getByTestId('story-header').locator('linearGradient').evaluateAll(nodes => nodes.map(node => node.id))).toEqual(serverIds);
+            expect(serverIds).toHaveLength(0);
+            expect(html).toContain('data-testid="archive-plate"');
+            await expect(page.getByTestId('editorial-hero').locator('linearGradient')).toHaveCount(0);
+            await expect(page.getByTestId('archive-plate').getByRole('link').first()).toHaveAttribute('href', `/${locale}/races/1`);
+            expect(await page.getByTestId('editorial-hero').locator('linearGradient').evaluateAll(nodes => nodes.map(node => node.id))).toEqual(serverIds);
           }
           await expect(page.locator('main h1')).toHaveText('100%_ Test Circuit');
           const select = page.getByTestId('circuit-layout-select');
