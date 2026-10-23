@@ -4,6 +4,9 @@ on:
     paths:
       - 'apps/api/**'
       - 'apps/web/**'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'patches/**'
       - 'tests/real-archive/**'
       - 'playwright.real-archive.config.ts'
       - 'packages/database/**'
@@ -25,6 +28,9 @@ on:
     paths:
       - 'apps/api/**'
       - 'apps/web/**'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'patches/**'
       - 'tests/real-archive/**'
       - 'playwright.real-archive.config.ts'
       - 'packages/database/**'
