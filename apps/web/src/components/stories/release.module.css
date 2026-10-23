@@ -432,3 +432,8 @@
 .firstWinEvidence h3{margin:.8rem 0}
 .firstWinEvidence small{display:block;margin-top:1.5rem;color:var(--muted);line-height:1.6}
 @media(max-width:700px){.firstWin{grid-template-columns:1fr;padding:1.5rem}.firstWinPosition{font-size:clamp(5rem,24vw,8rem)}}
+
+.firstWinCircuit { margin:0; min-width:0; display:grid; justify-items:center; gap:1rem; }
+.firstWinCircuit img { display:block; width:min(100%,440px); height:auto; aspect-ratio:1; object-fit:contain; }
+.firstWinCircuit figcaption { text-align:center; font-size:.85rem; line-height:1.6; color:var(--muted); }
+.firstWinCircuit figcaption a { display:inline-block; margin-inline:.25rem; }
