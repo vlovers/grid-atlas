@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createHash } from 'node:crypto';
-import { readFileSync, mkdtempSync, rmSync, existsSync } from 'node:fs';
+import { readFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { expectedObservedSha256 } from '../scripts/commons-original-observation-guard.mjs';
