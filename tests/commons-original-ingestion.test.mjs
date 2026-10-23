@@ -25,8 +25,8 @@ const id='research-test';
 const filePage='https://commons.wikimedia.org/wiki/File:Test.png';
 const originalUrl='https://upload.wikimedia.org/wikipedia/commons/a/ab/Test.png';
 function fixtures(bytes=png()) {
- const staging={lane:'research_only',publication_allowed:false,entries:[{id,file_page_url:filePage,status:'candidate',review:null,delivery:{local_path:null,remote_url:null},image:{mime:'image/png',width:null,height:null}}]};
- const sourceEvidence={lane:'research_only',publication_allowed:false,entries:[{research_id:id,file_page_url:filePage,sha1:createHash('sha1').update(bytes).digest('hex'),bytes:bytes.length,width:4,height:5,description_oldid:1}]};
+ const staging={schema_version:1,lane:'research_only',publication_allowed:false,entries:[{id,file_page_url:filePage,status:'candidate',review:null,delivery:{local_path:null,remote_url:null},image:{mime:'image/png',width:null,height:null}}]};
+ const sourceEvidence={schema_version:1,lane:'research_only',publication_allowed:false,entries:[{research_id:id,file_page_url:filePage,sha1:createHash('sha1').update(bytes).digest('hex'),bytes:bytes.length,width:4,height:5,description_oldid:1}]};
  return {staging,sourceEvidence};
 }
 function mockFetch(bytes, { url=originalUrl, size=bytes.length, responseBytes=bytes, redirect=false }={}) {
