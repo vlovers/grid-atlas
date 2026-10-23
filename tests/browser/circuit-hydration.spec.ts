@@ -4,6 +4,7 @@ for (const locale of ['en', 'uk'] as const) {
   test(`${locale}: repeated circuit hydration, reloads and internal navigation`, async ({ page }, testInfo) => {
     test.setTimeout(120_000);
     let cycle = 0;
+    let completed = false;
     const errors: object[] = [];
     const network: object[] = [];
     page.on('pageerror', error => errors.push({ cycle, url: page.url(), time: new Date().toISOString(), message: error.message, stack: error.stack }));
@@ -51,9 +52,10 @@ for (const locale of ['en', 'uk'] as const) {
           expect(errors, `cycle ${cycle}, ${page.url()}`).toEqual([]);
         });
       }
+      completed = true;
     } finally {
       await testInfo.attach('hydration-errors', { body: JSON.stringify(errors, null, 2), contentType: 'application/json' });
-      if (testInfo.status !== testInfo.expectedStatus) {
+      if (!completed) {
         await testInfo.attach('hydration-network', { body: JSON.stringify(network, null, 2), contentType: 'application/json' });
         await testInfo.attach('hydration-dom', { body: await page.content(), contentType: 'text/html' });
       }

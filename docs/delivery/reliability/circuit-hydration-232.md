@@ -94,6 +94,7 @@ those gates even when application files are untouched.
 
 ## Validation
 
+- Final regression rerun, including raw SSR/client SVG IDs: **12 passed**.
 - Minimal regression after backport: **8 passed** (both families/modes/projects).
 - Production circuit stress: **20 passed**, five repetitions of the four
   locale/project cases: **600 cycles**, **1,200 direct loads/reloads** and
