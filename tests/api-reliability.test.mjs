@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync } from 'node:fs';
-import { ApiRequestError, apiOrigin, arrayData, requestApi, optionalEnrichment } from '../apps/web/src/lib/api-client.ts';
+import { ApiRequestError, apiOrigin, arrayData, requestApi, requestArray, optionalEnrichment } from '../apps/web/src/lib/api-client.ts';
 
 test('readiness contract tracks every checked-in migration and exact checksum', () => {
   const contract = JSON.parse(readFileSync('apps/api/src/schema-contract.json', 'utf8'));
@@ -54,4 +54,21 @@ test('optional enrichment distinguishes absent content from an outage and never 
   assert.deepEqual(await optionalEnrichment(async () => null), { status: 'available', value: null });
   assert.deepEqual(await optionalEnrichment(async () => { throw new ApiRequestError('http', 503); }), { status: 'unavailable', value: null });
   await assert.rejects(optionalEnrichment(async () => { throw new TypeError('bug'); }), TypeError);
+});
+
+
+test('optional record connections distinguish an empty archive from HTTP and envelope failures', async () => {
+  const path = '/api/constructors/114/seasons/1988/drivers?private=secret-canary';
+  const diagnostics = [];
+  const load = payload => optionalEnrichment(() => requestArray(path, { ...options,
+    log: record => diagnostics.push(record), request: async () => new Response(JSON.stringify(payload)) }));
+  assert.deepEqual(await load({ data: [] }), { status: 'available', value: [] });
+  assert.deepEqual(await load({ data: [{ driver_id: '72', driver_name: 'Recorded driver' }] }),
+    { status: 'available', value: [{ driver_id: '72', driver_name: 'Recorded driver' }] });
+  assert.deepEqual(await load({ data: null }), { status: 'unavailable', value: null });
+  assert.deepEqual(diagnostics, [{ event: 'archive_api_failed', endpoint: '/api/constructors/:id/seasons/:id/drivers', reason: 'contract' }]);
+  assert.deepEqual(await optionalEnrichment(() => requestArray(path, { ...options,
+    log: () => {}, request: async () => new Response('', { status: 503 }) })), { status: 'unavailable', value: null });
+  await assert.rejects(requestArray(path, { ...options, log: () => {},
+    request: async () => new Response('', { status: 503 }) }), { status: 503 });
 });

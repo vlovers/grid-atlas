@@ -1,7 +1,11 @@
 import { RaceClassification } from '@/components/stories/race-classification';
 import { RaceConstructorField } from '@/components/stories/race-constructor-field';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
-import { StoryHeader } from '@/components/stories/story-header';
+import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
+import { ArchivePlate } from '@/components/editorial/archive-plate';
+import { RecordReadingNote } from '@/components/editorial/record-reading-note';
+import { archiveCopy } from '@/components/editorial/archive-copy';
+import archiveStyles from '@/components/editorial/archive.module.css';
 import { storyCopy } from '@/components/stories/copy';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -33,13 +37,24 @@ export default async function RacePage({ params }: Props) {
   const podium = results.filter(r => ['1', '2', '3'].includes(r.position_text));
   const sharedCount = results.filter(r => r.shared_car).length;
   const retirements = results.filter(r => Boolean(r.reason_retired)).length;
-  return <section className="page">
-    <StoryHeader title={race.official_name} eyebrow={`${storyCopy[locale].raceHeader} / ${race.season_year} · ${t('round', { round: race.round })}`} locale={locale} kind="grid" marker={race.season_year}
-      lead={<p className="lead">{race.race_date ?? t('unknownDate')} · {race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}</p>} />
+  const a = archiveCopy[locale];
+  return <section className={`page ${archiveStyles.page}`} data-testid="race-dossier">
+    <EditorialHero className={archiveStyles.raceHero} title={race.official_name} eyebrow={`${storyCopy[locale].raceHeader} / ${race.season_year}`}
+      context={<><span>{race.race_date ?? t('unknownDate')}</span><span>{t('round', { round: race.round })}</span></>}
+      lead={race.circuit_id ? <Link href={`/circuits/${race.circuit_id}`}>{race.circuit_name} ↗</Link> : t('unknownCircuit')}
+      media={<ArchivePlate marker={String(race.round).padStart(2, '0')} label={`${race.season_year} / ${a.results}`} note={t('raceResultsLead')}
+        entries={results.slice(0, 3).map(result => ({ id: String(result.position_display_order), href: `/drivers/${result.driver_id}`, title: result.driver, meta: `${result.position_text} / ${result.constructor}${result.shared_car ? ` / ${t('sharedCar')}` : ''}` }))} />}
+      statistics={[{ label: locale === 'uk' ? 'Показані записи' : 'Displayed entries', value: results.length }, { label: t('driversTitle'), value: new Set(results.map(result => result.driver_id)).size }, { label: t('constructorsTitle'), value: new Set(results.map(result => result.constructor_id)).size }]}
+      scope={a.scope} actions={<><a href="#race-classification">{a.results} ↓</a><Link href={`/seasons/${race.season_year}`}>{t('seasonTitle', { year: race.season_year })} ↗</Link></>} />
+    <SourceAttribution locale={locale} />
+    <EditorialTabs label={a.connections} items={[{ id: 'race-classification', label: a.results }, { id: 'race-connections', label: a.connections }, { id: 'race-context', label: a.editorial }]} />
+    <RecordReadingNote kind="race" locale={locale} />
+    <div id="race-connections">
     <ArchiveJourney testId="race-visual-journey" locale={locale} title={locale === 'uk' ? 'Шлях за межі гонки' : 'Beyond this Grand Prix'} description={locale === 'uk' ? 'Перейдіть від конкретного результату до сезону, траси та записів пілотів.' : 'Follow this race into its season, venue and recorded driver histories.'} items={[{ id: 'season', href: `/seasons/${race.season_year}`, year: race.season_year, overline: locale === 'uk' ? 'Чемпіонат' : 'Championship', title: `${race.season_year}` }, ...(race.circuit_id ? [{ id: 'circuit', href: `/circuits/${race.circuit_id}`, year: race.season_year, overline: locale === 'uk' ? 'Траса' : 'Circuit', title: race.circuit_name ?? race.circuit_id }] : []), ...results.filter(result => result.position_text === '1').slice(0, 1).map(result => ({ id: `driver-${result.driver_id}`, href: `/drivers/${result.driver_id}`, year: race.season_year, overline: locale === 'uk' ? 'Перша позиція у протоколі' : 'First-position result entry', title: result.driver, detail: result.constructor }))]} />
+    </div><div id="race-classification">
     <RaceClassification locale={locale} entries={results.map(result => ({ id: String(result.position_display_order), position: result.position_text, driverId: result.driver_id, driver: result.driver, constructorId: result.constructor_id, constructor: result.constructor, sharedCar: Boolean(result.shared_car) }))} />
     <RaceConstructorField locale={locale} entries={results.map(result => ({ driverId: result.driver_id, driver: result.driver, constructorId: result.constructor_id, constructor: result.constructor, position: result.position_text, sharedCar: Boolean(result.shared_car) }))} />
-    <section aria-label={locale === 'uk' ? 'Паспорт Гран-прі' : 'Grand Prix quick facts'}>
+    </div><section id="race-context" aria-label={locale === 'uk' ? 'Паспорт Гран-прі' : 'Grand Prix quick facts'}>
       <h2>{locale === 'uk' ? 'Гран-прі в цифрах' : 'Grand Prix at a glance'}</h2>
       <div className="driver-grid">
         <article className="driver"><span className="index">{locale === 'uk' ? 'Сезон' : 'Season'}</span><h3><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></h3></article>

@@ -18,6 +18,7 @@ function approved(index = 0) {
   // Synthetic decisions derived from a candidate's structure, never saved to real files.
   const asset = candidate().assets[index];
   Object.assign(asset, { status: 'verified', creator: 'SYNTHETIC TEST CREATOR', attribution: 'Synthetic test credit',
+    ai_generated: false,
     content_sha256: 'a'.repeat(64), modifications: 'None (test fixture)', rights_note: 'Synthetic rights fixture; not a real approval.',
     alt: { uk: 'Тестове зображення', en: 'Synthetic image' }, caption: { uk: 'Тестовий підпис', en: 'Synthetic caption' },
     delivery: { local_path: '/media/fixture.svg', remote_url: null } });
@@ -26,7 +27,7 @@ function approved(index = 0) {
     note: 'Synthetic test approval only', payload_sha256: mediaFingerprint(asset) };
   return asset;
 }
-const envelope = asset => ({ schema_version: 1, lane: 'publication', assets: [asset] });
+const envelope = asset => ({ schema_version: 2, lane: 'publication', assets: [asset] });
 
 test('curated candidates remain private and the publication registry is empty', () => {
   const registry = parse(candidate());
@@ -81,7 +82,8 @@ test('rejected and withdrawn assets never produce a delivery selection', () => {
 test('metadata, bytes, translation and historical mapping edits invalidate review', () => {
   for (const change of [a => { a.creator = 'Changed creator'; }, a => { a.content_sha256 = 'b'.repeat(64); },
     a => { a.alt.uk = 'Змінений текст'; }, a => { a.delivery.local_path = '/media/changed.svg'; },
-    a => { a.source_revision = 'changed'; }]) {
+    a => { a.source_revision = 'changed'; }, a => { a.ai_generated = true; },
+    a => { a.historical_context.year = 1988; }, a => { a.historical_context.source_url = 'https://example.org/changed-evidence'; }]) {
     const asset = approved(); change(asset);
     assert.throws(() => parse(envelope(asset)), /stale payload/);
     assert.equal(selectMedia([asset], asset.id, asset.subject), null);
@@ -92,6 +94,18 @@ test('metadata, bytes, translation and historical mapping edits invalidate revie
     const asset = approved(); asset.review.reviewed_on = date;
     assert.throws(() => parse(envelope(asset)), /chronology/);
   }
+});
+
+test('publication requires explicit generation provenance and sourced historical context', () => {
+  for (const mutate of [asset => { asset.ai_generated = null; }, asset => { asset.historical_context.description = null; }, asset => { asset.historical_context.source_url = null; }]) {
+    const asset = approved(); mutate(asset); asset.review.payload_sha256 = mediaFingerprint(asset);
+    assert.throws(() => parse(envelope(asset)), /ai_generated|historical_context/);
+    assert.equal(selectMedia([asset], asset.id, asset.subject), null);
+  }
+  const fake = approved(); fake.ai_generated = true; fake.review.payload_sha256 = mediaFingerprint(fake);
+  assert.throws(() => parse(envelope(fake)), /cannot be archival/);
+  const invalid = candidate(); invalid.assets[0].historical_context.year = 2200;
+  assert.throws(() => parse(invalid), /valid historical year/);
 });
 
 test('circuit diagrams require an exact pinned race/layout match, never effective/current inference', () => {

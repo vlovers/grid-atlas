@@ -1,5 +1,10 @@
 # Licensed media pilot
 
+Current implementation: [Media Library V1 provenance extension](library-v1-foundation.md)
+documents schema 2, historical context, generation provenance and the rechecked
+pilot blockers. It preserves the independent approval gate and empty photographic
+publication collection.
+
 > **Scope and date:** The pilot inventory and review counts below describe the **phase-one photographic-media pilot on 20 October 2026**, not all current repository assets. Since then, [Circuit Graphics V3](historical-circuit-svg-provenance.md) introduced 160 attributed historical SVG layout illustrations. These are a separate licensed-graphics collection; they do **not** imply approval of photographs, logos, or other media. Review each collection under its own provenance and license record.
 
 > **23 October integration:** Driver, constructor and circuit pages now use the rights-gated image archive and editorial missing-media state. The original phase-one notes below remain a dated snapshot. Current counts still show five candidates and zero approved publication images; 160 attributed circuit SVGs remain separate. See the [practical approval/withdrawal workflow](approved-imagery-workflow.md) and run `pnpm audit:media --as-of YYYY-MM-DD`.

@@ -1,6 +1,0 @@
-.cover { margin: 0; display: flex; flex-direction: column; min-width: 0; height: 100%; background: var(--surface); border: 1px solid var(--line); border-top: 2px solid var(--accent); }
-.cover > img { width: 100%; height: clamp(16rem, 27vw, 23rem); object-fit: contain; padding: 1.5rem; }
-.cover > div { position: relative; min-height: 19rem; flex: 1; overflow: hidden; }
-.cover figcaption { color: var(--muted); font-size: .8rem; line-height: 1.7; padding: 1rem 1.5rem; border-top: 1px solid var(--line); margin-top: auto; }
-.cover a { text-decoration: underline; text-underline-offset: .2rem; }
-@media (forced-colors: active) { .cover { border-color: CanvasText; } }

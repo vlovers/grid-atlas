@@ -19,7 +19,7 @@ for (const locale of ['uk', 'en'] as const) {
     const circuitRail = home.getByRole('region', { name: `${locale === 'uk' ? 'Стрічка історій' : 'Story rail'}: ${t.circuitsTitle}` });
     await expect(circuitRail.getByRole('link', { name: /100%_ Test Circuit/ })).toHaveAttribute('href', `/${locale}/circuits/1`);
     await circuitRail.getByRole('link', { name: /100%_ Test Circuit/ }).press('Enter');
-    await expect(page.getByTestId('story-header').getByRole('heading', { level: 1 })).toHaveText('100%_ Test Circuit');
+    await expect(page.getByTestId('editorial-hero').getByRole('heading', { level: 1 })).toHaveText('100%_ Test Circuit');
     expect(remote).toEqual([]);
   });
 
@@ -51,7 +51,7 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(profile.getByTestId('career-signature')).toBeVisible();
     await profile.locator('#driver-graphic > summary').press('Enter');
     await profile.getByTestId('driver-opening').getByRole('heading', { level: 3 }).getByRole('link').press('Enter');
-    await expect(page.getByTestId('story-header').getByRole('heading', { level: 1 })).toHaveText('Synthetic shared-car race');
+    await expect(page.getByTestId('editorial-hero').getByRole('heading', { level: 1 })).toHaveText('Synthetic shared-car race');
     await expect(page.getByRole('link', { name: 'driver-a ↗' })).toHaveAttribute('href', `/${locale}/drivers/1`);
     expect(errors).toEqual([]);
   });
@@ -61,7 +61,7 @@ for (const locale of ['uk', 'en'] as const) {
     await page.emulateMedia({ reducedMotion: 'reduce', forcedColors: 'active' });
     for (const path of ['/seasons', '/seasons/1950', '/circuits/1', '/constructors/1', '/races/1']) {
       await page.goto(`/${locale}${path}`);
-      await expect(page.getByTestId(path.startsWith('/constructors/') ? 'editorial-hero' : 'story-header')).toBeVisible();
+      await expect(page.getByTestId('editorial-hero')).toBeVisible();
       await expect(page.locator('main h1')).toHaveCount(1);
       await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);

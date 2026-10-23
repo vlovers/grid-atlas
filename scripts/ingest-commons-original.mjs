@@ -5,6 +5,7 @@ import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { inspectOriginal } from './inspect-media-original.mjs';
 import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
+import { expectedObservedSha256 } from './commons-original-observation-guard.mjs';
 
 const MAX_BYTES = 40 * 1024 * 1024;
 const MAX_API_RESPONSE_BYTES = 1024 * 1024;
@@ -81,7 +82,7 @@ async function readBoundedApiJson(response) {
  * API, checked against recorded source evidence, and the original is verified offline.
  * Never writes the publication registry or treats a file as rights-approved.
  */
-export async function ingestCommonsOriginal({ researchId, outputDir, staging, sourceEvidence, fetchImpl = globalThis.fetch }) {
+export async function ingestCommonsOriginal({ researchId, outputDir, staging, sourceEvidence, originalObservations, fetchImpl = globalThis.fetch }) {
   if (!/^research-[a-z0-9-]+$/.test(researchId ?? '')) throw Error('Invalid research ID');
   if (staging?.schema_version !== 1 || staging.lane !== 'research_only' ||
       staging.publication_allowed !== false || !Array.isArray(staging.entries) ||
@@ -100,6 +101,7 @@ export async function ingestCommonsOriginal({ researchId, outputDir, staging, so
   }
   if (entry.status !== 'candidate' || entry.review !== null || entry.delivery?.local_path !== null || entry.delivery?.remote_url !== null) throw Error('Candidate is not isolated from publication');
   if (!['image/jpeg', 'image/png'].includes(entry.image?.mime)) throw Error('Unsupported staged original format');
+  const observedSha256 = expectedObservedSha256({ researchId, originalObservations, sourceEvidence });
   const title = commonsFileTitle(entry.file_page_url);
   const directory = assertPrivateOriginalDirectory(outputDir);
   const apiUrl = new URL('https://commons.wikimedia.org/w/api.php');
@@ -126,7 +128,8 @@ export async function ingestCommonsOriginal({ researchId, outputDir, staging, so
     }
     closeSync(fd); fd = undefined;
     if (total !== evidence.bytes) throw Error('Downloaded original has unexpected byte count');
-    const inspection = inspectOriginal({ filePath: tempPath, researchId, staging, sourceEvidence });
+    const inspection = inspectOriginal({ filePath: tempPath, researchId, staging, sourceEvidence,
+      ...(observedSha256 ? { expectedSha256: observedSha256 } : {}) });
     // Atomic no-clobber: a concurrent process cannot replace an existing original.
     linkSync(tempPath, finalPath);
     return { ...inspection, source_observation: { commons_file_page: entry.file_page_url, api_original_url: originalUrl, api_timestamp: sourceTimestamp }, local_original: { ...inspection.local_original, path: finalPath }, publication_allowed: false };
@@ -140,7 +143,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   try {
     const { values } = parseArgs({ options: { id: { type: 'string' }, 'output-dir': { type: 'string' } } });
     if (!values.id || !values['output-dir']) throw Error('Usage: node scripts/ingest-commons-original.mjs --id research-id --output-dir /existing/private/directory');
-    const report = await ingestCommonsOriginal({ researchId: values.id, outputDir: values['output-dir'], staging: load('docs/media/cross-era-staging.json'), sourceEvidence: load('docs/media/commons-original-evidence.json') });
+    const report = await ingestCommonsOriginal({ researchId: values.id, outputDir: values['output-dir'], staging: load('docs/media/cross-era-staging.json'), sourceEvidence: load('docs/media/commons-original-evidence.json'), originalObservations: load('docs/media/verified-original-observations.json') });
     console.log(JSON.stringify(report, null, 2));
   } catch (error) { console.error('Commons ingestion failed: ' + error.message); process.exitCode = 1; }
 }

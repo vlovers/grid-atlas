@@ -34,7 +34,7 @@ for (const locale of ['uk', 'en'] as const) {
     }
     await page.screenshot({ path: info.outputPath(`media-home-${locale}.png`), fullPage: true, scale: 'css' });
     await rail.getByRole('link', { name: new RegExp(firstWin.race.name) }).press('Enter');
-    await expect(page.getByTestId('story-header').getByRole('heading', { level: 1 })).toHaveText(firstWin.race.name);
+    await expect(page.getByTestId('editorial-hero').getByRole('heading', { level: 1 })).toHaveText(firstWin.race.name);
     await page.goto(`/${locale}/drivers/${senna.id}`);
     const profile = page.getByTestId('driver-showcase');
     await expect(profile.getByTestId('driver-opening')).toContainText(firstWin.race.name);

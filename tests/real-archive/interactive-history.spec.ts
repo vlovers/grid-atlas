@@ -54,7 +54,7 @@ for (const locale of ["uk", "en"] as const) {
     );
     await race.click();
     await expect(
-      page.getByTestId("story-header").getByRole("heading", { level: 1 }),
+      page.getByTestId("editorial-hero").getByRole("heading", { level: 1 }),
     ).toHaveText(records.races[0].official_name);
     await page.goBack();
     await page

@@ -1,21 +1,24 @@
-.section{margin:clamp(32px,5vw,72px) 0;padding:clamp(20px,4vw,48px);background:linear-gradient(145deg,#101a23,#1c2b35);border:1px solid #4d6370;overflow:hidden}
+.section{margin:clamp(32px,5vw,72px) 0;padding:clamp(20px,4vw,48px);background:var(--surface);border:1px solid var(--line);overflow:hidden}
 .heading{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:36px}
 .heading h2{font-size:clamp(1.8rem,3.6vw,3.6rem);letter-spacing:-.06em;line-height:1.06;margin:12px 0 0;max-width:18ch}
-.heading p{max-width:44ch;line-height:1.65;color:#c1cdd5;margin:0}
-.eyebrow,.overline{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:#a3e5d9}
+.heading p{max-width:44ch;line-height:1.65;color:var(--muted);margin:0}
+.eyebrow,.overline{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--accent-ink)}
 .track{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:16px;padding:0;margin:0;list-style:none;counter-reset:stop}
 .stop{min-width:0;position:relative}
-.stop:before{content:'';position:absolute;top:21px;left:0;right:0;height:1px;background:#8299a6}
-.card{position:relative;display:flex;flex-direction:column;min-height:280px;padding:25px 22px 22px;color:#f2f5f6;background:linear-gradient(160deg,#243743,#14212b);border:1px solid #57707d;text-decoration:none!important;transition:transform .22s ease,border-color .22s ease}
-.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:#a3e5d9}
-.counter{align-self:flex-start;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#a3e5d9;color:#11232b;font-weight:900;z-index:1}
-.year{font-size:clamp(3.5rem,6vw,5.5rem);font-weight:900;letter-spacing:-.1em;line-height:1.05;color:#e4e9ed26;margin:20px 0 6px}
+.stop:before{content:'';position:absolute;top:21px;left:0;right:0;height:1px;background:var(--line)}
+.card{position:relative;display:flex;flex-direction:column;min-height:280px;padding:25px 22px 22px;color:var(--ink);background:var(--background);border:1px solid var(--line);text-decoration:none!important;transition:transform .22s ease,border-color .22s ease}
+.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:var(--accent-ink)}
+.counter{align-self:flex-start;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent-ink);color:var(--background);font-weight:900;z-index:1}
+.year{font-size:clamp(3.5rem,6vw,5.5rem);font-weight:900;letter-spacing:-.1em;line-height:1.05;color:var(--muted);margin:20px 0 6px}
 .card strong{font-size:clamp(1.05rem,1.8vw,1.35rem);line-height:1.25;margin:12px 0;overflow-wrap:anywhere}
-.detail{color:#c4d0d8;font-size:.86rem;line-height:1.5;margin-bottom:18px}
-.action{display:flex;justify-content:space-between;gap:16px;margin-top:auto;padding-top:18px;border-top:1px solid #ffffff30;font-size:.85rem;font-weight:800;color:#a3e5d9}
+.detail{color:var(--muted);font-size:.86rem;line-height:1.5;margin-bottom:18px}
+.action{display:flex;justify-content:space-between;gap:16px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:.85rem;font-weight:800;color:var(--accent-ink)}
 @media(max-width:720px){.heading{display:block}.heading p{margin-top:16px}.track{grid-template-columns:1fr}.card{min-height:220px}.year{font-size:3.8rem;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover,.card:focus-visible{transform:none}}
 @media(forced-colors:active){.section,.card{background:Canvas;color:CanvasText;border:1px solid CanvasText}.year,.overline,.detail,.heading p,.action{color:CanvasText}.counter{background:Highlight;color:HighlightText}}
+
+.heading h2,.card strong{font-family:var(--font-display);font-weight:500}.year{font-family:var(--font-mono);font-weight:400;font-size:clamp(2.5rem,4vw,4rem)}.counter{border-radius:0}.card{transition:transform var(--motion-micro),border-color var(--motion-micro)}
+
 .editorial { background: none; border-color: var(--line); padding-inline: 0; border-inline: 0; }
 .editorial .card { background: var(--surface); border-color: var(--line); }
 .editorial .eyebrow, .editorial .overline, .editorial .action { color: var(--accent-ink); }

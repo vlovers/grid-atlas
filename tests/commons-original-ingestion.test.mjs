@@ -206,3 +206,48 @@ test('refuses source creator/license drift and invalid manifest headers before a
     }
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('known original SHA-256 observation is checked before private original is retained', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-observed-sha256-'));
+ try {
+  const fixture = fixtures(bytes);
+  const observations = {
+   schema_version: 1, lane: 'research_only', publication_allowed: false,
+   source_run_url: 'https://github.com/vlovers/grid-atlas/actions/runs/39994989972',
+   observed_on: '2026-10-23',
+   entries: [{
+    research_id: id, sha1: fixture.sourceEvidence.entries[0].sha1,
+    bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex')
+   }]
+  };
+  const mock = mockFetch(bytes);
+  const report = await ingestCommonsOriginal({
+   researchId: id, outputDir: dir, ...fixture,
+   originalObservations: observations, fetchImpl: mock.fetchImpl
+  });
+  assert.equal(report.local_original.sha256, observations.entries[0].sha256);
+  rmSync(report.local_original.path);
+  observations.entries[0].sha256 = 'f'.repeat(64);
+  await assert.rejects(() => ingestCommonsOriginal({
+   researchId: id, outputDir: dir, ...fixture,
+   originalObservations: observations, fetchImpl: mockFetch(bytes).fetchImpl
+  }), /SHA-256 does not match supplied expectation/);
+  assert.equal(existsSync(join(dir, id + '.png')), false);
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('invalid original observation register fails before any network call', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-observed-sha256-'));
+ try {
+  const fixture = fixtures(bytes), mock = mockFetch(bytes);
+  const originalObservations = {
+   schema_version: 1, lane: 'research_only', publication_allowed: false,
+   source_run_url: 'https://example.org/fake-run', observed_on: '2026-10-23', entries: []
+  };
+  await assert.rejects(() => ingestCommonsOriginal({
+   researchId: id, outputDir: dir, ...fixture, originalObservations,
+   fetchImpl: mock.fetchImpl
+  }), /Invalid research-only original SHA-256 observation register/);
+  assert.equal(mock.calls.length, 0);
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});

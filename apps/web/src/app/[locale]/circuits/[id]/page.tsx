@@ -1,4 +1,4 @@
-import { EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
+import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import styles from './circuit.module.css';
 import { MediaCollection } from '@/components/media/collection';
@@ -8,7 +8,11 @@ import { ArchiveRhythm } from '@/components/stories/archive-rhythm';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
-import { StoryHeader } from '@/components/stories/story-header';
+import { ArchivePlate } from '@/components/editorial/archive-plate';
+import { CircuitCover } from '@/components/editorial/circuit-cover';
+import { RecordReadingNote } from '@/components/editorial/record-reading-note';
+import { archiveCopy } from '@/components/editorial/archive-copy';
+import archiveStyles from '@/components/editorial/archive.module.css';
 import { storyCopy } from '@/components/stories/copy';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -75,17 +79,14 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const coverArtwork = selectCircuitCoverArtwork(layouts);
   const currentCrumbs = crumbs.map((crumb, index) => index === crumbs.length - 1
     ? { ...crumb, path: pageHref(path, page) } : crumb);
-  return <><SeoBreadcrumbs locale={locale} crumbs={currentCrumbs} description={description} /><section className={`page ${styles.dossier}`} data-testid="circuit-dossier">
-    <StoryHeader title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader} locale={locale as 'uk' | 'en'} marker={circuit.first_season ?? undefined} circuitArtwork={coverArtwork}
-      context={<span>{circuit.first_season ?? '—'} — {circuit.last_season ?? '—'}</span>}
-      actions={<><a href="#circuit-layouts">{locale === 'uk' ? 'Дослідити конфігурації' : 'Explore the layouts'} ↓</a><a href="#circuit-results">{locale === 'uk' ? 'Результати Гран-прі' : 'Grand Prix results'} ↗</a></>}
-      statistics={[
-        { label: locale === 'uk' ? 'Гран-прі в архіві' : 'Archived Grands Prix', value: circuit.races },
-        { label: locale === 'uk' ? 'Конфігурації F1DB' : 'F1DB layouts', value: layouts.length },
-        { label: locale === 'uk' ? 'Перша зафіксована гонка' : 'First recorded race', value: circuit.first_season ?? '—' },
-        { label: locale === 'uk' ? 'Остання зафіксована гонка' : 'Latest recorded race', value: circuit.last_season ?? '—' },
-      ]}
-      lead={<p className="lead">{t('circuitCount', { count: circuit.races })} {circuit.first_season !== null && t('seasonRange', { first: circuit.first_season, last: circuit.last_season ?? circuit.first_season })} {t('circuitLayouts')}</p>} />
+  const a = archiveCopy[locale === 'en' ? 'en' : 'uk'];
+  return <><SeoBreadcrumbs locale={locale} crumbs={currentCrumbs} description={description} /><section className={`page ${archiveStyles.page} ${styles.dossier}`} data-testid="circuit-dossier">
+    <EditorialHero title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader}
+      context={<><span>{circuit.first_season ?? '—'}—{circuit.last_season ?? '—'}</span><span>{identities[0]?.fields.country}</span></>}
+      lead={t('circuitLayouts')} media={coverArtwork ? <CircuitCover circuitArtwork={coverArtwork} title={circuit.name} locale={locale === 'en' ? 'en' : 'uk'} /> : <ArchivePlate marker={String(circuit.first_season ?? '—')} label={a.history} note={a.evidenceNote}
+        entries={chronologicalHistory.slice(0, 3).map(race => ({ id: race.race_id, href: `/races/${race.race_id}`, title: race.race_name, meta: `${race.season_year} / R${race.round}` }))} />}
+      actions={<><a href="#circuit-layouts">{a.identity} ↓</a><a href="#circuit-history">{a.history} ↓</a></>}
+      statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
     <EditorialTabs label={locale === 'uk' ? 'Розділи траси' : 'Circuit sections'} items={[
       { id: 'circuit-layouts', label: locale === 'uk' ? 'Конфігурації' : 'Layouts' },
@@ -93,8 +94,9 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       { id: 'circuit-results', label: locale === 'uk' ? 'Результати' : 'Results' },
       { id: 'circuit-archive', label: locale === 'uk' ? 'Архів і джерела' : 'Archive & sources' },
     ]} />
+    <RecordReadingNote kind="circuit" locale={locale === 'en' ? 'en' : 'uk'} />
     <div id="circuit-layouts" tabIndex={-1}><CircuitExperience layouts={layouts} events={technicalEvents} locale={locale === 'en' ? 'en' : 'uk'} /></div>
-    <div id="circuit-chronology" tabIndex={-1}><ArchiveRhythm testId="circuit-archive-rhythm" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Хронологія Гран-прі' : 'Grand Prix chronology'} description={locale === 'uk' ? 'Усі зафіксовані етапи на цій трасі за роками.' : 'All recorded events at this circuit, arranged by year.'} entries={chronologicalHistory.map(race => ({ id: race.race_id, year: race.season_year, label: race.race_name, href: `/races/${race.race_id}`, detail: `R${race.round}` }))} /></div>
+    <div id="circuit-history" tabIndex={-1}><div id="circuit-chronology" tabIndex={-1}><ArchiveRhythm testId="circuit-archive-rhythm" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Хронологія Гран-прі' : 'Grand Prix chronology'} description={locale === 'uk' ? 'Усі зафіксовані етапи на цій трасі за роками.' : 'All recorded events at this circuit, arranged by year.'} entries={chronologicalHistory.map(race => ({ id: race.race_id, year: race.season_year, label: race.race_name, href: `/races/${race.race_id}`, detail: `R${race.round}` }))} /></div></div>
     <div data-testid="circuit-era-journey"><ArchiveJourney editorial testId="circuit-visual-journey" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Гран-прі крізь роки' : 'Grands Prix across the years'} description={locale === 'uk' ? 'Події з історичного архіву цієї траси. Це хронологічна навігація, а не рейтинг найважливіших гонок.' : 'Recorded events at this circuit. A chronological archive journey, not a ranking of the most important races.'} items={chronologicalHistory.length ? [chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map(entry => ({ id: entry.race_id, href: `/races/${entry.race_id}`, year: entry.season_year, overline: `R${entry.round}`, title: entry.race_name, detail: entry.winners.length ? entry.winners.map(w => w.driver_name).join(', ') : undefined })) : []} /><p>{locale === 'uk' ? 'Послідовність не підтверджує незмінну конфігурацію траси.' : 'The sequence does not establish an unchanged circuit layout.'}</p></div>
     <section aria-labelledby="circuit-result-legends" data-testid="circuit-result-legends">
       <h2 id="circuit-result-legends">{locale === 'uk' ? 'Пілоти, що неодноразово перемагали тут' : 'Drivers with repeated recorded wins here'}</h2>

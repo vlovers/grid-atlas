@@ -16,7 +16,7 @@
 .statistics > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: .6rem; padding-inline: 1.8rem; min-width: 0; border-right: 1px solid var(--line); }
 .statistics > div:first-child { padding-left: 0; }
 .statistics > div:last-child { border: 0; }
-.statistics dt { font: .64rem/1.6 var(--font-sans); color: var(--muted); letter-spacing: .07em; text-transform: uppercase; max-width: 24ch; }
+.statistics dt { font: .64rem/1.6 var(--font-sans); color: var(--muted); letter-spacing: .07em; text-transform: uppercase; max-width: 24ch; overflow-wrap: anywhere; }
 .statistics dd { font: 400 clamp(2.2rem, 3.4vw, 4.1rem)/1 var(--font-mono); margin: 0; letter-spacing: -.08em; overflow-wrap: anywhere; }
 .scope { grid-row: 3; grid-column: 1/-1; color: var(--muted); font-size: .72rem; line-height: 1.8; margin: .9rem 0 0; max-width: 110ch; }
 .tabs { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem clamp(1rem, 3vw, 3.4rem); border-bottom: 1px solid var(--line); overflow-x: auto; padding-block: .6rem; margin-block: 2rem 3.5rem; }

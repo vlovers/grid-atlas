@@ -56,3 +56,20 @@ test('refuses fabricated provenance and impossible observation dates', () => {
   badDate.observations.observed_on = '2026-02-30';
   assert.throws(() => build(badDate), /Invalid original binary observation provenance/);
 });
+
+test('creates distinct actionable queues without treating hash verification as rights approval', () => {
+  const report = build(fixtures());
+  assert.deepEqual(report.work_queue.verify_original_binary_sha256, [
+    'research-mclaren-mp44-2007',
+    'research-ferrari-f2004-2004',
+    'research-silverstone-2019'
+  ]);
+  assert.deepEqual(report.work_queue.independent_rights_and_subject_review, [
+    'research-schumacher-portrait-2007',
+    'research-alonso-2024'
+  ]);
+  assert.equal(report.publication_ready, 0);
+  const markdown = renderCommonsMediaReadiness(report);
+  assert.match(markdown, /Research work queue/);
+  assert.match(markdown, /independent_rights_and_subject_review/);
+});

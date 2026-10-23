@@ -12,7 +12,7 @@ export default async function MediaPreview({ params, searchParams }: {
   const { test } = await searchParams;
   const synthetic = test && ['verified', 'missing', 'withdrawn', 'wrong-race'].includes(test) ? syntheticAsset(test) : null;
   const assets = (publication as MediaRegistry).assets;
-  const collectionFixture = test && ['gallery-verified','gallery-withdrawn','gallery-stale','gallery-car'].includes(test) ? syntheticCollectionAsset(test) : null;
+  const collectionFixture = test && ['gallery-verified','gallery-withdrawn','gallery-stale','gallery-car','gallery-ai'].includes(test) ? syntheticCollectionAsset(test) : null;
   return <main>
     <header><a href={`/${uk ? 'en' : 'uk'}`}>{uk ? 'English' : 'Українська'}</a>
       <p className="eyebrow">GRID ATLAS / {uk ? 'МЕДІА · ЛОКАЛЬНИЙ ПЕРЕГЛЯД' : 'MEDIA · LOCAL PREVIEW'}</p>

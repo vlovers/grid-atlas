@@ -1,0 +1,26 @@
+export const archiveCopy = {
+  en: {
+    loading: 'Loading discovery previews…',
+    index: 'THE HISTORICAL INDEX', selected: 'Ways into the archive', selectedNote: 'A small editorial selection across recorded careers and places. Explore the evidence behind each identity.',
+    open: 'Open the dossier', years: 'Recorded years', races: 'Distinct recorded races', wins: 'First-position entries', layouts: 'Recorded layouts',
+    archive: 'Explore the complete index', page: 'On this page', source: 'F1DB / pinned historical archive',
+    evidence: 'Follow the record', evidenceNote: 'Links come from the imported archive. A chronology is a way to explore, rather than a ranking of historical importance.',
+    unavailable: 'Discovery previews are temporarily unavailable. The searchable index remains available below.',
+    decade: 'Browse by decade', seasons: 'Every season has a starting point.', seasonLead: 'Choose a decade, follow a calendar, then meet the people and places connected by its race records.',
+    calendar: 'The calendar', field: 'The recorded field', identity: 'Identity & layouts', history: 'Race history', results: 'Classification', connections: 'Connections',
+    record: 'ARCHIVE RECORD', scope: 'Figures describe this imported archive. Race-result sums and source championship classifications are presented separately.',
+    editorial: 'Context & evidence', reading: 'How to read this record',
+  },
+  uk: {
+    loading: 'Завантаження оглядів…',
+    index: 'ІСТОРИЧНИЙ ПОКАЖЧИК', selected: 'З чого почати дослідження', selectedNote: 'Невелика редакційна добірка кар’єр і трас із різних років. Відкрийте записи, що стоять за кожною ідентичністю.',
+    open: 'Відкрити досьє', years: 'Зафіксовані роки', races: 'Окремі гонки в архіві', wins: 'Записи з першою позицією', layouts: 'Конфігурації в архіві',
+    archive: 'Повний покажчик', page: 'На цій сторінці', source: 'F1DB / зафіксований історичний архів',
+    evidence: 'Далі за протоколом', evidenceNote: 'Посилання походять з імпортованого архіву. Хронологія допомагає досліджувати, а не визначає історичну важливість подій.',
+    unavailable: 'Огляди тимчасово недоступні. Нижче доступний покажчик із пошуком.',
+    decade: 'Обрати десятиліття', seasons: 'Кожен сезон має початок.', seasonLead: 'Оберіть десятиліття, відкрийте календар і познайомтеся з людьми та трасами через протоколи гонок.',
+    calendar: 'Календар', field: 'Учасники в архіві', identity: 'Ідентичність і конфігурації', history: 'Історія гонок', results: 'Класифікація', connections: 'Зв’язки',
+    record: 'АРХІВНИЙ ЗАПИС', scope: 'Показники описують цей імпортований архів. Суми гоночних результатів і заліки чемпіонату за джерелом показано окремо.',
+    editorial: 'Контекст і джерела', reading: 'Як читати цей запис',
+  },
+} as const;

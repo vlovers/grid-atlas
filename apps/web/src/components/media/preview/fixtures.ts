@@ -7,6 +7,7 @@ import { mediaFingerprint, type MediaAsset } from '../registry';
 export function syntheticAsset(variant: string): MediaAsset {
   const asset: MediaAsset = {
     id: 'synthetic-diagram', subject: { type: 'circuit', id: 'fixture-circuit' }, kind: 'circuit-diagram',
+    ai_generated: false, historical_context: { year: 1950, description: 'Synthetic test context, not history.', source_url: 'https://example.org/test-context' },
     source_url: 'https://example.org/test-source', file_page_url: 'https://example.org/test-file',
     creator: 'Synthetic Fixture Creator', attribution: 'Synthetic Fixture Creator — test data only',
     license: { identifier: 'Synthetic license fixture', url: 'https://example.org/test-license', restrictions: ['Synthetic rights data; not permission to reuse real media.'] },
@@ -27,9 +28,11 @@ export function syntheticAsset(variant: string): MediaAsset {
 
 export function syntheticCollectionAsset(variant: string): MediaAsset {
   const asset=syntheticAsset('verified');
+  const illustration=variant==='gallery-car'||variant==='gallery-ai';
   asset.id='synthetic-collection';
-  asset.subject={type:variant==='gallery-car'?'constructor':'driver',id:'fixture-subject'};
-  asset.kind=variant==='gallery-car'?'car-illustration':'portrait';
+  asset.subject={type:illustration?'constructor':'driver',id:'fixture-subject'};
+  asset.kind=illustration?'car-illustration':'portrait';
+  asset.ai_generated=variant==='gallery-ai';
   asset.layout=null;
   asset.review!.payload_sha256=mediaFingerprint(asset);
   if(variant==='gallery-withdrawn')asset.status='withdrawn';

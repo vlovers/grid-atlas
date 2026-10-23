@@ -2,7 +2,7 @@ import { type ChampionshipRow } from '@/components/championship-table';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getData, getOptionalPublishedArticle } from '@/lib/api';
+import { getData, getOptionalArchiveData, getOptionalPublishedArticle } from '@/lib/api';
 import { DriverShowcase } from '@/components/driver/driver-showcase';
 import type { DriverProfile, DriverCareer, DriverSeason, DriverTeam, DriverSeasonResult } from '@/components/driver/showcase-model';
 import type { MediaAsset } from '@/components/media/registry';
@@ -38,10 +38,10 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const seasonResults = year === null ? [] : await getData<DriverSeasonResult>(`/api/drivers/${id}/seasons/${year}/results`);
   // Bound enrichment to two observed constructors; never infer a personal rivalry.
   const constructorIds = [...new Set(teams.filter(team => team.year === year).map(team => team.constructor_id))].slice(0, 2);
-  const rosters = await Promise.all(constructorIds.map(constructorId => getData<{ driver_id: string; driver_name: string }>(`/api/constructors/${constructorId}/seasons/${year}/drivers`)));
-  const relatedDrivers = [...new Map(rosters.flat().filter(row => row.driver_id !== id).map(row => [row.driver_id, row])).values()].slice(0, 3);
+  const rosters = await Promise.all(constructorIds.map(constructorId => getOptionalArchiveData<{ driver_id: string; driver_name: string }>(`/api/constructors/${constructorId}/seasons/${year}/drivers`)));
+  const relatedDrivers = [...new Map(rosters.flatMap(roster => roster.value ?? []).filter(row => row.driver_id !== id).map(row => [row.driver_id, row])).values()].slice(0, 3);
   return <DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
-    identity={identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />} identityDetails={identities[0]} championships={championships} relatedDrivers={relatedDrivers}
+    identity={identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />} identityDetails={identities[0]} championships={championships} relatedDrivers={relatedDrivers} relatedDriversUnavailable={rosters.some(roster => roster.status === 'unavailable')}
     article={article.value} editorialUnavailable={article.status === 'unavailable'} media={mediaPublication.assets as MediaAsset[]} locale={locale}
     selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />;
 }

@@ -30,12 +30,15 @@ export function LicensedMedia({ assets, assetId, subject, label, locale, raceId,
       failed={t.failed} />
     {!asset && <figcaption className={styles.caption}>{diagram ? t.layoutDetail : t.detail}</figcaption>}
     {asset && <figcaption className={styles.caption}>
+      {asset.ai_generated && <p className={styles.kind}>{locale === 'uk' ? 'Згенерована ШІ ілюстрація · не архівна фотографія' : 'AI-generated illustration · not archival photography'}</p>}
       <p className={styles.kind}>{({ photograph: ['Фотографія', 'Photograph'], portrait: ['Портрет', 'Portrait'], 'car-illustration': ['Ілюстрація боліда', 'Car illustration'], 'circuit-diagram': ['Схема траси', 'Circuit diagram'] } as const)[asset.kind][locale === 'uk' ? 0 : 1]}</p>
       <p>{asset.caption[locale]}</p>
       <p>{asset.attribution} · <a href={asset.license.url!} rel="noreferrer">{asset.license.identifier}</a></p>
       <div className={styles.links}><a href={asset.source_url!} rel="noreferrer">{t.source}</a>
         <a href={asset.file_page_url} rel="noreferrer">{t.file}</a></div>
       <details><summary>{t.rights}</summary>
+        <p>{asset.historical_context.year ?? '—'} · {asset.historical_context.description}</p>
+        <a href={asset.historical_context.source_url!} rel="noreferrer">{locale === 'uk' ? 'Джерело історичного контексту' : 'Historical context source'}</a>
         <p>{t.changes}: {asset.modifications}</p>
         {asset.license.restrictions.length > 0 && <ul>{asset.license.restrictions.map((note, i) => <li key={i}>{note}</li>)}</ul>}
       </details>

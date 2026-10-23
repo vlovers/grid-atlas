@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 for (const locale of ['en', 'uk'] as const) {
   test(`${locale}: circuit metadata describes the available historical layouts`, async ({ page }) => {
-    const description = locale === 'en' ? 'historical circuit layouts' : 'історичні конфігурації трас';
+    const description = locale === 'en' ? 'historical layout illustrations' : 'зафіксовані конфігурації';
     for (const route of ['/circuits', '/circuits/1']) {
       const response = await page.goto(`/${locale}${route}`);
       expect(response?.status()).toBe(200);

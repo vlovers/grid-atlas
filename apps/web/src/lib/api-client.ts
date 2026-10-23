@@ -54,6 +54,16 @@ export function arrayData<T>(payload: unknown): T[] {
   return payload.data as T[];
 }
 
+/** Validate envelopes before optional/essential callers decide how to recover. */
+export async function requestArray<T>(path: string, options: Options = {}): Promise<T[]> {
+  const payload = await requestApi(path, options);
+  try { return arrayData<T>(payload); }
+  catch {
+    (options.log ?? console.error)({ event: 'archive_api_failed', endpoint: apiEndpoint(path), reason: 'contract' });
+    throw new ApiRequestError('contract');
+  }
+}
+
 export type Enrichment<T> = { status: 'available'; value: T } | { status: 'unavailable'; value: null };
 export async function optionalEnrichment<T>(load: () => Promise<T>): Promise<Enrichment<T>> {
   try { return { status: 'available', value: await load() }; }
