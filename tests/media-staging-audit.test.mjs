@@ -5,12 +5,12 @@ import { auditStaging } from '../scripts/audit-media-staging.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const data = () => [load('docs/media/cross-era-staging.json'), load('docs/media/candidates.json'), load('apps/web/src/components/media/publication.json'), load('docs/media/pilot-identities.json')];
-test('staging passes integrity audit while unresolved pilot identities are reported', () => {
+test('staging passes integrity audit with all five F1DB subject identities pinned', () => {
   const result = auditStaging(...data());
   assert.equal(result.ok, true, result.errors.join('; '));
   assert.equal(result.entries, 5);
-  assert.equal(result.identity_matches_pilot.length, 1);
-  assert.equal(result.unresolved_identities.length, 4);
+  assert.equal(result.identity_matches_pilot.length, 5);
+  assert.equal(result.unresolved_identities.length, 0);
 });
 test('rejects research candidate leakage into publication', () => {
   const [staging, candidates, publication, pilot] = data();
