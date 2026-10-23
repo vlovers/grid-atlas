@@ -13,6 +13,8 @@ test('research CSV has exact columns, unique Commons files and no fake approvals
   const result = auditResearchIndex(source);
   assert.equal(result.total, 16);
   assert.equal(result.approved, 0);
+  assert.equal(result.byType.constructor, 5);
+  assert.equal(result.byType.driver, 6);
   assert.equal(Object.values(result.byType).reduce((a,b)=>a+b,0), 16);
 });
 test('CSV handles escaped quotes, commas and CRLF', () => {
