@@ -7,6 +7,7 @@ import { inspectOriginal } from './inspect-media-original.mjs';
 import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
 
 const MAX_BYTES = 40 * 1024 * 1024;
+const MAX_API_RESPONSE_BYTES = 1024 * 1024;
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 
 /** Research-only. File title must come from a pinned Commons file page, never caller-supplied URLs. */
@@ -40,6 +41,28 @@ async function responseOrFail(response, label) {
   return response;
 }
 
+/** Reject oversized or malformed Commons API metadata without buffering unbounded JSON. */
+async function readBoundedApiJson(response) {
+  const declaredLength = response.headers?.get('content-length');
+  if (declaredLength !== null && declaredLength !== undefined &&
+      (!/^\\d+$/.test(declaredLength) || Number(declaredLength) > MAX_API_RESPONSE_BYTES)) {
+    throw Error('Commons API response exceeds metadata size limit');
+  }
+  const chunks = [];
+  let total = 0;
+  for await (const chunk of response.body) {
+    if (!(chunk instanceof Uint8Array)) throw Error('Invalid Commons API response stream');
+    total += chunk.byteLength;
+    if (total > MAX_API_RESPONSE_BYTES) throw Error('Commons API response exceeds metadata size limit');
+    chunks.push(chunk);
+  }
+  try {
+    return JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(Buffer.concat(chunks)));
+  } catch {
+    throw Error('Commons API response is not valid UTF-8 JSON');
+  }
+}
+
 /**
  * Explicit opt-in downloader. A pinned Commons file page is resolved via the official
  * API, checked against recorded source evidence, and the original is verified offline.
@@ -60,7 +83,7 @@ export async function ingestCommonsOriginal({ researchId, outputDir, staging, so
   const apiUrl = new URL('https://commons.wikimedia.org/w/api.php');
   for (const [key, value] of Object.entries({ action: 'query', prop: 'imageinfo', iiprop: 'url|size|sha1|timestamp', titles: title, format: 'json', formatversion: '2' })) apiUrl.searchParams.set(key, value);
   const apiResponse = await responseOrFail(await fetchImpl(apiUrl.href, { redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { accept: 'application/json' } }), 'Commons API request');
-  const metadata = await apiResponse.json();
+  const metadata = await readBoundedApiJson(apiResponse);
   const { originalUrl, sourceTimestamp } = exactImageInfo(metadata, title, evidence);
   const download = await responseOrFail(await fetchImpl(originalUrl, { redirect: 'manual', signal: AbortSignal.timeout(30000), headers: { accept: 'image/jpeg,image/png' } }), 'Commons original request');
   const declaredLength = download.headers?.get('content-length');
