@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ingestCommonsBatch } from '../scripts/ingest-commons-batch.mjs';
+import { buildCommonsResearchReport } from '../scripts/build-commons-research-report.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const ids = ['research-schumacher-portrait-2007', 'research-silverstone-2019'];
@@ -18,12 +19,24 @@ function fixtures(outputDir) {
     pilot: load('docs/media/pilot-identities.json')
   };
 }
-const receipt = researchId => ({
-  research_id: researchId, publication_allowed: false,
-  source_evidence: { matched: true },
-  local_original: { sha256: 'a'.repeat(64), sha1: 'b'.repeat(40), bytes: 123 },
-  source_observation: { commons_file_page: 'https://commons.wikimedia.org/wiki/File:Test.jpg' }
-});
+const receipt = researchId => {
+  const source = load('docs/media/commons-original-evidence.json').entries.find(item => item.research_id === researchId);
+  const candidate = load('docs/media/cross-era-staging.json').entries.find(item => item.id === researchId);
+  return {
+    research_id: researchId, publication_allowed: false,
+    source_file_page: source.file_page_url,
+    source_evidence: { matched: true },
+    local_original: {
+      sha256: 'a'.repeat(64), sha1: source.sha1, bytes: source.bytes,
+      mime: candidate.image.mime, width: source.width, height: source.height
+    },
+    source_observation: {
+      commons_file_page: source.file_page_url,
+      api_original_url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg',
+      api_timestamp: '2026-10-23T00:00:00Z'
+    }
+  };
+};
 async function inPrivateDir(fn) {
   const dir = mkdtempSync(join(tmpdir(), 'grid-atlas-batch-ingest-'));
   try { await fn(dir); } finally { rmSync(dir, { recursive: true, force: true }); }
@@ -105,3 +118,42 @@ test('batch ingestion refuses a public repository destination before processing 
   await assert.rejects(() => ingestCommonsBatch(args), /outside the repository/);
   assert.equal(calls, 0);
 });
+
+test('all five verified batch inspections produce a complete research-only receipt', async () => inPrivateDir(async dir => {
+  const args = fixtures(dir);
+  args.researchIds = args.staging.entries.map(entry => entry.id);
+  args.ingestImpl = async ({ researchId }) => receipt(researchId);
+  const batch = await ingestCommonsBatch(args);
+  assert.equal(batch.ingested, 5);
+  assert.equal(batch.blocked, 0);
+  assert.ok(batch.results.every(row => row.mime && row.width > 0 && row.height > 0));
+  const report = buildCommonsResearchReport(batch, args.sourceEvidence, args.staging);
+  assert.equal(report.total, 5);
+  assert.equal(report.publication_allowed, false);
+  assert.equal(report.original_files_in_report, false);
+  assert.ok(report.entries.every(row => row.rights_review === 'pending' && row.subject_review === 'pending'));
+}));
+
+test('rejects forged inspected provenance, MIME, dimensions and source checksum before receipt creation', async () => inPrivateDir(async dir => {
+  for (const mutate of [
+    row => { row.source_file_page = 'https://commons.wikimedia.org/wiki/File:Other.jpg'; },
+    row => { row.local_original.sha1 = '0'.repeat(40); },
+    row => { row.local_original.bytes += 1; },
+    row => { row.local_original.mime = 'image/png'; },
+    row => { row.local_original.width += 1; },
+    row => { row.local_original.height += 1; },
+    row => { row.source_observation.commons_file_page = 'https://commons.wikimedia.org/wiki/File:Other.jpg'; }
+  ]) {
+    const args = fixtures(dir);
+    args.researchIds = [ids[0]];
+    args.ingestImpl = async ({ researchId }) => {
+      const row = receipt(researchId);
+      mutate(row);
+      return row;
+    };
+    const batch = await ingestCommonsBatch(args);
+    assert.equal(batch.ingested, 0);
+    assert.equal(batch.blocked, 1);
+    assert.match(batch.results[0].reason, /verified research-only original/);
+  }
+}));
