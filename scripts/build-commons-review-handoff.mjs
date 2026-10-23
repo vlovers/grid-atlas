@@ -33,6 +33,11 @@ export function buildCommonsReviewHandoff({ staging, evidence, observations, ide
       !isoDay.test(observations.observed_on ?? '')) {
     throw Error('Invalid research-only original observation provenance');
   }
+  const observationDay = observations.observed_on;
+  if (Number.isNaN(Date.parse(observationDay + 'T00:00:00Z')) ||
+      new Date(observationDay + 'T00:00:00Z').toISOString().slice(0, 10) !== observationDay) {
+    throw Error('Invalid original observation calendar date');
+  }
   const sourceById = new Map(evidence.entries.map(item => [item.research_id, item]));
   const identityByKey = new Map();
   for (const subject of identities.subjects) {
@@ -44,13 +49,16 @@ export function buildCommonsReviewHandoff({ staging, evidence, observations, ide
     identityByKey.set(key, subject);
   }
   const observedById = new Map();
+  const observedHashes = new Set();
   for (const item of observations.entries) {
     const source = sourceById.get(item?.research_id);
     if (!source || observedById.has(item.research_id) || !sha256.test(item.sha256 ?? '') ||
-        !sha1.test(item.sha1 ?? '') || item.sha1 !== source.sha1 || item.bytes !== source.bytes) {
+        !sha1.test(item.sha1 ?? '') || item.sha1 !== source.sha1 || item.bytes !== source.bytes ||
+        observedHashes.has(item.sha256)) {
       throw Error('Invalid, duplicate or unpinned original binary observation');
     }
     observedById.set(item.research_id, item);
+    observedHashes.add(item.sha256);
   }
   const entries = staging.entries.map(item => {
     const source = sourceById.get(item.id);
@@ -67,6 +75,10 @@ export function buildCommonsReviewHandoff({ staging, evidence, observations, ide
       throw Error('Missing or contradictory candidate provenance: ' + item.id);
     }
     const observation = observedById.get(item.id);
+    if (observation && (typeof item.inspected_on !== 'string' ||
+        !isoDay.test(item.inspected_on) || observationDay < item.inspected_on)) {
+      throw Error('Original binary observation predates candidate inspection: ' + item.id);
+    }
     return {
       research_id: item.id,
       subject: { type: item.subject.type, id: item.subject.id, f1db_name: identity.name },
