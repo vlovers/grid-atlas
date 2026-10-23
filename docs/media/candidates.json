@@ -235,6 +235,226 @@
         "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
         "source_revision": "f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; exact race.circuitId and race.circuitLayoutId observations"
       }
+    },
+    {
+      "id": "research-schumacher-portrait-2007",
+      "subject": {
+        "type": "driver",
+        "id": "michael-schumacher"
+      },
+      "kind": "portrait",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher.jpg",
+      "creator": "Gunnar Richter",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "restrictions": [
+          "Observed Commons license metadata only. Recheck source page, revision, creator chain, image identity and reuse obligations before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": null,
+        "height": null
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": null,
+      "inspected_on": "2026-10-23",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research import only: 2007 portrait; capture details require human review. Exact Commons revision, dimensions, source rights and independent human approval remain missing.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "research-alonso-2024",
+      "subject": {
+        "type": "driver",
+        "id": "fernando-alonso"
+      },
+      "kind": "portrait",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fernando_Alonso_(53838437751).jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Fernando_Alonso_(53838437751).jpg",
+      "creator": "Peter Menzel",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "restrictions": [
+          "Observed Commons license metadata only. Recheck source page, revision, creator chain, image identity and reuse obligations before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": null,
+        "height": null
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": null,
+      "inspected_on": "2026-10-23",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research import only: 2024 photograph; verify venue and Aston Martin context. Exact Commons revision, dimensions, source rights and independent human approval remain missing.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "research-mclaren-mp44-2007",
+      "subject": {
+        "type": "constructor",
+        "id": "mclaren"
+      },
+      "kind": "car-photo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-4.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-4.jpg",
+      "creator": "John Chapman (Pyrope)",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "restrictions": [
+          "Observed Commons license metadata only. Recheck source page, revision, creator chain, image identity and reuse obligations before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": null,
+        "height": null
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": null,
+      "inspected_on": "2026-10-23",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research import only: 2007 museum display, not a 1988 race image. Exact Commons revision, dimensions, source rights and independent human approval remain missing.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "research-ferrari-f2004-2004",
+      "subject": {
+        "type": "constructor",
+        "id": "ferrari"
+      },
+      "kind": "car-photo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ferrari_F2004.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ferrari_F2004.jpg",
+      "creator": "storem",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "restrictions": [
+          "Observed Commons license metadata only. Recheck source page, revision, creator chain, image identity and reuse obligations before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": null,
+        "height": null
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": null,
+      "inspected_on": "2026-10-23",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research import only: Photograph reportedly from 2004; exact race context not established. Exact Commons revision, dimensions, source rights and independent human approval remain missing.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
+    },
+    {
+      "id": "research-silverstone-2019",
+      "subject": {
+        "type": "circuit",
+        "id": "silverstone"
+      },
+      "kind": "venue-photo",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Silverstone_Racing_Circuit.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Silverstone_Racing_Circuit.jpg",
+      "creator": "Harvey Milligan",
+      "attribution": null,
+      "license": {
+        "identifier": "CC-BY-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "restrictions": [
+          "Observed Commons license metadata only. Recheck source page, revision, creator chain, image identity and reuse obligations before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": null,
+        "height": null
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": null,
+      "inspected_on": "2026-10-23",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research import only: 2019 venue photograph, not an historical layout map. Exact Commons revision, dimensions, source rights and independent human approval remain missing.",
+      "alt": {
+        "uk": null,
+        "en": null
+      },
+      "caption": {
+        "uk": null,
+        "en": null
+      },
+      "layout": null
     }
   ]
 }
