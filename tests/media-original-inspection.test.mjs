@@ -55,8 +55,12 @@ test('checks SHA-256, MIME, dimensions, symlinks and approval boundaries',()=>{
  try{
   const bytes=png(),filePath=join(dir,'original.png');writeFileSync(filePath,bytes);
   const sha=createHash('sha256').update(bytes).digest('hex');
-  const result=inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:sha});
+  const sha1=createHash('sha1').update(bytes).digest('hex');
+  const result=inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:sha,expectedSha1:sha1,expectedBytes:bytes.length});
   assert.equal(result.local_original.sha256,sha);
+  assert.equal(result.local_original.sha1,sha1);
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha1:'0'.repeat(40)}),/SHA-1/);
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedBytes:bytes.length+1}),/byte count/);
   assert.equal(result.publication_allowed,false);
   assert.equal(result.unresolved.full_image_decode,true);
   assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:'0'.repeat(64)}),/SHA-256/);
