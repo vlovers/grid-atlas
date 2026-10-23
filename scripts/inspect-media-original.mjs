@@ -96,7 +96,7 @@ export function inspectImageBytes(buffer) {
   throw Error('Only JPEG and PNG original files are supported');
 }
 
-export function inspectOriginal({filePath,researchId,staging,expectedSha256}) {
+export function inspectOriginal({filePath,researchId,staging,expectedSha256,expectedSha1,expectedBytes}) {
   if(staging?.schema_version!==1||staging.lane!=='research_only'||staging.publication_allowed!==false||!Array.isArray(staging.entries))throw Error('Invalid research-only staging manifest');
   const matches=staging.entries.filter(e=>e.id===researchId);
   if(matches.length!==1)throw Error('Unknown or duplicate research ID');
@@ -109,16 +109,19 @@ export function inspectOriginal({filePath,researchId,staging,expectedSha256}) {
   if(!stat.isFile() || stat.isSymbolicLink() || stat.size>MAX_BYTES || stat.size<16) throw Error('Original must be a regular file of 16 bytes to 40 MiB');
   const bytes=readFileSync(absolute);
   if(bytes.length!==stat.size)throw Error('Original changed during inspection');
+  if(expectedBytes!==undefined&&(!Number.isSafeInteger(expectedBytes)||expectedBytes<1||bytes.length!==expectedBytes))throw Error('Original byte count does not match source evidence');
   const decoded=inspectImageBytes(bytes);
   if(decoded.mime!==entry.image.mime) throw Error('Original signature does not match staged MIME');
   if(entry.image.width!==null&&entry.image.width!==decoded.width)throw Error('Original width does not match staged dimensions');
   if(entry.image.height!==null&&entry.image.height!==decoded.height)throw Error('Original height does not match staged dimensions');
   const sha256=createHash('sha256').update(bytes).digest('hex');
+  const sha1=createHash('sha1').update(bytes).digest('hex');
+  if(expectedSha1!==undefined&&(!/^[a-f0-9]{40}$/i.test(expectedSha1)||sha1!==expectedSha1.toLowerCase()))throw Error('Original SHA-1 does not match Commons source evidence');
   if(expectedSha256!==undefined && (!/^[a-f0-9]{64}$/i.test(expectedSha256) || sha256!==expectedSha256.toLowerCase())) throw Error('Original SHA-256 does not match supplied expectation');
   return {
     schema_version:1,kind:'local_original_inspection_not_rights_approval',
     research_id:researchId,source_file_page:entry.file_page_url,
-    local_original:{sha256,bytes:bytes.length,mime:decoded.mime,width:decoded.width,height:decoded.height},
+    local_original:{sha256,sha1,bytes:bytes.length,mime:decoded.mime,width:decoded.width,height:decoded.height},
     unresolved:{commons_revision:true,creator_license_chain:true,independent_human_review:true,full_image_decode:true},
     publication_allowed:false
   };
@@ -126,9 +129,9 @@ export function inspectOriginal({filePath,researchId,staging,expectedSha256}) {
 
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
   try {
-    const {values}=parseArgs({options:{file:{type:'string'},id:{type:'string'},'expected-sha256':{type:'string'}}});
+    const {values}=parseArgs({options:{file:{type:'string'},id:{type:'string'},'expected-sha256':{type:'string'},'expected-sha1':{type:'string'},'expected-bytes':{type:'string'}}});
     if(!values.file || !values.id) throw Error('Usage: node scripts/inspect-media-original.mjs --id research-id --file /path/to/original.jpg [--expected-sha256 64hex]');
     const staging=JSON.parse(readFileSync(new URL('../docs/media/cross-era-staging.json',import.meta.url),'utf8'));
-    console.log(JSON.stringify(inspectOriginal({filePath:values.file,researchId:values.id,staging,expectedSha256:values['expected-sha256']}),null,2));
+    console.log(JSON.stringify(inspectOriginal({filePath:values.file,researchId:values.id,staging,expectedSha256:values['expected-sha256'],expectedSha1:values['expected-sha1'],expectedBytes:values['expected-bytes']===undefined?undefined:Number(values['expected-bytes'])}),null,2));
   } catch(error) { console.error('Original inspection failed: '+error.message);process.exitCode=1; }
 }
