@@ -34,7 +34,7 @@ export function parseCsv(source) {
 export function auditResearchIndex(source) {
   const rows = parseCsv(source);
   if (JSON.stringify(rows.shift()) !== JSON.stringify(EXPECTED_COLUMNS)) throw new Error('Unexpected research index header');
-  const ids = new Set(), urls = new Set(), byType = {}, byPriority = {};
+  const ids = new Set(), urls = new Set(), byType = Object.create(null), byPriority = Object.create(null);
   for (const [i, row] of rows.entries()) {
     const line = i + 2;
     if (row.length !== EXPECTED_COLUMNS.length) throw new Error(`Row ${line}: wrong column count`);
