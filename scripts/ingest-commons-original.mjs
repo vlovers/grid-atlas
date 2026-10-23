@@ -30,9 +30,13 @@ function exactImageInfo(payload, title, evidence) {
   if (info.size !== evidence.bytes || info.width !== evidence.width || info.height !== evidence.height) throw Error('Commons metadata differs from pinned original evidence');
   if (typeof info.sha1 !== 'string' || !/^[a-f0-9]{40}$/.test(info.sha1) || info.sha1 !== evidence.sha1) throw Error('Commons API original SHA-1 differs from pinned evidence');
   const url = new URL(info.url);
-  if (url.protocol !== 'https:' || url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password || url.search || url.hash || !url.pathname.startsWith('/wikipedia/commons/') || !/\.(?:jpg|jpeg|png)$/i.test(url.pathname)) {
-    throw Error('Commons API supplied an unsafe original URL');
-  }
+  const unsafeReason = url.protocol !== 'https:' ? 'protocol'
+    : url.hostname !== 'upload.wikimedia.org' || url.port || url.username || url.password ? 'origin'
+    : url.search || url.hash ? 'query or fragment'
+    : !url.pathname.startsWith('/wikipedia/commons/') ? 'path prefix'
+    : !/\.(?:jpg|jpeg|png)$/i.test(url.pathname) ? 'file extension'
+    : null;
+  if (unsafeReason) throw Error('Commons API supplied an unsafe original URL (' + unsafeReason + ')');
   return { originalUrl: url.href, sourceTimestamp: info.timestamp ?? null };
 }
 
