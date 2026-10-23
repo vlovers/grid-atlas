@@ -6,6 +6,10 @@
 
 Phase 1 supplies a repository registry, review gates and reusable display components. **Five candidates, zero approved real assets.** No photograph is downloaded, hosted or hotlinked. The demonstration shows safe fallbacks; its optional image cases use explicitly synthetic, non-geographic test geometry.
 
+## Current original-ingestion tooling (23 October 2026)
+
+The research-only [Commons batch ingestion command](commons-batch-ingestion.md) can fetch the two source-evidenced originals (Schumacher and Silverstone) into an existing **private** directory with source SHA-1, byte-count, dimension and locally computed SHA-256 checks. This is an optional command, not evidence that these files were downloaded or rights-approved. It does not change the empty public photographic registry. The remaining research candidates lack equivalent pinned original evidence.
+
 ## Architecture and ownership audit
 
 Audited `main` at `71d8c6a` on 2026-10-20. At inspection, #133 (editorial batch) and #134 (UI redesign) were **issues**, with no published PR of those numbers. Open PRs included #131 (operations) and #71 (Senna draft). Recheck open work before integrating these components into public pages.
