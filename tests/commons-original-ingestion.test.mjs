@@ -149,3 +149,34 @@ test('rejects malformed Commons API metadata without downloading originals', asy
   assert.equal(existsSync(join(dir, id + '.png')), false);
  } finally { rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('accepts Commons tracking-only imageinfo URLs but never forwards tracking to the file host', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-commons-'));
+ try {
+  const mock = mockFetch(bytes, { url: originalUrl + '?utm_source=commons&utm_campaign=api&utm_content=original' });
+  const report = await ingestCommonsOriginal({ researchId: id, outputDir: dir, ...fixtures(bytes), fetchImpl: mock.fetchImpl });
+  assert.equal(mock.calls.length, 2);
+  assert.equal(mock.calls[1].input, originalUrl);
+  assert.equal(report.source_observation.api_original_url, originalUrl);
+  assert.equal(report.local_original.sha256, createHash('sha256').update(bytes).digest('hex'));
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('rejects arbitrary imageinfo query parameters, duplicates and fragments before binary fetch', async () => {
+ const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-commons-'));
+ try {
+  for (const url of [
+   originalUrl + '?download=1',
+   originalUrl + '?utm_source=commons&unsafe=1',
+   originalUrl + '?utm_source=a&utm_source=b',
+   originalUrl + '#fragment'
+  ]) {
+   const mock = mockFetch(bytes, { url });
+   await assert.rejects(
+    () => ingestCommonsOriginal({ researchId: id, outputDir: dir, ...fixtures(bytes), fetchImpl: mock.fetchImpl }),
+    /unsafe original URL/
+   );
+   assert.equal(mock.calls.length, 1);
+  }
+ } finally { rmSync(dir, { recursive: true, force: true }); }
+});
