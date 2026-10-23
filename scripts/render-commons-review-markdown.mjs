@@ -74,6 +74,10 @@ export function renderCommonsReviewMarkdown(report) {
     const source = item.commons_source;
     const page = safeLink(source.file_page_url);
     const oldid = revisionLink(source.file_page_url, source.description_oldid);
+    if (source.license_url && (new URL(source.license_url).hostname !== 'creativecommons.org' ||
+        !new URL(source.license_url).pathname.startsWith('/licenses/'))) {
+      throw Error('Untrusted Commons license review link');
+    }
     const license = source.license_url ? safeLink(source.license_url) : null;
     lines.push(
       `## ${index + 1}. ${mdText(item.subject.f1db_name)} — ${mdText(item.research_id)}`,
