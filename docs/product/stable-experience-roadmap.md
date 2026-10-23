@@ -3,6 +3,27 @@
 Historical baseline updated 20 October 2026; implementation delta checked against main `5920465` on 23 October 2026; later parallel story work is tracked separately in the sprint audit. Production acceptance remains separate. **Code and CI state are distinct from production acceptance.**
 This document records merged GitHub work and known blockers, not an approval to publish.
 
+## Release evidence checkpoint — 24 October 2026
+
+This checkpoint separates **merged implementation**, **reproducible verification**, and **independent release approval**. Earlier sections preserve their dated historical baselines; do not interpret an old PR/issue snapshot as today's queue.
+
+| Gate | Current evidence | Still required |
+| --- | --- | --- |
+| Open PR queue | Recheck live GitHub PRs before every merge; the queue was empty at this checkpoint | Never infer future queue status from this document; verify final head SHA and required CI before merging |
+| F1DB identities | Five staged media subjects mapped to original pinned F1DB v2026.17.0 records; source-record SHA-256 checks exist | Independent verification of historical claims and image subject/context |
+| Commons original bytes | Two locally computed binary SHA-256 observations (Schumacher, Alonso), recorded in [verified-original-observations](../media/verified-original-observations.json) | McLaren MP4/4, Ferrari F2004, Silverstone originals remain unverified; do not substitute source-record hashes |
+| Rights and imagery | Five research candidates; no human-approved photographic publication records | Independent source/creator/license/derivative-chain/subject review; bilingual captions and accessibility review; no premature publication |
+| Circuit artwork | 160 attributed pinned historical SVG illustrations, separate from photographs | Preserve attribution and exact-layout mapping; do not present illustrations as surveyed geography |
+| Browser confidence | Existing synthetic browser coverage and historical API/archive checks | Review actual real-import UK/EN desktop/mobile/keyboard flows, Lighthouse and screen-reader checks; confirm deployed origin |
+| Production | Code/CI readiness is not deployment approval | Hosting, protected main, credentials, TLS, backups and restore rehearsal, observability, sitemap/robots/canonicals on actual domain (issue #104) |
+
+### Next independent work packages
+
+1. **Original-byte research:** manually run one pending Commons original per dispatch after rate limits clear. Keep files in private ephemeral storage, export only research receipts, record SHA-256 and exact source provenance. A hash is not a license.
+2. **Rights-gated visual acceptance:** with no approved photographs, inspect the real driver/constructor/circuit fallback states and existing licensed SVGs in UK/EN. Fix visible responsive, keyboard, focus, alt-text, layout-shift and SEO regressions without inventing media approvals.
+3. **Human review handoff:** use the offline bilingual review worklist to collect independent creator, derivative-chain, historical-subject and rights decisions. Do not self-approve or copy research candidates to publication.
+4. **Beta operations:** resolve issue #104 and demonstrate actual deployment checks. A green GitHub Actions run alone does not satisfy the release gate.
+
 ## Merged product delta — 22 October 2026
 
 - Circuit Experience V2 added event-linked layout identities, sourced technical history, and UK/EN circuit pages. [V2 contract](circuit-experience-v2.md).
