@@ -10,7 +10,7 @@ export function PublishedChapters({ article, locale }: { article: PublishedArtic
     {article.sections.map((section, index) => <details key={index} open={index === 0}>
       <summary>{section.heading || (uk ? 'Історичний контекст' : 'Historical context')}</summary>
       {section.claim_ids.map(id => { const claim = article.claims.find(c => c.id === id)!; return <div key={id} className={styles.claim}>
-        <p>{claim.statement}</p><details open><summary>{uk ? 'Перевірити джерела' : 'Inspect sources'} ({claim.evidence.length})</summary>
+        <p>{claim.statement}</p><details><summary>{uk ? 'Перевірити джерела' : 'Inspect sources'} ({claim.evidence.length})</summary>
           <ul>{claim.evidence.map((e, n) => <li key={n}><a href={e.url} rel="noreferrer">{e.title}</a><span> — {e.publisher}{e.author ? ` · ${e.author}` : ''}</span>
             <p>{e.locator}</p><small>{uk ? 'Переглянуто' : 'Accessed'}: <time dateTime={e.accessed_on}>{e.accessed_on}</time></small></li>)}</ul>
         </details></div>; })}
