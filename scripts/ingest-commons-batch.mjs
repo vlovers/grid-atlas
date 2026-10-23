@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { auditStaging } from './audit-media-staging.mjs';
 import { ingestCommonsOriginal } from './ingest-commons-original.mjs';
 import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
+import { expectedObservedSha256 } from './commons-original-observation-guard.mjs';
 
 const repoJson = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 const idPattern = /^research-[a-z0-9-]+$/;
@@ -14,7 +15,7 @@ const idPattern = /^research-[a-z0-9-]+$/;
  * returned report never represents legal/editorial approval.
  */
 export async function ingestCommonsBatch({
-  researchIds, outputDir, staging, sourceEvidence, candidates, publication, pilot,
+  researchIds, outputDir, staging, sourceEvidence, originalObservations, candidates, publication, pilot,
   ingestImpl = ingestCommonsOriginal
 }) {
   const audit = auditStaging(staging, candidates, publication, pilot);
@@ -36,6 +37,10 @@ export async function ingestCommonsBatch({
     }
     evidenceIds.add(item.research_id);
   }
+  // Validate the complete register before any network call or output file write.
+  for (const item of sourceEvidence.entries) {
+    expectedObservedSha256({ researchId: item.research_id, originalObservations, sourceEvidence });
+  }
   const stagingIds = new Set(staging.entries.map(item => item.id));
   const results = [];
   for (const id of researchIds) {
@@ -44,7 +49,7 @@ export async function ingestCommonsBatch({
       continue;
     }
     try {
-      const inspection = await ingestImpl({ researchId: id, outputDir: directory, staging, sourceEvidence });
+      const inspection = await ingestImpl({ researchId: id, outputDir: directory, staging, sourceEvidence, originalObservations });
       const original = inspection?.local_original;
       const entry = staging.entries.find(item => item.id === id);
       const source = sourceEvidence.entries.find(item => item.research_id === id);
@@ -57,6 +62,10 @@ export async function ingestCommonsBatch({
           original.width !== source.width || original.height !== source.height ||
           inspection.source_observation?.commons_file_page !== source.file_page_url) {
         throw Error('Ingestion did not return a verified research-only original');
+      }
+      const observedSha256 = expectedObservedSha256({ researchId: id, originalObservations, sourceEvidence });
+      if (observedSha256 && original.sha256 !== observedSha256) {
+        throw Error('Ingested SHA-256 differs from pinned original observation');
       }
       results.push({
         research_id: id, status: 'ingested', sha256: original.sha256,
@@ -87,6 +96,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       researchIds: values.ids.split(','), outputDir: values['output-dir'],
       staging: repoJson('docs/media/cross-era-staging.json'),
       sourceEvidence: repoJson('docs/media/commons-original-evidence.json'),
+      originalObservations: repoJson('docs/media/verified-original-observations.json'),
       candidates: repoJson('docs/media/candidates.json'),
       publication: repoJson('apps/web/src/components/media/publication.json'),
       pilot: repoJson('docs/media/pilot-identities.json')
