@@ -16,32 +16,44 @@ def targets(text):
     clean = []
     fence = None
     for line in text.splitlines():
-        marker = re.match(r"^\s*(\x60{3,}|~{3,})", line)
+        marker = re.match(r"^\s*(" + chr(96) + r"{3,}|~{3,})", line)
         if marker:
-            kind = marker.group(1)[0]
-            fence = kind if fence is None else (None if fence == kind else fence)
+            token = marker.group(1)
+            if fence is None:
+                fence = (token[0], len(token))
+            elif token[0] == fence[0] and len(token) >= fence[1]:
+                fence = None
             clean.append("")
         else:
             clean.append("" if fence else line)
     source = "\n".join(clean)
-    for match in list(LINK.finditer(source)) + list(REFERENCE.finditer(source)):
+    for match in sorted(
+        [*LINK.finditer(source), *REFERENCE.finditer(source)],
+        key=lambda item: item.start()
+    ):
         yield source.count("\n", 0, match.start()) + 1, match.group(1).strip("<>")
 
 
-def audit():
+def tracked_paths():
     raw = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT)
-    tracked = {p.decode("utf-8") for p in raw.split(b"\0") if p}
+    return {p.decode("utf-8") for p in raw.split(b"\0") if p}
+
+
+def audit():
+    # Normalize macOS temporary-directory and worktree symlinks before containment checks.
+    root = ROOT.resolve()
+    tracked = tracked_paths()
     failures = []
     for file in sorted(p for p in tracked if p.endswith(".md") and (p.startswith("docs/") or p == "README.md")):
-        for line, target in targets((ROOT / file).read_text(encoding="utf-8")):
+        for line, target in targets((root / file).read_text(encoding="utf-8")):
             if not target or target.startswith(("#", "//", "{")):
                 continue
             url = urlsplit(target)
             if url.scheme or not url.path or url.path.startswith("/"):
                 continue
-            resolved = (ROOT / file).parent.joinpath(unquote(url.path)).resolve()
+            resolved = (root / file).parent.joinpath(unquote(url.path)).resolve()
             try:
-                relative = resolved.relative_to(ROOT).as_posix()
+                relative = resolved.relative_to(root).as_posix()
             except ValueError:
                 failures.append({"file": file, "line": line, "target": target, "reason": "outside repository"})
                 continue

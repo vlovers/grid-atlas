@@ -13,7 +13,9 @@
     "typecheck": "pnpm -r --if-present typecheck",
     "build": "pnpm -r --if-present build",
     "test:integration": "pnpm --filter @grid-atlas/api test:integration",
-    "test:browser": "GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build && GRID_ATLAS_NEXT_DIST_DIR=.next-test playwright test"
+    "test:browser": "GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build && GRID_ATLAS_NEXT_DIST_DIR=.next-test playwright test",
+    "check:docs": "python3 scripts/audit-doc-links.py",
+    "audit:repo": "python3 scripts/audit-repository-assets.py"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
