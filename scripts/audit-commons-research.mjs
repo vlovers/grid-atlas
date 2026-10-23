@@ -55,7 +55,8 @@ export function auditResearchIndex(source) {
     byType[type] = (byType[type] ?? 0) + 1;
     byPriority[priority] = (byPriority[priority] ?? 0) + 1;
   }
-  return { total: rows.length, byType, byPriority, approved: 0 };
+  const blocked = rows.filter(row => row[7] !== 'normal').length;
+  return { total: rows.length, byType, byPriority, requiresIdentityReview: blocked, approved: 0 };
 }
 
 const entry = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
