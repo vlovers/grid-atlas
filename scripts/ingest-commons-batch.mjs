@@ -53,6 +53,8 @@ export async function ingestCommonsBatch({
       results.push({
         research_id: id, status: 'ingested', sha256: inspection.local_original.sha256,
         sha1: inspection.local_original.sha1, bytes: inspection.local_original.bytes,
+        mime: inspection.local_original.mime, width: inspection.local_original.width,
+        height: inspection.local_original.height,
         source_observation: inspection.source_observation ?? null
       });
     } catch (error) {

@@ -4,6 +4,18 @@ import { pathToFileURL } from 'node:url';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
 
+function safeOriginalUrl(value) {
+  if (typeof value !== 'string') return false;
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && url.hostname === 'upload.wikimedia.org' &&
+      !url.port && !url.username && !url.password && !url.search && !url.hash &&
+      /^\/wikipedia\/commons\/[a-f0-9]\/[a-f0-9]{2}\/[^/]+\.(?:jpe?g|png)$/i.test(url.pathname);
+  } catch {
+    return false;
+  }
+}
+
 /**
  * Create a metadata-only, research-only SHA-256 receipt from a fully verified batch.
  * A missing/blocked original is never represented as an inspected original.
@@ -44,14 +56,24 @@ export function buildCommonsResearchReport(batch, evidence, staging) {
         item.delivery?.local_path !== null || item.delivery?.remote_url !== null ||
         item.file_page_url !== source.file_page_url ||
         result.sha1 !== source.sha1 || result.bytes !== source.bytes ||
+        result.mime !== item.image?.mime || result.width !== source.width ||
+        result.height !== source.height ||
+        source.source_author !== item.creator ||
+        source.source_license !== item.license?.identifier ||
+        !/^[a-f0-9]{40}$/.test(source.sha1 ?? '') ||
+        !Number.isSafeInteger(source.bytes) || source.bytes < 16 ||
+        source.width * source.height > 80_000_000 ||
         !/^[a-f0-9]{64}$/.test(result.sha256 ?? '') ||
         !/^[a-f0-9]{40}$/.test(result.sha1 ?? '') ||
         !Number.isSafeInteger(source.description_oldid) || source.description_oldid < 1 ||
         !Number.isSafeInteger(source.width) || source.width < 1 ||
         !Number.isSafeInteger(source.height) || source.height < 1 ||
         result.source_observation?.commons_file_page !== source.file_page_url ||
-        typeof result.source_observation?.api_original_url !== 'string' ||
-        !result.source_observation.api_original_url.startsWith('https://upload.wikimedia.org/wikipedia/commons/')) {
+        !safeOriginalUrl(result.source_observation?.api_original_url) ||
+        (result.source_observation.api_timestamp != null &&
+          (typeof result.source_observation.api_timestamp !== 'string' ||
+           !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(result.source_observation.api_timestamp) ||
+           !Number.isFinite(Date.parse(result.source_observation.api_timestamp))))) {
       throw Error('Unverified or mismatched Commons receipt: ' + id);
     }
     entries.push({

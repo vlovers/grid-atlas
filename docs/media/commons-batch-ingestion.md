@@ -38,6 +38,21 @@ On success, the short-lived `unpublished-commons-sha256-research` Actions artifa
 
 This is a live network check, so Commons availability, throttling or changed source metadata can cause a **red research workflow**. On 23 October 2026, one attempted batch verified two originals, but subsequent requests were throttled (HTTP 429). See [dated research observations](commons-original-research-observations-2026-10-23.md) for the two source-matched SHA-256 values; these are not a five-image complete receipt. Investigate the precise failure rather than weakening source pins or reporting an unverified SHA-256. Even a green workflow does not resolve copyright, provenance, subject identification or human approval.
 
+## Offline chain-of-custody verification (no Commons requests)
+
+Two original-image SHA-256 observations from the 23 October runner are pinned in [verified-original-observations.json](verified-original-observations.json), with the source run linked there. These are **original binary** hashes, not F1DB record hashes or publication approvals. The remaining three candidates intentionally have no pinned SHA-256 yet.
+
+For a private directory already containing one or more downloaded originals, re-inspect all present files offline:
+
+```sh
+node scripts/audit-local-commons-originals.mjs --output-dir /existing/owner-only/private-originals
+node --test tests/commons-local-originals-audit.test.mjs tests/commons-research-report.test.mjs
+```
+
+The auditor requires an existing owner-private directory outside the repository. It verifies original bytes against pinned Commons SHA-1, dimensions, MIME and byte count using the existing structural inspector. For the two previously verified originals it also checks the locally calculated SHA-256 against the independent runner observation. Other verified originals are reported as `inspected_new_sha256` for later human research; **they are not automatically added to the observation register**. Missing files are `pending_original`, checksum or structure mismatches are `blocked` (nonzero exit), and `complete` is true only when all five files are present and verified. No network request, image publication, license approval or image artifact is involved.
+
+The complete-batch research receipt additionally checks inspected MIME/dimensions, pinned creator/license consistency, canonical original URL and timestamp shape. These are consistency checks on research metadata, **not** proof of copyright ownership or independent historical verification.
+
 ## Publication remains blocked
 
 Independent review must still resolve original/derivative source chains, attribution, license obligations, relevant non-copyright rights, historical F1DB identity, context, UK/EN alt text and captions. Only then may a separately reviewed publication PR add approved bytes to `apps/web/public/media/` and an authenticated human-reviewed registry record. See [media policy](approved-imagery-workflow.md) and [original inspection](original-inspection.md).

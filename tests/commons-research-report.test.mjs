@@ -10,6 +10,8 @@ const fixtures = () => {
   const results = evidence.entries.map(item => ({
     research_id: item.research_id, status: 'ingested',
     sha1: item.sha1, sha256: 'a'.repeat(64), bytes: item.bytes,
+    mime: staging.entries.find(entry => entry.id === item.research_id).image.mime,
+    width: item.width, height: item.height,
     source_observation: {
       commons_file_page: item.file_page_url,
       api_original_url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg',
@@ -65,4 +67,32 @@ test('rejects duplicate receipts and duplicate pinned evidence', () => {
   const args2 = fixtures();
   args2.evidence.entries[1].research_id = args2.evidence.entries[0].research_id;
   assert.throws(() => buildCommonsResearchReport(args2.batch, args2.evidence, args2.staging), /duplicate Commons source evidence/);
+});
+
+test('rejects tampered MIME, dimensions, creator and license in a research receipt', () => {
+  for (const mutate of [
+    args => { args.batch.results[0].mime = 'image/png'; },
+    args => { args.batch.results[0].width += 1; },
+    args => { args.batch.results[0].height += 1; },
+    args => { args.evidence.entries[0].source_author = 'unverified author'; },
+    args => { args.evidence.entries[0].source_license = 'unverified license'; }
+  ]) {
+    const args = fixtures();
+    mutate(args);
+    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt/);
+  }
+});
+
+test('rejects forged original URLs and malformed source timestamps', () => {
+  for (const mutate of [
+    args => { args.batch.results[0].source_observation.api_original_url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg?download=1'; },
+    args => { args.batch.results[0].source_observation.api_original_url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg#fragment'; },
+    args => { args.batch.results[0].source_observation.api_original_url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg/evil'; },
+    args => { args.batch.results[0].source_observation.api_original_url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/test.jpg@evil.example'; },
+    args => { args.batch.results[0].source_observation.api_timestamp = 'not a timestamp'; }
+  ]) {
+    const args = fixtures();
+    mutate(args);
+    assert.throws(() => buildCommonsResearchReport(args.batch, args.evidence, args.staging), /Unverified or mismatched Commons receipt/);
+  }
 });
