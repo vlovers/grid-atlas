@@ -351,3 +351,22 @@
     color:CanvasText;
   }
 }
+
+/* Pinned F1DB CC BY 4.0 SVG as a real circuit cover, never an inferred route. */
+.circuitHeroOutline {
+  position:absolute;
+  right:8%;
+  top:12%;
+  width:min(68%,640px);
+  height:75%;
+  object-fit:contain;
+  filter:drop-shadow(0 12px 24px #050a0fcc) drop-shadow(0 0 22px #90e0df77);
+}
+.artCredit a {color:inherit;text-decoration:underline;text-underline-offset:3px}
+.artCredit a:focus-visible {outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:700px) {
+  .circuitHeroOutline {right:13%;top:7%;width:76%;height:62%}
+}
+@media(forced-colors:active) {
+  .circuitHeroOutline {filter:none}
+}
