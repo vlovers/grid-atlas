@@ -21,7 +21,7 @@ jobs:
       - name: Check offline Commons evidence and report tests
         run: |
           node scripts/audit-commons-evidence.mjs
-          node --test tests/commons-research-report.test.mjs
+          node --test tests/commons-research-report.test.mjs tests/commons-local-originals-audit.test.mjs
       - name: Download and inspect five pinned originals in private ephemeral storage
         shell: bash
         run: |
