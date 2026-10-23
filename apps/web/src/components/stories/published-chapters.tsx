@@ -6,6 +6,7 @@ export function PublishedChapters({ article, locale }: { article: PublishedArtic
   const uk = locale === 'uk';
   return <article className={styles.published} data-testid="published-chapters">
     <header><p className={styles.eyebrow}>{uk ? 'ІСТОРИЧНИЙ ТЕКСТ / ДЖЕРЕЛА' : 'HISTORICAL TEXT / SOURCES'}</p><h3>{article.title}</h3></header>
+    <p className={styles.note} data-testid="editorial-review-disclosure">{uk ? 'Редакційний статус: опубліковано після незалежної людської перевірки. Це не позначка AI Reviewed; неперевірені чернетки тут не показуються.' : 'Editorial status: published following independent human review. This is not an AI Reviewed label; unreviewed drafts are not displayed here.'}</p>
     {article.sections.map((section, index) => <details key={index} open={index === 0}>
       <summary>{section.heading || (uk ? 'Історичний контекст' : 'Historical context')}</summary>
       {section.claim_ids.map(id => { const claim = article.claims.find(c => c.id === id)!; return <div key={id} className={styles.claim}>
