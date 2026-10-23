@@ -1,36 +1,73 @@
 import test from 'node:test';
-import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { mkdtempSync, writeFileSync, rmSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { createHash } from 'node:crypto';
-import assert from 'node:assert/strict';
+import { deflateSync } from 'node:zlib';
 import { inspectImageBytes, inspectOriginal } from '../scripts/inspect-media-original.mjs';
 
-test('rejects invalid image bytes', () => {
-  assert.throws(() => inspectImageBytes(Buffer.alloc(30)), /unsupported/);
-});
+function crc32(bytes) {
+ let crc=0xffffffff;
+ for(const byte of bytes){crc^=byte;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}
+ return (crc^0xffffffff)>>>0;
+}
+function chunk(name,bytes) {
+ const type=Buffer.from(name,'ascii'),size=Buffer.alloc(4),checksum=Buffer.alloc(4);
+ size.writeUInt32BE(bytes.length);checksum.writeUInt32BE(crc32(Buffer.concat([type,bytes])));
+ return Buffer.concat([size,type,bytes,checksum]);
+}
+function png(width=4,height=5) {
+ const ihdr=Buffer.alloc(13);ihdr.writeUInt32BE(width,0);ihdr.writeUInt32BE(height,4);ihdr[8]=8;ihdr[9]=2;
+ const rows=Buffer.alloc(height*(1+width*3));
+ return Buffer.concat([Buffer.from('89504e470d0a1a0a','hex'),chunk('IHDR',ihdr),chunk('IDAT',deflateSync(rows)),chunk('IEND',Buffer.alloc(0))]);
+}
+const jpeg=()=>Buffer.from('ffd8ffe000040000ffc0000b080002000301011100ffda0008010100003f0000ffd9','hex');
+const staging=mime=>({schema_version:1,lane:'research_only',publication_allowed:false,entries:[{
+ id:'research-test',file_page_url:'https://commons.wikimedia.org/wiki/File:Test.jpg',
+ image:{mime,width:null,height:null},status:'candidate',review:null,delivery:{local_path:null,remote_url:null}
+}]});
 
-test('extracts PNG IHDR dimensions', () => {
- const bytes=Buffer.from('89504e470d0a1a0a0000000d494844520000000400000005080200000000000000','hex');
- assert.deepEqual(inspectImageBytes(bytes),{mime:'image/png',width:4,height:5});
+test('checks PNG CRC, chunk completeness and dimensions',()=>{
+ const image=png();
+ assert.deepEqual(inspectImageBytes(image),{mime:'image/png',width:4,height:5});
+ const corrupt=Buffer.from(image);corrupt[29]^=1;
+ assert.throws(()=>inspectImageBytes(corrupt),/CRC mismatch/);
+ assert.throws(()=>inspectImageBytes(image.subarray(0,-12)),/IEND/);
+ assert.throws(()=>inspectImageBytes(Buffer.concat([image,Buffer.from([0])])),/trailing/);
 });
-test('extracts JPEG SOF dimensions', () => {
- const bytes=Buffer.from('ffd8ffe000040000ffc0000b080002000301011100ffd9','hex');
- assert.deepEqual(inspectImageBytes(bytes),{mime:'image/jpeg',width:3,height:2});
+test('rejects oversized pixel count',()=>{
+ const bytes=png();bytes.writeUInt32BE(12000,16);bytes.writeUInt32BE(12000,20);
+ bytes.writeUInt32BE(crc32(bytes.subarray(12,29)),29);
+ assert.throws(()=>inspectImageBytes(bytes),/pixel limit/);
 });
-
-test('hashes local original while leaving approval unresolved', () => {
- const dir=mkdtempSync(join(tmpdir(),'ga-image-'));
- try {
-  const filePath=join(dir,'original.jpg');
-  const bytes=Buffer.from('ffd8ffe000040000ffc0000b080002000301011100ffd9','hex');
-  writeFileSync(filePath,bytes);
+test('requires complete JPEG marker stream',()=>{
+ assert.deepEqual(inspectImageBytes(jpeg()),{mime:'image/jpeg',width:3,height:2});
+ assert.throws(()=>inspectImageBytes(jpeg().subarray(0,-2)),/JPEG missing/);
+ assert.throws(()=>inspectImageBytes(Buffer.concat([jpeg(),Buffer.from([0])])),/trailing/);
+});
+test('rejects random and short bytes',()=>{
+ assert.throws(()=>inspectImageBytes(Buffer.alloc(30)),/Only JPEG and PNG/);
+ assert.throws(()=>inspectImageBytes(Buffer.alloc(2)),/Truncated/);
+});
+test('checks SHA-256, MIME, dimensions, symlinks and approval boundaries',()=>{
+ const dir=mkdtempSync(join(tmpdir(),'grid-atlas-original-'));
+ try{
+  const bytes=png(),filePath=join(dir,'original.png');writeFileSync(filePath,bytes);
   const sha=createHash('sha256').update(bytes).digest('hex');
-  const staging={lane:'research_only',publication_allowed:false,entries:[{id:'research-test',file_page_url:'https://commons.wikimedia.org/wiki/File:Test.jpg',image:{mime:'image/jpeg'}}]};
-  const result=inspectOriginal({filePath,researchId:'research-test',staging,expectedSha256:sha});
+  const result=inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:sha});
   assert.equal(result.local_original.sha256,sha);
   assert.equal(result.publication_allowed,false);
-  assert.equal(result.unresolved.independent_human_review,true);
-  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging,expectedSha256:'0'.repeat(64)}),/does not match/);
- } finally { rmSync(dir,{recursive:true,force:true}); }
+  assert.equal(result.unresolved.full_image_decode,true);
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/png'),expectedSha256:'0'.repeat(64)}),/SHA-256/);
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:staging('image/jpeg')}),/MIME/);
+  const wrong=staging('image/png');wrong.entries[0].image.width=100;
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:wrong}),/width/);
+  const link=join(dir,'link.png');symlinkSync(filePath,link);
+  assert.throws(()=>inspectOriginal({filePath:link,researchId:'research-test',staging:staging('image/png')}),/regular file/);
+  const approved=staging('image/png');approved.entries[0].status='verified';
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:approved}),/unpublished/);
+  const duplicate=staging('image/png');duplicate.entries.push({...duplicate.entries[0]});
+  assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:duplicate}),/duplicate/);
+ }finally{rmSync(dir,{recursive:true,force:true});}
 });
