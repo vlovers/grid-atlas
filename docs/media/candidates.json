@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lane": "candidates",
   "assets": [
     {
@@ -44,7 +44,13 @@
         "uk": null,
         "en": null
       },
-      "layout": null
+      "layout": null,
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1989,
+        "description": "Ayrton Senna on the 1989 Belgian Grand Prix podium; source-described photograph.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ayrton_Senna_1989_Belgian_GP_podium_(cropped).jpg"
+      }
     },
     {
       "id": "juan-manuel-fangio-commons-pilot",
@@ -88,7 +94,13 @@
         "uk": null,
         "en": null
       },
-      "layout": null
+      "layout": null,
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1957,
+        "description": "Juan Manuel Fangio in Buenos Aires in 1957; crop and parent credit chain unresolved.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:J.M._Fangio_1957.jpg"
+      }
     },
     {
       "id": "lewis-hamilton-commons-pilot",
@@ -132,7 +144,13 @@
         "uk": null,
         "en": null
       },
-      "layout": null
+      "layout": null,
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2016,
+        "description": "Lewis Hamilton at the 2016 Monaco Grand Prix; source-described photograph.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_(27333186713).jpg"
+      }
     },
     {
       "id": "monaco-4-f1db-pilot",
@@ -183,6 +201,12 @@
         ],
         "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
         "source_revision": "f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; exact race.circuitId and race.circuitLayoutId observations"
+      },
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1984,
+        "description": "Monaco layout monaco-4 mapped to race 394 (1984).",
+        "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0"
       }
     },
     {
@@ -234,6 +258,12 @@
         ],
         "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
         "source_revision": "f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; exact race.circuitId and race.circuitLayoutId observations"
+      },
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2016,
+        "description": "Monaco layout monaco-6 mapped to race 941 (2016).",
+        "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0"
       }
     }
   ]

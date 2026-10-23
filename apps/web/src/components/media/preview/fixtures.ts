@@ -7,6 +7,7 @@ import { mediaFingerprint, type MediaAsset } from '../registry';
 export function syntheticAsset(variant: string): MediaAsset {
   const asset: MediaAsset = {
     id: 'synthetic-diagram', subject: { type: 'circuit', id: 'fixture-circuit' }, kind: 'circuit-diagram',
+    ai_generated: false, historical_context: { year: 1950, description: 'Synthetic test context, not history.', source_url: 'https://example.org/test-context' },
     source_url: 'https://example.org/test-source', file_page_url: 'https://example.org/test-file',
     creator: 'Synthetic Fixture Creator', attribution: 'Synthetic Fixture Creator — test data only',
     license: { identifier: 'Synthetic license fixture', url: 'https://example.org/test-license', restrictions: ['Synthetic rights data; not permission to reuse real media.'] },

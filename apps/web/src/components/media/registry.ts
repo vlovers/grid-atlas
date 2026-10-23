@@ -6,6 +6,8 @@ export type MediaAsset = {
   id: string;
   subject: MediaSubject;
   kind: 'photograph' | 'portrait' | 'circuit-diagram' | 'car-illustration';
+  ai_generated: boolean | null;
+  historical_context: { year: number | null; description: string | null; source_url: string | null };
   source_url: string | null;
   file_page_url: string;
   creator: string | null;
@@ -24,8 +26,8 @@ export type MediaAsset = {
   caption: { uk: string | null; en: string | null };
   layout: { id: string; race_ids: string[]; source_url: string; source_revision: string } | null;
 };
-export type MediaRegistry = { schema_version: 1; lane: 'candidates' | 'publication'; assets: MediaAsset[] };
-const fields = 'id subject kind source_url file_page_url creator attribution license image status review delivery source_revision inspected_on content_sha256 modifications rights_note alt caption layout';
+export type MediaRegistry = { schema_version: 2; lane: 'candidates' | 'publication'; assets: MediaAsset[] };
+const fields = 'id subject kind ai_generated historical_context source_url file_page_url creator attribution license image status review delivery source_revision inspected_on content_sha256 modifications rights_note alt caption layout';
 const text = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0;
 const key = (s: MediaSubject) => `${s.type}:${s.id}`;
 function check(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(`Media registry: ${message}`); }
@@ -60,6 +62,9 @@ export function mediaFingerprint(asset: MediaAsset): string {
 
 export function publicationProblems(asset: MediaAsset, asOf: string, remoteOrigins: readonly string[] = []): string[] {
   const errors: string[] = [];
+  if (typeof asset.ai_generated !== 'boolean') errors.push('ai_generated: an explicit decision is required');
+  if (!asset.historical_context || !text(asset.historical_context.description) || !text(asset.historical_context.source_url)) errors.push('historical_context: description and evidence URL required');
+  if (asset.ai_generated === true && (asset.kind === 'photograph' || asset.kind === 'portrait' || asset.kind === 'circuit-diagram')) errors.push('ai_generated: reconstructions cannot be archival photographs, portraits or sourced circuit geometry');
   for (const field of ['source_url', 'creator', 'attribution', 'modifications', 'rights_note'] as const)
     if (!text(asset[field])) errors.push(`${field}: required for publication`);
   if (!text(asset.license.identifier) || !text(asset.license.url)) errors.push('license: identifier and URL required');
@@ -84,12 +89,17 @@ export function parseMediaRegistry(value: unknown, subjects: readonly MediaSubje
   lane: MediaRegistry['lane'], remoteOrigins: readonly string[] = [], layoutMappings: readonly LayoutMapping[] = []): MediaRegistry {
   date(asOf, 'asOf');
   shape(value, 'schema_version lane assets', 'registry');
-  check(value.schema_version === 1 && value.lane === lane && Array.isArray(value.assets), 'wrong schema, lane or assets array');
+  check(value.schema_version === 2 && value.lane === lane && Array.isArray(value.assets), 'wrong schema, lane or assets array');
   const known = new Set(subjects.map(key));
   const ids = new Set<string>();
   for (const [index, item] of value.assets.entries()) {
     const p = `assets[${index}]`;
     shape(item, fields, p);
+    check(item.ai_generated === null || typeof item.ai_generated === 'boolean', `${p}.ai_generated: boolean or null required`);
+    shape(item.historical_context, 'year description source_url', `${p}.historical_context`);
+    check(item.historical_context.year === null || (Number.isInteger(item.historical_context.year) && Number(item.historical_context.year) >= 1800 && Number(item.historical_context.year) <= Number(asOf.slice(0, 4))), `${p}.historical_context.year: valid historical year or null required`);
+    check(item.historical_context.description === null || text(item.historical_context.description), `${p}.historical_context.description: text or null required`);
+    if (item.historical_context.source_url !== null) https(item.historical_context.source_url, `${p}.historical_context.source_url`);
     check(text(item.id) && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) && !ids.has(item.id), `${p}.id: invalid or duplicate ID`);
     ids.add(item.id);
     shape(item.subject, 'type id', `${p}.subject`);

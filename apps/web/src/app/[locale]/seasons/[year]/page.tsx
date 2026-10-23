@@ -1,7 +1,11 @@
 import { ArchiveRhythm } from '@/components/stories/archive-rhythm';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
-import { StoryHeader } from '@/components/stories/story-header';
+import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
+import { ArchivePlate } from '@/components/editorial/archive-plate';
+import { RecordReadingNote } from '@/components/editorial/record-reading-note';
+import { archiveCopy } from '@/components/editorial/archive-copy';
+import archiveStyles from '@/components/editorial/archive.module.css';
 import { storyCopy } from '@/components/stories/copy';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -41,8 +45,16 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   })).sort((a,b) => b.recordedWins - a.recordedWins || a.name.localeCompare(b.name)).slice(0, 5);
   const participatingDrivers = new Set(lineups.map(driver => driver.driver_id)).size;
   const raceCalendar = [...races].sort((a,b) => a.round-b.round);
-  return <section className="page">
-    <StoryHeader title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} locale={locale} kind="grid" marker={year} lead={t('seasonLead')} />
+  const a = archiveCopy[locale];
+  return <section className={`page ${archiveStyles.page}`} data-testid="season-dossier">
+    <EditorialHero title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} lead={t('seasonLead')}
+      media={<ArchivePlate marker={year} label={a.calendar} note={a.evidenceNote} entries={raceCalendar.slice(0, 3).map(race => ({ id: race.id, href: `/races/${race.id}`, title: race.official_name, meta: `${t('round', { round: race.round })} / ${race.circuit_name ?? t('unknownCircuit')}` }))} />}
+      actions={<><a href="#season-calendar">{a.calendar} ↓</a><Link href="/seasons">{a.decade} ↗</Link></>}
+      statistics={[{ label: t('grandsPrix'), value: races.length }, { label: t('driversTitle'), value: participatingDrivers }, { label: t('constructorsTitle'), value: teams.size }]} scope={a.scope} />
+    <SourceAttribution locale={locale} />
+    <EditorialTabs label={a.connections} items={[{ id: 'season-calendar', label: a.calendar }, { id: 'season-classifications', label: a.results }, { id: 'season-field', label: a.field }]} />
+    <RecordReadingNote kind="season" locale={locale} />
+    <div id="season-calendar">
     <ArchiveRhythm testId="season-archive-rhythm" axis="round" locale={locale} title={locale === 'uk' ? 'Календар у деталях' : 'The calendar in detail'} description={locale === 'uk' ? 'Усі раунди сезону з прямими посиланнями на протоколи гонок.' : 'Every recorded round, linked to its race classification.'} entries={raceCalendar.map(race => ({ id: race.id, year: Number(year), position: race.round, label: race.official_name, href: `/races/${race.id}`, detail: race.circuit_name ?? undefined }))} />
     <ArchiveJourney testId="season-visual-journey" locale={locale} title={locale === 'uk' ? 'Маршрут сезону' : 'The season route'} description={locale === 'uk' ? 'Початок, середина та фінал календаря. Вибір за позицією у календарі, без непідтверджених тверджень про драматичність.' : 'Opening, midpoint and final calendar round. Selected by chronology, not invented dramatic significance.'} items={raceCalendar.length ? [raceCalendar[0], ...(raceCalendar.length > 2 ? [raceCalendar[Math.floor((raceCalendar.length - 1) / 2)]] : []), ...(raceCalendar.length > 1 ? [raceCalendar[raceCalendar.length - 1]] : [])].map(entry => ({ id: entry.id, href: `/races/${entry.id}`, year: Number(year), overline: `${locale === 'uk' ? 'Раунд' : 'Round'} ${entry.round}`, title: entry.official_name, detail: entry.circuit_name ?? undefined })) : []} />
     <section aria-labelledby="season-journey" data-testid="season-journey">
@@ -78,8 +90,10 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
         ? 'Перемоги підсумовано за записами пілотів; історичні спільні автомобілі можуть впливати на облік. Цей список не є офіційним заліком Кубка конструкторів або підтвердженням титулу.'
         : 'Wins are summed from driver result aggregates; historical shared drives may affect counting. This is not an official Constructors’ Championship table or a title claim.'}</p>
     </section>
+    </div><section id="season-classifications" aria-label={a.results}>
     <ChampionshipTable rows={driverStandings} locale={locale} kind="drivers" scope="season" />
     <ChampionshipTable rows={constructorStandings} locale={locale} kind="constructors" scope="season" />
+    </section><section id="season-field" aria-label={a.field}>
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>
       <Link key={r.id} className="record" href={`/races/${r.id}`}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>
@@ -96,5 +110,6 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
       </article>
     )}</div> : <p>{t('noLineups')}</p>}
     <Link className="back" href="/seasons">← {t('allSeasons')}</Link>
+    </section>
   </section>;
 }

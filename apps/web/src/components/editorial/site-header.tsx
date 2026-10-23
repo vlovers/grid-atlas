@@ -8,7 +8,7 @@ export async function SiteHeader({ locale }: { locale: 'uk' | 'en' }) {
   const t = await getTranslations({ locale, namespace: 'UI' });
   return <header className={styles.header} data-testid="site-header">
     <a href={`/${locale}`} className={styles.brand} aria-label="GRID ATLAS">
-      <strong>GRID<span>ATLAS</span></strong><span>{locale === 'uk' ? 'ІСТОРІЯ В РУСІ' : 'HISTORY LIVES HERE'}</span>
+      <strong>GRID<wbr /><span>ATLAS</span></strong><span>{locale === 'uk' ? 'ІСТОРІЯ В РУСІ' : 'HISTORY LIVES HERE'}</span>
     </a>
     <AtlasNavigation locale={locale} label={t('mainNavigation')} items={[
       { href: '/stories', label: locale === 'uk' ? 'Історії пілотів' : 'Driver stories' },

@@ -24,7 +24,7 @@
 - PR #207 merged the circuit SVG rendering fix. All 160 pinned layout assets are present; independent per-asset rights review and unsupported overlays remain separate boundaries.
 - Draft editorial subjects, source-located research, and manuscript gates are not public biographies or independently verified historical facts. Photography is not approved for public display merely because a candidate or registry entry exists.
 - This sprint adds shared driver/constructor participation calendars, observed roster changes, source-backed milestones and rights-gated image archives. See the [implemented behavior, screenshots and limits](../design/visual-storytelling-v2/README.md) and [current audit](../sprint-audit-2026-10-23.md).
-- Next coherent visual milestone: circuit/season/race editorial templates and archive-backed interactive storytelling, with UK/EN parity, reduced-motion, keyboard support, real-archive browser verification, and per-asset licensing approval. Prefer one reviewable batch over overlapping small PRs.
+- The [unified archive batch](../design/unified-archive/README.md) extends existing editorial templates to catalogues, seasons, circuits and races, retains driver/constructor dossiers, and adds historical-context/AI provenance to the existing media registry. UK/EN navigation, reduced motion and enlarged-text reflow have dedicated cross-engine acceptance. Independent photographic approval and researched historical narratives remain separate work.
 
 ## After the first useful beta
 
