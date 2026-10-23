@@ -102,10 +102,7 @@ test('rejects staged identity drift and refuses symlink originals', async () => 
   const clean = fixtures(dir);
   const id = clean.staging.entries[0].id;
   symlinkSync(join(dir, 'nonexistent'), join(dir, id + '.jpg'));
-  const report = auditLocalCommonsOriginals({
-    ...clean,
-    inspectImpl: ({ filePath }) => { throw Error('Symlink original rejected: ' + filePath); }
-  });
+  const report = auditLocalCommonsOriginals(clean);
   assert.equal(report.ok, false);
   assert.equal(report.blocked, 1);
 }));
