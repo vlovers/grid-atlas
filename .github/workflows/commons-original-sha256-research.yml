@@ -1,0 +1,57 @@
+name: Commons originals SHA-256 research (unpublished)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/commons-original-sha256-research.yml'
+      - 'scripts/ingest-commons-original.mjs'
+      - 'scripts/ingest-commons-batch.mjs'
+      - 'scripts/inspect-media-original.mjs'
+      - 'scripts/build-commons-research-report.mjs'
+      - 'docs/media/commons-original-evidence.json'
+      - 'docs/media/cross-era-staging.json'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-pinned-originals:
+    name: Research-only Commons original verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check offline Commons evidence and report tests
+        run: |
+          node scripts/audit-commons-evidence.mjs
+          node --test tests/commons-research-report.test.mjs
+      - name: Download and inspect five pinned originals in private ephemeral storage
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          private_dir="$(mktemp -d "$RUNNER_TEMP/grid-atlas-originals.XXXXXXXX")"
+          chmod 700 "$private_dir"
+          trap 'rm -rf -- "$private_dir"' EXIT
+          node scripts/ingest-commons-batch.mjs \
+            --ids research-schumacher-portrait-2007,research-alonso-2024,research-mclaren-mp44-2007,research-ferrari-f2004-2004,research-silverstone-2019 \
+            --output-dir "$private_dir" > "$RUNNER_TEMP/commons-batch.json"
+          node scripts/build-commons-research-report.mjs \
+            --batch-report "$RUNNER_TEMP/commons-batch.json" \
+            --output "$RUNNER_TEMP/commons-research-sha256.json"
+      - name: Archive metadata only (never original image bytes)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-commons-sha256-research
+          path: |
+            ${{ runner.temp }}/commons-batch.json
+            ${{ runner.temp }}/commons-research-sha256.json
+          if-no-files-found: warn
+          retention-days: 7
