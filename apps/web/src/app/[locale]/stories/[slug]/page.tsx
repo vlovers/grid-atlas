@@ -36,7 +36,8 @@ export default async function DriverStory({ params, searchParams }: Props) {
     resolveReleaseDriver(pilot.peer, locale),
   ]);
   const sennaFirstWin = slug === 'ayrton-senna' ? records.find(record => record.pick.year === 1985 && record.pick.round === 2) : undefined;
-  const firstWinRows = sennaFirstWin?.rows.filter(row => row.position_text === '1' && /portug/i.test(row.race_name)) ?? [];
+  const firstWinMilestone = career.milestones.first_win?.race;
+  const firstWinRows = sennaFirstWin?.rows.filter(row => row.position_text === '1' && row.position_number === 1 && !row.shared_car && row.race_id === firstWinMilestone?.id && row.round === firstWinMilestone.round && firstWinMilestone.year === 1985) ?? [];
   const related = peer && career.participation.some(r => r.year === pilot.peerYear) && peer.career.participation.some(r => r.year === pilot.peerYear) ? peer : null;
   const first = career.milestones.first_appearance?.race;
   const selected = career.participation.filter(r => r.year === year);
