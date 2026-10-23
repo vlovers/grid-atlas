@@ -26,5 +26,17 @@ class DocumentationLinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertEqual(failures[0]["target"], "missing.md")
 
+    def test_repository_reached_through_symlink(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            root = base / "repo"
+            root.mkdir()
+            (root / "README.md").write_text("[guide](guide.md)\n", encoding="utf-8")
+            (root / "guide.md").write_text("Guide\n", encoding="utf-8")
+            alias = base / "alias"
+            alias.symlink_to(root, target_is_directory=True)
+            with patch.object(module, "ROOT", alias), patch.object(module, "tracked_paths", return_value={"README.md", "guide.md"}):
+                self.assertEqual(module.audit(), [])
+
 if __name__ == "__main__":
     unittest.main()

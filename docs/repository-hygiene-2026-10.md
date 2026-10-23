@@ -48,3 +48,20 @@ No tracked `node_modules/`, `.next/`, `__pycache__/`, `test-results/`, or `playw
 **Retention decision:** do not delete or relocate screenshots solely because they are large. They may be visual acceptance evidence, and moving them can break Markdown references. First establish references, provenance, and whether each screenshot is superseded. Similarly, the 48 script files are an inventory, **not** 48 unused scripts: scripts may be called from CI, docs, tests or manual editorial workflows.
 
 **Next validation:** run `pnpm check:docs` (or `python3 scripts/audit-doc-links.py`) locally. The scanner checks tracked relative Markdown destinations and deliberately does not verify remote URLs, fragment anchors, or rendered Markdown. Resolve its findings before enforcing it as a required CI gate.
+
+
+## Current-main integration — 23 October 2026
+
+PR #203 was updated against `f9d193e` (including Race Constructor Field #214).
+The read-only audit now reports 1,130 tracked files, 190 raster evidence images
+(40,229,727 bytes), and 67 root scripts. These are dated inventory figures, not
+an instruction to delete unreferenced files. Earlier inventories above remain
+historical snapshots.
+
+The current-tree link audit found and corrected a relative link in the editorial
+reconciliation runbook. A macOS/symlink containment defect in the audit itself was
+also fixed and regression-tested. Documentation validation and asset inventory
+are now part of Foundation CI; neither publishes editorial material nor removes
+existing evidence. The inventory is available with `pnpm audit:repo`; local tracked
+Markdown destinations with `pnpm check:docs`. Remote URLs, anchor correctness,
+dynamic imports and manual script use remain outside these static checks.

@@ -1,6 +1,6 @@
 # Pinned-archive event reconciliation — execution and review contract
 
-The read-only [script](../../../scripts/reconcile-editorial-event-leads.py) enumerates **all** source races for each of the 11 event-lead years, with exact F1DB race, circuit, driver and constructor external IDs and the result rows reporting first position. It checks the archive against the measured v2026.17.0 SHA-256 and requires an **exact asset filename** in the official checksum manifest. Hashing is streamed; candidates are deterministically ordered by round and race ID.
+The read-only [script](../../../../scripts/reconcile-editorial-event-leads.py) enumerates **all** source races for each of the 11 event-lead years, with exact F1DB race, circuit, driver and constructor external IDs and the result rows reporting first position. It checks the archive against the measured v2026.17.0 SHA-256 and requires an **exact asset filename** in the official checksum manifest. Hashing is streamed; candidates are deterministically ordered by round and race ID.
 
 ```sh
 python3 scripts/reconcile-editorial-event-leads.py \

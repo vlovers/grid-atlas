@@ -40,18 +40,20 @@ def tracked_paths():
 
 
 def audit():
+    # Normalize macOS temporary-directory and worktree symlinks before containment checks.
+    root = ROOT.resolve()
     tracked = tracked_paths()
     failures = []
     for file in sorted(p for p in tracked if p.endswith(".md") and (p.startswith("docs/") or p == "README.md")):
-        for line, target in targets((ROOT / file).read_text(encoding="utf-8")):
+        for line, target in targets((root / file).read_text(encoding="utf-8")):
             if not target or target.startswith(("#", "//", "{")):
                 continue
             url = urlsplit(target)
             if url.scheme or not url.path or url.path.startswith("/"):
                 continue
-            resolved = (ROOT / file).parent.joinpath(unquote(url.path)).resolve()
+            resolved = (root / file).parent.joinpath(unquote(url.path)).resolve()
             try:
-                relative = resolved.relative_to(ROOT).as_posix()
+                relative = resolved.relative_to(root).as_posix()
             except ValueError:
                 failures.append({"file": file, "line": line, "target": target, "reason": "outside repository"})
                 continue
