@@ -77,3 +77,21 @@ The current research release already contains a Senna claim for this exact event
 - `docs/editorial/APPROVED_RELEASE_PIPELINE.md`: existing revision-bound human approval, export and explicit operator publication remain mandatory.
 
 **Deduplication decision:** the visual story is a presentation of the existing researched event, not a new independently approved biography or new CMS entity. The added Formula 1 result link is already present in the English dossier; do not duplicate it there. The supplementary retrospective is a candidate research source, not an approved replacement for the dossier's evidence. The published story must read approved claim text through the existing release path once a human reviewer approves the exact revision.
+
+## Confirmed bilingual dossier parity (repository audit, 23 October 2026)
+
+Both canonical dossier files were inspected directly in `main`:
+
+| Locale | Canonical dossier | Claim ID | Current status |
+| --- | --- | --- | --- |
+| English | `docs/editorial/pilots/senna/en.dossier.json` | `ayrton-senna-portugal-1985-p1` | `needs_review` |
+| Ukrainian | `docs/editorial/pilots/senna/uk.dossier.json` | `ayrton-senna-portugal-1985-p1` | `needs_review` |
+
+Both claims assert the 21 April 1985 Portuguese Grand Prix victory for Lotus-Renault. Both use source ID `senna-portugal-1985-result`, the same official Formula 1 classification URL and the same result-row locator. This confirms **research record and translation coverage**, not independent historical review. Do not change either claim to `approved` or treat matching translations as a reviewer signature.
+
+### Reuse decision for visual storytelling
+
+- The first visual-story chapter can be scoped to this **one existing claim**; later chapters about weather, qualifying, fastest lap or tactics must wait for separately sourced, independently reviewed claims.
+- A public statistics/evidence view can continue to use the archive read API without implying that this unpublished claim has been editorially approved.
+- The story reader must not import the research JSON into public frontend bundles. Use the existing approved publication read model only after review and explicit publication.
+- Preserve the UK/EN claim pairing and do not duplicate the same claim under a second ID merely to power the visual design.
