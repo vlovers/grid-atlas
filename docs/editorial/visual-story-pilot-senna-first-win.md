@@ -59,3 +59,10 @@ These are editorial *instructions and framing*, not verified historical narrativ
 Do not add this story to public pages, media publication registry, or database. Reuse the existing Senna editorial pilot and approved-release pipeline once sources and reviewers are ready. The chapter can first be previewed privately using the existing preview tool. A green CI check or successful source download is **not** editorial approval.
 
 **Next editorial action:** verify the candidate event and archive race ID; populate the per-claim ledger with exact evidence URLs and independent review status. Do not invent race statistics, dialogue or atmospheric detail.
+
+## Independently checkable official result references (research notes, not approval)
+
+- Formula 1, Portuguese Grand Prix 1985 race result: https://www.formula1.com/en/results/1985/races/483/portugal/race-result
+- Formula 1, historical article about Senna's first win: https://www.formula1.com/en/latest/article/he-obliterated-the-opposition-remembering-sennas-first-f1-win.1nwtFllIepudRwA7iesUaj
+
+The race-result page identifies Senna as the winner for Lotus Renault, car 12, with 67 laps and 2:00:28.006. The classification lists Alboreto second and Tambay third. Treat these as source-reported facts requiring editorial review and pinned-import reconciliation. Both references belong to Formula 1 and are not independent publisher groups. The Formula 1 URL race ID is not a Grid Atlas race ID. No media rights are conveyed by these URLs.
