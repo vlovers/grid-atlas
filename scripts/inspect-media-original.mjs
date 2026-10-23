@@ -96,7 +96,7 @@ export function inspectImageBytes(buffer) {
   throw Error('Only JPEG and PNG original files are supported');
 }
 
-export function inspectOriginal({filePath,researchId,staging,expectedSha256,expectedSha1,expectedBytes}) {
+export function inspectOriginal({filePath,researchId,staging,expectedSha256,expectedSha1,expectedBytes,sourceEvidence}) {
   if(staging?.schema_version!==1||staging.lane!=='research_only'||staging.publication_allowed!==false||!Array.isArray(staging.entries))throw Error('Invalid research-only staging manifest');
   const matches=staging.entries.filter(e=>e.id===researchId);
   if(matches.length!==1)throw Error('Unknown or duplicate research ID');
@@ -114,14 +114,24 @@ export function inspectOriginal({filePath,researchId,staging,expectedSha256,expe
   if(decoded.mime!==entry.image.mime) throw Error('Original signature does not match staged MIME');
   if(entry.image.width!==null&&entry.image.width!==decoded.width)throw Error('Original width does not match staged dimensions');
   if(entry.image.height!==null&&entry.image.height!==decoded.height)throw Error('Original height does not match staged dimensions');
+  const evidenceMatches=sourceEvidence?.entries?.filter(e=>e.research_id===researchId)??[];
+  if(sourceEvidence && (sourceEvidence.schema_version!==1||sourceEvidence.lane!=='research_only'||sourceEvidence.publication_allowed!==false||!Array.isArray(sourceEvidence.entries)||evidenceMatches.length>1))throw Error('Invalid or ambiguous Commons source evidence');
+  const evidence=evidenceMatches[0];
+  if(evidence){
+    if(evidence.file_page_url!==entry.file_page_url||!Number.isSafeInteger(evidence.description_oldid)||evidence.description_oldid<1)throw Error('Commons source evidence page mismatch');
+    if(!/^[a-f0-9]{40}$/.test(evidence.sha1)||!Number.isSafeInteger(evidence.bytes)||evidence.bytes<1||!Number.isSafeInteger(evidence.width)||!Number.isSafeInteger(evidence.height))throw Error('Invalid Commons source evidence fields');
+    if(bytes.length!==evidence.bytes||decoded.width!==evidence.width||decoded.height!==evidence.height)throw Error('Original does not match Commons source evidence dimensions or byte count');
+  }
   const sha256=createHash('sha256').update(bytes).digest('hex');
   const sha1=createHash('sha1').update(bytes).digest('hex');
+  if(evidence&&sha1!==evidence.sha1)throw Error('Original SHA-1 does not match Commons source evidence');
   if(expectedSha1!==undefined&&(!/^[a-f0-9]{40}$/i.test(expectedSha1)||sha1!==expectedSha1.toLowerCase()))throw Error('Original SHA-1 does not match Commons source evidence');
   if(expectedSha256!==undefined && (!/^[a-f0-9]{64}$/i.test(expectedSha256) || sha256!==expectedSha256.toLowerCase())) throw Error('Original SHA-256 does not match supplied expectation');
   return {
     schema_version:1,kind:'local_original_inspection_not_rights_approval',
     research_id:researchId,source_file_page:entry.file_page_url,
     local_original:{sha256,sha1,bytes:bytes.length,mime:decoded.mime,width:decoded.width,height:decoded.height},
+    source_evidence:evidence?{matched:true,description_oldid:evidence.description_oldid,original_sha1:evidence.sha1}:null,
     unresolved:{commons_revision:true,creator_license_chain:true,independent_human_review:true,full_image_decode:true},
     publication_allowed:false
   };
@@ -132,6 +142,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
     const {values}=parseArgs({options:{file:{type:'string'},id:{type:'string'},'expected-sha256':{type:'string'},'expected-sha1':{type:'string'},'expected-bytes':{type:'string'}}});
     if(!values.file || !values.id) throw Error('Usage: node scripts/inspect-media-original.mjs --id research-id --file /path/to/original.jpg [--expected-sha256 64hex]');
     const staging=JSON.parse(readFileSync(new URL('../docs/media/cross-era-staging.json',import.meta.url),'utf8'));
-    console.log(JSON.stringify(inspectOriginal({filePath:values.file,researchId:values.id,staging,expectedSha256:values['expected-sha256'],expectedSha1:values['expected-sha1'],expectedBytes:values['expected-bytes']===undefined?undefined:Number(values['expected-bytes'])}),null,2));
+    const sourceEvidence=JSON.parse(readFileSync(new URL('../docs/media/commons-original-evidence.json',import.meta.url),'utf8'));
+    console.log(JSON.stringify(inspectOriginal({filePath:values.file,researchId:values.id,staging,expectedSha256:values['expected-sha256'],expectedSha1:values['expected-sha1'],expectedBytes:values['expected-bytes']===undefined?undefined:Number(values['expected-bytes']),sourceEvidence}),null,2));
   } catch(error) { console.error('Original inspection failed: '+error.message);process.exitCode=1; }
 }
