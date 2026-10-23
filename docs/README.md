@@ -14,7 +14,7 @@ This directory contains **current operating documentation**, **historical implem
 | Current sprint status and visual evidence | [23 October audit](sprint-audit-2026-10-23.md) and [Visual Storytelling V2](design/visual-storytelling-v2/README.md) |
 | Media licensing and SVG attribution | [Approved imagery workflow](media/approved-imagery-workflow.md), [media registry](media/README.md) and [historical SVG provenance](media/historical-circuit-svg-provenance.md) |
 | Deployment and operational safety | [Operations](operations/phase-1.md) |
-| Circuit implementation | [Circuit V2 data contract](product/circuit-experience-v2.md); later V3/V4 behavior is in the application and its browser tests |
+| Circuit implementation | [Circuit V2 data contract](product/circuit-experience-v2.md), [source-backed circuit covers](media/circuit-cover-artwork.md); later V3/V4 behavior is in the application and its browser tests |
 | Test evidence | [Real-archive acceptance](real-archive-acceptance-2026-10.md), [verification](verification/encyclopedia/coverage.json) |
 
 ## How to interpret these files
