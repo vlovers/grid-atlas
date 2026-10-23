@@ -19,8 +19,8 @@ test('fails closed when staging integrity is compromised',()=>{
  args[0].entries[0].status='verified';
  assert.throws(()=>buildReviewPacket(...args),/Staging integrity failed/);
 });
-test('does not manufacture identity verification from research IDs',()=>{
+test('pinned F1DB subjects still require independent photo identity review',()=>{
  const packet=buildReviewPacket(...fixtures());
- assert.equal(packet.tasks.filter(t=>t.identity_in_pilot).length,1);
+ assert.equal(packet.tasks.filter(t=>t.identity_in_pilot).length,5);
  assert.ok(packet.tasks.every(t=>t.checks.canonical_f1db_identity==='pending'));
 });

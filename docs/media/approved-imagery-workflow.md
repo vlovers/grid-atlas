@@ -35,6 +35,11 @@ node scripts/validate-media-registry.mjs --as-of 2026-10-23
 python3 scripts/verify-media-identities.py \
   --archive /path/to/f1db-json-splitted.zip \
   --checksums /path/to/checksums_sha256.txt
+# Source-only cross-era audit (prints verified but not-yet-pinned identity proposals):
+python3 scripts/audit-cross-era-identities.py \
+  --archive /path/to/f1db-json-splitted.zip \
+  --checksums /path/to/checksums_sha256.txt \
+  --output /tmp/grid-atlas-cross-era-identities.json
 pnpm lint
 pnpm typecheck
 pnpm test
