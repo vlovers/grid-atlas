@@ -30,6 +30,14 @@ node scripts/inspect-media-original.mjs \
 
 The original Commons description-page revision is **not** a cryptographic pin for binary bytes. Matching the published SHA-1 and local SHA-256 improves reproducibility but does not prove authorship, historical context or permission to publish. JPEG/PNG structural checks are not full decoding or malware scanning. Do not commit downloaded files or report them as approved.
 
+## Ephemeral GitHub Actions SHA-256 research
+
+The opt-in [Commons originals SHA-256 research workflow](../../.github/workflows/commons-original-sha256-research.yml) also runs for pull requests that modify the ingestion or source-evidence workflow. It attempts to retrieve **all five pinned originals** from Wikimedia Commons in a temporary, owner-private directory on a GitHub-hosted runner. It runs the same byte-count, SHA-1, image structure and SHA-256 checks as the local CLI, then deletes the downloaded binaries on step exit. **No image file is committed, uploaded as an artifact, or published.** The workflow has read-only repository permissions and uses no publication credentials.
+
+On success, the short-lived `unpublished-commons-sha256-research` Actions artifact contains a metadata-only batch report and a strict five-candidate SHA-256 research receipt (`commons-research-sha256.json`). The receipt records source page, original description revision, observed license/creator, original byte count and dimensions, locally computed SHA-256 and Commons SHA-1. Every receipt explicitly says `publication_allowed: false`, `rights_review: pending` and `subject_review: pending`. `scripts/build-commons-research-report.mjs` refuses partial, blocked, duplicate or mismatched batches; a failed upstream request cannot create a complete research receipt. The artifact expires after seven days. Run the workflow again to refresh it; do not commit or promote a receipt to the public registry.
+
+This is a live network check, so Commons availability, throttling or changed source metadata can cause a **red research workflow**. Investigate the precise failure rather than weakening source pins or reporting an unverified SHA-256. Even a green workflow does not resolve copyright, provenance, subject identification or human approval.
+
 ## Publication remains blocked
 
 Independent review must still resolve original/derivative source chains, attribution, license obligations, relevant non-copyright rights, historical F1DB identity, context, UK/EN alt text and captions. Only then may a separately reviewed publication PR add approved bytes to `apps/web/public/media/` and an authenticated human-reviewed registry record. See [media policy](approved-imagery-workflow.md) and [original inspection](original-inspection.md).
@@ -37,7 +45,7 @@ Independent review must still resolve original/derivative source chains, attribu
 ## Tests
 
 ```sh
-node --test tests/commons-evidence-audit.test.mjs tests/commons-evidence-completeness.test.mjs tests/commons-batch-ingestion.test.mjs tests/commons-original-ingestion.test.mjs tests/media-original-inspection.test.mjs tests/private-original-directory.test.mjs
+node --test tests/commons-evidence-audit.test.mjs tests/commons-evidence-completeness.test.mjs tests/commons-batch-ingestion.test.mjs tests/commons-original-ingestion.test.mjs tests/media-original-inspection.test.mjs tests/private-original-directory.test.mjs tests/commons-research-report.test.mjs
 ```
 
 Tests mock the network and never fetch or publish third-party media. Both single and batch ingestion use the same destination guard; `tests/private-original-directory.test.mjs` covers repository paths, parent-symlink aliases, direct symlinks, and unsafe permissions.
