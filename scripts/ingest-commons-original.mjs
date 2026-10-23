@@ -50,7 +50,7 @@ function exactImageInfo(payload, title, evidence) {
 }
 
 async function responseOrFail(response, label) {
-  if (!response?.ok || response.status !== 200 || response.redirected || !response.body) throw Error(label + ' failed or redirected');
+  if (!response?.ok || response.status !== 200 || response.redirected || !response.body) throw Error(label + ' failed or redirected (HTTP ' + (response?.status ?? 'unknown') + ', redirected=' + Boolean(response?.redirected) + ')');
   return response;
 }
 
