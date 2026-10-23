@@ -13,10 +13,24 @@ export function auditCommonsEvidence(staging, evidence) {
   if (evidence?.schema_version !== 1 || evidence?.lane !== 'research_only' || evidence?.publication_allowed !== false || !Array.isArray(evidence?.entries)) {
     return { ok: false, errors: ['Invalid research-only Commons source evidence'] };
   }
-  const candidates = new Map();
+  const candidates = new Map(), stagedPages = new Set();
   for (const item of staging.entries) {
-    if (typeof item?.id !== 'string' || candidates.has(item.id)) errors.push('Invalid or duplicate staging ID');
-    else candidates.set(item.id, item);
+    if (typeof item?.id !== 'string' || !/^research-[a-z0-9-]+$/.test(item.id) || candidates.has(item.id)) {
+      errors.push('Invalid or duplicate staging ID');
+      continue;
+    }
+    candidates.set(item.id, item);
+    if (item.status !== 'candidate' || item.review !== null || item.content_sha256 !== null ||
+        item.delivery?.local_path !== null || item.delivery?.remote_url !== null ||
+        item.alt?.uk !== null || item.alt?.en !== null ||
+        item.caption?.uk !== null || item.caption?.en !== null) {
+      errors.push(item.id + ': staged candidate contains publication data');
+    }
+    if (item.source_url !== item.file_page_url || stagedPages.has(item.file_page_url)) {
+      errors.push(item.id + ': source URL mismatch or duplicate staging page');
+    }
+    stagedPages.add(item.file_page_url);
+    try { commonsFileTitle(item.file_page_url); } catch { errors.push(item.id + ': noncanonical staged Commons file page'); }
   }
   const ids = new Set(), pages = new Set();
   for (const entry of evidence.entries) {
@@ -25,7 +39,7 @@ export function auditCommonsEvidence(staging, evidence) {
     ids.add(id);
     const candidate = candidates.get(id);
     if (!candidate) { errors.push(id + ': source evidence without staging candidate'); continue; }
-    if (candidate.status !== 'candidate' || candidate.review !== null || candidate.delivery?.local_path !== null || candidate.delivery?.remote_url !== null) errors.push(id + ': candidate has publication or approval data');
+    if (candidate.status !== 'candidate' || candidate.review !== null || candidate.content_sha256 !== null || candidate.delivery?.local_path !== null || candidate.delivery?.remote_url !== null) errors.push(id + ': candidate has publication or approval data');
     if (candidate.file_page_url !== entry.file_page_url || pages.has(entry.file_page_url)) errors.push(id + ': file page mismatch or duplicate');
     pages.add(entry.file_page_url);
     try { commonsFileTitle(entry.file_page_url); } catch { errors.push(id + ': noncanonical Commons file page'); }
