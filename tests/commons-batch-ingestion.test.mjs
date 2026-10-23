@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, readFileSync, rmSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { ingestCommonsBatch } from '../scripts/ingest-commons-batch.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
@@ -94,3 +95,13 @@ test('rejects a downloader result without verified local SHA-256', async () => i
   assert.equal(result.blocked, 1);
   assert.match(result.results[0].reason, /verified research-only original/);
 }));
+
+
+test('batch ingestion refuses a public repository destination before processing any candidate', async () => {
+  const outputDir = fileURLToPath(new URL('../apps/web/public/', import.meta.url));
+  const args = fixtures(outputDir);
+  let calls = 0;
+  args.ingestImpl = async () => { calls++; throw Error('must not download'); };
+  await assert.rejects(() => ingestCommonsBatch(args), /outside the repository/);
+  assert.equal(calls, 0);
+});

@@ -1,9 +1,10 @@
 import { randomUUID } from 'node:crypto';
-import { closeSync, constants, linkSync, lstatSync, openSync, readFileSync, rmSync, writeSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { closeSync, constants, linkSync, openSync, readFileSync, rmSync, writeSync } from 'node:fs';
+import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { inspectOriginal } from './inspect-media-original.mjs';
+import { assertPrivateOriginalDirectory } from './private-original-directory.mjs';
 
 const MAX_BYTES = 40 * 1024 * 1024;
 const load = path => JSON.parse(readFileSync(new URL('../' + path, import.meta.url), 'utf8'));
@@ -55,10 +56,7 @@ export async function ingestCommonsOriginal({ researchId, outputDir, staging, so
   if (entry.status !== 'candidate' || entry.review !== null || entry.delivery?.local_path !== null || entry.delivery?.remote_url !== null) throw Error('Candidate is not isolated from publication');
   if (!['image/jpeg', 'image/png'].includes(entry.image?.mime)) throw Error('Unsupported staged original format');
   const title = commonsFileTitle(entry.file_page_url);
-  if (typeof outputDir !== 'string' || !outputDir) throw Error('Explicit existing output directory required');
-  const directory = resolve(outputDir);
-  const dirStat = lstatSync(directory);
-  if (!dirStat.isDirectory() || dirStat.isSymbolicLink()) throw Error('Output directory must not be a symlink');
+  const directory = assertPrivateOriginalDirectory(outputDir);
   const apiUrl = new URL('https://commons.wikimedia.org/w/api.php');
   for (const [key, value] of Object.entries({ action: 'query', prop: 'imageinfo', iiprop: 'url|size|sha1|timestamp', titles: title, format: 'json', formatversion: '2' })) apiUrl.searchParams.set(key, value);
   const apiResponse = await responseOrFail(await fetchImpl(apiUrl.href, { redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { accept: 'application/json' } }), 'Commons API request');
