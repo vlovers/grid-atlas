@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { LicensedMedia } from '@/components/media/licensed-media';
-import { selectMedia, type MediaAsset, type MediaSubject } from '@/components/media/registry';
+import { selectMediaCollection, type MediaAsset, type MediaSubject } from '@/components/media/registry';
 import { editorialCopy } from './copy';
 import styles from './editorial.module.css';
 
@@ -24,8 +24,7 @@ export function EditorialMedia({ assets, subject, title, locale, years, children
   assets: readonly MediaAsset[]; subject: MediaSubject; title: string; locale: EditorialLocale;
   years?: string; children?: ReactNode;
 }) {
-  const asset = assets.find(item => ['portrait', 'photograph', 'car-illustration'].includes(item.kind)
-    && selectMedia(assets, item.id, subject));
+  const asset = selectMediaCollection(assets,subject)[0];
   const t = editorialCopy[locale];
   if (asset) return <div className={styles.media} data-editorial-media="approved"><LicensedMedia assets={assets} assetId={asset.id} subject={subject} label={title} locale={locale} /></div>;
   return <figure className={styles.plate} data-editorial-media="archive-composition">

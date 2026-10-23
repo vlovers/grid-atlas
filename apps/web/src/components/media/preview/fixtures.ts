@@ -24,3 +24,15 @@ export function syntheticAsset(variant: string): MediaAsset {
   if (variant === 'withdrawn') asset.status = 'withdrawn';
   return asset;
 }
+
+export function syntheticCollectionAsset(variant: string): MediaAsset {
+  const asset=syntheticAsset('verified');
+  asset.id='synthetic-collection';
+  asset.subject={type:variant==='gallery-car'?'constructor':'driver',id:'fixture-subject'};
+  asset.kind=variant==='gallery-car'?'car-illustration':'portrait';
+  asset.layout=null;
+  asset.review!.payload_sha256=mediaFingerprint(asset);
+  if(variant==='gallery-withdrawn')asset.status='withdrawn';
+  if(variant==='gallery-stale')asset.caption.en='Changed synthetic caption without re-review';
+  return asset;
+}

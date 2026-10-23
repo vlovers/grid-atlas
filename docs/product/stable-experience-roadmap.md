@@ -1,6 +1,6 @@
 # Grid Atlas — MVP status, delivery order and release gates
 
-Historical baseline updated 20 October 2026; implementation delta checked against merged PRs through #201 on 22 October 2026. Production acceptance remains separate. **Code and CI state are distinct from production acceptance.**
+Historical baseline updated 20 October 2026; implementation delta checked against main `5920465` on 23 October 2026; later parallel story work is tracked separately in the sprint audit. Production acceptance remains separate. **Code and CI state are distinct from production acceptance.**
 This document records merged GitHub work and known blockers, not an approval to publish.
 
 ## Merged product delta — 22 October 2026
@@ -11,6 +11,13 @@ This document records merged GitHub work and known blockers, not an approval to 
 - Historical circuit geometry is an attributed illustration, **not** a measured geographic map. Missing sector/DRS/tyre/elevation facts are not inferred.
 - The latest merged feature is not proof of production deployment, independent FIA verification, or editorial approval.
 
+## Current stabilization and dossier milestone — 23 October 2026
+
+- Race constructor field (#214) and reviewed repository hygiene (#203) merged only after green CI. The latter fixes an actual broken documentation link and worktree/symlink-safe link auditing.
+- Source-reported championship classifications (#197), historical circuit selection/rendering (#201/#207), Editorial Racing dossiers (#205), archive journeys (#206), driver density/season charts (#208/#209) and the career rail (#213) are already implemented.
+- Visual Storytelling V2 extends existing career APIs with a shared accessible participation calendar, adjacent recorded roster comparisons, exact race evidence and a compact milestone chronology. See [screenshots and implementation](../design/visual-storytelling-v2/README.md).
+- [Current audit](../sprint-audit-2026-10-23.md) distinguishes passing archive checks from operational release approval. [Media readiness](../media/approved-imagery-workflow.md) does not approve photographs or manuscripts.
+
 ## Editorial release V1 review candidate
 
 The [five-driver release](../editorial/releases/v1/README.md) adds canonical UK/EN record journeys and source-located chapter rendering, consolidates ten unapproved dossiers and reuses the merged #178 approval/export pipeline. This candidate does not approve historical biographies, media or production deployment. See its verification report for executed checks.
@@ -19,7 +26,7 @@ The [five-driver release](../editorial/releases/v1/README.md) adds canonical UK/
 
 | Area | Relevant merged PRs | Actual boundary |
 | --- | --- | --- |
-| Pinned historical archive, ingestion and linked catalogue/race/profile pages | baseline through #67 | F1DB v2026.17.0; result-based summaries rather than official standings |
+| Pinned historical archive, ingestion and linked catalogue/race/profile pages | baseline through #67 | F1DB v2026.17.0; result-based summaries remain distinct from separately imported source championship classifications |
 | Driver → constructor and reciprocal constructor → driver seasonal result associations | #66, #89, #93, #94 | Observed result records, not contracts or official starts |
 | Strict Explorer graph contract and accessible radial display | #87–#90 | Bounded view with full-list fallback and explicit imported-data limitations |
 | Edge inspector and exact race-evidence drilldown | #92, #95, #96 | Distinct recorded races vs result rows; no per-result primary-source citations |

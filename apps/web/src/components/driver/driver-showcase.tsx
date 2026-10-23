@@ -1,3 +1,4 @@
+import { MediaCollection } from '@/components/media/collection';
 import { PublishedChapters } from '@/components/stories/published-chapters';
 import { releasePilot } from '@/components/stories/release-model';
 import { storyCopy } from '@/components/stories/copy';
@@ -111,7 +112,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
-      <CareerEraRail teams={teams} seasons={seasons} driverId={driver.id} locale={locale} />
+      <CareerEraRail career={career} seasons={seasons} driverId={driver.id} name={driver.name} locale={locale} selectedYear={selected?.year} />
       <DriverSeasonChart seasons={seasons} locale={locale} driverId={driver.id} selectedYear={selected?.year} />
       {years.length > 0 && <div className={styles.seasonExplorer}>
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
@@ -237,6 +238,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, media,
         <a className={styles.textLink} href={`/${locale}/sources`}>{t.sourceLink} ↗</a>
       </details>
     </section>
+    <MediaCollection assets={media} subject={{type:'driver',id:driver.external_id}} label={driver.name} locale={locale}/>
     <a className={styles.back} href={`/${locale}/drivers`}>← {t.back}</a>
   </section>;
 }

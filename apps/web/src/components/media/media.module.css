@@ -1,7 +1,7 @@
-.media{--media-bg:#141b22;--media-line:#3f4a55;--media-ink:#edf1f5;--media-muted:#b8c3ce;--media-accent:#ff806c;margin:0;min-width:0;color:var(--media-ink);font-family:inherit}
-.frame{position:relative;width:100%;overflow:hidden;background:var(--media-bg);border:1px solid var(--media-line);border-radius:6px;container-type:inline-size;box-sizing:border-box}
+.media{--media-bg:var(--surface,#141719);--media-line:var(--line,#34383b);--media-ink:var(--ink,#f0ece4);--media-muted:var(--muted,#a9adb0);--media-accent:var(--accent-ink,#ed8278);margin:0;min-width:0;color:var(--media-ink);font-family:inherit}
+.frame{position:relative;width:100%;overflow:hidden;background:var(--media-bg);border:1px solid var(--media-line);border-radius:0;container-type:inline-size;box-sizing:border-box}
 .image{display:block;width:100%;height:100%;object-fit:contain}
-.fallback{height:100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(18px,4vw,40px);text-align:center;background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:32px 32px}
+.fallback{height:100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(18px,4vw,40px);text-align:center;background:var(--media-bg)}
 .marker{display:flex;gap:5px;margin-bottom:24px;transform:skewX(-18deg)}
 .marker span{display:block;width:12px;height:26px;background:var(--media-accent)}
 .marker span:nth-child(2){opacity:.55}.marker span:nth-child(3){opacity:.2}
@@ -14,3 +14,5 @@
 .caption a:focus-visible,.caption summary:focus-visible{outline:2px solid var(--media-accent);outline-offset:4px}
 @container(max-width:360px){.marker{display:none}.fallback{padding:16px}}
 @media(forced-colors:active){.frame{border-color:CanvasText}.media,.fallback p,.kicker,.caption,.caption a,.caption summary{color:CanvasText}.marker span{background:CanvasText}}
+
+.kind{font:.65rem/1.8 var(--font-mono,monospace);text-transform:uppercase;letter-spacing:.08em;color:var(--media-muted)}

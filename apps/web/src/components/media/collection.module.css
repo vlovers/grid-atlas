@@ -1,0 +1,13 @@
+.collection { min-width: 0; margin-block: var(--space-section,4rem); padding-block: 2rem; border-block: 1px solid var(--line,#34383b); overflow-wrap: anywhere; }
+.collection header > p:first-child { font: .65rem/1.8 var(--font-mono,monospace); letter-spacing: .12em; color: var(--muted,#a9adb0); }
+.collection header > h3 { font: 500 clamp(2rem,3.7vw,3.7rem)/1.05 var(--font-display,Georgia); letter-spacing: -.025em; max-width: 22ch; margin-block: 1rem; }
+.collection header > p:last-child { max-width: 75ch; color: var(--muted,#a9adb0); font-size: .8rem; line-height: 1.8; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,20rem),1fr)); gap: 2rem; margin-top: 2rem; }
+.gallery > * { min-width: 0; }
+.collection .count { font: .7rem/1.8 var(--font-mono,monospace); color: var(--muted,#a9adb0); }
+.empty { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 2rem; align-items: center; padding-block: 2rem; }
+.empty > span { font: 2rem var(--font-mono,monospace); color: var(--muted,#a9adb0); }
+.collection .empty h4 { font: 500 1.6rem/1.2 var(--font-display,Georgia); margin: 0 0 .8rem; }
+.collection .empty p { font-size: .8rem; color: var(--muted,#a9adb0); max-width: 70ch; line-height: 1.8; margin: 0; }
+.source { display: inline-flex; align-items: center; min-height: 44px; font-size: .7rem; text-decoration: underline; text-underline-offset: .4rem; }
+@media(max-width:700px) { .empty { grid-template-columns: minmax(0,1fr); gap: 1rem; } }

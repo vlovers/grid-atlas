@@ -30,6 +30,7 @@ export function LicensedMedia({ assets, assetId, subject, label, locale, raceId,
       failed={t.failed} />
     {!asset && <figcaption className={styles.caption}>{diagram ? t.layoutDetail : t.detail}</figcaption>}
     {asset && <figcaption className={styles.caption}>
+      <p className={styles.kind}>{({ photograph: ['Фотографія', 'Photograph'], portrait: ['Портрет', 'Portrait'], 'car-illustration': ['Ілюстрація боліда', 'Car illustration'], 'circuit-diagram': ['Схема траси', 'Circuit diagram'] } as const)[asset.kind][locale === 'uk' ? 0 : 1]}</p>
       <p>{asset.caption[locale]}</p>
       <p>{asset.attribution} · <a href={asset.license.url!} rel="noreferrer">{asset.license.identifier}</a></p>
       <div className={styles.links}><a href={asset.source_url!} rel="noreferrer">{t.source}</a>

@@ -11,7 +11,8 @@ This directory contains **current operating documentation**, **historical implem
 | Product status and known release gates | [Product status](product/stable-experience-roadmap.md) and [beta audit](beta-audit.md) |
 | Historical data and provenance | [Data-source register](data-sources/README.md) |
 | Editorial approval and publication | [Editorial release pipeline](editorial/APPROVED_RELEASE_PIPELINE.md) and [verification policy](editorial-verification.md) |
-| Media licensing and SVG attribution | [Media registry](media/README.md) and [historical SVG provenance](media/historical-circuit-svg-provenance.md) |
+| Current sprint status and visual evidence | [23 October audit](sprint-audit-2026-10-23.md) and [Visual Storytelling V2](design/visual-storytelling-v2/README.md) |
+| Media licensing and SVG attribution | [Approved imagery workflow](media/approved-imagery-workflow.md), [media registry](media/README.md) and [historical SVG provenance](media/historical-circuit-svg-provenance.md) |
 | Deployment and operational safety | [Operations](operations/phase-1.md) |
 | Circuit implementation | [Circuit V2 data contract](product/circuit-experience-v2.md); later V3/V4 behavior is in the application and its browser tests |
 | Test evidence | [Real-archive acceptance](real-archive-acceptance-2026-10.md), [verification](verification/encyclopedia/coverage.json) |
