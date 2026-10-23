@@ -180,3 +180,29 @@ test('rejects arbitrary imageinfo query parameters, duplicates and fragments bef
   }
  } finally { rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('refuses source creator/license drift and invalid manifest headers before any request', async () => {
+  const bytes = png(), dir = mkdtempSync(join(tmpdir(), 'grid-atlas-source-preflight-'));
+  try {
+    const base = fixtures(bytes);
+    base.staging.entries[0].creator = 'Source photographer';
+    base.staging.entries[0].license = { identifier: 'CC-BY-SA-4.0' };
+    base.sourceEvidence.entries[0].source_author = 'Source photographer';
+    base.sourceEvidence.entries[0].source_license = 'CC-BY-SA-4.0';
+    for (const mutate of [
+      args => { args.sourceEvidence.entries[0].source_author = 'Unknown uploader'; },
+      args => { args.sourceEvidence.entries[0].source_license = 'CC0'; },
+      args => { args.sourceEvidence.schema_version = 99; },
+      args => { args.staging.schema_version = 99; }
+    ]) {
+      const args = structuredClone(base);
+      mutate(args);
+      const mock = mockFetch(bytes);
+      await assert.rejects(
+        () => ingestCommonsOriginal({ researchId: id, outputDir: dir, ...args, fetchImpl: mock.fetchImpl }),
+        /Pinned source evidence mismatch|Research-only manifest required/
+      );
+      assert.equal(mock.calls.length, 0);
+    }
+  } finally { rmSync(dir, { recursive: true, force: true }); }
+});

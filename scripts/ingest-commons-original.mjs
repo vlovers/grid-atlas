@@ -83,12 +83,21 @@ async function readBoundedApiJson(response) {
  */
 export async function ingestCommonsOriginal({ researchId, outputDir, staging, sourceEvidence, fetchImpl = globalThis.fetch }) {
   if (!/^research-[a-z0-9-]+$/.test(researchId ?? '')) throw Error('Invalid research ID');
-  if (staging?.lane !== 'research_only' || staging.publication_allowed !== false || sourceEvidence?.lane !== 'research_only' || sourceEvidence.publication_allowed !== false) throw Error('Research-only manifest required');
+  if (staging?.schema_version !== 1 || staging.lane !== 'research_only' ||
+      staging.publication_allowed !== false || !Array.isArray(staging.entries) ||
+      sourceEvidence?.schema_version !== 1 || sourceEvidence.lane !== 'research_only' ||
+      sourceEvidence.publication_allowed !== false || !Array.isArray(sourceEvidence.entries)) {
+    throw Error('Research-only manifest required');
+  }
   const matches = staging.entries?.filter(item => item.id === researchId) ?? [];
   const sources = sourceEvidence.entries?.filter(item => item.research_id === researchId) ?? [];
   if (matches.length !== 1 || sources.length !== 1) throw Error('Candidate needs exactly one pinned Commons source evidence record');
   const [entry] = matches, [evidence] = sources;
-  if (entry.file_page_url !== evidence.file_page_url || !/^[a-f0-9]{40}$/.test(evidence.sha1)) throw Error('Pinned source evidence mismatch');
+  if (entry.file_page_url !== evidence.file_page_url || !/^[a-f0-9]{40}$/.test(evidence.sha1) ||
+      (evidence.source_author !== undefined && evidence.source_author !== entry.creator) ||
+      (evidence.source_license !== undefined && evidence.source_license !== entry.license?.identifier)) {
+    throw Error('Pinned source evidence mismatch');
+  }
   if (entry.status !== 'candidate' || entry.review !== null || entry.delivery?.local_path !== null || entry.delivery?.remote_url !== null) throw Error('Candidate is not isolated from publication');
   if (!['image/jpeg', 'image/png'].includes(entry.image?.mime)) throw Error('Unsupported staged original format');
   const title = commonsFileTitle(entry.file_page_url);
