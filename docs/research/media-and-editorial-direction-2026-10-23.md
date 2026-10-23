@@ -1,4 +1,4 @@
-# Grid Atlas — parallel media and storytelling research (2026-10-23)
+# Grid Atlas — parallel encyclopedia media and UX research (2026-10-23)
 
 Research-only deliverable. The active Codex task owns route reliability, catalogue redesign, media pipeline implementation and CI; **this document does not modify that code or approve any photographs**.
 
@@ -31,18 +31,15 @@ For every candidate record: Commons File URL, creator vs uploader, license + URL
 - **Original illustration**: visibly distinguish from factual photography.
 - **AI visualization**: only a separately labeled reconstruction/concept, never presented as archival evidence. Exact Ukrainian label: `AI-реконструкція · Не архівна фотографія`; English: `AI reconstruction · Not an archival photograph`. Don't synthesize false events or quotes.
 
-## Making the encyclopedia engaging
-**Editorial page progression:** a documented hook → 50–100 words of human explanation → one visual answering a real question → a single interactive evidence action → one reciprocal follow-up link. Preserve a visible path to full archive and provenance.
+## Encyclopedia-first product UX
 
-**Pilot story: Senna's first win, Portugal 1985.** Hero question: `Як Сенна здобув свою першу перемогу?` / `How did Senna claim his first victory?` Reuse the merged race-verified P1 episode and exact historical layout, if available. Separately verify conditions, contemporary reporting and interpretation before asserting them in editorial prose. Avoid sensationalized first-person thoughts, fabricated dialogue and unsourced comparative claims. Suggested transitions: result classification → constructor → next observed race → opponent profiles.
+**Historical feature stories are postponed.** Complete driver biographies, constructors, circuits, canonical relationships and media first. Use the detailed [entity UX and QA acceptance checklist](encyclopedia-completion-acceptance.md) and [source-specific media review queue](media-review-queue-2026-10-23.md).
 
-**Pilot constructor: McLaren across eras.** User chooses a verified season; show its recorded drivers, historical car photo only when subject/year confirmed, and a transition to race results. Do not portray constructor/entrant legal continuity as a fact unsupported by the archive.
-
-**Pilot circuit: Monaco.** Use the known historic layouts, switch between supported exact versions, and lead into race records; no invented DRS, sectors, lap time or tyre data.
+An entity page should answer: **Who/what is this?** → **What happened, according to the archive?** → **What can I explore next?** Every photo must be accurately contextualized and rights-cleared; every narrative paragraph must be separately sourced and reviewed. Data timelines and reciprocal links are navigational aids, not substitutes for human biographies.
 
 ## Acceptance criteria for an independent editorial/media review
-- 12–20 research candidates distributed across decades/subjects; **not** 12–20 auto-approved assets.
+- Build a source-specific media candidate queue across decades/subjects; **not** auto-approved assets. Existing exact pilot candidates are triaged in the linked review queue.
 - A source/reuse decision for every candidate; reject unsupported or ambiguous rights.
-- At least three fully fact-checked UK/EN episode **drafts** in a separate review lane, with paragraph-level citations; no publication before human review.
+- Prioritize source-backed UK/EN driver biographies, constructor histories and circuit descriptions; no standalone story episodes in this phase.
 - Candidate coverage report with decade/subject gaps, not a vanity image count.
 - No new media infrastructure, app CSS, page components or migrations in this research PR; Codex owns those.
