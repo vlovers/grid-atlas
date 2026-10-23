@@ -11,6 +11,7 @@ on:
       - 'package.json'
       - 'pnpm-lock.yaml'
       - 'pnpm-workspace.yaml'
+      - 'patches/**'
       - '.github/workflows/web.yml'
   push:
     branches: [main]
@@ -23,6 +24,8 @@ on:
       - 'eslint.config.mjs'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'patches/**'
 permissions:
   contents: read
 jobs:

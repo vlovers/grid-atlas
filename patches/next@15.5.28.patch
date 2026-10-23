@@ -1,0 +1,124 @@
+diff --git a/dist/compiled/react-dom/cjs/react-dom-client.development.js b/dist/compiled/react-dom/cjs/react-dom-client.development.js
+index 4376913076151ad78dcc4059ad4152fad25478da..669c54ccdc15688bb0eda727a4bab482743523cf 100644
+--- a/dist/compiled/react-dom/cjs/react-dom-client.development.js
++++ b/dist/compiled/react-dom/cjs/react-dom-client.development.js
+@@ -4675,6 +4675,18 @@
+               : null);
+       return !0;
+     }
++    function popHydrationStateOnInterruptedWork(fiber) {
++      if (fiber !== hydrationParentFiber) return;
++      if (!isHydrating) {
++        popToNextHostParent(fiber);
++        isHydrating = true;
++        return;
++      }
++      popToNextHostParent(fiber);
++      if (fiber.tag === 5 && fiber.stateNode !== null) {
++        nextHydratableInstance = fiber.stateNode;
++      }
++    }
+     function resetHydrationState() {
+       nextHydratableInstance = hydrationParentFiber = null;
+       didSuspendOrErrorDEV = isHydrating = !1;
+@@ -15776,6 +15788,7 @@
+           break;
+         case 5:
+           resetHooksOnUnwind(unitOfWork);
++          popHydrationStateOnInterruptedWork(unitOfWork);
+         default:
+           unwindInterruptedWork(current, unitOfWork),
+             (unitOfWork = workInProgress =
+diff --git a/dist/compiled/react-dom/cjs/react-dom-client.production.js b/dist/compiled/react-dom/cjs/react-dom-client.production.js
+index 755076a5cf15273f024c18fdc6a8805f1e36860b..19142459ce578706ea62fe327571faed2b45de0a 100644
+--- a/dist/compiled/react-dom/cjs/react-dom-client.production.js
++++ b/dist/compiled/react-dom/cjs/react-dom-client.production.js
+@@ -2876,6 +2876,18 @@ function popHydrationState(fiber) {
+           : null);
+   return !0;
+ }
++function popHydrationStateOnInterruptedWork(fiber) {
++  if (fiber !== hydrationParentFiber) return;
++  if (!isHydrating) {
++    popToNextHostParent(fiber);
++    isHydrating = true;
++    return;
++  }
++  popToNextHostParent(fiber);
++  if (fiber.tag === 5 && fiber.stateNode !== null) {
++    nextHydratableInstance = fiber.stateNode;
++  }
++}
+ function resetHydrationState() {
+   nextHydratableInstance = hydrationParentFiber = null;
+   isHydrating = !1;
+@@ -11210,6 +11222,7 @@ function replaySuspendedUnitOfWork(unitOfWork) {
+       break;
+     case 5:
+       resetHooksOnUnwind(next);
++      popHydrationStateOnInterruptedWork(next);
+     default:
+       unwindInterruptedWork(current, next),
+         (next = workInProgress =
+diff --git a/dist/compiled/react-dom-experimental/cjs/react-dom-client.development.js b/dist/compiled/react-dom-experimental/cjs/react-dom-client.development.js
+index 00530847f2c96e18ef96e2b172ab1f0c5955e029..f34a9d0bba3e4737a76219948d4a1e4a61ab98b8 100644
+--- a/dist/compiled/react-dom-experimental/cjs/react-dom-client.development.js
++++ b/dist/compiled/react-dom-experimental/cjs/react-dom-client.development.js
+@@ -5501,6 +5501,18 @@
+               : null);
+       return !0;
+     }
++    function popHydrationStateOnInterruptedWork(fiber) {
++      if (fiber !== hydrationParentFiber) return;
++      if (!isHydrating) {
++        popToNextHostParent(fiber);
++        isHydrating = true;
++        return;
++      }
++      popToNextHostParent(fiber);
++      if (fiber.tag === 5 && fiber.stateNode !== null) {
++        nextHydratableInstance = fiber.stateNode;
++      }
++    }
+     function resetHydrationState() {
+       nextHydratableInstance = hydrationParentFiber = null;
+       didSuspendOrErrorDEV = isHydrating = !1;
+@@ -19477,6 +19489,7 @@
+           break;
+         case 5:
+           resetHooksOnUnwind(unitOfWork);
++          popHydrationStateOnInterruptedWork(unitOfWork);
+         default:
+           unwindInterruptedWork(current, unitOfWork),
+             (unitOfWork = workInProgress =
+diff --git a/dist/compiled/react-dom-experimental/cjs/react-dom-client.production.js b/dist/compiled/react-dom-experimental/cjs/react-dom-client.production.js
+index 1f7a79567a3e6ff140709894f70c266498e5110d..93a8171f3bff772f4695ed03212b1844c9c18b73 100644
+--- a/dist/compiled/react-dom-experimental/cjs/react-dom-client.production.js
++++ b/dist/compiled/react-dom-experimental/cjs/react-dom-client.production.js
+@@ -2969,6 +2969,18 @@ function popHydrationState(fiber) {
+           : null);
+   return !0;
+ }
++function popHydrationStateOnInterruptedWork(fiber) {
++  if (fiber !== hydrationParentFiber) return;
++  if (!isHydrating) {
++    popToNextHostParent(fiber);
++    isHydrating = true;
++    return;
++  }
++  popToNextHostParent(fiber);
++  if (fiber.tag === 5 && fiber.stateNode !== null) {
++    nextHydratableInstance = fiber.stateNode;
++  }
++}
+ function resetHydrationState() {
+   nextHydratableInstance = hydrationParentFiber = null;
+   isHydrating = !1;
+@@ -13180,6 +13192,7 @@ function replaySuspendedUnitOfWork(unitOfWork) {
+       break;
+     case 5:
+       resetHooksOnUnwind(next);
++      popHydrationStateOnInterruptedWork(next);
+     default:
+       unwindInterruptedWork(current, next),
+         (next = workInProgress =

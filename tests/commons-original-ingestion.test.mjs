@@ -43,6 +43,7 @@ function mockFetch(bytes, { url=originalUrl, size=bytes.length, sha1=createHash(
 }
 test('accepts only canonical Commons file pages',()=>{
  assert.equal(commonsFileTitle(filePage),'File:Test.png');
+ for(let code=0;code<32;code++) assert.throws(()=>commonsFileTitle(`https://commons.wikimedia.org/wiki/File:Test%${code.toString(16).padStart(2,'0')}.png`),/Invalid Commons file title/);
  for(const url of ['http://commons.wikimedia.org/wiki/File:Test.png','https://evil.example/wiki/File:Test.png','https://commons.wikimedia.org/wiki/File:Test.png?download=1','https://commons.wikimedia.org/wiki/File:../Test.png','https://commons.wikimedia.org/wiki/File:Test.png#fragment']) assert.throws(()=>commonsFileTitle(url));
 });
 test('downloads exact pinned original, verifies SHA-256 and SHA-1, and never publishes',async()=>{

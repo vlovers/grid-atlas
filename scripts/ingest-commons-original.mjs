@@ -15,7 +15,7 @@ export function commonsFileTitle(filePage) {
     throw Error('Not a canonical Wikimedia Commons file page');
   }
   const title = decodeURIComponent(url.pathname.slice('/wiki/'.length)).replaceAll('_', ' ');
-  if (!/^File:[^/\\?#\x00-\x1f]+$/u.test(title) || title.length > 260) throw Error('Invalid Commons file title');
+  if (!/^File:[^/\\?#]+$/u.test(title) || title.length > 260 || Array.from(title).some(char => char.charCodeAt(0) < 32)) throw Error('Invalid Commons file title');
   return title;
 }
 
