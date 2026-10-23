@@ -97,3 +97,18 @@ test('requires the exact pinned F1DB release and checksums', () => {
   hash.identities.subjects[0].record_sha256 = 'not-a-hash';
   assert.throws(() => build(hash), /Invalid or duplicate F1DB identity/);
 });
+
+test('rejects impossible original observation dates and evidence before candidate inspection', () => {
+  const invalid = fixtures();
+  invalid.observations.observed_on = '2026-02-30';
+  assert.throws(() => build(invalid), /calendar date/);
+  const early = fixtures();
+  early.observations.observed_on = '2026-10-22';
+  assert.throws(() => build(early), /predates candidate inspection/);
+});
+
+test('rejects identical observed binary SHA-256 assigned to distinct original candidates', () => {
+  const duplicate = fixtures();
+  duplicate.observations.entries[1].sha256 = duplicate.observations.entries[0].sha256;
+  assert.throws(() => build(duplicate), /duplicate or unpinned original binary observation/);
+});
