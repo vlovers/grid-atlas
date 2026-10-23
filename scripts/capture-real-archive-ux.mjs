@@ -40,7 +40,7 @@ try {
         headings: [...document.querySelectorAll('main :is(h1,h2,h3,h4,h5)')].map(node => ({ level: node.tagName, text: node.textContent })),
       }));
       if (width !== 834) {
-        await page.locator(section).scrollIntoViewIfNeeded();
+        await page.locator(section).evaluate(node => node.scrollIntoView({ block: 'start', behavior: 'instant' }));
         await page.screenshot({ path: new URL(`screenshots/${phase}-${subject}-${locale}-${width}-detail.jpg`, output).pathname, type: 'jpeg', quality: 86 });
       }
       report.push({ phase, subject, locale, width, route, file, status: response.status(), errors, external, ...metrics });

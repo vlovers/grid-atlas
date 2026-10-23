@@ -1,6 +1,6 @@
 # Real Archive UX & Visual Quality V1
 
-Baseline UI: `8590405`, 24 October 2026. This work improves the existing driver,
+Baseline UI: current main `d370014` (including the shared archive foundation in PR #255), 24 October 2026. This work builds on that foundation and improves the existing driver,
 constructor and circuit templates using pinned F1DB v2026.17.0. It changes
 presentation and navigation, not historical records or publication eligibility.
 
@@ -22,16 +22,18 @@ presentation and navigation, not historical records or publication eligibility.
   shared named, focusable table region, explicit scrolling guidance, readable
   header/body sizes and row context. Arrow keys scroll the table while document
   overflow remains zero. Source classifications remain separate from summed results.
-- Circuit pages use the shared editorial hero and contents navigation. Layout
-  selection is the first content section, before the long chronology. The layout
+- Circuit pages retain the upstream shared hero, `CircuitCover`, `ArchivePlate`
+  fallback and `RecordReadingNote`, with expanded section access. The layout
   drawing and measurements share a desktop row and stack on smaller screens.
   Comparison, year selection and event evidence reuse the site palette and native
   controls. Every existing F1DB outline retains its exact layout ID and attribution.
 - Circuit chronology uses one first/middle/latest visual journey instead of a
   second duplicate journey. Winner records, paginated race history, decade
   navigation, identity provenance and rights-gated empty media remain available.
-- Circuit catalogue and profile metadata now describe the available historical
-  layouts in EN/UK, replacing the obsolete claim that layouts are not represented.
+- Metadata regressions protect the EN/UK layout descriptions corrected by the
+  upstream archive foundation, alongside canonical and hreflang behavior.
+- The record-reading note uses an h2 after the profile h1, preserving its visual
+  style while fixing the heading-level jump caught by the new regression.
 - Participation calendars have larger supporting text and keyboard targets.
   Existing gaps, shared drives, unknown observations and historical caveats remain.
 
@@ -56,8 +58,8 @@ section views cover career/roster/layout evidence. Each phase has 18 viewport an
 12 section images. [Before measurements](before.json) and [after measurements](after.json)
 record routes, status, heading outlines, page height, overflow, browser errors and
 external requests. These are local Chromium observations, not Lighthouse or field
-performance scores. Scroll position inside a long section can differ when its
-layout changes; viewport cover comparisons are directly matched.
+performance scores. Detail views align to the start of the same section in both
+versions; viewport cover comparisons use identical dimensions and scroll origin.
 
 ## Verification and reproduction
 
@@ -88,25 +90,21 @@ text, forced colors and empty/high-degree profiles. Additional real identities a
 Hamilton, Ferrari, Monaco, Adderly Fong and FIRST. Existing SSR-without-JavaScript,
 metadata, licensing, pagination and circuit-asset checks are retained.
 
-Executed checks: lint, typecheck and production API/web build passed; **210 Node**
-and **364 Python** tests passed. The full production browser suite passed
-**484 cases** before the final metadata-copy correction; the focused UX/SEO/locale
-rerun after it passed **30 cases**. The complete real-archive suite passed
-**128 cases**, with all **8** new real-profile cases rerun after the copy correction.
-API/PostgreSQL integration: **42 passed, one existing skip**. Final CI results are
-recorded in the PR.
-The [exhaustive archive audit](archive-coverage.json) passed **11,504 API requests**,
-**2,406 web pages**, **72,984 rendered archive links** and comparison of all
-**27,665 imported result rows**. The original 18 before views
-and the first 18 after views each recorded zero overflow and zero browser errors.
-The first real-archive run passed all 128 cases. The new keyboard regression also
-caught the constructor archive focus defect against the earlier build; adding a
-focusable destination fixes the behavior rather than weakening its assertion.
+Executed checks on the integrated branch: lint, typecheck and production API/web
+build passed; **222 Node** and **364 Python** tests passed. Final browser and
+PostgreSQL results are recorded in the PR. The [exhaustive archive audit](archive-coverage.json)
+compares all entities, API/HTML destinations and **27,665 imported result rows**.
 
-A pre-existing lint error in the Commons Markdown renderer required removing one
-unnecessary regex escape. Its behavior and publication logic are unchanged. Files
-owned by PRs #247/#248, media ingestion, evidence checksums and roadmap were not
-edited by this work.
+The comparison images were recaptured against main after #255 merged during this
+work, so its shared covers and reading/provenance improvements are present on
+both sides. Optional related-record error handling is retained. The PR adds data
+covers, mobile statistic order, table access, focus transfer and layout density;
+it does not replace those upstream features or duplicate their media work.
+
+The new keyboard regression caught the constructor archive focus defect against
+the earlier build; adding a focusable destination fixes the behavior rather than
+weakening its assertion. No media ingestion, evidence-checksum, rights or roadmap
+files are changed by this PR. The baseline lint correction is already in main.
 
 ## Limits and next priority
 

@@ -19,7 +19,7 @@ const notes = {
 export function RecordReadingNote({ kind, locale }: { kind: 'season' | 'race' | 'circuit'; locale: 'uk' | 'en' }) {
   const t = archiveCopy[locale];
   return <aside className={styles.context} data-testid="record-reading-note">
-    <h3>{t.reading}</h3><p>{notes[locale][kind]}</p>
+    <h2 className={styles.contextHeading}>{t.reading}</h2><p>{notes[locale][kind]}</p>
     <RecordDetail detail={{ label: t.editorial, text: t.scope, source: { href: `/${locale}/sources`, label: t.source } }} />
   </aside>;
 }

@@ -43,7 +43,7 @@
 .yearLinks a span { color: var(--accent-ink); }
 .yearLinks a:hover { color: var(--accent-ink); border-color: var(--accent-ink); }
 .context { border-left: 2px solid var(--accent); padding: 1.2rem 1.5rem; background: var(--surface); margin-block: 2rem; }
-.context h3 { margin: 0 0 .6rem; font: 500 1.5rem/1.2 var(--font-display); }
+.context .contextHeading { margin: 0 0 .6rem; font: 500 1.5rem/1.2 var(--font-display); }
 .context p { max-width: 75ch; color: var(--muted); font-size: .86rem; line-height: 1.8; }
 .context a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: underline; text-underline-offset: .3rem; font-size: .8rem; }
 @media (max-width: 900px) { .featureGrid { grid-template-columns: 1fr; } .feature { border: 0; border-bottom: 1px solid var(--line); } .feature:last-child { border: 0; } .feature h3 { max-width: 22ch; } .feature figure { max-width: 650px; width: 100%; } }
