@@ -131,10 +131,12 @@ export function inspectOriginal({filePath,researchId,staging,expectedSha256,expe
   if(entry.image.width!==null&&entry.image.width!==decoded.width)throw Error('Original width does not match staged dimensions');
   if(entry.image.height!==null&&entry.image.height!==decoded.height)throw Error('Original height does not match staged dimensions');
   const evidenceMatches=sourceEvidence?.entries?.filter(e=>e.research_id===researchId)??[];
-  if(sourceEvidence && (sourceEvidence.schema_version!==1||sourceEvidence.lane!=='research_only'||sourceEvidence.publication_allowed!==false||!Array.isArray(sourceEvidence.entries)||evidenceMatches.length>1))throw Error('Invalid or ambiguous Commons source evidence');
+  if(sourceEvidence && (sourceEvidence.schema_version!==1||sourceEvidence.lane!=='research_only'||sourceEvidence.publication_allowed!==false||!Array.isArray(sourceEvidence.entries)||evidenceMatches.length!==1))throw Error('Missing, invalid or ambiguous Commons source evidence');
   const evidence=evidenceMatches[0];
   if(evidence){
     if(evidence.file_page_url!==entry.file_page_url||!Number.isSafeInteger(evidence.description_oldid)||evidence.description_oldid<1)throw Error('Commons source evidence page mismatch');
+    if((evidence.source_author!==undefined&&evidence.source_author!==entry.creator)||
+       (evidence.source_license!==undefined&&evidence.source_license!==entry.license?.identifier))throw Error('Commons creator or license differs from pinned staging');
     if(!/^[a-f0-9]{40}$/.test(evidence.sha1)||!Number.isSafeInteger(evidence.bytes)||evidence.bytes<1||!Number.isSafeInteger(evidence.width)||!Number.isSafeInteger(evidence.height))throw Error('Invalid Commons source evidence fields');
     if(bytes.length!==evidence.bytes||decoded.width!==evidence.width||decoded.height!==evidence.height)throw Error('Original does not match Commons source evidence dimensions or byte count');
   }
