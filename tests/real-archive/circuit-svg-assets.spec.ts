@@ -8,6 +8,13 @@ for (const locale of ['en', 'uk'] as const) {
     expect(item).toBeTruthy();
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`/${locale}/circuits/${item.id}`);
+    const cover = page.getByTestId('circuit-cover');
+    await expect(cover.getByRole('img')).toBeVisible();
+    const layouts = (await (await request.get(`http://127.0.0.1:3350/api/circuits/${item.id}/layouts`)).json()).data;
+    const layoutId = (await cover.getByRole('img').getAttribute('src'))!.split('/').at(-1)!.replace('.svg', '');
+    expect(layouts.some((layout: { external_layout_id: string }) => layout.external_layout_id === layoutId)).toBe(true);
+    await expect(cover.getByRole('link', { name: /Jules Roy/ })).toHaveAttribute('href', /github.com\/f1db\/f1db/);
+    await expect(cover.getByRole('link', { name: 'CC-BY-4.0 ↗' })).toHaveAttribute('href', 'https://creativecommons.org/licenses/by/4.0/');
     const track = page.getByTestId('circuit-track-visual');
     await expect(track).toBeVisible();
     const art = track.getByRole('img');

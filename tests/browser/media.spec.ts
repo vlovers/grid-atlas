@@ -96,13 +96,14 @@ test('withdrawn media and mismatched historical layouts never request the image'
 
 for (const locale of ['uk','en'] as const) {
   test(`${locale}: image collections preserve attribution, distinguish illustrations and revoke changed assets`, async ({page,previewURL})=>{
-    for (const variant of ['gallery-verified','gallery-car']) {
+    for (const variant of ['gallery-verified','gallery-car','gallery-ai']) {
       await page.goto(`${previewURL}/${locale}?test=${variant}`);
       const collection=page.getByTestId('media-collection');
       await expect(collection.locator('img')).toHaveCount(1);
       await expect(collection).toContainText('Synthetic Fixture Creator');
       await expect(collection.getByRole('link',{name:'Synthetic license fixture'})).toHaveAttribute('href','https://example.org/test-license');
-      await expect(collection.locator('figcaption')).toContainText(variant==='gallery-car'?(locale==='uk'?'Ілюстрація боліда':'Car illustration'):(locale==='uk'?'Портрет':'Portrait'));
+      await expect(collection.locator('figcaption')).toContainText(variant!=='gallery-verified'?(locale==='uk'?'Ілюстрація боліда':'Car illustration'):(locale==='uk'?'Портрет':'Portrait'));
+      if(variant==='gallery-ai')await expect(collection.locator('figcaption')).toContainText(locale==='uk'?'Згенерована ШІ ілюстрація · не архівна фотографія':'AI-generated illustration · not archival photography');
     }
     for (const variant of ['gallery-withdrawn','gallery-stale']) {
       const requests:string[]=[];const listener=(r:{url():string})=>{if(r.url().includes('/media/fixture.svg'))requests.push(r.url());};

@@ -20,10 +20,10 @@ import { showcaseCopy } from './showcase-copy';
 import styles from './showcase.module.css';
 
 type Props = { driver: DriverProfile; career: DriverCareer | null; seasons: DriverSeason[]; teams: DriverTeam[]; editorialUnavailable?: boolean;
-  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode; identityDetails?: IdentityDetails; championships: ChampionshipRow[]; relatedDrivers: { driver_id: string; driver_name: string }[] };
+  article: PublishedArticle | null; media: readonly MediaAsset[]; locale: 'uk' | 'en'; selectedSeason?: string; seasonResults: DriverSeasonResult[]; identity?: React.ReactNode; identityDetails?: IdentityDetails; championships: ChampionshipRow[]; relatedDriversUnavailable?: boolean; relatedDrivers: { driver_id: string; driver_name: string }[] };
 
 /** Shared public template: all facts and numeric destinations originate in public APIs. */
-export function DriverShowcase({ driver, career, seasons, teams, article, editorialUnavailable, media, locale, selectedSeason, seasonResults, identity, identityDetails, championships, relatedDrivers }: Props) {
+export function DriverShowcase({ driver, career, seasons, teams, article, editorialUnavailable, media, locale, selectedSeason, seasonResults, identity, identityDetails, championships, relatedDrivers, relatedDriversUnavailable }: Props) {
   const pilot = releasePilot(driver.external_id);
   const t = showcaseCopy[locale];
   const story = storyCopy[locale];
@@ -205,7 +205,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
 
     <section id="driver-perspectives" className={styles.chapter} aria-labelledby="driver-perspectives-title" data-testid="driver-perspectives">
       <SectionHeading kicker={e.connections} title={e.perspectives} note={e.perspectivesNote} id="driver-perspectives-title" />
-      {relatedDrivers.length ? <ul className={styles.related}>{relatedDrivers.map(related => <li key={related.driver_id}><a href={`/${locale}/drivers/${related.driver_id}?season=${selected?.year}`}>{related.driver_name} <span aria-hidden="true">↗</span></a></li>)}</ul> : <p>{e.noPerspectives}</p>}
+      {relatedDriversUnavailable && <p role="status" data-testid="connections-unavailable">{locale === 'uk' ? 'Пов’язані записи тимчасово недоступні.' : 'Related records are temporarily unavailable.'}</p>}
+      {relatedDrivers.length ? <ul className={styles.related}>{relatedDrivers.map(related => <li key={related.driver_id}><a href={`/${locale}/drivers/${related.driver_id}?season=${selected?.year}`}>{related.driver_name} <span aria-hidden="true">↗</span></a></li>)}</ul> : !relatedDriversUnavailable && <p>{e.noPerspectives}</p>}
     </section>
     <div id="driver-classifications" className={styles.chapter}><ChampionshipTable rows={championships} locale={locale} kind="drivers" scope="career" /></div>
     <section id="driver-archive" className={styles.chapter} aria-labelledby="driver-archive-title" tabIndex={-1}>

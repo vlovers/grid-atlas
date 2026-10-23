@@ -1,7 +1,7 @@
 import { parsePublishedArticle, type PublishedArticle } from '@/components/stories/published-article';
 export type { PublishedArticle } from '@/components/stories/published-article';
 import { notFound } from 'next/navigation';
-import { ApiRequestError, apiEndpoint, arrayData, optionalEnrichment, requestApi } from './api-client';
+import { ApiRequestError, optionalEnrichment, requestApi, requestArray } from './api-client';
 
 export type Season = { year: number };
 export type Driver = { id: string; name: string; external_id: string };
@@ -10,18 +10,16 @@ export type Race = { id: string; round: number; race_date: string | null; offici
 export type RaceProfile = Race & { season_year: number; external_id: string };
 export type Result = { position_display_order: number; position_number: number | null; position_text: string; driver_id: string; driver: string; constructor_id: string; constructor: string; points: string | null; laps: number | null; reason_retired: string | null; shared_car: boolean };
 export async function getData<T>(path: string): Promise<T[]> {
-  try {
-    const payload = await requestApi(path);
-    try { return arrayData<T>(payload); }
-    catch {
-      console.error({ event: 'archive_api_failed', endpoint: apiEndpoint(path), reason: 'contract' });
-      throw new ApiRequestError('contract');
-    }
-  } catch (error) {
+  try { return await requestArray<T>(path); }
+  catch (error) {
     if (error instanceof ApiRequestError && error.status === 404) notFound();
     throw error;
   }
 }
+
+/** Optional connections preserve an explicit failure state and bounded latency. */
+export const getOptionalArchiveData = <T,>(path: string) =>
+  optionalEnrichment(() => requestArray<T>(path, { timeoutMs: 2000 }));
 
 /** A missing article is expected; transport errors are not silently swallowed. */
 export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en', timeoutMs = 8000): Promise<PublishedArticle | null> {

@@ -1,0 +1,49 @@
+name: Unified archive experience
+on:
+  pull_request:
+    paths: ['apps/web/**', 'tests/browser/unified-archive.spec.ts', 'playwright.unified.config.ts', '.github/workflows/unified-experience.yml']
+  push:
+    branches: [main]
+    paths: ['apps/web/**', 'tests/browser/unified-archive.spec.ts', 'playwright.unified.config.ts']
+permissions:
+  contents: read
+jobs:
+  visual-accessibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: grid_atlas
+          POSTGRES_PASSWORD: integration_only
+          POSTGRES_DB: grid_atlas
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U grid_atlas -d grid_atlas"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    env:
+      DATABASE_URL: postgresql://grid_atlas:integration_only@127.0.0.1:5432/grid_atlas
+      GRID_ATLAS_NEXT_DIST_DIR: .next-test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install locked dependencies and browser engines
+        run: |
+          corepack enable && corepack prepare pnpm@10.18.3 --activate
+          pnpm install --frozen-lockfile
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          pnpm exec playwright install --with-deps chromium webkit
+      - name: Build production applications
+        run: pnpm build
+      - name: Verify both locales, navigation, reflow and reduced motion
+        run: pnpm exec playwright test --config playwright.unified.config.ts
+      - name: Upload screenshots and failure traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-archive-browser-evidence
+          path: test-results/
+          retention-days: 14

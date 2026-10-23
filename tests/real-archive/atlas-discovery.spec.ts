@@ -48,7 +48,7 @@ for (const locale of ['uk', 'en'] as const) {
     await home.getByRole('button', { name: t.searchAction }).press('Enter');
     const catalogue = page.getByTestId('driver-catalogue');
     await expect(catalogue.locator('.driver-grid > a')).toHaveCount(1);
-    await catalogue.getByRole('link', { name: new RegExp(senna.name) }).click();
+    await catalogue.locator('.driver-grid').getByRole('link', { name: new RegExp(senna.name) }).click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/drivers/${senna.id}$`));
     await expect(page.getByTestId('driver-showcase').getByRole('heading', { level: 1 })).toHaveText(senna.name);
     expect(remote).toEqual([]);

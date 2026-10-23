@@ -59,3 +59,20 @@ Schema readiness is not exhaustive import completeness; the doctor and archive
 acceptance remain separate checks. This work does not deploy, merge, approve
 photographs or manuscripts, establish independent historical truth, or change
 branch protection. Existing operational/editorial launch gates remain applicable.
+
+The first web CI run passed 459 browser cases and reported one React #418
+hydration error on the synthetic mobile circuit route. This intermittent issue
+was already recorded in the baseline sprint audit. No browser errors were filtered.
+The exact CI trace was inspected and replayed, including 50 controlled streaming
+replays; 35 development journeys under CPU throttling also did not reproduce it.
+The navigation regression now anchors the destination URL exactly and records the
+active URL with any browser error. The cause of the isolated hydration event
+remains unconfirmed; a successful rerun does not constitute a root-cause repair.
+
+
+Follow-up, 24 October: main subsequently merged the confirmed renderer repair in
+PR [#234](https://github.com/vlovers/grid-atlas/pull/234). The
+[separate investigation](circuit-hydration-232.md) records deterministic before/after
+reproduction and the scoped upstream backport. The visual/media batch includes
+that merged fix and revalidates its revised circuit cover and genuine archive
+journeys; the earlier paragraph describes what was known at PR A's initial run.

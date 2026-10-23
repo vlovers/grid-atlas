@@ -7,7 +7,7 @@ const sha1 = /^[a-f0-9]{40}$/;
 function mdText(value) {
   return String(value ?? '—').replace(/\s+/g, ' ').trim()
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/([\\`*_{}\[\]()#+.!|~-])/g, '\\$1');
+    .replace(/([\\`*_{}[\]()#+.!|~-])/g, '\\$1');
 }
 
 function safeLink(url) {
