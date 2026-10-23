@@ -18,3 +18,12 @@
 @media(forced-colors:active){.section,.card{background:Canvas;color:CanvasText;border:1px solid CanvasText}.year,.overline,.detail,.heading p,.action{color:CanvasText}.counter{background:Highlight;color:HighlightText}}
 
 .heading h2,.card strong{font-family:var(--font-display);font-weight:500}.year{font-family:var(--font-mono);font-weight:400;font-size:clamp(2.5rem,4vw,4rem)}.counter{border-radius:0}.card{transition:transform var(--motion-micro),border-color var(--motion-micro)}
+
+.editorial { background: none; border-color: var(--line); padding-inline: 0; border-inline: 0; }
+.editorial .card { background: var(--surface); border-color: var(--line); }
+.editorial .eyebrow, .editorial .overline, .editorial .action { color: var(--accent-ink); }
+.editorial .counter { background: var(--accent); color: var(--ink); border-radius: 0; font: .85rem var(--font-mono); }
+.editorial .year { color: var(--muted); font: 400 clamp(3rem, 5vw, 4.5rem)/1 var(--font-display); letter-spacing: -.04em; }
+.editorial .card strong { font: 500 1.7rem/1.15 var(--font-display); }
+.editorial .detail { color: var(--muted); }
+.editorial .card:hover, .editorial .card:focus-visible { border-color: var(--accent-ink); }

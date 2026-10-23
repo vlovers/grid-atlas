@@ -1,0 +1,13 @@
+.wrap { min-width: 0; max-width: 100%; margin-block: 1.5rem; }
+.hint { font: .8rem/1.6 var(--font-sans); color: var(--muted); margin: 0 0 .75rem; }
+.scroll { max-width: 100%; overflow: auto; position: relative; scrollbar-color: var(--muted) var(--surface); scrollbar-width: thin; border-block: 1px solid var(--line); }
+.scroll:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
+.scroll table { width: 100%; min-width: 42rem; font-variant-numeric: tabular-nums; }
+.scroll th, .scroll td { padding: 1rem; border-bottom: 1px solid var(--line); font-size: .9rem; line-height: 1.55; vertical-align: top; }
+.scroll thead th { color: var(--muted); font-size: .75rem; font-weight: 500; letter-spacing: .04em; background: var(--surface); }
+.scroll tbody th { font-size: .9rem; text-transform: none; color: var(--ink); letter-spacing: 0; }
+.scroll tbody tr:last-child > * { border-bottom: 0; }
+.scroll tr:focus-within { background: var(--surface); }
+.scroll a { text-decoration: underline; text-underline-offset: .25rem; }
+.scroll small { display: block; font-size: .8rem; color: var(--muted); margin-top: .35rem; }
+@media (max-width: 700px) { .scroll th, .scroll td { padding: .85rem .7rem; } }

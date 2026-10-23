@@ -1,3 +1,4 @@
+import { ArchiveTable } from './editorial/archive-table';
 import { Link } from '@/i18n/navigation';
 
 export type ChampionshipRow = {
@@ -32,7 +33,7 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
     <p>{uk
       ? 'Окрема класифікація з випуску F1DB, не сума очок за протоколами перегонів і не незалежна перевірка FIA. Позиції поточного сезону попередні.'
       : 'Separate source-reported F1DB standings, not a sum of race-result points or independent FIA verification. Current-season positions are provisional.'}</p>
-    {rows.length ? <div className="table-scroll"><table>
+    {rows.length ? <ArchiveTable label={heading} locale={locale}><table>
       <thead><tr>
         {scope === 'career' && <th scope="col">{uk ? 'Сезон' : 'Season'}</th>}
         <th scope="col">{uk ? 'Місце' : 'Position'}</th>
@@ -56,7 +57,7 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
               : '—'}</td>
         </tr>;
       })}</tbody>
-    </table></div> : <p>{uk ? 'Даних класифікації немає.' : 'No classification records.'}</p>}
+    </table></ArchiveTable> : <p>{uk ? 'Даних класифікації немає.' : 'No classification records.'}</p>}
     {rows.length > 0 && <details>
       <summary>{uk ? 'Джерело класифікації' : 'Classification provenance'}</summary>
       <p>F1DB · {rows[0].release_tag} · <Link href="/sources">{uk ? 'Джерела' : 'Sources'}</Link></p>

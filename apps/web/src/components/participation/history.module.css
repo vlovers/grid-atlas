@@ -75,3 +75,8 @@
 }
 @media(prefers-reduced-motion:no-preference) { .mark { transition: background var(--motion-micro); } }
 @media(forced-colors:active) { .line,.legend i { background: Highlight; border-color: Highlight; } .matrix [data-selected=true] { outline: 1px solid Highlight; outline-offset: -1px; box-shadow: none; } .mark { color: LinkText; } }
+/* The same reading scale and keyboard targets across both dossier types. */
+.history .heading > p, .history .note, .history .changes p { font-size: .9rem; }
+.matrix caption, .matrix tbody th small, .history .legend, .history > footer { font-size: .8rem; }
+.matrix tbody th > a { display: flex; align-items: center; min-height: 44px; }
+.changes dt, .period, .milestones small { font-size: .8rem; }

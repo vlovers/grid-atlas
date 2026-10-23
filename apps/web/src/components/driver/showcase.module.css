@@ -44,11 +44,6 @@
 .seasonTeamRows { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 2rem; }
 .seasonTeamRows article { border-block: 1px solid var(--line); padding-block: 1rem; }
 .seasonTeamRows dl { display: flex; flex-wrap: wrap; gap: 1.5rem; }
-.raceTableScroll, .tableScroll { max-width: 100%; overflow-x: auto; margin-block: 1.5rem; }
-.raceTableScroll table, .tableScroll table { min-width: 640px; width: 100%; border-collapse: collapse; }
-.raceTableScroll th, .tableScroll th { white-space: normal; }
-.raceTableScroll td, .raceTableScroll th, .tableScroll td, .tableScroll th { padding: .85rem .75rem; font-size: clamp(.83rem, .9vw, .96rem); line-height: 1.45; border-bottom: 1px solid var(--line); text-align: left; }
-.raceTableScroll small, .partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .78rem; }
 .eras { list-style: none; margin: 0; padding: 0; }
 .eras > li { display: grid; grid-template-columns: minmax(180px,.6fr) minmax(0,1.4fr); gap: 4rem; border-top: 1px solid var(--line); padding-block: 2rem; }
 .eraRail { display: flex; gap: 1.5rem; align-items: baseline; }
@@ -118,8 +113,8 @@
 .seasonMilestones > li > span:last-child, .momentLabel, .boundaries span, .boundaries small, .disclosure summary span { font-size: .82rem; line-height: 1.5; }
 .eraYears a, .eraLinks a, .yearNav a { font-size: .86rem; }
 @media (max-width: 700px) {
-  .raceTableScroll, .tableScroll { margin-inline: -.5rem; padding-inline: .5rem; }
   .quickFacts dd { font-size: clamp(1.5rem, 6vw, 2rem); }
   .openingScene { gap: 0; }
   .biography { max-width: 100%; }
 }
+.partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .8rem; }

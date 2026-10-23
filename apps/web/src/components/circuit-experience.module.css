@@ -1,94 +1,75 @@
-.shell{min-width:0;max-width:100%;overflow-wrap:anywhere;margin-block:clamp(2rem,6vw,5rem);padding:clamp(1.25rem,4vw,3rem);border:1px solid var(--line);border-radius:0;background:var(--surface);color:var(--ink)}
-.kicker{letter-spacing:.18em;font-size:.72rem;color:var(--accent-ink);font-weight:700}
-.shell h2{font-size:clamp(1.8rem,4vw,3.2rem);margin:.5rem 0}
-.lead{max-width:65ch;color:var(--muted)}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:1.5rem;margin:2rem 0}
-.selector{min-width:0;max-width:100%}
-.selector label{display:block;margin-bottom:.75rem}
-.selector select{width:100%;min-width:0;max-width:100%;background:var(--surface-raised);color:var(--ink);padding:.9rem;border:1px solid var(--line);border-radius:0}
-.measurements{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr));gap:1rem}
-.measurements div{border:1px solid var(--line);padding:1rem;border-radius:0}
-.measurements span,.eventStats small{display:block;font-size:.8rem;color:var(--muted)}
-.measurements strong{display:block;margin-top:.5rem;font-size:1.4rem}
-.effective{font-size:.8rem;color:var(--muted)}
-.timeline{padding:1rem 1rem 2.2rem;margin:1rem 0 2rem;background:var(--surface-raised);border-radius:0}
-.timelineHeading{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.8rem;color:var(--muted)}
-.timelineHeading span{text-align:center}
-.timelineBar{height:2px;background:#657898;margin:2rem .5rem;position:relative}
-.timelineBar>span{position:absolute;top:-6px;width:5px;height:14px;background:var(--accent-ink);border-radius:0}
-.timelineBar>span.dimmed{opacity:.2}
-.events{display:grid;gap:1rem}
-.event{border:1px solid var(--line);border-radius:0;background:var(--surface-raised);padding:1.1rem}
-.eventHead{display:flex;gap:.75rem;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
-.eventHead span{font-size:.78rem;color:var(--muted)}
-.eventHead a{color:var(--ink)}
-.eventStats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-block:1.25rem}
-.eventStats strong{display:block;margin-top:.35rem;overflow-wrap:anywhere}
-.meter{display:block;height:5px;background:var(--line);border-radius:0;margin-top:.7rem}
-.meter>span{display:block;height:100%;background:var(--accent-ink);border-radius:0}
-.provenance{border-top:1px solid var(--line);padding-top:.5rem}
-.provenance summary{cursor:pointer;color:var(--muted)}
-.provenance code{display:block;white-space:normal;overflow-wrap:anywhere;font-size:.72rem;margin-top:.5rem}
-.more{background:var(--surface-raised);color:var(--ink);border:1px solid var(--line);padding:.85rem;border-radius:0;cursor:pointer}
-@media(max-width:700px){.layout{grid-template-columns:minmax(0,1fr)}.eventStats{grid-template-columns:repeat(2,minmax(0,1fr))}}
-
-/* Graphics V3: original presentation of pinned CC BY 4.0 F1DB SVG contours. */
-.trackVisual{isolation:isolate;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:clamp(17rem,42vw,31rem);background:var(--background);border:1px solid var(--line);border-radius:0;margin:1.6rem 0 2rem;padding:1rem;min-width:0}
-.trackGlow{position:absolute;inset:13% 18%;z-index:-1;background:none;pointer-events:none}
-.trackOutline{width:min(100%,31rem);height:auto;max-height:28rem;object-fit:contain;filter:none;animation:trackReveal 650ms ease-out both}
-.trackCredit{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.45rem 1rem;text-align:center;margin-top:.3rem;max-width:75ch;color:var(--muted);font-size:.72rem;line-height:1.5}
-.trackCredit a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-.trackFallback{font-size:.92rem;color:var(--muted);text-align:center;max-width:30ch}
-@keyframes trackReveal{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.trackOutline{animation:none}}
-@media(max-width:700px){.trackVisual{padding:.65rem;min-height:15rem}.trackOutline{width:min(100%,23rem)}}
-
-/* V4: chronological discovery remains accessible without animation or pointer gestures. */
-.yearExplorer{border:1px solid var(--line);background:var(--surface-raised);border-radius:0;padding:1rem 1.25rem;margin:1.25rem 0;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.yearExplorerHeading{display:flex;flex-direction:column;gap:.35rem}.yearExplorerHeading strong{font-size:1.05rem}.yearExplorerHeading p{margin:0;color:var(--muted);font-size:.84rem;max-width:48ch}.yearExplorerHeading>span{color:var(--accent-ink);font-size:.85rem;min-height:1.25rem}
-.yearExplorerControls{display:flex;align-items:stretch;gap:.5rem}.yearExplorerControls button{min-width:2.8rem;border:1px solid var(--line);border-radius:0;background:var(--surface-raised);color:var(--ink);font-size:1.65rem;cursor:pointer}.yearExplorerControls button:disabled{opacity:.35;cursor:not-allowed}.yearExplorerControls button:focus-visible,.yearExplorerControls select:focus-visible{outline:3px solid var(--accent-ink);outline-offset:2px}
-.yearPickerLabel{display:flex;flex-direction:column;gap:.25rem;font-size:.75rem;color:var(--muted)}.yearPickerLabel select{background:var(--surface-raised);color:var(--ink);border:1px solid var(--line);border-radius:0;min-height:2.8rem;padding:.4rem .75rem;font:inherit;font-size:1rem}
-@media(max-width:700px){.yearExplorerControls{width:100%}.yearPickerLabel{flex:1}.yearPickerLabel select{width:100%}}
-
-.yearExplorerControls{flex-wrap:wrap}.yearExplorerControls .clearYear{font-size:.8rem;padding:.55rem .7rem;min-width:0}
-
-/* Historical layout comparison: horizontally scrollable without truncating evidence. */
-.compare{margin:2rem 0;padding:clamp(1rem,2.5vw,1.6rem);border:1px solid var(--line);border-radius:0;background:var(--surface-raised)}
-.compare h3{font-size:clamp(1.3rem,2.5vw,1.8rem);margin:0 0 .6rem}
-.compare>p{color:var(--muted);max-width:65ch;line-height:1.55}
-.compareScroll{overflow-x:auto;max-width:100%;margin-top:1.3rem}
-.compareScroll:focus-visible{outline:3px solid var(--accent-ink);outline-offset:3px}
-.compareTable{border-collapse:collapse;min-width:42rem;width:100%;font-variant-numeric:tabular-nums}
-.compareTable th,.compareTable td{padding:1rem .85rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
-.compareTable thead th{font-size:.78rem;color:var(--muted)}
-.compareTable tbody th{font-weight:650}
-.compareTable button{cursor:pointer;background:transparent;border:1px solid transparent;color:var(--ink);padding:.4rem .6rem;border-radius:0;font:inherit;text-align:left}
-.compareTable button:hover{border-color:var(--accent-ink)}
-.compareTable button:focus-visible{outline:3px solid var(--accent-ink);outline-offset:2px}
-.selectedLayout{background:var(--surface-raised)}
-.selectedLayout button{border-color:var(--accent-ink)}
-@media(forced-colors:active){.selectedLayout{outline:2px solid Highlight;outline-offset:-2px}}
-
-/* V5: accessible chronological exploration, preserving source-backed layout links. */
-.eraRail{padding:clamp(1rem,2.5vw,1.8rem);margin:2rem 0;background:var(--surface);border:1px solid var(--line);border-radius:0;min-width:0}
-.eraRailIntro h3{font-size:clamp(1.3rem,2.8vw,2rem);margin:0 0 .45rem}
-.eraRailIntro p{max-width:62ch;color:var(--muted);line-height:1.55}
-.eraRailYears{display:flex;gap:.55rem;overflow-x:auto;overscroll-behavior-inline:contain;padding:.5rem .25rem 1rem;scrollbar-width:thin}
-.eraRailYears button{flex:0 0 auto;min-width:5.25rem;padding:.8rem .65rem;background:var(--surface-raised);color:var(--ink);border:1px solid var(--line);border-radius:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.3rem}
-.eraRailYears button strong{font-size:1rem;font-variant-numeric:tabular-nums}
-.eraRailYears button span{font-size:.75rem;color:var(--muted)}
-.eraRailYears button:hover{border-color:var(--accent-ink);background:var(--surface-raised)}
-.eraRailYears button:focus-visible{outline:3px solid var(--accent-ink);outline-offset:2px}
-.eraRailYears .activeYear{border-color:var(--accent-ink);background:var(--surface-raised);box-shadow:inset 0 0 0 1px var(--accent-ink)}
-@media(forced-colors:active){.eraRailYears .activeYear{outline:2px solid Highlight}}
-
-.yearLayouts{margin:1rem 0 1.75rem;padding:1.1rem;border:1px solid var(--line);border-radius:0;min-width:0}
-.yearLayouts legend{padding:0 .4rem;font-weight:700}
-.yearLayouts p{color:var(--muted);font-size:.85rem}
-.yearLayouts>div{display:flex;flex-wrap:wrap;gap:.65rem}
-.yearLayouts label{display:inline-flex;gap:.6rem;align-items:center;padding:.65rem .9rem;background:var(--surface-raised);border:1px solid var(--line);border-radius:0;cursor:pointer}
-.yearLayouts input{accent-color:var(--accent-ink);width:1.1rem;height:1.1rem}
-.yearLayouts label:focus-within{outline:3px solid var(--accent-ink);outline-offset:2px}
-
-/* Shared Editorial Racing typography; source geometry and data are unchanged. */
-.shell h2,.shell h3{font-family:var(--font-display);font-weight:500;letter-spacing:-.025em;line-height:1.1}.shell h2{font-size:clamp(2.3rem,4vw,4.5rem)}.shell button,.shell select{font-family:var(--font-sans)}.shell strong{font-variant-numeric:tabular-nums}.kicker{font:500 .65rem/1.8 var(--font-mono)}
+.shell { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1.25rem 2rem; min-width: 0; max-width: 100%; overflow-wrap: anywhere; padding-block: 2rem; border-block: 1px solid var(--line); color: var(--ink); }
+.shell > * { grid-column: 1 / -1; min-width: 0; margin: 0; }
+.kicker { font: .75rem/1.6 var(--font-mono); letter-spacing: .12em; color: var(--accent-ink); }
+.shell h2 { font: 500 clamp(2.3rem, 4vw, 4rem)/1.08 var(--font-display); letter-spacing: -.025em; margin: 0; }
+.shell h3 { font: 500 clamp(1.6rem, 2.5vw, 2.4rem)/1.15 var(--font-display); margin: 0 0 .75rem; }
+.lead { max-width: 75ch; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+.shell > .trackVisual { grid-column: 1; }
+.shell > .layout { grid-column: 2; align-self: start; }
+.layout { display: grid; gap: 1.5rem; }
+.selector label { display: block; margin-bottom: .75rem; font-size: .9rem; }
+.selector select { width: 100%; min-width: 0; max-width: 100%; min-height: 48px; background: var(--surface); color: var(--ink); padding: .8rem; border: 1px solid var(--muted); border-radius: 0; font-size: 1rem; }
+.measurements { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.measurements > div { border-top: 1px solid var(--line); padding-top: 1rem; min-width: 0; }
+.measurements span, .eventStats small { display: block; font-size: .85rem; color: var(--muted); line-height: 1.5; }
+.measurements strong { display: block; margin-top: .5rem; font: 400 clamp(1.5rem, 2.5vw, 2.3rem)/1.2 var(--font-mono); }
+.effective { grid-column: 1 / -1; font-size: .85rem; color: var(--muted); }
+.timelineHeading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font: .85rem/1.5 var(--font-mono); color: var(--muted); }
+.timelineHeading span { text-align: center; font-family: var(--font-sans); }
+.timelineBar { height: 1px; background: var(--line); margin: 2rem .5rem; position: relative; }
+.timelineBar > span { position: absolute; top: -5px; width: 3px; height: 11px; background: var(--accent-ink); }
+.timelineBar > span.dimmed { opacity: .25; }
+.events { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.event { border-top: 1px solid var(--line); background: var(--surface); padding: 1.25rem; min-width: 0; }
+.eventHead { display: flex; gap: .75rem; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+.eventHead span { font: .8rem/1.5 var(--font-mono); color: var(--accent-ink); }
+.eventHead a { font-size: 1.05rem; line-height: 1.6; text-decoration: underline; text-underline-offset: .3rem; }
+.eventStats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 1.25rem; }
+.eventStats strong { display: block; margin-top: .35rem; font: 1.1rem/1.5 var(--font-mono); overflow-wrap: anywhere; }
+.meter { display: block; height: 3px; background: var(--line); margin-top: .7rem; }
+.meter > span { display: block; height: 100%; background: var(--accent-ink); }
+.provenance { border-top: 1px solid var(--line); padding-top: .5rem; }
+.provenance summary { cursor: pointer; color: var(--muted); min-height: 44px; padding-block: .7rem; font-size: .85rem; }
+.provenance code { display: block; white-space: normal; overflow-wrap: anywhere; font-size: .8rem; margin-top: .5rem; }
+.more { background: var(--surface); color: var(--ink); border: 1px solid var(--muted); padding: .85rem 1.25rem; border-radius: 0; cursor: pointer; min-height: 44px; }
+.trackVisual { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 22rem; background: var(--surface); border: 1px solid var(--line); padding: 1.5rem; }
+.trackGlow { display: none; }
+.trackOutline { width: min(100%, 27rem); height: auto; max-height: 24rem; object-fit: contain; }
+.trackCredit { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1rem; text-align: center; max-width: 60ch; color: var(--muted); font-size: .8rem; line-height: 1.7; }
+.trackCredit a { text-decoration: underline; text-underline-offset: 3px; }
+.trackFallback { font-size: 1rem; color: var(--muted); text-align: center; max-width: 30ch; }
+.yearExplorer { border-block: 1px solid var(--line); padding-block: 1.25rem; display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.yearExplorerHeading { display: flex; flex-direction: column; gap: .35rem; }
+.yearExplorerHeading strong { font-size: 1.05rem; }
+.yearExplorerHeading p { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; max-width: 48ch; line-height: 1.7; }
+.yearExplorerHeading > span { color: var(--accent-ink); font-size: .9rem; min-height: 1.25rem; }
+.yearExplorerControls { display: flex; align-items: flex-end; gap: .5rem; flex-wrap: wrap; }
+.yearExplorerControls button { min-width: 44px; min-height: 48px; border: 1px solid var(--muted); border-radius: 0; background: var(--surface); color: var(--ink); font-size: 1.5rem; cursor: pointer; }
+.yearExplorerControls button:disabled { opacity: .4; cursor: not-allowed; }
+.yearExplorerControls .clearYear { font-size: .85rem; padding: .6rem; }
+.yearPickerLabel { display: flex; flex-direction: column; gap: .3rem; font-size: .85rem; color: var(--muted); }
+.yearPickerLabel select { background: var(--surface); color: var(--ink); border: 1px solid var(--muted); border-radius: 0; min-height: 48px; padding: .5rem 1rem; font: 1rem var(--font-mono); }
+.compare, .eraRail { padding-block: 1.5rem; border-block: 1px solid var(--line); }
+.compare > p, .eraRailIntro p { color: var(--muted); max-width: 75ch; font-size: .95rem; line-height: 1.8; }
+.compareScroll { overflow: auto; max-width: 100%; margin-top: 1.3rem; position: relative; }
+.compareTable { border-collapse: collapse; min-width: 42rem; width: 100%; font-variant-numeric: tabular-nums; }
+.compareTable th, .compareTable td { padding: 1rem .85rem; border-bottom: 1px solid var(--line); text-align: left; font-size: .9rem; white-space: normal; }
+.compareTable thead th { font-size: .75rem; color: var(--muted); }
+.compareTable tbody th { font-weight: 500; text-transform: none; }
+.compareTable button { cursor: pointer; background: transparent; border: 1px solid transparent; color: var(--ink); min-height: 44px; padding: .5rem .7rem; border-radius: 0; font: inherit; text-align: left; }
+.compareTable button:hover, .selectedLayout button { border-color: var(--accent-ink); }
+.selectedLayout { background: var(--surface); }
+.eraRailYears { display: flex; gap: .5rem; overflow-x: auto; padding: .5rem .25rem 1rem; scrollbar-width: thin; }
+.eraRailYears button { flex: 0 0 auto; min-width: 5.25rem; min-height: 44px; padding: .8rem .65rem; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.eraRailYears button strong { font: 1rem var(--font-mono); }
+.eraRailYears button span { font-size: .8rem; color: var(--muted); }
+.eraRailYears button:hover, .eraRailYears .activeYear { border-color: var(--accent-ink); }
+.yearLayouts { padding: 1rem; border: 1px solid var(--line); }
+.yearLayouts p { color: var(--muted); font-size: .9rem; }
+.yearLayouts > div { display: flex; flex-wrap: wrap; gap: .75rem; }
+.yearLayouts label { display: inline-flex; gap: .6rem; align-items: center; padding: .65rem .9rem; background: var(--surface); border: 1px solid var(--muted); cursor: pointer; }
+.yearLayouts input { accent-color: var(--accent-ink); width: 1.1rem; min-height: 1.1rem; height: 1.1rem; }
+.shell :is(button, select, summary, [tabindex]):focus-visible, .yearLayouts label:focus-within { outline: 2px solid var(--accent-ink); outline-offset: -3px; }
+@media (max-width: 900px) { .shell { grid-template-columns: minmax(0, 1fr); } .shell > .trackVisual, .shell > .layout { grid-column: 1; } }
+@media (max-width: 700px) { .events { grid-template-columns: minmax(0, 1fr); } .yearExplorerControls { width: 100%; } .yearPickerLabel { flex: 1; min-width: 0; } .yearPickerLabel select { width: 100%; } .trackVisual { min-height: 16rem; padding: 1rem; } }
+@media (forced-colors: active) { .records, .timelineBar > span, .meter > span { background: Highlight; } .selectedLayout, .eraRailYears .activeYear { outline: 2px solid Highlight; outline-offset: -2px; } }
