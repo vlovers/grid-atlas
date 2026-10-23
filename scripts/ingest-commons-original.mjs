@@ -45,7 +45,7 @@ async function responseOrFail(response, label) {
 async function readBoundedApiJson(response) {
   const declaredLength = response.headers?.get('content-length');
   if (declaredLength !== null && declaredLength !== undefined &&
-      (!/^\\d+$/.test(declaredLength) || Number(declaredLength) > MAX_API_RESPONSE_BYTES)) {
+      (!/^\d+$/.test(declaredLength) || Number(declaredLength) > MAX_API_RESPONSE_BYTES)) {
     throw Error('Commons API response exceeds metadata size limit');
   }
   const chunks = [];
