@@ -86,3 +86,31 @@ test('checks SHA-256, MIME, dimensions, symlinks and approval boundaries',()=>{
   assert.throws(()=>inspectOriginal({filePath,researchId:'research-test',staging:duplicate}),/duplicate/);
  }finally{rmSync(dir,{recursive:true,force:true});}
 });
+
+test('provided Commons evidence must match exactly one original and pinned author/license', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'grid-atlas-source-gate-'));
+  try {
+    const bytes = png(), filePath = join(dir, 'original.png');
+    writeFileSync(filePath, bytes);
+    const manifest = staging('image/png');
+    manifest.entries[0].creator = 'Test creator';
+    manifest.entries[0].license = { identifier: 'CC-BY-SA-4.0' };
+    const entry = {
+      research_id: 'research-test',
+      file_page_url: manifest.entries[0].file_page_url,
+      description_oldid: 123,
+      sha1: createHash('sha1').update(bytes).digest('hex'),
+      bytes: bytes.length, width: 4, height: 5,
+      source_author: 'Test creator', source_license: 'CC-BY-SA-4.0'
+    };
+    const sourceEvidence = {
+      schema_version: 1, lane: 'research_only', publication_allowed: false, entries: [entry]
+    };
+    const args = { filePath, researchId: 'research-test', staging: manifest, sourceEvidence };
+    assert.equal(inspectOriginal(args).source_evidence.matched, true);
+    assert.throws(() => inspectOriginal({ ...args, sourceEvidence: { ...sourceEvidence, entries: [] } }), /Missing, invalid or ambiguous Commons source evidence/);
+    assert.throws(() => inspectOriginal({ ...args, sourceEvidence: { ...sourceEvidence, entries: [entry, { ...entry }] } }), /Missing, invalid or ambiguous Commons source evidence/);
+    assert.throws(() => inspectOriginal({ ...args, sourceEvidence: { ...sourceEvidence, entries: [{ ...entry, source_author: 'Different creator' }] } }), /creator or license/);
+    assert.throws(() => inspectOriginal({ ...args, sourceEvidence: { ...sourceEvidence, entries: [{ ...entry, source_license: 'CC0' }] } }), /creator or license/);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
+});
