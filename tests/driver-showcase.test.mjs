@@ -71,7 +71,7 @@ test('public driver implementation imports neither research/candidate manifests 
   const sources = ['apps/web/src/app/[locale]/drivers/[id]/page.tsx', 'apps/web/src/components/driver/driver-showcase.tsx']
     .map(path => readFileSync(path, 'utf8')).join('\n');
   assert.doesNotMatch(sources, /docs\/editorial|candidates\.json|readFileSync|ApprovedStory|status:\s*['"]published|ayrton-senna|drivers\/72/);
-  assert.match(sources, /getPublishedArticle/);
+  assert.match(sources, /getOptionalPublishedArticle/);
   assert.match(sources, /media\/publication\.json/);
 });
 

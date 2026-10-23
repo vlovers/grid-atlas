@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { releasePilot, journeyYears, selectedYear } from '@/components/stories/release-model';
 import { resolveReleaseDriver, releaseResults } from '@/components/stories/release-data';
-import { getPublishedArticle, getData, type RaceProfile } from '@/lib/api';
+import { getOptionalPublishedArticle, getData, type RaceProfile } from '@/lib/api';
 import { CIRCUIT_ARTWORK } from '@/components/circuit-layout-registry';
 import type { CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { teamEras, timeMachinePath } from '@/components/driver/showcase-model';
@@ -31,12 +31,13 @@ export default async function DriverStory({ params, searchParams }: Props) {
   const years = [...new Set(career.participation.map(r => r.year))].sort((a, b) => a - b);
   const query = await searchParams, featured = journeyYears(pilot, career.participation);
   const year = selectedYear(query.year, years), eras = teamEras(career.participation);
-  const [article, records, selectedRecords, peer] = await Promise.all([
-    getPublishedArticle(driver.id, locale),
+  const [editorial, records, selectedRecords, peer] = await Promise.all([
+    getOptionalPublishedArticle(driver.id, locale),
     Promise.all(pilot.races.filter(p => years.includes(p.year)).map(async pick => ({ pick, rows: (await releaseResults(driver.id, pick.year)).filter(r => r.round === pick.round) }))),
     year === null ? Promise.resolve([]) : releaseResults(driver.id, year),
     resolveReleaseDriver(pilot.peer, locale),
   ]);
+  const article = editorial.value;
   const sennaFirstWin = slug === 'ayrton-senna' ? records.find(record => record.pick.year === 1985 && record.pick.round === 2) : undefined;
   const firstWinMilestone = career.milestones.first_win?.race;
   const firstWinRows = sennaFirstWin?.rows.filter(row => row.position_text === '1' && row.position_number === 1 && !row.shared_car && row.race_id === firstWinMilestone?.id && row.round === firstWinMilestone.round && firstWinMilestone.year === 1985) ?? [];
@@ -50,6 +51,7 @@ export default async function DriverStory({ params, searchParams }: Props) {
   const compare = timeMachinePath(driver.id, years), origin = siteOrigin();
   const labels = { years: uk ? 'Зафіксовані сезони' : 'Observed seasons', entries: uk ? 'Записи результатів' : 'Result entries', wins: uk ? 'Переможні гонки в архіві' : 'Winning races in the archive', races: uk ? 'Зафіксовані гонки' : 'Recorded races' };
   return <div className={`page ${styles.release}`} data-testid="driver-story">
+    {editorial.status === 'unavailable' && <p role="status">{uk ? 'Редакційний матеріал тимчасово недоступний. Архівні записи залишаються доступними.' : 'Editorial content is temporarily unavailable. Archive records remain available.'}</p>}
     {origin && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageStructuredData(origin, locale, [{ name: 'Grid Atlas', path: '/' }, { name: uk ? 'Історії пілотів' : 'Driver stories', path: '/stories' }, { name: driver.name, path: `/stories/${slug}` }], pilot.prompt[locale])) }} />}
     <header className={styles.hero}>
       <div className={styles.art}><MotorsportArt kind="helmet" tone={pilot.tone} /></div>

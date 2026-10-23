@@ -53,6 +53,12 @@ API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web dev --port 3000
 
 Open http://localhost:3000/uk (Ukrainian) or http://localhost:3000/en (English). For local production processes, run `pnpm build`, then the API start command and `API_BASE_URL=http://127.0.0.1:3001 pnpm --filter @grid-atlas/web start --hostname 127.0.0.1 --port 3000`. External hosting has not been deployed by this work.
 
+After updating an existing checkout, rerun the pinned import wrapper to apply new
+migrations and enrichment imports. A healthy PostgreSQL process alone does not
+prove that its schema matches the API. Diagnose deep-route dependencies with
+`node scripts/doctor-archive.mjs --api-origin http://127.0.0.1:3001`.
+See [archive recovery and environment troubleshooting](docs/delivery/archive-recovery.md).
+
 ## Checks
 
 ```sh

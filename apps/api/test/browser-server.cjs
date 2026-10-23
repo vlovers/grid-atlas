@@ -74,6 +74,8 @@ async function main() {
       SELECT subject_driver_id,'uk','synthetic-private-uk','PRIVATE UK DRAFT SHOULD NEVER APPEAR','Private untranslated fixture' FROM content_claims;
   `);
   app = await NestFactory.create(AppModule, { logger: false });
+  // Fault injection is limited to a synthetic identity in this owned test schema.
+  app.use('/api/drivers/2/article', (_request, response) => response.status(503).json({ status: 'not_ready' }));
   app.setGlobalPrefix('api');
   await app.listen(3339, '127.0.0.1');
   for (const signal of ['SIGTERM', 'SIGINT']) {

@@ -34,7 +34,17 @@ export class SafeApiErrors implements ExceptionFilter {
       response.status(503).json({ status: 'not_ready' });
       return;
     }
-    logger.error({ event: 'request_failed' });
+    const request = host.switchToHttp().getRequest<Request>();
+    // PostgreSQL SQLSTATE is useful for diagnosis; messages, SQL and connection
+    // objects may contain secrets. Never serialize the original exception.
+    const code = error && typeof error === 'object' && 'code' in error &&
+      typeof error.code === 'string' && /^[0-9A-Z]{5}$/.test(error.code) ? error.code : undefined;
+    logger.error({ event: 'request_failed', method: request.method,
+      route: typeof request.route?.path === 'string' ? request.route.path : 'unmatched', database_code: code });
+    if (code === '42P01' || code === '42703') {
+      response.status(503).json({ status: 'not_ready' });
+      return;
+    }
     response.status(500).json({ statusCode: 500, message: 'Internal server error' });
   }
 }

@@ -40,6 +40,10 @@ running: Next 15 development and production builds share `.next`.
 
 API requests run on the Next.js server and do not need browser CORS. They have an eight-second timeout and no persistent fetch cache, so rejected/revoked lineage is not retained for an hour. Missing API profiles render not-found; outages have a retry state.
 
+Production requires an explicit `API_BASE_URL`; only development has the localhost
+fallback. Optional approved articles use a separate two-second budget and an
+explicit unavailable status on failure. See [schema drift recovery](../../docs/delivery/archive-recovery.md).
+
 Implemented: searchable/paginated drivers, constructors and circuits; profiles and career/season timelines; season calendars and result-derived lineups; circuit race history; named race results with profile links; source release and attribution; verified-only lineage list and interactive map with filters, evidence, keyboard selection and zoom. The interface is Ukrainian-first (`/uk`) with English (`/en`). Editorial Racing homepage and driver/constructor dossier redesign is merged (#205), with historical journey links (#206), driver reading-density improvements (#208) and season charts (#209). Circuit, season and race pages remain separate visual follow-up work; this is not a claim of a complete site-wide redesign. Unprefixed URLs default to Ukrainian independently of browser language or cookies. The language switcher preserves the current path, canonical IDs and search parameters.
 
 `pnpm lint`, `pnpm typecheck`, `pnpm build` and `DATABASE_URL=postgresql://... pnpm test:browser` run from the root. Browser tests start production servers on ports 3339–3341 and use real PostgreSQL with isolated, synthetic fixtures on desktop/mobile. Trace/screenshots are retained on failure.

@@ -2,7 +2,7 @@ import { type ChampionshipRow } from '@/components/championship-table';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getData, getPublishedArticle } from '@/lib/api';
+import { getData, getOptionalPublishedArticle } from '@/lib/api';
 import { DriverShowcase } from '@/components/driver/driver-showcase';
 import type { DriverProfile, DriverCareer, DriverSeason, DriverTeam, DriverSeasonResult } from '@/components/driver/showcase-model';
 import type { MediaAsset } from '@/components/media/registry';
@@ -28,7 +28,7 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const [profiles, seasons, teams, careers, article, championships, query, identities] = await Promise.all([
     getData<DriverProfile>(`/api/drivers/${id}`), getData<DriverSeason>(`/api/drivers/${id}/seasons`),
     getData<DriverTeam>(`/api/drivers/${id}/teams`), getData<DriverCareer>(`/api/drivers/${id}/career?locale=${locale}`),
-    getPublishedArticle(id, locale), getData<ChampionshipRow>(`/api/drivers/${id}/championships`), searchParams, getData<IdentityDetails>(`/api/drivers/${id}/identity`),
+    getOptionalPublishedArticle(id, locale), getData<ChampionshipRow>(`/api/drivers/${id}/championships`), searchParams, getData<IdentityDetails>(`/api/drivers/${id}/identity`),
   ]);
   const driver = profiles[0];
   if (!driver) notFound();
@@ -42,6 +42,6 @@ export default async function DriverProfilePage({ params, searchParams }: Props)
   const relatedDrivers = [...new Map(rosters.flat().filter(row => row.driver_id !== id).map(row => [row.driver_id, row])).values()].slice(0, 3);
   return <DriverShowcase driver={driver} career={careers[0] ?? null} seasons={seasons} teams={teams}
     identity={identities[0] && <IdentityFacts identity={identities[0]} locale={locale} />} identityDetails={identities[0]} championships={championships} relatedDrivers={relatedDrivers}
-    article={article} media={mediaPublication.assets as MediaAsset[]} locale={locale}
+    article={article.value} editorialUnavailable={article.status === 'unavailable'} media={mediaPublication.assets as MediaAsset[]} locale={locale}
     selectedSeason={year === null ? undefined : String(year)} seasonResults={seasonResults} />;
 }
