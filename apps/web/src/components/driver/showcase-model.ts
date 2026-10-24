@@ -87,17 +87,17 @@ export function driverArchiveOverview(driver: DriverProfile, career: DriverCaree
   const remainder = constructors.length - shown.length;
   const n = (v: number) => new Intl.NumberFormat(locale).format(v);
   const opener = locale === 'en'
-    ? `The imported Formula 1 race-result archive records ${n(career.summary.races)} distinct races for ${driver.name}${range ? ` across ${range}` : ''}.`
-    : `Імпортований архів результатів Формули-1 містить ${n(career.summary.races)} окремих гонок за участю ${driver.name}${range ? ` у ${range} роках` : ''}.`;
+    ? `The Formula 1 archive records ${n(career.summary.races)} distinct races for ${driver.name}${range ? ` across ${range}` : ''}.`
+    : `В архіві є результати ${n(career.summary.races)} гонок за участю ${driver.name}${range ? ` за ${range} роки` : ''}.`;
   const teams = shown.length ? (locale === 'en'
-    ? `The records associate this driver with ${shown.join(', ')}${remainder ? ` and ${n(remainder)} more constructor${remainder === 1 ? '' : 's'}` : ''}.`
-    : `У протоколах зафіксовано зв’язки з конструкторами ${shown.join(', ')}${remainder ? ` та ще ${n(remainder)}` : ''}.`) : null;
+    ? `Race results connect this driver with ${shown.join(', ')}${remainder ? ` and ${n(remainder)} more constructor${remainder === 1 ? '' : 's'}` : ''}.`
+    : `У результатах пілота вказані конструктори ${shown.join(', ')}${remainder ? ` та ще ${n(remainder)}` : ''}.`) : null;
   const wins = career.summary.winning_races > 0 ? (locale === 'en'
-    ? `These records include ${n(career.summary.winning_races)} distinct winning races and ${n(career.summary.podium_result_entries)} podium result entries.`
-    : `Серед них — ${n(career.summary.winning_races)} окремих переможних гонок і ${n(career.summary.podium_result_entries)} подіумних записів результатів.`)
+    ? `These records include ${n(career.summary.winning_races)} wins and ${n(career.summary.podium_result_entries)} top-three results.`
+    : `Перемоги — ${n(career.summary.winning_races)}; результати в першій трійці — ${n(career.summary.podium_result_entries)}.`)
     : (locale === 'en'
-      ? `There are no winning races in the imported results; ${n(career.summary.podium_result_entries)} podium result entries are recorded.`
-      : `В імпортованих результатах немає переможних гонок; зафіксовано ${n(career.summary.podium_result_entries)} подіумних записів результатів.`);
+      ? `No wins are recorded in the archive; ${n(career.summary.podium_result_entries)} top-three results are recorded.`
+      : `В архіві немає перемог; результатів у першій трійці — ${n(career.summary.podium_result_entries)}.`);
   // Every driver with race-result evidence gets a concise, fully archive-bound
   // chronology without claiming that a research dossier has editorial approval.
   const first = career.milestones.first_appearance?.race;

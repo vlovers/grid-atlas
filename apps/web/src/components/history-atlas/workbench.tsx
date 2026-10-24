@@ -12,6 +12,7 @@ import {
   profileHref,
   type AtlasSelection,
 } from "./model";
+import { glossary } from "@/content/glossary";
 import styles from "./history-atlas.module.css";
 function LoadingMap() {
   const t = historyAtlasCopy[useLocale() === "en" ? "en" : "uk"];
@@ -82,11 +83,14 @@ export function AtlasWorkbench({
     if (id !== selected) {
       setSelected(id);
       setCopyMessage("");
-      history.pushState(
-        null,
-        "",
-        atlasHref(locale, { ...selection, selected: id }, trail),
-      );
+      const next = new URL(atlasHref(locale, { ...selection, selected: id }, trail), location.origin);
+      const current = new URL(location.href);
+      for (const key of ['careerQ','careerPage']) {
+        const value=current.searchParams.get(key);
+        if(value!==null) next.searchParams.set(key,value);
+      }
+      history.pushState(null, '', next.pathname+next.search);
+      window.dispatchEvent(new Event('atlas-selection'));
     }
     if (inspect)
       document
@@ -124,7 +128,7 @@ export function AtlasWorkbench({
               <p>{t.emptyNote}</p>
             </div>
           )}
-          <p className={styles.help}>{t.bounded}</p>
+          <p className={styles.help}>{glossary[locale].bounds}</p>
           {graph.truncated && (
             <p className={styles.notice} role="status">
               {t.truncated}

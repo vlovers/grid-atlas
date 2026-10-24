@@ -1,0 +1,15 @@
+.period { margin-block: 1.5rem; border-block: 1px solid var(--line); padding-block: 1.5rem; min-width: 0; }
+.period h2 { font-size: clamp(1.8rem, 3vw, 3rem); margin: 0 0 .75rem; }
+.period h3 { font: 600 1.05rem/1.6 var(--font-sans); margin: 1.25rem 0 .5rem; }
+.period p { color: var(--muted); max-width: 70ch; line-height: 1.7; }
+.period [role=status] { border-left: 3px solid var(--gold); padding-left: 1.25rem; }
+.period summary { cursor: pointer; padding-block: .75rem; min-height: 44px; }
+.partner { padding: 1.25rem; min-width: 0; width: 100%; }
+.partner h3 { margin: 0 0 .6rem; }
+.partner > a { display: flex; min-height: 44px; align-items: center; min-width: 0; padding: .5rem 0; }
+.season { display: block !important; padding: .5rem; }
+.season a { display: inline-flex; align-items: center; min-height: 44px; }
+
+.filter { display: flex; gap: 1rem; align-items: end; flex-wrap: wrap; margin-block: 1rem; }
+.filter label { display: grid; gap: .5rem; flex: 1 1 16rem; }
+.filter button { padding: .75rem 1rem; background: var(--accent); border: 1px solid var(--accent); color: white; font: inherit; }

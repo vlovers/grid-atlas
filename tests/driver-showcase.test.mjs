@@ -123,7 +123,7 @@ test('archive synopsis generates bilingual verified-result descriptions, not cha
   const uk=driverArchiveOverview(driver,career,'uk');
   assert.match(en.paragraphs[0],/3 distinct races.*1980–1982/);
   assert.match(en.paragraphs[1],/Constructor 1, Constructor 2/);
-  assert.match(uk.paragraphs[0],/3 окремих гонок/);
+  assert.match(uk.paragraphs[0],/результати 3 гонок/);
   assert.equal(en.firstRace.id,'100');
   assert.equal(en.firstWin.id,'101');
   assert.equal(JSON.stringify(career),before);

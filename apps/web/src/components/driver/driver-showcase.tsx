@@ -1,3 +1,4 @@
+import { glossary } from '@/content/glossary';
 import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -146,7 +147,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
                 <dl>
                   <div><dt>{locale === 'uk' ? 'Гонки' : 'Races'}</dt><dd>{format(row.races)}</dd></div>
                   <div><dt>{locale === 'uk' ? 'Записи результатів' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
-                  <div><dt>{locale === 'uk' ? 'Переможні гонки' : 'Winning races'}</dt><dd>{format(row.winning_races)}</dd></div>
+                  <div><dt>{glossary[locale].wins}</dt><dd>{format(row.winning_races)}</dd></div>
                 </dl>
                 <p>{locale === 'uk' ? 'Очки у результатах' : 'Recorded result points'}: {row.recorded_points ?? t.unavailable}{row.points_missing > 0 ? ` · ${locale === 'uk' ? 'Є пропуски' : 'Incomplete'}` : ''}</p>
                 <p><a href={`/${locale}/races/${row.first_race.id}`}>{locale === 'uk' ? 'Перша гонка' : 'First race'} ↗</a> · <a href={`/${locale}/races/${row.last_race.id}`}>{locale === 'uk' ? 'Остання гонка' : 'Last race'} ↗</a></p>

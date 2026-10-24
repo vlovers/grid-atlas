@@ -3,8 +3,8 @@ const en = {
   kicker: "HISTORY EXPLORER / THE NETWORK",
   intro: "Choose a season. Follow a connection. Open the races behind it.",
   core: "Focus",
-  observed: "Observed result association",
-  neighbors: "Connected identities",
+  observed: "Connected by race results",
+  neighbors: "Drivers and constructors",
   zoomIn: "Zoom in",
   zoomOut: "Zoom out",
   reset: "Return to center",
@@ -19,9 +19,9 @@ const en = {
   previous: "Previous network window",
   next: "Next network window",
   slice:
-    "The map shows a window of the API slice. The list includes every loaded association; additional records are available through pagination.",
+    "The map shows a part of the season’s connections. The list includes every loaded association; additional records are available through pagination.",
   all: "Browse all season connections",
-  list: "Connections / accessible list",
+  list: "All loaded connections",
   evidence: "Race evidence / selected pair",
   loading: "Loading exact race records…",
   error:
@@ -36,7 +36,7 @@ const en = {
   season: "Open season",
   emptyTitle: "A quiet year in these records.",
   empty:
-    "No observed associations were returned. Missing records do not prove that an association never existed.",
+    "No race results connect this driver and constructor in this season. Missing records do not prove that an association never existed.",
   invalidSelection:
     "This selection is outside the loaded graph slice. Showing its first association; use the paginated list to find other records.",
 };
@@ -45,8 +45,8 @@ const uk: Record<keyof typeof en, string> = {
   kicker: "ДОСЛІДНИК ІСТОРІЇ / МЕРЕЖА",
   intro: "Оберіть сезон. Простежте зв’язок. Відкрийте гонки за ним.",
   core: "У фокусі",
-  observed: "Спостережуваний зв’язок результатів",
-  neighbors: "Пов’язані ідентичності",
+  observed: "Зв’язок за результатами гонок",
+  neighbors: "Пілоти й конструктори",
   zoomIn: "Збільшити",
   zoomOut: "Зменшити",
   reset: "Повернутися до центру",
@@ -61,9 +61,9 @@ const uk: Record<keyof typeof en, string> = {
   previous: "Попереднє вікно мережі",
   next: "Наступне вікно мережі",
   slice:
-    "Мапа показує вікно зрізу API. Список містить усі завантажені зв’язки; інші записи доступні через сторінки.",
+    "Мапа показує частину зв’язків сезону. Список містить усі завантажені зв’язки; інші записи доступні через сторінки.",
   all: "Усі зв’язки сезону",
-  list: "Зв’язки / доступний список",
+  list: "Усі завантажені зв’язки",
   evidence: "Записи гонок / вибрана пара",
   loading: "Завантаження точних записів гонок…",
   error:
@@ -78,7 +78,7 @@ const uk: Record<keyof typeof en, string> = {
   season: "Відкрити сезон",
   emptyTitle: "Тихий рік у цих записах.",
   empty:
-    "Спостережуваних зв’язків не повернуто. Відсутність записів не доводить, що зв’язку ніколи не було.",
+    "За цей сезон немає результатів, що пов’язують пілота й конструктора. Відсутність записів не доводить, що зв’язку ніколи не було.",
   invalidSelection:
     "Цей вибір поза завантаженим зрізом графа. Показано перший зв’язок; інші записи шукайте у списку зі сторінками.",
 };
