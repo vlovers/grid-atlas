@@ -8,7 +8,7 @@ function fixture(){
     {driver_id:'sample',claim_id:'early',second_publisher_pending:true,narrative_chapters:['opening','career']},
     {driver_id:'sample',claim_id:'later',second_publisher_pending:false,narrative_chapters:['career']}
   ];
-  const worksheet=claims.map((claim,i)=>({
+  const worksheet=claims.map(claim=>({
     driver_id:claim.driver_id,claim_id:claim.claim_id,topic:'history',
     en:'Sourced English research text',uk:'Український текст дослідження',
     independent_publisher_links:!claim.second_publisher_pending,
