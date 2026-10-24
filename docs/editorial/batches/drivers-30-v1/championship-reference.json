@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-24",
+  "status": "reference_research_not_editorial_approval",
+  "sources": [
+    {
+      "publisher": "FIA",
+      "url": "https://halloffame.fia.com/",
+      "scope": "Historical winners list through 2023; does not cover 2024 or 2025."
+    },
+    {
+      "publisher": "Formula 1",
+      "url": "https://www.formula1.com/en/drivers/hall-of-fame",
+      "scope": "World Champions index including 2024 and 2025; mutable page."
+    }
+  ],
+  "driver_championship_years": {
+    "ayrton-senna": [
+      1988,
+      1990,
+      1991
+    ],
+    "alain-prost": [
+      1985,
+      1986,
+      1989,
+      1993
+    ],
+    "michael-schumacher": [
+      1994,
+      1995,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004
+    ],
+    "lewis-hamilton": [
+      2008,
+      2014,
+      2015,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "max-verstappen": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "sebastian-vettel": [
+      2010,
+      2011,
+      2012,
+      2013
+    ],
+    "fernando-alonso": [
+      2005,
+      2006
+    ],
+    "kimi-raikkonen": [
+      2007
+    ],
+    "niki-lauda": [
+      1975,
+      1977,
+      1984
+    ],
+    "juan-manuel-fangio": [
+      1951,
+      1954,
+      1955,
+      1956,
+      1957
+    ],
+    "jim-clark": [
+      1963,
+      1965
+    ],
+    "jackie-stewart": [
+      1969,
+      1971,
+      1973
+    ],
+    "nelson-piquet": [
+      1981,
+      1983,
+      1987
+    ],
+    "nigel-mansell": [
+      1992
+    ],
+    "mika-hakkinen": [
+      1998,
+      1999
+    ],
+    "jenson-button": [
+      2009
+    ],
+    "nico-rosberg": [
+      2016
+    ],
+    "graham-hill": [
+      1962,
+      1968
+    ],
+    "emerson-fittipaldi": [
+      1972,
+      1974
+    ],
+    "jack-brabham": [
+      1959,
+      1960,
+      1966
+    ],
+    "alberto-ascari": [
+      1952,
+      1953
+    ],
+    "giuseppe-farina": [
+      1950
+    ],
+    "jochen-rindt": [
+      1970
+    ],
+    "mario-andretti": [
+      1978
+    ],
+    "alan-jones": [
+      1980
+    ],
+    "keke-rosberg": [
+      1982
+    ],
+    "damon-hill": [
+      1996
+    ],
+    "jacques-villeneuve": [
+      1997
+    ],
+    "charles-leclerc": [],
+    "lando-norris": [
+      2025
+    ]
+  },
+  "limitations": [
+    "FIA source is historical and does not validate later seasons.",
+    "Do not infer biography approval from this index.",
+    "Years describe World Drivers' Championships, not race victories or raw points."
+  ]
+}
