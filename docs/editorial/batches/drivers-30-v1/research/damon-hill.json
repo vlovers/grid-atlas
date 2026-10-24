@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,21 +19,42 @@
       "topic": "career_chronology",
       "en": "Damon Hill won the 1996 Formula 1 Drivers' World Championship with Williams.",
       "uk": "Деймон Гілл виграв чемпіонат світу Формули-1 серед пілотів 1996 року з Williams.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
+          "locator": "Paragraph beginning 'And yet when he duly took the driving title in 1996': eight victories in 16 races with Williams.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "damon-hill-brabham",
       "topic": "career_chronology",
       "en": "He made his Formula 1 race debut with Brabham in 1992.",
       "uk": "Він дебютував у перегонах Формули-1 з Brabham у 1992 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
+          "locator": "Paragraph beginning 'The same was true of Formula Three': 1992 Formula 1 debut with Brabham and two starts.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "damon-hill-jordan",
       "topic": "career_chronology",
       "en": "Hill won the 1998 Belgian Grand Prix for Jordan.",
       "uk": "Гілл виграв Гран-прі Бельгії 1998 року за Jordan.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
+          "locator": "Final career paragraph beginning 'With no top drives available': Jordan's first win at the 1998 Belgian Grand Prix.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
