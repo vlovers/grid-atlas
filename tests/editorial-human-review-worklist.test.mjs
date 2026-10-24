@@ -110,3 +110,32 @@ test('Markdown review export does not use HTML line-break tags for source links'
   assert.doesNotMatch(result.stdout,/<br\s*\/?\s*>/i);
   assert.match(result.stdout,/https:\/\//);
 });
+
+test('chapter-scoped review export contains only claims linked to that chapter',()=>{
+  const all=run(['--driver=jack-brabham']);
+  assert.equal(all.status,0,all.stderr);
+  const full=JSON.parse(all.stdout);
+  const chapter=full.items.flatMap(x=>x.linked_chapters).find(x=>x.chapter_id);
+  assert.ok(chapter,'expected linked biography chapter');
+  const scoped=run(['--driver=jack-brabham','--chapter='+chapter.chapter_id]);
+  assert.equal(scoped.status,0,scoped.stderr);
+  const result=JSON.parse(scoped.stdout);
+  assert.equal(result.chapter_filter,chapter.chapter_id);
+  assert.equal(result.driver_filter,'jack-brabham');
+  assert.ok(result.items.length>0);
+  assert.ok(result.items.length<=full.items.length);
+  assert.ok(result.items.every(x=>x.linked_chapters.some(ch=>ch.chapter_id===chapter.chapter_id)));
+  assert.ok(result.items.every(x=>x.publication_status==='unpublished'));
+  const markdown=run(['--driver=jack-brabham','--chapter='+chapter.chapter_id,'--format=markdown']);
+  assert.equal(markdown.status,0,markdown.stderr);
+  assert.match(markdown.stdout,/Human review checklist:/);
+});
+
+test('chapter filter fails closed for unknown chapter or absent driver',()=>{
+  const withoutDriver=run(['--chapter=opening']);
+  assert.notEqual(withoutDriver.status,0);
+  assert.match(withoutDriver.stderr,/requires --driver/);
+  const unknown=run(['--driver=jack-brabham','--chapter=definitely-not-a-real-chapter']);
+  assert.notEqual(unknown.status,0);
+  assert.match(unknown.stderr,/Unknown chapter/);
+});
