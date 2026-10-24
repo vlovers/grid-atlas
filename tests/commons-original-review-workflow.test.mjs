@@ -5,9 +5,12 @@ import test from 'node:test';
 const workflow = readFileSync('.github/workflows/commons-original-review.yml', 'utf8');
 const loader = readFileSync('scripts/preview-commons-originals.mjs', 'utf8');
 
-test('original photograph CI is deliberately manual and isolated from public media', () => {
+test('original photograph CI runs on exact evidence changes while staying isolated from public media', () => {
   assert.match(workflow, /workflow_dispatch:/);
-  assert.doesNotMatch(workflow, /^\s+push:|^\s+pull_request:/m);
+  assert.match(workflow, /push:\s*\n\s+paths:/);
+  assert.match(workflow, /docs\/media\/commons-original-evidence\.json/);
+  assert.match(workflow, /docs\/media\/verified-original-observations\.json/);
+  assert.doesNotMatch(workflow, /^\s+pull_request:/m);
   assert.match(workflow, /contents: read/);
   assert.match(workflow, /node scripts\/preview-commons-originals\.mjs/);
   assert.match(workflow, /actions\/upload-artifact@v4/);
