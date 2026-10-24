@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "keke-rosberg",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+    "title": "Keke Rosberg — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "keke-rosberg-champion",
+      "topic": "career_chronology",
+      "en": "Rosberg won the 1982 Formula 1 Drivers' World Championship with Williams.",
+      "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 1982 року з Williams.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "keke-rosberg-one-win",
+      "topic": "career_chronology",
+      "en": "He won just one championship Grand Prix during his title-winning 1982 season.",
+      "uk": "У своєму чемпіонському сезоні 1982 року він виграв лише один заліковий Гран-прі.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Attach precise per-claim source locator and independent publisher corroboration.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ]
+}
