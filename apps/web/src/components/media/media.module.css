@@ -29,7 +29,7 @@
   to { opacity: 1; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .image { animation: reviewed-image-appear .4s ease-out both; }
+  .image[data-loaded='true'] { animation: reviewed-image-appear .4s ease-out both; }
 }
 @media (prefers-reduced-motion: reduce), (forced-colors: active) {
   .image { animation: none; }
