@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Hall of Fame heading '1963, 1965'; paragraphs on seven 1963 wins and six 1965 wins with Lotus.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA Jim Clark retrospective, 1963 WDC and 1965 WDC entries: both titles for Lotus.",
+          "supports": true
         }
       ]
     },
@@ -38,6 +43,11 @@
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Paragraph beginning 'The public warmed to the shy champion': 1965 Indianapolis 500 win.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA retrospective, 1965 WDC entry: Indianapolis 500 victory and skipped Monaco to compete there.",
           "supports": true
         }
       ]
@@ -53,6 +63,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Paragraph beginning 'In 1958 Clark was given': promotion to Team Lotus in late 1960.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA retrospective, F1 GP debut at Zandvoort in 1960 entry: Lotus debut.",
+          "supports": true
         }
       ]
     },
@@ -66,6 +81,11 @@
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Paragraph beginning 'Over the next four seasons': seven 1963 championship race wins.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA retrospective, 1963 WDC entry: seven wins in ten championship races.",
           "supports": true
         }
       ]
@@ -81,6 +101,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Paragraph beginning 'In 1964 he was again deprived': six of ten wins in 1965.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA retrospective, 1965 WDC entry: six of ten championship races won.",
+          "supports": true
         }
       ]
     },
@@ -95,6 +120,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
           "locator": "Final biography paragraph: fatal Formula 2 accident at Hockenheim on 7 April 1968.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+          "locator": "FIA retrospective, Death at Hockenheim on 7 April 1968 entry: Formula 2 crash.",
+          "supports": true
         }
       ]
     }
@@ -106,5 +136,14 @@
     "Verify exact pinned F1DB identity and historical metrics.",
     "Seek independent corroboration outside the Formula 1 publisher group.",
     "Assign accountable human author and independent reviewer; do not publish automatically."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/50th-anniversary-tragic-death-jim-clark",
+      "title": "50th anniversary of the tragic death of Jim Clark",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

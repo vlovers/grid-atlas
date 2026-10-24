@@ -25,19 +25,29 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "Hall of Fame heading '1975, 1977, 1984'; 1975 Ferrari, 1977 comeback and 1984 McLaren paragraphs.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraphs 'With Ferrari he won...' and 'He was enticed back...' (1975/1977, 1979 exit, 1982 McLaren, 1984 title).",
+          "supports": true
         }
       ]
     },
     {
       "claim_id": "niki-lauda-context",
       "topic": "historical_context",
-      "en": "His 1976 Nürburgring crash and return at the Italian Grand Prix form a central chapter of his career.",
-      "uk": "Аварія на Нюрбургринзі 1976 року та повернення на Гран-прі Італії стали визначальним розділом його кар’єри.",
+      "en": "Lauda crashed at the Nürburgring in 1976 and returned to Formula 1 racing at the Italian Grand Prix that season.",
+      "uk": "Лауда потрапив в аварію на Нюрбургринзі у 1976 році та повернувся до перегонів Формули-1 на Гран-прі Італії того ж сезону.",
       "review_status": "needs_review",
       "evidence": [
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "1976 German Grand Prix crash paragraph and six-weeks-later Italian Grand Prix return paragraph.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraph 'With Ferrari he won...' and paragraph 'Despite being close to death...' (1976 crash and Italian GP return).",
           "supports": true
         }
       ]
@@ -53,6 +63,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "Paragraph beginning 'For 1973 he talked his way': joining Enzo Ferrari in 1974.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraph 'Born in Vienna in 1949': Ferrari signed Lauda for the 1974 season.",
+          "supports": true
         }
       ]
     },
@@ -66,6 +81,11 @@
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "Paragraph beginning 'Six weeks later': fourth place at 1976 Italian Grand Prix.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraph 'Despite being close to death': returned at 1976 Italian Grand Prix 40 days after crash.",
           "supports": true
         }
       ]
@@ -81,6 +101,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "Paragraph beginning 'Lauda Air': McLaren contract signed in 1982.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraph 'He was enticed back to the sport in 1982': joining McLaren.",
+          "supports": true
         }
       ]
     },
@@ -95,6 +120,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
           "locator": "Paragraph beginning 'In 1984 he won his third driving title': Alain Prost team-mate margin.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+          "locator": "FIA obituary, paragraph 'He was enticed back to the sport in 1982': 1984 title, Prost and half-point margin.",
+          "supports": true
         }
       ]
     }
@@ -106,5 +136,14 @@
     "Verify exact pinned F1DB identity and historical metrics.",
     "Seek independent corroboration outside the Formula 1 publisher group.",
     "Assign accountable human author and independent reviewer; do not publish automatically."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/fia-and-motorsport-world-mourn-passing-f1-legend-niki-lauda",
+      "title": "FIA and motorsport world mourn passing of F1 legend Niki Lauda",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

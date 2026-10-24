@@ -39,6 +39,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
           "locator": "Hall of Fame 'McLaren Driver' section: third at 2024 Australian GP and first victory at Miami.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-norris-takes-maiden-f1-win-miami-ahead-verstappen-and-leclerc",
+          "locator": "FIA 2024 Miami GP race report, opening paragraph: first Formula 1 win in McLaren.",
+          "supports": true
         }
       ]
     },
@@ -53,6 +58,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
           "locator": "Hall of Fame heading '2025' and 'Champion' section: Abu Dhabi finale and 2025 world title.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+          "locator": "FIA 7 December 2025 Abu Dhabi GP report, opening paragraph: 2025 Drivers' World Championship for Norris; McLaren team.",
+          "supports": true
         }
       ]
     }
@@ -64,5 +74,21 @@
     "Reconcile identity with pinned F1DB before use.",
     "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-norris-takes-maiden-f1-win-miami-ahead-verstappen-and-leclerc",
+      "title": "F1 - Norris takes maiden F1 win in Miami",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+      "title": "F1 - Norris crowned FIA Formula One World Champion",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
