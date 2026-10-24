@@ -1,33 +1,69 @@
-# Content Factory V1 — first 30-driver research batch
+# Content Factory V1 — 30-driver research and evidence queue
 
-This batch is an **unpublished research queue**, not 30 completed biographies. It reuses the existing five bilingual dossiers from `docs/editorial/releases/v1/manifest.json` instead of duplicating them.
+**Research only.** This is not a release of 30 complete biographies. The first five drivers reuse their existing EN/UK canonical dossiers; the remaining 25 have paired EN/UK claim cards. None is approved or published by this batch.
 
-## Scope
+## Inventory and commands
 
-- `drivers-30-v1.json`: 30 proposed driver IDs, five existing pilots plus 25 research candidates.
-- `scripts/editorial-content-coverage.mjs`: read-only report of actual dossier presence, claim counts, source counts, review decisions and EN/UK claim-ID parity.
-- No fictional citations, AI-generated reviewer decisions, auto-published text, unlicensed images, or new competing editorial CMS.
+- `drivers-30-v1.json`: exactly 30 provisional identities (5 existing pilots, 25 additional candidates).
+- `research/*.json`: 25 unpublished paired-language research cards. Each claim has stable ID, EN/UK statement and `needs_review` status.
+- `championship-reference.json`: championship-year lookup, **not** an independently verified identity mapping or permission to publish.
+- `scripts/editorial-batch-model.mjs`: pure structural and claim-evidence validation.
+- `scripts/editorial-content-coverage.mjs`: authoritative offline coverage inventory including both canonical pilots **and** all 25 research cards.
+- `scripts/editorial-research-batch-audit.mjs` and `scripts/editorial-evidence-readiness.mjs`: additional diagnostic reports; neither replaces publication review.
+- `tests/editorial-content-factory.test.mjs`: structural, unsafe URL, evidence and publication-gate regression tests.
 
-Run from the repository root:
+Run from repository root with Node 24+:
 
 ```sh
 node scripts/editorial-content-coverage.mjs > /tmp/grid-atlas-content-coverage.json
+node scripts/editorial-content-coverage.mjs --require-evidence > /tmp/grid-atlas-content-evidence.json
+node --test tests/editorial-content-factory.test.mjs
 ```
 
-The report is intentionally conservative: an existing draft is not a verified identity, and a sourced claim is not an independently approved claim. `identity_verified` and `ready_for_publication` remain false until separate pinned-archive and human-review checks.
+The normal coverage command **must** fail on missing files, malformed bilingual cards, duplicate claims, or publication-gate violations. The `--require-evidence` option is intentionally stricter and **currently expected to fail** until every research claim has precise claim-level evidence. It must never be bypassed to suggest editorial readiness.
 
-## Parallel research lanes
+## Evidence tiers
 
-1. **Existing pilots (5):** Senna, Prost, Schumacher, Hamilton, Verstappen. Reopen and verify exact evidence passages; expand gaps only with traceable sources.
-2. **Champions across eras (20):** develop EN/UK claim-linked drafts in independently reviewable batches, checking provisional slugs against pinned F1DB before dossier creation.
-3. **Contemporary profiles (5):** distinguish dated archive coverage from live 2026 results; do not invent current season outcomes.
+1. **Candidate:** ID is provisional until checked against pinned F1DB. A source URL alone is not identity proof.
+2. **Paired research claim:** EN/UK text exists. This does not prove that either language has been independently reviewed.
+3. **Claim-linked evidence:** `claim.evidence[]` has an HTTPS `source_url`, a human-readable **specific locator** (paragraph/section/row) and `supports: true`. The audit validates the *shape*, not the live page or semantic correctness.
+4. **Source corroboration:** An independent publisher group supports the claim, with date, attribution, conflict checks and precise passage recorded.
+5. **Editorial review:** An accountable author and a different human reviewer approve the exact revision of separate EN and UK dossiers using the existing release review sidecars.
+6. **Publication:** Only the established approved-export and operator-controlled PostgreSQL publishing pipeline can publish. No research card is read by the public article renderer.
 
-Each proposed narrative claim needs source URL, title, publisher, exact locator, access date and scope. Historical interpretations need attribution and independent corroboration. EN and UK claims share stable IDs, but require separate language review.
+The evidence schema used by the research cards is:
 
-## Completion gates
+```json
+{
+  "claim_id": "driver-event",
+  "topic": "career_chronology",
+  "en": "Sourced English statement.",
+  "uk": "Підтверджене українське твердження.",
+  "review_status": "needs_review",
+  "evidence": [{
+    "source_url": "https://example.org/primary-source",
+    "locator": "Specific heading, result row or identifiable paragraph",
+    "supports": true
+  }]
+}
+```
 
-- Batch research: source-linked EN/UK dossiers, exact IDs, review sidecars with null decisions, structural validation.
-- Publication: a **different human reviewer** verifies the precise source passages and signs the exact revision; then the existing approved export and operator-controlled PostgreSQL publisher may be used.
-- Missing source, unknown identity or disputed assertion stays explicitly blocked, not filled with generated text.
+This is an *intermediate* card format, not a competing canonical dossier schema. The `supports` field means the research author linked a passage; it is **not** a reviewer sign-off.
 
-Related: issue #107 and the existing approved editorial release pipeline.
+## Current evidence audit notes (2026-10-24)
+
+Eight cards have newly inspected Formula 1 Hall of Fame claim-level locators: Alonso, Piquet, Mansell, Brabham, Farina, Rindt, Villeneuve and Norris. The remaining 17 cards still require claim-level passages, and **all 25** require independent corroboration, pinned-F1DB identity reconciliation and separate human EN/UK review.
+
+**URL caveat:** the live Nigel Mansell Hall of Fame page is served at a URL containing `drivers-hall-of-fame-john-surtees`, despite its displayed title and text being about Mansell. The card retains the previously recorded `nigel-mansell` slug; verify the canonical address and stable archive link before publication. Do not infer a correct page from the URL slug alone.
+
+Do not import editorial photos, invent DRS/circuit data, infer 2026 season outcomes from 2025 records, or treat a green structural CI job as a human approval.
+
+## Next substantive batch
+
+- Resolve URL/title mismatches and reopen **every** research source.
+- Add precise claim-level locators to the remaining cards and independent corroboration to all 25.
+- Reconcile driver IDs with the pinned F1DB and build proper EN/UK canonical dossier pairs with null review sidecars.
+- Expand narrative chapters from sourced claims only, with explicit section-to-claim linkage.
+- Obtain independent human review; only then consider an approved release.
+
+Related: issue #107, `docs/editorial/APPROVED_RELEASE_PIPELINE.md` and `docs/editorial/PUBLICATION_REVIEW.md`.
