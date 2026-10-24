@@ -26,6 +26,9 @@ on:
       - 'scripts/prepare_circuit_editorial_candidate.py'
       - 'tests/test_prepare_circuit_editorial_candidate.py'
       - 'scripts/render_circuit_editorial_preview.py'
+      - 'scripts/audit_circuit_claim_worklist.py'
+      - 'tests/test_audit_circuit_claim_worklist.py'
+      - 'docs/editorial/batches/circuits-5-claim-review-worklist-20261025.json'
       - 'tests/test_render_circuit_editorial_preview.py'
       - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
       - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
@@ -56,6 +59,9 @@ on:
       - 'scripts/prepare_circuit_editorial_candidate.py'
       - 'tests/test_prepare_circuit_editorial_candidate.py'
       - 'scripts/render_circuit_editorial_preview.py'
+      - 'scripts/audit_circuit_claim_worklist.py'
+      - 'tests/test_audit_circuit_claim_worklist.py'
+      - 'docs/editorial/batches/circuits-5-claim-review-worklist-20261025.json'
       - 'tests/test_render_circuit_editorial_preview.py'
       - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
       - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
@@ -119,6 +125,8 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_prepare_circuit_editorial_candidate.py' -v
           python3 -m unittest discover -s tests -p 'test_render_circuit_editorial_preview.py' -v
+          python3 -m unittest discover -s tests -p 'test_audit_circuit_claim_worklist.py' -v
+          python3 scripts/audit_circuit_claim_worklist.py
           python3 scripts/prepare_circuit_editorial_candidate.py --output /tmp/grid-atlas-circuit-editorial-drafts.json
           python3 scripts/render_circuit_editorial_preview.py --output /tmp/grid-atlas-circuit-editorial-preview.html
       - name: Upload unpublished circuit editorial candidate
