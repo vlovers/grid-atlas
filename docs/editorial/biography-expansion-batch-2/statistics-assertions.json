@@ -1,0 +1,4961 @@
+{
+  "schema_version": 1,
+  "release": "v2026.17.0",
+  "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+  "publication_allowed": false,
+  "assertions": [
+    {
+      "id": "juan-manuel-fangio-career-totals",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-last-season",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "juan-manuel-fangio"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          24,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-title-years",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-last-season",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1951
+        ],
+        [
+          1954
+        ],
+        [
+          1955
+        ],
+        [
+          1956
+        ],
+        [
+          1957
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1950-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1950
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1950-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1950,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1951-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1951
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1951-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1951,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1951-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1951,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          8
+        ],
+        [
+          11
+        ],
+        [
+          15
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1953-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1953
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1953-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1953,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 1
+    },
+    {
+      "id": "juan-manuel-fangio-1953-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1953,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          32
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1954
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1954,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 6
+    },
+    {
+      "id": "juan-manuel-fangio-1954-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1954,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          33
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1955-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-mercedes-1955"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1955
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1955-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-mercedes-1955"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1955,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "juan-manuel-fangio-1956-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1956
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1956-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1956,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1957-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1957
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1957-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": 1957,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "juan-manuel-fangio-1951-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 11,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "sharedCar"
+      ],
+      "expected": [
+        [
+          1,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-argentina-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 33,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "maserati"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-belgium-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 35,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "maserati"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 36,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "mercedes"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1956-italy-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 56,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber",
+        "sharedCar"
+      ],
+      "expected": [
+        [
+          2,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-birth",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "juan-manuel-fangio"
+      },
+      "select": [
+        "dateOfBirth"
+      ],
+      "expected": [
+        [
+          "1911-06-24"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-last-record-year",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "year": [
+          1959,
+          1960,
+          1961,
+          1962,
+          1963,
+          1964,
+          1965,
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "select": "count",
+      "expected": 0
+    },
+    {
+      "id": "jim-clark-career-totals",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "jim-clark"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          25,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-title-years",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1963
+        ],
+        [
+          1965
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1962-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1962
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1962-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1962,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "jim-clark-1962-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1962,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          105
+        ],
+        [
+          107
+        ],
+        [
+          110
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1963-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1963"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1963
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1963-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1963"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1963,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 7
+    },
+    {
+      "id": "jim-clark-1965-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1965
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1965-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1965,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 6
+    },
+    {
+      "id": "jim-clark-1965-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1965,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          132
+        ],
+        [
+          134
+        ],
+        [
+          135
+        ],
+        [
+          136
+        ],
+        [
+          137
+        ],
+        [
+          138
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1966-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1966
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1966-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1966,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 1
+    },
+    {
+      "id": "jim-clark-1966-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1966,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          149
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1967
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "year": 1967,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "jim-clark-all-win-constructors",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-lotus-entry"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "positionNumber": 1
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-netherlands-jim-clark",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-49",
+        "jim-clark-b2-49"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "raceId": 153,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1968-south-africa-jim-clark",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "raceId": 162,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-monaco-absence",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jim-clark",
+        "raceId": 133
+      },
+      "select": "count",
+      "expected": 0
+    },
+    {
+      "id": "jim-clark-1967-hill-lotus",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1967,
+        "constructorId": "lotus"
+      },
+      "select": "count",
+      "expected": 11
+    },
+    {
+      "id": "graham-hill-career-totals",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "graham-hill"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-title-years",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1962
+        ],
+        [
+          1968
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1962-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1962
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1962-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1962,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "graham-hill-1962-winning-rounds",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1962,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          103
+        ],
+        [
+          108
+        ],
+        [
+          109
+        ],
+        [
+          111
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1963-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1963
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1963-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1963,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "graham-hill-1964-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1964
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1964-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1964,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "graham-hill-1965-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1965
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1965-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1965,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "graham-hill-1968-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1968
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1968-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1968,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "graham-hill-1968-winning-rounds",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1968,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          163
+        ],
+        [
+          164
+        ],
+        [
+          173
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1958-monaco-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-lotus-brm"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "raceId": 66
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1960-brm",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-lotus-brm"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "year": 1960,
+        "constructorId": "brm"
+      },
+      "select": "count",
+      "expected": 8
+    },
+    {
+      "id": "graham-hill-five-monaco-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-monaco"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "positionNumber": 1,
+        "raceId": [
+          112,
+          122,
+          133,
+          164,
+          176
+        ]
+      },
+      "select": "count",
+      "expected": 5
+    },
+    {
+      "id": "graham-hill-no-later-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-injury"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "positionNumber": 1,
+        "year": [
+          1970,
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "select": "count",
+      "expected": 0
+    },
+    {
+      "id": "jack-brabham-career-totals",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "jack-brabham"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          14,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-title-years",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jack-brabham",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1959
+        ],
+        [
+          1960
+        ],
+        [
+          1966
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1959-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1959
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1959-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1959,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "jack-brabham-1959-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1959,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          76
+        ],
+        [
+          80
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1960-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1960
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1960-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1960,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "jack-brabham-1960-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1960,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          88
+        ],
+        [
+          89
+        ],
+        [
+          90
+        ],
+        [
+          91
+        ],
+        [
+          92
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1966-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1966
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1966-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1966,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "jack-brabham-1966-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1966,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          144
+        ],
+        [
+          145
+        ],
+        [
+          146
+        ],
+        [
+          147
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1967-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-hulme"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1967
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1967-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-hulme"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "year": 1967,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "jack-brabham-1955-great-britain-jack-brabham",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-cooper"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "raceId": 47
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "cooper"
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1964-france-dan-gurney",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "dan-gurney",
+        "raceId": 125,
+        "positionNumber": 1
+      },
+      "select": [
+        "driverId",
+        "constructorId",
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          "dan-gurney",
+          "brabham",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1964-mexico-dan-gurney",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "dan-gurney",
+        "raceId": 131,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "brabham"
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1970-south-africa-jack-brabham",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jack-brabham",
+        "raceId": 185,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "brabham"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-career-totals",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "jackie-stewart"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          27,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-title-years",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1969
+        ],
+        [
+          1971
+        ],
+        [
+          1973
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1965-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1965
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1965-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1965,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 1
+    },
+    {
+      "id": "jackie-stewart-1965-winning-rounds",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1965,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          139
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1968-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1968
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1968-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1968,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "jackie-stewart-1968-winning-rounds",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1968,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          166
+        ],
+        [
+          169
+        ],
+        [
+          172
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1969-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1969"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1969
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1969-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1969"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1969,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 6
+    },
+    {
+      "id": "jackie-stewart-1971-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1971
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1971-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1971,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 6
+    },
+    {
+      "id": "jackie-stewart-1973-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1973
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "year": 1973,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "jackie-stewart-1971-united-states-francois-cevert",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "francois-cevert",
+        "raceId": 208,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "tyrrell"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-united-states-jackie-stewart",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-cevert"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "raceId": 235
+      },
+      "select": [
+        "positionText",
+        "laps"
+      ],
+      "expected": [
+        [
+          "DNS",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1999-europe-johnny-herbert",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-team-owner"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "johnny-herbert",
+        "raceId": 644,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "stewart"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-stewart-first-season",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-team-owner"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "constructorId": "stewart",
+        "year": [
+          1950,
+          1951,
+          1952,
+          1953,
+          1954,
+          1955,
+          1956,
+          1957,
+          1958,
+          1959,
+          1960,
+          1961,
+          1962,
+          1963,
+          1964,
+          1965,
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986,
+          1987,
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996
+        ]
+      },
+      "select": "count",
+      "expected": 0
+    },
+    {
+      "id": "emerson-fittipaldi-career-totals",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-legacy"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "emerson-fittipaldi"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-title-years",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-legacy"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1972
+        ],
+        [
+          1974
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1972-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1972
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1972-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1972,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "emerson-fittipaldi-1972-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1972,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          211
+        ],
+        [
+          213
+        ],
+        [
+          215
+        ],
+        [
+          217
+        ],
+        [
+          218
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1973-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-peterson"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1973
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1973-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-peterson"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1973,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "emerson-fittipaldi-1974-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1974
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1974-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1974,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "emerson-fittipaldi-1974-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1974,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          237
+        ],
+        [
+          240
+        ],
+        [
+          249
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1975-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1975
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1975-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1975,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "emerson-fittipaldi-1975-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "year": 1975,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          251
+        ],
+        [
+          260
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1970-great-britain-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "raceId": 191
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1970-united-states-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "raceId": 196,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1974-united-states-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "raceId": 250,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1978-brazil-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-copersucar"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "raceId": 299,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          2,
+          "fittipaldi"
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1980-united-states-west-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1980"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "emerson-fittipaldi",
+        "raceId": 332,
+        "positionNumber": 3
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-career-totals",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985",
+        "niki-lauda-b2-legacy"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "niki-lauda"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          25,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-title-years",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985",
+        "niki-lauda-b2-legacy"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1975
+        ],
+        [
+          1977
+        ],
+        [
+          1984
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1975-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1975"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1975
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1975-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1975"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1975,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "niki-lauda-1977-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1977
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1977-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1977,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "niki-lauda-1978-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1978
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1978-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1978,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "niki-lauda-1978-winning-rounds",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1978,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          305
+        ],
+        [
+          311
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1982-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1982
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1982-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1982,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "niki-lauda-1982-winning-rounds",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1982,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          360
+        ],
+        [
+          367
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1984
+      },
+      "select": [
+        "positionNumber",
+        "points"
+      ],
+      "expected": [
+        [
+          1,
+          72
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1984,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "niki-lauda-1971-austria-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 205
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "march"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-argentina-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 236,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          2,
+          "ferrari"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-spain-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 239,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-netherlands-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 243,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-italy-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-monza"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 277,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-japan-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 280
+      },
+      "select": [
+        "positionText"
+      ],
+      "expected": [
+        [
+          "DNF"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-portugal-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 404,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-portugal-alain-prost",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "alain-prost",
+        "raceId": 404,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1985-netherlands-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "niki-lauda",
+        "raceId": 415,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-prost-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "alain-prost",
+        "year": 1984
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          71.5
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-hunt-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "james-hunt",
+        "year": 1976
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          69
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-lauda-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "niki-lauda",
+        "year": 1976
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          68
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-career-totals",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-legacy"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "nigel-mansell"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          31,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-title-years",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-legacy"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1992
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1985-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1985
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1985-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1985,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "nigel-mansell-1985-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1985,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          418
+        ],
+        [
+          419
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1986
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1986,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "nigel-mansell-1987-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1987
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1987-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1987,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 6
+    },
+    {
+      "id": "nigel-mansell-1989-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1989
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1989-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1989,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "nigel-mansell-1989-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1989,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          469
+        ],
+        [
+          478
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1991-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1991
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1991-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1991,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "nigel-mansell-1991-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1991,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          507
+        ],
+        [
+          508
+        ],
+        [
+          509
+        ],
+        [
+          512
+        ],
+        [
+          514
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1992
+      },
+      "select": [
+        "positionNumber",
+        "points"
+      ],
+      "expected": [
+        [
+          1,
+          108
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1992,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 9
+    },
+    {
+      "id": "nigel-mansell-1980-austria-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-early"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "raceId": 338
+      },
+      "select": [
+        "constructorId"
+      ],
+      "expected": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1981-belgium-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-first-podium"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "raceId": 347,
+        "positionNumber": 3
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-australia-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "raceId": 436
+      },
+      "select": [
+        "positionText",
+        "reasonRetired"
+      ],
+      "expected": [
+        [
+          "DNF",
+          "Tyre"
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1987-great-britain-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "raceId": 443,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1994-australia-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "raceId": 564,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-patrese-points",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "riccardo-patrese",
+        "year": 1992
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          56
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1994-four-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1994
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          555
+        ],
+        [
+          562
+        ],
+        [
+          563
+        ],
+        [
+          564
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1995-two-starts",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-mclaren"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "nigel-mansell",
+        "year": 1995
+      },
+      "select": "count",
+      "expected": 2
+    },
+    {
+      "id": "mika-hakkinen-career-totals",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001",
+        "mika-hakkinen-b2-legacy"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "mika-hakkinen"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          20,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-title-years",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001",
+        "mika-hakkinen-b2-legacy"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          1998
+        ],
+        [
+          1999
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1998
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1998,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 8
+    },
+    {
+      "id": "mika-hakkinen-1999-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1999
+      },
+      "select": [
+        "positionNumber",
+        "points"
+      ],
+      "expected": [
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1999,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "mika-hakkinen-2000-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 2000
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2000-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 2000,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "mika-hakkinen-2001-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 2001
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2001-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 2001,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 2
+    },
+    {
+      "id": "mika-hakkinen-2001-winning-rounds",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 2001,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          674
+        ],
+        [
+          679
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-portugal"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 547,
+        "positionNumber": 3
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1997-europe-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-first-win"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 614,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 630,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 646,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2000-belgium-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 659,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2001-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "raceId": 680,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-qualifying",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-portugal"
+      ],
+      "table": "races-qualifying-results",
+      "where": {
+        "raceId": 546,
+        "driverId": [
+          "mika-hakkinen",
+          "ayrton-senna"
+        ]
+      },
+      "select": [
+        "driverId",
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          "mika-hakkinen",
+          3
+        ],
+        [
+          "ayrton-senna",
+          4
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-irvine-points",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "eddie-irvine",
+        "year": 1999
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          74
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-three-mclaren-rounds",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-test-role"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1993
+      },
+      "select": [
+        "raceId",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          546,
+          "mclaren"
+        ],
+        [
+          547,
+          "mclaren"
+        ],
+        [
+          548,
+          "mclaren"
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1996-return",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-adelaide"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1996
+      },
+      "select": "count",
+      "expected": 16
+    },
+    {
+      "id": "sebastian-vettel-career-totals",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "drivers",
+      "where": {
+        "id": "sebastian-vettel"
+      },
+      "select": [
+        "totalRaceWins",
+        "totalChampionshipWins"
+      ],
+      "expected": [
+        [
+          53,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-title-years",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "championshipWon": true
+      },
+      "select": [
+        "year"
+      ],
+      "expected": [
+        [
+          2010
+        ],
+        [
+          2011
+        ],
+        [
+          2012
+        ],
+        [
+          2013
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2009-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2009
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2009-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2009,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 4
+    },
+    {
+      "id": "sebastian-vettel-2009-winning-rounds",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2009,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          806
+        ],
+        [
+          811
+        ],
+        [
+          818
+        ],
+        [
+          820
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2010
+      },
+      "select": [
+        "positionNumber",
+        "points"
+      ],
+      "expected": [
+        [
+          1,
+          256
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2010,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "sebastian-vettel-2011-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2011"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2011
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2011-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2011"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2011,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 11
+    },
+    {
+      "id": "sebastian-vettel-2012-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2012
+      },
+      "select": [
+        "positionNumber",
+        "points"
+      ],
+      "expected": [
+        [
+          1,
+          281
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2012,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "sebastian-vettel-2013-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2013"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2013
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2013-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2013"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2013,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 13
+    },
+    {
+      "id": "sebastian-vettel-2014-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2014
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2014-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2014,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 0
+    },
+    {
+      "id": "sebastian-vettel-2015-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2015
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2015-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2015,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "sebastian-vettel-2015-winning-rounds",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2015,
+        "positionNumber": 1
+      },
+      "select": [
+        "raceId"
+      ],
+      "expected": [
+        [
+          918
+        ],
+        [
+          926
+        ],
+        [
+          929
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2017-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2017
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2017-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2017,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "sebastian-vettel-2018-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2018
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2018-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2018,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 5
+    },
+    {
+      "id": "sebastian-vettel-2007-united-states-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-early"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 775,
+        "positionNumber": 8
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          8,
+          "bmw-sauber"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2007-china-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-toro-rosso"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 784,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          4,
+          "toro-rosso"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2008-italy-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-toro-rosso"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 799,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "qualificationPositionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          1,
+          "toro-rosso"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-abu-dhabi-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 839,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-brazil-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 878,
+        "positionNumber": 6
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-brazil-fernando-alonso",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "fernando-alonso",
+        "raceId": 878,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2019-singapore-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 1012,
+        "positionNumber": 1
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          1,
+          "ferrari"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2021-azerbaijan-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-aston"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 1041,
+        "positionNumber": 2
+      },
+      "select": [
+        "positionNumber",
+        "constructorId"
+      ],
+      "expected": [
+        [
+          2,
+          "aston-martin"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2022-abu-dhabi-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "raceId": 1079,
+        "positionNumber": 10
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          10
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-alonso-points",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "fernando-alonso",
+        "year": 2010
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          252
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-no-earlier-lead",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "races-driver-standings",
+      "where": {
+        "driverId": "sebastian-vettel",
+        "year": 2010,
+        "round": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "positionNumber": 1
+      },
+      "select": "count",
+      "expected": 0
+    },
+    {
+      "id": "sebastian-vettel-2012-alonso-points",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "seasons-driver-standings",
+      "where": {
+        "driverId": "fernando-alonso",
+        "year": 2012
+      },
+      "select": [
+        "points"
+      ],
+      "expected": [
+        [
+          278
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2014-ricciardo-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "daniel-ricciardo",
+        "year": 2014,
+        "positionNumber": 1
+      },
+      "select": "distinct_races",
+      "expected": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1958-argentina-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 65,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1958-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 70,
+        "positionNumber": 4
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1951-france-both-entries",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "juan-manuel-fangio",
+        "raceId": 11
+      },
+      "select": [
+        "positionNumber",
+        "sharedCar"
+      ],
+      "expected": [
+        [
+          1,
+          true
+        ],
+        [
+          11,
+          false
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-canada-jackie-stewart",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-cevert"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "jackie-stewart",
+        "raceId": 234,
+        "positionNumber": 5
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1975-monaco-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-ending"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "raceId": 255
+      },
+      "select": [
+        "positionText",
+        "laps"
+      ],
+      "expected": [
+        [
+          "DNQ",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1975-brazil-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-ending"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "graham-hill",
+        "raceId": 252,
+        "positionNumber": 12
+      },
+      "select": [
+        "positionNumber"
+      ],
+      "expected": [
+        [
+          12
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1995-podiums-source-correction",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-adelaide"
+      ],
+      "table": "races-race-results",
+      "where": {
+        "driverId": "mika-hakkinen",
+        "year": 1995,
+        "positionNumber": [
+          1,
+          2,
+          3
+        ]
+      },
+      "select": "distinct_races",
+      "expected": 2
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "brabham-sahof": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "brabham-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "f1db": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "brabham-tauranac": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "brabham-imeche": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    }
+  },
+  "claim_reviews": {
+    "jack-brabham-b2-australia": null,
+    "jack-brabham-b2-cooper": null,
+    "jack-brabham-b2-1959": null,
+    "jack-brabham-b2-1960": null,
+    "jack-brabham-b2-tauranac": null,
+    "jack-brabham-b2-gurney": null,
+    "jack-brabham-b2-engineering": null,
+    "jack-brabham-b2-1966": null,
+    "jack-brabham-b2-hulme": null,
+    "jack-brabham-b2-style": null,
+    "jack-brabham-b2-1970": null,
+    "jack-brabham-b2-legacy": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [],
+  "media": [],
+  "publication": null
+}

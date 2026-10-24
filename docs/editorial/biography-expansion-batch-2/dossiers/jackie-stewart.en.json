@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "driver_id": "jackie-stewart",
+  "locale": "en",
+  "title": "Jackie Stewart — winning while changing the risk",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "stewart-archive",
+      "source_url": "https://www.duffyarchive.com/portrait/jackie-stewart/",
+      "title": "Jackie Stewart — 1966",
+      "publisher": "The Duffy Archive",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "duffy"
+    },
+    {
+      "source_id": "stewart-rad",
+      "source_url": "https://www.raceagainstdementia.com/about-us/our-history",
+      "title": "Our History",
+      "publisher": "Race Against Dementia",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "race-against-dementia"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "stewart-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+      "title": "Jackie Stewart — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "stewart-safety",
+      "source_url": "https://www.racingarchives.org/journal-of-motorsports-culture-history/the-crusading-days-of-jackie-stewart-evaluating-the-development-of-safety-in-motor-racing-during-the-1960s/",
+      "title": "The Crusading Days of Jackie Stewart: Evaluating the Development of Safety in Motor Racing During the 1960s",
+      "publisher": "International Motor Racing Research Center",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "imrrc"
+    },
+    {
+      "source_id": "stewart-rolex",
+      "source_url": "https://www.rolex.com/en-us/rolex-family/motor-sport/jackie-stewart",
+      "title": "Jackie Stewart — extraordinary track record",
+      "publisher": "Rolex",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "rolex"
+    },
+    {
+      "source_id": "stewart-ukdri",
+      "source_url": "https://www.ukdri.ac.uk/partners/race-against-dementia",
+      "title": "Race Against Dementia",
+      "publisher": "UK Dementia Research Institute",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ukdri"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "jackie-stewart-b2-beginnings",
+      "topic": "early_career",
+      "statement": "Jackie Stewart grew up in a family connected with cars and worked in his father’s garage after leaving school. Undiagnosed dyslexia had made formal education difficult. Racing opened another route: an opportunity to test cars at Oulton Park preceded the Formula 3 career that brought him to the attention of Formula 1 teams. The Duffy Archive places that Formula 3 breakthrough in 1964.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-archive",
+          "locator": "Biography: school, garage, Oulton Park and 1964 Formula 3/Snetterton",
+          "supports": true
+        },
+        {
+          "source_id": "stewart-rad",
+          "locator": "Jackie’s story: school and undiagnosed dyslexia",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-brm",
+      "topic": "key_events",
+      "statement": "He joined BRM for the 1965 world championship and won the Italian Grand Prix in his first season. Third place in the final standings put him behind champion Jim Clark and BRM team-mate Graham Hill.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1965 first season, Italy first win and final standings; exact driverId/id=jackie-stewart; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-1968",
+      "topic": "teams_seasons",
+      "statement": "After three seasons with BRM, Stewart joined Ken Tyrrell’s Formula 1 effort in 1968, driving a Matra. He won in the Netherlands, Germany and the United States and finished runner-up to Graham Hill. The constructor distinction matters: Tyrrell was running the programme, but Matra was the name of the car that produced Stewart’s first championship challenge with him.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1965–1967 BRM results; 1968 Matra wins and final classification; exact driverId/id=jackie-stewart; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "stewart-hall",
+          "locator": "Move to Ken Tyrrell in 1968",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-1969",
+      "topic": "championships",
+      "statement": "The first title followed in 1969 with six victories in a Matra. Jacky Ickx finished second in the championship. Stewart’s winning rounds included Monaco, France and Britain as well as the opening South African race.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1969 six wins and final driver standings; exact driverId/id=jackie-stewart; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-1971",
+      "topic": "championships",
+      "statement": "By his second title in 1971 Stewart was driving a Tyrrell. He won six Grands Prix that season, while team-mate François Cevert took his first victory in the United States. Their cars now carried Tyrrell’s name: the partnership that had delivered Stewart’s first title with a Matra had developed into a championship-winning constructor in its own right.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1971 six wins/title; francois-cevert US victory with constructorId=tyrrell; exact driverId/id=jackie-stewart; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-1973",
+      "topic": "championships",
+      "statement": "Emerson Fittipaldi won the 1972 championship; Stewart regained it in 1973 with five victories. Fittipaldi and Ronnie Peterson, both driving Lotus, followed him in the final table. The third title was thus won against a new championship-winning generation, while Stewart’s own record of 27 Grand Prix wins was completed before his retirement.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1972/1973 final standings; 1973 five wins; totalRaceWins=27; exact driverId/id=jackie-stewart; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-spa",
+      "topic": "key_events",
+      "statement": "An accident at Spa in 1966 exposed Stewart to the consequences of inadequate rescue arrangements. The International Motor Racing Research Center’s historical study places the episode within an existing safety campaign and the work of the Grand Prix Drivers’ Association. Stewart became a powerful advocate, but the changes should not be presented as the invention or accomplishment of one man alone.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-safety",
+          "locator": "GPDA formation, circuit-owner economics and 1966 Spa accident; Louis Stanley’s 24 June 1966 letter",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-risk",
+      "topic": "significance",
+      "statement": "His 1968 German Grand Prix victory in rain and fog is often used to illustrate the distinction between competitive skill and accepting avoidable danger. In Formula 1’s account Stewart links that performance to the credibility of his demands for safer circuits. Winning under difficult conditions did not mean that he believed those conditions, or the rescue provisions around them, were acceptable.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-hall",
+          "locator": "Safety campaign and Stewart’s recollection of the 1968 Nürburgring victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-style",
+      "topic": "driving_style",
+      "statement": "Rolex’s long-standing profile describes Stewart’s driving as smooth and strategically astute. That reputation coexisted with the speed he showed in the rain and fog at the Nürburgring in 1968. His advocacy for safer racing continued alongside winning performances in difficult conditions, rather than beginning only after he had stopped competing.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-rolex",
+          "locator": "Extraordinary track record: smooth style, strategic acuity; Testimonee since 1968",
+          "supports": true
+        },
+        {
+          "source_id": "stewart-hall",
+          "locator": "Safety campaign and the 1968 German GP in rain/fog while still actively racing",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1968 German GP win, driverId=jackie-stewart; active championship seasons through 1973",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-cevert",
+      "topic": "key_events",
+      "statement": "Cevert was killed during practice for the 1973 United States Grand Prix, which had been intended as Stewart’s final event. Tyrrell withdrew, and Stewart’s driving career ended without a final race start there.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-hall",
+          "locator": "1973 Cevert death, intended last race and team withdrawal",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "f1db-races-race-results.json: 1973 United States, driverId=jackie-stewart, positionText=DNS and laps=null; the entry exists but is not a race start",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-team-owner",
+      "topic": "teams_seasons",
+      "statement": "Stewart later returned to team ownership with his son Paul. Stewart Grand Prix entered Formula 1 in 1997, and Johnny Herbert won the 1999 European Grand Prix for the constructor.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-rad",
+          "locator": "Jackie’s story: Paul Stewart Racing and Stewart Grand Prix",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1999 European GP: constructorId=stewart; 1997 first Stewart constructor results; exact driverId/id=johnny-herbert; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jackie-stewart-b2-charity",
+      "topic": "significance",
+      "statement": "Stewart founded Race Against Dementia in 2016 after his wife Helen’s diagnosis. The charity funds research and works with institutions including the UK Dementia Research Institute. Its programmes draw on methods of collaboration and performance developed in motorsport. His later public role thus extends from racing and safety advocacy into support for medical research.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "stewart-rad",
+          "locator": "Founding in 2016 following Helen’s diagnosis",
+          "supports": true
+        },
+        {
+          "source_id": "stewart-ukdri",
+          "locator": "About Race Against Dementia and partnership",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "A route through the family garage",
+      "claim_ids": [
+        "jackie-stewart-b2-beginnings",
+        "jackie-stewart-b2-brm"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Ken Tyrrell, Matra and the first crown",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-1969"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Two titles in Tyrrell cars",
+      "claim_ids": [
+        "jackie-stewart-b2-1971",
+        "jackie-stewart-b2-1973"
+      ]
+    },
+    {
+      "section_id": "safety",
+      "title": "Making the danger a public question",
+      "claim_ids": [
+        "jackie-stewart-b2-spa",
+        "jackie-stewart-b2-risk"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "The effectiveness of smoothness",
+      "claim_ids": [
+        "jackie-stewart-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "After the final championship",
+      "claim_ids": [
+        "jackie-stewart-b2-cevert",
+        "jackie-stewart-b2-team-owner",
+        "jackie-stewart-b2-charity"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "The Formula 1 Hall of Fame dates Tyrrell’s F3 hiring to 1963; the Duffy account gives 1964. Keep the more specific 1964 attribution pending independent archive review.",
+    "Safety improvements were collective; verify each proposed concrete innovation separately before adding it.",
+    "Rolex is a commercial partner, not an independent corroborator of its own endorsement."
+  ],
+  "media": []
+}

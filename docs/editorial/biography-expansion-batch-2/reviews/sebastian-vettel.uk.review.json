@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "vettel-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "f1db": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "vettel-newey": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "vettel-malaysia": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "vettel-malaysia-independent": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "vettel-cooper": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "vettel-retirement": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    }
+  },
+  "claim_reviews": {
+    "sebastian-vettel-b2-early": null,
+    "sebastian-vettel-b2-toro-rosso": null,
+    "sebastian-vettel-b2-2009": null,
+    "sebastian-vettel-b2-2010": null,
+    "sebastian-vettel-b2-2011": null,
+    "sebastian-vettel-b2-2012": null,
+    "sebastian-vettel-b2-2013": null,
+    "sebastian-vettel-b2-malaysia": null,
+    "sebastian-vettel-b2-2014": null,
+    "sebastian-vettel-b2-style": null,
+    "sebastian-vettel-b2-ferrari": null,
+    "sebastian-vettel-b2-aston": null,
+    "sebastian-vettel-b2-legacy": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [],
+  "media": [],
+  "publication": null
+}

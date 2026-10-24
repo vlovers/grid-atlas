@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "driver_id": "nigel-mansell",
+  "locale": "uk",
+  "title": "Найджел Менселл — довгий шлях до першого номера",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "mansell-williams",
+      "source_url": "https://www.williamsf1.com/articles/1ca7e503-ce57-4de8-8a81-ef16744af669/atlassian-williams-f1-team-champions-roll-call-meet-the-drivers-who-took-us-to-glory?scrollto=Keke+Rosberg",
+      "title": "Williams Champions Roll Call — Nigel Mansell section",
+      "publisher": "Williams F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "williams"
+    },
+    {
+      "source_id": "mansell-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+      "title": "Nigel Mansell — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "mansell-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+      "title": "Nigel Mansell",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "mansell-honda",
+      "source_url": "https://global.honda/en/F1/williams/records/",
+      "title": "The Williams Honda Era: A Record of Success",
+      "publisher": "Honda",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "honda"
+    },
+    {
+      "source_id": "mansell-car",
+      "source_url": "https://www.formula1.com/en/latest/article/the-car-i-loved-and-the-car-i-loathed-with-nigel-mansell.1Z1IMj47wzmWAREsfGEB8k.1Z1IMj47wzmWAREsfGEB8k",
+      "title": "The car I loved and the car I loathed — with Nigel Mansell",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "nigel-mansell-b2-early",
+      "topic": "early_career",
+      "statement": "Найджел Менселл пройшов картинг і молодші формули, а потім отримав тести Lotus у 1979 році. Вони принесли роль тест-пілота та дебют у чемпіонаті на Гран-прі Австрії 1980-го. Наступного року він став основним гонщиком Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-williams",
+          "locator": "1992 Nigel Mansell section: junior racing, 1979 test, 1980 debut and 1981 full season",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-hall",
+          "locator": "Karting and junior racing before Lotus",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-first-podium",
+      "topic": "key_events",
+      "statement": "Перший подіум прийшов у Бельгії 1981 року. За ним були інші, проте період Lotus завершився без перемоги на етапі чемпіонату. У 1985-му Менселл перейшов до Williams і став напарником Кеке Росберга.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1981 Belgium third place; no Lotus wins; 1985 Williams/Rosberg results; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1985",
+      "topic": "key_events",
+      "statement": "Менселл виграв Гран-прі Європи 1985 року в Брендс-Гетчі та додав перемогу в Південній Африці. Це були його перші два успіхи в чемпіонаті, обидва на Williams-Honda.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "First wins: 1985 Europe and South Africa; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "First win at Brands Hatch in 1985",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1986",
+      "topic": "championships",
+      "statement": "Чемпіонат 1986 року завершився в Аделаїді, де Менселл зазнав руйнування задньої шини. Титул здобув Ален Прост; Менселл став другим, а напарник Нельсон Піке — третім. За сезон Найджел виграв п’ять гонок.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-mclaren",
+          "locator": "1986 Adelaide tyre failure",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-honda",
+          "locator": "1986 Adelaide race row",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1986 five wins and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1987",
+      "topic": "championships",
+      "statement": "У 1987 році Менселл виграв шість гонок проти трьох у Піке, але чемпіоном став бразилець, а Найджел знову був другим. Протоколи Honda показують і перемоги, і сходи в цьому суперництві.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-honda",
+          "locator": "1987 race-by-race Williams results, especially Britain",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1987 win counts and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-ferrari",
+      "topic": "teams_seasons",
+      "statement": "Після складного сезону 1988 року Менселл перейшов до Ferrari. Дебют за команду в Бразилії 1989-го завершився перемогою, а потім він виграв і в Угорщині. Після двох сезонів в Італії Найджел повернувся до Williams на 1991 рік. Ferrari принесла помітні успіхи, але не титул; відновлена співпраця з Williams знову поставила його в центр чемпіонської боротьби.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "Ferrari 1989/1990, Brazil/Hungary 1989 wins; Williams 1991; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "Ferrari interlude and 1991 return",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1991",
+      "topic": "championships",
+      "statement": "У 1991 році Менселл виграв п’ять Гран-прі, проте став другим після Айртона Сенни. Перемоги у Франції, Великій Британії, Німеччині, Італії та Іспанії показали, що Williams-Renault здатна боротися з McLaren на різних трасах.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1991 five winning rounds and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1992",
+      "topic": "championships",
+      "statement": "Кампанія 1992 року на FW14B нарешті змінила підсумок. Менселл виграв перші п’ять гонок, здобув дев’ять перемог за сезон і забезпечив титул в Угорщині. У підсумку він мав 108 очок проти 56 у напарника Ріккардо Патрезе.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1992 first five wins, nine season wins, Hungary clinching standings and final points; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "FW14B, nine wins and Patrese comparison",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-style",
+      "topic": "driving_style",
+      "statement": "У пізнішому інтерв’ю Formula 1 Менселл описує, наскільки вимогливим був турбований Williams FW11B. Технічний коментар поруч пояснює потужність і компонування машини.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-car",
+          "locator": "FW11B recollection and Mark Hughes technical explanation",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-america",
+      "topic": "key_events",
+      "statement": "Замість захисту титулу у Формулі-1 Менселл перейшов до Newman/Haas в американських перегонах IndyCar та виграв чемпіонат 1993 року. У 1994-му він повернувся на чотири етапи Формули-1 за Williams — у Франції та трьох заключних гонках. Перемога в Австралії стала останньою на Гран-прі й довела загальний підсумок до 31.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-hall",
+          "locator": "1993 IndyCar championship",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1994 race appearances France/Europe/Japan/Australia and final win; totalRaceWins=31; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-mclaren",
+      "topic": "teams_seasons",
+      "statement": "Останній етап у Формулі-1 відбувся з McLaren у 1995 році. Проблеми з розмірами кокпіта відклали дебют на MP4/10, а до завершення співпраці він стартував за команду лише двічі. Короткий фінал різко відрізнявся від чемпіонського року й завершив шлях через Lotus, Williams, Ferrari, повернення до Williams та McLaren.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-mclaren",
+          "locator": "MP4/10 cockpit, Mark Blundell substitution, Imola and Barcelona",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1995 two McLaren race starts; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-legacy",
+      "topic": "significance",
+      "statement": "Титул 1992 року є центром результатів Менселла у Формулі-1, але зміст йому надають сусідні сезони. Були чемпіонські спроби з Honda, переможний дебют за Ferrari, титул із Renault та успішний переїзд через Атлантику. Кар’єра стала довгою послідовністю відновлених можливостей: чемпіонство прийшло значно пізніше за перші перемоги.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-williams",
+          "locator": "Williams career and title chronology",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-hall",
+          "locator": "American championship",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1985 first win; 1992 title; constructor chronology; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Роки становлення в Lotus",
+      "claim_ids": [
+        "nigel-mansell-b2-early",
+        "nigel-mansell-b2-first-podium"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Williams-Honda та перші перемоги",
+      "claim_ids": [
+        "nigel-mansell-b2-1985",
+        "nigel-mansell-b2-1986"
+      ]
+    },
+    {
+      "section_id": "changes",
+      "title": "Піке, Ferrari та повернення",
+      "claim_ids": [
+        "nigel-mansell-b2-1987",
+        "nigel-mansell-b2-ferrari"
+      ]
+    },
+    {
+      "section_id": "title",
+      "title": "Сезон на FW14B",
+      "claim_ids": [
+        "nigel-mansell-b2-1991",
+        "nigel-mansell-b2-1992"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Вимоглива техніка очима пілота",
+      "claim_ids": [
+        "nigel-mansell-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Америка й останнє повернення до Формули-1",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-mclaren",
+        "nigel-mansell-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "McLaren’s heritage page mistakenly places the proposed Prost pairing in 1992; this draft does not repeat that date or infer private motives.",
+    "The Hall of Fame calls the 1994 appearances the final four rounds; the archive shows France and the final three. Preserve that distinction.",
+    "Current Honda profile counters can display zero; use the detailed historical event tables and pinned archive, not dynamic counters."
+  ],
+  "media": []
+}

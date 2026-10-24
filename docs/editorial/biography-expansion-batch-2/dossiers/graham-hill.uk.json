@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "driver_id": "graham-hill",
+  "locale": "uk",
+  "title": "Ґрем Гілл — кар’єра на перетині дисциплін",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "graham-museum",
+      "source_url": "https://www.motorsportshalloffame.com/inductees/graham-hill/",
+      "title": "Graham Hill — Class of 1990",
+      "publisher": "International Motorsports Hall of Fame",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "imshof"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "graham-lemans",
+      "source_url": "https://www.24h-lemans.com/en/news/1972-24-hours-of-le-mans-graham-hill-completes-the-triple-crown-56778",
+      "title": "1972 24 Hours of Le Mans — Graham Hill completes the Triple Crown",
+      "publisher": "Automobile Club de l’Ouest",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "aco"
+    },
+    {
+      "source_id": "graham-indy",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/graham-hill",
+      "title": "Graham Hill — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "graham-lemans-drive",
+      "source_url": "https://www.24h-lemans.com/en/news/graham-hill-and-the-triple-crown-2-le-mans-1972-the-ultimate-prize-46431",
+      "title": "Graham Hill and the Triple Crown (2) — Le Mans 1972, the ultimate prize",
+      "publisher": "Automobile Club de l’Ouest",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "aco"
+    },
+    {
+      "source_id": "graham-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+      "title": "Graham Hill — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "graham-hill-b2-beginnings",
+      "topic": "early_career",
+      "statement": "Ґрем Гілл прийшов у перегони шляхом, далеким від сучасної картингової драбини. International Motorsports Hall of Fame зазначає, що 1953 року, у 24 роки, він придбав дорожній автомобіль і склав іспит на водійські права, а згодом спробував гоночну машину в Брендс-Гетчі. Робота механіком допомогла йому познайомитися з Коліном Чепменом та Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-museum",
+          "locator": "Opening paragraphs: 1953 Morris, driving test, Brands Hatch, mechanic and Chapman",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-lotus-brm",
+      "topic": "teams_seasons",
+      "statement": "Дебют Гілла у Формулі-1 відбувся за Lotus у Монако 1958 року. Після двох сезонів із цим конструктором він перейшов до BRM у 1960-му. Майбутній чемпіон провів кілька років у чемпіонаті до першої перемоги.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "First race result: 1958 Monaco, constructorId=lotus; 1960 constructorId=brm; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1962",
+      "topic": "championships",
+      "statement": "У 1962 році Гілл виграв у Нідерландах, Німеччині, Італії та Південній Африці й став чемпіоном світу з BRM. Найближчим суперником у підсумковій таблиці був Джим Кларк. Чотири перемоги поєднали зовсім різні траси — від Зандворта до Нюрбургринга — і перетворили тривалу підготовку на цілісну чемпіонську кампанію, а не одиничний перший успіх.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1962 four wins and final driver standings; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels in the crown: 1962 BRM title",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-monaco",
+      "topic": "key_events",
+      "statement": "Монако стало найвпізнаванішою лінією в результатах Гілла у Формулі-1. Він перемагав там у 1963, 1964 та 1965 роках за BRM, а в 1968-му й 1969-му — за Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "All Monaco race-result positionNumber=1 rows; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels: five Monaco victories and years",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1964-rival",
+      "topic": "championships",
+      "statement": "Після першого титулу Гілл залишався серед головних претендентів. Він став другим у 1963, 1964 та 1965 роках: два з цих чемпіонатів виграв Кларк, один — Джон Сертіс. Це була тривала боротьба, а не поодинокий злет. Провідні пілоти цього покоління не раз мінялися ролями чемпіона, переслідувача та напарника.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1963/1964/1965 final driver standings and corresponding champions; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1968",
+      "topic": "championships",
+      "statement": "У 1967 році Гілл повернувся до Lotus і став напарником Кларка. Після загибелі Кларка наступної весни він виграв чемпіонат 1968 року завдяки перемогам в Іспанії, Монако та Мексиці. Між титулами минуло шість років, а конструктор змінився. Остання перемога в чемпіонаті прийшла в Монако 1969-го й довела його підсумок у Формулі-1 до 14.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1967 constructor; 1968 wins/title; 1969 Monaco final win; totalRaceWins=14; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "1968 Lotus championship after Clark’s death",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-indy",
+      "topic": "key_events",
+      "statement": "У 1966 році Гілл виграв «500 миль Індіанаполіса» зі своєї першої участі в гонці. За даними самої траси, він виступав на Lola-Ford у заявці Джона Мекома. Цей успіх був окремим від чемпіонату Формули-1: до кар’єри на європейських дорожніх і міських трасах додалася перемога на американському овалі.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-indy",
+          "locator": "1966 race row: first place, entrant John Mecom, Lola/Ford",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels: 1966 Indianapolis debut victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-lemans",
+      "topic": "key_events",
+      "statement": "У Ле-Мані 1972 року Гілл розділив Matra з Анрі Пескароло та виграв добовий марафон. Разом з успіхами в Монако та Індіанаполісі це склало поєднання, відоме як «Потрійна корона» автоспорту. Він також двічі ставав чемпіоном Формули-1, об’єднавши в одній кар’єрі успіхи на міській трасі, американському овалі та в гонці на витривалість.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-lemans",
+          "locator": "Le Mans 1972 — the ultimate victory; opening definition",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans-drive",
+          "locator": "Closing paragraphs: Monaco–Indianapolis–Le Mans and F1 title distinction",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-style",
+      "topic": "driving_style",
+      "statement": "У спогаді Пескароло, опублікованому організатором Ле-Мана, окремо відзначено дощовий відрізок Гілла під час перемоги 1972 року. Матеріал описує його вибір проміжних шин, тоді як інша Matra їхала на сліках.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-lemans-drive",
+          "locator": "Pescarolo recollection and Sunday rain/intermediate-tyre comparison",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-injury",
+      "topic": "key_events",
+      "statement": "Серйозна аварія у Воткінс-Ґлені 1969 року травмувала Гіллу ноги. Він повернувся до Формули-1, але наступні сезони вже не принесли перемог у чемпіонаті. У пізнішому списку виступів є машини Lotus, Brabham і власна команда.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-hall",
+          "locator": "1969 US GP accident and subsequent Rob Walker/Brabham/team years",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "Race-result constructor chronology after 1969; no later first-place results; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-ending",
+      "topic": "death",
+      "statement": "У 1975 році Гілл припинив виступи у Формулі-1 й планував далі керувати своєю командою. 29 листопада того року він загинув в авіакатастрофі разом із членами колективу, серед яких був пілот Тоні Брайз.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-hall",
+          "locator": "Final paragraphs: retirement, Tony Brise and 29 November 1975 plane crash",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "Closing career paragraph and Triple Crown account",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Незвично пізній початок",
+      "claim_ids": [
+        "graham-hill-b2-beginnings",
+        "graham-hill-b2-lotus-brm"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Чемпіонський пілот BRM",
+      "claim_ids": [
+        "graham-hill-b2-1962",
+        "graham-hill-b2-monaco"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Суперники, напарники та другий титул",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival",
+        "graham-hill-b2-1968"
+      ]
+    },
+    {
+      "section_id": "other-disciplines",
+      "title": "Індіанаполіс і Ле-Ман",
+      "claim_ids": [
+        "graham-hill-b2-indy",
+        "graham-hill-b2-lemans"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Майстерність очима напарника",
+      "claim_ids": [
+        "graham-hill-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Складні останні сезони",
+      "claim_ids": [
+        "graham-hill-b2-injury",
+        "graham-hill-b2-ending"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Preserve both commonly used Triple Crown definitions; do not assert a timeless unique-record claim without a dated comparison.",
+    "Review the 1969 accident account separately from the objective later results; do not infer diminished ability solely from age or injury.",
+    "The museum biography contains errors outside the cited early-career passage (1962 win count, Lotus return year and Indianapolis car); those details are checked against other sources and must not be imported from that page."
+  ],
+  "media": []
+}

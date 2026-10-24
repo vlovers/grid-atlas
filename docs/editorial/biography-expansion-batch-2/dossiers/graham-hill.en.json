@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "driver_id": "graham-hill",
+  "locale": "en",
+  "title": "Graham Hill — a career across disciplines",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "graham-museum",
+      "source_url": "https://www.motorsportshalloffame.com/inductees/graham-hill/",
+      "title": "Graham Hill — Class of 1990",
+      "publisher": "International Motorsports Hall of Fame",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "imshof"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "graham-lemans",
+      "source_url": "https://www.24h-lemans.com/en/news/1972-24-hours-of-le-mans-graham-hill-completes-the-triple-crown-56778",
+      "title": "1972 24 Hours of Le Mans — Graham Hill completes the Triple Crown",
+      "publisher": "Automobile Club de l’Ouest",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "aco"
+    },
+    {
+      "source_id": "graham-indy",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/graham-hill",
+      "title": "Graham Hill — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "graham-lemans-drive",
+      "source_url": "https://www.24h-lemans.com/en/news/graham-hill-and-the-triple-crown-2-le-mans-1972-the-ultimate-prize-46431",
+      "title": "Graham Hill and the Triple Crown (2) — Le Mans 1972, the ultimate prize",
+      "publisher": "Automobile Club de l’Ouest",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "aco"
+    },
+    {
+      "source_id": "graham-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+      "title": "Graham Hill — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "graham-hill-b2-beginnings",
+      "topic": "early_career",
+      "statement": "Graham Hill reached racing by a route far removed from the modern karting ladder. The International Motorsports Hall of Fame records that he bought a road car and passed his driving test in 1953, aged 24, before trying a racing car at Brands Hatch. Work as a mechanic helped bring him into contact with Colin Chapman and Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-museum",
+          "locator": "Opening paragraphs: 1953 Morris, driving test, Brands Hatch, mechanic and Chapman",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-lotus-brm",
+      "topic": "teams_seasons",
+      "statement": "His Formula 1 debut came with Lotus at Monaco in 1958. Two seasons with that constructor were followed by a move to BRM in 1960. The eventual champion therefore spent several years in the championship before winning a race.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "First race result: 1958 Monaco, constructorId=lotus; 1960 constructorId=brm; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1962",
+      "topic": "championships",
+      "statement": "In 1962 Hill won in the Netherlands, Germany, Italy and South Africa and became world champion with BRM. Jim Clark was his closest challenger in the final standings. The four victories linked very different circuits, from Zandvoort to the Nürburgring, and turned the long early preparation into a complete championship campaign rather than an isolated maiden success.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1962 four wins and final driver standings; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels in the crown: 1962 BRM title",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-monaco",
+      "topic": "key_events",
+      "statement": "Monaco became the most recognisable thread in Hill’s Formula 1 results. He won there in 1963, 1964 and 1965 for BRM, then in 1968 and 1969 for Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "All Monaco race-result positionNumber=1 rows; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels: five Monaco victories and years",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1964-rival",
+      "topic": "championships",
+      "statement": "The years after his first title remained highly competitive. Hill was runner-up in 1963, 1964 and 1965, with Clark taking two of those championships and John Surtees the other. This was sustained contention rather than a single peak. It also placed Hill among a generation whose leading drivers repeatedly exchanged the roles of champion, pursuer and team-mate.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1963/1964/1965 final driver standings and corresponding champions; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-1968",
+      "topic": "championships",
+      "statement": "Hill returned to Lotus in 1967, joining Clark. After Clark’s death the following spring, Hill won the 1968 championship with victories in Spain, Monaco and Mexico. The second title came six years after the first and with another constructor. His final championship win followed at Monaco in 1969, completing a Formula 1 total of 14 victories.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1967 constructor; 1968 wins/title; 1969 Monaco final win; totalRaceWins=14; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "1968 Lotus championship after Clark’s death",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-indy",
+      "topic": "key_events",
+      "statement": "In 1966 Hill won the Indianapolis 500 on his first appearance in the race. The Speedway records the winning car as a Lola-Ford, entered by John Mecom. That success was separate from the Formula 1 championship: it added an American oval victory to a career already established on European road and street circuits.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-indy",
+          "locator": "1966 race row: first place, entrant John Mecom, Lola/Ford",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "The first two jewels: 1966 Indianapolis debut victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-lemans",
+      "topic": "key_events",
+      "statement": "At Le Mans in 1972 Hill shared a Matra with Henri Pescarolo and won the 24-hour race. Together with his Monaco and Indianapolis victories, it completed the combination commonly called motorsport’s Triple Crown. He had also won the Formula 1 world championship twice, bringing success on a street circuit, an American oval and an endurance course into the same career.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-lemans",
+          "locator": "Le Mans 1972 — the ultimate victory; opening definition",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans-drive",
+          "locator": "Closing paragraphs: Monaco–Indianapolis–Le Mans and F1 title distinction",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-style",
+      "topic": "driving_style",
+      "statement": "Pescarolo’s recollection, published by the Le Mans organiser, singles out Hill’s driving in the rain during their 1972 victory. The account describes his choice of intermediate tyres as the competing Matra used slicks.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-lemans-drive",
+          "locator": "Pescarolo recollection and Sunday rain/intermediate-tyre comparison",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-injury",
+      "topic": "key_events",
+      "statement": "A major accident at Watkins Glen in 1969 injured Hill’s legs. He returned to Formula 1, but the subsequent seasons brought no further championship victories. His record includes Lotus machinery, Brabham and then the team he established himself.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-hall",
+          "locator": "1969 US GP accident and subsequent Rob Walker/Brabham/team years",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "Race-result constructor chronology after 1969; no later first-place results; exact driverId/id=graham-hill; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-b2-ending",
+      "topic": "death",
+      "statement": "Hill stopped driving in Formula 1 in 1975 and intended to continue running his team. On 29 November that year he died in an aircraft crash that also killed team members, including driver Tony Brise.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "graham-hall",
+          "locator": "Final paragraphs: retirement, Tony Brise and 29 November 1975 plane crash",
+          "supports": true
+        },
+        {
+          "source_id": "graham-lemans",
+          "locator": "Closing career paragraph and Triple Crown account",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "An unusually late beginning",
+      "claim_ids": [
+        "graham-hill-b2-beginnings",
+        "graham-hill-b2-lotus-brm"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "BRM’s championship driver",
+      "claim_ids": [
+        "graham-hill-b2-1962",
+        "graham-hill-b2-monaco"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Rivals, team-mates and a second title",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival",
+        "graham-hill-b2-1968"
+      ]
+    },
+    {
+      "section_id": "other-disciplines",
+      "title": "Indianapolis and Le Mans",
+      "claim_ids": [
+        "graham-hill-b2-indy",
+        "graham-hill-b2-lemans"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "A craft recognised by a co-driver",
+      "claim_ids": [
+        "graham-hill-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "The difficult final seasons",
+      "claim_ids": [
+        "graham-hill-b2-injury",
+        "graham-hill-b2-ending"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Preserve both commonly used Triple Crown definitions; do not assert a timeless unique-record claim without a dated comparison.",
+    "Review the 1969 accident account separately from the objective later results; do not infer diminished ability solely from age or injury.",
+    "The museum biography contains errors outside the cited early-career passage (1962 win count, Lotus return year and Indianapolis car); those details are checked against other sources and must not be imported from that page."
+  ],
+  "media": []
+}

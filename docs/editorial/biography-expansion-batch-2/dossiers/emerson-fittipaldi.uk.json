@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "driver_id": "emerson-fittipaldi",
+  "locale": "uk",
+  "title": "Емерсон Фіттіпальді — два титули й нове гоночне життя",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "fittipaldi-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+      "title": "Emerson Fittipaldi — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "fittipaldi-title",
+      "source_url": "https://www.mclaren.com/racing/heritage/how-emerson-fittipaldi-won-mclarens-first-f1-title-on-three-hours-sleep/",
+      "title": "How Emerson Fittipaldi won McLaren’s first F1 title on three hours sleep",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "fittipaldi-rrdc",
+      "source_url": "https://rrdc.org/member/emerson-fittipaldi/",
+      "title": "Emerson Fittipaldi",
+      "publisher": "Road Racing Drivers Club",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "rrdc"
+    },
+    {
+      "source_id": "fittipaldi-indy",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/emerson-fittipaldi",
+      "title": "Emerson Fittipaldi — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "fittipaldi-mclaren-profile",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/emerson-fittipaldi/",
+      "title": "Emerson Fittipaldi — McLaren heritage profile",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live team historical profile machine-inspected 24 October 2026; exact publication/revision date unavailable. Human review pending.",
+      "independence_group": "mclaren"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "emerson-fittipaldi-b2-brazil",
+      "topic": "early_career",
+      "statement": "На початку кар’єри Емерсон Фіттіпальді поєднував перегони з будівництвом автомобілів. Разом із братом Вілсоном він працював над картами та машинами Formula Vee у Бразилії, а 1969 року перебрався до Англії. Формула-Ford, Формула-3 й потім Формула-2 швидко привели його до Lotus: це був послідовний шлях, а не прямий стрибок із Бразилії в кокпіт Гран-прі.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-hall",
+          "locator": "Early kart/Formula Vee business and 1969 arrival in England; Formula Ford/F3/F2 progression",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1970",
+      "topic": "key_events",
+      "statement": "У чемпіонаті він дебютував на Гран-прі Великої Британії 1970 року. Згодом Йохен Ріндт загинув під час тренування в Монці, і ще недосвідчений Фіттіпальді опинився в центрі подальшої кампанії Lotus. Перша перемога прийшла у Воткінс-Ґлені в США та допомогла забезпечити Ріндту посмертний титул.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-hall",
+          "locator": "1970 debut, Rindt’s death and Watkins Glen victory",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1970 first appearance and first win; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1972",
+      "topic": "championships",
+      "statement": "У 1972 році Фіттіпальді переміг в Іспанії, Бельгії, Великій Британії, Австрії та Італії й став чемпіоном світу. На момент здобуття титулу йому було 25 років. Другим у чемпіонаті став Джекі Стюарт. П’ять перемог показують, як швидко молодий пілот виріс із обставин дебютного сезону до власної чемпіонської кампанії.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1972 five wins/title; dateOfBirth and Italian GP date; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-mclaren-profile",
+          "locator": "Opening heritage paragraph: youngest champion at 25 in the Lotus 72",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-peterson",
+      "topic": "teams_seasons",
+      "statement": "Наступного року напарником у Lotus став Ронні Петерсон. Петерсон виграв чотири гонки проти трьох у Фіттіпальді, проте в чемпіонаті бразилець випередив його й став другим після Стюарта.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1973 wins and final positions for Fittipaldi/Peterson/Stewart; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-move",
+      "topic": "teams_seasons",
+      "statement": "У 1974 році Фіттіпальді перейшов до McLaren і сів за кермо M23. У ретроспективі команди він описує пристосування до керованості під час тестів у Поль-Рікарі. Чемпіонський досвід він приніс у колектив під керівництвом Тедді Маєра та Аластера Колдвелла, водночас вивчаючи інший автомобіль та іншу організацію.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Decision to leave Lotus, Paul Ricard test, M23 handling and requested changes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-regazzoni",
+      "topic": "championships",
+      "statement": "Перемоги в Бразилії, Бельгії та Канаді привели його до боротьби з Клеєм Регаццоні з Ferrari. Перед фіналом у США суперники мали однакову кількість очок. Четверте місце у Воткінс-Ґлені принесло Фіттіпальді чемпіонство. Його другий особистий титул став першим для пілота McLaren і поєднав цю кар’єру з важливою віхою командної історії.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1974 three wins; penultimate/final season standings and US fourth place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Championship showdown at Watkins Glen and first McLaren drivers’ title",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1975",
+      "topic": "championships",
+      "statement": "У 1975 році Фіттіпальді залишився в McLaren, виграв в Аргентині та Великій Британії й став другим після Нікі Лауди. Перемога в Сільверстоуні виявилася останньою у Формулі-1. На кінець сезону він уже мав титули з двома конструкторами та чотири роки поспіль завершував особистий чемпіонат серед двох найкращих.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1975 two wins and final position; 1972–1975 final positions 1/2/1/2; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-style",
+      "topic": "driving_style",
+      "statement": "У матеріалі McLaren відзначено плавне пілотування Фіттіпальді та ретельну підготовку. На перших тестах M23 він попросив більше переднього крила, пристосовуючись до машини. До чемпіонського фіналу 1974 року разом із Гордоном Коппаком готував менше заднє крило заради швидкості на прямих. Техніка пілотування, баланс і планування гонки були частинами одного підходу.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Paul Ricard adjustments; calm/meticulous preparation and Watkins Glen strategy",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-mclaren-profile",
+          "locator": "Opening biography paragraph: gentle and smooth touch and tactical perception",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-copersucar",
+      "topic": "teams_seasons",
+      "statement": "У 1976 році він приєднався до бразильської команди брата Вілсона за підтримки Copersucar. Дворазовий чемпіон залишив перевірену швидку машину заради значно меншого проєкту. Нових перемог у Формулі-1 вже не було, проте друге місце на Гран-прі Бразилії 1978 року принесло команді помітний домашній результат.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "1976 driver/constructor venture with brother’s team",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1976 Fittipaldi constructor; Brazil 1978 second place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1980",
+      "topic": "teams_seasons",
+      "statement": "Останнім сезоном Фіттіпальді у Формулі-1 став 1980 рік. Третє місце на Гран-прі США-Захід у Лонг-Біч додало ще один подіум перед завершенням виступів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1980 final season and US West third place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "F1 retirement in 1980 and later comeback",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-indy",
+      "topic": "key_events",
+      "statement": "У 1984 році Фіттіпальді розпочав нову кар’єру в американських перегонах на одномісних машинах. Він став чемпіоном CART у 1989-му та виграв «500 миль Індіанаполіса» у 1989 і 1993 роках. Результати траси окремо фіксують обидві перемоги.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "1984 IndyCar comeback, 1989 CART title and two Indianapolis victories",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-indy",
+          "locator": "Career wins and 1989/1993 race rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-legacy",
+      "topic": "significance",
+      "statement": "Два титули Формули-1 та 14 перемог на Гран-прі — лише частина ширшої кар’єри. Прорив із Lotus, перше чемпіонство пілота McLaren та американське відродження належать до різних спортивних обставин. Разом вони пояснюють спадщину, яка пережила складні роки родинної команди та вийшла за межі категорії, де Фіттіпальді вперше став чемпіоном світу.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "totalChampionshipWins=2, totalRaceWins=14; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "F1 and CART championships",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "First McLaren drivers’ title",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Побудувати шлях із Бразилії",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-brazil",
+        "emerson-fittipaldi-b2-1970"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Чемпіонство з Lotus",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972",
+        "emerson-fittipaldi-b2-peterson"
+      ]
+    },
+    {
+      "section_id": "mclaren",
+      "title": "Другий титул в іншій команді",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-move",
+        "emerson-fittipaldi-b2-regazzoni",
+        "emerson-fittipaldi-b2-1975"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Зважений спосіб їхати швидко",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-style"
+      ]
+    },
+    {
+      "section_id": "family-team",
+      "title": "Вихід із команди-претендентки",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-copersucar",
+        "emerson-fittipaldi-b2-1980"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Друга вершина в Америці",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-indy",
+        "emerson-fittipaldi-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "The International Motorsports Hall of Fame page gives age 26 for the 1972 title and an imprecise retirement decade; retain age 25 and the exact 1980 F1 endpoint from the cited team/record evidence.",
+    "Independent review of family-team motivations is outstanding; this draft states the documented move without inventing private motives."
+  ],
+  "media": []
+}

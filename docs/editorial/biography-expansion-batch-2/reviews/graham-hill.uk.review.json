@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "graham-museum": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "f1db": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "graham-lemans": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "graham-indy": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "graham-lemans-drive": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "graham-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    }
+  },
+  "claim_reviews": {
+    "graham-hill-b2-beginnings": null,
+    "graham-hill-b2-lotus-brm": null,
+    "graham-hill-b2-1962": null,
+    "graham-hill-b2-monaco": null,
+    "graham-hill-b2-1964-rival": null,
+    "graham-hill-b2-1968": null,
+    "graham-hill-b2-indy": null,
+    "graham-hill-b2-lemans": null,
+    "graham-hill-b2-style": null,
+    "graham-hill-b2-injury": null,
+    "graham-hill-b2-ending": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [],
+  "media": [],
+  "publication": null
+}
