@@ -50,3 +50,11 @@ test('real narrative bundle has 25 bilingual chapters across eight research-only
   assert.deepEqual(report.errors,[]);
   assert.equal(report.publication_status,'unpublished');
 });
+
+test('malformed narrative arrays fail validation without throwing',()=>{
+  const {bundle,cards}=sample();
+  bundle.stories={driver_id:'sample'};
+  assert.ok(inspectNarrativeBundle(bundle,cards).errors.includes('missing_stories'));
+  bundle.stories=[{driver_id:'sample',chapters:{chapter_id:'not-an-array'}}];
+  assert.ok(inspectNarrativeBundle(bundle,cards).errors.some(x=>x.startsWith('insufficient_chapters')));
+});

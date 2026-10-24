@@ -62,7 +62,7 @@ All **25 additional research cards** have now had their source passages inspecte
 
 Eight drivers now also have **25 bilingual narrative chapters** in `narrative-chapters-v1.json`: Emerson Fittipaldi, Graham Hill, Alberto Ascari, Mario Andretti, Keke Rosberg, Damon Hill, Jackie Stewart and Charles Leclerc. Chapters link back to the exact research claim IDs, and the new narrative audit rejects orphan claims, missing translations and publication-gate violations. These are **research-only narrative drafts**, not eight approved biographies.
 
-**URL caveat:** the live Nigel Mansell Hall of Fame page is served at a URL containing `drivers-hall-of-fame-john-surtees`, despite its displayed title and text being about Mansell. The card retains the previously recorded `nigel-mansell` slug; verify the canonical address and stable archive link before publication. Do not infer a correct page from the URL slug alone.
+**URL check:** the Nigel Mansell Hall of Fame URL in his card was reopened on 2026-10-24 and displays the correct Nigel Mansell biography with the 1992 championship heading. An earlier note about a John Surtees slug was an erroneous observation and has been removed. Recheck redirects during final source validation.
 
 Do not import editorial photos, invent DRS/circuit data, infer 2026 season outcomes from 2025 records, or treat green structural CI as human approval.
 
