@@ -52,5 +52,26 @@ class EnhancedCircuitBatchTests(unittest.TestCase):
             self.assertNotEqual(path,"/en/results/1955/races")
             self.assertNotIn("the-rare-occasions-every-car-was-a-finisher",path)
 
+
+    def test_second_bilingual_cohort_has_exact_20_distinct_pinned_race_sources(self):
+        more=ROOT/"apps/web/src/components/editorial/circuit-next20-stories.json"
+        values=json.loads(more.read_text(encoding="utf8"))
+        expected={"ain-diab","aintree","avus","brands-hatch","dijon","donington",
+                  "estoril","fuji","istanbul","long-beach","marina-bay","yas-marina",
+                  "austin","baku","jeddah","miami","las-vegas","adelaide","jarama","zolder"}
+        self.assertEqual(len(values),20)
+        self.assertEqual({x["id"] for x in values},expected)
+        self.assertFalse(expected & (FIVE | TWENTY))
+        for item in values:
+            for lang in ("en","uk"):
+                self.assertGreater(len(item["description"][lang]),95)
+                self.assertTrue(item["title"][lang])
+            self.assertNotEqual(item["description"]["en"],item["description"]["uk"])
+            url=urlsplit(item["source"])
+            self.assertEqual(url.hostname,"github.com")
+            self.assertTrue(url.path.startswith("/f1db/f1db/blob/v2026.17.0/src/data/seasons/"))
+            self.assertTrue(url.path.endswith("/race-results.yml"))
+            self.assertTrue(item["year"] in url.path)
+
 if __name__=="__main__":
     unittest.main()
