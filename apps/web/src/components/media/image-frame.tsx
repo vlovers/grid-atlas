@@ -12,11 +12,14 @@ export type ImageFrameProps = {
 /** Keep the exact same reserved frame when the file is absent or fails to load. */
 export function ImageFrame({ source, width, height, alt, label, unavailable, failed }: ImageFrameProps) {
   const [failedSource, setFailedSource] = useState<string | null>(null);
+  const [loadedSource, setLoadedSource] = useState<string | null>(null);
   const visible = source !== null && source !== failedSource;
   const message = source ? failed : unavailable;
   return <div className={styles.frame} style={{ aspectRatio: `${width} / ${height}` }}>
     {visible ? <Image src={source} width={width} height={height} alt={alt} unoptimized
       loading="lazy" decoding="async" referrerPolicy="no-referrer" className={styles.image}
+      data-loaded={loadedSource === source ? 'true' : 'false'}
+      onLoad={() => setLoadedSource(source)}
       onError={() => setFailedSource(source)} /> : <div className={styles.fallback} role="img" aria-label={`${label}: ${message}`}>
       <div className={styles.marker} aria-hidden="true"><span /> <span /> <span /></div>
       <span className={styles.kicker}>{message}</span>
