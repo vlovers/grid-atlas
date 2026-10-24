@@ -243,14 +243,33 @@
   }
 }
 
-/* Prevent enlarged-text search controls from extending the catalogue viewport. */
-.catalogue .search :global(.actions) { display:flex; flex-wrap:wrap; min-width:0; }
-.catalogue .search :global(.actions)>* { min-width:0; max-width:100%; }
-.catalogue .search input { flex:1 1 min(100%,16rem); width:100%; }
-.catalogue .index,.catalogue .index>a,.catalogue .index>a>div { min-width:0; }
+/* Enlarged text and narrow viewport: search controls must wrap without forcing
+   the constructor catalogue wider than the device. */
+.catalogue .search :global(.actions) {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.catalogue .search :global(.actions)>* {
+  min-width: 0;
+  max-width: 100%;
+}
+.catalogue .search input {
+  flex: 1 1 min(100%, 16rem);
+  width: 100%;
+}
+.catalogue .index,
+.catalogue .index>a,
+.catalogue .index>a>div {
+  min-width: 0;
+}
 @media(max-width:750px) {
   .catalogue .search :global(.actions)>button,
-  .catalogue .search :global(.actions)>a { flex:1 1 auto; white-space:normal; overflow-wrap:anywhere; }
+  .catalogue .search :global(.actions)>a {
+    flex: 1 1 auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* Ukrainian constructor heading must fit at 200% zoom on 320px devices. */
