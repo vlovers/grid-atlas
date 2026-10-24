@@ -5,8 +5,8 @@ import {buildReviewWorklist} from '../scripts/editorial-human-review-worklist.mj
 
 function fixture(){
   const claims=[
-    {driver_id:'sample',claim_id:'early',second_publisher_pending:true,narrative_chapters:['opening','career']},
-    {driver_id:'sample',claim_id:'later',second_publisher_pending:false,narrative_chapters:['career']}
+    {driver_id:'sample',claim_id:'early',publisher_groups:['formula1'],second_publisher_pending:true,narrative_chapters:['opening','career']},
+    {driver_id:'sample',claim_id:'later',publisher_groups:['fia','formula1'],second_publisher_pending:false,narrative_chapters:['career']}
   ];
   const worksheet=claims.map(claim=>({
     driver_id:claim.driver_id,claim_id:claim.claim_id,topic:'history',
@@ -14,7 +14,7 @@ function fixture(){
     independent_publisher_links:!claim.second_publisher_pending,
     publisher_groups:claim.second_publisher_pending?['formula1']:['fia','formula1'],
     linked_chapters:claim.narrative_chapters.map(id=>({chapter_id:id,en_heading:id,uk_heading:id,en_body:'English narrative',uk_body:'Український розділ'})),
-    evidence:[{source_url:'https://www.formula1.com/example',locator:'Specific passage',semantic_review:'pending'}],
+    evidence:claim.publisher_groups.map(group=>({source_url:group==='fia'?'https://www.fia.com/example':'https://www.formula1.com/example',publisher:group,publisher_group:group,locator:'Specific passage',claimed_support:true,semantic_review:'pending'})),
     publication_status:'unpublished',human_fact_review:'pending',
     en_editorial_review:'pending',uk_editorial_review:'pending'
   }));
@@ -146,4 +146,19 @@ test('review worklist rejects chapters without full bilingual narrative bodies',
   const {provenance,worksheet}=fixture();
   delete worksheet.claims[0].linked_chapters[0].uk_body;
   assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Incomplete bilingual narrative context/);
+});
+
+test('publisher groups must match provenance and individual evidence rows',()=>{
+  const {provenance,worksheet}=fixture();
+  worksheet.claims[1].evidence[0].publisher_group='formula1';
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Publisher evidence groups mismatch/);
+  worksheet.claims[1].evidence[0].publisher_group='fia';
+  worksheet.claims[1].evidence[0].locator='';
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Incomplete source locator metadata/);
+});
+
+test('chapter prose cannot disagree between claims linking the same chapter',()=>{
+  const {provenance,worksheet}=fixture();
+  worksheet.claims[1].linked_chapters[0].uk_body='Інший текст тієї самої глави';
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Conflicting chapter text across claims/);
 });
