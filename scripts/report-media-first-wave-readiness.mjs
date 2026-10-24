@@ -35,7 +35,7 @@ for (const entry of staged.entries) {
     'Missing original pixel dimensions for ' + entry.id);
   checks(typeof evidence.source_author === 'string' && evidence.source_author.length > 0,
     'Missing source author for ' + entry.id);
-  checks(/^CC-BY(?:-SA)?-[0-9]+\\.[0-9]+$/.test(evidence.source_license),
+  checks(/^CC-BY(?:-SA)?-[0-9]+\.[0-9]+$/.test(evidence.source_license),
     'Unexpected claimed license for ' + entry.id);
   checks(/^[a-f0-9]{40}$/.test(evidence.sha1), 'Invalid source SHA-1 for ' + entry.id);
   checks(Number.isInteger(evidence.bytes) && evidence.bytes > 0, 'Invalid original size for ' + entry.id);
