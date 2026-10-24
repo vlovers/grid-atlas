@@ -54,3 +54,34 @@ test('read-only original-provenance report checks both observed binary hashes an
     assert.ok(identity.blockers.includes('human_review_pending'));
   }
 });
+
+test('media source revision drift blocks readiness instead of publishing', async () => {
+  const { execFileSync, spawnSync } = await import('node:child_process');
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join, resolve, dirname } = await import('node:path');
+  const root = mkdtempSync(join(tmpdir(), 'grid-atlas-media-tamper-'));
+  const paths = [
+    'docs/media/commons-original-evidence.json',
+    'docs/media/verified-original-observations.json',
+    'docs/media/cross-era-staging.json',
+    'apps/web/src/components/media/publication.json',
+  ];
+  try {
+    for (const path of paths) {
+      const data = JSON.parse(readFileSync(path, 'utf8'));
+      if (path.includes('commons-original-evidence')) data.entries[0].description_oldid = null;
+      const destination = join(root, path);
+      mkdirSync(dirname(destination), { recursive: true });
+      writeFileSync(destination, JSON.stringify(data));
+    }
+    const result = spawnSync(process.execPath, [resolve('scripts/report-media-first-wave-readiness.mjs')],
+      { cwd: root, encoding: 'utf8' });
+    assert.equal(result.status, 1);
+    const report = JSON.parse(result.stdout);
+    assert.ok(report.failures.some(message => message.includes('immutable Commons description revision')));
+    assert.equal(report.publishable_count, 0);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
