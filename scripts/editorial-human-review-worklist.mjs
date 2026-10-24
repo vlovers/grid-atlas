@@ -25,7 +25,7 @@ export function buildReviewWorklist(provenance,worksheet){
     if(index.has(key))throw Error('Duplicate provenance claim: '+key);
     index.set(key,row);
   }
-  const seen=new Set(),items=[];
+  const seen=new Set(),items=[],chapterContexts=new Map();
   for(const claim of worksheet.claims){
     const key=claim.driver_id+':'+claim.claim_id;
     if(seen.has(key))throw Error('Duplicate worksheet claim: '+key);
@@ -41,6 +41,22 @@ export function buildReviewWorklist(provenance,worksheet){
       throw Error('Incomplete bilingual narrative context: '+key);
     if(JSON.stringify(expectedChapters)!==JSON.stringify(actualChapters))
       throw Error('Chapter references mismatch: '+key);
+    for(const chapter of claim.linked_chapters??[]){
+      const chapterKey=claim.driver_id+':'+chapter.chapter_id;
+      const context=JSON.stringify([chapter.en_heading,chapter.uk_heading,chapter.en_body,chapter.uk_body]);
+      const previous=chapterContexts.get(chapterKey);
+      if(previous!==undefined&&previous!==context)
+        throw Error('Conflicting chapter text across claims: '+chapterKey);
+      chapterContexts.set(chapterKey,context);
+    }
+    const evidenceGroups=[...new Set((claim.evidence??[]).map(e=>e.publisher_group))].sort();
+    const declaredGroups=[...(claim.publisher_groups??[])].sort();
+    if(JSON.stringify(evidenceGroups)!==JSON.stringify(declaredGroups)||
+       JSON.stringify(evidenceGroups)!==JSON.stringify(source.publisher_groups))
+      throw Error('Publisher evidence groups mismatch: '+key);
+    if((claim.evidence??[]).some(e=>!e.source_url?.trim()||!e.locator?.trim()||
+       !e.publisher?.trim()||!e.publisher_group?.trim()||e.claimed_support!==true))
+      throw Error('Incomplete source locator metadata: '+key);
     if(!claim.en?.trim()||!claim.uk?.trim()||!Array.isArray(claim.evidence)||!claim.evidence.length)
       throw Error('Incomplete bilingual evidence: '+key);
     if(claim.publication_status!=='unpublished'||claim.human_fact_review!=='pending'||
