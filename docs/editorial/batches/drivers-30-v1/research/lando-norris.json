@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
           "locator": "Hall of Fame 'McLaren Driver' section: first season in 2019 with Carlos Sainz.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/race-top-british-grand-prix-reveals-strength-fia-single-seater-ladder",
+          "locator": "25 July 2019 feature, paragraphs 'down in the McLaren garage' and 'For Norris the progression': 2019 rookie F1 season with McLaren.",
+          "supports": true
         }
       ]
     },
@@ -71,9 +76,8 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Reconcile identity with pinned F1DB before use.",
-    "Attach precise per-claim source locator and independent publisher corroboration.",
-    "Assign accountable human author and independent human reviewer for both languages."
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
   ],
   "additional_sources": [
     {
@@ -86,6 +90,13 @@
     {
       "url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
       "title": "F1 - Norris crowned FIA Formula One World Champion",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/race-top-british-grand-prix-reveals-strength-fia-single-seater-ladder",
+      "title": "FIA — Race to the top: British Grand Prix reveals strength of FIA single-seater ladder",
       "publisher": "FIA",
       "independence_group": "fia",
       "accessed_on": "2026-10-24"

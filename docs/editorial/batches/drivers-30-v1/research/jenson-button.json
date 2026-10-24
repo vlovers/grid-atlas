@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
           "locator": "Paragraph beginning 'His reputation as a winless wonder ended': 2006 Hungarian Grand Prix.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/2013-hungarian-grand-prix-preview",
+          "locator": "Hungarian GP Fast Facts, bullet 'Jenson Button’s march to his first win': 2006 Hungary, from 14th on grid.",
+          "supports": true
         }
       ]
     },
@@ -80,9 +85,9 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Reconcile identity with pinned F1DB.",
-    "Record precise per-claim source locators and independent corroboration.",
-    "Human review of both languages and exact revision required before publication."
+    "Find independent publisher passages for: jenson-button-2009-start, jenson-button-mclaren",
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
   ],
   "additional_sources": [
     {
@@ -95,6 +100,13 @@
     {
       "url": "https://www.fia.com/news/fia-goodwood-brawn-bgp-001-recent-legend",
       "title": "FIA at Goodwood: Brawn BGP 001",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/2013-hungarian-grand-prix-preview",
+      "title": "FIA 2013 Hungarian Grand Prix preview",
       "publisher": "FIA",
       "independence_group": "fia",
       "accessed_on": "2026-10-24"

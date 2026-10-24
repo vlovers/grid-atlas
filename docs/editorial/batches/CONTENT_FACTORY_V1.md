@@ -94,3 +94,12 @@ Related: issue #107, `docs/editorial/APPROVED_RELEASE_PIPELINE.md` and `docs/edi
 ## CI accessibility blocker (2026-10-24)
 
 A prior Next.js web run had **503 passes and one failure** in `tests/browser/unified-archive.spec.ts`: Ukrainian `/constructors` at a 320px viewport with forced colors and 200% root text size overflowed the viewport by 184px. The catalogue stylesheet had explicitly disabled emergency word wrapping for long Ukrainian headings. The PR now allows emergency wrapping on narrow screens and the Playwright assertion reports overflowing elements to aid diagnosis. The Next.js web workflow on commit `0a3b7d1` completed successfully on 2026-10-24 at 05:22 UTC, as did the other six PR workflows. New commits must pass their own checks.
+
+
+## 2026-10-24 — targeted evidence batch 02
+
+A second source-inspected research pass added **9 independent-publisher evidence links** to 7 cards: Vettel (Toro Rosso 2008), Mansell (31 wins), Button (2006 Hungary), Fittipaldi (first title at 25), Brabham (Cooper titles and own-team 1966 title), Damon Hill (1996 wins and Jordan's 1998 Belgium win), and Norris (2019 McLaren rookie season). The publishers are FIA articles and GP Racing Stats' historical wins table. Locators are claim-specific; no photographs were copied.
+
+The declared independent-publisher coverage is now **58/96** paired claims, with **38/96** still requiring a second publisher. This measures metadata-linked passages, **not** independent semantic fact checks, verified translations, or human approval. Run `node scripts/editorial-review-packet.mjs` to export an unsigned EN/UK worksheet with all claims, publisher groups, locators, and pending review status. Use `--driver=jack-brabham` to scope a review. The worksheet never writes sidecars or publishes content.
+
+The previous PR head 091a2d3 completed **all seven GitHub Actions workflows successfully** (Foundation, editorial preflight, F1DB integration, real-archive acceptance, Historical API, Next.js web, unified archive). New commits require their own green CI before merge. All 25 new cards remain unpublished.

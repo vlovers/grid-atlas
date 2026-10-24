@@ -44,6 +44,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jack-brabham.3XK2XWdL0moCmnSC55m84J",
           "locator": "Opening paragraph: third title in a Brabham; 1966 paragraph on car of his own make.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/sir-jack-brabham-1926-2014",
+          "locator": "Opening FIA tribute paragraph: 1966 championship as only driver to build and race a car to the title; FIA President tribute repeats own-team car.",
+          "supports": true
         }
       ]
     },
@@ -58,6 +63,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jack-brabham.3XK2XWdL0moCmnSC55m84J",
           "locator": "Opening paragraph: first two titles in rear-engined Coopers he helped develop.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/sir-jack-brabham-1926-2014",
+          "locator": "Paragraphs beginning 'After striking up a successful partnership with Cooper' and 'More success followed in 1960': both Cooper championship seasons.",
+          "supports": true
         }
       ]
     }
@@ -66,14 +76,20 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Reconcile identity with pinned F1DB before use.",
-    "Attach precise per-claim source locator and independent publisher corroboration.",
-    "Assign accountable human author and independent human reviewer for both languages."
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
   ],
   "additional_sources": [
     {
       "url": "https://halloffame.fia.com/",
       "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/sir-jack-brabham-1926-2014",
+      "title": "FIA tribute — Sir Jack Brabham 1926–2014",
       "publisher": "FIA",
       "independence_group": "fia",
       "accessed_on": "2026-10-24"

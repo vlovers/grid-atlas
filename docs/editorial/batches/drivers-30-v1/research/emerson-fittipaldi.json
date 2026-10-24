@@ -44,6 +44,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
           "locator": "Paragraph beginning 'In 1972 the Lotus 72': five victories and first world title at age 25.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-usa-gp-race-preview",
+          "locator": "Race Stewards Biographies, 'EMERSON FITTIPALDI' paragraph: first title in 1972 at age 25 years and 273 days.",
+          "supports": true
         }
       ]
     },
@@ -80,14 +85,21 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Reconcile identity with pinned F1DB before use.",
-    "Attach precise per-claim source locator and independent publisher corroboration.",
-    "Assign accountable human author and independent human reviewer for both languages."
+    "Find independent publisher passages for: emerson-fittipaldi-1970-debut, emerson-fittipaldi-1970-first-win",
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
   ],
   "additional_sources": [
     {
       "url": "https://halloffame.fia.com/",
       "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-usa-gp-race-preview",
+      "title": "FIA United States Grand Prix race preview — Emerson Fittipaldi biography",
       "publisher": "FIA",
       "independence_group": "fia",
       "accessed_on": "2026-10-24"

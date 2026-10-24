@@ -58,6 +58,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
           "locator": "Final career paragraph beginning 'With no top drives available': Jordan's first win at the 1998 Belgian Grand Prix.",
           "supports": true
+        },
+        {
+          "source_url": "https://gpracingstats.com/drivers/damon-hill/wins/",
+          "locator": "Wins by constructor table: Jordan — 1 win; Wins by Grand Prix table: Belgium 1998.",
+          "supports": true
         }
       ]
     },
@@ -86,6 +91,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
           "locator": "Paragraph beginning 'And yet when he duly took the driving title in 1996': eight wins in 16 races.",
           "supports": true
+        },
+        {
+          "source_url": "https://gpracingstats.com/drivers/damon-hill/wins/",
+          "locator": "Wins by year table: 1996 — Williams — 8 wins; title separately linked in the card.",
+          "supports": true
         }
       ]
     }
@@ -94,9 +104,9 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Reconcile identity with pinned F1DB before use.",
-    "Attach precise per-claim source locator and independent publisher corroboration.",
-    "Assign accountable human author and independent human reviewer for both languages."
+    "Find independent publisher passages for: damon-hill-brabham, damon-hill-1994-runner-up",
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
   ],
   "additional_sources": [
     {
@@ -104,6 +114,13 @@
       "title": "FIA 2016 Italian Grand Prix media kit — F1 World Champions since 1950",
       "publisher": "FIA",
       "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://gpracingstats.com/drivers/damon-hill/wins/",
+      "title": "GP Racing Stats — Damon Hill wins",
+      "publisher": "GP Racing Stats",
+      "independence_group": "gpracingstats",
       "accessed_on": "2026-10-24"
     }
   ]
