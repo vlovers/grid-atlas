@@ -56,7 +56,7 @@ const history: Record<string, LocaleStory> = {
   }
 };
 
-export function CircuitHistoryStories({ circuitId, locale, history = [] }: { circuitId: string; locale: 'en' | 'uk'; history?: {race_id:string;season_year:number;race_name:string}[] }) {
+export function CircuitHistoryStories({ circuitId, locale, history: races = [] }: { circuitId: string; locale: 'en' | 'uk'; history?: {race_id:string;season_year:number;race_name:string}[] }) {
   const entry = history[circuitId]?.[locale];
   if (!entry) return null;
   return <section className={styles.story} data-testid="circuit-historical-stories" aria-labelledby="circuit-stories-heading">
@@ -67,7 +67,7 @@ export function CircuitHistoryStories({ circuitId, locale, history = [] }: { cir
     <div className={styles.timeline}>{entry.moments.map(moment => <article className={styles.moment} key={moment.year}>
       <span className={styles.year}>{moment.year}</span>
       <div><h3>{moment.title}</h3><p>{moment.description}</p>
-        {history.find(race => String(race.season_year) === moment.year) && <Link href={`/races/${history.find(race => String(race.season_year) === moment.year)!.race_id}`}>{locale === 'uk' ? 'Дослідити гонку в архіві' : 'Explore this race in the archive'} ↗</Link>}
+        {races.find(race => String(race.season_year) === moment.year) && <Link href={`/races/${races.find(race => String(race.season_year) === moment.year)!.race_id}`}>{locale === 'uk' ? 'Дослідити гонку в архіві' : 'Explore this race in the archive'} ↗</Link>}
         {' · '}<a href={moment.url} target="_blank" rel="noopener noreferrer">{locale === 'uk' ? 'Джерело: Formula 1' : 'Source: Formula 1'} ↗</a>
       </div>
     </article>)}</div>
