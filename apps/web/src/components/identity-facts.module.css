@@ -8,3 +8,8 @@
 .identity summary { cursor: pointer; padding-block: .75rem; }
 .identity details { margin-block: .75rem 1rem; }
 .identity code { display: block; font-size: .8rem; }
+
+.identity > details > summary { display: list-item; padding-block: 1rem; cursor: pointer; min-height: 44px; }
+.identity > details > summary h2 { display: inline; vertical-align: middle; }
+.identity > details > summary h2 { font-size: clamp(1.5rem,2.5vw,2.1rem); margin: .25rem 0; }
+.identity > details > summary p { margin: 0; }

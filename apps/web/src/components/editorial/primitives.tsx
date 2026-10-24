@@ -8,7 +8,7 @@ export type EditorialLocale = 'uk' | 'en';
 export type Statistic = { label: string; value: ReactNode };
 
 export function SectionHeading({ kicker, title, note, id }: { kicker: string; title: string; note?: string; id: string }) {
-  return <header className={styles.sectionHeading}><div><p className={styles.kicker}>{kicker}</p><h2 id={id} tabIndex={-1}>{title}</h2></div>{note && <p>{note}</p>}</header>;
+  return <header className={styles.sectionHeading} data-story-reveal><div><p className={styles.kicker}>{kicker}</p><h2 id={id} tabIndex={-1}>{title}</h2></div>{note && <p>{note}</p>}</header>;
 }
 
 export function StatisticStrip({ stats, className = '', scope }: { stats: readonly Statistic[]; className?: string; scope?: string }) {

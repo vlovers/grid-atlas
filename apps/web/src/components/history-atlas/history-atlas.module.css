@@ -1,10 +1,10 @@
 .page {
   min-width: 0;
   overflow-wrap: anywhere;
-  padding-top: 44px;
+  padding-top: 28px;
 }
 .page :is(a, button, select, input, summary):focus-visible {
-  outline: 3px solid #f9b08e;
+  outline: 3px solid var(--focus-ring);
   outline-offset: 4px;
 }
 .page a {
@@ -18,7 +18,7 @@
 }
 .hero {
   display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr);
   gap: 32px;
   align-items: center;
   padding-bottom: 24px;
@@ -27,7 +27,7 @@
 .hero h1 {
   font-size: clamp(3rem, 5.5vw, 5.5rem);
   line-height: 0.95;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.025em;
   margin: 16px 0;
   max-width: none;
 }
@@ -38,7 +38,7 @@
 .hero p:last-child {
   color: var(--muted);
   max-width: 56ch;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 .heroMarker {
@@ -46,7 +46,7 @@
   min-width: 0;
   display: grid;
   place-items: center;
-  min-height: 170px;
+  min-height: 130px;
   overflow: hidden;
   background: radial-gradient(ellipse at 50% 50%, #ef604f12, transparent 70%);
 }
@@ -70,7 +70,7 @@
   font-size: clamp(5rem, 8vw, 8rem);
   font-weight: 850;
   letter-spacing: -0.08em;
-  color: #f3f0e8;
+  color: var(--ink);
   z-index: 1;
   font-variant-numeric: tabular-nums;
 }
@@ -81,10 +81,10 @@
   color: var(--muted);
 }
 .search {
-  margin: 24px 0;
+  margin: 16px 0;
   border: 1px solid var(--line);
-  padding: 20px 24px;
-  background: #10171e;
+  padding: 10px 20px;
+  background: var(--surface);
 }
 .search summary {
   font-weight: 650;
@@ -114,8 +114,8 @@
 }
 .page :is(input, select) {
   min-height: 48px;
-  background: #0b0f14;
-  border: 1px solid #51616e;
+  background: var(--background);
+  border: 1px solid var(--muted);
   color: var(--ink);
   border-radius: 3px;
   padding: 10px 12px;
@@ -129,8 +129,8 @@
 }
 .search button,
 .timeline button {
-  background: #ef604f;
-  color: #101419;
+  background: var(--accent-ink);
+  color: var(--background);
   border: 1px solid transparent;
   padding: 12px 18px;
   font: inherit;
@@ -147,21 +147,21 @@
 }
 .searchResults li {
   min-width: 0;
-  background: #10171e;
+  background: var(--surface);
 }
 .searchResults a {
   display: grid;
   position: relative;
   padding: 22px;
   gap: 8px;
-  min-height: 155px;
+  min-height: 120px;
   height: 100%;
   color: var(--ink);
   transition: background 0.2s;
   overflow-wrap: anywhere;
 }
 .searchResults a:hover {
-  background: #1c2833;
+  background: var(--surface-raised);
 }
 .searchResults span,
 .searchResults small {
@@ -169,8 +169,8 @@
   font-size: 0.8rem;
 }
 .searchResults strong {
-  font-size: 1.4rem;
-  letter-spacing: -0.03em;
+  font: 500 1.8rem/1.15 var(--font-display);
+  letter-spacing: -0.015em;
   padding-right: 18px;
 }
 .searchResults b {
@@ -194,7 +194,7 @@
   align-items: center;
 }
 .trail {
-  margin: 28px 0;
+  margin: 12px 0;
   font-size: 0.85rem;
   color: var(--muted);
   align-items: center;
@@ -204,7 +204,7 @@
 }
 .timeline {
   border-top: 1px solid var(--line);
-  padding: 24px 0 12px;
+  padding: 16px 0 6px;
 }
 .timelineHeading {
   display: flex;
@@ -214,7 +214,7 @@
   flex-wrap: wrap;
 }
 .timeline h2 {
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   margin: 0;
   letter-spacing: -0.05em;
 }
@@ -222,15 +222,15 @@
   display: flex;
   gap: 0;
   overflow-x: auto;
-  padding: 14px 2px 10px;
-  scrollbar-color: #ef604f #131c25;
+  padding: 8px 2px;
+  scrollbar-color: var(--accent-ink) var(--surface);
 }
 .yearRail a {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 82px;
-  padding: 16px 12px;
+  padding: 10px 12px;
   color: var(--muted);
   font-size: 1.3rem;
   font-weight: 650;
@@ -242,10 +242,10 @@
   height: 6px;
   border-radius: 50%;
   background: #667986;
-  margin-top: 14px;
+  margin-top: 8px;
 }
 .yearRail a[aria-current] {
-  color: #f3f0e8;
+  color: var(--ink);
   background: linear-gradient(0deg, #ef604f15, transparent);
   border-color: var(--accent);
 }
@@ -256,8 +256,8 @@
 .workbench {
   min-width: 0;
   margin-top: 28px;
-  border: 1px solid #354552;
-  background: #0d1319;
+  border: 1px solid var(--line);
+  background: var(--surface);
 }
 .mapHeading {
   display: flex;
@@ -265,7 +265,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 24px;
-  border-bottom: 1px solid #354552;
+  border-bottom: 1px solid var(--line);
 }
 .mapHeading h2 {
   font-size: clamp(1.4rem, 3vw, 2.2rem);
@@ -286,12 +286,7 @@
 }
 .mapPanel {
   min-width: 0;
-  background: radial-gradient(
-    ellipse at 50% 45%,
-    #20303e 0%,
-    #101820 48%,
-    #0b1016 100%
-  );
+  background: var(--background);
 }
 .mapToolbar {
   display: flex;
@@ -312,8 +307,8 @@
 }
 .mapToolbar button,
 .share button {
-  background: #17242f;
-  border: 1px solid #51616e;
+  background: var(--surface-raised);
+  border: 1px solid var(--muted);
   color: var(--ink);
   min-width: 44px;
   border-radius: 2px;
@@ -328,17 +323,17 @@
 }
 .canvas {
   width: 100%;
-  height: 560px;
+  height: 460px;
   position: relative;
   overflow: hidden;
 }
 .canvas :global(.react-flow) {
   background: transparent;
-  --xy-controls-button-background-color-default: #15212c;
+  --xy-controls-button-background-color-default: var(--surface);
   --xy-controls-button-background-color-hover-default: #2b3b49;
-  --xy-controls-button-color-default: #f3f0e8;
-  --xy-controls-button-border-color-default: #506371;
-  --xy-attribution-background-color-default: #131c25;
+  --xy-controls-button-color-default: var(--ink);
+  --xy-controls-button-border-color-default: var(--muted);
+  --xy-attribution-background-color-default: var(--surface);
 }
 .canvas :global(.react-flow__controls-button) {
   width: 44px;
@@ -346,20 +341,20 @@
   box-sizing: border-box;
 }
 .canvas :global(.react-flow__attribution) a {
-  color: #b2c1ce;
+  color: var(--muted);
 }
 .canvas :global(.react-flow__node) {
   border: none;
   border-radius: 4px;
 }
 .canvas :global(.react-flow__node.selected) .identity {
-  border-color: #ef604f;
+  border-color: var(--accent-ink);
   box-shadow:
     0 0 0 3px #ef604f33,
     0 14px 40px #0006;
 }
 .canvas :global(.react-flow__node:focus-visible) {
-  outline: 3px solid #ffc3a1;
+  outline: 3px solid var(--focus-ring);
   outline-offset: 6px;
 }
 .canvas :global(.react-flow__handle) {
@@ -373,8 +368,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(135deg, #1d2b37, #111c25);
-  border: 1px solid #6a7e8b;
+  background: linear-gradient(135deg, var(--surface-raised), var(--surface));
+  border: 1px solid var(--muted);
   box-sizing: border-box;
   border-radius: 4px;
   transition:
@@ -385,7 +380,7 @@
   font-size: 10px;
   line-height: 1.25;
   flex-shrink: 0;
-  color: #b4c3cf;
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.14em;
 }
@@ -404,12 +399,12 @@
   font-size: 11px;
   line-height: 1.25;
   flex-shrink: 0;
-  color: #b4c3cf;
+  color: var(--muted);
 }
 .identity.core {
   width: 256px;
   height: 200px;
-  border-color: #ef604f;
+  border-color: var(--accent-ink);
   padding: 20px;
   background: linear-gradient(145deg, #71332b, #211a1c 65%);
   box-shadow: 0 0 60px #ef604f15;
@@ -435,12 +430,12 @@
   padding: 0 20px;
 }
 .notice {
-  color: #ffc3a1;
+  color: var(--focus-ring);
   line-height: 1.7;
 }
 .inspector {
-  border-left: 1px solid #354552;
-  background: #131c25;
+  border-left: 1px solid var(--line);
+  background: var(--surface);
   padding: 24px;
   min-width: 0;
   overflow-wrap: anywhere;
@@ -462,7 +457,7 @@
 .counts {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 24px 0;
+  margin: 16px 0;
 }
 .counts > div {
   display: flex;
@@ -473,7 +468,7 @@
   border-bottom: 1px solid #ffffff15;
 }
 .counts dt {
-  color: #b0bdc9;
+  color: var(--muted);
   font-size: 0.8rem;
   max-width: 19ch;
 }
@@ -491,8 +486,8 @@
 }
 .inspector .pivot {
   justify-content: space-between;
-  background: #ef604f;
-  color: #101419;
+  background: var(--accent-ink);
+  color: var(--background);
   padding: 12px 16px;
   font-weight: 750;
   margin-bottom: 8px;
@@ -519,7 +514,7 @@
   color: #c5d5c8;
 }
 .empty {
-  min-height: 460px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,7 +538,7 @@
 }
 .connectionSection {
   padding: 28px 24px;
-  border-top: 1px solid #354552;
+  border-top: 1px solid var(--line);
   scroll-margin-top: 20px;
 }
 .connectionSection h3 {
@@ -555,8 +550,8 @@
 }
 .connectionList {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 0;
   list-style: none;
   padding: 0;
 }
@@ -588,7 +583,7 @@
 }
 .connectionList button[aria-pressed="true"] {
   background: #ef604f17;
-  box-shadow: inset 3px 0 #ef604f;
+  box-shadow: inset 3px 0 var(--accent-ink);
 }
 .connectionList li > a {
   width: 44px;
@@ -596,15 +591,15 @@
   display: grid;
   place-items: center;
   border-left: 1px solid var(--line);
-  color: #ef604f;
+  color: var(--accent-ink);
 }
 .continue {
-  padding: 20px 24px;
+  padding: 10px 20px;
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
 }
 .sources {
-  padding: 20px 24px;
+  padding: 10px 20px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
@@ -627,14 +622,14 @@
 }
 .related > a {
   position: relative;
-  min-height: 190px;
+  min-height: 160px;
   padding: 28px;
-  background: linear-gradient(140deg, #253541, #10171f 80%);
+  background: var(--surface);
   border: 1px solid var(--line);
   transition: border-color 0.2s;
 }
 .related > a:hover {
-  border-color: #ef604f;
+  border-color: var(--accent-ink);
 }
 .related span {
   font-size: 0.72rem;
@@ -654,7 +649,7 @@
 }
 @media (min-width: 1500px) {
   .canvas {
-    height: 640px;
+    height: 520px;
   }
 }
 @media (max-width: 1000px) {
@@ -663,7 +658,7 @@
   }
   .inspector {
     border-left: 0;
-    border-top: 1px solid #354552;
+    border-top: 1px solid var(--line);
   }
   .counts {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -727,7 +722,7 @@
     font-size: 0.7rem;
   }
   .canvas {
-    height: 470px;
+    height: 430px;
   }
   .mapToolbar {
     padding: 8px 10px;

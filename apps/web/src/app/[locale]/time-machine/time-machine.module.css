@@ -1,5 +1,5 @@
 .page {
-  max-width: 1280px;
+  max-width: var(--measure);
 }
 .entityForm,
 .yearForm {
@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   margin: 34px 0 28px;
   padding: 22px;
-  border: 1px solid #343f49;
+  border: 1px solid var(--line);
   background: linear-gradient(135deg, #151d25, #10151a);
 }
 .entityForm label,
@@ -18,7 +18,7 @@
   flex: 1 1 210px;
   flex-direction: column;
   gap: 7px;
-  color: #c3cbd1;
+  color: var(--muted);
   font-size: 13px;
 }
 .entityForm select,
@@ -41,10 +41,10 @@
 .searchResults ul {
   list-style: none;
   padding: 0;
-  border-top: 1px solid #343f49;
+  border-top: 1px solid var(--line);
 }
 .searchResults li {
-  border-bottom: 1px solid #343f49;
+  border-bottom: 1px solid var(--line);
 }
 .searchResults li a {
   display: grid;
@@ -56,7 +56,7 @@
 }
 .searchResults li a:hover {
   background: #1c252d;
-  color: #ff8978;
+  color: var(--accent-ink);
 }
 .searchResults li span:first-child {
   color: #9eabb5;
@@ -67,7 +67,7 @@
   overflow-wrap: anywhere;
 }
 .yearBridge {
-  color: #ed624d;
+  color: var(--accent-ink);
   font-size: 24px;
   padding: 0 6px 8px;
 }
@@ -78,11 +78,11 @@
   max-width: 760px;
   margin: 55px 0 110px;
   align-items: stretch;
-  color: #b9c3cb;
+  color: var(--muted);
   font-size: 18px;
 }
 .promptLine {
-  background: linear-gradient(#ed624d, transparent);
+  background: linear-gradient(var(--accent-ink), transparent);
   min-height: 72px;
 }
 .comparisonHero {
@@ -125,7 +125,7 @@
   width: clamp(32px, 7vw, 80px);
   height: 2px;
   position: relative;
-  background: #ed624d;
+  background: var(--accent-ink);
 }
 .heroYears i:after {
   content: "";
@@ -134,8 +134,8 @@
   top: -4px;
   width: 8px;
   height: 8px;
-  border-top: 2px solid #ed624d;
-  border-right: 2px solid #ed624d;
+  border-top: 2px solid var(--accent-ink);
+  border-right: 2px solid var(--accent-ink);
   transform: rotate(45deg);
 }
 .comparisonHero > p {
@@ -149,7 +149,7 @@
 .disclaimer {
   max-width: 900px;
   margin: 18px 0 44px;
-  color: #b9c3cb;
+  color: var(--muted);
   font-size: 14px;
 }
 .groups {
@@ -191,7 +191,7 @@
 }
 .association {
   min-width: 0;
-  border: 1px solid #343f49;
+  border: 1px solid var(--line);
   background: #141b22;
   padding: 18px;
   transition: border-color 0.15s ease;
@@ -220,11 +220,11 @@
   line-height: 1.2;
 }
 a.entity:hover strong {
-  color: #ff8978;
+  color: var(--accent-ink);
 }
 .connector {
   height: 1px;
-  background: #ed624d;
+  background: var(--accent-ink);
   position: relative;
 }
 .connector:after {
@@ -234,8 +234,8 @@ a.entity:hover strong {
   top: -4px;
   width: 8px;
   height: 8px;
-  border-top: 1px solid #ed624d;
-  border-right: 1px solid #ed624d;
+  border-top: 1px solid var(--accent-ink);
+  border-right: 1px solid var(--accent-ink);
   transform: rotate(45deg);
 }
 .seasons {
@@ -287,7 +287,7 @@ a.entity:hover strong {
   align-items: center;
   min-height: 44px;
   margin: 2px 9px 0 0;
-  color: #ff8978;
+  color: var(--accent-ink);
   font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -304,7 +304,7 @@ a.entity:hover strong {
 }
 .empty {
   padding: 28px;
-  border: 1px solid #343f49;
+  border: 1px solid var(--line);
   background: #141b22;
   color: #c2ccd3;
 }
@@ -393,19 +393,19 @@ a.entity:hover strong {
   gap: 3rem;
   align-items: flex-end;
   padding: 2rem 0 1rem;
-  border-bottom: 1px solid #3d505e;
+  border-bottom: 1px solid var(--line);
 }
 .pageHeader h1 {
   font-size: 1rem;
   letter-spacing: 0.05em;
   font-weight: 500;
-  color: #b2c2cb;
+  color: var(--muted);
   margin: 1.5rem 0 1rem;
 }
 .pageHeader h2 {
   font-size: clamp(3rem, 6vw, 6rem);
   line-height: 0.94;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.025em;
   white-space: pre-line;
   margin: 0 0 1rem;
 }
@@ -414,8 +414,8 @@ a.entity:hover strong {
   font-size: 1rem;
 }
 .entityForm {
-  background: #131c25;
-  border-color: #3b505e;
+  background: var(--surface);
+  border-color: var(--line);
   margin: 1.5rem 0;
 }
 .entityForm label,
@@ -424,8 +424,8 @@ a.entity:hover strong {
 }
 .yearForm {
   border: 0;
-  border-block: 1px solid #405865;
-  background: linear-gradient(100deg, #193b3c, #131c25 45%, #322533);
+  border-block: 1px solid var(--line);
+  background: var(--surface);
   padding: 1.5rem 2rem;
   gap: 1.2rem;
 }
@@ -436,16 +436,16 @@ a.entity:hover strong {
   border: 0;
   border-bottom: 1px solid #82959f;
   min-height: 60px;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.025em;
 }
 .yearForm label:first-of-type {
-  color: #a3d5c7;
+  color: var(--chart-earlier);
 }
 .yearForm label:last-of-type {
-  color: #cab4e8;
+  color: var(--chart-later);
 }
 .yearBridge {
-  color: #f3f0e8;
+  color: var(--ink);
   font-size: 2rem;
   align-self: center;
 }
@@ -462,7 +462,7 @@ a.entity:hover strong {
 }
 .stageHeader h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   line-height: 1;
   overflow-wrap: anywhere;
   margin: 1rem 0;
@@ -474,7 +474,7 @@ a.entity:hover strong {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #b4c5cc;
+  color: var(--muted);
   line-height: 1.65;
 }
 .eras {
@@ -485,11 +485,10 @@ a.entity:hover strong {
 }
 .era {
   padding: clamp(1.2rem, 3vw, 2.5rem);
-  border: 1px solid #52716e;
+  border: 1px solid var(--line);
   min-width: 0;
   position: relative;
-  background:
-    radial-gradient(ellipse at 100% 0, #34646077, transparent 65%), #102328;
+  background: var(--surface);
 }
 .era:before {
   content: "";
@@ -504,9 +503,8 @@ a.entity:hover strong {
   opacity: 0.5;
 }
 .now {
-  border-color: #766482;
-  background:
-    radial-gradient(ellipse at 0 0, #614b7a77, transparent 65%), #211c2b;
+  border-color: var(--gold);
+  background: linear-gradient(135deg, var(--surface-raised), var(--surface));
 }
 .era > header,
 .selectedEra,
@@ -516,17 +514,18 @@ a.entity:hover strong {
 .era > header > p {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
-  color: #a8ddcc;
+  color: var(--chart-earlier);
   margin: 0 0 1rem;
 }
 .now > header > p {
-  color: #d1b8ed;
+  color: var(--chart-later);
 }
 .eraYear {
+  font-family: var(--font-mono);
   font-size: clamp(3.8rem, 8vw, 7.6rem);
   line-height: 0.9;
   letter-spacing: -0.07em;
-  color: #a8ddcc;
+  color: var(--chart-earlier);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -534,7 +533,8 @@ a.entity:hover strong {
   font-weight: 650;
 }
 .now .eraYear {
-  color: #d1b8ed;
+  font-family: var(--font-mono);
+  color: var(--chart-later);
 }
 .eraYear > span {
   font-size: 1.4rem;
@@ -552,7 +552,7 @@ a.entity:hover strong {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: #c3d3d9;
+  color: var(--muted);
   font-size: 0.8rem;
   line-height: 1.5;
   max-width: 18ch;
@@ -561,7 +561,7 @@ a.entity:hover strong {
   font-size: 1.8rem;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: #f3f0e8;
+  color: var(--ink);
   font-variant-numeric: tabular-nums;
 }
 .sharedCenter {
@@ -578,7 +578,7 @@ a.entity:hover strong {
   position: absolute;
   width: 1px;
   height: 80%;
-  background: linear-gradient(transparent, #ef604f, transparent);
+  background: linear-gradient(transparent, var(--accent-ink), transparent);
   z-index: 0;
 }
 .sharedCenter > * {
@@ -587,7 +587,7 @@ a.entity:hover strong {
   padding: 0.4rem;
 }
 .sharedCenter > span:first-child {
-  border: 1px solid #ef8b7d;
+  border: 1px solid var(--accent-ink);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -602,7 +602,7 @@ a.entity:hover strong {
 .sharedCenter > span:last-child {
   font-size: 0.75rem;
   line-height: 1.8;
-  color: #b2c2cb;
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 .selectedEra {
@@ -633,7 +633,7 @@ a.entity:hover strong {
   font-size: clamp(1.8rem, 3vw, 2.75rem);
   line-height: 1;
   margin: 0.75rem 0;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
 }
 .selectedEra nav {
@@ -659,7 +659,7 @@ a.entity:hover strong {
 }
 .unknown > span {
   font-size: 2rem;
-  color: #99a6b2;
+  color: var(--muted);
 }
 .unknown strong {
   font-size: 0.9rem;
@@ -667,12 +667,12 @@ a.entity:hover strong {
 .unknown p {
   font-size: 0.85rem;
   line-height: 1.6;
-  color: #b2c2cb;
+  color: var(--muted);
   max-width: 35ch;
   margin: 0;
 }
 .selector {
-  background: #131c25;
+  background: var(--surface);
   border: 1px solid #40535f;
   padding: clamp(1.2rem, 3vw, 2.5rem);
   margin-top: 1rem;
@@ -690,7 +690,7 @@ a.entity:hover strong {
 }
 .selector > header > p {
   font-size: 0.85rem;
-  color: #b2c2cb;
+  color: var(--muted);
   max-width: 50ch;
   line-height: 1.6;
 }
@@ -704,7 +704,7 @@ a.entity:hover strong {
 .windowNav button {
   background: #192733;
   border: 1px solid #536c7a;
-  color: #f3f0e8;
+  color: var(--ink);
   min-height: 44px;
   padding: 0.5rem 0.85rem;
   font: inherit;
@@ -712,9 +712,9 @@ a.entity:hover strong {
   cursor: pointer;
 }
 .filters button[aria-pressed="true"] {
-  background: #f3f0e8;
-  color: #0b0f14;
-  border-color: #f3f0e8;
+  background: var(--ink);
+  color: var(--background);
+  border-color: var(--ink);
 }
 .filters span {
   margin-left: 0.75rem;
@@ -731,7 +731,7 @@ a.entity:hover strong {
   gap: 0.75rem;
   background: #0f1921;
   border: 1px solid #425866;
-  color: #f3f0e8;
+  color: var(--ink);
   padding: 1.1rem;
   text-align: left;
   font: inherit;
@@ -764,17 +764,17 @@ a.entity:hover strong {
 }
 .differenceList > button[aria-pressed="true"] {
   background: #293e48;
-  border: 2px solid #f3f0e8;
+  border: 2px solid var(--ink);
   padding: calc(1.1rem - 1px);
 }
 .differenceList .added {
   border-top: 3px solid #cab2e5;
 }
 .differenceList .removed {
-  border-top: 3px solid #a8ddcc;
+  border-top: 3px solid var(--chart-earlier);
 }
 .differenceList .unchanged {
-  border-top: 3px solid #ef8b7d;
+  border-top: 3px solid var(--accent-ink);
 }
 .windowNav {
   display: flex;
@@ -822,7 +822,7 @@ a.entity:hover strong {
   margin-top: 2.5rem;
 }
 .page :focus-visible {
-  outline: 2px solid #f3f0e8;
+  outline: 2px solid var(--ink);
   outline-offset: 4px;
 }
 .page .disclaimer {
@@ -830,7 +830,7 @@ a.entity:hover strong {
   line-height: 1.7;
 }
 .stage noscript {
-  color: #b2c2cb;
+  color: var(--muted);
   line-height: 1.65;
 }
 @keyframes era-arrival {
@@ -855,6 +855,7 @@ a.entity:hover strong {
     padding: 1.2rem;
   }
   .eraYear {
+  font-family: var(--font-mono);
     font-size: clamp(2.6rem, 8vw, 5rem);
   }
   .eraOverview {
@@ -913,7 +914,7 @@ a.entity:hover strong {
   .sharedCenter:before {
     height: 1px;
     width: 90%;
-    background: linear-gradient(90deg, transparent, #ef604f, transparent);
+    background: linear-gradient(90deg, transparent, var(--accent-ink), transparent);
   }
   .sharedCenter > span:last-child {
     display: none;
@@ -925,6 +926,7 @@ a.entity:hover strong {
     padding: 1.5rem;
   }
   .eraYear {
+  font-family: var(--font-mono);
     font-size: 5rem;
   }
   .eraCounts {
@@ -1052,6 +1054,14 @@ a.entity:hover strong {
     padding: clamp(1rem, 4vw, 1.5rem);
   }
   .eraYear {
+  font-family: var(--font-mono);
     font-size: clamp(3rem, 16vw, 5rem);
   }
 }
+
+/* A selected career stays compact; recorded years and alternatives expand on demand. */
+.page [data-testid="comparison-career"] { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .25rem 1.5rem; margin-block: 1rem; padding-block: 1rem; }
+.page [data-testid="comparison-career"] h2 { font-size: clamp(1.6rem,2.8vw,2.6rem); margin: 0; }
+.page [data-testid="comparison-career"] > p { margin: 0; align-self: center; font-size: .85rem; }
+.page [data-testid="comparison-career"] > :is(details,[role=status]) { grid-column: 1/-1; }
+@media(max-width:700px) { .page [data-testid="comparison-career"] { grid-template-columns: minmax(0,1fr); } }

@@ -26,8 +26,7 @@ const circuitTypes: Record<string, [string, string]> = {
 export function IdentityFacts({ identity, locale }: { identity: IdentityDetails; locale: 'uk' | 'en' }) {
   const index = locale === 'uk' ? 0 : 1;
   return <section className={styles.identity} aria-labelledby="identity-heading" data-testid="identity-facts">
-    <header><p>{locale === 'uk' ? 'ІДЕНТИЧНІСТЬ / ДЖЕРЕЛО' : 'IDENTITY / SOURCE'}</p>
-      <h2 id="identity-heading">{locale === 'uk' ? 'Паспорт архіву' : 'Archive identity'}</h2></header>
+    <details><summary><h2 id="identity-heading">{locale === 'uk' ? 'Паспорт архіву' : 'Archive identity'}</h2></summary>
     <dl className={styles.facts}>
       <div><dt>{locale === 'uk' ? 'Ідентифікатор джерела' : 'Source identifier'}</dt><dd>{identity.source_slug} · {identity.external_id}</dd></div>
       {Object.entries(labels).map(([key, label]) => {
@@ -47,5 +46,6 @@ export function IdentityFacts({ identity, locale }: { identity: IdentityDetails;
       <p><a href={identity.source_url} target="_blank" rel="noopener noreferrer">{identity.source_slug} ↗</a></p>
     </details> : <p>{locale === 'uk' ? 'Додаткові поля ідентичності ще не імпортовано.' : 'Additional identity fields have not been imported.'}</p>}
     <Link href="/sources">{locale === 'uk' ? 'Джерела та межі статистики' : 'Sources and statistical limitations'} ↗</Link>
+    </details>
   </section>;
 }

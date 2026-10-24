@@ -3,13 +3,13 @@
   overflow-wrap:anywhere
 }
 .release h1,.release h2,.release h3,.published h3{
-  font-family:Arial, Helvetica, sans-serif;
-  letter-spacing:-.045em;
+  font-family:var(--font-display);
+  letter-spacing:-.02em;
   text-wrap:balance
 }
 .release h1{
   font-size:clamp(3rem,8vw,8.4rem);
-  line-height:.94;
+  line-height:1.04;
   max-width:12ch;
   margin:.5rem 0 1.5rem
 }
@@ -43,7 +43,7 @@
 }
 .hubHero{
   max-width:1000px;
-  padding:2rem 0 4rem
+  padding:1.5rem 0 2.5rem
 }
 .hubHero h1 span{
   display:block;
@@ -60,7 +60,9 @@
 .cover{
   position:relative;
   min-width:0;
-  min-height:480px;
+  min-height:340px;
+  display:flex;
+  align-items:flex-end;
   background:var(--surface);
   border:1px solid var(--line);
   overflow:hidden;
@@ -68,7 +70,7 @@
 }
 .cover:first-child{
   grid-column:1/-1;
-  min-height:540px
+  min-height:420px
 }
 .coverArt{
   position:absolute;
@@ -88,8 +90,7 @@
   transform:scale(1.035)
 }
 .coverCopy{
-  position:absolute;
-  bottom:0;
+  position:relative;
   padding:clamp(1.5rem,3vw,3rem);
   width:100%
 }
@@ -262,7 +263,7 @@
   grid-template-columns:1fr 1.5fr;
   gap:2rem;
   padding:clamp(1.25rem,3vw,3rem);
-  background:linear-gradient(125deg,#27302c,var(--surface));
+  background:var(--surface);
   border:1px solid var(--line)
 }
 .bigYear{
@@ -379,7 +380,7 @@
   grid-column:auto
 }
 .cover,.cover:first-child{
-  min-height:430px
+  min-height:350px
 }
 .cover:first-child .coverCopy{
   max-width:100%

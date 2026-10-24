@@ -5,7 +5,7 @@
 .eyebrow{font-size:.72rem;letter-spacing:.15em;color:var(--gold);font-weight:800}
 .legend{display:flex;gap:1.5rem;flex-wrap:wrap;margin:1.8rem 0 1rem;color:var(--ink);font-size:.82rem}
 .legend span{display:flex;align-items:center;gap:.55rem}.legend i{display:inline-block;width:.75rem;height:.75rem}
-.entriesKey,.entriesBar{background:var(--muted)}.winsKey,.winsBar{background:var(--accent-ink)}.podiumsKey,.podiumsBar{background:var(--gold)}
+.entriesKey,.entriesBar{background:var(--chart-records)}.winsKey,.winsBar{background:var(--chart-wins)}.podiumsKey,.podiumsBar{background:var(--chart-podiums)}
 .scroll{overflow-x:auto;overscroll-behavior-x:contain;padding:.5rem 0 1rem}
 .chart{display:grid;grid-template-columns:repeat(var(--seasons),minmax(58px,1fr));gap:clamp(.2rem,.7vw,.8rem);min-width:max(100%,calc(var(--seasons)*58px));list-style:none;margin:0;padding:0}
 .chart li{min-width:0}.chart a{display:flex;flex-direction:column;align-items:center;gap:.4rem;color:inherit;text-decoration:none;padding:.4rem .2rem .65rem;border-bottom:2px solid var(--line)}
@@ -17,3 +17,13 @@
 @media(max-width:720px){.intro{display:block}.intro p{margin-top:1rem}.chart{grid-template-columns:repeat(var(--seasons),minmax(66px,1fr));min-width:max(100%,calc(var(--seasons)*66px))}}
 @media(prefers-reduced-motion:reduce){.plot>span{transition:none}}
 @media(forced-colors:active){.section{background:Canvas;color:CanvasText}.entriesBar,.winsBar{background:Highlight}.chart a{color:LinkText}}
+
+.podiumsKey,.podiumsBar { background: repeating-linear-gradient(135deg,var(--chart-podiums) 0 3px,var(--surface) 3px 5px); border: 1px solid var(--chart-podiums); }
+.plot > span[style*="height:0%"], .plot > span[style*="height: 0%"] { display: none; }
+.winsKey { border-radius: 50%; }
+.values { margin-top: 1rem; border-top: 1px solid var(--line); }
+.values summary { padding-block: .8rem; cursor: pointer; min-height: 44px; }
+.values table { min-width: 30rem; font-size: .9rem; }
+.values caption { text-align: left; padding-block: 1rem; }
+.values td { font-family: var(--font-mono); }
+.values th { white-space: normal; }
