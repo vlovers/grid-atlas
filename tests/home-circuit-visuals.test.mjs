@@ -22,5 +22,7 @@ test('home imagery preserves author license and bilingual exact layout labels', 
   assert.match(home, /Historical layout/);
   assert.match(css, /\.circuitPreview img/);
   assert.match(css, /object-fit: contain/);
+  assert.match(css, /background: #11161c/);
+  assert.match(css, /@media \(forced-colors: active\)/);
   assert.ok(manifest.length >= 150, 'Expected pinned historical circuit outlines');
 });
