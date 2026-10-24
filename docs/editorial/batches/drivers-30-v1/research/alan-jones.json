@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Jones won the 1980 Formula 1 Drivers' World Championship with Williams.",
       "uk": "Джонс виграв чемпіонат світу Формули-1 серед пілотів 1980 року з Williams.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alan-jones.2g6TF5HMcodjT4Jd6Xuub2",
+          "locator": "Paragraph beginning 'In 1980 the Williams FW07B': five wins and 1980 World Championship with Williams.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "alan-jones-partnership",
       "topic": "career_chronology",
-      "en": "His partnership with Williams helped establish the team as a championship contender.",
-      "uk": "Співпраця Джонса з Williams допомогла команді стати претендентом на чемпіонський титул.",
-      "review_status": "needs_review"
+      "en": "Jones won four Grands Prix for Williams in 1979 and finished third in the Drivers' Championship.",
+      "uk": "У 1979 році Джонс здобув чотири перемоги за Williams і посів третє місце в чемпіонаті серед пілотів.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alan-jones.2g6TF5HMcodjT4Jd6Xuub2",
+          "locator": "Paragraph beginning 'A deal was done': four victories and third place in the 1979 championship with Williams.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
