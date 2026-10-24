@@ -20,7 +20,8 @@
     "audit:editorial": "node scripts/editorial-content-coverage.mjs",
     "audit:editorial:strict": "node scripts/editorial-content-coverage.mjs --require-evidence",
     "audit:editorial:corroboration": "node scripts/editorial-content-coverage.mjs --require-corroboration",
-    "audit:editorial:narratives": "node scripts/editorial-narrative-audit.mjs"
+    "audit:editorial:narratives": "node scripts/editorial-narrative-audit.mjs",
+    "audit:editorial:queue": "node scripts/editorial-corroboration-queue.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
-import {inspectResearchCard,safeHttpsUrl,summarizeCoverage} from '../scripts/editorial-batch-model.mjs';
+import {inspectResearchCard,safeHttpsUrl,summarizeCoverage,sourcePublisherMismatch} from '../scripts/editorial-batch-model.mjs';
 const card=()=>({
   schema_version:1,driver_id:'sample',status:'research_only',publication_status:'unpublished',
   reviewer:null,reviewed_at:null,media:[],gaps:['Await independent editorial review'],
@@ -50,12 +50,12 @@ test('real 30-driver batch reports 5 pilots and 25 research cards without invent
   assert.equal(report.totals.approved_for_publication,0);
   assert.equal(report.totals.research_claims_with_evidence,96);
   assert.equal(report.totals.research_claims_without_evidence,0);
-  assert.equal(report.totals.research_claims_with_independent_corroboration,0);
+  assert.ok(report.totals.research_claims_with_independent_corroboration>=49,'FIA corroboration batch must not regress');
   assert.equal(report.drivers.filter(x=>x.kind==='research_draft').length,25);
   const strict=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-evidence'],{encoding:'utf8'});
   assert.equal(strict.status,0,'all 96 research claims should have declared, structurally valid evidence');
   const corroborated=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-corroboration'],{encoding:'utf8'});
-  assert.equal(corroborated.status,1,'same-publisher source links are not independent corroboration');
+  assert.equal(corroborated.status,1,'unresolved claims must still block the independent-source gate');
 });
 
 test('additional evidence must use declared safe sources with complete metadata',()=>{
@@ -80,4 +80,31 @@ test('research source registry rejects duplicate URLs and undeclared evidence',(
   c.additional_sources=[];
   c.claims[0].evidence[0].source_url='https://not-declared.example.org';
   assert.ok(inspectResearchCard(c,'sample').errors.includes('invalid_claim_evidence:sample-one'));
+});
+
+test('FIA and Formula 1 publisher groups cannot be spoofed with unrelated hosts',()=>{
+  assert.equal(sourcePublisherMismatch({url:'https://www.fia.com/news/history',publisher:'FIA',independence_group:'fia'}),false);
+  assert.equal(sourcePublisherMismatch({url:'https://api.fia.com/news/history',publisher:'FIA',independence_group:'fia'}),false);
+  assert.equal(sourcePublisherMismatch({url:'https://halloffame.fia.com/',publisher:'FIA',independence_group:'fia'}),false);
+  assert.equal(sourcePublisherMismatch({url:'https://www.formula1.com/en/history',publisher:'Formula 1',independence_group:'formula1'}),false);
+  assert.equal(sourcePublisherMismatch({url:'https://www.formula1.com/en/history',publisher:'FIA',independence_group:'fia'}),true);
+  assert.equal(sourcePublisherMismatch({url:'https://fake-fia.example.org/news',publisher:'FIA',independence_group:'fia'}),true);
+  const fake=card();fake.source={url:'https://www.fia.com/news/history',publisher:'Formula 1',independence_group:'formula1',accessed_on:'2026-10-24'};
+  fake.claims[0].evidence[0].source_url=fake.source.url;
+  assert.ok(inspectResearchCard(fake,'sample').errors.includes('source_publisher_identity'));
+  const extra=card();extra.additional_sources=[{url:'https://www.fia.com/news/history',title:'FIA record',publisher:'Formula 1',independence_group:'formula1',accessed_on:'2026-10-24'}];
+  extra.claims[0].evidence.push({source_url:extra.additional_sources[0].url,locator:'Specific historical result table row 1950',supports:true});
+  assert.ok(inspectResearchCard(extra,'sample').errors.includes('additional_source_publisher_identity'));
+});
+
+test('independent corroboration queue tracks all 96 research claims without approving publication',()=>{
+  const run=spawnSync(process.execPath,['scripts/editorial-corroboration-queue.mjs'],{encoding:'utf8'});
+  assert.equal(run.status,0,run.stderr);
+  const queue=JSON.parse(run.stdout);
+  assert.equal(queue.totals.drivers,25);
+  assert.equal(queue.totals.claims,96);
+  assert.ok(queue.totals.claims_with_independent_publisher_links>=49);
+  assert.equal(queue.totals.claims_with_independent_publisher_links+queue.totals.pending_independent_publisher,96);
+  assert.equal(queue.totals.approved_for_publication,0);
+  assert.equal(queue.drivers.length,25);
 });

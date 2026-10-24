@@ -9,6 +9,20 @@ export function safeHttpsUrl(value) {
   }
 }
 
+
+// Prevent publisher impersonation from inflating independent-source coverage.
+// This is a metadata consistency check, not a live source verification.
+export function sourcePublisherMismatch(source) {
+  if (!safeHttpsUrl(source?.url)) return false;
+  const host = new URL(source.url).hostname.toLowerCase();
+  const official = host === 'fia.com' || host.endsWith('.fia.com') ? 'fia'
+    : host === 'formula1.com' || host.endsWith('.formula1.com') ? 'formula1'
+    : null;
+  if (official === 'fia') return source.publisher !== 'FIA' || source.independence_group !== 'fia';
+  if (official === 'formula1') return source.publisher !== 'Formula 1' || source.independence_group !== 'formula1';
+  return source.independence_group === 'fia' || source.independence_group === 'formula1';
+}
+
 const hasText = value => typeof value === 'string' && value.trim().length > 0;
 
 export function inspectResearchCard(card, expectedId) {
@@ -23,6 +37,7 @@ export function inspectResearchCard(card, expectedId) {
   if (card.status !== 'research_only' || card.publication_status !== 'unpublished' ||
       card.reviewer !== null || card.reviewed_at !== null) errors.push('publication_gate');
   if (!safeHttpsUrl(card.source?.url)) errors.push('source_url');
+  if (sourcePublisherMismatch(card.source)) errors.push('source_publisher_identity');
   if (!hasText(card.source?.publisher) || !hasText(card.source?.independence_group) ||
       !hasText(card.source?.accessed_on)) errors.push('source_metadata');
   if (!Array.isArray(card.media) || card.media.length !== 0) errors.push('unapproved_media');
@@ -41,6 +56,7 @@ export function inspectResearchCard(card, expectedId) {
       errors.push('additional_source_metadata');
       continue;
     }
+    if (sourcePublisherMismatch(source)) errors.push('additional_source_publisher_identity');
     if (sourceRegistry.has(source.url)) errors.push('duplicate_source_url');
     else sourceRegistry.set(source.url, source);
   }
