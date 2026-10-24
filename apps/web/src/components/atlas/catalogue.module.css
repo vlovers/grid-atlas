@@ -252,3 +252,13 @@
   .catalogue .search :global(.actions)>button,
   .catalogue .search :global(.actions)>a { flex:1 1 auto; white-space:normal; overflow-wrap:anywhere; }
 }
+
+/* Ukrainian constructor heading must fit at 200% zoom on 320px devices. */
+@media(max-width:750px) {
+  .catalogue:global(:lang(uk)) :global([data-testid="editorial-hero"]) h1 {
+    font-size:clamp(1.45rem,7vw,3.2rem);
+    letter-spacing:-.025em;
+    overflow-wrap:anywhere;
+    min-width:0;
+  }
+}
