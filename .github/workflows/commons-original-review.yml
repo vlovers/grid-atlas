@@ -2,6 +2,12 @@ name: Commons originals research preview
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/commons-original-review.yml'
+      - 'scripts/preview-commons-originals.mjs'
+      - 'docs/media/commons-original-evidence.json'
+      - 'docs/media/verified-original-observations.json'
 
 permissions:
   contents: read
@@ -26,12 +32,17 @@ jobs:
             node -e '
               const fs=require("node:fs");
               const data=JSON.parse(fs.readFileSync(".grid-atlas/media-review/status.json","utf8"));
-              const count=data.entries.filter(x=>x.success).length;
-              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,
-                "### Original photographic evidence (NOT publication approval)\n\n" +
-                "Verified originals: **" + count + "/" + data.entries.length + "**\n\n" +
-                data.entries.map(x=>"- "+x.id+": "+(x.success?"checksum verified":"BLOCKED — "+x.error)).join("\n")+"\n\n" +
-                "This is an isolated research artifact; neither the production media registry nor public assets were changed.\n");
+              const nl=String.fromCharCode(10);
+              const summary=[
+                "### Original photographic evidence (NOT publication approval)",
+                "",
+                "Verified originals: **"+data.entries.filter(x=>x.success).length+"/"+data.entries.length+"**",
+                "",
+                ...data.entries.map(x=>"- "+x.id+": "+(x.success?"checksum verified":"BLOCKED — "+x.error)),
+                "",
+                "Research-only artifact. No production publication or rights approval."
+              ].join(nl);
+              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary+nl);
             '
           fi
       - uses: actions/upload-artifact@v4
