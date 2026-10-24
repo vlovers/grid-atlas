@@ -1,3 +1,4 @@
+import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import styles from './circuit.module.css';
@@ -88,6 +89,11 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       actions={<><a href="#circuit-layouts">{a.identity} ↓</a><a href="#circuit-history">{a.history} ↓</a></>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
+    <ArchiveHighlights locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Траса крізь епохи' : 'The circuit across eras'} description={locale === 'uk' ? 'Перший і останній зафіксовані етапи та провідні переможці. Історичні конфігурації могли змінюватися.' : 'Earliest and latest recorded events and leading winners. Historical layouts may differ.'} items={[
+      ...(chronologicalHistory[0] ? [{ id: 'first', eyebrow: locale === 'uk' ? 'ПЕРШИЙ ЕТАП В АРХІВІ' : 'FIRST ARCHIVED EVENT', title: chronologicalHistory[0].race_name, detail: String(chronologicalHistory[0].season_year), href: `/${locale}/races/${chronologicalHistory[0].race_id}` }] : []),
+      ...(chronologicalHistory.length > 1 ? [{ id: 'latest', eyebrow: locale === 'uk' ? 'ОСТАННІЙ ЕТАП В АРХІВІ' : 'LATEST ARCHIVED EVENT', title: chronologicalHistory[chronologicalHistory.length - 1].race_name, detail: String(chronologicalHistory[chronologicalHistory.length - 1].season_year), href: `/${locale}/races/${chronologicalHistory[chronologicalHistory.length - 1].race_id}` }] : []),
+      ...leadingWinners.slice(0,2).map((driver,i) => ({ id: `winner-${driver.id}`, eyebrow: i === 0 ? (locale === 'uk' ? 'ЛІДЕР ЗА ПЕРЕМОГАМИ' : 'RECORDED WIN LEADER') : (locale === 'uk' ? 'СЕРЕД ЛІДЕРІВ' : 'AMONG THE LEADERS'), title: driver.name, detail: `${driver.races.size} ${locale === 'uk' ? 'гонок із переможним записом' : 'races with first-position results'}`, href: `/${locale}/drivers/${driver.id}` }))
+    ]} />
     <EditorialTabs label={locale === 'uk' ? 'Розділи траси' : 'Circuit sections'} items={[
       { id: 'circuit-layouts', label: locale === 'uk' ? 'Конфігурації' : 'Layouts' },
       { id: 'circuit-chronology', label: locale === 'uk' ? 'Хронологія' : 'Chronology' },
