@@ -7,6 +7,8 @@ const root=resolve(import.meta.dirname,'..');
 const load=path=>JSON.parse(readFileSync(resolve(root,path),'utf8'));
 const batch=load('docs/editorial/batches/drivers-30-v1.json');
 const pilots=new Set(load('docs/editorial/releases/v1/manifest.json').drivers.map(row=>row.driver_id));
+const narratives=load('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+const chaptersByDriver=new Map(narratives.stories.map(story=>[story.driver_id,story.chapters]));
 const rows=[];
 for(const {driver_id:id} of batch.drivers){
   if(pilots.has(id))continue;
@@ -21,7 +23,9 @@ for(const {driver_id:id} of batch.drivers){
         locator:item.locator,claimed_support:item.supports===true,semantic_review:'pending'};
     });
     const groups=[...new Set(evidence.map(item=>item.publisher_group))].sort();
-    rows.push({driver_id:id,claim_id:claim.claim_id,topic:claim.topic,en:claim.en,uk:claim.uk,
+    const linked_chapters=(chaptersByDriver.get(id)??[]).filter(chapter=>chapter.claim_ids.includes(claim.claim_id))
+      .map(chapter=>({chapter_id:chapter.chapter_id,en_heading:chapter.en.heading,uk_heading:chapter.uk.heading}));
+    rows.push({driver_id:id,claim_id:claim.claim_id,topic:claim.topic,en:claim.en,uk:claim.uk,linked_chapters,
       publisher_groups:groups,independent_publisher_links:groups.length>=2,evidence,
       human_identity_review:'pending',human_fact_review:'pending',en_editorial_review:'pending',
       uk_editorial_review:'pending',publication_status:'unpublished'});
