@@ -16,7 +16,7 @@ export function auditWorkflowText(source, filename = 'workflow') {
     const actionPath = reference.split('@')[0];
     const pinnedAction = /^[A-Za-z0-9_.-]+(?:\/[A-Za-z0-9_.-]+)+@[a-f0-9]{40}$/.test(reference) &&
       actionPath.split('/').every((part) => part !== '.' && part !== '..');
-    const pinnedDocker = /^docker:\/\/[^\s]+@sha256:[a-f0-9]{64}$/.test(reference);
+    const pinnedDocker = /^docker:\/\/[A-Za-z0-9_.:/-]+@sha256:[a-f0-9]{64}$/.test(reference);
     if (!local && !pinnedAction && !pinnedDocker) {
       findings.push(filename + ':' + (i + 1) + ': action must use a static in-repository path or full immutable SHA/digest: ' + (reference || '<empty>'));
     }
