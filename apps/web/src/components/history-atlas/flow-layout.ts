@@ -15,7 +15,7 @@ export function atlasLayout(
   );
   const layout = new dagre.graphlib.Graph().setGraph({
     rankdir: direction,
-    ranksep: direction === "TB" ? 46 : 80,
+    ranksep: direction === "TB" ? 46 : 100,
     nodesep: 28,
     marginx: 24,
     marginy: 24,

@@ -28,6 +28,9 @@ for (const locale of ['en','uk'] as const) {
         expect(await chart.getByRole('table').locator('tbody tr').count()).toBe(seasonApi.data.length);
         const first=[...seasonApi.data].sort((a,b)=>a.year-b.year)[0];
         await expect(chart.getByRole('table').locator('tbody tr').first()).toContainText(String(first.year));
+        await expect(chart.getByRole('table').locator('tbody tr').first().locator('td')).toHaveText([String(first.starts),String(first.wins),String(first.podiums)]);
+        const zeroBars=chart.locator('[aria-hidden=true] > span[style*="0%"]');
+        for(const bar of await zeroBars.all()) {const height=await bar.evaluate(el=>el.getBoundingClientRect().height);const style=await bar.getAttribute('style');if(/height:\s*0%/.test(style??''))expect(height).toBe(0);}
       }
     });
   }

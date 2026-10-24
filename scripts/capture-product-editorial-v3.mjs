@@ -35,6 +35,20 @@ try {
         })) });
         page.off('pageerror', onError);
       }
+      if (width === 390) {
+        await page.goto(`${base}/${locale}/stories`);
+        await page.waitForLoadState('networkidle');
+        await page.evaluate(() => document.documentElement.style.fontSize='200%');
+        await page.screenshot({path:`${dir}/screenshots/${phase}-stories-${locale}-390-text200.jpg`,type:'jpeg',quality:86});
+        await page.evaluate(() => document.documentElement.style.fontSize='');
+      }
+      if (width === 1440) {
+        await page.goto(`${base}/${locale}/atlas?kind=driver&id=72&year=1988`);
+        await page.getByTestId('atlas-canvas').waitFor();
+        await page.waitForLoadState('networkidle');
+        await page.getByTestId('history-atlas').scrollIntoViewIfNeeded();
+        await page.screenshot({path:`${dir}/screenshots/${phase}-atlas-focus-${locale}-1440.jpg`,type:'jpeg',quality:86});
+      }
       await page.close();
     }
   }

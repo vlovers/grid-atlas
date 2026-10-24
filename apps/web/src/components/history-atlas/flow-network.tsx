@@ -128,7 +128,7 @@ function Canvas({ graph, locale, selected, onSelect }: Props) {
     animated:
       !reduce &&
       graph.nodes.find((n) => n.key === e.to)?.entity_id === selected,
-    label: recordCountLabel(e.races, locale, "races"),
+    label: `${e.races} ${locale === 'en' ? (e.races === 1 ? 'race' : 'races') : new Intl.PluralRules('uk').select(e.races) === 'one' ? 'гонка' : new Intl.PluralRules('uk').select(e.races) === 'few' ? 'гонки' : 'гонок'}`,
     ariaLabel: `${graph.nodes.find((n) => n.key === e.from)!.name} — ${graph.nodes.find((n) => n.key === e.to)!.name}. ${recordCountLabel(e.races, locale, "races")}`,
     domAttributes: { "aria-roledescription": t.connectionNode },
     style: {
