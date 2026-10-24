@@ -1,0 +1,91 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {buildReviewWorklist} from '../scripts/editorial-human-review-worklist.mjs';
+
+function fixture(){
+  const claims=[
+    {driver_id:'sample',claim_id:'early',second_publisher_pending:true,narrative_chapters:['opening','career']},
+    {driver_id:'sample',claim_id:'later',second_publisher_pending:false,narrative_chapters:['career']}
+  ];
+  const worksheet=claims.map((claim,i)=>({
+    driver_id:claim.driver_id,claim_id:claim.claim_id,topic:'history',
+    en:'Sourced English research text',uk:'Український текст дослідження',
+    independent_publisher_links:!claim.second_publisher_pending,
+    publisher_groups:claim.second_publisher_pending?['formula1']:['fia','formula1'],
+    linked_chapters:claim.narrative_chapters.map(id=>({chapter_id:id,en_heading:id,uk_heading:id})),
+    evidence:[{source_url:'https://www.formula1.com/example',locator:'Specific passage',semantic_review:'pending'}],
+    publication_status:'unpublished',human_fact_review:'pending',
+    en_editorial_review:'pending',uk_editorial_review:'pending'
+  }));
+  return {
+    provenance:{batch_id:'drivers-30-v1',mode:'unpublished_provenance_audit',
+      totals:{human_approved:0,published:0},errors:[],claims},
+    worksheet:{batch_id:'drivers-30-v1',mode:'research_review_packet',
+      totals:{human_approved:0,published:0},claims:worksheet}
+  };
+}
+function run(args=[]){
+  return spawnSync(process.execPath,['scripts/editorial-human-review-worklist.mjs',...args],
+    {encoding:'utf8',maxBuffer:16*1024*1024});
+}
+test('missing second publisher and chapter impact are deterministically prioritized',()=>{
+  const {provenance,worksheet}=fixture();
+  const report=buildReviewWorklist(provenance,worksheet);
+  assert.equal(report.totals.claims,2);
+  assert.equal(report.totals.awaiting_second_publisher,1);
+  assert.equal(report.totals.human_approved,0);
+  assert.equal(report.totals.published,0);
+  assert.equal(report.items[0].claim_id,'early');
+  assert.equal(report.items[0].priority_score,140);
+  assert.equal(report.items[1].priority_score,20);
+  assert.ok(report.items[0].review_tasks.some(x=>x.kind==='second_publisher'));
+  assert.ok(report.items.every(x=>x.review_tasks.every(task=>task.status==='pending')));
+});
+test('conflicting publisher coverage fails closed',()=>{
+  const {provenance,worksheet}=fixture();
+  worksheet.claims[0].independent_publisher_links=true;
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Publisher coverage mismatch/);
+});
+test('missing, duplicate and inconsistent claim-to-chapter provenance fail closed',()=>{
+  const {provenance,worksheet}=fixture();
+  worksheet.claims[0].linked_chapters=[];
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Chapter references mismatch/);
+  worksheet.claims[0].linked_chapters=provenance.claims[0].narrative_chapters.map(chapter_id=>({chapter_id}));
+  worksheet.claims.push(structuredClone(worksheet.claims[0]));
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Duplicate worksheet claim/);
+  worksheet.claims.pop();
+  provenance.claims.push({...provenance.claims[0],claim_id:'orphan'});
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/claim count mismatch/);
+});
+test('review status cannot be inferred from research evidence',()=>{
+  const {provenance,worksheet}=fixture();
+  worksheet.claims[0].human_fact_review='approved';
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Unexpected review state/);
+  worksheet.claims[0].human_fact_review='pending';
+  worksheet.claims[0].evidence[0].semantic_review='verified';
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Unexpected review state/);
+});
+test('real 30-driver inventory exports 96 unpublished bilingual claim review tasks',()=>{
+  const result=run();
+  assert.equal(result.status,0,result.stderr);
+  const report=JSON.parse(result.stdout);
+  assert.equal(report.totals.claims,96);
+  assert.equal(report.items.length,96);
+  assert.equal(report.totals.human_approved,0);
+  assert.equal(report.totals.published,0);
+  assert.ok(report.items.every(x=>x.en?.trim()&&x.uk?.trim()&&x.evidence.length>0));
+  assert.ok(report.items.every(x=>x.publication_status==='unpublished'));
+  assert.ok(report.items.every(x=>x.review_tasks.every(task=>task.status==='pending')));
+  assert.ok(report.items.some(x=>x.chapter_count>0));
+});
+test('filtered markdown output and invalid CLI arguments are safe',()=>{
+  const result=run(['--driver=jack-brabham','--format=markdown','--limit=2']);
+  assert.equal(result.status,0,result.stderr);
+  assert.match(result.stdout,/Content Factory V1/);
+  assert.match(result.stdout,/jack-brabham/);
+  assert.doesNotMatch(result.stdout,/human approved: [1-9]/i);
+  const bad=run(['--limit=0']);
+  assert.notEqual(bad.status,0);
+  assert.match(bad.stderr,/Invalid limit/);
+});
