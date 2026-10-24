@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson (verify page byline)",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
     "independence_group": "formula1",
-    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
   },
   "claims": [
     {
@@ -19,21 +19,42 @@
       "topic": "career_chronology",
       "en": "Button took his first Formula 1 Grand Prix victory in Hungary in 2006.",
       "uk": "Баттон здобув свою першу перемогу на Гран-прі Формули-1 в Угорщині у 2006 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'His reputation as a winless wonder ended': 2006 Hungarian Grand Prix.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jenson-button-brawn",
       "topic": "career_chronology",
       "en": "Button won the 2009 Formula 1 Drivers' World Championship driving for Brawn GP.",
       "uk": "Баттон став чемпіоном світу Формули-1 серед пілотів у 2009 році за Brawn GP.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'Nonetheless, Jenson steadily accumulated': 2009 title for Brawn GP.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jenson-button-2009-start",
       "topic": "career_chronology",
       "en": "Button won six of the first seven races of the 2009 season.",
       "uk": "Баттон виграв шість із перших семи перегонів сезону 2009 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'Against all the odds and expectations': six of first seven 2009 wins.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jenson-button-mclaren",
