@@ -4,6 +4,7 @@ import test from 'node:test';
 
 const graph = readFileSync('apps/web/src/components/editorial/record-graphic.module.css', 'utf8');
 const graphComponent = readFileSync('apps/web/src/components/editorial/record-graphic.tsx', 'utf8');
+const mediaCss = readFileSync('apps/web/src/components/media/media.module.css', 'utf8');
 const gallery = readFileSync('apps/web/src/components/media/collection.module.css', 'utf8');
 const publication = JSON.parse(readFileSync('apps/web/src/components/media/publication.json', 'utf8'));
 
@@ -31,4 +32,12 @@ test('approved-media gallery layout stays responsive and optional', () => {
   assert.match(gallery, /@media \(hover: hover\) and \(prefers-reduced-motion: no-preference\)/);
   assert.match(gallery, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(gallery, /transition: none/);
+});
+
+test('reviewed real photos reveal progressively while motion opt-out is respected', () => {
+  assert.match(mediaCss, /@keyframes reviewed-image-appear/);
+  assert.match(mediaCss, /prefers-reduced-motion: no-preference/);
+  assert.match(mediaCss, /prefers-reduced-motion: reduce/);
+  assert.match(mediaCss, /animation: none/);
+  assert.match(mediaCss, /object-fit: contain/);
 });
