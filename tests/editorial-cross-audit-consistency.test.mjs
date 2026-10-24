@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
 
 function report(script, args=[]) {
   const result=spawnSync(process.execPath,[script,...args],{encoding:'utf8'});
@@ -42,4 +43,24 @@ test('review worksheet retains unique bilingual claim identities and unpublished
     assert.ok(claim.evidence.every(e=>e.semantic_review==='pending'),key);
   }
   assert.equal(ids.size,96);
+});
+
+
+
+test('review worksheet chapter provenance matches the unpublished narrative bundle',()=>{
+  const worksheet=report('scripts/editorial-review-packet.mjs');
+  const narrative=JSON.parse(readFileSync('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json','utf8'));
+  const byDriver=new Map(narrative.stories.map(story=>[story.driver_id,story.chapters]));
+  let linked=0;
+  for(const claim of worksheet.claims){
+    const expected=(byDriver.get(claim.driver_id)??[]).filter(ch=>ch.claim_ids.includes(claim.claim_id));
+    assert.deepEqual(claim.linked_chapters.map(ch=>ch.chapter_id),expected.map(ch=>ch.chapter_id));
+    for(const chapter of claim.linked_chapters){
+      assert.ok(chapter.en_heading?.trim() && chapter.uk_heading?.trim());
+      linked++;
+    }
+    assert.equal(claim.publication_status,'unpublished');
+    assert.equal(claim.human_fact_review,'pending');
+  }
+  assert.ok(linked>0,'review worksheet should include claim-to-chapter links');
 });
