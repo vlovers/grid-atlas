@@ -46,7 +46,7 @@ for (const locale of ['uk', 'en'] as const) {
     const profile = page.getByTestId('driver-showcase');
     await expect(profile.locator('details[open]')).toHaveCount(0);
     await expect(profile.getByTestId('driver-opening')).toContainText('Synthetic shared-car race');
-    await expect(profile.getByTestId('driver-opening').getByRole('heading', { level: 3 }).getByRole('link')).toHaveAttribute('href', `/${locale}/races/1`);
+    await expect(profile.getByTestId('driver-opening').getByRole('heading', { level: 3 }).getByRole('link')).toHaveAttribute('href', `/${locale}/races/1?from=%2Fdrivers%2F1`);
     await profile.locator('#driver-graphic > summary').press('Enter');
     await expect(profile.getByTestId('career-signature')).toBeVisible();
     await profile.locator('#driver-graphic > summary').press('Enter');
