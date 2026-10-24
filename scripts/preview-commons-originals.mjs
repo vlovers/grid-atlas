@@ -5,7 +5,7 @@
  * Downloads only pinned Wikimedia Commons originals into an ignored local directory.
  */
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, writeFile, rename, stat } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -48,12 +48,12 @@ for (const item of pinned.entries) {
     let bytes;
     try { bytes = await readFile(target); verify(bytes); }
     catch (e) {
-      if (offline) throw Error('No verified cached original (' + e.message + ')');
+      if (offline) throw Error('No verified cached original (' + e.message + ')', { cause: e });
       // Exact pinned filename; do not guess image URLs, use web page link for attribution.
       const url = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/' + encodeURIComponent(title);
       let response = await fetch(url, { headers: { 'User-Agent': 'GridAtlasMediaReview/1.0 (local noncommercial research)' }, redirect: 'follow', signal: AbortSignal.timeout(25000) });
-      if (!response.ok) throw Error('Commons download HTTP ' + response.status);
-      if (!['upload.wikimedia.org', 'commons.wikimedia.org'].includes(new URL(response.url).hostname)) throw Error('Unexpected download origin');
+      if (!response.ok) throw Error('Commons download HTTP ' + response.status, { cause: e });
+      if (!['upload.wikimedia.org', 'commons.wikimedia.org'].includes(new URL(response.url).hostname)) throw Error('Unexpected download origin', { cause: e });
       bytes = Buffer.from(await response.arrayBuffer());
       const hash = verify(bytes);
       const temp = target + '.part';
