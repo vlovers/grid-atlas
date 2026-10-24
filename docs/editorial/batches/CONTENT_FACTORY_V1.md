@@ -21,6 +21,7 @@ node scripts/editorial-content-coverage.mjs > /tmp/grid-atlas-content-coverage.j
 node scripts/editorial-content-coverage.mjs --require-evidence > /tmp/grid-atlas-content-evidence.json
 node scripts/editorial-content-coverage.mjs --require-corroboration > /tmp/grid-atlas-corroboration.json
 node scripts/editorial-narrative-audit.mjs > /tmp/grid-atlas-narratives.json
+node scripts/editorial-corroboration-queue.mjs > /tmp/grid-atlas-corroboration-queue.json
 node --test tests/editorial-content-factory.test.mjs tests/editorial-narrative.test.mjs
 ```
 
@@ -58,7 +59,7 @@ This is an *intermediate* card format, not a competing canonical dossier schema.
 
 All **25 additional research cards** have now had their source passages inspected and claim-level locators recorded. There are **96 paired EN/UK research claims**, each with at least one declared Formula 1 source passage. Two transition claims (Räikkönen joining McLaren for 2002 and Button for 2010) use additional official Formula 1 articles with explicit dates rather than relying on inference from the original Hall of Fame page.
 
-**Important distinction:** 96/96 is **structural evidence coverage**, not 96 externally validated facts, independent corroborations or editorial approvals. All linked sources currently belong to the **same Formula 1 publisher group**, so independent corroboration remains **0/96**. The research author recorded the locators; the audit does not inspect external pages. All 25 cards still require F1DB identity reconciliation, independently published evidence where available, and separate human EN/UK review.
+**Important distinction:** 96/96 is **structural evidence coverage**, not 96 externally validated facts or editorial approvals. A second independent publisher group (FIA, separate from Formula 1) is now declared for **49/96** research claims, based on FIA race reports, historical features, Hall of Fame championship rows and FIA media-kit records. The remaining **47/96** still have evidence from only one publisher group. These numbers measure **declared source diversity**, not human-verified truth: the author recorded passage locators, and offline CI does not visit external pages. Every FIA passage, date and translation still requires independent editorial review, and all 25 cards still require pinned F1DB identity reconciliation and separate EN/UK sign-off. The research model additionally rejects a Formula 1 URL mislabeled as FIA or an FIA URL mislabeled as Formula 1 to prevent false corroboration counts.
 
 All **25 additional drivers** now have **66 bilingual narrative chapters** in `narrative-chapters-v1.json` (the first eight drivers received 25 chapters, followed by 41 chapters for the remaining 17). Each chapter references research claim IDs, and the narrative audit rejects orphan claims, missing translations and publication-gate violations. The regression suite additionally requires every one of the 25 candidate IDs to have at least two chapters. These are **research-only narrative drafts**, not 25 approved biographies. Some drivers have only two brief chapters because their research cards currently contain just two claims; expansion must follow source verification rather than unsupported filler.
 
@@ -68,10 +69,14 @@ Do not import editorial photos, invent DRS/circuit data, infer 2026 season outco
 
 ## Next substantive batch
 
-- Resolve URL/title mismatches and independently re-check the accuracy of all 96 linked claims.
-- Add independent publisher corroboration to the 96 research claims; do not count two Formula 1 pages as independent.
+- Recheck URL/title mismatches and verify all 96 historical assertions semantically; 49 declared FIA corroborations still require human verification.
+- Work through the 47 single-publisher claims listed by `audit:editorial:queue`; verify each proposed FIA or third-party passage directly and record conflicts, not just URLs.
 - Reconcile driver IDs with the pinned F1DB and build proper EN/UK canonical dossier pairs with null review sidecars.
 - Expand the short narrative chapters into full biographies only after researching additional supported claims; retain explicit section-to-claim linkage.
 - Obtain independent human review; only then consider an approved release.
 
 Related: issue #107, `docs/editorial/APPROVED_RELEASE_PIPELINE.md` and `docs/editorial/PUBLICATION_REVIEW.md`.
+
+## CI accessibility blocker (2026-10-24)
+
+The latest completed Next.js web run before this batch had **503 passes and one failure** in `tests/browser/unified-archive.spec.ts`: Ukrainian `/constructors` at a 320px viewport with forced colors and 200% root text size overflowed the viewport by 184px. The catalogue stylesheet had explicitly disabled emergency word wrapping for long Ukrainian headings. The PR now allows emergency wrapping on narrow screens and the Playwright assertion reports overflowing elements to aid diagnosis. **Do not treat the fix as confirmed until the new Next.js web workflow completes successfully.**
