@@ -18,7 +18,7 @@ for(const candidate of batch.drivers){
   const id=candidate.driver_id, pilot=pilots.get(id), errors=[];
   if(!Object.hasOwn(reference.driver_championship_years,id))errors.push('championship_reference_missing');
   const locales={};
-  let parity=null,kind='missing',researchClaims=0,completeEvidenceClaims=0,warnings=[];
+  let parity=null,kind='missing',researchClaims=0,completeEvidenceClaims=0,corroboratedClaims=0,warnings=[];
   if(pilot){
     kind='existing_pilot';
     const claimsByLocale={};
@@ -55,6 +55,7 @@ for(const candidate of batch.drivers){
       warnings=audit.warnings;
       researchClaims=audit.claims;
       completeEvidenceClaims=audit.completeEvidenceClaims;
+      corroboratedClaims=audit.corroboratedClaims;
       // A single paired research claim is not equivalent to separately reviewed EN/UK dossiers.
       parity=!(audit.errors.includes('missing_translation') || audit.errors.includes('duplicate_or_missing_claim_id'));
       for(const locale of ['en','uk'])locales[locale]={
@@ -64,7 +65,7 @@ for(const candidate of batch.drivers){
     }
   }
   rows.push({driver_id:id,kind,identity_verified:false,championship_years:reference.driver_championship_years[id]??null,
-    locales,claim_id_parity:parity,researchClaims,completeEvidenceClaims,warnings,errors,ready_for_publication:false});
+    locales,claim_id_parity:parity,researchClaims,completeEvidenceClaims,corroboratedClaims,warnings,errors,ready_for_publication:false});
 }
 for(const id of pilots.keys())if(!ids.includes(id))throw Error('Release pilot absent from batch: '+id);
 const totals=summarizeCoverage(rows);
@@ -75,3 +76,4 @@ const report={batch_id:batch.batch_id,as_of:reference.as_of,totals,drivers:rows,
 process.stdout.write(JSON.stringify(report,null,2)+'\n');
 if(totals.invalid||totals.missing)process.exitCode=1;
 if(process.argv.includes('--require-evidence') && totals.research_claims_without_evidence)process.exitCode=1;
+if(process.argv.includes('--require-corroboration') && totals.research_claims_with_independent_corroboration < totals.research_claims_with_evidence)process.exitCode=1;
