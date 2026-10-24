@@ -41,6 +41,18 @@ class CircuitReadingJourneysTests(unittest.TestCase):
         self.assertIn("<CircuitHistoryStories circuitId={circuit.external_id}", PAGE)
         self.assertIn("history={chronologicalHistory}", PAGE)
 
+    def test_corner_guides_are_bilingual_and_provenanced(self):
+        guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
+        self.assertEqual({g["id"] for g in guides}, {"silverstone","monza","spa-francorchamps","suzuka"})
+        for guide in guides:
+            self.assertGreaterEqual(len(guide["sections"]), 2)
+            for corner in guide["sections"]:
+                self.assertTrue(corner["label"].strip())
+                for locale in ("en","uk"):
+                    self.assertGreater(len(corner[locale].strip()), 65)
+                self.assertTrue(corner["source"].startswith("https://"))
+        self.assertIn("<CircuitCornerGuide circuitId={circuit.external_id}", PAGE)
+
     def test_year_extraction_does_not_invent_race_ids(self):
         years = [int(match.group(0)) for match in re.finditer(r"\b(?:19|20)\d{2}\b", "1973–1975")]
         self.assertEqual(years, [1973, 1975])
