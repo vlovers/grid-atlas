@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "stage": "research",
+  "publication_status": "unpublished",
+  "source_note": "Original editorial summaries; official pages corroborate specified claims but human review required before publication. Current configurations and lap lengths are not backdated.",
+  "circuits": [
+    {
+      "id": "monaco",
+      "en": {
+        "hook": "A city that becomes a racetrack",
+        "character": "The barriers leave little margin for error and overtaking is difficult; a lap through Monaco tests precision more than empty-road speed.",
+        "moments": [
+          {
+            "year": 1929,
+            "title": "A Grand Prix before Formula 1",
+            "text": "Antony Noghès helped organise the first Monaco Grand Prix, more than two decades before the World Championship began.",
+            "source": "f1-monaco"
+          },
+          {
+            "year": 1950,
+            "title": "A founding-season race",
+            "text": "Monaco appeared on the inaugural World Championship calendar, tying the street circuit to F1 from its first season.",
+            "source": "f1-monaco"
+          },
+          {
+            "year": 2003,
+            "title": "Passing is a rarity",
+            "text": "The 2003 Grand Prix was recorded with no overtaking moves, an extreme example of the tight track's challenge.",
+            "source": "f1-monaco"
+          }
+        ]
+      },
+      "uk": {
+        "hook": "Місто, яке перетворюється на гоночну трасу",
+        "character": "Бар'єри майже не залишають простору для помилки, а обгони тут складні. Монако випробовує передусім точність пілота.",
+        "moments": [
+          {
+            "year": 1929,
+            "title": "Гран-прі ще до Формули-1",
+            "text": "Антоні Ноге допоміг організувати перший Гран-прі Монако — більш ніж за двадцять років до появи чемпіонату світу.",
+            "source": "f1-monaco"
+          },
+          {
+            "year": 1950,
+            "title": "Гонка першого сезону",
+            "text": "Монако увійшло до календаря дебютного чемпіонату світу й від самого початку стало частиною історії Ф1.",
+            "source": "f1-monaco"
+          },
+          {
+            "year": 2003,
+            "title": "Коли обігнати майже неможливо",
+            "text": "На Гран-прі 2003 року не зафіксували жодного обгону — промовистий приклад того, наскільки тісна ця траса.",
+            "source": "f1-monaco"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spa-francorchamps",
+      "en": {
+        "hook": "Two circuits hiding behind one famous name",
+        "character": "The old road course crossed the Ardennes for nearly 15 kilometres. Today's shorter Spa retains the celebrated Eau Rouge–Raidillon climb, but not the original route.",
+        "moments": [
+          {
+            "year": 1921,
+            "title": "A circuit drawn across public roads",
+            "text": "The original course linked Francorchamps, Malmedy and Stavelot using public roads.",
+            "source": "f1-spa"
+          },
+          {
+            "year": 1970,
+            "title": "The end of the long-course World Championship era",
+            "text": "Safety concerns made 1970 the last F1 championship race on the old long Spa circuit.",
+            "source": "f1-eau"
+          },
+          {
+            "year": 1983,
+            "title": "Formula 1 returns to a transformed Spa",
+            "text": "After the route was shortened in 1979, Formula 1 returned to Spa in 1983.",
+            "source": "f1-spa-guide"
+          }
+        ]
+      },
+      "uk": {
+        "hook": "Дві зовсім різні траси під однією відомою назвою",
+        "character": "Старий маршрут тягнувся дорогами Арденн майже на 15 кілометрів. Сучасна Спа коротша, проте зберегла знаменитий підйом Eau Rouge — Raidillon.",
+        "moments": [
+          {
+            "year": 1921,
+            "title": "Траса зі звичайних доріг",
+            "text": "Початковий маршрут поєднав Франкоршам, Мальмеді та Ставло дорогами загального користування.",
+            "source": "f1-spa"
+          },
+          {
+            "year": 1970,
+            "title": "Кінець епохи довгого кільця",
+            "text": "Через проблеми з безпекою 1970-й став останнім роком чемпіонату Ф1 на старому довгому маршруті Спа.",
+            "source": "f1-eau"
+          },
+          {
+            "year": 1983,
+            "title": "Повернення на іншу трасу",
+            "text": "Після скорочення маршруту в 1979 році Формула-1 повернулася до Спа у 1983-му.",
+            "source": "f1-spa-guide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "suzuka",
+      "en": {
+        "hook": "The figure-eight where titles changed hands",
+        "character": "Suzuka's crossover layout and sequences of fast directional changes make the track distinctive even without its history of championship deciders.",
+        "moments": [
+          {
+            "year": 1987,
+            "title": "Japan joins the Suzuka era",
+            "text": "The circuit staged its first Formula 1 Grand Prix in 1987.",
+            "source": "f1-suzuka"
+          },
+          {
+            "year": 1988,
+            "title": "Senna fights back",
+            "text": "After a poor start, Ayrton Senna recovered to beat Alain Prost and secure his first world title.",
+            "source": "f1-suzuka"
+          },
+          {
+            "year": 1989,
+            "title": "A collision with a championship attached",
+            "text": "Senna and Prost collided at the chicane; Senna was later disqualified and Prost secured the championship.",
+            "source": "f1-suzuka"
+          }
+        ]
+      },
+      "uk": {
+        "hook": "Вісімка, на якій вирішувалася доля титулів",
+        "character": "Маршрут Сузуки з перетином на різних рівнях і швидкими зв'язками поворотів вирізняється навіть без історії її чемпіонських розв'язок.",
+        "moments": [
+          {
+            "year": 1987,
+            "title": "Початок епохи Сузуки",
+            "text": "У 1987 році автодром уперше прийняв Гран-прі Формули-1.",
+            "source": "f1-suzuka"
+          },
+          {
+            "year": 1988,
+            "title": "Камбeк Сенни",
+            "text": "Після невдалого старту Айртон Сенна відігрався, переміг Алена Проста й здобув свій перший чемпіонський титул.",
+            "source": "f1-suzuka"
+          },
+          {
+            "year": 1989,
+            "title": "Зіткнення, що вирішило чемпіонат",
+            "text": "Сенна і Прост зіткнулися в шикані; згодом Сенну дискваліфікували, а Прост став чемпіоном.",
+            "source": "f1-suzuka"
+          }
+        ]
+      }
+    },
+    {
+      "id": "monza",
+      "en": {
+        "hook": "The Temple of Speed has more than one past",
+        "character": "Beyond the modern fast lap is the legacy of Monza's steeply banked circuit and its extraordinary slipstream battles.",
+        "moments": [
+          {
+            "year": 1922,
+            "title": "An audacious new circuit",
+            "text": "Monza opened in 1922 with a road course and banked oval sections.",
+            "source": "f1-monza"
+          },
+          {
+            "year": 1971,
+            "title": "Ten thousandths of a second",
+            "text": "Peter Gethin beat Ronnie Peterson by just 0.010 seconds; the top five finished within little more than half a second.",
+            "source": "f1-monza"
+          },
+          {
+            "year": 1971,
+            "title": "A finish that defines Monza",
+            "text": "The 1971 Italian Grand Prix remains a benchmark for close F1 finishes, illustrating the track's slipstreaming legacy.",
+            "source": "f1-monza"
+          }
+        ]
+      },
+      "uk": {
+        "hook": "«Храм швидкості» з кількома різними історіями",
+        "character": "За сучасним швидкісним колом стоїть спадщина профільованого овалу Монци та неймовірно щільних фінішів.",
+        "moments": [
+          {
+            "year": 1922,
+            "title": "Сміливий новий автодром",
+            "text": "Монцу відкрили 1922 року: початкова конфігурація поєднувала дорожню частину та профільований овал.",
+            "source": "f1-monza"
+          },
+          {
+            "year": 1971,
+            "title": "Десять тисячних секунди",
+            "text": "Пітер Гетин випередив Ронні Петерсона лише на 0,010 секунди, а перша п'ятірка фінішувала з різницею трохи більш ніж пів секунди.",
+            "source": "f1-monza"
+          },
+          {
+            "year": 1971,
+            "title": "Фініш, який визначає Монцу",
+            "text": "Гран-прі Італії 1971 року досі залишається символом неймовірно щільної боротьби на швидкісній трасі.",
+            "source": "f1-monza"
+          }
+        ]
+      }
+    },
+    {
+      "id": "silverstone",
+      "en": {
+        "hook": "From a wartime airfield to the birthplace of the championship",
+        "character": "Built around RAF airfield roads, Silverstone hosted the opening World Championship race in 1950 and later produced famous high-speed battles.",
+        "moments": [
+          {
+            "year": 1942,
+            "title": "Airfield origins",
+            "text": "The perimeter road serving RAF Silverstone was laid during the Second World War.",
+            "source": "f1-silverstone"
+          },
+          {
+            "year": 1950,
+            "title": "The first World Championship Grand Prix",
+            "text": "Giuseppe Farina won Formula 1's inaugural championship race on 13 May 1950 in an Alfa Romeo.",
+            "source": "f1-silverstone"
+          },
+          {
+            "year": 1987,
+            "title": "Mansell's charge",
+            "text": "Nigel Mansell chased down team-mate Nelson Piquet and passed him at Stowe with three laps remaining.",
+            "source": "f1-silverstone-1987"
+          }
+        ]
+      },
+      "uk": {
+        "hook": "Від військового аеродрому до місця народження чемпіонату",
+        "character": "Сільверстоун виріс із доріг військового аеродрому й прийняв перший етап чемпіонату світу 1950 року, а згодом став місцем видовищних швидкісних дуелей.",
+        "moments": [
+          {
+            "year": 1942,
+            "title": "Аеродромне минуле",
+            "text": "Під час Другої світової війни тут проклали периметральну дорогу аеродрому RAF Silverstone.",
+            "source": "f1-silverstone"
+          },
+          {
+            "year": 1950,
+            "title": "Перша гонка чемпіонату світу",
+            "text": "13 травня 1950 року Джузеппе Фаріна на Alfa Romeo виграв перший етап чемпіонату Формули-1.",
+            "source": "f1-silverstone"
+          },
+          {
+            "year": 1987,
+            "title": "Атака Менселла",
+            "text": "Найджел Менселл наздогнав напарника Нельсона Піке й обігнав його в повороті Stowe за три кола до фінішу.",
+            "source": "f1-silverstone-1987"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": {
+    "f1-monaco": "https://www.formula1.com/en/information/monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ",
+    "f1-spa": "https://www.formula1.com/en/information/belgium-circuit-de-spa-francorchamps.3LltuYaAXVRU8iezEsjzGw",
+    "f1-eau": "https://www.formula1.com/en/latest/article/the-evolution-of-eau-rouge-f1s-most-thrilling-corner-in-pictures.5v7FD8OVttEuJxr1Mw0OPc.5v7FD8OVttEuJxr1Mw0OPc",
+    "f1-spa-guide": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-spa-francorchamps.pC5N3J3W9LEj8REFvU6FX",
+    "f1-suzuka": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+    "f1-monza": "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH.html.1q7hUu1YPrEhvQInT2E6vH",
+    "f1-silverstone": "https://www.formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+    "f1-silverstone-1987": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
+  }
+}
