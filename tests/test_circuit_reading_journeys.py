@@ -34,6 +34,13 @@ class CircuitReadingJourneysTests(unittest.TestCase):
         self.assertIn("Race classifications verify results, not every detail", SOURCE)
         self.assertIn('href="#circuit-layouts"', SOURCE)
 
+    def test_five_editorial_timelines_link_only_recorded_races(self):
+        flagship = (ED / "circuit-history-stories.tsx").read_text(encoding="utf-8")
+        self.assertIn("history.find(race => String(race.season_year) === moment.year)", flagship)
+        self.assertIn("Explore this race in the archive", flagship)
+        self.assertIn("<CircuitHistoryStories circuitId={circuit.external_id}", PAGE)
+        self.assertIn("history={chronologicalHistory}", PAGE)
+
     def test_year_extraction_does_not_invent_race_ids(self):
         years = [int(match.group(0)) for match in re.finditer(r"\b(?:19|20)\d{2}\b", "1973–1975")]
         self.assertEqual(years, [1973, 1975])
