@@ -24,3 +24,11 @@ test('empty imagery gets a decorative treatment but no unapproved asset publicat
   assert.equal(publication.lane, 'publication');
   assert.deepEqual(publication.assets, []);
 });
+
+test('approved-media gallery layout stays responsive and optional', () => {
+  assert.match(gallery, /grid-template-columns: repeat\(auto-fit/);
+  assert.match(gallery, /\.gallery:has\(> :nth-child\(3\)\)/);
+  assert.match(gallery, /@media \(hover: hover\) and \(prefers-reduced-motion: no-preference\)/);
+  assert.match(gallery, /@media \(prefers-reduced-motion: reduce\)/);
+  assert.match(gallery, /transition: none/);
+});
