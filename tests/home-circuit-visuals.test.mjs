@@ -17,6 +17,10 @@ test('home circuit illustrations require the exact archived layout identities', 
 test('home imagery preserves author license and bilingual exact layout labels', () => {
   assert.match(home, /circuitArtworks\[index\]\.author/);
   assert.match(home, /circuitArtworks\[index\]\.license/);
+  assert.match(home, /circuitArtworks\[index\]\.source_url/);
+  assert.match(home, /https:\/\/creativecommons\.org\/licenses\/by\/4\.0\//);
+  assert.match(home, /<article className=\{styles\.circuit\}/);
+  assert.match(css, /\.circuit a:focus-visible/);
   assert.match(home, /circuitArtworks\[index\]\.layout_id/);
   assert.match(home, /Контур конфігурації/);
   assert.match(home, /Historical layout/);
