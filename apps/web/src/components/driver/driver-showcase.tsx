@@ -1,3 +1,4 @@
+import { archiveContextHref } from '@/lib/archive-context';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
@@ -71,10 +72,10 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
         <p>{locale === 'en'
           ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
           : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
-        <ul>{overview.firstRace && <li><a href={`/${locale}/races/${overview.firstRace.id}`}>
+        <ul>{overview.firstRace && <li><a href={archiveContextHref(`/${locale}/races/${overview.firstRace.id}`, `/drivers/${driver.id}`)}>
           {locale === 'en' ? 'First recorded race' : 'Перша зафіксована гонка'}: {overview.firstRace.name} ({overview.firstRace.year}) ↗
         </a></li>}
-        {overview.firstWin && <li><a href={`/${locale}/races/${overview.firstWin.id}`}>
+        {overview.firstWin && <li><a href={archiveContextHref(`/${locale}/races/${overview.firstWin.id}`, `/drivers/${driver.id}`)}>
           {locale === 'en' ? 'First recorded win' : 'Перша зафіксована перемога'}: {overview.firstWin.name} ({overview.firstWin.year}) ↗
         </a></li>}</ul>
         <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
@@ -89,9 +90,9 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
         note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
       <dl className={styles.quickFacts}>
         {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
-          <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
+          <dd><a href={archiveContextHref(`/${locale}/races/${career.milestones.first_appearance.race.id}`, `/drivers/${driver.id}`)}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
         {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
-          <dd><a href={`/${locale}/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
+          <dd><a href={archiveContextHref(`/${locale}/races/${career.milestones.first_win.race.id}`, `/drivers/${driver.id}`)}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
         <div><dt>{locale === 'uk' ? 'Команди за кар’єру' : 'Career constructors'}</dt>
           <dd>{new Set(career.participation.map(row => row.related_id)).size}</dd></div>
         <div><dt>{locale === 'uk' ? 'Зафіксовані результати' : 'Recorded result entries'}</dt>
@@ -104,14 +105,14 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       <div className={styles.openingArt}><span>{opening.race.year}</span><small>{career?.milestones.first_win ? e.firstWin : e.firstRecord}</small></div>
       <div className={styles.openingCopy}><p className={styles.kicker}>{story.opening}</p><h2 id="driver-opening-title">{story.openingTitle}</h2><p>{story.openingNote}</p>
         <span className={styles.openingLabel}>{career?.milestones.first_win ? story.firstWin : story.firstRace} / {opening.race.year}</span>
-        <h3><a href={`/${locale}/races/${opening.race.id}`}>{opening.race.name}</a></h3><a className={styles.primary} href={`/${locale}/races/${opening.race.id}`}>{story.openRace} ↗</a></div>
+        <h3><a href={archiveContextHref(`/${locale}/races/${opening.race.id}`, `/drivers/${driver.id}`)}>{opening.race.name}</a></h3><a className={styles.primary} href={archiveContextHref(`/${locale}/races/${opening.race.id}`, `/drivers/${driver.id}`)}>{story.openRace} ↗</a></div>
     </section>}
 
     <section data-story-reveal id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
       <SectionHeading kicker={t.seasonKicker} title={story.seasonTitle} id="driver-season-title" note={story.seasonNote} />
       {peakSeasons.length > 0 ? <ol className={styles.seasonMilestones}>{peakSeasons.map((season, index) =>
         <li key={season.year}><span className={styles.cardIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-          <a href={`/${locale}/seasons/${season.year}`} className={styles.yearLink}>{season.year} <span aria-hidden="true">↗</span></a>
+          <a href={archiveContextHref(`/${locale}/seasons/${season.year}`, `/drivers/${driver.id}`)} className={styles.yearLink}>{season.year} <span aria-hidden="true">↗</span></a>
           <p><strong>{format(season.wins)}</strong> {t.winningEntries}</p>
           <span>{format(season.starts)} {t.resultEntries.toLocaleLowerCase(locale)}</span>
         </li>)}</ol> : <p className={styles.empty}>{t.noWins}</p>}
@@ -121,7 +122,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
         <nav aria-label={t.seasonLinks} className={styles.yearNav}>{years.map(year => <a key={year}
           href={`/${locale}/drivers/${driver.id}?season=${year}#driver-career`} aria-current={selected?.year === year ? 'true' : undefined}>{year}</a>)}</nav>
         {selected && <section className={styles.selectedSeason} aria-label={`${t.season} ${selected.year}`}>
-          <div><span className={styles.kicker}>{t.season}</span><h3>{selected.year}</h3><a className={styles.textLink} href={`/${locale}/seasons/${selected.year}`}>{t.seasonsTable} ↗</a></div>
+          <div><span className={styles.kicker}>{t.season}</span><h3>{selected.year}</h3><a className={styles.textLink} href={archiveContextHref(`/${locale}/seasons/${selected.year}`, `/drivers/${driver.id}`)}>{t.seasonsTable} ↗</a></div>
           <dl>{[{ label: t.resultEntries, value: selected.starts }, { label: t.winningEntries, value: selected.wins },
             { label: t.podiums, value: selected.podiums }].map(fact => <div key={fact.label}><dt>{fact.label}</dt><dd>{format(fact.value)}</dd></div>)}</dl>
           <div>
@@ -142,7 +143,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
                   <div><dt>{locale === 'uk' ? 'Переможні гонки' : 'Winning races'}</dt><dd>{format(row.winning_races)}</dd></div>
                 </dl>
                 <p>{locale === 'uk' ? 'Очки у результатах' : 'Recorded result points'}: {row.recorded_points ?? t.unavailable}{row.points_missing > 0 ? ` · ${locale === 'uk' ? 'Є пропуски' : 'Incomplete'}` : ''}</p>
-                <p><a href={`/${locale}/races/${row.first_race.id}`}>{locale === 'uk' ? 'Перша гонка' : 'First race'} ↗</a> · <a href={`/${locale}/races/${row.last_race.id}`}>{locale === 'uk' ? 'Остання гонка' : 'Last race'} ↗</a></p>
+                <p><a href={archiveContextHref(`/${locale}/races/${row.first_race.id}`, `/drivers/${driver.id}`)}>{locale === 'uk' ? 'Перша гонка' : 'First race'} ↗</a> · <a href={archiveContextHref(`/${locale}/races/${row.last_race.id}`, `/drivers/${driver.id}`)}>{locale === 'uk' ? 'Остання гонка' : 'Last race'} ↗</a></p>
               </article>)}
             </div>
             <p>{locale === 'uk' ? 'Групування за конструктором у записах гонок, не за контрактами. Спільні автомобілі та відсутні очки можуть впливати на підсумки.' : 'Grouped by constructor in recorded race results, not by contracts. Shared cars and missing points may affect totals.'}</p>
@@ -162,7 +163,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
               </tr></thead>
               <tbody>{seasonResults.map((result, index) => <tr key={`${result.race_id}:${result.constructor_id}:${result.position_display_order}:${index}`}>
                 <td>{result.round}</td>
-                <td><a href={`/${locale}/races/${result.race_id}`}>{result.race_name}</a>{result.race_date && <small>{result.race_date}</small>}</td>
+                <td><a href={archiveContextHref(`/${locale}/races/${result.race_id}`, `/drivers/${driver.id}`)}>{result.race_name}</a>{result.race_date && <small>{result.race_date}</small>}</td>
                 <td><a href={`/${locale}/constructors/${result.constructor_id}?season=${selected.year}`}>{result.constructor_name}</a></td>
                 <td>{result.driver_number ?? '—'}</td>
                 <td>{result.position_text}{result.shared_car && <small>{locale === 'uk' ? 'Спільний автомобіль' : 'Shared car'}</small>}{result.reason_retired && <small>{result.reason_retired}</small>}</td>
@@ -192,12 +193,12 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       {moments.length ? <ol className={styles.moments}>{featuredMoments.map(moment => <li key={moment.race.id}>
         <div className={styles.momentTop}><span>{moment.race.year}</span><span>{t.round} {moment.race.round}</span></div>
         <p className={styles.momentLabel}>{moment.labels.map(label => t[label]).join(' / ')}</p>
-        <h3><a href={`/${locale}/races/${moment.race.id}`}>{moment.race.name}</a></h3>
+        <h3><a href={archiveContextHref(`/${locale}/races/${moment.race.id}`, `/drivers/${driver.id}`)}>{moment.race.name}</a></h3>
         <p className={styles.classification}>{t.classification}: {moment.results.map(r => r.position_text + (r.shared_car ? ` · ${t.shared}` : '')).join(' / ')}</p>
-        <a className={styles.textLink} href={`/${locale}/races/${moment.race.id}`}>{t.raceLink} <span aria-hidden="true">↗</span></a>
+        <a className={styles.textLink} href={archiveContextHref(`/${locale}/races/${moment.race.id}`, `/drivers/${driver.id}`)}>{t.raceLink} <span aria-hidden="true">↗</span></a>
       </li>)}</ol> : <p className={styles.empty}>{t.empty}</p>}
       {boundaries.length > 0 && <ul className={styles.boundaries}>{boundaries.map(moment => <li key={moment.race.id}>
-        <a href={`/${locale}/races/${moment.race.id}`}><span>{moment.labels.map(label => t[label]).join(' / ')} · {moment.race.year}</span>
+        <a href={archiveContextHref(`/${locale}/races/${moment.race.id}`, `/drivers/${driver.id}`)}><span>{moment.labels.map(label => t[label]).join(' / ')} · {moment.race.year}</span>
           <strong>{moment.race.name} ↗</strong><small>{t.classification}: {moment.results.map(r => r.position_text + (r.shared_car ? ` · ${t.shared}` : '')).join(' / ')}</small></a>
       </li>)}</ul>}
     </section>
@@ -219,14 +220,14 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       <details id="driver-seasons" className={styles.disclosure}><summary>{t.seasonsTable} <span>{format(seasons.length)}</span></summary>
         {seasons.length ? <ArchiveTable label={t.seasonsTable} locale={locale}><table><caption>{t.seasonsTable} · {driver.name}</caption><thead><tr>
           {[t.season, t.resultEntries, t.winningEntries, t.podiums, t.points].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead><tbody>
-          {seasons.map(season => { const points = seasonPoints(season, career?.participation ?? []); return <tr key={season.year}><th scope="row"><a href={`/${locale}/seasons/${season.year}`}>{season.year}</a></th>
+          {seasons.map(season => { const points = seasonPoints(season, career?.participation ?? []); return <tr key={season.year}><th scope="row"><a href={archiveContextHref(`/${locale}/seasons/${season.year}`, `/drivers/${driver.id}`)}>{season.year}</a></th>
             <td>{format(season.starts)}</td><td>{format(season.wins)}</td><td>{format(season.podiums)}</td><td>{points.value ?? t.unavailable}{points.value !== null && points.partial && <small className={styles.partialPoints}>{t.partialPoints}</small>}</td></tr>; })}
         </tbody></table></ArchiveTable> : <p>{t.empty}</p>}
         <p className={styles.note}>{t.sourceNote}</p>
       </details>
       <details className={styles.disclosure}><summary>{t.teamsTable} <span>{format(teams.length)}</span></summary>
         {teams.length ? <ArchiveTable label={t.teamsTable} locale={locale}><table><caption>{t.teamsTable} · {driver.name}</caption><thead><tr>{[t.season, t.constructor, t.races, t.winningEntries].map(label => <th scope="col" key={label}>{label}</th>)}</tr></thead>
-          <tbody>{teams.map(team => <tr key={`${team.year}:${team.constructor_id}`}><th scope="row"><a href={`/${locale}/seasons/${team.year}`}>{team.year}</a></th><td><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</a></td><td>{format(team.races)}</td><td>{format(team.wins)}</td></tr>)}</tbody></table></ArchiveTable> : <p>{t.empty}</p>}
+          <tbody>{teams.map(team => <tr key={`${team.year}:${team.constructor_id}`}><th scope="row"><a href={archiveContextHref(`/${locale}/seasons/${team.year}`, `/drivers/${driver.id}`)}>{team.year}</a></th><td><a href={`/${locale}/constructors/${team.constructor_id}`}>{team.constructor_name} ↗</a></td><td>{format(team.races)}</td><td>{format(team.wins)}</td></tr>)}</tbody></table></ArchiveTable> : <p>{t.empty}</p>}
       </details>
       <details id="driver-timeline" className={styles.disclosure}><summary>{t.timeline} <span>{format(timeline.length)}</span></summary>
         <CareerMap rows={career?.participation ?? []} driverId={driver.id} locale={locale} />
