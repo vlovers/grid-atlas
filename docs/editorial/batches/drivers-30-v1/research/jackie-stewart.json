@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "jackie-stewart",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+    "title": "Jackie Stewart — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson or Formula 1 editorial (verify exact byline)",
+    "locator": "1969/1971/1973 championship paragraphs; safety campaign passages",
+    "accessed_on": "2026-10-24",
+    "independence_group": "formula1",
+    "verification_note": "Public source discovered during research; exact claims require independent human passage review."
+  },
+  "claims": [
+    {
+      "claim_id": "jackie-stewart-career-milestone",
+      "topic": "career",
+      "en": "Jackie Stewart won the Drivers' World Championship in 1969, 1971 and 1973.",
+      "uk": "Джекі Стюарт став чемпіоном світу серед пілотів у 1969, 1971 та 1973 роках.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jackie-stewart-context",
+      "topic": "historical_context",
+      "en": "Beyond his racing results, Stewart campaigned for improvements to safety in Formula 1.",
+      "uk": "Окрім гоночних результатів, Стюарт активно виступав за підвищення безпеки у Формулі-1.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Verify exact pinned F1DB identity and historical metrics.",
+    "Seek independent corroboration outside the Formula 1 publisher group.",
+    "Assign accountable human author and independent reviewer; do not publish automatically."
+  ]
+}
