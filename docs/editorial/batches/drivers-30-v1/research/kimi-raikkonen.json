@@ -33,7 +33,14 @@
       "topic": "career_chronology",
       "en": "Räikkönen moved from Sauber to McLaren for the 2002 season.",
       "uk": "Ряйкконен перейшов із Sauber до McLaren на сезон 2002 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/six-things-we-learned-about-kimi-raikkonen-in-his-new-book.4HB0kfn5BCmYqmI8oUGSYw",
+          "locator": "Section 'Raikkonen and his nickname': joined McLaren one year after his 2001 debut season with Sauber.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "kimi-raikkonen-title",
@@ -71,5 +78,14 @@
     "Reconcile identity with pinned F1DB.",
     "Record precise per-claim source locators and independent corroboration.",
     "Human review of both languages and exact revision required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.formula1.com/en/latest/article/six-things-we-learned-about-kimi-raikkonen-in-his-new-book.4HB0kfn5BCmYqmI8oUGSYw",
+      "title": "Six things we learned about Kimi Raikkonen in his new book",
+      "publisher": "Formula 1",
+      "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
