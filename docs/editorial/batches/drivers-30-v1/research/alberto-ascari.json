@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "alberto-ascari",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+    "title": "Alberto Ascari — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+  },
+  "claims": [
+    {
+      "claim_id": "alberto-ascari-titles",
+      "topic": "career_chronology",
+      "en": "Ascari won consecutive Formula 1 Drivers' World Championships in 1952 and 1953 with Ferrari.",
+      "uk": "Аскарі здобув два поспіль титули чемпіона світу Формули-1 у 1952 та 1953 роках із Ferrari.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "alberto-ascari-monza",
+      "topic": "career_chronology",
+      "en": "Ascari died in a testing accident at Monza on 26 May 1955.",
+      "uk": "Аскарі загинув під час випробувального заїзду в Монці 26 травня 1955 року.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ]
+}
