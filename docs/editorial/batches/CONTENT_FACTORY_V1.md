@@ -65,6 +65,8 @@ This is an *intermediate* card format, not a competing canonical dossier schema.
 
 The F1DB import workflow now checks **all 30** candidate external driver IDs against the checksum-verified `v2026.17.0` split JSON archive and compares the five pilot IDs against the canonical release manifest. It fails on missing or duplicate IDs, invalid EN/UK locale targets, or publication-state violations. The artifact records each archive display name and source-record digest for later human reconciliation, but always reports `human_identity_review: pending` and zero editorial approvals. Local synthetic unit tests cover seven failure/success paths; real archive matching must be confirmed by the new CI run, not inferred from the test fixtures.
 
+The initial real-archive run identified one genuine identity mismatch: `giuseppe-farina` is **not** an F1DB external ID. The pinned `v2026.17.0` source has `src/data/drivers/nino-farina.yml` with `id: nino-farina` and `fullName: Emilio Giuseppe Farina`. The batch manifest, research file, championship lookup, narrative story and claim references now consistently use `nino-farina`. The old alias must not be silently treated as canonical; await the updated CI result.
+
 The batch manifest now uses `research_draft` for the 25 additional profiles instead of the stale `candidate_unresearched` status; no public status changes or approval are implied.
 
 ## Current evidence audit notes (2026-10-24)

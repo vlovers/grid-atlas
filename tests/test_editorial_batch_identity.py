@@ -1,4 +1,6 @@
 import unittest
+import json
+from pathlib import Path
 from scripts.editorial_batch_identity import reconcile
 
 DIGEST = "a" * 64
@@ -67,6 +69,23 @@ class EditorialBatchIdentityTests(unittest.TestCase):
         batch, release, rows = fixture()
         report = reconcile(batch, release, rows, "not-a-digest")
         self.assertIn("invalid_archive_digest", report["errors"])
+
+    def test_real_farina_uses_pinned_f1db_id_in_all_research_surfaces(self):
+        root = Path(__file__).resolve().parents[1]
+        prefix = root / "docs/editorial/batches/drivers-30-v1"
+        batch = json.loads((root / "docs/editorial/batches/drivers-30-v1.json").read_text(encoding="utf-8"))
+        years = json.loads((prefix / "championship-reference.json").read_text(encoding="utf-8"))
+        story = json.loads((prefix / "narrative-chapters-v1.json").read_text(encoding="utf-8"))
+        card = json.loads((prefix / "research/nino-farina.json").read_text(encoding="utf-8"))
+        self.assertIn("nino-farina", [row["driver_id"] for row in batch["drivers"]])
+        self.assertNotIn("giuseppe-farina", [row["driver_id"] for row in batch["drivers"]])
+        self.assertEqual(years["driver_championship_years"]["nino-farina"], [1950])
+        self.assertEqual(card["driver_id"], "nino-farina")
+        self.assertTrue(all(claim["claim_id"].startswith("nino-farina-") for claim in card["claims"]))
+        chapters = next(row["chapters"] for row in story["stories"] if row["driver_id"] == "nino-farina")
+        known = {claim["claim_id"] for claim in card["claims"]}
+        self.assertTrue(all(set(chapter["claim_ids"]) <= known for chapter in chapters))
+        self.assertFalse((prefix / "research/giuseppe-farina.json").exists())
 
 
 if __name__ == "__main__":
