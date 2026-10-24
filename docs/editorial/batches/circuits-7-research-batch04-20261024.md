@@ -84,7 +84,7 @@ Sepang was developed during Malaysia's push to become a major international spor
 
 **Evidence to independently recheck**
 - Official F1 circuit description and historical milestones: https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-sepang-international-circuit.2KTLvyxBXmwVftSJxmYeZ2.
-- Additional historical/context guide: https://www.formula1.com/en/racing/2026/bahrain.
+- Additional historical/context guide: SOURCE REQUIRED — invalid unrelated Bahrain 2026 URL removed; verify Sepang race result via F1 official 1999 archive.
 - Pending: per-claim locator verification, exact race IDs, layout versions, translation review and editorial sign-off.
 
 ## Shanghai — A Chinese character drawn in asphalt
