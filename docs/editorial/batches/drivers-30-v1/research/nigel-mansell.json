@@ -30,6 +30,11 @@
           "source_url": "https://halloffame.fia.com/",
           "locator": "FIA Formula One World Championship champions index: 1992 row names Nigel Mansell.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+          "locator": "Driver facts panel: 'Titles 1'; career text describes return to Williams and winning the world championship after the 1986 tyre failure.",
+          "supports": true
         }
       ]
     },
@@ -48,6 +53,11 @@
         {
           "source_url": "https://www.fia.com/news/british-gp-preview",
           "locator": "Race Stewards Biographies, 'NIGEL MANSELL OBE' paragraph: 187 Grand Prix starts, 32 poles and 31 victories.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+          "locator": "Driver facts panel, 'Wins 31' and 'Grands Prix 187'.",
           "supports": true
         }
       ]
@@ -73,6 +83,13 @@
       "title": "FIA British Grand Prix preview — Nigel Mansell steward biography",
       "publisher": "FIA",
       "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+      "title": "Nigel Mansell — McLaren Racing heritage driver profile",
+      "publisher": "McLaren Racing",
+      "independence_group": "mclaren",
       "accessed_on": "2026-10-24"
     }
   ]
