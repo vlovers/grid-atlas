@@ -56,7 +56,7 @@ test('read-only original-provenance report checks both observed binary hashes an
 });
 
 test('media source revision drift blocks readiness instead of publishing', async () => {
-  const { execFileSync, spawnSync } = await import('node:child_process');
+  const { spawnSync } = await import('node:child_process');
   const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs');
   const { tmpdir } = await import('node:os');
   const { join, resolve, dirname } = await import('node:path');
