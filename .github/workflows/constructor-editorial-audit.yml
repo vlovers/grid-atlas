@@ -1,0 +1,52 @@
+name: Constructor editorial F1DB identity audit
+
+on:
+  pull_request:
+    paths:
+      - 'docs/editorial/constructors/batch-01-founders/**'
+      - 'scripts/audit-constructor-research-identities.py'
+      - 'tests/test_constructor_research_identities.py'
+      - '.github/workflows/constructor-editorial-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/editorial/constructors/batch-01-founders/**'
+      - 'scripts/audit-constructor-research-identities.py'
+      - 'tests/test_constructor_research_identities.py'
+      - '.github/workflows/constructor-editorial-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pinned-constructor-identity-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate research-only identity guards
+        run: python3 -m unittest discover -s tests -p 'test_constructor_research_identities.py' -v
+      - name: Download pinned F1DB archive and published checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/grid-atlas-f1db
+          base="https://github.com/f1db/f1db/releases/download/v2026.17.0"
+          curl --fail --location --retry 3 --retry-delay 2 "$base/checksums_sha256.txt" -o /tmp/grid-atlas-f1db/checksums_sha256.txt
+          curl --fail --location --retry 3 --retry-delay 2 "$base/f1db-json-splitted.zip" -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+      - name: Reconcile draft identities with checksum-verified constructor records
+        run: |
+          python3 scripts/audit-constructor-research-identities.py \
+            --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
+            --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
+            --output /tmp/constructor-research-identity-audit.json
+      - name: Upload unpublished identity candidates for manual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-constructor-identity-candidates
+          path: /tmp/constructor-research-identity-audit.json
+          if-no-files-found: error
+          retention-days: 7
