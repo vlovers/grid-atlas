@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "driver_id": "nico-rosberg",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+    "title": "Nico Rosberg — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "independence_group": "formula1",
+    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+  },
+  "claims": [
+    {
+      "claim_id": "nico-rosberg-championship",
+      "topic": "career_chronology",
+      "en": "Rosberg won the 2016 Formula 1 Drivers' World Championship with Mercedes.",
+      "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 2016 року з Mercedes.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "nico-rosberg-rival",
+      "topic": "career_chronology",
+      "en": "Rosberg secured the 2016 title in the final race ahead of Mercedes team-mate Lewis Hamilton.",
+      "uk": "Росберг здобув титул 2016 року на фінальному етапі, випередивши напарника по Mercedes Льюїса Гамільтона.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "nico-rosberg-retirement",
+      "topic": "career_chronology",
+      "en": "Rosberg announced his retirement from Formula 1 five days after winning the 2016 championship.",
+      "uk": "Росберг оголосив про завершення кар’єри у Формулі-1 через п’ять днів після здобуття титулу 2016 року.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ]
+}
