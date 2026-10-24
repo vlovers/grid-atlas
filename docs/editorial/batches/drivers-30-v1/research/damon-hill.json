@@ -44,6 +44,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
           "locator": "Paragraph beginning 'The same was true of Formula Three': 1992 Formula 1 debut with Brabham and two starts.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.autosport.com/general/news/autosport-awards-gregor-grant-award-damon-hill-4453016/4453016/",
+          "locator": "Career retrospective paragraph beginning 'Hill made his F1 debut with Brabham in 1992': directly states the debut year and constructor.",
+          "supports": true
         }
       ]
     },
@@ -121,6 +126,13 @@
       "title": "GP Racing Stats — Damon Hill wins",
       "publisher": "GP Racing Stats",
       "independence_group": "gpracingstats",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.autosport.com/general/news/autosport-awards-gregor-grant-award-damon-hill-4453016/4453016/",
+      "title": "AUTOSPORT Awards Gregor Grant Award: Damon Hill",
+      "publisher": "Autosport",
+      "independence_group": "autosport",
       "accessed_on": "2026-10-24"
     }
   ]
