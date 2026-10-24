@@ -36,6 +36,9 @@ export function buildReviewWorklist(provenance,worksheet){
       throw Error('Publisher coverage mismatch: '+key);
     const expectedChapters=[...source.narrative_chapters].sort();
     const actualChapters=(claim.linked_chapters??[]).map(ch=>ch.chapter_id).sort();
+    if((claim.linked_chapters??[]).some(ch=>!ch.en_heading?.trim()||!ch.uk_heading?.trim()||
+      !ch.en_body?.trim()||!ch.uk_body?.trim()))
+      throw Error('Incomplete bilingual narrative context: '+key);
     if(JSON.stringify(expectedChapters)!==JSON.stringify(actualChapters))
       throw Error('Chapter references mismatch: '+key);
     if(!claim.en?.trim()||!claim.uk?.trim()||!Array.isArray(claim.evidence)||!claim.evidence.length)
@@ -104,7 +107,9 @@ function renderMarkdown(report,items){
     lines.push('','**Linked narrative chapters:**');
     if(!item.linked_chapters.length)lines.push('- None; check whether narrative coverage is needed.');
     else for(const chapter of item.linked_chapters)
-      lines.push('- '+plain(chapter.chapter_id)+' — EN: '+plain(chapter.en_heading)+' / UK: '+plain(chapter.uk_heading));
+      lines.push('- '+plain(chapter.chapter_id)+' — EN: '+plain(chapter.en_heading)+' / UK: '+plain(chapter.uk_heading),
+        '  - EN text: '+plain(chapter.en_body),
+        '  - UK text: '+plain(chapter.uk_body));
     lines.push('','**Human review checklist:**');
     for(const task of item.review_tasks)
       lines.push('- [ ] '+plain(task.kind)+': '+plain(task.instruction));
