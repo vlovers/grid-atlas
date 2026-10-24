@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
 import {inspectNarrativeBundle} from '../scripts/editorial-narrative-model.mjs';
 
 const sample=()=>{
@@ -41,12 +42,12 @@ test('narrative audit blocks fake publication approvals and untranslated copy',(
   assert.ok(errors.some(x=>x.startsWith('missing_or_short_locale')));
 });
 
-test('real narrative bundle has 25 bilingual chapters across eight research-only profiles',()=>{
+test('real narrative bundle has 66 bilingual chapters across all 25 research-only profiles',()=>{
   const run=spawnSync(process.execPath,['scripts/editorial-narrative-audit.mjs'],{encoding:'utf8'});
   assert.equal(run.status,0,run.stderr+'\n'+run.stdout);
   const report=JSON.parse(run.stdout);
-  assert.equal(report.stories,8);
-  assert.equal(report.chapters,25);
+  assert.equal(report.stories,25);
+  assert.equal(report.chapters,66);
   assert.deepEqual(report.errors,[]);
   assert.equal(report.publication_status,'unpublished');
 });
@@ -57,4 +58,25 @@ test('malformed narrative arrays fail validation without throwing',()=>{
   assert.ok(inspectNarrativeBundle(bundle,cards).errors.includes('missing_stories'));
   bundle.stories=[{driver_id:'sample',chapters:{chapter_id:'not-an-array'}}];
   assert.ok(inspectNarrativeBundle(bundle,cards).errors.some(x=>x.startsWith('insufficient_chapters')));
+});
+
+test('every new candidate has a story with two or more chapters and valid claim IDs',()=>{
+  const batch=JSON.parse(readFileSync('docs/editorial/batches/drivers-30-v1.json','utf8'));
+  const release=JSON.parse(readFileSync('docs/editorial/releases/v1/manifest.json','utf8'));
+  const narratives=JSON.parse(readFileSync('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json','utf8'));
+  const pilots=new Set(release.drivers.map(x=>x.driver_id));
+  const candidates=new Set(batch.drivers.map(x=>x.driver_id).filter(id=>!pilots.has(id)));
+  assert.equal(candidates.size,25);
+  assert.equal(narratives.stories.length,25);
+  for(const story of narratives.stories){
+    assert.ok(candidates.delete(story.driver_id),'unknown or duplicate story: '+story.driver_id);
+    assert.ok(story.chapters.length>=2,story.driver_id);
+    const card=JSON.parse(readFileSync('docs/editorial/batches/drivers-30-v1/research/'+story.driver_id+'.json','utf8'));
+    const known=new Set(card.claims.map(x=>x.claim_id));
+    for(const chapter of story.chapters){
+      assert.ok(chapter.en.body.length>=80 && chapter.uk.body.length>=80,story.driver_id+':'+chapter.chapter_id);
+      for(const claimId of chapter.claim_ids) assert.ok(known.has(claimId),story.driver_id+':'+claimId);
+    }
+  }
+  assert.deepEqual([...candidates],[],'candidates without narrative chapters');
 });
