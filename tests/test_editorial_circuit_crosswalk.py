@@ -37,6 +37,25 @@ class CircuitCrosswalkTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             module.crosswalk(self.circuits, self.layouts, self.races, {"monaco": [1950]})
 
+    def test_missing_layout_is_explicit_not_invented(self):
+        self.races[0]["circuitLayoutId"] = None
+        result = module.crosswalk(self.circuits, self.layouts, self.races,
+                                  {"silverstone": [1950]})
+        self.assertEqual(result[0]["events"][0]["layout_status"], "missing_in_source")
+
+    def test_duplicate_race_rejected(self):
+        with self.assertRaises(ValueError):
+            module.crosswalk(self.circuits, self.layouts, self.races * 2,
+                             {"silverstone": [1950]})
+
+    def test_multiple_events_sorted_by_date(self):
+        self.races.insert(0, {"id": 2, "year": 1950, "circuitId": "silverstone",
+                              "circuitLayoutId": "silverstone-1",
+                              "date": "1950-08-01", "officialName": "Later"})
+        result = module.crosswalk(self.circuits, self.layouts, self.races,
+                                  {"silverstone": [1950]})
+        self.assertEqual([x["race_external_id"] for x in result[0]["events"]], ["1", "2"])
+
     def test_duplicate_layout_rejected(self):
         with self.assertRaises(ValueError):
             module.crosswalk(self.circuits, self.layouts * 2, self.races, {"silverstone": [1950]})
