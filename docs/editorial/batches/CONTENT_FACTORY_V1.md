@@ -52,7 +52,7 @@ This is an *intermediate* card format, not a competing canonical dossier schema.
 
 ## Current evidence audit notes (2026-10-24)
 
-Eight cards have newly inspected Formula 1 Hall of Fame claim-level locators: Alonso, Piquet, Mansell, Brabham, Farina, Rindt, Villeneuve and Norris. The remaining 17 cards still require claim-level passages, and **all 25** require independent corroboration, pinned-F1DB identity reconciliation and separate human EN/UK review.
+Sixteen cards now have inspected Formula 1 Hall of Fame claim-level locators: Alonso, Piquet, Mansell, Brabham, Farina, Rindt, Villeneuve, Norris, Vettel, Lauda, Fangio, Clark, Räikkönen, Häkkinen, Button and Rosberg. Across the 25 research cards, **52 of 76 paired EN/UK claims** have a linked primary-publisher passage; **24** remain unlinked (including the 9 cards not yet evidence-enriched). Räikkönen's 2002 McLaren transfer and Button's 2010 McLaren transfer deliberately remain unlinked because the inspected biography did not explicitly establish those exact season transitions. All 25 still require independent corroboration, pinned-F1DB identity reconciliation and separate human EN/UK review.
 
 **URL caveat:** the live Nigel Mansell Hall of Fame page is served at a URL containing `drivers-hall-of-fame-john-surtees`, despite its displayed title and text being about Mansell. The card retains the previously recorded `nigel-mansell` slug; verify the canonical address and stable archive link before publication. Do not infer a correct page from the URL slug alone.
 
