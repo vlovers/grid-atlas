@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-damon-hill.5Cwo2Aog5nHCR1eduIkq3y",
           "locator": "Paragraph beginning 'And yet when he duly took the driving title in 1996': eight victories in 16 races with Williams.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+          "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 1996 Damon Hill, Williams.",
+          "supports": true
         }
       ]
     },
@@ -92,5 +97,14 @@
     "Reconcile identity with pinned F1DB before use.",
     "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+      "title": "FIA 2016 Italian Grand Prix media kit — F1 World Champions since 1950",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
