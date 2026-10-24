@@ -77,6 +77,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
           "locator": "Paragraph beginning 'In the next race he achieved the best possible result': US Grand Prix at Watkins Glen.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/2017_usa_preview_0.pdf",
+          "locator": "FAST FACTS section, bullet beginning 'Five drivers have scored a maiden F1 win at the US Grand Prix': explicitly names Emerson Fittipaldi in 1970 at Watkins Glen.",
+          "supports": true
         }
       ]
     }
@@ -85,7 +90,7 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Find independent publisher passages for: emerson-fittipaldi-1970-debut, emerson-fittipaldi-1970-first-win",
+    "Find independent publisher passage for: emerson-fittipaldi-1970-debut",
     "Validate semantics of cited passages and translations before publication.",
     "Independent human EN/UK review and separate approval sidecars are required."
   ],
@@ -100,6 +105,13 @@
     {
       "url": "https://www.fia.com/news/f1-usa-gp-race-preview",
       "title": "FIA United States Grand Prix race preview — Emerson Fittipaldi biography",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/sites/default/files/2017_usa_preview_0.pdf",
+      "title": "FIA 2017 United States Grand Prix preview — maiden winners at Watkins Glen",
       "publisher": "FIA",
       "independence_group": "fia",
       "accessed_on": "2026-10-24"
