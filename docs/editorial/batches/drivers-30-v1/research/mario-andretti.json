@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Andretti won the 1978 Formula 1 Drivers' World Championship with Lotus.",
       "uk": "Андретті виграв чемпіонат світу Формули-1 серед пілотів 1978 року з Lotus.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'The relationship between Andretti and Lotus boss Chapman': six 1978 victories and World Championship with Lotus.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "mario-andretti-debut",
       "topic": "career_chronology",
       "en": "Andretti competed in Formula 1 World Championship races from 1968.",
       "uk": "Андретті виступав на етапах чемпіонату світу Формули-1 починаючи з 1968 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'At Indianapolis in 1965': first Formula 1 appearance and pole at 1968 US Grand Prix, Watkins Glen.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
