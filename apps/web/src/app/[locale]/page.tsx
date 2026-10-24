@@ -122,7 +122,7 @@ export default async function Home() {
     <section className={styles.section} aria-labelledby="home-circuits-title" data-story-reveal>
       <SectionHeading kicker={s.circuits} title={s.circuitsTitle} note={s.circuitsNote} id="home-circuits-title" />
       <StoryRail label={s.circuitsTitle} locale={locale}>{circuits.map((circuit, index) => <article className={styles.circuit} key={circuit.id}>
-        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3>{circuit.name}</h3><span className={styles.circuitId}>{circuit.external_id}</span>
+        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3><a href={path(`/circuits/${circuit.id}`)}>{circuit.name}</a></h3><span className={styles.circuitId}>{circuit.external_id}</span>
         {circuitArtworks[index] && <figure className={styles.circuitPreview}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={circuitArtworks[index].path} width={500} height={500} loading="lazy" alt={locale === 'uk'
@@ -130,7 +130,7 @@ export default async function Home() {
             : `Layout ${circuitArtworks[index].layout_id} outline of ${circuit.name}`} />
           <figcaption>{locale === 'uk' ? 'Історична конфігурація' : 'Historical layout'}: {circuitArtworks[index].layout_id} · <a href={circuitArtworks[index].source_url} target="_blank" rel="noopener noreferrer">{circuitArtworks[index].author} ↗</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">{circuitArtworks[index].license} ↗</a></figcaption>
         </figure>}
-        <a href={path(`/circuits/${circuit.id}`)} className={styles.readLink}>{s.circuitLink} ↗</a>
+        <span className={styles.readLink} aria-hidden="true">{s.circuitLink} ↗</span>
       </article>)}</StoryRail>
     </section>
 
