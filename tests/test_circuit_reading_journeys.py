@@ -43,7 +43,7 @@ class CircuitReadingJourneysTests(unittest.TestCase):
 
     def test_corner_guides_are_bilingual_and_provenanced(self):
         guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
-        self.assertEqual({g["id"] for g in guides}, {"silverstone","monza","spa-francorchamps","suzuka","monaco","hungaroring","zandvoort","montreal","interlagos","bahrain"})
+        self.assertEqual({g["id"] for g in guides}, {"silverstone","monza","spa-francorchamps","suzuka","monaco","hungaroring","zandvoort","montreal","interlagos","bahrain","baku","austin","imola"})
         for guide in guides:
             self.assertGreaterEqual(len(guide["sections"]), 2)
             for corner in guide["sections"]:
