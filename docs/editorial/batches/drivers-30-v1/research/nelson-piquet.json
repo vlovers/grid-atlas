@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Piquet won the Drivers' World Championship in 1981, 1983 and 1987.",
       "uk": "Піке виграв чемпіонат світу серед пілотів у 1981, 1983 та 1987 роках.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nelson-piquet.7EkDuZAxJN03b0kgFksCzf",
+          "locator": "Hall of Fame heading '1981, 1983, 1987' and 1987 Williams championship paragraph.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "nelson-piquet-teams",
       "topic": "career_chronology",
       "en": "His Formula 1 career included Brabham, Williams, Lotus and Benetton.",
       "uk": "У Формулі-1 Піке виступав за Brabham, Williams, Lotus і Benetton.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nelson-piquet.7EkDuZAxJN03b0kgFksCzf",
+          "locator": "1983 Brabham-BMW title paragraph; later Williams-Honda, Lotus and Benetton career paragraphs.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
