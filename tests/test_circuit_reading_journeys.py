@@ -58,6 +58,22 @@ class CircuitReadingJourneysTests(unittest.TestCase):
                 self.assertTrue(corner["source"].startswith("https://"))
         self.assertIn("<CircuitCornerGuide circuitId={circuit.external_id}", PAGE)
 
+    def test_archive_only_stories_are_not_mislabeled_corner_history(self):
+        renderer = (ED / "circuit-corner-guide.tsx").read_text(encoding="utf-8")
+        self.assertIn("hasIndependentTrackEvidence", renderer)
+        self.assertIn("raceOnlySource", renderer)
+        self.assertIn("Individual corner names, their origins", renderer)
+        guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
+        purely_archival = [
+            guide["id"] for guide in guides
+            if all("/f1db/f1db/blob/" in item["source"] for item in guide["sections"])
+        ]
+        self.assertTrue(purely_archival, "the archive-only coverage must remain explicitly differentiated")
+        self.assertIn("pescara", purely_archival)
+        self.assertNotIn("brands-hatch", purely_archival)
+        self.assertNotIn("paul-ricard", purely_archival)
+        self.assertNotIn("donington", purely_archival)
+
     def test_year_extraction_does_not_invent_race_ids(self):
         years = [int(match.group(0)) for match in re.finditer(r"\b(?:19|20)\d{2}\b", "1973–1975")]
         self.assertEqual(years, [1973, 1975])
