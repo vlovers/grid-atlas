@@ -465,5 +465,345 @@
         "source": "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi"
       }
     ]
+  },
+  {
+    "id": "aida",
+    "sections": [
+      {
+        "label": "Pacific Grand Prix · 1994",
+        "en": "At Aida, Michael Schumacher won the 1994 Pacific Grand Prix. For a newcomer, start with the setting: a Japanese circuit that hosted a championship race outside the more familiar Suzuka.",
+        "uk": "В Айді Міхаель Шумахер виграв Тихоокеанський Гран-прі 1994 року. Почни зі знайомства з незвичним місцем: японська траса, де проходив етап чемпіонату окремо від більш відомої Сузуки.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml"
+      },
+      {
+        "label": "Where to start watching",
+        "en": "Look at the race's classification first, then compare Aida's 1994 result with its later Pacific Grand Prix. Do not assume these appearances describe every event ever held at the venue.",
+        "uk": "Спершу переглянь класифікацію гонки, а потім порівняй результат 1994 року з наступним Тихоокеанським Гран-прі. Ці етапи не описують усі змагання, що коли-небудь проходили на трасі.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "reims",
+    "sections": [
+      {
+        "label": "Mercedes returns at Reims",
+        "en": "Juan Manuel Fangio won the 1954 French Grand Prix at Reims. The road-course setting helps explain why early World Championship circuits looked so different from today's permanent facilities.",
+        "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Франції 1954 року в Реймсі. Конфігурація звичайними дорогами показує, наскільки ранні траси чемпіонату відрізнялися від сучасних автодромів.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml"
+      },
+      {
+        "label": "Read the first Silver Arrows chapter",
+        "en": "Follow the race result and Fangio's winning entry to understand this particular Grand Prix before exploring the wider history of Mercedes-Benz in Formula 1.",
+        "uk": "Переглянь протокол гонки й переможний результат Фанхіо, щоб зрозуміти цей Гран-прі, перш ніж переходити до ширшої історії Mercedes-Benz у Формулі-1.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "rouen",
+    "sections": [
+      {
+        "label": "Rouen's difficult legacy",
+        "en": "Jacky Ickx won the 1968 French Grand Prix at Rouen. The race also belongs to a much more dangerous era: Jo Schlesser suffered a fatal accident at this event.",
+        "uk": "Жакі Ікс виграв Гран-прі Франції 1968 року в Руані. Водночас гонка належить значно небезпечнішій епосі: під час цього етапу загинув Жо Шлессер.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml"
+      },
+      {
+        "label": "Look beyond the winner",
+        "en": "Read the classification as a record of the sporting result, not as a complete account of the weekend. Historical safety context needs separate source evidence.",
+        "uk": "Читай класифікацію як підтвердження спортивного результату, але не як повну історію вікенду. Для деталей про безпеку потрібні окремі історичні джерела.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "buddh",
+    "sections": [
+      {
+        "label": "Vettel's title at Buddh",
+        "en": "Sebastian Vettel won the 2013 Indian Grand Prix at Buddh. This race marked his fourth consecutive Drivers' Championship, a milestone at a circuit that was only briefly on the F1 calendar.",
+        "uk": "Себастьян Феттель виграв Гран-прі Індії 2013 року на трасі Будд. Ця гонка принесла йому четвертий поспіль титул чемпіона серед пілотів на автодромі, який недовго залишався в календарі.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml"
+      },
+      {
+        "label": "Connect the race to the season",
+        "en": "A single Grand Prix result becomes much more meaningful when followed by the full season standings: it explains why a winning afternoon could also settle a world title.",
+        "uk": "Окремий результат стає набагато цікавішим поруч із підсумками сезону: так видно, чому перемога в одній гонці могла одночасно визначити чемпіона світу.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "porto",
+    "sections": [
+      {
+        "label": "A Grand Prix through Porto",
+        "en": "Stirling Moss won the 1958 Portuguese Grand Prix on the Porto road circuit. F1 once raced on everyday streets long before today's purpose-built venues became normal.",
+        "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1958 року на дорожній трасі Порту. Колись Формула-1 регулярно використовувала звичайні вулиці задовго до сучасних спеціалізованих автодромів.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/09-portugal/race-results.yml"
+      },
+      {
+        "label": "Explore a different kind of circuit",
+        "en": "Compare Porto's road-racing identity with modern street venues. Names and geometry from one era should never be projected onto an unrelated present-day layout.",
+        "uk": "Порівняй дорожню трасу Порту із сучасними міськими автодромами. Назви поворотів і геометрію однієї епохи не можна автоматично переносити на сучасні маршрути.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/09-portugal/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "jerez",
+    "sections": [
+      {
+        "label": "Häkkinen's first win",
+        "en": "Mika Häkkinen won the 1997 European Grand Prix at Jerez. The final round is also central to the Jacques Villeneuve–Michael Schumacher championship story.",
+        "uk": "Міка Гаккінен виграв Гран-прі Європи 1997 року в Хересі. Фінал сезону також став ключовим епізодом боротьби за титул між Жаком Вільневом і Міхаелем Шумахером.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/17-europe/race-results.yml"
+      },
+      {
+        "label": "Two stories in one result",
+        "en": "Start with the actual race winner, then investigate the separate championship battle. A title decider is not always won by the eventual champion.",
+        "uk": "Почни з фактичного переможця гонки, а потім досліди окрему боротьбу за чемпіонство. Вирішальну гонку сезону не завжди виграє майбутній чемпіон.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/17-europe/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "dallas",
+    "sections": [
+      {
+        "label": "Texas street racing",
+        "en": "Keke Rosberg won Formula 1's 1984 Dallas Grand Prix. This one-off championship event used a temporary city course rather than a long-established racing circuit.",
+        "uk": "Кеке Росберг виграв Гран-прі Далласа 1984 року. Цей єдиний чемпіонатний етап відбувся на тимчасовому міському маршруті, а не постійному автодромі.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml"
+      },
+      {
+        "label": "When the venue shapes the race",
+        "en": "The classification captures who finished, but a street circuit's heat, surface and layout are part of the story too. Those details require their own independent sources.",
+        "uk": "Класифікація показує фінішний порядок, але спека, покриття й геометрія міської траси теж впливають на розповідь. Ці подробиці потребують окремих джерел.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "sirius",
+    "sections": [
+      {
+        "label": "The first Sochi-era Grand Prix",
+        "en": "Lewis Hamilton won the inaugural 2014 Russian Grand Prix at the circuit around the Sochi Olympic complex. F1DB files the venue under the Sirius circuit identity.",
+        "uk": "Льюїс Гамільтон виграв перший Гран-прі Росії 2014 року на трасі навколо олімпійського комплексу Сочі. У F1DB цей автодром має ідентифікатор Sirius.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race-results.yml"
+      },
+      {
+        "label": "Decode the venue's identity",
+        "en": "The archive ID, the event name and the city's name are not always identical. Use the race record to connect the different labels without inventing a separate circuit.",
+        "uk": "Ідентифікатор в архіві, назва Гран-прі та назва міста не завжди збігаються. Протокол допомагає поєднати ці позначення, не створюючи вигадану окрему трасу.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "lusail",
+    "sections": [
+      {
+        "label": "Qatar joins the calendar",
+        "en": "Lewis Hamilton won Qatar's first Formula 1 World Championship Grand Prix at Lusail in 2021. The venue already had a history in motorcycle racing before hosting F1.",
+        "uk": "Льюїс Гамільтон виграв перший заліковий Гран-прі Катару Формули-1 у Лусаїлі 2021 року. До появи F1 автодром уже був відомий мотоперегонами.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml"
+      },
+      {
+        "label": "Start with the debut result",
+        "en": "A first F1 appearance is not the same thing as a circuit's construction date or first motorsport event. Keep those milestones separate when telling its story.",
+        "uk": "Перший етап Формули-1 — не те саме, що дата будівництва траси або перші автоспортивні змагання. Ці віхи варто розрізняти.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "yeongam",
+    "sections": [
+      {
+        "label": "A new Grand Prix in Korea",
+        "en": "Fernando Alonso won the inaugural Korean Grand Prix at Yeongam in 2010. The rainy event gave a new venue a dramatic introduction to the championship.",
+        "uk": "Фернандо Алонсо виграв перший Гран-прі Кореї в Йонамі 2010 року. Дощовий етап став драматичним дебютом нового автодрому в чемпіонаті.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml"
+      },
+      {
+        "label": "Why a debut can be memorable",
+        "en": "Track the classified finishers and compare the opening Korean Grand Prix with subsequent editions. A short-lived calendar venue can still host notable racing.",
+        "uk": "Простеж фінішну класифікацію та порівняй перший корейський Гран-прі з наступними. Навіть автодром із короткою історією в календарі може подарувати пам’ятні перегони.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "bugatti",
+    "sections": [
+      {
+        "label": "Le Mans, but not the famous full lap",
+        "en": "Jack Brabham won the 1967 French Grand Prix at the Bugatti circuit. This was the shorter permanent circuit in the Le Mans complex, not the full endurance-race route.",
+        "uk": "Джек Бребем виграв Гран-прі Франції 1967 року на трасі Bugatti. Йдеться про коротший постійний автодром у комплексі Ле-Мана, а не повний маршрут гонки на витривалість.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race-results.yml"
+      },
+      {
+        "label": "The difference between two layouts",
+        "en": "The words 'Le Mans' do not establish which layout was used. Check the event-specific course rather than treating every race at the venue as equivalent.",
+        "uk": "Сама назва «Ле-Ман» не доводить, яку саме конфігурацію використовували. Перевіряй маршрут конкретного етапу, а не прирівнюй усі гонки в цьому місці.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "mosport",
+    "sections": [
+      {
+        "label": "Before Montréal",
+        "en": "Peter Revson won the 1973 Canadian Grand Prix at Mosport. Canada's Formula 1 event used several venues before settling into its familiar Montréal home.",
+        "uk": "Пітер Ревсон виграв Гран-прі Канади 1973 року на автодромі Mosport. Перш ніж закріпитися в Монреалі, канадський етап Формули-1 проходив на різних трасах.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/14-canada/race-results.yml"
+      },
+      {
+        "label": "Trace one Grand Prix across locations",
+        "en": "A Grand Prix name identifies an event, not necessarily a single permanent circuit. Follow the circuit field year by year to see the move across Canada.",
+        "uk": "Назва Гран-прі позначає подію, але не обов'язково один незмінний автодром. Простеж розташування етапу за роками, щоб побачити його подорож Канадою.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/14-canada/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "sebring",
+    "sections": [
+      {
+        "label": "A breakthrough in Florida",
+        "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring. The venue's better-known endurance heritage makes this Formula 1 visit an unexpected chapter for new fans.",
+        "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу. Автодром відоміший гонками на витривалість, тому його епізод у Формулі-1 може здивувати нових уболівальників.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race-results.yml"
+      },
+      {
+        "label": "Where a famous name began",
+        "en": "Use the race classification to meet Bruce McLaren as a driver before exploring the constructor carrying his name. The race and the later team story are connected, but not interchangeable.",
+        "uk": "За протоколом познайомся з Брюсом Маклареном як пілотом, а потім перейди до конструктора з його ім’ям. Це пов’язані, але не тотожні історії.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "detroit",
+    "sections": [
+      {
+        "label": "Detroit enters Formula 1",
+        "en": "John Watson won the first Detroit Grand Prix in 1982. The temporary downtown street circuit brought the championship into the heart of an American automotive city.",
+        "uk": "Джон Вотсон виграв перший Гран-прі Детройта 1982 року. Тимчасова міська траса привела чемпіонат у саме серце американського автомобільного міста.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml"
+      },
+      {
+        "label": "Street circuit versus permanent track",
+        "en": "Compare Detroit's city-centre racing with permanent venues. Barriers and ordinary streets change the experience, but exact corner-name histories still need direct documentation.",
+        "uk": "Порівняй перегони в центрі Детройта з постійними автодромами. Бар’єри й звичайні вулиці змінюють характер етапу, але історію назв поворотів треба підтверджувати окремо.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "zeltweg",
+    "sections": [
+      {
+        "label": "Bandini on an airfield circuit",
+        "en": "Lorenzo Bandini won the 1964 Austrian Grand Prix at Zeltweg. The race used an airfield course, not the modern Red Bull Ring at nearby Spielberg.",
+        "uk": "Лоренцо Бандіні виграв Гран-прі Австрії 1964 року в Цельтвезі. Гонка відбулася на аеродромному маршруті, а не на сучасному Red Bull Ring поблизу Шпільберга.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml"
+      },
+      {
+        "label": "Separate two Austrian identities",
+        "en": "An Austrian Grand Prix result alone does not tell you which Austrian track hosted it. The historical circuit identifier matters before comparing layouts and records.",
+        "uk": "Самої назви Гран-прі Австрії недостатньо, щоб визначити трасу. Історичний ідентифікатор важливий перед порівнянням конфігурацій та рекордів.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "phoenix",
+    "sections": [
+      {
+        "label": "Senna versus Alesi",
+        "en": "Ayrton Senna won the 1990 United States Grand Prix at Phoenix. His fight with Jean Alesi is a useful entry point into a championship race on a temporary Arizona street circuit.",
+        "uk": "Айртон Сенна виграв Гран-прі США 1990 року у Фініксі. Його боротьба з Жаном Алезі — чудова точка входу в історію етапу на тимчасовій міській трасі Аризони.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml"
+      },
+      {
+        "label": "Follow the race beyond the winner",
+        "en": "The classification confirms Senna's victory. For the details of specific on-track passes, supplement it with race footage or an independent event report.",
+        "uk": "Протокол підтверджує перемогу Сенни. Для деталей конкретних обгонів потрібні відео гонки або незалежний опис перебігу подій.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "pescara",
+    "sections": [
+      {
+        "label": "The vast road circuit",
+        "en": "Stirling Moss won the 1957 Pescara Grand Prix. The World Championship raced on an exceptionally long road circuit through the Italian countryside.",
+        "uk": "Стірлінг Мосс виграв Гран-прі Пескари 1957 року. Чемпіонат світу тоді змагався на надзвичайно довгому дорожньому кільці через італійські сільські краєвиди.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml"
+      },
+      {
+        "label": "Why a lap cannot be compared blindly",
+        "en": "A lap's length and geometry affect its time. The Pescara result makes a good starting point before inspecting the unusual historical layout for this event.",
+        "uk": "Довжина й геометрія траси впливають на час кола. Результат Пескари — гарний початок перед знайомством із незвичною історичною конфігурацією.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "montjuic",
+    "sections": [
+      {
+        "label": "A tragic Barcelona weekend",
+        "en": "Jochen Mass won the shortened 1975 Spanish Grand Prix at Montjuïc. A fatal spectator accident is central to the story and requires careful, respectful treatment.",
+        "uk": "Йохен Масс виграв скорочений Гран-прі Іспанії 1975 року на трасі Монжуїк. Загибель глядачів стала центральною частиною історії, про яку треба розповідати обережно й із повагою.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml"
+      },
+      {
+        "label": "Beyond the race classification",
+        "en": "The race result establishes the official winner, not the full account of the stoppage and its causes. Those details must be cited to separate contemporary evidence.",
+        "uk": "Протокол установлює офіційного переможця, але не дає повного пояснення зупинки гонки та її причин. Для цих деталей потрібні окремі джерела.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "valencia",
+    "sections": [
+      {
+        "label": "Alonso's Valencia comeback",
+        "en": "Fernando Alonso won the 2012 European Grand Prix on Valencia's street circuit. It remains a vivid way to connect a race result with the atmosphere of a home crowd.",
+        "uk": "Фернандо Алонсо виграв Гран-прі Європи 2012 року на міській трасі Валенсії. Це яскравий приклад того, як спортивний результат і атмосфера домашніх трибун поєднуються в одній історії.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml"
+      },
+      {
+        "label": "One city, one different layout",
+        "en": "Valencia's former street circuit was not Barcelona's Catalunya track, even though both hosted Grands Prix in Spain. Historical identity matters more than country labels.",
+        "uk": "Колишня міська траса Валенсії — не барселонська Каталунья, хоча обидві приймали етапи в Іспанії. Історичний ідентифікатор важливіший за назву країни.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race.yml"
+      }
+    ]
+  },
+  {
+    "id": "anderstorp",
+    "sections": [
+      {
+        "label": "Six wheels, one victory",
+        "en": "Jody Scheckter won the 1976 Swedish Grand Prix in the six-wheeled Tyrrell P34. Anderstorp offers a rare entry point into the experimental side of Formula 1 engineering.",
+        "uk": "Джоді Шектер виграв Гран-прі Швеції 1976 року на шестиколісному Tyrrell P34. Андерсторп дає рідкісну можливість познайомитися з експериментальною інженерією Формули-1.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/07-sweden/race-results.yml"
+      },
+      {
+        "label": "What made the car unusual?",
+        "en": "The result verifies the winning driver and constructor. To understand why Tyrrell tried six wheels, move from the classification to documented car-design histories.",
+        "uk": "Протокол підтверджує переможця й конструктора. Щоб зрозуміти, навіщо Tyrrell експериментував із шістьма колесами, потрібна окрема історія конструкції боліда.",
+        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/07-sweden/race.yml"
+      }
+    ]
   }
 ]
