@@ -115,3 +115,21 @@
 @media (forced-colors: active) {
   .circuitPreview img { filter: none; }
 }
+
+/* White-outline assets require an explicitly dark panel on both themes. */
+.circuitPreview {
+  padding: clamp(1rem, 2vw, 1.5rem);
+  box-sizing: border-box;
+  background: #11161c;
+  border: 1px solid #353c43;
+  color: #edf0f2;
+}
+.circuitPreview img {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .4));
+}
+.circuitPreview figcaption { color: #c4ced6; }
+@media (forced-colors: active) {
+  .circuitPreview { background: Canvas; color: CanvasText; border-color: CanvasText; }
+  .circuitPreview figcaption { color: CanvasText; }
+  .circuitPreview img { filter: none; }
+}
