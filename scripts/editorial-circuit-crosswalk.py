@@ -19,6 +19,39 @@ SUBJECTS = {
 }
 
 
+# Independently observed in CI artifact 12575034447 from pinned F1DB v2026.17.0.
+EXPECTED_EVENTS = {
+    ("silverstone", 1950): ("1", "1950-05-13", "silverstone-1"),
+    ("monaco", 1950): ("2", "1950-05-21", "monaco-1"),
+    ("monaco", 1984): ("394", "1984-06-03", "monaco-4"),
+    ("monaco", 2016): ("941", "2016-05-29", "monaco-6"),
+    ("spa-francorchamps", 1950): ("5", "1950-06-18", "spa-francorchamps-1"),
+    ("spa-francorchamps", 1970): ("188", "1970-06-07", "spa-francorchamps-1"),
+    ("spa-francorchamps", 1983): ("379", "1983-05-22", "spa-francorchamps-2"),
+    ("monza", 1950): ("7", "1950-09-03", "monza-1"),
+    ("suzuka", 1987): ("451", "1987-11-01", "suzuka-1"),
+    ("suzuka", 1988): ("467", "1988-10-30", "suzuka-1"),
+}
+
+
+def verify_expected_events(crosswalk):
+    observed = {}
+    for circuit in crosswalk:
+        for event in circuit["events"]:
+            if "race_external_id" in event:
+                key = (circuit["circuit_external_id"], event["year"])
+                if key in observed:
+                    raise ValueError(f"Ambiguous race records for {key}: expected one")
+                observed[key] = (
+                    event["race_external_id"],
+                    event["race_date"],
+                    event["layout_external_id"],
+                )
+    for key, expected in EXPECTED_EVENTS.items():
+        if observed.get(key) != expected:
+            raise ValueError(f"Pinned F1DB event/layout changed for {key}: {observed.get(key)!r} != {expected!r}")
+
+
 def load_collection(bundle, filename):
     matches = [item for item in bundle.infolist()
                if not item.is_dir() and Path(item.filename).name == filename]
@@ -93,6 +126,7 @@ def main():
             load_collection(bundle, "f1db-circuits-layouts.json"),
             load_collection(bundle, "f1db-races.json"),
         )
+    verify_expected_events(rows)
     report = {"source": "f1db", "release": "v2026.17.0", "archive_sha256": digest,
               "status": "source_row_observations_not_independent_historical_approval",
               "circuits": rows}
