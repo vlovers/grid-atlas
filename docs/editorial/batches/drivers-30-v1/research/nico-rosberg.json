@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson (verify page byline)",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
     "independence_group": "formula1",
-    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
   },
   "claims": [
     {
@@ -19,21 +19,42 @@
       "topic": "career_chronology",
       "en": "Rosberg won the 2016 Formula 1 Drivers' World Championship with Mercedes.",
       "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 2016 року з Mercedes.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Hall of Fame heading '2016' and 2016 Mercedes team rivalry paragraphs.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "nico-rosberg-rival",
       "topic": "career_chronology",
       "en": "Rosberg secured the 2016 title in the final race ahead of Mercedes team-mate Lewis Hamilton.",
       "uk": "Росберг здобув титул 2016 року на фінальному етапі, випередивши напарника по Mercedes Льюїса Гамільтона.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Paragraph beginning 'Thereafter they traded race wins': 2016 title decided at Abu Dhabi against Hamilton.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "nico-rosberg-retirement",
       "topic": "career_chronology",
       "en": "Rosberg announced his retirement from Formula 1 five days after winning the 2016 championship.",
       "uk": "Росберг оголосив про завершення кар’єри у Формулі-1 через п’ять днів після здобуття титулу 2016 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Opening paragraph and paragraph beginning 'He was still smiling': retirement five days after 2016 title.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
