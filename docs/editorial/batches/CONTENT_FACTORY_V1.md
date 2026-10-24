@@ -50,6 +50,31 @@ and `published` counters are always zero; the output cannot feed the public
 publication pipeline. The source graph is a research queue, not a verified
 bibliography.
 
+## Human review worklist — prioritized and read-only
+
+The worklist joins the existing **provenance graph** and **96-claim bilingual review
+worksheet**. It fails closed if claim identities, source-diversity metadata,
+chapter dependencies or pending human-review states disagree. No research file
+or publication state is modified.
+
+```sh
+node scripts/editorial-human-review-worklist.mjs > /tmp/grid-atlas-human-review.json
+node scripts/editorial-human-review-worklist.mjs --format=markdown --limit=30 > /tmp/grid-atlas-review-top30.md
+node scripts/editorial-human-review-worklist.mjs --driver=jack-brabham --format=markdown
+node --test tests/editorial-human-review-worklist.test.mjs
+```
+
+The queue prioritizes **claims missing a second publisher**, then claims used
+in more narrative chapters. Each entry carries its original EN/UK text, source
+URLs and locators, chapter links, and explicit *pending* tasks for identity,
+source semantics, independent publisher research where needed, EN editing,
+UK editing and narrative verification. A high score indicates **review
+urgency**, not historical importance or factual accuracy. Even claims with two
+declared publisher groups still require human inspection of both passages.
+
+The output is a reviewer planning aid only: zero approvals, zero publications,
+no signed sidecars and no automatic editorial decisions.
+
 ## Evidence tiers
 
 1. **Candidate:** ID is provisional until checked against pinned F1DB. A source URL alone is not identity proof.
