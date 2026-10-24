@@ -23,6 +23,8 @@ on:
       - 'scripts/verify-media-identities.py'
       - 'scripts/content_factory_circuits.py'
       - 'tests/test_content_factory_circuits.py'
+      - 'scripts/audit_circuit_stories.py'
+      - 'docs/editorial/batches/circuits-five-story-moments-20261025.json'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -47,6 +49,8 @@ on:
       - 'scripts/verify-media-identities.py'
       - 'scripts/content_factory_circuits.py'
       - 'tests/test_content_factory_circuits.py'
+      - 'scripts/audit_circuit_stories.py'
+      - 'docs/editorial/batches/circuits-five-story-moments-20261025.json'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -91,6 +95,7 @@ jobs:
       - name: Generate 25 bilingual circuit archive briefs
         run: |
           python3 -m unittest discover -s tests -p 'test_content_factory_circuits.py' -v
+          python3 scripts/audit_circuit_stories.py
           python3 scripts/content_factory_circuits.py \
             --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
             --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
