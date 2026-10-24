@@ -25,13 +25,15 @@ class CircuitFactoryTests(unittest.TestCase):
             self.assertIsNone(subject["enriched_story"])
             self.assertEqual(subject["licensed_media"], [])
             self.assertEqual(subject["recorded_races"], len(subject["source_race_ids"]))
+            self.assertEqual(subject["source_race_ids"], sorted(subject["source_race_ids"], key=int))
+            self.assertIn("race records", subject["locales"]["en"]["summary"])
+            self.assertIn("записів про етапи", subject["locales"]["uk"]["summary"])
 
     def test_deterministic_order_independent_of_input_order(self):
         original = module.compile_batch("a" * 64, self.circuits, self.races, self.layouts)
         reversed_data = module.compile_batch("a" * 64, list(reversed(self.circuits)),
                                              list(reversed(self.races)), self.layouts)
-        self.assertEqual([x["circuit_external_id"] for x in original["circuits"]],
-                         [x["circuit_external_id"] for x in reversed_data["circuits"]])
+        self.assertEqual(original, reversed_data)
 
     def test_wrong_layout_refuses(self):
         self.races[0]["circuitLayoutId"] = "track-29-1"
