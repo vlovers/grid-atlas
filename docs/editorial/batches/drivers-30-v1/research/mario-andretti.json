@@ -44,6 +44,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
           "locator": "Paragraph beginning 'At Indianapolis in 1965': first Formula 1 appearance and pole at 1968 US Grand Prix, Watkins Glen.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1960s biography section identifies his Formula One debut and 1968 Watkins Glen pole position.",
+          "supports": true
         }
       ]
     },
@@ -57,6 +62,11 @@
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
           "locator": "Paragraph beginning 'At Indianapolis in 1965': pole on Formula 1 debut at 1968 US Grand Prix.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1960s section: first Formula One appearance, United States Grand Prix at Watkins Glen, pole position in Lotus.",
           "supports": true
         }
       ]
@@ -72,6 +82,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
           "locator": "Paragraph beginning 'The relationship between Andretti and Lotus boss Chapman': victory at Fuji in 1976.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1970s section: first Lotus win after comeback, season-ending 1976 Japanese Grand Prix in heavy rain.",
+          "supports": true
         }
       ]
     },
@@ -86,6 +101,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
           "locator": "Final paragraph beginning 'Thereafter, Chapman lost his way': 1982 Ferrari Monza pole and third place.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1980s section: Ferrari substitute for Didier Pironi at Monza 1982; pole position and third-place finish.",
+          "supports": true
         }
       ]
     }
@@ -95,7 +115,6 @@
   "media": [],
   "gaps": [
     "Reconcile identity with pinned F1DB before use.",
-    "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
   ],
   "additional_sources": [
@@ -104,6 +123,13 @@
       "title": "FIA 2016 Italian Grand Prix media kit — F1 World Champions since 1950",
       "publisher": "FIA",
       "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.marioandretti.com/biography",
+      "title": "Mario Andretti — Official Biography",
+      "publisher": "Mario Andretti official website",
+      "independence_group": "mario-andretti-official",
       "accessed_on": "2026-10-24"
     }
   ]
