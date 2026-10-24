@@ -239,9 +239,6 @@
 }
 @media (max-width: 700px) {
   .catalogue:global(:lang(uk)) :global([data-testid="editorial-hero"]) h1 {
-    font-size: clamp(2rem, 8vw, 4.8rem);
-    max-width: 100%;
-    min-width: 0;
-    overflow-wrap: anywhere;
+    font-size: clamp(2.8rem, 10vw, 4.8rem);
   }
 }
