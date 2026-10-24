@@ -11,16 +11,20 @@
 - `scripts/editorial-content-coverage.mjs`: authoritative offline coverage inventory including both canonical pilots **and** all 25 research cards.
 - `scripts/editorial-research-batch-audit.mjs` and `scripts/editorial-evidence-readiness.mjs`: additional diagnostic reports; neither replaces publication review.
 - `tests/editorial-content-factory.test.mjs`: structural, unsafe URL, evidence and publication-gate regression tests.
+- `narrative-chapters-v1.json`: 25 original bilingual research chapters for eight drivers, each with explicit claim-ID dependencies. Not a public biography export.
+- `scripts/editorial-narrative-model.mjs`, `scripts/editorial-narrative-audit.mjs`, and `tests/editorial-narrative.test.mjs`: validate chapter references, translations, and the unpublished gate.
 
 Run from repository root with Node 24+:
 
 ```sh
 node scripts/editorial-content-coverage.mjs > /tmp/grid-atlas-content-coverage.json
 node scripts/editorial-content-coverage.mjs --require-evidence > /tmp/grid-atlas-content-evidence.json
-node --test tests/editorial-content-factory.test.mjs
+node scripts/editorial-content-coverage.mjs --require-corroboration > /tmp/grid-atlas-corroboration.json
+node scripts/editorial-narrative-audit.mjs > /tmp/grid-atlas-narratives.json
+node --test tests/editorial-content-factory.test.mjs tests/editorial-narrative.test.mjs
 ```
 
-The normal coverage command **must** fail on missing files, malformed bilingual cards, duplicate claims, or publication-gate violations. The `--require-evidence` option is intentionally stricter and **currently expected to fail** until every research claim has precise claim-level evidence. It must never be bypassed to suggest editorial readiness.
+The normal coverage command **must** fail on missing files, malformed bilingual cards, duplicate claims, or publication-gate violations. The `--require-evidence` option now requires all claims to have structurally valid, declared source locators; it does **not** verify live page semantics. The separate `--require-corroboration` option requires two independent publisher groups per claim and is **expected to fail** until that research is complete. Passing either structural gate is not editorial approval.
 
 ## Evidence tiers
 
@@ -52,16 +56,20 @@ This is an *intermediate* card format, not a competing canonical dossier schema.
 
 ## Current evidence audit notes (2026-10-24)
 
-Sixteen cards now have inspected Formula 1 Hall of Fame claim-level locators: Alonso, Piquet, Mansell, Brabham, Farina, Rindt, Villeneuve, Norris, Vettel, Lauda, Fangio, Clark, Räikkönen, Häkkinen, Button and Rosberg. Across the 25 research cards, **52 of 76 paired EN/UK claims** have a linked primary-publisher passage; **24** remain unlinked (including the 9 cards not yet evidence-enriched). Räikkönen's 2002 McLaren transfer and Button's 2010 McLaren transfer deliberately remain unlinked because the inspected biography did not explicitly establish those exact season transitions. All 25 still require independent corroboration, pinned-F1DB identity reconciliation and separate human EN/UK review.
+All **25 additional research cards** have now had their source passages inspected and claim-level locators recorded. There are **96 paired EN/UK research claims**, each with at least one declared Formula 1 source passage. Two transition claims (Räikkönen joining McLaren for 2002 and Button for 2010) use additional official Formula 1 articles with explicit dates rather than relying on inference from the original Hall of Fame page.
+
+**Important distinction:** 96/96 is **structural evidence coverage**, not 96 externally validated facts, independent corroborations or editorial approvals. All linked sources currently belong to the **same Formula 1 publisher group**, so independent corroboration remains **0/96**. The research author recorded the locators; the audit does not inspect external pages. All 25 cards still require F1DB identity reconciliation, independently published evidence where available, and separate human EN/UK review.
+
+Eight drivers now also have **25 bilingual narrative chapters** in `narrative-chapters-v1.json`: Emerson Fittipaldi, Graham Hill, Alberto Ascari, Mario Andretti, Keke Rosberg, Damon Hill, Jackie Stewart and Charles Leclerc. Chapters link back to the exact research claim IDs, and the new narrative audit rejects orphan claims, missing translations and publication-gate violations. These are **research-only narrative drafts**, not eight approved biographies.
 
 **URL caveat:** the live Nigel Mansell Hall of Fame page is served at a URL containing `drivers-hall-of-fame-john-surtees`, despite its displayed title and text being about Mansell. The card retains the previously recorded `nigel-mansell` slug; verify the canonical address and stable archive link before publication. Do not infer a correct page from the URL slug alone.
 
-Do not import editorial photos, invent DRS/circuit data, infer 2026 season outcomes from 2025 records, or treat a green structural CI job as a human approval.
+Do not import editorial photos, invent DRS/circuit data, infer 2026 season outcomes from 2025 records, or treat green structural CI as human approval.
 
 ## Next substantive batch
 
-- Resolve URL/title mismatches and reopen **every** research source.
-- Add precise claim-level locators to the remaining cards and independent corroboration to all 25.
+- Resolve URL/title mismatches and independently re-check the accuracy of all 96 linked claims.
+- Add independent publisher corroboration to the 96 research claims; do not count two Formula 1 pages as independent.
 - Reconcile driver IDs with the pinned F1DB and build proper EN/UK canonical dossier pairs with null review sidecars.
 - Expand narrative chapters from sourced claims only, with explicit section-to-claim linkage.
 - Obtain independent human review; only then consider an approved release.
