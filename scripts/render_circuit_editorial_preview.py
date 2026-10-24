@@ -3,7 +3,11 @@
 import argparse
 import html
 import json
+import sys
 from pathlib import Path
+
+# unittest may load this file with importlib rather than as a CLI module.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from prepare_circuit_editorial_candidate import SOURCE, EVIDENCE, build_candidate
 
 STYLE = """
