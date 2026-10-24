@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "publication_status": "unpublished",
+  "review_status": "research_mapping_only",
+  "source_prs": [
+    274,
+    277
+  ],
+  "biography_head_sha": "70b147a40f13018180d0d4c6904cfe61ae496196",
+  "mapping_policy": "Editorial navigation only: candidate links based on paragraph text, not a semantic evidence verdict. Partial links and unmapped claims require independent source inspection. No review or publication approval.",
+  "rows": [
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-career-milestone",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-1975",
+        "niki-lauda-b2-fuji",
+        "niki-lauda-b2-1982",
+        "niki-lauda-b2-1984"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-context",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-monza"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-ferrari-entry",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-1976-return",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-monza"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-mclaren-return",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "niki-lauda",
+      "content_factory_claim_id": "niki-lauda-1984-title",
+      "biography_paragraph_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-career-milestone",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-1969",
+        "jackie-stewart-b2-1971",
+        "jackie-stewart-b2-1973"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-context",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-spa",
+        "jackie-stewart-b2-risk"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-safety",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-spa"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-broadcast",
+      "biography_paragraph_ids": [],
+      "alignment": "unmapped",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-team",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-team-owner"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-1965-brm",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-1968-tyrrell",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-1968"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "content_factory_claim_id": "jackie-stewart-1968-nurburgring",
+      "biography_paragraph_ids": [
+        "jackie-stewart-b2-risk"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "content_factory_claim_id": "sebastian-vettel-career-milestone",
+      "biography_paragraph_ids": [
+        "sebastian-vettel-b2-2010",
+        "sebastian-vettel-b2-2011",
+        "sebastian-vettel-b2-2012",
+        "sebastian-vettel-b2-2013"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "content_factory_claim_id": "sebastian-vettel-context",
+      "biography_paragraph_ids": [
+        "sebastian-vettel-b2-toro-rosso"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "content_factory_claim_id": "sebastian-vettel-2010",
+      "biography_paragraph_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "content_factory_claim_id": "sebastian-vettel-2013",
+      "biography_paragraph_ids": [
+        "sebastian-vettel-b2-2013"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "content_factory_claim_id": "mika-hakkinen-titles",
+      "biography_paragraph_ids": [
+        "mika-hakkinen-b2-1998",
+        "mika-hakkinen-b2-1999"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "content_factory_claim_id": "mika-hakkinen-lotus",
+      "biography_paragraph_ids": [
+        "mika-hakkinen-b2-early"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "content_factory_claim_id": "mika-hakkinen-adelaide",
+      "biography_paragraph_ids": [
+        "mika-hakkinen-b2-adelaide"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "content_factory_claim_id": "mika-hakkinen-first-win",
+      "biography_paragraph_ids": [
+        "mika-hakkinen-b2-first-win"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-career-milestone",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-1963",
+        "jim-clark-b2-1964-65"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-context",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-indy"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-lotus-debut",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-lotus-entry"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-1963-season",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-1963"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-1965-season",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jim-clark",
+      "content_factory_claim_id": "jim-clark-1968-death",
+      "biography_paragraph_ids": [
+        "jim-clark-b2-death"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "content_factory_claim_id": "juan-manuel-fangio-titles",
+      "biography_paragraph_ids": [
+        "juan-manuel-fangio-b2-alfa",
+        "juan-manuel-fangio-b2-split-1954",
+        "juan-manuel-fangio-b2-mercedes-1955",
+        "juan-manuel-fangio-b2-ferrari-1956",
+        "juan-manuel-fangio-b2-final-title"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "content_factory_claim_id": "juan-manuel-fangio-teams",
+      "biography_paragraph_ids": [
+        "juan-manuel-fangio-b2-alfa",
+        "juan-manuel-fangio-b2-split-1954",
+        "juan-manuel-fangio-b2-mercedes-1955",
+        "juan-manuel-fangio-b2-ferrari-1956",
+        "juan-manuel-fangio-b2-final-title"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "content_factory_claim_id": "juan-manuel-fangio-1957",
+      "biography_paragraph_ids": [
+        "juan-manuel-fangio-b2-germany-1957",
+        "juan-manuel-fangio-b2-final-title"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "graham-hill",
+      "content_factory_claim_id": "graham-hill-titles",
+      "biography_paragraph_ids": [
+        "graham-hill-b2-1962",
+        "graham-hill-b2-1968"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "graham-hill",
+      "content_factory_claim_id": "graham-hill-family",
+      "biography_paragraph_ids": [],
+      "alignment": "unmapped",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "graham-hill",
+      "content_factory_claim_id": "graham-hill-1958-debut",
+      "biography_paragraph_ids": [
+        "graham-hill-b2-lotus-brm"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "graham-hill",
+      "content_factory_claim_id": "graham-hill-1966-indy",
+      "biography_paragraph_ids": [
+        "graham-hill-b2-indy"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "graham-hill",
+      "content_factory_claim_id": "graham-hill-1972-triple-crown",
+      "biography_paragraph_ids": [
+        "graham-hill-b2-monaco",
+        "graham-hill-b2-indy",
+        "graham-hill-b2-lemans"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jack-brabham",
+      "content_factory_claim_id": "jack-brabham-titles",
+      "biography_paragraph_ids": [
+        "jack-brabham-b2-1959",
+        "jack-brabham-b2-1960",
+        "jack-brabham-b2-1966"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jack-brabham",
+      "content_factory_claim_id": "jack-brabham-own-car",
+      "biography_paragraph_ids": [
+        "jack-brabham-b2-1966"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "jack-brabham",
+      "content_factory_claim_id": "jack-brabham-cooper",
+      "biography_paragraph_ids": [
+        "jack-brabham-b2-1959",
+        "jack-brabham-b2-1960"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "content_factory_claim_id": "emerson-fittipaldi-titles",
+      "biography_paragraph_ids": [
+        "emerson-fittipaldi-b2-1972",
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "content_factory_claim_id": "emerson-fittipaldi-first",
+      "biography_paragraph_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "content_factory_claim_id": "emerson-fittipaldi-1970-debut",
+      "biography_paragraph_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "content_factory_claim_id": "emerson-fittipaldi-1970-first-win",
+      "biography_paragraph_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "content_factory_claim_id": "nigel-mansell-title",
+      "biography_paragraph_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "alignment": "direct",
+      "review_status": "pending",
+      "human_verified": false
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "content_factory_claim_id": "nigel-mansell-wins",
+      "biography_paragraph_ids": [
+        "nigel-mansell-b2-legacy"
+      ],
+      "alignment": "partial",
+      "review_status": "pending",
+      "human_verified": false
+    }
+  ]
+}
