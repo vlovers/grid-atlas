@@ -25,6 +25,18 @@ test('does not accept credential settings from a later step', () => {
   assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
 });
 
+test('rejects nested checkout credentials setting under unrelated option', () => {
+  const yaml = 'steps:\\n  - uses: ' + checkout +
+    '\\n    with:\\n      unrelated:\\n        persist-credentials: false\\n';
+  assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
+});
+
+test('rejects checkout credentials from a nested env mapping', () => {
+  const yaml = 'steps:\\n  - uses: ' + checkout +
+    '\\n    with:\\n      fetch-depth: 0\\n    env:\\n      persist-credentials: false\\n';
+  assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
+});
+
 test('accepts local actions and immutable Docker digests, rejects Docker tags', () => {
   const yaml = 'steps:\n  - uses: ./tools/local-action\n  - uses: docker://alpine@sha256:' + 'a'.repeat(64) + '\n';
   assert.deepEqual(auditWorkflowText(yaml), []);
