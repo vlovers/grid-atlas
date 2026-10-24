@@ -108,3 +108,28 @@ test('independent corroboration queue tracks all 96 research claims without appr
   assert.equal(queue.totals.approved_for_publication,0);
   assert.equal(queue.drivers.length,25);
 });
+
+test('duplicate citations cannot inflate claim-level evidence coverage',()=>{
+  const c=card();
+  c.claims[0].evidence.push({...c.claims[0].evidence[0]});
+  const report=inspectResearchCard(c,'sample');
+  assert.ok(report.errors.includes('duplicate_claim_evidence:sample-one'));
+  assert.equal(report.completeEvidenceClaims,0);
+  assert.equal(report.corroboratedClaims,0);
+});
+
+test('equivalent locators with whitespace and case changes are duplicates',()=>{
+  const c=card();
+  c.claims[0].evidence.push({...c.claims[0].evidence[0],locator:'  paragraph   3: THE FIRST FACT IS STATED.  '});
+  const report=inspectResearchCard(c,'sample');
+  assert.ok(report.errors.includes('duplicate_claim_evidence:sample-one'));
+});
+
+test('distinct passages from the same publisher remain valid but not independent',()=>{
+  const c=card();
+  c.claims[0].evidence.push({...c.claims[0].evidence[0],locator:'Paragraph 4: another relevant observation.'});
+  const report=inspectResearchCard(c,'sample');
+  assert.deepEqual(report.errors,[]);
+  assert.equal(report.completeEvidenceClaims,1);
+  assert.equal(report.corroboratedClaims,0);
+});
