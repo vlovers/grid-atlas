@@ -48,8 +48,36 @@ test('real 30-driver batch reports 5 pilots and 25 research cards without invent
   assert.equal(report.totals.missing,0);
   assert.equal(report.totals.invalid,0);
   assert.equal(report.totals.approved_for_publication,0);
-  assert.ok(report.totals.research_claims_without_evidence>0);
+  assert.equal(report.totals.research_claims_with_evidence,76);
+  assert.equal(report.totals.research_claims_without_evidence,0);
+  assert.equal(report.totals.research_claims_with_independent_corroboration,0);
   assert.equal(report.drivers.filter(x=>x.kind==='research_draft').length,25);
   const strict=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-evidence'],{encoding:'utf8'});
-  assert.equal(strict.status,1,'strict mode must reject incomplete claim-level evidence');
+  assert.equal(strict.status,0,'all 76 research claims should have declared, structurally valid evidence');
+  const corroborated=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-corroboration'],{encoding:'utf8'});
+  assert.equal(corroborated.status,1,'same-publisher source links are not independent corroboration');
+});
+
+test('additional evidence must use declared safe sources with complete metadata',()=>{
+  const c=card();
+  const source={url:'https://second.example.org/result',title:'Independent race archive',publisher:'Independent archive',independence_group:'independent',accessed_on:'2026-10-24'};
+  c.additional_sources=[source];
+  c.claims[0].evidence.push({source_url:source.url,locator:'Results table, season 2000, row 1.',supports:true});
+  const valid=inspectResearchCard(c,'sample');
+  assert.deepEqual(valid.errors,[]);
+  assert.equal(valid.corroboratedClaims,1);
+  c.additional_sources[0].independence_group='archive';
+  assert.equal(inspectResearchCard(c,'sample').corroboratedClaims,0,'two pages in one publisher group are not independent');
+  c.additional_sources=[];
+  assert.ok(inspectResearchCard(c,'sample').errors.includes('invalid_claim_evidence:sample-one'));
+  c.additional_sources=[{...source,url:'https://user:password@second.example.org/result'}];
+  assert.ok(inspectResearchCard(c,'sample').errors.includes('additional_source_metadata'));
+});
+test('research source registry rejects duplicate URLs and undeclared evidence',()=>{
+  const c=card();
+  c.additional_sources=[{...c.source,title:'Duplicated'}];
+  assert.ok(inspectResearchCard(c,'sample').errors.includes('duplicate_source_url'));
+  c.additional_sources=[];
+  c.claims[0].evidence[0].source_url='https://not-declared.example.org';
+  assert.ok(inspectResearchCard(c,'sample').errors.includes('invalid_claim_evidence:sample-one'));
 });
