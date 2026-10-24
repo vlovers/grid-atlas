@@ -42,9 +42,10 @@ function localeText(part: string, locale: 'uk' | 'en'): string {
   const body = part.slice(match.index + match[0].length);
   const next = otherMark.exec(body);
   const limited = next ? body.slice(0, next.index) : body;
-  return limited.split('\n').filter(line => !/^\*\*(?:Research locator|Research locators|Review sources|Review locator|Source inspection queue):/.test(line))
-    .filter(line => !/^\s*- (?:F-|M-|W-|Research locator|Verification queue)/.test(line))
-    .join('\n').trim();
+  // Research citations and reviewer instructions are not narrative paragraphs.
+  const evidenceBoundary = /^(?:\*\*(?:Research locators?|Review sources?|Review locator|Source inspection queue):|\*\*Source inspection queue:|\*\*Pending:|## (?:Package ledger|Updated progress snapshot))/m.exec(limited);
+  const narrative = evidenceBoundary ? limited.slice(0, evidenceBoundary.index) : limited;
+  return narrative.trim();
 }
 
 export async function generateMetadata(): Promise<Metadata> {
