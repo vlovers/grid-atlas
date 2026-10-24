@@ -93,20 +93,20 @@ test('filtered markdown output and invalid CLI arguments are safe',()=>{
 test('Markdown review dossier includes both translations, precise locators and chapter context',()=>{
   const result=run(['--driver=jack-brabham','--format=markdown','--limit=1']);
   assert.equal(result.status,0,result.stderr);
-  assert.match(result.stdout,/\\*\\*EN:\\*\\*/);
-  assert.match(result.stdout,/\\*\\*UK:\\*\\*/);
+  assert.match(result.stdout,/\*\*EN:\*\*/);
+  assert.match(result.stdout,/\*\*UK:\*\*/);
   assert.match(result.stdout,/Exact locator:/);
   assert.match(result.stdout,/Semantic review: pending/);
   assert.match(result.stdout,/Linked narrative chapters:/);
   assert.match(result.stdout,/Human review checklist:/);
-  assert.match(result.stdout,/- \\[ \\] source_semantics:/);
+  assert.match(result.stdout,/- \[ \] source_semantics:/);
   assert.match(result.stdout,/shown: 1/);
-  assert.doesNotMatch(result.stdout,/\\[x\\]/i);
+  assert.doesNotMatch(result.stdout,/\[x\]/i);
 });
 
 test('Markdown review export does not use HTML line-break tags for source links',()=>{
   const result=run(['--format=markdown','--limit=2']);
   assert.equal(result.status,0,result.stderr);
-  assert.doesNotMatch(result.stdout,/<br\\s*\\/?\\s*>/i);
-  assert.match(result.stdout,/https:\\/\\//);
+  assert.doesNotMatch(result.stdout,/<br\s*\/?\s*>/i);
+  assert.match(result.stdout,/https:\/\//);
 });
