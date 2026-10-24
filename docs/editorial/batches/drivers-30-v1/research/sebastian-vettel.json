@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "driver_id": "sebastian-vettel",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+    "title": "Sebastian Vettel — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Formula 1 editorial; verify exact byline",
+    "locator": "See precise paragraph or heading locator on each claim.",
+    "accessed_on": "2026-10-24",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; primary publisher evidence only, independent corroboration and human review outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "sebastian-vettel-career-milestone",
+      "topic": "career",
+      "en": "Sebastian Vettel won four consecutive Drivers' World Championships from 2010 through 2013.",
+      "uk": "Себастьян Феттель здобув чотири поспіль чемпіонські титули серед пілотів у 2010–2013 роках.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+          "locator": "Hall of Fame heading '2010-2013' and opening two paragraphs describing four consecutive titles.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 2010, 2011, 2012 and 2013 rows all name Sebastian Vettel.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-context",
+      "topic": "historical_context",
+      "en": "His 2008 Italian Grand Prix victory came while he raced for Toro Rosso.",
+      "uk": "У Гран-прі Італії 2008 року Феттель переміг, виступаючи за Toro Rosso.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+          "locator": "Paragraph beginning 'A full 2008 season with Toro Rosso': wet Italian Grand Prix victory at Monza.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/2014-italian-grand-prix-preview-0",
+          "locator": "Fast Facts, bullet 'Vettel’s win for Toro Rosso in 2008': Italian GP victory at Monza in Toro Rosso.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-2010",
+      "topic": "career_chronology",
+      "en": "Vettel won his first Drivers' World Championship in 2010.",
+      "uk": "Феттель здобув свій перший титул чемпіона світу серед пілотів у 2010 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+          "locator": "Paragraph beginning 'In the grand finale at Abu Dhabi': first title in 2010 at age 23.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 2010 row names Sebastian Vettel.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-2013",
+      "topic": "career_chronology",
+      "en": "Vettel secured his fourth consecutive Drivers' World Championship in 2013.",
+      "uk": "Феттель здобув четвертий поспіль титул чемпіона світу серед пілотів у 2013 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+          "locator": "Opening paragraph ending with the fourth consecutive championship in 2013.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 2013 row names Sebastian Vettel.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/2014-italian-grand-prix-preview-0",
+      "title": "FIA 2014 Italian Grand Prix preview",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

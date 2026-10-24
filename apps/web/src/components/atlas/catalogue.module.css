@@ -226,8 +226,9 @@
   }
 }
 
-/* Keep long Ukrainian catalogue titles as intentional editorial headlines,
-   rather than splitting the final Cyrillic character at the column edge. */
+/* Keep Ukrainian editorial headlines intact when space permits. At 200% text zoom
+   on a 320px viewport an unbroken title cannot fit: allow emergency wrapping
+   instead of widening the document and hiding controls off-screen. */
 .catalogue:global(:lang(uk)) :global([data-testid="editorial-hero"]) h1 {
   font-size: clamp(3.2rem, 5.4vw, 6.8rem);
   letter-spacing: -.035em;
@@ -239,6 +240,8 @@
 }
 @media (max-width: 700px) {
   .catalogue:global(:lang(uk)) :global([data-testid="editorial-hero"]) h1 {
-    font-size: clamp(2.8rem, 10vw, 4.8rem);
+    font-size: clamp(2.2rem, 10vw, 4.8rem);
+    overflow-wrap: anywhere;
+    word-break: normal;
   }
 }

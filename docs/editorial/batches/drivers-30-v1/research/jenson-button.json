@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "driver_id": "jenson-button",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+    "title": "Jenson Button — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
+  },
+  "claims": [
+    {
+      "claim_id": "jenson-button-first-win",
+      "topic": "career_chronology",
+      "en": "Button took his first Formula 1 Grand Prix victory in Hungary in 2006.",
+      "uk": "Баттон здобув свою першу перемогу на Гран-прі Формули-1 в Угорщині у 2006 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'His reputation as a winless wonder ended': 2006 Hungarian Grand Prix.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/2013-hungarian-grand-prix-preview",
+          "locator": "Hungarian GP Fast Facts, bullet 'Jenson Button’s march to his first win': 2006 Hungary, from 14th on grid.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jenson-button-brawn",
+      "topic": "career_chronology",
+      "en": "Button won the 2009 Formula 1 Drivers' World Championship driving for Brawn GP.",
+      "uk": "Баттон став чемпіоном світу Формули-1 серед пілотів у 2009 році за Brawn GP.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'Nonetheless, Jenson steadily accumulated': 2009 title for Brawn GP.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-goodwood-brawn-bgp-001-recent-legend",
+          "locator": "FIA 2016 Goodwood feature, paragraph 'An undisputed modern legend': 2009 Brawn GP car took Button to world title.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jenson-button-2009-start",
+      "topic": "career_chronology",
+      "en": "Button won six of the first seven races of the 2009 season.",
+      "uk": "Баттон виграв шість із перших семи перегонів сезону 2009 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+          "locator": "Paragraph beginning 'Against all the odds and expectations': six of first seven 2009 wins.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jenson-button-mclaren",
+      "topic": "career_chronology",
+      "en": "Button joined McLaren for the 2010 Formula 1 season.",
+      "uk": "Баттон приєднався до McLaren у сезоні Формули-1 2010 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/8-of-mclarens-strongest-driver-pairings-that-norris-and-piastri-follow-in.25WfAsmEQ2atFYFJ4NUK3R",
+          "locator": "Section 'Lewis Hamilton and Jenson Button': Button joined Hamilton at McLaren in 2010 after his Brawn GP title.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Find independent publisher passages for: jenson-button-2009-start, jenson-button-mclaren",
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.formula1.com/en/latest/article/8-of-mclarens-strongest-driver-pairings-that-norris-and-piastri-follow-in.25WfAsmEQ2atFYFJ4NUK3R",
+      "title": "8 of McLaren's strongest driver pairings from their 1000 Grands Prix",
+      "publisher": "Formula 1",
+      "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/fia-goodwood-brawn-bgp-001-recent-legend",
+      "title": "FIA at Goodwood: Brawn BGP 001",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/2013-hungarian-grand-prix-preview",
+      "title": "FIA 2013 Hungarian Grand Prix preview",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

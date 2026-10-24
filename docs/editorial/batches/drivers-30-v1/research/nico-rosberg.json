@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "driver_id": "nico-rosberg",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+    "title": "Nico Rosberg — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
+  },
+  "claims": [
+    {
+      "claim_id": "nico-rosberg-championship",
+      "topic": "career_chronology",
+      "en": "Rosberg won the 2016 Formula 1 Drivers' World Championship with Mercedes.",
+      "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 2016 року з Mercedes.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Hall of Fame heading '2016' and 2016 Mercedes team rivalry paragraphs.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-rosberg-seals-f1-drivers-title-second-place-hamilton-wins-abu-dhabi",
+          "locator": "FIA 2016 Abu Dhabi GP race report, opening paragraphs: Rosberg champion and Mercedes team-mate Hamilton.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nico-rosberg-rival",
+      "topic": "career_chronology",
+      "en": "Rosberg secured the 2016 title in the final race ahead of Mercedes team-mate Lewis Hamilton.",
+      "uk": "Росберг здобув титул 2016 року на фінальному етапі, випередивши напарника по Mercedes Льюїса Гамільтона.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Paragraph beginning 'Thereafter they traded race wins': 2016 title decided at Abu Dhabi against Hamilton.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-rosberg-seals-f1-drivers-title-second-place-hamilton-wins-abu-dhabi",
+          "locator": "FIA 2016 Abu Dhabi GP race report, first two paragraphs: final-round second place ahead of Hamilton on points.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nico-rosberg-retirement",
+      "topic": "career_chronology",
+      "en": "Rosberg announced his retirement from Formula 1 five days after winning the 2016 championship.",
+      "uk": "Росберг оголосив про завершення кар’єри у Формулі-1 через п’ять днів після здобуття титулу 2016 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nico-rosberg.7ryzoUXKrxqhlcNlXEUaTf",
+          "locator": "Opening paragraph and paragraph beginning 'He was still smiling': retirement five days after 2016 title.",
+          "supports": true
+        },
+        {
+          "source_url": "https://api.fia.com/news/fia-president-salutes-nico-rosberg-new-f1-world-champion-announces-retirement-fia-prize-giving",
+          "locator": "FIA 2 December 2016 prize-giving report, opening paragraphs: retirement announcement five days after 27 November title.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-rosberg-seals-f1-drivers-title-second-place-hamilton-wins-abu-dhabi",
+      "title": "F1 - Rosberg seals F1 Drivers' title",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://api.fia.com/news/fia-president-salutes-nico-rosberg-new-f1-world-champion-announces-retirement-fia-prize-giving",
+      "title": "FIA President salutes Nico Rosberg as new F1 World Champion announces retirement",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

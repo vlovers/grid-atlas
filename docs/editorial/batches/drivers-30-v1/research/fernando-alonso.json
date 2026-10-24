@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "driver_id": "fernando-alonso",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
+    "title": "Fernando Alonso — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "fernando-alonso-titles",
+      "topic": "career_chronology",
+      "en": "Alonso won consecutive Formula 1 Drivers' World Championships with Renault in 2005 and 2006.",
+      "uk": "Алонсо здобув два поспіль титули чемпіона світу Формули-1 з Renault у 2005 та 2006 роках.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
+          "locator": "Hall of Fame heading '2005, 2006'; introductory paragraph on consecutive Renault titles.",
+          "supports": true
+        },
+        {
+          "source_url": "https://api.fia.com/news/2013-malaysian-grand-prix-preview",
+          "locator": "FIA 2013 Malaysian GP preview, Alonso 200th Grand Prix fact: 2005 and 2006 Renault titles.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "fernando-alonso-debut",
+      "topic": "career_chronology",
+      "en": "Alonso made his Formula 1 debut with Minardi in 2001.",
+      "uk": "Алонсо дебютував у Формулі-1 з Minardi у 2001 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
+          "locator": "Paragraph beginning 'Onward and upward he sped': Minardi test, F3000 and F1 debut the following season (2001).",
+          "supports": true
+        },
+        {
+          "source_url": "https://api.fia.com/news/2013-malaysian-grand-prix-preview",
+          "locator": "FIA 2013 Malaysian GP preview, Alonso 200th Grand Prix fact: 2001 Australian GP debut for Minardi.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "fernando-alonso-2003-win",
+      "topic": "career_chronology",
+      "en": "Alonso won his first Formula 1 Grand Prix in Hungary in 2003.",
+      "uk": "Алонсо здобув свою першу перемогу на Гран-прі Формули-1 в Угорщині у 2003 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
+          "locator": "Paragraph beginning 'Onward and upward he sped': Hungary pole and youngest Grand Prix winner in 2003.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/hungarian-gp-race-preview",
+          "locator": "FIA Hungarian GP race preview, Hungaroring history: Alonso first GP victory in 2003.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "fernando-alonso-ferrari",
+      "topic": "career_chronology",
+      "en": "Alonso joined Ferrari for the 2010 Formula 1 season.",
+      "uk": "Алонсо приєднався до Ferrari в сезоні Формули-1 2010 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
+          "locator": "Paragraph beginning 'In pursuit of a new challenge': Ferrari hire for 2010 and five wins.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://api.fia.com/news/2013-malaysian-grand-prix-preview",
+      "title": "2013 Malaysian Grand Prix - Preview",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/hungarian-gp-race-preview",
+      "title": "Hungarian GP: Race preview",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "driver_id": "alberto-ascari",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+    "title": "Alberto Ascari — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
+  },
+  "claims": [
+    {
+      "claim_id": "alberto-ascari-titles",
+      "topic": "career_chronology",
+      "en": "Ascari won consecutive Formula 1 Drivers' World Championships in 1952 and 1953 with Ferrari.",
+      "uk": "Аскарі здобув два поспіль титули чемпіона світу Формули-1 у 1952 та 1953 роках із Ferrari.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Paragraph beginning 'Given his family responsibilities': Ferrari titles in 1952 and 1953, six and five wins.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+          "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 1952 and 1953 Alberto Ascari, Ferrari.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.treccani.it/enciclopedia/alberto-ascari_%28Dizionario-Biografico%29/",
+          "locator": "Biographical paragraph 'fu campione del mondo nel 1952 e nel 1953' explicitly confirms both titles.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alberto-ascari-monza",
+      "topic": "career_chronology",
+      "en": "Ascari died in a testing accident at Monza on 26 May 1955.",
+      "uk": "Аскарі загинув під час випробувального заїзду в Монці 26 травня 1955 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Final career paragraphs: Monza Ferrari sports-car test crash on third lap and date May 26, 1955.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.treccani.it/enciclopedia/alberto-ascari_%28Dizionario-Biografico%29/",
+          "locator": "Final biographical paragraph: 'Il 26 maggio 1955' and 'provando sulla pista di Monza' describes the fatal testing accident.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alberto-ascari-1952-run",
+      "topic": "career_chronology",
+      "en": "Ascari won six of the seven championship races he contested in the 1952 season in his Ferrari 500.",
+      "uk": "У сезоні 1952 року Аскарі виграв шість із семи залікових перегонів, у яких брав участь, за кермом Ferrari 500.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Paragraph beginning 'Given his family responsibilities': Ferrari 500 won six of seven 1952 championship races.",
+          "supports": true
+        },
+        {
+          "source_url": "https://gpracingstats.com/drivers/alberto-ascari/",
+          "locator": "Driver Stats by Season table: 1952 row lists RS (Race Starts) = 7 and W (Wins) = 6; Ferrari constructor.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "alberto-ascari-1955-monaco",
+      "topic": "career_chronology",
+      "en": "At the 1955 Monaco Grand Prix, Ascari survived when his Lancia crashed into the harbour.",
+      "uk": "На Гран-прі Монако 1955 року Аскарі вижив після того, як його Lancia впала в гавань.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Paragraph beginning 'Following his runaway championships': Lancia D50 plunged into Monaco harbour and driver survived.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/on-this-week-21-alberto-ascari-130858/",
+          "locator": "Opening section 'On this week in 1955' identifies the 22 May Monaco Grand Prix, Lancia D50 falling into the harbour and Ascari escaping.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Obtain separate human review for both locales before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+      "title": "FIA 2016 Italian Grand Prix media kit — F1 World Champions since 1950",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.treccani.it/enciclopedia/alberto-ascari_%28Dizionario-Biografico%29/",
+      "title": "Alberto Ascari — Dizionario Biografico degli Italiani",
+      "publisher": "Treccani",
+      "independence_group": "treccani",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fondazionepirelli.org/en/activities/stories-from-world-of-pirelli/alberto-ascari-a-legendary-driver/",
+      "title": "Alberto Ascari, A Legendary Driver",
+      "publisher": "Fondazione Pirelli",
+      "independence_group": "pirelli",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/on-this-week-21-alberto-ascari-130858/",
+      "title": "On This Week #21: Alberto Ascari",
+      "publisher": "Pirelli",
+      "independence_group": "pirelli",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.racefans.net/f1-information/drivers/alberto-ascari/",
+      "title": "Alberto Ascari career record",
+      "publisher": "RaceFans",
+      "independence_group": "racefans",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://gpracingstats.com/drivers/alberto-ascari/",
+      "title": "Alberto Ascari F1 stats — 1952 season starts and wins",
+      "publisher": "GP Racing Stats",
+      "independence_group": "gpracingstats",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

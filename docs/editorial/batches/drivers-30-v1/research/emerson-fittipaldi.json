@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "driver_id": "emerson-fittipaldi",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+    "title": "Emerson Fittipaldi — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
+  },
+  "claims": [
+    {
+      "claim_id": "emerson-fittipaldi-titles",
+      "topic": "career_chronology",
+      "en": "Fittipaldi won the Formula 1 Drivers' World Championship in 1972 and 1974.",
+      "uk": "Фіттіпальді здобув титули чемпіона світу Формули-1 серед пілотів у 1972 та 1974 роках.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Hall of Fame title heading '1972, 1974'; 1972 Lotus 72 championship paragraph and 1974 McLaren M23 championship paragraph.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1972 and 1974 rows name Emerson Fittipaldi.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-first",
+      "topic": "career_chronology",
+      "en": "His first title came at the age of 25.",
+      "uk": "Перший чемпіонський титул він здобув у 25 років.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Paragraph beginning 'In 1972 the Lotus 72': five victories and first world title at age 25.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-usa-gp-race-preview",
+          "locator": "Race Stewards Biographies, 'EMERSON FITTIPALDI' paragraph: first title in 1972 at age 25 years and 273 days.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-1970-debut",
+      "topic": "career_chronology",
+      "en": "Fittipaldi made his Formula 1 World Championship debut at the 1970 British Grand Prix.",
+      "uk": "Фіттіпальді дебютував у чемпіонаті світу Формули-1 на Гран-прі Великої Британії 1970 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Paragraph beginning 'Having made his Formula 1 debut': British Grand Prix in 1970.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.autosport.com/f1/news/fittipaldi-how-i-broke-into-formula-1-5104060/5104060/",
+          "locator": "First-person account paragraph beginning 'But the following year, 1970, I felt ready': Fittipaldi says his Formula 1 debut was planned for mid-July at the British Grand Prix at Brands Hatch.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-1970-first-win",
+      "topic": "career_chronology",
+      "en": "He took his first Formula 1 victory at the 1970 United States Grand Prix at Watkins Glen.",
+      "uk": "Він здобув свою першу перемогу у Формулі-1 на Гран-прі США 1970 року у Воткінс-Глені.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Paragraph beginning 'In the next race he achieved the best possible result': US Grand Prix at Watkins Glen.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/2017_usa_preview_0.pdf",
+          "locator": "FAST FACTS section, bullet beginning 'Five drivers have scored a maiden F1 win at the US Grand Prix': explicitly names Emerson Fittipaldi in 1970 at Watkins Glen.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-usa-gp-race-preview",
+      "title": "FIA United States Grand Prix race preview — Emerson Fittipaldi biography",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/sites/default/files/2017_usa_preview_0.pdf",
+      "title": "FIA 2017 United States Grand Prix preview — maiden winners at Watkins Glen",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.autosport.com/f1/news/fittipaldi-how-i-broke-into-formula-1-5104060/5104060/",
+      "title": "Fittipaldi: How I broke into Formula 1 — first-person account",
+      "publisher": "Autosport",
+      "independence_group": "autosport",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

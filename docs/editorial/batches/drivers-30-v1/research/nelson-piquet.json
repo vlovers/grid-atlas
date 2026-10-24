@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "driver_id": "nelson-piquet",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nelson-piquet.7EkDuZAxJN03b0kgFksCzf",
+    "title": "Nelson Piquet — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "nelson-piquet-titles",
+      "topic": "career_chronology",
+      "en": "Piquet won the Drivers' World Championship in 1981, 1983 and 1987.",
+      "uk": "Піке виграв чемпіонат світу серед пілотів у 1981, 1983 та 1987 роках.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nelson-piquet.7EkDuZAxJN03b0kgFksCzf",
+          "locator": "Hall of Fame heading '1981, 1983, 1987' and 1987 Williams championship paragraph.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1981, 1983 and 1987 rows name Nelson Piquet.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nelson-piquet-teams",
+      "topic": "career_chronology",
+      "en": "His Formula 1 career included Brabham, Williams, Lotus and Benetton.",
+      "uk": "У Формулі-1 Піке виступав за Brabham, Williams, Lotus і Benetton.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nelson-piquet.7EkDuZAxJN03b0kgFksCzf",
+          "locator": "1983 Brabham-BMW title paragraph; later Williams-Honda, Lotus and Benetton career paragraphs.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "driver_id": "keke-rosberg",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+    "title": "Keke Rosberg — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
+  },
+  "claims": [
+    {
+      "claim_id": "keke-rosberg-champion",
+      "topic": "career_chronology",
+      "en": "Rosberg won the 1982 Formula 1 Drivers' World Championship with Williams.",
+      "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 1982 року з Williams.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': Williams signed Rosberg; 1982 Drivers' World Championship.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-fia-pays-tribute-mansour-ojjeh-1952-2021",
+          "locator": "FIA tribute to Mansour Ojjeh, Williams sponsorship paragraph: Keke Rosberg added a second Williams title in 1982.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "keke-rosberg-one-win",
+      "topic": "career_chronology",
+      "en": "He won just one championship Grand Prix during his title-winning 1982 season.",
+      "uk": "У своєму чемпіонському сезоні 1982 року він виграв лише один заліковий Гран-прі.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': one Grand Prix victory at Dijon during 1982 championship.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "keke-rosberg-1978-debut",
+      "topic": "career_chronology",
+      "en": "Rosberg made his Formula 1 debut with Theodore in 1978.",
+      "uk": "Росберг дебютував у Формулі-1 з Theodore у 1978 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Yet no amount of financial savvy': Formula 1 debut with Theodore in 1978.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "keke-rosberg-1982-williams",
+      "topic": "career_chronology",
+      "en": "Williams signed Rosberg for 1982 after Alan Jones announced his retirement.",
+      "uk": "Williams підписала Росберга на 1982 рік після того, як Алан Джонс оголосив про завершення кар’єри.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': Jones retired and Williams hired Rosberg.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Attach precise per-claim source locator and independent publisher corroboration.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-fia-pays-tribute-mansour-ojjeh-1952-2021",
+      "title": "F1 — FIA pays tribute to Mansour Ojjeh (1952–2021)",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}
