@@ -8,10 +8,10 @@
     "title": "Jackie Stewart — Formula 1 Hall of Fame",
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
-    "locator": "1969/1971/1973 championship paragraphs; safety campaign passages",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "accessed_on": "2026-10-24",
     "independence_group": "formula1",
-    "verification_note": "Source URL and selected passages inspected against the public Formula 1 Hall of Fame page on 2026-10-24. These are research observations, not independent editorial approvals."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,35 +19,70 @@
       "topic": "career",
       "en": "Jackie Stewart won the Drivers' World Championship in 1969, 1971 and 1973.",
       "uk": "Джекі Стюарт став чемпіоном світу серед пілотів у 1969, 1971 та 1973 роках.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+          "locator": "Hall of Fame title heading '1969, 1971, 1973'; opening career paragraphs on three championships.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jackie-stewart-context",
       "topic": "historical_context",
       "en": "Beyond his racing results, Stewart campaigned for improvements to safety in Formula 1.",
       "uk": "Окрім гоночних результатів, Стюарт активно виступав за підвищення безпеки у Формулі-1.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+          "locator": "Opening paragraph on Stewart's safety campaign; section beginning 'Almost single-handedly' on safety improvements.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jackie-stewart-safety",
       "topic": "career_chronology",
-      "en": "Stewart advocated improved safety in Formula 1 alongside his driving career.",
-      "uk": "Паралельно з кар’єрою пілота Стюарт виступав за підвищення безпеки у Формулі-1.",
-      "review_status": "needs_review"
+      "en": "After surviving a serious crash at the 1966 Belgian Grand Prix, Stewart pressed for stronger safety measures.",
+      "uk": "Після важкої аварії на Гран-прі Бельгії 1966 року Стюарт наполягав на посиленні заходів безпеки.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+          "locator": "Paragraph beginning 'Stewart's own brush with death': 1966 Belgian Grand Prix crash and subsequent safety campaign.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jackie-stewart-broadcast",
       "topic": "career_chronology",
       "en": "Stewart worked as a television commentator and presenter, including ABC's coverage of the 1971 Monaco Grand Prix.",
       "uk": "Стюарт працював телекоментатором і ведучим, зокрема під час трансляції Гран-прі Монако 1971 року на ABC.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+          "locator": "Paragraph beginning 'He became a much sought after media personality': ABC TV co-host at 1971 Monaco Grand Prix.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jackie-stewart-team",
       "topic": "career_chronology",
       "en": "The Stewart Grand Prix team won a Formula 1 race in 1999.",
       "uk": "Команда Stewart Grand Prix здобула перемогу в перегонах Формули-1 у 1999 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
+          "locator": "Final biography paragraph beginning 'He was always a winner': Stewart Grand Prix race victory in 1999.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
