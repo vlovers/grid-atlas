@@ -26,14 +26,23 @@ test('does not accept credential settings from a later step', () => {
 });
 
 test('rejects nested checkout credentials setting under unrelated option', () => {
-  const yaml = 'steps:\\n  - uses: ' + checkout +
-    '\\n    with:\\n      unrelated:\\n        persist-credentials: false\\n';
+  const yaml = `steps:
+  - uses: ${checkout}
+    with:
+      unrelated:
+        persist-credentials: false
+`;
   assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
 });
 
 test('rejects checkout credentials from a nested env mapping', () => {
-  const yaml = 'steps:\\n  - uses: ' + checkout +
-    '\\n    with:\\n      fetch-depth: 0\\n    env:\\n      persist-credentials: false\\n';
+  const yaml = `steps:
+  - uses: ${checkout}
+    with:
+      fetch-depth: 0
+    env:
+      persist-credentials: false
+`;
   assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
 });
 
