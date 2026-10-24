@@ -122,7 +122,7 @@ export default async function Home() {
     <section className={styles.section} aria-labelledby="home-circuits-title" data-story-reveal>
       <SectionHeading kicker={s.circuits} title={s.circuitsTitle} note={s.circuitsNote} id="home-circuits-title" />
       <StoryRail label={s.circuitsTitle} locale={locale}>{circuits.map((circuit, index) => <article className={styles.circuit} key={circuit.id}>
-        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3><a href={path(`/circuits/${circuit.id}`)}>{circuit.name}</a></h3><span className={styles.circuitId}>{circuit.external_id}</span>
+        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3>{circuit.name}</h3><span className={styles.circuitId}>{circuit.external_id}</span>
         {circuitArtworks[index] && <figure className={styles.circuitPreview}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={circuitArtworks[index].path} width={500} height={500} loading="lazy" alt={locale === 'uk'
