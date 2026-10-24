@@ -51,7 +51,7 @@ export default async function ConstructorResearchIndex({ params }: Props) {
       <ul>
         {manifest.subjects.map(subject => (
           <li key={subject.name}>
-            <Link href={`/${locale}/editorial/constructors/${subject.name.toLowerCase().replace(/\\s+/g, '-')}`}>
+            <Link href={`/${locale}/editorial/constructors/${subject.name.toLowerCase().replace(/\s+/g, '-')}`}>
               {subject.name}
             </Link>
             {' — '}{subject.f1db_external_id ?? (uk ? 'ідентифікатор очікується' : 'identity pending')}
