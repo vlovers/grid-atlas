@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "driver_id": "juan-manuel-fangio",
+  "locale": "en",
+  "title": "Juan Manuel Fangio — winning beyond one team",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "fangio-cultura",
+      "source_url": "https://www.cultura.gob.ar/juan-manuel-fangio-9172/",
+      "title": "Juan Manuel Fangio, el dueño de la velocidad",
+      "publisher": "Ministerio de Cultura, Argentina",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "argentina-cultura"
+    },
+    {
+      "source_id": "fangio-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv",
+      "title": "Juan Manuel Fangio — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "fangio-museum",
+      "source_url": "https://www.museofangio.com/es/juan-manuel-fangio/biografia/4-cuarta-parte-1950-1958/",
+      "title": "Biografía — Cuarta parte, 1950–1958",
+      "publisher": "Fundación Museo Fangio",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "museo-fangio"
+    },
+    {
+      "source_id": "mercedes-roots",
+      "source_url": "https://www.mercedesamgf1.com/news/marking-a-milestone-125-years-of-motorsport",
+      "title": "Marking a Milestone: 125 Years of Motorsport",
+      "publisher": "Mercedes-AMG Petronas F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mercedes"
+    },
+    {
+      "source_id": "fangio-ring",
+      "source_url": "https://www.nuerburgring.de/history?locale=en",
+      "title": "The History — 1957",
+      "publisher": "Nürburgring",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "nuerburgring"
+    },
+    {
+      "source_id": "fangio-germany",
+      "source_url": "https://www.formula1.com/en/results/1957/races/155/germany/race-result",
+      "title": "1957 German Grand Prix — race result",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "juan-manuel-fangio-b2-balcarce",
+      "topic": "early_career",
+      "statement": "Juan Manuel Fangio’s route to Formula 1 began in the workshops of Balcarce, Argentina, rather than in a European junior championship. Born on 24 June 1911, he learned metalwork and vehicle maintenance while still at school. Work in local garages connected the practical business of repairing cars with the possibility of racing them.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-cultura",
+          "locator": "La largada: birth in Balcarce; Cerri, Capettini, Carlini and Viggiano workshops",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-road-racing",
+      "topic": "early_career",
+      "statement": "Before the world championship existed, Fangio competed in long-distance South American road races. These events demanded more than a fast lap: driver and machine had to survive journeys far longer than a Grand Prix. His background therefore joined mechanical experience to endurance before his European single-seater career brought him into the new championship.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-hall",
+          "locator": "Opening biographical paragraphs: mechanic and self-prepared cars in South American long-distance races",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-alfa",
+      "topic": "championships",
+      "statement": "Fangio entered the inaugural 1950 championship with Alfa Romeo and finished runner-up to Giuseppe Farina. In 1951 he took the title himself.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "f1db-seasons-driver-standings.json: 1950/1951 final positions; f1db-races-race-results.json: 1951 positionNumber=1 and sharedCar; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-injury",
+      "topic": "key_events",
+      "statement": "The advance was interrupted in 1952 by a serious accident at Monza in a non-championship race. Fangio injured his neck and missed the championship season. His return with Maserati in 1953 was consequently a return from injury as well as a change of team; he finished second in the standings and won the Italian Grand Prix.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-museum",
+          "locator": "1952 and 1953 year entries: Monza accident, absence, return and Italian victory",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1953 final standing and Italian GP race result; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-split-1954",
+      "topic": "teams_seasons",
+      "statement": "The 1954 title cannot accurately be assigned to a full season with only Mercedes. Fangio won the opening Argentine and Belgian races in a Maserati before moving to the new Mercedes works effort. He then won at Reims on the W196’s championship debut. The transition took place within one championship, not between two title-winning years.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mercedes-roots",
+          "locator": "65 years ago: entering Formula One — Reims debut and W196 championships",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1954 race results: argentina, belgium, france; constructorId; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-mercedes-1955",
+      "topic": "championships",
+      "statement": "He retained the championship in 1955, now with Stirling Moss among his Mercedes team-mates. The pairing is a reminder that a rival could also be a colleague sharing the same technical resources. Fangio’s second Mercedes title followed the first, but his next two championships would come after he had left the manufacturer.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mercedes-roots",
+          "locator": "1954/1955 W196 seasons and named team-mates",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1955 final championship classification; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-ferrari-1956",
+      "topic": "championships",
+      "statement": "Ferrari was his next destination, and the 1956 championship ended at Monza with Fangio sharing Peter Collins’s car. He finished second in that race and secured his fourth title.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-museum",
+          "locator": "1956: Monza, second place in Peter Collins’s car and fourth title",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1956 Italy shared result and final standings; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-germany-1957",
+      "topic": "key_events",
+      "statement": "Back at Maserati for 1957, Fangio reached the German Grand Prix with another championship in view. A delayed stop left him chasing the Ferraris of Mike Hawthorn and Peter Collins. He caught and passed both.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-ring",
+          "locator": "1957 — catch-up race and passing Collins/Hawthorn",
+          "supports": true
+        },
+        {
+          "source_id": "fangio-germany",
+          "locator": "Race result rows 1–3; Hawthorn +3.600s",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-final-title",
+      "topic": "championships",
+      "statement": "That German victory secured the fifth championship and proved to be his final world-championship win. His title years were 1951, 1954, 1955, 1956 and 1957. They span Alfa Romeo, the Maserati–Mercedes transition, Mercedes, Ferrari and Maserati: a record of success across changing machinery rather than the uninterrupted story of a single team.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-museum",
+          "locator": "1957 year entry: German victory and fifth title",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "All final championship positionNumber=1 rows and chronological winning race results; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-mechanical-style",
+      "topic": "driving_style",
+      "statement": "Gerald Donaldson’s Formula 1 profile emphasises Fangio’s practical relationship with mechanics and his willingness to work on the cars himself. Preparation and driving were connected parts of his working life. The experience acquired in Argentine workshops remained relevant even when the cars and the scale of the teams around him had changed.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fangio-hall",
+          "locator": "Paragraph on team player/team leader, mechanics and practical contributions; Ferrari/Moss discussion of team changes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-last-season",
+      "topic": "teams_seasons",
+      "statement": "Fangio made his final championship appearances in 1958, in Argentina and France. He finished fourth in both races. The previous year’s German Grand Prix remained the last of his 24 championship victories. The career that had begun in South American road racing had reached five world titles before he stepped away from Formula 1.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "f1db-drivers.json: totalRaceWins; race-result final year; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fangio-cultura",
+          "locator": "Career account: South American racing before world championship",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "juan-manuel-fangio-b2-historical-weight",
+      "topic": "significance",
+      "statement": "His final championship came at 46. The five titles crossed different teams, and his best-known victory came late rather than at the start of that sequence. Alfa Romeo, Mercedes, Ferrari and Maserati each form a distinct chapter: together they explain why Fangio became a reference point for generations who never saw him race.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "dateOfBirth and 1957 championship year; title years and constructors; exact driverId/id=juan-manuel-fangio; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fangio-museum",
+          "locator": "1957 fifth title and 1958 end of F1 chronology",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "A mechanic before a world champion",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-balcarce",
+        "juan-manuel-fangio-b2-road-racing"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "The first championship, and an interruption",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa",
+        "juan-manuel-fangio-b2-injury"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Four more titles, four distinct campaigns",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954",
+        "juan-manuel-fangio-b2-mercedes-1955",
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ]
+    },
+    {
+      "section_id": "rivals",
+      "title": "The Nürburgring, beyond the legend",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-germany-1957",
+        "juan-manuel-fangio-b2-final-title"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Driving and mechanical judgement",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-mechanical-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "A finite career, an enduring reference point",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season",
+        "juan-manuel-fangio-b2-historical-weight"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Review discrepancies in celebratory Maserati accounts that assign the split 1954 title entirely to Maserati; retain the explicit Maserati–Mercedes distinction.",
+    "Early shared-drive victories and points require era-specific review; do not replace championship points with race-point sums."
+  ],
+  "media": []
+}

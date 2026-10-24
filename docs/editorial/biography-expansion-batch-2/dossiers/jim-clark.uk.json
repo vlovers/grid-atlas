@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "driver_id": "jim-clark",
+  "locale": "uk",
+  "title": "Джим Кларк — швидкість на різних сценах",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "clark-early",
+      "source_url": "https://jimclarktrust.com/jim-clark/the-early-years/",
+      "title": "Jim Clark — The Early Years",
+      "publisher": "The Jim Clark Trust",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "jim-clark-trust"
+    },
+    {
+      "source_id": "clark-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
+      "title": "Jim Clark — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "clark-indy-history",
+      "source_url": "https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/02/28/clarks-rear-engine-victory-in-1965-was-evolution-of-revolution-at-indy-2020",
+      "title": "Clark’s Rear-Engine Victory in 1965 Was Evolution of Revolution at Indy",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": "Paul Kelly",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "clark-indy-stats",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/jim-clark",
+      "title": "Jim Clark — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "lotus-49",
+      "source_url": "https://classicteamlotus.co.uk/en/about/team-lotus-register-2/type-49/",
+      "title": "Team Lotus Type 49",
+      "publisher": "Classic Team Lotus",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "classic-team-lotus"
+    },
+    {
+      "source_id": "clark-tragedy",
+      "source_url": "https://jimclarktrust.com/jim-clark/tragedy/",
+      "title": "Jim Clark — Tragedy",
+      "publisher": "The Jim Clark Trust",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "jim-clark-trust"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "jim-clark-b2-farm",
+      "topic": "early_career",
+      "statement": "Джим Кларк народився в Кілмані 4 березня 1936 року та виріс на фермі Едінгтон-Мейнс у шотландському Пограниччі. За біографією Jim Clark Trust, його дитинство було пов’язане з роботою на фермі та керуванням сільськогосподарською технікою. Гонки виростали поруч із життям, у якому очікуваною професією спочатку було фермерство.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-early",
+          "locator": "The Early Years: birth, move to Edington Mains, return to farming and driving vehicles",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-lotus-entry",
+      "topic": "early_career",
+      "statement": "Виступи на спортивних автомобілях і у Формулі-Junior привели Кларка до команди Lotus Коліна Чепмена у 1960 році. Ця співпраця стала постійною основою його кар’єри у Формулі-1: усі перемоги Кларка в чемпіонаті здобуті на Lotus. Двигуни та шасі змінювалися, проте свої титули він виборював без переходів до конкуруючих конструкторів.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-hall",
+          "locator": "Early racing, Lotus Elite/Formula Junior and promotion to Team Lotus in 1960",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "All championship race wins: constructorId=lotus; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1962",
+      "topic": "key_events",
+      "statement": "Першу перемогу в чемпіонаті Кларк здобув на Гран-прі Бельгії 1962 року. Успіхи у Великій Британії та США зробили його претендентом на титул, однак чемпіоном став Ґрем Гілл. Тут особливо помітна різниця між виграними гонками та виграним сезоном: прорив Кларка завершився трьома перемогами й другим місцем у підсумковому заліку.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1962 winning race results and final driver standings; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1963",
+      "topic": "championships",
+      "statement": "У 1963 році співвідношення сил рішуче змінилося. Кларк виграв сім гонок чемпіонату та здобув перший світовий титул. Переможна послідовність простяглася від Бельгії до заключного етапу в Південній Африці.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1963: seven race wins, Belgium through South Africa; final positionNumber=1; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1964-65",
+      "topic": "championships",
+      "statement": "Титул 1964 року здобув Джон Сертіс, а в 1965-му Кларк повернувся на вершину. Друге чемпіонство включало перемоги в Південній Африці, Бельгії, Франції, Великій Британії, Нідерландах і Німеччині. Монако він пропустив заради Індіанаполіса.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1964 and 1965 final standings; six 1965 wins; no Monaco 1965 race-result row; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-history",
+          "locator": "1965 Indianapolis campaign and victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-indy",
+      "topic": "key_events",
+      "statement": "В Індіанаполісі Кларк привів Lotus-Ford до перемоги, лідируючи на 190 колах із 200. Він уже був там другим у 1963 році й повторив цей результат у 1966-му. Історичний матеріал самої траси розглядає успіх 1965 року як частину ширшого переходу до задньомоторних машин, а не лише як досягнення одного пілота.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "Race Stats: 1963, 1965 and 1966 rows; 1965 Led=190, Laps=200",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-history",
+          "locator": "Rear-engine transition, Ford, Chapman and Wood Brothers contributions",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1966",
+      "topic": "teams_seasons",
+      "statement": "Наступний чемпіонат склався інакше. У 1966 році Кларк виграв лише Гран-прі США, тоді як титул здобув Джек Бребем. Отже, тривала співпраця з Lotus містила і надзвичайно успішні, і значно скромніші сезони.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1966 winning results; Brabham final championship position; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-49",
+      "topic": "key_events",
+      "statement": "У Зандворті 1967 року Lotus 49 із Cosworth DFV виграв свій дебютний етап чемпіонату під керуванням Кларка. Classic Team Lotus описує новий трилітровий двигун і наступні перемоги машини з ним. Того сезону Кларк виграв чотири гонки чемпіонату, а 1968 рік почав ще однією перемогою на Lotus у Південній Африці.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lotus-49",
+          "locator": "Introduction at Zandvoort in 1967; first Cosworth DFV 3-litre engine and Clark victories",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1967 Dutch GP first-place result; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-graham-team",
+      "topic": "teams_seasons",
+      "statement": "Тепер Ґрем Гілл був напарником Кларка в Lotus, а не лише суперником із часів BRM. У 1967 році Кларк виграв чотири гонки чемпіонату, проте чемпіоном за Brabham став Денні Г’юм.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1967: four wins; Hill constructorId=lotus; Hulme final champion; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-style",
+      "topic": "driving_style",
+      "statement": "Профіль Formula 1 Джеральда Дональдсона описує, як Кларк пристосовувався до недоліків автомобіля, а Чепмен перетворював його відгуки на технічні зміни. Партнерство поєднувало відчуття машини пілотом з інженерним напрямом конструктора. Воно тривало крізь зміни шасі та двигунів Lotus — від перших років у Формулі-1 до автомобіля з DFV останнього сезону.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-hall",
+          "locator": "Paragraph after the 1965 championship: Chapman translating feedback and Clark driving around problems",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "Career results across five Indianapolis starts",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-final-win",
+      "topic": "key_events",
+      "statement": "Кларк виграв стартовий Гран-прі Південної Африки 1968 року, довівши число перемог у чемпіонаті світу до 25. Це був і його останній старт у Формулі-1.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1968 South Africa result; totalRaceWins=25; 1965 calendar has no Indianapolis race; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "1965 Indy victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-death",
+      "topic": "death",
+      "statement": "7 квітня 1968 року Кларк загинув у гонці Формули-2 на Гоккенгаймі. Йому було 32 роки. Jim Clark Trust зазначає, що свідків аварії не було, і називає втрату тиску в задній шині поширеним поясненням. Загибель обірвала партнерство з Lotus лише через кілька місяців після перемоги в Південній Африці.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-tragedy",
+          "locator": "Opening paragraph: date, F2 event, no witnesses; subsequent tyre explanation",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Від шотландського Пограниччя до Lotus",
+      "claim_ids": [
+        "jim-clark-b2-farm",
+        "jim-clark-b2-lotus-entry"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Швидкість чемпіона до першого титулу",
+      "claim_ids": [
+        "jim-clark-b2-1962",
+        "jim-clark-b2-1963"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Різні виміри сезону 1965 року",
+      "claim_ids": [
+        "jim-clark-b2-1964-65",
+        "jim-clark-b2-indy"
+      ]
+    },
+    {
+      "section_id": "rivals",
+      "title": "Постійна команда й мінлива техніка",
+      "claim_ids": [
+        "jim-clark-b2-1966",
+        "jim-clark-b2-49",
+        "jim-clark-b2-graham-team"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Пристосування замість гасла",
+      "claim_ids": [
+        "jim-clark-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Кар’єра, що обірвалася поза Формулою-1",
+      "claim_ids": [
+        "jim-clark-b2-final-win",
+        "jim-clark-b2-death"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Cause of the Hockenheim accident remains an attributed reconstruction, not a conclusive finding established by this batch.",
+    "Do not repeat later Lotus marketing copy placing both drivers on the front row at the 1967 Dutch GP; cross-check qualifying separately."
+  ],
+  "media": []
+}

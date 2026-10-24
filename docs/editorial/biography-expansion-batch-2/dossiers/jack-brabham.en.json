@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "driver_id": "jack-brabham",
+  "locale": "en",
+  "title": "Jack Brabham — the driver who helped build his title",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "brabham-sahof",
+      "source_url": "https://sahof.org.au/hall-of-fame-member/jack-brabham/",
+      "title": "Sir Jack Brabham",
+      "publisher": "Sport Australia Hall of Fame",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "sahof"
+    },
+    {
+      "source_id": "brabham-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jack-brabham.3XK2XWdL0moCmnSC55m84J",
+      "title": "Jack Brabham — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "brabham-tauranac",
+      "source_url": "https://brdc.co.uk/notice-of-death-ron-tauranac-1925-2020/",
+      "title": "Notice of Death — Ron Tauranac (1925–2020)",
+      "publisher": "British Racing Drivers’ Club",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "brdc"
+    },
+    {
+      "source_id": "brabham-imeche",
+      "source_url": "https://www.imeche.org/docs/default-source/heritage/engineering-heritage-awards-handbook.pdf?sfvrsn=0",
+      "title": "Engineering Heritage Awards handbook — BT19 racing car",
+      "publisher": "Institution of Mechanical Engineers",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "imeche"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "jack-brabham-b2-australia",
+      "topic": "early_career",
+      "statement": "Jack Brabham’s racing began with the same practical work that would later distinguish his championship career. After wartime service in the air force, he opened a repair business in Australia in 1946. The Sport Australia Hall of Fame traces his move from preparing and racing midget cars on dirt ovals to road racing in the early 1950s.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-sahof",
+          "locator": "Air-force service, 1946 repair business, midgets and early-1950s road racing",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-cooper",
+      "topic": "early_career",
+      "statement": "He arrived in Britain in 1955 and began the association with Cooper that brought him into Formula 1. His early championship appearances were not immediately successful. The important development was a working partnership in which driving and mechanical preparation were closely connected, before the rear-engined Cooper became the machine with which he would challenge the established front-runners.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-hall",
+          "locator": "Move to England in 1955; John/Charles Cooper partnership and development of rear-engine cars",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "First championship appearance and early Cooper results; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-1959",
+      "topic": "championships",
+      "statement": "Brabham won the Monaco and British Grands Prix in 1959 and secured his first drivers’ championship. Stirling Moss and Tony Brooks were among the principal rivals in the final standings. The title gave the rear-engined Cooper more than a novelty victory: it demonstrated that the layout could sustain a championship campaign against the leading opposition of the period.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1959 Monaco/Britain wins and final driver standings; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-sahof",
+          "locator": "1959/1960 Cooper world titles and rear-engine development",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-1960",
+      "topic": "championships",
+      "statement": "He followed it with five consecutive wins in the Netherlands, Belgium, France, Britain and Portugal in 1960. Bruce McLaren, his Cooper team-mate, finished second in the championship. The consecutive victories made the defence more emphatic than the first title and helped make the rear-engined car central to Formula 1’s immediate future, rather than merely a successful experiment.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1960 consecutive five wins and final driver standings; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-hall",
+          "locator": "Cooper titles confirming the change from front-engined cars",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-tauranac",
+      "topic": "teams_seasons",
+      "statement": "Brabham built a new racing enterprise with designer Ron Tauranac. Tauranac’s designs extended through Formula 1, Formula 2 and Formula 3, while customer racing cars became an important part of the business. Jack’s own title challenge developed within a wider workshop whose machines also helped other drivers advance through the sport.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-tauranac",
+          "locator": "Tauranac designs across F1/F2/F3 and flourishing customer-car business",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-gurney",
+      "topic": "key_events",
+      "statement": "The first championship wins for the Brabham constructor came through Dan Gurney in France and Mexico in 1964. Jack’s first championship win in a car bearing his own name followed in France in 1966.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1964 constructorId=brabham wins by dan-gurney; 1966 France Jack win; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-engineering",
+      "topic": "significance",
+      "statement": "For the new three-litre formula in 1966, the team used a Repco V8 in the BT19. The Institution of Mechanical Engineers describes a chassis originally conceived around the smaller formula and adapted for the new engine. Its heritage citation credits Brabham, Tauranac and Phil Irving, placing the famous driver-constructor achievement within a shared engineering effort.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-imeche",
+          "locator": "Printed page 69, BT19 Racing Car: Background and Citation; engine/formula change and named contributors",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-1966",
+      "topic": "championships",
+      "statement": "Brabham won in France, Britain, the Netherlands and Germany and took the 1966 world title. It was his third, after 1959 and 1960, and the first won in a car carrying his own name.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1966 four wins and final championship; title years; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-imeche",
+          "locator": "Citation: same constructor’s and driver’s name",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-hulme",
+      "topic": "teams_seasons",
+      "statement": "The next title within the team went to Denny Hulme in 1967, with Brabham himself runner-up. A team bearing the founder’s name could now win the drivers’ championship with somebody else.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1967 final driver standings: Hulme first, Brabham second; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-tauranac",
+          "locator": "Repco-powered designs and Hulme’s 1967 title",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-style",
+      "topic": "driving_style",
+      "statement": "Brabham’s Formula 1 profile links his forceful driving to experience on dirt tracks, while the engineering record emphasises the practical strengths of the BT19. These are complementary perspectives, not evidence that aggression alone won his championships.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-hall",
+          "locator": "Driving paragraph: forceful, opposite-lock dirt-track style",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-imeche",
+          "locator": "BT19 citation: effective, reliable race car",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-1970",
+      "topic": "key_events",
+      "statement": "His final championship win came in South Africa in 1970, driving the new BT33. He retired as a Formula 1 driver at the end of that season with 14 championship victories. The British Racing Drivers’ Club records Tauranac’s responsibility for the BT33 design and the business changes around Brabham’s departure, another reminder that the racing organisation continued beyond one driver’s last start.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1970 South Africa final win; totalRaceWins=14; final season; exact driverId/id=jack-brabham; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-tauranac",
+          "locator": "1970 BT33 monocoque and Brabham shareholding transfer",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jack-brabham-b2-legacy",
+      "topic": "significance",
+      "statement": "His legacy consequently has two scales. There are the three championships in the driver record, and there is the engineering partnership whose cars won for other people as well. The preserved BT19 is evidence of that second history.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "brabham-imeche",
+          "locator": "Heritage preservation, ownership and named contributors",
+          "supports": true
+        },
+        {
+          "source_id": "brabham-tauranac",
+          "locator": "Customer-car and championship designs",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Engineering before Europe",
+      "claim_ids": [
+        "jack-brabham-b2-australia",
+        "jack-brabham-b2-cooper"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Cooper changes the competitive order",
+      "claim_ids": [
+        "jack-brabham-b2-1959",
+        "jack-brabham-b2-1960"
+      ]
+    },
+    {
+      "section_id": "building",
+      "title": "A constructor, with collaborators",
+      "claim_ids": [
+        "jack-brabham-b2-tauranac",
+        "jack-brabham-b2-gurney"
+      ]
+    },
+    {
+      "section_id": "third-title",
+      "title": "The Repco solution",
+      "claim_ids": [
+        "jack-brabham-b2-engineering",
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-hulme"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "The practical driver",
+      "claim_ids": [
+        "jack-brabham-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "The last win and the wider inheritance",
+      "claim_ids": [
+        "jack-brabham-b2-1970",
+        "jack-brabham-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Review conflicting founding dates in modern anniversary accounts before adding a legal incorporation chronology.",
+    "Do not repeat the Hall of Fame’s knighthood date without checking the honours record; the engineering handbook gives a different date."
+  ],
+  "media": []
+}

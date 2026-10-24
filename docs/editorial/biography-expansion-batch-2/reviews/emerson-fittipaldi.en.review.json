@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "fittipaldi-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "f1db": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "fittipaldi-title": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "fittipaldi-rrdc": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "fittipaldi-indy": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "fittipaldi-mclaren-profile": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Interested team retrospective, source classification proposed for human review. Exact original publication day not established; access is recorded separately."
+    }
+  },
+  "claim_reviews": {
+    "emerson-fittipaldi-b2-brazil": null,
+    "emerson-fittipaldi-b2-1970": null,
+    "emerson-fittipaldi-b2-1972": null,
+    "emerson-fittipaldi-b2-peterson": null,
+    "emerson-fittipaldi-b2-move": null,
+    "emerson-fittipaldi-b2-regazzoni": null,
+    "emerson-fittipaldi-b2-1975": null,
+    "emerson-fittipaldi-b2-style": null,
+    "emerson-fittipaldi-b2-copersucar": null,
+    "emerson-fittipaldi-b2-1980": null,
+    "emerson-fittipaldi-b2-indy": null,
+    "emerson-fittipaldi-b2-legacy": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [],
+  "media": [],
+  "publication": null
+}

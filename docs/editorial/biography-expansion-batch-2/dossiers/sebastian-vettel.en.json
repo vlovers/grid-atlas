@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "driver_id": "sebastian-vettel",
+  "locale": "en",
+  "title": "Sebastian Vettel — four titles and the seasons beyond them",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "vettel-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+      "title": "Sebastian Vettel — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "vettel-newey",
+      "source_url": "https://www.redbull.com/us-en/theredbulletin/adrian-newey-oracle-red-bull-racing-cars",
+      "title": "Adrian Newey on memorable Red Bull Racing car models",
+      "publisher": "Red Bull / The Red Bulletin",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "red-bull"
+    },
+    {
+      "source_id": "vettel-malaysia",
+      "source_url": "https://www.fia.com/news/vettel-takes-controversial-win-sepang",
+      "title": "Vettel takes controversial win at Sepang",
+      "publisher": "FIA",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "fia"
+    },
+    {
+      "source_id": "vettel-malaysia-independent",
+      "source_url": "https://www.racefans.net/2013/03/24/vettel-apologises-webber-victory-proud/",
+      "title": "Vettel apologises to Webber for win I’m not proud of",
+      "publisher": "RaceFans",
+      "author": "Keith Collantine",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "racefans"
+    },
+    {
+      "source_id": "vettel-cooper",
+      "source_url": "https://adamcooperf1.com/2014/06/03/adrian-newey-seb-has-a-very-particular-way-of-driving/",
+      "title": "Adrian Newey: Seb has a very particular way of driving",
+      "publisher": "Adam Cooper F1",
+      "author": "Adam Cooper",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "adam-cooper"
+    },
+    {
+      "source_id": "vettel-retirement",
+      "source_url": "https://www.astonmartinf1.com/en-GB/news/announcement/sebastian-vettel-to-retire-from-f1-at-the-end-of-the-2022-season?rendr_audience=public%2C+non-connected",
+      "title": "Sebastian Vettel to retire from F1 at the end of the 2022 season",
+      "publisher": "Aston Martin F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "aston-martin"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "sebastian-vettel-b2-early",
+      "topic": "early_career",
+      "statement": "Sebastian Vettel’s route from karting in Germany to Formula 1 passed through Red Bull’s junior support and the German Formula BMW championship. He won that series in 2004 before becoming a Formula 1 test driver. His first Grand Prix start came for BMW Sauber at Indianapolis in 2007, replacing the injured Robert Kubica, and he finished eighth.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-hall",
+          "locator": "Junior Red Bull support, Formula BMW and Kubica substitution at 2007 US GP",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "2007 US debut and eighth place; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-toro-rosso",
+      "topic": "teams_seasons",
+      "statement": "Later in 2007 he moved into a race seat with Toro Rosso. A fourth place in China preceded the much larger breakthrough at Monza in 2008, where he took pole position and won the Italian Grand Prix. His first championship victory was also Toro Rosso’s first, achieved before his promotion to Red Bull’s senior team.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2007 Toro Rosso/China fourth; 2008 Italy pole and first win; first constructor win; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2009",
+      "topic": "key_events",
+      "statement": "Vettel joined Mark Webber at Red Bull Racing in 2009. His Chinese Grand Prix victory was the constructor’s first; he added wins in Britain, Japan and Abu Dhabi and finished runner-up to Jenson Button.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2009 Red Bull/Webber team; China first constructor win; four wins and final second place; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2010",
+      "topic": "championships",
+      "statement": "His first world title arrived in 2010 after a contest involving Webber, Fernando Alonso and Lewis Hamilton. Vettel won the final race in Abu Dhabi and finished four points ahead of Alonso. He had not led the championship before that finale. The title therefore emerged from a late reversal, quite different from the commanding defences that followed.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2010 final points 256/252; all pre-final race driver standings lack Vettel positionNumber=1; Abu Dhabi win; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2011",
+      "topic": "championships",
+      "statement": "In 2011 he won 11 races and took a second title in the RB7. Adrian Newey’s later account describes the exhaust-assisted downforce that gave the car strong rear stability on corner entry.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2011 eleven wins and title; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "vettel-newey",
+          "locator": "RB7 2011 section: exhaust/diffuser and rear stability",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2012",
+      "topic": "championships",
+      "statement": "The 2012 title fight again went to the final race against Alonso. After first-lap contact in Brazil damaged his Red Bull, Vettel recovered to sixth while Alonso finished second. The final gap was three points. Four consecutive wins earlier in the closing part of the season had helped put Vettel back in contention before that difficult final afternoon.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-hall",
+          "locator": "2012 Brazil first-lap damage and recovery",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "2012 Singapore/Japan/Korea/India wins; Brazil results and final points 281/278; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2013",
+      "topic": "championships",
+      "statement": "In 2013 he won 13 races, including the final nine, and secured his fourth consecutive championship. The run began in Belgium and continued through Brazil. It was the most concentrated winning sequence of his Formula 1 career and completed Red Bull’s four-year title partnership with him, before the change to hybrid power transformed the competitive order.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2013 thirteen wins, final nine rounds positionNumber=1, fourth consecutive title; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-malaysia",
+      "topic": "key_events",
+      "statement": "The winning years also contained conflict. At Sepang in 2013 Vettel passed Webber despite instructions to hold position and subsequently apologised. The FIA’s contemporary report records both the instruction and his response; RaceFans also reported the post-race explanation.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-malaysia",
+          "locator": "Opening and closing paragraphs: hold-station order, overtake and apology",
+          "supports": true
+        },
+        {
+          "source_id": "vettel-malaysia-independent",
+          "locator": "Post-race statements about the order and apology",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-2014",
+      "topic": "teams_seasons",
+      "statement": "In 2014 Daniel Ricciardo joined Red Bull and won three races, while Vettel won none. Newey told journalist Adam Cooper that the loss of the blown diffuser required Vettel to relearn how to extract performance. He also stressed that Vettel had been quick before that technology.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-cooper",
+          "locator": "Newey’s direct comments on driving style, blown diffuser and Ricciardo",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "2014 Vettel zero wins; Ricciardo three; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-style",
+      "topic": "driving_style",
+      "statement": "Newey’s description of the RB7 gives a specific example of Vettel’s technique: he used its stable rear end to turn the car hard and early into a corner. The account concerns the relationship between one driver and a particular aerodynamic system.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-newey",
+          "locator": "RB7 section: Vettel turning the car hard and early with corner-entry stability",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-ferrari",
+      "topic": "teams_seasons",
+      "statement": "Vettel moved to Ferrari in 2015 and won in Malaysia, Hungary and Singapore during his first season. In 2017 and 2018 he finished runner-up to Hamilton, winning five races in each campaign. A Ferrari title never followed. His last Formula 1 victory came in Singapore in 2019, before he left the team after the 2020 season.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "Ferrari seasons 2015–2020; 2015 wins; 2017/2018 five wins and second place; 2019 Singapore final win; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-aston",
+      "topic": "teams_seasons",
+      "statement": "Vettel spent 2021 and 2022 with Aston Martin, taking second place in Azerbaijan during the first of those seasons. In July 2022 he announced that he would retire at the end of the year. In the statement released by the team he spoke of spending more time with his family and of interests beyond Formula 1.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "vettel-retirement",
+          "locator": "28 July 2022 announcement and Vettel’s first-person family/retirement explanation",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "2021/2022 Aston Martin; Azerbaijan 2021 second place; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "sebastian-vettel-b2-legacy",
+      "topic": "significance",
+      "statement": "His Formula 1 career ended at Abu Dhabi in 2022 with four championships and 53 Grand Prix wins. The full chronology includes the Toro Rosso breakthrough, sustained Red Bull success and six seasons attempting to bring another title to Ferrari.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2022 Abu Dhabi last result; totalChampionshipWins=4 and totalRaceWins=53; six Ferrari seasons; exact driverId/id=sebastian-vettel; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "vettel-retirement",
+          "locator": "Retirement announcement",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "From karting to a first Formula 1 chance",
+      "claim_ids": [
+        "sebastian-vettel-b2-early",
+        "sebastian-vettel-b2-toro-rosso"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Red Bull becomes a title contender",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009",
+        "sebastian-vettel-b2-2010"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "Four consecutive championships",
+      "claim_ids": [
+        "sebastian-vettel-b2-2011",
+        "sebastian-vettel-b2-2012",
+        "sebastian-vettel-b2-2013"
+      ]
+    },
+    {
+      "section_id": "rivals",
+      "title": "The conflict within the winning team",
+      "claim_ids": [
+        "sebastian-vettel-b2-malaysia",
+        "sebastian-vettel-b2-2014"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "How stability became speed",
+      "claim_ids": [
+        "sebastian-vettel-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Ferrari, Aston Martin and the final season",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari",
+        "sebastian-vettel-b2-aston",
+        "sebastian-vettel-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "The 2013 Sepang incident has contemporary FIA and independent reporting; semantic review must retain the distinction between documented team orders and inferred private motives.",
+    "Red Bull/Newey and Aston Martin are interested participants. Their technical testimony and retirement statement remain attributed, not independent approval.",
+    "No current post-retirement racing plans or timeless ranking are asserted."
+  ],
+  "media": []
+}

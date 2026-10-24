@@ -1,0 +1,47 @@
+name: Driver biography batch 2
+on:
+  pull_request:
+    paths:
+      - 'docs/editorial/biography-expansion-batch-2/**'
+      - 'scripts/audit_driver_biography_batch2.py'
+      - 'tests/test_driver_biography_batch2.py'
+      - 'scripts/editorial_dossiers.py'
+      - 'scripts/editorial_review.py'
+      - 'scripts/export_approved_editorial.py'
+      - '.github/workflows/driver-biography-batch2.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/editorial/biography-expansion-batch-2/**'
+      - 'scripts/audit_driver_biography_batch2.py'
+      - 'tests/test_driver_biography_batch2.py'
+permissions:
+  contents: read
+jobs:
+  biography-batch2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test bilingual manuscripts and fail-closed publication
+        run: python3 -m unittest discover -s tests -p test_driver_biography_batch2.py -v
+      - name: Fetch pinned statistical evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/biography-f1db
+          base=https://github.com/f1db/f1db/releases/download/v2026.17.0
+          curl -fLsS --retry 3 "$base/checksums_sha256.txt" -o /tmp/biography-f1db/checksums_sha256.txt
+          curl -fLsS --retry 3 "$base/f1db-json-splitted.zip" -o /tmp/biography-f1db/f1db-json-splitted.zip
+      - name: Reconcile ten identities and all authored numerical assertions
+        run: >-
+          python3 scripts/audit_driver_biography_batch2.py
+          --archive /tmp/biography-f1db/f1db-json-splitted.zip
+          --checksums /tmp/biography-f1db/checksums_sha256.txt
+          > /tmp/biography-batch2-report.json
+      - name: Retain unpublished evidence report
+        uses: actions/upload-artifact@v4
+        with:
+          name: biography-batch2-research-validation
+          path: /tmp/biography-batch2-report.json
+          retention-days: 14
