@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "jochen-rindt",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jochen-rindt.297CPloKgJFry8fsI3oVyx",
+    "title": "Jochen Rindt — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+  },
+  "claims": [
+    {
+      "claim_id": "jochen-rindt-title",
+      "topic": "career_chronology",
+      "en": "Rindt became the 1970 Formula 1 Drivers' World Champion posthumously.",
+      "uk": "Ріндт посмертно став чемпіоном світу Формули-1 серед пілотів у 1970 році.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jochen-rindt-monza",
+      "topic": "career_chronology",
+      "en": "Rindt died following a crash during practice for the 1970 Italian Grand Prix at Monza.",
+      "uk": "Ріндт загинув після аварії під час практики Гран-прі Італії 1970 року в Монці.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ]
+}
