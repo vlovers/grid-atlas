@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson (verify page byline)",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
     "independence_group": "formula1",
-    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
   },
   "claims": [
     {
@@ -19,7 +19,14 @@
       "topic": "career_chronology",
       "en": "Räikkönen debuted in Formula 1 with Sauber in 2001.",
       "uk": "Ряйкконен дебютував у Формулі-1 з Sauber у 2001 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'Following a rapid series of successes': Sauber signed Räikkönen for 2001.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "kimi-raikkonen-mclaren",
@@ -33,14 +40,28 @@
       "topic": "career_chronology",
       "en": "Räikkönen won the 2007 Formula 1 Drivers' World Championship with Ferrari.",
       "uk": "Ряйкконен виграв чемпіонат світу Формули-1 серед пілотів 2007 року з Ferrari.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'The phlegmatic Finn delivered sensationally': 2007 Ferrari championship in Brazil.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "kimi-raikkonen-2018-us",
       "topic": "career_chronology",
       "en": "Räikkönen won the 2018 United States Grand Prix for Ferrari.",
       "uk": "Ряйкконен переміг на Гран-прі США 2018 року за Ferrari.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'Kimi Raikkonen finished a solid third overall in the 2018 Drivers Championship': US GP victory.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
