@@ -74,8 +74,8 @@ export function buildReviewWorklist(provenance,worksheet){
       'Source URLs, passage locators and translations require human verification; no publication decision is made.']};
 }
 function renderMarkdown(report,items){
-  const plain=value=>String(value??'').replace(/[\\r\\n]+/g,' ').trim();
-  const cell=value=>plain(value).replace(/\\|/g,'\\\\|');
+  const plain=value=>String(value??'').replace(/[\r\n]+/g,' ').trim();
+  const cell=value=>plain(value).replace(/\|/g,'\\|');
   const lines=['# Content Factory V1 — human review queue','',
     'Research only. No source semantics, translations or publication approvals have been verified.','',
     'Batch claims: '+report.totals.claims+'; shown: '+items.length+
@@ -110,7 +110,7 @@ function renderMarkdown(report,items){
       lines.push('- [ ] '+plain(task.kind)+': '+plain(task.instruction));
   }
   lines.push('','Publisher diversity is declared metadata, not independent human fact checking.');
-  return lines.join('\\n')+'\\n';
+  return lines.join('\n')+'\n';
 }
 const direct=process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url);
 if(direct){
