@@ -104,3 +104,14 @@
 /* Keep fallback fonts and enlarged type inside their editorial columns. */
 .home section, .home article, .home form, .home nav, .home div, .personLead { min-width: 0; }
 .home h2, .home h3 { overflow-wrap: anywhere; }
+
+/* Real F1DB-matched local geometry, never a guessed modern replacement. */
+.circuitPreview { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: .65rem; width: 100%; margin: .5rem 0 1.25rem; min-width: 0; }
+.circuitPreview img { display: block; height: clamp(130px, 19vw, 220px); width: 100%; max-width: 340px; object-fit: contain; filter: drop-shadow(0 8px 16px color-mix(in srgb, var(--ink) 10%, transparent)); }
+.circuitPreview figcaption { font: .58rem/1.6 var(--font-mono); letter-spacing: .025em; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
+@media (max-width: 650px) {
+  .circuitPreview img { height: 160px; }
+}
+@media (forced-colors: active) {
+  .circuitPreview img { filter: none; }
+}
