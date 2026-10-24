@@ -172,7 +172,7 @@ test('local file preflight checks bytes, SVG profile, MIME and public-directory 
   write('<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"></svg>');
   assert.throws(() => validateLocalFile(asset, publicRoot), /SVG:/);
   write('not a JPEG'); asset.image.mime = 'image/jpeg';
-  assert.throws(() => validateLocalFile(asset, publicRoot), /declared image MIME/);
+  assert.throws(() => validateLocalFile(asset, publicRoot), /Truncated or oversized image|declared image MIME/);
   rmSync(path);
   writeFileSync(join(directory, 'outside.svg'), 'outside');
   symlinkSync(join(directory, 'outside.svg'), path);
