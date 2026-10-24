@@ -12,6 +12,7 @@ export function inspectNarrativeBundle(bundle, cards) {
       bundle.reviewer !== null || bundle.reviewed_at !== null) errors.push('publication_gate');
   if (!Array.isArray(bundle.stories) || bundle.stories.length === 0) errors.push('missing_stories');
   const seenStories = new Set();
+  if (!(cards instanceof Map)) return {errors: ['invalid_card_registry'], details, stories: 0, chapters: 0};
   let chapters = 0;
   const stories = Array.isArray(bundle.stories) ? bundle.stories : [];
   for (const story of stories) {
@@ -21,9 +22,10 @@ export function inspectNarrativeBundle(bundle, cards) {
     const card = cards.get(id);
     if (!card || card.driver_id !== id || card.status !== 'research_only' ||
         card.publication_status !== 'unpublished') errors.push('unavailable_research_card:' + id);
+    if (!Array.isArray(story?.chapters)) errors.push('invalid_chapter_collection:' + id);
     const storyChapters = Array.isArray(story?.chapters) ? story.chapters : [];
     if (storyChapters.length < 2) errors.push('insufficient_chapters:' + id);
-    const knownClaims = new Map((card?.claims ?? []).map(claim => [claim.claim_id, claim]));
+    const knownClaims = new Map((Array.isArray(card?.claims) ? card.claims : []).filter(claim => claim && typeof claim === 'object').map(claim => [claim.claim_id, claim]));
     const seenChapters = new Set();
     for (const chapter of storyChapters) {
       chapters++;
@@ -33,8 +35,9 @@ export function inspectNarrativeBundle(bundle, cards) {
         if (!hasText(chapter?.[locale]?.heading) || !hasText(chapter?.[locale]?.body) ||
             chapter[locale].body.trim().length < 80) errors.push('missing_or_short_locale:' + id + ':' + chapter?.chapter_id + ':' + locale);
       }
+      if (!Array.isArray(chapter?.claim_ids)) errors.push('invalid_claim_reference_collection:' + id + ':' + chapter?.chapter_id);
       const chapterClaimIds = Array.isArray(chapter?.claim_ids) ? chapter.claim_ids : [];
-      if (chapterClaimIds.length === 0 || new Set(chapterClaimIds).size !== chapterClaimIds.length) errors.push('invalid_claim_references:' + id + ':' + chapter?.chapter_id);
+      if (chapterClaimIds.length === 0 || chapterClaimIds.some(claimId => !hasText(claimId)) || new Set(chapterClaimIds).size !== chapterClaimIds.length) errors.push('invalid_claim_references:' + id + ':' + chapter?.chapter_id);
       for (const claimId of chapterClaimIds) {
         const claim = knownClaims.get(claimId);
         if (!claim) errors.push('orphan_claim:' + id + ':' + claimId);
