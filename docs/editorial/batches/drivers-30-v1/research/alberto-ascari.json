@@ -68,6 +68,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
           "locator": "Paragraph beginning 'Given his family responsibilities': Ferrari 500 won six of seven 1952 championship races.",
           "supports": true
+        },
+        {
+          "source_url": "https://gpracingstats.com/drivers/alberto-ascari/",
+          "locator": "Driver Stats by Season table: 1952 row lists RS (Race Starts) = 7 and W (Wins) = 6; Ferrari constructor.",
+          "supports": true
         }
       ]
     },
@@ -96,8 +101,7 @@
   "media": [],
   "gaps": [
     "Validate provisional slug against pinned F1DB.",
-    "Obtain separate human review for both locales before publication.",
-    "1952 six-of-seven entry count still needs a second independent source with exact count."
+    "Obtain separate human review for both locales before publication."
   ],
   "additional_sources": [
     {
@@ -133,6 +137,13 @@
       "title": "Alberto Ascari career record",
       "publisher": "RaceFans",
       "independence_group": "racefans",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://gpracingstats.com/drivers/alberto-ascari/",
+      "title": "Alberto Ascari F1 stats — 1952 season starts and wins",
+      "publisher": "GP Racing Stats",
+      "independence_group": "gpracingstats",
       "accessed_on": "2026-10-24"
     }
   ]
