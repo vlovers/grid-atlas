@@ -37,6 +37,12 @@ def crosswalk(circuits, layouts, races, subjects=SUBJECTS):
     layout_by_id = {item["id"]: item for item in layouts}
     if len(layout_by_id) != len(layouts):
         raise ValueError("Duplicate circuit layout ID")
+    seen_race_ids = set()
+    for race in races:
+        race_id = race["id"]
+        if race_id in seen_race_ids:
+            raise ValueError(f"Duplicate race ID: {race_id}")
+        seen_race_ids.add(race_id)
     output = []
     for circuit_id, years in subjects.items():
         circuit = circuit_by_id.get(circuit_id)
@@ -45,7 +51,7 @@ def crosswalk(circuits, layouts, races, subjects=SUBJECTS):
         matches = []
         for year in years:
             events = [race for race in races if race.get("circuitId") == circuit_id and race.get("year") == year]
-            for event in events:
+            for event in sorted(events, key=lambda race: (race.get("date") or "", str(race["id"]))):
                 layout_id = event.get("circuitLayoutId")
                 if layout_id is not None:
                     layout = layout_by_id.get(layout_id)
@@ -57,6 +63,7 @@ def crosswalk(circuits, layouts, races, subjects=SUBJECTS):
                     "race_date": event.get("date"),
                     "race_name": event.get("officialName"),
                     "layout_external_id": layout_id,
+                    "layout_status": "mapped" if layout_id is not None else "missing_in_source",
                 })
             if not events:
                 matches.append({"year": year, "status": "no_matching_race_in_pinned_archive"})
@@ -73,6 +80,13 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     _, digest = verified_seasons(args.archive, args.checksums)
+    registry_path = ROOT / "docs/media/pilot-identities.json"
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    pinned = registry["source"]
+    if (pinned.get("slug"), pinned.get("release"), pinned.get("artifact"), pinned.get("sha256")) != (
+        "f1db", "v2026.17.0", "f1db-json-splitted.zip", digest
+    ):
+        raise ValueError("Archive checksum does not match the repository-pinned F1DB release")
     with zipfile.ZipFile(args.archive) as bundle:
         rows = crosswalk(
             load_collection(bundle, "f1db-circuits.json"),
