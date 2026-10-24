@@ -20,8 +20,9 @@ test('home imagery preserves author license and bilingual exact layout labels', 
   assert.match(home, /circuitArtworks\[index\]\.source_url/);
   assert.match(home, /https:\/\/creativecommons\.org\/licenses\/by\/4\.0\//);
   assert.match(home, /<article className=\{styles\.circuit\}/);
-  assert.match(home, /<h3>\{circuit\.name\}<\/h3>/);
-  assert.ok(home.includes('className={styles.readLink}>{s.circuitLink} ↗</a>'));
+  assert.ok(home.includes('<h3><a href={path(`/circuits/${circuit.id}`)}>{circuit.name}</a></h3>'));
+  assert.ok(home.includes('<span className={styles.readLink} aria-hidden="true">{s.circuitLink} ↗</span>'));
+  assert.equal((home.match(/href=\{path\(`\/circuits\/\$\{circuit\.id\}`\)\}/g) ?? []).length, 1);
   assert.match(css, /\.circuit a:focus-visible/);
   assert.match(home, /circuitArtworks\[index\]\.layout_id/);
   assert.match(home, /Контур конфігурації/);
