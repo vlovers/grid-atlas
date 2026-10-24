@@ -23,6 +23,10 @@ on:
       - 'scripts/verify-media-identities.py'
       - 'scripts/editorial-circuit-crosswalk.py'
       - 'tests/test_editorial_circuit_crosswalk.py'
+      - 'scripts/prepare_circuit_editorial_candidate.py'
+      - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
+      - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -47,6 +51,10 @@ on:
       - 'scripts/verify-media-identities.py'
       - 'scripts/editorial-circuit-crosswalk.py'
       - 'tests/test_editorial_circuit_crosswalk.py'
+      - 'scripts/prepare_circuit_editorial_candidate.py'
+      - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
+      - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -103,6 +111,17 @@ jobs:
           path: /tmp/grid-atlas-editorial-circuit-crosswalk.json
           retention-days: 14
           if-no-files-found: warn
+      - name: Validate bilingual circuit editorial research candidates
+        run: |
+          python3 -m unittest discover -s tests -p 'test_prepare_circuit_editorial_candidate.py' -v
+          python3 scripts/prepare_circuit_editorial_candidate.py --output /tmp/grid-atlas-circuit-editorial-drafts.json
+      - name: Upload unpublished circuit editorial candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-circuit-editorial-candidates
+          path: /tmp/grid-atlas-circuit-editorial-drafts.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Verify media subject and historical circuit-layout references
         run: python3 scripts/verify-media-identities.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt
       - name: Audit cross-era media identities against exact F1DB source rows
