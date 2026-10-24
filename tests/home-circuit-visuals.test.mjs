@@ -21,7 +21,7 @@ test('home imagery preserves author license and bilingual exact layout labels', 
   assert.match(home, /https:\/\/creativecommons\.org\/licenses\/by\/4\.0\//);
   assert.match(home, /<article className=\{styles\.circuit\}/);
   assert.match(home, /<h3>\{circuit\.name\}<\/h3>/);
-  assert.match(home, /<a href=\{path\(`/circuits\/\$\{circuit\.id\}`\)\} className=\{styles\.readLink\}>/);
+  assert.ok(home.includes('className={styles.readLink}>{s.circuitLink} ↗</a>'));
   assert.match(css, /\.circuit a:focus-visible/);
   assert.match(home, /circuitArtworks\[index\]\.layout_id/);
   assert.match(home, /Контур конфігурації/);
