@@ -41,6 +41,34 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "keke-rosberg-1978-debut",
+      "topic": "career_chronology",
+      "en": "Rosberg made his Formula 1 debut with Theodore in 1978.",
+      "uk": "Росберг дебютував у Формулі-1 з Theodore у 1978 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Yet no amount of financial savvy': Formula 1 debut with Theodore in 1978.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "keke-rosberg-1982-williams",
+      "topic": "career_chronology",
+      "en": "Williams signed Rosberg for 1982 after Alan Jones announced his retirement.",
+      "uk": "Williams підписала Росберга на 1982 рік після того, як Алан Джонс оголосив про завершення кар’єри.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': Jones retired and Williams hired Rosberg.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
