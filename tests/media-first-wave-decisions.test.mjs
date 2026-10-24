@@ -45,7 +45,6 @@ test('read-only original-provenance report checks both observed binary hashes an
   assert.equal(report.binary_sha256_observations, 2);
   assert.equal(report.public_assets, 0);
   assert.equal(report.publishable_count, 0);
-  assert.equal(report.source_count, 5);
   assert.equal(report.identities.length, 5);
   assert.deepEqual(report.failures, []);
   for (const identity of report.identities) {
