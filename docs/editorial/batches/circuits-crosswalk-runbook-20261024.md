@@ -31,3 +31,7 @@ This tool does not calculate winners, title points, layout geometry or biography
 - Fixed a real path-resolution bug: the first version used `Path(__file__).resolve().parents[2]`, which points above repository root for a script under `scripts/`. Now uses `parents[1]` so the `packages/data-importer` module can be resolved.
 - Attempted to reach the pinned F1DB GitHub release from the execution container; DNS resolution of `github.com` failed. **No real-archive crosswalk was run.** Do not mark any event/layout mapping verified from this checkpoint.
 - The pinned ZIP is not available in this execution container. Once it is available, run the two documented commands and attach the JSON report plus actual unit-test output to PR #296.
+
+## Isolated behavior-test execution
+
+The agent reconstructed the `crosswalk()` function and its eight existing unittest cases from the GitHub version into an isolated Python fixture (not a full checked-out repo). Executed `python3 -m unittest discover -s tests -p 'test_editorial_circuit_crosswalk.py' -v`: **8/8 passed** in the isolated copy. This validates the copied function's behavior under synthetic data only; it does **not** demonstrate importing the actual repo package, CLI checksum verification, pinned-archive acceptance or GitHub CI. The independently runnable repository tests must still be executed from a real checkout.
