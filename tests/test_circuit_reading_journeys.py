@@ -36,7 +36,7 @@ class CircuitReadingJourneysTests(unittest.TestCase):
 
     def test_five_editorial_timelines_link_only_recorded_races(self):
         flagship = (ED / "circuit-history-stories.tsx").read_text(encoding="utf-8")
-        self.assertIn("history.find(race => String(race.season_year) === moment.year)", flagship)
+        self.assertIn("races.find(race => String(race.season_year) === moment.year)", flagship)
         self.assertIn("Explore this race in the archive", flagship)
         self.assertIn("<CircuitHistoryStories circuitId={circuit.external_id}", PAGE)
         self.assertIn("history={chronologicalHistory}", PAGE)
