@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "graham-hill",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+    "title": "Graham Hill — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+  },
+  "claims": [
+    {
+      "claim_id": "graham-hill-titles",
+      "topic": "career_chronology",
+      "en": "Graham Hill won the Formula 1 Drivers' World Championship in 1962 and 1968.",
+      "uk": "Грем Гілл виграв чемпіонат світу Формули-1 серед пілотів у 1962 та 1968 роках.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "graham-hill-family",
+      "topic": "career_chronology",
+      "en": "His son Damon Hill won the 1996 Formula 1 Drivers' Championship.",
+      "uk": "Його син Деймон Гілл виграв чемпіонат світу Формули-1 серед пілотів у 1996 році.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ]
+}
