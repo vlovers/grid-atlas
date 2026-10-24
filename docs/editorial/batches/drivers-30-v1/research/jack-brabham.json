@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "driver_id": "jack-brabham",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jack-brabham.3XK2XWdL0moCmnSC55m84J",
+    "title": "Jack Brabham — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "jack-brabham-titles",
+      "topic": "career_chronology",
+      "en": "Brabham won the Drivers' World Championship in 1959, 1960 and 1966.",
+      "uk": "Бребем виграв чемпіонат світу серед пілотів у 1959, 1960 та 1966 роках.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jack-brabham-own-car",
+      "topic": "career_chronology",
+      "en": "He won the 1966 title in a car bearing his own name.",
+      "uk": "У 1966 році він здобув титул за кермом боліда, що носив його власне ім’я.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jack-brabham-cooper",
+      "topic": "career_chronology",
+      "en": "His first two titles came with Cooper.",
+      "uk": "Перші два титули він здобув із Cooper.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Attach precise per-claim source locator and independent publisher corroboration.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ]
+}
