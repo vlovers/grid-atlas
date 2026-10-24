@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Career highlights: Belgium 2019 and Monaco 2024; exact paragraphs pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Research draft; recheck exact page passages and seek independent corroboration."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Leclerc took his first Formula 1 Grand Prix victory in Belgium in 2019 while driving for Ferrari.",
       "uk": "Леклер здобув свою першу перемогу на Гран-прі Формули-1 у Бельгії 2019 року за Ferrari.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
+          "locator": "Article section 'First victory (2019)': Belgian Grand Prix win at Spa-Francorchamps for Ferrari.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "charles-leclerc-monaco",
       "topic": "career_chronology",
       "en": "Leclerc won his home Monaco Grand Prix in 2024.",
       "uk": "Леклер виграв домашній Гран-прі Монако у 2024 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
+          "locator": "Article section 'First Monaco victory (2024)': pole, race lead and victory at his home Grand Prix.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
