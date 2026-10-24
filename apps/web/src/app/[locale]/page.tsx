@@ -11,6 +11,7 @@ import { StoryRail } from '@/components/stories/story-rail';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, sharedSeason } from '@/components/stories/story-model';
 import type { DriverCareer, DriverSeason } from '@/components/driver/showcase-model';
+import { selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
 import { EditorialHero, EditorialMedia, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
 import { editorialCopy } from '@/components/editorial/copy';
 import mediaPublication from '@/components/media/publication.json';
@@ -40,6 +41,11 @@ export default async function Home() {
   const pairedIdentity = pairedMatches.find(d => d.external_id === 'alain-prost');
   const [featured, paired] = await Promise.all([Promise.all(identities.map(load)), pairedIdentity ? load(pairedIdentity) : null]);
   const circuits = featuredIdentities(circuitMatches.map((rows, i) => rows.find(c => c.external_id === circuitNames[i])), circuitFallback);
+  // Only display an SVG if the archived circuit API confirms its exact layout identity.
+  const circuitArtworks = await Promise.all(circuits.map(async circuit => {
+    const layouts = await getData<{ external_layout_id: string; effective: boolean }>(`/api/circuits/${circuit.id}/layouts`);
+    return selectCircuitCoverArtwork(layouts);
+  }));
   const constructorNames = ['mclaren', 'ferrari', 'williams'];
   const [constructorMatches, constructorFallback] = await Promise.all([
     Promise.all(constructorNames.map(name => getData<CatalogueEntity>(`/api/constructors?q=${name}&limit=5`))),
@@ -116,7 +122,15 @@ export default async function Home() {
     <section className={styles.section} aria-labelledby="home-circuits-title" data-story-reveal>
       <SectionHeading kicker={s.circuits} title={s.circuitsTitle} note={s.circuitsNote} id="home-circuits-title" />
       <StoryRail label={s.circuitsTitle} locale={locale}>{circuits.map((circuit, index) => <a className={styles.circuit} key={circuit.id} href={path(`/circuits/${circuit.id}`)}>
-        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3>{circuit.name}</h3><span className={styles.circuitId}>{circuit.external_id}</span><span className={styles.readLink}>{s.circuitLink} ↗</span>
+        <span className={styles.ordinal}>0{index + 1} / {s.circuits}</span><h3>{circuit.name}</h3><span className={styles.circuitId}>{circuit.external_id}</span>
+        {circuitArtworks[index] && <figure className={styles.circuitPreview}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={circuitArtworks[index].path} width={500} height={500} loading="lazy" alt={locale === 'uk'
+            ? `Контур конфігурації ${circuitArtworks[index].layout_id} траси ${circuit.name}`
+            : `Layout ${circuitArtworks[index].layout_id} outline of ${circuit.name}`} />
+          <figcaption>{locale === 'uk' ? 'Історична конфігурація' : 'Historical layout'}: {circuitArtworks[index].layout_id} · {circuitArtworks[index].author} · {circuitArtworks[index].license}</figcaption>
+        </figure>}
+        <span className={styles.readLink}>{s.circuitLink} ↗</span>
       </a>)}</StoryRail>
     </section>
 
