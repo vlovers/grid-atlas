@@ -39,6 +39,7 @@ export function inspectNarrativeBundle(bundle, cards) {
       const chapterClaimIds = Array.isArray(chapter?.claim_ids) ? chapter.claim_ids : [];
       if (chapterClaimIds.length === 0 || chapterClaimIds.some(claimId => !hasText(claimId)) || new Set(chapterClaimIds).size !== chapterClaimIds.length) errors.push('invalid_claim_references:' + id + ':' + chapter?.chapter_id);
       for (const claimId of chapterClaimIds) {
+        if (!hasText(claimId)) continue;
         const claim = knownClaims.get(claimId);
         if (!claim) errors.push('orphan_claim:' + id + ':' + claimId);
         else if (!Array.isArray(claim.evidence) || claim.evidence.length === 0 ||
