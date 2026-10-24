@@ -22,9 +22,26 @@ export function auditWorkflowText(source, filename = 'workflow') {
       if (line.trim() && line.match(/^\s*/)[0].length <= indentation.length) break;
       end++;
     }
-    const checkoutStep = lines.slice(i + 1, end).join('\n');
-    if (!/^\s+with:\s*$/m.test(checkoutStep) ||
-        !/^\s+persist-credentials:\s*false\s*(?:#.*)?$/m.test(checkoutStep)) {
+    const stepLines = lines.slice(i + 1, end);
+    const usesIndent = indentation.length;
+    const withLine = stepLines.findIndex((line) =>
+      /^\s*with:\s*(?:#.*)?$/.test(line) &&
+      line.match(/^\s*/)[0].length === usesIndent + 2);
+    let credentialsDisabled = false;
+    if (withLine !== -1) {
+      const withIndent = stepLines[withLine].match(/^\s*/)[0].length;
+      for (let j = withLine + 1; j < stepLines.length; j++) {
+        const line = stepLines[j];
+        if (!line.trim() || line.trim().startsWith('#')) continue;
+        const keyIndent = line.match(/^\s*/)[0].length;
+        if (keyIndent <= withIndent) break;
+        if (keyIndent === withIndent + 2 &&
+            /^\s*persist-credentials:\s*false\s*(?:#.*)?$/.test(line)) {
+          credentialsDisabled = true;
+        }
+      }
+    }
+    if (!credentialsDisabled) {
       findings.push(filename + ':' + (i + 1) + ': checkout must explicitly set persist-credentials: false');
     }
   }
