@@ -32,6 +32,9 @@ for (const locale of ['uk', 'en'] as const) {
 
     test('circuit profile exposes recorded winner and decade exploration', async ({ page }) => {
       await page.goto(`/${locale}/circuits/1`);
+      await expect(page.getByTestId('circuit-newcomer-guide')).toBeVisible();
+      await expect(page.getByTestId('circuit-newcomer-guide').getByRole('heading', { level: 2 })).toContainText(locale === 'uk' ? 'Чому ця траса важлива?' : 'Why does this circuit matter?');
+      await expect(page.getByTestId('circuit-newcomer-guide').locator('a[href="#circuit-layouts"]')).toBeVisible();
       await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
       await expect(page.getByTestId('circuit-era-journey')).toBeVisible();
       await expect(page.getByTestId('circuit-decade-history')).toBeVisible();

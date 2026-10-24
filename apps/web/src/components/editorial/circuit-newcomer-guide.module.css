@@ -1,0 +1,12 @@
+.guide { padding: clamp(1.5rem, 4vw, 3rem) 0; border-block: 1px solid var(--line, #bbb); }
+.intro { max-width: 65ch; margin-bottom: 1.5rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; font-weight: 700; }
+.intro h2 { margin: .4rem 0 1rem; }
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { min-width: 0; padding: clamp(1rem, 2vw, 1.5rem); border: 1px solid var(--line, #bbb); border-radius: .3rem; }
+.card h3 { margin: .7rem 0; }
+.card p { line-height: 1.6; }
+.card a { overflow-wrap: anywhere; }
+.step { display: inline-block; font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+.footnote { font-size: .85rem; line-height: 1.55; margin-top: 1rem; max-width: 75ch; }
+@media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }

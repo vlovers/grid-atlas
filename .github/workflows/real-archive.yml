@@ -21,6 +21,13 @@ on:
       - 'tests/test_bulk_driver_cohort.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/content_factory_circuits.py'
+      - 'tests/test_content_factory_circuits.py'
+      - 'tests/test_enhanced_circuit_batch.py'
+      - 'apps/web/src/components/editorial/circuit-next20-stories.json'
+      - 'apps/web/src/components/editorial/circuit-final33-stories.json'
+      - 'scripts/audit_circuit_stories.py'
+      - 'docs/editorial/batches/circuits-five-story-moments-20261025.json'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -43,6 +50,13 @@ on:
       - 'scripts/audit-encyclopedia.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/content_factory_circuits.py'
+      - 'tests/test_content_factory_circuits.py'
+      - 'tests/test_enhanced_circuit_batch.py'
+      - 'apps/web/src/components/editorial/circuit-next20-stories.json'
+      - 'apps/web/src/components/editorial/circuit-final33-stories.json'
+      - 'scripts/audit_circuit_stories.py'
+      - 'docs/editorial/batches/circuits-five-story-moments-20261025.json'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -84,6 +98,22 @@ jobs:
           mkdir -p /tmp/grid-atlas-f1db
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+      - name: Verify 78 bilingual circuit narratives and generate 25 archival briefs
+        run: |
+          python3 -m unittest discover -s tests -p 'test_content_factory_circuits.py' -v
+          python3 -m unittest discover -s tests -p 'test_enhanced_circuit_batch.py' -v
+          python3 scripts/audit_circuit_stories.py
+          python3 scripts/content_factory_circuits.py \
+            --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
+            --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
+            --output /tmp/grid-atlas-circuit-content-batch01.json
+      - name: Upload unpublished 25-circuit content pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-circuit-content-batch01
+          path: /tmp/grid-atlas-circuit-content-batch01.json
+          retention-days: 14
+          if-no-files-found: error
       - name: Verify media subject and historical circuit-layout references
         run: python3 scripts/verify-media-identities.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt
       - name: Audit cross-era media identities against exact F1DB source rows

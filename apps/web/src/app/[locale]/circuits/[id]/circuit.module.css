@@ -16,3 +16,10 @@
 @media (max-width: 900px) { .dossier :global(.driver-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 500px) { .dossier :global(.record) { grid-template-columns: 3rem minmax(0, 1fr); gap: .8rem; } }
 .dossier [data-testid="circuit-archive-rhythm"], .dossier [data-testid="circuit-visual-journey"] { background: none; border-radius: 0; padding-inline: 0; border-inline: 0; }
+
+.dossier :global([data-testid="circuit-content-factory-brief"]) { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-block: clamp(2rem, 4vw, 3.5rem); }
+.dossier :global(.circuit-factory-facts) { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-block: 1.75rem; max-width: 46rem; }
+.dossier :global(.circuit-factory-facts > div) { border-top: 1px solid var(--line); padding-top: 1rem; min-width: 0; }
+.dossier :global(.circuit-factory-facts dt) { font-size: .8rem; color: var(--muted); margin-bottom: .4rem; }
+.dossier :global(.circuit-factory-facts dd) { font: 500 clamp(1.3rem,2.3vw,2rem)/1.2 var(--font-display); margin: 0; overflow-wrap: anywhere; }
+@media(max-width:500px) { .dossier :global(.circuit-factory-facts) { grid-template-columns: 1fr; } }

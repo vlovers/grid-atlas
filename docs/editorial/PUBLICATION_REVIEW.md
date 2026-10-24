@@ -25,6 +25,19 @@ The new Senna files are in `pilots/senna/`, outside `dossiers/`, so the establis
 batch inventory and research attachment workflow remain unchanged. The broader
 Markdown biography in PR #71 is research input, not a second publishable body.
 
+## Owner-authorized AI-reviewed circuit capsules (distinct from human-approved dossier workflow)
+
+On 2026-10-25 the repository owner explicitly requested publication of circuit history capsules identified as **AI-reviewed**. This is a narrowly scoped alternative presentation lane for the current static, source-linked EN/UK circuit-story content. It is **not** an `approved` decision in the driver dossier schema, must not set `actor: "human"`, must not fabricate independent reviewer names, and must not mutate editorial article statuses in the database.
+
+- A visible AI-reviewed disclosure in **each language** must identify that independent human editorial verification is **pending**. It must not suggest any historical statement was verified by a human.
+- Every specific historical anecdote must link to a relevant, retrievable source; unsupported or misleading facts must be corrected, narrowed or withheld. A passing lint/build or a link merely loading is not proof of history.
+- Use only versioned existing circuit illustrations covered by their own provenance; this lane grants no permission to reuse F1 photographs, logos or copyrighted race imagery. Public media rights rules remain unchanged.
+- An owner-authorized Git merge may publish this clearly disclosed, independently unapproved **AI-assisted circuit capsule** lane, **only with required CI green on the exact commit**. This does not count as an independently reviewed biography or a published claim in the protected editorial SQL/API pipeline.
+- Human-approved full circuit dossiers, if added later, must still pass a separate proper revision-bound editorial review. The AI label is not a substitute for such approval.
+- Keep a review inventory with exact external IDs, source locations, independently reviewed status (null until done), and corrections; amend the source and review inventory together.
+
+All other driver, constructor, claim-graph, archival-media and full-dossier publication requirements in this document remain unchanged.
+
 ## Human workflow
 
 1. **Draft** (`draft`): author original statements, precise source locators and the
