@@ -40,7 +40,7 @@ test('reviewed real photos reveal progressively while motion opt-out is respecte
   assert.match(mediaCss, /prefers-reduced-motion: reduce/);
   assert.match(mediaCss, /animation: none/);
   assert.match(mediaCss, /object-fit: contain/);
-  assert.match(mediaCss, /\\.image\\[data-loaded='true'\\]/);
+  assert.match(mediaCss, /\.image\[data-loaded='true'\]/);
   const frame = readFileSync('apps/web/src/components/media/image-frame.tsx', 'utf8');
   assert.match(frame, /onLoad=\\{\\(\\) => setLoadedSource\\(source\\)\\}/);
   assert.match(frame, /data-loaded=\\{loadedSource === source/);
