@@ -10,7 +10,6 @@ type HistoricEvent = {
 type Props = { locale: 'en' | 'uk'; circuitName: string; history: HistoricEvent[]; layoutCount: number };
 
 export function CircuitNewcomerGuide({ locale, circuitName, history, layoutCount }: Props) {
-  const first = history[0];
   const sorted = [...history].sort((a, b) => a.season_year - b.season_year);
   const earliest = sorted[0];
   const latest = sorted.at(-1);
