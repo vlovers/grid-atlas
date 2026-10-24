@@ -8,10 +8,10 @@
     "title": "Niki Lauda — Formula 1 Hall of Fame",
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
-    "locator": "1975, 1977, 1979 and 1984 career passages; 1976 Nürburgring and Italian GP passages",
+    "locator": "See precise paragraph or heading locator on each claim.",
     "accessed_on": "2026-10-24",
     "independence_group": "formula1",
-    "verification_note": "Source URL and selected passages inspected against the public Formula 1 Hall of Fame page on 2026-10-24. These are research observations, not independent editorial approvals."
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; primary publisher evidence only, independent corroboration and human review outstanding."
   },
   "claims": [
     {
@@ -19,42 +19,84 @@
       "topic": "career",
       "en": "Lauda's Ferrari period produced the 1975 and 1977 world titles. After leaving Formula 1 in 1979, he returned with McLaren and won the 1984 championship.",
       "uk": "Період Лауди у Ferrari приніс чемпіонські титули 1975 та 1977 років. Після відходу з Формули-1 у 1979 році він повернувся з McLaren і здобув титул 1984 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "Hall of Fame heading '1975, 1977, 1984'; 1975 Ferrari, 1977 comeback and 1984 McLaren paragraphs.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "niki-lauda-context",
       "topic": "historical_context",
       "en": "His 1976 Nürburgring crash and return at the Italian Grand Prix form a central chapter of his career.",
       "uk": "Аварія на Нюрбургринзі 1976 року та повернення на Гран-прі Італії стали визначальним розділом його кар’єри.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "1976 German Grand Prix crash paragraph and six-weeks-later Italian Grand Prix return paragraph.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "niki-lauda-ferrari-entry",
       "topic": "career_chronology",
       "en": "Lauda joined Ferrari for the 1974 Formula 1 season.",
       "uk": "Лауда приєднався до Ferrari в сезоні Формули-1 1974 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "Paragraph beginning 'For 1973 he talked his way': joining Enzo Ferrari in 1974.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "niki-lauda-1976-return",
       "topic": "career_chronology",
       "en": "After his Nürburgring accident, Lauda returned to racing at the 1976 Italian Grand Prix.",
       "uk": "Після аварії на Нюрбургринзі Лауда повернувся до перегонів на Гран-прі Італії 1976 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "Paragraph beginning 'Six weeks later': fourth place at 1976 Italian Grand Prix.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "niki-lauda-mclaren-return",
       "topic": "career_chronology",
       "en": "Lauda returned to Formula 1 with McLaren in 1982.",
       "uk": "Лауда повернувся до Формули-1 з McLaren у 1982 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "Paragraph beginning 'Lauda Air': McLaren contract signed in 1982.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "niki-lauda-1984-title",
       "topic": "career_chronology",
       "en": "Lauda won the 1984 Drivers' Championship ahead of McLaren team-mate Alain Prost.",
       "uk": "Лауда виграв чемпіонат світу 1984 року, випередивши напарника по McLaren Алена Проста.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+          "locator": "Paragraph beginning 'In 1984 he won his third driving title': Alain Prost team-mate margin.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
