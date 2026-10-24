@@ -25,3 +25,9 @@ Unknown circuit external IDs fail instead of silently inventing a mapping. Missi
 This tool does not calculate winners, title points, layout geometry or biography assertions. The report is an input for the independent claim reviewer; it never publishes copy or graphics. It must be run and its results inspected before treating any event-layout association as known. Never confuse numeric F1 website URL IDs with F1DB or PostgreSQL IDs.
 
 **Execution status for this commit:** files committed to review branch; no local archive run, unit test run or CI result confirmed yet.
+
+## Execution checkpoint (2026-10-24)
+
+- Fixed a real path-resolution bug: the first version used `Path(__file__).resolve().parents[2]`, which points above repository root for a script under `scripts/`. Now uses `parents[1]` so the `packages/data-importer` module can be resolved.
+- Attempted to reach the pinned F1DB GitHub release from the execution container; DNS resolution of `github.com` failed. **No real-archive crosswalk was run.** Do not mark any event/layout mapping verified from this checkpoint.
+- The pinned ZIP is not available in this execution container. Once it is available, run the two documented commands and attach the JSON report plus actual unit-test output to PR #296.
