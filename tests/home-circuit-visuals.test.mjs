@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import test from 'node:test';
+
+const home = readFileSync('apps/web/src/app/[locale]/page.tsx', 'utf8');
+const css = readFileSync('apps/web/src/app/[locale]/home.module.css', 'utf8');
+const manifest = JSON.parse(readFileSync('apps/web/src/components/circuit-layout-manifest.json', 'utf8'));
+
+test('home circuit illustrations require the exact archived layout identities', () => {
+  assert.match(home, /getData<\{ external_layout_id: string; effective: boolean \}>/);
+  assert.match(home, /\/api\/circuits\/\$\{circuit\.id\}\/layouts/);
+  assert.match(home, /selectCircuitCoverArtwork\(layouts\)/);
+  assert.match(home, /circuitArtworks\[index\] &&/);
+  assert.doesNotMatch(home, /circuitArtworks\[index\] \?\?/);
+});
+
+test('home imagery preserves author license and bilingual exact layout labels', () => {
+  assert.match(home, /circuitArtworks\[index\]\.author/);
+  assert.match(home, /circuitArtworks\[index\]\.license/);
+  assert.match(home, /circuitArtworks\[index\]\.source_url/);
+  assert.match(home, /https:\/\/creativecommons\.org\/licenses\/by\/4\.0\//);
+  assert.match(home, /<article className=\{styles\.circuit\}/);
+  assert.ok(home.includes('<h3><a href={path(`/circuits/${circuit.id}`)}>{circuit.name}</a></h3>'));
+  assert.ok(home.includes('<span className={styles.readLink} aria-hidden="true">{s.circuitLink} ↗</span>'));
+  assert.equal((home.match(/href=\{path\(`\/circuits\/\$\{circuit\.id\}`\)\}/g) ?? []).length, 1);
+  assert.match(css, /\.circuit a:focus-visible/);
+  assert.match(home, /circuitArtworks\[index\]\.layout_id/);
+  assert.match(home, /Контур конфігурації/);
+  assert.match(home, /Historical layout/);
+  assert.match(css, /\.circuitPreview img/);
+  assert.match(css, /object-fit: contain/);
+  assert.match(css, /background: #11161c/);
+  assert.match(css, /@media \(forced-colors: active\)/);
+  assert.ok(manifest.length >= 150, 'Expected pinned historical circuit outlines');
+});

@@ -104,3 +104,37 @@
 /* Keep fallback fonts and enlarged type inside their editorial columns. */
 .home section, .home article, .home form, .home nav, .home div, .personLead { min-width: 0; }
 .home h2, .home h3 { overflow-wrap: anywhere; }
+
+/* Real F1DB-matched local geometry, never a guessed modern replacement. */
+.circuitPreview { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: .65rem; width: 100%; margin: .5rem 0 1.25rem; min-width: 0; }
+.circuitPreview img { display: block; height: clamp(130px, 19vw, 220px); width: 100%; max-width: 340px; object-fit: contain; filter: drop-shadow(0 8px 16px color-mix(in srgb, var(--ink) 10%, transparent)); }
+.circuitPreview figcaption { font: .58rem/1.6 var(--font-mono); letter-spacing: .025em; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
+@media (max-width: 650px) {
+  .circuitPreview img { height: 160px; }
+}
+@media (forced-colors: active) {
+  .circuitPreview img { filter: none; }
+}
+
+/* White-outline assets require an explicitly dark panel on both themes. */
+.circuitPreview {
+  padding: clamp(1rem, 2vw, 1.5rem);
+  box-sizing: border-box;
+  background: #11161c;
+  border: 1px solid #353c43;
+  color: #edf0f2;
+}
+.circuitPreview img {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .4));
+}
+.circuitPreview figcaption { color: #c4ced6; }
+@media (forced-colors: active) {
+  .circuitPreview { background: Canvas; color: CanvasText; border-color: CanvasText; }
+  .circuitPreview figcaption { color: CanvasText; }
+  .circuitPreview img { filter: none; }
+}
+
+.circuit h3 a { color: inherit; text-decoration: none; }
+.circuit h3 a:hover, .circuit h3 a:focus-visible { text-decoration: underline; text-underline-offset: .12em; }
+.circuitPreview figcaption a { color: inherit; text-decoration: underline; text-underline-offset: .2em; display: inline-flex; align-items: center; min-height: 44px; }
+.circuit a:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
