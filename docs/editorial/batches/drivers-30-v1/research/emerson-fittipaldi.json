@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
           "locator": "Hall of Fame title heading '1972, 1974'; 1972 Lotus 72 championship paragraph and 1974 McLaren M23 championship paragraph.",
           "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1972 and 1974 rows name Emerson Fittipaldi.",
+          "supports": true
         }
       ]
     },
@@ -78,5 +83,14 @@
     "Reconcile identity with pinned F1DB before use.",
     "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

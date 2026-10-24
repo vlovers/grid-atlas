@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
           "locator": "Paragraph beginning 'Meanwhile, at the front': Williams signed Rosberg; 1982 Drivers' World Championship.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-fia-pays-tribute-mansour-ojjeh-1952-2021",
+          "locator": "FIA tribute to Mansour Ojjeh, Williams sponsorship paragraph: Keke Rosberg added a second Williams title in 1982.",
+          "supports": true
         }
       ]
     },
@@ -78,5 +83,14 @@
     "Reconcile identity with pinned F1DB before use.",
     "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-fia-pays-tribute-mansour-ojjeh-1952-2021",
+      "title": "F1 — FIA pays tribute to Mansour Ojjeh (1952–2021)",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

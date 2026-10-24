@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
           "locator": "Hall of Fame title heading '1962, 1968'; BRM 1962 title paragraph and 1968 Lotus second title paragraph.",
           "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1962 and 1968 rows name Graham Hill.",
+          "supports": true
         }
       ]
     },
@@ -92,5 +97,14 @@
     "Validate provisional slug against pinned F1DB.",
     "Add independent source and precise locator for every claim.",
     "Obtain separate human review for both locales before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

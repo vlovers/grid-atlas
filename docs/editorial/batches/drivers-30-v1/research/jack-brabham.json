@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jack-brabham.3XK2XWdL0moCmnSC55m84J",
           "locator": "Hall of Fame heading '1959, 1960, 1966'; opening paragraph on three championships.",
           "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1959, 1960 and 1966 rows name Sir Jack Brabham.",
+          "supports": true
         }
       ]
     },
@@ -64,5 +69,14 @@
     "Reconcile identity with pinned F1DB before use.",
     "Attach precise per-claim source locator and independent publisher corroboration.",
     "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
