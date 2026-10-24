@@ -24,7 +24,7 @@ for(const {driver_id:id} of batch.drivers){
     });
     const groups=[...new Set(evidence.map(item=>item.publisher_group))].sort();
     const linked_chapters=(chaptersByDriver.get(id)??[]).filter(chapter=>chapter.claim_ids.includes(claim.claim_id))
-      .map(chapter=>({chapter_id:chapter.chapter_id,en_heading:chapter.en.heading,uk_heading:chapter.uk.heading}));
+      .map(chapter=>({chapter_id:chapter.chapter_id,en_heading:chapter.en.heading,uk_heading:chapter.uk.heading,en_body:chapter.en.body,uk_body:chapter.uk.body}));
     rows.push({driver_id:id,claim_id:claim.claim_id,topic:claim.topic,en:claim.en,uk:claim.uk,linked_chapters,
       publisher_groups:groups,independent_publisher_links:groups.length>=2,evidence,
       human_identity_review:'pending',human_fact_review:'pending',en_editorial_review:'pending',
