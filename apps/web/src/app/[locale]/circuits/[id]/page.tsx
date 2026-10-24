@@ -1,3 +1,4 @@
+import { archiveContextHref } from '@/lib/archive-context';
 import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import styles from './circuit.module.css';
@@ -84,7 +85,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <EditorialHero title={circuit.name} eyebrow={storyCopy[locale as 'uk' | 'en'].circuitHeader}
       context={<><span>{circuit.first_season ?? '—'}—{circuit.last_season ?? '—'}</span><span>{identities[0]?.fields.country}</span></>}
       lead={t('circuitLayouts')} media={coverArtwork ? <CircuitCover circuitArtwork={coverArtwork} title={circuit.name} locale={locale === 'en' ? 'en' : 'uk'} /> : <ArchivePlate marker={String(circuit.first_season ?? '—')} label={a.history} note={a.evidenceNote}
-        entries={chronologicalHistory.slice(0, 3).map(race => ({ id: race.race_id, href: `/races/${race.race_id}`, title: race.race_name, meta: `${race.season_year} / R${race.round}` }))} />}
+        entries={chronologicalHistory.slice(0, 3).map(race => ({ id: race.race_id, href: archiveContextHref(`/races/${race.race_id}`, `/circuits/${id}`), title: race.race_name, meta: `${race.season_year} / R${race.round}` }))} />}
       actions={<><a href="#circuit-layouts">{a.identity} ↓</a><a href="#circuit-history">{a.history} ↓</a></>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
@@ -96,8 +97,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     ]} />
     <RecordReadingNote kind="circuit" locale={locale === 'en' ? 'en' : 'uk'} />
     <div id="circuit-layouts" tabIndex={-1}><CircuitExperience layouts={layouts} events={technicalEvents} locale={locale === 'en' ? 'en' : 'uk'} /></div>
-    <div id="circuit-history" tabIndex={-1}><div id="circuit-chronology" tabIndex={-1}><ArchiveRhythm testId="circuit-archive-rhythm" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Хронологія Гран-прі' : 'Grand Prix chronology'} description={locale === 'uk' ? 'Усі зафіксовані етапи на цій трасі за роками.' : 'All recorded events at this circuit, arranged by year.'} entries={chronologicalHistory.map(race => ({ id: race.race_id, year: race.season_year, label: race.race_name, href: `/races/${race.race_id}`, detail: `R${race.round}` }))} /></div></div>
-    <div data-testid="circuit-era-journey"><ArchiveJourney editorial testId="circuit-visual-journey" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Гран-прі крізь роки' : 'Grands Prix across the years'} description={locale === 'uk' ? 'Події з історичного архіву цієї траси. Це хронологічна навігація, а не рейтинг найважливіших гонок.' : 'Recorded events at this circuit. A chronological archive journey, not a ranking of the most important races.'} items={chronologicalHistory.length ? [chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map(entry => ({ id: entry.race_id, href: `/races/${entry.race_id}`, year: entry.season_year, overline: `R${entry.round}`, title: entry.race_name, detail: entry.winners.length ? entry.winners.map(w => w.driver_name).join(', ') : undefined })) : []} /><p>{locale === 'uk' ? 'Послідовність не підтверджує незмінну конфігурацію траси.' : 'The sequence does not establish an unchanged circuit layout.'}</p></div>
+    <div id="circuit-history" tabIndex={-1}><div id="circuit-chronology" tabIndex={-1}><ArchiveRhythm testId="circuit-archive-rhythm" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Хронологія Гран-прі' : 'Grand Prix chronology'} description={locale === 'uk' ? 'Усі зафіксовані етапи на цій трасі за роками.' : 'All recorded events at this circuit, arranged by year.'} entries={chronologicalHistory.map(race => ({ id: race.race_id, year: race.season_year, label: race.race_name, href: archiveContextHref(`/races/${race.race_id}`, `/circuits/${id}`), detail: `R${race.round}` }))} /></div></div>
+    <div data-testid="circuit-era-journey"><ArchiveJourney editorial testId="circuit-visual-journey" locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Гран-прі крізь роки' : 'Grands Prix across the years'} description={locale === 'uk' ? 'Події з історичного архіву цієї траси. Це хронологічна навігація, а не рейтинг найважливіших гонок.' : 'Recorded events at this circuit. A chronological archive journey, not a ranking of the most important races.'} items={chronologicalHistory.length ? [chronologicalHistory[0], ...(chronologicalHistory.length > 2 ? [chronologicalHistory[Math.floor((chronologicalHistory.length - 1) / 2)]] : []), ...(chronologicalHistory.length > 1 ? [chronologicalHistory[chronologicalHistory.length - 1]] : [])].map(entry => ({ id: entry.race_id, href: archiveContextHref(`/races/${entry.race_id}`, `/circuits/${id}`), year: entry.season_year, overline: `R${entry.round}`, title: entry.race_name, detail: entry.winners.length ? entry.winners.map(w => w.driver_name).join(', ') : undefined })) : []} /><p>{locale === 'uk' ? 'Послідовність не підтверджує незмінну конфігурацію траси.' : 'The sequence does not establish an unchanged circuit layout.'}</p></div>
     <section aria-labelledby="circuit-result-legends" data-testid="circuit-result-legends">
       <h2 id="circuit-result-legends">{locale === 'uk' ? 'Пілоти, що неодноразово перемагали тут' : 'Drivers with repeated recorded wins here'}</h2>
       <p>{locale === 'uk'
@@ -124,8 +125,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       {history.length ? <ArchiveTable label={locale === 'uk' ? 'Переможці та результати' : 'Winners and results'} locale={locale === 'en' ? 'en' : 'uk'}><table data-testid="circuit-history-table">
         <thead><tr><th scope="col">{locale === 'uk' ? 'Сезон' : 'Season'}</th><th scope="col">{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th scope="col">{locale === 'uk' ? 'Переможні записи' : 'Winning entries'}</th><th scope="col">{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
         <tbody>{history.slice(offset, offset + CIRCUIT_PAGE_SIZE).map(race => <tr key={race.race_id}>
-          <th scope="row"><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></th>
-          <td><Link href={`/races/${race.race_id}`}>{race.race_name}</Link></td>
+          <th scope="row"><Link href={archiveContextHref(`/seasons/${race.season_year}`, `/circuits/${id}`)}>{race.season_year}</Link></th>
+          <td><Link href={archiveContextHref(`/races/${race.race_id}`, `/circuits/${id}`)}>{race.race_name}</Link></td>
           <td>{race.winners.length ? race.winners.map(winner => <div key={`${winner.driver_id}:${winner.constructor_id}`}><Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> · <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></div>) : '—'}</td>
           <td>{race.recorded_drivers}</td>
         </tr>)}</tbody>
@@ -144,8 +145,8 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       {[...decades].map(([decade, events]) => <section key={decade} aria-label={`${decade}s`}>
         <h3>{decade}–{decade + 9}</h3>
         <div className="records">{events.map(race => <div className="record" key={race.id}>
-          <span className="position"><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></span>
-          <span><strong><Link href={`/races/${race.id}`}>{race.official_name} ↗</Link></strong>
+          <span className="position"><Link href={archiveContextHref(`/seasons/${race.season_year}`, `/circuits/${id}`)}>{race.season_year}</Link></span>
+          <span><strong><Link href={archiveContextHref(`/races/${race.id}`, `/circuits/${id}`)}>{race.official_name} ↗</Link></strong>
             <small>{t('round', { round: race.round })}{race.race_date ? ` · ${race.race_date}` : ''}</small></span>
         </div>)}</div>
       </section>)}

@@ -1,3 +1,4 @@
+import { safeArchiveReturnTarget, archiveContextHref } from '@/lib/archive-context';
 import { ArchiveRhythm } from '@/components/stories/archive-rhythm';
 import { ArchiveJourney } from '@/components/stories/archive-journey';
 import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
@@ -21,9 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ year: str
   return { title: t('seasonTitle', { year }) };
 }
 
-export default async function SeasonPage({ params }: { params: Promise<{ year: string }> }) {
+export default async function SeasonPage({ params, searchParams }: { params: Promise<{ year: string }>; searchParams: Promise<{ from?: string }> }) {
   const t = await getTranslations('UI');
   const { year } = await params;
+  const returnTo = safeArchiveReturnTarget((await searchParams).from);
   if (!/^[0-9]{4}$/.test(year) || Number(year) < 1950 || Number(year) > 2200) notFound();
   await getData<{ year: number }>(`/api/seasons/${year}`);
   const [races, lineups, driverStandings, constructorStandings] = await Promise.all([
@@ -48,22 +50,23 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   const a = archiveCopy[locale];
   return <section className={`page ${archiveStyles.page}`} data-testid="season-dossier">
     <EditorialHero title={t('seasonTitle', { year })} eyebrow={storyCopy[locale].seasonHeader} lead={t('seasonLead')}
-      media={<ArchivePlate marker={year} label={a.calendar} note={a.evidenceNote} entries={raceCalendar.slice(0, 3).map(race => ({ id: race.id, href: `/races/${race.id}`, title: race.official_name, meta: `${t('round', { round: race.round })} / ${race.circuit_name ?? t('unknownCircuit')}` }))} />}
+      media={<ArchivePlate marker={year} label={a.calendar} note={a.evidenceNote} entries={raceCalendar.slice(0, 3).map(race => ({ id: race.id, href: archiveContextHref(`/races/${race.id}`, returnTo), title: race.official_name, meta: `${t('round', { round: race.round })} / ${race.circuit_name ?? t('unknownCircuit')}` }))} />}
       actions={<><a href="#season-calendar">{a.calendar} ↓</a><Link href="/seasons">{a.decade} ↗</Link></>}
       statistics={[{ label: t('grandsPrix'), value: races.length }, { label: t('driversTitle'), value: participatingDrivers }, { label: t('constructorsTitle'), value: teams.size }]} scope={a.scope} />
+    {returnTo && <nav aria-label={locale === 'uk' ? 'Повернення до профілю' : 'Return to profile'} data-testid="archive-return-context"><Link href={returnTo}>← {locale === 'uk' ? 'Повернутися до профілю' : 'Return to profile'}</Link></nav>}
     <SourceAttribution locale={locale} />
     <EditorialTabs label={a.connections} items={[{ id: 'season-calendar', label: a.calendar }, { id: 'season-classifications', label: a.results }, { id: 'season-field', label: a.field }]} />
     <RecordReadingNote kind="season" locale={locale} />
     <div id="season-calendar">
-    <ArchiveRhythm testId="season-archive-rhythm" axis="round" locale={locale} title={locale === 'uk' ? 'Календар у деталях' : 'The calendar in detail'} description={locale === 'uk' ? 'Усі раунди сезону з прямими посиланнями на протоколи гонок.' : 'Every recorded round, linked to its race classification.'} entries={raceCalendar.map(race => ({ id: race.id, year: Number(year), position: race.round, label: race.official_name, href: `/races/${race.id}`, detail: race.circuit_name ?? undefined }))} />
-    <ArchiveJourney testId="season-visual-journey" locale={locale} title={locale === 'uk' ? 'Маршрут сезону' : 'The season route'} description={locale === 'uk' ? 'Початок, середина та фінал календаря. Вибір за позицією у календарі, без непідтверджених тверджень про драматичність.' : 'Opening, midpoint and final calendar round. Selected by chronology, not invented dramatic significance.'} items={raceCalendar.length ? [raceCalendar[0], ...(raceCalendar.length > 2 ? [raceCalendar[Math.floor((raceCalendar.length - 1) / 2)]] : []), ...(raceCalendar.length > 1 ? [raceCalendar[raceCalendar.length - 1]] : [])].map(entry => ({ id: entry.id, href: `/races/${entry.id}`, year: Number(year), overline: `${locale === 'uk' ? 'Раунд' : 'Round'} ${entry.round}`, title: entry.official_name, detail: entry.circuit_name ?? undefined })) : []} />
+    <ArchiveRhythm testId="season-archive-rhythm" axis="round" locale={locale} title={locale === 'uk' ? 'Календар у деталях' : 'The calendar in detail'} description={locale === 'uk' ? 'Усі раунди сезону з прямими посиланнями на протоколи гонок.' : 'Every recorded round, linked to its race classification.'} entries={raceCalendar.map(race => ({ id: race.id, year: Number(year), position: race.round, label: race.official_name, href: archiveContextHref(`/races/${race.id}`, returnTo), detail: race.circuit_name ?? undefined }))} />
+    <ArchiveJourney testId="season-visual-journey" locale={locale} title={locale === 'uk' ? 'Маршрут сезону' : 'The season route'} description={locale === 'uk' ? 'Початок, середина та фінал календаря. Вибір за позицією у календарі, без непідтверджених тверджень про драматичність.' : 'Opening, midpoint and final calendar round. Selected by chronology, not invented dramatic significance.'} items={raceCalendar.length ? [raceCalendar[0], ...(raceCalendar.length > 2 ? [raceCalendar[Math.floor((raceCalendar.length - 1) / 2)]] : []), ...(raceCalendar.length > 1 ? [raceCalendar[raceCalendar.length - 1]] : [])].map(entry => ({ id: entry.id, href: archiveContextHref(`/races/${entry.id}`, returnTo), year: Number(year), overline: `${locale === 'uk' ? 'Раунд' : 'Round'} ${entry.round}`, title: entry.official_name, detail: entry.circuit_name ?? undefined })) : []} />
     <section aria-labelledby="season-journey" data-testid="season-journey">
       <h2 id="season-journey">{locale === 'uk' ? 'Сезон у трьох етапах' : 'Season in three moments'}</h2>
       <p>{locale === 'uk' ? 'Від початку календаря через середину до фінального зафіксованого етапу. Це точки навігації по архіву, а не редакційний вибір найважливіших подій.' : 'From the opening race through the middle of the calendar to the last recorded round. These are archive navigation points, not editorial claims about the most important moments.'}</p>
       {races.length ? <ol className="records">
         {[races[0], ...(races.length > 2 ? [races[Math.floor((races.length - 1) / 2)]] : []), ...(races.length > 1 ? [races[races.length - 1]] : [])].map((entry, index) =>
           <li className="record" key={entry.id}><span className="position">{String(index + 1).padStart(2, '0')}</span>
-            <span><strong><Link href={`/races/${entry.id}`}>{entry.official_name} ↗</Link></strong>
+            <span><strong><Link href={archiveContextHref(`/races/${entry.id}`, returnTo)}>{entry.official_name} ↗</Link></strong>
             <small>{locale === 'uk' ? 'Раунд' : 'Round'} {entry.round} · {entry.circuit_name ?? t('unknownCircuit')}</small></span>
           </li>)}
       </ol> : <p>{t('noRaces')}</p>}
@@ -96,7 +99,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
     </section><section id="season-field" aria-label={a.field}>
     <h2>{t('grandsPrix')}</h2>
     {races.length === 0 ? <p>{t('noRaces')}</p> : <div className="records">{races.map(r=>
-      <Link key={r.id} className="record" href={`/races/${r.id}`}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>
+      <Link key={r.id} className="record" href={archiveContextHref(`/races/${r.id}`, returnTo)}><span className="position">{String(r.round).padStart(2,'0')}</span><span><strong>{r.official_name}</strong><small>{r.circuit_name || t('unknownCircuit')}{r.race_date ? ' · '+r.race_date : ''}</small></span><span aria-hidden="true">↗</span></Link>
     )}</div>}
     <h2>{t('lineups')}</h2>
     <p>{t('lineupsLead')}</p>

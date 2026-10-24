@@ -1,3 +1,4 @@
+import { archiveContextHref } from '@/lib/archive-context';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
@@ -123,8 +124,8 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         <p>{locale === 'uk' ? 'Гонки з результатами' : 'Races with recorded results'}: {driver.races} · {locale === 'uk' ? 'Перемоги' : 'Wins'}: {driver.wins}</p>
         {career?.participation.filter(row => row.year === selectedSeason.year && row.related_id === driver.driver_id).map(row => <div key={`${row.year}:${row.related_id}`}>
           <p>{locale === 'uk' ? 'Межі участі за протоколами' : 'Recorded participation boundaries'}:{' '}
-            <Link href={`/races/${row.first_race.id}`}>{locale === 'uk' ? 'Етап' : 'Round'} {row.first_race.round} · {row.first_race.name}</Link>
-            {row.last_race.id !== row.first_race.id && <> → <Link href={`/races/${row.last_race.id}`}>{locale === 'uk' ? 'Етап' : 'Round'} {row.last_race.round} · {row.last_race.name}</Link></>}</p>
+            <Link href={archiveContextHref(`/races/${row.first_race.id}`, `/constructors/${id}`)}>{locale === 'uk' ? 'Етап' : 'Round'} {row.first_race.round} · {row.first_race.name}</Link>
+            {row.last_race.id !== row.first_race.id && <> → <Link href={archiveContextHref(`/races/${row.last_race.id}`, `/constructors/${id}`)}>{locale === 'uk' ? 'Етап' : 'Round'} {row.last_race.round} · {row.last_race.name}</Link></>}</p>
           <Link href={`/explorer/constructors/${id}?year=${row.year}&selected=${row.related_id}`}>{locale === 'uk' ? 'Усі гоночні свідчення' : 'All race evidence'} ↗</Link>
         </div>)}
       </article>)}</div> : <p>{locale === 'uk' ? 'У цьому сезоні немає записів про пілотів.' : 'No driver entries are recorded for this season.'}</p>}
@@ -136,7 +137,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
         ? `Архів містить ${team.races} гонок за участю конструктора ${team.name}${team.first_season !== null ? ` від сезону ${team.first_season}` : ''}${team.last_season !== null && team.last_season !== team.first_season ? ` до ${team.last_season} року` : ''}. Зафіксовано ${team.wins} переможних гонок у цьому наборі результатів.`
         : `The archive records ${team.races} races associated with constructor ${team.name}${team.first_season !== null ? ` from the ${team.first_season} season` : ''}${team.last_season !== null && team.last_season !== team.first_season ? ` through ${team.last_season}` : ''}. It includes ${team.wins} distinct winning races in the imported results.`}</p>
       {seasons.length > 0 && <p>{locale === 'uk' ? 'Перегляньте зафіксовані сезони:' : 'Explore the recorded seasons:'}{' '}
-        {seasons.slice(0, 6).map((season, index) => <span key={season.year}>{index > 0 ? ' · ' : ''}<Link href={`/seasons/${season.year}`}>{season.year}</Link></span>)}
+        {seasons.slice(0, 6).map((season, index) => <span key={season.year}>{index > 0 ? ' · ' : ''}<Link href={archiveContextHref(`/seasons/${season.year}`, `/constructors/${id}`)}>{season.year}</Link></span>)}
         {seasons.length > 6 && <span> · {locale === 'uk' ? `ще ${seasons.length - 6} у таблиці нижче` : `${seasons.length - 6} more in the table below`}</span>}
       </p>}
       <p>{locale === 'uk' ? 'Це опис участі за протоколами, а не перевірена історія власності, контрактів чи юридичної спадковості команди. Сумарні очки пілотів не є офіційними очками Кубка конструкторів.' : 'This is a summary of recorded participation, not a verified history of team ownership, contracts or legal succession. Summed driver points are not official constructors championship points.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
@@ -147,7 +148,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       {seasons.length > 0 ? <div className="driver-grid">{[...seasons].sort((a,b) => b.wins - a.wins || a.year - b.year).slice(0, 4).map(season =>
         <article className="driver" key={season.year}>
           <span className="index">{locale === 'uk' ? 'Сезон' : 'Season'} · {season.year}</span>
-          <h3><Link href={`/seasons/${season.year}`}>{season.wins} {locale === 'uk' ? 'перемог' : 'wins'} ↗</Link></h3>
+          <h3><Link href={archiveContextHref(`/seasons/${season.year}`, `/constructors/${id}`)}>{season.wins} {locale === 'uk' ? 'перемог' : 'wins'} ↗</Link></h3>
           <p>{season.races} {locale === 'uk' ? 'гонок у протоколах' : 'recorded races'}</p>
           <Link href={`/constructors/${team.id}?season=${season.year}`}>{locale === 'uk' ? 'Пілоти та результати сезону' : 'Season drivers and results'} ↗</Link>
         </article>)}</div> : <p>{locale === 'uk' ? 'Немає зафіксованих сезонів.' : 'No seasons recorded.'}</p>}
@@ -165,14 +166,14 @@ export default async function ConstructorProfile({ params, searchParams }: Props
           const year = team.first_season! + i;
           const season = seasons.find(s => s.year === year);
           return season
-            ? <Link className="timeline-year active" key={year} href={`/seasons/${year}`} title={`${year}: ${t('raceWins', { races: season.races, wins: season.wins })}`}><span>{year}</span><strong>{t('winCount', { count: season.wins })}</strong></Link>
+            ? <Link className="timeline-year active" key={year} href={archiveContextHref(`/seasons/${year}`, `/constructors/${id}`)} title={`${year}: ${t('raceWins', { races: season.races, wins: season.wins })}`}><span>{year}</span><strong>{t('winCount', { count: season.wins })}</strong></Link>
             : <div className="timeline-year inactive" key={year} title={`${year}: ${t('noResultsShort')}`}><span>{year}</span><small>—</small></div>;
         })}
       </div>
     </div>}
     <h2>{t('seasonHistory')}</h2>
     {seasons.length ? <ArchiveTable label={t('seasonHistory')} locale={locale}><table><thead><tr><th scope="col">{t('season')}</th><th scope="col">{t('races')}</th><th scope="col">{t('wins')}</th><th scope="col">{t('driverPodiums')}</th><th scope="col">{t('driverPoints')}</th></tr></thead><tbody>
-      {seasons.map(s=><tr key={s.year}><th scope="row"><Link href={`/seasons/${s.year}`}>{s.year}</Link></th><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{points(s.driver_points, s.points_missing)}</td></tr>)}
+      {seasons.map(s=><tr key={s.year}><th scope="row"><Link href={archiveContextHref(`/seasons/${s.year}`, `/constructors/${id}`)}>{s.year}</Link></th><td>{s.races}</td><td>{s.wins}</td><td>{s.podium_finishes}</td><td>{points(s.driver_points, s.points_missing)}</td></tr>)}
     </tbody></table></ArchiveTable> : <p>{t('noResults')}</p>}
     <section aria-labelledby="constructor-driver-history" data-testid="constructor-driver-history">
       <h2 id="constructor-driver-history">{locale === 'uk' ? 'Пілоти в історії результатів команди' : 'Drivers in this constructor’s race records'}</h2>
@@ -184,11 +185,11 @@ export default async function ConstructorProfile({ params, searchParams }: Props
             const first = [...rows].sort((a,b) => a.year-b.year || a.first_race.round-b.first_race.round)[0]?.first_race;
             return <tr key={driver.id}><th scope="row"><Link href={`/drivers/${driver.id}`}>{driver.name}</Link></th>
               <td>{[...driver.years].sort((a,b) => a-b).join(', ')}</td>
-              <td>{first ? <Link href={`/races/${first.id}`}>{first.year} · {first.name} ↗</Link> : '—'}</td></tr>;
+              <td>{first ? <Link href={archiveContextHref(`/races/${first.id}`, `/constructors/${id}`)}>{first.year} · {first.name} ↗</Link> : '—'}</td></tr>;
           })}</tbody></table>
       </ArchiveTable> : <p>{locale === 'uk' ? 'Немає зафіксованих зв’язків із пілотами.' : 'No recorded driver associations.'}</p>}
       {career?.milestones.first_win && <p>{locale === 'uk' ? 'Перша зафіксована перемога конструктора' : 'First recorded constructor winning race'}:{' '}
-        <Link href={`/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name} ↗</Link>
+        <Link href={archiveContextHref(`/races/${career.milestones.first_win.race.id}`, `/constructors/${id}`)}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name} ↗</Link>
       </p>}
     </section>
     </section>
