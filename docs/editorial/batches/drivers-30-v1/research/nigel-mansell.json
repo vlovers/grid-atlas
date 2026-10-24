@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding. Note: the live Formula 1 URL slug reads john-surtees despite displaying the Nigel Mansell biography; preserve and recheck canonical URL before publication."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Mansell won the 1992 Formula 1 Drivers' World Championship.",
       "uk": "Менселл став чемпіоном світу Формули-1 серед пілотів у 1992 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+          "locator": "Hall of Fame heading '1992' above Nigel Mansell profile; 1992 championship career section.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "nigel-mansell-wins",
       "topic": "career_chronology",
       "en": "Mansell won 31 Formula 1 World Championship Grands Prix.",
       "uk": "Менселл здобув 31 перемогу на етапах чемпіонату світу Формули-1.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+          "locator": "Opening paragraph of Nigel Mansell Hall of Fame profile: '31 wins and 32 crashes'.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
