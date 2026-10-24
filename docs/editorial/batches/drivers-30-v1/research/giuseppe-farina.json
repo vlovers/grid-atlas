@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Farina became the first Formula 1 Drivers' World Champion in 1950 with Alfa Romeo.",
       "uk": "Фаріна став першим чемпіоном світу Формули-1 серед пілотів у 1950 році з Alfa Romeo.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nino-farina.42vZMEuSei8avz76yMDHpf",
+          "locator": "Hall of Fame heading '1950'; paragraph beginning 'In 1950 he was appointed leader' describing Alfa Romeo.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "giuseppe-farina-first-race",
       "topic": "career_chronology",
       "en": "He won the first World Championship Grand Prix at Silverstone in 1950.",
       "uk": "Він виграв перший заліковий Гран-прі чемпіонату світу на Сільверстоуні у 1950 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nino-farina.42vZMEuSei8avz76yMDHpf",
+          "locator": "Paragraph beginning 'Given the supremacy': 1950 British Grand Prix at Silverstone and first championship race.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
