@@ -33,6 +33,6 @@ test('seven source-inspected candidates have exact Commons review locators, but 
   for (const file of expectedFiles) {
     assert.ok(sourceReview.includes('https://commons.wikimedia.org/wiki/' + file), file);
   }
-  assert.match(sourceReview, /remain.*BLOCK/);
+  assert.match(sourceReview, /still have status \*\*BLOCK\*\*/);
   assert.match(sourceReview, /not a cryptographic original-byte inspection/);
 });
