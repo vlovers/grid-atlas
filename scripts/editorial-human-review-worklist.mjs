@@ -74,21 +74,43 @@ export function buildReviewWorklist(provenance,worksheet){
       'Source URLs, passage locators and translations require human verification; no publication decision is made.']};
 }
 function renderMarkdown(report,items){
-  const safe=value=>String(value??'').replace(/\|/g,'\\|').replace(/\r?\n/g,' ');
+  const plain=value=>String(value??'').replace(/[\\r\\n]+/g,' ').trim();
+  const cell=value=>plain(value).replace(/\\|/g,'\\\\|');
   const lines=['# Content Factory V1 — human review queue','',
-    'Research only. All source semantics, EN/UK translations and publication approvals remain pending.','',
-    'Claims: '+report.totals.claims+'; second publisher needed: '+report.totals.awaiting_second_publisher+
+    'Research only. No source semantics, translations or publication approvals have been verified.','',
+    'Batch claims: '+report.totals.claims+'; shown: '+items.length+
+      '; batch awaiting second publisher: '+report.totals.awaiting_second_publisher+
       '; human approved: 0; published: 0.','',
-    '| Priority | Driver | Claim | Second publisher | Chapters | Sources |',
-    '| ---: | --- | --- | --- | ---: | --- |'];
+    '| Priority | Driver | Claim | Second publisher | Chapters |',
+    '| ---: | --- | --- | --- | ---: |'];
   for(const item of items){
-    const urls=item.evidence.map(e=>e.source_url).filter((x,i,a)=>a.indexOf(x)===i);
-    lines.push('| '+item.priority_score+' | '+safe(item.driver_id)+' | '+safe(item.claim_id)+
+    lines.push('| '+item.priority_score+' | '+cell(item.driver_id)+' | '+cell(item.claim_id)+
       ' | '+(item.priority_reason==='second_publisher_missing'?'needed':'linked, verify')+
-      ' | '+item.chapter_count+' | '+urls.map(safe).join('<br>')+' |');
+      ' | '+item.chapter_count+' |');
+  }
+  for(const item of items){
+    lines.push('','## '+plain(item.driver_id)+' — '+plain(item.claim_id),'',
+      '**Priority:** '+item.priority_score+' ('+item.priority_reason+')',
+      '',
+      '**EN:** '+plain(item.en),'',
+      '**UK:** '+plain(item.uk),'',
+      '**Evidence (declared, semantic review pending):**','');
+    item.evidence.forEach((e,i)=>{
+      lines.push((i+1)+'. '+plain(e.source_url),
+        '   - Publisher group: '+plain(e.publisher_group??'not specified'),
+        '   - Exact locator: '+plain(e.locator),
+        '   - Semantic review: pending');
+    });
+    lines.push('','**Linked narrative chapters:**');
+    if(!item.linked_chapters.length)lines.push('- None; check whether narrative coverage is needed.');
+    else for(const chapter of item.linked_chapters)
+      lines.push('- '+plain(chapter.chapter_id)+' — EN: '+plain(chapter.en_heading)+' / UK: '+plain(chapter.uk_heading));
+    lines.push('','**Human review checklist:**');
+    for(const task of item.review_tasks)
+      lines.push('- [ ] '+plain(task.kind)+': '+plain(task.instruction));
   }
   lines.push('','Publisher diversity is declared metadata, not independent human fact checking.');
-  return lines.join('\n')+'\n';
+  return lines.join('\\n')+'\\n';
 }
 const direct=process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url);
 if(direct){
