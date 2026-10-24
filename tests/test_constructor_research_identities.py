@@ -20,6 +20,8 @@ def fixture():
         subjects.append({
             "name": row["name"], "f1db_external_id": row["id"] if pinned else None,
             "source_record_sha256": module.digest_row(row) if pinned else None,
+            "identity_status": "pinned_manifest_recorded_not_rechecked" if pinned else "pending_pinned_archive_preflight",
+            "english_draft_status": "research_only", "ukrainian_draft_status": "research_only",
             "human_review": "pending", "independent_claim_review": "pending",
             "publication": "blocked",
         })
@@ -57,6 +59,18 @@ class ConstructorIdentityAuditTests(unittest.TestCase):
         manifest, rows = fixture()
         manifest["subjects"][2]["source_record_sha256"] = "0" * 64
         with self.assertRaisesRegex(ValueError, "unverified identity"):
+            module.reconcile(manifest, rows)
+
+    def test_same_identity_cannot_be_assigned_twice(self):
+        manifest, rows = fixture()
+        manifest["subjects"][1]["f1db_external_id"] = manifest["subjects"][0]["f1db_external_id"]
+        with self.assertRaisesRegex(ValueError, "same canonical ID"):
+            module.reconcile(manifest, rows)
+
+    def test_locale_approval_must_remain_research_only(self):
+        manifest, rows = fixture()
+        manifest["subjects"][0]["english_draft_status"] = "approved"
+        with self.assertRaisesRegex(ValueError, "unsafe approval"):
             module.reconcile(manifest, rows)
 
     def test_ambiguous_name_remains_proposal_only(self):
