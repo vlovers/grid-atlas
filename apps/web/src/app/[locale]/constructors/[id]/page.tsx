@@ -1,3 +1,4 @@
+import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
@@ -75,6 +76,11 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       actions={<><a href={selectedSeason ? "#constructor-season" : "#constructor-archive"}>{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
       statistics={[{ label: t('seasons'), value: format(team.seasons) }, { label: t('races'), value: format(team.races) }, { label: t('wins'), value: format(team.wins) }, { label: t('driverPodiums'), value: format(team.podium_finishes) }]} scope={e.recordScope} />
     <SourceAttribution locale={locale} />
+    <ArchiveHighlights locale={locale} title={locale === 'uk' ? 'Віхи конструктора' : 'Constructor milestones'} description={locale === 'uk' ? 'Перші результати та найуспішніші сезони за архівними протоколами.' : 'Early results and strongest recorded seasons, from the archive.'} items={[
+      ...(career?.milestones.first_appearance ? [{ id: 'debut', eyebrow: locale === 'uk' ? 'ПЕРША УЧАСТЬ' : 'FIRST APPEARANCE', title: career.milestones.first_appearance.race.name, detail: String(career.milestones.first_appearance.race.year), href: `/${locale}/races/${career.milestones.first_appearance.race.id}` }] : []),
+      ...(career?.milestones.first_win ? [{ id: 'first-win', eyebrow: locale === 'uk' ? 'ПЕРША ПЕРЕМОГА' : 'FIRST WIN', title: career.milestones.first_win.race.name, detail: String(career.milestones.first_win.race.year), href: `/${locale}/races/${career.milestones.first_win.race.id}` }] : []),
+      ...[...seasons].sort((a,b) => b.wins-a.wins || a.year-b.year).slice(0,2).map((season,i) => ({ id: `season-${season.year}`, eyebrow: i === 0 ? (locale === 'uk' ? 'НАЙБІЛЬШЕ ПЕРЕМОГ' : 'MOST WINS') : (locale === 'uk' ? 'ЩЕ ОДИН СЕЗОН' : 'ANOTHER SEASON'), title: String(season.year), detail: `${season.wins} ${locale === 'uk' ? 'переможних гонок' : 'winning races'} · ${season.races} ${locale === 'uk' ? 'гонок' : 'races'}`, href: `/${locale}/constructors/${id}?season=${season.year}#constructor-season` }))
+    ]} />
     <EditorialTabs label={e.contents} items={[{ id: 'constructor-archive-portrait', label: e.overview }, { id: 'constructor-key-eras', label: e.seasons }, ...(selectedSeason ? [{ id: 'constructor-season', label: e.drivers }] : []), { id: 'constructor-classifications', label: e.classifications }, { id: 'constructor-archive', label: e.archive }]} />
     <section className={styles.portrait} aria-labelledby="constructor-archive-portrait" data-testid="constructor-archive-portrait">
       <SectionHeading kicker={e.overview} id="constructor-archive-portrait" title={locale === 'uk' ? 'Історія конструктора за сезонами' : 'Constructor history across seasons'} />
