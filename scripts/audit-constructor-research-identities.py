@@ -36,17 +36,28 @@ def reconcile(manifest, rows):
 
     results = []
     seen = set()
+    assigned_ids = set()
     for subject in subjects:
         name = subject.get("name")
         if not isinstance(name, str) or name in seen:
             raise ValueError("Missing/duplicate draft subject")
         seen.add(name)
-        if (subject.get("human_review") != "pending" or
+        if (subject.get("english_draft_status") != "research_only" or
+                subject.get("ukrainian_draft_status") != "research_only" or
+                subject.get("human_review") != "pending" or
                 subject.get("publication") != "blocked" or
                 subject.get("independent_claim_review") != "pending"):
             raise ValueError(f"{name}: unsafe approval state")
         identifier = subject.get("f1db_external_id")
+        if identifier is not None:
+            if not isinstance(identifier, str) or not identifier:
+                raise ValueError(f"{name}: invalid pinned identity")
+            if identifier in assigned_ids:
+                raise ValueError(f"{name}: same canonical ID assigned to multiple subjects")
+            assigned_ids.add(identifier)
         if identifier is None:
+            if subject.get("identity_status") != "pending_pinned_archive_preflight":
+                raise ValueError(f"{name}: invalid pending identity state")
             if subject.get("source_record_sha256") is not None:
                 raise ValueError(f"{name}: unverified identity contains hash")
             # Suggestions are deliberately NOT automatically written back to the manifest.
@@ -63,6 +74,8 @@ def reconcile(manifest, rows):
             results.append({"subject": name, "status": "pending_manual_identity_review",
                             "candidates": candidates})
             continue
+        if subject.get("identity_status") != "pinned_manifest_recorded_not_rechecked":
+            raise ValueError(f"{name}: unexpected pinned identity state")
         row = by_id.get(identifier)
         if row is None:
             raise ValueError(f"{name}: pinned identity missing: {identifier}")
