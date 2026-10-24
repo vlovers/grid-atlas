@@ -13,9 +13,10 @@ const newlyLinked={
   'jack-brabham':['jack-brabham-own-car','jack-brabham-cooper'],
   'damon-hill':['damon-hill-jordan','damon-hill-1996-eight-wins','damon-hill-brabham','damon-hill-1994-runner-up'],
   'lando-norris':['lando-norris-debut'],
-  'alberto-ascari':['alberto-ascari-titles','alberto-ascari-monza','alberto-ascari-1955-monaco','alberto-ascari-1952-run']
+  'alberto-ascari':['alberto-ascari-titles','alberto-ascari-monza','alberto-ascari-1955-monaco','alberto-ascari-1952-run'],
+  'mario-andretti':['mario-andretti-debut','mario-andretti-1968-pole','mario-andretti-1976-japan','mario-andretti-1982-return']
 };
-test('seventeen researched claims link two declared publisher groups without editorial approval',()=>{
+test('twenty-one researched claims link two declared publisher groups without editorial approval',()=>{
   let total=0;
   for(const [id,claimIds] of Object.entries(newlyLinked)){
     const card=load(id),audit=inspectResearchCard(card,id);
@@ -34,15 +35,15 @@ test('seventeen researched claims link two declared publisher groups without edi
       total++;
     }
   }
-  assert.equal(total,17);
+  assert.equal(total,21);
 });
 test('review worksheet covers all claims and cannot invent approval',()=>{
   const result=spawnSync(process.execPath,['scripts/editorial-review-packet.mjs'],{encoding:'utf8'});
   assert.equal(result.status,0,result.stderr);
   const report=JSON.parse(result.stdout);
   assert.equal(report.totals.claims,96);
-  assert.equal(report.totals.with_independent_publisher_links,65);
-  assert.equal(report.totals.awaiting_second_publisher,31);
+  assert.equal(report.totals.with_independent_publisher_links,69);
+  assert.equal(report.totals.awaiting_second_publisher,27);
   assert.equal(report.totals.human_approved,0);
   assert.equal(report.totals.published,0);
   assert.ok(report.claims.every(c=>c.human_fact_review==='pending' && c.en_editorial_review==='pending' && c.uk_editorial_review==='pending'));
