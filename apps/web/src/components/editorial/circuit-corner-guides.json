@@ -385,16 +385,16 @@
     "id": "istanbul",
     "sections": [
       {
-        "label": "Turn 8 · Three apexes",
-        "en": "This long, quick left-hander features three linked apexes. The challenge is not simply to be brave on entry: an imperfect first line can spoil the next two parts and the exit onto the straight.",
-        "uk": "Довгий швидкісний лівий поворот має три пов'язані апекси. Виклик не лише у сміливому вході: неточна траєкторія на першому апексі псує два наступні та розгін на пряму.",
-        "source": "https://www.formula1.com/en/latest/article/turkeys-turn-8-taking-on-one-of-the-most-challenging-corners-in-f1.N4iqF6KjTuWPCfpDBJgEu"
-      },
-      {
         "label": "Turn 12 · Braking and overtakes",
         "en": "At the end of a long flat-out section, Turn 12 is a heavy-braking overtaking opportunity. It forms a contrast to the sustained high-speed load of the famous Turn 8.",
         "uk": "Після довгої швидкісної ділянки дванадцятий поворот дає шанс атакувати на сильному гальмуванні. Це контраст до тривалого бокового навантаження у знаменитому восьмому віражі.",
         "source": "https://www.formula1.com/en/latest/article/good-lap-vs-great-lap-watch-how-to-nail-a-lap-of-istanbul-park-with-charles.2mru3OQJOUmK9AzJtsjnZV.2mru3OQJOUmK9AzJtsjnZV"
+      },
+      {
+        "label": "Turn 8 · Four linked apexes",
+        "en": "The long, fast left-hander at Istanbul Park contains four linked apexes, rather than a single conventional turn. Watching an onboard shows how sustained lateral force makes choosing the first line matter throughout the sequence.",
+        "uk": "Довгий швидкий лівий поворот İstanbul Park має чотири пов'язані апекси, а не одну звичну дугу. На онборді видно, як тривале бокове навантаження робить траєкторію першого апексу важливою для всієї секції.",
+        "source": "https://ticketing.formula1.com/tickets/en/turkiye/general-admission-f1-istanbul-park-waitlist"
       }
     ]
   },
@@ -956,6 +956,12 @@
         "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
         "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml"
+      },
+      {
+        "label": "The wet opening corner · 1985",
+        "en": "In his maiden-winning 1985 Grand Prix, Ayrton Senna reached the first corner ahead of the spray after starting from pole. Watch the start as an example of why track position is especially valuable when visibility is poor.",
+        "uk": "У своїй першій переможній гонці 1985 року Айртон Сенна стартував із поулу й увійшов у перший поворот попереду водяної завіси. Це допомагає зрозуміти цінність лідерства за поганої видимості.",
+        "source": "https://www.formula1.com/en/latest/article/he-obliterated-the-opposition-remembering-sennas-first-f1-win.1nwtFllIepudRwA7iesUaj"
       }
     ]
   },
@@ -1227,6 +1233,12 @@
         "label": "How to explore this historic venue",
         "en": "Start with the cited race or championship record, then compare the year-specific circuit layout and related driver profiles. A race classification can verify results, but cannot by itself establish corner-name origins or detailed racing conditions.",
         "uk": "Почни з наведеного протоколу гонки, а потім порівняй конфігурацію відповідного року та профілі пілотів. Класифікація підтверджує результати, але сама по собі не доводить походження назв поворотів чи докладні умови перегонів.",
+        "source": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo"
+      },
+      {
+        "label": "Adelaide Hairpin",
+        "en": "Magny-Cours has a tight hairpin named Adelaide after a different Grand Prix venue. To a newcomer, it is a reminder that corner names can reference racing places beyond the host country; the name alone does not prove an exact historical design connection.",
+        "uk": "У Маньї-Кур є тісна шпилька Adelaide, названа на честь іншого місця проведення Гран-прі. Назви поворотів можуть відсилати до трас за межами країни, але сама назва не доводить точного запозичення геометрії.",
         "source": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo"
       }
     ]
