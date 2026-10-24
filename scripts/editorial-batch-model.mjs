@@ -85,6 +85,16 @@ export function inspectResearchCard(card, expectedId) {
       errors.push('invalid_claim_evidence:' + claim?.claim_id);
       continue;
     }
+    // A repeated citation is not an additional piece of evidence. Fail closed
+    // instead of allowing a copied locator to inflate source coverage.
+    const evidenceKeys = evidence.map(item => [
+      item.source_url,
+      item.locator.trim().replace(/\\s+/g, ' ').toLowerCase()
+    ].join('::'));
+    if (new Set(evidenceKeys).size !== evidenceKeys.length) {
+      errors.push('duplicate_claim_evidence:' + claim.claim_id);
+      continue;
+    }
     completeEvidenceClaims++;
     const groups = new Set(evidence.map(item => sourceRegistry.get(item.source_url).independence_group));
     if (groups.size >= 2) corroboratedClaims++;
