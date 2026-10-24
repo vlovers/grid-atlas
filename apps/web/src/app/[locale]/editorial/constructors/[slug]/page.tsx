@@ -24,7 +24,7 @@ function enabled() {
 
 function section(text: string, subject: string): string | null {
   const lines = text.split(/\r?\n/);
-  const start = lines.findIndex(line => new RegExp('^#{2,3} ' + subject.replace(/[.*+?^$\\{\\}()|[\\]\\\\]/g, '\\$&') + '(?: —.*)?$').test(line));
+  const start = lines.findIndex(line => line === `## ${subject}` || line === `### ${subject}` || line.startsWith(`## ${subject} —`) || line.startsWith(`### ${subject} —`));
   if (start < 0) return null;
   const headingLevel = lines[start].match(/^#+/)?.[0].length ?? 2;
   const end = lines.findIndex((line, i) => i > start && /^#{2,3} /.test(line) &&
