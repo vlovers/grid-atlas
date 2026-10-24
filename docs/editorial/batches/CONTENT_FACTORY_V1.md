@@ -145,3 +145,19 @@ A second source-inspected research pass added **9 independent-publisher evidence
 The declared independent-publisher coverage is now **58/96** paired claims, with **38/96** still requiring a second publisher. This measures metadata-linked passages, **not** independent semantic fact checks, verified translations, or human approval. Run `node scripts/editorial-review-packet.mjs` to export an unsigned EN/UK worksheet with all claims, publisher groups, locators, and pending review status. Use `--driver=jack-brabham` to scope a review. The worksheet never writes sidecars or publishes content.
 
 The previous PR head 091a2d3 completed **all seven GitHub Actions workflows successfully** (Foundation, editorial preflight, F1DB integration, real-archive acceptance, Historical API, Next.js web, unified archive). New commits require their own green CI before merge. All 25 new cards remain unpublished.
+
+
+### Chapter-scoped human review (research only)
+
+The worklist can now produce a **chapter-specific** review packet. Use the chapter ID from
+`docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json`:
+
+```bash
+node scripts/editorial-human-review-worklist.mjs --driver=jack-brabham --format=json
+node scripts/editorial-human-review-worklist.mjs --driver=jack-brabham --chapter=<chapter-id> --format=markdown
+```
+
+The chapter filter requires a driver, rejects unknown chapter IDs and includes only claims
+linked to that chapter. It does **not** mark source passages, translations, or chapters as
+verified; all review tasks remain pending. The summary counts in the header describe the
+full batch, while the `shown` field in JSON and Markdown indicates the filtered selection.
