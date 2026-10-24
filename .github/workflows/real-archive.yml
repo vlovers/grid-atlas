@@ -21,6 +21,17 @@ on:
       - 'tests/test_bulk_driver_cohort.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/editorial-circuit-crosswalk.py'
+      - 'tests/test_editorial_circuit_crosswalk.py'
+      - 'scripts/prepare_circuit_editorial_candidate.py'
+      - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'scripts/render_circuit_editorial_preview.py'
+      - 'scripts/audit_circuit_claim_worklist.py'
+      - 'tests/test_audit_circuit_claim_worklist.py'
+      - 'docs/editorial/batches/circuits-5-claim-review-worklist-20261025.json'
+      - 'tests/test_render_circuit_editorial_preview.py'
+      - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
+      - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -43,6 +54,17 @@ on:
       - 'scripts/audit-encyclopedia.py'
       - 'scripts/select-real-archive-stress.py'
       - 'scripts/verify-media-identities.py'
+      - 'scripts/editorial-circuit-crosswalk.py'
+      - 'tests/test_editorial_circuit_crosswalk.py'
+      - 'scripts/prepare_circuit_editorial_candidate.py'
+      - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'scripts/render_circuit_editorial_preview.py'
+      - 'scripts/audit_circuit_claim_worklist.py'
+      - 'tests/test_audit_circuit_claim_worklist.py'
+      - 'docs/editorial/batches/circuits-5-claim-review-worklist-20261025.json'
+      - 'tests/test_render_circuit_editorial_preview.py'
+      - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
+      - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
       - 'tests/test_audit_cross_era_identities.py'
       - 'docs/media/cross-era-staging.json'
@@ -84,6 +106,38 @@ jobs:
           mkdir -p /tmp/grid-atlas-f1db
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
           curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+      - name: Audit five editorial circuit event-layout mappings
+        run: |
+          python3 -m unittest discover -s tests -p 'test_editorial_circuit_crosswalk.py' -v
+          python3 scripts/editorial-circuit-crosswalk.py \
+            --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \
+            --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
+            --output /tmp/grid-atlas-editorial-circuit-crosswalk.json
+      - name: Upload five-circuit crosswalk evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-editorial-circuit-crosswalk
+          path: /tmp/grid-atlas-editorial-circuit-crosswalk.json
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Validate bilingual circuit editorial research candidates
+        run: |
+          python3 -m unittest discover -s tests -p 'test_prepare_circuit_editorial_candidate.py' -v
+          python3 -m unittest discover -s tests -p 'test_render_circuit_editorial_preview.py' -v
+          python3 -m unittest discover -s tests -p 'test_audit_circuit_claim_worklist.py' -v
+          python3 scripts/audit_circuit_claim_worklist.py
+          python3 scripts/prepare_circuit_editorial_candidate.py --output /tmp/grid-atlas-circuit-editorial-drafts.json
+          python3 scripts/render_circuit_editorial_preview.py --output /tmp/grid-atlas-circuit-editorial-preview.html
+      - name: Upload unpublished circuit editorial candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpublished-circuit-editorial-candidates
+          path: |
+            /tmp/grid-atlas-circuit-editorial-drafts.json
+            /tmp/grid-atlas-circuit-editorial-preview.html
+          retention-days: 14
+          if-no-files-found: error
       - name: Verify media subject and historical circuit-layout references
         run: python3 scripts/verify-media-identities.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt
       - name: Audit cross-era media identities against exact F1DB source rows
