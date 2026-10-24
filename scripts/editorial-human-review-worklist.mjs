@@ -116,18 +116,22 @@ const direct=process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.me
 if(direct){
   try{
     const options=process.argv.slice(2);
-    if(options.some(x=>!/^--(driver|limit|format)=/.test(x)))throw Error('Unknown option');
+    if(options.some(x=>!/^--(driver|chapter|limit|format)=/.test(x)))throw Error('Unknown option');
     const get=name=>options.find(x=>x.startsWith('--'+name+'='))?.split('=').slice(1).join('=');
-    const driver=get('driver'),limitRaw=get('limit'),format=get('format')??'json';
+    const driver=get('driver'),chapter=get('chapter'),limitRaw=get('limit'),format=get('format')??'json';
+    if(chapter&&!driver)throw Error('Chapter filter requires --driver');
     if(!['json','markdown'].includes(format))throw Error('Invalid format');
     const limit=limitRaw===undefined?undefined:Number(limitRaw);
     if(limitRaw!==undefined&&(!Number.isInteger(limit)||limit<1||limit>1000))throw Error('Invalid limit');
     const report=buildReviewWorklist(readReport('editorial-provenance-audit.mjs'),
       readReport('editorial-review-packet.mjs'));
     if(driver&&!report.items.some(x=>x.driver_id===driver))throw Error('Unknown research driver: '+driver);
-    const filtered=driver?report.items.filter(x=>x.driver_id===driver):report.items;
+    const byDriver=driver?report.items.filter(x=>x.driver_id===driver):report.items;
+    if(chapter&&!byDriver.some(x=>x.linked_chapters.some(c=>c.chapter_id===chapter)))
+      throw Error('Unknown chapter for research driver: '+chapter);
+    const filtered=chapter?byDriver.filter(x=>x.linked_chapters.some(c=>c.chapter_id===chapter)):byDriver;
     const items=limit===undefined?filtered:filtered.slice(0,limit);
     process.stdout.write(format==='markdown'?renderMarkdown(report,items):
-      JSON.stringify({...report,driver_filter:driver??null,shown:items.length,items},null,2)+'\n');
+      JSON.stringify({...report,driver_filter:driver??null,chapter_filter:chapter??null,shown:items.length,items},null,2)+'\n');
   }catch(error){console.error(error.message);process.exitCode=1;}
 }
