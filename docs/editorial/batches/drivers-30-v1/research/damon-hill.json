@@ -30,6 +30,11 @@
           "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
           "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 1996 Damon Hill, Williams.",
           "supports": true
+        },
+        {
+          "source_url": "https://global.honda/en/F1/driver/DamonHill/",
+          "locator": "Career highlights table, 1996 row: Williams Renault champion; narrative explains the final Japanese Grand Prix title decision.",
+          "supports": true
         }
       ]
     },
@@ -49,6 +54,11 @@
           "source_url": "https://www.autosport.com/general/news/autosport-awards-gregor-grant-award-damon-hill-4453016/4453016/",
           "locator": "Career retrospective paragraph beginning 'Hill made his F1 debut with Brabham in 1992': directly states the debut year and constructor.",
           "supports": true
+        },
+        {
+          "source_url": "https://global.honda/en/F1/driver/DamonHill/",
+          "locator": "Career highlights table, 1992 row: Brabham Judd; opening profile says F1 debut at age 31.",
+          "supports": true
         }
       ]
     },
@@ -67,6 +77,11 @@
         {
           "source_url": "https://gpracingstats.com/drivers/damon-hill/wins/",
           "locator": "Wins by constructor table: Jordan — 1 win; Wins by Grand Prix table: Belgium 1998.",
+          "supports": true
+        },
+        {
+          "source_url": "https://global.honda/en/F1/driver/DamonHill/",
+          "locator": "Opening profile and '1998' narrative: Jordan with Mugen Honda power and the team's first F1 victory at the Belgian Grand Prix.",
           "supports": true
         }
       ]
@@ -145,6 +160,13 @@
       "title": "Throwback Thursday: the 1994 Adelaide Grand Prix",
       "publisher": "National Motor Museum (South Australia)",
       "independence_group": "national-motor-museum-sa",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://global.honda/en/F1/driver/DamonHill/",
+      "title": "Damon Hill — Honda Formula 1 driver history",
+      "publisher": "Honda",
+      "independence_group": "honda",
       "accessed_on": "2026-10-24"
     }
   ]
