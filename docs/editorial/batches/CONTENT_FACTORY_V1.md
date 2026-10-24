@@ -33,6 +33,23 @@ python3 scripts/editorial_batch_identity.py \
 
 The normal coverage command **must** fail on missing files, malformed bilingual cards, duplicate claims, or publication-gate violations. The `--require-evidence` option now requires all claims to have structurally valid, declared source locators; it does **not** verify live page semantics. The separate `--require-corroboration` option requires two independent publisher groups per claim and is **expected to fail** until that research is complete. Passing either structural gate is not editorial approval.
 
+## Source-to-claim-to-chapter provenance audit (2026-10-24)
+
+Run `pnpm audit:editorial:provenance` for a compact read-only report, or
+`node scripts/editorial-provenance-audit.mjs` for the full JSON graph. The
+audit reconciles the 30-driver manifest (five existing pilots and 25 unpublished
+research cards), source identities across cards, all 96 claim IDs, and their
+links into 66 EN/UK narrative chapters. It reports which chapters still depend
+on single-publisher claims, sources reused across profiles, and claims not yet
+used in a narrative. Publisher identity conflicts, missing research cards,
+invalid locale targets, and orphaned chapter references fail the audit.
+
+This graph does **not** fetch or verify source passages, approve translations,
+or replace the separate human EN/UK editorial review. Its `human_approved`
+and `published` counters are always zero; the output cannot feed the public
+publication pipeline. The source graph is a research queue, not a verified
+bibliography.
+
 ## Evidence tiers
 
 1. **Candidate:** ID is provisional until checked against pinned F1DB. A source URL alone is not identity proof.
