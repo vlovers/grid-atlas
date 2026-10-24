@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "niki-lauda",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+    "title": "Niki Lauda — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson or Formula 1 editorial (verify exact byline)",
+    "locator": "1975, 1977, 1979 and 1984 career passages; 1976 Nürburgring and Italian GP passages",
+    "accessed_on": "2026-10-24",
+    "independence_group": "formula1",
+    "verification_note": "Public source discovered during research; exact claims require independent human passage review."
+  },
+  "claims": [
+    {
+      "claim_id": "niki-lauda-career-milestone",
+      "topic": "career",
+      "en": "Lauda's Ferrari period produced the 1975 and 1977 world titles. After leaving Formula 1 in 1979, he returned with McLaren and won the 1984 championship.",
+      "uk": "Період Лауди у Ferrari приніс чемпіонські титули 1975 та 1977 років. Після відходу з Формули-1 у 1979 році він повернувся з McLaren і здобув титул 1984 року.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "niki-lauda-context",
+      "topic": "historical_context",
+      "en": "His 1976 Nürburgring crash and return at the Italian Grand Prix form a central chapter of his career.",
+      "uk": "Аварія на Нюрбургринзі 1976 року та повернення на Гран-прі Італії стали визначальним розділом його кар’єри.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Verify exact pinned F1DB identity and historical metrics.",
+    "Seek independent corroboration outside the Formula 1 publisher group.",
+    "Assign accountable human author and independent reviewer; do not publish automatically."
+  ]
+}
