@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jackie-stewart.18715uErEG7LS83UDkeqP4",
           "locator": "Hall of Fame title heading '1969, 1971, 1973'; opening career paragraphs on three championships.",
           "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1969, 1971 and 1973 rows name Sir Jackie Stewart.",
+          "supports": true
         }
       ]
     },
@@ -134,5 +139,14 @@
     "Verify exact pinned F1DB identity and historical metrics.",
     "Seek independent corroboration outside the Formula 1 publisher group.",
     "Assign accountable human author and independent reviewer; do not publish automatically."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }

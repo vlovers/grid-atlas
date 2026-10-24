@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
           "locator": "Hall of Fame heading '1992' above Nigel Mansell profile; 1992 championship career section.",
           "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1992 row names Nigel Mansell.",
+          "supports": true
         }
       ]
     },
@@ -50,5 +55,14 @@
     "Validate provisional slug against pinned F1DB.",
     "Add independent source and precise locator for every claim.",
     "Obtain separate human review for both locales before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
