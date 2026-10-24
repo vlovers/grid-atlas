@@ -2,6 +2,7 @@ import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { CircuitArchiveBrief } from '@/components/editorial/circuit-archive-brief';
 import { CircuitHistoryStories } from '@/components/editorial/circuit-history-stories';
 import { CircuitExtraStories } from '@/components/editorial/circuit-extra-stories';
+import { CircuitNewcomerGuide } from '@/components/editorial/circuit-newcomer-guide';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
 import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -93,6 +94,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       actions={<><a href="#circuit-layouts">{a.identity} ↓</a><a href="#circuit-history">{a.history} ↓</a></>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitNewcomerGuide locale={locale === 'en' ? 'en' : 'uk'} circuitName={circuit.name} history={chronologicalHistory} layoutCount={layouts.length} />
     <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitExtraStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitArchiveBrief externalId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} raceRecords={circuit.races} firstSeason={circuit.first_season} lastSeason={circuit.last_season} layoutCount={layouts.length} />
