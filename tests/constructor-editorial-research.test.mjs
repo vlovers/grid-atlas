@@ -26,7 +26,6 @@ test('constructor research batch has twelve distinct, blocked bilingual draft id
       assert.equal(subject.source_record_sha256, null);
       assert.equal(subject.identity_status, 'pending_pinned_archive_preflight');
     }
-    const escaped = subject.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const header = initial.has(subject.name) ? `## ${subject.name}` : `### ${subject.name}`;
     assert.ok(drafts.includes(header), `Missing draft section: ${subject.name}`);
     // All original draft sections require visible EN and UK text.
