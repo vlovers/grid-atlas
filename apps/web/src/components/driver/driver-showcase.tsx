@@ -1,3 +1,4 @@
+import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
@@ -60,6 +61,12 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       statistics={[{ label: t.races, value: format(career?.summary.races) }, { label: t.wins, value: format(career?.summary.winning_races) },
         { label: t.podiums, value: format(career?.summary.podium_result_entries) }, { label: t.period, value: format(driver.seasons) }]} scope={t.scope} />
     <SourceAttribution locale={locale} />
+    <ArchiveHighlights locale={locale} title={locale === 'uk' ? 'Кар’єра в ключових моментах' : 'Career in key moments'} description={locale === 'uk' ? 'Події та результати з історичного архіву. Це не редакційна біографія.' : 'Events and results from the historical archive, not an approved editorial biography.'} items={[
+      ...(career?.milestones.first_appearance ? [{ id: 'debut', eyebrow: locale === 'uk' ? 'ДЕБЮТ' : 'DEBUT', title: career.milestones.first_appearance.race.name, detail: String(career.milestones.first_appearance.race.year), href: `/${locale}/races/${career.milestones.first_appearance.race.id}` }] : []),
+      ...(career?.milestones.first_win ? [{ id: 'first-win', eyebrow: locale === 'uk' ? 'ПЕРША ПЕРЕМОГА' : 'FIRST WIN', title: career.milestones.first_win.race.name, detail: String(career.milestones.first_win.race.year), href: `/${locale}/races/${career.milestones.first_win.race.id}` }] : []),
+      ...(career?.milestones.last_win ? [{ id: 'last-win', eyebrow: locale === 'uk' ? 'ОСТАННЯ ПЕРЕМОГА' : 'LAST WIN', title: career.milestones.last_win.race.name, detail: String(career.milestones.last_win.race.year), href: `/${locale}/races/${career.milestones.last_win.race.id}` }] : []),
+      ...(career?.milestones.last_appearance ? [{ id: 'last-race', eyebrow: locale === 'uk' ? 'ОСТАННЯ УЧАСТЬ' : 'LAST APPEARANCE', title: career.milestones.last_appearance.race.name, detail: String(career.milestones.last_appearance.race.year), href: `/${locale}/races/${career.milestones.last_appearance.race.id}` }] : [])
+    ]} />
     <EditorialTabs label={t.chapters} items={[[t.biography, 'driver-biography'], [t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'], [e.classifications, 'driver-classifications'], [t.statistics, 'driver-archive']].map(([label, id]) => ({ label, id }))} />
 
 
