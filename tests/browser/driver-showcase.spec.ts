@@ -7,7 +7,7 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(profile.getByRole('heading', { level: 1 })).toHaveText('driver-a');
     await expect(profile.locator('#driver-moments > ol > li')).toHaveCount(1);
     await expect(profile.locator('#driver-moments')).toContainText(locale === 'uk' ? 'Спільний автомобіль' : 'Shared car');
-    await expect(profile.locator('#driver-moments h3 a')).toHaveAttribute('href', `/${locale}/races/1`);
+    await expect(profile.locator('#driver-moments h3 a')).toHaveAttribute('href', `/${locale}/races/1?from=%2Fdrivers%2F1`);
     await expect(profile.locator('a[href*="/time-machine?"]')).toHaveCount(0);
     await expect(profile.locator('details[open]')).toHaveCount(0);
     await expect(profile.getByText(locale === 'uk' ? 'Біографія очікує на публікацію' : 'Biography awaiting publication', { exact: true })).toBeVisible();
