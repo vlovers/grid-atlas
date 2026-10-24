@@ -84,7 +84,7 @@ test('verification notes cannot be mistaken for independent editorial approval',
 
 test('F1DB identity audit report records all twelve subjects without approving publication', () => {
   const report = readFileSync(join(base, 'F1DB_IDENTITY_AUDIT.md'), 'utf8');
-  const rows = report.split('\n').filter((line) => line.startsWith('| ') && line.includes(''`''));
+  const rows = report.split('\n').filter((line) => line.startsWith('| ') && line.includes(String.fromCharCode(96)));
   assert.equal(rows.length, 12);
   for (const subject of manifest.subjects) {
     const row = rows.find((line) => line.startsWith('| ' + subject.name + ' |'));
