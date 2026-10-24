@@ -1,5 +1,6 @@
 import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { CircuitArchiveBrief } from '@/components/editorial/circuit-archive-brief';
+import { CircuitHistoryStories } from '@/components/editorial/circuit-history-stories';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
 import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -91,6 +92,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       actions={<><a href="#circuit-layouts">{a.identity} ↓</a><a href="#circuit-history">{a.history} ↓</a></>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitArchiveBrief externalId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} raceRecords={circuit.races} firstSeason={circuit.first_season} lastSeason={circuit.last_season} layoutCount={layouts.length} />
     <ArchiveHighlights locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Траса крізь епохи' : 'The circuit across eras'} description={locale === 'uk' ? 'Перший і останній зафіксовані етапи та провідні переможці. Історичні конфігурації могли змінюватися.' : 'Earliest and latest recorded events and leading winners. Historical layouts may differ.'} items={[
       ...(chronologicalHistory[0] ? [{ id: 'first', eyebrow: locale === 'uk' ? 'ПЕРШИЙ ЕТАП В АРХІВІ' : 'FIRST ARCHIVED EVENT', title: chronologicalHistory[0].race_name, detail: String(chronologicalHistory[0].season_year), href: `/${locale}/races/${chronologicalHistory[0].race_id}` }] : []),
