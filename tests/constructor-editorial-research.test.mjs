@@ -81,3 +81,22 @@ test('verification notes cannot be mistaken for independent editorial approval',
     assert.match(verification, new RegExp('\\| ' + claim + ' \\|'));
   }
 });
+
+test('F1DB identity audit report records all twelve subjects without approving publication', () => {
+  const report = readFileSync(join(base, 'F1DB_IDENTITY_AUDIT.md'), 'utf8');
+  const rows = report.split('\n').filter((line) => line.startsWith('| ') && line.includes(''`''));
+  assert.equal(rows.length, 12);
+  for (const subject of manifest.subjects) {
+    const row = rows.find((line) => line.startsWith('| ' + subject.name + ' |'));
+    assert.ok(row, 'Missing source identity: ' + subject.name);
+    const cells = row.split('|').map((item) => item.trim());
+    assert.match(cells[2], /^[\x60][a-z0-9-]+[\x60]$/);
+    assert.match(cells[3], /^[\x60][a-f0-9]{64}[\x60]$/);
+    assert.equal(subject.publication, 'blocked');
+    if (subject.f1db_external_id !== null) {
+      assert.equal(cells[2], String.fromCharCode(96) + subject.f1db_external_id + String.fromCharCode(96));
+      assert.equal(cells[3], String.fromCharCode(96) + subject.source_record_sha256 + String.fromCharCode(96));
+    }
+  }
+  assert.match(report, /No new manifest identities have been approved or pinned/);
+});
