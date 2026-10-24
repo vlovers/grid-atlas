@@ -9,3 +9,5 @@
 .moment a { font-size: .85rem; }
 .explore { margin-top: 2rem; }
 @media(max-width: 500px) { .moment { grid-template-columns: 1fr; gap: .7rem; } }
+
+.review { font-size: .78rem; line-height: 1.5; max-width: 70ch; color: var(--muted); margin: .7rem 0 1.4rem; }
