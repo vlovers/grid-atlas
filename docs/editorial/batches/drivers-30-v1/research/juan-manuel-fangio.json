@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "See precise paragraph or heading locator on each claim.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; primary publisher evidence only, independent corroboration and human review outstanding."
   },
   "claims": [
     {
@@ -19,21 +19,42 @@
       "topic": "career_chronology",
       "en": "Fangio won five Drivers' World Championships: 1951 and 1954–1957.",
       "uk": "Фанхіо здобув п’ять титулів чемпіона світу серед пілотів: у 1951 та 1954–1957 роках.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv",
+          "locator": "Hall of Fame heading '1951, 1954-57'; opening paragraph on five world championships.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "juan-manuel-fangio-teams",
       "topic": "career_chronology",
       "en": "He won titles with Alfa Romeo, Mercedes, Ferrari and Maserati.",
       "uk": "Він здобував титули з Alfa Romeo, Mercedes, Ferrari та Maserati.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv",
+          "locator": "Paragraph beginning 'Stirling Moss is quick to point out': Alfa Romeo, Mercedes, Ferrari and Maserati title teams.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "juan-manuel-fangio-1957",
       "topic": "career_chronology",
       "en": "His final Grand Prix victory came at the 1957 German Grand Prix at the Nürburgring.",
       "uk": "Його остання перемога на Гран-прі відбулася на Нюрбургринзі у 1957 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-juan-manuel-fangio.6SSng3B5E6j6pxPNbyqQIv",
+          "locator": "Final career paragraph beginning 'Even on those occasions': 1957 German GP Nürburgring victory.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
