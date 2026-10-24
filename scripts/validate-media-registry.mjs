@@ -4,6 +4,7 @@ import { join, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { parseMediaRegistry } from '../apps/web/src/components/media/registry.ts';
+import { inspectPublishedRaster } from './inspect-public-raster.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const json = path => JSON.parse(readFileSync(path, 'utf8'));
@@ -47,12 +48,7 @@ export function validateLocalFile(asset, publicRoot) {
   const bytes = readFileSync(path);
   if (createHash('sha256').update(bytes).digest('hex') !== asset.content_sha256) throw new Error(`${asset.id}: local file checksum mismatch`);
   if (asset.image.mime === 'image/svg+xml') assertSimpleSvg(bytes.toString('utf8'));
-  else {
-    const mime = bytes.subarray(0, 3).equals(Buffer.from([0xff, 0xd8, 0xff])) ? 'image/jpeg'
-      : bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])) ? 'image/png'
-      : bytes.subarray(0, 4).toString() === 'RIFF' && bytes.subarray(8, 12).toString() === 'WEBP' ? 'image/webp' : null;
-    if (mime !== asset.image.mime) throw new Error(`${asset.id}: bytes do not match declared image MIME`);
-  }
+  else inspectPublishedRaster(bytes, asset.image);
 }
 
 export function auditPublicMedia(assets, publicRoot) {
