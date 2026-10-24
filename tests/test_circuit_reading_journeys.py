@@ -43,7 +43,7 @@ class CircuitReadingJourneysTests(unittest.TestCase):
 
     def test_corner_guides_are_bilingual_and_provenanced(self):
         guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
-        self.assertEqual({g["id"] for g in guides}, {"silverstone","monza","spa-francorchamps","suzuka","monaco","hungaroring","zandvoort","montreal","interlagos","bahrain","baku","austin","imola","jeddah","mexico-city","yas-marina","marina-bay","catalunya","spielberg","shanghai","istanbul","mugello","portimao","nurburgring","hockenheimring"})
+        self.assertEqual({g["id"] for g in guides}, {"silverstone","monza","spa-francorchamps","suzuka","monaco","hungaroring","zandvoort","montreal","interlagos","bahrain","baku","austin","imola","jeddah","mexico-city","yas-marina","marina-bay","catalunya","spielberg","shanghai","istanbul","mugello","portimao","nurburgring","hockenheimring","aida","reims","rouen","buddh","porto","jerez","dallas","sirius","lusail","yeongam","bugatti","mosport","sebring","detroit","zeltweg","phoenix","pescara","montjuic","valencia","anderstorp"})
         for guide in guides:
             self.assertGreaterEqual(len(guide["sections"]), 2)
             for corner in guide["sections"]:
