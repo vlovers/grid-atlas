@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "giuseppe-farina",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nino-farina.42vZMEuSei8avz76yMDHpf",
+    "title": "Giuseppe Farina — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+  },
+  "claims": [
+    {
+      "claim_id": "giuseppe-farina-title",
+      "topic": "career_chronology",
+      "en": "Farina became the first Formula 1 Drivers' World Champion in 1950 with Alfa Romeo.",
+      "uk": "Фаріна став першим чемпіоном світу Формули-1 серед пілотів у 1950 році з Alfa Romeo.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "giuseppe-farina-first-race",
+      "topic": "career_chronology",
+      "en": "He won the first World Championship Grand Prix at Silverstone in 1950.",
+      "uk": "Він виграв перший заліковий Гран-прі чемпіонату світу на Сільверстоуні у 1950 році.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ]
+}
