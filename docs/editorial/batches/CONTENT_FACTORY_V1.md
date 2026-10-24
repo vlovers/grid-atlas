@@ -7,6 +7,7 @@
 - `drivers-30-v1.json`: exactly 30 provisional identities (5 existing pilots, 25 additional candidates).
 - `research/*.json`: 25 unpublished paired-language research cards. Each claim has stable ID, EN/UK statement and `needs_review` status.
 - `championship-reference.json`: championship-year lookup, **not** an independently verified identity mapping or permission to publish.
+- `scripts/editorial_batch_identity.py`: fail-closed pinned-F1DB external-ID reconciliation for all 30 drivers, reusing the existing checksum-verifying `read_drivers` importer. CI uploads a machine-readable **unpublished** identity report. Archive ID existence does not mean a human verified the person or the historical claims.
 - `scripts/editorial-batch-model.mjs`: pure structural and claim-evidence validation.
 - `scripts/editorial-content-coverage.mjs`: authoritative offline coverage inventory including both canonical pilots **and** all 25 research cards.
 - `scripts/editorial-research-batch-audit.mjs` and `scripts/editorial-evidence-readiness.mjs`: additional diagnostic reports; neither replaces publication review.
@@ -23,6 +24,11 @@ node scripts/editorial-content-coverage.mjs --require-corroboration > /tmp/grid-
 node scripts/editorial-narrative-audit.mjs > /tmp/grid-atlas-narratives.json
 node scripts/editorial-corroboration-queue.mjs > /tmp/grid-atlas-corroboration-queue.json
 node --test tests/editorial-content-factory.test.mjs tests/editorial-narrative.test.mjs
+python3 -m unittest discover -s tests -p test_editorial_batch_identity.py -v
+python3 scripts/editorial_batch_identity.py \
+  --archive /tmp/f1db/f1db-json-splitted.zip \
+  --checksums /tmp/f1db/checksums_sha256.txt \
+  --output /tmp/content-factory-30-identity.json
 ```
 
 The normal coverage command **must** fail on missing files, malformed bilingual cards, duplicate claims, or publication-gate violations. The `--require-evidence` option now requires all claims to have structurally valid, declared source locators; it does **not** verify live page semantics. The separate `--require-corroboration` option requires two independent publisher groups per claim and is **expected to fail** until that research is complete. Passing either structural gate is not editorial approval.
@@ -55,6 +61,12 @@ The evidence schema used by the research cards is:
 
 This is an *intermediate* card format, not a competing canonical dossier schema. The `supports` field means the research author linked a passage; it is **not** a reviewer sign-off.
 
+## Pinned archive identity gate (2026-10-24)
+
+The F1DB import workflow now checks **all 30** candidate external driver IDs against the checksum-verified `v2026.17.0` split JSON archive and compares the five pilot IDs against the canonical release manifest. It fails on missing or duplicate IDs, invalid EN/UK locale targets, or publication-state violations. The artifact records each archive display name and source-record digest for later human reconciliation, but always reports `human_identity_review: pending` and zero editorial approvals. Local synthetic unit tests cover seven failure/success paths; real archive matching must be confirmed by the new CI run, not inferred from the test fixtures.
+
+The batch manifest now uses `research_draft` for the 25 additional profiles instead of the stale `candidate_unresearched` status; no public status changes or approval are implied.
+
 ## Current evidence audit notes (2026-10-24)
 
 All **25 additional research cards** have now had their source passages inspected and claim-level locators recorded. There are **96 paired EN/UK research claims**, each with at least one declared Formula 1 source passage. Two transition claims (Räikkönen joining McLaren for 2002 and Button for 2010) use additional official Formula 1 articles with explicit dates rather than relying on inference from the original Hall of Fame page.
@@ -79,4 +91,4 @@ Related: issue #107, `docs/editorial/APPROVED_RELEASE_PIPELINE.md` and `docs/edi
 
 ## CI accessibility blocker (2026-10-24)
 
-The latest completed Next.js web run before this batch had **503 passes and one failure** in `tests/browser/unified-archive.spec.ts`: Ukrainian `/constructors` at a 320px viewport with forced colors and 200% root text size overflowed the viewport by 184px. The catalogue stylesheet had explicitly disabled emergency word wrapping for long Ukrainian headings. The PR now allows emergency wrapping on narrow screens and the Playwright assertion reports overflowing elements to aid diagnosis. **Do not treat the fix as confirmed until the new Next.js web workflow completes successfully.**
+A prior Next.js web run had **503 passes and one failure** in `tests/browser/unified-archive.spec.ts`: Ukrainian `/constructors` at a 320px viewport with forced colors and 200% root text size overflowed the viewport by 184px. The catalogue stylesheet had explicitly disabled emergency word wrapping for long Ukrainian headings. The PR now allows emergency wrapping on narrow screens and the Playwright assertion reports overflowing elements to aid diagnosis. The Next.js web workflow on commit `0a3b7d1` completed successfully on 2026-10-24 at 05:22 UTC, as did the other six PR workflows. New commits must pass their own checks.
