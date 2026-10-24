@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "driver_id": "kimi-raikkonen",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+    "title": "Kimi Räikkönen — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "independence_group": "formula1",
+    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+  },
+  "claims": [
+    {
+      "claim_id": "kimi-raikkonen-debut",
+      "topic": "career_chronology",
+      "en": "Räikkönen debuted in Formula 1 with Sauber in 2001.",
+      "uk": "Ряйкконен дебютував у Формулі-1 з Sauber у 2001 році.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "kimi-raikkonen-mclaren",
+      "topic": "career_chronology",
+      "en": "Räikkönen moved from Sauber to McLaren for the 2002 season.",
+      "uk": "Ряйкконен перейшов із Sauber до McLaren на сезон 2002 року.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "kimi-raikkonen-title",
+      "topic": "career_chronology",
+      "en": "Räikkönen won the 2007 Formula 1 Drivers' World Championship with Ferrari.",
+      "uk": "Ряйкконен виграв чемпіонат світу Формули-1 серед пілотів 2007 року з Ferrari.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "kimi-raikkonen-2018-us",
+      "topic": "career_chronology",
+      "en": "Räikkönen won the 2018 United States Grand Prix for Ferrari.",
+      "uk": "Ряйкконен переміг на Гран-прі США 2018 року за Ferrari.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ]
+}
