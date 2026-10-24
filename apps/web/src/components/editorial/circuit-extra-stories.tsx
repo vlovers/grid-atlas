@@ -7,6 +7,7 @@ export function CircuitExtraStories({circuitId, locale}:{circuitId:string;locale
   if(!item)return null;
   return <section className={styles.story} data-testid="circuit-extra-story" aria-labelledby="circuit-extra-story-title">
     <p className={styles.kicker}>{locale==='uk'?'Історія траси':'Circuit history'}</p>
+    <p className={styles.review}>{locale==='uk'?'Перевірено за допомогою ШІ · Незалежна редакторська перевірка ще не завершена':'AI-reviewed · Independent editorial verification pending'}</p>
     <h2 id="circuit-extra-story-title">{item.title[locale]}</h2>
     <p className={styles.introduction}>{item.description[locale]}</p>
     <p className={styles.explore}><strong>{item.year}</strong> · <a href={item.source} target="_blank" rel="noopener noreferrer">{locale==='uk'?'Джерело: Formula 1':'Source: Formula 1'} ↗</a></p>
