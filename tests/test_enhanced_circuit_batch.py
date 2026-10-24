@@ -73,5 +73,33 @@ class EnhancedCircuitBatchTests(unittest.TestCase):
             self.assertTrue(url.path.endswith("/race-results.yml"))
             self.assertTrue(item["year"] in url.path)
 
+
+    def test_all_78_f1db_circuits_have_an_editorial_entry(self):
+        second=json.loads((ROOT/"apps/web/src/components/editorial/circuit-next20-stories.json").read_text(encoding="utf8"))
+        final=json.loads((ROOT/"apps/web/src/components/editorial/circuit-final33-stories.json").read_text(encoding="utf8"))
+        old=json.loads(DATA.read_text(encoding="utf8"))
+        ids=[x["id"] for x in old+second+final]
+        self.assertEqual(len(ids),73)
+        self.assertEqual(len(set(ids)),73)
+        self.assertFalse(FIVE.intersection(ids))
+        self.assertEqual(len(set(ids) | FIVE),78)
+        expected_33={"aida","reims","rouen","buddh","porto","jerez","dallas","sirius","lusail",
+                     "yeongam","bugatti","mosport","madring","sebring","detroit","zeltweg",
+                     "mugello","phoenix","pescara","montjuic","monsanto","valencia","portimao",
+                     "nivelles","pedralbes","riverside","anderstorp","bremgarten","east-london",
+                     "jacarepagua","mont-tremblant","caesars-palace","clermont-ferrand"}
+        self.assertEqual({x["id"] for x in final},expected_33)
+        for item in second+final:
+            for locale in ("en","uk"):
+                self.assertGreater(len(item["description"][locale].strip()),90)
+                self.assertTrue(item["title"][locale].strip())
+            self.assertTrue(item["year"].isdigit())
+            url=urlsplit(item["source"])
+            self.assertEqual(url.scheme,"https")
+            self.assertEqual(url.hostname,"github.com")
+            self.assertTrue(url.path.startswith("/f1db/f1db/blob/v2026.17.0/src/data/seasons/"))
+            self.assertIn(item["year"],url.path)
+            self.assertTrue(url.path.endswith("/race-results.yml"))
+
 if __name__=="__main__":
     unittest.main()
