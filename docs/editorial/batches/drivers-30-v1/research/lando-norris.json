@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
   },
   "claims": [
     {
@@ -19,21 +19,42 @@
       "topic": "career_chronology",
       "en": "Norris entered Formula 1 with McLaren in 2019.",
       "uk": "Норріс дебютував у Формулі-1 з McLaren у 2019 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame 'McLaren Driver' section: first season in 2019 with Carlos Sainz.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "lando-norris-first-win",
       "topic": "career_chronology",
       "en": "Norris took his first Formula 1 Grand Prix win at Miami in 2024.",
       "uk": "Норріс здобув свою першу перемогу у Формулі-1 на Гран-прі Маямі у 2024 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame 'McLaren Driver' section: third at 2024 Australian GP and first victory at Miami.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "lando-norris-title",
       "topic": "career_chronology",
       "en": "Norris won the 2025 Formula 1 Drivers' World Championship with McLaren.",
       "uk": "Норріс виграв чемпіонат світу Формули-1 серед пілотів 2025 року з McLaren.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame heading '2025' and 'Champion' section: Abu Dhabi finale and 2025 world title.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
