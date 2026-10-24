@@ -1,4 +1,3 @@
-import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const load = (path) => JSON.parse(readFileSync(path, 'utf8'));
@@ -15,6 +14,10 @@ checks(original.lane === 'research_only' && original.publication_allowed === fal
 checks(observed.lane === 'research_only' && observed.publication_allowed === false, 'SHA-256 observations must remain research-only');
 checks(staged.lane === 'research_only' && staged.publication_allowed === false, 'Staging must remain research-only');
 checks(pub.lane === 'publication', 'Unexpected public registry lane');
+checks(Array.isArray(pub.assets) && pub.assets.length === 0, 'Research-only batch must not silently publish photos');
+checks(Number.isInteger(original.schema_version) && original.schema_version === 1, 'Unexpected original evidence schema');
+checks(Number.isInteger(observed.schema_version) && observed.schema_version === 1, 'Unexpected observation schema');
+checks(Number.isInteger(staged.schema_version) && staged.schema_version === 1, 'Unexpected staging schema');
 checks(staged.entries.length === 5, 'Expected exactly five staged originals');
 checks(source.size === original.entries.length && source.size === 5, 'Missing or duplicate source evidence');
 checks(observations.size === observed.entries.length, 'Duplicate SHA-256 observation');
@@ -25,6 +28,15 @@ for (const entry of staged.entries) {
   checks(entry.file_page_url === evidence.file_page_url, 'File-page conflict for ' + entry.id);
   checks(entry.creator === evidence.source_author, 'Creator conflict for ' + entry.id);
   checks(entry.license.identifier === evidence.source_license, 'License claim drift for ' + entry.id);
+  checks(Number.isInteger(evidence.description_oldid) && evidence.description_oldid > 0,
+    'Missing immutable Commons description revision for ' + entry.id);
+  checks(Number.isInteger(evidence.width) && evidence.width > 0 &&
+    Number.isInteger(evidence.height) && evidence.height > 0,
+    'Missing original pixel dimensions for ' + entry.id);
+  checks(typeof evidence.source_author === 'string' && evidence.source_author.length > 0,
+    'Missing source author for ' + entry.id);
+  checks(/^CC-BY(?:-SA)?-[0-9]+\\.[0-9]+$/.test(evidence.source_license),
+    'Unexpected claimed license for ' + entry.id);
   checks(/^[a-f0-9]{40}$/.test(evidence.sha1), 'Invalid source SHA-1 for ' + entry.id);
   checks(Number.isInteger(evidence.bytes) && evidence.bytes > 0, 'Invalid original size for ' + entry.id);
   const observation = observations.get(entry.id);
