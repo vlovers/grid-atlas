@@ -12,9 +12,10 @@ const newlyLinked={
   'emerson-fittipaldi':['emerson-fittipaldi-first','emerson-fittipaldi-1970-first-win','emerson-fittipaldi-1970-debut'],
   'jack-brabham':['jack-brabham-own-car','jack-brabham-cooper'],
   'damon-hill':['damon-hill-jordan','damon-hill-1996-eight-wins','damon-hill-brabham','damon-hill-1994-runner-up'],
-  'lando-norris':['lando-norris-debut']
+  'lando-norris':['lando-norris-debut'],
+  'alberto-ascari':['alberto-ascari-titles','alberto-ascari-monza','alberto-ascari-1955-monaco','alberto-ascari-1952-run']
 };
-test('thirteen researched claims link two declared publisher groups without editorial approval',()=>{
+test('seventeen researched claims link two declared publisher groups without editorial approval',()=>{
   let total=0;
   for(const [id,claimIds] of Object.entries(newlyLinked)){
     const card=load(id),audit=inspectResearchCard(card,id);
@@ -33,15 +34,15 @@ test('thirteen researched claims link two declared publisher groups without edit
       total++;
     }
   }
-  assert.equal(total,13);
+  assert.equal(total,17);
 });
 test('review worksheet covers all claims and cannot invent approval',()=>{
   const result=spawnSync(process.execPath,['scripts/editorial-review-packet.mjs'],{encoding:'utf8'});
   assert.equal(result.status,0,result.stderr);
   const report=JSON.parse(result.stdout);
   assert.equal(report.totals.claims,96);
-  assert.equal(report.totals.with_independent_publisher_links,62);
-  assert.equal(report.totals.awaiting_second_publisher,34);
+  assert.equal(report.totals.with_independent_publisher_links,65);
+  assert.equal(report.totals.awaiting_second_publisher,31);
   assert.equal(report.totals.human_approved,0);
   assert.equal(report.totals.published,0);
   assert.ok(report.claims.every(c=>c.human_fact_review==='pending' && c.en_editorial_review==='pending' && c.uk_editorial_review==='pending'));
