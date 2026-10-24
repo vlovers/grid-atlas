@@ -89,7 +89,7 @@ export function inspectResearchCard(card, expectedId) {
     // instead of allowing a copied locator to inflate source coverage.
     const evidenceKeys = evidence.map(item => [
       item.source_url,
-      item.locator.trim().replace(/\\s+/g, ' ').toLowerCase()
+      item.locator.trim().replace(/\s+/g, ' ').toLowerCase()
     ].join('::'));
     if (new Set(evidenceKeys).size !== evidenceKeys.length) {
       errors.push('duplicate_claim_evidence:' + claim.claim_id);
