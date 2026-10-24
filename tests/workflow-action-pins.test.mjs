@@ -55,3 +55,40 @@ test('accepts local actions and immutable Docker digests, rejects Docker tags', 
 test('all repository workflows comply with action pin and checkout policy', () => {
   assert.ok(assertWorkflowActionsPinned() >= 10);
 });
+
+
+test('rejects empty uses keys instead of silently skipping them', () => {
+  assert.match(auditWorkflowText('steps:\n  - uses:\n')[0], /immutable SHA/);
+  assert.match(auditWorkflowText('steps:\n  - uses: # unset\n')[0], /immutable SHA/);
+});
+
+test('rejects dynamic local action references', () => {
+  const yaml = 'steps:\n  - uses: ./.github/actions/${{ inputs.action }}\n';
+  assert.match(auditWorkflowText(yaml)[0], /static in-repository/);
+});
+
+test('rejects local action traversal and empty path segments', () => {
+  for (const reference of ['./../outside', './tools/../outside', './tools//action', './tools/./action']) {
+    assert.match(auditWorkflowText('steps:\n  - uses: ' + reference + '\n')[0], /static in-repository/, reference);
+  }
+});
+
+test('accepts valid static local action paths including dot-prefixed folders', () => {
+  assert.deepEqual(auditWorkflowText('steps:\n  - uses: ./.github/actions/safe\n'), []);
+});
+
+test('rejects external action traversal and malformed repository paths', () => {
+  const sha = 'a'.repeat(40);
+  for (const reference of ['owner/../tool@' + sha, 'owner//tool@' + sha, 'owner/./tool@' + sha]) {
+    assert.match(auditWorkflowText('steps:\n  - uses: ' + reference + '\n')[0], /immutable SHA/, reference);
+  }
+});
+
+test('accepts a nested third-party action path pinned to full SHA', () => {
+  assert.deepEqual(auditWorkflowText('steps:\n  - uses: owner/repo/path@' + 'a'.repeat(40) + '\n'), []);
+});
+
+test('rejects expression-driven third-party references', () => {
+  const yaml = 'steps:\n  - uses: owner/repo@${{ inputs.revision }}\n';
+  assert.match(auditWorkflowText(yaml)[0], /immutable SHA/);
+});
