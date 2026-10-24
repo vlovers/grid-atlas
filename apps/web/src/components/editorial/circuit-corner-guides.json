@@ -1116,16 +1116,16 @@
     "id": "donington",
     "sections": [
       {
-        "label": "The wet opening lap that defined a venue",
-        "en": "Ayrton Senna won Donington's 1993 European Grand Prix. His wet opening lap is why new fans should look for race footage rather than only the final result.",
-        "uk": "Айртон Сенна переміг на Гран-прі Європи 1993 року в Донінгтоні. Його дощове перше коло варто побачити на відео, а не обмежуватися протоколом.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1993/races/03-europe/race-results.yml"
+        "label": "Craner Curves · 1993 European Grand Prix",
+        "en": "Senna's famous opening lap included an outside move through the daunting Craner Curves. For a new fan, this is a place to watch how a confident line can create an overtake before the next braking zone.",
+        "uk": "На знаменитому першому колі 1993 року Сенна здійснив обгін зовнішнім радіусом на складних Craner Curves. Це чудовий приклад того, як точна траєкторія допомагає атакувати ще до наступної зони гальмування.",
+        "source": "https://www.formula1.com/en/latest/article/10-moments-of-ayrton-senna-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1993/races/03-europe/race-results.yml"
+        "label": "Final hairpin · 1993 European Grand Prix",
+        "en": "The same lap saw Senna pass Alain Prost at Donington's final hairpin. Instead of reading a simple finishing order, follow the changing positions through the first lap to understand why the drive is remembered.",
+        "uk": "На тому ж колі Сенна обігнав Алена Проста у фінальній шпильці Донінгтона. Замість лише фінішної таблиці простеж, як змінювалися позиції на першому колі, — це пояснює славу того виступу.",
+        "source": "https://www.formula1.com/en/latest/article/10-moments-of-ayrton-senna-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0"
       }
     ]
   },
@@ -1201,16 +1201,16 @@
     "id": "paul-ricard",
     "sections": [
       {
-        "label": "A French circuit across different eras",
-        "en": "Paul Ricard's Formula 1 history stretches across distinct calendar periods. The event's winner and the layout used in that year must be established separately from the circuit's modern appearance.",
-        "uk": "Історія Формули-1 на Поль-Рікарі охоплює різні періоди. Переможця й конфігурацію певного року треба визначати окремо, а не за сучасним виглядом автодрому.",
+        "label": "Signes · Turn 10",
+        "en": "At the end of the Mistral straight, Signes is a very fast right-hander. The approach rewards aerodynamic confidence; the corner was a defining feature of both older and more recent Paul Ricard racing.",
+        "uk": "Наприкінці прямої Mistral розташований надшвидкий правий віраж Signes. Тут важлива впевненість в аеродинамічному зчепленні; поворот залишався впізнаваною частиною старих і новіших конфігурацій Поль-Рікара.",
         "source": "https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt"
       },
       {
-        "label": "How to explore this historic venue",
-        "en": "Start with the cited race or championship record, then compare the year-specific circuit layout and related driver profiles. A race classification can verify results, but cannot by itself establish corner-name origins or detailed racing conditions.",
-        "uk": "Почни з наведеного протоколу гонки, а потім порівняй конфігурацію відповідного року та профілі пілотів. Класифікація підтверджує результати, але сама по собі не доводить походження назв поворотів чи докладні умови перегонів.",
-        "source": "https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt"
+        "label": "Double Droit du Beausset · Turn 11",
+        "en": "After Signes comes a long double right-hander that heavily loads the tyres while the driver slows and turns. Unlike a simple ninety-degree bend, this is a sustained test of balance and tyre management.",
+        "uk": "Після Signes починається довга подвійна права дуга, яка сильно навантажує шини під час гальмування й повороту. На відміну від звичайного прямокутного віражу, це тривала перевірка балансу та роботи з гумою.",
+        "source": "https://www.formula1.com/en/latest/article/trackside-performance-analysis-a-closer-look-at-frances-demanding-turn-11.32PkfJXo3utfiKcUGaFhOo.32PkfJXo3utfiKcUGaFhOo"
       }
     ]
   },
@@ -1252,16 +1252,22 @@
     "id": "brands-hatch",
     "sections": [
       {
-        "label": "An English circuit shaped by elevation",
-        "en": "Nigel Mansell won the 1986 British Grand Prix at Brands Hatch. Its rolling terrain makes an engaging contrast with flatter venues, but historic corner names must still be tied to a dated layout.",
-        "uk": "Найджел Менселл виграв Гран-прі Великої Британії 1986 року на Брендс-Гетч. Рельєф цієї траси відрізняє її від рівніших автодромів, але назви поворотів слід пов'язувати з конкретною історичною схемою.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml"
+        "label": "Paddock Hill Bend",
+        "en": "The opening downhill right-hander plunges away from the pit straight. Watch the cars compress at the bottom before climbing toward Druids: a small entry mistake can become a large exit problem.",
+        "uk": "Перший правий поворот різко спускається зі стартової прямої. Зверни увагу, як боліди стискає на дні схилу перед підйомом до Druids: невелика помилка на вході може дорого коштувати на виході.",
+        "source": "https://www.brandshatch.co.uk/grandstands"
       },
       {
-        "label": "How to explore this historic venue",
-        "en": "Start with the cited race or championship record, then compare the year-specific circuit layout and related driver profiles. A race classification can verify results, but cannot by itself establish corner-name origins or detailed racing conditions.",
-        "uk": "Почни з наведеного протоколу гонки, а потім порівняй конфігурацію відповідного року та профілі пілотів. Класифікація підтверджує результати, але сама по собі не доводить походження назв поворотів чи докладні умови перегонів.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml"
+        "label": "Druids Hairpin",
+        "en": "The hairpin at the top of the hill is one of the clearest braking and overtaking points. It is a useful beginner's landmark: watch whether an attacking driver can still make a clean exit.",
+        "uk": "Шпилька на вершині пагорба — одна з найзрозуміліших зон гальмування й обгонів. Новачкам варто дивитися не лише на атаку, а й на те, чи вдається пілоту чисто вийти з повороту.",
+        "source": "https://www.brandshatch.co.uk/grandstands"
+      },
+      {
+        "label": "Surtees / Hawthorn Bend · Grand Prix layout",
+        "en": "On the longer Grand Prix circuit, the route leaves the short Indy loop after Surtees and heads into the wooded section containing Hawthorn Bend. These landmarks are mapped by the circuit operator; they should not be retroactively assigned to every historic configuration.",
+        "uk": "На довшій конфігурації Grand Prix після Surtees траса виходить за межі короткого Indy-кільця до лісової секції з Hawthorn Bend. Ці назви є на схемі оператора, але їх не можна автоматично переносити на всі історичні версії.",
+        "source": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf"
       }
     ]
   },
