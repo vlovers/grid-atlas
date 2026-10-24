@@ -92,3 +92,20 @@ test('rejects expression-driven third-party references', () => {
   const yaml = 'steps:\n  - uses: owner/repo@${{ inputs.revision }}\n';
   assert.match(auditWorkflowText(yaml)[0], /immutable SHA/);
 });
+
+
+test('rejects dynamic or ambiguous Docker image references', () => {
+  const digest = 'b'.repeat(64);
+  for (const reference of [
+    'docker://${{inputs.image}}@sha256:' + digest,
+    'docker://alpine@sha256:' + digest + '@sha256:' + digest,
+    'docker://alpine:latest',
+  ]) {
+    assert.match(auditWorkflowText('steps:\n  - uses: ' + reference + '\n')[0], /immutable SHA/, reference);
+  }
+});
+
+test('accepts static registry and port with an immutable Docker digest', () => {
+  const yaml = 'steps:\n  - uses: docker://registry.example.org:5000/team/image:1.0@sha256:' + 'a'.repeat(64) + '\n';
+  assert.deepEqual(auditWorkflowText(yaml), []);
+});
