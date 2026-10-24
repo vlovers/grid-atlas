@@ -61,7 +61,14 @@
       "topic": "career_chronology",
       "en": "Button joined McLaren for the 2010 Formula 1 season.",
       "uk": "Баттон приєднався до McLaren у сезоні Формули-1 2010 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/8-of-mclarens-strongest-driver-pairings-that-norris-and-piastri-follow-in.25WfAsmEQ2atFYFJ4NUK3R",
+          "locator": "Section 'Lewis Hamilton and Jenson Button': Button joined Hamilton at McLaren in 2010 after his Brawn GP title.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
@@ -71,5 +78,14 @@
     "Reconcile identity with pinned F1DB.",
     "Record precise per-claim source locators and independent corroboration.",
     "Human review of both languages and exact revision required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.formula1.com/en/latest/article/8-of-mclarens-strongest-driver-pairings-that-norris-and-piastri-follow-in.25WfAsmEQ2atFYFJ4NUK3R",
+      "title": "8 of McLaren's strongest driver pairings from their 1000 Grands Prix",
+      "publisher": "Formula 1",
+      "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
