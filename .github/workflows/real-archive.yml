@@ -25,6 +25,7 @@ on:
       - 'tests/test_editorial_circuit_crosswalk.py'
       - 'scripts/prepare_circuit_editorial_candidate.py'
       - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'scripts/render_circuit_editorial_preview.py'
       - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
       - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
@@ -53,6 +54,7 @@ on:
       - 'tests/test_editorial_circuit_crosswalk.py'
       - 'scripts/prepare_circuit_editorial_candidate.py'
       - 'tests/test_prepare_circuit_editorial_candidate.py'
+      - 'scripts/render_circuit_editorial_preview.py'
       - 'docs/editorial/batches/circuits-5-reader-introductions-20261025.md'
       - 'docs/editorial/batches/circuits-5-verified-f1db-mappings-20261024.md'
       - 'scripts/audit-cross-era-identities.py'
@@ -115,11 +117,14 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_prepare_circuit_editorial_candidate.py' -v
           python3 scripts/prepare_circuit_editorial_candidate.py --output /tmp/grid-atlas-circuit-editorial-drafts.json
+          python3 scripts/render_circuit_editorial_preview.py --output /tmp/grid-atlas-circuit-editorial-preview.html
       - name: Upload unpublished circuit editorial candidate
         uses: actions/upload-artifact@v4
         with:
           name: unpublished-circuit-editorial-candidates
-          path: /tmp/grid-atlas-circuit-editorial-drafts.json
+          path: |
+            /tmp/grid-atlas-circuit-editorial-drafts.json
+            /tmp/grid-atlas-circuit-editorial-preview.html
           retention-days: 14
           if-no-files-found: error
       - name: Verify media subject and historical circuit-layout references
