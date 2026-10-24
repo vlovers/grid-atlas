@@ -100,3 +100,19 @@ test('F1DB identity audit report records all twelve subjects without approving p
   }
   assert.match(report, /No new manifest identities have been approved or pinned/);
 });
+
+test('six additional competitive-era dossiers retain English, Ukrainian and explicit review gates', () => {
+  const expansion = readFileSync(join(base, 'COMPETITIVE_ERAS_EXPANSION.md'), 'utf8');
+  const names = ['Benetton', 'Renault', 'Mercedes', 'Red Bull Racing', 'Minardi', 'Jordan'];
+  const sections = expansion.split(/(?=^## (?:Benetton|Renault|Mercedes|Red Bull Racing|Minardi|Jordan) —)/m);
+  for (const name of names) {
+    const section = sections.find((item) => item.startsWith('## ' + name + ' —'));
+    assert.ok(section, 'Missing competitive era: ' + name);
+    assert.match(section, /^### English/m);
+    assert.match(section, /^### Українська/m);
+    assert.match(section, /https:\/\/www\.formula1\.com/);
+  }
+  assert.match(expansion, /unpublished/);
+  assert.match(expansion, /independent editorial approval/);
+  assert.equal(manifest.publication_status, 'research_only');
+});
