@@ -41,6 +41,48 @@
           "supports": true
         }
       ]
+    },
+    {
+      "claim_id": "mario-andretti-1968-pole",
+      "topic": "career_chronology",
+      "en": "Andretti qualified on pole position for his first Formula 1 Grand Prix at Watkins Glen in 1968.",
+      "uk": "Андретті здобув поул-позицію на своєму першому Гран-прі Формули-1 у Воткінс-Глені в 1968 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'At Indianapolis in 1965': pole on Formula 1 debut at 1968 US Grand Prix.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-1976-japan",
+      "topic": "career_chronology",
+      "en": "Andretti won the 1976 Japanese Grand Prix for Lotus.",
+      "uk": "Андретті виграв Гран-прі Японії 1976 року за Lotus.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'The relationship between Andretti and Lotus boss Chapman': victory at Fuji in 1976.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-1982-return",
+      "topic": "career_chronology",
+      "en": "In a guest appearance for Ferrari at Monza in 1982, Andretti qualified on pole and finished third.",
+      "uk": "Під час разового виступу за Ferrari в Монці 1982 року Андретті здобув поул і фінішував третім.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Final paragraph beginning 'Thereafter, Chapman lost his way': 1982 Ferrari Monza pole and third place.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
