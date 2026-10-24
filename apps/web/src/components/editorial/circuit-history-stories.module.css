@@ -1,0 +1,11 @@
+.story { border-top: 1px solid var(--line); padding-block: clamp(2rem, 5vw, 4rem); }
+.kicker { color: var(--accent-ink); text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; }
+.introduction { font-size: clamp(1rem, 1.5vw, 1.2rem); max-width: 66ch; }
+.timeline { display: grid; gap: 0; margin-block: 2rem; }
+.moment { display: grid; grid-template-columns: minmax(4rem, 7rem) minmax(0, 1fr); gap: 1.5rem; border-top: 1px solid var(--line); padding-block: 1.5rem; }
+.year { font: 500 clamp(1.5rem, 3vw, 2.5rem)/1 var(--font-display); color: var(--accent-ink); }
+.moment h3 { margin: 0 0 .6rem; }
+.moment p { margin: .3rem 0 1rem; }
+.moment a { font-size: .85rem; }
+.explore { margin-top: 2rem; }
+@media(max-width: 500px) { .moment { grid-template-columns: 1fr; gap: .7rem; } }
