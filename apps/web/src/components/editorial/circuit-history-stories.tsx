@@ -6,12 +6,12 @@ type LocaleStory = { en: Story; uk: Story };
 const history: Record<string, LocaleStory> = {
   monaco: {
     en: { title: 'A city transformed into a racetrack', introduction: 'The Monaco Grand Prix began in 1929, long before the Formula 1 World Championship. Its narrow streets reward precision and punish small mistakes.', moments: [
-      { year: '1929', title: 'Racing arrives in Monte Carlo', description: 'Antony Noghès organised Monaco’s first Grand Prix, establishing a street-racing tradition older than the World Championship.', url: 'https://www.formula1.com/en/racing/2026/monaco' },
-      { year: '2003', title: 'Not a single overtake', description: 'Formula 1 records no passing moves at the 2003 Grand Prix — a striking example of how difficult overtaking can be on these streets.', url: 'https://www.formula1.com/en/racing/2026/monaco' }
+      { year: '1929', title: 'Racing arrives in Monte Carlo', description: 'Antony Noghès organised Monaco’s first Grand Prix, establishing a street-racing tradition older than the World Championship.', url: 'https://www.formula1.com/en/racing/2023/monaco' },
+      { year: '2003', title: 'Not a single overtake', description: 'Formula 1 records no passing moves at the 2003 Grand Prix — a striking example of how difficult overtaking can be on these streets.', url: 'https://www.formula1.com/en/racing/2023/monaco' }
     ]},
     uk: { title: 'Місто, яке стає гоночною трасою', introduction: 'Історія Гран-прі Монако почалася в 1929 році — задовго до чемпіонату світу Формули-1. Вузькі вулиці винагороджують точність і майже не пробачають помилок.', moments: [
-      { year: '1929', title: 'Гонки приходять до Монте-Карло', description: 'Антоні Ноге організував перший Гран-прі Монако, започаткувавши традицію вуличних перегонів, старшу за чемпіонат світу.', url: 'https://www.formula1.com/en/racing/2026/monaco' },
-      { year: '2003', title: 'Жодного обгону', description: 'За даними Формули-1, на Гран-прі 2003 року не було жодного обгону. Це яскравий приклад того, наскільки важко випереджати суперників на цих вулицях.', url: 'https://www.formula1.com/en/racing/2026/monaco' }
+      { year: '1929', title: 'Гонки приходять до Монте-Карло', description: 'Антоні Ноге організував перший Гран-прі Монако, започаткувавши традицію вуличних перегонів, старшу за чемпіонат світу.', url: 'https://www.formula1.com/en/racing/2023/monaco' },
+      { year: '2003', title: 'Жодного обгону', description: 'За даними Формули-1, на Гран-прі 2003 року не було жодного обгону. Це яскравий приклад того, наскільки важко випереджати суперників на цих вулицях.', url: 'https://www.formula1.com/en/racing/2023/monaco' }
     ]}
   },
   monza: {
@@ -61,6 +61,7 @@ export function CircuitHistoryStories({ circuitId, locale }: { circuitId: string
   if (!entry) return null;
   return <section className={styles.story} data-testid="circuit-historical-stories" aria-labelledby="circuit-stories-heading">
     <p className={styles.kicker}>{locale === 'uk' ? 'Історії траси' : 'Circuit stories'}</p>
+    <p className={styles.review}>{locale === 'uk' ? 'Перевірено за допомогою ШІ · Незалежна редакторська перевірка ще не завершена' : 'AI-reviewed · Independent editorial verification pending'}</p>
     <h2 id="circuit-stories-heading">{entry.title}</h2>
     <p className={styles.introduction}>{entry.introduction}</p>
     <div className={styles.timeline}>{entry.moments.map(moment => <article className={styles.moment} key={moment.year}>
