@@ -11,3 +11,68 @@
 .collection .empty p { font-size: .8rem; color: var(--muted,#a9adb0); max-width: 70ch; line-height: 1.8; margin: 0; }
 .source { display: inline-flex; align-items: center; min-height: 44px; font-size: .7rem; text-decoration: underline; text-underline-offset: .4rem; }
 @media(max-width:700px) { .empty { grid-template-columns: minmax(0,1fr); gap: 1rem; } }
+
+/* Editorial illustration of an unavailable archive, not an archival photograph. */
+.empty {
+  position: relative;
+  isolation: isolate;
+  min-height: 12rem;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  border: 1px solid var(--line, #34383b);
+  background: repeating-linear-gradient(145deg,
+    transparent 0, transparent 28px,
+    color-mix(in srgb, var(--muted, #a9adb0) 5%, transparent) 29px,
+    transparent 30px),
+    linear-gradient(110deg, var(--surface, #141719), transparent);
+}
+.empty::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .7;
+  background: radial-gradient(circle at 95% 0%,
+    color-mix(in srgb, var(--accent-ink, #ed8278) 13%, transparent),
+    transparent 46%);
+  pointer-events: none;
+}
+.empty > span {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  letter-spacing: -.15em;
+  color: var(--accent-ink, #ed8278);
+}
+@media (forced-colors: active) {
+  .empty { background: Canvas; border-color: CanvasText; }
+  .empty::before { display: none; }
+  .empty > span { color: CanvasText; }
+}
+
+/* Approved images, when present, form a compact editorial contact sheet. */
+.gallery {
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+.gallery > :first-child {
+  grid-column: auto;
+}
+@media (min-width: 960px) {
+  .gallery:has(> :nth-child(3)) > :first-child {
+    grid-column: span 2;
+  }
+}
+.gallery > * {
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .gallery > *:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px color-mix(in srgb, var(--ink, #fff) 8%, transparent);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery > * { transition: none; }
+}
+@media (forced-colors: active) {
+  .gallery > * { transition: none; }
+}
