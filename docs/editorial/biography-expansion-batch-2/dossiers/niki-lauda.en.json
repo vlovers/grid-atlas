@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "driver_id": "niki-lauda",
+  "locale": "en",
+  "title": "Niki Lauda — three titles, two racing careers",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "lauda-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+      "title": "Niki Lauda — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "lauda-mercedes",
+      "source_url": "https://www.mercedesamgf1.com/news/niki-lauda-why-he-was-special",
+      "title": "Niki Lauda: Why He Was Special",
+      "publisher": "Mercedes-AMG Petronas F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mercedes"
+    },
+    {
+      "source_id": "lauda-monza",
+      "source_url": "https://www.formula1.com/en/latest/article/niki-laudas-1976-comeback-at-monza-f1s-best-drives-7.2unsQDzPIUws9wefP9N27Y.2unsQDzPIUws9wefP9N27Y.2unsQDzPIUws9wefP9N27Y",
+      "title": "F1’s Best Drives #7 — Lauda’s barely believable Monza comeback",
+      "publisher": "Formula 1",
+      "author": "David Tremayne",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "lauda-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/niki-lauda/",
+      "title": "Niki Lauda",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "lauda-finale",
+      "source_url": "https://www.mclaren.com/racing/heritage/close-run-things-mclarens-closest-championship-battles/",
+      "title": "Close-run things: McLaren’s closest championship battles",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "lauda-setup",
+      "source_url": "https://www.formula1.com/en/latest/article/how-niki-laudas-final-title-winning-car-the-1984-mclaren-mp4-2-changed-f1.7vGiQXahtUbaKo70ZJ8OGQ",
+      "title": "How Niki Lauda’s final title-winning car, the 1984 McLaren MP4/2, changed F1",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "niki-lauda-b2-early",
+      "topic": "early_career",
+      "statement": "Niki Lauda entered racing against the expectations of his Austrian business family. Starting in a Mini, he progressed through junior single-seaters and financed the climb with loans.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-hall",
+          "locator": "Opening biography: family, Mini, junior formulas and bank-financed March career",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-brm-ferrari",
+      "topic": "teams_seasons",
+      "statement": "His first championship appearance came with March at the 1971 Austrian Grand Prix. BRM followed in 1973, then Ferrari in 1974. The Ferrari move changed his results quickly: he finished second in his first race for the team in Argentina and won in Spain and the Netherlands. The driver who had paid to establish himself was now winning with a leading constructor.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1971 Austria first result; 1973 BRM; 1974 Ferrari Argentina second and Spain/Netherlands wins; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-1975",
+      "topic": "championships",
+      "statement": "Lauda won five races in 1975 and secured his first world championship. Emerson Fittipaldi finished second. The success ended Ferrari’s wait for a drivers’ title since John Surtees in 1964. Wins at Monaco, Zolder and Anderstorp formed the early core of a season in which Lauda turned his first year’s promise into a championship-winning partnership.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1975 five wins and final standings; Ferrari champions 1964/1975; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "lauda-mercedes",
+          "locator": "Ferrari testing and 1975 first title in 11 years",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-monza",
+      "topic": "key_events",
+      "statement": "The 1976 German Grand Prix interrupted his title defence. Lauda survived a fire after crashing at the Nürburgring and suffered serious injuries. He returned at Monza six weeks later and finished fourth.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-monza",
+          "locator": "Forty-two days after Nürburgring fire; return and fourth place at Monza",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1976 Italy fourth-place race result; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-fuji",
+      "topic": "key_events",
+      "statement": "At the rain-soaked Japanese finale Lauda withdrew, judging the conditions too dangerous. Hunt finished third and won the championship by one point. Their contest is often remembered through the accident and comeback, but the ending also involved a deliberate decision about acceptable risk. Lauda returned the following year and won the 1977 title rather than ending his career with that defeat.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-hall",
+          "locator": "1976 Fuji withdrawal due to danger and 1977 title",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1976 final standings Hunt 69/Lauda 68; 1977 champion; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-brabham",
+      "topic": "teams_seasons",
+      "statement": "He left Ferrari after securing that second championship and joined Brabham for 1978. Wins in Sweden and Italy followed, but the new partnership did not produce another title. During the 1979 Canadian Grand Prix weekend he retired from driving. Formula 1 had already given him two championships; for a time his attention moved to the airline business rather than the next race.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-hall",
+          "locator": "Brabham 1978/1979, Canadian retirement and Lauda Air",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1978 Sweden/Italy wins; Brabham seasons; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-1982",
+      "topic": "key_events",
+      "statement": "Lauda returned with McLaren in 1982. He won at Long Beach in only his third championship race back, then added a British Grand Prix victory later in the season. The comeback developed into a sustained second career, with four seasons at McLaren. It was not simply a guest appearance by a former champion revisiting his old profession.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1982 Long Beach third race and Britain win; McLaren seasons 1982–1985; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "lauda-mclaren",
+          "locator": "Career span and comeback account",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-1984",
+      "topic": "championships",
+      "statement": "In 1984 Alain Prost became his team-mate, and the McLaren pair won 12 of the 16 races. Prost won seven, Lauda five, yet Lauda took the championship by 72 points to 71.5. At the Portuguese finale Prost won the race while Lauda finished second, exactly the combination that preserved the Austrian’s narrow advantage.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1984 season wins and championship points; Portugal result; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "lauda-finale",
+          "locator": "1984: Prost vs Lauda — title by half a point",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-setup",
+      "topic": "driving_style",
+      "statement": "A Formula 1 technical account of the MP4/2 explains Lauda’s response to Prost’s qualifying speed: he concentrated practice on the race set-up. The car’s fuel-efficient turbo engine made its Sunday pace particularly effective. This gives the 1984 rivalry a technical as well as a personal setting.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-setup",
+          "locator": "Qualifying boost/fuel efficiency comparison and Lauda focusing practice on race set-up",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-1985",
+      "topic": "key_events",
+      "statement": "His final victory came at Zandvoort in 1985, ahead of Prost. He retired from Formula 1 driving at the end of the season with 25 Grand Prix wins and three titles. They were spread across 1975, 1977 and 1984, an unusually separated sequence that reflects the interruption and reinvention inside his career rather than one continuous period of dominance.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1985 Netherlands final win; totalRaceWins=25 and title years; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "lauda-mclaren",
+          "locator": "Final McLaren season and career totals",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-mercedes",
+      "topic": "teams_seasons",
+      "statement": "Lauda continued in Formula 1 beyond the cockpit, including work with Ferrari and leadership at Jaguar. He became Mercedes’ non-executive chairman in September 2012 and helped bring Lewis Hamilton to the team for 2013.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-mercedes",
+          "locator": "Ferrari consultant, Jaguar principal, September 2012 Mercedes appointment and Hamilton recruitment",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "niki-lauda-b2-legacy",
+      "topic": "significance",
+      "statement": "Lauda died on 20 May 2019. His racing titles were separated by a departure from the sport and a return with another team. His later roles at Ferrari, Jaguar and Mercedes kept him involved in the decisions behind the cars. From driver to adviser and chairman, he remained part of Formula 1 long after his last victory.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lauda-mercedes",
+          "locator": "Death in 2019 and team role",
+          "supports": true
+        },
+        {
+          "source_id": "lauda-setup",
+          "locator": "1984 adaptation to Prost and race preparation",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1984 title after 1979 departure and 1982 return; exact driverId/id=niki-lauda; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Financing the climb",
+      "claim_ids": [
+        "niki-lauda-b2-early",
+        "niki-lauda-b2-brm-ferrari"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Ferrari’s champion",
+      "claim_ids": [
+        "niki-lauda-b2-1975",
+        "niki-lauda-b2-monza"
+      ]
+    },
+    {
+      "section_id": "ferrari-ending",
+      "title": "Fuji and a second Ferrari title",
+      "claim_ids": [
+        "niki-lauda-b2-fuji",
+        "niki-lauda-b2-brabham"
+      ]
+    },
+    {
+      "section_id": "return",
+      "title": "McLaren and a different challenge",
+      "claim_ids": [
+        "niki-lauda-b2-1982",
+        "niki-lauda-b2-1984"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Race preparation against qualifying speed",
+      "claim_ids": [
+        "niki-lauda-b2-setup"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "A last victory, then another role",
+      "claim_ids": [
+        "niki-lauda-b2-1985",
+        "niki-lauda-b2-mercedes",
+        "niki-lauda-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Review medical detail separately; this draft avoids unsupported diagnoses, temperatures and reconstructions of what Lauda felt.",
+    "Use final championship classifications for 1976 and 1984, never unadjusted race-point sums."
+  ],
+  "media": []
+}

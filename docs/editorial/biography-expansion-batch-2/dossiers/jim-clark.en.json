@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "driver_id": "jim-clark",
+  "locale": "en",
+  "title": "Jim Clark — speed on more than one stage",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "clark-early",
+      "source_url": "https://jimclarktrust.com/jim-clark/the-early-years/",
+      "title": "Jim Clark — The Early Years",
+      "publisher": "The Jim Clark Trust",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "jim-clark-trust"
+    },
+    {
+      "source_id": "clark-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
+      "title": "Jim Clark — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "clark-indy-history",
+      "source_url": "https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/02/28/clarks-rear-engine-victory-in-1965-was-evolution-of-revolution-at-indy-2020",
+      "title": "Clark’s Rear-Engine Victory in 1965 Was Evolution of Revolution at Indy",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": "Paul Kelly",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "clark-indy-stats",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/jim-clark",
+      "title": "Jim Clark — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "lotus-49",
+      "source_url": "https://classicteamlotus.co.uk/en/about/team-lotus-register-2/type-49/",
+      "title": "Team Lotus Type 49",
+      "publisher": "Classic Team Lotus",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "classic-team-lotus"
+    },
+    {
+      "source_id": "clark-tragedy",
+      "source_url": "https://jimclarktrust.com/jim-clark/tragedy/",
+      "title": "Jim Clark — Tragedy",
+      "publisher": "The Jim Clark Trust",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "jim-clark-trust"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "jim-clark-b2-farm",
+      "topic": "early_career",
+      "statement": "Jim Clark was born at Kilmany on 4 March 1936 and grew up at Edington Mains in the Scottish Borders. The Jim Clark Trust describes a childhood shaped by farm work and driving farm vehicles. Racing did not replace an established junior-formula career: it developed alongside a life in which farming had originally been the expected occupation.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-early",
+          "locator": "The Early Years: birth, move to Edington Mains, return to farming and driving vehicles",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-lotus-entry",
+      "topic": "early_career",
+      "statement": "His progression through sports cars and Formula Junior brought him into Colin Chapman’s Lotus team in 1960. The partnership became the constant of his Formula 1 career: every championship victory in Clark’s record was taken in a Lotus. Changes in engine and chassis followed, but he did not pursue his titles by moving between rival constructors.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-hall",
+          "locator": "Early racing, Lotus Elite/Formula Junior and promotion to Team Lotus in 1960",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "All championship race wins: constructorId=lotus; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1962",
+      "topic": "key_events",
+      "statement": "Clark’s first championship win came at the 1962 Belgian Grand Prix. Further wins in Britain and the United States made him a title contender, but the championship went to Graham Hill. The distinction between winning races and winning a season is particularly visible here: Clark’s breakthrough year ended with three victories and second place in the final standings.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1962 winning race results and final driver standings; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1963",
+      "topic": "championships",
+      "statement": "In 1963 the balance changed decisively. Clark won seven championship races and took his first world title. His success stretched from Belgium through the closing South African round.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1963: seven race wins, Belgium through South Africa; final positionNumber=1; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1964-65",
+      "topic": "championships",
+      "statement": "John Surtees took the 1964 title; Clark returned to the top in 1965. That second championship included wins in South Africa, Belgium, France, Britain, the Netherlands and Germany. He missed Monaco while competing at Indianapolis.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1964 and 1965 final standings; six 1965 wins; no Monaco 1965 race-result row; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-history",
+          "locator": "1965 Indianapolis campaign and victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-indy",
+      "topic": "key_events",
+      "statement": "At Indianapolis Clark drove the Lotus-Ford to victory after leading 190 of the 200 laps. He had already finished second there in 1963 and would do so again in 1966. The Speedway’s own account places the 1965 result within the wider move toward rear-engined cars, rather than treating Clark’s win as the work of one driver in isolation.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "Race Stats: 1963, 1965 and 1966 rows; 1965 Led=190, Laps=200",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-history",
+          "locator": "Rear-engine transition, Ford, Chapman and Wood Brothers contributions",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-1966",
+      "topic": "teams_seasons",
+      "statement": "The next championship did not repeat that pattern. In 1966 Clark won only the United States Grand Prix while Jack Brabham became champion. His long Lotus partnership therefore contained both commanding seasons and less productive ones.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1966 winning results; Brabham final championship position; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-49",
+      "topic": "key_events",
+      "statement": "The Lotus 49 and Cosworth DFV made their winning championship debut at Zandvoort in 1967 with Clark driving. Classic Team Lotus records the new three-litre engine and the car’s subsequent victories with him. Clark won four championship races that season and opened 1968 with another victory in South Africa, again in the Lotus.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "lotus-49",
+          "locator": "Introduction at Zandvoort in 1967; first Cosworth DFV 3-litre engine and Clark victories",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1967 Dutch GP first-place result; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-graham-team",
+      "topic": "teams_seasons",
+      "statement": "Graham Hill was now Clark’s Lotus team-mate, not simply an opponent from the BRM years. Clark won four championship races in 1967, while Denny Hulme took the title for Brabham.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1967: four wins; Hill constructorId=lotus; Hulme final champion; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-style",
+      "topic": "driving_style",
+      "statement": "Gerald Donaldson’s Formula 1 profile describes Clark compensating for an imperfect car and relying on Chapman to turn his comments into engineering changes. The partnership combined the driver’s feel for the car with the designer’s technical direction. It continued through changing Lotus chassis and engines, from the early Formula 1 years to the DFV-powered car of his final season.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-hall",
+          "locator": "Paragraph after the 1965 championship: Chapman translating feedback and Clark driving around problems",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "Career results across five Indianapolis starts",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-final-win",
+      "topic": "key_events",
+      "statement": "Clark won the opening South African Grand Prix of 1968, taking his world-championship total to 25 victories. It was also his last Formula 1 start.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1968 South Africa result; totalRaceWins=25; 1965 calendar has no Indianapolis race; exact driverId/id=jim-clark; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "clark-indy-stats",
+          "locator": "1965 Indy victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "jim-clark-b2-death",
+      "topic": "death",
+      "statement": "On 7 April 1968 Clark was killed during a Formula 2 race at Hockenheim. He was 32. The Jim Clark Trust notes that there were no witnesses to the accident and describes a deflated rear tyre as the widely accepted explanation. His death ended the Lotus partnership only months after the South African victory.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "clark-tragedy",
+          "locator": "Opening paragraph: date, F2 event, no witnesses; subsequent tyre explanation",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "From the Borders to Lotus",
+      "claim_ids": [
+        "jim-clark-b2-farm",
+        "jim-clark-b2-lotus-entry"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Fast enough for a title, not yet a champion",
+      "claim_ids": [
+        "jim-clark-b2-1962",
+        "jim-clark-b2-1963"
+      ]
+    },
+    {
+      "section_id": "titles",
+      "title": "The breadth of 1965",
+      "claim_ids": [
+        "jim-clark-b2-1964-65",
+        "jim-clark-b2-indy"
+      ]
+    },
+    {
+      "section_id": "rivals",
+      "title": "A stable team amid changing technology",
+      "claim_ids": [
+        "jim-clark-b2-1966",
+        "jim-clark-b2-49",
+        "jim-clark-b2-graham-team"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Adaptation rather than a slogan",
+      "claim_ids": [
+        "jim-clark-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "The career that ended outside Formula 1",
+      "claim_ids": [
+        "jim-clark-b2-final-win",
+        "jim-clark-b2-death"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "Cause of the Hockenheim accident remains an attributed reconstruction, not a conclusive finding established by this batch.",
+    "Do not repeat later Lotus marketing copy placing both drivers on the front row at the 1967 Dutch GP; cross-check qualifying separately."
+  ],
+  "media": []
+}

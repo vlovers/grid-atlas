@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "driver_id": "nigel-mansell",
+  "locale": "en",
+  "title": "Nigel Mansell — the long route to number one",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "mansell-williams",
+      "source_url": "https://www.williamsf1.com/articles/1ca7e503-ce57-4de8-8a81-ef16744af669/atlassian-williams-f1-team-champions-roll-call-meet-the-drivers-who-took-us-to-glory?scrollto=Keke+Rosberg",
+      "title": "Williams Champions Roll Call — Nigel Mansell section",
+      "publisher": "Williams F1 Team",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "williams"
+    },
+    {
+      "source_id": "mansell-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+      "title": "Nigel Mansell — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "mansell-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+      "title": "Nigel Mansell",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "mansell-honda",
+      "source_url": "https://global.honda/en/F1/williams/records/",
+      "title": "The Williams Honda Era: A Record of Success",
+      "publisher": "Honda",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "honda"
+    },
+    {
+      "source_id": "mansell-car",
+      "source_url": "https://www.formula1.com/en/latest/article/the-car-i-loved-and-the-car-i-loathed-with-nigel-mansell.1Z1IMj47wzmWAREsfGEB8k.1Z1IMj47wzmWAREsfGEB8k",
+      "title": "The car I loved and the car I loathed — with Nigel Mansell",
+      "publisher": "Formula 1",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "nigel-mansell-b2-early",
+      "topic": "early_career",
+      "statement": "Nigel Mansell reached Formula 1 through karting and junior single-seaters, then a Lotus test in 1979. The opportunity brought a test-driver role and a championship debut at the 1980 Austrian Grand Prix. He became a full-time Lotus driver the following year.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-williams",
+          "locator": "1992 Nigel Mansell section: junior racing, 1979 test, 1980 debut and 1981 full season",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-hall",
+          "locator": "Karting and junior racing before Lotus",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-first-podium",
+      "topic": "key_events",
+      "statement": "His first podium came in Belgium in 1981. Further podiums followed, but his Lotus years ended without a championship win. In 1985 he moved to Williams and joined Keke Rosberg.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1981 Belgium third place; no Lotus wins; 1985 Williams/Rosberg results; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1985",
+      "topic": "key_events",
+      "statement": "Mansell won the 1985 European Grand Prix at Brands Hatch and followed it with victory in South Africa. These were his first two championship wins, both in a Williams-Honda.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "First wins: 1985 Europe and South Africa; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "First win at Brands Hatch in 1985",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1986",
+      "topic": "championships",
+      "statement": "The 1986 championship ended in Adelaide with Mansell suffering a rear-tyre failure. Alain Prost took the title, with Mansell second and Williams team-mate Nelson Piquet third. Mansell had won five races.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-mclaren",
+          "locator": "1986 Adelaide tyre failure",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-honda",
+          "locator": "1986 Adelaide race row",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1986 five wins and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1987",
+      "topic": "championships",
+      "statement": "In 1987 Mansell won six races to Piquet’s three, yet Piquet became champion and Mansell was again runner-up. Honda’s event records show both the victories and the retirements within that rivalry.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-honda",
+          "locator": "1987 race-by-race Williams results, especially Britain",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1987 win counts and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-ferrari",
+      "topic": "teams_seasons",
+      "statement": "After a difficult 1988 season he moved to Ferrari. Victory on his debut for the team in Brazil in 1989 was followed by another win in Hungary. He spent two seasons there before returning to Williams for 1991. The Ferrari spell added notable victories but no title, while the renewed Williams partnership would bring him back into the central championship contest.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "Ferrari 1989/1990, Brazil/Hungary 1989 wins; Williams 1991; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "Ferrari interlude and 1991 return",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1991",
+      "topic": "championships",
+      "statement": "In 1991 Mansell won five Grands Prix but finished second to Ayrton Senna. His victories in France, Britain, Germany, Italy and Spain showed that the Williams-Renault combination could challenge McLaren over a range of circuits.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1991 five winning rounds and final standings; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-1992",
+      "topic": "championships",
+      "statement": "The 1992 FW14B campaign finally changed the outcome. Mansell won the opening five races, collected nine victories across the season and secured the championship in Hungary. He finished with 108 points against team-mate Riccardo Patrese’s 56.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1992 first five wins, nine season wins, Hungary clinching standings and final points; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-williams",
+          "locator": "FW14B, nine wins and Patrese comparison",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-style",
+      "topic": "driving_style",
+      "statement": "In a later Formula 1 interview Mansell describes how demanding the turbocharged Williams FW11B was to drive. Technical commentary alongside his recollection explains the power and packaging behind it.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-car",
+          "locator": "FW11B recollection and Mark Hughes technical explanation",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-america",
+      "topic": "key_events",
+      "statement": "Rather than defend the title in Formula 1, Mansell moved to Newman/Haas in American IndyCar racing and won the 1993 championship. He then returned for four Formula 1 appearances with Williams in 1994, including the French Grand Prix and the last three rounds. Victory in Australia became his final Grand Prix win, bringing the total to 31.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-hall",
+          "locator": "1993 IndyCar championship",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1994 race appearances France/Europe/Japan/Australia and final win; totalRaceWins=31; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-mclaren",
+      "topic": "teams_seasons",
+      "statement": "His final Formula 1 spell came with McLaren in 1995. Cockpit-fit problems delayed his debut in the MP4/10, and he made only two race starts for the team before the partnership ended. The brief episode differed sharply from his championship year, closing a career that had passed through Lotus, Williams, Ferrari and a return to Williams before reaching McLaren.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-mclaren",
+          "locator": "MP4/10 cockpit, Mark Blundell substitution, Imola and Barcelona",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1995 two McLaren race starts; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-b2-legacy",
+      "topic": "significance",
+      "statement": "The 1992 crown is the centre of Mansell’s Formula 1 record, but the surrounding seasons give it its meaning. There were championship challenges with Honda power, a winning Ferrari debut, a Renault-powered title and a successful move across the Atlantic. His career was a long sequence of rebuilding competitive opportunities, with the championship arriving well after his first race-winning breakthrough.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "mansell-williams",
+          "locator": "Williams career and title chronology",
+          "supports": true
+        },
+        {
+          "source_id": "mansell-hall",
+          "locator": "American championship",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1985 first win; 1992 title; constructor chronology; exact driverId/id=nigel-mansell; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "An apprenticeship at Lotus",
+      "claim_ids": [
+        "nigel-mansell-b2-early",
+        "nigel-mansell-b2-first-podium"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Williams-Honda and the first wins",
+      "claim_ids": [
+        "nigel-mansell-b2-1985",
+        "nigel-mansell-b2-1986"
+      ]
+    },
+    {
+      "section_id": "changes",
+      "title": "Piquet, Ferrari and the return",
+      "claim_ids": [
+        "nigel-mansell-b2-1987",
+        "nigel-mansell-b2-ferrari"
+      ]
+    },
+    {
+      "section_id": "title",
+      "title": "The FW14B season",
+      "claim_ids": [
+        "nigel-mansell-b2-1991",
+        "nigel-mansell-b2-1992"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "The driver’s view of demanding machinery",
+      "claim_ids": [
+        "nigel-mansell-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "America and the final Formula 1 return",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-mclaren",
+        "nigel-mansell-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "McLaren’s heritage page mistakenly places the proposed Prost pairing in 1992; this draft does not repeat that date or infer private motives.",
+    "The Hall of Fame calls the 1994 appearances the final four rounds; the archive shows France and the final three. Preserve that distinction.",
+    "Current Honda profile counters can display zero; use the detailed historical event tables and pinned archive, not dynamic counters."
+  ],
+  "media": []
+}

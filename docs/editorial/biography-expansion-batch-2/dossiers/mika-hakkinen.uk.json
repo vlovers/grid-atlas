@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "driver_id": "mika-hakkinen",
+  "locale": "uk",
+  "title": "Міка Гаккінен — довге становлення в McLaren",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "hakkinen-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mika-hakkinen.7ptiWW1foQkbFQSp2boc9d",
+      "title": "Mika Hakkinen — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "hakkinen-mclaren",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/mika-hakkinen/",
+      "title": "Mika Häkkinen",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "hakkinen-australia",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/mika-hakkinen/mikas-australian-highs-and-lows/",
+      "title": "Mika’s Australian Highs & Lows",
+      "publisher": "McLaren Racing",
+      "author": "Mika Häkkinen",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "hakkinen-spa",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/mclarens-nine-most-legendary-laps/",
+      "title": "McLaren’s nine most legendary laps — lap 41, 2000 Belgian GP",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "hakkinen-spa-independent",
+      "source_url": "https://yle.fi/a/3-8453512",
+      "title": "Kyllönen: Häkkisen Span-ohitus yksi formulahistorian merkittävimmistä tapahtumista",
+      "publisher": "Yle",
+      "author": "Jarno Ranta",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "yle"
+    },
+    {
+      "source_id": "hakkinen-style",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/mika-hakkinen/mika-flying-finn/",
+      "title": "Mika: The Flying Finn",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "hakkinen-dtm",
+      "source_url": "https://www.dtm.com/en/news/f1-stars-in-dtm-cars",
+      "title": "F1 Stars in DTM Cars",
+      "publisher": "DTM",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Series organiser historical profile machine-inspected 24 October 2026; 2005–2007 record, no immutable revision supplied. Human review pending.",
+      "independence_group": "dtm"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "mika-hakkinen-b2-early",
+      "topic": "early_career",
+      "statement": "Міка Гаккінен пройшов від фінського картингу до одномісних автомобілів за підтримки Кеке Росберга, чемпіона світу 1982 року. На цьому шляху були Формула-Ford, Opel Lotus Euroseries та титул британської Формули-3 у 1990-му. До Формули-1 він прийшов із Lotus у 1991 році й провів із командою два сезони перед переходом до McLaren.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-hall",
+          "locator": "Karting/Rosberg and Formula Ford, Opel Lotus, 1990 British F3 progression",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-test-role",
+      "topic": "teams_seasons",
+      "statement": "У 1993 році він погодився на тестову й розробницьку роботу в McLaren, тоді як основними пілотами почали сезон Айртон Сенна та Майкл Андретті. Гаккінен замінив Андретті на трьох останніх етапах — у Португалії, Японії та Австралії. Тестова роль привела до гоночного місця ще до завершення першого року в команді.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-mclaren",
+          "locator": "1993 testing contract and Andretti replacement",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1991/1992 Lotus; 1993 Portugal/Japan/Australia McLaren results; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-portugal",
+      "topic": "key_events",
+      "statement": "На Гран-прі Португалії 1993 року, першому гоночному вікенді за McLaren, Гаккінен випередив Сенну у кваліфікації. У Японії прийшов і подіум. Швидкість була помітна, але до першої перемоги залишалися роки. Ранній період у McLaren проходив через зміни постачальників двигунів і сезони, коли подіум був реалістичнішою метою, ніж чемпіонство.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-hall",
+          "locator": "Portugal out-qualifying Senna after replacing Andretti",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1993 Portugal qualifying positions; Japan third place; engine/constructor results through 1997; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-adelaide",
+      "topic": "key_events",
+      "statement": "Кар’єра Гаккінена ледь не обірвалася під час тренування перед Гран-прі Австралії 1995 року в Аделаїді. Важка аварія потребувала невідкладної допомоги та тривалого відновлення. У пізнішій розповіді для McLaren сам пілот описує приватні тести в Поль-Рікарі, які підтвердили можливість знову їхати конкурентоспроможно. Він повернувся до виступів у сезоні 1996 року.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-australia",
+          "locator": "First-person 1995 accident, recovery and Paul Ricard test narrative",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1996 race-result return; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-first-win",
+      "topic": "key_events",
+      "statement": "Перша перемога в чемпіонаті нарешті прийшла в Хересі на Гран-прі Європи 1997 року; Девід Култгард доповнив дубль McLaren. Гаккінен уже провів із командою п’ять сезонів. Тривале очікування пояснює масштаб наступного кроку: потенціал, помітний у тестах, кваліфікаціях і подіумах, перетворився на стійку переможну кампанію.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1997 Europe first win and Coulthard second; 1993–1997 McLaren association; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "hakkinen-mclaren",
+          "locator": "McLaren career span",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-melbourne",
+      "topic": "key_events",
+      "statement": "Стартовий етап 1998 року в Мельбурні також завершився дублем McLaren, проте шлях до фінішу викликав суперечки. В особистій розповіді Гаккінен згадує передстартову домовленість із Култгардом та подальший обмін позиціями. Епізод показує подвійність їхнього партнерства: Култгард був і швидким суперником на такій самій машині, і колегою, чиї рішення впливали на командний результат.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-australia",
+          "locator": "1998 first-corner agreement and Coulthard yielding the victory",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-1998",
+      "topic": "championships",
+      "statement": "Гаккінен виграв вісім гонок із 16 і став чемпіоном світу, випередивши Міхаеля Шумахера. Перемога в Сузуці завершила кампанію. Саме тоді визначилося головне спортивне протистояння його найуспішніших років: McLaren-Mercedes проти Ferrari, із регулярними зустрічами Гаккінена та Шумахера попереду, а не пізніше зіставлення самих репутацій.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1998 eight wins, Suzuka victory and final standings; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-1999",
+      "topic": "championships",
+      "statement": "У 1999 році він захистив титул, цього разу випередивши Едді Ірвайна на два очки. Шумахер пропустив частину сезону після аварії на Гран-прі Великої Британії, і до японського фіналу за чемпіонство від Ferrari боровся Ірвайн. Гаккінен виграв заключну гонку. Другий титул мав інший перебіг, хоча переможні команда та пілот залишилися тими самими.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1999 final points 76/74 and Japan win; Schumacher missing race rows; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "hakkinen-hall",
+          "locator": "1999 Schumacher broken leg and Irvine title contest",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-spa",
+      "topic": "key_events",
+      "statement": "Боротьба із Шумахером продовжилася у 2000 році. У Спа Гаккінен обійшов його, коли обидва наздогнали колового Рікардо Зонту на BAR, обравши інший бік машини Зонти. Маневр описують McLaren та ретроспектива Yle. Гаккінен виграв гонку, але чемпіонат залишився за Шумахером: знаменитий обгін не приніс Гаккінену чемпіонства того року.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-spa",
+          "locator": "Lap 41, 2000 Belgian GP: Zonta and opposite-side pass",
+          "supports": true
+        },
+        {
+          "source_id": "hakkinen-spa-independent",
+          "locator": "Kemmel straight explanation of Schumacher/Zonta pass",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "2000 Belgium win and final standings; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-style",
+      "topic": "driving_style",
+      "statement": "У технічному портреті McLaren інженер Філ Прю описує бажання Гаккінена мати чутливу передню вісь і стабільність на вході в поворот. Він також згадує здатність пілота пристосовуватися до змін поведінки машини протягом гонки.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-style",
+          "locator": "Phil Prew explanation: front end, entry stability, adaptation and degradation",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-2001",
+      "topic": "key_events",
+      "statement": "У 2001 році Гаккінен додав перемоги у Великій Британії та США. Індіанаполіс став останнім переможним Гран-прі, а Японія — останнім стартом у чемпіонаті Формули-1. Він оголосив перерву, але до Формули-1 вже не повернувся. Підсумок у цій категорії — два титули й 20 перемог, усі за McLaren.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "2001 Britain/US wins, last Japan result; totalRaceWins=20; all winning constructor IDs; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "hakkinen-mclaren",
+          "locator": "End of McLaren career in 2001",
+          "supports": true
+        },
+        {
+          "source_id": "hakkinen-hall",
+          "locator": "Announced sabbatical and no F1 return",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-legacy",
+      "topic": "significance",
+      "statement": "Його кар’єра поєднує тривалу підготовку з порівняно зосередженим періодом перемог. Відновлення після Аделаїди є важливим для цієї історії, але так само важливі роки тестів, робота з Култгардом і чемпіонські змагання проти Ferrari.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-mclaren",
+          "locator": "Testing, team relationship and career span",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "Championship and winning seasons; exact driverId/id=mika-hakkinen; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mika-hakkinen-b2-dtm",
+      "topic": "teams_seasons",
+      "statement": "Вихід із Формули-1 не означав кінця перегонів. У 2005–2007 роках Гаккінен виступав у кузовному чемпіонаті DTM і виграв три гонки. Після тривалої співпраці з McLaren він опановував інший тип автомобіля та інше змагання, продовживши кар’єру за межами результатів на одномісних машинах, із якими його найчастіше пов’язують.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "hakkinen-dtm",
+          "locator": "Mika Hakkinen (FIN): 2005–2007, 31 starts, three wins",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Від картингу до британських формул",
+      "claim_ids": [
+        "mika-hakkinen-b2-early",
+        "mika-hakkinen-b2-test-role"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "Швидкість до першої перемоги",
+      "claim_ids": [
+        "mika-hakkinen-b2-portugal",
+        "mika-hakkinen-b2-adelaide"
+      ]
+    },
+    {
+      "section_id": "first-title",
+      "title": "Херес, Мельбурн і чемпіонство",
+      "claim_ids": [
+        "mika-hakkinen-b2-first-win",
+        "mika-hakkinen-b2-melbourne",
+        "mika-hakkinen-b2-1998"
+      ]
+    },
+    {
+      "section_id": "rivals",
+      "title": "Другий титул та інший претендент",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999",
+        "mika-hakkinen-b2-spa"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "Що бачив інженер",
+      "claim_ids": [
+        "mika-hakkinen-b2-style"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "Перерва, яка стала завершенням кар’єри",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001",
+        "mika-hakkinen-b2-dtm",
+        "mika-hakkinen-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "The Formula 1 Hall of Fame gives seven podiums for 1995; archive season counts must be used instead of repeating that passage.",
+    "The 1998 Melbourne agreement is sourced to Häkkinen’s recollection; another participant’s contemporaneous account remains desirable.",
+    "Driving-style testimony is from a team engineer, and should remain attributed after human review."
+  ],
+  "media": []
+}

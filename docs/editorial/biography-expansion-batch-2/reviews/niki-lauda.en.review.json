@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "stage": "evidence_review",
+  "sources": {
+    "lauda-hall": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "f1db": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "lauda-mercedes": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "lauda-monza": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "lauda-mclaren": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "lauda-finale": {
+      "kind": "primary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    },
+    "lauda-setup": {
+      "kind": "secondary",
+      "published_on": null,
+      "publication_note": "Source classification is a research proposal, not approval. Exact publication/revision day has not been independently established; access date is recorded separately. Participant/team accounts retain their interests; F1DB is a compiled statistical source."
+    }
+  },
+  "claim_reviews": {
+    "niki-lauda-b2-early": null,
+    "niki-lauda-b2-brm-ferrari": null,
+    "niki-lauda-b2-1975": null,
+    "niki-lauda-b2-monza": null,
+    "niki-lauda-b2-fuji": null,
+    "niki-lauda-b2-brabham": null,
+    "niki-lauda-b2-1982": null,
+    "niki-lauda-b2-1984": null,
+    "niki-lauda-b2-setup": null,
+    "niki-lauda-b2-1985": null,
+    "niki-lauda-b2-mercedes": null,
+    "niki-lauda-b2-legacy": null
+  },
+  "checks": {
+    "identity": null,
+    "language": null,
+    "originality": null,
+    "links": null,
+    "signoff": null
+  },
+  "issues": [],
+  "media": [],
+  "publication": null
+}

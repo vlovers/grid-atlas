@@ -1,0 +1,3794 @@
+{
+  "batch_id": "driver-biography-expansion-batch-2-2026-10",
+  "publication_allowed": false,
+  "human_approved_dossiers": 0,
+  "archive_identity_checked": true,
+  "archive_sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+  "statistics_assertions": 231,
+  "statistics_checked": 231,
+  "paired_claims": 121,
+  "en_words": 5815,
+  "uk_words": 4987,
+  "profiles": [
+    {
+      "driver_id": "juan-manuel-fangio",
+      "locales": {
+        "en": {
+          "words": 567,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "08b7d250bcfdcf85707f670a197f313d18c74f554a0d96e283ba5de3897bd75d",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 506,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "59cf836cb2875eed0f07271bd2443fdd006d558a790faa5e330653e8ec14f5f7",
+          "publication_ready": false
+        }
+      },
+      "sources": 7,
+      "publisher_groups": 6
+    },
+    {
+      "driver_id": "jim-clark",
+      "locales": {
+        "en": {
+          "words": 549,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "64cde9810b0fe5e53009175bdb3ba1f88d15e0bdebc7c6980747a9a31b5220fb",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 480,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "7e73c6c56b53141dcf3f25d2014721b909df76453702d6aeb7619acde7c7c3dd",
+          "publication_ready": false
+        }
+      },
+      "sources": 7,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "graham-hill",
+      "locales": {
+        "en": {
+          "words": 514,
+          "claims": 11,
+          "sections": 6,
+          "revision_sha256": "01f2bca7208d0f649acc5ed2808160c9ed0d5a3b90e889ab624886262b5ada3a",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 447,
+          "claims": 11,
+          "sections": 6,
+          "revision_sha256": "810f285e1070e06a9ae00b9215b403141e33136050c3c1f8a58d51f05496c0c7",
+          "publication_ready": false
+        }
+      },
+      "sources": 6,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "jack-brabham",
+      "locales": {
+        "en": {
+          "words": 570,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "9bb3ae4661be4bfab1743968d3f38c0f0208ee2c9e71b6de77e0abd0b07aa15e",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 481,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "702e7846abb36dc913e94188b566aab2d6a1a822f490ec3792416699311d06a4",
+          "publication_ready": false
+        }
+      },
+      "sources": 5,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "locales": {
+        "en": {
+          "words": 589,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "7653eb858934e369f2691fcd093a8062c913b33be2e454b1feb913bcf52f13a7",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 508,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "474be4e3c231030ff0bdcc785e533060c2a8e9d65f2a2b5924971687dd2ede73",
+          "publication_ready": false
+        }
+      },
+      "sources": 7,
+      "publisher_groups": 7
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "locales": {
+        "en": {
+          "words": 587,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "15376c6b82f052dc1ab4d8bf84aa327c2d3e387dcdeb28df41eb447ef29bf86e",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 506,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "e260b6ac5862e3d1658c52b1936933f4bab8f6419e786f52a8304e0e1d2e4fd4",
+          "publication_ready": false
+        }
+      },
+      "sources": 6,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "niki-lauda",
+      "locales": {
+        "en": {
+          "words": 607,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "81528022fecd4141c6d617b76b62722280bf2547cbd75b07ea10ce2c82e60c9d",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 499,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "c19a96392f6fe15c62e60519166174b364a7127fe90144cdaac4a7dcfc4db6f1",
+          "publication_ready": false
+        }
+      },
+      "sources": 7,
+      "publisher_groups": 4
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "locales": {
+        "en": {
+          "words": 501,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "2f7948c9d72310b791c7b1da60db9bb58989de8c0da955d1383ccc1fe5e467bb",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 433,
+          "claims": 12,
+          "sections": 6,
+          "revision_sha256": "85b998d9c1f856c6fff769366a9d0ce8575488a119e65f230e829207b7ed813f",
+          "publication_ready": false
+        }
+      },
+      "sources": 6,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "locales": {
+        "en": {
+          "words": 705,
+          "claims": 13,
+          "sections": 6,
+          "revision_sha256": "5f615b3711f315025b8699c2d7bb8e8b6a3fd9fc4b7fe0adea6f6621fc5332c4",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 584,
+          "claims": 13,
+          "sections": 6,
+          "revision_sha256": "f0f3da16de49ee8ecb6b7596edc107dc560b4b75817ab25c3ba81e3f82a6a1d9",
+          "publication_ready": false
+        }
+      },
+      "sources": 8,
+      "publisher_groups": 5
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "locales": {
+        "en": {
+          "words": 626,
+          "claims": 13,
+          "sections": 6,
+          "revision_sha256": "77e3da896014bdc6cd6b0685ddb8aefd9a7cadf7f4531b0d177ee8042852b93f",
+          "publication_ready": false
+        },
+        "uk": {
+          "words": 543,
+          "claims": 13,
+          "sections": 6,
+          "revision_sha256": "161c480787478aaea9042294a2271528892c4edb3a828c34eaf72765760cb81e",
+          "publication_ready": false
+        }
+      },
+      "sources": 7,
+      "publisher_groups": 7
+    }
+  ],
+  "archive_checks": [
+    {
+      "id": "juan-manuel-fangio-career-totals",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-last-season",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "d50cf23014ff4466c660e5a7dce1783766232f741d177ed6084ab6d36e0beb59",
+      "observed": [
+        [
+          24,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-title-years",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-last-season",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 5,
+      "records_sha256": "0e34c5a673fe809c1256f9e460d8bc4a7eede376408812e0cf7cde74a96da12d",
+      "observed": [
+        [
+          1951
+        ],
+        [
+          1954
+        ],
+        [
+          1955
+        ],
+        [
+          1956
+        ],
+        [
+          1957
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1950-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "a7b75e843f59ccc9c75fbb1d2ad0fcf5823c52e4b36d6fa6f9b67525ac6173b1",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1950-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "3464837303ea7c62e4dd20e2f2519a77fb1722cdcf3ff567555725fdd81d2723",
+      "observed": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1951-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "0cc095273f6064f06c905e495b675e760c106c064a564c409c852c6e3b6a3fb9",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1951-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "5e96b8188b64f7e59d7d6a1a133a45946724c0f7918a1fabe520d6a751d28745",
+      "observed": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1951-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "5e96b8188b64f7e59d7d6a1a133a45946724c0f7918a1fabe520d6a751d28745",
+      "observed": [
+        [
+          11
+        ],
+        [
+          15
+        ],
+        [
+          8
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1953-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "f2991c14d999d582710d069da24533aa60b01fa176b482f36673ed2c2739f06e",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1953-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "54a1841e0c29660fbb01936d95b0e8349d4f4d862add7b00b7831a77fe5b9f74",
+      "observed": 1
+    },
+    {
+      "id": "juan-manuel-fangio-1953-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-injury"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "54a1841e0c29660fbb01936d95b0e8349d4f4d862add7b00b7831a77fe5b9f74",
+      "observed": [
+        [
+          32
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "421b816358665041eb992488b28df7722f0139bcc33658d296817055003b3dab",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "07ec9813c8f877d5be4220bb23849477d348c5fc77c6d84585e31c03a62191f1",
+      "observed": 6
+    },
+    {
+      "id": "juan-manuel-fangio-1954-winning-rounds",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "07ec9813c8f877d5be4220bb23849477d348c5fc77c6d84585e31c03a62191f1",
+      "observed": [
+        [
+          33
+        ],
+        [
+          35
+        ],
+        [
+          36
+        ],
+        [
+          38
+        ],
+        [
+          39
+        ],
+        [
+          40
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1955-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-mercedes-1955"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "48c3433ccf5b97daee22f28f12e0b678348bce700b299839f57e273eb62cdd41",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1955-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-mercedes-1955"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "43e95698aa4f8c18d50dda6ba926086f15e9533902097d65cb0942944640e343",
+      "observed": 4
+    },
+    {
+      "id": "juan-manuel-fangio-1956-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "300e0f23b8c5d44497ee89d276bd4b0820bfc6093ca11c01385422a64c49281a",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1956-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "b38bd5f12acdedb20967e03e84e6730f71eec04430e4e863abf5c647c19c3cb5",
+      "observed": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1957-standing",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "a13de542f01b3a7b02ebda45da256434c70c75dc704905ac48c23ec48e453ff6",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1957-wins",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-final-title",
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "4a89d41ce681d4388e29c295629456a3f46df99b16aa3cd70232bd86aef31b77",
+      "observed": 4
+    },
+    {
+      "id": "juan-manuel-fangio-1951-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "95722a0ba0f4e30eeab786bfd82ae8270f36d14158f2a2e05df3c23a7120f703",
+      "observed": [
+        [
+          1,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-argentina-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "ae8da9b78ca6466ce077d431aa10be1a9498d2c632cd493a8dad467e85980e63",
+      "observed": [
+        [
+          1,
+          "maserati"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-belgium-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "af085f5400d0132f6099a3e43df8615bd69d5baf1ab86b41bd5e3d11e42b056b",
+      "observed": [
+        [
+          1,
+          "maserati"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1954-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-split-1954"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "ee4b8870669a4ed9b6e4b9de3fbfdd6295347915c94471672bf1026a63c0796d",
+      "observed": [
+        [
+          1,
+          "mercedes"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1956-italy-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-ferrari-1956"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "56ecabefc9f3a56016e4f13988cffbb8d540e80e6d11d36dc4e8db216f16ea37",
+      "observed": [
+        [
+          2,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-birth",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-historical-weight"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "d50cf23014ff4466c660e5a7dce1783766232f741d177ed6084ab6d36e0beb59",
+      "observed": [
+        [
+          "1911-06-24"
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-last-record-year",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "jim-clark-career-totals",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "e4f14f3cfb354e000c3e3da6dbb1f9a651e18b35166868f8a0366b161dcae7fe",
+      "observed": [
+        [
+          25,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-title-years",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 2,
+      "records_sha256": "023468375ab43329d1e8c57106f339a549b2447cfcf4a54a315a06c0272ac087",
+      "observed": [
+        [
+          1963
+        ],
+        [
+          1965
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1962-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "25bf0d50f7d74acf24facbb9b50548943932bdc0bfcf3e62a9774e28eb411490",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1962-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "5b0e170d2838f26ed28dd3fc20c80df286516cfe7ee66a9387d184a206dee671",
+      "observed": 3
+    },
+    {
+      "id": "jim-clark-1962-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1962"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "5b0e170d2838f26ed28dd3fc20c80df286516cfe7ee66a9387d184a206dee671",
+      "observed": [
+        [
+          105
+        ],
+        [
+          107
+        ],
+        [
+          110
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1963-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1963"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "3b0dc967a993d043808d9d859d60708eafc58723446f9f958324154191036a71",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1963-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1963"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 7,
+      "records_sha256": "0467154365123f62e765bfd368fb982c52e5cd4aaf3bb58d7de8a4b4dc3a2c66",
+      "observed": 7
+    },
+    {
+      "id": "jim-clark-1965-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "8cf305c11b7baf2e9b4f94ab567bb3b47c676a81581507f0380f23ae4b6984ca",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1965-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "e4ae907616b39adea26c9362d2354b52e5712123970cca0ded376ba30001732d",
+      "observed": 6
+    },
+    {
+      "id": "jim-clark-1965-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "e4ae907616b39adea26c9362d2354b52e5712123970cca0ded376ba30001732d",
+      "observed": [
+        [
+          132
+        ],
+        [
+          134
+        ],
+        [
+          135
+        ],
+        [
+          136
+        ],
+        [
+          137
+        ],
+        [
+          138
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1966-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "613f0b1935820d917dc54810e6c79f544a2b52ccdc39b77d046be34188286314",
+      "observed": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1966-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "da3e9fa09f01f1fe2a23943aa01d628054d5bb7cb0a43f582837e94e75588b54",
+      "observed": 1
+    },
+    {
+      "id": "jim-clark-1966-winning-rounds",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1966"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "da3e9fa09f01f1fe2a23943aa01d628054d5bb7cb0a43f582837e94e75588b54",
+      "observed": [
+        [
+          149
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-standing",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "42d0700c3b8b06da63d6edab2c1aee0e255daa0bfb4378f75b58aef0f3e7072d",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-wins",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "a51f1dc28f0116b7476ef368d74cbc6d466a00bee6ed831da017a515bcca38eb",
+      "observed": 4
+    },
+    {
+      "id": "jim-clark-all-win-constructors",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-lotus-entry"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 25,
+      "records_sha256": "d761439a7155b58692ba87391077e42c3c40496e8526a0a59c3d631999ad5388",
+      "observed": [
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ],
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1967-netherlands-jim-clark",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-49",
+        "jim-clark-b2-49"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "a4f99d984c260be82762fa7541d44efd3661dc8faccc49e701225fcf806ad1f0",
+      "observed": [
+        [
+          1,
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-1968-south-africa-jim-clark",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-final-win"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "2574e545831c8a91f36c3e4beab56017f5f4a7d69ca5bf5420f723acaa2bc1b9",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jim-clark-monaco-absence",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-1964-65"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "jim-clark-1967-hill-lotus",
+      "driver_id": "jim-clark",
+      "claim_ids": [
+        "jim-clark-b2-graham-team",
+        "jim-clark-b2-49"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 11,
+      "records_sha256": "61db28b09bb1056360fdc8ad9de25ffda33150c35cf4edda994854a0a04394c8",
+      "observed": 11
+    },
+    {
+      "id": "graham-hill-career-totals",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "abc27a1482c9438016febd17f26dc65a99e9cfce946271dc084aab6d7b282962",
+      "observed": [
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-title-years",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 2,
+      "records_sha256": "40102ae94e41a08e46afbeed6bcd3dee7a9143be5742f0412878289a55f7e333",
+      "observed": [
+        [
+          1962
+        ],
+        [
+          1968
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1962-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "ec0cbb201b9497b012ef8480e7f5652170016b63d8c68da8f117d0feeb1fc7a8",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1962-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "6352ffe28a0b309513647e33ea6e56ca412f16fa1f58ad36baef1b5906565dc7",
+      "observed": 4
+    },
+    {
+      "id": "graham-hill-1962-winning-rounds",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1962"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "6352ffe28a0b309513647e33ea6e56ca412f16fa1f58ad36baef1b5906565dc7",
+      "observed": [
+        [
+          103
+        ],
+        [
+          108
+        ],
+        [
+          109
+        ],
+        [
+          111
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1963-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "cd0ff161b847adb05213cc2fdb19b648d94de4638ead46c5b57077ea3cb8793f",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1963-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "2b1817b8b9c623b9cc47b1249b2282084cd419ef70b5f2f59f52c8c14bd3afa1",
+      "observed": 2
+    },
+    {
+      "id": "graham-hill-1964-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "cf1c35035bb91580c6bf2c890b6b43b17c871cb1f5373154ac0ed331ffe558ca",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1964-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "050877726e4d97d526da3ec5b19715a7bfc72cde1f4d6577fe5f4aa87ee0907a",
+      "observed": 2
+    },
+    {
+      "id": "graham-hill-1965-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "4cec0bc9e95ff9c6a13d9f04199f07e3b3562fca0549f5f8df186b81b0e5863b",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1965-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1964-rival"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "59a17cd9ee785bf163c9d32f2805778843dff98637cca4a280610316ae144e7d",
+      "observed": 2
+    },
+    {
+      "id": "graham-hill-1968-standing",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "8893363997625e84fc92a7564ffdd68de255fc0bd28dafd780a35faf6ed9f43d",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1968-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "4de833afb5966d0d82d0ede504294319c427cea2475d8e0e65d77c742f93acea",
+      "observed": 3
+    },
+    {
+      "id": "graham-hill-1968-winning-rounds",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-1968"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "4de833afb5966d0d82d0ede504294319c427cea2475d8e0e65d77c742f93acea",
+      "observed": [
+        [
+          163
+        ],
+        [
+          164
+        ],
+        [
+          173
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1958-monaco-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-lotus-brm"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "33d8a865d0b3f89d145f9f30285a11ba79e008510e20e472917b3c2e5e9dd034",
+      "observed": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1960-brm",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-lotus-brm"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 8,
+      "records_sha256": "78714ad8f729ec16d691e103c521a0bf655f54a63fafa392ccea9c8d8fc12e0f",
+      "observed": 8
+    },
+    {
+      "id": "graham-hill-five-monaco-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-monaco"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "c8b5b03d2fadd1553d0887f961578c26d7289c292e91740dccb5dc9661306f49",
+      "observed": 5
+    },
+    {
+      "id": "graham-hill-no-later-wins",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-injury"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "jack-brabham-career-totals",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "1111fa67defb1ce76e1a9d6320831d3125bb2254b9cf2d0f18a5a100518a8127",
+      "observed": [
+        [
+          14,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-title-years",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 3,
+      "records_sha256": "15e2b3c10b8521756347c1cc4597164602d885bad17959083a4b12fe314e802d",
+      "observed": [
+        [
+          1959
+        ],
+        [
+          1960
+        ],
+        [
+          1966
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1959-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "6b759a3e122b43996de36a47733c6bdc052e76e25bed1dc73955f127ecd344d1",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1959-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "5e2e88dff28a38c3b6785dbb50cbc266e20d314e0a93ae211a67386e599d6319",
+      "observed": 2
+    },
+    {
+      "id": "jack-brabham-1959-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1959"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "5e2e88dff28a38c3b6785dbb50cbc266e20d314e0a93ae211a67386e599d6319",
+      "observed": [
+        [
+          76
+        ],
+        [
+          80
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1960-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "b6a62476d323b5b718ba2914538d4c16ef2ab77d6926ea4f2704f04c84d10ac2",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1960-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "dd5338c6247cd39bc2bfa4620bd46ad0e38a4d43d1da9e87c9af205368bfb839",
+      "observed": 5
+    },
+    {
+      "id": "jack-brabham-1960-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1960"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "dd5338c6247cd39bc2bfa4620bd46ad0e38a4d43d1da9e87c9af205368bfb839",
+      "observed": [
+        [
+          88
+        ],
+        [
+          89
+        ],
+        [
+          90
+        ],
+        [
+          91
+        ],
+        [
+          92
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1966-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "eb768ea6bc92bb5d91107e2447eb839cd314447c243c2735b03538891d8ae9ca",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1966-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "b7e2da2fbbd28137acad9b5fe1accbfad7afd2837d1b95526c155efebb9298c6",
+      "observed": 4
+    },
+    {
+      "id": "jack-brabham-1966-winning-rounds",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1966",
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "b7e2da2fbbd28137acad9b5fe1accbfad7afd2837d1b95526c155efebb9298c6",
+      "observed": [
+        [
+          144
+        ],
+        [
+          145
+        ],
+        [
+          146
+        ],
+        [
+          147
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1967-standing",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-hulme"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "7200735779185e22521c9a9a70ec8a3aafce6d60452e1eb12ff818ab07703402",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1967-wins",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-hulme"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "2deb1be8c856682bb6f279af6bf6d2b1b8d13ee274015a71a33edbd820e91d78",
+      "observed": 2
+    },
+    {
+      "id": "jack-brabham-1955-great-britain-jack-brabham",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-cooper"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "1d1685f2a0d807a219cd727230db0f9891c862f6dc94e62585fb75103ea5c1bc",
+      "observed": [
+        [
+          "cooper"
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1964-france-dan-gurney",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "7c99dfa6d9bcf97ad58458f872f93441d8950081c9094d53814cbc2bcf1b0822",
+      "observed": [
+        [
+          "dan-gurney",
+          "brabham",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1964-mexico-dan-gurney",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-gurney"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "18b857ea62560cf8f97662c69fb80ed351be82644a67a5d9a313015db87e22e8",
+      "observed": [
+        [
+          1,
+          "brabham"
+        ]
+      ]
+    },
+    {
+      "id": "jack-brabham-1970-south-africa-jack-brabham",
+      "driver_id": "jack-brabham",
+      "claim_ids": [
+        "jack-brabham-b2-1970"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "1581ff8f6c51a6d8c15b8c92c311bebab35ca07eed5be0db2bd5122767efa6d8",
+      "observed": [
+        [
+          1,
+          "brabham"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-career-totals",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "34693ac67b5a4bd48786c0756b5e7a5b94765f9f04bb370f7e4a4d9e726fe08e",
+      "observed": [
+        [
+          27,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-title-years",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 3,
+      "records_sha256": "420250676194c65f26db7d2714057e918e750c3697a73089c49c17f7f9c955a0",
+      "observed": [
+        [
+          1969
+        ],
+        [
+          1971
+        ],
+        [
+          1973
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1965-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "cd93376dd397fc13ddcfdce666295f3af3b64bb86bf1de4238248e6d83ca0dc3",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1965-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "fc0266fa2d4bf74c15b66e3781ef3fc0e06c5710b55c49f2cbb9d520162988ca",
+      "observed": 1
+    },
+    {
+      "id": "jackie-stewart-1965-winning-rounds",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-brm"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "fc0266fa2d4bf74c15b66e3781ef3fc0e06c5710b55c49f2cbb9d520162988ca",
+      "observed": [
+        [
+          139
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1968-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "45bfa5665c79e9fc393581302c14c7dd4308cdc7785a9b8610945e2f38ea4935",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1968-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "704fa083791b53fd917d0743be5f1eb3a953b56e0c4fc18a13f32621557001c1",
+      "observed": 3
+    },
+    {
+      "id": "jackie-stewart-1968-winning-rounds",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1968",
+        "jackie-stewart-b2-style"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "704fa083791b53fd917d0743be5f1eb3a953b56e0c4fc18a13f32621557001c1",
+      "observed": [
+        [
+          166
+        ],
+        [
+          169
+        ],
+        [
+          172
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1969-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1969"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "a613220ecff7780589e4b8a22ca399152521fbfeb92c09a4914413a1dcf9a68f",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1969-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1969"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "9ab63d869587f1e2a565fae37ae54c04a81ee5a064c5cbb6fca046d460980db3",
+      "observed": 6
+    },
+    {
+      "id": "jackie-stewart-1971-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "7b87d6efc5b17e75a464caef35e54903c0594614999e6e28ebef1031eac91357",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1971-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "2a806ca857059c12a9b45bff8101b7978a12424e7d399487e869efff162dbbf0",
+      "observed": 6
+    },
+    {
+      "id": "jackie-stewart-1973-standing",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "34c7f48073c3a8204689d6d4092bc9e07763c8b2d4ce2c2dc811be56115d722f",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-wins",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1973"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "84d4c92b2d8a653549787f73b6ba05cdbbdbbe27803c73367ddbb49086adcb2c",
+      "observed": 5
+    },
+    {
+      "id": "jackie-stewart-1971-united-states-francois-cevert",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-1971"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "ae62be16ad174373eb4ac63f2d1c908968e5af266844b2a0934e4d7cf7d4414e",
+      "observed": [
+        [
+          1,
+          "tyrrell"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-united-states-jackie-stewart",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-cevert"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "b65c59a4edcadcc018bc09357a515e7843acbacab1d1dce3b9692f3456541be2",
+      "observed": [
+        [
+          "DNS",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1999-europe-johnny-herbert",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-team-owner"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "55fd387c450f9ef1440cc3cec411ba0352028271dfb6e15a03fa2b575d12a216",
+      "observed": [
+        [
+          1,
+          "stewart"
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-stewart-first-season",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-team-owner"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "emerson-fittipaldi-career-totals",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-legacy"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "cb766e74179f9ab38c6b96e5870fee93d42bb4f731b9c9ec9bead8ed7ff2b87f",
+      "observed": [
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-title-years",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-legacy"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 2,
+      "records_sha256": "4f0499f5dbe2a14eca367635d362191ce95f6ab833afd62b2ab8b8f7d11b056a",
+      "observed": [
+        [
+          1972
+        ],
+        [
+          1974
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1972-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "24d4ff5a085e027053fa523f23dad6d40007a32adb2df5b305486d97cdf41bd9",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1972-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "aac00b093b0c0c17f3badff1cbe12ec76aac97352f5ca1c88c8c6dd541bb2bea",
+      "observed": 5
+    },
+    {
+      "id": "emerson-fittipaldi-1972-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "aac00b093b0c0c17f3badff1cbe12ec76aac97352f5ca1c88c8c6dd541bb2bea",
+      "observed": [
+        [
+          211
+        ],
+        [
+          213
+        ],
+        [
+          215
+        ],
+        [
+          217
+        ],
+        [
+          218
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1973-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-peterson"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "db98dc5b06a2df7bb8e97690e0fce14350c7e4c3878d70c620a340d33389f234",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1973-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-peterson"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "9d8d7905235041e5fcd2c5fcfc7739f815bda2763e76f087d51703f62c250efb",
+      "observed": 3
+    },
+    {
+      "id": "emerson-fittipaldi-1974-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "f326fa70c1db9c0eacb07b3fd77a0acf9560157677157ab858f2b32eb2a6221b",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1974-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "f4ca8954fedd0638e90e74afac6e02ee86e96d7a9158f996c6519cf8357286be",
+      "observed": 3
+    },
+    {
+      "id": "emerson-fittipaldi-1974-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "f4ca8954fedd0638e90e74afac6e02ee86e96d7a9158f996c6519cf8357286be",
+      "observed": [
+        [
+          237
+        ],
+        [
+          240
+        ],
+        [
+          249
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1975-standing",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "2b52e91b376fcac3b091c28dcc72b9b6c90e6437f5e0884cc9b36d58a5e83930",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1975-wins",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "ce92542a520a9adc1a0394d8119bd0ccfcb37ba81f91b832266ed0cb4c610739",
+      "observed": 2
+    },
+    {
+      "id": "emerson-fittipaldi-1975-winning-rounds",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1975"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "ce92542a520a9adc1a0394d8119bd0ccfcb37ba81f91b832266ed0cb4c610739",
+      "observed": [
+        [
+          251
+        ],
+        [
+          260
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1970-great-britain-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "8cda49aa60f6da71789353d15d2b35bf05ad6def2b622e0a3bd40b8a4cf42769",
+      "observed": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1970-united-states-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1970"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "231690b5846a361f4c5077f0fceb2982d39798bfb13eb448145ca4ad03153981",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1974-united-states-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-regazzoni"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "e4fd20c116437c46aa331b93c68a91fe55a24f6cfdc459b0641106190adbb397",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1978-brazil-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-copersucar"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "154eb758141fa7b5e55c7aa386c3c787ae1ec93579c4d1c7f19ce70edb7100fa",
+      "observed": [
+        [
+          2,
+          "fittipaldi"
+        ]
+      ]
+    },
+    {
+      "id": "emerson-fittipaldi-1980-united-states-west-emerson-fittipaldi",
+      "driver_id": "emerson-fittipaldi",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1980"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "0e4e241e0c967f4b1beb5a5c0ebd89c4214f63ef7192de87d89ce37c02c92074",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-career-totals",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985",
+        "niki-lauda-b2-legacy"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "f5d1bcf909ab240ff1a628ea42b850a37c553d7c2a95f56bf079bf1648a30296",
+      "observed": [
+        [
+          25,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-title-years",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985",
+        "niki-lauda-b2-legacy"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 3,
+      "records_sha256": "d58c9661f7db0aca8aa243991a6de19f4760a779a3bbe2bb5f24ed35b8e25e8b",
+      "observed": [
+        [
+          1975
+        ],
+        [
+          1977
+        ],
+        [
+          1984
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1975-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1975"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "4f5c8b85bfdfcd9ec89683548ca4dcf54d43fdbf4a65371c6047ab4cf7728c8c",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1975-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1975"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "506d87fd64b1293fcf26b61b57741d3a5c4364ca898a7dee2d4d168f265011f8",
+      "observed": 5
+    },
+    {
+      "id": "niki-lauda-1977-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "418c8fb04baa16e5e7afe1604b717c76701e91720e042ff145c1b54044893e00",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1977-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "3842013aed2add09495cf8d71c18e7762f27956d6a4194eed3cd315010670afb",
+      "observed": 3
+    },
+    {
+      "id": "niki-lauda-1978-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "a1e4eaa2d7c8869f222c848f091220c378051d59dec0ab8b7a3cb326ca462468",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1978-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "1a700df6c5c0e56b980655ef1d9cf4e90b962250faa5c9ff8e509c75a9160763",
+      "observed": 2
+    },
+    {
+      "id": "niki-lauda-1978-winning-rounds",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brabham"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "1a700df6c5c0e56b980655ef1d9cf4e90b962250faa5c9ff8e509c75a9160763",
+      "observed": [
+        [
+          305
+        ],
+        [
+          311
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1982-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "80d2632e11ba7d87e063a0c92013f47b56ce0665dd36457c2a933a319bb77ef8",
+      "observed": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1982-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "b6096fddd4da1691e5d29730e1e6b3dc45e2429e98b4dbde817dd4c7859769e1",
+      "observed": 2
+    },
+    {
+      "id": "niki-lauda-1982-winning-rounds",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1982"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "b6096fddd4da1691e5d29730e1e6b3dc45e2429e98b4dbde817dd4c7859769e1",
+      "observed": [
+        [
+          360
+        ],
+        [
+          367
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-standing",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "c0219cd15883e113a5201c22740929536d02d12daebecb82e2975ae5904e994b",
+      "observed": [
+        [
+          1,
+          72
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-wins",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "fb509b10b799bd7d5f1584e204658fec2375a6a9710c6a6dcf56a75bebb58fa6",
+      "observed": 5
+    },
+    {
+      "id": "niki-lauda-1971-austria-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "f70e99fc04b7dc38073c5fab8c13ebb2c0b518ed89dcb7a4b574627dcab16d8c",
+      "observed": [
+        [
+          "march"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-argentina-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "0132231981a2a0018a90565ca0dccd9babad01fd92550e360361bb45042a2bcf",
+      "observed": [
+        [
+          2,
+          "ferrari"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-spain-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "05d07ecdd41b42e4730352d81cd36bbb43e6bded0f49bf8f710b9cd6f7c75dca",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1974-netherlands-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-brm-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "be8482c764b09201e488fcca8cf93e6426551c55968ba3f01f7796e002f5dd1a",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-italy-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-monza"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "4589b80937597028135f83fec9c77147d89dc52e651e443ed48707805f46e47a",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-japan-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "5eef5f3d0dfc8e34d8f35dde71c42b7b7e7096510fc71588e8383a0f6aca4db6",
+      "observed": [
+        [
+          "DNF"
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-portugal-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "fb15749b85e97c714d7bd7bc6755fc76a529cc7c2d4141380d9c07ae66cc358f",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-portugal-alain-prost",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "6eeba0640fb29b8e68bea9b19709b92320e38eb24dd9512f29c951dd086f027c",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1985-netherlands-niki-lauda",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1985"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "14e5dfddd54aa501af59a5304943920e7d186b3651a4d2d005c38e28cb307c79",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1984-prost-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-1984"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "62a0b173da488f453be679179a52c43abb8c541056eb7eb6b593e6c341553bf3",
+      "observed": [
+        [
+          71.5
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-hunt-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "3f3f6c553c00234de6ce0c0fc39931c209a84489abf68fc5d139821c3889ed07",
+      "observed": [
+        [
+          69
+        ]
+      ]
+    },
+    {
+      "id": "niki-lauda-1976-lauda-points",
+      "driver_id": "niki-lauda",
+      "claim_ids": [
+        "niki-lauda-b2-fuji"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "3c7770f7290a2fe1b3a6621958a518007f929ad7c1a3e1338a6e9c7ca6a7fc71",
+      "observed": [
+        [
+          68
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-career-totals",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-legacy"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "fe0f09c0c2ef5653fb4bbc1b4cbe3543d52efa479cb4fcb2c616f44bbd866031",
+      "observed": [
+        [
+          31,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-title-years",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america",
+        "nigel-mansell-b2-legacy"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "6214a4117cbe6b4269ee76b0403718c307a24a6240f5d31508042655b65989e0",
+      "observed": [
+        [
+          1992
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1985-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "2da39554da7b52787571de2977a48fbb4c410b948f3c9ba3570b7a19fc80259a",
+      "observed": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1985-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "0cc529b8e011297dc1b915b1729a84dcbb74d36805ad3bfff58718bbf6b194a7",
+      "observed": 2
+    },
+    {
+      "id": "nigel-mansell-1985-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1985"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "0cc529b8e011297dc1b915b1729a84dcbb74d36805ad3bfff58718bbf6b194a7",
+      "observed": [
+        [
+          418
+        ],
+        [
+          419
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "1a201b5fe382372f958821547b3c334686ccbd280b9c57bc86d5a2e1210e9552",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "fe3847762816a3619c4dc7e9da2a9b00ccfdf1bb5715d74c2e42d4dc4904ad21",
+      "observed": 5
+    },
+    {
+      "id": "nigel-mansell-1987-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "6146db01a58bc7bd728b86e38134911a5af8dbdacc926557f5de837530aa9ba4",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1987-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 6,
+      "records_sha256": "3e219423de7e2cec8184b80bf0190b64b45118f0ca8dbb8f13ca3c3fa730cdee",
+      "observed": 6
+    },
+    {
+      "id": "nigel-mansell-1989-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "0e87dba03e31422468ed74e5b0e5bc936aa2171cb747d7279f4deed66ca6bac4",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1989-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "6d403f3f97c07c48666e642b194a7c732fe1f2a714dd2d53e2fb4e0c67115cf3",
+      "observed": 2
+    },
+    {
+      "id": "nigel-mansell-1989-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "6d403f3f97c07c48666e642b194a7c732fe1f2a714dd2d53e2fb4e0c67115cf3",
+      "observed": [
+        [
+          469
+        ],
+        [
+          478
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1991-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "cc7be3a99ee9c2d161045a36138011d3b47093b85db781b592d30672fe5aed3e",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1991-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "199092c0c4e9f7e82727c8e4f69e0d2c8fdfd717cf33c69a19a780fa68fd49c3",
+      "observed": 5
+    },
+    {
+      "id": "nigel-mansell-1991-winning-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1991"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "199092c0c4e9f7e82727c8e4f69e0d2c8fdfd717cf33c69a19a780fa68fd49c3",
+      "observed": [
+        [
+          507
+        ],
+        [
+          508
+        ],
+        [
+          509
+        ],
+        [
+          512
+        ],
+        [
+          514
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-standing",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "6214a4117cbe6b4269ee76b0403718c307a24a6240f5d31508042655b65989e0",
+      "observed": [
+        [
+          1,
+          108
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-wins",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 9,
+      "records_sha256": "2704d3017dadb423d99c2621d0b1348ddd3875d70f96cd1011fd89678bfc75d8",
+      "observed": 9
+    },
+    {
+      "id": "nigel-mansell-1980-austria-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-early"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "f72d9da161dd3dd008e6f3266e24babc98e2a97c3663aa17ed21710ec1f47c82",
+      "observed": [
+        [
+          "lotus"
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1981-belgium-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-first-podium"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "f703d29e1dd86f86273e212ab0b84288ead97134d9d9166e2b3b8fa60a0b02ee",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1986-australia-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1986"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "86243a7b8e9571d97cb26a67e54e78104d041e1b343c51048c347262d105f464",
+      "observed": [
+        [
+          "DNF",
+          "Tyre"
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1987-great-britain-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1987"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "71c9e1ed490272540863fa94dac53b3b01e7e8190c4b5b2013c3e4c7e5e2076c",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1994-australia-nigel-mansell",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "71f85d9ecc3b72da08c4e872ab09a57b7989afb94d80d73eda70253b70c9b17b",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1992-patrese-points",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-1992"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "17f22fdca15ceb82ac2610ae72a699366076378a6ebfcf35dd69b5a5d34d90dc",
+      "observed": [
+        [
+          56
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1994-four-rounds",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-america"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "e0853f98c699f3f3f42bb846b9448509d66f4d2c2a45205bf04dd747acd5c9b4",
+      "observed": [
+        [
+          555
+        ],
+        [
+          562
+        ],
+        [
+          563
+        ],
+        [
+          564
+        ]
+      ]
+    },
+    {
+      "id": "nigel-mansell-1995-two-starts",
+      "driver_id": "nigel-mansell",
+      "claim_ids": [
+        "nigel-mansell-b2-mclaren"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "ef2d6e903f065836550a88a828c738a8a1fb55b67a336606538f0e14a4dc0c80",
+      "observed": 2
+    },
+    {
+      "id": "mika-hakkinen-career-totals",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001",
+        "mika-hakkinen-b2-legacy"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "51e133e27eea2b4ddb90559baf50b1de4a318b34df3cb91d1d86c589e15d854f",
+      "observed": [
+        [
+          20,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-title-years",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001",
+        "mika-hakkinen-b2-legacy"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 2,
+      "records_sha256": "976f4a112e15060614f0f6e3aa8e1f110947939f9b1d3ac5370fbd902974b031",
+      "observed": [
+        [
+          1998
+        ],
+        [
+          1999
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "85c937d9514d81d879a2fbfd4decfb8978d94e97a3701f07e0314f99f338811a",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 8,
+      "records_sha256": "7247a07e473c534d266db5ab6f391faa28c6e6ed686d653f8f0803042219db72",
+      "observed": 8
+    },
+    {
+      "id": "mika-hakkinen-1999-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "48d2143f4e8af9224eb8df65422425236dcaf2165787b6f73e44296bd698cdca",
+      "observed": [
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "1482f90bec28aeae5f1677a484ea3e5d1edb084c50e42255387d7f18485463d9",
+      "observed": 5
+    },
+    {
+      "id": "mika-hakkinen-2000-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "44ac7e9608eeb19084ed0e61fb3e71cd2baecb0280ccb6224bfd7aa81778eea4",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2000-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "e38236194812e1bb6ceb7b9288e0bdcfaf334b57b208e887a46194b07a7d8c30",
+      "observed": 4
+    },
+    {
+      "id": "mika-hakkinen-2001-standing",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "2700c3dd97d846c6bf72058c427d89d3b101f409e82bfde131ebda4be88bc1ea",
+      "observed": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2001-wins",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "c8bc833351a44adbc4eebdc630f137c8998d0436c288981281d0d6b8fb4e39a3",
+      "observed": 2
+    },
+    {
+      "id": "mika-hakkinen-2001-winning-rounds",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "c8bc833351a44adbc4eebdc630f137c8998d0436c288981281d0d6b8fb4e39a3",
+      "observed": [
+        [
+          674
+        ],
+        [
+          679
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-portugal"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "db5d2c1d47f2c6de2ead28ae9314bd9f2aff671b1ee59c3f539c7dfe9237790d",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1997-europe-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-first-win"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "c71a1c0ab6bab858cfa418472233dd14f2fba00293f2ec36dc574f549efd4f79",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1998-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1998"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "084d6669fe33e2ac78efdb980b8b588c454e7e3a8dd0b3cd017daae32a490af4",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "110fff4c8e2092beb951c2db65dae81afece9d486894eeddb9c72eccb7848189",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2000-belgium-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-spa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "0cb04dcba591db0a4ce988385dd867fc6af4dd52248c518abee36eaee6da251a",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-2001-japan-mika-hakkinen",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-2001"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "ecec16ee87924a0dd9d6bcc645e5093a1f43ebbd36fba10e42e7238ba9c91145",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-qualifying",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-portugal"
+      ],
+      "table": "f1db-races-qualifying-results.json",
+      "matched_records": 2,
+      "records_sha256": "555f3fade9e12d8d522bdb2ded57fc6883709400d597851285867e8f9ad6e415",
+      "observed": [
+        [
+          "ayrton-senna",
+          4
+        ],
+        [
+          "mika-hakkinen",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1999-irvine-points",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-1999"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "3e25a9e2a1e935565abfce87e5ea40ad79331dc0ca439de1fa296482acc56ddd",
+      "observed": [
+        [
+          74
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1993-three-mclaren-rounds",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-test-role"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "d9d0cfe9af3114d3e90063b1892b6be1f95d5b806754546b20f4e516a5847407",
+      "observed": [
+        [
+          546,
+          "mclaren"
+        ],
+        [
+          547,
+          "mclaren"
+        ],
+        [
+          548,
+          "mclaren"
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1996-return",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-adelaide"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 16,
+      "records_sha256": "806d6f0ca3f8399fa26e8af2ba40aaf7308baaefc4ed298a0f886ca43073984e",
+      "observed": 16
+    },
+    {
+      "id": "sebastian-vettel-career-totals",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "f1db-drivers.json",
+      "matched_records": 1,
+      "records_sha256": "efd7c82df0f3c748917abcfcc20b85a8bd3d4a1b0a2db49f5a91dafe125bbcab",
+      "observed": [
+        [
+          53,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-title-years",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 4,
+      "records_sha256": "ad8c44fa9be17d3af08ca84a33ecbd2aa4ca12e9f484091c3e4f74b8e419cedf",
+      "observed": [
+        [
+          2010
+        ],
+        [
+          2011
+        ],
+        [
+          2012
+        ],
+        [
+          2013
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2009-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "703caf000098ff61b4c230e8b478817ba91a086059fdede61516ce8a3496fec7",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2009-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "611b03c597084f4d2c4d3b011907227dc79e9c244bb8a54bfd100478f68dc57f",
+      "observed": 4
+    },
+    {
+      "id": "sebastian-vettel-2009-winning-rounds",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2009"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 4,
+      "records_sha256": "611b03c597084f4d2c4d3b011907227dc79e9c244bb8a54bfd100478f68dc57f",
+      "observed": [
+        [
+          806
+        ],
+        [
+          811
+        ],
+        [
+          818
+        ],
+        [
+          820
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "25a13ed4b7f61511f9b945fb7220f6388e915bb0243242ed7f602c4f7a33f94c",
+      "observed": [
+        [
+          1,
+          256
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "b3537204bb39fc36c67d9d0515b19c4b1e9f2eaa40a1fb221771d7ab4dade338",
+      "observed": 5
+    },
+    {
+      "id": "sebastian-vettel-2011-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2011"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "e73bf613e1fa200c3d05e4087ebcee0f82102f40c80c3449d107de140c6b0505",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2011-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2011"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 11,
+      "records_sha256": "26d27a26d6ce26eca69a85afea80be43bd22cc0c07f3d7d1dcd49489238af286",
+      "observed": 11
+    },
+    {
+      "id": "sebastian-vettel-2012-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "d6771b9e1fc4d8d6cba7b9ce185e363caece8e763190898a08dd560cd1bf46ed",
+      "observed": [
+        [
+          1,
+          281
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "b3766adebd197727f3274d568baff61f9046fdc74ab2fb503d4c269ecc39a940",
+      "observed": 5
+    },
+    {
+      "id": "sebastian-vettel-2013-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2013"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "a9adbcb2a11e7c4d3db25ca482e91f16807d27ecd24f8da69761e85e1323113c",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2013-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2013"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 13,
+      "records_sha256": "fc3460b7acc52c66a935a9e7feb147403b11cec7308cd4a4d2d68ac8f2d0b501",
+      "observed": 13
+    },
+    {
+      "id": "sebastian-vettel-2014-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "e9f443f71230e51fdf430b59736738be6e319b6870ee1f8907080bc64d817077",
+      "observed": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2014-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "sebastian-vettel-2015-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "4b057e7ebf28d047aac2e055f8ad27690250116e9b85bde18fce3c16ee3cdbec",
+      "observed": [
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2015-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "b1c16405b8ee10e95356adaeb929f3cc907689a31f66b19916a7608b1c7b65c0",
+      "observed": 3
+    },
+    {
+      "id": "sebastian-vettel-2015-winning-rounds",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "b1c16405b8ee10e95356adaeb929f3cc907689a31f66b19916a7608b1c7b65c0",
+      "observed": [
+        [
+          918
+        ],
+        [
+          926
+        ],
+        [
+          929
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2017-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "62e44698b982850cab65aa517b30ec56b49f28edbf498f59c088c1a4ac5801b4",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2017-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "47e722f324cfb586ea5155306c6244aaf04e8c9981e635822d64bbd65bf4e2cf",
+      "observed": 5
+    },
+    {
+      "id": "sebastian-vettel-2018-standing",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "b322ffbdf5853c4e3c04db903d21ba9e17e70a45dcc886b58377f9df79e51e00",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2018-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 5,
+      "records_sha256": "ad5fafa47a692e66053e44a53755ef90737b5d277b6af913ccb6881db0c28fb4",
+      "observed": 5
+    },
+    {
+      "id": "sebastian-vettel-2007-united-states-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-early"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "17eb13cbb0838e6ca4614609c69446101cbe00d2ff08c753834cfdbedb85ccb0",
+      "observed": [
+        [
+          8,
+          "bmw-sauber"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2007-china-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-toro-rosso"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "5e08405d0cd4bf8d84d4142725b4164d58e6bee1fd8259041a54fdb4f26cf0a0",
+      "observed": [
+        [
+          4,
+          "toro-rosso"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2008-italy-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-toro-rosso"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "ac7bccdb9dbbce517379c2fe254cb8bfa5d521a23ee15682545bf6a3f5ed8d91",
+      "observed": [
+        [
+          1,
+          1,
+          "toro-rosso"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-abu-dhabi-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "9f1112eae819312a773403442a52e653d060c6c9bddbcb74de783c1104485439",
+      "observed": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-brazil-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "0facc44575b32a79ef96e96110aba152a8c9089a6f7a988b20b4e95f6438c63d",
+      "observed": [
+        [
+          6
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2012-brazil-fernando-alonso",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "a1493e4c48d4181d5613ad1e4a7b1a723a9a0241bded2ceb05825e22cf203f3d",
+      "observed": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2019-singapore-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-ferrari"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "489643047f4caa74e1a0ea588c0c38d23554835ad3e05704c10530d89f5f0249",
+      "observed": [
+        [
+          1,
+          "ferrari"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2021-azerbaijan-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-aston"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "070986aa55437a37551e32d174013605bd6b196151bc04943336a179cb3094f7",
+      "observed": [
+        [
+          2,
+          "aston-martin"
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2022-abu-dhabi-sebastian-vettel",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-legacy"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "0a2f255c3381cb1533942fbee4ee60d3ad2d854009b08d980a6bd9fb25e1c62a",
+      "observed": [
+        [
+          10
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-alonso-points",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "e8fc7e7c47e1850df942bba691637f205a7035f3ecd0a2fc90a85c85913e7734",
+      "observed": [
+        [
+          252
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2010-no-earlier-lead",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2010"
+      ],
+      "table": "f1db-races-driver-standings.json",
+      "matched_records": 0,
+      "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "observed": 0
+    },
+    {
+      "id": "sebastian-vettel-2012-alonso-points",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2012"
+      ],
+      "table": "f1db-seasons-driver-standings.json",
+      "matched_records": 1,
+      "records_sha256": "08f94ea6f57311c47056fbc251fd5c56c69826bab1a3e85602fcf1c606b9b342",
+      "observed": [
+        [
+          278
+        ]
+      ]
+    },
+    {
+      "id": "sebastian-vettel-2014-ricciardo-wins",
+      "driver_id": "sebastian-vettel",
+      "claim_ids": [
+        "sebastian-vettel-b2-2014"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 3,
+      "records_sha256": "31131c3e2f58d3e23c360deba48be782f874861a6d9a562141ab5347c06e9ea6",
+      "observed": 3
+    },
+    {
+      "id": "juan-manuel-fangio-1958-argentina-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "1191e61f0947a1b75024d9e5a2064d0ba9a28b8ec3d72f2c6ac4c5faa36db3f6",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1958-france-juan-manuel-fangio",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-last-season"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "4b7324ffc1b75ee56a79ae03baba15d003e74098ddcbb09d576a6c045b61d178",
+      "observed": [
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "id": "juan-manuel-fangio-1951-france-both-entries",
+      "driver_id": "juan-manuel-fangio",
+      "claim_ids": [
+        "juan-manuel-fangio-b2-alfa"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "4912e212911502423f1bbb9b0b39666a4e1073a40592a1137cd551a3e6a43aa8",
+      "observed": [
+        [
+          1,
+          true
+        ],
+        [
+          11,
+          false
+        ]
+      ]
+    },
+    {
+      "id": "jackie-stewart-1973-canada-jackie-stewart",
+      "driver_id": "jackie-stewart",
+      "claim_ids": [
+        "jackie-stewart-b2-cevert"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "1a43ac40a475e9de7ac2c4c0dd1366d08ee5e539d6b933b301a862c856e6b09d",
+      "observed": [
+        [
+          5
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1975-monaco-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-ending"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "47d1925438206b84f625bc6a6912be9e2f32a2b1281532a2b875af43ef451038",
+      "observed": [
+        [
+          "DNQ",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "graham-hill-1975-brazil-graham-hill",
+      "driver_id": "graham-hill",
+      "claim_ids": [
+        "graham-hill-b2-ending"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 1,
+      "records_sha256": "9f889ffe36f4a077a26fbf55dbdac0fecc45492f365fd09668e217ef5f0260ff",
+      "observed": [
+        [
+          12
+        ]
+      ]
+    },
+    {
+      "id": "mika-hakkinen-1995-podiums-source-correction",
+      "driver_id": "mika-hakkinen",
+      "claim_ids": [
+        "mika-hakkinen-b2-adelaide"
+      ],
+      "table": "f1db-races-race-results.json",
+      "matched_records": 2,
+      "records_sha256": "d24f5dbc3d0fd6eedc7289d9dfa467f415971999acd5126b9e1e01052439bb92",
+      "observed": 2
+    }
+  ],
+  "limits": [
+    "Source breadth and byte/record matches are not source-semantic or human approval.",
+    "Statistics assertions cover named fields; they do not mechanically verify every sentence.",
+    "Non-F1 events, early careers, style and interpretation need source review outside F1DB.",
+    "No database, public API, operator authorization or publication state is modified."
+  ]
+}

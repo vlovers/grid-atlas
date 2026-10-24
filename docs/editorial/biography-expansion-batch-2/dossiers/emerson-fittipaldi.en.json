@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "driver_id": "emerson-fittipaldi",
+  "locale": "en",
+  "title": "Emerson Fittipaldi — two crowns, then another racing life",
+  "author": "Codex AI-assisted research and bilingual drafting; accountable human editor unassigned",
+  "status": "needs_review",
+  "publication_status": "unpublished",
+  "reviewer": null,
+  "reviewed_at": null,
+  "sources": [
+    {
+      "source_id": "fittipaldi-hall",
+      "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+      "title": "Emerson Fittipaldi — Hall of Fame",
+      "publisher": "Formula 1",
+      "author": "Gerald Donaldson",
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "formula1"
+    },
+    {
+      "source_id": "f1db",
+      "source_url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+      "title": "F1DB v2026.17.0 — checksum-pinned split JSON",
+      "publisher": "F1DB",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "v2026.17.0; f1db-json-splitted.zip SHA-256 0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8; CC BY 4.0. Field/record matches are not editorial approval.",
+      "independence_group": "f1db"
+    },
+    {
+      "source_id": "fittipaldi-title",
+      "source_url": "https://www.mclaren.com/racing/heritage/how-emerson-fittipaldi-won-mclarens-first-f1-title-on-three-hours-sleep/",
+      "title": "How Emerson Fittipaldi won McLaren’s first F1 title on three hours sleep",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "mclaren"
+    },
+    {
+      "source_id": "fittipaldi-rrdc",
+      "source_url": "https://rrdc.org/member/emerson-fittipaldi/",
+      "title": "Emerson Fittipaldi",
+      "publisher": "Road Racing Drivers Club",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "rrdc"
+    },
+    {
+      "source_id": "fittipaldi-indy",
+      "source_url": "https://www.indianapolismotorspeedway.com/events/indy500/history/historical-stats/driver-stats/drivers/emerson-fittipaldi",
+      "title": "Emerson Fittipaldi — Indianapolis 500 Driver Stats",
+      "publisher": "Indianapolis Motor Speedway",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live source machine-inspected 24 October 2026; no immutable page revision supplied. Human passage review pending.",
+      "independence_group": "ims"
+    },
+    {
+      "source_id": "fittipaldi-mclaren-profile",
+      "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/emerson-fittipaldi/",
+      "title": "Emerson Fittipaldi — McLaren heritage profile",
+      "publisher": "McLaren Racing",
+      "author": null,
+      "accessed_on": "2026-10-24",
+      "version": "Live team historical profile machine-inspected 24 October 2026; exact publication/revision date unavailable. Human review pending.",
+      "independence_group": "mclaren"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "emerson-fittipaldi-b2-brazil",
+      "topic": "early_career",
+      "statement": "Emerson Fittipaldi’s early career combined racing with building cars. He and his brother Wilson worked on karts and Formula Vee machinery in Brazil before Emerson moved to England in 1969. Formula Ford, Formula 3 and then Formula 2 gave him a rapid route into the Lotus organisation, rather than an immediate leap from Brazil into a Grand Prix cockpit.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-hall",
+          "locator": "Early kart/Formula Vee business and 1969 arrival in England; Formula Ford/F3/F2 progression",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1970",
+      "topic": "key_events",
+      "statement": "He made his championship debut at the 1970 British Grand Prix. Later that season Jochen Rindt was killed during practice at Monza, and the inexperienced Fittipaldi became central to Lotus’s remaining campaign. His first victory came at Watkins Glen in the United States, helping secure Rindt’s posthumous championship.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-hall",
+          "locator": "1970 debut, Rindt’s death and Watkins Glen victory",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1970 first appearance and first win; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1972",
+      "topic": "championships",
+      "statement": "In 1972 Fittipaldi won in Spain, Belgium, Britain, Austria and Italy and became world champion. He was 25 when he secured the title. Jackie Stewart finished second in the standings. The five victories show how quickly the young driver had moved beyond the circumstances of his debut season to lead a championship-winning campaign of his own.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1972 five wins/title; dateOfBirth and Italian GP date; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-mclaren-profile",
+          "locator": "Opening heritage paragraph: youngest champion at 25 in the Lotus 72",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-peterson",
+      "topic": "teams_seasons",
+      "statement": "The following year Ronnie Peterson joined him at Lotus. Peterson won four races to Fittipaldi’s three, yet Fittipaldi finished ahead of him in the championship, second to Stewart.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1973 wins and final positions for Fittipaldi/Peterson/Stewart; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-move",
+      "topic": "teams_seasons",
+      "statement": "Fittipaldi moved to McLaren for 1974 and drove the M23. In the team’s retrospective he describes adapting to its handling during testing at Paul Ricard. He brought championship experience into a working group led by Teddy Mayer and Alastair Caldwell, while learning a different car and organisation.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Decision to leave Lotus, Paul Ricard test, M23 handling and requested changes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-regazzoni",
+      "topic": "championships",
+      "statement": "Victories in Brazil, Belgium and Canada carried him into a title contest with Ferrari’s Clay Regazzoni. They arrived at the United States finale level on points. Fittipaldi finished fourth at Watkins Glen and won the championship. His second title was also McLaren’s first drivers’ crown, linking his personal career to a lasting milestone in the team’s history.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1974 three wins; penultimate/final season standings and US fourth place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Championship showdown at Watkins Glen and first McLaren drivers’ title",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1975",
+      "topic": "championships",
+      "statement": "He remained with McLaren in 1975, winning in Argentina and Britain and finishing runner-up to Niki Lauda. His final Formula 1 victory came at Silverstone that year. By the end of the season he had won championships with two constructors and had remained in the top two of the drivers’ standings for four consecutive years.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1975 two wins and final position; 1972–1975 final positions 1/2/1/2; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-style",
+      "topic": "driving_style",
+      "statement": "McLaren’s account describes Fittipaldi’s smooth driving and meticulous preparation. At his first M23 test he requested more front wing while adapting to the car. For the 1974 title finale, his preparation with Gordon Coppuck included reducing rear wing to gain straight-line speed. Driving technique, balance and race planning were parts of the same approach.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "Paul Ricard adjustments; calm/meticulous preparation and Watkins Glen strategy",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-mclaren-profile",
+          "locator": "Opening biography paragraph: gentle and smooth touch and tactical perception",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-copersucar",
+      "topic": "teams_seasons",
+      "statement": "For 1976 he joined the Brazilian team associated with his brother Wilson and backed by Copersucar. The decision moved a two-time champion away from a proven front-running car into a much smaller project. There were no further Formula 1 wins, but second place in the 1978 Brazilian Grand Prix gave the enterprise a significant home result.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "1976 driver/constructor venture with brother’s team",
+          "supports": true
+        },
+        {
+          "source_id": "f1db",
+          "locator": "1976 Fittipaldi constructor; Brazil 1978 second place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-1980",
+      "topic": "teams_seasons",
+      "statement": "His last Formula 1 season was 1980. A third place in the United States West Grand Prix at Long Beach added a final podium before he stopped driving in the championship.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "1980 final season and US West third place; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "F1 retirement in 1980 and later comeback",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-indy",
+      "topic": "key_events",
+      "statement": "Fittipaldi began a new career in American single-seaters in 1984. He became CART champion in 1989 and won the Indianapolis 500 in both 1989 and 1993. The Speedway’s results register those two victories independently of his Formula 1 record.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "1984 IndyCar comeback, 1989 CART title and two Indianapolis victories",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-indy",
+          "locator": "Career wins and 1989/1993 race rows",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "emerson-fittipaldi-b2-legacy",
+      "topic": "significance",
+      "statement": "Two Formula 1 titles and 14 Grand Prix victories are one part of that wider career. The Lotus breakthrough, McLaren’s first drivers’ championship and the American revival each belong to a different competitive setting. Together they explain a legacy that survived the difficult family-team years and crossed beyond the category in which he first became world champion.",
+      "status": "needs_review",
+      "evidence": [
+        {
+          "source_id": "f1db",
+          "locator": "totalChampionshipWins=2, totalRaceWins=14; exact driverId/id=emerson-fittipaldi; see statistics-assertions.json for typed checks and archive-validation.json for executed record hashes",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-rrdc",
+          "locator": "F1 and CART championships",
+          "supports": true
+        },
+        {
+          "source_id": "fittipaldi-title",
+          "locator": "First McLaren drivers’ title",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "origins",
+      "title": "Building a route from Brazil",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-brazil",
+        "emerson-fittipaldi-b2-1970"
+      ]
+    },
+    {
+      "section_id": "breakthrough",
+      "title": "The Lotus championship",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-1972",
+        "emerson-fittipaldi-b2-peterson"
+      ]
+    },
+    {
+      "section_id": "mclaren",
+      "title": "A second title in a different team",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-move",
+        "emerson-fittipaldi-b2-regazzoni",
+        "emerson-fittipaldi-b2-1975"
+      ]
+    },
+    {
+      "section_id": "style",
+      "title": "A measured way of going quickly",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-style"
+      ]
+    },
+    {
+      "section_id": "family-team",
+      "title": "Leaving the established contender",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-copersucar",
+        "emerson-fittipaldi-b2-1980"
+      ]
+    },
+    {
+      "section_id": "legacy",
+      "title": "A second peak in America",
+      "claim_ids": [
+        "emerson-fittipaldi-b2-indy",
+        "emerson-fittipaldi-b2-legacy"
+      ]
+    }
+  ],
+  "gaps": [
+    "All passages and both translations require independent human editorial review; machine inspection and F1DB matches do not verify prose.",
+    "The International Motorsports Hall of Fame page gives age 26 for the 1972 title and an imprecise retirement decade; retain age 25 and the exact 1980 F1 endpoint from the cited team/record evidence.",
+    "Independent review of family-team motivations is outstanding; this draft states the documented move without inventing private motives."
+  ],
+  "media": []
+}
