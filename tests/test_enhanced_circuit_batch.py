@@ -32,5 +32,25 @@ class EnhancedCircuitBatchTests(unittest.TestCase):
             self.assertTrue(url.path.strip("/"))
             self.assertTrue(item["year"].strip())
 
+
+    def test_sources_are_specific_to_a_historical_claim(self):
+        # Avoid generic current-season pages and unrelated link-shaped evidence.
+        values=json.loads(DATA.read_text(encoding="utf8"))
+        by_id={item["id"]:item for item in values}
+        exact_results={
+            "interlagos":"/en/results/1973/races/315/brazil/race-result",
+            "zandvoort":"/en/results/1952/races/115/netherlands/race-result",
+            "buenos-aires":"/en/results/1955/races/135/argentina/race-result",
+            "kyalami":"/en/results/1967/races/244/south-africa/race-result",
+            "indianapolis":"/en/results/2005/races/779/united-states/race-result",
+        }
+        for circuit_id, path in exact_results.items():
+            self.assertEqual(urlsplit(by_id[circuit_id]["source"]).path, path)
+        for item in values:
+            path=urlsplit(item["source"]).path
+            self.assertNotEqual(path,"/en/racing/2026/bahrain")
+            self.assertNotEqual(path,"/en/results/1955/races")
+            self.assertNotIn("the-rare-occasions-every-car-was-a-finisher",path)
+
 if __name__=="__main__":
     unittest.main()
