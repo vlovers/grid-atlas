@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "emerson-fittipaldi",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+    "title": "Emerson Fittipaldi — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "emerson-fittipaldi-titles",
+      "topic": "career_chronology",
+      "en": "Fittipaldi won the Formula 1 Drivers' World Championship in 1972 and 1974.",
+      "uk": "Фіттіпальді здобув титули чемпіона світу Формули-1 серед пілотів у 1972 та 1974 роках.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "emerson-fittipaldi-first",
+      "topic": "career_chronology",
+      "en": "His first title came at the age of 25.",
+      "uk": "Перший чемпіонський титул він здобув у 25 років.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Attach precise per-claim source locator and independent publisher corroboration.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ]
+}
