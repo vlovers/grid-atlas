@@ -63,6 +63,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
           "locator": "Paragraph beginning 'Having made his Formula 1 debut': British Grand Prix in 1970.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.autosport.com/f1/news/fittipaldi-how-i-broke-into-formula-1-5104060/5104060/",
+          "locator": "First-person account paragraph beginning 'But the following year, 1970, I felt ready': Fittipaldi says his Formula 1 debut was planned for mid-July at the British Grand Prix at Brands Hatch.",
+          "supports": true
         }
       ]
     },
@@ -90,7 +95,6 @@
   "reviewed_at": null,
   "media": [],
   "gaps": [
-    "Find independent publisher passage for: emerson-fittipaldi-1970-debut",
     "Validate semantics of cited passages and translations before publication.",
     "Independent human EN/UK review and separate approval sidecars are required."
   ],
@@ -114,6 +118,13 @@
       "title": "FIA 2017 United States Grand Prix preview — maiden winners at Watkins Glen",
       "publisher": "FIA",
       "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.autosport.com/f1/news/fittipaldi-how-i-broke-into-formula-1-5104060/5104060/",
+      "title": "Fittipaldi: How I broke into Formula 1 — first-person account",
+      "publisher": "Autosport",
+      "independence_group": "autosport",
       "accessed_on": "2026-10-24"
     }
   ]
