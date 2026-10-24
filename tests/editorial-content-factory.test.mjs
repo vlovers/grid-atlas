@@ -48,12 +48,12 @@ test('real 30-driver batch reports 5 pilots and 25 research cards without invent
   assert.equal(report.totals.missing,0);
   assert.equal(report.totals.invalid,0);
   assert.equal(report.totals.approved_for_publication,0);
-  assert.equal(report.totals.research_claims_with_evidence,76);
+  assert.equal(report.totals.research_claims_with_evidence,96);
   assert.equal(report.totals.research_claims_without_evidence,0);
   assert.equal(report.totals.research_claims_with_independent_corroboration,0);
   assert.equal(report.drivers.filter(x=>x.kind==='research_draft').length,25);
   const strict=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-evidence'],{encoding:'utf8'});
-  assert.equal(strict.status,0,'all 76 research claims should have declared, structurally valid evidence');
+  assert.equal(strict.status,0,'all 96 research claims should have declared, structurally valid evidence');
   const corroborated=spawnSync(process.execPath,['scripts/editorial-content-coverage.mjs','--require-corroboration'],{encoding:'utf8'});
   assert.equal(corroborated.status,1,'same-publisher source links are not independent corroboration');
 });
