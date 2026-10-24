@@ -13,7 +13,7 @@ function fixture(){
     en:'Sourced English research text',uk:'Український текст дослідження',
     independent_publisher_links:!claim.second_publisher_pending,
     publisher_groups:claim.second_publisher_pending?['formula1']:['fia','formula1'],
-    linked_chapters:claim.narrative_chapters.map(id=>({chapter_id:id,en_heading:id,uk_heading:id})),
+    linked_chapters:claim.narrative_chapters.map(id=>({chapter_id:id,en_heading:id,uk_heading:id,en_body:'English narrative',uk_body:'Український розділ'})),
     evidence:[{source_url:'https://www.formula1.com/example',locator:'Specific passage',semantic_review:'pending'}],
     publication_status:'unpublished',human_fact_review:'pending',
     en_editorial_review:'pending',uk_editorial_review:'pending'
@@ -51,7 +51,7 @@ test('missing, duplicate and inconsistent claim-to-chapter provenance fail close
   const {provenance,worksheet}=fixture();
   worksheet.claims[0].linked_chapters=[];
   assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Chapter references mismatch/);
-  worksheet.claims[0].linked_chapters=provenance.claims[0].narrative_chapters.map(chapter_id=>({chapter_id}));
+  worksheet.claims[0].linked_chapters=provenance.claims[0].narrative_chapters.map(chapter_id=>({chapter_id,en_heading:chapter_id,uk_heading:chapter_id,en_body:'English narrative',uk_body:'Український розділ'}));
   worksheet.claims.push(structuredClone(worksheet.claims[0]));
   assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Duplicate worksheet claim/);
   worksheet.claims.pop();
@@ -98,6 +98,8 @@ test('Markdown review dossier includes both translations, precise locators and c
   assert.match(result.stdout,/Exact locator:/);
   assert.match(result.stdout,/Semantic review: pending/);
   assert.match(result.stdout,/Linked narrative chapters:/);
+  assert.match(result.stdout,/EN text:/);
+  assert.match(result.stdout,/UK text:/);
   assert.match(result.stdout,/Human review checklist:/);
   assert.match(result.stdout,/- \[ \] source_semantics:/);
   assert.match(result.stdout,/shown: 1/);
@@ -138,4 +140,10 @@ test('chapter filter fails closed for unknown chapter or absent driver',()=>{
   const unknown=run(['--driver=jack-brabham','--chapter=definitely-not-a-real-chapter']);
   assert.notEqual(unknown.status,0);
   assert.match(unknown.stderr,/Unknown chapter/);
+});
+
+test('review worklist rejects chapters without full bilingual narrative bodies',()=>{
+  const {provenance,worksheet}=fixture();
+  delete worksheet.claims[0].linked_chapters[0].uk_body;
+  assert.throws(()=>buildReviewWorklist(provenance,worksheet),/Incomplete bilingual narrative context/);
 });
