@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "jim-clark",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
+    "title": "Jim Clark — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson or Formula 1 editorial (verify exact byline)",
+    "locator": "1963 and 1965 title paragraphs; Indianapolis 500 paragraph",
+    "accessed_on": "2026-10-24",
+    "independence_group": "formula1",
+    "verification_note": "Public source discovered during research; exact claims require independent human passage review."
+  },
+  "claims": [
+    {
+      "claim_id": "jim-clark-career-milestone",
+      "topic": "career",
+      "en": "Jim Clark won the 1963 and 1965 Drivers' World Championships while racing for Lotus.",
+      "uk": "Джим Кларк здобув чемпіонські титули Формули-1 у 1963 та 1965 роках, виступаючи за Lotus.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jim-clark-context",
+      "topic": "historical_context",
+      "en": "His 1965 season also included victory in the Indianapolis 500, a separate event from the Formula 1 World Championship.",
+      "uk": "У сезоні 1965 року він також переміг в «Індіанаполіс 500» — змаганні, окремому від чемпіонату світу Формули-1.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Verify exact pinned F1DB identity and historical metrics.",
+    "Seek independent corroboration outside the Formula 1 publisher group.",
+    "Assign accountable human author and independent reviewer; do not publish automatically."
+  ]
+}
