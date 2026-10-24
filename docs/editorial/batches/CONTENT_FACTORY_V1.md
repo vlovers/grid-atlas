@@ -161,3 +161,5 @@ The chapter filter requires a driver, rejects unknown chapter IDs and includes o
 linked to that chapter. It does **not** mark source passages, translations, or chapters as
 verified; all review tasks remain pending. The summary counts in the header describe the
 full batch, while the `shown` field in JSON and Markdown indicates the filtered selection.
+
+The chapter-scoped Markdown packet now includes the **full EN and UK chapter prose**, not only headings. The exporter fails closed if either chapter language is absent. This lets a human reviewer compare the claim, cited locator, and actual narrative wording in one place; no automatic factual or translation approval is inferred.
