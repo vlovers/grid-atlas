@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Villeneuve won the 1997 Formula 1 Drivers' World Championship with Williams.",
       "uk": "Вільньов виграв чемпіонат світу Формули-1 серед пілотів 1997 року з Williams.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-Jacques-villeneuve.7gsINZWlAMv5jdtvUJKL8e",
+          "locator": "Paragraph beginning 'In 1997 Villeneuve fulfilled': seven wins and drivers title with Williams.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "jacques-villeneuve-debut",
       "topic": "career_chronology",
       "en": "Villeneuve debuted in Formula 1 with Williams in 1996.",
       "uk": "Вільньов дебютував у Формулі-1 з Williams у 1996 році.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-Jacques-villeneuve.7gsINZWlAMv5jdtvUJKL8e",
+          "locator": "Paragraph beginning 'He swept through the international ranks': Williams debut in 1996, Australian GP pole and P2.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
