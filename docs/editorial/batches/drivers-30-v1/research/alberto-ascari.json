@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Ascari won consecutive Formula 1 Drivers' World Championships in 1952 and 1953 with Ferrari.",
       "uk": "Аскарі здобув два поспіль титули чемпіона світу Формули-1 у 1952 та 1953 роках із Ferrari.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Paragraph beginning 'Given his family responsibilities': Ferrari titles in 1952 and 1953, six and five wins.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "alberto-ascari-monza",
       "topic": "career_chronology",
       "en": "Ascari died in a testing accident at Monza on 26 May 1955.",
       "uk": "Аскарі загинув під час випробувального заїзду в Монці 26 травня 1955 року.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
+          "locator": "Final career paragraphs: Monza Ferrari sports-car test crash on third lap and date May 26, 1955.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
