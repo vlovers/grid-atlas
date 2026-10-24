@@ -80,3 +80,25 @@ test('every new candidate has a story with two or more chapters and valid claim 
   }
   assert.deepEqual([...candidates],[],'candidates without narrative chapters');
 });
+
+test('invalid registry is rejected without throwing',()=>{
+  const {bundle}=sample();
+  assert.deepEqual(inspectNarrativeBundle(bundle,null).errors,['invalid_card_registry']);
+});
+
+test('malformed research claims and chapter claim references fail closed',()=>{
+  const {bundle,cards}=sample();
+  cards.get('sample').claims={claim_id:'not-an-array'};
+  bundle.stories[0].chapters[0].claim_ids={id:'sample-debut'};
+  const errors=inspectNarrativeBundle(bundle,cards).errors;
+  assert.ok(errors.some(x=>x.startsWith('invalid_claim_reference_collection')));
+  assert.ok(errors.some(x=>x.startsWith('invalid_claim_references')));
+  assert.ok(errors.some(x=>x.startsWith('orphan_claim')));
+});
+
+test('empty claim identifiers cannot pass narrative validation',()=>{
+  const {bundle,cards}=sample();
+  bundle.stories[0].chapters[0].claim_ids=[''];
+  const errors=inspectNarrativeBundle(bundle,cards).errors;
+  assert.ok(errors.some(x=>x.startsWith('invalid_claim_references')));
+});
