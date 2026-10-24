@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "driver_id": "alan-jones",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-alan-jones.2g6TF5HMcodjT4Jd6Xuub2",
+    "title": "Alan Jones — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "independence_group": "formula1",
+    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "alan-jones-champion",
+      "topic": "career_chronology",
+      "en": "Jones won the 1980 Formula 1 Drivers' World Championship with Williams.",
+      "uk": "Джонс виграв чемпіонат світу Формули-1 серед пілотів 1980 року з Williams.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "alan-jones-partnership",
+      "topic": "career_chronology",
+      "en": "His partnership with Williams helped establish the team as a championship contender.",
+      "uk": "Співпраця Джонса з Williams допомогла команді стати претендентом на чемпіонський титул.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Attach precise per-claim source locator and independent publisher corroboration.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ]
+}
