@@ -16,3 +16,25 @@
 @media(forced-colors:active){.frame{border-color:CanvasText}.media,.fallback p,.kicker,.caption,.caption a,.caption summary{color:CanvasText}.marker span{background:CanvasText}}
 
 .kind{font:.65rem/1.8 var(--font-mono,monospace);text-transform:uppercase;letter-spacing:.08em;color:var(--media-muted)}
+
+/* The actual reviewed image owns the frame; its semantics and credits stay in the figure. */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--media-bg);
+}
+@keyframes reviewed-image-appear {
+  from { opacity: .25; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .image { animation: reviewed-image-appear .4s ease-out both; }
+}
+@media (prefers-reduced-motion: reduce), (forced-colors: active) {
+  .image { animation: none; }
+}
+@media (max-width: 420px) {
+  .caption { font-size: .875rem; }
+  .links { gap: 0 1rem; }
+}
