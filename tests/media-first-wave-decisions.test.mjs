@@ -36,3 +36,21 @@ test('seven source-inspected candidates have exact Commons review locators, but 
   assert.match(sourceReview, /still have status \*\*BLOCK\*\*/);
   assert.match(sourceReview, /not a cryptographic original-byte inspection/);
 });
+
+test('read-only original-provenance report checks both observed binary hashes and excludes publication', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const report = JSON.parse(execFileSync(process.execPath, ['scripts/report-media-first-wave-readiness.mjs'], { encoding: 'utf8' }));
+  assert.equal(report.research_only, true);
+  assert.equal(report.source_count, 5);
+  assert.equal(report.binary_sha256_observations, 2);
+  assert.equal(report.public_assets, 0);
+  assert.equal(report.publishable_count, 0);
+  assert.equal(report.identities.length, 5);
+  assert.deepEqual(report.failures, []);
+  for (const identity of report.identities) {
+    assert.equal(identity.rights_approved, false);
+    assert.equal(identity.human_review, false);
+    assert.equal(identity.publication_allowed, false);
+    assert.ok(identity.blockers.includes('human_review_pending'));
+  }
+});
