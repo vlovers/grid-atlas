@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "driver_id": "jenson-button",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
+    "title": "Jenson Button — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "Hall of Fame biography, career chronology; verify exact paragraph per claim",
+    "independence_group": "formula1",
+    "verification_note": "Source page reviewed for these research statements; exact locators and independent corroboration pending."
+  },
+  "claims": [
+    {
+      "claim_id": "jenson-button-first-win",
+      "topic": "career_chronology",
+      "en": "Button took his first Formula 1 Grand Prix victory in Hungary in 2006.",
+      "uk": "Баттон здобув свою першу перемогу на Гран-прі Формули-1 в Угорщині у 2006 році.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jenson-button-brawn",
+      "topic": "career_chronology",
+      "en": "Button won the 2009 Formula 1 Drivers' World Championship driving for Brawn GP.",
+      "uk": "Баттон став чемпіоном світу Формули-1 серед пілотів у 2009 році за Brawn GP.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jenson-button-2009-start",
+      "topic": "career_chronology",
+      "en": "Button won six of the first seven races of the 2009 season.",
+      "uk": "Баттон виграв шість із перших семи перегонів сезону 2009 року.",
+      "review_status": "needs_review"
+    },
+    {
+      "claim_id": "jenson-button-mclaren",
+      "topic": "career_chronology",
+      "en": "Button joined McLaren for the 2010 Formula 1 season.",
+      "uk": "Баттон приєднався до McLaren у сезоні Формули-1 2010 року.",
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ]
+}
