@@ -18,7 +18,9 @@
     "audit:repo": "python3 scripts/audit-repository-assets.py",
     "audit:media": "node scripts/audit-media-readiness.mjs",
     "audit:editorial": "node scripts/editorial-content-coverage.mjs",
-    "audit:editorial:strict": "node scripts/editorial-content-coverage.mjs --require-evidence"
+    "audit:editorial:strict": "node scripts/editorial-content-coverage.mjs --require-evidence",
+    "audit:editorial:corroboration": "node scripts/editorial-content-coverage.mjs --require-corroboration",
+    "audit:editorial:narratives": "node scripts/editorial-narrative-audit.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
