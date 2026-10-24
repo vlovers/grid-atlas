@@ -82,18 +82,18 @@ def compile_batch(digest, circuits, races, layouts):
         # Localize neutral navigational labels; preserve names and numerical facts as source data.
         translations = {
             "en": {"heading": "Formula 1 archive", "summary":
-                   f"The archive records {count} World Championship Grands Prix at this circuit."
-                   if count else "No World Championship Grand Prix is recorded at this circuit in this archive.",
+                   f"The Formula 1 archive contains {count} race records associated with this circuit."
+                   if count else "This archive has no race records associated with this circuit.",
                    "coverage_label": "Recorded seasons", "layout_label": "Historical layout references"},
             "uk": {"heading": "Архів Формули-1", "summary":
-                   f"У цьому архіві зафіксовано {count} етапів чемпіонату світу Формули-1 на цій трасі."
-                   if count else "У цьому архіві немає записів про етапи чемпіонату світу Формули-1 на цій трасі.",
+                   f"Архів Формули-1 містить {count} записів про етапи, пов’язані з цією трасою."
+                   if count else "У цьому архіві немає записів про етапи, пов’язані з цією трасою.",
                    "coverage_label": "Зафіксовані сезони", "layout_label": "Посилання на історичні конфігурації"},
         }
         items.append({"circuit_external_id": ident, "source_name": name,
                       "recorded_races": count, "first_recorded_season": years[0] if years else None,
                       "last_recorded_season": years[-1] if years else None,
-                      "source_race_ids": race_ids_by_circuit[ident],
+                      "source_race_ids": sorted(race_ids_by_circuit[ident], key=int),
                       "historical_layout_ids": sorted(layout_ids_by_circuit[ident]),
                       "locales": translations, "editorial_status": "machine_generated_unreviewed",
                       "enriched_story": None, "licensed_media": []})
