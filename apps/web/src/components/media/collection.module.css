@@ -46,3 +46,33 @@
   .empty::before { display: none; }
   .empty > span { color: CanvasText; }
 }
+
+/* Approved images, when present, form a compact editorial contact sheet. */
+.gallery {
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+.gallery > :first-child {
+  grid-column: auto;
+}
+@media (min-width: 960px) {
+  .gallery:has(> :nth-child(3)) > :first-child {
+    grid-column: span 2;
+  }
+}
+.gallery > * {
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .gallery > *:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px color-mix(in srgb, var(--ink, #fff) 8%, transparent);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery > * { transition: none; }
+}
+@media (forced-colors: active) {
+  .gallery > * { transition: none; }
+}
