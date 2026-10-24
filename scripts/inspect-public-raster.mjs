@@ -15,7 +15,7 @@ function checkedDimensions(width, height) {
  * Reject animation, truncated RIFF chunks and inconsistent canvas/frame dimensions.
  */
 export function inspectWebpBytes(bytes) {
-  if (!Buffer.isBuffer(bytes) || bytes.length < 30 ||
+  if (!Buffer.isBuffer(bytes) || bytes.length < 26 ||
       bytes.toString('ascii', 0, 4) !== 'RIFF' ||
       bytes.toString('ascii', 8, 12) !== 'WEBP' ||
       bytes.readUInt32LE(4) + 8 !== bytes.length) {
