@@ -27,3 +27,11 @@ The existing real-archive GitHub Actions workflow runs those checks with actual 
 5. Keep photo/media licensing independently gated.
 
 The key metric is number of **published, verified** EN+UK circuit pages, not number of created research files.
+
+## First actual archive execution (GitHub Actions run `40135170860`)
+
+The pinned-archive generation step and artifact upload both **succeeded**. Downloaded and inspected `unpublished-circuit-content-batch01`, artifact `12576942110`: **25 entries**, with two locale objects each. Source ordering starts `monza` (76 race records), `monaco` (72), `silverstone` (61), `spa-francorchamps` (59), `montreal` (45). This is a fixed-archive observation, **not** proof that all listed races were completed.
+
+Important semantic correction applied after that first successful artifact: some source records may refer to scheduled events, so the reader-facing wording now says **race records associated with the circuit** instead of asserting that all records describe completed Grands Prix. Sorted source race IDs also make the JSON deterministic under shuffled source ordering. The strengthened assertions must pass new CI before relying on the updated output.
+
+Unpublished reading preview: generated locally from that real 25-circuit artifact as a separate HTML file for internal review, not a website asset. The website still uses its existing production archive services, and this content factory has not changed publicly visible pages.
