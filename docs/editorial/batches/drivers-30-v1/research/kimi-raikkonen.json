@@ -53,6 +53,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
           "locator": "Paragraph beginning 'The phlegmatic Finn delivered sensationally': 2007 Ferrari championship in Brazil.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+          "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 2007 Kimi Räikkönen, Ferrari.",
+          "supports": true
         }
       ]
     },
@@ -66,6 +71,11 @@
         {
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
           "locator": "Paragraph beginning 'Kimi Raikkonen finished a solid third overall in the 2018 Drivers Championship': US GP victory.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/raikkonen-wins-austin-ahead-verstappen-hamilton-title-fight-goes-mexico",
+          "locator": "FIA 2018 United States GP race report, opening paragraphs: Räikkönen wins in Ferrari.",
           "supports": true
         }
       ]
@@ -85,6 +95,20 @@
       "title": "Six things we learned about Kimi Raikkonen in his new book",
       "publisher": "Formula 1",
       "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+      "title": "FIA 2016 Italian GP media kit — F1 World Champions since 1950",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/raikkonen-wins-austin-ahead-verstappen-hamilton-title-fight-goes-mexico",
+      "title": "FIA 2018 United States GP race report",
+      "publisher": "FIA",
+      "independence_group": "fia",
       "accessed_on": "2026-10-24"
     }
   ]

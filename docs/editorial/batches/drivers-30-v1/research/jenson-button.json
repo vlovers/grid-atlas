@@ -39,6 +39,11 @@
           "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-jenson-button.3BuV7MDE7ykNAThxxLr8vT",
           "locator": "Paragraph beginning 'Nonetheless, Jenson steadily accumulated': 2009 title for Brawn GP.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/fia-goodwood-brawn-bgp-001-recent-legend",
+          "locator": "FIA 2016 Goodwood feature, paragraph 'An undisputed modern legend': 2009 Brawn GP car took Button to world title.",
+          "supports": true
         }
       ]
     },
@@ -85,6 +90,13 @@
       "title": "8 of McLaren's strongest driver pairings from their 1000 Grands Prix",
       "publisher": "Formula 1",
       "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/fia-goodwood-brawn-bgp-001-recent-legend",
+      "title": "FIA at Goodwood: Brawn BGP 001",
+      "publisher": "FIA",
+      "independence_group": "fia",
       "accessed_on": "2026-10-24"
     }
   ]

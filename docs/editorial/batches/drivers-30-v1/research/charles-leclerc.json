@@ -25,6 +25,11 @@
           "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
           "locator": "Article section 'First victory (2019)': Belgian Grand Prix win at Spa-Francorchamps for Ferrari.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-leclerc-takes-maiden-f1-win-belgian-ahead-hamilton-and-bottas",
+          "locator": "FIA 2019 Belgian GP race report, opening paragraph and race classification: first win at Spa for Ferrari.",
+          "supports": true
         }
       ]
     },
@@ -38,6 +43,11 @@
         {
           "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
           "locator": "Article section 'First Monaco victory (2024)': pole, race lead and victory at his home Grand Prix.",
+          "supports": true
+        },
+        {
+          "source_url": "https://api.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
+          "locator": "FIA 2024 Monaco GP race report, opening paragraph and P1 classification: home victory for Ferrari.",
           "supports": true
         }
       ]
@@ -53,6 +63,11 @@
           "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
           "locator": "Article section 'First pole position (2019)': joined F1 with Sauber two years after Ferrari Driver Academy in 2016.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/media_kit_6.pdf",
+          "locator": "FIA 2018 Mexican GP media kit, Sauber driver Charles Leclerc bio: F1 debut 2018 Australia (Sauber).",
+          "supports": true
         }
       ]
     },
@@ -66,6 +81,11 @@
         {
           "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
           "locator": "Article section 'First pole position (2019)': Bahrain qualifying, second race with Ferrari.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-2019-bahrain-grand-prix-saturday-press-conference-transcript",
+          "locator": "FIA 2019 Bahrain GP Saturday press conference, interviewer to Leclerc: first F1 pole in his second Ferrari Grand Prix.",
           "supports": true
         }
       ]
@@ -81,6 +101,11 @@
           "source_url": "https://www.formula1.com/en/latest/article/monza-magic-and-a-monaco-dream-leclercs-5-best-moments-from-his-time-at-ferrari-so-far.4Ewyo61ZBUgLTklPNbpKUs",
           "locator": "Article section 'First win at Monza (2019)': Ferrari victory following Belgian Grand Prix.",
           "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-leclerc-edges-epic-battle-hamilton-take-monza-victory",
+          "locator": "FIA 2019 Italian GP race report, opening paragraph: second successive win and Ferrari victory at Monza.",
+          "supports": true
         }
       ]
     }
@@ -92,5 +117,42 @@
     "Verify pinned F1DB identity.",
     "Attach exact source locators and independent corroboration.",
     "Independent human review required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-leclerc-takes-maiden-f1-win-belgian-ahead-hamilton-and-bottas",
+      "title": "FIA 2019 Belgian Grand Prix race report",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://api.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
+      "title": "FIA 2024 Monaco Grand Prix race report",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/sites/default/files/media_kit_6.pdf",
+      "title": "FIA 2018 Mexican Grand Prix media kit",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-2019-bahrain-grand-prix-saturday-press-conference-transcript",
+      "title": "FIA 2019 Bahrain GP Saturday press conference",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-leclerc-edges-epic-battle-hamilton-take-monza-victory",
+      "title": "FIA 2019 Italian Grand Prix race report",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
   ]
 }
