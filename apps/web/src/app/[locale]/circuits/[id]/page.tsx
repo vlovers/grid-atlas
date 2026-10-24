@@ -3,6 +3,7 @@ import { CircuitArchiveBrief } from '@/components/editorial/circuit-archive-brie
 import { CircuitHistoryStories } from '@/components/editorial/circuit-history-stories';
 import { CircuitExtraStories } from '@/components/editorial/circuit-extra-stories';
 import { CircuitNewcomerGuide } from '@/components/editorial/circuit-newcomer-guide';
+import { CircuitCornerGuide } from '@/components/editorial/circuit-corner-guide';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
 import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -95,8 +96,9 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitNewcomerGuide locale={locale === 'en' ? 'en' : 'uk'} circuitName={circuit.name} history={chronologicalHistory} layoutCount={layouts.length} />
-    <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
-    <CircuitExtraStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} history={chronologicalHistory} />
+    <CircuitExtraStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} history={chronologicalHistory} />
+    <CircuitCornerGuide circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitArchiveBrief externalId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} raceRecords={circuit.races} firstSeason={circuit.first_season} lastSeason={circuit.last_season} layoutCount={layouts.length} />
     <ArchiveHighlights locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Траса крізь епохи' : 'The circuit across eras'} description={locale === 'uk' ? 'Перший і останній зафіксовані етапи та провідні переможці. Історичні конфігурації могли змінюватися.' : 'Earliest and latest recorded events and leading winners. Historical layouts may differ.'} items={[
       ...(chronologicalHistory[0] ? [{ id: 'first', eyebrow: locale === 'uk' ? 'ПЕРШИЙ ЕТАП В АРХІВІ' : 'FIRST ARCHIVED EVENT', title: chronologicalHistory[0].race_name, detail: String(chronologicalHistory[0].season_year), href: `/${locale}/races/${chronologicalHistory[0].race_id}` }] : []),
