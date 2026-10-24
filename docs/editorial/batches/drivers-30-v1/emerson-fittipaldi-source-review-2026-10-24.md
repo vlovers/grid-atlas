@@ -11,9 +11,12 @@ Claim: `emerson-fittipaldi-1970-first-win`
 
 The FIA source has been added to the research card as a **second publisher group**, reducing the batch's source-diversity gap by one claim if the automated provenance audit agrees. This is publisher diversity, **not** independent human verification of historical semantics.
 
-## Remaining gap
+## Debut independently corroborated
 
-`emerson-fittipaldi-1970-debut` still has only the Formula 1 Hall of Fame source. The FIA British Grand Prix historical results tables do not by themselves establish that this was his **debut**, so they have **not** been attached as proof of that claim.
+- [Autosport, *Fittipaldi: How I broke into Formula 1*](https://www.autosport.com/f1/news/fittipaldi-how-i-broke-into-formula-1-5104060/5104060/): in his first-person account, the paragraph beginning **“But the following year, 1970, I felt ready”** states that his F1 debut was planned for the British Grand Prix at Brands Hatch in mid-July 1970. The interview is independent of Formula 1's Hall of Fame editorial publisher.
+- [Formula 1 official 1970 British Grand Prix results](https://www.formula1.com/en/results/1970/races/284/great-britain/race-result) separately confirms his participation (8th place), but is not treated as proof *by itself* that this was his debut.
+
+The research card now has two publisher groups for **all four** existing Fittipaldi claims. Human review remains pending.
 
 ## Other claims
 
