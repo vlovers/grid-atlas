@@ -10,7 +10,7 @@ Run Next.js from the monorepo workspace with the explicit flag:
 GRID_ATLAS_LOCAL_CONSTRUCTOR_PREVIEW=1 pnpm --filter @grid-atlas/web dev
 ```
 
-Open the **development-only manuscript index** at `/en/editorial/constructors` or `/uk/editorial/constructors` to navigate all twelve dossiers. Individual examples: `/en/editorial/constructors/ferrari`` or `/uk/editorial/constructors/team-lotus`. Other research subjects use their display names lowercased with spaces replaced by hyphens: `red-bull-racing`, `mclaren`, etc. In production or without the flag, the route returns a 404. It also returns 404 on unknown subjects, unsupported locales, unreadable draft source, wrong review status or a non-research manifest.
+Open the **development-only manuscript index** at `/en/editorial/constructors` or `/uk/editorial/constructors` to navigate all twelve dossiers. Individual examples: `/en/editorial/constructors/ferrari` or `/uk/editorial/constructors/team-lotus`. Other research subjects use their display names lowercased with spaces replaced by hyphens: `red-bull-racing`, `mclaren`, etc. In production or without the flag, the route returns a 404. It also returns 404 on unknown subjects, unsupported locales, unreadable draft source, wrong review status or a non-research manifest.
 
 The page reads the private monorepo research files server-side; do not add public static JSON or client-side imports. Its heading prominently says *unpublished*, `generateMetadata` disables index/follow and it never renders an editor approval control or a publish action.
 
