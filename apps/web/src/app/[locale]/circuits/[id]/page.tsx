@@ -95,7 +95,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: a.layouts, value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} scope={a.scope} />
     <SourceAttribution locale={locale === 'en' ? 'en' : 'uk'} />
     <CircuitNewcomerGuide locale={locale === 'en' ? 'en' : 'uk'} circuitName={circuit.name} history={chronologicalHistory} layoutCount={layouts.length} />
-    <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} />
+    <CircuitHistoryStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} history={chronologicalHistory} />
     <CircuitExtraStories circuitId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} history={chronologicalHistory} />
     <CircuitArchiveBrief externalId={circuit.external_id} locale={locale === 'en' ? 'en' : 'uk'} raceRecords={circuit.races} firstSeason={circuit.first_season} lastSeason={circuit.last_season} layoutCount={layouts.length} />
     <ArchiveHighlights locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Траса крізь епохи' : 'The circuit across eras'} description={locale === 'uk' ? 'Перший і останній зафіксовані етапи та провідні переможці. Історичні конфігурації могли змінюватися.' : 'Earliest and latest recorded events and leading winners. Historical layouts may differ.'} items={[
