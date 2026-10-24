@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Rosberg won the 1982 Formula 1 Drivers' World Championship with Williams.",
       "uk": "Росберг виграв чемпіонат світу Формули-1 серед пілотів 1982 року з Williams.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': Williams signed Rosberg; 1982 Drivers' World Championship.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "keke-rosberg-one-win",
       "topic": "career_chronology",
       "en": "He won just one championship Grand Prix during his title-winning 1982 season.",
       "uk": "У своєму чемпіонському сезоні 1982 року він виграв лише один заліковий Гран-прі.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-keke-rosberg.5oGvi8v8jkuvLTXHTgm0bt",
+          "locator": "Paragraph beginning 'Meanwhile, at the front': one Grand Prix victory at Dijon during 1982 championship.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
