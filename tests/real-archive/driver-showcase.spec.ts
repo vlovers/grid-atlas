@@ -54,7 +54,7 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(profile.locator(`#driver-teams a[href="/${locale}/explorer/drivers/${identity.id}?year=${timelineFirst.year}&selected=${timelineFirst.related_id}"]`)).toBeVisible();
       const firstWin = career.milestones.first_win;
       if (firstWin) {
-        const raceLink = profile.locator(`#driver-moments h3 a[href="/${locale}/races/${firstWin.race.id}"]`);
+        const raceLink = profile.locator(`#driver-moments h3 a[href="/${locale}/races/${firstWin.race.id}?from=${encodeURIComponent(`/drivers/${identity.id}`)}"]`);
         await raceLink.click();
         await expect(page.getByRole('heading', { level: 1 })).toHaveText(firstWin.race.name);
         await page.goBack();
