@@ -56,6 +56,26 @@ class CircuitCrosswalkTests(unittest.TestCase):
                                   {"silverstone": [1950]})
         self.assertEqual([x["race_external_id"] for x in result[0]["events"]], ["1", "2"])
 
+    def test_expected_event_matches_pinned_record(self):
+        rows = [{"circuit_external_id": circuit, "events": [
+            {"year": year, "race_external_id": race_id,
+             "race_date": date, "layout_external_id": layout}
+            for (venue, year), (race_id, date, layout)
+            in module.EXPECTED_EVENTS.items() if venue == circuit
+        ]} for circuit in sorted({x[0] for x in module.EXPECTED_EVENTS})]
+        module.verify_expected_events(rows)
+
+    def test_changed_layout_fails_pinned_record(self):
+        rows = [{"circuit_external_id": circuit, "events": [
+            {"year": year, "race_external_id": race_id,
+             "race_date": date, "layout_external_id": layout}
+            for (venue, year), (race_id, date, layout)
+            in module.EXPECTED_EVENTS.items() if venue == circuit
+        ]} for circuit in sorted({x[0] for x in module.EXPECTED_EVENTS})]
+        rows[0]["events"][0]["layout_external_id"] = "wrong-layout"
+        with self.assertRaises(ValueError):
+            module.verify_expected_events(rows)
+
     def test_duplicate_layout_rejected(self):
         with self.assertRaises(ValueError):
             module.crosswalk(self.circuits, self.layouts * 2, self.races, {"silverstone": [1950]})
