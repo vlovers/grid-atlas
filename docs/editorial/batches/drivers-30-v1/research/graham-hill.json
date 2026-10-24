@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": "Gerald Donaldson",
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame career narrative and championship heading; per-claim precise locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Research based on publicly accessible Formula 1 Hall of Fame page; independent corroboration and editorial approval pending."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Graham Hill won the Formula 1 Drivers' World Championship in 1962 and 1968.",
       "uk": "Грем Гілл виграв чемпіонат світу Формули-1 серед пілотів у 1962 та 1968 роках.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Hall of Fame title heading '1962, 1968'; BRM 1962 title paragraph and 1968 Lotus second title paragraph.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "graham-hill-family",
       "topic": "career_chronology",
-      "en": "His son Damon Hill won the 1996 Formula 1 Drivers' Championship.",
-      "uk": "Його син Деймон Гілл виграв чемпіонат світу Формули-1 серед пілотів у 1996 році.",
-      "review_status": "needs_review"
+      "en": "His son Damon Hill later also became a Formula 1 Drivers' World Champion.",
+      "uk": "Його син Деймон Гілл згодом також став чемпіоном світу Формули-1 серед пілотів.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Paragraph beginning 'The dashing driver': son Damon identified as a future champion.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
