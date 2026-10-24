@@ -26,8 +26,11 @@ test('driver and chapter prioritization is deterministic and conserves claim cou
   assert.ok(plan.drivers.every((d,i,a)=>i===0||
     a[i-1].missing_second_publisher>=d.missing_second_publisher));
   for(const driver of plan.drivers){
-    assert.equal(driver.claims,driver.linked_chapters.length===0?
-      driver.unlinked_claim_ids.length:driver.claims);
+    assert.ok(driver.claims>=driver.unlinked_claim_ids.length);
+    const linked=new Set(driver.linked_chapters.flatMap(ch=>ch.claim_ids));
+    assert.equal(linked.size+driver.unlinked_claim_ids.length,driver.claims);
+    assert.ok(driver.unlinked_claim_ids.every(id=>!linked.has(id)));
+    assert.ok(driver.linked_chapters.every(ch=>ch.missing_second_publisher<=ch.claim_ids.length));
     assert.ok(driver.linked_chapters.every(ch=>ch.claim_ids.length>0));
   }
 });
