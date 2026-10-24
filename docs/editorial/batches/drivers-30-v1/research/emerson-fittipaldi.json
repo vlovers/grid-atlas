@@ -9,9 +9,9 @@
     "publisher": "Formula 1",
     "author": null,
     "accessed_on": "2026-10-24",
-    "locator": "Hall of Fame profile / linked historical article; precise per-claim locator pending",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
     "independence_group": "formula1",
-    "verification_note": "Initial facts checked against the linked public Formula 1 source. Independent corroboration and exact claim-level source locators remain outstanding."
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
   },
   "claims": [
     {
@@ -19,14 +19,28 @@
       "topic": "career_chronology",
       "en": "Fittipaldi won the Formula 1 Drivers' World Championship in 1972 and 1974.",
       "uk": "Фіттіпальді здобув титули чемпіона світу Формули-1 серед пілотів у 1972 та 1974 роках.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Hall of Fame title heading '1972, 1974'; 1972 Lotus 72 championship paragraph and 1974 McLaren M23 championship paragraph.",
+          "supports": true
+        }
+      ]
     },
     {
       "claim_id": "emerson-fittipaldi-first",
       "topic": "career_chronology",
       "en": "His first title came at the age of 25.",
       "uk": "Перший чемпіонський титул він здобув у 25 років.",
-      "review_status": "needs_review"
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-emerson-fittipaldi.2H5252hs7KMUh5HBXoYdoW",
+          "locator": "Paragraph beginning 'In 1972 the Lotus 72': five victories and first world title at age 25.",
+          "supports": true
+        }
+      ]
     }
   ],
   "reviewer": null,
