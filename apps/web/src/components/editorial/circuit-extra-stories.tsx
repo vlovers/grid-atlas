@@ -1,8 +1,9 @@
 import facts from './circuit-extra-stories.json';
 import nextFacts from './circuit-next20-stories.json';
+import finalFacts from './circuit-final33-stories.json';
 import styles from './circuit-history-stories.module.css';
 type Entry = {id:string;title:{en:string;uk:string};description:{en:string;uk:string};year:string;source:string};
-const entries = [...facts, ...nextFacts] as Entry[];
+const entries = [...facts, ...nextFacts, ...finalFacts] as Entry[];
 export function CircuitExtraStories({circuitId, locale}:{circuitId:string;locale:'en'|'uk'}) {
   const item=entries.find(x=>x.id===circuitId);
   if(!item)return null;
