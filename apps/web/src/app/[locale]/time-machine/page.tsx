@@ -8,9 +8,12 @@ import {
   type TimeMachineAssociation,
   type TimeMachineCount,
 } from "@/lib/time-machine-api";
+import discoveryStyles from "@/components/history-atlas/discovery.module.css";
 import styles from "./time-machine.module.css";
 import { ComparisonStage } from "./comparison-stage";
 import { machineCopy } from "./copy";
+import { recordedCareer, suggestedComparisons, comparisonHref } from "@/lib/recorded-career";
+import { glossary } from "@/content/glossary";
 import TimeMachineYearForm from "./time-machine-year-form";
 
 export const dynamic = "force-dynamic";
@@ -194,8 +197,12 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
     (maximum, season) => Math.max(maximum, season.year),
     1950,
   );
-  const defaultTo = latest === 1950 ? 1951 : latest;
-  const defaultFrom = Math.max(1950, defaultTo - 1);
+  const words = glossary[locale as 'en' | 'uk'];
+  const career = id && validId(id) ? recordedCareer(await getData<unknown>(`/api/${kind}s/${id}/career?locale=${locale}`), kind, id) : null;
+  const suggestions = career ? suggestedComparisons(career) : [];
+  const recommended = suggestions[0];
+  const defaultTo = recommended?.to ?? (latest === 1950 ? 1951 : latest);
+  const defaultFrom = recommended?.from ?? Math.max(1950, defaultTo - 1);
   const fromText = requestedFrom ?? String(defaultFrom);
   const toText = requestedTo ?? String(defaultTo);
   const yearsValid = validYear(fromText) && validYear(toText);
@@ -220,6 +227,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
       comparison = await getTimeMachineComparison(kind, id, fromYear, toYear);
   } else if (id) compareError = t("timeMachineInvalidEntity");
 
+  const hasConnections = !!comparison && comparison.added.length + comparison.removed.length + comparison.unchanged.length > 0;
   return (
     <section className={`page ${styles.page}`}>
       <header className={styles.pageHeader}>
@@ -231,6 +239,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
         <p className="lead">{t("timeMachineLead")}</p>
       </header>
 
+      <details className={styles.archiveDisclosure} open={!id || !!search}><summary>{t("timeMachineSearchLabel")}</summary>
       <form className={styles.entityForm} action={formPath} method="get">
         <label>
           {t("timeMachineFocusType")}
@@ -249,12 +258,12 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
             placeholder={t("timeMachineSearchPlaceholder")}
           />
         </label>
-        <input type="hidden" name="from" value={fromText} />
-        <input type="hidden" name="to" value={toText} />
+        {requestedFrom && <input type="hidden" name="from" value={requestedFrom} />}
+        {requestedTo && <input type="hidden" name="to" value={requestedTo} />}
         <button className="primary" type="submit">
           {t("search")}
         </button>
-      </form>
+      </form></details>
 
       {search && !id && (
         <section
@@ -270,8 +279,8 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
                 const selection = new URLSearchParams({
                   kind,
                   id: entity.id,
-                  from: fromText,
-                  to: toText,
+                  ...(requestedFrom ? { from: requestedFrom } : {}),
+                  ...(requestedTo ? { to: requestedTo } : {}),
                 });
                 return (
                   <li key={entity.id}>
@@ -290,6 +299,26 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
         </section>
       )}
 
+      {career && (
+        <section className={discoveryStyles.period} aria-labelledby="tm-career-heading" data-testid="comparison-career">
+          <h2 id="tm-career-heading">{career.name}</h2>
+          {career.years.length ? <>
+            <p>{words.available} · <strong>{career.years[0]}–{career.years.at(-1)}</strong></p>
+            {yearsValid && (!career.years.includes(fromYear) || !career.years.includes(toYear)) && (
+              <div role="status" data-testid="comparison-period-notice">
+                <h3>{[fromYear, toYear].some(y => y < career.years[0] || y > career.years.at(-1)!) ? words.outside : words.gap}</h3>
+                <p>{[fromYear, toYear].some(y => y < career.years[0] || y > career.years.at(-1)!) ? words.outsideNote : words.gapNote}</p>
+              </div>
+            )}
+            <details><summary>{words.available}</summary><nav className={styles.archiveLinks} aria-label={words.available}>
+              {career.years.map(year => <a key={year} href={`/${locale}/atlas?kind=${kind}&id=${id}&year=${year}`}>{year}</a>)}
+            </nav></details>
+          </> : <p role="status">{words.noYears}</p>}
+          {suggestions.length > 0 && <details open={!hasConnections}><summary>{words.suggestions}</summary><nav className={styles.archiveLinks} aria-label={words.suggestions}>
+            {suggestions.map(pair => <a key={pair.from} href={comparisonHref(locale, career, pair.from, pair.to)}>{pair.from} → {pair.to} · {pair.changed ? words.changed : words.adjacent}</a>)}
+          </nav></details>}
+        </section>
+      )}
       {id && entityValid && (
         <TimeMachineYearForm
           locale={locale}
@@ -297,6 +326,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
           id={id}
           fromYear={fromText}
           toYear={toText}
+          years={career?.years ?? []}
           labels={{
             earlier: t("timeMachineEarlierSeason"),
             later: t("timeMachineLaterSeason"),
@@ -319,7 +349,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
 
       {comparison && (
         <>
-          <ComparisonStage
+          {hasConnections && <ComparisonStage
             key={`${kind}:${id}:${fromYear}:${toYear}`}
             comparison={comparison}
             locale={locale as "en" | "uk"}
@@ -329,8 +359,8 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
               entries: t("timeMachineEntries"),
               wins: t("timeMachineWinningResults"),
             }}
-          />
-          <p className={styles.disclaimer}>{t("timeMachineLimitations")}</p>
+          />}
+          <details className={styles.archiveDisclosure}><summary>{words.sources}</summary><p className={styles.disclaimer}>{t("timeMachineLimitations")}</p><p>{t("timeMachineProvenance")}</p><Link href="/sources">{words.sources} ↗</Link></details>
           {comparison.added.length +
             comparison.removed.length +
             comparison.unchanged.length ===
@@ -381,7 +411,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
               </div>
             </details>
           )}
-          <p className={styles.provenance}>{t("timeMachineProvenance")}</p>
+
           <nav
             className={styles.archiveLinks}
             aria-label={t("timeMachineSeasonGraphs")}

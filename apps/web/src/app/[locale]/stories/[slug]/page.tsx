@@ -1,3 +1,4 @@
+import { glossary } from '@/content/glossary';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { releasePilot, journeyYears, selectedYear } from '@/components/stories/release-model';
@@ -49,7 +50,7 @@ export default async function DriverStory({ params, searchParams }: Props) {
   const first = career.milestones.first_appearance?.race;
   const selected = career.participation.filter(r => r.year === year);
   const compare = timeMachinePath(driver.id, years), origin = siteOrigin();
-  const labels = { years: uk ? 'Зафіксовані сезони' : 'Observed seasons', entries: uk ? 'Записи результатів' : 'Result entries', wins: uk ? 'Переможні гонки в архіві' : 'Winning races in the archive', races: uk ? 'Зафіксовані гонки' : 'Recorded races' };
+  const labels = { years: uk ? 'Зафіксовані сезони' : 'Observed seasons', entries: uk ? 'Записи результатів' : 'Result entries', wins: glossary[locale].wins, races: uk ? 'Зафіксовані гонки' : 'Recorded races' };
   return <div className={`page ${styles.release}`} data-testid="driver-story">
     {editorial.status === 'unavailable' && <p role="status">{uk ? 'Редакційний матеріал тимчасово недоступний. Архівні записи залишаються доступними.' : 'Editorial content is temporarily unavailable. Archive records remain available.'}</p>}
     {origin && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageStructuredData(origin, locale, [{ name: 'Grid Atlas', path: '/' }, { name: uk ? 'Історії пілотів' : 'Driver stories', path: '/stories' }, { name: driver.name, path: `/stories/${slug}` }], pilot.prompt[locale])) }} />}

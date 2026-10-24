@@ -57,7 +57,7 @@ const labels = {
     latest: 'Latest recorded use', year: 'Season', distance: 'Race distance',
     laps: 'Laps', direction: 'Direction', source: 'Source and limits',
     noEvents: 'No linked Grand Prix is recorded for this layout.',
-    measurements: 'Event-specific measurements', showAll: 'Show all records',
+    measurements: 'Circuit facts for this Grand Prix', showAll: 'Show all records',
     note: 'Every row is specific to one event. Length and corner counts are not assumed valid for other years.',
     notMap: 'Abstract measurement scale, not a geographic track map',
     graphic: 'Historical layout outline',

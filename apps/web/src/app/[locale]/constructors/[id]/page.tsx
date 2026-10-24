@@ -1,3 +1,4 @@
+import { glossary } from '@/content/glossary';
 import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -72,7 +73,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
   return <section className={`page ${styles.dossier}`} data-testid="constructor-dossier">
     <EditorialHero title={team.name} eyebrow={`${storyCopy[locale].constructorHeader} / ${team.external_id}`}
       context={<><span>{range}</span>{identities[0]?.fields.country && <span>{identities[0].fields.country}</span>}</>}
-      lead={e.constructorLead} media={<EditorialMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'constructor', id: team.external_id }} title={team.name} years={range} locale={locale}><RecordGraphic rows={seasons.map(season => ({ year: season.year, records: season.races, wins: season.wins }))} label={locale === 'uk' ? 'Зафіксовані гонки' : 'Recorded races'} winsLabel={locale === 'uk' ? 'Переможні гонки' : 'Winning races'} locale={locale} /></EditorialMedia>}
+      lead={e.constructorLead} media={<EditorialMedia assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'constructor', id: team.external_id }} title={team.name} years={range} locale={locale}><RecordGraphic rows={seasons.map(season => ({ year: season.year, records: season.races, wins: season.wins }))} label={locale === 'uk' ? 'Зафіксовані гонки' : 'Recorded races'} winsLabel={glossary[locale].wins} locale={locale} /></EditorialMedia>}
       actions={<><a href={selectedSeason ? "#constructor-season" : "#constructor-archive"}>{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
       statistics={[{ label: t('seasons'), value: format(team.seasons) }, { label: t('races'), value: format(team.races) }, { label: t('wins'), value: format(team.wins) }, { label: t('driverPodiums'), value: format(team.podium_finishes) }]} scope={e.recordScope} />
     <SourceAttribution locale={locale} />
