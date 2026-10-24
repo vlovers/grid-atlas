@@ -45,7 +45,7 @@ for (const locale of ['uk', 'en'] as const) {
           expect((await navigation).method()).toBe('GET');
           await expect(page).toHaveURL(/page=2$/);
           await expect(page.getByTestId('circuit-history-table').locator('tbody tr')).toHaveCount(Math.min(25, history.length - 25));
-          await expect(page.getByTestId('circuit-history-table').locator('tbody tr').first().getByRole('link').nth(1)).toHaveAttribute('href', `/${locale}/races/${history[25].race_id}`);
+          await expect(page.getByTestId('circuit-history-table').locator('tbody tr').first().getByRole('link').nth(1)).toHaveAttribute('href', `/${locale}/races/${history[25].race_id}?from=${encodeURIComponent(`/circuits/${entity.id}`)}`);
           await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `http://127.0.0.1:3351/${locale}/circuits/${entity.id}?page=2`);
         }
         const winner = page.getByTestId('circuit-result-legends').getByRole('link').first();
