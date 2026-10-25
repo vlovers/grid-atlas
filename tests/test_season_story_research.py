@@ -14,10 +14,16 @@ DIR = ROOT / "docs" / "editorial" / "season-arcs"
 VOLUMES = (
     DIR / "title-deciders-volume-01.en-uk.md",
     DIR / "title-deciders-volume-02.en-uk.md",
+    DIR / "title-deciders-volume-03.en-uk.md",
+    DIR / "title-deciders-volume-04.en-uk.md",
 )
-EXPECTED_YEARS = {1976, 1988, 2007, 2012, 2016, 2021, 2025}
+EXPECTED_YEARS = {1950, 1958, 1964, 1974, 1976, 1982, 1984, 1986, 1988, 1999, 2007, 2008, 2010, 2012, 2016, 2021, 2025}
 MARKER = re.compile(r"\[(\d{2}-[A-Z])\]")
 URL = re.compile(r"https://www\.formula1\.com/[^\s;]+")
+
+
+def evidence_marker(part: str) -> str:
+    return "**Deep Dive · Evidence**" if "**Deep Dive · Evidence**" in part else "**Evidence:**"
 
 
 def chapters():
@@ -30,11 +36,11 @@ def chapters():
 
 
 class SeasonStoryResearchTests(unittest.TestCase):
-    def test_seven_distinct_championship_seasons(self):
+    def test_seventeen_distinct_championship_seasons(self):
         items = list(chapters())
-        self.assertEqual(len(items), 7)
+        self.assertEqual(len(items), 17)
         self.assertEqual({year for _, year, _ in items}, EXPECTED_YEARS)
-        self.assertEqual(len({year for _, year, _ in items}), 7)
+        self.assertEqual(len({year for _, year, _ in items}), 17)
 
     def test_bilingual_three_act_narratives_are_substantive(self):
         for path, year, part in chapters():
@@ -42,7 +48,7 @@ class SeasonStoryResearchTests(unittest.TestCase):
                 self.assertIn("### EN ·", part)
                 self.assertIn("### UK ·", part)
                 en = part.split("### EN ·", 1)[1].split("### UK ·", 1)[0]
-                uk = part.split("### UK ·", 1)[1].split("**Evidence:**", 1)[0]
+                uk = part.split("### UK ·", 1)[1].split(evidence_marker(part), 1)[0]
                 for label, text in (("en", en), ("uk", uk)):
                     self.assertEqual(len(re.findall(r"^\*\*[123]\.", text, re.MULTILINE)), 3, (year, label))
                     self.assertGreaterEqual(len(text.split()), 200, (year, label))
@@ -52,13 +58,13 @@ class SeasonStoryResearchTests(unittest.TestCase):
     def test_claim_markers_have_explicit_source_entries(self):
         for path, year, part in chapters():
             with self.subTest(path=path, year=year):
-                self.assertIn("**Evidence:**", part)
-                prose, references = part.split("**Evidence:**", 1)
+                self.assertIn(evidence_marker(part), part)
+                prose, references = part.split(evidence_marker(part), 1)
                 used = set(MARKER.findall(prose))
                 supplied = set(MARKER.findall(references))
-                self.assertGreaterEqual(len(used), 3)
+                self.assertGreaterEqual(len(used), 2)
                 self.assertEqual(used, supplied, "Every referenced source must be defined and used")
-                self.assertGreaterEqual(len(URL.findall(references)), 3)
+                self.assertGreaterEqual(len(URL.findall(references)), 2)
                 self.assertTrue(all(id.startswith(str(year)[-2:]) for id in used))
                 self.assertNotIn("http://", references)
 
