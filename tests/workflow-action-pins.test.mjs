@@ -109,3 +109,40 @@ test('accepts static registry and port with an immutable Docker digest', () => {
   const yaml = 'steps:\n  - uses: docker://registry.example.org:5000/team/image:1.0@sha256:' + 'a'.repeat(64) + '\n';
   assert.deepEqual(auditWorkflowText(yaml), []);
 });
+
+test('rejects quoted mutable uses keys and ambiguous inline action mappings', () => {
+  assert.match(auditWorkflowText("steps:\n  - 'uses': actions/checkout@v4\n")[0], /immutable SHA/);
+  assert.match(auditWorkflowText('steps:\n  - { name: checkout, uses: actions/checkout@v4 }\n')[0], /unsupported YAML/);
+});
+
+test('rejects anchored action declarations and trailing action tokens', () => {
+  assert.match(auditWorkflowText('steps:\n  - &step uses: actions/checkout@v4\n')[0], /unsupported YAML/);
+  assert.match(auditWorkflowText('steps:\n  - uses: actions/checkout@v4 extra\n')[0], /ambiguous action/);
+});
+
+test('rejects duplicate checkout with mappings and credential keys', () => {
+  const duplicateWith = `steps:
+  - uses: ${checkout}
+    with:
+      persist-credentials: false
+    with:
+      persist-credentials: true
+`;
+  const duplicateCredential = `steps:
+  - uses: ${checkout}
+    with:
+      persist-credentials: false
+      persist-credentials: true
+`;
+  assert.match(auditWorkflowText(duplicateWith)[0], /exactly once/);
+  assert.match(auditWorkflowText(duplicateCredential)[0], /exactly once/);
+});
+
+test('accepts pinned checkout with a trailing YAML comment', () => {
+  const yaml = `steps:
+  - uses: ${checkout} # immutable
+    with:
+      persist-credentials: false # do not retain token
+`;
+  assert.deepEqual(auditWorkflowText(yaml), []);
+});
