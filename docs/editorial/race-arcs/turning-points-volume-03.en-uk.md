@@ -1,6 +1,6 @@
 # Grid Atlas · Race turning points · Volume III (1967–2003)
 
-**Status:** UNPUBLISHED RESEARCH · 25 October 2026. EN/UK editorial drafts only; no independent historical or Ukrainian-language approval, no licensed imagery and no public race routes. **Quick** presents the paradox; **Explore** tells three causal acts; **Deep Dive** names evidence. Existing `/en/seasons/<year>` and `/uk/seasons/<year>` links are navigable season destinations, not claims that these manuscripts are published.
+**Status:** UNPUBLISHED RESEARCH · 25 October 2026. EN/UK editorial drafts only; independent historical review and Ukrainian-language review pending, no approval, no licensed imagery and no public race routes. **Quick** presents the paradox; **Explore** tells three causal acts; **Deep Dive** names evidence. Existing `/en/seasons/<year>` and `/uk/seasons/<year>` links are navigable season destinations, not claims that these manuscripts are published.
 
 ## 1967 · Italy — The drive that lost the race but stole the afternoon
 **UK:** Прорив, що не приніс перемоги, але запам’ятався всім  
