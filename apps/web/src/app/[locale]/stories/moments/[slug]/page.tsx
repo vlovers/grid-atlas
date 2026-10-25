@@ -62,7 +62,7 @@ export default async function EditorialMoment({ params }: Props) {
             <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
             <h3 style={{ margin: '8px 0', fontSize: 'clamp(22px, 2.5vw, 30px)' }}>{race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : (uk ? race.uk : race.en)}</h3>
             <p style={{ lineHeight: 1.7, maxWidth: '64ch' }}>{storyRaceContext(slug, index, locale)}</p>
-            <p className={styles.note}>{race.id ? (uk ? 'Підтверджено результатами архіву' : 'Matched to archive race results') : (uk ? 'Архівне посилання поки не підтверджено' : 'Archive link not yet confirmed')}</p>
+            <p className={styles.note}>{race.id ? (uk ? `Архівний запис підтверджено · пілотів у протоколі: ${race.verifiedBy}` : `Archive record matched · drivers corroborating: ${race.verifiedBy}`) : (uk ? 'Архівне посилання поки не підтверджено' : 'Archive link not yet confirmed')}</p>
           </li>)}
         </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
