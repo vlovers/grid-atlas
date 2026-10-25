@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const story = resolve(slug);
   if ((locale !== 'uk' && locale !== 'en') || !story) notFound();
-  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: false, follow: true } };
+  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: false, follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
 }
 
 /** Deliberately separate from the existing /stories/[slug] driver routes.
@@ -29,9 +29,10 @@ export default async function EditorialMoment({ params }: Props) {
   const beats = editorialMomentPath(slug, locale);
   const scenes = momentScenes(slug, locale);
   const related = relatedEditorialMoments(slug);
+  const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
-    <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a></nav>
+    <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header style={{ maxWidth: 850 }}>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
