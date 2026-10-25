@@ -1,6 +1,6 @@
 # Grid Atlas · Season stories · Volume VI-A (1967–1997)
 
-**Status:** UNPUBLISHED RESEARCH · original bilingual EN/UK three-act manuscripts · 25 October 2026. No independent human historical or Ukrainian editorial review; no public release or media approval. F1.com reporting is publisher-family evidence, not independent corroboration. Classification data do not establish motives, accident mechanisms or legal conclusions.
+**Status:** UNPUBLISHED RESEARCH · original bilingual EN/UK three-act manuscripts · 25 October 2026. Independent historical and Ukrainian-language editorial review pending; no public release or media approval. F1.com reporting is publisher-family evidence, not independent corroboration. Classification data do not establish motives, accident mechanisms or legal conclusions.
 
 **Reading layers:** Quick = story premise; Explore = three-act narrative; Deep Dive = source URLs and related seasons. Suggested trails are not validated internal race URLs.
 
