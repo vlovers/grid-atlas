@@ -6,6 +6,7 @@ import { momentScenes } from '@/components/stories/editorial-moment-scenes';
 import { relatedEditorialMoments } from '@/components/stories/editorial-related';
 import { draftArticle } from '@/components/stories/editorial-draft-articles';
 import { resolveEditorialPeople } from '@/components/stories/editorial-people-resolver';
+import { resolveEditorialRaces } from '@/components/stories/editorial-race-resolver';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -32,7 +33,7 @@ export default async function EditorialMoment({ params }: Props) {
   const related = relatedEditorialMoments(slug);
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
-  const protagonists = await resolveEditorialPeople(slug);
+  const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
@@ -50,6 +51,17 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ul>
         <p className={styles.note}>{uk ? 'Посилання доступні лише для пілотів, чий ідентифікатор точно збігається з архівом F1DB.' : 'Links appear only when the driver's identifier matches the canonical F1DB archive.'}</p>
+      </section>
+      <section aria-labelledby="story-races" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
+        <p className={styles.eyebrow}>{uk ? 'ПЕРЕВІРИТИ В АРХІВІ' : 'EXPLORE THE ARCHIVE'}</p>
+        <h2 id="story-races">{uk ? 'Гонки, що змінили історію' : 'The races behind the story'}</h2>
+        <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 230px), 1fr))', gap: 14, padding: 0, listStyle: 'none' }}>
+          {races.map(race => <li key={`${race.year}-${race.round}`} style={{ borderTop: '2px solid var(--accent-ink)', paddingTop: 14 }}>
+            <p className={styles.eyebrow}>{race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
+            {race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : <span>{uk ? race.uk : race.en}</span>}
+          </li>)}
+        </ul>
+        <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
       </section>
       {beats && <section aria-labelledby="reading-path" style={{ marginTop: 56, borderTop: "1px solid var(--line)", paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? "ЧОТИРИ СЮЖЕТНІ МОМЕНТИ" : "FOUR STORY BEATS"}</p>
