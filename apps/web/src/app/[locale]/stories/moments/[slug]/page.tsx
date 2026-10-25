@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { editorialStoryPreviews } from '@/components/stories/editorial-previews';
 import { editorialMomentPath } from '@/components/stories/editorial-moment-model';
+import { momentScenes } from '@/components/stories/editorial-moment-scenes';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -24,6 +25,7 @@ export default async function EditorialMoment({ params }: Props) {
   const uk = locale === 'uk';
   const copy = story[locale];
   const beats = editorialMomentPath(slug, locale);
+  const scenes = momentScenes(slug, locale);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a></nav>
     <article>
@@ -36,7 +38,7 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.eyebrow}>{uk ? "ЧОТИРИ СЮЖЕТНІ МОМЕНТИ" : "FOUR STORY BEATS"}</p>
         <h2 id="reading-path">{uk ? "Маршрут історією" : "A path through the story"}</h2>
         <ol style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 190px), 1fr))", gap: 18, listStyle: "none", padding: 0 }}>
-          {beats.map((beat, index) => <li key={beat} style={{ borderTop: "2px solid var(--accent-ink)", paddingTop: 14 }}><span className={styles.eyebrow}>{String(index + 1).padStart(2, "0")}</span><h3 style={{ margin: "12px 0" }}>{beat}</h3></li>)}
+          {beats.map((beat, index) => <li key={beat} style={{ borderTop: "2px solid var(--accent-ink)", paddingTop: 14 }}><span className={styles.eyebrow}>{String(index + 1).padStart(2, "0")}</span><h3 style={{ margin: "12px 0" }}>{beat}</h3>{scenes?.[index] && <p style={{ lineHeight: 1.7 }}>{scenes[index]}</p>}</li>)}
         </ol>
         <p className={styles.note}>{uk ? "Це редакційний маршрут, а не перевірена покрокова хронологія гонки." : "This is an editorial reading path, not a verified lap-by-lap race timeline."}</p>
       </section>}
