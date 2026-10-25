@@ -26,6 +26,10 @@ The late 1990s Ferrari project did not move upward in a straight line. Schumache
 
 Schumacher finally secured the drivers' championship for Ferrari at Suzuka in 2000. It ended the team's long wait for that title and began a run of success that would define an era. The conclusion should not erase the preceding years: engineers, leadership, teammates and Schumacher had all contributed to the eventual result. Nor should the outcome be described as inevitable. The achievement becomes more impressive when the reader understands how often the project had been close without succeeding. The story is about building an organisation capable of turning promise into a repeatable result.
 
+### Why the long build matters
+
+Ferrari's eventual success can be flattened into a before-and-after picture: no title, then Schumacher's title. The years between those points explain more than either endpoint. A responsible narrative shows individual race wins, championship defeats, a driver's injury and a constructors' title as distinct events. They were not interchangeable steps in a predetermined plan. This is also why the story belongs equally on the driver's page and the constructor's page. The same achievement looks different when viewed as one person's career or as the work of an evolving organisation.
+
 ## UK — Коротко
 
 Міхаель Шумахер прийшов до Ferrari в 1996 році дворазовим чемпіоном світу. Команда мала історію, ресурси й величезні очікування, але давно не вигравала особистий титул.
@@ -47,6 +51,10 @@ Ferrari почала вигравати окремі гонки раніше, н
 ### Сузука й довша перспектива
 
 У Сузуці 2000 року Шумахер нарешті забезпечив Ferrari особистий чемпіонський титул. Це завершило довге очікування команди й відкрило період успіхів, який визначив цілу епоху. Фінал не повинен стирати попередні роки: інженери, керівники, напарники й сам Шумахер зробили внесок у результат. Не варто й називати його неминучим. Досягнення стає значнішим, коли читач розуміє, скільки разів команда наближалася до мети, але не досягала її. Це історія побудови організації, здатної перетворити перспективу на повторюваний результат.
+
+### Чому важливий довгий шлях
+
+Майбутній успіх Ferrari легко звести до двох кадрів: до Шумахера титулу немає, після — є. Але роки між ними пояснюють більше за будь-який із цих кадрів. Відповідальна розповідь показує окремі перемоги, поразки в боротьбі за чемпіонство, травму пілота та Кубок конструкторів як різні події. Вони не були взаємозамінними кроками наперед визначеного плану. Саме тому ця історія однаково потрібна на сторінці гонщика й на сторінці конструктора. Те саме досягнення має різний вигляд як частина особистої кар’єри та як результат розвитку цілої організації.
 
 ## Deep Dive — source and editorial gates
 
