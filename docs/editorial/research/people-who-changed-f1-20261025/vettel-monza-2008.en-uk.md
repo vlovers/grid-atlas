@@ -26,6 +26,10 @@ The temptation is to present Monza as a fairy tale in which weather randomly sel
 
 A reader should be able to follow this event in several directions: back to Toro Rosso's development, forward to Vettel's move to Red Bull Racing, sideways to the 2008 championship and into Monza's history. Those routes should use verified driver, constructor and race identifiers, not simply similar names. The lesson of the weekend is that an opening is not the same as a result. The rain made an upset possible. Vettel and Toro Rosso made it happen.
 
+### The team behind the unexpected result
+
+An upset is easier to celebrate than to explain. Toro Rosso's engineers and mechanics had to prepare a car capable of taking advantage of difficult conditions; Vettel had to convert that preparation into a qualifying lap and a controlled race. This distinction helps the story avoid the familiar lone-genius myth. A driver profile can celebrate the person at the wheel while a constructor profile reveals the people and decisions that made the performance possible. The links between those profiles are part of the story, not an optional appendix.
+
 ## UK — Коротко
 
 Гран-прі Італії 2008 року проходив під впливом дощової погоди. Себастьян Феттель здобув поул за Toro Rosso — команду, яка зазвичай боролася далеко від лідерів.
@@ -47,6 +51,10 @@ A reader should be able to follow this event in several directions: back to Toro
 ### Шлях крізь архів
 
 Читач має змогу продовжити цю історію в різних напрямках: назад — до розвитку Toro Rosso, уперед — до переходу Феттеля в Red Bull Racing, убік — до чемпіонату 2008 року, глибше — до історії Монци. Для цього потрібні перевірені ідентифікатори гонщика, конструктора й етапу, а не просто схожі назви. Головний висновок того вікенду простий: шанс і результат — різні речі. Дощ зробив сенсацію можливою. Феттель і Toro Rosso перетворили її на реальність.
+
+### Команда за несподіваним результатом
+
+Сенсацію легше святкувати, ніж пояснити. Інженери й механіки Toro Rosso мали підготувати болід, здатний скористатися складними умовами, а Феттель — перетворити цю підготовку на швидке коло та впевнену гонку. Так історія уникає міфу про самотнього генія. Профіль пілота може показати людину за кермом, а сторінка конструктора — людей і рішення, що зробили результат можливим. Зв’язки між цими сторінками є частиною історії, а не необов’язковим додатком.
 
 ## Deep Dive — evidence and review
 
