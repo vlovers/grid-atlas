@@ -7,8 +7,23 @@ export function auditWorkflowText(source, filename = 'workflow') {
   const findings = [];
   for (let i = 0; i < lines.length; i++) {
     // Check all uses keys, including empty references; fail closed on dynamic refs.
-    const match = /^(\s*)(?:-\s+)?uses:\s*(\S*)/.exec(lines[i]);
-    if (!match) continue;
+    const line = lines[i];
+    if (/^\s*#/.test(line)) continue;
+    // Reject YAML forms that can hide an action from this intentionally small scanner.
+    if (/^\s*(?:-\s*)?\{.*(?:['"]?uses['"]?)\s*:/.test(line) ||
+        /^\s*(?:-\s+)?\?\s*['"]?uses['"]?\s*$/.test(line) ||
+        /^\s*(?:-\s+)?&[A-Za-z0-9_-]+\s+['"]?uses['"]?\s*:/.test(line) ||
+        /^\s*(?:-\s+)?<<\s*:/.test(line)) {
+      findings.push(filename + ':' + (i + 1) + ': unsupported YAML structure near action reference');
+      continue;
+    }
+    const match = /^(\s*)(?:-\s+)?(?:uses|['"]uses['"]):\s*(\S*)(?:\s+(?:#.*)?)?$/.exec(line);
+    if (!match) {
+      if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s*:/.test(line)) {
+        findings.push(filename + ':' + (i + 1) + ': ambiguous action reference');
+      }
+      continue;
+    }
     const [, indentation, reference] = match;
     const local = reference.startsWith('./') &&
       /^\.\/[A-Za-z0-9_./-]+$/.test(reference) &&
@@ -29,11 +44,13 @@ export function auditWorkflowText(source, filename = 'workflow') {
     }
     const stepLines = lines.slice(i + 1, end);
     const usesIndent = indentation.length;
-    const withLine = stepLines.findIndex((line) =>
-      /^\s*with:\s*(?:#.*)?$/.test(line) &&
-      line.match(/^\s*/)[0].length === usesIndent + 2);
+    const withLines = stepLines.map((line, index) => ({ line, index }))
+      .filter(({ line }) => /^\s*(?:with|['"]with['"])\s*:/.test(line) &&
+        line.match(/^\s*/)[0].length === usesIndent + 2);
     let credentialsDisabled = false;
-    if (withLine !== -1) {
+    let credentialCount = 0;
+    if (withLines.length === 1 && /^\s*(?:with|['"]with['"]):\s*(?:#.*)?$/.test(withLines[0].line)) {
+      const withLine = withLines[0].index;
       const withIndent = stepLines[withLine].match(/^\s*/)[0].length;
       for (let j = withLine + 1; j < stepLines.length; j++) {
         const line = stepLines[j];
@@ -41,13 +58,14 @@ export function auditWorkflowText(source, filename = 'workflow') {
         const keyIndent = line.match(/^\s*/)[0].length;
         if (keyIndent <= withIndent) break;
         if (keyIndent === withIndent + 2 &&
-            /^\s*persist-credentials:\s*false\s*(?:#.*)?$/.test(line)) {
-          credentialsDisabled = true;
+            /^\s*(?:persist-credentials|['"]persist-credentials['"]):\s*/.test(line)) {
+          credentialCount++;
+          credentialsDisabled = /^\s*(?:persist-credentials|['"]persist-credentials['"]):\s*false\s*(?:#.*)?$/.test(line);
         }
       }
     }
-    if (!credentialsDisabled) {
-      findings.push(filename + ':' + (i + 1) + ': checkout must explicitly set persist-credentials: false');
+    if (!credentialsDisabled || credentialCount !== 1) {
+      findings.push(filename + ':' + (i + 1) + ': checkout must set persist-credentials: false exactly once in one with mapping');
     }
   }
   return findings;
