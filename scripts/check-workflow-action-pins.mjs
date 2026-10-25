@@ -17,14 +17,25 @@ export function auditWorkflowText(source, filename = 'workflow') {
       findings.push(filename + ':' + (i + 1) + ': unsupported YAML structure near action reference');
       continue;
     }
-    const match = /^(\s*)(?:-\s+)?(?:uses|['"]uses['"]):\s*(\S*)(?:\s+(?:#.*)?)?$/.exec(line);
+    const match = /^(\s*)(?:-\s+)?(?:uses|['"]uses['"]):\s*(\S*)(.*)$/.exec(line);
     if (!match) {
       if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s*:/.test(line)) {
         findings.push(filename + ':' + (i + 1) + ': ambiguous action reference');
       }
       continue;
     }
-    const [, indentation, reference] = match;
+    const [, indentation, rawReference, rawTail] = match;
+    let reference = rawReference.startsWith('#') ? '' : rawReference;
+    const tail = rawReference.startsWith('#') ? '' : rawTail.trim();
+    if (tail && !tail.startsWith('#')) {
+      // GitHub expressions may contain spaces; they are still rejected as dynamic refs.
+      if (reference.includes('${{') && tail.includes('}}')) {
+        reference += ' ' + tail;
+      } else {
+        findings.push(filename + ':' + (i + 1) + ': ambiguous action reference');
+        continue;
+      }
+    }
     const local = reference.startsWith('./') &&
       /^\.\/[A-Za-z0-9_./-]+$/.test(reference) &&
       reference.slice(2).split('/').every((part) => part !== '' && part !== '.' && part !== '..');
