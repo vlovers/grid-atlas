@@ -55,12 +55,14 @@ export default async function EditorialMoment({ params }: Props) {
       <section aria-labelledby="story-races" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ПЕРЕВІРИТИ В АРХІВІ' : 'EXPLORE THE ARCHIVE'}</p>
         <h2 id="story-races">{uk ? 'Гонки, що змінили історію' : 'The races behind the story'}</h2>
-        <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 230px), 1fr))', gap: 14, padding: 0, listStyle: 'none' }}>
-          {races.map(race => <li key={`${race.year}-${race.round}`} style={{ borderTop: '2px solid var(--accent-ink)', paddingTop: 14 }}>
-            <p className={styles.eyebrow}>{race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
-            {race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : <span>{uk ? race.uk : race.en}</span>}
+        <ol style={{ display: 'grid', gap: 0, padding: '0 0 0 18px', listStyle: 'none', borderLeft: '2px solid var(--accent-ink)' }}>
+          {races.map((race, index) => <li key={`${race.year}-${race.round}`} style={{ position: 'relative', padding: '12px 0 28px 24px' }}>
+            <span aria-hidden="true" style={{ position: 'absolute', top: 18, left: -25, width: 12, height: 12, borderRadius: '50%', background: 'var(--accent-ink)', border: '2px solid var(--surface, #fff)' }} />
+            <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
+            <h3 style={{ margin: '8px 0', fontSize: 'clamp(22px, 2.5vw, 30px)' }}>{race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : (uk ? race.uk : race.en)}</h3>
+            <p className={styles.note}>{race.id ? (uk ? 'Підтверджено результатами архіву' : 'Matched to archive race results') : (uk ? 'Архівне посилання поки не підтверджено' : 'Archive link not yet confirmed')}</p>
           </li>)}
-        </ul>
+        </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
       </section>
       {beats && <section aria-labelledby="reading-path" style={{ marginTop: 56, borderTop: "1px solid var(--line)", paddingTop: 32 }}>
