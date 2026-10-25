@@ -1,6 +1,6 @@
 # Grid Atlas · Season stories · Volume IV (1984–2010)
 
-**Status:** unpublished EN/UK editorial research · 25 October 2026. Original three-act narratives; independent historical and bilingual review pending. No image, video, quote or publication approval is granted. The source list verifies named race/season claims but is not independent multi-publisher corroboration.
+**Status:** UNPUBLISHED RESEARCH · EN/UK editorial research · 25 October 2026. Original three-act narratives; independent historical and bilingual review pending. No image, video, quote or publication approval is granted. The source list verifies named race/season claims but is not independent multi-publisher corroboration.
 
 **Reader path:** Quick = opening premise; Explore = three-act story; Deep Dive = specific sources, related people, teams, circuits and races. Resolve historical race IDs from pinned F1DB before adding internal links.
 
