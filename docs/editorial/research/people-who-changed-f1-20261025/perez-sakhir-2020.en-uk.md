@@ -26,6 +26,10 @@ Mercedes' double pit stop went wrong, forcing the team to correct its tyre alloc
 
 Pérez crossed the line to take his first Grand Prix victory. Russell's disappointment remained part of the same result, as did the achievement of Racing Point. It is possible to recognise all three without pretending that only one deserved the outcome. Sport often rewards the person who is ready when the unexpected happens. But readiness must be built during the race, not assigned afterward by the storyteller. A full Deep Dive should trace the pit stops and lap positions from official records, then let the contrast between the two drivers carry the emotion.
 
+### Two first wins cannot happen together
+
+At Sakhir, Pérez and Russell each had a plausible path to a first Grand Prix win, but only one could take the result. This tension is stronger than the familiar contrast between a lucky winner and an unlucky favourite. The race should be told with parallel timelines: Pérez recovering from the back and Russell leading the Mercedes challenge. They converge at the late pit-stop disruption and puncture, then separate again at the finish. The timeline must distinguish a documented mechanical or procedural failure from speculation about what would have happened without it.
+
 ## UK — Коротко
 
 Серхіо Перес приїхав на Гран-прі Сахіру 2020 року з невизначеним майбутнім у Формулі-1. Наступного сезону місце в Racing Point уже не мало належати йому.
@@ -47,6 +51,10 @@ Pérez crossed the line to take his first Grand Prix victory. Russell's disappoi
 ### Одна перемога, кілька значень
 
 Перес перетнув фінішну лінію й здобув першу перемогу в Гран-прі. Розчарування Расселла залишилося частиною того самого результату, як і досягнення Racing Point. Можна визнати всі три факти, не вдаючи, ніби лише один пілот заслуговував на успіх. Спорт часто винагороджує того, хто готовий до несподіваного. Але готовність створюють під час гонки, а не приписують заднім числом. Повний матеріал має відновити пітстопи й позиції за офіційними даними, а емоцію залишити контрасту двох історій.
+
+### Дві перші перемоги одночасно неможливі
+
+У Сахірі Перес і Расселл мали реальні шанси на свою першу перемогу в Гран-прі, але здобути її міг лише один. Це напруження цікавіше за звичний поділ на щасливого переможця й невдаху-фаворита. Історію варто розповідати двома паралельними лініями: повернення Переса з кінця пелотону та боротьба Расселла за Mercedes. Вони сходяться під час пізньої плутанини на пітстопі й проколу, а на фініші знову розходяться. Хронологія повинна відділяти підтверджену технічну чи процедурну проблему від припущень про те, що сталося б без неї.
 
 ## Deep Dive — source and editorial gates
 
