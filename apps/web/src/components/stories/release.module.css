@@ -453,3 +453,19 @@
 .editorialProse p:not(.eyebrow){font-size:clamp(1.05rem,1.4vw,1.18rem);line-height:1.9;max-width:68ch}
 .editorialProse section:first-child p:not(.eyebrow):first-of-type:first-letter{font-size:1.2em}
 @media(max-width:760px){.editorialChapters{grid-template-columns:minmax(0,1fr)}.editorialChapterNav{position:static;max-height:none;flex-direction:row;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:1rem}.editorialChapterNav a{flex:0 0 min(75vw,240px);scroll-snap-align:start;border-inline-start:0;border-bottom:2px solid var(--line)}.editorialHero{min-height:400px}.editorialHero:before{width:100%;right:-50%}}
+
+/* Native scroll progress: decorative, no JavaScript and no content dependency. */
+.editorialReading{view-timeline-name:--editorial-page;view-timeline-axis:block}
+.editorialProgress{position:fixed;inset:0 0 auto;z-index:40;height:3px;pointer-events:none;background:var(--accent-ink);transform:scaleX(0);transform-origin:left center}
+@supports (animation-timeline:scroll()){
+  .editorialProgress{animation:editorial-progress linear both;animation-timeline:scroll(root block)}
+  @keyframes editorial-progress{to{transform:scaleX(1)}}
+}
+.editorialRaceTrack{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(1rem,2.5vw,2rem);margin:2rem 0;padding:1.5rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.editorialRaceCard{position:relative;min-width:0;padding:1.5rem;border:1px solid var(--line);background:linear-gradient(150deg,var(--surface),transparent)}
+.editorialRaceCard:before{content:'';display:block;width:3rem;height:4px;background:var(--accent-ink);margin-bottom:1.5rem}
+.editorialRaceCard h3{font-size:clamp(1.35rem,2.5vw,2.2rem);margin:.5rem 0 1rem}
+.editorialRaceCard p{max-width:65ch}
+.editorialRaceNumber{font-size:clamp(3.5rem,8vw,6.5rem);font-weight:800;letter-spacing:-.09em;line-height:1;font-variant-numeric:tabular-nums;opacity:.22}
+.editorialRaceCard a{display:inline-flex;min-height:44px;align-items:center;font-weight:700}
+@media(prefers-reduced-motion:reduce){.editorialProgress{animation:none;transform:none}}
