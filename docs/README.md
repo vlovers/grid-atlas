@@ -12,7 +12,7 @@ This directory contains **current operating documentation**, **historical implem
 | Historical data and provenance | [Data-source register](data-sources/README.md) |
 | Editorial approval and publication | [Editorial release pipeline](editorial/APPROVED_RELEASE_PIPELINE.md) and [verification policy](editorial-verification.md) |
 | Unpublished championship story research | [Season arcs: 35 bilingual championship research manuscripts](editorial/season-arcs/README.md) — research only, not approved public articles |
-| Unpublished landmark race stories | [Race turning points: 10 bilingual three-act manuscripts](editorial/race-arcs/README.md) — source-backed research, not published race pages |
+| Unpublished landmark race stories | [Race turning points: 20 bilingual three-act manuscripts](editorial/race-arcs/README.md) — source-backed research, not published race pages |
 | Unified catalogue and archive templates | [Unified archive implementation](design/unified-archive/README.md) and [media context/provenance](media/library-v1-foundation.md) |
 | Current sprint status and visual evidence | [23 October audit](sprint-audit-2026-10-23.md) and [Visual Storytelling V2](design/visual-storytelling-v2/README.md) |
 | Media licensing and SVG attribution | [Approved imagery workflow](media/approved-imagery-workflow.md), [media registry](media/README.md) and [historical SVG provenance](media/historical-circuit-svg-provenance.md) |
