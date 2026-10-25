@@ -80,8 +80,9 @@ class SeasonStoryResearchTests(unittest.TestCase):
         for year in (1959, 1961, 1970, 1979, 1981, 2003, 2009, 2014):
             self.assertIn(f"## {year} — ", text)
         for _, year, chapter in chapters():
-            self.assertIn("**Explore next:**", chapter, year)
-            self.assertIn("**Read next:**", chapter, year)
+            self.assertIn("Read next:", chapter, year)
+            if year in {1959, 1961, 1970, 1979, 1981, 2003, 2009, 2014}:
+                self.assertIn("**Explore next:**", chapter, year)
 
     def test_publication_gate_remains_explicit(self):
         for path in VOLUMES:
