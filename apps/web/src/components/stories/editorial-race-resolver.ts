@@ -2,7 +2,6 @@ import 'server-only';
 import { cache } from 'react';
 import { releaseResults } from './release-data';
 import { storyRaceCoordinates } from './editorial-race-coordinates';
-import { storyPeopleFor } from './editorial-people';
 import { resolveEditorialPeople } from './editorial-people-resolver';
 
 /** Only race IDs confirmed by a canonical participant's year/round results are linked. */
