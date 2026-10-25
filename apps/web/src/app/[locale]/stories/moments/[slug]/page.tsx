@@ -5,7 +5,7 @@ import { editorialMomentPath } from '@/components/stories/editorial-moment-model
 import { momentScenes } from '@/components/stories/editorial-moment-scenes';
 import { relatedEditorialMoments } from '@/components/stories/editorial-related';
 import { draftArticle } from '@/components/stories/editorial-draft-articles';
-import { storyPeopleFor } from '@/components/stories/editorial-people';
+import { resolveEditorialPeople } from '@/components/stories/editorial-people-resolver';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -32,7 +32,7 @@ export default async function EditorialMoment({ params }: Props) {
   const related = relatedEditorialMoments(slug);
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
-  const protagonists = storyPeopleFor(slug);
+  const protagonists = await resolveEditorialPeople(slug);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
@@ -45,11 +45,11 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.eyebrow}>{uk ? 'ДІЙОВІ ОСОБИ' : 'THE PEOPLE'}</p>
         <h2 id="story-people">{uk ? 'Хто стоїть за цією історією' : 'The people behind the story'}</h2>
         <ul style={{ display: 'flex', flexWrap: 'wrap', gap: 12, padding: 0, listStyle: 'none' }}>
-          {protagonists.map(([key, en, ukrainian]) => <li key={key} style={{ padding: '12px 16px', border: '1px solid var(--line)' }}>
-            <span>{uk ? ukrainian : en}</span>
+          {protagonists.map(person => <li key={person.externalId} style={{ padding: '12px 16px', border: '1px solid var(--line)' }}>
+            {person.id ? <a href={`/${locale}/drivers/${person.id}`}>{uk ? person.uk : person.en} ↗</a> : <span>{uk ? person.uk : person.en}</span>}
           </li>)}
         </ul>
-        <p className={styles.note}>{uk ? 'Імена пов’язані з редакційною темою; посилання на канонічні профілі архіву додамо після перевірки ідентифікаторів.' : 'These names are editorial subjects. Links to canonical archive profiles will be added after identifier verification.'}</p>
+        <p className={styles.note}>{uk ? 'Посилання доступні лише для пілотів, чий ідентифікатор точно збігається з архівом F1DB.' : 'Links appear only when the driver's identifier matches the canonical F1DB archive.'}</p>
       </section>
       {beats && <section aria-labelledby="reading-path" style={{ marginTop: 56, borderTop: "1px solid var(--line)", paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? "ЧОТИРИ СЮЖЕТНІ МОМЕНТИ" : "FOUR STORY BEATS"}</p>
