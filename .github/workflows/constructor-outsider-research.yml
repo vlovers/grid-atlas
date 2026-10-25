@@ -1,0 +1,29 @@
+name: Constructor outsider editorial research
+
+on:
+  pull_request:
+    paths:
+      - 'docs/editorial/constructor-arcs/**'
+      - 'tests/test_constructor_story_outsiders.py'
+      - '.github/workflows/constructor-outsider-research.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/editorial/constructor-arcs/**'
+      - 'tests/test_constructor_story_outsiders.py'
+      - '.github/workflows/constructor-outsider-research.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  unpublished-bilingual-manuscript-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Verify ten bilingual research drafts (NOT editorial approval)
+        run: python3 -m unittest tests/test_constructor_story_outsiders.py -v
