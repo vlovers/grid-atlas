@@ -66,3 +66,46 @@ test('draft route is linked, noindexed and renders full manuscripts', () => {
   assert.ok(detail.includes('relatedEditorialMoments(slug)'));
   assert.ok(detail.includes('not a final publication'));
 });
+
+test('all story subjects and race coordinates are complete and consistently mapped', () => {
+  const people = literal(read(directory + 'editorial-people.ts'), 'storyPeople');
+  const coordinates = literal(read(directory + 'editorial-race-coordinates.ts'), 'editorialRaceCoordinates');
+  const context = literal(read(directory + 'editorial-race-context.ts'), 'editorialRaceContext');
+  assert.deepEqual(Object.keys(people), slugs);
+  assert.deepEqual(Object.keys(coordinates), slugs);
+  assert.deepEqual(Object.keys(context), slugs);
+  let raceCount = 0;
+  for (const slug of slugs) {
+    assert.ok(people[slug].length >= 1);
+    assert.ok(coordinates[slug].length >= 1);
+    assert.equal(context[slug].length, coordinates[slug].length);
+    const unique = new Set();
+    for (const [externalId, en, uk] of people[slug]) {
+      assert.match(externalId, /^[a-z0-9-]+$/);
+      assert.ok(en.length >= 5 && uk.length >= 5);
+    }
+    for (const [index, [year, round, en, uk]] of coordinates[slug].entries()) {
+      assert.ok(Number.isInteger(year) && year >= 1950 && year <= 2026);
+      assert.ok(Number.isInteger(round) && round >= 1 && round <= 25);
+      assert.ok(!unique.has(year + ':' + round), slug + ' duplicates a race');
+      unique.add(year + ':' + round);
+      assert.ok(en.length > 5 && uk.length > 5);
+      assert.ok(context[slug][index][0].length > 50);
+      assert.ok(context[slug][index][1].length > 50);
+      raceCount++;
+    }
+  }
+  assert.equal(raceCount, 12);
+});
+
+test('archive identity and race links fail closed on ambiguity', () => {
+  const personResolver = read(directory + 'editorial-people-resolver.ts');
+  const raceResolver = read(directory + 'editorial-race-resolver.ts');
+  assert.ok(personResolver.includes('driver.external_id === externalId'));
+  assert.ok(personResolver.includes('exact.length !== 1'));
+  assert.ok(raceResolver.includes('row.round === round'));
+  assert.ok(raceResolver.includes('unique.length === 1'));
+  assert.ok(detail.includes('resolveEditorialRaces(slug)'));
+  assert.ok(detail.includes('storyRaceContext(slug, index, locale)'));
+  assert.ok(detail.includes('/races/'));
+});
