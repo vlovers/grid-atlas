@@ -26,6 +26,10 @@ As the track improved, Button's pace and overtaking brought him back into the fi
 
 The race is often remembered as a single extraordinary comeback. A more useful lesson is that persistence is not a guarantee of success; it creates the possibility of exploiting a chance when it appears. Vettel's error was real, as was Button's sustained recovery. Neither fact erases the other. For the archive, the next step is a verified timeline of Safety Cars, stops, positions and weather. Until that exists, precise claims about every lap should remain outside the public story. The human core is already clear: the race kept changing, and Button kept finding a way back.
 
+### The difference between survival and progress
+
+A wet race is not a sequence of identical laps. Some periods are about avoiding mistakes, others about choosing the right tyre, and still others about passing cars before conditions change again. Button's recovery should be read through those different demands. A visual timeline could show position changes only when the official lap chart is available, and use carefully worded scene summaries everywhere else. The goal is not to animate a fabricated perfect comeback. It is to help readers feel why a race with so many interruptions still rewarded a driver who kept responding.
+
 ## UK — Коротко
 
 Монреальський етап 2011 року мав стати ще одним розділом захисту титулу Себастьяном Феттелем. Натомість Гран-прі Канади перетворився на випробування терпіння.
@@ -47,6 +51,10 @@ The race is often remembered as a single extraordinary comeback. A more useful l
 ### Поза коротким відео
 
 Цю гонку часто згадують як один неймовірний камбек. Та цікавіший висновок у тому, що наполегливість не гарантує успіху — вона створює можливість використати шанс, коли він з'явиться. Помилка Феттеля була реальною, як і тривале повернення Баттона. Одне не скасовує іншого. Для архіву наступний крок — перевірена хронологія автомобілів безпеки, зупинок, позицій і погоди. Поки її немає, точні твердження про кожне коло не слід публікувати. Людська суть уже зрозуміла: гонка постійно змінювалася, а Баттон знаходив шлях назад.
+
+### Різниця між виживанням і проривом
+
+Дощова гонка не складається з однакових кіл. Іноді головне — уникнути помилки, іноді — вчасно обрати шини, а іноді — встигнути обігнати суперників, перш ніж умови знову зміняться. Повернення Баттона слід читати крізь ці різні завдання. Візуальна хронологія може показувати зміни позицій лише за наявності офіційних поколових даних, а в інших місцях — використовувати обережні сюжетні пояснення. Мета не в тому, щоб анімувати вигаданий ідеальний камбек, а в тому, щоб пояснити, чому гонка з численними зупинками все ж винагородила пілота, який постійно пристосовувався.
 
 ## Deep Dive — source and editorial gates
 
