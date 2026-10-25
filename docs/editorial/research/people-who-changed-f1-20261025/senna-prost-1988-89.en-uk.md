@@ -1,29 +1,57 @@
-# The fastest partnership in the paddock / Найшвидше партнерство у паддоку
+# Senna and Prost: when domination became conflict
 
-**Status:** Unpublished bilingual narrative draft, **not** independently fact-checked or publication-approved. Full 500-word-per-language target is not yet met. No images or live route.
+# Сенна й Прост: коли домінування перетворилося на конфлікт
+
+**Status:** Unpublished long-form editorial draft. Research links are not yet independently verified to precise passages. No editorial approval, rights clearance or live page implied.
 
 ## EN — Quick
-In 1988 McLaren's Ayrton Senna and Alain Prost drove a car that won fifteen of sixteen races. Their rivalry was not a distraction from dominance: it unfolded inside it.
 
-## EN — Explore
-### Act I — The circumstances
-In 1988 McLaren's Ayrton Senna and Alain Prost drove a car that won fifteen of sixteen races. Their rivalry was not a distraction from dominance: it unfolded inside it. Senna took the drivers' crown, but the scoring system counted only each driver's best eleven results. Prost scored more points in total before dropped scores; Senna prevailed under the rules that actually applied. Any retelling that omits that distinction turns a complex season into a misleading scoreboard.
+The McLaren MP4/4 won fifteen of the sixteen races in 1988. Ayrton Senna and Alain Prost were not merely teammates sharing a successful machine: each was a credible championship contender, and each could measure himself against the other in identical equipment.
 
-### Act II — What the result means
-A year later, the conflict reached Suzuka. Senna and Prost collided at the chicane, and Senna's eventual exclusion meant Prost secured the championship. The precise legal sequence matters: collision, continuation, classification and the stewards' decision are separate events. A serious story should show how an exceptionally productive partnership became impossible to sustain without inventing private conversations.
+## EN — Explore · Four acts
+
+### Two drivers, one dominant car
+
+The McLaren MP4/4 won fifteen of the sixteen races in 1988. Ayrton Senna and Alain Prost were not merely teammates sharing a successful machine: each was a credible championship contender, and each could measure himself against the other in identical equipment. That made McLaren's strength unusually difficult to manage. A team could celebrate victory on Sunday and still face a frustrated driver in the other garage. Their rivalry was not a side story that interrupted success. It was made possible by the scale of that success.
+
+### Why 105 was not enough
+
+The 1988 points table is a trap for readers unfamiliar with the rules. Prost accumulated 105 points across the season and Senna 94, but only each driver's eleven best results counted toward the championship. Under that system Senna won the title with 90 counted points to Prost's 87. A modern table that simply adds every result would answer a different question. This is why historical sport cannot be read without its contemporary regulations. Senna was champion according to the scoring system agreed for that season, while Prost's larger raw total remains a meaningful illustration of how consistently both performed.
+
+### Suzuka changes the argument
+
+By 1989 the partnership had deteriorated, and the Japanese Grand Prix at Suzuka became the decisive controversy. Senna and Prost collided at the chicane. Prost retired, while Senna continued and reached the finish first on the road. The stewards disqualified Senna for the manner in which he rejoined the course after the collision, and Prost secured the championship. The distinction between a collision, a driver's actions afterward and a formal sporting decision is essential. Calling it simply a crash that gave Prost the title skips the regulatory mechanism through which the result was decided.
+
+### What rivals can teach us
+
+Their shared McLaren years resist a tidy lesson about who was right. Prost's calculated approach and Senna's intense commitment became convenient labels, but labels cannot substitute for evidence about individual races. The deeper subject is how two extraordinary competitors experienced the same team as both an opportunity and a constraint. The machine that made their achievements possible also guaranteed that each success would be measured against the person sitting in the next garage. Readers should leave with a clearer understanding of 1988's scoring rule and 1989's decision, not with an invented transcript of private conflict.
 
 ## UK — Коротко
-У 1988 році McLaren Айртона Сенни й Алена Проста виграв п’ятнадцять із шістнадцяти гонок. Їхнє суперництво не відволікало від домінування — воно розгорталося всередині нього.
 
-## UK — Дослідити
-### Акт I — Обставини
-У 1988 році McLaren Айртона Сенни й Алена Проста виграв п’ятнадцять із шістнадцяти гонок. Їхнє суперництво не відволікало від домінування — воно розгорталося всередині нього. Чемпіоном став Сенна, але тодішні правила враховували лише одинадцять найкращих результатів кожного пілота. За сумою всіх очок Прост мав більше, проте за чинною системою переміг Сенна. Без цього пояснення історія перетворюється на оманливу таблицю.
+McLaren MP4/4 виграв п'ятнадцять із шістнадцяти гонок 1988 року. Айртон Сенна й Ален Прост були не просто напарниками в успішній машині: кожен претендував на чемпіонство й міг порівнювати себе із суперником на однаковій техніці.
 
-### Акт II — Чому це важливо
-Роком пізніше конфлікт досяг кульмінації в Сузуці. Сенна й Прост зіткнулися в шикані, а подальше виключення Сенни з результатів забезпечило Просту титул. Тут важлива точна послідовність: зіткнення, продовження гонки, класифікація та рішення стюардів — різні події. Глибока історія має показати, як надзвичайно успішне партнерство стало нестерпним, не вигадуючи приватних розмов.
+## UK — Дослідити · Чотири акти
 
-## Deep Dive — research evidence
-- Official F1 retrospective / biographical research locator: https://www.formula1.com/en/latest/article/30-years-on-the-1989-japanese-gp-senna-and-prosts-controversial-title-decider.2X2UABJiyZ2cO4p2BZZWZY
-- **Verification pending:** open the source and cross-check every numerical claim against pinned F1DB v2026.17.0, exact race classification and applicable scoring rules; do not infer private thoughts or unreported dialogue.
-- **Reading trail:** season → race → driver → constructor → circuit. Canonical archive IDs and page routes not yet resolved.
-- **Editorial gate:** expand to 500+ original words per language, add primary event-specific source locators, independent EN/UK review, then tests/CI and explicit publication approval.
+### Двоє пілотів, один домінантний болід
+
+McLaren MP4/4 виграв п'ятнадцять із шістнадцяти гонок 1988 року. Айртон Сенна й Ален Прост були не просто напарниками в успішній машині: кожен претендував на чемпіонство й міг порівнювати себе із суперником на однаковій техніці. Саме тому перевага McLaren стала складним випробуванням для команди. У неділю вона могла святкувати перемогу, а в сусідньому боксі залишався розчарований пілот. Їхнє суперництво не заважало успіху ззовні. Воно стало можливим саме завдяки масштабу цього успіху.
+
+### Чому 105 очок було недостатньо
+
+Таблиця сезону 1988 року може ввести в оману читача, який не знає тодішніх правил. Прост набрав загалом 105 очок, Сенна — 94, але в чемпіонаті враховували лише одинадцять найкращих результатів кожного. За цією системою Сенна здобув титул із 90 заліковими очками проти 87 у Проста. Якщо просто скласти всі результати, ми відповімо на інше запитання. Саме тому історичний спорт не можна оцінювати без правил його часу. Сенна став чемпіоном за чинним регламентом, а більша загальна сума Проста показує, наскільки стабільними були обидва.
+
+### Сузука змінює суперечку
+
+До 1989 року стосунки напарників погіршилися, а Гран-прі Японії в Сузуці став центром великого скандалу. Сенна й Прост зіткнулися в шикані. Прост зійшов, а Сенна продовжив гонку й першим перетнув фінішну лінію. Стюарди дискваліфікували його через спосіб повернення на трасу після інциденту, і титул дістався Просту. Важливо розрізняти саме зіткнення, подальші дії пілота та офіційне спортивне рішення. Фраза «аварія принесла Просту чемпіонство» пропускає регламентну процедуру, яка визначила результат.
+
+### Чого навчає це суперництво
+
+Спільні роки Сенни й Проста в McLaren не зводяться до простої відповіді, хто мав рацію. Розважливість Проста та безкомпромісність Сенни стали зручними ярликами, але вони не замінюють фактів конкретних гонок. Глибша тема — як двоє виняткових спортсменів сприймали ту саму команду водночас як можливість і як обмеження. Болід допомагав їм перемагати, але кожну перемогу неминуче порівнювали з виступом людини в сусідньому боксі. Після цієї історії читач має краще розуміти систему очок 1988-го та рішення 1989-го, а не вигадані приватні суперечки.
+
+## Deep Dive — evidence and review
+
+- Research locator (verify before publication): https://www.formula1.com/en/latest/article/30-years-on-the-1989-japanese-gp-senna-and-prosts-controversial-title-decider.2X2UABJiyZ2cO4p2BZZWZY
+- Validate precise dates, race positions, points, scoring regulations and constructor IDs against pinned F1DB and primary classifications.
+- Do not invent motives, dialogue, technical telemetry or steward quotations.
+- Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
+- **Not published.**
