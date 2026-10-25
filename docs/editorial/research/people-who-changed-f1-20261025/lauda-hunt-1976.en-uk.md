@@ -26,6 +26,10 @@ The Japanese Grand Prix at Fuji began in severe wet conditions. Lauda withdrew b
 
 A championship awards points for classified results. It does not award points for knowing when to stop. The temptation to romanticise Lauda's withdrawal as either heroic or weak flattens a decision made under dangerous conditions. Nor should Hunt's success be dismissed as merely a consequence of his rival's accident: he had to race, recover and score. The season deserves two parallel conclusions. Hunt became world champion through the rules and results of 1976. Lauda demonstrated that returning to competition did not mean surrendering the right to refuse an unacceptable risk. The tension between those truths is why this story still matters.
 
+### A decision the archive should not flatten
+
+The official classification can tell us when a driver retired, but not how a frightening experience alters a person's willingness to accept danger. That distinction is central to Lauda's return. An interactive timeline should show the Nürburgring accident, the missed races, the Monza comeback and the Fuji withdrawal without drawing an artificial straight line between them. A reader should be able to pause at each point and consider what information the driver had then, rather than judge him using knowledge of the final championship result.
+
 ## UK — Коротко
 
 На початку 1976 року Нікі Лауда був чинним чемпіоном світу й лідером Ferrari. Джеймс Гант, який перейшов до McLaren, став його головним суперником.
@@ -47,6 +51,10 @@ A championship awards points for classified results. It does not award points fo
 ### Чого не вимірюють очки
 
 Чемпіонат нараховує очки за результати на трасі. Він не винагороджує окремо за вміння вчасно зупинитися. Називати рішення Лауди винятково героїчним або слабким означає спростити складний вибір у небезпечних умовах. Так само нечесно знецінювати успіх Ганта, пояснюючи його лише аварією суперника: Джеймсу потрібно було змагатися, відіграватися й набирати очки. Цей сезон має два висновки, які не суперечать один одному. Гант став чемпіоном світу за правилами й результатами 1976 року. Лауда показав, що повернення у спорт не означає відмови від права не приймати неприйнятний ризик. Саме напруга між цими істинами робить історію важливою.
+
+### Рішення, яке не вмістити в таблицю
+
+Офіційний протокол показує, коли пілот зійшов, але не пояснює, як страшний досвід змінює готовність людини ризикувати. Це важливо для історії повернення Лауди. Інтерактивна хронологія має показувати аварію на Нюрбургринзі, пропущені етапи, повернення в Монці та схід у Фудзі без штучного висновку, що одна подія неминуче спричинила наступну. Читачеві варто дати змогу зупинитися на кожному моменті й оцінити інформацію, яку пілот мав саме тоді, а не судити його, знаючи підсумок чемпіонату.
 
 ## Deep Dive — evidence and review
 
