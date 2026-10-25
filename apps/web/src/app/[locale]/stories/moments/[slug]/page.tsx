@@ -35,10 +35,10 @@ export default async function EditorialMoment({ params }: Props) {
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
-  return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
+  return <main className={`page ${styles.release} ${styles.editorialReading}`}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
-      <header style={{ maxWidth: 850 }}>
+      <header className={styles.editorialHero}>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
@@ -90,7 +90,7 @@ export default async function EditorialMoment({ params }: Props) {
       </section>}
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
         <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
-        <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a short introduction to an upcoming feature. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
+        <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a full editorial manuscript awaiting verification. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
         <a href={`/${locale}/stories`}>{uk ? 'Переглянути інші історії' : 'Explore other stories'} →</a>
       </section>
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
