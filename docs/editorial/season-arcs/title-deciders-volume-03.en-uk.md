@@ -48,7 +48,7 @@
 
 **2. Португалія стає випробуванням характеру.** У Португалії після пізнього розвороту та повернення Готорна на трасу виникла загроза його дискваліфікації. Мосс виступив на захист суперника й допоміг зберегти результат, який згодом виявився важливим для чемпіонату. Спокусливо пояснити титул лише цією подією, але сезон мав багато причин: надійність, правила нарахування очок, інші гонки й рішення. Епізод пам'ятають тому, що пілот допоміг людині, яку прагнув перемогти. [58-B]
 
-**3. Марокко приносить дві різні перемоги.** Мосс виграв останню гонку в Марокко. Готорн фінішував другим і здобув титул — 42 очки проти 41. Цей сезон розділив два значення перемоги: найшвидший на фініші дня не став чемпіоном року. І поставив питання, на яке самі цифри не дадуть відповіді: якою має бути чесна боротьба, коли допомога суперникові може коштувати корони? [58-A] [58-B]
+**3. Марокко приносить дві різні перемоги.** Мосс виграв останню гонку в Марокко. Готорн фінішував другим і здобув титул — 42 очки проти 41. Цей сезон розділив два значення перемоги: найшвидший на фініші дня не став чемпіоном року. Історію Мосса важливо читати без спрощення «чотири перемоги проти однієї»: чинні правила відкидали частину результатів, а відмінності між машинами впливали на можливість дістатися фінішу. І поставив питання, на яке самі цифри не дадуть відповіді: якою має бути чесна боротьба, коли допомога суперникові може коштувати корони? [58-A] [58-B]
 
 **Deep Dive · Evidence**
 - [58-A] Formula 1 · 1958 official driver standings: https://www.formula1.com/en/results/1958/drivers
@@ -70,7 +70,7 @@
 **3. A Ferrari position swap changes the champion.** Clark's Lotus failed near the end. Bandini allowed Ferrari team-mate Surtees through into second place, giving Surtees the points he needed. He became the only person to win world championships on both motorcycles and in Formula 1. The decisive act was not a glamorous overtake for the lead; it was a late team decision, set against another contender's mechanical heartbreak. [64-A] [64-B]
 
 ### UK · Три акти
-**1. Три претенденти, три різні шляхи.** Джим Кларк здавався найсильнішим на початку 1964 року: три перемоги за першу половину десятиетапного сезону. Грем Гілл тримався поруч завдяки стабільності, а Джон Сертіс, який раніше сильно відставав, набирав хід із Ferrari. У залік ішли лише шість найкращих фінішів, тож фінал був складнішим за звичайну таблицю очок. Справжня історія сезону має пояснювати не лише лідера, а й те, що було потрібно кожному претендентові. [64-A] [64-B]
+**1. Три претенденти, три різні шляхи.** Джим Кларк здавався найсильнішим на початку 1964 року: три перемоги за першу половину десятиетапного сезону. Грем Гілл тримався поруч завдяки стабільності, а Джон Сертіс, який раніше сильно відставав, набирав хід із Ferrari. У залік ішли лише шість найкращих фінішів, тож фінал був складнішим за звичайну таблицю очок. Справжня історія сезону має пояснювати не лише лідера, а й те, що було потрібно кожному претендентові. Для Сертіса це означало відіграти величезне відставання, для Гілла — захистити здобуті очки, а для Кларка — нарешті перетворити швидкість на надійний результат. [64-A] [64-B]
 
 **2. У Мексиці кожна позиція стає вирішальною.** Кларк лідирував у Гран-прі Мексики й, здавалося, прямував до титулу. Шанси Гілла постраждали після контакту з Лоренцо Бандіні, а Сертіс намагався набрати достатньо очок, щоб випередити обох суперників. Зіткнення, технічна несправність і кінцеві позиції виявилися важливішими за будь-який абстрактний рейтинг таланту. Чемпіонат змінювався просто під час гонки. [64-A]
 
@@ -93,17 +93,18 @@
 
 **2. The race refuses to become a duel.** The expected wheel-to-wheel title fight never truly materialised. Regazzoni struggled with a damper problem and finished eleventh. Fittipaldi drove to fourth, enough to win his second world championship. The drama was not a last-lap pass; it was the painful discovery that the rival's car could decide the contest without the two championship protagonists ever racing side by side. [74-A]
 
-**3. A championship and a loss share the same day.** The race was overshadowed by the fatal accident of Helmuth Koinigg. A responsible account of 1974 must hold two truths at once: Fittipaldi's achievement mattered, and the weekend was marked by a death. It would be wrong to use tragedy merely as dramatic decoration. The season also invites a comparison with 2021, when equal points again preceded a final race but the sporting conclusion unfolded very differently. [74-A]
+**3. A championship and a loss share the same day.** The race was overshadowed by the fatal accident of Helmuth Koinigg. A responsible account of 1974 must hold two truths at once: Fittipaldi's achievement mattered, and the weekend was marked by a death. It would be wrong to use tragedy merely as dramatic decoration. The season also invites a comparison with 2021, when equal points again preceded a final race but the sporting conclusion unfolded very differently. The final championship margin was three points, 55 to 52. [74-A] [74-B]
 
 ### UK · Три акти
-**1. Остання гонка починається з рівності.** Емерсон Фіттіпальді та Клей Регаццоні приїхали у Воткінс-Глен з однаковою кількістю чемпіонських очок. Їхні команди, McLaren і Ferrari, пройшли різні шляхи до одного титулу. Для новачка це ідеальний вступ до арифметики Формули-1: усі попередні гонки звели сезон до одного дня. Але за простою рівністю очок ховалися ненадійність техніки та небезпека перегонів 1970-х. [74-A]
+**1. Остання гонка починається з рівності.** Емерсон Фіттіпальді та Клей Регаццоні приїхали у Воткінс-Глен з однаковою кількістю чемпіонських очок. Їхні команди, McLaren і Ferrari, пройшли різні шляхи до одного титулу. Для новачка це ідеальний вступ до арифметики Формули-1: усі попередні гонки звели сезон до одного дня. Але за простою рівністю очок ховалися ненадійність техніки та небезпека перегонів 1970-х. Історія цього фіналу цікава саме тим, що найважливішим виявилося не те, хто пізніше загальмує перед поворотом, а хто взагалі зможе завершити дистанцію без втрати темпу. [74-A]
 
 **2. Гонка відмовляється бути дуеллю.** Очікуваної боротьби колесо в колесо за титул майже не сталося. Регаццоні мав проблеми з амортизатором і фінішував одинадцятим. Фіттіпальді доїхав четвертим — цього вистачило для другого чемпіонства. Драмою став не обгін на останньому колі, а болісне усвідомлення: технічна несправність суперника може вирішити чемпіонат навіть без безпосередньої дуелі претендентів. [74-A]
 
-**3. Чемпіонство й трагедія одного дня.** Гонку затьмарила смертельна аварія Гельмута Койнігга. Відповідальна розповідь про 1974 рік має втримати дві правди: досягнення Фіттіпальді було значним, а вікенд водночас став трагедією. Не можна використовувати загибель людини лише як драматичну прикрасу. Цей сезон варто порівняти з 2021-м, коли претенденти теж приїхали на фінал із рівністю очок, але спортивна розв'язка була зовсім іншою. [74-A]
+**3. Чемпіонство й трагедія одного дня.** Гонку затьмарила смертельна аварія Гельмута Койнігга. Відповідальна розповідь про 1974 рік має втримати дві правди: досягнення Фіттіпальді було значним, а вікенд водночас став трагедією. Не можна використовувати загибель людини лише як драматичну прикрасу. Цей сезон варто порівняти з 2021-м, коли претенденти теж приїхали на фінал із рівністю очок, але спортивна розв'язка була зовсім іншою. Підсумкова різниця склала три очки: 55 проти 52. [74-A] [74-B]
 
 **Deep Dive · Evidence**
 - [74-A] Formula 1 · Nine title-deciding finales, 1974: https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF
+- [74-B] Formula 1 · 1974 official driver standings: https://www.formula1.com/en/results/1974/drivers
 
 **Explore next:** Fittipaldi → Regazzoni → McLaren / Ferrari → Watkins Glen 1974 → compare 2021.
 
@@ -118,16 +119,17 @@
 
 **2. Rosberg builds a title without dominating.** Keke Rosberg had not won a race when Pironi's season ended. His breakthrough came at the Swiss Grand Prix held at Dijon, a victory that moved him decisively into contention. The contrast is central: rivals had more wins, but the Williams driver kept gathering the results needed in an unpredictable year. It was not the absence of competition; it was a championship in which consistent survival and opportunity mattered as much as outright speed. [82-A]
 
-**3. Las Vegas rewards the long season.** At the Caesars Palace finale, Rosberg finished fifth while John Watson was second. Rosberg became world champion with just one Grand Prix victory. The parking-lot circuit is a memorable setting, but it must not be confused with the modern Las Vegas Strip course. Read this season not as a statistical curiosity alone, but as a warning that the meaning of a championship changes when events beyond lap times reshape the field. [82-A]
+**3. Las Vegas rewards the long season.** At the Caesars Palace finale, Rosberg finished fifth while John Watson was second. Rosberg became world champion with just one Grand Prix victory, finishing on 44 points ahead of Pironi and Watson, who tied on 39. The parking-lot circuit is a memorable setting, but it must not be confused with the modern Las Vegas Strip course. Read this season not as a statistical curiosity alone, but as a warning that the meaning of a championship changes when events beyond lap times reshape the field. [82-A]
 
 ### UK · Три акти
 **1. Сезон не знаходить рівноваги.** Боротьба за титул 1982 року постійно змінювалася. Перемагали різні команди й гонщики, а Дідьє Піроні на Ferrari ставав дедалі сильнішим претендентом. Цей рік не можна описувати як звичайний спортивний трилер: Жиль Вільнев загинув у кваліфікації в Зольдері, а кар'єру Піроні зупинили тяжкі травми після аварії на тренуванні перед Гран-прі Німеччини. Про них слід говорити стримано, не перетворюючи людське горе на сюжетний прийом. [82-A]
 
 **2. Росберг будує титул без домінування.** Кеке Росберг ще не мав перемог, коли сезон Піроні завершився. Його проривом став Гран-прі Швейцарії на трасі Діжон — успіх, який суттєво наблизив титул. Контраст тут головний: суперники вигравали більше гонок, але пілот Williams послідовно збирав потрібні результати в непередбачуваному році. Це не був чемпіонат без конкуренції: у ньому стабільність і використання можливостей важили не менше за максимальну швидкість. [82-A]
 
-**3. Лас-Вегас винагороджує за весь сезон.** У фіналі на Caesars Palace Росберг фінішував п'ятим, а Джон Вотсон — другим. Кеке став чемпіоном світу лише з однією перемогою в Гран-прі. Траса на парковці казино — незвична сцена, але її не можна плутати із сучасним маршрутом Лас-Вегас-Стріп. Цей сезон — не лише статистичний курйоз, а нагадування, як події поза хронометражем змінюють сам зміст боротьби. [82-A]
+**3. Лас-Вегас винагороджує за весь сезон.** У фіналі на Caesars Palace Росберг фінішував п'ятим, а Джон Вотсон — другим. Кеке став чемпіоном світу лише з однією перемогою в Гран-прі, набравши 44 очки проти 39 у Піроні та Вотсона. Траса на парковці казино — незвична сцена, але її не можна плутати із сучасним маршрутом Лас-Вегас-Стріп. Цей сезон — не лише статистичний курйоз, а нагадування, як події поза хронометражем змінюють сам зміст боротьби. За підсумковими очками Росберг випередив Піроні й Вотсона, які розділили друге місце; таблиця показує результат, але не може передати всю складність і втрати того року. [82-A]
 
 **Deep Dive · Evidence**
 - [82-A] Formula 1 · Dramatic title comebacks, Rosberg 1982: https://www.formula1.com/en/latest/article/from-glory-with-one-race-win-to-triumphing-by-a-single-point-the-most.5IoDGAcUM682cRO3DcruN7.5IoDGAcUM682cRO3DcruN7
+- [82-B] Formula 1 · 1982 official driver standings: https://www.formula1.com/en/results/1982/drivers
 
 **Explore next:** Rosberg → Pironi → Villeneuve → Williams / Ferrari → Dijon 1982 → Caesars Palace 1982.
