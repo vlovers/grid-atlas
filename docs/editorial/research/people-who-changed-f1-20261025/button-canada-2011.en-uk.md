@@ -1,29 +1,56 @@
-# The race that kept restarting / Гонка, яка постійно починалася заново
+# Button in Canada: the longest way back to first
 
-**Status:** Unpublished bilingual narrative draft, **not** independently fact-checked or publication-approved. Full 500-word-per-language target is not yet met. No images or live route.
+# Баттон у Канаді: найдовший шлях до першого місця
+
+**Status:** Unpublished editorial research manuscript; claims and research link require independent verification. Not a live story.
 
 ## EN — Quick
-The 2011 Canadian Grand Prix resisted every simple prediction. Heavy rain forced an interruption and the field repeatedly compressed behind the Safety Car.
 
-## EN — Explore
-### Act I — The circumstances
-The 2011 Canadian Grand Prix resisted every simple prediction. Heavy rain forced an interruption and the field repeatedly compressed behind the Safety Car. Jenson Button's race included incidents, a penalty and multiple visits to the pit lane. At several points he looked far from a winner. But each restart created a new race within the race, with changing grip and a fresh chance to recover positions.
+Montreal in 2011 was supposed to be another chapter in Sebastian Vettel's title defence. Instead, the Canadian Grand Prix became a test of patience.
 
-### Act II — What the result means
-The finish is famous because Sebastian Vettel made a mistake under pressure on the last lap and Button went through to win. Yet that image hides the work required to reach the leader at all. Button did not win simply because Vettel erred; he won because he was close enough to exploit it. The deeper story belongs to the shifting weather, strategy and recovery drive as much as to the final corner.
+## EN — Explore · Four acts
+
+### A race that refused to settle
+
+Montreal in 2011 was supposed to be another chapter in Sebastian Vettel's title defence. Instead, the Canadian Grand Prix became a test of patience. Heavy rain, a long stoppage and repeated Safety Car periods made every prediction temporary. The track was never simply wet or dry: its grip changed from corner to corner and from one restart to the next. For Jenson Button, that uncertainty brought setbacks and opportunities in almost equal measure. The race became less about holding a fixed strategy and more about staying in contention while the conditions changed around him.
+
+### The cost of a difficult afternoon
+
+Button's afternoon was far from clean. Incidents, a penalty and several pit-lane visits pushed him backward. One moment could make the car look competitive; the next could leave it buried in traffic. That is why the familiar phrase 'last to first' can mislead. It suggests one uninterrupted charge, when the real contest was made of reversals, neutralisations and fresh starts. The driver had to keep responding without knowing whether another interruption would erase his latest progress. The weather did not simply help Button; it repeatedly threatened to undo his recovery.
+
+### Reaching the leader
+
+As the track improved, Button's pace and overtaking brought him back into the fight. Vettel still led and had done much of the difficult work required to control the race. But the late laps narrowed the gap. Button's recovery mattered because it placed him close enough to apply pressure. On the final lap, Vettel made a mistake and Button passed. The ending is dramatic, yet it makes sense only when read against the hours that preceded it. A last-lap error does not explain how the challenger arrived at the leader's gearbox.
+
+### The story beyond the highlight
+
+The race is often remembered as a single extraordinary comeback. A more useful lesson is that persistence is not a guarantee of success; it creates the possibility of exploiting a chance when it appears. Vettel's error was real, as was Button's sustained recovery. Neither fact erases the other. For the archive, the next step is a verified timeline of Safety Cars, stops, positions and weather. Until that exists, precise claims about every lap should remain outside the public story. The human core is already clear: the race kept changing, and Button kept finding a way back.
 
 ## UK — Коротко
-Гран-прі Канади 2011 року руйнував усі прості прогнози. Сильна злива спричинила зупинку, а автомобіль безпеки не раз збирав пелотон докупи.
 
-## UK — Дослідити
-### Акт I — Обставини
-Гран-прі Канади 2011 року руйнував усі прості прогнози. Сильна злива спричинила зупинку, а автомобіль безпеки не раз збирав пелотон докупи. Гонка Дженсона Баттона складалася з інцидентів, штрафу та численних заїздів на пітлейн. Часом він здавався дуже далеким від перемоги. Але кожен рестарт створював нову гонку всередині старої: змінювалося зчеплення, з’являлися нові шанси відіграти позиції.
+Монреальський етап 2011 року мав стати ще одним розділом захисту титулу Себастьяном Феттелем. Натомість Гран-прі Канади перетворився на випробування терпіння.
 
-### Акт II — Чому це важливо
-Фініш запам’ятався тим, що Себастьян Феттель помилився під тиском на останньому колі, а Баттон вирвався вперед. Та цей кадр приховує все, що знадобилося, аби взагалі наздогнати лідера. Баттон переміг не лише тому, що Феттель помилився, — він опинився достатньо близько, щоб скористатися шансом. Глибша історія належить мінливій погоді, тактиці й прориву не менше, ніж останньому повороту.
+## UK — Дослідити · Чотири акти
 
-## Deep Dive — research evidence
-- Official F1 retrospective / biographical research locator: https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj
-- **Verification pending:** open the source and cross-check every numerical claim against pinned F1DB v2026.17.0, exact race classification and applicable scoring rules; do not infer private thoughts or unreported dialogue.
-- **Reading trail:** season → race → driver → constructor → circuit. Canonical archive IDs and page routes not yet resolved.
-- **Editorial gate:** expand to 500+ original words per language, add primary event-specific source locators, independent EN/UK review, then tests/CI and explicit publication approval.
+### Гонка, яка не хотіла визначатися
+
+Монреальський етап 2011 року мав стати ще одним розділом захисту титулу Себастьяном Феттелем. Натомість Гран-прі Канади перетворився на випробування терпіння. Сильна злива, тривала зупинка й численні виїзди автомобіля безпеки робили будь-який прогноз тимчасовим. Траса не була просто мокрою чи сухою: зчеплення змінювалося від повороту до повороту й після кожного рестарту. Для Дженсона Баттона така невизначеність приносила майже порівну невдач і шансів. Головним стало не втримати незмінну стратегію, а залишатися в боротьбі, поки обставини змінювалися.
+
+### Ціна складного дня
+
+Гонка Баттона була далеко не безпомилковою. Інциденти, штраф і численні заїзди на пітлейн відкидали його назад. Однієї миті болід здавався конкурентним, а наступної опинявся в трафіку. Тому вислів «з останнього місця на перше» може вводити в оману. Він створює враження одного безперервного прориву, хоча справжня гонка складалася з відкатів, нейтралізацій і нових стартів. Пілотові доводилося реагувати, не знаючи, чи не перекреслить чергова зупинка щойно здобуту перевагу. Погода не просто допомагала Баттону — вона знову й знову загрожувала зруйнувати його повернення.
+
+### Наздогнати лідера
+
+Коли стан траси покращився, темп і обгони Баттона повернули його в боротьбу. Феттель усе ще лідирував і виконав значну частину складної роботи, потрібної для контролю над гонкою. Але на останніх колах відрив скорочувався. Повернення Баттона мало значення, бо він опинився достатньо близько, щоб чинити тиск. На останньому колі Феттель помилився, і Баттон обігнав його. Фініш вражає, але його неможливо зрозуміти без попередніх годин. Одна помилка лідера не пояснює, як суперник узагалі дістався до його заднього антикрила.
+
+### Поза коротким відео
+
+Цю гонку часто згадують як один неймовірний камбек. Та цікавіший висновок у тому, що наполегливість не гарантує успіху — вона створює можливість використати шанс, коли він з'явиться. Помилка Феттеля була реальною, як і тривале повернення Баттона. Одне не скасовує іншого. Для архіву наступний крок — перевірена хронологія автомобілів безпеки, зупинок, позицій і погоди. Поки її немає, точні твердження про кожне коло не слід публікувати. Людська суть уже зрозуміла: гонка постійно змінювалася, а Баттон знаходив шлях назад.
+
+## Deep Dive — source and editorial gates
+
+- Research locator: https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj
+- Independently verify event chronology, official classification and historical rules; resolve pinned F1DB identifiers and live route targets.
+- No invented quotes, motives or telemetry. Source link is a locator, not evidence of a completed source review.
+- Require historical and UK-language review, tests and CI before publication.
