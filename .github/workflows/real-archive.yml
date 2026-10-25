@@ -24,6 +24,7 @@ on:
       - 'scripts/content_factory_circuits.py'
       - 'tests/test_content_factory_circuits.py'
       - 'tests/test_enhanced_circuit_batch.py'
+      - 'tests/test_circuit_reading_journeys.py'
       - 'apps/web/src/components/editorial/circuit-next20-stories.json'
       - 'apps/web/src/components/editorial/circuit-final33-stories.json'
       - 'scripts/audit_circuit_stories.py'
@@ -53,6 +54,7 @@ on:
       - 'scripts/content_factory_circuits.py'
       - 'tests/test_content_factory_circuits.py'
       - 'tests/test_enhanced_circuit_batch.py'
+      - 'tests/test_circuit_reading_journeys.py'
       - 'apps/web/src/components/editorial/circuit-next20-stories.json'
       - 'apps/web/src/components/editorial/circuit-final33-stories.json'
       - 'scripts/audit_circuit_stories.py'
@@ -102,6 +104,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_content_factory_circuits.py' -v
           python3 -m unittest discover -s tests -p 'test_enhanced_circuit_batch.py' -v
+          python3 -m unittest discover -s tests -p 'test_circuit_reading_journeys.py' -v
           python3 scripts/audit_circuit_stories.py
           python3 scripts/content_factory_circuits.py \
             --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip \

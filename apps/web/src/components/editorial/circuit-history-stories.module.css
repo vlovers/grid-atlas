@@ -11,3 +11,11 @@
 @media(max-width: 500px) { .moment { grid-template-columns: 1fr; gap: .7rem; } }
 
 .review { font-size: .78rem; line-height: 1.5; max-width: 70ch; color: var(--muted); margin: .7rem 0 1.4rem; }
+
+.storyNext { margin-top: 2rem; border: 1px solid var(--line); padding: clamp(1rem, 3vw, 1.75rem); }
+.storyNextEyebrow { text-transform: uppercase; letter-spacing: .1em; font-weight: 700; font-size: .75rem; color: var(--accent-ink); }
+.storyNextLinks { display: flex; flex-wrap: wrap; align-items: stretch; gap: .65rem; }
+.storyNextLinks a { flex: 1 1 13rem; border: 1px solid var(--line); min-width: 0; padding: .85rem 1rem; text-decoration-thickness: .08em; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.storyNextLinks a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.storySource { margin-top: 1.5rem; overflow-wrap: anywhere; }
+@media(max-width: 500px) { .storyNextLinks { flex-direction: column; } }
