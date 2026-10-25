@@ -26,6 +26,10 @@ By 1989 the partnership had deteriorated, and the Japanese Grand Prix at Suzuka 
 
 Their shared McLaren years resist a tidy lesson about who was right. Prost's calculated approach and Senna's intense commitment became convenient labels, but labels cannot substitute for evidence about individual races. The deeper subject is how two extraordinary competitors experienced the same team as both an opportunity and a constraint. The machine that made their achievements possible also guaranteed that each success would be measured against the person sitting in the next garage. Readers should leave with a clearer understanding of 1988's scoring rule and 1989's decision, not with an invented transcript of private conflict.
 
+### The danger of a modern scoreboard
+
+Modern fans are used to every earned point appearing in the season total. The 1988 rule did not work that way. Showing Prost's raw total beside Senna's counted total without labels creates a false contradiction. The story needs two clearly named views: points actually earned across races and points counted for the title. A third view should explain that a rule can be unusual to today's reader and still be the legitimate rule of its own era. This is not a technical footnote: it changes the apparent outcome of a famous rivalry.
+
 ## UK — Коротко
 
 McLaren MP4/4 виграв п'ятнадцять із шістнадцяти гонок 1988 року. Айртон Сенна й Ален Прост були не просто напарниками в успішній машині: кожен претендував на чемпіонство й міг порівнювати себе із суперником на однаковій техніці.
@@ -47,6 +51,10 @@ McLaren MP4/4 виграв п'ятнадцять із шістнадцяти г�
 ### Чого навчає це суперництво
 
 Спільні роки Сенни й Проста в McLaren не зводяться до простої відповіді, хто мав рацію. Розважливість Проста та безкомпромісність Сенни стали зручними ярликами, але вони не замінюють фактів конкретних гонок. Глибша тема — як двоє виняткових спортсменів сприймали ту саму команду водночас як можливість і як обмеження. Болід допомагав їм перемагати, але кожну перемогу неминуче порівнювали з виступом людини в сусідньому боксі. Після цієї історії читач має краще розуміти систему очок 1988-го та рішення 1989-го, а не вигадані приватні суперечки.
+
+### Небезпека сучасної таблиці
+
+Сучасні вболівальники звикли, що всі набрані очки входять до підсумку сезону. У 1988 році правило працювало інакше. Якщо поставити загальну суму Проста поруч із заліковими очками Сенни без пояснень, виникне хибна суперечність. Історія потребує двох чітко названих режимів: усі очки, здобуті в гонках, і очки, враховані для титулу. Третій рівень має пояснити, що незвичне для сучасного читача правило залишалося чинним у свою епоху. Це не технічна примітка: воно змінює сприйняття результату знаменитого суперництва.
 
 ## Deep Dive — evidence and review
 
