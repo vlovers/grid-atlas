@@ -3,39 +3,66 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const root = process.cwd();
-const read = path => readFileSync(join(root, path), 'utf8');
-const previews = read('apps/web/src/components/stories/editorial-previews.ts');
-const paths = read('apps/web/src/components/stories/editorial-moment-model.ts');
-const scenes = read('apps/web/src/components/stories/editorial-moment-scenes.ts');
-const related = read('apps/web/src/components/stories/editorial-related.ts');
+const read = path => readFileSync(join(process.cwd(), path), 'utf8');
+const directory = 'apps/web/src/components/stories/';
+const previews = read(directory + 'editorial-previews.ts');
+const paths = read(directory + 'editorial-moment-model.ts');
+const scenes = read(directory + 'editorial-moment-scenes.ts');
+const articles = read(directory + 'editorial-draft-articles.ts');
+const related = read(directory + 'editorial-related.ts');
 const hub = read('apps/web/src/app/[locale]/stories/page.tsx');
 const detail = read('apps/web/src/app/[locale]/stories/moments/[slug]/page.tsx');
 const slugs = ['lauda-hunt-1976','senna-prost-1988-89','villeneuve-arnoux-1979','vettel-monza-2008','button-canada-2011','perez-sakhir-2020','kubica-bmw-2008','schumacher-ferrari-1996-2000','massa-2008','brawn-2009'];
 
-test('all ten editorial moment slugs have previews, paths, scenes and related links', () => {
-  for (const slug of slugs) {
-    for (const [name, source] of [['previews',previews],['paths',paths],['scenes',scenes],['related',related]]) {
-      assert.ok(source.includes(`'${slug}'`) || source.includes(`"${slug}"`), `${name} missing ${slug}`);
+// Parse the literal JSON emitted by the editorial import, without loading TypeScript.
+function literal(source, declaration) {
+  const prefix = 'export const ' + declaration + ' = ';
+  const start = source.indexOf(prefix);
+  assert.notEqual(start, -1, declaration + ' declaration missing');
+  const suffix = source.slice(start + prefix.length);
+  const terminator = suffix.indexOf(' as const;');
+  assert.notEqual(terminator, -1, declaration + ' literal terminator missing');
+  return JSON.parse(suffix.slice(0, terminator));
+}
+
+test('ten bilingual previews have distinct slugs and content', () => {
+  const items = literal(previews, 'editorialStoryPreviews');
+  assert.equal(items.length, 10);
+  assert.deepEqual(items.map(item => item.slug), slugs);
+  for (const item of items) for (const locale of ['en', 'uk']) {
+    assert.ok(item[locale].title.length > 12);
+    assert.ok(item[locale].summary.length > 80);
+  }
+});
+
+test('all ten stories have four or more bilingual long-form chapters', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapters = drafts[slug]?.[locale];
+    assert.ok(chapters?.length >= 4, slug + '/' + locale + ' missing chapters');
+    for (const chapter of chapters) {
+      assert.ok(chapter.heading.length > 5, slug + ' heading missing');
+      assert.ok(chapter.paragraphs.some(paragraph => paragraph.length > 100), slug + ' chapter lacks body');
     }
   }
-  assert.equal(new Set(slugs).size, 10);
 });
 
-test('editorial previews remain distinct from published driver stories', () => {
-  assert.match(hub, /stories\\/moments\\/\\$\\{story\\.slug\\}/);
-  assert.match(detail, /robots: \\{ index: false, follow: true \\}/);
-  assert.match(detail, /notFound\\(\\)/);
-  assert.match(detail, /momentScenes\\(slug, locale\\)/);
-  assert.match(detail, /relatedEditorialMoments\\(slug\\)/);
-  assert.match(detail, /full story is in preparation/i);
-});
-
-test('bilingual story beats and scenes are present in the editorial sources', () => {
-  for (const source of [previews, paths, scenes]) {
-    assert.match(source, /\\ben\\b/);
-    assert.match(source, /\\buk\\b/);
+test('all ten stories have reading paths, scenes and related links', () => {
+  const momentScenes = literal(scenes, 'editorialMomentScenes');
+  for (const slug of slugs) {
+    assert.ok(paths.includes("'" + slug + "'"));
+    assert.ok(related.includes('"' + slug + '"'));
+    assert.equal(momentScenes[slug]?.length, 4);
+    for (const scene of momentScenes[slug]) for (const locale of ['en', 'uk']) assert.ok(scene[locale].length > 50);
   }
-  assert.match(detail, /beats\\.map/);
-  assert.match(detail, /scenes\\?\\.\\[index\\]/);
+});
+
+test('draft route is linked, noindexed and renders full manuscripts', () => {
+  assert.ok(hub.includes('/stories/moments/'));
+  assert.ok(detail.includes('index: false'));
+  assert.ok(detail.includes('notFound()'));
+  assert.ok(detail.includes('draftArticle(slug, locale)'));
+  assert.ok(detail.includes('chapters.map('));
+  assert.ok(detail.includes('relatedEditorialMoments(slug)'));
+  assert.ok(detail.includes('not a final publication'));
 });
