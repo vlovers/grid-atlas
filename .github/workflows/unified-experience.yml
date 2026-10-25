@@ -26,8 +26,10 @@ jobs:
       DATABASE_URL: postgresql://grid_atlas:integration_only@127.0.0.1:5432/grid_atlas
       GRID_ATLAS_NEXT_DIST_DIR: .next-test
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
       - name: Install locked dependencies and browser engines
@@ -42,7 +44,7 @@ jobs:
         run: pnpm exec playwright test --config playwright.unified.config.ts
       - name: Upload screenshots and failure traces
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: unified-archive-browser-evidence
           path: test-results/
