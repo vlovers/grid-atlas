@@ -16,8 +16,9 @@ VOLUMES = (
     DIR / "title-deciders-volume-02.en-uk.md",
     DIR / "title-deciders-volume-03.en-uk.md",
     DIR / "title-deciders-volume-04.en-uk.md",
+    DIR / "title-deciders-volume-05.en-uk.md",
 )
-EXPECTED_YEARS = {1950, 1958, 1964, 1974, 1976, 1982, 1984, 1986, 1988, 1999, 2007, 2008, 2010, 2012, 2016, 2021, 2025}
+EXPECTED_YEARS = {1950, 1958, 1959, 1961, 1964, 1970, 1974, 1976, 1979, 1981, 1982, 1984, 1986, 1988, 1999, 2003, 2007, 2008, 2009, 2010, 2012, 2014, 2016, 2021, 2025}
 MARKER = re.compile(r"\[(\d{2}-[A-Z])\]")
 URL = re.compile(r"https://www\.formula1\.com/[^\s;]+")
 
@@ -36,11 +37,11 @@ def chapters():
 
 
 class SeasonStoryResearchTests(unittest.TestCase):
-    def test_seventeen_distinct_championship_seasons(self):
+    def test_twenty_five_distinct_championship_seasons(self):
         items = list(chapters())
-        self.assertEqual(len(items), 17)
+        self.assertEqual(len(items), 25)
         self.assertEqual({year for _, year, _ in items}, EXPECTED_YEARS)
-        self.assertEqual(len({year for _, year, _ in items}), 17)
+        self.assertEqual(len({year for _, year, _ in items}), 25)
 
     def test_bilingual_three_act_narratives_are_substantive(self):
         for path, year, part in chapters():
@@ -73,6 +74,14 @@ class SeasonStoryResearchTests(unittest.TestCase):
         for expected in ("423", "421", "410", "369.5", "395.5", "387.5",
                          "69", "68", "90", "87", "110", "109", "281", "278", "385", "380"):
             self.assertIn(expected, joined)
+
+    def test_new_volume_has_cross_season_reading_paths(self):
+        text = (DIR / "title-deciders-volume-05.en-uk.md").read_text(encoding="utf-8")
+        for year in (1959, 1961, 1970, 1979, 1981, 2003, 2009, 2014):
+            self.assertIn(f"## {year} — ", text)
+        for _, year, chapter in chapters():
+            self.assertIn("**Explore next:**", chapter, year)
+            self.assertIn("**Read next:**", chapter, year)
 
     def test_publication_gate_remains_explicit(self):
         for path in VOLUMES:
