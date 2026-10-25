@@ -4,6 +4,7 @@ import { editorialStoryPreviews } from '@/components/stories/editorial-previews'
 import { editorialMomentPath } from '@/components/stories/editorial-moment-model';
 import { momentScenes } from '@/components/stories/editorial-moment-scenes';
 import { relatedEditorialMoments } from '@/components/stories/editorial-related';
+import { draftArticle } from '@/components/stories/editorial-draft-articles';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -28,6 +29,7 @@ export default async function EditorialMoment({ params }: Props) {
   const beats = editorialMomentPath(slug, locale);
   const scenes = momentScenes(slug, locale);
   const related = relatedEditorialMoments(slug);
+  const chapters = draftArticle(slug, locale);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a></nav>
     <article>
@@ -43,6 +45,19 @@ export default async function EditorialMoment({ params }: Props) {
           {beats.map((beat, index) => <li key={beat} style={{ borderTop: "2px solid var(--accent-ink)", paddingTop: 14 }}><span className={styles.eyebrow}>{String(index + 1).padStart(2, "0")}</span><h3 style={{ margin: "12px 0" }}>{beat}</h3>{scenes?.[index] && <p style={{ lineHeight: 1.7 }}>{scenes[index]}</p>}</li>)}
         </ol>
         <p className={styles.note}>{uk ? "Це редакційний маршрут, а не перевірена покрокова хронологія гонки." : "This is an editorial reading path, not a verified lap-by-lap race timeline."}</p>
+      </section>}
+      {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+        <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
+        <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
+        <p className={styles.note}>{uk ? 'Матеріал доступний для ознайомлення, але ще не пройшов незалежної перевірки джерел. Не вважайте його остаточною публікацією.' : 'This manuscript is available to read but has not yet passed independent source verification. It is not a final publication.'}</p>
+        <nav aria-label={uk ? 'Розділи статті' : 'Article chapters'} style={{ display: 'flex', flexWrap: 'wrap', gap: 12, margin: '32px 0' }}>
+          {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`} style={{ padding: '10px 14px', border: '1px solid var(--line)' }}>{String(index + 1).padStart(2, '0')} · {chapter.heading}</a>)}
+        </nav>
+        {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`} style={{ padding: '36px 0', borderTop: '1px solid var(--line)', scrollMarginTop: 100 }}>
+          <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
+          <h3 style={{ fontSize: 'clamp(26px, 3vw, 42px)' }}>{chapter.heading}</h3>
+          {chapter.paragraphs.map((paragraph, p) => <p key={p} style={{ fontSize: '1.075rem', lineHeight: 1.85, maxWidth: '72ch' }}>{paragraph}</p>)}
+        </section>)}
       </section>}
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
         <h2 id="preview-status">{uk ? 'Повна історія готується' : 'The full story is in preparation'}</h2>
