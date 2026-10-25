@@ -36,6 +36,7 @@ export default async function EditorialMoment({ params }: Props) {
   const chapters = draftArticle(slug, locale);
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
+    <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
@@ -56,13 +57,14 @@ export default async function EditorialMoment({ params }: Props) {
       <section aria-labelledby="story-races" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ПЕРЕВІРИТИ В АРХІВІ' : 'EXPLORE THE ARCHIVE'}</p>
         <h2 id="story-races">{uk ? 'Гонки, що змінили історію' : 'The races behind the story'}</h2>
-        <ol style={{ display: 'grid', gap: 0, padding: '0 0 0 18px', listStyle: 'none', borderLeft: '2px solid var(--accent-ink)' }}>
-          {races.map((race, index) => <li key={`${race.year}-${race.round}`} style={{ position: 'relative', padding: '12px 0 28px 24px' }}>
-            <span aria-hidden="true" style={{ position: 'absolute', top: 18, left: -25, width: 12, height: 12, borderRadius: '50%', background: 'var(--accent-ink)', border: '2px solid var(--surface, #fff)' }} />
-            <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
-            <h3 style={{ margin: '8px 0', fontSize: 'clamp(22px, 2.5vw, 30px)' }}>{race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : (uk ? race.uk : race.en)}</h3>
-            <p style={{ lineHeight: 1.7, maxWidth: '64ch' }}>{storyRaceContext(slug, index, locale)}</p>
-            <p className={styles.note}>{race.id ? (uk ? `Архівний запис підтверджено · пілотів у протоколі: ${race.verifiedBy}` : `Archive record matched · drivers corroborating: ${race.verifiedBy}`) : (uk ? 'Архівне посилання поки не підтверджено' : 'Archive link not yet confirmed')}</p>
+        <ol className={styles.editorialRaceTrack} style={{ listStyle: 'none' }}>
+          {races.map((race, index) => <li key={`${race.year}-${race.round}`} className={styles.editorialRaceCard}>
+            <span className={styles.editorialRaceNumber} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <p className={styles.eyebrow}>{race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
+            <h3>{uk ? race.uk : race.en}</h3>
+            <p>{storyRaceContext(slug, index, locale)}</p>
+            {race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? 'Дивитися результати гонки ↗' : 'Explore race results ↗'}</a> : <p className={styles.note}>{uk ? 'Архівне посилання ще не підтверджено' : 'Archive link not yet confirmed'}</p>}
+            {race.id && <p className={styles.note}>{uk ? `Зіставлено з архівом · ${race.verifiedBy} пілот(ів)` : `Matched to archive · ${race.verifiedBy} driver(s)`}</p>}
           </li>)}
         </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
