@@ -1,6 +1,6 @@
 # Grid Atlas · Season stories · Volume III (1950–1982)
 
-**Status:** UNPUBLISHED RESEARCH · bilingual EN/UK editorial research · 25 October 2026. No human fact-check, translation approval, media rights or public publication is implied. These are three-act narrative research chapters, not fully approved long-form articles. Historical incidents involving death or serious injury are discussed without sensationalism.
+**Status:** UNPUBLISHED RESEARCH · bilingual EN/UK editorial research · 25 October 2026. Independent historical and bilingual editorial review pending; no human fact-check, translation approval, media rights or public publication is implied. These are three-act narrative research chapters, not fully approved long-form articles. Historical incidents involving death or serious injury are discussed without sensationalism.
 
 **Reader path:** Quick = opening premise; Explore = three acts; Deep Dive = exact external sources and related season/driver/team/circuit identities. Internal deep links beyond canonical season routes must be resolved against pinned F1DB IDs before publication.
 
