@@ -17,8 +17,10 @@ VOLUMES = (
     DIR / "title-deciders-volume-03.en-uk.md",
     DIR / "title-deciders-volume-04.en-uk.md",
     DIR / "title-deciders-volume-05.en-uk.md",
+    DIR / "title-deciders-volume-06a.en-uk.md",
+    DIR / "title-deciders-volume-06b.en-uk.md",
 )
-EXPECTED_YEARS = {1950, 1958, 1959, 1961, 1964, 1970, 1974, 1976, 1979, 1981, 1982, 1984, 1986, 1988, 1999, 2003, 2007, 2008, 2009, 2010, 2012, 2014, 2016, 2021, 2025}
+EXPECTED_YEARS = {1950, 1958, 1959, 1961, 1964, 1970, 1974, 1976, 1979, 1981, 1982, 1984, 1986, 1988, 1999, 2003, 2007, 2008, 2009, 2010, 2012, 2014, 2016, 2021, 2025, 1967, 1978, 1983, 1989, 1997, 2000, 2005, 2017, 2022, 2024}
 MARKER = re.compile(r"\[(\d{2}-[A-Z])\]")
 URL = re.compile(r"https://www\.formula1\.com/[^\s;]+")
 
@@ -37,11 +39,11 @@ def chapters():
 
 
 class SeasonStoryResearchTests(unittest.TestCase):
-    def test_twenty_five_distinct_championship_seasons(self):
+    def test_thirty_five_distinct_championship_seasons(self):
         items = list(chapters())
-        self.assertEqual(len(items), 25)
+        self.assertEqual(len(items), 35)
         self.assertEqual({year for _, year, _ in items}, EXPECTED_YEARS)
-        self.assertEqual(len({year for _, year, _ in items}), 25)
+        self.assertEqual(len({year for _, year, _ in items}), 35)
 
     def test_bilingual_three_act_narratives_are_substantive(self):
         for path, year, part in chapters():
@@ -68,6 +70,23 @@ class SeasonStoryResearchTests(unittest.TestCase):
                 self.assertGreaterEqual(len(URL.findall(references)), 2)
                 self.assertTrue(all(id.startswith(str(year)[-2:]) for id in used))
                 self.assertNotIn("http://", references)
+
+    def test_volume_six_has_ten_unique_reader_first_stories(self):
+        paths = (DIR / "title-deciders-volume-06a.en-uk.md", DIR / "title-deciders-volume-06b.en-uk.md")
+        text = "\n".join(p.read_text(encoding="utf-8") for p in paths)
+        for year in (1967, 1978, 1983, 1989, 1997, 2000, 2005, 2017, 2022, 2024):
+            self.assertEqual(text.count(f"## {year} — "), 1, year)
+        self.assertEqual(text.count("**Explore next:**"), 10)
+        self.assertEqual(text.count("**Deep Dive · Evidence**"), 10)
+        self.assertNotIn("APPROVED", text)
+        self.assertNotIn("PUBLISHED ARTICLE", text)
+        for _, year, chapter in chapters():
+            if year not in {1967, 1978, 1983, 1989, 1997, 2000, 2005, 2017, 2022, 2024}:
+                continue
+            for locale, section in (("en", chapter.split("### EN ·", 1)[1].split("### UK ·", 1)[0]),
+                                    ("uk", chapter.split("### UK ·", 1)[1].split("**Deep Dive · Evidence**", 1)[0])):
+                for act in re.split(r"(?=^\*\*[123]\.)", section, flags=re.MULTILINE)[1:]:
+                    self.assertGreaterEqual(len(set(MARKER.findall(act))), 2, (year, locale))
 
     def test_official_final_points_are_not_replaced_with_result_sums(self):
         joined = "\n".join(p.read_text(encoding="utf-8") for p in VOLUMES)
