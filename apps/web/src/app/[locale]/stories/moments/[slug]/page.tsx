@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { editorialStoryPreviews } from '@/components/stories/editorial-previews';
 import { editorialMomentPath } from '@/components/stories/editorial-moment-model';
 import { momentScenes } from '@/components/stories/editorial-moment-scenes';
+import { relatedEditorialMoments } from '@/components/stories/editorial-related';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -26,6 +27,7 @@ export default async function EditorialMoment({ params }: Props) {
   const copy = story[locale];
   const beats = editorialMomentPath(slug, locale);
   const scenes = momentScenes(slug, locale);
+  const related = relatedEditorialMoments(slug);
   return <main className={`page ${styles.release}`} style={{ maxWidth: 1040, margin: '0 auto' }}>
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a></nav>
     <article>
@@ -47,6 +49,17 @@ export default async function EditorialMoment({ params }: Props) {
         <p>{uk ? 'Це короткий вступ до майбутньої статті. Довгий матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a short introduction to an upcoming feature. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
         <a href={`/${locale}/stories`}>{uk ? 'Переглянути інші історії' : 'Explore other stories'} →</a>
       </section>
+      <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
+        <p className={styles.eyebrow}>{uk ? 'ПРОДОВЖИТИ ЧИТАТИ' : 'KEEP READING'}</p>
+        <h2 id="related-moments">{uk ? 'Інші погляди на історію' : 'Another way into the history'}</h2>
+        <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: 18, listStyle: 'none', padding: 0 }}>
+          {related.map(item => <li key={item.slug} style={{ borderTop: '2px solid var(--accent-ink)', paddingTop: 16 }}>
+            <span className={styles.eyebrow}>{item.year}</span>
+            <h3><a href={`/${locale}/stories/moments/${item.slug}`}>{item[locale].title} ↗</a></h3>
+            <p>{item[locale].summary}</p>
+          </li>)}
+        </ul>
+      </aside>
     </article>
   </main>;
 }
