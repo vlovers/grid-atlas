@@ -22,11 +22,12 @@ export const resolveEditorialRaces = cache(async (slug: string) => {
   })));
 
   return coordinates.map(([year, round, en, uk]) => {
-    const matching = resultsByParticipantAndYear
+    const corroboration = resultsByParticipantAndYear
       .filter(record => record.year === year)
-      .flatMap(record => record.rows.filter(row => row.round === round).map(row => row.race_id));
-    const unique = [...new Set(matching)];
+      .map(record => ({ person: record.person, ids: [...new Set(record.rows.filter(row => row.round === round).map(row => row.race_id))] }))
+      .filter(record => record.ids.length > 0);
+    const unique = [...new Set(corroboration.flatMap(record => record.ids))];
     return { year, round, en, uk, id: unique.length === 1 ? unique[0] : null as string | null,
-      verifiedBy: matching.length > 0 && unique.length === 1 ? matching.length : 0 };
+      verifiedBy: unique.length === 1 ? corroboration.filter(record => record.ids.length === 1 && record.ids[0] === unique[0]).length : 0 };
   });
 });
