@@ -106,7 +106,7 @@
 
 **3.** Іронія в тому, що майже відразу Фізікелла перейшов до Ferrari на решту сезону. Вікенд, який зробив Force India помітною, допоміг її гонщикові отримати іншу роботу. Тому історію конструктора неможливо розповісти лише підсумковим протоколом: команди створюють можливості, а ці можливості іноді змінюють сам склад команди. Від Спа можна перейти до кар'єри Фізікелли, подальших перейменувань колективу із Сільверстоуна та загальної історії незвичайного 2009 року. Організаційну спадкоємність при цьому слід відділяти від офіційної статистики конструкторів. [FI-A]
 
-**Deep Dive · Sources:** [FI-A] Formula 1, Force India Spa 2009 oral history: https://www.formula1.com/en/latest/article/underdog-tales-when-fisichella-put-force-india-on-top-of-the-world-with-a.5DL6GjJeVjzohlZoz5IhMe
+**Deep Dive · Sources:** [FI-A] Formula 1, Force India Spa 2009 oral history: https://www.formula1.com/en/latest/article/underdog-tales-when-fisichella-put-force-india-on-top-of-the-world-with-a.5DL6GjJeVjzohlZoz5IhMe ; [FI-B] Formula 1, Spa 2009 official race classification: https://www.formula1.com/en/results/2009/races/854/belgium/race-result
 
 ---
 
