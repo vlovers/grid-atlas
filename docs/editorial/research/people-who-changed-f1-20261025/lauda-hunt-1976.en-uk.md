@@ -1,29 +1,57 @@
-# The choice at Fuji / Вибір у Фудзі
+# Lauda and Hunt, 1976: the title and the right to stop
 
-**Status:** Unpublished bilingual narrative draft, **not** independently fact-checked or publication-approved. Full 500-word-per-language target is not yet met. No images or live route.
+# Лауда й Гант, 1976: титул і право зупинитися
+
+**Status:** Unpublished long-form editorial draft. Research links are not yet independently verified to precise passages. No editorial approval, rights clearance or live page implied.
 
 ## EN — Quick
-Niki Lauda had returned to racing only weeks after his devastating Nürburgring accident. That fact gives the 1976 finale its moral weight, but it does not make his later decision inevitable.
 
-## EN — Explore
-### Act I — The circumstances
-Niki Lauda had returned to racing only weeks after his devastating Nürburgring accident. That fact gives the 1976 finale its moral weight, but it does not make his later decision inevitable. At a rain-soaked Fuji, Lauda judged the conditions too dangerous and withdrew. The championship did not stop when he did. James Hunt still had to finish high enough to overturn the points gap, and a late tyre problem turned what might have been a straightforward calculation into another fight. He finished third and became champion by a single point.
+At the start of 1976, Niki Lauda was the reigning world champion and Ferrari's established leader. James Hunt, newly driving for McLaren, was the challenger.
 
-### Act II — What the result means
-A result sheet says Hunt won the championship. It cannot tell the reader what Lauda ought to have done. That distinction matters: the story is not a contest between courage and cowardice. It is about two drivers making different decisions under radically different personal circumstances, while the championship's arithmetic continued to operate around them.
+## EN — Explore · Four acts
+
+### A season that changed its meaning
+
+At the start of 1976, Niki Lauda was the reigning world champion and Ferrari's established leader. James Hunt, newly driving for McLaren, was the challenger. It is tempting to treat their season as a straightforward contrast between two personalities. The racing was more complicated. Lauda built a substantial advantage before his terrible accident at the Nürburgring. Hunt's victories and Lauda's absence changed the championship arithmetic. When Lauda returned to racing astonishingly soon, the contest had acquired a question that no points table could answer: how much risk was acceptable after a driver had already paid such a high price?
+
+### The return was not the end of the story
+
+Lauda's comeback at Monza demonstrated that he could compete again. It did not erase the injuries, nor did it obligate him to accept every future risk. Hunt, meanwhile, continued collecting the results he needed. Both drivers had reasons to pursue the title, but those reasons cannot be reduced to imagined private thoughts. The evidence we can report is public: starts, finishes, points, the Nürburgring accident, the return and the final race. An honest narrative must leave room for the fact that the same weather could be judged differently by two people with radically different recent experiences.
+
+### Fuji in the rain
+
+The Japanese Grand Prix at Fuji began in severe wet conditions. Lauda withdrew because he considered racing unsafe. Other drivers also questioned the conditions, but the event continued. That decision did not hand Hunt the championship automatically. Hunt still needed a finishing position that would leave him ahead on points. Late tyre trouble and a stop complicated his race. He eventually finished third. The final championship margin was one point. In a conventional sporting story, the final paragraph would announce Hunt as the winner and Lauda as the loser. Here the more revealing detail is that Lauda's decision and Hunt's title can both be understood without treating one as a verdict on the other.
+
+### What a championship cannot measure
+
+A championship awards points for classified results. It does not award points for knowing when to stop. The temptation to romanticise Lauda's withdrawal as either heroic or weak flattens a decision made under dangerous conditions. Nor should Hunt's success be dismissed as merely a consequence of his rival's accident: he had to race, recover and score. The season deserves two parallel conclusions. Hunt became world champion through the rules and results of 1976. Lauda demonstrated that returning to competition did not mean surrendering the right to refuse an unacceptable risk. The tension between those truths is why this story still matters.
 
 ## UK — Коротко
-Нікі Лауда повернувся за кермо лише за кілька тижнів після страшної аварії на Нюрбургринзі. Саме тому фінал 1976 року має особливу вагу, хоча рішення пілота не було наперед визначеним.
 
-## UK — Дослідити
-### Акт I — Обставини
-Нікі Лауда повернувся за кермо лише за кілька тижнів після страшної аварії на Нюрбургринзі. Саме тому фінал 1976 року має особливу вагу, хоча рішення пілота не було наперед визначеним. Під зливою у Фудзі Лауда вирішив, що ризик надто великий, і зійшов. Чемпіонат на цьому не завершився. Джеймсу Ганту ще потрібно було здобути достатньо очок, а пізня проблема із шинами знову змінила розрахунки. Третє місце принесло йому титул із перевагою лише в одне очко.
+На початку 1976 року Нікі Лауда був чинним чемпіоном світу й лідером Ferrari. Джеймс Гант, який перейшов до McLaren, став його головним суперником.
 
-### Акт II — Чому це важливо
-Протокол повідомляє, що чемпіоном став Гант. Але він не може відповісти, як саме мав вчинити Лауда. Це принципова різниця: історія не про суперечку між сміливістю та боягузтвом. Вона про двох пілотів, які ухвалили різні рішення за зовсім різних особистих обставин, поки чемпіонська арифметика продовжувала діяти.
+## UK — Дослідити · Чотири акти
 
-## Deep Dive — research evidence
-- Official F1 retrospective / biographical research locator: https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF.57lx35G8vIsWRCOL5LV6cF
-- **Verification pending:** open the source and cross-check every numerical claim against pinned F1DB v2026.17.0, exact race classification and applicable scoring rules; do not infer private thoughts or unreported dialogue.
-- **Reading trail:** season → race → driver → constructor → circuit. Canonical archive IDs and page routes not yet resolved.
-- **Editorial gate:** expand to 500+ original words per language, add primary event-specific source locators, independent EN/UK review, then tests/CI and explicit publication approval.
+### Сезон, який змінив сенс
+
+На початку 1976 року Нікі Лауда був чинним чемпіоном світу й лідером Ferrari. Джеймс Гант, який перейшов до McLaren, став його головним суперником. Їхнє протистояння часто описують як боротьбу двох протилежних характерів. Насправді спортивна історія складніша. Лауда створив значний відрив, перш ніж потрапив у страшну аварію на Нюрбургринзі. Перемоги Ганта й вимушена відсутність Лауди змінили чемпіонські розрахунки. Коли австрієць надзвичайно швидко повернувся за кермо, виникло запитання, на яке не відповідає жодна таблиця: який ризик є прийнятним після того, як людина вже заплатила таку високу ціну?
+
+### Повернення не поставило крапку
+
+Виступ Лауди в Монці показав, що він знову здатен змагатися. Але повернення не скасувало травм і не зобов'язувало його погоджуватися на будь-яку небезпеку в майбутньому. Гант тим часом продовжував здобувати потрібні результати. Обидва мали підстави боротися за титул, але ми не можемо підміняти факти вигаданими внутрішніми монологами. Достовірна основа історії — старти, фініші, очки, аварія на Нюрбургринзі, повернення та фінал. Важливо визнати: однакову погоду двоє людей із зовсім різним нещодавнім досвідом могли оцінити по-різному.
+
+### Фудзі під зливою
+
+Гран-прі Японії на трасі Фудзі розпочався за складних дощових умов. Лауда зійшов, вирішивши, що продовжувати надто небезпечно. Інші пілоти також ставили під сумнів безпеку, але гонка тривала. Сам по собі схід Лауди ще не зробив Ганта чемпіоном. Британцеві потрібно було фінішувати достатньо високо, щоб випередити суперника за очками. Пізня проблема із шинами та зупинка ускладнили його гонку. Зрештою він став третім і виграв титул із перевагою в одне очко. У звичайній спортивній історії це була б проста перемога одного над іншим. Але тут рішення Лауди та чемпіонство Ганта не варто перетворювати на взаємний моральний вирок.
+
+### Чого не вимірюють очки
+
+Чемпіонат нараховує очки за результати на трасі. Він не винагороджує окремо за вміння вчасно зупинитися. Називати рішення Лауди винятково героїчним або слабким означає спростити складний вибір у небезпечних умовах. Так само нечесно знецінювати успіх Ганта, пояснюючи його лише аварією суперника: Джеймсу потрібно було змагатися, відіграватися й набирати очки. Цей сезон має два висновки, які не суперечать один одному. Гант став чемпіоном світу за правилами й результатами 1976 року. Лауда показав, що повернення у спорт не означає відмови від права не приймати неприйнятний ризик. Саме напруга між цими істинами робить історію важливою.
+
+## Deep Dive — evidence and review
+
+- Research locator (verify before publication): https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF.57lx35G8vIsWRCOL5LV6cF
+- Validate precise dates, race positions, points, scoring regulations and constructor IDs against pinned F1DB and primary classifications.
+- Do not invent motives, dialogue, technical telemetry or steward quotations.
+- Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
+- **Not published.**
