@@ -1,29 +1,56 @@
-# The year a breakthrough became a possibility / Рік, коли прорив став можливим
+# Kubica and BMW Sauber: the year possibility felt real
 
-**Status:** Unpublished bilingual narrative draft, **not** independently fact-checked or publication-approved. Full 500-word-per-language target is not yet met. No images or live route.
+# Кубіца й BMW Sauber: рік, коли можливість здавалася реальною
+
+**Status:** Unpublished editorial research manuscript; claims and research link require independent verification. Not a live story.
 
 ## EN — Quick
-Robert Kubica's 2008 Canadian Grand Prix victory was BMW Sauber's first and only Formula 1 win. It briefly put him at the top of the drivers' championship.
 
-## EN — Explore
-### Act I — The circumstances
-Robert Kubica's 2008 Canadian Grand Prix victory was BMW Sauber's first and only Formula 1 win. It briefly put him at the top of the drivers' championship. For a moment, the season suggested that a team outside Ferrari and McLaren might challenge for the title. That possibility matters even though the final standings did not fulfil it.
+Robert Kubica's victory at the 2008 Canadian Grand Prix was BMW Sauber's first Formula 1 win. The result also placed him at the top of the drivers' championship standings at that moment.
 
-### Act II — What the result means
-Kubica's later rally accident and return to Formula 1 are another chapter, not a preordained ending to 2008. A careful biography avoids turning an earlier achievement into mere foreshadowing. It should show what BMW Sauber accomplished on its own terms, how its priorities changed and what evidence supports the claim that a title challenge was possible.
+## EN — Explore · Four acts
+
+### A win with more than one meaning
+
+Robert Kubica's victory at the 2008 Canadian Grand Prix was BMW Sauber's first Formula 1 win. The result also placed him at the top of the drivers' championship standings at that moment. For a team competing against Ferrari and McLaren, it was more than a successful Sunday. It suggested that the established hierarchy could be challenged. A retrospective that begins with everything that later went wrong would miss the optimism of the moment. In June 2008, the achievement deserved to be understood on its own terms.
+
+### What a lead does not guarantee
+
+Leading the championship in June is not the same as being favourite in November. The season was long, and teams faced choices about development resources and future regulations. BMW Sauber did not maintain a title-winning trajectory through the final races. It is tempting to explain that outcome with a single strategic decision, but such a claim requires evidence from team planning and contemporary reporting. The stronger story begins by asking what the team could control and what its rivals were changing around it.
+
+### The driver and the machine
+
+Kubica's achievement was personal and collective. A driver can take advantage of a car's strengths, but a team must design, build and run the machinery. The Canadian win should therefore connect the driver's profile to BMW Sauber's constructor history, the Montreal circuit and the 2008 standings. The archive should not replace those relationships with vague praise. It should show the results that made a championship challenge plausible, then the results that eventually made it impossible.
+
+### Do not read the future backward
+
+Kubica's later rally accident and eventual Formula 1 return are powerful chapters in his biography. They should not be used to make 2008 feel like a story whose ending was already written. At the time, his career was moving upward and BMW Sauber had demonstrated genuine competitive potential. That is enough to make the season compelling. A responsible account keeps the 2008 sporting evidence separate from the later human drama, then offers readers a deliberate link between the two.
 
 ## UK — Коротко
-Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою й єдиною для BMW Sauber у Формулі-1. На певний час вона вивела його на вершину особистого заліку.
 
-## UK — Дослідити
-### Акт I — Обставини
-Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою й єдиною для BMW Sauber у Формулі-1. На певний час вона вивела його на вершину особистого заліку. Здавалося, що команда поза звичним колом Ferrari та McLaren може втрутитися в боротьбу за титул. Ця можливість важлива, навіть якщо підсумкова таблиця її не підтвердила.
+Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою для BMW Sauber у Формулі-1. Вона також вивела пілота на перше місце в чемпіонаті на той момент.
 
-### Акт II — Чому це важливо
-Пізніша аварія Кубіци в ралі та повернення у Формулу-1 — інший розділ, а не наперед визначена розв’язка сезону 2008-го. Уважна біографія не перетворює ранній успіх на простий натяк на майбутнє. Вона має показати, чого BMW Sauber досягла саме тоді, як змінювалися пріоритети команди та які факти дозволяють говорити про шанс на титул.
+## UK — Дослідити · Чотири акти
 
-## Deep Dive — research evidence
-- Official F1 retrospective / biographical research locator: https://www.formula1.com/en/latest/article/robert-kubica-the-comeback-story.4j2A8u8fNMs13nE0KQ7mL7
-- **Verification pending:** open the source and cross-check every numerical claim against pinned F1DB v2026.17.0, exact race classification and applicable scoring rules; do not infer private thoughts or unreported dialogue.
-- **Reading trail:** season → race → driver → constructor → circuit. Canonical archive IDs and page routes not yet resolved.
-- **Editorial gate:** expand to 500+ original words per language, add primary event-specific source locators, independent EN/UK review, then tests/CI and explicit publication approval.
+### Перемога з кількома значеннями
+
+Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою для BMW Sauber у Формулі-1. Вона також вивела пілота на перше місце в чемпіонаті на той момент. Для команди, яка змагалася з Ferrari та McLaren, це було більше, ніж успішна неділя. Результат показав, що звичний порядок сил можна порушити. Ретроспектива, яка починається з усіх пізніших невдач, втрачає оптимізм того моменту. У червні 2008 року це досягнення заслуговувало на власну історію.
+
+### Чого не гарантує лідерство
+
+Очолювати чемпіонат у червні — не те саме, що бути фаворитом у листопаді. Сезон був довгим, а команди вирішували, куди спрямовувати ресурси на розвиток і як готуватися до майбутніх правил. BMW Sauber не втримала траєкторію, потрібну для титулу, до останніх етапів. Спокуса пояснити це одним стратегічним рішенням велика, але таке твердження потребує документів команди й тогочасних свідчень. Сильніша історія запитує, що команда могла контролювати, а що змінювали навколо неї суперники.
+
+### Пілот і болід
+
+Успіх Кубіци був водночас особистим і командним. Пілот може використати сильні сторони машини, але хтось має її спроєктувати, побудувати й підготувати до гонки. Тому канадська перемога повинна поєднувати профіль гонщика з історією конструктора BMW Sauber, трасою в Монреалі й таблицею сезону 2008 року. Архів не має підміняти ці зв'язки загальними похвалами. Він повинен показати результати, які робили боротьбу за титул можливою, а потім — результати, які цю можливість забрали.
+
+### Не читати майбутнє задом наперед
+
+Пізніша аварія Кубіци в ралі та повернення у Формулу-1 — сильні розділи його біографії. Але вони не повинні створювати враження, ніби фінал сезону 2008 року був наперед написаний. Тоді кар'єра пілота йшла вгору, а BMW Sauber продемонструвала справжній потенціал. Цього вже достатньо для цікавої історії. Відповідальна розповідь відокремлює спортивні факти 2008-го від подальшої людської драми, а потім пропонує читачеві свідомо перейти між ними.
+
+## Deep Dive — source and editorial gates
+
+- Research locator: https://www.formula1.com/en/latest/article/robert-kubica-the-comeback-story.4j2A8u8fNMs13nE0KQ7mL7
+- Independently verify event chronology, official classification and historical rules; resolve pinned F1DB identifiers and live route targets.
+- No invented quotes, motives or telemetry. Source link is a locator, not evidence of a completed source review.
+- Require historical and UK-language review, tests and CI before publication.
