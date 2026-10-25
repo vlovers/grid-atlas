@@ -1,4 +1,4 @@
-# Grid Atlas · Race turning points · Volume I (1957–2005)
+# Grid Atlas · Race turning points · Volume I (1957–1998)
 
 **Status:** UNPUBLISHED RESEARCH · 25 October 2026 · original EN/UK manuscripts. Independent historical and Ukrainian-language review pending. These are editorial manuscripts, **not** live race pages, approved biographies, verified photographs, or claims of legal/official rulings beyond the cited records.
 
@@ -39,7 +39,7 @@
 **Connections:** /en/seasons/1979 · /uk/seasons/1979 · Gilles Villeneuve · René Arnoux · Jean-Pierre Jabouille · Renault · Ferrari · Dijon-Prenois
 
 ### EN · Three acts
-**1.** The 1979 French Grand Prix contains two different histories. In the first, Jean-Pierre Jabouille took Renault to victory at Dijon-Prenois, proving that the turbocharged engine could win a championship Grand Prix. That mattered far beyond one Sunday: the technology had been questioned and the result changed the argument. Yet the finish people still replay most often did not decide first place. It happened behind the winner, between Gilles Villeneuve's Ferrari and René Arnoux's Renault. [79-A] [79-B]
+**1.** The 1979 French Grand Prix contains two different histories. In the first, Jean-Pierre Jabouille took Renault to victory at Dijon-Prenois, proving that the turbocharged engine could win a championship Grand Prix. That mattered far beyond one Sunday: the technology had been questioned and the result changed the argument. [79-C] Yet the finish people still replay most often did not decide first place. It happened behind the winner, between Gilles Villeneuve's Ferrari and René Arnoux's Renault. [79-A] [79-B]
 
 **2.** As the race approached its final laps, Villeneuve and Arnoux traded position, attacked under braking and repeatedly ran alongside each other. The spectacle was not a neat sequence of DRS passes: these cars were difficult to place, the margins were narrow, and the drivers kept finding ways to challenge again. The battle mattered because both refused to treat second place as settled. It is possible to appreciate the intensity without pretending that every contact was safe or that one highlight clip explains the whole duel. [79-B]
 
@@ -55,6 +55,7 @@
 **Deep Dive · Evidence**
 - [79-A] Formula 1, 1979 French Grand Prix final classification: https://www.formula1.com/en/results/1979/races/414/france/race-result
 - [79-B] The Guardian, historical overtaking retrospective: https://www.theguardian.com/sport/2017/apr/05/joy-of-six-formula-one-overtakes
+- [79-C] Formula 1, French Grand Prix circuit history and first turbo win: https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo
 
 ---
 
