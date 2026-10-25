@@ -73,13 +73,20 @@ class SeasonStoryResearchTests(unittest.TestCase):
 
     def test_volume_six_has_ten_unique_reader_first_stories(self):
         paths = (DIR / "title-deciders-volume-06a.en-uk.md", DIR / "title-deciders-volume-06b.en-uk.md")
-        text = "\\n".join(p.read_text(encoding="utf-8") for p in paths)
+        text = "\n".join(p.read_text(encoding="utf-8") for p in paths)
         for year in (1967, 1978, 1983, 1989, 1997, 2000, 2005, 2017, 2022, 2024):
             self.assertEqual(text.count(f"## {year} — "), 1, year)
         self.assertEqual(text.count("**Explore next:**"), 10)
         self.assertEqual(text.count("**Deep Dive · Evidence**"), 10)
         self.assertNotIn("APPROVED", text)
         self.assertNotIn("PUBLISHED ARTICLE", text)
+        for _, year, chapter in chapters():
+            if year not in {1967, 1978, 1983, 1989, 1997, 2000, 2005, 2017, 2022, 2024}:
+                continue
+            for locale, section in (("en", chapter.split("### EN ·", 1)[1].split("### UK ·", 1)[0]),
+                                    ("uk", chapter.split("### UK ·", 1)[1].split("**Deep Dive · Evidence**", 1)[0])):
+                for act in re.split(r"(?=^\\*\\*[123]\\.)", section, flags=re.MULTILINE)[1:]:
+                    self.assertGreaterEqual(len(set(MARKER.findall(act))), 2, (year, locale))
 
     def test_official_final_points_are_not_replaced_with_result_sums(self):
         joined = "\n".join(p.read_text(encoding="utf-8") for p in VOLUMES)
