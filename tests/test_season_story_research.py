@@ -85,7 +85,7 @@ class SeasonStoryResearchTests(unittest.TestCase):
                 continue
             for locale, section in (("en", chapter.split("### EN ·", 1)[1].split("### UK ·", 1)[0]),
                                     ("uk", chapter.split("### UK ·", 1)[1].split("**Deep Dive · Evidence**", 1)[0])):
-                for act in re.split(r"(?=^\\*\\*[123]\\.)", section, flags=re.MULTILINE)[1:]:
+                for act in re.split(r"(?=^\*\*[123]\.)", section, flags=re.MULTILINE)[1:]:
                     self.assertGreaterEqual(len(set(MARKER.findall(act))), 2, (year, locale))
 
     def test_official_final_points_are_not_replaced_with_result_sums(self):
