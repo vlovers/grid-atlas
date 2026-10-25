@@ -36,9 +36,9 @@ export default async function Stories({ params }: Props) {
           const copy = story[locale];
           return <li key={story.slug} style={{ border: '1px solid currentColor', borderRadius: 6, padding: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
             <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {story.year}</span>
-            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}>{copy.title}</h3>
+            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}><a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a></h3>
             <p style={{ lineHeight: 1.65, margin: 0 }}>{copy.summary}</p>
-            <p style={{ opacity: .75, fontSize: '.85rem', marginTop: 'auto' }}>{uk ? 'Повна історія готується' : 'Full story in preparation'}</p>
+            <p style={{ opacity: .75, fontSize: '.85rem', marginTop: 'auto' }}><a href={`/${locale}/stories/moments/${story.slug}`}>{uk ? 'Відкрити анонс' : 'Open preview'} →</a></p>
           </li>;
         })}
       </ol>
