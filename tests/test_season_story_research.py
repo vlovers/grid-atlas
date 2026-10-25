@@ -1,0 +1,81 @@
+"""Guardrails for unpublished EN/UK season-story research manuscripts.
+
+Run: python3 -m unittest tests/test_season_story_research.py
+These checks validate structure and provenance pointers, not historical truth or editorial approval.
+"""
+from __future__ import annotations
+
+import re
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+DIR = ROOT / "docs" / "editorial" / "season-arcs"
+VOLUMES = (
+    DIR / "title-deciders-volume-01.en-uk.md",
+    DIR / "title-deciders-volume-02.en-uk.md",
+)
+EXPECTED_YEARS = {1976, 1988, 2007, 2012, 2016, 2021, 2025}
+MARKER = re.compile(r"\[(\d{2}-[A-Z])\]")
+URL = re.compile(r"https://www\.formula1\.com/[^\s;]+")
+
+
+def chapters():
+    for path in VOLUMES:
+        text = path.read_text(encoding="utf-8")
+        assert "UNPUBLISHED RESEARCH" in text and "pending" in text.lower()
+        parts = re.split(r"(?=^## \d{4} — )", text, flags=re.MULTILINE)
+        for part in parts[1:]:
+            yield path.name, int(part[3:7]), part
+
+
+class SeasonStoryResearchTests(unittest.TestCase):
+    def test_seven_distinct_championship_seasons(self):
+        items = list(chapters())
+        self.assertEqual(len(items), 7)
+        self.assertEqual({year for _, year, _ in items}, EXPECTED_YEARS)
+        self.assertEqual(len({year for _, year, _ in items}), 7)
+
+    def test_bilingual_three_act_narratives_are_substantive(self):
+        for path, year, part in chapters():
+            with self.subTest(path=path, year=year):
+                self.assertIn("### EN ·", part)
+                self.assertIn("### UK ·", part)
+                en = part.split("### EN ·", 1)[1].split("### UK ·", 1)[0]
+                uk = part.split("### UK ·", 1)[1].split("**Evidence:**", 1)[0]
+                for label, text in (("en", en), ("uk", uk)):
+                    self.assertEqual(len(re.findall(r"^\*\*[123]\.", text, re.MULTILINE)), 3, (year, label))
+                    self.assertGreaterEqual(len(text.split()), 200, (year, label))
+                self.assertIn(f"/en/seasons/{year}", part)
+                self.assertIn(f"/uk/seasons/{year}", part)
+
+    def test_claim_markers_have_explicit_source_entries(self):
+        for path, year, part in chapters():
+            with self.subTest(path=path, year=year):
+                self.assertIn("**Evidence:**", part)
+                prose, references = part.split("**Evidence:**", 1)
+                used = set(MARKER.findall(prose))
+                supplied = set(MARKER.findall(references))
+                self.assertGreaterEqual(len(used), 3)
+                self.assertEqual(used, supplied, "Every referenced source must be defined and used")
+                self.assertGreaterEqual(len(URL.findall(references)), 3)
+                self.assertTrue(all(id.startswith(str(year)[-2:]) for id in used))
+                self.assertNotIn("http://", references)
+
+    def test_official_final_points_are_not_replaced_with_result_sums(self):
+        joined = "\n".join(p.read_text(encoding="utf-8") for p in VOLUMES)
+        for expected in ("423", "421", "410", "369.5", "395.5", "387.5",
+                         "69", "68", "90", "87", "110", "109", "281", "278", "385", "380"):
+            self.assertIn(expected, joined)
+
+    def test_publication_gate_remains_explicit(self):
+        for path in VOLUMES:
+            text = path.read_text(encoding="utf-8")
+            self.assertIn("UNPUBLISHED RESEARCH", text)
+            self.assertRegex(text.lower(), r"(independent|editorial).{0,50}review")
+            self.assertIn("not", text.lower())
+        self.assertNotIn("published", str(DIR).split("/")[-1])
+
+
+if __name__ == "__main__":
+    unittest.main()
