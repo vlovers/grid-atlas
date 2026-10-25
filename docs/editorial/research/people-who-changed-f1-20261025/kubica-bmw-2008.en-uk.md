@@ -26,6 +26,10 @@ Kubica's achievement was personal and collective. A driver can take advantage of
 
 Kubica's later rally accident and eventual Formula 1 return are powerful chapters in his biography. They should not be used to make 2008 feel like a story whose ending was already written. At the time, his career was moving upward and BMW Sauber had demonstrated genuine competitive potential. That is enough to make the season compelling. A responsible account keeps the 2008 sporting evidence separate from the later human drama, then offers readers a deliberate link between the two.
 
+### Potential is not a missing trophy
+
+When a promising season does not produce a championship, hindsight encourages us to call it a wasted opportunity. That judgement is too easy. Kubica's 2008 results deserve attention precisely because they made a different outcome imaginable, not because a title was owed to him. A season graph can show when he led the standings and how the picture changed afterward, but the chart should not pretend to know how the championship would have unfolded under different development decisions. The reader should encounter possibility, not a fabricated alternative history.
+
 ## UK — Коротко
 
 Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою для BMW Sauber у Формулі-1. Вона також вивела пілота на перше місце в чемпіонаті на той момент.
@@ -47,6 +51,10 @@ Kubica's later rally accident and eventual Formula 1 return are powerful chapter
 ### Не читати майбутнє задом наперед
 
 Пізніша аварія Кубіци в ралі та повернення у Формулу-1 — сильні розділи його біографії. Але вони не повинні створювати враження, ніби фінал сезону 2008 року був наперед написаний. Тоді кар'єра пілота йшла вгору, а BMW Sauber продемонструвала справжній потенціал. Цього вже достатньо для цікавої історії. Відповідальна розповідь відокремлює спортивні факти 2008-го від подальшої людської драми, а потім пропонує читачеві свідомо перейти між ними.
+
+### Потенціал — не втрачений кубок
+
+Коли перспективний сезон не завершується чемпіонством, заднім числом легко назвати його змарнованим шансом. Це надто простий вирок. Результати Кубіци у 2008 році цікаві саме тому, що робили інший фінал можливим, а не тому, що титул нібито належав йому. Графік сезону може показати, коли пілот очолював залік і як ситуація змінювалася згодом, але він не повинен удавати, ніби знає результат за інших рішень щодо розвитку боліда. Читач має побачити можливість, а не вигадану альтернативну історію.
 
 ## Deep Dive — source and editorial gates
 
