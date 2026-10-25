@@ -7,6 +7,7 @@ import { relatedEditorialMoments } from '@/components/stories/editorial-related'
 import { draftArticle } from '@/components/stories/editorial-draft-articles';
 import { resolveEditorialPeople } from '@/components/stories/editorial-people-resolver';
 import { resolveEditorialRaces } from '@/components/stories/editorial-race-resolver';
+import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -60,6 +61,7 @@ export default async function EditorialMoment({ params }: Props) {
             <span aria-hidden="true" style={{ position: 'absolute', top: 18, left: -25, width: 12, height: 12, borderRadius: '50%', background: 'var(--accent-ink)', border: '2px solid var(--surface, #fff)' }} />
             <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {race.year} / {uk ? 'ЕТАП' : 'ROUND'} {race.round}</p>
             <h3 style={{ margin: '8px 0', fontSize: 'clamp(22px, 2.5vw, 30px)' }}>{race.id ? <a href={`/${locale}/races/${race.id}`}>{uk ? race.uk : race.en} ↗</a> : (uk ? race.uk : race.en)}</h3>
+            <p style={{ lineHeight: 1.7, maxWidth: '64ch' }}>{storyRaceContext(slug, index, locale)}</p>
             <p className={styles.note}>{race.id ? (uk ? 'Підтверджено результатами архіву' : 'Matched to archive race results') : (uk ? 'Архівне посилання поки не підтверджено' : 'Archive link not yet confirmed')}</p>
           </li>)}
         </ol>
@@ -87,8 +89,8 @@ export default async function EditorialMoment({ params }: Props) {
         </section>)}
       </section>}
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
-        <h2 id="preview-status">{uk ? 'Повна історія готується' : 'The full story is in preparation'}</h2>
-        <p>{uk ? 'Це короткий вступ до майбутньої статті. Довгий матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a short introduction to an upcoming feature. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
+        <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
+        <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a short introduction to an upcoming feature. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
         <a href={`/${locale}/stories`}>{uk ? 'Переглянути інші історії' : 'Explore other stories'} →</a>
       </section>
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
