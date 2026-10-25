@@ -1,29 +1,57 @@
-# The rain was an opening, not a victory / Дощ відкрив шанс, але не подарував перемогу
+# Vettel at Monza: the rain did not drive the car
 
-**Status:** Unpublished bilingual narrative draft, **not** independently fact-checked or publication-approved. Full 500-word-per-language target is not yet met. No images or live route.
+# Феттель у Монці: дощ не керував болідом
+
+**Status:** Unpublished long-form editorial draft. Research links are not yet independently verified to precise passages. No editorial approval, rights clearance or live page implied.
 
 ## EN — Quick
-When Sebastian Vettel took pole at the wet 2008 Italian Grand Prix, it was easy to describe the result as a surprise caused by the weather. Toro Rosso was not the established favourite.
 
-## EN — Explore
-### Act I — The circumstances
-When Sebastian Vettel took pole at the wet 2008 Italian Grand Prix, it was easy to describe the result as a surprise caused by the weather. Toro Rosso was not the established favourite. But qualifying is not the same as racing, and a fortunate opportunity is not the same as a completed achievement. Vettel had to manage the start, the wet conditions and the pressure of leading a Grand Prix in a car few expected to see in front.
+The 2008 Italian Grand Prix was shaped by wet weather. Sebastian Vettel took pole position for Toro Rosso, a team that normally raced far from the front.
 
-### Act II — What the result means
-He won. The result was the first Grand Prix victory for both Vettel and Toro Rosso. It also creates an important identity question for an archive: the driver later won titles for Red Bull Racing, but the Monza win belongs to Toro Rosso's own record. A good biography follows a person's career across teams without rewriting the names on the historical entry list.
+## EN — Explore · Four acts
+
+### A pole nobody expected
+
+The 2008 Italian Grand Prix was shaped by wet weather. Sebastian Vettel took pole position for Toro Rosso, a team that normally raced far from the front. It would be easy to explain that result as a lucky qualifying session. Rain can scramble the usual hierarchy, and timing matters. But this explanation leaves out the driver who still had to find grip, commit to braking points and deliver a lap. The surprise was real; so was the performance.
+
+### Sunday asks a harder question
+
+A pole position is a single result. Winning a Grand Prix requires managing a start, changing conditions and the pressure of being pursued for an entire race. Vettel did precisely that. He converted his qualifying advantage into victory, becoming the youngest Grand Prix winner at the time. The result was also Toro Rosso's first win. It was not a Red Bull Racing victory, despite the driver's later association with that team. Preserving the constructor's identity matters in an archive that wants to tell how people and organisations developed.
+
+### An underdog story without magic
+
+The temptation is to present Monza as a fairy tale in which weather randomly selected a winner. That denies the work required to seize the opportunity. Another temptation is to rewrite the race as proof that Vettel's later championships were inevitable. They were not. At Monza, he was a young driver who had delivered a remarkable weekend in a specific car under specific conditions. His future career adds perspective, but it cannot be used as evidence for the reasons he won that day.
+
+### The route through the archive
+
+A reader should be able to follow this event in several directions: back to Toro Rosso's development, forward to Vettel's move to Red Bull Racing, sideways to the 2008 championship and into Monza's history. Those routes should use verified driver, constructor and race identifiers, not simply similar names. The lesson of the weekend is that an opening is not the same as a result. The rain made an upset possible. Vettel and Toro Rosso made it happen.
 
 ## UK — Коротко
-Коли Себастьян Феттель здобув поул у дощовій кваліфікації Гран-прі Італії 2008 року, результат легко було пояснити погодою. Toro Rosso не належала до звичних фаворитів.
 
-## UK — Дослідити
-### Акт I — Обставини
-Коли Себастьян Феттель здобув поул у дощовій кваліфікації Гран-прі Італії 2008 року, результат легко було пояснити погодою. Toro Rosso не належала до звичних фаворитів. Але кваліфікація — не гонка, а вдала нагода — ще не перемога. Феттелю довелося впоратися зі стартом, мокрою трасою та тиском лідерства на боліді, який мало хто очікував побачити попереду.
+Гран-прі Італії 2008 року проходив під впливом дощової погоди. Себастьян Феттель здобув поул за Toro Rosso — команду, яка зазвичай боролася далеко від лідерів.
 
-### Акт II — Чому це важливо
-Він переміг. Це був перший тріумф у Гран-прі і для Феттеля, і для Toro Rosso. Результат також ставить важливе запитання до історичного архіву: згодом пілот вигравав титули за Red Bull Racing, але перемога в Монці належить саме Toro Rosso. Добра біографія простежує кар’єру людини крізь різні команди, не переписуючи історичні назви учасників.
+## UK — Дослідити · Чотири акти
 
-## Deep Dive — research evidence
-- Official F1 retrospective / biographical research locator: https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5
-- **Verification pending:** open the source and cross-check every numerical claim against pinned F1DB v2026.17.0, exact race classification and applicable scoring rules; do not infer private thoughts or unreported dialogue.
-- **Reading trail:** season → race → driver → constructor → circuit. Canonical archive IDs and page routes not yet resolved.
-- **Editorial gate:** expand to 500+ original words per language, add primary event-specific source locators, independent EN/UK review, then tests/CI and explicit publication approval.
+### Поул, якого ніхто не чекав
+
+Гран-прі Італії 2008 року проходив під впливом дощової погоди. Себастьян Феттель здобув поул за Toro Rosso — команду, яка зазвичай боролася далеко від лідерів. Легко пояснити цей результат вдалою кваліфікацією. Дощ справді здатен змінити звичний порядок сил, а момент виїзду на трасу має значення. Але таке пояснення забуває про пілота, який однаково мусив знайти зчеплення, правильно загальмувати й скласти швидке коло. Сенсація була справжньою. Майстерність — теж.
+
+### Неділя ставить складніше запитання
+
+Поул — результат одного кола. Для перемоги в Гран-прі потрібно вдало стартувати, пристосовуватися до умов і витримувати тиск суперників протягом усієї дистанції. Феттель із цим упорався. Він перетворив перевагу в кваліфікації на перемогу й став наймолодшим переможцем Гран-прі на той момент. Для Toro Rosso це також був перший тріумф. Не слід приписувати його Red Bull Racing лише тому, що пізніше пілот виступав за цю команду. Історичному архіву важливо зберігати справжні назви конструкторів.
+
+### Казка без чарів
+
+Спокуса назвати Монцу казкою, у якій дощ випадково обрав переможця, дуже велика. Але це знецінює роботу, потрібну для використання шансу. Інша спокуса — оголосити цю гонку доказом неминучості майбутніх титулів Феттеля. Вони не були неминучими. Того дня він залишався молодим пілотом, який провів винятковий вікенд на конкретному боліді за конкретних умов. Подальша кар'єра додає перспективи, але не може пояснити всі причини тодішньої перемоги.
+
+### Шлях крізь архів
+
+Читач має змогу продовжити цю історію в різних напрямках: назад — до розвитку Toro Rosso, уперед — до переходу Феттеля в Red Bull Racing, убік — до чемпіонату 2008 року, глибше — до історії Монци. Для цього потрібні перевірені ідентифікатори гонщика, конструктора й етапу, а не просто схожі назви. Головний висновок того вікенду простий: шанс і результат — різні речі. Дощ зробив сенсацію можливою. Феттель і Toro Rosso перетворили її на реальність.
+
+## Deep Dive — evidence and review
+
+- Research locator (verify before publication): https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5
+- Validate precise dates, race positions, points, scoring regulations and constructor IDs against pinned F1DB and primary classifications.
+- Do not invent motives, dialogue, technical telemetry or steward quotations.
+- Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
+- **Not published.**
