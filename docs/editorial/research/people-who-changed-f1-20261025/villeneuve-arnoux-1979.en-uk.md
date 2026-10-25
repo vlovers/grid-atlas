@@ -26,6 +26,10 @@ Highlights can make the duel look like a sequence of isolated overtakes. The ful
 
 A trophy records first place. Memory sometimes rewards something else: a contest whose uncertainty remains visible even when the winner is already decided. Dijon shows why a racing archive should connect results with stories rather than present a table alone. Jabouille's win belongs in the headline of technical history. Villeneuve and Arnoux belong in the history of competition itself. To erase either is to misunderstand what made this afternoon special.
 
+### Two stories in one classification
+
+If a reader opens only the race result, Jabouille's name is the correct first answer. If the same reader opens a collection of iconic wheel-to-wheel battles, Villeneuve and Arnoux become the entry point. The archive should preserve both routes. A race result must never quietly substitute the more famous duel for the actual winner. Equally, a historical feature should not treat the fight for second as irrelevant because it did not decide the trophy. These are complementary truths, not competing versions of the record.
+
 ## UK — Коротко
 
 На Гран-прі Франції 1979 року Жан-П’єр Жабуй переміг за Renault. Це був прорив для турбодвигуна у Формулі-1 — технології, перспективність якої довго затьмарювали сумніви щодо надійності.
@@ -47,6 +51,10 @@ A trophy records first place. Memory sometimes rewards something else: a contest
 ### Чому пам’ятають не лише переможця
 
 Кубок фіксує перше місце. Пам’ять іноді обирає інше — протистояння, невизначеність якого відчутна навіть тоді, коли переможець уже відомий. Діжон показує, чому історичний архів перегонів має поєднувати протоколи з історіями, а не обмежуватися таблицею. Перемога Жабуя належить історії технологій. Дуель Вільнева й Арну — історії самого суперництва. Якщо забути будь-яку з них, ми втратимо частину сенсу того дня.
+
+### Дві історії в одному протоколі
+
+Якщо читач відкриє лише результат гонки, першою відповіддю буде ім’я Жабуя — і це правильно. Якщо ж він шукатиме найяскравіші дуелі колесо в колесо, початком стане боротьба Вільнева й Арну. Архів має зберегти обидва шляхи. У протоколі не можна непомітно замінити справжнього переможця більш відомою дуеллю. Водночас історична стаття не повинна вважати боротьбу за друге місце неважливою лише тому, що вона не вирішувала долю кубка. Це дві взаємодоповнювальні правди, а не конкуруючі версії події.
 
 ## Deep Dive — evidence and review
 
