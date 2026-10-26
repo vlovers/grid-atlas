@@ -114,3 +114,27 @@ test('reader-quality audit reflects actual bilingual content and does not assert
     assert.equal(row.editorial_depth, row.en_words < 250 ? 'thin' : row.en_words < 400 ? 'developing' : 'substantive_research');
   }
 });
+
+test('thin research cards never override ten separate canonical longform dossiers', () => {
+  const audit = read('docs/editorial/batches/drivers-30-v1/READER_QUALITY_AUDIT_2026-10-26.json');
+  const longforms = new Set(read('docs/editorial/biography-expansion-batch-2/manifest.json').drivers);
+  const index = read('docs/editorial/batches/drivers-30-v1.json').drivers;
+  assert.equal(longforms.size, 10);
+  assert.equal(audit.stories.length, 25);
+  assert.equal(index.length, 30);
+  assert.equal(audit.stories.filter(row => row.canonical_longform_exists).length, 10);
+  const distinct = audit.stories.filter(row => !row.canonical_longform_exists);
+  assert.equal(distinct.length, 15);
+  assert.equal(index.filter(row => !audit.stories.some(s => s.driver_id === row.driver_id)).length, 5);
+  for (const row of audit.stories) {
+    assert.equal(row.canonical_longform_exists, longforms.has(row.driver_id));
+    assert.equal(row.interpretation, row.canonical_longform_exists ? 'noncanonical_research_card_use_batch2_longform' : 'needs_full_length_biography');
+    if (row.editorial_depth === 'thin') assert.equal(row.canonical_longform_exists, true);
+  }
+  assert.deepEqual(audit.candidate_without_longform_summary, {
+    count: distinct.length,
+    below_250: distinct.filter(row => row.en_words < 250).length,
+    words_250_to_399: distinct.filter(row => row.en_words >= 250 && row.en_words < 400).length,
+    words_400_plus: distinct.filter(row => row.en_words >= 400).length
+  });
+});
