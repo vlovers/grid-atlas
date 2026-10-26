@@ -257,7 +257,7 @@ test('ten second chapters advance the story in natural EN/UK instead of recappin
 test('long reads do not repeat entire phrases from one chapter in another', () => {
   const drafts = literal(articles, 'editorialDraftArticles');
   function fourGrams(prose) {
-    const words = prose.toLowerCase().match(/[\\p{L}\\p{N}]+/gu) ?? [];
+    const words = prose.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
     const result = new Set();
     for (let index = 0; index + 4 <= words.length; index++) {
       result.add(words.slice(index, index + 4).join(' '));
