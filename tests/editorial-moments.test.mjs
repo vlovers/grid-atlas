@@ -156,3 +156,15 @@ test('eight researched story manuscripts retain independently scoped result evid
     assert.ok(!item.en.summary.includes('result records') && !item.uk.summary.includes('записи результатів'));
   }
 });
+
+test('all eight core stories close with readable bilingual narrative, not interface specifications', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  const eight = slugs.filter(slug => slug !== 'massa-2008' && slug !== 'brawn-2009');
+  for (const slug of eight) for (const locale of ['en', 'uk']) {
+    const last = drafts[slug][locale].at(-1);
+    const closing = last.paragraphs.join(' ');
+    assert.ok(closing.length > 350, slug + '/' + locale + ' closing too thin');
+    assert.doesNotMatch(closing, /the archive should|a reader should|an interactive timeline|візуальна хронологія|архів має|читач має побачити|сторінці конструктора/i, slug + '/' + locale + ' ends with product specification');
+    assert.ok(last.heading.length > 12, slug + '/' + locale + ' lacks a narrative closing title');
+  }
+});
