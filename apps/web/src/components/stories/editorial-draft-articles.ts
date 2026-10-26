@@ -24,9 +24,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The podium was not guaranteed",
+        "heading": "A championship still racing",
         "paragraphs": [
-          "Lauda's retirement on lap two left Hunt needing to finish third or higher. It sounds simple with the final classification in front of us. It was not simple with the race still running. Hunt had to deal with a puncture and a tyre stop before fighting back to the position that would bring the title. Mario Andretti won at Fuji; Hunt's third place delivered the four points he needed. On a day when one Ferrari had already parked, a McLaren still had to complete its race. That is what made the championship margin of one point so precarious."
+          "Lauda's Ferrari was in the pits, but Hunt was not yet champion. The rain had made Fuji unpredictable, and the McLaren driver still needed a finish high enough to overturn the points gap. Every lap after Lauda stopped carried a different uncertainty: could Hunt keep the car in the position he needed?",
+          "Then tyre trouble interrupted his run. A stop cost places, and the task became something tangible rather than symbolic: recover to third before the flag. Mario Andretti went on to win the Grand Prix, a result almost pushed into the background by the championship battle. Hunt made third. The title was his by one point — not when Lauda stopped, but when the remaining race finally ended."
         ]
       },
       {
@@ -60,9 +61,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Третє місце ще треба було здобути",
+        "heading": "Чемпіонат тривав без Лауди",
         "paragraphs": [
-          "Після сходу Лауди на другому колі Ганту було потрібно фінішувати щонайменше третім. Знаючи результат, легко подумати, що все вже вирішено. Але гонка тривала. Гант зіткнувся з проколом, заїхав міняти шини й мусив повертати втрачені позиції. Переміг на Фудзі Маріо Андретті, а третє місце Ганта принесло британцеві чотири необхідні очки. Поки один Ferrari вже стояв у боксах, McLaren мав ще дістатися фінішу. Саме тому перевага в одне очко була такою крихкою."
+          "Ferrari Лауди вже стояла в боксах, але Гант іще не був чемпіоном. Дощ зробив Фудзі непередбачуваною, а пілотові McLaren усе ще був потрібен результат, який перекриє відставання в очках. Кожне коло після сходу Лауди залишало відкрите питання: чи втримався б Гант на потрібній позиції?",
+          "Потім проблеми з шинами зламали його хід гонки. Зупинка коштувала місць, і завдання стало цілком конкретним: повернутися на третю позицію до прапора. Гран-прі виграв Маріо Андретті — його перемога майже загубилася в тіні боротьби за титул. Гант став третім. Чемпіонство з перевагою в одне очко дісталося йому не в мить сходу Лауди, а лише після завершення решти гонки."
         ]
       },
       {
@@ -98,10 +100,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Victory on the road; disqualification in the results",
+        "heading": "First across, then out of the results",
         "paragraphs": [
-          "At Suzuka in 1989, the collision at the chicane ended Prost's race. Senna rejoined and reached the finish first on the road, but the official result did not record him as the winner: he was disqualified. The distinction matters, because a viewer recalling the late laps and a reader consulting the classification would otherwise appear to be describing two different races.",
-          "The controversy cannot be settled simply by repeating that one McLaren finished and the other did not. There were decisions by officials, a title at stake and competing accounts of responsibility. The distinction belongs at the heart of the race: Senna appeared to have won, the official classification said otherwise, and the argument did not end at the chequered flag. Neither a dramatic reconstruction nor a driver's imagined thoughts can substitute for the steward record."
+          "Prost was out after the contact at Suzuka's chicane. Senna was able to get going again, and the remaining laps led to an extraordinary sight: his McLaren crossed the finish line first. Anyone watching only the chequered flag could have believed they had seen another turning point in the title fight.",
+          "But the classification told a different story. Senna was disqualified and Alessandro Nannini became the official winner. Prost secured the 1989 championship. To describe that afternoon fairly, both moments have to remain visible: what unfolded on the circuit, and what the officials subsequently recorded. The precise grounds of the ruling belong to the source record, not to invented dialogue or an assumed motive."
         ]
       },
       {
@@ -135,10 +137,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Першим на трасі — не переможцем у протоколі",
+        "heading": "Першим на фініші — поза протоколом",
         "paragraphs": [
-          "Після зіткнення в шикані на Сузуці-1989 Прост припинив боротьбу. Сенна продовжив гонку й перетнув фінішну лінію першим, але офіційний протокол не визнав його переможцем: бразильця дискваліфікували. Без цього уточнення розповідь про останні кола суперечитиме підсумковій таблиці.",
-          "Суперечку не пояснити лише тим, що один McLaren зупинився, а інший доїхав. Рішення ухвалювали судді, на кону стояв титул, а учасники по-різному оцінювали зіткнення. Саме тому пам’ять про фініш і офіційний підсумок розійшлися, а суперечка не завершилася разом із гонкою. Останнє потребує документів і точних свідчень, а не вигаданих думок гонщиків."
+          "Після контакту в шикані Сузуки Прост вибув із гонки. Сенна зміг продовжити, і останні кола привели до неймовірного видовища: його McLaren першим перетнув фінішну лінію. Хто бачив лише картатий прапор, міг вирішити, що боротьба за титул знову різко змінилася.",
+          "Але офіційний протокол розповів іншу історію. Сенну дискваліфікували, переможцем став Алессандро Нанніні. Прост здобув чемпіонство 1989 року. Щоб чесно описати той день, потрібно бачити обидва моменти: що сталося на трасі та який результат зафіксували судді. Точні підстави рішення слід брати з документів, а не з вигаданих діалогів чи припущень про мотиви."
         ]
       },
       {
@@ -548,9 +550,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "What 1999 revealed",
+        "heading": "The year Ferrari carried on without him",
         "paragraphs": [
-          "Schumacher's broken leg at Silverstone forced Ferrari to continue much of the 1999 season without its leading driver. The team still won the constructors' championship, while Eddie Irvine fought Mika Häkkinen for the drivers' crown until the last round and fell short. Those were separate outcomes: the car and organisation could deliver a team title, but the driver's title remained missing. In 2000, Schumacher returned to the championship fight and secured the crown at Suzuka. The long wait since Jody Scheckter's 1979 title was finally over."
+          "Schumacher's accident at Silverstone in 1999 threatened to turn another title campaign into a lost season. He had broken his leg; Ferrari had to continue without the driver whose arrival had defined so much of its ambition. Eddie Irvine was suddenly central to its drivers' title bid.",
+          "The team did not disappear from contention. Irvine fought Mika Häkkinen until the final round, while Ferrari took the constructors' championship. Those two outcomes sharpened the question hanging over the project: a successful team was taking shape, yet the drivers' title was still missing. When Schumacher returned to fight for it in 2000, he was not entering a story that had paused while he was away. Ferrari had lived through another demanding season."
         ]
       },
       {
@@ -584,9 +587,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Що показав 1999 рік",
+        "heading": "Рік, коли Ferrari їхала без нього",
         "paragraphs": [
-          "Через перелом ноги в Сільверстоуні Шумахер пропустив значну частину сезону 1999 року. Ferrari все ж здобула Кубок конструкторів, а Едді Ірвайн боровся з Мікою Гаккіненом за особистий титул до останнього етапу, але поступився. Це були різні результати: команда вже могла виграти чемпіонат конструкторів, та титул пілота досі залишався недосяжним. У 2000 році Шумахер повернувся до боротьби за чемпіонство й виграв його в Сузуці. Очікування, що тривало від титулу Джоді Шектера 1979 року, нарешті завершилося."
+          "Аварія Шумахера на Сільверстоуні 1999 року загрожувала перетворити ще одну боротьбу за титул на втрачений сезон. Він зламав ногу; Ferrari мусила продовжувати без гонщика, з приходом якого пов'язували стільки надій. Тепер Едді Ірвайн став головним претендентом команди на особисте чемпіонство.",
+          "Але команда не випала з боротьби. Ірвайн змагався з Мікою Гаккіненом до останнього етапу, а Ferrari здобула Кубок конструкторів. Ці два результати лише загострили головне питання: сильна команда вже сформувалася, але титул серед пілотів залишався недосяжним. Повертаючись до боротьби у 2000 році, Шумахер не починав із того місця, де історія зупинилася. Ferrari встигла прожити ще один складний сезон."
         ]
       },
       {
@@ -684,10 +688,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The championship became a defence",
+        "heading": "Winning slowly became harder",
         "paragraphs": [
-          "Button had won six of the first seven Grands Prix. Once that early run ended, the shape of Brawn GP's season changed. Other teams found pace; Barrichello still delivered victories later in the year. Suddenly the questions were about consistency, points already banked and how much of the lead would survive each Sunday.",
-          "That is a more revealing second half than a repeated list of spring victories. Brazil settled the drivers' championship for Button, but it did not erase the pressure of the intervening rounds. The car born from an uncertain winter had provided a decisive advantage early; the team still had to finish a full championship. A fairy-tale beginning needed the less glamorous work of an ending."
+          "After Turkey, Button's run of victories ended. Brawn GP still had the points accumulated in its astonishing opening seven rounds, but the shape of the season had changed. Other teams were improving, and the white cars could no longer rely on another Button victory to restore every lost point.",
+          "Barrichello's wins later in Valencia and Monza mattered precisely because they came in this different phase. They added to the team's campaign while Button fought to preserve his drivers' lead. In Brazil, his title was settled without a new win. The achievement was no longer simply speed at the start; it was keeping enough of that early advantage through the months when the opposition was catching up."
         ]
       },
       {
@@ -721,10 +725,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Чемпіонат перетворився на захист переваги",
+        "heading": "Перемагати ставало дедалі важче",
         "paragraphs": [
-          "Баттон виграв шість із перших семи Гран-прі. Коли ця серія обірвалася, сезон Brawn GP став зовсім іншим. Суперники додавали швидкості, а Баррікелло згодом теж здобував перемоги. Тепер значення мали стабільні фініші, уже зароблені очки й те, скільки переваги команда збереже після кожної неділі.",
-          "Друга половина року цікава не повторенням весняних успіхів, а напруженням захисту. У Бразилії Баттон забезпечив собі титул, але до цього команда мала пережити багато етапів без його перемог. Машина, народжена після непевної зими, дала сильний старт — та чемпіонат тривав цілий сезон. За казковим початком стояла щоденна робота над завершенням."
+          "Після Туреччини серія перемог Баттона обірвалася. Brawn GP зберегла очки, здобуті за неймовірні перші сім етапів, але сезон став іншим. Суперники додавали швидкості, і білі боліди вже не могли розраховувати, що чергова перемога Баттона перекриє кожну втрату.",
+          "Саме тому пізніші перемоги Баррікелло у Валенсії та Монці були такими важливими. Вони допомогли команді вже на іншому етапі боротьби, коли Баттон намагався втримати лідерство в особистому заліку. У Бразилії він забезпечив титул без нової перемоги. Досягненням стала не лише швидкість на початку, а й здатність зберегти перевагу за місяці, коли суперники наближалися."
         ]
       },
       {
