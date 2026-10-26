@@ -1,4 +1,4 @@
-/** Official F1 race winner archive, 2008–2009. Source is the F1 season race-results table. */
+/** Editorial working dataset for 2008–2009 race winners. Official F1 season results are linked for review; individual fields, including winningTime, are not independently verified. Do not publish winningTime until cross-checked against the pinned archive or primary classification. */
 export const editorialSeasonRaceWinners = [
   {
     "id": "2008-round-01",
