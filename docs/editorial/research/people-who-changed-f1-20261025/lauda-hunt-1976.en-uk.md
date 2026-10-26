@@ -63,3 +63,19 @@ The official classification can tell us when a driver retired, but not how a fri
 - Do not invent motives, dialogue, technical telemetry or steward quotations.
 - Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
 - **Not published.**
+
+## Verified classification checkpoint — 2026-10-26 (EN/UK)
+
+**Scope:** This checkpoint cross-checks the narrowly stated classification facts with Formula 1's official historical results. It does **not** approve this manuscript or the surrounding narrative. The source's published result is distinguished from editorial interpretation.
+
+**EN · Official-result facts:** 1976 championship: James Hunt P1, 69 points; Niki Lauda P2, 68 points. At Fuji, Hunt was classified third; Mario Andretti won.
+
+**UK · Факти з офіційних результатів:** У сезоні 1976 року Джеймс Гант став чемпіоном із 69 очками, Нікі Лауда набрав 68. На Фудзі Гант фінішував третім, а переміг Маріо Андретті.
+
+**Evidence:**
+- https://www.formula1.com/en/results/1976/drivers
+- https://www.formula1.com/en/results/1976/races/373/japan/race-result
+
+**Claims still requiring independent review:** The classification cannot prove how either driver privately assessed the danger or establish the exact conditions at every point of the race.
+
+**Editorial direction / Редакторський акцент:** Lead with the actual sporting stakes and who achieved what, then explain why this moment matters. Keep the UK version idiomatic, not a literal transfer of English rhetoric. Do not attach unsigned media or infer ownership lineage from team names. Keep research-draft and noindex gates intact.
