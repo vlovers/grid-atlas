@@ -354,3 +354,25 @@ test('official race reports are traceable without treating research as editorial
     assert.equal(entry.reviewChecklist.reviewerSignoff, false);
   }
 });
+
+
+test('every editorial claim is traceable and unpublished copy cannot masquerade as approved', () => {
+  const ledger = JSON.parse(read('docs/editorial/FACT_CHECK_LEDGER_2026-10-26.json'));
+  assert.equal(ledger.entries.length, 50, 'ten stories must each have five tracked core claims');
+  assert.equal(new Set(ledger.entries.map(entry => entry.id)).size, 50, 'claim IDs must be unique');
+  for (const slug of slugs) {
+    const claims = ledger.entries.filter(entry => entry.id.startsWith(slug + '-'));
+    assert.equal(claims.length, 5, slug + ' must retain five tracked claims');
+    for (const entry of claims) {
+      assert.ok(entry.claim && entry.claim.trim().length >= 12, entry.id + ' requires a scoped statement');
+      assert.ok(['primary-source-checked-ai', 'editorial-interpretation-not-fact-checkable'].includes(entry.status), entry.id + ' must be classified accurately');
+      if (entry.status === 'primary-source-checked-ai') {
+        assert.match(entry.primarySource, /^https:\/\//, entry.id + ' requires the supporting source');
+        assert.ok(entry.notes && entry.notes.trim().length >= 25, entry.id + ' requires a check rationale');
+      }
+      assert.equal(entry.reviewChecklist.reviewerSignoff, false, entry.id + ' cannot imply human approval');
+    }
+  }
+  assert.ok(detail.includes('index: false'), 'unpublished static stories must remain noindexed');
+  assert.ok(detail.includes('AI source-check · draft'), 'draft badge must not falsely claim final approval');
+});
