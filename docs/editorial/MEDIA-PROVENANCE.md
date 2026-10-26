@@ -28,3 +28,30 @@ Status: **No archival photographs approved for publication yet.** Original Motor
 | brawn-2009 | Brawn GP, 2009 | — | — | Needed |
 
 **Do not** copy photographs from F1/FIA/team websites, image search, Pinterest, or Getty without appropriate reuse permission. Their visibility on the web does not grant redistribution rights.
+
+## Identified candidate photographs (26 October 2026)
+
+These are **source-page and license checks, not yet imported assets**. Do not flip registry entries until a local optimized image has been committed and visually verified.
+
+### Vettel at Monza, 2008
+
+- Wikimedia Commons file: https://commons.wikimedia.org/wiki/File:Vettel_Monza_2008.jpg
+- Photographer: Jane Belinda Smith (Flickr origin, photograph taken 14 September 2008).
+- Depicts Sebastian Vettel at Monza in 2008, in the Toro Rosso era.
+- License: Creative Commons Attribution 2.0 Generic — https://creativecommons.org/licenses/by/2.0/
+- Commons reports Flickr-license review by File Upload Bot on 3 October 2008.
+- Intended slug: `vettel-monza-2008`.
+- EN caption: “Sebastian Vettel at Monza, September 2008.” UK: “Себастьян Феттель у Монці, вересень 2008 року.”
+- Attribution when displayed: “Jane Belinda Smith / CC BY 2.0 / cropped and resized for cover” (update modifications to reflect actual processing).
+- Status: **candidate verified at source; local asset not yet added**.
+
+### Brawn GP at Abu Dhabi, 2009
+
+- Wikimedia Commons file: https://commons.wikimedia.org/wiki/File:Jenson_Button_(Brawn_BGP_001)_on_Sunday_at_2009_Abu_Dhabi_Grand_Prix.jpg
+- Photographer: Yuriy Lapitskiy (own work; 1 November 2009).
+- Depicts Jenson Button driving the Brawn BGP 001 at the Abu Dhabi GP, **not the Australian season opener**.
+- License: Creative Commons Attribution-ShareAlike 3.0 Unported — https://creativecommons.org/licenses/by-sa/3.0/
+- Intended slug: `brawn-2009`.
+- EN caption: “Jenson Button in the Brawn BGP 001, Abu Dhabi Grand Prix, 2009.” UK: “Дженсон Баттон за кермом Brawn BGP 001, Гран-прі Абу-Дабі 2009 року.”
+- Attribution when displayed: “Yuriy Lapitskiy / CC BY-SA 3.0 / cropped and resized for cover” (update modifications to reflect actual processing). Any adaptations must comply with share-alike.
+- Status: **candidate verified at source; local asset not yet added**.
