@@ -111,7 +111,7 @@ export default async function EditorialMoment({ params }: Props) {
           {editorialSeasonRaceWinners.filter(race => race.year === (slug === 'massa-2008' ? 2008 : 2009)).map(race => <li key={race.id}>
             <strong>{race.grandPrix[locale]}</strong><br />
             {race.winner[locale]} · {race.constructor}<br />
-            <small>{race.laps} {uk ? 'кіл' : 'laps'} · {race.winningTime}</small>
+            <small>{race.laps} {uk ? 'кіл' : 'laps'}</small>
             <h3 style={{ margin: '12px 0 6px', fontSize: '1.1rem' }}>{race.editorialChapter[locale].title}</h3>
             <p style={{ marginTop: 8, maxWidth: '38ch' }}>{race.editorialMoment[locale]}</p>
             <p style={{ maxWidth: '38ch' }}>{race.editorialChapter[locale].detail}</p>
