@@ -1,3 +1,4 @@
+import { editorialEvidenceLinks } from '@/components/stories/editorial-evidence-links';
 import { isAiReviewedStory } from '@/components/stories/editorial-publication';
 import { editorialOfficialResults } from '@/components/stories/editorial-official-results';
 import { editorialSeasonRaceWinners } from '@/components/stories/editorial-season-race-winners';
@@ -152,6 +153,12 @@ export default async function EditorialMoment({ params }: Props) {
         <summary id="preview-status">{uk ? 'Статус матеріалу' : 'Article status'}</summary>
         <p className={styles.note}>{uk ? 'Стаття проходить фінальну перевірку джерел; публікацію ще не затверджено.' : 'Source review is still in progress; publication has not yet been approved.'}</p>
       </details>}
+      <details className={styles.provenance} style={{ marginTop: 28 }}>
+        <summary>{uk ? 'Історичні джерела цієї статті' : 'Historical sources for this story'}</summary>
+        <ul>{(editorialEvidenceLinks[slug] ?? []).map((source, index) => <li key={source.url}>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} · {index + 1}</a>
+        </li>)}</ul>
+      </details>
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ПРОДОВЖИТИ ЧИТАТИ' : 'KEEP READING'}</p>
         <h2 id="related-moments">{uk ? 'Інші погляди на історію' : 'Another way into the history'}</h2>
