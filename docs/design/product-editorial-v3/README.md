@@ -1,6 +1,6 @@
 # Editorial experience V3 — PR B
 
-Audited visual base: `d0ec3a6`. This is a stacked PR on PR A (#297, `c9235d2`), retaining a disjoint design diff and independently runnable verification. PR A supplies discovery behavior and repairs pre-existing lint errors. Active biography, constructor/circuit research and media approvals remain isolated.
+Audited visual base: `d0ec3a6`. This is a stacked PR on PR A (#297, refreshed on current main), retaining a disjoint design diff and independently runnable verification. PR A supplies discovery behavior. Current main includes the shared local media-preview lint repairs. Active biography, constructor/circuit research and media approvals remain isolated.
 
 The existing Editorial Racing serif/sans/mono families, ivory/charcoal/burgundy surfaces, rules, gutters, focus color and semantic chart colors now cover Atlas, Explorer, Time Machine and Stories. No new typography library, font or media asset. Cormorant's licensed Ukrainian subset loads and renders correctly; Ukrainian headings retain a generous scale, relaxed tracking and a taller line height. Manrope remains the reading and control face.
 

@@ -1,12 +1,12 @@
 # Editorial verification — 24 October 2026
 
-Stacked base: PR A #297, `c9235d298e600b7e5892032e05d3f797990c5750`. Design files do not overlap A's discovery/copy diff. The first design build was also tested against main; final evidence uses A+B together. No deployment or release approval.
+Stacked base: PR A #297 (rebased onto main `8dfcfa7` on 26 October). Design files do not overlap A's discovery/copy diff. The first design build was also tested against main; final evidence uses A+B together. No deployment or release approval.
 
 | Command | Result |
 | --- | --- |
 | `pnpm install --frozen-lockfile` | Passed with the repository lockfile |
 | `pnpm check` | Passed |
-| `pnpm lint` | Passed on stacked base; A repairs existing-main local media-preview lint errors |
+| `pnpm lint` | Passed on stacked base; current main includes the shared local media-preview lint repairs |
 | `pnpm typecheck` | Passed |
 | `pnpm test` | 244 passed |
 | `python3 -m unittest discover -s tests -v` | 378 passed |
@@ -43,3 +43,7 @@ Reproduce: start the production API on 3480 and this branch's production web on 
 Source/copy work is in A; B retains all qualification and public evidence access. Chart first-place/top-three result entries are not relabelled unique race wins/podiums. No legal succession, official starts, source approval, rights clearance or deployed acceptance is inferred. No image or article publication changed. Existing approved SVGs and recorded-data fallbacks remain.
 
 PR C is blocked by #290's independent human media clearance. PR A's Commons research-original CI run encountered HTTP 429 for three of five source files; the fail-closed gate remains intact. That check is automated byte verification, not publication approval. Do not merge while CI is red. Production hosting, operational checks, editorial/media acceptance and #104 remain release gates. Physical-device and hardware screen-reader review are not claimed.
+
+## Resume on 26 October
+
+The stack was refreshed onto main `8dfcfa7`, preserving newly merged circuit reading guides and editorial research. PR A’s CI compatibility correction removes its repeated subject heading and updates scoped existing tests. The 16 existing Time Machine tests and 94 affected route/encyclopedia/graph/outage tests pass locally. The final PR description records the exact head SHA and CI state.
