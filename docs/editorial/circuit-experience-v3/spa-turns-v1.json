@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-spa-turns-reference-v1",
+  "circuit_id": "spa-francorchamps",
+  "status": "research_only",
+  "publication": "blocked_pending_independent_review",
+  "scope": "modern 19-turn Spa layout described by F1's July 2026 corner-name explainer; not historical configurations",
+  "configuration_id": "requires_exact_F1DB_configuration_reconciliation",
+  "intro": {
+    "en": "Spa's corners carry the names of streams, nearby towns, forests and people. To follow the lap is to travel through the Ardennes landscape — from the hairpin at La Source to the climb through Raidillon and the old Bus Stop.",
+    "uk": "Назви поворотів Спа зберігають історії струмків, сусідніх міст, лісів і людей. Коло цією трасою — подорож Арденнами: від шпильки La Source через підйом Raidillon до старої автобусної зупинки."
+  },
+  "turns": [
+    {
+      "number": 1,
+      "name": "La Source",
+      "shared_segment": null,
+      "story": {
+        "en": "The opening hairpin takes its name from the mineral springs found throughout the surrounding region.",
+        "uk": "Першу шпильку названо на честь джерел мінеральної води, якими відомі околиці Спа."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 2,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 3,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 4,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 5,
+      "name": "Les Combes",
+      "shared_segment": "les-combes",
+      "story": {
+        "en": "The pair of bends is named for local valleys or ravines near the high part of the circuit.",
+        "uk": "Назва цієї зв’язки пов’язана з місцевими долинами та ярами біля верхньої частини траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 6,
+      "name": "Les Combes",
+      "shared_segment": "les-combes",
+      "story": {
+        "en": "The pair of bends is named for local valleys or ravines near the high part of the circuit.",
+        "uk": "Назва цієї зв’язки пов’язана з місцевими долинами та ярами біля верхньої частини траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 7,
+      "name": "Malmedy",
+      "shared_segment": null,
+      "story": {
+        "en": "This corner recalls the Belgian town linked by roads used by the earliest long version of the circuit.",
+        "uk": "Поворот названо на честь бельгійського міста, дороги до якого були частиною ранньої довгої конфігурації траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 8,
+      "name": "Bruxelles",
+      "shared_segment": null,
+      "story": {
+        "en": "A long right-hander named for Brussels; Rivage is a familiar alternative name.",
+        "uk": "Довгий правий поворот названо на честь Брюсселя; також часто можна почути стару назву Rivage."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 9,
+      "name": "Jacky Ickx Curve",
+      "shared_segment": null,
+      "story": {
+        "en": "Formerly known by other names, including Speakers Corner, this bend now honours Belgian racer Jacky Ickx.",
+        "uk": "Раніше цей вигин мав інші назви, зокрема Speakers Corner, а тепер носить ім’я бельгійського гонщика Жакі Ікса."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 10,
+      "name": "Pouhon",
+      "shared_segment": "pouhon",
+      "story": {
+        "en": "The double left carries a name associated with the region's mineral springs; Double Gauche is another description.",
+        "uk": "Подвійний лівий поворот названо словом, пов’язаним із місцевими мінеральними джерелами; інша назва — Double Gauche."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 11,
+      "name": "Pouhon",
+      "shared_segment": "pouhon",
+      "story": {
+        "en": "The double left carries a name associated with the region's mineral springs; Double Gauche is another description.",
+        "uk": "Подвійний лівий поворот названо словом, пов’язаним із місцевими мінеральними джерелами; інша назва — Double Gauche."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 12,
+      "name": "Fagnes",
+      "shared_segment": "fagnes",
+      "story": {
+        "en": "Named for nearby Ardennes wetlands; the rapid left-right sequence is also called Pif-Paf.",
+        "uk": "Назва походить від болотистих місцевостей Арденн; швидку зв’язку також називають Pif-Paf."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 13,
+      "name": "Fagnes",
+      "shared_segment": "fagnes",
+      "story": {
+        "en": "Named for nearby Ardennes wetlands; the rapid left-right sequence is also called Pif-Paf.",
+        "uk": "Назва походить від болотистих місцевостей Арденн; швидку зв’язку також називають Pif-Paf."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 14,
+      "name": "Campus",
+      "shared_segment": null,
+      "story": {
+        "en": "The name honours the nearby Campus Automobile educational centre; this corner was previously called Stavelot.",
+        "uk": "Назва відсилає до місцевого навчального центру Campus Automobile; раніше поворот називали Stavelot."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 15,
+      "name": "Paul Frère",
+      "shared_segment": null,
+      "story": {
+        "en": "The corner commemorates the Belgian racing driver and journalist who also won Le Mans in 1960.",
+        "uk": "Поворот увічнює бельгійського гонщика й журналіста Поля Фрера, переможця Ле-Мана 1960 року."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 16,
+      "name": "Blanchimont",
+      "shared_segment": "blanchimont",
+      "story": {
+        "en": "These high-speed left turns take their name from a farm near the track.",
+        "uk": "Ці швидкі ліві повороти названо на честь ферми, що стояла поблизу траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 17,
+      "name": "Blanchimont",
+      "shared_segment": "blanchimont",
+      "story": {
+        "en": "These high-speed left turns take their name from a farm near the track.",
+        "uk": "Ці швидкі ліві повороти названо на честь ферми, що стояла поблизу траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 18,
+      "name": "Bus Stop Chicane",
+      "shared_segment": "bus-stop-chicane",
+      "story": {
+        "en": "A bus stop once stood on the public road here. The chicane was later redesigned and moved before the 2007 race.",
+        "uk": "Тут, біля звичайної дороги, колись була автобусна зупинка. Перед гонкою 2007 року шикану змінили й трохи перенесли."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 19,
+      "name": "Bus Stop Chicane",
+      "shared_segment": "bus-stop-chicane",
+      "story": {
+        "en": "A bus stop once stood on the public road here. The chicane was later redesigned and moved before the 2007 race.",
+        "uk": "Тут, біля звичайної дороги, колись була автобусна зупинка. Перед гонкою 2007 року шикану змінили й трохи перенесли."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    }
+  ],
+  "source_urls": [
+    "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+  ],
+  "constraints": [
+    "Eau Rouge and Raidillon must not be collapsed into one exact geographic turn name.",
+    "Names of grouped bends should not be interpreted as separately named individual corners.",
+    "Research descriptions are original EN/UK paraphrases; F1 text and media may not be copied into the site.",
+    "Geometry/coordinates and historic configurations are not established by the name source alone."
+  ]
+}
