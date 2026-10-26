@@ -14,7 +14,7 @@ for (const locale of ['uk', 'en'] as const) {
       const facts = page.getByTestId('identity-facts');
       await expect(facts).toBeVisible();
       await expect(facts).toContainText(identity.fields.full_name);
-      const disclosure = facts.locator('summary');
+      const disclosure = facts.locator(':scope > details > summary').first();
       await disclosure.press('Enter');
       await expect(facts).toContainText(identity.provenance.source_locator);
       await expect(facts).toContainText(identity.provenance.sha256);
