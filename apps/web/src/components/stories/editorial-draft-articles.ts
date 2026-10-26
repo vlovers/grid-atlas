@@ -671,3 +671,12 @@ export const editorialDraftArticles = {
     ]
   }
 } as const;
+
+/**
+ * Read an unpublished, bilingual research draft without exposing missing IDs.
+ * The /stories/moments route remains noindexed until editorial approval.
+ */
+export function draftArticle(slug: string, locale: 'en' | 'uk') {
+  if (!(slug in editorialDraftArticles)) return null;
+  return editorialDraftArticles[slug as keyof typeof editorialDraftArticles][locale];
+}
