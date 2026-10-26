@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "driver_id": "graham-hill",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+    "title": "Graham Hill — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
+  },
+  "claims": [
+    {
+      "claim_id": "graham-hill-titles",
+      "topic": "career_chronology",
+      "en": "Graham Hill won the Formula 1 Drivers' World Championship in 1962 and 1968.",
+      "uk": "Грем Гілл виграв чемпіонат світу Формули-1 серед пілотів у 1962 та 1968 роках.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Hall of Fame title heading '1962, 1968'; BRM 1962 title paragraph and 1968 Lotus second title paragraph.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1962 and 1968 rows name Graham Hill.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-family",
+      "topic": "career_chronology",
+      "en": "His son Damon Hill later also became a Formula 1 Drivers' World Champion.",
+      "uk": "Його син Деймон Гілл згодом також став чемпіоном світу Формули-1 серед пілотів.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Paragraph beginning 'The dashing driver': son Damon identified as a future champion.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-1958-debut",
+      "topic": "career_chronology",
+      "en": "Hill began his Formula 1 World Championship career with Lotus in 1958.",
+      "uk": "Гілл розпочав кар’єру в чемпіонаті світу Формули-1 з Lotus у 1958 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Paragraph beginning 'In 1958 Chapman decided': Hill became an F1 driver with Lotus.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-1966-indy",
+      "topic": "career_chronology",
+      "en": "Hill won the Indianapolis 500 in 1966.",
+      "uk": "Гілл виграв перегони Індіанаполіс 500 у 1966 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Paragraph beginning 'Yet behind the scenes': Indianapolis 500 victory in 1966.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "graham-hill-1972-triple-crown",
+      "topic": "career_chronology",
+      "en": "Hill won the 1972 24 Hours of Le Mans with Henri Pescarolo, completing the motorsport Triple Crown of Monaco, Indianapolis and Le Mans.",
+      "uk": "Гілл переміг у перегонах «24 години Ле-Мана» 1972 року разом з Анрі Пескароло, здобувши неофіційну Потрійну корону автоспорту: Монако, Індіанаполіс і Ле-Ман.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-graham-hill.NUqzbttsJ2gsuGtW9PzNG",
+          "locator": "Paragraph beginning 'A season with Rob Walker': 1972 Le Mans with Pescarolo and motorsport Triple Crown.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate provisional slug against pinned F1DB.",
+    "Add independent source and precise locator for every claim.",
+    "Obtain separate human review for both locales before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

@@ -14,6 +14,8 @@ on:
       - 'scripts/editorial_career.py'
       - 'scripts/prepare_editorial_batch.py'
       - 'scripts/validate_editorial_batch.py'
+      - 'scripts/editorial_batch_identity.py'
+      - 'tests/test_editorial_batch_identity.py'
       - 'docs/editorial/batches/**'
       - 'tests/test_editorial_career.py'
       - 'tests/test_prepare_editorial_batch.py'
@@ -62,6 +64,7 @@ jobs:
           python3 -m unittest discover -s tests -p test_editorial_batch.py -v
           python3 -m unittest discover -s tests -p test_prepare_editorial_batch.py -v
           python3 -m unittest discover -s tests -p test_editorial_career.py -v
+          python3 -m unittest discover -s tests -p test_editorial_batch_identity.py -v
       - name: Download and check pinned release
         shell: bash
         run: |
@@ -72,6 +75,21 @@ jobs:
           curl -fLsS --retry 3 "$base/f1db-json-splitted.zip" -o /tmp/f1db/f1db-json-splitted.zip
       - name: Validate priority editorial batch against pinned F1DB IDs
         run: python3 scripts/validate_editorial_batch.py docs/editorial/batches/priority-legends-001.json --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt
+      - name: Reconcile all 30 Content Factory external IDs against pinned F1DB
+        run: |
+          python3 scripts/editorial_batch_identity.py \
+            --archive /tmp/f1db/f1db-json-splitted.zip \
+            --checksums /tmp/f1db/checksums_sha256.txt \
+            --output /tmp/content-factory-30-identity.json
+          python3 -c 'import json; x=json.load(open("/tmp/content-factory-30-identity.json")); assert x["totals"]["matched_external_ids"] == 30 and x["totals"]["approved_for_publication"] == 0 and not x["errors"]'
+      - name: Upload Content Factory identity reconciliation
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-factory-30-f1db-identity-unpublished
+          path: /tmp/content-factory-30-identity.json
+          if-no-files-found: ignore
+          retention-days: 14
       - name: Prepare unpublished priority driver research packets
         run: |
           python3 scripts/prepare_editorial_batch.py docs/editorial/batches/priority-legends-001.json --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt --output /tmp/priority-legends-001.research.json

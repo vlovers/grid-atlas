@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "driver_id": "mario-andretti",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+    "title": "Mario Andretti — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific Hall of Fame paragraph or section recorded in each claim.evidence.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 source inspected on 2026-10-24; per-claim locators record relevant sections. Independent publisher corroboration and EN/UK human review pending."
+  },
+  "claims": [
+    {
+      "claim_id": "mario-andretti-champion",
+      "topic": "career_chronology",
+      "en": "Andretti won the 1978 Formula 1 Drivers' World Championship with Lotus.",
+      "uk": "Андретті виграв чемпіонат світу Формули-1 серед пілотів 1978 року з Lotus.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'The relationship between Andretti and Lotus boss Chapman': six 1978 victories and World Championship with Lotus.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+          "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 1978 Mario Andretti, Lotus.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-debut",
+      "topic": "career_chronology",
+      "en": "Andretti competed in Formula 1 World Championship races from 1968.",
+      "uk": "Андретті виступав на етапах чемпіонату світу Формули-1 починаючи з 1968 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'At Indianapolis in 1965': first Formula 1 appearance and pole at 1968 US Grand Prix, Watkins Glen.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1960s biography section identifies his Formula One debut and 1968 Watkins Glen pole position.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-1968-pole",
+      "topic": "career_chronology",
+      "en": "Andretti qualified on pole position for his first Formula 1 Grand Prix at Watkins Glen in 1968.",
+      "uk": "Андретті здобув поул-позицію на своєму першому Гран-прі Формули-1 у Воткінс-Глені в 1968 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'At Indianapolis in 1965': pole on Formula 1 debut at 1968 US Grand Prix.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1960s section: first Formula One appearance, United States Grand Prix at Watkins Glen, pole position in Lotus.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-1976-japan",
+      "topic": "career_chronology",
+      "en": "Andretti won the 1976 Japanese Grand Prix for Lotus.",
+      "uk": "Андретті виграв Гран-прі Японії 1976 року за Lotus.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Paragraph beginning 'The relationship between Andretti and Lotus boss Chapman': victory at Fuji in 1976.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1970s section: first Lotus win after comeback, season-ending 1976 Japanese Grand Prix in heavy rain.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "mario-andretti-1982-return",
+      "topic": "career_chronology",
+      "en": "In a guest appearance for Ferrari at Monza in 1982, Andretti qualified on pole and finished third.",
+      "uk": "Під час разового виступу за Ferrari в Монці 1982 року Андретті здобув поул і фінішував третім.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-mario-andretti.6F7CXYpxRzHezXe6At2E7E",
+          "locator": "Final paragraph beginning 'Thereafter, Chapman lost his way': 1982 Ferrari Monza pole and third place.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.marioandretti.com/biography",
+          "locator": "1980s section: Ferrari substitute for Didier Pironi at Monza 1982; pole position and third-place finish.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB before use.",
+    "Assign accountable human author and independent human reviewer for both languages."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+      "title": "FIA 2016 Italian Grand Prix media kit — F1 World Champions since 1950",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.marioandretti.com/biography",
+      "title": "Mario Andretti — Official Biography",
+      "publisher": "Mario Andretti official website",
+      "independence_group": "mario-andretti-official",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

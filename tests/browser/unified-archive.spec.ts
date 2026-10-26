@@ -57,7 +57,19 @@ for (const locale of ['uk', 'en'] as const) {
     for (const route of ['/constructors', '/circuits/1', '/seasons', '/seasons/1950', '/races/1']) {
       await page.goto(`/${locale}${route}`);
       await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
-      expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), route).toBeLessThanOrEqual(1);
+      const overflow = await page.evaluate(() => {
+        const pixels = document.documentElement.scrollWidth - innerWidth;
+        const offenders = pixels <= 1 ? [] : [...document.querySelectorAll('body *')]
+          .filter(element => element.getBoundingClientRect().right > innerWidth + 1)
+          .slice(0, 8).map(element => ({
+            tag: element.tagName.toLowerCase(),
+            className: typeof element.className === 'string' ? element.className : '',
+            text: (element.textContent ?? '').trim().slice(0, 50),
+            right: Math.round(element.getBoundingClientRect().right),
+          }));
+        return { pixels, offenders };
+      });
+      expect(overflow.pixels, `${route} overflowing elements: ${JSON.stringify(overflow.offenders)}`).toBeLessThanOrEqual(1);
       const anchors = await page.locator('main a[href^="#"]').evaluateAll(links => links.map(link => link.getAttribute('href')!.slice(1)));
       for (const id of anchors) await expect(page.locator(`[id="${id}"]`)).toHaveCount(1);
     }

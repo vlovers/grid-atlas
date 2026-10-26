@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "driver_id": "lando-norris",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+    "title": "Lando Norris — Formula 1 historical profile",
+    "publisher": "Formula 1",
+    "author": null,
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 page text inspected on 2026-10-24 for these locators; independent publisher corroboration and human EN/UK review remain outstanding."
+  },
+  "claims": [
+    {
+      "claim_id": "lando-norris-debut",
+      "topic": "career_chronology",
+      "en": "Norris entered Formula 1 with McLaren in 2019.",
+      "uk": "Норріс дебютував у Формулі-1 з McLaren у 2019 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame 'McLaren Driver' section: first season in 2019 with Carlos Sainz.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/race-top-british-grand-prix-reveals-strength-fia-single-seater-ladder",
+          "locator": "25 July 2019 feature, paragraphs 'down in the McLaren garage' and 'For Norris the progression': 2019 rookie F1 season with McLaren.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lando-norris-first-win",
+      "topic": "career_chronology",
+      "en": "Norris took his first Formula 1 Grand Prix win at Miami in 2024.",
+      "uk": "Норріс здобув свою першу перемогу у Формулі-1 на Гран-прі Маямі у 2024 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame 'McLaren Driver' section: third at 2024 Australian GP and first victory at Miami.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-norris-takes-maiden-f1-win-miami-ahead-verstappen-and-leclerc",
+          "locator": "FIA 2024 Miami GP race report, opening paragraph: first Formula 1 win in McLaren.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "lando-norris-title",
+      "topic": "career_chronology",
+      "en": "Norris won the 2025 Formula 1 Drivers' World Championship with McLaren.",
+      "uk": "Норріс виграв чемпіонат світу Формули-1 серед пілотів 2025 року з McLaren.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-lando-norris.1x6Yu55IhitkH8t4NnFMmK",
+          "locator": "Hall of Fame heading '2025' and 'Champion' section: Abu Dhabi finale and 2025 world title.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+          "locator": "FIA 7 December 2025 Abu Dhabi GP report, opening paragraph: 2025 Drivers' World Championship for Norris; McLaren team.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.fia.com/news/f1-norris-takes-maiden-f1-win-miami-ahead-verstappen-and-leclerc",
+      "title": "F1 - Norris takes maiden F1 win in Miami",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+      "title": "F1 - Norris crowned FIA Formula One World Champion",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/race-top-british-grand-prix-reveals-strength-fia-single-seater-ladder",
+      "title": "FIA — Race to the top: British Grand Prix reveals strength of FIA single-seater ladder",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

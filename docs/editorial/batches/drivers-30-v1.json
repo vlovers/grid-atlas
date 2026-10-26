@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "batch_id": "drivers-30-v1",
+  "publication_status": "unpublished",
+  "source_of_truth": "docs/editorial/releases/v1/manifest.json",
+  "note": "Candidate IDs remain provisional until checked against the checksum-verified pinned F1DB release; research_draft denotes unpublished bilingual research, not verified identity or editorial approval.",
+  "drivers": [
+    {
+      "driver_id": "ayrton-senna",
+      "priority": "pilot",
+      "status": "existing_research_dossier",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alain-prost",
+      "priority": "pilot",
+      "status": "existing_research_dossier",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "priority": "pilot",
+      "status": "existing_research_dossier",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "priority": "pilot",
+      "status": "existing_research_dossier",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "max-verstappen",
+      "priority": "pilot",
+      "status": "existing_research_dossier",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "kimi-raikkonen",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "niki-lauda",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jim-clark",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nelson-piquet",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jenson-button",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nico-rosberg",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "graham-hill",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jack-brabham",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alberto-ascari",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nino-farina",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jochen-rindt",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "mario-andretti",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alan-jones",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "keke-rosberg",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "damon-hill",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jacques-villeneuve",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "charles-leclerc",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "lando-norris",
+      "priority": "batch_01",
+      "status": "research_draft",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    }
+  ]
+}

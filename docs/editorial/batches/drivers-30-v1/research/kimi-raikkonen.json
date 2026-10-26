@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "driver_id": "kimi-raikkonen",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+    "title": "Kimi Räikkönen — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson (verify page byline)",
+    "accessed_on": "2026-10-24",
+    "locator": "See precise paragraph or heading locator on each linked claim; unlinked claims remain pending.",
+    "independence_group": "formula1",
+    "verification_note": "Formula 1 Hall of Fame text inspected on 2026-10-24; unlinked claims still require direct corroboration; no human EN/UK review or independent publisher corroboration."
+  },
+  "claims": [
+    {
+      "claim_id": "kimi-raikkonen-debut",
+      "topic": "career_chronology",
+      "en": "Räikkönen debuted in Formula 1 with Sauber in 2001.",
+      "uk": "Ряйкконен дебютував у Формулі-1 з Sauber у 2001 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'Following a rapid series of successes': Sauber signed Räikkönen for 2001.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "kimi-raikkonen-mclaren",
+      "topic": "career_chronology",
+      "en": "Räikkönen moved from Sauber to McLaren for the 2002 season.",
+      "uk": "Ряйкконен перейшов із Sauber до McLaren на сезон 2002 року.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/latest/article/six-things-we-learned-about-kimi-raikkonen-in-his-new-book.4HB0kfn5BCmYqmI8oUGSYw",
+          "locator": "Section 'Raikkonen and his nickname': joined McLaren one year after his 2001 debut season with Sauber.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "kimi-raikkonen-title",
+      "topic": "career_chronology",
+      "en": "Räikkönen won the 2007 Formula 1 Drivers' World Championship with Ferrari.",
+      "uk": "Ряйкконен виграв чемпіонат світу Формули-1 серед пілотів 2007 року з Ferrari.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'The phlegmatic Finn delivered sensationally': 2007 Ferrari championship in Brazil.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+          "locator": "FIA 2016 Italian GP media kit, 'F1 WORLD CHAMPIONS SINCE 1950' table: 2007 Kimi Räikkönen, Ferrari.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "kimi-raikkonen-2018-us",
+      "topic": "career_chronology",
+      "en": "Räikkönen won the 2018 United States Grand Prix for Ferrari.",
+      "uk": "Ряйкконен переміг на Гран-прі США 2018 року за Ferrari.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-kimi-raikkonen.4Ykdt9U76gWO40cNbjaMXf",
+          "locator": "Paragraph beginning 'Kimi Raikkonen finished a solid third overall in the 2018 Drivers Championship': US GP victory.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/raikkonen-wins-austin-ahead-verstappen-hamilton-title-fight-goes-mexico",
+          "locator": "FIA 2018 United States GP race report, opening paragraphs: Räikkönen wins in Ferrari.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Reconcile identity with pinned F1DB.",
+    "Record precise per-claim source locators and independent corroboration.",
+    "Human review of both languages and exact revision required before publication."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.formula1.com/en/latest/article/six-things-we-learned-about-kimi-raikkonen-in-his-new-book.4HB0kfn5BCmYqmI8oUGSYw",
+      "title": "Six things we learned about Kimi Raikkonen in his new book",
+      "publisher": "Formula 1",
+      "independence_group": "formula1",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/sites/default/files/mediakitit2016.pdf",
+      "title": "FIA 2016 Italian GP media kit — F1 World Champions since 1950",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/raikkonen-wins-austin-ahead-verstappen-hamilton-title-fight-goes-mexico",
+      "title": "FIA 2018 United States GP race report",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}

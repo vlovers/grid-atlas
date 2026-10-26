@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "driver_id": "nigel-mansell",
+  "status": "research_only",
+  "publication_status": "unpublished",
+  "source": {
+    "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+    "title": "Nigel Mansell — Formula 1 Hall of Fame",
+    "publisher": "Formula 1",
+    "author": "Gerald Donaldson",
+    "accessed_on": "2026-10-24",
+    "locator": "Claim-specific page sections recorded under each claim.evidence",
+    "independence_group": "formula1",
+    "verification_note": "Nigel Mansell Hall of Fame and FIA British GP steward biography inspected 2026-10-24; independent human EN/UK review remains pending."
+  },
+  "claims": [
+    {
+      "claim_id": "nigel-mansell-title",
+      "topic": "career_chronology",
+      "en": "Mansell won the 1992 Formula 1 Drivers' World Championship.",
+      "uk": "Менселл став чемпіоном світу Формули-1 серед пілотів у 1992 році.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+          "locator": "Hall of Fame heading '1992' above Nigel Mansell profile; 1992 championship career section.",
+          "supports": true
+        },
+        {
+          "source_url": "https://halloffame.fia.com/",
+          "locator": "FIA Formula One World Championship champions index: 1992 row names Nigel Mansell.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+          "locator": "Driver facts panel: 'Titles 1'; career text describes return to Williams and winning the world championship after the 1986 tyre failure.",
+          "supports": true
+        }
+      ]
+    },
+    {
+      "claim_id": "nigel-mansell-wins",
+      "topic": "career_chronology",
+      "en": "Mansell won 31 Formula 1 World Championship Grands Prix.",
+      "uk": "Менселл здобув 31 перемогу на етапах чемпіонату світу Формули-1.",
+      "review_status": "needs_review",
+      "evidence": [
+        {
+          "source_url": "https://www.formula1.com/en/information/drivers-hall-of-fame-nigel-mansell.3mLYxotFMTyLgIRxilGObS",
+          "locator": "Opening paragraph of Nigel Mansell Hall of Fame profile: '31 wins and 32 crashes'.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.fia.com/news/british-gp-preview",
+          "locator": "Race Stewards Biographies, 'NIGEL MANSELL OBE' paragraph: 187 Grand Prix starts, 32 poles and 31 victories.",
+          "supports": true
+        },
+        {
+          "source_url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+          "locator": "Driver facts panel, 'Wins 31' and 'Grands Prix 187'.",
+          "supports": true
+        }
+      ]
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "media": [],
+  "gaps": [
+    "Validate semantics of cited passages and translations before publication.",
+    "Independent human EN/UK review and separate approval sidecars are required."
+  ],
+  "additional_sources": [
+    {
+      "url": "https://halloffame.fia.com/",
+      "title": "FIA Hall of Fame — Formula One World Champions",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.fia.com/news/british-gp-preview",
+      "title": "FIA British Grand Prix preview — Nigel Mansell steward biography",
+      "publisher": "FIA",
+      "independence_group": "fia",
+      "accessed_on": "2026-10-24"
+    },
+    {
+      "url": "https://www.mclaren.com/racing/heritage/formula-1/drivers/nigel-mansell/",
+      "title": "Nigel Mansell — McLaren Racing heritage driver profile",
+      "publisher": "McLaren Racing",
+      "independence_group": "mclaren",
+      "accessed_on": "2026-10-24"
+    }
+  ]
+}
