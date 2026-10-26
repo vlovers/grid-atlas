@@ -1,37 +1,61 @@
 {
   "schemaVersion": 1,
   "scope": "Ten unpublished editorial story drafts",
-  "policy": "This ledger is an audit queue, not a bibliography. No claims have been independently verified by this ledger. Interpretive statements require editorial framing rather than numeric verification. Source-located means only that an official F1 page was identified and read; it is not editorial verification.",
+  "policy": "This ledger is an audit queue, not a bibliography. No claims have been independently verified by this ledger. Interpretive statements require editorial framing rather than numeric verification. Source-located means only that an official F1 page was identified and read; it is not editorial verification. Research-scoped means evidence requirements were assigned; no source was consulted or claim validated in this pass.",
   "entries": [
     {
       "id": "lauda-hunt-1976-1",
       "slug": "lauda-hunt-1976",
       "claim": "A title is not a safety verdict",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
     },
     {
       "id": "lauda-hunt-1976-2",
       "slug": "lauda-hunt-1976",
       "claim": "Lauda's withdrawal did not automatically crown Hunt",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "1976 championship standings and Fuji race classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "lauda-hunt-1976-3",
       "slug": "lauda-hunt-1976",
       "claim": "The Nürburgring crash changed the stakes",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "historical-narrative",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "lauda-hunt-1976-4",
@@ -41,17 +65,33 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/1976/drivers",
       "secondarySource": null,
-      "notes": "1976 final drivers' points: Hunt 69, Lauda 68; this proves the margin, not a moral interpretation. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "1976 final drivers' points: Hunt 69, Lauda 68; this proves the margin, not a moral interpretation. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "1976 German GP and Japanese GP contemporary accounts",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "lauda-hunt-1976-5",
       "slug": "lauda-hunt-1976",
       "claim": "Monza proved a return was possible, not compulsory forever",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
     },
     {
       "id": "senna-prost-1988-89-1",
@@ -61,7 +101,15 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/latest/article/the-elite-group-norris-joins-as-a-mclaren-world-champion.5zxR12eN0M4IM0onxSXR0F.5zxR12eN0M4IM0onxSXR0F",
       "secondarySource": null,
-      "notes": "F1 retrospective explicitly states McLaren won 15 of 16 and only best 11 results counted. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 retrospective explicitly states McLaren won 15 of 16 and only best 11 results counted. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "championship-regulation",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "senna-prost-1988-89-2",
@@ -71,37 +119,69 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/latest/article/the-elite-group-norris-joins-as-a-mclaren-world-champion.5zxR12eN0M4IM0onxSXR0F.5zxR12eN0M4IM0onxSXR0F",
       "secondarySource": null,
-      "notes": "F1 retrospective explicitly states McLaren won 15 of 16 and only best 11 results counted. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 retrospective explicitly states McLaren won 15 of 16 and only best 11 results counted. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "season race wins",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "senna-prost-1988-89-3",
       "slug": "senna-prost-1988-89",
       "claim": "Senna secured his first title at Suzuka",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "1988 Japanese GP results and title context",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "senna-prost-1988-89-4",
       "slug": "senna-prost-1988-89",
       "claim": "The teammates remained rivals in 1989",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "1989 season historical coverage",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "senna-prost-1988-89-5",
       "slug": "senna-prost-1988-89",
       "claim": "A team victory does not guarantee team harmony",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
     },
     {
       "id": "villeneuve-arnoux-1979-1",
@@ -111,7 +191,15 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
       "secondarySource": null,
-      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "villeneuve-arnoux-1979-2",
@@ -121,17 +209,33 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
       "secondarySource": null,
-      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "villeneuve-arnoux-1979-3",
       "slug": "villeneuve-arnoux-1979",
       "claim": "Renault celebrated a landmark win",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "Renault first victory historical account",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "villeneuve-arnoux-1979-4",
@@ -141,17 +245,33 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
       "secondarySource": null,
-      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "Classification: Jabouille first, Villeneuve second, Arnoux third at Dijon-Prenois. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-venue and classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "villeneuve-arnoux-1979-5",
       "slug": "villeneuve-arnoux-1979",
       "claim": "A race can have more than one memorable story",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
     },
     {
       "id": "vettel-monza-2008-1",
@@ -161,7 +281,15 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/information/rb-year-by-year.RsVCsWpMnPzUr7nNVSlyO",
       "secondarySource": null,
-      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-entry",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "vettel-monza-2008-2",
@@ -171,17 +299,33 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/information/rb-year-by-year.RsVCsWpMnPzUr7nNVSlyO",
       "secondarySource": null,
-      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "qualifying-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "vettel-monza-2008-3",
       "slug": "vettel-monza-2008",
       "claim": "The race was held in wet conditions",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "weather race report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "vettel-monza-2008-4",
@@ -191,7 +335,15 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/information/rb-year-by-year.RsVCsWpMnPzUr7nNVSlyO",
       "secondarySource": null,
-      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "team-history",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "vettel-monza-2008-5",
@@ -201,47 +353,87 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/information/rb-year-by-year.RsVCsWpMnPzUr7nNVSlyO",
       "secondarySource": null,
-      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "F1 team history confirms Toro Rosso maiden pole and victory in 2008. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "team-identity",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "button-canada-2011-1",
       "slug": "button-canada-2011",
       "claim": "Rain repeatedly disrupted the race",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "button-canada-2011-2",
       "slug": "button-canada-2011",
       "claim": "Button recovered from multiple setbacks",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-report and incidents",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "button-canada-2011-3",
       "slug": "button-canada-2011",
       "claim": "Vettel led late in the race",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "lap-by-lap report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "button-canada-2011-4",
       "slug": "button-canada-2011",
       "claim": "The lead changed on the final lap",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "final-lap report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "button-canada-2011-5",
@@ -251,37 +443,69 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2011/races/34/canada/race-result",
       "secondarySource": null,
-      "notes": "Classification confirms Button winner of 2011 Canadian GP. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "Classification confirms Button winner of 2011 Canadian GP. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "perez-sakhir-2020-1",
       "slug": "perez-sakhir-2020",
       "claim": "Pérez's race began with a setback",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "perez-sakhir-2020-2",
       "slug": "perez-sakhir-2020",
       "claim": "Russell substituted for Hamilton at Mercedes",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "driver-substitution official entry",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "perez-sakhir-2020-3",
       "slug": "perez-sakhir-2020",
       "claim": "Mercedes had a troubled pit-stop sequence",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "pit-stop race report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "perez-sakhir-2020-4",
@@ -291,17 +515,33 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2020/races/1060/bahrain/race-result",
       "secondarySource": null,
-      "notes": "Sakhir GP classification: Pérez won driving for Racing Point. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "Sakhir GP classification: Pérez won driving for Racing Point. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "perez-sakhir-2020-5",
       "slug": "perez-sakhir-2020",
       "claim": "It was Pérez's first Formula 1 win",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "driver-career-history",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "kubica-bmw-2008-1",
@@ -311,97 +551,177 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2008/races",
       "secondarySource": null,
-      "notes": "2008 season race winners list: Kubica won Canada. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "2008 season race winners list: Kubica won Canada. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "kubica-bmw-2008-2",
       "slug": "kubica-bmw-2008",
       "claim": "Heidfeld finished second for BMW Sauber",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "kubica-bmw-2008-3",
       "slug": "kubica-bmw-2008",
       "claim": "The result was a BMW Sauber one-two",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "kubica-bmw-2008-4",
       "slug": "kubica-bmw-2008",
       "claim": "Kubica briefly led the championship",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "post-race championship standings",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "kubica-bmw-2008-5",
       "slug": "kubica-bmw-2008",
       "claim": "A midseason lead did not become a title",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "end-season standings",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "schumacher-ferrari-1996-2000-1",
       "slug": "schumacher-ferrari-1996-2000",
       "claim": "Schumacher joined Ferrari in 1996",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "driver-team-season history",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "schumacher-ferrari-1996-2000-2",
       "slug": "schumacher-ferrari-1996-2000",
       "claim": "He arrived with two drivers' titles",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "driver-championship record",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "schumacher-ferrari-1996-2000-3",
       "slug": "schumacher-ferrari-1996-2000",
       "claim": "The Ferrari title required several seasons",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "1996–2000 championship timeline",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "schumacher-ferrari-1996-2000-4",
       "slug": "schumacher-ferrari-1996-2000",
       "claim": "Suzuka 2000 settled the drivers' championship",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "2000 Japanese GP classification and report",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "schumacher-ferrari-1996-2000-5",
       "slug": "schumacher-ferrari-1996-2000",
       "claim": "Ferrari's previous drivers' title was in 1979",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "1979 and 2000 championship winners",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "massa-2008-1",
@@ -411,27 +731,51 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
       "secondarySource": null,
-      "notes": "2008 Brazilian GP classification: Massa P1, Hamilton P5. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "2008 Brazilian GP classification: Massa P1, Hamilton P5. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "2008 season calendar",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "massa-2008-2",
       "slug": "massa-2008",
       "claim": "Massa won the Grand Prix",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "massa-2008-3",
       "slug": "massa-2008",
       "claim": "Hamilton needed fifth place to secure the title",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "pre-race championship arithmetic",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "massa-2008-4",
@@ -441,37 +785,69 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
       "secondarySource": null,
-      "notes": "2008 Brazilian GP classification: Massa P1, Hamilton P5. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "2008 Brazilian GP classification: Massa P1, Hamilton P5. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "massa-2008-5",
       "slug": "massa-2008",
       "claim": "Winning the race did not mean winning the championship",
       "classification": "interpretation-or-composite",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "final championship standings",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "brawn-2009-1",
       "slug": "brawn-2009",
       "claim": "Honda withdrew after 2008",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "team-history",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "brawn-2009-2",
       "slug": "brawn-2009",
       "claim": "The team returned as Brawn GP",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "2009 entry list",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
     },
     {
       "id": "brawn-2009-3",
@@ -481,27 +857,51 @@
       "status": "source-located-awaiting-independent-review",
       "primarySource": "https://www.formula1.com/en/results/2009/drivers/JENBUT01/jenson-button",
       "secondarySource": null,
-      "notes": "2009 Button results show six wins in first seven rounds. Independent corroboration and bilingual manuscript audit still required."
+      "notes": "2009 Button results show six wins in first seven rounds. Independent corroboration and bilingual manuscript audit still required.",
+      "evidenceRequirement": "first seven race classifications",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "brawn-2009-4",
       "slug": "brawn-2009",
       "claim": "Button secured the drivers' title in Brazil",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "Brazil 2009 championship standings",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     },
     {
       "id": "brawn-2009-5",
       "slug": "brawn-2009",
       "claim": "Brawn GP also won the constructors' championship",
       "classification": "historical-claim",
-      "status": "needs-independent-review",
+      "status": "research-scoped",
       "primarySource": null,
       "secondarySource": null,
-      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting."
+      "notes": "Do not mark verified solely from this checklist; review archive data and independent reporting.",
+      "evidenceRequirement": "2009 constructors championship standings",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
     }
   ]
 }
