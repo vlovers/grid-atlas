@@ -10,7 +10,6 @@ import { resolveEditorialRaces } from '@/components/stories/editorial-race-resol
 import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
-import { commonsEditorialPhotos } from '@/components/stories/commons-editorial-photos';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialTakeaways } from '@/components/stories/editorial-takeaways';
 import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
@@ -48,18 +47,16 @@ export default async function EditorialMoment({ params }: Props) {
   const artKind = artKinds[storyIndex % artKinds.length];
   const artTone = (['gold', 'violet', 'coral', 'mint'] as const)[storyIndex % 4];
   const photo = approvedEditorialPhoto(slug);
-  const commonsPhoto = slug in commonsEditorialPhotos ? commonsEditorialPhotos[slug as keyof typeof commonsEditorialPhotos] : null;
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
     <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
-        <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : commonsPhoto ? <img src={commonsPhoto.src} alt={commonsPhoto.alt[locale]} loading="eager" decoding="async" referrerPolicy="no-referrer" className={styles.editorialPhotoBackdrop} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
+        <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
-        {commonsPhoto && !photo && <p className={styles.editorialPhotoCredit}>{commonsPhoto.caption[locale]} · <a href={commonsPhoto.filePage} rel="noopener noreferrer" target="_blank">Wikimedia Commons ↗</a> · <a href={commonsPhoto.licenseUrl} rel="noopener noreferrer" target="_blank">{commonsPhoto.license}</a></p>}
         {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
       </header>
       {slug in editorialStoryContext && <section aria-label={uk ? 'Контекст історії' : 'Story context'} style={{ marginTop: 32, padding: '24px 28px', borderLeft: '4px solid var(--accent-ink)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
