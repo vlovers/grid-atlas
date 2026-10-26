@@ -14,7 +14,7 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(page.getByTestId('driver-showcase')).toBeVisible();
       await expect(page.getByTestId('driver-archive-overview')).toBeVisible();
       await expect(page.getByTestId('identity-facts')).toContainText('Synthetic driver full name');
-      await page.getByTestId('identity-facts').locator(':scope > details > summary').focus();
+      await page.getByTestId('identity-facts').locator(':scope > details > summary').first().focus();
       await page.keyboard.press('Enter');
       await expect(page.getByTestId('identity-facts').getByRole('definition')).toContainText(['0']);
       await expect(page.locator('a[href*="/seasons/"]').first()).toBeVisible();
