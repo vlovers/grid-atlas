@@ -42,12 +42,12 @@ test('narrative audit blocks fake publication approvals and untranslated copy',(
   assert.ok(errors.some(x=>x.startsWith('missing_or_short_locale')));
 });
 
-test('real narrative bundle has 66 bilingual chapters across all 25 research-only profiles',()=>{
+test('real narrative bundle has 81 bilingual chapters across all 25 research-only profiles',()=>{
   const run=spawnSync(process.execPath,['scripts/editorial-narrative-audit.mjs'],{encoding:'utf8'});
   assert.equal(run.status,0,run.stderr+'\n'+run.stdout);
   const report=JSON.parse(run.stdout);
   assert.equal(report.stories,25);
-  assert.equal(report.chapters,66);
+  assert.equal(report.chapters,81);
   assert.deepEqual(report.errors,[]);
   assert.equal(report.publication_status,'unpublished');
 });

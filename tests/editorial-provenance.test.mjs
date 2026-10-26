@@ -75,7 +75,7 @@ test('real batch emits a consistent 30-profile provenance graph with no approval
   assert.equal(report.totals.pilots,5);
   assert.equal(report.totals.research_profiles,25);
   assert.equal(report.totals.research_claims,96);
-  assert.equal(report.totals.chapters,66);
+  assert.equal(report.totals.chapters,81);
   assert.equal(report.totals.human_approved,0);
   assert.equal(report.totals.published,0);
 });

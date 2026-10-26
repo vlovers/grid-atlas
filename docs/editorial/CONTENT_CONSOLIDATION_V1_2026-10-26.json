@@ -84,7 +84,7 @@
     {
       "driver_id": "fernando-alonso",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -95,7 +95,7 @@
     {
       "driver_id": "kimi-raikkonen",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -150,7 +150,7 @@
     {
       "driver_id": "nelson-piquet",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -183,7 +183,7 @@
     {
       "driver_id": "jenson-button",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -194,7 +194,7 @@
     {
       "driver_id": "nico-rosberg",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -238,7 +238,7 @@
     {
       "driver_id": "alberto-ascari",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -249,7 +249,7 @@
     {
       "driver_id": "nino-farina",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -260,7 +260,7 @@
     {
       "driver_id": "jochen-rindt",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -271,7 +271,7 @@
     {
       "driver_id": "mario-andretti",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -282,7 +282,7 @@
     {
       "driver_id": "alan-jones",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -293,7 +293,7 @@
     {
       "driver_id": "keke-rosberg",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -304,7 +304,7 @@
     {
       "driver_id": "damon-hill",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -315,7 +315,7 @@
     {
       "driver_id": "jacques-villeneuve",
       "track": "research_274_only",
-      "research_chapters": 2,
+      "research_chapters": 3,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -326,7 +326,7 @@
     {
       "driver_id": "charles-leclerc",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -337,7 +337,7 @@
     {
       "driver_id": "lando-norris",
       "track": "research_274_only",
-      "research_chapters": 3,
+      "research_chapters": 4,
       "crosswalk_candidates": 0,
       "publication": "unpublished",
       "required_locales": [
@@ -432,5 +432,6 @@
       "next_gate": "pinned_archive_identity_editorial_verification"
     }
   ],
-  "publication_rule": "Research inventory only; not an article release, verified historical fact set, or independent human approval."
+  "publication_rule": "Research inventory only; not an article release, verified historical fact set, or independent human approval.",
+  "V2_note": "Fifteen non-longform existing research stories each gained one V2 chapter; total 81, original PR #274 baseline was 66. Research remains unpublished."
 }
