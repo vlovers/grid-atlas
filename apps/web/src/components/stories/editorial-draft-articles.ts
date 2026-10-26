@@ -95,7 +95,7 @@ export const editorialDraftArticles = {
         "heading": "Victory on the road; disqualification in the results",
         "paragraphs": [
           "At Suzuka in 1989, the collision at the chicane ended Prost's race. Senna rejoined and reached the finish first on the road, but the official result did not record him as the winner: he was disqualified. The distinction matters, because a viewer recalling the late laps and a reader consulting the classification would otherwise appear to be describing two different races.",
-          "The controversy cannot be settled simply by repeating that one McLaren finished and the other did not. There were decisions by officials, a title at stake and competing accounts of responsibility. For Grid Atlas the order is deliberate: show the finish as observed, show the official classification as recorded, and discuss the dispute only with attributable evidence. Neither a dramatic reconstruction nor a driver's imagined thoughts can substitute for the steward record."
+          "The controversy cannot be settled simply by repeating that one McLaren finished and the other did not. There were decisions by officials, a title at stake and competing accounts of responsibility. The distinction belongs at the heart of the race: Senna appeared to have won, the official classification said otherwise, and the argument did not end at the chequered flag. Neither a dramatic reconstruction nor a driver's imagined thoughts can substitute for the steward record."
         ]
       },
       {
@@ -129,7 +129,7 @@ export const editorialDraftArticles = {
         "heading": "Першим на трасі — не переможцем у протоколі",
         "paragraphs": [
           "Після зіткнення в шикані на Сузуці-1989 Прост припинив боротьбу. Сенна продовжив гонку й перетнув фінішну лінію першим, але офіційний протокол не визнав його переможцем: бразильця дискваліфікували. Без цього уточнення розповідь про останні кола суперечитиме підсумковій таблиці.",
-          "Суперечку не пояснити лише тим, що один McLaren зупинився, а інший доїхав. Рішення ухвалювали судді, на кону стояв титул, а учасники по-різному оцінювали зіткнення. Тому ми розділяємо три частини історії: що глядачі побачили на трасі, що залишилося в офіційному результаті та чому рішення викликало суперечки. Останнє потребує документів і точних свідчень, а не вигаданих думок гонщиків."
+          "Суперечку не пояснити лише тим, що один McLaren зупинився, а інший доїхав. Рішення ухвалювали судді, на кону стояв титул, а учасники по-різному оцінювали зіткнення. Саме тому пам’ять про фініш і офіційний підсумок розійшлися, а суперечка не завершилася разом із гонкою. Останнє потребує документів і точних свідчень, а не вигаданих думок гонщиків."
         ]
       },
       {
