@@ -93,10 +93,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The other car after the chicane",
+        "heading": "An advantage with a price",
         "paragraphs": [
-          "At Suzuka, Prost's race was over after the McLarens collided. Senna was pushed back onto the circuit, but that did not immediately put him in front. He needed a replacement front wing, then had to catch and pass Alessandro Nannini's Benetton to take the lead on the road.",
-          "That pursuit is what makes the official outcome so jarring. Senna reached the flag first after recovering from the collision, yet the stewards disqualified him for cutting the chicane when rejoining. Nannini inherited the victory, and Prost secured the championship. The argument over responsibility for the collision was different from the recorded basis for Senna's exclusion."
+          "The 1988 McLaren made rivals look distant. Senna and Prost took fifteen wins between them in sixteen races; from inside the team, however, domination did not feel like an end to the contest. Every weekend offered each driver a benchmark in identical machinery. Winning for McLaren could still mean losing to the person in the other McLaren.",
+          "Their final points made the tension stranger. Prost accumulated more across the whole season, but the rules counted only the best eleven results. Senna emerged champion on counted points. That distinction set the scene for 1989: these were not merely two fast teammates sharing a successful car, but rivals with a fresh championship to fight over and memories of how the previous one had been settled."
         ]
       },
       {
@@ -130,10 +130,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Після шикани попереду був інший болід",
+        "heading": "Перевага, за яку довелося боротися",
         "paragraphs": [
-          "Після зіткнення двох McLaren у Сузуці гонка Проста закінчилася. Сенну виштовхнули назад на трасу, але це не повернуло його одразу в лідери. Потрібно було замінити переднє антикрило, а потім наздогнати та випередити Benetton Алессандро Нанніні, щоб знову очолити гонку на трасі.",
-          "Саме цей прорив робить офіційний фінал таким гострим. Сенна дістався прапора першим після аварії, але судді дискваліфікували його за зрізання шикани під час повернення на трасу. Перемога дісталася Нанніні, а чемпіонство — Просту. Суперечка про винуватця зіткнення не тотожна зафіксованій підставі дискваліфікації Сенни."
+          "McLaren 1988 року залишав суперників далеко позаду. Сенна й Прост разом виграли п'ятнадцять із шістнадцяти гонок. Та всередині команди домінування не означало спокою: щовихідних кожен мав суперника за кермом такої самої машини. Перемога McLaren усе ще могла означати особисту поразку від іншого пілота McLaren.",
+          "Підсумкові очки зробили протистояння ще гострішим. Прост набрав більше за всі гонки, але до заліку брали лише одинадцять найкращих результатів. Чемпіоном за цими правилами став Сенна. Так вони підійшли до 1989 року: не просто швидкі напарники, а суперники, для яких попередній сезон залишив чимало приводів продовжувати боротьбу."
         ]
       },
       {
@@ -555,10 +555,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Jerez was not the last setback",
+        "heading": "Three near misses were not one story",
         "paragraphs": [
-          "The 1997 title fight ended at Jerez in controversy: Schumacher collided with Villeneuve and was later excluded from the drivers' championship classification. Ferrari returned to contention in 1998, but Häkkinen took that crown.",
-          "Then came a different kind of interruption. At Silverstone in 1999, Schumacher broke his leg and missed much of the season. A storyline about a champion steadily conquering Ferrari's problems collapses here. The team had to continue racing without the driver around whom so much of the expectation had gathered."
+          "By the end of 1997, Ferrari had taken a title battle to the final round, only for Schumacher's championship bid to end amid the collision with Villeneuve at Jerez and his subsequent exclusion from the standings. The next year delivered a different disappointment: Häkkinen and McLaren won the championship after a season-long contest.",
+          "Then Silverstone in 1999 interrupted Schumacher's campaign through injury. Ferrari still won the constructors' title, with Irvine fighting for the drivers' crown until the final round. These setbacks were not interchangeable. One concerned a controversial on-track decision, another a rival who prevailed, and another a team forced to compete without its leading driver. Suzuka 2000 would matter because none of those years had supplied the answer."
         ]
       },
       {
@@ -592,10 +592,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Херес не був останньою невдачею",
+        "heading": "Три невдачі — три різні історії",
         "paragraphs": [
-          "Боротьба за титул 1997 року завершилася в Хересі суперечкою: Шумахер зіткнувся з Вільньовом, а згодом його виключили з особистого заліку. У 1998-му Ferrari знову боролася за чемпіонство, але титул здобув Гаккінен.",
-          "Потім історію перервав зовсім інший удар. На Сільверстоуні 1999 року Шумахер зламав ногу й пропустив значну частину сезону. Розповідь про безупинний рух чемпіона до успіху тут руйнується. Команді довелося продовжувати боротьбу без гонщика, з яким пов'язували стільки сподівань."
+          "У 1997 році Ferrari довела боротьбу за титул до останнього етапу, але претензії Шумахера закінчилися зіткненням із Вільньовом у Хересі та подальшим виключенням із заліку. Наступний сезон приніс інше розчарування: після тривалої боротьби чемпіоном став Гаккінен на McLaren.",
+          "У 1999-му аварія на Сільверстоуні й травма перервали сезон Шумахера. Ferrari все ж виграла Кубок конструкторів, а Ірвайн боровся за особистий титул до останнього етапу. Ці невдачі не були однаковими: спірне рішення на трасі, сильніший суперник і команда, яка мусила їхати без свого лідера. Саме тому Сузука-2000 мала таке значення: жоден із попередніх років не дав потрібної відповіді."
         ]
       },
       {
@@ -695,10 +695,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A lead worth protecting",
+        "heading": "The title without another Button victory",
         "paragraphs": [
-          "Turkey was Button's sixth victory in seven races. After that burst, the results began to tell a less comfortable story: he would not win another Grand Prix in 2009. Rival cars were finding speed, leaving the team to rely on the advantage already earned.",
-          "For the drivers this was a different contest. Button needed points across difficult weekends to protect his lead, rather than another procession of wins. Barrichello could still contribute strongly, but the question hanging over the garage had changed from how far they might pull away to whether the remaining cushion would be enough."
+          "Turkey was Button's sixth win in seven Grands Prix. It would also be his last victory of 2009. The gap that once seemed capable of growing every weekend became something the team had to defend. Red Bull improved its results; weekends that had been almost effortless in the spring became tests of how many points could be saved.",
+          "Barrichello won in Valencia and Monza, adding vital results for the team while Button's early lead came under pressure. Brazil eventually settled the drivers' championship in Button's favour without another win for him. The second half had its own drama: a team that had stunned Formula 1 with speed now had to prove that a brilliant beginning could withstand months of pursuit."
         ]
       },
       {
@@ -732,10 +732,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Після Туреччини сезон змінився",
+        "heading": "Титул без нових перемог Баттона",
         "paragraphs": [
-          "У Туреччині Баттон здобув шосту перемогу в перших семи гонках. Здавалося, що цю серію неможливо зупинити. Але більше того сезону він не перемагав, а вже набрані очки стали головним запасом міцності.",
-          "Так змінилася напруга чемпіонату. Питання було вже не в тому, скільки поспіль виграють білі боліди. Важило, яку частину переваги вдасться зберегти, поки суперники набирають швидкість. Блискучий початок перетворився на перевірку витривалості."
+          "У Туреччині Баттон виграв шостий із перших семи Гран-прі. Ця перемога стала для нього останньою у 2009 році. Перевага, яка навесні могла лише зростати, перетворилася на запас, який команда мусила берегти. Red Bull покращувала результати, а вікенди, що раніше здавалися легкими, тепер вимагали боротьби за кожне очко.",
+          "Баррікелло переміг у Валенсії та Монці, додавши команді важливі результати, поки раннє лідерство Баттона опинилося під тиском. У Бразилії Дженсон здобув титул без нової перемоги. Друга половина сезону мала власну драму: команда, що здивувала Формулу-1 швидкістю, тепер мала довести, що блискучий старт витримає місяці переслідування."
         ]
       },
       {
