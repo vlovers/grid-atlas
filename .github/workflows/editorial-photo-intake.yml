@@ -42,8 +42,11 @@ jobs:
       - name: Discover candidates for all ten stories (unreviewed)
         if: github.event_name != 'push'
         run: node scripts/editorial-photo-discovery.mjs
+      # Full-resolution intake makes further Commons API calls and frequently hits
+      # HTTP 429 when triggered automatically for every PR commit. Discovery is
+      # enough for PR review; manual intake remains a separate, explicit gate.
       - name: Fetch Commons candidates and provenance
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch'
         shell: bash
         run: |
           set -euo pipefail
