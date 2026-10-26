@@ -1,3 +1,5 @@
+import publication from '@/components/media/publication.json';
+
 /**
  * Curated editorial media only. A filename or a Commons page URL is not proof of
  * reuse permission. Review each asset and its attribution before adding it here.
@@ -22,6 +24,13 @@ export const editorialPhotos: Partial<Record<string, EditorialPhoto>> = {};
 export function approvedEditorialPhoto(slug: string): EditorialPhoto | null {
   const photo = editorialPhotos[slug];
   if (!photo) return null;
+  const published = publication.assets.find(asset =>
+    asset.status === 'verified' && asset.delivery.local_path === photo.src &&
+    asset.review?.actor === 'human' && asset.content_sha256 &&
+    asset.creator === photo.creator && asset.file_page_url === photo.sourceUrl &&
+    asset.license.identifier === photo.license && asset.license.url === photo.licenseUrl
+  );
+  if (!published) return null;
   if (!photo.src.startsWith('/media/editorial/') || !photo.alt.en || !photo.alt.uk ||
       !photo.caption.en || !photo.caption.uk || !photo.creator ||
       !photo.sourceUrl.startsWith('https://') || !photo.license ||
