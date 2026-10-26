@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - scripts/editorial-media-intake.mjs
+      - scripts/editorial-photo-discovery.mjs
       - .github/workflows/editorial-photo-intake.yml
   push:
     branches:
       - editorial/people-who-changed-f1-20261025
     paths:
       - scripts/editorial-media-intake.mjs
+      - scripts/editorial-photo-discovery.mjs
       - .github/workflows/editorial-photo-intake.yml
   workflow_dispatch:
     inputs:
@@ -37,6 +39,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Discover candidates for all ten stories (unreviewed)
+        if: github.event_name != 'push'
+        run: node scripts/editorial-photo-discovery.mjs
       - name: Fetch Commons candidates and provenance
         if: github.event_name != 'push'
         shell: bash
