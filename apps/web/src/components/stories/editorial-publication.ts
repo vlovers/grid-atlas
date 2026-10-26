@@ -2,6 +2,7 @@
  * No entry is publishable until both language manuscripts have fixed review hashes. */
 import { createHash } from 'node:crypto';
 import { draftArticle } from './editorial-draft-articles';
+import { editorialStoryPreviews } from './editorial-previews';
 
 type ReviewedEdition = {
   slug: string;
@@ -17,7 +18,10 @@ export const reviewedEditions: readonly ReviewedEdition[] = [];
 
 export function editionDigest(slug: string, locale: 'en' | 'uk'): string | null {
   const chapters = draftArticle(slug, locale);
-  return chapters ? createHash('sha256').update(JSON.stringify(chapters)).digest('hex') : null;
+  const preview = editorialStoryPreviews.find(item => item.slug === slug);
+  return chapters && preview
+    ? createHash('sha256').update(JSON.stringify({ chapters, title: preview[locale].title, summary: preview[locale].summary })).digest('hex')
+    : null;
 }
 
 export function isAiReviewedStory(slug: string): boolean {
