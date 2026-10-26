@@ -89,6 +89,9 @@ test('new detailed race scenes cite exact sources and retain human review gate',
     assert.equal(entry.status, 'ai_source_checked_human_review_pending');
     const story = manuscripts.stories.find(s => s.driver_id === entry.driver_id);
     assert.ok(story && story.chapters.length >= 2);
+    const linkedChapter = story.chapters.find(chapter => chapter.chapter_id === entry.chapter_id);
+    assert.ok(linkedChapter, entry.driver_id + ': source ledger references a nonexistent chapter');
+    assert.equal(linkedChapter, story.chapters[1], entry.driver_id + ': detailed sourced scene must match expanded middle chapter');
     for (const locale of ['en', 'uk']) {
       assert.ok(story.chapters[1][locale].body.split(/\n\n/).at(-1).length > 400);
     }
