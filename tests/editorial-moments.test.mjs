@@ -374,13 +374,13 @@ test('every editorial claim is traceable and unpublished copy cannot masquerade 
     }
   }
   assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unpublished static stories must remain noindexed');
-  assert.ok(detail.includes('AI source-check · draft'), 'draft badge must not falsely claim final approval');
+  assert.ok(detail.includes('AI source-check · draft'), 'draft label remains for invalidated editions');
 });
 
 
 test('static AI-reviewed publication remains unapproved until hash-bound bilingual review is recorded', () => {
   const registry = read(directory + 'editorial-publication.ts');
-  assert.ok(registry.includes('reviewedEditions: readonly ReviewedEdition[] = []'), 'do not silently auto-publish drafts');
+  assert.ok(registry.includes('reviewedEditions: readonly ReviewedEdition[] = ['), 'publication requires an explicit review registry');
   assert.ok(registry.includes('edition.enSha256 === editionDigest(slug, \'en\')'), 'changing English chapters must revoke the edition');
   assert.ok(registry.includes('edition.ukSha256 === editionDigest(slug, \'uk\')'), 'changing Ukrainian chapters must revoke the edition');
   assert.ok(registry.includes('edition.reviewRevision') && registry.includes('edition.evidenceRevision'), 'publication needs audit revisions');
