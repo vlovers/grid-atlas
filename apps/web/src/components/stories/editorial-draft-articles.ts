@@ -93,10 +93,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The corner that ended one McLaren's race",
+        "heading": "The other car after the chicane",
         "paragraphs": [
-          "A year after Senna's title, the two McLarens arrived at Suzuka with the championship at stake again. This time a collision at the chicane left Prost's car stationary. Senna continued after getting back onto the circuit.",
-          "For spectators watching the final laps, the Brazilian's progress created the possibility of a remarkable victory. But the finish line was not the last authority over the result. What followed would force everyone to distinguish the order seen on the track from the official classification."
+          "At Suzuka, Prost's race was over after the McLarens collided. Senna was pushed back onto the circuit, but that did not immediately put him in front. He needed a replacement front wing, then had to catch and pass Alessandro Nannini's Benetton to take the lead on the road.",
+          "That pursuit is what makes the official outcome so jarring. Senna reached the flag first after recovering from the collision, yet the stewards disqualified him for cutting the chicane when rejoining. Nannini inherited the victory, and Prost secured the championship. The argument over responsibility for the collision was different from the recorded basis for Senna's exclusion."
         ]
       },
       {
@@ -130,10 +130,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Поворот, який зупинив один McLaren",
+        "heading": "Після шикани попереду був інший болід",
         "paragraphs": [
-          "За рік після титулу Сенни два McLaren знову приїхали на Сузуку, де вирішувалася доля чемпіонату. Цього разу зіткнення в шикані залишило машину Проста нерухомою. Сенна зміг повернутися на трасу й продовжити гонку.",
-          "Для глядачів останніх кіл його прорив відкривав шлях до неймовірної перемоги. Та фінішна лінія не була останньою інстанцією. Подальші події змусили розрізняти побачений на трасі порядок і офіційний протокол."
+          "Після зіткнення двох McLaren у Сузуці гонка Проста закінчилася. Сенну виштовхнули назад на трасу, але це не повернуло його одразу в лідери. Потрібно було замінити переднє антикрило, а потім наздогнати та випередити Benetton Алессандро Нанніні, щоб знову очолити гонку на трасі.",
+          "Саме цей прорив робить офіційний фінал таким гострим. Сенна дістався прапора першим після аварії, але судді дискваліфікували його за зрізання шикани під час повернення на трасу. Перемога дісталася Нанніні, а чемпіонство — Просту. Суперечка про винуватця зіткнення не тотожна зафіксованій підставі дискваліфікації Сенни."
         ]
       },
       {
@@ -325,10 +325,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "At the restart, the race was different again",
+        "heading": "Lap 56 brought them together",
         "paragraphs": [
-          "The long rain delay did not merely pause Montreal. When cars returned to racing, drivers had to reconsider grip, tyres and the traffic around them. Button had already lost ground, but repeated interruptions meant positions and gaps could still change dramatically.",
-          "His recovery depended on staying in the Grand Prix through those reversals. The eventual attack on Vettel makes sense only after this middle stretch: a series of decisions on a changing track, not one miraculous leap from the back to the lead."
+          "Button had switched to slick tyres on lap 51 as the track dried, but the leaders remained ahead. Then Nick Heidfeld's contact with Kamui Kobayashi on lap 56 brought out another Safety Car. The gap compressed, and after the restart Button found himself in fourth, with Schumacher and Webber between him and Vettel.",
+          "Webber ran wide at the final chicane on lap 64, allowing Button through. On the next lap the McLaren passed Schumacher. Only Vettel remained, and his lead had narrowed to a few seconds. When the leader slid wide on the last lap, Button was close enough to take the position. The finish looked sudden; the opportunity had been built across those preceding laps."
         ]
       },
       {
@@ -362,10 +362,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Після рестарту все знову було інакше",
+        "heading": "56-те коло зібрало суперників разом",
         "paragraphs": [
-          "Довга пауза через дощ не просто зупинила Монреаль. Коли гонка відновилася, пілотам довелося знову оцінювати зчеплення, шини й трафік. Баттон уже втратив чимало позицій, але через постійні перерви відриви й порядок могли різко змінитися.",
-          "Щоб повернутися в боротьбу, йому насамперед потрібно було пережити всі ці повороти подій. Майбутня атака на Феттеля стає зрозумілою лише після середини гонки: низка рішень на мінливій трасі, а не чарівний стрибок з останнього місця на перше."
+          "На 51-му колі Баттон перейшов на сліки, коли траса почала підсихати, але лідери ще були далеко. Потім контакт Ніка Гайдфельда з Камуї Кобаясі на 56-му колі спричинив появу нового сейфті-кара. Відриви зникли, а після рестарту Баттон їхав четвертим: між ним і Феттелем залишалися Шумахер та Веббер.",
+          "На 64-му колі Веббер помилився в останній шикані й пропустив Баттона. Наступного кола McLaren випередив Шумахера. Попереду залишався Феттель, до якого тепер було лише кілька секунд. Коли лідер виїхав широко на останньому колі, Баттон був досить близько, щоб вийти вперед. Фініш здавався миттєвим, але цей шанс народжувався багато кіл."
         ]
       },
       {
@@ -631,10 +631,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The title was not in Massa's mirrors",
+        "heading": "The fifth place that changed hands",
         "paragraphs": [
-          "At the front of Interlagos, Massa could control his own race. He could not control whether Hamilton finished fifth or sixth. With rain changing grip across the circuit, the championship drama moved away from the winning Ferrari.",
-          "That split is what makes the finish so difficult to watch in real time. A home victory could already be secured while the title hung on a position elsewhere. Glock's tyre choice became consequential to that separate contest, without making him a participant in the rivalry for the championship."
+          "Massa was heading for victory at Interlagos while the title contest unfolded further down the order. In the late rain Hamilton lost fifth place to Sebastian Vettel. Sixth would not give him enough points if Massa won, and the Ferrari was still leading.",
+          "Glock had stayed on dry-weather tyres as the track became wetter. In the final part of the last lap, Hamilton passed the slowing Toyota and took fifth. The championship turned by one point, although Massa's Grand Prix victory never changed hands. What looked like two separate races on the same circuit ended in one classification with two very different celebrations."
         ]
       },
       {
@@ -662,10 +662,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Титул вирішувався не в дзеркалах Масси",
+        "heading": "П'яте місце, яке змінило власника",
         "paragraphs": [
-          "Попереду на Інтерлагосі Масса міг контролювати власну гонку. Але не те, чи фінішує Гамільтон п'ятим або шостим. Через дощ і зміну зчеплення вирішальна боротьба за титул перемістилася далеко від Ferrari, яка лідирувала.",
-          "Саме тому фінал було так складно зрозуміти наживо. Перемога вдома могла бути вже забезпечена, а чемпіонство все ще залежало від іншої позиції. Вибір шин Глока вплинув на цю боротьбу, хоча сам він не претендував на титул."
+          "Масса наближався до перемоги на Інтерлагосі, а боротьба за титул тривала позаду. Під пізнім дощем Гамільтон поступився п'ятим місцем Себастьяну Феттелю. Шостої позиції йому не вистачало, якщо Масса перемагав, а Ferrari все ще лідирувала.",
+          "Глок залишився на шинах для сухої траси, хоча асфальт дедалі більше мокрішав. Наприкінці останнього кола Гамільтон пройшов Toyota, що сповільнилася, і повернув п'яте місце. Чемпіонство вирішило одне очко, хоча перемога Масси в Гран-прі нікуди не зникла. Дві окремі боротьби на одній трасі завершилися одним протоколом і зовсім різними святкуваннями."
         ]
       },
       {
