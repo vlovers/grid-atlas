@@ -253,3 +253,24 @@ test('ten second chapters advance the story in natural EN/UK instead of recappin
     assert.doesNotMatch(body, /the archive|a reader should|the story needs|a responsible account|we should resist|the temptation|історичний архів|читач має|спокуса пояснити|відповідальна розповідь/i, slug + '/' + locale + ' contains generic editorial framing');
   }
 });
+
+test('long reads do not repeat entire phrases from one chapter in another', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  function fourGrams(prose) {
+    const words = prose.toLowerCase().match(/[\\p{L}\\p{N}]+/gu) ?? [];
+    const result = new Set();
+    for (let index = 0; index + 4 <= words.length; index++) {
+      result.add(words.slice(index, index + 4).join(' '));
+    }
+    return result;
+  }
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapters = drafts[slug][locale].map(chapter => fourGrams(chapter.paragraphs.join(' ')));
+    for (let left = 0; left < chapters.length; left++) for (let right = left + 1; right < chapters.length; right++) {
+      let overlaps = 0;
+      for (const phrase of chapters[left]) if (chapters[right].has(phrase)) overlaps++;
+      // A few shared historical names are natural; a whole run of repeated phrases is not.
+      assert.ok(overlaps <= 5, slug + '/' + locale + ' repeats too much of chapters ' + (left + 1) + ' and ' + (right + 1) + ' (' + overlaps + ' repeated four-word phrases)');
+    }
+  }
+});
