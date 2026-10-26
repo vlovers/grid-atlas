@@ -138,7 +138,7 @@ export function ComparisonStage({
       <div className={styles.stageHeader}>
         <div>
           <p className={styles.smallLabel}>{t.kicker}</p>
-          <h2>{data.focus.name}</h2>
+          <h2>{data.from_year} → {data.to_year}</h2>
         </div>
         <a href={`/${locale}/${focusKind}/${data.focus.entity_id}`}>
           {locale === "uk" ? "Профіль у фокусі" : "Focus profile"} ↗

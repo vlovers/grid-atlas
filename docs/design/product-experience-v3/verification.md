@@ -50,3 +50,9 @@ Reproduce with API on 3480, production web on 3481, then `node scripts/capture-p
 No contracts, legal lineage, inferred participation, championship claims, biographies or photographs were added. Career-derived ranges describe imported evidence, not independent historical verification of every result. Graph/API caps are unchanged. Lineage remains independently reviewed claims only. The optional publication integration test remains skipped; no approval was invented to make it run. No manual hardware screen-reader or physical-device test is claimed.
 
 PR A changes discovery/copy; PR B provides the visual package on top with a disjoint file diff. PR C is blocked on issue #290's human rights/publication review. Maintainer review and green CI precede any merge; deployment and issue #104 release gates remain outstanding.
+
+## CI compatibility follow-up
+
+The initial full CI run exposed eight fixture tests with retired labels and twelve genuine-archive journeys with duplicate subject headings, plus four stress cases with retired Explorer copy. The comparison heading now names its year range; the subject appears once. Existing tests use the shared current copy and target the specific comparison disclosure, retaining exact count/evidence, keyboard, URL and missing-record assertions. All 16 existing Time Machine browser checks now pass locally. The stacked design package also passed 94 existing graph, encyclopedia, outage and route browser checks.
+
+The Commons originals check failed after its single retry: three of five research-original downloads were HTTP 429. This is recorded as an external media blocker; no source hashes, approval requirements or workflow gates were weakened.

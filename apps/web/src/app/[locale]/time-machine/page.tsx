@@ -369,7 +369,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
               {t("timeMachineNoAssociations")}
             </p>
           ) : (
-            <details className={styles.archiveDisclosure}>
+            <details className={styles.archiveDisclosure} data-testid="comparison-details">
               <summary>{machineCopy[locale as "en" | "uk"].detail}</summary>
               <div className={styles.groups}>
                 <AssociationGroup

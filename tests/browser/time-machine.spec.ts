@@ -1,16 +1,17 @@
 import { test, expect } from "@playwright/test";
+import en from "../../apps/web/messages/en.json";
+import uk from "../../apps/web/messages/uk.json";
 
 // The API browser server owns synthetic driver-a / alpha fixtures; these are not historical claims.
 for (const locale of ["uk", "en"] as const) {
+  const t = locale === "uk" ? uk.UI : en.UI;
   test(`${locale}: search, compare recorded associations, and open seasonal graph and race evidence`, async ({
     page,
   }, testInfo) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto(`/${locale}/time-machine`);
     const kind = page.getByLabel(
-      locale === "uk"
-        ? "Порівняти зв’язки для сутності"
-        : "Compare associations for",
+      t.timeMachineFocusType,
     );
     await expect(kind).toHaveValue("driver");
     await page
@@ -23,20 +24,20 @@ for (const locale of ["uk", "en"] as const) {
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(
       new RegExp(
-        `/${locale}/time-machine\\?kind=driver&q=driver-a&from=1950&to=1951$`,
+        `/${locale}/time-machine\\?kind=driver&q=driver-a$`,
       ),
     );
 
     const match = page.getByRole("link", { name: /driver-a/ });
     await expect(match).toHaveAttribute(
       "href",
-      `/${locale}/time-machine?kind=driver&id=1&from=1950&to=1951`,
+      `/${locale}/time-machine?kind=driver&id=1`,
     );
     await match.focus();
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(
       new RegExp(
-        `/${locale}/time-machine\\?kind=driver&id=1&from=1950&to=1951$`,
+        `/${locale}/time-machine\\?kind=driver&id=1$`,
       ),
     );
 
@@ -46,12 +47,10 @@ for (const locale of ["uk", "en"] as const) {
     await expect(
       page.getByRole("heading", { level: 2, name: "driver-a" }),
     ).toBeVisible();
-    await page.locator("details > summary").click();
+    if ((await page.getByTestId('comparison-details').getAttribute('open')) === null) await page.getByTestId('comparison-details').locator(':scope > summary').click();
     const removed = page.getByRole("region", {
       name:
-        locale === "uk"
-          ? "Зафіксовано лише в ранішому сезоні"
-          : "Recorded in the earlier season only",
+        t.timeMachineRemoved,
     });
     await expect(removed).toBeVisible();
     await expect(removed.getByText("1950", { exact: true })).toBeVisible();
@@ -67,7 +66,7 @@ for (const locale of ["uk", "en"] as const) {
     );
     await expect(
       removed.getByRole("link", {
-        name: locale === "uk" ? /Записи гонок/ : /Race evidence/,
+        name: t.timeMachineEvidence,
       }),
     ).toHaveAttribute(
       "href",
@@ -100,7 +99,7 @@ for (const locale of ["uk", "en"] as const) {
     await page.goBack();
     await expect(page).toHaveURL(
       new RegExp(
-        `/${locale}/time-machine\\?kind=driver&id=1&from=1950&to=1951$`,
+        `/${locale}/time-machine\\?kind=driver&id=1$`,
       ),
     );
     await expect(
@@ -127,10 +126,10 @@ for (const locale of ["uk", "en"] as const) {
       fullPage: true,
     });
 
-    await page.locator("details > summary").click();
+    if ((await page.getByTestId('comparison-details').getAttribute('open')) === null) await page.getByTestId('comparison-details').locator(':scope > summary').click();
     await removed
       .getByRole("link", {
-        name: locale === "uk" ? /Записи гонок/ : /Race evidence/,
+        name: t.timeMachineEvidence,
       })
       .click();
     await expect(page).toHaveURL(
@@ -172,13 +171,11 @@ for (const locale of ["uk", "en"] as const) {
     await expect(
       page.getByRole("heading", { level: 2, name: "alpha" }),
     ).toBeVisible();
-    await page.locator("details > summary").click();
+    if ((await page.getByTestId('comparison-details').getAttribute('open')) === null) await page.getByTestId('comparison-details').locator(':scope > summary').click();
     await expect(
       page.getByRole("region", {
         name:
-          locale === "uk"
-            ? "Зафіксовано лише в ранішому сезоні"
-            : "Recorded in the earlier season only",
+          t.timeMachineRemoved,
       }),
     ).toBeVisible();
     await expect(
@@ -195,9 +192,7 @@ for (const locale of ["uk", "en"] as const) {
     );
     await expect(
       page.getByText(
-        locale === "uk"
-          ? "У завантаженому архіві не знайдено зв’язків пілотів із конструкторами за жоден із вибраних сезонів."
-          : "No driver–constructor result associations were found for either selected season in the imported archive.",
+        t.timeMachineNoAssociations,
       ),
     ).toBeVisible();
 

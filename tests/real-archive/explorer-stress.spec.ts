@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { explorerCopy } from "../../apps/web/src/components/explorer/copy";
 
 // Discovered by SQL from the pinned, real archive at CI runtime.
 const busyYear = process.env.SMOKE_BUSY_YEAR;
@@ -54,9 +55,7 @@ for (const locale of ["uk", "en"] as const) {
 
     if (expectedEdges > MAX_SVG_EDGES) {
       await expect(graphSection).toContainText(
-        locale === "uk"
-          ? "Мапа показує вікно зрізу API."
-          : "The map shows a window of the API slice.",
+        explorerCopy[locale].slice,
       );
       const last = fullList.last().getByRole("button");
       const name = await last.textContent();
