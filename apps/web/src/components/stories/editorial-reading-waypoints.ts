@@ -1,0 +1,73 @@
+/** Fifty bilingual reading waypoints. These are editorial navigation labels, not fact citations. */
+export const editorialReadingWaypoints = {
+  "lauda-hunt-1976": [
+    { en: "The early advantage", uk: "Перевага на початку", chapter: 1 },
+    { en: "The Nürburgring turning point", uk: "Перелом на Нюрбургринзі", chapter: 2 },
+    { en: "The return at Monza", uk: "Повернення в Монці", chapter: 3 },
+    { en: "The choice at Fuji", uk: "Вибір у Фудзі", chapter: 4 },
+    { en: "What the title could not measure", uk: "Чого не виміряв титул", chapter: 5 },
+  ],
+  "senna-prost-1988-89": [
+    { en: "Two champions in one garage", uk: "Два претенденти в одному гаражі", chapter: 1 },
+    { en: "Why the points mattered", uk: "Чому очки мали значення", chapter: 2 },
+    { en: "A season of domination", uk: "Сезон домінування", chapter: 3 },
+    { en: "The rivalry after 1988", uk: "Суперництво після 1988-го", chapter: 4 },
+    { en: "What rivalry costs", uk: "Ціна суперництва", chapter: 5 },
+  ],
+  "villeneuve-arnoux-1979": [
+    { en: "A landmark for Renault", uk: "Віха для Renault", chapter: 1 },
+    { en: "The fight behind the winner", uk: "Боротьба позаду переможця", chapter: 2 },
+    { en: "Why Dijon endured", uk: "Чому Діжон пам’ятають", chapter: 3 },
+    { en: "The meaning of second place", uk: "Значення другого місця", chapter: 4 },
+    { en: "How racing becomes folklore", uk: "Як гонки стають легендами", chapter: 5 },
+  ],
+  "vettel-monza-2008": [
+    { en: "The wet weekend", uk: "Дощовий вікенд", chapter: 1 },
+    { en: "The surprise of qualifying", uk: "Сюрприз кваліфікації", chapter: 2 },
+    { en: "Winning from the front", uk: "Перемога з першої позиції", chapter: 3 },
+    { en: "The Toro Rosso achievement", uk: "Досягнення Toro Rosso", chapter: 4 },
+    { en: "The meaning of a breakthrough", uk: "Що означає прорив", chapter: 5 },
+  ],
+  "button-canada-2011": [
+    { en: "A race in the rain", uk: "Гонка під дощем", chapter: 1 },
+    { en: "The cost of setbacks", uk: "Ціна невдач", chapter: 2 },
+    { en: "Restart after restart", uk: "Рестарт за рестартом", chapter: 3 },
+    { en: "The final pursuit", uk: "Останнє переслідування", chapter: 4 },
+    { en: "Why the finish endures", uk: "Чому фініш пам’ятають", chapter: 5 },
+  ],
+  "perez-sakhir-2020": [
+    { en: "The difficult opening", uk: "Складний початок", chapter: 1 },
+    { en: "A substitute in a Mercedes", uk: "Заміна в Mercedes", chapter: 2 },
+    { en: "The shifting order", uk: "Зміна порядку", chapter: 3 },
+    { en: "Pérez's recovery", uk: "Повернення Переса", chapter: 4 },
+    { en: "What a first win changes", uk: "Що змінює перша перемога", chapter: 5 },
+  ],
+  "kubica-bmw-2008": [
+    { en: "BMW Sauber's opportunity", uk: "Шанс BMW Sauber", chapter: 1 },
+    { en: "A victory in Canada", uk: "Перемога в Канаді", chapter: 2 },
+    { en: "The team one-two", uk: "Командний дубль", chapter: 3 },
+    { en: "A fleeting championship lead", uk: "Коротке лідерство в чемпіонаті", chapter: 4 },
+    { en: "Remembering what might have been", uk: "Пам’ять про нереалізоване", chapter: 5 },
+  ],
+  "schumacher-ferrari-1996-2000": [
+    { en: "A champion arrives", uk: "Прихід чемпіона", chapter: 1 },
+    { en: "The work behind the scenes", uk: "Робота за лаштунками", chapter: 2 },
+    { en: "Seasons of frustration", uk: "Сезони розчарувань", chapter: 3 },
+    { en: "The decisive 2000 campaign", uk: "Вирішальний сезон 2000-го", chapter: 4 },
+    { en: "Why rebuilding takes time", uk: "Чому перебудова потребує часу", chapter: 5 },
+  ],
+  "massa-2008": [
+    { en: "A final race at home", uk: "Домашній фінал", chapter: 1 },
+    { en: "What Massa could control", uk: "Що залежало від Масси", chapter: 2 },
+    { en: "The race elsewhere", uk: "Гонка в іншій частині траси", chapter: 3 },
+    { en: "The last-lap arithmetic", uk: "Розрахунки останнього кола", chapter: 4 },
+    { en: "Two truths at the finish", uk: "Дві правди на фініші", chapter: 5 },
+  ],
+  "brawn-2009": [
+    { en: "An uncertain winter", uk: "Невизначена зима", chapter: 1 },
+    { en: "A team survives", uk: "Команда виживає", chapter: 2 },
+    { en: "The extraordinary opening", uk: "Надзвичайний початок", chapter: 3 },
+    { en: "Defending the advantage", uk: "Захист переваги", chapter: 4 },
+    { en: "A double championship", uk: "Подвійне чемпіонство", chapter: 5 },
+  ],
+} as const;
