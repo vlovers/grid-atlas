@@ -6,7 +6,7 @@
 .lead { max-width: 75ch; color: var(--muted); font-size: 1rem; line-height: 1.8; }
 .shell > .trackVisual { grid-column: 1; }
 .shell > .layout { grid-column: 2; align-self: start; }
-.layout { display: grid; gap: 1.5rem; }
+.layout { display: grid; gap: 1.5rem; container-type: inline-size; }
 .selector label { display: block; margin-bottom: .75rem; font-size: .9rem; }
 .selector select { width: 100%; min-width: 0; max-width: 100%; min-height: 48px; background: var(--surface); color: var(--ink); padding: .8rem; border: 1px solid var(--muted); border-radius: 0; font-size: 1rem; }
 .measurements { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
@@ -87,3 +87,6 @@
 .eventTable td:nth-child(2) { min-width: 17rem; }
 .eventTable a { display: inline-block; min-height: 44px; text-decoration: underline; text-underline-offset: .2em; }
 .eventTable .provenance { border: 0; padding: 0; min-width: 10rem; }
+
+/* Follow the text size as well as viewport width, including 200% zoom. */
+@container (max-width: 18em) { .measurements { grid-template-columns: minmax(0, 1fr); } }

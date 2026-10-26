@@ -66,3 +66,26 @@ The loaded local Atlas Serif (Cormorant) and Atlas Sans (Manrope) variable faces
 Read-only three-way compatibility inspection of #309 at `4c2857b` against the product stack found changes in the shared `release.module.css`, with no conflict markers in the automatic textual merge. The final integration changes do not touch #309-owned files. Its owner should rebase after A then B land, preserving B's tokens and reduced-motion overrides and rerunning story route/SEO checks. Source/editorial approval remains a separate blocker. No draft article or photographic asset was published.
 
 Independent review assessed the original final diff, factual labels, exact counts, adjacent pairs, native disclosure semantics and regression value: no blocking findings. Minor untranslated circuit table heading was corrected. Review is neither deterministic browser evidence nor independent editorial/media approval.
+
+## Executed local verification
+
+Node 24.21.0, repository pnpm toolchain; disposable PostgreSQL on port 55464. Full run conclusions and exact latest CI/commit handoff are maintained in [PR #310](https://github.com/vlovers/grid-atlas/pull/310), so queued checks are not represented as passing here.
+
+| Command | Actual result |
+| --- | --- |
+| `pnpm check` | Passed |
+| `pnpm lint` / `pnpm typecheck` | Passed |
+| `pnpm test` | 247 passed |
+| `python3 -m unittest discover -s tests -v` | 418 passed |
+| `pnpm build` | Passed; final circuit CSS also rebuilt successfully |
+| `pnpm test:integration` | 42 passed, 1 existing optional publication test skipped; owned disposable schemas |
+| `DATABASE_URL=… pnpm test:browser` | 508 passed, including desktop/mobile Chromium and WebKit reliability |
+| `PREVIEW_URL=http://127.0.0.1:3491 V3_API=http://127.0.0.1:3480 pnpm exec playwright test --config playwright.product-editorial-v3.config.ts` | Chromium/WebKit/mobile subject, font, chart and 200% checks; latest result in PR handoff |
+| `python3 scripts/verify-real-archive.py` | SQL/API parity passed, including shared-car results and both comparison directions |
+| `python3 scripts/audit-encyclopedia.py --archive … --checksums … --api-url … --web-url …` | Passed: 11,504 API requests, 2,406 web pages, all 27,665 result entries and 1,172 races compared |
+| `pnpm audit:media --as-of=2026-10-26` | Passed; zero public photographs, 160 attributed circuit illustrations |
+| `pnpm check:docs` / `git diff --check` | Passed |
+
+The final 200% visual pass found narrow two-column circuit labels despite no document overflow. A font-relative container query now stacks these facts when text needs more width; four enlarged-text circuit captures were refreshed. All eight Ukrainian supplementary captures loaded the Cyrillic display face; English correctly loads only its needed subset. There are 120 before/after images and 16 final enlarged-text checks with no document overflow.
+
+Early verification attempts were not counted as final acceptance: legacy card/disclosure selectors needed updates; concurrent suites shared a trace directory; a late preview rebuild invalidated four final archive checks. Suites now own sibling artifact directories, and final archive acceptance uses a stable build. No assertions or historical gates were disabled.
