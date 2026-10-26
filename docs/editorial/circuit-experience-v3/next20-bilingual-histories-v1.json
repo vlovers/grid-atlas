@@ -1,0 +1,964 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-next-20-editorial-v1",
+  "status": "research_only",
+  "publication": "blocked_pending_independent_historical_review",
+  "batch_scope": "20 distinct circuits excluding Monaco and Spa; introductory bilingual historical narratives and initial researched historical moments. NOT full verified turn inventory.",
+  "source_note": "The single memorable moment for each circuit is a research draft candidate, not an independently verified published fact; linked overview articles may cover multiple circuits and must be checked for each event. Named corner candidates require precise official layout + number + year resolution before publication.",
+  "circuits": [
+    {
+      "circuit_id": "silverstone",
+      "display_name": {
+        "en": "Silverstone",
+        "uk": "Сільверстоун"
+      },
+      "editorial_intro": {
+        "en": "The former airfield hosted the first Drivers' World Championship race in 1950. Its long history gives a rare opportunity to compare the beginning of Formula 1 with modern Grand Prix racing.",
+        "uk": "Колишній аеродром прийняв першу гонку чемпіонату світу серед пілотів у 1950 році. Історія Сільверстоуна дозволяє порівняти початок Формули-1 із сучасними Гран-прі."
+      },
+      "moments": [
+        {
+          "year": 1950,
+          "title": {
+            "en": "The championship begins",
+            "uk": "Початок чемпіонату"
+          },
+          "narrative": {
+            "en": "Giuseppe Farina won the inaugural championship race on 13 May 1950. It was not merely a British Grand Prix victory: the new competition had its first winner.",
+            "uk": "13 травня 1950 року Джузеппе Фаріна виграв першу гонку нового чемпіонату світу. Це була не просто перемога на Гран-прі Великої Британії: у нового змагання з’явився перший переможець."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Maggotts",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Becketts",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Chapel",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Copse",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Stowe",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "monza",
+      "display_name": {
+        "en": "Autodromo Nazionale Monza",
+        "uk": "Автодром Монца"
+      },
+      "editorial_intro": {
+        "en": "Speed and Ferrari's home crowd shaped Monza's identity. Its famous straights and braking zones have produced races decided by tiny margins and surprise winners.",
+        "uk": "Швидкість і домашні трибуни Ferrari сформували характер Монци. Її прямі та зони гальмування не раз дарували гонки з мінімальними розривами й несподіваними переможцями."
+      },
+      "moments": [
+        {
+          "year": 1971,
+          "title": {
+            "en": "Gethin wins by a fraction",
+            "uk": "Гетін виграє з мінімальною перевагою"
+          },
+          "narrative": {
+            "en": "Peter Gethin claimed his only Formula 1 victory in a slipstreaming race that finished with the leading cars almost together. The first five crossed the line within 0.61 seconds.",
+            "uk": "Пітер Гетін здобув єдину перемогу у Формулі-1 після боротьби на сліпстримі. Перші п’ять машин перетнули фініш із різницею менш ніж 0,61 секунди."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Curva Grande",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Lesmo",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Ascari",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Parabolica",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "suzuka",
+      "display_name": {
+        "en": "Suzuka",
+        "uk": "Сузука"
+      },
+      "editorial_intro": {
+        "en": "The figure-eight Japanese circuit has often hosted decisive rounds of the championship. Its crossing layout and technical sequences have made it a test of precision.",
+        "uk": "Японська траса у формі вісімки не раз приймала вирішальні етапи чемпіонату. Перехресна конфігурація й технічні зв’язки поворотів вимагають особливої точності."
+      },
+      "moments": [
+        {
+          "year": 2005,
+          "title": {
+            "en": "Räikkönen's charge",
+            "uk": "Прорив Райкконена"
+          },
+          "narrative": {
+            "en": "Kimi Räikkönen won the Japanese Grand Prix after starting seventeenth, completing a late pass on Giancarlo Fisichella. It became one of Suzuka's best remembered comebacks.",
+            "uk": "Кімі Райкконен виграв Гран-прі Японії, стартувавши сімнадцятим і обігнавши Джанкарло Фізікеллу наприкінці гонки. Це один із найвідоміших проривів у Сузуці."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Esses",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Degner",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Spoon",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "130R",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Casio Triangle",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "interlagos",
+      "display_name": {
+        "en": "Interlagos",
+        "uk": "Інтерлагос"
+      },
+      "editorial_intro": {
+        "en": "Built among the hills of São Paulo, Interlagos has hosted celebrations and heartbreaking title finales. The modern lap still carries the shape of its older, longer history.",
+        "uk": "Збудований серед пагорбів Сан-Паулу, Інтерлагос бачив тріумфи й болісні чемпіонські розв’язки. Сучасне коло й досі нагадує про значно довшу історичну конфігурацію."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "A championship in the rain",
+            "uk": "Титул під дощем"
+          },
+          "narrative": {
+            "en": "The Brazilian finale swung between changing conditions and incidents while Sebastian Vettel recovered to secure the title over Fernando Alonso.",
+            "uk": "Фінал у Бразилії проходив за мінливої погоди. Себастьян Феттель після складного початку прорвався вперед і втримав чемпіонську перевагу над Фернандо Алонсо."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Senna S",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Curva do Sol",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Descida do Lago",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Junção",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "display_name": {
+        "en": "Circuit Gilles Villeneuve",
+        "uk": "Траса Жиля Вільнева"
+      },
+      "editorial_intro": {
+        "en": "Montreal's island circuit combines public park roads, close barriers and long braking zones. Its final chicane is famous for testing even championship favourites.",
+        "uk": "Острівна траса Монреаля поєднує дороги міського парку, близькі бар’єри та довгі зони гальмування. Її фінальна шикана випробовує навіть фаворитів."
+      },
+      "moments": [
+        {
+          "year": 2011,
+          "title": {
+            "en": "Button wins a marathon",
+            "uk": "Баттон виграє марафон"
+          },
+          "narrative": {
+            "en": "The rain-interrupted 2011 Canadian Grand Prix ended with Jenson Button passing Sebastian Vettel on the final lap after an extraordinary recovery.",
+            "uk": "Дощовий Гран-прі Канади 2011 року завершився обгоном Себастьяна Феттеля Дженсоном Баттоном на останньому колі після неймовірного повернення в боротьбу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Senna Curve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Wall of Champions",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Hairpin",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "imola",
+      "display_name": {
+        "en": "Imola",
+        "uk": "Імола"
+      },
+      "editorial_intro": {
+        "en": "Imola's history cannot be separated from its fast old layout and the safety changes following 1994. The circuit remains a place where the sport remembers both racing and loss.",
+        "uk": "Історія Імоли нерозривно пов’язана зі швидкою старою конфігурацією та змінами безпеки після 1994 року. Це місце зберігає пам’ять і про перегони, і про втрати."
+      },
+      "moments": [
+        {
+          "year": 1994,
+          "title": {
+            "en": "A weekend that changed the sport",
+            "uk": "Вікенд, який змінив спорт"
+          },
+          "narrative": {
+            "en": "Roland Ratzenberger and Ayrton Senna died during the San Marino Grand Prix weekend. Their deaths drove renewed scrutiny of Formula 1 safety.",
+            "uk": "Роланд Ратценбергер і Айртон Сенна загинули під час вікенду Гран-прі Сан-Марино. Їхня смерть змусила Формулу-1 знову поставити безпеку на перше місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Tamburello",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Villeneuve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Tosa",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Acque Minerali",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Rivazza",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "display_name": {
+        "en": "Nürburgring",
+        "uk": "Нюрбургринг"
+      },
+      "editorial_intro": {
+        "en": "The Nürburgring name spans two very different racing worlds: the long Nordschleife and the later Grand Prix circuit. A story about one cannot silently borrow the corners of the other.",
+        "uk": "Назва Нюрбургринг об’єднує два дуже різні світи: довгу Північну петлю та пізнішу трасу Гран-прі. Історію однієї конфігурації не можна описувати поворотами іншої."
+      },
+      "moments": [
+        {
+          "year": 1957,
+          "title": {
+            "en": "Fangio's Nürburgring chase",
+            "uk": "Погоня Фанхіо"
+          },
+          "narrative": {
+            "en": "After a pit stop cost him time, Juan Manuel Fangio caught and passed the Ferraris to win the 1957 German Grand Prix on the Nordschleife.",
+            "uk": "Після затримки на піт-стопі Хуан-Мануель Фанхіо наздогнав і обігнав Ferrari та виграв Гран-прі Німеччини 1957 року на Північній петлі."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Karussell",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Döttinger Höhe",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "display_name": {
+        "en": "Hockenheimring",
+        "uk": "Хоккенгаймринг"
+      },
+      "editorial_intro": {
+        "en": "The old Hockenheim course ran deep into the forest; its modern successor tells a different story. Comparing them reveals why lap length alone never explains a circuit's character.",
+        "uk": "Старий Хоккенгайм проходив далеко в ліс; сучасна конфігурація має зовсім інший характер. Їх порівняння показує, чому самої довжини кола недостатньо, щоб зрозуміти трасу."
+      },
+      "moments": [
+        {
+          "year": 2019,
+          "title": {
+            "en": "Rain turns the order upside down",
+            "uk": "Дощ перевертає гонку"
+          },
+          "narrative": {
+            "en": "In the wet 2019 German Grand Prix, Max Verstappen survived changing conditions to win while several front-runners spun or crashed.",
+            "uk": "На мокрому Гран-прі Німеччини 2019 року Макс Ферстаппен пережив мінливі умови й переміг, поки кілька фаворитів розверталися або потрапляли в аварії."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Sachs Kurve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Motodrom",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "display_name": {
+        "en": "Zandvoort",
+        "uk": "Зандворт"
+      },
+      "editorial_intro": {
+        "en": "The circuit winds through coastal dunes and returned to Formula 1 in 2021 after a long absence. Modern banking is part of its identity, not a detail shared by every historical layout.",
+        "uk": "Траса проходить серед прибережних дюн і повернулася до Формули-1 у 2021 році після довгої перерви. Сучасний профільований віраж — частина її характеру, але не всіх історичних конфігурацій."
+      },
+      "moments": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "The Dutch Grand Prix returns",
+            "uk": "Повернення Гран-прі Нідерландів"
+          },
+          "narrative": {
+            "en": "Zandvoort hosted a World Championship Grand Prix again in 2021, with Max Verstappen winning before the home crowd.",
+            "uk": "У 2021 році Зандворт знову прийняв етап чемпіонату світу, а Макс Ферстаппен переміг перед домашніми трибунами."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-circuit-zandvoort.3yxmn4LiWkbNTKpad7IRSo.3yxmn4LiWkbNTKpad7IRSo"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Tarzanbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Hugenholtzbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Arie Luyendykbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "display_name": {
+        "en": "Hungaroring",
+        "uk": "Хунгароринг"
+      },
+      "editorial_intro": {
+        "en": "Hungary's twisty permanent circuit demands rhythm more than a single spectacular straight. Its first Formula 1 race made history on the eastern side of the Cold War divide.",
+        "uk": "Звивиста постійна траса Угорщини вимагає ритму більше, ніж швидкості на одній прямій. Її дебютний Гран-прі став історичним для країн по інший бік залізної завіси."
+      },
+      "moments": [
+        {
+          "year": 2006,
+          "title": {
+            "en": "Button finally wins",
+            "uk": "Перша перемога Баттона"
+          },
+          "narrative": {
+            "en": "Jenson Button took his maiden Grand Prix victory in changing wet conditions, climbing from fourteenth on the grid.",
+            "uk": "Дженсон Баттон здобув першу перемогу у мінливих дощових умовах після старту з чотирнадцятої позиції."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "display_name": {
+        "en": "Red Bull Ring",
+        "uk": "Ред Булл Ринг"
+      },
+      "editorial_intro": {
+        "en": "The Austrian venue has raced under different names and configurations. Its short modern lap packs elevation changes and heavy braking into a few demanding corners.",
+        "uk": "Австрійська траса виступала під різними назвами та в різних конфігураціях. Коротке сучасне коло поєднує перепади висот і різкі гальмування."
+      },
+      "moments": [
+        {
+          "year": 1982,
+          "title": {
+            "en": "Rosberg misses by a breath",
+            "uk": "Росбергу бракує миті"
+          },
+          "narrative": {
+            "en": "Elio de Angelis held off Keke Rosberg to win by a tiny margin at the old Österreichring, before the venue was rebuilt into its shorter form.",
+            "uk": "Еліо де Анджеліс втримав Кеке Росберга й переміг із мізерною перевагою на старому Österreichring, ще до перебудови траси."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "display_name": {
+        "en": "Circuit de Barcelona-Catalunya",
+        "uk": "Барселона-Каталунья"
+      },
+      "editorial_intro": {
+        "en": "Barcelona became a familiar testing and racing venue, yet the configuration has changed. The story of a lap here depends on whether the final chicane was in use.",
+        "uk": "Барселона стала звичним місцем тестів і перегонів, але її конфігурація змінювалася. Історія кола залежить зокрема від того, чи використовували фінальну шикану."
+      },
+      "moments": [
+        {
+          "year": 1996,
+          "title": {
+            "en": "Schumacher wins in the rain",
+            "uk": "Шумахер виграє під дощем"
+          },
+          "narrative": {
+            "en": "Michael Schumacher secured his first Ferrari victory in an exceptionally wet 1996 Spanish Grand Prix.",
+            "uk": "Міхаель Шумахер здобув першу перемогу за Ferrari під час надзвичайно мокрого Гран-прі Іспанії 1996 року."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "albert-park",
+      "display_name": {
+        "en": "Albert Park",
+        "uk": "Альберт-Парк"
+      },
+      "editorial_intro": {
+        "en": "Melbourne's parkland streets host a temporary racing circuit. The Australian event has often signalled a new season, making surprises particularly memorable.",
+        "uk": "Дороги парку в Мельбурні тимчасово перетворюються на гоночну трасу. Австралійський Гран-прі часто відкривав сезон, тому несподіванки тут особливо запам’ятовуються."
+      },
+      "moments": [
+        {
+          "year": 1996,
+          "title": {
+            "en": "A new beginning in Melbourne",
+            "uk": "Новий початок у Мельбурні"
+          },
+          "narrative": {
+            "en": "Formula 1 moved the Australian Grand Prix from Adelaide to Melbourne in 1996, beginning the city's long association with the championship.",
+            "uk": "У 1996 році Гран-прі Австралії переїхав з Аделаїди до Мельбурна, розпочавши довгу історію міста у Формулі-1."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "display_name": {
+        "en": "Marina Bay Street Circuit",
+        "uk": "Марина-Бей"
+      },
+      "editorial_intro": {
+        "en": "Singapore's night race reshaped what a Formula 1 event could look like. The floodlit city circuit brings heat, walls and little room for error.",
+        "uk": "Нічна гонка в Сінгапурі змінила уявлення про вигляд етапу Формули-1. Освітлена міська траса поєднує спеку, близькі стіни й мінімум простору для помилки."
+      },
+      "moments": [
+        {
+          "year": 2008,
+          "title": {
+            "en": "The first night Grand Prix",
+            "uk": "Перший нічний Гран-прі"
+          },
+          "narrative": {
+            "en": "Singapore hosted the first Formula 1 night race in 2008. Fernando Alonso won, though the race later became infamous because of the deliberate Piquet Jr crash.",
+            "uk": "Сінгапур прийняв перший нічний Гран-прі Формули-1 у 2008 році. Переміг Фернандо Алонсо, але згодом гонку затьмарив скандал з умисною аварією Піке-молодшого."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "bahrain",
+      "display_name": {
+        "en": "Bahrain International Circuit",
+        "uk": "Міжнародний автодром Бахрейну"
+      },
+      "editorial_intro": {
+        "en": "Bahrain brought the World Championship to the Middle East in 2004. Its desert setting and varied braking zones made it a distinct addition to the calendar.",
+        "uk": "Бахрейн привів чемпіонат світу на Близький Схід у 2004 році. Пустельний пейзаж і різні зони гальмування зробили трасу особливою частиною календаря."
+      },
+      "moments": [
+        {
+          "year": 2004,
+          "title": {
+            "en": "Formula 1 arrives in Bahrain",
+            "uk": "Формула-1 приїздить до Бахрейну"
+          },
+          "narrative": {
+            "en": "Michael Schumacher won the first Bahrain Grand Prix as the championship made its first visit to the Middle East.",
+            "uk": "Міхаель Шумахер виграв перший Гран-прі Бахрейну, коли чемпіонат уперше прибув на Близький Схід."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "shanghai",
+      "display_name": {
+        "en": "Shanghai International Circuit",
+        "uk": "Міжнародний автодром Шанхая"
+      },
+      "editorial_intro": {
+        "en": "Shanghai's first corner curls into an unusually long tightening spiral. The circuit's design gave the Chinese Grand Prix a recognisable visual signature.",
+        "uk": "Перший поворот Шанхая закручується у довгу спіраль, що поступово звужується. Саме ця форма зробила Гран-прі Китаю впізнаваним."
+      },
+      "moments": [
+        {
+          "year": 2004,
+          "title": {
+            "en": "China joins the calendar",
+            "uk": "Китай у календарі"
+          },
+          "narrative": {
+            "en": "Rubens Barrichello won the inaugural Chinese Grand Prix in 2004 at the purpose-built Shanghai circuit.",
+            "uk": "Рубенс Баррікелло виграв дебютний Гран-прі Китаю 2004 року на спеціально збудованій трасі Шанхая."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "display_name": {
+        "en": "Yas Marina",
+        "uk": "Яс-Марина"
+      },
+      "editorial_intro": {
+        "en": "Abu Dhabi's circuit has repeatedly staged championship finales. Its layout was substantially revised in 2021, so corner details must always include an era.",
+        "uk": "Траса Абу-Дабі не раз приймала фінали чемпіонату. У 2021 році конфігурацію суттєво змінили, тому опис поворотів завжди має враховувати епоху."
+      },
+      "moments": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "A final-lap championship reversal",
+            "uk": "Розв’язка на останньому колі"
+          },
+          "narrative": {
+            "en": "Max Verstappen passed Lewis Hamilton on the final lap to win the race and 2021 Drivers' Championship following a controversial late safety-car procedure.",
+            "uk": "Макс Ферстаппен обігнав Льюїса Гамільтона на останньому колі й здобув перемогу та титул 2021 року після суперечливої процедури відновлення гонки за сейфті-каром."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "cota",
+      "display_name": {
+        "en": "Circuit of the Americas",
+        "uk": "Остін"
+      },
+      "editorial_intro": {
+        "en": "Austin's uphill first corner and flowing opening sector give it a distinctive rhythm. The venue brought modern Formula 1 back to a purpose-built United States circuit.",
+        "uk": "Підйом до першого повороту й швидка початкова секція надають Остіну особливого ритму. Траса повернула сучасну Формулу-1 на спеціально збудований автодром у США."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "Formula 1 returns to Austin",
+            "uk": "Формула-1 повертається до Остіну"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the first United States Grand Prix at Circuit of the Americas in 2012, driving for McLaren.",
+            "uk": "Льюїс Гамільтон виграв перший Гран-прі США на трасі Circuit of the Americas у 2012 році за McLaren."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "sepang",
+      "display_name": {
+        "en": "Sepang",
+        "uk": "Сепанг"
+      },
+      "editorial_intro": {
+        "en": "Malaysia's former Formula 1 venue mixed high humidity with sweeping turns and sudden tropical rain. Its Grand Prix often became a strategy contest against the weather.",
+        "uk": "Колишня траса Формули-1 у Малайзії поєднувала вологу спеку, широкі повороти й раптові тропічні зливи. Погода часто ставала окремим суперником команд."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "Alonso's wet-weather surprise",
+            "uk": "Несподіванка Алонсо під дощем"
+          },
+          "narrative": {
+            "en": "Fernando Alonso won a rain-hit Malaysian Grand Prix in a Ferrari not widely considered the fastest car that weekend.",
+            "uk": "Фернандо Алонсо переміг на дощовому Гран-прі Малайзії на Ferrari, яку не вважали найшвидшою машиною того вікенду."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "display_name": {
+        "en": "Istanbul Park",
+        "uk": "Істанбул-Парк"
+      },
+      "editorial_intro": {
+        "en": "Turkey's track is remembered for the demanding multi-apex Turn 8. Its blend of fast corners and elevation rewarded drivers who could sustain a precise line.",
+        "uk": "Турецьку трасу пам’ятають завдяки складному восьмому повороту з кількома апексами. Швидкі зв’язки й перепади висот винагороджували точність траєкторії."
+      },
+      "moments": [
+        {
+          "year": 2020,
+          "title": {
+            "en": "Hamilton clinches title in the wet",
+            "uk": "Гамільтон бере титул під дощем"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the slippery 2020 Turkish Grand Prix and secured his seventh Drivers' World Championship.",
+            "uk": "Льюїс Гамільтон переміг на слизькому Гран-прі Туреччини 2020 року й здобув сьомий титул чемпіона світу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Turn 8",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    }
+  ]
+}
