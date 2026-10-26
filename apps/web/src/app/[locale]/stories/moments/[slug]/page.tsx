@@ -72,8 +72,12 @@ export default async function EditorialMoment({ params }: Props) {
       {beats && <section aria-labelledby="reading-path" style={{ marginTop: 56, borderTop: "1px solid var(--line)", paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? "ЧОТИРИ СЮЖЕТНІ МОМЕНТИ" : "FOUR STORY BEATS"}</p>
         <h2 id="reading-path">{uk ? "Маршрут історією" : "A path through the story"}</h2>
-        <ol style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 190px), 1fr))", gap: 18, listStyle: "none", padding: 0 }}>
-          {beats.map((beat, index) => <li key={beat} style={{ borderTop: "2px solid var(--accent-ink)", paddingTop: 14 }}><span className={styles.eyebrow}>{String(index + 1).padStart(2, "0")}</span><h3 style={{ margin: "12px 0" }}>{beat}</h3>{scenes?.[index] && <p style={{ lineHeight: 1.7 }}>{scenes[index]}</p>}</li>)}
+        <ol className={styles.editorialActs}>
+          {beats.map((beat, index) => <li key={beat} className={styles.editorialAct}>
+            <h3>{beat}</h3>
+            {scenes?.[index] && <p>{scenes[index]}</p>}
+            <small>{uk ? `Акт ${index + 1} із ${beats.length}` : `Act ${index + 1} of ${beats.length}`}</small>
+          </li>)}
         </ol>
         <p className={styles.note}>{uk ? "Це редакційний маршрут, а не перевірена покрокова хронологія гонки." : "This is an editorial reading path, not a verified lap-by-lap race timeline."}</p>
       </section>}
