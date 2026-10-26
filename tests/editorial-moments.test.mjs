@@ -138,3 +138,21 @@ test('Commons media intake runs only on explicit manual request; PR discovery re
   const intake = read('scripts/editorial-media-intake.mjs');
   assert.ok(intake.includes('.grid-atlas/media-review') || intake.includes('media-review'));
 });
+
+test('eight researched story manuscripts retain independently scoped result evidence', () => {
+  const reviewed = slugs.filter(slug => slug !== 'massa-2008' && slug !== 'brawn-2009');
+  assert.equal(reviewed.length, 8);
+  for (const slug of reviewed) {
+    const manuscript = read('docs/editorial/research/people-who-changed-f1-20261025/' + slug + '.en-uk.md');
+    assert.ok(manuscript.includes('## Verified classification checkpoint — 2026-10-26'), slug + ' lacks provenance checkpoint');
+    assert.ok(manuscript.includes('EN · Official-result facts'), slug + ' lacks English results');
+    assert.ok(manuscript.includes('UK · Факти з офіційних результатів'), slug + ' lacks Ukrainian results');
+    assert.ok(manuscript.includes('Claims still requiring independent review'), slug + ' lacks evidence limitations');
+    assert.ok(manuscript.includes('https://www.formula1.com/en/results/'), slug + ' lacks official classification');
+  }
+  const items = literal(previews, 'editorialStoryPreviews');
+  for (const item of items.filter(item => reviewed.includes(item.slug))) {
+    assert.ok(item.en.summary.length > 100 && item.uk.summary.length > 100);
+    assert.ok(!item.en.summary.includes('result records') && !item.uk.summary.includes('записи результатів'));
+  }
+});
