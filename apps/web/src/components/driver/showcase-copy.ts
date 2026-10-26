@@ -1,7 +1,8 @@
+import { glossary } from '../../content/glossary.ts';
 const en = {
   archive: 'DRIVER ARCHIVE', intro: 'A career, through the race records.',
   lead: 'Follow the seasons, the constructors and the moments recorded in the archive.',
-  period: 'Recorded seasons', races: 'Recorded races', wins: 'Winning races', podiums: 'Podium result entries',
+  period: 'Recorded seasons', races: 'Recorded races', wins: glossary.en.wins, podiums: glossary.en.podiumEntries,
   scope: 'Imported results describe the archive’s coverage. They do not establish official starts or driver contracts.',
   begin: 'Explore the career', compare: 'Open Time Machine', chapters: 'Profile chapters',
   career: 'Career', teams: 'Team eras', moments: 'Race moments', statistics: 'Deep statistics', biography: 'Biography',
@@ -34,7 +35,7 @@ const en = {
 const uk: Record<keyof typeof en, string> = {
   archive: 'АРХІВ ПІЛОТА', intro: 'Кар’єра мовою гоночних записів.',
   lead: 'Досліджуйте сезони, конструкторів і моменти, зафіксовані в архіві.',
-  period: 'Зафіксовані сезони', races: 'Зафіксовані гонки', wins: 'Переможні гонки', podiums: 'Подіумні записи результатів',
+  period: 'Зафіксовані сезони', races: 'Зафіксовані гонки', wins: glossary.uk.wins, podiums: glossary.uk.podiumEntries,
   scope: 'Імпортовані результати описують покриття архіву. Вони не засвідчують офіційних стартів чи контрактів пілота.',
   begin: 'Дослідити кар’єру', compare: 'Відкрити Машину часу', chapters: 'Розділи профілю',
   career: 'Кар’єра', teams: 'Етапи з командами', moments: 'Гоночні моменти', statistics: 'Детальна статистика', biography: 'Біографія',

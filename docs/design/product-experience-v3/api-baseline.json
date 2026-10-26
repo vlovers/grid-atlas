@@ -1,0 +1,741 @@
+[
+  {
+    "path": "/api/drivers/72/career?locale=en",
+    "status": 200,
+    "body": {
+      "data": [
+        {
+          "id": "72",
+          "name": "Ayrton Senna da Silva",
+          "external_id": "ayrton-senna",
+          "source_slug": "f1db",
+          "source_url": "https://github.com/f1db/f1db",
+          "attribution": "F1DB, CC BY 4.0",
+          "observations": [
+            {
+              "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+              "release_tag": "v2026.17.0",
+              "content_hash": "c702aaf24f3a08f4995459cfafa5d361f8412e6734f1ac260b3e9cce15411052",
+              "artifact_name": "f1db-json-splitted.zip"
+            }
+          ],
+          "entity_type": "driver",
+          "summary": {
+            "result_entries": 162,
+            "races": 162,
+            "seasons": 11,
+            "first_season": 1984,
+            "last_season": 1994,
+            "winning_races": 41,
+            "podium_result_entries": 80,
+            "recorded_points": "614.00",
+            "points_recorded": 96,
+            "points_missing": 66
+          },
+          "related_entity_type": "constructor",
+          "participation": [
+            {
+              "year": 1984,
+              "related_id": "171",
+              "related_name": "Toleman Motorsport",
+              "related_external_id": "toleman",
+              "related_source_slug": "f1db",
+              "result_entries": 15,
+              "races": 15,
+              "winning_races": 0,
+              "podium_result_entries": 3,
+              "recorded_points": "13.00",
+              "points_recorded": 5,
+              "points_missing": 10,
+              "first_race": {
+                "id": "389",
+                "date": "1984-03-25",
+                "name": "Grande Prêmio do Brasil 1984",
+                "year": 1984,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "404",
+                "date": "1984-10-21",
+                "name": "Grande Prémio de Portugal 1984",
+                "year": 1984,
+                "round": 16,
+                "circuit_id": "23"
+              }
+            },
+            {
+              "year": 1985,
+              "related_id": "101",
+              "related_name": "Team Lotus",
+              "related_external_id": "lotus",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 2,
+              "podium_result_entries": 6,
+              "recorded_points": "38.00",
+              "points_recorded": 6,
+              "points_missing": 10,
+              "first_race": {
+                "id": "405",
+                "date": "1985-04-07",
+                "name": "Grande Prêmio do Brasil 1985",
+                "year": 1985,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "420",
+                "date": "1985-11-03",
+                "name": "1985 Mitsubishi Australian Grand Prix",
+                "year": 1985,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1986,
+              "related_id": "101",
+              "related_name": "Team Lotus",
+              "related_external_id": "lotus",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 2,
+              "podium_result_entries": 8,
+              "recorded_points": "55.00",
+              "points_recorded": 10,
+              "points_missing": 6,
+              "first_race": {
+                "id": "421",
+                "date": "1986-03-23",
+                "name": "Grande Prêmio do Brasil 1986",
+                "year": 1986,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "436",
+                "date": "1986-10-26",
+                "name": "1986 Foster's Australian Grand Prix",
+                "year": 1986,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1987,
+              "related_id": "101",
+              "related_name": "Team Lotus",
+              "related_external_id": "lotus",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 2,
+              "podium_result_entries": 8,
+              "recorded_points": "57.00",
+              "points_recorded": 11,
+              "points_missing": 5,
+              "first_race": {
+                "id": "437",
+                "date": "1987-04-12",
+                "name": "Grande Prêmio do Brasil 1987",
+                "year": 1987,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "452",
+                "date": "1987-11-15",
+                "name": "1987 Foster's Australian Grand Prix",
+                "year": 1987,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1988,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 8,
+              "podium_result_entries": 11,
+              "recorded_points": "94.00",
+              "points_recorded": 13,
+              "points_missing": 3,
+              "first_race": {
+                "id": "453",
+                "date": "1988-04-03",
+                "name": "Grande Prêmio do Brasil 1988",
+                "year": 1988,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "468",
+                "date": "1988-11-13",
+                "name": "1988 Foster's Australian Grand Prix",
+                "year": 1988,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1989,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 6,
+              "podium_result_entries": 7,
+              "recorded_points": "60.00",
+              "points_recorded": 7,
+              "points_missing": 9,
+              "first_race": {
+                "id": "469",
+                "date": "1989-03-26",
+                "name": "Grande Prêmio do Brasil 1989",
+                "year": 1989,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "last_race": {
+                "id": "484",
+                "date": "1989-11-05",
+                "name": "1989 Foster's Australian Grand Prix",
+                "year": 1989,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1990,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 6,
+              "podium_result_entries": 11,
+              "recorded_points": "78.00",
+              "points_recorded": 11,
+              "points_missing": 5,
+              "first_race": {
+                "id": "485",
+                "date": "1990-03-11",
+                "name": "1990 Iceberg USA Grand Prix",
+                "year": 1990,
+                "round": 1,
+                "circuit_id": "58"
+              },
+              "last_race": {
+                "id": "500",
+                "date": "1990-11-04",
+                "name": "1990 Foster's Australian Grand Prix",
+                "year": 1990,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1991,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 7,
+              "podium_result_entries": 12,
+              "recorded_points": "96.00",
+              "points_recorded": 14,
+              "points_missing": 2,
+              "first_race": {
+                "id": "501",
+                "date": "1991-03-10",
+                "name": "1991 Iceberg USA Grand Prix",
+                "year": 1991,
+                "round": 1,
+                "circuit_id": "58"
+              },
+              "last_race": {
+                "id": "516",
+                "date": "1991-11-03",
+                "name": "1991 Foster's Australian Grand Prix",
+                "year": 1991,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1992,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 3,
+              "podium_result_entries": 7,
+              "recorded_points": "50.00",
+              "points_recorded": 8,
+              "points_missing": 8,
+              "first_race": {
+                "id": "517",
+                "date": "1992-03-01",
+                "name": "Yellow Pages South African Grand Prix 1992",
+                "year": 1992,
+                "round": 1,
+                "circuit_id": "35"
+              },
+              "last_race": {
+                "id": "532",
+                "date": "1992-11-08",
+                "name": "1992 Foster's Australian Grand Prix",
+                "year": 1992,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1993,
+              "related_id": "114",
+              "related_name": "McLaren Racing",
+              "related_external_id": "mclaren",
+              "related_source_slug": "f1db",
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 5,
+              "podium_result_entries": 7,
+              "recorded_points": "73.00",
+              "points_recorded": 11,
+              "points_missing": 5,
+              "first_race": {
+                "id": "533",
+                "date": "1993-03-14",
+                "name": "Panasonic South African Grand Prix 1993",
+                "year": 1993,
+                "round": 1,
+                "circuit_id": "35"
+              },
+              "last_race": {
+                "id": "548",
+                "date": "1993-11-07",
+                "name": "1993 Foster's Australian Grand Prix",
+                "year": 1993,
+                "round": 16,
+                "circuit_id": "1"
+              }
+            },
+            {
+              "year": 1994,
+              "related_id": "184",
+              "related_name": "Williams Grand Prix Engineering",
+              "related_external_id": "williams",
+              "related_source_slug": "f1db",
+              "result_entries": 3,
+              "races": 3,
+              "winning_races": 0,
+              "podium_result_entries": 0,
+              "recorded_points": null,
+              "points_recorded": 0,
+              "points_missing": 3,
+              "first_race": {
+                "id": "549",
+                "date": "1994-03-27",
+                "name": "Grande Prêmio do Brasil 1994",
+                "year": 1994,
+                "round": 1,
+                "circuit_id": "29"
+              },
+              "last_race": {
+                "id": "551",
+                "date": "1994-05-01",
+                "name": "Gran Premio di San Marino 1994",
+                "year": 1994,
+                "round": 3,
+                "circuit_id": "27"
+              }
+            }
+          ],
+          "milestones": {
+            "first_appearance": {
+              "race": {
+                "id": "389",
+                "date": "1984-03-25",
+                "name": "Grande Prêmio do Brasil 1984",
+                "year": 1984,
+                "round": 1,
+                "circuit_id": "31"
+              },
+              "results": [
+                {
+                  "points": null,
+                  "driver_id": "72",
+                  "shared_car": false,
+                  "position_text": "DNF",
+                  "constructor_id": "171",
+                  "reason_retired": "Turbo",
+                  "position_number": null,
+                  "position_display_order": 24
+                }
+              ]
+            },
+            "last_appearance": {
+              "race": {
+                "id": "551",
+                "date": "1994-05-01",
+                "name": "Gran Premio di San Marino 1994",
+                "year": 1994,
+                "round": 3,
+                "circuit_id": "27"
+              },
+              "results": [
+                {
+                  "points": null,
+                  "driver_id": "72",
+                  "shared_car": false,
+                  "position_text": "DNF",
+                  "constructor_id": "184",
+                  "reason_retired": "Fatal accident",
+                  "position_number": null,
+                  "position_display_order": 22
+                }
+              ]
+            },
+            "first_win": {
+              "race": {
+                "id": "406",
+                "date": "1985-04-21",
+                "name": "Grande Prémio de Portugal 1985",
+                "year": 1985,
+                "round": 2,
+                "circuit_id": "23"
+              },
+              "results": [
+                {
+                  "points": "9.00",
+                  "driver_id": "72",
+                  "shared_car": false,
+                  "position_text": "1",
+                  "constructor_id": "101",
+                  "reason_retired": null,
+                  "position_number": 1,
+                  "position_display_order": 1
+                }
+              ]
+            },
+            "last_win": {
+              "race": {
+                "id": "548",
+                "date": "1993-11-07",
+                "name": "1993 Foster's Australian Grand Prix",
+                "year": 1993,
+                "round": 16,
+                "circuit_id": "1"
+              },
+              "results": [
+                {
+                  "points": "10.00",
+                  "driver_id": "72",
+                  "shared_car": false,
+                  "position_text": "1",
+                  "constructor_id": "114",
+                  "reason_retired": null,
+                  "position_number": 1,
+                  "position_display_order": 1
+                }
+              ]
+            }
+          },
+          "limitations": [
+            "imported_race_results_only",
+            "appearances_not_official_starts",
+            "season_round_order_not_date_order",
+            "missing_points_are_unknown",
+            "race_points_not_championship_standings",
+            "entity_observations_not_result_provenance",
+            "constructor_association_not_entrant_or_legal_continuity"
+          ],
+          "editorial": {
+            "locale": "en",
+            "introduction": null,
+            "biography": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "path": "/api/drivers/3/career?locale=en",
+    "status": 200,
+    "body": {
+      "data": [
+        {
+          "id": "3",
+          "name": "Adolfo Julio Carlos Schwelm Cruz",
+          "external_id": "adolfo-schwelm-cruz",
+          "source_slug": "f1db",
+          "source_url": "https://github.com/f1db/f1db",
+          "attribution": "F1DB, CC BY 4.0",
+          "observations": [
+            {
+              "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8",
+              "release_tag": "v2026.17.0",
+              "content_hash": "51fccd6696f2d930b4f69627c8b0f9c18b73cc88c2ceaaff68cec3e81c31f0d1",
+              "artifact_name": "f1db-json-splitted.zip"
+            }
+          ],
+          "entity_type": "driver",
+          "summary": {
+            "result_entries": 1,
+            "races": 1,
+            "seasons": 1,
+            "first_season": 1953,
+            "last_season": 1953,
+            "winning_races": 0,
+            "podium_result_entries": 0,
+            "recorded_points": null,
+            "points_recorded": 0,
+            "points_missing": 1
+          },
+          "related_entity_type": "constructor",
+          "participation": [
+            {
+              "year": 1953,
+              "related_id": "40",
+              "related_name": "Cooper Car Company",
+              "related_external_id": "cooper",
+              "related_source_slug": "f1db",
+              "result_entries": 1,
+              "races": 1,
+              "winning_races": 0,
+              "podium_result_entries": 0,
+              "recorded_points": null,
+              "points_recorded": 0,
+              "points_missing": 1,
+              "first_race": {
+                "id": "24",
+                "date": "1953-01-18",
+                "name": "Gran Premio de Argentina 1953",
+                "year": 1953,
+                "round": 1,
+                "circuit_id": "13"
+              },
+              "last_race": {
+                "id": "24",
+                "date": "1953-01-18",
+                "name": "Gran Premio de Argentina 1953",
+                "year": 1953,
+                "round": 1,
+                "circuit_id": "13"
+              }
+            }
+          ],
+          "milestones": {
+            "first_appearance": {
+              "race": {
+                "id": "24",
+                "date": "1953-01-18",
+                "name": "Gran Premio de Argentina 1953",
+                "year": 1953,
+                "round": 1,
+                "circuit_id": "13"
+              },
+              "results": [
+                {
+                  "points": null,
+                  "driver_id": "3",
+                  "shared_car": false,
+                  "position_text": "DNF",
+                  "constructor_id": "40",
+                  "reason_retired": "Wheel",
+                  "position_number": null,
+                  "position_display_order": 17
+                }
+              ]
+            },
+            "last_appearance": {
+              "race": {
+                "id": "24",
+                "date": "1953-01-18",
+                "name": "Gran Premio de Argentina 1953",
+                "year": 1953,
+                "round": 1,
+                "circuit_id": "13"
+              },
+              "results": [
+                {
+                  "points": null,
+                  "driver_id": "3",
+                  "shared_car": false,
+                  "position_text": "DNF",
+                  "constructor_id": "40",
+                  "reason_retired": "Wheel",
+                  "position_number": null,
+                  "position_display_order": 17
+                }
+              ]
+            },
+            "first_win": null,
+            "last_win": null
+          },
+          "limitations": [
+            "imported_race_results_only",
+            "appearances_not_official_starts",
+            "season_round_order_not_date_order",
+            "missing_points_are_unknown",
+            "race_points_not_championship_standings",
+            "entity_observations_not_result_provenance",
+            "constructor_association_not_entrant_or_legal_continuity"
+          ],
+          "editorial": {
+            "locale": "en",
+            "introduction": null,
+            "biography": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "path": "/api/explorer/drivers/72/compare?fromYear=2025&toYear=2026",
+    "status": 200,
+    "body": {
+      "data": {
+        "focus": {
+          "entity_type": "driver",
+          "entity_id": "72",
+          "name": "Ayrton Senna da Silva"
+        },
+        "from_year": 2025,
+        "to_year": 2026,
+        "added": [],
+        "removed": [],
+        "unchanged": [],
+        "provenance": "imported-main-race-results",
+        "limitations": [
+          "seasonal_observations_not_contracts_or_transfers",
+          "absence_of_record_not_proof_of_absence",
+          "race_results_not_official_starts",
+          "constructor_identity_not_entrant_or_legal_continuity",
+          "no_individual_result_row_provenance"
+        ]
+      }
+    }
+  },
+  {
+    "path": "/api/explorer/drivers/72/compare?fromYear=1987&toYear=1988",
+    "status": 200,
+    "body": {
+      "data": {
+        "focus": {
+          "entity_type": "driver",
+          "entity_id": "72",
+          "name": "Ayrton Senna da Silva"
+        },
+        "from_year": 1987,
+        "to_year": 1988,
+        "added": [
+          {
+            "entity_type": "constructor",
+            "entity_id": "114",
+            "name": "McLaren Racing",
+            "from": null,
+            "to": {
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 8
+            }
+          }
+        ],
+        "removed": [
+          {
+            "entity_type": "constructor",
+            "entity_id": "101",
+            "name": "Team Lotus",
+            "from": {
+              "result_entries": 16,
+              "races": 16,
+              "winning_races": 2
+            },
+            "to": null
+          }
+        ],
+        "unchanged": [],
+        "provenance": "imported-main-race-results",
+        "limitations": [
+          "seasonal_observations_not_contracts_or_transfers",
+          "absence_of_record_not_proof_of_absence",
+          "race_results_not_official_starts",
+          "constructor_identity_not_entrant_or_legal_continuity",
+          "no_individual_result_row_provenance"
+        ]
+      }
+    }
+  },
+  {
+    "path": "/api/explorer/drivers/3/connections?year=1953",
+    "status": 200,
+    "body": {
+      "data": {
+        "focus": "driver:3",
+        "year": 1953,
+        "nodes": [
+          {
+            "key": "driver:3",
+            "type": "driver",
+            "entity_id": "3",
+            "name": "Adolfo Julio Carlos Schwelm Cruz"
+          },
+          {
+            "key": "constructor:40",
+            "type": "constructor",
+            "entity_id": "40",
+            "name": "Cooper Car Company"
+          }
+        ],
+        "edges": [
+          {
+            "key": "driver:3:constructor:40:year:1953",
+            "from": "driver:3",
+            "to": "constructor:40",
+            "relation_type": "driver_recorded_result_for_constructor",
+            "year": 1953,
+            "result_entries": 1,
+            "races": 1,
+            "winning_races": 0,
+            "provenance": "imported-result-association"
+          }
+        ],
+        "truncated": false,
+        "limit": 25,
+        "source": {
+          "slug": "f1db",
+          "homepage_url": "https://github.com/f1db/f1db",
+          "attribution": "F1DB, CC BY 4.0"
+        },
+        "limitations": [
+          "result_association_not_official_starts",
+          "entity_source_not_per_result_provenance",
+          "constructor_not_entrant_or_legal_continuity",
+          "imported_main_race_results_only"
+        ]
+      }
+    }
+  },
+  {
+    "path": "/api/lineage/network",
+    "status": 200,
+    "body": {
+      "data": []
+    }
+  }
+]

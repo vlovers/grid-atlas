@@ -5,6 +5,7 @@ import {
   getExplorerGraph,
   getConstructorExplorerGraph,
 } from "@/lib/explorer-api";
+import { CareerState } from "@/components/history-atlas/career-state";
 import { AtlasWorkbench } from "@/components/history-atlas/workbench";
 import { historyAtlasCopy } from "@/components/history-atlas/copy";
 import {
@@ -17,6 +18,9 @@ import {
   SEARCH_SIZE,
   type AtlasKind,
 } from "@/components/history-atlas/model";
+import { recordedCareer, careerPartners, suggestedComparisons } from "@/lib/recorded-career";
+import { glossary } from "@/content/glossary";
+import discoveryStyles from "@/components/history-atlas/discovery.module.css";
 import styles from "@/components/history-atlas/history-atlas.module.css";
 
 export const dynamic = "force-dynamic";
@@ -63,7 +67,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
   const selected = atlasId(q.selected) ? q.selected : undefined;
   const trail = parseTrail(q.trail);
   const badTrail = q.trail !== undefined && encodeTrail(trail) !== q.trail;
-  const [seasons, identities, career] = await Promise.all([
+  const [seasons, identities, careerRows] = await Promise.all([
     getData<Season>("/api/seasons"),
     !id || q.q !== undefined
       ? getData<CatalogueEntity>(
@@ -71,11 +75,18 @@ export default async function AtlasPage({ params, searchParams }: Props) {
         )
       : Promise.resolve([]),
     id
-      ? getData<unknown>(`/api/${route}/${id}/career?locale=${locale}`).then(
-          (rows) => parseAtlasCareer(rows, kind, id),
-        )
+      ? getData<unknown>(`/api/${route}/${id}/career?locale=${locale}`)
       : Promise.resolve(null),
   ]);
+  const career = careerRows ? parseAtlasCareer(careerRows, kind, id!) : null;
+  const discovery = careerRows ? recordedCareer(careerRows, kind, id!) : null;
+  const partners = discovery ? careerPartners(discovery) : [];
+  const words = glossary[locale];
+  const careerQuery = (one(q.careerQ) ?? '').trim().slice(0,100);
+  const requestedCareerPage = typeof q.careerPage === 'string' && /^(0|[1-9][0-9]{0,4})$/.test(q.careerPage) ? Number(q.careerPage) : 0;
+  const matchingPartners = partners.filter(p => p.name.toLocaleLowerCase(locale).includes(careerQuery.toLocaleLowerCase(locale)));
+  const careerPage = Math.min(requestedCareerPage, Math.max(0, Math.ceil(matchingPartners.length / 12) - 1));
+  const visiblePartners = matchingPartners.slice(careerPage * 12, careerPage * 12 + 12);
   const year = validYear
     ? q.year === undefined
       ? career?.years.at(-1)
@@ -96,7 +107,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
   const searchHref = (nextOffset: number) =>
     `/${locale}/atlas?${new URLSearchParams({ kind, q: query, offset: String(nextOffset) })}`;
   const machineYears = career?.years ?? [];
-  const otherYear = machineYears.find((y) => y !== year);
+  const otherYear = machineYears.filter(y => y !== year).sort((a, b) => Math.abs(a - (year ?? 0)) - Math.abs(b - (year ?? 0)))[0];
   return (
     <section className={`page ${styles.page}`}>
       <header className={styles.hero}>
@@ -257,6 +268,13 @@ export default async function AtlasPage({ params, searchParams }: Props) {
           </section>
         </>
       )}
+      {discovery && <nav className={styles.continue} aria-label={words.overview}>
+        <a href="#atlas-season">{words.seasonMap} ↓</a><a href="#atlas-career">{words.overviewLink} · {partners.length} ↓</a>
+        {year !== undefined && discovery.years.filter(y => y < year).at(-1) !== undefined && <a href={atlasHref(locale, { kind, id, year: discovery.years.filter(y => y < year).at(-1)! }, trail)}>← {discovery.years.filter(y => y < year).at(-1)}</a>}
+        {year !== undefined && discovery.years.find(y => y > year) !== undefined && <a href={atlasHref(locale, { kind, id, year: discovery.years.find(y => y > year)! }, trail)}>{discovery.years.find(y => y > year)} →</a>}
+      </nav>}
+      {graph && graph.edges.length <= 2 && <p className={styles.help}>{words.sparse}</p>}
+      <div id="atlas-season" />
       {graph && (
         <AtlasWorkbench
           key={`${kind}:${id}:${year}:${encodeTrail(trail)}`}
@@ -266,6 +284,31 @@ export default async function AtlasPage({ params, searchParams }: Props) {
           trail={trail}
         />
       )}
+      {discovery && <CareerState><section id="atlas-career" className={styles.connectionSection} aria-labelledby="atlas-career-title" data-testid="atlas-career-overview">
+        <h2 id="atlas-career-title">{words.overview}</h2><p>{words.overviewNote}</p>
+        {partners.length > 12 && <form method="get" action={`/${locale}/atlas#atlas-career`} className={discoveryStyles.filter}>
+          <input type="hidden" name="kind" value={kind}/><input type="hidden" name="id" value={id}/>{year !== undefined && <input type="hidden" name="year" value={year}/>}<input type="hidden" name="selected" value={selected ?? ""} disabled={!selected}/>{trail.length > 0 && <input type="hidden" name="trail" value={encodeTrail(trail)}/>}
+          <label>{locale === 'uk' ? 'Ім’я або назва в історії кар’єри' : 'Find a name in this career'}<input name="careerQ" type="search" maxLength={100} defaultValue={careerQuery}/></label><button type="submit">{t.find}</button>
+        </form>}
+        <p>{matchingPartners.length} · {locale === 'uk' ? 'зв’язків; на сторінці' : 'connections; on this page'} {visiblePartners.length}</p>
+        {visiblePartners.length ? <ol className={styles.connectionList}>{visiblePartners.map(partner => <li key={partner.id}>
+          <div className={discoveryStyles.partner}><h3>{partner.name}</h3>
+            <p>{partner.seasons.map(s => s.year).join(' · ')}</p>
+            <details><summary>{words.raceEvidence} · {partner.seasons.length}</summary>
+              <ul>{partner.seasons.map(season => <li key={season.year} className={discoveryStyles.season}>
+                <a href={atlasHref(locale, { kind, id, year: season.year, selected: partner.id }, trail)}>{season.year} · {words.seasonMap}</a>{' · '}
+                <a href={`/${locale}/explorer/evidence/${kind === 'driver' ? id : partner.id}/${kind === 'constructor' ? id : partner.id}?year=${season.year}&from=${kind}&selected=${partner.id}`}>{words.raceEvidence} ↗</a>
+              </li>)}</ul>
+            </details>
+          </div>
+        </li>)}</ol> : <p>{careerQuery ? t.noResults : words.noYears}</p>}
+        {matchingPartners.length > 12 && <nav className={styles.paging} aria-label={words.overview}>
+          {[...(careerPage > 0 ? [careerPage - 1] : []), ...((careerPage + 1) * 12 < matchingPartners.length ? [careerPage + 1] : [])].map(p => <a data-career-page key={p} href={`${atlasHref(locale, {kind, id, year, selected}, trail)}&${new URLSearchParams({careerQ:careerQuery,careerPage:String(p)})}#atlas-career`}>{p < careerPage ? `← ${words.previous}` : `${words.next} →`}</a>)}
+        </nav>}
+        {discovery.years.length > 1 && <nav className={styles.continue} aria-label={words.suggestions}>
+          {suggestedComparisons(discovery, year).slice(0, 3).map(pair => <a key={pair.from} href={`/${locale}/time-machine?kind=${kind}&id=${id}&from=${pair.from}&to=${pair.to}`}>{pair.from} → {pair.to} ↗</a>)}
+        </nav>}
+      </section></CareerState>}
       <div className={styles.related}>
         {career && otherYear !== undefined && year !== undefined && (
           <a

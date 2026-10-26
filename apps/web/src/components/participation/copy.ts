@@ -1,6 +1,6 @@
 const en = {
  kicker:'THE PARTICIPATION ARCHIVE', driverTitle:'A career, in connected seasons.', constructorTitle:'The people behind each season.',
- driverLead:'Constructor associations in recorded race results. Consecutive observations form a period; gaps and returns stay separate.',
+ driverLead:'Teams in the driver’s race results, season by season. Separate chapters mark gaps and returns.',
  constructorLead:'A season-by-season view of drivers in the constructor’s race records. Each mark opens the exact pair’s race evidence.',
  matrix:'Recorded participation by calendar season', relatedDriver:'Driver', relatedConstructor:'Constructor',
  scroll:'Scroll across the calendar; scroll down to explore every recorded identity. Use Tab to open a race-evidence mark.',
@@ -17,12 +17,12 @@ const en = {
 };
 const uk: Record<keyof typeof en,string> = {
  kicker:'АРХІВ УЧАСТІ', driverTitle:'Кар’єра у зв’язках між сезонами.', constructorTitle:'Люди за кожним сезоном.',
- driverLead:'Зв’язки з конструкторами за гоночними протоколами. Послідовні спостереження формують період; прогалини й повернення залишаються окремими.',
+ driverLead:'Команди пілота за результатами гонок, сезон за сезоном. Прогалини й повернення утворюють окремі розділи.',
  constructorLead:'Пілоти в гоночних записах конструктора за сезонами. Кожна позначка відкриває свідчення гонок саме цієї пари.',
  matrix:'Зафіксована участь за календарними сезонами', relatedDriver:'Пілот', relatedConstructor:'Конструктор',
  scroll:'Прокручуйте календар убік, а список учасників — униз. Клавіша Tab переводить до позначок гоночних свідчень.',
  previous:'Попередній зафіксований сезон', next:'Наступний зафіксований сезон', selected:'Обраний сезон', all:'Усі зафіксовані сезони',
- recorded:'Зафіксовані гонки', noAssociation:'Зв’язок не зафіксовано', missingSeason:'Сезон для цієї ідентичності не зафіксовано',
+ recorded:'Зафіксовані гонки', noAssociation:'Зв’язок не зафіксовано', missingSeason:'За цей сезон немає результатів',
  legend:'Як читати архів', note:'Це зафіксовані зв’язки, а не контракти, офіційні старти чи доказ неучасті. Гонки рахуються для кожної пари; спільні автомобілі можуть утворювати більше записів результатів, ніж гонок.',
  changes:'Що змінилося в записах?', added:'Вперше в порівнюваних записах', retained:'Зафіксовані в обох', absent:'Не зафіксовані цього сезону',
  changesNote:'Порівняння лише з попереднім календарним сезоном. Позначення описують імпортовані записи, а не підписання, відхід чи особисті стосунки.',
