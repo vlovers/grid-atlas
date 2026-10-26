@@ -98,3 +98,19 @@ test('new detailed race scenes cite exact sources and retain human review gate',
   }
   assert.equal(ledger.publication, 'unpublished');
 });
+
+test('reader-quality audit reflects actual bilingual content and does not assert publication', () => {
+  const audit = read('docs/editorial/batches/drivers-30-v1/READER_QUALITY_AUDIT_2026-10-26.json');
+  const stories = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json').stories;
+  assert.equal(audit.result, 'not_publication_ready');
+  assert.equal(audit.stories.length, stories.length);
+  for (const row of audit.stories) {
+    const story = stories.find(item => item.driver_id === row.driver_id);
+    assert.ok(story);
+    assert.equal(row.en_words, story.chapters.reduce((total, ch) => total + ch.en.body.split(/\s+/).length, 0));
+    assert.equal(row.uk_words, story.chapters.reduce((total, ch) => total + ch.uk.body.split(/\s+/).length, 0));
+    assert.equal(row.research_chapters, story.chapters.length);
+    assert.equal(row.publication, 'unpublished');
+    assert.equal(row.editorial_depth, row.en_words < 250 ? 'thin' : row.en_words < 400 ? 'developing' : 'substantive_research');
+  }
+});
