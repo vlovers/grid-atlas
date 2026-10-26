@@ -102,14 +102,18 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
         <p className={styles.note}>{uk ? 'Матеріал доступний для ознайомлення, але ще не пройшов незалежної перевірки джерел. Не вважайте його остаточною публікацією.' : 'This manuscript is available to read but has not yet passed independent source verification. It is not a final publication.'}</p>
-        <nav aria-label={uk ? 'Розділи статті' : 'Article chapters'} style={{ display: 'flex', flexWrap: 'wrap', gap: 12, margin: '32px 0' }}>
-          {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`} style={{ padding: '10px 14px', border: '1px solid var(--line)' }}>{String(index + 1).padStart(2, '0')} · {chapter.heading}</a>)}
-        </nav>
-        {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`} style={{ padding: '36px 0', borderTop: '1px solid var(--line)', scrollMarginTop: 100 }}>
-          <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
-          <h3 style={{ fontSize: 'clamp(26px, 3vw, 42px)' }}>{chapter.heading}</h3>
-          {chapter.paragraphs.map((paragraph, p) => <p key={p} style={{ fontSize: '1.075rem', lineHeight: 1.85, maxWidth: '72ch' }}>{paragraph}</p>)}
-        </section>)}
+        <div className={styles.editorialChapters}>
+          <nav className={styles.editorialChapterNav} aria-label={uk ? 'Розділи статті' : 'Article chapters'}>
+            {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`}><span aria-hidden="true">{String(index + 1).padStart(2, '0')} · </span>{chapter.heading}</a>)}
+          </nav>
+          <div className={styles.editorialProse}>
+            {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`}>
+              <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
+              <h3>{chapter.heading}</h3>
+              {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
+            </section>)}
+          </div>
+        </div>
       </section>}
       {slug in editorialReflection && <aside aria-labelledby="story-reflection" style={{ marginTop: 56, padding: 'clamp(24px, 5vw, 56px)', background: 'var(--surface, transparent)', border: '1px solid var(--line)' }}>
         <p className={styles.eyebrow}>{uk ? 'ПИТАННЯ ПІСЛЯ ІСТОРІЇ' : 'A QUESTION TO TAKE AWAY'}</p>
