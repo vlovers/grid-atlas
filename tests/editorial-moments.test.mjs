@@ -192,3 +192,18 @@ test('all ten pivotal chapters give bilingual race narratives rather than archiv
     assert.doesNotMatch(prose, /the archive should|the story should|an archive|архів має|сторінка конструктора|історичний архів|interactive timeline|інтерактивна хронологія/i, slug + '/' + locale + ' contains product-brief prose');
   }
 });
+
+test('all ten stories begin with concrete bilingual race scenes, not boilerplate conclusions', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  const generic = /^(it is tempting|it would be|a retrospective|the surprise|this story|a formula 1 championship|було б|легко пояснити|щоб зрозуміти|історія починається)/i;
+  for (const slug of slugs) {
+    for (const locale of ['en', 'uk']) {
+      const first = drafts[slug][locale][0];
+      assert.equal(first.paragraphs.length, 2, slug + '/' + locale + ' needs a scene and consequential second beat');
+      assert.ok(first.heading.length >= 12);
+      assert.ok(first.paragraphs[0].length >= 180 && first.paragraphs[1].length >= 120);
+      assert.doesNotMatch(first.paragraphs[0], generic, slug + '/' + locale + ' begins with AI-style framing');
+      assert.doesNotMatch(first.paragraphs.join(' '), /the archive should|the story should|an interactive timeline|історичний архів|архів має/i);
+    }
+  }
+});
