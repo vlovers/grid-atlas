@@ -1,3 +1,4 @@
+import { isAiReviewedStory } from '@/components/stories/editorial-publication';
 import { editorialOfficialResults } from '@/components/stories/editorial-official-results';
 import { editorialSeasonRaceWinners } from '@/components/stories/editorial-season-race-winners';
 import Image from 'next/image';
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const story = resolve(slug);
   if ((locale !== 'uk' && locale !== 'en') || !story) notFound();
-  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: false, follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
+  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: isAiReviewedStory(slug), follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
 }
 
 /** Deliberately separate from the existing /stories/[slug] driver routes.
@@ -32,6 +33,7 @@ export default async function EditorialMoment({ params }: Props) {
   if (locale !== 'uk' && locale !== 'en') notFound();
   const story = resolve(slug);
   if (!story) notFound();
+  const published = isAiReviewedStory(slug);
   const uk = locale === 'uk';
   const copy = story[locale];
   const related = relatedEditorialMoments(slug);
@@ -49,8 +51,8 @@ export default async function EditorialMoment({ params }: Props) {
     <article>
       <header className={styles.editorialHero}>
         <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
-        <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
-        <span className={styles.aiReviewedLabel}>{uk ? 'AI-перевірка джерел · чернетка' : 'AI source-check · draft'}</span>
+        <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {published ? (uk ? 'ІСТОРІЯ' : 'FEATURE') : (uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW')}</p>
+        <span className={styles.aiReviewedLabel}>{published ? 'AI-reviewed' : (uk ? 'AI-перевірка джерел · чернетка' : 'AI source-check · draft')}</span>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
         {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
@@ -60,7 +62,7 @@ export default async function EditorialMoment({ params }: Props) {
         <a href="#story-races">{uk ? 'Гонки та результати' : 'Races & results'}</a>
       </nav>
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
+        <p className={styles.eyebrow}>{published ? (uk ? 'РОЗГОРНУТА ІСТОРІЯ' : 'LONG READ') : (uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT')}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
         
         <div className={styles.editorialChapters}>
@@ -146,10 +148,10 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ul>
       </section>
-      <details className={styles.provenance} style={{ marginTop: 48 }}>
+      {!published && <details className={styles.provenance} style={{ marginTop: 48 }}>
         <summary id="preview-status">{uk ? 'Статус матеріалу' : 'Article status'}</summary>
         <p className={styles.note}>{uk ? 'Стаття проходить фінальну перевірку джерел; публікацію ще не затверджено.' : 'Source review is still in progress; publication has not yet been approved.'}</p>
-      </details>
+      </details>}
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ПРОДОВЖИТИ ЧИТАТИ' : 'KEEP READING'}</p>
         <h2 id="related-moments">{uk ? 'Інші погляди на історію' : 'Another way into the history'}</h2>
