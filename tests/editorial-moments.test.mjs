@@ -207,3 +207,27 @@ test('all ten stories begin with concrete bilingual race scenes, not boilerplate
     }
   }
 });
+
+test('ten turning-point chapters focus on historical events instead of editorial instructions', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  const indexBySlug = {
+    'lauda-hunt-1976': 3,
+    'senna-prost-1988-89': 3,
+    'villeneuve-arnoux-1979': 3,
+    'vettel-monza-2008': 3,
+    'button-canada-2011': 3,
+    'perez-sakhir-2020': 3,
+    'kubica-bmw-2008': 3,
+    'schumacher-ferrari-1996-2000': 3,
+    'massa-2008': 3,
+    'brawn-2009': 3,
+  };
+  assert.deepEqual(Object.keys(indexBySlug), slugs);
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapter = drafts[slug][locale][indexBySlug[slug]];
+    assert.ok(chapter, slug + '/' + locale + ' missing turning point');
+    const body = chapter.paragraphs.join(' ');
+    assert.ok(body.length > 350, slug + '/' + locale + ' turning point needs narrative');
+    assert.doesNotMatch(body, /archive should|readers should|a full Deep Dive|the story should|archive needs|архів має|історія повинна|читач(?:ам|еві) варто|потрібно показати/i);
+  }
+});
