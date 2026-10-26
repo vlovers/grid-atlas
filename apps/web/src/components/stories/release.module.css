@@ -502,3 +502,12 @@
 .editorialTakeaways li>span{font-size:3rem;font-weight:800;color:var(--accent-ink)}
 .editorialTakeaways p{font-size:1.2rem;line-height:1.65}
 @media(max-width:760px){.editorialTakeaways{grid-template-columns:1fr}}
+
+/* Four-beat visual timeline: continuous line, numbered milestones, compact mobile cards. */
+.editorialActs{position:relative;gap:1.25rem;background:transparent;border:0}
+.editorialActs:before{content:'';position:absolute;top:2.8rem;left:1rem;right:1rem;height:2px;background:var(--accent-ink);opacity:.6;pointer-events:none}
+.editorialAct{border:1px solid var(--line);border-top:4px solid var(--accent-ink);min-height:310px;box-shadow:0 12px 30px #00000014}
+.editorialAct:before{position:relative;z-index:1;display:block;width:max-content;padding-right:.5rem;background:var(--surface)}
+.editorialAct h3{max-width:18ch;line-height:1.2}
+@media(max-width:900px){.editorialActs:before{display:none}.editorialAct{min-height:260px}}
+@media(max-width:560px){.editorialAct{min-height:0}.editorialAct h3{max-width:none}}
