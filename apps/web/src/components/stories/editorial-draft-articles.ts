@@ -343,9 +343,10 @@ export const editorialDraftArticles = {
   "perez-sakhir-2020": {
     "en": [
       {
-        "heading": "The race that seemed over",
+        "heading": "Last after lap one, first at the flag",
         "paragraphs": [
-          "Sergio Pérez arrived at the 2020 Sakhir Grand Prix with his future in Formula 1 uncertain. His Racing Point seat would not be his the following season. The race began badly: first-lap contact sent him to the back, and a first victory seemed even less likely than it had before the start. But the unusual outer layout at Bahrain made a different kind of race possible, with short laps and constant traffic. Pérez had to recover before the leaders' misfortune could become relevant to him."
+          "Sergio Pérez pitted at the end of the first lap of the 2020 Sakhir Grand Prix. Contact at Turn 4 had sent his Racing Point to the back. His place in the team for the following year was already gone. As he began recovering, George Russell — substituting for Lewis Hamilton — was leading for Mercedes and chasing his own first win.",
+          "Then Mercedes' tyre mix-up forced Russell into another stop, and a later puncture ended his chance. Pérez did not need to cause those mistakes: he had already driven back into contention. He led the restart and won, with Esteban Ocon second and Lance Stroll third. His first victory came on his 190th start, after a race that seemed over almost before it began."
         ]
       },
       {
@@ -375,9 +376,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Гонка, що нібито вже закінчилася",
+        "heading": "Останній після першого кола — перший на фініші",
         "paragraphs": [
-          "Серхіо Перес приїхав на Гран-прі Сахіру 2020 року з невизначеним майбутнім у Формулі-1. Наступного сезону місце в Racing Point уже не мало належати йому. Початок гонки був невдалим: контакт на першому колі відкинув пілота назад, і перша перемога здавалася ще менш імовірною. Але незвична зовнішня конфігурація траси в Бахрейні створювала особливий ритм — короткі кола й постійний трафік. Пересу потрібно було повернутися в боротьбу ще до того, як проблеми лідерів могли принести йому користь."
+          "Наприкінці першого кола Гран-прі Сахіру 2020 року Серхіо Перес заїхав у бокси. Зіткнення в четвертому повороті відкинуло його Racing Point у кінець пелотону. Місце в команді на наступний сезон він уже втратив. Поки Перес повертав позиції, Джордж Расселл заміняв Льюїса Гамільтона в Mercedes, лідирував і наближався до власної першої перемоги.",
+          "А потім Mercedes переплутала комплекти шин, Расселлу довелося знову зупинятися, а пізніший прокол зруйнував його шанс. Перес не спричиняв проблем суперникам — він уже встиг повернутися в боротьбу. Після рестарту він утримав лідерство й переміг, Окон фінішував другим, Стролл — третім. Першу перемогу Перес здобув на 190-му старті, хоча після першого кола гонка здавалася втраченою."
         ]
       },
       {
@@ -409,9 +411,10 @@ export const editorialDraftArticles = {
   "kubica-bmw-2008": {
     "en": [
       {
-        "heading": "A win with more than one meaning",
+        "heading": "A red light changed Montreal",
         "paragraphs": [
-          "Robert Kubica's victory at the 2008 Canadian Grand Prix was BMW Sauber's first Formula 1 win. The result also placed him at the top of the drivers' championship standings at that moment. For a team competing against Ferrari and McLaren, it was more than a successful Sunday. It suggested that the established hierarchy could be challenged. A retrospective that begins with everything that later went wrong would miss the optimism of the moment. In June 2008, the achievement deserved to be understood on its own terms."
+          "At the 2008 Canadian Grand Prix, Robert Kubica and Kimi Räikkönen stopped alongside one another at the red light at the pit-lane exit. Lewis Hamilton approached from behind, failed to stop and struck Räikkönen's Ferrari. Both were out. Kubica escaped the collision — and BMW Sauber suddenly had an opening.",
+          "He converted that opportunity into victory. Teammate Nick Heidfeld finished second, sealing a BMW Sauber one-two, with David Coulthard third. Kubica also left Canada leading the drivers' championship. The rest of the season did not deliver a title, but Montreal was not a hypothetical success: two BMW Sauber cars really did finish at the front."
         ]
       },
       {
@@ -441,9 +444,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Перемога з кількома значеннями",
+        "heading": "Червоний сигнал у Монреалі",
         "paragraphs": [
-          "Перемога Роберта Кубіци на Гран-прі Канади 2008 року стала першою для BMW Sauber у Формулі-1. Вона також вивела пілота на перше місце в чемпіонаті на той момент. Для команди, яка змагалася з Ferrari та McLaren, це було більше, ніж успішна неділя. Результат показав, що звичний порядок сил можна порушити. Ретроспектива, яка починається з усіх пізніших невдач, втрачає оптимізм того моменту. У червні 2008 року це досягнення заслуговувало на власну історію."
+          "На Гран-прі Канади 2008 року Роберт Кубіца й Кімі Райкконен зупинилися поруч перед червоним сигналом на виїзді з пітлейну. Позаду наближався Льюїс Гамільтон. Він не встиг загальмувати й врізався у Ferrari Райкконена. Обоє зійшли, а Кубіца уникнув зіткнення. Перед BMW Sauber раптово відкрився шанс.",
+          "Кубіца ним скористався й переміг. Напарник Нік Гайдфельд фінішував другим, принісши BMW Sauber дубль, Девід Култгард став третім. Після Канади Кубіца ще й очолив чемпіонат. Сезон не завершився титулом, але Монреаль був цілком реальною перемогою: обидва боліди BMW Sauber фінішували попереду суперників."
         ]
       },
       {
@@ -475,9 +479,10 @@ export const editorialDraftArticles = {
   "schumacher-ferrari-1996-2000": {
     "en": [
       {
-        "heading": "A star is not a system",
+        "heading": "Seventeen years without a drivers' crown",
         "paragraphs": [
-          "Michael Schumacher arrived at Ferrari in 1996 as a two-time world champion. The team had history, resources and enormous expectations, but it did not have a recent drivers' title. It would be misleading to tell the next five years as a simple story in which one exceptional driver arrived and immediately fixed everything. A Formula 1 championship depends on car design, reliability, race operations, strategy and the ability to improve while rivals improve too. Schumacher mattered enormously; so did the organisation around him."
+          "When Michael Schumacher arrived at Ferrari in 1996, he was already a two-time world champion. Ferrari had not won the drivers' title since 1979. Its fans had waited seventeen years, and hiring a famous driver could not erase that history in a single race.",
+          "Schumacher did win three Grands Prix in his first Ferrari season — Spain, Belgium and Italy — but the title remained out of reach. Then came the confrontations of 1997 and 1998, and the injury that interrupted 1999. Only at Suzuka in 2000 did Ferrari finally win the drivers' championship again. We know how the story ended. For five seasons, nobody involved could be certain."
         ]
       },
       {
@@ -507,9 +512,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Зірка — ще не система",
+        "heading": "Сімнадцять років без титулу",
         "paragraphs": [
-          "Міхаель Шумахер прийшов до Ferrari в 1996 році дворазовим чемпіоном світу. Команда мала історію, ресурси й величезні очікування, але давно не вигравала особистий титул. Було б неправильно описувати наступні п'ять років як просту історію про геніального пілота, який прийшов і миттєво все виправив. Чемпіонство у Формулі-1 залежить від конструкції боліда, надійності, роботи під час гонки, стратегії та здатності розвиватися швидше за суперників. Внесок Шумахера був величезним. Так само важливою була організація навколо нього."
+          "Коли Міхаель Шумахер прийшов до Ferrari в 1996 році, він уже був дворазовим чемпіоном світу. А Ferrari не вигравала особистий титул із 1979-го. Уболівальники чекали сімнадцять років, і навіть прихід зірки не міг перекреслити це минуле за одну гонку.",
+          "Уже в першому сезоні за Ferrari Шумахер переміг в Іспанії, Бельгії та Італії. Але чемпіонство залишалося недосяжним. Далі були дуелі 1997-го й 1998-го, травма та пропущені гонки 1999-го. Лише в Сузуці 2000 року Ferrari нарешті повернула собі титул. Ми знаємо, чим закінчилася історія. Протягом п'яти сезонів її учасники не могли бути в цьому впевнені."
         ]
       },
       {
@@ -541,9 +547,10 @@ export const editorialDraftArticles = {
   "massa-2008": {
     "en": [
       {
-        "heading": "Act I — A narrow route to the title",
+        "heading": "Ten points for a win, four for fifth",
         "paragraphs": [
-          "The final round arrived at Interlagos with Hamilton on 94 points and Massa on 87. Under the scoring system used in 2008, victory brought ten points and fifth place brought four. If Massa won, Hamilton needed at least fifth to retain the championship lead. Those numbers made the race unusually legible even to a first-time viewer: one driver needed to win; the other needed to stay close enough. Massa had the advantage of pole position and home support, but he could not control where the McLaren finished."
+          "Felipe Massa arrived at his home Grand Prix in Brazil needing both the race of his life and help from the cars behind. Lewis Hamilton led the championship 94 points to 87. A win brought ten points in 2008; fifth place brought four. Even if Massa won, Hamilton could be champion simply by finishing fifth.",
+          "Massa started from pole. He would lead 64 of the 71 laps. But the title was being decided in two places at once: at the front, where the Ferrari had to win, and farther back, where the McLaren had to avoid finishing sixth. In the changing rain, the answer waited until the last corners."
         ]
       },
       {
@@ -569,9 +576,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Акт I — Вузький шлях до чемпіонства",
+        "heading": "Десять очок за перемогу, чотири — за п'яте",
         "paragraphs": [
-          "Перед фінальним етапом в Інтерлагосі Гамільтон мав 94 очки, Масса — 87. За тодішньою системою перемога приносила десять очок, а п’яте місце — чотири. Якщо Масса перемагав, Гамільтону було достатньо фінішувати щонайменше п’ятим. Навіть новачкові було легко стежити за інтригою: одному потрібна перемога, іншому — місце не нижче п’ятого. Масса здобув поул і мав підтримку трибун, але не міг керувати тим, на якій позиції фінішує McLaren."
+          "На домашній Гран-прі Бразилії Феліпе Масса приїхав із непростим завданням: виграти гонку й сподіватися на невдачу суперника. Льюїс Гамільтон випереджав його в чемпіонаті на сім очок — 94 проти 87. У 2008 році за перемогу давали десять очок, за п'яте місце — чотири. Навіть у разі перемоги Масси Гамільтону вистачало п'ятої позиції.",
+          "Масса стартував із поулу й загалом лідирував 64 із 71 кола. Але титул вирішували відразу у двох частинах траси: попереду Ferrari мала виграти, а позаду McLaren — не опуститися нижче п'ятого місця. Під мінливим дощем відповідь з'явилася лише в останніх поворотах."
         ]
       },
       {
@@ -599,10 +607,10 @@ export const editorialDraftArticles = {
   "brawn-2009": {
     "en": [
       {
-        "heading": "Act I — A future designed for a team that no longer existed",
+        "heading": "The car existed. The team almost didn't.",
         "paragraphs": [
-          "The surprise of Brawn GP is easier to understand if the story begins before its first race. Ross Brawn joined Honda in late 2007 and redirected the team's attention toward Formula 1's major aerodynamic regulation change for 2009. The previous season's results were disappointing; Honda finished ninth in the 2008 constructors' standings. But the factory was investing in a different future, developing a car for a reset that would alter wing dimensions and reduce the aerodynamic appendages teams had learned to depend on.",
-          "Then Honda announced its withdrawal at the end of 2008. That decision did not erase the design work already completed, but it put the entire programme in danger. The people who had spent months preparing the car suddenly faced the possibility that it would never race. The familiar fairytale summary — a tiny team appearing from nowhere — hides this crucial truth: the eventual champion was built on the technical investment of a large manufacturer and the work of its employees."
+          "Honda had invested heavily in its 2009 car before announcing its withdrawal from Formula 1 at the end of 2008. The machine was being prepared for new aerodynamic rules, but its manufacturer was leaving. There was no guarantee the car — or the people building it — would reach the next starting grid.",
+          "Ross Brawn and Nick Fry worked to save the operation. The car needed a Mercedes engine installed in place of the planned Honda unit. Then came Australia: Jenson Button took pole, Rubens Barrichello qualified second, and they finished in the same order. Brawn GP won with a one-two on its first appearance. It was astonishing, but not a car created from nothing. Much of the work had been done before anyone knew whether the team would survive."
         ]
       },
       {
@@ -635,10 +643,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Акт I — Майбутнє для команди, якої могло не бути",
+        "heading": "Болід був готовий. Команда могла зникнути.",
         "paragraphs": [
-          "Щоб зрозуміти феномен Brawn GP, варто почати задовго до її першого старту. Росс Браун прийшов до Honda наприкінці 2007 року й зосередив команду на масштабній зміні аеродинамічного регламенту 2009-го. Попередній сезон виявився невдалим: Honda посіла дев’яте місце серед конструкторів. Однак завод уже працював над іншою машиною — для нових правил, які змінювали розміри антикрил і обмежували численні аеродинамічні елементи.",
-          "Наприкінці 2008-го Honda оголосила про вихід із чемпіонату. Напрацьовані креслення й деталі нікуди не зникли, але весь проєкт опинився під загрозою. Люди, які місяцями готували машину, більше не знали, чи побачить вона стартову решітку. У популярній версії цієї історії маленька команда ніби виникає з нічого. Насправді майбутній чемпіон спирався на великі інвестиції виробника та працю його співробітників."
+          "Honda вклала великі ресурси в машину для сезону 2009 року, а наприкінці 2008-го оголосила про вихід із Формули-1. Болід готували під новий аеродинамічний регламент, але виробник залишав чемпіонат. Ніхто не міг гарантувати, що машину взагалі побачать на старті, а люди, які її будували, збережуть роботу.",
+          "Росс Браун і Нік Фрай взялися рятувати команду. Замість запланованого двигуна Honda довелося встановлювати Mercedes. І ось Австралія: Дженсон Баттон бере поул, Рубенс Баррікелло кваліфікується другим, а фінішують вони в тому самому порядку. Brawn GP відразу здобула дубль. Це було приголомшливо, але не диво з нічого: робота тривала задовго до того, як стало зрозуміло, чи команда виживе."
         ]
       },
       {
