@@ -31,3 +31,17 @@ test('Monaco research separates numbered corners from their shared names and has
     }
   }
 });
+
+test('Spa includes five independently sourced bilingual historical race narratives',()=>{
+ const spa=read(dir+'spa-turns-v1.json');
+ assert.equal(spa.moments.length,5);
+ assert.deepEqual(spa.moments.map(x=>x.year),[1992,1998,2000,2008,2022]);
+ for(const item of spa.moments){
+   assert.equal(item.publication,'research_only');
+   assert.ok(item.sources?.length);
+   for(const locale of ['en','uk']){
+     assert.ok(item.title[locale]?.length>5);
+     assert.ok(item.narrative[locale]?.trim().split(/\s+/).length>=35,item.id+'/'+locale);
+   }
+ }
+});
