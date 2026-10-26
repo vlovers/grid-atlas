@@ -1,6 +1,6 @@
 # Editorial verification policy (v0.1)
 
-Grid Atlas is an evidence-led historical encyclopedia. Imported F1DB records provide structured statistical observations, **not** automatically verified narrative biographies. Generative models may draft or suggest sources but cannot approve claims or publish articles.
+Grid Atlas is an evidence-led historical encyclopedia. Imported F1DB records provide structured statistical observations, **not** automatically verified narrative biographies. Generative models may draft or suggest sources but cannot approve claims in the existing human-approved driver-biography database publication lane. A separate, explicitly labeled AI-reviewed static-story lane is defined below; it must not create human approvals or bypass any evidence, rights, or deployment checks.
 
 ## Publication gates
 
@@ -60,3 +60,18 @@ The example is a contract illustration, **not** a verified factual claim. Avoid 
 - Wikidata: https://www.wikidata.org/ — candidate identity reconciliation, not standalone corroboration for disputed history.
 
 This policy does not authorize scraping, bulk image downloads or copying copyrighted biographies. Write original summaries from reviewed evidence.
+
+## Separate AI-reviewed static history stories (not driver biographies)
+
+The `/[locale]/stories/moments/[slug]` route renders authored, bilingual, source-traceable static stories. It **does not** publish through the driver-dossier database approval pipeline. The user's requested label for a released edition is `AI-reviewed`; it must describe AI verification truthfully, not an independent human reviewer.
+
+A static story may be promoted from draft to published AI-reviewed **only after** all the following independent, reproducible gates are satisfied:
+
+1. **Exact edition scope:** record the story slug, the final English and Ukrainian text revisions or content hashes, and the approved source-ledger revision. Any later material edit revokes this specific edition's approval.
+2. **Claim evidence:** inspect every substantive claim appearing in both final texts, not just a representative five-item ledger. Retain stable citations and source locators, classify interpretation and uncertainty visibly, and correct or remove unsupported claims. A source URL alone is not a check.
+3. **Bilingual editing:** check full factual parity, names, era-appropriate terminology, clarity, and internal links for both locales. Record the AI review method and actual review revision, never a fictional human identity.
+4. **Rights and media:** use only independently rights-cleared assets in the publication manifest; generated or code-drawn artwork must be labeled appropriately. No photograph is required for a text-first release.
+5. **Reader and build acceptance:** check the actual static reading route, mobile and keyboard navigation, route metadata, archives and references, and all required CI at the final head SHA. Publish only explicitly approved story slugs, leaving all others `noindex` with a truthful draft label.
+6. **Corrections:** provide references and a correction path. Remove the published status if factual or provenance integrity fails; preserve the superseded edition in the audit record.
+
+The existing **human-approved** driver biography rules and their database signatures stay unchanged. Never inject an AI identity into a human-review field, make `reviewerSignoff` true without a real human signature, or call a five-claim research ledger a full manuscript audit. This section defines the separate eligibility contract; it does not itself approve or publish the ten existing drafts.
