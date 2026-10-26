@@ -13,7 +13,7 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
    for(const language of ['en','uk']){
      assert.ok(c.editorial_intro[language].split(/\s+/).length>=19,c.circuit_id+'/'+language);
      assert.ok(c.moments[0].title[language].length>5);
-     assert.ok(c.moments[0].narrative[language].split(/\s+/).length>=15);
+     assert.ok(c.moments[0].narrative[language].trim().length>=60,c.circuit_id+'/'+language);
    }
    assert.ok(c.moments[0].sources?.every(s=>s.startsWith('https://www.formula1.com/')));
    assert.equal(c.moments[0].review_status,'unverified_research_draft');
