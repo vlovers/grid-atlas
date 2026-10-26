@@ -518,3 +518,6 @@
 .editorialReadingPaths .editorialReadingPrimary{padding:.7rem 1.15rem;background:var(--accent-ink);color:var(--surface);text-decoration:none}
 .editorialReadingPaths a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 @media(max-width:560px){.editorialReadingPaths{gap:.35rem 1rem}.editorialReadingPaths .editorialReadingPrimary{width:100%;justify-content:center}}
+
+/* Compact, visible editorial review provenance label. */
+.aiReviewedLabel{align-self:flex-start;display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:.3rem .65rem;margin:.25rem 0 .75rem;border:1px solid var(--accent-ink);color:var(--accent-ink);font-size:.78rem;font-weight:700;line-height:1.4;letter-spacing:.02em}
