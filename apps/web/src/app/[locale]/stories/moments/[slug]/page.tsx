@@ -15,6 +15,7 @@ import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
+import { editorialReadingWaypoints } from '@/components/stories/editorial-reading-waypoints';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -111,6 +112,16 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ol>
         <p className={styles.note}>{uk ? "Це редакційний маршрут, а не перевірена покрокова хронологія гонки." : "This is an editorial reading path, not a verified lap-by-lap race timeline."}</p>
+      </section>}
+      {chapters && slug in editorialReadingWaypoints && <section aria-labelledby="reading-waypoints" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
+        <p className={styles.eyebrow}>{uk ? 'П’ЯТЬ ТЕМ ДЛЯ ЧИТАННЯ' : 'FIVE THREADS TO FOLLOW'}</p>
+        <h2 id="reading-waypoints">{uk ? 'З чого почати' : 'Choose a thread'}</h2>
+        <nav aria-label={uk ? 'Теми статті' : 'Story reading threads'} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 175px), 1fr))', gap: 12 }}>
+          {editorialReadingWaypoints[slug as keyof typeof editorialReadingWaypoints].filter(point => point.chapter <= chapters.length).map((point, index) => <a key={point.chapter} href={`#chapter-${point.chapter}`} style={{ padding: 18, border: '1px solid var(--line)', textDecoration: 'none', minHeight: 96 }}>
+            <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')}</span>
+            <strong style={{ display: 'block', marginTop: 8 }}>{point[locale]} ↗</strong>
+          </a>)}
+        </nav>
       </section>}
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
