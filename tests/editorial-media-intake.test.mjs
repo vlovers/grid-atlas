@@ -19,7 +19,9 @@ test('editorial workflow cannot automatically publish review-only images', () =>
   const workflow = read('.github/workflows/editorial-photo-intake.yml');
   assert.match(workflow, /Upload private review package/);
   assert.doesNotMatch(workflow, /git add apps\/web\/public\/media/);
-  assert.doesNotMatch(workflow, /git push origin HEAD:editorial/);
+  // Push is allowed only for quarantining tracked public files, never for publishing candidates.
+  assert.match(workflow, /git rm -- "\$file"/);
+  assert.match(workflow, /git push origin HEAD:editorial\/people-who-changed-f1-20261025/);
   assert.match(workflow, /Remove accidentally published unreviewed media/);
 });
 
@@ -28,4 +30,8 @@ test('story photos remain gated until the canonical registry approves them', () 
   const registry = JSON.parse(read('apps/web/src/components/media/publication.json'));
   assert.deepEqual(registry.assets, []);
   assert.match(photos, /editorialPhotos: Partial<Record<string, EditorialPhoto>> = \{\}/);
+  assert.match(photos, /publication\.assets/);
+  assert.match(photos, /asset\.status === 'verified'/);
+  assert.match(photos, /asset\.review\?\.actor === 'human'/);
+  assert.match(photos, /asset\.delivery\.local_path === photo\.src/);
 });
