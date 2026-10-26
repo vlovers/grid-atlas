@@ -95,7 +95,7 @@ export const editorialDraftArticles = {
       {
         "heading": "An advantage with a price",
         "paragraphs": [
-          "The 1988 McLaren made rivals look distant. Senna and Prost took fifteen wins between them in sixteen races; from inside the team, however, domination did not feel like an end to the contest. Every weekend offered each driver a benchmark in identical machinery. Winning for McLaren could still mean losing to the person in the other McLaren.",
+          "In 1989 the same garage became a more difficult place to share. The title fight continued through the season and arrived at Suzuka with Prost ahead in the standings. What had been a story of two drivers dominating the field in 1988 was now a contest in which a collision between teammates could decide the championship.",
           "Their final points made the tension stranger. Prost accumulated more across the whole season, but the rules counted only the best eleven results. Senna emerged champion on counted points. That distinction set the scene for 1989: these were not merely two fast teammates sharing a successful car, but rivals with a fresh championship to fight over and memories of how the previous one had been settled.",
           "The extraordinary McLaren season had a paradox hidden in plain sight. Prost accumulated 105 points across his 1988 finishes, while Senna accumulated 94, but the championship counted only each driver's best eleven results. Senna's counted total was 90 and Prost's 87. Without that rule, a glance at the full totals tells the wrong story about who was officially champion. In 1989, Suzuka produced a different split between what spectators watched and what the record would ultimately say: Senna finished first on the road after repairs, but Alessandro Nannini became the official winner after the disqualification."
         ]
@@ -132,7 +132,7 @@ export const editorialDraftArticles = {
       {
         "heading": "Перевага, за яку довелося боротися",
         "paragraphs": [
-          "McLaren 1988 року залишав суперників далеко позаду. Сенна й Прост разом виграли п'ятнадцять із шістнадцяти гонок. Та всередині команди домінування не означало спокою: щовихідних кожен мав суперника за кермом такої самої машини. Перемога McLaren усе ще могла означати особисту поразку від іншого пілота McLaren.",
+          "У 1989 році ділити один гараж стало ще складніше. Боротьба за титул тривала весь сезон і приїхала до Сузуки, коли Прост випереджав Сенну в чемпіонаті. Якщо 1988-й був історією двох пілотів, які домінували над суперниками, то тепер навіть зіткнення напарників могло вирішити долю чемпіонства.",
           "Підсумкові очки зробили протистояння ще гострішим. Прост набрав більше за всі гонки, але до заліку брали лише одинадцять найкращих результатів. Чемпіоном за цими правилами став Сенна. Так вони підійшли до 1989 року: не просто швидкі напарники, а суперники, для яких попередній сезон залишив чимало приводів продовжувати боротьбу.",
           "Неймовірний сезон McLaren мав парадокс, який легко пропустити. Прост набрав 105 очок за всі результати 1988 року, Сенна — 94, але до чемпіонату зараховували лише одинадцять найкращих фінішів кожного. Тому офіційно Сенна мав 90 залікових очок, а Прост — 87. Без знання цього правила повна сума дає хибне уявлення про чемпіона. У 1989-му Сузука створила іншу розбіжність між побаченим і записаним: Сенна після ремонту першим дістався фінішу на трасі, але офіційним переможцем після дискваліфікації став Алессандро Нанніні."
         ]
@@ -179,7 +179,7 @@ export const editorialDraftArticles = {
       {
         "heading": "Two battles in one French Grand Prix",
         "paragraphs": [
-          "The duel for second was spectacular precisely because it did not need to decide the winner. Jabouille had already built the lead that would deliver Renault its first Formula 1 victory. Villeneuve and Arnoux could race each other with the reward and risk of second place still unresolved.",
+          "The duel for second did not decide who won, but it almost defined what spectators remembered. Villeneuve had led the early part of the race before Jabouille passed him; in the closing laps Arnoux challenged the Ferrari, and the two traded places and touched wheels as the tyres wore down.",
           "When the cars crossed the line, Villeneuve had kept that place ahead of Arnoux. It was a Ferrari between two Renaults, a finish that refused to fit a simple story of total dominance. The manufacturer had achieved the breakthrough it needed; the crowd had also seen a fierce contest that its winning car was never part of."
         ]
       },
@@ -216,7 +216,7 @@ export const editorialDraftArticles = {
       {
         "heading": "Дві боротьби в одному Гран-прі Франції",
         "paragraphs": [
-          "Дуель за друге місце була неймовірною саме тому, що не вирішувала долю перемоги. Жабуй уже створив перевагу, яка мала принести Renault першу перемогу у Формулі-1. Вільньов та Арну могли боротися між собою, коли нагорода й ризик другого місця ще залишалися відкритими.",
+          "Дуель за друге місце не визначала переможця, але саме вона стала головним спогадом багатьох глядачів. Вільньов лідирував на початку гонки, доки його не випередив Жабуй. На останніх колах Арну наздогнав Ferrari, і суперники мінялися місцями та торкалися колесами, коли шини вже втрачали зчеплення.",
           "На фініші Вільньов утримав другу позицію перед Арну. Ferrari між двома Renault не вписувалася в просту історію повного домінування. Виробник здобув свій прорив, а глядачі побачили запекле протистояння, у якому машина-переможець навіть не брала участі."
         ]
       },
