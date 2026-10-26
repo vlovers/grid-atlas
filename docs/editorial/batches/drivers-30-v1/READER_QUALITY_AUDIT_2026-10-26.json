@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "scope": "Twenty-five research story subjects and ten separately canonical longform biographies; five priority drivers lack this short-story format",
+  "result": "not_publication_ready",
+  "measure": "Whitespace-token estimates; not independent fact-check, not published-article counts",
+  "reader_quality_bands": {
+    "thin": "under 250 English words (short research card only)",
+    "developing": "250–399 English words (short research card only)",
+    "substantive_research": "400+ English words (short research card only; not publication-ready)"
+  },
+  "stories": [
+    {
+      "driver_id": "emerson-fittipaldi",
+      "canonical_longform_exists": true,
+      "research_chapters": 3,
+      "en_words": 251,
+      "uk_words": 209,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "graham-hill",
+      "canonical_longform_exists": true,
+      "research_chapters": 3,
+      "en_words": 259,
+      "uk_words": 238,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "alberto-ascari",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 494,
+      "uk_words": 424,
+      "unapproved": true,
+      "editorial_depth": "substantive_research",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "mario-andretti",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 497,
+      "uk_words": 409,
+      "unapproved": true,
+      "editorial_depth": "substantive_research",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "keke-rosberg",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 310,
+      "uk_words": 271,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "damon-hill",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 534,
+      "uk_words": 454,
+      "unapproved": true,
+      "editorial_depth": "substantive_research",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "canonical_longform_exists": true,
+      "research_chapters": 4,
+      "en_words": 310,
+      "uk_words": 294,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "charles-leclerc",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 342,
+      "uk_words": 279,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "canonical_longform_exists": true,
+      "research_chapters": 2,
+      "en_words": 55,
+      "uk_words": 47,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 385,
+      "uk_words": 341,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "kimi-raikkonen",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 285,
+      "uk_words": 253,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "niki-lauda",
+      "canonical_longform_exists": true,
+      "research_chapters": 3,
+      "en_words": 297,
+      "uk_words": 267,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "canonical_longform_exists": true,
+      "research_chapters": 2,
+      "en_words": 48,
+      "uk_words": 44,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "jim-clark",
+      "canonical_longform_exists": true,
+      "research_chapters": 3,
+      "en_words": 79,
+      "uk_words": 76,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "nelson-piquet",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 363,
+      "uk_words": 320,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "canonical_longform_exists": true,
+      "research_chapters": 2,
+      "en_words": 207,
+      "uk_words": 194,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "canonical_longform_exists": true,
+      "research_chapters": 3,
+      "en_words": 79,
+      "uk_words": 69,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "jenson-button",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 384,
+      "uk_words": 323,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "nico-rosberg",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 271,
+      "uk_words": 232,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "jack-brabham",
+      "canonical_longform_exists": true,
+      "research_chapters": 2,
+      "en_words": 56,
+      "uk_words": 54,
+      "unapproved": true,
+      "editorial_depth": "thin",
+      "publication": "unpublished",
+      "interpretation": "noncanonical_research_card_use_batch2_longform"
+    },
+    {
+      "driver_id": "nino-farina",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 254,
+      "uk_words": 207,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "jochen-rindt",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 263,
+      "uk_words": 222,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "alan-jones",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 268,
+      "uk_words": 230,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "jacques-villeneuve",
+      "canonical_longform_exists": false,
+      "research_chapters": 2,
+      "en_words": 254,
+      "uk_words": 224,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    },
+    {
+      "driver_id": "lando-norris",
+      "canonical_longform_exists": false,
+      "research_chapters": 3,
+      "en_words": 336,
+      "uk_words": 284,
+      "unapproved": true,
+      "editorial_depth": "developing",
+      "publication": "unpublished",
+      "interpretation": "needs_full_length_biography"
+    }
+  ],
+  "blocking_review": [
+    "Human historical fact and race classification verification against F1DB and official documents",
+    "English and Ukrainian style editing; no repeated generic moral takeaways",
+    "Exact claim-to-chapter mapping and source URL resolution, beyond merely existing URL",
+    "Proofread longform dossiers separately rather than mislabel 55-word short card as a biography",
+    "Operator's exact revision approval under established release rules"
+  ],
+  "reconciliation_note": "Short-story word counts do not measure canonical long-form dossier completeness. Ten identities have separate EN/UK batch-2 long-form manuscripts, including every thin short-story entry. Evaluate those in their own long-form files. The remaining 15 short-story identities have no batch-2 long-form dossier; five additional priority drivers do not occur in the short-story collection.",
+  "candidate_without_longform_summary": {
+    "count": 15,
+    "below_250": 0,
+    "words_250_to_399": 12,
+    "words_400_plus": 3
+  }
+}

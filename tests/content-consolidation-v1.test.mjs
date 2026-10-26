@@ -1,0 +1,159 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const read = path => JSON.parse(readFileSync(path, 'utf8'));
+
+test('consolidation inventory preserves all research without treating it as publication', () => {
+  const report = read('docs/editorial/CONTENT_CONSOLIDATION_V1_2026-10-26.json');
+  const driverManifest = read('docs/editorial/batches/drivers-30-v1.json');
+  const chapters = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  const longform = read('docs/editorial/biography-expansion-batch-2/manifest.json');
+  const constructorManifest = read('docs/editorial/constructors/batch-01-founders/manifest.json');
+  assert.equal(report.drivers.length, 30);
+  assert.deepEqual(report.drivers.map(row => row.driver_id), driverManifest.drivers.map(row => row.driver_id));
+  assert.equal(new Set(report.drivers.map(row => row.driver_id)).size, 30);
+  assert.equal(report.drivers.filter(row => row.track === 'longform_277_canonical').length, 10);
+  assert.equal(report.drivers.filter(row => row.track === 'research_274_only').length, 20);
+  assert.equal(report.drivers.reduce((total, row) => total + row.research_chapters, 0),
+    chapters.stories.reduce((total, row) => total + row.chapters.length, 0));
+  for (const row of report.drivers) {
+    assert.equal(row.track === 'longform_277_canonical', longform.drivers.includes(row.driver_id));
+    assert.equal(row.publication, 'unpublished');
+    assert.deepEqual(row.required_locales, ['en', 'uk']);
+  }
+  assert.deepEqual(report.constructors.map(row => row.name), constructorManifest.subjects.map(row => row.name));
+  for (const team of report.constructors) assert.equal(team.publication, 'blocked');
+});
+
+test('fifteen distinct research-only careers have readable bilingual entry scenes', () => {
+  const chapters = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  const bio = read('docs/editorial/biography-expansion-batch-2/manifest.json');
+  let count = 0;
+  for (const story of chapters.stories) {
+    if (bio.drivers.includes(story.driver_id)) continue; // long-form canonical source takes precedence
+    count++;
+    const lead = story.chapters[0];
+    for (const locale of ['en', 'uk']) {
+      const [hook, ...body] = lead[locale].body.split(/\n\n/);
+      assert.ok(hook.length >= 65, story.driver_id + '/' + locale + ' must have meaningful opening');
+      assert.ok(body.join(' ').length >= 100, story.driver_id + '/' + locale + ' must preserve sourced research');
+      assert.ok(!/^(In |У |Уже |The )?\d{4}\b/.test(hook), story.driver_id + '/' + locale + ' should open with a scene, not an encyclopedia year');
+    }
+    assert.ok(lead.claim_ids.length, story.driver_id + ' must retain source claim linkage');
+  }
+  assert.equal(count, 15);
+  assert.equal(chapters.publication_status, 'unpublished');
+});
+
+test('fifteen independent careers have bilingual middle-act context and preserved research status', () => {
+  const chapters = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  const longform = new Set(read('docs/editorial/biography-expansion-batch-2/manifest.json').drivers);
+  const independent = chapters.stories.filter(story => !longform.has(story.driver_id));
+  assert.equal(independent.length, 15);
+  for (const story of independent) {
+    assert.ok(story.chapters.length >= 2, story.driver_id + ' lacks a middle act');
+    const middle = story.chapters[1];
+    for (const locale of ['en', 'uk']) {
+      const paragraphs = middle[locale].body.split(/\n\n/).filter(Boolean);
+      assert.ok(paragraphs.length >= 2, story.driver_id + '/' + locale + ' needs distinct context');
+      assert.ok(paragraphs.at(-1).length >= 200, story.driver_id + '/' + locale + ' needs substantial context');
+    }
+    assert.ok(middle.claim_ids.length, story.driver_id + ' loses research linkage');
+  }
+  assert.equal(chapters.publication_status, 'unpublished');
+});
+
+test('every thin biography has two concrete historical research scenes rather than filler', () => {
+  const queue = read('docs/editorial/batches/drivers-30-v1/SUBSTANTIVE_SCENE_GAPS_2026-10-26.json');
+  const manuscripts = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  assert.equal(queue.items.length, 15);
+  assert.equal(new Set(queue.items.map(item => item.driver_id)).size, 15);
+  for (const item of queue.items) {
+    const story = manuscripts.stories.find(s => s.driver_id === item.driver_id);
+    assert.ok(story, item.driver_id);
+    assert.equal(item.missing_evidence_scenes.length, 2);
+    assert.ok(item.missing_evidence_scenes.every(s => s.length > 40));
+    assert.deepEqual(item.existing_claim_ids, [...new Set(story.chapters.flatMap(c => c.claim_ids))]);
+    assert.equal(item.human_fact_review, 'pending');
+    assert.equal(item.publication, 'unpublished');
+  }
+});
+
+test('new detailed race scenes cite exact sources and retain human review gate', () => {
+  const ledger = read('docs/editorial/batches/drivers-30-v1/SOURCE_CHECKED_SCENES_2026-10-26.json');
+  const manuscripts = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  assert.equal(ledger.scenes.length, 15);
+  for (const entry of ledger.scenes) {
+    assert.ok(entry.source_urls.length >= 2);
+    for (const url of entry.source_urls) assert.match(url, /^https:\/\//);
+    assert.equal(entry.status, 'ai_source_checked_human_review_pending');
+    const story = manuscripts.stories.find(s => s.driver_id === entry.driver_id);
+    assert.ok(story && story.chapters.length >= 2);
+    const linkedChapter = story.chapters.find(chapter => chapter.chapter_id === entry.chapter_id);
+    assert.ok(linkedChapter, entry.driver_id + ': source ledger references a nonexistent chapter');
+    assert.equal(linkedChapter, story.chapters[1], entry.driver_id + ': detailed sourced scene must match expanded middle chapter');
+    for (const locale of ['en', 'uk']) {
+      assert.ok(linkedChapter[locale].body.trim().length > 80, entry.driver_id + '/' + locale + ' has empty or placeholder chapter');
+    }
+  }
+  assert.equal(ledger.publication, 'unpublished');
+});
+
+test('reader-quality audit reflects actual bilingual content and does not assert publication', () => {
+  const audit = read('docs/editorial/batches/drivers-30-v1/READER_QUALITY_AUDIT_2026-10-26.json');
+  const stories = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json').stories;
+  assert.equal(audit.result, 'not_publication_ready');
+  assert.equal(audit.stories.length, stories.length);
+  for (const row of audit.stories) {
+    const story = stories.find(item => item.driver_id === row.driver_id);
+    assert.ok(story);
+    assert.equal(row.en_words, story.chapters.reduce((total, ch) => total + ch.en.body.split(/\s+/).length, 0));
+    assert.equal(row.uk_words, story.chapters.reduce((total, ch) => total + ch.uk.body.split(/\s+/).length, 0));
+    assert.equal(row.research_chapters, story.chapters.length);
+    assert.equal(row.publication, 'unpublished');
+    assert.equal(row.editorial_depth, row.en_words < 250 ? 'thin' : row.en_words < 400 ? 'developing' : 'substantive_research');
+  }
+});
+
+test('thin research cards never override ten separate canonical longform dossiers', () => {
+  const audit = read('docs/editorial/batches/drivers-30-v1/READER_QUALITY_AUDIT_2026-10-26.json');
+  const longforms = new Set(read('docs/editorial/biography-expansion-batch-2/manifest.json').drivers);
+  const index = read('docs/editorial/batches/drivers-30-v1.json').drivers;
+  assert.equal(longforms.size, 10);
+  assert.equal(audit.stories.length, 25);
+  assert.equal(index.length, 30);
+  assert.equal(audit.stories.filter(row => row.canonical_longform_exists).length, 10);
+  const distinct = audit.stories.filter(row => !row.canonical_longform_exists);
+  assert.equal(distinct.length, 15);
+  assert.equal(index.filter(row => !audit.stories.some(s => s.driver_id === row.driver_id)).length, 5);
+  for (const row of audit.stories) {
+    assert.equal(row.canonical_longform_exists, longforms.has(row.driver_id));
+    assert.equal(row.interpretation, row.canonical_longform_exists ? 'noncanonical_research_card_use_batch2_longform' : 'needs_full_length_biography');
+    if (row.editorial_depth === 'thin') assert.equal(row.canonical_longform_exists, true);
+  }
+  assert.deepEqual(audit.candidate_without_longform_summary, {
+    count: distinct.length,
+    below_250: distinct.filter(row => row.en_words < 250).length,
+    words_250_to_399: distinct.filter(row => row.en_words >= 250 && row.en_words < 400).length,
+    words_400_plus: distinct.filter(row => row.en_words >= 400).length
+  });
+});
+
+test('all five missing short-story identities resolve to existing bilingual dossiers, not duplicates', () => {
+  const index = read('docs/editorial/batches/drivers-30-v1.json').drivers;
+  const short = new Set(read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json').stories.map(x => x.driver_id));
+  const source = read('docs/editorial/releases/v1/manifest.json').drivers;
+  const five = read('docs/editorial/batches/drivers-30-v1/FIVE_EXISTING_DOSSIERS_2026-10-26.json');
+  assert.equal(five.entries.length, 5);
+  const missing = index.map(x => x.driver_id).filter(id => !short.has(id)).sort();
+  assert.deepEqual(five.entries.map(x => x.driver_id).sort(), missing);
+  for (const entry of five.entries) {
+    const canonical = source.find(x => x.driver_id === entry.driver_id);
+    assert.ok(canonical);
+    assert.equal(entry.publication, 'unpublished');
+    for (const locale of ['en', 'uk']) {
+      assert.equal(entry.locales[locale].dossier, canonical.locales[locale].dossier);
+      assert.equal(entry.locales[locale].review, canonical.locales[locale].review);
+    }
+  }
+});

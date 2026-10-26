@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "baseline": "main after merged PRs #274 #277 #289",
+  "source_files": [
+    "docs/editorial/batches/drivers-30-v1.json",
+    "docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json",
+    "docs/editorial/batches/drivers-30-v1/biography-batch2-claim-crosswalk.json",
+    "docs/editorial/biography-expansion-batch-2/manifest.json",
+    "docs/editorial/constructors/batch-01-founders/manifest.json"
+  ],
+  "driver_counts": {
+    "manifest": 30,
+    "with_short_chapters": 25,
+    "longform_canonical": 10,
+    "only_274": 20
+  },
+  "drivers": [
+    {
+      "driver_id": "ayrton-senna",
+      "track": "research_274_only",
+      "research_chapters": 0,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alain-prost",
+      "track": "research_274_only",
+      "research_chapters": 0,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "track": "research_274_only",
+      "research_chapters": 0,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "track": "research_274_only",
+      "research_chapters": 0,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "max-verstappen",
+      "track": "research_274_only",
+      "research_chapters": 0,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "sebastian-vettel",
+      "track": "longform_277_canonical",
+      "research_chapters": 2,
+      "crosswalk_candidates": 4,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "kimi-raikkonen",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "niki-lauda",
+      "track": "longform_277_canonical",
+      "research_chapters": 3,
+      "crosswalk_candidates": 6,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "juan-manuel-fangio",
+      "track": "longform_277_canonical",
+      "research_chapters": 2,
+      "crosswalk_candidates": 3,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jim-clark",
+      "track": "longform_277_canonical",
+      "research_chapters": 3,
+      "crosswalk_candidates": 6,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jackie-stewart",
+      "track": "longform_277_canonical",
+      "research_chapters": 4,
+      "crosswalk_candidates": 8,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nelson-piquet",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nigel-mansell",
+      "track": "longform_277_canonical",
+      "research_chapters": 2,
+      "crosswalk_candidates": 2,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "mika-hakkinen",
+      "track": "longform_277_canonical",
+      "research_chapters": 3,
+      "crosswalk_candidates": 4,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jenson-button",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nico-rosberg",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "graham-hill",
+      "track": "longform_277_canonical",
+      "research_chapters": 3,
+      "crosswalk_candidates": 5,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "emerson-fittipaldi",
+      "track": "longform_277_canonical",
+      "research_chapters": 3,
+      "crosswalk_candidates": 4,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jack-brabham",
+      "track": "longform_277_canonical",
+      "research_chapters": 2,
+      "crosswalk_candidates": 3,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alberto-ascari",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "nino-farina",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jochen-rindt",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "mario-andretti",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "alan-jones",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "keke-rosberg",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "damon-hill",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "jacques-villeneuve",
+      "track": "research_274_only",
+      "research_chapters": 2,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "charles-leclerc",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    },
+    {
+      "driver_id": "lando-norris",
+      "track": "research_274_only",
+      "research_chapters": 3,
+      "crosswalk_candidates": 0,
+      "publication": "unpublished",
+      "required_locales": [
+        "en",
+        "uk"
+      ]
+    }
+  ],
+  "constructors": [
+    {
+      "name": "Ferrari",
+      "archive_id": "ferrari",
+      "identity_status": "pinned_manifest_recorded_not_rechecked",
+      "publication": "blocked",
+      "next_gate": "source_and_language_claim_review"
+    },
+    {
+      "name": "McLaren",
+      "archive_id": "mclaren",
+      "identity_status": "pinned_manifest_recorded_not_rechecked",
+      "publication": "blocked",
+      "next_gate": "source_and_language_claim_review"
+    },
+    {
+      "name": "Williams",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Team Lotus",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Brabham",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Tyrrell",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Benetton",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Renault",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Mercedes",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Red Bull Racing",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Minardi",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    },
+    {
+      "name": "Jordan",
+      "archive_id": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "publication": "blocked",
+      "next_gate": "pinned_archive_identity_editorial_verification"
+    }
+  ],
+  "publication_rule": "Research inventory only; not an article release, verified historical fact set, or independent human approval."
+}
