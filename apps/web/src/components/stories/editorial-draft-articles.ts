@@ -16,9 +16,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Fuji: Hunt still had to finish",
+        "heading": "From Monza to the final round",
         "paragraphs": [
-          "Lauda withdrew from the rain-soaked Japanese Grand Prix at Fuji, judging the conditions too dangerous. The race went on without him. Hunt did not inherit the championship at that moment: he still had to finish high enough to win it on points. After difficulties late in the race, he crossed the line third. That result gave him 69 championship points to Lauda's 68. The final margin was tiny, but the two drivers had faced different decisions: Lauda whether to continue racing, Hunt how to bring his car home."
+          "Lauda returned at Monza after missing the Austrian and Dutch Grands Prix following his Nürburgring accident. Hunt kept adding points during the closing races, and by the time the championship reached Japan neither driver could afford to treat the final round as a formality. Fuji's rain made the stakes more severe. Lauda's decision to stop removed his Ferrari from the contest, but Hunt still had a race to survive. It was possible for the champion to be decided by a problem with one tyre as readily as by a pass for position."
         ]
       },
       {
@@ -49,9 +49,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Фудзі: Ганту ще потрібно було фінішувати",
+        "heading": "Від Монци до останнього етапу",
         "paragraphs": [
-          "Під час дощового Гран-прі Японії на Фудзі Лауда зійшов із дистанції: він вважав умови надто небезпечними. Гонка тривала без нього. Та Гант не став чемпіоном автоматично — йому ще треба було фінішувати достатньо високо. Після складного завершення дистанції британець перетнув фініш третім. Так він набрав 69 очок проти 68 у Лауди. Різниця виявилася мінімальною, але рішення пілоти ухвалювали різні: Лауда — чи продовжувати гонку, Гант — як довести свій болід до фінішу."
+          "Після аварії на Нюрбургринзі Лауда пропустив Гран-прі Австрії та Нідерландів, а в Монці повернувся до перегонів. Гант тим часом продовжував набирати очки, і перед останнім етапом у Японії жоден не міг вважати титул вирішеним. Дощ на Фудзі додав небезпеки. Лауда вирішив зупинитися, та Ганту ще належало пройти дистанцію. У такому фіналі долю чемпіонства могла змінити не лише боротьба колесо в колесо, а й проблема з однією шиною."
         ]
       },
       {
@@ -84,9 +84,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Suzuka changes the argument",
+        "heading": "One chicane, two different endings",
         "paragraphs": [
-          "By 1989 the partnership had deteriorated, and the Japanese Grand Prix at Suzuka became the decisive controversy. Senna and Prost collided at the chicane. Prost retired, while Senna continued and reached the finish first on the road. The stewards disqualified Senna for the manner in which he rejoined the course after the collision, and Prost secured the championship. The distinction between a collision, a driver's actions afterward and a formal sporting decision is essential. Calling it simply a crash that gave Prost the title skips the regulatory mechanism through which the result was decided."
+          "Suzuka in 1989 produced two versions of the finish. Prost's McLaren stopped after the collision with Senna at the chicane. Senna was helped back onto the circuit, continued and reached the flag ahead of the field. But the stewards disqualified him, and the classified win went to Alessandro Nannini. That is why a photograph of the first car crossing the line cannot stand in for the official race result. The sporting decision also secured Prost the drivers' title, bringing the team-mates' second season together to a bitter conclusion."
         ]
       },
       {
@@ -117,9 +117,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Сузука змінює суперечку",
+        "heading": "Одна шикана — два різні фінали",
         "paragraphs": [
-          "До 1989 року стосунки напарників погіршилися, а Гран-прі Японії в Сузуці став центром великого скандалу. Сенна й Прост зіткнулися в шикані. Прост зійшов, а Сенна продовжив гонку й першим перетнув фінішну лінію. Стюарди дискваліфікували його через спосіб повернення на трасу після інциденту, і титул дістався Просту. Важливо розрізняти саме зіткнення, подальші дії пілота та офіційне спортивне рішення. Фраза «аварія принесла Просту чемпіонство» пропускає регламентну процедуру, яка визначила результат."
+          "У Сузуці 1989 року після зіткнення в шикані McLaren Проста залишився на місці. Сенні допомогли повернутися на трасу, він продовжив гонку й першим дістався фінішу. Та стюарди дискваліфікували його, і офіційну перемогу отримав Алессандро Нанніні. Ось чому кадр із болідом, який першим перетинає лінію, не завжди збігається з результатом у протоколі. Це рішення також забезпечило Просту чемпіонський титул — другий спільний сезон напарників завершився гіркою розв'язкою."
         ]
       },
       {
@@ -152,9 +152,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "What the television image leaves out",
+        "heading": "Two Renaults and a Ferrari",
         "paragraphs": [
-          "Highlights can make the duel look like a sequence of isolated overtakes. The full context is richer: Renault had secured the win its turbo programme needed, while Arnoux was still trying to complete a strong team result. Villeneuve represented Ferrari, whose different technical approach gave the fight another dimension. We should resist claiming to know exactly what either driver thought while exchanging positions. What can be established is the order of the finish and the visible closeness of the racing. The emotional interpretation belongs to the reader, not to fabricated radio messages."
+          "Renault's turbocharged programme had finally delivered a Grand Prix win, but it was not a comfortable sweep of the podium. Jabouille brought one Renault home first. Arnoux, in the other, fought over second with Villeneuve's Ferrari through the closing laps. The three cars told two different stories at once: a new engine concept had broken through at the front, while an established rival made the fight behind it fiercely competitive. Villeneuve split the Renault pair at the flag. It was Renault's day, without being Renault's complete domination."
         ]
       },
       {
@@ -185,9 +185,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Чого не видно в короткому відео",
+        "heading": "Два Renault й один Ferrari",
         "paragraphs": [
-          "У добірці найкращих моментів дуель може здаватися просто низкою обгонів. Повний контекст цікавіший: Renault уже здобула необхідну перемогу для турбопрограми, а Арну ще намагався забезпечити сильний командний результат. Вільнев представляв Ferrari з іншим технічним підходом, що додавало боротьбі ще одного виміру. Не слід удавати, ніби нам відомі думки пілотів під час кожного маневру. Можна перевірити порядок фінішу й побачити, наскільки близькою була боротьба. Емоційне значення читач має право визначити сам — без вигаданих радіопереговорів."
+          "Турбопрограма Renault нарешті принесла перемогу в Гран-прі, але весь подіум команді не дістався. Жабуй довів один Renault до першого місця. Арну на другому боліді до останніх кіл боровся з Ferrari Вільнева за наступну позицію. Поки нова концепція двигуна святкувала прорив попереду, позаду точилася зовсім інша боротьба. Вільнев розділив два Renault на фініші. Це був великий день для французької команди, хоча без повного домінування."
         ]
       },
       {
@@ -220,9 +220,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "An underdog story without magic",
+        "heading": "A lead to defend, not a lap to celebrate",
         "paragraphs": [
-          "The temptation is to present Monza as a fairy tale in which weather randomly selected a winner. That denies the work required to seize the opportunity. Another temptation is to rewrite the race as proof that Vettel's later championships were inevitable. They were not. At Monza, he was a young driver who had delivered a remarkable weekend in a specific car under specific conditions. His future career adds perspective, but it cannot be used as evidence for the reasons he won that day."
+          "Qualifying had delivered Vettel an unexpected pole. The Grand Prix itself began behind the Safety Car because of the rain. When racing resumed, he was not merely defending a qualifying result: he had to stay ahead through changing grip and pit-stop decisions. He eventually finished more than twelve seconds clear of Heikki Kovalainen. The gap at the flag mattered. It showed that the pole had not been a brief accident of timing; Toro Rosso and its young driver had converted it into a full race victory."
         ]
       },
       {
@@ -253,9 +253,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Казка без чарів",
+        "heading": "Не просто швидке коло",
         "paragraphs": [
-          "Спокуса назвати Монцу казкою, у якій дощ випадково обрав переможця, дуже велика. Але це знецінює роботу, потрібну для використання шансу. Інша спокуса — оголосити цю гонку доказом неминучості майбутніх титулів Феттеля. Вони не були неминучими. Того дня він залишався молодим пілотом, який провів винятковий вікенд на конкретному боліді за конкретних умов. Подальша кар'єра додає перспективи, але не може пояснити всі причини тодішньої перемоги."
+          "Поул Феттеля став несподіванкою, але попереду залишалася вся дистанція. Через дощ Гран-прі розпочався за автомобілем безпеки. Після рестарту Себастьян мав утримувати лідерство, поки змінювалося зчеплення й команди вирішували, коли проводити пітстопи. На фініші він випередив Гейккі Ковалайнена більш ніж на дванадцять секунд. Цей відрив мав значення: поул не виявився короткою удачею у кваліфікації. Toro Rosso та її молодий пілот перетворили його на перемогу в повноцінній гонці."
         ]
       },
       {
@@ -288,9 +288,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The last-lap opening",
+        "heading": "The chase after the last restart",
         "paragraphs": [
-          "After the long interruption and a succession of setbacks, Button worked his way back toward the front. Sebastian Vettel was still leading as the race reached its final lap. Button had closed the gap enough to challenge him, and when Vettel made a mistake, the McLaren went past. Button took the chequered flag first, followed by Vettel and Mark Webber. The final pass is the moment everyone remembers. Its importance lies in what came before: Button had recovered far enough to be there when that last opportunity appeared."
+          "Button's recovery did not happen in a single charge. He had to pick his way through traffic after the interruptions, then use the drying track to improve his pace. After the final Safety Car, mistakes by Webber and pressure on Schumacher helped bring him into second place. Vettel was still ahead. By the final lap, however, Button was close enough to punish a mistake: Vettel ran wide and the McLaren slipped through. Montreal's last pass was possible because the previous laps had steadily erased an apparently impossible gap."
         ]
       },
       {
@@ -321,9 +321,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Шанс на останньому колі",
+        "heading": "Погоня після останнього рестарту",
         "paragraphs": [
-          "Після тривалої зупинки гонки й низки невдач Баттон поступово повертався до лідерів. Себастьян Феттель усе ще їхав першим, коли розпочалося останнє коло. Баттон уже скоротив відрив і міг атакувати. Феттель припустився помилки, і McLaren вийшов уперед. Баттон фінішував першим, Феттель — другим, Марк Веббер — третім. Саме цей обгін запам'ятали найбільше. Але він став можливим лише тому, що Баттон зумів відігратися після всіх попередніх пригод."
+          "Баттон не відіграв усе одним ривком. Після зупинок гонки йому довелося знову пробиватися крізь трафік, а на підсихаючій трасі — використовувати темп McLaren. Після останнього автомобіля безпеки помилка Веббера та боротьба із Шумахером допомогли Баттону вийти на друге місце. Феттель ще лідирував. Але на останньому колі Дженсон уже був поруч: Себастьян виїхав широко, і McLaren промчав уперед. Той обгін став можливим тому, що попередні кола поступово скоротили величезний відрив."
         ]
       },
       {
@@ -356,9 +356,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "How the opening appeared",
+        "heading": "The order changed before the flag",
         "paragraphs": [
-          "Mercedes' double pit stop went wrong, forcing the team to correct its tyre allocation, while Russell later suffered a puncture that destroyed his remaining chance. These were real operational setbacks, not evidence that the team deliberately surrendered a victory. Pérez, meanwhile, had driven back into contention. He did not need to cause the Mercedes problems; he needed to be positioned to benefit from them. That is a harder and more interesting achievement than the phrase 'lucky win' allows."
+          "Mercedes had controlled much of the evening with George Russell at the front. The late pit-stop tyre mix-up changed that picture, and Russell then had to come back through the field before a puncture forced another stop. Pérez's Racing Point did not appear at the front by magic: after the first-lap setback, he had climbed steadily while the leaders' plans unravelled. When Pérez finally took the chequered flag, it was his first Grand Prix win, with Ocon and Stroll behind. Russell's race ended ninth, a startling contrast to the opportunity he had held earlier."
         ]
       },
       {
@@ -389,9 +389,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Як відкрився шлях",
+        "heading": "Порядок змінився до фінішу",
         "paragraphs": [
-          "Подвійний пітстоп Mercedes пішов не за планом, команді довелося виправляти проблему з комплектами шин, а пізніше прокол остаточно зруйнував шанси Расселла. Це були справжні операційні невдачі, а не свідчення навмисно відданої перемоги. Перес тим часом уже повернувся до боротьби. Йому не потрібно було спричиняти проблеми Mercedes — потрібно було опинитися там, де ними можна скористатися. Це складніше й цікавіше досягнення, ніж дозволяє вислів «пощастило виграти»."
+          "Mercedes контролювала значну частину вечора, а Джордж Расселл лідирував. Пізня плутанина з шинами на пітстопі змінила ситуацію: британцеві довелося знову прориватися вперед, а згодом прокол відправив його на ще одну зупинку. Racing Point Переса опинилася попереду не випадково — після невдачі на першому колі Серхіо поступово повертав позиції, поки плани лідерів руйнувалися. Перес здобув першу перемогу, позаду фінішували Окон і Стролл. Расселл став дев'ятим — разючий контраст із шансом, який він мав раніше."
         ]
       },
       {
@@ -424,9 +424,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A BMW Sauber one-two in Montreal",
+        "heading": "What the standings looked like that evening",
         "paragraphs": [
-          "Robert Kubica crossed the line first in Montreal. His BMW Sauber teammate Nick Heidfeld finished second, while David Coulthard took third for Red Bull. For BMW Sauber, this was a one-two finish against teams that usually set the pace. The result mattered beyond the winner's trophy: it showed what Kubica and the team could achieve together that weekend. Whether they might have challenged for the world title under different circumstances is a separate question. The Canadian Grand Prix gives us something firmer than a hypothetical championship — a victory and a team double."
+          "Kubica's victory made him the championship leader after Canada, but the arithmetic was fragile. He stood on 42 points, ahead of Lewis Hamilton and Felipe Massa, who each had 38. The next rounds would test whether BMW Sauber could keep pace with Ferrari and McLaren over an entire season. That is the tension worth following after Montreal. For one night Kubica had both a Grand Prix win and the lead in the standings; neither result required imagining what might have happened if the team had pursued a different development path."
         ]
       },
       {
@@ -457,9 +457,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Дубль BMW Sauber у Монреалі",
+        "heading": "Таблиця того вечора",
         "paragraphs": [
-          "У Монреалі Роберт Кубіца першим перетнув фінішну лінію. Його напарник по BMW Sauber Нік Гайдфельд став другим, а Девід Култгард приніс Red Bull третє місце. BMW Sauber здобула дубль у боротьбі з командами, які зазвичай задавали темп. Для Кубіци це була особиста перемога, а для колективу — доказ того, чого вони могли досягти разом. Чи став би сезон іншим за інших рішень команди, ми не знаємо. Натомість канадська гонка залишила цілком реальний результат: перемогу та два перші місця на фініші."
+          "Після канадської перемоги Кубіца очолив чемпіонат, але перевага була невеликою. Він мав 42 очки, а Льюїс Гамільтон і Феліпе Масса — по 38. Наступні етапи мали показати, чи зможе BMW Sauber витримати темп Ferrari та McLaren протягом цілого сезону. Ось у чому була справжня інтрига після Монреаля. Того вечора Кубіца мав і перемогу в Гран-прі, і лідерство в заліку. Для цього не потрібно вигадувати, що сталося б за іншої програми розвитку боліда."
         ]
       },
       {
@@ -492,9 +492,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Setbacks are part of the explanation",
+        "heading": "Jerez, then Silverstone",
         "paragraphs": [
-          "The late 1990s Ferrari project did not move upward in a straight line. Schumacher fought Jacques Villeneuve for the 1997 title, with a controversial collision at Jerez ending the contest. In 1998, the championship again went elsewhere. In 1999, Schumacher's leg injury interrupted his season, while Ferrari still secured the constructors' championship. Each event matters for a different reason. A careful narrative does not treat controversy, injury and technical failure as interchangeable obstacles or invent a private master plan connecting them."
+          "Ferrari's path to the 2000 title passed through two very different setbacks. In 1997 Schumacher's championship contest with Jacques Villeneuve ended in a collision at Jerez, followed by his exclusion from the drivers' standings. The 1998 title went to Mika Häkkinen. Then, at Silverstone in 1999, Schumacher broke his leg in an accident and missed much of the season. Ferrari still captured the constructors' crown that year. By the time Schumacher reached Suzuka in 2000, the team had already experienced how close success could look without becoming a drivers' title."
         ]
       },
       {
@@ -525,9 +525,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Невдачі теж пояснюють результат",
+        "heading": "Херес, а потім Сільверстоун",
         "paragraphs": [
-          "Наприкінці 1990-х проєкт Ferrari не рухався вгору рівною лінією. У 1997 році Шумахер боровся з Жаком Вільневом за титул, але суперечливе зіткнення в Хересі завершило цю боротьбу. У 1998-му чемпіонство знову дісталося суперникам. У 1999 році травма ноги перервала сезон Шумахера, хоча Ferrari все ж виграла Кубок конструкторів. Кожна подія важлива з іншої причини. Уважна розповідь не повинна змішувати суперечки, травми й технічні відмови в одну категорію або вигадувати таємний план, який нібито пов'язував усі ці епізоди."
+          "Шлях Ferrari до титулу 2000 року пролягав через зовсім різні невдачі. У 1997-му боротьба Шумахера з Жаком Вільневом завершилася зіткненням у Хересі, після якого Міхаеля виключили з підсумкової таблиці пілотів. Чемпіонство 1998 року здобув Міка Гаккінен. А в Сільверстоуні 1999-го Шумахер зламав ногу в аварії та пропустив значну частину сезону. Ferrari все ж виграла Кубок конструкторів. До Сузуки 2000 року команда вже добре знала, як близько можна підійти до особистого титулу й усе ж залишитися без нього."
         ]
       },
       {
@@ -561,9 +561,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Act III — Two races within one finale",
+        "heading": "The Toyota on dry tyres",
         "paragraphs": [
-          "Massa did his part: he won his home Grand Prix. Farther back, Hamilton's title depended on reaching at least fifth place. In the changing rain, Vettel was ahead of the McLaren, and Glock's Toyota remained on dry-weather tyres. As conditions worsened, Hamilton caught Glock near the end and finished fifth. The official result put Massa first, Vettel fourth, Hamilton fifth and Glock sixth. The championship ended 98 points to 97 in Hamilton's favour."
+          "In the final rain shower, Timo Glock's Toyota stayed on dry-weather tyres while Hamilton switched to intermediates. That difference mattered on the wet closing lap. Glock lost time, and Hamilton caught him near the finish. Massa had already completed the race at the front; the title calculation continued behind. Vettel was fourth, Hamilton fifth, Glock sixth in the official result. For Massa the victory was real, but so was Hamilton's championship. The last change of position settled a season, not merely a dramatic afternoon."
         ]
       },
       {
@@ -589,9 +589,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Акт III — Два фінали однієї гонки",
+        "heading": "Toyota на шинах для сухої траси",
         "paragraphs": [
-          "Масса виконав свою частину завдання: виграв домашній Гран-прі. Позаду нього доля титулу залежала від того, чи зможе Гамільтон фінішувати хоча б п'ятим. За мінливої погоди Феттель випереджав McLaren, а Toyota Глока залишалася на шинах для сухої траси. Коли дощ посилився, Гамільтон наздогнав Глока й фінішував п'ятим. У підсумковому протоколі Масса — перший, Феттель — четвертий, Гамільтон — п'ятий, Глок — шостий. Чемпіонат завершився з рахунком 98:97 на користь Гамільтона."
+          "Під час останньої зливи Toyota Тімо Глока залишилася на шинах для сухої траси, а Гамільтон перейшов на проміжні. На мокрому фінальному колі ця різниця стала вирішальною. Глок втрачав темп, і Гамільтон наздогнав його неподалік фінішу. Масса вже завершив гонку попереду, але долю титулу ще вирішували позаду. В офіційному протоколі Феттель був четвертим, Гамільтон — п'ятим, Глок — шостим. Перемога Масси залишилася перемогою, але чемпіонство здобув Гамільтон. Остання зміна позицій вирішила цілий сезон."
         ]
       },
       {
@@ -619,9 +619,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Act III — A debut nobody could ignore",
+        "heading": "Six wins before the others caught up",
         "paragraphs": [
-          "At the 2009 Australian Grand Prix, Brawn GP locked out the front row: Jenson Button qualified first, Rubens Barrichello second. They finished in the same order. It was a remarkable result for a team that had come so close to disappearing after Honda's withdrawal. Button went on to win six of the first seven races. Those points gave Brawn an early advantage it would need later in the season, when competitors improved their cars and the new team's resources were under pressure."
+          "Button won six of the first seven races, building an advantage while rival teams struggled to match the BGP 001. Then the competitive order tightened. Red Bull improved and Button stopped collecting victories, even though Barrichello added wins at Valencia and Monza. That shift changed the team's task: no longer to dominate every Sunday, but to preserve enough points to stay ahead. At Brazil, Button's fifth place from fourteenth on the grid secured the drivers' championship, while Brawn also took the constructors' title. The unlikely rescue story had survived a season-long test."
         ]
       },
       {
@@ -654,9 +654,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Акт III — Дебют, який помітили всі",
+        "heading": "Шість перемог до того, як суперники наздогнали",
         "paragraphs": [
-          "На Гран-прі Австралії 2009 року Brawn GP зайняла весь перший ряд стартової решітки: Дженсон Баттон здобув поул, Рубенс Баррікелло став другим. У такому самому порядку вони фінішували. Команда, яка ще нещодавно могла зникнути після виходу Honda, відразу здобула дубль. Баттон виграв шість із перших семи гонок. Створений на початку сезону запас очок знадобився згодом, коли суперники прискорилися, а можливості Brawn для розвитку машини залишалися обмеженими."
+          "Баттон виграв шість із перших семи гонок, поки інші команди шукали відповідь на швидкість BGP 001. Потім боротьба стала щільнішою. Red Bull додала темпу, Баттон перестав перемагати, хоча Баррікелло ще виграв у Валенсії та Монці. Тепер завдання було іншим: не домінувати щонеділі, а втримати перевагу за очками. У Бразилії Баттон стартував чотирнадцятим і фінішував п'ятим, забезпечивши собі титул; Brawn того ж дня здобула Кубок конструкторів. Команда, яку ледь урятували, витримала цілий сезон боротьби."
         ]
       },
       {
