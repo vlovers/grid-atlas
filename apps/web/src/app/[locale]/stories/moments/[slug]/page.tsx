@@ -1,3 +1,4 @@
+import { editorialOfficialResults } from '@/components/stories/editorial-official-results';
 import { editorialSeasonRaceWinners } from '@/components/stories/editorial-season-race-winners';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -157,6 +158,14 @@ export default async function EditorialMoment({ params }: Props) {
         </details>)}
         <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
       </section>}
+      <section aria-labelledby="official-results" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
+        <h2 id="official-results">{uk ? 'Офіційні результати' : 'Official race results'}</h2>
+        <ul>
+          {(editorialOfficialResults[slug] ?? []).map(source => <li key={source.year}>
+            <a href={source.url} target="_blank" rel="noopener noreferrer">{uk ? `Сезон ${source.year} · Formula 1` : `${source.year} season · Formula 1`}</a>
+          </li>)}
+        </ul>
+      </section>
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
         <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
         <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a full editorial manuscript awaiting verification. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
