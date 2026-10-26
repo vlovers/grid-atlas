@@ -5,7 +5,7 @@
   "scenes": [
     {
       "driver_id": "keke-rosberg",
-      "chapter_id": "the-williams-opportunity",
+      "chapter_id": "williams",
       "source_urls": [
         "https://www.formula1.com/en/latest/article/is-there-still-hope-for-leclerc-we-revisit-the-biggest-title-comebacks-in-f1.1fSX2eMF1KYxoh4A3k82hy/",
         "https://www.formula1.com/en/results/1982/drivers/KEKROS01/keke-rosberg",
@@ -13,22 +13,24 @@
       ],
       "verified_scope": "1982 late-season podiums, Swiss GP win at Dijon, Las Vegas fifth, Watson second, title context",
       "source_limits": "Publisher summaries and official archive classifications; no claim of independently verified motives",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "damon-hill",
-      "chapter_id": "from-a-one-point-defeat-to-the-title",
+      "chapter_id": "1994-1996",
       "source_urls": [
         "https://www.formula1.com/en/results/1998/races/683/belgium/race-result",
         "https://www.formula1.com/en/latest/article/were-streaming-the-1998-belgian-grand-prix-heres-why-you-should-watch.5PlRdiNnw4SUXbLqfnTDmB"
       ],
       "verified_scope": "Jordan first and second finish Spa 1998, Hill/Ralf finishing order, Schumacher/Coulthard collision in Formula1.com editorial account",
       "source_limits": "Classification cannot verify instructions in team radio; Formula 1 editorial account is distinct from standings but same publisher",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "nico-rosberg",
-      "chapter_id": "retirement-after-the-crown",
+      "chapter_id": "retirement",
       "source_urls": [
         "https://www.formula1.com/en/latest/article/rosberg-announces-his-retirement-from-f1-racing.5ZWcPPPCsc3kpreN6tKdqs",
         "https://www.fia.com/news/fia-president-salutes-nico-rosberg-new-f1-world-champion-announces-retirement-fia-prize-giving",
@@ -36,44 +38,48 @@
       ],
       "verified_scope": "2016 Abu Dhabi second, title, Dec 2 retirement and Rosberg's public explanation",
       "source_limits": "Rosberg's retrospective motivation is attributed to him, not presented as independent psychological inference",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "kimi-raikkonen",
-      "chapter_id": "the-ferrari-championship",
+      "chapter_id": "ferrari-crown",
       "source_urls": [
         "https://www.formula1.com/en/results/2007/drivers",
         "https://www.formula1.com/en/latest/article/f1-brazil-gp-title-deciders-championship.6j9s6gmm57ar9xJlxUTlQn.6j9s6gmm57ar9xJlxUTlQn"
       ],
       "verified_scope": "2007 pre-Brazil top three points and final 110/109/109 title standings",
       "source_limits": "Official publisher's retrospective, not independent verification of team motivations",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "jenson-button",
-      "chapter_id": "six-wins-and-a-world-title",
+      "chapter_id": "brawn-2009",
       "source_urls": [
         "https://www.formula1.com/en/results/2009/races/858/brazil/race-result",
         "https://www.formula1.com/en/latest/article/the-greatest-f1-world-championship-celebrations-in-recent-history.4gWkaXUSgi7KvN37D8S4ZT.4gWkaXUSgi7KvN37D8S4ZT"
       ],
       "verified_scope": "Button P14 qualifying per retrospective and P5 race classified Brazil 2009, Webber victory, title clincher",
       "source_limits": "Retrospective race account from same publisher as result sheet",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "nino-farina",
-      "chapter_id": "the-inaugural-world-champion",
+      "chapter_id": "first-champion",
       "source_urls": [
         "https://www.formula1.com/en/results/1950/races/100/italy/race-result",
         "https://www.formula1.com/en/latest/article/from-one-off-victors-to-world-champions-the-15-italian-f1-race-winners.7Itail3xoxO69cftQ7VbTf.7Itail3xoxO69cftQ7VbTf"
       ],
       "verified_scope": "Farina Monza victory, Fangio classified non-finish, 1950 inaugural champion",
       "source_limits": "Shared-drive 1950 classifications require specific contextual reading",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "charles-leclerc",
-      "chapter_id": "belgium-and-monza",
+      "chapter_id": "first-wins",
       "source_urls": [
         "https://www.fia.com/news/f1-leclerc-takes-maiden-f1-win-belgian-ahead-hamilton-and-bottas",
         "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
@@ -81,88 +87,96 @@
       ],
       "verified_scope": "2019 first win and Hubert tribute; 2024 Monaco win, 78 laps, Piastri/Sainz behind; driver emotional explanation attributable to FIA transcript",
       "source_limits": "Driver's emotions and late father's role are attributed to his post-race account, not inferred by the author",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "lando-norris",
-      "chapter_id": "the-2025-world-championship",
+      "chapter_id": "miami-2024",
       "source_urls": [
         "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
         "https://www.fia.com/events/fia-formula-one-world-championship/season-2025/2025-classifications"
       ],
       "verified_scope": "2025 Abu Dhabi Verstappen P1, Piastri P2, Norris P3 and championship totals 423, 421, 410; opening lap and race-management context",
       "source_limits": "Race narrative summarized from FIA reporting; no assertion about private motives beyond the observed championship requirement",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "fernando-alonso",
-      "chapter_id": "two-titles-and-a-new-chapter",
+      "chapter_id": "first-victory",
       "source_urls": [
         "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
         "https://www.formula1.com/en/latest/article/f1-brazil-gp-title-deciders-championship.6j9s6gmm57ar9xJlxUTlQn.6j9s6gmm57ar9xJlxUTlQn"
       ],
       "verified_scope": "2005 and 2006 Renault titles, Schumacher Suzuka retirement, 2006 Brazil title outcome",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "nelson-piquet",
-      "chapter_id": "three-championship-seasons",
+      "chapter_id": "four-teams",
       "source_urls": [
         "https://www.formula1.com/en/latest/article/from-papaya-rules-to-flipping-coins-how-f1-teams-have-dealt-with-driver-rivalries-in-the-past.3TZEydHJTVg3VqUx8oXxOl.3TZEydHJTVg3VqUx8oXxOl",
         "https://www.fia.com/news/f1-fia-pays-tribute-sir-frank-williams-who-has-died-aged-79"
       ],
       "verified_scope": "Mansell/Piquet Williams team rivalry, 1987 Piquet world title",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "mario-andretti",
-      "chapter_id": "the-lotus-ascent",
+      "chapter_id": "lotus-rise",
       "source_urls": [
         "https://www.formula1.com/en/results/1978/races/404/italy/race-result",
         "https://www.formula1.com/en/latest/article/beyond-the-grid-1978-world-champion-mario-andretti-on-winning-the-title-with.64qQCgmippu0Be8VhmF2uP"
       ],
       "verified_scope": "1978 Monza Andretti sixth after penalty, teammate Ronnie Peterson death, title and Andretti retrospective",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "jacques-villeneuve",
-      "chapter_id": "champion-in-1997",
+      "chapter_id": "world-champion",
       "source_urls": [
         "https://www.ferrari.com/en-US/formula1/year-1997",
         "https://www.fia.com/news/f1-fia-pays-tribute-sir-frank-williams-who-has-died-aged-79"
       ],
       "verified_scope": "Jerez 1997 one-point pre-race gap, collision, Jacques third and title, FIA Schumacher drivers-standing exclusion",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "jochen-rindt",
-      "chapter_id": "a-posthumous-world-title",
+      "chapter_id": "posthumous-title",
       "source_urls": [
         "https://www.formula1.com/en/information/drivers-hall-of-fame-jochen-rindt.297CPloKgJFry8fsI3oVyx",
         "https://www.theguardian.com/sport/2007/jan/07/motorracing.features"
       ],
       "verified_scope": "1970 Monza practice accident, Fittipaldi Watkins Glen win clinches title",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "alberto-ascari",
-      "chapter_id": "the-monaco-escape",
+      "chapter_id": "monaco-escape",
       "source_urls": [
         "https://www.formula1.com/en/information/drivers-hall-of-fame-alberto-ascari.6zgWYwDIjoQmYSiz48FAZD",
         "https://www.motorsportmagazine.com/archive/article/july-2012/99/the-last-great-italian-gp-star/"
       ],
       "verified_scope": "1955 Monaco harbour crash survived, four days later fatal sports-car test at Monza",
       "source_limits": "No proven cause for Monza crash; do not imply link between accidents or import speculative theories",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     },
     {
       "driver_id": "alan-jones",
-      "chapter_id": "the-1980-championship",
+      "chapter_id": "williams-1980",
       "source_urls": [
         "https://www.formula1.com/en/results/1980/races/92/canada/race-result",
         "https://www.formula1.com/en/information/williams-year-by-year.6wHlJglT3USpmIbETtAYzW",
@@ -170,7 +184,9 @@
       ],
       "verified_scope": "1980 Canadian GP Jones P1 Reutemann P2 Piquet DNF, 1979 Williams breakthrough and 1980 double championship",
       "source_limits": "Team year-by-year and race classification confirm outcomes, not private psychological motivations",
-      "status": "ai_source_checked_human_review_pending"
+      "status": "ai_source_checked_human_review_pending",
+      "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
     }
-  ]
+  ],
+  "source_policy_note": "URL presence does not establish that every textual assertion was independently checked. All AI checks are provisional; required independent historical and locale reviews remain pending."
 }
