@@ -10,6 +10,7 @@ import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
+import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
@@ -109,6 +110,7 @@ export default async function EditorialMoment({ params }: Props) {
               <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
               <h3>{chapter.heading}</h3>
               {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
+              {index < 3 && slug in editorialInterpretivePassages && <p className={styles.editorialInterpretation}>{editorialInterpretivePassages[slug as keyof typeof editorialInterpretivePassages][index][locale]}</p>}
             </section>)}
           </div>
         </div>
