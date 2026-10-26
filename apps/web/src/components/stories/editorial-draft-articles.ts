@@ -27,9 +27,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A decision the archive should not flatten",
+        "heading": "Two finish lines, two choices",
         "paragraphs": [
-          "The official classification can tell us when a driver retired, but not how a frightening experience alters a person's willingness to accept danger. That distinction is central to Lauda's return. An interactive timeline should show the Nürburgring accident, the missed races, the Monza comeback and the Fuji withdrawal without drawing an artificial straight line between them. A reader should be able to pause at each point and consider what information the driver had then, rather than judge him using knowledge of the final championship result."
+          "At Fuji, James Hunt drove to the result he needed: third place, enough to finish the season a single point ahead of Niki Lauda. Lauda had already made another decision, leaving a race he judged too dangerous in the rain. One man left Japan with the world championship; the other left having drawn a limit for himself. The Nürburgring crash, the swift comeback at Monza and the final race belong to the same season, but they should not be forced into a simple tale of courage versus fear. The title was Hunt's. Lauda's decision was his own."
         ]
       }
     ],
@@ -59,9 +59,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Рішення, яке не вмістити в таблицю",
+        "heading": "Два рішення на одному фініші",
         "paragraphs": [
-          "Офіційний протокол показує, коли пілот зійшов, але не пояснює, як страшний досвід змінює готовність людини ризикувати. Це важливо для історії повернення Лауди. Інтерактивна хронологія має показувати аварію на Нюрбургринзі, пропущені етапи, повернення в Монці та схід у Фудзі без штучного висновку, що одна подія неминуче спричинила наступну. Читачеві варто дати змогу зупинитися на кожному моменті й оцінити інформацію, яку пілот мав саме тоді, а не судити його, знаючи підсумок чемпіонату."
+          "На Фудзі Джеймс Гант фінішував третім — цього вистачило, щоб випередити Нікі Лауду в чемпіонаті на одне очко. Лауда на той час уже ухвалив своє рішення: зійти з гонки, яку вважав надто небезпечною через дощ. Один залишив Японію чемпіоном світу. Інший вирішив, де для нього проходить межа ризику. Аварія на Нюрбургринзі, швидке повернення в Монці й фінал сезону пов'язані між собою, але це не проста історія про сміливість одного та страх іншого. Титул належав Ганту. Рішення зупинитися — Лауді."
         ]
       }
     ]
@@ -93,9 +93,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The danger of a modern scoreboard",
+        "heading": "The numbers that changed a rivalry",
         "paragraphs": [
-          "Modern fans are used to every earned point appearing in the season total. The 1988 rule did not work that way. Showing Prost's raw total beside Senna's counted total without labels creates a false contradiction. The story needs two clearly named views: points actually earned across races and points counted for the title. A third view should explain that a rule can be unusual to today's reader and still be the legitimate rule of its own era. This is not a technical footnote: it changes the apparent outcome of a famous rivalry."
+          "The 1988 championship ended with Senna on 90 counted points and Prost on 87. Those numbers make sense only under the rules of that season, when not every race result counted toward the title. A year later their contest took a darker turn at Suzuka. After the collision and Senna's disqualification, the official Japanese Grand Prix victory went to Alessandro Nannini, and Prost secured the championship. The same team had given both drivers a chance to dominate Formula 1, but it could not promise that victory for one would feel like success for the other. The rivalry was decided on the track — and, at crucial moments, by the regulations."
         ]
       }
     ],
@@ -125,9 +125,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Небезпека сучасної таблиці",
+        "heading": "Очки, які вирішили суперництво",
         "paragraphs": [
-          "Сучасні вболівальники звикли, що всі набрані очки входять до підсумку сезону. У 1988 році правило працювало інакше. Якщо поставити загальну суму Проста поруч із заліковими очками Сенни без пояснень, виникне хибна суперечність. Історія потребує двох чітко названих режимів: усі очки, здобуті в гонках, і очки, враховані для титулу. Третій рівень має пояснити, що незвичне для сучасного читача правило залишалося чинним у свою епоху. Це не технічна примітка: воно змінює сприйняття результату знаменитого суперництва."
+          "У 1988 році Сенна став чемпіоном із 90 заліковими очками проти 87 у Проста. Без тодішніх правил ці цифри важко зрозуміти: до підсумку сезону входили не всі результати. Уже наступного року їхнє суперництво загострилося в Сузуці. Після зіткнення та дискваліфікації Сенни переможцем Гран-прі Японії визнали Алессандро Нанніні, а чемпіонський титул дістався Просту. McLaren дала обом можливість боротися за найвищі нагороди, але перемога одного не могла тішити іншого. Їхню боротьбу вирішували не лише секунди на трасі, а й правила, за якими проводили гонки."
         ]
       }
     ]
@@ -159,9 +159,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Two stories in one classification",
+        "heading": "The winner and the battle everyone remembers",
         "paragraphs": [
-          "If a reader opens only the race result, Jabouille's name is the correct first answer. If the same reader opens a collection of iconic wheel-to-wheel battles, Villeneuve and Arnoux become the entry point. The archive should preserve both routes. A race result must never quietly substitute the more famous duel for the actual winner. Equally, a historical feature should not treat the fight for second as irrelevant because it did not decide the trophy. These are complementary truths, not competing versions of the record."
+          "Jean-Pierre Jabouille crossed the line first in Dijon and gave Renault a landmark win. Behind him, Gilles Villeneuve finished second and René Arnoux third after their unforgettable duel. Both parts matter. Without Jabouille, we lose the breakthrough that shaped the race; without Villeneuve and Arnoux, we lose the battle that has kept it alive in fans' memories. It is possible to admire the fight for second without rewriting who won. Dijon gave Formula 1 a victory to record and a duel to remember — in the very same afternoon."
         ]
       }
     ],
@@ -191,9 +191,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Дві історії в одному протоколі",
+        "heading": "Переможець і дуель, яку пам'ятають",
         "paragraphs": [
-          "Якщо читач відкриє лише результат гонки, першою відповіддю буде ім’я Жабуя — і це правильно. Якщо ж він шукатиме найяскравіші дуелі колесо в колесо, початком стане боротьба Вільнева й Арну. Архів має зберегти обидва шляхи. У протоколі не можна непомітно замінити справжнього переможця більш відомою дуеллю. Водночас історична стаття не повинна вважати боротьбу за друге місце неважливою лише тому, що вона не вирішувала долю кубка. Це дві взаємодоповнювальні правди, а не конкуруючі версії події."
+          "У Діжоні першим фінішував Жан-П'єр Жабуй і приніс Renault знакову перемогу. Позаду нього Жиль Вільнев здобув друге місце, а Рене Арну — третє після дуелі, яку й сьогодні згадують уболівальники. Обидві історії важливі. Без Жабуя зникне головний спортивний результат того дня. Без Вільнева й Арну — боротьба, завдяки якій гонку досі передивляються. Можна захоплюватися битвою за друге місце й водночас пам'ятати справжнього переможця. Діжон подарував Формулі-1 і важливу перемогу, і незабутню дуель."
         ]
       }
     ]
@@ -225,9 +225,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The team behind the unexpected result",
+        "heading": "The win belonged to Toro Rosso",
         "paragraphs": [
-          "An upset is easier to celebrate than to explain. Toro Rosso's engineers and mechanics had to prepare a car capable of taking advantage of difficult conditions; Vettel had to convert that preparation into a qualifying lap and a controlled race. This distinction helps the story avoid the familiar lone-genius myth. A driver profile can celebrate the person at the wheel while a constructor profile reveals the people and decisions that made the performance possible. The links between those profiles are part of the story, not an optional appendix."
+          "When Vettel took the chequered flag at Monza, the result belonged to Toro Rosso — not to the Red Bull Racing team he would later represent. He beat Heikki Kovalainen and Robert Kubica in a race shaped by difficult conditions, giving the smaller outfit a victory few had expected. Rain helped upset the usual order, but it did not steer the car or bring it safely to the finish. The mechanics, engineers and Vettel himself all had work to do. That is why this result is more interesting than a simple surprise: it shows what happens when an opportunity appears and a team is ready to take it."
         ]
       }
     ],
@@ -257,9 +257,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Команда за несподіваним результатом",
+        "heading": "Перемога належала Toro Rosso",
         "paragraphs": [
-          "Сенсацію легше святкувати, ніж пояснити. Інженери й механіки Toro Rosso мали підготувати болід, здатний скористатися складними умовами, а Феттель — перетворити цю підготовку на швидке коло та впевнену гонку. Так історія уникає міфу про самотнього генія. Профіль пілота може показати людину за кермом, а сторінка конструктора — людей і рішення, що зробили результат можливим. Зв’язки між цими сторінками є частиною історії, а не необов’язковим додатком."
+          "Коли Феттель перетнув фінішну лінію в Монці, перемогу записали на рахунок Toro Rosso, а не Red Bull Racing, за яку він виступатиме пізніше. Себастьян випередив Гейккі Ковалайнена й Роберта Кубіцу в складних умовах і приніс невеликій команді несподіваний успіх. Дощ змішав звичну розстановку сил, але сам по собі не міг виграти гонку. Механіки, інженери й пілот мали виконати свою роботу. Тому Монца-2008 — не просто сенсація. Це приклад того, як команда скористалася шансом, коли він з'явився."
         ]
       }
     ]
@@ -291,9 +291,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The difference between survival and progress",
+        "heading": "A victory hidden inside the chaos",
         "paragraphs": [
-          "A wet race is not a sequence of identical laps. Some periods are about avoiding mistakes, others about choosing the right tyre, and still others about passing cars before conditions change again. Button's recovery should be read through those different demands. A visual timeline could show position changes only when the official lap chart is available, and use carefully worded scene summaries everywhere else. The goal is not to animate a fabricated perfect comeback. It is to help readers feel why a race with so many interruptions still rewarded a driver who kept responding."
+          "The Canadian Grand Prix ended with Button first, Vettel second and Webber third. That neat result gives little sense of how untidy the afternoon had been. Rain interrupted the race; mistakes and changing conditions reshuffled the field. Button's recovery was not a clean march from the back to the front, and it did not depend on one brilliant lap alone. Each new phase demanded a different response: survive the conditions, regain places, and stay close enough to take a final opportunity. What remains remarkable is not that the race became chaotic. It is that Button found a way to win it."
         ]
       }
     ],
@@ -323,9 +323,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Різниця між виживанням і проривом",
+        "heading": "Перемога серед хаосу",
         "paragraphs": [
-          "Дощова гонка не складається з однакових кіл. Іноді головне — уникнути помилки, іноді — вчасно обрати шини, а іноді — встигнути обігнати суперників, перш ніж умови знову зміняться. Повернення Баттона слід читати крізь ці різні завдання. Візуальна хронологія може показувати зміни позицій лише за наявності офіційних поколових даних, а в інших місцях — використовувати обережні сюжетні пояснення. Мета не в тому, щоб анімувати вигаданий ідеальний камбек, а в тому, щоб пояснити, чому гонка з численними зупинками все ж винагородила пілота, який постійно пристосовувався."
+          "У протоколі Гран-прі Канади все просто: Баттон — перший, Феттель — другий, Веббер — третій. Але за цими трьома рядками ховається один із найдивовижніших дощових етапів. Гонку зупиняли, погода змінювалася, помилки відкидали пілотів назад. Баттон не промчав від останнього місця до першого одним бездоганним ривком. Йому щоразу доводилося починати боротьбу заново: пережити складний відрізок, повернути позиції, залишитися достатньо близько до лідерів. Дивовижний не сам хаос. Дивовижно те, що Баттон зумів у ньому перемогти."
         ]
       }
     ]
@@ -357,9 +357,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Two first wins cannot happen together",
+        "heading": "Two chances, one winner",
         "paragraphs": [
-          "At Sakhir, Pérez and Russell each had a plausible path to a first Grand Prix win, but only one could take the result. This tension is stronger than the familiar contrast between a lucky winner and an unlucky favourite. The race should be told with parallel timelines: Pérez recovering from the back and Russell leading the Mercedes challenge. They converge at the late pit-stop disruption and puncture, then separate again at the finish. The timeline must distinguish a documented mechanical or procedural failure from speculation about what would have happened without it."
+          "Sergio Pérez left Sakhir with his first Grand Prix victory. Esteban Ocon and Lance Stroll joined him on the podium; George Russell, racing for Mercedes in place of Lewis Hamilton, finished ninth. The final positions are clear, but they cannot contain the whole drama. Pérez had recovered from trouble at the start, while Russell had seemed close to a breakthrough of his own before Mercedes' troubled pit stops and a later puncture. The race was not proof that one deserved victory more than the other. It was a reminder that Formula 1 rarely grants opportunities on fair or predictable terms — and that taking one still requires a drive worthy of the moment."
         ]
       }
     ],
@@ -389,9 +389,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Дві перші перемоги одночасно неможливі",
+        "heading": "Два шанси й один переможець",
         "paragraphs": [
-          "У Сахірі Перес і Расселл мали реальні шанси на свою першу перемогу в Гран-прі, але здобути її міг лише один. Це напруження цікавіше за звичний поділ на щасливого переможця й невдаху-фаворита. Історію варто розповідати двома паралельними лініями: повернення Переса з кінця пелотону та боротьба Расселла за Mercedes. Вони сходяться під час пізньої плутанини на пітстопі й проколу, а на фініші знову розходяться. Хронологія повинна відділяти підтверджену технічну чи процедурну проблему від припущень про те, що сталося б без неї."
+          "Серхіо Перес залишив Сахір із першою перемогою в Гран-прі. На подіум разом із ним піднялися Естебан Окон і Ленс Стролл. Джордж Расселл, який замінив Льюїса Гамільтона в Mercedes, фінішував дев'ятим. Та сухі цифри не передають драму вечора. Перес відігрався після невдалого початку, а Расселл був близький до власного прориву, перш ніж невдалий пітстоп Mercedes і прокол змінили його гонку. Це не історія про те, хто більше заслуговував на перемогу. Вона про те, що шанс у Формулі-1 рідко приходить вчасно й на чесних умовах, а скористатися ним усе одно треба самому."
         ]
       }
     ]
@@ -423,9 +423,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Potential is not a missing trophy",
+        "heading": "The afternoon when BMW Sauber led the way",
         "paragraphs": [
-          "When a promising season does not produce a championship, hindsight encourages us to call it a wasted opportunity. That judgement is too easy. Kubica's 2008 results deserve attention precisely because they made a different outcome imaginable, not because a title was owed to him. A season graph can show when he led the standings and how the picture changed afterward, but the chart should not pretend to know how the championship would have unfolded under different development decisions. The reader should encounter possibility, not a fabricated alternative history."
+          "In Montreal, Robert Kubica won ahead of his BMW Sauber teammate Nick Heidfeld, with David Coulthard third. It was a result that made the team look capable of upsetting the familiar Ferrari–McLaren contest. The rest of 2008 did not bring Kubica a world championship. That does not turn the victory into a failure, nor does it prove that a different development plan would have delivered a title. For one afternoon, Kubica and BMW Sauber were the benchmark. Remembering that moment on its own terms is more revealing than measuring it against a championship they never won."
         ]
       }
     ],
@@ -455,9 +455,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Потенціал — не втрачений кубок",
+        "heading": "День, коли BMW Sauber була попереду",
         "paragraphs": [
-          "Коли перспективний сезон не завершується чемпіонством, заднім числом легко назвати його змарнованим шансом. Це надто простий вирок. Результати Кубіци у 2008 році цікаві саме тому, що робили інший фінал можливим, а не тому, що титул нібито належав йому. Графік сезону може показати, коли пілот очолював залік і як ситуація змінювалася згодом, але він не повинен удавати, ніби знає результат за інших рішень щодо розвитку боліда. Читач має побачити можливість, а не вигадану альтернативну історію."
+          "У Монреалі Роберт Кубіца переміг, його напарник Нік Гайдфельд фінішував другим, а Девід Култгард — третім. BMW Sauber втрутилася у звичну боротьбу Ferrari та McLaren і змусила суперників рахуватися із собою. Чемпіонського титулу Кубіца того року не здобув. Але це не робить канадську перемогу меншою й не доводить, що інший шлях розвитку машини неодмінно приніс би чемпіонство. Того дня Кубіца й BMW Sauber були найкращими. І цей результат заслуговує на увагу сам по собі, без вигаданої історії про втрачений титул."
         ]
       }
     ]
@@ -489,9 +489,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Why the long build matters",
+        "heading": "Five seasons, not one miracle",
         "paragraphs": [
-          "Ferrari's eventual success can be flattened into a before-and-after picture: no title, then Schumacher's title. The years between those points explain more than either endpoint. A responsible narrative shows individual race wins, championship defeats, a driver's injury and a constructors' title as distinct events. They were not interchangeable steps in a predetermined plan. This is also why the story belongs equally on the driver's page and the constructor's page. The same achievement looks different when viewed as one person's career or as the work of an evolving organisation."
+          "Schumacher arrived at Ferrari in 1996 already a double world champion. He won races that year, but the drivers' crown did not come until 2000. Between those dates were fierce title fights, setbacks and changes inside the team. The final achievement belongs to the driver who delivered it, but also to a collective that improved its cars and race operations across seasons. It is tempting to look back from the championship and call every earlier setback a necessary step. For the people living through those years, however, nothing was guaranteed. That uncertainty is what gives Ferrari's long-awaited triumph its weight."
         ]
       }
     ],
@@ -521,9 +521,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Чому важливий довгий шлях",
+        "heading": "П'ять сезонів, а не одне диво",
         "paragraphs": [
-          "Майбутній успіх Ferrari легко звести до двох кадрів: до Шумахера титулу немає, після — є. Але роки між ними пояснюють більше за будь-який із цих кадрів. Відповідальна розповідь показує окремі перемоги, поразки в боротьбі за чемпіонство, травму пілота та Кубок конструкторів як різні події. Вони не були взаємозамінними кроками наперед визначеного плану. Саме тому ця історія однаково потрібна на сторінці гонщика й на сторінці конструктора. Те саме досягнення має різний вигляд як частина особистої кар’єри та як результат розвитку цілої організації."
+          "Шумахер прийшов до Ferrari у 1996 році вже дворазовим чемпіоном світу. Того ж сезону він вигравав гонки, але нового титулу довелося чекати до 2000-го. Між цими датами були напружені дуелі, невдачі й зміни в команді. Чемпіонство здобув пілот, проте за його результатом стояла праця багатьох людей, які рік за роком робили болід і команду сильнішими. Сьогодні легко оголосити всі попередні поразки неминучими сходинками до перемоги. Але тоді ніхто не знав, чим закінчиться цей шлях. Саме тому довгоочікуваний титул Ferrari має таку вагу."
         ]
       }
     ]
@@ -665,6 +665,3 @@ export const editorialDraftArticles = {
     ]
   }
 } as const;
-export function draftArticle(slug: string, locale: 'en' | 'uk') {
-  return editorialDraftArticles[slug as keyof typeof editorialDraftArticles]?.[locale] ?? null;
-}
