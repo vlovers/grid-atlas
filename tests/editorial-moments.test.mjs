@@ -277,12 +277,11 @@ test('long reads do not repeat entire phrases from one chapter in another', () =
 
 test('long-form narrative appears before the reference-heavy panels on all editorial pages', () => {
   const storyStart = detail.indexOf('aria-labelledby="research-chapters"');
-  const firstPanel = detail.indexOf('slug in editorialStoryContext');
-  const otherPanel = detail.indexOf('aria-labelledby="story-milestones"');
   const resultsPanel = detail.indexOf('aria-labelledby="story-races"');
-  assert.ok(storyStart > 0 && storyStart < firstPanel && firstPanel < otherPanel && otherPanel < resultsPanel);
+  assert.ok(storyStart > 0 && storyStart < resultsPanel, 'Full narrative must precede race-reference sections');
+  assert.ok(!detail.includes('slug in editorialStoryContext'), 'Do not restate the story in an extra summary panel');
+  assert.ok(!detail.includes('aria-labelledby="story-milestones"'), 'Do not replay the story in a second four-act timeline');
   assert.ok(detail.indexOf('href="#research-chapters"') < storyStart);
-  assert.ok(detail.includes('href="#story-milestones"'));
   assert.ok(detail.includes('href="#story-races"'));
   assert.equal(detail.split('aria-labelledby="research-chapters"').length - 1, 1);
   assert.ok(detail.includes('index: false'), 'unapproved draft must stay noindexed');
@@ -319,7 +318,7 @@ test('article chapters do not inject generic reflections after every scene', () 
 test('story pages prioritise racing narratives over generic life lessons and editor-only queues', () => {
   assert.ok(detail.includes('aria-labelledby="research-chapters"'));
   assert.ok(detail.includes('aria-labelledby="reader-questions"'));
-  assert.ok(detail.includes('aria-labelledby="preview-status"'));
+  assert.ok(detail.includes('id="preview-status"'), 'Draft provenance remains accessible in a disclosure');
   assert.ok(detail.includes('index: false'), 'unapproved drafts must remain noindexed');
   for (const hidden of [
     'editorialTakeaways', 'editorialReflection', 'editorialFactCheckPrompts',
