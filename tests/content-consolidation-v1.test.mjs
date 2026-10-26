@@ -138,3 +138,22 @@ test('thin research cards never override ten separate canonical longform dossier
     words_400_plus: distinct.filter(row => row.en_words >= 400).length
   });
 });
+
+test('all five missing short-story identities resolve to existing bilingual dossiers, not duplicates', () => {
+  const index = read('docs/editorial/batches/drivers-30-v1.json').drivers;
+  const short = new Set(read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json').stories.map(x => x.driver_id));
+  const source = read('docs/editorial/releases/v1/manifest.json').drivers;
+  const five = read('docs/editorial/batches/drivers-30-v1/FIVE_EXISTING_DOSSIERS_2026-10-26.json');
+  assert.equal(five.entries.length, 5);
+  const missing = index.map(x => x.driver_id).filter(id => !short.has(id)).sort();
+  assert.deepEqual(five.entries.map(x => x.driver_id).sort(), missing);
+  for (const entry of five.entries) {
+    const canonical = source.find(x => x.driver_id === entry.driver_id);
+    assert.ok(canonical);
+    assert.equal(entry.publication, 'unpublished');
+    for (const locale of ['en', 'uk']) {
+      assert.equal(entry.locales[locale].dossier, canonical.locales[locale].dossier);
+      assert.equal(entry.locales[locale].review, canonical.locales[locale].review);
+    }
+  }
+});
