@@ -19,7 +19,7 @@ test('ten editorial race scenes have distinct, bilingual reader-first summaries'
       assert.ok(copy.summary.length >= 170, `${story.slug} ${locale}: synopsis lacks narrative context`);
       assert.ok(copy.summary.length <= 650, `${story.slug} ${locale}: too long for a catalogue card`);
       assert.doesNotMatch(copy.summary, /<[^>]+>|(?:https?:\/\/)/, `${story.slug} ${locale}: untrusted markup or URL`);
-      assert.match(copy.summary, /(?:\d{4}|\d{1,2}|Фудзі|Діжон|Монреаль|Сахір|Монці|Інтерлагосі|Ferrari|Формулу-1)/, `${story.slug} ${locale}: missing historical scene anchor`);
+      assert.match(copy.summary, /(?:\d{4}|\d{1,2}|Фудзі|Діжон|Монреаль|Сахір|Монці|Інтерлагосі|Ferrari|Формулу-1|Dijon|Monza|Montreal|Sakhir|Interlagos)/, `${story.slug} ${locale}: missing historical scene anchor`);
     }
   }
 });
