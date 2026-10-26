@@ -126,7 +126,7 @@ export const editorialDraftArticles = {
         "heading": "Таблиця з прихованою умовою",
         "paragraphs": [
           "Уявіть: Прост набирає більше очок за сезон 1988 року, а чемпіоном стає Сенна. Помилки немає: за тодішніми правилами враховували лише одинадцять найкращих результатів кожного гонщика.",
-          "Сенна завершив сезон із 90 заліковими очками, Прост — із 87. Для напарників, які весь рік боролися за кожну перевагу, різниця між усіма набраними й зарахованими очками вирішила титул."
+          "Сенна завершив сезон із 90 заліковими очками, Прост — із 87. Для напарників, які весь рік боролися за кожну перевагу, різниця між усіма набраними й зарахованими очками вирішила титул. Це правило діяло для всіх учасників чемпіонату, але саме суперництво двох пілотів McLaren зробило його таким помітним. Гонки відбулися, очки були зароблені, проте вирішальним став підсумок за правилами сезону, а не проста сума фінішів."
         ]
       },
       {
@@ -179,7 +179,8 @@ export const editorialDraftArticles = {
         "heading": "The fight that could not change the winner",
         "paragraphs": [
           "Jabouille had won the French Grand Prix, but the fight that filled the closing moments was behind him. Villeneuve and Arnoux were contesting the next two positions. They traded places, ran side by side and touched wheels as neither gave up second without a fight.",
-          "The flag separated them: Ferrari ahead of the second Renault. It was a rare race where two different achievements deserved to survive in memory. Jabouille delivered the result that mattered to the Renault programme; Villeneuve and Arnoux delivered the contest that people replayed. Neither story needs to erase the other."
+          "The flag separated them: Ferrari ahead of the second Renault. It was a rare race where two different achievements deserved to survive in memory. Jabouille delivered the result that mattered to the Renault programme; Villeneuve and Arnoux delivered the contest that people replayed. Neither story needs to erase the other.",
+          "There was another reason the result mattered beyond the duel. A turbocharged Renault had beaten the field in a championship still dominated by the familiar normally aspirated engines. The finishing order captured a technical change and a human contest on the same afternoon; replaying only the Ferrari and Arnoux would miss the scale of Jabouille's drive."
         ]
       },
       {
@@ -216,7 +217,8 @@ export const editorialDraftArticles = {
         "heading": "Дуель, яка не могла змінити переможця",
         "paragraphs": [
           "Жабуй здобув перемогу в Гран-прі Франції, але наприкінці погляди були прикуті до боротьби позаду нього. Вільньов та Арну змагалися за два наступні місця. Вони мінялися позиціями, їхали поруч і торкалися колесами: ніхто не хотів віддавати друге місце без бою.",
-          "Прапор розділив їх: Ferrari попереду другого Renault. Це був рідкісний випадок, коли пам'яті заслуговували два різні досягнення. Жабуй приніс результат, важливий для програми Renault; Вільньов і Арну подарували дуель, яку переглядають знову й знову. Жодна історія не повинна витісняти іншу."
+          "Прапор розділив їх: Ferrari попереду другого Renault. Це був рідкісний випадок, коли пам'яті заслуговували два різні досягнення. Жабуй приніс результат, важливий для програми Renault; Вільньов і Арну подарували дуель, яку переглядають знову й знову. Жодна історія не повинна витісняти іншу.",
+          "Та результат важив не лише через дуель. Турбований Renault переміг у чемпіонаті, де ще переважали звичні атмосферні двигуни. Один фініш об'єднав технічний прорив і людське суперництво. Якщо дивитися лише на Ferrari та Арну, можна не помітити масштабу перемоги Жабуя."
         ]
       },
       {
@@ -407,7 +409,8 @@ export const editorialDraftArticles = {
         "heading": "Two ways for a first win to disappear",
         "paragraphs": [
           "Russell's day seemed to be coming together in a Mercedes. Then the late Safety Car changed the rhythm. A tyre mix-up at the team's stop forced him back into the pits, and subsequent tyre trouble ended the recovery he had begun.",
-          "Pérez was already moving through the field after his first-lap setback. The failures elsewhere did not complete his comeback for him; he had placed his Racing Point where it could benefit. Sakhir's final order put Pérez first, Ocon second and Stroll third. Russell's lost chance remains part of the drama, but it cannot be counted as a victory."
+          "Pérez was already moving through the field after his first-lap setback. The failures elsewhere did not complete his comeback for him; he had placed his Racing Point where it could benefit. Sakhir's final order put Pérez first, Ocon second and Stroll third. Russell's lost chance remains part of the drama, but it cannot be counted as a victory.",
+          "The podium made the result even less predictable from the first lap: Ocon finished second in a Renault, and Stroll put another Racing Point in third. Pérez had not merely survived the early damage; his recovery brought the team a victory on an evening when the expected Mercedes celebration came apart."
         ]
       },
       {
@@ -444,7 +447,8 @@ export const editorialDraftArticles = {
         "heading": "Як може зникнути шанс на першу перемогу",
         "paragraphs": [
           "Здавалося, день Расселла в Mercedes складається якнайкраще. Але пізній сейфті-кар змінив ритм гонки. Плутанина з комплектами шин змусила його знову заїхати в бокси, а подальші проблеми з гумою зірвали спробу відігратися.",
-          "Перес на той момент уже повертався з глибини пелотону після невдачі на першому колі. Чужі помилки не зробили всю роботу за нього: Racing Point опинилася там, де могла скористатися нагодою. У Сахірі першим став Перес, другим — Окон, третім — Стролл. Втрачений шанс Расселла — частина цієї драми, але не перемога в протоколі."
+          "Перес на той момент уже повертався з глибини пелотону після невдачі на першому колі. Чужі помилки не зробили всю роботу за нього: Racing Point опинилася там, де могла скористатися нагодою. У Сахірі першим став Перес, другим — Окон, третім — Стролл. Втрачений шанс Расселла — частина цієї драми, але не перемога в протоколі.",
+          "Подіум став ще одним сюрпризом, якого важко було чекати після першого кола: Окон фінішував другим на Renault, а Стролл привів інший Racing Point третім. Перес не просто пережив невдалий старт. Його повернення принесло команді перемогу в день, коли очікуване свято Mercedes зірвалося."
         ]
       },
       {
@@ -635,7 +639,8 @@ export const editorialDraftArticles = {
         "heading": "Two finishes that did not agree",
         "paragraphs": [
           "Massa took the chequered flag as the winner in Brazil. For an instant, the sight at the front could suggest the championship had gone his way too. But the classification that mattered for the title was still being determined farther back on the wet track.",
-          "Hamilton's move into fifth left him with enough points to take the championship. Massa kept the Grand Prix victory, yet the season belonged to his rival. In the final moments at Interlagos, winning the race and winning the year had become two separate events — close together in time, painfully far apart in meaning."
+          "Hamilton's move into fifth left him with enough points to take the championship. Massa kept the Grand Prix victory, yet the season belonged to his rival. In the final moments at Interlagos, winning the race and winning the year had become two separate events — close together in time, painfully far apart in meaning.",
+          "The crucial distinction can be stated without inventing any private deal: Massa's win was secure, while Hamilton needed the points for fifth. As the surface grew wetter, those who had changed tyres and those still on dry-weather rubber faced different levels of grip. The championship turned on the actual finishing order, not a story assigned afterward to Glock's intentions."
         ]
       }
     ],
@@ -665,7 +670,8 @@ export const editorialDraftArticles = {
         "heading": "Два фініші з різними підсумками",
         "paragraphs": [
           "Масса перетнув фінішну лінію переможцем Гран-прі Бразилії. На мить здавалося, що титул теж може дістатися йому. Але позиції, від яких залежало чемпіонство, ще визначалися позаду — на мокрій трасі.",
-          "Гамільтон піднявся на п'яте місце й набрав достатньо очок для титулу. Масса залишив собі перемогу в гонці, а чемпіонство дісталося супернику. На останніх хвилинах Інтерлагоса виграти неділю та виграти сезон виявилося двома різними подіями — близькими за часом і болісно далекими за значенням."
+          "Гамільтон піднявся на п'яте місце й набрав достатньо очок для титулу. Масса залишив собі перемогу в гонці, а чемпіонство дісталося супернику. На останніх хвилинах Інтерлагоса виграти неділю та виграти сезон виявилося двома різними подіями — близькими за часом і болісно далекими за значенням.",
+          "Тут не потрібні припущення про чиюсь таємну домовленість: перемога Масси вже була фактом, а Гамільтону потрібні були очки за п'яте місце. Коли асфальт мокрішав, гонщики на проміжних і сухих шинах мали різне зчеплення. Долю титулу вирішив справжній порядок фінішу, а не приписані Глоку наміри."
         ]
       }
     ]
