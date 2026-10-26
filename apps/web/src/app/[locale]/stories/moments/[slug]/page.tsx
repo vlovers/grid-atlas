@@ -2,8 +2,6 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { editorialStoryPreviews } from '@/components/stories/editorial-previews';
-import { editorialMomentPath } from '@/components/stories/editorial-moment-model';
-import { momentScenes } from '@/components/stories/editorial-moment-scenes';
 import { relatedEditorialMoments } from '@/components/stories/editorial-related';
 import { draftArticle } from '@/components/stories/editorial-draft-articles';
 import { resolveEditorialPeople } from '@/components/stories/editorial-people-resolver';
@@ -15,7 +13,6 @@ import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
-import { editorialReadingWaypoints } from '@/components/stories/editorial-reading-waypoints';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -37,8 +34,6 @@ export default async function EditorialMoment({ params }: Props) {
   if (!story) notFound();
   const uk = locale === 'uk';
   const copy = story[locale];
-  const beats = editorialMomentPath(slug, locale);
-  const scenes = momentScenes(slug, locale);
   const related = relatedEditorialMoments(slug);
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
@@ -101,28 +96,6 @@ export default async function EditorialMoment({ params }: Props) {
         </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
       </section>
-      {beats && <section aria-labelledby="reading-path" style={{ marginTop: 56, borderTop: "1px solid var(--line)", paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{uk ? "ЧОТИРИ СЮЖЕТНІ МОМЕНТИ" : "FOUR STORY BEATS"}</p>
-        <h2 id="reading-path">{uk ? "Маршрут історією" : "A path through the story"}</h2>
-        <ol className={styles.editorialActs}>
-          {beats.map((beat, index) => <li key={beat} className={styles.editorialAct}>
-            <h3>{beat}</h3>
-            {scenes?.[index] && <p>{scenes[index]}</p>}
-            <small>{uk ? `Акт ${index + 1} із ${beats.length}` : `Act ${index + 1} of ${beats.length}`}</small>
-          </li>)}
-        </ol>
-        <p className={styles.note}>{uk ? "Це редакційний маршрут, а не перевірена покрокова хронологія гонки." : "This is an editorial reading path, not a verified lap-by-lap race timeline."}</p>
-      </section>}
-      {chapters && slug in editorialReadingWaypoints && <section aria-labelledby="reading-waypoints" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
-        <p className={styles.eyebrow}>{uk ? 'П’ЯТЬ ТЕМ ДЛЯ ЧИТАННЯ' : 'FIVE THREADS TO FOLLOW'}</p>
-        <h2 id="reading-waypoints">{uk ? 'З чого почати' : 'Choose a thread'}</h2>
-        <nav aria-label={uk ? 'Теми статті' : 'Story reading threads'} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 175px), 1fr))', gap: 12 }}>
-          {editorialReadingWaypoints[slug as keyof typeof editorialReadingWaypoints].filter(point => point.chapter <= chapters.length).map((point, index) => <a key={point.chapter} href={`#chapter-${point.chapter}`} style={{ padding: 18, border: '1px solid var(--line)', textDecoration: 'none', minHeight: 96 }}>
-            <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')}</span>
-            <strong style={{ display: 'block', marginTop: 8 }}>{point[locale]} ↗</strong>
-          </a>)}
-        </nav>
-      </section>}
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
