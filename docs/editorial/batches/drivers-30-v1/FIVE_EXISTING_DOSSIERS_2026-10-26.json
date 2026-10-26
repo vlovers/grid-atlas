@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "research_only",
+  "source_manifest": "docs/editorial/releases/v1/manifest.json",
+  "note": "These five priority drivers already have independent bilingual dossier and review paths; do not duplicate them into short-story draft collection or imply editor approval.",
+  "entries": [
+    {
+      "driver_id": "ayrton-senna",
+      "source": "existing_release_v1_research_dossier",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/pilots/senna/en.dossier.json",
+          "review": "docs/editorial/pilots/senna/en.review.json"
+        },
+        "uk": {
+          "dossier": "docs/editorial/pilots/senna/uk.dossier.json",
+          "review": "docs/editorial/pilots/senna/uk.review.json"
+        }
+      },
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "alain-prost",
+      "source": "existing_release_v1_research_dossier",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/alain-prost.en.json",
+          "review": "docs/editorial/releases/v1/reviews/alain-prost.en.review.json"
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/alain-prost.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/alain-prost.uk.review.json"
+        }
+      },
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "michael-schumacher",
+      "source": "existing_release_v1_research_dossier",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/michael-schumacher.en.json",
+          "review": "docs/editorial/releases/v1/reviews/michael-schumacher.en.review.json"
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/michael-schumacher.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/michael-schumacher.uk.review.json"
+        }
+      },
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "lewis-hamilton",
+      "source": "existing_release_v1_research_dossier",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/lewis-hamilton.en.json",
+          "review": "docs/editorial/releases/v1/reviews/lewis-hamilton.en.review.json"
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/lewis-hamilton.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/lewis-hamilton.uk.review.json"
+        }
+      },
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "max-verstappen",
+      "source": "existing_release_v1_research_dossier",
+      "locales": {
+        "en": {
+          "dossier": "docs/editorial/dossiers/max-verstappen.en.json",
+          "review": "docs/editorial/releases/v1/reviews/max-verstappen.en.review.json"
+        },
+        "uk": {
+          "dossier": "docs/editorial/dossiers/max-verstappen.uk.json",
+          "review": "docs/editorial/releases/v1/reviews/max-verstappen.uk.review.json"
+        }
+      },
+      "publication": "unpublished"
+    }
+  ]
+}
