@@ -231,3 +231,14 @@ test('ten turning-point chapters focus on historical events instead of editorial
     assert.doesNotMatch(body, /archive should|readers should|a full Deep Dive|the story should|archive needs|архів має|історія повинна|читач(?:ам|еві) варто|потрібно показати/i);
   }
 });
+
+test('all ten story middle acts add readable bilingual events without editor instructions', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapter = drafts[slug]?.[locale]?.[2];
+    assert.ok(chapter, slug + '/' + locale + ' missing second act');
+    const body = chapter.paragraphs.join(' ');
+    assert.ok(body.length > 390, slug + '/' + locale + ' second act too thin');
+    assert.doesNotMatch(body, /the archive should|the story needs|a reader should|we should resist|readers should|a visual timeline|архів має|не слід удавати|історія повинна|читач має/i, slug + '/' + locale + ' includes editorial meta-copy');
+  }
+});
