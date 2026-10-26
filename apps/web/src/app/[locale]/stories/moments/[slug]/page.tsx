@@ -1,3 +1,4 @@
+import { editorialVisualDirections } from '@/components/stories/editorial-visuals';
 import { editorialEvidenceLinks } from '@/components/stories/editorial-evidence-links';
 import { isAiReviewedStory } from '@/components/stories/editorial-publication';
 import { editorialOfficialResults } from '@/components/stories/editorial-official-results';
@@ -40,10 +41,9 @@ export default async function EditorialMoment({ params }: Props) {
   const related = relatedEditorialMoments(slug);
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
-  const artKinds: ArtKind[] = ['duel', 'apex', 'velocity', 'grid', 'helmet'];
-  const storyIndex = editorialStoryPreviews.findIndex(item => item.slug === slug);
-  const artKind = artKinds[storyIndex % artKinds.length];
-  const artTone = (['gold', 'violet', 'coral', 'mint'] as const)[storyIndex % 4];
+  const visual = editorialVisualDirections[slug];
+  const artKind: ArtKind = visual?.kind ?? 'velocity';
+  const artTone = visual?.tone ?? 'coral';
   const photo = approvedEditorialPhoto(slug);
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
@@ -55,6 +55,7 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {published ? (uk ? 'ІСТОРІЯ' : 'FEATURE') : (uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW')}</p>
         <span className={styles.aiReviewedLabel}>{published ? 'AI-reviewed' : (uk ? 'AI-перевірка джерел · чернетка' : 'AI source-check · draft')}</span>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
+        <p className={styles.editorialHeroMotif}>{visual?.motif[locale]}</p>
         <p className={styles.lead}>{copy.summary}</p>
         {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
       </header>
@@ -71,9 +72,13 @@ export default async function EditorialMoment({ params }: Props) {
             {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`}><span aria-hidden="true">{String(index + 1).padStart(2, '0')} · </span>{chapter.heading}</a>)}
           </nav>
           <div className={styles.editorialProse}>
-            {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`}>
+            {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`} className={styles.editorialChapterScene}>
               <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
               <h3>{chapter.heading}</h3>
+              {index === 2 && <figure className={styles.editorialSceneFigure} aria-label={uk ? 'Авторська ілюстрація, не історичне фото чи схема траси' : 'Original illustration, not a historical photograph or circuit map'}>
+                <div className={styles.editorialSceneArtwork}><MotorsportArt kind={artKind} tone={artTone} /></div>
+                <figcaption>{uk ? 'Авторська графіка Grid Atlas · не історична реконструкція' : 'Original Grid Atlas artwork · not a historical reconstruction'}</figcaption>
+              </figure>}
               {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
             </section>)}
           </div>
