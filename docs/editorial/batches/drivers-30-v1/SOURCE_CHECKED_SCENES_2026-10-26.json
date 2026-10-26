@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "New editorial middle-act scene additions in PR #313. AI research, not human approval.",
+  "publication": "unpublished",
+  "scenes": [
+    {
+      "driver_id": "keke-rosberg",
+      "chapter_id": "the-williams-opportunity",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/is-there-still-hope-for-leclerc-we-revisit-the-biggest-title-comebacks-in-f1.1fSX2eMF1KYxoh4A3k82hy/",
+        "https://www.formula1.com/en/results/1982/drivers/KEKROS01/keke-rosberg",
+        "https://www.motorsport.com/f1/news/a-history-of-f1s-second-half-comebacks-do-mclaren-and-mercedes-have-a-chance/10641276/"
+      ],
+      "verified_scope": "1982 late-season podiums, Swiss GP win at Dijon, Las Vegas fifth, Watson second, title context",
+      "source_limits": "Publisher summaries and official archive classifications; no claim of independently verified motives",
+      "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "damon-hill",
+      "chapter_id": "from-a-one-point-defeat-to-the-title",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1998/races/683/belgium/race-result",
+        "https://www.formula1.com/en/latest/article/were-streaming-the-1998-belgian-grand-prix-heres-why-you-should-watch.5PlRdiNnw4SUXbLqfnTDmB"
+      ],
+      "verified_scope": "Jordan first and second finish Spa 1998, Hill/Ralf finishing order, Schumacher/Coulthard collision in Formula1.com editorial account",
+      "source_limits": "Classification cannot verify instructions in team radio; Formula 1 editorial account is distinct from standings but same publisher",
+      "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "nico-rosberg",
+      "chapter_id": "retirement-after-the-crown",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/rosberg-announces-his-retirement-from-f1-racing.5ZWcPPPCsc3kpreN6tKdqs",
+        "https://www.fia.com/news/fia-president-salutes-nico-rosberg-new-f1-world-champion-announces-retirement-fia-prize-giving",
+        "https://www.bbc.co.uk/sport/formula1/38185846"
+      ],
+      "verified_scope": "2016 Abu Dhabi second, title, Dec 2 retirement and Rosberg's public explanation",
+      "source_limits": "Rosberg's retrospective motivation is attributed to him, not presented as independent psychological inference",
+      "status": "ai_source_checked_human_review_pending"
+    }
+  ]
+}
