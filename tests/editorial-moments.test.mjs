@@ -315,3 +315,17 @@ test('article chapters do not inject generic reflections after every scene', () 
   const faq = literal(read(directory + 'editorial-reader-questions.ts'), 'editorialReaderQuestions');
   assert.equal(Object.values(faq).flat().length, 20);
 });
+
+test('story pages prioritise racing narratives over generic life lessons and editor-only queues', () => {
+  assert.ok(detail.includes('aria-labelledby="research-chapters"'));
+  assert.ok(detail.includes('aria-labelledby="reader-questions"'));
+  assert.ok(detail.includes('aria-labelledby="preview-status"'));
+  assert.ok(detail.includes('index: false'), 'unapproved drafts must remain noindexed');
+  for (const hidden of [
+    'editorialTakeaways', 'editorialReflection', 'editorialFactCheckPrompts',
+    'story-takeaways', 'story-reflection', 'Editorial fact-check queue',
+  ]) {
+    assert.ok(!detail.includes(hidden), hidden + ' must not interrupt the reader');
+  }
+  assert.ok(detail.indexOf('aria-labelledby="research-chapters"') < detail.indexOf('aria-labelledby="reader-questions"'));
+});
