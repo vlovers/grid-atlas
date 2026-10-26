@@ -10,9 +10,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Monza was a comeback, not a conclusion",
+        "heading": "The comeback was not an answer",
         "paragraphs": [
-          "After his Nürburgring accident, Lauda missed two rounds before returning at Monza. That comeback was extraordinary; it was not a promise to accept every danger that followed. Hunt had used the intervening races to close the championship gap, and the battle carried on toward the final round. By the time both reached Japan, the standings were close enough that a single finish could decide the title. The accident and the return had changed the season. Fuji would test something different: whether Lauda was prepared to race in conditions he considered unsafe."
+          "After the Nürburgring fire, Lauda's return at Monza was astonishing. He had missed only two Grands Prix. Meanwhile Hunt had narrowed the gap, turning the championship into a contest that neither could settle early.",
+          "But coming back to racing and consenting to every risk are different things. At Fuji, the rain would force Lauda to make that distinction in public."
         ]
       },
       {
@@ -45,9 +46,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Повернення в Монці — не фінал історії",
+        "heading": "Повернення ще не було відповіддю",
         "paragraphs": [
-          "Після аварії на Нюрбургринзі Лауда пропустив два етапи й повернувся в Монці. Це було неймовірне повернення, але воно не означало згоди на будь-яку небезпеку надалі. За час його відсутності Гант скоротив відставання, і боротьба за титул тривала до останнього етапу. Перед Японією різниця була настільки малою, що долю чемпіонства міг вирішити один фініш. Аварія й повернення вже змінили сезон. На Фудзі постало інше питання: чи готовий Лауда їхати за умов, які вважав небезпечними."
+          "Після пожежі на Нюрбургринзі повернення Лауди в Монці здавалося неймовірним. Він пропустив лише два Гран-прі. Тим часом Гант скоротив відставання, і боротьбу за титул уже ніхто не міг завершити достроково.",
+          "Та повернутися до перегонів і погодитися на будь-який ризик — різні речі. На Фудзі дощ змусив Лауду зробити цей вибір на очах у всіх."
         ]
       },
       {
@@ -82,9 +84,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Two ways to count one season",
+        "heading": "A scoreboard with a hidden catch",
         "paragraphs": [
-          "The 1988 standings have a catch. Add every race result and Prost comes out ahead, with 105 points to Senna's 94. Apply the rule actually used that year — only the eleven best finishes counted — and the order reverses: Senna 90, Prost 87. Neither set of numbers is a typo; they answer different questions. On the final official table, Senna was champion. For Prost, winning more raw points had not been enough. The unusual arithmetic became part of a rivalry in which the two drivers could rarely escape direct comparison."
+          "Imagine watching Prost score more points across 1988, then seeing Senna crowned champion. It was not a mistake: only each driver's best eleven results counted towards the title.",
+          "Senna finished on 90 counted points, Prost on 87. For two teammates who had spent the year fighting for every advantage, the distinction between all points scored and points that counted became decisive."
         ]
       },
       {
@@ -117,9 +120,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Два способи порахувати один сезон",
+        "heading": "Таблиця з прихованою умовою",
         "paragraphs": [
-          "У таблиці 1988 року є пастка. Якщо скласти всі очки за гонки, попереду Прост: 105 проти 94 у Сенни. Але за тодішнім правилом враховували лише одинадцять найкращих результатів. І порядок змінюється: Сенна — 90 залікових очок, Прост — 87. Жодна із цих цифр не є помилкою: це різні способи підрахунку. В офіційному заліку чемпіоном став Сенна. Прост набрав більше очок загалом, але цього було недостатньо. Так навіть арифметика стала частиною їхнього суперництва."
+          "Уявіть: Прост набирає більше очок за сезон 1988 року, а чемпіоном стає Сенна. Помилки немає: за тодішніми правилами враховували лише одинадцять найкращих результатів кожного гонщика.",
+          "Сенна завершив сезон із 90 заліковими очками, Прост — із 87. Для напарників, які весь рік боролися за кожну перевагу, різниця між усіма набраними й зарахованими очками вирішила титул."
         ]
       },
       {
@@ -154,9 +158,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A duel the leader could not see",
+        "heading": "The winner was already gone",
         "paragraphs": [
-          "Jabouille was driving toward Renault's breakthrough win while Villeneuve and Arnoux fought behind him. Neither contender for second could change the leader's finishing position. Yet neither treated the place as settled. They attacked, defended and repeatedly ran side by side in the closing laps, sometimes close enough for their wheels to touch. The Ferrari eventually prevailed over the second Renault. The duel mattered because the outcome remained genuinely uncertain long after the victory at the front looked secure."
+          "Jabouille was driving towards Renault's historic victory, too far ahead for Villeneuve and Arnoux to catch. They were not battling for the win. They were fighting for second — and neither was prepared to settle for third.",
+          "The last laps became a race within the race. Two cars kept meeting wheel to wheel, turning a position behind the leader into the image that people would remember decades later."
         ]
       },
       {
@@ -189,9 +194,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Дуель за спиною лідера",
+        "heading": "Переможець уже був попереду",
         "paragraphs": [
-          "Жабуй вів Renault до історичної перемоги, а Вільнев і Арну билися позаду нього. Жоден із них уже не міг змінити результат лідера, але друге місце залишалося відкритим. На останніх колах пілоти атакували, захищали позицію й не раз їхали пліч-о-пліч — інколи так близько, що колеса торкалися. Зрештою Ferrari випередила другий Renault. Саме невизначеність цієї боротьби тримала увагу, хоча переможець гонки вже здавався відомим."
+          "Жабуй їхав до історичної перемоги Renault. Вільньов і Арну вже не могли його наздогнати. Вони боролися не за перше, а за друге місце — і жоден не хотів залишатися третім.",
+          "Останні кола перетворилися на гонку всередині гонки. Два боліди знову й знову опинялися колесо в колесо, і боротьба позаду лідера стала кадром, який пам'ятають десятиліттями."
         ]
       },
       {
@@ -226,9 +232,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A different challenge on Sunday",
+        "heading": "When the Safety Car left",
         "paragraphs": [
-          "Wet qualifying rewarded Vettel with a surprise pole. The Grand Prix then began behind the Safety Car, so there was no ordinary standing start in which to lose that advantage. Once racing began, the challenge shifted to keeping the Toro Rosso in front while the track and tyre demands changed. Vettel reached the finish more than twelve seconds ahead of Kovalainen. The margin gave the result a different shape from a fortunate qualifying lap: his team had stayed competitive for the race distance."
+          "Winning pole in the rain was a surprise. Sunday demanded something else: Vettel had to lead with an entire field ready to attack. The Grand Prix began behind the Safety Car because conditions were so poor.",
+          "When racing began, the Toro Rosso stayed in front. Pole had opened a door; Vettel still had to keep it open through the rain, the stops and every lap to the flag."
         ]
       },
       {
@@ -261,9 +268,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "У неділю почалося інше випробування",
+        "heading": "Коли сейфті-кар звернув убік",
         "paragraphs": [
-          "Дощова кваліфікація принесла Феттелю несподіваний поул. Але гонка стартувала за автомобілем безпеки, тож звичного старту з місця не було. Коли розпочалася боротьба, Себастьяну довелося втримувати Toro Rosso попереду, поки змінювалися стан траси й вимоги до шин. На фініші він випередив Ковалайнена більш ніж на дванадцять секунд. Цей відрив уже не поясниш лише вдалим колом у кваліфікації: команда протрималася серед лідерів усю дистанцію."
+          "Поул під дощем став несподіванкою. Але неділя вимагала іншого: Феттелю довелося лідирувати, коли весь пелотон був готовий атакувати. Через негоду гонка почалася за сейфті-каром.",
+          "Коли боротьба почалася, Toro Rosso залишилася попереду. Поул відчинив двері, але Феттелю ще треба було втримати перевагу під дощем, під час пітстопів і до самого прапора."
         ]
       },
       {
@@ -298,9 +306,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Every interruption sent the race somewhere new",
+        "heading": "A race that refused to settle",
         "paragraphs": [
-          "The rain in Montreal was not a single obstacle. A prolonged stoppage and repeated Safety Cars broke the Grand Prix into separate bursts of racing. Button's contact with other cars, penalty and pit-lane visits kept undoing his progress. Each restart presented a new field to pass and a new track surface to judge. The familiar shorthand 'last to first' captures the scale of the comeback but misses its messy rhythm: gains, setbacks, tyre changes and another chance to begin. The late charge could only happen after Button had survived all the earlier reversals."
+          "Every time Montreal appeared ready to find a rhythm, the conditions changed. Rain intensified. The race stopped. Safety Cars bunched the field. Each tyre choice became another gamble.",
+          "Button's recovery was not a smooth journey from the back. It was a succession of disrupted chances, setbacks and new decisions. That is why reaching the leaders again mattered long before the final lap."
         ]
       },
       {
@@ -333,9 +342,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Кожна зупинка змінювала гонку",
+        "heading": "Гонка, яка не знаходила ритму",
         "paragraphs": [
-          "Дощ у Монреалі не став однією перешкодою, яку можна було просто подолати. Через довгу паузу й численні виїзди автомобіля безпеки Гран-прі розпався на кілька коротших відрізків. Контакти, штраф і візити на пітлейн раз у раз перекреслювали прогрес Баттона. Після кожного рестарту він отримував нових суперників попереду й іншу трасу під колесами. Фраза «з останнього місця на перше» передає масштаб повернення, але приховує його справжній ритм: обгони, невдачі, зміни шин і нову спробу. До фінальної атаки треба було ще дожити."
+          "Щойно здавалося, що Монреаль входить у звичний ритм, усе змінювалося. Дощ посилювався. Гонку зупиняли. Сейфті-кари збирали пелотон. Кожен вибір шин ставав новим ризиком.",
+          "Повернення Баттона не було рівним проривом із кінця пелотону. Воно складалося з перерваних спроб, невдач і нових рішень. Тому саме повернення до лідерів стало подією задовго до останнього кола."
         ]
       },
       {
@@ -370,9 +380,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Two first wins in view",
+        "heading": "Two races, one circuit",
         "paragraphs": [
-          "Russell did not arrive in Sakhir as a regular Mercedes driver. He was filling in for the absent Lewis Hamilton, and suddenly had the pace to lead a Grand Prix. Pérez's route was the opposite: after first-lap contact he had to climb through traffic in the Racing Point. For much of the evening they were racing different races, Russell protecting a lead and Pérez rebuilding one opportunity at a time. The contrast mattered when the Safety Car arrived. The driver at the front could lose everything through a pit-stop mistake; the one who had recovered could suddenly be ready to win."
+          "Russell had been handed an extraordinary opportunity: with Hamilton absent, he was driving a front-running Mercedes. Pérez's start was almost the opposite. First-lap contact sent him towards the back.",
+          "For much of the afternoon Russell appeared to be chasing his first win, while Pérez's recovery unfolded away from the spotlight. The two journeys were heading towards an ending neither driver could predict."
         ]
       },
       {
@@ -405,9 +416,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Два шанси на першу перемогу",
+        "heading": "Дві гонки на одній трасі",
         "paragraphs": [
-          "Расселл приїхав у Сахір не як постійний пілот Mercedes: він заміняв Льюїса Гамільтона. Та раптом отримав темп, із яким можна було лідирувати в Гран-прі. Шлях Переса був протилежним: після контакту на першому колі він проривався крізь трафік на Racing Point. Значну частину вечора вони ніби їхали різні гонки: Расселл захищав лідерство, Перес крок за кроком повертав шанс. Коли з'явився автомобіль безпеки, різниця стала вирішальною. Пілот попереду міг усе втратити через помилку на пітстопі, а той, хто відігрався, — отримати нагоду перемогти."
+          "Расселл отримав винятковий шанс: за відсутності Гамільтона сів у Mercedes, здатний боротися за перемогу. Початок Переса був майже протилежним. Контакт на першому колі відкинув його назад.",
+          "Більшу частину дня здавалося, що Расселл рухається до першої перемоги, а Перес повертався в боротьбу десь поза увагою камер. Дві історії йшли до фіналу, якого не міг передбачити жоден із гонщиків."
         ]
       },
       {
@@ -442,9 +454,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The championship did not end in June",
+        "heading": "Forty-two points changed the conversation",
         "paragraphs": [
-          "The Montreal victory put Kubica on 42 points, four clear of both Hamilton and Massa. It was a genuine lead, not a theoretical challenge. But there were still many rounds left, and BMW Sauber had to compete with teams able to improve throughout the year. Ferrari and McLaren remained in the fight. As the season continued, Kubica could not keep the lead. That later outcome should not swallow the June result: for one round the championship table had a BMW Sauber driver at the top."
+          "Forty-two points. Four more than Hamilton and four more than Massa. After Montreal those numbers placed Kubica at the top of the drivers' championship.",
+          "A lead in June was not a trophy in November. But suddenly every BMW Sauber weekend raised a bigger question: could the team remain there? The possibility was real, and precisely because it was uncertain, every following result would matter."
         ]
       },
       {
@@ -477,9 +490,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Чемпіонат не закінчився в червні",
+        "heading": "Сорок два очки змінили розмову",
         "paragraphs": [
-          "Після Монреаля Кубіца мав 42 очки — на чотири більше за Гамільтона й Массу. Це було справжнє лідерство, а не теоретичний шанс. Та попереду залишалося багато етапів, а BMW Sauber потрібно було змагатися з командами, які продовжували вдосконалювати боліди. Ferrari й McLaren нікуди не зникли. Згодом Кубіца втратив перше місце в заліку. Але майбутні результати не скасовують червневого вечора, коли саме пілот BMW Sauber очолював чемпіонат."
+          "Сорок два очки. На чотири більше, ніж у Гамільтона та Масси. Після Монреаля ці цифри поставили Кубіцу на вершину особистого заліку.",
+          "Лідерство в червні — не кубок у листопаді. Але тепер кожен вікенд BMW Sauber ставив важливіше питання: чи зможе команда втриматися попереду? Шанс був реальним, а через невизначеність кожен наступний результат важив ще більше."
         ]
       },
       {
@@ -514,9 +528,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The first trophies were not the title",
+        "heading": "Three victories, no crown",
         "paragraphs": [
-          "Schumacher's first season in red brought three wins, in Spain, Belgium and Italy. Each victory mattered, especially the one at Monza in front of Ferrari's supporters. But the championship belonged elsewhere. That pattern would become familiar: speed on particular Sundays, another contender ahead in the overall fight. Ferrari still needed an entire season in which its results could withstand the best of its rivals, not merely a collection of memorable wins. The gap between those two achievements explains why the wait continued through the late 1990s."
+          "Ferrari had reasons to celebrate in 1996: Schumacher won three races. But none of those Sundays settled the question that had drawn him to Maranello. The drivers' title remained out of reach.",
+          "A memorable win could demonstrate speed and brilliance. A championship demanded reliability and points across a whole season. Those first trophies were evidence of possibility, not proof that a golden era was inevitable."
         ]
       },
       {
@@ -548,9 +563,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Перші кубки ще не означали титулу",
+        "heading": "Три перемоги — і жодного титулу",
         "paragraphs": [
-          "Перший сезон Шумахера в червоному приніс три перемоги — в Іспанії, Бельгії та Італії. Кожна була важливою, особливо Монца перед уболівальниками Ferrari. Але чемпіонство дісталося іншим. Ця картина повторювалася: швидкість в окремі неділі, та суперник попереду за підсумками сезону. Команді потрібні були не лише яскраві перемоги, а цілий рік результатів, достатніх для боротьби з найкращими. У цьому й полягала різниця між першими кубками та титулом, якого Ferrari чекала до 2000-го."
+          "У Ferrari були приводи святкувати 1996 року: Шумахер виграв три гонки. Але жодна з цих неділь не вирішила завдання, заради якого він прийшов до Маранелло. Чемпіонський титул залишався недосяжним.",
+          "Яскрава перемога могла показати швидкість і майстерність. Для чемпіонства були потрібні надійність та очки протягом усього сезону. Перші кубки довели, що команда здатна перемагати, але не обіцяли неминучого тріумфу."
         ]
       },
       {
@@ -584,9 +600,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The rain split the field",
+        "heading": "The rain made another race",
         "paragraphs": [
-          "The final weather change forced a choice. Hamilton came in for intermediate tyres; Glock stayed out on dry-weather rubber in the Toyota. Vettel then got ahead of Hamilton, leaving the McLaren sixth — one place short of the position needed for the title if Massa won. At the front, Massa still had his race under control. Behind him, the cars on different tyres were trying to survive the same wet corners at very different speeds. The championship arithmetic changed with every position, even though the eventual race winner never changed."
+          "Massa was leading at home, doing what he needed to do. But rain returned near the finish, and the title depended on positions behind him. Hamilton changed to intermediate tyres; Glock stayed out on dry-weather rubber.",
+          "For a few minutes viewers had to follow two races at once: Ferrari at the front and the fight for fifth behind it. Glock was not a title contender, yet his position suddenly mattered to the championship more than almost anyone else's."
         ]
       },
       {
@@ -613,9 +630,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Дощ розділив пелотон",
+        "heading": "Дощ створив ще одну гонку",
         "paragraphs": [
-          "Остання зміна погоди змусила команди обирати. Гамільтон перейшов на проміжні шини, а Глок залишив Toyota на гумі для сухої траси. Згодом Феттель випередив Гамільтона, і McLaren опинився шостим — на одну позицію нижче тієї, якої вистачало для титулу в разі перемоги Масси. Попереду Феліпе контролював свою гонку. А позаду боліди на різних шинах проходили ті самі мокрі повороти з зовсім різною швидкістю. Кожна зміна місць впливала на чемпіонство, хоча майбутній переможець гонки залишався тим самим."
+          "Масса лідирував удома й робив усе, що міг. Але наприкінці повернувся дощ, і титул залежав від позицій позаду. Гамільтон перейшов на проміжні шини, а Глок залишився на гумі для сухої траси.",
+          "Кілька хвилин глядачам доводилося стежити за двома гонками: Ferrari попереду та боротьбою за п'яте місце позаду. Глок не претендував на титул, але раптом саме його позиція стала однією з найважливіших у чемпіонаті."
         ]
       },
       {
@@ -644,9 +662,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A car for a manufacturer that had left",
+        "heading": "A car without a future",
         "paragraphs": [
-          "Keeping Brawn GP alive required more than changing the name on the factory. The 2009 car had been designed while Honda was still involved, and the new operation had to fit a Mercedes engine before the season began. The BGP 001 also carried the controversial double-diffuser idea, though Toyota and Williams had similar interpretations of the new aerodynamic rules. The dispute about legality eventually went Brawn's way. None of that made the organisation rich or its future secure. It simply meant the engineers' previous work could finally reach a race track."
+          "The strange part of Brawn GP's beginning is that the 2009 car already existed as a project. Honda had invested in its development, then decided to leave Formula 1. The question was no longer just whether the car would be fast. Would the people building it have a team to race for?",
+          "Ross Brawn and Nick Fry worked to save the operation. A Mercedes engine had to be fitted to the chassis. When the cars finally reached the grid, they carried the work of people who had spent the winter unsure there would even be a season."
         ]
       },
       {
@@ -679,9 +698,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Болід для виробника, який пішов",
+        "heading": "Болід без майбутнього",
         "paragraphs": [
-          "Щоб Brawn GP вижила, замінити назву на заводі було замало. Машину 2009 року створювали ще за участі Honda, а новій команді до старту сезону довелося встановлювати двигун Mercedes. BGP 001 мав і суперечливий подвійний дифузор, хоча Toyota та Williams теж використали схожі трактування нових аеродинамічних правил. Зрештою конструкцію визнали законною. Але це не зробило команду багатою й не гарантувало їй майбутнього. Воно лише дозволило інженерам побачити результати попередньої праці на трасі."
+          "Дивина початку Brawn GP у тому, що проєкт боліда на 2009 рік уже існував. Honda інвестувала в розробку, а потім вирішила піти з Формули-1. Тепер питання було не лише в швидкості машини. Чи матимуть люди, які її створювали, команду для виступів?",
+          "Росс Браун і Нік Фрай намагалися врятувати колектив. У шасі потрібно було встановити двигун Mercedes. Коли боліди нарешті вийшли на старт, за ними стояла праця людей, які всю зиму не знали, чи взагалі матимуть сезон."
         ]
       },
       {
