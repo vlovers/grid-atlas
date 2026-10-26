@@ -220,9 +220,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A lead to defend, not a lap to celebrate",
+        "heading": "The lead survived the stops",
         "paragraphs": [
-          "Qualifying had delivered Vettel an unexpected pole. The Grand Prix itself began behind the Safety Car because of the rain. When racing resumed, he was not merely defending a qualifying result: he had to stay ahead through changing grip and pit-stop decisions. He eventually finished more than twelve seconds clear of Heikki Kovalainen. The gap at the flag mattered. It showed that the pole had not been a brief accident of timing; Toro Rosso and its young driver had converted it into a full race victory."
+          "After two laps behind the Safety Car, Vettel finally had clear air at the front. By his first pit stop, on lap 18, he had built an advantage over Kovalainen. The stop briefly moved him back in the order, but as the other front-runners made their own stops he returned to the lead. The challenge was no longer to produce one quick lap in a wet qualifying session. Toro Rosso had to judge the changing weather and deliver clean stops while Vettel kept the pace. He took the flag over twelve seconds ahead of the McLaren."
         ]
       },
       {
@@ -253,9 +253,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Не просто швидке коло",
+        "heading": "Лідерство витримало пітстопи",
         "paragraphs": [
-          "Поул Феттеля став несподіванкою, але попереду залишалася вся дистанція. Через дощ Гран-прі розпочався за автомобілем безпеки. Після рестарту Себастьян мав утримувати лідерство, поки змінювалося зчеплення й команди вирішували, коли проводити пітстопи. На фініші він випередив Гейккі Ковалайнена більш ніж на дванадцять секунд. Цей відрив мав значення: поул не виявився короткою удачею у кваліфікації. Toro Rosso та її молодий пілот перетворили його на перемогу в повноцінній гонці."
+          "Після двох кіл за автомобілем безпеки Феттель нарешті отримав вільну трасу попереду. До першого пітстопу на 18-му колі він уже створив відрив від Ковалайнена. Зупинка ненадовго відкинула його назад, але коли суперники теж поїхали в бокси, Себастьян повернувся на перше місце. Тепер ішлося не про одне вдале коло в дощовій кваліфікації. Toro Rosso мала правильно реагувати на погоду й проводити зупинки, а Феттель — зберігати швидкість. На фініші він випередив McLaren більш ніж на дванадцять секунд."
         ]
       },
       {
@@ -498,9 +498,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Suzuka, after four unsuccessful campaigns",
+        "heading": "What 1999 revealed",
         "paragraphs": [
-          "Ferrari had come close to the drivers' title more than once. In 1997 Schumacher's fight with Jacques Villeneuve ended in controversy at Jerez. In 1998 he again lost the championship; in 1999 a broken leg interrupted his season even as Ferrari won the constructors' crown. That history made Suzuka in 2000 more than another Grand Prix. Schumacher secured the drivers' championship there, ending Ferrari's wait since 1979. The victory did not rewrite the disappointments of the previous four seasons. It gave them a different ending."
+          "Schumacher's broken leg at Silverstone forced Ferrari to continue much of the 1999 season without its leading driver. The team still won the constructors' championship, while Eddie Irvine fought Mika Häkkinen for the drivers' crown until the last round and fell short. Those were separate outcomes: the car and organisation could deliver a team title, but the driver's title remained missing. In 2000, Schumacher returned to the championship fight and secured the crown at Suzuka. The long wait since Jody Scheckter's 1979 title was finally over."
         ]
       },
       {
@@ -531,9 +531,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Сузука після чотирьох невдалих спроб",
+        "heading": "Що показав 1999 рік",
         "paragraphs": [
-          "Ferrari не раз наближалася до особистого титулу. У 1997 році боротьба Шумахера з Жаком Вільневом завершилася суперечливим зіткненням у Хересі. У 1998-му чемпіонство знову дісталося супернику. У 1999-му травма ноги перервала сезон Шумахера, хоча Ferrari виграла Кубок конструкторів. Тому Сузука 2000 року була значно більшою за черговий Гран-прі. Саме там Шумахер здобув титул і завершив очікування Ferrari, що тривало з 1979-го. Ця перемога не стерла попередніх розчарувань. Вона дала їм інший фінал."
+          "Через перелом ноги в Сільверстоуні Шумахер пропустив значну частину сезону 1999 року. Ferrari все ж здобула Кубок конструкторів, а Едді Ірвайн боровся з Мікою Гаккіненом за особистий титул до останнього етапу, але поступився. Це були різні результати: команда вже могла виграти чемпіонат конструкторів, та титул пілота досі залишався недосяжним. У 2000 році Шумахер повернувся до боротьби за чемпіонство й виграв його в Сузуці. Очікування, що тривало від титулу Джоді Шектера 1979 року, нарешті завершилося."
         ]
       },
       {
@@ -616,9 +616,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Six wins before the others caught up",
+        "heading": "The victories stopped coming",
         "paragraphs": [
-          "Button won six of the first seven races, building an advantage while rival teams struggled to match the BGP 001. Then the competitive order tightened. Red Bull improved and Button stopped collecting victories, even though Barrichello added wins at Valencia and Monza. That shift changed the team's task: no longer to dominate every Sunday, but to preserve enough points to stay ahead. At Brazil, Button's fifth place from fourteenth on the grid secured the drivers' championship, while Brawn also took the constructors' title. The unlikely rescue story had survived a season-long test."
+          "After Turkey, the seventh round, Button did not win another Grand Prix in 2009. Rivals were gaining ground, and the early lead suddenly looked less comfortable. Red Bull collected stronger results while Brawn had limited room to match the pace of development. The second half of the season also gave Barrichello his moments: he won the European Grand Prix at Valencia and the Italian Grand Prix at Monza. Those victories mattered for the team's points total, but they did not restore Button's early dominance. As the championship reached Brazil, consistency had become more valuable than another spectacular Sunday."
         ]
       },
       {
@@ -650,9 +650,9 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Шість перемог до того, як суперники наздогнали",
+        "heading": "Перемоги Баттона закінчилися",
         "paragraphs": [
-          "Баттон виграв шість із перших семи гонок, поки інші команди шукали відповідь на швидкість BGP 001. Потім боротьба стала щільнішою. Red Bull додала темпу, Баттон перестав перемагати, хоча Баррікелло ще виграв у Валенсії та Монці. Тепер завдання було іншим: не домінувати щонеділі, а втримати перевагу за очками. У Бразилії Баттон стартував чотирнадцятим і фінішував п'ятим, забезпечивши собі титул; Brawn того ж дня здобула Кубок конструкторів. Команда, яку ледь урятували, витримала цілий сезон боротьби."
+          "Після сьомого етапу в Туреччині Баттон більше не виграв жодного Гран-прі 2009 року. Суперники додавали швидкості, і колись величезний відрив уже не здавався таким надійним. Red Bull покращувала результати, а Brawn мала обмежені можливості для розвитку боліда. У другій половині сезону свої перемоги здобув Баррікелло — у Валенсії та Монці. Вони допомогли команді в заліку, але не повернули колишнього домінування Баттона. Напередодні Бразилії набрані раніше очки й стабільні фініші стали важливішими за нову ефектну перемогу."
         ]
       },
       {
