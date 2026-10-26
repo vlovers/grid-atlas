@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-spa-turns-reference-v1",
+  "circuit_id": "spa-francorchamps",
+  "status": "research_only",
+  "publication": "blocked_pending_independent_review",
+  "scope": "modern 19-turn Spa layout described by F1's July 2026 corner-name explainer; not historical configurations",
+  "configuration_id": "requires_exact_F1DB_configuration_reconciliation",
+  "intro": {
+    "en": "Spa's corners carry the names of streams, nearby towns, forests and people. To follow the lap is to travel through the Ardennes landscape — from the hairpin at La Source to the climb through Raidillon and the old Bus Stop.",
+    "uk": "Назви поворотів Спа зберігають історії струмків, сусідніх міст, лісів і людей. Коло цією трасою — подорож Арденнами: від шпильки La Source через підйом Raidillon до старої автобусної зупинки."
+  },
+  "turns": [
+    {
+      "number": 1,
+      "name": "La Source",
+      "shared_segment": null,
+      "story": {
+        "en": "The opening hairpin takes its name from the mineral springs found throughout the surrounding region.",
+        "uk": "Першу шпильку названо на честь джерел мінеральної води, якими відомі околиці Спа."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 2,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 3,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 4,
+      "name": "Eau Rouge / Raidillon",
+      "shared_segment": "eau-rouge-raidillon",
+      "story": {
+        "en": "Eau Rouge names the iron-rich stream and the lower part of the climb. Raidillon is the steep uphill section, not a synonym for every bend.",
+        "uk": "Eau Rouge — назва струмка із залізистою водою та нижньої частини підйому. Raidillon — крута ділянка вгору, а не назва кожного вигину."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 5,
+      "name": "Les Combes",
+      "shared_segment": "les-combes",
+      "story": {
+        "en": "The pair of bends is named for local valleys or ravines near the high part of the circuit.",
+        "uk": "Назва цієї зв’язки пов’язана з місцевими долинами та ярами біля верхньої частини траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 6,
+      "name": "Les Combes",
+      "shared_segment": "les-combes",
+      "story": {
+        "en": "The pair of bends is named for local valleys or ravines near the high part of the circuit.",
+        "uk": "Назва цієї зв’язки пов’язана з місцевими долинами та ярами біля верхньої частини траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 7,
+      "name": "Malmedy",
+      "shared_segment": null,
+      "story": {
+        "en": "This corner recalls the Belgian town linked by roads used by the earliest long version of the circuit.",
+        "uk": "Поворот названо на честь бельгійського міста, дороги до якого були частиною ранньої довгої конфігурації траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 8,
+      "name": "Bruxelles",
+      "shared_segment": null,
+      "story": {
+        "en": "A long right-hander named for Brussels; Rivage is a familiar alternative name.",
+        "uk": "Довгий правий поворот названо на честь Брюсселя; також часто можна почути стару назву Rivage."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 9,
+      "name": "Jacky Ickx Curve",
+      "shared_segment": null,
+      "story": {
+        "en": "Formerly known by other names, including Speakers Corner, this bend now honours Belgian racer Jacky Ickx.",
+        "uk": "Раніше цей вигин мав інші назви, зокрема Speakers Corner, а тепер носить ім’я бельгійського гонщика Жакі Ікса."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 10,
+      "name": "Pouhon",
+      "shared_segment": "pouhon",
+      "story": {
+        "en": "The double left carries a name associated with the region's mineral springs; Double Gauche is another description.",
+        "uk": "Подвійний лівий поворот названо словом, пов’язаним із місцевими мінеральними джерелами; інша назва — Double Gauche."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 11,
+      "name": "Pouhon",
+      "shared_segment": "pouhon",
+      "story": {
+        "en": "The double left carries a name associated with the region's mineral springs; Double Gauche is another description.",
+        "uk": "Подвійний лівий поворот названо словом, пов’язаним із місцевими мінеральними джерелами; інша назва — Double Gauche."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 12,
+      "name": "Fagnes",
+      "shared_segment": "fagnes",
+      "story": {
+        "en": "Named for nearby Ardennes wetlands; the rapid left-right sequence is also called Pif-Paf.",
+        "uk": "Назва походить від болотистих місцевостей Арденн; швидку зв’язку також називають Pif-Paf."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 13,
+      "name": "Fagnes",
+      "shared_segment": "fagnes",
+      "story": {
+        "en": "Named for nearby Ardennes wetlands; the rapid left-right sequence is also called Pif-Paf.",
+        "uk": "Назва походить від болотистих місцевостей Арденн; швидку зв’язку також називають Pif-Paf."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 14,
+      "name": "Campus",
+      "shared_segment": null,
+      "story": {
+        "en": "The name honours the nearby Campus Automobile educational centre; this corner was previously called Stavelot.",
+        "uk": "Назва відсилає до місцевого навчального центру Campus Automobile; раніше поворот називали Stavelot."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 15,
+      "name": "Paul Frère",
+      "shared_segment": null,
+      "story": {
+        "en": "The corner commemorates the Belgian racing driver and journalist who also won Le Mans in 1960.",
+        "uk": "Поворот увічнює бельгійського гонщика й журналіста Поля Фрера, переможця Ле-Мана 1960 року."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 16,
+      "name": "Blanchimont",
+      "shared_segment": "blanchimont",
+      "story": {
+        "en": "These high-speed left turns take their name from a farm near the track.",
+        "uk": "Ці швидкі ліві повороти названо на честь ферми, що стояла поблизу траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 17,
+      "name": "Blanchimont",
+      "shared_segment": "blanchimont",
+      "story": {
+        "en": "These high-speed left turns take their name from a farm near the track.",
+        "uk": "Ці швидкі ліві повороти названо на честь ферми, що стояла поблизу траси."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 18,
+      "name": "Bus Stop Chicane",
+      "shared_segment": "bus-stop-chicane",
+      "story": {
+        "en": "A bus stop once stood on the public road here. The chicane was later redesigned and moved before the 2007 race.",
+        "uk": "Тут, біля звичайної дороги, колись була автобусна зупинка. Перед гонкою 2007 року шикану змінили й трохи перенесли."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    },
+    {
+      "number": 19,
+      "name": "Bus Stop Chicane",
+      "shared_segment": "bus-stop-chicane",
+      "story": {
+        "en": "A bus stop once stood on the public road here. The chicane was later redesigned and moved before the 2007 race.",
+        "uk": "Тут, біля звичайної дороги, колись була автобусна зупинка. Перед гонкою 2007 року шикану змінили й трохи перенесли."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "status": "research_only_requires_configuration_match"
+    }
+  ],
+  "source_urls": [
+    "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+  ],
+  "constraints": [
+    "Eau Rouge and Raidillon must not be collapsed into one exact geographic turn name.",
+    "Names of grouped bends should not be interpreted as separately named individual corners.",
+    "Research descriptions are original EN/UK paraphrases; F1 text and media may not be copied into the site.",
+    "Geometry/coordinates and historic configurations are not established by the name source alone."
+  ],
+  "moments": [
+    {
+      "id": "spa-1992",
+      "year": 1992,
+      "title": {
+        "en": "Schumacher's first Formula 1 victory",
+        "uk": "Перша перемога Шумахера"
+      },
+      "narrative": {
+        "en": "In the changing weather of the 1992 Belgian Grand Prix, Michael Schumacher found the first victory of his Formula 1 career. Spa's sudden showers rewarded the teams and drivers who judged tyres and grip correctly. This was the beginning of a record-setting run of Grand Prix wins, but in that afternoon it was simply the breakthrough of a young Benetton driver against the established leaders.",
+        "uk": "У мінливу погоду Гран-прі Бельгії 1992 року Міхаель Шумахер здобув першу перемогу у Формулі-1. Раптові зливи Спа винагороджували тих, хто правильно оцінював зчеплення й вибір шин. Пізніше почалася серія великих перемог, але того дня це був насамперед прорив молодого гонщика Benetton у боротьбі з визнаними лідерами."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/the-risk-perspective-how-f1-drivers-engineers-and-strategists-tackle-the-spa-francorchamps-circuit.4TNjhNBBeh9ZD6wygCJfwo"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "spa-1998",
+      "year": 1998,
+      "title": {
+        "en": "A yellow Jordan finishes first",
+        "uk": "Жовта Jordan приходить першою"
+      },
+      "narrative": {
+        "en": "The rain-soaked 1998 race began with a huge multi-car crash and a red flag. Later, Michael Schumacher collided with David Coulthard while trying to lap him, and suddenly Damon Hill led in a Jordan. His teammate Ralf Schumacher followed him home. Jordan had entered Formula 1 years earlier as an outsider; at Spa it finally won, taking first and second in the same Grand Prix.",
+        "uk": "Дощова гонка 1998 року почалася з масової аварії та червоного прапора. Згодом Міхаель Шумахер зіткнувся з Девідом Култгардом під час обгону на коло, і лідерство несподівано перейшло до Деймона Гілла на Jordan. Його напарник Ральф Шумахер фінішував другим. Команда роками була претендентом з-поза кола фаворитів, а в Спа нарешті здобула першу перемогу — відразу з подвійним фінішем."
+      },
+      "sources": [
+        "https://www.formula1.com/en/results/1998/races/683/belgium/race-result",
+        "https://www.formula1.com/en/latest/article/from-memorable-debuts-to-unexpected-victories-jordan-grand-prixs-10-greatest.6CY81a5nTpky7ECfgfr138"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "spa-2000",
+      "year": 2000,
+      "title": {
+        "en": "Häkkinen attacks through the traffic",
+        "uk": "Хаккінен атакує крізь трафік"
+      },
+      "narrative": {
+        "en": "Mika Häkkinen was chasing Michael Schumacher when both cars approached Ricardo Zonta's BAR on the Kemmel Straight. Schumacher passed one side of Zonta; Häkkinen went the other way and completed a dramatic move for the lead. The overtaking manoeuvre is remembered because three cars briefly shared the same patch of road at extraordinary speed. Spa's long straights and changing elevation made the moment possible.",
+        "uk": "Міка Хаккінен наздоганяв Міхаеля Шумахера, коли обидва наблизилися до BAR Рікардо Зонти на прямій Кеммель. Шумахер пройшов Зонту з одного боку, а Хаккінен — з іншого й вийшов у лідери. Цей обгін пам’ятають через мить, коли три машини опинилися поруч на величезній швидкості. Довгі прямі й перепади висот Спа зробили такий маневр можливим."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "spa-2008",
+      "year": 2008,
+      "title": {
+        "en": "A victory changes hands after the finish",
+        "uk": "Переможець змінюється після фінішу"
+      },
+      "narrative": {
+        "en": "Lewis Hamilton crossed the line first after a late duel with Kimi Räikkönen as rain returned to Spa. But stewards ruled that Hamilton gained an advantage after cutting the Bus Stop chicane during their battle and applied a 25-second penalty. The win went to Felipe Massa instead. This is a different sort of Spa drama: a race apparently settled on track was rewritten in the official classification.",
+        "uk": "Льюїс Гамільтон перетнув фініш першим після пізньої дуелі з Кімі Райкконеном, коли до Спа повернувся дощ. Але стюарди вирішили, що Гамільтон отримав перевагу, зрізавши шикану Bus Stop, і додали 25 секунд до його результату. Перемога дісталася Феліпе Массі. Це інший вид драми Спа: боротьба ніби завершилася на трасі, але офіційний підсумок змінився вже після фінішу."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-belgian-grand-prix.2bJxwoBEgCzcC1Yrlzj1Qv"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "spa-2022",
+      "year": 2022,
+      "title": {
+        "en": "Verstappen wins from deep in the field",
+        "uk": "Ферстаппен перемагає після старту з глибини пелотону"
+      },
+      "narrative": {
+        "en": "Max Verstappen started the 2022 Belgian Grand Prix from fourteenth on the grid after power-unit-related penalties. He fought through the field and won, with Red Bull teammate Sergio Pérez second. Spa is often reduced to a test of courage at Eau Rouge, but this race also demonstrated how much a team's pace, overtaking opportunities and race execution matter over an entire lap.",
+        "uk": "Макс Ферстаппен стартував у Гран-прі Бельгії 2022 року чотирнадцятим після штрафів за компоненти силової установки. Він прорвався крізь пелотон і переміг, а напарник по Red Bull Серхіо Перес став другим. Спа часто зводять до випробування сміливості в Eau Rouge, проте ця гонка показала ще й значення швидкості машини, можливостей для обгону та роботи команди протягом усієї дистанції."
+      },
+      "sources": [
+        "https://www.formula1.com/en/results/2022/races/1118/belgium/race-result"
+      ],
+      "publication": "research_only"
+    }
+  ]
+}
