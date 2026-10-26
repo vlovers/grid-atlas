@@ -58,9 +58,10 @@
       "chapter_id": "brawn-2009",
       "source_urls": [
         "https://www.formula1.com/en/results/2009/races/858/brazil/race-result",
-        "https://www.formula1.com/en/latest/article/the-greatest-f1-world-championship-celebrations-in-recent-history.4gWkaXUSgi7KvN37D8S4ZT.4gWkaXUSgi7KvN37D8S4ZT"
+        "https://www.formula1.com/en/latest/article/the-greatest-f1-world-championship-celebrations-in-recent-history.4gWkaXUSgi7KvN37D8S4ZT.4gWkaXUSgi7KvN37D8S4ZT",
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
       ],
-      "verified_scope": "Button P14 qualifying per retrospective and P5 race classified Brazil 2009, Webber victory, title clincher",
+      "verified_scope": "Button P14 qualifying per retrospective and P5 race classified Brazil 2009, Webber victory, title clincher; 2006 Hungarian GP Honda penalty, wet race, Alonso and Räikkönen incidents, Button's first victory",
       "source_limits": "Retrospective race account from same publisher as result sheet",
       "status": "ai_source_checked_human_review_pending",
       "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
@@ -107,9 +108,10 @@
       "chapter_id": "first-victory",
       "source_urls": [
         "https://www.formula1.com/en/information/drivers-hall-of-fame-fernando-alonso.2Ig4mBh2FaPMgAMjI0bBF9",
-        "https://www.formula1.com/en/latest/article/f1-brazil-gp-title-deciders-championship.6j9s6gmm57ar9xJlxUTlQn.6j9s6gmm57ar9xJlxUTlQn"
+        "https://www.formula1.com/en/latest/article/f1-brazil-gp-title-deciders-championship.6j9s6gmm57ar9xJlxUTlQn.6j9s6gmm57ar9xJlxUTlQn",
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
       ],
-      "verified_scope": "2005 and 2006 Renault titles, Schumacher Suzuka retirement, 2006 Brazil title outcome",
+      "verified_scope": "2005 and 2006 Renault titles, Schumacher Suzuka retirement, 2006 Brazil title outcome; 2003 Hungary first GP victory from pole and Schumacher lapped",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
       "status": "ai_source_checked_human_review_pending",
       "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
@@ -119,9 +121,11 @@
       "chapter_id": "four-teams",
       "source_urls": [
         "https://www.formula1.com/en/latest/article/from-papaya-rules-to-flipping-coins-how-f1-teams-have-dealt-with-driver-rivalries-in-the-past.3TZEydHJTVg3VqUx8oXxOl.3TZEydHJTVg3VqUx8oXxOl",
-        "https://www.fia.com/news/f1-fia-pays-tribute-sir-frank-williams-who-has-died-aged-79"
+        "https://www.fia.com/news/f1-fia-pays-tribute-sir-frank-williams-who-has-died-aged-79",
+        "https://www.formula1.com/en/results/1987/races/520/austria/race-result",
+        "https://www.formula1.com/en/results/1987/races"
       ],
-      "verified_scope": "Mansell/Piquet Williams team rivalry, 1987 Piquet world title",
+      "verified_scope": "Mansell/Piquet Williams team rivalry, 1987 Piquet world title; Williams Mansell first Piquet second Austria 1987, season wins and 1987 title context",
       "source_limits": "Read official results separately from narrative and retrospective; driver motivation not inferred. Human fact and language review outstanding.",
       "status": "ai_source_checked_human_review_pending",
       "locator_note": "The added detailed scene is in the second chapter; chapter_id matches narrative-chapters-v1.json exactly."
