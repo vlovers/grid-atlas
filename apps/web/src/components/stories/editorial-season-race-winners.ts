@@ -25,6 +25,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "An early advantage is only the opening chapter: the title will be decided at the final race.",
       "uk": "Рання перевага — лише початок: титул визначиться в останній гонці."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Opening signal",
+        "detail": "A win here shapes the first impression of the title race, not its outcome."
+      },
+      "uk": {
+        "title": "Стартовий сигнал",
+        "detail": "Перемога тут формує перше враження від боротьби за титул, але не її підсумок."
+      }
     }
   },
   {
@@ -52,6 +62,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Ferrari's recovery shows how quickly the balance can change after one weekend.",
       "uk": "Відновлення Ferrari показує, як швидко змінюється баланс сил після одного вікенду."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Momentum shifts",
+        "detail": "The next rounds test whether this performance is repeatable."
+      },
+      "uk": {
+        "title": "Зміна темпу",
+        "detail": "Наступні етапи покажуть, чи вдасться повторити цей результат."
+      }
     }
   },
   {
@@ -79,6 +99,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Massa's first win sets up a season in which every lost point will matter.",
       "uk": "Перша перемога Масси відкриває сезон, у якому кожне втрачене очко матиме значення."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Points under pressure",
+        "detail": "Every finish now matters as the championship picture develops."
+      },
+      "uk": {
+        "title": "Очки під тиском",
+        "detail": "Кожен фініш набуває ваги, поки вимальовується картина чемпіонату."
+      }
     }
   },
   {
@@ -106,6 +136,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "A one-two finish illustrates Ferrari's speed, but it cannot settle an eighteen-race championship.",
       "uk": "Дубль демонструє швидкість Ferrari, але не вирішує долю чемпіонату з вісімнадцяти гонок."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Rivals respond",
+        "detail": "The result changes what the leading teams must answer in the following races."
+      },
+      "uk": {
+        "title": "Відповідь суперників",
+        "detail": "Результат змінює завдання, на які провідні команди мають відповісти в наступних гонках."
+      }
     }
   },
   {
@@ -133,6 +173,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Istanbul becomes a signature circuit for Massa; consistency elsewhere remains the harder challenge.",
       "uk": "Стамбул стає особливою трасою Масси; стабільність на інших етапах залишається складнішим завданням."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A season takes shape",
+        "detail": "Early victories begin to reveal who can sustain a title campaign."
+      },
+      "uk": {
+        "title": "Сезон набирає обрисів",
+        "detail": "Перші перемоги показують, хто здатен витримати чемпіонську дистанцію."
+      }
     }
   },
   {
@@ -160,6 +210,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Winning Monaco in difficult conditions strengthens Hamilton's claim as a title contender.",
       "uk": "Перемога в складних умовах Монако зміцнює позиції Гамільтона в боротьбі за титул."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Monaco spotlight",
+        "detail": "At Monaco, track position and execution make the margin for error especially small."
+      },
+      "uk": {
+        "title": "У центрі уваги — Монако",
+        "detail": "У Монако позиція на трасі й точність виконання залишають мінімальний простір для помилки."
+      }
     }
   },
   {
@@ -187,6 +247,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "BMW Sauber briefly breaks the Ferrari–McLaren pattern, creating a different championship possibility.",
       "uk": "BMW Sauber ненадовго порушує звичне суперництво Ferrari й McLaren та відкриває інший сценарій чемпіонату."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A different contender",
+        "detail": "The winner interrupts the expected pattern and widens the championship story."
+      },
+      "uk": {
+        "title": "Новий претендент",
+        "detail": "Переможець порушує очікуваний сценарій і розширює історію чемпіонату."
+      }
     }
   },
   {
@@ -214,6 +284,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Ferrari's one-two keeps the pressure on McLaren as the season approaches halfway.",
       "uk": "Дубль Ferrari посилює тиск на McLaren напередодні середини сезону."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Midseason reckoning",
+        "detail": "The title fight becomes a test of consistency, not isolated speed."
+      },
+      "uk": {
+        "title": "Проміжний підсумок",
+        "detail": "Боротьба за титул стає випробуванням стабільності, а не окремих спалахів швидкості."
+      }
     }
   },
   {
@@ -241,6 +321,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "The wet-weather gap exposes how dramatically one race can rearrange the title narrative.",
       "uk": "Розрив у дощовій гонці показує, як один етап може змінити всю історію боротьби за титул."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Summer pressure",
+        "detail": "Changing conditions expose strengths that a dry qualifying lap cannot show."
+      },
+      "uk": {
+        "title": "Літній тиск",
+        "detail": "Мінливі умови виявляють переваги, яких не видно з одного сухого кваліфікаційного кола."
+      }
     }
   },
   {
@@ -268,6 +358,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Hamilton's pace makes him a clear contender, even as Ferrari remains close.",
       "uk": "Швидкість Гамільтона робить його очевидним претендентом, хоча Ferrari залишається поруч."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "The chase continues",
+        "detail": "The championship leaders cannot afford to assume the order is settled."
+      },
+      "uk": {
+        "title": "Переслідування триває",
+        "detail": "Лідери чемпіонату не можуть вважати розстановку сил остаточною."
+      }
     }
   },
   {
@@ -295,6 +395,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "A rare McLaren victory outside Hamilton's car complicates the familiar two-driver title story.",
       "uk": "Рідкісна перемога McLaren не за кермом Гамільтона ускладнює звичну історію дуелі за титул."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Unexpected winner",
+        "detail": "A less familiar name at the top shows how fragile predictions can be."
+      },
+      "uk": {
+        "title": "Несподіваний переможець",
+        "detail": "Незвичне ім’я на вершині нагадує, наскільки крихкими бувають прогнози."
+      }
     }
   },
   {
@@ -322,6 +432,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "A new street circuit gives Massa a victory as the calendar itself changes.",
       "uk": "Нова міська траса приносить Массі перемогу, поки сам календар Формули-1 змінюється."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "New territory",
+        "detail": "A new circuit introduces unfamiliar constraints into an established rivalry."
+      },
+      "uk": {
+        "title": "Нова територія",
+        "detail": "Нова траса додає незнайомі виклики до вже сформованого суперництва."
+      }
     }
   },
   {
@@ -349,6 +469,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "The classification is inseparable from the stewards' decision: the road winner and official winner differ.",
       "uk": "Підсумковий протокол неможливо відділити від рішення стюардів: переможець на трасі та офіційний переможець різні."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Stewards and stakes",
+        "detail": "The final classification, not only the on-track order, decides the points."
+      },
+      "uk": {
+        "title": "Стюарди й ставки",
+        "detail": "Очки визначає підсумковий протокол, а не лише порядок фінішу на трасі."
+      }
     }
   },
   {
@@ -376,6 +506,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Toro Rosso's triumph proves the season still has room for a genuine outsider.",
       "uk": "Тріумф Toro Rosso доводить, що в сезоні ще є місце для справжньої сенсації."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Breakthrough",
+        "detail": "This race shows that an outsider can change the narrative in a single weekend."
+      },
+      "uk": {
+        "title": "Прорив",
+        "detail": "Ця гонка показує, як аутсайдер може змінити сюжет за один вікенд."
+      }
     }
   },
   {
@@ -403,6 +543,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "The result cannot be read without the later Crashgate revelations; victory and integrity are different questions.",
       "uk": "Цей результат неможливо оцінити без пізніших викриттів Crashgate: перемога й чесність — різні питання."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Night race",
+        "detail": "A new format creates spectacle while demanding careful scrutiny of what happened."
+      },
+      "uk": {
+        "title": "Нічна гонка",
+        "detail": "Новий формат створює видовище, але потребує уважного аналізу подій."
+      }
     }
   },
   {
@@ -430,6 +580,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Renault's second consecutive win reshapes the final phase of an otherwise Ferrari–McLaren season.",
       "uk": "Друга поспіль перемога Renault змінює завершення сезону, де переважно домінували Ferrari та McLaren."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Late surge",
+        "detail": "A strong result near the end of the year reshapes expectations for the finale."
+      },
+      "uk": {
+        "title": "Пізній ривок",
+        "detail": "Сильний результат наприкінці року змінює очікування від фіналу."
+      }
     }
   },
   {
@@ -457,6 +617,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "With only one round left, Hamilton's win raises the stakes for Interlagos.",
       "uk": "За один етап до фінішу перемога Гамільтона підвищує ставки в Інтерлагосі."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "One round remaining",
+        "detail": "With the calendar almost complete, every point has a clear consequence."
+      },
+      "uk": {
+        "title": "Один етап до фінішу",
+        "detail": "Коли календар майже завершено, кожне очко має очевидні наслідки."
+      }
     }
   },
   {
@@ -484,6 +654,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "The last race separates a Grand Prix winner from a world champion by the narrowest emotional margin.",
       "uk": "Остання гонка розділяє переможця Гран-прі та чемпіона світу з мінімальною, але болісною різницею."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Final verdict",
+        "detail": "The final classification and the championship standings tell related but different stories."
+      },
+      "uk": {
+        "title": "Фінальний вердикт",
+        "detail": "Фінальний протокол і турнірна таблиця розповідають пов’язані, але різні історії."
+      }
     }
   },
   {
@@ -511,6 +691,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Brawn's opening victory transforms an uncertain winter into an immediate championship challenge.",
       "uk": "Стартова перемога Brawn перетворює невизначену зиму на реальну заявку на титул."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "An extraordinary debut",
+        "detail": "A new name on the grid immediately becomes the benchmark."
+      },
+      "uk": {
+        "title": "Надзвичайний дебют",
+        "detail": "Нова назва в пелотоні одразу стає орієнтиром для суперників."
+      }
     }
   },
   {
@@ -538,6 +728,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Half points in a shortened race show why championship totals need context, not just a sum.",
       "uk": "Половина очок у скороченій гонці нагадує: турнірні таблиці потребують контексту."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Half points",
+        "detail": "An interrupted race reminds readers that not all victories award the same points."
+      },
+      "uk": {
+        "title": "Половина очок",
+        "detail": "Перервана гонка нагадує: не кожна перемога приносить однакову кількість очок."
+      }
     }
   },
   {
@@ -565,6 +765,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Red Bull's first win announces the rival that will increasingly threaten Brawn.",
       "uk": "Перша перемога Red Bull позначає появу суперника, що дедалі сильніше загрожуватиме Brawn."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A challenger arrives",
+        "detail": "Red Bull's breakthrough prevents the championship from becoming a one-team story."
+      },
+      "uk": {
+        "title": "З’являється суперник",
+        "detail": "Прорив Red Bull не дозволяє чемпіонату стати історією однієї команди."
+      }
     }
   },
   {
@@ -592,6 +802,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Button restores Brawn's momentum after a brief interruption.",
       "uk": "Баттон повертає Brawn упевненість після короткої паузи в перемогах."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Back in front",
+        "detail": "The early leader responds to a challenge rather than yielding momentum."
+      },
+      "uk": {
+        "title": "Знову попереду",
+        "detail": "Ранній лідер відповідає на виклик, а не віддає ініціативу."
+      }
     }
   },
   {
@@ -619,6 +839,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Another Brawn one-two makes the early advantage look structural rather than accidental.",
       "uk": "Ще один дубль Brawn показує, що рання перевага була системною, а не випадковою."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Team strength",
+        "detail": "A one-two finish shows how much the constructors' fight depends on both drivers."
+      },
+      "uk": {
+        "title": "Сила команди",
+        "detail": "Дубль показує, наскільки боротьба конструкторів залежить від обох пілотів."
+      }
     }
   },
   {
@@ -646,6 +876,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "A Monaco win gives Button a defining achievement beyond the points table.",
       "uk": "Перемога в Монако стає визначним досягненням Баттона поза межами таблиці очок."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Monaco milestone",
+        "detail": "A prestigious win adds meaning beyond the immediate points reward."
+      },
+      "uk": {
+        "title": "Віха Монако",
+        "detail": "Престижна перемога додає сенсу понад миттєву винагороду очками."
+      }
     }
   },
   {
@@ -673,6 +913,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Six wins in seven races establish the cushion that will protect Button later in the year.",
       "uk": "Шість перемог у семи гонках створюють запас, який захистить Баттона наприкінці сезону."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A huge cushion",
+        "detail": "The early run of victories gives the leader room to survive a tougher second half."
+      },
+      "uk": {
+        "title": "Великий запас",
+        "detail": "Рання серія перемог дає лідеру запас перед складнішою другою половиною."
+      }
     }
   },
   {
@@ -700,6 +950,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Red Bull demonstrates that Brawn will not have the second half of the season to itself.",
       "uk": "Red Bull показує, що друга половина сезону не буде беззаперечною територією Brawn."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A new balance",
+        "detail": "The competition begins to look less predictable than the opening rounds."
+      },
+      "uk": {
+        "title": "Новий баланс",
+        "detail": "Боротьба стає менш передбачуваною, ніж на початку сезону."
+      }
     }
   },
   {
@@ -727,6 +987,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Webber's breakthrough broadens Red Bull's challenge beyond Vettel.",
       "uk": "Прорив Веббера робить виклик Red Bull ширшим за виступи одного Феттеля."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A second threat",
+        "detail": "Another Red Bull winner makes the challenge harder to contain."
+      },
+      "uk": {
+        "title": "Друга загроза",
+        "detail": "Ще один переможець Red Bull робить виклик серйознішим."
+      }
     }
   },
   {
@@ -754,6 +1024,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "McLaren's recovery shows how a season can change even when the title fight is already taking shape.",
       "uk": "Повернення McLaren показує, як змінюється сезон, навіть коли боротьба за титул уже окреслилася."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Recovery drive",
+        "detail": "An established contender finds a way back to the front."
+      },
+      "uk": {
+        "title": "Повернення у форму",
+        "detail": "Досвідчений претендент знаходить шлях назад до перемог."
+      }
     }
   },
   {
@@ -781,6 +1061,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Barrichello's win makes Brawn's title story about both drivers, not just Button.",
       "uk": "Перемога Баррікелло нагадує, що історія Brawn — це історія обох пілотів."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "The teammate's turn",
+        "detail": "The championship-leading team now has two race winners."
+      },
+      "uk": {
+        "title": "Черга напарника",
+        "detail": "Команда-лідер тепер має двох переможців гонок."
+      }
     }
   },
   {
@@ -808,6 +1098,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Ferrari's lone victory shows that a difficult season can still contain a standout weekend.",
       "uk": "Єдина перемога Ferrari показує: навіть складний сезон може подарувати видатний вікенд."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A Ferrari moment",
+        "detail": "One outstanding weekend stands apart from a difficult campaign."
+      },
+      "uk": {
+        "title": "Мить Ferrari",
+        "detail": "Один видатний вікенд вирізняється на тлі складного сезону."
+      }
     }
   },
   {
@@ -835,6 +1135,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Barrichello's second victory keeps pressure on his teammate as the title nears.",
       "uk": "Друга перемога Баррікелло зберігає тиск на напарника перед розв'язкою чемпіонату."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Internal pressure",
+        "detail": "A second win from the teammate sharpens the title question."
+      },
+      "uk": {
+        "title": "Тиск усередині команди",
+        "detail": "Друга перемога напарника загострює питання про титул."
+      }
     }
   },
   {
@@ -862,6 +1172,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Hamilton's victory shows the late-season form that the championship table alone can obscure.",
       "uk": "Перемога Гамільтона показує пізню швидкість McLaren, яку не передає підсумкова таблиця."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Late-season form",
+        "detail": "A recovered team can shape results without leading the championship."
+      },
+      "uk": {
+        "title": "Форма наприкінці сезону",
+        "detail": "Команда, що відновила форму, може впливати на результати без лідерства в чемпіонаті."
+      }
     }
   },
   {
@@ -889,6 +1209,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Vettel keeps Red Bull's pursuit alive, forcing Brawn to finish the job.",
       "uk": "Феттель продовжує переслідування Red Bull, змушуючи Brawn довести справу до кінця."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "The pursuit",
+        "detail": "A challenger keeps the championship mathematically alive."
+      },
+      "uk": {
+        "title": "Переслідування",
+        "detail": "Переслідувач зберігає математичні шанси на титул."
+      }
     }
   },
   {
@@ -916,6 +1246,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "Button clinches the title without winning the race: the championship rewards a season, not one afternoon.",
       "uk": "Баттон стає чемпіоном без перемоги в гонці: титул дають за сезон, а не за один день."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "Title secured",
+        "detail": "The champion's decisive finish is not necessarily the race victory."
+      },
+      "uk": {
+        "title": "Титул здобуто",
+        "detail": "Вирішальний фініш чемпіона не обов’язково означає перемогу в гонці."
+      }
     }
   },
   {
@@ -943,6 +1283,16 @@ export const editorialSeasonRaceWinners = [
     "editorialSignificance": {
       "en": "The first Abu Dhabi finale closes a season that began with Brawn's shock emergence.",
       "uk": "Перший фінал в Абу-Дабі завершує сезон, що почався несподіваним злетом Brawn."
+    },
+    "editorialChapter": {
+      "en": {
+        "title": "A new finale",
+        "detail": "The season ends at a new venue after a remarkable reversal of expectations."
+      },
+      "uk": {
+        "title": "Новий фінал",
+        "detail": "Сезон завершується на новій трасі після дивовижної зміни очікувань."
+      }
     }
   }
 ] as const;
