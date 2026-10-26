@@ -8,6 +8,7 @@
  *        node scripts/editorial-media-intake.mjs --all
  */
 import { mkdir, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 
 const candidates = {
@@ -67,6 +68,9 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
         license, licenseUrl: meta.LicenseUrl?.value ?? '',
         artistHtml: meta.Artist?.value ?? '', creditHtml: meta.Credit?.value ?? '',
         originalSha1: info.sha1, originalSize: info.size,
+        stagedSha256: createHash('sha256').update(bytes).digest('hex'),
+        stagedSize: bytes.length, stagedMime: type,
+        stagedWidthRequested: 1600,
         stagedFile: filename, retrievedAt: new Date().toISOString(),
         status: 'UNREVIEWED — DO NOT PUBLISH',
       }, null, 2) + '\n', { flag: 'wx' });
