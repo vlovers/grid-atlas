@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "kind": "driver_editorial_substance_gap_audit",
+  "source": "docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json",
+  "scope": "15 short research-only biographies; excludes 10 canonical longform manuscripts",
+  "status": "research_queue_not_publication_approval",
+  "acceptance": "For each story independently verify exact race results, contested mechanics and chronology; write EN/UK scene-led substantive chapters rather than generic interpretation; retain claim IDs and review each locale",
+  "items": [
+    {
+      "driver_id": "alberto-ascari",
+      "chapters": 3,
+      "english_words": 397,
+      "ukrainian_words": 344,
+      "existing_claim_ids": [
+        "alberto-ascari-titles",
+        "alberto-ascari-1952-run",
+        "alberto-ascari-1955-monaco",
+        "alberto-ascari-monza"
+      ],
+      "missing_evidence_scenes": [
+        "1952–53 Ferrari dominance and contemporary sporting context",
+        "1955 Monaco harbour escape versus later Monza sports-car test"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "mario-andretti",
+      "chapters": 3,
+      "english_words": 400,
+      "ukrainian_words": 327,
+      "existing_claim_ids": [
+        "mario-andretti-debut",
+        "mario-andretti-1968-pole",
+        "mario-andretti-1976-japan",
+        "mario-andretti-champion",
+        "mario-andretti-1982-return"
+      ],
+      "missing_evidence_scenes": [
+        "1968 Watkins Glen debut pole and actual race result",
+        "1978 Lotus title run, ground-effect context and Monza aftermath"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "keke-rosberg",
+      "chapters": 3,
+      "english_words": 209,
+      "ukrainian_words": 182,
+      "existing_claim_ids": [
+        "keke-rosberg-1978-debut",
+        "keke-rosberg-1982-williams",
+        "keke-rosberg-champion",
+        "keke-rosberg-one-win"
+      ],
+      "missing_evidence_scenes": [
+        "1982 race-by-race championship lead changes and scoring",
+        "Williams competitive position and contrast with single Grand Prix win"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "damon-hill",
+      "chapters": 3,
+      "english_words": 424,
+      "ukrainian_words": 364,
+      "existing_claim_ids": [
+        "damon-hill-brabham",
+        "damon-hill-1994-runner-up",
+        "damon-hill-champion",
+        "damon-hill-1996-eight-wins",
+        "damon-hill-jordan"
+      ],
+      "missing_evidence_scenes": [
+        "1994 Adelaide contact through separate contemporary perspectives",
+        "1996 title run and 1998 Jordan Belgian GP race sequence"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "charles-leclerc",
+      "chapters": 3,
+      "english_words": 200,
+      "ukrainian_words": 171,
+      "existing_claim_ids": [
+        "charles-leclerc-2018-sauber",
+        "charles-leclerc-2019-first-pole",
+        "charles-leclerc-first-win",
+        "charles-leclerc-2019-monza",
+        "charles-leclerc-monaco"
+      ],
+      "missing_evidence_scenes": [
+        "2019 Bahrain pole-to-race setbacks using race report",
+        "Belgium/Monza 2019 and Monaco 2024 event-by-event narrative"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "fernando-alonso",
+      "chapters": 3,
+      "english_words": 198,
+      "ukrainian_words": 179,
+      "existing_claim_ids": [
+        "fernando-alonso-debut",
+        "fernando-alonso-2003-win",
+        "fernando-alonso-titles",
+        "fernando-alonso-ferrari"
+      ],
+      "missing_evidence_scenes": [
+        "2003 Hungary maiden win and Renault development",
+        "2005/2006 title threats and transition to Ferrari in 2010"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "kimi-raikkonen",
+      "chapters": 3,
+      "english_words": 202,
+      "ukrainian_words": 176,
+      "existing_claim_ids": [
+        "kimi-raikkonen-debut",
+        "kimi-raikkonen-mclaren",
+        "kimi-raikkonen-title",
+        "kimi-raikkonen-2018-us"
+      ],
+      "missing_evidence_scenes": [
+        "2003/2005 McLaren championship near misses using standings",
+        "2007 Brazil title finale versus 2018 Austin win"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "nelson-piquet",
+      "chapters": 2,
+      "english_words": 160,
+      "ukrainian_words": 138,
+      "existing_claim_ids": [
+        "nelson-piquet-titles",
+        "nelson-piquet-teams"
+      ],
+      "missing_evidence_scenes": [
+        "1981 Brabham title decider and 1983 turbo title context",
+        "1987 Williams title and relationship with Mansell"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "jenson-button",
+      "chapters": 3,
+      "english_words": 194,
+      "ukrainian_words": 167,
+      "existing_claim_ids": [
+        "jenson-button-first-win",
+        "jenson-button-brawn",
+        "jenson-button-2009-start",
+        "jenson-button-mclaren"
+      ],
+      "missing_evidence_scenes": [
+        "2006 Hungary changeable race and first victory",
+        "2009 Brawn early run versus title clincher in Brazil"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "nico-rosberg",
+      "chapters": 2,
+      "english_words": 168,
+      "ukrainian_words": 143,
+      "existing_claim_ids": [
+        "nico-rosberg-championship",
+        "nico-rosberg-rival",
+        "nico-rosberg-retirement"
+      ],
+      "missing_evidence_scenes": [
+        "2016 Hamilton teammate rivalry across season not just finale",
+        "Abu Dhabi championship permutations and confirmed retirement chronology"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "nino-farina",
+      "chapters": 2,
+      "english_words": 178,
+      "ukrainian_words": 145,
+      "existing_claim_ids": [
+        "nino-farina-first-race",
+        "nino-farina-title"
+      ],
+      "missing_evidence_scenes": [
+        "1950 Silverstone opening championship race and classification",
+        "1950 final championship rounds and title scoring rules"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "jochen-rindt",
+      "chapters": 2,
+      "english_words": 159,
+      "ukrainian_words": 134,
+      "existing_claim_ids": [
+        "jochen-rindt-monza",
+        "jochen-rindt-title"
+      ],
+      "missing_evidence_scenes": [
+        "1970 Lotus season and Watkins Glen mathematical title resolution",
+        "Monza practice accident chronology from respectful reputable accounts"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "alan-jones",
+      "chapters": 2,
+      "english_words": 173,
+      "ukrainian_words": 152,
+      "existing_claim_ids": [
+        "alan-jones-partnership",
+        "alan-jones-champion"
+      ],
+      "missing_evidence_scenes": [
+        "1979 Williams breakthrough across four Grands Prix",
+        "1980 title fight and contemporary team engineering context"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "jacques-villeneuve",
+      "chapters": 2,
+      "english_words": 161,
+      "ukrainian_words": 139,
+      "existing_claim_ids": [
+        "jacques-villeneuve-debut",
+        "jacques-villeneuve-title"
+      ],
+      "missing_evidence_scenes": [
+        "1996 debut challenge and Williams title battle",
+        "1997 Jerez Schumacher collision and FIA verdict"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    },
+    {
+      "driver_id": "lando-norris",
+      "chapters": 3,
+      "english_words": 212,
+      "ukrainian_words": 183,
+      "existing_claim_ids": [
+        "lando-norris-debut",
+        "lando-norris-first-win",
+        "lando-norris-title"
+      ],
+      "missing_evidence_scenes": [
+        "2024 Miami breakthrough and McLaren development",
+        "2025 post-Zandvoort deficit, final standings and Abu Dhabi title scenario"
+      ],
+      "human_fact_review": "pending",
+      "ukrainian_language_review": "pending",
+      "publication": "unpublished"
+    }
+  ]
+}
