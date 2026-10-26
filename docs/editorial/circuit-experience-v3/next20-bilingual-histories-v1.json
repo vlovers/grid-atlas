@@ -1431,12 +1431,14 @@
             "uk": "Ферстаппен перемагає в дебюті"
           },
           "narrative": {
-            "en": "After Mercedes teammates collided, Max Verstappen won his first race for Red Bull.",
-            "uk": "Після зіткнення напарників Mercedes Макс Ферстаппен виграв першу гонку за Red Bull."
+            "en": "Max Verstappen won his first race for Red Bull at the 2016 Spanish Grand Prix, just 0.616 seconds ahead of Kimi Räikkönen. Both Mercedes drivers retired without completing a lap. Barcelona became the scene of a stunning breakthrough for the young Dutchman.",
+            "uk": "Макс Ферстаппен переміг у своїй першій гонці за Red Bull на Гран-прі Іспанії 2016 року, випередивши Кімі Ряйкконена лише на 0,616 секунди. Обидва пілоти Mercedes вибули, не завершивши жодного кола. Для молодого нідерландця Барселона стала місцем гучного прориву."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2016/races/942/spain/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2006,
@@ -1697,12 +1699,14 @@
             "uk": "Грожан виживає у вогні"
           },
           "narrative": {
-            "en": "Romain Grosjean escaped from a burning car after a severe opening-lap crash.",
-            "uk": "Ромен Грожан вибрався з палаючої машини після важкої аварії на першому колі."
+            "en": "Lewis Hamilton won the 2020 Bahrain Grand Prix, but the classification tells only a fraction of this race's story. Romain Grosjean was listed as a non-finisher after a first-lap crash. The circumstances of his escape deserve careful sourcing from medical, FIA and contemporary accounts, not inference from the result alone.",
+            "uk": "Льюїс Гамільтон виграв Гран-прі Бахрейну 2020 року, але протокол розповідає лише частину історії. Ромен Грожан не фінішував після аварії на першому колі. Обставини його порятунку потрібно ретельно перевіряти за матеріалами FIA, медиків і сучасників події, а не виводити з таблиці результатів."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2020/races/1059/bahrain/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2019,
@@ -1790,12 +1794,14 @@
             "uk": "Росберг перемагає за Mercedes"
           },
           "narrative": {
-            "en": "Nico Rosberg turned pole into his maiden Grand Prix victory for Mercedes.",
-            "uk": "Ніко Росберг перетворив поул на першу перемогу в Гран-прі за Mercedes."
+            "en": "Nico Rosberg delivered Mercedes its first win of the modern works-team era at Shanghai in 2012. Jenson Button finished second, more than twenty seconds behind. The Chinese Grand Prix turned a season of possibilities into a breakthrough result.",
+            "uk": "Ніко Росберг приніс Mercedes першу перемогу після повернення заводської команди у Формулу-1 на Гран-прі Китаю 2012 року. Дженсон Баттон фінішував другим, програвши понад двадцять секунд. Для Mercedes Шанхай став місцем довгоочікуваного прориву."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2012/races/12/china/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2009,
@@ -1978,12 +1984,14 @@
             "uk": "Райкконен знову перемагає"
           },
           "narrative": {
-            "en": "Kimi Räikkönen ended a long winless stretch with a Ferrari victory at Austin.",
-            "uk": "Кімі Райкконен перервав довгу серію без перемог, вигравши за Ferrari в Остіні."
+            "en": "Kimi Räikkönen won the 2018 United States Grand Prix for Ferrari, holding off Max Verstappen by 1.281 seconds. Lewis Hamilton crossed the line third. After a long wait for another victory, the Finn made Austin a memorable stop in his final Ferrari season.",
+            "uk": "Кімі Ряйкконен виграв Гран-прі США 2018 року за Ferrari, випередивши Макса Ферстаппена на 1,281 секунди. Льюїс Гамільтон фінішував третім. Після довгого очікування нової перемоги фін зробив Остін особливим моментом свого останнього сезону у Ferrari."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2018/races/996/usa/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2019,
