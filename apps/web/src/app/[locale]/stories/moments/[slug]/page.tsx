@@ -12,6 +12,7 @@ import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
+import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -55,6 +56,11 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.lead}>{copy.summary}</p>
         {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
       </header>
+      {slug in editorialStoryContext && <section aria-label={uk ? 'Контекст історії' : 'Story context'} style={{ marginTop: 32, padding: '24px 28px', borderLeft: '4px solid var(--accent-ink)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
+        <p className={styles.eyebrow}>{uk ? 'КОРОТКО ПРО ГОЛОВНЕ' : 'THE STORY AT A GLANCE'}</p>
+        <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', marginBottom: 8 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].label}</h2>
+        <p style={{ maxWidth: '65ch', marginBottom: 0 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].description}</p>
+      </section>}
       <section aria-labelledby="story-people" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ДІЙОВІ ОСОБИ' : 'THE PEOPLE'}</p>
         <h2 id="story-people">{uk ? 'Хто стоїть за цією історією' : 'The people behind the story'}</h2>
