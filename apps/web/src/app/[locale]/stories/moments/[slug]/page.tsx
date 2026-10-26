@@ -36,14 +36,16 @@ export default async function EditorialMoment({ params }: Props) {
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
   const artKinds: ArtKind[] = ['duel', 'apex', 'velocity', 'grid', 'helmet'];
-  const artKind = artKinds[editorialStoryPreviews.findIndex(item => item.slug === slug) % artKinds.length];
+  const storyIndex = editorialStoryPreviews.findIndex(item => item.slug === slug);
+  const artKind = artKinds[storyIndex % artKinds.length];
+  const artTone = (['gold', 'violet', 'coral', 'mint'] as const)[storyIndex % 4];
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
     <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
-        <div className={styles.editorialHeroArt}><MotorsportArt kind={artKind} tone="gold" /></div>
+        <div className={styles.editorialHeroArt}><MotorsportArt kind={artKind} tone={artTone} /></div>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
