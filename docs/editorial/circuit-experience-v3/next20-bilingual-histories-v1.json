@@ -636,12 +636,14 @@
             "uk": "Траса отримує ім’я Жиля Вільнева"
           },
           "narrative": {
-            "en": "The Montreal venue was renamed in memory of Gilles Villeneuve after his death earlier that year.",
-            "uk": "Після загибелі Жиля Вільнева монреальську трасу перейменували на його честь."
+            "en": "Montreal's Formula 1 venue began as the Circuit Île Notre-Dame, hosting its first championship Grand Prix in 1978. Following the death of Canadian driver Gilles Villeneuve in 1982, the circuit was renamed in his honour. The name ties the island track to the home hero who won its inaugural F1 race.",
+            "uk": "Траса Формули-1 в Монреалі спочатку називалася Circuit Île Notre-Dame й прийняла перший чемпіонатний Гран-прі 1978 року. Після загибелі канадського гонщика Жиля Вільнева в 1982 році її перейменували на його честь. Назва пов’язує острівну трасу з місцевим героєм, який виграв її дебютну гонку Формули-1."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -738,12 +740,14 @@
             "uk": "Шумахер бере реванш"
           },
           "narrative": {
-            "en": "Michael Schumacher won the San Marino Grand Prix after resisting Fernando Alonso, reversing the outcome of their duel the previous year.",
-            "uk": "Міхаель Шумахер виграв Гран-прі Сан-Марино, стримавши Фернандо Алонсо й узявши реванш за попередній рік."
+            "en": "Michael Schumacher won the 2006 San Marino Grand Prix at Imola, finishing 2.096 seconds ahead of Fernando Alonso. A year earlier, the order had been reversed by a mere 0.215 seconds. The results capture a striking change of fortune between the same two rivals at the same circuit.",
+            "uk": "Міхаель Шумахер виграв Гран-прі Сан-Марино 2006 року в Імолі, випередивши Фернандо Алонсо на 2,096 секунди. Роком раніше порядок був протилежним, а різниця становила лише 0,215 секунди. Протоколи показують дивовижну зміну ролей тих самих суперників на тій самій трасі."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "official_classification_checked_interpretation_pending"
         },
         {
           "year": 1983,
@@ -868,12 +872,14 @@
             "uk": "Нова траса Гран-прі"
           },
           "narrative": {
-            "en": "The Nürburgring's modern Grand Prix circuit opened, replacing the Nordschleife as the venue's Formula 1 racing configuration.",
-            "uk": "Нова траса Гран-прі відкрилася, замінивши Північну петлю як місце проведення гонок Формули-1."
+            "en": "The Nürburgring opened a modern Grand Prix circuit in 1984, years after Formula 1 left the vast Nordschleife. The new layout was far shorter and more manageable, and the 1984 European Grand Prix marked its championship debut. The venue retained its historic name while offering a very different kind of racing.",
+            "uk": "У 1984 році Нюрбургринг відкрив сучасну трасу Гран-прі — через кілька років після того, як Формула-1 залишила величезну Північну петлю. Нова конфігурація була значно коротшою й зручнішою, а Гран-прі Європи 1984 року став її чемпіонатним дебютом. Історична назва залишилася, але характер перегонів змінився."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2020,
@@ -949,12 +955,14 @@
             "uk": "Тамбе перемагає за Ferrari"
           },
           "narrative": {
-            "en": "Patrick Tambay won the German Grand Prix after a difficult period for Ferrari.",
-            "uk": "Патрік Тамбе виграв Гран-прі Німеччини після важкого періоду для Ferrari."
+            "en": "Ferrari's 1982 German Grand Prix was marked by tragedy before the start: Didier Pironi suffered serious injuries in practice, months after Gilles Villeneuve's death. Patrick Tambay then claimed his first Formula 1 victory at Hockenheim after Nelson Piquet's collision with Eliseo Salazar ended his lead. It was an emotional win for Ferrari.",
+            "uk": "Гран-прі Німеччини 1982 року став для Ferrari болісним ще до старту: Дідьє Піроні тяжко травмувався на тренуванні, через кілька місяців після загибелі Жиля Вільнева. Патрік Тамбе здобув першу перемогу у Формулі-1 в Хоккенгаймі після зіткнення лідера Нельсона Піке з Елісео Саласаром. Для Ferrari це був особливо емоційний тріумф."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2000,
@@ -979,12 +987,14 @@
             "uk": "Зникає лісова конфігурація"
           },
           "narrative": {
-            "en": "The German Grand Prix returned to a dramatically shortened Hockenheim circuit after the long forest straights were removed.",
-            "uk": "Гран-прі Німеччини повернувся на значно коротшу трасу Хоккенгайм після вилучення довгих лісових прямих."
+            "en": "The 2002 German Grand Prix introduced a radically changed Hockenheimring. Its famous forest straights disappeared, shortening the lap from roughly 6.8 to 4.6 kilometres while the stadium section survived. Michael Schumacher won the first Grand Prix on the rebuilt circuit, but fans would continue debating what the redesign gained and lost.",
+            "uk": "Гран-прі Німеччини 2002 року вперше пройшов на радикально зміненому Хоккенгаймрингу. Знамениті лісові прямі зникли, коло скоротилося приблизно з 6,8 до 4,6 кілометра, а стадіонна секція залишилася. Міхаель Шумахер виграв перший Гран-прі на оновленій трасі, але суперечки про переваги й втрати перебудови не вщухали."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2018,
@@ -1059,12 +1069,14 @@
             "uk": "Усі учасники фінішують"
           },
           "narrative": {
-            "en": "The Dutch Grand Prix became known for all fifteen starters reaching the finish without pit stops.",
-            "uk": "Гран-прі Нідерландів запам’ятався фінішем усіх п’ятнадцяти учасників без піт-стопів."
+            "en": "The 1961 Dutch Grand Prix produced an extraordinary result: all fifteen starters reached the finish, and none stopped for fuel or fresh tyres. At a time when retirements were common, Zandvoort witnessed a complete field surviving the race without a single pit stop, a distinction that still stands out.",
+            "uk": "Гран-прі Нідерландів 1961 року завершився незвично: усі п’ятнадцять гонщиків, які стартували, доїхали до фінішу, і ніхто не зупинявся за пальним чи новими шинами. У час, коли сходи були звичними, Зандворт побачив повний склад фінішерів без жодного піт-стопу — винятковий результат."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1973,
@@ -1445,12 +1457,14 @@
             "uk": "Драма Хаккінена на останньому колі"
           },
           "narrative": {
-            "en": "Mika Häkkinen retired with an apparent win in sight, and Michael Schumacher inherited victory.",
-            "uk": "Міка Хаккінен зійшов, коли перемога здавалася близькою, а першим став Міхаель Шумахер."
+            "en": "Mika Häkkinen was heading for victory in the 2001 Spanish Grand Prix after taking the lead from Michael Schumacher during the pit-stop phase. On the final lap his McLaren slowed with a hydraulic problem, handing Schumacher the win. Few retirements have been crueler than losing a race with the finish almost in sight.",
+            "uk": "Міка Хаккінен наближався до перемоги на Гран-прі Іспанії 2001 року, вийшовши вперед Міхаеля Шумахера під час піт-стопів. На останньому колі його McLaren сповільнився через гідравлічну проблему, і перемога дісталася Шумахеру. Важко уявити болючіший схід, ніж за мить до фінішу."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-last-lap-heartbreaks-to-championship-affecting-exits-8-dramatic-dnfs-from-the-lead-of-grands-prix.1DbuL5umSE2i6NS41PYCPj"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2016,
@@ -1475,12 +1489,14 @@
             "uk": "Алонсо перемагає перед іспанськими трибунами"
           },
           "narrative": {
-            "en": "Fernando Alonso won his home Grand Prix for Renault while defending his world title.",
-            "uk": "Фернандо Алонсо виграв домашній Гран-прі за Renault під час захисту чемпіонського титулу."
+            "en": "Fernando Alonso delighted his home crowd at Barcelona in 2006 with a commanding Renault victory. He started from pole, opened a gap early and finished around 18.5 seconds ahead of Michael Schumacher. It was an emphatic home win for the reigning world champion during his title defence.",
+            "uk": "Фернандо Алонсо потішив домашні трибуни Барселони 2006 року впевненою перемогою за Renault. Він стартував із поулу, швидко створив відрив і фінішував приблизно на 18,5 секунди попереду Міхаеля Шумахера. Це був переконливий домашній тріумф чинного чемпіона під час захисту титулу."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-suzuka-to-san-marino-ranking-alonsos-best-renault-wins-from-10-1-ahead.1ZekTTxQMfSGtagQMCejs8"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [],
@@ -2135,12 +2151,14 @@
             "uk": "Гонку скорочено через зливу"
           },
           "narrative": {
-            "en": "Heavy rain caused the Malaysian Grand Prix to be abandoned before full distance, with half points awarded.",
-            "uk": "Через сильну зливу Гран-прі Малайзії зупинили до повної дистанції й нарахували половину очок."
+            "en": "Torrential rain forced the 2009 Malaysian Grand Prix to be stopped after 31 of 56 scheduled laps. Jenson Button was declared the winner, but only half points were awarded because the race had not reached the required distance. Sepang's tropical weather reshaped the championship arithmetic as well as the spectacle.",
+            "uk": "Злива змусила зупинити Гран-прі Малайзії 2009 року після 31 із 56 запланованих кіл. Дженсона Баттона оголосили переможцем, але учасникам нарахували лише половину очок, оскільки гонка не подолала необхідної дистанції. Тропічна погода Сепанга змінила не тільки видовище, а й чемпіонську арифметику."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/the-malaysian-grand-prix-did-you-know-.1SsyzCaENkaNRPGJzC0OJG"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2013,
@@ -2149,12 +2167,14 @@
             "uk": "Суперечка Multi 21"
           },
           "narrative": {
-            "en": "Vettel passed teammate Webber for victory despite instructions to hold station.",
-            "uk": "Феттель обігнав напарника Веббера задля перемоги, попри вказівку зберегти позиції."
+            "en": "The 2013 Malaysian Grand Prix exposed a fracture inside Red Bull. Sebastian Vettel overtook teammate Mark Webber for the win despite the team's 'Multi 21' instruction to hold position. What should have been a comfortable one-two became a bitter argument about trust, authority and the right to race.",
+            "uk": "Гран-прі Малайзії 2013 року оголив конфлікт усередині Red Bull. Себастьян Феттель обігнав напарника Марка Веббера заради перемоги всупереч командній вказівці «Multi 21» зберегти позиції. Замість спокійного дубля команда отримала гірку суперечку про довіру, владу й право боротися."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/horner-reveals-what-sparked-multi-21-controversy.6rSHG4O9lCE0yUQaMC0SWq"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2016,
@@ -2163,12 +2183,14 @@
             "uk": "Гамільтон сходить, Ріккардо перемагає"
           },
           "narrative": {
-            "en": "Lewis Hamilton's engine failed while he led, allowing Daniel Ricciardo to take victory ahead of Verstappen.",
-            "uk": "Двигун Льюїса Гамільтона відмовив, коли він лідирував, і Даніель Ріккардо переміг попереду Ферстаппена."
+            "en": "Lewis Hamilton was leading the 2016 Malaysian Grand Prix when his Mercedes engine failed in flames on lap 41. Daniel Ricciardo, who had already defended fiercely against Red Bull teammate Max Verstappen, inherited the lead and secured a one-two for the team. Hamilton's retirement transformed the title fight.",
+            "uk": "Льюїс Гамільтон лідирував у Гран-прі Малайзії 2016 року, коли на 41-му колі двигун його Mercedes згорів. Даніель Ріккардо, який до того запекло оборонявся від напарника по Red Bull Макса Ферстаппена, очолив гонку й приніс команді дубль. Схід Гамільтона різко змінив боротьбу за титул."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/ricciardo-beats-verstappen-as-red-bull-finish-one-two-in-malaysia.4CnsIBxxLfBYADdpu4a0EC"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2017,
@@ -2177,12 +2199,14 @@
             "uk": "Ферстаппен виграє останній Гран-прі Малайзії"
           },
           "narrative": {
-            "en": "Max Verstappen won at Sepang as the circuit hosted its last Formula 1 championship race to date.",
-            "uk": "Макс Ферстаппен переміг у Сепанзі під час останнього на сьогодні етапу чемпіонату Формули-1 на цій трасі."
+            "en": "Max Verstappen won the final Malaysian Grand Prix at Sepang in 2017, just after his twentieth birthday. He passed Lewis Hamilton for the lead on lap four and controlled the race, while Sebastian Vettel charged from the back of the grid to fourth. The circuit's farewell produced a confident young winner.",
+            "uk": "Макс Ферстаппен виграв останній Гран-прі Малайзії в Сепанзі 2017 року, невдовзі після двадцятого дня народження. На четвертому колі він обігнав Льюїса Гамільтона й контролював гонку, тоді як Себастьян Феттель прорвався з кінця стартової решітки на четверте місце. Прощання траси з Формулою-1 принесло впевнену перемогу молодого пілота."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/race-verstappen-victorious-as-vettel-storms-to-fourth.1MPgC9AY9m664Kwm2SeioY"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [],
@@ -2228,12 +2252,14 @@
             "uk": "Перша перемога Масси"
           },
           "narrative": {
-            "en": "Felipe Massa won his first Formula 1 Grand Prix in Turkey for Ferrari.",
-            "uk": "Феліпе Масса здобув першу перемогу у Формулі-1 за Ferrari в Туреччині."
+            "en": "Felipe Massa won the 2006 Turkish Grand Prix at Istanbul Park for Ferrari, with Fernando Alonso second and Michael Schumacher third. The official classification records a 5.575-second gap to Alonso. On a circuit that had joined the calendar only the previous year, Massa claimed a milestone victory.",
+            "uk": "Феліпе Масса виграв Гран-прі Туреччини 2006 року в Стамбул-Парку за Ferrari. Другим фінішував Фернандо Алонсо, третім — Міхаель Шумахер. Офіційний протокол фіксує перевагу Масси над Алонсо в 5,575 секунди. На трасі, яка приєдналася до календаря лише попереднього року, Масса здобув важливу перемогу."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2006/races/803/turkey/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "official_classification_checked_interpretation_pending"
         },
         {
           "year": 2010,
@@ -2242,12 +2268,14 @@
             "uk": "Зіткнення напарників Red Bull"
           },
           "narrative": {
-            "en": "Vettel and Webber collided while racing for the lead and Hamilton won.",
-            "uk": "Феттель і Веббер зіткнулися в боротьбі за лідерство, а переміг Гамільтон."
+            "en": "The 2010 Turkish Grand Prix changed when Red Bull teammates Mark Webber and Sebastian Vettel collided while fighting for the lead. Vettel retired and Webber fell back, leaving Lewis Hamilton to win for McLaren. The crash became an early flashpoint in a rivalry that would later erupt again at Sepang.",
+            "uk": "Гран-прі Туреччини 2010 року змінився після зіткнення напарників по Red Bull Марка Веббера й Себастьяна Феттеля в боротьбі за лідерство. Феттель зійшов, Веббер втратив позиції, а перемогу за McLaren здобув Льюїс Гамільтон. Аварія стала раннім спалахом суперництва, яке згодом знову вибухнуло в Сепанзі."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/f1-unscripted-with-henieken-webber-reveals-his-biggest-regret-over-multi-21.1O445nvLZAUB5x7X5aJUrN"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2008,
