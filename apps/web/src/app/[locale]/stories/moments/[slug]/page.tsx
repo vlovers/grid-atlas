@@ -12,7 +12,6 @@ import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialTakeaways } from '@/components/stories/editorial-takeaways';
-import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
 import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
 import { editorialResultHighlights } from '@/components/stories/editorial-result-highlights';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
@@ -77,7 +76,6 @@ export default async function EditorialMoment({ params }: Props) {
               <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
               <h3>{chapter.heading}</h3>
               {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
-              {index < 3 && slug in editorialInterpretivePassages && <p className={styles.editorialInterpretation}>{editorialInterpretivePassages[slug as keyof typeof editorialInterpretivePassages][index][locale]}</p>}
             </section>)}
           </div>
         </div>
