@@ -308,3 +308,10 @@ test('reader questions render as twenty complete bilingual question-and-answer p
   assert.ok(detail.includes('item[locale].question'));
   assert.ok(detail.includes('item[locale].answer'));
 });
+
+test('article chapters do not inject generic reflections after every scene', () => {
+  assert.ok(detail.includes('chapter.paragraphs.map('), 'long-form paragraphs must render');
+  assert.ok(!detail.includes('editorialInterpretivePassages'), 'generic interpretations must not break up the story');
+  const faq = literal(read(directory + 'editorial-reader-questions.ts'), 'editorialReaderQuestions');
+  assert.equal(Object.values(faq).flat().length, 20);
+});
