@@ -8,6 +8,7 @@ import { draftArticle } from '@/components/stories/editorial-draft-articles';
 import { resolveEditorialPeople } from '@/components/stories/editorial-people-resolver';
 import { resolveEditorialRaces } from '@/components/stories/editorial-race-resolver';
 import { storyRaceContext } from '@/components/stories/editorial-race-context';
+import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -34,12 +35,15 @@ export default async function EditorialMoment({ params }: Props) {
   const related = relatedEditorialMoments(slug);
   const siblingLocale = uk ? 'en' : 'uk';
   const chapters = draftArticle(slug, locale);
+  const artKinds: ArtKind[] = ['duel', 'apex', 'velocity', 'grid', 'helmet'];
+  const artKind = artKinds[editorialStoryPreviews.findIndex(item => item.slug === slug) % artKinds.length];
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
     <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
+        <div className={styles.editorialHeroArt}><MotorsportArt kind={artKind} tone="gold" /></div>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
