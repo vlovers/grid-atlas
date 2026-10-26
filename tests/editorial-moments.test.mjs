@@ -329,3 +329,10 @@ test('story pages prioritise racing narratives over generic life lessons and edi
   }
   assert.ok(detail.indexOf('aria-labelledby="research-chapters"') < detail.indexOf('aria-labelledby="reader-questions"'));
 });
+
+test('bilingual editorial reader keeps the runtime export used by the route', () => {
+  assert.match(articles, /export function draftArticle\(slug: string, locale: 'en' \| 'uk'\)/);
+  assert.match(articles, /if \(!\(slug in editorialDraftArticles\)\) return null/);
+  assert.match(articles, /editorialDraftArticles\[slug as keyof typeof editorialDraftArticles\]\[locale\]/);
+  assert.ok(detail.includes("import { draftArticle } from '@/components/stories/editorial-draft-articles'"));
+});
