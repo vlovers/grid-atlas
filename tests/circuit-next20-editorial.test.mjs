@@ -18,7 +18,7 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
    }
    assert.ok(c.moments[0].sources?.every(s=>s.startsWith('https://www.formula1.com/')));
    for(const moment of c.moments){
-     assert.ok(['unverified_research_draft','source_checked_research_draft'].includes(moment.review_status));
+     assert.ok(['unverified_research_draft','source_checked_research_draft','official_classification_checked_interpretation_pending'].includes(moment.review_status));
      assert.ok(moment.sources?.every(url => url.startsWith('https://www.formula1.com/')));
      for(const lang of ['en','uk']) assert.ok(moment.narrative[lang]?.trim().length>=60,c.circuit_id+'/'+moment.year+'/'+lang);
    }
