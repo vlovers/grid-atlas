@@ -1,0 +1,2214 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-next-20-editorial-v1",
+  "status": "research_only",
+  "publication": "blocked_pending_independent_historical_review",
+  "batch_scope": "20 distinct circuits excluding Monaco and Spa; introductory bilingual historical narratives and initial researched historical moments. NOT full verified turn inventory.",
+  "source_note": "The single memorable moment for each circuit is a research draft candidate, not an independently verified published fact; linked overview articles may cover multiple circuits and must be checked for each event. Named corner candidates require precise official layout + number + year resolution before publication.",
+  "circuits": [
+    {
+      "circuit_id": "silverstone",
+      "display_name": {
+        "en": "Silverstone",
+        "uk": "Сільверстоун"
+      },
+      "editorial_intro": {
+        "en": "The former airfield hosted the first Drivers' World Championship race in 1950. Its long history gives a rare opportunity to compare the beginning of Formula 1 with modern Grand Prix racing.",
+        "uk": "Колишній аеродром прийняв першу гонку чемпіонату світу серед пілотів у 1950 році. Історія Сільверстоуна дозволяє порівняти початок Формули-1 із сучасними Гран-прі."
+      },
+      "moments": [
+        {
+          "year": 1950,
+          "title": {
+            "en": "The championship begins",
+            "uk": "Початок чемпіонату"
+          },
+          "narrative": {
+            "en": "Giuseppe Farina won the inaugural championship race on 13 May 1950. It was not merely a British Grand Prix victory: the new competition had its first winner.",
+            "uk": "13 травня 1950 року Джузеппе Фаріна виграв першу гонку нового чемпіонату світу. Це була не просто перемога на Гран-прі Великої Британії: у нового змагання з’явився перший переможець."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1987,
+          "title": {
+            "en": "Mansell hunts down Piquet",
+            "uk": "Менселл наздоганяє Піке"
+          },
+          "narrative": {
+            "en": "Nigel Mansell had a deficit of almost half a minute to Williams teammate Nelson Piquet, but attacked relentlessly in front of the British crowd. With three laps left he passed Piquet at Stowe and won; the crowd poured onto the track after the finish.",
+            "uk": "Найджел Менселл поступався напарникові по Williams Нельсону Піке майже пів хвилини, але перед домашніми трибунами почав стрімко скорочувати відрив. За три кола до фінішу він обігнав Піке в повороті Stowe й переміг, а після гонки вболівальники вибігли на трасу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Hamilton masters the rain",
+            "uk": "Гамільтон підкорює дощ"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the rain-soaked 2008 British Grand Prix at Silverstone, finishing more than a minute ahead of Nick Heidfeld. The difficult conditions and huge winning margin made it one of his defining early drives.",
+            "uk": "Льюїс Гамільтон виграв дощовий Гран-прі Великої Британії 2008 року в Сільверстоуні, випередивши Ніка Гайдфельда більш ніж на хвилину. Складні умови й величезна перевага зробили цю гонку одним із найяскравіших ранніх виступів британця."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1973,
+          "title": {
+            "en": "A first-lap chain reaction",
+            "uk": "Ланцюгова аварія на першому колі"
+          },
+          "narrative": {
+            "en": "A crash involving Jody Scheckter triggered a multi-car accident and a race stoppage.",
+            "uk": "Аварія за участю Джоді Шектера спричинила масове зіткнення та зупинку гонки."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1998,
+          "title": {
+            "en": "The pit-lane finish",
+            "uk": "Фініш на піт-лейні"
+          },
+          "narrative": {
+            "en": "Michael Schumacher crossed the finish line while serving a penalty in the pits, prompting a debate over the race procedure.",
+            "uk": "Міхаель Шумахер перетнув фінішну лінію під час відбування штрафу в боксах, що викликало суперечки щодо процедури."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Maggotts",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Becketts",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Chapel",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Copse",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Stowe",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "monza",
+      "display_name": {
+        "en": "Autodromo Nazionale Monza",
+        "uk": "Автодром Монца"
+      },
+      "editorial_intro": {
+        "en": "Speed and Ferrari's home crowd shaped Monza's identity. Its famous straights and braking zones have produced races decided by tiny margins and surprise winners.",
+        "uk": "Швидкість і домашні трибуни Ferrari сформували характер Монци. Її прямі та зони гальмування не раз дарували гонки з мінімальними розривами й несподіваними переможцями."
+      },
+      "moments": [
+        {
+          "year": 1971,
+          "title": {
+            "en": "Gethin wins by a fraction",
+            "uk": "Гетін виграє з мінімальною перевагою"
+          },
+          "narrative": {
+            "en": "Peter Gethin claimed his only Formula 1 victory in a slipstreaming race that finished with the leading cars almost together. The first five crossed the line within 0.61 seconds.",
+            "uk": "Пітер Гетін здобув єдину перемогу у Формулі-1 після боротьби на сліпстримі. Перші п’ять машин перетнули фініш із різницею менш ніж 0,61 секунди."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1967,
+          "title": {
+            "en": "Clark's charge runs out of fuel",
+            "uk": "Кларку забракло пального"
+          },
+          "narrative": {
+            "en": "A puncture cost Jim Clark a lap in the 1967 Italian Grand Prix. He caught the leaders and even reclaimed first place, but fuel trouble on the final lap left him third behind winner John Surtees and Jack Brabham.",
+            "uk": "Прокол змусив Джима Кларка втратити коло на Гран-прі Італії 1967 року. Він наздогнав лідерів і знову очолив гонку, але брак пального на останньому колі залишив його третім після Джона Сертіса та Джека Бребема."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS.2EYo6UpsN0K9wLYBykTUGS"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1988,
+          "title": {
+            "en": "Ferrari's emotional one-two",
+            "uk": "Емоційний дубль Ferrari"
+          },
+          "narrative": {
+            "en": "McLaren had won every previous round of 1988. At Monza, Alain Prost retired and Ayrton Senna collided with Jean-Louis Schlesser in the closing laps. Gerhard Berger and Michele Alboreto gave Ferrari a one-two finish just weeks after Enzo Ferrari's death.",
+            "uk": "McLaren виграла всі попередні етапи сезону 1988 року. У Монці Ален Прост зійшов, а Айртон Сенна на останніх колах зіткнувся із Жан-Луї Шлессером. Герхард Бергер і Мікеле Альборето принесли Ferrari подвійний фініш за кілька тижнів після смерті Енцо Феррарі."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH.html.1q7hUu1YPrEhvQInT2E6vH"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Vettel gives Toro Rosso its first win",
+            "uk": "Феттель приносить Toro Rosso першу перемогу"
+          },
+          "narrative": {
+            "en": "Sebastian Vettel started from pole on a wet weekend and won the 2008 Italian Grand Prix for Toro Rosso. It was his first Formula 1 victory and the team's first, achieved before he turned 22.",
+            "uk": "Себастьян Феттель стартував із поулу на мокрому вікенді й виграв Гран-прі Італії 2008 року за Toro Rosso. Це була перша перемога і гонщика, і команди; Себастьяну тоді ще не виповнилося 22 роки."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "Leclerc holds off Mercedes",
+            "uk": "Леклер втримує Mercedes"
+          },
+          "narrative": {
+            "en": "Charles Leclerc defended the lead under sustained pressure from Lewis Hamilton and Valtteri Bottas to win the 2019 Italian Grand Prix. Ferrari's first Monza victory since 2010 sparked celebrations beneath the podium.",
+            "uk": "Шарль Леклер відбив атаки Льюїса Гамільтона й Валттері Боттаса та виграв Гран-прі Італії 2019 року. Перша перемога Ferrari у Монці з 2010-го викликала велике святкування під подіумом."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Curva Grande",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Lesmo",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Ascari",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Parabolica",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "suzuka",
+      "display_name": {
+        "en": "Suzuka",
+        "uk": "Сузука"
+      },
+      "editorial_intro": {
+        "en": "The figure-eight Japanese circuit has often hosted decisive rounds of the championship. Its crossing layout and technical sequences have made it a test of precision.",
+        "uk": "Японська траса у формі вісімки не раз приймала вирішальні етапи чемпіонату. Перехресна конфігурація й технічні зв’язки поворотів вимагають особливої точності."
+      },
+      "moments": [
+        {
+          "year": 2005,
+          "title": {
+            "en": "Räikkönen's charge",
+            "uk": "Прорив Райкконена"
+          },
+          "narrative": {
+            "en": "Kimi Räikkönen started seventeenth at Suzuka in 2005 but kept moving forward. On the final lap he passed Giancarlo Fisichella to win, completing a comeback that stands among the circuit's most celebrated races.",
+            "uk": "Кімі Райкконен стартував сімнадцятим у Сузуці 2005 року й поступово відігравав позиції. На останньому колі він обігнав Джанкарло Фізікеллу й переміг — один із найзнаменитіших проривів на цій трасі."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1988,
+          "title": {
+            "en": "Senna wins the title after a troubled start",
+            "uk": "Сенна бере титул після невдалого старту"
+          },
+          "narrative": {
+            "en": "Senna nearly lost everything at the start when his McLaren stalled. He recovered through the field as rain arrived, caught teammate Alain Prost and won both the Japanese Grand Prix and his first world title.",
+            "uk": "Сенна мало не втратив шанс на старті, коли його McLaren заглух. Із початком дощу він прорвався крізь пелотон, наздогнав напарника Алена Проста й виграв Гран-прі Японії та перший чемпіонський титул."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1989,
+          "title": {
+            "en": "The chicane collision",
+            "uk": "Зіткнення в шикані"
+          },
+          "narrative": {
+            "en": "Prost and Senna collided at Suzuka's chicane while fighting for the lead. Senna rejoined and finished first on the road but was disqualified; Prost became world champion.",
+            "uk": "Прост і Сенна зіткнулися в шикані Сузуки під час боротьби за лідерство. Сенна повернувся на трасу й першим дістався фінішу, але його дискваліфікували; чемпіоном став Прост."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1990,
+          "title": {
+            "en": "A title decided at Turn 1",
+            "uk": "Титул вирішується в першому повороті"
+          },
+          "narrative": {
+            "en": "Senna and Prost collided at the opening corner of the 1990 Japanese Grand Prix. Both retired immediately and Senna secured the championship, leaving another bitter chapter in their rivalry.",
+            "uk": "Сенна й Прост зіткнулися в першому повороті Гран-прі Японії 1990 року. Обидва одразу зійшли, а Сенна забезпечив собі чемпіонство. Так з’явилася ще одна гірка сторінка їхнього суперництва."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2000,
+          "title": {
+            "en": "Ferrari's long wait ends",
+            "uk": "Ferrari завершує довге очікування"
+          },
+          "narrative": {
+            "en": "Michael Schumacher won in difficult conditions at Suzuka and clinched his first championship for Ferrari. The team had not celebrated a Drivers' World Champion since 1979.",
+            "uk": "Міхаель Шумахер переміг у складних умовах Сузуки й здобув перший титул за Ferrari. Команда не мала чемпіона світу серед пілотів із 1979 року."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2012,
+          "title": {
+            "en": "Kobayashi gives Japan a home podium",
+            "uk": "Кобаясі дарує Японії домашній подіум"
+          },
+          "narrative": {
+            "en": "Kamui Kobayashi held off Jenson Button to finish third for Sauber in 2012. It was a rare home podium for a Japanese driver, celebrated by the Suzuka crowd.",
+            "uk": "Камуї Кобаясі стримав Дженсона Баттона й фінішував третім за Sauber у 2012 році. Японський гонщик подарував уболівальникам у Сузуці рідкісний домашній подіум."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Esses",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Degner",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Spoon",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "130R",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Casio Triangle",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "interlagos",
+      "display_name": {
+        "en": "Interlagos",
+        "uk": "Інтерлагос"
+      },
+      "editorial_intro": {
+        "en": "Built among the hills of São Paulo, Interlagos has hosted celebrations and heartbreaking title finales. The modern lap still carries the shape of its older, longer history.",
+        "uk": "Збудований серед пагорбів Сан-Паулу, Інтерлагос бачив тріумфи й болісні чемпіонські розв’язки. Сучасне коло й досі нагадує про значно довшу історичну конфігурацію."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "A championship in the rain",
+            "uk": "Титул під дощем"
+          },
+          "narrative": {
+            "en": "Sebastian Vettel spun on the opening lap of the Brazilian finale and dropped toward the back of the field. He fought through a chaotic race to finish sixth and secure the championship ahead of Fernando Alonso.",
+            "uk": "Себастьяна Феттеля розвернуло на першому колі фіналу в Бразилії, і він опинився майже в кінці пелотону. У хаотичній гонці він прорвався до шостого місця й зберіг титул у боротьбі з Фернандо Алонсо."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "A title changes hands in Brazil",
+            "uk": "Чемпіонський переворот у Бразилії"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton led the standings before the final round, but early gearbox trouble sent him backwards. Kimi Räikkönen won the race and became world champion, one point ahead of Hamilton and Fernando Alonso.",
+            "uk": "Льюїс Гамільтон очолював чемпіонат перед фіналом, але рання проблема з коробкою передач відкинула його назад. Кімі Райкконен переміг і став чемпіоном світу, випередивши Гамільтона та Фернандо Алонсо на одне очко."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/5-reasons-we-love-the-brazilian-grand-prix.37v8PT899Wnp7v6y51sUMf"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "A dramatic finale after the titles were decided",
+            "uk": "Драматичний фініш після розіграшу титулів"
+          },
+          "narrative": {
+            "en": "Even with both titles already decided, the 2019 Brazilian Grand Prix produced extraordinary late racing. Max Verstappen won, Pierre Gasly fought Lewis Hamilton to the line for second, and Carlos Sainz inherited third in the final classification.",
+            "uk": "Навіть після визначення обох чемпіонів Гран-прі Бразилії 2019 року подарував бурхливий фінал. Макс Ферстаппен переміг, П’єр Гаслі втримав друге місце в боротьбі з Льюїсом Гамільтоном, а Карлос Сайнс зрештою посів третє місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Massa wins the race, Hamilton takes the title",
+            "uk": "Масса виграє гонку, Гамільтон — титул"
+          },
+          "narrative": {
+            "en": "Felipe Massa crossed the line first in Brazil and briefly appeared to be world champion. Lewis Hamilton passed Timo Glock near the end of the final lap for fifth, the position he needed to clinch the 2008 championship by one point.",
+            "uk": "Феліпе Масса фінішував першим у Бразилії й на мить здавалося, що він став чемпіоном світу. Льюїс Гамільтон обігнав Тімо Глока наприкінці останнього кола, посів п’яте місце й здобув титул 2008 року з перевагою в одне очко."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-5-lewis-hamilton-snatches-his-first-f1-title-on-the-final.4eiCdYNL9LTv5OKW7Npu5i.4eiCdYNL9LTv5OKW7Npu5i.4eiCdYNL9LTv5OKW7Npu5i"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2003,
+          "title": {
+            "en": "The winner changes after the race",
+            "uk": "Переможець змінюється після гонки"
+          },
+          "narrative": {
+            "en": "An accident and red flag ended the rain-hit 2003 Brazilian Grand Prix. Kimi Räikkönen was initially declared the winner, but the result was corrected days later when timing records showed Giancarlo Fisichella had led at the relevant countback lap.",
+            "uk": "Аварія й червоний прапор завершили дощовий Гран-прі Бразилії 2003 року. Спочатку переможцем оголосили Кімі Райкконена, але через кілька днів результат виправили: хронометраж показав, що на потрібному колі лідирував Джанкарло Фізікелла."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/moments-in-time-the-brazilian-grand-prix.5dr3Egu9lleFLsheSjlkQ0"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1991,
+          "title": {
+            "en": "Senna wins at home at last",
+            "uk": "Сенна нарешті перемагає вдома"
+          },
+          "narrative": {
+            "en": "Ayrton Senna finally won the Brazilian Grand Prix in 1991 despite mechanical trouble late in the race. The victory at Interlagos became one of the defining emotional moments of his career.",
+            "uk": "Айртон Сенна нарешті виграв домашній Гран-прі Бразилії у 1991 році, попри технічні проблеми наприкінці гонки. Перемога на Інтерлагосі стала однією з найемоційніших подій його кар’єри."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Senna S",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Curva do Sol",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Descida do Lago",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Junção",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "display_name": {
+        "en": "Circuit Gilles Villeneuve",
+        "uk": "Траса Жиля Вільнева"
+      },
+      "editorial_intro": {
+        "en": "Montreal's island circuit combines public park roads, close barriers and long braking zones. Its final chicane is famous for testing even championship favourites.",
+        "uk": "Острівна траса Монреаля поєднує дороги міського парку, близькі бар’єри та довгі зони гальмування. Її фінальна шикана випробовує навіть фаворитів."
+      },
+      "moments": [
+        {
+          "year": 2011,
+          "title": {
+            "en": "Button wins a marathon",
+            "uk": "Баттон виграє марафон"
+          },
+          "narrative": {
+            "en": "The rain-interrupted 2011 Canadian Grand Prix ended with Jenson Button passing Sebastian Vettel on the final lap after an extraordinary recovery.",
+            "uk": "Дощовий Гран-прі Канади 2011 року завершився обгоном Себастьяна Феттеля Дженсоном Баттоном на останньому колі після неймовірного повернення в боротьбу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Kubica comes back to win",
+            "uk": "Повернення й перемога Кубіци"
+          },
+          "narrative": {
+            "en": "A year after surviving a violent accident at Montreal, Robert Kubica returned and won the Canadian Grand Prix. His BMW Sauber teammate Nick Heidfeld finished second, giving the team a remarkable one-two finish.",
+            "uk": "Через рік після важкої аварії у Монреалі Роберт Кубіца повернувся й виграв Гран-прі Канади. Його напарник по BMW Sauber Нік Гайдфельд фінішував другим, принісши команді подвійний тріумф."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1999,
+          "title": {
+            "en": "The wall earns its nickname",
+            "uk": "Звідки взялася «Стіна чемпіонів»"
+          },
+          "narrative": {
+            "en": "Four drivers hit the wall at the last chicane in 1999, among them world champions Damon Hill, Michael Schumacher and Jacques Villeneuve. That is how a notorious barrier earned its name: the Wall of Champions.",
+            "uk": "У 1999 році в останній шикані розбили машини четверо гонщиків, зокрема чемпіони світу Деймон Гілл, Міхаель Шумахер і Жак Вільньов. Саме після цих аварій бар’єр отримав назву «Стіна чемпіонів»."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "Hamilton wins for the first time",
+            "uk": "Перша перемога Гамільтона"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton arrived in Montreal as a rookie and won his first Formula 1 Grand Prix. Robert Kubica survived a violent crash on the same afternoon; a year later he returned to Canada and won.",
+            "uk": "Льюїс Гамільтон приїхав до Монреаля новачком і здобув першу перемогу у Формулі-1. Того ж дня Роберт Кубіца пережив страшну аварію; за рік він повернувся до Канади й переміг."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1982,
+          "title": {
+            "en": "A circuit takes Gilles Villeneuve's name",
+            "uk": "Траса отримує ім’я Жиля Вільнева"
+          },
+          "narrative": {
+            "en": "The Montreal venue was renamed in memory of Gilles Villeneuve after his death earlier that year.",
+            "uk": "Після загибелі Жиля Вільнева монреальську трасу перейменували на його честь."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Senna Curve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Wall of Champions",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Hairpin",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "imola",
+      "display_name": {
+        "en": "Imola",
+        "uk": "Імола"
+      },
+      "editorial_intro": {
+        "en": "Imola's history cannot be separated from its fast old layout and the safety changes following 1994. The circuit remains a place where the sport remembers both racing and loss.",
+        "uk": "Історія Імоли нерозривно пов’язана зі швидкою старою конфігурацією та змінами безпеки після 1994 року. Це місце зберігає пам’ять і про перегони, і про втрати."
+      },
+      "moments": [
+        {
+          "year": 1994,
+          "title": {
+            "en": "A weekend that changed the sport",
+            "uk": "Вікенд, який змінив спорт"
+          },
+          "narrative": {
+            "en": "Roland Ratzenberger and Ayrton Senna died during the San Marino Grand Prix weekend. Their deaths drove renewed scrutiny of Formula 1 safety.",
+            "uk": "Роланд Ратценбергер і Айртон Сенна загинули під час вікенду Гран-прі Сан-Марино. Їхня смерть змусила Формулу-1 знову поставити безпеку на перше місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1982,
+          "title": {
+            "en": "Ferrari teammates fall out",
+            "uk": "Сварка напарників Ferrari"
+          },
+          "narrative": {
+            "en": "Didier Pironi passed Gilles Villeneuve late in the San Marino Grand Prix, igniting a dispute over team instructions.",
+            "uk": "Дідьє Піроні наприкінці Гран-прі Сан-Марино обігнав Жиля Вільнева, спричинивши суперечку через командні вказівки."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2005,
+          "title": {
+            "en": "Alonso resists Schumacher",
+            "uk": "Алонсо стримує Шумахера"
+          },
+          "narrative": {
+            "en": "Fernando Alonso held off Michael Schumacher in the closing laps to win for Renault.",
+            "uk": "Фернандо Алонсо втримав Міхаеля Шумахера на останніх колах і переміг за Renault."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2006,
+          "title": {
+            "en": "Schumacher turns the tables",
+            "uk": "Шумахер бере реванш"
+          },
+          "narrative": {
+            "en": "Michael Schumacher won the San Marino Grand Prix after resisting Fernando Alonso, reversing the outcome of their duel the previous year.",
+            "uk": "Міхаель Шумахер виграв Гран-прі Сан-Марино, стримавши Фернандо Алонсо й узявши реванш за попередній рік."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1983,
+          "title": {
+            "en": "Tambay wins before Ferrari's Italian crowd",
+            "uk": "Тамбе перемагає перед італійськими трибунами Ferrari"
+          },
+          "narrative": {
+            "en": "Patrick Tambay delivered Ferrari victory at Imola after Riccardo Patrese lost the lead in a late crash.",
+            "uk": "Патрік Тамбе приніс Ferrari перемогу в Імолі після пізньої аварії Ріккардо Патрезе, який втратив лідерство."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Tamburello",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Villeneuve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Tosa",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Acque Minerali",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Rivazza",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "display_name": {
+        "en": "Nürburgring",
+        "uk": "Нюрбургринг"
+      },
+      "editorial_intro": {
+        "en": "The Nürburgring name spans two very different racing worlds: the long Nordschleife and the later Grand Prix circuit. A story about one cannot silently borrow the corners of the other.",
+        "uk": "Назва Нюрбургринг об’єднує два дуже різні світи: довгу Північну петлю та пізнішу трасу Гран-прі. Історію однієї конфігурації не можна описувати поворотами іншої."
+      },
+      "moments": [
+        {
+          "year": 1957,
+          "title": {
+            "en": "Fangio's Nürburgring chase",
+            "uk": "Погоня Фанхіо"
+          },
+          "narrative": {
+            "en": "An unscheduled setback at his pit stop left Juan Manuel Fangio behind the Ferraris of Mike Hawthorn and Peter Collins. Over the remaining Nordschleife laps he cut the gap and passed both, producing a defining victory on the old long circuit.",
+            "uk": "Затримка на піт-стопі відкинула Хуана-Мануеля Фанхіо позаду Ferrari Майка Готорна та Пітера Коллінза. На довгій Північній петлі він скорочував відрив і обігнав обох, здобувши одну з найвідоміших своїх перемог."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1976,
+          "title": {
+            "en": "Lauda's Nordschleife accident",
+            "uk": "Аварія Лауди на Північній петлі"
+          },
+          "narrative": {
+            "en": "Niki Lauda survived a serious fiery crash that reignited debate over racing on the old long layout.",
+            "uk": "Нікі Лауда вижив після страшної аварії з пожежею, що посилила суперечки про гонки на старій довгій конфігурації."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1999,
+          "title": {
+            "en": "Herbert's unexpected win",
+            "uk": "Несподівана перемога Герберта"
+          },
+          "narrative": {
+            "en": "Rain and mistakes reshuffled the European Grand Prix before Johnny Herbert won for Stewart.",
+            "uk": "Дощ і помилки змінили перебіг Гран-прі Європи, і Джонні Герберт переміг за Stewart."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1984,
+          "title": {
+            "en": "A new Grand Prix circuit",
+            "uk": "Нова траса Гран-прі"
+          },
+          "narrative": {
+            "en": "The Nürburgring's modern Grand Prix circuit opened, replacing the Nordschleife as the venue's Formula 1 racing configuration.",
+            "uk": "Нова траса Гран-прі відкрилася, замінивши Північну петлю як місце проведення гонок Формули-1."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2020,
+          "title": {
+            "en": "Hamilton matches Schumacher's wins",
+            "uk": "Гамільтон зрівнюється з Шумахером"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the Eifel Grand Prix and equalled Michael Schumacher's then record of 91 Formula 1 wins.",
+            "uk": "Льюїс Гамільтон виграв Гран-прі Айфеля й повторив тодішній рекорд Міхаеля Шумахера — 91 перемогу."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Karussell",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Döttinger Höhe",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "display_name": {
+        "en": "Hockenheimring",
+        "uk": "Хоккенгаймринг"
+      },
+      "editorial_intro": {
+        "en": "The old Hockenheim course ran deep into the forest; its modern successor tells a different story. Comparing them reveals why lap length alone never explains a circuit's character.",
+        "uk": "Старий Хоккенгайм проходив далеко в ліс; сучасна конфігурація має зовсім інший характер. Їх порівняння показує, чому самої довжини кола недостатньо, щоб зрозуміти трасу."
+      },
+      "moments": [
+        {
+          "year": 2019,
+          "title": {
+            "en": "Rain turns the order upside down",
+            "uk": "Дощ перевертає гонку"
+          },
+          "narrative": {
+            "en": "The 2019 race swung through changing rain and drying conditions. Several drivers went off or misjudged tyre changes, but Max Verstappen recovered from a spin and won an unpredictable Grand Prix.",
+            "uk": "Гонка 2019 року постійно змінювалася через дощ і підсихання асфальту. Пілоти вилітали з траси або помилялися з вибором шин, а Макс Ферстаппен пережив розворот і виграв непередбачуваний Гран-прі."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/2019/races/1010/germany/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Verstappen first, Vettel second, Kvyat third"
+        },
+        {
+          "year": 1982,
+          "title": {
+            "en": "Tambay wins for Ferrari",
+            "uk": "Тамбе перемагає за Ferrari"
+          },
+          "narrative": {
+            "en": "Patrick Tambay won the German Grand Prix after a difficult period for Ferrari.",
+            "uk": "Патрік Тамбе виграв Гран-прі Німеччини після важкого періоду для Ferrari."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2000,
+          "title": {
+            "en": "Barrichello from eighteenth",
+            "uk": "Баррікелло з вісімнадцятого місця"
+          },
+          "narrative": {
+            "en": "Rubens Barrichello took his maiden win in changing conditions after starting far down the grid.",
+            "uk": "Рубенс Баррікелло здобув першу перемогу за мінливої погоди після старту з глибини пелотону."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2002,
+          "title": {
+            "en": "The forest layout disappears",
+            "uk": "Зникає лісова конфігурація"
+          },
+          "narrative": {
+            "en": "The German Grand Prix returned to a dramatically shortened Hockenheim circuit after the long forest straights were removed.",
+            "uk": "Гран-прі Німеччини повернувся на значно коротшу трасу Хоккенгайм після вилучення довгих лісових прямих."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2018,
+          "title": {
+            "en": "Vettel crashes from the lead",
+            "uk": "Феттель вилітає з лідерства"
+          },
+          "narrative": {
+            "en": "Sebastian Vettel crashed while leading his home Grand Prix as rain arrived, and Lewis Hamilton won after starting fourteenth.",
+            "uk": "Себастьян Феттель розбив машину, лідируючи в домашньому Гран-прі під дощем, а Льюїс Гамільтон переміг після старту чотирнадцятим."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Sachs Kurve",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Motodrom",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "display_name": {
+        "en": "Zandvoort",
+        "uk": "Зандворт"
+      },
+      "editorial_intro": {
+        "en": "The circuit winds through coastal dunes and returned to Formula 1 in 2021 after a long absence. Modern banking is part of its identity, not a detail shared by every historical layout.",
+        "uk": "Траса проходить серед прибережних дюн і повернулася до Формули-1 у 2021 році після довгої перерви. Сучасний профільований віраж — частина її характеру, але не всіх історичних конфігурацій."
+      },
+      "moments": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "The Dutch Grand Prix returns",
+            "uk": "Повернення Гран-прі Нідерландів"
+          },
+          "narrative": {
+            "en": "Zandvoort hosted a World Championship Grand Prix again in 2021, with Max Verstappen winning before the home crowd.",
+            "uk": "У 2021 році Зандворт знову прийняв етап чемпіонату світу, а Макс Ферстаппен переміг перед домашніми трибунами."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-circuit-zandvoort.3yxmn4LiWkbNTKpad7IRSo.3yxmn4LiWkbNTKpad7IRSo"
+          ],
+          "source_granularity": "article_candidate_verify_page",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1961,
+          "title": {
+            "en": "All starters finish",
+            "uk": "Усі учасники фінішують"
+          },
+          "narrative": {
+            "en": "The Dutch Grand Prix became known for all fifteen starters reaching the finish without pit stops.",
+            "uk": "Гран-прі Нідерландів запам’ятався фінішем усіх п’ятнадцяти учасників без піт-стопів."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1973,
+          "title": {
+            "en": "Purley tries to help Williamson",
+            "uk": "Перлі намагається врятувати Вільямсона"
+          },
+          "narrative": {
+            "en": "Following Roger Williamson's fatal crash, fellow driver David Purley stopped to try to help him.",
+            "uk": "Після смертельної аварії Роджера Вільямсона інший гонщик Девід Перлі зупинився й намагався його врятувати."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1985,
+          "title": {
+            "en": "Lauda's final F1 victory",
+            "uk": "Остання перемога Лауди у Формулі-1"
+          },
+          "narrative": {
+            "en": "Niki Lauda held off McLaren teammate Alain Prost to claim the last Grand Prix victory of his Formula 1 career.",
+            "uk": "Нікі Лауда стримав напарника по McLaren Алена Проста й здобув останню перемогу своєї кар’єри у Формулі-1."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2023,
+          "title": {
+            "en": "Changing weather tests the field",
+            "uk": "Мінлива погода випробовує пелотон"
+          },
+          "narrative": {
+            "en": "Rain and a late red flag transformed the Dutch Grand Prix, but Max Verstappen won at home again.",
+            "uk": "Дощ і пізній червоний прапор змінили Гран-прі Нідерландів, але Макс Ферстаппен знову переміг удома."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Tarzanbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Hugenholtzbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        },
+        {
+          "name": "Arie Luyendykbocht",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "display_name": {
+        "en": "Hungaroring",
+        "uk": "Хунгароринг"
+      },
+      "editorial_intro": {
+        "en": "Hungary's twisty permanent circuit demands rhythm more than a single spectacular straight. Its first Formula 1 race made history on the eastern side of the Cold War divide.",
+        "uk": "Звивиста постійна траса Угорщини вимагає ритму більше, ніж швидкості на одній прямій. Її дебютний Гран-прі став історичним для країн по інший бік залізної завіси."
+      },
+      "moments": [
+        {
+          "year": 2006,
+          "title": {
+            "en": "Button finally wins",
+            "uk": "Перша перемога Баттона"
+          },
+          "narrative": {
+            "en": "Jenson Button took his maiden Grand Prix victory in changing wet conditions, climbing from fourteenth on the grid.",
+            "uk": "Дженсон Баттон здобув першу перемогу у мінливих дощових умовах після старту з чотирнадцятої позиції."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/2006/races/802/hungary/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Button first, de la Rosa second, Heidfeld third; grid penalty details still require separate source"
+        },
+        {
+          "year": 1986,
+          "title": {
+            "en": "Piquet passes Senna around the outside",
+            "uk": "Піке обходить Сенну зовні"
+          },
+          "narrative": {
+            "en": "At the Hungaroring's first World Championship race, Nelson Piquet passed Ayrton Senna around the outside and went on to win. The move remains part of the track's origin story.",
+            "uk": "На першому чемпіонатному Гран-прі Хунгароринга Нельсон Піке обігнав Айртона Сенну зовнішньою траєкторією та переміг. Цей маневр став частиною історії траси."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1989,
+          "title": {
+            "en": "Mansell charges from twelfth",
+            "uk": "Менселл проривається з дванадцятого місця"
+          },
+          "narrative": {
+            "en": "Nigel Mansell started twelfth in his Ferrari but fought forward until Ayrton Senna was the last obstacle. When Senna hesitated behind a slower car, Mansell seized the moment to pass both and win.",
+            "uk": "Найджел Менселл стартував дванадцятим на Ferrari, але прорвався вперед, де останньою перепоною став Айртон Сенна. Коли Сенна пригальмував за повільнішою машиною, Менселл скористався моментом, обійшов обох і переміг."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1997,
+          "title": {
+            "en": "Hill almost wins for Arrows",
+            "uk": "Гілл майже перемагає на Arrows"
+          },
+          "narrative": {
+            "en": "Damon Hill led by a large margin in an unfancied Arrows before a late hydraulic problem slowed him. Jacques Villeneuve caught him on the final lap; Hill finished second rather than delivering the team's first win.",
+            "uk": "Деймон Гілл мав велику перевагу на скромній Arrows, але наприкінці гонки проблеми з гідравлікою уповільнили його. Жак Вільньов обігнав Гілла на останньому колі, і замість першої перемоги команди залишилося друге місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1998,
+          "title": {
+            "en": "A risky strategy pays off",
+            "uk": "Ризикована стратегія спрацьовує"
+          },
+          "narrative": {
+            "en": "Ferrari moved Michael Schumacher to a three-stop strategy against the leading McLarens. Schumacher found the necessary pace between visits to the pits and emerged ahead to win.",
+            "uk": "Ferrari перевела Міхаеля Шумахера на стратегію трьох піт-стопів у боротьбі з McLaren. Міхаель показав потрібний темп між зупинками й вийшов уперед, здобувши перемогу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2003,
+          "title": {
+            "en": "Alonso wins for the first time",
+            "uk": "Перша перемога Алонсо"
+          },
+          "narrative": {
+            "en": "Fernando Alonso started from pole and controlled the 2003 Hungarian Grand Prix, even lapping reigning champion Michael Schumacher. At 22 he became Formula 1's youngest Grand Prix winner at the time.",
+            "uk": "Фернандо Алонсо стартував із поулу й контролював Гран-прі Угорщини 2003 року, навіть випередивши чинного чемпіона Міхаеля Шумахера на коло. У 22 роки він став наймолодшим переможцем Гран-прі на той час."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2021,
+          "title": {
+            "en": "Ocon survives a chaotic restart",
+            "uk": "Окон вистоює після хаотичного рестарту"
+          },
+          "narrative": {
+            "en": "Rain and first-corner crashes reshuffled the race. Hamilton restarted alone on the grid when the others switched tyres; after he pitted, Esteban Ocon led and defended to take his first Formula 1 victory.",
+            "uk": "Дощ і аварії в першому повороті перемішали пелотон. Гамільтон залишився сам на стартовій решітці після того, як інші змінили шини; коли він теж зупинився, Естебан Окон очолив гонку й утримав першу перемогу у Формулі-1."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2024,
+          "title": {
+            "en": "Piastri wins after a team-order standoff",
+            "uk": "Піастрі перемагає після командної суперечки"
+          },
+          "narrative": {
+            "en": "Oscar Piastri led early, but pit strategy put McLaren teammate Lando Norris ahead. The team asked Norris to return the place; with three laps left he slowed, allowing Piastri to take his maiden Grand Prix win.",
+            "uk": "Оскар Піастрі лідирував на початку, але стратегія піт-стопів вивела вперед його напарника Ландо Норріса. Команда попросила повернути позицію; за три кола до фінішу Норріс пропустив Піастрі до його першої перемоги."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "display_name": {
+        "en": "Red Bull Ring",
+        "uk": "Ред Булл Ринг"
+      },
+      "editorial_intro": {
+        "en": "The Austrian venue has raced under different names and configurations. Its short modern lap packs elevation changes and heavy braking into a few demanding corners.",
+        "uk": "Австрійська траса виступала під різними назвами та в різних конфігураціях. Коротке сучасне коло поєднує перепади висот і різкі гальмування."
+      },
+      "moments": [
+        {
+          "year": 1982,
+          "title": {
+            "en": "Rosberg misses by a breath",
+            "uk": "Росбергу бракує миті"
+          },
+          "narrative": {
+            "en": "Elio de Angelis held off Keke Rosberg to win by a tiny margin at the old Österreichring, before the venue was rebuilt into its shorter form.",
+            "uk": "Еліо де Анджеліс втримав Кеке Росберга й переміг із мізерною перевагою на старому Österreichring, ще до перебудови траси."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1975,
+          "title": {
+            "en": "Brambilla wins in the wet",
+            "uk": "Брамбілла перемагає під дощем"
+          },
+          "narrative": {
+            "en": "Vittorio Brambilla won a shortened wet Austrian Grand Prix on the old Österreichring.",
+            "uk": "Вітторіо Брамбілла виграв скорочений дощем Гран-прі Австрії на старому Österreichring."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2002,
+          "title": {
+            "en": "Ferrari team orders",
+            "uk": "Командний наказ Ferrari"
+          },
+          "narrative": {
+            "en": "Rubens Barrichello slowed before the finish to let Michael Schumacher win.",
+            "uk": "Рубенс Баррікелло сповільнився перед фінішем, пропустивши Міхаеля Шумахера до перемоги."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "Verstappen's late pass",
+            "uk": "Пізній обгін Ферстаппена"
+          },
+          "narrative": {
+            "en": "Max Verstappen passed Charles Leclerc late in the Austrian Grand Prix to take his first victory of 2019.",
+            "uk": "Макс Ферстаппен наприкінці Гран-прі Австрії обігнав Шарля Леклера й здобув першу перемогу сезону 2019 року."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2020,
+          "title": {
+            "en": "Norris grabs a first podium",
+            "uk": "Норріс здобуває перший подіум"
+          },
+          "narrative": {
+            "en": "Lando Norris set a fast final lap and finished third after a penalty changed the order ahead of him.",
+            "uk": "Ландо Норріс провів швидке останнє коло й став третім після штрафу суперника попереду."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "display_name": {
+        "en": "Circuit de Barcelona-Catalunya",
+        "uk": "Барселона-Каталунья"
+      },
+      "editorial_intro": {
+        "en": "Barcelona became a familiar testing and racing venue, yet the configuration has changed. The story of a lap here depends on whether the final chicane was in use.",
+        "uk": "Барселона стала звичним місцем тестів і перегонів, але її конфігурація змінювалася. Історія кола залежить зокрема від того, чи використовували фінальну шикану."
+      },
+      "moments": [
+        {
+          "year": 1996,
+          "title": {
+            "en": "Schumacher wins in the rain",
+            "uk": "Шумахер виграє під дощем"
+          },
+          "narrative": {
+            "en": "Michael Schumacher secured his first Ferrari victory in an exceptionally wet 1996 Spanish Grand Prix.",
+            "uk": "Міхаель Шумахер здобув першу перемогу за Ferrari під час надзвичайно мокрого Гран-прі Іспанії 1996 року."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/1996/races/644/spain/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Schumacher won for Ferrari, Alesi second, Villeneuve third"
+        },
+        {
+          "year": 2012,
+          "title": {
+            "en": "Maldonado's unexpected Williams victory",
+            "uk": "Несподівана перемога Мальдонадо на Williams"
+          },
+          "narrative": {
+            "en": "Pastor Maldonado won the 2012 Spanish Grand Prix for Williams after starting from pole. It was the Venezuelan driver's sole Formula 1 victory and a rare triumph for the team after its earlier championship eras.",
+            "uk": "Пастор Мальдонадо виграв Гран-прі Іспанії 2012 року за Williams після старту з поулу. Це єдина перемога венесуельця у Формулі-1 й рідкісний успіх команди після її колишніх чемпіонських сезонів."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2001,
+          "title": {
+            "en": "Häkkinen's last-lap heartbreak",
+            "uk": "Драма Хаккінена на останньому колі"
+          },
+          "narrative": {
+            "en": "Mika Häkkinen retired with an apparent win in sight, and Michael Schumacher inherited victory.",
+            "uk": "Міка Хаккінен зійшов, коли перемога здавалася близькою, а першим став Міхаель Шумахер."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2016,
+          "title": {
+            "en": "Verstappen wins on debut",
+            "uk": "Ферстаппен перемагає в дебюті"
+          },
+          "narrative": {
+            "en": "After Mercedes teammates collided, Max Verstappen won his first race for Red Bull.",
+            "uk": "Після зіткнення напарників Mercedes Макс Ферстаппен виграв першу гонку за Red Bull."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2006,
+          "title": {
+            "en": "Alonso wins in front of Spain",
+            "uk": "Алонсо перемагає перед іспанськими трибунами"
+          },
+          "narrative": {
+            "en": "Fernando Alonso won his home Grand Prix for Renault while defending his world title.",
+            "uk": "Фернандо Алонсо виграв домашній Гран-прі за Renault під час захисту чемпіонського титулу."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "albert-park",
+      "display_name": {
+        "en": "Albert Park",
+        "uk": "Альберт-Парк"
+      },
+      "editorial_intro": {
+        "en": "Melbourne's parkland streets host a temporary racing circuit. The Australian event has often signalled a new season, making surprises particularly memorable.",
+        "uk": "Дороги парку в Мельбурні тимчасово перетворюються на гоночну трасу. Австралійський Гран-прі часто відкривав сезон, тому несподіванки тут особливо запам’ятовуються."
+      },
+      "moments": [
+        {
+          "year": 1996,
+          "title": {
+            "en": "A new beginning in Melbourne",
+            "uk": "Новий початок у Мельбурні"
+          },
+          "narrative": {
+            "en": "Formula 1 moved the Australian Grand Prix from Adelaide to Melbourne in 1996, beginning the city's long association with the championship.",
+            "uk": "У 1996 році Гран-прі Австралії переїхав з Аделаїди до Мельбурна, розпочавши довгу історію міста у Формулі-1."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2009,
+          "title": {
+            "en": "Brawn starts with a double",
+            "uk": "Brawn починає з дубля"
+          },
+          "narrative": {
+            "en": "Jenson Button won Brawn GP's debut race, followed home by teammate Rubens Barrichello.",
+            "uk": "Дженсон Баттон виграв дебютну гонку Brawn GP, а Рубенс Баррікелло став другим."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2023,
+          "title": {
+            "en": "Repeated red flags",
+            "uk": "Численні червоні прапори"
+          },
+          "narrative": {
+            "en": "Incidents and restarts repeatedly reshaped the Australian Grand Prix before Verstappen was declared the winner.",
+            "uk": "Інциденти й рестарти неодноразово змінювали Гран-прі Австралії, де переможцем оголосили Ферстаппена."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2016,
+          "title": {
+            "en": "Alonso survives a huge crash",
+            "uk": "Алонсо переживає страшну аварію"
+          },
+          "narrative": {
+            "en": "Fernando Alonso walked away from a major collision with Esteban Gutiérrez, in which his McLaren rolled through the gravel.",
+            "uk": "Фернандо Алонсо вийшов неушкодженим із масштабної аварії з Естебаном Гутьєрресом, після якої його McLaren перекинулася у гравії."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2022,
+          "title": {
+            "en": "Leclerc dominates after the circuit changes",
+            "uk": "Леклер домінує після змін траси"
+          },
+          "narrative": {
+            "en": "Charles Leclerc won the Australian Grand Prix from pole on the revised Albert Park layout.",
+            "uk": "Шарль Леклер виграв Гран-прі Австралії з поулу на оновленій конфігурації Альберт-Парку."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "display_name": {
+        "en": "Marina Bay Street Circuit",
+        "uk": "Марина-Бей"
+      },
+      "editorial_intro": {
+        "en": "Singapore's night race reshaped what a Formula 1 event could look like. The floodlit city circuit brings heat, walls and little room for error.",
+        "uk": "Нічна гонка в Сінгапурі змінила уявлення про вигляд етапу Формули-1. Освітлена міська траса поєднує спеку, близькі стіни й мінімум простору для помилки."
+      },
+      "moments": [
+        {
+          "year": 2008,
+          "title": {
+            "en": "The first night Grand Prix",
+            "uk": "Перший нічний Гран-прі"
+          },
+          "narrative": {
+            "en": "Singapore hosted the first Formula 1 night race in 2008. Fernando Alonso won, though the race later became infamous because of the deliberate Piquet Jr crash.",
+            "uk": "Сінгапур прийняв перший нічний Гран-прі Формули-1 у 2008 році. Переміг Фернандо Алонсо, але згодом гонку затьмарив скандал з умисною аварією Піке-молодшого."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2017,
+          "title": {
+            "en": "Three contenders collide",
+            "uk": "Зіткнення трьох претендентів"
+          },
+          "narrative": {
+            "en": "Vettel, Räikkönen and Verstappen collided at the wet start; Hamilton went on to win.",
+            "uk": "Феттель, Райкконен і Ферстаппен зіткнулися на мокрому старті, а переміг Гамільтон."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2023,
+          "title": {
+            "en": "Sainz breaks the streak",
+            "uk": "Сайнс перериває серію"
+          },
+          "narrative": {
+            "en": "Carlos Sainz delivered Ferrari's win, deliberately keeping Lando Norris close enough to benefit from DRS.",
+            "uk": "Карлос Сайнс приніс перемогу Ferrari й навмисно тримав Ландо Норріса досить близько для DRS."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "Vettel's last Ferrari victory",
+            "uk": "Остання перемога Феттеля за Ferrari"
+          },
+          "narrative": {
+            "en": "Sebastian Vettel benefited from Ferrari's pit-stop strategy to win the Singapore Grand Prix ahead of teammate Charles Leclerc.",
+            "uk": "Себастьян Феттель скористався стратегією піт-стопів Ferrari й виграв Гран-прі Сінгапуру попереду Шарля Леклера."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2022,
+          "title": {
+            "en": "Pérez leads a difficult wet race",
+            "uk": "Перес лідирує у складній мокрій гонці"
+          },
+          "narrative": {
+            "en": "Sergio Pérez won a delayed and wet Singapore Grand Prix ahead of Charles Leclerc.",
+            "uk": "Серхіо Перес виграв відкладений через зливу Гран-прі Сінгапуру попереду Шарля Леклера."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "bahrain",
+      "display_name": {
+        "en": "Bahrain International Circuit",
+        "uk": "Міжнародний автодром Бахрейну"
+      },
+      "editorial_intro": {
+        "en": "Bahrain brought the World Championship to the Middle East in 2004. Its desert setting and varied braking zones made it a distinct addition to the calendar.",
+        "uk": "Бахрейн привів чемпіонат світу на Близький Схід у 2004 році. Пустельний пейзаж і різні зони гальмування зробили трасу особливою частиною календаря."
+      },
+      "moments": [
+        {
+          "year": 2004,
+          "title": {
+            "en": "Formula 1 arrives in Bahrain",
+            "uk": "Формула-1 приїздить до Бахрейну"
+          },
+          "narrative": {
+            "en": "Michael Schumacher won the first Bahrain Grand Prix as the championship made its first visit to the Middle East.",
+            "uk": "Міхаель Шумахер виграв перший Гран-прі Бахрейну, коли чемпіонат уперше прибув на Близький Схід."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/2004/races/755/bahrain/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Schumacher won inaugural Bahrain Grand Prix, Barrichello second"
+        },
+        {
+          "year": 2014,
+          "title": {
+            "en": "Mercedes duel under lights",
+            "uk": "Дуель Mercedes"
+          },
+          "narrative": {
+            "en": "Hamilton held off Rosberg in a fierce battle through the closing laps of the Bahrain Grand Prix.",
+            "uk": "Гамільтон стримав Росберга в запеклій боротьбі наприкінці Гран-прі Бахрейну."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2020,
+          "title": {
+            "en": "Grosjean survives the flames",
+            "uk": "Грожан виживає у вогні"
+          },
+          "narrative": {
+            "en": "Romain Grosjean escaped from a burning car after a severe opening-lap crash.",
+            "uk": "Ромен Грожан вибрався з палаючої машини після важкої аварії на першому колі."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "Leclerc loses a breakthrough win",
+            "uk": "Леклер утрачає шанс на першу перемогу"
+          },
+          "narrative": {
+            "en": "Charles Leclerc led for Ferrari until an engine problem slowed him; Lewis Hamilton won instead.",
+            "uk": "Шарль Леклер лідирував за Ferrari, поки проблема з двигуном не сповільнила його; натомість переміг Льюїс Гамільтон."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2022,
+          "title": {
+            "en": "Ferrari starts with a one-two",
+            "uk": "Ferrari починає з дубля"
+          },
+          "narrative": {
+            "en": "Charles Leclerc won the first race of the new technical-regulation era with teammate Carlos Sainz second.",
+            "uk": "Шарль Леклер виграв перший етап нової технічної епохи, а напарник Карлос Сайнс став другим."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "shanghai",
+      "display_name": {
+        "en": "Shanghai International Circuit",
+        "uk": "Міжнародний автодром Шанхая"
+      },
+      "editorial_intro": {
+        "en": "Shanghai's first corner curls into an unusually long tightening spiral. The circuit's design gave the Chinese Grand Prix a recognisable visual signature.",
+        "uk": "Перший поворот Шанхая закручується у довгу спіраль, що поступово звужується. Саме ця форма зробила Гран-прі Китаю впізнаваним."
+      },
+      "moments": [
+        {
+          "year": 2004,
+          "title": {
+            "en": "China joins the calendar",
+            "uk": "Китай у календарі"
+          },
+          "narrative": {
+            "en": "Rubens Barrichello won the inaugural Chinese Grand Prix in 2004 at the purpose-built Shanghai circuit.",
+            "uk": "Рубенс Баррікелло виграв дебютний Гран-прі Китаю 2004 року на спеціально збудованій трасі Шанхая."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "Hamilton's gravel trap",
+            "uk": "Гравійна пастка Гамільтона"
+          },
+          "narrative": {
+            "en": "Hamilton retired after sliding into gravel at the pit entry, leaving the championship open before Brazil.",
+            "uk": "Гамільтон зійшов після вильоту в гравій на в’їзді до піт-лейну, і доля титулу залишилася відкритою перед Бразилією."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2012,
+          "title": {
+            "en": "Rosberg wins for Mercedes",
+            "uk": "Росберг перемагає за Mercedes"
+          },
+          "narrative": {
+            "en": "Nico Rosberg turned pole into his maiden Grand Prix victory for Mercedes.",
+            "uk": "Ніко Росберг перетворив поул на першу перемогу в Гран-прі за Mercedes."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2009,
+          "title": {
+            "en": "Red Bull's first victory",
+            "uk": "Перша перемога Red Bull"
+          },
+          "narrative": {
+            "en": "Sebastian Vettel won a rain-soaked Chinese Grand Prix, delivering Red Bull Racing's first Formula 1 victory.",
+            "uk": "Себастьян Феттель виграв дощовий Гран-прі Китаю, принісши Red Bull Racing першу перемогу у Формулі-1."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2018,
+          "title": {
+            "en": "Ricciardo charges to victory",
+            "uk": "Ріккардо проривається до перемоги"
+          },
+          "narrative": {
+            "en": "Daniel Ricciardo used fresher tyres and bold overtakes to win after a mid-race safety car.",
+            "uk": "Даніель Ріккардо використав свіжіші шини й сміливі обгони, щоб перемогти після появи сейфті-кара."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "display_name": {
+        "en": "Yas Marina",
+        "uk": "Яс-Марина"
+      },
+      "editorial_intro": {
+        "en": "Abu Dhabi's circuit has repeatedly staged championship finales. Its layout was substantially revised in 2021, so corner details must always include an era.",
+        "uk": "Траса Абу-Дабі не раз приймала фінали чемпіонату. У 2021 році конфігурацію суттєво змінили, тому опис поворотів завжди має враховувати епоху."
+      },
+      "moments": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "A final-lap championship reversal",
+            "uk": "Розв’язка на останньому колі"
+          },
+          "narrative": {
+            "en": "Max Verstappen passed Lewis Hamilton on the final lap to win the race and 2021 Drivers' Championship following a controversial late safety-car procedure.",
+            "uk": "Макс Ферстаппен обігнав Льюїса Гамільтона на останньому колі й здобув перемогу та титул 2021 року після суперечливої процедури відновлення гонки за сейфті-каром."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/2021/races/1107/abudhabil/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Verstappen won ahead of Hamilton; safety car controversy not established by this results table"
+        },
+        {
+          "year": 2010,
+          "title": {
+            "en": "Vettel takes the championship",
+            "uk": "Феттель бере титул"
+          },
+          "narrative": {
+            "en": "Vettel won while Alonso remained trapped behind Petrov, handing the Red Bull driver the championship.",
+            "uk": "Феттель переміг, поки Алонсо не міг обігнати Петрова, і здобув титул за Red Bull."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2016,
+          "title": {
+            "en": "Rosberg survives the finale",
+            "uk": "Росберг витримує фінал"
+          },
+          "narrative": {
+            "en": "Hamilton won the race but Rosberg finished second to secure the Drivers' Championship.",
+            "uk": "Гамільтон виграв гонку, але Росберг посів друге місце й став чемпіоном світу."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2025,
+          "title": {
+            "en": "Norris claims the title by two points",
+            "uk": "Норріс здобуває титул із перевагою у два очки"
+          },
+          "narrative": {
+            "en": "Lando Norris finished third behind Verstappen and Piastri, securing the championship by two points.",
+            "uk": "Ландо Норріс фінішував третім після Ферстаппена й Піастрі та здобув чемпіонство з перевагою у два очки."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2018,
+          "title": {
+            "en": "Hamilton closes the season with a victory",
+            "uk": "Гамільтон завершує сезон перемогою"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the final race of the 2018 season at Abu Dhabi ahead of Sebastian Vettel and Max Verstappen.",
+            "uk": "Льюїс Гамільтон виграв фінальну гонку сезону 2018 року в Абу-Дабі, випередивши Себастьяна Феттеля та Макса Ферстаппена."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "cota",
+      "display_name": {
+        "en": "Circuit of the Americas",
+        "uk": "Остін"
+      },
+      "editorial_intro": {
+        "en": "Austin's uphill first corner and flowing opening sector give it a distinctive rhythm. The venue brought modern Formula 1 back to a purpose-built United States circuit.",
+        "uk": "Підйом до першого повороту й швидка початкова секція надають Остіну особливого ритму. Траса повернула сучасну Формулу-1 на спеціально збудований автодром у США."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "Formula 1 returns to Austin",
+            "uk": "Формула-1 повертається до Остіну"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the first United States Grand Prix at Circuit of the Americas in 2012, driving for McLaren.",
+            "uk": "Льюїс Гамільтон виграв перший Гран-прі США на трасі Circuit of the Americas у 2012 році за McLaren."
+          },
+          "sources": [
+            "https://www.formula1.com/en/results/2012/races/26/united-states/race-result"
+          ],
+          "source_granularity": "official_F1_race_result_confirms_winner_only",
+          "review_status": "official_classification_checked_interpretation_pending",
+          "verification_note": "Official classification: Hamilton/McLaren won 2012 Circuit of the Americas race"
+        },
+        {
+          "year": 2015,
+          "title": {
+            "en": "Hamilton's third title",
+            "uk": "Третій титул Гамільтона"
+          },
+          "narrative": {
+            "en": "Hamilton won a rain-disrupted race and secured his third Drivers' Championship.",
+            "uk": "Гамільтон виграв гонку, яку не раз змінював дощ, і здобув третій чемпіонський титул."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2018,
+          "title": {
+            "en": "Räikkönen wins again",
+            "uk": "Райкконен знову перемагає"
+          },
+          "narrative": {
+            "en": "Kimi Räikkönen ended a long winless stretch with a Ferrari victory at Austin.",
+            "uk": "Кімі Райкконен перервав довгу серію без перемог, вигравши за Ferrari в Остіні."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "Hamilton seals his sixth championship",
+            "uk": "Гамільтон здобуває шосте чемпіонство"
+          },
+          "narrative": {
+            "en": "Hamilton finished second in Austin, enough to claim his sixth world title despite teammate Bottas winning the race.",
+            "uk": "Гамільтон фінішував другим в Остіні — цього вистачило для шостого титулу, хоча гонку виграв напарник Боттас."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2022,
+          "title": {
+            "en": "Verstappen catches Hamilton late",
+            "uk": "Ферстаппен наздоганяє Гамільтона наприкінці"
+          },
+          "narrative": {
+            "en": "After a slow pit stop, Max Verstappen chased down Lewis Hamilton and passed him late to win the United States Grand Prix.",
+            "uk": "Після повільного піт-стопу Макс Ферстаппен наздогнав Льюїса Гамільтона й обігнав його наприкінці Гран-прі США."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "sepang",
+      "display_name": {
+        "en": "Sepang",
+        "uk": "Сепанг"
+      },
+      "editorial_intro": {
+        "en": "Malaysia's former Formula 1 venue mixed high humidity with sweeping turns and sudden tropical rain. Its Grand Prix often became a strategy contest against the weather.",
+        "uk": "Колишня траса Формули-1 у Малайзії поєднувала вологу спеку, широкі повороти й раптові тропічні зливи. Погода часто ставала окремим суперником команд."
+      },
+      "moments": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "Alonso's wet-weather surprise",
+            "uk": "Несподіванка Алонсо під дощем"
+          },
+          "narrative": {
+            "en": "Fernando Alonso won a rain-hit Malaysian Grand Prix in a Ferrari not widely considered the fastest car that weekend.",
+            "uk": "Фернандо Алонсо переміг на дощовому Гран-прі Малайзії на Ferrari, яку не вважали найшвидшою машиною того вікенду."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2009,
+          "title": {
+            "en": "Race cut short by rain",
+            "uk": "Гонку скорочено через зливу"
+          },
+          "narrative": {
+            "en": "Heavy rain caused the Malaysian Grand Prix to be abandoned before full distance, with half points awarded.",
+            "uk": "Через сильну зливу Гран-прі Малайзії зупинили до повної дистанції й нарахували половину очок."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2013,
+          "title": {
+            "en": "The Multi 21 dispute",
+            "uk": "Суперечка Multi 21"
+          },
+          "narrative": {
+            "en": "Vettel passed teammate Webber for victory despite instructions to hold station.",
+            "uk": "Феттель обігнав напарника Веббера задля перемоги, попри вказівку зберегти позиції."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2016,
+          "title": {
+            "en": "Hamilton retires, Ricciardo wins",
+            "uk": "Гамільтон сходить, Ріккардо перемагає"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton's engine failed while he led, allowing Daniel Ricciardo to take victory ahead of Verstappen.",
+            "uk": "Двигун Льюїса Гамільтона відмовив, коли він лідирував, і Даніель Ріккардо переміг попереду Ферстаппена."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2017,
+          "title": {
+            "en": "Verstappen wins a final Malaysian GP",
+            "uk": "Ферстаппен виграє останній Гран-прі Малайзії"
+          },
+          "narrative": {
+            "en": "Max Verstappen won at Sepang as the circuit hosted its last Formula 1 championship race to date.",
+            "uk": "Макс Ферстаппен переміг у Сепанзі під час останнього на сьогодні етапу чемпіонату Формули-1 на цій трасі."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "display_name": {
+        "en": "Istanbul Park",
+        "uk": "Істанбул-Парк"
+      },
+      "editorial_intro": {
+        "en": "Turkey's track is remembered for the demanding multi-apex Turn 8. Its blend of fast corners and elevation rewarded drivers who could sustain a precise line.",
+        "uk": "Турецьку трасу пам’ятають завдяки складному восьмому повороту з кількома апексами. Швидкі зв’язки й перепади висот винагороджували точність траєкторії."
+      },
+      "moments": [
+        {
+          "year": 2020,
+          "title": {
+            "en": "Hamilton clinches title in the wet",
+            "uk": "Гамільтон бере титул під дощем"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton won the slippery 2020 Turkish Grand Prix and secured his seventh Drivers' World Championship.",
+            "uk": "Льюїс Гамільтон переміг на слизькому Гран-прі Туреччини 2020 року й здобув сьомий титул чемпіона світу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+          ],
+          "source_granularity": "overview_requires_specific_article",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2006,
+          "title": {
+            "en": "Massa's maiden win",
+            "uk": "Перша перемога Масси"
+          },
+          "narrative": {
+            "en": "Felipe Massa won his first Formula 1 Grand Prix in Turkey for Ferrari.",
+            "uk": "Феліпе Масса здобув першу перемогу у Формулі-1 за Ferrari в Туреччині."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2010,
+          "title": {
+            "en": "Red Bull teammates collide",
+            "uk": "Зіткнення напарників Red Bull"
+          },
+          "narrative": {
+            "en": "Vettel and Webber collided while racing for the lead and Hamilton won.",
+            "uk": "Феттель і Веббер зіткнулися в боротьбі за лідерство, а переміг Гамільтон."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Massa makes it three",
+            "uk": "Третя поспіль перемога Масси"
+          },
+          "narrative": {
+            "en": "Felipe Massa won his third consecutive Turkish Grand Prix for Ferrari.",
+            "uk": "Феліпе Масса виграв третій поспіль Гран-прі Туреччини за Ferrari."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "Hamilton's tyre fails",
+            "uk": "Прокол шини Гамільтона"
+          },
+          "narrative": {
+            "en": "A tyre failure cost Lewis Hamilton places late in the Turkish Grand Prix while teammate Alonso finished ahead.",
+            "uk": "Проблема з шиною коштувала Льюїсу Гамільтону позицій наприкінці Гран-прі Туреччини, а напарник Алонсо фінішував вище."
+          },
+          "sources": [],
+          "source_granularity": "specific_primary_source_required",
+          "review_status": "unverified_research_draft"
+        }
+      ],
+      "corner_names": [
+        {
+          "name": "Turn 8",
+          "turn_number": null,
+          "configuration_id": null,
+          "status": "name_candidate_needs_official_number_and_layout"
+        }
+      ],
+      "research_gaps": [
+        "Three or more additional significant races with individual event-level sources",
+        "Complete numbered corner list for a defined official configuration",
+        "Historic layout mapping to pinned F1DB IDs",
+        "Independent English and Ukrainian editorial review"
+      ],
+      "publication": "unpublished"
+    }
+  ]
+}
