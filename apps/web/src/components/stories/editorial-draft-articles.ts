@@ -155,10 +155,10 @@ export const editorialDraftArticles = {
   "villeneuve-arnoux-1979": {
     "en": [
       {
-        "heading": "The fight behind the winner",
+        "heading": "The podium told two stories",
         "paragraphs": [
-          "Jean-Pierre Jabouille won the 1979 French Grand Prix at Dijon, giving Renault its first Formula 1 win and the turbo engine its first victory. Yet a few corners behind him, Gilles Villeneuve's Ferrari and René Arnoux's Renault were putting on the battle many people would remember longest.",
-          "In the closing laps, the pair repeatedly swapped second place, drove side by side and touched wheels. Villeneuve finished second, Arnoux third. Neither could take Jabouille's victory away. The record books preserved Renault's breakthrough; the footage preserved an extraordinary duel behind the leader."
+          "Renault had spent years working to make its turbo engine competitive, and at Dijon it finally won with Jean-Pierre Jabouille. But behind the winning car, Renault's second driver René Arnoux was unable to shake off Gilles Villeneuve in the Ferrari. The technical triumph unfolding ahead and the contest for second place belonged to the same race.",
+          "The final classification put Jabouille first, Villeneuve second and Arnoux third. That order explains why the day mattered twice: Renault had established that its approach could win, while the spectacular battle for the places behind it showed that the rest of the field had not simply stepped aside. A single finish could be a breakthrough for a team and a memorable duel for its opponents."
         ]
       },
       {
@@ -193,10 +193,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Боротьба позаду переможця",
+        "heading": "Один подіум — дві історії",
         "paragraphs": [
-          "Гран-прі Франції 1979 року в Діжоні виграв Жан-П'єр Жабуй. Це була перша перемога Renault у Формулі-1 і перша перемога боліда з турбодвигуном. Та позаду нього Жиль Вільнев на Ferrari й Рене Арну на Renault влаштували боротьбу, яку багато хто пам'ятає навіть краще за сам фініш.",
-          "На останніх колах вони кілька разів мінялися другим місцем, їхали пліч-о-пліч і торкалися колесами. Вільнев фінішував другим, Арну — третім. Перемогу Жабуя вони вже не могли відібрати. Протокол зберіг історичний прорив Renault, а відеозапис — неймовірну дуель за спиною лідера."
+          "Renault роками працювала над тим, щоб зробити турбодвигун конкурентним, і в Діжоні нарешті перемогла з Жаном-П'єром Жабуєм. Але позаду машини-переможця другий пілот Renault Рене Арну ніяк не міг відірватися від Жиля Вільньова на Ferrari. Технічний тріумф попереду та боротьба за друге місце відбувалися в одній гонці.",
+          "На фініші Жабуй був першим, Вільньов — другим, Арну — третім. Цей порядок пояснює, чому день запам'ятався двічі: Renault довела, що її рішення здатне перемагати, а неймовірна дуель позаду показала, що суперники не збиралися просто поступатися. Один Гран-прі став проривом для команди та незабутньою боротьбою для її опонентів."
         ]
       },
       {
@@ -233,10 +233,10 @@ export const editorialDraftArticles = {
   "vettel-monza-2008": {
     "en": [
       {
-        "heading": "The wrong Italian team took pole",
+        "heading": "An Italian victory no one expected",
         "paragraphs": [
-          "At Monza in 2008, an Italian team took pole position — but it was not Ferrari. It was Toro Rosso, with 21-year-old Sebastian Vettel at the wheel. Rain had unsettled the qualifying order. Sunday would decide whether the surprise was a fleeting moment or the beginning of something bigger.",
-          "The race started behind the Safety Car. When it pulled in, Vettel led and kept control. He finished ahead of Heikki Kovalainen and Robert Kubica, becoming Formula 1's youngest Grand Prix winner at the time. Toro Rosso had its first win. The rain opened a door, but the team still had to drive through it."
+          "Monza is inseparable from Ferrari in the imagination of many fans. In 2008, however, an Italian-based team other than Ferrari took the glory: Toro Rosso. Sebastian Vettel was just 21. Wet qualifying gave him the chance to start ahead, but the Grand Prix still demanded that he defend the lead through changing conditions.",
+          "The important distinction is easy to lose when looking back through Vettel's later career. This was not a Red Bull Racing win that happened early. The team on the entry list was Toro Rosso; the people in that garage delivered the result. Their first victory remains a chapter of their own history, not merely a footnote to the driver's later championships."
         ]
       },
       {
@@ -271,10 +271,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "На поулі — не Ferrari",
+        "heading": "Італійська перемога, якої не чекали",
         "paragraphs": [
-          "У Монці 2008 року поул здобула італійська команда. Але не Ferrari, а Toro Rosso. За кермом сидів 21-річний Себастьян Феттель. Дощ змішав звичний порядок сил у кваліфікації. У неділю треба було довести, що сенсація не обмежиться одним швидким колом.",
-          "Гонка стартувала за автомобілем безпеки. Коли він повернув у бокси, Феттель очолив пелотон і втримав перевагу. Він фінішував попереду Гейккі Ковалайнена й Роберта Кубіци, ставши наймолодшим переможцем Гран-прі на той час. Toro Rosso вперше виграла гонку. Дощ відкрив двері, але пройти крізь них команді довелося самій."
+          "Для багатьох уболівальників Монца нерозривно пов'язана з Ferrari. Але у 2008 році перемогла інша команда з італійською базою — Toro Rosso. Себастьяну Феттелю був лише 21 рік. Дощова кваліфікація дала шанс стартувати першим, та в Гран-прі ще треба було захистити перевагу за мінливих умов.",
+          "Коли дивитися на цю подію крізь подальшу кар'єру Феттеля, легко загубити важливу відмінність. Це не була рання перемога Red Bull Racing. У заявці стояла Toro Rosso, і саме люди в її боксах здобули результат. Їхня перша перемога — окрема глава історії команди, а не просто примітка до майбутніх титулів гонщика."
         ]
       },
       {
@@ -311,10 +311,10 @@ export const editorialDraftArticles = {
   "button-canada-2011": {
     "en": [
       {
-        "heading": "Six pit-lane visits and one final chance",
+        "heading": "The winner had been nowhere near winning",
         "paragraphs": [
-          "Jenson Button visited the pit lane six times during the 2011 Canadian Grand Prix, including a drive-through penalty. Heavy rain brought a long stoppage, while Safety Cars repeatedly bunched the cars together. Incidents sent the McLaren backwards. It was hardly the afternoon of a likely winner.",
-          "Then the track began to dry. Button switched to slicks on lap 51 and fought his way toward the front, passing Michael Schumacher and Mark Webber late in the race. Only Sebastian Vettel remained. On the final lap Vettel made a mistake, and Button took the lead. That pass was unforgettable, but without everything Button had recovered beforehand, he would never have been close enough to make it."
+          "The Canadian Grand Prix did not give Button a straightforward way to the front. Rain stopped the race, incidents sent his McLaren backwards and repeated Safety Cars altered every gap. As the circuit dried, the correct tyres mattered as much as outright speed. He changed to slicks on lap 51, when the leading cars were still ahead.",
+          "Another Safety Car erased much of that separation. With the race finally moving towards its conclusion, Button passed Webber and Schumacher before catching Vettel. The leader made a final-lap mistake, and the McLaren went ahead. The result reads as a victory by a few seconds; its story runs through hours of interruptions, recovery and opportunities that kept appearing and disappearing."
         ]
       },
       {
@@ -348,10 +348,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Шість заїздів на пітлейн і останній шанс",
+        "heading": "Переможець, який довго був далеко від перемоги",
         "paragraphs": [
-          "Під час Гран-прі Канади 2011 року Дженсон Баттон шість разів побував на пітлейні, зокрема й через штраф. Злива надовго зупинила гонку, автомобіль безпеки раз у раз збирав пелотон докупи. Інциденти відкидали McLaren назад. На переможний день це зовсім не скидалося.",
-          "Та траса почала підсихати. На 51-му колі Баттон перейшов на сліки й прорвався вперед, наприкінці обігнавши Міхаеля Шумахера та Марка Веббера. Залишався лише Себастьян Феттель. На останньому колі той помилився, і Баттон захопив лідерство. Цей обгін став легендарним, але без попереднього повернення Баттон просто не опинився б поруч."
+          "Гран-прі Канади не дав Баттону прямої дороги вперед. Дощ зупинив гонку, інциденти відкинули його McLaren назад, а численні сейфті-кари змінювали відриви. Коли асфальт почав підсихати, вибір шин став не менш важливим за чисту швидкість. На 51-му колі він перейшов на сліки, хоча лідери ще були попереду.",
+          "Новий сейфті-кар прибрав значну частину розриву. Коли гонка нарешті наближалася до завершення, Баттон пройшов Веббера й Шумахера та наздогнав Феттеля. Лідер помилився на останньому колі, і McLaren вийшов уперед. У протоколі це лише перемога з невеликим відривом; у самій гонці були години затримок, повернень і шансів, які то з'являлися, то зникали."
         ]
       },
       {
@@ -617,10 +617,10 @@ export const editorialDraftArticles = {
   "massa-2008": {
     "en": [
       {
-        "heading": "Ten points for a win, four for fifth",
+        "heading": "A home win was not enough",
         "paragraphs": [
-          "Felipe Massa arrived at his home Grand Prix in Brazil needing both the race of his life and help from the cars behind. Lewis Hamilton led the championship 94 points to 87. A win brought ten points in 2008; fifth place brought four. Even if Massa won, Hamilton could be champion simply by finishing fifth.",
-          "Massa started from pole. He would lead 64 of the 71 laps. But the title was being decided in two places at once: at the front, where the Ferrari had to win, and farther back, where the McLaren had to avoid finishing sixth. In the changing rain, the answer waited until the last corners."
+          "Massa arrived at Interlagos seven points behind Hamilton. Under the 2008 scoring system a victory would give him ten points, but Hamilton could still take the championship with fifth place. The Ferrari driver could control the outcome at the front; the part of the title equation concerning his rival was beyond his steering wheel.",
+          "Then the weather made that separation impossible to ignore. The circuit was becoming wetter, pit calls split the field onto different tyres, and Hamilton's place among the cars behind Massa changed in the final moments. Massa crossed the line first, yet fifth place for Hamilton secured the championship. For the home crowd, the same afternoon delivered a celebration and a disappointment almost on top of each other."
         ]
       },
       {
@@ -648,10 +648,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Десять очок за перемогу, чотири — за п'яте",
+        "heading": "Домашньої перемоги було замало",
         "paragraphs": [
-          "На домашній Гран-прі Бразилії Феліпе Масса приїхав із непростим завданням: виграти гонку й сподіватися на невдачу суперника. Льюїс Гамільтон випереджав його в чемпіонаті на сім очок — 94 проти 87. У 2008 році за перемогу давали десять очок, за п'яте місце — чотири. Навіть у разі перемоги Масси Гамільтону вистачало п'ятої позиції.",
-          "Масса стартував із поулу й загалом лідирував 64 із 71 кола. Але титул вирішували відразу у двох частинах траси: попереду Ferrari мала виграти, а позаду McLaren — не опуститися нижче п'ятого місця. Під мінливим дощем відповідь з'явилася лише в останніх поворотах."
+          "Масса приїхав на Інтерлагос із відставанням у сім очок від Гамільтона. За системою 2008 року перемога давала десять очок, але суперникові вистачало п'ятого місця для титулу. Пілот Ferrari міг контролювати боротьбу попереду; друга частина чемпіонського рівняння залежала вже не від нього.",
+          "А потім погода зробила цей поділ ще гострішим. Траса ставала мокрішою, після пітстопів гонщики їхали на різних шинах, і позиція Гамільтона серед машин позаду Масси змінювалася в останні хвилини. Масса першим перетнув фініш, але п'яте місце принесло титул Гамільтону. Для домашніх уболівальників свято й розчарування настали майже одночасно."
         ]
       },
       {
