@@ -11,6 +11,7 @@ import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
+import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
@@ -114,6 +115,15 @@ export default async function EditorialMoment({ params }: Props) {
             </section>)}
           </div>
         </div>
+      </section>}
+      {slug in editorialReaderQuestions && <section aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+        <p className={styles.eyebrow}>{uk ? 'ЗАПИТАННЯ ЧИТАЧІВ' : 'READER QUESTIONS'}</p>
+        <h2 id="reader-questions">{uk ? 'Що варто знати' : 'What to know'}</h2>
+        {editorialReaderQuestions[slug as keyof typeof editorialReaderQuestions].map((item, index) => <details key={index} className={styles.provenance}>
+          <summary>{item[locale].question}</summary>
+          <p>{item[locale].answer}</p>
+        </details>)}
+        <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
       </section>}
       {slug in editorialReflection && <aside aria-labelledby="story-reflection" style={{ marginTop: 56, padding: 'clamp(24px, 5vw, 56px)', background: 'var(--surface, transparent)', border: '1px solid var(--line)' }}>
         <p className={styles.eyebrow}>{uk ? 'ПИТАННЯ ПІСЛЯ ІСТОРІЇ' : 'A QUESTION TO TAKE AWAY'}</p>
