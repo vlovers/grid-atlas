@@ -15,7 +15,7 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   assert.equal(circuit.configuration_id,null);
   assert.equal(circuit.publication,'unpublished');
   assert.equal(circuit.story_leads.length,5);
-  assert.equal(circuit.story_leads.filter(s=>s.status==='unverified_event_anchor').length,1);
+  assert.equal(circuit.story_leads.filter(s=>s.status==='unverified_historical_narrative').length,1);
   assert.equal(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length,4);
   for(const story of circuit.story_leads){
     assert.deepEqual(story.sources,[]);
