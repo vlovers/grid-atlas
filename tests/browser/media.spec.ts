@@ -110,6 +110,7 @@ for (const locale of ['uk','en'] as const) {
       page.on('request',listener);
       await page.goto(`${previewURL}/${locale}?test=${variant}`);
       await expect(page.getByTestId('media-collection').locator('img')).toHaveCount(0);
+      await page.getByTestId('media-collection').locator('summary').press('Enter');
       await expect(page.getByTestId('editorial-empty-media')).toBeVisible();
       expect(requests).toEqual([]);page.off('request',listener);
     }

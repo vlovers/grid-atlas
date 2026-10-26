@@ -18,9 +18,9 @@ test('data graphic keeps source-driven chart and accessible label with progressi
   assert.match(graph, /animation: none/);
 });
 
-test('empty imagery gets a decorative treatment but no unapproved asset publication', () => {
-  assert.match(gallery, /\.empty::before/);
-  assert.match(gallery, /pointer-events: none/);
+test('empty imagery stays compact and no unapproved asset is published', () => {
+  assert.match(gallery, /\.compact summary/);
+  assert.doesNotMatch(gallery, /\.empty::before|min-height: 12rem/);
   assert.match(gallery, /forced-colors: active/);
   assert.equal(publication.lane, 'publication');
   assert.deepEqual(publication.assets, []);

@@ -1,0 +1,20 @@
+.season > section { margin-block: var(--space-section); scroll-margin-top: 2rem; }
+.season h2 { font: 500 clamp(2rem, 3.5vw, 3.5rem)/1.16 var(--font-display); letter-spacing: 0; }
+.cover { display: flex; flex-direction: column; height: 100%; padding: clamp(1.25rem, 3vw, 2.5rem); background: linear-gradient(145deg, var(--burgundy), var(--surface) 70%); border-top: 2px solid var(--accent); min-width: 0; }
+.coverYear { font: 500 clamp(3rem, 10vw, 9rem)/1 var(--font-display); color: var(--gold); }
+.cover h2 { font-size: clamp(1.7rem, 2.5vw, 2.5rem); margin-block: 1.5rem; }
+.cover ol { list-style: none; padding: 0; margin: 0; }
+.cover li { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr) auto; gap: .75rem; align-items: baseline; border-top: 1px solid var(--line); padding-block: .8rem; }
+.cover li > span:first-child, .cover strong { font: .9rem/1.6 var(--font-mono); }
+.cover li a { font: 500 1.3rem/1.3 var(--font-display); }
+.cover > p { color: var(--muted); font-size: .75rem; }
+.cover > a { margin-top: auto; display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; font-size: .8rem; }
+.provisional { border-left: 2px solid var(--gold); padding: 1rem 1.5rem; font-size: .85rem; line-height: 1.8; color: var(--muted); max-width: 80ch; }
+.calendar { list-style: none; padding: 0; margin: 1.5rem 0; }
+.calendar li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 1.5rem; padding-block: 1.25rem; border-top: 1px solid var(--line); }
+.round { font: 1.5rem/1.3 var(--font-mono); color: var(--accent-ink); }
+.calendar h3 { font: 500 clamp(1.4rem, 2vw, 2rem)/1.2 var(--font-display); margin: 0 0 .4rem; }
+.calendar p { color: var(--muted); font-size: .8rem; line-height: 1.8; margin: 0; }
+.calendar a { display: inline-block; min-height: 44px; align-content: center; }
+@media (max-width: 650px) { .calendar li { gap: .75rem; grid-template-columns: 2.25rem minmax(0, 1fr); } }
+@media (forced-colors: active) { .cover { background: Canvas; border: 1px solid CanvasText; } }

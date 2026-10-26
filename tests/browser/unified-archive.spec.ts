@@ -48,7 +48,7 @@ for (const locale of ['uk', 'en'] as const) {
     const year = page.locator('#decade-1950 a[href$="/seasons/1950"]').first();
     await year.press('Enter');
     await expect(page).toHaveURL(new RegExp(`/${locale}/seasons/1950$`));
-    await expect(page.getByTestId('record-reading-note')).toBeVisible();
+    await expect(page.getByTestId('season-calendar')).toBeVisible();
   });
 
   test(`${locale}: small screens, enlarged text, forced colors and section links remain usable`, async ({ page }) => {

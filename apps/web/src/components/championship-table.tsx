@@ -49,7 +49,7 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
           <td>{item.championship_points}</td>
           {kind === 'constructors' && <td>{item.engine_manufacturer_external_id ?? '—'}</td>}
           <td>{provisional ? (uk ? 'Попередній' : 'Provisional')
-            : item.championship_won ? (uk ? 'Чемпіон за F1DB' : 'F1DB champion')
+            : item.championship_won ? (uk ? 'Чемпіон' : 'Champion')
               : '—'}</td>
         </tr>;
       })}</tbody>
@@ -57,11 +57,12 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
   return <section className="chapter" data-testid={`championship-${kind}-${scope}`}>
     <h2>{heading}</h2>
     <p>{uk
-      ? 'Окрема класифікація з випуску F1DB, не сума очок за протоколами перегонів і не незалежна перевірка FIA. Позиції поточного сезону попередні.'
-      : 'Separate source-reported F1DB standings, not a sum of race-result points or independent FIA verification. Current-season positions are provisional.'}</p>
+      ? 'Очки та місця в чемпіонаті за F1DB. Попередній залік позначено окремо.'
+      : 'Championship points and positions from F1DB. Provisional standings are marked separately.'}</p>
     {scope === 'career' && rows.length > 0 ? <ArchiveDisclosure label={uk ? 'Усі сезони в заліку' : 'Every season in the standings'} count={rows.length}>{table}</ArchiveDisclosure> : table}
     {rows.length > 0 && <details>
       <summary>{uk ? 'Джерело класифікації' : 'Classification provenance'}</summary>
+      <p>{uk ? 'Очки заліку наведено за джерелом, а не обчислено як суму результатів гонок; історичні правила відкидання очок не перераховуються.' : 'Championship points retain the source classification, rather than sums of race results; historical dropped-score rules are not independently recalculated.'}</p>
       <p>F1DB · {rows[0].release_tag} · <Link href="/sources">{uk ? 'Джерела' : 'Sources'}</Link></p>
       <p>{uk ? 'Точне джерело кожного рядка доступне через API разом із SHA-256.' : 'Exact source locator and SHA-256 are available with every API row.'}</p>
     </details>}
