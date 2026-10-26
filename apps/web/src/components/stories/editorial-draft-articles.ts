@@ -680,10 +680,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The strange middle of a fairytale",
+        "heading": "Six wins, then the pressure changed",
         "paragraphs": [
-          "The early results made Brawn GP look as though the season might be settled before summer was over. Button had won six of the first seven Grands Prix. The temptation is to jump straight from that run to his world title, but the months in between were where the championship became uncertain again.",
-          "Once rivals found more pace, Brawn had to protect what it had already banked. Barrichello's wins were important because they showed that the team still had answers even when Button was no longer winning. Brazil finally resolved the drivers' title, not by restoring the opening streak but by proving that its accumulated advantage had survived. The fairy tale had a difficult middle, and that is what makes its ending worth reading."
+          "Button won six of the opening seven Grands Prix. The white Brawn cars had turned an uncertain winter into an astonishing early lead, yet the championship calendar was nowhere near finished. At the following races, competitors started closing the performance gap, and another victory became much harder to secure.",
+          "The challenge was no longer simply to build a bigger lead. Button needed finishes that kept the drivers' title within reach while Barrichello added points for the team. Those months between Turkey and Brazil gave the campaign a second shape: the leaders now had to withstand the pursuit of rivals whose pace had improved."
         ]
       },
       {
@@ -717,10 +717,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Складна середина казкового сезону",
+        "heading": "Шість перемог — і зовсім інший тиск",
         "paragraphs": [
-          "Перші результати Brawn GP створювали враження, що чемпіонат вирішиться ще до кінця літа. Баттон виграв шість із семи початкових Гран-прі. Легко перескочити від цієї серії одразу до титулу, але саме місяці між ними знову зробили боротьбу непевною.",
-          "Коли суперники прискорилися, Brawn довелося захищати раніше зароблене. Перемоги Баррікелло були важливими: вони показали, що команда все ще здатна відповідати, навіть коли Баттон перестав перемагати. У Бразилії долю титулу вирішило не повернення ранньої серії, а збережений запас очок. У казкового сезону була складна середина — і саме тому фінал хочеться дочитати."
+          "Баттон виграв шість із перших семи Гран-прі. Білі боліди Brawn перетворили непевну зиму на приголомшливе раннє лідерство, але до кінця чемпіонату було ще далеко. На наступних етапах суперники почали скорочувати відставання в швидкості, і здобути ще одну перемогу стало значно важче.",
+          "Тепер потрібно було не просто збільшувати перевагу. Баттон мав фінішувати достатньо високо, щоб зберегти шанси на титул, а Баррікелло приносив важливі очки команді. Місяці між Туреччиною й Бразилією змінили характер боротьби: лідери мусили стримувати суперників, чиї машини ставали швидшими."
         ]
       },
       {
