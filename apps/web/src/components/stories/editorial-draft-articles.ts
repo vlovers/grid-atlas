@@ -248,10 +248,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A lead that had to survive the pit lane",
+        "heading": "The lead that came back after the stops",
         "paragraphs": [
-          "The front row had made Vettel the target. In the rain, one imperfect stop or a badly timed choice could undo the qualifying surprise. Toro Rosso therefore had more to protect than track position: it had to execute a race from the front, something few had expected of the team.",
-          "As the stops unfolded, the order changed temporarily. The meaningful question was whether Vettel would regain the lead once the strategies had played out. He did, and the unusual pole began to look less like a weather lottery and more like the beginning of an actual win."
+          "A wet-weather pole is only an opening advantage. At Monza, Vettel had to take that advantage through a full Grand Prix as the track and the strategies changed. The Safety Car controlled the early laps; once the race was released, the Toro Rosso held the front while the others tried to respond.",
+          "Pit stops briefly scrambled the order, but they did not end Vettel's opportunity. As the leaders completed their stops he returned to the front, then finished 12.512 seconds ahead of Heikki Kovalainen. The gap matters: this was not a last-corner upset. The surprise was that a Toro Rosso had been able to sustain the pace and execution required to win."
         ]
       },
       {
@@ -286,10 +286,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Лідерство, яке мало пережити пітлейн",
+        "heading": "Лідерство, яке повернулося після зупинок",
         "paragraphs": [
-          "Перший ряд зробив Феттеля мішенню для переслідувачів. Під дощем один невдалий пітстоп або несвоєчасне рішення могли знищити сюрприз кваліфікації. Toro Rosso мусила не лише втримати позицію, а й провести гонку з лідерства — до такого від команди мало хто звик.",
-          "Під час зупинок порядок на трасі тимчасово змінювався. Важливо було інше: чи повернеться Феттель попереду, коли суперники завершать свої пітстопи? Так і сталося. Несподіваний поул уже не виглядав лише подарунком погоди."
+          "Поул під дощем дає перевагу лише на старті. У Монці Феттелю довелося пронести її через цілий Гран-прі, поки змінювалися умови й стратегії. Перші кола пелотон провів за сейфті-каром; після відновлення боротьби Toro Rosso трималася попереду, а суперники шукали відповідь.",
+          "Пітстопи на деякий час перемішали порядок, але не знищили шанс Феттеля. Коли лідери завершили свої зупинки, він знову вийшов уперед і фінішував на 12,512 секунди раніше за Гейккі Ковалайнена. Цей відрив важливий: перемога не народилася в останньому повороті. Сенсацією стало те, що Toro Rosso змогла втримати темп і провести гонку достатньо добре, щоб перемогти."
         ]
       },
       {
@@ -401,10 +401,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The leader could not see the comeback behind him",
+        "heading": "From eighteenth to the points",
         "paragraphs": [
-          "Russell's opportunity and Pérez's recovery unfolded at opposite ends of the race. One driver was trying to convert a fast substitute drive into a first win. The other had spent the opening lap losing almost everything and was working back through the field.",
-          "It is tempting to frame them as equally likely winners from the start, but that would erase the distance Pérez had to recover. Their stories only began to converge after the race's late interruptions. Until then, what looked like a Mercedes breakthrough and what looked like a salvage drive were two different plots."
+          "At the end of lap one, Pérez had fallen to eighteenth. A recovery this far back cannot be described as a single charge: he first had to make the Racing Point useful again in traffic. By lap 15 he had reached eleventh. By lap 20 he was tenth, back among the points scorers. Russell was meanwhile driving the Mercedes at the front, and the two stories still looked entirely separate.",
+          "Those early positions matter because they show what Pérez had achieved before the late Mercedes trouble. His victory was not delivered by a tyre mix-up alone. He had already spent much of the race undoing the damage of the opening lap. The Safety Car and Russell's misfortune would change the final opportunity, but the climb that made it possible had started long before."
         ]
       },
       {
@@ -439,10 +439,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Лідер не бачив повернення позаду",
+        "heading": "Із вісімнадцятого місця — до очок",
         "paragraphs": [
-          "Шанс Расселла й повернення Переса розгорталися в різних частинах пелотону. Один намагався перетворити швидкий виступ на заміні на першу перемогу. Інший утратив майже все на стартовому колі й поступово відігравав позиції.",
-          "Не варто вдавати, ніби від самого початку їхні шанси були однаковими: так зникне масштаб роботи Переса. Дві історії зійшлися лише після пізніх потрясінь. До того можливий тріумф Mercedes і спроба врятувати зіпсовану гонку залишалися різними сюжетами."
+          "Після першого кола Перес опинився вісімнадцятим. Таке повернення не відбувається одним ривком: спершу треба було пройти суперників у трафіку й повернути Racing Point у боротьбу. На п'ятнадцятому колі він уже був одинадцятим, а на двадцятому — десятим, знову в очковій зоні. Тим часом Расселл їхав попереду на Mercedes, і дві історії ще майже не перетиналися.",
+          "Ці проміжні позиції важливі: вони показують, чого Перес досяг іще до пізніх проблем Mercedes. Плутанина з шинами не подарувала йому перемогу з нічого. Він уже витратив значну частину гонки, щоб відіграти втрати першого кола. Сейфті-кар і невдача Расселла змінили фінальні обставини, але саме повернення почалося набагато раніше."
         ]
       },
       {
