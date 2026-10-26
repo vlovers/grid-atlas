@@ -11,6 +11,7 @@ import { resolveEditorialRaces } from '@/components/stories/editorial-race-resol
 import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
+import { editorialReflection } from '@/components/stories/editorial-reflection';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -104,6 +105,11 @@ export default async function EditorialMoment({ params }: Props) {
           {chapter.paragraphs.map((paragraph, p) => <p key={p} style={{ fontSize: '1.075rem', lineHeight: 1.85, maxWidth: '72ch' }}>{paragraph}</p>)}
         </section>)}
       </section>}
+      {slug in editorialReflection && <aside aria-labelledby="story-reflection" style={{ marginTop: 56, padding: 'clamp(24px, 5vw, 56px)', background: 'var(--surface, transparent)', border: '1px solid var(--line)' }}>
+        <p className={styles.eyebrow}>{uk ? 'ПИТАННЯ ПІСЛЯ ІСТОРІЇ' : 'A QUESTION TO TAKE AWAY'}</p>
+        <h2 id="story-reflection" style={{ fontSize: 'clamp(28px, 4vw, 52px)', maxWidth: '24ch', lineHeight: 1.2 }}>{editorialReflection[slug as keyof typeof editorialReflection][locale]}</h2>
+        <p className={styles.note}>{uk ? 'Не тест і не готова відповідь — лише привід подивитися на події під іншим кутом.' : 'Not a quiz or a verdict — just another way to think about what happened.'}</p>
+      </aside>}
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
         <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
         <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a full editorial manuscript awaiting verification. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
