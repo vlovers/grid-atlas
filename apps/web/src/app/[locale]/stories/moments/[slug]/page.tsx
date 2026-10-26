@@ -11,6 +11,7 @@ import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
+import { editorialTakeaways } from '@/components/stories/editorial-takeaways';
 import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
 import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
 import { editorialResultHighlights } from '@/components/stories/editorial-result-highlights';
@@ -154,6 +155,13 @@ export default async function EditorialMoment({ params }: Props) {
           <p>{item[locale].answer}</p>
         </details>)}
         <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
+      </section>}
+      {slug in editorialTakeaways && <section aria-labelledby="story-takeaways" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+        <p className={styles.eyebrow}>{uk ? 'ЩО ЗМІНИЛА ЦЯ ІСТОРІЯ' : 'WHY THIS STORY MATTERS'}</p>
+        <h2 id="story-takeaways">{uk ? 'Три речі, які варто запам’ятати' : 'Three things worth remembering'}</h2>
+        <ol className={styles.editorialTakeaways}>
+          {editorialTakeaways[slug as keyof typeof editorialTakeaways][locale].map((point, index) => <li key={index}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p>{point}</p></li>)}
+        </ol>
       </section>}
       {slug in editorialReflection && <aside aria-labelledby="story-reflection" style={{ marginTop: 56, padding: 'clamp(24px, 5vw, 56px)', background: 'var(--surface, transparent)', border: '1px solid var(--line)' }}>
         <p className={styles.eyebrow}>{uk ? 'ПИТАННЯ ПІСЛЯ ІСТОРІЇ' : 'A QUESTION TO TAKE AWAY'}</p>
