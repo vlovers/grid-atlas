@@ -130,7 +130,7 @@ export default async function EditorialMoment({ params }: Props) {
             <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{uk ? 'Протокол F1 ↗' : 'F1 classification ↗'}</a>
           </li>)}
         </ul>
-        <p className={styles.note}>{uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.'}</p>
+        <p className={styles.note}>{published ? (uk ? 'Дані з офіційних протоколів Формули-1.' : 'Results from official Formula 1 classifications.') : (uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.')}</p>
       </section>}
       {slug in editorialReaderQuestions && <details className={styles.provenance} aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ЗАПИТАННЯ ЧИТАЧІВ' : 'READER QUESTIONS'}</p>
