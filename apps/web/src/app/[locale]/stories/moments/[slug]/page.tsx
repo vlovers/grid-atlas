@@ -108,7 +108,9 @@ export default async function EditorialMoment({ params }: Props) {
             <strong>{race.grandPrix[locale]}</strong><br />
             {race.winner[locale]} · {race.constructor}<br />
             <small>{race.laps} {uk ? 'кіл' : 'laps'} · {race.winningTime}</small>
+            <h3 style={{ margin: '12px 0 6px', fontSize: '1.1rem' }}>{race.editorialChapter[locale].title}</h3>
             <p style={{ marginTop: 8, maxWidth: '38ch' }}>{race.editorialMoment[locale]}</p>
+            <p style={{ maxWidth: '38ch' }}>{race.editorialChapter[locale].detail}</p>
             <p style={{ maxWidth: '38ch', opacity: 0.82 }}><em>{race.editorialSignificance[locale]}</em></p>
           </li>)}
         </ol>
