@@ -124,3 +124,17 @@ test('editorial photo registry requires local files and complete attribution', (
   assert.match(page, /photo\.licenseUrl/);
   for (const slug of slugs) assert.ok(ledger.includes(slug), slug + ' missing photo intake ledger entry');
 });
+
+
+test('Commons media intake runs only on explicit manual request; PR discovery remains unapproved', () => {
+  const workflow = read('.github/workflows/editorial-photo-intake.yml');
+  assert.match(workflow, /name: Discover candidates for all ten stories \(unreviewed\)/);
+  assert.match(workflow, /name: Fetch Commons candidates and provenance\n\s+if: github\.event_name == 'workflow_dispatch'/);
+  assert.match(workflow, /name: Upload private review package \(not published\)/);
+  assert.match(workflow, /path: \.grid-atlas\/media-review\//);
+  assert.doesNotMatch(workflow, /path: apps\/web\/public\/media\/editorial\//);
+  const discovery = read('scripts/editorial-photo-discovery.mjs');
+  assert.match(discovery, /UNREVIEWED — DO NOT PUBLISH/);
+  const intake = read('scripts/editorial-media-intake.mjs');
+  assert.ok(intake.includes('.grid-atlas/media-review') || intake.includes('media-review'));
+});
