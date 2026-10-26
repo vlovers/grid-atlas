@@ -70,6 +70,29 @@
       "verified_scope": "Farina Monza victory, Fangio classified non-finish, 1950 inaugural champion",
       "source_limits": "Shared-drive 1950 classifications require specific contextual reading",
       "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "charles-leclerc",
+      "chapter_id": "belgium-and-monza",
+      "source_urls": [
+        "https://www.fia.com/news/f1-leclerc-takes-maiden-f1-win-belgian-ahead-hamilton-and-bottas",
+        "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
+        "https://www.fia.com/news/f1-2024-monaco-grand-prix-post-race-press-conference-transcript"
+      ],
+      "verified_scope": "2019 first win and Hubert tribute; 2024 Monaco win, 78 laps, Piastri/Sainz behind; driver emotional explanation attributable to FIA transcript",
+      "source_limits": "Driver's emotions and late father's role are attributed to his post-race account, not inferred by the author",
+      "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "lando-norris",
+      "chapter_id": "the-2025-world-championship",
+      "source_urls": [
+        "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+        "https://www.fia.com/events/fia-formula-one-world-championship/season-2025/2025-classifications"
+      ],
+      "verified_scope": "2025 Abu Dhabi Verstappen P1, Piastri P2, Norris P3 and championship totals 423, 421, 410; opening lap and race-management context",
+      "source_limits": "Race narrative summarized from FIA reporting; no assertion about private motives beyond the observed championship requirement",
+      "status": "ai_source_checked_human_review_pending"
     }
   ]
 }
