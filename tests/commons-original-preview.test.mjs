@@ -4,6 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import test from 'node:test';
+import { stripVTControlCharacters } from 'node:util';
 
 const program = readFileSync('scripts/preview-commons-originals.mjs','utf8');
 const evidence = JSON.parse(readFileSync('docs/media/commons-original-evidence.json','utf8'));
@@ -27,7 +28,7 @@ test('offline preview rejects absent originals without any network access',()=>{
   }
   const result=spawnSync(process.execPath,[join(cwd,'scripts/preview-commons-originals.mjs'),'--offline'],{cwd,encoding:'utf8'});
   assert.equal(result.status,1);
-  assert.match(result.stdout,/Verified originals: 0 \/ 5/);
+  assert.match(stripVTControlCharacters(result.stdout),/Verified originals: 0 \/ 5/);
   const status=JSON.parse(readFileSync(join(cwd,'.grid-atlas/media-review/status.json'),'utf8'));
   assert.equal(status.publication_allowed,false);
   assert.equal(status.entries.every(x=>!x.success),true);
