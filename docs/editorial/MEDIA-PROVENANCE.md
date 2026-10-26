@@ -55,3 +55,9 @@ These are **source-page and license checks, not yet imported assets**. Do not fl
 - EN caption: “Jenson Button in the Brawn BGP 001, Abu Dhabi Grand Prix, 2009.” UK: “Дженсон Баттон за кермом Brawn BGP 001, Гран-прі Абу-Дабі 2009 року.”
 - Attribution when displayed: “Yuriy Lapitskiy / CC BY-SA 3.0 / cropped and resized for cover” (update modifications to reflect actual processing). Any adaptations must comply with share-alike.
 - Status: **candidate verified at source; local asset not yet added**.
+
+## Technical intake requirements
+
+The local-only registry deliberately refuses remote URLs. Do not hotlink Commons thumbnails: they can change and are not reliable permanent production assets. The next publishing commit must include the actual optimized image bytes under `apps/web/public/media/editorial/` together with the matching registry entry; a metadata-only entry is not a completed photo integration.
+
+For the Brawn photograph, avoid claiming a specific weekday in captions: the source contains inconsistent language versions of the weekday. The year, race, car and photographer are documented.
