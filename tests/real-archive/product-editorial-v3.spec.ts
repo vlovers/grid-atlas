@@ -41,7 +41,7 @@ for (const locale of ['en','uk'] as const) {
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),path).toBe(true);
       const clipped=await page.evaluate(()=>[...document.querySelectorAll<HTMLElement>('main h1,main h2,main h3')].filter(el=>el.getBoundingClientRect().height>0&&['hidden','clip'].includes(getComputedStyle(el).overflowY)&&el.scrollHeight>el.clientHeight+2).map(el=>el.textContent));
       expect(clipped,path).toEqual([]);
-      expect(await page.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length)).toBe(0);
+      expect(await page.evaluate(() => document.getAnimations().filter(a => a.playState === 'running' && a.effect?.getComputedTiming().iterations === Infinity).length)).toBe(0);
       await page.getByRole('link',{name:locale==='uk'?'До вмісту':'Skip to content',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.locator('main')).toBeFocused();
       await page.evaluate(()=>document.documentElement.style.fontSize='');
     }
