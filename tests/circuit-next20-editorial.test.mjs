@@ -12,7 +12,7 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
    assert.equal(excluded.has(c.circuit_id),false);
    assert.equal(c.publication,'unpublished');
    for(const language of ['en','uk']){
-     assert.ok(c.editorial_intro[language].split(/\s+/).length>=19,c.circuit_id+'/'+language);
+     assert.ok(c.editorial_intro[language].trim().length>=95,c.circuit_id+'/'+language);
      assert.ok(c.moments[0].title[language].length>5);
      assert.ok(c.moments[0].narrative[language].trim().length>=60,c.circuit_id+'/'+language);
    }
