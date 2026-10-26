@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
 const read = path => readFileSync(join(process.cwd(), path), 'utf8');
@@ -399,4 +400,26 @@ test('all ten stories expose traceable scoped research links without crowding th
   }
   assert.ok(detail.includes('(editorialEvidenceLinks[slug] ?? []).map('));
   assert.ok(detail.includes('Historical sources for this story'));
+});
+
+
+test('ten released EN/UK editions match actual complete chapter, title and lead digests', () => {
+  const registry = read(directory + 'editorial-publication.ts');
+  const marker = 'export const reviewedEditions: readonly ReviewedEdition[] = ';
+  const begin = registry.indexOf(marker);
+  assert.ok(begin >= 0, 'explicit approved edition list is required');
+  const entries = JSON.parse(registry.slice(begin + marker.length, registry.indexOf(';', begin + marker.length)));
+  assert.deepEqual(entries.map(entry => entry.slug), slugs);
+  const chapters = literal(articles, 'editorialDraftArticles');
+  const cards = literal(previews, 'editorialStoryPreviews');
+  for (const entry of entries) {
+    const card = cards.find(item => item.slug === entry.slug);
+    assert.ok(card, entry.slug);
+    for (const locale of ['en', 'uk']) {
+      const edition = JSON.stringify({ chapters: chapters[entry.slug][locale], title: card[locale].title, summary: card[locale].summary });
+      const hash = createHash('sha256').update(edition).digest('hex');
+      assert.equal(entry[locale + 'Sha256'], hash, entry.slug + '/' + locale + ' must be immutable');
+    }
+    assert.ok(entry.evidenceRevision && entry.reviewRevision && entry.reviewedAt);
+  }
 });
