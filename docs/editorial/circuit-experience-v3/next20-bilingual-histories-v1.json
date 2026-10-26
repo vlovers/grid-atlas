@@ -32,6 +32,22 @@
           ],
           "source_granularity": "article_candidate_verify_page",
           "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1987,
+          "title": {
+            "en": "Mansell hunts down Piquet",
+            "uk": "Менселл наздоганяє Піке"
+          },
+          "narrative": {
+            "en": "Nigel Mansell had a deficit of almost half a minute to Williams teammate Nelson Piquet, but attacked relentlessly in front of the British crowd. With three laps left he passed Piquet at Stowe and won; the crowd poured onto the track after the finish.",
+            "uk": "Найджел Менселл поступався напарникові по Williams Нельсону Піке майже пів хвилини, але перед домашніми трибунами почав стрімко скорочувати відрив. За три кола до фінішу він обігнав Піке в повороті Stowe й переміг, а після гонки вболівальники вибігли на трасу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -154,14 +170,14 @@
             "uk": "Прорив Райкконена"
           },
           "narrative": {
-            "en": "Kimi Räikkönen won the Japanese Grand Prix after starting seventeenth, completing a late pass on Giancarlo Fisichella. It became one of Suzuka's best remembered comebacks.",
-            "uk": "Кімі Райкконен виграв Гран-прі Японії, стартувавши сімнадцятим і обігнавши Джанкарло Фізікеллу наприкінці гонки. Це один із найвідоміших проривів у Сузуці."
+            "en": "Kimi Räikkönen started seventeenth at Suzuka in 2005 but kept moving forward. On the final lap he passed Giancarlo Fisichella to win, completing a comeback that stands among the circuit's most celebrated races.",
+            "uk": "Кімі Райкконен стартував сімнадцятим у Сузуці 2005 року й поступово відігравав позиції. На останньому колі він обігнав Джанкарло Фізікеллу й переміг — один із найзнаменитіших проривів на цій трасі."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -222,14 +238,14 @@
             "uk": "Титул під дощем"
           },
           "narrative": {
-            "en": "The Brazilian finale swung between changing conditions and incidents while Sebastian Vettel recovered to secure the title over Fernando Alonso.",
-            "uk": "Фінал у Бразилії проходив за мінливої погоди. Себастьян Феттель після складного початку прорвався вперед і втримав чемпіонську перевагу над Фернандо Алонсо."
+            "en": "Sebastian Vettel spun on the opening lap of the Brazilian finale and dropped toward the back of the field. He fought through a chaotic race to finish sixth and secure the championship ahead of Fernando Alonso.",
+            "uk": "Себастьяна Феттеля розвернуло на першому колі фіналу в Бразилії, і він опинився майже в кінці пелотону. У хаотичній гонці він прорвався до шостого місця й зберіг титул у боротьбі з Фернандо Алонсо."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+            "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -292,6 +308,22 @@
           ],
           "source_granularity": "overview_requires_specific_article",
           "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 2008,
+          "title": {
+            "en": "Kubica comes back to win",
+            "uk": "Повернення й перемога Кубіци"
+          },
+          "narrative": {
+            "en": "A year after surviving a violent accident at Montreal, Robert Kubica returned and won the Canadian Grand Prix. His BMW Sauber teammate Nick Heidfeld finished second, giving the team a remarkable one-two finish.",
+            "uk": "Через рік після важкої аварії у Монреалі Роберт Кубіца повернувся й виграв Гран-прі Канади. Його напарник по BMW Sauber Нік Гайдфельд фінішував другим, принісши команді подвійний тріумф."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -408,14 +440,14 @@
             "uk": "Погоня Фанхіо"
           },
           "narrative": {
-            "en": "After a pit stop cost him time, Juan Manuel Fangio caught and passed the Ferraris to win the 1957 German Grand Prix on the Nordschleife.",
-            "uk": "Після затримки на піт-стопі Хуан-Мануель Фанхіо наздогнав і обігнав Ferrari та виграв Гран-прі Німеччини 1957 року на Північній петлі."
+            "en": "An unscheduled setback at his pit stop left Juan Manuel Fangio behind the Ferraris of Mike Hawthorn and Peter Collins. Over the remaining Nordschleife laps he cut the gap and passed both, producing a defining victory on the old long circuit.",
+            "uk": "Затримка на піт-стопі відкинула Хуана-Мануеля Фанхіо позаду Ferrari Майка Готорна та Пітера Коллінза. На довгій Північній петлі він скорочував відрив і обігнав обох, здобувши одну з найвідоміших своїх перемог."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -458,14 +490,14 @@
             "uk": "Дощ перевертає гонку"
           },
           "narrative": {
-            "en": "In the wet 2019 German Grand Prix, Max Verstappen survived changing conditions to win while several front-runners spun or crashed.",
-            "uk": "На мокрому Гран-прі Німеччини 2019 року Макс Ферстаппен пережив мінливі умови й переміг, поки кілька фаворитів розверталися або потрапляли в аварії."
+            "en": "The 2019 race swung through changing rain and drying conditions. Several drivers went off or misjudged tyre changes, but Max Verstappen recovered from a spin and won an unpredictable Grand Prix.",
+            "uk": "Гонка 2019 року постійно змінювалася через дощ і підсихання асфальту. Пілоти вилітали з траси або помилялися з вибором шин, а Макс Ферстаппен пережив розворот і виграв непередбачуваний Гран-прі."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+            "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
