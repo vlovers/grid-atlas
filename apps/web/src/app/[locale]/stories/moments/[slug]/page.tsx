@@ -57,7 +57,6 @@ export default async function EditorialMoment({ params }: Props) {
       </header>
       <nav className={styles.editorialReadingPaths} aria-label={uk ? 'Перейти до розділу' : 'Jump to section'}>
         <a className={styles.editorialReadingPrimary} href="#research-chapters">{uk ? 'Читати історію ↓' : 'Read the story ↓'}</a>
-        <a href="#story-milestones">{uk ? 'Ключові моменти' : 'Key moments'}</a>
         <a href="#story-races">{uk ? 'Гонки та результати' : 'Races & results'}</a>
       </nav>
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
@@ -147,6 +146,10 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ul>
       </section>
+      <details className={styles.provenance} style={{ marginTop: 48 }}>
+        <summary id="preview-status">{uk ? 'Статус матеріалу' : 'Article status'}</summary>
+        <p className={styles.note}>{uk ? 'Стаття проходить фінальну перевірку джерел; публікацію ще не затверджено.' : 'Source review is still in progress; publication has not yet been approved.'}</p>
+      </details>
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ПРОДОВЖИТИ ЧИТАТИ' : 'KEEP READING'}</p>
         <h2 id="related-moments">{uk ? 'Інші погляди на історію' : 'Another way into the history'}</h2>
