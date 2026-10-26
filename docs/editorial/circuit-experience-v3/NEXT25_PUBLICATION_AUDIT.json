@@ -6,7 +6,7 @@
   "bilingual_historical_drafts": 25,
   "bilingual_research_questions": 100,
   "official_f1db_identity_matches": 0,
-  "fully_cited_race_narratives": 18,
+  "fully_cited_race_narratives": 0,
   "verified_turn_inventories": 0,
   "publication_ready_circuits": 0,
   "blocking_steps": [
@@ -16,7 +16,8 @@
     "Establish corner names and numbering per exact circuit configuration with provenance",
     "Perform language edits and independent editorial checks"
   ],
-  "note": "18 event anchors now have an official F1 results reference; this verifies race outcomes only, not the full event narrative. Seven anchors still have no cited official results. All 25 remain unpublished pending deeper sourcing, F1DB mapping, historical and language review.",
+  "note": "18 race outcome anchors have Formula 1 result references; full historical narratives are NOT fully cited or editorially approved. Seven remaining anchors require an official race-source check. Publication remains blocked.",
   "official_f1_source_checked_human_review_pending": 18,
-  "uncited_historical_narratives": 7
+  "uncited_historical_narratives": 7,
+  "official_f1_result_anchors_with_source": 18
 }
