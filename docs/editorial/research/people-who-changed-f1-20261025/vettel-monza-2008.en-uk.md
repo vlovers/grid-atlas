@@ -63,3 +63,18 @@ An upset is easier to celebrate than to explain. Toro Rosso's engineers and mech
 - Do not invent motives, dialogue, technical telemetry or steward quotations.
 - Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
 - **Not published.**
+
+## Verified classification checkpoint — 2026-10-26 (EN/UK)
+
+**Scope:** This checkpoint cross-checks the narrowly stated classification facts with Formula 1's official historical results. It does **not** approve this manuscript or the surrounding narrative. The source's published result is distinguished from editorial interpretation.
+
+**EN · Official-result facts:** 2008 Italian Grand Prix, Monza: Sebastian Vettel won for STR Ferrari (Toro Rosso) over 53 laps; Heikki Kovalainen P2, Robert Kubica P3.
+
+**UK · Факти з офіційних результатів:** На Гран-прі Італії 2008 року переміг Себастьян Феттель за STR Ferrari (Toro Rosso); другим був Гейккі Ковалайнен, третім — Роберт Кубіца.
+
+**Evidence:**
+- https://www.formula1.com/en/results/2008/races/838/italy/race-result
+
+**Claims still requiring independent review:** The race classification proves the victory and correct entrant, not pole position, age-record status or the weather. Verify those independently before release.
+
+**Editorial direction / Редакторський акцент:** Lead with the actual sporting stakes and who achieved what, then explain why this moment matters. Keep the UK version idiomatic, not a literal transfer of English rhetoric. Do not attach unsigned media or infer ownership lineage from team names. Keep research-draft and noindex gates intact.
