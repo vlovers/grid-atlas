@@ -168,3 +168,27 @@ test('all eight core stories close with readable bilingual narrative, not interf
     assert.ok(last.heading.length > 12, slug + '/' + locale + ' lacks a narrative closing title');
   }
 });
+
+test('all ten pivotal chapters give bilingual race narratives rather than archive instructions', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  const chapterIndex = {
+    'lauda-hunt-1976': 2,
+    'senna-prost-1988-89': 1,
+    'villeneuve-arnoux-1979': 1,
+    'vettel-monza-2008': 1,
+    'button-canada-2011': 2,
+    'perez-sakhir-2020': 1,
+    'kubica-bmw-2008': 2,
+    'schumacher-ferrari-1996-2000': 1,
+    'massa-2008': 2,
+    'brawn-2009': 2,
+  };
+  assert.deepEqual(Object.keys(chapterIndex), slugs);
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapter = drafts[slug]?.[locale]?.[chapterIndex[slug]];
+    assert.ok(chapter, slug + '/' + locale + ' missing chapter');
+    const prose = chapter.paragraphs.join(' ');
+    assert.ok(prose.length >= 390, slug + '/' + locale + ' narrative too short');
+    assert.doesNotMatch(prose, /the archive should|the story should|an archive|архів має|сторінка конструктора|історичний архів|interactive timeline|інтерактивна хронологія/i, slug + '/' + locale + ' contains product-brief prose');
+  }
+});
