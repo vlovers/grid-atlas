@@ -1,3 +1,4 @@
+import { isAiReviewedStory } from '@/components/stories/editorial-publication';
 import type { Metadata } from 'next';
 import { editorialStoryPreviews } from '@/components/stories/editorial-previews';
 import { releasePilots, journeyYears } from '@/components/stories/release-model';
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Stories({ params }: Props) {
   const { locale: raw } = await params, locale = raw === 'en' ? 'en' : 'uk', uk = locale === 'uk';
   const items = await Promise.all(releasePilots.map(async pilot => ({ pilot, data: await resolveReleaseDriver(pilot.slug, locale) })));
+  const publishedCount = editorialStoryPreviews.filter(story => isAiReviewedStory(story.slug)).length;
   const origin = siteOrigin(), title = uk ? 'Історії пілотів' : 'Driver stories';
   return <div className={`page ${styles.release}`}>
     {origin && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageStructuredData(origin, locale, [{ name: 'Grid Atlas', path: '/' }, { name: title, path: '/stories' }], title)) }} />}
@@ -28,9 +30,9 @@ export default async function Stories({ params }: Props) {
         <p>{pilot.prompt[locale]}</p>{data ? <a href={`/${locale}/stories/${pilot.slug}`}>{uk ? 'Відкрити маршрут' : 'Open journey'} →</a> : <p>{uk ? 'Цей пілот ще не доступний в імпортованому архіві.' : 'This driver is not available in the imported archive yet.'}</p>}</div>
     </article>)}</div>
     <section aria-labelledby="editorial-preview-heading" style={{ margin: 'clamp(48px, 8vw, 100px) auto', maxWidth: 1200, padding: '0 20px' }}>
-      <p className={styles.eyebrow}>GRID ATLAS / {uk ? '10 РЕДАКЦІЙНИХ АНОНСІВ' : '10 EDITORIAL PREVIEWS'}</p>
+      <p className={styles.eyebrow}>GRID ATLAS / {uk ? `${10 - publishedCount} чернеток · ${publishedCount} публікацій` : `${publishedCount} published · ${10 - publishedCount} drafts`}</p>
       <h2 id="editorial-preview-heading" style={{ fontSize: 'clamp(30px, 4vw, 56px)', lineHeight: 1.12 }}>{uk ? 'Моменти, за якими стоять історії' : 'Moments with stories behind them'}</h2>
-      <p className={styles.note}>{uk ? 'Короткі вступи до майбутніх матеріалів. Повні статті ще проходять редакційну перевірку.' : 'Short introductions to upcoming features. Full articles are still under editorial review.'}</p>
+      <p className={styles.note}>{uk ? 'Читайте готові історії та переглядайте матеріали, які ще перевіряються.' : 'Read published stories and explore manuscripts still under review.'}</p>
       <ol style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 310px), 1fr))', gap: 20, marginTop: 28 }}>
         {editorialStoryPreviews.map((story, index) => {
           const copy = story[locale];
@@ -38,7 +40,7 @@ export default async function Stories({ params }: Props) {
             <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {story.year}</span>
             <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}><a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a></h3>
             <p style={{ lineHeight: 1.65, margin: 0 }}>{copy.summary}</p>
-            <p style={{ opacity: .75, fontSize: '.85rem', marginTop: 'auto' }}><a href={`/${locale}/stories/moments/${story.slug}`}>{uk ? 'Відкрити анонс' : 'Open preview'} →</a></p>
+            <p style={{ opacity: .75, fontSize: '.85rem', marginTop: 'auto' }}><a href={`/${locale}/stories/moments/${story.slug}`}>{isAiReviewedStory(story.slug) ? (uk ? 'Читати історію' : 'Read story') : (uk ? 'Відкрити чернетку' : 'Open draft')} →</a></p>
           </li>;
         })}
       </ol>
