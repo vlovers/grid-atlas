@@ -84,7 +84,7 @@ export default async function EditorialMoment({ params }: Props) {
             {person.id ? <a href={`/${locale}/drivers/${person.id}`}>{uk ? person.uk : person.en} ↗</a> : <span>{uk ? person.uk : person.en}</span>}
           </li>)}
         </ul>
-        <p className={styles.note}>{uk ? 'Посилання доступні лише для пілотів, чий ідентифікатор точно збігається з архівом F1DB.' : "Links appear only when the driver’s identifier matches the canonical F1DB archive."}</p>
+        <p className={styles.note}>{uk ? 'Відкрийте профіль гонщика, щоб дізнатися більше.' : 'Explore a driver profile to learn more.'}</p>
       </section>
       <section aria-labelledby="story-races" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ПЕРЕВІРИТИ В АРХІВІ' : 'EXPLORE THE ARCHIVE'}</p>
@@ -99,7 +99,7 @@ export default async function EditorialMoment({ params }: Props) {
             {race.id && <p className={styles.note}>{uk ? `Зіставлено з архівом · ${race.verifiedBy} пілот(ів)` : `Matched to archive · ${race.verifiedBy} driver(s)`}</p>}
           </li>)}
         </ol>
-        <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
+        <p className={styles.note}>{uk ? 'Виберіть гонку, щоб переглянути повні результати.' : 'Choose a race to explore the full results.'}</p>
       </section>
       {['massa-2008', 'brawn-2009'].includes(slug) && <details className={styles.provenance} aria-labelledby="season-winners" style={{ marginTop: 48 }}>
         <summary id="season-winners">{uk ? 'Усі переможці сезону' : 'Every race winner that season'}</summary>
@@ -136,7 +136,7 @@ export default async function EditorialMoment({ params }: Props) {
           <summary>{item[locale].question}</summary>
           <p>{item[locale].answer}</p>
         </details>)}
-        <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
+        <p className={styles.note}>{uk ? 'Деталі та відповіді на найчастіші запитання.' : 'More detail and answers to common questions.'}</p>
       </details>}
       <section aria-labelledby="official-results" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <h2 id="official-results">{uk ? 'Офіційні результати' : 'Official race results'}</h2>
