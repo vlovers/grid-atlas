@@ -3,10 +3,10 @@ export const editorialDraftArticles = {
   "lauda-hunt-1976": {
     "en": [
       {
-        "heading": "Two laps at Fuji",
+        "heading": "Fuji, where one championship split in two",
         "paragraphs": [
-          "Rain fell hard over Fuji. On lap two of the Japanese Grand Prix, Niki Lauda brought his Ferrari into the pits and stopped. Earlier that season he had survived a terrible crash at the Nürburgring, missed races and returned at Monza. Now he judged the conditions too dangerous to continue. James Hunt was still racing, but he had not inherited the title: he needed third place. After tyre trouble and another pit stop, he finished exactly there.",
-          "Hunt ended the year on 69 points, Lauda on 68. The result is precise; the meaning is harder. The championship did not ask the two drivers the same question that afternoon. Hunt had to find a way to finish. Lauda had to decide whether he was willing to carry on."
+          "Rain fell over the final Grand Prix of 1976. Two men could still be world champion, but the same conditions offered them very different choices. Niki Lauda, racing again after the Nürburgring accident and his remarkable return at Monza, stopped his Ferrari after two laps. James Hunt stayed on the circuit, where the title remained anything but certain.",
+          "Hunt could not simply accept the trophy once Lauda had retired. The McLaren still had to finish high enough to erase the points deficit. Problems with his tyres brought another stop and a struggle to recover position. Mario Andretti won the race; Hunt reached third, the result he needed to take the championship by a single point. The most important moments at Fuji happened both in the pits and on the wet track."
         ]
       },
       {
@@ -40,10 +40,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Друге коло на Фудзі",
+        "heading": "Фудзі: два різні рішення в одній боротьбі",
         "paragraphs": [
-          "Над Фудзі лив дощ. На другому колі Гран-прі Японії Нікі Лауда повернув Ferrari в бокси й зупинився. Того сезону він пережив страшну аварію на Нюрбургринзі, пропустив кілька гонок і повернувся в Монці. Але тепер вирішив, що продовжувати надто небезпечно. Джеймс Гант залишився на трасі. Титул ще не був його: потрібне було третє місце. Після проблем із шинами й додаткового пітстопу він саме третім і фінішував.",
-          "Гант набрав 69 очок, Лауда — 68. Різниця в одне очко, але в той день вони відповідали на різні запитання. Гант мав будь-що довести болід до фінішу на потрібній позиції. Лауда — вирішити, чи готовий ризикувати далі."
+          "Над останнім Гран-прі 1976 року лив дощ. Двоє гонщиків ще могли стати чемпіонами світу, але однакова погода поставила перед ними різні завдання. Нікі Лауда, який пережив аварію на Нюрбургринзі та повернувся до перегонів у Монці, після двох кіл зупинив Ferrari. Джеймс Гант залишився на трасі, де долю титулу ще ніхто не визначив.",
+          "Сходження Лауди не означало, що Ганту вже можна вручати кубок. McLaren потрібно було фінішувати достатньо високо, щоб перекрити відставання в очках. Проблеми з шинами змусили його зупинитися й відігравати позиції. Гонку виграв Маріо Андретті; Гант став третім і здобув чемпіонство з перевагою в одне очко. Найважливіше на Фудзі відбувалося і в боксах, і на мокрій трасі."
         ]
       },
       {
@@ -387,10 +387,10 @@ export const editorialDraftArticles = {
   "perez-sakhir-2020": {
     "en": [
       {
-        "heading": "Last after lap one, first at the flag",
+        "heading": "The race Pérez had to win twice",
         "paragraphs": [
-          "Sergio Pérez pitted at the end of the first lap of the 2020 Sakhir Grand Prix. Contact at Turn 4 had sent his Racing Point to the back. His place in the team for the following year was already gone. As he began recovering, George Russell — substituting for Lewis Hamilton — was leading for Mercedes and chasing his own first win.",
-          "Then Mercedes' tyre mix-up forced Russell into another stop, and a later puncture ended his chance. Pérez did not need to cause those mistakes: he had already driven back into contention. He led the restart and won, with Esteban Ocon second and Lance Stroll third. His first victory came on his 190th start, after a race that seemed over almost before it began."
+          "On the first lap at Sakhir, contact at Turn 4 sent Sergio Pérez's Racing Point to the pits. He rejoined eighteenth, with an afternoon of traffic ahead of him. His place in the team for the next season was already gone. At the front, George Russell had stepped into Lewis Hamilton's Mercedes and was chasing what looked like an extraordinary chance at a maiden victory.",
+          "Those two races moved in opposite directions. Pérez fought back to eleventh by lap 15 and tenth by lap 20, while Russell led. Late pit-stop trouble and a subsequent puncture changed the Mercedes driver's race; Pérez had already recovered far enough to seize the opening. He won ahead of Esteban Ocon and Lance Stroll. The surprise was not only who crossed the line first, but how far apart their fortunes had been at the beginning."
         ]
       },
       {
@@ -425,10 +425,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Останній після першого кола — перший на фініші",
+        "heading": "Гонка, яку Пересу довелося вигравати двічі",
         "paragraphs": [
-          "Наприкінці першого кола Гран-прі Сахіру 2020 року Серхіо Перес заїхав у бокси. Зіткнення в четвертому повороті відкинуло його Racing Point у кінець пелотону. Місце в команді на наступний сезон він уже втратив. Поки Перес повертав позиції, Джордж Расселл заміняв Льюїса Гамільтона в Mercedes, лідирував і наближався до власної першої перемоги.",
-          "А потім Mercedes переплутала комплекти шин, Расселлу довелося знову зупинятися, а пізніший прокол зруйнував його шанс. Перес не спричиняв проблем суперникам — він уже встиг повернутися в боротьбу. Після рестарту він утримав лідерство й переміг, Окон фінішував другим, Стролл — третім. Першу перемогу Перес здобув на 190-му старті, хоча після першого кола гонка здавалася втраченою."
+          "На першому колі в Сахірі контакт у четвертому повороті відправив Серхіо Переса на Racing Point у бокси. Він повернувся вісімнадцятим, попереду був цілий пелотон. Місце в команді на наступний сезон Перес уже втратив. А попереду Джордж Расселл замінив Льюїса Гамільтона в Mercedes і отримав неймовірний шанс на свою першу перемогу.",
+          "Дві гонки розвивалися в протилежних напрямках. На 15-му колі Перес був уже одинадцятим, на 20-му — десятим, а Расселл лідирував. Пізніше проблеми на пітстопі та прокол змінили виступ пілота Mercedes; Перес уже встиг повернутися настільки високо, щоб скористатися шансом. Він виграв попереду Естебана Окона та Ленса Стролла. Найбільша несподіванка — не лише ім'я переможця, а й те, наскільки різними були їхні шанси на початку."
         ]
       },
       {
@@ -465,10 +465,10 @@ export const editorialDraftArticles = {
   "kubica-bmw-2008": {
     "en": [
       {
-        "heading": "A red light changed Montreal",
+        "heading": "The red light at the end of the pit lane",
         "paragraphs": [
-          "At the 2008 Canadian Grand Prix, Robert Kubica and Kimi Räikkönen stopped alongside one another at the red light at the pit-lane exit. Lewis Hamilton approached from behind, failed to stop and struck Räikkönen's Ferrari. Both were out. Kubica escaped the collision — and BMW Sauber suddenly had an opening.",
-          "He converted that opportunity into victory. Teammate Nick Heidfeld finished second, sealing a BMW Sauber one-two, with David Coulthard third. Kubica also left Canada leading the drivers' championship. The rest of the season did not deliver a title, but Montreal was not a hypothetical success: two BMW Sauber cars really did finish at the front."
+          "Robert Kubica and Kimi Räikkönen waited at a red pit-exit signal during the 2008 Canadian Grand Prix. Behind them, Lewis Hamilton did not stop in time and hit the Ferrari. Hamilton and Räikkönen were out; Kubica avoided the collision. In an instant, a chaotic scene at a traffic signal reshaped a race that still had many laps to run.",
+          "Kubica turned the opening into a win, with BMW Sauber teammate Nick Heidfeld second and David Coulthard third. The result gave the team a one-two finish and put Kubica on 42 points, ahead of both Hamilton and Massa in the drivers' standings. Nothing about the crash guaranteed the victory or the championship lead: those came from completing the race and scoring the points. For a moment in 2008, the order at the very top really had changed."
         ]
       },
       {
@@ -502,10 +502,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Червоний сигнал у Монреалі",
+        "heading": "Червоне світло на виїзді з пітлейну",
         "paragraphs": [
-          "На Гран-прі Канади 2008 року Роберт Кубіца й Кімі Райкконен зупинилися поруч перед червоним сигналом на виїзді з пітлейну. Позаду наближався Льюїс Гамільтон. Він не встиг загальмувати й врізався у Ferrari Райкконена. Обоє зійшли, а Кубіца уникнув зіткнення. Перед BMW Sauber раптово відкрився шанс.",
-          "Кубіца ним скористався й переміг. Напарник Нік Гайдфельд фінішував другим, принісши BMW Sauber дубль, Девід Култгард став третім. Після Канади Кубіца ще й очолив чемпіонат. Сезон не завершився титулом, але Монреаль був цілком реальною перемогою: обидва боліди BMW Sauber фінішували попереду суперників."
+          "Роберт Кубіца та Кімі Райкконен чекали на червоний сигнал на виїзді з пітлейну під час Гран-прі Канади 2008 року. Позаду Льюїс Гамільтон не встиг зупинитися й врізався у Ferrari. Гамільтон і Райкконен вибули, Кубіца уникнув зіткнення. За одну мить звичайний сигнал світлофора змінив перебіг гонки, попереду в якої було ще багато кіл.",
+          "Кубіца перетворив нагоду на перемогу; його напарник по BMW Sauber Нік Гайдфельд став другим, Девід Култгард — третім. Команда здобула дубль, а Кубіца набрав 42 очки й випередив Гамільтона та Массу в особистому заліку. Аварія сама по собі не гарантувала ні перемоги, ні лідерства в чемпіонаті: для цього треба було завершити гонку й набрати очки. На певний час вершина сезону 2008 року справді змінила свого лідера."
         ]
       },
       {
@@ -681,10 +681,10 @@ export const editorialDraftArticles = {
   "brawn-2009": {
     "en": [
       {
-        "heading": "The car existed. The team almost didn't.",
+        "heading": "The fastest car almost missed the grid",
         "paragraphs": [
-          "Honda had invested heavily in its 2009 car before announcing its withdrawal from Formula 1 at the end of 2008. The machine was being prepared for new aerodynamic rules, but its manufacturer was leaving. There was no guarantee the car — or the people building it — would reach the next starting grid.",
-          "Ross Brawn and Nick Fry worked to save the operation. The car needed a Mercedes engine installed in place of the planned Honda unit. Then came Australia: Jenson Button took pole, Rubens Barrichello qualified second, and they finished in the same order. Brawn GP won with a one-two on its first appearance. It was astonishing, but not a car created from nothing. Much of the work had been done before anyone knew whether the team would survive."
+          "Honda had spent months developing a car for the new 2009 regulations when the manufacturer announced it was leaving Formula 1. Engineers had a project, but there was no certainty the team would race it. Ross Brawn and Nick Fry worked to keep the operation alive; the chassis had to accept a Mercedes engine instead of the power unit for which it had originally been conceived.",
+          "The team reached the season as Brawn GP. Jenson Button won six of the first seven races, turning an uncertain winter into an extraordinary championship lead. But the story did not end with that early speed. The victories stopped coming for Button after Turkey, competitors improved and each remaining weekend became a defence of points already earned. The same car that had opened the season as a sensation now had to carry its advantage to the finish."
         ]
       },
       {
@@ -718,10 +718,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Болід був готовий. Команда могла зникнути.",
+        "heading": "Найшвидший болід ледь не залишився без старту",
         "paragraphs": [
-          "Honda вклала великі ресурси в машину для сезону 2009 року, а наприкінці 2008-го оголосила про вихід із Формули-1. Болід готували під новий аеродинамічний регламент, але виробник залишав чемпіонат. Ніхто не міг гарантувати, що машину взагалі побачать на старті, а люди, які її будували, збережуть роботу.",
-          "Росс Браун і Нік Фрай взялися рятувати команду. Замість запланованого двигуна Honda довелося встановлювати Mercedes. І ось Австралія: Дженсон Баттон бере поул, Рубенс Баррікелло кваліфікується другим, а фінішують вони в тому самому порядку. Brawn GP відразу здобула дубль. Це було приголомшливо, але не диво з нічого: робота тривала задовго до того, як стало зрозуміло, чи команда виживе."
+          "Honda кілька місяців розробляла болід під новий регламент 2009 року, коли виробник оголосив про вихід із Формули-1. Інженери мали готовий напрям роботи, але ніхто не знав, чи команда взагалі вийде на трасу. Росс Браун і Нік Фрай намагалися зберегти колектив; у шасі довелося встановити двигун Mercedes замість агрегата, під який його спочатку проєктували.",
+          "Команда все-таки розпочала сезон під назвою Brawn GP. Дженсон Баттон виграв шість із перших семи гонок, перетворивши непевну зиму на неймовірне лідерство в чемпіонаті. Але історія не завершилася ранньою швидкістю. Після Туреччини Баттон більше не перемагав, суперники набирали темп, а кожен наступний вікенд перетворювався на захист раніше зароблених очок. Болід, який розпочав рік як сенсація, тепер мав довезти свою перевагу до фінішу."
         ]
       },
       {
