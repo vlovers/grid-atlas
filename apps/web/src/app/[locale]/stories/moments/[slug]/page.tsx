@@ -10,13 +10,10 @@ import { resolveEditorialRaces } from '@/components/stories/editorial-race-resol
 import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
-import { editorialReflection } from '@/components/stories/editorial-reflection';
-import { editorialTakeaways } from '@/components/stories/editorial-takeaways';
 import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
 import { editorialResultHighlights } from '@/components/stories/editorial-result-highlights';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
-import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -159,27 +156,6 @@ export default async function EditorialMoment({ params }: Props) {
         </details>)}
         <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
       </section>}
-      {slug in editorialTakeaways && <section aria-labelledby="story-takeaways" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{uk ? 'ЩО ЗМІНИЛА ЦЯ ІСТОРІЯ' : 'WHY THIS STORY MATTERS'}</p>
-        <h2 id="story-takeaways">{uk ? 'Три речі, які варто запам’ятати' : 'Three things worth remembering'}</h2>
-        <ol className={styles.editorialTakeaways}>
-          {editorialTakeaways[slug as keyof typeof editorialTakeaways][locale].map((point, index) => <li key={index}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p>{point}</p></li>)}
-        </ol>
-      </section>}
-      {slug in editorialReflection && <aside aria-labelledby="story-reflection" style={{ marginTop: 56, padding: 'clamp(24px, 5vw, 56px)', background: 'var(--surface, transparent)', border: '1px solid var(--line)' }}>
-        <p className={styles.eyebrow}>{uk ? 'ПИТАННЯ ПІСЛЯ ІСТОРІЇ' : 'A QUESTION TO TAKE AWAY'}</p>
-        <h2 id="story-reflection" style={{ fontSize: 'clamp(28px, 4vw, 52px)', maxWidth: '24ch', lineHeight: 1.2 }}>{editorialReflection[slug as keyof typeof editorialReflection][locale]}</h2>
-        <p className={styles.note}>{uk ? 'Не тест і не готова відповідь — лише привід подивитися на події під іншим кутом.' : 'Not a quiz or a verdict — just another way to think about what happened.'}</p>
-      </aside>}
-      {slug in editorialFactCheckPrompts && <details style={{ marginTop: 48, padding: '24px 28px', border: '1px solid var(--line)' }}>
-        <summary style={{ cursor: 'pointer', fontWeight: 700, minHeight: 44 }}>
-          {uk ? 'Редакційна перевірка фактів — 5 тверджень' : 'Editorial fact-check queue — 5 claims'}
-        </summary>
-        <p className={styles.note}>{uk ? 'Ці твердження ще очікують незалежних джерел. Перелік показано для прозорості, а не як підтверджені факти.' : 'These claims still need independent sources. This queue is shown for transparency, not as verified evidence.'}</p>
-        <ol style={{ display: 'grid', gap: 12, paddingInlineStart: 24 }}>
-          {editorialFactCheckPrompts[slug as keyof typeof editorialFactCheckPrompts].map((claim, index) => <li key={index}>{claim[locale]} <small className={styles.note}>· {uk ? 'Джерело очікується' : 'Source pending'}</small></li>)}
-        </ol>
-      </details>}
       <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
         <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
         <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a full editorial manuscript awaiting verification. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
