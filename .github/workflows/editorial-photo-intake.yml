@@ -23,7 +23,7 @@ on:
           - brawn-2009
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   stage:
@@ -32,6 +32,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -51,3 +53,30 @@ jobs:
           path: .grid-atlas/media-review/
           if-no-files-found: error
           retention-days: 7
+
+      - name: Commit vetted photographs to editorial branch
+        if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+        shell: bash
+        run: |
+          set -euo pipefail
+          node -e '
+            const fs = require("node:fs");
+            const dir = ".grid-atlas/media-review";
+            for (const [slug, license] of [["vettel-monza-2008","CC BY 2.0"],["brawn-2009","CC BY-SA 3.0"]]) {
+              const metadata = JSON.parse(fs.readFileSync(dir + "/" + slug + ".json", "utf8"));
+              if (metadata.license !== license || !metadata.sourcePage.startsWith("https://commons.wikimedia.org/wiki/File:"))
+                throw new Error("Unverified provenance: " + slug);
+              const bytes = fs.readFileSync(dir + "/" + slug + ".jpg");
+              if (bytes.length < 10000 || bytes[0] !== 0xff || bytes[1] !== 0xd8 || bytes[2] !== 0xff)
+                throw new Error("Invalid JPEG: " + slug);
+              fs.mkdirSync("apps/web/public/media/editorial", {recursive: true});
+              fs.writeFileSync("apps/web/public/media/editorial/" + slug + ".jpg", bytes);
+            }
+          '
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/public/media/editorial/vettel-monza-2008.jpg apps/web/public/media/editorial/brawn-2009.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(editorial): publish attributed Vettel and Brawn historic photographs"
+            git push origin HEAD:editorial/people-who-changed-f1-20261025
+          fi
