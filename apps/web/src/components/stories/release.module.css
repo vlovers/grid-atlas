@@ -469,3 +469,16 @@
 .editorialRaceNumber{font-size:clamp(3.5rem,8vw,6.5rem);font-weight:800;letter-spacing:-.09em;line-height:1;font-variant-numeric:tabular-nums;opacity:.22}
 .editorialRaceCard a{display:inline-flex;min-height:44px;align-items:center;font-weight:700}
 @media(prefers-reduced-motion:reduce){.editorialProgress{animation:none;transform:none}}
+
+/* Reading paths become a visual four-act narrative, without JavaScript or external assets. */
+.editorialActs{counter-reset:act;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;list-style:none;padding:0;margin:2rem 0;background:var(--line);border:1px solid var(--line)}
+.editorialAct{counter-increment:act;position:relative;min-width:0;min-height:290px;padding:clamp(1.25rem,2.4vw,2rem);background:var(--surface);display:flex;flex-direction:column;gap:.75rem;transition:background .2s ease}
+.editorialAct:before{content:counter(act,decimal-leading-zero);font-size:clamp(3.5rem,6vw,6rem);font-weight:850;letter-spacing:-.1em;line-height:1;color:var(--accent-ink);opacity:.65}
+.editorialAct:after{content:'';position:absolute;inset:0 0 auto;height:4px;background:var(--accent-ink);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.editorialAct:hover:after,.editorialAct:focus-within:after{transform:scaleX(1)}
+.editorialAct h3{font-size:clamp(1.4rem,2vw,2rem);margin:.5rem 0 0}
+.editorialAct p{font-size:.95rem;line-height:1.75}
+.editorialAct small{margin-top:auto;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:900px){.editorialActs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.editorialActs{grid-template-columns:minmax(0,1fr)}.editorialAct{min-height:220px}}
+@media(prefers-reduced-motion:reduce){.editorialAct,.editorialAct:after{transition:none}}
