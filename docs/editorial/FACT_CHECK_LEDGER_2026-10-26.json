@@ -98,13 +98,13 @@
       "slug": "senna-prost-1988-89",
       "claim": "The 1988 standings used dropped scores",
       "classification": "historical-claim",
-      "status": "source-located-awaiting-independent-review",
-      "primarySource": "https://ayrton-senna.com/seasons/1988/",
-      "secondarySource": null,
-      "notes": "Senna season chronology explicitly gives 94 scored and 90 counted, and Formula 1 official standing 90–87; precise best-eleven rule should be cross-checked against contemporary regulations. Does not certify all narrative details in either language.",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1988/drivers",
+      "secondarySource": "https://escholarship.org/content/qt2fr4561v/qt2fr4561v_noSplash_c855cfa033ae10048e57f6c9eb912d2b.pdf",
+      "notes": "Official F1 final table confirms Senna 90 and Prost 87; independent 2026 academic analysis expressly identifies best 11 of 16 count, raw 94 versus 105. Exact official historical FIA rule PDF not inspected. Scope is the points calculation, not rivalry motives.",
       "evidenceRequirement": "championship-regulation",
       "reviewChecklist": {
-        "archiveResult": false,
+        "archiveResult": true,
         "independentNarrative": false,
         "bilingualParity": false,
         "reviewerSignoff": false
