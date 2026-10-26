@@ -387,3 +387,16 @@ test('static AI-reviewed publication remains unapproved until hash-bound bilingu
   assert.ok(detail.includes('robots: { index: isAiReviewedStory(slug)'), 'robots status follows the reviewed edition');
   assert.ok(detail.includes("published ? 'AI-reviewed'"), 'AI-reviewed label only on reviewed edition');
 });
+
+
+test('all ten stories expose traceable scoped research links without crowding the narrative', () => {
+  const sources = read(directory + 'editorial-evidence-links.ts');
+  const ledger = JSON.parse(read('docs/editorial/FACT_CHECK_LEDGER_2026-10-26.json'));
+  for (const slug of slugs) {
+    const evidence = ledger.entries.filter(entry => entry.slug === slug && entry.status === 'primary-source-checked-ai');
+    assert.ok(evidence.some(entry => entry.primarySource), slug + ' must have sourced claims');
+    for (const entry of evidence) assert.ok(sources.includes(JSON.stringify(entry.primarySource)), entry.id + ' source must be accessible');
+  }
+  assert.ok(detail.includes('(editorialEvidenceLinks[slug] ?? []).map('));
+  assert.ok(detail.includes('Historical sources for this story'));
+});
