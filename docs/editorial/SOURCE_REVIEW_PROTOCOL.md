@@ -32,3 +32,9 @@ The articles should remain readable without repeated summary cards. Keep the man
 - Every published image has a human-approved provenance entry and valid rights.
 - EN/UK pages, archive links, accessibility, mobile layout and CI are checked.
 - Only then should the team consider removing the draft/noindex publication guard.
+
+## Reader-first production batch — 26 October 2026
+
+The ten EN and ten UK catalogue previews have been rewritten to open with a race, decision, or result rather than internal archive terminology. A single all-ten production brief now lives at [TEN_STORY_READER_FIRST_PRODUCTION_2026-10-26.md](research/people-who-changed-f1-20261025/TEN_STORY_READER_FIRST_PRODUCTION_2026-10-26.md). It identifies scene structure, UK/EN direction, official classification starting points and unsupported inferences for every story. The Node test `tests/editorial-preview-quality.test.mjs` guards bilingual coverage, hooks and the draft/noindex/photo boundary.
+
+**Scope limit:** this batch changes previews and research guidance, not the substantive 98 long-form chapters or review decisions. No claim was marked verified, no image was approved, and no public release gate was lifted. The next content production pass must include substantive revision and independent source review of the chapters themselves, not count this preview pass as ten finished articles.
