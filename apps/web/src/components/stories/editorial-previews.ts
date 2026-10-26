@@ -5,11 +5,11 @@ export const editorialStoryPreviews = [
     "year": "1976",
     "en": {
       "title": "Lauda and Hunt: the right to stop",
-      "summary": "A championship decided by one point, but not reducible to one number. In 1976, the final result and the choice to withdraw at Fuji became different parts of the same story."
+      "summary": "Hunt became champion by one point; Lauda chose to stop at a rain-soaked Fuji. Two decisions made under the same sky are still worth understanding separately."
     },
     "uk": {
       "title": "Лауда й Гант: право зупинитися",
-      "summary": "Чемпіонат вирішило одне очко, але його історія значно більша за одне число. У 1976 році результат і рішення зійти у Фудзі стали різними частинами однієї історії."
+      "summary": "Гант виграв титул із перевагою в одне очко. Лауда вирішив зійти під дощем на Фудзі. Чому цю історію не можна звести до перемоги одного й поразки іншого?"
     }
   },
   {
@@ -17,11 +17,11 @@ export const editorialStoryPreviews = [
     "year": "1988–1989",
     "en": {
       "title": "Senna and Prost: one team, two rivals",
-      "summary": "McLaren dominated 1988, yet its two drivers competed under a points system that counted only their best results. The rivalry continued into the following season."
+      "summary": "Senna won the 1988 title on 90 counted points to Prost's 87. A year later, their fierce McLaren rivalry reached a controversial turning point at Suzuka."
     },
     "uk": {
       "title": "Сенна й Прост: одна команда, два суперники",
-      "summary": "McLaren домінував у 1988 році, але два її пілоти боролися за правилами, які враховували лише найкращі результати. Суперництво тривало й наступного сезону."
+      "summary": "Сенна став чемпіоном 1988 року з 90 заліковими очками проти 87 у Проста. Уже наступного сезону їхнє суперництво в McLaren вибухнуло в Сузуці."
     }
   },
   {
@@ -29,11 +29,11 @@ export const editorialStoryPreviews = [
     "year": "1979",
     "en": {
       "title": "Dijon: the winner and the duel",
-      "summary": "Jean-Pierre Jabouille won for Renault. Behind him, Gilles Villeneuve and René Arnoux produced a battle for second place that became part of racing folklore."
+      "summary": "Jabouille won the French Grand Prix for Renault. But behind him, Villeneuve and Arnoux fought for second so fiercely that their duel almost eclipsed the winner."
     },
     "uk": {
       "title": "Діжон: переможець і дуель",
-      "summary": "Жан-П’єр Жабуй переміг за Renault. Позаду нього Жиль Вільнев і Рене Арну влаштували боротьбу за друге місце, яка увійшла в історію автоспорту."
+      "summary": "Жабуй приніс Renault перемогу на Гран-прі Франції. Та позаду нього Вільнев і Арну так запекло боролися за друге місце, що їхню дуель згадують не рідше за саму перемогу."
     }
   },
   {
@@ -41,11 +41,11 @@ export const editorialStoryPreviews = [
     "year": "2008",
     "en": {
       "title": "Vettel: Monza in the rain",
-      "summary": "A wet Italian Grand Prix gave Sebastian Vettel and Toro Rosso an extraordinary victory. It was a breakthrough for that constructor, not a Red Bull Racing win."
+      "summary": "Vettel took Toro Rosso to victory at rain-soaked Monza, ahead of Kovalainen and Kubica. The surprise was enormous, but the win belonged to a real team and a real drive."
     },
     "uk": {
       "title": "Феттель: дощова Монца",
-      "summary": "Дощовий Гран-прі Італії приніс Себастьяну Феттелю й Toro Rosso надзвичайну перемогу. Це був прорив саме цього конструктора, а не Red Bull Racing."
+      "summary": "Феттель виграв дощову гонку в Монці за Toro Rosso, випередивши Ковалайнена й Кубіцу. Сенсація була величезною — та за нею стояли не лише погодні умови."
     }
   },
   {
@@ -53,11 +53,11 @@ export const editorialStoryPreviews = [
     "year": "2011",
     "en": {
       "title": "Button: the race that kept restarting",
-      "summary": "Rain, interruptions and setbacks turned Montreal into an endurance test. Button's late recovery ended with a pass for the lead on the final lap."
+      "summary": "Montreal's rain and stoppages tested everyone. After a chaotic afternoon, Button won for McLaren, with Vettel second and Webber third. How did that comeback happen?"
     },
     "uk": {
       "title": "Баттон: гонка, що починалася знову",
-      "summary": "Дощ, зупинки й невдачі перетворили Монреаль на випробування витривалості. Пізнє повернення Баттона завершилося обгоном за лідерство на останньому колі."
+      "summary": "Дощ і зупинки раз у раз змінювали хід гонки в Монреалі. Попри всі невдачі Баттон переміг за McLaren, а Феттель і Веббер фінішували позаду. Як йому це вдалося?"
     }
   },
   {
@@ -65,11 +65,11 @@ export const editorialStoryPreviews = [
     "year": "2020",
     "en": {
       "title": "Pérez: two paths to a first win",
-      "summary": "Sergio Pérez recovered from a first-lap setback while George Russell chased a breakthrough in a Mercedes. Their stories met in an unpredictable finale."
+      "summary": "At Sakhir, Pérez recovered from early trouble and won for Racing Point, while Mercedes substitute Russell finished ninth. Two very different races unfolded on the same track."
     },
     "uk": {
       "title": "Перес: два шляхи до першої перемоги",
-      "summary": "Серхіо Перес відігрався після невдачі на першому колі, а Джордж Расселл прагнув першої перемоги за кермом Mercedes. Їхні історії перетнулися в непередбачуваному фіналі."
+      "summary": "У Сахірі Перес відігрався після невдалого старту й переміг за Racing Point. Тим часом Расселл, який замінив Гамільтона в Mercedes, фінішував дев’ятим. Один вечір — дві несхожі історії."
     }
   },
   {
@@ -77,11 +77,11 @@ export const editorialStoryPreviews = [
     "year": "2008",
     "en": {
       "title": "Kubica: when a title felt possible",
-      "summary": "Robert Kubica won in Canada and briefly led the championship for BMW Sauber. The season asks how we remember a genuine chance that did not become a title."
+      "summary": "Kubica led a BMW Sauber one-two in Canada, ahead of teammate Heidfeld. For one afternoon, a team outside the usual favourites stood on the top step."
     },
     "uk": {
       "title": "Кубіца: коли титул здавався можливим",
-      "summary": "Роберт Кубіца переміг у Канаді й на певний час очолив чемпіонат за BMW Sauber. Цей сезон змушує замислитися, як ми пам’ятаємо справжній шанс, що не став титулом."
+      "summary": "Кубіца виграв Гран-прі Канади, а його напарник Гайдфельд фінішував другим. BMW Sauber здобула дубль — і на мить змінила звичну розстановку сил."
     }
   },
   {
@@ -89,11 +89,11 @@ export const editorialStoryPreviews = [
     "year": "1996–2000",
     "en": {
       "title": "Schumacher: five years to a Ferrari title",
-      "summary": "Michael Schumacher joined Ferrari as a champion, but the team's next drivers' crown took years of work, setbacks and organisational change."
+      "summary": "Schumacher won three races for Ferrari in 1996, yet the drivers' title arrived only in 2000. Behind that five-year journey were setbacks, progress and a changing team."
     },
     "uk": {
       "title": "Шумахер: п’ять років до титулу Ferrari",
-      "summary": "Міхаель Шумахер прийшов до Ferrari чемпіоном, але наступний особистий титул команди потребував років роботи, невдач і організаційних змін."
+      "summary": "Уже в 1996 році Шумахер виграв для Ferrari три гонки. Але чемпіонського титулу довелося чекати до 2000-го. Що змінилося за ці п’ять сезонів?"
     }
   },
   {
