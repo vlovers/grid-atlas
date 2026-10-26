@@ -274,3 +274,20 @@ test('long reads do not repeat entire phrases from one chapter in another', () =
     }
   }
 });
+
+test('long-form narrative appears before the reference-heavy panels on all editorial pages', () => {
+  const storyStart = detail.indexOf('aria-labelledby="research-chapters"');
+  const firstPanel = detail.indexOf('slug in editorialStoryContext');
+  const otherPanel = detail.indexOf('aria-labelledby="story-milestones"');
+  const resultsPanel = detail.indexOf('aria-labelledby="story-races"');
+  assert.ok(storyStart > 0 && storyStart < firstPanel && firstPanel < otherPanel && otherPanel < resultsPanel);
+  assert.ok(detail.indexOf('href="#research-chapters"') < storyStart);
+  assert.ok(detail.includes('href="#story-milestones"'));
+  assert.ok(detail.includes('href="#story-races"'));
+  assert.equal(detail.split('aria-labelledby="research-chapters"').length - 1, 1);
+  assert.ok(detail.includes('index: false'), 'unapproved draft must stay noindexed');
+  const styles = read(directory + 'release.module.css');
+  assert.ok(styles.includes('.editorialReadingPaths'));
+  assert.ok(styles.includes('.editorialReadingPrimary'));
+  assert.ok(styles.includes('@media(max-width:560px)'));
+});
