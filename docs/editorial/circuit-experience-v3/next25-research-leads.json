@@ -1,0 +1,2217 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-next25-research-v1",
+  "status": "research_only",
+  "publication": "blocked",
+  "quality_gate": "research_story_leads_not_articles",
+  "scope": "25 next historic or contemporary Formula 1 venues, provisional slugs pending pinned F1DB identity mapping",
+  "coverage": 25,
+  "source_rules": [
+    "All event anchors are unverified editorial leads pending race-specific authoritative citation.",
+    "Narrative questions are NOT event claims and must be replaced with fact-checked full prose before publication.",
+    "No historical turn numbering or geometry inferred.",
+    "No historical media licenses conveyed."
+  ],
+  "circuits": [
+    {
+      "candidate_slug": "baku",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Baku City Circuit",
+        "uk": "Баку"
+      },
+      "editorial_intro": {
+        "en": "A street circuit threading between modern boulevards and the old city walls.",
+        "uk": "Міська траса між сучасними проспектами та мурами старого міста."
+      },
+      "story_leads": [
+        {
+          "year": 2017,
+          "title": {
+            "en": "Ricciardo wins a chaotic race",
+            "uk": "Ріккардо перемагає в хаотичній гонці"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2017 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2017 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first Azerbaijan Grand Prix",
+            "uk": "The first Azerbaijan Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first azerbaijan grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first Azerbaijan Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Castle section and its narrow passage",
+            "uk": "Castle section and its narrow passage"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of castle section and its narrow passage with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Castle section and its narrow passage» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Safety-car restarts",
+            "uk": "Safety-car restarts"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of safety-car restarts with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Safety-car restarts» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Late-race championship reversals",
+            "uk": "Late-race championship reversals"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of late-race championship reversals with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Late-race championship reversals» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Jeddah Corniche Circuit",
+        "uk": "Джидда"
+      },
+      "editorial_intro": {
+        "en": "Fast walls and sweeping corners made Saudi Arabia's coastal Grand Prix immediately distinctive.",
+        "uk": "Швидкі повороти між бар’єрами зробили приморський Гран-прі Саудівської Аравії особливим."
+      },
+      "story_leads": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "Hamilton wins a contentious inaugural race",
+            "uk": "Гамільтон виграє суперечливий дебют"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2021 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2021 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How the seafront course was built",
+            "uk": "How the seafront course was built"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how the seafront course was built with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How the seafront course was built» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The meaning of rapid street-circuit corners",
+            "uk": "The meaning of rapid street-circuit corners"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the meaning of rapid street-circuit corners with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The meaning of rapid street-circuit corners» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Safety and visibility debates",
+            "uk": "Safety and visibility debates"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of safety and visibility debates with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Safety and visibility debates» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Strategy under frequent interruptions",
+            "uk": "Strategy under frequent interruptions"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of strategy under frequent interruptions with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Strategy under frequent interruptions» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "lusail",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Lusail International Circuit",
+        "uk": "Лусаїл"
+      },
+      "editorial_intro": {
+        "en": "A motorcycle-racing venue became the stage for Qatar's Formula 1 Grand Prix.",
+        "uk": "Автодром для мотоперегонів став місцем проведення Гран-прі Катару."
+      },
+      "story_leads": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "Hamilton wins Qatar's inaugural Grand Prix",
+            "uk": "Гамільтон перемагає в дебютному Гран-прі Катару"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2021 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2021 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "A motorcycle circuit adapts to Formula 1",
+            "uk": "A motorcycle circuit adapts to Formula 1"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of a motorcycle circuit adapts to formula 1 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «A motorcycle circuit adapts to Formula 1» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Tyre management in long fast bends",
+            "uk": "Tyre management in long fast bends"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of tyre management in long fast bends with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Tyre management in long fast bends» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 2023 mandatory tyre stint limits",
+            "uk": "The 2023 mandatory tyre stint limits"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 2023 mandatory tyre stint limits with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 2023 mandatory tyre stint limits» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How heat shapes a night race",
+            "uk": "How heat shapes a night race"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how heat shapes a night race with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How heat shapes a night race» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Autódromo Hermanos Rodríguez",
+        "uk": "Автодром братів Родрігесів"
+      },
+      "editorial_intro": {
+        "en": "A stadium section, high altitude and a track named after racing brothers give Mexico City a distinct character.",
+        "uk": "Стадіонна секція, високогір’я та назва на честь братів-гонщиків визначають характер траси Мехіко."
+      },
+      "story_leads": [
+        {
+          "year": 1990,
+          "title": {
+            "en": "Prost wins at high altitude",
+            "uk": "Прост перемагає на висоті"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1990 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1990 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How the circuit was named for the Rodríguez brothers",
+            "uk": "How the circuit was named for the Rodríguez brothers"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how the circuit was named for the rodríguez brothers with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How the circuit was named for the Rodríguez brothers» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The old Peraltada corner",
+            "uk": "The old Peraltada corner"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the old peraltada corner with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The old Peraltada corner» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "A stadium becomes part of the lap",
+            "uk": "A stadium becomes part of the lap"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of a stadium becomes part of the lap with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «A stadium becomes part of the lap» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Mexico City's Grand Prix returns in 2015",
+            "uk": "Mexico City's Grand Prix returns in 2015"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of mexico city's grand prix returns in 2015 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Mexico City's Grand Prix returns in 2015» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "miami",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Miami International Autodrome",
+        "uk": "Автодром Маямі"
+      },
+      "editorial_intro": {
+        "en": "Built around a stadium complex, Miami arrived as a deliberately designed temporary Grand Prix venue.",
+        "uk": "Створена навколо стадіону тимчасова траса Маямі стала новим форматом міського Гран-прі."
+      },
+      "story_leads": [
+        {
+          "year": 2024,
+          "title": {
+            "en": "Norris wins his first Grand Prix",
+            "uk": "Норріс здобуває першу перемогу"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2024 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2024 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Designing a track around a football stadium",
+            "uk": "Designing a track around a football stadium"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of designing a track around a football stadium with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Designing a track around a football stadium» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first Miami Grand Prix in 2022",
+            "uk": "The first Miami Grand Prix in 2022"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first miami grand prix in 2022 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first Miami Grand Prix in 2022» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The slow chicane beneath the overpass",
+            "uk": "The slow chicane beneath the overpass"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the slow chicane beneath the overpass with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The slow chicane beneath the overpass» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Safety-car timing and changing race fortunes",
+            "uk": "Safety-car timing and changing race fortunes"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of safety-car timing and changing race fortunes with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Safety-car timing and changing race fortunes» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Las Vegas Strip Circuit",
+        "uk": "Лас-Вегас-Стріп"
+      },
+      "editorial_intro": {
+        "en": "Formula 1 returned to Las Vegas by racing past the Strip's famous hotels at night.",
+        "uk": "Формула-1 повернулася до Лас-Вегаса нічною гонкою повз знамениті готелі Стріпу."
+      },
+      "story_leads": [
+        {
+          "year": 2023,
+          "title": {
+            "en": "Verstappen wins the Strip's debut race",
+            "uk": "Ферстаппен виграє дебют на Стріпі"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2023 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2023 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The earlier Caesars Palace Grands Prix",
+            "uk": "The earlier Caesars Palace Grands Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the earlier caesars palace grands prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The earlier Caesars Palace Grands Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "A city closes its central boulevard for racing",
+            "uk": "A city closes its central boulevard for racing"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of a city closes its central boulevard for racing with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «A city closes its central boulevard for racing» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Cold night temperatures and tyres",
+            "uk": "Cold night temperatures and tyres"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of cold night temperatures and tyres with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Cold night temperatures and tyres» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The late-race fight on long straights",
+            "uk": "The late-race fight on long straights"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the late-race fight on long straights with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The late-race fight on long straights» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Indianapolis Motor Speedway",
+        "uk": "Індіанаполіс"
+      },
+      "editorial_intro": {
+        "en": "The Speedway bridges the Indianapolis 500's early championship status and the later Formula 1 road-course era.",
+        "uk": "Індіанаполіс поєднує ранній заліковий статус Indy 500 та пізнішу епоху дорожньої траси Формули-1."
+      },
+      "story_leads": [
+        {
+          "year": 2005,
+          "title": {
+            "en": "Six cars start the United States Grand Prix",
+            "uk": "На старт Гран-прі США виходять шість машин"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2005 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2005 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the Indy 500 counted in the 1950s championship",
+            "uk": "Why the Indy 500 counted in the 1950s championship"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the indy 500 counted in the 1950s championship with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the Indy 500 counted in the 1950s championship» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Formula 1 road course arrives in 2000",
+            "uk": "The Formula 1 road course arrives in 2000"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the formula 1 road course arrives in 2000 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Formula 1 road course arrives in 2000» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 2005 tyre safety dispute",
+            "uk": "The 2005 tyre safety dispute"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 2005 tyre safety dispute with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 2005 tyre safety dispute» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Speedway's famous banked corner",
+            "uk": "The Speedway's famous banked corner"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the speedway's famous banked corner with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Speedway's famous banked corner» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Adelaide Street Circuit",
+        "uk": "Міська траса Аделаїди"
+      },
+      "editorial_intro": {
+        "en": "For more than a decade Adelaide gave Formula 1 a dramatic season finale on temporary city streets.",
+        "uk": "Понад десятиліття Аделаїда приймала драматичний фінал сезону на тимчасових міських вулицях."
+      },
+      "story_leads": [
+        {
+          "year": 1986,
+          "title": {
+            "en": "A tyre failure changes the championship",
+            "uk": "Прокол змінює чемпіонат"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1986 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1986 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first Australian World Championship Grand Prix",
+            "uk": "The first Australian World Championship Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first australian world championship grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first Australian World Championship Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "1989's rain and visibility",
+            "uk": "1989's rain and visibility"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of 1989's rain and visibility with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «1989's rain and visibility» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Schumacher-Hill collision in 1994",
+            "uk": "The Schumacher-Hill collision in 1994"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the schumacher-hill collision in 1994 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Schumacher-Hill collision in 1994» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the race moved to Melbourne",
+            "uk": "Why the race moved to Melbourne"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the race moved to melbourne with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the race moved to Melbourne» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Brands Hatch",
+        "uk": "Брендс-Гетч"
+      },
+      "editorial_intro": {
+        "en": "The rolling Kent circuit hosted British and European Grands Prix before modern Formula 1 moved elsewhere.",
+        "uk": "Хвиляста траса в графстві Кент приймала Гран-прі Великої Британії та Європи до зміни епохи Формули-1."
+      },
+      "story_leads": [
+        {
+          "year": 1976,
+          "title": {
+            "en": "Hunt wins amid a restart dispute",
+            "uk": "Гант перемагає на тлі суперечки щодо рестарту"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1976 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1976 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The rise of the British Grand Prix at Brands Hatch",
+            "uk": "The rise of the British Grand Prix at Brands Hatch"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the rise of the british grand prix at brands hatch with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The rise of the British Grand Prix at Brands Hatch» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Paddock Hill Bend's blind descent",
+            "uk": "Paddock Hill Bend's blind descent"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of paddock hill bend's blind descent with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Paddock Hill Bend's blind descent» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "A European Grand Prix in 1983",
+            "uk": "A European Grand Prix in 1983"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of a european grand prix in 1983 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «A European Grand Prix in 1983» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The final championship race in 1986",
+            "uk": "The final championship race in 1986"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the final championship race in 1986 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The final championship race in 1986» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Watkins Glen",
+        "uk": "Воткінс-Глен"
+      },
+      "editorial_intro": {
+        "en": "Upstate New York's road circuit hosted a long run of United States Grands Prix.",
+        "uk": "Автодром штату Нью-Йорк багато років приймав Гран-прі США."
+      },
+      "story_leads": [
+        {
+          "year": 1970,
+          "title": {
+            "en": "Fittipaldi wins and Rindt's title is secured",
+            "uk": "Фіттіпальді перемагає й визначається титул Ріндта"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1970 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1970 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first US Grand Prix at the Glen in 1961",
+            "uk": "The first US Grand Prix at the Glen in 1961"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first us grand prix at the glen in 1961 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first US Grand Prix at the Glen in 1961» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Esses and the climbing first sector",
+            "uk": "The Esses and the climbing first sector"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the esses and the climbing first sector with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Esses and the climbing first sector» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Safety changes in the 1970s",
+            "uk": "Safety changes in the 1970s"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of safety changes in the 1970s with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Safety changes in the 1970s» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The circuit leaves the Formula 1 calendar",
+            "uk": "The circuit leaves the Formula 1 calendar"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the circuit leaves the formula 1 calendar with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The circuit leaves the Formula 1 calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Kyalami",
+        "uk": "К’яламі"
+      },
+      "editorial_intro": {
+        "en": "South Africa's high-altitude circuit connected very different eras and configurations of Grand Prix racing.",
+        "uk": "Південноафриканський високогірний автодром поєднує різні епохи й конфігурації Гран-прі."
+      },
+      "story_leads": [
+        {
+          "year": 1977,
+          "title": {
+            "en": "Tom Pryce dies in a tragic collision",
+            "uk": "Том Прайс гине в трагічному зіткненні"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1977 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1977 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The early South African Grand Prix years",
+            "uk": "The early South African Grand Prix years"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the early south african grand prix years with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The early South African Grand Prix years» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How Kyalami's layout changed",
+            "uk": "How Kyalami's layout changed"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how kyalami's layout changed with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How Kyalami's layout changed» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Apartheid-era sporting boycotts",
+            "uk": "Apartheid-era sporting boycotts"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of apartheid-era sporting boycotts with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Apartheid-era sporting boycotts» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The World Championship returns in the 1990s",
+            "uk": "The World Championship returns in the 1990s"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the world championship returns in the 1990s with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The World Championship returns in the 1990s» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "fuji",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Fuji Speedway",
+        "uk": "Фудзі"
+      },
+      "editorial_intro": {
+        "en": "The circuit beneath Mount Fuji hosted two famously rain-affected early Japanese Grands Prix.",
+        "uk": "Траса біля гори Фудзі приймала перші японські Гран-прі, відомі складною дощовою погодою."
+      },
+      "story_leads": [
+        {
+          "year": 1976,
+          "title": {
+            "en": "Hunt takes the title after Lauda withdraws",
+            "uk": "Гант здобуває титул після відмови Лауди від старту"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1976 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1976 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first Japanese World Championship race",
+            "uk": "The first Japanese World Championship race"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first japanese world championship race with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first Japanese World Championship race» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The long banked corner of the old layout",
+            "uk": "The long banked corner of the old layout"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the long banked corner of the old layout with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The long banked corner of the old layout» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 1977 tragedy involving spectators",
+            "uk": "The 1977 tragedy involving spectators"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 1977 tragedy involving spectators with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 1977 tragedy involving spectators» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Formula 1 returns to Fuji in 2007",
+            "uk": "Formula 1 returns to Fuji in 2007"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of formula 1 returns to fuji in 2007 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Formula 1 returns to Fuji in 2007» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Circuit Paul Ricard",
+        "uk": "Поль-Рікар"
+      },
+      "editorial_intro": {
+        "en": "Known for its distinctive coloured run-off and the long Mistral Straight, the circuit spans several French Grand Prix eras.",
+        "uk": "Автодром із кольоровими зонами вильоту та довгою прямою Mistral пережив кілька епох Гран-прі Франції."
+      },
+      "story_leads": [
+        {
+          "year": 1990,
+          "title": {
+            "en": "Leyton House almost produces an upset",
+            "uk": "Leyton House ледь не творить сенсацію"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1990 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1990 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The first French Grand Prix at Paul Ricard",
+            "uk": "The first French Grand Prix at Paul Ricard"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the first french grand prix at paul ricard with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The first French Grand Prix at Paul Ricard» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Mistral Straight and its chicane",
+            "uk": "The Mistral Straight and its chicane"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the mistral straight and its chicane with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Mistral Straight and its chicane» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The circuit's test-track years",
+            "uk": "The circuit's test-track years"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the circuit's test-track years with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The circuit's test-track years» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The French Grand Prix returns in 2018",
+            "uk": "The French Grand Prix returns in 2018"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the french grand prix returns in 2018 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The French Grand Prix returns in 2018» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Circuit de Nevers Magny-Cours",
+        "uk": "Невер-Маньї-Кур"
+      },
+      "editorial_intro": {
+        "en": "The rural French circuit became a championship mainstay during the 1990s and 2000s.",
+        "uk": "Сільський французький автодром став постійним етапом чемпіонату у 1990-х та 2000-х."
+      },
+      "story_leads": [
+        {
+          "year": 2002,
+          "title": {
+            "en": "Schumacher secures the title in July",
+            "uk": "Шумахер забезпечує титул уже в липні"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2002 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2002 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the French Grand Prix moved from Paul Ricard",
+            "uk": "Why the French Grand Prix moved from Paul Ricard"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the french grand prix moved from paul ricard with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the French Grand Prix moved from Paul Ricard» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Corners named after other circuits",
+            "uk": "Corners named after other circuits"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of corners named after other circuits with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Corners named after other circuits» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Pit-stop strategy at Magny-Cours",
+            "uk": "Pit-stop strategy at Magny-Cours"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of pit-stop strategy at magny-cours with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Pit-stop strategy at Magny-Cours» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The last Grand Prix in 2008",
+            "uk": "The last Grand Prix in 2008"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the last grand prix in 2008 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The last Grand Prix in 2008» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "estoril",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Autódromo do Estoril",
+        "uk": "Ешторіл"
+      },
+      "editorial_intro": {
+        "en": "Portugal's coastal circuit hosted some defining early wins and high-stakes duels.",
+        "uk": "Португальська прибережна траса стала місцем кількох знакових перших перемог і напружених дуелей."
+      },
+      "story_leads": [
+        {
+          "year": 1985,
+          "title": {
+            "en": "Senna takes his first F1 win in the rain",
+            "uk": "Сенна здобуває першу перемогу під дощем"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1985 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1985 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Portugal's return to the World Championship",
+            "uk": "Portugal's return to the World Championship"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of portugal's return to the world championship with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Portugal's return to the World Championship» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The famous 1988 Senna-Prost squeeze",
+            "uk": "The famous 1988 Senna-Prost squeeze"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the famous 1988 senna-prost squeeze with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The famous 1988 Senna-Prost squeeze» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Villeneuve's long outside pass in 1996",
+            "uk": "Villeneuve's long outside pass in 1996"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of villeneuve's long outside pass in 1996 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Villeneuve's long outside pass in 1996» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How Estoril's corners changed",
+            "uk": "How Estoril's corners changed"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how estoril's corners changed with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How Estoril's corners changed» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "portimao",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Autódromo Internacional do Algarve",
+        "uk": "Алгарве — Портіман"
+      },
+      "editorial_intro": {
+        "en": "Portugal's modern roller-coaster circuit briefly returned the country's Grand Prix to Formula 1.",
+        "uk": "Сучасна хвиляста траса в Портімані ненадовго повернула Гран-прі Португалії до Формули-1."
+      },
+      "story_leads": [
+        {
+          "year": 2020,
+          "title": {
+            "en": "Hamilton becomes F1's all-time wins leader",
+            "uk": "Гамільтон стає рекордсменом за перемогами"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2020 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2020 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How Portugal returned in 2020",
+            "uk": "How Portugal returned in 2020"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how portugal returned in 2020 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How Portugal returned in 2020» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Elevation changes and blind crests",
+            "uk": "Elevation changes and blind crests"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of elevation changes and blind crests with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Elevation changes and blind crests» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The slippery first race weekend",
+            "uk": "The slippery first race weekend"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the slippery first race weekend with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The slippery first race weekend» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "An unusual 2021 race calendar",
+            "uk": "An unusual 2021 race calendar"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of an unusual 2021 race calendar with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «An unusual 2021 race calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "mugello",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Mugello Circuit",
+        "uk": "Муджелло"
+      },
+      "editorial_intro": {
+        "en": "Usually associated with motorcycle racing, Mugello hosted a one-off Formula 1 Grand Prix in 2020.",
+        "uk": "Муджелло зазвичай асоціюється з мотоперегонами, але у 2020 році прийняло Гран-прі Формули-1."
+      },
+      "story_leads": [
+        {
+          "year": 2020,
+          "title": {
+            "en": "Hamilton wins a race with two red flags",
+            "uk": "Гамільтон виграє гонку з двома червоними прапорами"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2020 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2020 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why Ferrari's 1000th Grand Prix came to Mugello",
+            "uk": "Why Ferrari's 1000th Grand Prix came to Mugello"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why ferrari's 1000th grand prix came to mugello with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why Ferrari's 1000th Grand Prix came to Mugello» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The high-speed Arrabbiata corners",
+            "uk": "The high-speed Arrabbiata corners"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the high-speed arrabbiata corners with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The high-speed Arrabbiata corners» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The safety-car restart pile-up",
+            "uk": "The safety-car restart pile-up"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the safety-car restart pile-up with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The safety-car restart pile-up» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "One-off races during the pandemic calendar",
+            "uk": "One-off races during the pandemic calendar"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of one-off races during the pandemic calendar with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «One-off races during the pandemic calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Donington Park",
+        "uk": "Донінгтон-Парк"
+      },
+      "editorial_intro": {
+        "en": "One Formula 1 championship weekend gave this English park circuit an enduring place in racing history.",
+        "uk": "Один чемпіонатний вікенд Формули-1 забезпечив англійській парковій трасі місце в історії."
+      },
+      "story_leads": [
+        {
+          "year": 1993,
+          "title": {
+            "en": "Senna's opening lap in the rain",
+            "uk": "Перший дощовий круг Сенни"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1993 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1993 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 1993 European Grand Prix",
+            "uk": "The 1993 European Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 1993 european grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 1993 European Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Old Hairpin and Craner Curves",
+            "uk": "The Old Hairpin and Craner Curves"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the old hairpin and craner curves with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Old Hairpin and Craner Curves» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "How weather and tyre choices transformed the race",
+            "uk": "How weather and tyre choices transformed the race"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of how weather and tyre choices transformed the race with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «How weather and tyre choices transformed the race» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the venue did not become a permanent F1 home",
+            "uk": "Why the venue did not become a permanent F1 home"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the venue did not become a permanent f1 home with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the venue did not become a permanent F1 home» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Valencia Street Circuit",
+        "uk": "Міська траса Валенсії"
+      },
+      "editorial_intro": {
+        "en": "A waterfront street race brought Formula 1 to Valencia for five European Grands Prix.",
+        "uk": "Міська траса біля моря приймала п’ять Гран-прі Європи у Валенсії."
+      },
+      "story_leads": [
+        {
+          "year": 2012,
+          "title": {
+            "en": "Alonso wins after starting eleventh",
+            "uk": "Алонсо перемагає після старту одинадцятим"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2012 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2012 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The harbour bridges and street layout",
+            "uk": "The harbour bridges and street layout"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the harbour bridges and street layout with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The harbour bridges and street layout» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The circuit debuts in 2008",
+            "uk": "The circuit debuts in 2008"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the circuit debuts in 2008 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The circuit debuts in 2008» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 2010 Webber crash",
+            "uk": "The 2010 Webber crash"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 2010 webber crash with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 2010 Webber crash» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the race ended after 2012",
+            "uk": "Why the race ended after 2012"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the race ended after 2012 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the race ended after 2012» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Korea International Circuit",
+        "uk": "Міжнародний автодром Кореї"
+      },
+      "editorial_intro": {
+        "en": "Yeongam's purpose-built track held four Korean Grands Prix before leaving the calendar.",
+        "uk": "Спеціально збудована траса в Йонамі прийняла чотири Гран-прі Кореї, після чого зникла з календаря."
+      },
+      "story_leads": [
+        {
+          "year": 2010,
+          "title": {
+            "en": "Alonso wins a rain-delayed debut",
+            "uk": "Алонсо перемагає в дебюті під дощем"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2010 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2010 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Building the circuit at Yeongam",
+            "uk": "Building the circuit at Yeongam"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of building the circuit at yeongam with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Building the circuit at Yeongam» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The rain-interrupted first race",
+            "uk": "The rain-interrupted first race"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the rain-interrupted first race with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The rain-interrupted first race» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The blend of long straights and tight corners",
+            "uk": "The blend of long straights and tight corners"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the blend of long straights and tight corners with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The blend of long straights and tight corners» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the Korean Grand Prix disappeared",
+            "uk": "Why the Korean Grand Prix disappeared"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the korean grand prix disappeared with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the Korean Grand Prix disappeared» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "buddh",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Buddh International Circuit",
+        "uk": "Міжнародний автодром Будд"
+      },
+      "editorial_intro": {
+        "en": "India's Grand Prix ran at this sweeping circuit near Delhi for three seasons.",
+        "uk": "Гран-прі Індії проводили на широкій трасі неподалік Делі протягом трьох сезонів."
+      },
+      "story_leads": [
+        {
+          "year": 2013,
+          "title": {
+            "en": "Vettel seals his fourth title",
+            "uk": "Феттель забезпечує четверте чемпіонство"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2013 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2013 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 2011 Indian Grand Prix debut",
+            "uk": "The 2011 Indian Grand Prix debut"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 2011 indian grand prix debut with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 2011 Indian Grand Prix debut» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The long back straight and elevation",
+            "uk": "The long back straight and elevation"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the long back straight and elevation with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The long back straight and elevation» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 2012 Vettel-Alonso title race",
+            "uk": "The 2012 Vettel-Alonso title race"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 2012 vettel-alonso title race with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 2012 Vettel-Alonso title race» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the race stopped after 2013",
+            "uk": "Why the race stopped after 2013"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the race stopped after 2013 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the race stopped after 2013» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "sochi",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Sochi Autodrom",
+        "uk": "Сочі Автодром"
+      },
+      "editorial_intro": {
+        "en": "A Formula 1 street-style track was built around the former Olympic Park, hosting the Russian Grand Prix from 2014 to 2021.",
+        "uk": "Трасу Формули-1 проклали навколо колишнього Олімпійського парку; Гран-прі Росії проводили тут із 2014 до 2021 року."
+      },
+      "story_leads": [
+        {
+          "year": 2021,
+          "title": {
+            "en": "Norris loses a first win as rain arrives",
+            "uk": "Норріс утрачає першу перемогу через дощ"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 2021 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 2021 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The inaugural Russian Grand Prix",
+            "uk": "The inaugural Russian Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the inaugural russian grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The inaugural Russian Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Olympic Park layout",
+            "uk": "The Olympic Park layout"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the olympic park layout with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Olympic Park layout» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Team strategy in late-race rain",
+            "uk": "Team strategy in late-race rain"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of team strategy in late-race rain with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Team strategy in late-race rain» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The Russian Grand Prix's removal from the calendar",
+            "uk": "The Russian Grand Prix's removal from the calendar"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the russian grand prix's removal from the calendar with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The Russian Grand Prix's removal from the calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Phoenix Street Circuit",
+        "uk": "Міська траса Фінікса"
+      },
+      "editorial_intro": {
+        "en": "For three seasons the United States Grand Prix visited downtown Phoenix.",
+        "uk": "Протягом трьох сезонів Гран-прі США проходив вулицями центру Фінікса."
+      },
+      "story_leads": [
+        {
+          "year": 1990,
+          "title": {
+            "en": "Alesi challenges Senna",
+            "uk": "Алезі кидає виклик Сенні"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1990 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1990 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why Formula 1 moved from Detroit to Phoenix",
+            "uk": "Why Formula 1 moved from Detroit to Phoenix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why formula 1 moved from detroit to phoenix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why Formula 1 moved from Detroit to Phoenix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The challenges of extreme desert heat",
+            "uk": "The challenges of extreme desert heat"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the challenges of extreme desert heat with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The challenges of extreme desert heat» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The unusual 1989 race distance",
+            "uk": "The unusual 1989 race distance"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the unusual 1989 race distance with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The unusual 1989 race distance» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The end of the Phoenix experiment",
+            "uk": "The end of the Phoenix experiment"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the end of the phoenix experiment with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The end of the Phoenix experiment» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Detroit Street Circuit",
+        "uk": "Міська траса Детройта"
+      },
+      "editorial_intro": {
+        "en": "Bumpy downtown streets hosted Formula 1 in Detroit during the 1980s.",
+        "uk": "Нерівні міські вулиці Детройта приймали Формулу-1 у 1980-х."
+      },
+      "story_leads": [
+        {
+          "year": 1982,
+          "title": {
+            "en": "Watson wins from seventeenth",
+            "uk": "Вотсон перемагає із сімнадцятого місця"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1982 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1982 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The debut Detroit Grand Prix",
+            "uk": "The debut Detroit Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the debut detroit grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The debut Detroit Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The slowest and roughest street sections",
+            "uk": "The slowest and roughest street sections"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the slowest and roughest street sections with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The slowest and roughest street sections» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Senna's Detroit victories",
+            "uk": "Senna's Detroit victories"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of senna's detroit victories with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Senna's Detroit victories» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Why the race moved to Phoenix",
+            "uk": "Why the race moved to Phoenix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of why the race moved to phoenix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Why the race moved to Phoenix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "canonical_f1db_id": null,
+      "display_name": {
+        "en": "Long Beach Street Circuit",
+        "uk": "Міська траса Лонг-Біч"
+      },
+      "editorial_intro": {
+        "en": "Formula 1's California street-racing chapter gave Long Beach eight Grands Prix.",
+        "uk": "Каліфорнійська міська траса Лонг-Біч прийняла вісім Гран-прі Формули-1."
+      },
+      "story_leads": [
+        {
+          "year": 1983,
+          "title": {
+            "en": "Watson wins from twenty-second",
+            "uk": "Вотсон перемагає з двадцять другого місця"
+          },
+          "editorial_direction": {
+            "en": "Investigate the 1983 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
+            "uk": "Дослідити результат Гран-прі 1983 року, як розвивалися вирішальні події та що це змінило для учасників."
+          },
+          "sources": [],
+          "status": "unverified_event_anchor"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The 1976 inaugural championship Grand Prix",
+            "uk": "The 1976 inaugural championship Grand Prix"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the 1976 inaugural championship grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The 1976 inaugural championship Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "Mario Andretti's home success in 1977",
+            "uk": "Mario Andretti's home success in 1977"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of mario andretti's home success in 1977 with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «Mario Andretti's home success in 1977» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "A winding route down to the harbour",
+            "uk": "A winding route down to the harbour"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of a winding route down to the harbour with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «A winding route down to the harbour» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        },
+        {
+          "year": null,
+          "title": {
+            "en": "The switch to IndyCar racing",
+            "uk": "The switch to IndyCar racing"
+          },
+          "editorial_direction": {
+            "en": "Research archival coverage of the switch to indycar racing with primary sources and check whether it belongs to the circuit's most important stories.",
+            "uk": "Перевірити архівні джерела за темою «The switch to IndyCar racing» та визначити, чи вона справді належить до найважливіших історій траси."
+          },
+          "sources": [],
+          "status": "research_question_not_historical_article"
+        }
+      ],
+      "turn_names": [],
+      "configuration_id": null,
+      "gaps": [
+        "Official exact F1DB identity",
+        "Five complete source-checked bilingual historic narratives",
+        "Official circuit layout and turn naming per era",
+        "Literary and historical editorial review"
+      ],
+      "publication": "unpublished"
+    }
+  ]
+}
