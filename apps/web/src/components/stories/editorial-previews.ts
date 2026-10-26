@@ -1,6 +1,5 @@
 /** Curated editorial previews only. Full research manuscripts are not approved for publication. */
-export const editorialStoryPreviews = 
-[
+export const editorialStoryPreviews = [
   {
     "slug": "lauda-hunt-1976",
     "year": "1976",
@@ -121,5 +120,4 @@ export const editorialStoryPreviews =
       "summary": "Honda залишила Формулу-1, але болід, над яким працювала команда, нікуди не зник. З’явилася Brawn GP, Баттон виграв шість із перших семи гонок, а далі почалося інше випробування — втримати перевагу, коли перемоги скінчилися. Так боротьба за майбутнє команди стала чемпіонським сезоном."
     }
   }
-]
- as const;
+] as const;
