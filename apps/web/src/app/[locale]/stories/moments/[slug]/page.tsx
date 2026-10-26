@@ -59,6 +59,29 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.lead}>{copy.summary}</p>
         {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
       </header>
+      <nav className={styles.editorialReadingPaths} aria-label={uk ? 'Перейти до розділу' : 'Jump to section'}>
+        <a className={styles.editorialReadingPrimary} href="#research-chapters">{uk ? 'Читати історію ↓' : 'Read the story ↓'}</a>
+        <a href="#story-milestones">{uk ? 'Ключові моменти' : 'Key moments'}</a>
+        <a href="#story-races">{uk ? 'Гонки та результати' : 'Races & results'}</a>
+      </nav>
+      {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+        <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
+        <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
+        <p className={styles.note}>{uk ? 'Матеріал доступний для ознайомлення, але ще не пройшов незалежної перевірки джерел. Не вважайте його остаточною публікацією.' : 'This manuscript is available to read but has not yet passed independent source verification. It is not a final publication.'}</p>
+        <div className={styles.editorialChapters}>
+          <nav className={styles.editorialChapterNav} aria-label={uk ? 'Розділи статті' : 'Article chapters'}>
+            {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`}><span aria-hidden="true">{String(index + 1).padStart(2, '0')} · </span>{chapter.heading}</a>)}
+          </nav>
+          <div className={styles.editorialProse}>
+            {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`}>
+              <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
+              <h3>{chapter.heading}</h3>
+              {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
+              {index < 3 && slug in editorialInterpretivePassages && <p className={styles.editorialInterpretation}>{editorialInterpretivePassages[slug as keyof typeof editorialInterpretivePassages][index][locale]}</p>}
+            </section>)}
+          </div>
+        </div>
+      </section>}
       {slug in editorialStoryContext && <section aria-label={uk ? 'Контекст історії' : 'Story context'} style={{ marginTop: 32, padding: '24px 28px', borderLeft: '4px solid var(--accent-ink)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
         <p className={styles.eyebrow}>{uk ? 'КОРОТКО ПРО ГОЛОВНЕ' : 'THE STORY AT A GLANCE'}</p>
         <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', marginBottom: 8 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].label}</h2>
@@ -128,24 +151,6 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ul>
         <p className={styles.note}>{uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.'}</p>
-      </section>}
-      {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
-        <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
-        <p className={styles.note}>{uk ? 'Матеріал доступний для ознайомлення, але ще не пройшов незалежної перевірки джерел. Не вважайте його остаточною публікацією.' : 'This manuscript is available to read but has not yet passed independent source verification. It is not a final publication.'}</p>
-        <div className={styles.editorialChapters}>
-          <nav className={styles.editorialChapterNav} aria-label={uk ? 'Розділи статті' : 'Article chapters'}>
-            {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`}><span aria-hidden="true">{String(index + 1).padStart(2, '0')} · </span>{chapter.heading}</a>)}
-          </nav>
-          <div className={styles.editorialProse}>
-            {chapters.map((chapter, index) => <section key={index} id={`chapter-${index + 1}`}>
-              <p className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {String(chapters.length).padStart(2, '0')}</p>
-              <h3>{chapter.heading}</h3>
-              {chapter.paragraphs.map((paragraph, p) => <p key={p}>{paragraph}</p>)}
-              {index < 3 && slug in editorialInterpretivePassages && <p className={styles.editorialInterpretation}>{editorialInterpretivePassages[slug as keyof typeof editorialInterpretivePassages][index][locale]}</p>}
-            </section>)}
-          </div>
-        </div>
       </section>}
       {slug in editorialReaderQuestions && <section aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ЗАПИТАННЯ ЧИТАЧІВ' : 'READER QUESTIONS'}</p>
