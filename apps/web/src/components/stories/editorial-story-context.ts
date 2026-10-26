@@ -1,0 +1,13 @@
+/** Context cards: interpretive summaries, not independently fact-checked race chronologies. */
+export const editorialStoryContext = {
+  "lauda-hunt-1976": { en: { label: "Nürburgring · Monza · Fuji", description: "A season turned by injury, recovery and a final decision in the rain." }, uk: { label: "Нюрбургринг · Монца · Фудзі", description: "Сезон, який змінили травма, повернення й останнє рішення під дощем." } },
+  "senna-prost-1988-89": { en: { label: "1988 · 1989", description: "Dominance inside one garage became a rivalry that outgrew it." }, uk: { label: "1988 · 1989", description: "Домінування в одному гаражі переросло в суперництво за його межами." } },
+  "villeneuve-arnoux-1979": { en: { label: "Dijon · 1979", description: "The winner crossed first; the duel behind him became the memory." }, uk: { label: "Діжон · 1979", description: "Переможець фінішував першим, а пам’ять зберегла дуель позаду." } },
+  "vettel-monza-2008": { en: { label: "Monza · Toro Rosso", description: "An unexpected pole and victory in the wet." }, uk: { label: "Монца · Toro Rosso", description: "Несподіваний поул і перемога під дощем." } },
+  "button-canada-2011": { en: { label: "Montréal · 2011", description: "A race repeatedly interrupted, decided at the very end." }, uk: { label: "Монреаль · 2011", description: "Гонка з численними зупинками, вирішена в самому кінці." } },
+  "perez-sakhir-2020": { en: { label: "Sakhir · 2020", description: "An opening-lap setback turned into a first Grand Prix victory." }, uk: { label: "Сахір · 2020", description: "Невдача на першому колі обернулася першою перемогою в Гран-прі." } },
+  "kubica-bmw-2008": { en: { label: "Canada · BMW Sauber", description: "One historic win briefly made the title race feel different." }, uk: { label: "Канада · BMW Sauber", description: "Одна історична перемога ненадовго змінила відчуття боротьби за титул." } },
+  "schumacher-ferrari-1996-2000": { en: { label: "1996 → 2000", description: "Five seasons between arrival and Ferrari's drivers' crown." }, uk: { label: "1996 → 2000", description: "П’ять сезонів між приходом і особистим титулом Ferrari." } },
+  "massa-2008": { en: { label: "Interlagos · 2008", description: "Two outcomes unfolded on the same final lap." }, uk: { label: "Інтерлагос · 2008", description: "Два результати визначилися на одному останньому колі." } },
+  "brawn-2009": { en: { label: "Winter 2008 → 2009", description: "A threatened team survived and won both championships." }, uk: { label: "Зима 2008 → 2009", description: "Команда на межі зникнення вижила й виграла обидва чемпіонати." } },
+} as const;
