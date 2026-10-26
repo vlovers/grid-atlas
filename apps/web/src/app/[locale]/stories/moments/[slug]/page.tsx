@@ -12,6 +12,7 @@ import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialInterpretivePassages } from '@/components/stories/editorial-interpretive-passages';
 import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
+import { editorialResultHighlights } from '@/components/stories/editorial-result-highlights';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
 import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import { editorialFactCheckPrompts } from '@/components/stories/editorial-fact-check-prompts';
@@ -98,6 +99,18 @@ export default async function EditorialMoment({ params }: Props) {
         </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
       </section>
+      {slug in editorialResultHighlights && <section aria-labelledby="result-highlights" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
+        <p className={styles.eyebrow}>{uk ? 'ЦИФРИ З АРХІВУ' : 'FROM THE RACE CLASSIFICATION'}</p>
+        <h2 id="result-highlights">{uk ? 'Що показує протокол' : 'What the result sheet shows'}</h2>
+        <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))', gap: 12, padding: 0, listStyle: 'none' }}>
+          {editorialResultHighlights[slug as keyof typeof editorialResultHighlights].map(item => <li key={item.id} style={{ padding: 16, borderTop: '2px solid var(--accent-ink)' }}>
+            <span className={styles.eyebrow}>{item.metric}</span>
+            <p style={{ margin: '8px 0' }}>{item[locale]}</p>
+            <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{uk ? 'Протокол F1 ↗' : 'F1 classification ↗'}</a>
+          </li>)}
+        </ul>
+        <p className={styles.note}>{uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.'}</p>
+      </section>}
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
