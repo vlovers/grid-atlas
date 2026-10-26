@@ -44,3 +44,21 @@ test('fifteen distinct research-only careers have readable bilingual entry scene
   assert.equal(count, 15);
   assert.equal(chapters.publication_status, 'unpublished');
 });
+
+test('fifteen independent careers have bilingual middle-act context and preserved research status', () => {
+  const chapters = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  const longform = new Set(read('docs/editorial/biography-expansion-batch-2/manifest.json').drivers);
+  const independent = chapters.stories.filter(story => !longform.has(story.driver_id));
+  assert.equal(independent.length, 15);
+  for (const story of independent) {
+    assert.ok(story.chapters.length >= 2, story.driver_id + ' lacks a middle act');
+    const middle = story.chapters[1];
+    for (const locale of ['en', 'uk']) {
+      const paragraphs = middle[locale].body.split(/\n\n/).filter(Boolean);
+      assert.ok(paragraphs.length >= 2, story.driver_id + '/' + locale + ' needs distinct context');
+      assert.ok(paragraphs.at(-1).length >= 200, story.driver_id + '/' + locale + ' needs substantial context');
+    }
+    assert.ok(middle.claim_ids.length, story.driver_id + ' loses research linkage');
+  }
+  assert.equal(chapters.publication_status, 'unpublished');
+});
