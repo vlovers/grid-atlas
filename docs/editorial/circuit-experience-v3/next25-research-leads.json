@@ -587,12 +587,15 @@
             "en": "Investigate the 2005 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 2005 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Only six cars started the 2005 United States Grand Prix at Indianapolis after the Michelin-equipped teams withdrew on safety grounds. Michael Schumacher won, but the lasting story was the failure to deliver the expected race.",
             "uk": "Лише шість болідів стартували на Гран-прі США 2005 року в Індіанаполісі після відмови команд на шинах Michelin через питання безпеки. Переміг Міхаель Шумахер, але найгучнішою подією став сам зрив нормальної гонки."
-          }
+          },
+          "verification_scope": "six classified starters and winner"
         },
         {
           "year": null,
@@ -1415,12 +1418,15 @@
             "en": "Investigate the 2020 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 2020 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Lewis Hamilton won the 2020 Portuguese Grand Prix at Portimão, moving past Michael Schumacher's then-record 91 Formula 1 wins. His record-breaking victory came at a venue that Formula 1 had reached because of a disrupted pandemic calendar.",
             "uk": "Льюїс Гамільтон виграв Гран-прі Португалії 2020 року в Портімані та перевершив рекорд Міхаеля Шумахера в 91 перемогу. Рекорд встановили на трасі, що з’явилася в календарі Формули-1 через пандемічні зміни."
-          }
+          },
+          "verification_scope": "Hamilton record-breaking victory number 92"
         },
         {
           "year": null,
@@ -1599,12 +1605,15 @@
             "en": "Investigate the 1993 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 1993 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Ayrton Senna made a celebrated opening lap in wet conditions at the 1993 European Grand Prix at Donington, overtaking several rivals. He went on to win, turning a one-off Formula 1 visit into a classic race.",
             "uk": "Айртон Сенна провів знаменитий перший круг дощового Гран-прі Європи 1993 року в Донінгтоні, обігнавши кількох суперників. Згодом він переміг, і єдиний візит Формули-1 перетворився на класичну гонку."
-          }
+          },
+          "verification_scope": "1993 European GP race classification; opening lap needs separate historic narrative verification"
         },
         {
           "year": null,
@@ -2243,12 +2252,15 @@
             "en": "Investigate the 1983 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 1983 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "John Watson started twenty-second and won the 1983 United States Grand Prix West at Long Beach, with McLaren teammate Niki Lauda second. It remains one of the most remarkable wins from the back of a Formula 1 grid.",
             "uk": "Джон Вотсон стартував двадцять другим і виграв Гран-прі США-Захід 1983 року в Лонг-Біч, а напарник по McLaren Нікі Лауда став другим. Це одна з найвидатніших перемог після старту з глибини пелотону."
-          }
+          },
+          "verification_scope": "Watson grid position 22, race win, Lauda runner-up"
         },
         {
           "year": null,
