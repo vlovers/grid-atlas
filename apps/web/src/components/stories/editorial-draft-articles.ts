@@ -50,7 +50,7 @@ export const editorialDraftArticles = {
         "heading": "Повернення ще не було відповіддю",
         "paragraphs": [
           "Після пожежі на Нюрбургринзі повернення Лауди в Монці здавалося неймовірним. Він пропустив лише два Гран-прі. Тим часом Гант скоротив відставання, і боротьбу за титул уже ніхто не міг завершити достроково.",
-          "Та повернутися до перегонів і погодитися на будь-який ризик — різні речі. На Фудзі дощ змусив Лауду зробити цей вибір на очах у всіх."
+          "Та повернутися до перегонів і погодитися на будь-який ризик — різні речі. На Фудзі дощ змусив Лауду зробити цей вибір на очах у всіх. Гант тим часом продовжував набирати очки. Одне повернення Лауди до кокпіта ще не могло відповісти на всі запитання, які постануть перед ним до завершення сезону."
         ]
       },
       {
@@ -89,7 +89,7 @@ export const editorialDraftArticles = {
         "heading": "A scoreboard with a hidden catch",
         "paragraphs": [
           "Imagine watching Prost score more points across 1988, then seeing Senna crowned champion. It was not a mistake: only each driver's best eleven results counted towards the title.",
-          "Senna finished on 90 counted points, Prost on 87. For two teammates who had spent the year fighting for every advantage, the distinction between all points scored and points that counted became decisive."
+          "Senna finished on 90 counted points, Prost on 87. For two teammates who had spent the year fighting for every advantage, the distinction between all points scored and points that counted became decisive. The rule did not erase Prost's finishes; it determined which finishes counted toward the final standings. McLaren's near-total dominance left the teammates battling each other for the greatest prize."
         ]
       },
       {
@@ -202,7 +202,7 @@ export const editorialDraftArticles = {
         "heading": "Переможець уже був попереду",
         "paragraphs": [
           "Жабуй їхав до історичної перемоги Renault. Вільньов і Арну вже не могли його наздогнати. Вони боролися не за перше, а за друге місце — і жоден не хотів залишатися третім.",
-          "Останні кола перетворилися на гонку всередині гонки. Два боліди знову й знову опинялися колесо в колесо, і боротьба позаду лідера стала кадром, який пам'ятають десятиліттями."
+          "Останні кола перетворилися на гонку всередині гонки. Два боліди знову й знову опинялися колесо в колесо, і боротьба позаду лідера стала кадром, який пам'ятають десятиліттями. А поки Жабуй наближався до перемоги, боротьба за позицію позаду нього ставала дедалі гострішою."
         ]
       },
       {
@@ -278,7 +278,7 @@ export const editorialDraftArticles = {
         "heading": "Коли сейфті-кар звернув убік",
         "paragraphs": [
           "Поул під дощем став несподіванкою. Але неділя вимагала іншого: Феттелю довелося лідирувати, коли весь пелотон був готовий атакувати. Через негоду гонка почалася за сейфті-каром.",
-          "Коли боротьба почалася, Toro Rosso залишилася попереду. Поул відчинив двері, але Феттелю ще треба було втримати перевагу під дощем, під час пітстопів і до самого прапора."
+          "Коли боротьба почалася, Toro Rosso залишилася попереду. Поул відчинив двері, але Феттелю ще треба було втримати перевагу під дощем, під час пітстопів і до самого прапора. Від несподіваної суботньої швидкості до справжнього недільного результату залишалася ціла гонка."
         ]
       },
       {
@@ -674,17 +674,17 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "A car without a future",
+        "heading": "A winter without certainty",
         "paragraphs": [
-          "The strange part of Brawn GP's beginning is that the 2009 car already existed as a project. Honda had invested in its development, then decided to leave Formula 1. The question was no longer just whether the car would be fast. Would the people building it have a team to race for?",
-          "Ross Brawn and Nick Fry worked to save the operation. A Mercedes engine had to be fitted to the chassis. When the cars finally reached the grid, they carried the work of people who had spent the winter unsure there would even be a season."
+          "The chassis that would become the Brawn BGP 001 began as a Honda project. When Honda withdrew, the workforce faced a much more immediate question than aerodynamic performance: would the team survive long enough to enter the season? The engineering programme had momentum, but its future was suddenly in doubt.",
+          "The solution required a change of power unit, new ownership and a race against the calendar. A Mercedes engine was adapted to the car. Only once the entry survived could anyone discover whether the months of design work might pay off on the circuit. The suspense of that winter did not come from a stopwatch; it came from whether the garage would open at all."
         ]
       },
       {
-        "heading": "The season turned after Turkey",
+        "heading": "A lead worth protecting",
         "paragraphs": [
-          "Button's sixth victory in the first seven races came in Turkey. At that point the early burst looked almost unstoppable. But he did not win another Grand Prix that season, and his growing points total had to carry more of the championship burden.",
-          "That changed the suspense. The question was no longer how many races the white cars might win in a row. It was how much of the advantage they could preserve while the other teams improved. A brilliant beginning had become a test of endurance."
+          "Turkey was Button's sixth victory in seven races. After that burst, the results began to tell a less comfortable story: he would not win another Grand Prix in 2009. Rival cars were finding speed, leaving the team to rely on the advantage already earned.",
+          "For the drivers this was a different contest. Button needed points across difficult weekends to protect his lead, rather than another procession of wins. Barrichello could still contribute strongly, but the question hanging over the garage had changed from how far they might pull away to whether the remaining cushion would be enough."
         ]
       },
       {
