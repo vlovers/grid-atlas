@@ -108,6 +108,7 @@ export default async function EditorialMoment({ params }: Props) {
             <strong>{race.grandPrix[locale]}</strong><br />
             {race.winner[locale]} · {race.constructor}<br />
             <small>{race.laps} {uk ? 'кіл' : 'laps'} · {race.winningTime}</small>
+            <p style={{ marginTop: 8, maxWidth: '38ch' }}>{race.editorialMoment[locale]}</p>
           </li>)}
         </ol>
         <a href={slug === 'massa-2008' ? 'https://www.formula1.com/en/results/2008/races' : 'https://www.formula1.com/en/results/2009/races'} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело: офіційні результати F1 ↗' : 'Source: official F1 results ↗'}</a>
