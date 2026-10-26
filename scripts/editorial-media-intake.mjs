@@ -44,6 +44,8 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
         throw new Error('License requires manual review: ' + license);
       }
       const imageUrl = info.thumburl ?? info.url;
+      const sourceHost = new URL(info.url).hostname;
+      if (sourceHost !== 'upload.wikimedia.org') throw new Error('Unexpected original image host: ' + sourceHost);
       const imageHost = new URL(imageUrl).hostname;
       if (imageHost !== 'upload.wikimedia.org') throw new Error('Unexpected image host: ' + imageHost);
       const imageResponse = await fetch(imageUrl, { signal: AbortSignal.timeout(60000) });
