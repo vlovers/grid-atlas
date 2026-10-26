@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-monaco-reader-first-v1",
+  "status": "research_only",
+  "publication": "blocked_pending_independent_review",
+  "circuit_id": "monaco",
+  "configuration_scope": "modern numbered Monaco Grand Prix configuration, names from Formula1.com June 2026 explainer, NOT applicable to every historical Monaco configuration",
+  "configuration_id": "requires_exact_F1DB_configuration_reconciliation",
+  "cautions": [
+    "Formula1.com introduction says 18 corners but enumerates Turn 19 and states Turn 17 has no nickname; distinguish numbered bends from named groups.",
+    "Do not assert FIA layout ID or coordinate mapping until official diagram and F1DB configuration matching.",
+    "No images, F1 graphics or FIA diagrams are licensed for reproduction by this source research."
+  ],
+  "turns": [
+    {
+      "number": 1,
+      "name": "Sainte Dévote",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The first corner is named for Monaco's patron saint and the small chapel close to the barriers.",
+        "uk": "Перший поворот названо на честь покровительки Монако та невеликої каплиці поруч із трасою."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 2,
+      "name": "Beau Rivage",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The road rises toward the crest; its name means beautiful shore, recalling the Mediterranean setting.",
+        "uk": "Дорога здіймається вгору; назва означає «гарний берег» і нагадує про близькість Середземного моря."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 3,
+      "name": "Massenet",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "This sweeping left turn takes its name from the French composer Jules Massenet, honoured by a nearby monument.",
+        "uk": "Цей довгий лівий поворот названо на честь французького композитора Жуля Массне, пам’ятник якому стоїть неподалік."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 4,
+      "name": "Casino Square",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "Drivers pass the famous Monte-Carlo Casino while concentrating on one of the city's most recognisable corners.",
+        "uk": "Боліди минають знамените казино Монте-Карло, а гонщикам потрібно втримати траєкторію на одному з найвідоміших поворотів міста."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 5,
+      "name": "Mirabeau Haute",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The upper Mirabeau corner preserves the name of a former hotel, now replaced by apartments.",
+        "uk": "Верхній Мірабо зберіг назву колишнього готелю, на місці якого тепер житловий будинок."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 6,
+      "name": "Fairmont Hairpin",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "A very slow hairpin whose names have changed with the neighbourhood: Station, Loews, Grand Hotel and Fairmont.",
+        "uk": "Дуже повільна шпилька, назва якої змінювалася разом із будівлями поруч: Station, Loews, Grand Hotel, Fairmont."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 7,
+      "name": "Mirabeau Bas",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The lower Mirabeau is named for the same former hotel as Turn 5, but sits farther downhill.",
+        "uk": "Нижній Мірабо названо на честь того самого колишнього готелю, що й п’ятий поворот, але розташований нижче."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 8,
+      "name": "Portier",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The right-hander before the tunnel is named after the Portier district. Senna crashed here while leading in 1988.",
+        "uk": "Правий поворот перед тунелем названо на честь району Портьє. Саме тут Сенна розбив машину, лідируючи у 1988 році."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 9,
+      "name": "Tunnel",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "A gradual right bend inside the tunnel; the sudden changes between daylight and darkness make this section distinctive.",
+        "uk": "Плавний правий вигин усередині тунелю. Різкий перехід зі світла в темряву й назад робить цю ділянку особливою."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 10,
+      "name": "Nouvelle Chicane — entry",
+      "has_distinct_name": true,
+      "shared_segment": "nouvelle-chicane",
+      "story": {
+        "en": "The first part of the harbour chicane follows the tunnel, where cars brake hard after accelerating underground.",
+        "uk": "Перша частина шикани біля гавані починається після тунелю: тут боліди різко гальмують після швидкої ділянки."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 11,
+      "name": "Nouvelle Chicane — exit",
+      "has_distinct_name": true,
+      "shared_segment": "nouvelle-chicane",
+      "story": {
+        "en": "The second part completes the harbour chicane, formerly called Chicane du Port and altered in 1986.",
+        "uk": "Друга частина завершує шикану біля порту, яку раніше називали Chicane du Port і змінили у 1986 році."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 12,
+      "name": "Tabac",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The fast left-hand turn gets its name from the tobacco shop beside the circuit.",
+        "uk": "Швидкий лівий поворот отримав назву від тютюнової крамниці поруч із трасою."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 13,
+      "name": "Swimming Pool — first chicane entry",
+      "has_distinct_name": true,
+      "shared_segment": "swimming-pool",
+      "story": {
+        "en": "The Swimming Pool section is a pair of rapid chicanes built around the Rainier III Nautical Stadium.",
+        "uk": "Секція басейну — дві швидкі шикани біля водного стадіону імені Реньє III."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 14,
+      "name": "Swimming Pool — first chicane exit",
+      "has_distinct_name": true,
+      "shared_segment": "swimming-pool",
+      "story": {
+        "en": "Drivers change direction sharply in the first Swimming Pool chicane, with barriers close on both sides.",
+        "uk": "У першій шикані біля басейну гонщики різко змінюють напрямок, а бар’єри стоять майже впритул."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 15,
+      "name": "Swimming Pool — second chicane entry",
+      "has_distinct_name": true,
+      "shared_segment": "swimming-pool",
+      "story": {
+        "en": "Another quick change of direction begins the second Swimming Pool chicane.",
+        "uk": "Другу шикану біля басейну відкриває ще одна швидка зміна напрямку."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 16,
+      "name": "Swimming Pool — second chicane exit",
+      "has_distinct_name": true,
+      "shared_segment": "swimming-pool",
+      "story": {
+        "en": "The Swimming Pool sequence ends after four numbered bends; their names are usually shared rather than separate.",
+        "uk": "Секція басейну закінчується після чотирьох пронумерованих вигинів, які зазвичай називають спільною назвою."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 17,
+      "name": null,
+      "has_distinct_name": false,
+      "shared_segment": null,
+      "story": {
+        "en": "A short bend after the Swimming Pool section has a number on modern maps but no widely established individual name.",
+        "uk": "Короткий вигин після секції басейну має номер на сучасних схемах, але не має загальновизнаної окремої назви."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 18,
+      "name": "La Rascasse",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The penultimate hairpin recalls the nearby bar, itself named after a Mediterranean fish.",
+        "uk": "Передостання шпилька дістала назву від сусіднього бару, названого на честь середземноморської риби."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    },
+    {
+      "number": 19,
+      "name": "Antony Noghès",
+      "has_distinct_name": true,
+      "shared_segment": null,
+      "story": {
+        "en": "The final corner honours Antony Noghès, organiser of the first Monaco Grand Prix in 1929.",
+        "uk": "Останній поворот названо на честь Антоні Ногеса, організатора першого Гран-прі Монако 1929 року."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "status": "source_checked_research_requires_layout_match"
+    }
+  ],
+  "intro": {
+    "en": "Monaco was racing long before the Formula 1 World Championship. Its most famous corners are named not after abstract geometries but after a chapel, a casino, hotels and a harbour. To understand a lap here is to follow a city that temporarily becomes a race track.",
+    "uk": "Монако приймало перегони задовго до появи чемпіонату світу Формули-1. Його найвідоміші повороти названі не за формою, а на честь каплиці, казино, готелів і гавані. Коло тут — це подорож містом, яке на кілька днів стає гоночною трасою."
+  },
+  "moments": [
+    {
+      "id": "monaco-1929",
+      "year": 1929,
+      "title": {
+        "en": "A race through the city",
+        "uk": "Гонка вулицями міста"
+      },
+      "narrative": {
+        "en": "The Monaco Grand Prix began in 1929, before the Formula 1 World Championship existed. Antony Noghès brought racing to streets normally used by the principality's residents. That is still the defining difference: Monaco is not a permanent circuit set apart from everyday life. Its corners borrow their names from chapels, hotels, shops and neighbourhoods.",
+        "uk": "Гран-прі Монако з’явився 1929 року — задовго до створення чемпіонату світу Формули-1. Антоні Ногес привів перегони на вулиці, якими мешканці князівства користуються щодня. У цьому й досі головна особливість Монако: траса не відділена від міського життя. Повороти названі на честь каплиці, готелів, крамниць і районів."
+      },
+      "sources": [
+        "https://www.formula1.com/en/racing/2024/monaco",
+        "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-1982",
+      "year": 1982,
+      "title": {
+        "en": "The lead changed hands in a few frantic laps",
+        "uk": "Фінал, у якому ніхто не втримував лідерство"
+      },
+      "narrative": {
+        "en": "Alain Prost appeared to be heading for victory until he crashed late in the race. Riccardo Patrese then spun and seemed to have lost his chance, while other contenders struggled to reach the finish. Patrese got going again and emerged as the winner of one of Monaco's most improbable finishes. The official classification even lists Pironi and de Cesaris behind him despite neither reaching the flag.",
+        "uk": "Ален Прост, здавалося, прямував до перемоги, але наприкінці гонки розбив машину. Ріккардо Патрезе теж розвернувся й начебто втратив шанс, а інші претенденти не могли дістатися фінішу без проблем. Патрезе повернувся в гонку й став переможцем одного з найнеймовірніших фіналів Монако. В офіційній класифікації позаду нього опинилися навіть Піроні та де Чезаріс, які не дісталися картатого прапора."
+      },
+      "sources": [
+        "https://www.formula1.com/en/results/1982/races/442/monaco/race-result",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-monaco-grand-prix.51Ff57VHj3CwgP3lwudulT"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-1984",
+      "year": 1984,
+      "title": {
+        "en": "Senna closes in through the rain",
+        "uk": "Сенна наздоганяє лідера під дощем"
+      },
+      "narrative": {
+        "en": "Rain turned the race into a test of visibility and control. Driving a Toleman, Ayrton Senna started thirteenth and advanced toward Alain Prost in the lead. The race was stopped after 31 laps; Prost was declared the winner and Senna second. The result is less striking than the scene: a young driver in a modest car closing on the established leader while the streets became increasingly treacherous.",
+        "uk": "Дощ перетворив гонку на випробування видимості й контролю. За кермом Toleman Айртон Сенна стартував тринадцятим і поступово наближався до лідера Алена Проста. Гонку зупинили після 31 кола; переможцем оголосили Проста, а Сенна став другим. Найсильніше вражає не підсумкова таблиця, а сама сцена: молодий гонщик на скромній машині наздоганяє фаворита на дедалі небезпечніших мокрих вулицях."
+      },
+      "sources": [
+        "https://www.formula1.com/en/results/1984/races/471/monaco/race-result",
+        "https://www.formula1.com/en/latest/article/what-makes-the-monaco-grand-prix-special-and-why-you-should-see-it.2oXLTe7OTB8EUf0VWSi5qQ"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-1992",
+      "year": 1992,
+      "title": {
+        "en": "Mansell cannot find a way past",
+        "uk": "Менселл не може знайти шлях повз Сенну"
+      },
+      "narrative": {
+        "en": "Nigel Mansell led most of the race in his Williams, but a late stop put Ayrton Senna ahead. Mansell returned on fresher tyres and attacked corner after corner. Senna defended without giving him room to complete a pass. Monaco's narrow streets became the decisive part of the contest: the faster car could follow, but could not take the lead.",
+        "uk": "Найджел Менселл лідирував більшу частину гонки на Williams, але пізній піт-стоп вивів Айртона Сенну вперед. Менселл повернувся на свіжіших шинах і атакував поворот за поворотом. Сенна захищав позицію, не даючи завершити обгін. Вузькі вулиці Монако вирішили суперництво: швидша машина могла наздогнати, але не змогла вийти вперед."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/the-top-8-monaco-masters-and-their-greatest-wins-in-the-principality.HXmBf1G8pmqkYLH6DqQMM.HXmBf1G8pmqkYLH6DqQMM"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-1996",
+      "year": 1996,
+      "title": {
+        "en": "Panis wins from fourteenth",
+        "uk": "Паніс перемагає з чотирнадцятого місця"
+      },
+      "narrative": {
+        "en": "Olivier Panis started fourteenth in a Ligier on a wet day when staying on the circuit was an achievement. He judged the change to slick tyres well while leading drivers crashed or retired. Panis worked his way forward and won the Grand Prix — the only victory of his Formula 1 career. Monaco is famous for how difficult it is to overtake, which makes this result especially remarkable.",
+        "uk": "Олів’є Паніс стартував чотирнадцятим на Ligier у дощовий день, коли вже залишитися на трасі було досягненням. Він вчасно перейшов на сухі шини, поки лідери розбивали машини або сходили. Паніс прорвався вперед і виграв Гран-прі — єдиний у кар’єрі Формули-1. Монако славиться складністю обгонів, тому ця перемога особливо незвичайна."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/olivier-panis-on-that-1996-monaco-grand-prix-victory.3ssD41qZZk0IiGkCdA6j0Z"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-2018",
+      "year": 2018,
+      "title": {
+        "en": "Ricciardo holds on with a damaged car",
+        "uk": "Ріккардо втримує перемогу на несправній машині"
+      },
+      "narrative": {
+        "en": "Daniel Ricciardo started from pole and led, but a failure in his Red Bull's MGU-K left him short of power for much of the race. On a circuit where position is so difficult to change, he kept Sebastian Vettel behind despite the mechanical disadvantage. The victory also mattered after a costly pit-stop problem had denied him a strong chance to win in 2016.",
+        "uk": "Даніель Ріккардо стартував із поулу й лідирував, але відмова MGU-K на Red Bull позбавила машину частини потужності майже на всю решту гонки. На трасі, де так складно змінити позицію, він утримав позаду Себастьяна Феттеля попри технічну проблему. Перемога була особливою після невдалого піт-стопу, який зруйнував його шанси тут у 2016 році."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/winners-and-losers-monaco-grand-prix-edition.6H22FxQ3bGqyQ4giAqk62y"
+      ],
+      "publication": "research_only"
+    },
+    {
+      "id": "monaco-2024",
+      "year": 2024,
+      "title": {
+        "en": "Leclerc finally wins at home",
+        "uk": "Леклер нарешті перемагає вдома"
+      },
+      "narrative": {
+        "en": "Charles Leclerc had twice taken pole at Monaco without winning the race. In 2024, after an early red flag and a restart, he kept control of the Grand Prix and crossed the line ahead of Oscar Piastri and Carlos Sainz. For a driver who grew up in Monaco, this was not another routine win: he later spoke about thinking of his late father while driving the final laps.",
+        "uk": "Шарль Леклер двічі здобував поул у Монако, але не міг виграти домашню гонку. У 2024 році після раннього червоного прапора й рестарту він зберіг контроль над Гран-прі та фінішував попереду Оскара Піастрі й Карлоса Сайнса. Для гонщика, який виріс у Монако, це була не звичайна перемога: пізніше він розповів, що на останніх колах згадував покійного батька."
+      },
+      "sources": [
+        "https://www.formula1.com/en/latest/article/leclerc-takes-emotional-home-win-in-monaco-ahead-of-piastri-and-sainz-after.4EmeQeb2P27aS8yGIVMOEO"
+      ],
+      "publication": "research_only"
+    }
+  ]
+}
