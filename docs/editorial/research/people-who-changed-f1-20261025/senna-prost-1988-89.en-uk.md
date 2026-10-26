@@ -63,3 +63,19 @@ McLaren MP4/4 виграв п'ятнадцять із шістнадцяти г�
 - Do not invent motives, dialogue, technical telemetry or steward quotations.
 - Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
 - **Not published.**
+
+## Verified classification checkpoint — 2026-10-26 (EN/UK)
+
+**Scope:** This checkpoint cross-checks the narrowly stated classification facts with Formula 1's official historical results. It does **not** approve this manuscript or the surrounding narrative. The source's published result is distinguished from editorial interpretation.
+
+**EN · Official-result facts:** 1988 official championship points: Ayrton Senna 90; Alain Prost 87. The 1989 Japanese Grand Prix's classified winner was Alessandro Nannini, not Senna.
+
+**UK · Факти з офіційних результатів:** Офіційні залікові очки 1988 року: Сенна — 90, Прост — 87. Переможцем Гран-прі Японії 1989 року в протоколі зазначений Алессандро Нанніні, а не Сенна.
+
+**Evidence:**
+- https://www.formula1.com/en/results/1988/drivers
+- https://www.formula1.com/en/results/1989/races
+
+**Claims still requiring independent review:** Raw 1988 scores and dropped-score calculation must be checked against period regulations; classification alone does not explain the 1989 stewards' reasoning.
+
+**Editorial direction / Редакторський акцент:** Lead with the actual sporting stakes and who achieved what, then explain why this moment matters. Keep the UK version idiomatic, not a literal transfer of English rhetoric. Do not attach unsigned media or infer ownership lineage from team names. Keep research-draft and noindex gates intact.
