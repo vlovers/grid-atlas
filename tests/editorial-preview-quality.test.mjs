@@ -28,7 +28,9 @@ test('editorial stories stay separate from published archival pilot journeys', (
   const page = readFileSync('apps/web/src/app/[locale]/stories/moments/[slug]/page.tsx', 'utf8');
   assert.match(page, /index: isAiReviewedStory\(slug\)/);
   const registry = readFileSync('apps/web/src/components/stories/editorial-publication.ts', 'utf8');
-  assert.match(registry, /reviewedEditions: readonly ReviewedEdition\[\] = \[\]/);
+  assert.match(registry, /reviewedEditions: readonly ReviewedEdition\[\] = \[/);
+  assert.match(registry, /enSha256/);
+  assert.match(registry, /ukSha256/);
   assert.match(page, /editorial-draft-articles/);
   assert.match(page, /approvedEditorialPhoto/);
   const published = JSON.parse(readFileSync('apps/web/src/components/media/publication.json', 'utf8'));
