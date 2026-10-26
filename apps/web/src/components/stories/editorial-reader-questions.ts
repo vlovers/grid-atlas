@@ -1,43 +1,223 @@
-/** Twenty bilingual reader questions with historically grounded short answers; source review still required. */
+/** Bilingual reader questions for unpublished editorial drafts; release requires independent historical review. */
 export const editorialReaderQuestions = {
   "lauda-hunt-1976": [
-    { en: { question: ["What did the one-point margin decide?","Що вирішила перевага в одне очко?","The official title, not the moral worth of either driver's decisions.","Офіційний титул, а не моральну оцінку рішень обох пілотів."], answer: undefined }, uk: { question: ["Why does the Monza return matter?","Чому важливе повернення в Монці?","It shows the comeback happened before the final choice at Fuji.","Воно показує, що повернення відбулося до остаточного вибору у Фудзі."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Who won the 1976 championship?",
+        "answer": "James Hunt finished one point ahead of Niki Lauda: 69 to 68."
+      },
+      "uk": {
+        "question": "Хто став чемпіоном 1976 року?",
+        "answer": "Джеймс Гант випередив Нікі Лауду на одне очко: 69 проти 68."
+      }
+    },
+    {
+      "en": {
+        "question": "Why did Lauda withdraw at Fuji?",
+        "answer": "He considered the wet conditions too dangerous and stopped early in the race."
+      },
+      "uk": {
+        "question": "Чому Лауда зійшов на Фудзі?",
+        "answer": "Він вважав дощові умови надто небезпечними й зупинився на початку гонки."
+      }
+    }
   ],
   "senna-prost-1988-89": [
-    { en: { question: ["Why is the 1988 points table unusual?","Чому таблиця очок 1988 року незвична?","Only the best eleven results counted toward each driver's championship score.","До чемпіонського заліку кожного пілота входили лише одинадцять найкращих результатів."], answer: undefined }, uk: { question: ["Was the 1988 title decided by raw points?","Чи вирішила титул 1988 року проста сума очок?","No. Dropped-score rules affected the final championship ranking.","Ні. Правило відкидання результатів впливало на підсумкові місця."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Why did Senna win the 1988 title despite Prost's higher total?",
+        "answer": "Only each driver's eleven best results counted. Senna won 90 to 87 on counted points."
+      },
+      "uk": {
+        "question": "Чому Сенна став чемпіоном 1988 року, хоча Прост набрав більше очок?",
+        "answer": "Зараховували лише одинадцять найкращих результатів кожного. Сенна переміг із рахунком 90:87 за заліковими очками."
+      }
+    },
+    {
+      "en": {
+        "question": "Who was classified as the winner at Suzuka in 1989?",
+        "answer": "Alessandro Nannini, after Ayrton Senna was disqualified."
+      },
+      "uk": {
+        "question": "Кого визнали переможцем у Сузуці 1989 року?",
+        "answer": "Алессандро Нанніні — після дискваліфікації Айртона Сенни."
+      }
+    }
   ],
   "villeneuve-arnoux-1979": [
-    { en: { question: ["Who actually won at Dijon?","Хто насправді переміг у Діжоні?","Jean-Pierre Jabouille won the French Grand Prix for Renault.","Жан-П’єр Жабуй виграв Гран-прі Франції за Renault."], answer: undefined }, uk: { question: ["What place were Villeneuve and Arnoux fighting for?","За яке місце боролися Вільньов і Арну?","Second place, behind the race winner.","За друге, позаду переможця гонки."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Who won the French Grand Prix at Dijon?",
+        "answer": "Jean-Pierre Jabouille gave Renault its first Formula 1 victory."
+      },
+      "uk": {
+        "question": "Хто виграв Гран-прі Франції в Діжоні?",
+        "answer": "Жан-П'єр Жабуй приніс Renault її першу перемогу у Формулі-1."
+      }
+    },
+    {
+      "en": {
+        "question": "Which positions did Villeneuve and Arnoux contest?",
+        "answer": "Second and third. Villeneuve finished ahead of Arnoux."
+      },
+      "uk": {
+        "question": "За які місця боролися Вільнев та Арну?",
+        "answer": "За друге й третє. Вільнев фінішував попереду Арну."
+      }
+    }
   ],
   "vettel-monza-2008": [
-    { en: { question: ["Which team did Vettel win for?","За яку команду переміг Феттель?","Toro Rosso, not Red Bull Racing.","За Toro Rosso, а не Red Bull Racing."], answer: undefined }, uk: { question: ["Why did qualifying matter?","Чому кваліфікація мала значення?","Vettel started the Grand Prix from pole position.","Феттель стартував у Гран-прі з поулу."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Which team won the 2008 Italian Grand Prix?",
+        "answer": "Toro Rosso, with Sebastian Vettel driving."
+      },
+      "uk": {
+        "question": "Яка команда виграла Гран-прі Італії 2008 року?",
+        "answer": "Toro Rosso, за кермом якої був Себастьян Феттель."
+      }
+    },
+    {
+      "en": {
+        "question": "Did Vettel start from pole?",
+        "answer": "Yes. He qualified first in wet conditions at Monza."
+      },
+      "uk": {
+        "question": "Чи стартував Феттель із поулу?",
+        "answer": "Так. Він виграв кваліфікацію в дощових умовах Монци."
+      }
+    }
   ],
   "button-canada-2011": [
-    { en: { question: ["When did Button take the lead?","Коли Баттон вийшов у лідери?","On the final lap of the Canadian Grand Prix.","На останньому колі Гран-прі Канади."], answer: undefined }, uk: { question: ["Why was the race unusually difficult?","Чому гонка була надзвичайно складною?","Rain and interruptions repeatedly disrupted the event.","Дощ і перерви неодноразово змінювали перебіг гонки."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "When did Button take the lead?",
+        "answer": "On the final lap, after Sebastian Vettel made a mistake."
+      },
+      "uk": {
+        "question": "Коли Баттон вийшов у лідери?",
+        "answer": "На останньому колі після помилки Себастьяна Феттеля."
+      }
+    },
+    {
+      "en": {
+        "question": "Who finished on the podium in Canada?",
+        "answer": "Jenson Button won, Sebastian Vettel finished second and Mark Webber third."
+      },
+      "uk": {
+        "question": "Хто фінішував на подіумі в Канаді?",
+        "answer": "Переміг Дженсон Баттон, другим був Себастьян Феттель, третім — Марк Веббер."
+      }
+    }
   ],
   "perez-sakhir-2020": [
-    { en: { question: ["Was Pérez leading throughout?","Чи лідирував Перес від старту до фінішу?","No. His race began with a first-lap setback.","Ні. Його гонка почалася з невдачі на першому колі."], answer: undefined }, uk: { question: ["Who was driving Hamilton's Mercedes?","Хто керував Mercedes замість Гамільтона?","George Russell substituted for Lewis Hamilton.","Джордж Расселл замінив Льюїса Гамільтона."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Did Pérez lead the race from the start?",
+        "answer": "No. First-lap contact sent him to the back before he recovered to win."
+      },
+      "uk": {
+        "question": "Чи лідирував Перес від старту?",
+        "answer": "Ні. Після контакту на першому колі він опинився позаду, але повернувся й переміг."
+      }
+    },
+    {
+      "en": {
+        "question": "Who substituted for Hamilton at Mercedes?",
+        "answer": "George Russell. He finished ninth after pit-stop trouble and a puncture."
+      },
+      "uk": {
+        "question": "Хто замінив Гамільтона в Mercedes?",
+        "answer": "Джордж Расселл. Після проблем на пітстопі й проколу він фінішував дев'ятим."
+      }
+    }
   ],
   "kubica-bmw-2008": [
-    { en: { question: ["Which team achieved the one-two?","Яка команда здобула дубль?","BMW Sauber, with Kubica ahead of Heidfeld.","BMW Sauber: Кубіца фінішував попереду Гайдфельда."], answer: undefined }, uk: { question: ["Did Kubica finish the season as champion?","Чи завершив Кубіца сезон чемпіоном?","No. His championship lead after Canada was temporary.","Ні. Його лідерство після Канади було тимчасовим."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Who completed BMW Sauber's one-two in Canada?",
+        "answer": "Robert Kubica won and his teammate Nick Heidfeld finished second."
+      },
+      "uk": {
+        "question": "Хто приніс BMW Sauber дубль у Канаді?",
+        "answer": "Роберт Кубіца переміг, а його напарник Нік Гайдфельд став другим."
+      }
+    },
+    {
+      "en": {
+        "question": "Did Kubica lead the championship afterward?",
+        "answer": "Yes. He left Montreal on 42 points, four ahead of Hamilton and Massa."
+      },
+      "uk": {
+        "question": "Чи очолив Кубіца чемпіонат після гонки?",
+        "answer": "Так. Після Монреаля він мав 42 очки — на чотири більше за Гамільтона й Массу."
+      }
+    }
   ],
   "schumacher-ferrari-1996-2000": [
-    { en: { question: ["When did Schumacher join Ferrari?","Коли Шумахер приєднався до Ferrari?","In 1996, already a two-time world champion.","У 1996 році, вже будучи дворазовим чемпіоном світу."], answer: undefined }, uk: { question: ["What ended in 2000?","Що завершилося у 2000 році?","Ferrari's wait for a drivers' world championship since 1979.","Очікування Ferrari на особистий чемпіонський титул, що тривало з 1979 року."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "When did Schumacher join Ferrari?",
+        "answer": "In 1996, after winning two world championships with Benetton."
+      },
+      "uk": {
+        "question": "Коли Шумахер перейшов до Ferrari?",
+        "answer": "У 1996 році, після двох чемпіонських титулів із Benetton."
+      }
+    },
+    {
+      "en": {
+        "question": "Which drivers' title did Ferrari finally win in 2000?",
+        "answer": "Schumacher won the drivers' title, Ferrari's first since Jody Scheckter in 1979."
+      },
+      "uk": {
+        "question": "Якого чемпіонства Ferrari нарешті дочекалася у 2000 році?",
+        "answer": "Шумахер здобув особистий титул — перший для Ferrari з часів Джоді Шектера у 1979 році."
+      }
+    }
   ],
   "massa-2008": [
-    { en: { question: ["Who won the Brazilian Grand Prix?","Хто виграв Гран-прі Бразилії?","Felipe Massa won his home race.","Феліпе Масса переміг у домашній гонці."], answer: undefined }, uk: { question: ["Who became world champion?","Хто став чемпіоном світу?","Lewis Hamilton, after finishing fifth.","Льюїс Гамільтон, фінішувавши п’ятим."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
+    {
+      "en": {
+        "question": "Who won the final race of 2008?",
+        "answer": "Felipe Massa won the Brazilian Grand Prix at Interlagos."
+      },
+      "uk": {
+        "question": "Хто виграв останню гонку 2008 року?",
+        "answer": "Феліпе Масса переміг на Гран-прі Бразилії в Інтерлагосі."
+      }
+    },
+    {
+      "en": {
+        "question": "How did Hamilton secure the title?",
+        "answer": "He finished fifth in Brazil and ended the season one point ahead of Massa."
+      },
+      "uk": {
+        "question": "Як Гамільтон здобув титул?",
+        "answer": "Він фінішував п'ятим у Бразилії та завершив сезон на одне очко попереду Масси."
+      }
+    }
   ],
   "brawn-2009": [
-    { en: { question: ["What happened to Honda's team?","Що сталося з командою Honda?","The operation survived and competed as Brawn GP.","Команда вижила й виступила під назвою Brawn GP."], answer: undefined }, uk: { question: ["How many early races did Button win?","Скільки гонок на початку сезону виграв Баттон?","Six of the first seven Grands Prix in 2009.","Шість із перших семи Гран-прі 2009 року."], answer: undefined } },
-    { en: { question: undefined, answer: undefined }, uk: { question: undefined, answer: undefined } },
-  ],
+    {
+      "en": {
+        "question": "How did Brawn GP get to the 2009 grid?",
+        "answer": "The former Honda team survived its manufacturer's withdrawal and raced under a new name."
+      },
+      "uk": {
+        "question": "Як Brawn GP потрапила на старт сезону 2009 року?",
+        "answer": "Колишня команда Honda пережила вихід виробника й вийшла на старт під новою назвою."
+      }
+    },
+    {
+      "en": {
+        "question": "How many of the opening seven races did Button win?",
+        "answer": "Six. Those early victories proved vital when rivals became stronger."
+      },
+      "uk": {
+        "question": "Скільки із семи перших гонок виграв Баттон?",
+        "answer": "Шість. Ці ранні перемоги стали вирішальними, коли суперники посилилися."
+      }
+    }
+  ]
 } as const;
