@@ -37,6 +37,39 @@
       "verified_scope": "2016 Abu Dhabi second, title, Dec 2 retirement and Rosberg's public explanation",
       "source_limits": "Rosberg's retrospective motivation is attributed to him, not presented as independent psychological inference",
       "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "kimi-raikkonen",
+      "chapter_id": "the-ferrari-championship",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2007/drivers",
+        "https://www.formula1.com/en/latest/article/f1-brazil-gp-title-deciders-championship.6j9s6gmm57ar9xJlxUTlQn.6j9s6gmm57ar9xJlxUTlQn"
+      ],
+      "verified_scope": "2007 pre-Brazil top three points and final 110/109/109 title standings",
+      "source_limits": "Official publisher's retrospective, not independent verification of team motivations",
+      "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "jenson-button",
+      "chapter_id": "six-wins-and-a-world-title",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2009/races/858/brazil/race-result",
+        "https://www.formula1.com/en/latest/article/the-greatest-f1-world-championship-celebrations-in-recent-history.4gWkaXUSgi7KvN37D8S4ZT.4gWkaXUSgi7KvN37D8S4ZT"
+      ],
+      "verified_scope": "Button P14 qualifying per retrospective and P5 race classified Brazil 2009, Webber victory, title clincher",
+      "source_limits": "Retrospective race account from same publisher as result sheet",
+      "status": "ai_source_checked_human_review_pending"
+    },
+    {
+      "driver_id": "nino-farina",
+      "chapter_id": "the-inaugural-world-champion",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1950/races/100/italy/race-result",
+        "https://www.formula1.com/en/latest/article/from-one-off-victors-to-world-champions-the-15-italian-f1-race-winners.7Itail3xoxO69cftQ7VbTf.7Itail3xoxO69cftQ7VbTf"
+      ],
+      "verified_scope": "Farina Monza victory, Fangio classified non-finish, 1950 inaugural champion",
+      "source_limits": "Shared-drive 1950 classifications require specific contextual reading",
+      "status": "ai_source_checked_human_review_pending"
     }
   ]
 }
