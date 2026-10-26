@@ -11,8 +11,8 @@ Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F
 | suzuka | 6 | 6 | 6 | 0 |
 | interlagos | 6 | 6 | 6 | 0 |
 | gilles-villeneuve | 5 | 4 | 4 | 0 |
-| imola | 5 | 1 | 0 | 0 |
-| nurburgring | 5 | 1 | 1 | 0 |
+| imola | 5 | 3 | 0 | 0 |
+| nurburgring | 5 | 2 | 1 | 0 |
 | hockenheimring | 5 | 1 | 0 | 0 |
 | zandvoort | 5 | 1 | 0 | 0 |
 | hungaroring | 8 | 8 | 7 | 0 |
@@ -27,7 +27,7 @@ Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F
 | sepang | 5 | 1 | 0 | 0 |
 | istanbul-park | 5 | 1 | 0 | 0 |
 
-**Totals:** 105 historical event drafts; 47 with at least one source candidate; 31 marked source-checked (not independently approved).
+**Totals:** 105 historical event drafts; 50 with at least one source candidate; 31 marked source-checked (not independently approved).
 
 ## Editorial release gates
 
@@ -42,3 +42,11 @@ Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F
 
 **Draft coverage** is not **publication-ready coverage**. All twenty circuits retain their upstream unpublished or research-only gate until independently approved.
 
+
+## Race-result revisions (27 October 2026)
+
+- Imola 1982: [official result](https://www.formula1.com/en/results/1982/races/440/san-marino/race-result) confirms Pironi ahead of Villeneuve by 0.370 seconds; it does not independently establish the team-orders dispute.
+- Imola 2005: [official result](https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result) confirms Alonso's 0.215-second advantage over Schumacher.
+- Nürburgring 1976: [official result](https://www.formula1.com/en/results/1976/races/367/germany/race-result) lists Hunt as winner and Lauda as a non-finisher; details of the accident and rescue need additional testimony.
+
+Remaining without a source candidate: **55 event drafts**. All reviewed results are still **research drafts**, not public stories.
