@@ -9,6 +9,7 @@ export const commonsEditorialPhotos = {
     src: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Vettel_Monza_2008.jpg?width=1280',
     filePage: 'https://commons.wikimedia.org/wiki/File:Vettel_Monza_2008.jpg',
     creator: 'Jane Belinda Smith',
+    alt: { en: 'Sebastian Vettel at the 2008 Italian Grand Prix in Monza', uk: 'Себастьян Феттель на Гран-прі Італії 2008 року в Монці' },
     license: 'CC BY 2.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
     caption: {
@@ -20,6 +21,7 @@ export const commonsEditorialPhotos = {
     src: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Jenson_Button_(Brawn_BGP_001)_on_Sunday_at_2009_Abu_Dhabi_Grand_Prix.jpg?width=1280',
     filePage: 'https://commons.wikimedia.org/wiki/File:Jenson_Button_(Brawn_BGP_001)_on_Sunday_at_2009_Abu_Dhabi_Grand_Prix.jpg',
     creator: 'Yuriy Lapitskiy',
+    alt: { en: 'Jenson Button driving the Brawn BGP 001 at Abu Dhabi in 2009', uk: 'Дженсон Баттон за кермом Brawn BGP 001 в Абу-Дабі у 2009 році' },
     license: 'CC BY-SA 3.0',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
     caption: {
