@@ -24,3 +24,23 @@ test('consolidation inventory preserves all research without treating it as publ
   assert.deepEqual(report.constructors.map(row => row.name), constructorManifest.subjects.map(row => row.name));
   for (const team of report.constructors) assert.equal(team.publication, 'blocked');
 });
+
+test('fifteen distinct research-only careers have readable bilingual entry scenes', () => {
+  const chapters = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  const bio = read('docs/editorial/biography-expansion-batch-2/manifest.json');
+  let count = 0;
+  for (const story of chapters.stories) {
+    if (bio.drivers.includes(story.driver_id)) continue; // long-form canonical source takes precedence
+    count++;
+    const lead = story.chapters[0];
+    for (const locale of ['en', 'uk']) {
+      const [hook, ...body] = lead[locale].body.split(/\n\n/);
+      assert.ok(hook.length >= 65, story.driver_id + '/' + locale + ' must have meaningful opening');
+      assert.ok(body.join(' ').length >= 100, story.driver_id + '/' + locale + ' must preserve sourced research');
+      assert.ok(!/^(In |У |Уже |The )?\d{4}\b/.test(hook), story.driver_id + '/' + locale + ' should open with a scene, not an encyclopedia year');
+    }
+    assert.ok(lead.claim_ids.length, story.driver_id + ' must retain source claim linkage');
+  }
+  assert.equal(count, 15);
+  assert.equal(chapters.publication_status, 'unpublished');
+});
