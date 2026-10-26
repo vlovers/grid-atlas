@@ -23,7 +23,7 @@ on:
           - brawn-2009
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   stage:
@@ -54,3 +54,20 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+
+      - name: Remove accidentally published unreviewed media
+        if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for file in apps/web/public/media/editorial/vettel-monza-2008.jpg apps/web/public/media/editorial/brawn-2009.jpg; do
+            if git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+              git rm -- "$file"
+            fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "fix(media): quarantine unreviewed photo files outside public assets"
+            git push origin HEAD:editorial/people-who-changed-f1-20261025
+          fi
