@@ -44,9 +44,10 @@
             "uk": "Даніель Ріккардо виграв сповнений інцидентів Гран-прі Азербайджану 2017 року за Red Bull. Цю гонку пам’ятають через зіткнення, зупинки й зміни лідера, а не звичну боротьбу фаворитів."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -134,7 +135,7 @@
             "uk": "Дослідити результат Гран-прі 2021 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2021/races/1106/saudi-arabia/race-result"
+            "https://www.formula1.com/en/results/2021/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -142,9 +143,10 @@
             "uk": "Льюїс Гамільтон виграв перший Гран-прі Саудівської Аравії 2021 року після бурхливої боротьби з Максом Ферстаппеном. Їхній контакт та численні інциденти перетворили нову швидку міську трасу на один із найгостріших моментів чемпіонату."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -240,9 +242,10 @@
             "uk": "Льюїс Гамільтон виграв перший Гран-прі Формули-1 у Катарі 2021 року. Шанувальники мотоперегонів давно знали цю трасу, але боліди Формули-1 принесли до її довгих швидких поворотів інші випробування."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -330,7 +333,7 @@
             "uk": "Дослідити результат Гран-прі 1990 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1990/races/69/mexico/race-result"
+            "https://www.formula1.com/en/results/1990/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -338,9 +341,10 @@
             "uk": "Ален Прост виграв Гран-прі Мексики 1990 року за Ferrari після старту з тринадцятого місця. Цей успіх показує, наскільки непередбачуваною може бути гонка у високогірному Мехіко."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -436,9 +440,10 @@
             "uk": "Ландо Норріс здобув першу перемогу у Формулі-1 в Маямі 2024 року й завершив довге очікування з McLaren. Виїзд сейфті-кара вплинув на боротьбу, але після рестарту Ландо ще мав утримати позаду Макса Ферстаппена."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -536,7 +541,8 @@
           "verification_scope": {
             "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
             "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+          },
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -631,7 +637,8 @@
             "en": "Only six cars started the 2005 United States Grand Prix at Indianapolis after the Michelin-equipped teams withdrew on safety grounds. Michael Schumacher won, but the lasting story was the failure to deliver the expected race.",
             "uk": "Лише шість болідів стартували на Гран-прі США 2005 року в Індіанаполісі після відмови команд на шинах Michelin через питання безпеки. Переміг Міхаель Шумахер, але найгучнішою подією став сам зрив нормальної гонки."
           },
-          "verification_scope": "six classified starters and winner"
+          "verification_scope": "six classified starters and winner",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -727,9 +734,10 @@
             "uk": "Під час Гран-прі Австралії 1986 року в Найджела Менселла вибухнула шина, коли він боровся за титул. Схід Williams відкрив Алену Просту шлях до перемоги в гонці й чемпіонаті у драматичному фіналі сезону."
           },
           "verification_scope": {
-            "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
-            "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -827,7 +835,8 @@
           "verification_scope": {
             "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
             "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+          },
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -923,9 +932,10 @@
             "uk": "Емерсон Фіттіпальді виграв Гран-прі США 1970 року за Lotus уже після загибелі Йохена Ріндта. Цей результат означав, що ніхто з суперників не наздожене Ріндта за очками, — так він став єдиним посмертним чемпіоном світу Формули-1."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1021,9 +1031,10 @@
             "uk": "Гран-прі Південної Африки 1977 року затьмарила загибель гонщика Тома Прайса й маршала Фредеріка Янсена ван Вюрена під час зіткнення на трасі. Цю історію потрібно розповідати з повагою та увагою до обставин безпеки, без сенсаційності."
           },
           "verification_scope": {
-            "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
-            "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1119,9 +1130,10 @@
             "uk": "На дощовому Гран-прі Японії 1976 року Нікі Лауда вирішив зійти, не бажаючи продовжувати гонку в небезпечних умовах. Джеймс Гант фінішував третім і здобув титул з перевагою в одне очко — один із найвідоміших фіналів чемпіонату."
           },
           "verification_scope": {
-            "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
-            "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1219,7 +1231,8 @@
           "verification_scope": {
             "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
             "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+          },
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -1315,9 +1328,10 @@
             "uk": "Міхаель Шумахер виграв Гран-прі Франції 2002 року й забезпечив п’ятий чемпіонський титул за шість етапів до завершення сезону. Настільки рання перемога зробила Маньї-Кур місцем особливого тріумфу Ferrari."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1412,7 +1426,8 @@
             "en": "Ayrton Senna won his first Formula 1 Grand Prix at a soaked Estoril in 1985, driving a Lotus. He had taken pole and then controlled a difficult race, providing an early glimpse of his exceptional ability in the wet.",
             "uk": "Айртон Сенна здобув першу перемогу у Формулі-1 в залитому дощем Ешторілі 1985 року за Lotus. Він стартував із поулу та контролював складну гонку, рано показавши свій винятковий талант на мокрій трасі."
           },
-          "verification_scope": "Senna winner by 62.978s over Alboreto; wet weather needs separate source"
+          "verification_scope": "Senna winner by 62.978s over Alboreto; wet weather needs separate source",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -1500,14 +1515,15 @@
             "uk": "Дослідити результат Гран-прі 2020 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+            "https://www.formula1.com/en/results/2020/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Lewis Hamilton won the 2020 Portuguese Grand Prix at Portimão, moving past Michael Schumacher's then-record 91 Formula 1 wins. His record-breaking victory came at a venue that Formula 1 had reached because of a disrupted pandemic calendar.",
             "uk": "Льюїс Гамільтон виграв Гран-прі Португалії 2020 року в Портімані та перевершив рекорд Міхаеля Шумахера в 91 перемогу. Рекорд встановили на трасі, що з’явилася в календарі Формули-1 через пандемічні зміни."
           },
-          "verification_scope": "Hamilton record-breaking victory number 92"
+          "verification_scope": "Hamilton record-breaking victory number 92",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -1603,9 +1619,10 @@
             "uk": "Льюїс Гамільтон виграв Гран-прі Тоскани 2020 року в Муджелло — незвичну гонку з двома червоними прапорами. Для Ferrari це був тисячний Гран-прі чемпіонату світу, хоча перемога дісталася Mercedes."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1700,7 +1717,8 @@
             "en": "Ayrton Senna made a celebrated opening lap in wet conditions at the 1993 European Grand Prix at Donington, overtaking several rivals. He went on to win, turning a one-off Formula 1 visit into a classic race.",
             "uk": "Айртон Сенна провів знаменитий перший круг дощового Гран-прі Європи 1993 року в Донінгтоні, обігнавши кількох суперників. Згодом він переміг, і єдиний візит Формули-1 перетворився на класичну гонку."
           },
-          "verification_scope": "1993 European GP race classification; opening lap needs separate historic narrative verification"
+          "verification_scope": "1993 European GP race classification; opening lap needs separate historic narrative verification",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -1788,7 +1806,7 @@
             "uk": "Дослідити результат Гран-прі 2012 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2012/races/17/europe/race-result"
+            "https://www.formula1.com/en/results/2012/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -1796,9 +1814,10 @@
             "uk": "Фернандо Алонсо виграв Гран-прі Європи 2012 року у Валенсії після старту з одинадцятого місця. Поки суперники стикалися з проблемами, він прорвався до домашньої перемоги — однієї з найемоційніших за роки у Ferrari."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1894,9 +1913,10 @@
             "uk": "Фернандо Алонсо виграв перший Гран-прі Кореї 2010 року після відкладеного через дощ старту й інцидентів, які змінили боротьбу за титул. Складний дебют нової траси одразу вплинув на чемпіонат."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -1991,7 +2011,8 @@
             "en": "Sebastian Vettel won the 2013 Indian Grand Prix and secured his fourth consecutive Drivers' Championship. His celebration on the track marked the end of a remarkable four-year Red Bull title run.",
             "uk": "Себастьян Феттель виграв Гран-прі Індії 2013 року й здобув четвертий титул чемпіона світу поспіль. Його святкування на трасі стало кульмінацією чотирирічного домінування Red Bull."
           },
-          "verification_scope": "Vettel winner of 2013 Indian GP; fourth championship needs separate standings corroboration"
+          "verification_scope": "Vettel winner of 2013 Indian GP; fourth championship needs separate standings corroboration",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -2089,7 +2110,8 @@
           "verification_scope": {
             "en": "Official result source confirms classification, not necessarily incidents, chronology, title implications or narrative. Independent editorial review is pending.",
             "uk": "Офіційне джерело підтверджує результат, але не обов’язково інциденти, перебіг подій і наслідки для чемпіонату. Потрібна незалежна редакторська перевірка."
-          }
+          },
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
@@ -2177,7 +2199,7 @@
             "uk": "Дослідити результат Гран-прі 1990 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1990/races/64/united-states/race-result"
+            "https://www.formula1.com/en/results/1990/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -2185,9 +2207,10 @@
             "uk": "Жан Алезі боровся з Айртоном Сенною за лідерство на Гран-прі США 1990 року у Фініксі. Зрештою переміг Сенна, але сміливі атаки Алезі на Tyrrell зробили молодого гонщика відомим широкій аудиторії Формули-1."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -2275,7 +2298,7 @@
             "uk": "Дослідити результат Гран-прі 1982 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1982/races/443/detroit/race-result"
+            "https://www.formula1.com/en/results/1982/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -2283,9 +2306,10 @@
             "uk": "Джон Вотсон виграв Гран-прі Детройта 1982 року за McLaren після старту із сімнадцятого місця. Результат показав, наскільки непередбачуваною могла бути гонка вузькими й складними міськими вулицями."
           },
           "verification_scope": {
-            "en": "The official Formula 1 results support the race outcome and named finishers only. Incidents, starting positions, title implications and the full narrative still require separate source checks and human editorial review.",
-            "uk": "Офіційні результати Формули-1 підтверджують підсумок гонки та зазначених фінішерів. Інциденти, стартові позиції, вплив на чемпіонат і повний текст історії потребують окремої перевірки та редакторського перегляду."
-          }
+            "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
+            "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
+          },
+          "source_granularity": "season_results_index"
         },
         {
           "year": null,
@@ -2373,14 +2397,15 @@
             "uk": "Дослідити результат Гран-прі 1983 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA"
+            "https://www.formula1.com/en/results/1983/races"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "John Watson started twenty-second and won the 1983 United States Grand Prix West at Long Beach, with McLaren teammate Niki Lauda second. It remains one of the most remarkable wins from the back of a Formula 1 grid.",
             "uk": "Джон Вотсон стартував двадцять другим і виграв Гран-прі США-Захід 1983 року в Лонг-Біч, а напарник по McLaren Нікі Лауда став другим. Це одна з найвидатніших перемог після старту з глибини пелотону."
           },
-          "verification_scope": "Watson grid position 22, race win, Lauda runner-up"
+          "verification_scope": "Watson grid position 22, race win, Lauda runner-up",
+          "source_granularity": "event_or_article"
         },
         {
           "year": null,
