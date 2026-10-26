@@ -336,3 +336,22 @@ test('bilingual editorial reader keeps the runtime export used by the route', ()
   assert.match(articles, /editorialDraftArticles\[slug as keyof typeof editorialDraftArticles\]\[locale\]/);
   assert.ok(detail.includes("import { draftArticle } from '@/components/stories/editorial-draft-articles'"));
 });
+
+test('official race reports are traceable without treating research as editorial signoff', () => {
+  const ledger = JSON.parse(read('docs/editorial/FACT_CHECK_LEDGER_2026-10-26.json'));
+  const researched = [
+    'button-canada-2011-1', 'button-canada-2011-2',
+    'button-canada-2011-3', 'button-canada-2011-4',
+    'perez-sakhir-2020-1', 'perez-sakhir-2020-2',
+    'perez-sakhir-2020-3', 'perez-sakhir-2020-5',
+  ];
+  for (const id of researched) {
+    const entry = ledger.entries.find(candidate => candidate.id === id);
+    assert.ok(entry, id + ' missing from provenance ledger');
+    assert.equal(entry.status, 'source-located-awaiting-independent-review');
+    assert.match(entry.primarySource, /^https:\/\/www\.formula1\.com\/en\/latest\/article\//);
+    assert.equal(entry.reviewChecklist.independentNarrative, false);
+    assert.equal(entry.reviewChecklist.bilingualParity, false);
+    assert.equal(entry.reviewChecklist.reviewerSignoff, false);
+  }
+});
