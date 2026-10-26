@@ -3,9 +3,10 @@ export const editorialDraftArticles = {
   "lauda-hunt-1976": {
     "en": [
       {
-        "heading": "A season that changed its meaning",
+        "heading": "Two laps at Fuji",
         "paragraphs": [
-          "At the start of 1976, Niki Lauda was the reigning world champion and Ferrari's established leader. James Hunt, newly driving for McLaren, was the challenger. It is tempting to treat their season as a straightforward contrast between two personalities. The racing was more complicated. Lauda built a substantial advantage before his terrible accident at the Nürburgring. Hunt's victories and Lauda's absence changed the championship arithmetic. When Lauda returned to racing astonishingly soon, the contest had acquired a question that no points table could answer: how much risk was acceptable after a driver had already paid such a high price?"
+          "Rain fell hard over Fuji. On lap two of the Japanese Grand Prix, Niki Lauda brought his Ferrari into the pits and stopped. Earlier that season he had survived a terrible crash at the Nürburgring, missed races and returned at Monza. Now he judged the conditions too dangerous to continue. James Hunt was still racing, but he had not inherited the title: he needed third place. After tyre trouble and another pit stop, he finished exactly there.",
+          "Hunt ended the year on 69 points, Lauda on 68. The result is precise; the meaning is harder. The championship did not ask the two drivers the same question that afternoon. Hunt had to find a way to finish. Lauda had to decide whether he was willing to carry on."
         ]
       },
       {
@@ -35,9 +36,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Сезон, який змінив сенс",
+        "heading": "Друге коло на Фудзі",
         "paragraphs": [
-          "На початку 1976 року Нікі Лауда був чинним чемпіоном світу й лідером Ferrari. Джеймс Гант, який перейшов до McLaren, став його головним суперником. Їхнє протистояння часто описують як боротьбу двох протилежних характерів. Насправді спортивна історія складніша. Лауда створив значний відрив, перш ніж потрапив у страшну аварію на Нюрбургринзі. Перемоги Ганта й вимушена відсутність Лауди змінили чемпіонські розрахунки. Коли австрієць надзвичайно швидко повернувся за кермо, виникло запитання, на яке не відповідає жодна таблиця: який ризик є прийнятним після того, як людина вже заплатила таку високу ціну?"
+          "Над Фудзі лив дощ. На другому колі Гран-прі Японії Нікі Лауда повернув Ferrari в бокси й зупинився. Того сезону він пережив страшну аварію на Нюрбургринзі, пропустив кілька гонок і повернувся в Монці. Але тепер вирішив, що продовжувати надто небезпечно. Джеймс Гант залишився на трасі. Титул ще не був його: потрібне було третє місце. Після проблем із шинами й додаткового пітстопу він саме третім і фінішував.",
+          "Гант набрав 69 очок, Лауда — 68. Різниця в одне очко, але в той день вони відповідали на різні запитання. Гант мав будь-що довести болід до фінішу на потрібній позиції. Лауда — вирішити, чи готовий ризикувати далі."
         ]
       },
       {
@@ -69,9 +71,10 @@ export const editorialDraftArticles = {
   "senna-prost-1988-89": {
     "en": [
       {
-        "heading": "Two drivers, one dominant car",
+        "heading": "Fifteen wins, two rivals",
         "paragraphs": [
-          "The McLaren MP4/4 won fifteen of the sixteen races in 1988. Ayrton Senna and Alain Prost were not merely teammates sharing a successful machine: each was a credible championship contender, and each could measure himself against the other in identical equipment. That made McLaren's strength unusually difficult to manage. A team could celebrate victory on Sunday and still face a frustrated driver in the other garage. Their rivalry was not a side story that interrupted success. It was made possible by the scale of that success."
+          "McLaren won fifteen of sixteen races in 1988. For almost everyone else, the red-and-white cars were out of reach. But Ayrton Senna and Alain Prost still faced a rival in equal machinery every weekend: each other. A McLaren win did not settle which driver would take the title; it merely sharpened the contest within the same team.",
+          "Even the points table needed explaining. Prost earned 105 points over the races to Senna's 94, but only each driver's eleven best results counted. The title went to Senna, 90 counted points to Prost's 87. Then came 1989 and the collision at Suzuka: the struggle between team-mates was no longer just about speed."
         ]
       },
       {
@@ -101,9 +104,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Двоє пілотів, один домінантний болід",
+        "heading": "П'ятнадцять перемог, двоє суперників",
         "paragraphs": [
-          "McLaren MP4/4 виграв п'ятнадцять із шістнадцяти гонок 1988 року. Айртон Сенна й Ален Прост були не просто напарниками в успішній машині: кожен претендував на чемпіонство й міг порівнювати себе із суперником на однаковій техніці. Саме тому перевага McLaren стала складним випробуванням для команди. У неділю вона могла святкувати перемогу, а в сусідньому боксі залишався розчарований пілот. Їхнє суперництво не заважало успіху ззовні. Воно стало можливим саме завдяки масштабу цього успіху."
+          "У 1988 році McLaren виграла п'ятнадцять із шістнадцяти Гран-прі. Для більшості команд червоно-білі боліди були майже недосяжними. Але Айртон Сенна й Ален Прост щовихідних зустрічали суперника на такій самій техніці — один одного. Перемога McLaren не давала відповіді, кому дістанеться титул. Навпаки, загострювала боротьбу всередині команди.",
+          "Навіть таблиця очок дивувала. Прост набрав 105 очок за всі гонки, Сенна — 94, але враховували лише одинадцять найкращих результатів. Тому чемпіоном став Сенна: 90 проти 87 залікових очок. А потім настав 1989 рік і зіткнення в Сузуці — суперництво напарників уже не обмежувалося швидкістю."
         ]
       },
       {
@@ -135,9 +139,10 @@ export const editorialDraftArticles = {
   "villeneuve-arnoux-1979": {
     "en": [
       {
-        "heading": "A new kind of winner",
+        "heading": "The fight behind the winner",
         "paragraphs": [
-          "At the 1979 French Grand Prix, Jean-Pierre Jabouille won for Renault. It was a breakthrough for the turbocharged engine in Formula 1: a technology whose promise had long been shadowed by doubts about reliability. The achievement was not just a fast car on one afternoon. It represented a manufacturer persisting with a technical approach that had not yet produced the results its engineers wanted. In a normal race report, that would be the central story. Yet Dijon is remembered just as intensely for the fight behind the winner."
+          "Jean-Pierre Jabouille won the 1979 French Grand Prix at Dijon, giving Renault its first Formula 1 win and the turbo engine its first victory. Yet a few corners behind him, Gilles Villeneuve's Ferrari and René Arnoux's Renault were putting on the battle many people would remember longest.",
+          "In the closing laps, the pair repeatedly swapped second place, drove side by side and touched wheels. Villeneuve finished second, Arnoux third. Neither could take Jabouille's victory away. The record books preserved Renault's breakthrough; the footage preserved an extraordinary duel behind the leader."
         ]
       },
       {
@@ -167,9 +172,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Переможець нового типу",
+        "heading": "Боротьба позаду переможця",
         "paragraphs": [
-          "На Гран-прі Франції 1979 року Жан-П’єр Жабуй переміг за Renault. Це був прорив для турбодвигуна у Формулі-1 — технології, перспективність якої довго затьмарювали сумніви щодо надійності. Досягнення полягало не лише у швидкості боліда протягом одного дня. Виробник роками розвивав технічний напрям, який не приносив бажаних результатів. У звичайному звіті саме це стало б головною історією. Проте Діжон не менш сильно запам’ятався боротьбою позаду переможця."
+          "Гран-прі Франції 1979 року в Діжоні виграв Жан-П'єр Жабуй. Це була перша перемога Renault у Формулі-1 і перша перемога боліда з турбодвигуном. Та позаду нього Жиль Вільнев на Ferrari й Рене Арну на Renault влаштували боротьбу, яку багато хто пам'ятає навіть краще за сам фініш.",
+          "На останніх колах вони кілька разів мінялися другим місцем, їхали пліч-о-пліч і торкалися колесами. Вільнев фінішував другим, Арну — третім. Перемогу Жабуя вони вже не могли відібрати. Протокол зберіг історичний прорив Renault, а відеозапис — неймовірну дуель за спиною лідера."
         ]
       },
       {
@@ -201,9 +207,10 @@ export const editorialDraftArticles = {
   "vettel-monza-2008": {
     "en": [
       {
-        "heading": "A pole nobody expected",
+        "heading": "The wrong Italian team took pole",
         "paragraphs": [
-          "The 2008 Italian Grand Prix was shaped by wet weather. Sebastian Vettel took pole position for Toro Rosso, a team that normally raced far from the front. It would be easy to explain that result as a lucky qualifying session. Rain can scramble the usual hierarchy, and timing matters. But this explanation leaves out the driver who still had to find grip, commit to braking points and deliver a lap. The surprise was real; so was the performance."
+          "At Monza in 2008, an Italian team took pole position — but it was not Ferrari. It was Toro Rosso, with 21-year-old Sebastian Vettel at the wheel. Rain had unsettled the qualifying order. Sunday would decide whether the surprise was a fleeting moment or the beginning of something bigger.",
+          "The race started behind the Safety Car. When it pulled in, Vettel led and kept control. He finished ahead of Heikki Kovalainen and Robert Kubica, becoming Formula 1's youngest Grand Prix winner at the time. Toro Rosso had its first win. The rain opened a door, but the team still had to drive through it."
         ]
       },
       {
@@ -233,9 +240,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Поул, якого ніхто не чекав",
+        "heading": "На поулі — не Ferrari",
         "paragraphs": [
-          "Гран-прі Італії 2008 року проходив під впливом дощової погоди. Себастьян Феттель здобув поул за Toro Rosso — команду, яка зазвичай боролася далеко від лідерів. Легко пояснити цей результат вдалою кваліфікацією. Дощ справді здатен змінити звичний порядок сил, а момент виїзду на трасу має значення. Але таке пояснення забуває про пілота, який однаково мусив знайти зчеплення, правильно загальмувати й скласти швидке коло. Сенсація була справжньою. Майстерність — теж."
+          "У Монці 2008 року поул здобула італійська команда. Але не Ferrari, а Toro Rosso. За кермом сидів 21-річний Себастьян Феттель. Дощ змішав звичний порядок сил у кваліфікації. У неділю треба було довести, що сенсація не обмежиться одним швидким колом.",
+          "Гонка стартувала за автомобілем безпеки. Коли він повернув у бокси, Феттель очолив пелотон і втримав перевагу. Він фінішував попереду Гейккі Ковалайнена й Роберта Кубіци, ставши наймолодшим переможцем Гран-прі на той час. Toro Rosso вперше виграла гонку. Дощ відкрив двері, але пройти крізь них команді довелося самій."
         ]
       },
       {
@@ -267,9 +275,10 @@ export const editorialDraftArticles = {
   "button-canada-2011": {
     "en": [
       {
-        "heading": "A race that refused to settle",
+        "heading": "Six pit-lane visits and one final chance",
         "paragraphs": [
-          "Montreal in 2011 was supposed to be another chapter in Sebastian Vettel's title defence. Instead, the Canadian Grand Prix became a test of patience. Heavy rain, a long stoppage and repeated Safety Car periods made every prediction temporary. The track was never simply wet or dry: its grip changed from corner to corner and from one restart to the next. For Jenson Button, that uncertainty brought setbacks and opportunities in almost equal measure. The race became less about holding a fixed strategy and more about staying in contention while the conditions changed around him."
+          "Jenson Button visited the pit lane six times during the 2011 Canadian Grand Prix, including a drive-through penalty. Heavy rain brought a long stoppage, while Safety Cars repeatedly bunched the cars together. Incidents sent the McLaren backwards. It was hardly the afternoon of a likely winner.",
+          "Then the track began to dry. Button switched to slicks on lap 51 and fought his way toward the front, passing Michael Schumacher and Mark Webber late in the race. Only Sebastian Vettel remained. On the final lap Vettel made a mistake, and Button took the lead. That pass was unforgettable, but without everything Button had recovered beforehand, he would never have been close enough to make it."
         ]
       },
       {
@@ -299,9 +308,10 @@ export const editorialDraftArticles = {
     ],
     "uk": [
       {
-        "heading": "Гонка, яка не хотіла визначатися",
+        "heading": "Шість заїздів на пітлейн і останній шанс",
         "paragraphs": [
-          "Монреальський етап 2011 року мав стати ще одним розділом захисту титулу Себастьяном Феттелем. Натомість Гран-прі Канади перетворився на випробування терпіння. Сильна злива, тривала зупинка й численні виїзди автомобіля безпеки робили будь-який прогноз тимчасовим. Траса не була просто мокрою чи сухою: зчеплення змінювалося від повороту до повороту й після кожного рестарту. Для Дженсона Баттона така невизначеність приносила майже порівну невдач і шансів. Головним стало не втримати незмінну стратегію, а залишатися в боротьбі, поки обставини змінювалися."
+          "Під час Гран-прі Канади 2011 року Дженсон Баттон шість разів побував на пітлейні, зокрема й через штраф. Злива надовго зупинила гонку, автомобіль безпеки раз у раз збирав пелотон докупи. Інциденти відкидали McLaren назад. На переможний день це зовсім не скидалося.",
+          "Та траса почала підсихати. На 51-му колі Баттон перейшов на сліки й прорвався вперед, наприкінці обігнавши Міхаеля Шумахера та Марка Веббера. Залишався лише Себастьян Феттель. На останньому колі той помилився, і Баттон захопив лідерство. Цей обгін став легендарним, але без попереднього повернення Баттон просто не опинився б поруч."
         ]
       },
       {
