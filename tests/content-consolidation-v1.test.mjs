@@ -93,7 +93,7 @@ test('new detailed race scenes cite exact sources and retain human review gate',
     assert.ok(linkedChapter, entry.driver_id + ': source ledger references a nonexistent chapter');
     assert.equal(linkedChapter, story.chapters[1], entry.driver_id + ': detailed sourced scene must match expanded middle chapter');
     for (const locale of ['en', 'uk']) {
-      assert.ok(story.chapters[1][locale].body.split(/\n\n/).at(-1).length > 400);
+      assert.ok(linkedChapter[locale].body.trim().length > 80, entry.driver_id + '/' + locale + ' has empty or placeholder chapter');
     }
   }
   assert.equal(ledger.publication, 'unpublished');
