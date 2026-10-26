@@ -116,6 +116,22 @@
           ],
           "source_granularity": "article_candidate_verify_page",
           "review_status": "unverified_research_draft"
+        },
+        {
+          "year": 1967,
+          "title": {
+            "en": "Clark's charge runs out of fuel",
+            "uk": "Кларку забракло пального"
+          },
+          "narrative": {
+            "en": "A puncture cost Jim Clark a lap in the 1967 Italian Grand Prix. He caught the leaders and even reclaimed first place, but fuel trouble on the final lap left him third behind winner John Surtees and Jack Brabham.",
+            "uk": "Прокол змусив Джима Кларка втратити коло на Гран-прі Італії 1967 року. Він наздогнав лідерів і знову очолив гонку, але брак пального на останньому колі залишив його третім після Джона Сертіса та Джека Бребема."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS.2EYo6UpsN0K9wLYBykTUGS"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -246,6 +262,38 @@
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "A title changes hands in Brazil",
+            "uk": "Чемпіонський переворот у Бразилії"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton led the standings before the final round, but early gearbox trouble sent him backwards. Kimi Räikkönen won the race and became world champion, one point ahead of Hamilton and Fernando Alonso.",
+            "uk": "Льюїс Гамільтон очолював чемпіонат перед фіналом, але рання проблема з коробкою передач відкинула його назад. Кімі Райкконен переміг і став чемпіоном світу, випередивши Гамільтона та Фернандо Алонсо на одне очко."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/5-reasons-we-love-the-brazilian-grand-prix.37v8PT899Wnp7v6y51sUMf"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2019,
+          "title": {
+            "en": "A dramatic finale after the titles were decided",
+            "uk": "Драматичний фініш після розіграшу титулів"
+          },
+          "narrative": {
+            "en": "Even with both titles already decided, the 2019 Brazilian Grand Prix produced extraordinary late racing. Max Verstappen won, Pierre Gasly fought Lewis Hamilton to the line for second, and Carlos Sainz inherited third in the final classification.",
+            "uk": "Навіть після визначення обох чемпіонів Гран-прі Бразилії 2019 року подарував бурхливий фінал. Макс Ферстаппен переміг, П’єр Гаслі втримав друге місце в боротьбі з Льюїсом Гамільтоном, а Карлос Сайнс зрештою посів третє місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -304,10 +352,10 @@
             "uk": "Дощовий Гран-прі Канади 2011 року завершився обгоном Себастьяна Феттеля Дженсоном Баттоном на останньому колі після неймовірного повернення в боротьбу."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+            "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2008,
@@ -318,6 +366,38 @@
           "narrative": {
             "en": "A year after surviving a violent accident at Montreal, Robert Kubica returned and won the Canadian Grand Prix. His BMW Sauber teammate Nick Heidfeld finished second, giving the team a remarkable one-two finish.",
             "uk": "Через рік після важкої аварії у Монреалі Роберт Кубіца повернувся й виграв Гран-прі Канади. Його напарник по BMW Sauber Нік Гайдфельд фінішував другим, принісши команді подвійний тріумф."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1999,
+          "title": {
+            "en": "The wall earns its nickname",
+            "uk": "Звідки взялася «Стіна чемпіонів»"
+          },
+          "narrative": {
+            "en": "Four drivers hit the wall at the last chicane in 1999, among them world champions Damon Hill, Michael Schumacher and Jacques Villeneuve. That is how a notorious barrier earned its name: the Wall of Champions.",
+            "uk": "У 1999 році в останній шикані розбили машини четверо гонщиків, зокрема чемпіони світу Деймон Гілл, Міхаель Шумахер і Жак Вільньов. Саме після цих аварій бар’єр отримав назву «Стіна чемпіонів»."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+          ],
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2007,
+          "title": {
+            "en": "Hamilton wins for the first time",
+            "uk": "Перша перемога Гамільтона"
+          },
+          "narrative": {
+            "en": "Lewis Hamilton arrived in Montreal as a rookie and won his first Formula 1 Grand Prix. Robert Kubica survived a violent crash on the same afternoon; a year later he returned to Canada and won.",
+            "uk": "Льюїс Гамільтон приїхав до Монреаля новачком і здобув першу перемогу у Формулі-1. Того ж дня Роберт Кубіца пережив страшну аварію; за рік він повернувся до Канади й переміг."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
