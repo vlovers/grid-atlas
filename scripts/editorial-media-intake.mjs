@@ -44,16 +44,22 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
         throw new Error('License requires manual review: ' + license);
       }
       const imageUrl = info.thumburl ?? info.url;
-      if (!new URL(imageUrl).hostname.endsWith('.wikimedia.org')) throw new Error('Unexpected image host');
+      const imageHost = new URL(imageUrl).hostname;
+      if (imageHost !== 'upload.wikimedia.org') throw new Error('Unexpected image host: ' + imageHost);
       const imageResponse = await fetch(imageUrl, { signal: AbortSignal.timeout(60000) });
       if (!imageResponse.ok) throw new Error('Image HTTP ' + imageResponse.status);
       const type = imageResponse.headers.get('content-type') ?? '';
       if (!/^image\/(jpeg|png|webp)$/.test(type)) throw new Error('Unexpected image MIME ' + type);
+      const declaredLength = Number(imageResponse.headers.get('content-length') ?? 0);
+      if (declaredLength > 15_000_000) throw new Error('Image exceeds 15MB');
       const bytes = Buffer.from(await imageResponse.arrayBuffer());
-      if (bytes.length > 15_000_000) throw new Error('Image exceeds 15MB');
+      if (bytes.length > 15_000_000 || bytes.length === 0) throw new Error('Invalid image size');
+      const jpeg = bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
+      const png = bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10]));
+      const webp = bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP';
+      if (!(type === 'image/jpeg' && jpeg || type === 'image/png' && png || type === 'image/webp' && webp)) throw new Error('Image bytes do not match declared MIME');
       const ext = type === 'image/png' ? 'png' : type === 'image/webp' ? 'webp' : 'jpg';
       const filename = slug + '.' + ext;
-      await writeFile(resolve(dir, filename), bytes, { flag: 'wx' });
       await writeFile(resolve(dir, slug + '.json'), JSON.stringify({
         title: page.title, sourcePage: info.descriptionurl, originalUrl: info.url,
         license, licenseUrl: meta.LicenseUrl?.value ?? '',
@@ -62,6 +68,7 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
         stagedFile: filename, retrievedAt: new Date().toISOString(),
         status: 'UNREVIEWED — DO NOT PUBLISH',
       }, null, 2) + '\n', { flag: 'wx' });
+      await writeFile(resolve(dir, filename), bytes, { flag: 'wx' });
       console.log('Staged ' + slug + ' (' + bytes.length + ' bytes); review ' + slug + '.json before publishing.');
     } catch (error) {
       console.error(slug + ': ' + error.message);
