@@ -1,6 +1,10 @@
 name: Stage editorial photo candidates
 
 on:
+  pull_request:
+    paths:
+      - scripts/editorial-media-intake.mjs
+      - .github/workflows/editorial-photo-intake.yml
   push:
     branches:
       - editorial/people-who-changed-f1-20261025
@@ -35,7 +39,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.story }}" = "all" ]; then
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] || [ "${{ inputs.story }}" = "all" ]; then
             node scripts/editorial-media-intake.mjs --all
           else
             node scripts/editorial-media-intake.mjs --slug "${{ inputs.story }}"
