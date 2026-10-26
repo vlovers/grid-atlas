@@ -13,7 +13,7 @@ for (const locale of ["uk", "en"] as const) {
     const kind = page.getByLabel(
       t.timeMachineFocusType,
     );
-    await expect(kind).toHaveValue("driver");
+    await expect(kind).toContainText(t.driver);
     await page
       .getByLabel(
         locale === "uk"
@@ -55,8 +55,8 @@ for (const locale of ["uk", "en"] as const) {
     await expect(removed).toBeVisible();
     await expect(removed.getByText("1950", { exact: true })).toBeVisible();
     await expect(
-      removed.getByText(
-        locale === "uk" ? "Записи результатів" : "Result entries",
+      removed.locator("dt").getByText(
+        locale === "uk" ? "Результати гонок" : "Race results", { exact: true },
       ),
     ).toBeVisible();
     await expect(removed.getByRole("definition")).toHaveText(["1", "1", "1"]);

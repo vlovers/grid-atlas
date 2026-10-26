@@ -1,3 +1,4 @@
+import { EditorialSelect } from '@/components/editorial/select';
 import { glossary } from '@/content/glossary';
 import { ArchiveHighlights } from '@/components/editorial/archive-highlights';
 import { RecordGraphic } from '@/components/editorial/record-graphic';
@@ -110,7 +111,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       <h2>{locale === 'uk' ? 'Сезон команди' : 'Team season'}</h2>
       <form method="get" action={`/${locale}/constructors/${id}#constructor-season`} className={styles.seasonPicker}>
         <label htmlFor="constructor-season-select">{e.seasonLabel}</label>
-        <select id="constructor-season-select" name="season" defaultValue={selectedSeason.year}>{seasons.map(season => <option key={season.year} value={season.year}>{season.year}</option>)}</select>
+        <EditorialSelect id="constructor-season-select" name="season" defaultValue={selectedSeason.year}>{seasons.map(season => <option key={season.year} value={season.year}>{season.year}</option>)}</EditorialSelect>
         <button type="submit">{e.viewSeason} ↗</button>
       </form>
       <ParticipationHistory kind="constructor" id={team.id} name={team.name} rows={career?.participation??[]} seasons={seasons.map(season=>season.year)} selectedYear={selectedSeason.year} locale={locale}/>

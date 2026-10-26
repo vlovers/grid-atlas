@@ -1,0 +1,42 @@
+[
+  {
+    "file": "cormorant-cyrillic.woff2",
+    "ukrainian_glyphs": {
+      "Ґ": true,
+      "ґ": true,
+      "Є": true,
+      "є": true,
+      "І": true,
+      "і": true,
+      "Ї": true,
+      "ї": true
+    },
+    "axes": [
+      {
+        "tag": "wght",
+        "minimum": 300.0,
+        "maximum": 700.0
+      }
+    ]
+  },
+  {
+    "file": "manrope-cyrillic.woff2",
+    "ukrainian_glyphs": {
+      "Ґ": true,
+      "ґ": true,
+      "Є": true,
+      "є": true,
+      "І": true,
+      "і": true,
+      "Ї": true,
+      "ї": true
+    },
+    "axes": [
+      {
+        "tag": "wght",
+        "minimum": 200.0,
+        "maximum": 800.0
+      }
+    ]
+  }
+]

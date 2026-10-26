@@ -1,4 +1,5 @@
 'use client';
+import { EditorialSelect } from '@/components/editorial/select';
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useMemo, useState } from 'react';
@@ -40,15 +41,15 @@ const labels: Record<string,string> = {
  return <section aria-label={t('relationshipSearch')}>
    <div className="lineage-controls">
      <label>{t('teamSearch')} <input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder={t('teamPlaceholder')} /></label>
-     <label>{t('entityType')} <select value={kind} onChange={event => setKind(event.target.value as typeof kind)}>
+     <label>{t('entityType')} <EditorialSelect value={kind} onValueChange={value => setKind(value as typeof kind)}>
        <option value="all">{t('all')}</option><option value="constructor">{t('constructorsTitle')}</option><option value="entrant">{t('entrants')}</option>
-     </select></label>
-     <label>{t('relationType')} <select value={relation} onChange={event => setRelation(event.target.value)}>
+     </EditorialSelect></label>
+     <label>{t('relationType')} <EditorialSelect value={relation} onValueChange={value => setRelation(value)}>
        <option value="all">{t('allRelations')}</option>{relations.map(value => <option key={value} value={value}>{labels[value] ?? value}</option>)}
-     </select></label>
-     <label>{t('sort')} <select value={sort} onChange={event => setSort(event.target.value as typeof sort)}>
+     </EditorialSelect></label>
+     <label>{t('sort')} <EditorialSelect value={sort} onValueChange={value => setSort(value as typeof sort)}>
        <option value="oldest">{t('oldest')}</option><option value="newest">{t('newest')}</option><option value="name">{t('teamName')}</option>
-     </select></label>
+     </EditorialSelect></label>
    </div>
    <div className="lineage-controls"><button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>{t('list')}</button><button type="button" aria-pressed={view === 'map'} onClick={() => setView('map')}>{t('map')}</button></div>
    <p role="status">{t('edgeCount', { count: visible.length, total: edges.length })}</p>

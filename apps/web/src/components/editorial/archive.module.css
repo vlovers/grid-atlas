@@ -50,3 +50,8 @@
 @media (max-width: 700px) { .plate { min-height: 300px; } .marker { font-size: 5rem; } .decade { grid-template-columns: 1fr; gap: 1rem; } .yearLinks { grid-template-columns: repeat(2,minmax(0,1fr)); } .decade h3 small { display: inline; margin-left: 1rem; } }
 @media (prefers-reduced-motion: no-preference) { .feature h3 a, .yearLinks a, .eraJump a { transition: color var(--motion-micro), border-color var(--motion-micro); } }
 @media (forced-colors: active) { .plate, .featureGrid, .feature, .context { border-color: CanvasText; } }
+
+.featureGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.feature h3 { font-size: clamp(1.65rem, 2.3vw, 2.5rem); line-height: 1.18; letter-spacing: 0; overflow-wrap: break-word; }
+.feature > a:last-child { margin-top: auto; padding-top: 1rem; }
+@media (max-width: 900px) { .featureGrid { grid-template-columns: 1fr; } }

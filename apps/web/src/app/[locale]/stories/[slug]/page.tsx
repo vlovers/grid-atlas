@@ -1,3 +1,4 @@
+import { EditorialSelect } from '@/components/editorial/select';
 import { glossary } from '@/content/glossary';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -70,7 +71,7 @@ export default async function DriverStory({ params, searchParams }: Props) {
       <p className={styles.eyebrow}>01 / {uk ? 'КРІЗЬ РОКИ' : 'THROUGH THE YEARS'}</p><h2 id="seasons-title">{uk ? 'Змініть сезон. Змініть перспективу.' : 'Change the season. Change the perspective.'}</h2>
       <p>{uk ? 'Редакційна добірка років — початок дослідження, а не рейтинг досягнень.' : 'These curated years are starting points, not a ranking of achievements.'}</p>
       <nav className={styles.seasonRail} aria-label={uk ? 'Обрані сезони' : 'Selected seasons'}>{featured.map(y => <a key={y} href={`?year=${y}#story-seasons`} aria-current={year === y ? 'true' : undefined}><span>{y}</span><small>{uk ? 'Відкрити записи' : 'Open records'} ↗</small></a>)}</nav>
-      {years.length > 0 && <form action={`/${locale}/stories/${slug}#story-seasons`} className={styles.selector}><label htmlFor="story-year">{uk ? 'Будь-який зафіксований сезон' : 'Any observed season'}</label><select id="story-year" name="year" defaultValue={year ?? undefined}>{years.map(y => <option key={y} value={y}>{y}</option>)}</select><button type="submit">{uk ? 'Показати' : 'Explore'}</button></form>}
+      {years.length > 0 && <form action={`/${locale}/stories/${slug}#story-seasons`} className={styles.selector}><label htmlFor="story-year">{uk ? 'Будь-який зафіксований сезон' : 'Any observed season'}</label><EditorialSelect id="story-year" name="year" defaultValue={year ?? undefined}>{years.map(y => <option key={y} value={y}>{y}</option>)}</EditorialSelect><button type="submit">{uk ? 'Показати' : 'Explore'}</button></form>}
       {year !== null && <div className={styles.seasonPanel} data-testid="story-selected-season"><strong className={styles.bigYear}>{year}</strong><div><h3>{uk ? 'Слідами результатів' : 'Follow the results'}</h3><p>{labels.entries}: {selected.reduce((n, r) => n + r.result_entries, 0)} · {labels.races}: {new Set(selectedRecords.map(r => r.race_id)).size}</p>
         {selected.map(row => <p key={row.related_id}><a href={`/${locale}/constructors/${row.related_id}`}>{row.related_name}</a> · {row.result_entries} {labels.entries.toLowerCase()} · <a href={`/${locale}/atlas?kind=driver&id=${driver.id}&year=${year}&selected=${row.related_id}`}>{uk ? 'Відкрити зв’язок в Атласі' : 'Open connection in Atlas'} ↗</a></p>)}<a href={`/${locale}/seasons/${year}`}>{uk ? 'Усі гонки сезону' : 'All season races'} →</a></div></div>}
       {!years.length && <p>{uk ? 'Немає імпортованих сезонів.' : 'No imported seasons.'}</p>}

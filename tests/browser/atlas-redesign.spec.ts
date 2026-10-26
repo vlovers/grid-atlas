@@ -11,8 +11,9 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goto(`/${locale}`);
     const home = page.getByTestId('atlas-home');
     await expect(home.getByRole('heading', { level: 1 })).toHaveText(editorialCopy[locale].homeTitle);
-    await expect(home.getByTestId('career-signature')).toContainText('Synthetic Driver 001');
-    await expect(home.getByTestId('career-signature')).toContainText(copy.noSignature);
+    await expect(home.getByTestId('career-signature')).toHaveCount(0);
+    await expect(home.getByTestId('home-season-cover')).toBeVisible();
+    await expect(home.getByTestId('career-signature')).toHaveCount(0);
     const decades = home.getByRole('navigation', { name: copy.decade });
     await expect(decades.getByRole('button')).toHaveCount(1);
     await decades.getByRole('button').press('Enter');

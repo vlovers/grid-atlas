@@ -1,0 +1,13 @@
+.trigger { display: inline-flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 44px; width: 100%; min-width: 0; max-width: 100%; padding: .7rem .9rem; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 0; font: 400 .9rem/1.5 var(--font-sans); text-align: left; cursor: pointer; }
+.trigger > span:first-child { overflow-wrap: anywhere; }
+.trigger:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+.trigger[data-state=open] { border-color: var(--gold); }
+.menu { z-index: 110; background: var(--surface-raised); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 12px 40px #0008; max-height: min(22rem, var(--radix-select-content-available-height)); width: var(--radix-select-trigger-width); min-width: min(12rem, calc(100vw - 24px)); max-width: calc(100vw - 24px); overflow: hidden; font: .9rem/1.5 var(--font-sans); }
+.option { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 44px; padding: .65rem .9rem; overflow-wrap: anywhere; cursor: pointer; outline: none; }
+.option[data-highlighted] { background: var(--burgundy); color: var(--ink); outline: 2px solid var(--focus-ring); outline-offset: -2px; }
+.option[data-state=checked] { font-weight: 700; }
+.option[data-disabled] { opacity: .5; cursor: default; }
+.scroll { text-align: center; padding: .3rem; background: var(--surface); }
+@media (forced-colors: active) { .trigger, .menu { border: 1px solid ButtonText; background: Canvas; color: CanvasText; } .option[data-highlighted] { outline-color: Highlight; } }
+
+.group { color: var(--muted); font-size: .7rem; padding: .75rem .9rem .3rem; border-top: 1px solid var(--line); }

@@ -1,3 +1,4 @@
+import { chooseOption } from '../browser/select-option';
 import { test, expect } from '@playwright/test';
 import { releasePilots } from '../../apps/web/src/components/stories/release-model';
 for (const locale of ['uk', 'en'] as const) {
@@ -44,7 +45,7 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(page.getByTestId('history-atlas')).toBeVisible();
     await page.goBack();
     await expect(page.getByTestId('story-selected-season')).toContainText('1988');
-    await page.getByLabel(uk ? 'Будь-який зафіксований сезон' : 'Any observed season').selectOption('1993');
+    await chooseOption(page.getByLabel(uk ? 'Будь-який зафіксований сезон' : 'Any observed season'), '1993');
     await page.locator('main form button').press('Enter');
     await expect(page).toHaveURL(/year=1993/);
     await expect(page.getByTestId('story-selected-season')).toContainText('1993');

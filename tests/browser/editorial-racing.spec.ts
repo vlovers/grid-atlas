@@ -1,3 +1,4 @@
+import { chooseOption } from './select-option';
 import { mediaCollectionCopy } from '../../apps/web/src/components/media/collection-copy';
 import { test, expect } from '@playwright/test';
 import { editorialCopy } from '../../apps/web/src/components/editorial/copy';
@@ -17,7 +18,8 @@ for (const locale of ['uk', 'en'] as const) {
         const hero = page.getByTestId('editorial-hero');
         await expect(hero).toBeVisible();
         await expect(page.locator('main h1')).toHaveCount(1);
-        await expect(hero.locator('[data-editorial-media="archive-composition"]')).toContainText(t.plateNote);
+        if (path) await expect(hero.locator('[data-editorial-media="archive-composition"]')).toContainText(t.plateNote);
+        else await expect(hero.getByTestId('home-season-cover')).toBeVisible();
         await expect(hero.locator('img')).toHaveCount(0);
         await page.evaluate(() => document.fonts.ready);
         expect(await page.locator('h1').evaluate(el => getComputedStyle(el).fontFamily)).toContain('Atlas Serif');
@@ -38,7 +40,7 @@ for (const locale of ['uk', 'en'] as const) {
       await page.goto(`http://127.0.0.1:3340/${locale}/constructors/1?season=1951`);
       const picker = page.getByLabel(t.seasonLabel, { exact: true });
       await expect(picker).toHaveValue('1950');
-      await picker.selectOption('1950');
+      await chooseOption(picker, '1950');
       await page.getByRole('button', { name: `${t.viewSeason} ↗`, exact: true }).press('Enter');
       await expect(page).toHaveURL(new RegExp(`/${locale}/constructors/1\\?season=1950#constructor-season$`));
       await expect(picker).toHaveValue('1950');

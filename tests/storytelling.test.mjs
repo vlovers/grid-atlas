@@ -22,11 +22,12 @@ test('season stories are bounded, deterministic and include genuine seasons with
   assert.equal(seasons[0].year, 1950);
   assert.deepEqual(seasonStories([]), []);
 });
-test('media copy is complete in both languages and marks original art and separately gated rivalry narratives', () => {
+test('media copy is complete in both languages and marks original art without inferring a rivalry from shared seasons', () => {
   assert.deepEqual(Object.keys(storyCopy.en).sort(), Object.keys(storyCopy.uk).sort());
   for (const copy of Object.values(storyCopy)) assert.ok(Object.values(copy).every(s => typeof s === 'string' && s.trim()));
   assert.match(storyCopy.en.circuitArt, /not a map or historical layout/);
-  assert.match(storyCopy.en.narrativeNote, /separate editorial approval/);
+  assert.match(storyCopy.en.narrativeNote, /races and teams of two drivers/);
+  assert.doesNotMatch(storyCopy.en.narrativeNote, /rivalry|champion/i);
   assert.match(storyCopy.en.seasonNote, /not championship standings/);
 });
 test('art is decorative original code; historical publication manifests and remote media are not imported', () => {

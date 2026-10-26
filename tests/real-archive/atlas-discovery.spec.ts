@@ -1,3 +1,4 @@
+import { chooseOption } from '../browser/select-option';
 import { test, expect } from '@playwright/test';
 import { atlasCopy } from '../../apps/web/src/components/atlas/copy';
 
@@ -16,7 +17,8 @@ for (const locale of ['uk', 'en'] as const) {
     page.on('request', r => { if (new URL(r.url()).hostname !== '127.0.0.1') remote.push(r.url()); });
     await page.goto(`/${locale}`);
     const home = page.getByTestId('atlas-home');
-    await expect(home.getByTestId('career-signature')).toContainText(senna.name);
+    await expect(home.getByTestId('home-race-cover')).toContainText(senna.name);
+    await expect(home.getByTestId('career-signature')).toHaveCount(0);
     await expect(home).toContainText(new Intl.NumberFormat(locale).format(seasons.length));
     const latest = Math.max(...seasons.map((s: { year: number }) => s.year));
     const decade = Math.floor(latest / 10) * 10;
@@ -32,13 +34,15 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goBack();
     await expect(home).toBeVisible();
     const form = home.locator('form[action$="/time-machine"]');
-    await expect(form.getByLabel(t.from)).toHaveValue(String(years[0]));
-    await expect(form.getByLabel(t.to)).toHaveValue(String(years.at(-1)));
-    await form.getByLabel(t.to).selectOption(String(years[1]));
-    await form.getByLabel(t.from).selectOption(String(years.at(-2)));
+    await expect(form.getByLabel(t.from)).toHaveText(String(years[0])+'⌄');
+    await expect(form.getByLabel(t.to)).toHaveText(String(years.at(-1))+'⌄');
+    await chooseOption(form.getByLabel(t.to), String(years[1]));
+    await chooseOption(form.getByLabel(t.from), String(years.at(-2)));
     // Moving the earlier year ahead of the later year repairs the pair, never submits a reversed range.
-    await expect(form.getByLabel(t.to)).toHaveValue(String(years.at(-1)));
-    await expect(form.getByLabel(t.to).getByRole('option')).toHaveCount(1);
+    await expect(form.getByLabel(t.to)).toHaveText(String(years.at(-1))+'⌄');
+    await form.getByLabel(t.to).click();
+    await expect(page.getByRole('listbox').getByRole('option')).toHaveCount(1);
+    await page.getByRole('listbox').press('Escape');
     await form.getByRole('button', { name: `${t.compare} ↗`, exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/time-machine\\?kind=driver&id=${senna.id}&from=${years.at(-2)}&to=${years.at(-1)}$`));
     await expect(page.getByRole('heading', { level: 2, name: senna.name, exact: true })).toBeVisible();

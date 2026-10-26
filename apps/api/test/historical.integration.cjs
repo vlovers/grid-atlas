@@ -114,6 +114,41 @@ test('catalogues search names and source IDs case-insensitively with bounded pag
   assert.equal((await get('circuits?q=_')).length, 1);
 });
 
+test('catalogue summaries count distinct races and shared wins without inventing starts or missing titles', async () => {
+  const constructors = await get('constructors');
+  const team = constructors.find(row => row.id === '1');
+  assert.equal(team.races, 1);
+  assert.equal(team.wins, 1); // Two shared-car winner rows, one Grand Prix.
+  assert.equal(team.titles, null); // No classification evidence is not zero titles.
+  assert.equal(team.first_season, 1950);
+  for (const driver of await get('drivers')) {
+    assert.equal(driver.races, 1);
+    assert.equal(driver.wins, 1);
+    assert.equal(driver.titles, null);
+    assert.equal(Object.hasOwn(driver, 'starts'), false);
+  }
+  const circuit = (await get('circuits')).find(row => row.id === '1');
+  assert.equal(circuit.races, 1);
+  assert.equal(circuit.first_season, 1950);
+});
+
+test('catalogue titles require final source classifications and ignore a provisional title flag', async () => {
+  const hash = 'c'.repeat(64);
+  try {
+    await db.query('INSERT INTO historical_seasons(year) VALUES(2026) ON CONFLICT DO NOTHING');
+    await db.query(`INSERT INTO historical_championship_standings
+      (season_year,entity_kind,position_display_order,position_number,position_text,driver_id,points,championship_won,release_id,source_locator,content_hash)
+      VALUES (2026,'driver',1,1,'1',1,1,true,1,'synthetic/provisional', $1)`, [hash]);
+    assert.equal((await get('drivers')).find(row => row.id === '1').titles, null);
+    await db.query(`INSERT INTO historical_championship_standings
+      (season_year,entity_kind,position_display_order,position_number,position_text,driver_id,points,championship_won,release_id,source_locator,content_hash)
+      VALUES (1950,'driver',1,1,'1',1,1,true,1,'synthetic/final', $1)`, [hash]);
+    assert.equal((await get('drivers')).find(row => row.id === '1').titles, 1);
+  } finally {
+    await db.query('DELETE FROM historical_championship_standings WHERE driver_id=1 AND content_hash=$1', [hash]);
+  }
+});
+
 test('circuit history, named race, date-only values and result links agree', async () => {
   const [circuit] = await get('circuits/1');
   assert.equal(circuit.races, 1);

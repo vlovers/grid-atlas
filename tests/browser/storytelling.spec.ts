@@ -10,7 +10,7 @@ for (const locale of ['uk', 'en'] as const) {
     page.on('request', request => { if (!['127.0.0.1', 'localhost'].includes(new URL(request.url()).hostname)) remote.push(request.url()); });
     await page.goto(`/${locale}`);
     const home = page.getByTestId('atlas-home');
-    await expect(home.locator('[data-editorial-media="archive-composition"]').first()).toBeVisible();
+    await expect(home.getByTestId('home-season-cover')).toBeVisible();
     await expect(home.getByText(t.noMoments, { exact: true })).toBeVisible();
     await expect(home.getByTestId('season-perspectives')).toContainText(t.narrativeEmpty);
     await expect(home.getByTestId('season-perspectives').locator('a[href*="/explorer/"]')).toHaveCount(0);

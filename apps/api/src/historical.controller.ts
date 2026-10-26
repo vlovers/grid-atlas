@@ -131,10 +131,20 @@ export class HistoricalController {
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
     const q = searchTerm(query);
-    const { rows } = await this.db.query(`SELECT d.id::text AS id, d.display_name AS name, e.external_id
-      FROM historical_drivers d JOIN external_identities e ON e.id = d.external_identity_id
-      WHERE strpos(lower(d.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
-      ORDER BY d.display_name, d.id LIMIT $1 OFFSET $2`, [l, o, q]);
+    const { rows } = await this.db.query(`WITH page AS (
+        SELECT d.id AS entity_id, d.id::text AS id, d.display_name AS name, e.external_id
+        FROM historical_drivers d JOIN external_identities e ON e.id=d.external_identity_id
+        WHERE strpos(lower(d.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+        ORDER BY d.display_name, d.id LIMIT $1 OFFSET $2
+      ) SELECT page.id, page.name, page.external_id, totals.*, (SELECT CASE WHEN COUNT(*) FILTER (WHERE st.season_year < 2026)=0 THEN NULL ELSE COUNT(DISTINCT st.season_year)
+          FILTER (WHERE st.championship_won AND st.season_year < 2026)::int END
+          FROM historical_championship_standings st WHERE st.driver_id=page.entity_id) AS titles
+      FROM page CROSS JOIN LATERAL (SELECT COUNT(DISTINCT rr.race_id)::int AS races,
+          COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number=1)::int AS wins,
+          MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season
+          FROM historical_race_results rr JOIN historical_races r ON r.id=rr.race_id
+          WHERE rr.driver_id=page.entity_id) totals
+      ORDER BY page.name, page.entity_id`, [l, o, q]);
     return { data: rows, limit: l, offset: o };
   }
 
@@ -268,10 +278,20 @@ export class HistoricalController {
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
     const q = searchTerm(query);
-    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id
-      FROM historical_constructors c JOIN external_identities e ON e.id = c.external_identity_id
-      WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
-      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o, q]);
+    const { rows } = await this.db.query(`WITH page AS (
+        SELECT c.id AS entity_id, c.id::text AS id, c.display_name AS name, e.external_id
+        FROM historical_constructors c JOIN external_identities e ON e.id=c.external_identity_id
+        WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+        ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2
+      ) SELECT page.id, page.name, page.external_id, totals.*, (SELECT CASE WHEN COUNT(*) FILTER (WHERE st.season_year < 2026)=0 THEN NULL ELSE COUNT(DISTINCT st.season_year)
+          FILTER (WHERE st.championship_won AND st.season_year < 2026)::int END
+          FROM historical_championship_standings st WHERE st.constructor_id=page.entity_id) AS titles
+      FROM page CROSS JOIN LATERAL (SELECT COUNT(DISTINCT rr.race_id)::int AS races,
+          COUNT(DISTINCT rr.race_id) FILTER (WHERE rr.position_number=1)::int AS wins,
+          MIN(r.season_year) AS first_season, MAX(r.season_year) AS last_season
+          FROM historical_race_results rr JOIN historical_races r ON r.id=rr.race_id
+          WHERE rr.constructor_id=page.entity_id) totals
+      ORDER BY page.name, page.entity_id`, [l, o, q]);
     return { data: rows, limit: l, offset: o };
   }
 
@@ -351,10 +371,15 @@ export class HistoricalController {
     const l = integer(limit, 50, 1, 100, 'limit');
     const o = integer(offset, 0, 0, 100000, 'offset');
     const q = searchTerm(query);
-    const { rows } = await this.db.query(`SELECT c.id::text AS id, c.display_name AS name, e.external_id
-      FROM historical_circuits c JOIN external_identities e ON e.id = c.external_identity_id
-      WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
-      ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2`, [l, o, q]);
+    const { rows } = await this.db.query(`WITH page AS (
+        SELECT c.id AS entity_id, c.id::text AS id, c.display_name AS name, e.external_id
+        FROM historical_circuits c JOIN external_identities e ON e.id=c.external_identity_id
+        WHERE strpos(lower(c.display_name), lower($3)) > 0 OR strpos(lower(e.external_id), lower($3)) > 0
+        ORDER BY c.display_name, c.id LIMIT $1 OFFSET $2
+      ) SELECT page.id, page.name, page.external_id, totals.*
+      FROM page CROSS JOIN LATERAL (SELECT COUNT(*)::int AS races, MIN(r.season_year) AS first_season,
+          MAX(r.season_year) AS last_season FROM historical_races r WHERE r.circuit_id = page.entity_id) totals
+      ORDER BY page.name, page.entity_id`, [l, o, q]);
     return { data: rows, limit: l, offset: o };
   }
 
