@@ -511,3 +511,10 @@
 .editorialAct h3{max-width:18ch;line-height:1.2}
 @media(max-width:900px){.editorialActs:before{display:none}.editorialAct{min-height:260px}}
 @media(max-width:560px){.editorialAct{min-height:0}.editorialAct h3{max-width:none}}
+
+/* Let the history lead: compact navigation before the long read, references after it. */
+.editorialReadingPaths{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.25rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.editorialReadingPaths a{display:inline-flex;align-items:center;min-height:44px;padding:.6rem .25rem;text-underline-offset:.25em;font-weight:650}
+.editorialReadingPaths .editorialReadingPrimary{padding:.7rem 1.15rem;background:var(--accent-ink);color:var(--surface);text-decoration:none}
+.editorialReadingPaths a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:560px){.editorialReadingPaths{gap:.35rem 1rem}.editorialReadingPaths .editorialReadingPrimary{width:100%;justify-content:center}}
