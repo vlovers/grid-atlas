@@ -176,10 +176,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "One classified result, two competing memories",
+        "heading": "The fight that could not change the winner",
         "paragraphs": [
-          "Dijon's final classification supplies a simple sequence: Jabouille first, Villeneuve second, Arnoux third. It gives Renault the win, Ferrari the runner-up place and Renault another podium finish. That is the framework a reader can check against the archive; it is not a description of how the last laps looked from the grandstands.",
-          "The better story lies in the contrast. The leader's achievement helped establish Renault's turbo programme as a Grand Prix winner. The battle behind him supplied a different sort of spectacle: two cars fighting over second as if it were the only place that mattered. Remembering Villeneuve and Arnoux is no reason to write Jabouille out of the race."
+          "Jabouille had won the French Grand Prix, but the fight that filled the closing moments was behind him. Villeneuve and Arnoux were contesting the next two positions. They traded places, ran side by side and touched wheels as neither gave up second without a fight.",
+          "The flag separated them: Ferrari ahead of the second Renault. It was a rare race where two different achievements deserved to survive in memory. Jabouille delivered the result that mattered to the Renault programme; Villeneuve and Arnoux delivered the contest that people replayed. Neither story needs to erase the other."
         ]
       },
       {
@@ -213,10 +213,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Один протокол — дві різні пам’ятні події",
+        "heading": "Дуель, яка не могла змінити переможця",
         "paragraphs": [
-          "У підсумковому протоколі Діжона все просто: Жабуй — перший, Вільнев — другий, Арну — третій. Renault здобула перемогу й ще одне місце на подіумі, Ferrari фінішувала між двома її болідами. Ці позиції можна перевірити в архіві, але сама таблиця не передає напруги останніх кіл.",
-          "У гонки залишилися два сюжети. Попереду Жабуй довів до перемоги турбомотор Renault. Позаду два гонщики відчайдушно змагалися за друге місце. Це не применшує досягнення переможця й не робить боротьбу за друге боротьбою за перше. Саме тому історія Діжона цікавіша за одне число в колонці результатів."
+          "Жабуй здобув перемогу в Гран-прі Франції, але наприкінці погляди були прикуті до боротьби позаду нього. Вільньов та Арну змагалися за два наступні місця. Вони мінялися позиціями, їхали поруч і торкалися колесами: ніхто не хотів віддавати друге місце без бою.",
+          "Прапор розділив їх: Ferrari попереду другого Renault. Це був рідкісний випадок, коли пам'яті заслуговували два різні досягнення. Жабуй приніс результат, важливий для програми Renault; Вільньов і Арну подарували дуель, яку переглядають знову й знову. Жодна історія не повинна витісняти іншу."
         ]
       },
       {
@@ -252,10 +252,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Why the team name belongs in the headline",
+        "heading": "The rain did not drive the car",
         "paragraphs": [
-          "A first-place entry on its own can make Vettel's Monza win look like the predictable opening chapter of his later Red Bull career. It was not. In September 2008 his winning car was entered by Toro Rosso, a separate Formula 1 constructor from Red Bull Racing. The identity of the team is part of the surprise, not a technical footnote.",
-          "That distinction also changes the way to read the weekend. The rain helped unsettle the usual qualifying order, yet Vettel still needed to hold the lead through the race and its stops. Calling it a Red Bull Racing win would erase the achievement of the people whose car actually finished first. A famous driver cannot be detached from the team that made the result possible."
+          "Wet weather scrambled expectations at Monza, but it did not put Vettel on pole by itself. He still had to deliver the lap in qualifying. Once the Grand Prix began behind the Safety Car, he faced the harder task of controlling a race that could be lost at every change of grip or stop.",
+          "The Toro Rosso came back to the front as strategies unfolded. Vettel crossed the line ahead of Kovalainen and Kubica. An underdog result is sometimes described as luck; this one had a visible sequence of decisions and laps between surprise on Saturday and victory on Sunday."
         ]
       },
       {
@@ -289,10 +289,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Чому назва команди тут вирішальна",
+        "heading": "Дощ не керував болідом",
         "paragraphs": [
-          "Знаючи подальшу кар’єру Феттеля, легко сприйняти Монцу як ранню перемогу Red Bull Racing. Та у вересні 2008-го його болід представляв Toro Rosso — окремого конструктора Формули-1. Для цієї історії назва команди важлива не менше за ім’я гонщика: саме вона робить результат настільки несподіваним.",
-          "Дощ змінив звичний порядок у кваліфікації, але не звільнив Феттеля від потреби втримати перевагу в самій гонці. Назвати цю перемогу здобутком Red Bull Racing означало б стерти внесок людей, чия машина насправді приїхала першою. Історію молодого пілота неможливо відділити від команди, яка дала йому цей шанс."
+          "Дощ зруйнував очікуваний порядок сил у Монці, але сам по собі не посадив Феттеля на поул. Швидке коло у кваліфікації йому довелося проїхати власноруч. Після старту за сейфті-каром перед ним постало складніше завдання: вести гонку, в якій усе могли змінити зчеплення або пітстоп.",
+          "Коли зупинки суперників завершилися, Toro Rosso знову опинилася попереду. Феттель фінішував перед Ковалайненом і Кубіцею. Успіх аутсайдера легко назвати везінням, але між суботньою несподіванкою та недільною перемогою були цілком реальні кола й рішення."
         ]
       },
       {
@@ -328,9 +328,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The laps that brought Button back",
+        "heading": "Close enough to force an error",
         "paragraphs": [
-          "Button's sixth visit to the pit lane came on lap 51, when he switched from intermediates to slick tyres as the circuit dried. He was still nowhere near a straightforward victory. A later Safety Car bunched the field; after the restart, Button moved past Webber following an error at the final chicane on lap 64 and then overtook Schumacher on lap 65. Only Vettel remained. Button had made the gap small enough to threaten the leader, and Vettel's final-lap mistake gave him the chance. It is a better story than a simple miracle comeback because each of those steps had to happen."
+          "By the late laps the field had changed beyond recognition from the rain-soaked opening. Button's switch to slick tyres had helped put him on the right path as the circuit dried. He passed Webber and Schumacher, leaving Vettel ahead.",
+          "The final-lap mistake came from the leader, not from a prearranged script. Button was close enough to profit, and that proximity had taken most of the race to create. It is why the famous last pass should be read as the consequence of a long recovery rather than the entire explanation for the win."
         ]
       },
       {
@@ -364,9 +365,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Кола, на яких Баттон повернувся",
+        "heading": "Достатньо близько, щоб скористатися помилкою",
         "paragraphs": [
-          "На 51-му колі Баттон ушосте заїхав на пітлейн і змінив проміжні шини на сліки: траса почала підсихати. До перемоги ще було далеко. Пізніше автомобіль безпеки знову зібрав пелотон. Після рестарту Баттон скористався помилкою Веббера в останній шикані на 64-му колі, а на 65-му обігнав Шумахера. Попереду залишився тільки Феттель. Баттон уже скоротив відрив достатньо, щоб атакувати лідера, і помилка Себастьяна на останньому колі відкрила шлях до перемоги. У цій історії цікаве не диво, а кожен крок, без якого фіналу просто не сталося б."
+          "На останніх колах пелотон уже зовсім не нагадував той, що стартував під зливою. Перехід Баттона на сліки допоміг йому, коли траса почала підсихати. Він пройшов Веббера та Шумахера. Попереду залишався лише Феттель.",
+          "На останньому колі помилився лідер. Баттон опинився досить близько, щоб скористатися шансом, але до цієї дистанції він пробивався майже всю гонку. Тому знаменитий вирішальний обгін — наслідок довгого повернення, а не повне пояснення перемоги."
         ]
       },
       {
@@ -402,9 +404,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Lap 62 changed both races",
+        "heading": "Two ways for a first win to disappear",
         "paragraphs": [
-          "At Sakhir, George Russell led for Mercedes until a late Safety Car reshaped the strategies. On lap 62, Mercedes brought in both cars and fitted Russell with tyres intended for Valtteri Bottas. Russell had to stop again to correct the error. He fought back toward the front, only for a puncture to send him to the pits yet again. Pérez, who had climbed from the back after his first-lap stop, was ready to inherit the lead. He led the restart and kept the position to the flag. One driver's recovery and another's ruined opportunity reached their turning point in the same stretch of the race."
+          "Russell's day seemed to be coming together in a Mercedes. Then the late Safety Car changed the rhythm. A tyre mix-up at the team's stop forced him back into the pits, and subsequent tyre trouble ended the recovery he had begun.",
+          "Pérez was already moving through the field after his first-lap setback. The failures elsewhere did not complete his comeback for him; he had placed his Racing Point where it could benefit. Sakhir's final order put Pérez first, Ocon second and Stroll third. Russell's lost chance remains part of the drama, but it cannot be counted as a victory."
         ]
       },
       {
@@ -438,9 +441,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "62-ге коло змінило все",
+        "heading": "Як може зникнути шанс на першу перемогу",
         "paragraphs": [
-          "У Сахірі Джордж Расселл лідирував за Mercedes, поки пізній автомобіль безпеки не змінив стратегії команд. На 62-му колі Mercedes покликала в бокси обидва боліди, але Расселлу помилково встановили шини, призначені Валттері Боттасу. Довелося зупинятися знову. Джордж повертав позиції, та прокол змусив його ще раз їхати на пітлейн. Перес, який після зупинки на першому колі проривався з кінця пелотону, опинився готовим очолити гонку. Він утримав лідерство після рестарту й до самого фінішу. Повернення одного й втрачений шанс іншого зійшлися в кількох колах."
+          "Здавалося, день Расселла в Mercedes складається якнайкраще. Але пізній сейфті-кар змінив ритм гонки. Плутанина з комплектами шин змусила його знову заїхати в бокси, а подальші проблеми з гумою зірвали спробу відігратися.",
+          "Перес на той момент уже повертався з глибини пелотону після невдачі на першому колі. Чужі помилки не зробили всю роботу за нього: Racing Point опинилася там, де могла скористатися нагодою. У Сахірі першим став Перес, другим — Окон, третім — Стролл. Втрачений шанс Расселла — частина цієї драми, але не перемога в протоколі."
         ]
       },
       {
@@ -476,9 +480,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "For one round, Kubica led the standings",
+        "heading": "The lead was real. So was the distance ahead.",
         "paragraphs": [
-          "The Canadian victory did more than give BMW Sauber its first one-two finish. Kubica emerged from Montreal at the top of the drivers' standings. Ferrari and McLaren were still formidable, and the championship had plenty of races left; a June lead promised nothing about November. BMW Sauber did not turn that moment into the drivers' title. But it would be unfair to read the entire race only through what followed. The double finish belonged to the team, the win belonged to Kubica, and the championship lead was real — even if it proved temporary."
+          "The pit-lane collision removed Hamilton and Räikkönen from the Canadian Grand Prix; Kubica escaped it and went on to win. Heidfeld completed a BMW Sauber one-two. That was not just a promising qualifying result or an opportunity that vanished: two of the team's cars stood above every rival at the finish.",
+          "The championship table then placed Kubica first. Yet the calendar still stretched far beyond Montréal. The question was no longer whether BMW Sauber could take a win, but whether it could make such days frequent enough to remain in a title fight. June offered an opening, not an answer."
         ]
       },
       {
@@ -512,9 +517,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Після Монреаля Кубіца очолив залік",
+        "heading": "Лідерство було справжнім. Шлях попереду — довгим.",
         "paragraphs": [
-          "Канадська перемога принесла BMW Sauber не лише перший дубль. Після Монреаля Кубіца вийшов на перше місце в чемпіонаті. Ferrari та McLaren залишалися сильними суперниками, попереду було ще багато гонок — червневе лідерство нічого не гарантувало на листопад. BMW Sauber так і не здобула особистий титул. Але через це не варто дивитися на Канаду лише як на втрачений шанс. Два перші місця належали команді, перемога — Кубіці, а лідерство в заліку було справжнім, хоч і нетривалим."
+          "Зіткнення на пітлейні вибило Гамільтона й Райкконена з Гран-прі Канади; Кубіца уникнув удару та згодом переміг. Гайдфельд завершив подвійний успіх BMW Sauber. Це була не обіцянка після кваліфікації й не змарнований шанс: дві машини команди фінішували вище за всіх суперників.",
+          "Після цього Кубіца очолив особистий залік. Та календар простягався далеко за межі Монреаля. Питання було вже не в тому, чи здатна BMW Sauber виграти гонку, а чи зможе повторювати такі дні достатньо часто, щоб боротися за титул. Червень відкрив можливість, але не дав відповіді."
         ]
       },
       {
@@ -626,10 +632,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "The seconds after the chequered flag",
+        "heading": "Two finishes that did not agree",
         "paragraphs": [
-          "Massa had done what he needed to do in Brazil: win the Grand Prix. Hamilton's fifth place made him champion, and the changing conditions in the closing laps brought Glock's Toyota into the story of how that fifth place was secured. The result left Massa a race winner and a championship runner-up at the same time.",
-          "That is why Interlagos 2008 cannot be told as though the chequered flag ended both contests at once. A driver's victory was already being celebrated while the championship outcome was still coming into focus. No invented plot or motive is needed. The timings and final positions carry enough drama on their own."
+          "Massa took the chequered flag as the winner in Brazil. For an instant, the sight at the front could suggest the championship had gone his way too. But the classification that mattered for the title was still being determined farther back on the wet track.",
+          "Hamilton's move into fifth left him with enough points to take the championship. Massa kept the Grand Prix victory, yet the season belonged to his rival. In the final moments at Interlagos, winning the race and winning the year had become two separate events — close together in time, painfully far apart in meaning."
         ]
       }
     ],
@@ -656,10 +662,10 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Секунди після картатого прапора",
+        "heading": "Два фініші з різними підсумками",
         "paragraphs": [
-          "Масса виконав своє завдання в Бразилії — виграв Гран-прі. Але п'яте місце Гамільтона зробило чемпіоном саме його. Через мінливу погоду наприкінці гонки Toyota Глока опинилася в центрі історії про те, як Гамільтон здобув це п'яте місце. Масса одночасно став переможцем гонки й віцечемпіоном світу.",
-          "Саме тому Інтерлагос-2008 не можна розповідати так, ніби картатий прапор одночасно завершив обидві боротьби. Перемогу одного гонщика вже святкували, коли доля титулу ще прояснювалася. Тут не потрібні вигадані змови чи мотиви. Час і фінішні позиції самі створюють драму."
+          "Масса перетнув фінішну лінію переможцем Гран-прі Бразилії. На мить здавалося, що титул теж може дістатися йому. Але позиції, від яких залежало чемпіонство, ще визначалися позаду — на мокрій трасі.",
+          "Гамільтон піднявся на п'яте місце й набрав достатньо очок для титулу. Масса залишив собі перемогу в гонці, а чемпіонство дісталося супернику. На останніх хвилинах Інтерлагоса виграти неділю та виграти сезон виявилося двома різними подіями — близькими за часом і болісно далекими за значенням."
         ]
       }
     ]
