@@ -258,6 +258,86 @@
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1988,
+          "title": {
+            "en": "Senna wins the title after a troubled start",
+            "uk": "Сенна бере титул після невдалого старту"
+          },
+          "narrative": {
+            "en": "Senna nearly lost everything at the start when his McLaren stalled. He recovered through the field as rain arrived, caught teammate Alain Prost and won both the Japanese Grand Prix and his first world title.",
+            "uk": "Сенна мало не втратив шанс на старті, коли його McLaren заглух. Із початком дощу він прорвався крізь пелотон, наздогнав напарника Алена Проста й виграв Гран-прі Японії та перший чемпіонський титул."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1989,
+          "title": {
+            "en": "The chicane collision",
+            "uk": "Зіткнення в шикані"
+          },
+          "narrative": {
+            "en": "Prost and Senna collided at Suzuka's chicane while fighting for the lead. Senna rejoined and finished first on the road but was disqualified; Prost became world champion.",
+            "uk": "Прост і Сенна зіткнулися в шикані Сузуки під час боротьби за лідерство. Сенна повернувся на трасу й першим дістався фінішу, але його дискваліфікували; чемпіоном став Прост."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1990,
+          "title": {
+            "en": "A title decided at Turn 1",
+            "uk": "Титул вирішується в першому повороті"
+          },
+          "narrative": {
+            "en": "Senna and Prost collided at the opening corner of the 1990 Japanese Grand Prix. Both retired immediately and Senna secured the championship, leaving another bitter chapter in their rivalry.",
+            "uk": "Сенна й Прост зіткнулися в першому повороті Гран-прі Японії 1990 року. Обидва одразу зійшли, а Сенна забезпечив собі чемпіонство. Так з’явилася ще одна гірка сторінка їхнього суперництва."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2000,
+          "title": {
+            "en": "Ferrari's long wait ends",
+            "uk": "Ferrari завершує довге очікування"
+          },
+          "narrative": {
+            "en": "Michael Schumacher won in difficult conditions at Suzuka and clinched his first championship for Ferrari. The team had not celebrated a Drivers' World Champion since 1979.",
+            "uk": "Міхаель Шумахер переміг у складних умовах Сузуки й здобув перший титул за Ferrari. Команда не мала чемпіона світу серед пілотів із 1979 року."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2012,
+          "title": {
+            "en": "Kobayashi gives Japan a home podium",
+            "uk": "Кобаясі дарує Японії домашній подіум"
+          },
+          "narrative": {
+            "en": "Kamui Kobayashi held off Jenson Button to finish third for Sauber in 2012. It was a rare home podium for a Japanese driver, celebrated by the Suzuka crowd.",
+            "uk": "Камуї Кобаясі стримав Дженсона Баттона й фінішував третім за Sauber у 2012 році. Японський гонщик подарував уболівальникам у Сузуці рідкісний домашній подіум."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
@@ -798,6 +878,118 @@
           "source_granularity": "official_F1_race_result_confirms_winner_only",
           "review_status": "official_classification_checked_interpretation_pending",
           "verification_note": "Official classification: Button first, de la Rosa second, Heidfeld third; grid penalty details still require separate source"
+        },
+        {
+          "year": 1986,
+          "title": {
+            "en": "Piquet passes Senna around the outside",
+            "uk": "Піке обходить Сенну зовні"
+          },
+          "narrative": {
+            "en": "At the Hungaroring's first World Championship race, Nelson Piquet passed Ayrton Senna around the outside and went on to win. The move remains part of the track's origin story.",
+            "uk": "На першому чемпіонатному Гран-прі Хунгароринга Нельсон Піке обігнав Айртона Сенну зовнішньою траєкторією та переміг. Цей маневр став частиною історії траси."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1989,
+          "title": {
+            "en": "Mansell charges from twelfth",
+            "uk": "Менселл проривається з дванадцятого місця"
+          },
+          "narrative": {
+            "en": "Nigel Mansell started twelfth in his Ferrari but fought forward until Ayrton Senna was the last obstacle. When Senna hesitated behind a slower car, Mansell seized the moment to pass both and win.",
+            "uk": "Найджел Менселл стартував дванадцятим на Ferrari, але прорвався вперед, де останньою перепоною став Айртон Сенна. Коли Сенна пригальмував за повільнішою машиною, Менселл скористався моментом, обійшов обох і переміг."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1997,
+          "title": {
+            "en": "Hill almost wins for Arrows",
+            "uk": "Гілл майже перемагає на Arrows"
+          },
+          "narrative": {
+            "en": "Damon Hill led by a large margin in an unfancied Arrows before a late hydraulic problem slowed him. Jacques Villeneuve caught him on the final lap; Hill finished second rather than delivering the team's first win.",
+            "uk": "Деймон Гілл мав велику перевагу на скромній Arrows, але наприкінці гонки проблеми з гідравлікою уповільнили його. Жак Вільньов обігнав Гілла на останньому колі, і замість першої перемоги команди залишилося друге місце."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 1998,
+          "title": {
+            "en": "A risky strategy pays off",
+            "uk": "Ризикована стратегія спрацьовує"
+          },
+          "narrative": {
+            "en": "Ferrari moved Michael Schumacher to a three-stop strategy against the leading McLarens. Schumacher found the necessary pace between visits to the pits and emerged ahead to win.",
+            "uk": "Ferrari перевела Міхаеля Шумахера на стратегію трьох піт-стопів у боротьбі з McLaren. Міхаель показав потрібний темп між зупинками й вийшов уперед, здобувши перемогу."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2003,
+          "title": {
+            "en": "Alonso wins for the first time",
+            "uk": "Перша перемога Алонсо"
+          },
+          "narrative": {
+            "en": "Fernando Alonso started from pole and controlled the 2003 Hungarian Grand Prix, even lapping reigning champion Michael Schumacher. At 22 he became Formula 1's youngest Grand Prix winner at the time.",
+            "uk": "Фернандо Алонсо стартував із поулу й контролював Гран-прі Угорщини 2003 року, навіть випередивши чинного чемпіона Міхаеля Шумахера на коло. У 22 роки він став наймолодшим переможцем Гран-прі на той час."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2021,
+          "title": {
+            "en": "Ocon survives a chaotic restart",
+            "uk": "Окон вистоює після хаотичного рестарту"
+          },
+          "narrative": {
+            "en": "Rain and first-corner crashes reshuffled the race. Hamilton restarted alone on the grid when the others switched tyres; after he pitted, Esteban Ocon led and defended to take his first Formula 1 victory.",
+            "uk": "Дощ і аварії в першому повороті перемішали пелотон. Гамільтон залишився сам на стартовій решітці після того, як інші змінили шини; коли він теж зупинився, Естебан Окон очолив гонку й утримав першу перемогу у Формулі-1."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
+        },
+        {
+          "year": 2024,
+          "title": {
+            "en": "Piastri wins after a team-order standoff",
+            "uk": "Піастрі перемагає після командної суперечки"
+          },
+          "narrative": {
+            "en": "Oscar Piastri led early, but pit strategy put McLaren teammate Lando Norris ahead. The team asked Norris to return the place; with three laps left he slowed, allowing Piastri to take his maiden Grand Prix win.",
+            "uk": "Оскар Піастрі лідирував на початку, але стратегія піт-стопів вивела вперед його напарника Ландо Норріса. Команда попросила повернути позицію; за три кола до фінішу Норріс пропустив Піастрі до його першої перемоги."
+          },
+          "sources": [
+            "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+          ],
+          "source_granularity": "official_f1_event_summary_read",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [],
