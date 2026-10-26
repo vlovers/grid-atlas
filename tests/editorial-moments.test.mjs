@@ -423,3 +423,20 @@ test('ten released EN/UK editions match actual complete chapter, title and lead 
     assert.ok(entry.evidenceRevision && entry.reviewRevision && entry.reviewedAt);
   }
 });
+
+test('all ten stories have original art direction and accessible illustrated reading', () => {
+  const art = read(directory + 'editorial-visuals.ts');
+  const hub = read('apps/web/src/app/[locale]/stories/page.tsx');
+  const css = read(directory + 'release.module.css');
+  for (const slug of slugs) {
+    assert.ok(art.includes("'" + slug + "': {"), slug + ' needs its own visual direction');
+  }
+  assert.ok(detail.includes('visual?.motif[locale]'), 'feature hero needs a bilingual visual caption');
+  assert.ok(detail.includes('className={styles.editorialSceneFigure}'), 'long-form needs original chapter artwork');
+  assert.ok(detail.includes('not a historical photograph or circuit map'), 'art cannot masquerade as real racing history');
+  assert.ok(hub.includes('styles.editorialFeatureCard'), 'all ten catalogue cards use the feature art system');
+  assert.ok(hub.includes('styles.editorialFeatureArt'));
+  assert.ok(css.includes('@media(prefers-reduced-motion:reduce)'), 'motion preferences must be respected');
+  assert.ok(css.includes('@media(max-width:760px)'), 'mobile layout must exist');
+  assert.ok(!art.includes('https://'), 'art direction must not embed externally sourced unlicensed imagery');
+});

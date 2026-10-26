@@ -1,3 +1,4 @@
+import { editorialVisualDirections } from '@/components/stories/editorial-visuals';
 import { isAiReviewedStory } from '@/components/stories/editorial-publication';
 import type { Metadata } from 'next';
 import { editorialStoryPreviews } from '@/components/stories/editorial-previews';
@@ -36,11 +37,15 @@ export default async function Stories({ params }: Props) {
       <ol style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 310px), 1fr))', gap: 20, marginTop: 28 }}>
         {editorialStoryPreviews.map((story, index) => {
           const copy = story[locale];
-          return <li key={story.slug} style={{ border: '1px solid currentColor', borderRadius: 6, padding: 24, display: 'flex', flexDirection: 'column', gap: 12 }}>
+          const visual = editorialVisualDirections[story.slug];
+          return <li key={story.slug} className={styles.editorialFeatureCard}>
+            <div className={styles.editorialFeatureArt} aria-hidden="true"><MotorsportArt kind={visual?.kind ?? 'velocity'} tone={visual?.tone ?? 'coral'} /></div>
+            <div className={styles.editorialFeatureCopy}>
             <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {story.year}</span>
             <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}><a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a></h3>
             <p style={{ lineHeight: 1.65, margin: 0 }}>{copy.summary}</p>
-            <p style={{ opacity: .75, fontSize: '.85rem', marginTop: 'auto' }}><a href={`/${locale}/stories/moments/${story.slug}`}>{isAiReviewedStory(story.slug) ? (uk ? 'Читати історію' : 'Read story') : (uk ? 'Відкрити чернетку' : 'Open draft')} →</a></p>
+            <p className={styles.editorialFeatureLink}><a href={`/${locale}/stories/moments/${story.slug}`}>{isAiReviewedStory(story.slug) ? (uk ? 'Читати історію' : 'Read story') : (uk ? 'Відкрити чернетку' : 'Open draft')} →</a></p>
+            </div>
           </li>;
         })}
       </ol>

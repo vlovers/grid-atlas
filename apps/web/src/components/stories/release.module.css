@@ -522,3 +522,26 @@
 
 /* Compact, visible editorial review provenance label. */
 .aiReviewedLabel{align-self:flex-start;display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:.3rem .65rem;margin:.25rem 0 .75rem;border:1px solid var(--accent-ink);color:var(--accent-ink);font-size:.78rem;font-weight:700;line-height:1.4;letter-spacing:.02em}
+
+/* Illustrated feature collection: all media is original SVG, not unlicensed historic photography. */
+.editorialFeatureCard{position:relative;display:grid;grid-template-rows:minmax(180px,auto) 1fr;min-width:0;overflow:hidden;border:1px solid var(--line);background:var(--surface);isolation:isolate;transition:border-color .25s ease,transform .25s ease}
+.editorialFeatureCard:hover,.editorialFeatureCard:focus-within{border-color:var(--accent-ink);transform:translateY(-4px)}
+.editorialFeatureCard:first-child{grid-column:span 2;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:minmax(360px,auto)}
+.editorialFeatureArt{position:relative;min-height:215px;overflow:hidden;background:#111b22}
+.editorialFeatureArt>div{inset:0}
+.editorialFeatureCopy{position:relative;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:1rem;padding:clamp(1.25rem,2.5vw,2.2rem)}
+.editorialFeatureCopy h3{font-size:clamp(1.45rem,2.7vw,2.5rem)!important;margin:0!important;line-height:1.18!important}
+.editorialFeatureCopy h3 a{text-decoration:none}
+.editorialFeatureCopy h3 a:focus-visible{outline:2px solid var(--accent-ink);outline-offset:4px}
+.editorialFeatureCopy p{margin:0;line-height:1.65}
+.editorialFeatureLink{margin-top:auto!important;font-weight:750}
+.editorialHeroMotif{max-width:48ch;font-size:clamp(1rem,1.7vw,1.28rem);font-weight:650;letter-spacing:.035em;color:var(--accent-ink)}
+.editorialSceneFigure{margin:2.5rem 0 3rem;border:1px solid var(--line);background:#111b22;overflow:hidden}
+.editorialSceneArtwork{position:relative;min-height:clamp(220px,32vw,390px);overflow:hidden;isolation:isolate}
+.editorialSceneArtwork>div{inset:0}
+.editorialSceneFigure figcaption{padding:.85rem 1.15rem;font-size:.77rem;line-height:1.6;letter-spacing:.02em;color:#d4e4e8;background:#19252c}
+.editorialProse .editorialChapterScene{scroll-margin-top:7rem}
+.editorialProse .editorialChapterScene:target h3{color:var(--accent-ink)}
+@media(max-width:760px){.editorialFeatureCard:first-child{grid-column:span 1;grid-template-columns:1fr;grid-template-rows:minmax(230px,auto) 1fr}.editorialFeatureArt{min-height:230px}}
+@media(prefers-reduced-motion:reduce){.editorialFeatureCard{transition:none}.editorialFeatureCard:hover{transform:none}}
+@media(forced-colors:active){.editorialFeatureCard,.editorialSceneFigure{border:1px solid CanvasText}.editorialFeatureCopy h3 a:focus-visible{outline:2px solid Highlight}}
