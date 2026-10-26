@@ -13,8 +13,6 @@ import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReaderQuestions } from '@/components/stories/editorial-reader-questions';
 import { editorialResultHighlights } from '@/components/stories/editorial-result-highlights';
-import { editorialStoryContext } from '@/components/stories/editorial-story-context';
-import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -65,7 +63,7 @@ export default async function EditorialMoment({ params }: Props) {
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT'}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
-        <p className={styles.note}>{uk ? 'Матеріал доступний для ознайомлення, але ще не пройшов незалежної перевірки джерел. Не вважайте його остаточною публікацією.' : 'This manuscript is available to read but has not yet passed independent source verification. It is not a final publication.'}</p>
+        
         <div className={styles.editorialChapters}>
           <nav className={styles.editorialChapterNav} aria-label={uk ? 'Розділи статті' : 'Article chapters'}>
             {chapters.map((chapter, index) => <a key={index} href={`#chapter-${index + 1}`}><span aria-hidden="true">{String(index + 1).padStart(2, '0')} · </span>{chapter.heading}</a>)}
@@ -78,23 +76,6 @@ export default async function EditorialMoment({ params }: Props) {
             </section>)}
           </div>
         </div>
-      </section>}
-      {slug in editorialStoryContext && <section aria-label={uk ? 'Контекст історії' : 'Story context'} style={{ marginTop: 32, padding: '24px 28px', borderLeft: '4px solid var(--accent-ink)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
-        <p className={styles.eyebrow}>{uk ? 'КОРОТКО ПРО ГОЛОВНЕ' : 'THE STORY AT A GLANCE'}</p>
-        <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', marginBottom: 8 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].label}</h2>
-        <p style={{ maxWidth: '65ch', marginBottom: 0 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].description}</p>
-      </section>}
-      {slug in editorialMilestones && <section aria-labelledby="story-milestones" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
-        <p className={styles.eyebrow}>{uk ? 'ІСТОРІЯ У ЧОТИРЬОХ МОМЕНТАХ' : 'FOUR MOMENTS THAT MATTER'}</p>
-        <h2 id="story-milestones">{uk ? 'Як розгорталися події' : 'How the story unfolded'}</h2>
-        <ol className={styles.editorialActs}>
-          {editorialMilestones[slug as keyof typeof editorialMilestones].map((moment, index) => <li key={index} className={styles.editorialAct}>
-            <h3>{moment[locale].title}</h3>
-            <p>{moment[locale].detail}</p>
-            <small>{uk ? `Момент ${index + 1} з 4` : `Moment ${index + 1} of 4`}</small>
-          </li>)}
-        </ol>
-        <p className={styles.note}>{uk ? 'Це стислий редакційний виклад, а не перевірена покрокова хронологія.' : 'An editorial overview, not an independently verified lap-by-lap chronology.'}</p>
       </section>}
       <section aria-labelledby="story-people" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ДІЙОВІ ОСОБИ' : 'THE PEOPLE'}</p>
@@ -165,11 +146,6 @@ export default async function EditorialMoment({ params }: Props) {
             <a href={source.url} target="_blank" rel="noopener noreferrer">{uk ? `Сезон ${source.year} · Formula 1` : `${source.year} season · Formula 1`}</a>
           </li>)}
         </ul>
-      </section>
-      <section aria-labelledby="preview-status" style={{ borderTop: '1px solid var(--line)', marginTop: 60, paddingTop: 32 }}>
-        <h2 id="preview-status">{uk ? 'Остаточна редакція готується' : 'The verified edition is in preparation'}</h2>
-        <p>{uk ? 'Це редакційна чернетка повної статті. Матеріал ще проходить історичну перевірку, редактуру української та англійської версій і перевірку джерел. Ми не показуємо неперевірену чернетку як готову публікацію.' : 'This is a full editorial manuscript awaiting verification. The long-form manuscript is still undergoing historical fact-checking, English and Ukrainian editing, and source review. We do not present unverified research as a published article.'}</p>
-        <a href={`/${locale}/stories`}>{uk ? 'Переглянути інші історії' : 'Explore other stories'} →</a>
       </section>
       <aside aria-labelledby="related-moments" style={{ borderTop: '1px solid var(--line)', marginTop: 64, paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ПРОДОВЖИТИ ЧИТАТИ' : 'KEEP READING'}</p>
