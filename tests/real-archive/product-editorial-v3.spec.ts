@@ -35,6 +35,7 @@ for (const locale of ['en','uk'] as const) {
     });
   }
   test(`${locale}: unified tools preserve focus, readable covers and motion preference`,async ({page})=>{
+    await page.emulateMedia({ reducedMotion: 'reduce' });
     for (const path of ['atlas?kind=driver&id=3','time-machine?kind=driver&id=72&from=1987&to=1988','stories','lineage']) {
       await page.goto(`/${locale}/${path}`); await page.waitForLoadState('networkidle');
       await page.evaluate(()=>document.documentElement.style.fontSize='200%');
