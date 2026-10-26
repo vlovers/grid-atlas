@@ -6,7 +6,7 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
  assert.equal(data.circuits.length,20);
  assert.equal(new Set(data.circuits.map(x=>x.circuit_id)).size,20);
  assert.equal(data.status,'research_only');
- assert.equal(data.circuits.reduce((count,c)=>count+c.moments.length,0),27);
+ assert.equal(data.circuits.reduce((count,c)=>count+c.moments.length,0),35);
  const excluded=new Set(['monaco','spa-francorchamps']);
  for(const c of data.circuits){
    assert.equal(excluded.has(c.circuit_id),false);
