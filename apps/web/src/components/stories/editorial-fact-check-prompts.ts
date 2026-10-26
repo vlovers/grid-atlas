@@ -1,0 +1,73 @@
+/** Fifty bilingual fact-check prompts for editorial review. Not approved source citations. */
+export const editorialFactCheckPrompts = {
+  "lauda-hunt-1976": [
+    { en: "A title is not a safety verdict", uk: "Титул — не вирок щодо безпеки", status: 'needs-source' },
+    { en: "Lauda's withdrawal did not automatically crown Hunt", uk: "Схід Лауди не зробив Ганта чемпіоном автоматично", status: 'needs-source' },
+    { en: "The Nürburgring crash changed the stakes", uk: "Аварія на Нюрбургринзі змінила ціну ризику", status: 'needs-source' },
+    { en: "The final margin was one point", uk: "Підсумкова перевага становила одне очко", status: 'needs-source' },
+    { en: "Monza proved a return was possible, not compulsory forever", uk: "Монца довела можливість повернення, але не обов’язок ризикувати завжди", status: 'needs-source' },
+  ],
+  "senna-prost-1988-89": [
+    { en: "The 1988 standings used dropped scores", uk: "У 1988 році не всі очки йшли до заліку", status: 'needs-source' },
+    { en: "McLaren won 15 of 16 races in 1988", uk: "McLaren виграв 15 із 16 гонок 1988 року", status: 'needs-source' },
+    { en: "Senna secured his first title at Suzuka", uk: "Сенна здобув перший титул у Сузуці", status: 'needs-source' },
+    { en: "The teammates remained rivals in 1989", uk: "Напарники залишилися суперниками у 1989 році", status: 'needs-source' },
+    { en: "A team victory does not guarantee team harmony", uk: "Успіх команди не гарантує злагоди між пілотами", status: 'needs-source' },
+  ],
+  "villeneuve-arnoux-1979": [
+    { en: "The famous duel was for second place", uk: "Знаменита дуель точилася за друге місце", status: 'needs-source' },
+    { en: "Jabouille won the French Grand Prix", uk: "Жабуй виграв Гран-прі Франції", status: 'needs-source' },
+    { en: "Renault celebrated a landmark win", uk: "Renault святкувала знакову перемогу", status: 'needs-source' },
+    { en: "The battle unfolded at Dijon", uk: "Боротьба відбулася в Діжоні", status: 'needs-source' },
+    { en: "A race can have more than one memorable story", uk: "В однієї гонки може бути кілька пам’ятних сюжетів", status: 'needs-source' },
+  ],
+  "vettel-monza-2008": [
+    { en: "Vettel drove for Toro Rosso", uk: "Феттель виступав за Toro Rosso", status: 'needs-source' },
+    { en: "He started from pole position", uk: "Він стартував із поулу", status: 'needs-source' },
+    { en: "The race was held in wet conditions", uk: "Гонка відбулася в дощових умовах", status: 'needs-source' },
+    { en: "This was Toro Rosso's first Grand Prix victory", uk: "Це була перша перемога Toro Rosso в Гран-прі", status: 'needs-source' },
+    { en: "It was not a Red Bull Racing win", uk: "Це не була перемога Red Bull Racing", status: 'needs-source' },
+  ],
+  "button-canada-2011": [
+    { en: "Rain repeatedly disrupted the race", uk: "Дощ неодноразово переривав гонку", status: 'needs-source' },
+    { en: "Button recovered from multiple setbacks", uk: "Баттон відігрався після кількох невдач", status: 'needs-source' },
+    { en: "Vettel led late in the race", uk: "Феттель лідирував наприкінці гонки", status: 'needs-source' },
+    { en: "The lead changed on the final lap", uk: "Лідер змінився на останньому колі", status: 'needs-source' },
+    { en: "Button won the Canadian Grand Prix", uk: "Баттон виграв Гран-прі Канади", status: 'needs-source' },
+  ],
+  "perez-sakhir-2020": [
+    { en: "Pérez's race began with a setback", uk: "Гонка Переса почалася з невдачі", status: 'needs-source' },
+    { en: "Russell substituted for Hamilton at Mercedes", uk: "Расселл замінив Гамільтона в Mercedes", status: 'needs-source' },
+    { en: "Mercedes had a troubled pit-stop sequence", uk: "Mercedes припустився помилок під час піт-стопів", status: 'needs-source' },
+    { en: "Pérez won for Racing Point", uk: "Перес переміг за Racing Point", status: 'needs-source' },
+    { en: "It was Pérez's first Formula 1 win", uk: "Це була перша перемога Переса у Формулі-1", status: 'needs-source' },
+  ],
+  "kubica-bmw-2008": [
+    { en: "Kubica won in Canada", uk: "Кубіца переміг у Канаді", status: 'needs-source' },
+    { en: "Heidfeld finished second for BMW Sauber", uk: "Гайдфельд фінішував другим за BMW Sauber", status: 'needs-source' },
+    { en: "The result was a BMW Sauber one-two", uk: "Це був дубль BMW Sauber", status: 'needs-source' },
+    { en: "Kubica briefly led the championship", uk: "Кубіца ненадовго очолив чемпіонат", status: 'needs-source' },
+    { en: "A midseason lead did not become a title", uk: "Лідерство посеред сезону не перетворилося на титул", status: 'needs-source' },
+  ],
+  "schumacher-ferrari-1996-2000": [
+    { en: "Schumacher joined Ferrari in 1996", uk: "Шумахер приєднався до Ferrari 1996 року", status: 'needs-source' },
+    { en: "He arrived with two drivers' titles", uk: "Він прийшов із двома особистими титулами", status: 'needs-source' },
+    { en: "The Ferrari title required several seasons", uk: "Титул Ferrari вимагав кількох сезонів", status: 'needs-source' },
+    { en: "Suzuka 2000 settled the drivers' championship", uk: "Сузука 2000 визначила чемпіона серед пілотів", status: 'needs-source' },
+    { en: "Ferrari's previous drivers' title was in 1979", uk: "Попередній особистий титул Ferrari був у 1979 році", status: 'needs-source' },
+  ],
+  "massa-2008": [
+    { en: "Brazil hosted the championship finale", uk: "Бразилія приймала фінал чемпіонату", status: 'needs-source' },
+    { en: "Massa won the Grand Prix", uk: "Масса виграв Гран-прі", status: 'needs-source' },
+    { en: "Hamilton needed fifth place to secure the title", uk: "Гамільтону було потрібне п’яте місце для титулу", status: 'needs-source' },
+    { en: "Hamilton finished fifth", uk: "Гамільтон фінішував п’ятим", status: 'needs-source' },
+    { en: "Winning the race did not mean winning the championship", uk: "Перемога в гонці не означала перемоги в чемпіонаті", status: 'needs-source' },
+  ],
+  "brawn-2009": [
+    { en: "Honda withdrew after 2008", uk: "Honda залишила чемпіонат після 2008 року", status: 'needs-source' },
+    { en: "The team returned as Brawn GP", uk: "Команда повернулася як Brawn GP", status: 'needs-source' },
+    { en: "Button won six of the first seven races", uk: "Баттон виграв шість із перших семи гонок", status: 'needs-source' },
+    { en: "Button secured the drivers' title in Brazil", uk: "Баттон гарантував особистий титул у Бразилії", status: 'needs-source' },
+    { en: "Brawn GP also won the constructors' championship", uk: "Brawn GP також виграла Кубок конструкторів", status: 'needs-source' },
+  ],
+} as const;
