@@ -64,7 +64,7 @@ test('draft route is linked, noindexed and renders full manuscripts', () => {
   assert.ok(detail.includes('draftArticle(slug, locale)'));
   assert.ok(detail.includes('chapters.map('));
   assert.ok(detail.includes('relatedEditorialMoments(slug)'));
-  assert.ok(detail.includes('not a final publication'));
+  assert.ok(detail.includes('Source review is still in progress; publication has not yet been approved.'));
 });
 
 test('all story subjects and race coordinates are complete and consistently mapped', () => {
