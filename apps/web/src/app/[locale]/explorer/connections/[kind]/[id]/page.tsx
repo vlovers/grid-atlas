@@ -49,7 +49,7 @@ export default async function CompleteConnections({
       </h1>
       <p className="lead">
         {uk
-          ? "Повний список спостережуваних зв’язків із записів результатів, сторінками по 25."
+          ? "Повний список зв’язків за результатами гонок, сторінками по 25."
           : "Browse all observed result-record associations, 25 per page."}
       </p>
       <p role="status">

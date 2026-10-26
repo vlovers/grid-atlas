@@ -149,7 +149,7 @@ export async function SeasonExplorer({
           )}
           <p className={styles.caption}>
             {uk
-              ? "Це асоціації записів результатів, а не підтвердження офіційних стартів, контрактів або правонаступництва."
+              ? "Це зв’язки за результатами гонок, а не підтвердження офіційних стартів, контрактів або правонаступництва."
               : "These are result-record associations, not proof of official starts, contracts or team succession."}
           </p>
           <p className={styles.caption}>

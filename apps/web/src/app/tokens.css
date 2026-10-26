@@ -13,6 +13,12 @@
   --font-display: 'Atlas Serif', Georgia, 'Times New Roman', serif;
   --font-sans: 'Atlas Sans', Arial, Helvetica, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --chart-records: #a9adb0;
+  --chart-wins: #ed8278;
+  --chart-podiums: #b49a70;
+  --chart-earlier: #c1c7ce;
+  --chart-later: #d6bc8a;
+  --focus-ring: #d6bc8a;
   --measure: 1640px;
   --measure-reading: 720px;
   --gutter: clamp(20px, 4.5vw, 80px);

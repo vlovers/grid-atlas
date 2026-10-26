@@ -83,3 +83,20 @@ th, .position, .checksum, .timeline-year, code { font-family: var(--font-mono); 
 th { font-weight: 400; letter-spacing: .06em; }
 .primary { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
 .skip-link { color: #fff; }
+
+/* Public reading and control behavior shared by the existing editorial templates. */
+html[lang=uk] .page :is(h1,h2,h3) { letter-spacing: -.015em; line-height: 1.12; }
+.page :is(label,button,summary,dt,th) { overflow-wrap: anywhere; min-width: 0; }
+.page :is(section,article,aside,nav,form,fieldset) { min-width: 0; }
+.page summary { cursor: pointer; min-height: 44px; align-content: center; }
+.page :is(input,select,button) { max-width: 100%; }
+.page :is(p,li) { text-wrap: pretty; }
+.page :is(h2,h3):target, .page [id]:target { scroll-margin-top: 2rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .page :is(button,summary) { transition: background var(--motion-micro), border-color var(--motion-micro), color var(--motion-micro); }
+  .page :is(button,summary):hover { border-color: var(--accent-ink); }
+}
+@media (max-width: 700px) {
+  .lineage-controls { display: grid; grid-template-columns: minmax(0,1fr); }
+  .page .lineage-node { border-radius: 0; background: var(--surface); border-color: var(--line); }
+}

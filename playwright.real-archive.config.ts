@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 /** Separate from synthetic fixtures: this suite reads the genuine pinned import only. */
 export default defineConfig({
   testDir: './tests/real-archive',
+  outputDir: 'test-results/real-archive',
   fullyParallel: false,
   workers: 1,
   retries: 0,

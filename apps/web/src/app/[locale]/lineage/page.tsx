@@ -28,6 +28,7 @@ export default async function LineagePage({ params, searchParams }: { params: Pr
     <section id="constructor-discovery" aria-labelledby="constructor-discovery-title" className={styles.search} data-testid="lineage-archive-search">
       <h2 id="constructor-discovery-title">{words.constructorSearch}</h2><p>{words.constructorSearchNote}</p>
       <form method="get"><label>{t('searchLabel')}<input name="q" type="search" defaultValue={query} maxLength={100} placeholder={t('teamPlaceholder')} /></label><button type="submit">{t('search')} ↗</button>{query && <a href={`/${locale}/lineage#constructor-discovery`}>{words.clear}</a>}</form>
+      <nav className={styles.paging} aria-label={words.startConstructor}>{['Ferrari','McLaren','Lotus'].map(name => <a key={name} href={`/${locale}/lineage?${new URLSearchParams({q:name})}#constructor-discovery`}>{name} ↗</a>)}</nav>
       {constructors.length ? <ul className={styles.searchResults}>{constructors.slice(0,12).map(entity => <li key={entity.id}><div className={discoveryStyles.partner}><h3>{entity.name}</h3><a href={`/${locale}/constructors/${entity.id}`}>{words.dossier} ↗</a><a href={`/${locale}/atlas?kind=constructor&id=${entity.id}`}>{words.atlas} ↗</a></div></li>)}</ul> : <p role="status">{words.noResults}</p>}
       <nav className={styles.paging} aria-label={t('cataloguePages')}>{offset > 0 && <a href={pageHref(Math.max(0,offset-12))}>← {words.previous}</a>}{constructors.length > 12 && offset <= 99987 && <a href={pageHref(offset+12)}>{words.next} →</a>}</nav>
     </section>

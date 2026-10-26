@@ -14,6 +14,8 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(page.getByTestId('driver-showcase')).toBeVisible();
       await expect(page.getByTestId('driver-archive-overview')).toBeVisible();
       await expect(page.getByTestId('identity-facts')).toContainText('Synthetic driver full name');
+      await page.getByTestId('identity-facts').locator(':scope > details > summary').first().focus();
+      await page.keyboard.press('Enter');
       await expect(page.getByTestId('identity-facts').getByRole('definition')).toContainText(['0']);
       await expect(page.locator('a[href*="/seasons/"]').first()).toBeVisible();
       await expect(page.locator('a[href*="/constructors/"]').first()).toBeVisible();
@@ -37,8 +39,10 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(page.getByTestId('circuit-newcomer-guide').locator('a[href="#circuit-layouts"]')).toBeVisible();
       await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
       await expect(page.getByTestId('circuit-era-journey')).toBeVisible();
+      await page.locator('details').filter({has:page.getByTestId('circuit-decade-history')}).locator(':scope > summary').press('Enter');
       await expect(page.getByTestId('circuit-decade-history')).toBeVisible();
       await expect(page.getByTestId('identity-facts')).toContainText('Synthetic City');
+      await page.locator('#circuit-results > details > summary').press('Enter');
       await expect(page.locator('a[href*="/races/"]').first()).toBeVisible();
       await expect(page.locator('a[href*="/seasons/"]').first()).toBeVisible();
     });

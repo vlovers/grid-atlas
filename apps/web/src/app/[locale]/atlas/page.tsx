@@ -92,6 +92,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
       ? career?.years.at(-1)
       : Number(q.year)
     : undefined;
+  const seasonConnections = discovery && year !== undefined ? discovery.observations.filter(o => o.year === year).length : undefined;
   const graphReader =
     kind === "driver" ? getExplorerGraph : getConstructorExplorerGraph;
   const graph =
@@ -112,12 +113,12 @@ export default async function AtlasPage({ params, searchParams }: Props) {
     <section className={`page ${styles.page}`}>
       <header className={styles.hero}>
         <div>
-          <p className={styles.kicker}>{t.kicker}</p>
+          <p className={styles.kicker}>{career ? t.title : t.kicker}</p>
           <h1>
-            {t.title}
+            {career?.name ?? t.title}
             <span aria-hidden="true">↗</span>
           </h1>
-          <p>{t.intro}</p>
+          <p>{career ? words.focusIntro : t.intro}</p>
         </div>
         <div className={styles.heroMarker} aria-hidden="true">
           <span>{year ?? "↔"}</span>
@@ -125,10 +126,12 @@ export default async function AtlasPage({ params, searchParams }: Props) {
           <small>GRID / ATLAS</small>
         </div>
       </header>
+      {career && <dl className={discoveryStyles.focusFacts} data-testid="atlas-focus-facts">
+        <div><dt>{words.available}</dt><dd>{career.years.length}</dd></div><div><dt>{words.seasonConnections}</dt><dd>{seasonConnections ?? '—'}</dd></div><div><dt>{words.careerConnections}</dt><dd>{partners.length}</dd></div>
+      </dl>}
       <details className={styles.search} open={!career || q.q !== undefined}>
         <summary>
-          {t.search}
-          {career ? ` / ${career.name}` : ""}
+          {career ? words.changeSubject : t.search}
         </summary>
         <form method="get">
           <label>
@@ -217,7 +220,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
             <div className={styles.timelineHeading}>
               <div>
                 <p className={styles.kicker}>{t.timeline}</p>
-                <h2>{career.name}</h2>
+                <h2>{t.season}</h2>
               </div>
               <form method="get">
                 <input type="hidden" name="kind" value={kind} />
@@ -236,13 +239,8 @@ export default async function AtlasPage({ params, searchParams }: Props) {
                       !seasons.some((s) => s.year === year) && (
                         <option value={year}>{year}</option>
                       )}
-                    {[...seasons]
-                      .sort((a, b) => a.year - b.year)
-                      .map((s) => (
-                        <option key={s.year} value={s.year}>
-                          {s.year}
-                        </option>
-                      ))}
+                    <optgroup label={words.available}>{career.years.map(y => <option key={y} value={y}>{y}</option>)}</optgroup>
+                    <optgroup label={locale === 'uk' ? 'Інші сезони архіву' : 'Other archive seasons'}>{[...seasons].filter(s => !career.years.includes(s.year)).sort((a,b) => a.year-b.year).map(s => <option key={s.year} value={s.year}>{s.year}</option>)}</optgroup>
                   </select>
                 </label>
                 <button type="submit">{t.open} ↗</button>
@@ -282,6 +280,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
           locale={locale}
           initialSelected={selected}
           trail={trail}
+          totalConnections={seasonConnections !== undefined && seasonConnections >= graph.edges.length ? seasonConnections : undefined}
         />
       )}
       {discovery && <CareerState><section id="atlas-career" className={styles.connectionSection} aria-labelledby="atlas-career-title" data-testid="atlas-career-overview">

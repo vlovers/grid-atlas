@@ -1,3 +1,4 @@
+import { glossary } from '../../content/glossary.ts';
 const en = {
   exhibit: 'An independent atlas of Formula 1', title: 'Driven by', titleEnd: 'history.',
   lead: 'The people. The places. The moments. Find your next story in Formula 1’s recorded history.',
@@ -22,7 +23,7 @@ const en = {
   index: 'THE DRIVER INDEX', indexLead: 'A name is a starting point. Find a career, follow its connections, discover the races behind the numbers.',
   searchTip: 'Search by name or F1DB identifier. Open a result to explore its dossier.',
   shown: 'Records on this page', range: 'Archive positions', more: 'More records available', final: 'End of matching records',
-  identity: 'F1DB identity', signature: 'Career signature', signatureNote: 'Imported result entries by season', entries: 'Result entries', wins: 'Winning entries',
+  identity: 'F1DB identity', signature: 'Career signature', signatureNote: 'Imported result entries by season', entries: 'Result entries', wins: glossary.en.winningEntries,
   focus: 'Featured archive connection', noSignature: 'No result entries are recorded for this driver.',
   decade: 'Browse decades', chapter: 'A career in recorded seasons',
 };
@@ -51,7 +52,7 @@ const uk: Copy = {
   index: 'ПОКАЖЧИК ПІЛОТІВ', indexLead: 'Ім’я — це початок. Знайдіть кар’єру, простежте її зв’язки та відкрийте гонки за числами.',
   searchTip: 'Шукайте за іменем та ідентифікатором F1DB. Завантажується лише ця сторінка записів, а не весь архів у браузер.',
   shown: 'Записів на цій сторінці', range: 'Позиції в архіві', more: 'Є наступні записи', final: 'Кінець відповідних записів',
-  identity: 'Ідентифікатор F1DB', signature: 'Кар’єрний рисунок', signatureNote: 'Завантажені записи результатів за сезонами', entries: 'Записи результатів', wins: 'Переможні записи',
+  identity: 'Ідентифікатор F1DB', signature: 'Кар’єра за сезонами', signatureNote: 'Завантажені записи результатів за сезонами', entries: 'Записи результатів', wins: glossary.uk.winningEntries,
   focus: 'Обраний зв’язок із архіву', noSignature: 'Для цього пілота немає зафіксованих результатів.',
   decade: 'Переглянути десятиліття', chapter: 'Кар’єра в зафіксованих сезонах',
 };

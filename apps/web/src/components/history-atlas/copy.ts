@@ -30,7 +30,7 @@ const en = {
   listNote:
     "Choose a name to see its race results. Make it the focus to follow another path.",
   bounded:
-    "The map displays up to 8 associations at a time; the list contains the loaded API slice (up to 25).",
+    "The map shows up to 8 connections at a time; the loaded list contains up to 25.",
   truncated:
     "More associations exist beyond this slice. Use the complete paginated list.",
   all: "All season connections",
@@ -120,7 +120,7 @@ const uk: Record<keyof typeof en, string> = {
   bounded:
     "Мапа показує до 8 зв’язків одночасно; список містить до 25 завантажених зв’язків.",
   truncated:
-    "Поза цим зрізом є інші зв’язки. Скористайтеся повним списком зі сторінками.",
+    "Поза завантаженою частиною списку є інші зв’язки. Скористайтеся повним списком зі сторінками.",
   all: "Усі зв’язки сезону",
   empty: "За цей сезон немає зв’язків у результатах гонок.",
   emptyNote:
@@ -129,7 +129,7 @@ const uk: Record<keyof typeof en, string> = {
   invalid:
     "Деякі параметри URL некоректні. Оберіть ідентичність і рік від 1950 до 2200.",
   invalidSelected:
-    "Цей зв’язок поза завантаженим зрізом. Показано перший; інші записи можуть бути в повному списку.",
+    "Цей зв’язок поза завантаженою частиною списку. Показано перший; інші записи можуть бути в повному списку.",
   invalidTrail:
     "Некоректний шлях дослідження очищено. Поточний фокус збережено.",
   inspect: "Дослідити",

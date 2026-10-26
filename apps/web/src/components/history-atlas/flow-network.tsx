@@ -128,18 +128,18 @@ function Canvas({ graph, locale, selected, onSelect }: Props) {
     animated:
       !reduce &&
       graph.nodes.find((n) => n.key === e.to)?.entity_id === selected,
-    label: recordCountLabel(e.races, locale, "races"),
+    label: `${e.races} ${locale === 'en' ? (e.races === 1 ? 'race' : 'races') : new Intl.PluralRules('uk').select(e.races) === 'one' ? 'гонка' : new Intl.PluralRules('uk').select(e.races) === 'few' ? 'гонки' : 'гонок'}`,
     ariaLabel: `${graph.nodes.find((n) => n.key === e.from)!.name} — ${graph.nodes.find((n) => n.key === e.to)!.name}. ${recordCountLabel(e.races, locale, "races")}`,
     domAttributes: { "aria-roledescription": t.connectionNode },
     style: {
       stroke:
         graph.nodes.find((n) => n.key === e.to)?.entity_id === selected
-          ? "#EF604F"
-          : "#688193",
+          ? "var(--accent-ink)"
+          : "var(--muted)",
       strokeWidth: 1.6,
     },
-    labelStyle: { fill: "#F3F0E8", fontSize: 14 },
-    labelBgStyle: { fill: "#131C25", fillOpacity: 1 },
+    labelStyle: { fill: "var(--ink)", fontSize: 14 },
+    labelBgStyle: { fill: "var(--surface)", fillOpacity: 1 },
     labelBgPadding: [7, 5] as [number, number],
     focusable: false,
     selectable: false,
@@ -219,7 +219,7 @@ function Canvas({ graph, locale, selected, onSelect }: Props) {
             "controls.fitView.ariaLabel": t.fit,
           }}
         >
-          <Background color="#30404d" gap={28} size={1} />
+          <Background color="var(--line)" gap={28} size={1} />
           <Controls
             showInteractive={false}
             fitViewOptions={{

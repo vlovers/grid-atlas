@@ -14,7 +14,7 @@ for (const locale of ['uk', 'en'] as const) {
       const facts = page.getByTestId('identity-facts');
       await expect(facts).toBeVisible();
       await expect(facts).toContainText(identity.fields.full_name);
-      const disclosure = facts.locator('summary');
+      const disclosure = facts.locator(':scope > details > summary').first();
       await disclosure.press('Enter');
       await expect(facts).toContainText(identity.provenance.source_locator);
       await expect(facts).toContainText(identity.provenance.sha256);
@@ -37,13 +37,14 @@ for (const locale of ['uk', 'en'] as const) {
       } else if (kind === 'circuits') {
         await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
         const history = (await (await request.get(`${api}/circuits/${entity.id}/history`)).json()).data;
+        await page.locator('details').filter({has:page.getByTestId('circuit-history-table')}).locator(':scope > summary').press('Enter');
         await expect(page.getByTestId('circuit-history-table').locator('tbody tr')).toHaveCount(Math.min(25, history.length));
         if (history.length > 25) {
           const next = page.getByRole('navigation', { name: locale === 'uk' ? 'Сторінки історії траси' : 'Circuit history pages' }).getByRole('link').last();
           const navigation = page.waitForRequest(r => r.isNavigationRequest() && r.url().endsWith(`/${locale}/circuits/${entity.id}?page=2`));
           await next.click();
           expect((await navigation).method()).toBe('GET');
-          await expect(page).toHaveURL(/page=2$/);
+          await expect(page).toHaveURL(/page=2#circuit-results$/);
           await expect(page.getByTestId('circuit-history-table').locator('tbody tr')).toHaveCount(Math.min(25, history.length - 25));
           await expect(page.getByTestId('circuit-history-table').locator('tbody tr').first().getByRole('link').nth(1)).toHaveAttribute('href', `/${locale}/races/${history[25].race_id}`);
           await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `http://127.0.0.1:3351/${locale}/circuits/${entity.id}?page=2`);

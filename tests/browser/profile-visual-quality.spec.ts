@@ -33,6 +33,8 @@ for (const locale of ['en', 'uk'] as const) {
       await page.evaluate(() => { document.documentElement.style.fontSize = ''; });
       const table = page.getByTestId('archive-table').first();
       if (await table.count()) {
+        const disclosure = table.locator('xpath=ancestor::details[1]');
+        if (await disclosure.count() && await disclosure.getAttribute('open') === null) await disclosure.locator(':scope > summary').press('Enter');
         const region = table.getByRole('region');
         await region.focus();
         await expect(region).toBeFocused();

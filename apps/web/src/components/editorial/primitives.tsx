@@ -8,7 +8,7 @@ export type EditorialLocale = 'uk' | 'en';
 export type Statistic = { label: string; value: ReactNode };
 
 export function SectionHeading({ kicker, title, note, id }: { kicker: string; title: string; note?: string; id: string }) {
-  return <header className={styles.sectionHeading}><div><p className={styles.kicker}>{kicker}</p><h2 id={id} tabIndex={-1}>{title}</h2></div>{note && <p>{note}</p>}</header>;
+  return <header className={styles.sectionHeading} data-story-reveal><div><p className={styles.kicker}>{kicker}</p><h2 id={id} tabIndex={-1}>{title}</h2></div>{note && <p>{note}</p>}</header>;
 }
 
 export function StatisticStrip({ stats, className = '', scope }: { stats: readonly Statistic[]; className?: string; scope?: string }) {
@@ -57,4 +57,9 @@ export function SourceAttribution({ locale, children }: { locale: EditorialLocal
 export function EmptyMediaState({ title, note, locale }: { title?: string; note?: string; locale: EditorialLocale }) {
   const t = editorialCopy[locale];
   return <aside className={styles.emptyMedia} data-testid="editorial-empty-media"><span aria-hidden="true">[ — ]</span><div><h3>{title ?? t.mediaTitle}</h3><p>{note ?? t.mediaNote}</p></div></aside>;
+}
+
+/** Native progressive disclosure for complete records; all content remains server rendered. */
+export function ArchiveDisclosure({ label, count, children, id, open }: { label: string; count?: ReactNode; children: ReactNode; id?: string; open?: boolean }) {
+  return <details id={id} className={styles.archiveDisclosure} open={open}><summary><span>{label}</span>{count !== undefined && <span className={styles.disclosureCount}>{count}</span>}</summary><div>{children}</div></details>;
 }
