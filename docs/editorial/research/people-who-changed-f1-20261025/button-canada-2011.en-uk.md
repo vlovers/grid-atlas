@@ -62,3 +62,18 @@ A wet race is not a sequence of identical laps. Some periods are about avoiding 
 - Independently verify event chronology, official classification and historical rules; resolve pinned F1DB identifiers and live route targets.
 - No invented quotes, motives or telemetry. Source link is a locator, not evidence of a completed source review.
 - Require historical and UK-language review, tests and CI before publication.
+
+## Verified classification checkpoint — 2026-10-26 (EN/UK)
+
+**Scope:** This checkpoint cross-checks the narrowly stated classification facts with Formula 1's official historical results. It does **not** approve this manuscript or the surrounding narrative. The source's published result is distinguished from editorial interpretation.
+
+**EN · Official-result facts:** 2011 Canadian Grand Prix: Jenson Button won for McLaren Mercedes after 70 laps; Sebastian Vettel was second, Mark Webber third. The official winner time was 4:04:39.537, including interruption.
+
+**UK · Факти з офіційних результатів:** У Канаді 2011 року Дженсон Баттон переміг за McLaren Mercedes, Себастьян Феттель був другим, Марк Веббер — третім. У протоколі зазначено 70 кіл.
+
+**Evidence:**
+- https://www.formula1.com/en/results/2011/races/34/canada/race-result
+
+**Claims still requiring independent review:** The total time includes the stoppage; it is not continuous racing time. Classification does not prove pit-stop count, penalty details or Vettel's last-lap error.
+
+**Editorial direction / Редакторський акцент:** Lead with the actual sporting stakes and who achieved what, then explain why this moment matters. Keep the UK version idiomatic, not a literal transfer of English rhetoric. Do not attach unsigned media or infer ownership lineage from team names. Keep research-draft and noindex gates intact.
