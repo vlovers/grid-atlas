@@ -17,17 +17,17 @@ Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F
 | zandvoort | 5 | 1 | 0 | 0 |
 | hungaroring | 8 | 8 | 7 | 0 |
 | red-bull-ring | 5 | 1 | 0 | 0 |
-| barcelona-catalunya | 5 | 2 | 1 | 0 |
+| barcelona-catalunya | 5 | 3 | 1 | 0 |
 | albert-park | 5 | 1 | 0 | 0 |
 | marina-bay | 5 | 1 | 0 | 0 |
-| bahrain | 5 | 1 | 0 | 0 |
-| shanghai | 5 | 1 | 0 | 0 |
+| bahrain | 5 | 2 | 0 | 0 |
+| shanghai | 5 | 2 | 0 | 0 |
 | yas-marina | 5 | 1 | 0 | 0 |
-| cota | 5 | 1 | 0 | 0 |
+| cota | 5 | 2 | 0 | 0 |
 | sepang | 5 | 1 | 0 | 0 |
 | istanbul-park | 5 | 1 | 0 | 0 |
 
-**Totals:** 105 historical event drafts; 50 with at least one source candidate; 31 marked source-checked (not independently approved).
+**Totals:** 105 historical event drafts; 54 with at least one source candidate; 31 marked source-checked (not independently approved).
 
 ## Editorial release gates
 
@@ -49,4 +49,6 @@ Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F
 - Imola 2005: [official result](https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result) confirms Alonso's 0.215-second advantage over Schumacher.
 - Nürburgring 1976: [official result](https://www.formula1.com/en/results/1976/races/367/germany/race-result) lists Hunt as winner and Lauda as a non-finisher; details of the accident and rescue need additional testimony.
 
-Remaining without a source candidate: **55 event drafts**. All reviewed results are still **research drafts**, not public stories.
+Remaining without a source candidate: **51 event drafts**. All reviewed results are still **research drafts**, not public stories.
+
+Further race-result checks: Barcelona 2016, Shanghai 2012, Austin 2018, Bahrain 2020 have official exact-race citations. Statements beyond the classification still require independent editorial review.
