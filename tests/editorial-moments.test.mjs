@@ -242,3 +242,14 @@ test('all ten story middle acts add readable bilingual events without editor ins
     assert.doesNotMatch(body, /the archive should|the story needs|a reader should|we should resist|readers should|a visual timeline|архів має|не слід удавати|історія повинна|читач має/i, slug + '/' + locale + ' includes editorial meta-copy');
   }
 });
+
+test('ten second chapters advance the story in natural EN/UK instead of recapping the introduction', () => {
+  const drafts = literal(articles, 'editorialDraftArticles');
+  for (const slug of slugs) for (const locale of ['en', 'uk']) {
+    const chapter = drafts[slug]?.[locale]?.[1];
+    assert.ok(chapter, slug + '/' + locale + ' missing second chapter');
+    const body = chapter.paragraphs.join(' ');
+    assert.ok(body.length > 350, slug + '/' + locale + ' too little scene development');
+    assert.doesNotMatch(body, /the archive|a reader should|the story needs|a responsible account|we should resist|the temptation|історичний архів|читач має|спокуса пояснити|відповідальна розповідь/i, slug + '/' + locale + ' contains generic editorial framing');
+  }
+});
