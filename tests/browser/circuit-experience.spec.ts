@@ -1,3 +1,4 @@
+import { chooseCircuitOption, circuitOptionValues, expectCircuitValue } from './circuit-select-option';
 import { test, expect } from '@playwright/test';
 
 for (const locale of ['uk','en'] as const) {
@@ -7,11 +8,11 @@ for (const locale of ['uk','en'] as const) {
     await expect(experience).toBeVisible();
     await expect(experience.getByTestId('circuit-layout-facts')).toBeVisible();
     const select=experience.getByTestId('circuit-layout-select');
-    await select.selectOption({index:0});
+    await chooseCircuitOption(select, '');
     await experience.getByTestId('circuit-event-data').locator(':scope > summary').press('Enter');
     await expect(experience.getByTestId('circuit-event-data').locator('a[href*="/races/"]').first()).toBeVisible();
     await expect(experience.getByTestId('circuit-event-data').locator('details').first()).toContainText('f1db');
-    await expect(experience).toContainText(locale==='uk'?'не географічна':'not a geographic');
+    await expect(experience.getByTestId('circuit-era-rail')).toHaveCount(0);
   });
 }
 
@@ -21,8 +22,7 @@ for (const locale of ['uk', 'en'] as const) {
     const experience = page.getByTestId('circuit-experience');
     const comparison = experience.getByTestId('circuit-layout-comparison');
     const layoutSelect = experience.getByTestId('circuit-layout-select');
-    const options = layoutSelect.locator('option');
-    const optionCount = await options.count();
+    const optionCount = (await circuitOptionValues(layoutSelect)).length;
 
     if (optionCount <= 2) {
       await expect(comparison).toHaveCount(0);
@@ -37,26 +37,24 @@ for (const locale of ['uk', 'en'] as const) {
     const targetName = (await target.getByRole('button').innerText()).trim();
     await target.getByRole('button').click();
     await expect(target.getByRole('button')).toHaveAttribute('aria-pressed', 'true');
-    await expect(layoutSelect.locator('option:checked')).toContainText(targetName);
+    await expect(layoutSelect).toContainText(targetName);
     await expect(experience.getByTestId('circuit-layout-facts')).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }
 
 for (const locale of ['uk', 'en'] as const) {
-  test(`${locale}: circuit era rail links recorded seasons to event evidence`, async ({ page }) => {
+  test(`${locale}: one season picker opens exact event evidence without a second chronology`, async ({ page }) => {
     await page.goto(`/${locale}/circuits/1`);
     const experience = page.getByTestId('circuit-experience');
-    const rail = experience.getByTestId('circuit-era-rail');
-    const years = rail.getByRole('button');
-    await expect(rail).toBeVisible();
-    expect(await years.count()).toBeGreaterThan(0);
-    const year = years.first();
-    const yearLabel = (await year.locator('strong').innerText()).trim();
-    await year.click();
-    await expect(year).toHaveAttribute('aria-pressed', 'true');
-    await expect(experience.getByTestId('circuit-year-select')).toHaveValue(yearLabel);
+    const picker = experience.getByTestId('circuit-year-select');
+    const years = (await circuitOptionValues(picker)).filter(Boolean);
+    expect(years.length).toBeGreaterThan(0);
+    await chooseCircuitOption(picker, years[0]);
+    await expectCircuitValue(picker, years[0]);
+    await expect(experience.getByTestId('circuit-event-data')).toHaveAttribute('open', '');
     await expect(experience.locator('a[href*="/races/"]').first()).toBeVisible();
+    await expect(experience.getByTestId('circuit-era-rail')).toHaveCount(0);
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }

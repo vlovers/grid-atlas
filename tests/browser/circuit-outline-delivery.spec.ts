@@ -1,3 +1,4 @@
+import { circuitOptionValues } from './circuit-select-option';
 import { test, expect } from '@playwright/test';
 
 for (const locale of ['uk', 'en'] as const) {
@@ -15,9 +16,7 @@ for (const locale of ['uk', 'en'] as const) {
     const experience = page.getByTestId('circuit-experience');
     await expect(experience).toBeVisible();
     const select = experience.getByTestId('circuit-layout-select');
-    const options = await select.locator('option').evaluateAll(nodes =>
-      nodes.map(n => ({ value: (n as HTMLOptionElement).value, text: n.textContent ?? '' })));
-    expect(options.filter(o => o.value).length).toBeGreaterThan(0);
+    expect((await circuitOptionValues(select)).filter(Boolean).length).toBeGreaterThan(0);
     const outline = experience.getByTestId('circuit-track-visual').locator('img');
     // The fixture may not contain a published outline for its historical layout.
     // If it does, the browser must decode the image from the same origin.

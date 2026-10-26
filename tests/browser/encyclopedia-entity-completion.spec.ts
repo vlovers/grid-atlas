@@ -34,15 +34,11 @@ for (const locale of ['uk', 'en'] as const) {
 
     test('circuit profile exposes recorded winner and decade exploration', async ({ page }) => {
       await page.goto(`/${locale}/circuits/1`);
-      await expect(page.getByTestId('circuit-newcomer-guide')).toBeVisible();
-      await expect(page.getByTestId('circuit-newcomer-guide').getByRole('heading', { level: 2 })).toContainText(locale === 'uk' ? 'Чому ця траса важлива?' : 'Why does this circuit matter?');
-      await expect(page.getByTestId('circuit-newcomer-guide').locator('a[href="#circuit-layouts"]')).toBeVisible();
-      await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
-      await expect(page.getByTestId('circuit-era-journey')).toBeVisible();
-      await page.locator('details').filter({has:page.getByTestId('circuit-decade-history')}).locator(':scope > summary').press('Enter');
-      await expect(page.getByTestId('circuit-decade-history')).toBeVisible();
+      await expect(page.getByTestId('circuit-biography')).toBeVisible();
+      await expect(page.getByTestId('circuit-win-leader')).toBeVisible();
+      await expect(page.getByTestId('circuit-era-journey')).toHaveCount(0);
+      await expect(page.getByTestId('circuit-history-table')).toBeVisible();
       await expect(page.getByTestId('identity-facts')).toContainText('Synthetic City');
-      await page.locator('#circuit-results > details > summary').press('Enter');
       await expect(page.locator('a[href*="/races/"]').first()).toBeVisible();
       await expect(page.locator('a[href*="/seasons/"]').first()).toBeVisible();
     });
@@ -58,7 +54,7 @@ for (const locale of ['uk', 'en'] as const) {
         await expect(page.locator('meta[name="robots"][content~="noindex"]').first()).toBeAttached();
         await expect(page.getByTestId('driver-showcase')).toHaveCount(0);
         await expect(page.getByTestId('constructor-archive-portrait')).toHaveCount(0);
-        await expect(page.getByTestId('circuit-result-legends')).toHaveCount(0);
+        await expect(page.getByTestId('circuit-win-leader')).toHaveCount(0);
       }
     });
 

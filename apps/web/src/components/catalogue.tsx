@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { EditorialHero, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchivePlate } from '@/components/editorial/archive-plate';
+import { CircuitCatalogueFeatures } from '@/components/editorial/circuit-catalogue-features';
 import { ArchiveFeatures } from '@/components/editorial/archive-features';
 import { archiveCopy } from '@/components/editorial/archive-copy';
 import { atlasCopy } from '@/components/atlas/copy';
@@ -38,7 +39,7 @@ export default async function Catalogue({ path, title, description, searchParams
         entries={records.slice(0, 3).map((record, index) => ({ id: record.id, href: `${path}/${record.id}`, title: record.name, meta: `${String(offset + index + 1).padStart(3, '0')} / ${record.external_id}` }))} />}
       actions={<><a href="#complete-index">{a.archive} ↓</a><a href={getPathname({ locale, href: '/seasons' })}>{a.decade} ↗</a></>} />
     <SourceAttribution locale={locale as 'uk' | 'en'} />
-    {page === 1 && !q && records.length > 0 && <Suspense fallback={<p role="status">{a.loading}</p>}><ArchiveFeatures kind={kind} fallback={records} locale={locale as 'uk' | 'en'} /></Suspense>}
+    {page === 1 && !q && records.length > 0 && <Suspense fallback={<p role="status">{a.loading}</p>}>{kind === 'circuits' ? <CircuitCatalogueFeatures fallback={records} locale={locale as 'uk' | 'en'} /> : <ArchiveFeatures kind={kind} fallback={records} locale={locale as 'uk' | 'en'} />}</Suspense>}
     <SectionHeading id="complete-index" kicker={a.index} title={a.archive} />
     <form className={`catalogue-search ${styles.search}`} action={cataloguePath} role="search">
       <label htmlFor="catalogue-query">{t('searchLabel')}</label>

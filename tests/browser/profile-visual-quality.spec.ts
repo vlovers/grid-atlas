@@ -1,3 +1,4 @@
+import { chooseCircuitOption, expectCircuitValue } from './circuit-select-option';
 import { test, expect } from '@playwright/test';
 
 for (const locale of ['en', 'uk'] as const) {
@@ -50,18 +51,15 @@ for (const locale of ['en', 'uk'] as const) {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(`/${locale}/circuits/1`);
     const nav = page.getByTestId('profile-section-nav');
-    await nav.getByRole('link').first().press('Enter');
+    await nav.locator('a[href="#circuit-layouts"]').press('Enter');
     await expect(page).toHaveURL(/#circuit-layouts$/);
     const select = page.getByTestId('circuit-layout-select');
-    const year = page.getByTestId('circuit-era-rail').getByRole('button').first();
-    await year.focus();
-    await year.press('Enter');
-    await expect(year).toHaveAttribute('aria-pressed', 'true');
-    await expect(select).toHaveValue('1');
+    await chooseCircuitOption(page.getByTestId('circuit-year-select'), '1950');
+    await expectCircuitValue(select, '1');
     await expect(page.getByTestId('circuit-layout-facts')).toContainText('5.123');
     const order = await page.evaluate(() => {
       const layouts = document.getElementById('circuit-layouts')!;
-      const chronology = document.getElementById('circuit-chronology')!;
+      const chronology = document.getElementById('circuit-history')!;
       return Boolean(layouts.compareDocumentPosition(chronology) & Node.DOCUMENT_POSITION_FOLLOWING);
     });
     expect(order).toBe(true);

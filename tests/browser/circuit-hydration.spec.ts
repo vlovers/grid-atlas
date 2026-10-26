@@ -1,3 +1,4 @@
+import { chooseCircuitOption, expectCircuitValue } from './circuit-select-option';
 import { test, expect } from '@playwright/test';
 
 for (const locale of ['en', 'uk'] as const) {
@@ -28,28 +29,28 @@ for (const locale of ['en', 'uk'] as const) {
             expect(html).toContain('<option value="2" selected="">');
             const serverIds = [...html.matchAll(/<linearGradient id="([^"]+)"/g)].map(match => match[1]);
             expect(serverIds).toHaveLength(0);
-            expect(html).toContain('data-testid="archive-plate"');
+            expect(html).not.toContain('data-testid="archive-plate"');
             await expect(page.getByTestId('editorial-hero').locator('linearGradient')).toHaveCount(0);
-            await expect(page.getByTestId('archive-plate').getByRole('link').first()).toHaveAttribute('href', `/${locale}/races/1`);
+            await expect(page.getByTestId('circuit-history-table').locator('a[href*="/races/"]').first()).toHaveAttribute('href', `/${locale}/races/1`);
             expect(await page.getByTestId('editorial-hero').locator('linearGradient').evaluateAll(nodes => nodes.map(node => node.id))).toEqual(serverIds);
           }
           await expect(page.locator('main h1')).toHaveText('100%_ Test Circuit');
           const select = page.getByTestId('circuit-layout-select');
           // Verify hydration completed through a state change, not only static SSR visibility.
-          await expect(select).toHaveValue('2');
-          await select.selectOption('1');
+          await expectCircuitValue(select, '2');
+          await chooseCircuitOption(select, '1');
           await expect(page.getByTestId('circuit-layout-facts')).toContainText('5.123');
-          await page.locator(`main a[href="/${locale}/races/1"]`).first().click();
+          await page.getByTestId('circuit-history-table').locator(`a[href="/${locale}/races/1"]`).click();
           await expect(page).toHaveURL(`/${locale}/races/1`);
           await expect(page.locator('main h1')).toHaveText('Synthetic shared-car race');
           await page.locator(`main a[href="/${locale}/circuits/1"]`).first().click();
           await expect(page).toHaveURL(`/${locale}/circuits/1`);
-          await expect(select).toHaveValue('2');
-          await select.selectOption('1');
+          await expectCircuitValue(select, '2');
+          await chooseCircuitOption(select, '1');
           await expect(page.getByTestId('circuit-layout-facts')).toContainText('5.123');
           expect((await page.reload())?.status()).toBe(200);
-          await expect(select).toHaveValue('2');
-          await select.selectOption('1');
+          await expectCircuitValue(select, '2');
+          await chooseCircuitOption(select, '1');
           await expect(page.getByTestId('circuit-layout-facts')).toContainText('5.123');
           expect(errors, `cycle ${cycle}, ${page.url()}`).toEqual([]);
         });

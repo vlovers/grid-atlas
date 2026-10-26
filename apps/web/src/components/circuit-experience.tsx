@@ -1,5 +1,6 @@
 'use client';
 
+import { EditorialSelect } from './editorial/select';
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 
@@ -24,15 +25,15 @@ export type { Layout as CircuitLayout, Event as CircuitTechnicalEvent };
 
 const labels = {
   uk: {
-    kicker: 'КОНФІГУРАЦІЇ / ІСТОРІЯ', title: 'Траса змінюється з часом',
-    lead: 'Оберіть сезон, щоб побачити конфігурацію траси й дані її Гран-прі. Параметри наведено за F1DB для конкретних років.',
+    kicker: 'КОНФІГУРАЦІЇ / ІСТОРІЯ', title: 'Як змінювалася траса',
+    lead: 'Порівняйте конфігурації різних років. Оберіть сезон, щоб побачити трасу того Гран-прі.',
     select: 'Історична конфігурація', all: 'Усі конфігурації',
     effective: 'Позначена джерелом як актуальна', length: 'Довжина кола',
     turns: 'Повороти', events: 'Пов’язані Гран-прі', first: 'Перше зафіксоване використання',
     latest: 'Останнє зафіксоване використання', year: 'Сезон', distance: 'Дистанція гонки',
     grandPrix: 'Гран-прі', license: 'Ліцензія', laps: 'Кола', direction: 'Напрямок руху', source: 'Джерело і межі',
     noEvents: 'Для цієї конфігурації немає пов’язаних гонок в архіві.',
-    measurements: 'Дані траси для Гран-прі', showAll: 'Показати всі записи',
+    measurements: 'Параметри гонок', showAll: 'Показати всі записи',
     note: 'Кожен рядок містить дані конкретного Гран-прі. Довжина й кількість поворотів можуть відрізнятися в інші роки.',
     notMap: 'Роки проведення Гран-прі, не географічна карта траси',
     graphic: 'Контур історичної конфігурації',
@@ -46,18 +47,18 @@ const labels = {
     yearLayouts: 'Конфігурації цього сезону', yearLayoutHint: 'Оберіть конфігурацію, якщо в одному сезоні зафіксовано декілька.',
     exploreTimeline: 'Хронологія Гран-прі', timelineHint: 'Оберіть зафіксований сезон, щоб переглянути конфігурацію та пов’язані перегони.',
     compareYear: 'Зафіксовані роки', compareMissing: 'Немає достатньо даних для порівняння.',
-    previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Гран-прі обраного сезону', clearYear: 'Показати всі роки',
+    previous: 'Попередній сезон', next: 'Наступний сезон', seasonEvents: 'Параметри гонки', clearYear: 'Показати всі роки',
   },
   en: {
-    kicker: 'LAYOUTS / HISTORY', title: 'The circuit through time',
-    lead: 'Choose a season to explore its circuit layout and Grand Prix data. Measurements come from F1DB and belong to specific years.',
+    kicker: 'LAYOUTS / HISTORY', title: 'How the circuit changed',
+    lead: 'Compare layouts across the years. Choose a season to see the configuration of its Grand Prix.',
     select: 'Historical layout', all: 'All layouts',
     effective: 'Marked current by the source', length: 'Lap length',
     turns: 'Corners', events: 'Linked Grands Prix', first: 'First recorded use',
     latest: 'Latest recorded use', year: 'Season', distance: 'Race distance',
     grandPrix: 'Grand Prix', license: 'License', laps: 'Laps', direction: 'Direction', source: 'Source and limits',
     noEvents: 'No linked Grand Prix is recorded for this layout.',
-    measurements: 'Circuit data by Grand Prix', showAll: 'Show all records',
+    measurements: 'Race measurements', showAll: 'Show all records',
     note: 'Every row is specific to one event. Length and corner counts are not assumed valid for other years.',
     notMap: 'Years with Grands Prix, not a geographic track map',
     graphic: 'Historical layout outline',
@@ -71,7 +72,7 @@ const labels = {
     yearLayouts: 'Layouts in this season', yearLayoutHint: 'Choose a layout when multiple are recorded for one season.',
     exploreTimeline: 'Grand Prix timeline', timelineHint: 'Choose a recorded season to inspect its layout and linked races.',
     compareYear: 'Recorded years', compareMissing: 'Not enough layout data to compare.',
-    previous: 'Previous season', next: 'Next season', seasonEvents: 'Grands Prix in selected season', clearYear: 'Show all years',
+    previous: 'Previous season', next: 'Next season', seasonEvents: 'Race measurements', clearYear: 'Show all years',
   },
 } as const;
 
@@ -94,9 +95,6 @@ export function CircuitExperience({ layouts, events, locale }: {
   const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
   const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
-  const timelineYears = [...new Set(events.map(e => e.season_year))].sort((a, b) => a - b);
-  const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
-  const maxYear = events.length ? Math.max(...events.map(e => e.season_year)) : null;
   return <section className={styles.shell} aria-labelledby="circuit-experience-title" data-testid="circuit-experience">
     <p className={styles.kicker}>{t.kicker}</p>
     <h2 id="circuit-experience-title">{t.title}</h2>
@@ -105,10 +103,10 @@ export function CircuitExperience({ layouts, events, locale }: {
       <div className={styles.yearExplorerHeading}><div><strong>{t.yearBrowse}</strong><p>{t.yearHint}</p></div><span aria-live="polite">{selectedYear === null ? '' : `${t.yearSelected}: ${selectedYear}`}</span></div>
       <div className={styles.yearExplorerControls}>
         <button type="button" disabled={yearIndex <= 0} onClick={() => selectYear(recordedYears[yearIndex-1])} aria-label={t.previous}>‹</button>
-        <label className={styles.yearPickerLabel}>{t.year}<select data-testid="circuit-year-select" value={selectedYear ?? ''} onChange={e => { if (e.target.value) selectYear(Number(e.target.value)); }}>
+        <label className={styles.yearPickerLabel}>{t.year}<EditorialSelect data-testid="circuit-year-select" value={selectedYear ?? ''} onValueChange={value => { if (value) selectYear(Number(value)); }}>
           <option value="">—</option>
           {recordedYears.map(year => <option key={year} value={year}>{year}</option>)}
-        </select></label>
+        </EditorialSelect></label>
         <button type="button" disabled={yearIndex < 0 || yearIndex >= recordedYears.length-1} onClick={() => selectYear(recordedYears[yearIndex+1])} aria-label={t.next}>›</button>
         {selectedYear !== null && <button type="button" className={styles.clearYear} onClick={() => { setSelectedYear(null); setShowAll(false); }}>{t.clearYear}</button>}
       </div>
@@ -141,11 +139,11 @@ export function CircuitExperience({ layouts, events, locale }: {
     <div className={styles.layout}>
       <div className={styles.selector}>
         <label htmlFor="circuit-layout-select">{t.select}</label>
-        <select id="circuit-layout-select" data-testid="circuit-layout-select" value={selected}
-          onChange={e => { setSelected(e.target.value); setSelectedYear(null); setShowAll(false); }}>
+        <EditorialSelect id="circuit-layout-select" data-testid="circuit-layout-select" value={selected}
+          onValueChange={value => { setSelected(value); setSelectedYear(null); setShowAll(false); }}>
           <option value="">{t.all}</option>
           {layouts.map(l => <option key={l.id} value={l.id}>{l.external_layout_id} · {l.length_km} km</option>)}
-        </select>
+        </EditorialSelect>
       </div>
       {current && <div className={styles.measurements} data-testid="circuit-layout-facts">
         <div><span>{t.length}</span><strong>{current.length_km} km</strong></div>
@@ -170,25 +168,6 @@ export function CircuitExperience({ layouts, events, locale }: {
         </table>
       </div>
     </details>}
-    {minYear !== null && maxYear !== null && <section className={styles.eraRail} aria-labelledby="circuit-era-rail-title" data-testid="circuit-era-rail">
-      <div className={styles.eraRailIntro}><h3 id="circuit-era-rail-title">{t.exploreTimeline}</h3><p>{t.timelineHint}</p></div>
-      <div className={styles.timelineHeading}><strong>{minYear}</strong><span>{t.notMap}</span><strong>{maxYear}</strong></div>
-      <div className={styles.timelineBar} aria-hidden="true">
-        {timelineYears.map(year => <span key={year}
-          className={selected && !events.some(e => e.season_year === year && e.layout_id === selected) ? styles.dimmed : ''}
-          style={{ left: `${maxYear === minYear ? 50 : ((year - minYear) / (maxYear - minYear)) * 100}%` }} />)}
-      </div>
-      <div className={styles.eraRailYears} role="group" aria-label={t.exploreTimeline}>
-        {recordedYears.map(year => {
-          const linked = events.filter(e => e.season_year === year && e.layout_id);
-          return <button key={year} type="button" aria-pressed={selectedYear === year}
-            className={selectedYear === year ? styles.activeYear : undefined}
-            onClick={() => selectYear(year)}>
-            <strong>{year}</strong><span>{linked.length} GP</span>
-          </button>;
-        })}
-      </div>
-    </section>}
     <details className={styles.eventDisclosure} key={selectedYear ?? 'all'} open={selectedYear !== null} data-testid="circuit-event-data">
       <summary><h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`} <small>· {matching.length}</small></h3></summary>
       <p>{t.note}</p>
