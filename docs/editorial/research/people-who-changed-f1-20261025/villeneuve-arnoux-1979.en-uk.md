@@ -63,3 +63,18 @@ If a reader opens only the race result, Jabouille's name is the correct first an
 - Do not invent motives, dialogue, technical telemetry or steward quotations.
 - Editorial gates: independent historical review, Ukrainian copy edit, full source check, archive-ID mapping, tests and CI.
 - **Not published.**
+
+## Verified classification checkpoint — 2026-10-26 (EN/UK)
+
+**Scope:** This checkpoint cross-checks the narrowly stated classification facts with Formula 1's official historical results. It does **not** approve this manuscript or the surrounding narrative. The source's published result is distinguished from editorial interpretation.
+
+**EN · Official-result facts:** 1979 French Grand Prix, 1 July at Dijon-Prenois: Jean-Pierre Jabouille P1 (Renault), Gilles Villeneuve P2 (Ferrari), René Arnoux P3 (Renault), over 80 laps.
+
+**UK · Факти з офіційних результатів:** У Діжоні 1 липня 1979 року переміг Жан-П'єр Жабуй (Renault), Жиль Вільнев (Ferrari) був другим, Рене Арну (Renault) — третім.
+
+**Evidence:**
+- https://www.formula1.com/en/results/1979/races/414/france/race-result
+
+**Claims still requiring independent review:** The result proves positions, not the exact number of overtakes, touches or emotions attributed to either driver; historical technical breakthrough claims require a separate source.
+
+**Editorial direction / Редакторський акцент:** Lead with the actual sporting stakes and who achieved what, then explain why this moment matters. Keep the UK version idiomatic, not a literal transfer of English rhetoric. Do not attach unsigned media or infer ownership lineage from team names. Keep research-draft and noindex gates intact.
