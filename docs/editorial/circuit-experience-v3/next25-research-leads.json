@@ -1326,12 +1326,15 @@
             "en": "Investigate the 1985 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 1985 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Ayrton Senna won his first Formula 1 Grand Prix at a soaked Estoril in 1985, driving a Lotus. He had taken pole and then controlled a difficult race, providing an early glimpse of his exceptional ability in the wet.",
             "uk": "Айртон Сенна здобув першу перемогу у Формулі-1 в залитому дощем Ешторілі 1985 року за Lotus. Він стартував із поулу та контролював складну гонку, рано показавши свій винятковий талант на мокрій трасі."
-          }
+          },
+          "verification_scope": "Senna winner by 62.978s over Alboreto; wet weather needs separate source"
         },
         {
           "year": null,
@@ -1884,12 +1887,15 @@
             "en": "Investigate the 2013 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
             "uk": "Дослідити результат Гран-прі 2013 року, як розвивалися вирішальні події та що це змінило для учасників."
           },
-          "sources": [],
-          "status": "unverified_historical_narrative",
+          "sources": [
+            "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+          ],
+          "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
             "en": "Sebastian Vettel won the 2013 Indian Grand Prix and secured his fourth consecutive Drivers' Championship. His celebration on the track marked the end of a remarkable four-year Red Bull title run.",
             "uk": "Себастьян Феттель виграв Гран-прі Індії 2013 року й здобув четвертий титул чемпіона світу поспіль. Його святкування на трасі стало кульмінацією чотирирічного домінування Red Bull."
-          }
+          },
+          "verification_scope": "Vettel winner of 2013 Indian GP; fourth championship needs separate standings corroboration"
         },
         {
           "year": null,
