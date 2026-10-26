@@ -13,6 +13,7 @@ import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art
 import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import { editorialReflection } from '@/components/stories/editorial-reflection';
 import { editorialStoryContext } from '@/components/stories/editorial-story-context';
+import { editorialMilestones } from '@/components/stories/editorial-milestones';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -60,6 +61,18 @@ export default async function EditorialMoment({ params }: Props) {
         <p className={styles.eyebrow}>{uk ? 'КОРОТКО ПРО ГОЛОВНЕ' : 'THE STORY AT A GLANCE'}</p>
         <h2 style={{ fontSize: 'clamp(22px, 3vw, 36px)', marginBottom: 8 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].label}</h2>
         <p style={{ maxWidth: '65ch', marginBottom: 0 }}>{editorialStoryContext[slug as keyof typeof editorialStoryContext][locale].description}</p>
+      </section>}
+      {slug in editorialMilestones && <section aria-labelledby="story-milestones" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
+        <p className={styles.eyebrow}>{uk ? 'ІСТОРІЯ У ЧОТИРЬОХ МОМЕНТАХ' : 'FOUR MOMENTS THAT MATTER'}</p>
+        <h2 id="story-milestones">{uk ? 'Як розгорталися події' : 'How the story unfolded'}</h2>
+        <ol className={styles.editorialActs}>
+          {editorialMilestones[slug as keyof typeof editorialMilestones].map((moment, index) => <li key={index} className={styles.editorialAct}>
+            <h3>{moment[locale].title}</h3>
+            <p>{moment[locale].detail}</p>
+            <small>{uk ? `Момент ${index + 1} з 4` : `Moment ${index + 1} of 4`}</small>
+          </li>)}
+        </ol>
+        <p className={styles.note}>{uk ? 'Це стислий редакційний виклад, а не перевірена покрокова хронологія.' : 'An editorial overview, not an independently verified lap-by-lap chronology.'}</p>
       </section>}
       <section aria-labelledby="story-people" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ДІЙОВІ ОСОБИ' : 'THE PEOPLE'}</p>
