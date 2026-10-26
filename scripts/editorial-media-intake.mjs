@@ -21,7 +21,7 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
   console.error('Usage: node scripts/editorial-media-intake.mjs --all | --slug <candidate>');
   process.exitCode = 1;
 } else {
-  const dir = resolve('tmp/editorial-media-intake');
+  const dir = resolve('.grid-atlas/media-review');
   await mkdir(dir, { recursive: true });
   for (const slug of requested) {
     const api = new URL('https://commons.wikimedia.org/w/api.php');
