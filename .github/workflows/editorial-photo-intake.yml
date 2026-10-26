@@ -1,0 +1,83 @@
+name: Stage editorial photo candidates
+
+on:
+  pull_request:
+    paths:
+      - scripts/editorial-media-intake.mjs
+      - scripts/editorial-photo-discovery.mjs
+      - .github/workflows/editorial-photo-intake.yml
+  push:
+    branches:
+      - editorial/people-who-changed-f1-20261025
+    paths:
+      - scripts/editorial-media-intake.mjs
+      - scripts/editorial-photo-discovery.mjs
+      - .github/workflows/editorial-photo-intake.yml
+  workflow_dispatch:
+    inputs:
+      story:
+        description: Historical photo candidate to stage
+        required: true
+        type: choice
+        options:
+          - all
+          - vettel-monza-2008
+          - brawn-2009
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    name: Download candidates for manual rights review
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Discover candidates for all ten stories (unreviewed)
+        if: github.event_name != 'push'
+        run: node scripts/editorial-photo-discovery.mjs
+      # Full-resolution intake makes further Commons API calls and frequently hits
+      # HTTP 429 when triggered automatically for every PR commit. Discovery is
+      # enough for PR review; manual intake remains a separate, explicit gate.
+      - name: Fetch Commons candidates and provenance
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] || [ "${{ inputs.story }}" = "all" ]; then
+            node scripts/editorial-media-intake.mjs --all
+          else
+            node scripts/editorial-media-intake.mjs --slug "${{ inputs.story }}"
+          fi
+      - name: Upload private review package (not published)
+        if: github.event_name != 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-photo-review-${{ github.run_id }}
+          path: .grid-atlas/media-review/
+          if-no-files-found: error
+          retention-days: 7
+
+
+      - name: Remove accidentally published unreviewed media
+        if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for file in apps/web/public/media/editorial/vettel-monza-2008.jpg apps/web/public/media/editorial/brawn-2009.jpg; do
+            if git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+              git rm -- "$file"
+            fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "fix(media): quarantine unreviewed photo files outside public assets"
+            git push origin HEAD:editorial/people-who-changed-f1-20261025
+          fi

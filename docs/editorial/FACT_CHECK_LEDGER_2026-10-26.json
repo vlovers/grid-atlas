@@ -1,0 +1,907 @@
+{
+  "schemaVersion": 1,
+  "scope": "Ten unpublished editorial story drafts",
+  "policy": "Audit ledger, not publication approval. Entries marked primary-source-checked-ai have been checked against their exact official result, Formula 1 account or original corporate announcement; this does not mean the complete manuscript is verified or reviewed by an independent human editor. Other claims remain pending. No fake reviewer signoffs.",
+  "entries": [
+    {
+      "id": "lauda-hunt-1976-1",
+      "slug": "lauda-hunt-1976",
+      "claim": "A title is not a safety verdict",
+      "classification": "interpretation-or-composite",
+      "status": "editorial-interpretation-not-fact-checkable",
+      "primarySource": null,
+      "secondarySource": null,
+      "notes": "Editorial judgement, not independently falsifiable racing classification. Keep clearly as interpretation without implying an objective historical source verified it.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
+    },
+    {
+      "id": "lauda-hunt-1976-2",
+      "slug": "lauda-hunt-1976",
+      "claim": "Lauda's withdrawal did not automatically crown Hunt",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1976/drivers",
+      "secondarySource": null,
+      "notes": "Hunt won 69–68; Japan race and season standings show the title depended on Hunt's race result, not Lauda retirement alone. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "1976 championship standings and Fuji race classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "lauda-hunt-1976-3",
+      "slug": "lauda-hunt-1976",
+      "claim": "The Nürburgring crash changed the stakes",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/information/drivers-hall-of-fame-niki-lauda.2Ye7VYWdXwhb97ZqLyxvX",
+      "secondarySource": null,
+      "notes": "F1 driver history documents Nürburgring fire, serious injuries, six-week return at Monza. 'Changed the stakes' is interpretive; factual crash/return sequence supported. Does not certify all narrative details in either language.",
+      "evidenceRequirement": "historical-narrative",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "lauda-hunt-1976-4",
+      "slug": "lauda-hunt-1976",
+      "claim": "The final margin was one point",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1976/drivers",
+      "secondarySource": null,
+      "notes": "Official 1976 standings list Hunt 69 and Lauda 68. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "1976 German GP and Japanese GP contemporary accounts",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "lauda-hunt-1976-5",
+      "slug": "lauda-hunt-1976",
+      "claim": "Monza proved a return was possible, not compulsory forever",
+      "classification": "interpretation-or-composite",
+      "status": "editorial-interpretation-not-fact-checkable",
+      "primarySource": null,
+      "secondarySource": null,
+      "notes": "Editorial judgement, not independently falsifiable racing classification. Keep clearly as interpretation without implying an objective historical source verified it.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
+    },
+    {
+      "id": "senna-prost-1988-89-1",
+      "slug": "senna-prost-1988-89",
+      "claim": "The 1988 standings used dropped scores",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1988/drivers",
+      "secondarySource": "https://escholarship.org/content/qt2fr4561v/qt2fr4561v_noSplash_c855cfa033ae10048e57f6c9eb912d2b.pdf",
+      "notes": "Official F1 final table confirms Senna 90 and Prost 87; independent 2026 academic analysis expressly identifies best 11 of 16 count, raw 94 versus 105. Exact official historical FIA rule PDF not inspected. Scope is the points calculation, not rivalry motives.",
+      "evidenceRequirement": "championship-regulation",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "senna-prost-1988-89-2",
+      "slug": "senna-prost-1988-89",
+      "claim": "McLaren won 15 of 16 races in 1988",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1988/races",
+      "secondarySource": null,
+      "notes": "The official sixteen-race winner list has fifteen McLaren-Honda wins; Ferrari won Italy. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "season race wins",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "senna-prost-1988-89-3",
+      "slug": "senna-prost-1988-89",
+      "claim": "Senna secured his first title at Suzuka",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/prost-vs-senna-the-top-10-moments-of-f1s-defining-rivalry.HXTkvgrOpnaYJoanGiwGq",
+      "secondarySource": null,
+      "notes": "F1 retrospective describes 1988 Suzuka win and first championship clinched there. Does not certify all narrative details in either language.",
+      "evidenceRequirement": "1988 Japanese GP results and title context",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "senna-prost-1988-89-4",
+      "slug": "senna-prost-1988-89",
+      "claim": "The teammates remained rivals in 1989",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/prost-vs-senna-the-top-10-moments-of-f1s-defining-rivalry.HXTkvgrOpnaYJoanGiwGq",
+      "secondarySource": null,
+      "notes": "F1 rivalry retrospective covers Suzuka and team-mate rivalry continuing in 1989. Does not certify all narrative details in either language.",
+      "evidenceRequirement": "1989 season historical coverage",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "senna-prost-1988-89-5",
+      "slug": "senna-prost-1988-89",
+      "claim": "A team victory does not guarantee team harmony",
+      "classification": "interpretation-or-composite",
+      "status": "editorial-interpretation-not-fact-checkable",
+      "primarySource": null,
+      "secondarySource": null,
+      "notes": "Editorial judgement, not independently falsifiable racing classification. Keep clearly as interpretation without implying an objective historical source verified it.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
+    },
+    {
+      "id": "villeneuve-arnoux-1979-1",
+      "slug": "villeneuve-arnoux-1979",
+      "claim": "The famous duel was for second place",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+      "secondarySource": null,
+      "notes": "Classification P1 Jabouille, P2 Villeneuve, P3 Arnoux confirms second-place placing, not the wheel-to-wheel sequence. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "villeneuve-arnoux-1979-2",
+      "slug": "villeneuve-arnoux-1979",
+      "claim": "Jabouille won the French Grand Prix",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+      "secondarySource": null,
+      "notes": "Official French GP classification: Jabouille P1. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "villeneuve-arnoux-1979-3",
+      "slug": "villeneuve-arnoux-1979",
+      "claim": "Renault celebrated a landmark win",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+      "secondarySource": null,
+      "notes": "F1 retrospective expressly calls Jabouille's Dijon win Renault's first and first turbo-powered F1 win. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "Renault first victory historical account",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "villeneuve-arnoux-1979-4",
+      "slug": "villeneuve-arnoux-1979",
+      "claim": "The battle unfolded at Dijon",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+      "secondarySource": null,
+      "notes": "Official classification specifies Circuit Dijon-Prenois. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-venue and classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "villeneuve-arnoux-1979-5",
+      "slug": "villeneuve-arnoux-1979",
+      "claim": "A race can have more than one memorable story",
+      "classification": "interpretation-or-composite",
+      "status": "editorial-interpretation-not-fact-checkable",
+      "primarySource": null,
+      "secondarySource": null,
+      "notes": "Editorial judgement, not independently falsifiable racing classification. Keep clearly as interpretation without implying an objective historical source verified it.",
+      "evidenceRequirement": "editorial-judgment",
+      "reviewChecklist": {
+        "archiveResult": false,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "interpretive-framing"
+    },
+    {
+      "id": "vettel-monza-2008-1",
+      "slug": "vettel-monza-2008",
+      "claim": "Vettel drove for Toro Rosso",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/838/italy/qualifying",
+      "secondarySource": null,
+      "notes": "Official Monza qualifying lists Vettel for STR Ferrari. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "race-entry",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "vettel-monza-2008-2",
+      "slug": "vettel-monza-2008",
+      "claim": "He started from pole position",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/838/italy/qualifying",
+      "secondarySource": null,
+      "notes": "Official grid/qualifying classification lists Vettel P1. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "qualifying-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "vettel-monza-2008-3",
+      "slug": "vettel-monza-2008",
+      "claim": "The race was held in wet conditions",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/from-mighty-comebacks-to-stunning-debut-victories-nine-of-the-greatest-wet.76xmQPYD8I3wtkM8g860rT.76xmQPYD8I3wtkM8g860rT",
+      "secondarySource": null,
+      "notes": "F1 retrospective describes torrential wet qualifying and continuing difficult wet race conditions. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "weather race report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "vettel-monza-2008-4",
+      "slug": "vettel-monza-2008",
+      "claim": "This was Toro Rosso's first Grand Prix victory",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/from-an-underdog-win-to-record-breaking-success-7-times-a-driver-signing.47OvmSiAw7g07vkZiEUNsg.html",
+      "secondarySource": null,
+      "notes": "F1 retrospective explicitly calls Italy 2008 a first win for Toro Rosso. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "team-history",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "vettel-monza-2008-5",
+      "slug": "vettel-monza-2008",
+      "claim": "It was not a Red Bull Racing win",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races",
+      "secondarySource": null,
+      "notes": "Official Italy winner recorded as Vettel for STR Ferrari, distinct from Red Bull Racing. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "team-identity",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "button-canada-2011-1",
+      "slug": "button-canada-2011",
+      "claim": "Rain repeatedly disrupted the race",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj",
+      "secondarySource": null,
+      "notes": "Source records Safety Car start, heavy rain, red flag on lap 25, multiple subsequent restarts. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "race-report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "button-canada-2011-2",
+      "slug": "button-canada-2011",
+      "claim": "Button recovered from multiple setbacks",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj",
+      "secondarySource": null,
+      "notes": "Source records six pit-lane visits including lap 51 to slicks, recovery through traffic. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "race-report and incidents",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "button-canada-2011-3",
+      "slug": "button-canada-2011",
+      "claim": "Vettel led late in the race",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj",
+      "secondarySource": null,
+      "notes": "Source records Vettel still leading with five laps to go. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "lap-by-lap report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "button-canada-2011-4",
+      "slug": "button-canada-2011",
+      "claim": "The lead changed on the final lap",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj",
+      "secondarySource": null,
+      "notes": "Source describes Button taking the lead after Vettel's error on final lap. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "final-lap report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "button-canada-2011-5",
+      "slug": "button-canada-2011",
+      "claim": "Button won the Canadian Grand Prix",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2011/races/34/canada/race-result",
+      "secondarySource": null,
+      "notes": "Classification identifies Button as winner. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "perez-sakhir-2020-1",
+      "slug": "perez-sakhir-2020",
+      "claim": "Pérez's race began with a setback",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/sergio-perez-takes-sensational-maiden-win-in-sakhir-gp-as-tyre-issues-ruin.2TBf7rg5wpgELNALXJLRHV.html",
+      "secondarySource": null,
+      "notes": "Contemporary F1 race report identifies lap-one Leclerc collision and Perez rejoining P18. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "race-report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "perez-sakhir-2020-2",
+      "slug": "perez-sakhir-2020",
+      "claim": "Russell substituted for Hamilton at Mercedes",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/mercedes-handed-eur20-000-fine-for-russell-tyre-mix-up-in-sakhir-grand-prix.3PwKTGxftR3C8ACA5DcDKj",
+      "secondarySource": null,
+      "notes": "Contemporary report explicitly says Russell substituted for Hamilton who tested positive for COVID-19. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "driver-substitution official entry",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "perez-sakhir-2020-3",
+      "slug": "perez-sakhir-2020",
+      "claim": "Mercedes had a troubled pit-stop sequence",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/mercedes-handed-eur20-000-fine-for-russell-tyre-mix-up-in-sakhir-grand-prix.3PwKTGxftR3C8ACA5DcDKj",
+      "secondarySource": null,
+      "notes": "Contemporary report on stewards decision confirms wrong tyres placed on Russell and Mercedes fine. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "pit-stop race report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "perez-sakhir-2020-4",
+      "slug": "perez-sakhir-2020",
+      "claim": "Pérez won for Racing Point",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/sergio-perez-takes-sensational-maiden-win-in-sakhir-gp-as-tyre-issues-ruin.2TBf7rg5wpgELNALXJLRHV.html",
+      "secondarySource": null,
+      "notes": "Contemporary race report identifies Perez/Racing Point maiden victory and race podium. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "perez-sakhir-2020-5",
+      "slug": "perez-sakhir-2020",
+      "claim": "It was Pérez's first Formula 1 win",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/sergio-perez-takes-sensational-maiden-win-in-sakhir-gp-as-tyre-issues-ruin.2TBf7rg5wpgELNALXJLRHV.html",
+      "secondarySource": null,
+      "notes": "Contemporary report identifies first F1 win on Perez's 190th race start. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "driver-career-history",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "kubica-bmw-2008-1",
+      "slug": "kubica-bmw-2008",
+      "claim": "Kubica won in Canada",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/831/canada/race-result",
+      "secondarySource": null,
+      "notes": "Official Canadian GP classification lists Robert Kubica P1. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "kubica-bmw-2008-2",
+      "slug": "kubica-bmw-2008",
+      "claim": "Heidfeld finished second for BMW Sauber",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/831/canada/race-result",
+      "secondarySource": null,
+      "notes": "Official Canadian GP classification lists Nick Heidfeld P2, +16.495 seconds. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "kubica-bmw-2008-3",
+      "slug": "kubica-bmw-2008",
+      "claim": "The result was a BMW Sauber one-two",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/831/canada/race-result",
+      "secondarySource": null,
+      "notes": "Official Canadian GP classification lists Kubica P1 and Heidfeld P2 for Sauber BMW. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "kubica-bmw-2008-4",
+      "slug": "kubica-bmw-2008",
+      "claim": "Kubica briefly led the championship",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/in-his-own-words-kubica-on-his-08-canadian-gp-win.3Bs5Ap5XuM8sCWiimqGCuM",
+      "secondarySource": null,
+      "notes": "Formula 1 interview reports Kubica led the drivers standings on 42 points immediately after Canada. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "post-race championship standings",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "kubica-bmw-2008-5",
+      "slug": "kubica-bmw-2008",
+      "claim": "A midseason lead did not become a title",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/in-his-own-words-kubica-on-his-08-canadian-gp-win.3Bs5Ap5XuM8sCWiimqGCuM",
+      "secondarySource": null,
+      "notes": "F1 report explicitly records initial lead and year-end P4; does not infer a hypothetical championship. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "end-season standings",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "schumacher-ferrari-1996-2000-1",
+      "slug": "schumacher-ferrari-1996-2000",
+      "claim": "Schumacher joined Ferrari in 1996",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/information/drivers-hall-of-fame-michael-schumacher.7KdX5nJlTG55vR5JQSbZ21",
+      "secondarySource": null,
+      "notes": "Formula 1 biography states Schumacher moved to Ferrari after his 1995 title and won three races in 1996. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "driver-team-season history",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "schumacher-ferrari-1996-2000-2",
+      "slug": "schumacher-ferrari-1996-2000",
+      "claim": "He arrived with two drivers' titles",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/information/drivers-hall-of-fame-michael-schumacher.7KdX5nJlTG55vR5JQSbZ21",
+      "secondarySource": null,
+      "notes": "Formula 1 biography states two Benetton world championships before moving to Ferrari. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "driver-championship record",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "schumacher-ferrari-1996-2000-3",
+      "slug": "schumacher-ferrari-1996-2000",
+      "claim": "The Ferrari title required several seasons",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2000/drivers",
+      "secondarySource": null,
+      "notes": "Results show Schumacher 2000 drivers champion; title required the 1996–2000 seasons as chronological observation, not a claim of inevitability. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "1996–2000 championship timeline",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "schumacher-ferrari-1996-2000-4",
+      "slug": "schumacher-ferrari-1996-2000",
+      "claim": "Suzuka 2000 settled the drivers' championship",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/moments-in-time-the-japanese-grand-prix.5M4HpgAHNmMjn15iW7nAXO",
+      "secondarySource": null,
+      "notes": "Formula 1 Suzuka retrospective identifies Schumacher's 2000 Japanese GP championship result. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "2000 Japanese GP classification and report",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "schumacher-ferrari-1996-2000-5",
+      "slug": "schumacher-ferrari-1996-2000",
+      "claim": "Ferrari's previous drivers' title was in 1979",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/information/ferrari-year-by-year.61yfcjhl05vSlmNJB1SIJ0",
+      "secondarySource": null,
+      "notes": "Ferrari official F1 year-by-year lists Scheckter 1979 and first subsequent drivers title in 2000. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "1979 and 2000 championship winners",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "massa-2008-1",
+      "slug": "massa-2008",
+      "claim": "Brazil hosted the championship finale",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races",
+      "secondarySource": null,
+      "notes": "Official 2008 results list Brazil as last race. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "2008 season calendar",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "massa-2008-2",
+      "slug": "massa-2008",
+      "claim": "Massa won the Grand Prix",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
+      "secondarySource": null,
+      "notes": "Official Interlagos 2008 classification lists Massa first. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "massa-2008-3",
+      "slug": "massa-2008",
+      "claim": "Hamilton needed fifth place to secure the title",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
+      "secondarySource": null,
+      "notes": "Hamilton's P5 earned 4 points; championship comparison 98–97, which would reverse if he finished P6. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "pre-race championship arithmetic",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "massa-2008-4",
+      "slug": "massa-2008",
+      "claim": "Hamilton finished fifth",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
+      "secondarySource": null,
+      "notes": "Official Interlagos 2008 classification lists Hamilton fifth. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "race-classification",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "massa-2008-5",
+      "slug": "massa-2008",
+      "claim": "Winning the race did not mean winning the championship",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2008/races/842/brazil/race-result",
+      "secondarySource": null,
+      "notes": "Official classification Massa P1 Hamilton P5; actual points Hamilton 98 Massa 97 per 2008 championship. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "final championship standings",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "brawn-2009-1",
+      "slug": "brawn-2009",
+      "claim": "Honda withdrew after 2008",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://global.honda/en/newsroom/news/2009/c090306eng.html",
+      "secondarySource": null,
+      "notes": "Original Honda 2009-03-06 announcement says withdrawal announced December 5 2008. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "team-history",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "brawn-2009-2",
+      "slug": "brawn-2009",
+      "claim": "The team returned as Brawn GP",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://global.honda/en/newsroom/news/2009/c090306eng.html",
+      "secondarySource": null,
+      "notes": "Original Honda announcement confirms transfer of HRF1 ownership to Ross Brawn in March 2009. Source verifies the scoped result/event, not any wider narrative inference, bilingual interpretation, or independent human approval.",
+      "evidenceRequirement": "2009 entry list",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "source-research"
+    },
+    {
+      "id": "brawn-2009-3",
+      "slug": "brawn-2009",
+      "claim": "Button won six of the first seven races",
+      "classification": "interpretation-or-composite",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2009/races",
+      "secondarySource": null,
+      "notes": "Six of first seven race winner entries are Jenson Button for Brawn. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "first seven race classifications",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "brawn-2009-4",
+      "slug": "brawn-2009",
+      "claim": "Button secured the drivers' title in Brazil",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/latest/article/the-greatest-f1-world-championship-celebrations-in-recent-history.4gWkaXUSgi7KvN37D8S4ZT.4gWkaXUSgi7KvN37D8S4ZT",
+      "secondarySource": null,
+      "notes": "F1 retrospective explicitly records Brazil 2009 Button P5 clinching Drivers Championship. This is scoped AI source checking, not human review or whole-manuscript approval.",
+      "evidenceRequirement": "Brazil 2009 championship standings",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    },
+    {
+      "id": "brawn-2009-5",
+      "slug": "brawn-2009",
+      "claim": "Brawn GP also won the constructors' championship",
+      "classification": "historical-claim",
+      "status": "primary-source-checked-ai",
+      "primarySource": "https://www.formula1.com/en/results/2009/team",
+      "secondarySource": null,
+      "notes": "Brawn Mercedes first in 2009 constructors standings on 172 points. The source verifies the scoped historical result or calculation, not every scene in the article.",
+      "evidenceRequirement": "2009 constructors championship standings",
+      "reviewChecklist": {
+        "archiveResult": true,
+        "independentNarrative": false,
+        "bilingualParity": false,
+        "reviewerSignoff": false
+      },
+      "reviewPriority": "archive-first"
+    }
+  ]
+}
