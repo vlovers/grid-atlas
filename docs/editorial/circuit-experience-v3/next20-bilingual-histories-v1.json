@@ -702,12 +702,14 @@
             "uk": "Сварка напарників Ferrari"
           },
           "narrative": {
-            "en": "Didier Pironi passed Gilles Villeneuve late in the San Marino Grand Prix, igniting a dispute over team instructions.",
-            "uk": "Дідьє Піроні наприкінці Гран-прі Сан-Марино обігнав Жиля Вільнева, спричинивши суперечку через командні вказівки."
+            "en": "Didier Pironi won at Imola in 1982, with Ferrari teammate Gilles Villeneuve just 0.370 seconds behind. The official result records a Ferrari one-two, but it cannot on its own explain the disputed team signals that later made this finish so bitter. That story deserves a separate account grounded in contemporary reporting.",
+            "uk": "Дідьє Піроні виграв Гран-прі Сан-Марино 1982 року в Імолі. Його напарник по Ferrari Жиль Вільнев фінішував лише за 0,370 секунди. Офіційний протокол підтверджує дубль Ferrari, але не пояснює суперечку навколо командних сигналів. Для цієї історії потрібні окремі свідчення учасників і тогочасні матеріали."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/1982/races/440/san-marino/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2005,
@@ -716,12 +718,14 @@
             "uk": "Алонсо стримує Шумахера"
           },
           "narrative": {
-            "en": "Fernando Alonso held off Michael Schumacher in the closing laps to win for Renault.",
-            "uk": "Фернандо Алонсо втримав Міхаеля Шумахера на останніх колах і переміг за Renault."
+            "en": "Fernando Alonso held off Michael Schumacher to win the 2005 San Marino Grand Prix by just 0.215 seconds. After 62 laps at Imola, two champions were separated by barely the length of a blink. The result records one of the most memorable narrow finishes of Alonso's first championship season.",
+            "uk": "Фернандо Алонсо стримав Міхаеля Шумахера й виграв Гран-прі Сан-Марино 2005 року з перевагою лише 0,215 секунди. Після 62 кіл Імоли двох чемпіонів розділяла мить. Цей фініш став одним із найяскравіших епізодів сезону, в якому Алонсо здобув свій перший титул."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 2006,
@@ -826,12 +830,14 @@
             "uk": "Аварія Лауди на Північній петлі"
           },
           "narrative": {
-            "en": "Niki Lauda survived a serious fiery crash that reignited debate over racing on the old long layout.",
-            "uk": "Нікі Лауда вижив після страшної аварії з пожежею, що посилила суперечки про гонки на старій довгій конфігурації."
+            "en": "The 1976 German Grand Prix on the Nürburgring's Nordschleife is remembered above all for Niki Lauda's terrible accident. The official classification lists Lauda as a non-finisher and James Hunt as the winner. The crash and rescue itself require eyewitness and archival reporting beyond the results sheet.",
+            "uk": "Гран-прі Німеччини 1976 року на Північній петлі Нюрбургринга назавжди запам’ятався страшною аварією Нікі Лауди. Офіційний протокол позначає Лауду як такого, що не фінішував, а переможцем називає Джеймса Ганта. Подробиці аварії та порятунку потрібно перевіряти за архівними свідченнями, а не лише за результатами гонки."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.formula1.com/en/results/1976/races/367/germany/race-result"
+          ],
+          "source_granularity": "official_F1_exact_race_result_only",
+          "review_status": "results_checked_narrative_needs_independent_review"
         },
         {
           "year": 1999,
