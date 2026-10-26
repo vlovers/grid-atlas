@@ -27,3 +27,21 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   }
  }
 });
+
+test('all 25 event anchors carry exact-year Formula 1 sources but remain blocked',()=>{
+ const audit=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT25_PUBLICATION_AUDIT.json','utf8'));
+ assert.equal(audit.publication,'blocked');
+ assert.equal(audit.official_f1_result_anchors_with_source,25);
+ assert.equal(audit.publication_ready_circuits,0);
+ assert.equal(audit.fully_cited_race_narratives,0);
+ for(const circuit of data.circuits){
+  const anchor=circuit.story_leads[0];
+  assert.equal(anchor.status,'official_f1_source_checked_human_review_pending');
+  assert.ok(anchor.sources.length>=1,circuit.candidate_slug);
+  assert.ok(anchor.sources.some(url=>url.includes('/results/'+anchor.year+'/')),circuit.candidate_slug);
+  assert.equal(circuit.publication,'unpublished');
+ }
+ const hatch=data.circuits.find(c=>c.candidate_slug==='brands-hatch').story_leads[0];
+ assert.match(hatch.narrative.en,/disqualified/);
+ assert.match(hatch.narrative.en,/Niki Lauda/);
+});
