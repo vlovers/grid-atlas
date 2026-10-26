@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "source": {
+    "release": "v2026.17.0",
+    "identity_basis": "docs/media/pilot-identities.json (exact pinned subject record SHA for Ferrari/McLaren only); all others require archive reconciliation"
+  },
+  "publication_status": "research_only",
+  "subjects": [
+    {
+      "name": "Ferrari",
+      "f1db_external_id": "ferrari",
+      "source_record_sha256": "3e62239831d07ba8fab0e37e32a9f22b89f15df7ee24ac23fffca63551b32fd6",
+      "identity_status": "pinned_manifest_recorded_not_rechecked",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "McLaren",
+      "f1db_external_id": "mclaren",
+      "source_record_sha256": "48417fc44f717a438880a78d5caac84d4050cca153622e5995c3ec4289df293d",
+      "identity_status": "pinned_manifest_recorded_not_rechecked",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Williams",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Team Lotus",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Brabham",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Tyrrell",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Benetton",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Renault",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Mercedes",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Red Bull Racing",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Minardi",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    },
+    {
+      "name": "Jordan",
+      "f1db_external_id": null,
+      "source_record_sha256": null,
+      "identity_status": "pending_pinned_archive_preflight",
+      "english_draft_status": "research_only",
+      "ukrainian_draft_status": "research_only",
+      "independent_claim_review": "pending",
+      "human_review": "pending",
+      "publication": "blocked"
+    }
+  ],
+  "boundaries": {
+    "not_public": true,
+    "source_urls_are_not_approval": true,
+    "constructor_is_not_entrant": true,
+    "unverified_identity_is_null": true
+  }
+}
