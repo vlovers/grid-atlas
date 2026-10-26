@@ -59,7 +59,7 @@ test('all ten stories have reading paths, scenes and related links', () => {
 
 test('draft route is linked, noindexed and renders full manuscripts', () => {
   assert.ok(hub.includes('/stories/moments/'));
-  assert.ok(detail.includes('index: false'));
+  assert.ok(detail.includes('index: isAiReviewedStory(slug)'));
   assert.ok(detail.includes('notFound()'));
   assert.ok(detail.includes('draftArticle(slug, locale)'));
   assert.ok(detail.includes('chapters.map('));
@@ -284,7 +284,7 @@ test('long-form narrative appears before the reference-heavy panels on all edito
   assert.ok(detail.indexOf('href="#research-chapters"') < storyStart);
   assert.ok(detail.includes('href="#story-races"'));
   assert.equal(detail.split('aria-labelledby="research-chapters"').length - 1, 1);
-  assert.ok(detail.includes('index: false'), 'unapproved draft must stay noindexed');
+  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unapproved draft must stay noindexed');
   const styles = read(directory + 'release.module.css');
   assert.ok(styles.includes('.editorialReadingPaths'));
   assert.ok(styles.includes('.editorialReadingPrimary'));
@@ -319,7 +319,7 @@ test('story pages prioritise racing narratives over generic life lessons and edi
   assert.ok(detail.includes('aria-labelledby="research-chapters"'));
   assert.ok(detail.includes('aria-labelledby="reader-questions"'));
   assert.ok(detail.includes('id="preview-status"'), 'Draft provenance remains accessible in a disclosure');
-  assert.ok(detail.includes('index: false'), 'unapproved drafts must remain noindexed');
+  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unapproved drafts must remain noindexed');
   for (const hidden of [
     'editorialTakeaways', 'editorialReflection', 'editorialFactCheckPrompts',
     'story-takeaways', 'story-reflection', 'Editorial fact-check queue',
@@ -373,6 +373,17 @@ test('every editorial claim is traceable and unpublished copy cannot masquerade 
       assert.equal(entry.reviewChecklist.reviewerSignoff, false, entry.id + ' cannot imply human approval');
     }
   }
-  assert.ok(detail.includes('index: false'), 'unpublished static stories must remain noindexed');
+  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unpublished static stories must remain noindexed');
   assert.ok(detail.includes('AI source-check · draft'), 'draft badge must not falsely claim final approval');
+});
+
+
+test('static AI-reviewed publication remains unapproved until hash-bound bilingual review is recorded', () => {
+  const registry = read(directory + 'editorial-publication.ts');
+  assert.ok(registry.includes('reviewedEditions: readonly ReviewedEdition[] = []'), 'do not silently auto-publish drafts');
+  assert.ok(registry.includes('edition.enSha256 === editionDigest(slug, \'en\')'), 'changing English chapters must revoke the edition');
+  assert.ok(registry.includes('edition.ukSha256 === editionDigest(slug, \'uk\')'), 'changing Ukrainian chapters must revoke the edition');
+  assert.ok(registry.includes('edition.reviewRevision') && registry.includes('edition.evidenceRevision'), 'publication needs audit revisions');
+  assert.ok(detail.includes('robots: { index: isAiReviewedStory(slug)'), 'robots status follows the reviewed edition');
+  assert.ok(detail.includes("published ? 'AI-reviewed'"), 'AI-reviewed label only on reviewed edition');
 });
