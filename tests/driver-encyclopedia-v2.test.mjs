@@ -6,8 +6,9 @@ const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const manuscripts = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
 const audit = read('docs/editorial/batches/drivers-30-v1/READER_QUALITY_AUDIT_2026-10-26.json');
 
-test('six V2 bilingual longreads are traceable, editorial-only, and follow the research chapters', () => {
-  const IDs = ['nelson-piquet', 'nico-rosberg', 'jochen-rindt', 'jacques-villeneuve', 'alan-jones', 'nino-farina'];
+test('fifteen V2 bilingual longreads are traceable, editorial-only, and follow the research chapters', () => {
+  const IDs = ['nelson-piquet', 'nico-rosberg', 'jochen-rindt', 'jacques-villeneuve', 'alan-jones', 'nino-farina', 'alberto-ascari', 'mario-andretti', 'keke-rosberg', 'damon-hill', 'charles-leclerc', 'fernando-alonso', 'kimi-raikkonen', 'jenson-button', 'lando-norris'];
+  assert.equal(IDs.length, 15);
   for (const id of IDs) {
     const story = manuscripts.stories.find(s => s.driver_id === id);
     assert.ok(story, id);
