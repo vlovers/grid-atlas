@@ -55,7 +55,7 @@ export default async function EditorialMoment({ params }: Props) {
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
-        <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : commonsPhoto ? <img src={commonsPhoto.src} alt="" loading="eager" className={styles.editorialPhotoBackdrop} style={{ width: "100%", height: "100%" }} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
+        <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : commonsPhoto ? <img src={commonsPhoto.src} alt={commonsPhoto.alt[locale]} loading="eager" decoding="async" referrerPolicy="no-referrer" className={styles.editorialPhotoBackdrop} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
