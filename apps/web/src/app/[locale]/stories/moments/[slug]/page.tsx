@@ -101,8 +101,8 @@ export default async function EditorialMoment({ params }: Props) {
         </ol>
         <p className={styles.note}>{uk ? 'Посилання з’являються лише після підтвердження гонки в результатах пілота за рік і етап.' : 'Race links appear only when a driver’s archive results confirm the year and round.'}</p>
       </section>
-      {['massa-2008', 'brawn-2009'].includes(slug) && <section aria-labelledby="season-winners" style={{ marginTop: 48 }}>
-        <h2 id="season-winners">{uk ? 'Усі переможці сезону' : 'Every race winner that season'}</h2>
+      {['massa-2008', 'brawn-2009'].includes(slug) && <details className={styles.provenance} aria-labelledby="season-winners" style={{ marginTop: 48 }}>
+        <summary id="season-winners">{uk ? 'Усі переможці сезону' : 'Every race winner that season'}</summary>
         <p>{uk ? 'Повна хронологія перемог за офіційними підсумками Формули-1.' : 'The complete season victory sequence, from the official Formula 1 results archive.'}</p>
         <ol style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 12, paddingLeft: 24 }}>
           {editorialSeasonRaceWinners.filter(race => race.year === (slug === 'massa-2008' ? 2008 : 2009)).map(race => <li key={race.id}>
@@ -116,7 +116,7 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ol>
         <a href={slug === 'massa-2008' ? 'https://www.formula1.com/en/results/2008/races' : 'https://www.formula1.com/en/results/2009/races'} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело: офіційні результати F1 ↗' : 'Source: official F1 results ↗'}</a>
-      </section>}
+      </details>}
       {slug in editorialResultHighlights && <section aria-labelledby="result-highlights" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ЦИФРИ З АРХІВУ' : 'FROM THE RACE CLASSIFICATION'}</p>
         <h2 id="result-highlights">{uk ? 'Що показує протокол' : 'What the result sheet shows'}</h2>
@@ -129,15 +129,15 @@ export default async function EditorialMoment({ params }: Props) {
         </ul>
         <p className={styles.note}>{uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.'}</p>
       </section>}
-      {slug in editorialReaderQuestions && <section aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
+      {slug in editorialReaderQuestions && <details className={styles.provenance} aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
         <p className={styles.eyebrow}>{uk ? 'ЗАПИТАННЯ ЧИТАЧІВ' : 'READER QUESTIONS'}</p>
-        <h2 id="reader-questions">{uk ? 'Що варто знати' : 'What to know'}</h2>
+        <summary id="reader-questions">{uk ? 'Що варто знати' : 'What to know'}</summary>
         {editorialReaderQuestions[slug as keyof typeof editorialReaderQuestions].map((item, index) => <details key={index} className={styles.provenance}>
           <summary>{item[locale].question}</summary>
           <p>{item[locale].answer}</p>
         </details>)}
         <p className={styles.note}>{uk ? 'Короткі відповіді є частиною редакційної чернетки й очікують перевірки джерел.' : 'Short answers are part of the editorial draft and await independent source review.'}</p>
-      </section>}
+      </details>}
       <section aria-labelledby="official-results" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <h2 id="official-results">{uk ? 'Офіційні результати' : 'Official race results'}</h2>
         <ul>
