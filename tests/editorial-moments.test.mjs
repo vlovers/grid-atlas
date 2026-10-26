@@ -291,3 +291,20 @@ test('long-form narrative appears before the reference-heavy panels on all edito
   assert.ok(styles.includes('.editorialReadingPrimary'));
   assert.ok(styles.includes('@media(max-width:560px)'));
 });
+
+test('reader questions render as twenty complete bilingual question-and-answer pairs', () => {
+  const questions = literal(read(directory + 'editorial-reader-questions.ts'), 'editorialReaderQuestions');
+  assert.deepEqual(Object.keys(questions), slugs);
+  for (const slug of slugs) {
+    assert.equal(questions[slug].length, 2, slug + ' should have two concise FAQs');
+    for (const item of questions[slug]) for (const locale of ['en', 'uk']) {
+      assert.equal(typeof item[locale].question, 'string', slug + '/' + locale + ' question must be text');
+      assert.equal(typeof item[locale].answer, 'string', slug + '/' + locale + ' answer must be text');
+      assert.ok(item[locale].question.length >= 15);
+      assert.ok(item[locale].question.endsWith('?'));
+      assert.ok(item[locale].answer.length >= 25);
+    }
+  }
+  assert.ok(detail.includes('item[locale].question'));
+  assert.ok(detail.includes('item[locale].answer'));
+});
