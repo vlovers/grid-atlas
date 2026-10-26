@@ -8,8 +8,9 @@ for (const locale of ['uk','en'] as const) {
     await expect(experience.getByTestId('circuit-layout-facts')).toBeVisible();
     const select=experience.getByTestId('circuit-layout-select');
     await select.selectOption({index:0});
-    await expect(experience.locator('a[href*="/races/"]').first()).toBeVisible();
-    await expect(experience.locator('details').first()).toContainText('f1db');
+    await experience.getByTestId('circuit-event-data').locator(':scope > summary').press('Enter');
+    await expect(experience.getByTestId('circuit-event-data').locator('a[href*="/races/"]').first()).toBeVisible();
+    await expect(experience.getByTestId('circuit-event-data').locator('details').first()).toContainText('f1db');
     await expect(experience).toContainText(locale==='uk'?'не географічна':'not a geographic');
   });
 }
@@ -29,6 +30,7 @@ for (const locale of ['uk', 'en'] as const) {
     }
 
     await expect(comparison).toBeVisible();
+    await comparison.locator(':scope > summary').press('Enter');
     const rows = comparison.locator('tbody tr');
     await expect(rows).toHaveCount(optionCount - 1);
     const target = rows.last();

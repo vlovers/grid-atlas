@@ -36,7 +36,7 @@ export function CircuitNewcomerGuide({ locale, circuitName, history, layoutCount
         <span className={styles.step}>02</span>
         <h3>{uk ? 'Хто тут перемагав?' : 'Who has won here?'}</h3>
         {debutWinner ? <>
-          <p>{uk ? `У найдавнішому збереженому Гран-прі серед переможних записів є ${debutWinner.driver_name}. Дізнайся більше про його кар’єру.` : `Our earliest recorded Grand Prix includes a first-position result for ${debutWinner.driver_name}. Follow their career story.`}</p>
+          <p>{uk ? `Перше місце в найдавнішому Гран-прі цього архіву: ${debutWinner.driver_name}. Дослідіть кар’єру пілота.` : `Our earliest recorded Grand Prix includes a first-position result for ${debutWinner.driver_name}. Follow their career story.`}</p>
           <Link href={`/drivers/${debutWinner.driver_id}`}>{debutWinner.driver_name} ↗</Link>
         </> : <p>{uk ? 'Переглянь результати, щоб знайти задокументовані виступи.' : 'Explore the results to discover documented performances.'}</p>}
       </article>

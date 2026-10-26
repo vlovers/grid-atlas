@@ -121,9 +121,9 @@ test('archive synopsis generates bilingual verified-result descriptions, not cha
   const before=JSON.stringify(career);
   const en=driverArchiveOverview(driver,career,'en');
   const uk=driverArchiveOverview(driver,career,'uk');
-  assert.match(en.paragraphs[0],/3 distinct races.*1980–1982/);
+  assert.match(en.paragraphs[0],/3 distinct races.*from 1980 to 1982/);
   assert.match(en.paragraphs[1],/Constructor 1, Constructor 2/);
-  assert.match(uk.paragraphs[0],/результати 3 гонок/);
+  assert.match(uk.paragraphs[0],/зафіксовано 3 гонки/);
   assert.equal(en.firstRace.id,'100');
   assert.equal(en.firstWin.id,'101');
   assert.equal(JSON.stringify(career),before);
@@ -146,8 +146,8 @@ test('archive-backed story expansion works for every driver without fabricated l
   const uk = driverArchiveOverview(driver, career, 'uk');
   assert.equal(en.paragraphs.length, 5);
   assert.equal(uk.paragraphs.length, 5);
-  assert.match(en.paragraphs[3], /1950 Synthetic race 10.*1952 Synthetic race 33/);
-  assert.match(uk.paragraphs[4], /1951.*Synthetic race 21/);
+  assert.match(en.paragraphs[3], /Synthetic race 10 · 1950.*Synthetic race 33 · 1952/);
+  assert.match(uk.paragraphs[4], /Synthetic race 21 · 1951/);
   for (const result of [en, uk]) {
     assert.equal(result.firstRace.id, '10');
     assert.equal(result.firstWin.id, '21');

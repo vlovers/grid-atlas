@@ -1,3 +1,4 @@
+import { ukrainianNoun, recordedPeriod, raceNameWithYear } from '../../content/editorial-language.ts';
 /** Public profile/career API fields only. No editorial or championship inference. */
 export type DriverProfile = { id: string; name: string; external_id: string; seasons: number;
   first_season: number | null; last_season: number | null; wins: number; podiums: number };
@@ -79,16 +80,14 @@ export function timeMachinePath(id: string, years: readonly number[]) {
 /** Public, source-bound career synopsis. Never represents an approved biography. */
 export function driverArchiveOverview(driver: DriverProfile, career: DriverCareer | null, locale: 'en' | 'uk') {
   if (!career || career.summary.races === 0) return null;
-  const years = [career.summary.first_season, career.summary.last_season];
-  const validYears = years.every((x): x is number => x !== null);
-  const range = validYears ? (years[0] === years[1] ? String(years[0]) : years.join('–')) : null;
+  const period = recordedPeriod(career.summary.first_season, career.summary.last_season, locale);
   const constructors = [...new Map(career.participation.map(row => [row.related_id, row.related_name])).values()];
   const shown = constructors.slice(0, 4);
   const remainder = constructors.length - shown.length;
   const n = (v: number) => new Intl.NumberFormat(locale).format(v);
   const opener = locale === 'en'
-    ? `The Formula 1 archive records ${n(career.summary.races)} distinct races for ${driver.name}${range ? ` across ${range}` : ''}.`
-    : `В архіві є результати ${n(career.summary.races)} гонок за участю ${driver.name}${range ? ` за ${range} роки` : ''}.`;
+    ? `The archive records ${n(career.summary.races)} distinct ${career.summary.races === 1 ? 'race' : 'races'} for ${driver.name}${period ? ` ${period}` : ''}.`
+    : `В архіві зафіксовано ${n(career.summary.races)} ${ukrainianNoun(career.summary.races, 'гонку', 'гонки', 'гонок')} за участю ${driver.name}${period ? ` ${period}` : ''}.`;
   const teams = shown.length ? (locale === 'en'
     ? `Race results connect this driver with ${shown.join(', ')}${remainder ? ` and ${n(remainder)} more constructor${remainder === 1 ? '' : 's'}` : ''}.`
     : `У результатах пілота вказані конструктори ${shown.join(', ')}${remainder ? ` та ще ${n(remainder)}` : ''}.`) : null;
@@ -104,18 +103,16 @@ export function driverArchiveOverview(driver: DriverProfile, career: DriverCaree
   const last = career.milestones.last_appearance?.race;
   const chronology = first && last
     ? (first.id === last.id
-      ? (locale === 'en'
-        ? `The recorded appearance is the ${first.year} ${first.name}; this archive synopsis does not establish a complete life story.`
-        : `У цьому архіві зафіксовано участь у ${first.year} році на ${first.name}; цей огляд не є повною біографією.`)
+      ? (locale === 'en' ? `The race in these records is ${raceNameWithYear(first)}.` : `Гонка в цих записах — ${raceNameWithYear(first)}.`)
       : (locale === 'en'
-        ? `The archive trail runs from the ${first.year} ${first.name} to the ${last.year} ${last.name}. Those are recorded result boundaries, not evidence of an uninterrupted contract or every attempted start.`
-        : `Архівна хронологія простягається від ${first.year} року (${first.name}) до ${last.year} року (${last.name}). Це межі зафіксованих результатів, а не підтвердження безперервного контракту чи кожної спроби старту.`))
+        ? `The first race in these records is ${raceNameWithYear(first)}. The latest is ${raceNameWithYear(last)}.`
+        : `Перша гонка в цих записах — ${raceNameWithYear(first)}. Остання — ${raceNameWithYear(last)}.`))
     : null;
   const breakthrough = career.milestones.first_win?.race;
   const firstWin = breakthrough
     ? (locale === 'en'
-      ? `The first recorded winning result is associated with the ${breakthrough.year} ${breakthrough.name}; open the race evidence to inspect the underlying classification.`
-      : `Перший зафіксований переможний результат пов’язаний із ${breakthrough.year} роком і гонкою ${breakthrough.name}; перейдіть до протоколу гонки, щоб перевірити класифікацію.`)
+      ? `First win in these records: ${raceNameWithYear(breakthrough)}. Open the race to inspect its classification.`
+      : `Перша перемога в цих записах — ${raceNameWithYear(breakthrough)}. Відкрийте результати гонки, щоб переглянути класифікацію.`)
     : null;
   return { paragraphs: [opener, teams, wins, chronology, firstWin].filter((v): v is string => Boolean(v)),
     firstRace: first ?? null,

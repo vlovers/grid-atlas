@@ -21,7 +21,7 @@ for (const locale of ['en', 'uk'] as const) {
     await expect(art).toBeVisible();
     await expect(art).toHaveAttribute('src', /\/circuit-layouts\/[a-z0-9-]+\.svg/);
     await expect(track.getByRole('link', { name: /Jules Roy/ })).toHaveAttribute('href', /github.com\/f1db\/f1db/);
-    await expect(track.getByRole('link', { name: /License/ })).toHaveAttribute('href', 'https://creativecommons.org/licenses/by/4.0/');
+    await expect(track.getByRole('link', { name: locale === 'uk' ? /Ліцензія/ : /License/ })).toHaveAttribute('href', 'https://creativecommons.org/licenses/by/4.0/');
     const select = page.getByTestId('circuit-layout-select');
     await expect(select.locator('option').count()).resolves.toBeGreaterThan(1);
     await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
@@ -41,9 +41,11 @@ for (const locale of ['en', 'uk'] as const) {
     expect(choices.length).toBeGreaterThan(1);
     await picker.selectOption(choices[0]);
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[0]);
-    const eventCards = page.locator('[class*="circuit-experience_eventHead"]');
-    await expect(page.getByRole('heading', {name: new RegExp(` · ${choices[0]}$`)})).toBeVisible();
-    await expect(eventCards.first()).toContainText(choices[0]);
+    const records = page.getByTestId('circuit-event-data');
+    const eventRows = records.locator('tbody tr');
+    await expect(records).toHaveAttribute('open', '');
+    await expect(records.locator(':scope > summary')).toContainText(` · ${choices[0]}`);
+    await expect(eventRows.first().getByRole('rowheader')).toHaveText(choices[0]);
     const layout = page.getByTestId('circuit-layout-select');
     const firstLayout = await layout.inputValue();
     const firstSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
@@ -57,7 +59,7 @@ for (const locale of ['en', 'uk'] as const) {
     await picker.selectOption(choices[choices.length - 1]);
     await expect(nextYear).toBeDisabled();
     await expect(page.getByTestId('circuit-year-explorer')).toContainText(choices[choices.length - 1]);
-    await expect(eventCards.first()).toContainText(choices[choices.length - 1]);
+    await expect(eventRows.first().getByRole('rowheader')).toHaveText(choices[choices.length - 1]);
     const lastLayout = await layout.inputValue();
     const lastSrc = await page.getByTestId('circuit-track-visual').getByRole('img').getAttribute('src');
     expect(firstLayout).toBeTruthy();

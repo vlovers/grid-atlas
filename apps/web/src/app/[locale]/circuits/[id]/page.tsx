@@ -5,7 +5,7 @@ import { CircuitExtraStories } from '@/components/editorial/circuit-extra-storie
 import { CircuitNewcomerGuide } from '@/components/editorial/circuit-newcomer-guide';
 import { CircuitCornerGuide } from '@/components/editorial/circuit-corner-guide';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
-import { EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
+import { ArchiveDisclosure, EditorialHero, EditorialTabs, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import styles from './circuit.module.css';
 import { MediaCollection } from '@/components/media/collection';
@@ -103,7 +103,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <ArchiveHighlights locale={locale === 'en' ? 'en' : 'uk'} title={locale === 'uk' ? 'Траса крізь епохи' : 'The circuit across eras'} description={locale === 'uk' ? 'Перший і останній зафіксовані етапи та провідні переможці. Історичні конфігурації могли змінюватися.' : 'Earliest and latest recorded events and leading winners. Historical layouts may differ.'} items={[
       ...(chronologicalHistory[0] ? [{ id: 'first', eyebrow: locale === 'uk' ? 'ПЕРШИЙ ЕТАП В АРХІВІ' : 'FIRST ARCHIVED EVENT', title: chronologicalHistory[0].race_name, detail: String(chronologicalHistory[0].season_year), href: `/${locale}/races/${chronologicalHistory[0].race_id}` }] : []),
       ...(chronologicalHistory.length > 1 ? [{ id: 'latest', eyebrow: locale === 'uk' ? 'ОСТАННІЙ ЕТАП В АРХІВІ' : 'LATEST ARCHIVED EVENT', title: chronologicalHistory[chronologicalHistory.length - 1].race_name, detail: String(chronologicalHistory[chronologicalHistory.length - 1].season_year), href: `/${locale}/races/${chronologicalHistory[chronologicalHistory.length - 1].race_id}` }] : []),
-      ...leadingWinners.slice(0,2).map((driver,i) => ({ id: `winner-${driver.id}`, eyebrow: i === 0 ? (locale === 'uk' ? 'ЛІДЕР ЗА ПЕРЕМОГАМИ' : 'RECORDED WIN LEADER') : (locale === 'uk' ? 'СЕРЕД ЛІДЕРІВ' : 'AMONG THE LEADERS'), title: driver.name, detail: `${driver.races.size} ${locale === 'uk' ? 'гонок із переможним записом' : 'races with first-position results'}`, href: `/${locale}/drivers/${driver.id}` }))
+      ...leadingWinners.slice(0,2).map((driver,i) => ({ id: `winner-${driver.id}`, eyebrow: i === 0 ? (locale === 'uk' ? 'ЛІДЕР ЗА ПЕРЕМОГАМИ' : 'RECORDED WIN LEADER') : (locale === 'uk' ? 'СЕРЕД ЛІДЕРІВ' : 'AMONG THE LEADERS'), title: driver.name, detail: `${locale === 'uk' ? 'Перемоги' : 'Wins'}: ${driver.races.size}`, href: `/${locale}/drivers/${driver.id}` }))
     ]} />
     <EditorialTabs label={locale === 'uk' ? 'Розділи траси' : 'Circuit sections'} items={[
       { id: 'circuit-layouts', label: locale === 'uk' ? 'Конфігурації' : 'Layouts' },
@@ -124,7 +124,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         <li className="record" key={driver.id}><span className="position">{driver.races.size}</span>
           <span><strong><Link href={`/drivers/${driver.id}`}>{driver.name} ↗</Link></strong>
           <small>{locale === 'uk' ? 'Гонки з першою позицією в результатах' : 'Races with first-position entries'}</small></span></li>)}</ol>
-        : <p>{locale === 'uk' ? 'Переможних записів у цьому архіві немає.' : 'No first-position entries in this archive.'}</p>}
+        : <p>{locale === 'uk' ? 'Результатів на першому місці в цьому архіві немає.' : 'No first-position entries in this archive.'}</p>}
     </section>
     <section id="circuit-results" tabIndex={-1} aria-label={locale === 'uk' ? 'Історія траси за десятиліттями' : 'Circuit history by decade'}>
       <h2>{locale === 'uk' ? 'Епохи траси' : 'Circuit eras'}</h2>
@@ -137,9 +137,9 @@ export default async function CircuitPage({ params, searchParams }: Props) {
           <p>{events.map(race => race.season_year).join(' · ')}</p>
         </article>;
       })}</div>
-      <h2>{locale === 'uk' ? 'Переможці та результати' : 'Winners and results'}</h2>
+      <ArchiveDisclosure label={locale === 'uk' ? 'Переможці та результати' : 'Winners and results'} count={`${Math.min(CIRCUIT_PAGE_SIZE, Math.max(0, history.length-offset))} / ${history.length}`} open={page > 1}>
       {history.length ? <ArchiveTable label={locale === 'uk' ? 'Переможці та результати' : 'Winners and results'} locale={locale === 'en' ? 'en' : 'uk'}><table data-testid="circuit-history-table">
-        <thead><tr><th scope="col">{locale === 'uk' ? 'Сезон' : 'Season'}</th><th scope="col">{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th scope="col">{locale === 'uk' ? 'Переможні записи' : 'Winning entries'}</th><th scope="col">{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
+        <thead><tr><th scope="col">{locale === 'uk' ? 'Сезон' : 'Season'}</th><th scope="col">{locale === 'uk' ? 'Гран-прі' : 'Grand Prix'}</th><th scope="col">{locale === 'uk' ? 'Результати на першому місці' : 'First-place results'}</th><th scope="col">{locale === 'uk' ? 'Пілоти в результатах' : 'Recorded drivers'}</th></tr></thead>
         <tbody>{history.slice(offset, offset + CIRCUIT_PAGE_SIZE).map(race => <tr key={race.race_id}>
           <th scope="row"><Link href={`/seasons/${race.season_year}`}>{race.season_year}</Link></th>
           <td><Link href={`/races/${race.race_id}`}>{race.race_name}</Link></td>
@@ -147,15 +147,16 @@ export default async function CircuitPage({ params, searchParams }: Props) {
           <td>{race.recorded_drivers}</td>
         </tr>)}</tbody>
       </table></ArchiveTable> : <p>{locale === 'uk' ? 'Немає зафіксованих Гран-прі.' : 'No recorded Grands Prix.'}</p>}
+      </ArchiveDisclosure>
     </section>
     <section aria-labelledby="circuit-archive-overview" data-testid="circuit-archive-overview">
       <h2 id="circuit-archive-overview">{locale === 'uk' ? 'Історія проведених Гран-прі' : 'Recorded Grand Prix history'}</h2>
       <p>{locale === 'uk'
         ? `Архів пов’язує трасу ${circuit.name} із ${circuit.races} гонками${circuit.first_season !== null ? ` починаючи із сезону ${circuit.first_season}` : ''}${circuit.last_season !== null && circuit.last_season !== circuit.first_season ? ` і до ${circuit.last_season} року` : ''}. Нижче наведено офіційні назви та дати імпортованих етапів.`
         : `The historical archive associates ${circuit.name} with ${circuit.races} races${circuit.first_season !== null ? `, beginning in ${circuit.first_season}` : ''}${circuit.last_season !== null && circuit.last_season !== circuit.first_season ? ` and extending through ${circuit.last_season}` : ''}. The imported event names and dates are listed below.`}</p>
-      <p>{locale === 'uk' ? 'Запис про трасу не підтверджує незмінність її конфігурації, довжини чи рекордів кола в різні роки. Схеми трас публікуватимуться лише після перевірки історичної конфігурації та прав на зображення.' : 'A circuit identity does not establish that its layout, length or lap records stayed the same across eras. Track maps require separate historical-layout verification and image-rights clearance.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
+      <p>{locale === 'uk' ? 'Запис про трасу не підтверджує незмінність її конфігурації, довжини чи рекордів кола в різні роки. Контури конфігурацій наведено з атрибуцією. Це ілюстрації, а не інженерні плани; історична відповідність і права потребують окремої перевірки.' : 'A circuit identity does not establish that its layout, length or lap records stayed the same across eras. Displayed outlines carry attribution. They are illustrations, not engineering plans; historical-layout verification and image-rights clearance remain separate requirements.'} <Link href="/sources">{locale === 'uk' ? 'Джерела архіву' : 'Archive sources'} ↗</Link></p>
     </section>
-    <h2>{t('grandPrixHistory')}</h2>
+    <ArchiveDisclosure label={t('grandPrixHistory')} count={`${races.length} / ${circuit.races}`}>
     {races.length ? <div data-testid="circuit-decade-history">
       <p>{locale === 'uk' ? 'Гран-прі за десятиліттями в межах цієї сторінки архіву. Кожен запис веде до конкретної гонки; рік — до сезону.' : 'Grand Prix by decade within this archive page. Each result links to its race; the year links to its season.'}</p>
       {[...decades].map(([decade, events]) => <section key={decade} aria-label={`${decade}s`}>
@@ -167,9 +168,10 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         </div>)}</div>
       </section>)}
     </div> : <p>{t('noCircuitRaces')}</p>}
+    </ArchiveDisclosure>
     <nav className="actions" aria-label={t('circuitPages')}>
-      {page > 1 && <a className="secondary" href={`/${locale}${pageHref(path, page - 1)}`}>← {t('previous')}</a>}
-      {offset + CIRCUIT_PAGE_SIZE < circuit.races && offset + CIRCUIT_PAGE_SIZE <= MAX_OFFSET && <a className="secondary" href={`/${locale}${pageHref(path, page + 1)}`}>{t('next')} →</a>}
+      {page > 1 && <a className="secondary" href={`/${locale}${pageHref(path, page - 1)}#circuit-results`}>← {t('previous')}</a>}
+      {offset + CIRCUIT_PAGE_SIZE < circuit.races && offset + CIRCUIT_PAGE_SIZE <= MAX_OFFSET && <a className="secondary" href={`/${locale}${pageHref(path, page + 1)}#circuit-results`}>{t('next')} →</a>}
     </nav>
     <section id="circuit-archive" tabIndex={-1} aria-label={locale === 'uk' ? 'Архів і джерела траси' : 'Circuit archive and sources'}>
       <IdentityFacts identity={identities[0]} locale={locale === 'en' ? 'en' : 'uk'} />

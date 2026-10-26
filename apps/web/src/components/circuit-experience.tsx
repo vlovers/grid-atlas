@@ -25,16 +25,16 @@ export type { Layout as CircuitLayout, Event as CircuitTechnicalEvent };
 const labels = {
   uk: {
     kicker: 'КОНФІГУРАЦІЇ / ІСТОРІЯ', title: 'Траса змінюється з часом',
-    lead: 'Дані F1DB прив’язані до конкретної конфігурації або Гран-прі. Тут немає вигаданого контуру, секторів, DRS чи рейтингів шин.',
+    lead: 'Оберіть сезон, щоб побачити конфігурацію траси й дані її Гран-прі. Параметри наведено за F1DB для конкретних років.',
     select: 'Історична конфігурація', all: 'Усі конфігурації',
     effective: 'Позначена джерелом як актуальна', length: 'Довжина кола',
     turns: 'Повороти', events: 'Пов’язані Гран-прі', first: 'Перше зафіксоване використання',
     latest: 'Останнє зафіксоване використання', year: 'Сезон', distance: 'Дистанція гонки',
-    laps: 'Кола', direction: 'Напрямок руху', source: 'Джерело і межі',
+    grandPrix: 'Гран-прі', license: 'Ліцензія', laps: 'Кола', direction: 'Напрямок руху', source: 'Джерело і межі',
     noEvents: 'Для цієї конфігурації немає пов’язаних гонок в архіві.',
-    measurements: 'Виміри конкретних етапів', showAll: 'Показати всі записи',
-    note: 'Кожен рядок — вимір конкретної гонки. Довжина і кількість поворотів не переносяться автоматично на інші роки.',
-    notMap: 'Схематична шкала вимірів, не географічна карта траси',
+    measurements: 'Дані траси для Гран-прі', showAll: 'Показати всі записи',
+    note: 'Кожен рядок містить дані конкретного Гран-прі. Довжина й кількість поворотів можуть відрізнятися в інші роки.',
+    notMap: 'Роки проведення Гран-прі, не географічна карта траси',
     graphic: 'Контур історичної конфігурації',
     illustration: 'Контур конфігурації за матеріалами F1DB, не масштабна інженерна карта',
     credit: 'Автор контурів: Jules Roy · CC BY 4.0',
@@ -50,16 +50,16 @@ const labels = {
   },
   en: {
     kicker: 'LAYOUTS / HISTORY', title: 'The circuit through time',
-    lead: 'F1DB data belongs to a particular layout or Grand Prix. No invented track outline, sectors, DRS or tyre ratings are shown.',
+    lead: 'Choose a season to explore its circuit layout and Grand Prix data. Measurements come from F1DB and belong to specific years.',
     select: 'Historical layout', all: 'All layouts',
     effective: 'Marked current by the source', length: 'Lap length',
     turns: 'Corners', events: 'Linked Grands Prix', first: 'First recorded use',
     latest: 'Latest recorded use', year: 'Season', distance: 'Race distance',
-    laps: 'Laps', direction: 'Direction', source: 'Source and limits',
+    grandPrix: 'Grand Prix', license: 'License', laps: 'Laps', direction: 'Direction', source: 'Source and limits',
     noEvents: 'No linked Grand Prix is recorded for this layout.',
-    measurements: 'Circuit facts for this Grand Prix', showAll: 'Show all records',
+    measurements: 'Circuit data by Grand Prix', showAll: 'Show all records',
     note: 'Every row is specific to one event. Length and corner counts are not assumed valid for other years.',
-    notMap: 'Abstract measurement scale, not a geographic track map',
+    notMap: 'Years with Grands Prix, not a geographic track map',
     graphic: 'Historical layout outline',
     illustration: 'F1DB-sourced layout outline, not an engineering scale map',
     credit: 'Outline artwork: Jules Roy · CC BY 4.0',
@@ -94,7 +94,6 @@ export function CircuitExperience({ layouts, events, locale }: {
   const artwork = current ? CIRCUIT_ARTWORK.get(current.external_layout_id) : undefined;
   const matching = useMemo(() => events.filter(e => (!selected || e.layout_id === selected) && (selectedYear === null || e.season_year === selectedYear)), [events, selected, selectedYear]);
   const visible = showAll ? matching : matching.slice(0, 12);
-  const maxLength = Math.max(1, ...events.map(e => Number(e.course_length_km)), ...layouts.map(l => Number(l.length_km)));
   const timelineYears = [...new Set(events.map(e => e.season_year))].sort((a, b) => a - b);
   const minYear = events.length ? Math.min(...events.map(e => e.season_year)) : null;
   const maxYear = events.length ? Math.max(...events.map(e => e.season_year)) : null;
@@ -133,7 +132,7 @@ export function CircuitExperience({ layouts, events, locale }: {
         <figcaption className={styles.trackCredit}>
           <span>{t.illustration}</span>
           <a href={artwork.source_url} target="_blank" rel="noopener noreferrer">{t.credit} ↗</a>
-          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">License ↗</a>
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">{t.license} ↗</a>
         </figcaption>
       </> : <p className={styles.trackFallback}>
         {current ? t.noGraphic : t.selectForMap}
@@ -157,8 +156,8 @@ export function CircuitExperience({ layouts, events, locale }: {
         {current.effective && <p className={styles.effective}>{t.effective}</p>}
       </div>}
     </div>
-    {layouts.length > 1 && <section className={styles.compare} aria-labelledby="circuit-layout-comparison-title" data-testid="circuit-layout-comparison">
-      <h3 id="circuit-layout-comparison-title">{t.compare}</h3>
+    {layouts.length > 1 && <details className={styles.compare} data-testid="circuit-layout-comparison">
+      <summary><h3 id="circuit-layout-comparison-title">{t.compare} <small>· {layouts.length}</small></h3></summary>
       <p>{t.compareHint}</p>
       <div className={styles.compareScroll} role="region" aria-label={t.compare} tabIndex={0}>
         <table className={styles.compareTable}>
@@ -170,7 +169,7 @@ export function CircuitExperience({ layouts, events, locale }: {
           </tr>)}</tbody>
         </table>
       </div>
-    </section>}
+    </details>}
     {minYear !== null && maxYear !== null && <section className={styles.eraRail} aria-labelledby="circuit-era-rail-title" data-testid="circuit-era-rail">
       <div className={styles.eraRailIntro}><h3 id="circuit-era-rail-title">{t.exploreTimeline}</h3><p>{t.timelineHint}</p></div>
       <div className={styles.timelineHeading}><strong>{minYear}</strong><span>{t.notMap}</span><strong>{maxYear}</strong></div>
@@ -190,28 +189,17 @@ export function CircuitExperience({ layouts, events, locale }: {
         })}
       </div>
     </section>}
-    <h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`}</h3>
-    <p>{t.note}</p>
-    {matching.length ? <div className={styles.events}>
-      {visible.map(e => <article key={e.race_id} className={styles.event}>
-        <div className={styles.eventHead}>
-          <span>{e.season_year} · {t.year}</span>
-          <Link href={`/${locale}/races/${e.race_id}`}>{e.race_name} ↗</Link>
+    <details className={styles.eventDisclosure} key={selectedYear ?? 'all'} open={selectedYear !== null} data-testid="circuit-event-data">
+      <summary><h3>{selectedYear === null ? t.measurements : `${t.seasonEvents} · ${selectedYear}`} <small>· {matching.length}</small></h3></summary>
+      <p>{t.note}</p>
+      {matching.length ? <>
+        <div className={styles.eventScroll} role="region" tabIndex={0} aria-label={t.measurements}>
+          <table className={styles.eventTable}><thead><tr><th scope="col">{t.year}</th><th scope="col">{t.grandPrix}</th><th scope="col">{t.length}</th><th scope="col">{t.turns}</th><th scope="col">{t.laps}</th><th scope="col">{t.distance}</th><th scope="col">{t.source}</th></tr></thead>
+            <tbody>{visible.map(e => <tr key={e.race_id} data-race-id={e.race_id}><th scope="row">{e.season_year}</th><td><Link href={`/${locale}/races/${e.race_id}`}>{e.race_name} ↗</Link></td><td>{e.course_length_km} km</td><td>{e.turns}</td><td>{e.laps}</td><td>{e.distance_km} km</td><td><details className={styles.provenance}><summary>{t.source} · {e.release_tag}</summary><code>{e.source_locator}</code><code>{e.content_hash}</code></details></td></tr>)}</tbody>
+          </table>
         </div>
-        <div className={styles.eventStats}>
-          <div><small>{t.length}</small><strong>{e.course_length_km} km</strong><span className={styles.meter}><span style={{ width: `${Math.min(100, Number(e.course_length_km) / maxLength * 100)}%` }}/></span></div>
-          <div><small>{t.turns}</small><strong>{e.turns}</strong></div>
-          <div><small>{t.laps}</small><strong>{e.laps}</strong></div>
-          <div><small>{t.distance}</small><strong>{e.distance_km} km</strong></div>
-        </div>
-        <details className={styles.provenance}>
-          <summary>{t.source} · {e.release_tag}</summary>
-          <code>{e.source_locator}</code>
-          <code>{e.content_hash}</code>
-        </details>
-      </article>)}
-      {!showAll && matching.length > visible.length && <button type="button" className={styles.more}
-        onClick={() => setShowAll(true)}>{t.showAll} ({matching.length})</button>}
-    </div> : <p>{t.noEvents}</p>}
+        {!showAll && matching.length > visible.length && <button type="button" className={styles.more} onClick={() => setShowAll(true)}>{t.showAll} ({matching.length})</button>}
+      </> : <p>{t.noEvents}</p>}
+    </details>
   </section>;
 }

@@ -37,3 +37,13 @@ export function careerPartners(career: RecordedCareer) {
 export function comparisonHref(locale: string, career: Pick<RecordedCareer, 'id' | 'kind'>, from: number, to: number) {
   return `/${locale}/time-machine?${new URLSearchParams({ kind: career.kind, id: career.id, from: String(from), to: String(to) })}`;
 }
+
+/** Shift an existing pair through adjacent recorded seasons; gaps are never filled. */
+export function neighboringComparisons(career: RecordedCareer, from: number, to: number) {
+  const left = career.years.indexOf(from), right = career.years.indexOf(to);
+  if (left < 0 || right <= left) return [];
+  return ([-1, 1] as const).flatMap(direction => {
+    const a = left + direction, b = right + direction;
+    return a >= 0 && b < career.years.length ? [{ from: career.years[a], to: career.years[b], direction }] : [];
+  });
+}

@@ -39,8 +39,10 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(page.getByTestId('circuit-newcomer-guide').locator('a[href="#circuit-layouts"]')).toBeVisible();
       await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
       await expect(page.getByTestId('circuit-era-journey')).toBeVisible();
+      await page.locator('details').filter({has:page.getByTestId('circuit-decade-history')}).locator(':scope > summary').press('Enter');
       await expect(page.getByTestId('circuit-decade-history')).toBeVisible();
       await expect(page.getByTestId('identity-facts')).toContainText('Synthetic City');
+      await page.locator('#circuit-results > details > summary').press('Enter');
       await expect(page.locator('a[href*="/races/"]').first()).toBeVisible();
       await expect(page.locator('a[href*="/seasons/"]').first()).toBeVisible();
     });

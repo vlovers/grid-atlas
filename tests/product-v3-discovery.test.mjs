@@ -31,6 +31,16 @@ test('glossary parity and honest distinctions between winning races and podium r
 });
 test('public copy avoids retired internal vocabulary across route and component strings', () => {
   function files(dir) { return readdirSync(dir,{withFileTypes:true}).flatMap(f=>f.isDirectory()?files(`${dir}/${f.name}`):/\.(tsx?|json)$/.test(f.name)?[`${dir}/${f.name}`]:[]); }
-  const retired = ['Переможні гонки','Подіумні записи результатів','подіумних записів результатів','Зв’язки у результатах гонок','Seasonal associations','Find identities','Знайти ідентичності','зріз API'];
-  for (const file of [...files('apps/web/src/app'),...files('apps/web/src/components'),...files('apps/web/messages')]) for (const phrase of retired) assert.ok(!readFileSync(file,'utf8').includes(phrase),`${file}: ${phrase}`);
+  const retired = ['Переможні гонки','Подіумні записи результатів','подіумних записів результатів','Зв’язки у результатах гонок','Seasonal associations','Find identities','Знайти ідентичності','зріз API','переможні записи результатів','переможних записів результатів','Виміри конкретних етапів','у перевіреному архіві'];
+  for (const file of [...files('apps/web/src/app'),...files('apps/web/src/components'),...files('apps/web/messages')]) for (const phrase of retired) assert.ok(!readFileSync(file,'utf8').normalize('NFKC').toLocaleLowerCase('uk').includes(phrase.normalize('NFKC').toLocaleLowerCase('uk')),`${file}: ${phrase}`);
+});
+
+test('neighboring comparison windows use only recorded seasons and preserve gaps', async () => {
+  const { neighboringComparisons } = await import('../apps/web/src/lib/recorded-career.ts');
+  const career = recordedCareer(rows, 'driver', rows[0].id);
+  assert.deepEqual(neighboringComparisons(career,1986,1987),[
+    {from:1984,to:1986,direction:-1},{from:1987,to:1988,direction:1},
+  ]);
+  assert.deepEqual(neighboringComparisons(career,2025,2026),[]);
+  assert.deepEqual(neighboringComparisons(career,1987,1987),[]);
 });

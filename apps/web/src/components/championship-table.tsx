@@ -1,3 +1,4 @@
+import { ArchiveDisclosure } from './editorial/primitives';
 import { ArchiveTable } from './editorial/archive-table';
 import { Link } from '@/i18n/navigation';
 
@@ -28,12 +29,7 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
   const heading = kind === 'drivers'
     ? (uk ? 'Залік пілотів за F1DB' : 'F1DB drivers’ classification')
     : (uk ? 'Залік конструкторів за F1DB' : 'F1DB constructors’ classification');
-  return <section className="chapter" data-testid={`championship-${kind}-${scope}`}>
-    <h2>{heading}</h2>
-    <p>{uk
-      ? 'Окрема класифікація з випуску F1DB, не сума очок за протоколами перегонів і не незалежна перевірка FIA. Позиції поточного сезону попередні.'
-      : 'Separate source-reported F1DB standings, not a sum of race-result points or independent FIA verification. Current-season positions are provisional.'}</p>
-    {rows.length ? <ArchiveTable label={heading} locale={locale}><table>
+  const table = rows.length ? <ArchiveTable label={heading} locale={locale}><table>
       <thead><tr>
         {scope === 'career' && <th scope="col">{uk ? 'Сезон' : 'Season'}</th>}
         <th scope="col">{uk ? 'Місце' : 'Position'}</th>
@@ -57,7 +53,13 @@ export function ChampionshipTable({ rows, locale, kind, scope }: {
               : '—'}</td>
         </tr>;
       })}</tbody>
-    </table></ArchiveTable> : <p>{uk ? 'Даних класифікації немає.' : 'No classification records.'}</p>}
+    </table></ArchiveTable> : <p>{uk ? 'Даних класифікації немає.' : 'No classification records.'}</p>;
+  return <section className="chapter" data-testid={`championship-${kind}-${scope}`}>
+    <h2>{heading}</h2>
+    <p>{uk
+      ? 'Окрема класифікація з випуску F1DB, не сума очок за протоколами перегонів і не незалежна перевірка FIA. Позиції поточного сезону попередні.'
+      : 'Separate source-reported F1DB standings, not a sum of race-result points or independent FIA verification. Current-season positions are provisional.'}</p>
+    {scope === 'career' && rows.length > 0 ? <ArchiveDisclosure label={uk ? 'Усі сезони в заліку' : 'Every season in the standings'} count={rows.length}>{table}</ArchiveDisclosure> : table}
     {rows.length > 0 && <details>
       <summary>{uk ? 'Джерело класифікації' : 'Classification provenance'}</summary>
       <p>F1DB · {rows[0].release_tag} · <Link href="/sources">{uk ? 'Джерела' : 'Sources'}</Link></p>

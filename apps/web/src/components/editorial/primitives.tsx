@@ -58,3 +58,8 @@ export function EmptyMediaState({ title, note, locale }: { title?: string; note?
   const t = editorialCopy[locale];
   return <aside className={styles.emptyMedia} data-testid="editorial-empty-media"><span aria-hidden="true">[ — ]</span><div><h3>{title ?? t.mediaTitle}</h3><p>{note ?? t.mediaNote}</p></div></aside>;
 }
+
+/** Native progressive disclosure for complete records; all content remains server rendered. */
+export function ArchiveDisclosure({ label, count, children, id, open }: { label: string; count?: ReactNode; children: ReactNode; id?: string; open?: boolean }) {
+  return <details id={id} className={styles.archiveDisclosure} open={open}><summary><span>{label}</span>{count !== undefined && <span className={styles.disclosureCount}>{count}</span>}</summary><div>{children}</div></details>;
+}

@@ -118,3 +118,5 @@
   .biography { max-width: 100%; }
 }
 .partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .8rem; }
+
+.selectedSeason > details { grid-column: 1 / -1; }

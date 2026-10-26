@@ -73,3 +73,17 @@
 @media (max-width: 900px) { .shell { grid-template-columns: minmax(0, 1fr); } .shell > .trackVisual, .shell > .layout { grid-column: 1; } }
 @media (max-width: 700px) { .events { grid-template-columns: minmax(0, 1fr); } .yearExplorerControls { width: 100%; } .yearPickerLabel { flex: 1; min-width: 0; } .yearPickerLabel select { width: 100%; } .trackVisual { min-height: 16rem; padding: 1rem; } }
 @media (forced-colors: active) { .records, .timelineBar > span, .meter > span { background: Highlight; } .selectedLayout, .eraRailYears .activeYear { outline: 2px solid Highlight; outline-offset: -2px; } }
+
+.compare > summary, .eventDisclosure > summary { cursor: pointer; min-height: 44px; padding-block: .75rem; }
+.compare > summary h3, .eventDisclosure > summary h3 { display: inline; font-size: clamp(1.4rem,2.3vw,2rem); }
+.compare > summary small, .eventDisclosure > summary small { color: var(--muted); font: .85rem var(--font-mono); }
+.eventDisclosure { border-block: 1px solid var(--line); padding-block: .75rem; }
+.eventDisclosure > p { color: var(--muted); max-width: 75ch; line-height: 1.8; margin-block: 1rem; }
+.eventScroll { overflow: auto; max-height: 28rem; border-top: 1px solid var(--line); }
+.eventTable { width: 100%; min-width: 54rem; }
+.eventTable :is(th,td) { padding: .85rem .75rem; font-size: .85rem; vertical-align: top; }
+.eventTable thead th { position: sticky; top: 0; background: var(--surface); z-index: 1; }
+.eventTable td:not(:nth-child(2)) { font-variant-numeric: tabular-nums; }
+.eventTable td:nth-child(2) { min-width: 17rem; }
+.eventTable a { display: inline-block; min-height: 44px; text-decoration: underline; text-underline-offset: .2em; }
+.eventTable .provenance { border: 0; padding: 0; min-width: 10rem; }

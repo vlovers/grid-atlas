@@ -12,7 +12,8 @@ import discoveryStyles from "@/components/history-atlas/discovery.module.css";
 import styles from "./time-machine.module.css";
 import { ComparisonStage } from "./comparison-stage";
 import { machineCopy } from "./copy";
-import { recordedCareer, suggestedComparisons, comparisonHref } from "@/lib/recorded-career";
+import { recordedCareer, suggestedComparisons, comparisonHref, neighboringComparisons } from "@/lib/recorded-career";
+import { ukrainianNoun } from "@/content/editorial-language";
 import { glossary } from "@/content/glossary";
 import TimeMachineYearForm from "./time-machine-year-form";
 
@@ -227,6 +228,11 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
       comparison = await getTimeMachineComparison(kind, id, fromYear, toYear);
   } else if (id) compareError = t("timeMachineInvalidEntity");
 
+  const adjacentPairs = career ? neighboringComparisons(career, fromYear, toYear) : [];
+  const seasonCaption = (year: number) => {
+    const observations = career?.observations.filter(o => o.year === year) ?? [];
+    return kind === 'driver' ? observations.map(o => o.name).join(' · ') : `${observations.length} ${locale === 'uk' ? ukrainianNoun(observations.length, 'пілот', 'пілоти', 'пілотів') : observations.length === 1 ? 'driver' : 'drivers'}`;
+  };
   const hasConnections = !!comparison && comparison.added.length + comparison.removed.length + comparison.unchanged.length > 0;
   return (
     <section className={`page ${styles.page}`}>
@@ -303,7 +309,7 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
         <section className={discoveryStyles.period} aria-labelledby="tm-career-heading" data-testid="comparison-career">
           <h2 id="tm-career-heading">{career.name}</h2>
           {career.years.length ? <>
-            <p>{words.available} · <strong>{career.years[0]}–{career.years.at(-1)}</strong></p>
+            <p>{words.available} · <strong>{career.years.length === 1 ? career.years[0] : `${career.years[0]}–${career.years.at(-1)}`}</strong></p>
             {yearsValid && (!career.years.includes(fromYear) || !career.years.includes(toYear)) && (
               <div role="status" data-testid="comparison-period-notice">
                 <h3>{[fromYear, toYear].some(y => y < career.years[0] || y > career.years.at(-1)!) ? words.outside : words.gap}</h3>
@@ -314,11 +320,12 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
               {career.years.map(year => <a key={year} href={`/${locale}/atlas?kind=${kind}&id=${id}&year=${year}`}>{year}</a>)}
             </nav></details>
           </> : <p role="status">{words.noYears}</p>}
-          {suggestions.length > 0 && <details open={!hasConnections}><summary>{words.suggestions}</summary><nav className={styles.archiveLinks} aria-label={words.suggestions}>
-            {suggestions.map(pair => <a key={pair.from} href={comparisonHref(locale, career, pair.from, pair.to)}>{pair.from} → {pair.to} · {pair.changed ? words.changed : words.adjacent}</a>)}
+          {suggestions.length > 0 && <details open={!hasConnections}><summary>{words.suggestions}</summary><nav className={discoveryStyles.comparisonChoices} aria-label={words.suggestions}>
+            {suggestions.map(pair => <a key={pair.from} href={comparisonHref(locale, career, pair.from, pair.to)} aria-current={pair.from === fromYear && pair.to === toYear ? 'page' : undefined}><strong>{pair.from} → {pair.to}</strong><span>{seasonCaption(pair.from)} → {seasonCaption(pair.to)}</span><small>{pair.changed ? words.changed : words.adjacent}</small></a>)}
           </nav></details>}
         </section>
       )}
+      {career && adjacentPairs.length > 0 && <nav className={styles.archiveLinks} aria-label={locale === 'uk' ? 'Сусідні порівняння' : 'Neighboring comparisons'}>{adjacentPairs.map(pair => <a key={pair.direction} href={comparisonHref(locale, career, pair.from, pair.to)}>{pair.direction < 0 ? `← ${words.previousPair}` : `${words.nextPair} →`} · {pair.from}–{pair.to}</a>)}</nav>}
       {id && entityValid && (
         <TimeMachineYearForm
           locale={locale}

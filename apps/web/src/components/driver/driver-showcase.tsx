@@ -16,7 +16,7 @@ import type { MediaAsset } from '@/components/media/registry';
 import type { PublishedArticle } from '@/lib/api';
 import type { IdentityDetails } from '@/components/identity-facts';
 import { ChampionshipTable, type ChampionshipRow } from '@/components/championship-table';
-import { EditorialHero, EditorialMedia, EditorialTabs, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
+import { ArchiveDisclosure, EditorialHero, EditorialMedia, EditorialTabs, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
 import { editorialCopy } from '@/components/editorial/copy';
 import { driverArchiveOverview, raceMoments, seasonPoints, teamEras, timeMachinePath,
   type DriverCareer, type DriverProfile, type DriverSeason, type DriverTeam, type DriverSeasonResult } from './showcase-model';
@@ -62,12 +62,6 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       statistics={[{ label: t.races, value: format(career?.summary.races) }, { label: t.wins, value: format(career?.summary.winning_races) },
         { label: t.podiums, value: format(career?.summary.podium_result_entries) }, { label: t.period, value: format(driver.seasons) }]} scope={t.scope} />
     <SourceAttribution locale={locale} />
-    <ArchiveHighlights locale={locale} title={locale === 'uk' ? 'Кар’єра в ключових моментах' : 'Career in key moments'} description={locale === 'uk' ? 'Події та результати з історичного архіву. Це не редакційна біографія.' : 'Events and results from the historical archive, not an approved editorial biography.'} items={[
-      ...(career?.milestones.first_appearance ? [{ id: 'debut', eyebrow: locale === 'uk' ? 'ДЕБЮТ' : 'DEBUT', title: career.milestones.first_appearance.race.name, detail: String(career.milestones.first_appearance.race.year), href: `/${locale}/races/${career.milestones.first_appearance.race.id}` }] : []),
-      ...(career?.milestones.first_win ? [{ id: 'first-win', eyebrow: locale === 'uk' ? 'ПЕРША ПЕРЕМОГА' : 'FIRST WIN', title: career.milestones.first_win.race.name, detail: String(career.milestones.first_win.race.year), href: `/${locale}/races/${career.milestones.first_win.race.id}` }] : []),
-      ...(career?.milestones.last_win ? [{ id: 'last-win', eyebrow: locale === 'uk' ? 'ОСТАННЯ ПЕРЕМОГА' : 'LAST WIN', title: career.milestones.last_win.race.name, detail: String(career.milestones.last_win.race.year), href: `/${locale}/races/${career.milestones.last_win.race.id}` }] : []),
-      ...(career?.milestones.last_appearance ? [{ id: 'last-race', eyebrow: locale === 'uk' ? 'ОСТАННЯ УЧАСТЬ' : 'LAST APPEARANCE', title: career.milestones.last_appearance.race.name, detail: String(career.milestones.last_appearance.race.year), href: `/${locale}/races/${career.milestones.last_appearance.race.id}` }] : [])
-    ]} />
     <EditorialTabs label={t.chapters} items={[[t.biography, 'driver-biography'], [t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'], [e.classifications, 'driver-classifications'], [t.statistics, 'driver-archive']].map(([label, id]) => ({ label, id }))} />
 
 
@@ -75,7 +69,8 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       <SectionHeading kicker={t.editorialKicker} title={t.editorialTitle} id="driver-editorial-title" />
       {overview && <article className={styles.biography} data-testid="driver-archive-overview">
         <h3>{locale === 'en' ? 'Career in the historical record' : 'Кар’єра за історичними протоколами'}</h3>
-        {overview.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+        {overview.paragraphs.slice(0, 2).map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+        {overview.paragraphs.length > 2 && <ArchiveDisclosure label={locale === 'uk' ? 'Результати й віхи кар’єри' : 'Career results and milestones'}>{overview.paragraphs.slice(2).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</ArchiveDisclosure>}
         <p>{locale === 'en'
           ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
           : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
@@ -90,30 +85,6 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       {editorialUnavailable ? <p role="status" data-testid="editorial-unavailable">{locale === 'uk' ? 'Редакційний матеріал тимчасово недоступний. Архівні записи доступні нижче.' : 'Editorial content is temporarily unavailable. Archive records remain available below.'}</p>
         : article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h3>{t.unpublished}</h3><p>{t.unpublishedNote}</p></div></div>}
     </section>
-
-    {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
-      <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
-        title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
-        note={locale === 'uk' ? 'За результатами гонок у перевіреному архіві' : 'From recorded race results in the pinned archive'} />
-      <dl className={styles.quickFacts}>
-        {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
-          <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
-        {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
-          <dd><a href={`/${locale}/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
-        <div><dt>{locale === 'uk' ? 'Команди за кар’єру' : 'Career constructors'}</dt>
-          <dd>{new Set(career.participation.map(row => row.related_id)).size}</dd></div>
-        <div><dt>{locale === 'uk' ? 'Зафіксовані результати' : 'Recorded result entries'}</dt>
-          <dd>{format(career.summary.result_entries)}</dd></div>
-      </dl>
-      <p>{locale === 'uk' ? 'Титули чемпіона світу, поул-позиції та сходи не виводяться без окремого перевіреного джерела. Кількість команд означає унікальні ідентифікатори конструкторів у результатах.' : 'World titles, pole positions and retirements are not inferred without separately verified sources. Constructor count reflects distinct constructor IDs in race results.'}</p>
-    </section>}
-
-    {opening && <section className={styles.openingScene} aria-labelledby="driver-opening-title" data-story-reveal data-testid="driver-opening">
-      <div className={styles.openingArt}><span>{opening.race.year}</span><small>{career?.milestones.first_win ? e.firstWin : e.firstRecord}</small></div>
-      <div className={styles.openingCopy}><p className={styles.kicker}>{story.opening}</p><h2 id="driver-opening-title">{story.openingTitle}</h2><p>{story.openingNote}</p>
-        <span className={styles.openingLabel}>{career?.milestones.first_win ? story.firstWin : story.firstRace} / {opening.race.year}</span>
-        <h3><a href={`/${locale}/races/${opening.race.id}`}>{opening.race.name}</a></h3><a className={styles.primary} href={`/${locale}/races/${opening.race.id}`}>{story.openRace} ↗</a></div>
-    </section>}
 
     <section data-story-reveal id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
       <SectionHeading kicker={t.seasonKicker} title={story.seasonTitle} id="driver-season-title" note={story.seasonNote} />
@@ -139,7 +110,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
             <p>{locale === 'uk' ? 'Очки за зафіксованими результатами (не офіційний залік):' : 'Points in recorded results (not official standings):'} {seasonPoints(selected, career?.participation ?? []).value ?? t.unavailable}{seasonPoints(selected, career?.participation ?? []).partial && <> · {t.partialPoints}</>}</p>
             <p>{locale === 'uk' ? 'Класифікації F1DB показано в окремому розділі нижче. Поули й сходи не виводяться з цих підсумків.' : 'F1DB classifications appear in a separate section below. Poles and retirements are not inferred from these totals.'}</p>
           </div>
-          {career && <div className={styles.seasonTeamBreakdown}>
+          {career && <ArchiveDisclosure label={`${locale === 'uk' ? 'Результати за командами' : 'Results by constructor'} · ${selected.year}`}><div className={styles.seasonTeamBreakdown}>
             <h4>{locale === 'uk' ? 'Результати за командами' : 'Results by constructor'} · {selected.year}</h4>
             <div className={styles.seasonTeamRows}>
               {career.participation.filter(row => row.year === selected.year).map(row => <article key={row.related_id}>
@@ -154,7 +125,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
               </article>)}
             </div>
             <p>{locale === 'uk' ? 'Групування за конструктором у записах гонок, не за контрактами. Спільні автомобілі та відсутні очки можуть впливати на підсумки.' : 'Grouped by constructor in recorded race results, not by contracts. Shared cars and missing points may affect totals.'}</p>
-          </div>}
+          </div></ArchiveDisclosure>}
           <section className={styles.seasonRaceLedger} aria-label={locale === 'uk' ? 'Результати гонок обраного сезону' : 'Selected season race results'}>
             <h4>{locale === 'uk' ? 'Усі результати гонок' : 'Race-by-race results'} · {selected.year}</h4>
             <p>{locale === 'uk' ? 'Кожен запис результату показано окремо: спільні автомобілі можуть створювати кілька записів для одного Гран-прі. Це не офіційна таблиця чемпіонату.' : 'Every recorded result entry is preserved; shared cars may produce multiple entries per Grand Prix. This is not an official championship classification.'}</p>
@@ -182,6 +153,36 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
         </section>}
       </div>}
     </section>
+
+    <ArchiveHighlights locale={locale} title={locale === 'uk' ? 'Кар’єра в ключових моментах' : 'Career in key moments'} description={locale === 'uk' ? 'Події та результати з історичного архіву. Це не редакційна біографія.' : 'Events and results from the historical archive, not an approved editorial biography.'} items={[
+      ...(career?.milestones.first_appearance ? [{ id: 'debut', eyebrow: locale === 'uk' ? 'ДЕБЮТ' : 'DEBUT', title: career.milestones.first_appearance.race.name, detail: String(career.milestones.first_appearance.race.year), href: `/${locale}/races/${career.milestones.first_appearance.race.id}` }] : []),
+      ...(career?.milestones.first_win ? [{ id: 'first-win', eyebrow: locale === 'uk' ? 'ПЕРША ПЕРЕМОГА' : 'FIRST WIN', title: career.milestones.first_win.race.name, detail: String(career.milestones.first_win.race.year), href: `/${locale}/races/${career.milestones.first_win.race.id}` }] : []),
+      ...(career?.milestones.last_win ? [{ id: 'last-win', eyebrow: locale === 'uk' ? 'ОСТАННЯ ПЕРЕМОГА' : 'LAST WIN', title: career.milestones.last_win.race.name, detail: String(career.milestones.last_win.race.year), href: `/${locale}/races/${career.milestones.last_win.race.id}` }] : []),
+      ...(career?.milestones.last_appearance ? [{ id: 'last-race', eyebrow: locale === 'uk' ? 'ОСТАННЯ УЧАСТЬ' : 'LAST APPEARANCE', title: career.milestones.last_appearance.race.name, detail: String(career.milestones.last_appearance.race.year), href: `/${locale}/races/${career.milestones.last_appearance.race.id}` }] : [])
+    ]} />
+    {career && <section className={styles.chapter} aria-labelledby="driver-facts-title">
+      <SectionHeading kicker={locale === 'uk' ? 'ФАКТИ / АРХІВ' : 'FACTS / ARCHIVE'}
+        title={locale === 'uk' ? 'Кар’єра в цифрах' : 'Career at a glance'} id="driver-facts-title"
+        note={locale === 'uk' ? 'За результатами гонок у цьому випуску F1DB' : 'From recorded race results in the pinned archive'} />
+      <dl className={styles.quickFacts}>
+        {career.milestones.first_appearance && <div><dt>{locale === 'uk' ? 'Перша участь' : 'First appearance'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_appearance.race.id}`}>{career.milestones.first_appearance.race.year} · {career.milestones.first_appearance.race.name}</a></dd></div>}
+        {career.milestones.first_win && <div><dt>{locale === 'uk' ? 'Перша перемога' : 'First win'}</dt>
+          <dd><a href={`/${locale}/races/${career.milestones.first_win.race.id}`}>{career.milestones.first_win.race.year} · {career.milestones.first_win.race.name}</a></dd></div>}
+        <div><dt>{locale === 'uk' ? 'Команди за кар’єру' : 'Career constructors'}</dt>
+          <dd>{new Set(career.participation.map(row => row.related_id)).size}</dd></div>
+        <div><dt>{locale === 'uk' ? 'Зафіксовані результати' : 'Recorded result entries'}</dt>
+          <dd>{format(career.summary.result_entries)}</dd></div>
+      </dl>
+      <p>{locale === 'uk' ? 'Титули чемпіона світу, поул-позиції та сходи не виводяться без окремого перевіреного джерела. Кількість команд означає унікальні ідентифікатори конструкторів у результатах.' : 'World titles, pole positions and retirements are not inferred without separately verified sources. Constructor count reflects distinct constructor IDs in race results.'}</p>
+    </section>}
+
+    {opening && <section className={styles.openingScene} aria-labelledby="driver-opening-title" data-story-reveal data-testid="driver-opening">
+      <div className={styles.openingArt}><span>{opening.race.year}</span><small>{career?.milestones.first_win ? e.firstWin : e.firstRecord}</small></div>
+      <div className={styles.openingCopy}><p className={styles.kicker}>{story.opening}</p><h2 id="driver-opening-title">{story.openingTitle}</h2><p>{story.openingNote}</p>
+        <span className={styles.openingLabel}>{career?.milestones.first_win ? story.firstWin : story.firstRace} / {opening.race.year}</span>
+        <h3><a href={`/${locale}/races/${opening.race.id}`}>{opening.race.name}</a></h3><a className={styles.primary} href={`/${locale}/races/${opening.race.id}`}>{story.openRace} ↗</a></div>
+    </section>}
 
     <section data-story-reveal id="driver-teams" className={styles.chapter} aria-labelledby="driver-team-title" tabIndex={-1}>
       <SectionHeading kicker={t.teamKicker} title={t.teamTitle} id="driver-team-title" note={t.teamNote} />
