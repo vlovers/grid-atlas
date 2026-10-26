@@ -493,3 +493,6 @@
 .editorialPhotoBackdrop{display:block!important;object-fit:cover;object-position:center;filter:saturate(.75) contrast(1.12)}
 .editorialPhotoCredit{position:relative;z-index:1;font-size:.78rem;line-height:1.6;color:var(--muted);max-width:70ch;margin-top:2rem}
 .editorialPhotoCredit a{text-underline-offset:.2em}
+
+/* Editorial interpretations belong to the prose flow, not another card grid. */
+.editorialProse .editorialInterpretation{margin:2rem 0 0;padding:1rem 0 1rem clamp(1rem,3vw,2rem);border-inline-start:3px solid var(--accent-ink);font-size:clamp(1.12rem,1.7vw,1.4rem)!important;line-height:1.75!important;font-style:italic;color:var(--ink)}
