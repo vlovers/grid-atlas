@@ -62,3 +62,19 @@ test('fifteen independent careers have bilingual middle-act context and preserve
   }
   assert.equal(chapters.publication_status, 'unpublished');
 });
+
+test('every thin biography has two concrete historical research scenes rather than filler', () => {
+  const queue = read('docs/editorial/batches/drivers-30-v1/SUBSTANTIVE_SCENE_GAPS_2026-10-26.json');
+  const manuscripts = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  assert.equal(queue.items.length, 15);
+  assert.equal(new Set(queue.items.map(item => item.driver_id)).size, 15);
+  for (const item of queue.items) {
+    const story = manuscripts.stories.find(s => s.driver_id === item.driver_id);
+    assert.ok(story, item.driver_id);
+    assert.equal(item.missing_evidence_scenes.length, 2);
+    assert.ok(item.missing_evidence_scenes.every(s => s.length > 40));
+    assert.deepEqual(item.existing_claim_ids, [...new Set(story.chapters.flatMap(c => c.claim_ids))]);
+    assert.equal(item.human_fact_review, 'pending');
+    assert.equal(item.publication, 'unpublished');
+  }
+});
