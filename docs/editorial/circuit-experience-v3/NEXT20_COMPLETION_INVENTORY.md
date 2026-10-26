@@ -1,54 +1,58 @@
 # Twenty-circuit editorial completion inventory
 
-> This is a measurement of actual repository data, not evidence of completed historical publications.
+> **Research-only, not published.** Counts below are derived from the actual `next20-bilingual-histories-v1.json` manuscript on this branch. The presence of a source candidate does not establish an independently approved claim.
 
-Source: `next20-bilingual-histories-v1.json` on the checked-out branch; pinned F1DB identities and configuration IDs require review.
+## Bilingual historical event coverage
 
-| Circuit | Event drafts | With at least one source candidate | Marked source checked | Numbered corners |
-|---|---:|---:|---:|---:|
-| silverstone | 5 | 3 | 2 | 0 |
-| monza | 5 | 5 | 4 | 0 |
-| suzuka | 6 | 6 | 6 | 0 |
-| interlagos | 6 | 6 | 6 | 0 |
-| gilles-villeneuve | 5 | 4 | 4 | 0 |
-| imola | 5 | 3 | 0 | 0 |
-| nurburgring | 5 | 2 | 1 | 0 |
-| hockenheimring | 5 | 1 | 0 | 0 |
-| zandvoort | 5 | 1 | 0 | 0 |
-| hungaroring | 8 | 8 | 7 | 0 |
-| red-bull-ring | 5 | 1 | 0 | 0 |
-| barcelona-catalunya | 5 | 3 | 1 | 0 |
-| albert-park | 5 | 1 | 0 | 0 |
-| marina-bay | 5 | 1 | 0 | 0 |
-| bahrain | 5 | 2 | 0 | 0 |
-| shanghai | 5 | 2 | 0 | 0 |
-| yas-marina | 5 | 1 | 0 | 0 |
-| cota | 5 | 2 | 0 | 0 |
-| sepang | 5 | 1 | 0 | 0 |
-| istanbul-park | 5 | 1 | 0 | 0 |
+| Circuit | Drafts | Source candidates | F1 article first-pass checked | Classification-only checks | Missing source |
+|---|---:|---:|---:|---:|---:|
+| silverstone | 5 | 5 | 4 | 0 | — |
+| monza | 5 | 5 | 4 | 0 | — |
+| suzuka | 6 | 6 | 6 | 0 | — |
+| interlagos | 6 | 6 | 6 | 0 | — |
+| gilles-villeneuve | 5 | 5 | 5 | 0 | — |
+| imola | 5 | 5 | 1 | 3 | — |
+| nurburgring | 5 | 5 | 4 | 1 | — |
+| hockenheimring | 5 | 5 | 4 | 1 | — |
+| zandvoort | 5 | 5 | 4 | 0 | — |
+| hungaroring | 8 | 8 | 7 | 1 | — |
+| red-bull-ring | 5 | 5 | 4 | 0 | — |
+| barcelona-catalunya | 5 | 5 | 3 | 2 | — |
+| albert-park | 5 | 5 | 4 | 0 | — |
+| marina-bay | 5 | 5 | 4 | 0 | — |
+| bahrain | 5 | 5 | 3 | 2 | — |
+| shanghai | 5 | 5 | 3 | 1 | — |
+| yas-marina | 5 | 5 | 4 | 1 | — |
+| cota | 5 | 5 | 3 | 2 | — |
+| sepang | 5 | 5 | 4 | 0 | — |
+| istanbul-park | 5 | 3 | 1 | 1 | 2008, 2007 |
 
-**Totals:** 105 historical event drafts; 54 with at least one source candidate; 31 marked source-checked (not independently approved).
+**Totals:** 105 bilingual event drafts across 20 circuits; 103 with at least one F1 source candidate; 78 marked article first-pass checked; 15 marked classification-only; 2 without any source candidate.
 
-## Editorial release gates
+## What was actually done on 27 October 2026
 
-1. Verify each claim, not merely the existence of a result URL. In particular distinguish winning results from incidents, penalties, qualifying and championship outcomes.
-2. Audit URLs for 404s and ensure that an article actually supports the exact claim. A results landing page is not a complete narrative citation.
-3. Independently review the English and Ukrainian narrative and preserve disputed or missing evidence.
-4. Match every circuit with canonical F1DB identities and configuration records. Do not infer corner numbers from the SVG.
-5. Obtain legal rights clearance per actual image asset, if any; no publication approval is implied by this document.
-6. Run the full CI and archive browser journeys. Only then approve publication.
+- Added or replaced **49** individual bilingual historical event narratives with official Formula 1 article or result citations. Earlier work had 54 source candidates; this branch now contains 103. A classification-only source is explicitly distinguished from an event narrative source.
+- Corrected the review-status enum used for seven earlier classification-only checks, which caused the Foundation CI failure on commit `6c8a52a`.
+- No independent historical editorial review or media rights approval has occurred; no public publication is authorized by this batch.
 
-## Completion convention
+## Outstanding source gaps
 
-**Draft coverage** is not **publication-ready coverage**. All twenty circuits retain their upstream unpublished or research-only gate until independently approved.
+- **Istanbul Park 2008:** Massa's third consecutive Turkish Grand Prix victory; requires a race-specific source confirming the historical claim.
+- **Istanbul Park 2007:** Hamilton's tyre problem; requires a race-specific source for the tyre failure and its effect on his finishing position.
 
+## Remaining publication blockers
 
-## Race-result revisions (27 October 2026)
+1. Review all event claims against exact source passages, including the 10 sourced-but-unverified drafts. Classification-only results cannot establish crashes, penalties, race strategy or championship causation.
+2. Obtain independent historical and bilingual editorial review; `source_checked_research_draft` is an internal first-pass label, not sign-off.
+3. Map circuit identity and every historical event to the exact pinned F1DB circuit/configuration/race record. No configuration-specific turn numbering has been approved; do not infer turn numbers from generic SVGs.
+4. Review photography rights per image asset and check presentation in both locales; no photo is approved merely because an article links to it.
+5. Run full tests and archive-browser acceptance, inspect current CI status, and keep this PR in Draft until all release gates pass.
 
-- Imola 1982: [official result](https://www.formula1.com/en/results/1982/races/440/san-marino/race-result) confirms Pironi ahead of Villeneuve by 0.370 seconds; it does not independently establish the team-orders dispute.
-- Imola 2005: [official result](https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result) confirms Alonso's 0.215-second advantage over Schumacher.
-- Nürburgring 1976: [official result](https://www.formula1.com/en/results/1976/races/367/germany/race-result) lists Hunt as winner and Lauda as a non-finisher; details of the accident and rescue need additional testimony.
+## Editorial status meanings
 
-Remaining without a source candidate: **51 event drafts**. All reviewed results are still **research drafts**, not public stories.
+- `source_checked_research_draft`: a Formula 1 article was consulted for the specific event; narrative still requires independent review.
+- `official_classification_checked_interpretation_pending`: official classification supports positions/times, not race context.
+- `unverified_research_draft`: candidate story remains unverified even if a URL is attached.
+- `unpublished`: content is not eligible for public story publication.
 
-Further race-result checks: Barcelona 2016, Shanghai 2012, Austin 2018, Bahrain 2020 have official exact-race citations. Statements beyond the classification still require independent editorial review.
+**No claim of 20 publication-ready circuits is made.** All 20 dossiers remain research-only.
