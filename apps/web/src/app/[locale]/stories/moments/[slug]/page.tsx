@@ -9,6 +9,7 @@ import { resolveEditorialPeople } from '@/components/stories/editorial-people-re
 import { resolveEditorialRaces } from '@/components/stories/editorial-race-resolver';
 import { storyRaceContext } from '@/components/stories/editorial-race-context';
 import { MotorsportArt, type ArtKind } from '@/components/stories/motorsport-art';
+import { approvedEditorialPhoto } from '@/components/stories/editorial-media';
 import styles from '@/components/stories/release.module.css';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -39,16 +40,18 @@ export default async function EditorialMoment({ params }: Props) {
   const storyIndex = editorialStoryPreviews.findIndex(item => item.slug === slug);
   const artKind = artKinds[storyIndex % artKinds.length];
   const artTone = (['gold', 'violet', 'coral', 'mint'] as const)[storyIndex % 4];
+  const photo = approvedEditorialPhoto(slug);
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
   return <main className={`page ${styles.release} ${styles.editorialReading}`}>
     <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
       <header className={styles.editorialHero}>
-        <div className={styles.editorialHeroArt}><MotorsportArt kind={artKind} tone={artTone} /></div>
+        <div className={styles.editorialHeroArt}>{photo ? <img src={photo.src} alt="" className={styles.editorialPhotoBackdrop} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
         <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW'}</p>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.lead}>{copy.summary}</p>
+        {photo && <p className={styles.editorialPhotoCredit}>{photo.caption[locale]} · {uk ? "Фото" : "Photo"}: {photo.creator} · <a href={photo.sourceUrl} rel="noopener noreferrer">{uk ? "Джерело" : "Source"}</a> · <a href={photo.licenseUrl} rel="noopener noreferrer">{photo.license}</a> · {photo.changes}</p>}
       </header>
       <section aria-labelledby="story-people" style={{ marginTop: 48, borderTop: '1px solid var(--line)', paddingTop: 28 }}>
         <p className={styles.eyebrow}>{uk ? 'ДІЙОВІ ОСОБИ' : 'THE PEOPLE'}</p>
