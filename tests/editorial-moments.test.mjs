@@ -114,7 +114,7 @@ test('editorial photo registry requires local files and complete attribution', (
   const media = read(directory + 'editorial-media.ts');
   const page = read('apps/web/src/app/[locale]/stories/moments/[slug]/page.tsx');
   const ledger = read('docs/editorial/MEDIA-PROVENANCE.md');
-  assert.match(media, /editorialPhotos: Partial<Record<string, EditorialPhoto>> = \{\}/);
+  assert.match(media, /editorialPhotos: Partial<Record<string, EditorialPhoto>> = \{/);
   assert.match(media, /photo\.src\.startsWith\('\/media\/editorial\/'\)/);
   assert.match(media, /photo\.licenseUrl\.startsWith\('https:\/\/'\)/);
   assert.match(media, /photo\.sourceUrl\.startsWith\('https:\/\/'\)/);
