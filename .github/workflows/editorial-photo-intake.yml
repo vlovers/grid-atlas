@@ -1,0 +1,43 @@
+name: Stage editorial photo candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      story:
+        description: Historical photo candidate to stage
+        required: true
+        type: choice
+        options:
+          - all
+          - vettel-monza-2008
+          - brawn-2009
+
+permissions:
+  contents: read
+
+jobs:
+  stage:
+    name: Download candidates for manual rights review
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fetch Commons candidates and provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.story }}" = "all" ]; then
+            node scripts/editorial-media-intake.mjs --all
+          else
+            node scripts/editorial-media-intake.mjs --slug "${{ inputs.story }}"
+          fi
+      - name: Upload private review package (not published)
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-photo-review-${{ github.run_id }}
+          path: .grid-atlas/media-review/
+          if-no-files-found: error
+          retention-days: 7
