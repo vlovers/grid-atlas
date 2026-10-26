@@ -47,7 +47,7 @@ if (!requested.length || requested.some(slug => !candidates[slug])) {
       const sourceHost = new URL(info.url).hostname;
       if (sourceHost !== 'upload.wikimedia.org') throw new Error('Unexpected original image host: ' + sourceHost);
       const imageHost = new URL(imageUrl).hostname;
-      if (imageHost !== 'upload.wikimedia.org') throw new Error('Unexpected image host: ' + imageHost);
+      if (!['upload.wikimedia.org', 'thumb.wikimedia.org'].includes(imageHost)) throw new Error('Unexpected image host: ' + imageHost);
       const imageResponse = await fetch(imageUrl, { signal: AbortSignal.timeout(60000) });
       if (!imageResponse.ok) throw new Error('Image HTTP ' + imageResponse.status);
       const type = imageResponse.headers.get('content-type') ?? '';
