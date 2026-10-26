@@ -243,7 +243,8 @@ export const editorialDraftArticles = {
         "heading": "When the Safety Car left",
         "paragraphs": [
           "Winning pole in the rain was a surprise. Sunday demanded something else: Vettel had to lead with an entire field ready to attack. The Grand Prix began behind the Safety Car because conditions were so poor.",
-          "When racing began, the Toro Rosso stayed in front. Pole had opened a door; Vettel still had to keep it open through the rain, the stops and every lap to the flag."
+          "When racing began, the Toro Rosso stayed in front. Pole had opened a door; Vettel still had to keep it open through the rain, the stops and every lap to the flag.",
+          "The order at the finish was clear: Vettel ahead of Heikki Kovalainen and Robert Kubica. It took more than a surprise qualifying session to produce that gap. Through changing conditions, Toro Rosso had to execute the stops while its driver kept the lead within reach. This was a whole weekend of work, not one lucky lap."
         ]
       },
       {
@@ -280,7 +281,8 @@ export const editorialDraftArticles = {
         "heading": "Коли сейфті-кар звернув убік",
         "paragraphs": [
           "Поул під дощем став несподіванкою. Але неділя вимагала іншого: Феттелю довелося лідирувати, коли весь пелотон був готовий атакувати. Через негоду гонка почалася за сейфті-каром.",
-          "Коли боротьба почалася, Toro Rosso залишилася попереду. Поул відчинив двері, але Феттелю ще треба було втримати перевагу під дощем, під час пітстопів і до самого прапора. Від несподіваної суботньої швидкості до справжнього недільного результату залишалася ціла гонка."
+          "Коли боротьба почалася, Toro Rosso залишилася попереду. Поул відчинив двері, але Феттелю ще треба було втримати перевагу під дощем, під час пітстопів і до самого прапора. Від несподіваної суботньої швидкості до справжнього недільного результату залишалася ціла гонка.",
+          "На фініші порядок був однозначний: Феттель випередив Гейккі Ковалайнена й Роберта Кубіцу. Для цього було замало вдалої кваліфікації. У мінливих умовах Toro Rosso мала провести зупинки, поки її пілот утримував боротьбу під контролем. Це була робота цілого вікенду."
         ]
       },
       {
@@ -433,7 +435,7 @@ export const editorialDraftArticles = {
         "heading": "Дві гонки на одній трасі",
         "paragraphs": [
           "Расселл отримав винятковий шанс: за відсутності Гамільтона сів у Mercedes, здатний боротися за перемогу. Початок Переса був майже протилежним. Контакт на першому колі відкинув його назад.",
-          "Більшу частину дня здавалося, що Расселл рухається до першої перемоги, а Перес повертався в боротьбу десь поза увагою камер. Дві історії йшли до фіналу, якого не міг передбачити жоден із гонщиків."
+          "Більшу частину дня здавалося, що Расселл рухається до першої перемоги, а Перес повертався в боротьбу десь поза увагою камер. Дві історії йшли до фіналу, якого не міг передбачити жоден із гонщиків. Попереду було ще багато кіл."
         ]
       },
       {
