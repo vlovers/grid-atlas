@@ -109,3 +109,18 @@ test('archive identity and race links fail closed on ambiguity', () => {
   assert.ok(detail.includes('storyRaceContext(slug, index, locale)'));
   assert.ok(detail.includes('/races/'));
 });
+
+test('editorial photo registry requires local files and complete attribution', () => {
+  const media = read(directory + 'editorial-media.ts');
+  const page = read('apps/web/src/app/[locale]/stories/moments/[slug]/page.tsx');
+  const ledger = read('docs/editorial/MEDIA-PROVENANCE.md');
+  assert.match(media, /editorialPhotos: Partial<Record<string, EditorialPhoto>> = \{\}/);
+  assert.match(media, /photo\.src\.startsWith\('\/media\/editorial\/'\)/);
+  assert.match(media, /photo\.licenseUrl\.startsWith\('https:\/\/'\)/);
+  assert.match(media, /photo\.sourceUrl\.startsWith\('https:\/\/'\)/);
+  assert.match(page, /approvedEditorialPhoto\(slug\)/);
+  assert.match(page, /<Image src=\{photo\.src\}/);
+  assert.match(page, /photo\.creator/);
+  assert.match(page, /photo\.licenseUrl/);
+  for (const slug of slugs) assert.ok(ledger.includes(slug), slug + ' missing photo intake ledger entry');
+});
