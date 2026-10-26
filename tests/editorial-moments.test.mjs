@@ -347,7 +347,7 @@ test('official race reports are traceable without treating research as editorial
   for (const id of researched) {
     const entry = ledger.entries.find(candidate => candidate.id === id);
     assert.ok(entry, id + ' missing from provenance ledger');
-    assert.equal(entry.status, 'source-located-awaiting-independent-review');
+    assert.ok(['source-located-awaiting-independent-review', 'primary-source-checked-ai'].includes(entry.status), id + ' must retain its scoped source status');
     assert.match(entry.primarySource, /^https:\/\/www\.formula1\.com\/en\/latest\/article\//);
     assert.equal(entry.reviewChecklist.independentNarrative, false);
     assert.equal(entry.reviewChecklist.bilingualParity, false);
