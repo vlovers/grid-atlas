@@ -78,3 +78,20 @@ test('every thin biography has two concrete historical research scenes rather th
     assert.equal(item.publication, 'unpublished');
   }
 });
+
+test('new detailed race scenes cite exact sources and retain human review gate', () => {
+  const ledger = read('docs/editorial/batches/drivers-30-v1/SOURCE_CHECKED_SCENES_2026-10-26.json');
+  const manuscripts = read('docs/editorial/batches/drivers-30-v1/narrative-chapters-v1.json');
+  assert.equal(ledger.scenes.length, 3);
+  for (const entry of ledger.scenes) {
+    assert.ok(entry.source_urls.length >= 2);
+    for (const url of entry.source_urls) assert.match(url, /^https:\/\//);
+    assert.equal(entry.status, 'ai_source_checked_human_review_pending');
+    const story = manuscripts.stories.find(s => s.driver_id === entry.driver_id);
+    assert.ok(story && story.chapters.length >= 2);
+    for (const locale of ['en', 'uk']) {
+      assert.ok(story.chapters[1][locale].body.split(/\n\n/).at(-1).length > 400);
+    }
+  }
+  assert.equal(ledger.publication, 'unpublished');
+});
