@@ -472,31 +472,31 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Forty-two points changed the conversation",
+        "heading": "Before Canada, there had been Monaco",
         "paragraphs": [
-          "Forty-two points. Four more than Hamilton and four more than Massa. After Montreal those numbers placed Kubica at the top of the drivers' championship.",
-          "A lead in June was not a trophy in November. But suddenly every BMW Sauber weekend raised a bigger question: could the team remain there? The possibility was real, and precisely because it was uncertain, every following result would matter."
+          "Montreal was not BMW Sauber's first sign of strength. Kubica started the year with podiums in Malaysia and Bahrain, then finished second in Monaco, less than four seconds behind Lewis Hamilton. The team had been knocking at the door well before the red light at the Canadian pit exit changed the race.",
+          "That matters because the Canada win was neither a solitary accident nor evidence of an unstoppable car. Kubica had already proved he could bring the F1.08 home near the front on very different circuits. The sudden championship lead was remarkable, but the pace that made it possible had been visible for months."
         ]
       },
       {
-        "heading": "The dangerous thing about a June lead",
+        "heading": "The next four races changed the picture",
         "paragraphs": [
-          "The Montreal result changed the standings, but it did not change how many races remained. Kubica was first with 42 points; Hamilton and Massa were close behind. There was no protective gap that would let BMW Sauber relax.",
-          "For the first time, the question around Kubica was not simply whether he could win a Grand Prix. It was whether his team could keep matching rivals with longer records of fighting for championships. The arithmetic made the stakes obvious. The answer would have to come from the races still ahead."
+          "Canada put Kubica on 42 points and at the top of the standings. But the next races gave him no chance to settle there. He finished fifth in France, retired from the wet British Grand Prix, then took seventh in Germany and eighth in Hungary. The sequence delivered only seven points after Montreal's ten.",
+          "While rivals were collecting wins, Kubica and BMW Sauber were fighting for smaller returns. That is the part missing from a story that leaps from a June lead to a year-end classification. The lead did not disappear because the points in Canada were somehow misleading; it disappeared because the following weekends changed the balance."
         ]
       },
       {
-        "heading": "The lead was real. So was the distance ahead.",
+        "heading": "A second wind, without another win",
         "paragraphs": [
-          "The pit-lane collision removed Hamilton and Räikkönen from the Canadian Grand Prix; Kubica escaped it and went on to win. Heidfeld completed a BMW Sauber one-two. That was not just a promising qualifying result or an opportunity that vanished: two of the team's cars stood above every rival at the finish.",
-          "The championship table then placed Kubica first. Yet the calendar still stretched far beyond Montréal. The question was no longer whether BMW Sauber could take a win, but whether it could make such days frequent enough to remain in a title fight. June offered an opening, not an answer."
+          "The season was not a straight collapse after Montreal. Kubica returned to the podium in Valencia, and again at Monza. At Fuji in October he came home second behind Fernando Alonso, just 5.283 seconds adrift. These results kept BMW Sauber visible near the front long after its Canadian celebration.",
+          "But the rhythm had changed. The team could still produce excellent Sundays, while Ferrari and McLaren remained stronger across the championship. Kubica's sixth place in China and eleventh in Brazil closed a campaign of genuine highs and frustrated possibilities. His season cannot be described either as a title stolen from him or as a one-race wonder."
         ]
       },
       {
-        "heading": "A lead, not a promised championship",
+        "heading": "What one extraordinary year left behind",
         "paragraphs": [
-          "After Canada, Kubica was ahead in the drivers' standings with 42 points. That made BMW Sauber more than an occasional contender in the eyes of anyone following the season. It did not guarantee that the team's development, results or title prospects would follow the same upward path.",
-          "The decisive image from Montréal is still the BMW Sauber one-two: Kubica ahead of Heidfeld. The lead in the standings gives that image wider meaning. For one part of 2008, this team and driver had put themselves at the front of the championship. What could have happened afterward remains a question, not a result."
+          "BMW Sauber ended 2008 third in the constructors' championship with 135 points. Its late-season developments had not proved as effective as the team needed to keep pace at the front. Kubica finished fourth in the drivers' standings, not first, yet the final position should not erase what happened along the way.",
+          "He had won the Canadian Grand Prix, shared a one-two finish with Nick Heidfeld and genuinely led the championship after seven rounds. He also had to experience how quickly an advantage could become a chase. The more interesting question is not which title he would have won in an imaginary season; it is how a team capable of leading in June could still find the fight slipping away by November."
         ]
       }
     ],
@@ -509,31 +509,31 @@ export const editorialDraftArticles = {
         ]
       },
       {
-        "heading": "Сорок два очки змінили розмову",
+        "heading": "До Канади вже було Монако",
         "paragraphs": [
-          "Сорок два очки. На чотири більше, ніж у Гамільтона та Масси. Після Монреаля ці цифри поставили Кубіцу на вершину особистого заліку.",
-          "Лідерство в червні — не кубок у листопаді. Але тепер кожен вікенд BMW Sauber ставив важливіше питання: чи зможе команда втриматися попереду? Шанс був реальним, а через невизначеність кожен наступний результат важив ще більше."
+          "Монреаль не став першим свідченням швидкості BMW Sauber. Кубіца почав сезон із подіумів у Малайзії та Бахрейні, а потім фінішував другим у Монако — менш ніж за чотири секунди позаду Льюїса Гамільтона. Команда підбиралася до перемоги ще до того, як червоний сигнал на виїзді з пітлейну змінив хід канадської гонки.",
+          "Це важливо: перемога в Канаді не була випадковим успіхом, але й не доводила, що болід став непереможним. Кубіца вже показав, що може привозити F1.08 близько до лідерів на зовсім різних трасах. Раптове лідерство в чемпіонаті вражало, та швидкість, яка зробила його можливим, була помітною вже кілька місяців."
         ]
       },
       {
-        "heading": "Небезпека червневого лідерства",
+        "heading": "Чотири гонки, які змінили картину",
         "paragraphs": [
-          "Після Монреаля таблиця змінилася, але попереду залишалося ще багато етапів. Кубіца мав 42 очки; Гамільтон і Масса були зовсім близько. Відрив не давав BMW Sauber права на спокій.",
-          "Тепер питання полягало не лише в тому, чи може Кубіца виграти окремий Гран-прі. Чи здатна його команда надалі не поступатися суперникам із більшим досвідом боротьби за титули? Цифри показували ставки. Відповідь мали дати наступні гонки."
+          "Після Канади Кубіца мав 42 очки й очолював особистий залік. Але наступні етапи не дали закріпитися на вершині. Він фінішував п'ятим у Франції, зійшов у дощовій Великій Британії, а потім став сьомим у Німеччині та восьмим в Угорщині. За ці чотири гонки він набрав лише сім очок проти десяти за одну перемогу в Монреалі.",
+          "Поки суперники здобували перемоги, Кубіца й BMW Sauber мусили задовольнятися скромнішими результатами. Саме цього бракувало історії, що перескакувала від червневого лідерства до підсумків року. Перевага зникла не тому, що канадські очки були несправжніми: баланс змінили наступні гоночні вікенди."
         ]
       },
       {
-        "heading": "Лідерство було справжнім. Шлях попереду — довгим.",
+        "heading": "Друге дихання — без нової перемоги",
         "paragraphs": [
-          "Зіткнення на пітлейні вибило Гамільтона й Райкконена з Гран-прі Канади; Кубіца уникнув удару та згодом переміг. Гайдфельд завершив подвійний успіх BMW Sauber. Це була не обіцянка після кваліфікації й не змарнований шанс: дві машини команди фінішували вище за всіх суперників.",
-          "Після цього Кубіца очолив особистий залік. Та календар простягався далеко за межі Монреаля. Питання було вже не в тому, чи здатна BMW Sauber виграти гонку, а чи зможе повторювати такі дні достатньо часто, щоб боротися за титул. Червень відкрив можливість, але не дав відповіді."
+          "Після Монреаля сезон не перетворився на суцільний спад. Кубіца знову піднявся на подіум у Валенсії, а потім у Монці. У жовтні на Фудзі він фінішував другим за Фернандо Алонсо, поступившись лише 5,283 секунди. Ці результати показували: BMW Sauber залишалася близько до лідерів навіть через кілька місяців після канадського тріумфу.",
+          "Та ритм боротьби змінився. Команда все ще могла проводити блискучі неділі, тоді як Ferrari й McLaren залишалися сильнішими на дистанції чемпіонату. Шосте місце Кубіци в Китаї та одинадцяте в Бразилії завершили сезон справжніх злетів і втрачених можливостей. Це не історія ні про гарантований титул, який у нього забрали, ні про випадкову перемогу в одній гонці."
         ]
       },
       {
-        "heading": "Лідерство — не обіцянка титулу",
+        "heading": "Що залишив по собі незвичайний рік",
         "paragraphs": [
-          "Після Канади Кубіца очолив особистий залік із 42 очками. Для тих, хто стежив за сезоном, BMW Sauber уже не виглядала випадковим претендентом. Але це не гарантувало, що розвиток боліда, результати й шанси на титул надалі рухатимуться тією самою траєкторією.",
-          "Головний кадр Монреаля — подвійний фініш BMW Sauber: Кубіца попереду Гайдфельда. Лідерство в чемпіонаті додає йому значення. На певному етапі 2008 року команда й гонщик справді були на вершині заліку. А от що могло статися далі — питання, а не встановлений результат."
+          "BMW Sauber завершила 2008 рік третьою в Кубку конструкторів зі 135 очками. Пізні оновлення боліда виявилися недостатньо ефективними, щоб утримувати темп лідерів. Кубіца посів четверте місце в особистому заліку, але ця підсумкова позиція не перекреслює подій сезону.",
+          "Він переміг у Канаді, разом із Ніком Гайдфельдом приніс команді дубль і справді очолював чемпіонат після семи етапів. А потім відчув, як швидко перевага може перетворитися на відставання. Цікавіше не уявляти, який титул він нібито обов'язково здобув би за інших обставин, а зрозуміти, чому команда, здатна лідирувати в червні, до листопада вже не втримала боротьбу за першість."
         ]
       }
     ]
