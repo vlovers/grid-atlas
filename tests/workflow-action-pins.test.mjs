@@ -190,3 +190,23 @@ test('checkout credential policy cannot be bypassed by mixed-case repository spe
     assert.deepEqual(auditWorkflowText(withCredentials), [], name);
   }
 });
+
+test('accepts checkout in named steps with uses and with at the same indentation', () => {
+  const yaml = `steps:
+  - name: Checkout
+    uses: ${checkout}
+    with:
+      persist-credentials: false
+`;
+  assert.deepEqual(auditWorkflowText(yaml), []);
+});
+
+test('rejects named checkout step that retains credentials', () => {
+  const yaml = `steps:
+  - name: Checkout
+    uses: ${checkout}
+    with:
+      persist-credentials: true
+`;
+  assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
+});
