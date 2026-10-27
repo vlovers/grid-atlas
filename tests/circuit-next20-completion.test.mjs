@@ -59,7 +59,12 @@ test('all 105 drafts have leads, but no review status implies publication', () =
   assert.equal(
     moments.filter((m) => m.review_status === 'unverified_research_draft').length,
     0,
-    'all twenty dossiers must now have at least first-pass race-specific research',
+    'all twenty dossiers must now have source leads',
+  );
+  assert.equal(
+    moments.filter((m) => m.review_status === 'source_checked_research_draft').length,
+    105,
+    'first-pass source checks are not independent editorial approval',
   );
   assert.ok(data.publication.includes('blocked'));
 });
