@@ -46,7 +46,7 @@ export default async function EditorialMoment({ params }: Props) {
   const artTone = visual?.tone ?? 'coral';
   const photo = approvedEditorialPhoto(slug);
   const [protagonists, races] = await Promise.all([resolveEditorialPeople(slug), resolveEditorialRaces(slug)]);
-  return <main className={`page ${styles.release} ${styles.editorialReading}`}>
+  return <div className={`page ${styles.release} ${styles.editorialReading}`}>
     <div className={styles.editorialProgress} aria-hidden="true" />
     <nav aria-label={uk ? 'Навігація' : 'Navigation'} style={{ marginBottom: 64, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 16 }}><a href={`/${locale}/stories`}>{uk ? '← Усі історії' : '← All stories'}</a><a href={`/${siblingLocale}/stories/moments/${slug}`} hrefLang={siblingLocale} lang={siblingLocale}>{uk ? 'Read in English →' : 'Читати українською →'}</a></nav>
     <article>
@@ -176,5 +176,5 @@ export default async function EditorialMoment({ params }: Props) {
         </ul>
       </aside>
     </article>
-  </main>;
+  </div>;
 }

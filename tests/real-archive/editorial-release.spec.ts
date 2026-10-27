@@ -34,6 +34,21 @@ for (const locale of ['uk', 'en'] as const) {
     }
     expect(errors).toEqual([]);
   });
+  test(`${locale}: a genuine career journey submits its season form without JavaScript`, async ({ browser }, testInfo) => {
+    const { viewport, userAgent, deviceScaleFactor, isMobile, hasTouch } = testInfo.project.use;
+    const context = await browser.newContext({ viewport, userAgent, deviceScaleFactor, isMobile, hasTouch, javaScriptEnabled: false });
+    try {
+      const page = await context.newPage();
+      expect((await page.goto(`http://127.0.0.1:3351/${locale}/stories/ayrton-senna?year=1988`))?.status()).toBe(200);
+      await expect(page.getByTestId('story-selected-season')).toContainText('1988');
+      const picker = page.locator('#story-year');
+      await expect(picker).toBeVisible();
+      await picker.selectOption('1993');
+      await page.locator('main form button[type=submit]').press('Enter');
+      await expect(page).toHaveURL(/year=1993/);
+      await expect(page.getByTestId('story-selected-season')).toContainText('1993');
+    } finally { await context.close(); }
+  });
   test(`${locale}: season selection, race navigation, Atlas and back preserve a journey`, async ({ page }) => {
     await page.goto(`/${locale}/stories/ayrton-senna?year=1988`);
     const panel = page.getByTestId('story-selected-season');

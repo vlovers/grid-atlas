@@ -56,6 +56,24 @@ for (const locale of ['uk', 'en'] as const) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect(await page.evaluate(() => document.getAnimations().filter(a => a.playState === 'running').length)).toBe(0);
   });
+  test(`${locale}: stories and their sources work without JavaScript`, async ({ browser }, testInfo) => {
+    const { viewport, userAgent, deviceScaleFactor, isMobile, hasTouch } = testInfo.project.use;
+    const context = await browser.newContext({ viewport, userAgent, deviceScaleFactor, isMobile, hasTouch, javaScriptEnabled: false });
+    try {
+      const page = await context.newPage();
+      expect((await page.goto(`http://127.0.0.1:3340/${locale}/stories`))?.status()).toBe(200);
+      await expect(page.locator('main h1')).toContainText(uk ? 'Історії пілотів' : 'Driver stories');
+      const summary = page.locator('main > div details > summary').filter({ hasText: uk ? 'Джерела та пояснення' : 'Sources and reading notes' });
+      await expect(summary).toBeVisible();
+      await summary.press('Enter');
+      await expect(summary.locator('..')).toHaveAttribute('open', '');
+      await page.locator('main li h3 a').first().press('Enter');
+      await expect(page).toHaveURL(/\/stories\/moments\//);
+      await expect(page.getByRole('main')).toHaveCount(1);
+      await expect(page.locator('main h1')).toBeVisible();
+      await expect(page.locator('main')).not.toContainText(uk ? 'Завантажуємо історії' : 'Loading the stories');
+    } finally { await context.close(); }
+  });
   test(`${locale}: stories expose a recoverable outage, not an empty import`, async ({ page }) => {
     await page.goto(`http://127.0.0.1:3341/${locale}/stories`);
     await expect(page.locator('main [role=alert]')).toContainText(uk ? 'Історії тимчасово недоступні' : 'Stories are temporarily unavailable');
