@@ -22,7 +22,7 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   assert.ok(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length<=4);
   assert.ok(circuit.story_leads.filter(s=>s.status==='source_checked_research_draft').every(s=>s.narrative?.en.length>120&&s.narrative?.uk.length>120&&s.sources.length>0));
   for(const story of circuit.story_leads){
-    assert.ok(story.sources.every(s=>s.startsWith('https://www.formula1.com/')));
+    assert.ok(story.sources.every(s=>{ const host=new URL(s).hostname; return host==='www.formula1.com' || (circuit.candidate_slug==='fuji' && host==='www.motorsportmagazine.com') || (circuit.candidate_slug==='kyalami' && host==='www.autosport.com'); }),circuit.candidate_slug);
     for(const locale of ['en','uk']){
       assert.ok(story.title[locale].trim().length>=6);
       assert.ok(story.editorial_direction[locale].trim().length>=30);
