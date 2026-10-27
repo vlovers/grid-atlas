@@ -3,7 +3,7 @@
   "source_release": "F1DB v2026.17.0",
   "batch_id": "next20-editorial-quality-matrix",
   "publication": "blocked",
-  "scope": "Review queue, not a fact-check certificate. 105 bilingual sourced research drafts, of which 62 now have event-specific first-pass evidence crosswalks and 51 have been rewritten in those passes. Zero independent editorial approvals. Classification confirms results, not every incident.",
+  "scope": "105 bilingual historical event research drafts; all 105 now have inspected race-specific first-pass evidence crosswalks, 71 UK/EN narrative pairs rewritten across five passes. These are first-party publisher accounts or contemporaneous reports, NOT independent claim-level approval. Zero editorial approvals, zero historical turn-number approvals and zero media rights approvals.",
   "summary": {
     "total": 105,
     "sourced": 105,
@@ -11,8 +11,8 @@
     "independent_approved": 0,
     "layout_review_required": 105,
     "duplicate_source_reuse": 4,
-    "second_pass_event_specific_checked": 62,
-    "second_pass_rewritten": 51
+    "second_pass_event_specific_checked": 105,
+    "second_pass_rewritten": 71
   },
   "records": [
     {
@@ -113,7 +113,8 @@
       "event_title_en": "Gethin wins by a fraction",
       "source_urls": [
         "https://www.formula1.com/en/results/1971/races/299/italy/race-result",
-        "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28"
+        "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28",
+        "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -131,7 +132,8 @@
       "event_year": 1967,
       "event_title_en": "Clark's charge runs out of fuel",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS"
+        "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS",
+        "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -350,7 +352,8 @@
       "event_year": 2019,
       "event_title_en": "A dramatic finale after the titles were decided",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI",
+        "https://www.formula1.com/en/latest/article/brazilian-grand-prix-2019-race-report-highlights.4VPqubaA8LitJHtDBtLgQr"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -574,7 +577,8 @@
       "event_title_en": "Schumacher answers Alonso a year later",
       "source_urls": [
         "https://www.motorsport.com/f1/news/20-years-ago-michael-schumacher-held-off-fernando-alonso-in-imola-f1-duel/10814238/",
-        "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result"
+        "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result",
+        "https://www.autosport.com/f1/news/schumacher-fends-off-alonso-to-imola-win-4400855/4400855/"
       ],
       "source_granularity": "race_specific_historical_reporting_and_official_result",
       "editorial_status": "source_checked_research_draft",
@@ -1083,7 +1087,8 @@
       "event_year": 1975,
       "event_title_en": "Brambilla wins in the wet",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD"
+        "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -1178,7 +1183,8 @@
       "event_year": 2012,
       "event_title_en": "Maldonado's unexpected Williams victory",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa"
+        "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa",
+        "https://www.formula1.com/en/latest/article/watch-relive-pastor-maldonados-incredible-breakthrough-win-at-the-2012.n3VXYNKovYFCYqMUCbkJG"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",

@@ -5,10 +5,10 @@ import { readFileSync } from 'node:fs';
 const dossier = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-bilingual-histories-v1.json', 'utf8'));
 const audit = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT20_EVENT_EVIDENCE_PASS_20261027.json', 'utf8'));
 
-test('62 event-specific evidence checks cover all 20 circuits', () => {
+test('105 event-specific evidence checks cover all 20 circuits', () => {
   assert.equal(audit.publication, 'blocked');
-  assert.equal(audit.reviewed_events.length, 62);
-  assert.equal(audit.remaining.other_event_drafts, 43);
+  assert.equal(audit.reviewed_events.length, 105);
+  assert.equal(audit.remaining.other_event_drafts, 0);
   assert.equal(audit.remaining.claim_level_approval, 0);
   assert.equal(audit.remaining.feature_layout_bindings_verified, 0);
   assert.equal(audit.remaining.media_rights_approved, 0);
@@ -35,7 +35,7 @@ test('62 event-specific evidence checks cover all 20 circuits', () => {
     assert.equal(item.media_rights_approved, false, key);
   }
   assert.equal(circuits.size, 20);
-  assert.equal(rewritten, 51);
+  assert.equal(rewritten, 71);
   assert.equal(dossier.publication, 'blocked_pending_independent_historical_review');
   assert.equal(audit.reviewed_events.length + audit.remaining.other_event_drafts, 105);
   const hungary1986 = dossier.circuits.find(c => c.circuit_id === 'hungaroring').moments.find(m => m.year === 1986);
@@ -44,14 +44,14 @@ test('62 event-specific evidence checks cover all 20 circuits', () => {
   assert.ok(singapore2019.sources.some(url => url.includes('race-report-highlight-singapore-grand-prix-2019')));
 });
 
-test('evidence crosswalk and claim queue agree on 62 reviewed events and zero approvals', () => {
+test('evidence crosswalk and claim queue agree on 105 reviewed events and zero approvals', () => {
  const queue = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT20_CLAIM_REVIEW_QUEUE.json', 'utf8'));
  assert.equal(queue.summary.total, 105);
- assert.equal(queue.summary.second_pass_event_specific_checked, 62);
- assert.equal(queue.summary.second_pass_rewritten, 51);
+ assert.equal(queue.summary.second_pass_event_specific_checked, 105);
+ assert.equal(queue.summary.second_pass_rewritten, 71);
  assert.equal(queue.summary.independent_approved, 0);
  const keys = new Set(audit.reviewed_events.map(x => x.circuit_id + '/' + x.year));
- assert.equal(keys.size, 62);
+ assert.equal(keys.size, 105);
  for (const record of queue.records) {
   const circuit = dossier.circuits.find(c => c.circuit_id === record.circuit_id);
   const story = circuit.moments.find(m => m.year === record.event_year);
