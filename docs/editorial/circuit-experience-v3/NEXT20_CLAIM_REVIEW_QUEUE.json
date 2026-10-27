@@ -3,7 +3,7 @@
   "source_release": "F1DB v2026.17.0",
   "batch_id": "next20-editorial-quality-matrix",
   "publication": "blocked",
-  "scope": "105 bilingual source-lead research drafts; 88 have inspected Formula 1 event-specific first-pass crosswalks and 63 bilingual narratives have been rewritten in these passes. The remaining 17 lack the deeper crosswalk. All 105 remain unapproved; official classification and retrospectives are not claim-level independent verification.",
+  "scope": "105 bilingual historical event research drafts; all 105 now have inspected race-specific first-pass evidence crosswalks, 71 UK/EN narrative pairs rewritten across five passes. These are first-party publisher accounts or contemporaneous reports, NOT independent claim-level approval. Zero editorial approvals, zero historical turn-number approvals and zero media rights approvals.",
   "summary": {
     "total": 105,
     "sourced": 105,
@@ -11,8 +11,8 @@
     "independent_approved": 0,
     "layout_review_required": 105,
     "duplicate_source_reuse": 4,
-    "second_pass_event_specific_checked": 88,
-    "second_pass_rewritten": 63
+    "second_pass_event_specific_checked": 105,
+    "second_pass_rewritten": 71
   },
   "records": [
     {
@@ -352,7 +352,8 @@
       "event_year": 2019,
       "event_title_en": "A dramatic finale after the titles were decided",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI",
+        "https://www.formula1.com/en/latest/article/brazilian-grand-prix-2019-race-report-highlights.4VPqubaA8LitJHtDBtLgQr"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -576,7 +577,8 @@
       "event_title_en": "Schumacher answers Alonso a year later",
       "source_urls": [
         "https://www.motorsport.com/f1/news/20-years-ago-michael-schumacher-held-off-fernando-alonso-in-imola-f1-duel/10814238/",
-        "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result"
+        "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result",
+        "https://www.autosport.com/f1/news/schumacher-fends-off-alonso-to-imola-win-4400855/4400855/"
       ],
       "source_granularity": "race_specific_historical_reporting_and_official_result",
       "editorial_status": "source_checked_research_draft",
@@ -1181,7 +1183,8 @@
       "event_year": 2012,
       "event_title_en": "Maldonado's unexpected Williams victory",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa"
+        "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa",
+        "https://www.formula1.com/en/latest/article/watch-relive-pastor-maldonados-incredible-breakthrough-win-at-the-2012.n3VXYNKovYFCYqMUCbkJG"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
