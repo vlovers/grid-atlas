@@ -190,7 +190,7 @@ These are citations for **textual research only**. No photos, logos, circuit gra
 
 ## 08:55 event-specific narrative and evidence pass (27 October 2026)
 
-**11** historical moments were rewritten in **both UK and EN** and checked against event-specific Formula 1 reporting, retrospective articles, or biographies. This pass is distinct from the earlier 105/105 **first-pass source-lead** status: it does **not** mean 105 claim-level checks or any independent publication approval. The exact 11 event/source pairs, supported claims, and residual limits are recorded in [NEXT20_EVENT_EVIDENCE_PASS_20261027.json](NEXT20_EVENT_EVIDENCE_PASS_20261027.json).
+**11** historical moments were rewritten in **both UK and EN** and checked against event-specific Formula 1 reporting, retrospective articles, or biographies. This pass is distinct from the earlier 105/105 **first-pass source-lead** status: it does **not** mean 105 claim-level checks or any independent publication approval. The exact 22 event/source pairs (11 rewritten, 11 existing narratives reviewed), supported claims, and residual limits are recorded in [NEXT20_EVENT_EVIDENCE_PASS_20261027.json](NEXT20_EVENT_EVIDENCE_PASS_20261027.json).
 
 - Montréal 1982: replaced an indirect Wall of Champions citation with F1's [Gilles Villeneuve 1978 victory retrospective](https://www.formula1.com/en/latest/article/f1-gilles-villeneuve-remembered-maiden-win-1978-canada.1cF7NPxGB6mOkWWsQeIIIa).
 - Suzuka 2012: linked the [Japanese home-podium statistics](https://www.formula1.com/en/latest/article/f1-japanese-grand-prix-in-numbers.7mwT5rdCC4ZbqhVDeMgSCj), rather than relying only on a generic circuit guide.
@@ -204,4 +204,24 @@ These are citations for **textual research only**. No photos, logos, circuit gra
 - Yas Marina 2025: confirmed Norris's P3, Verstappen's victory and the two-point title margin in [the race report](https://www.formula1.com/en/latest/article/norris-secures-maiden-f1-title-in-abu-dhabi-with-podium-finish-behind.EMJtmvRA0uzmzUC4MZgmw).
 - Silverstone 1998: clarified the penalty notification dispute and pit-lane finish using [the Ferrari Silverstone retrospective](https://www.formula1.com/en/latest/article/gonzalez-and-ascari-to-sainz-and-leclerc-all-of-ferraris-16-wins-at-silverstone.302fSi10PoDv2DRngSf3tv).
 
-The source links are **research evidence**, not licenses for images, quotations or reproduced article text. **94 other moments** have not received this particular event-specific crosswalk pass; all 105 still require independent claim-level review, historical turn/layout bindings and rights clearance. No publication gate changed.
+The source links are **research evidence**, not licenses for images, quotations or reproduced article text. **83 other moments** have not received this particular event-specific crosswalk pass; all 105 still require independent claim-level review, historical turn/layout bindings and rights clearance. No publication gate changed.
+
+### Additional event-level corroboration — one case from each remaining circuit
+
+Read the corresponding official F1 articles for **11 further existing stories**, bringing this evidence ledger to **22 events spanning all 20 circuits**. These 11 stories were **not** rewritten in this pass; the evidence audit records what was checked and what still needs independent corroboration.
+
+| Circuit / event | Main historical claim checked | Remaining caution |
+|---|---|---|
+| Imola 1994 | Senna and Ratzenberger fatalities; safety reforms intensified | Do not imply safety work began only in 1994 |
+| Nürburgring 1976 | Lauda accident and four fellow-driver rescuers | Separate rescue evidence from race classification |
+| Hockenheim 2019 | Verstappen five stops, Vettel from P20 to P2, Kvyat P3 | Do not conflate provisional and final classifications |
+| A1 Ring 2002 | Barrichello yields to Schumacher under Ferrari team orders | Do not label the 2002 geometry modern Red Bull Ring |
+| Barcelona 2016 | Verstappen maiden Red Bull win after Mercedes collision | No steward-blame finding inferred |
+| Melbourne 2009 | Brawn GP's opening-round Button–Barrichello one-two | A technical innovation alone is not a complete causal explanation |
+| Singapore 2008 | First night GP, Alonso win, later crash conspiracy finding | Seek FIA disciplinary decision for independent legal wording |
+| Bahrain 2020 | Grosjean first-lap fire, escape and race restart | Medical and safety investigation require their own sources |
+| Austin 2018 | Räikkönen ended 112-race winless run | Exact margin needs classification |
+| Sepang 2013 | Vettel disregarded Multi 21 order | Horner interview is a participant's account |
+| Istanbul 2020 | Hamilton seventh title and 31.633-second winning margin | Race result is not evidence of tyre-strategy rationale |
+
+**Coverage accounting:** 105/105 have first-pass source leads; **22/105** now have this explicit event-specific evidence ledger (including 11 bilingual rewrites); **83/105** do not. **0/105** have independent editorial approval and **0/20** circuits are publication-ready. Media rights, historical corner/layout bindings and browser QA remain open.
