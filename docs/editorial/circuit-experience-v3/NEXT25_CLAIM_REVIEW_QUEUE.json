@@ -11,7 +11,7 @@
     "classification_drafts": 85,
     "article_source_drafts": 15,
     "priority_human_review": 43,
-    "undated_topics": 26,
+    "undated_topics": 25,
     "independently_approved": 0
   },
   "records": [
@@ -766,13 +766,14 @@
       "candidate_slug": "indianapolis",
       "story_index": 4,
       "year": 2005,
-      "title_en": "The oval meets a Formula 1 road course",
+      "title_en": "The race that almost never started",
       "source_urls": [
-        "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+        "https://www.formula1.com/en/results/2005/races/779/united-states/race-result",
+        "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG"
       ],
       "source_types": {
         "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "priority_human_review",
@@ -1123,9 +1124,9 @@
       "candidate_slug": "kyalami",
       "story_index": 0,
       "year": 1977,
-      "title_en": "Tom Pryce dies in a tragic collision",
+      "title_en": "Kyalami 1977: a victory overshadowed by tragedy",
       "source_urls": [
-        "https://www.formula1.com/en/results/1977/races"
+        "https://www.formula1.com/en/results/1977/races/376/south-africa/race-result"
       ],
       "source_types": {
         "season_classification": 1,
@@ -1136,7 +1137,8 @@
       "review_flags": [
         "results_do_not_establish_context_or_causation",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1299,10 +1301,10 @@
     {
       "candidate_slug": "fuji",
       "story_index": 3,
-      "year": null,
-      "title_en": "The 1977 tragedy involving spectators",
+      "year": 1977,
+      "title_en": "The 1977 Japanese Grand Prix ends in tragedy",
       "source_urls": [
-        "https://www.formula1.com/en/results/1976/races"
+        "https://www.formula1.com/en/results/1977/races"
       ],
       "source_types": {
         "season_classification": 1,
