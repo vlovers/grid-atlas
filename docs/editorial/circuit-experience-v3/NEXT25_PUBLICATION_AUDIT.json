@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-next25-research-v1",
+  "publication": "blocked",
+  "circuit_candidates": 25,
+  "bilingual_historical_drafts": 25,
+  "bilingual_research_questions": 0,
+  "official_f1db_identity_matches": 0,
+  "fully_cited_race_narratives": 0,
+  "verified_turn_inventories": 0,
+  "publication_ready_circuits": 0,
+  "blocking_steps": [
+    "Reconcile all circuit candidate identities against pinned F1DB",
+    "Provide race-specific credible sources and fact-check each of 25 historical narrative drafts",
+    "Research and draft the remaining 100 candidate topics as genuinely distinct, sourced EN/UK histories",
+    "Establish corner names and numbering per exact circuit configuration with provenance",
+    "Perform language edits and independent editorial checks"
+  ],
+  "note": "All 100 supplementary topics now have bilingual prose: 11 with focused source candidates and 89 with inherited F1 result/source leads that DO NOT independently validate incident, politics, technical, layout or historical-context assertions. This is full draft coverage, NOT editorial fact-check completion or approval; all 25 circuits remain unpublished.",
+  "official_f1_source_checked_human_review_pending": 25,
+  "uncited_historical_narratives": 0,
+  "official_f1_result_anchors_with_source": 25,
+  "bilingual_additional_sourced_drafts": 11,
+  "bilingual_additional_classification_supported_drafts": 89
+}
