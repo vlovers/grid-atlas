@@ -74,7 +74,7 @@ export async function GET(
         })
         .join("")}</ul>`;
       if (selected)
-        body += `<section aria-label="${uk ? "Деталі зв’язку" : "Connection details"}"><h2>${h(selected.name)}</h2><p>${h(data.focus.name)} → ${h(selected.name)} · ${y}</p><dl><dt>${uk ? "Гонки з результатами" : "Races with results"}</dt><dd>${selected.races}</dd><dt>${uk ? "Записи результатів" : "Result entries"}</dt><dd>${selected.result_entries}</dd><dt>${uk ? "Гонки з переможними результатами" : "Races with winning results"}</dt><dd>${selected.winning_races}</dd></dl>${a(`/${locale}/explorer/${route}/${focus}?year=${y}&selected=${selected.entity_id}`, uk ? "Відкрити інтерактивний зв’язок" : "Open interactive connection")}</section>`;
+        body += `<section aria-label="${uk ? "Деталі зв’язку" : "Connection details"}"><h2>${h(selected.name)}</h2><p>${h(data.focus.name)} → ${h(selected.name)} · ${y}</p><dl><dt>${uk ? "Гонки з результатами" : "Races with results"}</dt><dd>${selected.races}</dd><dt>${uk ? "Результати гонок" : "Result entries"}</dt><dd>${selected.result_entries}</dd><dt>${uk ? "Гонки з переможними результатами" : "Races with winning results"}</dt><dd>${selected.winning_races}</dd></dl>${a(`/${locale}/explorer/${route}/${focus}?year=${y}&selected=${selected.entity_id}`, uk ? "Відкрити інтерактивний зв’язок" : "Open interactive connection")}</section>`;
       else body += `<p>${h(t.empty)}</p>`;
       body += `<nav aria-label="${uk ? "Сторінки зв’язків" : "Connection pages"}">`;
       for (const [position, label] of [

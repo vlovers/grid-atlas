@@ -569,7 +569,7 @@ export default function ExplorerGraph({ graph, locale, selectedId }: Props) {
                 <dd>{selected.races}</dd>
               </div>
               <div>
-                <dt>{uk ? "Записи результатів" : "Result entries"}</dt>
+                <dt>{uk ? "Результати гонок" : "Result entries"}</dt>
                 <dd>{selected.result_entries}</dd>
               </div>
               <div>

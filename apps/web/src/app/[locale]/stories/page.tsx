@@ -16,13 +16,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Stories({ params }: Props) {
   const { locale: raw } = await params, locale = raw === 'en' ? 'en' : 'uk', uk = locale === 'uk';
   const items = await Promise.all(releasePilots.map(async pilot => ({ pilot, data: await resolveReleaseDriver(pilot.slug, locale) })));
-  const publishedCount = editorialStoryPreviews.filter(story => isAiReviewedStory(story.slug)).length;
   const origin = siteOrigin(), title = uk ? 'Історії пілотів' : 'Driver stories';
   return <div className={`page ${styles.release}`}>
     {origin && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageStructuredData(origin, locale, [{ name: 'Grid Atlas', path: '/' }, { name: title, path: '/stories' }], title)) }} />}
     <header className={styles.hubHero}><p className={styles.eyebrow}>GRID ATLAS / {uk ? 'П’ЯТЬ МАРШРУТІВ' : 'FIVE JOURNEYS'}</p><h1>{title}<span>{uk ? 'Одна гонка. Безліч зв’язків.' : 'One race. Countless connections.'}</span></h1>
       <p>{uk ? 'Оберіть пілота. Рухайтеся крізь сезони, відкривайте команди й повертайтеся до протоколів. Кожен маршрут починається з реальних записів.' : 'Choose a driver. Move through seasons, discover constructors and return to the race records. Every journey starts with observed results.'}</p>
-      <p className={styles.note}>{uk ? 'Це маршрути архівом. Історичні тексти додаються лише після окремого редакційного схвалення кожної мови.' : 'These are archive journeys. Historical writing appears only after separate editorial approval for each language.'}</p>
     </header>
     <div className={styles.covers}>{items.map(({ pilot, data }, i) => <article key={pilot.slug} className={styles.cover} data-story-reveal>
       <div className={styles.coverArt}><MotorsportArt kind={i % 2 ? 'velocity' : 'helmet'} tone={pilot.tone} /></div>
@@ -31,9 +29,9 @@ export default async function Stories({ params }: Props) {
         <p>{pilot.prompt[locale]}</p>{data ? <a href={`/${locale}/stories/${pilot.slug}`}>{uk ? 'Відкрити маршрут' : 'Open journey'} →</a> : <p>{uk ? 'Цей пілот ще не доступний в імпортованому архіві.' : 'This driver is not available in the imported archive yet.'}</p>}</div>
     </article>)}</div>
     <section aria-labelledby="editorial-preview-heading" style={{ margin: 'clamp(48px, 8vw, 100px) auto', maxWidth: 1200, padding: '0 20px' }}>
-      <p className={styles.eyebrow}>GRID ATLAS / {uk ? `${10 - publishedCount} чернеток · ${publishedCount} публікацій` : `${publishedCount} published · ${10 - publishedCount} drafts`}</p>
+      <p className={styles.eyebrow}>GRID ATLAS / {uk ? 'ІСТОРІЇ ГОНОК' : 'RACE STORIES'}</p>
       <h2 id="editorial-preview-heading" style={{ fontSize: 'clamp(30px, 4vw, 56px)', lineHeight: 1.12 }}>{uk ? 'Моменти, за якими стоять історії' : 'Moments with stories behind them'}</h2>
-      <p className={styles.note}>{uk ? 'Читайте готові історії та переглядайте матеріали, які ще перевіряються.' : 'Read published stories and explore manuscripts still under review.'}</p>
+      <p className={styles.note}>{uk ? 'Поворотні моменти, сміливі рішення та гонки, які хочеться згадувати.' : 'Turning points, bold decisions and races worth remembering.'}</p>
       <ol style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 310px), 1fr))', gap: 20, marginTop: 28 }}>
         {editorialStoryPreviews.map((story, index) => {
           const copy = story[locale];
@@ -50,6 +48,6 @@ export default async function Stories({ params }: Props) {
         })}
       </ol>
     </section>
-    <aside className={styles.scope}><h2>{uk ? 'Протокол — початок дослідження' : 'A record is a starting point'}</h2><p>{uk ? 'Записи результатів не є підтвердженням контрактів або офіційних стартів. Прогалини не доводять відсутності участі. Історію конструкторів та заявників досліджуйте окремо.' : 'Result entries do not establish contracts or official starts. Missing records do not prove nonparticipation. Constructor and entrant identities remain distinct.'}</p><a href={`/${locale}/sources`}>{uk ? 'Походження даних' : 'Data provenance'} ↗</a></aside>
+    <details className={styles.provenance}><summary>{uk ? 'Джерела та пояснення' : 'Sources and reading notes'}</summary><p>{uk ? 'Історичні тексти додаються лише після окремого редакційного схвалення кожної мови. Статус чернетки позначено біля її посилання.' : 'Historical writing requires separate editorial approval for each language. Draft links identify their status.'}</p><p>{uk ? 'Записи результатів не є підтвердженням контрактів або офіційних стартів. Прогалини не доводять відсутності участі. Історію конструкторів та заявників досліджуйте окремо.' : 'Result entries do not establish contracts or official starts. Missing records do not prove nonparticipation. Constructor and entrant identities remain distinct.'}</p><a href={`/${locale}/sources`}>{uk ? 'Походження даних' : 'Data provenance'} ↗</a></details>
   </div>;
 }

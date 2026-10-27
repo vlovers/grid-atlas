@@ -117,7 +117,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
                 <h5><a href={`/${locale}/constructors/${row.related_id}?season=${selected.year}`}>{row.related_name}</a></h5>
                 <dl>
                   <div><dt>{locale === 'uk' ? 'Гонки' : 'Races'}</dt><dd>{format(row.races)}</dd></div>
-                  <div><dt>{locale === 'uk' ? 'Записи результатів' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
+                  <div><dt>{locale === 'uk' ? 'Результати гонок' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
                   <div><dt>{glossary[locale].wins}</dt><dd>{format(row.winning_races)}</dd></div>
                 </dl>
                 <p>{locale === 'uk' ? 'Очки у результатах' : 'Recorded result points'}: {row.recorded_points ?? t.unavailable}{row.points_missing > 0 ? ` · ${locale === 'uk' ? 'Є пропуски' : 'Incomplete'}` : ''}</p>
