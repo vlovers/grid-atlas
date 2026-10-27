@@ -210,3 +210,30 @@ test('rejects named checkout step that retains credentials', () => {
 `;
   assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
 });
+
+test('named checkout with metadata between name and uses is accepted', () => {
+  const yaml = `steps:
+  - name: Checkout
+    id: source
+    if: always()
+    uses: ${checkout}
+    with:
+      persist-credentials: false
+  - name: Other
+    uses: ${upload}
+`;
+  assert.deepEqual(auditWorkflowText(yaml), []);
+});
+
+test('named checkout cannot borrow credentials from a later named step', () => {
+  const yaml = `steps:
+  - name: Checkout
+    id: source
+    uses: ${checkout}
+  - name: Other
+    uses: ${upload}
+    with:
+      persist-credentials: false
+`;
+  assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
+});
