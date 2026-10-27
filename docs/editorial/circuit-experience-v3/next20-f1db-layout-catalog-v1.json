@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 83,
-    "race_level_unverified_events": 22,
+    "race_level_verified_events": 93,
+    "race_level_unverified_events": 12,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 2
   },
@@ -1866,31 +1866,71 @@
           "year": 2021,
           "title_en": "One final lap decides the title",
           "layout_id_candidate": "yas-marina-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1057",
+            "race_date": "2021-12-12",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/22-abu-dhabi/race.yml"
+          }
         },
         {
           "year": 2010,
           "title_en": "Vettel takes the championship",
           "layout_id_candidate": "yas-marina-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "839",
+            "race_date": "2010-11-14",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/19-abu-dhabi/race.yml"
+          }
         },
         {
           "year": 2016,
           "title_en": "Rosberg survives the finale",
           "layout_id_candidate": "yas-marina-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "956",
+            "race_date": "2016-11-27",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/21-abu-dhabi/race.yml"
+          }
         },
         {
           "year": 2025,
           "title_en": "Norris claims the title by two points",
           "layout_id_candidate": "yas-marina-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1149",
+            "race_date": "2025-12-07",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2025/races/24-abu-dhabi/race.yml"
+          }
         },
         {
           "year": 2018,
           "title_en": "Hamilton closes the season with a victory",
           "layout_id_candidate": "yas-marina-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "997",
+            "race_date": "2018-11-25",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/21-abu-dhabi/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -1914,31 +1954,71 @@
           "year": 2012,
           "title_en": "Hamilton wins the first race at COTA",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "877",
+            "race_date": "2012-11-18",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/19-united-states/race.yml"
+          }
         },
         {
           "year": 2015,
           "title_en": "Hamilton's third title",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "932",
+            "race_date": "2015-10-25",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2015/races/16-united-states/race.yml"
+          }
         },
         {
           "year": 2018,
           "title_en": "Räikkönen ends a five-year wait",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "994",
+            "race_date": "2018-10-21",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/18-united-states/race.yml"
+          }
         },
         {
           "year": 2019,
           "title_en": "Hamilton seals his sixth championship",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1016",
+            "race_date": "2019-11-03",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/19-united-states/race.yml"
+          }
         },
         {
           "year": 2022,
           "title_en": "Verstappen catches Hamilton late",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1076",
+            "race_date": "2022-10-23",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/19-united-states/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
