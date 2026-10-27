@@ -34,7 +34,9 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
    for(const moment of c.moments){
      assert.ok(['unverified_research_draft','source_checked_research_draft','official_classification_checked_interpretation_pending'].includes(moment.review_status));
      assert.ok(moment.sources?.length > 0, c.circuit_id+'/'+moment.year);
-     assert.ok(moment.sources.every(url => acceptedSource(c.circuit_id, moment.year, url)), c.circuit_id+'/'+moment.year);
+     for (const source of moment.sources) {
+       assert.ok(acceptedSource(c.circuit_id, moment.year, source), `${c.circuit_id}/${moment.year}: unapproved source ${source}`);
+     }
      if(moment.review_status==='unverified_research_draft') assert.notEqual(moment.source_granularity,'official_F1_article_contains_specific_race');
      for(const lang of ['en','uk']) assert.ok(moment.narrative[lang]?.trim().length>=60,c.circuit_id+'/'+moment.year+'/'+lang);
    }
