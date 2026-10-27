@@ -878,22 +878,23 @@
         {
           "year": 2005,
           "title": {
-            "en": "The oval meets a Formula 1 road course",
-            "uk": "Овал і дорожня траса Формули-1"
+            "en": "The race that almost never started",
+            "uk": "Гонка, яка ледь не відбулася"
           },
           "editorial_direction": {
-            "en": "Research-only draft. Independently verify details and historical context with event-specific sources before publication. Editorial caveat moved out of reader-facing copy: The track's banking is historically relevant, but the precise technical contribution to tyre problems requires expert evidence.",
-            "uk": "Дослідницька чернетка. Перед публікацією незалежно звірити деталі й історичний контекст за джерелами конкретного етапу. Редакторське застереження винесено з тексту: Профіль овальної секції важливий для історії, але точний вплив на покришки має підтверджувати технічна експертиза."
+            "en": "Research draft: historical incident details require independent contemporary source and human approval; results only establish standings.",
+            "uk": "Дослідницький текст: деталі історичних інцидентів потребують незалежних тогочасних джерел і редакторського схвалення; результати підтверджують лише класифікацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+            "https://www.formula1.com/en/results/2005/races/779/united-states/race-result",
+            "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "The Formula 1 road course at Indianapolis included a section of the famous Speedway oval. The 2005 United States Grand Prix there ended with only six starters after a tyre-safety dispute.",
-            "uk": "Дорожня траса Формули-1 в Індіанаполісі включала частину знаменитого овалу. У Гран-прі США 2005 року після суперечки про безпеку шин стартували лише шість машин."
+            "en": "Twenty cars completed the formation lap at Indianapolis in 2005, but fourteen of them turned back into the pits. All seven teams using Michelin tyres withdrew over safety concerns, leaving just six cars from Ferrari, Jordan and Minardi. Michael Schumacher won, Rubens Barrichello came second, and Tiago Monteiro took third. The official classification preserves that result, but the unforgettable sight was the depleted starting grid.",
+            "uk": "В Індіанаполісі 2005 року двадцять болідів проїхали прогрівочне коло, та чотирнадцять повернулися в бокси. Усі сім команд на шинах Michelin відмовилися стартувати через побоювання щодо безпеки. На трасі залишилися лише шість машин Ferrari, Jordan і Minardi. Переміг Міхаель Шумахер, другим став Рубенс Баррікелло, третім — Тьягу Монтейру. Протокол зберіг цей результат, а глядачі запам'ятали майже порожню стартову решітку."
           },
-          "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
+          "source_granularity": "official_F1_results_with_independent_claim_review_required"
         }
       ],
       "turn_names": [],
@@ -1306,26 +1307,26 @@
         {
           "year": 1977,
           "title": {
-            "en": "Tom Pryce dies in a tragic collision",
-            "uk": "Том Прайс гине в трагічному зіткненні"
+            "en": "Kyalami 1977: a victory overshadowed by tragedy",
+            "uk": "К'яламі 1977: перемога в тіні трагедії"
           },
           "editorial_direction": {
-            "en": "Investigate the 1977 Grand Prix result, how the decisive moment unfolded and what it changed for the people involved.",
-            "uk": "Дослідити результат Гран-прі 1977 року, як розвивалися вирішальні події та що це змінило для учасників."
+            "en": "Research draft: historical incident details require independent contemporary source and human approval; results only establish standings.",
+            "uk": "Дослідницький текст: деталі історичних інцидентів потребують незалежних тогочасних джерел і редакторського схвалення; результати підтверджують лише класифікацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1977/races"
+            "https://www.formula1.com/en/results/1977/races/376/south-africa/race-result"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
-            "en": "The 1977 South African Grand Prix was overshadowed by the deaths of driver Tom Pryce and marshal Frederik Jansen van Vuuren in a collision during the race. A responsible retelling must explain the safety circumstances without sensationalism.\n\nThis is a story of two deaths, not an occasion to embellish violent details. Any fuller account must rely on reliable contemporary and safety records, identify the marshal correctly and avoid suggesting that a results table alone explains how the tragedy occurred.",
-            "uk": "Гран-прі Південної Африки 1977 року затьмарила загибель гонщика Тома Прайса й маршала Фредеріка Янсена ван Вюрена під час зіткнення на трасі. Цю історію потрібно розповідати з повагою та увагою до обставин безпеки, без сенсаційності.\n\nЦе історія двох загиблих людей, а не привід прикрашати жорстокі подробиці. Повний виклад має спиратися на достовірні тогочасні документи й матеріали про безпеку, правильно називати маршала й не видавати протокол гонки за пояснення трагедії."
+            "en": "Niki Lauda won the 1977 South African Grand Prix at Kyalami for Ferrari. But the race is remembered above all for the fatal collision involving Shadow driver Tom Pryce and track marshal Frederik Jansen van Vuuren. Both died. A finishing order records Lauda's win and Pryce's retirement; it cannot establish the sequence of the incident or the failures that led to it. Those questions require independently checked contemporary reports and safety evidence.",
+            "uk": "Нікі Лауда виграв Гран-прі Південної Африки 1977 року на К'яламі за Ferrari. Проте гонку передусім пам'ятають через смертельне зіткнення за участю пілота Shadow Тома Прайса й маршала Фредеріка Янсена ван Вюрена. Обидва загинули. Фінішний протокол фіксує перемогу Лауди та схід Прайса, але не пояснює всі обставини трагедії. Для цього необхідно окремо перевірити тогочасні свідчення й матеріали з безпеки."
           },
           "verification_scope": {
             "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
             "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
           },
-          "source_granularity": "season_results_index"
+          "source_granularity": "official_F1_results_with_independent_claim_review_required"
         },
         {
           "year": 1967,
@@ -1496,24 +1497,24 @@
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         },
         {
-          "year": null,
+          "year": 1977,
           "title": {
-            "en": "The 1977 tragedy involving spectators",
-            "uk": "The 1977 tragedy involving spectators"
+            "en": "The 1977 Japanese Grand Prix ends in tragedy",
+            "uk": "Трагедія на Гран-прі Японії 1977 року"
           },
           "editorial_direction": {
-            "en": "Research-only manuscript. Independent contemporary and layout sources required for claim-level publication.",
-            "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
+            "en": "Research draft: historical incident details require independent contemporary source and human approval; results only establish standings.",
+            "uk": "Дослідницький текст: деталі історичних інцидентів потребують незалежних тогочасних джерел і редакторського схвалення; результати підтверджують лише класифікацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1976/races"
+            "https://www.formula1.com/en/results/1977/races"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "The 1977 Japanese Grand Prix at Fuji is also remembered for a tragedy involving spectators. James Hunt won the race, but an accurate history must look beyond the classification and treat the loss of life with care. The identity of those affected and the circumstances require primary contemporary reporting; a results table cannot establish them.",
-            "uk": "Гран-прі Японії 1977 року на Фудзі пам’ятають також через трагедію за участю глядачів. Джеймс Гант виграв гонку, проте історія не може обмежуватися протоколом і має з повагою говорити про загиблих. Особи постраждалих та обставини потребують надійних тогочасних джерел."
+            "en": "The 1977 Japanese Grand Prix at Fuji was won by James Hunt, but the result cannot convey the tragedy of that afternoon. Gilles Villeneuve and Ronnie Peterson collided early in the race, and Villeneuve's Ferrari went into a prohibited spectator area. Two people died. The circumstances of the collision and the deaths call for contemporary reporting and safety investigations, not an explanation reconstructed from the classification.",
+            "uk": "Гран-прі Японії 1977 року на Фудзі виграв Джеймс Гант, але результат гонки не передає трагедії того дня. На початку заїзду Жиль Вільньов зіткнувся з Ронні Петерсоном, а Ferrari Вільньова вилетіла в закриту для глядачів зону. Загинули двоє людей. Обставини аварії та загибелі людей потребують перевірки за тогочасними матеріалами й розслідуваннями з безпеки."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "official_F1_results_with_independent_claim_review_required"
         },
         {
           "year": 2007,
