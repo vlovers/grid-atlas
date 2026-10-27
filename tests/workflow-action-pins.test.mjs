@@ -237,3 +237,14 @@ test('named checkout cannot borrow credentials from a later named step', () => {
 `;
   assert.match(auditWorkflowText(yaml)[0], /persist-credentials/);
 });
+
+test('rejects whitespace before uses colon, including quoted and anchored keys', () => {
+  for (const key of ['uses', '"uses"', "'uses'"]) {
+    const yaml = 'steps:\n  - ' + key + ' : actions/upload-artifact@v4\n';
+    assert.match(auditWorkflowText(yaml)[0], /ambiguous action reference/);
+  }
+  assert.match(
+    auditWorkflowText('steps:\n  - uses : &mutable actions/upload-artifact@v4\n')[0],
+    /ambiguous action reference/,
+  );
+});
