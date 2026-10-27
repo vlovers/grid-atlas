@@ -30,6 +30,11 @@ export function auditWorkflowText(source, filename = 'workflow') {
       findings.push(filename + ':' + (i + 1) + ': unsupported YAML structure near action reference');
       continue;
     }
+    // YAML permits spaces before the colon; do not silently skip a mutable action.
+    if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s+:/.test(line)) {
+      findings.push(filename + ':' + (i + 1) + ': ambiguous action reference');
+      continue;
+    }
     const match = /^(\s*)(?:-\s+)?(?:uses|['"]uses['"]):\s*(\S*)(.*)$/.exec(line);
     if (!match) {
       if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s*:/.test(line)) {
