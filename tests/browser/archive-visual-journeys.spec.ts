@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: season journey links real rounds in chronological order`, async ({ page }) => {
     await page.goto(`/${locale}/seasons/1950`);
-    const journey = page.getByTestId('season-visual-journey');
+    const journey = page.getByTestId('season-calendar');
     await expect(journey).toBeVisible();
     const links = journey.locator('a[href*="/races/"]');
     const count = await links.count();
     expect(count).toBeGreaterThanOrEqual(1);
-    expect(count).toBeLessThanOrEqual(3);
-    await expect(journey).toContainText(locale === 'uk' ? 'Маршрут сезону' : 'The season route');
+    await expect(page.getByTestId('season-visual-journey')).toHaveCount(0);
+    await expect(journey).toContainText(locale === 'uk' ? 'Календар Гран-прі' : 'Grand Prix calendar');
     const first = await links.first().getAttribute('href');
     expect(first).toContain(`/${locale}/races/`);
     await links.first().click();

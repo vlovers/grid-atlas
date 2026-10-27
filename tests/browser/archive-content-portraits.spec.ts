@@ -1,13 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 for (const locale of ['uk', 'en'] as const) {
-  test(`${locale}: season portrait is built from archive evidence`, async ({ page }) => {
+  test(`${locale}: season cover uses separate source standings and one full calendar`, async ({ page }) => {
     await page.goto(`/${locale}/seasons/1950`);
-    const story = page.getByTestId('season-archive-story');
-    await expect(story).toBeVisible();
-    await expect(story.locator('a[href*="/races/"]').first()).toBeVisible();
-    await expect(story).toContainText(locale === 'uk' ? 'результат' : 'result');
-    await expect(story).toContainText(locale === 'uk' ? 'не є офіційним' : 'not an official');
+    await expect(page.getByTestId('season-cover')).toBeVisible();
+    await expect(page.getByTestId('season-cover')).toContainText('F1DB');
+    await expect(page.getByTestId('season-calendar').locator('a[href*="/races/"]').first()).toBeVisible();
+    await expect(page.getByTestId('season-archive-story')).toHaveCount(0);
   });
 
   test(`${locale}: constructor history portrait links source-backed drivers`, async ({ page }) => {
