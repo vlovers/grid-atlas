@@ -3,7 +3,7 @@
   "source_release": "F1DB v2026.17.0",
   "batch_id": "next20-editorial-quality-matrix",
   "publication": "blocked",
-  "scope": "Review queue, not a fact-check certificate. 105 bilingual sourced research drafts, of which 62 now have event-specific first-pass evidence crosswalks and 51 have been rewritten in those passes. Zero independent editorial approvals. Classification confirms results, not every incident.",
+  "scope": "105 bilingual source-lead research drafts; 88 have inspected Formula 1 event-specific first-pass crosswalks and 63 bilingual narratives have been rewritten in these passes. The remaining 17 lack the deeper crosswalk. All 105 remain unapproved; official classification and retrospectives are not claim-level independent verification.",
   "summary": {
     "total": 105,
     "sourced": 105,
@@ -11,8 +11,8 @@
     "independent_approved": 0,
     "layout_review_required": 105,
     "duplicate_source_reuse": 4,
-    "second_pass_event_specific_checked": 62,
-    "second_pass_rewritten": 51
+    "second_pass_event_specific_checked": 88,
+    "second_pass_rewritten": 63
   },
   "records": [
     {
@@ -113,7 +113,8 @@
       "event_title_en": "Gethin wins by a fraction",
       "source_urls": [
         "https://www.formula1.com/en/results/1971/races/299/italy/race-result",
-        "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28"
+        "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28",
+        "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -131,7 +132,8 @@
       "event_year": 1967,
       "event_title_en": "Clark's charge runs out of fuel",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS"
+        "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS",
+        "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
@@ -1083,7 +1085,8 @@
       "event_year": 1975,
       "event_title_en": "Brambilla wins in the wet",
       "source_urls": [
-        "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD"
+        "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE"
       ],
       "source_granularity": "official_F1_article_contains_specific_race",
       "editorial_status": "source_checked_research_draft",
