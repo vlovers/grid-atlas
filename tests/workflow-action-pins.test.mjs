@@ -62,6 +62,13 @@ test('repository-wide action pin audit fails closed on mutable fixture', () => {
 });
 
 
+test('rejects whitespace before uses key colon', () => {
+  for (const key of ['uses', '"uses"', "'uses'"]) {
+    const yaml = 'steps:\n  - ' + key + ' : actions/upload-artifact@v4\n';
+    assert.match(auditWorkflowText(yaml)[0], /ambiguous action reference/);
+  }
+});
+
 test('rejects empty uses keys instead of silently skipping them', () => {
   assert.match(auditWorkflowText('steps:\n  - uses:\n')[0], /immutable SHA/);
   assert.match(auditWorkflowText('steps:\n  - uses: # unset\n')[0], /immutable SHA/);
