@@ -4,10 +4,10 @@
   "status": "research_only",
   "publication": "blocked",
   "quality_gate": "research_story_leads_not_articles",
-  "scope": "25 next historic or contemporary Formula 1 venues, provisional slugs pending pinned F1DB identity mapping",
+  "scope": "25 historical/contemporary circuit research dossiers with distinct canonical identities matched to pinned F1DB v2026.17.0; exact race-era layouts, historical claims and publication remain unverified",
   "coverage": 25,
   "source_rules": [
-    "All event anchors are unverified editorial leads pending race-specific authoritative citation.",
+    "Event anchors have official Formula 1 result sources but remain unapproved; circuit identity match is not an event, layout or narrative fact-check.",
     "Narrative questions are NOT event claims and must be replaced with fact-checked full prose before publication.",
     "No historical turn numbering or geometry inferred.",
     "No historical media licenses conveyed."
@@ -15,7 +15,7 @@
   "circuits": [
     {
       "candidate_slug": "baku",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "baku",
       "display_name": {
         "en": "Baku City Circuit",
         "uk": "Баку"
@@ -133,16 +133,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/baku.yml"
     },
     {
       "candidate_slug": "jeddah",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "jeddah",
       "display_name": {
         "en": "Jeddah Corniche Circuit",
         "uk": "Джидда"
@@ -260,16 +261,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/jeddah.yml"
     },
     {
       "candidate_slug": "lusail",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "lusail",
       "display_name": {
         "en": "Lusail International Circuit",
         "uk": "Лусаїл"
@@ -387,16 +389,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/lusail.yml"
     },
     {
       "candidate_slug": "mexico-city",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "mexico-city",
       "display_name": {
         "en": "Autódromo Hermanos Rodríguez",
         "uk": "Автодром братів Родрігесів"
@@ -514,16 +517,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/mexico-city.yml"
     },
     {
       "candidate_slug": "miami",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "miami",
       "display_name": {
         "en": "Miami International Autodrome",
         "uk": "Автодром Маямі"
@@ -641,16 +645,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/miami.yml"
     },
     {
       "candidate_slug": "las-vegas-strip",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "las-vegas",
       "display_name": {
         "en": "Las Vegas Strip Circuit",
         "uk": "Лас-Вегас-Стріп"
@@ -768,16 +773,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/las-vegas.yml"
     },
     {
       "candidate_slug": "indianapolis",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "indianapolis",
       "display_name": {
         "en": "Indianapolis Motor Speedway",
         "uk": "Індіанаполіс"
@@ -892,16 +898,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/indianapolis.yml"
     },
     {
       "candidate_slug": "adelaide",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "adelaide",
       "display_name": {
         "en": "Adelaide Street Circuit",
         "uk": "Міська траса Аделаїди"
@@ -1019,16 +1026,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/adelaide.yml"
     },
     {
       "candidate_slug": "brands-hatch",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "brands-hatch",
       "display_name": {
         "en": "Brands Hatch",
         "uk": "Брендс-Гетч"
@@ -1146,16 +1154,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/brands-hatch.yml"
     },
     {
       "candidate_slug": "watkins-glen",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "watkins-glen",
       "display_name": {
         "en": "Watkins Glen",
         "uk": "Воткінс-Глен"
@@ -1273,16 +1282,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/watkins-glen.yml"
     },
     {
       "candidate_slug": "kyalami",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "kyalami",
       "display_name": {
         "en": "Kyalami",
         "uk": "К’яламі"
@@ -1400,16 +1410,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/kyalami.yml"
     },
     {
       "candidate_slug": "fuji",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "fuji",
       "display_name": {
         "en": "Fuji Speedway",
         "uk": "Фудзі"
@@ -1527,16 +1538,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/fuji.yml"
     },
     {
       "candidate_slug": "paul-ricard",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "paul-ricard",
       "display_name": {
         "en": "Circuit Paul Ricard",
         "uk": "Поль-Рікар"
@@ -1654,16 +1666,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/paul-ricard.yml"
     },
     {
       "candidate_slug": "magny-cours",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "magny-cours",
       "display_name": {
         "en": "Circuit de Nevers Magny-Cours",
         "uk": "Невер-Маньї-Кур"
@@ -1781,16 +1794,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/magny-cours.yml"
     },
     {
       "candidate_slug": "estoril",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "estoril",
       "display_name": {
         "en": "Autódromo do Estoril",
         "uk": "Ешторіл"
@@ -1905,16 +1919,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/estoril.yml"
     },
     {
       "candidate_slug": "portimao",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "portimao",
       "display_name": {
         "en": "Autódromo Internacional do Algarve",
         "uk": "Алгарве — Портіман"
@@ -2029,16 +2044,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/portimao.yml"
     },
     {
       "candidate_slug": "mugello",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "mugello",
       "display_name": {
         "en": "Mugello Circuit",
         "uk": "Муджелло"
@@ -2156,16 +2172,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/mugello.yml"
     },
     {
       "candidate_slug": "donington-park",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "donington",
       "display_name": {
         "en": "Donington Park",
         "uk": "Донінгтон-Парк"
@@ -2280,16 +2297,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/donington.yml"
     },
     {
       "candidate_slug": "valencia-street",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "valencia",
       "display_name": {
         "en": "Valencia Street Circuit",
         "uk": "Міська траса Валенсії"
@@ -2407,16 +2425,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/valencia.yml"
     },
     {
       "candidate_slug": "korea-international",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "yeongam",
       "display_name": {
         "en": "Korea International Circuit",
         "uk": "Міжнародний автодром Кореї"
@@ -2534,16 +2553,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/yeongam.yml"
     },
     {
       "candidate_slug": "buddh",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "buddh",
       "display_name": {
         "en": "Buddh International Circuit",
         "uk": "Міжнародний автодром Будд"
@@ -2658,16 +2678,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/buddh.yml"
     },
     {
       "candidate_slug": "sochi",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "sirius",
       "display_name": {
         "en": "Sochi Autodrom",
         "uk": "Сочі Автодром"
@@ -2785,16 +2806,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/sirius.yml"
     },
     {
       "candidate_slug": "phoenix-street",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "phoenix",
       "display_name": {
         "en": "Phoenix Street Circuit",
         "uk": "Міська траса Фінікса"
@@ -2912,16 +2934,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/phoenix.yml"
     },
     {
       "candidate_slug": "detroit-street",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "detroit",
       "display_name": {
         "en": "Detroit Street Circuit",
         "uk": "Міська траса Детройта"
@@ -3039,16 +3062,17 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/detroit.yml"
     },
     {
       "candidate_slug": "long-beach",
-      "canonical_f1db_id": null,
+      "canonical_f1db_id": "long-beach",
       "display_name": {
         "en": "Long Beach Street Circuit",
         "uk": "Міська траса Лонг-Біч"
@@ -3163,12 +3187,13 @@
       "turn_names": [],
       "configuration_id": null,
       "gaps": [
-        "Official exact F1DB identity",
+        "Race-specific F1DB layout ID and historical turn numbering (circuit identity only is confirmed)",
         "Five complete source-checked bilingual historic narratives",
         "Official circuit layout and turn naming per era",
         "Literary and historical editorial review"
       ],
-      "publication": "unpublished"
+      "publication": "unpublished",
+      "f1db_identity_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/long-beach.yml"
     }
   ]
 }
