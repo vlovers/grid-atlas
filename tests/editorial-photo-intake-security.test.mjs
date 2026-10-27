@@ -6,7 +6,7 @@ const workflow = readFileSync('.github/workflows/editorial-photo-intake.yml', 'u
 
 test('photo intake defaults to read-only permissions', () => {
   assert.match(workflow, /^permissions:\s*\n {2}contents: read$/m);
-  assert.match(workflow, /^    permissions:\s*\n     {2}contents: \$\{\{ github\.event_name == 'push' && 'write' \|\| 'read' \}\}$/m);
+  assert.match(workflow, /^ {4}permissions:\s*\n {6}contents: \$\{\{ github\.event_name == 'push' && 'write' \|\| 'read' \}\}$/m);
   assert.doesNotMatch(workflow, /^permissions:\s*\n {2}contents: write$/m);
 });
 
