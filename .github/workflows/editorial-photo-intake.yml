@@ -13,7 +13,7 @@ on:
       - scripts/editorial-media-intake.mjs
       - scripts/editorial-photo-discovery.mjs
       - .github/workflows/editorial-photo-intake.yml
-      # Quarantine must also run for commits changing only the protected media.
+      # Quarantine must run when the protected public files themselves change.
       - 'apps/web/public/media/editorial/vettel-monza-2008.jpg'
       - 'apps/web/public/media/editorial/brawn-2009.jpg'
   workflow_dispatch:
@@ -33,14 +33,14 @@ permissions:
 jobs:
   stage:
     name: Download candidates for manual rights review
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: ${{ github.event_name == 'push' && 'write' || 'read' }}
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      # Read-only discovery; no job token with write privileges is available here.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
+          ref: ${{ github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -70,11 +70,24 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+  quarantine:
+    name: Quarantine unreviewed public images
+    if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      # Only this push-only job can write; do not run branch scripts with this token.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
       - name: Remove accidentally published unreviewed media
         if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
-        shell: bash
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -86,6 +99,7 @@ jobs:
           done
           if ! git diff --cached --quiet; then
             git commit -m "fix(media): quarantine unreviewed photo files outside public assets"
-            gh auth setup-git
-            git push origin HEAD:editorial/people-who-changed-f1-20261025
+            # Git's credential helper reads the token from this step's environment.
+            # The token is never written to .git/config or interpolated into argv.
+            git -c 'credential.helper=!f() { printf "username=x-access-token\npassword=%s\n" "$GH_TOKEN"; }; f' push origin HEAD:editorial/people-who-changed-f1-20261025
           fi
