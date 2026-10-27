@@ -718,17 +718,24 @@
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         },
         {
-          "year": null,
+          "year": 2023,
           "title": {
-            "en": "Cold night temperatures and tyres",
-            "uk": "Cold night temperatures and tyres"
+            "en": "Cold nights on the Strip",
+            "uk": "Холодні ночі на Стріп"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of cold night temperatures and tyres with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Cold night temperatures and tyres» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Research draft; venue and technical claims require independent historic-layout or race-specific sources.",
+            "uk": "Дослідницька чернетка; конфігурація й технічні деталі потребують незалежних джерел."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The 2023 Las Vegas Strip Grand Prix ran at night on a new street venue. Max Verstappen won the race. Night-time conditions raised questions about how teams would manage tyres, but answering them requires qualifying and race reports from that weekend rather than assuming a particular temperature or grip level.",
+            "uk": "Гран-прі Лас-Вегас-Стріп 2023 року пройшов уночі на новій міській трасі. Макс Ферстаппен переміг. Нічні умови породили запитання про роботу шин, але відповісти на них можна лише за звітами того вікенду, а не вигаданою температурою чи зчепленням."
+          },
+          "source_granularity": "existing_F1_source_candidate_layout_or_conditions_unverified"
         },
         {
           "year": 2023,
@@ -1069,17 +1076,24 @@
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         },
         {
-          "year": null,
+          "year": 1986,
           "title": {
-            "en": "Paddock Hill Bend's blind descent",
-            "uk": "Paddock Hill Bend's blind descent"
+            "en": "The descent into Brands Hatch history",
+            "uk": "Спуск у гоночну історію Брендс-Гетч"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of paddock hill bend's blind descent with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Paddock Hill Bend's blind descent» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Research draft; venue and technical claims require independent historic-layout or race-specific sources.",
+            "uk": "Дослідницька чернетка; конфігурація й технічні деталі потребують незалежних джерел."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1976/races/366/great-britain/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Brands Hatch's Paddock Hill Bend is one of the venue's characteristic sections, with a dramatic change of elevation after the corner. Nigel Mansell won Formula 1's final British Grand Prix here in 1986. Historic diagrams must identify the correct layout before adding turn numbers or treating today's map as identical to the old Grand Prix course.",
+            "uk": "Paddock Hill Bend — одна з впізнаваних секцій Брендс-Гетч із помітним перепадом висот після повороту. Найджел Менселл виграв останній Гран-прі Великої Британії Формули-1 на цій трасі в 1986 році. Історична схема має відповідати конфігурації того часу: сучасну нумерацію не можна переносити автоматично."
+          },
+          "source_granularity": "existing_F1_source_candidate_layout_or_conditions_unverified"
         },
         {
           "year": 1983,
