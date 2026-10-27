@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 10,
-    "race_level_unverified_events": 95,
+    "race_level_verified_events": 22,
+    "race_level_unverified_events": 83,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 0
   },
@@ -320,37 +320,85 @@
           "year": 2005,
           "title_en": "Räikkönen's charge",
           "layout_id_candidate": "suzuka-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "749",
+            "race_date": "2005-10-09",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2005/races/18-japan/race.yml"
+          }
         },
         {
           "year": 1988,
           "title_en": "Senna wins the title after a troubled start",
           "layout_id_candidate": "suzuka-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "467",
+            "race_date": "1988-10-30",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/15-japan/race.yml"
+          }
         },
         {
           "year": 1989,
           "title_en": "The chicane collision",
           "layout_id_candidate": "suzuka-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "483",
+            "race_date": "1989-10-22",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1989/races/15-japan/race.yml"
+          }
         },
         {
           "year": 1990,
           "title_en": "A title decided at Turn 1",
           "layout_id_candidate": "suzuka-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "499",
+            "race_date": "1990-10-21",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/15-japan/race.yml"
+          }
         },
         {
           "year": 2000,
           "title_en": "Ferrari's long wait ends",
           "layout_id_candidate": "suzuka-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "662",
+            "race_date": "2000-10-08",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2000/races/16-japan/race.yml"
+          }
         },
         {
           "year": 2012,
           "title_en": "Kobayashi gives Japan a home podium",
           "layout_id_candidate": "suzuka-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "873",
+            "race_date": "2012-10-07",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/15-japan/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -381,37 +429,85 @@
           "year": 2012,
           "title_en": "A championship in the rain",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "878",
+            "race_date": "2012-11-25",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/20-brazil/race.yml"
+          }
         },
         {
           "year": 2007,
           "title_en": "A title changes hands in Brazil",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "785",
+            "race_date": "2007-10-21",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/17-brazil/race.yml"
+          }
         },
         {
           "year": 2019,
           "title_en": "A dramatic finale after the titles were decided",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1017",
+            "race_date": "2019-11-17",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/20-brazil/race.yml"
+          }
         },
         {
           "year": 2008,
           "title_en": "Massa wins the race, Hamilton takes the title",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "803",
+            "race_date": "2008-11-02",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/18-brazil/race.yml"
+          }
         },
         {
           "year": 2003,
           "title_en": "The winner changes after the race",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "700",
+            "race_date": "2003-04-06",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2003/races/03-brazil/race.yml"
+          }
         },
         {
           "year": 1991,
           "title_en": "Senna wins at home at last",
           "layout_id_candidate": "interlagos-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "502",
+            "race_date": "1991-03-24",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1991/races/02-brazil/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
