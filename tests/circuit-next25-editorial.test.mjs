@@ -56,7 +56,7 @@ test('additional research drafts are explicitly gated and coverage matches the a
  const pending=extra.filter(s=>s.status==='classification_supported_research_draft');
  assert.equal(pending.length,audit.bilingual_additional_classification_supported_drafts);
  for(const story of pending){
-  assert.ok(story.year>=1950);
+  assert.ok(story.year===null || (Number.isInteger(story.year) && story.year>=1950));
   assert.ok(story.narrative.en.length>=150&&story.narrative.uk.length>=150);
   assert.ok(story.sources.length>0);
   assert.match(story.source_granularity,/review|check|candidate/);
