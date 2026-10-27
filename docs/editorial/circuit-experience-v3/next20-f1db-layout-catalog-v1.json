@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 64,
-    "race_level_unverified_events": 41,
+    "race_level_verified_events": 74,
+    "race_level_unverified_events": 31,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 1
   },
@@ -1469,31 +1469,71 @@
           "year": 1996,
           "title_en": "Melbourne's debut almost belongs to a rookie",
           "layout_id_candidate": "melbourne-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "582",
+            "race_date": "1996-03-10",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1996/races/01-australia/race.yml"
+          }
         },
         {
           "year": 2009,
           "title_en": "Brawn starts with a double",
           "layout_id_candidate": "melbourne-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "804",
+            "race_date": "2009-03-29",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2009/races/01-australia/race.yml"
+          }
         },
         {
           "year": 2023,
           "title_en": "Repeated red flags",
           "layout_id_candidate": "melbourne-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1082",
+            "race_date": "2023-04-02",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/03-australia/race.yml"
+          }
         },
         {
           "year": 2016,
           "title_en": "Alonso survives a huge crash",
           "layout_id_candidate": "melbourne-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "936",
+            "race_date": "2016-03-20",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/01-australia/race.yml"
+          }
         },
         {
           "year": 2022,
           "title_en": "Leclerc dominates after the circuit changes",
           "layout_id_candidate": "melbourne-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1060",
+            "race_date": "2022-04-10",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/03-australia/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -1538,31 +1578,71 @@
           "year": 2008,
           "title_en": "The first night race and a hidden scandal",
           "layout_id_candidate": "marina-bay-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "800",
+            "race_date": "2008-09-28",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race.yml"
+          }
         },
         {
           "year": 2017,
           "title_en": "Three contenders collide",
           "layout_id_candidate": "marina-bay-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "970",
+            "race_date": "2017-09-17",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/14-singapore/race.yml"
+          }
         },
         {
           "year": 2023,
           "title_en": "Sainz breaks the streak",
           "layout_id_candidate": "marina-bay-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1094",
+            "race_date": "2023-09-17",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/15-singapore/race.yml"
+          }
         },
         {
           "year": 2019,
           "title_en": "Vettel's last Ferrari victory",
           "layout_id_candidate": "marina-bay-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1012",
+            "race_date": "2019-09-22",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/15-singapore/race.yml"
+          }
         },
         {
           "year": 2022,
           "title_en": "Pérez leads a difficult wet race",
           "layout_id_candidate": "marina-bay-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1074",
+            "race_date": "2022-10-02",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/17-singapore/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
