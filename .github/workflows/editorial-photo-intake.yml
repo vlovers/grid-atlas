@@ -13,6 +13,9 @@ on:
       - scripts/editorial-media-intake.mjs
       - scripts/editorial-photo-discovery.mjs
       - .github/workflows/editorial-photo-intake.yml
+      # Quarantine must run when the protected public files themselves change.
+      - 'apps/web/public/media/editorial/vettel-monza-2008.jpg'
+      - 'apps/web/public/media/editorial/brawn-2009.jpg'
   workflow_dispatch:
     inputs:
       story:
