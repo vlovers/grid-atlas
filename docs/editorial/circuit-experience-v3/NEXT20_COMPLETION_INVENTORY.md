@@ -158,3 +158,31 @@ This pass re-opened the actual Formula 1 article destinations rather than treati
 - The replacement [Silverstone 2008 report](https://www.formula1.com/en/latest/article/were-streaming-the-2008-british-grand-prix-heres-why-you-should-watch.3xHEYFUqbOjgY9OsCX5IlX) covers the wet race; the [Suzuka 2005 account](https://www.formula1.com/en/latest/article/were-streaming-the-2005-japanese-grand-prix-heres-why-you-should-watch.4J1vPpooilIlqtRCoPcRx) covers Räikkönen's comeback; [Fangio's 1957 Nürburgring drive](https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA) is described in an accessible retrospective. The [Brazilian GP archive](https://www.formula1.com/en/latest/article/moments-in-time-the-brazilian-grand-prix.5dr3Egu9lleFLsheSjlkQ0) contains both Senna 1991 and Hamilton/Massa 2008.
 - Added regression coverage for malformed article IDs, URL tracking parameters and generic anniversary-index links. **This is a targeted citation-integrity pass, not an HTTP check of all 110 unique sources or independent approval of all 105 narratives.**
 - Research-only status remains unchanged: the F1DB race-level provenance is complete, but named-turn geometry, media rights, independent fact checks and browser acceptance are still outstanding.
+
+## Named track features: type and source audit — 27 October 2026
+
+This is a **track-feature classification pass, not a numbered-corner or geometry approval**. The legacy field `corner_names` mixed turns with non-turn features, and some entries represent multiple corners or a historically altered configuration. Treating every name as a single numbered corner would silently introduce errors.
+
+- **34** existing named-feature candidates across **10** of the 20 circuits have been classified with an evidence URL and a feature-specific note. The other 10 circuits have no named-feature candidates in this research dossier, **not** proof that they lack named corners.
+- Types: **15** named turns, **3** corner pairs, **4** sequences, **2** sequence components, **2** chicanes, **2** multi-apex turns, **3** layout-sensitive features, and **3 non-turn objects** (one barrier, one straight and one stadium section).
+- The **Wall of Champions** in Montreal is a barrier beside the final chicane, not a corner. **Döttinger Höhe** is a Nordschleife straight/section, not a corner on the modern GP circuit. **Motodrom** is Hockenheim's stadium section, not one turn.
+- **Lesmo** refers to two turns, **Ascari** to a chicane, **Rivazza** to a pair of bends, **Senna S** to a sequence, and **Istanbul Turn 8** to one multi-apex corner. **Tamburello** and **Villeneuve** require historical Imola layout context.
+- **Parabolica** is also known as **Curva Alboreto** on the modern Monza circuit; **Curva Grande** is also referred to as **Biassono**. Preserve names appropriate to each race era.
+- The 1999 Montreal narrative was corrected: the three world champions Damon Hill, Michael Schumacher and Jacques Villeneuve were **not** the only drivers to hit the Wall of Champions; the official retrospective also names Ralf Schumacher and Ricardo Zonta.
+
+All **34** entries retain `turn_number: null`, `configuration_id: null` and `layout_binding_status: not_verified`. Source references prove the name or feature type on the cited era's circuit, **not** its position on one of the 68 pinned historical F1DB layouts. No candidate is approved for map pins or race-era corner numbers.
+
+### Selected feature evidence
+
+| Track | Source | Verified scope |
+|---|---|---|
+| Silverstone | [F1 named-corner history](https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z) | Maggotts–Becketts–Chapel as a sequence, Copse and Stowe as turns |
+| Monza | [F1 2026 corner guide](https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK) | Lesmo pair, Ascari chicane, historical/current corner aliases |
+| Suzuka | [F1 circuit guide](https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN) | Degner 1/2, Spoon's second apex, 130R and final chicane |
+| Montreal | [F1 Wall of Champions history](https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3) | Wall is a barrier; 1999 crash participants |
+| Nürburgring | [Official circuit news](https://www.nuerburgring.de/news/erstmals-auf-der-nordschleife-nurburgring-investiert-weiter-in-digitalisierung) | Döttinger Höhe is a Nordschleife section, not a modern GP corner |
+| Hockenheim | [F1 circuit guide](https://www.formula1.com/en/racing/2018/germany) | Motodrom is the stadium section |
+| Zandvoort | [F1 redevelopment account](https://www.formula1.com/en/latest/article/zandvoort-redevelopment-kicks-back-into-gear-as-circuit-prepares-for-f1.42MerRtqpqUUAQANMyqHdc) | Modern banking was added to two named turns |
+| Istanbul Park | [F1 Turn 8 feature](https://www.formula1.com/en/latest/article/turkeys-turn-8-taking-on-one-of-the-most-challenging-corners-in-f1.N4iqF6KjTuWPCfpDBJgEu) | One long multi-apex corner |
+
+These are citations for **textual research only**. No photos, logos, circuit graphics or diagrams were copied, licensed or published in this pass. Media-rights review remains blocked. The new `tests/circuit-next20-track-features.test.mjs` guards the type distinctions and the unapproved geometry state. This still does **not** constitute independent editorial approval of 105 historical narratives.
