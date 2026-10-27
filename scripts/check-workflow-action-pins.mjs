@@ -16,6 +16,12 @@ export function auditWorkflowText(source, filename = 'workflow') {
       findings.push(filename + ':' + (i + 1) + ': unsupported escaped YAML mapping key');
       continue;
     }
+    // Explicit mapping keys can override an earlier checkout `with` or credentials key.
+    // A line-oriented guard cannot safely resolve these YAML structures.
+    if (/^\s*(?:-\s*)?\?\s*(?:uses|with|persist-credentials|['"](?:uses|with|persist-credentials)['"])\s*$/.test(line)) {
+      findings.push(filename + ':' + (i + 1) + ': unsupported explicit YAML security key');
+      continue;
+    }
     // Reject YAML forms that can hide an action from this intentionally small scanner.
     if (/^\s*(?:-\s*)?\{.*(?:['"]?uses['"]?)\s*:/.test(line) ||
         /^\s*(?:-\s+)?\?\s*['"]?uses['"]?\s*$/.test(line) ||
@@ -76,7 +82,7 @@ export function auditWorkflowText(source, filename = 'workflow') {
         const keyIndent = line.match(/^\s*/)[0].length;
         if (keyIndent <= withIndent) break;
         if (keyIndent === withIndent + 2 &&
-            /^\s*(?:persist-credentials|['"]persist-credentials['"]):\s*/.test(line)) {
+            /^\s*(?:persist-credentials|['"]persist-credentials['"])\s*:/.test(line)) {
           credentialCount++;
           credentialsDisabled = /^\s*(?:persist-credentials|['"]persist-credentials['"]):\s*false\s*(?:#.*)?$/.test(line);
         }
