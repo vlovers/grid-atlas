@@ -49,7 +49,9 @@ jobs:
     env:
       DATABASE_URL: postgresql://grid_atlas:integration_only@localhost:5432/grid_atlas
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
       - name: Install PostgreSQL client
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Test importer fixtures
@@ -84,7 +86,7 @@ jobs:
           python3 -c 'import json; x=json.load(open("/tmp/content-factory-30-identity.json")); assert x["totals"]["matched_external_ids"] == 30 and x["totals"]["approved_for_publication"] == 0 and not x["errors"]'
       - name: Upload Content Factory identity reconciliation
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: content-factory-30-f1db-identity-unpublished
           path: /tmp/content-factory-30-identity.json
@@ -95,7 +97,7 @@ jobs:
           python3 scripts/prepare_editorial_batch.py docs/editorial/batches/priority-legends-001.json --archive /tmp/f1db/f1db-json-splitted.zip --checksums /tmp/f1db/checksums_sha256.txt --output /tmp/priority-legends-001.research.json
           python3 -c 'import json; p=json.load(open("/tmp/priority-legends-001.research.json")); assert len(p["profiles"]) == 5 and p["publication_status"] == "unpublished" and all(not x["claims"] and all(v is None for v in x["drafts"].values()) for x in p["profiles"])'
       - name: Upload unpublished editorial research packets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: priority-legends-001-research-unpublished
           path: /tmp/priority-legends-001.research.json
@@ -218,7 +220,7 @@ jobs:
           psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 -f packages/database/scripts/senna-1988-reconciliation.sql > /tmp/grid-atlas-evidence/senna-prost-1988.txt
           test -s /tmp/grid-atlas-evidence/senna-prost-1988.txt
       - name: Upload reconciliation evidence
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: senna-prost-1988-f1db-reconciliation
           path: /tmp/grid-atlas-evidence/senna-prost-1988.txt
