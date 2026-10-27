@@ -13,4 +13,6 @@ const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
 if (!pkg.private || !pkg.packageManager?.startsWith('pnpm@')) {
   throw new Error('Workspace must be private and pin pnpm');
 }
-console.log('Foundation files validated');
+const { assertWorkflowActionsPinned } = await import('./check-workflow-action-pins.mjs');
+const workflowCount = assertWorkflowActionsPinned();
+console.log(`Foundation files and ${workflowCount} workflow action pins validated`);
