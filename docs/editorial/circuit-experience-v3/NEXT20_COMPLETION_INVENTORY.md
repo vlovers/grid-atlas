@@ -238,3 +238,13 @@ Read the corresponding official F1 articles for **11 further existing stories**,
 - **Spielberg 2019:** the [F1 race report](https://www.formula1.com/en/latest/article/austrian-grand-prix-2019-race-report-and-highlights.66QcACWZJJ2URf4fe46epG) confirms the Leclerc pass on lap 69 of 71 and the stewards' no-further-action decision. It does not substitute for a full FIA decision document.
 
 **Current accounting:** 105/105 UK/EN stories have source leads; **42/105** have explicit event-specific corroboration entries (31 rewritten across the two evidence passes); **63/105** remain outside this deeper pass. The source-check flags do not mean independent fact-checking or approval. **0/20** circuits are publication-ready; media licenses, historical feature-to-layout bindings, independent editorial review and browser QA remain blocked. PR #317's separate 25 circuits are untouched and not counted as complete.
+
+## Event-specific source pass — 27 October 2026, 10:57 Europe/Kyiv
+
+Rewrote **20 additional UK/EN event stories** in one batch, spanning Albert Park (1996, 2016, 2022, 2023), Marina Bay (2017, 2022), Bahrain (2022), Shanghai (2004, 2007, 2009), Yas Marina (2010, 2016, 2018), Austin (2019, 2022), Sepang (2009, 2012, 2016), Spielberg (2020), and Barcelona (2001). The live Formula 1 event reports, steward summaries and historical retrospectives were consulted for the specifically recorded claims; no source's photographs or prose were copied.
+
+**Current measured state:** **62/105** event-specific first-pass evidence crosswalks, **51/105** narratives rewritten across these passes, **43/105** not yet in this deeper crosswalk. **105/105** retain at least one source lead. **0** independently approved for publication; all 20 circuits remain blocked. Results are not evidence of the cause of an incident, an FIA ruling, a tyre failure or a driver's intentions.
+
+Key corrections/precision: Singapore 2017 records the stewards' *racing incident* finding, rather than assigning blame; Melbourne 2016 distinguishes a frightening accident from the no-predominant-fault finding; Sepang 2009 records the historical half-points rule rather than today's scoring; Austria 2020 explains that Norris needed a final fastest lap to benefit from Hamilton's penalty. The 2023 Melbourne red flags and 2010 Abu Dhabi title strategy are traced to race-specific reporting. All turn numbers, historical SVG rights and independent UK/EN editorial sign-off remain unverified.
+
+The matching machine-readable record is `NEXT20_EVENT_EVIDENCE_PASS_20261027.json`; `NEXT20_CLAIM_REVIEW_QUEUE.json` and the regression test have been synchronized. CI on the latest commit must be checked separately.
