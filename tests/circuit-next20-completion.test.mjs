@@ -128,6 +128,11 @@ test('all 20 editorial circuits map to distinct pinned F1DB identities and layou
     const ids = new Set(entry.layouts.map((l) => l.id));
     assert.equal(ids.size, entry.layouts.length);
     assert.ok([...ids].every((id) => id.startsWith(entry.f1db_circuit_id + '-')));
+    for (const layout of entry.layouts) {
+      assert.equal(layout.local_svg_path, `apps/web/public/circuit-layouts/${layout.id}.svg`);
+      assert.equal(layout.svg_file_present, true);
+      assert.equal(layout.media_rights_status, 'not_independently_reviewed');
+    }
     assert.equal(entry.events.length, circuit.moments.length);
     for (const event of entry.events) {
       assert.ok(circuit.moments.some((m) => m.year === event.year && m.title.en === event.title_en));
@@ -153,6 +158,8 @@ test('layout reconciliation totals are measured and never imply a reviewed race 
     all.filter((e) => e.status !== 'year_annotation_only_not_race_verified').length,
   );
   assert.equal(f1dbLayouts.summary.layout_count, f1dbLayouts.circuits.flatMap((c) => c.layouts).length);
+  assert.equal(f1dbLayouts.summary.svg_files_present, 68);
+  assert.equal(f1dbLayouts.summary.svg_files_missing, 0);
   assert.ok(f1dbLayouts.limitations.some((x) => x.includes('race.yml')));
   assert.ok(f1dbLayouts.limitations.some((x) => x.includes('Corner')));
 });
