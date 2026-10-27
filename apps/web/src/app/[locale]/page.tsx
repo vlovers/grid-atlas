@@ -70,10 +70,10 @@ export default async function Home() {
   return <div className={styles.home} data-testid="atlas-home">
     <section className={styles.masthead} aria-label={e.edition}>
       <div className={styles.editionLine}><p>{e.edition}</p><span>{e.volume}</span></div>
-      <EditorialHero title={e.homeTitle} eyebrow={e.cover} context={focus?.driver.name}
-        lead={e.homeLead} media={cover ? <RaceCover moment={cover.moment} driverName={cover.driver.name} locale={locale} artwork={coverArtwork} firstWin={Boolean(cover.career?.milestones.first_win)} /> : <div className={styles.coverEmpty} data-testid="home-season-cover"><p className={styles.eyebrow}>{e.seasons}</p><h2>{s.erasTitle}</h2><nav aria-label={locale === 'uk' ? 'Сезони на обкладинці' : 'Cover seasons'}>{seasons.slice(0, 6).map(season => <a key={season.year} href={path(`/seasons/${season.year}`)}>{season.year} ↗</a>)}</nav></div>}
+      <EditorialHero title={e.homeTitle} eyebrow={e.cover} context={cover?.driver.name ?? focus?.driver.name}
+        lead={e.homeLead} media={cover ? <RaceCover moment={cover.moment} driverName={cover.driver.name} driverId={cover.driver.id} locale={locale} artwork={coverArtwork} firstWin={Boolean(cover.career?.milestones.first_win)} /> : <div className={styles.coverEmpty} data-testid="home-season-cover"><p className={styles.eyebrow}>{e.seasons}</p><h2>{s.erasTitle}</h2><nav aria-label={locale === 'uk' ? 'Сезони на обкладинці' : 'Cover seasons'}>{seasons.slice(0, 6).map(season => <a key={season.year} href={path(`/seasons/${season.year}`)}>{season.year} ↗</a>)}</nav></div>}
         actions={<><a href={cover ? path(`/races/${cover.moment.race.id}`) : '#atlas-seasons'}><span className={styles.roundArrow} aria-hidden="true">↗</span>{cover ? s.start : t.start}</a>
-          {focus && <a href={path(`/drivers/${focus.driver.id}`)}>{e.openDossier} ↗</a>}</>} />
+          {(cover?.driver ?? focus?.driver) && <a href={path(`/drivers/${(cover?.driver ?? focus!.driver).id}`)}>{e.openDossier} ↗</a>}</>} />
       <div className={styles.coverFooter}>
         <form className={styles.search} action={path('/drivers')} role="search"><label htmlFor="home-search">{t.search}</label><div><input id="home-search" name="q" type="search" maxLength={100} placeholder={t.placeholder} /><button type="submit" aria-label={t.searchAction}>↗</button></div></form>
         <nav className={styles.contents} aria-label={e.contents}><a href="#home-drivers-title">01 / {e.drivers}</a><a href="#home-constructors-title">02 / {e.constructors}</a><a href="#atlas-seasons">03 / {e.seasons}</a></nav>

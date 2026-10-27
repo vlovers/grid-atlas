@@ -46,7 +46,7 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goBack();
     await expect(page.getByTestId('story-selected-season')).toContainText('1988');
     await chooseOption(page.getByLabel(uk ? 'Будь-який зафіксований сезон' : 'Any observed season'), '1993');
-    await page.locator('main form button').press('Enter');
+    await page.locator('main form button[type=submit]').press('Enter');
     await expect(page).toHaveURL(/year=1993/);
     await expect(page.getByTestId('story-selected-season')).toContainText('1993');
     const raceLink = page.locator('#story-races article h3 a').first();

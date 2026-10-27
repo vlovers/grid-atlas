@@ -120,3 +120,6 @@
 .partialPoints { display: block; color: var(--muted); margin-top: .35rem; font-size: .8rem; }
 
 .selectedSeason > details { grid-column: 1 / -1; }
+
+.biographyStatus { border-top: 1px solid var(--line); padding-block: .5rem; color: var(--muted); font-size: .85rem; }
+.biographyStatus summary { min-height: 44px; cursor: pointer; align-content: center; }

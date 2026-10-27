@@ -60,6 +60,6 @@ for (const locale of ['uk', 'en'] as const) {
       expect(href).toMatch(new RegExp(`^/${locale}/drivers/[1-9][0-9]*\\?season=1950$`));
     }
     await expect(page.getByTestId('championship-drivers-career')).toBeVisible();
-    await expect(page.getByRole('heading', { name: locale === 'uk' ? 'Біографія очікує на публікацію' : 'Biography awaiting publication' })).toBeVisible();
+    await expect(page.locator('#driver-biography summary').filter({hasText: locale === 'uk' ? 'Біографію ще не опубліковано' : 'Biography not available yet'})).toBeVisible();
   });
 }

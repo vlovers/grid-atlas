@@ -106,7 +106,7 @@ export function AtlasWorkbench({
         <div>
           <p className={styles.kicker}>{t.map}</p>
           <h2>{focus.name} <span>· {graph.year}</span></h2>
-          <p data-testid="atlas-record-count">{totalConnections !== undefined ? `${totalConnections} ${glossary[locale].seasonConnections.toLocaleLowerCase(locale)} · ` : ''}{graph.edges.length} {locale === 'uk' ? 'у завантаженому списку' : 'in the loaded list'}</p>
+          <p data-testid="atlas-record-count">{totalConnections !== undefined ? `${totalConnections} ${glossary[locale].seasonConnections.toLocaleLowerCase(locale)} · ` : ''}{graph.edges.length} {locale === 'uk' ? 'показано' : 'shown'}</p>
         </div>
         <a href="#atlas-connections">{t.list} ↓</a>
       </header>

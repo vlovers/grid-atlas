@@ -147,7 +147,7 @@ export async function SeasonExplorer({
               </a>
             </p>
           )}
-          <p className={styles.caption}>
+          <details className={styles.caption}><summary>{uk ? "Джерела та пояснення" : "Sources and context"}</summary><p>
             {uk
               ? "Це зв’язки за результатами гонок, а не підтвердження офіційних стартів, контрактів або правонаступництва."
               : "These are result-record associations, not proof of official starts, contracts or team succession."}
@@ -156,10 +156,10 @@ export async function SeasonExplorer({
             {kind === "driver"
               ? uk
                 ? "Джерело обліку пілота"
-                : "Driver identity source"
+                : "Driver data source"
               : uk
-                ? "Джерело ідентичності конструктора"
-                : "Constructor identity source"}
+                ? "Джерело даних конструктора"
+                : "Constructor data source"}
             :{" "}
             <a
               href={graph.source.homepage_url}
@@ -172,7 +172,7 @@ export async function SeasonExplorer({
             {uk
               ? "Не є підтвердженням кожного окремого результату."
               : "Not per-result provenance."}
-          </p>
+          </p></details>
         </>
       )}
     </section>

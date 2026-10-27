@@ -10,7 +10,10 @@ for (const locale of ['uk', 'en'] as const) {
     await expect(profile.locator('#driver-moments h3 a')).toHaveAttribute('href', `/${locale}/races/1`);
     await expect(profile.locator('a[href*="/time-machine?"]')).toHaveCount(0);
     await expect(profile.locator('details[open]')).toHaveCount(0);
-    await expect(profile.getByText(locale === 'uk' ? 'Біографія очікує на публікацію' : 'Biography awaiting publication', { exact: true })).toBeVisible();
+    const biographyStatus = profile.locator('#driver-biography details').filter({ has: page.locator('summary', { hasText: locale === 'uk' ? 'Біографію ще не опубліковано' : 'Biography not available yet' }) });
+    await expect(biographyStatus).not.toHaveAttribute('open');
+    await biographyStatus.locator('summary').press('Enter');
+    await expect(biographyStatus.locator('p')).toBeVisible();
     await profile.locator('#driver-seasons > summary').press('Enter');
     await expect(profile.getByRole('table').first()).toBeVisible();
     await expect(profile.locator('#driver-seasons tbody tr')).toHaveCount(1);

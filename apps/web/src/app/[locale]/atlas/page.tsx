@@ -320,15 +320,13 @@ export default async function AtlasPage({ params, searchParams }: Props) {
         )}
         <a href={`/${locale}/lineage`}>
           <span>
-            02 / {locale === "uk" ? "ПЕРЕВІРЕНІ ТВЕРДЖЕННЯ" : "REVIEWED CLAIMS"}
+            02 / {locale === "uk" ? "ІСТОРІЯ КОМАНД" : "TEAM HISTORY"}
           </span>
           <h2>{t.lineage} ↗</h2>
-          <p>{t.lineageNote}</p>
+          
         </a>
       </div>
-      <p className={styles.help}>
-        {t.limitations} {t.emptyNote}
-      </p>
+      <details className={styles.help}><summary>{words.sources}</summary><p>{t.limitations} {t.lineageNote} {t.emptyNote}</p></details>
     </section>
   );
 }
