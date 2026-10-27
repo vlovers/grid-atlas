@@ -1,0 +1,12 @@
+.section { margin-block: var(--space-section); }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.grid article { display: grid; grid-template-rows: minmax(4.5rem, auto) auto 1fr auto; min-width: 0; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.grid h3 { font: 500 clamp(1.6rem, 2.4vw, 2.5rem)/1.18 var(--font-display); letter-spacing: 0; margin: 0; overflow-wrap: break-word; }
+.grid p { font: .75rem/1.7 var(--font-mono); color: var(--muted); }
+.grid figure { display: flex; flex-direction: column; align-self: end; margin: 0; background: #11161c; padding: 1rem; border: 1px solid var(--line); }
+.grid img { display: block; width: 100%; height: 180px; object-fit: contain; }
+.grid figcaption { font: .65rem/1.7 var(--font-mono); color: #c4ced6; overflow-wrap: anywhere; }
+.grid figcaption a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; }
+.action { display: inline-flex; align-items: center; min-height: 44px; margin-top: 1rem; font-size: .8rem; text-decoration: underline; text-underline-offset: .3em; }
+@media (max-width: 850px) { .grid { grid-template-columns: 1fr; gap: 2rem; } .grid article { grid-template-rows: auto auto 1fr auto; } .grid figure { width: 100%; } }
+@media (forced-colors: active) { .grid figure { background: Canvas; } .grid figcaption { color: CanvasText; } }

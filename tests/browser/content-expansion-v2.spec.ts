@@ -3,11 +3,11 @@ import { test, expect } from '@playwright/test';
 for (const locale of ['uk', 'en'] as const) {
   test(`${locale}: circuit history connects verified race evidence`, async ({ page }) => {
     await page.goto(`/${locale}/circuits/1`);
-    const journey = page.getByTestId('circuit-era-journey');
+    const journey = page.locator('#circuit-history');
     await expect(journey).toBeVisible();
-    expect(await journey.locator('ol li').count()).toBeGreaterThan(0);
+    expect(await journey.locator('tbody tr').count()).toBeGreaterThan(0);
     await expect(journey.locator('a[href*="/races/"]').first()).toBeVisible();
-    await expect(journey).toContainText(locale === 'uk' ? 'конфігурацію' : 'layout');
+    await expect(page.getByTestId('circuit-experience')).toBeVisible();
   });
 
   test(`${locale}: constructor eras expose recorded seasons without title claims`, async ({ page }) => {
@@ -20,7 +20,7 @@ for (const locale of ['uk', 'en'] as const) {
 
   test(`${locale}: season and race pages expose evidence journeys`, async ({ page }) => {
     await page.goto(`/${locale}/seasons/1950`);
-    const season = page.getByTestId('season-calendar');
+    const season = page.getByTestId('season-journey');
     await expect(season).toBeVisible();
     await expect(season.locator('a[href*="/races/"]').first()).toBeVisible();
     await page.goto(`/${locale}/races/1`);

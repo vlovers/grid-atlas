@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "circuit_id": "monza",
+      "biography": {
+        "title": {
+          "en": "Speed in the royal park",
+          "uk": "Швидкість у королівському парку"
+        },
+        "text": {
+          "en": "Opened in 1922, Monza is a circuit of long straights and heavy braking. Slipstream battles and Ferrari’s supporters made it a distinctive home for the Italian Grand Prix.",
+          "uk": "Відкрита 1922 року Монца поєднує довгі прямі з різким гальмуванням. Боротьба у сліпстримі й уболівальники Ferrari створили особливий характер Гран-прі Італії."
+        },
+        "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+        "locator": "Historical venue introduction; Memorable moments"
+      },
+      "moments": [
+        {
+          "id": "monza-1971",
+          "year": 1971,
+          "title": {
+            "en": "Separated by a hundredth",
+            "uk": "Різниця — сота секунди"
+          },
+          "text": {
+            "en": "Gethin beat Peterson by 0.01 seconds.",
+            "uk": "Гетин випередив Петерсона на 0,01 секунди."
+          },
+          "criterion": "close_finish",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+          "locator": "Memorable moments / 1971",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "monza-1988",
+          "year": 1988,
+          "title": {
+            "en": "Ferrari’s unexpected double",
+            "uk": "Несподіваний дубль Ferrari"
+          },
+          "text": {
+            "en": "Berger and Alboreto finished first and second after Senna retired.",
+            "uk": "Бергер та Альборето здобули дубль після сходу Сенни."
+          },
+          "criterion": "turning_point",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+          "locator": "Memorable moments / 1988",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "monza-2008",
+          "year": 2008,
+          "title": {
+            "en": "Vettel breaks through",
+            "uk": "Прорив Феттеля"
+          },
+          "text": {
+            "en": "Vettel converted pole into his first Grand Prix win.",
+            "uk": "Феттель перетворив поул на першу перемогу в Гран-прі."
+          },
+          "criterion": "first_win",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+          "locator": "Memorable moments / 2008",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "monza-2020",
+          "year": 2020,
+          "title": {
+            "en": "Gasly takes his chance",
+            "uk": "Гаслі використовує шанс"
+          },
+          "text": {
+            "en": "Gasly held off Sainz for his first victory.",
+            "uk": "Гаслі стримав Сайнса й здобув першу перемогу."
+          },
+          "criterion": "first_win",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+          "locator": "Memorable moments / 2020",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "monza-2021",
+          "year": 2021,
+          "title": {
+            "en": "McLaren returns to the top",
+            "uk": "McLaren повертається на вершину"
+          },
+          "text": {
+            "en": "Ricciardo led Norris home for a McLaren one-two.",
+            "uk": "Ріккардо випередив Норріса, принісши McLaren дубль."
+          },
+          "criterion": "team_milestone",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+          "locator": "Memorable moments / 2021",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        }
+      ]
+    },
+    {
+      "circuit_id": "suzuka",
+      "biography": {
+        "title": {
+          "en": "A testing ground becomes a title stage",
+          "uk": "Від випробувань — до боротьби за титул"
+        },
+        "text": {
+          "en": "Honda’s test circuit became a Grand Prix venue in 1987. Its crossing, figure-eight route links flowing bends with the chicane that staged Senna and Prost’s 1989 collision.",
+          "uk": "Випробувальна траса Honda прийняла Гран-прі 1987 року. Її маршрут-вісімка поєднує швидкі віражі із шиканою, де 1989 року зіткнулися Сенна та Прост."
+        },
+        "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+        "locator": "Historical venue introduction; Memorable moments"
+      },
+      "moments": [
+        {
+          "id": "suzuka-1988",
+          "year": 1988,
+          "title": {
+            "en": "The recovery that brought a title",
+            "uk": "Повернення, що принесло титул"
+          },
+          "text": {
+            "en": "Senna recovered from a stalled start to win his first championship.",
+            "uk": "Сенна відігрався після невдалого старту й здобув перший титул."
+          },
+          "criterion": "title_decider",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+          "locator": "Memorable moments / 1988",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "suzuka-1989",
+          "year": 1989,
+          "title": {
+            "en": "The chicane collision",
+            "uk": "Зіткнення в шикані"
+          },
+          "text": {
+            "en": "Senna’s disqualification left Prost champion after their collision.",
+            "uk": "Після зіткнення й дискваліфікації Сенни чемпіоном став Прост."
+          },
+          "criterion": "title_decider",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+          "locator": "Memorable moments / 1989",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "suzuka-1990",
+          "year": 1990,
+          "title": {
+            "en": "A title decided at Turn 1",
+            "uk": "Титул у першому повороті"
+          },
+          "text": {
+            "en": "Another Senna–Prost collision ended both races; Senna took the title.",
+            "uk": "Нове зіткнення Сенни й Проста завершило обидві гонки; титул здобув Сенна."
+          },
+          "criterion": "title_decider",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+          "locator": "Memorable moments / 1990",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "suzuka-2000",
+          "year": 2000,
+          "title": {
+            "en": "Ferrari’s long wait ends",
+            "uk": "Кінець довгого очікування Ferrari"
+          },
+          "text": {
+            "en": "Schumacher secured Ferrari’s first drivers’ title in 21 years.",
+            "uk": "Шумахер здобув перший особистий титул Ferrari за 21 рік."
+          },
+          "criterion": "title_decider",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+          "locator": "Memorable moments / 2000",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "suzuka-2005",
+          "year": 2005,
+          "title": {
+            "en": "From seventeenth to victory",
+            "uk": "Із сімнадцятого місця до перемоги"
+          },
+          "text": {
+            "en": "Räikkönen passed Fisichella on the final lap to win.",
+            "uk": "Ряйкконен обігнав Фізікеллу на останньому колі й переміг."
+          },
+          "criterion": "comeback",
+          "source": "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f",
+          "locator": "Memorable moments / 2005",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        }
+      ]
+    },
+    {
+      "circuit_id": "silverstone",
+      "biography": {
+        "title": {
+          "en": "Where the championship began",
+          "uk": "Де почався чемпіонат"
+        },
+        "text": {
+          "en": "The first World Championship race took place here in May 1950. Silverstone’s story connects that Alfa Romeo victory with home heroes, rain and late-race battles.",
+          "uk": "Перша гонка чемпіонату світу відбулася тут у травні 1950 року. Історія Сільверстоуна пов’язує перемогу Alfa Romeo з домашніми героями, дощем і боротьбою наприкінці гонок."
+        },
+        "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+        "locator": "Historical venue introduction; Memorable moments"
+      },
+      "moments": [
+        {
+          "id": "silverstone-1950",
+          "year": 1950,
+          "title": {
+            "en": "The championship’s opening race",
+            "uk": "Перша гонка чемпіонату"
+          },
+          "text": {
+            "en": "Farina led an Alfa Romeo podium sweep.",
+            "uk": "Фаріна очолив потрійний успіх Alfa Romeo."
+          },
+          "criterion": "championship_first",
+          "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+          "locator": "1950 section",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "silverstone-1987",
+          "year": 1987,
+          "title": {
+            "en": "Mansell reels in Piquet",
+            "uk": "Менселл наздоганяє Піке"
+          },
+          "text": {
+            "en": "Mansell caught Piquet and passed him at Stowe.",
+            "uk": "Менселл наздогнав Піке й обігнав його в Stowe."
+          },
+          "criterion": "comeback",
+          "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+          "locator": "1987 section",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "silverstone-1991",
+          "year": 1991,
+          "title": {
+            "en": "A lift for Senna",
+            "uk": "Таксі для Сенни"
+          },
+          "text": {
+            "en": "Winner Mansell carried the stranded Senna back to the pits.",
+            "uk": "Переможець Менселл підвіз Сенну до боксів."
+          },
+          "criterion": "sporting_moment",
+          "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+          "locator": "1991 section",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "silverstone-1998",
+          "year": 1998,
+          "title": {
+            "en": "Victory through the pit lane",
+            "uk": "Перемога через пітлейн"
+          },
+          "text": {
+            "en": "Schumacher won while taking his penalty on the final lap.",
+            "uk": "Шумахер переміг, відбуваючи штраф на останньому колі."
+          },
+          "criterion": "unusual_finish",
+          "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+          "locator": "1998 section",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        },
+        {
+          "id": "silverstone-2008",
+          "year": 2008,
+          "title": {
+            "en": "Hamilton masters the rain",
+            "uk": "Гемілтон приборкує дощ"
+          },
+          "text": {
+            "en": "Hamilton claimed his first Silverstone win in wet conditions.",
+            "uk": "Гемілтон здобув першу перемогу на Сільверстоуні під дощем."
+          },
+          "criterion": "weather",
+          "source": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+          "locator": "2008 section",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-10-27"
+        }
+      ]
+    }
+  ]
+}

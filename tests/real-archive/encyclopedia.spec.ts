@@ -35,21 +35,20 @@ for (const locale of ['uk', 'en'] as const) {
         await race.click();
         await expect(page.getByTestId('race-classification').or(page.getByRole('table').first())).toBeVisible();
       } else if (kind === 'circuits') {
-        await expect(page.getByTestId('circuit-result-legends')).toBeVisible();
+        await expect(page.getByTestId('circuit-win-leader')).toBeVisible();
         const history = (await (await request.get(`${api}/circuits/${entity.id}/history`)).json()).data;
-        await page.locator('details').filter({has:page.getByTestId('circuit-history-table')}).locator(':scope > summary').press('Enter');
         await expect(page.getByTestId('circuit-history-table').locator('tbody tr')).toHaveCount(Math.min(25, history.length));
         if (history.length > 25) {
           const next = page.getByRole('navigation', { name: locale === 'uk' ? 'Сторінки історії траси' : 'Circuit history pages' }).getByRole('link').last();
           const navigation = page.waitForRequest(r => r.isNavigationRequest() && r.url().endsWith(`/${locale}/circuits/${entity.id}?page=2`));
           await next.click();
           expect((await navigation).method()).toBe('GET');
-          await expect(page).toHaveURL(/page=2#circuit-results$/);
+          await expect(page).toHaveURL(/page=2#circuit-history$/);
           await expect(page.getByTestId('circuit-history-table').locator('tbody tr')).toHaveCount(Math.min(25, history.length - 25));
           await expect(page.getByTestId('circuit-history-table').locator('tbody tr').first().getByRole('link').nth(1)).toHaveAttribute('href', `/${locale}/races/${history[25].race_id}`);
           await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `http://127.0.0.1:3351/${locale}/circuits/${entity.id}?page=2`);
         }
-        const winner = page.getByTestId('circuit-result-legends').getByRole('link').first();
+        const winner = page.getByTestId('circuit-win-leader').getByRole('link').first();
         await winner.click();
         await expect(page.getByTestId('driver-showcase')).toBeVisible();
       } else {

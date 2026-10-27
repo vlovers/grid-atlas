@@ -74,3 +74,6 @@ export function CircuitHistoryStories({ circuitId, locale, history: races = [] }
     <p className={styles.explore}><Link href="/sources">{locale === 'uk' ? 'Про наші історичні джерела' : 'About our historical sources'}</Link></p>
   </section>;
 }
+
+/** Existing public summaries; reuse without silently approving new research. */
+export { history as legacyCircuitHistory };

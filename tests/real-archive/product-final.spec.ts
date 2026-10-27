@@ -1,3 +1,4 @@
+import { chooseCircuitOption, expectCircuitValue } from '../browser/circuit-select-option';
 import {test,expect,type APIRequestContext} from '@playwright/test';
 import {glossary} from '../../apps/web/src/content/glossary';
 const api=process.env.V3_API||'http://127.0.0.1:3350';
@@ -66,9 +67,9 @@ for(const locale of ['en','uk']as const){
   await expect(records).not.toHaveAttribute('open');
   await records.locator(':scope > summary').focus();await page.keyboard.press('Enter');
   await expect(records.getByRole('table')).toBeVisible();
-  await experience.getByTestId('circuit-year-select').selectOption('1987');
+  await chooseCircuitOption(experience.getByTestId('circuit-year-select'), '1987');
   await expect(records).toHaveAttribute('open','');
-  await expect(experience.getByTestId('circuit-layout-select')).toHaveValue(event.layout_id);
+  await expectCircuitValue(experience.getByTestId('circuit-layout-select'), event.layout_id);
   const row=records.locator(`tr[data-race-id="${event.race_id}"]`);
   await expect(row.locator('td').nth(1)).toHaveText(`${event.course_length_km} km`);
   await expect(row.locator('td').nth(2)).toHaveText(String(event.turns));

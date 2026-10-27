@@ -27,7 +27,7 @@ for (const locale of ['en', 'uk'] as const) {
         for (const season of seasons) expect(desc).toContain(`${season.year}: ${kind === 'drivers' ? season.starts : season.races}`);
       } else {
         const table = page.getByTestId('circuit-history-table');
-        await page.locator('details').filter({has:table}).locator(':scope > summary').press('Enter');
+        await expect(table).toBeVisible();
         await expect(table.locator('tbody tr')).toHaveCount(25);
         await expect(page.getByTestId('editorial-hero').locator('img')).toHaveAttribute('src', /\/circuit-layouts\/silverstone-[0-9]+\.svg$/);
       }
