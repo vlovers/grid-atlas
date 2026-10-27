@@ -2916,24 +2916,26 @@
           "source_granularity": "official_F1_season_result_year_matched_claim_level_review_required"
         },
         {
-          "year": null,
+          "year": 1991,
           "title": {
-            "en": "The end of the Phoenix experiment",
-            "uk": "The end of the Phoenix experiment"
+            "en": "Phoenix's brief Formula 1 chapter ends",
+            "uk": "Три роки Формули-1 у Фініксі"
           },
           "editorial_direction": {
-            "en": "Research-only manuscript. Independent contemporary and layout sources required for claim-level publication.",
-            "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
+            "en": "Dated race and organizer history crosswalk; publication and layout approval remain blocked.",
+            "uk": "Зіставлено історію організатора й результати гонок; публікація та історична конфігурація ще не схвалені."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1990/races"
+            "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+            "https://www.formula1.com/en/results/1989/races",
+            "https://www.formula1.com/en/results/1991/races"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Phoenix staged only three Formula 1 World Championship United States Grands Prix, from 1989 through 1991. Its brief run included the famous 1990 Ayrton Senna–Jean Alesi duel. The event's disappearance from the calendar is a separate business and organisational question, not something explained by the 1991 finishing order.",
-            "uk": "Фінікс провів лише три чемпіонатні Гран-прі США Формули-1 — з 1989 до 1991 року. За цей час траса подарувала знамениту дуель Айртона Сенни й Жана Алезі в 1990-му. Причини зникнення етапу пов’язані з окремими організаційними й комерційними рішеннями, які не пояснює протокол останньої гонки."
+            "en": "Phoenix hosted the United States Grand Prix in 1989, 1990 and 1991. Alain Prost won the first edition; Ayrton Senna won the next two. The hot downtown streets did not become a long-term home for Formula 1, and there was no Phoenix round on the 1992 calendar. Three races were enough to leave a compact but distinctive chapter in the history of American street circuits.",
+            "uk": "Фінікс приймав Гран-прі США у 1989, 1990 та 1991 роках. Першу гонку виграв Ален Прост, дві наступні — Айртон Сенна. Спекотні міські вулиці так і не стали постійною домівкою Формули-1: у календарі 1992 року етапу вже не було. Лише три гонки, але окрема сторінка історії американських міських трас."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_history_and_official_results_crosschecked_editorial_review_required"
         }
       ],
       "turn_names": [],
@@ -3044,24 +3046,25 @@
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
         {
-          "year": null,
+          "year": 1988,
           "title": {
-            "en": "Why the race moved to Phoenix",
-            "uk": "Why the race moved to Phoenix"
+            "en": "Senna's last Formula 1 win on Detroit's streets",
+            "uk": "Остання перемога Сенни на вулицях Детройта"
           },
           "editorial_direction": {
-            "en": "Research-only manuscript. Independent contemporary and layout sources required for claim-level publication.",
-            "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
+            "en": "Dated race and organizer history crosswalk; publication and layout approval remain blocked.",
+            "uk": "Зіставлено історію організатора й результати гонок; публікація та історична конфігурація ще не схвалені."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1982/races"
+            "https://www.detroitgp.com/event-info/recaps/formula-1",
+            "https://www.formula1.com/en/results/1988/races"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Detroit hosted its last Formula 1 World Championship Grand Prix in 1988, won by Ayrton Senna. From 1989 the United States Grand Prix was held at Phoenix instead. The move is a fact of the calendar; explaining precisely why organisers chose another city requires contemporary contractual and organisational reporting.",
-            "uk": "Детройт востаннє прийняв чемпіонатний Гран-прі Формули-1 у 1988 році, і переміг Айртон Сенна. З 1989-го Гран-прі США проводили у Фініксі. Переїзд підтверджує календар, але точні причини рішення організаторів потребують тогочасних документів і звітів."
+            "en": "Ayrton Senna won the 1988 Detroit Grand Prix from pole, leading every lap for McLaren. It was Formula 1's seventh and final visit to the downtown street circuit: from 1989 the American round moved to Phoenix. The city did not stop holding major races, but the Formula 1 chapter had closed after three straight Detroit victories by Senna.",
+            "uk": "Айртон Сенна виграв Гран-прі Детройта 1988 року з поула й лідирував на кожному колі за McLaren. Це був сьомий і останній етап Формули-1 на міських вулицях Детройта: із 1989 року американський Гран-прі переїхав до Фінікса. Місто не залишило автоспорт, але історія Формули-1 тут завершилася трьома поспіль перемогами Сенни."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_history_and_official_results_crosschecked_editorial_review_required"
         }
       ],
       "turn_names": [],
@@ -3169,24 +3172,25 @@
           "source_granularity": "official_F1_specific_historical_article"
         },
         {
-          "year": null,
+          "year": 1984,
           "title": {
-            "en": "The switch to IndyCar racing",
-            "uk": "The switch to IndyCar racing"
+            "en": "From Formula 1 to CART",
+            "uk": "Від Формули-1 до CART"
           },
           "editorial_direction": {
-            "en": "Research-only manuscript. Independent contemporary and layout sources required for claim-level publication.",
-            "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
+            "en": "Dated race and organizer history crosswalk; publication and layout approval remain blocked.",
+            "uk": "Зіставлено історію організатора й результати гонок; публікація та історична конфігурація ще не схвалені."
           },
           "sources": [
+            "https://gplb.com/track-history",
             "https://www.formula1.com/en/results/1983/races"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Long Beach's Formula 1 World Championship chapter ended with the 1983 United States Grand Prix West, won by John Watson from twenty-second on the grid. Motor racing in the city did not end with Formula 1, and the street event developed a new life with IndyCar. The transition deserves its own dated organisational history rather than being presented as the circuit simply closing.",
-            "uk": "Чемпіонатний розділ Формули-1 у Лонг-Біч завершився Гран-прі США-Захід 1983 року, коли Джон Вотсон переміг із двадцять другого місця. Перегони в місті не припинилися: міський етап продовжив життя з IndyCar. Перехід потребує власної датованої історії, а не твердження, ніби траса просто закрилася."
+            "en": "John Watson won Formula 1's last Long Beach Grand Prix in 1983 after starting 22nd. But the event did not disappear from the waterfront. Rising Formula 1 costs pushed organiser Chris Pook towards a different championship, and in 1984 CART took over. Mario Andretti won that first Indy-car edition, seven years after his Formula 1 victory on the same streets. Long Beach changed series without losing its place on the racing calendar.",
+            "uk": "У 1983 році Джон Вотсон виграв останній Гран-прі Формули-1 у Лонг-Біч, стартувавши з 22-ї позиції. Але гонки з прибережних вулиць не зникли. Через зростання витрат організатор Кріс Пук домовився про перехід до чемпіонату CART. У 1984-му перший етап нової серії виграв Маріо Андретті, який уже перемагав тут у Формулі-1. Лонг-Біч змінив чемпіонат, але залишився гоночним містом."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_history_and_official_results_crosschecked_editorial_review_required"
         }
       ],
       "turn_names": [],
