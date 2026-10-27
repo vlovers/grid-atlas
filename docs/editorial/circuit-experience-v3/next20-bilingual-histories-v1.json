@@ -706,50 +706,54 @@
         {
           "year": 1982,
           "title": {
-            "en": "Ferrari teammates fall out",
-            "uk": "Сварка напарників Ferrari"
+            "en": "Ferrari teammates' bitter finish",
+            "uk": "Гіркий фініш напарників Ferrari"
           },
           "narrative": {
-            "en": "Didier Pironi won at Imola in 1982, with Ferrari teammate Gilles Villeneuve just 0.370 seconds behind. The official result records a Ferrari one-two, but it cannot on its own explain the disputed team signals that later made this finish so bitter. That story deserves a separate account grounded in contemporary reporting.",
-            "uk": "Дідьє Піроні виграв Гран-прі Сан-Марино 1982 року в Імолі. Його напарник по Ferrari Жиль Вільнев фінішував лише за 0,370 секунди. Офіційний протокол підтверджує дубль Ferrari, але не пояснює суперечку навколо командних сигналів. Для цієї історії потрібні окремі свідчення учасників і тогочасні матеріали."
+            "en": "The Renault cars retired at Imola in 1982, leaving Ferrari teammates Gilles Villeneuve and Didier Pironi fighting for victory. The pit board told them to slow down. Villeneuve understood the message as an order to hold position, but Pironi overtook him on the final lap and won. The result was a Ferrari one-two, yet Villeneuve felt betrayed. It would be his last Formula 1 race.",
+            "uk": "На Гран-прі Сан-Марино 1982 року обидва Renault вибули, і за перемогу боролися напарники Ferrari Жиль Вільнев та Дідьє Піроні. Команда показала сигнал знизити темп. Вільнев сприйняв його як наказ зберегти позиції, але Піроні обігнав його на останньому колі й переміг. Ferrari здобула дубль, та Вільнев почувався зрадженим. Це була його остання гонка у Формулі-1."
           },
           "sources": [
+            "https://www.formula1.com/en/latest/article/prost-vs-senna-mansell-vs-piquet-and-more-f1s-fiercest-intra-team-driver.4tOtmPUbldfIvIvY4MmyCQ",
             "https://www.formula1.com/en/results/1982/races/440/san-marino/race-result"
           ],
-          "source_granularity": "official_F1_exact_race_result_only",
-          "review_status": "official_classification_checked_interpretation_pending"
+          "source_granularity": "race_specific_historical_reporting_and_official_result",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2005,
           "title": {
-            "en": "Alonso resists Schumacher",
-            "uk": "Алонсо стримує Шумахера"
+            "en": "Alonso holds off Schumacher by 0.215 seconds",
+            "uk": "Алонсо стримує Шумахера з перевагою 0,215 секунди"
           },
           "narrative": {
-            "en": "Fernando Alonso held off Michael Schumacher to win the 2005 San Marino Grand Prix by just 0.215 seconds. After 62 laps at Imola, two champions were separated by barely the length of a blink. The result records one of the most memorable narrow finishes of Alonso's first championship season.",
-            "uk": "Фернандо Алонсо стримав Міхаеля Шумахера й виграв Гран-прі Сан-Марино 2005 року з перевагою лише 0,215 секунди. Після 62 кіл Імоли двох чемпіонів розділяла мить. Цей фініш став одним із найяскравіших епізодів сезону, в якому Алонсо здобув свій перший титул."
+            "en": "Fernando Alonso inherited the lead at Imola in 2005 after Kimi Räikkönen's retirement. Michael Schumacher, starting only 13th, fought his way through the field and arrived on Alonso's tail for the closing laps. The Renault driver defended at corner after corner and crossed the line just 0.215 seconds ahead. For Alonso, it was a defining victory over the reigning champion on Ferrari's home ground.",
+            "uk": "Фернандо Алонсо очолив гонку в Імолі 2005 року після сходу Кімі Ряйкконена. Міхаель Шумахер стартував лише тринадцятим, але прорвався крізь пелотон і наприкінці наздогнав Renault. Алонсо захищався поворот за поворотом і фінішував на 0,215 секунди раніше. Для нього це стала особлива перемога над чинним чемпіоном на домашній для Ferrari трасі."
           },
           "sources": [
+            "https://www.formula1.com/en/latest/article/from-suzuka-to-san-marino-ranking-alonsos-best-renault-wins-from-10-1-ahead.1ZekTTxQMfSGtagQMCejs8",
+            "https://www.formula1.com/en/latest/article/watch-fernando-alonso-relives-his-epic-2005-imola-battle-with-michael.2eKUG2HHc63dbUULVVzQqb",
             "https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result"
           ],
-          "source_granularity": "official_F1_exact_race_result_only",
-          "review_status": "official_classification_checked_interpretation_pending"
+          "source_granularity": "race_specific_historical_reporting_and_official_result",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2006,
           "title": {
-            "en": "Schumacher turns the tables",
-            "uk": "Шумахер бере реванш"
+            "en": "Schumacher answers Alonso a year later",
+            "uk": "Шумахер бере реванш у Алонсо через рік"
           },
           "narrative": {
-            "en": "Michael Schumacher won the 2006 San Marino Grand Prix at Imola, finishing 2.096 seconds ahead of Fernando Alonso. A year earlier, the order had been reversed by a mere 0.215 seconds. The results capture a striking change of fortune between the same two rivals at the same circuit.",
-            "uk": "Міхаель Шумахер виграв Гран-прі Сан-Марино 2006 року в Імолі, випередивши Фернандо Алонсо на 2,096 секунди. Роком раніше порядок був протилежним, а різниця становила лише 0,215 секунди. Протоколи показують дивовижну зміну ролей тих самих суперників на тій самій трасі."
+            "en": "A year after losing an Imola duel by 0.215 seconds, Michael Schumacher started the 2006 San Marino Grand Prix from pole. Fernando Alonso chased him hard, but overtaking on the narrow circuit was difficult. This time Schumacher kept the lead and won by 2.096 seconds. The roles had reversed: the man who attacked in 2005 was now the one defending against the champion who had beaten him.",
+            "uk": "Через рік після поразки від Алонсо в Імолі з відставанням 0,215 секунди Міхаель Шумахер стартував із поулу на Гран-прі Сан-Марино 2006 року. Фернандо Алонсо наполегливо переслідував Ferrari, але обганяти на вузькій трасі було важко. Цього разу Шумахер втримав лідерство й переміг із перевагою 2,096 секунди. Ролі змінилися: торішній переслідувач тепер сам стримував суперника."
           },
           "sources": [
+            "https://www.motorsport.com/f1/news/20-years-ago-michael-schumacher-held-off-fernando-alonso-in-imola-f1-duel/10814238/",
             "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result"
           ],
-          "source_granularity": "official_F1_exact_race_result_only",
-          "review_status": "official_classification_checked_interpretation_pending"
+          "source_granularity": "race_specific_historical_reporting_and_official_result",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1983,
