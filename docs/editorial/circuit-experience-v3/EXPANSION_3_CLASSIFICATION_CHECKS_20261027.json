@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-27",
+  "scope": "First targeted claim-level classification checks for 15 story drafts; narrative interpretation and media require separate review.",
+  "publication": "blocked",
+  "circuits": [
+    {
+      "circuit_id": "reims",
+      "year": 1954,
+      "source_url": "https://www.formula1.com/en/results/1954/races/129/france/race-result",
+      "source_type": "official_race_result",
+      "verified_source_heading": "1954 race results",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "claims": {
+            "driver": "Fangio",
+            "team": "Mercedes-Benz",
+            "position": 1,
+            "laps": 61,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "claims": {
+            "driver": "Kling",
+            "team": "Mercedes-Benz",
+            "position": 2,
+            "laps": 61,
+            "finish_gap_seconds": 0.1
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "claims": {
+            "driver": "Fangio",
+            "team": "Mercedes-Benz",
+            "position": 1,
+            "laps": 61,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "claims": {
+            "driver": "Fangio",
+            "team": "Mercedes-Benz",
+            "position": 1,
+            "laps": 61,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "claims": {
+            "driver": "Fangio",
+            "team": "Mercedes-Benz",
+            "position": 1,
+            "laps": 61,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        }
+      ]
+    },
+    {
+      "circuit_id": "rouen",
+      "year": 1962,
+      "source_url": "https://www.formula1.com/en/results/1962/races/199/france/race-result",
+      "source_type": "official_race_result",
+      "verified_source_heading": "1962 race results",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "claims": {
+            "driver": "Gurney",
+            "team": "Porsche",
+            "position": 1,
+            "laps": 54,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "claims": {
+            "driver": "Maggs",
+            "team": "Cooper Climax",
+            "position": 2,
+            "laps": 53,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "claims": {
+            "driver": "Ginther",
+            "team": "BRM",
+            "position": 3,
+            "laps": 52,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "claims": {
+            "driver": "Gurney",
+            "team": "Porsche",
+            "position": 1,
+            "laps": 54,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "claims": {
+            "driver": "Clark",
+            "team": "Lotus Climax",
+            "position": null,
+            "laps": 33,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        }
+      ]
+    },
+    {
+      "circuit_id": "sebring",
+      "year": 1959,
+      "source_url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+      "source_type": "official_race_result",
+      "verified_source_heading": "1959 race results",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "claims": {
+            "driver": "McLaren",
+            "team": "Cooper Climax",
+            "position": 1,
+            "laps": 42,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "claims": {
+            "driver": "Trintignant",
+            "team": "Cooper Climax",
+            "position": 2,
+            "laps": 42,
+            "finish_gap_seconds": 0.6
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "claims": {
+            "driver": "Brooks",
+            "team": "Ferrari",
+            "position": 3,
+            "laps": 42,
+            "finish_gap_seconds": 180.9
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "claims": {
+            "driver": "Brabham",
+            "team": "Cooper Climax",
+            "position": 4,
+            "laps": 42,
+            "finish_gap_seconds": 297.3
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "claims": {
+            "driver": "Moss",
+            "team": "Cooper Climax",
+            "position": null,
+            "laps": 5,
+            "finish_gap_seconds": null
+          },
+          "classification_evidence": "checked_against_official_f1",
+          "narrative_evidence": "not_independently_approved",
+          "publication": "blocked"
+        }
+      ]
+    }
+  ]
+}
