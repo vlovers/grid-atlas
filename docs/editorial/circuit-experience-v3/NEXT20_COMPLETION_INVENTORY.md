@@ -121,3 +121,22 @@ A new regression check enforces the per-circuit year anchors and exact-event res
 **CI diagnosis:** Foundation CI for commit `d2b8a1a` failed because the old test allowed external research publishers only for Istanbul Park and rejected the Imola 2006 Motorsport citation. This was a test-policy mismatch, not proof of invalid history. The allowlist was corrected and narrowed to event-specific exceptions. The new commits require their own CI results; previous green checks do not carry over.
 
 **Not completed:** independent claim-by-claim review of the 105 narratives; canonical F1DB race/configuration IDs; historical turn-number approval; per-image rights; real-archive browser acceptance. Do not publish these drafts yet.
+
+## Pinned F1DB circuit and layout crosswalk — 27 October 2026
+
+The [research-only layout catalog](next20-f1db-layout-catalog-v1.json) now maps **all 20 editorial circuit slugs** to **20 distinct official circuit IDs** from F1DB tag `v2026.17.0`. It records **68 historical layout IDs** and confirms that **all 68 corresponding SVG files exist** among the 160 checked-in circuit-layout assets. SVG file existence is not proof of copyright clearance or correct named-turn placement.
+
+The six editorial aliases that are **not** F1DB circuit IDs are:
+
+| Editorial slug | Canonical F1DB circuit ID |
+|---|---|
+| gilles-villeneuve | montreal |
+| red-bull-ring | spielberg |
+| barcelona-catalunya | catalunya |
+| albert-park | melbourne |
+| cota | austin |
+| istanbul-park | istanbul |
+
+For the **105** researched events, **80** have exactly one **provisional** layout candidate derived from an explicit year annotation in the upstream circuit YAML. The other **25** require a race-level lookup because the upstream circuit layout has no usable year comment. **None of the 105 event-layout associations has yet been validated against its exact pinned `race.yml` record**, and **no corner numbering is approved**. In particular, the Bahrain GP and the separate Sakhir GP used different configurations in 2020, so assigning a layout from circuit/year alone would be unsafe.
+
+The next validation step is to match every event to its official F1DB race record (`circuitId` + `circuitLayoutId`), and then independently verify any named turns against a dated circuit diagram. The crosswalk is research-only and does not change public routes, imported records, or image licensing status.
