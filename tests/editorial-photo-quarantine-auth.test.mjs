@@ -49,7 +49,7 @@ test('push trigger includes every public image the quarantine step removes', () 
     assert.ok(pushConfig.includes("- '" + file + "'"), 'push paths must include ' + file);
     assert.ok(quarantineStep.includes(file), 'quarantine must remove ' + file);
   }
-  assert.match(stageJob, /persist-credentials:\\s*false/);
+  assert.match(stageJob, /persist-credentials:\s*false/);
 });
 
 test('quarantine push credential helper uses a step-scoped token without storing it', () => {
