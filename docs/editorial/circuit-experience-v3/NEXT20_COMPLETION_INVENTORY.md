@@ -225,3 +225,16 @@ Read the corresponding official F1 articles for **11 further existing stories**,
 | Istanbul 2020 | Hamilton seventh title and 31.633-second winning margin | Race result is not evidence of tyre-strategy rationale |
 
 **Coverage accounting:** 105/105 have first-pass source leads; **22/105** now have this explicit event-specific evidence ledger (including 11 bilingual rewrites); **83/105** do not. **0/105** have independent editorial approval and **0/20** circuits are publication-ready. Media rights, historical corner/layout bindings and browser QA remain open.
+
+
+## 09:57 additional 20-story bilingual narrative and source pass (27 October 2026)
+
+**This section supersedes the earlier 22/105 snapshot above; it does not overwrite its historical record.** Rewrote **20 more UK/EN event stories** in one batch, spanning nine circuits: Hockenheim (4), Hungaroring (6), Singapore (2), Shanghai (1), Austin (1), Sepang (1), Spielberg (1), Bahrain (2) and Zandvoort (2). The exact claims checked and limits are in [NEXT20_EVENT_EVIDENCE_PASS_20261027.json](NEXT20_EVENT_EVIDENCE_PASS_20261027.json).
+
+- **Hungaroring 1986:** the generic 2026 top-ten article did **not** discuss Piquet's 1986 pass. Replaced its evidential role with [F1's dedicated 1986 Piquet/Senna account](https://www.formula1.com/en/latest/article/do-you-remember-piquets-amazing-overtake-on-senna-in-hungary.4q2b1aT7kvH7WOBm3R1xC3). It describes the outside pass at Turn 1 on lap 57; this still does not establish a map coordinate for a historical turn overlay.
+- **Singapore 2019:** replaced a speculative rivalry article as the main source with [the actual 2019 F1 race report](https://www.formula1.com/en/latest/article/race-report-highlight-singapore-grand-prix-2019.6dwF1Ea7RzSbwtt8jwKzyZ), confirming Vettel's early stop, Leclerc's radio reaction, three Safety Cars and Ferrari's one-two.
+- **Hockenheim 2002:** corrected the approximate new circuit length from **4.6 km** to **4.5 km**, matching [the F1 circuit redevelopment retrospective](https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi). Layout identity does not validate exact geometry.
+- **Hungaroring 2006:** explained Button's 14th grid position, Alonso's wheel-nut retirement and the 113th-start maiden win from [F1's Hungarian GP retrospective](https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch).
+- **Spielberg 2019:** the [F1 race report](https://www.formula1.com/en/latest/article/austrian-grand-prix-2019-race-report-and-highlights.66QcACWZJJ2URf4fe46epG) confirms the Leclerc pass on lap 69 of 71 and the stewards' no-further-action decision. It does not substitute for a full FIA decision document.
+
+**Current accounting:** 105/105 UK/EN stories have source leads; **42/105** have explicit event-specific corroboration entries (31 rewritten across the two evidence passes); **63/105** remain outside this deeper pass. The source-check flags do not mean independent fact-checking or approval. **0/20** circuits are publication-ready; media licenses, historical feature-to-layout bindings, independent editorial review and browser QA remain blocked. PR #317's separate 25 circuits are untouched and not counted as complete.
