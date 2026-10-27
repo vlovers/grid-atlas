@@ -4,8 +4,8 @@
   "publication": "blocked",
   "purpose": "Do not invent a single year for a circuit characteristic or historical period; request documented event date or layout era.",
   "summary": {
-    "total": 20,
-    "period_or_transition": 7,
+    "total": 14,
+    "period_or_transition": 1,
     "configuration_topics": 13
   },
   "records": [
@@ -30,16 +30,6 @@
       "publication": "blocked"
     },
     {
-      "circuit_id": "watkins-glen",
-      "story_index": 3,
-      "title_en": "Safety changes in the 1970s",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
       "circuit_id": "kyalami",
       "story_index": 3,
       "title_en": "Apartheid-era sporting boycotts",
@@ -55,16 +45,6 @@
       "title_en": "The Mistral Straight and its chicane",
       "topic_type": "circuit_characteristic_spanning_configurations",
       "required_action": "attach_source_to_exact_historical_layout_before_publication",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "paul-ricard",
-      "story_index": 3,
-      "title_en": "The circuit's test-track years",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
       "year": null,
       "independent_approval": false,
       "publication": "blocked"
@@ -120,36 +100,6 @@
       "publication": "blocked"
     },
     {
-      "circuit_id": "donington-park",
-      "story_index": 4,
-      "title_en": "Why the venue did not become a permanent F1 home",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "valencia-street",
-      "story_index": 4,
-      "title_en": "Why the race ended after 2012",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "korea-international",
-      "story_index": 1,
-      "title_en": "Building the circuit at Yeongam",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
       "circuit_id": "korea-international",
       "story_index": 3,
       "title_en": "The blend of long straights and tight corners",
@@ -165,16 +115,6 @@
       "title_en": "The long back straight and elevation",
       "topic_type": "circuit_characteristic_spanning_configurations",
       "required_action": "attach_source_to_exact_historical_layout_before_publication",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "buddh",
-      "story_index": 4,
-      "title_en": "Why the race stopped after 2013",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
       "year": null,
       "independent_approval": false,
       "publication": "blocked"
