@@ -46,3 +46,19 @@ test('all 25 event anchors carry exact-year Formula 1 sources but remain blocked
  assert.match(hatch.narrative.en,/disqualified/);
  assert.match(hatch.narrative.en,/Niki Lauda/);
 });
+
+test('additional research drafts are explicitly gated and coverage matches the audit',()=>{
+ const audit=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT25_PUBLICATION_AUDIT.json','utf8'));
+ const extra=data.circuits.flatMap(c=>c.story_leads.slice(1));
+ assert.equal(extra.length,100);
+ assert.equal(extra.filter(s=>s.status==='research_question_not_historical_article').length,audit.bilingual_research_questions);
+ assert.equal(extra.filter(s=>s.status==='source_checked_research_draft').length,audit.bilingual_additional_sourced_drafts);
+ const pending=extra.filter(s=>s.status==='classification_supported_research_draft');
+ assert.equal(pending.length,audit.bilingual_additional_classification_supported_drafts);
+ for(const story of pending){
+  assert.ok(story.year>=1950);
+  assert.ok(story.narrative.en.length>=150&&story.narrative.uk.length>=150);
+  assert.ok(story.sources.length>0);
+  assert.match(story.source_granularity,/review|check|candidate/);
+ }
+});
