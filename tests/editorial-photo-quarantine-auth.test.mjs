@@ -4,8 +4,12 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const workflow = readFileSync('.github/workflows/editorial-photo-intake.yml', 'utf8');
+const quarantineJobMarker = '\n  quarantine:\n';
+const quarantineJobIndex = workflow.indexOf(quarantineJobMarker);
 const quarantineMarker = '      - name: Remove accidentally published unreviewed media';
 const quarantineIndex = workflow.indexOf(quarantineMarker);
+const stageJob = workflow.slice(workflow.indexOf('\n  stage:\n'), quarantineJobIndex);
+const quarantineJob = workflow.slice(quarantineJobIndex);
 const beforeQuarantine = workflow.slice(0, quarantineIndex);
 const quarantineStep = workflow.slice(quarantineIndex);
 
@@ -17,7 +21,15 @@ test('photo intake keeps immutable actions and does not persist checkout credent
   assert.doesNotMatch(workflow, /uses:\s+actions\/[\w-]+@v\d+/);
   assert.match(workflow, /persist-credentials:\s+false/);
   assert.doesNotMatch(workflow, /persist-credentials:\s+true/);
-  assert.match(workflow, /permissions:\s*\n\s+contents: write/);
+  assert.ok(quarantineJobIndex > 0, 'separate quarantine job must exist');
+  assert.match(workflow, /^permissions:\s*\n\s+contents: read/m);
+  assert.doesNotMatch(stageJob, /contents:\s*write/);
+  assert.match(stageJob, /if: github\.event_name != 'push'/);
+  assert.match(quarantineJob, /permissions:\s*\n\s+contents: write/);
+  assert.match(quarantineJob, /if: github\.event_name == 'push' && github\.ref_name == 'editorial\/people-who-changed-f1-20261025'/);
+  assert.match(quarantineJob, /persist-credentials:\s+false/);
+  assert.doesNotMatch(quarantineJob, /run: node scripts\//);
+  assert.doesNotMatch(stageJob, /GH_TOKEN:/);
   assert.match(quarantineStep, /if: github\.event_name == 'push' && github\.ref_name == 'editorial\/people-who-changed-f1-20261025'/);
   assert.match(quarantineStep, /GH_TOKEN:\s*\$\{\{ github\.token \}\}/);
   assert.doesNotMatch(beforeQuarantine, /GH_TOKEN:/);
