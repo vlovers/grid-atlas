@@ -62,6 +62,11 @@ test('repository-wide action pin audit fails closed on mutable fixture', () => {
 });
 
 
+test('rejects anchored YAML uses mappings with whitespace before colon', () => {
+  const yaml = 'steps:\n  - uses : &mutable actions/upload-artifact@v4\n';
+  assert.match(auditWorkflowText(yaml)[0], /ambiguous action reference/);
+});
+
 test('rejects whitespace before uses key colon', () => {
   for (const key of ['uses', '"uses"', "'uses'"]) {
     const yaml = 'steps:\n  - ' + key + ' : actions/upload-artifact@v4\n';
