@@ -10,7 +10,9 @@
     "results_only": 0,
     "independent_approved": 0,
     "layout_review_required": 105,
-    "duplicate_source_reuse": 4
+    "duplicate_source_reuse": 4,
+    "second_pass_event_specific_checked": 20,
+    "second_pass_rewritten": 20
   },
   "records": [
     {
@@ -727,7 +729,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd"
     },
     {
       "circuit_id": "hockenheimring",
@@ -745,7 +750,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/in-numbers-the-10-longest-waits-for-a-debut-win-in-f1-history.4D2uaptKEMkRUz704kPuRN"
     },
     {
       "circuit_id": "hockenheimring",
@@ -763,7 +771,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi"
     },
     {
       "circuit_id": "hockenheimring",
@@ -781,7 +792,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/miracle-german-gp-win-a-dream-for-hamilton.6TkJ2DMU5GiuyU8CU8AIAe"
     },
     {
       "circuit_id": "zandvoort",
@@ -799,7 +813,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/verstappen-sends-home-fans-wild-with-victory-over-hamilton-in-the-dutch.5x4cEJF9B4DaIz2H6dVQrd"
     },
     {
       "circuit_id": "zandvoort",
@@ -871,7 +888,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/verstappen-overcomes-wet-weather-chaos-to-make-it-a-hat-trick-of-dutch-gp.4VJ0ULOqjodSSN1zC6kWui"
     },
     {
       "circuit_id": "hungaroring",
@@ -889,7 +909,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/tremayne-a-big-weight-off-my-shoulders-buttons-brilliant-budapest.6YuTNqcS4uUjChYbeepp0c"
     },
     {
       "circuit_id": "hungaroring",
@@ -897,9 +920,10 @@
       "event_year": 1986,
       "event_title_en": "Piquet passes Senna around the outside",
       "source_urls": [
+        "https://www.formula1.com/en/latest/article/do-you-remember-piquets-amazing-overtake-on-senna-in-hungary.4q2b1aT7kvH7WOBm3R1xC3",
         "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
       ],
-      "source_granularity": "official_f1_event_summary_read",
+      "source_granularity": "official_F1_event_specific_historical_article",
       "editorial_status": "source_checked_research_draft",
       "claim_evidence_review": "required",
       "independent_editorial_approval": false,
@@ -907,7 +931,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/do-you-remember-piquets-amazing-overtake-on-senna-in-hungary.4q2b1aT7kvH7WOBm3R1xC3"
     },
     {
       "circuit_id": "hungaroring",
@@ -925,7 +952,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
     },
     {
       "circuit_id": "hungaroring",
@@ -943,7 +973,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
     },
     {
       "circuit_id": "hungaroring",
@@ -961,7 +994,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
     },
     {
       "circuit_id": "hungaroring",
@@ -979,7 +1015,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
     },
     {
       "circuit_id": "hungaroring",
@@ -1090,7 +1129,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/austrian-grand-prix-2019-race-report-and-highlights.66QcACWZJJ2URf4fe46epG"
     },
     {
       "circuit_id": "red-bull-ring",
@@ -1346,7 +1388,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX"
     },
     {
       "circuit_id": "marina-bay",
@@ -1354,9 +1399,10 @@
       "event_year": 2019,
       "event_title_en": "Vettel's last Ferrari victory",
       "source_urls": [
+        "https://www.formula1.com/en/latest/article/race-report-highlight-singapore-grand-prix-2019.6dwF1Ea7RzSbwtt8jwKzyZ",
         "https://www.formula1.com/en/latest/article/wolff-vettel-leclerc-relationship-has-potential-for-rivalry-and-escalation.2PMQ3oXV7NdnJTBP4AMeGY"
       ],
-      "source_granularity": "official_F1_article_contains_specific_race",
+      "source_granularity": "official_F1_event_specific_historical_article",
       "editorial_status": "source_checked_research_draft",
       "claim_evidence_review": "required",
       "independent_editorial_approval": false,
@@ -1364,7 +1410,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-report-highlight-singapore-grand-prix-2019.6dwF1Ea7RzSbwtt8jwKzyZ"
     },
     {
       "circuit_id": "marina-bay",
@@ -1420,7 +1469,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-hamilton-defeats-rosberg-in-epic-desert-duel.32xEaUFG5VHyjfhEpzV5YB"
     },
     {
       "circuit_id": "bahrain",
@@ -1458,7 +1510,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/report-bahrain-grand-prix-2019-hamilton-leclerc.XaZcYj1U3innMvc5zJZqK"
     },
     {
       "circuit_id": "bahrain",
@@ -1569,7 +1624,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-ricciardo-wins-wild-race-in-china-for-red-bull.4K2iUY8jyMGiOsyOcqEQwO"
     },
     {
       "circuit_id": "yas-marina",
@@ -1697,7 +1755,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/hamilton-seals-2015-title-with-thrilling-austin-win.2O1pPKYDPHMSXKGITqzLIb"
     },
     {
       "circuit_id": "cota",
@@ -1843,7 +1904,10 @@
       "layout_evidence_review": "required",
       "needs_event_specific_source": false,
       "has_results_only_source": false,
-      "publication": "blocked"
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-verstappen-victorious-as-vettel-storms-to-fourth.1MPgC9AY9m664Kwm2SeioY"
     },
     {
       "circuit_id": "istanbul-park",
