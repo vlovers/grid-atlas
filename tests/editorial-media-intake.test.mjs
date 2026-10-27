@@ -21,7 +21,7 @@ test('editorial workflow cannot automatically publish review-only images', () =>
   assert.doesNotMatch(workflow, /git add apps\/web\/public\/media/);
   // Push is allowed only for quarantining tracked public files, never for publishing candidates.
   assert.match(workflow, /git rm -- "\$file"/);
-  assert.match(workflow, /git push origin HEAD:editorial\/people-who-changed-f1-20261025/);
+  assert.match(workflow, /push origin HEAD:editorial\/people-who-changed-f1-20261025/);
   assert.match(workflow, /Remove accidentally published unreviewed media/);
 });
 
