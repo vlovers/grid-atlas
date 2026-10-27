@@ -13,7 +13,12 @@ test('original photograph CI runs on exact evidence changes while staying isolat
   assert.doesNotMatch(workflow, /^\s+pull_request:/m);
   assert.match(workflow, /contents: read/);
   assert.match(workflow, /node scripts\/preview-commons-originals\.mjs/);
-  assert.match(workflow, /actions\/upload-artifact@v4/);
+  // Keep the regression test aligned with immutable Action references.
+  assert.match(workflow, /actions\/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5\s+# v4\.3\.1/);
+  assert.match(workflow, /actions\/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020\s+# v4\.4\.0/);
+  assert.match(workflow, /actions\/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02\s+# v4\.6\.2/);
+  assert.doesNotMatch(workflow, /uses:\s+actions\/[\w-]+@v\d+/);
+  assert.match(workflow, /persist-credentials:\s+false/);
   assert.match(workflow, /retention-days: 7/);
   assert.match(workflow, /grid-atlas-research-photo-contact-sheet/);
   assert.match(workflow, /steps\.originals\.outcome != 'success'/);
