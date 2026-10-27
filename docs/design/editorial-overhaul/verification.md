@@ -28,6 +28,7 @@ All commands used Node 24.21.0 and pnpm 10.18.3 in `/private/tmp/grid-atlas-ux1`
 | Full `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm exec playwright test` | 516 passed; four Time Machine checks had an ambiguous text locator after copy changes. Corrected it to the exact definition term; no product check disabled. |
 | `... pnpm exec playwright test tests/browser/time-machine.spec.ts tests/browser/editorial-overhaul.spec.ts` | PASS, 28 tests; includes every remaining failed check, grouped career/archive years, native form submission, Escape/focus, enlarged UK/EN headings. |
 | Final public-copy browser recheck | PASS,72 tests covering profile status disclosures, constructor sources, no-JS evidence, Explorer outages and navigation. |
+| Genuine-archive profile/story recheck | PASS,16 tests; Senna/Hamilton, preserved publication boundary, keyboard season submit, race/Atlas/back navigation. |
 | Genuine-archive capture | PASS, 48 changed-route pages; UK/EN × 1440/768/390, HTTP 200, zero page errors/overflow. [Machine report](after-global.json). |
 | `git diff --check` | PASS |
 
@@ -46,3 +47,5 @@ Remaining limits: archival media rights remain subject to existing review; nativ
 The independent audit covered the public profile, Time Machine, Atlas and Explorer messages as well as the shared dictionaries. Removed prominent “identity”, “loaded list”, “earlier records” and reviewed-claims labels; actions now refer to names, seasons, results and team history. Repeated contract/legal-continuity caveats live in native source disclosures. Driver biography absence is a compact truthful status, not a large process placeholder. Distinct race counts, result-row metrics, provisional standings, missing data and graph/window truncation remain separate. Circuit catalogue counts explicitly describe calendar events, which may include an incomplete season’s future rounds.
 
 All 45 API integration checks, including the opt-in publisher, passed in a separate fresh fixture database (`grid_atlas_ux_editorial_test`); synthetic publication data never entered the imported archive. Updated candidate CI and final combined evidence are recorded in the PR.
+
+The expanded copy pass completed 510 of 520 synthetic checks; ten remaining failures used retired wording. Updated their accessible locators and verified all in the72-test recheck above. Real-archive checks use the new career navigation label and an explicit submit-button selector after Select enhancement. Candidate CI reruns the whole suite.

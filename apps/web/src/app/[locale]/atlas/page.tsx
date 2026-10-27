@@ -323,7 +323,7 @@ export default async function AtlasPage({ params, searchParams }: Props) {
             02 / {locale === "uk" ? "ІСТОРІЯ КОМАНД" : "TEAM HISTORY"}
           </span>
           <h2>{t.lineage} ↗</h2>
-          
+
         </a>
       </div>
       <details className={styles.help}><summary>{words.sources}</summary><p>{t.limitations} {t.lineageNote} {t.emptyNote}</p></details>
