@@ -1846,17 +1846,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2020,
           "title": {
-            "en": "One-off races during the pandemic calendar",
-            "uk": "One-off races during the pandemic calendar"
+            "en": "An unexpected stop on the calendar",
+            "uk": "Несподіваний етап у календарі"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of one-off races during the pandemic calendar with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «One-off races during the pandemic calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Validate narrative context with contemporary race reports before publication.",
+            "uk": "Перед публікацією перевірити контекст за тогочасними звітами."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2020/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Mugello hosted Formula 1's Tuscan Grand Prix in the disrupted 2020 season. Lewis Hamilton won a race interrupted by red flags. The appearance was unusual: a venue long associated with other racing activity became a Formula 1 World Championship stop and hosted Ferrari's thousandth Grand Prix.",
+            "uk": "Муджелло прийняла Гран-прі Тоскани Формули-1 у незвичному сезоні 2020 року. Льюїс Гамільтон виграв гонку, яку переривали червоні прапори. Автодром, відомий іншими перегонами, несподівано став чемпіонатним етапом і прийняв тисячний Гран-прі Ferrari."
+          },
+          "source_granularity": "official_result_source_candidate_not_full_fact_check"
         }
       ],
       "turn_names": [],
@@ -2142,17 +2149,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2010,
           "title": {
-            "en": "The rain-interrupted first race",
-            "uk": "The rain-interrupted first race"
+            "en": "A wet opening for Korea's new circuit",
+            "uk": "Дощовий дебют нової корейської траси"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the rain-interrupted first race with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The rain-interrupted first race» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Validate narrative context with contemporary race reports before publication.",
+            "uk": "Перед публікацією перевірити контекст за тогочасними звітами."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2010/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The inaugural Korean Grand Prix at Yeongam in 2010 unfolded in difficult wet conditions, with Fernando Alonso winning for Ferrari. What was intended to introduce a new venue also became a significant championship result. The debut needs to be understood through both the finishing order and the weather that shaped it.",
+            "uk": "Дебютний Гран-прі Кореї в Йонамі у 2010 році відбувся за складних дощових умов, а Фернандо Алонсо переміг за Ferrari. Знайомство з новою трасою водночас стало важливою подією чемпіонату. Для розуміння гонки потрібні і спортивний результат, і погодний контекст."
+          },
+          "source_granularity": "official_result_source_candidate_not_full_fact_check"
         },
         {
           "year": null,
@@ -2660,17 +2674,24 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 1976,
           "title": {
-            "en": "The 1976 inaugural championship Grand Prix",
-            "uk": "The 1976 inaugural championship Grand Prix"
+            "en": "Long Beach arrives in the World Championship",
+            "uk": "Лонг-Біч дебютує в чемпіонаті світу"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the 1976 inaugural championship grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The 1976 inaugural championship Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Validate narrative context with contemporary race reports before publication.",
+            "uk": "Перед публікацією перевірити контекст за тогочасними звітами."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1983/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Long Beach hosted its first Formula 1 World Championship United States Grand Prix West in 1976. Clay Regazzoni won for Ferrari. The streets beside the Californian waterfront became a new stage for Formula 1, and the city would soon celebrate an American winner when Mario Andretti triumphed in 1977.",
+            "uk": "Лонг-Біч уперше прийняв чемпіонатний Гран-прі США-Захід у 1976 році. Клей Регаццоні переміг за Ferrari. Вулиці каліфорнійського узбережжя стали новою сценою Формули-1, а вже у 1977-му місто святкуватиме перемогу американця Маріо Андретті."
+          },
+          "source_granularity": "official_result_source_candidate_not_full_fact_check"
         },
         {
           "year": 1977,
