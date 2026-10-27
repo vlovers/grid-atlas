@@ -81,7 +81,7 @@ Important corrections: the 1982 Austrian event happened on the **long Österreic
 | istanbul-park | 2020 | [1](https://www.formula1.com/en/latest/article/hamilton-seals-historic-7th-title-with-peerless-wet-weather-victory-in.4wK1atemiXDvWXQxOknL4J) · [2](https://www.formula1.com/en/latest/article/turkish-gp-facts-and-stats-hamilton-breaks-more-records-with-73rd-mercedes.312Wc8MssDeWyZ4D6IG25i) |
 | istanbul-park | 2006 | [1](https://www.formula1.com/en/latest/article/explained-why-turkey-is-back-on-the-calendar-from-2027.1BJjW3kYEnR97HxlV7AFuy) · [2](https://www.formula1.com/en/results/2006/races/803/turkey/race-result) |
 
-All historical layouts, event-to-F1DB IDs and turn numbers remain pending pinned archive reconciliation. No photographs or third-party media were copied or approved.
+At the time of the initial editorial pass, event-to-F1DB race layouts and turn numbers were pending. The race-layout mapping is now complete; named turns and media approval remain pending. No photographs or third-party media were copied or approved.
 
 ### Final three Imola source checks
 
@@ -97,7 +97,7 @@ These narratives distinguish the 1982 team-signals dispute, the 2005 Alonso–Sc
 
 1. Verify **each assertion** in all 105 stories against exact source passages; all have first-pass source checks but none has independent editorial sign-off. A results table only verifies positions and timings.
 2. Obtain independent historical and bilingual editorial review; `source_checked_research_draft` is first-pass research, not editorial sign-off.
-3. Map all twenty circuits and their events to **pinned F1DB v2026.17.0** circuit, race and configuration IDs. Do not infer historical turn numbering from a modern SVG.
+3. **Completed:** all twenty circuits and 105 events now have pinned F1DB race and layout IDs. Keep this gate under regression testing; do not infer historical turn numbering from a modern SVG.
 4. Approve named turns per exact layout and date; unknown names/numbers remain unknown, not invented.
 5. Obtain per-asset image rights clearance and browser presentation checks for both locales; no media are approved here.
 6. Inspect current CI, run the full archive-browser acceptance, and keep PR #320 in Draft until all gates pass.
@@ -120,7 +120,7 @@ A new regression check enforces the per-circuit year anchors and exact-event res
 
 **CI diagnosis:** Foundation CI for commit `d2b8a1a` failed because the old test allowed external research publishers only for Istanbul Park and rejected the Imola 2006 Motorsport citation. This was a test-policy mismatch, not proof of invalid history. The allowlist was corrected and narrowed to event-specific exceptions. The new commits require their own CI results; previous green checks do not carry over.
 
-**Not completed:** independent claim-by-claim review of the 105 narratives; canonical F1DB race/configuration IDs; historical turn-number approval; per-image rights; real-archive browser acceptance. Do not publish these drafts yet.
+**Still not completed:** independent claim-by-claim review of the 105 narratives; historical turn-number approval; per-image rights; real-archive browser acceptance. The F1DB race/configuration IDs have since been reconciled. Do not publish these drafts yet.
 
 ## Pinned F1DB circuit and layout crosswalk — 27 October 2026
 
@@ -137,6 +137,14 @@ The six editorial aliases that are **not** F1DB circuit IDs are:
 | cota | austin |
 | istanbul-park | istanbul |
 
-For the **105** researched events, **80** have exactly one **provisional** layout candidate derived from an explicit year annotation in the upstream circuit YAML. The other **25** require a race-level lookup because the upstream circuit layout has no usable year comment. **None of the 105 event-layout associations has yet been validated against its exact pinned `race.yml` record**, and **no corner numbering is approved**. In particular, the Bahrain GP and the separate Sakhir GP used different configurations in 2020, so assigning a layout from circuit/year alone would be unsafe.
+Initially, **80** events had a provisional layout candidate from a circuit YAML year annotation, while **25** lacked a usable year hint. These were research leads, not verified layouts. **All 105 have now been matched to an exact pinned `race.yml` record**: 103 had a unique race at that circuit/year, and two doubleheaders required event-specific disambiguation. **No corner numbering is approved.** The Bahrain GP and separate Sakhir GP used different layouts in 2020; Grosjean's incident belongs to the Bahrain GP (`bahrain-1`).
 
-The next validation step is to match every event to its official F1DB race record (`circuitId` + `circuitLayoutId`), and then independently verify any named turns against a dated circuit diagram. The crosswalk is research-only and does not change public routes, imported records, or image licensing status.
+The race-level identity validation is complete. The next step is independent claim-by-claim editorial review and dated evidence for any named turns. The crosswalk is research-only and does not change public routes, imported records, or image licensing status.
+
+## Exact F1DB race-level provenance — 27 October 2026
+
+**105/105 historical event dossiers now carry a pinned F1DB `race.yml` record with race ID, date, Grand Prix ID and exact `circuitLayoutId`.** This was checked against tag `v2026.17.0`, not inferred from a modern SVG or a year annotation. All 80 original year-hint candidates agree with the race-level records. The remaining 25 events have now been resolved.
+
+Two 2020 doubleheaders needed event-specific evidence to choose the correct race: **Norris's first podium** belongs to the [Austrian Grand Prix, race 1019](https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml) on `spielberg-3`, not the Styrian Grand Prix; **Grosjean's accident** belongs to the [Bahrain Grand Prix, race 1033](https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/15-bahrain/race.yml) on `bahrain-1`, not the Sakhir Grand Prix on `bahrain-3`. The corresponding Formula 1 race reports are linked in the event's disambiguation metadata. Both other same-year races remain visible as alternatives in the catalog for auditability.
+
+This **only verifies event/race/circuit/layout identity**. It does **not** independently prove incidents, motives, championship consequences, full historical narratives, named turns, rights to SVGs/photos or publication readiness. The catalog retains `publication: blocked...`, and all 20 dossiers remain unpublished. The new `tests/circuit-next20-race-provenance.test.mjs` enforces this boundary.
