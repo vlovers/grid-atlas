@@ -1,0 +1,648 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-27",
+  "f1db_release": "v2026.17.0",
+  "f1db_circuits_directory": "https://github.com/f1db/f1db/tree/v2026.17.0/src/data/circuits",
+  "scope": "Canonical F1DB identity and presence of a bilingual short circuit story/card or Monaco/Spa history block; not publication approval, claim verification, licensed media, or completed five-story long-form coverage.",
+  "summary": {
+    "pinned_f1db_circuits": 78,
+    "distinct_circuit_ids_with_bilingual_short_content": 78,
+    "distinct_circuits_with_five_story_research_dossiers": 45,
+    "without_five_story_research_dossiers": 33,
+    "independently_approved_circuit_editions": 0,
+    "publication_ready_circuits": 0
+  },
+  "limitations": [
+    "A short source-linked card is not a fact-checked article; some sources are result classifications only.",
+    "The 20-circuit batch has 105 first-pass event drafts, and the 25-circuit batch has 125 event drafts; none have independent claim-level editorial approval.",
+    "25 pinned circuit identities do not validate event-specific historical F1DB layouts or turn geometry.",
+    "Media and SVG reproduction rights remain separate publication gates.",
+    "The 33 without five-story dossiers may have short stories or other research, but not this batch's five-story research coverage."
+  ],
+  "circuits": [
+    {
+      "circuit_id": "adelaide",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "aida",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "ain-diab",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "aintree",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "anderstorp",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "austin",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "avus",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "bahrain",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "baku",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "bremgarten",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "buddh",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "bugatti",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "catalunya",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "dallas",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "detroit",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "dijon",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "donington",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "east-london",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "estoril",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "fuji",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "hungaroring",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "imola",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "indianapolis",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "interlagos",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "istanbul",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "jarama",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "jeddah",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "jerez",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "kyalami",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "las-vegas",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "long-beach",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "lusail",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "madring",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "magny-cours",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "marina-bay",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "melbourne",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "mexico-city",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "miami",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "monaco",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "monsanto",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "montjuic",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "montreal",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "monza",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "mosport",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "mugello",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "nivelles",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "nurburgring",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "paul-ricard",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "pedralbes",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "pescara",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "phoenix",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "portimao",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "porto",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "reims",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "riverside",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "rouen",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "sebring",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "sepang",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "shanghai",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "silverstone",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "sirius",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "spielberg",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "suzuka",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "valencia",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "watkins-glen",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "yas-marina",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "yeongam",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next25",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "zandvoort",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": "next20",
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "zeltweg",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    },
+    {
+      "circuit_id": "zolder",
+      "short_bilingual_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "short_entry_only": true,
+      "five_story_research_batch": null,
+      "independent_editorial_approval": false,
+      "publication_ready": false
+    }
+  ]
+}
