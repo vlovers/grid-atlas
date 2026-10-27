@@ -49,5 +49,5 @@ test('quarantine never executes repository scripts with write token', () => {
   assert.doesNotMatch(quarantine, /node scripts\//);
   assert.doesNotMatch(quarantine, /npm (?:run|exec|install|ci)\b/);
   assert.doesNotMatch(quarantine, /pnpm\b|yarn\b|bun\b/);
-  assert.match(quarantine, /git rm {2}-- "\$file"/);
+  assert.match(quarantine, /git rm -- "\$file"/);
 });
