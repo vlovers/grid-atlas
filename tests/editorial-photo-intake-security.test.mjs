@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
@@ -50,4 +51,21 @@ test('quarantine never executes repository scripts with write token', () => {
   assert.doesNotMatch(quarantine, /npm (?:run|exec|install|ci)\b/);
   assert.doesNotMatch(quarantine, /pnpm\b|yarn\b|bun\b/);
   assert.match(quarantine, /git rm -- "\$file"/);
+});
+
+test('quarantine credential helper supplies only the step-scoped placeholder token', () => {
+  const quarantine = workflow.split('      - name: Remove accidentally published unreviewed media')[1];
+  assert.ok(quarantine, 'quarantine step exists');
+  const helper = quarantine.match(/git -c 'credential\\.helper=([^']+)' push origin HEAD:editorial\\/people-who-changed-f1-20261025/);
+  assert.ok(helper, 'quarantine push uses an explicit credential helper');
+  assert.doesNotMatch(helper[1], /fixture-token|ghp_|github_pat_/);
+  const result = spawnSync('git', ['-c', 'credential.helper=' + helper[1], 'credential', 'fill'], {
+    input: 'protocol=https\\nhost=github.com\\n\\n',
+    encoding: 'utf8',
+    env: { ...process.env, GH_TOKEN: 'test-only-placeholder' },
+    timeout: 5000,
+  });
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(result.stdout, /username=x-access-token/);
+  assert.match(result.stdout, /password=test-only-placeholder/);
 });
