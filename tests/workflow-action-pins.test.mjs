@@ -156,3 +156,26 @@ test('rejects escaped YAML keys that decode to uses or checkout credentials', ()
     assert.match(auditWorkflowText(yaml)[0], /escaped YAML mapping key/);
   }
 });
+
+test('rejects duplicate checkout credentials with YAML whitespace before colon', () => {
+  const yaml = `steps:
+  - uses: ${checkout}
+    with:
+      persist-credentials: false
+      persist-credentials : true
+`;
+  assert.match(auditWorkflowText(yaml)[0], /exactly once/);
+});
+
+test('rejects explicit YAML keys that could override checkout security settings', () => {
+  for (const key of ['with', 'persist-credentials', 'uses', '"with"', "'persist-credentials'"]) {
+    const yaml = `steps:
+  - uses: ${checkout}
+    with:
+      persist-credentials: false
+      ? ${key}
+      : true
+`;
+    assert.match(auditWorkflowText(yaml)[0], /unsupported explicit YAML security key/, key);
+  }
+});
