@@ -6,7 +6,9 @@ const workflow = readFileSync('.github/workflows/editorial-photo-intake.yml', 'u
 
 test('photo intake defaults to read-only permissions', () => {
   assert.match(workflow, /^permissions:\s*\n {2}contents: read$/m);
-  assert.match(workflow, /^ {4}permissions:\s*\n {6}contents: \$\{\{ github\.event_name == 'push' && 'write' \|\| 'read' \}\}$/m);
+  assert.match(workflow, /^ {4}permissions:\s*\n {6}contents: write$/m);
+  assert.match(workflow, /^ {2}quarantine:/m);
+  assert.match(workflow, /^ {4}if: github\.event_name == 'push' && github\.ref_name == 'editorial\/people-who-changed-f1-20261025'$/m);
   assert.doesNotMatch(workflow, /^permissions:\s*\n {2}contents: write$/m);
 });
 
@@ -15,8 +17,8 @@ test('quarantine push uses a step-scoped token with checkout credentials disable
   const quarantine = workflow.split('      - name: Remove accidentally published unreviewed media')[1];
   assert.ok(quarantine, 'quarantine step exists');
   assert.match(quarantine, /if: github\.event_name == 'push' && github\.ref_name == 'editorial\/people-who-changed-f1-20261025'/);
-  assert.match(quarantine, /env:\s*\n {10}GH_TOKEN: \$\{\{ secrets\.GITHUB_TOKEN \}\}/);
-  assert.match(quarantine, /gh auth setup-git\s*\n {12}git push origin HEAD:editorial\/people-who-changed-f1-20261025/);
+  assert.match(quarantine, /env:\s*\n {10}GH_TOKEN: \$\{\{ github\.token \}\}/);
+  assert.match(quarantine, /credential\.helper=.*push origin HEAD:editorial\/people-who-changed-f1-20261025/);
   assert.doesNotMatch(workflow.split('      - name: Remove accidentally published unreviewed media')[0], /GH_TOKEN:/);
 });
 
