@@ -1315,7 +1315,8 @@
             "uk": "Дослідницький текст: деталі історичних інцидентів потребують незалежних тогочасних джерел і редакторського схвалення; результати підтверджують лише класифікацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1977/races/376/south-africa/race-result"
+            "https://www.formula1.com/en/results/1977/races/376/south-africa/race-result",
+            "https://www.autosport.com/general/news/the-prince-of-wales-5076722/5076722/"
           ],
           "status": "official_f1_source_checked_human_review_pending",
           "narrative": {
@@ -1326,7 +1327,7 @@
             "en": "Season results index verifies the listed winning driver and race date, but does not independently verify incident accounts, starting positions or championship implications.",
             "uk": "Підсумки сезону підтверджують переможця й дату гонки, але не подробиці інцидентів, стартові позиції чи вплив на чемпіонат."
           },
-          "source_granularity": "official_F1_results_with_independent_claim_review_required"
+          "source_granularity": "official_F1_classification_plus_independent_historical_reporting_claim_review_required"
         },
         {
           "year": 1967,
@@ -1507,14 +1508,15 @@
             "uk": "Дослідницький текст: деталі історичних інцидентів потребують незалежних тогочасних джерел і редакторського схвалення; результати підтверджують лише класифікацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1977/races"
+            "https://www.formula1.com/en/results/1977/races",
+            "https://www.motorsportmagazine.com/archive/article/december-1977/44/japanese-grand-prix/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "The 1977 Japanese Grand Prix at Fuji was won by James Hunt, but the result cannot convey the tragedy of that afternoon. Gilles Villeneuve and Ronnie Peterson collided early in the race, and Villeneuve's Ferrari went into a prohibited spectator area. Two people died. The circumstances of the collision and the deaths call for contemporary reporting and safety investigations, not an explanation reconstructed from the classification.",
             "uk": "Гран-прі Японії 1977 року на Фудзі виграв Джеймс Гант, але результат гонки не передає трагедії того дня. На початку заїзду Жиль Вільньов зіткнувся з Ронні Петерсоном, а Ferrari Вільньова вилетіла в закриту для глядачів зону. Загинули двоє людей. Обставини аварії та загибелі людей потребують перевірки за тогочасними матеріалами й розслідуваннями з безпеки."
           },
-          "source_granularity": "official_F1_results_with_independent_claim_review_required"
+          "source_granularity": "official_F1_classification_plus_independent_historical_reporting_claim_review_required"
         },
         {
           "year": 2007,
