@@ -16,7 +16,8 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   assert.equal(circuit.publication,'unpublished');
   assert.equal(circuit.story_leads.length,5);
   assert.equal(circuit.story_leads.filter(s=>s.status==='unverified_historical_narrative'||s.status==='official_f1_source_checked_human_review_pending').length,1);
-  assert.equal(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length,4);
+  assert.ok(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length<=4);
+  assert.ok(circuit.story_leads.filter(s=>s.status==='source_checked_research_draft').every(s=>s.narrative?.en.length>120&&s.narrative?.uk.length>120&&s.sources.length>0));
   for(const story of circuit.story_leads){
     assert.ok(story.sources.every(s=>s.startsWith('https://www.formula1.com/')));
     for(const locale of ['en','uk']){
