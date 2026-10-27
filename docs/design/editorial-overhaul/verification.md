@@ -24,7 +24,7 @@ All commands used Node 24.21.0 and pnpm 10.18.3 in `/private/tmp/grid-atlas-ux1`
 | `pnpm test` | PASS, 350 tests after upstream refresh |
 | `python3 -m unittest discover -s tests -v` | PASS, 434 tests at audited source baseline |
 | `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build` | PASS, production build |
-| `DATABASE_URL=...:55466/grid_atlas pnpm test:integration` | PASS, 45 pass / 0 skip; opt-in publication check ran in a separate fresh disposable database, never the genuine archive |
+| `DATABASE_URL=.../grid_atlas_ux_editorial_test RUN_EDITORIAL_PUBLICATION_DB_ACCEPTANCE=1 pnpm test:integration` | PASS, 45 pass / 0 skip; opt-in publication check ran in a separate fresh disposable database, never the genuine archive |
 | Full `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm exec playwright test` | 516 passed; four Time Machine checks had an ambiguous text locator after copy changes. Corrected it to the exact definition term; no product check disabled. |
 | `... pnpm exec playwright test tests/browser/time-machine.spec.ts tests/browser/editorial-overhaul.spec.ts` | PASS, 28 tests; includes every remaining failed check, grouped career/archive years, native form submission, Escape/focus, enlarged UK/EN headings. |
 | Final public-copy browser recheck | PASS,72 tests covering profile status disclosures, constructor sources, no-JS evidence, Explorer outages and navigation. |
@@ -49,3 +49,5 @@ The independent audit covered the public profile, Time Machine, Atlas and Explor
 All 45 API integration checks, including the opt-in publisher, passed in a separate fresh fixture database (`grid_atlas_ux_editorial_test`); synthetic publication data never entered the imported archive. Updated candidate CI and final combined evidence are recorded in the PR.
 
 The expanded copy pass completed 510 of 520 synthetic checks; ten remaining failures used retired wording. Updated their accessible locators and verified all in the72-test recheck above. Real-archive checks use the new career navigation label and an explicit submit-button selector after Select enhancement. Candidate CI reruns the whole suite.
+
+Final capture resets horizontal rail positions after lazy image loading, so comparison images show the same initial rail position. Updated homepage/catalogue screenshots also match the combined rendering; no season/circuit detail code changes those components.

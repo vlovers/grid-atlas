@@ -41,7 +41,11 @@ try {
       await page.waitForLoadState('networkidle');
       for (const image of await page.locator('img[loading="lazy"]').all()) await image.scrollIntoViewIfNeeded();
       await page.waitForLoadState('networkidle');
-      await page.evaluate(() => { scrollTo(0, 0); return document.fonts.ready; });
+      await page.evaluate(() => {
+        // Loading a lazy image can move its horizontal rail; capture its initial position.
+        for (const element of document.querySelectorAll('*')) if (element.scrollLeft) element.scrollLeft = 0;
+        scrollTo(0, 0); return document.fonts.ready;
+      });
       await page.screenshot({ path: `${directory}/${phase}-${name}-${locale}-${width}${process.env.VIEWPORT_ONLY ? '-viewport' : ''}.jpg`, type: 'jpeg', quality: 78, fullPage: !process.env.VIEWPORT_ONLY });
       results.push({ name, locale, width, status: response.status(), errors, ...await page.evaluate(() => ({
         overflow: document.documentElement.scrollWidth > innerWidth,
