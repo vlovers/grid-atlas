@@ -8,8 +8,8 @@
   "summary": {
     "total": 125,
     "primary_anchors": 25,
-    "classification_drafts": 89,
-    "article_source_drafts": 11,
+    "classification_drafts": 85,
+    "article_source_drafts": 15,
     "priority_human_review": 43,
     "undated_topics": 29,
     "independently_approved": 0
@@ -73,8 +73,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -124,13 +124,14 @@
       "candidate_slug": "jeddah",
       "story_index": 0,
       "year": 2021,
-      "title_en": "Hamilton wins a contentious inaugural race",
+      "title_en": "Two red flags, one championship on the edge",
       "source_urls": [
+        "https://www.formula1.com/en/latest/article/5tXuSymwVOwoVCU4LYBHNl.5tXuSymwVOwoVCU4LYBHNl",
         "https://www.formula1.com/en/results/2021/races"
       ],
       "source_types": {
         "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "event_specific_article_candidates": 1
       },
       "research_status": "official_f1_source_checked_human_review_pending",
       "review_priority": "priority_human_review",
@@ -158,8 +159,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -180,8 +181,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -190,19 +191,18 @@
       "candidate_slug": "jeddah",
       "story_index": 3,
       "year": 2021,
-      "title_en": "The limits of a race result",
+      "title_en": "A restart that changed the order twice",
       "source_urls": [
-        "https://www.formula1.com/en/results/2021/races"
+        "https://www.formula1.com/en/latest/article/must-see-controversy-as-verstappen-and-hamilton-nearly-collide-at-race.15DI1GP3GKRrskv4hlHdHl"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
-      "research_status": "classification_supported_research_draft",
+      "research_status": "source_checked_research_draft",
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
         "historical_layout_id_not_approved"
       ],
@@ -213,19 +213,18 @@
       "candidate_slug": "jeddah",
       "story_index": 4,
       "year": 2021,
-      "title_en": "A difficult first Saudi Arabian GP",
+      "title_en": "Hamilton and Verstappen collide in the closing laps",
       "source_urls": [
-        "https://www.formula1.com/en/results/2021/races"
+        "https://www.formula1.com/en/latest/article/5tXuSymwVOwoVCU4LYBHNl.5tXuSymwVOwoVCU4LYBHNl"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
-      "research_status": "classification_supported_research_draft",
+      "research_status": "source_checked_research_draft",
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
         "historical_layout_id_not_approved"
       ],
@@ -269,8 +268,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -279,19 +278,18 @@
       "candidate_slug": "lusail",
       "story_index": 2,
       "year": 2023,
-      "title_en": "A race shaped by tyre rules",
+      "title_en": "Eighteen laps per new tyre set",
       "source_urls": [
-        "https://www.formula1.com/en/results/2023/races"
+        "https://www.formula1.com/en/latest/article/explained-what-does-the-maximum-tyre-stint-length-rule-mean-for-the-qatar.4q8iXkNgE3sLnIIASPV1sm"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
-      "research_status": "classification_supported_research_draft",
+      "research_status": "source_checked_research_draft",
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
         "historical_layout_id_not_approved"
       ],
@@ -335,9 +333,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -379,8 +377,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -401,8 +399,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -423,8 +421,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -445,8 +443,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -489,8 +487,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -511,8 +509,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -534,8 +532,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -556,9 +554,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -600,8 +598,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -622,8 +620,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -644,9 +642,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -667,9 +665,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -712,9 +710,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -735,9 +733,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -746,7 +744,7 @@
       "candidate_slug": "indianapolis",
       "story_index": 3,
       "year": 2005,
-      "title_en": "The six-car Grand Prix",
+      "title_en": "Six cars race while fourteen return to the pits",
       "source_urls": [
         "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
       ],
@@ -754,11 +752,10 @@
         "season_classification": 1,
         "event_specific_article_candidates": 0
       },
-      "research_status": "classification_supported_research_draft",
+      "research_status": "source_checked_research_draft",
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
         "historical_layout_id_not_approved"
       ],
@@ -781,9 +778,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -826,9 +823,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -849,8 +846,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -859,7 +856,7 @@
       "candidate_slug": "adelaide",
       "story_index": 3,
       "year": 1994,
-      "title_en": "Schumacher and Hill collide in the title decider",
+      "title_en": "One point, two retirements and Schumacher's first crown",
       "source_urls": [
         "https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF"
       ],
@@ -892,8 +889,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -936,9 +933,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -959,8 +956,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -981,8 +978,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1003,8 +1000,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1046,8 +1043,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1069,9 +1066,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1093,9 +1090,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1116,8 +1113,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1160,8 +1157,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1182,8 +1179,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1205,9 +1202,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1228,8 +1225,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1271,8 +1268,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1293,8 +1290,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1316,9 +1313,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1339,8 +1336,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1382,9 +1379,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1406,9 +1403,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1430,9 +1427,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1453,8 +1450,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1496,8 +1493,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1519,8 +1516,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1542,9 +1539,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1565,8 +1562,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1608,8 +1605,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1631,9 +1628,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1655,8 +1652,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1678,9 +1675,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1744,8 +1741,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1787,8 +1784,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1830,8 +1827,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1853,8 +1850,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1875,9 +1872,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1898,8 +1895,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -1982,8 +1979,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2005,8 +2002,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2048,8 +2045,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2071,8 +2068,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2093,9 +2090,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2117,8 +2114,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2161,8 +2158,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2183,8 +2180,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2206,8 +2203,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2228,8 +2225,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2271,8 +2268,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2294,8 +2291,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2316,8 +2313,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2339,8 +2336,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2383,8 +2380,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2406,8 +2403,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2428,9 +2425,9 @@
       "review_priority": "priority_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2452,9 +2449,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2496,8 +2493,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2519,9 +2516,9 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
         "sensitive_fact_or_safety_claim_needs_primary_evidence",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2543,8 +2540,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2566,8 +2563,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2630,8 +2627,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2652,8 +2649,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2675,8 +2672,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2719,8 +2716,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2741,8 +2738,8 @@
       "review_priority": "standard_human_review",
       "review_flags": [
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
@@ -2784,8 +2781,8 @@
       "review_flags": [
         "event_year_or_historical_period_not_fixed",
         "results_do_not_establish_context_or_causation",
-        "independent_event_specific_sources_needed",
-        "historical_layout_id_not_approved"
+        "historical_layout_id_not_approved",
+        "independent_event_specific_sources_needed"
       ],
       "independent_approval": false,
       "publication": "blocked"
