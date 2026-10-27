@@ -103,31 +103,56 @@
           "name": "Maggotts",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_sequence_component",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+          "feature_scope_note": "One named part of the Maggotts–Becketts–Chapel multi-turn sequence; numbering depends on layout.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Becketts",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_sequence_component",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+          "feature_scope_note": "One named part of the Maggotts–Becketts–Chapel multi-turn sequence; numbering depends on layout.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Chapel",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Copse",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Stowe",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -236,25 +261,45 @@
           "name": "Curva Grande",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Lesmo",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_pair",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
+          "feature_scope_note": "Lesmo 1 and Lesmo 2 are separate turns, not a single numbered corner.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Ascari",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "chicane",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
+          "feature_scope_note": "Variante Ascari is a multi-turn chicane, not a single turn.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Parabolica",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
+          "feature_scope_note": "Historic name; current F1 guides also call this final corner Curva Alboreto. Do not silently rename a 1971 race feature.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -378,31 +423,56 @@
           "name": "Esses",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_sequence",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN",
+          "feature_scope_note": "The Esses are a linked sequence of turns.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Degner",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_pair",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN",
+          "feature_scope_note": "Degner 1 and Degner 2 are distinct turns.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Spoon",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "multi_apex_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "130R",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Casio Triangle",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "chicane",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-japanese-grand-prix.7wkwX3bL2CsGjUvTgHP8JN",
+          "feature_scope_note": "Chicane near the end of the lap, absent from the circuit's original design.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -526,25 +596,45 @@
           "name": "Senna S",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_sequence",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/racing/2019/brazil",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Curva do Sol",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "unresolved",
+          "feature_evidence_status": "name_lead_not_verified",
+          "feature_source_url": null,
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Descida do Lago",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "unresolved",
+          "feature_evidence_status": "name_lead_not_verified",
+          "feature_source_url": null,
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Junção",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "unresolved",
+          "feature_evidence_status": "name_lead_not_verified",
+          "feature_source_url": null,
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -605,11 +695,12 @@
             "uk": "Звідки взялася «Стіна чемпіонів»"
           },
           "narrative": {
-            "en": "Four drivers hit the wall at the last chicane in 1999, among them world champions Damon Hill, Michael Schumacher and Jacques Villeneuve. That is how a notorious barrier earned its name: the Wall of Champions.",
-            "uk": "У 1999 році в останній шикані розбили машини четверо гонщиків, зокрема чемпіони світу Деймон Гілл, Міхаель Шумахер і Жак Вільньов. Саме після цих аварій бар’єр отримав назву «Стіна чемпіонів»."
+            "en": "In 1999, three world champions — Damon Hill, Michael Schumacher and Jacques Villeneuve — crashed at Montreal's final-chicane barrier during the Canadian Grand Prix weekend. Ralf Schumacher and Ricardo Zonta also struck the wall. The barrier soon became known as the Wall of Champions, a name that still makes drivers think twice before attacking the last chicane.",
+            "uk": "У 1999 році три чемпіони світу — Деймон Гілл, Міхаель Шумахер і Жак Вільнев — розбили машини об бар’єр біля останньої шикани Монреаля. Туди ж потрапили Ральф Шумахер і Рікардо Зонта. Відтоді стіну називають «Стіною чемпіонів»: навіть найкращі пілоти знають, як легко тут помилитися."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+            "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg",
+            "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -652,19 +743,34 @@
           "name": "Senna Curve",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "corner_sequence",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Wall of Champions",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "barrier",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
+          "feature_scope_note": "Trackside barrier outside the final chicane; NOT a turn. Do not assign a corner number to the wall.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Hairpin",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -777,31 +883,56 @@
           "name": "Tamburello",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "historical_layout_sensitive",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
+          "feature_scope_note": "High-speed bend before 1994; safety revisions created a chicane after 1994. Historical layout matters.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Villeneuve",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "historical_layout_sensitive",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
+          "feature_scope_note": "Historic bend and later chicane differ; do not project modern geometry onto 1982/1994 events.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Tosa",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Acque Minerali",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Rivazza",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "unresolved",
+          "feature_evidence_status": "name_lead_not_verified",
+          "feature_source_url": null,
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -910,13 +1041,23 @@
           "name": "Karussell",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "historical_layout_sensitive",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+          "feature_scope_note": "Nordschleife feature, not a feature of the modern 1984+ GP course.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Döttinger Höhe",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "straight",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+          "feature_scope_note": "Nordschleife straight/track section; NOT a turn and absent from modern Grand Prix layouts.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -1025,13 +1166,23 @@
           "name": "Sachs Kurve",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/racing/2018/germany",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Motodrom",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "stadium_section",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/racing/2018/germany",
+          "feature_scope_note": "Stadium section containing several turns, NOT a single turn.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -1139,19 +1290,34 @@
           "name": "Tarzanbocht",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/zandvoort-redevelopment-kicks-back-into-gear-as-circuit-prepares-for-f1.42MerRtqpqUUAQANMyqHdc",
+          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Hugenholtzbocht",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/zandvoort-redevelopment-kicks-back-into-gear-as-circuit-prepares-for-f1.42MerRtqpqUUAQANMyqHdc",
+          "feature_scope_note": "Modern banking was introduced for the 2020/2021 return; older layouts cannot inherit the new geometry.",
+          "layout_binding_status": "not_verified"
         },
         {
           "name": "Arie Luyendykbocht",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/zandvoort-redevelopment-kicks-back-into-gear-as-circuit-prepares-for-f1.42MerRtqpqUUAQANMyqHdc",
+          "feature_scope_note": "Modern banking was introduced for the 2020/2021 return; older layouts cannot inherit the new geometry.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
@@ -2342,7 +2508,12 @@
           "name": "Turn 8",
           "turn_number": null,
           "configuration_id": null,
-          "status": "name_candidate_needs_official_number_and_layout"
+          "status": "name_candidate_needs_official_number_and_layout",
+          "feature_kind": "multi_apex_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/turkeys-turn-8-taking-on-one-of-the-most-challenging-corners-in-f1.N4iqF6KjTuWPCfpDBJgEu",
+          "feature_scope_note": "A long, multi-apex left-hander. The name is a numbered modern corner, but the F1DB layout has not been bound to this source.",
+          "layout_binding_status": "not_verified"
         }
       ],
       "research_gaps": [
