@@ -257,7 +257,7 @@ def audit(args):
                     for winner in race['winners']:
                         check(winner['driver_id'] in valid['drivers'] and winner['constructor_id'] in valid['constructors'], path + ': winner links')
             if args.web_url:
-                marker = {'drivers': 'driver-showcase', 'constructors': 'constructor-archive-portrait', 'circuits': 'circuit-result-legends'}[kind]
+                marker = {'drivers': 'driver-showcase', 'constructors': 'constructor-archive-portrait', 'circuits': 'circuit-dossier'}[kind]
                 for locale in ('uk', 'en'):
                     web_path = '/' + locale + path
                     queue, visited = [web_path], set()
