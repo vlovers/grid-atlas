@@ -186,3 +186,22 @@ All **34** entries retain `turn_number: null`, `configuration_id: null` and `lay
 | Istanbul Park | [F1 Turn 8 feature](https://www.formula1.com/en/latest/article/turkeys-turn-8-taking-on-one-of-the-most-challenging-corners-in-f1.N4iqF6KjTuWPCfpDBJgEu) | One long multi-apex corner |
 
 These are citations for **textual research only**. No photos, logos, circuit graphics or diagrams were copied, licensed or published in this pass. Media-rights review remains blocked. The new `tests/circuit-next20-track-features.test.mjs` guards the type distinctions and the unapproved geometry state. This still does **not** constitute independent editorial approval of 105 historical narratives.
+
+
+## 08:55 event-specific narrative and evidence pass (27 October 2026)
+
+**11** historical moments were rewritten in **both UK and EN** and checked against event-specific Formula 1 reporting, retrospective articles, or biographies. This pass is distinct from the earlier 105/105 **first-pass source-lead** status: it does **not** mean 105 claim-level checks or any independent publication approval. The exact 11 event/source pairs, supported claims, and residual limits are recorded in [NEXT20_EVENT_EVIDENCE_PASS_20261027.json](NEXT20_EVENT_EVIDENCE_PASS_20261027.json).
+
+- Montréal 1982: replaced an indirect Wall of Champions citation with F1's [Gilles Villeneuve 1978 victory retrospective](https://www.formula1.com/en/latest/article/f1-gilles-villeneuve-remembered-maiden-win-1978-canada.1cF7NPxGB6mOkWWsQeIIIa).
+- Suzuka 2012: linked the [Japanese home-podium statistics](https://www.formula1.com/en/latest/article/f1-japanese-grand-prix-in-numbers.7mwT5rdCC4ZbqhVDeMgSCj), rather than relying only on a generic circuit guide.
+- Shanghai 2012: linked the [Rosberg/Mercedes historical milestone](https://www.formula1.com/en/latest/article/moments-in-time-the-chinese-grand-prix.2UgwDiUvBHDPlbPvDXfS7C) and kept the exact race classification for the winning gap.
+- Monza 2008: anchored Vettel's Toro Rosso breakthrough and **youngest-at-the-time** record in [his F1 biography](https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5).
+- Interlagos 2012: anchored Vettel's 13-point advantage, first-lap spin and recovery in [the championship-finale retrospective](https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF).
+- Hungaroring 2021: clarified that Vettel's P2 was **on the road only**; he was later disqualified. See [F1's race report](https://www.formula1.com/en/latest/article/ocon-beats-vettel-to-claim-shock-maiden-victory-in-action-packed-hungarian.4Ewxz6olluqX7Y4E1U8NOq).
+- Hungaroring 2024: replaced the overview citation with [the detailed McLaren team-order race report](https://www.formula1.com/en/latest/article/piastri-wins-hungarian-grand-prix-as-norris-belatedly-hands-back-lead-in.70F4mNzYrbmvNYaj8KXm18).
+- Interlagos 1991: checked Senna's sixth-gear-only home win against [F1's Senna retrospective](https://www.formula1.com/en/latest/article/top-10-moments-of-ayrton-senna-brilliance.7agG0t99di8rxGAh4Wq2RZ).
+- Zandvoort 1961: explicitly separated the **15 starters** from two non-starting reserves using [F1's all-finishers retrospective](https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG).
+- Yas Marina 2025: confirmed Norris's P3, Verstappen's victory and the two-point title margin in [the race report](https://www.formula1.com/en/latest/article/norris-secures-maiden-f1-title-in-abu-dhabi-with-podium-finish-behind.EMJtmvRA0uzmzUC4MZgmw).
+- Silverstone 1998: clarified the penalty notification dispute and pit-lane finish using [the Ferrari Silverstone retrospective](https://www.formula1.com/en/latest/article/gonzalez-and-ascari-to-sainz-and-leclerc-all-of-ferraris-16-wins-at-silverstone.302fSi10PoDv2DRngSf3tv).
+
+The source links are **research evidence**, not licenses for images, quotations or reproduced article text. **94 other moments** have not received this particular event-specific crosswalk pass; all 105 still require independent claim-level review, historical turn/layout bindings and rights clearance. No publication gate changed.
