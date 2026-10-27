@@ -59,7 +59,9 @@ export function auditWorkflowText(source, filename = 'workflow') {
     if (!local && !pinnedAction && !pinnedDocker) {
       findings.push(filename + ':' + (i + 1) + ': action must use a static in-repository path or full immutable SHA/digest: ' + (reference || '<empty>'));
     }
-    if (!reference.startsWith('actions/checkout@')) continue;
+    // GitHub repository owner/name lookup is case-insensitive: mixed-case checkout
+    // references must not bypass the credential persistence guard.
+    if (!/^actions\/checkout@/i.test(reference)) continue;
     let end = i + 1;
     while (end < lines.length) {
       const line = lines[end];
