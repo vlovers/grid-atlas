@@ -146,3 +146,13 @@ test('accepts pinned checkout with a trailing YAML comment', () => {
 `;
   assert.deepEqual(auditWorkflowText(yaml), []);
 });
+
+test('rejects escaped YAML keys that decode to uses or checkout credentials', () => {
+  const escapedUses = 'steps:\n  - "\\u0075ses": actions/upload-artifact@v4\n';
+  const escapedFlow = 'steps:\n  - { "\\u0075ses": actions/upload-artifact@v4 }\n';
+  const escapedCredential = 'steps:\n  - uses: ' + checkout +
+    '\n    with:\n      persist-credentials: false\n      "persist-\\u0063redentials": true\n';
+  for (const yaml of [escapedUses, escapedFlow, escapedCredential]) {
+    assert.match(auditWorkflowText(yaml)[0], /escaped YAML mapping key/);
+  }
+});
