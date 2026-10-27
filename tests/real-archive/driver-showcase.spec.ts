@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { showcaseCopy } from '../../apps/web/src/components/driver/showcase-copy';
 
 const api = 'http://127.0.0.1:3350';
 // Discover internal IDs from the actual API. No public UI depends on Senna being 72.
@@ -23,7 +24,7 @@ for (const locale of ['uk', 'en'] as const) {
       await expect(facts.getByRole('definition')).toHaveText([career.summary.races, career.summary.winning_races,
         career.summary.podium_result_entries, career.summary.seasons].map(v => new Intl.NumberFormat(locale).format(v)));
       await expect(profile.getByText(locale === 'uk' ? 'Чемпіонські віхи' : 'Championship milestones', { exact: true })).toBeVisible();
-      const nav = profile.getByRole('navigation', { name: locale === 'uk' ? 'Навігація за зафіксованими сезонами' : 'Recorded season navigation' });
+      const nav = profile.getByRole('navigation', { name: showcaseCopy[locale].seasonLinks });
       await expect(nav.getByRole('link')).toHaveCount(seasons.length);
       await expect(profile.locator('details[open]')).toHaveCount(0);
       // The selected-season race ledger is intentionally visible; detailed archival
@@ -34,7 +35,7 @@ for (const locale of ['uk', 'en'] as const) {
       const raceResults = (await (await request.get(`${api}/api/drivers/${identity.id}/seasons/${latestYear}/results`)).json()).data;
       await expect(ledger.locator('tbody tr')).toHaveCount(raceResults.length);
       await expect(profile.locator('img')).toHaveCount(0);
-      await expect(profile.getByText(locale === 'uk' ? 'Біографія очікує на публікацію' : 'Biography awaiting publication', { exact: true })).toBeVisible();
+      await expect(profile.getByText(showcaseCopy[locale].unpublished, { exact: true })).toBeVisible();
       expect((await request.get(`${api}/api/drivers/${identity.id}/article?locale=${locale}`)).status()).toBe(404);
       expect(await profile.innerText()).not.toContain('By the opening of the 1988 Formula One season');
       expect(remote).toEqual([]);

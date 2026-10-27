@@ -100,3 +100,8 @@ html[lang=uk] .page :is(h1,h2,h3) { letter-spacing: -.015em; line-height: 1.12; 
   .lineage-controls { display: grid; grid-template-columns: minmax(0,1fr); }
   .page .lineage-node { border-radius: 0; background: var(--surface); border-color: var(--line); }
 }
+
+/* Editorial type: the same licensed serif and sans coverage in UK and EN. */
+html { font-synthesis: none; }
+html[lang=uk] :is(h1,h2,h3) { letter-spacing: 0; line-height: 1.16; }
+:is(h1,h2,h3) { word-break: normal; overflow-wrap: anywhere; min-width: 0; }

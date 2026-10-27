@@ -39,7 +39,7 @@ const en = {
     "Missing imported records do not prove an association never existed.",
   noYears: "No race results have been imported for this subject.",
   invalid:
-    "Some URL selections are invalid. Choose a valid identity and a year from 1950 to 2200.",
+    "Some URL selections are invalid. Choose a driver or constructor and a year from 1950 to 2200.",
   invalidSelected:
     "That connection is outside the loaded slice. Showing its first association; the full list may contain other records.",
   invalidTrail:
@@ -68,7 +68,7 @@ const en = {
   copied: "Link copied",
   copy: "Copy link",
   copyFailed: "Copy unavailable. Use the permalink.",
-  help: "Drag the background to pan; pinch or use the zoom controls. Tab reaches identities; Enter selects. Focused nodes are brought into view. The list provides the same evidence without navigating the canvas.",
+  help: "Drag the background to pan; pinch or use the zoom controls. Tab reaches names; Enter selects. Focused nodes are brought into view. The list provides the same evidence without navigating the canvas.",
   fit: "Fit map",
   reset: "Reset map",
   zoomIn: "Zoom in",
@@ -127,7 +127,7 @@ const uk: Record<keyof typeof en, string> = {
     "Відсутність імпортованих записів не доводить, що зв’язку ніколи не було.",
   noYears: "Для цього пілота або конструктора ще немає результатів гонок.",
   invalid:
-    "Деякі параметри URL некоректні. Оберіть ідентичність і рік від 1950 до 2200.",
+    "Деякі параметри URL некоректні. Оберіть пілота або конструктора і рік від 1950 до 2200.",
   invalidSelected:
     "Цей зв’язок поза завантаженою частиною списку. Показано перший; інші записи можуть бути в повному списку.",
   invalidTrail:
@@ -142,12 +142,12 @@ const uk: Record<keyof typeof en, string> = {
   lineageNote:
     "Спадкоємність — окремий набір перевірених тверджень. Зв’язки результатів на цій мапі не доводять правонаступництва чи ідентичності заявника.",
   races: "Гонки з результатами",
-  entries: "Записи результатів",
+  entries: "Результати гонок",
   wins: "Перемоги",
   limits: "Джерело й історичні обмеження",
   limitations:
     "Імпортовані зв’язки результатів основних гонок не доводять офіційних стартів, контрактів, переходів чи правонаступництва конструкторів. Пілоти, конструктори й заявники — різні ідентичності.",
-  source: "Джерело ідентичності",
+  source: "Джерело даних",
   sourceNote:
     "Атрибуція ідентичності не є походженням кожного результату. Перегляньте записи гонок, щоб дослідити результати.",
   credit:
@@ -156,7 +156,7 @@ const uk: Record<keyof typeof en, string> = {
   copied: "Посилання скопійовано",
   copy: "Копіювати посилання",
   copyFailed: "Копіювання недоступне. Скористайтеся постійним посиланням.",
-  help: "Перетягуйте тло для переміщення; використовуйте жест масштабування або кнопки. Tab переходить між ідентичностями, Enter обирає. Вузол у фокусі з’являється у видимій області. Список надає ті самі записи без навігації полотном.",
+  help: "Перетягуйте тло для переміщення; використовуйте жест масштабування або кнопки. Tab переходить між іменами, Enter обирає. Вузол у фокусі з’являється у видимій області. Список надає ті самі записи без навігації полотном.",
   fit: "Вмістити мапу",
   reset: "Скинути мапу",
   zoomIn: "Збільшити",

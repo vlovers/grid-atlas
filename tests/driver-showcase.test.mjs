@@ -63,7 +63,7 @@ test('UK/EN copy has matching nonempty keys and retains explicit championship, c
   assert.deepEqual(Object.keys(showcaseCopy.uk).sort(), Object.keys(showcaseCopy.en).sort());
   for (const copy of Object.values(showcaseCopy)) assert.ok(Object.values(copy).every(v => typeof v === 'string' && v.trim()));
   assert.match(showcaseCopy.en.titleGapNote, /classifications appear separately.*cannot establish/);
-  assert.match(showcaseCopy.uk.unpublishedNote, /чернетки залишаються приватними/);
+  assert.match(showcaseCopy.uk.unpublishedNote, /ще не опубліковано/);
   assert.match(showcaseCopy.en.teamNote, /not contract or entrant histories/);
 });
 

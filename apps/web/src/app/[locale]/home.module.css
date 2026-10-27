@@ -58,7 +58,7 @@
 .machineBody { align-self: center; min-width: 0; border-left: 1px solid var(--line); padding-left: 3rem; }
 .machine form { background: transparent; padding: 0; border: 0; }
 .machine form > p:first-child { font-family: var(--font-display); font-weight: 500; }
-.machine form button { background: var(--accent); color: #fff; border-color: var(--accent); }
+.machine form button[type=submit] { background: var(--accent); color: #fff; border-color: var(--accent); }
 .explorer { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; }
 .explorerVisual { padding: 1.2rem; border: 1px solid var(--line); background: var(--surface); }
 .sources { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; padding-block: var(--space-section) 2rem; }
@@ -138,3 +138,17 @@
 .circuit h3 a:hover, .circuit h3 a:focus-visible { text-decoration: underline; text-underline-offset: .12em; }
 .circuitPreview figcaption a { color: inherit; text-decoration: underline; text-underline-offset: .2em; display: inline-flex; align-items: center; min-height: 44px; }
 .circuit a:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
+
+/* Every circuit occupies the same editorial column, with a shared action baseline. */
+.home :is(h1,h2,h3) { overflow-wrap: break-word; letter-spacing: -.01em; line-height: 1.12; }
+.home:lang(uk) :is(h1,h2,h3) { letter-spacing: 0; line-height: 1.16; }
+.circuit { display: grid; grid-template-rows: auto minmax(5.5rem, auto) auto 1fr auto; align-items: start; }
+.circuit h3 { font-size: clamp(1.8rem, 2.7vw, 2.7rem); line-height: 1.16; margin: 1.3rem 0 .7rem; }
+.circuitId { margin-bottom: .75rem; }
+.circuitPreview { align-self: end; }
+.circuit .readLink { align-self: end; }
+
+.coverEmpty { min-height: 0; align-content: center; padding: 2rem; border-top: 2px solid var(--accent); font: 1rem var(--font-sans); }
+.coverEmpty h2 { font: 500 clamp(2rem, 4vw, 4rem)/1.16 var(--font-display); margin-block: 1rem 2rem; }
+.coverEmpty nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.coverEmpty nav a { display: inline-flex; min-height: 44px; align-items: center; border-bottom: 1px solid var(--line); font: 1rem var(--font-mono); }

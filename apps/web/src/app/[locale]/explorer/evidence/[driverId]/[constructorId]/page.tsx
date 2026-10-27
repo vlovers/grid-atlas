@@ -94,7 +94,7 @@ export default async function ExplorerRaceEvidencePage({
                 <th scope="col">{uk ? "Гонка" : "Race"}</th>
                 <th scope="col">{uk ? "Дата" : "Date"}</th>
                 <th scope="col">
-                  {uk ? "Записи результатів" : "Result entries"}
+                  {uk ? "Результати гонок" : "Result entries"}
                 </th>
                 <th scope="col">
                   {uk ? "Результати на першому місці" : "First-place results"}

@@ -5,17 +5,17 @@ import { atlasCopy } from '@/components/atlas/copy';
 import { featuredIdentities } from '@/components/atlas/discovery-model';
 import { ConnectionPreview } from '@/components/atlas/connection-preview';
 import { ComparisonLauncher } from '@/components/atlas/comparison-launcher';
-import { CareerSignature } from '@/components/atlas/career-signature';
 import { SeasonBrowser } from '@/components/atlas/season-browser';
 import { StoryRail } from '@/components/stories/story-rail';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, sharedSeason } from '@/components/stories/story-model';
 import type { DriverCareer, DriverSeason } from '@/components/driver/showcase-model';
 import { selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
-import { EditorialHero, EditorialMedia, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
+import { EditorialHero, SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
 import { editorialCopy } from '@/components/editorial/copy';
-import mediaPublication from '@/components/media/publication.json';
-import type { MediaAsset } from '@/components/media/registry';
+import { RaceCover } from '@/components/editorial/race-cover';
+import { CIRCUIT_ARTWORK } from '@/components/circuit-layout-registry';
+import type { CircuitTechnicalEvent } from '@/components/circuit-experience';
 import styles from './home.module.css';
 
 export const dynamic = 'force-dynamic';
@@ -63,18 +63,17 @@ export default async function Home() {
   const pairYear = focus && paired ? sharedSeason(focus.years, paired.years) : null;
   const path = (value: string) => `/${locale}${value}`;
   const num = (n: number) => new Intl.NumberFormat(locale).format(n);
-  const assets = mediaPublication.assets as MediaAsset[];
+  const coverEvents = cover?.moment.race.circuit_id ? await getData<CircuitTechnicalEvent>(`/api/circuits/${cover.moment.race.circuit_id}/technical-history`) : [];
+  const coverLayout = coverEvents.find(event => event.race_id === cover?.moment.race.id)?.external_layout_id;
+  const coverArtwork = coverLayout ? CIRCUIT_ARTWORK.get(coverLayout) : undefined;
   const range = (first: number | null | undefined, last: number | null | undefined) => first == null ? '—' : first === last ? String(first) : `${first}—${last}`;
   return <div className={styles.home} data-testid="atlas-home">
     <section className={styles.masthead} aria-label={e.edition}>
       <div className={styles.editionLine}><p>{e.edition}</p><span>{e.volume}</span></div>
-      <EditorialHero title={e.homeTitle} eyebrow={e.cover} context={focus?.driver.name}
-        lead={e.homeLead} media={focus ? <EditorialMedia assets={assets} subject={{ type: 'driver', id: focus.driver.external_id }} title={focus.driver.name} locale={locale}
-          years={range(focus.career?.summary.first_season, focus.career?.summary.last_season)}>
-          {focus.career && <dl className={styles.coverEvidence}><div><dt>{t.recordedRaces}</dt><dd>{num(focus.career.summary.races)}</dd></div><div><dt>{t.winningRaces}</dt><dd>{num(focus.career.summary.winning_races)}</dd></div></dl>}
-        </EditorialMedia> : <div className={styles.coverEmpty}>{e.explore}</div>}
+      <EditorialHero title={e.homeTitle} eyebrow={e.cover} context={cover?.driver.name ?? focus?.driver.name}
+        lead={e.homeLead} media={cover ? <RaceCover moment={cover.moment} driverName={cover.driver.name} driverId={cover.driver.id} locale={locale} artwork={coverArtwork} firstWin={Boolean(cover.career?.milestones.first_win)} /> : <div className={styles.coverEmpty} data-testid="home-season-cover"><p className={styles.eyebrow}>{e.seasons}</p><h2>{s.erasTitle}</h2><nav aria-label={locale === 'uk' ? 'Сезони на обкладинці' : 'Cover seasons'}>{seasons.slice(0, 6).map(season => <a key={season.year} href={path(`/seasons/${season.year}`)}>{season.year} ↗</a>)}</nav></div>}
         actions={<><a href={cover ? path(`/races/${cover.moment.race.id}`) : '#atlas-seasons'}><span className={styles.roundArrow} aria-hidden="true">↗</span>{cover ? s.start : t.start}</a>
-          {focus && <a href={path(`/drivers/${focus.driver.id}`)}>{e.openDossier} ↗</a>}</>} />
+          {(cover?.driver ?? focus?.driver) && <a href={path(`/drivers/${(cover?.driver ?? focus!.driver).id}`)}>{e.openDossier} ↗</a>}</>} />
       <div className={styles.coverFooter}>
         <form className={styles.search} action={path('/drivers')} role="search"><label htmlFor="home-search">{t.search}</label><div><input id="home-search" name="q" type="search" maxLength={100} placeholder={t.placeholder} /><button type="submit" aria-label={t.searchAction}>↗</button></div></form>
         <nav className={styles.contents} aria-label={e.contents}><a href="#home-drivers-title">01 / {e.drivers}</a><a href="#home-constructors-title">02 / {e.constructors}</a><a href="#atlas-seasons">03 / {e.seasons}</a></nav>
@@ -144,9 +143,6 @@ export default async function Home() {
       <div><p className={styles.eyebrow}>{e.connections}</p><h2 id="home-explorer-title">{e.connectionsTitle}</h2><p className={styles.note}>{e.connectionsNote}</p><a className={styles.textLink} href={focus && years.length ? path(`/atlas?kind=driver&id=${focus.driver.id}&year=${years[0]}`) : path('/atlas')}>{e.atlas} ↗</a>
         <a className={styles.textLink} href={focus && years.length ? path(`/explorer/drivers/${focus.driver.id}?year=${years[0]}`) : path('/drivers')}>{focus && years.length ? t.graph : t.allDrivers} ↗</a></div>
     </section>
-    <aside className={styles.sources}><div><p className={styles.eyebrow}>{s.records}</p><h2>{s.next}</h2><p className={styles.note}>{t.sourcesNote}</p><a className={styles.textLink} href={path('/stories')}>{e.browseStories} ↗</a></div>
-      {focus && <details><summary>{s.graphic}</summary><CareerSignature seasons={focus.years} name={focus.driver.name} locale={locale} /></details>}
-    </aside>
     <SourceAttribution locale={locale}>{focus?.career?.observations[0]?.release_tag ? `F1DB / ${focus.career.observations[0].release_tag}` : 'GRID ATLAS / F1DB'}</SourceAttribution>
   </div>;
 }

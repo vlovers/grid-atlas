@@ -1,3 +1,4 @@
+import { chooseOption } from './select-option';
 import { test, expect } from "@playwright/test";
 import { historyAtlasCopy } from "../../apps/web/src/components/history-atlas/copy";
 import { explorerCopy } from "../../apps/web/src/components/explorer/copy";
@@ -58,7 +59,7 @@ for (const locale of ["en", "uk"] as const) {
       "driver-b",
     );
     const season = page.getByRole("combobox", { name: t.season, exact: true });
-    await season.selectOption("1951");
+    await chooseOption(season, "1951");
     await page.getByRole("button", { name: new RegExp(t.open) }).click();
     await expect(
       atlas.getByRole("status").filter({ hasText: t.empty }),

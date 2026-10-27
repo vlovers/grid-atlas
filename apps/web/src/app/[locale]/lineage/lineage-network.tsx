@@ -1,4 +1,5 @@
 'use client';
+import { EditorialSelect } from '@/components/editorial/select';
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useMemo, useRef, useState } from 'react';
@@ -108,13 +109,13 @@ const relationStyles: Record<string, { dash: string; label: string }> = {
    <p>{t('networkLead')}</p>
    <p aria-label={t('networkLegend')}>{[...new Set(edges.map(edge => edge.relation_type))].map(type => relationStyles[type]?.label ?? relationLabels[type] ?? type).join(' · ')}</p>
    <div className="lineage-controls">
-     <label>{t('focusTeam')} <select value={focusedTeam} onChange={event => { setFocusedTeam(event.target.value); setSelected(null); }}>
+     <label>{t('focusTeam')} <EditorialSelect value={focusedTeam} onValueChange={value => { setFocusedTeam(value); setSelected(null); }}>
        <option value="all">{t('allTeams')}</option>
        {graph.nodes.map(node => <option key={node.key} value={node.key}>{node.name} ({node.kind === 'constructor' ? t('constructor') : t('entrant')})</option>)}
-     </select></label>
-     {focusedTeam !== 'all' && <label>{t('depth')} <select value={focusDepth} onChange={event => setFocusDepth(event.target.value as typeof focusDepth)}>
+     </EditorialSelect></label>
+     {focusedTeam !== 'all' && <label>{t('depth')} <EditorialSelect value={focusDepth} onValueChange={value => setFocusDepth(value as typeof focusDepth)}>
        <option value="direct">{t('direct')}</option><option value="connected">{t('connected')}</option>
-     </select></label>}
+     </EditorialSelect></label>}
      {focusedTeam !== 'all' && <span role="status">{t('focusCount', { count: focusedEdges.length })}</span>}
    </div>
    <div className="lineage-controls" aria-label={t('zoomControls')}>

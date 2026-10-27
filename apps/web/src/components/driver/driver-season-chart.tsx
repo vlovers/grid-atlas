@@ -9,8 +9,8 @@ export function DriverSeasonChart({ seasons, locale, driverId, selectedYear }: P
   const maximum = Math.max(1, ...chronological.flatMap(s => [s.starts, s.wins, s.podiums]));
   const format = new Intl.NumberFormat(locale);
   const t = locale === 'uk'
-    ? { heading: 'Ритм кар’єри', subtitle: 'Результати за сезонами — записи в історичному архіві, не офіційна турнірна таблиця.', entries: 'Записи результатів', wins: 'Результати на першому місці', podiums: 'Результати в першій трійці', year: 'Сезон', open: 'Переглянути сезон' }
-    : { heading: 'The rhythm of a career', subtitle: 'Season-by-season archive result entries, not official championship standings.', entries: 'Result entries', wins: 'First-place results', podiums: 'Top-three results', year: 'Season', open: 'Explore season' };
+    ? { heading: 'Ритм кар’єри', subtitle: 'Як змінювалися результати протягом кар’єри.', entries: 'Результати гонок', wins: 'Результати на першому місці', podiums: 'Результати в першій трійці', year: 'Сезон', open: 'Переглянути сезон' }
+    : { heading: 'The rhythm of a career', subtitle: 'Follow the results across a career.', entries: 'Race results', wins: 'First-place results', podiums: 'Top-three results', year: 'Season', open: 'Explore season' };
   return <section className={styles.section} aria-labelledby="driver-season-chart-title" data-testid="driver-season-chart" data-story-reveal>
     <div className={styles.intro}><div><span className={styles.eyebrow}>{locale === 'uk' ? 'ДАНІ / КАР’ЄРА' : 'DATA / CAREER'}</span><h3 id="driver-season-chart-title">{t.heading}</h3></div><p>{t.subtitle}</p></div>
     <p className={styles.footnote}>{locale === 'uk' ? 'Спільна шкала: 0–' : 'Shared scale: 0–'}{maximum}</p>

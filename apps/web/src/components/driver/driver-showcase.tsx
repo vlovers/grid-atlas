@@ -68,12 +68,12 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
     <section id="driver-biography" className={styles.chapter} aria-labelledby="driver-editorial-title" tabIndex={-1}>
       <SectionHeading kicker={t.editorialKicker} title={t.editorialTitle} id="driver-editorial-title" />
       {overview && <article className={styles.biography} data-testid="driver-archive-overview">
-        <h3>{locale === 'en' ? 'Career in the historical record' : 'Кар’єра за історичними протоколами'}</h3>
+        <h3>{locale === 'en' ? 'Career history' : 'Історія кар’єри'}</h3>
         {overview.paragraphs.slice(0, 2).map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         {overview.paragraphs.length > 2 && <ArchiveDisclosure label={locale === 'uk' ? 'Результати й віхи кар’єри' : 'Career results and milestones'}>{overview.paragraphs.slice(2).map((paragraph, i) => <p key={i}>{paragraph}</p>)}</ArchiveDisclosure>}
-        <p>{locale === 'en'
-          ? 'This is a factual summary of recorded results, not an independently reviewed life story. Constructor associations do not prove employment or legal team continuity.'
-          : 'Це фактичний підсумок зафіксованих результатів, а не незалежно перевірена біографія. Зв’язки з конструкторами не засвідчують контракти чи юридичну спадковість команд.'}</p>
+        <ArchiveDisclosure label={locale === 'uk' ? 'Джерела та пояснення статистики' : 'Sources and statistics'}><p>{locale === 'en'
+          ? 'This summary follows the available race results. It does not replace a reviewed biography or establish contracts or legal team continuity.'
+          : 'Огляд спирається на наявні результати гонок. Він не замінює перевіреної біографії та не підтверджує контрактів чи юридичної спадковості команд.'}</p></ArchiveDisclosure>
         <ul>{overview.firstRace && <li><a href={`/${locale}/races/${overview.firstRace.id}`}>
           {locale === 'en' ? 'First recorded race' : 'Перша зафіксована гонка'}: {overview.firstRace.name} ({overview.firstRace.year}) ↗
         </a></li>}
@@ -83,7 +83,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
         <a href={`/${locale}/sources`}>{locale === 'en' ? 'Archive source and methodology' : 'Джерело та методологія архіву'} ↗</a>
       </article>}
       {editorialUnavailable ? <p role="status" data-testid="editorial-unavailable">{locale === 'uk' ? 'Редакційний матеріал тимчасово недоступний. Архівні записи доступні нижче.' : 'Editorial content is temporarily unavailable. Archive records remain available below.'}</p>
-        : article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <div className={styles.editorialEmpty}><span aria-hidden="true">¶</span><div><h3>{t.unpublished}</h3><p>{t.unpublishedNote}</p></div></div>}
+        : article ? <div><h3>{t.biography}</h3><PublishedChapters article={article} locale={locale} /></div> : <details className={styles.biographyStatus}><summary>{t.unpublished}</summary><p>{t.unpublishedNote}</p></details>}
     </section>
 
     <section data-story-reveal id="driver-career" className={styles.chapter} aria-labelledby="driver-season-title" tabIndex={-1}>
@@ -117,7 +117,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
                 <h5><a href={`/${locale}/constructors/${row.related_id}?season=${selected.year}`}>{row.related_name}</a></h5>
                 <dl>
                   <div><dt>{locale === 'uk' ? 'Гонки' : 'Races'}</dt><dd>{format(row.races)}</dd></div>
-                  <div><dt>{locale === 'uk' ? 'Записи результатів' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
+                  <div><dt>{locale === 'uk' ? 'Результати гонок' : 'Result entries'}</dt><dd>{format(row.result_entries)}</dd></div>
                   <div><dt>{glossary[locale].wins}</dt><dd>{format(row.winning_races)}</dd></div>
                 </dl>
                 <p>{locale === 'uk' ? 'Очки у результатах' : 'Recorded result points'}: {row.recorded_points ?? t.unavailable}{row.points_missing > 0 ? ` · ${locale === 'uk' ? 'Є пропуски' : 'Incomplete'}` : ''}</p>

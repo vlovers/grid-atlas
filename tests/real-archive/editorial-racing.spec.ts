@@ -1,3 +1,4 @@
+import { chooseOption } from '../browser/select-option';
 import { mediaCollectionCopy } from '../../apps/web/src/components/media/collection-copy';
 import { test, expect } from '@playwright/test';
 import { editorialCopy } from '../../apps/web/src/components/editorial/copy';
@@ -22,7 +23,7 @@ for (const locale of ['en', 'uk'] as const) {
       const actual = (await (await request.get(`${api}/constructors/${team.id}/seasons/1988/drivers`)).json()).data;
       await expect(roster.locator('h3 a')).toHaveText(actual.map((row: { driver_name: string }) => row.driver_name));
       await expect(page.getByTestId('championship-constructors-career')).toBeVisible();
-      await picker.selectOption(String(firstYear));
+      await chooseOption(picker, String(firstYear));
       await page.getByRole('button', { name: `${editorialCopy[locale].viewSeason} ↗`, exact: true }).press('Enter');
       await expect(picker).toHaveValue(String(firstYear));
       await expect(page).toHaveURL(new RegExp(`season=${firstYear}#constructor-season$`));

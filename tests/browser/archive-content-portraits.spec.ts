@@ -14,8 +14,8 @@ for (const locale of ['uk', 'en'] as const) {
     await page.goto(`/${locale}/constructors/1`);
     const story = page.getByTestId('constructor-archive-portrait');
     await expect(story).toBeVisible();
-    await expect(story).toContainText(locale === 'uk' ? 'протокол' : 'race-result');
-    await expect(story).toContainText(locale === 'uk' ? 'не виводяться' : 'not inferred');
+    await expect(story).toContainText(locale === 'uk' ? 'результат' : 'race results');
+    await expect(page.getByTestId('constructor-archive-overview').locator('details > summary')).toBeVisible();
   });
 
   test(`${locale}: circuit winning-driver coverage is source bounded`, async ({ page }) => {

@@ -1,3 +1,4 @@
+import { EditorialSelect } from '@/components/editorial/select';
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -249,10 +250,10 @@ export default async function TimeMachinePage({ params, searchParams }: Props) {
       <form className={styles.entityForm} action={formPath} method="get">
         <label>
           {t("timeMachineFocusType")}
-          <select name="kind" defaultValue={kind}>
+          <EditorialSelect name="kind" defaultValue={kind}>
             <option value="driver">{t("driver")}</option>
             <option value="constructor">{t("constructor")}</option>
-          </select>
+          </EditorialSelect>
         </label>
         <label>
           {t("timeMachineSearchLabel")}

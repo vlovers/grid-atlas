@@ -30,6 +30,7 @@ test('Atlas copy is complete in UK and EN and explicitly bounds historical inter
   assert.deepEqual(Object.keys(atlasCopy.en).sort(), Object.keys(atlasCopy.uk).sort());
   for (const copy of Object.values(atlasCopy)) assert.ok(Object.values(copy).every(v => v.trim()));
   assert.match(atlasCopy.en.constructorNote, /not establish contracts/);
-  assert.match(atlasCopy.en.comparisonNote, /not championship standings/);
+  assert.match(atlasCopy.en.comparisonNote, /compare the driver’s teams/);
+  assert.doesNotMatch(atlasCopy.en.comparisonNote, /champion|title|official starts/i);
   assert.match(atlasCopy.en.driversNote, /not a ranking/);
 });

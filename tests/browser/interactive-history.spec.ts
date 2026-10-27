@@ -235,7 +235,7 @@ for (const locale of ["uk", "en"] as const) {
     await expect(page.getByRole("table")).toContainText("alpha");
     await expect(page.getByRole('link',{name:'CC BY 4.0',exact:true})).toHaveAttribute('href','https://creativecommons.org/licenses/by/4.0/');
     await expect(
-      page.getByRole("link", { name: /Race evidence|Записи гонок/ }),
+      page.getByRole("link", { name: /Race evidence|Результати гонок/ }),
     ).toHaveAttribute(
       "href",
       new RegExp(

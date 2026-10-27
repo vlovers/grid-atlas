@@ -1,3 +1,4 @@
+import { EditorialSelect } from '@/components/editorial/select';
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getData, type CatalogueEntity, type Season } from "@/lib/api";
@@ -136,10 +137,10 @@ export default async function AtlasPage({ params, searchParams }: Props) {
         <form method="get">
           <label>
             {t.kind}
-            <select name="kind" defaultValue={kind}>
+            <EditorialSelect name="kind" defaultValue={kind}>
               <option value="driver">{t.driver}</option>
               <option value="constructor">{t.constructor}</option>
-            </select>
+            </EditorialSelect>
           </label>
           <label>
             {t.query}
@@ -234,14 +235,14 @@ export default async function AtlasPage({ params, searchParams }: Props) {
                 )}
                 <label>
                   {t.season}
-                  <select name="year" defaultValue={year}>
+                  <EditorialSelect name="year" defaultValue={year}>
                     {year !== undefined &&
                       !seasons.some((s) => s.year === year) && (
                         <option value={year}>{year}</option>
                       )}
                     <optgroup label={words.available}>{career.years.map(y => <option key={y} value={y}>{y}</option>)}</optgroup>
                     <optgroup label={locale === 'uk' ? 'Інші сезони архіву' : 'Other archive seasons'}>{[...seasons].filter(s => !career.years.includes(s.year)).sort((a,b) => a.year-b.year).map(s => <option key={s.year} value={s.year}>{s.year}</option>)}</optgroup>
-                  </select>
+                  </EditorialSelect>
                 </label>
                 <button type="submit">{t.open} ↗</button>
               </form>
@@ -319,15 +320,13 @@ export default async function AtlasPage({ params, searchParams }: Props) {
         )}
         <a href={`/${locale}/lineage`}>
           <span>
-            02 / {locale === "uk" ? "ПЕРЕВІРЕНІ ТВЕРДЖЕННЯ" : "REVIEWED CLAIMS"}
+            02 / {locale === "uk" ? "ІСТОРІЯ КОМАНД" : "TEAM HISTORY"}
           </span>
           <h2>{t.lineage} ↗</h2>
-          <p>{t.lineageNote}</p>
+
         </a>
       </div>
-      <p className={styles.help}>
-        {t.limitations} {t.emptyNote}
-      </p>
+      <details className={styles.help}><summary>{words.sources}</summary><p>{t.limitations} {t.lineageNote} {t.emptyNote}</p></details>
     </section>
   );
 }

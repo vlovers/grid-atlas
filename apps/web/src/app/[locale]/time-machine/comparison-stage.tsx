@@ -148,7 +148,7 @@ export function ComparisonStage({
         {renderEra("from", data.from_year, from)}
         <div className={styles.sharedCenter}>
           <span aria-hidden="true">↔</span>
-          <strong>{locale === "uk" ? "ЗАПИСИ" : "RECORDS"}</strong>
+          <strong>{locale === "uk" ? "РЕЗУЛЬТАТИ" : "RESULTS"}</strong>
           <span>
             {data.from_year}
             <br />

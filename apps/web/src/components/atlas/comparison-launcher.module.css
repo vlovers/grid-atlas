@@ -32,13 +32,13 @@
   color-scheme:light;
 }
 .note {
-  color:#485662;
+  color:var(--muted);
   font-size:.8rem;
   line-height:1.6;
   margin:20px 0;
   max-width:52ch;
 }
-.form button {
+.form button[type=submit] {
   display:flex;
   justify-content:space-between;
   gap:24px;
@@ -60,7 +60,7 @@
   }
 }
 @media(forced-colors:active) {
-  .form button {
+  .form button[type=submit] {
     background:ButtonFace;
     color:ButtonText;
     border-color:ButtonText;
