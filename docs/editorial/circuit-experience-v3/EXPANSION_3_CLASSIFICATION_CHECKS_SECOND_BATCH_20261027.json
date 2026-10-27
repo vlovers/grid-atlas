@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-27",
+  "review_kind": "official_classification_field_check",
+  "publication": "blocked",
+  "limitations": [
+    "Checks only independently inspected race result rows: person, finishing position, laps and available time gaps.",
+    "Null position denotes a retired entry, not an official numeric finish.",
+    "This review does not establish historical interpretation, track layouts, story originality, or independent publication approval."
+  ],
+  "circuits": [
+    {
+      "circuit_id": "pescara",
+      "race_year": 1957,
+      "source_url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "driver": "Stirling Moss",
+          "classification_position": 1,
+          "laps": 18,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "driver": "Juan Manuel Fangio",
+          "classification_position": 2,
+          "laps": 18,
+          "winning_gap_seconds": 193.9,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "driver": "Harry Schell",
+          "classification_position": 3,
+          "laps": 18,
+          "winning_gap_seconds": 406.8,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "driver": "Masten Gregory",
+          "classification_position": 4,
+          "laps": 18,
+          "winning_gap_seconds": 496.5,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "driver": "Tony Brooks",
+          "classification_position": null,
+          "laps": 1,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zeltweg",
+      "race_year": 1964,
+      "source_url": "https://www.formula1.com/en/results/1964/races/221/austria/race-result",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "driver": "Lorenzo Bandini",
+          "classification_position": 1,
+          "laps": 105,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "driver": "Richie Ginther",
+          "classification_position": 2,
+          "laps": 105,
+          "winning_gap_seconds": 6.18,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "driver": "Bob Anderson",
+          "classification_position": 3,
+          "laps": 102,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "driver": "Tony Maggs",
+          "classification_position": 4,
+          "laps": 102,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "driver": "John Surtees",
+          "classification_position": null,
+          "laps": 8,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zolder",
+      "race_year": 1984,
+      "source_url": "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
+      "story_checks": [
+        {
+          "story_index": 1,
+          "driver": "Michele Alboreto",
+          "classification_position": 1,
+          "laps": 70,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 2,
+          "driver": "Derek Warwick",
+          "classification_position": 2,
+          "laps": 70,
+          "winning_gap_seconds": 42.386,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 3,
+          "driver": "Rene Arnoux",
+          "classification_position": 3,
+          "laps": 70,
+          "winning_gap_seconds": 69.803,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 4,
+          "driver": "Ayrton Senna",
+          "classification_position": 6,
+          "laps": 68,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        },
+        {
+          "story_index": 5,
+          "driver": "Alain Prost",
+          "classification_position": null,
+          "laps": 5,
+          "winning_gap_seconds": null,
+          "evidence_status": "classification_row_checked",
+          "full_story_approved": false,
+          "publication": "blocked"
+        }
+      ]
+    }
+  ]
+}
