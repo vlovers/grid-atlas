@@ -12,6 +12,19 @@ test('photo intake defaults to read-only permissions', () => {
   assert.doesNotMatch(workflow, /^permissions:\s*\n {2}contents: write$/m);
 });
 
+test('read-only staging cannot inherit quarantine write permissions', () => {
+  const stage = workflow.split('  stage:')[1]?.split('  quarantine:')[0];
+  const quarantine = workflow.split('  quarantine:')[1];
+  assert.ok(stage, 'staging job exists');
+  assert.ok(quarantine, 'quarantine job exists');
+  assert.match(stage, /if: github\.event_name != 'push'/);
+  assert.doesNotMatch(stage, /contents:\s*write/);
+  assert.doesNotMatch(stage, /GH_TOKEN:/);
+  assert.match(stage, /persist-credentials: false/);
+  assert.match(quarantine, /permissions:\s*\n {6}contents: write/);
+  assert.match(quarantine, /persist-credentials: false/);
+});
+
 test('quarantine push uses a step-scoped token with checkout credentials disabled', () => {
   assert.match(workflow, /persist-credentials: false/);
   const quarantine = workflow.split('      - name: Remove accidentally published unreviewed media')[1];
