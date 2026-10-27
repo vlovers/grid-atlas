@@ -11,7 +11,7 @@
     "classification_drafts": 85,
     "article_source_drafts": 15,
     "priority_human_review": 43,
-    "undated_topics": 23,
+    "undated_topics": 20,
     "independently_approved": 0
   },
   "records": [
@@ -2554,13 +2554,15 @@
     {
       "candidate_slug": "phoenix-street",
       "story_index": 4,
-      "year": null,
-      "title_en": "The end of the Phoenix experiment",
+      "year": 1991,
+      "title_en": "Phoenix's brief Formula 1 chapter ends",
       "source_urls": [
-        "https://www.formula1.com/en/results/1990/races"
+        "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+        "https://www.formula1.com/en/results/1989/races",
+        "https://www.formula1.com/en/results/1991/races"
       ],
       "source_types": {
-        "season_classification": 1,
+        "season_classification": 2,
         "event_specific_article_candidates": 0
       },
       "research_status": "classification_supported_research_draft",
@@ -2663,10 +2665,11 @@
     {
       "candidate_slug": "detroit-street",
       "story_index": 4,
-      "year": null,
-      "title_en": "Why the race moved to Phoenix",
+      "year": 1988,
+      "title_en": "Senna's last Formula 1 win on Detroit's streets",
       "source_urls": [
-        "https://www.formula1.com/en/results/1982/races"
+        "https://www.detroitgp.com/event-info/recaps/formula-1",
+        "https://www.formula1.com/en/results/1988/races"
       ],
       "source_types": {
         "season_classification": 1,
@@ -2772,9 +2775,10 @@
     {
       "candidate_slug": "long-beach",
       "story_index": 4,
-      "year": null,
-      "title_en": "The switch to IndyCar racing",
+      "year": 1984,
+      "title_en": "From Formula 1 to CART",
       "source_urls": [
+        "https://gplb.com/track-history",
         "https://www.formula1.com/en/results/1983/races"
       ],
       "source_types": {
