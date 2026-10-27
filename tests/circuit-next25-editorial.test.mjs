@@ -62,3 +62,18 @@ test('additional research drafts are explicitly gated and coverage matches the a
   assert.match(story.source_granularity,/review|check|candidate/);
  }
 });
+
+test('inherited classification sources cite the actual event year, never a different season',()=>{
+ for(const circuit of data.circuits){
+  for(const story of circuit.story_leads.slice(1)){
+   if(story.status!=='classification_supported_research_draft') continue;
+   const years=story.sources.flatMap(url=>[...url.matchAll(/\/en\/results\/(\d{4})\/races/g)].map(m=>Number(m[1])));
+   if(story.year===null){
+    assert.ok(story.source_granularity.includes('unverified') || story.source_granularity.includes('candidate') || story.source_granularity.includes('review'),circuit.candidate_slug);
+   } else {
+    assert.ok(years.every(year=>year===story.year),`${circuit.candidate_slug}: ${story.year} vs ${years}`);
+   }
+   assert.equal(circuit.publication,'unpublished');
+  }
+ }
+});
