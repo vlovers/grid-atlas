@@ -33,10 +33,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      # This workflow pushes a quarantine commit on the named editorial branch.
+      # Do not disable persisted checkout credentials without replacing the
+      # authenticated push mechanism; track this as a separate security review.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
       - name: Discover candidates for all ten stories (unreviewed)
@@ -57,7 +60,7 @@ jobs:
           fi
       - name: Upload private review package (not published)
         if: github.event_name != 'push'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: editorial-photo-review-${{ github.run_id }}
           path: .grid-atlas/media-review/
