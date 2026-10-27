@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 93,
-    "race_level_unverified_events": 12,
+    "race_level_verified_events": 103,
+    "race_level_unverified_events": 2,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 2
   },
@@ -2042,31 +2042,71 @@
           "year": 2012,
           "title_en": "Alonso survives Pérez's wet-weather charge",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "860",
+            "race_date": "2012-03-25",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/02-malaysia/race.yml"
+          }
         },
         {
           "year": 2009,
           "title_en": "Race cut short by rain",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "805",
+            "race_date": "2009-04-05",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2009/races/02-malaysia/race.yml"
+          }
         },
         {
           "year": 2013,
           "title_en": "The Multi 21 dispute",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "880",
+            "race_date": "2013-03-24",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/02-malaysia/race.yml"
+          }
         },
         {
           "year": 2016,
           "title_en": "Hamilton retires, Ricciardo wins",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "951",
+            "race_date": "2016-10-02",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/16-malaysia/race.yml"
+          }
         },
         {
           "year": 2017,
           "title_en": "Verstappen wins a final Malaysian GP",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "971",
+            "race_date": "2017-10-01",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/15-malaysia/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -2090,31 +2130,71 @@
           "year": 2020,
           "title_en": "Hamilton's seventh title on a slippery track",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1032",
+            "race_date": "2020-11-15",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/14-turkey/race.yml"
+          }
         },
         {
           "year": 2006,
           "title_en": "Massa's first win and a fight for second",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "764",
+            "race_date": "2006-08-27",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race.yml"
+          }
         },
         {
           "year": 2010,
           "title_en": "Red Bull teammates collide",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "827",
+            "race_date": "2010-05-30",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/07-turkey/race.yml"
+          }
         },
         {
           "year": 2008,
           "title_en": "Massa makes it three",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "790",
+            "race_date": "2008-05-11",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/05-turkey/race.yml"
+          }
         },
         {
           "year": 2007,
           "title_en": "Hamilton's tyre fails",
           "layout_id_candidate": null,
-          "status": "requires_race_yaml_lookup"
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "780",
+            "race_date": "2007-08-26",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/12-turkey/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
