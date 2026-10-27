@@ -3,7 +3,7 @@
   "batch_id": "circuit-next20-pinned-f1db-layout-catalog-v1",
   "source_release": "v2026.17.0",
   "source_repository": "https://github.com/f1db/f1db",
-  "source_method": "Official source YAML at the pinned release tag; layout IDs copied from each circuit file; event hints derived only from explicit year annotations in YAML comments.",
+  "source_method": "Official source YAML at the pinned release tag; layout IDs copied from each circuit file; event hints derived only from explicit year annotations in YAML comments. Exact race-level links, when present, were read from pinned F1DB race.yml files and matched to canonical circuit and layout IDs.",
   "publication": "blocked_pending_race_level_layout_and_corner_review",
   "summary": {
     "circuit_count": 20,
@@ -12,7 +12,11 @@
     "event_year_hints": 80,
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
-    "svg_files_missing": 0
+    "svg_files_missing": 0,
+    "race_level_verified_events": 10,
+    "race_level_unverified_events": 95,
+    "race_level_year_hint_mismatches": 0,
+    "race_level_ambiguous_events": 0
   },
   "limitations": [
     "The source YAML comments are documentation hints, not race-specific proof. Confirm each event using the matching season/race race.yml circuitId and circuitLayoutId before asserting the exact historical configuration.",
@@ -20,7 +24,8 @@
     "The imported Grid Atlas read model does not yet store F1DB layout identities; this is a research-only crosswalk, not a database migration or public page change.",
     "Corner names, numbering and diagram coordinates are NOT verified by F1DB layout identifiers or SVGs. Never attach corner annotations to a historical layout without independent evidence.",
     "F1DB circuit ID may differ from Grid Atlas editorial slug. Do not change URL slugs or overwrite imported identities based on a naming similarity.",
-    "No independent editorial approval or image rights clearance is claimed."
+    "No independent editorial approval or image rights clearance is claimed.",
+    "An exact race.yml match verifies a race-specific circuit layout, not the historical narrative, corner naming or media rights."
   ],
   "circuits": [
     {
@@ -90,31 +95,71 @@
           "year": 1950,
           "title_en": "The championship begins",
           "layout_id_candidate": "silverstone-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1",
+            "race_date": "1950-05-13",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1950/races/01-great-britain/race.yml"
+          }
         },
         {
           "year": 1987,
           "title_en": "Mansell hunts down Piquet",
           "layout_id_candidate": "silverstone-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "443",
+            "race_date": "1987-07-12",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1987/races/07-great-britain/race.yml"
+          }
         },
         {
           "year": 2008,
           "title_en": "Hamilton masters the rain",
           "layout_id_candidate": "silverstone-7",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "794",
+            "race_date": "2008-07-06",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/09-great-britain/race.yml"
+          }
         },
         {
           "year": 1973,
           "title_en": "A first-lap chain reaction",
           "layout_id_candidate": "silverstone-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "229",
+            "race_date": "1973-07-14",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/09-great-britain/race.yml"
+          }
         },
         {
           "year": 1998,
           "title_en": "The pit-lane finish",
           "layout_id_candidate": "silverstone-7",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "623",
+            "race_date": "1998-07-12",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1998/races/09-great-britain/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -180,31 +225,71 @@
           "year": 1971,
           "title_en": "Gethin wins by a fraction",
           "layout_id_candidate": "monza-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "206",
+            "race_date": "1971-09-05",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1971/races/09-italy/race.yml"
+          }
         },
         {
           "year": 1967,
           "title_en": "Clark's charge runs out of fuel",
           "layout_id_candidate": "monza-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "159",
+            "race_date": "1967-09-10",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/09-italy/race.yml"
+          }
         },
         {
           "year": 1988,
           "title_en": "Ferrari's emotional one-two",
           "layout_id_candidate": "monza-6",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "464",
+            "race_date": "1988-09-11",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/12-italy/race.yml"
+          }
         },
         {
           "year": 2008,
           "title_en": "Vettel gives Toro Rosso its first win",
           "layout_id_candidate": "monza-7",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "799",
+            "race_date": "2008-09-14",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/14-italy/race.yml"
+          }
         },
         {
           "year": 2019,
           "title_en": "Leclerc holds off Mercedes",
           "layout_id_candidate": "monza-7",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1011",
+            "race_date": "2019-09-08",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/14-italy/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
