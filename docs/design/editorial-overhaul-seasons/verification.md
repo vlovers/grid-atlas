@@ -7,7 +7,7 @@ Executed in isolated `/private/tmp/grid-atlas-ux3`, Node24.21.0 / pnpm10.18.3. I
 | `pnpm check` | PASS |
 | `pnpm lint` | PASS |
 | `pnpm typecheck` | PASS |
-| `pnpm test` | PASS,349 at initial refreshed base |
+| `pnpm test` | PASS,350 after final upstream refresh |
 | `python3 -m unittest discover -s tests -v` | PASS,434 |
 | `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build` | PASS |
 | Full Playwright synthetic archive suite | 510 passed, six failed: four stale source-copy assertions and two real 200%-text overflow checks on the cover year. Assertions now check retained F1DB source identity; reduced the year’s minimum type size. |
