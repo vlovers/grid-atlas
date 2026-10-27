@@ -33,12 +33,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # This workflow pushes a quarantine commit on the named editorial branch.
-      # Do not disable persisted checkout credentials without replacing the
-      # authenticated push mechanism; track this as a separate security review.
+      # Checkout must not persist write credentials in the workspace.
+      # The quarantine push below receives a short-lived token only in its step.
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
+          persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
@@ -70,6 +70,8 @@ jobs:
 
       - name: Remove accidentally published unreviewed media
         if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
@@ -82,5 +84,7 @@ jobs:
           done
           if ! git diff --cached --quiet; then
             git commit -m "fix(media): quarantine unreviewed photo files outside public assets"
-            git push origin HEAD:editorial/people-who-changed-f1-20261025
+            # Git's credential helper reads the token from this step's environment.
+            # The token is never written to .git/config or interpolated into argv.
+            git -c 'credential.helper=!f() { printf "username=x-access-token\npassword=%s\n" "$GH_TOKEN"; }; f' push origin HEAD:editorial/people-who-changed-f1-20261025
           fi
