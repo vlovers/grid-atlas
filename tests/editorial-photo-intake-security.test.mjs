@@ -45,7 +45,7 @@ test('quarantine push triggers for changes to protected public images', () => {
 test('quarantine never executes repository scripts with write token', () => {
   const quarantine = workflow.split('  quarantine:')[1];
   assert.ok(quarantine, 'quarantine job exists');
-  assert.doesNotMatch(workflow, /^  pull_request_target:/m);
+  assert.doesNotMatch(workflow, /^ {2}pull_request_target:/m);
   assert.doesNotMatch(quarantine, /node scripts\//);
   assert.doesNotMatch(quarantine, /npm (?:run|exec|install|ci)\b/);
   assert.doesNotMatch(quarantine, /pnpm\b|yarn\b|bun\b/);
