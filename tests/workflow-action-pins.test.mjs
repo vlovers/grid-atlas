@@ -184,8 +184,8 @@ test('rejects explicit YAML keys that could override checkout security settings'
 test('checkout credential policy cannot be bypassed by mixed-case repository spelling', () => {
   for (const name of ['Actions/Checkout', 'actions/Checkout', 'ACTIONS/CHECKOUT']) {
     const reference = name + '@' + checkout.split('@')[1];
-    const withoutCredentials = 'steps:\\n  - uses: ' + reference + '\\n';
-    const withCredentials = withoutCredentials + '    with:\\n      persist-credentials: false\\n';
+    const withoutCredentials = 'steps:\n  - uses: ' + reference + '\n';
+    const withCredentials = withoutCredentials + '    with:\n      persist-credentials: false\n';
     assert.match(auditWorkflowText(withoutCredentials)[0], /persist-credentials/, name);
     assert.deepEqual(auditWorkflowText(withCredentials), [], name);
   }
