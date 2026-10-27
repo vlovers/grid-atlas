@@ -69,10 +69,16 @@ export function auditWorkflowText(source, filename = 'workflow') {
       end++;
     }
     const stepLines = lines.slice(i + 1, end);
-    const usesIndent = indentation.length;
+    // A named step has "- name:" followed by "  uses:" and "  with:"
+    // at the same indentation. A compact "- uses:" step puts "with:"
+    // two columns deeper. Determine the step's own indentation, not the
+    // indentation of the uses key alone.
+    const namedStep = i > 0 && /^\\s*-\\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
+      lines[i - 1].match(/^\\s*/)[0].length + 2 === indentation.length;
+    const withIndentExpected = indentation.length + (namedStep ? 0 : 2);
     const withLines = stepLines.map((line, index) => ({ line, index }))
       .filter(({ line }) => /^\s*(?:with|['"]with['"])\s*:/.test(line) &&
-        line.match(/^\s*/)[0].length === usesIndent + 2);
+        line.match(/^\s*/)[0].length === withIndentExpected);
     let credentialsDisabled = false;
     let credentialCount = 0;
     if (withLines.length === 1 && /^\s*(?:with|['"]with['"]):\s*(?:#.*)?$/.test(withLines[0].line)) {
