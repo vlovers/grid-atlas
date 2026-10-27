@@ -36,6 +36,22 @@ test('photo intake keeps immutable actions and does not persist checkout credent
   assert.match(quarantineStep, /git push|git -c .* push origin HEAD:editorial\/people-who-changed-f1-20261025/);
 });
 
+test('push trigger includes every public image the quarantine step removes', () => {
+  const pushStart = workflow.indexOf('\n  push:\n');
+  const pushEnd = workflow.indexOf('\n  workflow_dispatch:', pushStart);
+  assert.ok(pushStart >= 0 && pushEnd > pushStart, 'push event paths must be present');
+  const pushConfig = workflow.slice(pushStart, pushEnd);
+  const protectedPaths = [
+    'apps/web/public/media/editorial/vettel-monza-2008.jpg',
+    'apps/web/public/media/editorial/brawn-2009.jpg',
+  ];
+  for (const file of protectedPaths) {
+    assert.ok(pushConfig.includes("- '" + file + "'"), 'push paths must include ' + file);
+    assert.ok(quarantineStep.includes(file), 'quarantine must remove ' + file);
+  }
+  assert.match(stageJob, /persist-credentials:\\s*false/);
+});
+
 test('quarantine push credential helper uses a step-scoped token without storing it', () => {
   const match = quarantineStep.match(/git -c 'credential\.helper=([^']+)' push origin HEAD:editorial\/people-who-changed-f1-20261025/);
   assert.ok(match, 'push must use an explicit credential helper');
