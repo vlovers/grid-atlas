@@ -25,19 +25,19 @@ on:
           - brawn-2009
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   stage:
     name: Download candidates for manual rights review
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # Checkout must not persist write credentials in the workspace.
-      # The quarantine push below receives a short-lived token only in its step.
+      # Read-only discovery; no job token with write privileges is available here.
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          ref: ${{ github.event_name == 'push' && github.ref_name || github.sha }}
+          ref: ${{ github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -67,7 +67,19 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
-
+  quarantine:
+    name: Quarantine unreviewed public images
+    if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      # Only this push-only job can write; do not run branch scripts with this token.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
       - name: Remove accidentally published unreviewed media
         if: github.event_name == 'push' && github.ref_name == 'editorial/people-who-changed-f1-20261025'
         env:
