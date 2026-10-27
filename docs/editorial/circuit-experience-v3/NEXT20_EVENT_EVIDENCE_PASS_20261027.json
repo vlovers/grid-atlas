@@ -3,7 +3,7 @@
   "batch": "next20",
   "date": "2026-10-27",
   "publication": "blocked",
-  "review_scope": "88 first-pass event-specific source crosswalks across 20 circuits; 63 bilingual event narratives rewritten in four passes. Zero independent approvals.",
+  "review_scope": "105 first-pass event-specific source crosswalks across 20 circuits; 71 bilingual event narratives rewritten in five passes. Zero independent approvals.",
   "reviewed_events": [
     {
       "circuit_id": "gilles-villeneuve",
@@ -1060,13 +1060,217 @@
       "editorial_approval": false,
       "media_rights_approved": false,
       "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "monza",
+      "year": 2019,
+      "title_en": "Leclerc holds off Mercedes",
+      "claims_checked_against_primary_publisher": "Leclerc resisted Mercedes pressure and gave Ferrari its first Monza win since 2010.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 circuit guide retrospective; exact defensive incidents not verified from stewards files. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "interlagos",
+      "year": 2007,
+      "title_en": "A title changes hands in Brazil",
+      "claims_checked_against_primary_publisher": "Hamilton's early gearbox problem and Räikkönen's championship victory by one point over both McLaren drivers.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/5-reasons-we-love-the-brazilian-grand-prix.37v8PT899Wnp7v6y51sUMf",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "Retrospective; official 2007 points table not separately checked. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "interlagos",
+      "year": 2019,
+      "title_en": "A dramatic finale after the titles were decided",
+      "claims_checked_against_primary_publisher": "Verstappen won, Gasly took second; Sainz promoted to third after Hamilton's five-second penalty.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/brazilian-grand-prix-2019-race-report-highlights.4VPqubaA8LitJHtDBtLgQr",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "Contemporaneous F1 race report includes race order and post-race stewards outcome. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "year": 2008,
+      "title_en": "Kubica comes back to win",
+      "claims_checked_against_primary_publisher": "Kubica won one year after his Montreal crash and led a BMW Sauber one-two.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 historical venue guide, not original crash investigation. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "year": 2007,
+      "title_en": "Hamilton wins for the first time",
+      "claims_checked_against_primary_publisher": "Rookie Hamilton's first Grand Prix win, and Kubica's violent crash.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 historical venue guide; original medical reports not consulted. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "imola",
+      "year": 1982,
+      "title_en": "Ferrari teammates' bitter finish",
+      "claims_checked_against_primary_publisher": "Ferrari teammates Villeneuve and Pironi disagreed about Imola team orders after Renault retirements.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/prost-vs-senna-mansell-vs-piquet-and-more-f1s-fiercest-intra-team-driver.4tOtmPUbldfIvIvY4MmyCQ",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 retrospective; exact pit-board instruction and personal interpretation require independent corroboration. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "imola",
+      "year": 2006,
+      "title_en": "Schumacher answers Alonso a year later",
+      "claims_checked_against_primary_publisher": "Schumacher started on pole and held off Alonso at Imola in 2006; result +2.096 seconds.",
+      "evidence_url": "https://www.autosport.com/f1/news/schumacher-fends-off-alonso-to-imola-win-4400855/4400855/",
+      "evidence_kind": "Contemporaneous tyre supplier statement or race report, event passage inspected 2026-10-27",
+      "remaining_limitation": "Autosport contemporaneous race report and Formula 1 result; exact tyre mechanism not separately verified. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "nurburgring",
+      "year": 1957,
+      "title_en": "Fangio's Nürburgring chase",
+      "claims_checked_against_primary_publisher": "Fangio's slow pit stop, catch-up and victory ahead of Ferrari rivals Hawthorn and Collins.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 retrospective, not original 1957 lap chart or Maserati timing sheet. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "nurburgring",
+      "year": 1984,
+      "title_en": "A new Grand Prix circuit",
+      "claims_checked_against_primary_publisher": "Modern Grand Prix circuit opened in 1984 and hosted European Grand Prix that year.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 circuit guide confirms debut, not historical corner geometry. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "zandvoort",
+      "year": 1973,
+      "title_en": "Purley tries to help Williamson",
+      "claims_checked_against_primary_publisher": "Purley tried to rescue Williamson from burning overturned car; Williamson died and Purley later received George Medal.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 retrospective; medal award original notice and original crash report not consulted. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "year": 2012,
+      "title_en": "Maldonado's unexpected Williams victory",
+      "claims_checked_against_primary_publisher": "Maldonado won from pole after Hamilton's qualifying penalty, beating Alonso with undercut strategy.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/watch-relive-pastor-maldonados-incredible-breakthrough-win-at-the-2012.n3VXYNKovYFCYqMUCbkJG",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 historical video article, not contemporaneous technical strategy sheet. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "bahrain",
+      "year": 2004,
+      "title_en": "Schumacher wins Bahrain's first Grand Prix",
+      "claims_checked_against_primary_publisher": "Schumacher won first Bahrain Grand Prix and Bahrain circuit announced naming Turn 1 for him in 2014.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/bahrain-to-name-first-corner-after-schumacher.uGWCv5Gk0wOb15L1zMrc0",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "BIC chairman quoted in F1 report; 2004 race winner corroborated by separate official result. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "cota",
+      "year": 2012,
+      "title_en": "Hamilton wins the first race at COTA",
+      "claims_checked_against_primary_publisher": "Austin hosted first COTA United States GP in 2012 and Hamilton won for McLaren.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/the-united-states-grand-prix-did-you-know-.ANeEfWrK03h6sLZ6JErmr",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 historical venue article plus exact official 2012 result; detailed duel chronology not checked. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "year": 2006,
+      "title_en": "Massa's first win and a fight for second",
+      "claims_checked_against_primary_publisher": "Massa won 2006 Turkish GP; Alonso held off Schumacher by 0.081s.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/explained-why-turkey-is-back-on-the-calendar-from-2027.1BJjW3kYEnR97HxlV7AFuy",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 2026 retrospective and official 2006 result; detailed on-track passes not independently checked. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "year": 2010,
+      "title_en": "Red Bull teammates collide",
+      "claims_checked_against_primary_publisher": "Webber and Vettel collided while battling for the lead in 2010 Turkish GP.",
+      "evidence_url": "https://www.formula1.com/en/latest/article/f1-unscripted-with-henieken-webber-reveals-his-biggest-regret-over-multi-21.1O445nvLZAUB5x7X5aJUrN",
+      "evidence_kind": "Formula 1 first-party event retrospective or contemporary race report, relevant passage inspected 2026-10-27",
+      "remaining_limitation": "F1 article recounts Webber interview; race winner requires separate official result. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "year": 2008,
+      "title_en": "Massa makes it three",
+      "claims_checked_against_primary_publisher": "Bridgestone race report documents Massa third consecutive Turkish GP win and Hamilton's three-stop strategy.",
+      "evidence_url": "https://au.motorsport.com/f1/news/turkish-gp-bridgestone-race-report/2304369/",
+      "evidence_kind": "Contemporaneous tyre supplier statement or race report, event passage inspected 2026-10-27",
+      "remaining_limitation": "Bridgestone contemporary tyre supplier report, published by Motorsport; 3.779s precision comes from official result. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "year": 2007,
+      "title_en": "Hamilton's tyre fails",
+      "claims_checked_against_primary_publisher": "Bridgestone engineer explained Hamilton's Turn 8-related tyre tread stress and belt failure.",
+      "evidence_url": "https://www.autosport.com/f1/news/bridgestone-clarifies-turkey-failure-cause-4412067/4412067/",
+      "evidence_kind": "Contemporaneous tyre supplier statement or race report, event passage inspected 2026-10-27",
+      "remaining_limitation": "Contemporaneous direct manufacturer interview in Autosport; exact lap/finishing gap from official race result. No independent full sentence-level editorial approval, historical turn geometry or image rights.",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
     }
   ],
   "remaining": {
-    "other_event_drafts": 17,
+    "other_event_drafts": 0,
     "claim_level_approval": 0,
     "feature_layout_bindings_verified": 0,
     "media_rights_approved": 0
   },
-  "method": "Three event-specific first-pass research passes: 22 events in the initial evidence crosswalk (11 rewritten), 20 additional checked and rewritten in the second pass, and 20 additional checked and rewritten on 27 October 2026 in the third pass. The 62 crosswalks are based on published Formula 1 event reports, stewards summaries, official classification or historical retrospectives as described per event; they are not independent editorial sign-offs. Full source uptime, FIA PDF decisions, photo rights, historical turn geometry and all 105 claim-level approvals have NOT been established. Fourth pass: 26 additional event-specific F1 source pages opened and relevant passages inspected, with 12 bilingual narratives rewritten. First-party retrospectives are not original FIA decisions. No independent editorial approval, historic geometry or media clearance."
+  "method": "Three event-specific first-pass research passes: 22 events in the initial evidence crosswalk (11 rewritten), 20 additional checked and rewritten in the second pass, and 20 additional checked and rewritten on 27 October 2026 in the third pass. The 62 crosswalks are based on published Formula 1 event reports, stewards summaries, official classification or historical retrospectives as described per event; they are not independent editorial sign-offs. Full source uptime, FIA PDF decisions, photo rights, historical turn geometry and all 105 claim-level approvals have NOT been established. Fourth pass: 26 additional event-specific F1 source pages opened and relevant passages inspected, with 12 bilingual narratives rewritten. First-party retrospectives are not original FIA decisions. No independent editorial approval, historic geometry or media clearance. Fifth pass: remaining 17 race-specific first-pass crosswalks based on inspected F1 reports, an Autosport contemporaneous report and Bridgestone manufacturer statements; 8 further bilingual rewrites. First-pass event evidence does not constitute independent claim-level review."
 }
