@@ -11,7 +11,10 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
  const old=new Set(earlier.circuits.map(c=>c.circuit_id).concat(['monaco','spa-francorchamps']));
  for(const circuit of data.circuits){
   assert.ok(!old.has(circuit.candidate_slug),circuit.candidate_slug);
-  assert.equal(circuit.canonical_f1db_id,null);
+  const pinnedAliases = {'las-vegas-strip':'las-vegas','donington-park':'donington','valencia-street':'valencia','korea-international':'yeongam','sochi':'sirius','phoenix-street':'phoenix','detroit-street':'detroit'};
+  const canonicalId = pinnedAliases[circuit.candidate_slug] ?? circuit.candidate_slug;
+  assert.equal(circuit.canonical_f1db_id,canonicalId);
+  assert.equal(circuit.f1db_identity_source,`https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/${canonicalId}.yml`);
   assert.equal(circuit.configuration_id,null);
   assert.equal(circuit.publication,'unpublished');
   assert.equal(circuit.story_leads.length,5);
@@ -89,4 +92,17 @@ test('editorial caveats removed from reader narrative remain documented in unpub
    assert.ok(story.editorial_direction[locale].length>60);
   }
  }
+});
+
+test('25 next circuit IDs are distinct from 20 pinned F1DB identities and are not publication approval',()=>{
+ const catalog=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-f1db-layout-catalog-v1.json','utf8'));
+ const existing=new Set(catalog.circuits.map(c=>c.f1db_circuit_id));
+ const next=data.circuits.map(c=>c.canonical_f1db_id);
+ assert.equal(new Set(next).size,25);
+ assert.ok(next.every(id=>!existing.has(id)));
+ const audit=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT25_PUBLICATION_AUDIT.json','utf8'));
+ assert.equal(audit.official_f1db_identity_matches,25);
+ assert.equal(audit.f1db_race_layout_identities_verified,0);
+ assert.equal(audit.publication_ready_circuits,0);
+ assert.ok(data.circuits.every(c=>c.configuration_id===null&&c.publication==='unpublished'));
 });
