@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-
 // Allow only documented, event-specific external publishers. Do not turn a new
 // citation host into blanket approval for every circuit or every claim.
 const externalSourceHosts = new Map([
- ['imola/2006', new Set(['www.motorsport.com'])],
+ ['imola/2006', new Set(['www.motorsport.com', 'www.autosport.com'])],
  ['sepang/2012', new Set(['www.bbc.co.uk'])],
  ['istanbul-park/2007', new Set(['www.autosport.com', 'www.independent.co.uk'])],
  ['istanbul-park/2008', new Set(['au.motorsport.com'])],
