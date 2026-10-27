@@ -1,6 +1,6 @@
 # Twenty-circuit editorial completion inventory
 
-> **Research-only; no stories approved for public publication.** This document measures the manuscript currently in PR #320. A source URL is not independent confirmation of every sentence in the story.
+> **Research-only; no stories approved for public publication.** This document measures the manuscript originally developed in PR #320, merged into main on 27 October 2026. The merge did not grant editorial or media approval. A source URL is not independent confirmation of every sentence in the story.
 
 ## Bilingual historical event coverage
 
@@ -243,8 +243,16 @@ Read the corresponding official F1 articles for **11 further existing stories**,
 
 Rewrote **20 additional UK/EN event stories** in one batch, spanning Albert Park (1996, 2016, 2022, 2023), Marina Bay (2017, 2022), Bahrain (2022), Shanghai (2004, 2007, 2009), Yas Marina (2010, 2016, 2018), Austin (2019, 2022), Sepang (2009, 2012, 2016), Spielberg (2020), and Barcelona (2001). The live Formula 1 event reports, steward summaries and historical retrospectives were consulted for the specifically recorded claims; no source's photographs or prose were copied.
 
-**Current measured state:** **62/105** event-specific first-pass evidence crosswalks, **51/105** narratives rewritten across these passes, **43/105** not yet in this deeper crosswalk. **105/105** retain at least one source lead. **0** independently approved for publication; all 20 circuits remain blocked. Results are not evidence of the cause of an incident, an FIA ruling, a tyre failure or a driver's intentions.
+**Current measured state:** **88/105** event-specific first-pass evidence crosswalks, **63/105** narratives rewritten across these passes, **17/105** not yet in this deeper crosswalk. **105/105** retain at least one source lead. **0** independently approved for publication; all 20 circuits remain blocked. Results are not evidence of the cause of an incident, an FIA ruling, a tyre failure or a driver's intentions.
 
 Key corrections/precision: Singapore 2017 records the stewards' *racing incident* finding, rather than assigning blame; Melbourne 2016 distinguishes a frightening accident from the no-predominant-fault finding; Sepang 2009 records the historical half-points rule rather than today's scoring; Austria 2020 explains that Norris needed a final fastest lap to benefit from Hamilton's penalty. The 2023 Melbourne red flags and 2010 Abu Dhabi title strategy are traced to race-specific reporting. All turn numbers, historical SVG rights and independent UK/EN editorial sign-off remain unverified.
 
 The matching machine-readable record is `NEXT20_EVENT_EVIDENCE_PASS_20261027.json`; `NEXT20_CLAIM_REVIEW_QUEUE.json` and the regression test have been synchronized. CI on the latest commit must be checked separately.
+
+## Fourth event-specific evidence pass — 27 October 2026
+
+- Inspected relevant event passages on **26 distinct Formula 1 first-party source pages** for Silverstone (4), Monza (3), Suzuka (5), Interlagos (2), Montréal (2), Imola (2), Nürburgring (2), Zandvoort (1), Österreichring (2), Barcelona (2) and Yas Marina (1).
+- Rewrote **12 complete UK/EN story pairs** in this pass (24 language versions), correcting tone and preserving race-specific outcomes. Exact event identities and titles were not changed.
+- Evidence register now contains **88/105** distinct race-specific first-pass crosswalks; **17** still lack this deeper pass. **63/105** story pairs were rewritten across the four passes.
+- **Important source distinction:** official F1 historical retrospectives are first-party *publisher* accounts but are **not original contemporary FIA steward decisions, timing sheets or circuit maps**. The crosswalk is not independent claim-by-claim approval. **0/105 approved**, **0/20 release-ready**, **0 media licences or historical turn numbers cleared**.
+- Both original research PRs [#320](https://github.com/vlovers/grid-atlas/pull/320) and [#317](https://github.com/vlovers/grid-atlas/pull/317) are already merged to main (27 October 2026). Their merged state must not be mistaken for release readiness; this follow-up remains draft until latest CI and editorial gates are satisfied.
