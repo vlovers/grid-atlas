@@ -13,14 +13,15 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 103,
-    "race_level_unverified_events": 2,
+    "race_level_verified_events": 105,
+    "race_level_unverified_events": 0,
     "race_level_year_hint_mismatches": 0,
-    "race_level_ambiguous_events": 2
+    "race_level_ambiguous_events": 0,
+    "race_level_disambiguated_events": 2
   },
   "limitations": [
-    "The source YAML comments are documentation hints, not race-specific proof. Confirm each event using the matching season/race race.yml circuitId and circuitLayoutId before asserting the exact historical configuration.",
-    "A blank layout year comment does not prove that every event used that layout; no fallback is inferred.",
+    "All 105 event-to-layout mappings have now been checked against pinned F1DB race.yml, including two same-circuit doubleheaders disambiguated by event-specific reporting. This verifies circuit and layout identity only; it does not validate narrative claims or turn geometry.",
+    "Layout year comments were only initial hints; race.yml is now the primary source for each event's circuit and layout identity.",
     "The imported Grid Atlas read model does not yet store F1DB layout identities; this is a research-only crosswalk, not a database migration or public page change.",
     "Corner names, numbering and diagram coordinates are NOT verified by F1DB layout identifiers or SVGs. Never attach corner annotations to a historical layout without independent evidence.",
     "F1DB circuit ID may differ from Grid Atlas editorial slug. Do not change URL slugs or overwrite imported identities based on a naming similarity.",
@@ -1305,7 +1306,7 @@
           "title_en": "Norris grabs a first podium",
           "layout_id_candidate": "spielberg-3",
           "status": "year_annotation_only_not_race_verified",
-          "race_verification_status": "multiple_pinned_races_require_event_disambiguation",
+          "race_verification_status": "pinned_race_yaml_event_disambiguated",
           "race_candidates": [
             {
               "layout_id": "spielberg-3",
@@ -1315,7 +1316,18 @@
               "layout_id": "spielberg-3",
               "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml"
             }
-          ]
+          ],
+          "race_evidence": {
+            "f1db_race_id": "1019",
+            "race_date": "2020-07-05",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml"
+          },
+          "event_disambiguation": {
+            "source_url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-austria-2020.13PnIIFaBy3Esq3pIvsBpu",
+            "reason": "Norris first podium occurred at the Austrian Grand Prix, not the Styrian Grand Prix one week later."
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -1709,7 +1721,7 @@
           "title_en": "Grosjean escapes a fire on the opening lap",
           "layout_id_candidate": null,
           "status": "requires_race_yaml_lookup",
-          "race_verification_status": "multiple_pinned_races_require_event_disambiguation",
+          "race_verification_status": "pinned_race_yaml_event_disambiguated",
           "race_candidates": [
             {
               "layout_id": "bahrain-1",
@@ -1719,7 +1731,18 @@
               "layout_id": "bahrain-3",
               "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/16-sakhir/race.yml"
             }
-          ]
+          ],
+          "race_evidence": {
+            "f1db_race_id": "1033",
+            "race_date": "2020-11-29",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/15-bahrain/race.yml"
+          },
+          "event_disambiguation": {
+            "source_url": "https://www.formula1.com/en/latest/article/bahrain-grand-prix-red-flagged-as-romain-grosjean-escapes-big-crash-on-lap-1.3EnJRuc4bpamAYD2c4fKaO",
+            "reason": "Grosjean's first-lap accident was in the Bahrain Grand Prix, not the later Sakhir Grand Prix using a different layout."
+          }
         },
         {
           "year": 2019,
