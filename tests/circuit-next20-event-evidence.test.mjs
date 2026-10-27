@@ -5,10 +5,10 @@ import { readFileSync } from 'node:fs';
 const dossier = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-bilingual-histories-v1.json', 'utf8'));
 const audit = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT20_EVENT_EVIDENCE_PASS_20261027.json', 'utf8'));
 
-test('22 event-specific evidence checks cover all 20 circuits', () => {
+test('42 event-specific evidence checks cover all 20 circuits', () => {
   assert.equal(audit.publication, 'blocked');
-  assert.equal(audit.reviewed_events.length, 22);
-  assert.equal(audit.remaining.other_event_drafts, 83);
+  assert.equal(audit.reviewed_events.length, 42);
+  assert.equal(audit.remaining.other_event_drafts, 63);
   assert.equal(audit.remaining.claim_level_approval, 0);
   assert.equal(audit.remaining.feature_layout_bindings_verified, 0);
   assert.equal(audit.remaining.media_rights_approved, 0);
@@ -35,6 +35,11 @@ test('22 event-specific evidence checks cover all 20 circuits', () => {
     assert.equal(item.media_rights_approved, false, key);
   }
   assert.equal(circuits.size, 20);
-  assert.equal(rewritten, 11);
+  assert.equal(rewritten, 31);
   assert.equal(dossier.publication, 'blocked_pending_independent_historical_review');
+  assert.equal(audit.reviewed_events.length + audit.remaining.other_event_drafts, 105);
+  const hungary1986 = dossier.circuits.find(c => c.circuit_id === 'hungaroring').moments.find(m => m.year === 1986);
+  assert.ok(hungary1986.sources.some(url => url.includes('do-you-remember-piquets-amazing-overtake')));
+  const singapore2019 = dossier.circuits.find(c => c.circuit_id === 'marina-bay').moments.find(m => m.year === 2019);
+  assert.ok(singapore2019.sources.some(url => url.includes('race-report-highlight-singapore-grand-prix-2019')));
 });
