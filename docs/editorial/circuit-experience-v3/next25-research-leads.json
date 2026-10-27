@@ -1857,7 +1857,7 @@
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
         {
-          "year": null,
+          "year": 1988,
           "title": {
             "en": "The famous 1988 Senna-Prost squeeze",
             "uk": "The famous 1988 Senna-Prost squeeze"
@@ -1867,17 +1867,17 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+            "https://www.formula1.com/en/results/1988/races/539/portugal/race-result"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "The 1988 Portuguese Grand Prix added tension to the growing rivalry between McLaren teammates Ayrton Senna and Alain Prost. Prost won, while Senna finished sixth. Their on-track fight is remembered for a controversial move, but its exact sequence and any assessment of responsibility must be grounded in contemporary footage and reports.",
             "uk": "Гран-прі Португалії 1988 року посилив напругу між напарниками McLaren Айртоном Сенною та Аленом Простом. Прост переміг, а Сенна фінішував шостим. Їхню боротьбу згадують через суперечливий маневр, проте точний перебіг і оцінка відповідальності потребують тогочасних відео та звітів."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "official_F1_race_result_confirms_finishing_order_incident_unverified"
         },
         {
-          "year": null,
+          "year": 1996,
           "title": {
             "en": "Villeneuve's long outside pass in 1996",
             "uk": "Villeneuve's long outside pass in 1996"
@@ -1887,14 +1887,14 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+            "https://www.formula1.com/en/results/1996/races/652/portugal/race-result"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Jacques Villeneuve's outside pass on Michael Schumacher at Estoril in 1996 became one of the venue's best-known overtaking moments. The Portuguese Grand Prix itself was won by Damon Hill for Williams. The distinction matters: a great pass can become the scene people remember even when another driver wins the race.",
-            "uk": "Зовнішній обгін Жака Вільньова проти Міхаеля Шумахера в Ешторілі 1996 року став одним із найвідоміших моментів траси. Сам Гран-прі Португалії виграв Деймон Гілл за Williams. Важливо розрізняти яскравий маневр і перемогу: інколи пам’ятають обгін, хоча гонку виграв інший пілот."
+            "en": "Jacques Villeneuve's daring outside pass on Michael Schumacher became an enduring image of the 1996 Portuguese Grand Prix at Estoril. He did more than produce the race's standout move: Villeneuve won for Williams, with teammate Damon Hill second and Schumacher third. It was a decisive victory in Villeneuve's pursuit of the championship, keeping the title fight alive until Japan.",
+            "uk": "Сміливий обгін Жака Вільньова зовнішньою траєкторією проти Міхаеля Шумахера став одним із найяскравіших моментів Гран-прі Португалії 1996 року в Ешторілі. Вільньов не просто здійснив красивий маневр — він переміг за Williams. Його напарник Деймон Гілл фінішував другим, а Шумахер — третім. Ця перемога залишила боротьбу за титул відкритою до останнього етапу в Японії."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "official_F1_race_result_confirms_winner_pass_requires_separate_evidence"
         },
         {
           "year": null,
@@ -2784,24 +2784,25 @@
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         },
         {
-          "year": null,
+          "year": 2022,
           "title": {
-            "en": "The Russian Grand Prix's removal from the calendar",
-            "uk": "The Russian Grand Prix's removal from the calendar"
+            "en": "The Russian Grand Prix is cancelled in 2022",
+            "uk": "Гран-прі Росії скасовують у 2022 році"
           },
           "editorial_direction": {
             "en": "Research-only manuscript. Independent contemporary and layout sources required for claim-level publication. Editorial caveat moved out of reader-facing copy: Explaining the cancellation of later events requires dated championship and governing-body statements, not a narrative inferred from race results.",
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Редакторське застереження винесено з тексту: Причини скасування наступних етапів потрібно пояснювати за датованими заявами чемпіонату та керівних органів, а не за протоколами."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+            "https://www.formula1.com/en/latest/article/formula-1-statement-on-the-russian-grand-prix.4S39V28GpAH5ESb8LksW0J",
+            "https://corp.formula1.com/formula-1-terminates-contract-with-russian-grand-prix-promoter/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "The Russian Grand Prix did not continue on the Formula 1 calendar after the 2021 race at Sochi, won by Lewis Hamilton. Its final on-track story remains Norris's lost opportunity in the rain.",
-            "uk": "Гран-прі Росії не продовжився в календарі Формули-1 після гонки 2021 року в Сочі, яку виграв Льюїс Гамільтон. Остання спортивна історія тут — утрачений під дощем шанс Норріса."
+            "en": "Formula 1 announced on 25 February 2022 that it could not hold that year's Russian Grand Prix following Russia's invasion of Ukraine. On 3 March it terminated its contract with the race promoter. Sochi's last Formula 1 Grand Prix had taken place in 2021, when Lewis Hamilton won after late rain changed the running order. The cancellation brought an end to the event rather than another racing chapter.",
+            "uk": "25 лютого 2022 року Формула-1 оголосила, що після повномасштабного вторгнення Росії в Україну провести Гран-прі Росії того року неможливо. 3 березня серія розірвала контракт із промоутером гонки. Останній етап у Сочі відбувся 2021 року: тоді Льюїс Гамільтон переміг після дощу наприкінці гонки. Наступної глави в історії цього Гран-прі вже не було."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "official_F1_dated_cancellation_statement"
         }
       ],
       "turn_names": [],
