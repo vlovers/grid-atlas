@@ -16,18 +16,18 @@
 | hockenheimring | 5 | 5 | 5 | 0 | 0 |
 | zandvoort | 5 | 5 | 5 | 0 | 0 |
 | hungaroring | 8 | 8 | 8 | 0 | 0 |
-| red-bull-ring | 5 | 5 | 4 | 0 | 1 |
-| barcelona-catalunya | 5 | 5 | 3 | 2 | 0 |
-| albert-park | 5 | 5 | 4 | 0 | 1 |
-| marina-bay | 5 | 5 | 4 | 0 | 1 |
-| bahrain | 5 | 5 | 3 | 2 | 0 |
-| shanghai | 5 | 5 | 3 | 1 | 1 |
-| yas-marina | 5 | 5 | 4 | 1 | 0 |
-| cota | 5 | 5 | 3 | 2 | 0 |
-| sepang | 5 | 5 | 4 | 0 | 1 |
-| istanbul-park | 5 | 5 | 3 | 1 | 1 |
+| red-bull-ring | 5 | 5 | 5 | 0 | 0 |
+| barcelona-catalunya | 5 | 5 | 5 | 0 | 0 |
+| albert-park | 5 | 5 | 5 | 0 | 0 |
+| marina-bay | 5 | 5 | 5 | 0 | 0 |
+| bahrain | 5 | 5 | 5 | 0 | 0 |
+| shanghai | 5 | 5 | 5 | 0 | 0 |
+| yas-marina | 5 | 5 | 5 | 0 | 0 |
+| cota | 5 | 5 | 5 | 0 | 0 |
+| sepang | 5 | 5 | 5 | 0 | 0 |
+| istanbul-park | 5 | 5 | 5 | 0 | 0 |
 
-**Totals (27 October 2026):** 105 bilingual historical event drafts across 20 circuits; **105 have at least one source lead**; **87** marked first-pass narrative checked; **12** have classification-only evidence; **6** remain unverified despite a URL. **Zero publication-ready circuits** in this batch.
+**Totals (27 October 2026):** 105 bilingual historical event drafts across 20 circuits; **105 have at least one source lead**; **102** marked first-pass narrative checked; **3** have classification-only evidence; **0** remain with the explicit unverified status. **Zero publication-ready circuits** in this batch.
 
 ## Research completed in the 02:00 pass
 
@@ -57,9 +57,35 @@
 
 The above links are **research provenance**, not permission to reuse source photographs or text verbatim. Editorial wording is independently written. Claims concerning title implications, tyre causes, incidents and race strategies need separate corroboration from official classification when relevant.
 
+## Research completed in the 03:00 pass — second ten circuits
+
+Rewrote **15** event narratives in both UK and EN, covering **all ten circuits** in the second half of the package. Replaced six generic overview leads with race-specific reporting, and upgraded nine classification-only records using additional historical context. This is first-pass source research, **not independent editorial approval**. The three remaining classification-only records are all in Imola (first half of the batch).
+
+Important corrections: the 1982 Austrian event happened on the **long Österreichring**, not the modern Red Bull Ring; its winning gap was **0.050 seconds**. The 1996 Melbourne debut involved a restart after Martin Brundle's crash and Jacques Villeneuve losing the lead with an oil leak. The 2008 Singapore story now explicitly distinguishes Alonso's victory from the FIA's subsequent findings about Renault's deliberate crash conspiracy. Abu Dhabi 2021 mentions both the last-lap pass and the stewards' dismissal of Mercedes' protests, without implying the race classification alone proves the Safety Car procedure was proper.
+
+| Circuit | Year | Source evidence |
+|---|---:|---|
+| red-bull-ring | 1982 | [1](https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE) · [2](https://www.formula1.com/en/results/1982/races/449/austria/race-result) |
+| barcelona-catalunya | 1996 | [1](https://www.formula1.com/en/latest/article/were-streaming-the-1996-spanish-gp-heres-why-you-should-watch.48F2jHJQ2tpgKiHauqcEfw) · [2](https://www.formula1.com/en/results/1996/races/644/spain/race-result) |
+| barcelona-catalunya | 2016 | [1](https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x) · [2](https://www.formula1.com/en/results/2016/races/942/spain/race-result) |
+| albert-park | 1996 | [1](https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk) · [2](https://www.formula1.com/en/latest/article/floods-flying-cars-and-collapsing-drivers-5-crazy-street-circuit-debuts-from.2N6plQjV1gmTRxsmedA1Ca) |
+| marina-bay | 2008 | [1](https://www.formula1.com/en/latest/article/do-you-remember-f1s-first-ever-night-race.40aylFbXcPZSJRGiQv5Dgh) · [2](https://www.formula1.com/en/latest/article/moments-in-time-the-singapore-grand-prix.EkbLahNFlbNLF23He5jwU) |
+| bahrain | 2004 | [1](https://www.formula1.com/en/information/bahrain-bahrain-international-circuit-sakhir.2CaIdaOTCgQ3Yfnb37NmSS) · [2](https://www.formula1.com/en/latest/article/bahrain-to-name-first-corner-after-schumacher.uGWCv5Gk0wOb15L1zMrc0) · [3](https://www.formula1.com/en/results/2004/races/755/bahrain/race-result) |
+| bahrain | 2020 | [1](https://www.formula1.com/en/latest/article/bahrain-grand-prix-red-flagged-as-romain-grosjean-escapes-big-crash-on-lap-1.3EnJRuc4bpamAYD2c4fKaO) · [2](https://www.formula1.com/en/latest/article/fia-have-launched-investigation-into-grosjean-crash-confirms-race-director.3G19HqWc5s4IA7843nJt2m) · [3](https://www.formula1.com/en/results/2020/races/1059/bahrain/race-result) |
+| shanghai | 2004 | [1](https://www.formula1.com/en/latest/article/the-chinese-grand-prix-did-you-know-.6rn3NVuGuj0S0YZNEgKCyG) · [2](https://www.formula1.com/en/results/2004/races/768/china/race-result) |
+| shanghai | 2012 | [1](https://www.formula1.com/en/latest/article/the-chinese-grand-prix-did-you-know-.6rn3NVuGuj0S0YZNEgKCyG) · [2](https://www.formula1.com/en/results/2012/races/12/china/race-result) |
+| yas-marina | 2021 | [1](https://www.formula1.com/en/latest/article/brilliant-verstappen-claims-maiden-title-after-victory-in-abu-dhabi-season.22Arui4l6BKK2PUsJgKqpZ) · [2](https://www.formula1.com/en/latest/article/breaking-stewards-dismiss-mercedes-abu-dhabi-grand-prix-protests-as-team.Q8StGwXFdORYlI32Jggoz) |
+| cota | 2012 | [1](https://www.formula1.com/en/latest/article/the-united-states-grand-prix-did-you-know-.ANeEfWrK03h6sLZ6JErmr) · [2](https://www.formula1.com/en/results/2012/races/26/united-states/race-result) |
+| cota | 2018 | [1](https://www.formula1.com/en/latest/article/report-raikkonen-keeps-hamilton%27s-title-hopes-on-ice-with-superb-usa.2tIZLeCzOUuUaEe4WmQAEG) · [2](https://www.formula1.com/en/results/2018/races/996/united-states/race-result) |
+| sepang | 2012 | [1](https://www.formula1.com/en/latest/article/through-the-visor-sergio-perez-recalls-his-first-f1-podium-in-malaysia-ten.6wZF0CoE21YRhRPQft4xbq) · [2](https://www.bbc.co.uk/sport/formula1/17504530) |
+| istanbul-park | 2020 | [1](https://www.formula1.com/en/latest/article/hamilton-seals-historic-7th-title-with-peerless-wet-weather-victory-in.4wK1atemiXDvWXQxOknL4J) · [2](https://www.formula1.com/en/latest/article/turkish-gp-facts-and-stats-hamilton-breaks-more-records-with-73rd-mercedes.312Wc8MssDeWyZ4D6IG25i) |
+| istanbul-park | 2006 | [1](https://www.formula1.com/en/latest/article/explained-why-turkey-is-back-on-the-calendar-from-2027.1BJjW3kYEnR97HxlV7AFuy) · [2](https://www.formula1.com/en/results/2006/races/803/turkey/race-result) |
+
+All historical layouts, event-to-F1DB IDs and turn numbers remain pending pinned archive reconciliation. No photographs or third-party media were copied or approved.
+
 ## Remaining publication blockers
 
-1. Verify **each assertion** in all 105 stories against exact source passages; six still carry the explicit unverified label. A results table only verifies positions and timings.
+1. Verify **each assertion** in all 105 stories against exact source passages; three still have classification-only evidence and none has independent editorial sign-off. A results table only verifies positions and timings.
 2. Obtain independent historical and bilingual editorial review; `source_checked_research_draft` is first-pass research, not editorial sign-off.
 3. Map all twenty circuits and their events to **pinned F1DB v2026.17.0** circuit, race and configuration IDs. Do not infer historical turn numbering from a modern SVG.
 4. Approve named turns per exact layout and date; unknown names/numbers remain unknown, not invented.
