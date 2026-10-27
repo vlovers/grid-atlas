@@ -53,7 +53,7 @@ test('all 20 bilingual introductions reference only their own researched event y
    for(const language of ['en','uk']){
      const intro=c.editorial_intro[language].trim();
      assert.ok(intro.length>=250,c.circuit_id+'/'+language+' editorial introduction too short');
-     const years=[...intro.matchAll(/\\b(?:19|20)\\d{2}\\b/g)].map(match=>Number(match[0]));
+     const years=[...intro.matchAll(/\b(?:19|20)\d{2}\b/g)].map(match=>Number(match[0]));
      assert.ok(years.length>0,c.circuit_id+'/'+language+' lacks an event anchor');
      for(const year of years){
        assert.ok(researchedYears.has(year),c.circuit_id+'/'+language+'/'+year+' lacks a corresponding event dossier');
