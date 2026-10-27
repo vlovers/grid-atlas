@@ -13,10 +13,10 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 55,
-    "race_level_unverified_events": 50,
+    "race_level_verified_events": 64,
+    "race_level_unverified_events": 41,
     "race_level_year_hint_mismatches": 0,
-    "race_level_ambiguous_events": 0
+    "race_level_ambiguous_events": 1
   },
   "limitations": [
     "The source YAML comments are documentation hints, not race-specific proof. Confirm each event using the matching season/race race.yml circuitId and circuitLayoutId before asserting the exact historical configuration.",
@@ -1248,31 +1248,74 @@
           "year": 1982,
           "title_en": "A finish decided by 0.050 seconds",
           "layout_id_candidate": "spielberg-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "370",
+            "race_date": "1982-08-15",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/13-austria/race.yml"
+          }
         },
         {
           "year": 1975,
           "title_en": "Brambilla wins in the wet",
           "layout_id_candidate": "spielberg-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "262",
+            "race_date": "1975-08-17",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/12-austria/race.yml"
+          }
         },
         {
           "year": 2002,
           "title_en": "Ferrari team orders",
           "layout_id_candidate": "spielberg-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "686",
+            "race_date": "2002-05-12",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2002/races/06-austria/race.yml"
+          }
         },
         {
           "year": 2019,
           "title_en": "Verstappen's late pass",
           "layout_id_candidate": "spielberg-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1006",
+            "race_date": "2019-06-30",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/09-austria/race.yml"
+          }
         },
         {
           "year": 2020,
           "title_en": "Norris grabs a first podium",
           "layout_id_candidate": "spielberg-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "multiple_pinned_races_require_event_disambiguation",
+          "race_candidates": [
+            {
+              "layout_id": "spielberg-3",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/02-styria/race.yml"
+            },
+            {
+              "layout_id": "spielberg-3",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml"
+            }
+          ]
         }
       ],
       "corner_numbering_verified": false,
@@ -1331,31 +1374,71 @@
           "year": 1996,
           "title_en": "Schumacher's first Ferrari win in the rain",
           "layout_id_candidate": "catalunya-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "588",
+            "race_date": "1996-06-02",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1996/races/07-spain/race.yml"
+          }
         },
         {
           "year": 2012,
           "title_en": "Maldonado's unexpected Williams victory",
           "layout_id_candidate": "catalunya-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "863",
+            "race_date": "2012-05-13",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/05-spain/race.yml"
+          }
         },
         {
           "year": 2001,
           "title_en": "Häkkinen's last-lap heartbreak",
           "layout_id_candidate": "catalunya-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "668",
+            "race_date": "2001-04-29",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2001/races/05-spain/race.yml"
+          }
         },
         {
           "year": 2016,
           "title_en": "Verstappen's first Red Bull race, first victory",
           "layout_id_candidate": "catalunya-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "940",
+            "race_date": "2016-05-15",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/05-spain/race.yml"
+          }
         },
         {
           "year": 2006,
           "title_en": "Alonso wins in front of Spain",
           "layout_id_candidate": "catalunya-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "756",
+            "race_date": "2006-05-14",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/06-spain/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
