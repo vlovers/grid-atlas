@@ -30,6 +30,11 @@ export function auditWorkflowText(source, filename = 'workflow') {
       findings.push(filename + ':' + (i + 1) + ': unsupported YAML structure near action reference');
       continue;
     }
+    // YAML permits whitespace before ':', including for quoted keys. Never skip these uses mappings.
+    if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s+:/.test(line)) {
+      findings.push(filename + ':' + (i + 1) + ': ambiguous action reference');
+      continue;
+    }
     const match = /^(\s*)(?:-\s+)?(?:uses|['"]uses['"]):\s*(\S*)(.*)$/.exec(line);
     if (!match) {
       if (/^\s*(?:-\s+)?(?:uses|['"]uses['"])\s*:/.test(line)) {
