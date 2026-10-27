@@ -24,14 +24,14 @@
             "uk": "Початок чемпіонату"
           },
           "narrative": {
-            "en": "Giuseppe Farina won the inaugural championship race on 13 May 1950. It was not merely a British Grand Prix victory: the new competition had its first winner.",
-            "uk": "13 травня 1950 року Джузеппе Фаріна виграв першу гонку нового чемпіонату світу. Це була не просто перемога на Гран-прі Великої Британії: у нового змагання з’явився перший переможець."
+            "en": "On 13 May 1950, Silverstone staged the opening race of the new Formula 1 World Championship. Alfa Romeo's Giuseppe Farina won ahead of Luigi Fagioli and Reg Parnell after Juan Manuel Fangio retired. The old airfield became the starting point of a championship that would travel the world.",
+            "uk": "13 травня 1950 року Сільверстоун прийняв першу гонку нового чемпіонату світу Формули-1. Джузеппе Фаріна на Alfa Romeo переміг Луїджі Фаджіолі та Рега Парнелла, а Хуан-Мануель Фанхіо зійшов. Колишній аеродром став місцем, звідки почалася історія чемпіонату."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT"
           ],
-          "source_granularity": "article_candidate_verify_page",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1987,
@@ -156,14 +156,15 @@
             "uk": "Гетін виграє з мінімальною перевагою"
           },
           "narrative": {
-            "en": "Peter Gethin claimed his only Formula 1 victory in a slipstreaming race that finished with the leading cars almost together. The first five crossed the line within 0.61 seconds.",
-            "uk": "Пітер Гетін здобув єдину перемогу у Формулі-1 після боротьби на сліпстримі. Перші п’ять машин перетнули фініш із різницею менш ніж 0,61 секунди."
+            "en": "Five drivers reached Monza's final lap with a real chance of victory in 1971. Peter Gethin edged Ronnie Peterson by just 0.010 seconds, while François Cevert, Mike Hailwood and Howden Ganley all finished within 0.610 seconds of the winner. Gethin never won another championship Grand Prix, but this finish made his name unforgettable.",
+            "uk": "На останньому колі Монци 1971 року одразу п’ятеро пілотів могли перемогти. Пітер Гетін випередив Ронні Петерсона лише на 0,010 секунди, а Франсуа Север, Майк Гейлвуд і Гауден Ґенлі фінішували в межах 0,610 секунди від переможця. Інших перемог у чемпіонаті Гетін не здобув, та цей фініш увійшов в історію."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+            "https://www.formula1.com/en/results/1971/races/299/italy/race-result",
+            "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28"
           ],
-          "source_granularity": "article_candidate_verify_page",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1967,
@@ -314,13 +315,13 @@
             "uk": "Зіткнення в шикані"
           },
           "narrative": {
-            "en": "Prost and Senna collided at Suzuka's chicane while fighting for the lead. Senna rejoined and finished first on the road but was disqualified; Prost became world champion.",
-            "uk": "Прост і Сенна зіткнулися в шикані Сузуки під час боротьби за лідерство. Сенна повернувся на трасу й першим дістався фінішу, але його дискваліфікували; чемпіоном став Прост."
+            "en": "Alain Prost and Ayrton Senna arrived at Suzuka in 1989 as McLaren teammates and bitter title rivals. They collided at the final chicane while fighting for the lead. Prost retired; Senna restarted, changed his damaged front wing and crossed the line first, but was disqualified for missing the chicane on rejoining. The decision settled the championship in Prost's favour.",
+            "uk": "У 1989 році Ален Прост і Айртон Сенна приїхали до Сузуки напарниками по McLaren і непримиренними суперниками за титул. У боротьбі за лідерство вони зіткнулися в останній шикані. Прост зійшов, Сенна повернувся на трасу, замінив пошкоджене переднє крило й фінішував першим, але отримав дискваліфікацію за зрізану шикану. Чемпіоном став Прост."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+            "https://www.formula1.com/en/latest/article/from-sennas-suspended-ban-to-vettels-victory-antics-8-crazy-post-race.2Pssou2f1Rh9Iv99fpfcNR"
           ],
-          "source_granularity": "official_f1_event_summary_read",
+          "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
         },
         {
@@ -478,8 +479,8 @@
             "uk": "Масса виграє гонку, Гамільтон — титул"
           },
           "narrative": {
-            "en": "Felipe Massa crossed the line first in Brazil and briefly appeared to be world champion. Lewis Hamilton passed Timo Glock near the end of the final lap for fifth, the position he needed to clinch the 2008 championship by one point.",
-            "uk": "Феліпе Масса фінішував першим у Бразилії й на мить здавалося, що він став чемпіоном світу. Льюїс Гамільтон обігнав Тімо Глока наприкінці останнього кола, посів п’яте місце й здобув титул 2008 року з перевагою в одне очко."
+            "en": "Felipe Massa won the 2008 Brazilian Grand Prix and, for a few moments, Ferrari believed the world title was his. But Lewis Hamilton passed Timo Glock near the end of the last lap to finish fifth. That single position was enough: Hamilton took his first championship by one point, even as Massa celebrated victory at home.",
+            "uk": "Феліпе Масса виграв Гран-прі Бразилії 2008 року, і на кілька митей у Ferrari повірили, що титул його. Та наприкінці останнього кола Льюїс Гамільтон обігнав Тімо Глока й фінішував п’ятим. Цього вистачило для першого чемпіонства Гамільтона — з перевагою в одне очко, поки Масса святкував домашню перемогу."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/greatest-races-5-lewis-hamilton-snatches-his-first-f1-title-on-the-final.4eiCdYNL9LTv5OKW7Npu5i.4eiCdYNL9LTv5OKW7Npu5i.4eiCdYNL9LTv5OKW7Npu5i"
@@ -572,8 +573,8 @@
             "uk": "Баттон виграє марафон"
           },
           "narrative": {
-            "en": "The rain-interrupted 2011 Canadian Grand Prix ended with Jenson Button passing Sebastian Vettel on the final lap after an extraordinary recovery.",
-            "uk": "Дощовий Гран-прі Канади 2011 року завершився обгоном Себастьяна Феттеля Дженсоном Баттоном на останньому колі після неймовірного повернення в боротьбу."
+            "en": "The 2011 Canadian Grand Prix lasted more than four hours as heavy rain stopped the race and Safety Cars repeatedly gathered the field. Jenson Button endured a penalty, collisions and six visits to the pits. On the final lap Sebastian Vettel ran wide under pressure, and Button swept past to win a race that had looked lost several times over.",
+            "uk": "Гран-прі Канади 2011 року тривав понад чотири години: злива зупиняла гонку, а машина безпеки раз у раз збирала пелотон. Дженсон Баттон пережив штраф, зіткнення й шість заїздів у бокси. На останньому колі Себастьян Феттель помилився під тиском, і Баттон вирвав перемогу, яка здавалася втраченою вже не раз."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj"
@@ -692,14 +693,15 @@
             "uk": "Вікенд, який змінив спорт"
           },
           "narrative": {
-            "en": "Roland Ratzenberger and Ayrton Senna died during the San Marino Grand Prix weekend. Their deaths drove renewed scrutiny of Formula 1 safety.",
-            "uk": "Роланд Ратценбергер і Айртон Сенна загинули під час вікенду Гран-прі Сан-Марино. Їхня смерть змусила Формулу-1 знову поставити безпеку на перше місце."
+            "en": "Imola's 1994 weekend brought two tragedies: Roland Ratzenberger died after a qualifying crash on Saturday, and Ayrton Senna after an accident in Sunday's race. Rubens Barrichello had also suffered a violent crash on Friday. The losses intensified Formula 1's ongoing safety work, changing how the sport confronted risk without erasing those it had lost.",
+            "uk": "Вікенд в Імолі 1994 року приніс дві трагедії: Роланд Ратценбергер загинув після аварії у суботній кваліфікації, а Айртон Сенна — після аварії під час недільної гонки. У п’ятницю важко розбився й Рубенс Баррікелло. Ці події прискорили роботу Формули-1 над безпекою та назавжди змінили ставлення спорту до ризику."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/greatest-races-best-25-f1-75-years-anniversary.3JnpCmS1AzPQLmqW1HWTxB"
+            "https://www.formula1.com/en/latest/article/imola-94-and-the-lasting-safety-legacy.5P8zqEzNjKzYw8qdckoYFF",
+            "https://www.formula1.com/en/latest/article/in-tribute-david-brabham-remembers-his-former-team-mate-roland-ratzenberger.1z8PJo5DHfemJis12AkBhy"
           ],
-          "source_granularity": "overview_requires_specific_article",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1982,
@@ -840,14 +842,15 @@
             "uk": "Аварія Лауди на Північній петлі"
           },
           "narrative": {
-            "en": "The 1976 German Grand Prix on the Nürburgring's Nordschleife is remembered above all for Niki Lauda's terrible accident. The official classification lists Lauda as a non-finisher and James Hunt as the winner. The crash and rescue itself require eyewitness and archival reporting beyond the results sheet.",
-            "uk": "Гран-прі Німеччини 1976 року на Північній петлі Нюрбургринга назавжди запам’ятався страшною аварією Нікі Лауди. Офіційний протокол позначає Лауду як такого, що не фінішував, а переможцем називає Джеймса Ганта. Подробиці аварії та порятунку потрібно перевіряти за архівними свідченнями, а не лише за результатами гонки."
+            "en": "On the second lap of the 1976 German Grand Prix, Niki Lauda crashed on the Nürburgring's Nordschleife and his Ferrari caught fire. Fellow drivers, including Arturo Merzario, Brett Lunger, Harald Ertl and Guy Edwards, stopped to help pull him from the wreck. James Hunt won the restarted race, but the weekend became inseparable from Lauda's survival and remarkable return to racing weeks later.",
+            "uk": "На другому колі Гран-прі Німеччини 1976 року Нікі Лауда потрапив в аварію на Північній петлі Нюрбургринга, а його Ferrari загорілася. На допомогу зупинилися інші гонщики, зокрема Артуро Мерцаріо, Бретт Лангер, Гаральд Ертль і Гай Едвардс. Джеймс Гант виграв гонку після рестарту, але цей вікенд запам’ятався насамперед порятунком Лауди та його поверненням за кілька тижнів."
           },
           "sources": [
+            "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
             "https://www.formula1.com/en/results/1976/races/367/germany/race-result"
           ],
-          "source_granularity": "official_F1_exact_race_result_only",
-          "review_status": "official_classification_checked_interpretation_pending"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1999,
@@ -938,14 +941,14 @@
             "uk": "Дощ перевертає гонку"
           },
           "narrative": {
-            "en": "The 2019 race swung through changing rain and drying conditions. Several drivers went off or misjudged tyre changes, but Max Verstappen recovered from a spin and won an unpredictable Grand Prix.",
-            "uk": "Гонка 2019 року постійно змінювалася через дощ і підсихання асфальту. Пілоти вилітали з траси або помилялися з вибором шин, а Макс Ферстаппен пережив розворот і виграв непередбачуваний Гран-прі."
+            "en": "Hockenheim's 2019 Grand Prix turned into a test of nerve as rain returned whenever the track began to dry. Max Verstappen spun once and stopped five times, yet still won. Sebastian Vettel climbed from 20th on the grid to second, and Daniil Kvyat took a surprise podium while Mercedes suffered a miserable afternoon.",
+            "uk": "Гран-прі Німеччини 2019 року в Гоккенгаймі став випробуванням нервів: дощ повертався щоразу, коли асфальт починав підсихати. Макс Ферстаппен пережив розворот і п’ять разів заїжджав у бокси, але переміг. Себастьян Феттель прорвався з 20-го місця на старті до другого, а Даніїл Квят несподівано піднявся на подіум. Для Mercedes цей день став провалом."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2019/races/1010/germany/race-result"
+            "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ"
           ],
-          "source_granularity": "official_F1_race_result_confirms_winner_only",
-          "review_status": "official_classification_checked_interpretation_pending",
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft",
           "verification_note": "Official classification: Verstappen first, Vettel second, Kvyat third"
         },
         {
@@ -1053,14 +1056,14 @@
             "uk": "Повернення Гран-прі Нідерландів"
           },
           "narrative": {
-            "en": "Zandvoort hosted a World Championship Grand Prix again in 2021, with Max Verstappen winning before the home crowd.",
-            "uk": "У 2021 році Зандворт знову прийняв етап чемпіонату світу, а Макс Ферстаппен переміг перед домашніми трибунами."
+            "en": "After 36 years away from the Formula 1 calendar, the Dutch Grand Prix returned to Zandvoort in 2021. Max Verstappen started on pole, kept Lewis Hamilton behind over 72 laps and won in front of a sea of orange-clad fans. The victory also returned Verstappen to the lead of the championship standings.",
+            "uk": "Після 36 років перерви Гран-прі Нідерландів повернувся до Зандворта у 2021 році. Макс Ферстаппен стартував із поулу, втримав Льюїса Гамільтона позаду протягом 72 кіл і переміг перед морем помаранчевих трибун. Завдяки цій перемозі він також повернув собі лідерство в чемпіонаті."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-circuit-zandvoort.3yxmn4LiWkbNTKpad7IRSo.3yxmn4LiWkbNTKpad7IRSo"
+            "https://www.formula1.com/en/latest/article/verstappen-sends-home-fans-wild-with-victory-over-hamilton-in-the-dutch.5x4cEJF9B4DaIz2H6dVQrd"
           ],
-          "source_granularity": "article_candidate_verify_page",
-          "review_status": "unverified_research_draft"
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 1961,
@@ -1173,14 +1176,14 @@
             "uk": "Перша перемога Баттона"
           },
           "narrative": {
-            "en": "Jenson Button took his maiden Grand Prix victory in changing wet conditions, climbing from fourteenth on the grid.",
-            "uk": "Дженсон Баттон здобув першу перемогу у мінливих дощових умовах після старту з чотирнадцятої позиції."
+            "en": "Jenson Button arrived in Hungary in 2006 without a Formula 1 victory after 112 starts. An engine-change penalty left him 14th on the grid, but the rain gave him a chance to fight forward. He drove through the changing conditions and took the lead after Fernando Alonso's retirement, finally winning at his 113th attempt.",
+            "uk": "Дженсон Баттон приїхав до Угорщини 2006 року без жодної перемоги після 112 стартів. Штраф за заміну двигуна відкинув його на 14-те місце, але дощ відкрив шанс прорватися вперед. Баттон впевнено пройшов крізь мінливі умови, очолив гонку після сходу Фернандо Алонсо й нарешті переміг із 113-ї спроби."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2006/races/802/hungary/race-result"
+            "https://www.formula1.com/en/latest/article/tremayne-a-big-weight-off-my-shoulders-buttons-brilliant-budapest.6YuTNqcS4uUjChYbeepp0c"
           ],
-          "source_granularity": "official_F1_race_result_confirms_winner_only",
-          "review_status": "official_classification_checked_interpretation_pending",
+          "source_granularity": "official_F1_article_contains_specific_race",
+          "review_status": "source_checked_research_draft",
           "verification_note": "Official classification: Button first, de la Rosa second, Heidfeld third; grid penalty details still require separate source"
         },
         {
@@ -2284,12 +2287,15 @@
             "uk": "Третя поспіль перемога Масси"
           },
           "narrative": {
-            "en": "Felipe Massa won his third consecutive Turkish Grand Prix for Ferrari.",
-            "uk": "Феліпе Масса виграв третій поспіль Гран-прі Туреччини за Ferrari."
+            "en": "Felipe Massa took pole at Istanbul Park in 2008 and won the Turkish Grand Prix for a third consecutive year. Lewis Hamilton briefly led during a three-stop strategy, but Massa's Ferrari reached the flag 3.779 seconds ahead. The Brazilian's three wins at the same circuit, from 2006 through 2008, became one of Istanbul Park's defining stories.",
+            "uk": "Феліпе Масса здобув поул в Істанбул-Парку 2008 року й утретє поспіль виграв Гран-прі Туреччини. Льюїс Гамільтон певний час лідирував завдяки стратегії з трьома піт-стопами, та Ferrari Масси фінішувала на 3,779 секунди раніше. Три перемоги бразильця на цій трасі у 2006–2008 роках стали однією з головних історій Істанбул-Парку."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://au.motorsport.com/f1/news/turkish-gp-bridgestone-race-report/2304369/",
+            "https://www.formula1.com/en/results/2008/races/829/turkey/race-result"
+          ],
+          "source_granularity": "race_specific_contemporary_report_and_official_result",
+          "review_status": "source_checked_research_draft"
         },
         {
           "year": 2007,
@@ -2298,12 +2304,15 @@
             "uk": "Прокол шини Гамільтона"
           },
           "narrative": {
-            "en": "A tyre failure cost Lewis Hamilton places late in the Turkish Grand Prix while teammate Alonso finished ahead.",
-            "uk": "Проблема з шиною коштувала Льюїсу Гамільтону позицій наприкінці Гран-прі Туреччини, а напарник Алонсо фінішував вище."
+            "en": "Lewis Hamilton was running near the front of the 2007 Turkish Grand Prix when his right-front tyre began breaking apart on lap 43. He made it back to the pits, but dropped behind Fernando Alonso and Nick Heidfeld, finishing fifth. Bridgestone later explained that the tread had broken up under heavy stress, leaving the tyre's belt vulnerable. Massa won the race; Hamilton's championship lead over Alonso shrank to five points.",
+            "uk": "На 43-му колі Гран-прі Туреччини 2007 року передня права шина Льюїса Гамільтона почала руйнуватися. Він дістався боксів, але пропустив уперед Фернандо Алонсо й Ніка Гайдфельда та фінішував п’ятим. Згодом Bridgestone пояснила: через велике навантаження руйнувався протектор, що зробило внутрішній пояс шини вразливим. Масса виграв гонку, а перевага Гамільтона над Алонсо в чемпіонаті скоротилася до п’яти очок."
           },
-          "sources": [],
-          "source_granularity": "specific_primary_source_required",
-          "review_status": "unverified_research_draft"
+          "sources": [
+            "https://www.autosport.com/f1/news/bridgestone-clarifies-turkey-failure-cause-4412067/4412067/",
+            "https://www.formula1.com/en/results/2007/races/819/turkey/race-result"
+          ],
+          "source_granularity": "race_specific_contemporary_report_and_official_result",
+          "review_status": "source_checked_research_draft"
         }
       ],
       "corner_names": [
