@@ -11,7 +11,7 @@
     "classification_drafts": 85,
     "article_source_drafts": 15,
     "priority_human_review": 43,
-    "undated_topics": 29,
+    "undated_topics": 26,
     "independently_approved": 0
   },
   "records": [
@@ -1614,10 +1614,10 @@
     {
       "candidate_slug": "estoril",
       "story_index": 2,
-      "year": null,
+      "year": 1988,
       "title_en": "The famous 1988 Senna-Prost squeeze",
       "source_urls": [
-        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+        "https://www.formula1.com/en/results/1988/races/539/portugal/race-result"
       ],
       "source_types": {
         "season_classification": 1,
@@ -1638,10 +1638,10 @@
     {
       "candidate_slug": "estoril",
       "story_index": 3,
-      "year": null,
+      "year": 1996,
       "title_en": "Villeneuve's long outside pass in 1996",
       "source_urls": [
-        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+        "https://www.formula1.com/en/results/1996/races/652/portugal/race-result"
       ],
       "source_types": {
         "season_classification": 1,
@@ -2435,14 +2435,15 @@
     {
       "candidate_slug": "sochi",
       "story_index": 4,
-      "year": null,
-      "title_en": "The Russian Grand Prix's removal from the calendar",
+      "year": 2022,
+      "title_en": "The Russian Grand Prix is cancelled in 2022",
       "source_urls": [
-        "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+        "https://www.formula1.com/en/latest/article/formula-1-statement-on-the-russian-grand-prix.4S39V28GpAH5ESb8LksW0J",
+        "https://corp.formula1.com/formula-1-terminates-contract-with-russian-grand-prix-promoter/"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "priority_human_review",
