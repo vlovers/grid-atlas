@@ -13,7 +13,7 @@ test('original photograph CI runs on exact evidence changes while staying isolat
   assert.doesNotMatch(workflow, /^\s+pull_request:/m);
   assert.match(workflow, /contents: read/);
   assert.match(workflow, /node scripts\/preview-commons-originals\.mjs/);
-  assert.match(workflow, /actions\/upload-artifact@v4/);
+  assert.match(workflow, /actions\/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02/);
   assert.match(workflow, /retention-days: 7/);
   assert.match(workflow, /grid-atlas-research-photo-contact-sheet/);
   assert.match(workflow, /steps\.originals\.outcome != 'success'/);
