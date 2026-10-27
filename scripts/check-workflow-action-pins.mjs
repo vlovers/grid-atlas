@@ -9,6 +9,13 @@ export function auditWorkflowText(source, filename = 'workflow') {
     // Check all uses keys, including empty references; fail closed on dynamic refs.
     const line = lines[i];
     if (/^\s*#/.test(line)) continue;
+    // YAML decodes escaped double-quoted keys; a line scanner must not miss "uses".
+    // Reject these mappings rather than trusting a literal-key regex.
+    if (/^\s*(?:-\s+)?(?:\{|")/.test(line) &&
+        /"(?:[^"\\]|\\.)*\\(?:[^"\\]|\\.)*"\s*:/.test(line)) {
+      findings.push(filename + ':' + (i + 1) + ': unsupported escaped YAML mapping key');
+      continue;
+    }
     // Reject YAML forms that can hide an action from this intentionally small scanner.
     if (/^\s*(?:-\s*)?\{.*(?:['"]?uses['"]?)\s*:/.test(line) ||
         /^\s*(?:-\s+)?\?\s*['"]?uses['"]?\s*$/.test(line) ||
