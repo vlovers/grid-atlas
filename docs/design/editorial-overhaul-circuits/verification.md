@@ -24,3 +24,5 @@ The private preview reuses `startReview` with explicit opt-in, exact loopback Ho
 Current release limitations: new numbered guides and27 source-linked stories await exact bilingual, historical naming, layout, copyright and annotation review; they remain absent from ordinary public pages. Source-backed legacy summaries remain available. Existing per-asset SVG rights and #104/real-origin release gates are unchanged. Final SHA and candidate CI are tracked in the PR.
 
 The archive CI audit now verifies the always-present `circuit-dossier` marker and retained identity facts. The retired result-leader section is not a profile-completeness contract. No canonical, pagination, source or full-archive coverage assertion was removed.
+
+Full encyclopedia audit PASS against the genuine import:917 drivers,187 constructors,78 circuits;2406 pages,11504 API requests,1172 calendar events and27665 result rows compared. The remaining real-profile visual test now checks that the single GP archive is immediately visible rather than trying to open its retired disclosure; all metadata, row-count, nav-target,44px, width and forced-colors checks remain.
