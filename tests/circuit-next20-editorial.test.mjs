@@ -2,10 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-bilingual-histories-v1.json','utf8'));
-const extraSourceHosts = new Set(['www.autosport.com', 'au.motorsport.com', 'www.independent.co.uk']);
+// Allow only documented, event-specific external publishers. Do not turn a new
+// citation host into blanket approval for every circuit or every claim.
+const externalSourceHosts = new Map([
+ ['imola', new Set(['www.motorsport.com'])],
+ ['sepang', new Set(['www.bbc.co.uk'])],
+ ['istanbul-park', new Set(['www.autosport.com', 'au.motorsport.com', 'www.independent.co.uk'])],
+]);
 const acceptedSource = (circuitId, raw) => {
  const url = new URL(raw);
- return url.protocol === 'https:' && (url.hostname === 'www.formula1.com' || (circuitId === 'istanbul-park' && extraSourceHosts.has(url.hostname)));
+ return url.protocol === 'https:' && (url.hostname === 'www.formula1.com' || externalSourceHosts.get(circuitId)?.has(url.hostname) === true);
 };
 test('20 circuit research entries remain distinct, bilingual and unpublished',()=>{
  assert.equal(data.circuits.length,20);
