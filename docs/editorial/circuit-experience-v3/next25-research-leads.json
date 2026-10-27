@@ -1561,17 +1561,24 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 2020,
           "title": {
-            "en": "How Portugal returned in 2020",
-            "uk": "How Portugal returned in 2020"
+            "en": "Portugal returns and Hamilton rewrites the wins record",
+            "uk": "Португалія повертається, а Гамільтон встановлює рекорд перемог"
           },
           "editorial_direction": {
             "en": "Research archival coverage of how portugal returned in 2020 with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «How Portugal returned in 2020» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "When Formula 1 returned to Portugal in 2020, the championship raced at Portimão rather than the Estoril circuit associated with earlier Portuguese Grands Prix. Lewis Hamilton had a difficult opening lap and briefly dropped behind Valtteri Bottas and Carlos Sainz. Once his tyres warmed up, he recovered, overtook Bottas on lap 20 and claimed his 92nd Grand Prix victory, surpassing Michael Schumacher's previous record of 91.",
+            "uk": "Коли Формула-1 повернулася до Португалії у 2020 році, гонку прийняв Портіман, а не Ешторил, відомий за попередніми Гран-прі. Льюїс Гамільтон пережив складне перше коло й опинився позаду Валттері Боттаса та Карлоса Сайнса. Коли шини прогрілися, він відігрався, на 20-му колі обігнав Боттаса й здобув 92-гу перемогу, перевершивши попередній рекорд Міхаеля Шумахера."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -1587,17 +1594,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2020,
           "title": {
-            "en": "The slippery first race weekend",
-            "uk": "The slippery first race weekend"
+            "en": "Cold tyres scramble the opening laps at Portimão",
+            "uk": "Холодні шини змінюють початок гонки в Портімані"
           },
           "editorial_direction": {
             "en": "Research archival coverage of the slippery first race weekend with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «The slippery first race weekend» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "The first laps of the 2020 Portuguese Grand Prix looked nothing like the comfortable Mercedes finish that followed. Hamilton struggled for tyre temperature, Bottas passed him and Carlos Sainz briefly took the lead in his McLaren. As the Mercedes tyres reached their working window, the order changed again. Hamilton regained the lead on lap 20 and won by more than 25 seconds. The changing grip, not merely the final classification, explains the race's strange opening.",
+            "uk": "Перші кола Гран-прі Португалії 2020 року зовсім не нагадували впевнений фініш Mercedes. Гамільтон не міг швидко прогріти шини, його обігнав Боттас, а Карлос Сайнс ненадовго очолив гонку на McLaren. Коли шини Mercedes запрацювали краще, порядок знову змінився. Гамільтон повернув лідерство на 20-му колі та переміг із перевагою понад 25 секунд. Саме зміна зчеплення пояснює незвичний старт."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -1756,30 +1770,44 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 1993,
           "title": {
-            "en": "The 1993 European Grand Prix",
-            "uk": "The 1993 European Grand Prix"
+            "en": "Senna turns Donington's only championship race into a classic",
+            "uk": "Сенна перетворює єдину гонку Донингтона на класику"
           },
           "editorial_direction": {
             "en": "Research archival coverage of the 1993 european grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «The 1993 European Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/from-mighty-comebacks-to-stunning-debut-victories-nine-of-the-greatest-wet.76xmQPYD8I3wtkM8g860rT"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "The 1993 European Grand Prix was Donington Park's only Formula 1 World Championship race. Ayrton Senna started fourth, lost another place at the opening corner, then overtook four cars before the first lap was over. In wet conditions he turned a difficult start into the lead and went on to win for McLaren. One afternoon was enough to give Donington a place in the sport's most memorable wet-weather stories.",
+            "uk": "Гран-прі Європи 1993 року став єдиною гонкою чемпіонату світу Формули-1 на Донингтон-Парку. Айртон Сенна стартував четвертим, у першому повороті втратив ще одну позицію, а потім до завершення кола обігнав чотирьох суперників. На мокрій трасі він перетворив невдалий старт на лідерство й переміг за McLaren. Одного дня вистачило, щоб Донингтон назавжди запам’ятався шанувальникам дощових гонок."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
-          "year": null,
+          "year": 1993,
           "title": {
-            "en": "The Old Hairpin and Craner Curves",
-            "uk": "The Old Hairpin and Craner Curves"
+            "en": "A pass through Craner Curves helps define Senna's first lap",
+            "uk": "Обгін у Craner Curves — частина легендарного кола Сенни"
           },
           "editorial_direction": {
             "en": "Research archival coverage of the old hairpin and craner curves with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «The Old Hairpin and Craner Curves» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/ayrton-senna-10-moments-of-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "Senna's first lap at Donington in 1993 is often remembered as one sweeping piece of driving, but it was a succession of distinct overtakes. Formula 1's historical account singles out his move around Karl Wendlinger's Sauber through the Craner Curves. Senna then passed Alain Prost at the final hairpin to take the lead. The named corners belong to this documented sequence, not to an invented modern turn-number overlay.",
+            "uk": "Перше коло Сенни в Донингтоні 1993 року часто згадують як один блискучий ривок, але насправді воно складалося з кількох окремих обгонів. Історичний матеріал Формули-1 особливо виділяє атаку на Sauber Карла Вендлінгера в Craner Curves. Згодом Сенна пройшов Алена Проста в останній шпильці й очолив гонку. Назви поворотів підтверджені описом того заїзду, а не вигаданою сучасною нумерацією."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -2347,17 +2375,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 1982,
           "title": {
-            "en": "The debut Detroit Grand Prix",
-            "uk": "The debut Detroit Grand Prix"
+            "en": "Watson wins Detroit's first World Championship Grand Prix",
+            "uk": "Вотсон виграє перший чемпіонатний Гран-прі Детройта"
           },
           "editorial_direction": {
             "en": "Research archival coverage of the debut detroit grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «The debut Detroit Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/10-of-the-greatest-recovery-drives-after-starting-at-the-back-of-the-grid.7sciMqdQF2tCBaO3jIIxBs.7sciMqdQF2tCBaO3jIIxBs"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "Detroit joined the Formula 1 calendar in 1982 and John Watson gave the inaugural race a remarkable winner. Starting 17th for McLaren, he recovered through the field to take victory. The result was a demonstration that a starting position on a demanding street circuit need not predict the finish. Watson would pull off an even more unlikely recovery from 22nd in Long Beach the following year.",
+            "uk": "Детройт дебютував у календарі Формули-1 1982 року, і переможцем першої гонки став Джон Вотсон. Стартувавши 17-м за McLaren, він прорвався крізь пелотон і виграв. Ця гонка показала, що стартова позиція на складній міській трасі ще не визначає результат. Наступного року Вотсон здійснить ще неймовірніший прорив — із 22-го місця в Лонг-Біч."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -2469,17 +2504,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 1983,
           "title": {
-            "en": "A winding route down to the harbour",
-            "uk": "A winding route down to the harbour"
+            "en": "Two McLarens come from the back to finish first and second",
+            "uk": "Два McLaren прориваються з кінця решітки на перші два місця"
           },
           "editorial_direction": {
             "en": "Research archival coverage of a winding route down to the harbour with primary sources and check whether it belongs to the circuit's most important stories.",
             "uk": "Перевірити архівні джерела за темою «A winding route down to the harbour» та визначити, чи вона справді належить до найважливіших історій траси."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/the-8-biggest-recovery-drives-to-win-in-formula-1-history.2gPR6LU7n1fMTZhp2G8KAM.2gPR6LU7n1fMTZhp2G8KAM"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "John Watson began the 1983 United States Grand Prix West from 22nd on the grid, while teammate Niki Lauda started 23rd. Both McLarens were far more competitive in the race than qualifying had suggested. Watson passed through the field to win, Lauda finished second, and only third-placed René Arnoux remained on the lead lap with them. This was not an ordinary victory from pole: the team's race pace overturned the expectations set on Saturday.",
+            "uk": "Джон Вотсон стартував на Гран-прі США-Захід 1983 року з 22-го місця, а його напарник Нікі Лауда — з 23-го. У гонці обидва McLaren виявилися значно швидшими, ніж у кваліфікації. Вотсон прорвався до перемоги, Лауда став другим, і лише третій призер Рене Арну завершив усю дистанцію без відставання на коло. Це була не звичайна перемога з поулу: темп команди в неділю повністю змінив очікування суботи."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
