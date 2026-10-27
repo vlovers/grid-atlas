@@ -265,7 +265,7 @@
           "feature_kind": "named_turn",
           "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
           "feature_source_url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_scope_note": "Historic name for the sweeping bend now called Biassono; do not backdate the modern name to old races.",
           "layout_binding_status": "not_verified"
         },
         {
@@ -608,10 +608,10 @@
           "turn_number": null,
           "configuration_id": null,
           "status": "name_candidate_needs_official_number_and_layout",
-          "feature_kind": "unresolved",
-          "feature_evidence_status": "name_lead_not_verified",
-          "feature_source_url": null,
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/is-this-the-ultimate-grand-prix-track-will-buxton-builds-his-perfect-2020-f1.e5kjMWOWIRg7rLXskUyp8",
+          "feature_scope_note": "Named bend following the Senna S; no historic turn number is approved.",
           "layout_binding_status": "not_verified"
         },
         {
@@ -619,10 +619,10 @@
           "turn_number": null,
           "configuration_id": null,
           "status": "name_candidate_needs_official_number_and_layout",
-          "feature_kind": "unresolved",
-          "feature_evidence_status": "name_lead_not_verified",
-          "feature_source_url": null,
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_kind": "corner_sequence",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.f1technical.net/news/10907",
+          "feature_scope_note": "Named downhill braking zone and bend(s); descriptions of Turn 4 and the 4/5 sequence vary. Do not pin one turn number without an event-era layout source.",
           "layout_binding_status": "not_verified"
         },
         {
@@ -630,10 +630,10 @@
           "turn_number": null,
           "configuration_id": null,
           "status": "name_candidate_needs_official_number_and_layout",
-          "feature_kind": "unresolved",
-          "feature_evidence_status": "name_lead_not_verified",
-          "feature_source_url": null,
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_kind": "named_turn",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/need-to-know-brazil.2txdrfSt3S8ekYIGkS6QOK",
+          "feature_scope_note": "Named left-hand bend before the uphill run to the finish; turn number not bound to historical F1DB layouts.",
           "layout_binding_status": "not_verified"
         }
       ],
@@ -908,8 +908,8 @@
           "status": "name_candidate_needs_official_number_and_layout",
           "feature_kind": "named_turn",
           "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
-          "feature_source_url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/magnussen-explains-gearbox-issue-that-caused-imola-retirement-and-gave-him.3gk0azsqf863kbO76hzNGa",
+          "feature_scope_note": "Tosa is a hairpin on the modern layout; no assertion about older corner numbering.",
           "layout_binding_status": "not_verified"
         },
         {
@@ -928,10 +928,10 @@
           "turn_number": null,
           "configuration_id": null,
           "status": "name_candidate_needs_official_number_and_layout",
-          "feature_kind": "unresolved",
-          "feature_evidence_status": "name_lead_not_verified",
-          "feature_source_url": null,
-          "feature_scope_note": "Feature name/type only. Historical layout, turn numbering and geometry are not independently approved.",
+          "feature_kind": "corner_pair",
+          "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
+          "feature_source_url": "https://www.formula1.com/en/latest/article/watch-let-pierre-gasly-guide-you-around-a-lap-of-the-thrilling-imola-circuit.5gypgxM2E19TrVdZcuBKpt",
+          "feature_scope_note": "Modern layout has two Rivazza bends; historical configuration and turn numbering not verified.",
           "layout_binding_status": "not_verified"
         }
       ],
@@ -1044,8 +1044,8 @@
           "status": "name_candidate_needs_official_number_and_layout",
           "feature_kind": "historical_layout_sensitive",
           "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
-          "feature_source_url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
-          "feature_scope_note": "Nordschleife feature, not a feature of the modern 1984+ GP course.",
+          "feature_source_url": "https://mobile.nuerburgring.de/news/categories/adac-zurich-24h-rennen",
+          "feature_scope_note": "Caracciola-Karussell is a Nordschleife section; not a feature of the modern GP layout. Historical geometry not bound.",
           "layout_binding_status": "not_verified"
         },
         {
@@ -1055,8 +1055,8 @@
           "status": "name_candidate_needs_official_number_and_layout",
           "feature_kind": "straight",
           "feature_evidence_status": "feature_kind_supported_not_layout_number_verified",
-          "feature_source_url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
-          "feature_scope_note": "Nordschleife straight/track section; NOT a turn and absent from modern Grand Prix layouts.",
+          "feature_source_url": "https://www.nuerburgring.de/news/erstmals-auf-der-nordschleife-nurburgring-investiert-weiter-in-digitalisierung",
+          "feature_scope_note": "Long Nordschleife track section, NOT a corner and not present in modern GP configurations.",
           "layout_binding_status": "not_verified"
         }
       ],
