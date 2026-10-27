@@ -31,14 +31,23 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
    }
    assert.ok(c.moments[0].sources?.length > 0);
    assert.ok(c.moments[0].sources.every(s => acceptedSource(c.circuit_id, c.moments[0].year, s)));
+   const eventYears=new Set();
    for(const moment of c.moments){
+     assert.ok(Number.isInteger(moment.year) && moment.year>=1950 && moment.year<=2026, c.circuit_id+' invalid event year');
+     assert.ok(!eventYears.has(moment.year), c.circuit_id+'/'+moment.year+' duplicate event');
+     eventYears.add(moment.year);
+     for(const lang of ['en','uk']){
+       assert.ok(typeof moment.title?.[lang]==='string' && moment.title[lang].trim().length>5,c.circuit_id+'/'+moment.year+'/'+lang+' missing title');
+       assert.ok(typeof moment.narrative?.[lang]==='string' && moment.narrative[lang].trim().length>=100,c.circuit_id+'/'+moment.year+'/'+lang+' narrative too short');
+     }
+     assert.notEqual(moment.narrative.en.trim(),moment.narrative.uk.trim(),c.circuit_id+'/'+moment.year+' untranslated narrative');
+     assert.equal(new Set(moment.sources).size,moment.sources.length,c.circuit_id+'/'+moment.year+' duplicate source');
      assert.ok(['unverified_research_draft','source_checked_research_draft','official_classification_checked_interpretation_pending'].includes(moment.review_status));
      assert.ok(moment.sources?.length > 0, c.circuit_id+'/'+moment.year);
      for (const source of moment.sources) {
        assert.ok(acceptedSource(c.circuit_id, moment.year, source), `${c.circuit_id}/${moment.year}: unapproved source ${source}`);
      }
      if(moment.review_status==='unverified_research_draft') assert.notEqual(moment.source_granularity,'official_F1_article_contains_specific_race');
-     for(const lang of ['en','uk']) assert.ok(moment.narrative[lang]?.trim().length>=60,c.circuit_id+'/'+moment.year+'/'+lang);
    }
    for(const turn of c.corner_names){
      assert.equal(turn.turn_number,null);
