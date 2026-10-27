@@ -23,3 +23,5 @@ Per-command results and final CI are recorded in verification.md and the PR. The
 Dedicated browser tests traverse season → published story, verify one calendar/no automatic highlight sections, retain provisional 2026 wording, and open the compact media disclosure by keyboard. The final route sweep covers home, all catalogues, driver/constructor/circuit profiles, 1988/2026 seasons, Time Machine, Atlas and History Explorer. No-JS core browsing and existing map/list alternatives are checked separately.
 
 Merge and release remain maintainer actions; CI does not grant historical-content, media, real-origin or #104 operational acceptance.
+
+[Combined three-PR validation](combined-verification.md) records the detached composition, source SHAs,354 unit/434 Python/528 browser passes,78-page final visual report and full encyclopedia coverage audit. This temporary composition does not merge the PRs.
