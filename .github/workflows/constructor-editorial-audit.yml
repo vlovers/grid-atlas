@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
       - name: Validate research-only identity guards
@@ -44,7 +44,7 @@ jobs:
             --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
             --output /tmp/constructor-research-identity-audit.json
       - name: Upload unpublished identity candidates for manual review
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: unpublished-constructor-identity-candidates
           path: /tmp/constructor-research-identity-audit.json
