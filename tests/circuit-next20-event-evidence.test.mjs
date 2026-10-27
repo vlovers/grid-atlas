@@ -5,18 +5,22 @@ import { readFileSync } from 'node:fs';
 const dossier = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-bilingual-histories-v1.json', 'utf8'));
 const audit = JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/NEXT20_EVENT_EVIDENCE_PASS_20261027.json', 'utf8'));
 
-test('11 event-specific evidence checks correspond to current bilingual manuscripts', () => {
+test('22 event-specific evidence checks cover all 20 circuits', () => {
   assert.equal(audit.publication, 'blocked');
-  assert.equal(audit.reviewed_events.length, 11);
-  assert.equal(audit.remaining.other_event_drafts, 94);
+  assert.equal(audit.reviewed_events.length, 22);
+  assert.equal(audit.remaining.other_event_drafts, 83);
   assert.equal(audit.remaining.claim_level_approval, 0);
   assert.equal(audit.remaining.feature_layout_bindings_verified, 0);
   assert.equal(audit.remaining.media_rights_approved, 0);
   const seen = new Set();
+  const circuits = new Set();
+  let rewritten = 0;
   for (const item of audit.reviewed_events) {
     const key = item.circuit_id + '/' + item.year;
     assert.ok(!seen.has(key), key);
     seen.add(key);
+    circuits.add(item.circuit_id);
+    if (item.rewritten_this_pass) rewritten++;
     const circuit = dossier.circuits.find(c => c.circuit_id === item.circuit_id);
     assert.ok(circuit, key);
     const moment = circuit.moments.find(m => m.year === item.year && m.title.en === item.title_en);
@@ -30,5 +34,7 @@ test('11 event-specific evidence checks correspond to current bilingual manuscri
     assert.equal(item.editorial_approval, false, key);
     assert.equal(item.media_rights_approved, false, key);
   }
+  assert.equal(circuits.size, 20);
+  assert.equal(rewritten, 11);
   assert.equal(dossier.publication, 'blocked_pending_independent_historical_review');
 });
