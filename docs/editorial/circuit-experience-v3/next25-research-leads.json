@@ -50,17 +50,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 2016,
           "title": {
-            "en": "The first Azerbaijan Grand Prix",
-            "uk": "The first Azerbaijan Grand Prix"
+            "en": "Rosberg wins Baku's first Grand Prix",
+            "uk": "Росберг виграє перший Гран-прі в Баку"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the first azerbaijan grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The first Azerbaijan Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
+            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "In 2016 Baku hosted Formula 1 for the first time under the European Grand Prix name. Nico Rosberg won for Mercedes from pole position, leading every lap. A year later the same city hosted the first race officially called the Azerbaijan Grand Prix. The naming difference matters: the venue debuted in 2016, not 2017.",
+            "uk": "У 2016 році Баку вперше прийняло Формулу-1 — тоді гонка називалася Гран-прі Європи. Ніко Росберг переміг за Mercedes із поулу та пролідирував усю дистанцію. А вже наступного року місто прийняло перший Гран-прі Азербайджану. Це важлива різниця: траса дебютувала в календарі 2016-го, а не 2017-го."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -76,30 +83,44 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2018,
           "title": {
-            "en": "Safety-car restarts",
-            "uk": "Safety-car restarts"
+            "en": "Red Bull's double retirement in Baku",
+            "uk": "Обидва Red Bull сходять після зіткнення"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of safety-car restarts with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Safety-car restarts» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
+            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "The 2018 Azerbaijan Grand Prix took a sudden turn when Red Bull teammates Daniel Ricciardo and Max Verstappen collided on the main straight. Both retired, leaving the team with nothing from a battle between its own drivers. Later, Valtteri Bottas suffered a puncture while leading and Lewis Hamilton inherited the win. Baku had changed the expected result twice in a single afternoon.",
+            "uk": "Гран-прі Азербайджану 2018 року різко змінився, коли напарники Red Bull Даніель Ріккардо й Макс Ферстаппен зіткнулися на головній прямій. Обидва зійшли після боротьби один з одним. Згодом Валттері Боттас проколов шину, лідируючи в гонці, й перемога дісталася Льюїсу Гамільтону. За один день Баку двічі перевернуло очікуваний результат."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
-          "year": null,
+          "year": 2021,
           "title": {
-            "en": "Late-race championship reversals",
-            "uk": "Late-race championship reversals"
+            "en": "Pérez wins after Verstappen's late tyre failure",
+            "uk": "Перес перемагає після пізнього проколу Ферстаппена"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of late-race championship reversals with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Late-race championship reversals» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
+            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/how-the-azerbaijan-grand-prix-became-a-modern-classic.5aL5RCVlpraaMF26WzGnPs"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "Max Verstappen appeared on course to win the 2021 Azerbaijan Grand Prix until a tyre failure sent him into the barriers with only five laps remaining. A stoppage followed and the race restarted for a two-lap sprint. Sergio Pérez held on to win for Red Bull. The contrast was striking: one teammate had lost a likely victory, while the other left Baku with the trophy.",
+            "uk": "Макс Ферстаппен наближався до перемоги на Гран-прі Азербайджану 2021 року, але за п’ять кіл до фінішу проблема з шиною відправила його в бар’єр. Після зупинки гонку відновили для двоколового спринту. Серхіо Перес утримав першість і переміг за Red Bull. Один напарник утратив майже здобуту перемогу, інший залишив Баку з трофеєм."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         }
       ],
       "turn_names": [],
@@ -274,17 +295,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2023,
           "title": {
-            "en": "The 2023 mandatory tyre stint limits",
-            "uk": "The 2023 mandatory tyre stint limits"
+            "en": "An unusual 18-lap tyre limit",
+            "uk": "Незвичне обмеження шин до 18 кіл"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the 2023 mandatory tyre stint limits with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The 2023 mandatory tyre stint limits» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
+            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/explained-what-does-the-maximum-tyre-stint-length-rule-mean-for-the-qatar.4q8iXkNgE3sLnIIASPV1sm"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "At the 2023 Qatar Grand Prix, teams faced an exceptional tyre rule: a new set could be used for no more than 18 racing laps. The FIA and Pirelli introduced the restriction after concerns about tyre damage associated with the kerbs. It transformed the strategic choices teams could make. Max Verstappen won, but the unusual safety rule is essential to understanding how this particular Lusail race unfolded.",
+            "uk": "На Гран-прі Катару 2023 року команди зіткнулися з винятковим правилом: на новому комплекті шин дозволяли проїхати не більш ніж 18 гоночних кіл. FIA та Pirelli запровадили обмеження через побоювання щодо пошкодження шин на поребриках. Це змінило доступні командам стратегії. Макс Ферстаппен переміг, але без пояснення особливого правила важко зрозуміти перебіг цієї гонки."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
@@ -766,17 +794,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 1994,
           "title": {
-            "en": "The Schumacher-Hill collision in 1994",
-            "uk": "The Schumacher-Hill collision in 1994"
+            "en": "Schumacher and Hill collide in the title decider",
+            "uk": "Шумахер і Гілл зіштовхуються у фіналі сезону"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the schumacher-hill collision in 1994 with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The Schumacher-Hill collision in 1994» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
+            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF"
+          ],
+          "status": "source_checked_research_draft",
+          "narrative": {
+            "en": "Michael Schumacher arrived at the 1994 Australian Grand Prix one championship point ahead of Damon Hill. On lap 36 at Adelaide, Schumacher ran off the track, returned and collided with Hill as the Williams tried to pass. Schumacher retired immediately; Hill's damaged car could not continue either. The title went to Schumacher by one point. The collision remains controversial, and its consequences should be distinguished from claims about intent.",
+            "uk": "Міхаель Шумахер приїхав на фінальний Гран-прі Австралії 1994 року з перевагою в одне очко над Деймоном Гіллом. На 36-му колі в Аделаїді Шумахер виїхав за межі траси, повернувся і зіткнувся з Williams Гілла, який намагався обігнати. Шумахер одразу зійшов, а пошкоджений болід Гілла теж не зміг продовжити гонку. Титул дістався Шумахеру з перевагою в одне очко. Суперечка навколо зіткнення не дає підстав вигадувати чиїсь наміри."
+          },
+          "source_granularity": "official_F1_specific_historical_article"
         },
         {
           "year": null,
