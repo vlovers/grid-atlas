@@ -22,7 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
       - name: Test bilingual manuscripts and fail-closed publication
         run: python3 -m unittest discover -s tests -p test_driver_biography_batch2.py -v
       - name: Fetch pinned statistical evidence
@@ -40,7 +42,7 @@ jobs:
           --checksums /tmp/biography-f1db/checksums_sha256.txt
           > /tmp/biography-batch2-report.json
       - name: Retain unpublished evidence report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: biography-batch2-research-validation
           path: /tmp/biography-batch2-report.json
