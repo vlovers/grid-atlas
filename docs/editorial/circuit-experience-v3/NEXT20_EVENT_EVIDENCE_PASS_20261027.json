@@ -3,7 +3,7 @@
   "batch": "next20",
   "date": "2026-10-27",
   "publication": "blocked",
-  "review_scope": "11 event-specific first-pass corroboration checks; NOT independent claim-by-claim editorial approval",
+  "review_scope": "22 event-specific first-pass corroboration checks across all 20 circuits; 11 UK/EN narratives rewritten, 11 existing narratives reviewed without rewriting. NOT independent claim-level editorial approval.",
   "reviewed_events": [
     {
       "circuit_id": "gilles-villeneuve",
@@ -14,7 +14,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "City naming act not independently checked",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "suzuka",
@@ -25,7 +26,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "FIA classification and retrospective support different parts of claim",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "shanghai",
@@ -36,7 +38,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Do not conflate Mercedes works and engine supplier records",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "monza",
@@ -47,7 +50,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Pole and runner-up should be checked against classification",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "interlagos",
@@ -58,7 +62,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "No finding about blame for contact is claimed",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "hungaroring",
@@ -69,7 +74,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Road-order and post-disqualification classification differ",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "hungaroring",
@@ -80,7 +86,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "No assertion about Norris' private motivations",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "interlagos",
@@ -91,7 +98,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Mechanical details from official historical retrospective",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "zandvoort",
@@ -102,7 +110,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Two reserve entries did not start; do not count as starters",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "yas-marina",
@@ -113,7 +122,8 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "No inference about disputed steward decisions",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
     },
     {
       "circuit_id": "silverstone",
@@ -124,14 +134,147 @@
       "evidence_kind": "F1 race report, retrospective, biography or official classification (as specified by linked article)",
       "remaining_limitation": "Do not infer a legal ruling on penalty validity",
       "editorial_approval": false,
-      "media_rights_approved": false
+      "media_rights_approved": false,
+      "rewritten_this_pass": true
+    },
+    {
+      "circuit_id": "imola",
+      "year": 1994,
+      "title_en": "A weekend that changed the sport",
+      "claims_checked_against_primary_publisher": "Ratzenberger and Senna fatalities; Barrichello crash; safety work accelerated, not created from scratch",
+      "evidence_url": "https://www.formula1.com/en/latest/article/imola-94-and-the-lasting-safety-legacy.5P8zqEzNjKzYw8qdckoYFF",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 retrospective explains context; no independent medical or FIA investigation report",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "nurburgring",
+      "year": 1976,
+      "title_en": "Lauda's Nordschleife accident",
+      "claims_checked_against_primary_publisher": "Second-lap Lauda fire; Edwards, Lunger, Ertl, Merzario rescue; later comeback",
+      "evidence_url": "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 retrospective supports rescue; exact race classification independently supports Hunt win",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "year": 2019,
+      "title_en": "Rain turns the order upside down",
+      "claims_checked_against_primary_publisher": "Verstappen five stops and spin; Vettel P2 from grid P20; Kvyat P3",
+      "evidence_url": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "Official contemporary race report supports the listed positions and stops",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "year": 2002,
+      "title_en": "Ferrari team orders",
+      "claims_checked_against_primary_publisher": "A1 Ring Barrichello slowed at final corner on Ferrari instruction; Schumacher won",
+      "evidence_url": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 retrospective supports team order; historical A1 Ring is not modern Red Bull Ring geometry",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "year": 2016,
+      "title_en": "Verstappen's first Red Bull race, first victory",
+      "claims_checked_against_primary_publisher": "First Red Bull start and maiden Verstappen win; Mercedes collision; Raikkonen P2",
+      "evidence_url": "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "Official contemporary report supports event; steward decision on Mercedes collision is not asserted",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "albert-park",
+      "year": 2009,
+      "title_en": "Brawn starts with a double",
+      "claims_checked_against_primary_publisher": "Honda-to-Brawn rescue and opening Australia 2009 Button-Barrichello one-two",
+      "evidence_url": "https://www.formula1.com/en/latest/article/from-brms-rapid-rise-to-brawn-gps-sensational-surge-the-biggest-year-on-year.4vtXUNW9crw8XRAX6ZBB1t",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 retrospective supports team transition; no claim that double diffuser alone explains all performance",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "marina-bay",
+      "year": 2008,
+      "title_en": "The first night race and a hidden scandal",
+      "claims_checked_against_primary_publisher": "First F1 night GP; Alonso P1 after Piquet crash; 2009 investigation finding",
+      "evidence_url": "https://www.formula1.com/en/latest/article/do-you-remember-f1s-first-ever-night-race.40aylFbXcPZSJRGiQv5Dgh",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 retrospective supports chronology; primary FIA decision still required for independent legal review",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "bahrain",
+      "year": 2020,
+      "title_en": "Grosjean escapes a fire on the opening lap",
+      "claims_checked_against_primary_publisher": "First-lap Grosjean contact and fire; escape and burns; race resumed",
+      "evidence_url": "https://www.formula1.com/en/latest/article/bahrain-grand-prix-red-flagged-as-romain-grosjean-escapes-big-crash-on-lap-1.3EnJRuc4bpamAYD2c4fKaO",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "Contemporaneous report is preliminary; medical and FIA investigation conclusions need dedicated sources",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "cota",
+      "year": 2018,
+      "title_en": "Räikkönen ends a five-year wait",
+      "claims_checked_against_primary_publisher": "Raikkonen ended 112-race drought; Verstappen started P18 and finished P2; Hamilton P3",
+      "evidence_url": "https://www.formula1.com/en/latest/article/report-raikkonen-keeps-hamilton%27s-title-hopes-on-ice-with-superb-usa.2tIZLeCzOUuUaEe4WmQAEG",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 race report supports race positions; official classification confirms exact 1.281s margin",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "sepang",
+      "year": 2013,
+      "title_en": "The Multi 21 dispute",
+      "claims_checked_against_primary_publisher": "Vettel ignored Red Bull Multi 21 instruction and passed Webber",
+      "evidence_url": "https://www.formula1.com/en/latest/article/horner-reveals-what-sparked-multi-21-controversy.6rSHG4O9lCE0yUQaMC0SWq",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "Horner's retrospective is a participant perspective, not neutral evidence of each driver's motives",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "year": 2020,
+      "title_en": "Hamilton's seventh title on a slippery track",
+      "claims_checked_against_primary_publisher": "Hamilton sixth on grid, one intermediate change, won by 31.633s, seventh title",
+      "evidence_url": "https://www.formula1.com/en/latest/article/hamilton-seals-historic-7th-title-with-peerless-wet-weather-victory-in.4wK1atemiXDvWXQxOknL4J",
+      "evidence_kind": "Formula 1 official race report or historical retrospective",
+      "remaining_limitation": "F1 race report and classification support facts; no media rights inferred",
+      "editorial_approval": false,
+      "media_rights_approved": false,
+      "rewritten_this_pass": false
     }
   ],
   "remaining": {
-    "other_event_drafts": 94,
+    "other_event_drafts": 83,
     "claim_level_approval": 0,
     "feature_layout_bindings_verified": 0,
     "media_rights_approved": 0
   },
-  "method": "Read event-specific F1 published articles and official race classifications where relevant. For these 11 stories, rewritten English and Ukrainian narratives stay within supported facts; this check does not validate all 105 events, guarantee full source uptime, or substitute an independent human editor."
+  "method": "Read event-specific F1 published articles and official race classifications where relevant for 22 events, and rewrote 11 bilingual narratives to fit the supported facts. No independent editorial approval, full verification of all 105, all-source uptime or rights clearance is claimed."
 }
