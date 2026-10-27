@@ -164,7 +164,6 @@ test('layout reconciliation totals are measured and never imply a reviewed race 
   assert.ok(f1dbLayouts.limitations.some((x) => x.includes('Corner')));
 });
 
-
 test('all historical sources have canonical article IDs and event-specific leads', () => {
   for (const circuit of data.circuits) {
     for (const moment of circuit.moments) {
@@ -176,10 +175,13 @@ test('all historical sources have canonical article IDs and event-specific leads
         assert.ok(!url.search, `${label}: tracking or query URL`);
         assert.ok(!url.hash, `${label}: source fragment`);
         if (url.hostname === 'www.formula1.com' && url.pathname.includes('/en/latest/article/')) {
-          assert.match(url.pathname, /\\.[A-Za-z0-9]{20,}$/, `${label}: noncanonical F1 article ID`);
-          assert.doesNotMatch(url.pathname, /\\.html\\.[A-Za-z0-9]{20,}$/, label);
-          assert.doesNotMatch(url.pathname, /(\\.[A-Za-z0-9]{20,})\\1$/, label);
-          assert.ok(!url.pathname.includes('greatest-races-best-25-f1-75-years-anniversary'), `${label}: index is not race evidence`);
+          assert.match(url.pathname, /\.[A-Za-z0-9]{20,}$/, label);
+          assert.doesNotMatch(url.pathname, /\.html\.[A-Za-z0-9]{20,}$/, label);
+          assert.doesNotMatch(url.pathname, /(\.[A-Za-z0-9]{20,})\1$/, label);
+          assert.ok(
+            !url.pathname.includes('greatest-races-best-25-f1-75-years-anniversary'),
+            `${label}: index is not race evidence`,
+          );
         }
       }
     }
