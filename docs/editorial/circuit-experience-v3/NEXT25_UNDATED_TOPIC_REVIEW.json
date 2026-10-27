@@ -4,8 +4,8 @@
   "publication": "blocked",
   "purpose": "Do not invent a single year for a circuit characteristic or historical period; request documented event date or layout era.",
   "summary": {
-    "total": 23,
-    "period_or_transition": 10,
+    "total": 20,
+    "period_or_transition": 7,
     "configuration_topics": 13
   },
   "records": [
@@ -200,41 +200,11 @@
       "publication": "blocked"
     },
     {
-      "circuit_id": "phoenix-street",
-      "story_index": 4,
-      "title_en": "The end of the Phoenix experiment",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
       "circuit_id": "detroit-street",
       "story_index": 2,
       "title_en": "The slowest and roughest street sections",
       "topic_type": "circuit_characteristic_spanning_configurations",
       "required_action": "attach_source_to_exact_historical_layout_before_publication",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "detroit-street",
-      "story_index": 4,
-      "title_en": "Why the race moved to Phoenix",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
-      "year": null,
-      "independent_approval": false,
-      "publication": "blocked"
-    },
-    {
-      "circuit_id": "long-beach",
-      "story_index": 4,
-      "title_en": "The switch to IndyCar racing",
-      "topic_type": "historical_period_or_transition",
-      "required_action": "source_date_range_and_identify_the_specific_event_or_period",
       "year": null,
       "independent_approval": false,
       "publication": "blocked"
