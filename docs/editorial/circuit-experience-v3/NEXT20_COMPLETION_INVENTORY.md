@@ -11,7 +11,7 @@
 | suzuka | 6 | 6 | 6 | 0 | 0 |
 | interlagos | 6 | 6 | 6 | 0 | 0 |
 | gilles-villeneuve | 5 | 5 | 5 | 0 | 0 |
-| imola | 5 | 5 | 2 | 3 | 0 |
+| imola | 5 | 5 | 5 | 0 | 0 |
 | nurburgring | 5 | 5 | 5 | 0 | 0 |
 | hockenheimring | 5 | 5 | 5 | 0 | 0 |
 | zandvoort | 5 | 5 | 5 | 0 | 0 |
@@ -27,7 +27,7 @@
 | sepang | 5 | 5 | 5 | 0 | 0 |
 | istanbul-park | 5 | 5 | 5 | 0 | 0 |
 
-**Totals (27 October 2026):** 105 bilingual historical event drafts across 20 circuits; **105 have at least one source lead**; **102** marked first-pass narrative checked; **3** have classification-only evidence; **0** remain with the explicit unverified status. **Zero publication-ready circuits** in this batch.
+**Totals (27 October 2026):** 105 bilingual historical event drafts across 20 circuits; **105 have at least one source lead**; **105** marked first-pass narrative checked; **0** classification-only; **0** explicitly unverified. **Zero publication-ready circuits** in this batch.
 
 ## Research completed in the 02:00 pass
 
@@ -59,7 +59,7 @@ The above links are **research provenance**, not permission to reuse source phot
 
 ## Research completed in the 03:00 pass — second ten circuits
 
-Rewrote **15** event narratives in both UK and EN, covering **all ten circuits** in the second half of the package. Replaced six generic overview leads with race-specific reporting, and upgraded nine classification-only records using additional historical context. This is first-pass source research, **not independent editorial approval**. The three remaining classification-only records are all in Imola (first half of the batch).
+Rewrote **15** event narratives in both UK and EN, covering **all ten circuits** in the second half of the package. Replaced six generic overview leads with race-specific reporting, and upgraded nine classification-only records using additional historical context. This is first-pass source research, **not independent editorial approval**. The three Imola records (1982, 2005 and 2006) were also completed later in this pass, with race-specific articles and official results.
 
 Important corrections: the 1982 Austrian event happened on the **long Österreichring**, not the modern Red Bull Ring; its winning gap was **0.050 seconds**. The 1996 Melbourne debut involved a restart after Martin Brundle's crash and Jacques Villeneuve losing the lead with an oil leak. The 2008 Singapore story now explicitly distinguishes Alonso's victory from the FIA's subsequent findings about Renault's deliberate crash conspiracy. Abu Dhabi 2021 mentions both the last-lap pass and the stewards' dismissal of Mercedes' protests, without implying the race classification alone proves the Safety Car procedure was proper.
 
@@ -83,9 +83,19 @@ Important corrections: the 1982 Austrian event happened on the **long Österreic
 
 All historical layouts, event-to-F1DB IDs and turn numbers remain pending pinned archive reconciliation. No photographs or third-party media were copied or approved.
 
+### Final three Imola source checks
+
+| Circuit | Year | Source evidence |
+|---|---:|---|
+| imola | 1982 | [1](https://www.formula1.com/en/latest/article/prost-vs-senna-mansell-vs-piquet-and-more-f1s-fiercest-intra-team-driver.4tOtmPUbldfIvIvY4MmyCQ) · [2](https://www.formula1.com/en/results/1982/races/440/san-marino/race-result) |
+| imola | 2005 | [1](https://www.formula1.com/en/latest/article/from-suzuka-to-san-marino-ranking-alonsos-best-renault-wins-from-10-1-ahead.1ZekTTxQMfSGtagQMCejs8) · [2](https://www.formula1.com/en/latest/article/watch-fernando-alonso-relives-his-epic-2005-imola-battle-with-michael.2eKUG2HHc63dbUULVVzQqb) · [3](https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result) |
+| imola | 2006 | [1](https://www.motorsport.com/f1/news/20-years-ago-michael-schumacher-held-off-fernando-alonso-in-imola-f1-duel/10814238/) · [2](https://www.formula1.com/en/results/2006/races/793/san-marino/race-result) |
+
+These narratives distinguish the 1982 team-signals dispute, the 2005 Alonso–Schumacher finish (0.215s) and the 2006 reversal (2.096s). They remain research drafts, not independently reviewed publications.
+
 ## Remaining publication blockers
 
-1. Verify **each assertion** in all 105 stories against exact source passages; three still have classification-only evidence and none has independent editorial sign-off. A results table only verifies positions and timings.
+1. Verify **each assertion** in all 105 stories against exact source passages; all have first-pass source checks but none has independent editorial sign-off. A results table only verifies positions and timings.
 2. Obtain independent historical and bilingual editorial review; `source_checked_research_draft` is first-pass research, not editorial sign-off.
 3. Map all twenty circuits and their events to **pinned F1DB v2026.17.0** circuit, race and configuration IDs. Do not infer historical turn numbering from a modern SVG.
 4. Approve named turns per exact layout and date; unknown names/numbers remain unknown, not invented.
