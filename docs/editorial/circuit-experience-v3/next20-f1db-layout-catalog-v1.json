@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 42,
-    "race_level_unverified_events": 63,
+    "race_level_verified_events": 55,
+    "race_level_unverified_events": 50,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 0
   },
@@ -1002,31 +1002,71 @@
           "year": 2021,
           "title_en": "The Dutch Grand Prix returns",
           "layout_id_candidate": "zandvoort-5",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1048",
+            "race_date": "2021-09-05",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/13-netherlands/race.yml"
+          }
         },
         {
           "year": 1961,
           "title_en": "All starters finish",
           "layout_id_candidate": "zandvoort-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "96",
+            "race_date": "1961-05-22",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1961/races/02-netherlands/race.yml"
+          }
         },
         {
           "year": 1973,
           "title_en": "Purley tries to help Williamson",
           "layout_id_candidate": "zandvoort-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "230",
+            "race_date": "1973-07-29",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/10-netherlands/race.yml"
+          }
         },
         {
           "year": 1985,
           "title_en": "Lauda's final F1 victory",
           "layout_id_candidate": "zandvoort-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "415",
+            "race_date": "1985-08-25",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/11-netherlands/race.yml"
+          }
         },
         {
           "year": 2023,
           "title_en": "Changing weather tests the field",
           "layout_id_candidate": "zandvoort-5",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1092",
+            "race_date": "2023-08-27",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/13-netherlands/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -1064,49 +1104,113 @@
           "year": 2006,
           "title_en": "Button finally wins",
           "layout_id_candidate": "hungaroring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "763",
+            "race_date": "2006-08-06",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/13-hungary/race.yml"
+          }
         },
         {
           "year": 1986,
           "title_en": "Piquet passes Senna around the outside",
           "layout_id_candidate": "hungaroring-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "431",
+            "race_date": "1986-08-10",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/11-hungary/race.yml"
+          }
         },
         {
           "year": 1989,
           "title_en": "Mansell charges from twelfth",
           "layout_id_candidate": "hungaroring-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "478",
+            "race_date": "1989-08-13",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1989/races/10-hungary/race.yml"
+          }
         },
         {
           "year": 1997,
           "title_en": "Hill almost wins for Arrows",
           "layout_id_candidate": "hungaroring-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "608",
+            "race_date": "1997-08-10",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/11-hungary/race.yml"
+          }
         },
         {
           "year": 1998,
           "title_en": "A risky strategy pays off",
           "layout_id_candidate": "hungaroring-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "626",
+            "race_date": "1998-08-16",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1998/races/12-hungary/race.yml"
+          }
         },
         {
           "year": 2003,
           "title_en": "Alonso wins for the first time",
           "layout_id_candidate": "hungaroring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "710",
+            "race_date": "2003-08-24",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2003/races/13-hungary/race.yml"
+          }
         },
         {
           "year": 2021,
           "title_en": "Ocon survives a chaotic restart",
           "layout_id_candidate": "hungaroring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1046",
+            "race_date": "2021-08-01",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/11-hungary/race.yml"
+          }
         },
         {
           "year": 2024,
           "title_en": "Piastri wins after a team-order standoff",
           "layout_id_candidate": "hungaroring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1114",
+            "race_date": "2024-07-21",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2024/races/13-hungary/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
