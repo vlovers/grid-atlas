@@ -77,3 +77,16 @@ test('inherited classification sources cite the actual event year, never a diffe
   }
  }
 });
+
+test('editorial caveats removed from reader narrative remain documented in unpublished editorial direction',()=>{
+ const examples=[['lusail',2],['mexico-city',1],['miami',3],['indianapolis',4],['watkins-glen',3]];
+ for(const [slug,index] of examples){
+  const circuit=data.circuits.find(c=>c.candidate_slug===slug);
+  const story=circuit.story_leads[index];
+  assert.equal(circuit.publication,'unpublished');
+  for(const locale of ['en','uk']){
+   assert.ok(story.narrative[locale].length>=145);
+   assert.ok(story.editorial_direction[locale].length>60);
+  }
+ }
+});
