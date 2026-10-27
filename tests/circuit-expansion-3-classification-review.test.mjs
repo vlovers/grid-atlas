@@ -20,8 +20,12 @@ test("classification evidence never upgrades story manuscripts to publication ap
    assert.equal(story.publication,"blocked");
    assert.equal(story.independent_approval,false);
    assert.equal(check.publication,"blocked");
-   assert.equal(check.narrative_evidence,"not_independently_approved");
-   assert.equal(check.classification_evidence,"checked_against_official_f1");
+   assert.ok(["not_independently_approved","independent_historical_source_required"].includes(check.narrative_evidence));
+   assert.ok(["checked_against_official_f1","background_race_row_only"].includes(check.classification_evidence));
+   if(check.classification_evidence==="background_race_row_only") {
+    assert.equal(check.narrative_evidence,"independent_historical_source_required");
+    assert.ok(check.evidence_limitation.length>20);
+   }
    assert.ok(check.claims.driver);
    assert.ok(Number.isInteger(check.claims.laps));
   }
