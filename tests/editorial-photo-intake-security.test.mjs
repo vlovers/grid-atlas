@@ -19,3 +19,10 @@ test('quarantine push uses a step-scoped token with checkout credentials disable
   assert.match(quarantine, /gh auth setup-git\s*\n {12}git push origin HEAD:editorial\/people-who-changed-f1-20261025/);
   assert.doesNotMatch(workflow.split('      - name: Remove accidentally published unreviewed media')[0], /GH_TOKEN:/);
 });
+
+test('quarantine push triggers for changes to protected public images', () => {
+  const pushPaths = workflow.split('  push:')[1]?.split('  workflow_dispatch:')[0];
+  assert.ok(pushPaths, 'push path filters exist');
+  assert.ok(pushPaths.includes('apps/web/public/media/editorial/vettel-monza-2008.jpg'));
+  assert.ok(pushPaths.includes('apps/web/public/media/editorial/brawn-2009.jpg'));
+});
