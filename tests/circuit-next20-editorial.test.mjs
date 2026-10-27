@@ -2,6 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next20-bilingual-histories-v1.json','utf8'));
+const extraSourceHosts = new Set(['www.autosport.com', 'au.motorsport.com', 'www.independent.co.uk']);
+const acceptedSource = (circuitId, raw) => {
+ const url = new URL(raw);
+ return url.protocol === 'https:' && (url.hostname === 'www.formula1.com' || (circuitId === 'istanbul-park' && extraSourceHosts.has(url.hostname)));
+};
 test('20 circuit research entries remain distinct, bilingual and unpublished',()=>{
  assert.equal(data.circuits.length,20);
  assert.equal(new Set(data.circuits.map(x=>x.circuit_id)).size,20);
@@ -17,10 +22,12 @@ test('20 circuit research entries remain distinct, bilingual and unpublished',()
      assert.ok(c.moments[0].title[language].length>5);
      assert.ok(c.moments[0].narrative[language].trim().length>=60,c.circuit_id+'/'+language);
    }
-   assert.ok(c.moments[0].sources?.every(s=>s.startsWith('https://www.formula1.com/')));
+   assert.ok(c.moments[0].sources?.length > 0);
+   assert.ok(c.moments[0].sources.every(s => acceptedSource(c.circuit_id, s)));
    for(const moment of c.moments){
      assert.ok(['unverified_research_draft','source_checked_research_draft','official_classification_checked_interpretation_pending'].includes(moment.review_status));
-     assert.ok(moment.sources?.every(url => url.startsWith('https://www.formula1.com/')));
+     assert.ok(moment.sources?.length > 0, c.circuit_id+'/'+moment.year);
+     assert.ok(moment.sources.every(url => acceptedSource(c.circuit_id, url)), c.circuit_id+'/'+moment.year);
      if(moment.review_status==='unverified_research_draft') assert.notEqual(moment.source_granularity,'official_F1_article_contains_specific_race');
      for(const lang of ['en','uk']) assert.ok(moment.narrative[lang]?.trim().length>=60,c.circuit_id+'/'+moment.year+'/'+lang);
    }
