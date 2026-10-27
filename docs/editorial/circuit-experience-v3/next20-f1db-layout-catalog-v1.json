@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 32,
-    "race_level_unverified_events": 73,
+    "race_level_verified_events": 42,
+    "race_level_unverified_events": 63,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 0
   },
@@ -777,31 +777,71 @@
           "year": 1957,
           "title_en": "Fangio's Nürburgring chase",
           "layout_id_candidate": "nurburgring-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "62",
+            "race_date": "1957-08-04",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "nurburgring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/06-germany/race.yml"
+          }
         },
         {
           "year": 1976,
           "title_en": "Lauda's Nordschleife accident",
           "layout_id_candidate": "nurburgring-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "274",
+            "race_date": "1976-08-01",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "nurburgring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/10-germany/race.yml"
+          }
         },
         {
           "year": 1999,
           "title_en": "Herbert's unexpected win",
           "layout_id_candidate": "nurburgring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "644",
+            "race_date": "1999-09-26",
+            "grand_prix_id": "europe",
+            "circuit_layout_id": "nurburgring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1999/races/14-europe/race.yml"
+          }
         },
         {
           "year": 1984,
           "title_en": "A new Grand Prix circuit",
           "layout_id_candidate": "nurburgring-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "403",
+            "race_date": "1984-10-07",
+            "grand_prix_id": "europe",
+            "circuit_layout_id": "nurburgring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/15-europe/race.yml"
+          }
         },
         {
           "year": 2020,
           "title_en": "Hamilton matches Schumacher's wins",
           "layout_id_candidate": "nurburgring-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1029",
+            "race_date": "2020-10-11",
+            "grand_prix_id": "eifel",
+            "circuit_layout_id": "nurburgring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/11-eifel/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -846,31 +886,71 @@
           "year": 2019,
           "title_en": "Rain turns the order upside down",
           "layout_id_candidate": "hockenheimring-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1008",
+            "race_date": "2019-07-28",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/11-germany/race.yml"
+          }
         },
         {
           "year": 1982,
           "title_en": "Tambay wins for Ferrari",
           "layout_id_candidate": "hockenheimring-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "369",
+            "race_date": "1982-08-08",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/12-germany/race.yml"
+          }
         },
         {
           "year": 2000,
           "title_en": "Barrichello from eighteenth",
           "layout_id_candidate": "hockenheimring-3",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "657",
+            "race_date": "2000-07-30",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2000/races/11-germany/race.yml"
+          }
         },
         {
           "year": 2002,
           "title_en": "The forest layout disappears",
           "layout_id_candidate": "hockenheimring-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "692",
+            "race_date": "2002-07-28",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2002/races/12-germany/race.yml"
+          }
         },
         {
           "year": 2018,
           "title_en": "Vettel crashes from the lead",
           "layout_id_candidate": "hockenheimring-4",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "987",
+            "race_date": "2018-07-22",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/11-germany/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
