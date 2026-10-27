@@ -110,3 +110,14 @@ These narratives distinguish the 1982 team-signals dispute, the 2005 Alonso–Sc
 - `unpublished`: not eligible for public editorial publication.
 
 **No claim of twenty publication-ready circuits is made.** Separate Draft PR #317's twenty-five circuits are outside this inventory.
+
+
+## Bilingual reading pass — 27 October 2026
+
+All **20** circuit introductions were rewritten in English and Ukrainian to foreground concrete historical events and differences between eras rather than generic descriptions. Each introduction is now a multi-sentence reading lead (at least 250 characters per locale); every four-digit year mentioned has a corresponding researched event in the same circuit dossier. This is a **first editorial pass**, not independent historical or translation approval.
+
+A new regression check enforces the per-circuit year anchors and exact-event restrictions for external research publishers. Source-host exceptions are limited to Imola 2006 (Motorsport), Sepang 2012 (BBC), Istanbul Park 2007 (Autosport/Independent), and Istanbul Park 2008 (Motorsport). No general third-party host allowance was added.
+
+**CI diagnosis:** Foundation CI for commit `d2b8a1a` failed because the old test allowed external research publishers only for Istanbul Park and rejected the Imola 2006 Motorsport citation. This was a test-policy mismatch, not proof of invalid history. The allowlist was corrected and narrowed to event-specific exceptions. The new commits require their own CI results; previous green checks do not carry over.
+
+**Not completed:** independent claim-by-claim review of the 105 narratives; canonical F1DB race/configuration IDs; historical turn-number approval; per-image rights; real-archive browser acceptance. Do not publish these drafts yet.
