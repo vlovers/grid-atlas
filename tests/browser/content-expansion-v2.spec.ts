@@ -20,7 +20,7 @@ for (const locale of ['uk', 'en'] as const) {
 
   test(`${locale}: season and race pages expose evidence journeys`, async ({ page }) => {
     await page.goto(`/${locale}/seasons/1950`);
-    const season = page.getByTestId('season-journey');
+    const season = page.getByTestId('season-calendar');
     await expect(season).toBeVisible();
     await expect(season.locator('a[href*="/races/"]').first()).toBeVisible();
     await page.goto(`/${locale}/races/1`);
