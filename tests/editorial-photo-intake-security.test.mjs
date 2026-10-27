@@ -41,3 +41,13 @@ test('quarantine push triggers for changes to protected public images', () => {
   assert.ok(pushPaths.includes('apps/web/public/media/editorial/vettel-monza-2008.jpg'));
   assert.ok(pushPaths.includes('apps/web/public/media/editorial/brawn-2009.jpg'));
 });
+
+test('quarantine never executes repository scripts with write token', () => {
+  const quarantine = workflow.split('  quarantine:')[1];
+  assert.ok(quarantine, 'quarantine job exists');
+  assert.doesNotMatch(workflow, /^  pull_request_target:/m);
+  assert.doesNotMatch(quarantine, /node scripts\//);
+  assert.doesNotMatch(quarantine, /npm (?:run|exec|install|ci)\b/);
+  assert.doesNotMatch(quarantine, /pnpm\b|yarn\b|bun\b/);
+  assert.match(quarantine, /git rm -- "\$file"/);
+});
