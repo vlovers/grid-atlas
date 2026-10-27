@@ -1251,14 +1251,15 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Редакторське застереження винесено з тексту: Важливо відділяти підтверджені зміни від припущень про причини окремих аварій. Перевірка доказів: 1971 Boot extension, independently cited circuit history required; редакторське схвалення й публікація заблоковані."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1970/races"
+            "https://www.formula1.com/en/results/1971/races",
+            "https://www.ebay.com/motors/blog/vehicles/a-quick-history-of-watkins-glen-international"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "The Watkins Glen that welcomed Formula 1 in 1961 was not frozen in time. Changes to the circuit and its safety provisions became part of the story as the championship continued visiting through the 1970s. Alan Jones won the final World Championship race here in 1980. A major expansion added the Boot in 1971, giving the Grand Prix a longer lap. Later safety changes accompanied the rise of faster cars, while the championship's last visit came in 1980.",
             "uk": "Воткінс-Глен, який прийняв Формулу-1 у 1961 році, не залишався незмінним. Упродовж 1970-х змінювалися елементи траси й заходи безпеки. Останню чемпіонатну гонку тут виграв Алан Джонс у 1980 році. У 1971 році додали секцію Boot, яка подовжила гоночне коло. Надалі зміни безпеки відповідали зростанню швидкостей, а останній чемпіонатний етап відбувся 1980 року."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_specific_external_history_candidate_human_source_review_required"
         },
         {
           "year": 1980,
@@ -1637,14 +1638,14 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Перевірка доказів: Circuit Paul Ricard operator documented 1999 redevelopment and 2018 return; редакторське схвалення й публікація заблоковані."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1990/races"
+            "https://www.circuitpaulricard.com/en/the-circuit/history"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "Paul Ricard's identity extends beyond the French Grands Prix it hosted: the venue has also been associated with testing and track development. Its championship record stretches from Jackie Stewart's 1971 victory to its modern return in 2018. The intervening testing years are worth exploring, but precise programmes and circuit specifications require records beyond the race archive. After its earlier Grand Prix era ended in 1990, the venue was purchased in 1999 and developed as a high-tech test track. Racing returned gradually, and Formula 1 came back in 2018 after a long absence.",
             "uk": "Історія Поль-Рікара не обмежується Гран-прі Франції: автодром також пов’язаний із випробуваннями й розвитком гоночних машин. Чемпіонатна історія почалася з перемоги Джекі Стюарта 1971 року й продовжилася сучасним поверненням 2018-го. Точні програми тестів і характеристики конфігурацій потребують окремих джерел. Після завершення першої епохи Гран-прі 1990 року автодром придбали 1999-го й перетворили на високотехнологічний випробувальний центр. Згодом гонки повернулися, а Формула-1 знову приїхала 2018-го."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_specific_external_history_candidate_human_source_review_required"
         },
         {
           "year": 2018,
@@ -2288,14 +2289,14 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Перевірка доказів: Crash.net retrospective documents 2008 Donington 2010 failure; редакторське схвалення й публікація заблоковані."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+            "https://www.crash.net/f1/feature/231895/1/when-the-british-gp-almost-killed-off-donington-park"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "Donington Park's only Formula 1 World Championship Grand Prix was the 1993 European race, won by Ayrton Senna. Its short championship record should not obscure how memorable that wet-weather afternoon became. Why the venue did not establish a longer Formula 1 run is a separate organisational history, not something the race classification can explain. Years later, a plan announced in 2008 promised the British Grand Prix would move here from 2010. The necessary redevelopment and financing failed, and the race stayed at Silverstone. Donington's extraordinary 1993 European Grand Prix remains its sole championship race.",
             "uk": "Єдиним чемпіонатним Гран-прі Формули-1 на Донингтон-Парку став європейський етап 1993 року, який виграв Айртон Сенна. Коротке перебування в календарі не завадило тій дощовій гонці стати легендарною. Причини, чому автодром не отримав постійного етапу, — окрема організаційна історія. Багато років потому, у 2008-му, оголосили план перенести сюди Гран-прі Великої Британії з 2010 року. Але реконструкція й фінансування зірвалися, тож етап залишився у Сільверстоуні. Єдиним чемпіонатним Гран-прі Донінгтона лишилася знаменита гонка 1993 року."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_specific_external_history_candidate_human_source_review_required"
         }
       ],
       "turn_names": [],
@@ -2484,6 +2485,7 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Перевірка доказів: Yonhap October 12 2010 report documents inspection and delays; редакторське схвалення й публікація заблоковані."
           },
           "sources": [
+            "https://en.yna.co.kr/view/AEN20101012003200315",
             "https://www.formula1.com/en/results/2010/races"
           ],
           "status": "classification_supported_research_draft",
@@ -2491,7 +2493,7 @@
             "en": "The Korea International Circuit at Yeongam made its Formula 1 debut in 2010. Heavy rain affected the opening race, which Fernando Alonso won for Ferrari. The construction and readiness of the venue generated their own stories, but specific claims about completion dates or facilities need project records beyond the classification. Construction delays pushed the final FIA circuit inspection to October 2010, just days before the inaugural Grand Prix. The venue received approval and did host its planned Formula 1 debut, but the rushed opening was part of the weekend's story.",
             "uk": "Міжнародний автодром Кореї в Йонамі дебютував у Формулі-1 у 2010 році. Першу гонку ускладнив сильний дощ, а Фернандо Алонсо переміг за Ferrari. Будівництво й готовність траси мають власну історію, але конкретні дати та деталі інфраструктури потребують проєктної документації. Через затримки будівництва фінальну інспекцію FIA провели лише в жовтні 2010-го, за кілька днів до першого Гран-прі. Автодром отримав дозвіл і провів дебютний етап, але поспішна підготовка стала частиною його історії."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_specific_external_history_candidate_human_source_review_required"
         },
         {
           "year": 2010,
@@ -2669,14 +2671,14 @@
             "uk": "Дослідницький текст. Для публікації потрібні незалежні джерела про подію та конфігурацію. Перевірка доказів: Sky News July 2013 contemporary scheduling/tax account; RacingCircuits historical summary; редакторське схвалення й публікація заблоковані."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+            "https://news.sky.com/story/indian-gp-dropped-from-2014-f1-calendar-10438693"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
             "en": "India hosted its last Formula 1 World Championship Grand Prix at Buddh in 2013. Sebastian Vettel won and secured his fourth consecutive Drivers' title there. The championship moment is established by the sporting record; the reasons India disappeared from the calendar need separate legal, commercial and organisational evidence. India's 2014 race was removed from the calendar amid scheduling and taxation disputes. Although a future return was discussed, the Grand Prix did not take place in 2014 or 2015. Vettel's 2013 win therefore remains the last Formula 1 race held at Buddh in that run.",
             "uk": "Останній чемпіонатний Гран-прі Індії на трасі Будд відбувся у 2013 році. Себастьян Феттель переміг і здобув четвертий титул поспіль. Спортивний результат підтверджений протоколом, але причини зникнення етапу потребують окремих юридичних, комерційних та організаційних джерел. Етап 2014 року прибрали з календаря на тлі суперечок про розклад і оподаткування. Повернення обговорювали, але Гран-прі не відбувся ні 2014-го, ні 2015-го. Перемога Феттеля 2013 року так і залишилася останньою в цій серії гонок на Будд."
           },
-          "source_granularity": "existing_source_candidate_context_and_turn_geometry_unverified"
+          "source_granularity": "event_specific_external_history_candidate_human_source_review_required"
         }
       ],
       "turn_names": [],
