@@ -1,0 +1,2234 @@
+{
+  "schema_version": 1,
+  "batch_id": "circuit-next20-pinned-f1db-layout-catalog-v1",
+  "source_release": "v2026.17.0",
+  "source_repository": "https://github.com/f1db/f1db",
+  "source_method": "Official source YAML at the pinned release tag; layout IDs copied from each circuit file; event hints derived only from explicit year annotations in YAML comments. Exact race-level links, when present, were read from pinned F1DB race.yml files and matched to canonical circuit and layout IDs.",
+  "publication": "blocked_pending_race_level_layout_and_corner_review",
+  "summary": {
+    "circuit_count": 20,
+    "layout_count": 68,
+    "event_count": 105,
+    "event_year_hints": 80,
+    "events_requiring_race_lookup": 25,
+    "svg_files_present": 68,
+    "svg_files_missing": 0,
+    "race_level_verified_events": 105,
+    "race_level_unverified_events": 0,
+    "race_level_year_hint_mismatches": 0,
+    "race_level_ambiguous_events": 0,
+    "race_level_disambiguated_events": 2
+  },
+  "limitations": [
+    "All 105 event-to-layout mappings have now been checked against pinned F1DB race.yml, including two same-circuit doubleheaders disambiguated by event-specific reporting. This verifies circuit and layout identity only; it does not validate narrative claims or turn geometry.",
+    "Layout year comments were only initial hints; race.yml is now the primary source for each event's circuit and layout identity.",
+    "The imported Grid Atlas read model does not yet store F1DB layout identities; this is a research-only crosswalk, not a database migration or public page change.",
+    "Corner names, numbering and diagram coordinates are NOT verified by F1DB layout identifiers or SVGs. Never attach corner annotations to a historical layout without independent evidence.",
+    "F1DB circuit ID may differ from Grid Atlas editorial slug. Do not change URL slugs or overwrite imported identities based on a naming similarity.",
+    "No independent editorial approval or image rights clearance is claimed.",
+    "An exact race.yml match verifies a race-specific circuit layout, not the historical narrative, corner naming or media rights."
+  ],
+  "circuits": [
+    {
+      "editorial_circuit_id": "silverstone",
+      "f1db_circuit_id": "silverstone",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/silverstone.yml",
+      "layouts": [
+        {
+          "id": "silverstone-1",
+          "upstream_year_comment": "1950-1954, 1956, 1958, 1960, 1963, 1965, 1967, 1969, 1971, 1973",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-2",
+          "upstream_year_comment": "1975, 1977, 1979, 1981, 1983, 1985",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-3",
+          "upstream_year_comment": "1987-1990",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-4",
+          "upstream_year_comment": "1991-1993",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-5",
+          "upstream_year_comment": "1994-1995",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-5.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-6",
+          "upstream_year_comment": "1996",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-6.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-7",
+          "upstream_year_comment": "1997-2009",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-7.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "silverstone-8",
+          "upstream_year_comment": "2010-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/silverstone-8.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1950,
+          "title_en": "The championship begins",
+          "layout_id_candidate": "silverstone-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1",
+            "race_date": "1950-05-13",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1950/races/01-great-britain/race.yml"
+          }
+        },
+        {
+          "year": 1987,
+          "title_en": "Mansell hunts down Piquet",
+          "layout_id_candidate": "silverstone-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "443",
+            "race_date": "1987-07-12",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1987/races/07-great-britain/race.yml"
+          }
+        },
+        {
+          "year": 2008,
+          "title_en": "Hamilton masters the rain",
+          "layout_id_candidate": "silverstone-7",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "794",
+            "race_date": "2008-07-06",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/09-great-britain/race.yml"
+          }
+        },
+        {
+          "year": 1973,
+          "title_en": "A first-lap chain reaction",
+          "layout_id_candidate": "silverstone-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "229",
+            "race_date": "1973-07-14",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/09-great-britain/race.yml"
+          }
+        },
+        {
+          "year": 1998,
+          "title_en": "The pit-lane finish",
+          "layout_id_candidate": "silverstone-7",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "623",
+            "race_date": "1998-07-12",
+            "grand_prix_id": "great-britain",
+            "circuit_layout_id": "silverstone-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1998/races/09-great-britain/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "monza",
+      "f1db_circuit_id": "monza",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/monza.yml",
+      "layouts": [
+        {
+          "id": "monza-1",
+          "upstream_year_comment": "1950-1954",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-2",
+          "upstream_year_comment": "1955-1956, 1960-1961",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-3",
+          "upstream_year_comment": "1957-1959, 1962-1971",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-4",
+          "upstream_year_comment": "1972-1973",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-5",
+          "upstream_year_comment": "1974-1975",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-5.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-6",
+          "upstream_year_comment": "1976-1979, 1981-1999",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-6.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "monza-7",
+          "upstream_year_comment": "2000-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/monza-7.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1971,
+          "title_en": "Gethin wins by a fraction",
+          "layout_id_candidate": "monza-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "206",
+            "race_date": "1971-09-05",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1971/races/09-italy/race.yml"
+          }
+        },
+        {
+          "year": 1967,
+          "title_en": "Clark's charge runs out of fuel",
+          "layout_id_candidate": "monza-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "159",
+            "race_date": "1967-09-10",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/09-italy/race.yml"
+          }
+        },
+        {
+          "year": 1988,
+          "title_en": "Ferrari's emotional one-two",
+          "layout_id_candidate": "monza-6",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "464",
+            "race_date": "1988-09-11",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/12-italy/race.yml"
+          }
+        },
+        {
+          "year": 2008,
+          "title_en": "Vettel gives Toro Rosso its first win",
+          "layout_id_candidate": "monza-7",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "799",
+            "race_date": "2008-09-14",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/14-italy/race.yml"
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "Leclerc holds off Mercedes",
+          "layout_id_candidate": "monza-7",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1011",
+            "race_date": "2019-09-08",
+            "grand_prix_id": "italy",
+            "circuit_layout_id": "monza-7",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/14-italy/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "suzuka",
+      "f1db_circuit_id": "suzuka",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/suzuka.yml",
+      "layouts": [
+        {
+          "id": "suzuka-1",
+          "upstream_year_comment": "1987-2002",
+          "local_svg_path": "apps/web/public/circuit-layouts/suzuka-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "suzuka-2",
+          "upstream_year_comment": "2003-2006, 2009-2019, 2022-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/suzuka-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2005,
+          "title_en": "Räikkönen's charge",
+          "layout_id_candidate": "suzuka-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "749",
+            "race_date": "2005-10-09",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2005/races/18-japan/race.yml"
+          }
+        },
+        {
+          "year": 1988,
+          "title_en": "Senna wins the title after a troubled start",
+          "layout_id_candidate": "suzuka-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "467",
+            "race_date": "1988-10-30",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/15-japan/race.yml"
+          }
+        },
+        {
+          "year": 1989,
+          "title_en": "The chicane collision",
+          "layout_id_candidate": "suzuka-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "483",
+            "race_date": "1989-10-22",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1989/races/15-japan/race.yml"
+          }
+        },
+        {
+          "year": 1990,
+          "title_en": "A title decided at Turn 1",
+          "layout_id_candidate": "suzuka-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "499",
+            "race_date": "1990-10-21",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/15-japan/race.yml"
+          }
+        },
+        {
+          "year": 2000,
+          "title_en": "Ferrari's long wait ends",
+          "layout_id_candidate": "suzuka-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "662",
+            "race_date": "2000-10-08",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2000/races/16-japan/race.yml"
+          }
+        },
+        {
+          "year": 2012,
+          "title_en": "Kobayashi gives Japan a home podium",
+          "layout_id_candidate": "suzuka-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "873",
+            "race_date": "2012-10-07",
+            "grand_prix_id": "japan",
+            "circuit_layout_id": "suzuka-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/15-japan/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "interlagos",
+      "f1db_circuit_id": "interlagos",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/interlagos.yml",
+      "layouts": [
+        {
+          "id": "interlagos-1",
+          "upstream_year_comment": "1973-1977, 1979-1980",
+          "local_svg_path": "apps/web/public/circuit-layouts/interlagos-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "interlagos-2",
+          "upstream_year_comment": "1990-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/interlagos-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2012,
+          "title_en": "A championship in the rain",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "878",
+            "race_date": "2012-11-25",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/20-brazil/race.yml"
+          }
+        },
+        {
+          "year": 2007,
+          "title_en": "A title changes hands in Brazil",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "785",
+            "race_date": "2007-10-21",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/17-brazil/race.yml"
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "A dramatic finale after the titles were decided",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1017",
+            "race_date": "2019-11-17",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/20-brazil/race.yml"
+          }
+        },
+        {
+          "year": 2008,
+          "title_en": "Massa wins the race, Hamilton takes the title",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "803",
+            "race_date": "2008-11-02",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/18-brazil/race.yml"
+          }
+        },
+        {
+          "year": 2003,
+          "title_en": "The winner changes after the race",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "700",
+            "race_date": "2003-04-06",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2003/races/03-brazil/race.yml"
+          }
+        },
+        {
+          "year": 1991,
+          "title_en": "Senna wins at home at last",
+          "layout_id_candidate": "interlagos-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "502",
+            "race_date": "1991-03-24",
+            "grand_prix_id": "brazil",
+            "circuit_layout_id": "interlagos-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1991/races/02-brazil/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "gilles-villeneuve",
+      "f1db_circuit_id": "montreal",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/montreal.yml",
+      "layouts": [
+        {
+          "id": "montreal-1",
+          "upstream_year_comment": "1978",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "montreal-2",
+          "upstream_year_comment": "1979-1986",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "montreal-3",
+          "upstream_year_comment": "1988-1993",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "montreal-4",
+          "upstream_year_comment": "1994-1995",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "montreal-5",
+          "upstream_year_comment": "1996-2001",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-5.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "montreal-6",
+          "upstream_year_comment": "2002-2008, 2010-2019, 2022-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/montreal-6.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2011,
+          "title_en": "Button wins a marathon",
+          "layout_id_candidate": "montreal-6",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "846",
+            "race_date": "2011-06-12",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2011/races/07-canada/race.yml"
+          }
+        },
+        {
+          "year": 2008,
+          "title_en": "Kubica comes back to win",
+          "layout_id_candidate": "montreal-6",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "792",
+            "race_date": "2008-06-08",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/07-canada/race.yml"
+          }
+        },
+        {
+          "year": 1999,
+          "title_en": "The wall earns its nickname",
+          "layout_id_candidate": "montreal-5",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "636",
+            "race_date": "1999-06-13",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1999/races/06-canada/race.yml"
+          }
+        },
+        {
+          "year": 2007,
+          "title_en": "Hamilton wins for the first time",
+          "layout_id_candidate": "montreal-6",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "774",
+            "race_date": "2007-06-10",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/06-canada/race.yml"
+          }
+        },
+        {
+          "year": 1982,
+          "title_en": "A circuit takes Gilles Villeneuve's name",
+          "layout_id_candidate": "montreal-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "365",
+            "race_date": "1982-06-13",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/08-canada/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "imola",
+      "f1db_circuit_id": "imola",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/imola.yml",
+      "layouts": [
+        {
+          "id": "imola-1",
+          "upstream_year_comment": "1980-1994",
+          "local_svg_path": "apps/web/public/circuit-layouts/imola-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "imola-2",
+          "upstream_year_comment": "1995-2006",
+          "local_svg_path": "apps/web/public/circuit-layouts/imola-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "imola-3",
+          "upstream_year_comment": "2020-2025",
+          "local_svg_path": "apps/web/public/circuit-layouts/imola-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1994,
+          "title_en": "A weekend that changed the sport",
+          "layout_id_candidate": "imola-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "551",
+            "race_date": "1994-05-01",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/03-san-marino/race.yml"
+          }
+        },
+        {
+          "year": 1982,
+          "title_en": "Ferrari teammates' bitter finish",
+          "layout_id_candidate": "imola-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "361",
+            "race_date": "1982-04-25",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/04-san-marino/race.yml"
+          }
+        },
+        {
+          "year": 2005,
+          "title_en": "Alonso holds off Schumacher by 0.215 seconds",
+          "layout_id_candidate": "imola-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "735",
+            "race_date": "2005-04-24",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2005/races/04-san-marino/race.yml"
+          }
+        },
+        {
+          "year": 2006,
+          "title_en": "Schumacher answers Alonso a year later",
+          "layout_id_candidate": "imola-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "754",
+            "race_date": "2006-04-23",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/04-san-marino/race.yml"
+          }
+        },
+        {
+          "year": 1983,
+          "title_en": "Tambay wins before Ferrari's Italian crowd",
+          "layout_id_candidate": "imola-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "377",
+            "race_date": "1983-05-01",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1983/races/04-san-marino/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "nurburgring",
+      "f1db_circuit_id": "nurburgring",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/nurburgring.yml",
+      "layouts": [
+        {
+          "id": "nurburgring-1",
+          "upstream_year_comment": "1951-1958, 1961-1969, 1971-1976",
+          "local_svg_path": "apps/web/public/circuit-layouts/nurburgring-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "nurburgring-2",
+          "upstream_year_comment": "1984-1985",
+          "local_svg_path": "apps/web/public/circuit-layouts/nurburgring-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "nurburgring-3",
+          "upstream_year_comment": "1995-2001",
+          "local_svg_path": "apps/web/public/circuit-layouts/nurburgring-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "nurburgring-4",
+          "upstream_year_comment": "2002-2007, 2009, 2011, 2013, 2020",
+          "local_svg_path": "apps/web/public/circuit-layouts/nurburgring-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1957,
+          "title_en": "Fangio's Nürburgring chase",
+          "layout_id_candidate": "nurburgring-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "62",
+            "race_date": "1957-08-04",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "nurburgring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/06-germany/race.yml"
+          }
+        },
+        {
+          "year": 1976,
+          "title_en": "Lauda's Nordschleife accident",
+          "layout_id_candidate": "nurburgring-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "274",
+            "race_date": "1976-08-01",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "nurburgring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/10-germany/race.yml"
+          }
+        },
+        {
+          "year": 1999,
+          "title_en": "Herbert's unexpected win",
+          "layout_id_candidate": "nurburgring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "644",
+            "race_date": "1999-09-26",
+            "grand_prix_id": "europe",
+            "circuit_layout_id": "nurburgring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1999/races/14-europe/race.yml"
+          }
+        },
+        {
+          "year": 1984,
+          "title_en": "A new Grand Prix circuit",
+          "layout_id_candidate": "nurburgring-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "403",
+            "race_date": "1984-10-07",
+            "grand_prix_id": "europe",
+            "circuit_layout_id": "nurburgring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/15-europe/race.yml"
+          }
+        },
+        {
+          "year": 2020,
+          "title_en": "Hamilton matches Schumacher's wins",
+          "layout_id_candidate": "nurburgring-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1029",
+            "race_date": "2020-10-11",
+            "grand_prix_id": "eifel",
+            "circuit_layout_id": "nurburgring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/11-eifel/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "hockenheimring",
+      "f1db_circuit_id": "hockenheimring",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/hockenheimring.yml",
+      "layouts": [
+        {
+          "id": "hockenheimring-1",
+          "upstream_year_comment": "1970, 1977-1981",
+          "local_svg_path": "apps/web/public/circuit-layouts/hockenheimring-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "hockenheimring-2",
+          "upstream_year_comment": "1982-1984, 1986-1991",
+          "local_svg_path": "apps/web/public/circuit-layouts/hockenheimring-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "hockenheimring-3",
+          "upstream_year_comment": "1992-2001",
+          "local_svg_path": "apps/web/public/circuit-layouts/hockenheimring-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "hockenheimring-4",
+          "upstream_year_comment": "2002-2006, 2008, 2010, 2012, 2014, 2016, 2018-2019",
+          "local_svg_path": "apps/web/public/circuit-layouts/hockenheimring-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2019,
+          "title_en": "Rain turns the order upside down",
+          "layout_id_candidate": "hockenheimring-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1008",
+            "race_date": "2019-07-28",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/11-germany/race.yml"
+          }
+        },
+        {
+          "year": 1982,
+          "title_en": "Tambay wins for Ferrari",
+          "layout_id_candidate": "hockenheimring-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "369",
+            "race_date": "1982-08-08",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/12-germany/race.yml"
+          }
+        },
+        {
+          "year": 2000,
+          "title_en": "Barrichello from eighteenth",
+          "layout_id_candidate": "hockenheimring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "657",
+            "race_date": "2000-07-30",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2000/races/11-germany/race.yml"
+          }
+        },
+        {
+          "year": 2002,
+          "title_en": "The forest layout disappears",
+          "layout_id_candidate": "hockenheimring-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "692",
+            "race_date": "2002-07-28",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2002/races/12-germany/race.yml"
+          }
+        },
+        {
+          "year": 2018,
+          "title_en": "Vettel crashes from the lead",
+          "layout_id_candidate": "hockenheimring-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "987",
+            "race_date": "2018-07-22",
+            "grand_prix_id": "germany",
+            "circuit_layout_id": "hockenheimring-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/11-germany/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "zandvoort",
+      "f1db_circuit_id": "zandvoort",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/zandvoort.yml",
+      "layouts": [
+        {
+          "id": "zandvoort-1",
+          "upstream_year_comment": "1952-1953, 1955, 1958-1971",
+          "local_svg_path": "apps/web/public/circuit-layouts/zandvoort-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "zandvoort-2",
+          "upstream_year_comment": "1973-1978",
+          "local_svg_path": "apps/web/public/circuit-layouts/zandvoort-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "zandvoort-3",
+          "upstream_year_comment": "1979",
+          "local_svg_path": "apps/web/public/circuit-layouts/zandvoort-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "zandvoort-4",
+          "upstream_year_comment": "1980-1985",
+          "local_svg_path": "apps/web/public/circuit-layouts/zandvoort-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "zandvoort-5",
+          "upstream_year_comment": "2021-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/zandvoort-5.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2021,
+          "title_en": "The Dutch Grand Prix returns",
+          "layout_id_candidate": "zandvoort-5",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1048",
+            "race_date": "2021-09-05",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/13-netherlands/race.yml"
+          }
+        },
+        {
+          "year": 1961,
+          "title_en": "All starters finish",
+          "layout_id_candidate": "zandvoort-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "96",
+            "race_date": "1961-05-22",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1961/races/02-netherlands/race.yml"
+          }
+        },
+        {
+          "year": 1973,
+          "title_en": "Purley tries to help Williamson",
+          "layout_id_candidate": "zandvoort-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "230",
+            "race_date": "1973-07-29",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/10-netherlands/race.yml"
+          }
+        },
+        {
+          "year": 1985,
+          "title_en": "Lauda's final F1 victory",
+          "layout_id_candidate": "zandvoort-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "415",
+            "race_date": "1985-08-25",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/11-netherlands/race.yml"
+          }
+        },
+        {
+          "year": 2023,
+          "title_en": "Changing weather tests the field",
+          "layout_id_candidate": "zandvoort-5",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1092",
+            "race_date": "2023-08-27",
+            "grand_prix_id": "netherlands",
+            "circuit_layout_id": "zandvoort-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/13-netherlands/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "hungaroring",
+      "f1db_circuit_id": "hungaroring",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/hungaroring.yml",
+      "layouts": [
+        {
+          "id": "hungaroring-1",
+          "upstream_year_comment": "1986-1988",
+          "local_svg_path": "apps/web/public/circuit-layouts/hungaroring-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "hungaroring-2",
+          "upstream_year_comment": "1989-2002",
+          "local_svg_path": "apps/web/public/circuit-layouts/hungaroring-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "hungaroring-3",
+          "upstream_year_comment": "2003-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/hungaroring-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2006,
+          "title_en": "Button finally wins",
+          "layout_id_candidate": "hungaroring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "763",
+            "race_date": "2006-08-06",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/13-hungary/race.yml"
+          }
+        },
+        {
+          "year": 1986,
+          "title_en": "Piquet passes Senna around the outside",
+          "layout_id_candidate": "hungaroring-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "431",
+            "race_date": "1986-08-10",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/11-hungary/race.yml"
+          }
+        },
+        {
+          "year": 1989,
+          "title_en": "Mansell charges from twelfth",
+          "layout_id_candidate": "hungaroring-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "478",
+            "race_date": "1989-08-13",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1989/races/10-hungary/race.yml"
+          }
+        },
+        {
+          "year": 1997,
+          "title_en": "Hill almost wins for Arrows",
+          "layout_id_candidate": "hungaroring-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "608",
+            "race_date": "1997-08-10",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/11-hungary/race.yml"
+          }
+        },
+        {
+          "year": 1998,
+          "title_en": "A risky strategy pays off",
+          "layout_id_candidate": "hungaroring-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "626",
+            "race_date": "1998-08-16",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1998/races/12-hungary/race.yml"
+          }
+        },
+        {
+          "year": 2003,
+          "title_en": "Alonso wins for the first time",
+          "layout_id_candidate": "hungaroring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "710",
+            "race_date": "2003-08-24",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2003/races/13-hungary/race.yml"
+          }
+        },
+        {
+          "year": 2021,
+          "title_en": "Ocon survives a chaotic restart",
+          "layout_id_candidate": "hungaroring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1046",
+            "race_date": "2021-08-01",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/11-hungary/race.yml"
+          }
+        },
+        {
+          "year": 2024,
+          "title_en": "Piastri wins after a team-order standoff",
+          "layout_id_candidate": "hungaroring-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1114",
+            "race_date": "2024-07-21",
+            "grand_prix_id": "hungary",
+            "circuit_layout_id": "hungaroring-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2024/races/13-hungary/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "red-bull-ring",
+      "f1db_circuit_id": "spielberg",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/spielberg.yml",
+      "layouts": [
+        {
+          "id": "spielberg-1",
+          "upstream_year_comment": "1970-1976",
+          "local_svg_path": "apps/web/public/circuit-layouts/spielberg-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "spielberg-2",
+          "upstream_year_comment": "1977-1987",
+          "local_svg_path": "apps/web/public/circuit-layouts/spielberg-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "spielberg-3",
+          "upstream_year_comment": "1997-2003, 2014-2026",
+          "local_svg_path": "apps/web/public/circuit-layouts/spielberg-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1982,
+          "title_en": "A finish decided by 0.050 seconds",
+          "layout_id_candidate": "spielberg-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "370",
+            "race_date": "1982-08-15",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/13-austria/race.yml"
+          }
+        },
+        {
+          "year": 1975,
+          "title_en": "Brambilla wins in the wet",
+          "layout_id_candidate": "spielberg-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "262",
+            "race_date": "1975-08-17",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/12-austria/race.yml"
+          }
+        },
+        {
+          "year": 2002,
+          "title_en": "Ferrari team orders",
+          "layout_id_candidate": "spielberg-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "686",
+            "race_date": "2002-05-12",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2002/races/06-austria/race.yml"
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "Verstappen's late pass",
+          "layout_id_candidate": "spielberg-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1006",
+            "race_date": "2019-06-30",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/09-austria/race.yml"
+          }
+        },
+        {
+          "year": 2020,
+          "title_en": "Norris earns a podium on the final lap",
+          "layout_id_candidate": "spielberg-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_event_disambiguated",
+          "race_candidates": [
+            {
+              "layout_id": "spielberg-3",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/02-styria/race.yml"
+            },
+            {
+              "layout_id": "spielberg-3",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml"
+            }
+          ],
+          "race_evidence": {
+            "f1db_race_id": "1019",
+            "race_date": "2020-07-05",
+            "grand_prix_id": "austria",
+            "circuit_layout_id": "spielberg-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/01-austria/race.yml"
+          },
+          "event_disambiguation": {
+            "source_url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-austria-2020.13PnIIFaBy3Esq3pIvsBpu",
+            "reason": "Norris first podium occurred at the Austrian Grand Prix, not the Styrian Grand Prix one week later."
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "barcelona-catalunya",
+      "f1db_circuit_id": "catalunya",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/catalunya.yml",
+      "layouts": [
+        {
+          "id": "catalunya-1",
+          "upstream_year_comment": "1991-1994",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "catalunya-2",
+          "upstream_year_comment": "1995-2003",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "catalunya-3",
+          "upstream_year_comment": "2004-2006",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "catalunya-4",
+          "upstream_year_comment": "2007-2020",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "catalunya-5",
+          "upstream_year_comment": "2021-2022",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-5.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "catalunya-6",
+          "upstream_year_comment": "2023-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/catalunya-6.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1996,
+          "title_en": "Schumacher's first Ferrari win in the rain",
+          "layout_id_candidate": "catalunya-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "588",
+            "race_date": "1996-06-02",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1996/races/07-spain/race.yml"
+          }
+        },
+        {
+          "year": 2012,
+          "title_en": "Maldonado's unexpected Williams victory",
+          "layout_id_candidate": "catalunya-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "863",
+            "race_date": "2012-05-13",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/05-spain/race.yml"
+          }
+        },
+        {
+          "year": 2001,
+          "title_en": "Häkkinen's victory disappears on the last lap",
+          "layout_id_candidate": "catalunya-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "668",
+            "race_date": "2001-04-29",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2001/races/05-spain/race.yml"
+          }
+        },
+        {
+          "year": 2016,
+          "title_en": "Verstappen's first Red Bull race, first victory",
+          "layout_id_candidate": "catalunya-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "940",
+            "race_date": "2016-05-15",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/05-spain/race.yml"
+          }
+        },
+        {
+          "year": 2006,
+          "title_en": "Alonso wins in front of Spain",
+          "layout_id_candidate": "catalunya-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "756",
+            "race_date": "2006-05-14",
+            "grand_prix_id": "spain",
+            "circuit_layout_id": "catalunya-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/06-spain/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "albert-park",
+      "f1db_circuit_id": "melbourne",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/melbourne.yml",
+      "layouts": [
+        {
+          "id": "melbourne-1",
+          "upstream_year_comment": "1996-2019",
+          "local_svg_path": "apps/web/public/circuit-layouts/melbourne-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "melbourne-2",
+          "upstream_year_comment": "2022-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/melbourne-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 1996,
+          "title_en": "Villeneuve almost wins on debut",
+          "layout_id_candidate": "melbourne-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "582",
+            "race_date": "1996-03-10",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1996/races/01-australia/race.yml"
+          }
+        },
+        {
+          "year": 2009,
+          "title_en": "Brawn starts with a double",
+          "layout_id_candidate": "melbourne-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "804",
+            "race_date": "2009-03-29",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2009/races/01-australia/race.yml"
+          }
+        },
+        {
+          "year": 2023,
+          "title_en": "Three red flags, one winner",
+          "layout_id_candidate": "melbourne-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1082",
+            "race_date": "2023-04-02",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/03-australia/race.yml"
+          }
+        },
+        {
+          "year": 2016,
+          "title_en": "A crash both drivers walked away from",
+          "layout_id_candidate": "melbourne-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "936",
+            "race_date": "2016-03-20",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/01-australia/race.yml"
+          }
+        },
+        {
+          "year": 2022,
+          "title_en": "Leclerc controls Melbourne's comeback",
+          "layout_id_candidate": "melbourne-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1060",
+            "race_date": "2022-04-10",
+            "grand_prix_id": "australia",
+            "circuit_layout_id": "melbourne-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/03-australia/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "marina-bay",
+      "f1db_circuit_id": "marina-bay",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/marina-bay.yml",
+      "layouts": [
+        {
+          "id": "marina-bay-1",
+          "upstream_year_comment": "2008-2012",
+          "local_svg_path": "apps/web/public/circuit-layouts/marina-bay-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "marina-bay-2",
+          "upstream_year_comment": "2013-2014",
+          "local_svg_path": "apps/web/public/circuit-layouts/marina-bay-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "marina-bay-3",
+          "upstream_year_comment": "2015-2019, 2022",
+          "local_svg_path": "apps/web/public/circuit-layouts/marina-bay-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "marina-bay-4",
+          "upstream_year_comment": "2023-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/marina-bay-4.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2008,
+          "title_en": "The first night race and a hidden scandal",
+          "layout_id_candidate": "marina-bay-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "800",
+            "race_date": "2008-09-28",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race.yml"
+          }
+        },
+        {
+          "year": 2017,
+          "title_en": "Three title contenders out at Turn 1",
+          "layout_id_candidate": "marina-bay-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "970",
+            "race_date": "2017-09-17",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/14-singapore/race.yml"
+          }
+        },
+        {
+          "year": 2023,
+          "title_en": "Sainz breaks the streak",
+          "layout_id_candidate": "marina-bay-4",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1094",
+            "race_date": "2023-09-17",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-4",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/15-singapore/race.yml"
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "Vettel's last Ferrari victory",
+          "layout_id_candidate": "marina-bay-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1012",
+            "race_date": "2019-09-22",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/15-singapore/race.yml"
+          }
+        },
+        {
+          "year": 2022,
+          "title_en": "Pérez wins after a long rain delay",
+          "layout_id_candidate": "marina-bay-3",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1074",
+            "race_date": "2022-10-02",
+            "grand_prix_id": "singapore",
+            "circuit_layout_id": "marina-bay-3",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/17-singapore/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "bahrain",
+      "f1db_circuit_id": "bahrain",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/bahrain.yml",
+      "layouts": [
+        {
+          "id": "bahrain-1",
+          "upstream_year_comment": null,
+          "local_svg_path": "apps/web/public/circuit-layouts/bahrain-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "bahrain-2",
+          "upstream_year_comment": "Endurance Circuit (2010)",
+          "local_svg_path": "apps/web/public/circuit-layouts/bahrain-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "bahrain-3",
+          "upstream_year_comment": "Outer Circuit (2020)",
+          "local_svg_path": "apps/web/public/circuit-layouts/bahrain-3.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2004,
+          "title_en": "Schumacher wins Bahrain's first Grand Prix",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "716",
+            "race_date": "2004-04-04",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2004/races/03-bahrain/race.yml"
+          }
+        },
+        {
+          "year": 2014,
+          "title_en": "Mercedes duel under lights",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "900",
+            "race_date": "2014-04-06",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/03-bahrain/race.yml"
+          }
+        },
+        {
+          "year": 2020,
+          "title_en": "Grosjean escapes a fire on the opening lap",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_event_disambiguated",
+          "race_candidates": [
+            {
+              "layout_id": "bahrain-1",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/15-bahrain/race.yml"
+            },
+            {
+              "layout_id": "bahrain-3",
+              "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/16-sakhir/race.yml"
+            }
+          ],
+          "race_evidence": {
+            "f1db_race_id": "1033",
+            "race_date": "2020-11-29",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/15-bahrain/race.yml"
+          },
+          "event_disambiguation": {
+            "source_url": "https://www.formula1.com/en/latest/article/bahrain-grand-prix-red-flagged-as-romain-grosjean-escapes-big-crash-on-lap-1.3EnJRuc4bpamAYD2c4fKaO",
+            "reason": "Grosjean's first-lap accident was in the Bahrain Grand Prix, not the later Sakhir Grand Prix using a different layout."
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "Leclerc loses a breakthrough win",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "999",
+            "race_date": "2019-03-31",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/02-bahrain/race.yml"
+          }
+        },
+        {
+          "year": 2022,
+          "title_en": "Ferrari begins a new era with a one-two",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1058",
+            "race_date": "2022-03-20",
+            "grand_prix_id": "bahrain",
+            "circuit_layout_id": "bahrain-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/01-bahrain/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "shanghai",
+      "f1db_circuit_id": "shanghai",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/shanghai.yml",
+      "layouts": [
+        {
+          "id": "shanghai-1",
+          "upstream_year_comment": null,
+          "local_svg_path": "apps/web/public/circuit-layouts/shanghai-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2004,
+          "title_en": "Barrichello wins China's first Grand Prix",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "729",
+            "race_date": "2004-09-26",
+            "grand_prix_id": "china",
+            "circuit_layout_id": "shanghai-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2004/races/16-china/race.yml"
+          }
+        },
+        {
+          "year": 2007,
+          "title_en": "Hamilton gets stuck at pit entry",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "784",
+            "race_date": "2007-10-07",
+            "grand_prix_id": "china",
+            "circuit_layout_id": "shanghai-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/16-china/race.yml"
+          }
+        },
+        {
+          "year": 2012,
+          "title_en": "Rosberg gives Mercedes a breakthrough",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "861",
+            "race_date": "2012-04-15",
+            "grand_prix_id": "china",
+            "circuit_layout_id": "shanghai-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/03-china/race.yml"
+          }
+        },
+        {
+          "year": 2009,
+          "title_en": "Red Bull's first win comes in the rain",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "806",
+            "race_date": "2009-04-19",
+            "grand_prix_id": "china",
+            "circuit_layout_id": "shanghai-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2009/races/03-china/race.yml"
+          }
+        },
+        {
+          "year": 2018,
+          "title_en": "Ricciardo charges to victory",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "979",
+            "race_date": "2018-04-15",
+            "grand_prix_id": "china",
+            "circuit_layout_id": "shanghai-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/03-china/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "yas-marina",
+      "f1db_circuit_id": "yas-marina",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/yas-marina.yml",
+      "layouts": [
+        {
+          "id": "yas-marina-1",
+          "upstream_year_comment": "2009-2020",
+          "local_svg_path": "apps/web/public/circuit-layouts/yas-marina-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        },
+        {
+          "id": "yas-marina-2",
+          "upstream_year_comment": "2021-present",
+          "local_svg_path": "apps/web/public/circuit-layouts/yas-marina-2.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2021,
+          "title_en": "One final lap decides the title",
+          "layout_id_candidate": "yas-marina-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1057",
+            "race_date": "2021-12-12",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/22-abu-dhabi/race.yml"
+          }
+        },
+        {
+          "year": 2010,
+          "title_en": "Four drivers arrive, Vettel leaves champion",
+          "layout_id_candidate": "yas-marina-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "839",
+            "race_date": "2010-11-14",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/19-abu-dhabi/race.yml"
+          }
+        },
+        {
+          "year": 2016,
+          "title_en": "Hamilton wins, Rosberg takes the crown",
+          "layout_id_candidate": "yas-marina-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "956",
+            "race_date": "2016-11-27",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/21-abu-dhabi/race.yml"
+          }
+        },
+        {
+          "year": 2025,
+          "title_en": "Norris claims the title by two points",
+          "layout_id_candidate": "yas-marina-2",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1149",
+            "race_date": "2025-12-07",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2025/races/24-abu-dhabi/race.yml"
+          }
+        },
+        {
+          "year": 2018,
+          "title_en": "Hamilton finishes his title year with a win",
+          "layout_id_candidate": "yas-marina-1",
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "997",
+            "race_date": "2018-11-25",
+            "grand_prix_id": "abu-dhabi",
+            "circuit_layout_id": "yas-marina-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/21-abu-dhabi/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "cota",
+      "f1db_circuit_id": "austin",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/austin.yml",
+      "layouts": [
+        {
+          "id": "austin-1",
+          "upstream_year_comment": null,
+          "local_svg_path": "apps/web/public/circuit-layouts/austin-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2012,
+          "title_en": "Hamilton wins the first race at COTA",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "877",
+            "race_date": "2012-11-18",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/19-united-states/race.yml"
+          }
+        },
+        {
+          "year": 2015,
+          "title_en": "Hamilton's third title",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "932",
+            "race_date": "2015-10-25",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2015/races/16-united-states/race.yml"
+          }
+        },
+        {
+          "year": 2018,
+          "title_en": "Räikkönen ends a five-year wait",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "994",
+            "race_date": "2018-10-21",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2018/races/18-united-states/race.yml"
+          }
+        },
+        {
+          "year": 2019,
+          "title_en": "Bottas wins the race, Hamilton wins the title",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1016",
+            "race_date": "2019-11-03",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2019/races/19-united-states/race.yml"
+          }
+        },
+        {
+          "year": 2022,
+          "title_en": "A slow stop cannot stop Verstappen",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1076",
+            "race_date": "2022-10-23",
+            "grand_prix_id": "united-states",
+            "circuit_layout_id": "austin-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/19-united-states/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "sepang",
+      "f1db_circuit_id": "sepang",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/sepang.yml",
+      "layouts": [
+        {
+          "id": "sepang-1",
+          "upstream_year_comment": null,
+          "local_svg_path": "apps/web/public/circuit-layouts/sepang-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2012,
+          "title_en": "Pérez almost catches Alonso in the rain",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "860",
+            "race_date": "2012-03-25",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/02-malaysia/race.yml"
+          }
+        },
+        {
+          "year": 2009,
+          "title_en": "Rain cuts a Grand Prix in half",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "805",
+            "race_date": "2009-04-05",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2009/races/02-malaysia/race.yml"
+          }
+        },
+        {
+          "year": 2013,
+          "title_en": "The Multi 21 dispute",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "880",
+            "race_date": "2013-03-24",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/02-malaysia/race.yml"
+          }
+        },
+        {
+          "year": 2016,
+          "title_en": "Hamilton's retirement changes the race",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "951",
+            "race_date": "2016-10-02",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2016/races/16-malaysia/race.yml"
+          }
+        },
+        {
+          "year": 2017,
+          "title_en": "Verstappen wins a final Malaysian GP",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "971",
+            "race_date": "2017-10-01",
+            "grand_prix_id": "malaysia",
+            "circuit_layout_id": "sepang-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/15-malaysia/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    },
+    {
+      "editorial_circuit_id": "istanbul-park",
+      "f1db_circuit_id": "istanbul",
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/istanbul.yml",
+      "layouts": [
+        {
+          "id": "istanbul-1",
+          "upstream_year_comment": null,
+          "local_svg_path": "apps/web/public/circuit-layouts/istanbul-1.svg",
+          "svg_file_present": true,
+          "media_rights_status": "not_independently_reviewed"
+        }
+      ],
+      "events": [
+        {
+          "year": 2020,
+          "title_en": "Hamilton's seventh title on a slippery track",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "1032",
+            "race_date": "2020-11-15",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/14-turkey/race.yml"
+          }
+        },
+        {
+          "year": 2006,
+          "title_en": "Massa's first win and a fight for second",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "764",
+            "race_date": "2006-08-27",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race.yml"
+          }
+        },
+        {
+          "year": 2010,
+          "title_en": "Red Bull teammates collide",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "827",
+            "race_date": "2010-05-30",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/07-turkey/race.yml"
+          }
+        },
+        {
+          "year": 2008,
+          "title_en": "Massa makes it three",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "790",
+            "race_date": "2008-05-11",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/05-turkey/race.yml"
+          }
+        },
+        {
+          "year": 2007,
+          "title_en": "Hamilton's tyre fails",
+          "layout_id_candidate": null,
+          "status": "requires_race_yaml_lookup",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "780",
+            "race_date": "2007-08-26",
+            "grand_prix_id": "turkey",
+            "circuit_layout_id": "istanbul-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/12-turkey/race.yml"
+          }
+        }
+      ],
+      "corner_numbering_verified": false,
+      "publication": "unpublished"
+    }
+  ],
+  "svg_inventory_check": {
+    "source": "GitHub repository contents listing at PR #320 branch",
+    "count_all_svg_assets": 160,
+    "count_in_batch": 68,
+    "method": "exact filename comparison against layout IDs",
+    "scope": "existence only; not per-layout visual match or copyright approval"
+  }
+}

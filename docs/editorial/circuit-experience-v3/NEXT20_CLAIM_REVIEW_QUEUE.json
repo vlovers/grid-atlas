@@ -1,0 +1,2011 @@
+{
+  "schema_version": 1,
+  "source_release": "F1DB v2026.17.0",
+  "batch_id": "next20-editorial-quality-matrix",
+  "publication": "blocked",
+  "scope": "Review queue, not a fact-check certificate. 105 bilingual sourced research drafts, of which 62 now have event-specific first-pass evidence crosswalks and 51 have been rewritten in those passes. Zero independent editorial approvals. Classification confirms results, not every incident.",
+  "summary": {
+    "total": 105,
+    "sourced": 105,
+    "results_only": 0,
+    "independent_approved": 0,
+    "layout_review_required": 105,
+    "duplicate_source_reuse": 4,
+    "second_pass_event_specific_checked": 62,
+    "second_pass_rewritten": 51
+  },
+  "records": [
+    {
+      "circuit_id": "silverstone",
+      "moment_index": 0,
+      "event_year": 1950,
+      "event_title_en": "The championship begins",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "silverstone",
+      "moment_index": 1,
+      "event_year": 1987,
+      "event_title_en": "Mansell hunts down Piquet",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "silverstone",
+      "moment_index": 2,
+      "event_year": 2008,
+      "event_title_en": "Hamilton masters the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/were-streaming-the-2008-british-grand-prix-heres-why-you-should-watch.3xHEYFUqbOjgY9OsCX5IlX"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "silverstone",
+      "moment_index": 3,
+      "event_year": 1973,
+      "event_title_en": "A first-lap chain reaction",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-british-grand-prix.75fZYfjfQvbAofkfSAOvLe"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "silverstone",
+      "moment_index": 4,
+      "event_year": 1998,
+      "event_title_en": "The pit-lane finish",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/gonzalez-and-ascari-to-sainz-and-leclerc-all-of-ferraris-16-wins-at-silverstone.302fSi10PoDv2DRngSf3tv",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-british-grand-prix.75fZYfjfQvbAofkfSAOvLe"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monza",
+      "moment_index": 0,
+      "event_year": 1971,
+      "event_title_en": "Gethin wins by a fraction",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1971/races/299/italy/race-result",
+        "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monza",
+      "moment_index": 1,
+      "event_year": 1967,
+      "event_title_en": "Clark's charge runs out of fuel",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monza",
+      "moment_index": 2,
+      "event_year": 1988,
+      "event_title_en": "Ferrari's emotional one-two",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monza",
+      "moment_index": 3,
+      "event_year": 2008,
+      "event_title_en": "Vettel gives Toro Rosso its first win",
+      "source_urls": [
+        "https://www.formula1.com/en/information/drivers-hall-of-fame-sebastian-vettel.GBy6vPkxKOKUV89QOhZe5",
+        "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monza",
+      "moment_index": 4,
+      "event_year": 2019,
+      "event_title_en": "Leclerc holds off Mercedes",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-italian-grand-prix-special-and-why-you-should-see-it.iAdwIYmBJXcxJQlnKgGfw"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 0,
+      "event_year": 2005,
+      "event_title_en": "Räikkönen's charge",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/were-streaming-the-2005-japanese-grand-prix-heres-why-you-should-watch.4J1vPpooilIlqtRCoPcRx"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 1,
+      "event_year": 1988,
+      "event_title_en": "Senna wins the title after a troubled start",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 2,
+      "event_year": 1989,
+      "event_title_en": "The chicane collision",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-sennas-suspended-ban-to-vettels-victory-antics-8-crazy-post-race.2Pssou2f1Rh9Iv99fpfcNR"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 3,
+      "event_year": 1990,
+      "event_title_en": "A title decided at Turn 1",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 4,
+      "event_year": 2000,
+      "event_title_en": "Ferrari's long wait ends",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "suzuka",
+      "moment_index": 5,
+      "event_year": 2012,
+      "event_title_en": "Kobayashi gives Japan a home podium",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/f1-japanese-grand-prix-in-numbers.7mwT5rdCC4ZbqhVDeMgSCj",
+        "https://www.formula1.com/en/latest/article/what-makes-the-japanese-grand-prix-special-and-why-you-should-see-it.eFK4inb6tYknE3luYyh8f"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 0,
+      "event_year": 2012,
+      "event_title_en": "A championship in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF",
+        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 1,
+      "event_year": 2007,
+      "event_title_en": "A title changes hands in Brazil",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/5-reasons-we-love-the-brazilian-grand-prix.37v8PT899Wnp7v6y51sUMf"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 2,
+      "event_year": 2019,
+      "event_title_en": "A dramatic finale after the titles were decided",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/revealed-the-top-10-races-of-the-decade-as-chosen-by-you.4ErRs8ahQWo6u8hIXDu2mI"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 3,
+      "event_year": 2008,
+      "event_title_en": "Massa wins the race, Hamilton takes the title",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-brazilian-grand-prix.5dr3Egu9lleFLsheSjlkQ0"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 4,
+      "event_year": 2003,
+      "event_title_en": "The winner changes after the race",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-brazilian-grand-prix.5dr3Egu9lleFLsheSjlkQ0"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "interlagos",
+      "moment_index": 5,
+      "event_year": 1991,
+      "event_title_en": "Senna wins at home at last",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/top-10-moments-of-ayrton-senna-brilliance.7agG0t99di8rxGAh4Wq2RZ",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-brazilian-grand-prix.5dr3Egu9lleFLsheSjlkQ0"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "moment_index": 0,
+      "event_year": 2011,
+      "event_title_en": "Button wins a marathon",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/canada-2011-torrential-rain-a-safety-car-record-and-buttons-charge-the.1ZWPateMlCFLZ8U6KQBNXj"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "moment_index": 1,
+      "event_year": 2008,
+      "event_title_en": "Kubica comes back to win",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "moment_index": 2,
+      "event_year": 1999,
+      "event_title_en": "The wall earns its nickname",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg",
+        "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "moment_index": 3,
+      "event_year": 2007,
+      "event_title_en": "Hamilton wins for the first time",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-canadian-grand-prix-special-and-why-you-should-see-it.2UUd1w4v0JrhufeZtpxyHg"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "gilles-villeneuve",
+      "moment_index": 4,
+      "event_year": 1982,
+      "event_title_en": "A circuit takes Gilles Villeneuve's name",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/f1-gilles-villeneuve-remembered-maiden-win-1978-canada.1cF7NPxGB6mOkWWsQeIIIa",
+        "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "imola",
+      "moment_index": 0,
+      "event_year": 1994,
+      "event_title_en": "A weekend that changed the sport",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/imola-94-and-the-lasting-safety-legacy.5P8zqEzNjKzYw8qdckoYFF",
+        "https://www.formula1.com/en/latest/article/in-tribute-david-brabham-remembers-his-former-team-mate-roland-ratzenberger.1z8PJo5DHfemJis12AkBhy"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "imola",
+      "moment_index": 1,
+      "event_year": 1982,
+      "event_title_en": "Ferrari teammates' bitter finish",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/prost-vs-senna-mansell-vs-piquet-and-more-f1s-fiercest-intra-team-driver.4tOtmPUbldfIvIvY4MmyCQ",
+        "https://www.formula1.com/en/results/1982/races/440/san-marino/race-result"
+      ],
+      "source_granularity": "race_specific_historical_reporting_and_official_result",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "imola",
+      "moment_index": 2,
+      "event_year": 2005,
+      "event_title_en": "Alonso holds off Schumacher by 0.215 seconds",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-suzuka-to-san-marino-ranking-alonsos-best-renault-wins-from-10-1-ahead.1ZekTTxQMfSGtagQMCejs8",
+        "https://www.formula1.com/en/latest/article/watch-fernando-alonso-relives-his-epic-2005-imola-battle-with-michael.2eKUG2HHc63dbUULVVzQqb",
+        "https://www.formula1.com/en/results/2005/races/774/sanmarino/race-result"
+      ],
+      "source_granularity": "race_specific_historical_reporting_and_official_result",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "imola",
+      "moment_index": 3,
+      "event_year": 2006,
+      "event_title_en": "Schumacher answers Alonso a year later",
+      "source_urls": [
+        "https://www.motorsport.com/f1/news/20-years-ago-michael-schumacher-held-off-fernando-alonso-in-imola-f1-duel/10814238/",
+        "https://www.formula1.com/en/results/2006/races/793/san-marino/race-result"
+      ],
+      "source_granularity": "race_specific_historical_reporting_and_official_result",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "imola",
+      "moment_index": 4,
+      "event_year": 1983,
+      "event_title_en": "Tambay wins before Ferrari's Italian crowd",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/tremayne-blessed-with-film-star-looks-and-grand-prix-winning-speed-patrick.hJv1gkfWrnBJrljpuMMjM"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "moment_index": 0,
+      "event_year": 1957,
+      "event_title_en": "Fangio's Nürburgring chase",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "moment_index": 1,
+      "event_year": 1976,
+      "event_title_en": "Lauda's Nordschleife accident",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
+        "https://www.formula1.com/en/results/1976/races/367/germany/race-result"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "moment_index": 2,
+      "event_year": 1999,
+      "event_title_en": "Herbert's unexpected win",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/were-streaming-the-1999-european-grand-prix-heres-why-you-should-watch.55U0v5JlHyeXLHIx8lJIWB"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "moment_index": 3,
+      "event_year": 1984,
+      "event_title_en": "A new Grand Prix circuit",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "moment_index": 4,
+      "event_year": 2020,
+      "event_title_en": "Hamilton matches Schumacher's wins",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-takes-record-equalling-91st-victory-at-eifel-gp-as-ricciardo-claims.5z1UB37DlpHwKWM9GBM90M"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "moment_index": 0,
+      "event_year": 2019,
+      "event_title_en": "Rain turns the order upside down",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "moment_index": 1,
+      "event_year": 1982,
+      "event_title_en": "Tambay wins for Ferrari",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "moment_index": 2,
+      "event_year": 2000,
+      "event_title_en": "Barrichello from eighteenth",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/in-numbers-the-10-longest-waits-for-a-debut-win-in-f1-history.4D2uaptKEMkRUz704kPuRN"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/in-numbers-the-10-longest-waits-for-a-debut-win-in-f1-history.4D2uaptKEMkRUz704kPuRN"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "moment_index": 3,
+      "event_year": 2002,
+      "event_title_en": "The forest layout disappears",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "moment_index": 4,
+      "event_year": 2018,
+      "event_title_en": "Vettel crashes from the lead",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/miracle-german-gp-win-a-dream-for-hamilton.6TkJ2DMU5GiuyU8CU8AIAe"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/miracle-german-gp-win-a-dream-for-hamilton.6TkJ2DMU5GiuyU8CU8AIAe"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "moment_index": 0,
+      "event_year": 2021,
+      "event_title_en": "The Dutch Grand Prix returns",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-sends-home-fans-wild-with-victory-over-hamilton-in-the-dutch.5x4cEJF9B4DaIz2H6dVQrd"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/verstappen-sends-home-fans-wild-with-victory-over-hamilton-in-the-dutch.5x4cEJF9B4DaIz2H6dVQrd"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "moment_index": 1,
+      "event_year": 1961,
+      "event_title_en": "All starters finish",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "moment_index": 2,
+      "event_year": 1973,
+      "event_title_en": "Purley tries to help Williamson",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "moment_index": 3,
+      "event_year": 1985,
+      "event_title_en": "Lauda's final F1 victory",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/tremayne-the-insult-that-spurred-niki-lauda-on-to-his-final-f1-victory-40.5TZWQDvzFekTO0thjCusin"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "moment_index": 4,
+      "event_year": 2023,
+      "event_title_en": "Changing weather tests the field",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-overcomes-wet-weather-chaos-to-make-it-a-hat-trick-of-dutch-gp.4VJ0ULOqjodSSN1zC6kWui"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/verstappen-overcomes-wet-weather-chaos-to-make-it-a-hat-trick-of-dutch-gp.4VJ0ULOqjodSSN1zC6kWui"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 0,
+      "event_year": 2006,
+      "event_title_en": "Button finally wins",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/tremayne-a-big-weight-off-my-shoulders-buttons-brilliant-budapest.6YuTNqcS4uUjChYbeepp0c"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/tremayne-a-big-weight-off-my-shoulders-buttons-brilliant-budapest.6YuTNqcS4uUjChYbeepp0c"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 1,
+      "event_year": 1986,
+      "event_title_en": "Piquet passes Senna around the outside",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/do-you-remember-piquets-amazing-overtake-on-senna-in-hungary.4q2b1aT7kvH7WOBm3R1xC3",
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_F1_event_specific_historical_article",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/do-you-remember-piquets-amazing-overtake-on-senna-in-hungary.4q2b1aT7kvH7WOBm3R1xC3"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 2,
+      "event_year": 1989,
+      "event_title_en": "Mansell charges from twelfth",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 3,
+      "event_year": 1997,
+      "event_title_en": "Hill almost wins for Arrows",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 4,
+      "event_year": 1998,
+      "event_title_en": "A risky strategy pays off",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 5,
+      "event_year": 2003,
+      "event_title_en": "Alonso wins for the first time",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_f1_event_summary_read",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 6,
+      "event_year": 2021,
+      "event_title_en": "Ocon survives a chaotic restart",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/ocon-beats-vettel-to-claim-shock-maiden-victory-in-action-packed-hungarian.4Ewxz6olluqX7Y4E1U8NOq",
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "moment_index": 7,
+      "event_year": 2024,
+      "event_title_en": "Piastri wins after a team-order standoff",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/piastri-wins-hungarian-grand-prix-as-norris-belatedly-hands-back-lead-in.70F4mNzYrbmvNYaj8KXm18",
+        "https://www.formula1.com/en/latest/article/top-10-magic-magyar-moments-40-years-of-the-hungarian-grand-prix.67hEfrq2cqrUcIlJm7chch"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "moment_index": 0,
+      "event_year": 1982,
+      "event_title_en": "A finish decided by 0.050 seconds",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+        "https://www.formula1.com/en/results/1982/races/449/austria/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "moment_index": 1,
+      "event_year": 1975,
+      "event_title_en": "Brambilla wins in the wet",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "moment_index": 2,
+      "event_year": 2002,
+      "event_title_en": "Ferrari team orders",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "moment_index": 3,
+      "event_year": 2019,
+      "event_title_en": "Verstappen's late pass",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/austrian-grand-prix-2019-race-report-and-highlights.66QcACWZJJ2URf4fe46epG"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/austrian-grand-prix-2019-race-report-and-highlights.66QcACWZJJ2URf4fe46epG"
+    },
+    {
+      "circuit_id": "red-bull-ring",
+      "moment_index": 4,
+      "event_year": 2020,
+      "event_title_en": "Norris earns a podium on the final lap",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-austria-2020.13PnIIFaBy3Esq3pIvsBpu",
+        "https://www.formula1.com/en/latest/article/analysis-how-norris-beat-hamilton-to-the-podium-with-one-amazing-lap.4V4HGsCaUhRDRsjhPPPUaF"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "moment_index": 0,
+      "event_year": 1996,
+      "event_title_en": "Schumacher's first Ferrari win in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/were-streaming-the-1996-spanish-gp-heres-why-you-should-watch.48F2jHJQ2tpgKiHauqcEfw",
+        "https://www.formula1.com/en/results/1996/races/644/spain/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "moment_index": 1,
+      "event_year": 2012,
+      "event_title_en": "Maldonado's unexpected Williams victory",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/a-topic-by-topic-guide-to-the-best-races-to-watch-on-f1-tv.2Uw6Pd5xBby1gUk8QAsRoa"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "moment_index": 2,
+      "event_year": 2001,
+      "event_title_en": "Häkkinen's victory disappears on the last lap",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-last-lap-heartbreaks-to-championship-affecting-exits-8-dramatic-dnfs-from-the-lead-of-grands-prix.1DbuL5umSE2i6NS41PYCPj"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "moment_index": 3,
+      "event_year": 2016,
+      "event_title_en": "Verstappen's first Red Bull race, first victory",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
+        "https://www.formula1.com/en/results/2016/races/942/spain/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "barcelona-catalunya",
+      "moment_index": 4,
+      "event_year": 2006,
+      "event_title_en": "Alonso wins in front of Spain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-suzuka-to-san-marino-ranking-alonsos-best-renault-wins-from-10-1-ahead.1ZekTTxQMfSGtagQMCejs8"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "albert-park",
+      "moment_index": 0,
+      "event_year": 1996,
+      "event_title_en": "Villeneuve almost wins on debut",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk",
+        "https://www.formula1.com/en/latest/article/floods-flying-cars-and-collapsing-drivers-5-crazy-street-circuit-debuts-from.2N6plQjV1gmTRxsmedA1Ca"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "albert-park",
+      "moment_index": 1,
+      "event_year": 2009,
+      "event_title_en": "Brawn starts with a double",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-brms-rapid-rise-to-brawn-gps-sensational-surge-the-biggest-year-on-year.4vtXUNW9crw8XRAX6ZBB1t"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "albert-park",
+      "moment_index": 2,
+      "event_year": 2023,
+      "event_title_en": "Three red flags, one winner",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-takes-first-ever-australian-gp-win-amid-huge-drama-in-melbourne.1G5wUCOWxmWQyNeB4hPXTx"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "albert-park",
+      "moment_index": 3,
+      "event_year": 2016,
+      "event_title_en": "A crash both drivers walked away from",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/f1-australia-alonso-crash-gutierrez-video.7GbyqtsGo1XyyvN4AdHmKv"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "albert-park",
+      "moment_index": 4,
+      "event_year": 2022,
+      "event_title_en": "Leclerc controls Melbourne's comeback",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/leclerc-dominates-in-australia-as-verstappen-suffers-dnf.7Exhm5kuubqsywFoAe0QAK"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "moment_index": 0,
+      "event_year": 2008,
+      "event_title_en": "The first night race and a hidden scandal",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/do-you-remember-f1s-first-ever-night-race.40aylFbXcPZSJRGiQv5Dgh",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-singapore-grand-prix.EkbLahNFlbNLF23He5jwU"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "moment_index": 1,
+      "event_year": 2017,
+      "event_title_en": "Three title contenders out at Turn 1",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/stewards-declare-ferrari-red-bull-clash-a-racing-incident.1dyq8sJyn4GWcK6eUgkake",
+        "https://www.formula1.com/en/results/2017/races"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "moment_index": 2,
+      "event_year": 2023,
+      "event_title_en": "Sainz breaks the streak",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "moment_index": 3,
+      "event_year": 2019,
+      "event_title_en": "Vettel's last Ferrari victory",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/race-report-highlight-singapore-grand-prix-2019.6dwF1Ea7RzSbwtt8jwKzyZ",
+        "https://www.formula1.com/en/latest/article/wolff-vettel-leclerc-relationship-has-potential-for-rivalry-and-escalation.2PMQ3oXV7NdnJTBP4AMeGY"
+      ],
+      "source_granularity": "official_F1_event_specific_historical_article",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-report-highlight-singapore-grand-prix-2019.6dwF1Ea7RzSbwtt8jwKzyZ"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "moment_index": 4,
+      "event_year": 2022,
+      "event_title_en": "Pérez wins after a long rain delay",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/perez-holds-off-leclerc-to-win-rollercoaster-2022-singapore-grand-prix-as.6fJ3Awe6YmTCf7KSqI2IVG"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bahrain",
+      "moment_index": 0,
+      "event_year": 2004,
+      "event_title_en": "Schumacher wins Bahrain's first Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/information/bahrain-bahrain-international-circuit-sakhir.2CaIdaOTCgQ3Yfnb37NmSS",
+        "https://www.formula1.com/en/latest/article/bahrain-to-name-first-corner-after-schumacher.uGWCv5Gk0wOb15L1zMrc0",
+        "https://www.formula1.com/en/results/2004/races/755/bahrain/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bahrain",
+      "moment_index": 1,
+      "event_year": 2014,
+      "event_title_en": "Mercedes duel under lights",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/race-hamilton-defeats-rosberg-in-epic-desert-duel.32xEaUFG5VHyjfhEpzV5YB"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-hamilton-defeats-rosberg-in-epic-desert-duel.32xEaUFG5VHyjfhEpzV5YB"
+    },
+    {
+      "circuit_id": "bahrain",
+      "moment_index": 2,
+      "event_year": 2020,
+      "event_title_en": "Grosjean escapes a fire on the opening lap",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/bahrain-grand-prix-red-flagged-as-romain-grosjean-escapes-big-crash-on-lap-1.3EnJRuc4bpamAYD2c4fKaO",
+        "https://www.formula1.com/en/latest/article/fia-have-launched-investigation-into-grosjean-crash-confirms-race-director.3G19HqWc5s4IA7843nJt2m",
+        "https://www.formula1.com/en/results/2020/races/1059/bahrain/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bahrain",
+      "moment_index": 3,
+      "event_year": 2019,
+      "event_title_en": "Leclerc loses a breakthrough win",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/report-bahrain-grand-prix-2019-hamilton-leclerc.XaZcYj1U3innMvc5zJZqK"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/report-bahrain-grand-prix-2019-hamilton-leclerc.XaZcYj1U3innMvc5zJZqK"
+    },
+    {
+      "circuit_id": "bahrain",
+      "moment_index": 4,
+      "event_year": 2022,
+      "event_title_en": "Ferrari begins a new era with a one-two",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/leclerc-leads-1-2-for-ferrari-in-bahrain-gp-as-both-red-bulls-suffer-late.3GyOQOvMIMA8FIH17cXOoT"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "shanghai",
+      "moment_index": 0,
+      "event_year": 2004,
+      "event_title_en": "Barrichello wins China's first Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/the-chinese-grand-prix-did-you-know-.6rn3NVuGuj0S0YZNEgKCyG",
+        "https://www.formula1.com/en/results/2004/races/768/china/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "shanghai",
+      "moment_index": 1,
+      "event_year": 2007,
+      "event_title_en": "Hamilton gets stuck at pit entry",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-chinese-grand-prix-special-and-why-you-should-see-it.2ZtmBEq7he6mhkKB1L8HOu"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "shanghai",
+      "moment_index": 2,
+      "event_year": 2012,
+      "event_title_en": "Rosberg gives Mercedes a breakthrough",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-chinese-grand-prix.2UgwDiUvBHDPlbPvDXfS7C",
+        "https://www.formula1.com/en/latest/article/the-chinese-grand-prix-did-you-know-.6rn3NVuGuj0S0YZNEgKCyG",
+        "https://www.formula1.com/en/results/2012/races/12/china/race-result"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "shanghai",
+      "moment_index": 3,
+      "event_year": 2009,
+      "event_title_en": "Red Bull's first win comes in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/five-years-on-red-bulls-first-win-remembered.273y60wv0Is4JPf3JA1IP3"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "shanghai",
+      "moment_index": 4,
+      "event_year": 2018,
+      "event_title_en": "Ricciardo charges to victory",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/race-ricciardo-wins-wild-race-in-china-for-red-bull.4K2iUY8jyMGiOsyOcqEQwO"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-ricciardo-wins-wild-race-in-china-for-red-bull.4K2iUY8jyMGiOsyOcqEQwO"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "moment_index": 0,
+      "event_year": 2021,
+      "event_title_en": "One final lap decides the title",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/brilliant-verstappen-claims-maiden-title-after-victory-in-abu-dhabi-season.22Arui4l6BKK2PUsJgKqpZ",
+        "https://www.formula1.com/en/latest/article/breaking-stewards-dismiss-mercedes-abu-dhabi-grand-prix-protests-as-team.Q8StGwXFdORYlI32Jggoz"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "moment_index": 1,
+      "event_year": 2010,
+      "event_title_en": "Four drivers arrive, Vettel leaves champion",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/formula-one-racings-greatest-title-showdowns.73LmegYX1AuPDL9cnWR1no"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "moment_index": 2,
+      "event_year": 2016,
+      "event_title_en": "Hamilton wins, Rosberg takes the crown",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/rosberg-crowned-champion-as-hamilton-wins-abu-dhabi-thriller.6GkscL2wjlbksQf3lYiYGI"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "moment_index": 3,
+      "event_year": 2025,
+      "event_title_en": "Norris claims the title by two points",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/norris-secures-maiden-f1-title-in-abu-dhabi-with-podium-finish-behind.EMJtmvRA0uzmzUC4MZgmw"
+      ],
+      "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "moment_index": 4,
+      "event_year": 2018,
+      "event_title_en": "Hamilton finishes his title year with a win",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-signs-off-championship-winning-campaign-with-dominant-abu-dhabi-win.2G7UhAGiVOMQkmooauiI4Y"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "cota",
+      "moment_index": 0,
+      "event_year": 2012,
+      "event_title_en": "Hamilton wins the first race at COTA",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/the-united-states-grand-prix-did-you-know-.ANeEfWrK03h6sLZ6JErmr",
+        "https://www.formula1.com/en/results/2012/races/26/united-states/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "cota",
+      "moment_index": 1,
+      "event_year": 2015,
+      "event_title_en": "Hamilton's third title",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-seals-2015-title-with-thrilling-austin-win.2O1pPKYDPHMSXKGITqzLIb"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/hamilton-seals-2015-title-with-thrilling-austin-win.2O1pPKYDPHMSXKGITqzLIb"
+    },
+    {
+      "circuit_id": "cota",
+      "moment_index": 2,
+      "event_year": 2018,
+      "event_title_en": "Räikkönen ends a five-year wait",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/report-raikkonen-keeps-hamilton%27s-title-hopes-on-ice-with-superb-usa.2tIZLeCzOUuUaEe4WmQAEG",
+        "https://www.formula1.com/en/results/2018/races/996/united-states/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "cota",
+      "moment_index": 3,
+      "event_year": 2019,
+      "event_title_en": "Bottas wins the race, Hamilton wins the title",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/united-states-grand-prix-2019-race-report-and-highlights.3mSPD2w9Q394Kr00cpmHQx"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "cota",
+      "moment_index": 4,
+      "event_year": 2022,
+      "event_title_en": "A slow stop cannot stop Verstappen",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/verstappen-beats-hamilton-to-united-states-gp-victory-as-red-bull-secure-an.A7jmiEqb29YaZGQ6DDyAM"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sepang",
+      "moment_index": 0,
+      "event_year": 2012,
+      "event_title_en": "Pérez almost catches Alonso in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/through-the-visor-sergio-perez-recalls-his-first-f1-podium-in-malaysia-ten.6wZF0CoE21YRhRPQft4xbq",
+        "https://www.bbc.co.uk/sport/formula1/17504530"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sepang",
+      "moment_index": 1,
+      "event_year": 2009,
+      "event_title_en": "Rain cuts a Grand Prix in half",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/the-malaysian-grand-prix-did-you-know-.1SsyzCaENkaNRPGJzC0OJG",
+        "https://www.formula1.com/en/results/2009/races/844/malaysia/race-result"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sepang",
+      "moment_index": 2,
+      "event_year": 2013,
+      "event_title_en": "The Multi 21 dispute",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/horner-reveals-what-sparked-multi-21-controversy.6rSHG4O9lCE0yUQaMC0SWq"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sepang",
+      "moment_index": 3,
+      "event_year": 2016,
+      "event_title_en": "Hamilton's retirement changes the race",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/ricciardo-beats-verstappen-as-red-bull-finish-one-two-in-malaysia.4CnsIBxxLfBYADdpu4a0EC"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sepang",
+      "moment_index": 4,
+      "event_year": 2017,
+      "event_title_en": "Verstappen wins a final Malaysian GP",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/race-verstappen-victorious-as-vettel-storms-to-fourth.1MPgC9AY9m664Kwm2SeioY"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked",
+      "second_pass_event_specific_source_checked": true,
+      "second_pass_uk_en_rewritten": true,
+      "reviewed_source_url": "https://www.formula1.com/en/latest/article/race-verstappen-victorious-as-vettel-storms-to-fourth.1MPgC9AY9m664Kwm2SeioY"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "moment_index": 0,
+      "event_year": 2020,
+      "event_title_en": "Hamilton's seventh title on a slippery track",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-seals-historic-7th-title-with-peerless-wet-weather-victory-in.4wK1atemiXDvWXQxOknL4J",
+        "https://www.formula1.com/en/latest/article/turkish-gp-facts-and-stats-hamilton-breaks-more-records-with-73rd-mercedes.312Wc8MssDeWyZ4D6IG25i"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "moment_index": 1,
+      "event_year": 2006,
+      "event_title_en": "Massa's first win and a fight for second",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-why-turkey-is-back-on-the-calendar-from-2027.1BJjW3kYEnR97HxlV7AFuy",
+        "https://www.formula1.com/en/results/2006/races/803/turkey/race-result"
+      ],
+      "source_granularity": "race_specific_official_F1_editorial_and_or_results",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "moment_index": 2,
+      "event_year": 2010,
+      "event_title_en": "Red Bull teammates collide",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/f1-unscripted-with-henieken-webber-reveals-his-biggest-regret-over-multi-21.1O445nvLZAUB5x7X5aJUrN"
+      ],
+      "source_granularity": "official_F1_article_contains_specific_race",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "moment_index": 3,
+      "event_year": 2008,
+      "event_title_en": "Massa makes it three",
+      "source_urls": [
+        "https://au.motorsport.com/f1/news/turkish-gp-bridgestone-race-report/2304369/",
+        "https://www.formula1.com/en/results/2008/races/829/turkey/race-result"
+      ],
+      "source_granularity": "race_specific_contemporary_report_and_official_result",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "istanbul-park",
+      "moment_index": 4,
+      "event_year": 2007,
+      "event_title_en": "Hamilton's tyre fails",
+      "source_urls": [
+        "https://www.autosport.com/f1/news/bridgestone-clarifies-turkey-failure-cause-4412067/4412067/",
+        "https://www.formula1.com/en/results/2007/races/819/turkey/race-result",
+        "https://www.independent.co.uk/sport/motor-racing/hamilton-s-wheel-of-misfortune-lets-massa-taste-turkish-delight-5334880.html"
+      ],
+      "source_granularity": "race_specific_contemporary_report_and_official_result",
+      "editorial_status": "source_checked_research_draft",
+      "claim_evidence_review": "required",
+      "independent_editorial_approval": false,
+      "media_rights_approval": false,
+      "layout_evidence_review": "required",
+      "needs_event_specific_source": false,
+      "has_results_only_source": false,
+      "publication": "blocked"
+    }
+  ]
+}
