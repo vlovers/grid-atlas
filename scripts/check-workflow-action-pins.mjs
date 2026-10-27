@@ -62,19 +62,18 @@ export function auditWorkflowText(source, filename = 'workflow') {
     // GitHub repository owner/name lookup is case-insensitive: mixed-case checkout
     // references must not bypass the credential persistence guard.
     if (!/^actions\/checkout@/i.test(reference)) continue;
+    // Named steps keep uses/with at the same indentation; compact steps
+    // put with two spaces below "- uses". Scan to the next step boundary.
+    const namedStep = i > 0 && /^\s*-\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
+      lines[i - 1].match(/^\s*/)[0].length + 2 === indentation.length;
+    const stepIndent = indentation.length - (namedStep ? 2 : 0);
     let end = i + 1;
     while (end < lines.length) {
-      const line = lines[end];
-      if (line.trim() && line.match(/^\s*/)[0].length <= indentation.length) break;
+      const next = lines[end];
+      if (next.trim() && next.match(/^\s*/)[0].length <= stepIndent) break;
       end++;
     }
     const stepLines = lines.slice(i + 1, end);
-    // A named step has "- name:" followed by "  uses:" and "  with:"
-    // at the same indentation. A compact "- uses:" step puts "with:"
-    // two columns deeper. Determine the step's own indentation, not the
-    // indentation of the uses key alone.
-    const namedStep = i > 0 && /^\s*-\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
-      lines[i - 1].match(/^\s*/)[0].length + 2 === indentation.length;
     const withIndentExpected = indentation.length + (namedStep ? 0 : 2);
     const withLines = stepLines.map((line, index) => ({ line, index }))
       .filter(({ line }) => /^\s*(?:with|['"]with['"])\s*:/.test(line) &&
