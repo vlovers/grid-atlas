@@ -223,17 +223,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2021,
           "title": {
-            "en": "Strategy under frequent interruptions",
-            "uk": "Strategy under frequent interruptions"
+            "en": "A difficult first Saudi Arabian GP",
+            "uk": "Непростий перший Гран-прі Саудівської Аравії"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of strategy under frequent interruptions with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Strategy under frequent interruptions» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2021/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The first Saudi Arabian Grand Prix in 2021 brought red flags and disputed incidents to an already tense Hamilton–Verstappen title battle. Hamilton won the event. The result is clear, but judging the responsibility for specific incidents requires stewards' decisions rather than extrapolation from the race classification.",
+            "uk": "Перший Гран-прі Саудівської Аравії 2021 року приніс червоні прапори й спірні інциденти до напруженої боротьби Гамільтона з Ферстаппеном. Гамільтон переміг. Результат відомий, але оцінювати відповідальність за конкретні зіткнення треба за рішеннями стюардів, а не за фінішною таблицею."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -711,17 +718,24 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 1950,
           "title": {
-            "en": "Why the Indy 500 counted in the 1950s championship",
-            "uk": "Why the Indy 500 counted in the 1950s championship"
+            "en": "The Indy 500 and the first title season",
+            "uk": "Інді-500 і перший чемпіонатний сезон"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of why the indy 500 counted in the 1950s championship with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Why the Indy 500 counted in the 1950s championship» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "In 1950 the Indianapolis 500 counted towards the inaugural Drivers' World Championship. Johnnie Parsons won the 500-mile race. That inclusion is a historical championship rule, not evidence that the later Formula 1 road circuit already existed. Separating layouts avoids a common error in early F1 histories.",
+            "uk": "У 1950 році «Інді-500» входила до першого чемпіонату світу серед пілотів. 500-мильну гонку виграв Джонні Парсонс. Це історична особливість правил, а не свідчення існування пізнішої дорожньої траси Формули-1. Розділення конфігурацій допомагає уникнути поширеної помилки."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": 2000,
@@ -1181,17 +1195,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 1992,
           "title": {
-            "en": "The World Championship returns in the 1990s",
-            "uk": "The World Championship returns in the 1990s"
+            "en": "The return to a changed Kyalami",
+            "uk": "Повернення до перебудованого К’яламі"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the world championship returns in the 1990s with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The World Championship returns in the 1990s» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1977/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Formula 1 returned to South Africa in 1992 at a redesigned Kyalami. Nigel Mansell won for Williams. It was a different racing configuration from that remembered in earlier South African Grands Prix, and the return also took place amid major changes in the country's international sporting position.",
+            "uk": "Формула-1 повернулася до Південної Африки у 1992 році на перебудований К’яламі. Найджел Менселл переміг за Williams. Це була інша конфігурація, ніж за попередніх Гран-прі, а повернення відбулося на тлі великих змін у міжнародному спортивному становищі країни."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -1241,17 +1262,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 1976,
           "title": {
-            "en": "The first Japanese World Championship race",
-            "uk": "The first Japanese World Championship race"
+            "en": "Andretti wins as Hunt takes the title",
+            "uk": "Андретті перемагає, а Гант здобуває титул"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the first japanese world championship race with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The first Japanese World Championship race» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1976/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Fuji hosted Japan's first Formula 1 World Championship Grand Prix in 1976. Mario Andretti won for Lotus, while James Hunt's third place secured the title after Niki Lauda withdrew in dangerous wet conditions. The winner of the Grand Prix and the champion of the season were different drivers.",
+            "uk": "Фудзі прийняла перший чемпіонатний Гран-прі Японії у 1976 році. Маріо Андретті переміг за Lotus, а третє місце Джеймса Ганта принесло йому титул після сходу Нікі Лауди за небезпечних дощових умов. Переможець Гран-прі й чемпіон сезону були різними пілотами."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -1280,17 +1308,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2007,
           "title": {
-            "en": "Formula 1 returns to Fuji in 2007",
-            "uk": "Formula 1 returns to Fuji in 2007"
+            "en": "Rain welcomes Formula 1 back to Fuji",
+            "uk": "Фудзі зустрічає Формулу-1 дощем"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of formula 1 returns to fuji in 2007 with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Formula 1 returns to Fuji in 2007» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1976/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The Japanese Grand Prix returned to Fuji in 2007 after a long absence. Lewis Hamilton won in difficult wet conditions for McLaren. The circuit had also hosted the 1976 championship finale, but changes to the track and the cars make these two very different chapters.",
+            "uk": "Гран-прі Японії повернувся на Фудзі у 2007 році після довгої перерви. Льюїс Гамільтон переміг за McLaren у складних дощових умовах. Тут проходив і фінал чемпіонату 1976 року, але зміни траси й машин зробили ці гонки дуже різними розділами історії."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -1379,17 +1414,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2018,
           "title": {
-            "en": "The French Grand Prix returns in 2018",
-            "uk": "The French Grand Prix returns in 2018"
+            "en": "Paul Ricard returns to the World Championship",
+            "uk": "Поль-Рікар повертається до чемпіонату"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the french grand prix returns in 2018 with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The French Grand Prix returns in 2018» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1990/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The French Grand Prix returned to Paul Ricard in 2018 after many seasons away. Lewis Hamilton won for Mercedes. The event introduced the circuit to younger Formula 1 viewers while reconnecting the championship with a venue remembered from earlier generations of cars and track configurations.",
+            "uk": "Гран-прі Франції повернувся на Поль-Рікар у 2018 році після багатьох сезонів перерви. Льюїс Гамільтон переміг за Mercedes. Молоде покоління глядачів познайомилося з трасою, яку старші вболівальники пам’ятали за іншими болідами та конфігураціями."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -1478,17 +1520,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2008,
           "title": {
-            "en": "The last Grand Prix in 2008",
-            "uk": "The last Grand Prix in 2008"
+            "en": "A farewell Ferrari one-two",
+            "uk": "Прощальний дубль Ferrari"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the last grand prix in 2008 with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The last Grand Prix in 2008» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2002/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Felipe Massa won the 2008 French Grand Prix at Magny-Cours for Ferrari, with Kimi Räikkönen second. This was the circuit's last Formula 1 World Championship race. The one-two finish gave a long French Grand Prix era a clear final result, even if the venue's history stretches far beyond that afternoon.",
+            "uk": "Феліпе Масса виграв Гран-прі Франції 2008 року на Маньї-Кур за Ferrari, а Кімі Ряйкконен став другим. Це була остання чемпіонатна гонка на трасі. Дубль підвів спортивну риску під довгою епохою французьких Гран-прі, хоча історія автодрому цим не обмежується."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -1684,17 +1733,24 @@
           "source_granularity": "official_F1_specific_historical_article"
         },
         {
-          "year": null,
+          "year": 2021,
           "title": {
-            "en": "An unusual 2021 race calendar",
-            "uk": "An unusual 2021 race calendar"
+            "en": "Another Portimão win for Hamilton",
+            "uk": "Ще одна перемога Гамільтона в Портімані"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of an unusual 2021 race calendar with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «An unusual 2021 race calendar» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2020/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "After entering the disrupted 2020 calendar, Portimão hosted Formula 1 again in 2021. Lewis Hamilton won ahead of Max Verstappen and Valtteri Bottas. The result now belonged to a direct championship rivalry with Verstappen, unlike the record-breaking milestone Hamilton celebrated there a year earlier.",
+            "uk": "Після появи в незвичному календарі 2020 року Портіман знову прийняв Формулу-1 у 2021-му. Льюїс Гамільтон переміг Макса Ферстаппена й Валттері Боттаса. Тепер результат був частиною прямої титульної боротьби, на відміну від рекордної перемоги роком раніше."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -1744,17 +1800,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 2020,
           "title": {
-            "en": "Why Ferrari's 1000th Grand Prix came to Mugello",
-            "uk": "Why Ferrari's 1000th Grand Prix came to Mugello"
+            "en": "Ferrari's thousandth championship race",
+            "uk": "Тисячний чемпіонатний етап Ferrari"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of why ferrari's 1000th grand prix came to mugello with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Why Ferrari's 1000th Grand Prix came to Mugello» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2020/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Mugello's 2020 Tuscan Grand Prix was a milestone for Ferrari: its thousandth World Championship Grand Prix. Yet Lewis Hamilton won the event for Mercedes. The team's anniversary and the race winner are separate facts. Keeping both in view captures an occasion that was more complicated than a simple celebration.",
+            "uk": "Гран-прі Тоскани 2020 року в Муджелло став тисячним чемпіонатним етапом Ferrari. Однак переміг Льюїс Гамільтон за Mercedes. Ювілей команди й переможець гонки — різні факти. Разом вони розповідають про подію, складнішу за звичайне святкування."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -1880,17 +1943,24 @@
           "source_granularity": "official_F1_specific_historical_article"
         },
         {
-          "year": null,
+          "year": 1993,
           "title": {
-            "en": "How weather and tyre choices transformed the race",
-            "uk": "How weather and tyre choices transformed the race"
+            "en": "Senna's victory beyond its first lap",
+            "uk": "Перемога Сенни після першого кола"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of how weather and tyre choices transformed the race with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «How weather and tyre choices transformed the race» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Ayrton Senna's famous opening lap at the wet 1993 European Grand Prix was only the beginning of his race at Donington. The weather continued to vary as he went on to win for McLaren ahead of Damon Hill and Alain Prost. The victory deserves more than a highlight clip of the first few corners.",
+            "uk": "Знамените перше коло Айртона Сенни на мокрому Гран-прі Європи 1993 року стало лише початком гонки в Донингтоні. Погода змінювалася, а він переміг за McLaren перед Деймоном Гіллом та Аленом Простом. Ця перемога заслуговує на більше, ніж відео кількох перших поворотів."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -1953,17 +2023,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 2008,
           "title": {
-            "en": "The harbour bridges and street layout",
-            "uk": "The harbour bridges and street layout"
+            "en": "Ferrari wins Valencia's debut",
+            "uk": "Ferrari перемагає в дебюті Валенсії"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the harbour bridges and street layout with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The harbour bridges and street layout» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2012/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Valencia introduced a harbour-side street race to Formula 1 in 2008. Felipe Massa won the first European Grand Prix there for Ferrari. Spain now had a second distinctive Grand Prix setting alongside Barcelona, even though Valencia's time on the championship calendar would be relatively short.",
+            "uk": "Валенсія привела Формулу-1 на міську трасу біля гавані у 2008 році. Феліпе Масса виграв перший Гран-прі Європи тут за Ferrari. Іспанія отримала друге незвичне місце проведення гонок поряд із Барселоною, хоча історія Валенсії в календарі виявилася короткою."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -2091,17 +2168,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 2013,
           "title": {
-            "en": "Why the Korean Grand Prix disappeared",
-            "uk": "Why the Korean Grand Prix disappeared"
+            "en": "The end of Korea's Grand Prix run",
+            "uk": "Завершення корейського Гран-прі"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of why the korean grand prix disappeared with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Why the Korean Grand Prix disappeared» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2010/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Sebastian Vettel won the 2013 Korean Grand Prix at Yeongam for Red Bull. It became the final Formula 1 World Championship race at the venue after four editions. The event had begun with a rain-affected debut in 2010; its later disappearance has causes that must be researched separately from the race classification.",
+            "uk": "Себастьян Феттель виграв Гран-прі Кореї 2013 року в Йонамі за Red Bull. Це стала остання гонка чемпіонату світу на трасі після чотирьох етапів. Історія почалася з дощового дебюту 2010 року, але причини зникнення гонки слід досліджувати окремо від спортивного результату."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         }
       ],
       "turn_names": [],
@@ -2148,17 +2232,24 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 2011,
           "title": {
-            "en": "The 2011 Indian Grand Prix debut",
-            "uk": "The 2011 Indian Grand Prix debut"
+            "en": "India enters the Grand Prix world",
+            "uk": "Індія входить у світ Гран-прі"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the 2011 indian grand prix debut with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The 2011 Indian Grand Prix debut» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "India's first Formula 1 World Championship Grand Prix took place at Buddh in 2011. Sebastian Vettel won for Red Bull. The circuit's short calendar life still included a remarkable milestone two years later when Vettel secured his fourth consecutive title at the same venue.",
+            "uk": "Перший чемпіонатний Гран-прі Індії відбувся на автодромі Будд у 2011 році. Себастьян Феттель переміг за Red Bull. Попри коротку історію в календарі, через два роки ця сама траса побачила його четвертий поспіль чемпіонський титул."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -2247,17 +2338,24 @@
           "source_granularity": "event_or_article"
         },
         {
-          "year": null,
+          "year": 2014,
           "title": {
-            "en": "The inaugural Russian Grand Prix",
-            "uk": "The inaugural Russian Grand Prix"
+            "en": "A Mercedes one-two in Sochi",
+            "uk": "Дубль Mercedes у Сочі"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of the inaugural russian grand prix with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «The inaugural Russian Grand Prix» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Sochi's inaugural Formula 1 Grand Prix took place in 2014 around the Olympic Park. Lewis Hamilton won ahead of Mercedes teammate Nico Rosberg. Years later the same venue became the setting for Lando Norris's heartbreaking near-win in wet weather, showing how different stories could unfold on one circuit.",
+            "uk": "Перший Гран-прі Формули-1 у Сочі пройшов у 2014 році навколо Олімпійського парку. Льюїс Гамільтон переміг напарника по Mercedes Ніко Росберга. Роками пізніше тут відбудеться болісна втрата майже здобутої перемоги Ландо Норріса під дощем."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -2346,17 +2444,24 @@
           "source_granularity": "season_results_index"
         },
         {
-          "year": null,
+          "year": 1989,
           "title": {
-            "en": "Why Formula 1 moved from Detroit to Phoenix",
-            "uk": "Why Formula 1 moved from Detroit to Phoenix"
+            "en": "Prost wins the first Phoenix Grand Prix",
+            "uk": "Прост виграє перший Гран-прі Фінікса"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of why formula 1 moved from detroit to phoenix with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Why Formula 1 moved from Detroit to Phoenix» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1990/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "The United States Grand Prix moved to Phoenix in 1989, where Alain Prost won for McLaren. The city hosted only three Formula 1 championship editions, yet its short life included a memorable 1990 contest between Ayrton Senna and Jean Alesi. A venue does not need decades of races to earn its own story.",
+            "uk": "Гран-прі США переїхав до Фінікса у 1989 році, де Ален Прост переміг за McLaren. Місто прийняло лише три чемпіонатні гонки, але за цей короткий час подарувало пам’ятну дуель Айртона Сенни й Жана Алезі у 1990-му. Трасі не потрібні десятиліття етапів, щоб залишити власну історію."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -2478,17 +2583,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 1988,
           "title": {
-            "en": "Senna's Detroit victories",
-            "uk": "Senna's Detroit victories"
+            "en": "Senna gives Detroit a winning farewell",
+            "uk": "Сенна прощається з Детройтом перемогою"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of senna's detroit victories with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Senna's Detroit victories» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1982/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Ayrton Senna won the 1988 Detroit Grand Prix for McLaren. It was the last Formula 1 championship race on the city's street course and Senna's third successive victory there. The American Grand Prix would soon move to Phoenix, closing one urban chapter and beginning another.",
+            "uk": "Айртон Сенна виграв Гран-прі Детройта 1988 року за McLaren. Це була остання чемпіонатна гонка на міській трасі й третя поспіль перемога Сенни тут. Невдовзі американський Гран-прі переїхав до Фінікса, завершивши один міський розділ і відкривши інший."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": null,
@@ -2561,17 +2673,24 @@
           "status": "research_question_not_historical_article"
         },
         {
-          "year": null,
+          "year": 1977,
           "title": {
-            "en": "Mario Andretti's home success in 1977",
-            "uk": "Mario Andretti's home success in 1977"
+            "en": "An American winner at Long Beach",
+            "uk": "Американська перемога в Лонг-Біч"
           },
           "editorial_direction": {
-            "en": "Research archival coverage of mario andretti's home success in 1977 with primary sources and check whether it belongs to the circuit's most important stories.",
-            "uk": "Перевірити архівні джерела за темою «Mario Andretti's home success in 1977» та визначити, чи вона справді належить до найважливіших історій траси."
+            "en": "Independent event-specific claim verification required.",
+            "uk": "Потрібна незалежна перевірка фактів за джерелами про конкретну гонку."
           },
-          "sources": [],
-          "status": "research_question_not_historical_article"
+          "sources": [
+            "https://www.formula1.com/en/results/1983/races"
+          ],
+          "status": "classification_supported_research_draft",
+          "narrative": {
+            "en": "Mario Andretti won the 1977 United States Grand Prix West at Long Beach for Lotus. The California street venue gained an American winner early in its Formula 1 history. The result still has its own significance alongside John Watson's extraordinary win from the back of the field in 1983.",
+            "uk": "Маріо Андретті виграв Гран-прі США-Захід 1977 року в Лонг-Біч за Lotus. Каліфорнійська міська траса отримала американського переможця ще на початку історії Формули-1. Це окрема пам’ятна подія поряд із неймовірним проривом Джона Вотсона 1983 року."
+          },
+          "source_granularity": "existing_official_F1_result_candidate_not_independent_fact_check"
         },
         {
           "year": 1983,
