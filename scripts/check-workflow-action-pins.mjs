@@ -64,8 +64,21 @@ export function auditWorkflowText(source, filename = 'workflow') {
     if (!/^actions\/checkout@/i.test(reference)) continue;
     // Named steps keep uses/with at the same indentation; compact steps
     // put with two spaces below "- uses". Scan to the next step boundary.
-    const namedStep = i > 0 && /^\s*-\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
-      lines[i - 1].match(/^\s*/)[0].length + 2 === indentation.length;
+    // Find the list-item start even when id/if/env precede uses in a named step.
+    let stepStart = i;
+    while (stepStart > 0) {
+      const previous = lines[stepStart - 1];
+      if (previous.trim() && previous.match(/^\s*/)[0].length < indentation.length) {
+        if (/^\s*-\s+/.test(previous) &&
+            previous.match(/^\s*/)[0].length + 2 === indentation.length) {
+          stepStart--;
+        }
+        break;
+      }
+      stepStart--;
+    }
+    const namedStep = stepStart < i &&
+      /^\s*-\s+(?:name|['"]name['"]):/.test(lines[stepStart]);
     const stepIndent = indentation.length - (namedStep ? 2 : 0);
     let end = i + 1;
     while (end < lines.length) {
