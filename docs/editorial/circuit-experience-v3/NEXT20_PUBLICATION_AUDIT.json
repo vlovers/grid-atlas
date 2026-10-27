@@ -4,20 +4,20 @@
   "publication": "blocked",
   "story_count": 105,
   "verified_by_editor": 0,
-  "unverified_drafts": 17,
-  "classification_or_source_checked_claims": 88,
+  "unverified_drafts": 0,
+  "classification_or_source_checked_claims": 105,
   "required_before_publication": [
     "Verify individual historical facts in all 105 story drafts against race-specific primary sources",
     "Resolve many URL candidates that have not been accessed or validated",
     "Expand draft prose into genuine multi-paragraph editorial stories, not short synopsis cards",
     "Verify official turn numbers, exact layout era and pinned F1DB configuration identity",
     "Independent EN/UK language and historiography review",
-    "Obtain independent claim-level editorial sign-off for 105 UK/EN stories; 17 still need an event-specific evidence crosswalk",
+    "Obtain independent claim-level editorial sign-off for 105 UK/EN stories; all 105 have first-pass crosswalks, but independent checks are still required",
     "Verify media ownership/licences for each intended asset, including existing SVG layouts",
     "Run real-data browser acceptance and CI on the exact release commit"
   ],
-  "warning": "The 17 drafts lack the deeper event-specific crosswalk; the 88 reviewed drafts have only first-pass F1 publisher evidence, not independent claim-by-claim approval. All 105 remain unpublished. The 20-circuit and 25-circuit research PRs #320 and #317 were merged to main on 2026-10-27 despite release blockers; merge does not equal publication approval.",
-  "first_pass_event_specific_checked": 88,
-  "bilingual_narratives_rewritten": 63,
+  "warning": "105/105 now have first-pass event-specific publisher evidence crosswalks, but ALL 105 remain independent-editorially unverified and unpublished. No historical corner geometry, media licences or browser release approval. The original #320/#317 research PRs were merged 2026-10-27 despite release blockers: merge is NOT editorial approval.",
+  "first_pass_event_specific_checked": 105,
+  "bilingual_narratives_rewritten": 71,
   "all_stories_still_unapproved": 105
 }
