@@ -1,0 +1,2794 @@
+{
+  "schema_version": 1,
+  "batch_id": "next25-source-evidence-claim-review-20261027",
+  "source_release": "F1DB v2026.17.0",
+  "status": "research_only",
+  "publication": "blocked",
+  "scope": "Claim-review queue only. A link to Formula 1 results is evidence for recorded race outcomes, not proof of incidents, geometry, politics, human circumstances or strategy. Event-specific article links are candidates pending reading and independent fact checking.",
+  "summary": {
+    "total": 125,
+    "primary_anchors": 25,
+    "classification_drafts": 89,
+    "article_source_drafts": 11,
+    "priority_human_review": 43,
+    "undated_topics": 29,
+    "independently_approved": 0
+  },
+  "records": [
+    {
+      "candidate_slug": "baku",
+      "story_index": 0,
+      "year": 2017,
+      "title_en": "Ricciardo wins a chaotic race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2017/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "baku",
+      "story_index": 1,
+      "year": 2016,
+      "title_en": "Rosberg wins Baku's first Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "baku",
+      "story_index": 2,
+      "year": 2017,
+      "title_en": "The old city and the Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2017/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "baku",
+      "story_index": 3,
+      "year": 2018,
+      "title_en": "Red Bull's double retirement in Baku",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "baku",
+      "story_index": 4,
+      "year": 2021,
+      "title_en": "Pérez wins after Verstappen's late tyre failure",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/how-the-azerbaijan-grand-prix-became-a-modern-classic.5aL5RCVlpraaMF26WzGnPs"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "story_index": 0,
+      "year": 2021,
+      "title_en": "Hamilton wins a contentious inaugural race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "story_index": 1,
+      "year": 2021,
+      "title_en": "Jeddah makes its Formula 1 debut",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "story_index": 2,
+      "year": 2021,
+      "title_en": "A new kind of street-race pressure",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "story_index": 3,
+      "year": 2021,
+      "title_en": "The limits of a race result",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "jeddah",
+      "story_index": 4,
+      "year": 2021,
+      "title_en": "A difficult first Saudi Arabian GP",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "lusail",
+      "story_index": 0,
+      "year": 2021,
+      "title_en": "Hamilton wins Qatar's inaugural Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "lusail",
+      "story_index": 1,
+      "year": 2021,
+      "title_en": "Lusail's Formula 1 opening",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "lusail",
+      "story_index": 2,
+      "year": 2023,
+      "title_en": "A race shaped by tyre rules",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "lusail",
+      "story_index": 3,
+      "year": 2023,
+      "title_en": "An unusual 18-lap tyre limit",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/explained-what-does-the-maximum-tyre-stint-length-rule-mean-for-the-qatar.4q8iXkNgE3sLnIIASPV1sm"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "lusail",
+      "story_index": 4,
+      "year": 2023,
+      "title_en": "Night lights and difficult conditions",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "story_index": 0,
+      "year": 1990,
+      "title_en": "Prost wins at high altitude",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "story_index": 1,
+      "year": 2015,
+      "title_en": "A circuit named for racing brothers",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2015/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "story_index": 2,
+      "year": 1990,
+      "title_en": "The older Peraltada era",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "story_index": 3,
+      "year": 2015,
+      "title_en": "A Grand Prix through a stadium",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2015/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mexico-city",
+      "story_index": 4,
+      "year": 2015,
+      "title_en": "Mexico City welcomes the championship back",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2015/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "miami",
+      "story_index": 0,
+      "year": 2024,
+      "title_en": "Norris wins his first Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2024/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "miami",
+      "story_index": 1,
+      "year": 2022,
+      "title_en": "A race beside the football stadium",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2022/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "miami",
+      "story_index": 2,
+      "year": 2022,
+      "title_en": "Miami's first Formula 1 winner",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2022/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "miami",
+      "story_index": 3,
+      "year": null,
+      "title_en": "The slow chicane beneath the overpass",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2024/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "miami",
+      "story_index": 4,
+      "year": 2024,
+      "title_en": "Norris gets his breakthrough",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2024/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "story_index": 0,
+      "year": 2023,
+      "title_en": "Verstappen wins the Strip's debut race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "story_index": 1,
+      "year": 1982,
+      "title_en": "The earlier Las Vegas circuit",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1982/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "story_index": 2,
+      "year": 2023,
+      "title_en": "A Grand Prix on the Strip",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "story_index": 3,
+      "year": 2023,
+      "title_en": "Cold nights on the Strip",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "las-vegas-strip",
+      "story_index": 4,
+      "year": 2023,
+      "title_en": "A complicated first night race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "story_index": 0,
+      "year": 2005,
+      "title_en": "Six cars start the United States Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "story_index": 1,
+      "year": 1950,
+      "title_en": "The Indy 500 and the first title season",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1950/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "story_index": 2,
+      "year": 2000,
+      "title_en": "A Formula 1 road course at the Speedway",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2000/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "story_index": 3,
+      "year": 2005,
+      "title_en": "The six-car Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "indianapolis",
+      "story_index": 4,
+      "year": 2005,
+      "title_en": "The oval meets a Formula 1 road course",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2005/races/779/united-states/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "story_index": 0,
+      "year": 1986,
+      "title_en": "A tyre failure changes the championship",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "story_index": 1,
+      "year": 1985,
+      "title_en": "Adelaide hosts the championship",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1985/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "story_index": 2,
+      "year": 1989,
+      "title_en": "Adelaide's rain-drenched finale",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1989/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "story_index": 3,
+      "year": 1994,
+      "title_en": "Schumacher and Hill collide in the title decider",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "adelaide",
+      "story_index": 4,
+      "year": 1995,
+      "title_en": "A farewell before Melbourne",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1995/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "story_index": 0,
+      "year": 1976,
+      "title_en": "Hunt's home victory is overturned",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races/366/great-britain/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "story_index": 1,
+      "year": 1964,
+      "title_en": "Clark wins at Brands Hatch",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1964/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "story_index": 2,
+      "year": 1986,
+      "title_en": "The descent into Brands Hatch history",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "story_index": 3,
+      "year": 1983,
+      "title_en": "Brands Hatch hosts a European Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1983/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "brands-hatch",
+      "story_index": 4,
+      "year": 1986,
+      "title_en": "The final Brands Hatch Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "story_index": 0,
+      "year": 1970,
+      "title_en": "Fittipaldi wins and Rindt's title is secured",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1970/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "story_index": 1,
+      "year": 1961,
+      "title_en": "A memorable first winner at the Glen",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1961/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The Esses and the climbing first sector",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1970/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "story_index": 3,
+      "year": null,
+      "title_en": "Safety changes in the 1970s",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1970/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "watkins-glen",
+      "story_index": 4,
+      "year": 1980,
+      "title_en": "The Glen's last Formula 1 race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1980/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "story_index": 0,
+      "year": 1977,
+      "title_en": "Tom Pryce dies in a tragic collision",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1977/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "story_index": 1,
+      "year": 1967,
+      "title_en": "A first Kyalami winner",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "story_index": 2,
+      "year": 1992,
+      "title_en": "Kyalami's changed layout",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1992/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "story_index": 3,
+      "year": null,
+      "title_en": "Apartheid-era sporting boycotts",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1977/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "kyalami",
+      "story_index": 4,
+      "year": 1992,
+      "title_en": "The return to a changed Kyalami",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1992/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "fuji",
+      "story_index": 0,
+      "year": 1976,
+      "title_en": "Hunt takes the title after Lauda withdraws",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "fuji",
+      "story_index": 1,
+      "year": 1976,
+      "title_en": "Andretti wins as Hunt takes the title",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "fuji",
+      "story_index": 2,
+      "year": 1976,
+      "title_en": "Fuji's old banked circuit",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "fuji",
+      "story_index": 3,
+      "year": null,
+      "title_en": "The 1977 tragedy involving spectators",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "fuji",
+      "story_index": 4,
+      "year": 2007,
+      "title_en": "Rain welcomes Formula 1 back to Fuji",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2007/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "story_index": 0,
+      "year": 1990,
+      "title_en": "Leyton House almost produces an upset",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "story_index": 1,
+      "year": 1971,
+      "title_en": "Stewart opens Paul Ricard's F1 history",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1971/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The Mistral Straight and its chicane",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "story_index": 3,
+      "year": null,
+      "title_en": "The circuit's test-track years",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "paul-ricard",
+      "story_index": 4,
+      "year": 2018,
+      "title_en": "Paul Ricard returns to the World Championship",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2018/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "story_index": 0,
+      "year": 2002,
+      "title_en": "Schumacher secures the title in July",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2002/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "story_index": 1,
+      "year": 1991,
+      "title_en": "A new French Grand Prix home",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1991/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "story_index": 2,
+      "year": null,
+      "title_en": "Corners named after other circuits",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2002/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "story_index": 3,
+      "year": null,
+      "title_en": "Pit-stop strategy at Magny-Cours",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2002/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "magny-cours",
+      "story_index": 4,
+      "year": 2008,
+      "title_en": "A farewell Ferrari one-two",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2008/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "estoril",
+      "story_index": 0,
+      "year": 1985,
+      "title_en": "Senna takes his first F1 win in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "estoril",
+      "story_index": 1,
+      "year": 1984,
+      "title_en": "Portugal's return to Formula 1",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1984/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "estoril",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The famous 1988 Senna-Prost squeeze",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "estoril",
+      "story_index": 3,
+      "year": null,
+      "title_en": "Villeneuve's long outside pass in 1996",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "estoril",
+      "story_index": 4,
+      "year": null,
+      "title_en": "How Estoril's corners changed",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1985/races/483/portugal/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "portimao",
+      "story_index": 0,
+      "year": 2020,
+      "title_en": "Hamilton becomes F1's all-time wins leader",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "portimao",
+      "story_index": 1,
+      "year": 2020,
+      "title_en": "Portugal returns and Hamilton rewrites the wins record",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "portimao",
+      "story_index": 2,
+      "year": null,
+      "title_en": "Elevation changes and blind crests",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "portimao",
+      "story_index": 3,
+      "year": 2020,
+      "title_en": "Cold tyres scramble the opening laps at Portimão",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "portimao",
+      "story_index": 4,
+      "year": 2021,
+      "title_en": "Another Portimão win for Hamilton",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mugello",
+      "story_index": 0,
+      "year": 2020,
+      "title_en": "Hamilton wins a race with two red flags",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mugello",
+      "story_index": 1,
+      "year": 2020,
+      "title_en": "Ferrari's thousandth championship race",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mugello",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The high-speed Arrabbiata corners",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mugello",
+      "story_index": 3,
+      "year": 2020,
+      "title_en": "A turbulent restart at Mugello",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "mugello",
+      "story_index": 4,
+      "year": 2020,
+      "title_en": "An unexpected stop on the calendar",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2020/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "story_index": 0,
+      "year": 1993,
+      "title_en": "Senna's opening lap in the rain",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "story_index": 1,
+      "year": 1993,
+      "title_en": "Senna turns Donington's only championship race into a classic",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/from-mighty-comebacks-to-stunning-debut-victories-nine-of-the-greatest-wet.76xmQPYD8I3wtkM8g860rT"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "story_index": 2,
+      "year": 1993,
+      "title_en": "A pass through Craner Curves helps define Senna's first lap",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/ayrton-senna-10-moments-of-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "story_index": 3,
+      "year": 1993,
+      "title_en": "Senna's victory beyond its first lap",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "donington-park",
+      "story_index": 4,
+      "year": null,
+      "title_en": "Why the venue did not become a permanent F1 home",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "story_index": 0,
+      "year": 2012,
+      "title_en": "Alonso wins after starting eleventh",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2012/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "story_index": 1,
+      "year": 2008,
+      "title_en": "Ferrari wins Valencia's debut",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2008/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The circuit debuts in 2008",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2012/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "story_index": 3,
+      "year": 2010,
+      "title_en": "Webber's Valencia crash",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2010/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "valencia-street",
+      "story_index": 4,
+      "year": null,
+      "title_en": "Why the race ended after 2012",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2012/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "story_index": 0,
+      "year": 2010,
+      "title_en": "Alonso wins a rain-delayed debut",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2010/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "story_index": 1,
+      "year": null,
+      "title_en": "Building the circuit at Yeongam",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2010/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "story_index": 2,
+      "year": 2010,
+      "title_en": "A wet opening for Korea's new circuit",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2010/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "story_index": 3,
+      "year": null,
+      "title_en": "The blend of long straights and tight corners",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2010/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "korea-international",
+      "story_index": 4,
+      "year": 2013,
+      "title_en": "The end of Korea's Grand Prix run",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2013/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "buddh",
+      "story_index": 0,
+      "year": 2013,
+      "title_en": "Vettel seals his fourth title",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "buddh",
+      "story_index": 1,
+      "year": 2011,
+      "title_en": "India enters the Grand Prix world",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2011/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "buddh",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The long back straight and elevation",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "buddh",
+      "story_index": 3,
+      "year": 2012,
+      "title_en": "A Vettel–Alonso chapter in India",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2012/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "buddh",
+      "story_index": 4,
+      "year": null,
+      "title_en": "Why the race stopped after 2013",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "sochi",
+      "story_index": 0,
+      "year": 2021,
+      "title_en": "Norris loses a first win as rain arrives",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "sochi",
+      "story_index": 1,
+      "year": 2014,
+      "title_en": "A Mercedes one-two in Sochi",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2014/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "sochi",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The Olympic Park layout",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "sochi",
+      "story_index": 3,
+      "year": 2021,
+      "title_en": "The rain that changed Sochi",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "sochi",
+      "story_index": 4,
+      "year": null,
+      "title_en": "The Russian Grand Prix's removal from the calendar",
+      "source_urls": [
+        "https://www.formula1.com/en/results/2021/races/1077/russia/race-result"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "story_index": 0,
+      "year": 1990,
+      "title_en": "Alesi challenges Senna",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "story_index": 1,
+      "year": 1989,
+      "title_en": "Prost wins the first Phoenix Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1989/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The challenges of extreme desert heat",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "story_index": 3,
+      "year": null,
+      "title_en": "The unusual 1989 race distance",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "phoenix-street",
+      "story_index": 4,
+      "year": null,
+      "title_en": "The end of the Phoenix experiment",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1990/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "story_index": 0,
+      "year": 1982,
+      "title_en": "Watson wins from seventeenth",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1982/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "story_index": 1,
+      "year": 1982,
+      "title_en": "Watson wins Detroit's first World Championship Grand Prix",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/10-of-the-greatest-recovery-drives-after-starting-at-the-back-of-the-grid.7sciMqdQF2tCBaO3jIIxBs.7sciMqdQF2tCBaO3jIIxBs"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "story_index": 2,
+      "year": null,
+      "title_en": "The slowest and roughest street sections",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1982/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "story_index": 3,
+      "year": 1988,
+      "title_en": "Senna gives Detroit a winning farewell",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1988/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "detroit-street",
+      "story_index": 4,
+      "year": null,
+      "title_en": "Why the race moved to Phoenix",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1982/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "story_index": 0,
+      "year": 1983,
+      "title_en": "Watson wins from twenty-second",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1983/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "official_f1_source_checked_human_review_pending",
+      "review_priority": "priority_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "sensitive_fact_or_safety_claim_needs_primary_evidence",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "story_index": 1,
+      "year": 1976,
+      "title_en": "Long Beach arrives in the World Championship",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1976/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "story_index": 2,
+      "year": 1977,
+      "title_en": "An American winner at Long Beach",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1977/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "story_index": 3,
+      "year": 1983,
+      "title_en": "Two McLarens come from the back to finish first and second",
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/the-8-biggest-recovery-drives-to-win-in-formula-1-history.2gPR6LU7n1fMTZhp2G8KAM.2gPR6LU7n1fMTZhp2G8KAM"
+      ],
+      "source_types": {
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
+      },
+      "research_status": "source_checked_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "candidate_slug": "long-beach",
+      "story_index": 4,
+      "year": null,
+      "title_en": "The switch to IndyCar racing",
+      "source_urls": [
+        "https://www.formula1.com/en/results/1983/races"
+      ],
+      "source_types": {
+        "season_classification": 1,
+        "event_specific_article_candidates": 0
+      },
+      "research_status": "classification_supported_research_draft",
+      "review_priority": "standard_human_review",
+      "review_flags": [
+        "event_year_or_historical_period_not_fixed",
+        "results_do_not_establish_context_or_causation",
+        "independent_event_specific_sources_needed",
+        "historical_layout_id_not_approved"
+      ],
+      "independent_approval": false,
+      "publication": "blocked"
+    }
+  ]
+}
