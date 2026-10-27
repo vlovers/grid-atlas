@@ -19,9 +19,8 @@ for (const locale of ['uk', 'en'] as const) {
 
   test(`${locale}: circuit winning-driver coverage is source bounded`, async ({ page }) => {
     await page.goto(`/${locale}/circuits/1`);
-    const story = page.getByTestId('circuit-result-legends');
+    const story = page.getByTestId('circuit-win-leader');
     await expect(story).toBeVisible();
-    await expect(story).toContainText(locale === 'uk' ? 'першою позицією' : 'first-position');
-    await expect(story).toContainText(locale === 'uk' ? 'не універсальний' : 'not an official');
+    await expect(story).toContainText(locale === 'uk' ? 'Найбільше перемог у результатах F1DB' : 'Most wins in the F1DB results');
   });
 }

@@ -1,0 +1,648 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-27",
+  "sources": {
+    "monaco-names": "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
+    "monaco-map": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_revised_0.pdf",
+    "silverstone-names": "https://www.formula1.com/en/latest/article/explained-how-every-silverstone-corner-got-its-name.idMlxFC2gfN2ApcPmifxN",
+    "silverstone-map": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
+    "monza-names": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
+    "monza-map": "https://www.fia.com/system/files/decision-document/2025_monza_event_-_circuit_map_-_monza_2025_0.pdf",
+    "spa-francorchamps-map": "https://www.fia.com/system/files/decision-document/2025_spa_francorchamps_event_-_circuit_map_-_spa_francorchamps_2025.pdf",
+    "spa-francorchamps-names": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+  },
+  "guides": [
+    {
+      "circuit_id": "silverstone",
+      "layout_id": "silverstone-8",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 18,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "silverstone-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Abbey",
+          "aliases": [],
+          "explanation": {
+            "en": "Recalls Luffield Abbey.",
+            "uk": "Нагадує про абатство Luffield."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Farm",
+          "aliases": [],
+          "explanation": {
+            "en": "Recalls a nearby farm.",
+            "uk": "Нагадує про місцеву ферму."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Village",
+          "aliases": [],
+          "explanation": {
+            "en": "Named for Silverstone village.",
+            "uk": "Названий на честь села Сільверстоун."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t4",
+          "numbers": [
+            4
+          ],
+          "name": "The Loop",
+          "aliases": [],
+          "explanation": {
+            "en": "A name describing its shape.",
+            "uk": "Назва описує форму повороту."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Aintree",
+          "aliases": [],
+          "explanation": {
+            "en": "Recalls another British GP venue.",
+            "uk": "Нагадує про іншу трасу Гран-прі."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Brooklands",
+          "aliases": [],
+          "explanation": {
+            "en": "Honours the earlier racing venue.",
+            "uk": "На честь історичного автодрому."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Luffield",
+          "aliases": [],
+          "explanation": {
+            "en": "Another link to the abbey.",
+            "uk": "Ще один спогад про абатство."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Woodcote",
+          "aliases": [],
+          "explanation": {
+            "en": "Named for the RAC’s estate.",
+            "uk": "На честь маєтку клубу RAC."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Copse",
+          "aliases": [],
+          "explanation": {
+            "en": "Named for nearby woodland.",
+            "uk": "Від назви місцевих гаїв."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t10",
+          "numbers": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "name": "Maggotts, Becketts & Chapel",
+          "aliases": [],
+          "explanation": {
+            "en": "Moorland and chapel memories.",
+            "uk": "Спогади про пустище й каплицю."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Stowe",
+          "aliases": [],
+          "explanation": {
+            "en": "Associated with Stowe School.",
+            "uk": "Пов’язаний зі школою Stowe."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t16",
+          "numbers": [
+            16
+          ],
+          "name": "Vale",
+          "aliases": [],
+          "explanation": {
+            "en": "Its origin remains uncertain.",
+            "uk": "Походження назви остаточно не з’ясоване."
+          },
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "silverstone-t17",
+          "numbers": [
+            17,
+            18
+          ],
+          "name": "Club",
+          "aliases": [],
+          "explanation": null,
+          "sources": [
+            "silverstone-map",
+            "silverstone-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "monza",
+      "layout_id": "monza-7",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 11,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "monza-t1",
+          "numbers": [
+            1,
+            2
+          ],
+          "name": "Prima Variante",
+          "aliases": [
+            "Variante del Rettifilo"
+          ],
+          "explanation": {
+            "en": "The opening chicane.",
+            "uk": "Перша шикана кола."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Biassono",
+          "aliases": [
+            "Curva Grande"
+          ],
+          "explanation": {
+            "en": "Shares a nearby town’s name.",
+            "uk": "Має назву сусіднього міста."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t4",
+          "numbers": [
+            4,
+            5
+          ],
+          "name": "Seconda Variante",
+          "aliases": [
+            "Curva della Roggia"
+          ],
+          "explanation": {
+            "en": "The second chicane.",
+            "uk": "Друга шикана кола."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Lesmo 1",
+          "aliases": [],
+          "explanation": {
+            "en": "One of the paired Lesmos.",
+            "uk": "Перший із парних Lesmo."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Lesmo 2",
+          "aliases": [],
+          "explanation": {
+            "en": "The second Lesmo bend.",
+            "uk": "Другий поворот Lesmo."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t8",
+          "numbers": [
+            8,
+            9,
+            10
+          ],
+          "name": "Variante Ascari",
+          "aliases": [
+            "Curva del Vialone",
+            "Curva del Platano"
+          ],
+          "explanation": {
+            "en": "Commemorates Alberto Ascari.",
+            "uk": "Вшановує Альберто Аскарі."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "monza-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Curva Alboreto",
+          "aliases": [
+            "Parabolica"
+          ],
+          "explanation": {
+            "en": "Honours Michele Alboreto.",
+            "uk": "Вшановує Мікеле Альборето."
+          },
+          "sources": [
+            "monza-map",
+            "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "circuit_id": "monaco",
+      "layout_id": "monaco-6",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 19,
+      "diagram": {
+        "view_box": [
+          0,
+          0,
+          500,
+          500
+        ],
+        "asset": "/circuit-layouts/monaco-6.svg",
+        "numbering_source": "monaco-map",
+        "annotation_status": "illustrative_review_pending",
+        "checked_on": "2026-10-27",
+        "points": [
+          {
+            "number": 1,
+            "anchor": [
+              82,
+              245
+            ],
+            "label": [
+              38,
+              239
+            ]
+          },
+          {
+            "number": 2,
+            "anchor": [
+              225,
+              214
+            ],
+            "label": [
+              224,
+              170
+            ]
+          },
+          {
+            "number": 3,
+            "anchor": [
+              330,
+              150
+            ],
+            "label": [
+              366,
+              150
+            ]
+          },
+          {
+            "number": 4,
+            "anchor": [
+              308,
+              102
+            ],
+            "label": [
+              270,
+              105
+            ]
+          },
+          {
+            "number": 5,
+            "anchor": [
+              367,
+              16
+            ],
+            "label": [
+              337,
+              35
+            ]
+          },
+          {
+            "number": 6,
+            "anchor": [
+              400,
+              62
+            ],
+            "label": [
+              452,
+              100
+            ]
+          },
+          {
+            "number": 7,
+            "anchor": [
+              384,
+              30
+            ],
+            "label": [
+              365,
+              76
+            ]
+          },
+          {
+            "number": 8,
+            "anchor": [
+              427,
+              22
+            ],
+            "label": [
+              466,
+              34
+            ]
+          },
+          {
+            "number": 9,
+            "anchor": [
+              395,
+              144
+            ],
+            "label": [
+              454,
+              180
+            ]
+          },
+          {
+            "number": 10,
+            "anchor": [
+              239,
+              227
+            ],
+            "label": [
+              277,
+              255
+            ]
+          },
+          {
+            "number": 11,
+            "anchor": [
+              226,
+              236
+            ],
+            "label": [
+              205,
+              270
+            ]
+          },
+          {
+            "number": 12,
+            "anchor": [
+              110,
+              249
+            ],
+            "label": [
+              144,
+              278
+            ]
+          },
+          {
+            "number": 13,
+            "anchor": [
+              94,
+              327
+            ],
+            "label": [
+              43,
+              322
+            ]
+          },
+          {
+            "number": 14,
+            "anchor": [
+              109,
+              341
+            ],
+            "label": [
+              152,
+              335
+            ]
+          },
+          {
+            "number": 15,
+            "anchor": [
+              121,
+              389
+            ],
+            "label": [
+              165,
+              386
+            ]
+          },
+          {
+            "number": 16,
+            "anchor": [
+              111,
+              400
+            ],
+            "label": [
+              65,
+              410
+            ]
+          },
+          {
+            "number": 17,
+            "anchor": [
+              137,
+              450
+            ],
+            "label": [
+              177,
+              435
+            ]
+          },
+          {
+            "number": 18,
+            "anchor": [
+              163,
+              473
+            ],
+            "label": [
+              205,
+              470
+            ]
+          },
+          {
+            "number": 19,
+            "anchor": [
+              117,
+              480
+            ],
+            "label": [
+              85,
+              470
+            ]
+          }
+        ]
+      },
+      "aliases_by_number": {
+        "5": [
+          "Mirabeau Superior"
+        ],
+        "6": [
+          "Station Hairpin",
+          "Loews",
+          "Grand Hotel Hairpin"
+        ],
+        "7": [
+          "Mirabeau Inferior"
+        ],
+        "13": [
+          "Piscine"
+        ]
+      }
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "layout_id": "spa-francorchamps-4",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 19
+    }
+  ]
+}

@@ -23,23 +23,23 @@ class CircuitReadingJourneysTests(unittest.TestCase):
             self.assertRegex(item["source"], r"^https://")
         self.assertIn("const entries = [...facts, ...nextFacts, ...finalFacts]", SOURCE)
 
-    def test_reader_links_are_derived_from_actual_races_not_editorial_guess(self):
-        self.assertIn("history={chronologicalHistory}", PAGE)
-        self.assertIn("history.find(event => event.season_year === year)", SOURCE)
-        self.assertIn("race && <Link", SOURCE)
-        self.assertIn("winner && <Link", SOURCE)
-        self.assertIn("href={`/races/${race.race_id}`}", SOURCE)
-        self.assertIn("href={`/drivers/${winner.driver_id}`}", SOURCE)
-        self.assertIn("Independent editorial verification pending", SOURCE)
-        self.assertIn("Race classifications verify results, not every detail", SOURCE)
-        self.assertIn('href="#circuit-layouts"', SOURCE)
+    def test_reader_links_are_derived_from_exact_unambiguous_races(self):
+        renderer = (ED / "circuit-narrative.tsx").read_text(encoding="utf-8")
+        self.assertIn("<CircuitMoments circuitId={circuit.external_id}", PAGE)
+        self.assertIn("history={history}", PAGE)
+        self.assertIn("history.filter(race => race.season_year === moment.year)", renderer)
+        self.assertIn("matches.length === 1 ? matches[0] : null", renderer)
+        self.assertIn("href={`/races/${race.race_id}`}", renderer)
+        self.assertIn("href={`/drivers/${winner.driver_id}`}", renderer)
+        self.assertIn("isCircuitEditionApproved(circuitId)", renderer)
+        self.assertIn("Independent editorial approval remains pending", renderer)
 
-    def test_five_editorial_timelines_link_only_recorded_races(self):
-        flagship = (ED / "circuit-history-stories.tsx").read_text(encoding="utf-8")
-        self.assertIn("races.find(race => String(race.season_year) === moment.year)", flagship)
-        self.assertIn("Explore this race in the archive", flagship)
-        self.assertIn("<CircuitHistoryStories circuitId={circuit.external_id}", PAGE)
-        self.assertIn("history={chronologicalHistory}", PAGE)
+    def test_one_grand_prix_archive_replaces_overlapping_timelines(self):
+        self.assertEqual(PAGE.count('data-testid="circuit-history-table"'), 1)
+        for duplicate in ["ArchiveRhythm", "ArchiveJourney", "CircuitArchiveBrief", "CircuitExtraStories", "circuit-archive-overview"]:
+            self.assertNotIn(duplicate, PAGE)
+        self.assertIn('name="q" type="search"', PAGE)
+        self.assertIn("filtered.slice(offset, offset + CIRCUIT_PAGE_SIZE)", PAGE)
 
     def test_corner_guides_are_bilingual_and_provenanced(self):
         guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
@@ -60,9 +60,9 @@ class CircuitReadingJourneysTests(unittest.TestCase):
 
     def test_archive_only_stories_are_not_mislabeled_corner_history(self):
         renderer = (ED / "circuit-corner-guide.tsx").read_text(encoding="utf-8")
-        self.assertIn("hasIndependentTrackEvidence", renderer)
-        self.assertIn("raceOnlySource", renderer)
-        self.assertIn("Individual corner names, their origins", renderer)
+        self.assertIn("cornerGuideFor(circuitId, availableLayouts)", renderer)
+        self.assertIn("legacyGuides.find", renderer)
+        self.assertIn("A corner-name guide is not available", renderer)
         guides = json.loads((ED / "circuit-corner-guides.json").read_text(encoding="utf-8"))
         purely_archival = [
             guide["id"] for guide in guides
