@@ -13,8 +13,8 @@
     "events_requiring_race_lookup": 25,
     "svg_files_present": 68,
     "svg_files_missing": 0,
-    "race_level_verified_events": 22,
-    "race_level_unverified_events": 83,
+    "race_level_verified_events": 32,
+    "race_level_unverified_events": 73,
     "race_level_year_hint_mismatches": 0,
     "race_level_ambiguous_events": 0
   },
@@ -566,31 +566,71 @@
           "year": 2011,
           "title_en": "Button wins a marathon",
           "layout_id_candidate": "montreal-6",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "846",
+            "race_date": "2011-06-12",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2011/races/07-canada/race.yml"
+          }
         },
         {
           "year": 2008,
           "title_en": "Kubica comes back to win",
           "layout_id_candidate": "montreal-6",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "792",
+            "race_date": "2008-06-08",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/07-canada/race.yml"
+          }
         },
         {
           "year": 1999,
           "title_en": "The wall earns its nickname",
           "layout_id_candidate": "montreal-5",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "636",
+            "race_date": "1999-06-13",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-5",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1999/races/06-canada/race.yml"
+          }
         },
         {
           "year": 2007,
           "title_en": "Hamilton wins for the first time",
           "layout_id_candidate": "montreal-6",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "774",
+            "race_date": "2007-06-10",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-6",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2007/races/06-canada/race.yml"
+          }
         },
         {
           "year": 1982,
           "title_en": "A circuit takes Gilles Villeneuve's name",
           "layout_id_candidate": "montreal-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "365",
+            "race_date": "1982-06-13",
+            "grand_prix_id": "canada",
+            "circuit_layout_id": "montreal-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/08-canada/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
@@ -628,31 +668,71 @@
           "year": 1994,
           "title_en": "A weekend that changed the sport",
           "layout_id_candidate": "imola-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "551",
+            "race_date": "1994-05-01",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/03-san-marino/race.yml"
+          }
         },
         {
           "year": 1982,
           "title_en": "Ferrari teammates' bitter finish",
           "layout_id_candidate": "imola-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "361",
+            "race_date": "1982-04-25",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/04-san-marino/race.yml"
+          }
         },
         {
           "year": 2005,
           "title_en": "Alonso holds off Schumacher by 0.215 seconds",
           "layout_id_candidate": "imola-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "735",
+            "race_date": "2005-04-24",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2005/races/04-san-marino/race.yml"
+          }
         },
         {
           "year": 2006,
           "title_en": "Schumacher answers Alonso a year later",
           "layout_id_candidate": "imola-2",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "754",
+            "race_date": "2006-04-23",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-2",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/04-san-marino/race.yml"
+          }
         },
         {
           "year": 1983,
           "title_en": "Tambay wins before Ferrari's Italian crowd",
           "layout_id_candidate": "imola-1",
-          "status": "year_annotation_only_not_race_verified"
+          "status": "year_annotation_only_not_race_verified",
+          "race_verification_status": "pinned_race_yaml_exact",
+          "race_evidence": {
+            "f1db_race_id": "377",
+            "race_date": "1983-05-01",
+            "grand_prix_id": "san-marino",
+            "circuit_layout_id": "imola-1",
+            "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1983/races/04-san-marino/race.yml"
+          }
         }
       ],
       "corner_numbering_verified": false,
