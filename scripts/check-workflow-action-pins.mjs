@@ -73,8 +73,8 @@ export function auditWorkflowText(source, filename = 'workflow') {
     // at the same indentation. A compact "- uses:" step puts "with:"
     // two columns deeper. Determine the step's own indentation, not the
     // indentation of the uses key alone.
-    const namedStep = i > 0 && /^\\s*-\\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
-      lines[i - 1].match(/^\\s*/)[0].length + 2 === indentation.length;
+    const namedStep = i > 0 && /^\s*-\s+(?:name|['"]name['"]):/.test(lines[i - 1]) &&
+      lines[i - 1].match(/^\s*/)[0].length + 2 === indentation.length;
     const withIndentExpected = indentation.length + (namedStep ? 0 : 2);
     const withLines = stepLines.map((line, index) => ({ line, index }))
       .filter(({ line }) => /^\s*(?:with|['"]with['"])\s*:/.test(line) &&
