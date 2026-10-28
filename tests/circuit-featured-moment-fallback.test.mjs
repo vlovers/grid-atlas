@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import {
+  circuitStorySourceKind,
+  circuitStorySourcePresentation,
   getPublicCircuitStory,
   parseSingleCircuitYear,
   publicCircuitStories,
@@ -78,4 +80,31 @@ test('public short-story fallback neither duplicates the biography nor bypasses 
   assert.match(component, /href="#circuit-moments"/);
   assert.doesNotMatch(component, /previous\.description\[locale\]/);
   assert.match(component, /noopener noreferrer/);
+});
+
+test('all 73 public stories expose honest source types in both languages', () => {
+  const byKind = { 'f1db-results': 0, 'formula1-page': 0, other: 0 };
+  for (const story of publicCircuitStories) {
+    const kind = circuitStorySourceKind(story.source);
+    byKind[kind] += 1;
+    assert.notEqual(kind, 'other', `Unclassified story source: ${story.id}`);
+    const en = circuitStorySourcePresentation(story.source, 'en');
+    const uk = circuitStorySourcePresentation(story.source, 'uk');
+    assert.ok(en.badge && en.description && en.linkLabel, story.id);
+    assert.ok(uk.badge && uk.description && uk.linkLabel, story.id);
+    assert.notEqual(en.description, uk.description, story.id);
+  }
+  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-page': 20, other: 0 });
+  assert.equal(circuitStorySourceKind('https://example.org/not-reviewed'), 'other');
+  assert.equal(circuitStorySourceKind('https://github.com/f1db/f1db/blob/main/src/data/seasons/1950/races/01-britain/race-results.yml'), 'other');
+  assert.match(circuitStorySourcePresentation('https://example.org/not-reviewed', 'en').description, /review/);
+});
+
+test('circuit moment cards show evidence format and explain limits without claiming editorial approval', () => {
+  assert.match(component, /circuitStorySourcePresentation\(moment\.source, locale\)/);
+  assert.match(component, /sourcePresentation\.badge/);
+  assert.match(component, /sourcePresentation\.description/);
+  assert.match(component, /sourcePresentation\.linkLabel/);
+  assert.match(component, /noopener noreferrer/);
+  assert.deepEqual(release.editions, [], 'source-format UX must not approve candidate dossiers');
 });

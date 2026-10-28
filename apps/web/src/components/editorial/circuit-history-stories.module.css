@@ -29,3 +29,8 @@
 .review summary { cursor: pointer; min-height: 44px; align-content: center; }
 @media (max-width: 1000px) { .momentGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 650px) { .momentGrid { grid-template-columns: 1fr; } }
+
+/* Evidence type stays visible even when the full source explanation is collapsed. */
+.sourceType { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: .2rem .55rem; font-size: .75rem; line-height: 1.4; color: var(--muted); overflow-wrap: anywhere; }
+.momentCard details p { max-width: 55ch; line-height: 1.5; }
+.momentCard details a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
