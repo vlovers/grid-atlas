@@ -3,9 +3,9 @@
   "source": "PR #344 bilingual manuscript batch",
   "description": "Canonical deduplication ledger. Dated event key does not prove independent historical review. Preferred paths identify one editorial draft; alternatives are kept for reference, not additional content.",
   "summary": {
-    "total_manuscript_chapters": 61,
-    "unique_story_keys": 56,
-    "dated_unique_events": 54,
+    "total_manuscript_chapters": 71,
+    "unique_story_keys": 66,
+    "dated_unique_events": 64,
     "source_gaps": 2,
     "alternate_duplicate_manuscripts": 5,
     "covered_circuits": 33
@@ -300,6 +300,42 @@
       "publication": "blocked"
     },
     {
+      "circuit_id": "monaco",
+      "event_year": 1982,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 1984,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 1996,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 2018,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
       "circuit_id": "monsanto",
       "event_year": 1959,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
@@ -494,6 +530,60 @@
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
       "alternate_manuscripts": [],
       "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 1992,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 1998,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2000,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2019,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2021,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2022,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_index_requires_event_research",
       "status": "research_draft",
       "publication": "blocked"
     },
