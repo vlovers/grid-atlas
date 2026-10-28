@@ -21,7 +21,7 @@ for (const circuit of bundle.circuits) {
     if (matching.length !== 1) { errors.push(circuit.circuit_id+':'+event.year+' has '+matching.length+' manuscript matches'); continue; }
     const part = matching[0];
     const en = part.match(/^### EN — ([^\n]+)\n\n([\s\S]*?)(?=^### UK — )/m);
-    const uk = part.match(/^### UK — ([^\n]+)\n\n([\s\S]*?)(?=^\*\*|$)/m);
+    const uk = part.match(/^### UK — ([^\n]+)\n\n([\s\S]*?)(?=^\*\*|(?![\s\S]))/m);
     if (!en || !uk) { errors.push(circuit.circuit_id+':'+event.year+' incomplete locale sections');continue; }
     const urls = [...part.matchAll(/https:\/\/[^\s)>]+/g)].map(x => x[0]);
     const sourceYearMismatch = urls.some(url => {
