@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "scope": "Claim-level review queue for seven already-public bilingual circuit short stories. Source leads and excerpts are NOT independent verification, editorial approval, or a release decision.",
+  "source_of_truth": "apps/web/src/components/editorial/circuit-{extra,next20,final33}-stories.json",
+  "approval_state": "not-approved",
+  "reviewer_identity": null,
+  "reviewed_at": null,
+  "stories": [
+    {
+      "circuit_id": "estoril",
+      "year": "1985",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "first-win",
+          "en_excerpt": "Ayrton Senna took his first Formula 1 World Championship race win",
+          "uk_excerpt": "Айртон Сенна здобув свою першу перемогу",
+          "evidence_route": "candidate-results",
+          "review_question": "Confirm first career championship victory, identity and event in original results and chronology.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "rain",
+          "en_excerpt": "Heavy rain made the Portuguese Grand Prix",
+          "uk_excerpt": "Сильний дощ перетворив Гран-прі Португалії",
+          "evidence_route": "candidate-context",
+          "review_question": "Locate an explicit weather passage; a classification file does not establish rainfall.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "reputation",
+          "en_excerpt": "the control that would define his reputation",
+          "uk_excerpt": "ранній доказ його майстерності керування",
+          "evidence_route": "editorial-judgment",
+          "review_question": "Distinguish a retrospective interpretation from a verifiable race fact; soften if unsupported.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "marina-bay",
+      "year": "2008",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "winner",
+          "en_excerpt": "Fernando Alonso won Formula 1's inaugural Singapore Grand Prix in 2008",
+          "uk_excerpt": "Фернандо Алонсо виграв перший Гран-прі Сінгапуру 2008 року",
+          "evidence_route": "candidate-results",
+          "review_question": "Check race winner, event year and first-edition claim separately.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "night-first",
+          "en_excerpt": "Marina Bay introduced night racing to the championship",
+          "uk_excerpt": "Марина-Бей відкрила епоху нічних гонок Формули-1",
+          "evidence_route": "candidate-context",
+          "review_question": "Find exact evidence for first championship night race; avoid confusing event and venue.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "crash-investigation",
+          "en_excerpt": "the race later became inseparable from the Renault crash scandal",
+          "uk_excerpt": "ця подія стала невіддільною від скандалу навколо аварії Renault",
+          "evidence_route": "candidate-context",
+          "review_question": "Verify investigation timeline and attribution; avoid implying allegations were established during the race.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "adelaide",
+      "year": "1986",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "winner-title",
+          "en_excerpt": "Alain Prost won the 1986 Australian Grand Prix at Adelaide and claimed the championship",
+          "uk_excerpt": "Ален Прост виграв Гран-прі Австралії 1986 року в Аделаїді та став чемпіоном світу",
+          "evidence_route": "candidate-results",
+          "review_question": "Confirm race result and championship outcome independently; race-result rows alone are not official season standings.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "tyre",
+          "en_excerpt": "Nigel Mansell's tyre failure",
+          "uk_excerpt": "Прокол шини Найджела Менселла",
+          "evidence_route": "candidate-context",
+          "review_question": "Check whether the evidence supports the more specific Ukrainian 'puncture' versus English 'tyre failure'.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "superlative",
+          "en_excerpt": "one of Formula 1's most dramatic title deciders",
+          "uk_excerpt": "одну з найдраматичніших розв’язок в історії Формули-1",
+          "evidence_route": "editorial-judgment",
+          "review_question": "Decide whether the superlative is appropriate opinion rather than a sourced measurable claim.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zolder",
+      "year": "1982",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/05-belgium/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "winner",
+          "en_excerpt": "John Watson won the 1982 Belgian Grand Prix at Zolder",
+          "uk_excerpt": "Джон Вотсон виграв Гран-прі Бельгії 1982 року в Зольдері",
+          "evidence_route": "candidate-results",
+          "review_question": "Verify winner and venue against the 1982 classification.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "fatal-qualifying",
+          "en_excerpt": "Gilles Villeneuve's fatal qualifying accident",
+          "uk_excerpt": "загибель Жиля Вільнева під час кваліфікації",
+          "evidence_route": "candidate-context",
+          "review_question": "Verify session, date, circumstances and sensitive wording with a dedicated historical account.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "framing",
+          "en_excerpt": "a painful reminder that Formula 1 history is not only about winners",
+          "uk_excerpt": "болісне нагадування, що історія Формули-1 складається не лише з перемог",
+          "evidence_route": "editorial-judgment",
+          "review_question": "Check respectful tone without presenting the editorial framing as independently verified.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "aida",
+      "year": "1994",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "pole",
+          "en_excerpt": "Ayrton Senna put his Williams on pole for the 1994 Pacific Grand Prix, ahead of Michael Schumacher",
+          "uk_excerpt": "Айртон Сенна здобув поул на Гран-прі Тихого океану 1994 року, випередивши Міхаеля Шумахера",
+          "evidence_route": "candidate-context",
+          "review_question": "Verify qualifying grid with the separate official qualifying record.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "start-retirement",
+          "en_excerpt": "Senna was eliminated at the start",
+          "uk_excerpt": "Сенна вибув одразу після старту",
+          "evidence_route": "needs-new-evidence",
+          "review_question": "Find race chronology for the start collision; a result row alone does not prove cause.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "winner",
+          "en_excerpt": "Schumacher brought his Benetton home first",
+          "uk_excerpt": "Шумахер довів свій Benetton до перемоги",
+          "evidence_route": "candidate-results",
+          "review_question": "Verify winner and constructor in pinned classification.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "gap",
+          "en_excerpt": "Gerhard Berger finished second, 75.3 seconds behind",
+          "uk_excerpt": "Герхард Бергер фінішував другим із відставанням 75,3 секунди",
+          "evidence_route": "candidate-results",
+          "review_question": "Check numeric gap and rounding in primary race classification; compare EN and UK punctuation.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "third",
+          "en_excerpt": "Rubens Barrichello took third for Jordan",
+          "uk_excerpt": "Рубенс Баррікелло привіз Jordan на третє місце",
+          "evidence_route": "candidate-results",
+          "review_question": "Verify third place and constructor, including classification status.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "rouen",
+      "year": "1968",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "podium",
+          "en_excerpt": "Jacky Ickx, driving a Ferrari, ahead of John Surtees and Jackie Stewart",
+          "uk_excerpt": "Жакі Ікс на Ferrari випередив Джона Сертіса та Джекі Стюарта",
+          "evidence_route": "candidate-results",
+          "review_question": "Verify finishing order, car identity and race year.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "fatal-crash",
+          "en_excerpt": "Jo Schlesser was killed when his Honda crashed early in the race",
+          "uk_excerpt": "Жо Шлессер загинув у аварії на Honda",
+          "evidence_route": "candidate-context",
+          "review_question": "Check date, timing and cause in an appropriate historical account; use restrained language.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "laps",
+          "en_excerpt": "a retirement after two laps",
+          "uk_excerpt": "вибув після двох кіл",
+          "evidence_route": "candidate-results",
+          "review_question": "Confirm lap-count semantics in F1DB and official classification before treating it as distance completed.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "revs",
+          "en_excerpt": "the Revs Institute archive establish the fatal accident",
+          "uk_excerpt": "архів Revs Institute підтверджують трагічні обставини",
+          "evidence_route": "needs-new-evidence",
+          "review_question": "The story names Revs Institute without a direct linked locator; obtain exact document, URL and relevant passage.",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "montjuic",
+      "year": "1975",
+      "primary_source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml",
+      "review_status": "pending-independent-review",
+      "claims": [
+        {
+          "claim_id": "winner",
+          "en_excerpt": "Jochen Mass won the 1975 Spanish Grand Prix at Montjuïc",
+          "uk_excerpt": "Йохен Масс виграв Гран-прі Іспанії 1975 року на трасі Монжуїк",
+          "evidence_route": "candidate-results",
+          "review_question": "Confirm winner and circuit against the classification.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "stoppage",
+          "en_excerpt": "The race was stopped after a fatal accident",
+          "uk_excerpt": "Гонку зупинили після смертельної аварії",
+          "evidence_route": "candidate-context",
+          "review_question": "Verify race stoppage, fatalities, chronology and precise casualty language from independent reporting.",
+          "status": "unverified"
+        },
+        {
+          "claim_id": "safety",
+          "en_excerpt": "the safety failures of that era",
+          "uk_excerpt": "проблеми безпеки тієї епохи",
+          "evidence_route": "editorial-judgment",
+          "review_question": "Identify specific documented safety failures rather than relying on a broad retrospective judgment.",
+          "status": "unverified"
+        }
+      ]
+    }
+  ]
+}
