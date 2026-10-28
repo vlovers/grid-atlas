@@ -1,5 +1,6 @@
 import { Link } from '@/i18n/navigation';
 import { candidateCircuitNarratives } from './circuit-candidates';
+import { getCircuitContextEvidence } from './circuit-context-evidence';
 import { legacyCircuitHistory } from './circuit-history-stories';
 import { isCircuitEditionApproved } from './circuit-release';
 import { circuitStorySourcePresentation, getPublicCircuitStory, parseSingleCircuitYear, uniqueRaceInYear } from './circuit-public-moments';
@@ -50,6 +51,8 @@ export function CircuitMoments({ circuitId, locale, history }: { circuitId: stri
         title: featured.title, text: featured.description, source: featured.source, locator: featured.year,
       }] : undefined);
   const uk = locale === 'uk';
+  const contextEvidence = featured && !existing && !isCircuitEditionApproved(circuitId)
+    ? getCircuitContextEvidence(circuitId) : undefined;
   return <div data-testid="circuit-moments"><h2>{uk ? 'Легендарні моменти' : 'Memorable moments'}</h2>
     {moments ? <div className={styles.momentGrid}>{moments.map(moment => {
       const race = uniqueRaceInYear(history, moment.raceYear);
@@ -58,7 +61,8 @@ export function CircuitMoments({ circuitId, locale, history }: { circuitId: stri
         <span className={styles.year}>{moment.yearLabel}</span><span className={styles.sourceType}>{sourcePresentation.badge}</span><h3>{moment.title[locale]}</h3><p>{moment.text[locale]}</p>
         {race && <><Link href={`/races/${race.race_id}`}>{uk ? 'Гонка' : 'Race'} · {race.race_date ?? race.season_year} ↗</Link>
           <p><small>{uk ? 'Переможці гонки' : 'Race winners'}: {race.winners.map((winner, index) => <span key={`${winner.driver_id}:${winner.constructor_id}`}>{index > 0 && ' · '}<Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> / <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></span>)}</small></p></>}
-        <details><summary>{uk ? 'Що підтверджує джерело?' : 'What does the source support?'}</summary><p>{sourcePresentation.description}</p><a href={moment.source} target="_blank" rel="noopener noreferrer">{sourcePresentation.linkLabel} · {moment.locator} ↗</a></details>
+        <details><summary>{uk ? 'Що підтверджує джерело?' : 'What does the source support?'}</summary><p>{sourcePresentation.description}</p><a href={moment.source} target="_blank" rel="noopener noreferrer">{sourcePresentation.linkLabel} · {moment.locator} ↗</a>
+          {contextEvidence && <p><strong>{uk ? 'Додатковий контекст:' : 'Additional context:'}</strong> {contextEvidence.scope[locale]} <a href={contextEvidence.url} target="_blank" rel="noopener noreferrer">{uk ? 'Читати матеріал' : 'Read supporting account'} ↗</a></p>}</details>
       </article>;
     })}</div> : <p>{uk ? 'Окремої добірки визначних подій поки немає. Усі відомі результати доступні нижче.' : 'A dedicated selection of significant moments is not available yet. Browse all available results below.'}</p>}
     {moments && <ReviewDetails locale={locale} />}
