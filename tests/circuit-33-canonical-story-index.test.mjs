@@ -20,7 +20,7 @@ test('canonical ledger records precisely the expansion cohort and unique dated e
 test('chosen chapters exist, keep UK/EN versions, and never claim approval', () => {
  for (const entry of ledger.entries) {
   const body = read(entry.preferred_manuscript);
-  const headings = body.split(/^## \\d+\\. /m).slice(1);
+  const headings = body.split(/^## \d+\. /m).slice(1);
   assert.ok(headings.some(h => h.startsWith(entry.circuit_id + ' ') && (entry.event_year === null ? h.includes('source gap') : h.includes(String(entry.event_year)))));
   assert.match(body,/### EN —/);
   assert.match(body,/### UK —/);
