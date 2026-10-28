@@ -3,9 +3,9 @@
   "source": "PR #344 bilingual manuscript batch",
   "description": "Canonical deduplication ledger. Dated event key does not prove independent historical review. Preferred paths identify one editorial draft; alternatives are kept for reference, not additional content.",
   "summary": {
-    "total_manuscript_chapters": 71,
-    "unique_story_keys": 66,
-    "dated_unique_events": 64,
+    "total_manuscript_chapters": 75,
+    "unique_story_keys": 70,
+    "dated_unique_events": 68,
     "source_gaps": 2,
     "alternate_duplicate_manuscripts": 5,
     "covered_circuits": 33
@@ -328,6 +328,24 @@
     },
     {
       "circuit_id": "monaco",
+      "event_year": 2004,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 2011,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
       "event_year": 2018,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
       "alternate_manuscripts": [],
@@ -557,6 +575,24 @@
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
       "alternate_manuscripts": [],
       "source_tier": "official_result_index_requires_event_research",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2004,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 2009,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
       "status": "research_draft",
       "publication": "blocked"
     },
