@@ -45,7 +45,7 @@ Jarama shows why overtaking statistics do not tell the whole story. Sometimes th
 Харама нагадує, чому кількість обгонів не пояснює всієї захопливості гонки. Іноді найкраща боротьба — це коли лідер відчайдушно тримає позаду групу переслідувачів.
 
 **Sources:**
-- https://www.formula1.com/en/results/1976/races/428/spain/race-result
+- https://www.formula1.com/en/results/1981/races/428/spain/race-result
 
 **Review gate:** independent historical review and bilingual line edit pending; no publication approval.
 
