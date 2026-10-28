@@ -26,7 +26,7 @@ export function EditorialMedia({ assets, subject, title, locale, years, children
 }) {
   const asset = selectMediaCollection(assets,subject)[0];
   const t = editorialCopy[locale];
-  if (asset) return <div className={styles.media} data-editorial-media="approved"><LicensedMedia assets={assets} assetId={asset.id} subject={subject} label={title} locale={locale} /></div>;
+  if (asset) return <div className={styles.media} data-editorial-media="approved"><LicensedMedia assets={assets} assetId={asset.id} subject={subject} label={title} locale={locale} presentation="hero" /></div>;
   return <figure className={`${styles.plate} ${children ? styles.recordPlate : ''}`} data-editorial-media="archive-composition">
     <div className={styles.plateRule} aria-hidden="true" />
     {!children && <span className={styles.plateWord} aria-hidden="true">{subject.id.replaceAll('-', ' ')}</span>}

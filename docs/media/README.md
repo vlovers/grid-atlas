@@ -1,5 +1,8 @@
 # Licensed media pilot
 
+**28 October 2026 — Issue #290:** the [twelve-candidate batch and local picture desk](batch-290-handoff.md) reuse seven existing candidates and add five new research records. Shared galleries now support enlargement and complete collections; public photography remains empty pending independent human approval. The dated pilot counts below describe their original lane, not the twelve-file review worklist.
+
+
 Current implementation: [Media Library V1 provenance extension](library-v1-foundation.md)
 documents schema 2, historical context, generation provenance and the rechecked
 pilot blockers. It preserves the independent approval gate and empty photographic

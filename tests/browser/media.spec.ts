@@ -4,7 +4,7 @@ import { test as base, expect } from '@playwright/test';
 
 const test = base.extend<object, { previewURL: string }>({
   previewURL: [async ({ browserName }, provide) => {
-    expect(browserName).toBe('chromium');
+    expect(['chromium', 'webkit']).toContain(browserName);
     let server: ChildProcess | undefined;
     try {
       const url = await new Promise<string>((resolveURL, reject) => {
@@ -116,3 +116,77 @@ for (const locale of ['uk','en'] as const) {
     }
   });
 }
+
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: complete contact sheet enlarges with keyboard, traps focus and restores the trigger`, async ({ page, previewURL }, info) => {
+    const forbidden: string[] = [];
+    page.on('request', request => { if (request.url().includes('/media/forbidden-')) forbidden.push(request.url()); });
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(`${previewURL}/${locale}?test=gallery-multiple`);
+    const collection = page.getByTestId('media-collection');
+    await expect(collection.locator('figure')).toHaveCount(8);
+    await expect(collection.locator('img')).toHaveCount(8);
+    const frame = collection.locator('figure > div').first();
+    expect(await frame.evaluate(el => getComputedStyle(el).borderTopWidth)).toBe('1px');
+    expect(await frame.evaluate(el => getComputedStyle(el).backgroundColor)).not.toBe('rgba(0, 0, 0, 0)');
+    const trigger = collection.getByRole('button', { name: /(?:View image|Переглянути зображення)/ }).nth(6);
+    await trigger.focus(); await trigger.press('Enter');
+    const dialog = page.getByRole('dialog');
+    await expect(dialog).toBeVisible();
+    await expect(dialog.getByRole('status')).toHaveCount(0); // one polite counter, no competing live regions
+    await expect(dialog.locator('[aria-live="polite"]')).toContainText('7 / 8');
+    await page.keyboard.press('ArrowRight');
+    await expect(dialog.locator('[aria-live="polite"]')).toContainText('8 / 8');
+    await page.keyboard.press('ArrowRight');
+    await expect(dialog.locator('[aria-live="polite"]')).toContainText('1 / 8');
+    await expect(dialog.locator('figcaption')).toContainText('Synthetic Fixture Creator');
+    await expect(dialog.locator('img')).toHaveJSProperty('naturalWidth', 500);
+    await dialog.locator('summary').press('Enter');
+    await expect(dialog).toContainText('None (synthetic fixture)');
+    await page.keyboard.press('Tab');
+    expect(await dialog.evaluate(el => el.contains(document.activeElement))).toBe(true);
+    await page.screenshot({ path: info.outputPath(`gallery-viewer-${locale}.png`), fullPage: true });
+    await page.keyboard.press('Escape');
+    await expect(dialog).not.toBeVisible();
+    await expect(trigger).toBeFocused();
+    await expect(dialog.locator('img')).toHaveCount(0);
+    expect(forbidden).toEqual([]);
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    await collection.getByRole('button', { name: /(?:View image|Переглянути зображення)/ }).first().click();
+    expect(await dialog.evaluate(el => el.scrollWidth - el.clientWidth)).toBeLessThanOrEqual(1);
+  });
+
+  test(`${locale}: twelve-candidate desk stays local, filterable and honest without original bytes`, async ({ page, request, previewURL }, info) => {
+    const remote: string[] = [];
+    page.on('request', r => { if (new URL(r.url()).hostname !== '127.0.0.1') remote.push(r.url()); });
+    await page.goto(`${previewURL}/${locale}/batch`);
+    const desk = page.getByTestId('media-review-workbench');
+    await expect(desk.locator('article')).toHaveCount(12);
+    await expect(desk.locator('img')).toHaveCount(0);
+    await expect(desk).toContainText(locale === 'uk' ? '0 схвалено' : '0 approved');
+    await desk.getByRole('button', { name: locale === 'uk' ? 'Боліди й команди' : 'Cars & constructors', exact: true }).click();
+    await expect(desk.locator('article')).toHaveCount(3);
+    await desk.getByRole('button', { name: locale === 'uk' ? 'Усі' : 'All', exact: true }).click();
+    await desk.getByRole('searchbox').fill('prost');
+    await expect(desk.locator('article')).toHaveCount(1);
+    await desk.locator('summary').press('Enter');
+    await expect(desk).toContainText('tobacco');
+    const source = desk.getByRole('link', { name: /(?:Source revision|Ревізія джерела)/ });
+    await expect(source).toHaveAttribute('href', /oldid=832228570/);
+    await desk.getByRole('searchbox').fill('');
+    await page.screenshot({ path: info.outputPath(`research-desk-${locale}.png`), fullPage: true });
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    expect((await request.get(`${previewURL}/research-originals/research-unknown.jpg`)).status()).toBe(404);
+    expect(remote).toEqual([]);
+  });
+}
+
+test('local picture desk rejects foreign Host and never serves unknown or cross-site private originals', async ({ request, previewURL }) => {
+  expect((await request.get(`${previewURL}/en/batch`, { headers: { Host: 'foreign.invalid' } })).status()).toBe(403);
+  expect((await request.get(`${previewURL}/research-originals/research-schumacher-portrait-2007.jpg`, { headers: { 'Sec-Fetch-Site': 'cross-site' } })).status()).toBe(404);
+  expect((await request.get(`${previewURL}/research-originals/research-unknown.jpg`)).headers()['cache-control']).toBe('private, no-store');
+});

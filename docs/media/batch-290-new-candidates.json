@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "lane": "candidates",
+  "assets": [
+    {
+      "id": "research-clark-action-1965",
+      "subject": {
+        "type": "driver",
+        "id": "jim-clark"
+      },
+      "kind": "photograph",
+      "ai_generated": false,
+      "historical_context": {
+        "year": 1965,
+        "description": "Jim Clark in a Lotus at the Dutch Grand Prix on 18 July 1965, photographed by Eric Koch / Anefo.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Clark_at_1965_Dutch_Grand_Prix.jpg"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clark_at_1965_Dutch_Grand_Prix.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Clark_at_1965_Dutch_Grand_Prix.jpg",
+      "creator": "Eric Koch for Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 917-9751",
+      "attribution": null,
+      "license": {
+        "identifier": "CC BY-SA 3.0 nl",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+        "restrictions": [
+          "Check Nationaal Archief item 917-9751 and exact Netherlands license; caption does not claim a finishing position."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 3648,
+        "height": 2406
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons oldid=861710533; original SHA-1 4f3c86d56e7bab2ba607f6858eaaf305bd4cc8c7; file timestamp 2017-12-22T15:25:14Z",
+      "inspected_on": "2026-10-28",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research only. Check Nationaal Archief item 917-9751 and exact Netherlands license; caption does not claim a finishing position. Independent human approval is required.",
+      "alt": {
+        "en": "Jim Clark driving a Lotus on the Zandvoort circuit.",
+        "uk": "Джим Кларк за кермом Lotus на трасі Зандворт."
+      },
+      "caption": {
+        "en": "Jim Clark in a Lotus at the Dutch Grand Prix on 18 July 1965, photographed by Eric Koch / Anefo.",
+        "uk": "Джим Кларк за кермом Lotus на Гран-прі Нідерландів 18 липня 1965 року; фото Еріка Коха / Anefo."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-lauda-pitwall-1976",
+      "subject": {
+        "type": "driver",
+        "id": "niki-lauda"
+      },
+      "kind": "portrait",
+      "ai_generated": false,
+      "historical_context": {
+        "year": 1976,
+        "description": "The source identifies Niki Lauda at the Ferrari pitwall in Long Beach in 1976. Its 2011 digital timestamp is not the race date.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Niki_Lauda_1976_Long_Beach.jpg"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Niki_Lauda_1976_Long_Beach.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Niki_Lauda_1976_Long_Beach.jpg",
+      "creator": "Christian Sinclair",
+      "attribution": null,
+      "license": {
+        "identifier": "CC BY 2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0",
+        "restrictions": [
+          "Resolve 1976 description versus 2011 scan/EXIF date before approval. Confirm original photographer and Flickr chain."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 1788,
+        "height": 1200
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons oldid=899547791; original SHA-1 6649eef662f4b1373c23d6f1e312fd2756ab38e0; file timestamp 2018-10-13T08:54:55Z",
+      "inspected_on": "2026-10-28",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research only. Resolve 1976 description versus 2011 scan/EXIF date before approval. Confirm original photographer and Flickr chain. Independent human approval is required.",
+      "alt": {
+        "en": "Niki Lauda seated beside the Ferrari pitwall.",
+        "uk": "Нікі Лауда сидить біля піт-воллу Ferrari."
+      },
+      "caption": {
+        "en": "The source identifies Niki Lauda at the Ferrari pitwall in Long Beach in 1976. Its 2011 digital timestamp is not the race date.",
+        "uk": "Джерело визначає Нікі Лауду біля піт-воллу Ferrari в Лонг-Біч 1976 року. Цифрова дата 2011 року не є датою гонки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-prost-ferrari-1991",
+      "subject": {
+        "type": "driver",
+        "id": "alain-prost"
+      },
+      "kind": "photograph",
+      "ai_generated": false,
+      "historical_context": {
+        "year": 1991,
+        "description": "Alain Prost in a Ferrari at the 1991 United States Grand Prix in Phoenix; the source identifies the first lap.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:AlainProst_Ferrari_1991.jpg"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:AlainProst_Ferrari_1991.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:AlainProst_Ferrari_1991.jpg",
+      "creator": "StuSeeger",
+      "attribution": null,
+      "license": {
+        "identifier": "CC BY 2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0",
+        "restrictions": [
+          "File permission text says BY-SA 2.0, but license template/Flickr review say BY 2.0. Resolve discrepancy; tobacco logos require intended-territory review."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 1250,
+        "height": 1875
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons oldid=832228570; original SHA-1 ebf820b1f89d661518579ad952849ed381bc2d31; file timestamp 2011-10-15T19:43:42Z",
+      "inspected_on": "2026-10-28",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research only. File permission text says BY-SA 2.0, but license template/Flickr review say BY 2.0. Resolve discrepancy; tobacco logos require intended-territory review. Independent human approval is required.",
+      "alt": {
+        "en": "Alain Prost driving a red Ferrari on a street circuit.",
+        "uk": "Ален Прост за кермом червоної Ferrari на вуличній трасі."
+      },
+      "caption": {
+        "en": "Alain Prost in a Ferrari at the 1991 United States Grand Prix in Phoenix; the source identifies the first lap.",
+        "uk": "Ален Прост за кермом Ferrari на Гран-прі США 1991 року у Фініксі; джерело вказує на перше коло."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-lotus72-museum-2007",
+      "subject": {
+        "type": "constructor",
+        "id": "lotus"
+      },
+      "kind": "photograph",
+      "ai_generated": false,
+      "historical_context": {
+        "year": 2007,
+        "description": "Lotus 72E in the Donington Grand Prix Collection, photographed on 22 August 2007. A museum photograph, not a period race image.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lotus_72_JPS.jpg"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lotus_72_JPS.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Lotus_72_JPS.jpg",
+      "creator": "John Chapman (Pyrope)",
+      "attribution": null,
+      "license": {
+        "identifier": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "restrictions": [
+          "Confirm car/chassis identity, museum conditions and visible tobacco branding. Canonical Lotus constructor, not Lotus F1 or Lotus Racing."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 2589,
+        "height": 2013
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons oldid=1248469624; original SHA-1 dd69c4755b3bd1ee3e96506b36a5b70572f751fb; file timestamp 2007-09-05T19:12:59Z",
+      "inspected_on": "2026-10-28",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research only. Confirm car/chassis identity, museum conditions and visible tobacco branding. Canonical Lotus constructor, not Lotus F1 or Lotus Racing. Independent human approval is required.",
+      "alt": {
+        "en": "Black and gold Lotus 72 displayed inside a museum.",
+        "uk": "Чорно-золотий Lotus 72 в експозиції музею."
+      },
+      "caption": {
+        "en": "Lotus 72E in the Donington Grand Prix Collection, photographed on 22 August 2007. A museum photograph, not a period race image.",
+        "uk": "Lotus 72E у колекції Donington Grand Prix, 22 серпня 2007 року. Музейний знімок, а не фотографія тогочасної гонки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-monaco-sainte-devote-2022",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "photograph",
+      "ai_generated": false,
+      "historical_context": {
+        "year": 2022,
+        "description": "Sainte-Dévote corner in Monaco, photographed on 23 May 2022. A modern venue view, not an historical layout record.",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg"
+      },
+      "source_url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg",
+      "creator": "crash71100",
+      "attribution": null,
+      "license": {
+        "identifier": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "restrictions": [
+          "Confirm viewpoint and Flickr CC0 dedication. Original is 8000×6000; prepare and review an efficient delivery derivative before publication."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 8000,
+        "height": 6000
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "Commons oldid=1165226849; original SHA-1 d8b300292c1ee04e13850e19ff56eff1e1ea7eb8; file timestamp 2025-09-25T00:35:04Z",
+      "inspected_on": "2026-10-28",
+      "content_sha256": null,
+      "modifications": null,
+      "rights_note": "Research only. Confirm viewpoint and Flickr CC0 dedication. Original is 8000×6000; prepare and review an efficient delivery derivative before publication. Independent human approval is required.",
+      "alt": {
+        "en": "Street and barriers at the Sainte-Dévote corner in Monaco.",
+        "uk": "Вулиця й огорожі біля повороту Сент-Девот у Монако."
+      },
+      "caption": {
+        "en": "Sainte-Dévote corner in Monaco, photographed on 23 May 2022. A modern venue view, not an historical layout record.",
+        "uk": "Поворот Сент-Девот у Монако, 23 травня 2022 року. Сучасний вигляд місця не підтверджує історичну конфігурацію траси."
+      },
+      "layout": null
+    }
+  ]
+}

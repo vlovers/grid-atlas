@@ -39,3 +39,18 @@ export function syntheticCollectionAsset(variant: string): MediaAsset {
   if(variant==='gallery-stale')asset.caption.en='Changed synthetic caption without re-review';
   return asset;
 }
+
+export function syntheticContactSheet(): MediaAsset[] {
+  return Array.from({ length: 11 }, (_, index) => {
+    const asset = syntheticCollectionAsset('gallery-verified');
+    asset.id = `synthetic-frame-${index + 1}`;
+    asset.alt = { en: `Synthetic geometry, frame ${index + 1}`, uk: `Тестова геометрія, кадр ${index + 1}` };
+    asset.caption = { en: `Synthetic frame ${index + 1}. Not historical photography.`, uk: `Тестовий кадр ${index + 1}. Не історична фотографія.` };
+    if (index >= 8) asset.delivery.local_path = `/media/forbidden-${index}.svg`;
+    asset.review!.payload_sha256 = mediaFingerprint(asset);
+    if (index === 8) asset.status = 'rejected';
+    if (index === 9) asset.status = 'withdrawn';
+    if (index === 10) asset.caption.en = 'Changed after review';
+    return asset;
+  });
+}

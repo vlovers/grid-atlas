@@ -1,4 +1,8 @@
 import { CircuitBiography, CircuitMoments, hasPublicCircuitMoments } from '@/components/editorial/circuit-narrative';
+import { MediaCollection } from '@/components/media/collection';
+import { LicensedMedia } from '@/components/media/licensed-media';
+import { selectMediaCollection, type MediaAsset } from '@/components/media/registry';
+import mediaPublication from '@/components/media/publication.json';
 import { cornerGuideFor } from '@/components/editorial/circuit-corner-model';
 import { CircuitCornerGuide, legacyNamedCircuitIds } from '@/components/editorial/circuit-corner-guide';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
@@ -66,6 +70,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const visible = filtered.slice(offset, offset + CIRCUIT_PAGE_SIZE);
   const { crumbs, description } = await entitySeo('circuits', id, locale);
   const coverArtwork = selectCircuitCoverArtwork(layouts);
+  const approvedPhoto = selectMediaCollection(mediaPublication.assets as MediaAsset[], { type: 'circuit', id: circuit.external_id })[0];
   const circuitPath = `/circuits/${id}`;
   const hasCorners = legacyNamedCircuitIds.includes(circuit.external_id) || Boolean(cornerGuideFor(circuit.external_id, layouts.map(layout => layout.external_layout_id)));
   const hasMoments = hasPublicCircuitMoments(circuit.external_id);
@@ -73,7 +78,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <EditorialHero title={circuit.name} eyebrow={uk ? 'ТРАСА / ІСТОРІЯ ФОРМУЛИ-1' : 'THE CIRCUIT / FORMULA 1 HISTORY'}
       context={<><span>{identities[0]?.fields.country}</span><span>{circuit.first_season ?? '—'}–{circuit.last_season ?? '—'}</span></>}
       lead={<><p>{uk ? 'Історії поворотів, пам’ятні гонки та конфігурації різних епох.' : 'The stories behind the corners, memorable races and layouts across the eras.'}</p>{leaders.length > 0 && <p data-testid="circuit-win-leader">{uk ? 'Найбільше перемог у результатах F1DB' : 'Most wins in the F1DB results'}: {leaders.map((driver,index) => <span key={driver.id}>{index > 0 && ' · '}<Link href={`/drivers/${driver.id}`}>{driver.name}</Link></span>)} · {maxWins}</p>}</>}
-      media={coverArtwork ? <CircuitCover circuitArtwork={coverArtwork} title={circuit.name} locale={lang} /> : <div className={styles.noOutline}><p>{uk ? 'Дослідіть Гран-прі цієї траси' : 'Explore the Grands Prix at this circuit'}</p><a href="#circuit-history">{circuit.races} GP ↓</a></div>}
+      media={approvedPhoto ? <LicensedMedia assets={mediaPublication.assets as MediaAsset[]} assetId={approvedPhoto.id} subject={{ type: 'circuit', id: circuit.external_id }} label={circuit.name} locale={lang} presentation="hero" /> : coverArtwork ? <CircuitCover circuitArtwork={coverArtwork} title={circuit.name} locale={lang} /> : <div className={styles.noOutline}><p>{uk ? 'Дослідіть Гран-прі цієї траси' : 'Explore the Grands Prix at this circuit'}</p><a href="#circuit-history">{circuit.races} GP ↓</a></div>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: uk ? 'Конфігурації' : 'Layouts', value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} />
     <SourceAttribution locale={lang} />
     <EditorialTabs label={uk ? 'Розділи траси' : 'Circuit sections'} items={[
@@ -81,6 +86,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       ...(hasCorners ? [{ id: 'circuit-corners', label: uk ? 'Повороти' : 'Corners' }] : []),
       ...(hasMoments ? [{ id: 'circuit-moments', label: uk ? 'Легендарні моменти' : 'Memorable moments' }] : []),
       { id: 'circuit-layouts', label: uk ? 'Зміни траси' : 'Changing layouts' },
+      { id: 'circuit-photos', label: uk ? 'Фотоархів' : 'Image archive' },
       { id: 'circuit-history', label: uk ? 'Усі Гран-прі' : 'All Grands Prix' },
     ]} />
     <section id="circuit-biography" tabIndex={-1}><CircuitBiography circuitId={circuit.external_id} locale={lang} />
@@ -91,6 +97,9 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <section id="circuit-layouts" tabIndex={-1}>
       <CircuitExperience layouts={layouts} events={technicalEvents} locale={lang} />
       <ArchiveDisclosure label={uk ? 'Порівняти всі контури' : 'Compare all outlines'} count={layouts.length}><CircuitLayoutGallery layouts={layouts} title={circuit.name} locale={lang} /></ArchiveDisclosure>
+    </section>
+    <section id="circuit-photos" tabIndex={-1} aria-label={uk ? 'Фотоархів траси' : 'Circuit image archive'}>
+      <MediaCollection assets={mediaPublication.assets as MediaAsset[]} subject={{ type: 'circuit', id: circuit.external_id }} label={circuit.name} locale={lang} />
     </section>
     <section id="circuit-history" tabIndex={-1} aria-labelledby="all-grands-prix">
       <h2 id="all-grands-prix">{uk ? 'Усі Гран-прі' : 'All Grands Prix'}</h2>

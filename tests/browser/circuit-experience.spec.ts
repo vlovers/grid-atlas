@@ -71,3 +71,15 @@ for (const locale of ['uk', 'en'] as const) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   });
 }
+
+for (const locale of ['uk', 'en'] as const) {
+  test(`${locale}: circuit photo archive stays honest beside historical layouts`, async ({ page }) => {
+    await page.goto(`/${locale}/circuits/1`);
+    const collection = page.getByTestId('media-collection');
+    await expect(collection.locator('img')).toHaveCount(0);
+    await page.locator('a[href="#circuit-photos"]').click();
+    await collection.locator('summary').press('Enter');
+    await expect(collection.getByTestId('editorial-empty-media')).toBeVisible();
+    await expect(page.getByTestId('circuit-experience')).toBeVisible();
+  });
+}
