@@ -4,11 +4,11 @@ import test from 'node:test';
 
 const stories=JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-final33-stories.json',import.meta.url),'utf8'));
 const sources={
- aida:'https://www.formula1.com/en/results/1994/races/606/pacific/race-result',
- reims:'https://www.formula1.com/en/results/1954/races/129/france/race-result',
- rouen:'https://www.formula1.com/en/results/1968/races/260/france/race-result'
+ aida:'https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml',
+ reims:'https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml',
+ rouen:'https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml'
 };
-test('three independently researched circuit cards retain verified event sources and bilingual copy',()=>{
+test('three independently researched circuit cards retain pinned F1DB race sources and bilingual copy',()=>{
  for(const [id,url] of Object.entries(sources)){
   const story=stories.find(x=>x.id===id);
   assert.ok(story,id+' exists');
