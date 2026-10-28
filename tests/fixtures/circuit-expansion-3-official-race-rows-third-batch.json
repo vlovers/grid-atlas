@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "publication": "blocked",
+  "scope": "Race result fields only; no independent approval of narrative claims",
+  "races": [
+    {
+      "circuit_id": "pedralbes",
+      "year": 1954,
+      "url": "https://www.formula1.com/en/results/1954/races/134/spain/race-result",
+      "rows": [
+        [
+          "Mike Hawthorn",
+          "1",
+          80,
+          "winner"
+        ],
+        [
+          "Luigi Musso",
+          "2",
+          80,
+          "+73.200s"
+        ],
+        [
+          "Juan Manuel Fangio",
+          "3",
+          79,
+          "+1 lap"
+        ],
+        [
+          "Roberto Mieres",
+          "4",
+          79,
+          "+1 lap"
+        ],
+        [
+          "Alberto Ascari",
+          "NC",
+          10,
+          "DNF"
+        ]
+      ]
+    },
+    {
+      "circuit_id": "porto",
+      "year": 1960,
+      "url": "https://www.formula1.com/en/results/1960/races/185/portugal/race-result",
+      "rows": [
+        [
+          "Jack Brabham",
+          "1",
+          55,
+          "winner"
+        ],
+        [
+          "Bruce McLaren",
+          "2",
+          55,
+          "+57.970s"
+        ],
+        [
+          "Jim Clark",
+          "3",
+          55,
+          "+113.230s"
+        ],
+        [
+          "Wolfgang von Trips",
+          "4",
+          55,
+          "+118.810s"
+        ],
+        [
+          "Stirling Moss",
+          "DQ",
+          50,
+          "DSQ"
+        ]
+      ]
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "year": 1966,
+      "url": "https://www.formula1.com/en/results/1966/races/236/belgium/race-result",
+      "rows": [
+        [
+          "John Surtees",
+          "1",
+          28,
+          "winner"
+        ],
+        [
+          "Jochen Rindt",
+          "2",
+          28,
+          "+42.100s"
+        ],
+        [
+          "Lorenzo Bandini",
+          "3",
+          27,
+          "+1 lap"
+        ],
+        [
+          "Jack Brabham",
+          "4",
+          26,
+          "+2 laps"
+        ],
+        [
+          "Jim Clark",
+          "NC",
+          0,
+          "DNF"
+        ]
+      ]
+    }
+  ]
+}

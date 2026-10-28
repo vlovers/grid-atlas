@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "provenance": "Official Formula 1 race-result tables, inspected 2026-10-27",
+  "races": [
+    {
+      "circuit_id": "pescara",
+      "year": 1957,
+      "source_url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+      "rows": [
+        [
+          "Stirling Moss",
+          1,
+          18,
+          null
+        ],
+        [
+          "Juan Manuel Fangio",
+          2,
+          18,
+          193.9
+        ],
+        [
+          "Harry Schell",
+          3,
+          18,
+          406.8
+        ],
+        [
+          "Masten Gregory",
+          4,
+          18,
+          496.5
+        ],
+        [
+          "Tony Brooks",
+          null,
+          1,
+          null
+        ]
+      ]
+    },
+    {
+      "circuit_id": "zeltweg",
+      "year": 1964,
+      "source_url": "https://www.formula1.com/en/results/1964/races/221/austria/race-result",
+      "rows": [
+        [
+          "Lorenzo Bandini",
+          1,
+          105,
+          null
+        ],
+        [
+          "Richie Ginther",
+          2,
+          105,
+          6.18
+        ],
+        [
+          "Bob Anderson",
+          3,
+          102,
+          null
+        ],
+        [
+          "Tony Maggs",
+          4,
+          102,
+          null
+        ],
+        [
+          "John Surtees",
+          null,
+          8,
+          null
+        ]
+      ]
+    },
+    {
+      "circuit_id": "zolder",
+      "year": 1984,
+      "source_url": "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
+      "rows": [
+        [
+          "Michele Alboreto",
+          1,
+          70,
+          null
+        ],
+        [
+          "Derek Warwick",
+          2,
+          70,
+          42.386
+        ],
+        [
+          "Rene Arnoux",
+          3,
+          70,
+          69.803
+        ],
+        [
+          "Ayrton Senna",
+          6,
+          68,
+          null
+        ],
+        [
+          "Alain Prost",
+          null,
+          5,
+          null
+        ]
+      ]
+    }
+  ]
+}
