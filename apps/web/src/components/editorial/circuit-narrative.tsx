@@ -8,7 +8,7 @@ import finalFacts from './circuit-final33-stories.json';
 import styles from './circuit-history-stories.module.css';
 
 export const circuitNarratives = candidateCircuitNarratives;
-export const hasPublicCircuitMoments = (id: string) => Boolean(legacyCircuitHistory[id]) || isCircuitEditionApproved(id);
+export const hasPublicCircuitMoments = (id: string) => Boolean(legacyCircuitHistory[id]) || isCircuitEditionApproved(id) || legacy.some(entry => entry.id === id);
 const legacy = [...facts, ...nextFacts, ...finalFacts];
 type Locale = 'en' | 'uk';
 type Race = { race_id: string; season_year: number; race_name: string; race_date: string | null;
@@ -36,7 +36,10 @@ export function CircuitBiography({ circuitId, locale }: { circuitId: string; loc
 
 export function CircuitMoments({ circuitId, locale, history }: { circuitId: string; locale: Locale; history: Race[] }) {
   const existing = legacyCircuitHistory[circuitId]?.[locale];
-  const moments = isCircuitEditionApproved(circuitId) ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments : existing?.moments.map((moment, index) => ({ id: `${circuitId}-existing-${index}`, year: Number(moment.year), title: { en: moment.title, uk: moment.title }, text: { en: moment.description, uk: moment.description }, source: moment.url, locator: moment.year }));
+  // Reuse the already-public, source-linked short feature when no reviewed longform exists.
+  // This does not publish any candidate narratives or bypass circuit-release.json.
+  const featured = legacy.find(entry => entry.id === circuitId);
+  const moments = isCircuitEditionApproved(circuitId) ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments : existing?.moments.map((moment, index) => ({ id: `${circuitId}-existing-${index}`, year: Number(moment.year), title: { en: moment.title, uk: moment.title }, text: { en: moment.description, uk: moment.description }, source: moment.url, locator: moment.year })) ?? (featured ? [{ id: `${circuitId}-featured`, year: Number(featured.year), title: featured.title, text: featured.description, source: featured.source, locator: featured.year }] : undefined);
   const uk = locale === 'uk';
   return <div data-testid="circuit-moments"><h2>{uk ? 'Легендарні моменти' : 'Memorable moments'}</h2>
     {moments ? <div className={styles.momentGrid}>{moments.map(moment => {
@@ -46,7 +49,7 @@ export function CircuitMoments({ circuitId, locale, history }: { circuitId: stri
         <span className={styles.year}>{moment.year}</span><h3>{moment.title[locale]}</h3><p>{moment.text[locale]}</p>
         {race && <><Link href={`/races/${race.race_id}`}>{uk ? 'Гонка' : 'Race'} · {race.race_date ?? race.season_year} ↗</Link>
           <p><small>{uk ? 'Переможці гонки' : 'Race winners'}: {race.winners.map((winner, index) => <span key={`${winner.driver_id}:${winner.constructor_id}`}>{index > 0 && ' · '}<Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> / <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></span>)}</small></p></>}
-        <details><summary>{uk ? 'Джерело сюжету' : 'Story source'}</summary><a href={moment.source} target="_blank" rel="noopener noreferrer">Formula 1 · {moment.locator} ↗</a></details>
+        <details><summary>{uk ? 'Джерело сюжету' : 'Story source'}</summary><a href={moment.source} target="_blank" rel="noopener noreferrer">{uk ? 'Відкрити джерело' : 'Open source'} · {moment.locator} ↗</a></details>
       </article>;
     })}</div> : <p>{uk ? 'Окремої добірки визначних подій поки немає. Усі відомі результати доступні нижче.' : 'A dedicated selection of significant moments is not available yet. Browse all available results below.'}</p>}
     {moments && <ReviewDetails locale={locale} />}
