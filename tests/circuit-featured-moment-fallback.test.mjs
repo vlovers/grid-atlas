@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import { circuitContextEvidence, getCircuitContextEvidence } from '../apps/web/src/components/editorial/circuit-context-evidence.ts';
 import {
   circuitStorySourceKind,
   circuitStorySourcePresentation,
@@ -83,7 +84,7 @@ test('public short-story fallback neither duplicates the biography nor bypasses 
 });
 
 test('all 73 public stories expose honest source types in both languages', () => {
-  const byKind = { 'f1db-results': 0, 'formula1-page': 0, other: 0 };
+  const byKind = { 'f1db-results': 0, 'formula1-results': 0, 'formula1-circuit-guide': 0, 'formula1-feature': 0, 'formula1-event-page': 0, other: 0 };
   for (const story of publicCircuitStories) {
     const kind = circuitStorySourceKind(story.source);
     byKind[kind] += 1;
@@ -94,7 +95,7 @@ test('all 73 public stories expose honest source types in both languages', () =>
     assert.ok(uk.badge && uk.description && uk.linkLabel, story.id);
     assert.notEqual(en.description, uk.description, story.id);
   }
-  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-page': 20, other: 0 });
+  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 5, 'formula1-circuit-guide': 8, 'formula1-feature': 7, 'formula1-event-page': 0, other: 0 });
   assert.equal(circuitStorySourceKind('https://example.org/not-reviewed'), 'other');
   assert.equal(circuitStorySourceKind('https://github.com/f1db/f1db/blob/main/src/data/seasons/1950/races/01-britain/race-results.yml'), 'other');
   assert.match(circuitStorySourcePresentation('https://example.org/not-reviewed', 'en').description, /review/);
@@ -107,4 +108,54 @@ test('circuit moment cards show evidence format and explain limits without claim
   assert.match(component, /sourcePresentation\.linkLabel/);
   assert.match(component, /noopener noreferrer/);
   assert.deepEqual(release.editions, [], 'source-format UX must not approve candidate dossiers');
+});
+
+test('seven prioritized circuit stories have scoped contextual references, not approvals', () => {
+  const expected = ['adelaide', 'aida', 'estoril', 'marina-bay', 'montjuic', 'rouen', 'zolder'];
+  assert.deepEqual(Object.keys(circuitContextEvidence).sort(), expected);
+  for (const id of expected) {
+    const story = getPublicCircuitStory(id);
+    const context = getCircuitContextEvidence(id);
+    assert.ok(story && context, id);
+    assert.match(context.url, /^https:\/\/www\.formula1\.com\/en\//, id);
+    assert.notEqual(context.url, story.source, id);
+    assert.ok(context.scope.en.length > 45 && context.scope.uk.length > 45, id);
+    assert.notEqual(context.scope.en, context.scope.uk, id);
+    assert.ok(!/approved|verified|схвален|підтверджен/i.test(context.scope.en), id);
+  }
+  assert.equal(getCircuitContextEvidence('melbourne'), undefined);
+  assert.equal(getCircuitContextEvidence('not-a-circuit'), undefined);
+  assert.match(component, /featured && !existing && !isCircuitEditionApproved\(circuitId\)/);
+  assert.match(component, /contextEvidence\.scope\[locale\]/);
+  assert.match(component, /href=\{contextEvidence\.url\}/);
+  assert.deepEqual(release.editions, [], 'context sources are not editorial approvals');
+});
+
+test('Melbourne 1996 cites a relevant historical article, not a current-season event page', () => {
+  const story = getPublicCircuitStory('melbourne');
+  assert.ok(story);
+  assert.equal(story.year, '1996');
+  assert.equal(circuitStorySourceKind(story.source), 'formula1-feature');
+  assert.match(story.source, /celebrating-30-years-of-melbourne-magic/);
+  assert.doesNotMatch(story.source, /\/racing\/2026\//);
+});
+
+test('source presentation distinguishes archive results, official results, guides, features and event pages', () => {
+  const samples = [
+    ['https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml', 'f1db-results'],
+    ['https://www.formula1.com/en/results/1996/races/638/australia/race-result', 'formula1-results'],
+    ['https://www.formula1.com/en/information/bahrain-international-circuit.2CaIdaOTCgQ3Yfnb37NmSS', 'formula1-circuit-guide'],
+    ['https://www.formula1.com/en/latest/article/any-title.example', 'formula1-feature'],
+    ['https://www.formula1.com/en/racing/2026/australia', 'formula1-event-page'],
+    ['https://www.formula1.com/en/results/1996/races/638/australia/qualifying', 'other'],
+    ['https://www.formula1.com.evil.example/en/latest/article/fake', 'other'],
+    ['not-a-url', 'other'],
+  ];
+  for (const [url, kind] of samples) {
+    assert.equal(circuitStorySourceKind(url), kind, url);
+    const en = circuitStorySourcePresentation(url, 'en');
+    const uk = circuitStorySourcePresentation(url, 'uk');
+    assert.ok(en.badge && uk.badge && en.description && uk.description);
+    assert.notEqual(en.badge, uk.badge);
+  }
 });
