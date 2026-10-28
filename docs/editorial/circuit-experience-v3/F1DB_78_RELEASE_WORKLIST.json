@@ -2,15 +2,17 @@
   "schema_version": 1,
   "derived_from": "docs/editorial/circuit-experience-v3/F1DB_78_CONTENT_COVERAGE_20261027.json",
   "f1db_release": "v2026.17.0",
-  "purpose": "78-circuit editorial execution queue derived from pinned coverage. No new historical research, licence approval, or public release is implied.",
+  "purpose": "Current 78-circuit research-dossier inventory after expansion batches 1–3 were merged. Research complete does not imply historical fact approval, photo rights or publication clearance.",
   "summary": {
     "total": 78,
     "short_bilingual_entries": 78,
-    "five_story_dossier_drafts": 45,
-    "requires_five_story_expansion": 33,
+    "five_story_dossier_drafts": 78,
+    "requires_five_story_expansion": 0,
     "expansion_batches": 3,
     "fully_editorially_approved": 0,
-    "publication_ready": 0
+    "publication_ready": 0,
+    "research_dossiers_added_in_expansions": 33,
+    "research_stories_added_in_expansions": 165
   },
   "batches": [
     {
@@ -29,7 +31,9 @@
         "dallas"
       ],
       "expected_circuits": 11,
-      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked"
+      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked",
+      "research_dossiers_present": 11,
+      "publication": "blocked"
     },
     {
       "id": "expansion-2",
@@ -47,7 +51,9 @@
         "mosport"
       ],
       "expected_circuits": 11,
-      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked"
+      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked",
+      "research_dossiers_present": 11,
+      "publication": "blocked"
     },
     {
       "id": "expansion-3",
@@ -65,7 +71,9 @@
         "zolder"
       ],
       "expected_circuits": 11,
-      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked"
+      "acceptance": "Five nonduplicative bilingual historical research leads per circuit; specific provenance per claim; unapproved media/layout omitted; independent approval remains blocked",
+      "research_dossiers_present": 11,
+      "publication": "blocked"
     }
   ],
   "circuits": [
@@ -86,8 +94,8 @@
     {
       "circuit_id": "aida",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -95,13 +103,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "ain-diab",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -109,13 +117,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "aintree",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -123,13 +131,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "anderstorp",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -137,7 +145,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "austin",
@@ -156,8 +164,8 @@
     {
       "circuit_id": "avus",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -165,7 +173,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "bahrain",
@@ -212,8 +220,8 @@
     {
       "circuit_id": "bremgarten",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -221,7 +229,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "buddh",
@@ -240,8 +248,8 @@
     {
       "circuit_id": "buenos-aires",
       "short_content_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -249,13 +257,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "bugatti",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -263,13 +271,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "caesars-palace",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -277,7 +285,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "catalunya",
@@ -296,8 +304,8 @@
     {
       "circuit_id": "clermont-ferrand",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -305,13 +313,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "dallas",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-1",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-1",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -319,7 +327,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "detroit",
@@ -338,8 +346,8 @@
     {
       "circuit_id": "dijon",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -347,7 +355,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "donington",
@@ -366,8 +374,8 @@
     {
       "circuit_id": "east-london",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -375,7 +383,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "estoril",
@@ -492,8 +500,8 @@
     {
       "circuit_id": "jacarepagua",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -501,13 +509,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "jarama",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -515,7 +523,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "jeddah",
@@ -534,8 +542,8 @@
     {
       "circuit_id": "jerez",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -543,7 +551,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "kyalami",
@@ -604,8 +612,8 @@
     {
       "circuit_id": "madring",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -613,7 +621,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "magny-cours",
@@ -688,8 +696,8 @@
     {
       "circuit_id": "monaco",
       "short_content_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -697,13 +705,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "monsanto",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -711,13 +719,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "mont-tremblant",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -725,13 +733,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "montjuic",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -739,7 +747,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "montreal",
@@ -772,8 +780,8 @@
     {
       "circuit_id": "mosport",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-2",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-2",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -781,7 +789,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "mugello",
@@ -800,8 +808,8 @@
     {
       "circuit_id": "nivelles",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -809,7 +817,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "nurburgring",
@@ -842,8 +850,8 @@
     {
       "circuit_id": "pedralbes",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -851,13 +859,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "pescara",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -865,7 +873,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "phoenix",
@@ -898,8 +906,8 @@
     {
       "circuit_id": "porto",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -907,13 +915,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "reims",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -921,13 +929,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "riverside",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -935,13 +943,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "rouen",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -949,13 +957,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "sebring",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -963,7 +971,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "sepang",
@@ -1024,8 +1032,8 @@
     {
       "circuit_id": "spa-francorchamps",
       "short_content_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -1033,7 +1041,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "spielberg",
@@ -1136,8 +1144,8 @@
     {
       "circuit_id": "zeltweg",
       "short_content_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -1145,13 +1153,13 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     },
     {
       "circuit_id": "zolder",
       "short_content_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
-      "five_story_research_batch": null,
-      "content_stage": "short_bilingual_entry_only",
+      "five_story_research_batch": "expansion-3",
+      "content_stage": "five_story_research_dossier_draft",
       "expansion_batch": "expansion-3",
       "independent_claim_check": "pending",
       "historical_layout_check": "pending",
@@ -1159,7 +1167,7 @@
       "photo_rights_check": "pending",
       "bilingual_line_edit": "pending",
       "publication": "blocked",
-      "next_action": "Create five distinct UK/EN source-linked historical leads; retain claim-level evidence and do not infer dates or turns"
+      "next_action": "Independently corroborate each bilingual claim and source scope; review race-era layout, terminology, photo rights and copy before any publication"
     }
   ]
 }

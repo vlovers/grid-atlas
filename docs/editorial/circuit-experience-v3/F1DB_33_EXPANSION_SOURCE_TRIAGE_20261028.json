@@ -1,0 +1,588 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-28",
+  "purpose": "Post-merge source-diversity triage for all 33 expansion dossiers. This is a heuristic audit, not independent claim verification.",
+  "summary": {
+    "research_circuits": 33,
+    "research_stories": 165,
+    "total_story_source_references": 177,
+    "distinct_source_urls": 39,
+    "single_source_circuits": 27,
+    "publication_ready": 0
+  },
+  "review_priority": "Single-source five-story dossiers first; verify every distinct historical assertion, event-specific source scope, EN/UK translation, historical layout and rights before publication.",
+  "circuits": [
+    {
+      "circuit_id": "aida",
+      "research_file": "EXPANSION_1_AIDA_DALLAS_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1994/awards/pole-positions",
+        "https://www.formula1.com/en/results/1994/races/606/pacific/race-result",
+        "https://www.formula1.com/en/results/1995/races/635/pacific/race-result"
+      ],
+      "distinct_story_years": [
+        1994,
+        1995
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "ain-diab",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
+      ],
+      "distinct_story_years": [
+        1958
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "aintree",
+      "research_file": "EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1955/races/140/great-britain/race-result",
+        "https://www.formula1.com/en/results/1957/races/154/great-britain/race-result"
+      ],
+      "distinct_story_years": [
+        1955,
+        1957
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1978/races/398/sweden/race-result"
+      ],
+      "distinct_story_years": [
+        1978
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "avus",
+      "research_file": "EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/174/germany/race-result"
+      ],
+      "distinct_story_years": [
+        1959
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bremgarten",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
+      ],
+      "distinct_story_years": [
+        1954
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
+      ],
+      "distinct_story_years": [
+        1995
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bugatti",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races/248/france/race-result"
+      ],
+      "distinct_story_years": [
+        1967
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "research_file": "EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh",
+        "https://www.formula1.com/en/results/1981/races",
+        "https://www.formula1.com/en/results/1982/races/452/caesar%27s-palace/race-result"
+      ],
+      "distinct_story_years": [
+        1981,
+        1982
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "research_file": "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/307/france/race-result"
+      ],
+      "distinct_story_years": [
+        1972
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "dallas",
+      "research_file": "EXPANSION_1_AIDA_DALLAS_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1984/races/474/dallas/race-result",
+        "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh"
+      ],
+      "distinct_story_years": [
+        1984
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "dijon",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "distinct_story_years": [
+        1979
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "east-london",
+      "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result"
+      ],
+      "distinct_story_years": [
+        1962
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1989/races/543/brazil/race-result"
+      ],
+      "distinct_story_years": [
+        1989
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jarama",
+      "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "distinct_story_years": [
+        1981
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jerez",
+      "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "distinct_story_years": [
+        1986
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "madring",
+      "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/racing/2026/spain"
+      ],
+      "distinct_story_years": [
+        2026
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1996/races/643/monaco/race-result"
+      ],
+      "distinct_story_years": [
+        1996
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monsanto",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
+      ],
+      "distinct_story_years": [
+        1959
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
+      ],
+      "distinct_story_years": [
+        1968
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "montjuic",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1975/races/347/spain/race-result"
+      ],
+      "distinct_story_years": [
+        1975
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mosport",
+      "research_file": "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races/251/canada/race-result"
+      ],
+      "distinct_story_years": [
+        1967
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nivelles",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
+      ],
+      "distinct_story_years": [
+        1972
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "pedralbes",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/134/spain/race-result"
+      ],
+      "distinct_story_years": [
+        1954
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "pescara",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+      ],
+      "distinct_story_years": [
+        1957
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "porto",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1960/races/185/portugal/race-result"
+      ],
+      "distinct_story_years": [
+        1960
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "reims",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/129/france/race-result",
+        "https://emercedesbenz.com/autos/mercedes-benz/classic/celebrate-120-years-of-racing/"
+      ],
+      "distinct_story_years": [
+        1954
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "riverside",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1960/races/187/united-states/race-result",
+        "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh"
+      ],
+      "distinct_story_years": [
+        1960
+      ],
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "rouen",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/199/french/race-result"
+      ],
+      "distinct_story_years": [
+        1962
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sebring",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+      ],
+      "distinct_story_years": [
+        1959
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1966/races/236/belgium/race-result"
+      ],
+      "distinct_story_years": [
+        1966
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zeltweg",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1964/races/221/austria/race-result"
+      ],
+      "distinct_story_years": [
+        1964
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zolder",
+      "research_file": "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json",
+      "story_count": 5,
+      "unique_source_urls": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1984/races/468/belgium/race-result"
+      ],
+      "distinct_story_years": [
+        1984
+      ],
+      "source_diversity_flag": "single_source_for_five_stories",
+      "claim_review": "pending",
+      "bilingual_line_edit": "pending",
+      "independent_approval": false,
+      "publication": "blocked"
+    }
+  ]
+}
