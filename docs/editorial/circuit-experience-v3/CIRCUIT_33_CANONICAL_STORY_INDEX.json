@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "source": "PR #344 bilingual manuscript batch",
+  "description": "Canonical deduplication ledger. Dated event key does not prove independent historical review. Preferred paths identify one editorial draft; alternatives are kept for reference, not additional content.",
+  "summary": {
+    "total_manuscript_chapters": 61,
+    "unique_story_keys": 56,
+    "dated_unique_events": 54,
+    "source_gaps": 2,
+    "alternate_duplicate_manuscripts": 5,
+    "covered_circuits": 33
+  },
+  "entries": [
+    {
+      "circuit_id": "aida",
+      "event_year": 1994,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "aida",
+      "event_year": 1995,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "ain-diab",
+      "event_year": 1958,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+      "alternate_manuscripts": [
+        "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+        "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md"
+      ],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "aintree",
+      "event_year": 1957,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+      "alternate_manuscripts": [
+        "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md"
+      ],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "event_year": 1973,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "event_year": 1976,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "event_year": 1977,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "event_year": 1978,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "avus",
+      "event_year": 1959,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bremgarten",
+      "event_year": 1952,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bremgarten",
+      "event_year": 1954,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "event_year": 1953,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "event_year": 1955,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "bugatti",
+      "event_year": 1967,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "event_year": 1982,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "event_year": 1965,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "event_year": 1969,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "dallas",
+      "event_year": 1984,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+      "alternate_manuscripts": [
+        "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md"
+      ],
+      "source_tier": "source_gap",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "dijon",
+      "event_year": 1979,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+      "alternate_manuscripts": [
+        "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md"
+      ],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "dijon",
+      "event_year": 1981,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "east-london",
+      "event_year": 1962,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "event_year": 1988,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jarama",
+      "event_year": 1976,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jarama",
+      "event_year": 1981,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jerez",
+      "event_year": 1986,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jerez",
+      "event_year": 1997,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "madring",
+      "event_year": 2026,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": null,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "source_gap",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 1961,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 1971,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monaco",
+      "event_year": 1973,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "monsanto",
+      "event_year": 1959,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "event_year": 1968,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "event_year": 1970,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "montjuic",
+      "event_year": 1973,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "montjuic",
+      "event_year": 1975,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mosport",
+      "event_year": 1967,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "mosport",
+      "event_year": 1973,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nivelles",
+      "event_year": 1972,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "nivelles",
+      "event_year": 1974,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "pedralbes",
+      "event_year": 1951,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "pescara",
+      "event_year": 1957,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "porto",
+      "event_year": 1958,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "porto",
+      "event_year": 1960,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "reims",
+      "event_year": 1953,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "reims",
+      "event_year": 1954,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "reims",
+      "event_year": 1961,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "riverside",
+      "event_year": 1960,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "rouen",
+      "event_year": 1968,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "sebring",
+      "event_year": 1959,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": null,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "source_gap",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 1961,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "event_year": 1970,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zeltweg",
+      "event_year": 1964,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zolder",
+      "event_year": 1981,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "zolder",
+      "event_year": 1982,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    }
+  ]
+}
