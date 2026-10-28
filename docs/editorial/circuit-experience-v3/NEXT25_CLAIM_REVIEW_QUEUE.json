@@ -11,7 +11,7 @@
     "classification_drafts": 85,
     "article_source_drafts": 15,
     "priority_human_review": 43,
-    "undated_topics": 23,
+    "undated_topics": 14,
     "independently_approved": 0
   },
   "records": [
@@ -1077,14 +1077,15 @@
     {
       "candidate_slug": "watkins-glen",
       "story_index": 3,
-      "year": null,
+      "year": 1971,
       "title_en": "Safety changes in the 1970s",
       "source_urls": [
-        "https://www.formula1.com/en/results/1970/races"
+        "https://www.formula1.com/en/results/1971/races",
+        "https://www.ebay.com/motors/blog/vehicles/a-quick-history-of-watkins-glen-international"
       ],
       "source_types": {
         "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "priority_human_review",
@@ -1417,14 +1418,14 @@
     {
       "candidate_slug": "paul-ricard",
       "story_index": 3,
-      "year": null,
+      "year": 1999,
       "title_en": "The circuit's test-track years",
       "source_urls": [
-        "https://www.formula1.com/en/results/1990/races"
+        "https://www.circuitpaulricard.com/en/the-circuit/history"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "priority_human_review",
@@ -1992,14 +1993,14 @@
     {
       "candidate_slug": "donington-park",
       "story_index": 4,
-      "year": null,
+      "year": 2008,
       "title_en": "Why the venue did not become a permanent F1 home",
       "source_urls": [
-        "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+        "https://www.crash.net/f1/feature/231895/1/when-the-british-gp-almost-killed-off-donington-park"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "standard_human_review",
@@ -2104,7 +2105,7 @@
     {
       "candidate_slug": "valencia-street",
       "story_index": 4,
-      "year": null,
+      "year": 2012,
       "title_en": "Why the race ended after 2012",
       "source_urls": [
         "https://www.formula1.com/en/results/2012/races"
@@ -2148,14 +2149,15 @@
     {
       "candidate_slug": "korea-international",
       "story_index": 1,
-      "year": null,
+      "year": 2010,
       "title_en": "Building the circuit at Yeongam",
       "source_urls": [
+        "https://en.yna.co.kr/view/AEN20101012003200315",
         "https://www.formula1.com/en/results/2010/races"
       ],
       "source_types": {
         "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "standard_human_review",
@@ -2326,14 +2328,14 @@
     {
       "candidate_slug": "buddh",
       "story_index": 4,
-      "year": null,
+      "year": 2014,
       "title_en": "Why the race stopped after 2013",
       "source_urls": [
-        "https://www.formula1.com/en/results/2013/races/894/india/race-result"
+        "https://news.sky.com/story/indian-gp-dropped-from-2014-f1-calendar-10438693"
       ],
       "source_types": {
-        "season_classification": 1,
-        "event_specific_article_candidates": 0
+        "season_classification": 0,
+        "event_specific_article_candidates": 1
       },
       "research_status": "classification_supported_research_draft",
       "review_priority": "standard_human_review",
@@ -2554,10 +2556,11 @@
     {
       "candidate_slug": "phoenix-street",
       "story_index": 4,
-      "year": null,
-      "title_en": "The end of the Phoenix experiment",
+      "year": 1991,
+      "title_en": "Phoenix's brief Formula 1 chapter ends",
       "source_urls": [
-        "https://www.formula1.com/en/results/1990/races"
+        "https://www.fia.com/sites/default/files/2018_a5_media_kit_final_1.pdf",
+        "https://www.formula1.com/en/results/1991/races"
       ],
       "source_types": {
         "season_classification": 1,
@@ -2663,10 +2666,11 @@
     {
       "candidate_slug": "detroit-street",
       "story_index": 4,
-      "year": null,
-      "title_en": "Why the race moved to Phoenix",
+      "year": 1988,
+      "title_en": "Senna's last Formula 1 win on Detroit's streets",
       "source_urls": [
-        "https://www.formula1.com/en/results/1982/races"
+        "https://www.detroitgp.com/event-info/recaps/formula-1",
+        "https://www.formula1.com/en/results/1988/races"
       ],
       "source_types": {
         "season_classification": 1,
@@ -2772,13 +2776,13 @@
     {
       "candidate_slug": "long-beach",
       "story_index": 4,
-      "year": null,
-      "title_en": "The switch to IndyCar racing",
+      "year": 1984,
+      "title_en": "From Formula 1 to CART",
       "source_urls": [
-        "https://www.formula1.com/en/results/1983/races"
+        "https://gplb.com/track-history"
       ],
       "source_types": {
-        "season_classification": 1,
+        "season_classification": 0,
         "event_specific_article_candidates": 0
       },
       "research_status": "classification_supported_research_draft",
