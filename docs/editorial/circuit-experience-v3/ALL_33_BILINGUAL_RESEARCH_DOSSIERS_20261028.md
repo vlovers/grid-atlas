@@ -2,7 +2,7 @@
 
 > **Research collection, NOT cleared for publication.** Historical race results and surrounding prose have different evidence requirements. Independent factual, localization, layout and image-rights review remain open.
 
-**Inventory:** 33 circuits, 76 unique dated race episodes, 10 alternate readings of already-counted events. Five distinct races per circuit would require 165 episodes; **89 are missing**. A circuit with fewer than five relevant F1 World Championship events must not receive fictional events.
+**Inventory:** 33 circuits, 76 unique dated race episodes, 10 alternate readings of already-counted events. Five distinct races per circuit would require 165 episodes; **98 venue-specific event slots are missing**. A circuit with fewer than five relevant F1 World Championship events must not receive fictional events.
 
 ## aida
 
