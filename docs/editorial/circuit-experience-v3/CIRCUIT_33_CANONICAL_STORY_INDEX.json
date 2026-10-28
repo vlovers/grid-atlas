@@ -3,9 +3,9 @@
   "source": "PR #344 bilingual manuscript batch",
   "description": "Canonical deduplication ledger. Dated event key does not prove independent historical review. Preferred paths identify one editorial draft; alternatives are kept for reference, not additional content.",
   "summary": {
-    "total_manuscript_chapters": 75,
-    "unique_story_keys": 70,
-    "dated_unique_events": 68,
+    "total_manuscript_chapters": 83,
+    "unique_story_keys": 78,
+    "dated_unique_events": 76,
     "source_gaps": 2,
     "alternate_duplicate_manuscripts": 5,
     "covered_circuits": 33
@@ -43,11 +43,29 @@
     },
     {
       "circuit_id": "aintree",
+      "event_year": 1955,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "aintree",
       "event_year": 1957,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
       "alternate_manuscripts": [
         "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md"
       ],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "aintree",
+      "event_year": 1959,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
       "source_tier": "official_result_link",
       "status": "research_draft",
       "publication": "blocked"
@@ -144,6 +162,15 @@
     },
     {
       "circuit_id": "caesars-palace",
+      "event_year": 1981,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "caesars-palace",
       "event_year": 1982,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
       "alternate_manuscripts": [],
@@ -210,11 +237,29 @@
       "publication": "blocked"
     },
     {
+      "circuit_id": "east-london",
+      "event_year": 1965,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
       "circuit_id": "jacarepagua",
       "event_year": 1988,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
       "alternate_manuscripts": [],
       "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "event_year": 1989,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
       "status": "research_draft",
       "publication": "blocked"
     },
@@ -444,6 +489,15 @@
       "publication": "blocked"
     },
     {
+      "circuit_id": "pedralbes",
+      "event_year": 1954,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
       "circuit_id": "pescara",
       "event_year": 1957,
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
@@ -503,6 +557,24 @@
       "preferred_manuscript": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
       "alternate_manuscripts": [],
       "source_tier": "pinned_archive_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "rouen",
+      "event_year": 1962,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
+      "status": "research_draft",
+      "publication": "blocked"
+    },
+    {
+      "circuit_id": "rouen",
+      "event_year": 1964,
+      "preferred_manuscript": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+      "alternate_manuscripts": [],
+      "source_tier": "official_result_link",
       "status": "research_draft",
       "publication": "blocked"
     },
