@@ -68,6 +68,6 @@ Madrid's new circuit belongs to a different part of Formula 1 history from the v
 
 Нова мадридська траса належить до зовсім іншої доби Формули-1, ніж зниклі дорожні кільця 1950-х. Її історія починається з проєкту, конфігурації та місця в сучасному календарі, а не з десятиліть легендарних результатів. Навіть після проведення гонки її підсумок потрібно звіряти з фактичним протоколом і конфігурацією того року. Найцікавіше запитання — як нове місце знаходить власний характер у чемпіонаті, де вже є стільки знаменитих трас. Поки результати й незалежні повідомлення не узгоджено, це вступна глава, а не вигаданий огляд минулих перегонів.
 
-**Source for historical context:** https://www.formula1.com/en/latest/article/formula-1-announces-madrid-to-join-the-calendar-from-2026.2T4w5BkG5JQqCJ0hFyVQkR
+**Source for historical context:** https://www.formula1.com/en/latest/article/madrid-formula-1-calendar-2026-spanish-grand-prix.rKwSPJ74MczwzDhHVxdQz
 
 **Publication:** blocked pending source-specific review and human line edit.
