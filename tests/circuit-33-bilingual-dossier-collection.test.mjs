@@ -10,7 +10,7 @@ test('all 33 dossiers contain their distinct bilingual event manuscripts, withou
  assert.deepEqual(titles,data.circuits.map(x=>x.circuit_id));
  assert.equal((dossier.match(/^### \d{4} — dated race manuscript$/gm)||[]).length,76);
  assert.equal((dossier.match(/^### Another perspective on an existing race/gm)||[]).length,10);
- assert.match(dossier,/89 are missing/);
+ assert.match(dossier,/98 venue-specific event slots are missing/);
  assert.match(dossier,/NOT cleared for publication/);
  for(const circuit of data.circuits){
   const start=dossier.indexOf('## '+circuit.circuit_id+'\n');
