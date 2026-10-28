@@ -80,7 +80,7 @@ const sourcePresentations: Record<CircuitStorySourceKind, Record<'en' | 'uk', So
     uk: { badge: 'Ф1 · сторінка етапу', description: 'Сторінка етапу певного сезону може описувати трасу, але не є протоколом гонки іншого року.', linkLabel: 'Відкрити сторінку етапу' },
   },
   other: {
-    en: { badge: 'External source', description: 'The source type and its relevance to the story have not been established.', linkLabel: 'Open source' },
+    en: { badge: 'External source', description: 'The source type and its relevance to the story still require review.', linkLabel: 'Open source' },
     uk: { badge: 'Зовнішнє джерело', description: 'Тип джерела та його відповідність історії ще не встановлені.', linkLabel: 'Відкрити джерело' },
   },
 };
