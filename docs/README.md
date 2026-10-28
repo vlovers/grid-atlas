@@ -12,6 +12,7 @@ This directory contains **current operating documentation**, **historical implem
 | Historical data and provenance | [Data-source register](data-sources/README.md) |
 | Editorial approval and publication | [Editorial release pipeline](editorial/APPROVED_RELEASE_PIPELINE.md) and [verification policy](editorial-verification.md) |
 | Existing public circuit short-story provenance | [73-story source-format inventory and review queue](editorial/circuit-short-story-evidence-audit-20261028.md) — not a claim-level approval |
+| Seven sensitive public circuit summaries | [24 bilingual claim-level review questions](editorial/circuit-claim-review-seven-20261028.md) — all unverified, no human sign-off |
 | Unpublished championship story research | [Season arcs: 35 bilingual championship research manuscripts](editorial/season-arcs/README.md) — research only, not approved public articles |
 | Unpublished constructor turning points | [Ten bilingual outsider-team stories](editorial/constructor-arcs/README.md) — research drafts only; not approved public constructor dossiers |
 | Unpublished driver career stories | [Ten overlooked EN/UK driver narratives](editorial/driver-arcs/README.md) — three-act research drafts, not public biographies |
