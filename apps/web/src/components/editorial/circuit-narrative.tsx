@@ -36,7 +36,10 @@ export function CircuitBiography({ circuitId, locale }: { circuitId: string; loc
 
 export function CircuitMoments({ circuitId, locale, history }: { circuitId: string; locale: Locale; history: Race[] }) {
   const existing = legacyCircuitHistory[circuitId]?.[locale];
-  const moments = isCircuitEditionApproved(circuitId) ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments : existing?.moments.map((moment, index) => ({ id: `${circuitId}-existing-${index}`, year: Number(moment.year), title: { en: moment.title, uk: moment.title }, text: { en: moment.description, uk: moment.description }, source: moment.url, locator: moment.year }));
+  // Reuse the already-public, source-linked short feature when no reviewed longform exists.
+  // This does not publish any candidate narratives or bypass circuit-release.json.
+  const featured = legacy.find(entry => entry.id === circuitId);
+  const moments = isCircuitEditionApproved(circuitId) ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments : existing?.moments.map((moment, index) => ({ id: `${circuitId}-existing-${index}`, year: Number(moment.year), title: { en: moment.title, uk: moment.title }, text: { en: moment.description, uk: moment.description }, source: moment.url, locator: moment.year })) ?? (featured ? [{ id: `${circuitId}-featured`, year: Number(featured.year), title: featured.title, text: featured.description, source: featured.source, locator: featured.year }] : undefined);
   const uk = locale === 'uk';
   return <div data-testid="circuit-moments"><h2>{uk ? 'Легендарні моменти' : 'Memorable moments'}</h2>
     {moments ? <div className={styles.momentGrid}>{moments.map(moment => {
