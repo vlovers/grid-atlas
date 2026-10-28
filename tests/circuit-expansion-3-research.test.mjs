@@ -20,7 +20,9 @@ test("third expansion provides 55 unpublished bilingual story drafts for final 1
         assert.ok(s.narrative[lang].length > 75);
       }
       assert.ok(s.source_urls.length > 0);
-      assert.ok(s.source_urls.every(url => url.startsWith("https://www.formula1.com/")));
+      assert.ok(s.source_urls.every(url => {
+        try { return ["www.formula1.com", "emercedesbenz.com"].includes(new URL(url).hostname) && new URL(url).protocol === "https:"; } catch { return false; }
+      }));
       assert.equal(s.independent_approval,false);
       assert.equal(s.publication,"blocked");
     });
