@@ -1,21 +1,81 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import {
+  getPublicCircuitStory,
+  parseSingleCircuitYear,
+  publicCircuitStories,
+  uniqueRaceInYear,
+} from '../apps/web/src/components/editorial/circuit-public-moments.ts';
 
 const component = readFileSync(new URL('../apps/web/src/components/editorial/circuit-narrative.tsx', import.meta.url), 'utf8');
-const facts = JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-final33-stories.json', import.meta.url), 'utf8'));
+const legacy = readFileSync(new URL('../apps/web/src/components/editorial/circuit-history-stories.tsx', import.meta.url), 'utf8');
 const release = JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-release.json', import.meta.url), 'utf8'));
+const legacyIds = ['monaco', 'monza', 'suzuka', 'silverstone', 'spa-francorchamps'];
 
-test('unapproved circuits gain only existing public, sourced featured moments', () => {
-  assert.match(component, /const featured = legacy\.find\(entry => entry\.id === circuitId\)/);
-  assert.match(component, /existing\?\.moments\.map/);
-  assert.match(component, /featured \? \[\{ id:/);
-  assert.match(component, /isCircuitEditionApproved\(circuitId\)/);
-  assert.deepEqual(release.editions, [], 'a page enhancement does not approve research editions');
-  for (const story of facts) {
-    assert.ok(/^\d{4}$/.test(story.year), story.id);
-    assert.ok(story.title.en && story.title.uk, story.id);
-    assert.ok(story.description.en && story.description.uk, story.id);
-    assert.ok(/^https:\/\//.test(story.source), story.id);
+test('all 78 circuits retain a distinct short story, locale and traceable source', () => {
+  assert.equal(publicCircuitStories.length, 73, '73 featured stories plus 5 existing legacy circuits');
+  const ids = new Set(legacyIds);
+  for (const id of legacyIds) assert.ok(legacy.includes(`  ${id.includes('-') ? `'${id}'` : id}: {`), id);
+  for (const story of publicCircuitStories) {
+    assert.match(story.id, /^[a-z0-9-]+$/);
+    assert.ok(!ids.has(story.id), `duplicate circuit: ${story.id}`);
+    ids.add(story.id);
+    assert.ok(story.title.en.length > 8 && story.title.uk.length > 8, story.id);
+    assert.ok(story.description.en.length > 40 && story.description.uk.length > 40, story.id);
+    assert.notEqual(story.title.en, story.title.uk, story.id);
+    assert.notEqual(story.description.en, story.description.uk, story.id);
+    assert.ok(/^\d{4}(?:[–-]\d{4}| \/ \d{4})?$/.test(story.year), `${story.id}: ${story.year}`);
+    const source = new URL(story.source);
+    assert.equal(source.protocol, 'https:', story.id);
+    assert.ok(
+      source.hostname === 'www.formula1.com' ||
+      (source.hostname === 'github.com' && source.pathname.startsWith('/f1db/f1db/blob/v2026.17.0/')),
+      `${story.id}: unexpected source ${story.source}`,
+    );
+    if (source.hostname === 'github.com') {
+      assert.ok(source.pathname.includes(`/seasons/${story.year}/`), `${story.id}: source year mismatch`);
+    }
+    assert.equal(getPublicCircuitStory(story.id), story);
   }
+  assert.equal(ids.size, 78);
+  assert.equal(getPublicCircuitStory('not-a-circuit'), undefined);
+});
+
+test('multi-year featured stories display their actual label without inventing a race', () => {
+  const multiYear = publicCircuitStories.filter(story => parseSingleCircuitYear(story.year) === null);
+  assert.deepEqual(multiYear.map(story => story.id).sort(), [
+    'imola', 'interlagos', 'magny-cours', 'mexico-city',
+    'montreal', 'paul-ricard', 'spielberg', 'zandvoort',
+  ]);
+  assert.equal(parseSingleCircuitYear('1950'), 1950);
+  assert.equal(parseSingleCircuitYear('1973–1975'), null);
+  assert.equal(parseSingleCircuitYear('1978 / 1999'), null);
+  assert.equal(parseSingleCircuitYear('not a year'), null);
+  assert.doesNotMatch(component, /Number\(featured\.year\)/);
+  assert.match(component, /yearLabel: featured\.year/);
+});
+
+test('archive race links require one unambiguous event in the given year', () => {
+  const races = [
+    { race_id: 'one', season_year: 1950 },
+    { race_id: 'two', season_year: 1951 },
+    { race_id: 'three', season_year: 1951 },
+  ];
+  assert.equal(uniqueRaceInYear(races, 1950), races[0]);
+  assert.equal(uniqueRaceInYear(races, 1951), null);
+  assert.equal(uniqueRaceInYear(races, 1952), null);
+  assert.equal(uniqueRaceInYear(races, null), null);
+  assert.equal(uniqueRaceInYear(races, Number.NaN), null);
+  assert.match(component, /uniqueRaceInYear\(history, moment\.raceYear\)/);
+});
+
+test('public short-story fallback neither duplicates the biography nor bypasses approval', () => {
+  assert.deepEqual(release.editions, [], 'no independent longform editions approved');
+  assert.match(component, /getPublicCircuitStory\(circuitId\)/);
+  assert.match(component, /isCircuitEditionApproved\(circuitId\)/);
+  assert.match(component, /existing\?\.moments\.map/);
+  assert.match(component, /href="#circuit-moments"/);
+  assert.doesNotMatch(component, /previous\.description\[locale\]/);
+  assert.match(component, /noopener noreferrer/);
 });
