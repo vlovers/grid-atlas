@@ -14,7 +14,7 @@ test('all 33 target circuit identities have at least one new UK/EN reader chapte
    assert.match(chapter,/### EN — /,path+':'+id);
    assert.match(chapter,/### UK — /,path+':'+id);
    assert.match(chapter,/https:\/\//,path+':'+id);
-   assert.match(chapter,/Publication allowed:\*\* false/,path+':'+id);
+   assert.match(chapter,/(?:Publication allowed:\*\* false|Publication:\*\* blocked|Status:\*\* unreviewed; not approved for publication)/,path+':'+id);
    found.set(id,(found.get(id)??0)+1);
   }
  }
