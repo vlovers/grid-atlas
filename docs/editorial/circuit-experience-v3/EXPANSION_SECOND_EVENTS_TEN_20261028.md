@@ -166,13 +166,13 @@ Porto's 1958 victory belonged to Stirling Moss, but its final championship visit
 
 ## 10. reims (1961)
 
-### EN — Ferrari's first American winner
+### EN — A debut victory at Reims
 
 Giancarlo Baghetti won the 1961 French Grand Prix at Reims in a Ferrari. The victory came on his debut in a World Championship race, making it one of the most remarkable starts in Formula 1.
 
 The title here is deliberately about the debut, not nationality: Baghetti was Italian. Reims provides a story about an extraordinary first appearance, distinct from the Mercedes comeback of 1954.
 
-### UK — Перший американський переможець на Ferrari
+### UK — Перемога в дебютному Гран-прі
 
 Джанкарло Багетті виграв Гран-прі Франції 1961 року в Реймсі на Ferrari. Він переміг під час свого дебюту в гонці чемпіонату світу — один із найнезвичніших стартів кар'єри у Формулі-1.
 
