@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "lane": "research_only",
+  "publication_allowed": false,
+  "observed_on": "2026-10-28",
+  "entries": [
+    {
+      "candidate_id": "research-schumacher-portrait-2007",
+      "registry": "docs/media/cross-era-staging.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher.jpg",
+        "description_oldid": 990331871,
+        "sha1": "2e2f13a317874fe4aaee0b0190a4fd8432afa2ec",
+        "bytes": 215440,
+        "width": 861,
+        "height": 1158,
+        "mime": "image/jpeg",
+        "file_timestamp": "2008-04-24T19:13:09Z",
+        "creator": "Gunnar Richter Namenlos.net",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_links": []
+      },
+      "proposed": {
+        "alt": {
+          "en": "Michael Schumacher in a close portrait.",
+          "uk": "Міхаель Шумахер на портретному знімку."
+        },
+        "caption": {
+          "en": "Michael Schumacher, portrait dated 18 July 2007.",
+          "uk": "Міхаель Шумахер: портрет, датований 18 липня 2007 року."
+        },
+        "attribution": "Gunnar Richter Namenlos.net / Wikimedia Commons / CC BY-SA 3.0; source and modification notices require review"
+      },
+      "derivative_chain": "Own-work claim; source line mentions a second person; chain unresolved.",
+      "blockers": [
+        "Source names Daniel Milbord as well as creator Gunnar Richter. Resolve their roles; do not credit the uploader as photographer.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "previously_observed_not_rechecked",
+        "sha256": "6b0431b9d58148d4c15d6e1342aa206ec050a84967a203fdc4d5a0ee612aad5a",
+        "observed_on": "2026-10-23",
+        "evidence_url": "https://github.com/vlovers/grid-atlas/actions/runs/39994989972",
+        "current_attempt": "Original width does not match staged dimensions"
+      }
+    },
+    {
+      "candidate_id": "research-alonso-2024",
+      "registry": "docs/media/cross-era-staging.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Fernando_Alonso_(53838437751).jpg",
+        "description_oldid": 1157917780,
+        "sha1": "c7ddbbd82e80328c91631e43fcc9f0bc316e7895",
+        "bytes": 4329507,
+        "width": 4302,
+        "height": 2689,
+        "mime": "image/jpeg",
+        "file_timestamp": "2024-07-08T20:25:49Z",
+        "creator": "Peter Menzel",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_links": [
+          "https://www.flickr.com/photos/133535073@N08/53838437751/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Fernando Alonso in Aston Martin clothing.",
+          "uk": "Фернандо Алонсо в одязі Aston Martin."
+        },
+        "caption": {
+          "en": "Fernando Alonso in an Aston Martin photograph dated 5 July 2024; venue requires confirmation.",
+          "uk": "Фернандо Алонсо на знімку Aston Martin від 5 липня 2024 року; місце зйомки потребує підтвердження."
+        },
+        "attribution": "Peter Menzel / Wikimedia Commons / CC BY-SA 2.0; source and modification notices require review"
+      },
+      "derivative_chain": "Peter Menzel / pmenzel86 → Flickr 53838437751 → Commons; FlickreviewR noted on file page.",
+      "blockers": [
+        "Confirm subject, venue and Flickr rights; do not infer a race result.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "previously_observed_not_rechecked",
+        "sha256": "f08b0868a18207ca769328a8799c1e67c12227abf59d6e14b27aaf3691dc89a8",
+        "observed_on": "2026-10-23",
+        "evidence_url": "https://github.com/vlovers/grid-atlas/actions/runs/39994989972",
+        "current_attempt": "Original width does not match staged dimensions"
+      }
+    },
+    {
+      "candidate_id": "research-mclaren-mp44-2007",
+      "registry": "docs/media/cross-era-staging.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-4.jpg",
+        "description_oldid": 1248162600,
+        "sha1": "5f73fce72ec07ddaab187f07cbc90a7196a2c684",
+        "bytes": 1582072,
+        "width": 2848,
+        "height": 2136,
+        "mime": "image/jpeg",
+        "file_timestamp": "2007-08-28T08:06:46Z",
+        "creator": "John Chapman (Pyrope)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_links": []
+      },
+      "proposed": {
+        "alt": {
+          "en": "McLaren MP4/4 displayed inside a museum.",
+          "uk": "McLaren MP4/4 в експозиції музею."
+        },
+        "caption": {
+          "en": "McLaren MP4/4 in the Donington Grand Prix Collection, photographed on 22 August 2007. A museum view, not a 1988 race photograph.",
+          "uk": "McLaren MP4/4 у колекції Donington Grand Prix, 22 серпня 2007 року. Музейний знімок, а не фотографія гонки 1988 року."
+        },
+        "attribution": "John Chapman (Pyrope) / Wikimedia Commons / CC BY-SA 3.0; source and modification notices require review"
+      },
+      "derivative_chain": "John Chapman (Pyrope), own work; select CC BY-SA 3.0 from multiple offered licenses.",
+      "blockers": [
+        "Check museum photography conditions, visible sponsorship and car identification.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Original width does not match staged dimensions"
+      }
+    },
+    {
+      "candidate_id": "research-ferrari-f2004-2004",
+      "registry": "docs/media/cross-era-staging.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ferrari_F2004.jpg",
+        "description_oldid": 1082605957,
+        "sha1": "d6f0c2a0fd9a57d8bd3ad76d447507cc4df1736a",
+        "bytes": 1188730,
+        "width": 1536,
+        "height": 2048,
+        "mime": "image/jpeg",
+        "file_timestamp": "2024-06-25T12:29:55Z",
+        "creator": "storem",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_links": [
+          "https://www.flickr.com/photos/storem/107354968/",
+          "https://www.flickr.com/photos/storem/107354968/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Ferrari F2004 photographed from above at an angle.",
+          "uk": "Ferrari F2004 на знімку згори під кутом."
+        },
+        "caption": {
+          "en": "Ferrari F2004, photograph dated 27 September 2004. The source does not establish the venue or race.",
+          "uk": "Ferrari F2004: фотографія, датована 27 вересня 2004 року. Джерело не встановлює трасу чи гонку."
+        },
+        "attribution": "storem / Wikimedia Commons / CC BY-SA 2.0; source and modification notices require review"
+      },
+      "derivative_chain": "storem → Flickr 107354968 → Commons; file page records Flickr license review.",
+      "blockers": [
+        "Confirm car and capture context; do not assign a driver or Grand Prix.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Commons original request failed or redirected (HTTP 429, redirected=false)"
+      }
+    },
+    {
+      "candidate_id": "research-silverstone-2019",
+      "registry": "docs/media/cross-era-staging.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Silverstone_Racing_Circuit.jpg",
+        "description_oldid": 1042021018,
+        "sha1": "158ee3d1712131d8d8708972b76aecaac22b21cf",
+        "bytes": 917190,
+        "width": 4032,
+        "height": 3024,
+        "mime": "image/jpeg",
+        "file_timestamp": "2019-07-13T12:00:32Z",
+        "creator": "Harvey Milligan",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_links": []
+      },
+      "proposed": {
+        "alt": {
+          "en": "View of the Silverstone racing circuit.",
+          "uk": "Вигляд гоночної траси Сільверстоун."
+        },
+        "caption": {
+          "en": "Silverstone circuit, photographed on 15 May 2019. A venue view, not evidence of an earlier layout.",
+          "uk": "Траса Сільверстоун, 15 травня 2019 року. Вигляд автодрому не підтверджує його давніші конфігурації."
+        },
+        "attribution": "Harvey Milligan / Wikimedia Commons / CC BY-SA 4.0; source and modification notices require review"
+      },
+      "derivative_chain": "Harvey Milligan, own-work claim; no declared derivative in file page.",
+      "blockers": [
+        "Confirm location and viewpoint. Do not use as an historical layout diagram.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "ayrton-senna-commons-pilot",
+      "registry": "docs/media/candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Ayrton_Senna_1989_Belgian_GP_podium_(cropped).jpg",
+        "description_oldid": 1070636551,
+        "sha1": "e7afb6898774f3033d9eff3d1e949bb68cedc369",
+        "bytes": 82202,
+        "width": 744,
+        "height": 1079,
+        "mime": "image/jpeg",
+        "file_timestamp": "2024-12-14T14:37:01Z",
+        "creator": "madagascarica from Verneuil Grand, France",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_links": [
+          "https://www.flickr.com/photos/madagascarica/35116366790/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Ayrton Senna on the podium, wearing a cap and racing overalls.",
+          "uk": "Айртон Сенна на подіумі, у кепці та гоночному комбінезоні."
+        },
+        "caption": {
+          "en": "Ayrton Senna on the Belgian Grand Prix podium in 1989, in a later crop of the source photograph.",
+          "uk": "Айртон Сенна на подіумі Гран-прі Бельгії 1989 року; пізніша кадрована версія оригінального знімка."
+        },
+        "attribution": "madagascarica from Verneuil Grand, France / Wikimedia Commons / CC BY 2.0; source and modification notices require review"
+      },
+      "derivative_chain": "madagascarica → Flickr 35116366790 → full Commons image → cropped Commons file; crop history requires exact credit.",
+      "blockers": [
+        "Review original Flickr photo and all crop revisions; retain original creator and modification credit.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "juan-manuel-fangio-commons-pilot",
+      "registry": "docs/media/candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:J.M._Fangio_1957.jpg",
+        "description_oldid": 958088047,
+        "sha1": "905b65e3f6109645614325e1323d63dae7b7f277",
+        "bytes": 71371,
+        "width": 190,
+        "height": 352,
+        "mime": "image/jpeg",
+        "file_timestamp": "2013-11-01T03:41:51Z",
+        "creator": null,
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_links": []
+      },
+      "proposed": {
+        "alt": {
+          "en": "Black-and-white cropped portrait of Juan Manuel Fangio.",
+          "uk": "Кадрований чорно-білий портрет Хуана-Мануеля Фанхіо."
+        },
+        "caption": {
+          "en": "Juan Manuel Fangio, a crop associated by the source with the 1957 Argentine Grand Prix. Context and photographer require confirmation.",
+          "uk": "Хуан-Мануель Фанхіо: кадрований знімок, який джерело пов’язує з Гран-прі Аргентини 1957 року. Контекст і автор потребують підтвердження."
+        },
+        "attribution": "[photographer unresolved] / Wikimedia Commons / CC BY-SA 3.0; source and modification notices require review"
+      },
+      "derivative_chain": "1957ArgentineGP04.jpg → J.M. Fangio 1957.jpg crop; check original uploader/photographer authorization.",
+      "blockers": [
+        "Creator is unresolved in the existing candidate; parent credits Carlos Alberto Navarro. Confirm original release and crop chain. Low resolution unsuitable for hero.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "research-clark-action-1965",
+      "registry": "docs/media/batch-290-new-candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Clark_at_1965_Dutch_Grand_Prix.jpg",
+        "description_oldid": 861710533,
+        "sha1": "4f3c86d56e7bab2ba607f6858eaaf305bd4cc8c7",
+        "bytes": 1760939,
+        "width": 3648,
+        "height": 2406,
+        "mime": "image/jpeg",
+        "file_timestamp": "2017-12-22T15:25:14Z",
+        "creator": "Eric Koch for Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 917-9751",
+        "license": "CC BY-SA 3.0 nl",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+        "source_links": [
+          "http://proxy.handle.net/10648/aab4cc12-d0b4-102d-bcf8-003048976d84",
+          "http://proxy.handle.net/10648/aab4cc12-d0b4-102d-bcf8-003048976d84"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Jim Clark driving a Lotus on the Zandvoort circuit.",
+          "uk": "Джим Кларк за кермом Lotus на трасі Зандворт."
+        },
+        "caption": {
+          "en": "Jim Clark in a Lotus at the Dutch Grand Prix on 18 July 1965, photographed by Eric Koch / Anefo.",
+          "uk": "Джим Кларк за кермом Lotus на Гран-прі Нідерландів 18 липня 1965 року; фото Еріка Коха / Anefo."
+        },
+        "attribution": "Eric Koch for Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 917-9751 / Wikimedia Commons / CC BY-SA 3.0 nl; source and modification notices require review"
+      },
+      "derivative_chain": "Eric Koch / Anefo → Nationaal Archief handle aab4cc12-d0b4-102d-bcf8-003048976d84 → Commons higher-resolution revision.",
+      "blockers": [
+        "Check Nationaal Archief item 917-9751 and exact Netherlands license; caption does not claim a finishing position.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "research-lauda-pitwall-1976",
+      "registry": "docs/media/batch-290-new-candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Niki_Lauda_1976_Long_Beach.jpg",
+        "description_oldid": 899547791,
+        "sha1": "6649eef662f4b1373c23d6f1e312fd2756ab38e0",
+        "bytes": 678845,
+        "width": 1788,
+        "height": 1200,
+        "mime": "image/jpeg",
+        "file_timestamp": "2018-10-13T08:54:55Z",
+        "creator": "Christian Sinclair",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_links": [
+          "https://www.flickr.com/photos/64636480@N02/6364209819/in/album-72157628053153145/",
+          "https://www.flickr.com/photos/64636480@N02/6364209819/in/album-72157628053153145/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Niki Lauda seated beside the Ferrari pitwall.",
+          "uk": "Нікі Лауда сидить біля піт-воллу Ferrari."
+        },
+        "caption": {
+          "en": "The source identifies Niki Lauda at the Ferrari pitwall in Long Beach in 1976. Its 2011 digital timestamp is not the race date.",
+          "uk": "Джерело визначає Нікі Лауду біля піт-воллу Ferrari в Лонг-Біч 1976 року. Цифрова дата 2011 року не є датою гонки."
+        },
+        "attribution": "Christian Sinclair / Wikimedia Commons / CC BY 2.0; source and modification notices require review"
+      },
+      "derivative_chain": "Christian Sinclair → Flickr 6364209819 → Commons; later digital capture date requires explanation.",
+      "blockers": [
+        "Resolve 1976 description versus 2011 scan/EXIF date before approval. Confirm original photographer and Flickr chain.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "research-prost-ferrari-1991",
+      "registry": "docs/media/batch-290-new-candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:AlainProst_Ferrari_1991.jpg",
+        "description_oldid": 832228570,
+        "sha1": "ebf820b1f89d661518579ad952849ed381bc2d31",
+        "bytes": 2407806,
+        "width": 1250,
+        "height": 1875,
+        "mime": "image/jpeg",
+        "file_timestamp": "2011-10-15T19:43:42Z",
+        "creator": "StuSeeger",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_links": [
+          "https://www.flickr.com/photos/stuseeger/",
+          "https://www.flickr.com/photos/stuseeger/216866097/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Alain Prost driving a red Ferrari on a street circuit.",
+          "uk": "Ален Прост за кермом червоної Ferrari на вуличній трасі."
+        },
+        "caption": {
+          "en": "Alain Prost in a Ferrari at the 1991 United States Grand Prix in Phoenix; the source identifies the first lap.",
+          "uk": "Ален Прост за кермом Ferrari на Гран-прі США 1991 року у Фініксі; джерело вказує на перше коло."
+        },
+        "attribution": "StuSeeger / Wikimedia Commons / CC BY 2.0; source and modification notices require review"
+      },
+      "derivative_chain": "StuSeeger / Stuart Seeger → Flickr 216866097 → Commons → 2011 color correction by Glumada; preserve modification chain.",
+      "blockers": [
+        "File permission text says BY-SA 2.0, but license template/Flickr review say BY 2.0. Resolve discrepancy; tobacco logos require intended-territory review.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "research-lotus72-museum-2007",
+      "registry": "docs/media/batch-290-new-candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Lotus_72_JPS.jpg",
+        "description_oldid": 1248469624,
+        "sha1": "dd69c4755b3bd1ee3e96506b36a5b70572f751fb",
+        "bytes": 970970,
+        "width": 2589,
+        "height": 2013,
+        "mime": "image/jpeg",
+        "file_timestamp": "2007-09-05T19:12:59Z",
+        "creator": "John Chapman (Pyrope)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_links": []
+      },
+      "proposed": {
+        "alt": {
+          "en": "Black and gold Lotus 72 displayed inside a museum.",
+          "uk": "Чорно-золотий Lotus 72 в експозиції музею."
+        },
+        "caption": {
+          "en": "Lotus 72E in the Donington Grand Prix Collection, photographed on 22 August 2007. A museum photograph, not a period race image.",
+          "uk": "Lotus 72E у колекції Donington Grand Prix, 22 серпня 2007 року. Музейний знімок, а не фотографія тогочасної гонки."
+        },
+        "attribution": "John Chapman (Pyrope) / Wikimedia Commons / CC BY-SA 3.0; source and modification notices require review"
+      },
+      "derivative_chain": "John Chapman (Pyrope), own work; CC BY-SA 3.0 offered alongside other licenses.",
+      "blockers": [
+        "Confirm car/chassis identity, museum conditions and visible tobacco branding. Canonical Lotus constructor, not Lotus F1 or Lotus Racing.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    },
+    {
+      "candidate_id": "research-monaco-sainte-devote-2022",
+      "registry": "docs/media/batch-290-new-candidates.json",
+      "source_observation": {
+        "observed_on": "2026-10-28",
+        "file_page_url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg",
+        "description_oldid": 1165226849,
+        "sha1": "d8b300292c1ee04e13850e19ff56eff1e1ea7eb8",
+        "bytes": 11000614,
+        "width": 8000,
+        "height": 6000,
+        "mime": "image/jpeg",
+        "file_timestamp": "2025-09-25T00:35:04Z",
+        "creator": "crash71100",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_links": [
+          "https://www.flickr.com/photos/152930510@N02/54763577980/"
+        ]
+      },
+      "proposed": {
+        "alt": {
+          "en": "Street and barriers at the Sainte-Dévote corner in Monaco.",
+          "uk": "Вулиця й огорожі біля повороту Сент-Девот у Монако."
+        },
+        "caption": {
+          "en": "Sainte-Dévote corner in Monaco, photographed on 23 May 2022. A modern venue view, not an historical layout record.",
+          "uk": "Поворот Сент-Девот у Монако, 23 травня 2022 року. Сучасний вигляд місця не підтверджує історичну конфігурацію траси."
+        },
+        "attribution": "crash71100 / Wikimedia Commons / CC0; source and modification notices require review"
+      },
+      "derivative_chain": "crash71100 → Flickr 54763577980 → Commons; file page records CC0 Flickr review.",
+      "blockers": [
+        "Confirm viewpoint and Flickr CC0 dedication. Original is 8000×6000; prepare and review an efficient delivery derivative before publication.",
+        "Independent human review of identity, license chain, local-use/personality/trademark restrictions and both locale texts on the exact publication fingerprint is missing.",
+        "Delivery derivative, local-byte verification, modification notice and final attribution must be reviewed before publication."
+      ],
+      "original_inspection": null,
+      "byte_verification": {
+        "status": "original_not_verified",
+        "sha256": null,
+        "observed_on": null,
+        "evidence_url": null,
+        "current_attempt": "Not attempted after Commons rate limit; no automatic retry"
+      }
+    }
+  ]
+}

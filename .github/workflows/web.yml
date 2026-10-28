@@ -67,6 +67,8 @@ jobs:
         run: pnpm build
       - name: Test desktop and mobile archive flows over HTTP and PostgreSQL
         run: pnpm exec playwright test
+      - name: Test local media desk and gallery in Chromium and WebKit
+        run: pnpm exec playwright test --config apps/web/src/components/media/preview/playwright.config.ts
       - name: Upload browser failure evidence
         if: failure()
         uses: actions/upload-artifact@v4
