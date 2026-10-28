@@ -6,25 +6,25 @@
 
 - All 73 entries have UK/EN titles and summaries, an HTTPS source and a circuit identifier (enforced by automated tests).
 - **53** cite pinned F1DB v2026.17.0 `race-results.yml` files. These are results evidence, **not automatically evidence for accidents, weather, qualifying context, engineering claims or motives**.
-- **20** link to Formula 1 pages, which still require claim-by-claim checking and source-locator review.
+- **20** link to Formula 1 pages: **5 race classifications, 8 circuit guides and 7 historical articles**. These are distinct evidence formats, not interchangeable proof of every claim. (The Melbourne 1996 summary now links to a relevant F1 retrospective instead of the 2026 event page.)
 - **8** stories have multi-year labels: `interlagos` (1973–1975), `montreal` (1978 / 1999), `zandvoort` (1948 / 1952), `imola` (1980 / 1994), `spielberg` (1969–1997), `paul-ricard` (1969–1971), `mexico-city` (1959 / 1963), `magny-cours` (1991–2008). The interface preserves those labels and does not invent a single race link.
 - No new historical claims, manuscript approvals, photo rights, or deployment claims are made in this batch.
 
-## Priority manual source-sufficiency review
+## Seven scoped contextual references — not independent approvals
 
-These seven **illustrative, non-exhaustive** cases contain contextual claims that should not be considered independently established by a linked race-results file alone:
+These seven existing public summaries previously pointed only to F1DB race-result files. An additional Formula 1 record or retrospective is now available beside each source in the UK/EN circuit UI. **This is source discovery and claim-scope triage, not independent fact verification or an authorization to release candidate dossiers.** The original F1DB links remain available.
 
-| Circuit | Context to check against an appropriate source |
-| --- | --- |
-| `estoril` | Rain and conditions surrounding Senna’s 1985 victory |
-| `marina-bay` | Night-racing context and the later controversy surrounding 2008 |
-| `adelaide` | Mansell’s tyre failure and the 1986 title-deciding sequence |
-| `zolder` | Villeneuve’s fatal qualifying accident in 1982 |
-| `aida` | 1994 pole/start details and qualifying comparison |
-| `rouen` | Circumstances surrounding the 1968 fatal accident |
-| `montjuic` | 1975 race stoppage and fatal accident context |
+| Circuit | Supplemental source | Narrow scope supported | Still to check |
+| --- | --- | --- | --- |
+| `estoril` | [F1 retrospective on Senna’s first win](https://www.formula1.com/en/latest/article/he-obliterated-the-opposition-remembering-sennas-first-f1-win.1nwtFllIepudRwA7iesUaj) | 1985 rain and Senna’s maiden victory | Individual claims and UK wording against original account |
+| `marina-bay` | [F1 Singapore retrospective](https://www.formula1.com/en/latest/article/moments-in-time-the-singapore-grand-prix.EkbLahNFlbNLF23He5jwU) | First night GP and subsequent 2008 crash investigation | Precise attribution, investigation chronology and sensitive wording |
+| `adelaide` | [F1 reliability/title retrospective](https://www.formula1.com/en/latest/article/from-mansells-tyre-failure-to-leclercs-loss-of-power-8-reliability-moments-that-proved-pivotal-in-a-title-battle.6etiGRgHPVuAjoWfKLL4Cx.6etiGRgHPVuAjoWfKLL4Cx) | Mansell’s tyre failure and Prost’s 1986 title | Detailed sequence, championship scoring and translation |
+| `zolder` | [F1 Villeneuve retrospective](https://www.formula1.com/en/latest/article/5-reasons-f1-fans-are-still-in-awe-of-the-legendary-gilles-villeneuve.6Dvc1Wh0NMPqZNqBIwIZHU) | Fatal 1982 qualifying accident | Race winner against results, exact accident description, sensitive language |
+| `aida` | [F1 official 1994 qualifying](https://www.formula1.com/en/results/1994/races/606/pacific/qualifying) | Senna P1 / Schumacher P2 on the grid | Start collision and finishing gaps need separate race/incident evidence |
+| `rouen` | [F1 history of French GP circuits, Rouen section](https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo) | Schlesser’s death in 1968 | Narrative’s mention of Revs Institute, accident specifics and UK parity |
+| `montjuic` | [F1 history of Spanish GP venues, Montjuïc section](https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF) | Fatal 1975 accident and end of F1 races there | Stoppage details, casualty wording and original classification |
 
-**Review procedure:** open the cited primary or official record; list each independently testable claim in EN and UK; verify the specific year, driver, circuit and event; attach an exact source locator (not only a homepage); obtain a separate suitable source for details not evidenced by race results; check translation parity and sensitivity of fatal-incident language; record an independent human decision in the existing review workflow. Until then, these are existing public summaries with explicit provenance limits, not independently approved research.
+**Review procedure:** independently open each original record and the supplementary source; split the EN and UK summaries into individually testable claims; record exact section/locator and corroboration status for each; seek further independent evidence for anything outside the cited scope; compare translations and handle fatal incidents sensitively; only a separate authorized human editor may record a review decision in the existing workflow. No new human signatures, approved revisions, photos, or external deployment result from this batch.
 
 ## Full 73-story evidence-format inventory
 
@@ -32,26 +32,26 @@ The classification describes the **link format**, not its accuracy or completene
 
 | Circuit ID | Displayed year | Linked evidence type | Review queue | Link |
 | --- | --- | --- | --- | --- |
-| `interlagos` | 1973–1975 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/results/1973/races/315/brazil/race-result) |
-| `montreal` | 1978 / 1999 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/canada-circuit-de-gilles-villeneuve-montreal.3ootdKogPeMEGqcNpleNrN) |
-| `hungaroring` | 1986 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/hungary-hungaroring-budapest.3Sz0BTKiIf7ov9bnezZ5dU) |
-| `zandvoort` | 1948 / 1952 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/results/1952/races/115/netherlands/race-result) |
-| `melbourne` | 1996 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/racing/2026/australia) |
-| `bahrain` | 2004 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/bahrain-international-circuit.2CaIdaOTCgQ3Yfnb37NmSS) |
-| `shanghai` | 2004 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/china-shanghai-international-circuit-shanghai.7ESK3ZQ5DHqihx3DpPZKWL) |
-| `sepang` | 1999 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/1999-oral-history-part-3-stewart-spring-a-surprise-schumacher-returns-and.6N2mWADjGWFHQHB75kl23B) |
-| `imola` | 1980 / 1994 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD) |
-| `spielberg` | 1969–1997 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/austria-red-bull-ring-spielberg.1s7EC2bGta7o1thZkVPbbq) |
-| `catalunya` | 1991 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8) |
-| `paul-ricard` | 1969–1971 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt) |
-| `mexico-city` | 1959 / 1963 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM) |
-| `hockenheimring` | 1970 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/vital-statistics-the-german-grand-prix.mEQsGRNBOiiPrIMeqT0Gm.mEQsGRNBOiiPrIMeqT0Gm) |
-| `nurburgring` | 1957 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd.2FaVX5yf48IUr6cLe1Lnyd) |
-| `magny-cours` | 1991–2008 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo) |
-| `watkins-glen` | 1961 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28) |
-| `buenos-aires` | 1955 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/results/1955/races/135/argentina/race-result) |
-| `kyalami` | 1967 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/results/1967/races/244/south-africa/race-result) |
-| `indianapolis` | 2005 | Formula 1 page | Standard claim review | [Source](https://www.formula1.com/en/results/2005/races/779/united-states/race-result) |
+| `interlagos` | 1973–1975 | F1 race classification | Standard claim review | [Source](https://www.formula1.com/en/results/1973/races/315/brazil/race-result) |
+| `montreal` | 1978 / 1999 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/canada-circuit-de-gilles-villeneuve-montreal.3ootdKogPeMEGqcNpleNrN) |
+| `hungaroring` | 1986 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/hungary-hungaroring-budapest.3Sz0BTKiIf7ov9bnezZ5dU) |
+| `zandvoort` | 1948 / 1952 | F1 race classification | Standard claim review | [Source](https://www.formula1.com/en/results/1952/races/115/netherlands/race-result) |
+| `melbourne` | 1996 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk) |
+| `bahrain` | 2004 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/bahrain-international-circuit.2CaIdaOTCgQ3Yfnb37NmSS) |
+| `shanghai` | 2004 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/china-shanghai-international-circuit-shanghai.7ESK3ZQ5DHqihx3DpPZKWL) |
+| `sepang` | 1999 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/1999-oral-history-part-3-stewart-spring-a-surprise-schumacher-returns-and.6N2mWADjGWFHQHB75kl23B) |
+| `imola` | 1980 / 1994 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD) |
+| `spielberg` | 1969–1997 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/austria-red-bull-ring-spielberg.1s7EC2bGta7o1thZkVPbbq) |
+| `catalunya` | 1991 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8) |
+| `paul-ricard` | 1969–1971 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt) |
+| `mexico-city` | 1959 / 1963 | F1 circuit guide | Standard claim review | [Source](https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM) |
+| `hockenheimring` | 1970 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/vital-statistics-the-german-grand-prix.mEQsGRNBOiiPrIMeqT0Gm.mEQsGRNBOiiPrIMeqT0Gm) |
+| `nurburgring` | 1957 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd.2FaVX5yf48IUr6cLe1Lnyd) |
+| `magny-cours` | 1991–2008 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo) |
+| `watkins-glen` | 1961 | F1 historical article | Standard claim review | [Source](https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28) |
+| `buenos-aires` | 1955 | F1 race classification | Standard claim review | [Source](https://www.formula1.com/en/results/1955/races/135/argentina/race-result) |
+| `kyalami` | 1967 | F1 race classification | Standard claim review | [Source](https://www.formula1.com/en/results/1967/races/244/south-africa/race-result) |
+| `indianapolis` | 2005 | F1 race classification | Standard claim review | [Source](https://www.formula1.com/en/results/2005/races/779/united-states/race-result) |
 | `ain-diab` | 1958 | F1DB race results | Standard claim review | [Source](https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/11-morocco/race-results.yml) |
 | `aintree` | 1957 | F1DB race results | Standard claim review | [Source](https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/05-great-britain/race-results.yml) |
 | `avus` | 1959 | F1DB race results | Standard claim review | [Source](https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/06-germany/race-results.yml) |
