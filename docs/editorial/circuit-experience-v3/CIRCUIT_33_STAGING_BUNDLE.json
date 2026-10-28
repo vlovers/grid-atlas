@@ -1,0 +1,1158 @@
+{
+  "schema_version": 1,
+  "kind": "editorial_staging_only",
+  "description": "Private editorial staging manifest; not imported by website and not a publication or fact-check approval.",
+  "pinned_archive": "v2026.17.0",
+  "summary": {
+    "circuits": 33,
+    "dated_events": 76,
+    "second_angles": 10,
+    "approved_articles": 0
+  },
+  "circuits": [
+    {
+      "circuit_id": "aida",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1994,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1995,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "ain-diab",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1958,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "The title decided beyond the winner",
+            "uk": "Титул, який не дістався переможцю"
+          },
+          "body": {
+            "en": "Moss won the final race. Hawthorn finished second and became world champion. Those statements sound contradictory only if a reader assumes that the last race decides everything on its own. In 1958, the championship counted results across the season under its own scoring rules.\n\nThe most interesting follow-up is not another list of finishing positions. It is a linked journey from Morocco back to Portugal, where a sporting decision mattered to the championship. That link must be checked against the 1958 regulations and contemporary reports before publication.",
+            "uk": "Мосс виграв останню гонку. Готорн фінішував другим і став чемпіоном світу. У цьому немає суперечності, якщо пам’ятати: чемпіонство визначає не один фінал, а результати всього сезону за тодішніми правилами.\n\nНайцікавіше продовження — не нова таблиця фінішерів, а перехід із Марокко до Португалії, де суддівське рішення вплинуло на боротьбу за титул. Цей зв’язок потрібно окремо звірити з регламентом 1958 року та історичними свідченнями."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "aintree",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1955,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1957,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1959,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "anderstorp",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1973,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1976,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1977,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1978,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "avus",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1959,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "An oval-like circuit in a championship of road courses",
+            "uk": "Траса, зовсім не схожа на звичний автодром"
+          },
+          "body": {
+            "en": "The German Grand Prix did not always belong to the Nürburgring. In 1959 it moved to AVUS in Berlin, where long straights and an extraordinary banked turn produced a circuit unlike most championship venues.\n\nThere is more to tell here than Tony Brooks's victory. Why did Formula 1 use this layout, and why was the event run in heats? Those are the questions that make the race memorable. They require an authoritative circuit plan and original event regulations, not guesses from a results table.",
+            "uk": "Гран-прі Німеччини не завжди проводили на Нюрбургринзі. У 1959 році гонка переїхала на берлінську AVUS, де довгі прямі й незвичний віраж із нахилом створювали зовсім інший характер траси.\n\nТут є про що говорити, окрім перемоги Тоні Брукса. Чому Формула-1 приїхала саме сюди? Чому гонку проводили окремими заїздами? Щоб відповісти, потрібні історична схема й регламент того етапу — не здогадки на основі протоколу."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "bremgarten",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1952,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1954,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "short_story_source": "apps/web/src/components/editorial/circuit-extra-stories.json",
+      "events": [
+        {
+          "year": 1953,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1955,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "bugatti",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1967,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "Le Mans is not just one circuit",
+            "uk": "Ле-Ман — це не одна траса"
+          },
+          "body": {
+            "en": "The 1967 French Grand Prix took place at the Bugatti circuit, not on the full road course familiar from the 24 Hours of Le Mans. That difference can disappear when an encyclopedia uses only the city name.\n\nJack Brabham won the race. But a better reader experience should let someone compare the two layouts visually, with clear dates and licensed maps. Otherwise an accurate race result can still create the wrong mental picture of where the cars actually drove.",
+            "uk": "Гран-прі Франції 1967 року проводили на трасі Bugatti, а не на повному маршруті знаменитої добової гонки в Ле-Мані. Цю різницю легко загубити, якщо енциклопедія показує лише назву міста.\n\nДжек Бребем виграв гонку. Але читачеві потрібна ще й можливість порівняти конфігурації на схемі з точними датами та дозволеними до використання зображеннями. Інакше навіть правильний результат створить хибне уявлення про трасу."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1981,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1982,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_1_SIX_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1965,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1969,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "dallas",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1984,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+          "source_tier": "source_gap",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "The race against the surface",
+            "uk": "Гонка проти асфальту"
+          },
+          "body": {
+            "en": "Dallas hosted Formula 1 only once, in 1984. The intense heat and failing road surface became central to the weekend. Keke Rosberg won; Nigel Mansell's attempt to push his stopped car supplied one of the event's most enduring images.\n\nA useful second chapter would reconstruct the timetable: practice, track repairs, the cancelled warm-up and the Grand Prix. Only contemporary reporting can establish the precise order and causes. The result sheet confirms the finishing order, not why the asphalt came apart.",
+            "uk": "Даллас приймав Формулу-1 лише один раз — у 1984 році. Спека й руйнування покриття стали головними темами вікенду. Кеке Росберг переміг, а спроба Найджела Менселла дотолкати зупинений болід залишила один із найвідоміших кадрів гонки.\n\nНаступний розділ має відтворити хронологію: тренування, ремонт траси, скасування розминки та сам Гран-прі. Точний порядок і причини можна встановити лише за тодішніми репортажами. Протокол фінішу цього не пояснить."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "dijon",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1979,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_CONTEXTUAL_HISTORY_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1981,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "east-london",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1962,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1965,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1988,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1989,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "jarama",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1976,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1981,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "jerez",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1986,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1997,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "madring",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 2026,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "A new venue must be documented as a new venue",
+            "uk": "Нову трасу потрібно показати без вигаданого минулого"
+          },
+          "body": {
+            "en": "Madrid and Barcelona are distinct venues. A reader arriving from the history of the Spanish Grand Prix should never be shown Barcelona's old race anecdotes as if they happened at Madring.\n\nFor the 2026 race, a genuine chapter needs the final official classification, the event date and a source-confirmed track configuration. Until these are independently reconciled with the pinned release, the safe editorial choice is to explain the venue transition rather than invent a dramatic opening race.",
+            "uk": "Мадрид і Барселона — різні місця. Людина, яка переходить з історії Гран-прі Іспанії, не повинна побачити барселонські епізоди так, ніби вони трапилися на Madring.\n\nДля повноцінного розділу про гонку 2026 року потрібні офіційна класифікація, дата проведення й підтверджена конфігурація. Поки ці відомості не звірені з архівом, краще чесно пояснити зміну місця проведення, а не вигадувати драматичний дебют."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "monaco",
+      "short_story_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
+      "events": [
+        {
+          "year": 1961,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1971,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1973,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1982,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1984,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1996,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2004,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2011,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2018,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "monsanto",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1959,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "When a city park hosted the world championship",
+            "uk": "Коли міський парк прийняв чемпіонат світу"
+          },
+          "body": {
+            "en": "Stirling Moss won the 1959 Portuguese Grand Prix at Monsanto in Lisbon. For modern readers, the surprising part is often the location: a park-road route rather than a purpose-built facility.\n\nA strong visual story could pair a historical diagram with an ordinary view of the park — but only if the diagram's licensing and period are known. The article should help readers understand the kind of roads the drivers used, without attaching unsupported corner names or modern safety features.",
+            "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1959 року на трасі Монсанту в Лісабоні. Для сучасного читача найбільше дивує саме місце: дороги парку, а не звичний спеціальний автодром.\n\nВдала візуальна історія могла б поєднати історичну схему зі звичайним виглядом парку — але лише після перевірки ліцензії й потрібної епохи. Текст має показати, якими дорогами їхали пілоти, не вигадуючи назв поворотів чи сучасних зон безпеки."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1968,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1970,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "montjuic",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1973,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1975,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "mosport",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1967,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1973,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "nivelles",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1972,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1974,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "pedralbes",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1951,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_2_FIVE_LONGFORM_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1954,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "pescara",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1957,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_TEN_BILINGUAL_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "One lap that felt like a journey",
+            "uk": "Одне коло завдовжки з подорож"
+          },
+          "body": {
+            "en": "The Pescara circuit covered roughly 25 kilometres per lap. In 1957, Stirling Moss won the only Formula 1 World Championship race held there. The extraordinary distance is the key to understanding why this venue feels so unlike today's tracks.\n\nDo not turn that record into invented tales of bravery. Let the real geography do the work: a route between towns, long stretches of public road and a lap so long that watching one car return would have taken time. Any exact route illustration must match the 1957 configuration.",
+            "uk": "Коло Пескари мало приблизно 25 кілометрів. У 1957 році Стірлінг Мосс виграв єдину гонку чемпіонату світу Формули-1 на цій трасі. Саме відстань пояснює, чому це місце так відрізняється від сучасних автодромів.\n\nНе потрібно вигадувати героїчні історії. Достатньо справжньої географії: маршрут між населеними пунктами, довгі ділянки звичайних доріг і коло, після якого повернення машини доводилося чекати. Точна схема має відповідати конфігурації 1957 року."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "porto",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1958,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1960,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "reims",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1953,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1954,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1961,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SECOND_EVENTS_TEN_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "riverside",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1960,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "One American Grand Prix, one California chapter",
+            "uk": "Один Гран-прі США — одна каліфорнійська сторінка"
+          },
+          "body": {
+            "en": "Riverside's 1960 Grand Prix was its single Formula 1 World Championship appearance. Stirling Moss won. The American championship race would move again, leaving Riverside as a short, distinctive stop rather than a long-running home.\n\nThat brevity can itself be the story. A site could show a timeline of United States Grand Prix host venues with Riverside highlighted, linking to other locations instead of inventing five separate Riverside races. A genuine geographic comparison needs verified venue identities and dates.",
+            "uk": "Гран-прі США 1960 року став єдиним чемпіонатним етапом Формули-1 у Ріверсайді. Переміг Стірлінг Мосс. Згодом американська гонка знову змінила місце, залишивши Ріверсайд короткою, але помітною сторінкою історії.\n\nСаме ця короткочасність і є сюжетом. На сайті можна показати зміну міст-господарів Гран-прі США й виділити Ріверсайд, замість вигадувати п’ять різних гонок на одній трасі. Для такої карти потрібні перевірені назви місць і дати."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "rouen",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1962,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1964,
+          "draft_path": "docs/editorial/circuit-experience-v3/EIGHT_UNDERREPRESENTED_CIRCUIT_EVENTS_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1968,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "sebring",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1959,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "Before McLaren became a team",
+            "uk": "До того, як McLaren стала командою"
+          },
+          "body": {
+            "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring while driving for Cooper. The familiar name on today's Formula 1 grid was then the name of a young driver, not yet the team he would later establish.\n\nThat contrast invites a genuinely human story: what did the sport look like before the names we know became institutions? The Sebring result is a starting point, and a separately sourced biography should connect it to the later constructor without implying the McLaren team won this race.",
+            "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу за кермом Cooper. Відома нині назва тоді означала молодого гонщика, а не команду, яку він створить пізніше.\n\nЦе початок людської історії: якою була Формула-1 до того, як знайомі нам імена стали великими командами? Результат у Себрингу — лише перший крок. Подальший шлях треба пояснювати за біографічними джерелами, не створюючи враження, ніби команда McLaren виграла ту гонку."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "short_story_source": "apps/web/src/components/editorial/circuit-history-stories.tsx",
+      "events": [
+        {
+          "year": 1961,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1970,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_MONACO_SPA_MOROCCO_SIX_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1992,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1998,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2000,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2004,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2009,
+          "draft_path": "docs/editorial/circuit-experience-v3/FOUR_MORE_DISTINCT_RACES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2019,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2021,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 2022,
+          "draft_path": "docs/editorial/circuit-experience-v3/MONACO_SPA_TEN_ADDITIONAL_EPISODES_20261028.md",
+          "source_tier": "official_result_index_requires_event_research",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "zeltweg",
+      "short_story_source": "apps/web/src/components/editorial/circuit-final33-stories.json",
+      "events": [
+        {
+          "year": 1964,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [
+        {
+          "relation": "same_event",
+          "source_chapter": "docs/editorial/circuit-experience-v3/TEN_SINGLE_EVENT_SECOND_ANGLES_20261028.md",
+          "title": {
+            "en": "One win, a very different Austrian venue",
+            "uk": "Одна перемога на зовсім іншій австрійській трасі"
+          },
+          "body": {
+            "en": "Lorenzo Bandini took his only World Championship Grand Prix victory at Zeltweg in 1964. The circuit was laid out on an airfield. It was not the permanent venue at Spielberg that fans now associate with the Austrian Grand Prix.\n\nA strong follow-up would show the two Austrian locations on a map and explain their different histories. It should not reuse a modern Spielberg corner guide as if Bandini drove through those turns. The distinction is simple, useful and historically important.",
+            "uk": "Лоренцо Бандіні здобув свою єдину перемогу в чемпіонатному Гран-прі на трасі Цельтвег у 1964 році. Маршрут проклали на аеродромі. Це був не постійний автодром у Шпільберзі, з яким сьогодні пов'язують австрійський етап.\n\nХороше продовження — показати дві австрійські локації на карті й пояснити їхню різну історію. Не можна переносити сучасний довідник поворотів Шпільберга на гонку Бандіні. Різниця проста, корисна й історично важлива."
+          },
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    },
+    {
+      "circuit_id": "zolder",
+      "short_story_source": "apps/web/src/components/editorial/circuit-next20-stories.json",
+      "events": [
+        {
+          "year": 1981,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_SEVEN_VERIFIED_RACE_STORIES_20261028.md",
+          "source_tier": "official_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        },
+        {
+          "year": 1982,
+          "draft_path": "docs/editorial/circuit-experience-v3/EXPANSION_FINAL_THIRTEEN_CHAPTERS_20261028.md",
+          "source_tier": "pinned_archive_result_link",
+          "review_status": "unreviewed",
+          "publication_allowed": false
+        }
+      ],
+      "secondary_angles": [],
+      "editorial_gate": {
+        "fact_check": false,
+        "uk_en_edit": false,
+        "historical_layout": false,
+        "media_rights": false,
+        "publish": false
+      }
+    }
+  ]
+}
