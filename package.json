@@ -22,7 +22,9 @@
     "audit:editorial:corroboration": "node scripts/editorial-content-coverage.mjs --require-corroboration",
     "audit:editorial:narratives": "node scripts/editorial-narrative-audit.mjs",
     "audit:editorial:queue": "node scripts/editorial-corroboration-queue.mjs",
-    "audit:editorial:provenance": "node scripts/editorial-provenance-audit.mjs --summary"
+    "audit:editorial:provenance": "node scripts/editorial-provenance-audit.mjs --summary",
+    "review:circuits": "node scripts/export-circuit-expansion-review.mjs --format=json",
+    "review:circuits:html": "node scripts/export-circuit-expansion-review.mjs --format=html"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
