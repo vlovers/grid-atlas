@@ -36,7 +36,10 @@ test('risk-ranked circuit index and source links are accessible and bounded', ()
   assert.match(html, /@media\(max-width:720px\)/);
   assert.match(html, /@media print/);
   assert.match(html, /:focus-visible/);
-  assert.equal((html.match(/<a href="#circuit-/g) ?? []).length, 33);
+  const circuitIndex = html.match(/<nav aria-label="Circuit review index" id="circuit-index">([\s\S]*?)<\/nav>/)?.[1];
+  assert.ok(circuitIndex);
+  assert.equal((circuitIndex.match(/<a href="#circuit-/g) ?? []).length, 33);
+  assert.equal((html.match(/class="back"><a href="#circuit-index"/g) ?? []).length, 165);
   assert.equal((html.match(/rel="noopener noreferrer"/g) ?? []).length, 177);
   const headings = [...html.matchAll(/<section class="circuit" id="circuit-([a-z0-9-]+)"/g)]
     .map(match => match[1]);
