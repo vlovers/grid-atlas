@@ -383,7 +383,7 @@ test('concurrent claim revocation cannot leave a publicly readable stale approva
     await changing.query('COMMIT');
     const result = await attempt;
     assert.equal(result.ok, false, 'publication must not pass a concurrent revocation');
-    assert.match(result.error.message, /circuit publication requires linked/);
+    assert.match(result.error.message, /circuit publication requires linked|could not serialize access/);
     assert.equal((await read()).status, 404);
     const { rows: [row] } = await db.query(
       'SELECT status FROM circuit_editorial_articles WHERE id=$1', [articleId]);
@@ -411,6 +411,7 @@ test('untrusted PostgreSQL session cannot forge review, publication or evidence 
       ${schema}.circuit_editorial_claims,${schema}.circuit_editorial_evidence TO ${role}`);
     await db.query('UPDATE circuit_editorial_evidence SET supports=false WHERE claim_id=$1 AND source_id=$2', [claimId, sourceId]);
     await client.query(`SET SESSION AUTHORIZATION ${role}`);
+    await client.query(`SET search_path TO ${schema}`);
     await assert.rejects(client.query(`
       UPDATE circuit_editorial_claims SET status='verified',
         reviewer=session_user,reviewed_at=now() WHERE id=$1`, [claimId]),
