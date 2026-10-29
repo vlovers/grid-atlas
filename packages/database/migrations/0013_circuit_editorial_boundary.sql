@@ -70,7 +70,10 @@ BEGIN
       NEW.review_method, NEW.review_revision_sha256)
      IS DISTINCT FROM
      (OLD.locale, OLD.slug, OLD.title, OLD.body_markdown, OLD.author,
-      OLD.review_method, OLD.review_revision_sha256) THEN
+      OLD.review_method, OLD.review_revision_sha256)
+     OR (OLD.status = 'published' AND
+       (NEW.reviewer, NEW.reviewed_at, NEW.published_at)
+       IS DISTINCT FROM (OLD.reviewer, OLD.reviewed_at, OLD.published_at)) THEN
     NEW.status := 'draft';
     NEW.reviewer := NULL;
     NEW.reviewed_at := NULL;

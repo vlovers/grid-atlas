@@ -30,6 +30,8 @@ test('approval cannot be created by AI, self-review or unsupported claims', () =
   assert.match(migration, /circuit_source_invalidate/);
   assert.match(migration, /circuit_evidence_invalidate/);
   assert.match(migration, /circuit_links_invalidate/);
+  assert.match(migration, /OLD.status = 'published'/);
+  assert.match(migration, /NEW.reviewer, NEW.reviewed_at, NEW.published_at/);
 });
 
 test('public endpoint is off by default, read-only and enforces structural evidence gate', () => {
@@ -40,6 +42,8 @@ test('public endpoint is off by default, read-only and enforces structural evide
   assert.match(api, /c\.review_method <> 'human'/);
   assert.match(api, /lower\(btrim\(c\.reviewer\)\) = lower\(btrim\(a\.author\)\)/);
   assert.match(api, /articleSections/);
+  assert.match(api, /createHash\('sha256'\)/);
+  assert.match(api, /delete rows\[0\]\.review_revision_sha256/);
   assert.match(api, /NotFoundException/);
 });
 

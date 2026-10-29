@@ -20,14 +20,17 @@ registry; **media has no circuit publication path**.
 - Each circuit has at most one article per locale. An article cannot publish
   without a nonempty body, a lowercase SHA-256 revision identifier, a named
   author and a distinct named human reviewer with review/publication timestamps.
-  AI-reviewed articles cannot be published.
+  AI-reviewed articles cannot be published. The read API also checks SHA-256
+  of the exact UTF-8 `body_markdown` against the stored review revision. A
+  matching digest is not a signature or proof of human review.
 - A claim cannot be marked verified without a named human reviewer and review
   timestamp. Publishing an article requires at least one linked claim, all
   claims belonging to the same circuit, and every claim verified with at least
   one supporting, source-located evidence row. A claim reviewer cannot be the
   article author.
 - Changing article text, title, locale, author, revision or review method
-  revokes article publication. Changing claim text/review, evidence, source
+  revokes article publication. Replacing reviewer identity or review/publication
+  timestamps on an already published row also revokes publication. Changing claim text/review, evidence, source
   metadata or article–claim links invalidates the affected review.
   Cross-circuit links are rejected and subject identity is immutable.
 - The public API route `GET /api/circuits/:id/article?locale=uk|en` is
@@ -39,8 +42,8 @@ registry; **media has no circuit publication path**.
   unapproved drafts or media.
 
 The database cannot independently establish that a reviewer is a real human,
-that a source supports a historical claim, or that a revision digest
-cryptographically matches a reviewed manuscript. The API's exact-claim
+that a source supports a historical claim, or that a matching body digest
+was independently signed by an authorized reviewer. The API's exact-claim
 structural check is **not** historical verification. A separate authenticated,
 independently reviewed publication workflow and human release decision are
 still required. Do not use SQL to manually populate `published` rows as a
@@ -53,8 +56,9 @@ permission to approve content.
 checksum in the API readiness contract, independent schema and disabled-by-
 default API gate. `apps/api/test/circuit-editorial.integration.cjs` creates
 a disposable PostgreSQL schema, applies the checked-in migrations, and exercises
-HTTP visibility, evidence-first review, source/evidence revocation, cross-circuit
-link rejection, AI/self-review rejection and transactional rollback. All names
+HTTP visibility, exact body digest matching, reviewer-metadata tamper revocation,
+evidence-first review, source/evidence/link revocation, cross-circuit link
+rejection, AI/self-review rejection and transactional rollback. All names
 and assertions in that test are **synthetic fixtures**, not F1 history.
 
 Run the contract tests with:

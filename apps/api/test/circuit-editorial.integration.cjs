@@ -1,6 +1,6 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
-const { randomUUID } = require('node:crypto');
+const { randomUUID, createHash } = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 const { resolve } = require('node:path');
 const { Pool } = require('pg');
@@ -12,7 +12,9 @@ const originalReadFlag = process.env.CIRCUIT_EDITORIAL_READ_ENABLED;
 assert.ok(originalUrl, 'DATABASE_URL required for isolated PostgreSQL integration');
 const schema = 'circuit_editorial_test_' + randomUUID().replaceAll('-', '');
 const admin = new Pool({ connectionString: originalUrl });
-const digest = 'a'.repeat(64);
+const bodyMarkdown = '## Weekend\n\nSynthetic circuit claim.';
+const bodyDigest = text => createHash('sha256').update(text, 'utf8').digest('hex');
+const digest = bodyDigest(bodyMarkdown);
 let db, app, base, circuitId, otherCircuitId, articleId, claimId, sourceId;
 
 before(async () => {
@@ -42,9 +44,8 @@ before(async () => {
   const { rows: [article] } = await db.query(`
     INSERT INTO circuit_editorial_articles
       (circuit_id,locale,slug,title,body_markdown,author,review_revision_sha256)
-    VALUES($1,'en','fixture-circuit','Fixture circuit story',
-      '## Weekend' || E'\\n\\n' || 'Synthetic circuit claim.','Fixture writer',$2)
-    RETURNING id::text`, [circuitId, digest]);
+    VALUES($1,'en','fixture-circuit','Fixture circuit story',$2,'Fixture writer',$3)
+    RETURNING id::text`, [circuitId, bodyMarkdown, digest]);
   articleId = article.id;
   process.env.CIRCUIT_EDITORIAL_READ_ENABLED = '1';
   app = await NestFactory.create(AppModule, { logger: false });
@@ -123,6 +124,41 @@ test('claim must belong to circuit and have independent review and supporting ev
   process.env.CIRCUIT_EDITORIAL_READ_ENABLED = '1';
 });
 
+test('exact revision digest and reviewer metadata changes fail closed', async () => {
+  const revisedBody = '## Revised weekend\n\nSynthetic circuit claim.';
+  await db.query('UPDATE circuit_editorial_articles SET body_markdown=$1 WHERE id=$2',
+    [revisedBody, articleId]);
+  await publish();
+  assert.equal((await read()).status, 404,
+    'structurally valid prose with an obsolete review digest must not be served');
+
+  await db.query('UPDATE circuit_editorial_articles SET review_revision_sha256=$1 WHERE id=$2',
+    [bodyDigest(revisedBody), articleId]);
+  await publish();
+  assert.equal((await read()).status, 200, 'exact revision can pass after a new review fixture');
+
+  await db.query("UPDATE circuit_editorial_articles SET reviewer='Another fixture reviewer' WHERE id=$1",
+    [articleId]);
+  assert.equal((await read()).status, 404, 'relabeling a published reviewer revokes publication');
+  const { rows: [revoked] } = await db.query(
+    'SELECT status, reviewer, reviewed_at, published_at FROM circuit_editorial_articles WHERE id=$1',
+    [articleId]);
+  assert.equal(revoked.status, 'draft');
+  assert.equal(revoked.reviewer, null);
+  assert.equal(revoked.reviewed_at, null);
+  assert.equal(revoked.published_at, null);
+
+  await db.query('UPDATE circuit_editorial_articles SET body_markdown=$1, review_revision_sha256=$2 WHERE id=$3',
+    [bodyMarkdown, digest, articleId]);
+  await publish();
+  assert.equal((await read()).status, 200);
+  await db.query("UPDATE circuit_editorial_articles SET reviewed_at=now() + interval '1 minute' WHERE id=$1",
+    [articleId]);
+  assert.equal((await read()).status, 404, 'review timestamp tampering revokes publication');
+  await publish();
+  assert.equal((await read()).status, 200);
+});
+
 test('prose edits, evidence edits and source metadata changes revoke publication', async () => {
   await db.query('UPDATE circuit_editorial_articles SET body_markdown=$1 WHERE id=$2',
     ['## Weekend\n\nUnreviewed sentence.', articleId]);
@@ -180,7 +216,30 @@ test('author self-review and AI review metadata cannot be promoted to published'
   await db.query(`UPDATE circuit_editorial_articles SET review_method='human' WHERE id=$1`, [articleId]);
   await publish();
   assert.equal((await read()).status, 200);
-  await assert.rejects(db.query(
-    `UPDATE circuit_editorial_articles SET reviewer='Fixture writer' WHERE id=$1`, [articleId],
-  ), /check constraint|violates check constraint/i);
+  await db.query("UPDATE circuit_editorial_articles SET reviewer='Fixture writer' WHERE id=$1", [articleId]);
+  assert.equal((await read()).status, 404, 'reviewer substitution revokes rather than relabels approval');
+});
+
+test('claim-link deletion and evidence removal revoke publication', async () => {
+  await db.query('DELETE FROM circuit_editorial_article_claims WHERE article_id=$1 AND claim_id=$2',
+    [articleId, claimId]);
+  assert.equal((await read()).status, 404);
+  await assert.rejects(publish(), /circuit publication requires linked/);
+  await db.query('INSERT INTO circuit_editorial_article_claims(article_id,claim_id) VALUES($1,$2)',
+    [articleId, claimId]);
+  await publish();
+  assert.equal((await read()).status, 200);
+
+  await db.query('DELETE FROM circuit_editorial_evidence WHERE claim_id=$1 AND source_id=$2',
+    [claimId, sourceId]);
+  assert.equal((await read()).status, 404);
+  await assert.rejects(publish(), /circuit publication requires linked/);
+  await db.query(`INSERT INTO circuit_editorial_evidence(claim_id,source_id,locator,supports)
+    VALUES($1,$2,'restored fixture locator',true)`, [claimId, sourceId]);
+  await assert.rejects(publish(), /circuit publication requires linked/,
+    'restoring evidence must not silently restore independent claim review');
+  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+  await publish();
+  assert.equal((await read()).status, 200);
 });

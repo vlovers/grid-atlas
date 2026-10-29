@@ -1,5 +1,6 @@
 import { BadRequestException, Controller, Get, Inject, NotFoundException, Param, Query } from '@nestjs/common';
 import { Pool } from 'pg';
+import { createHash } from 'node:crypto';
 import { DB } from './tokens';
 import { articleSections } from '../scripts/editorial-body.cjs';
 
@@ -35,7 +36,7 @@ export class CircuitEditorialController {
 
     const { rows } = await this.db.query(`
       SELECT a.id::text AS id, a.locale, a.slug, a.title, a.body_markdown,
-        a.published_at::text AS published_at,
+        a.review_revision_sha256, a.published_at::text AS published_at,
         (SELECT jsonb_agg(jsonb_build_object(
           'id', c.id::text, 'statement', c.statement,
           'evidence', (SELECT jsonb_agg(jsonb_build_object(
@@ -78,6 +79,12 @@ export class CircuitEditorialController {
         )`, [id, language]);
 
     if (rows.length !== 1) throw new NotFoundException('Published circuit article not found');
+    // A matching body digest is necessary, but never sufficient, for human approval.
+    const revision = rows[0].review_revision_sha256;
+    delete rows[0].review_revision_sha256;
+    if (createHash('sha256').update(rows[0].body_markdown, 'utf8').digest('hex') !== revision) {
+      throw new NotFoundException('Published circuit article not found');
+    }
     try {
       rows[0].sections = articleSections<{ id: string; statement: string }>(
         rows[0].body_markdown, rows[0].claims,
