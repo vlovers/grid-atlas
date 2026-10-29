@@ -24,7 +24,9 @@
     "audit:editorial:queue": "node scripts/editorial-corroboration-queue.mjs",
     "audit:editorial:provenance": "node scripts/editorial-provenance-audit.mjs --summary",
     "review:circuits": "node scripts/export-circuit-expansion-review.mjs --format=json",
-    "review:circuits:html": "node scripts/export-circuit-expansion-review.mjs --format=html"
+    "review:circuits:html": "node scripts/export-circuit-expansion-review.mjs --format=html",
+    "review:circuits:claims": "node scripts/circuit-claim-review-queue.mjs --format=json",
+    "review:circuits:claims:md": "node scripts/circuit-claim-review-queue.mjs --format=markdown"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
