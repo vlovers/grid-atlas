@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "kind": "bilingual_reader_copy_rewrite",
+  "scope": "twenty_existing_story_slots",
+  "independent_approval": false,
+  "publication_allowed": false,
+  "limitations": [
+    "Result source may not corroborate additional context. Each claim requires editorial review.",
+    "No new event or independent verification asserted.",
+    "Not imported to public application."
+  ],
+  "entries": [
+    {
+      "circuit_id": "dijon",
+      "story_index": 1,
+      "year": 1979,
+      "title": {
+        "en": "A victory that changed Renault's story",
+        "uk": "Перемога, яка змінила історію Renault"
+      },
+      "narrative": {
+        "en": "Jean-Pierre Jabouille won the 1979 French Grand Prix for Renault. That fact sits at the centre of Dijon’s story: a French driver, a French team and a victory whose importance extends beyond the top line of the result. The claim that this was the first turbo-powered Formula 1 World Championship victory needs a separate historical source, not just the finishing order.",
+        "uk": "Жан-П'єр Жабуй виграв Гран-прі Франції 1979 року за Renault. У центрі історії Діжона — французький пілот, французька команда й перемога, значення якої виходить за межі протоколу. Твердження про першу перемогу турбомотора в чемпіонаті світу потрібно підтвердити окремим історичним джерелом, а не лише фінішним порядком."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dijon",
+      "story_index": 2,
+      "year": 1979,
+      "title": {
+        "en": "Two names that survived the finish",
+        "uk": "Два імені, які запам'яталися після фінішу"
+      },
+      "narrative": {
+        "en": "Gilles Villeneuve finished second and René Arnoux third, only 0.240 seconds apart. A results table can establish that gap. It cannot show why the fight became famous; for their changes of position and any contact, a period account or footage is indispensable.",
+        "uk": "Жиль Вільньов фінішував другим, Рене Арну — третім. Між ними було лише 0,240 секунди. Протокол підтверджує цей розрив, але не передає причину слави їхньої боротьби. Щоб описати обгони й можливі зіткнення коліс, потрібен репортаж тих років або відеозапис."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dijon",
+      "story_index": 3,
+      "year": 1979,
+      "title": {
+        "en": "A Renault on either side of the drama",
+        "uk": "Два Renault — дві різні історії"
+      },
+      "narrative": {
+        "en": "Jabouille's first place and Arnoux's third put two Renault drivers on the podium, yet their finishing positions tell different stories. One crossed the line as winner; the other was caught in a battle for second. This contrast belongs in one connected chapter, not two isolated result cards.",
+        "uk": "Жабуй переміг, а Арну став третім — двоє пілотів Renault піднялися на подіум, але після зовсім різних гонок. Один перетнув фініш переможцем, інший опинився у боротьбі за друге місце. Це два боки однієї історії, а не привід створювати ще дві однакові картки результатів."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dijon",
+      "story_index": 4,
+      "year": 1979,
+      "title": {
+        "en": "The rest of the field was still racing",
+        "uk": "Позаду трійки теж ішла гонка"
+      },
+      "narrative": {
+        "en": "Alan Jones was fourth for Williams-Ford. His result matters for the full picture, even if the front three draw most of the attention. Rather than inventing a chase, the article should show his verified place in the classification and reserve further detail for an event report.",
+        "uk": "Алан Джонс посів четверте місце на Williams-Ford. Його результат важливий для повної картини гонки, навіть якщо вся увага дісталася першій трійці. Замість вигаданої погоні достатньо показати підтверджене місце у протоколі; деталі можна додати після перевірки репортажу."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dijon",
+      "story_index": 5,
+      "year": 1979,
+      "title": {
+        "en": "Lauda's unfinished afternoon",
+        "uk": "Гонка Лауди обірвалася"
+      },
+      "narrative": {
+        "en": "Niki Lauda did not reach the finish in his Brabham-Alfa Romeo. In a race remembered for Renault's victory, that retirement forms part of the event’s wider story, but the results alone are not enough to name the failure or explain its cause.",
+        "uk": "Нікі Лауда не дістався фінішу на Brabham-Alfa Romeo. Поки Renault святкувала перемогу, для нього гонка закінчилася раніше. Це частина ширшої картини Діжона, однак із протоколу не можна встановити причину сходу або назвати несправну деталь."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "story_index": 1,
+      "year": 1981,
+      "title": {
+        "en": "Five cars, one extraordinary finish",
+        "uk": "П'ять машин — один незвичайний фініш"
+      },
+      "narrative": {
+        "en": "Gilles Villeneuve won the 1981 Spanish Grand Prix at Jarama. Jacques Laffite, John Watson, Carlos Reutemann and Elio de Angelis followed, all within 1.240 seconds of the winner. This compressed finish is the story; the reasons Villeneuve kept the lead must come from a race account, not an invented lap-by-lap duel.",
+        "uk": "Жиль Вільньов виграв Гран-прі Іспанії 1981 року на Харамі. Позаду нього фінішували Жак Лаффіт, Джон Вотсон, Карлос Ройтеманн та Еліо де Анджеліс — усі в межах 1,240 секунди від переможця. Саме цей тісний фініш і є історією. Як Вільньову вдалося втримати позицію, має пояснити репортаж, а не вигадана дуель за колами."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "story_index": 2,
+      "year": 1981,
+      "title": {
+        "en": "Just two tenths for Laffite",
+        "uk": "Лаффіту забракло двох десятих"
+      },
+      "narrative": {
+        "en": "Jacques Laffite finished second, 0.220 seconds behind the Ferrari. It is a striking number at the end of a Grand Prix. It describes the margin at the line, not how often he attempted to pass or how close he stayed on earlier laps.",
+        "uk": "Жак Лаффіт фінішував другим, програвши Ferrari лише 0,220 секунди. Для фіналу Гран-прі це разючий розрив. Але він показує тільки відстань на фініші, а не кількість спроб обгону й не те, наскільки близько пілоти їхали протягом усієї дистанції."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "story_index": 3,
+      "year": 1981,
+      "title": {
+        "en": "Watson in the middle of the train",
+        "uk": "Вотсон посеред щільної групи"
+      },
+      "narrative": {
+        "en": "John Watson took third, 0.580 seconds behind Villeneuve. McLaren's podium belongs to the same remarkable finish, and it becomes more meaningful alongside the four gaps than as a standalone summary of third place.",
+        "uk": "Джон Вотсон став третім — за 0,580 секунди після Вільньова. Подіум McLaren — частина того самого незвичайного фінішу. Про нього цікавіше розповісти поруч із часовими розривами всієї п'ятірки, а не як окрему історію про третє місце."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "story_index": 4,
+      "year": 1981,
+      "title": {
+        "en": "Reutemann misses the podium",
+        "uk": "Ройтеманн залишається за крок від подіуму"
+      },
+      "narrative": {
+        "en": "Carlos Reutemann was fourth, 1.010 seconds from victory. A narrow final gap can make the result feel cruel, but it is not proof that the Williams had a last-corner chance to overtake. The finishing order is certain; the racing action needs its own evidence.",
+        "uk": "Карлос Ройтеманн фінішував четвертим — через 1,010 секунди після переможця. Такий малий розрив додає драматизму, але не доводить, що Williams мала шанс обігнати когось в останньому повороті. Фінішний порядок відомий; події на трасі потребують окремих свідчень."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "story_index": 5,
+      "year": 1981,
+      "title": {
+        "en": "De Angelis completes the picture",
+        "uk": "Де Анджеліс завершує картину"
+      },
+      "narrative": {
+        "en": "Elio de Angelis was fifth, 1.240 seconds behind the winning Ferrari. His finish completes the five-car picture: one win, four pursuers and a tiny range of gaps. Keeping all five together is clearer than five nearly identical podium-and-points stories.",
+        "uk": "Еліо де Анджеліс став п'ятим, поступившись переможцю 1,240 секунди. Саме його результат завершує картину: один переможець, четверо переслідувачів і зовсім невеликі часові розриви. Разом ці п'ять місць говорять більше, ніж п'ять майже однакових текстів про очки й позиції."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "story_index": 1,
+      "year": 1986,
+      "title": {
+        "en": "Fourteen thousandths",
+        "uk": "Чотирнадцять тисячних"
+      },
+      "narrative": {
+        "en": "Ayrton Senna won the 1986 Spanish Grand Prix at Jerez by 0.014 seconds over Nigel Mansell. The gap was almost nothing; the victory was entirely real. To describe Mansell's closing charge or the choices that produced this finish, use contemporary reporting rather than reading strategy into the stopwatch.",
+        "uk": "Айртон Сенна переміг Найджела Менселла на Гран-прі Іспанії 1986 року в Хересі з перевагою лише 0,014 секунди. Розрив був майже невидимим, але перемога — цілком реальною. Щоб пояснити останні кола та рішення команд, потрібен репортаж того часу, а не здогади за секундоміром."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "story_index": 2,
+      "year": 1986,
+      "title": {
+        "en": "Mansell's second place was no ordinary second",
+        "uk": "Друге місце Менселла — не звичайне друге місце"
+      },
+      "narrative": {
+        "en": "Nigel Mansell crossed the line almost alongside Senna and was classified second. It is tempting to retell the same finish as two separate dramatic stories. A stronger chapter gives each driver's perspective while keeping the 0.014-second result in one coherent scene.",
+        "uk": "Найджел Менселл перетнув фініш майже поруч із Сенною, але залишився другим. Спокуса очевидна: розповісти той самий фініш як дві різні драми. Сильніший матеріал дає місце обом пілотам, але залишає розрив у 0,014 секунди частиною однієї цілісної сцени."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "story_index": 3,
+      "year": 1986,
+      "title": {
+        "en": "The third car was much farther back",
+        "uk": "Третя машина була значно далі"
+      },
+      "narrative": {
+        "en": "Alain Prost finished third, 21.552 seconds behind the winner. The margin sets the astonishing first-two finish in context. It does not, by itself, explain whether Prost had tyre, traffic or mechanical problems.",
+        "uk": "Ален Прост став третім, програвши переможцю 21,552 секунди. Ця різниця допомагає відчути, наскільки незвичайною була боротьба двох лідерів. Але вона не пояснює, чи мав Прост проблеми з шинами, трафіком або технікою."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "story_index": 4,
+      "year": 1986,
+      "title": {
+        "en": "Another McLaren in the classification",
+        "uk": "Ще один McLaren у протоколі"
+      },
+      "narrative": {
+        "en": "Keke Rosberg came home fourth, a lap behind. That is useful context for McLaren's race as a whole, but a fourth-place result alone is not an independent historical turning point. Fold it into the race account unless a separate episode is documented.",
+        "uk": "Кеке Росберг фінішував четвертим, програвши коло. Це корисна деталь для історії McLaren у Хересі, однак сама позиція ще не є історичним переломним моментом. Її варто вплести в розповідь про гонку, якщо окрему подію не підтверджено джерелом."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "story_index": 5,
+      "year": 1986,
+      "title": {
+        "en": "Different endings for the Williams drivers",
+        "uk": "Різні фінали для двох Williams"
+      },
+      "narrative": {
+        "en": "While Mansell chased victory, Nelson Piquet did not finish in the other Williams. Their contrast is easy to see in the official results; the reason for Piquet's retirement needs an event-specific report before it becomes part of the narrative.",
+        "uk": "Поки Менселл боровся за перемогу, Нельсон Піке на іншому Williams не дістався фінішу. Цей контраст видно в офіційних результатах. А ось причину сходу Піке потрібно шукати в репортажі про гонку, перш ніж включати її до сюжету."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "story_index": 1,
+      "year": 1959,
+      "title": {
+        "en": "A race winner and a world champion",
+        "uk": "Переможець гонки й чемпіон світу"
+      },
+      "narrative": {
+        "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring. Jack Brabham, who finished fourth, took the World Championship. These two outcomes should open the story together: the man who won the final race was not the man who won the season.",
+        "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу. А чемпіоном світу став Джек Бребем, який фінішував четвертим. Обидва підсумки варто показати поруч із самого початку: переможець останньої гонки не був переможцем усього сезону."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "story_index": 2,
+      "year": 1959,
+      "title": {
+        "en": "Six tenths separated the leading Coopers",
+        "uk": "Шість десятих між двома Cooper"
+      },
+      "narrative": {
+        "en": "Maurice Trintignant finished second, 0.6 seconds behind McLaren. That makes the front of the classification unusually close, but the exact movements of the closing laps require a contemporary account. A narrow margin should invite the reader into the story, not substitute for its evidence.",
+        "uk": "Моріс Трентіньян фінішував другим, відставши від Макларена на 0,6 секунди. Фініш лідерів вийшов незвичайно щільним. Проте події останніх кіл потрібно відтворювати за репортажем: малий розрив має зацікавити читача, а не підміняти докази."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "story_index": 3,
+      "year": 1959,
+      "title": {
+        "en": "Brooks still had a stake in the title",
+        "uk": "Брукс теж боровся за титул"
+      },
+      "narrative": {
+        "en": "Tony Brooks was third in a Ferrari. For a full championship explanation, his points position and the era's dropped-results rules matter more than the race gap alone. Those calculations must be verified before publishing a hypothetical title scenario.",
+        "uk": "Тоні Брукс став третім на Ferrari. Щоб пояснити його місце в боротьбі за титул, потрібно врахувати очки та тодішні правила відкидання результатів — це важливіше за сам відрив у гонці. Будь-які сценарії чемпіонства слід перевірити математично до публікації."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "story_index": 4,
+      "year": 1959,
+      "title": {
+        "en": "Brabham's finish deserves a scene of its own",
+        "uk": "Фініш Бребема заслуговує на окрему сцену"
+      },
+      "narrative": {
+        "en": "Brabham was classified fourth and became champion. The famous account of him pushing his fuel-starved car belongs here only after checking a contemporary source for the exact circumstances. The classification alone cannot tell how far he pushed or precisely where the car stopped.",
+        "uk": "Бребем посів четверте місце й став чемпіоном. Відома історія про те, як він штовхав машину після закінчення пального, доречна саме тут — але її деталі потрібно звірити з репортажем того часу. Протокол не повідомляє ні відстані, ні точного місця зупинки."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "story_index": 5,
+      "year": 1959,
+      "title": {
+        "en": "Moss's campaign ends early",
+        "uk": "Сезон Мосса закінчується достроково"
+      },
+      "narrative": {
+        "en": "Stirling Moss retired early from the Sebring race, while Brabham reached the classification that gave him the title. The retirement and championship outcome are connected, but claiming that one alone mathematically decided everything requires the full 1959 points rules and pre-race standings.",
+        "uk": "Стірлінг Мосс рано зійшов із дистанції у Себрингу, тоді як Бребем фінішував на місці, якого вистачило для титулу. Ці події пов'язані, але стверджувати, що один схід сам вирішив долю чемпіонату, можна лише після перевірки таблиці очок і правил сезону 1959 року."
+      },
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "status": "proposed_rewrite_unapproved",
+      "independent_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}
