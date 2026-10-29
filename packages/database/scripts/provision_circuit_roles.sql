@@ -23,6 +23,16 @@ BEGIN
 EXCEPTION WHEN duplicate_object THEN NULL;
 END $$;
 
+
+DO $
+BEGIN
+  IF EXISTS (SELECT 1 FROM pg_roles
+    WHERE rolname IN ('grid_circuit_stager','grid_circuit_reviewer',
+      'grid_circuit_publisher','grid_circuit_reader') AND rolcanlogin) THEN
+    RAISE EXCEPTION 'circuit group roles must remain NOLOGIN';
+  END IF;
+END $;
+
 GRANT USAGE ON SCHEMA public TO grid_circuit_stager,
   grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
 
