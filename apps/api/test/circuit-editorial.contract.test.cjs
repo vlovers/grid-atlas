@@ -7,6 +7,8 @@ const { join } = require('node:path');
 const root = join(__dirname, '../../..');
 const migrationPath = 'packages/database/migrations/0013_circuit_editorial_boundary.sql';
 const migration = readFileSync(join(root, migrationPath), 'utf8');
+const revocationPath = 'packages/database/migrations/0014_circuit_review_revocation.sql';
+const revocation = readFileSync(join(root, revocationPath), 'utf8');
 const api = readFileSync(join(root, 'apps/api/src/circuit-editorial.controller.ts'), 'utf8');
 const contract = require('../src/schema-contract.json');
 
@@ -55,4 +57,16 @@ test('reviewed body must be an exact rendering of approved claim statements', ()
   ]);
   assert.throws(() => articleSections('## Weekend\n\nUnreviewed prose.', claims), /not covered/);
   assert.throws(() => articleSections('Synthetic circuit claim.\n\nSynthetic circuit claim.', claims), /not covered/);
+});
+
+test('forward-only revocation migration is checksummed and closes stale approval transitions', () => {
+  assert.equal(contract['0014_circuit_review_revocation.sql'],
+    createHash('sha256').update(revocation).digest('hex'));
+  assert.match(revocation, /CREATE OR REPLACE FUNCTION circuit_editorial_invalidate_article/);
+  assert.match(revocation, /CREATE OR REPLACE FUNCTION circuit_editorial_invalidate_claim/);
+  assert.match(revocation, /OLD.status = 'published' AND NEW.status <> 'published'/);
+  assert.match(revocation, /circuit publication requires a fresh review transition/);
+  assert.match(revocation, /OLD.status = 'verified' AND NEW.status <> 'verified'/);
+  assert.match(revocation, /circuit claim requires a fresh review transition/);
+  assert.doesNotMatch(revocation, /INSERT INTO circuit_editorial_|UPDATE circuit_editorial_articles SET status='published'/);
 });
