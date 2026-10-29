@@ -409,6 +409,7 @@ test('untrusted PostgreSQL session cannot forge review, publication or evidence 
     await admin.query(`GRANT USAGE ON SCHEMA ${schema} TO ${role}`);
     await admin.query(`GRANT SELECT, UPDATE ON ${schema}.circuit_editorial_articles,
       ${schema}.circuit_editorial_claims,${schema}.circuit_editorial_evidence TO ${role}`);
+    await db.query('UPDATE circuit_editorial_evidence SET supports=false WHERE claim_id=$1 AND source_id=$2', [claimId, sourceId]);
     await client.query(`SET SESSION AUTHORIZATION ${role}`);
     await assert.rejects(client.query(`
       UPDATE circuit_editorial_claims SET status='verified',
