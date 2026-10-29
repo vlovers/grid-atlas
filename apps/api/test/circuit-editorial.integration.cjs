@@ -395,6 +395,42 @@ test('concurrent claim revocation cannot leave a publicly readable stale approva
   }
 });
 
+test('concurrent evidence and source edits cannot preserve stale publication', async () => {
+  for (const mutation of [
+    { sql: 'UPDATE circuit_editorial_evidence SET locator=$1 WHERE claim_id=$2 AND source_id=$3',
+      args: ['racing locator', claimId, sourceId] },
+    { sql: 'UPDATE content_sources SET title=$1 WHERE id=$2',
+      args: ['Racing provenance title', sourceId] },
+  ]) {
+    await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+      reviewer=session_user,reviewed_at=now() WHERE id=$1`, [claimId]);
+    const modifying = await db.connect();
+    const publishing = await db.connect();
+    try {
+      await modifying.query('BEGIN');
+      await modifying.query(mutation.sql, mutation.args);
+      const pending = publishing.query(`
+        UPDATE circuit_editorial_articles SET status='published',
+          reviewer=session_user,reviewed_at=now(),published_at=now() WHERE id=$1`,
+        [articleId]).then(() => ({ ok: true }), error => ({ ok: false, error }));
+      await new Promise(resolve => setTimeout(resolve, 80));
+      await modifying.query('COMMIT');
+      const result = await pending;
+      assert.equal(result.ok, false, 'concurrent mutation must prevent publication');
+      assert.match(result.error.message,
+        /circuit publication requires linked|could not serialize access/);
+      assert.equal((await read()).status, 404);
+      const { rows: [row] } = await db.query(
+        'SELECT status FROM circuit_editorial_articles WHERE id=$1', [articleId]);
+      assert.notEqual(row.status, 'published');
+    } finally {
+      await modifying.query('ROLLBACK').catch(() => {});
+      modifying.release();
+      publishing.release();
+    }
+  }
+});
+
 test('untrusted PostgreSQL session cannot forge review, publication or evidence support', async (t) => {
   const { rows: [actor] } = await db.query(
     'SELECT rolsuper FROM pg_roles WHERE rolname=session_user');
