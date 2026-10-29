@@ -26,7 +26,8 @@
     "review:circuits": "node scripts/export-circuit-expansion-review.mjs --format=json",
     "review:circuits:html": "node scripts/export-circuit-expansion-review.mjs --format=html",
     "review:circuits:claims": "node scripts/circuit-claim-review-queue.mjs --format=json",
-    "review:circuits:claims:md": "node scripts/circuit-claim-review-queue.mjs --format=markdown"
+    "review:circuits:claims:md": "node scripts/circuit-claim-review-queue.mjs --format=markdown",
+    "review:circuits:claims:html": "node scripts/render-circuit-claim-review-html.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

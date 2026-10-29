@@ -10,8 +10,11 @@ From the repository root (Node 24):
 pnpm review:circuits:html > /tmp/grid-atlas-165-review.html
 pnpm review:circuits:claims > /tmp/grid-atlas-165-claim-queue.json
 pnpm review:circuits:claims:md > /tmp/grid-atlas-165-claim-worksheet.md
-node --test tests/circuit-expansion-review-export.test.mjs tests/circuit-claim-review-queue.test.mjs
+pnpm review:circuits:claims:html > /tmp/grid-atlas-165-claim-review.html
+node --test tests/circuit-expansion-review-export.test.mjs tests/circuit-claim-review-queue.test.mjs tests/circuit-claim-review-html.test.mjs
 ```
+
+The original reading packet provides paired EN/UK reading. The separate claim-review HTML desk groups all 165 worksheets into 33 risk-ranked circuit sections with keyboard-accessible jump links, source links, side-by-side EN/UK passages, explicit pending checks, sentence candidates and printable layouts. It is a static offline file: no JavaScript, network fetches, image assets, trackers, approval forms or persistence. Its risk priority is only a heuristic, not a review decision.
 
 The HTML packet provides paired EN/UK reading. The JSON/Markdown queue gives **165 story-specific review worksheets** ranked by explicit evidence-risk heuristics. Each record carries its source links, exact draft fingerprint, complete bilingual copy, sentence candidates, numerical comparison and five pending checks: classification, historical context, bilingual meaning, circuit identity and editorial quality.
 
