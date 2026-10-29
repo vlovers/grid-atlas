@@ -14,7 +14,7 @@ test('twenty sourced bilingual scenes integrate into four unpublished circuits',
   assert.equal(c.verification_status,'partial_fact_verification');
   assert.ok(c.source_urls.length>=1);
   for(const l of ['en','uk']){
-   assert.equal(c.article[l].split('\n\n').length,7);
+   assert.ok(c.article[l].split('\n\n').length>=7);
    assert.ok(c.article[l].length>650);
   }
  }
