@@ -6,7 +6,7 @@ Every decision below has `independent_approval=false` and `publication_allowed=f
 
 ## pedralbes
 
-**Existing manuscript provenance:** see five corresponding stories in the pinned expansion JSON. **Classification search locator (verify URL against original):** https://www.formula1.com/en/results/1954/races/137/spain/race-result
+**Provenance:** use the exact source_urls from this circuit's five entries in the pinned expansion JSON; external locators require individual verification.
 
 ### pedralbes:1 — Hawthorn's Ferrari wins the 1954 finale
 
@@ -55,7 +55,7 @@ Every decision below has `independent_approval=false` and `publication_allowed=f
 
 ## pescara
 
-**Existing manuscript provenance:** see five corresponding stories in the pinned expansion JSON. **Classification search locator (verify URL against original):** https://www.formula1.com/en/results/1957/races/162/pescara/race-result
+**Provenance:** use the exact source_urls from this circuit's five entries in the pinned expansion JSON; external locators require individual verification.
 
 ### pescara:1 — Moss wins on Pescara's huge road loop
 
@@ -104,7 +104,7 @@ Every decision below has `independent_approval=false` and `publication_allowed=f
 
 ## porto
 
-**Existing manuscript provenance:** see five corresponding stories in the pinned expansion JSON. **Classification search locator (verify URL against original):** https://www.formula1.com/en/results/1960/races/184/portugal/race-result
+**Provenance:** use the exact source_urls from this circuit's five entries in the pinned expansion JSON; external locators require individual verification.
 
 ### porto:1 — Brabham wins on Boavista in 1960
 
@@ -153,7 +153,7 @@ Every decision below has `independent_approval=false` and `publication_allowed=f
 
 ## rouen
 
-**Existing manuscript provenance:** see five corresponding stories in the pinned expansion JSON. **Classification search locator (verify URL against original):** https://www.formula1.com/en/results/1962/races/208/france/race-result
+**Provenance:** use the exact source_urls from this circuit's five entries in the pinned expansion JSON; external locators require individual verification.
 
 ### rouen:1 — Gurney secures Porsche's 1962 win
 
@@ -202,7 +202,7 @@ Every decision below has `independent_approval=false` and `publication_allowed=f
 
 ## sebring
 
-**Existing manuscript provenance:** see five corresponding stories in the pinned expansion JSON. **Classification search locator (verify URL against original):** https://www.formula1.com/en/results/1959/races/179/united-states/race-result
+**Provenance:** use the exact source_urls from this circuit's five entries in the pinned expansion JSON; external locators require individual verification.
 
 ### sebring:1 — 1959 U.S. finale: McLaren wins
 
