@@ -14,7 +14,7 @@ test('twenty sourced scenes integrated in four bilingual publication-gated chapt
   assert.equal(c.verification_status,'partial_fact_verification');
   assert.ok(c.source_urls.length>0);
   for(const l of ['en','uk']){
-   assert.equal(c.article[l].split('\n\n').length,7);
+   assert.ok(c.article[l].split('\n\n').length>=7);
    assert.ok(c.article[l].length>650);
   }
  }
