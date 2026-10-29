@@ -77,7 +77,7 @@ test('forward-only revocation migration is checksummed and closes stale approval
 test('trusted actor boundary pins migration and binds review identity to session_user', () => {
   assert.equal(contract['0015_circuit_actor_boundary.sql'],
     createHash('sha256').update(actorBoundary).digest('hex'));
-  assert.match(actorBoundary, /pg_has_role\(session_user,r\.oid,'member'\)/);
+  assert.match(actorBoundary, /pg_has_role\(session_user,r\.rolname,'member'\)/);
   assert.match(actorBoundary, /NEW\.reviewer IS DISTINCT FROM session_user/g);
   assert.match(actorBoundary, /grid_circuit_publisher/);
   assert.match(actorBoundary, /grid_circuit_reviewer/);
