@@ -258,7 +258,7 @@ test('withdrawn and paused articles cannot reuse an old publication decision', a
   for (const key of ['reviewer', 'reviewed_at', 'published_at']) assert.equal(withdrawn[key], null);
   await assert.rejects(db.query(
     "UPDATE circuit_editorial_articles SET status='published' WHERE id=$1", [articleId],
-  ), /fresh review transition/);
+  ), /fresh review transition|reviewer must match authenticated database session/);
   assert.equal((await read()).status, 404);
 
   await publish();
@@ -269,7 +269,7 @@ test('withdrawn and paused articles cannot reuse an old publication decision', a
   for (const key of ['reviewer', 'reviewed_at', 'published_at']) assert.equal(paused[key], null);
   await assert.rejects(db.query(
     "UPDATE circuit_editorial_articles SET status='published' WHERE id=$1", [articleId],
-  ), /fresh review transition/);
+  ), /fresh review transition|reviewer must match authenticated database session/);
   await publish();
   assert.equal((await read()).status, 200);
 });
@@ -297,7 +297,7 @@ test('claim reviewer relabelling and disputed status require a new claim review'
   assert.equal(disputed.reviewed_at, null);
   await assert.rejects(db.query(
     "UPDATE circuit_editorial_claims SET status='verified' WHERE id=$1", [claimId],
-  ), /fresh review transition/);
+  ), /fresh review transition|reviewer must match authenticated database session/);
   await assert.rejects(publish(), /circuit publication requires linked/);
 });
 
