@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "kind": "historical_chapter_audit",
+  "scope": "20 manuscripts; specific research gaps and clearly distinguished independent checks",
+  "human_approval": false,
+  "publication_allowed": false,
+  "chapters": [
+    {
+      "circuit_id": "dijon",
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify claim of first turbo-engine F1 championship win separately from classification",
+        "uk": "Уточнити статус першої перемоги турбомотора окремо від протоколу"
+      },
+      "research_finding": "Official F1 history supports first Renault and turbo win, and final-lap wheel-to-wheel duel; keep cause and intensity grounded.",
+      "independent_source_url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+      "independent_source_reviewed": true,
+      "review_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Clarify how Villeneuve defended through corners and accelerated on straights",
+        "uk": "Пояснити оборону Вільньова в поворотах і швидкість на прямих"
+      },
+      "research_finding": "F1 retrospective independently describes defensive race and 1.24-second five-car finish.",
+      "independent_source_url": "https://www.formula1.com/en/latest/article/what-makes-the-spanish-grand-prix-special-and-why-you-should-see-it.4PhTHo6wdwea5krZ06VPnn",
+      "independent_source_reviewed": true,
+      "review_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Add Mansell's late tyre stop and Senna's fuel management; current article lacks the actual turning point",
+        "uk": "Додати пізній пітстоп Менселла та економію пального Сенни: нинішній текст пропускає поворотний момент"
+      },
+      "research_finding": "F1 feature confirms Mansell led lap 40, slow puncture prompted late stop, and 0.014s finish.",
+      "independent_source_url": "https://www.formula1.com/en/latest/article/ayrton-senna-10-moments-of-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0",
+      "independent_source_reviewed": true,
+      "review_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "sebring",
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify title mathematics and circumstance of Brabham's finish; add fuel-out push only with solid source",
+        "uk": "Перевірити арифметику титулу й обставини фінішу Бребема; історію штовхання авто додавати лише з джерелом"
+      },
+      "research_finding": "Race and championship results need direct cross-check; current narrative is not yet independently verified.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "anderstorp",
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1978/races/398/sweden/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Fan car design purpose, legality, subsequent withdrawal require independent contemporary and retrospective sources",
+        "uk": "Потрібні джерела про мету вентилятора, законність конструкції та зняття машини зі змагань"
+      },
+      "research_finding": "Avoid claiming it was formally banned without dated official evidence.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "bremgarten",
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify historical Swiss road course, last championship visit and accurate circuit context",
+        "uk": "Перевірити швейцарську дорожню трасу, останній візит і історичний контекст"
+      },
+      "research_finding": "Do not imply an unverified safety cause for the end of the event.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Confirm 1995 return after hiatus and podium, then seek contemporary race account for Hill/Alesi battle",
+        "uk": "Підтвердити повернення 1995 року й подіум, знайти репортаж про боротьбу Гілла й Алезі"
+      },
+      "research_finding": "Current copy is predominantly result recitation and needs actual race chronology.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1972/races/307/france/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Confirm 1972 final visit and track nickname Charade; gather period race narrative",
+        "uk": "Підтвердити останній візит 1972 року й назву Шарада, додати хронологію гонки"
+      },
+      "research_finding": "Existing copy relies on venue nostalgia rather than identifiable race moments.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "east-london",
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Clarify 1962 title scenario, Clark's retirement cause and Hill's championship circumstances",
+        "uk": "Уточнити сценарії боротьби за титул 1962 року, причину сходу Кларка"
+      },
+      "research_finding": "Do not equate retirement with mechanically verified cause until researched.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "monaco",
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1996/races/643/monaco/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify start grid, weather chronology, tyre calls and number of actual finishers",
+        "uk": "Перевірити стартову решітку, хронологію дощу, вибір шин і кількість фінішерів"
+      },
+      "research_finding": "Current text has the shape of the event but needs vetted sequence of actual changes.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "mosport",
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1967/races/251/canada/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Confirm inaugural Canadian GP 1967, finishing order and weather context",
+        "uk": "Підтвердити перший Гран-прі Канади 1967 року, порядок фінішу й погодні умови"
+      },
+      "research_finding": "Do not invent a crowd reaction in historical prose.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "montjuic",
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1975/races/347/spain/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Prioritize independent documentation of fatalities, safety protests and stoppage",
+        "uk": "Передусім незалежно підтвердити загиблих, протести щодо безпеки й зупинку гонки"
+      },
+      "research_finding": "Sensitive fatal event: no publication on finishing-order citation alone.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "monsanto",
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify 1959 course location, field and winner, find historical map/license provenance",
+        "uk": "Перевірити розташування траси 1959 року, результати та походження карти"
+      },
+      "research_finding": "A generic park setting is not enough for a rich geographical history.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify 1968 team one-two and what it meant for Bruce McLaren personally, without fabricated quotations",
+        "uk": "Підтвердити дубль 1968 року й контекст Брюса Макларена без вигаданих цитат"
+      },
+      "research_finding": "Find race account for Hulme's lead and McLaren's progress.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "nivelles",
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify Belgian Grand Prix use of Nivelles in 1972 and 1974; clarify why used instead of Spa",
+        "uk": "Перевірити бельгійські етапи 1972 й 1974 років і причину зміни Спа"
+      },
+      "research_finding": "Avoid making Nivelles sound like a single championship appearance.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "porto",
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1960/races/185/portugal/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Confirm Boavista street circuit route and 1960 finish; period photos subject to licenses",
+        "uk": "Перевірити маршрут міської траси Боавішта й фініш 1960 року, ліцензії фото"
+      },
+      "research_finding": "Avoid claiming ordinary road details without circuit map evidence.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "pedralbes",
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1954/races/134/spain/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify Ascari pole, Lancia retirement lap and championship-finale result; explain grid versus race outcome",
+        "uk": "Перевірити поул Аскарі, коло сходу Lancia й результат фіналу сезону"
+      },
+      "research_finding": "Present the surprise without implying qualifying certainty.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "pescara",
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Confirm race duration, lap count, road-circuit length, and historic record claims",
+        "uk": "Підтвердити тривалість, кількість кіл, довжину дорожньої траси й рекордні твердження"
+      },
+      "research_finding": "Do not claim all-time longest F1 circuit without authoritative comparison.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "rouen",
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1962/races/199/france/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Clarify Porsche constructor achievement versus Porsche-powered wins and drivers",
+        "uk": "Розділити перемогу Porsche як конструктора та успіхи машин із двигунами Porsche"
+      },
+      "research_finding": "Avoid broad superlatives before validating F1 constructor history.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "zeltweg",
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "existing_source_urls": [
+        "https://www.formula1.com/en/results/1964/races/221/austria/race-result"
+      ],
+      "editorial_actions": {
+        "en": "Verify 1964 airfield Grand Prix, Bandini win, circuit condition and contemporary accounts",
+        "uk": "Перевірити авіабазу 1964 року, перемогу Бандіні, стан покриття та репортажі"
+      },
+      "research_finding": "Airfield narrative needs distinct geography and context, not merely unusual venue.",
+      "independent_source_url": null,
+      "independent_source_reviewed": false,
+      "review_status": "verification_required",
+      "human_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}
