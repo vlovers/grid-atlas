@@ -103,3 +103,27 @@ test('added contextual evidence is attached to the matching circuit, not promote
     assert.ok(chapter.pending_review.length >= 2, chapter.circuit_id);
   }
 });
+
+test('historical scoring, retrospective classifications and race circumstances survive bilingual edits', () => {
+  const byId = new Map(added.map((chapter) => [chapter.circuit_id, chapter]));
+  const checks = [
+    ['ain-diab', ['42', '41', 'inaugural constructors'], ['42', '41', 'Кубок конструкторів']],
+    ['zolder', ['Tyrrell', 'Senna'], ['Tyrrell', 'Сенни']],
+    ['riverside', ['fuel', 'Brabham'], ['пального', 'Бребема']],
+    ['dijon', ['turbo', 'Villeneuve'], ['турбодвигуна', 'Вільньов']],
+  ];
+  for (const [id, enAnchors, ukAnchors] of checks) {
+    const chapter = byId.get(id);
+    assert.ok(chapter, id);
+    for (const [locale, anchors] of [['en', enAnchors], ['uk', ukAnchors]]) {
+      for (const anchor of anchors) {
+        assert.ok(chapter.article[locale].includes(anchor), id + ':' + locale + ': ' + anchor);
+      }
+    }
+    assert.equal(chapter.human_approval, false);
+    assert.equal(chapter.publication_allowed, false);
+  }
+  assert.ok(byId.get('ain-diab').source_urls.includes('https://www.grandprix.com/races/morocco-gp-1958.html'));
+  assert.ok(byId.get('dijon').source_urls.includes('https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/'));
+  assert.ok(byId.get('riverside').source_urls.some((url) => url.includes('dramatic-1960-season-finale')));
+});
