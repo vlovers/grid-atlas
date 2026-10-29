@@ -208,7 +208,8 @@ test('author self-review and AI review metadata cannot be promoted to published'
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
     reviewer='Fixture writer',reviewed_at=now() WHERE id=$1`, [claimId]);
   await assert.rejects(publish(), /circuit publication requires linked/);
-  // The reviewer change revoked verification; restore it in a fresh transition.
+  // Explicitly withdraw the self-reviewed claim before an independent re-review.
+  await db.query("UPDATE circuit_editorial_claims SET status='needs_review' WHERE id=$1", [claimId]);
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
     reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
   await db.query(`UPDATE circuit_editorial_articles SET review_method='ai' WHERE id=$1`, [articleId]);
