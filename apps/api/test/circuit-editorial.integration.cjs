@@ -394,3 +394,39 @@ test('concurrent claim revocation cannot leave a publicly readable stale approva
     publishing.release();
   }
 });
+
+test('untrusted PostgreSQL session cannot forge review, publication or evidence support', async (t) => {
+  const { rows: [actor] } = await db.query(
+    'SELECT rolsuper FROM pg_roles WHERE rolname=session_user');
+  if (!actor.rolsuper) {
+    t.skip('requires PostgreSQL superuser to create an isolated untrusted session');
+    return;
+  }
+  const role = 'circuit_untrusted_' + randomUUID().replaceAll('-', '');
+  await admin.query(`CREATE ROLE ${role} NOLOGIN`);
+  const client = await db.connect();
+  try {
+    await admin.query(`GRANT USAGE ON SCHEMA ${schema} TO ${role}`);
+    await admin.query(`GRANT SELECT, UPDATE ON ${schema}.circuit_editorial_articles,
+      ${schema}.circuit_editorial_claims,${schema}.circuit_editorial_evidence TO ${role}`);
+    await client.query(`SET SESSION AUTHORIZATION ${role}`);
+    await assert.rejects(client.query(`
+      UPDATE circuit_editorial_claims SET status='verified',
+        reviewer=session_user,reviewed_at=now() WHERE id=$1`, [claimId]),
+      /trusted circuit reviewer role required/);
+    await assert.rejects(client.query(`
+      UPDATE circuit_editorial_articles SET status='published',
+        reviewer=session_user,reviewed_at=now(),published_at=now() WHERE id=$1`,
+      [articleId]), /trusted circuit publisher role required/);
+    // An untrusted worker cannot turn candidate evidence into verified support.
+    await assert.rejects(client.query(`
+      UPDATE circuit_editorial_evidence SET supports=true
+      WHERE claim_id=$1 AND source_id=$2 AND supports=false`,
+      [claimId, sourceId]), /trusted circuit reviewer role required|permission denied/);
+  } finally {
+    await client.query('RESET SESSION AUTHORIZATION').catch(() => {});
+    client.release(true);
+    await admin.query(`DROP OWNED BY ${role}`);
+    await admin.query(`DROP ROLE ${role}`);
+  }
+});
