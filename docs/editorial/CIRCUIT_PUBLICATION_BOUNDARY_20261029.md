@@ -146,3 +146,39 @@ bundle and dry-run boundary. The PostgreSQL/Nest integration suite also tests
 failed-transaction rollback, conflicting provenance, unpublished API behavior,
 absence of review metadata and duplicate-import rejection. This work adds no
 public routes, photographs, automatic approvals or release flags.
+
+## Database actor boundary (forward-only migration 0015)
+
+Migration `0015_circuit_actor_boundary.sql` adds fail-closed role checks for
+transitions to `verified`, new `supports=true` evidence, and transitions
+to `published`. The reviewer label on each such transition must equal
+PostgreSQL `session_user` (not a JSON field or a caller-provided display
+name). Reviewer membership is checked against `grid_circuit_reviewer`;
+publication requires `grid_circuit_publisher`. PostgreSQL superusers are
+trusted implicitly and **must never be used by the importer, API or browser
+backend**. If roles are not provisioned, non-superuser approval is denied.
+
+The DBA-only template
+`packages/database/scripts/provision_circuit_roles.sql` creates four
+NOLOGIN group roles and scopes SELECT, INSERT and trigger-required UPDATE
+privileges for the importer, reader, reviewer and publisher. It deliberately
+does **not** grant membership to anyone. Run it only after reviewing the
+production schema and inherited grants, then provision distinct, audited
+personal PostgreSQL LOGIN accounts for reviewers. Do not grant reviewer or
+publisher membership to a shared service login, the importer, or the API.
+`session_user` cannot be supplied by an HTTP request or changed by
+`SET ROLE`; it is established by the authenticated database connection.
+
+This adds database-level identity binding and a privilege separation barrier,
+**not** proof that a person actually read the sources. The present schema
+still has no signed evidence manifest or externally authenticated editorial
+decision record. Keep `CIRCUIT_EDITORIAL_READ_ENABLED` disabled and PR #358
+unreleased until that workflow, the reviewer identity lifecycle, and
+independent review are complete. DBA superusers and table owners are part of
+the trusted computing base; audit role memberships and existing broad
+privileges before deploying. No membership or public read flag is enabled
+by this change.
+
+The integration suite now binds synthetic fixture approvals to its database
+session identity and checks a concurrent claim-revocation/publication race.
+These are security regression fixtures, not editorial approval.
