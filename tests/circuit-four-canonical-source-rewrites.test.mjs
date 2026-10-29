@@ -57,3 +57,43 @@ test('four historical turning points remain in both language editions', () => {
     }
   }
 });
+
+const secondPath = new URL('../docs/editorial/circuit-experience-v3/FOUR_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_INTEGRATED_20261029.json', import.meta.url);
+const secondData = JSON.parse(readFileSync(secondPath, 'utf8'));
+const secondChapters = new Map(secondData.chapters.map((chapter) => [chapter.circuit_id, chapter]));
+
+test('four further canonical chapters preserve sourced bilingual editions and draft-only status', () => {
+  assert.deepEqual([...secondChapters.keys()].sort(), ['monsanto', 'mont-tremblant', 'pedralbes', 'porto']);
+  assert.equal(secondData.publication_allowed, false);
+  assert.equal(secondData.human_approval, false);
+  for (const chapter of secondChapters.values()) {
+    assert.deepEqual(chapter.integrated_scene_indices, [1, 2, 3, 4, 5]);
+    assert.equal(chapter.verification_status, 'partial_fact_verification');
+    assert.equal(chapter.human_approval, false);
+    assert.equal(chapter.publication_allowed, false);
+    assert.ok(chapter.pending_review.length >= 2);
+    assert.ok(new Set(chapter.source_urls.map((url) => new URL(url).hostname)).size >= 2);
+    for (const locale of ['en', 'uk']) {
+      const paragraphs = chapter.article[locale].split('\n\n');
+      assert.equal(paragraphs.length, 8, chapter.circuit_id + ':' + locale);
+      assert.ok(chapter.article[locale].length >= 1000);
+      assert.ok(paragraphs.every((paragraph) => paragraph.trim().length > 60));
+    }
+  }
+});
+
+test('four further race reports retain specific turning points in both locales', () => {
+  const anchors = {
+    monsanto: [['62 laps', 'Brabham', 'Gregory'], ['62 кола', 'Бребем', 'Грегорі']],
+    porto: [['fuel leaked', 'Surtees', '55 laps'], ['пальне', 'Сертіс', '55 кіл']],
+    pedralbes: [['nine laps', 'Hawthorn', 'Fangio'], ["дев'яти кіл", 'Готорн', 'Фанхіо']],
+    'mont-tremblant': [['Amon', 'final-drive', '90 laps'], ['Амон', 'головної передачі', '90 кіл']],
+  };
+  for (const [id, [en, uk]] of Object.entries(anchors)) {
+    for (const [locale, fragments] of [['en', en], ['uk', uk]]) {
+      for (const fragment of fragments) {
+        assert.ok(secondChapters.get(id).article[locale].includes(fragment), id + ':' + locale + ':' + fragment);
+      }
+    }
+  }
+});
