@@ -168,8 +168,19 @@ test('cross-circuit links and incomplete transactions roll back without leakage'
   assert.equal((await read(circuitId, 'uk')).status, 404);
 });
 
-test('AI review metadata cannot be promoted to published', async () => {
+test('author self-review and AI review metadata cannot be promoted to published', async () => {
+  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer='Fixture writer',reviewed_at=now() WHERE id=$1`, [claimId]);
+  await assert.rejects(publish(), /circuit publication requires linked/);
+  await db.query(`UPDATE circuit_editorial_claims SET
+    reviewer='Independent fixture reviewer' WHERE id=$1`, [claimId]);
   await db.query(`UPDATE circuit_editorial_articles SET review_method='ai' WHERE id=$1`, [articleId]);
   await assert.rejects(publish(), /check constraint|violates check constraint/i);
   assert.equal((await read()).status, 404);
+  await db.query(`UPDATE circuit_editorial_articles SET review_method='human' WHERE id=$1`, [articleId]);
+  await publish();
+  assert.equal((await read()).status, 200);
+  await assert.rejects(db.query(
+    `UPDATE circuit_editorial_articles SET reviewer='Fixture writer' WHERE id=$1`, [articleId],
+  ), /check constraint|violates check constraint/i);
 });
