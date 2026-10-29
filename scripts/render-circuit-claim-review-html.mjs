@@ -7,6 +7,11 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
+if (process.argv.length !== 2) {
+  process.stderr.write('Usage: node scripts/render-circuit-claim-review-html.mjs (no arguments)\n');
+  process.exit(1);
+}
+
 const root = fileURLToPath(new URL('../', import.meta.url));
 const raw = execFileSync(process.execPath, [
   'scripts/circuit-claim-review-queue.mjs', '--format=json',
