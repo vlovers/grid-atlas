@@ -19,11 +19,11 @@ test('twelve source-linked EN/UK canonical circuit rewrites remain unpublished a
   assert.deepEqual(pointer.source_urls,chapter.source_urls);
   assert.ok(chapter.source_urls.some(url=>url.includes('motorsportmagazine.com')||url.includes('crash.net')),id);
   for(const loc of ['en','uk']){
-   const paragraphs=chapter.article[loc].split('\\n\\n');
+   const paragraphs=chapter.article[loc].split('\n\n');
    assert.equal(paragraphs.length,8,id+' '+loc);
    assert.ok(paragraphs[1].length>180,id+' '+loc+' historical context');
    assert.ok(paragraphs[6].length>180,id+' '+loc+' narrative detail');
-   assert.equal(pointer.word_count_approx[loc],chapter.article[loc].trim().split(/\\s+/).length);
+   assert.equal(pointer.word_count_approx[loc],chapter.article[loc].trim().split(/\s+/).length);
   }
  }
 });
