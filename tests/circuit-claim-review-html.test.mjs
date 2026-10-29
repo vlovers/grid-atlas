@@ -62,3 +62,15 @@ test('HTML is a self-contained non-executable research worksheet, not publicatio
   assert.equal(queue.summary.publication_ready, 0);
   assert.equal(queue.summary.independently_verified, 0);
 });
+
+test('offline renderer refuses approval, publish and unexpected arguments', () => {
+  for (const flag of ['--publish', '--approve', '--format=json']) {
+    const result = spawnSync(process.execPath,
+      ['scripts/render-circuit-claim-review-html.mjs', flag], {
+        cwd: root, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024,
+      });
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /Usage: node scripts\/render-circuit-claim-review-html/);
+    assert.equal(result.stdout, '');
+  }
+});
