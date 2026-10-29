@@ -64,3 +64,42 @@ test('new manuscripts do not mutate the existing canonical twenty index', () => 
     chapter.publication_allowed === false && chapter.human_approval === false));
   assert.ok(added.every((chapter) => chapter.source_documents.length === 1));
 });
+
+const editorialAnchors = {
+  'ain-diab': ['inaugural constructors', 'Кубок конструкторів'],
+  avus: ['Hans Herrmann', 'Ганс Геррманн'],
+  bugatti: ['20,000', '20 тисяч'],
+  dijon: ['lengthened', 'подовжили'],
+  jacarepagua: ['gearbox', 'коробку передач'],
+  zolder: ['1983', '1983'],
+  aida: ['second world drivers', 'другий титул'],
+  aintree: ['Motor Sport', 'Motor Sport'],
+  'caesars-palace': ['tyre trouble', 'проблеми з шинами'],
+  madring: ['Lance Stroll', 'Ленс Стролл'],
+  reims: ['Hans Herrmann', 'Ганс Геррманн'],
+  riverside: ['fine sand', 'дрібний пісок'],
+  'spa-francorchamps': ['engine failure', 'поломку двигуна'],
+};
+
+test('all 13 historical chapters retain a concrete bilingual narrative anchor and fail-closed review', () => {
+  assert.equal(Object.keys(editorialAnchors).length, 13);
+  for (const chapter of added) {
+    const anchors = editorialAnchors[chapter.circuit_id];
+    assert.ok(anchors, `No editorial anchor for ${chapter.circuit_id}`);
+    assert.ok(chapter.article.en.includes(anchors[0]), `${chapter.circuit_id}: missing English historical anchor`);
+    assert.ok(chapter.article.uk.includes(anchors[1]), `${chapter.circuit_id}: missing Ukrainian historical anchor`);
+    assert.equal(chapter.human_approval, false);
+    assert.equal(chapter.publication_allowed, false);
+  }
+});
+
+test('added contextual evidence is attached to the matching circuit, not promoted to approval', () => {
+  const byId = new Map(added.map((chapter) => [chapter.circuit_id, chapter]));
+  assert.ok(byId.get('bugatti').source_urls.some((url) => url.includes('a-history-of-the-french-gp-in-7-circuits')));
+  assert.ok(byId.get('aida').source_urls.includes('https://www.grandprix.com/races/pacific-gp-1995.html'));
+  assert.ok(byId.get('spa-francorchamps').source_urls.some((url) => url.includes('/archive/article/july-1966/16/belgian-gp-2/')));
+  for (const chapter of added) {
+    assert.equal(chapter.verification_status, 'partial_fact_verification');
+    assert.ok(chapter.pending_review.length >= 2, chapter.circuit_id);
+  }
+});
