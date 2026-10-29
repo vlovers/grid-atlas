@@ -210,6 +210,9 @@ test('author self-review and AI review metadata cannot be promoted to published'
   await assert.rejects(publish(), /circuit publication requires linked/);
   await db.query(`UPDATE circuit_editorial_claims SET
     reviewer='Independent fixture reviewer' WHERE id=$1`, [claimId]);
+  // Changing the reviewer on a verified claim now revokes its verified status.
+  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
   await db.query(`UPDATE circuit_editorial_articles SET review_method='ai' WHERE id=$1`, [articleId]);
   await assert.rejects(publish(), /check constraint|violates check constraint/i);
   assert.equal((await read()).status, 404);
@@ -242,4 +245,58 @@ test('claim-link deletion and evidence removal revoke publication', async () => 
     reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
   await publish();
   assert.equal((await read()).status, 200);
+});
+
+test('withdrawn and paused articles cannot reuse an old publication decision', async () => {
+  await db.query("UPDATE circuit_editorial_articles SET status='withdrawn' WHERE id=$1", [articleId]);
+  assert.equal((await read()).status, 404);
+  const { rows: [withdrawn] } = await db.query(
+    'SELECT status, reviewer, reviewed_at, published_at FROM circuit_editorial_articles WHERE id=$1',
+    [articleId],
+  );
+  assert.equal(withdrawn.status, 'withdrawn');
+  for (const key of ['reviewer', 'reviewed_at', 'published_at']) assert.equal(withdrawn[key], null);
+  await assert.rejects(db.query(
+    "UPDATE circuit_editorial_articles SET status='published' WHERE id=$1", [articleId],
+  ), /fresh review transition/);
+  assert.equal((await read()).status, 404);
+
+  await publish();
+  assert.equal((await read()).status, 200, 'new explicit review fixture can republish');
+  await db.query("UPDATE circuit_editorial_articles SET status='in_review' WHERE id=$1", [articleId]);
+  const { rows: [paused] } = await db.query(
+    'SELECT reviewer, reviewed_at, published_at FROM circuit_editorial_articles WHERE id=$1', [articleId]);
+  for (const key of ['reviewer', 'reviewed_at', 'published_at']) assert.equal(paused[key], null);
+  await assert.rejects(db.query(
+    "UPDATE circuit_editorial_articles SET status='published' WHERE id=$1", [articleId],
+  ), /fresh review transition/);
+  await publish();
+  assert.equal((await read()).status, 200);
+});
+
+test('claim reviewer relabelling and disputed status require a new claim review', async () => {
+  await db.query("UPDATE circuit_editorial_claims SET reviewer='Substituted reviewer' WHERE id=$1", [claimId]);
+  const { rows: [tampered] } = await db.query(
+    'SELECT status, reviewer, reviewed_at FROM circuit_editorial_claims WHERE id=$1', [claimId]);
+  assert.equal(tampered.status, 'needs_review');
+  assert.equal(tampered.reviewer, null);
+  assert.equal(tampered.reviewed_at, null);
+  assert.equal((await read()).status, 404);
+  await assert.rejects(publish(), /circuit publication requires linked/);
+
+  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+  await publish();
+  assert.equal((await read()).status, 200);
+
+  await db.query("UPDATE circuit_editorial_claims SET status='disputed' WHERE id=$1", [claimId]);
+  const { rows: [disputed] } = await db.query(
+    'SELECT status, reviewer, reviewed_at FROM circuit_editorial_claims WHERE id=$1', [claimId]);
+  assert.equal(disputed.status, 'disputed');
+  assert.equal(disputed.reviewer, null);
+  assert.equal(disputed.reviewed_at, null);
+  await assert.rejects(db.query(
+    "UPDATE circuit_editorial_claims SET status='verified' WHERE id=$1", [claimId],
+  ), /fresh review transition/);
+  await assert.rejects(publish(), /circuit publication requires linked/);
 });
