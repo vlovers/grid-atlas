@@ -1,4 +1,4 @@
-import { BadRequestException, Controller, Get, Inject, NotFoundException, Param, Query } from '@nestjs/common';
+import { BadRequestException, Controller, Get, Header, Inject, NotFoundException, Param, Query } from '@nestjs/common';
 import { Pool } from 'pg';
 import { createHash } from 'node:crypto';
 import { DB } from './tokens';
@@ -26,6 +26,8 @@ function locale(value?: string): 'uk' | 'en' {
 export class CircuitEditorialController {
   constructor(@Inject(DB) private readonly db: Pool) {}
 
+  // A withdrawn article must never survive an intermediary HTTP cache.
+  @Header('Cache-Control', 'private, no-store, max-age=0')
   @Get('circuits/:id/article')
   async article(@Param('id') rawId: string, @Query('locale') rawLocale?: string) {
     const id = circuitId(rawId);

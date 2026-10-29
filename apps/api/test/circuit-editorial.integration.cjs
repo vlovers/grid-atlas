@@ -107,6 +107,8 @@ test('claim must belong to circuit and have independent review and supporting ev
   await publish();
   const response = await read();
   assert.equal(response.status, 200);
+  assert.match(response.headers.get('cache-control') ?? '', /no-store/,
+    'withdrawn or revised editorial prose must not survive HTTP caches');
   const body = (await response.json()).data;
   assert.equal(body.title, 'Fixture circuit story');
   assert.equal(body.body_markdown, '## Weekend\n\nSynthetic circuit claim.');

@@ -90,3 +90,20 @@ migration 0013. Do not edit the migration after deployment; use a new version.
 
 See the existing offline review queue and claim desk for research preparation;
 they do not feed this publication schema automatically.
+
+## Dependent public reader (separate draft PR)
+
+The server-rendered circuit page may display **only** a published article returned
+by the gated circuit API. It does not import local review files or AI manuscripts.
+Two independent switches must be explicitly enabled after human acceptance:
+`CIRCUIT_EDITORIAL_READ_ENABLED=1` on the API and
+`CIRCUIT_EDITORIAL_UI_ENABLED=1` on the web server. Both default to off;
+neither flag creates or proves human approval. The web skips the API request
+entirely when its switch is off. A 404 or unavailable optional response never
+falls back to research drafts. Returned claim text and source locators are
+rendered as escaped React text, not interpreted as HTML/Markdown; evidence
+links require HTTPS, and each claim retains its individual citations. The
+read API sets `Cache-Control: private, no-store, max-age=0` to prevent stale
+published prose being served after a withdrawal or evidence change. This
+reader requires the circuit schema/API PR to land first and remains a draft
+until independent editorial/security review and full CI.
