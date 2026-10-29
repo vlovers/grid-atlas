@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "kind": "canonical_editorial_pointer_index",
+  "policy": "Single pointer to existing manuscript; do not duplicate article prose. This registry is not a public release manifest.",
+  "total_chapters": 20,
+  "publication_allowed": false,
+  "human_approval": false,
+  "chapters": [
+    {
+      "circuit_id": "sebring",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_TWENTY_SCENE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 0,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result",
+        "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 174,
+        "uk": 142
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Check title arithmetic, Brabham push details and exact race sequence",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "anderstorp",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_TWENTY_SCENE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1978/races/398/sweden/race-result",
+        "https://www.formula1.com/en/latest/article/from-the-six-wheeled-tyrrell-to-the-dual-rear-wing-ferrari-10-of-the.1uvMU2qhHxAphWRhgjxwCj"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 202,
+        "uk": 163
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify wording of voluntary fan-car withdrawal and technical legality",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "monaco",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_TWENTY_SCENE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1996/races/643/monaco/race-result",
+        "https://www.formula1.com/en/latest/article/olivier-panis-on-that-1996-monaco-grand-prix-victory.3ssD41qZZk0IiGkCdA6j0Z"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 177,
+        "uk": 153
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Cross-check tyre changes, overtakes and fuel-saving chronology",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dallas",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_TWENTY_SCENE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1984/races/474/dallas/race-result",
+        "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 207,
+        "uk": 167
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Validate source for collapsing Mansell and track degradation",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "east-london",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_EVIDENCE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 0,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result",
+        "https://www.formula1.com/en/information/drivers-hall-of-fame-jim-clark.2xXQsIYM7LBHJrP4Gw6rRD",
+        "https://www.formula1.com/en/results/1962/drivers"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 233,
+        "uk": 195
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify Clark retirement cause and championship points from period rules",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_EVIDENCE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/307/france/race-result",
+        "https://www.formula1.com/en/latest/article/from-rising-f1-talent-to-f1-talent-spotter-the-helmut-marko-story.5EF2AibQFGySAgi0Ycakgg",
+        "https://www.formula1.com/en/results/1972/races/307/france/starting-grid"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 232,
+        "uk": 199
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify Marko injury chronology and additional track safety details",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "rouen",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_EVIDENCE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/199/france/race-result",
+        "https://www.formula1.com/en/results/1962/races/199/french/race-result",
+        "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 243,
+        "uk": 210
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Validate Porsche constructor record separately from engine supply",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "pescara",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_INTEGRATED_EVIDENCE_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 232,
+        "uk": 188
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Confirm course geography, race duration and gap from historical circuit source",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "bremgarten",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_BREMGARTEN_ARGENTINA_MOSPORT_NIVELLES_INTEGRATED_20261029.json",
+      "canonical_record_index": 0,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 237,
+        "uk": 190
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Source period context beyond results and check last Swiss GP claims",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_BREMGARTEN_ARGENTINA_MOSPORT_NIVELLES_INTEGRATED_20261029.json",
+      "canonical_record_index": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 230,
+        "uk": 186
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Seek independent race narrative beyond result classification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "mosport",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_BREMGARTEN_ARGENTINA_MOSPORT_NIVELLES_INTEGRATED_20261029.json",
+      "canonical_record_index": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races/251/canada/race-result",
+        "https://www.formula1.com/en/latest/article/moments-in-time-the-canadian-grand-prix.b2X08bYGm8aYS430zVgly"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 229,
+        "uk": 181
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify lead change sequence against official retrospective",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "nivelles",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_BREMGARTEN_ARGENTINA_MOSPORT_NIVELLES_INTEGRATED_20261029.json",
+      "canonical_record_index": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 221,
+        "uk": 184
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify context of switch away from Spa and second visit in 1974",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "monsanto",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_INTEGRATED_20261029.json",
+      "canonical_record_index": 0,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 241,
+        "uk": 186
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Source circuit routing and Lisbon park historical map",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "porto",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_INTEGRATED_20261029.json",
+      "canonical_record_index": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1960/races/185/portugal/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 233,
+        "uk": 182
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify disqualification reason and Boavista route history",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "pedralbes",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_INTEGRATED_20261029.json",
+      "canonical_record_index": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/134/spain/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 243,
+        "uk": 199
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify Ascari pole/fastest-lap point and Lancia details",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_INTEGRATED_20261029.json",
+      "canonical_record_index": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 224,
+        "uk": 181
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Cross-check McLaren one-two and race context",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "montjuic",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_LAST_SCENE_ENRICHED_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 0,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1975/races/347/spain/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 244,
+        "uk": 189
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "High priority: independently source fatal incident, safety protests and stoppage before publication",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "zeltweg",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_LAST_SCENE_ENRICHED_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 1,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1964/races/221/austria/race-result"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 222,
+        "uk": 177
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Source airfield condition and reported reliability problems",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jarama",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_LAST_SCENE_ENRICHED_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 2,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result",
+        "https://www.formula1.com/en/latest/article/unlikely-wins-heroic-comebacks-and-iconic-championship-victories-the-10.5abnN4HdNv78rPyy0LosT4.5abnN4HdNv78rPyy0LosT4"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 235,
+        "uk": 190
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify Villeneuve's defensive tactics beyond classification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jerez",
+      "canonical_path": "docs/editorial/circuit-experience-v3/FOUR_LAST_SCENE_ENRICHED_MANUSCRIPTS_20261029.json",
+      "canonical_record_index": 3,
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result",
+        "https://www.formula1.com/en/latest/article/10-moments-of-ayrton-senna-brilliance-f1.5IhUxFnCQEJEXjLTqwUUg0"
+      ],
+      "locales": [
+        "en",
+        "uk"
+      ],
+      "word_count_approx": {
+        "en": 229,
+        "uk": 183
+      },
+      "paragraphs": {
+        "en": 7,
+        "uk": 7
+      },
+      "editorial_status": "draft_pending_independent_fact_and_literary_review",
+      "next_review": "Verify puncture, pit-stop and timing chronology from retrospective",
+      "human_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}
