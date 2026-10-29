@@ -26,6 +26,10 @@
 - This sprint adds shared driver/constructor participation calendars, observed roster changes, source-backed milestones and rights-gated image archives. See the [implemented behavior, screenshots and limits](../design/visual-storytelling-v2/README.md) and [current audit](../sprint-audit-2026-10-23.md).
 - The [unified archive batch](../design/unified-archive/README.md) extends existing editorial templates to catalogues, seasons, circuits and races, retains driver/constructor dossiers, and adds historical-context/AI provenance to the existing media registry. UK/EN navigation, reduced motion and enlarged-text reflow have dedicated cross-engine acceptance. Independent photographic approval and researched historical narratives remain separate work.
 
+## Circuit editorial publication boundary (29 October 2026)
+
+The [circuit editorial boundary](../editorial/CIRCUIT_PUBLICATION_BOUNDARY_20261029.md) introduces a separate circuit-specific schema and a disabled-by-default read-only API with evidence, revision and review invalidation. This is **not** an approval or public release: no researched circuit drafts have been imported, no publisher has been enabled, and independent claim-by-claim human verification remains required. The driver-specific publisher cannot be reused for circuits.
+
 ## After the first useful beta
 
 - Expand independent scoring-rule verification and sprint coverage. Source-reported driver/constructor classifications already exist (#197), separate from result summaries; do not describe them as independently recalculated FIA classifications.
