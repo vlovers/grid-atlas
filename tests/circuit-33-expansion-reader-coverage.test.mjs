@@ -127,3 +127,31 @@ test('historical scoring, retrospective classifications and race circumstances s
   assert.ok(byId.get('dijon').source_urls.includes('https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/'));
   assert.ok(byId.get('riverside').source_urls.some((url) => url.includes('dramatic-1960-season-finale')));
 });
+
+test('bilingual race turning points survive future editorial revisions', () => {
+  const turningPoints = {
+    'ain-diab': ['lap 39', '39-му колі'],
+    avus: ['two 30-lap heats', 'два заїзди по 30 кіл'],
+    bugatti: ['24-hour race', '24-годинної гонки'],
+    dijon: ['opening 46 laps', 'перші 46 кіл'],
+    jacarepagua: ['61 racing laps', '61 гоночне коло'],
+    zolder: ["Tyrrell's later exclusion", 'виключення Tyrrell'],
+    aida: ['second drivers', 'другий чемпіонський титул'],
+    aintree: ['lap 26', '26-му колі'],
+    'caesars-palace': ['fifth place', 'п’яте місце'],
+    madring: ['Virtual Safety Car', 'VSC'],
+    reims: ['0.1 seconds behind', '0,1 секунди'],
+    riverside: ['fuel flare-ups', 'спалахів пального'],
+    'spa-francorchamps': ["Stewart's wrecked BRM", 'BRM Стюарта'],
+  };
+  assert.equal(Object.keys(turningPoints).length, 13);
+  const byId = new Map(added.map((chapter) => [chapter.circuit_id, chapter]));
+  for (const [id, [english, ukrainian]] of Object.entries(turningPoints)) {
+    const chapter = byId.get(id);
+    assert.ok(chapter, id);
+    assert.ok(chapter.article.en.includes(english), id + ':en missing race event');
+    assert.ok(chapter.article.uk.includes(ukrainian), id + ':uk missing race event');
+    assert.equal(chapter.human_approval, false, id);
+    assert.equal(chapter.publication_allowed, false, id);
+  }
+});
