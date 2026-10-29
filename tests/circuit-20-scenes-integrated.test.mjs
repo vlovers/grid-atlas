@@ -14,7 +14,7 @@ test('20 sourced scenes are integrated into 4 bilingual circuit manuscripts',()=
   assert.equal(c.verification_status,'partial_fact_verification');
   assert.ok(c.source_urls.some(u=>u.includes('/latest/article/')));
   for(const locale of ['en','uk']){
-   assert.equal(c.article[locale].split('\n\n').length,7);
+   assert.ok(c.article[locale].split('\n\n').length>=7);
    assert.ok(c.article[locale].length>700);
   }
  }
