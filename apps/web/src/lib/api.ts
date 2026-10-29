@@ -42,3 +42,25 @@ export async function getPublishedArticle(driverId: string, locale: 'uk' | 'en',
 /** Optional prose has its own state and a shorter budget than essential records. */
 export const getOptionalPublishedArticle = (id: string, locale: 'uk' | 'en') =>
   optionalEnrichment(() => getPublishedArticle(id, locale, 2000));
+
+/** Separate circuit publication boundary; never read draft bundles or client-side approval flags. */
+export async function getPublishedCircuitArticle(circuitId: string, locale: 'uk' | 'en', timeoutMs = 8000): Promise<PublishedArticle | null> {
+  const path = `/api/circuits/${circuitId}/article?locale=${locale}`;
+  try {
+    const payload = await requestApi(path, { timeoutMs });
+    try {
+      if (!payload || typeof payload !== 'object' || !('data' in payload)) throw new Error();
+      return parsePublishedArticle(payload.data, locale);
+    } catch {
+      console.error({ event: 'editorial_api_failed', endpoint: '/api/circuits/:id/article', reason: 'contract' });
+      throw new ApiRequestError('contract');
+    }
+  } catch (error) {
+    if (error instanceof ApiRequestError && error.status === 404) return null;
+    throw error;
+  }
+}
+
+/** Optional reader data is bounded; a missing/invalid article never exposes research drafts. */
+export const getOptionalPublishedCircuitArticle = (id: string, locale: 'uk' | 'en') =>
+  optionalEnrichment(() => getPublishedCircuitArticle(id, locale, 2000));

@@ -19,7 +19,8 @@ import type { Metadata } from 'next';
 import { routeMetadata } from '@/lib/seo';
 import { entitySeo } from '@/lib/entity-seo';
 import SeoBreadcrumbs from '@/components/seo-breadcrumbs';
-import { getData } from '@/lib/api';
+import { getData, getOptionalPublishedCircuitArticle } from '@/lib/api';
+import { CircuitReviewedArticle } from '@/components/editorial/circuit-reviewed-article';
 import { catalogueParams, pageHref, validId, type CatalogueParams } from '@/lib/catalogue';
 import styles from './circuit.module.css';
 
@@ -59,6 +60,11 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     getData<CircuitTechnicalEvent>(`/api/circuits/${id}/technical-history`),
   ]);
   if (!circuit) notFound();
+  // Independent operator switch: off means no circuit editorial API request at all.
+  // The API has its own default-off release gate; neither flag approves manuscripts.
+  const reviewed = process.env.CIRCUIT_EDITORIAL_UI_ENABLED === '1'
+    ? await getOptionalPublishedCircuitArticle(id, lang) : null;
+  const publishedArticle = reviewed?.status === 'available' ? reviewed.value : null;
   const wins = new Map<string, { id: string; name: string; races: Set<string> }>();
   for (const race of history) for (const winner of race.winners) {
     const driver = wins.get(winner.driver_id) ?? { id: winner.driver_id, name: winner.driver_name, races: new Set<string>() };
@@ -83,6 +89,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <SourceAttribution locale={lang} />
     <EditorialTabs label={uk ? 'Розділи траси' : 'Circuit sections'} items={[
       { id: 'circuit-biography', label: uk ? 'Історія траси' : 'Circuit history' },
+      ...(publishedArticle ? [{ id: 'circuit-reviewed-article', label: uk ? 'Редакційна стаття' : 'Editorial article' }] : []),
       ...(hasCorners ? [{ id: 'circuit-corners', label: uk ? 'Повороти' : 'Corners' }] : []),
       ...(hasMoments ? [{ id: 'circuit-moments', label: uk ? 'Легендарні моменти' : 'Memorable moments' }] : []),
       { id: 'circuit-layouts', label: uk ? 'Зміни траси' : 'Changing layouts' },
@@ -92,6 +99,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <section id="circuit-biography" tabIndex={-1}><CircuitBiography circuitId={circuit.external_id} locale={lang} />
       {identities[0] && <IdentityFacts identity={identities[0]} locale={lang} />}
     </section>
+    {publishedArticle && <CircuitReviewedArticle article={publishedArticle} locale={lang} />}
     {hasCorners && <section id="circuit-corners" tabIndex={-1}><CircuitCornerGuide circuitId={circuit.external_id} locale={lang} availableLayouts={layouts.map(layout => layout.external_layout_id)} /></section>}
     {hasMoments && <section id="circuit-moments" tabIndex={-1}><CircuitMoments circuitId={circuit.external_id} locale={lang} history={history} /></section>}
     <section id="circuit-layouts" tabIndex={-1}>
