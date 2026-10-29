@@ -299,3 +299,53 @@ test('claim reviewer relabelling and disputed status require a new claim review'
   ), /fresh review transition/);
   await assert.rejects(publish(), /circuit publication requires linked/);
 });
+
+
+test('transactional research staging creates only drafts and unsupported evidence', async () => {
+  const {stage}=require('../scripts/stage-circuit-editorial.cjs');
+  const bundle={
+    schema_version:1,release_kind:'circuit_research_draft',
+    publication_status:'unreviewed',circuit_external_id:'fixture-circuit',
+    locale:'uk',slug:'fixture-uk',title:'Unreviewed Ukrainian research',
+    author:'Synthetic researcher',body_markdown:'## Research\n\nUnverified synthetic claim.',
+    claims:[{statement:'Unverified synthetic claim.',evidence:[{
+      source_url:'https://example.org/staged-circuit-only',
+      title:'Staged synthetic source',publisher:'Fixture publisher',
+      accessed_on:'2026-10-29',locator:'synthetic section 2'
+    }]}]
+  };
+  const client=await db.connect();
+  try {
+    const conflict=structuredClone(bundle);
+    conflict.claims[0].evidence[0].source_url='https://example.org/circuit-fixture';
+    conflict.claims[0].evidence[0].title='Wrong metadata for reused URL';
+    await assert.rejects(stage(client,conflict,'synthetic-circuit-editorial'),
+      /conflicting source provenance/);
+    const {rows:[before]}=await db.query(
+      "SELECT count(*)::int AS n FROM circuit_editorial_articles WHERE circuit_id=$1 AND locale='uk'",
+      [circuitId]);
+    assert.equal(before.n,0,'failed staging rolls back article, claim and source writes');
+
+    const staged=await stage(client,bundle,'synthetic-circuit-editorial');
+    assert.equal(staged.published,false);
+    assert.equal(staged.status,'draft');
+    assert.equal(staged.claims,1);
+    assert.equal((await read(circuitId,'uk')).status,404,
+      'unreviewed staged manuscript must not be exposed by the public endpoint');
+    const {rows:[state]}=await db.query(
+      "SELECT a.status,a.reviewer,a.reviewed_at,a.published_at,a.review_revision_sha256, c.status AS claim_status,c.reviewer AS claim_reviewer,e.supports FROM circuit_editorial_articles a JOIN circuit_editorial_article_claims ac ON ac.article_id=a.id JOIN circuit_editorial_claims c ON c.id=ac.claim_id JOIN circuit_editorial_evidence e ON e.claim_id=c.id WHERE a.id=$1",
+      [staged.article_id]);
+    assert.equal(state.status,'draft');
+    assert.equal(state.claim_status,'needs_review');
+    assert.equal(state.supports,false);
+    for(const key of ['reviewer','reviewed_at','published_at',
+      'review_revision_sha256','claim_reviewer']) assert.equal(state[key],null,key);
+
+    await assert.rejects(stage(client,bundle,'synthetic-circuit-editorial'),
+      /existing locale article/);
+    const {rows:[after]}=await db.query(
+      "SELECT count(*)::int AS n FROM circuit_editorial_articles WHERE circuit_id=$1 AND locale='uk'",
+      [circuitId]);
+    assert.equal(after.n,1,'re-import refuses to overwrite an existing locale article');
+  } finally {client.release();}
+});
