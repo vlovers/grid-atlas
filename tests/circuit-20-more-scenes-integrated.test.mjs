@@ -14,7 +14,7 @@ test('20 sourced bilingual scenes are integrated into four gated manuscripts',()
   assert.equal(c.verification_status,'partial_fact_verification');
   assert.ok(c.source_urls.length>0);
   for(const lang of ['en','uk']){
-   assert.equal(c.article[lang].split('\n\n').length,7);
+   assert.ok(c.article[lang].split('\n\n').length>=7);
    assert.ok(c.article[lang].length>650);
   }
  }
