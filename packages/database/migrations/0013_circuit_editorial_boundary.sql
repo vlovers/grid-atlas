@@ -95,6 +95,7 @@ BEGIN
       WHERE ac.article_id = NEW.id AND (
         c.circuit_id <> NEW.circuit_id OR c.status <> 'verified'
         OR c.review_method <> 'human' OR c.reviewer IS NULL OR c.reviewed_at IS NULL
+        OR lower(btrim(c.reviewer)) = lower(btrim(NEW.author))
         OR NOT EXISTS (
           SELECT 1 FROM circuit_editorial_evidence e
           WHERE e.claim_id = c.id AND e.supports = true
