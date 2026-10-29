@@ -69,7 +69,7 @@ const read = (id = circuitId, locale = 'en') =>
 
 const publish = () => db.query(`
   UPDATE circuit_editorial_articles SET status='published',
-    reviewer='Independent fixture reviewer', reviewed_at=now(), published_at=now()
+    reviewer=session_user, reviewed_at=now(), published_at=now()
   WHERE id=$1`, [articleId]);
 
 test('default-off read flag, invalid parameters and draft fail closed', async () => {
@@ -103,7 +103,7 @@ test('claim must belong to circuit and have independent review and supporting ev
   await assert.rejects(publish(), /circuit publication requires linked/);
   await db.query(`
     UPDATE circuit_editorial_claims SET status='verified',
-      reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+      reviewer=session_user, reviewed_at=now() WHERE id=$1`, [claimId]);
   await publish();
   const response = await read();
   assert.equal(response.status, 200);
@@ -174,7 +174,7 @@ test('prose edits, evidence edits and source metadata changes revoke publication
   assert.equal((await read()).status, 404);
   await assert.rejects(publish(), /circuit publication requires linked/);
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
-    reviewer='Independent fixture reviewer',reviewed_at=now() WHERE id=$1`, [claimId]);
+    reviewer=session_user,reviewed_at=now() WHERE id=$1`, [claimId]);
   await publish();
   assert.equal((await read()).status, 200);
   await db.query('UPDATE content_sources SET title=$1 WHERE id=$2',
@@ -205,13 +205,14 @@ test('cross-circuit links and incomplete transactions roll back without leakage'
 });
 
 test('author self-review and AI review metadata cannot be promoted to published', async () => {
-  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
-    reviewer='Fixture writer',reviewed_at=now() WHERE id=$1`, [claimId]);
+  await assert.rejects(db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer='Fixture writer',reviewed_at=now() WHERE id=$1`, [claimId]),
+    /claim reviewer must match authenticated database session/);
   await assert.rejects(publish(), /circuit publication requires linked/);
   // Explicitly withdraw the self-reviewed claim before an independent re-review.
   await db.query("UPDATE circuit_editorial_claims SET status='needs_review' WHERE id=$1", [claimId]);
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
-    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+    reviewer=session_user, reviewed_at=now() WHERE id=$1`, [claimId]);
   await db.query(`UPDATE circuit_editorial_articles SET review_method='ai' WHERE id=$1`, [articleId]);
   await assert.rejects(publish(), /check constraint|violates check constraint/i);
   assert.equal((await read()).status, 404);
@@ -241,7 +242,7 @@ test('claim-link deletion and evidence removal revoke publication', async () => 
   await assert.rejects(publish(), /circuit publication requires linked/,
     'restoring evidence must not silently restore independent claim review');
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
-    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+    reviewer=session_user, reviewed_at=now() WHERE id=$1`, [claimId]);
   await publish();
   assert.equal((await read()).status, 200);
 });
@@ -284,7 +285,7 @@ test('claim reviewer relabelling and disputed status require a new claim review'
   await assert.rejects(publish(), /circuit publication requires linked/);
 
   await db.query(`UPDATE circuit_editorial_claims SET status='verified',
-    reviewer='Independent fixture reviewer', reviewed_at=now() WHERE id=$1`, [claimId]);
+    reviewer=session_user, reviewed_at=now() WHERE id=$1`, [claimId]);
   await publish();
   assert.equal((await read()).status, 200);
 
@@ -348,4 +349,48 @@ test('transactional research staging creates only drafts and unsupported evidenc
       [circuitId]);
     assert.equal(after.n,1,'re-import refuses to overwrite an existing locale article');
   } finally {client.release();}
+});
+
+test('database session identity cannot be replaced by a forged reviewer label', async () => {
+  await assert.rejects(db.query(`
+    UPDATE circuit_editorial_claims SET status='verified',
+      reviewer='Invented reviewer',reviewed_at=now() WHERE id=$1`, [claimId]),
+    /claim reviewer must match authenticated database session/);
+  await db.query(`UPDATE circuit_editorial_claims SET status='verified',
+    reviewer=session_user,reviewed_at=now() WHERE id=$1`, [claimId]);
+  await assert.rejects(db.query(`
+    UPDATE circuit_editorial_articles SET status='published',
+      reviewer='Invented reviewer',reviewed_at=now(),published_at=now() WHERE id=$1`,
+    [articleId]), /circuit reviewer must match authenticated database session/);
+  assert.equal((await read()).status, 404);
+});
+
+test('concurrent claim revocation cannot leave a publicly readable stale approval', async () => {
+  const changing = await db.connect();
+  const publishing = await db.connect();
+  let started = false;
+  try {
+    await changing.query('BEGIN');
+    await changing.query("UPDATE circuit_editorial_claims SET status='needs_review' WHERE id=$1",
+      [claimId]);
+    const attempt = publishing.query(`
+      UPDATE circuit_editorial_articles SET status='published',
+        reviewer=session_user,reviewed_at=now(),published_at=now() WHERE id=$1`,
+      [articleId]).then(() => ({ ok: true }), error => ({ ok: false, error }));
+    started = true;
+    // The revocation transaction holds the article row lock through the trigger.
+    await new Promise(resolve => setTimeout(resolve, 80));
+    await changing.query('COMMIT');
+    const result = await attempt;
+    assert.equal(result.ok, false, 'publication must not pass a concurrent revocation');
+    assert.match(result.error.message, /circuit publication requires linked/);
+    assert.equal((await read()).status, 404);
+    const { rows: [row] } = await db.query(
+      'SELECT status FROM circuit_editorial_articles WHERE id=$1', [articleId]);
+    assert.notEqual(row.status, 'published');
+  } finally {
+    if (started) await changing.query('ROLLBACK').catch(() => {});
+    changing.release();
+    publishing.release();
+  }
 });
