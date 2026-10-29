@@ -33,6 +33,15 @@ registry; **media has no circuit publication path**.
   timestamps on an already published row also revokes publication. Changing claim text/review, evidence, source
   metadata or article–claim links invalidates the affected review.
   Cross-circuit links are rejected and subject identity is immutable.
+- Forward-only migration `0014_circuit_review_revocation.sql` closes a stale-
+  approval loophole: explicitly withdrawing or pausing a published article
+  clears its old reviewer and timestamps while preserving the withdrawn or
+  in-review status. A later promotion requires a fresh review transition;
+  merely toggling status back to `published` fails. A verified claim whose
+  reviewer or review timestamp is changed loses verification, and disputing
+  or rejecting a verified claim clears the old review. Restoring `verified`
+  likewise requires a fresh review transition. This is integrity protection,
+  **not** authentication or proof that a person reviewed the material.
 - The public API route `GET /api/circuits/:id/article?locale=uk|en` is
   **disabled by default**. Without
   `CIRCUIT_EDITORIAL_READ_ENABLED=1` it returns 404, including for rows
@@ -57,7 +66,8 @@ checksum in the API readiness contract, independent schema and disabled-by-
 default API gate. `apps/api/test/circuit-editorial.integration.cjs` creates
 a disposable PostgreSQL schema, applies the checked-in migrations, and exercises
 HTTP visibility, exact body digest matching, reviewer-metadata tamper revocation,
-evidence-first review, source/evidence/link revocation, cross-circuit link
+evidence-first review, withdrawn/paused article reapproval, verified claim
+reviewer tampering and disputed-claim reapproval, source/evidence/link revocation, cross-circuit link
 rejection, AI/self-review rejection and transactional rollback. All names
 and assertions in that test are **synthetic fixtures**, not F1 history.
 
@@ -75,7 +85,8 @@ pnpm --filter @grid-atlas/api test:integration
 ```
 
 The migrator is forward-only and the API readiness contract now requires
-migration 0013. Do not edit the migration after deployment; use a new version.
+migrations 0013 and 0014. Do not edit either migration after deployment;
+use a new forward-only version.
 
 ## Remaining release blockers
 
