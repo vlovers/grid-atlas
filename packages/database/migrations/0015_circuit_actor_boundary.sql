@@ -4,7 +4,7 @@ CREATE FUNCTION circuit_editorial_actor_allowed(required_role TEXT)
 RETURNS BOOLEAN LANGUAGE sql STABLE AS $$
  SELECT EXISTS (SELECT 1 FROM pg_roles a WHERE a.rolname=session_user AND a.rolsuper)
  OR EXISTS (SELECT 1 FROM pg_roles r WHERE r.rolname=required_role
-   AND pg_has_role(session_user,r.oid,'member'));
+   AND pg_has_role(session_user,r.rolname,'member'));
 $$;
 CREATE FUNCTION circuit_editorial_authorize_article() RETURNS trigger LANGUAGE plpgsql AS $$
 BEGIN
