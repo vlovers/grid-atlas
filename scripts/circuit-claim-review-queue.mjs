@@ -51,17 +51,21 @@ const entries = source.circuits.flatMap(circuit => circuit.stories.map(story => 
   const raceYears = story.sources.flatMap(item =>
     [...item.url.matchAll(/\/en\/results\/(\d{4})\/races\/\d+\//g)].map(match => Number(match[1])));
   const yearScopeMismatch = raceYears.length > 0 && !raceYears.includes(story.year);
+  // A matching source does not excuse additional race-result links from other years.
+  const crossYearResultSources = raceYears.some(year => year !== story.year);
   const numberDiff = differences(numerals(story.narrative.en), numerals(story.narrative.uk));
   const numeralMismatch = numberDiff.only_en.length > 0 || numberDiff.only_uk.length > 0;
   const flags = [
     ...(circuit.unique_source_urls === 1 ? ['single_source_dossier'] : []),
     ...(classificationOnly ? ['classification_only_sources'] : []),
     ...(yearScopeMismatch ? ['race_source_year_mismatch'] : []),
+    ...(crossYearResultSources ? ['cross_year_result_source_requires_context'] : []),
     ...(numeralMismatch ? ['bilingual_numeral_difference'] : []),
     ...(sourceKinds.includes('other_source') ? ['other_source_needs_provenance'] : []),
   ];
   const riskScore = (circuit.unique_source_urls === 1 ? 5 : 0) +
     (classificationOnly ? 3 : 0) + (yearScopeMismatch ? 3 : 0) +
+    (crossYearResultSources ? 2 : 0) +
     (numeralMismatch ? 2 : 0) + (sourceKinds.includes('other_source') ? 1 : 0);
   return {
     key: circuit.circuit_id + ':' + story.story_index,
@@ -99,6 +103,7 @@ const summary = {
   classification_only_stories: entries.filter(entry => entry.flags.includes('classification_only_sources')).length,
   bilingual_numeral_review_candidates: entries.filter(entry => entry.flags.includes('bilingual_numeral_difference')).length,
   race_year_review_candidates: entries.filter(entry => entry.flags.includes('race_source_year_mismatch')).length,
+  cross_year_source_review_candidates: entries.filter(entry => entry.flags.includes('cross_year_result_source_requires_context')).length,
   independently_verified: 0,
   publication_ready: 0,
 };
@@ -135,6 +140,7 @@ function markdown() {
     '- ' + summary.classification_only_stories + ' stories cite only result/classification sources',
     '- ' + summary.bilingual_numeral_review_candidates + ' stories require numeric EN/UK comparison',
     '- ' + summary.race_year_review_candidates + ' stories require race-year scope review',
+    '- ' + summary.cross_year_source_review_candidates + ' stories cite another year’s race results',
     '',
   ];
   for (const item of entries) {
