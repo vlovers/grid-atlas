@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "four_classification_grounded_manuscripts",
+  "human_approval": false,
+  "publication_allowed": false,
+  "chapters": [
+    {
+      "circuit_id": "monsanto",
+      "title": {
+        "en": "One brief summer in Lisbon",
+        "uk": "Одне коротке літо в Лісабоні"
+      },
+      "article": {
+        "en": "For one summer afternoon in 1959, Lisbon's Monsanto Park became a Formula 1 circuit. Stirling Moss won the Portuguese Grand Prix in his Cooper-Climax, leaving the other podium finishers a lap behind. It is a surprising setting for a World Championship race: a park turned into a racing venue and a result preserved long after the event disappeared from the calendar. Moss's victory is the easiest part to remember. The unusual place is what gives the story its character.\n\nOn 23 August 1959, Formula 1 visited Monsanto Park in Lisbon for the Portuguese Grand Prix. A park, rather than a permanent racing facility, became the setting for a championship race.\n\nStirling Moss covered all 62 laps in his Cooper-Climax and won in 2:11:55.410. The next driver to finish was already a lap behind.\n\nMasten Gregory took second in another Cooper-Climax. The two leading cars carried the same constructor name, but Moss had opened a full-lap advantage.\n\nDan Gurney finished third for Ferrari, also one lap behind the winner. Two Coopers and one Ferrari occupied the podium on Lisbon's unusual circuit.\n\nJack Brabham retired after 23 laps in his Cooper-Climax. While Moss won for the same constructor, Brabham's afternoon ended early, one of several retirements in the field.\n\nThe race has long vanished from the calendar, but its setting is impossible to confuse with another. For a moment, Lisbon's park was a World Championship stage, and Moss gave it a winner's name.",
+        "uk": "Одного літнього дня 1959 року лісабонський парк Монсанту перетворився на трасу Формули-1. Стірлінг Мосс виграв Гран-прі Португалії на Cooper-Climax, залишивши решту призерів із відставанням на коло. Незвичайне місце для чемпіонатної гонки: парк стає автодромом, а результат пам'ятають навіть після зникнення етапу з календаря. Перемогу Мосса запам'ятати просто. Саме лісабонські декорації роблять історію особливою.\n\n23 серпня 1959 року Формула-1 приїхала до лісабонського парку Монсанту на Гран-прі Португалії. Парк, а не стаціонарний автодром, став місцем чемпіонатної гонки.\n\nСтірлінг Мосс подолав усі 62 кола на Cooper-Climax і переміг із часом 2:11:55,410. Наступний гонщик фінішував із відставанням на коло.\n\nМастен Грегорі посів друге місце на іншому Cooper-Climax. Перші дві машини представляли одного конструктора, але Мосс відірвався на ціле коло.\n\nДен Герні став третім на Ferrari, також програвши переможцю коло. Два Cooper й одна Ferrari зайняли подіум на незвичній лісабонській трасі.\n\nДжек Бребем зійшов після 23 кіл на Cooper-Climax. Поки Мосс перемагав на машині того самого конструктора, день Бребема завершився завчасно.\n\nГонка давно зникла з календаря, але її місце проведення важко сплутати з будь-яким іншим. На коротку мить лісабонський парк став сценою чемпіонату світу, а Мосс залишив на ній ім'я переможця."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
+      ],
+      "source_documents": [
+        "TWENTY_AUDIT_APPLIED_MANUSCRIPTS_20261029.json",
+        "TWENTY_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_20261029.json"
+      ],
+      "verification_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "porto",
+      "title": {
+        "en": "A Grand Prix in the streets",
+        "uk": "Гран-прі посеред міських вулиць"
+      },
+      "article": {
+        "en": "In 1960, Formula 1 arrived not at a modern permanent racing complex but on the streets of Porto. Jack Brabham won the Portuguese Grand Prix, and Bruce McLaren made it a Cooper-Climax one-two. The city supplied the setting; the two drivers supplied the result. For a brief weekend, ordinary roads carried a World Championship battle. When the engines fell silent, the story remained attached to a place most visitors would never guess had hosted the sport.\n\nThe Portuguese Grand Prix took place on the Circuit da Boavista in Porto on 14 August 1960. City roads hosted a full World Championship race rather than everyday traffic.\n\nJack Brabham won the 55-lap race in his Cooper-Climax, finishing in 2:19:00.030. The city circuit became another winning venue for the reigning champion.\n\nBruce McLaren followed Brabham in a second Cooper-Climax, 57.970 seconds behind. The team filled the first two finishing positions on Porto's streets.\n\nJim Clark finished third in a Lotus-Climax, 113.230 seconds behind Brabham. He was just ahead of Wolfgang von Trips, whose Ferrari finished fourth.\n\nStirling Moss covered 50 laps in his Lotus-Climax but appears as disqualified in the final classification. A completed stretch of racing did not become a finishing position.\n\nWhen the Grand Prix was over, Porto returned to being a city of streets rather than a circuit. For Brabham and McLaren, those same roads had already become part of their racing careers.",
+        "uk": "У 1960 році Формула-1 приїхала не до сучасного автодрому, а просто на вулиці Порту. Джек Бребем виграв Гран-прі Португалії, а Брюс Макларен приніс Cooper-Climax дубль. Місто стало декорацією, двоє пілотів — головними героями. На короткий вікенд звичайні дороги перетворилися на арену чемпіонату світу. Коли двигуни стихли, історія залишилася там, де сьогодні не кожен турист запідозрить колишню трасу.\n\n14 серпня 1960 року Гран-прі Португалії проходив на трасі Боавішта в Порту. Міські дороги приймали чемпіонатну гонку замість звичайного руху.\n\nДжек Бребем виграв гонку із 55 кіл на Cooper-Climax із часом 2:19:00,030. Міська траса стала ще одним місцем перемоги чинного чемпіона.\n\nБрюс Макларен фінішував другим на іншому Cooper-Climax, програвши 57,970 секунди. Команда зайняла два перші місця на вулицях Порту.\n\nДжим Кларк став третім на Lotus-Climax, програвши Бребему 113,230 секунди. Він випередив Вольфганга фон Тріпса, який фінішував четвертим на Ferrari.\n\nСтірлінг Мосс пройшов 50 кіл на Lotus-Climax, але в підсумковому протоколі значиться дискваліфікованим. Довга гонка не принесла йому фінішного місця.\n\nКоли Гран-прі завершився, Порту знову став містом звичайних вулиць, а не гоночною трасою. Для Бребема й Макларена ті самі дороги вже назавжди ввійшли до їхніх кар'єр."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1960/races/185/portugal/race-result"
+      ],
+      "source_documents": [
+        "TWENTY_AUDIT_APPLIED_MANUSCRIPTS_20261029.json",
+        "TWENTY_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_20261029.json"
+      ],
+      "verification_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "pedralbes",
+      "title": {
+        "en": "The champion does not win the finale",
+        "uk": "Чемпіон не виграє фінал"
+      },
+      "article": {
+        "en": "Juan Manuel Fangio was world champion in 1954. That did not mean he would win the season's last Grand Prix. At Pedralbes, Mike Hawthorn crossed the line first for Ferrari; Fangio's Mercedes finished third. Even pole position could not promise success: Alberto Ascari had started at the front in a Lancia but retired early. Barcelona's finale offered a neat reminder that Formula 1 has never cared much for certainty. The fastest on Saturday and the champion of the year were both beaten on Sunday.\n\nThe final round of the 1954 World Championship was held on 24 October at the Circuit de Pedralbes in Barcelona. A city circuit closed a season already won by Fangio.\n\nMike Hawthorn won for Ferrari after 80 laps, while world champion Juan Manuel Fangio finished third in his Mercedes-Benz, a lap behind.\n\nLuigi Musso finished second for Maserati, 73.200 seconds behind Hawthorn. Ferrari, Maserati and Mercedes-Benz each claimed one of the top three places.\n\nAlberto Ascari completed only ten laps in his Lancia and retired. His official result also includes one championship point, illustrating how period scoring could reward more than a finishing position.\n\nStirling Moss retired his Maserati after 20 laps. While Hawthorn celebrated, another celebrated driver saw his Barcelona Grand Prix end far short of the flag.\n\nThe pole sitter did not finish, the champion did not win, and Hawthorn took the trophy. Pedralbes gave 1954 a farewell that refused to follow any simple ranking of favourites.",
+        "uk": "Хуан-Мануель Фанхіо став чемпіоном світу 1954 року. Але це не означало, що він переможе в останньому Гран-прі сезону. У Педральбесі першим фінішував Майк Готорн на Ferrari, а Mercedes Фанхіо стала третьою. Навіть поул нічого не гарантував: Альберто Аскарі стартував попереду всіх на Lancia, та рано зійшов. Барселонський фінал нагадав: у Формулі-1 не буває певності. І найшвидшого у кваліфікації, і чемпіона року в неділю переміг інший.\n\n24 жовтня 1954 року останній етап чемпіонату відбувся на трасі Педральбес у Барселоні. Міське кільце завершувало сезон, у якому титул уже здобув Фанхіо.\n\nМайк Готорн виграв на Ferrari після 80 кіл, а чемпіон світу Хуан-Мануель Фанхіо став третім на Mercedes-Benz із відставанням на коло.\n\nЛуїджі Муссо став другим на Maserati, програвши Готорну 73,200 секунди. Ferrari, Maserati й Mercedes-Benz отримали по одному місцю на подіумі.\n\nАльберто Аскарі проїхав на Lancia лише десять кіл і зійшов. Проте він здобув одне чемпіонатне очко: тодішня система нарахувань відзначала не лише фінішні місця.\n\nСтірлінг Мосс зійшов на Maserati після 20 кіл. Поки Готорн святкував перемогу, для іншого відомого гонщика Гран-прі Барселони закінчився задовго до фінішу.\n\nВолодар поулу не фінішував, чемпіон не переміг, а кубок забрав Готорн. Педральбес подарував сезону 1954 року прощання, яке не підкорилося жодному простому списку фаворитів."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/134/spain/race-result"
+      ],
+      "source_documents": [
+        "TWENTY_AUDIT_APPLIED_MANUSCRIPTS_20261029.json",
+        "TWENTY_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_20261029.json"
+      ],
+      "verification_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "title": {
+        "en": "McLaren's day in Quebec",
+        "uk": "День McLaren у Квебеку"
+      },
+      "article": {
+        "en": "Denny Hulme crossed the line first in Quebec in 1968. The man behind him was Bruce McLaren — not merely his team-mate, but the person whose name was on both cars. The Canadian Grand Prix at Mont-Tremblant became a one-two for McLaren-Ford, with the founder following his winning driver. It is one of those results that explains a racing team in a single image: its creator and its winner standing together on the podium.\n\nOn 22 September 1968, the Canadian Grand Prix raced at Mont-Tremblant in Quebec. A 90-lap contest would give McLaren a particularly memorable result.\n\nDenny Hulme completed all 90 laps in a McLaren-Ford to win in 2:27:11.200. No other driver covered the same distance.\n\nBruce McLaren finished second in another McLaren-Ford, one lap behind Hulme. The team founder shared a one-two result with his own driver.\n\nPedro Rodríguez placed third in a BRM, two laps behind winner Hulme. The final podium mixed two McLaren cars with one BRM.\n\nChris Amon's Ferrari completed 72 laps and then retired. The driver who could not finish had spent much of the afternoon on track, but the podium went to other teams.\n\nThe two McLaren cars finished first and second. The detail that makes this podium endure is personal: the man who founded the team stood beside the driver who had just won for it.",
+        "uk": "Денні Гальм першим перетнув фініш у Квебеку 1968 року. Позаду був Брюс Макларен — не просто напарник, а людина, чиє прізвище стояло на обох машинах. Гран-прі Канади в Мон-Тремблані завершився дублем McLaren-Ford: засновник команди фінішував за її переможцем. Є результати, які пояснюють цілу команду однією картиною: її творець і пілот-переможець стоять разом на подіумі.\n\n22 вересня 1968 року Гран-прі Канади відбувся на трасі Мон-Тремблан у Квебеку. Гонка на 90 кіл подарувала McLaren особливий результат.\n\nДенні Гальм подолав усі 90 кіл на McLaren-Ford і переміг із часом 2:27:11,200. Жоден інший пілот не проїхав стільки ж.\n\nБрюс Макларен став другим на іншому McLaren-Ford, програвши Гальму коло. Засновник команди розділив із власним пілотом переможний дубль.\n\nПедро Родрігес став третім на BRM, поступившись переможцю Гальму двома колами. На подіумі стояли дві машини McLaren й одна BRM.\n\nКріс Амон проїхав на Ferrari 72 кола, а потім зійшов. Він провів на трасі більшу частину гонки, проте призові місця дісталися іншим командам.\n\nДва McLaren посіли перше й друге місця. Але найбільше в цьому подіумі запам'ятовується людська деталь: засновник команди стояв поруч із пілотом, який щойно приніс їй перемогу."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
+      ],
+      "source_documents": [
+        "TWENTY_AUDIT_APPLIED_MANUSCRIPTS_20261029.json",
+        "TWENTY_MONSANTO_PORTO_PEDRALBES_MONT_TREMBLANT_20261029.json"
+      ],
+      "verification_status": "partial_fact_verification",
+      "human_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}
