@@ -9,6 +9,9 @@ const migrationPath = 'packages/database/migrations/0013_circuit_editorial_bound
 const migration = readFileSync(join(root, migrationPath), 'utf8');
 const revocationPath = 'packages/database/migrations/0014_circuit_review_revocation.sql';
 const revocation = readFileSync(join(root, revocationPath), 'utf8');
+const actorPath = 'packages/database/migrations/0015_circuit_actor_boundary.sql';
+const actorBoundary = readFileSync(join(root, actorPath), 'utf8');
+const grants = readFileSync(join(root, 'packages/database/scripts/provision_circuit_roles.sql'), 'utf8');
 const api = readFileSync(join(root, 'apps/api/src/circuit-editorial.controller.ts'), 'utf8');
 const contract = require('../src/schema-contract.json');
 
@@ -69,4 +72,28 @@ test('forward-only revocation migration is checksummed and closes stale approval
   assert.match(revocation, /OLD.status = 'verified' AND NEW.status <> 'verified'/);
   assert.match(revocation, /circuit claim requires a fresh review transition/);
   assert.doesNotMatch(revocation, /INSERT INTO circuit_editorial_|UPDATE circuit_editorial_articles SET status='published'/);
+});
+
+test('trusted actor boundary pins migration and binds review identity to session_user', () => {
+  assert.equal(contract['0015_circuit_actor_boundary.sql'],
+    createHash('sha256').update(actorBoundary).digest('hex'));
+  assert.match(actorBoundary, /pg_has_role\(session_user,r\.oid,'member'\)/);
+  assert.match(actorBoundary, /NEW\.reviewer IS DISTINCT FROM session_user/g);
+  assert.match(actorBoundary, /grid_circuit_publisher/);
+  assert.match(actorBoundary, /grid_circuit_reviewer/);
+  assert.match(actorBoundary, /circuit_evidence_05_authorize/);
+  assert.match(actorBoundary, /circuit_claim_05_authorize/);
+  assert.match(actorBoundary, /circuit_article_05_authorize/);
+  assert.doesNotMatch(actorBoundary, /GRANT\s+grid_circuit_(reviewer|publisher)\s+TO/i);
+});
+
+test('role bootstrap has no automatic membership and gives staging no approval columns', () => {
+  assert.match(grants, /CREATE ROLE grid_circuit_stager NOLOGIN/);
+  assert.match(grants, /CREATE ROLE grid_circuit_reviewer NOLOGIN/);
+  assert.match(grants, /CREATE ROLE grid_circuit_publisher NOLOGIN/);
+  assert.match(grants, /CREATE ROLE grid_circuit_reader NOLOGIN/);
+  assert.match(grants, /GRANT SELECT ON public\.circuit_editorial_articles/);
+  assert.match(grants, /GRANT INSERT ON public\.content_sources/);
+  assert.doesNotMatch(grants, /^GRANT\s+grid_circuit_\w+\s+TO\s+\w+/im);
+  assert.doesNotMatch(grants, /GRANT\s+UPDATE\([^)]*review_revision_sha256[^)]*\)\s+ON\s+public\.circuit_editorial_articles\s+TO\s+grid_circuit_stager/i);
 });
