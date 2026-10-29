@@ -101,3 +101,48 @@ use a new forward-only version.
 
 See the existing offline review queue and claim desk for research preparation;
 they do not feed this publication schema automatically.
+
+
+## Transactional staging of unreviewed circuit research (not publication)
+
+The create-only command apps/api/scripts/stage-circuit-editorial.cjs is a
+**database staging boundary**, not another offline review UI or a publishing
+command. It accepts an explicitly unreviewed research JSON bundle with
+schema_version 1, release_kind "circuit_research_draft",
+publication_status "unreviewed", a pinned F1DB circuit_external_id,
+locale, slug, title, body_markdown, author, and a nonempty claims array.
+Each claim has a statement and source-located evidence candidates:
+source_url, title, publisher, optional author, accessed_on and locator.
+It refuses unknown fields, including reviewer, approval and publication fields,
+and requires exact structural claim coverage of the proposed article body.
+
+A dry run validates the bundle without opening PostgreSQL:
+
+    node apps/api/scripts/stage-circuit-editorial.cjs /path/to/research.json --dry-run
+
+Actual staging requires a deliberately configured database and an explicit
+operator action:
+
+    CIRCUIT_DRAFT_STAGE_CONFIRM=STAGE_UNREVIEWED_CIRCUIT_DRAFT DATABASE_URL="$DATABASE_URL" node apps/api/scripts/stage-circuit-editorial.cjs /path/to/research.json --stage
+
+The identity source is pinned to f1db by default; a synthetic integration
+fixture can set CIRCUIT_IDENTITY_SOURCE_SLUG. The operation resolves a real
+circuit through the external identity registry, refuses overwriting an existing
+locale article, checks reused source URLs for **identical provenance**, and
+inserts the article, claims, evidence and links inside a **serializable
+transaction**. Any error rolls everything back. Existing source records are
+never silently rewritten.
+
+Crucially, the staged article has status draft, no review digest or
+reviewer, every claim has status needs_review, and **all candidate evidence
+is supports=false**. No command flag or bundle field can set verified,
+published, reviewed or approved state. A later independent human process must
+explicitly validate historical assertions, source locators and EN/UK
+meaning before a separate authenticated publisher can exist. This staging
+command is not that publisher.
+
+apps/api/test/circuit-editorial-staging.test.cjs exercises the untrusted
+bundle and dry-run boundary. The PostgreSQL/Nest integration suite also tests
+failed-transaction rollback, conflicting provenance, unpublished API behavior,
+absence of review metadata and duplicate-import rejection. This work adds no
+public routes, photographs, automatic approvals or release flags.
