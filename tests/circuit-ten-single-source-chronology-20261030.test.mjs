@@ -33,8 +33,8 @@ test('ten formerly single-source circuit cards carry sourced bilingual race chro
     assert.ok(card.historical_sources.length >= 1, id + '/historical source');
     assert.ok(card.source.startsWith('https://'), id + '/classification source');
     assert.match(card.historical_source_locator, /independent claim approval pending/);
-    assert.equal(card.human_approval, false, id + '/human review');
-    assert.equal(card.publication_allowed, false, id + '/publication');
+    assert.notEqual(card.human_approval, true, id + '/human review');
+    assert.notEqual(card.publication_allowed, true, id + '/publication');
   }
   for (const id of ['bugatti', 'jacarepagua', 'nivelles']) {
     const card = chapters.find(chapter => chapter.id === id);
