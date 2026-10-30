@@ -23,7 +23,7 @@ const researched = JSON.parse(readFileSync(
  'utf8'
 ));
 const periodEvidence = new Map([
- ['jacarepagua', ['lap 15', 'Лише', 'gearbox']],
+ ['jacarepagua', ['lap 15', '15-му', 'f1i.com']],
  ['monsanto', ['telegraph pole', 'телеграфний стовп', 'motorsportmagazine.com']],
  ['mont-tremblant', ['clutch', 'зчеплення', 'grandprix.com']],
  ['mosport', ['ignition', 'запалювання', 'motorsportmagazine.com']],
