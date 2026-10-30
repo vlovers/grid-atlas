@@ -26,7 +26,7 @@ test('seven 1950–1977 next25 historical stories are substantive bilingual rese
     const lead = circuit.story_leads.find((s) => s.year === year && s.title.en === title);
     assert.ok(lead, `${id}:${year}`);
     assert.equal(lead.status, 'classification_supported_research_draft');
-    assert.equal(lead.source_granularity, 'official_classification_plus_independent_period_narrative_research');
+    assert.equal(lead.source_granularity, 'official_classification_plus_independent_period_narrative_research_review_pending');
     assert.ok(lead.sources.some((url) => url.includes('formula1.com')), `${id}:${year} official source`);
     assert.ok(lead.sources.some((url) => url.includes(independentSource)), `${id}:${year} independent source`);
     assert.equal(new Set(lead.sources).size, lead.sources.length, `${id}:${year} duplicate sources`);

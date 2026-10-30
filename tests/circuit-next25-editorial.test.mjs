@@ -2,6 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next25-research-leads.json','utf8'));
+// Exact reviewed research leads; not a blanket publisher or publication allowlist.
+const periodResearchUrls = new Set([
+  "https://www.motorsportmagazine.com/archive/article/august-1964/58/xvii-british-grand-prix/",
+  "https://www.grandprix.com/races/united-states-gp-1961.html",
+  "https://www.motorsportmagazine.com/archive/article/february-1967/14/grand-prix-of-south-africa-2/",
+  "https://www.motorsportmagazine.com/archive/article/august-1971/27/the-4th-grand-prix-of-france/",
+  "https://imsdotcom.azureedge.net/events/indy500/history/rain-delays",
+  "https://www.motorsportmagazine.com/archive/article/may-1976/52/the-us-grand-prix-west/",
+  "https://www.motorsportmagazine.com/archive/article/may-1977/57/the-united-states-grand-prix-west/"
+]);
 test('25 next circuit candidates keep bilingual leads out of public publication',()=>{
  assert.equal(data.status,'research_only');
  assert.equal(data.publication,'blocked');
@@ -22,7 +32,7 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   assert.ok(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length<=4);
   assert.ok(circuit.story_leads.filter(s=>s.status==='source_checked_research_draft').every(s=>s.narrative?.en.length>120&&s.narrative?.uk.length>120&&s.sources.length>0));
   for(const story of circuit.story_leads){
-    assert.ok(story.sources.every(s=>{ const host=new URL(s).hostname; return host==='www.formula1.com' || (circuit.candidate_slug==='fuji' && host==='www.motorsportmagazine.com') || (circuit.candidate_slug==='kyalami' && host==='www.autosport.com') || (circuit.candidate_slug==='long-beach' && host==='gplb.com') || (circuit.candidate_slug==='detroit-street' && host==='www.detroitgp.com') || (circuit.candidate_slug==='phoenix-street' && host==='www.fia.com') || (circuit.candidate_slug==='watkins-glen' && host==='www.ebay.com') || (circuit.candidate_slug==='paul-ricard' && host==='www.circuitpaulricard.com') || (circuit.candidate_slug==='donington-park' && host==='www.crash.net') || (circuit.candidate_slug==='korea-international' && host==='en.yna.co.kr') || (circuit.candidate_slug==='buddh' && host==='news.sky.com'); }),circuit.candidate_slug);
+    assert.ok(story.sources.every(s=>{ const host=new URL(s).hostname; return periodResearchUrls.has(s) || host==='www.formula1.com' || (circuit.candidate_slug==='fuji' && host==='www.motorsportmagazine.com') || (circuit.candidate_slug==='kyalami' && host==='www.autosport.com') || (circuit.candidate_slug==='long-beach' && host==='gplb.com') || (circuit.candidate_slug==='detroit-street' && host==='www.detroitgp.com') || (circuit.candidate_slug==='phoenix-street' && host==='www.fia.com') || (circuit.candidate_slug==='watkins-glen' && host==='www.ebay.com') || (circuit.candidate_slug==='paul-ricard' && host==='www.circuitpaulricard.com') || (circuit.candidate_slug==='donington-park' && host==='www.crash.net') || (circuit.candidate_slug==='korea-international' && host==='en.yna.co.kr') || (circuit.candidate_slug==='buddh' && host==='news.sky.com'); }),circuit.candidate_slug);
     for(const locale of ['en','uk']){
       assert.ok(story.title[locale].trim().length>=6);
       assert.ok(story.editorial_direction[locale].trim().length>=30);

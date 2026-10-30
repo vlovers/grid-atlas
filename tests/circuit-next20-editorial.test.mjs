@@ -9,6 +9,15 @@ const externalSourceHosts = new Map([
  ['sepang/2012', new Set(['www.bbc.co.uk'])],
  ['istanbul-park/2007', new Set(['www.autosport.com', 'www.independent.co.uk'])],
  ['istanbul-park/2008', new Set(['au.motorsport.com'])],
+ ['silverstone/1950', new Set(['www.motorsportmagazine.com'])],
+ ['silverstone/1973', new Set(['www.motorsportmagazine.com'])],
+ ['monza/1967', new Set(['www.motorsportmagazine.com'])],
+ ['monza/1971', new Set(['www.autosport.com'])],
+ ['nurburgring/1957', new Set(['www.motorsportmagazine.com'])],
+ ['nurburgring/1976', new Set(['www.motorsportmagazine.com'])],
+ ['zandvoort/1961', new Set(['www.motorsportmagazine.com'])],
+ ['zandvoort/1973', new Set(['www.motorsportmagazine.com'])],
+ ['red-bull-ring/1975', new Set(['www.motorsportmagazine.com'])],
 ]);
 const acceptedSource = (circuitId, year, raw) => {
  const url = new URL(raw);
