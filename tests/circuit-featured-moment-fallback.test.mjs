@@ -96,7 +96,7 @@ test('all 73 public stories expose honest source types in both languages', () =>
     assert.notEqual(en.description, uk.description, story.id);
   }
   // Nürburgring 1957 now links to the official race classification; its independent race report is tracked separately.
-  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 6, 'formula1-circuit-guide': 8, 'formula1-feature': 6, 'formula1-event-page': 0, other: 0 });
+  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 14, 'formula1-circuit-guide': 3, 'formula1-feature': 3, 'formula1-event-page': 0, other: 0 });
   assert.equal(circuitStorySourceKind('https://example.org/not-reviewed'), 'other');
   assert.equal(circuitStorySourceKind('https://github.com/f1db/f1db/blob/main/src/data/seasons/1950/races/01-britain/race-results.yml'), 'other');
   assert.match(circuitStorySourcePresentation('https://example.org/not-reviewed', 'en').description, /review/);
@@ -132,12 +132,13 @@ test('seven prioritized circuit stories have scoped contextual references, not a
   assert.deepEqual(release.editions, [], 'context sources are not editorial approvals');
 });
 
-test('Melbourne 1996 cites a relevant historical article, not a current-season event page', () => {
+test('Melbourne 1996 links its exact race result and retains the historical feature as background', () => {
   const story = getPublicCircuitStory('melbourne');
   assert.ok(story);
   assert.equal(story.year, '1996');
-  assert.equal(circuitStorySourceKind(story.source), 'formula1-feature');
-  assert.match(story.source, /celebrating-30-years-of-melbourne-magic/);
+  assert.equal(circuitStorySourceKind(story.source), 'formula1-results');
+  assert.equal(story.source, 'https://www.formula1.com/en/results/1996/races/638/australia/race-result');
+  assert.match(story.background_source_url, /celebrating-30-years-of-melbourne-magic/);
   assert.doesNotMatch(story.source, /\/racing\/2026\//);
 });
 
