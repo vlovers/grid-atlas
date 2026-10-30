@@ -46,24 +46,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "Fernando Alonso won, but the result later became inseparable",
-          "uk_excerpt": "Переміг Фернандо Алонсо, та згодом результат",
+          "en_excerpt": "Fernando Alonso won for Renault after an early stop",
+          "uk_excerpt": "Фернандо Алонсо виграв за Renault після раннього піт-стопу",
           "evidence_route": "candidate-results",
           "review_question": "Check race winner, event year and first-edition claim separately.",
           "status": "unverified"
         },
         {
           "claim_id": "night-first",
-          "en_excerpt": "Singapore's first Formula 1 Grand Prix in 2008 brought racing under floodlights",
-          "uk_excerpt": "Перший Гран-прі Сінгапуру 2008 року привів Формулу-1 під прожектори",
+          "en_excerpt": "Singapore's first night Grand Prix in 2008 produced a result",
+          "uk_excerpt": "Перший нічний Гран-прі Сінгапуру 2008 року отримав продовження",
           "evidence_route": "candidate-context",
           "review_question": "Find exact evidence for first championship night race; avoid confusing event and venue.",
           "status": "unverified"
         },
         {
           "claim_id": "crash-investigation",
-          "en_excerpt": "revelations about a deliberately caused Renault crash",
-          "uk_excerpt": "викриття навмисно спричиненої аварії Renault",
+          "en_excerpt": "In 2009 an FIA investigation established that Alonso's team-mate Nelson Piquet Jr had crashed deliberately",
+          "uk_excerpt": "У 2009 році розслідування FIA встановило, що напарник Алонсо Нельсон Піке-молодший навмисно спричинив аварію",
           "evidence_route": "candidate-context",
           "review_question": "Verify investigation timeline and attribution; avoid implying allegations were established during the race.",
           "status": "unverified"
