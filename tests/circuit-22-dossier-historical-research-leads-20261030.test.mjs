@@ -4,6 +4,8 @@ import test from 'node:test';
 
 const dir = '../docs/editorial/circuit-experience-v3/';
 const files = [
+  'EXPANSION_1_AIDA_DALLAS_RESEARCH_DRAFTS.json',
+  'EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json',
   'EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json',
   'EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json',
   'EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json',
@@ -17,8 +19,13 @@ const newResearchLeads = new Set([
   'dijon', 'jacarepagua', 'mosport', 'montjuic', 'jarama', 'jerez',
   'monaco', 'madring', 'pedralbes', 'pescara', 'porto', 'reims',
   'riverside', 'rouen', 'sebring', 'spa-francorchamps', 'zeltweg', 'zolder',
+  'aida', 'dallas', 'aintree', 'avus', 'caesars-palace',
 ]);
 const expectedRewrites = new Map([
+  ['aida:1', ['Mika Häkkinen', 'Мікою Гаккіненом']],
+  ['aida:4', ['final pit stop', 'останнього піт-стопу']],
+  ['aintree:3', ['Tony Brooks', 'Тоні Брукс']],
+  ['avus:1', ['two heats', 'два заїзди']],
   ['ain-diab:3', ['lap 39', '39-му колі']],
   ['ain-diab:5', ['engine failed', 'двигун']],
   ['dijon:1', ['lap 46', '46-му колі']],
@@ -29,10 +36,10 @@ const expectedRewrites = new Map([
   ['reims:3', ['did not finish', 'не дістався']],
 ]);
 
-test('all 28 expansion research dossiers keep 140 bilingual scenes with separate historical leads and closed publication', () => {
-  assert.equal(dossiers.length, 28);
-  assert.equal(new Set(dossiers.map(row => row.circuit_id)).size, 28);
-  assert.equal(dossiers.reduce((sum, row) => sum + row.stories.length, 0), 140);
+test('all 33 expansion research dossiers keep 165 bilingual scenes with separate historical leads and closed publication', () => {
+  assert.equal(dossiers.length, 33);
+  assert.equal(new Set(dossiers.map(row => row.circuit_id)).size, 33);
+  assert.equal(dossiers.reduce((sum, row) => sum + row.stories.length, 0), 165);
   let newScenes = 0;
   let verifiedRewrites = 0;
   const independentLinks = new Set();
@@ -62,8 +69,8 @@ test('all 28 expansion research dossiers keep 140 bilingual scenes with separate
       }
     }
   }
-  assert.equal(newResearchLeads.size, 22);
-  assert.equal(newScenes, 110);
-  assert.equal(verifiedRewrites, 8);
-  assert.ok(independentLinks.size >= 22);
+  assert.equal(newResearchLeads.size, 27);
+  assert.equal(newScenes, 135);
+  assert.equal(verifiedRewrites, 12);
+  assert.ok(independentLinks.size >= 30);
 });
