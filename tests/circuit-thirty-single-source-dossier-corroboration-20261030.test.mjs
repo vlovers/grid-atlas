@@ -33,6 +33,10 @@ test('six formerly one-source dossiers have 30 bilingual scenes with separate hi
       assert.ok(story.source_urls.length >= 1, id + '/classification');
       assert.ok(story.historical_sources.length >= 1, id + '/historical');
       historicalReferences += story.historical_sources.length;
+      if (['monsanto', 'mont-tremblant'].includes(id)) {
+        assert.ok(story.historical_sources.length >= 2, id + '/corroborating race reports');
+        assert.equal(new Set(story.historical_sources).size, story.historical_sources.length, id + '/unique sources');
+      }
       assert.ok(story.historical_source_locator.length >= 25, id + '/locator');
       assert.equal(story.historical_review_status, 'pending_independent_claim_review');
       assert.equal(story.independent_approval, false, id + '/approval');
@@ -48,5 +52,5 @@ test('six formerly one-source dossiers have 30 bilingual scenes with separate hi
     }
   }
   assert.equal(totalScenes, 30);
-  assert.equal(historicalReferences, 45);
+  assert.ok(historicalReferences >= 55, 'historical references must not regress after new corroboration');
 });
