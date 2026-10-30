@@ -15,13 +15,16 @@ test('final 14 short histories preserve EN/UK, independent provenance and public
     assert.ok(row.description.uk.length >= 280, id + '/uk');
     assert.match(row.description.uk, /[А-ЯІЇЄҐа-яіїєґ]/u, id);
     assert.equal(row.historical_review_status, 'pending_independent_claim_review', id);
-    assert.equal(row.historical_sources.length, 1, id);
+    assert.ok(row.historical_sources.length >= 1, id);
+    assert.equal(new Set(row.historical_sources).size, row.historical_sources.length, id + '/distinct sources');
     assert.ok(row.historical_source_locator.length >= 40, id);
-    const narrative = new URL(row.historical_sources[0]);
-    assert.equal(narrative.protocol, 'https:', id);
-    assert.notEqual(narrative.hostname, 'github.com', id);
-    assert.notEqual(narrative.hostname, 'www.formula1.com', id);
-    assert.notEqual(row.source, row.historical_sources[0], id);
+    for (const source of row.historical_sources) {
+      const narrative = new URL(source);
+      assert.equal(narrative.protocol, 'https:', id);
+      assert.notEqual(narrative.hostname, 'github.com', id);
+      assert.notEqual(narrative.hostname, 'www.formula1.com', id);
+      assert.notEqual(row.source, source, id);
+    }
     assert.match(row.source, /^https:\/\//, id);
     assert.notEqual(row.human_approval, true, id);
     assert.notEqual(row.publication_allowed, true, id);
