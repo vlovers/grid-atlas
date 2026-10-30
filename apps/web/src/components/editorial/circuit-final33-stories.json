@@ -45,11 +45,15 @@
       "uk": "Феттель здобуває четвертий титул поспіль"
     },
     "description": {
-      "en": "Sebastian Vettel won the 2013 Indian Grand Prix at Buddh and secured his fourth consecutive World Championship. The circuit's brief Formula 1 era produced a defining moment in Red Bull's dominant run.",
-      "uk": "Себастьян Феттель виграв Гран-прі Індії 2013 року на автодромі Будд і здобув четвертий чемпіонський титул поспіль. За коротку історію Формули-1 в Індії траса встигла стати сценою важливого моменту домінування Red Bull."
+      "en": "At Buddh in October 2013, Sebastian Vettel needed only fifth place to seal another title. He took pole, stopped for tyres almost immediately, then carved his way back through traffic to win. Nico Rosberg and Romain Grosjean joined him on the podium, while Red Bull secured the constructors' crown too. The result sheet says Vettel won; the race story is how an early pit stop became the opening move of a fourth straight championship celebration.",
+      "uk": "У жовтні 2013 року на Будді Себастьяну Феттелю вистачило б і п’ятого місця для титулу. Він здобув поул, майже одразу заїхав міняти шини, а потім прорвався крізь пелотон до перемоги. На подіумі поруч стояли Ніко Росберг і Ромен Грожан, а Red Bull здобула й Кубок конструкторів. Протокол фіксує переможця; історія гонки пояснює, як ранній піт-стоп став початком святкування четвертого титулу поспіль."
     },
     "year": "2013",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/24691160"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "porto",
@@ -84,11 +88,15 @@
       "uk": "Росберг витримує спеку Далласа"
     },
     "description": {
-      "en": "Keke Rosberg won the 1984 Dallas Grand Prix. Formula 1's one-off visit brought the championship to a temporary Texan street circuit, where punishing summer heat became part of the event's reputation.",
-      "uk": "Кеке Росберг виграв Гран-прі Далласа 1984 року. Разовий етап на тимчасовій міській трасі в Техасі запам’ятався не лише гонкою, а й виснажливою літньою спекою."
+      "en": "Dallas had one Formula 1 Grand Prix, and the Texas summer made sure nobody forgot it. In 1984 the temporary Fair Park course was breaking up as the heat punished drivers and machinery. Nigel Mansell started from pole but did not take the victory; Keke Rosberg survived the conditions to win for Williams. The classification gives Rosberg first place, but the story of Dallas is also about a circuit surface that struggled to survive its own race.",
+      "uk": "У Далласі Формула-1 провела лише один Гран-прі, але техаське літо зробило його незабутнім. У 1984 році асфальт тимчасової траси у Фейр-Парку руйнувався, а спека виснажувала пілотів і техніку. Найджел Менселл стартував із поулу, та перемогу здобув Кеке Росберг на Williams. У протоколі залишилося його перше місце, а в історії траси — покриття, яке ледве витримало власну гонку."
     },
     "year": "1984",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "sirius",
@@ -110,11 +118,15 @@
       "uk": "Гамільтон виграє перший Гран-прі Катару"
     },
     "description": {
-      "en": "Lewis Hamilton won Qatar's inaugural Formula 1 Grand Prix at Lusail in 2021. The desert circuit was already familiar to motorcycle racing fans before it became part of the F1 calendar.",
-      "uk": "Льюїс Гамільтон виграв перший Гран-прі Катару Формули-1 на трасі Лусаїл 2021 року. До появи в календарі F1 цей автодром уже був добре знайомий шанувальникам мотоперегонів."
+      "en": "Lusail was familiar to motorcycle racing fans long before Formula 1 arrived in 2021. Lewis Hamilton controlled Qatar's first championship Grand Prix from the front, while Max Verstappen recovered from a grid penalty to finish second. Fernando Alonso took third for Alpine, his first Formula 1 podium since 2014. That is why the inaugural result is more than a Hamilton win: it also marks Alonso's long-awaited return to the podium amid a tight title fight.",
+      "uk": "Лусаїл був знайомий шанувальникам мотоперегонів задовго до дебюту Формули-1 у 2021 році. Льюїс Гамільтон контролював перший Гран-прі Катару, а Макс Ферстаппен після штрафу на стартовій решітці прорвався на друге місце. Третім на Alpine став Фернандо Алонсо — уперше на подіумі Формули-1 з 2014 року. Тому дебют Лусаїла — не лише перемога Гамільтона, а й довгоочікуване повернення Алонсо в розпал боротьби за титул."
     },
     "year": "2021",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/59367052"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "yeongam",
@@ -123,11 +135,15 @@
       "uk": "Алонсо перемагає в дощовому дебюті Кореї"
     },
     "description": {
-      "en": "Fernando Alonso won the inaugural Korean Grand Prix at Yeongam in 2010. Wet conditions and interrupted running gave the new circuit a dramatic introduction to the World Championship.",
-      "uk": "Фернандо Алонсо виграв дебютний Гран-прі Кореї в Йонамі 2010 року. Дощ і перерви перетворили перше знайомство автодрому з чемпіонатом світу на справжню драму."
+      "en": "Yeongam's first Formula 1 weekend in 2010 was already complicated before the race could settle into a rhythm. Rain delayed the start and interrupted the action, then the championship contenders faced a slippery track and changing fortunes. Fernando Alonso eventually won for Ferrari. The result looks simple in a table; the inaugural Korean Grand Prix was anything but simple for the drivers trying to keep their cars on the road.",
+      "uk": "Перший вікенд Формули-1 в Йонамі 2010 року від самого початку йшов не за планом. Дощ затримав старт і переривав гонку, а претендентам на титул довелося боротися зі слизькою трасою та постійними змінами ситуації. Зрештою Фернандо Алонсо переміг на Ferrari. У таблиці результат виглядає просто, але дебютний Гран-прі Кореї зовсім не був простою гонкою для тих, хто намагався втримати машину на асфальті."
     },
     "year": "2010",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml",
+    "historical_sources": [
+      "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "bugatti",
@@ -136,11 +152,15 @@
       "uk": "Бребем перемагає в Ле-Мані — але не на трасі 24 годин"
     },
     "description": {
-      "en": "Jack Brabham won the 1967 French Grand Prix on the Bugatti circuit at Le Mans. This was the shorter permanent layout, not the famous full 24 Hours of Le Mans route — an easy distinction for new fans to miss.",
-      "uk": "Джек Бребем виграв Гран-прі Франції 1967 року на трасі Bugatti в Ле-Мані. Це була коротша постійна конфігурація, а не знамените повне кільце «24 годин Ле-Мана» — важлива відмінність для нових уболівальників."
+      "en": "Le Mans is famous for its 24-hour race, but the 1967 French Grand Prix did not use that enormous circuit. Formula 1 raced on the shorter Bugatti layout, where Jack Brabham took victory. The venue shared a name and a setting with the endurance classic, not the same lap. That distinction matters: this was a single World Championship visit to a compact permanent course, not an F1 race around the full Le Mans roads.",
+      "uk": "Ле-Ман відомий передусім добовою гонкою, але Гран-прі Франції 1967 року проходив не на її величезному кільці. Формула-1 змагалася на коротшій трасі Bugatti, де переміг Джек Бребем. Місце й назва були спільними з легендарним марафоном, а конфігурація — ні. Це важлива різниця: чемпіонат світу один раз приїхав на компактний постійний автодром, а не на повний маршрут «24 годин Ле-Мана»."
     },
     "year": "1967",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/french-gp-1967.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "mosport",
@@ -175,11 +195,15 @@
       "uk": "Прорив Брюса Макларена у Флориді"
     },
     "description": {
-      "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring. The Florida endurance-racing venue hosted a memorable Formula 1 championship visit before the US Grand Prix found more lasting homes.",
-      "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу. Флоридський автодром, відомий гонками на витривалість, прийняв пам’ятний етап Формули-1 ще до появи триваліших американських домівок Гран-прі."
+      "en": "At Sebring in 1959, the race winner and the new world champion were different men. Bruce McLaren took the United States Grand Prix for Cooper, but Jack Brabham's fourth place was enough to secure the drivers' title. Brabham's car ran short of fuel near the finish, and he pushed it to the line. The classification records McLaren's victory; the image that endures is a championship contender getting his car home by sheer effort.",
+      "uk": "У Себрингу 1959 року переможець гонки й новий чемпіон світу були різними людьми. Брюс Макларен виграв Гран-прі США на Cooper, але Джеку Бребему вистачило четвертого місця для титулу. Біля фінішу в його машині закінчилося пальне, і він штовхав її до лінії. Протокол фіксує перемогу Макларена, а найвиразніший образ цього дня — претендент на чемпіонство, який власними силами доводить автомобіль до фінішу."
     },
     "year": "1959",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "detroit",
@@ -188,11 +212,15 @@
       "uk": "Вотсон проривається в Детройті"
     },
     "description": {
-      "en": "John Watson won the first Detroit Grand Prix in 1982. The downtown street course added an American city-centre challenge to Formula 1's calendar, with concrete barriers never far away.",
-      "uk": "Джон Вотсон виграв перший Гран-прі Детройта 1982 року. Міська траса в центрі американського автомобільного міста додала до календаря Формули-1 нове випробування, де бетонні бар’єри були зовсім поруч."
+      "en": "John Watson started Detroit's inaugural Grand Prix in 1982 from seventeenth on the grid. On a tight street circuit where overtaking looked difficult, his McLaren climbed through the field as tyre choice and race interruptions reshaped the afternoon. Watson won, with Eddie Cheever and Didier Pironi behind him. A bare results table cannot show how far he had to travel through traffic to turn a poor starting position into victory.",
+      "uk": "Джон Вотсон стартував у першому Гран-прі Детройта 1982 року лише сімнадцятим. На тісній міській трасі, де обгони здавалися складними, його McLaren проривався вперед, поки вибір шин і перерви змінювали перебіг гонки. Вотсон переміг, а позаду фінішували Едді Чівер і Дідьє Піроні. Суха таблиця не передає, скільки суперників довелося обійти, щоб перетворити невдалу стартову позицію на перемогу."
     },
     "year": "1982",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "zeltweg",
@@ -201,11 +229,15 @@
       "uk": "Єдина перемога Лоренцо Бандіні"
     },
     "description": {
-      "en": "Lorenzo Bandini won the 1964 Austrian Grand Prix at Zeltweg, his only World Championship race victory. The event ran on an airfield course, decades before the modern Spielberg circuit became Austria's F1 landmark.",
-      "uk": "Лоренцо Бандіні виграв Гран-прі Австрії 1964 року в Цельтвезі — свою єдину перемогу на етапі чемпіонату світу. Гонка відбулася на аеродромній трасі задовго до появи сучасного автодрому в Шпільберзі."
+      "en": "Austria's 1964 World Championship Grand Prix ran on an airfield, not on the permanent Spielberg circuit familiar today. The rough Zeltweg surface punished cars throughout the afternoon. Lorenzo Bandini brought his Ferrari home first for his only Formula 1 championship victory, ahead of Richie Ginther and Bob Anderson. The result was a career landmark for Bandini and a reminder of how improvised some early Grand Prix venues could be.",
+      "uk": "Гран-прі Австрії 1964 року відбувся на аеродромі, а не на постійному автодромі в Шпільберзі, знайомому сьогодні. Нерівне покриття Цельтвега безжально випробовувало машини. Лоренцо Бандіні привів Ferrari до своєї єдиної перемоги в чемпіонаті Формули-1, випередивши Річі Гінтера й Боба Андерсона. Для Бандіні це був головний гоночний тріумф, а для історії спорту — нагадування, наскільки незвичними бували ранні майданчики Гран-прі."
     },
     "year": "1964",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/brief-history-austrian-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "mugello",
@@ -214,11 +246,15 @@
       "uk": "Гамільтон перемагає на дебютному Гран-прі Тоскани"
     },
     "description": {
-      "en": "Lewis Hamilton won the 2020 Tuscan Grand Prix at Mugello. The fast, flowing Italian circuit made a rare Formula 1 championship appearance in an unusually rearranged season.",
-      "uk": "Льюїс Гамільтон виграв Гран-прі Тоскани 2020 року в Муджелло. Швидкий і плавний італійський автодром отримав рідкісний шанс прийняти етап чемпіонату світу в незвично перебудованому сезоні."
+      "en": "Mugello's fast corners finally hosted a Formula 1 championship race in the disrupted 2020 season. The Tuscan Grand Prix was anything but a routine debut: two red flags repeatedly stopped the action, forcing the drivers to restart their contest. Lewis Hamilton won for Mercedes, but the story of the day lies in how often the field had to regroup before the chequered flag. It was a rare appearance for a circuit better known to other racing series.",
+      "uk": "Швидкі повороти Муджелло нарешті прийняли етап чемпіонату Формули-1 у незвичному сезоні 2020 року. Гран-прі Тоскани зовсім не став спокійним дебютом: два червоні прапори зупиняли боротьбу й змушували пілотів стартувати знову. Льюїс Гамільтон переміг на Mercedes, але головна історія дня — скільки разів пелотону довелося збиратися наново до картатого прапора. Для траси, знайомої з інших гоночних серій, це був особливий візит Формули-1."
     },
     "year": "2020",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/09-tuscany/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/09-tuscany/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "phoenix",
@@ -227,11 +263,15 @@
       "uk": "Сенна й Алезі оживляють Фінікс"
     },
     "description": {
-      "en": "Ayrton Senna won the 1990 United States Grand Prix in Phoenix. His fight with young Jean Alesi is remembered as a rare bright moment on the Arizona street circuit.",
-      "uk": "Айртон Сенна виграв Гран-прі США 1990 року у Фініксі. Його боротьба з молодим Жаном Алезі стала одним із найяскравіших епізодів історії міської траси в Аризоні."
+      "en": "Jean Alesi gave the 1990 United States Grand Prix in Phoenix an unexpected leader. The young Frenchman swept his Tyrrell into first place and held off the established stars for 34 laps. Ayrton Senna eventually caught him, but even a pass did not settle the duel immediately: Alesi fought back before Senna made the winning move stick. Senna won and Alesi finished second. The story is not just who won, but how hard the newcomer made him work for it.",
+      "uk": "Жан Алезі подарував Гран-прі США 1990 року у Фініксі несподіваного лідера. Молодий француз вивів Tyrrell на перше місце й утримував його 34 кола. Айртон Сенна зрештою наздогнав суперника, але навіть обгін не завершив дуель: Алезі відповів контратакою, перш ніж Сенна остаточно закріпився попереду. Сенна переміг, Алезі став другим. Ця історія не лише про ім’я переможця, а й про те, як дорого новачок змусив його заплатити за перше місце."
     },
     "year": "1990",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/april-1990/5/phoenix-revivial/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "pescara",
@@ -240,11 +280,15 @@
       "uk": "Мосс підкорює найдовшу трасу чемпіонату"
     },
     "description": {
-      "en": "Stirling Moss won the 1957 Pescara Grand Prix on the extraordinary public-road circuit in Italy. Its roughly 25-kilometre lap is the longest layout ever used for a Formula 1 World Championship race.",
-      "uk": "Стірлінг Мосс виграв Гран-прі Пескари 1957 року на незвичній італійській трасі звичайними дорогами. Коло завдовжки приблизно 25 кілометрів залишається найдовшим в історії гонок чемпіонату світу Формули-1."
+      "en": "The 1957 Pescara Grand Prix was only eighteen laps long, yet Stirling Moss needed nearly three hours to win it. One lap of the Italian public-road course stretched for roughly 25 kilometres, far beyond anything on today's calendar. The distance between corners and the sheer length of the route shaped the race as much as the finishing order. Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.",
+      "uk": "Гран-прі Пескари 1957 року тривав лише вісімнадцять кіл, але Стірлінгу Моссу знадобилося майже три години для перемоги. Одне коло італійськими дорогами простягалося приблизно на 25 кілометрів — незрівнянно більше, ніж на сучасних трасах. Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок. Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола."
     },
     "year": "1957",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "montjuic",
@@ -253,11 +297,15 @@
       "uk": "Скорочена гонка трагічного вікенду"
     },
     "description": {
-      "en": "Jochen Mass won the 1975 Spanish Grand Prix at Montjuïc in Barcelona. The race was stopped after a fatal accident, leaving an enduring reminder of the safety failures of that era.",
-      "uk": "Йохен Масс виграв Гран-прі Іспанії 1975 року на трасі Монжуїк у Барселоні. Гонку зупинили після смертельної аварії, і цей вікенд залишився болісним нагадуванням про проблеми безпеки тієї епохи."
+      "en": "The 1975 Spanish Grand Prix at Montjuïc cannot be remembered as an ordinary victory for Jochen Mass. Safety concerns had already overshadowed the weekend when a car crashed into the spectator area and people were killed. Officials stopped the race, and reduced points were awarded. Lella Lombardi's sixth place became historically significant, but neither the points nor the podium should push the victims out of the account. This is a story about a race and a grave failure of safety.",
+      "uk": "Гран-прі Іспанії 1975 року на Монжуїку не можна згадувати як звичайну перемогу Йохена Масса. Ще до старту вікенд супроводжували суперечки про безпеку, а під час гонки автомобіль вилетів у зону глядачів і люди загинули. Перегони зупинили, а очки нарахували в зменшеному обсязі. Шосте місце Лелли Ломбарді стало історичним, але ні очки, ні подіум не повинні затіняти пам’ять про загиблих. Це історія гонки та тяжкого провалу безпеки."
     },
     "year": "1975",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/june-1975/36/the-spanish-grand-prix-catastrophic/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "monsanto",
@@ -266,11 +314,15 @@
       "uk": "Мосс перемагає в лісопарку Лісабона"
     },
     "description": {
-      "en": "Stirling Moss won the 1959 Portuguese Grand Prix at Monsanto in Lisbon. For one championship weekend, roads through a city park became a Formula 1 circuit.",
-      "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1959 року на трасі Монсанту в Лісабоні. На один вікенд чемпіонату світу дороги міського лісопарку перетворилися на трасу Формули-1."
+      "en": "Lisbon's Monsanto Park hosted the 1959 Portuguese Grand Prix on roads that were usually part of the city, not a permanent racecourse. Stirling Moss drove a privately entered Cooper to victory and finished a lap ahead of the other classified runners. That margin tells you how commanding his afternoon was. The park did not become a regular Formula 1 venue, but for one weekend its roads belonged to a championship race that Moss controlled.",
+      "uk": "Лісабонський парк Монсанту прийняв Гран-прі Португалії 1959 року на дорогах, які зазвичай були частиною міста, а не постійного автодрому. Стірлінг Мосс на приватному Cooper переміг, випередивши інших класифікованих пілотів на коло. Цей розрив добре показує, наскільки впевнено він провів гонку. Парк не став постійною домівкою Формули-1, але на один вікенд його дороги перетворилися на трасу чемпіонату світу."
     },
     "year": "1959",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/07-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/07-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "valencia",
@@ -279,11 +331,15 @@
       "uk": "Неймовірний домашній прорив Алонсо"
     },
     "description": {
-      "en": "Fernando Alonso won the 2012 European Grand Prix on Valencia's streets after starting eleventh. The Spanish driver's comeback gave the port-side city circuit one of its defining Formula 1 memories.",
-      "uk": "Фернандо Алонсо виграв Гран-прі Європи 2012 року на вулицях Валенсії, стартувавши одинадцятим. Його прорив подарував міській трасі біля порту один із найвідоміших моментів її історії."
+      "en": "Fernando Alonso began the 2012 European Grand Prix in Valencia from eleventh on the grid. On a street circuit beside the harbour, he worked his way forward as the race changed around him and eventually won for Ferrari. The Spanish crowd saw a home victory that had looked improbable before the start. A finishing table records Alonso first; the real appeal of this Valencia afternoon is the distance he travelled from the midfield to the front.",
+      "uk": "Фернандо Алонсо розпочав Гран-прі Європи 2012 року у Валенсії з одинадцятого місця. На міській трасі біля порту він поступово проривався вперед, поки обставини гонки змінювалися, і зрештою переміг на Ferrari. Іспанські трибуни побачили домашню перемогу, яка перед стартом здавалася малоймовірною. Протокол показує Алонсо першим; справжня привабливість цього дня — шлях із середини пелотону до лідерства."
     },
     "year": "2012",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "portimao",
@@ -292,11 +348,15 @@
       "uk": "Гамільтон встановлює новий рекорд перемог"
     },
     "description": {
-      "en": "Lewis Hamilton won the 2020 Portuguese Grand Prix at Portimão for his 92nd Formula 1 victory, moving past Michael Schumacher's previous record. The Algarve circuit hosted a major milestone on its championship debut.",
-      "uk": "Льюїс Гамільтон виграв Гран-прі Португалії 2020 року в Портімані, здобувши 92-гу перемогу у Формулі-1 та перевершивши попередній рекорд Міхаеля Шумахера. Дебют Алгарве в чемпіонаті став історичним."
+      "en": "The first World Championship Grand Prix at Portimão in 2020 began with changing grip and unsettled early positions. Lewis Hamilton recovered control of the race and won for Mercedes. It was his 92nd Formula 1 victory, taking him past Michael Schumacher's previous record. The Algarve circuit's elevation changes supplied the setting, but the lasting milestone was Hamilton becoming the sport's outright wins leader on a day that did not begin smoothly.",
+      "uk": "Перший заліковий Гран-прі в Портімані 2020 року розпочався зі складного зчеплення шин і мінливого порядку пілотів. Льюїс Гамільтон повернув собі контроль над гонкою й переміг на Mercedes. Це була його 92-га перемога у Формулі-1 — більше за попередній рекорд Міхаеля Шумахера. Перепади висот Алгарве створили сцену, але головною подією став новий рекорд Гамільтона після зовсім не безхмарного початку."
     },
     "year": "2020",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "nivelles",
@@ -305,11 +365,15 @@
       "uk": "Фіттіпальді перемагає на недовговічній бельгійській трасі"
     },
     "description": {
-      "en": "Emerson Fittipaldi won the 1972 Belgian Grand Prix at Nivelles. The flat Belgian circuit hosted the championship only briefly, a contrast with the much older and more dramatic Spa-Francorchamps.",
-      "uk": "Емерсон Фіттіпальді виграв Гран-прі Бельгії 1972 року в Нівелі. Рівнинний автодром ненадовго став домівкою чемпіонату — на відміну від значно старішої та рельєфнішої Спа-Франкоршам."
+      "en": "Belgium's Grand Prix returned in 1972 on a flat new circuit at Nivelles rather than the old, fast Spa road course. Emerson Fittipaldi took the victory after passing Clay Regazzoni early in the race. The switch of venue was about more than scenery: it reflected a sport wrestling with the dangers of its older circuits. Nivelles never became a beloved fixture, but its brief Formula 1 chapter captures a moment when safety was changing the map.",
+      "uk": "Гран-прі Бельгії повернувся 1972 року на нову рівнинну трасу Нівель замість старого швидкісного кільця Спа. Емерсон Фіттіпальді переміг, обійшовши Клея Регаццоні на початку гонки. Зміна місця означала більше, ніж інший краєвид: Формула-1 шукала відповідь на небезпеки своїх історичних трас. Нівель так і не став улюбленим постійним етапом, але його коротка історія показує, як питання безпеки змінювали географію чемпіонату."
     },
     "year": "1972",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1972/races/05-belgium/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1972/races/05-belgium/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/july-1972/34/the-belgian-formula-one-race/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "pedralbes",
@@ -331,11 +395,15 @@
       "uk": "Мосс перемагає в каліфорнійській пустелі"
     },
     "description": {
-      "en": "Stirling Moss won the 1960 United States Grand Prix at Riverside. The California road course hosted just one World Championship Grand Prix, showing how far America's F1 venues shifted across the decades.",
-      "uk": "Стірлінг Мосс виграв Гран-прі США 1960 року в Ріверсайді. Каліфорнійський автодром прийняв лише один заліковий етап чемпіонату світу — ще один приклад мінливої американської географії Формули-1."
+      "en": "Riverside staged only one World Championship United States Grand Prix, in 1960, and Stirling Moss won it for Rob Walker's team. The California circuit's short Formula 1 history conceals a lively race: Jack Brabham fought back after trouble, while Moss stayed in command at the front. The result sheet records a single winner. The fuller story shows how the American Grand Prix was still searching for a lasting home and how much happened during its brief visit.",
+      "uk": "Ріверсайд прийняв лише один заліковий Гран-прі США — у 1960 році, коли Стірлінг Мосс переміг за команду Роба Вокера. За короткою історією каліфорнійської траси ховається насичена гонка: Джек Бребем повертався в боротьбу після проблем, а Мосс утримував лідерство. Протокол називає одного переможця. Повніша історія показує, як американський Гран-прі ще шукав постійну домівку і скільки подій умістив один візит."
     },
     "year": "1960",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1960/races/10-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1960/races/10-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "anderstorp",
@@ -357,11 +425,15 @@
       "uk": "Перемога Фанхіо серед швейцарського лісу"
     },
     "description": {
-      "en": "Juan Manuel Fangio won the 1954 Swiss Grand Prix at Bremgarten. The old wooded road circuit belonged to a very different age of Formula 1, before modern permanent venues became the standard.",
-      "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Швейцарії 1954 року в Бремгартені. Старе дорожнє кільце серед лісів належало зовсім іншій епосі Формули-1, ще до поширення сучасних постійних автодромів."
+      "en": "Bremgarten's wooded roads hosted the Swiss Grand Prix for the last time in 1954. José Froilán González put his Ferrari on pole, but Juan Manuel Fangio took his Mercedes to victory and secured another world title. The trees and narrow road belonged to an era before today's permanent circuits. The official classification explains who finished where; the wider story is of a championship settled on a course Formula 1 would not return to.",
+      "uk": "Лісові дороги Бремгартена востаннє прийняли Гран-прі Швейцарії у 1954 році. Хосе Фройлан Гонсалес здобув поул на Ferrari, але Хуан-Мануель Фанхіо привів Mercedes до перемоги й забезпечив собі ще один титул чемпіона світу. Дерева й вузька дорога нагадують про час до сучасних постійних автодромів. Протокол пояснює фінішний порядок, а ширша історія — як чемпіонат вирішився на трасі, куди Формула-1 вже не повернулася."
     },
     "year": "1954",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/07-switzerland/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/07-switzerland/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1954-swiss-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "east-london",
@@ -370,11 +442,15 @@
       "uk": "Грем Гілл здобуває титул"
     },
     "description": {
-      "en": "Graham Hill won the 1962 South African Grand Prix at East London and secured his first World Championship. The seaside circuit hosted one of the defining title deciders of Formula 1's early 1960s.",
-      "uk": "Грем Гілл виграв Гран-прі Південної Африки 1962 року в Іст-Лондоні та здобув свій перший чемпіонський титул. Приморська траса прийняла один із вирішальних фіналів початку 1960-х."
+      "en": "The final Grand Prix of 1962 took place at East London in South Africa, with Graham Hill and Jim Clark still fighting for the drivers' title. Clark's Lotus retired, and Hill won the race to become world champion for the first time. The seaside circuit was the setting for two completely different endings: a triumph for Hill and a mechanical disappointment for Clark. A result table gives the champion's name; the race explains how the title changed hands.",
+      "uk": "Останній Гран-прі 1962 року відбувся в південноафриканському Іст-Лондоні, де Грем Гілл і Джим Кларк ще боролися за титул. Lotus Кларка зійшов, а Гілл переміг і вперше став чемпіоном світу. Приморська траса подарувала дві протилежні розв’язки: тріумф Гілла й технічне розчарування Кларка. Таблиця називає чемпіона, а перебіг гонки пояснює, як визначився титул."
     },
     "year": "1962",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1962/races/09-south-africa/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1962/races/09-south-africa/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/51-1962-south-african-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "jacarepagua",
@@ -409,11 +485,15 @@
       "uk": "Фінал чемпіонату на парковці казино"
     },
     "description": {
-      "en": "Michele Alboreto won the 1982 Caesars Palace Grand Prix, while Keke Rosberg secured the World Championship. The Las Vegas casino car-park course was a very different circuit from the modern Strip Grand Prix.",
-      "uk": "Мікеле Альборето виграв Гран-прі Caesars Palace 1982 року, а Кеке Росберг здобув титул чемпіона світу. Траса на парковці казино в Лас-Вегасі зовсім не схожа на сучасний Гран-прі на Стріпі."
+      "en": "The 1982 Caesars Palace Grand Prix finished the Formula 1 season on a temporary circuit in a Las Vegas casino car park. Michele Alboreto won for Tyrrell, with John Watson second and Eddie Cheever third. Keke Rosberg finished fifth, enough to become world champion despite not winning the race. This was not the modern Las Vegas Strip layout. The finishing order and the championship outcome tell two different stories from the same improbable venue.",
+      "uk": "Гран-прі Caesars Palace 1982 року завершив сезон Формули-1 на тимчасовій трасі, прокладеній парковкою казино в Лас-Вегасі. Мікеле Альборето переміг на Tyrrell, Джон Вотсон став другим, Едді Чівер — третім. Кеке Росберг фінішував п’ятим, і цього вистачило для чемпіонського титулу, хоча гонку він не виграв. Це була не сучасна траса вздовж Стріпу. Фінішний порядок і підсумок чемпіонату розповідають дві різні історії того самого незвичного місця."
     },
     "year": "1982",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/16-caesars-palace/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/16-caesars-palace/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1982-las-vegas-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review"
   },
   {
     "id": "clermont-ferrand",
