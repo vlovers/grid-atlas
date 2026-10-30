@@ -48,7 +48,8 @@ test('Madring VSC sequence has independent race narrative and official result pr
   const madrid = chapters.find((chapter) => chapter.circuit_id === 'madring');
   assert.ok(madrid);
   assert.ok(madrid.source_urls.includes('https://api.fia.com/news/f1-antonelli-wins-spanish-grand-ahead-verstappen-vsc-costs-norris'));
-  assert.ok(madrid.source_urls.includes('https://www.formula1.com/en/results/2026/races/1294/madrid/race-result'));
+  assert.ok(madrid.source_urls.includes('https://www.formula1.com/en/results/2026/races/1294/spain/race-result'));
+  assert.ok(!madrid.source_urls.some((url) => url.includes('/1294/madrid/race-result')));
   assert.ok(madrid.source_urls.includes('https://www.grandprix.com/races/spanish-gp-2026-race-notes.html'));
   assert.ok(madrid.pending_review.some((note) => note.includes('Claim locator') && note.includes('not human approval')));
   assert.match(madrid.article.en, /Norris came home third, 0\.738 seconds behind Verstappen/);
