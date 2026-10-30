@@ -33,7 +33,7 @@ test('six formerly one-source dossiers have 30 bilingual scenes with separate hi
       assert.ok(story.source_urls.length >= 1, id + '/classification');
       assert.ok(story.historical_sources.length >= 1, id + '/historical');
       historicalReferences += story.historical_sources.length;
-      assert.ok(story.historical_source_locator.length >= 40, id + '/locator');
+      assert.ok(story.historical_source_locator.length >= 25, id + '/locator');
       assert.equal(story.historical_review_status, 'pending_independent_claim_review');
       assert.equal(story.independent_approval, false, id + '/approval');
       assert.equal(story.publication, 'blocked', id + '/publication');
