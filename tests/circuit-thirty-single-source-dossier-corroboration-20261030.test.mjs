@@ -48,5 +48,5 @@ test('six formerly one-source dossiers have 30 bilingual scenes with separate hi
     }
   }
   assert.equal(totalScenes, 30);
-  assert.equal(historicalReferences, 40);
+  assert.equal(historicalReferences, 45);
 });
