@@ -6,11 +6,18 @@
       "uk": "Мосс перемагає у фіналі в Марокко"
     },
     "description": {
-      "en": "Stirling Moss did everything he could at Ain-Diab in 1958: he won the Moroccan Grand Prix. But the final race settled two different questions. Moss took the chequered flag; Mike Hawthorn finished second in his Ferrari and left as world champion, one point ahead. The road circuit near Casablanca hosted a rare North African championship finale. Its lasting story is that a race victory and a season's title could go to different drivers on the same afternoon.",
-      "uk": "У фіналі 1958 року на Айн-Діабі Стірлінг Мосс зробив головне — виграв Гран-прі Марокко. Та гонка вирішувала дві різні долі. Мосс першим побачив картатий прапор, а Майк Готорн на Ferrari фінішував другим і став чемпіоном світу з перевагою в одне очко. Дорожня траса біля Касабланки прийняла незвичний для тієї доби північноафриканський фінал. Тут переможець гонки й переможець сезону виявилися різними людьми."
+      "en": "Moss won the 1958 Moroccan Grand Prix at Ain-Diab and set the fastest lap, yet Mike Hawthorn left Casablanca as champion. Phil Hill had been running ahead of his Ferrari team-mate, but slowed so Hawthorn could take the second place he needed. Under that season's points rules Hawthorn beat Moss 42 to 41. The finale was also overshadowed by the accident of Vanwall's Stuart Lewis-Evans, who died of his injuries six days later. The title arithmetic and that loss belong in the same account, without confusing the race winner with the world champion.",
+      "uk": "Мосс виграв Гран-прі Марокко 1958 року в Айн-Діабі й показав найшвидше коло, але чемпіоном став Майк Готорн. Філ Гілл ішов попереду напарника по Ferrari, та сповільнився, щоб Готорн посів потрібне йому друге місце. За тодішніми правилами заліку Готорн випередив Мосса з рахунком 42:41. Фінал затьмарила й аварія Стюарта Льюїса-Еванса на Vanwall: через шість днів він помер від травм. Чемпіонська арифметика й ця втрата — частини однієї історії, але переможець гонки та чемпіон світу тут різні люди."
     },
     "year": "1958",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/11-morocco/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/11-morocco/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/"
+    ],
+    "historical_source_locator": "1958 Moroccan GP: Moss, Hill yielding to Hawthorn, title and Lewis-Evans accident.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "aintree",
@@ -19,11 +26,18 @@
       "uk": "Спільний британський тріумф"
     },
     "description": {
-      "en": "The 1957 British Grand Prix at Aintree had an ending almost impossible to imagine today. Tony Brooks and Stirling Moss shared the winning Vanwall, taking turns at its wheel under the rules of the time. The result was a landmark for the British car and a reminder that early Formula 1 did not always mean one driver per car for an entire race. To understand the victory, you have to follow the handover as well as the finishing order.",
-      "uk": "У Гран-прі Великої Британії 1957 року в Ейнтрі був фініш, який сьогодні важко уявити. Тоні Брукс і Стірлінг Мосс розділили перемогу на одному Vanwall: тодішні правила дозволяли пілотам змінюватися за кермом під час гонки. Це був важливий успіх британської машини й нагадування про іншу епоху Формули-1. Щоб зрозуміти результат, потрібно знати не лише порядок фінішу, а й історію передачі автомобіля."
+      "en": "Stirling Moss started the 1957 British Grand Prix at Aintree from pole, but his Vanwall began to misfire. The team called Tony Brooks in and handed his car to Moss, a driver change allowed under the rules of the time. Moss returned to the circuit, worked through the field and took the flag in the shared car. The victory was credited to both drivers and marked a breakthrough for the British-built Vanwall. Reading only the finishing order misses the turning point: Moss won in a different car from the one in which he had started.",
+      "uk": "Стірлінг Мосс стартував із поулу в Ейнтрі 1957 року, але його Vanwall почав працювати з перебоями. Команда покликала Тоні Брукса в бокси й передала автомобіль Моссу — тодішні правила це дозволяли. Мосс повернувся на трасу, відіграв позиції та першим перетнув фініш уже в машині напарника. Перемогу зарахували обом пілотам, і для британського Vanwall вона стала історичною. У сухому протоколі майже не видно головного повороту сюжету: переможний автомобіль був не тим, у якому Мосс почав гонку."
     },
     "year": "1957",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/05-great-britain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/05-great-britain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/special-article/stirling-moss/32/1957-british-gp/"
+    ],
+    "historical_source_locator": "1957 British GP: Moss engine trouble and shared Brooks Vanwall victory.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "avus",
@@ -32,11 +46,18 @@
       "uk": "Незвичний етап чемпіонату в Берліні"
     },
     "description": {
-      "en": "Berlin's AVUS looked nothing like a familiar Grand Prix circuit. The 1959 German Grand Prix ran on a stark high-speed course and was decided across two heats, rather than one continuous race. Tony Brooks emerged as the winner, with Ferrari taking the first three places in the aggregate result. That format matters: the classification combines two races, while the banking and long straights explain why this one-off championship visit still stands apart.",
-      "uk": "Берлінський AVUS мало нагадував звичний автодром Гран-прі. У 1959 році тут провели Гран-прі Німеччини на надшвидкісній трасі, а підсумок визначали за двома заїздами, а не за однією безперервною гонкою. Переміг Тоні Брукс, Ferrari посіла всі три перші місця в сумарній класифікації. Формат важливий: протокол об'єднує два заїзди, а довгі прямі й профільований віраж пояснюють, чому цей етап стоїть осторонь інших."
+      "en": "The 1959 German Grand Prix at AVUS was decided over two heats, not one continuous race. The cars thundered along Berlin's long straights and the steep banked North Turn, with the aggregate order determining the result. Tony Brooks won for Ferrari, ahead of Dan Gurney and Phil Hill. The period report also records deep concern about safety and the fatal accident of Jean Behra in a supporting sports-car race that weekend. The Ferrari one-two-three is the classification; the peculiar format and dangerous venue explain why this event stands apart.",
+      "uk": "Гран-прі Німеччини 1959 року на AVUS складався з двох заїздів, а не з однієї безперервної гонки. Машини мчали довгими берлінськими прямими та крутим профільованим віражем, а підсумок визначали за сумарним результатом. Тоні Брукс переміг на Ferrari, випередивши Дена Герні й Філа Гілла. Тогочасний репортаж розповідає і про небезпеку траси: під час іншого заїзду цього вікенду загинув Жан Бера. Трійка Ferrari — це класифікація, але формат і ризики пояснюють, чому цей етап був особливим."
     },
     "year": "1959",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/06-germany/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/06-germany/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/september-1959/47/the-21st-german-grand-prix/"
+    ],
+    "historical_source_locator": "1959 German GP: AVUS two-heat format, Ferrari aggregate and safety context.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "brands-hatch",
@@ -49,7 +70,14 @@
       "uk": "Домашня перемога Найджела Менселла на Брендс-Гетч у 1986 році не була спокійною поїздкою до фінішу. Його головним суперником став напарник по Williams Нельсон Піке, а боротьба точилася на трасі з постійними підйомами й спусками. Зрештою Менселл фінішував попереду. У протоколі — два перші місця Williams; у самій гонці — протистояння людей на однакових машинах, де ніхто не міг розраховувати на легкий день."
     },
     "year": "1986",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england/"
+    ],
+    "historical_source_locator": "1986 British GP: Mansell's pursuit of Piquet at Brands Hatch.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "dijon",
@@ -58,11 +86,18 @@
       "uk": "Дуель позаду історичного тріумфу Франції"
     },
     "description": {
-      "en": "Jean-Pierre Jabouille gave Renault victory at Dijon in 1979, but the cameras had another reason to stay on the circuit. Behind the winner, Gilles Villeneuve and René Arnoux fought for second, swapping positions in a duel remembered far beyond France. Two Renault drivers reached the podium, yet their races could hardly have felt more different: Jabouille brought home the breakthrough, while Arnoux fought to the line. Both belong in the same story.",
-      "uk": "Жан-П'єр Жабуй приніс Renault перемогу в Діжоні 1979 року, але глядачі стежили не лише за лідером. Позаду Жиль Вільньов і Рене Арну боролися за друге місце, раз по раз змінюючи позиції в дуелі, яку згадують і за межами Франції. На подіум піднялися двоє пілотів Renault, та їхні гонки були зовсім різними: Жабуй довів справу до перемоги, Арну бився до фінішу. Це дві частини однієї історії."
+      "en": "Jean-Pierre Jabouille gave Renault its first Formula 1 championship victory at Dijon in 1979 — and the first for a turbocharged car. But the cameras also followed Gilles Villeneuve and René Arnoux, who swapped places and ran wheel to wheel while fighting for second. Villeneuve held on by a quarter of a second. The winner's breakthrough and the duel behind him are two different parts of one afternoon: a technological milestone at the front, and a battle that made the final laps unforgettable.",
+      "uk": "Жан-П'єр Жабуй приніс Renault першу перемогу в заліковому Гран-прі Формули-1 у Діжоні 1979 року — і першу для турбованої машини. Але камери стежили також за Жилем Вільньовом і Рене Арну: вони мінялися місцями й ішли колесо в колесо в боротьбі за друге місце. Вільньов утримав перевагу в чверть секунди. Прорив переможця й дуель позаду — дві різні частини одного дня: технологічна віха попереду та незабутні останні кола."
     },
     "year": "1979",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1979/races/08-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1979/races/08-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/"
+    ],
+    "historical_source_locator": "1979 French GP: Jabouille turbo win and Villeneuve–Arnoux second-place duel.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "donington",
@@ -75,7 +110,14 @@
       "uk": "Дощ у Донінгтоні 1993 року ще не встиг стати звичним тлом, а Айртон Сенна вже проривався крізь пелотон. Він стартував четвертим, на мить опустився на п'яте місце, проте очолив гонку ще до завершення першого кола. Згодом виграв Гран-прі Європи з перевагою понад хвилину. Та найчастіше згадують саме той початок: кілька рішень на мокрій трасі, поки гонка лише набирала хід."
     },
     "year": "1993",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1993/races/03-europe/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1993/races/03-europe/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/from-senna-to-verstappen-f1s-greatest-wet-weather-drives/"
+    ],
+    "historical_source_locator": "1993 European GP: Senna's opening-lap passes in the rain.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "estoril",
@@ -88,7 +130,14 @@
       "uk": "Злива перетворила Гран-прі Португалії 1985 року на випробування керування, а не лише швидкості. Айртон Сенна втримував Lotus попереду, поки вода на трасі ставала проблемою для суперників, зокрема Алена Проста. На фініші Мікеле Альборето відстав більш ніж на хвилину. Це була перша перемога Сенни в чемпіонаті світу, і дощ тут не просто тло: він визначав перебіг гонки від старту до прапора."
     },
     "year": "1985",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/june-1985/22/portuguese-grand-prix-2/"
+    ],
+    "historical_source_locator": "1985 Portuguese GP: Senna's wet-weather first victory.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "fuji",
@@ -97,11 +146,18 @@
       "uk": "Титул, вирішений під дощем"
     },
     "description": {
-      "en": "At Fuji in 1976, the rain made the championship finale about more than a race result. Niki Lauda chose to stop in conditions he judged too dangerous. James Hunt continued and secured the world title, while Mario Andretti won the Japanese Grand Prix itself. Those are three different decisions and outcomes. The classification names Andretti as winner; the season's story turns on what Lauda and Hunt did in the same weather.",
-      "uk": "На Фудзі 1976 року дощ зробив фінал чемпіонату чимось більшим за звичайну гонку. Нікі Лауда вирішив зупинитися: він вважав умови надто небезпечними. Джеймс Гант продовжив боротьбу й здобув титул, а сам Гран-прі Японії виграв Маріо Андретті. Це три різні рішення й підсумки. У протоколі переможець — Андретті; історія сезону розгортається навколо вибору Лауди та Ганта під тією самою зливою."
+      "en": "Rain and mist covered Fuji before the 1976 Japanese Grand Prix. Niki Lauda, still recovering from his Nürburgring crash, judged the conditions too dangerous and stopped after two laps. James Hunt continued, but a late tyre change left him fighting back for the championship. Mario Andretti won the race for Lotus; Hunt finished third and took the drivers' title by one point. One wet afternoon held three separate stories: Andretti's victory, Hunt's recovery and Lauda's decision not to continue.",
+      "uk": "Перед Гран-прі Японії 1976 року Фудзі накрили дощ і туман. Нікі Лауда, який ще відновлювався після аварії на Нюрбургринзі, вважав умови надто небезпечними й зупинився після двох кіл. Джеймс Гант продовжив гонку, але пізня заміна шин змусила його знову пробиватися вперед заради титулу. Маріо Андретті виграв етап на Lotus, а третє місце Ганта принесло чемпіонство з перевагою в одне очко. Одна злива — три історії: перемога, боротьба й рішення зупинитися."
     },
     "year": "1976",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/16-japan/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/16-japan/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/december-1976/34/japanese-grand-prix-4/"
+    ],
+    "historical_source_locator": "1976 Japanese GP: rain, Lauda withdrawal, Andretti victory and Hunt title.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "istanbul",
@@ -114,7 +170,14 @@
       "uk": "Феліпе Масса приїхав на İstanbul Park у 2006 році без жодної перемоги в Гран-прі. Поїхав — уже переможцем, провівши Ferrari складною трасою проти годинникової стрілки. У сезоні, коли головна увага була прикута до боротьби за титул, турецький етап міг здаватися лише одним із багатьох. Для Масси це був зовсім інший день: швидкість нарешті перетворилася на першу перемогу."
     },
     "year": "2006",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race-results.yml",
+    "historical_sources": [
+      "https://www.autosport.com/f1/news/massa-wins-as-alonso-beats-schumacher-4404019/4404019/"
+    ],
+    "historical_source_locator": "2006 Turkish GP: Massa first win, Alonso second and Schumacher third.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "long-beach",
@@ -127,7 +190,14 @@
       "uk": "Лонг-Біч привів чемпіонат світу на міські вулиці Каліфорнії. У 1977 році Маріо Андретті виграв Гран-прі США-Захід, подарувавши міському етапу перемогу американського пілота й помітне місце в історії Формули-1. Будинки поруч із трасою та тісні повороти різко контрастували з традиційними автодромами календаря. Це були не просто нові декорації — сам Гран-прі відчувався інакше."
     },
     "year": "1977",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1977/races/04-united-states-west/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1977/races/04-united-states-west/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/may-1977/57/the-united-states-grand-prix-west/"
+    ],
+    "historical_source_locator": "1977 US GP West: Mario Andretti victory on the Long Beach streets.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "marina-bay",
@@ -136,11 +206,18 @@
       "uk": "Нічна гонка зі складною спадщиною"
     },
     "description": {
-      "en": "Singapore's first Formula 1 Grand Prix in 2008 brought racing under floodlights to Marina Bay. Fernando Alonso won, but the result later became inseparable from revelations about a deliberately caused Renault crash. It is possible to remember the spectacle of a night race without treating that scandal as part of the entertainment. The official result and the later investigation tell different parts of the same difficult story.",
-      "uk": "Перший Гран-прі Сінгапуру 2008 року привів Формулу-1 під прожектори Марина-Бей. Переміг Фернандо Алонсо, та згодом результат став невіддільним від викриття навмисно спричиненої аварії Renault. Нічний дебют можна згадувати без перетворення скандалу на розвагу. Офіційний фінішний порядок і подальше розслідування розповідають різні частини однієї складної історії."
+      "en": "Singapore's first night Grand Prix in 2008 produced a result whose full meaning emerged only later. Fernando Alonso won for Renault after an early stop and a Safety Car period. Felipe Massa, who had led, lost his chance when Ferrari released him with the refuelling hose still attached. In 2009 an FIA investigation established that Alonso's team-mate Nelson Piquet Jr had crashed deliberately to help Renault's strategy. Alonso remains the official race winner; the later findings are historical context, not a replacement classification.",
+      "uk": "Перший нічний Гран-прі Сінгапуру 2008 року отримав продовження вже після фінішу. Фернандо Алонсо виграв за Renault після раннього піт-стопу й появи автомобіля безпеки. Феліпе Масса, який лідирував, утратив шанс, коли Ferrari випустила його з приєднаним заправним шлангом. У 2009 році розслідування FIA встановило, що напарник Алонсо Нельсон Піке-молодший навмисно спричинив аварію заради командної стратегії. У протоколі переможцем залишається Алонсо; пізніші висновки — важливий історичний контекст, а не нова класифікація."
     },
     "year": "2008",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/45459334"
+    ],
+    "historical_source_locator": "2008 Singapore GP: retrospective Crashgate findings, separate from official result.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "yas-marina",
@@ -149,11 +226,18 @@
       "uk": "Перший титул Феттеля"
     },
     "description": {
-      "en": "Four drivers arrived at the 2010 Abu Dhabi finale with a chance of becoming champion. Sebastian Vettel won the race at Yas Marina and took his first world title. The circuit was still a new name on the calendar, yet it had already become the setting for a decisive championship reversal. To tell this Grand Prix properly, the finish must sit alongside the points situation before the start, not replace it.",
-      "uk": "Перед фіналом 2010 року в Абу-Дабі четверо пілотів ще могли стати чемпіонами. Себастьян Феттель виграв гонку на Яс-Марині й здобув свій перший титул. Траса була новачком у календарі, але вже стала місцем вирішального повороту чемпіонату. Щоб зрозуміти цей Гран-прі, недостатньо знати порядок фінішу — важливо пам'ятати й розклад сил перед стартом."
+      "en": "Four drivers still had a chance of taking the 2010 world title at Yas Marina. Sebastian Vettel did what he could control: he won the race. Points leader Fernando Alonso stopped early and rejoined behind Vitaly Petrov's Renault. He could not find a way past and finished seventh. Vettel became champion without having led the standings before the final round. The finish order names the winner; the drama was unfolding behind him, where Alonso's long pursuit of Petrov never produced the pass he needed.",
+      "uk": "Перед фіналом 2010 року на Яс-Марині четверо пілотів ще могли здобути титул. Себастьян Феттель зробив те, що залежало від нього: виграв гонку. Лідер чемпіонату Фернандо Алонсо рано заїхав у бокси й повернувся позаду Renault Віталія Петрова. Обійти суперника він так і не зміг, фінішувавши сьомим. Феттель став чемпіоном, хоча до фінального етапу не очолював залік. Протокол називає переможця, а головна драма розгорталася позаду нього."
     },
     "year": "2010",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/19-abu-dhabi/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/19-abu-dhabi/race-results.yml",
+    "historical_sources": [
+      "https://www.theguardian.com/sport/2010/nov/14/sebastian-vettel-formula-one-world-champion"
+    ],
+    "historical_source_locator": "2010 Abu Dhabi GP: Vettel title and Alonso stuck behind Petrov.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "austin",
@@ -166,7 +250,14 @@
       "uk": "У 2012 році Формула-1 отримала нову спеціально збудовану американську арену — Circuit of the Americas. Льюїс Гамільтон виграв перший Гран-прі США на трасі в Остіні, одразу вписавши її до історії чемпіонату. Підйом до першого повороту справляв сильне враження, та результат показав: це була не лише презентація нового місця. В Остіні відбулася справжня боротьба за перемогу."
     },
     "year": "2012",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/19-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/19-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/united-states-gp-2012-race-notes-lewis-hamilton-wins-united-states-gp-in-austin.html"
+    ],
+    "historical_source_locator": "2012 US GP: Hamilton passes Vettel for first COTA race victory.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "baku",
@@ -179,7 +270,14 @@
       "uk": "Міські вулиці Баку принесли Данієлю Ріккардо несподівану перемогу на Гран-прі Азербайджану 2017 року. Інциденти й зупинки раз у раз змінювали перебіг гонки, руйнуючи звичний порядок сил. Ріккардо залишався в боротьбі й скористався нагодою, коли вона з'явилася. У протоколі — перемога Red Bull; у пам'яті — гонка, де початок майже нічого не говорив про фінал."
     },
     "year": "2017",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/08-azerbaijan/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/08-azerbaijan/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/50/47-2017-azerbaijan-gp-ricciardo-comes-through-chaos-to-reign-supreme/"
+    ],
+    "historical_source_locator": "2017 Azerbaijan GP: Ricciardo victory through repeated race disruptions.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "jeddah",
@@ -192,7 +290,14 @@
       "uk": "Джидда дебютувала у Формулі-1 у 2021 році саме тоді, коли боротьба Гамільтона й Ферстаппена за титул досягла межі напруги. Льюїс Гамільтон виграв перший Гран-прі Саудівської Аравії на швидкісній міській трасі біля Червоного моря. Результат був важливим, але напругу створював увесь сезон: напередодні фіналу кожна позиція мала вагу. Цю гонку варто читати разом із турнірною таблицею."
     },
     "year": "2021",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/21-saudi-arabia/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/21-saudi-arabia/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/"
+    ],
+    "historical_source_locator": "2021 Saudi Arabian GP: red flags, Hamilton–Verstappen battle and title context.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "miami",
@@ -205,7 +310,14 @@
       "uk": "Перший Гран-прі Маямі 2022 року пройшов на тимчасовій трасі навколо комплексу Hard Rock Stadium. Переміг Макс Ферстаппен, та незвичне місце теж стало частиною історії: автодром облаштували біля великої американської спортивної арени, а не на традиційній постійній трасі. Декорації були новими, проте результат, як завжди, залежав від швидкості пілотів і роботи команд."
     },
     "year": "2022",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/05-miami/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/05-miami/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/61373963"
+    ],
+    "historical_source_locator": "2022 Miami GP: Verstappen takes lead and defends against Leclerc after Safety Car.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "las-vegas",
@@ -218,7 +330,14 @@
       "uk": "У 2023 році Формула-1 повернулася до Лас-Вегаса, цього разу — зі швидкісними ділянками вздовж знаменитого Стріпа. Переміг Макс Ферстаппен, але це не було поверненням на стару трасу Caesars Palace: на початку 1980-х гонки проходили за іншою конфігурацією. Для архіву ця різниця принципова. Одне місто може мати кілька зовсім різних історій Гран-прі."
     },
     "year": "2023",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/21-las-vegas/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/21-las-vegas/race-results.yml",
+    "historical_sources": [
+      "https://www.theguardian.com/sport/2023/nov/19/formula-one-las-vegas-grand-prix-report-max-verstappen"
+    ],
+    "historical_source_locator": "2023 Las Vegas Strip GP: Verstappen victory, Leclerc's final-lap pass.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "adelaide",
@@ -231,7 +350,14 @@
       "uk": "В Аделаїді 1986 року Найджел Менселл наближався до титулу. Ален Прост уже повернувся в боротьбу після проколу, та Менселл усе ще їхав на позиції, якої вистачало для чемпіонства. Потім на швидкості зруйнувалася його ліва задня шина. Прост виграв гонку й титул. Протокол показує фінішний порядок, але не передає, як раптово змінився весь сезон."
     },
     "year": "1986",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/"
+    ],
+    "historical_source_locator": "1986 Australian GP: Mansell tyre failure and Prost's race/title win.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "jarama",
@@ -244,7 +370,14 @@
       "uk": "Жиль Вільньов стартував сьомим у Харамі 1981 року, а завершив Гран-прі Іспанії переможцем. Його Ferrari допомагала захищатися на прямих, хоча суперники швидше проходили повороти. Жак Лаффіт, Джон Вотсон, Карлос Ройтеманн і Еліо де Анджеліс фінішували щільною групою позаду: першу п'ятірку розділили лише 1,240 секунди. Цифри показують, наскільки близьким був фініш; захист Вільньова пояснює, чому гонку пам'ятають."
     },
     "year": "1981",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1981/races/07-spain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1981/races/07-spain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/before-the-spanish-gp-turned-dull-f1s-lost-legend-and-his-thrilling-race-win/"
+    ],
+    "historical_source_locator": "1981 Spanish GP: Villeneuve defends the lead at Jarama.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "zolder",
@@ -257,6 +390,13 @@
       "uk": "Гран-прі Бельгії 1982 року в Зольдері відбувся після загибелі Жиля Вільньова в суботній кваліфікації. Недільну гонку провели, і Джон Вотсон на McLaren переміг Кеке Росберга. Обидва факти важливі, але їх не можна зливати в одну переможну історію. Протокол описує недільний результат; трагедія напередодні — окрема й болюча частина історії того вікенду."
     },
     "year": "1982",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/05-belgium/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/05-belgium/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/june-1982/46/grote-prijs-van-belgie-3/"
+    ],
+    "historical_source_locator": "1982 Belgian GP: Villeneuve fatal qualifying accident, Watson's Sunday win.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   }
 ]

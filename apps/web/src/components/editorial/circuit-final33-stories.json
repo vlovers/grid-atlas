@@ -10,7 +10,14 @@
       "uk": "Айртон Сенна здобув поул на Гран-прі Тихого океану 1994 року, випередивши Міхаеля Шумахера. Та в Айді володар поулу не проїхав жодного гоночного кола: Сенна вибув одразу після старту, а Шумахер довів свій Benetton до перемоги. Герхард Бергер фінішував другим із відставанням 75,3 секунди, Рубенс Баррікелло привіз Jordan на третє місце. Недільний результат виявився зовсім не схожим на суботню стартову решітку. Саме тому цей короткий епізод в історії траси запам’ятовується не дуеллю двох лідерів кваліфікації, а переконливою перемогою Шумахера."
     },
     "year": "1994",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/pacific-gp-1994.html"
+    ],
+    "historical_source_locator": "1994 Pacific GP: Senna pole and first-corner accident, Schumacher victory.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "reims",
@@ -19,11 +26,18 @@
       "uk": "Mercedes повертається — і виграє одну десяту"
     },
     "description": {
-      "en": "At Reims on 4 July 1954, Mercedes-Benz returned to World Championship Grand Prix racing and immediately finished first and second. Juan Manuel Fangio won, but his team-mate Karl Kling was only one tenth of a second behind in the official results. Robert Manzon's Ferrari was third, a lap down. That tiny gap between the two silver cars makes the finish more vivid than any description of technical superiority: the new Mercedes did not simply arrive at Reims; two of them fought for the win all the way to the line. On the French public-road circuit, the comeback became a result nobody needed to wait another race to understand.",
-      "uk": "4 липня 1954 року Mercedes-Benz повернувся до Гран-прі чемпіонату світу й одразу посів перші два місця. Хуан-Мануель Фанхіо переміг, але його напарник Карл Клінг поступився лише однією десятою секунди — саме такий розрив зафіксовано в офіційному протоколі. Робер Манзон на Ferrari став третім, програвши коло. Ця десята секунди розповідає про фініш більше, ніж будь-які слова про перевагу техніки: дві сріблясті машини боролися за перемогу до самої лінії. На швидких дорогах поблизу Реймса повернення Mercedes стало історією, результат якої був зрозумілий уже після першої гонки."
+      "en": "Mercedes returned to World Championship Grand Prix racing at Reims in 1954 with the new W196. Juan Manuel Fangio and Karl Kling controlled the race, but the final laps were no procession. The team-mates ran side by side and exchanged the advantage; Kling even began the last lap ahead. Fangio crossed the line first, just one tenth of a second in front. Robert Manzon finished third in a Ferrari, a lap down. The classification records a Mercedes one-two; the contemporary report shows how close the two silver cars came to reversing their order.",
+      "uk": "Mercedes повернувся до залікових Гран-прі в Реймсі 1954 року з новим W196. Хуан-Мануель Фанхіо й Карл Клінг контролювали гонку, але останні кола не стали парадом. Напарники їхали поруч і мінялися лідерством; Клінг навіть почав останнє коло попереду. Фанхіо першим перетнув фініш, випередивши його лише на одну десяту секунди. Робер Манзон на Ferrari став третім, програвши коло. Протокол показує дубль Mercedes, а тогочасний репортаж — наскільки близько пілоти були до іншого порядку фінішу."
     },
     "year": "1954",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1954/14/the-week-end-at-reims/"
+    ],
+    "historical_source_locator": "1954 French GP: Mercedes debut and Fangio–Kling late fight, 0.1-second gap.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "rouen",
@@ -36,7 +50,14 @@
       "uk": "У протоколі Гран-прі Франції 1968 року в Руані записано переможця: Жакі Ікс на Ferrari випередив Джона Сертіса та Джекі Стюарта. Але підсумкова таблиця не може розповісти все про 7 липня. На початку гонки Жо Шлессер загинув у аварії на Honda. В офіційному результаті він значиться як пілот, що вибув після двох кіл; історичні матеріали та архів Revs Institute підтверджують трагічні обставини. Перемога Ікса заслуговує на місце в історії Формули-1. Ім’я Шлессера — теж. Історія Руана повинна зберегти обидві пам’яті: про здобуту перемогу і про людину, яка не повернулася з гонки."
     },
     "year": "1968",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1968/10/the-french-grand-prix-9/"
+    ],
+    "historical_source_locator": "1968 French GP: Ickx in wet weather and Schlesser's fatal accident.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "buddh",
