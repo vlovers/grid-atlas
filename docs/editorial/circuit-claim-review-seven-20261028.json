@@ -230,24 +230,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "Jochen Mass won the 1975 Spanish Grand Prix at Montjuïc",
-          "uk_excerpt": "Йохен Масс виграв Гран-прі Іспанії 1975 року на трасі Монжуїк",
+          "en_excerpt": "ordinary victory for Jochen Mass",
+          "uk_excerpt": "звичайну перемогу Йохена Масса",
           "evidence_route": "candidate-results",
           "review_question": "Confirm winner and circuit against the classification.",
           "status": "unverified"
         },
         {
           "claim_id": "stoppage",
-          "en_excerpt": "The race was stopped after a fatal accident",
-          "uk_excerpt": "Гонку зупинили після смертельної аварії",
+          "en_excerpt": "Officials stopped the race, and reduced points were awarded",
+          "uk_excerpt": "Перегони зупинили, а очки нарахували в зменшеному обсязі",
           "evidence_route": "candidate-context",
-          "review_question": "Verify race stoppage, fatalities, chronology and precise casualty language from independent reporting.",
+          "review_question": "Independently verify the fatal spectator accident, subsequent race stoppage and reduced points; classification alone does not establish the full chronology.",
           "status": "unverified"
         },
         {
           "claim_id": "safety",
-          "en_excerpt": "the safety failures of that era",
-          "uk_excerpt": "проблеми безпеки тієї епохи",
+          "en_excerpt": "a grave failure of safety",
+          "uk_excerpt": "тяжкого провалу безпеки",
           "evidence_route": "editorial-judgment",
           "review_question": "Identify specific documented safety failures rather than relying on a broad retrospective judgment.",
           "status": "unverified"
