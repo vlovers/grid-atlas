@@ -95,7 +95,8 @@ test('all 73 public stories expose honest source types in both languages', () =>
     assert.ok(uk.badge && uk.description && uk.linkLabel, story.id);
     assert.notEqual(en.description, uk.description, story.id);
   }
-  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 5, 'formula1-circuit-guide': 8, 'formula1-feature': 7, 'formula1-event-page': 0, other: 0 });
+  // Nürburgring 1957 now links to the official race classification; its independent race report is tracked separately.
+  assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 6, 'formula1-circuit-guide': 8, 'formula1-feature': 6, 'formula1-event-page': 0, other: 0 });
   assert.equal(circuitStorySourceKind('https://example.org/not-reviewed'), 'other');
   assert.equal(circuitStorySourceKind('https://github.com/f1db/f1db/blob/main/src/data/seasons/1950/races/01-britain/race-results.yml'), 'other');
   assert.match(circuitStorySourcePresentation('https://example.org/not-reviewed', 'en').description, /review/);
