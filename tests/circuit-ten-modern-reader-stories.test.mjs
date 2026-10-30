@@ -36,9 +36,9 @@ test('ten modern circuit scenes have substantial EN/UK narratives with independe
     const story = circuit.story_leads[index];
     assert.ok(story, `Missing story ${slug}/${index}`);
     for (const lang of ['en', 'uk']) {
-      const paragraphs = story.narrative[lang].split(/\\n\\s*\\n/).filter(Boolean);
+      const paragraphs = story.narrative[lang].split(/\n\s*\n/).filter(Boolean);
       assert.equal(paragraphs.length, 2, `${slug}/${lang}: two complete narrative paragraphs`);
-      assert.ok(story.narrative[lang].trim().split(/\\s+/).length >= 70,
+      assert.ok(story.narrative[lang].trim().split(/\s+/).length >= 70,
         `${slug}/${lang}: narrative must not collapse to a results caption`);
     }
     assert.match(story.narrative.uk, /[А-ЯІЇЄҐа-яіїєґ]/u, `${slug}: missing Ukrainian prose`);
