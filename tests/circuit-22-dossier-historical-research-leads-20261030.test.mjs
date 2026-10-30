@@ -47,7 +47,7 @@ test('all 33 expansion research dossiers keep 165 bilingual scenes with separate
     assert.equal(dossier.stories.length, 5, dossier.circuit_id);
     for (const story of dossier.stories) {
       const key = dossier.circuit_id + ':' + story.story_index;
-      assert.ok(story.source_urls.some(url => url.includes('formula1.com')), key + '/classification');
+      assert.ok(story.source_urls.some(url => url.includes('formula1.com/en/results/')), key + '/classification');
       assert.ok(story.historical_sources?.length >= 1, key + '/historical');
       assert.ok(story.historical_sources.every(url => /^https:\/\//.test(url) && !url.includes('formula1.com')), key + '/independent-domain');
       assert.ok(story.historical_source_locator?.length > 35, key + '/locator');
