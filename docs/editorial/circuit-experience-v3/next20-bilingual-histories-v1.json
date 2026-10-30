@@ -24,11 +24,12 @@
             "uk": "Початок чемпіонату"
           },
           "narrative": {
-            "en": "On 13 May 1950, the new Formula 1 World Championship began at a former airfield. Juan Manuel Fangio's Alfa Romeo retired with an oil-pipe problem, but teammate Giuseppe Farina reached the flag ahead of Luigi Fagioli and Reg Parnell. Silverstone had hosted the first chapter of a story that would soon travel far beyond Britain.",
-            "uk": "13 травня 1950 року на колишньому аеродромі почався новий чемпіонат світу Формули-1. Alfa Romeo Хуана-Мануеля Фанхіо зійшла через несправність маслопроводу, а його напарник Джузеппе Фаріна переміг Луїджі Фаджіолі та Рега Парнелла. Сільверстоун став місцем першого розділу історії, яка невдовзі вийшла далеко за межі Британії."
+            "en": "Silverstone's first World Championship Grand Prix was a day of celebration, but the result was not decided by a single uninterrupted run from the front. On 13 May 1950, the four Alfa Romeos traded places while the crowd watched from the old airfield. Fangio was still challenging Farina late on; a contemporary Motor Sport report describes him clipping a straw bale at Stowe before his engine began to sound rough and he retired. Farina won ahead of Fagioli and local driver Reg Parnell, completing an Alfa Romeo podium sweep. The period report describes a broken connecting rod, while later summaries sometimes give a different mechanical cause. That discrepancy needs a separate claim-level review; the secure story is the fierce intra-team contest and the three finishers.",
+            "uk": "Перший етап чемпіонату світу в Сільверстоуні був святом, але переможець не просто проїхав усю дистанцію без боротьби. 13 травня 1950 року чотири Alfa Romeo не раз мінялися місцями на колишньому аеродромі. Фанхіо й наприкінці гонки боровся з Фаріною: тогочасний репортаж Motor Sport описує, як він зачепив солом’яний бар’єр у Stowe, після чого мотор почав працювати нерівно й пілот зійшов. Фаріна переміг, Фаджіолі став другим, а британець Рег Парнелл замкнув повністю альфівський подіум. Репортаж називає причиною сходу зламаний шатун, тоді як пізніші огляди іноді вказують іншу несправність. Цю розбіжність ще треба перевірити окремо; безсумнівне тут — боротьба напарників і потрійний фініш команди."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT"
+            "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT",
+            "https://www.motorsportmagazine.com/archive/article/june-1950/7/the-royal-silverstone-meeting/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -72,11 +73,12 @@
             "uk": "Ланцюгова аварія на першому колі"
           },
           "narrative": {
-            "en": "Jody Scheckter spun at Silverstone's fast Woodcote corner on the opening lap of the 1973 British Grand Prix. Nine cars became caught in the crash. Andrea de Adamich broke his knee and ankle and needed rescuing from his damaged car. The race restarted, but the incident exposed how unforgiving the old high-speed layout could be.",
-            "uk": "Джоді Шектер розвернувся в швидкісному повороті Woodcote на першому колі Гран-прі Великої Британії 1973 року. В аварію потрапили дев'ять машин. Андреа де Адамік зламав коліно й щиколотку, а рятувальникам довелося визволяти його з пошкодженого боліда. Гонку відновили, але аварія показала, наскільки небезпечною могла бути стара швидкісна траса."
+            "en": "At the end of the opening lap of the 1973 British Grand Prix, Jody Scheckter's McLaren broke away at the fast Woodcote corner, struck the pit-side barrier and rebounded into the path of the following cars. Eight other cars were drawn into the pile-up; several drivers ahead had narrowly escaped it. Andrea de Adamich was seriously injured and had to be freed from his car. The race was stopped and restarted, with Peter Revson eventually winning. This was not merely an odd interruption on a results sheet. The speed of the corner, the location of the barrier and the difficulty of getting a trapped driver out turned the accident into a stark warning about the circuit's old layout.",
+            "uk": "Наприкінці першого кола Гран-прі Великої Британії 1973 року McLaren Джоді Шектера зірвався в швидкісному Woodcote, вдарився об огорожу біля боксів і відскочив просто під колеса тих, хто їхав позаду. У завал потрапили ще вісім машин; кільком пілотам попереду вдалося ледь розминутися з уламками. Андреа де Адамік дістав тяжкі травми, і його довелося визволяти з боліда. Гонку зупинили та почали знову; зрештою переміг Пітер Ревсон. Це не просто дивна пауза в таблиці результатів. Швидкість повороту, близькість огорожі й складність порятунку травмованого гонщика зробили аварію болісним попередженням про небезпеку старої конфігурації."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/moments-in-time-the-british-grand-prix.75fZYfjfQvbAofkfSAOvLe"
+            "https://www.formula1.com/en/latest/article/moments-in-time-the-british-grand-prix.75fZYfjfQvbAofkfSAOvLe",
+            "https://www.motorsportmagazine.com/archive/article/july-2023/84/cars-were-crashing-all-around-jody-scheckter-on-1973-british-gp-nine-car-pile-up/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -160,7 +162,8 @@
         "Three or more additional significant races with individual event-level sources",
         "Complete numbered corner list for a defined official configuration",
         "Historic layout mapping to pinned F1DB IDs",
-        "Independent English and Ukrainian editorial review"
+        "Independent English and Ukrainian editorial review",
+        "1950 Fangio retirement mechanism: contemporary Motor Sport reports a connecting-rod failure after contact with a straw bale; reconcile against later oil-pipe summaries before claim-level approval."
       ],
       "publication": "unpublished"
     },
@@ -182,13 +185,14 @@
             "uk": "Гетін виграє з мінімальною перевагою"
           },
           "narrative": {
-            "en": "Five drivers reached Monza's final lap with a real chance of victory in 1971. Peter Gethin edged Ronnie Peterson by just 0.010 seconds, while François Cevert, Mike Hailwood and Howden Ganley all finished within 0.610 seconds of the winner. Gethin never won another championship Grand Prix, but this finish made his name unforgettable.",
-            "uk": "На останньому колі Монци 1971 року одразу п’ятеро пілотів могли перемогти. Пітер Гетін випередив Ронні Петерсона лише на 0,010 секунди, а Франсуа Север, Майк Гейлвуд і Гауден Ґенлі фінішували в межах 0,610 секунди від переможця. Інших перемог у чемпіонаті Гетін не здобув, та цей фініш увійшов в історію."
+            "en": "At Monza in 1971, being first halfway through a lap could be a disadvantage: the slipstream let the next driver attack on the straight. The lead changed hands repeatedly, and Chris Amon's chance faded after trouble with his visor. Peter Gethin was only fourth as the final lap began, but timed his attack into the last corner and emerged ahead of Ronnie Peterson, François Cevert and Mike Hailwood. Gethin's BRM won by 0.010 seconds; the first five were covered by 0.610 seconds. Those are classification margins, not a description of how the move happened. The period Autosport report captures the cars jostling into Parabolica and the decisive sprint to the line. The extraordinary finish belonged to the long, pre-chicane Monza layout, not today's circuit.",
+            "uk": "У Монці 1971 року лідерство посеред кола могло навіть заважати: суперник користувався повітряним мішком і атакував на прямій. Першу позицію постійно перехоплювали, а шанси Кріса Еймона зменшилися через проблеми з візором шолома. Пітер Гетін розпочав останнє коло лише четвертим, але вчасно пішов в атаку перед останнім поворотом і вирвався поперед Ронні Петерсона, Франсуа Севера та Майка Гейлвуда. Його BRM перемогла з перевагою 0,010 секунди; перших п’ятьох розділили 0,610 секунди. Це цифри класифікації, а не пояснення самого маневру. Тогочасний репортаж Autosport передає тісну боротьбу перед Parabolica й вирішальний ривок до прапора. Такий фініш став можливим на довгій Монці без шикан, а не на її сучасній конфігурації."
           },
           "sources": [
             "https://www.formula1.com/en/results/1971/races/299/italy/race-result",
             "https://www.formula1.com/en/latest/article/f1s-one-win-wonders-how-many-do-you-remember.ACFv9zfw3goSK4FrEDz28",
-            "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
+            "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH",
+            "https://www.autosport.com/f1/news/1971-gethin-wins-monza-slipstreamer-5053083/5053083/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -200,12 +204,13 @@
             "uk": "Кларку забракло пального"
           },
           "narrative": {
-            "en": "A puncture dropped Jim Clark a lap behind at Monza in 1967. He fought all the way back and regained the lead with seven laps remaining, only for his Lotus to run short of fuel on the last lap. John Surtees won and Clark finished third. The comeback remained extraordinary even without a winner's trophy.",
-            "uk": "Прокол шини відкинув Джима Кларка на коло позаду лідерів у Монці 1967 року. Він відіграв відставання й за сім кіл до фінішу повернув собі перше місце. Але на останньому колі його Lotus забракло пального. Переміг Джон Сертіс, Кларк фінішував третім. Ця погоня залишилася неймовірною навіть без переможного кубка."
+            "en": "Jim Clark's 1967 Italian Grand Prix was almost two races in one. A puncture forced his Lotus into the pits and cost him more than a lap, yet he rejoined and began passing cars so quickly that he recovered the lost lap and caught the leaders. When teammate Graham Hill's engine failed, Clark was suddenly fighting for the win again. He led as the final lap began, only for the fuel pumps to stop picking up fuel from the tank. The contemporary Motor Sport report says mechanics later found about three gallons still inside: it was fuel delivery, not simply an empty tank. John Surtees beat Jack Brabham in the new Honda RA300, and Clark limped home third. The classification names the winner; the race story explains why the crowd celebrated a third-place driver too.",
+            "uk": "Гран-прі Італії 1967 року для Джима Кларка ніби складався з двох окремих гонок. Прокол змусив його заїхати в бокси й відкинув більш ніж на коло назад, але Lotus повернувся на трасу й почав обганяти так швидко, що відіграв утрачене коло та наздогнав лідерів. Коли в напарника Ґрема Гілла відмовив мотор, Кларк знову реально боровся за перемогу. Він розпочав останнє коло першим, та паливні насоси перестали забирати бензин із бака. За тогочасним репортажем Motor Sport, механіки згодом знайшли всередині ще близько трьох галонів: проблема була в подачі пального, а не просто в порожньому баку. Джон Сертіс на новій Honda RA300 випередив Джека Бребема, а Кларк ледве дістався фінішу третім. Таблиця називає переможця; історія пояснює, чому трибуни вітали й третього."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/from-shock-wins-to-dramatic-comebacks-10-of-the-most-remarkable-rises-to-the.2EYo6UpsN0K9wLYBykTUGS",
-            "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH"
+            "https://www.formula1.com/en/latest/article/100-years-of-monza-we-pick-the-most-spectacular-italian-grands-prix-from.1q7hUu1YPrEhvQInT2E6vH",
+            "https://www.motorsportmagazine.com/archive/article/october-1967/16/italian-grand-prix-2/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -971,11 +976,12 @@
             "uk": "Погоня Фанхіо"
           },
           "narrative": {
-            "en": "Juan Manuel Fangio looked in control at the Nürburgring in 1957 until a slow Maserati pit stop put the Ferraris of Mike Hawthorn and Peter Collins ahead. He attacked the long Nordschleife lap after lap, erased the deficit and passed both rivals to win. The drive also secured his fifth and final world championship.",
-            "uk": "Хуан-Мануель Фанхіо контролював гонку на Нюрбургринзі 1957 року, доки затяжний піт-стоп Maserati не пропустив уперед Ferrari Майка Готорна й Пітера Коллінза. Він атакував довгу Нордшляйфе коло за колом, відіграв відставання й обігнав обох суперників. Ця перемога принесла йому п'ятий і останній титул чемпіона світу."
+            "en": "Fangio had planned to stop for fuel and rear tyres at the 1957 German Grand Prix, but his Maserati pit visit on lap 12 took 52 seconds and surrendered the lead to Mike Hawthorn and Peter Collins. The gap initially stayed stubbornly large. Then Fangio began cutting it lap by lap on the Nordschleife, setting a remarkable 9m 17.4s lap as he caught the Ferraris. He passed Collins and Hawthorn late in the race and held off Hawthorn to the flag. The contemporary Motor Sport account follows the changing gaps rather than reducing the drive to a miracle comeback. Fangio's victory secured his fifth world title; the historic Nordschleife lap and its demands should not be confused with the modern Nürburgring Grand Prix circuit.",
+            "uk": "На Гран-прі Німеччини 1957 року Фанхіо планував дозаправитися й змінити задні шини, але зупинка Maserati на 12-му колі тривала 52 секунди. Попереду опинилися Ferrari Майка Готорна й Пітера Коллінза. Спочатку відрив майже не скорочувався. Потім Фанхіо почав відігравати секунди коло за колом на Нордшляйфе й показав неймовірні 9 хвилин 17,4 секунди, наздоганяючи суперників. Наприкінці гонки він обігнав і Коллінза, і Готорна та втримав перше місце до прапора. Тогочасний репортаж Motor Sport простежує, як танув відрив, замість просто називати це дивовижним камбеком. Перемога принесла Фанхіо п’ятий титул; довге історичне коло Нордшляйфе не слід плутати із сучасною трасою Гран-прі Нюрбургринга."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA"
+            "https://www.formula1.com/en/latest/article/from-sennas-suzuka-stunner-to-buttons-montreal-magic-10-of-the-best-comeback.417iM6PaL80pL8qMltliGA",
+            "https://www.motorsportmagazine.com/archive/article/september-1957/29/fangio-the-supreme-master/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -987,12 +993,13 @@
             "uk": "Аварія Лауди на Північній петлі"
           },
           "narrative": {
-            "en": "On the second lap of the 1976 German Grand Prix, Niki Lauda crashed on the Nürburgring's Nordschleife and his Ferrari caught fire. Fellow drivers, including Arturo Merzario, Brett Lunger, Harald Ertl and Guy Edwards, stopped to help pull him from the wreck. James Hunt won the restarted race, but the weekend became inseparable from Lauda's survival and remarkable return to racing weeks later.",
-            "uk": "На другому колі Гран-прі Німеччини 1976 року Нікі Лауда потрапив в аварію на Північній петлі Нюрбургринга, а його Ferrari загорілася. На допомогу зупинилися інші гонщики, зокрема Артуро Мерцаріо, Бретт Лангер, Гаральд Ертль і Гай Едвардс. Джеймс Гант виграв гонку після рестарту, але цей вікенд запам’ятався насамперед порятунком Лауди та його поверненням за кілька тижнів."
+            "en": "The 1976 German Grand Prix began with an awkward tyre choice as the rain eased. Drivers on wets headed for the pits while Jochen Mass stayed out, and the race was still taking shape when Niki Lauda crashed near Bergwerk on the second lap. His Ferrari caught fire and was struck by following cars. Brett Lunger, Harald Ertl, Guy Edwards and Arturo Merzario helped pull him from the wreck; their actions matter more than a tidy racing narrative. The race was stopped, then restarted, and James Hunt won. Contemporary reports disagreed over the exact mechanical cause, so this account does not present an unproven failure as fact. Lauda survived and returned to racing weeks later. The event is both a race result and a turning point in how the Nordschleife's risks were understood.",
+            "uk": "Гран-прі Німеччини 1976 року почався зі складного вибору шин: дощ слабшав, гонщики на дощовій гумі заїжджали в бокси, а Йохен Масс залишився на трасі. Гонка ще тільки набирала обертів, коли на другому колі біля Bergwerk розбився Нікі Лауда. Його Ferrari загорілася, а в пошкоджену машину врізалися боліди позаду. Бретт Лангер, Гаральд Ертль, Гай Едвардс та Артуро Мерцаріо допомогли витягнути його з вогню; їхній вчинок важливіший за красиву історію перегонів. Гонку зупинили, потім поновили, і переміг Джеймс Гант. Тогочасні повідомлення розходилися щодо точної технічної причини аварії, тому тут не подаємо непідтверджену версію як факт. Лауда вижив і повернувся за кермо за кілька тижнів. Це водночас спортивний результат і поворотний момент у розумінні ризиків Нордшляйфе."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
-            "https://www.formula1.com/en/results/1976/races/367/germany/race-result"
+            "https://www.formula1.com/en/results/1976/races/367/germany/race-result",
+            "https://www.motorsportmagazine.com/archive/article/september-1976/34/german-grand-prix-15/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -1074,7 +1081,8 @@
         "Three or more additional significant races with individual event-level sources",
         "Complete numbered corner list for a defined official configuration",
         "Historic layout mapping to pinned F1DB IDs",
-        "Independent English and Ukrainian editorial review"
+        "Independent English and Ukrainian editorial review",
+        "1976 Lauda accident: do not assert an exact initiating mechanical failure without independent primary evidence."
       ],
       "publication": "unpublished"
     },
@@ -1237,11 +1245,12 @@
             "uk": "Усі учасники фінішують"
           },
           "narrative": {
-            "en": "Fifteen cars started the 1961 Dutch Grand Prix at Zandvoort. Every one of them reached the finish, and not a single driver stopped for fuel or tyres. In an era when mechanical failures routinely thinned the field, it was an extraordinary sight: the entire starting grid still running at the chequered flag. Two reserve drivers never started and are not part of that count.",
-            "uk": "На старт Гран-прі Нідерландів 1961 року в Зандворті вийшли п’ятнадцять машин. Усі п’ятнадцять дісталися фінішу, і жоден пілот не зупинявся для дозаправлення чи заміни шин. У часи, коли технічні поломки часто вибивали половину пелотону, це був винятковий результат. Ще двоє резервних гонщиків на старт не вийшли й до цього числа не належать."
+            "en": "The 1961 Dutch Grand Prix is remembered for a statistic, but the race was far from static. Wolfgang von Trips led throughout in his Ferrari while Phil Hill and Jim Clark fought over second: the Ferrari had speed on the straights, the Lotus answered through the corners. Stirling Moss snatched fourth from Richie Ginther in the final run to the flag. All fifteen starters were still running at the finish, and the contemporary Motor Sport report noted that not one had visited the pits. That is a claim about the fifteen cars that actually started, not reserve entrants who never took the grid. Von Trips won ahead of Hill and Clark. The unusual clean sweep is more interesting when the on-track fights and the period's normal mechanical attrition are remembered together.",
+            "uk": "Гран-прі Нідерландів 1961 року згадують через рекордну статистику, але гонка зовсім не була нудною. Вольфганг фон Тріпс лідирував від старту до фінішу на Ferrari, а Філ Гілл і Джим Кларк боролися за друге місце: Ferrari була швидшою на прямих, Lotus відігравався в поворотах. Стірлінг Мосс вирвав четверте місце в Річі Ґінтера в самому фінішному ривку. Усі п’ятнадцять машин, що стартували, дісталися прапора, а тогочасний Motor Sport зазначив, що жодна навіть не заїжджала в бокси. Це твердження стосується саме п’ятнадцяти учасників старту, а не резервних заявок. Фон Тріпс переміг Гілла та Кларка. Незвичний стовідсотковий фініш стає цікавішим, якщо пам’ятати і про боротьбу на трасі, і про звичні для тієї епохи поломки."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG"
+            "https://www.formula1.com/en/latest/article/the-rare-occasions-every-car-was-a-finisher.1CUbNYGheF4I34tjEtJKLG",
+            "https://www.motorsportmagazine.com/archive/article/july-1961/36/the-dutch-grand-prix-15/"
           ],
           "source_granularity": "official_F1_event_specific_report_or_retrospective_plus_recorded_sources",
           "review_status": "source_checked_research_draft"
@@ -1253,11 +1262,12 @@
             "uk": "Перлі намагається врятувати Вільямсона"
           },
           "narrative": {
-            "en": "Roger Williamson crashed at Zandvoort in 1973; his car overturned and caught fire. Fellow driver David Purley abandoned his race and tried to right the car and extinguish the flames. Williamson died, and Purley was later awarded the George Medal for his courage. It remains one of Formula 1's most painful reminders of the cost of inadequate rescue arrangements.",
-            "uk": "Роджер Вільямсон розбився в Зандворті 1973 року: його машина перекинулася й загорілася. Інший пілот, Девід Перлі, припинив власну гонку та намагався перевернути болід і загасити полум'я. Вільямсон загинув, а Перлі згодом отримав медаль Георга за мужність. Ця трагедія досі нагадує Формулі-1 про ціну недостатньої допомоги на місці аварії."
+            "en": "Roger Williamson's car overturned and caught fire during the 1973 Dutch Grand Prix. David Purley stopped his own car and tried to help, but he could not free Williamson on his own, and the response at the scene was inadequate. Williamson died. The race continued and Jackie Stewart eventually won, yet the contemporary Motor Sport report describes a deeply unhappy victory with the damaged car still beside the circuit. The result and the tragedy must not be folded into a triumphant finish-line anecdote. Purley's effort and the failure of the rescue arrangements became part of the lasting history of Zandvoort and the wider debate about racing safety.",
+            "uk": "Під час Гран-прі Нідерландів 1973 року машина Роджера Вільямсона перекинулася й загорілася. Девід Перлі зупинив власний болід і кинувся на допомогу, але самотужки не зміг визволити Вільямсона, а допомога на місці була недостатньою. Гонщик загинув. Перегони тривали, і зрештою переміг Джекі Стюарт, однак тогочасний Motor Sport описує цю перемогу як гірку: розбита машина досі стояла біля траси. Результат гонки й трагедію не можна зводити до красивого епізоду на фініші. Спроба Перлі врятувати колегу та провал рятувальних заходів стали невіддільною частиною історії Зандворта й ширшої розмови про безпеку перегонів."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj"
+            "https://www.formula1.com/en/latest/article/from-lending-vital-equipment-to-intervening-at-accident-scenes-8-of-the.6woBiRNImYM09TIbc6Jitj",
+            "https://www.motorsportmagazine.com/archive/article/september-1973/35/dutch-grand-prix-17/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
@@ -1526,12 +1536,13 @@
             "uk": "Брамбілла перемагає під дощем"
           },
           "narrative": {
-            "en": "The 1975 Austrian Grand Prix took place on the old Österreichring, not the compact circuit spectators know today. Heavy rain shaped the race, and Vittorio Brambilla won for March. His victory reminds us how different this venue once was: faster, longer and contested in an era when weather could change the meaning of every lap. It was Brambilla's only Formula 1 World Championship Grand Prix win.",
-            "uk": "Гран-прі Австрії 1975 року проходив на старому Österreichring — зовсім не на короткій трасі, яку ми знаємо сьогодні. Сильний дощ змінив хід гонки, а Вітторіо Брамбілла переміг за March. Ця перемога нагадує про іншу епоху Шпільберга: довше й швидше коло, де погода могла перевернути все. Для Брамбілли це був єдиний виграний Гран-прі чемпіонату світу Формули-1."
+            "en": "This was the old Österreichring in 1975, not the short Red Bull Ring used by today's Formula 1. Heavy rain delayed the Austrian Grand Prix and made visibility miserable. Niki Lauda led early, but Vittorio Brambilla worked through the spray, passed James Hunt for the lead on lap 19 and pulled away. Officials stopped the race after 29 laps because of the conditions. Brambilla took his only championship Grand Prix victory for March, then lost control while celebrating just beyond the line and damaged the car's nose. A contemporary Motor Sport account describes both the charge and the mishap. The classification records a win in a shortened race; the human story is a driver who mastered the rain and could barely contain his delight.",
+            "uk": "У 1975 році це був довгий старий Österreichring, а не короткий Red Bull Ring, на якому Формула-1 їздить нині. Сильний дощ затримав старт Гран-прі Австрії й майже позбавив пілотів видимості. Спершу лідирував Нікі Лауда, але Вітторіо Брамбілла прорвався крізь водяну завісу, обігнав Джеймса Ганта на 19-му колі й почав відриватися. Через умови організатори зупинили гонку після 29 кіл. Брамбілла здобув єдину перемогу в чемпіонаті за March, а одразу за фінішною лінією, святкуючи, втратив контроль і пошкодив ніс машини. Тогочасний репортаж Motor Sport описує і його ривок, і цю прикру мить. Класифікація фіксує перемогу в скороченій гонці; людська історія — пілот, який приборкав дощ, але не міг стримати радості."
           },
           "sources": [
             "https://www.formula1.com/en/latest/article/pastor-maldonado-f1-one-win-wonders.5ARTk93U8otcWcF0MQ5nFD",
-            "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE"
+            "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+            "https://www.motorsportmagazine.com/archive/article/september-1975/22/austrian-gp/"
           ],
           "source_granularity": "official_F1_article_contains_specific_race",
           "review_status": "source_checked_research_draft"
