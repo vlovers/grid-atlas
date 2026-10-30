@@ -8,7 +8,7 @@ test('25 explicit circuit decisions stay unpublished and require evidence',()=>{
  assert.equal(matches.length,25);
  for(const id of ids) assert.deepEqual(matches.filter(m=>m[1]===id).map(m=>Number(m[2])),[1,2,3,4,5]);
  for(const section of md.split(/^### [a-z-]+:[1-5] — .+$/m).slice(1)){
-  assert.match(section,/\*\*Disposition:\*\* \`[A-Z_]+\`/);
+  assert.match(section,/\*\*Disposition:\*\* `[A-Z_]+`/);
   assert.match(section,/Specific next verification:/);
   assert.match(section,/Editorial guardrail:/);
   assert.match(section,/EN\/UK equivalence:/);
