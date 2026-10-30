@@ -5,6 +5,16 @@ const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next25-
 // Exact reviewed research leads; not a blanket publisher or publication allowlist.
 const periodResearchUrls = new Set([
   "https://www.motorsportmagazine.com/archive/article/august-1964/58/xvii-british-grand-prix/",
+  "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/50/47-2017-azerbaijan-gp-ricciardo-comes-through-chaos-to-reign-supreme/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
+  "https://www.motorsportmagazine.com/database/races/2023-qatar-grand-prix/",
+  "https://www.bbc.co.uk/sport/articles/c0klxx859neo",
+  "https://www.theguardian.com/sport/2023/nov/19/formula-one-las-vegas-grand-prix-report-max-verstappen",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/",
+  "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/heartbreak-for-norris-hands-hamilton-his-100th-f1-win-2021-russian-gp-report/",
   "https://www.grandprix.com/races/united-states-gp-1961.html",
   "https://www.motorsportmagazine.com/archive/article/february-1967/14/grand-prix-of-south-africa-2/",
   "https://www.motorsportmagazine.com/archive/article/august-1971/27/the-4th-grand-prix-of-france/",
