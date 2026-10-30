@@ -14,24 +14,24 @@
       "claims": [
         {
           "claim_id": "first-win",
-          "en_excerpt": "Ayrton Senna took his first Formula 1 World Championship race win",
-          "uk_excerpt": "Айртон Сенна здобув свою першу перемогу",
+          "en_excerpt": "his first championship Grand Prix win",
+          "uk_excerpt": "першу перемогу в чемпіонаті",
           "evidence_route": "candidate-results",
           "review_question": "Confirm first career championship victory, identity and event in original results and chronology.",
           "status": "unverified"
         },
         {
           "claim_id": "rain",
-          "en_excerpt": "Heavy rain made the Portuguese Grand Prix",
-          "uk_excerpt": "Сильний дощ перетворив Гран-прі Португалії",
+          "en_excerpt": "The 1985 Portuguese Grand Prix began in relentless rain",
+          "uk_excerpt": "Гран-прі Португалії 1985 року почався під суцільною зливою",
           "evidence_route": "candidate-context",
           "review_question": "Locate an explicit weather passage; a classification file does not establish rainfall.",
           "status": "unverified"
         },
         {
           "claim_id": "reputation",
-          "en_excerpt": "the control that would define his reputation",
-          "uk_excerpt": "ранній доказ його майстерності керування",
+          "en_excerpt": "most of the field struggled for grip",
+          "uk_excerpt": "більшість пілотів шукала хоч якесь зчеплення",
           "evidence_route": "editorial-judgment",
           "review_question": "Distinguish a retrospective interpretation from a verifiable race fact; soften if unsupported.",
           "status": "unverified"
@@ -78,24 +78,24 @@
       "claims": [
         {
           "claim_id": "winner-title",
-          "en_excerpt": "Alain Prost won the 1986 Australian Grand Prix at Adelaide and claimed the championship",
-          "uk_excerpt": "Ален Прост виграв Гран-прі Австралії 1986 року в Аделаїді та став чемпіоном світу",
+          "en_excerpt": "Prost took the race and the championship",
+          "uk_excerpt": "Прост виграв гонку й чемпіонат",
           "evidence_route": "candidate-results",
           "review_question": "Confirm race result and championship outcome independently; race-result rows alone are not official season standings.",
           "status": "unverified"
         },
         {
           "claim_id": "tyre",
-          "en_excerpt": "Nigel Mansell's tyre failure",
-          "uk_excerpt": "Прокол шини Найджела Менселла",
+          "en_excerpt": "Mansell's left-rear tyre failed at speed",
+          "uk_excerpt": "на швидкості зруйнувалася ліва задня шина Менселла",
           "evidence_route": "candidate-context",
           "review_question": "Check whether the evidence supports the more specific Ukrainian 'puncture' versus English 'tyre failure'.",
           "status": "unverified"
         },
         {
           "claim_id": "superlative",
-          "en_excerpt": "one of Formula 1's most dramatic title deciders",
-          "uk_excerpt": "одну з найдраматичніших розв’язок в історії Формули-1",
+          "en_excerpt": "the finishing order alone hides the drama of how it happened",
+          "uk_excerpt": "сухий протокол не передає, як раптово все змінилося",
           "evidence_route": "editorial-judgment",
           "review_question": "Decide whether the superlative is appropriate opinion rather than a sourced measurable claim.",
           "status": "unverified"
@@ -110,24 +110,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "John Watson won the 1982 Belgian Grand Prix at Zolder",
-          "uk_excerpt": "Джон Вотсон виграв Гран-прі Бельгії 1982 року в Зольдері",
+          "en_excerpt": "John Watson won for McLaren ahead of Keke Rosberg",
+          "uk_excerpt": "Джон Вотсон на McLaren випередив Кеке Росберга",
           "evidence_route": "candidate-results",
           "review_question": "Verify winner and venue against the 1982 classification.",
           "status": "unverified"
         },
         {
           "claim_id": "fatal-qualifying",
-          "en_excerpt": "Gilles Villeneuve's fatal qualifying accident",
-          "uk_excerpt": "загибель Жиля Вільнева під час кваліфікації",
+          "en_excerpt": "Gilles Villeneuve died after a crash in Saturday qualifying",
+          "uk_excerpt": "У суботу після аварії в кваліфікації загинув Жиль Вільньов",
           "evidence_route": "candidate-context",
           "review_question": "Verify session, date, circumstances and sensitive wording with a dedicated historical account.",
           "status": "unverified"
         },
         {
           "claim_id": "framing",
-          "en_excerpt": "a painful reminder that Formula 1 history is not only about winners",
-          "uk_excerpt": "болісне нагадування, що історія Формули-1 складається не лише з перемог",
+          "en_excerpt": "The classification records that result, but cannot tell the whole story of Zolder",
+          "uk_excerpt": "Протокол зберіг результат, але не передає всієї історії Зольдера",
           "evidence_route": "editorial-judgment",
           "review_question": "Check respectful tone without presenting the editorial framing as independently verified.",
           "status": "unverified"
