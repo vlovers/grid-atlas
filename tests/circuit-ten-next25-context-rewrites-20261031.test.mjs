@@ -17,7 +17,7 @@ const specs=[
   [
     "lusail",
     "An unusual 18-lap tyre limit",
-    "fia.com"
+    "skysports.com"
   ],
   [
     "mexico-city",
