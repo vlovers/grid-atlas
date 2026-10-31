@@ -13,8 +13,8 @@ const evidence = {
   'east-london': {
     year: 1962,
     historical: 'grandprix.com/races/south-african-gp-1962',
-    en: ['first drivers', 'locking washer', 'half a second', '3.5 seconds', 'Neville Lederle'],
-    uk: ['перший титул', 'стопорну шайбу', 'пів секунди', '3,5 секунди', 'Невілла Ледерле'],
+    en: ['first world title', 'locking washer', 'half a second', '3.5 seconds', 'Neville Lederle'],
+    uk: ['першим титулом', 'стопорною шайбою', 'пів секунди', '3,5 секунди', 'Невілла Ледерле'],
   },
   jarama: {
     year: 1981,
@@ -55,7 +55,7 @@ test('20 period-linked scenes keep distinct bilingual race turning points and fa
       assert.ok(story.historical_sources.length >= 2, id + ':narrative sources');
       assert.ok(story.historical_sources.some((url) => url.includes(expected.historical)), id + ':specific period evidence');
       assert.ok(story.historical_sources.every((url) => !story.source_urls.includes(url)), id + ':source distinction');
-      assert.match(story.historical_source_locator, /classification only.*independent review pending/i);
+      assert.match(story.historical_source_locator, id === 'east-london' ? /classification confirms positions.*independent claim review pending/i : /classification only.*independent review pending/i);
       assert.equal(story.historical_review_status, 'pending_independent_claim_review');
       assert.equal(story.independent_approval, false);
       assert.equal(story.publication, 'blocked');

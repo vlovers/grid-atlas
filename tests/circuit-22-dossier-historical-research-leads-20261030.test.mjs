@@ -30,7 +30,7 @@ const expectedRewrites = new Map([
   ['ain-diab:5', ['engine failed', 'двигун']],
   ['dijon:1', ['lap 46', '46-му колі']],
   ['dijon:2', ['engine hesitated', 'двигун']],
-  ['montjuic:1', ['safety barriers', 'безпеку огорож']],
+  ['montjuic:1', ['Montjuïc barriers', 'огорожах Монжуїка']],
   ['pedralbes:5', ['clutch trouble', 'зі зчепленням']],
   ['spa-francorchamps:1', ['Jackie Stewart', 'Джекі Стюарта']],
   ['reims:3', ['did not finish', 'не дістався']],
