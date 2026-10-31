@@ -123,15 +123,18 @@
       "uk": "Росберг витримує спеку Далласа"
     },
     "description": {
-      "en": "Dallas had one Formula 1 Grand Prix, and the Texas summer made sure nobody forgot it. In 1984 the temporary Fair Park course was breaking up as the heat punished drivers and machinery. Nigel Mansell started from pole but did not take the victory; Keke Rosberg survived the conditions to win for Williams. The classification gives Rosberg first place, but the story of Dallas is also about a circuit surface that struggled to survive its own race.",
-      "uk": "У Далласі Формула-1 провела лише один Гран-прі, але техаське літо зробило його незабутнім. У 1984 році асфальт тимчасової траси у Фейр-Парку руйнувався, а спека виснажувала пілотів і техніку. Найджел Менселл стартував із поулу, та перемогу здобув Кеке Росберг на Williams. У протоколі залишилося його перше місце, а в історії траси — покриття, яке ледве витримало власну гонку."
+      "en": "Dallas had one Formula 1 Grand Prix, and the Texas summer made sure nobody forgot it. In 1984 the temporary Fair Park course was breaking up as the heat punished drivers and machinery. Nigel Mansell started from pole but did not take the victory; Keke Rosberg survived the conditions to win for Williams. The classification gives Rosberg first place, but the story of Dallas is also about a circuit surface that struggled to survive its own race.\n\nA Can-Am race had damaged the surface further, so Sunday warm-up was cancelled while workers patched it. Mansell actually led the first 35 laps before Rosberg passed him; Prost later led too, only to retire after hitting a wall. Rosberg inherited first again. René Arnoux recovered from the back of the grid to finish second, and an exhausted Mansell collapsed while trying to push his stricken Lotus towards the finish.",
+      "uk": "У Далласі Формула-1 провела лише один Гран-прі, але техаське літо зробило його незабутнім. У 1984 році асфальт тимчасової траси у Фейр-Парку руйнувався, а спека виснажувала пілотів і техніку. Найджел Менселл стартував із поулу, та перемогу здобув Кеке Росберг на Williams. У протоколі залишилося його перше місце, а в історії траси — покриття, яке ледве витримало власну гонку.\n\nПісля суботньої гонки Can-Am покриття стало ще гіршим, тому недільну розминку скасували заради термінового ремонту. Менселл утримував лідерство перші 35 кіл, поки його не випередив Росберг; згодом попереду опинився Прост, але після удару об стіну зійшов. Росберг знову став першим. Рене Арну прорвався з хвоста пелотону на друге місце, а виснажений Менселл знепритомнів, намагаючись доштовхати пошкоджений Lotus до фінішу."
     },
     "year": "1984",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
     "historical_sources": [
       "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport August 1984 period report: Can-Am damage, cancelled warm-up, Mansell 35 laps led, Prost retirement, Arnoux recovery and Mansell collapse.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "sirius",
@@ -296,15 +299,19 @@
       "uk": "Єдина перемога Лоренцо Бандіні"
     },
     "description": {
-      "en": "Austria's 1964 World Championship Grand Prix ran on an airfield, not on the permanent Spielberg circuit familiar today. The rough Zeltweg surface punished cars throughout the afternoon. Lorenzo Bandini brought his Ferrari home first for his only Formula 1 championship victory, ahead of Richie Ginther and Bob Anderson. The result was a career landmark for Bandini and a reminder of how improvised some early Grand Prix venues could be.",
-      "uk": "Гран-прі Австрії 1964 року відбувся на аеродромі, а не на постійному автодромі в Шпільберзі, знайомому сьогодні. Нерівне покриття Цельтвега безжально випробовувало машини. Лоренцо Бандіні привів Ferrari до своєї єдиної перемоги в чемпіонаті Формули-1, випередивши Річі Гінтера й Боба Андерсона. Для Бандіні це був головний гоночний тріумф, а для історії спорту — нагадування, наскільки незвичними бували ранні майданчики Гран-прі."
+      "en": "Austria's 1964 World Championship Grand Prix ran on an airfield, not on the permanent Spielberg circuit familiar today. The rough Zeltweg surface punished cars throughout the afternoon. Lorenzo Bandini brought his Ferrari home first for his only Formula 1 championship victory, ahead of Richie Ginther and Bob Anderson. The result was a career landmark for Bandini and a reminder of how improvised some early Grand Prix venues could be.\n\nThe period report describes the mechanical chain behind Bandini's win: Surtees retired with broken rear suspension, Clark's Lotus lost a driveshaft, and Gurney surrendered the lead when a front suspension mounting failed. Bandini kept his Ferrari V6 running on the punishing concrete while faster challengers fell away. Ginther was second and Anderson third, despite trouble in Anderson's own driveline.",
+      "uk": "Гран-прі Австрії 1964 року відбувся на аеродромі, а не на постійному автодромі в Шпільберзі, знайомому сьогодні. Нерівне покриття Цельтвега безжально випробовувало машини. Лоренцо Бандіні привів Ferrari до своєї єдиної перемоги в чемпіонаті Формули-1, випередивши Річі Гінтера й Боба Андерсона. Для Бандіні це був головний гоночний тріумф, а для історії спорту — нагадування, наскільки незвичними бували ранні майданчики Гран-прі.\n\nТогочасний репортаж відновлює технічну послідовність перемоги Бандіні: Сертіс зійшов через поломку задньої підвіски, Lotus Кларка втратив піввісь, а Герні поступився лідерством після відмови кріплення передньої підвіски. Ferrari V6 Бандіні витримала нерівний бетон, поки швидші суперники вибували. Гінтер став другим, Андерсон — третім, хоча й його машина мала проблеми з приводом."
     },
     "year": "1964",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/articles/single-seaters/f1/brief-history-austrian-grand-prix/"
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/brief-history-austrian-grand-prix/",
+      "https://www.motorsportmagazine.com/archive/article/october-1964/39/austrian-grand-prix-4/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport October 1964 period report: Surtees rear suspension, Clark driveshaft, Gurney front mounting and Bandini's V6 Ferrari survival.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "mugello",
@@ -351,15 +358,18 @@
       "uk": "Мосс підкорює найдовшу трасу чемпіонату"
     },
     "description": {
-      "en": "The 1957 Pescara Grand Prix was only eighteen laps long, yet Stirling Moss needed nearly three hours to win it. One lap of the Italian public-road course stretched for roughly 25 kilometres, far beyond anything on today's calendar. The distance between corners and the sheer length of the route shaped the race as much as the finishing order. Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.",
-      "uk": "Гран-прі Пескари 1957 року тривав лише вісімнадцять кіл, але Стірлінгу Моссу знадобилося майже три години для перемоги. Одне коло італійськими дорогами простягалося приблизно на 25 кілометрів — незрівнянно більше, ніж на сучасних трасах. Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок. Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола."
+      "en": "The 1957 Pescara Grand Prix was only eighteen laps long, yet Stirling Moss needed nearly three hours to win it. One lap of the Italian public-road course stretched for roughly 25 kilometres, far beyond anything on today's calendar. The distance between corners and the sheer length of the route shaped the race as much as the finishing order. Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.\n\nThe period report records a decisive mechanical sequence: Musso's Ferrari split its oil tank on lap ten, leaving oil on the road before its engine seized. Fangio slid on that oil and damaged a rear wheel against the kerbstones, then lost time returning for repairs. Moss could even stop to replenish oil and still win by more than three minutes. The extraordinary lap length magnified each delay.",
+      "uk": "Гран-прі Пескари 1957 року тривав лише вісімнадцять кіл, але Стірлінгу Моссу знадобилося майже три години для перемоги. Одне коло італійськими дорогами простягалося приблизно на 25 кілометрів — незрівнянно більше, ніж на сучасних трасах. Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок. Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола.\n\nТогочасний репортаж описує вирішальну послідовність поломок: на десятому колі в Ferrari Муссо тріснув масляний бак, олива потрапила на дорогу, а двигун заклинило. Фанхіо послизнувся на цій оливі, пошкодив заднє колесо об бордюр і втратив час на поверненні до боксів. Мосс навіть зупинявся, щоб долити оливу, але переміг із перевагою понад три хвилини. Довжина кола збільшувала ціну кожної затримки."
     },
     "year": "1957",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml",
     "historical_sources": [
       "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport September 1957 period report: Musso oil tank rupture on lap ten, Fangio wheel damage on oil and Moss oil stop despite large winning margin.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "montjuic",
@@ -482,15 +492,18 @@
       "uk": "Мосс перемагає в каліфорнійській пустелі"
     },
     "description": {
-      "en": "Riverside staged only one World Championship United States Grand Prix, in 1960, and Stirling Moss won it for Rob Walker's team. The California circuit's short Formula 1 history conceals a lively race: Jack Brabham fought back after trouble, while Moss stayed in command at the front. The result sheet records a single winner. The fuller story shows how the American Grand Prix was still searching for a lasting home and how much happened during its brief visit.",
-      "uk": "Ріверсайд прийняв лише один заліковий Гран-прі США — у 1960 році, коли Стірлінг Мосс переміг за команду Роба Вокера. За короткою історією каліфорнійської траси ховається насичена гонка: Джек Бребем повертався в боротьбу після проблем, а Мосс утримував лідерство. Протокол називає одного переможця. Повніша історія показує, як американський Гран-прі ще шукав постійну домівку і скільки подій умістив один візит."
+      "en": "Riverside staged only one World Championship United States Grand Prix, in 1960, and Stirling Moss won it for Rob Walker's team. The California circuit's short Formula 1 history conceals a lively race: Jack Brabham fought back after trouble, while Moss stayed in command at the front. The result sheet records a single winner. The fuller story shows how the American Grand Prix was still searching for a lasting home and how much happened during its brief visit.\n\nBrabham actually led at the start, but petrol overflowed from his Cooper's tank onto the hot exhaust and ignited. Two stops to diagnose and cure the problem let Moss take command. Gurney and Bonnier also lost ground to mechanical faults; Ireland and McLaren completed the podium, while Brabham recovered to fourth. The race changed through repairs and retirements, not a simple lights-to-flag procession.",
+      "uk": "Ріверсайд прийняв лише один заліковий Гран-прі США — у 1960 році, коли Стірлінг Мосс переміг за команду Роба Вокера. За короткою історією каліфорнійської траси ховається насичена гонка: Джек Бребем повертався в боротьбу після проблем, а Мосс утримував лідерство. Протокол називає одного переможця. Повніша історія показує, як американський Гран-прі ще шукав постійну домівку і скільки подій умістив один візит.\n\nНасправді на старті лідирував Бребем, але пальне з бака його Cooper потрапляло на гарячий вихлоп і спалахувало. Дві зупинки для пошуку й усунення причини дозволили Моссу вийти вперед. Герні та Бонньє теж втратили шанси через технічні проблеми; Айрленд і Макларен доповнили подіум, а Бребем повернувся на четверте місце. Гонку змінили ремонти й сходи, а не безперервне лідерство від старту до фінішу."
     },
     "year": "1960",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1960/races/10-united-states/race-results.yml",
     "historical_sources": [
       "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport December 1960 period report: Brabham fuel overflow fires and two stops, Moss lead, Gurney/Bonnier troubles and Ireland/McLaren podium.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "anderstorp",
@@ -590,15 +603,19 @@
       "uk": "Фінал чемпіонату на парковці казино"
     },
     "description": {
-      "en": "The 1982 Caesars Palace Grand Prix finished the Formula 1 season on a temporary circuit in a Las Vegas casino car park. Michele Alboreto won for Tyrrell, with John Watson second and Eddie Cheever third. Keke Rosberg finished fifth, enough to become world champion despite not winning the race. This was not the modern Las Vegas Strip layout. The finishing order and the championship outcome tell two different stories from the same improbable venue.",
-      "uk": "Гран-прі Caesars Palace 1982 року завершив сезон Формули-1 на тимчасовій трасі, прокладеній парковкою казино в Лас-Вегасі. Мікеле Альборето переміг на Tyrrell, Джон Вотсон став другим, Едді Чівер — третім. Кеке Росберг фінішував п’ятим, і цього вистачило для чемпіонського титулу, хоча гонку він не виграв. Це була не сучасна траса вздовж Стріпу. Фінішний порядок і підсумок чемпіонату розповідають дві різні історії того самого незвичного місця."
+      "en": "The 1982 Caesars Palace Grand Prix finished the Formula 1 season on a temporary circuit in a Las Vegas casino car park. Michele Alboreto won for Tyrrell, with John Watson second and Eddie Cheever third. Keke Rosberg finished fifth, enough to become world champion despite not winning the race. This was not the modern Las Vegas Strip layout. The finishing order and the championship outcome tell two different stories from the same improbable venue.\n\nThe Renaults locked out the front row, but Arnoux retired with engine trouble and Prost slowed on deteriorating tyres. Alboreto, who had qualified third, passed Prost to take his first Grand Prix victory; Watson recovered from a poor start to second. Rosberg's cautious fifth place secured the drivers' title, while Ferrari won the constructors' championship without scoring in this race. Neither championship was awarded to the race winner, and this car-park course must not be confused with the modern Strip layout.",
+      "uk": "Гран-прі Caesars Palace 1982 року завершив сезон Формули-1 на тимчасовій трасі, прокладеній парковкою казино в Лас-Вегасі. Мікеле Альборето переміг на Tyrrell, Джон Вотсон став другим, Едді Чівер — третім. Кеке Росберг фінішував п’ятим, і цього вистачило для чемпіонського титулу, хоча гонку він не виграв. Це була не сучасна траса вздовж Стріпу. Фінішний порядок і підсумок чемпіонату розповідають дві різні історії того самого незвичного місця.\n\nRenault зайняла весь перший ряд, але Арну зійшов через несправність двигуна, а Прост сповільнився через зношені шини. Альборето, який кваліфікувався третім, випередив Проста й здобув першу перемогу в Гран-прі; Вотсон після невдалого старту прорвався на друге місце. Обережного п'ятого місця Росбергу вистачило для титулу, а Ferrari виграла Кубок конструкторів, не набравши очок у цій гонці. Жоден із цих титулів не дістався переможцю етапу, а парковку казино не слід плутати із сучасною трасою вздовж Стріпу."
     },
     "year": "1982",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/16-caesars-palace/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/database/races/1982-las-vegas-grand-prix/"
+      "https://www.motorsportmagazine.com/database/races/1982-las-vegas-grand-prix/",
+      "https://www.motorsportmagazine.com/archive/article/november-1982/43/las-vegas-grand-prix/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport November 1982 period report: Renault front row, Arnoux engine, Prost tyres, Alboreto first win, Watson recovery, Rosberg fifth and Ferrari constructors' title.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "clermont-ferrand",
