@@ -4,6 +4,17 @@ import {readFileSync} from 'node:fs';
 const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next25-research-leads.json','utf8'));
 // Exact reviewed research leads; not a blanket publisher or publication allowlist.
 const periodResearchUrls = new Set([
+  "https://www.skysports.com/f1/news/12472/10318490/mercedes-explain-lewis-hamiltons-power-problems-in-european-gp",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
+  "https://www.fia.com/news/fia-statement-treatment-tyres-2023-fia-formula-1-qatar-grand-prix-update",
+  "https://www.skysports.com/f1/news/12980042/qatar-gp-fia-enforces-three-pit-stop-rule-for-race-amid-safety-concerns-over-tyres",
+  "https://www.aljazeera.com/sports/2015/11/1/rosberg-consolidates-second-place-with-mexico-gp-win",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/verstappen-resists-leclerc-for-hard-earned-2022-miami-gp-win-race-report/",
+  "https://www.motorsport.com/f1/news/f1-las-vegas-gp-verstappen-survives-penalty-damage-to-take-18th-win-of-2023/10548816/",
+  "https://www.motorsportmagazine.com/database/championships/2000-f1-world-championship/",
+  "https://www.motorsportmagazine.com/archive/article/december-1989/17/insanity-rules/",
+  "https://www.motorsportmagazine.com/archive/article/november-1983/46/grand-prix-europe-2/",
+  "https://www.motorsportmagazine.com/archive/article/november-1980/52/the-us-grand-prix/",
   "https://www.motorsportmagazine.com/archive/article/august-1964/58/xvii-british-grand-prix/",
   "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/50/47-2017-azerbaijan-gp-ricciardo-comes-through-chaos-to-reign-supreme/",
   "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
