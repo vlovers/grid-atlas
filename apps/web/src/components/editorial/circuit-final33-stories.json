@@ -66,15 +66,19 @@
       "uk": "Феттель здобуває четвертий титул поспіль"
     },
     "description": {
-      "en": "At Buddh in October 2013, Sebastian Vettel needed only fifth place to seal another title. He took pole, stopped for tyres almost immediately, then carved his way back through traffic to win. Nico Rosberg and Romain Grosjean joined him on the podium, while Red Bull secured the constructors' crown too. The result sheet says Vettel won; the race story is how an early pit stop became the opening move of a fourth straight championship celebration.",
-      "uk": "У жовтні 2013 року на Будді Себастьяну Феттелю вистачило б і п’ятого місця для титулу. Він здобув поул, майже одразу заїхав міняти шини, а потім прорвався крізь пелотон до перемоги. На подіумі поруч стояли Ніко Росберг і Ромен Грожан, а Red Bull здобула й Кубок конструкторів. Протокол фіксує переможця; історія гонки пояснює, як ранній піт-стоп став початком святкування четвертого титулу поспіль."
+      "en": "Sebastian Vettel started the 2013 Indian Grand Prix on pole but stopped for new tyres after only two laps, returning in traffic. His Red Bull was quick enough to regain control, while team-mate Mark Webber pursued a different strategy. A late alternator failure ended Webber's race and prompted the team to reduce electrical demands on Vettel's car. Vettel reached the flag first to claim his fourth consecutive drivers' title; Red Bull secured a fourth straight constructors' crown. Nico Rosberg was second, while Romain Grosjean climbed from seventeenth on the grid to third. The classification records the champions, but the early stop, Webber's retirement and Grosjean's recovery tell the race story.",
+      "uk": "Себастьян Феттель стартував із поулу на Гран-прі Індії 2013 року, але вже після двох кіл змінив шини й повернувся у трафік. Швидкості Red Bull вистачило, щоб знову очолити гонку, поки напарник Марк Веббер їхав за іншою стратегією. Наприкінці відмова генератора зупинила Веббера, і команда зменшила електричне навантаження на боліді Феттеля. Себастьян переміг і здобув четвертий поспіль титул; Red Bull — четвертий Кубок конструкторів. Ніко Росберг фінішував другим, а Ромен Грожан прорвався із сімнадцятого місця на третє. Протокол називає чемпіонів, але ранній піт-стоп, сход Веббера й прорив Грожана пояснюють гонку."
     },
     "year": "2013",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml",
     "historical_sources": [
-      "https://www.bbc.co.uk/sport/formula1/24691160"
+      "https://www.bbc.co.uk/sport/formula1/24691160",
+      "https://www.grandprix.com/races/indian-gp-2013-race-notes-vettel-wins-indian-gp-and-2013-title.html"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2013 Grandprix.com lap chronology: Vettel early stop, Webber alternator, Grosjean P17 to P3; classification separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "porto",
@@ -136,16 +140,19 @@
       "uk": "Гамільтон виграє дебютний Гран-прі Росії"
     },
     "description": {
-      "en": "Lewis Hamilton won the first Russian Grand Prix at Sochi's Olympic Park circuit in 2014, but Nico Rosberg's second place required a recovery. Rosberg locked his brakes while attacking his Mercedes team-mate early, damaged the tyres and stopped almost immediately. He then climbed back through the field to finish behind Hamilton, with Valtteri Bottas third. Mercedes secured its first constructors' title. The pinned archive calls this circuit Sirius; that later identity should not be mistaken for a second venue in 2014.",
-      "uk": "Льюїс Гамільтон виграв перший Гран-прі Росії 2014 року на трасі біля олімпійського парку Сочі, але друге місце Ніко Росберга далося непросто. На початку гонки він заблокував колеса, атакуючи напарника з Mercedes, пошкодив шини й майже одразу заїхав у бокси. Потім прорвався крізь пелотон і фінішував за Гамільтоном; третім став Валттері Боттас. Mercedes здобула перший Кубок конструкторів. У закріпленому архіві траса має назву Sirius — це не означає, що 2014 року існували дві різні локації."
+      "en": "The inaugural 2014 Russian Grand Prix took place at the Sochi Olympic Park circuit, later called Sirius in the pinned archive. Nico Rosberg attacked Mercedes team-mate Lewis Hamilton into Turn 2, locked his front tyres and had to pit at the end of the first lap. He then recovered through the field to finish second. Hamilton won, with Valtteri Bottas third, and the Mercedes one-two secured the team's first Formula 1 constructors' title. The later Sirius name does not mean a second 2014 venue. The classification records a Mercedes sweep; the story is Rosberg's early mistake, his recovery and the title the team clinched together.",
+      "uk": "Перший Гран-прі Росії 2014 року відбувся на трасі біля олімпійського парку Сочі, яку закріплений архів згодом називає Sirius. Ніко Росберг атакував напарника по Mercedes Льюїса Гамільтона перед другим поворотом, заблокував передні колеса й наприкінці першого кола змушений був заїхати в бокси. Потім він прорвався крізь пелотон і фінішував другим. Гамільтон переміг, Валттері Боттас став третім, а дубль Mercedes забезпечив команді перший Кубок конструкторів Формули-1. Пізніша назва Sirius не означає, що 2014 року існувала інша траса. Протокол показує успіх Mercedes, а історія — ранню помилку Росберга, його повернення й командний титул."
     },
     "year": "2014",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race-results.yml",
     "historical_sources": [
-      "https://www.skysports.com/f1/news/9514310/2014-russian-gp-lewis-hamilton-cruises-to-sochi-win-but-rosberg-recovers-to-second"
+      "https://www.skysports.com/f1/news/9514310/2014-russian-gp-lewis-hamilton-cruises-to-sochi-win-but-rosberg-recovers-to-second",
+      "https://www.motorsport.com/f1/news/hamilton-won-the-first-ever-russian-gp/457488/"
     ],
-    "historical_source_locator": "12 October 2014 race report: Rosberg's first-lap lock-up and Mercedes constructors' title",
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_source_locator": "2014 Sky Sports and Motorsport.com race reports: Rosberg lap-one flat spot, recovery, Mercedes constructors' crown; later Sirius naming.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "lusail",
@@ -154,15 +161,19 @@
       "uk": "Гамільтон виграє перший Гран-прі Катару"
     },
     "description": {
-      "en": "Lusail was familiar to motorcycle racing fans long before Formula 1 arrived in 2021. Lewis Hamilton controlled Qatar's first championship Grand Prix from the front, while Max Verstappen recovered from a grid penalty to finish second. Fernando Alonso took third for Alpine, his first Formula 1 podium since 2014. That is why the inaugural result is more than a Hamilton win: it also marks Alonso's long-awaited return to the podium amid a tight title fight.",
-      "uk": "Лусаїл був знайомий шанувальникам мотоперегонів задовго до дебюту Формули-1 у 2021 році. Льюїс Гамільтон контролював перший Гран-прі Катару, а Макс Ферстаппен після штрафу на стартовій решітці прорвався на друге місце. Третім на Alpine став Фернандо Алонсо — уперше на подіумі Формули-1 з 2014 року. Тому дебют Лусаїла — не лише перемога Гамільтона, а й довгоочікуване повернення Алонсо в розпал боротьби за титул."
+      "en": "Lewis Hamilton controlled the first Qatar Grand Prix at Lusail in 2021, but the fight for third was shaped by tyre risk. Max Verstappen recovered from a grid penalty to finish second. Fernando Alonso chose a one-stop strategy for Alpine even as punctures struck drivers attempting long stints, including Valtteri Bottas and Lando Norris. Sergio Pérez was closing rapidly, but a late Virtual Safety Car after Nicholas Latifi stopped with tyre trouble eased the pressure. Alonso kept third, his first Formula 1 podium since 2014. The classification lists Hamilton, Verstappen and Alonso; the late drama was whether Alonso's tyres would last until the flag.",
+      "uk": "Льюїс Гамільтон контролював перший Гран-прі Катару в Лусаїлі 2021 року, але боротьбу за третє місце визначав ризик із шинами. Макс Ферстаппен після штрафу на старті прорвався на друге місце. Фернандо Алонсо на Alpine обрав один піт-стоп, хоча на довгих відрізках у кількох суперників, зокрема Валттері Боттаса й Ландо Норріса, пошкоджувалися шини. Серхіо Перес стрімко наздоганяв іспанця, але пізній режим віртуального автомобіля безпеки після зупинки Ніколаса Латіфі зменшив тиск. Алонсо втримав третє місце — перший подіум із 2014 року. Протокол називає призерів, а напруга останніх кіл була в тому, чи витримають шини."
     },
     "year": "2021",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
     "historical_sources": [
-      "https://www.bbc.co.uk/sport/formula1/59367052"
+      "https://www.bbc.co.uk/sport/formula1/59367052",
+      "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2021 Grandprix.com analysis: one-stop Alonso, punctures, Latifi-triggered VSC, Perez pursuit; classification separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "yeongam",
@@ -171,15 +182,19 @@
       "uk": "Алонсо перемагає в дощовому дебюті Кореї"
     },
     "description": {
-      "en": "Yeongam's first Formula 1 weekend in 2010 was already complicated before the race could settle into a rhythm. Rain delayed the start and interrupted the action, then the championship contenders faced a slippery track and changing fortunes. Fernando Alonso eventually won for Ferrari. The result looks simple in a table; the inaugural Korean Grand Prix was anything but simple for the drivers trying to keep their cars on the road.",
-      "uk": "Перший вікенд Формули-1 в Йонамі 2010 року від самого початку йшов не за планом. Дощ затримав старт і переривав гонку, а претендентам на титул довелося боротися зі слизькою трасою та постійними змінами ситуації. Зрештою Фернандо Алонсо переміг на Ferrari. У таблиці результат виглядає просто, але дебютний Гран-прі Кореї зовсім не був простою гонкою для тих, хто намагався втримати машину на асфальті."
+      "en": "The first Korean Grand Prix at Yeongam in 2010 began behind the safety car in heavy rain, was interrupted by a red flag and resumed in poor visibility. Red Bull had locked out the front row, but Mark Webber spun into the barrier and his car collected Nico Rosberg on its way back across the track. Sebastian Vettel still looked set for victory until his engine failed late in the race. Fernando Alonso inherited the lead and brought his Ferrari home ahead of Lewis Hamilton and Felipe Massa as darkness approached. The win put Alonso at the top of the championship standings. A result table shows a Ferrari victory; the race reports explain how both Red Bulls disappeared.",
+      "uk": "Перший Гран-прі Кореї в Йонамі 2010 року розпочався за автомобілем безпеки під зливою, зупинився через червоний прапор і поновився за поганої видимості. Red Bull зайняла весь перший ряд, але Марк Веббер розвернувся, ударився об бар’єр і, повертаючись на трасу, зачепив Ніко Росберга. Себастьян Феттель наближався до перемоги, поки наприкінці гонки не відмовив його двигун. Фернандо Алонсо отримав лідерство й довів Ferrari до фінішу попереду Льюїса Гамільтона та Феліпе Масси, коли вже сутеніло. Перемога вивела Алонсо на вершину чемпіонату. Таблиця фіксує успіх Ferrari, а репортажі пояснюють, як Red Bull втратила обидві машини."
     },
     "year": "2010",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml",
     "historical_sources": [
-      "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html"
+      "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html",
+      "https://www.grandprix.com/races/korean-gp-2010-race-notes-webber-spins-vettel-blows-up-alonso-wins-korean-gp.html"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2010 Grandprix.com period lap notes: red flag, Webber/Rosberg collision, Vettel engine failure; F1DB for classification.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "bugatti",
@@ -260,15 +275,19 @@
       "uk": "Вотсон проривається в Детройті"
     },
     "description": {
-      "en": "John Watson started Detroit's inaugural Grand Prix in 1982 from seventeenth on the grid. On a tight street circuit where overtaking looked difficult, his McLaren climbed through the field as tyre choice and race interruptions reshaped the afternoon. Watson won, with Eddie Cheever and Didier Pironi behind him. A bare results table cannot show how far he had to travel through traffic to turn a poor starting position into victory.",
-      "uk": "Джон Вотсон стартував у першому Гран-прі Детройта 1982 року лише сімнадцятим. На тісній міській трасі, де обгони здавалися складними, його McLaren проривався вперед, поки вибір шин і перерви змінювали перебіг гонки. Вотсон переміг, а позаду фінішували Едді Чівер і Дідьє Піроні. Суха таблиця не передає, скільки суперників довелося обійти, щоб перетворити невдалу стартову позицію на перемогу."
+      "en": "John Watson started Detroit's inaugural 1982 Grand Prix from seventeenth. The race was stopped early and resumed as a two-part contest; tyre choices and mechanical trouble kept changing the order. Watson fought through traffic, passing Cheever, Lauda and Pironi before catching Keke Rosberg, whose Williams had gearbox problems. By lap 37 Watson led on the road, and he eventually won ahead of Eddie Cheever and Didier Pironi. The race ended after 62 laps at the two-hour limit, short of its scheduled distance. The grid and result alone cannot convey how Watson turned a difficult street circuit into the setting for one of his greatest recoveries.",
+      "uk": "Джон Вотсон стартував у першому Гран-прі Детройта 1982 року сімнадцятим. Гонку рано зупинили й поновили як змагання у двох частинах; вибір шин і технічні проблеми постійно змінювали порядок. Вотсон прорвався крізь пелотон, випередив Чівера, Лауду й Піроні, а потім наздогнав Кеке Росберга, у Williams якого виникли проблеми з коробкою передач. На 37-му колі Вотсон уже лідирував на трасі й зрештою переміг. Едді Чівер фінішував другим, Дідьє Піроні — третім. Через двогодинний ліміт проїхали 62 кола, менше запланованого. Стартова й фінішна позиції не передають, як Вотсон прорвався вузькими міськими вулицями."
     },
     "year": "1982",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+      "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+      "https://www.detroitgp.com/event-info/recaps/formula-1"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "1982 Motor Sport period report and Detroit GP historical recap: two-part race, Watson P17, lap-37 lead, two-hour limit.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "zeltweg",
@@ -294,15 +313,19 @@
       "uk": "Гамільтон перемагає на дебютному Гран-прі Тоскани"
     },
     "description": {
-      "en": "Mugello's fast corners finally hosted a Formula 1 championship race in the disrupted 2020 season. The Tuscan Grand Prix was anything but a routine debut: two red flags repeatedly stopped the action, forcing the drivers to restart their contest. Lewis Hamilton won for Mercedes, but the story of the day lies in how often the field had to regroup before the chequered flag. It was a rare appearance for a circuit better known to other racing series.",
-      "uk": "Швидкі повороти Муджелло нарешті прийняли етап чемпіонату Формули-1 у незвичному сезоні 2020 року. Гран-прі Тоскани зовсім не став спокійним дебютом: два червоні прапори зупиняли боротьбу й змушували пілотів стартувати знову. Льюїс Гамільтон переміг на Mercedes, але головна історія дня — скільки разів пелотону довелося збиратися наново до картатого прапора. Для траси, знайомої з інших гоночних серій, це був особливий візит Формули-1."
+      "en": "Mugello's first championship Grand Prix in 2020 was repeatedly interrupted. An opening-lap collision brought out the safety car; a pile-up on the main straight at the restart caused the first red flag. At the next standing start Lewis Hamilton took the lead from Mercedes team-mate Valtteri Bottas. Later Lance Stroll crashed at the fast Arrabbiata section, bringing a second stoppage and one final standing start. Hamilton held on to win, Bottas finished second, and Alex Albon passed Daniel Ricciardo late to claim his first Formula 1 podium. The result is a Mercedes one-two, but the real story is how the repeated restarts reshaped the fight behind them.",
+      "uk": "Перший заліковий Гран-прі в Муджелло 2020 року постійно переривався. Аварія на першому колі викликала автомобіль безпеки, а масове зіткнення на головній прямій під час рестарту — перший червоний прапор. Після нового старту з місця Льюїс Гамільтон випередив напарника по Mercedes Валттері Боттаса. Згодом Ленс Стролл розбив машину у швидкісній секції Arrabbiata: гонку знову зупинили й провели ще один старт. Гамільтон утримав лідерство, Боттас став другим, а Алекс Албон наприкінці обігнав Даніеля Ріккардо й уперше піднявся на подіум. Протокол показує дубль Mercedes, але справжня історія — як повторні старти змінили боротьбу позаду."
     },
     "year": "2020",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/09-tuscany/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/"
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/",
+      "https://www.motorsport.com/f1/news/tuscan-gp-race-report-hamilton-bottas/4874458/"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2020 Motorsport.com race report: two separate red-flag causes and Albon passing Ricciardo; official result separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "phoenix",
@@ -380,15 +403,19 @@
       "uk": "Неймовірний домашній прорив Алонсо"
     },
     "description": {
-      "en": "Fernando Alonso began the 2012 European Grand Prix in Valencia from eleventh on the grid. On a street circuit beside the harbour, he worked his way forward as the race changed around him and eventually won for Ferrari. The Spanish crowd saw a home victory that had looked improbable before the start. A finishing table records Alonso first; the real appeal of this Valencia afternoon is the distance he travelled from the midfield to the front.",
-      "uk": "Фернандо Алонсо розпочав Гран-прі Європи 2012 року у Валенсії з одинадцятого місця. На міській трасі біля порту він поступово проривався вперед, поки обставини гонки змінювалися, і зрештою переміг на Ferrari. Іспанські трибуни побачили домашню перемогу, яка перед стартом здавалася малоймовірною. Протокол показує Алонсо першим; справжня привабливість цього дня — шлях із середини пелотону до лідерства."
+      "en": "Fernando Alonso started the 2012 European Grand Prix in Valencia from eleventh, while Sebastian Vettel disappeared into the distance from pole. Alonso fought through the field before a safety car erased Vettel's advantage. At the restart the Ferrari passed Romain Grosjean; then Vettel's Red Bull stopped with an alternator failure. Grosjean later retired with a similar problem, leaving Alonso to manage his tyres and the lead. Kimi Räikkönen finished second, while Michael Schumacher claimed his only podium after returning to Formula 1. The result shows a home victory; the turning points were Alonso's overtakes, the safety-car reset and the failures that removed the cars ahead.",
+      "uk": "Фернандо Алонсо стартував у Гран-прі Європи 2012 року у Валенсії одинадцятим, а Себастьян Феттель із поулу швидко відривався. Алонсо пробивався вперед, поки автомобіль безпеки не знищив перевагу лідера. Після рестарту Ferrari випередила Ромена Грожана, а згодом Red Bull Феттеля зупинився через несправність генератора. Пізніше з подібної причини зійшов і Грожан. Алонсо залишилося берегти шини та лідерство. Кімі Ряйкконен фінішував другим, а Міхаель Шумахер здобув свій єдиний подіум після повернення у Формулу-1. Протокол показує домашню перемогу, а вирішальними стали обгони Алонсо, рестарт і поломки машин попереду."
     },
     "year": "2012",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/"
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/",
+      "https://www.bbc.co.uk/sport/formula1/18569752"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2012 BBC period report and Grandprix.com alternator report: Alonso passing Grosjean after safety car, Vettel/Grosjean failures.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "portimao",
@@ -397,15 +424,19 @@
       "uk": "Гамільтон встановлює новий рекорд перемог"
     },
     "description": {
-      "en": "The first World Championship Grand Prix at Portimão in 2020 began with changing grip and unsettled early positions. Lewis Hamilton recovered control of the race and won for Mercedes. It was his 92nd Formula 1 victory, taking him past Michael Schumacher's previous record. The Algarve circuit's elevation changes supplied the setting, but the lasting milestone was Hamilton becoming the sport's outright wins leader on a day that did not begin smoothly.",
-      "uk": "Перший заліковий Гран-прі в Портімані 2020 року розпочався зі складного зчеплення шин і мінливого порядку пілотів. Льюїс Гамільтон повернув собі контроль над гонкою й переміг на Mercedes. Це була його 92-га перемога у Формулі-1 — більше за попередній рекорд Міхаеля Шумахера. Перепади висот Алгарве створили сцену, але головною подією став новий рекорд Гамільтона після зовсім не безхмарного початку."
+      "en": "Light rain made the opening laps of the 2020 Portuguese Grand Prix at Portimão unexpectedly slippery. Lewis Hamilton and Valtteri Bottas struggled to warm their medium tyres, while Carlos Sainz used the grip of his soft-tyred McLaren to take the lead on lap two. As conditions improved, the Mercedes pair caught him. Hamilton passed Bottas for the lead on lap 20 and went on to take his 92nd Formula 1 victory, surpassing Michael Schumacher's previous record. Bottas finished second and Max Verstappen third. The record is the headline, but the changing grip and Sainz's brief lead explain why the outcome did not look inevitable at the start.",
+      "uk": "Невеликий дощ на старті Гран-прі Португалії 2020 року зробив перші кола в Портімані слизькими. Льюїс Гамільтон і Валттері Боттас не могли швидко прогріти шини середньої жорсткості, а Карлос Сайнс на McLaren із м’якими шинами вирвався в лідери вже на другому колі. Коли зчеплення покращилося, Mercedes наздогнали його. На 20-му колі Гамільтон випередив Боттаса й довів гонку до своєї 92-ї перемоги у Формулі-1, перевершивши рекорд Міхаеля Шумахера. Боттас став другим, Макс Ферстаппен — третім. Рекорд залишився головним заголовком, але мінливе зчеплення й коротке лідерство Сайнса пояснюють, чому результат не здавався неминучим."
     },
     "year": "2020",
     "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml",
     "historical_sources": [
-      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/"
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/",
+      "https://www.grandprix.com/races/portuguese-gp-2020-race-analysis.html"
     ],
-    "historical_review_status": "pending_independent_claim_review"
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2020 Grandprix.com race analysis: Sainz leads lap two; Hamilton overtakes Bottas lap 20; 92nd win independently reported.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "nivelles",
