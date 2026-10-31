@@ -57,16 +57,17 @@
             "uk": "Росберг виграє перший Гран-прі в Баку"
           },
           "editorial_direction": {
-            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
+            "en": "Verify Mercedes' account of hybrid-mode configuration rather than inferring an engine failure from the result.",
+            "uk": "Звірити пояснення Mercedes щодо налаштувань гібридної системи, а не виводити поломку двигуна з результату."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+            "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE",
+            "https://www.skysports.com/f1/news/12472/10318490/mercedes-explain-lewis-hamiltons-power-problems-in-european-gp"
           ],
           "status": "source_checked_research_draft",
           "narrative": {
-            "en": "In 2016 Baku hosted Formula 1 for the first time under the European Grand Prix name. Nico Rosberg won for Mercedes from pole position, leading every lap. A year later the same city hosted the first race officially called the Azerbaijan Grand Prix. The naming difference matters: the venue debuted in 2016, not 2017.",
-            "uk": "У 2016 році Баку вперше прийняло Формулу-1 — тоді гонка називалася Гран-прі Європи. Ніко Росберг переміг за Mercedes із поулу та пролідирував усю дистанцію. А вже наступного року місто прийняло перший Гран-прі Азербайджану. Це важлива різниця: траса дебютувала в календарі 2016-го, а не 2017-го."
+            "en": "In 2016 Baku hosted Formula 1 for the first time under the European Grand Prix name. Nico Rosberg won for Mercedes from pole position, leading every lap. A year later the same city hosted the first race officially called the Azerbaijan Grand Prix. The naming difference matters: the venue debuted in 2016, not 2017.\n\nMercedes later explained that an incorrect energy-deployment setting had affected both drivers. Rosberg found the right configuration quickly, but Hamilton spent much longer trying to correct his hybrid system under the radio restrictions then in force and finished fifth. The result shows Rosberg's dominance; the technical account explains why his team-mate's race unfolded differently. This was Baku's 2016 European Grand Prix, not the first Azerbaijan Grand Prix.",
+            "uk": "У 2016 році Баку вперше прийняло Формулу-1 — тоді гонка називалася Гран-прі Європи. Ніко Росберг переміг за Mercedes із поулу та пролідирував усю дистанцію. А вже наступного року місто прийняло перший Гран-прі Азербайджану. Це важлива різниця: траса дебютувала в календарі 2016-го, а не 2017-го.\n\nЗгодом Mercedes пояснила, що неправильне налаштування розподілу енергії вплинуло на обидві машини. Росберг швидко знайшов потрібну конфігурацію, а Гамільтон значно довше розбирався з гібридною системою за тодішніх обмежень радіозв'язку й фінішував п'ятим. Протокол показує перевагу Росберга, а технічний звіт пояснює іншу долю напарника. У 2016 році це був Гран-прі Європи, а не перший Гран-прі Азербайджану."
           },
           "source_granularity": "official_F1_specific_historical_article"
         },
@@ -207,16 +208,17 @@
             "uk": "Новий тиск міської гонки"
           },
           "editorial_direction": {
-            "en": "Research-only draft. Independently verify details and historical context with event-specific sources before publication.",
-            "uk": "Дослідницька чернетка. Перед публікацією незалежно звірити деталі й історичний контекст за джерелами конкретного етапу."
+            "en": "Confirm both red flags and the position-return instructions in FIA documents; do not infer intent from contact alone.",
+            "uk": "Звірити обидва червоні прапори й вказівки повернути позицію з документами FIA; не приписувати наміри лише за контактом."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2021/races"
+            "https://www.formula1.com/en/results/2021/races",
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Jeddah's first Formula 1 Grand Prix in 2021 ended with victory for Lewis Hamilton. Unlike a permanent circuit, the city venue brought barriers close to the competition, while Hamilton and Max Verstappen were already fighting for the championship. Its speed was part of a larger human story: the pressure of a title fight near its conclusion.",
-            "uk": "Перший Гран-прі Формули-1 у Джидді 2021 року виграв Льюїс Гамільтон. Міська траса з близькими бар’єрами стала сценою боротьби Гамільтона з Максом Ферстаппеном за титул. Швидкість тут була лише частиною історії: головним залишався тиск перед фіналом сезону."
+            "en": "Jeddah's first Formula 1 Grand Prix in 2021 ended with victory for Lewis Hamilton. Unlike a permanent circuit, the city venue brought barriers close to the competition, while Hamilton and Max Verstappen were already fighting for the championship. Its speed was part of a larger human story: the pressure of a title fight near its conclusion.\n\nThe first red flag came after Mercedes had pitted, changing the strategic picture. At the restart Verstappen went beyond the track limits in his fight with Hamilton; a crash behind prompted a second stoppage. Later Hamilton hit the slowing Red Bull while Verstappen was attempting to return a position. The period race report describes the confusion around that exchange. Two red flags, restarts and communication mattered as much as outright speed.",
+            "uk": "Перший Гран-прі Формули-1 у Джидді 2021 року виграв Льюїс Гамільтон. Міська траса з близькими бар’єрами стала сценою боротьби Гамільтона з Максом Ферстаппеном за титул. Швидкість тут була лише частиною історії: головним залишався тиск перед фіналом сезону.\n\nПерший червоний прапор з'явився вже після піт-стопів Mercedes і змінив стратегічну ситуацію. На рестарті Ферстаппен виїхав за межі траси в боротьбі з Гамільтоном, а аварія позаду спричинила другу зупинку. Згодом Гамільтон врізався в Red Bull, який сповільнювався, коли Ферстаппен намагався повернути позицію. Репортаж описує плутанину довкола цього епізоду. Два червоні прапори, рестарти й комунікація вплинули на гонку не менше за швидкість."
           },
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         },
@@ -356,16 +358,17 @@
             "uk": "Незвичне обмеження шин до 18 кіл"
           },
           "editorial_direction": {
-            "en": "Independent review of each incident and historical consequence remains necessary before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка кожного інциденту та його історичних наслідків."
+            "en": "Preserve the FIA distinction between a mandatory 18-lap total tyre life and three stops as a consequence.",
+            "uk": "Зберегти розрізнення FIA між обов'язковим ресурсом 18 кіл та трьома зупинками як його наслідком."
           },
           "sources": [
-            "https://www.formula1.com/en/latest/article/explained-what-does-the-maximum-tyre-stint-length-rule-mean-for-the-qatar.4q8iXkNgE3sLnIIASPV1sm"
+            "https://www.formula1.com/en/latest/article/explained-what-does-the-maximum-tyre-stint-length-rule-mean-for-the-qatar.4q8iXkNgE3sLnIIASPV1sm",
+            "https://www.fia.com/news/fia-statement-treatment-tyres-2023-fia-formula-1-qatar-grand-prix-update"
           ],
           "status": "source_checked_research_draft",
           "narrative": {
-            "en": "At the 2023 Qatar Grand Prix, teams faced an exceptional tyre rule: a new set could be used for no more than 18 racing laps. The FIA and Pirelli introduced the restriction after concerns about tyre damage associated with the kerbs. It transformed the strategic choices teams could make. Max Verstappen won, but the unusual safety rule is essential to understanding how this particular Lusail race unfolded.",
-            "uk": "На Гран-прі Катару 2023 року команди зіткнулися з винятковим правилом: на новому комплекті шин дозволяли проїхати не більш ніж 18 гоночних кіл. FIA та Pirelli запровадили обмеження через побоювання щодо пошкодження шин на поребриках. Це змінило доступні командам стратегії. Макс Ферстаппен переміг, але без пояснення особливого правила важко зрозуміти перебіг цієї гонки."
+            "en": "At the 2023 Qatar Grand Prix, teams faced an exceptional tyre rule: a new set could be used for no more than 18 racing laps. The FIA and Pirelli introduced the restriction after concerns about tyre damage associated with the kerbs. It transformed the strategic choices teams could make. Max Verstappen won, but the unusual safety rule is essential to understanding how this particular Lusail race unfolded.\n\nThe FIA statement made an important distinction: 18 laps meant total tyre-set life, so previous running counted against the limit. Officials did not explicitly order three pit stops; over a full 57-lap race, that number followed from the safety restriction. The concern was early sidewall separation associated with repeated impacts against pyramid kerbs. The rule, rather than a routine choice of tyre strategy, dictated the rhythm of the Grand Prix.",
+            "uk": "На Гран-прі Катару 2023 року команди зіткнулися з винятковим правилом: на новому комплекті шин дозволяли проїхати не більш ніж 18 гоночних кіл. FIA та Pirelli запровадили обмеження через побоювання щодо пошкодження шин на поребриках. Це змінило доступні командам стратегії. Макс Ферстаппен переміг, але без пояснення особливого правила важко зрозуміти перебіг цієї гонки.\n\nУ заяві FIA було важливе уточнення: 18 кіл означали загальний ресурс комплекту, тому попередній пробіг також враховували. Чиновники не наказували прямо робити три піт-стопи; на повній дистанції 57 кіл така кількість випливала з обмеження безпеки. Причиною стали ознаки розшарування боковин після ударів об пірамідальні поребрики. Саме правило, а не звичайний вибір стратегії, визначало ритм Гран-прі."
           },
           "source_granularity": "official_F1_specific_historical_article"
         },
@@ -504,16 +507,17 @@
             "uk": "Чемпіонат повертається до Мехіко"
           },
           "editorial_direction": {
-            "en": "Independent verification of all contextual claims required before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка всіх контекстних фактів."
+            "en": "Check the late 2015 restart and avoid applying the stadium layout to the historical circuit.",
+            "uk": "Перевірити пізній рестарт 2015 року й не переносити стадіонну секцію на історичну конфігурацію."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2015/races"
+            "https://www.formula1.com/en/results/2015/races",
+            "https://www.aljazeera.com/sports/2015/11/1/rosberg-consolidates-second-place-with-mexico-gp-win"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Formula 1 returned to Mexico City in 2015 after more than two decades away. Nico Rosberg won for Mercedes ahead of Lewis Hamilton. The changed circuit layout made this both a reunion with older Grand Prix traditions and a new racing experience.",
-            "uk": "Формула-1 повернулася до Мехіко у 2015 році після понад двох десятиліть перерви. Ніко Росберг переміг за Mercedes перед Льюїсом Гамільтоном. Змінена конфігурація поєднала повернення старих традицій Гран-прі з новим гоночним досвідом."
+            "en": "Formula 1 returned to Mexico City in 2015 after more than two decades away. Nico Rosberg won for Mercedes ahead of Lewis Hamilton. The changed circuit layout made this both a reunion with older Grand Prix traditions and a new racing experience.\n\nRosberg had started on pole and protected his lead against Hamilton, but the late Safety Car brought the Mercedes pair back together and made the final laps less straightforward. Rosberg kept his advantage at the restart; Valtteri Bottas took third for Williams. The contemporary report explains the pressure behind the one-two result. The stadium section belonged to the revised 2015 layout and should not be projected back onto earlier Mexican Grands Prix.",
+            "uk": "Формула-1 повернулася до Мехіко у 2015 році після понад двох десятиліть перерви. Ніко Росберг переміг за Mercedes перед Льюїсом Гамільтоном. Змінена конфігурація поєднала повернення старих традицій Гран-прі з новим гоночним досвідом.\n\nРосберг стартував із поулу й утримував перевагу над Гамільтоном, але пізній автомобіль безпеки зібрав обидва Mercedes разом і зробив фінальні кола менш передбачуваними. Росберг захистив лідерство на рестарті, а Валттері Боттас став третім за Williams. Тогочасний репортаж пояснює напругу за сухим результатом дубля. Стадіонна секція належить до оновленої конфігурації 2015 року; її не слід переносити на старі Гран-прі Мексики."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         }
@@ -593,16 +597,17 @@
             "uk": "Перший переможець Формули-1 в Маямі"
           },
           "editorial_direction": {
-            "en": "Independent verification of all contextual claims required before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка всіх контекстних фактів."
+            "en": "Verify lap-nine overtake and lap-47 restart; keep the 2024 Norris win separate from the 2022 race.",
+            "uk": "Звірити обгін на дев'ятому колі та рестарт 47-го; не змішувати перемогу Норріса 2024-го з гонкою 2022-го."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2022/races"
+            "https://www.formula1.com/en/results/2022/races",
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/verstappen-resists-leclerc-for-hard-earned-2022-miami-gp-win-race-report/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "The first Miami Grand Prix was held in 2022 on a circuit near the Hard Rock Stadium. Max Verstappen won ahead of Charles Leclerc and Carlos Sainz. Two years later Lando Norris would take his own first victory at the same venue, giving the track a second defining moment.",
-            "uk": "Перший Гран-прі Маямі відбувся у 2022 році на трасі біля Hard Rock Stadium. Макс Ферстаппен переміг Шарля Леклера й Карлоса Сайнса. Через два роки Ландо Норріс здобуде тут свою першу перемогу, подарувавши трасі ще одну визначну подію."
+            "en": "The first Miami Grand Prix was held in 2022 on a circuit near the Hard Rock Stadium. Max Verstappen won ahead of Charles Leclerc and Carlos Sainz. Two years later Lando Norris would take his own first victory at the same venue, giving the track a second defining moment.\n\nVerstappen did not inherit the lead: he passed Sainz at the start and overtook pole-sitter Leclerc on lap nine. Later, contact between Gasly and Norris triggered a Virtual Safety Car and then a full Safety Car. Leclerc attacked after the lap-47 restart, but Verstappen held on, with Sainz third. These two turning points explain the inaugural race better than its finishing order, while Norris's breakthrough in 2024 belongs to a different Grand Prix.",
+            "uk": "Перший Гран-прі Маямі відбувся у 2022 році на трасі біля Hard Rock Stadium. Макс Ферстаппен переміг Шарля Леклера й Карлоса Сайнса. Через два роки Ландо Норріс здобуде тут свою першу перемогу, подарувавши трасі ще одну визначну подію.\n\nФерстаппен не отримав лідерство випадково: він обігнав Сайнса на старті, а на дев'ятому колі випередив володаря поулу Леклера. Згодом контакт Гаслі й Норріса спричинив віртуальний, а потім звичайний автомобіль безпеки. Леклер атакував після рестарту 47-го кола, проте Ферстаппен утримав позицію, Сайнс став третім. Ці два моменти пояснюють дебютну гонку краще за фінішну таблицю, а прорив Норріса у 2024 році належить до іншого Гран-прі."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
@@ -762,16 +767,17 @@
             "uk": "Непроста перша нічна гонка"
           },
           "editorial_direction": {
-            "en": "Research-only draft. Independently verify details and historical context with event-specific sources before publication. Editorial caveat moved out of reader-facing copy: Explaining technical tyre behaviour requires race-specific reporting rather than the classification.",
-            "uk": "Дослідницька чернетка. Перед публікацією незалежно звірити деталі й історичний контекст за джерелами конкретного етапу. Редакторське застереження винесено з тексту: Для пояснення роботи шин потрібні технічні звіти, а не лише протокол."
+            "en": "Distinguish the Strip and Caesars Palace layouts; verify the penalty, Safety Car and final-lap pass.",
+            "uk": "Розділяти конфігурації Стріп і Caesars Palace; звірити штраф, автомобіль безпеки й обгін на останньому колі."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result"
+            "https://www.formula1.com/en/results/2023/races/1225/las-vegas/race-result",
+            "https://www.motorsport.com/f1/news/f1-las-vegas-gp-verstappen-survives-penalty-damage-to-take-18th-win-of-2023/10548816/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Max Verstappen won the first Las Vegas Strip Grand Prix in 2023 after a race that included contact, a penalty and changes of position. Its outcome was anything but a simple uninterrupted lead from start to finish.",
-            "uk": "Макс Ферстаппен виграв перший Гран-прі Лас-Вегас-Стріп у 2023 році після гонки зі зіткненнями, штрафом і змінами позицій. Це не була проста поїздка лідера від старту до фінішу."
+            "en": "Max Verstappen won the first Las Vegas Strip Grand Prix in 2023 after a race that included contact, a penalty and changes of position. Its outcome was anything but a simple uninterrupted lead from start to finish.\n\nVerstappen received a five-second penalty for forcing pole-sitter Leclerc wide at the first corner. A later Safety Car after contact with George Russell changed the tyre picture, helping the Red Bull driver fight back. Leclerc lost second to Pérez after a braking error but passed him again into Turn 14 on the final lap. The 2023 Strip layout is also distinct from the Caesars Palace car-park circuit used in 1981 and 1982.",
+            "uk": "Макс Ферстаппен виграв перший Гран-прі Лас-Вегас-Стріп у 2023 році після гонки зі зіткненнями, штрафом і змінами позицій. Це не була проста поїздка лідера від старту до фінішу.\n\nФерстаппен отримав п'ять секунд штрафу за витіснення володаря поулу Леклера в першому повороті. Пізніший автомобіль безпеки після контакту з Джорджем Расселлом змінив шинну ситуацію та допоміг пілоту Red Bull повернутися в боротьбу. Леклер втратив друге місце після помилки на гальмуванні, але обігнав Переса в 14-му повороті останнього кола. Траса Стріп-2023 також не має змішуватися з парковою конфігурацією Caesars Palace 1981–1982 років."
           },
           "source_granularity": "inherited_source_candidate_independent_claim_level_check_required"
         }
@@ -849,16 +855,17 @@
             "uk": "Дорожня траса Формули-1 в Індіанаполісі"
           },
           "editorial_direction": {
-            "en": "Independent verification of all contextual claims required before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка всіх контекстних фактів."
+            "en": "Separate the 2000 road-course race from 1950s Indy 500 results and check Häkkinen retirement context.",
+            "uk": "Відокремити дорожню гонку 2000 року від результатів «Інді-500» 1950-х і перевірити контекст сходу Гаккінена."
           },
           "sources": [
-            "https://www.formula1.com/en/results/2000/races"
+            "https://www.formula1.com/en/results/2000/races",
+            "https://www.motorsportmagazine.com/database/championships/2000-f1-world-championship/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "In 2000 the Indianapolis Speedway hosted a United States Grand Prix on a road course using part of its famous oval. Michael Schumacher won for Ferrari. This was separate from the Indianapolis 500 events that had counted toward the World Championship in the 1950s.",
-            "uk": "У 2000 році Індіанаполіс прийняв Гран-прі США на дорожній трасі, яка використовувала частину знаменитого овалу. Міхаель Шумахер переміг за Ferrari. Цей етап відрізнявся від гонок «Інді-500», які входили до чемпіонату світу в 1950-х."
+            "en": "In 2000 the Indianapolis Speedway hosted a United States Grand Prix on a road course using part of its famous oval. Michael Schumacher won for Ferrari. This was separate from the Indianapolis 500 events that had counted toward the World Championship in the 1950s.\n\nThe 2000 event was part of Schumacher's title battle with Mika Häkkinen, not an Indianapolis 500 on the oval. Häkkinen retired, Schumacher won and Ferrari team-mate Barrichello finished second. The championship context explains why the result mattered before the decisive Japanese round: Ferrari was seeking its first drivers' title since 1979. The Speedway's shared name should never erase the distinction between the 1950s Indy 500 points races and this road-course Grand Prix.",
+            "uk": "У 2000 році Індіанаполіс прийняв Гран-прі США на дорожній трасі, яка використовувала частину знаменитого овалу. Міхаель Шумахер переміг за Ferrari. Цей етап відрізнявся від гонок «Інді-500», які входили до чемпіонату світу в 1950-х.\n\nЕтап 2000 року був частиною боротьби Шумахера за титул із Мікою Гаккіненом, а не гонкою «Інді-500» на овалі. Гаккінен зійшов, Шумахер переміг, а напарник по Ferrari Баррікелло став другим. Контекст чемпіонату пояснює значення результату перед вирішальним японським етапом: Ferrari прагнула першого титулу пілотів із 1979 року. Спільна назва Speedway не повинна стирати різницю між заліковими «Інді-500» 1950-х і цим дорожнім Гран-прі."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
@@ -978,16 +985,17 @@
             "uk": "Дощовий фінал в Аделаїді"
           },
           "editorial_direction": {
-            "en": "Independent verification of all contextual claims required before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка всіх контекстних фактів."
+            "en": "Keep contemporary driver safety concerns distinct from the classification; do not invent a start-ordering motive.",
+            "uk": "Відокремити тогочасні побоювання пілотів щодо безпеки від класифікації; не вигадувати мотиви наказу стартувати."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1989/races"
+            "https://www.formula1.com/en/results/1989/races",
+            "https://www.motorsportmagazine.com/archive/article/december-1989/17/insanity-rules/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "The 1989 Australian Grand Prix took place under heavy rain at Adelaide. Thierry Boutsen won for Williams. Its difficult conditions made it a memorable finale, while explanations of individual incidents still require contemporary reporting rather than assumptions from the finishing order.",
-            "uk": "Гран-прі Австралії 1989 року проходив в Аделаїді під сильним дощем. Тьєррі Бутсен переміг за Williams. Складні умови зробили фінал пам’ятним, але пояснення конкретних інцидентів потребують тогочасних звітів, а не припущень із фінішного протоколу."
+            "en": "The 1989 Australian Grand Prix took place under heavy rain at Adelaide. Thierry Boutsen won for Williams. Its difficult conditions made it a memorable finale, while explanations of individual incidents still require contemporary reporting rather than assumptions from the finishing order.\n\nSeveral drivers argued that standing water and spray trapped by the street circuit's concrete walls made the race unsafe. Prost declined to continue in the conditions, while Senna built an early lead before colliding with the slower car of Martin Brundle in the spray. Boutsen's win was therefore only one part of a weekend dominated by arguments about visibility and risk. The contemporary report documents those concerns; a list of retirements cannot explain them.",
+            "uk": "Гран-прі Австралії 1989 року проходив в Аделаїді під сильним дощем. Тьєррі Бутсен переміг за Williams. Складні умови зробили фінал пам’ятним, але пояснення конкретних інцидентів потребують тогочасних звітів, а не припущень із фінішного протоколу.\n\nКілька пілотів заявляли, що стояча вода та бризки між бетонними стінами міської траси роблять гонку небезпечною. Прост відмовився продовжувати за таких умов, а Сенна швидко відірвався, перш ніж зіткнувся з повільнішим болідом Мартіна Брандла в хмарі бризок. Перемога Бутсена була лише частиною вікенду, який визначали суперечки про видимість і ризик. Тогочасний репортаж документує ці побоювання; перелік сходів їх не пояснює."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
@@ -1128,16 +1136,17 @@
             "uk": "Гран-прі Європи на Брендс-Гетч"
           },
           "editorial_direction": {
-            "en": "Independent verification of all contextual claims required before publication.",
-            "uk": "Перед публікацією потрібна незалежна перевірка всіх контекстних фактів."
+            "en": "Check cancelled-calendar context and de Angelis/Patrese incident in period reporting; keep European GP identity distinct.",
+            "uk": "Звірити контекст скасованих етапів та інцидент де Анджеліса й Патрезе; не змішувати назву Гран-прі Європи з британським."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1983/races"
+            "https://www.formula1.com/en/results/1983/races",
+            "https://www.motorsportmagazine.com/archive/article/november-1983/46/grand-prix-europe-2/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Brands Hatch hosted the European Grand Prix in 1983, in addition to its better-known British Grand Prix history. Nelson Piquet won for Brabham. The event makes clear why venue identity and Grand Prix names need separate fields in a reliable archive.",
-            "uk": "Брендс-Гетч прийняв Гран-прі Європи у 1983 році, хоча більше відомий як місце проведення Гран-прі Великої Британії. Нельсон Піке переміг за Brabham. Подія показує, чому назви трас і Гран-прі треба розділяти в історичному архіві."
+            "en": "Brands Hatch hosted the European Grand Prix in 1983, in addition to its better-known British Grand Prix history. Nelson Piquet won for Brabham. The event makes clear why venue identity and Grand Prix names need separate fields in a reliable archive.\n\nCancelled events had opened space on the 1983 calendar, and Brands Hatch staged a European Grand Prix distinct from the British race. Elio de Angelis took pole, but an early incident with Riccardo Patrese changed the order. Nelson Piquet won from fourth on the grid ahead of Alain Prost and Nigel Mansell. The result left Piquet only two championship points behind Prost before the final round, giving the hastily arranged event consequences far beyond its unusual name.",
+            "uk": "Брендс-Гетч прийняв Гран-прі Європи у 1983 році, хоча більше відомий як місце проведення Гран-прі Великої Британії. Нельсон Піке переміг за Brabham. Подія показує, чому назви трас і Гран-прі треба розділяти в історичному архіві.\n\nСкасовані етапи звільнили місце в календарі 1983 року, і Брендс-Гетч прийняв Гран-прі Європи, окремий від британської гонки. Еліо де Анджеліс здобув поул, але ранній інцидент із Ріккардо Патрезе змінив порядок. Нельсон Піке переміг після старту з четвертого місця попереду Алена Проста й Найджела Менселла. Перед фінальним етапом Піке відставав від Проста лише на два очки, тож нашвидкуруч організована гонка мала значення далеко за межами своєї незвичної назви."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         },
@@ -1279,16 +1288,17 @@
             "uk": "Остання гонка Формули-1 у Воткінс-Глені"
           },
           "editorial_direction": {
-            "en": "Research-only draft. Independently verify details and historical context with event-specific sources before publication.",
-            "uk": "Дослідницька чернетка. Перед публікацією незалежно звірити деталі й історичний контекст за джерелами конкретного етапу."
+            "en": "Check Giacomelli electrical failure and Jones first-corner recovery; do not infer the venue's departure from the finishing order.",
+            "uk": "Звірити електричну несправність Джакомеллі й прорив Джонса після першого повороту; не виводити причини відходу траси з фінішного протоколу."
           },
           "sources": [
-            "https://www.formula1.com/en/results/1980/races"
+            "https://www.formula1.com/en/results/1980/races",
+            "https://www.motorsportmagazine.com/archive/article/november-1980/52/the-us-grand-prix/"
           ],
           "status": "classification_supported_research_draft",
           "narrative": {
-            "en": "Alan Jones won the 1980 United States Grand Prix at Watkins Glen for Williams. It was the venue's final Formula 1 championship event after a run stretching back to 1961. Why the race disappeared is a separate question from who won its last edition.",
-            "uk": "Алан Джонс виграв Гран-прі США 1980 року у Воткінс-Глені за Williams. Це був останній етап Формули-1 на трасі, що приймала чемпіонат із 1961-го. Причини зникнення гонки — окреме питання від імені її останнього переможця."
+            "en": "Alan Jones won the 1980 United States Grand Prix at Watkins Glen for Williams. It was the venue's final Formula 1 championship event after a run stretching back to 1961. Why the race disappeared is a separate question from who won its last edition.\n\nBruno Giacomelli surprised the field with pole and led in his Alfa Romeo while Jones recovered from a first-corner excursion. Jones worked back through traffic and was chasing the leader when Giacomelli stopped with an electrical failure. The newly crowned champion inherited first place and won ahead of Williams team-mate Carlos Reutemann. The period report makes Giacomelli's lost opportunity visible, but does not by itself settle the wider question of why Formula 1 never returned to the Glen.",
+            "uk": "Алан Джонс виграв Гран-прі США 1980 року у Воткінс-Глені за Williams. Це був останній етап Формули-1 на трасі, що приймала чемпіонат із 1961-го. Причини зникнення гонки — окреме питання від імені її останнього переможця.\n\nБруно Джакомеллі несподівано здобув поул і лідирував на Alfa Romeo, поки Джонс відігравався після виїзду за межі траси в першому повороті. Джонс прорвався крізь трафік і наздоганяв лідера, коли Джакомеллі зупинився через електричну несправність. Новоспечений чемпіон очолив гонку й переміг перед напарником по Williams Карлосом Ройтеманом. Тогочасний репортаж показує втрачений шанс Джакомеллі, але сам по собі не пояснює всіх причин, чому Формула-1 більше не повернулася до Воткінс-Глена."
           },
           "source_granularity": "f1_season_results_year_matched_claim_level_review_required"
         }
