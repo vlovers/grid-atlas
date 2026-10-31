@@ -27,8 +27,8 @@ test('five historical dossiers have 25 readable bilingual scenes and two indepen
       total++;
       assert.ok(story.narrative.en.length >= 260, id + '/en');
       assert.ok(story.narrative.uk.length >= 240, id + '/uk');
-      assert.ok(story.narrative.en.split(/\\s+/).length >= 55, id + '/en words');
-      assert.ok(story.narrative.uk.split(/\\s+/).length >= 45, id + '/uk words');
+      assert.ok(story.narrative.en.split(/\s+/).length >= 55, id + '/en words');
+      assert.ok(story.narrative.uk.split(/\s+/).length >= 45, id + '/uk words');
       en.add(story.narrative.en);
       uk.add(story.narrative.uk);
       assert.ok(story.source_urls.some((url) => url.includes('formula1.com/en/results/')), id + '/official classification');
