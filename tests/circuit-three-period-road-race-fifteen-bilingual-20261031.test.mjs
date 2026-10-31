@@ -36,8 +36,8 @@ test('15 period-linked bilingual scenes retain distinct causal chronology and fa
   for(const [i,s] of circuit.stories.entries()){
    count++;
    assert.ok(s.narrative.en.includes(expected[i]),id+':EN:'+i);
-   assert.ok(s.narrative.en.trim().split(/\\s+/).length>=65,id+':EN words:'+i);
-   assert.ok(s.narrative.uk.trim().split(/\\s+/).length>=55,id+':UK words:'+i);
+   assert.ok(s.narrative.en.trim().split(/\s+/).length>=65,id+':EN words:'+i);
+   assert.ok(s.narrative.uk.trim().split(/\s+/).length>=55,id+':UK words:'+i);
    assert.equal(s.independent_approval,false);
    assert.equal(s.publication,'blocked');
    assert.equal(s.historical_review_status,'pending_independent_claim_review');
