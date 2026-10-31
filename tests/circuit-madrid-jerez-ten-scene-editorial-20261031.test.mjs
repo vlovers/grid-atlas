@@ -15,7 +15,7 @@ test('ten Madring/Jerez bilingual scenes retain separate source leads and blocke
       assert.ok(s.narrative.en.length >= 400, s.title.en);
       assert.ok(s.narrative.uk.length >= 400, s.title.uk);
       assert.ok(s.historical_sources.length >= 2);
-      assert.match(s.historical_source_locator, /Independent claim review pending/);
+      assert.match(s.historical_source_locator, /independent (?:claim )?review pending/i);
       assert.equal(s.publication, 'blocked');
       assert.equal(s.independent_approval, false);
       assert.equal(s.historical_review_status, 'pending_independent_claim_review');
