@@ -23,8 +23,8 @@ test('eight historical short cards keep source-led bilingual race chronology unp
   for (const [id, [en1, en2, en3, uk1, uk2]] of expected) {
     const card = cards.find((entry) => entry.id === id);
     assert.ok(card, id);
-    assert.ok(card.description.en.split(/\\s+/).length >= 110, id + '/English depth');
-    assert.ok(card.description.uk.split(/\\s+/).length >= 90, id + '/Ukrainian depth');
+    assert.ok(card.description.en.split(/\s+/).length >= 110, id + '/English depth');
+    assert.ok(card.description.uk.split(/\s+/).length >= 90, id + '/Ukrainian depth');
     for (const anchor of [en1, en2, en3]) {
       assert.ok(card.description.en.includes(anchor), id + '/EN anchor ' + anchor);
     }
