@@ -23,7 +23,7 @@ test('ten revised short cards preserve bilingual claim-specific evidence and rev
     assert.ok(card, id);
     for (const anchor of [enA, enB]) assert.ok(card.description.en.includes(anchor), id + '/en/' + anchor);
     for (const anchor of [ukA, ukB]) assert.ok(card.description.uk.includes(anchor), id + '/uk/' + anchor);
-    for (const lang of ['en', 'uk']) assert.ok(card.description[lang].trim().split(/\\s+/).length >= 90, id + '/' + lang);
+    for (const lang of ['en', 'uk']) assert.ok(card.description[lang].trim().split(/\s+/).length >= 90, id + '/' + lang);
     assert.ok(card.historical_sources.length >= 2, id + '/historical_sources');
     assert.equal(new Set(card.historical_sources).size, card.historical_sources.length);
     assert.ok(card.historical_sources.every(url => new URL(url).protocol === 'https:'));
