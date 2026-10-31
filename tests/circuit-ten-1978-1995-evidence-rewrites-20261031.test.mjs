@@ -46,7 +46,7 @@ test('ten 1978/1995 research scenes have substantive distinct EN/UK narratives a
 
 test('Anderstorp distinguishes the lead change, retirement, podium margin and retained fan-car result', () => {
   const [lauda, patrese, peterson, ferrari, andretti] = scenes[0].stories;
-  assert.match(lauda.narrative.en, /38 laps/);
+  assert.match(lauda.narrative.en, /on lap 38/);
   assert.match(lauda.narrative.en, /withdraw/);
   assert.match(lauda.narrative.uk, /відмовилася/);
   assert.match(patrese.narrative.en, /0\.086 seconds/);
