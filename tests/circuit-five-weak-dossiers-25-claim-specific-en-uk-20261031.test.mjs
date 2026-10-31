@@ -60,8 +60,8 @@ test('25 weak-dossier scenes have specific EN/UK chronology and remain blocked',
       for (const [index, scene] of circuit.stories.entries()) {
         checked++;
         assert.ok(scene.narrative.en.includes(anchors[index]), circuit.circuit_id + '/' + index);
-        assert.ok(scene.narrative.en.split(/\\s+/).length >= 65, circuit.circuit_id + '/EN');
-        assert.ok(scene.narrative.uk.split(/\\s+/).length >= 55, circuit.circuit_id + '/UK');
+        assert.ok(scene.narrative.en.split(/\s+/).length >= 65, circuit.circuit_id + '/EN');
+        assert.ok(scene.narrative.uk.split(/\s+/).length >= 55, circuit.circuit_id + '/UK');
         assert.equal(scene.independent_approval, false);
         assert.equal(scene.publication, 'blocked');
         assert.equal(scene.historical_review_status, 'pending_independent_claim_review');
