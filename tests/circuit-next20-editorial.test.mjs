@@ -18,6 +18,17 @@ const externalSourceHosts = new Map([
  ['zandvoort/1961', new Set(['www.motorsportmagazine.com'])],
  ['zandvoort/1973', new Set(['www.motorsportmagazine.com'])],
  ['red-bull-ring/1975', new Set(['www.motorsportmagazine.com'])],
+ ['gilles-villeneuve/2011', new Set(['www.motorsportmagazine.com'])],
+ ['gilles-villeneuve/2008', new Set(['www.motorsportmagazine.com'])],
+ ['gilles-villeneuve/1999', new Set(['www.motorsportmagazine.com'])],
+ ['gilles-villeneuve/2007', new Set(['www.motorsportmagazine.com'])],
+ ['gilles-villeneuve/1982', new Set(['www.motorsportmagazine.com'])],
+ ['suzuka/2005', new Set(['www.motorsportmagazine.com'])],
+ ['suzuka/1988', new Set(['www.motorsportmagazine.com'])],
+ ['suzuka/1989', new Set(['www.motorsportmagazine.com'])],
+ ['suzuka/1990', new Set(['www.motorsportmagazine.com'])],
+ ['suzuka/2000', new Set(['www.grandprix.com'])],
+ ['suzuka/2012', new Set(['www.autosport.com'])],
 ]);
 const acceptedSource = (circuitId, year, raw) => {
  const url = new URL(raw);
