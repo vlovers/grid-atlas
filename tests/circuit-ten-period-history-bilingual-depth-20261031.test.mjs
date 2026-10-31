@@ -10,7 +10,7 @@ const cards = JSON.parse(
 );
 const anchors = new Map([
   ['buenos-aires', [/96 laps/, /96 кіл/]],
-  ['nurburgring', [/9:17\\.4/, /9:17,4/]],
+  ['nurburgring', [/9:17\.4/, /9:17,4/]],
   ['watkins-glen', [/fuel pressure/, /тиском пального/]],
   ['kyalami', [/six laps remaining/, /шість кіл/]],
   ['indianapolis', [/14 Michelin/, /14 пілотів/]],
@@ -29,8 +29,8 @@ test('ten circuit stories have bilingual period chronology, scoped independent e
     assert.ok(card, id);
     assert.match(card.description.en, englishAnchor, id + '/en chronology');
     assert.match(card.description.uk, ukrainianAnchor, id + '/uk chronology');
-    assert.ok(card.description.en.trim().split(/\\s+/).length >= 100, id + '/en depth');
-    assert.ok(card.description.uk.trim().split(/\\s+/).length >= 90, id + '/uk depth');
+    assert.ok(card.description.en.trim().split(/\s+/).length >= 100, id + '/en depth');
+    assert.ok(card.description.uk.trim().split(/\s+/).length >= 90, id + '/uk depth');
     assert.ok(card.historical_sources.length >= 2, id + '/independent research');
     assert.equal(new Set(card.historical_sources).size, card.historical_sources.length, id);
     assert.match(card.historical_source_locator, /(?:Motor Sport|Grandprix|Guardian)/, id);
@@ -38,12 +38,12 @@ test('ten circuit stories have bilingual period chronology, scoped independent e
     assert.equal(card.historical_review_status, 'pending_independent_claim_review', id);
     assert.equal(card.human_approval, false, id);
     assert.equal(card.publication_allowed, false, id);
-    assert.match(card.source, /^https:\\/\\//, id + '/result or circuit source');
+    assert.match(card.source, /^https:\/\//, id + '/result or circuit source');
     for (const url of card.historical_sources) {
-      assert.match(url, /^https:\\/\\//, id + '/historical URL');
+      assert.match(url, /^https:\/\//, id + '/historical URL');
       assert.notEqual(url, card.source, id + '/classification cannot prove narrative');
-      assert.doesNotMatch(url, /^https:\\/\\/(?:www\\.)?formula1\\.com\\//, id);
-      assert.doesNotMatch(url, /^https:\\/\\/github\\.com\\//, id);
+      assert.doesNotMatch(url, /^https:\/\/(?:www\.)?formula1\.com\//, id);
+      assert.doesNotMatch(url, /^https:\/\/github\.com\//, id);
     }
   }
 });
