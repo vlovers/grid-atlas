@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "kind": "integrated_sourced_circuit_manuscripts",
+  "editorial_batch": "2026-10-29-six-single-source",
+  "purpose": "Original bilingual reader chapters integrating five previously drafted race-result scenes per circuit with independently located historical narrative evidence. All claims remain subject to independent editorial review.",
+  "human_approval": false,
+  "publication_allowed": false,
+  "chapters": [
+    {
+      "circuit_id": "ain-diab",
+      "title": {
+        "en": "The race Moss won and the title Hawthorn kept",
+        "uk": "Гонку виграв Мосс, а чемпіоном став Готорн"
+      },
+      "article": {
+        "en": "A championship can be lost on the day you win a race. That is what happened to Stirling Moss at Ain-Diab in October 1958: his Vanwall won the Moroccan Grand Prix, while Mike Hawthorn's Ferrari came home second and carried the drivers' title away from Casablanca.\n\nMoss had done what he could. His Vanwall covered all 53 laps first, and he set the fastest lap. But winning the last race was not enough to undo the points Hawthorn had gathered over the season.\n\nHawthorn crossed the line 84.7 seconds behind Moss in his Ferrari. In a normal race that gap might have been the whole story. Here, second place was exactly what he needed for the championship.\n\nPhil Hill had been ahead of Hawthorn, and that was a problem for Ferrari's championship hopes. The team asked Hill to ease off; the gap was large enough that Hawthorn did not take second until lap 39. They finished only eight tenths apart. Read without the race report, the classification looks like an ordinary close finish between team-mates. It was instead the position change that secured Hawthorn's title.\n\nThe title was decided under the season's best-results scoring rule, not by adding every point earned. Hawthorn's six counting results gave him 42 championship points to Moss's 41. Moss had won four races; Hawthorn only one. Yet second place at Ain-Diab was enough under the rules of the day. Vanwall had already secured the inaugural constructors' championship, so the team title and drivers' title went to different camps.\n\nTony Brooks, another Vanwall driver, retired after 29 laps. His engine trouble mattered beyond his own result: Moss needed his team-mate to keep Hawthorn behind, and that possibility disappeared.\n\nThe afternoon also carried a loss that no points table can capture. Vanwall's Stuart Lewis-Evans crashed after an engine failure, suffered severe burns and died six days later. His fate belongs in any account of this finale, not as a footnote to the championship.\n\nAt the flag, Moss had the victory and fastest lap, but not the championship. Hawthorn had the points he needed because Hill had given up second. The story does not end with that calculation: Lewis-Evans's fatal injuries made the Vanwall celebrations impossible to separate from grief. Ain-Diab closed a season in which the fastest man on the day and the champion were not the same driver.",
+        "uk": "Чи можна програти чемпіонат у день власної перемоги? Стірлінг Мосс дізнався відповідь на трасі Айн-Діаб у жовтні 1958 року. Його Vanwall виграв Гран-прі Марокко, але друге місце Майка Готорна на Ferrari принесло супернику чемпіонський титул.\n\nМосс зробив усе, що міг: першим подолав 53 кола на Vanwall і показав найшвидше коло. Але перемоги у фінальній гонці не вистачило, щоб перекреслити очки, які Готорн збирав протягом сезону.\n\nГоторн на Ferrari перетнув фініш через 84,7 секунди після Мосса. В іншій гонці така відстань була б головною цифрою. Тут друге місце означало чемпіонський титул.\n\nФіл Гілл їхав попереду Готорна, і для чемпіонських шансів Ferrari це було проблемою. Команда попросила Гілла зменшити темп, але розрив був таким великим, що Готорн вийшов на друге місце лише на 39-му колі. На фініші їх розділили вісім десятих секунди. Без репортажу це схоже на звичайну близьку боротьбу напарників. Насправді саме ця зміна позицій принесла Готорну титул.\n\nЧемпіонат визначали не за простою сумою всіх набраних очок: до заліку йшли лише найкращі результати сезону. Шість залікових результатів принесли Готорну 42 очки проти 41 у Мосса. Мосс виграв чотири гонки, Готорн — лише одну. Але другого місця на Айн-Діабі вистачило за тодішніми правилами підрахунку. Vanwall уже здобула перший Кубок конструкторів, тож командний та особистий титули дісталися різним суперникам.\n\nТоні Брукс, ще один пілот Vanwall, зійшов після 29 кіл. Поломка двигуна вплинула не лише на його результат: Моссу було потрібно, щоб напарник стримував Готорна, а тепер цей шанс зник.\n\nТого дня сталася й трагедія, якої не видно в таблиці очок. Стюарт Льюїс-Еванс потрапив в аварію після відмови двигуна Vanwall, дістав тяжкі опіки й помер через шість днів. Про це неможливо говорити як про дрібну примітку до чемпіонської гонки.\n\nНа фініші Мосс мав перемогу й найшвидше коло, але не чемпіонський титул. Готорн набрав потрібні очки після того, як Гілл поступився другим місцем. Та історія не закінчується підрахунком балів: смертельні травми Льюїса-Еванса затьмарили успіх Vanwall. Айн-Діаб завершив сезон, у якому найшвидший пілот останньої гонки та чемпіон виявилися різними людьми."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
+        "https://www.bbc.co.uk/sport/africa/51658391",
+        "https://www.motorsportmagazine.com/special-article/100-greatest-gps-bookazine/32/84th-1958-moroccan-gp/",
+        "https://www.grandprix.com/races/morocco-gp-1958.html",
+        "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Independently verify 1958 best-six scoring and 42–41 tally against primary championship regulations before release",
+        "Check exact Lewis-Evans incident sequence and spelling across locales",
+        "Claim locator for independent review: Motor Sport November 1958 'Grand Prix du Maroc', passage describing Ferrari signalling Phil Hill and Hawthorn passing on lap 39: https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/ . Verify against the 1958 classification and do not treat this note as approval."
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "avus",
+      "title": {
+        "en": "Ferrari's sweep on Berlin's banked road",
+        "uk": "Три Ferrari на швидкісній дорозі Берліна"
+      },
+      "article": {
+        "en": "At AVUS in 1959, Formula 1 raced along Berlin roads built for extraordinary speed. Two long straights, a tight southern turn and a steeply banked northern curve made this German Grand Prix unlike the usual Nürburgring visit. The organisers even divided the race into two heats.\n\nTony Brooks won for Ferrari, but the official total of 60 laps hides an unusual format. Because of tyre concerns, the organisers split the race into two 30-lap heats and combined the times to decide the result.\n\nDan Gurney finished second, just 1.9 seconds behind Brooks on aggregate. Two hours of racing over two separate starts produced a gap small enough to fit inside a single corner.\n\nPhil Hill was the third Ferrari driver on the podium. Maurice Trintignant brought the next car home for Cooper, already a lap down on the combined result. That gap helps explain the shape of the race: the Ferraris had the speed for AVUS's long straights, while the surviving opposition could not turn either heat into a challenge for the overall win.\n\nJack Brabham's Cooper lasted only 15 laps. The official result says DNF, but the contemporary race report explains the mechanical failure. AVUS punished machinery as severely as it tested the drivers.\n\nMoss was out after a single lap, but the first heat was not a Ferrari procession. Masten Gregory's Cooper fought among the leaders until mechanical trouble ended his challenge. The three red cars occupied the final podium only after their challengers had fallen away across the two starts.\n\nThe danger was not abstract. Jean Behra died in a sports-car support race the day before the Grand Prix. During the championship race, Hans Herrmann survived a violent crash after brake trouble at the South Turn; his BRM was wrecked. Neither incident belongs in the finishing classification, yet both belong in the story of a weekend staged on an extraordinarily fast road.\n\nThe timing sheet joins two separate 30-lap heats into one Ferrari one-two-three. It cannot show how strange the format felt, or how quickly the weekend turned frightening: Behra died in Saturday's support race, and Herrmann survived a violent BRM accident on Sunday. AVUS staged just this one championship German Grand Prix. Its extraordinary speed and its cost belong in the same account.",
+        "uk": "У 1959 році Формула-1 приїхала не на звичний Нюрбургринг, а на берлінський AVUS. Дві довгі прямі, тісний південний поворот і крутий віраж на півночі робили трасу незвично швидкою. Організатори навіть розділили Гран-прі Німеччини на два заїзди.\n\nТоні Брукс переміг на Ferrari, але за 60 колами в офіційному протоколі ховається незвичний формат. Через побоювання за шини організатори розділили гонку на два заїзди по 30 кіл, а результат визначили за сумарним часом.\n\nДен Герні став другим, поступившись Бруксу лише 1,9 секунди за сумою двох заїздів. Після двох стартів і двох годин боротьби їх розділила мить.\n\nФіл Гілл став третім пілотом Ferrari на подіумі. Найближчий суперник, Моріс Трентіньян на Cooper, за сумарним результатом програв коло. Цей розрив показує характер гонки: довгі прямі AVUS підходили Ferrari, а суперники, які залишилися на трасі, не змогли перетворити жоден із двох заїздів на боротьбу за загальну перемогу.\n\nCooper Джека Бребгема витримав лише 15 кіл. У протоколі — сходження, а тогочасний репортаж пояснює його механічною несправністю. AVUS випробовувала техніку не менше, ніж людей.\n\nМосс зійшов уже після першого кола, але перший заїзд не був легкою прогулянкою Ferrari. Мастен Грегорі на Cooper боровся серед лідерів, доки технічна несправність не обірвала його наступ. Три червоні машини посіли весь подіум лише після того, як суперники вибули протягом двох стартів.\n\nНебезпека тут була не перебільшенням. Напередодні Гран-прі Жан Бера загинув у гонці спортивних автомобілів. А під час чемпіонатної гонки Ганс Геррманн пережив важку аварію після проблем із гальмами в Південному повороті: його BRM була знищена. У фінішному протоколі цих подій не побачиш, але без них неможливо зрозуміти той вікенд на надзвичайно швидкісній трасі.\n\nУ протоколі два окремі заїзди по 30 кіл зливаються в один потрійний успіх Ferrari. Але таблиця не передає ані незвичного формату, ані небезпеки: у суботній гонці підтримки загинув Бера, а в неділю Геррманн вижив після страшної аварії BRM. AVUS лише раз прийняла чемпіонатний Гран-прі Німеччини. Її виняткову швидкість не можна відділити від ціни, яку заплатили учасники."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/174/germany/race-result",
+        "https://www.motorsportmagazine.com/archive/article/september-1959/47/the-21st-german-grand-prix/",
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-history-tragic-1959-german-grand-prix-avus/"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Differentiate combined heat classification from single continuous race",
+        "Confirm Behra support-race incident wording and attribution before release",
+        "Claim locator for independent review: Motor Sport September 1959 'The 21st German Grand Prix' covers the separate 30-lap heats and aggregate classification: https://www.motorsportmagazine.com/archive/article/september-1959/47/the-21st-german-grand-prix/ . Check Behra support-race category separately."
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "bugatti",
+      "title": {
+        "en": "A French Grand Prix in the shadow of Le Mans",
+        "uk": "Гран-прі Франції поруч із легендою Ле-Мана"
+      },
+      "article": {
+        "en": "In 1967 the French Grand Prix came to Le Mans, but not to the famous 24-hour circuit. Formula 1 used the shorter Bugatti layout. The setting had a legendary name without the long straights and endurance-racing drama spectators associated with it.\n\nJack Brabham won after 80 laps in his Brabham-Repco. The victory came on a circuit that had divided opinion even before the start, with drivers and spectators less enthusiastic than the organisers had hoped.\n\nDenny Hulme finished second in the other Brabham-Repco, 49.5 seconds behind. The team left Le Mans with both leading positions, a result more emphatic than the circuit's reputation might suggest.\n\nStewart finished third in the BRM, a full lap behind Brabham. His podium was real, but it did not mean the three drivers had fought for the lead together. Brabham and Hulme had the race under control; Stewart's result tells a different story, of bringing a car home when the leading pair had already disappeared up the road.\n\nLotus had arrived with famous names and speed. Graham Hill started from pole, yet retired after 13 laps; Jim Clark lasted 23. Their disappearances changed the shape of the contest long before the finish.\n\nJo Siffert took fourth for Cooper-Maserati, three laps down. His result was less spectacular than the winner's, but it was a finish on a day when several better-known contenders failed to reach the flag.\n\nThe awkward fit was visible in the grandstands. Formula 1's own retrospective puts attendance at about 20,000, compared with roughly 200,000 for that year's 24 Hours of Le Mans. The short Bugatti course borrowed the opening stretch of the endurance circuit, then turned back before Tertre Rouge. The famous address could not give this Grand Prix the atmosphere of the event people normally travelled there to see.\n\nThe name Le Mans promised one sort of spectacle; the short Bugatti course delivered another. Brabham and Hulme left with a one-two, Stewart followed a lap back, and the crowd was far smaller than the venue's endurance-racing reputation might suggest. This was Formula 1's only championship visit to the Bugatti layout, not a Grand Prix on the full circuit used for the 24-hour race.",
+        "uk": "У 1967 році Гран-прі Франції приїхав у Ле-Ман, але не на знамениту трасу добового марафону. Формула-1 використала коротший варіант Bugatti. Назва була легендарною, та від атмосфери «24 годин Ле-Мана» тут залишилося небагато.\n\nДжек Бребгем переміг на Brabham-Repco після 80 кіл. Ще до старту ця траса викликала суперечки: ані пілоти, ані глядачі не виявляли того захвату, на який сподівалися організатори.\n\nДенні Галм на другому Brabham-Repco став другим, поступившись напарнику 49,5 секунди. Команда забрала обидві перші позиції — переконливий результат на трасі з неоднозначною репутацією.\n\nСтюарт фінішував третім на BRM, програвши Бребгему ціле коло. Подіум був заслуженим, але це не означає, що всі троє разом боролися за лідерство. Бребгем і Г'юм контролювали гонку, а результат Стюарта — інша історія: він довів машину до фінішу, коли перша пара вже давно відірвалася.\n\nLotus привезла гучні імена й швидкість. Грем Гілл стартував із поулу, проте зійшов після 13 кіл; Джим Кларк протримався 23. Обидва вибули задовго до фінішу, змінивши перебіг боротьби.\n\nЙо Зіфферт став четвертим на Cooper-Maserati з відставанням у три кола. Не такий яскравий результат, як перемога, але важливий фініш у день, коли чимало відомих суперників зійшли.\n\nРізницю між двома гонками було видно навіть на трибунах. За історичним оглядом Формули-1, на Гран-прі прийшло близько 20 тисяч глядачів, тоді як на 24 години Ле-Мана того року — приблизно 200 тисяч. Коротка траса Bugatti використовувала початкову частину марафонського кільця, а перед Tertre Rouge повертала назад. Знаменита адреса не змогла подарувати Гран-прі атмосферу події, заради якої сюди зазвичай приїздили.\n\nНазва Ле-Ман обіцяла одне видовище, а коротка траса Bugatti запропонувала зовсім інше. Бребгем і Г'юм привезли команді дубль, Стюарт відстав на коло, а глядачів було значно менше, ніж можна було очікувати від легендарного місця перегонів на витривалість. Це був єдиний чемпіонатний візит Формули-1 на конфігурацію Bugatti, а не Гран-прі на повному кільці 24-годинної гонки."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_1_REMAINING_SIX_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races/248/france/race-result",
+        "https://www.formula1.com/en/results/1967/races/248/france/starting-grid",
+        "https://www.grandprix.com/races/french-gp-1967.html",
+        "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Check exact Bugatti configuration against period maps rather than modern layout",
+        "Do not equate pole pace with race pace or infer retirement causes from classification"
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "dijon",
+      "title": {
+        "en": "Renault wins; the fight behind steals the memory",
+        "uk": "Renault перемагає, але всі згадують дуель позаду"
+      },
+      "article": {
+        "en": "The crowd at Dijon in 1979 had two races to watch. Jean-Pierre Jabouille was taking Renault toward the first Formula 1 victory for a turbocharged engine. Behind him, Gilles Villeneuve and René Arnoux were turning the fight for second into a contest that threatened to steal the winner's moment.\n\nVilleneuve led the opening 46 laps for Ferrari after beating pole-sitter Jabouille away from the start. As the Ferrari's tyres and brakes faded, Jabouille took the lead on lap 47 and drove his Renault turbo to a home victory. The race's second drama was still to come, with Arnoux closing on Villeneuve behind him.\n\nGilles Villeneuve and René Arnoux fought wheel to wheel in the closing laps. They swapped positions, brushed wheels and kept going. Villeneuve's Ferrari finally crossed the line just 0.240 seconds ahead of Arnoux's Renault.\n\nRenault had both a winner and a participant in the fight everyone remembers. Jabouille brought the turbo-powered car home first; Arnoux spent the final laps trading places with Villeneuve and finished third. Their afternoons could hardly have looked more different. Together they made Dijon a milestone for Renault engineering and a race that fans still replay for its driving.\n\nAlan Jones finished fourth in his Williams-Ford, 36.610 seconds behind Jabouille. That was a strong classified finish, but the gap to the leading trio shows why the cameras and the stories stayed up front.\n\nNiki Lauda's Brabham-Alfa Romeo lasted only 23 laps. The official classification establishes the retirement; it does not, on its own, explain what failed. That distinction matters when turning results into history.\n\nDijon was more than a backdrop for the last-lap fight. The circuit had been lengthened for Formula 1's return in 1977, and its quick, off-camber corners rose and fell across the hillside. The 1979 duel unfolded on that expanded layout, not on the shorter course used in 1974. That matters whenever footage or a modern circuit map is used to explain where Villeneuve and Arnoux fought.\n\nJabouille crossed the line first, delivering the first Formula 1 championship win for Renault's turbo engine. Behind him, Villeneuve held second by 0.240 seconds after a bruising exchange with Arnoux. Neither story cancels the other: the winning car changed the technical direction of the sport, while the fight for second gave the afternoon its enduring images.",
+        "uk": "У Діжоні 1979 року глядачі ніби дивилися дві гонки одночасно. Жан-П'єр Жабуй вів Renault до першої у Формулі-1 перемоги турбодвигуна. А позаду Жиль Вільньов і Рене Арну так боролися за друге місце, що ледь не затьмарили тріумф переможця.\n\nВільньов на Ferrari очолював перші 46 кіл, випередивши володаря поулу Жабуя на старті. Коли шини й гальма Ferrari почали втрачати ефективність, на 47-му колі Жабуй вийшов уперед і повів турбований Renault до домашньої перемоги. Але позаду Арну наздоганяв Вільньова — друга драма гонки лише починалася.\n\nЖиль Вільнев і Рене Арну боролися колесо в колесо на останніх колах. Вони мінялися місцями, торкалися машинами й не здавалися. Зрештою Ferrari Вільнева перетнула фініш лише на 0,240 секунди раніше за Renault Арну.\n\nRenault отримала і переможця, і учасника дуелі, яку пам'ятають найкраще. Жабуй першим довів до фінішу машину з турбодвигуном, а Арну на останніх колах раз у раз мінявся позиціями з Вільньовом і став третім. Їхні гонки були зовсім різними. Разом вони зробили Діжон важливою датою для інженерів Renault і гонкою, яку вболівальники досі передивляються заради боротьби.\n\nАлан Джонс на Williams-Ford фінішував четвертим, за 36,610 секунди після Жабуя. Це гідний результат, але розрив із трійкою пояснює, чому всі розмови точилися про лідерів.\n\nBrabham-Alfa Romeo Нікі Лауди витримала лише 23 кола. Офіційний протокол підтверджує сходження, але сам по собі не пояснює його причину. У розповіді про історію гонки цю різницю важливо пам'ятати.\n\nДіжон був не просто декорацією для дуелі на останніх колах. До повернення Формули-1 у 1977 році трасу подовжили, а її швидкі повороти з непростим поперечним ухилом підіймалися й спускалися схилом. Боротьба 1979 року відбувалася саме на цій розширеній конфігурації, а не на коротшому кільці 1974-го. Це важливо, коли хтось намагається пояснити дуель Вільньова й Арну за відео або сучасною схемою траси.\n\nЖабуй фінішував першим і приніс турбодвигуну Renault першу перемогу в чемпіонаті Формули-1. Позаду Вільньов утримав друге місце з перевагою лише 0,240 секунди після жорсткої дуелі з Арну. Одна історія не затьмарює іншу: машина переможця стала знаком технічних змін, а боротьба за друге місце подарувала гонці кадри, які пам'ятають досі."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+        "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+        "https://www.motorsportmagazine.com/database/races/1979-french-grand-prix/",
+        "https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/",
+        "https://www.motorsport.com/f1/news/renault-turbo-engine-first-win-dijon/4819948/"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Retirement causes require source beyond race classification",
+        "Period Motor Sport report covers Villeneuve–Arnoux duel; verify precise manoeuvres and bilingual rendering before release",
+        "Claim locator for independent review: Motorsport.com retrospective 'The day Renault's turbo engine finally came good at Dijon' records Villeneuve leading 46 laps before Jabouille passed: https://www.motorsport.com/f1/news/renault-turbo-engine-first-win-dijon/4819948/ . Check the original race report before approval."
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "title": {
+        "en": "Mansell's Ferrari debut goes against the odds",
+        "uk": "Дебют Менселла за Ferrari всупереч очікуванням"
+      },
+      "article": {
+        "en": "Ferrari arrived at the 1989 Brazilian Grand Prix with a new driver and a new gearbox that had caused headaches in testing. Nigel Mansell's first race for the team was supposed to test the semi-automatic transmission. Instead, he drove it to victory at Jacarepaguá.\n\nHis Ferrari finished 61 laps first at Jacarepaguá. The win mattered beyond a new driver's first appearance in red: the innovative transmission had survived a full Grand Prix and reached the top step of the podium.\n\nAlain Prost finished second for McLaren-Honda, 7.809 seconds behind. The team that had dominated the previous season was beaten at the opening round by a car many doubted would finish.\n\nGugelmin's third place gave Brazilian spectators a home driver on the podium even though Senna's race had gone wrong. He finished only 1.561 seconds behind Prost in the March-Judd. That was not a victory, but it was a result with its own weight for the crowd at Jacarepaguá, rather than a footnote to Mansell's Ferrari debut.\n\nJohnny Herbert brought his Benetton-Ford home fourth, another 1.123 seconds behind Gugelmin. It was a striking result in his first championship Grand Prix, following the injuries he had suffered the previous year.\n\nSenna was classified eleventh, two laps behind the winner. Contemporary accounts describe an opening-corner collision that wrecked his chances. The home favourite's result could hardly have contrasted more sharply with Gugelmin's podium.\n\nThe gearbox had been a worry throughout Ferrari's preparation, so Mansell's win was a relief as well as a surprise. It proved that the new system could last one full race; it said nothing about whether it would survive the next. Prost's McLaren had been beaten on pace, while Senna's home challenge had been derailed at the first corner.\n\nThe first race of 1989 ended with three different stories on one podium: Mansell won on his Ferrari debut, Prost took second for McLaren, and Gugelmin gave Brazil a third-place finisher. Ferrari had another reason to be relieved. Its new gearbox, so worrying before the start, had lasted the full 61 racing laps when it mattered.",
+        "uk": "Ferrari приїхала на відкриття сезону 1989 року з новим пілотом і коробкою передач, яка завдавала клопоту на тестах. Перший старт Найджела Менселла за команду мав показати, чи витримає напівавтоматична трансмісія дистанцію. Натомість він одразу виграв на Жакарепагуа.\n\nЙого Ferrari першою подолала 61 коло в Жакарепагуа. Ця перемога означала більше, ніж вдалий дебют у червоному: нова трансмісія витримала повну дистанцію Гран-прі й дісталася найвищої сходинки подіуму.\n\nАлен Прост на McLaren-Honda став другим, відставши на 7,809 секунди. Команда, що домінувала попереднього сезону, програла стартову гонку машині, в надійності якої багато хто сумнівався.\n\nТретє місце Гугельміна дало бразильським уболівальникам свого пілота на подіумі, хоча гонка Сенни пішла не за планом. На March-Judd він фінішував лише за 1,561 секунди після Проста. Це не була перемога, але для трибун Жакарепагуа такий результат мав власну вагу — не просто примітка до дебюту Менселла у Ferrari.\n\nДжонні Герберт привів Benetton-Ford до четвертого місця, ще за 1,123 секунди після Гугельміна. Вражаючий результат у першому чемпіонатному Гран-прі після травм, отриманих торік.\n\nСенну класифікували одинадцятим із відставанням у два кола. За репортажами того часу, зіткнення в першому повороті зруйнувало його шанси. Результат головного місцевого фаворита різко контрастував із подіумом Гугельміна.\n\nІнженери Ferrari хвилювалися за нову коробку передач протягом підготовки, тому перемога Менселла принесла не лише здивування, а й полегшення. Вона довела, що система здатна витримати одну повну гонку, але нічого не гарантувала на наступну. McLaren Проста поступився в боротьбі за перемогу, а домашня гонка Сенни пішла шкереберть уже в першому повороті.\n\nПерша гонка 1989 року зібрала на одному подіумі три різні історії: Менселл переміг у дебюті за Ferrari, Прост став другим на McLaren, а Гугельмін подарував Бразилії третє місце. У Ferrari був іще один привід зітхнути з полегшенням: нова коробка передач, яка так непокоїла команду перед стартом, витримала всі 61 гоночне коло."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_2_FIRST_SIX_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1989/races/543/brazil/race-result",
+        "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+        "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Confirm Herbert injury chronology against original interview before publication",
+        "Race result does not itself prove first-lap collision; retrospective source is separate"
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "circuit_id": "zolder",
+      "title": {
+        "en": "Alboreto's Ferrari day at Zolder",
+        "uk": "День Альборето й Ferrari у Золдері"
+      },
+      "article": {
+        "en": "Zolder's last Formula 1 Belgian Grand Prix, in 1984, belonged to Michele Alboreto. He started his Ferrari from pole and kept the lead to the flag. Yet the period reports and today's classification disagree on Ayrton Senna's position after Tyrrell's later disqualification.\n\nAlboreto completed all 70 laps in front. The contemporary race report describes a controlled drive, including a tyre stop that did not cost him the lead. His margin at the flag was more than forty seconds.\n\nDerek Warwick took second in his Renault, 42.386 seconds behind. He was the closest finisher to the winning Ferrari, even if the final gap left little doubt about the winner.\n\nArnoux took third in the second Ferrari, 69.803 seconds behind Alboreto, and set the fastest lap. Ferrari therefore had more than a solitary victory to celebrate. Yet the sizeable gap to its second car also makes the distinction clear: Alboreto's control at the front was not the same thing as a close intra-team fight.\n\nAyrton Senna appears sixth in today's official Formula 1 classification, two laps down, and receives a point in his Toleman-Hart. The period Motor Sport report, however, lists him seventh: Stefan Bellof's Tyrrell was ahead on the road before the team's later exclusion reshaped the record. Both documents describe the same race but different stages of its official history. A reader deserves to know why the numbers disagree.\n\nMcLaren had a very different afternoon. Alain Prost retired after five laps and Niki Lauda after 35. Their two missing cars made the finishing order look very different from the expectations surrounding the team.\n\nThe venue's return was less simple than a line on the calendar suggests. Belgium had raced at Spa in 1983, but Zolder had invested heavily in its paddock and pit facilities and hosted again in 1984. The Grand Prix went back to Spa in 1985. Read this as a moment in the argument over where Belgium's race belonged, not as proof that one circuit had permanently replaced the other.\n\nAlboreto's win and the Ferrari podium are straightforward in both period accounts and today's result. Senna's placing is not: Tyrrell's later exclusion altered the official order after the race. That is why a contemporary report and the revised archive can disagree without either being a simple transcription error. A useful history of Zolder must say which classification it is quoting.",
+        "uk": "Останній для Золдера Гран-прі Бельгії Формули-1 у 1984 році став гонкою Мікеле Альборето. Він стартував із поулу на Ferrari й не віддав лідерство до фінішу. Та тогочасні репортажі й сучасний протокол по-різному вказують місце Айртона Сенни після дискваліфікації Tyrrell.\n\nАльборето очолював гонку всі 70 кіл. У репортажі того часу описано впевнений виступ, зокрема заміну шин без втрати лідерства. На фініші він мав перевагу понад сорок секунд.\n\nДерек Ворвік став другим на Renault, програвши 42,386 секунди. Він фінішував найближче до Ferrari-переможниці, але розрив не залишав сумнівів щодо того, хто контролював гонку.\n\nАрну став третім на другій Ferrari, програвши Альборето 69,803 секунди, і показав найшвидше коло. Отже, Ferrari святкувала не лише одну перемогу. Водночас великий розрив між її машинами важливий для розуміння гонки: впевнене лідерство Альборето не означало щільної боротьби всередині команди.\n\nУ сучасному офіційному протоколі Формули-1 Айртон Сенна посідає шосте місце на Toleman-Hart, із відставанням у два кола, та отримує одне очко. Але тогочасний репортаж Motor Sport ставить його сьомим: Штефан Беллоф на Tyrrell був попереду на трасі, перш ніж подальше виключення команди змінило підсумкову класифікацію. Це одна й та сама гонка на різних етапах оформлення результатів. Читач має розуміти, чому цифри розходяться.\n\nУ McLaren день склався зовсім інакше. Ален Прост зійшов після п'яти кіл, Нікі Лауда — після 35. Без двох машин команди підсумковий порядок суттєво відрізнявся від передстартових очікувань.\n\nПовернення Золдера було складнішим, ніж здається з календаря. У 1983 році бельгійський Гран-прі проходив у Спа, але Золдер вклав значні кошти в паддок і бокси та знову прийняв гонку 1984-го. Уже в 1985 році етап повернувся до Спа. Це епізод суперечки про те, де має проходити бельгійська гонка, а не доказ остаточної перемоги однієї траси над іншою.\n\nПеремога Альборето й подіум Ferrari однаково виглядають у тогочасних репортажах і нинішньому протоколі. Із місцем Сенни складніше: пізніше виключення Tyrrell змінило офіційний порядок фінішу вже після гонки. Тому репортаж 1984 року й переглянутий архів можуть розходитися без помилки переписувача. Розповідаючи про Золдер, потрібно вказувати, яку саме класифікацію цитуємо."
+      },
+      "integrated_scene_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_documents": [
+        "EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
+        "https://www.formula1.com/en/results/1984/races/468/belgium/starting-grid",
+        "https://www.formula1.com/en/results/1984/races/468/belgium/fastest-laps",
+        "https://www.motorsportmagazine.com/archive/article/june-1984/52/grote-prijs-van-belgie-5/"
+      ],
+      "verification_status": "partial_fact_verification",
+      "pending_review": [
+        "Contemporary 1984 classification differs from current F1 archive because Tyrrell was disqualified; explain if showing period result",
+        "Do not infer Prost or Lauda retirement cause from classification"
+      ],
+      "human_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}

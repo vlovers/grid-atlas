@@ -23,8 +23,10 @@ test('offline packet integrates all 165 bilingual drafts from 33 dossiers withou
   assert.equal(packet.publication_allowed, false);
   assert.equal(packet.independent_approval, false);
   assert.deepEqual(packet.summary, {
-    circuits: 33, stories: 165, source_references: 177,
-    distinct_source_urls: 39, single_source_circuits: 27, published: 0,
+    circuits: 33, stories: 165,
+    source_references: triage.summary.total_story_source_references,
+    distinct_source_urls: triage.summary.distinct_source_urls,
+    single_source_circuits: triage.summary.single_source_circuits, published: 0,
   });
   assert.equal(packet.circuits.length, 33);
   assert.deepEqual(packet.circuits.map(circuit => circuit.circuit_id), triage.circuits.map(circuit => circuit.circuit_id).sort());
@@ -75,7 +77,7 @@ test('offline HTML presents all 165 paired stories, source links, and review war
   assert.equal((html.match(/<section lang="en">/g) ?? []).length, 165);
   assert.equal((html.match(/<section lang="uk">/g) ?? []).length, 165);
   assert.match(html, /Not independently verified\. Not approved for publication/);
-  assert.match(html, /27\/33 dossiers rely on a single URL/);
+  assert.match(html, new RegExp(triage.summary.single_source_circuits + '/33 dossiers rely on a single URL'));
   assert.match(html, /rel="noopener noreferrer" target="_blank"/);
   assert.match(html, /Senna&#39;s pole, zero racing laps/);
   assert.match(html, /@media\(max-width:700px\)/);

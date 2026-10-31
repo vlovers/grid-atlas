@@ -10,7 +10,14 @@
       "uk": "Айртон Сенна здобув поул на Гран-прі Тихого океану 1994 року, випередивши Міхаеля Шумахера. Та в Айді володар поулу не проїхав жодного гоночного кола: Сенна вибув одразу після старту, а Шумахер довів свій Benetton до перемоги. Герхард Бергер фінішував другим із відставанням 75,3 секунди, Рубенс Баррікелло привіз Jordan на третє місце. Недільний результат виявився зовсім не схожим на суботню стартову решітку. Саме тому цей короткий епізод в історії траси запам’ятовується не дуеллю двох лідерів кваліфікації, а переконливою перемогою Шумахера."
     },
     "year": "1994",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1994/races/02-pacific/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/pacific-gp-1994.html"
+    ],
+    "historical_source_locator": "1994 Pacific GP: Senna pole and first-corner accident, Schumacher victory.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "reims",
@@ -19,11 +26,18 @@
       "uk": "Mercedes повертається — і виграє одну десяту"
     },
     "description": {
-      "en": "At Reims on 4 July 1954, Mercedes-Benz returned to World Championship Grand Prix racing and immediately finished first and second. Juan Manuel Fangio won, but his team-mate Karl Kling was only one tenth of a second behind in the official results. Robert Manzon's Ferrari was third, a lap down. That tiny gap between the two silver cars makes the finish more vivid than any description of technical superiority: the new Mercedes did not simply arrive at Reims; two of them fought for the win all the way to the line. On the French public-road circuit, the comeback became a result nobody needed to wait another race to understand.",
-      "uk": "4 липня 1954 року Mercedes-Benz повернувся до Гран-прі чемпіонату світу й одразу посів перші два місця. Хуан-Мануель Фанхіо переміг, але його напарник Карл Клінг поступився лише однією десятою секунди — саме такий розрив зафіксовано в офіційному протоколі. Робер Манзон на Ferrari став третім, програвши коло. Ця десята секунди розповідає про фініш більше, ніж будь-які слова про перевагу техніки: дві сріблясті машини боролися за перемогу до самої лінії. На швидких дорогах поблизу Реймса повернення Mercedes стало історією, результат якої був зрозумілий уже після першої гонки."
+      "en": "Mercedes returned to World Championship Grand Prix racing at Reims in 1954 with the new W196. Juan Manuel Fangio and Karl Kling controlled the race, but the final laps were no procession. The team-mates ran side by side and exchanged the advantage; Kling even began the last lap ahead. Fangio crossed the line first, just one tenth of a second in front. Robert Manzon finished third in a Ferrari, a lap down. The classification records a Mercedes one-two; the contemporary report shows how close the two silver cars came to reversing their order.",
+      "uk": "Mercedes повернувся до залікових Гран-прі в Реймсі 1954 року з новим W196. Хуан-Мануель Фанхіо й Карл Клінг контролювали гонку, але останні кола не стали парадом. Напарники їхали поруч і мінялися лідерством; Клінг навіть почав останнє коло попереду. Фанхіо першим перетнув фініш, випередивши його лише на одну десяту секунди. Робер Манзон на Ferrari став третім, програвши коло. Протокол показує дубль Mercedes, а тогочасний репортаж — наскільки близько пілоти були до іншого порядку фінішу."
     },
     "year": "1954",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1954/14/the-week-end-at-reims/"
+    ],
+    "historical_source_locator": "1954 French GP: Mercedes debut and Fangio–Kling late fight, 0.1-second gap.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "rouen",
@@ -36,7 +50,14 @@
       "uk": "У протоколі Гран-прі Франції 1968 року в Руані записано переможця: Жакі Ікс на Ferrari випередив Джона Сертіса та Джекі Стюарта. Але підсумкова таблиця не може розповісти все про 7 липня. На початку гонки Жо Шлессер загинув у аварії на Honda. В офіційному результаті він значиться як пілот, що вибув після двох кіл; історичні матеріали та архів Revs Institute підтверджують трагічні обставини. Перемога Ікса заслуговує на місце в історії Формули-1. Ім’я Шлессера — теж. Історія Руана повинна зберегти обидві пам’яті: про здобуту перемогу і про людину, яка не повернулася з гонки."
     },
     "year": "1968",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/06-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1968/10/the-french-grand-prix-9/"
+    ],
+    "historical_source_locator": "1968 French GP: Ickx in wet weather and Schlesser's fatal accident.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "buddh",
@@ -45,11 +66,19 @@
       "uk": "Феттель здобуває четвертий титул поспіль"
     },
     "description": {
-      "en": "Sebastian Vettel won the 2013 Indian Grand Prix at Buddh and secured his fourth consecutive World Championship. The circuit's brief Formula 1 era produced a defining moment in Red Bull's dominant run.",
-      "uk": "Себастьян Феттель виграв Гран-прі Індії 2013 року на автодромі Будд і здобув четвертий чемпіонський титул поспіль. За коротку історію Формули-1 в Індії траса встигла стати сценою важливого моменту домінування Red Bull."
+      "en": "Sebastian Vettel started the 2013 Indian Grand Prix on pole but stopped for new tyres after only two laps, returning in traffic. His Red Bull was quick enough to regain control, while team-mate Mark Webber pursued a different strategy. A late alternator failure ended Webber's race and prompted the team to reduce electrical demands on Vettel's car. Vettel reached the flag first to claim his fourth consecutive drivers' title; Red Bull secured a fourth straight constructors' crown. Nico Rosberg was second, while Romain Grosjean climbed from seventeenth on the grid to third. The classification records the champions, but the early stop, Webber's retirement and Grosjean's recovery tell the race story.",
+      "uk": "Себастьян Феттель стартував із поулу на Гран-прі Індії 2013 року, але вже після двох кіл змінив шини й повернувся у трафік. Швидкості Red Bull вистачило, щоб знову очолити гонку, поки напарник Марк Веббер їхав за іншою стратегією. Наприкінці відмова генератора зупинила Веббера, і команда зменшила електричне навантаження на боліді Феттеля. Себастьян переміг і здобув четвертий поспіль титул; Red Bull — четвертий Кубок конструкторів. Ніко Росберг фінішував другим, а Ромен Грожан прорвався із сімнадцятого місця на третє. Протокол називає чемпіонів, але ранній піт-стоп, сход Веббера й прорив Грожана пояснюють гонку."
     },
     "year": "2013",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/24691160",
+      "https://www.grandprix.com/races/indian-gp-2013-race-notes-vettel-wins-indian-gp-and-2013-title.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2013 Grandprix.com lap chronology: Vettel early stop, Webber alternator, Grosjean P17 to P3; classification separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "porto",
@@ -58,11 +87,18 @@
       "uk": "Мосс перемагає на вулицях Порту"
     },
     "description": {
-      "en": "Stirling Moss won the 1958 Portuguese Grand Prix on Porto's street circuit. Before modern purpose-built venues became the norm, the World Championship could turn everyday city roads into an international racing stage.",
-      "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1958 року на міській трасі Порту. До поширення спеціалізованих автодромів чемпіонат світу нерідко перетворював звичайні вулиці на арену великих перегонів."
+      "en": "Stirling Moss won the 1958 Portuguese Grand Prix on Porto's public roads in a Vanwall. Mike Hawthorn finished second for Ferrari and recorded the fastest lap, while Stuart Lewis-Evans brought another Vanwall home third. That combination mattered beyond the podium: Moss and Hawthorn were fighting for the drivers' title, and the fastest-lap point was part of the period's scoring system. The city-street setting looks unfamiliar today, but the result belongs to a championship battle that continued beyond Porto.",
+      "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1958 року на міських вулицях Порту за кермом Vanwall. Майк Готорн на Ferrari фінішував другим і встановив найшвидше коло, а Стюарт Льюїс-Еванс привіз ще один Vanwall на третє місце. Це мало значення не лише для подіуму: Мосс і Готорн боролися за титул, а тодішня система нараховувала очко за найшвидше коло. Сьогодні вуличний маршрут здається незвичним, але цей результат був частиною чемпіонської боротьби, що тривала й після Порту."
     },
     "year": "1958",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/09-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/09-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1958-portuguese-grand-prix/"
+    ],
+    "historical_source_locator": "1958 Portuguese GP historical results: Moss, Hawthorn fastest lap and Lewis-Evans",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "jerez",
@@ -71,11 +107,18 @@
       "uk": "Гаккінен перемагає на тлі титульного скандалу"
     },
     "description": {
-      "en": "Mika Häkkinen claimed his first Formula 1 victory at the 1997 European Grand Prix in Jerez. The title contest between Jacques Villeneuve and Michael Schumacher made the season finale unforgettable for reasons beyond the race winner.",
-      "uk": "Міка Гаккінен здобув свою першу перемогу у Формулі-1 на Гран-прі Європи 1997 року в Хересі. Боротьба за титул між Жаком Вільневом і Міхаелем Шумахером зробила фінал сезону пам’ятним не лише завдяки переможцю."
+      "en": "The 1997 European Grand Prix at Jerez had a race winner and a different championship winner. Mika Häkkinen took his first Formula 1 victory for McLaren, but Jacques Villeneuve secured the drivers' title. Villeneuve and Michael Schumacher arrived separated by one point. Their cars collided as Villeneuve challenged for the lead; Schumacher ended in the gravel while the Williams continued. Villeneuve finished third behind Häkkinen and David Coulthard. The podium alone cannot explain why the title was decided here.\n\nQualifying had already produced an extraordinary tie: Villeneuve, Schumacher and Heinz-Harald Frentzen all set 1:21.072, with Villeneuve taking pole because he recorded the time first. Schumacher led the race until Villeneuve attacked on lap 48 and the cars collided. The Williams continued, the Ferrari did not. Afterward the FIA excluded Schumacher from the 1997 drivers' championship standings while leaving his individual race results intact. That sanction is separate from Häkkinen's win and Villeneuve's third place on the day.",
+      "uk": "Гран-прі Європи 1997 року в Хересі мав переможця гонки й іншого переможця чемпіонату. Міка Гаккінен здобув першу перемогу у Формулі-1 за McLaren, а Жак Вільнев став чемпіоном світу. Перед фіналом його й Міхаеля Шумахера розділяло одне очко. Коли Вільнев атакував лідера, машини зіткнулися: Ferrari опинилася в гравії, Williams продовжив рух. Вільнев фінішував третім після Гаккінена та Девіда Култгарда. Сам подіум не пояснює, чому саме тут вирішилася доля титулу.\n\nЩе кваліфікація подарувала незвичну нічию: Вільнев, Шумахер і Гайнц-Гаральд Френтцен показали однакові 1:21,072. Поул дістався Вільневу, бо він установив час першим. Шумахер лідирував, доки на 48-му колі Вільнев не атакував і машини не зіткнулися. Williams продовжив гонку, Ferrari — ні. Пізніше FIA виключила Шумахера із заліку пілотів за сезон 1997 року, але залишила результати окремих гонок. Це окреме рішення, не зміна перемоги Гаккінена чи третього місця Вільнева в Хересі."
     },
     "year": "1997",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/17-europe/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1997/races/17-europe/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/special-article/100-greatest-gps-bookazine/70/58th-1997-european-gp/"
+    ],
+    "historical_source_locator": "1997 European GP retrospective: Villeneuve–Schumacher collision, Häkkinen victory and title Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "dallas",
@@ -84,11 +127,18 @@
       "uk": "Росберг витримує спеку Далласа"
     },
     "description": {
-      "en": "Keke Rosberg won the 1984 Dallas Grand Prix. Formula 1's one-off visit brought the championship to a temporary Texan street circuit, where punishing summer heat became part of the event's reputation.",
-      "uk": "Кеке Росберг виграв Гран-прі Далласа 1984 року. Разовий етап на тимчасовій міській трасі в Техасі запам’ятався не лише гонкою, а й виснажливою літньою спекою."
+      "en": "Dallas had one Formula 1 Grand Prix, and the Texas summer made sure nobody forgot it. In 1984 the temporary Fair Park course was breaking up as the heat punished drivers and machinery. Nigel Mansell started from pole but did not take the victory; Keke Rosberg survived the conditions to win for Williams. The classification gives Rosberg first place, but the story of Dallas is also about a circuit surface that struggled to survive its own race.\n\nA Can-Am race had damaged the surface further, so Sunday warm-up was cancelled while workers patched it. Mansell actually led the first 35 laps before Rosberg passed him; Prost later led too, only to retire after hitting a wall. Rosberg inherited first again. René Arnoux recovered from the back of the grid to finish second, and an exhausted Mansell collapsed while trying to push his stricken Lotus towards the finish.",
+      "uk": "У Далласі Формула-1 провела лише один Гран-прі, але техаське літо зробило його незабутнім. У 1984 році асфальт тимчасової траси у Фейр-Парку руйнувався, а спека виснажувала пілотів і техніку. Найджел Менселл стартував із поулу, та перемогу здобув Кеке Росберг на Williams. У протоколі залишилося його перше місце, а в історії траси — покриття, яке ледве витримало власну гонку.\n\nПісля суботньої гонки Can-Am покриття стало ще гіршим, тому недільну розминку скасували заради термінового ремонту. Менселл утримував лідерство перші 35 кіл, поки його не випередив Росберг; згодом попереду опинився Прост, але після удару об стіну зійшов. Росберг знову став першим. Рене Арну прорвався з хвоста пелотону на друге місце, а виснажений Менселл знепритомнів, намагаючись доштовхати пошкоджений Lotus до фінішу."
     },
     "year": "1984",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport August 1984 period report: Can-Am damage, cancelled warm-up, Mansell 35 laps led, Prost retirement, Arnoux recovery and Mansell collapse.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "sirius",
@@ -97,11 +147,19 @@
       "uk": "Гамільтон виграє дебютний Гран-прі Росії"
     },
     "description": {
-      "en": "Lewis Hamilton won the first Russian Grand Prix of the modern World Championship at the Sochi-area circuit in 2014. The route was built around the Winter Olympics complex and later appears in F1DB under the Sirius circuit identity.",
-      "uk": "Льюїс Гамільтон виграв дебютний сучасний Гран-прі Росії 2014 року на трасі поблизу Сочі. Маршрут пролягав територією олімпійського комплексу; у F1DB його поточний ідентифікатор — Sirius."
+      "en": "The inaugural 2014 Russian Grand Prix took place at the Sochi Olympic Park circuit, later called Sirius in the pinned archive. Nico Rosberg attacked Mercedes team-mate Lewis Hamilton into Turn 2, locked his front tyres and had to pit at the end of the first lap. He then recovered through the field to finish second. Hamilton won, with Valtteri Bottas third, and the Mercedes one-two secured the team's first Formula 1 constructors' title. The later Sirius name does not mean a second 2014 venue. The classification records a Mercedes sweep; the story is Rosberg's early mistake, his recovery and the title the team clinched together.",
+      "uk": "Перший Гран-прі Росії 2014 року відбувся на трасі біля олімпійського парку Сочі, яку закріплений архів згодом називає Sirius. Ніко Росберг атакував напарника по Mercedes Льюїса Гамільтона перед другим поворотом, заблокував передні колеса й наприкінці першого кола змушений був заїхати в бокси. Потім він прорвався крізь пелотон і фінішував другим. Гамільтон переміг, Валттері Боттас став третім, а дубль Mercedes забезпечив команді перший Кубок конструкторів Формули-1. Пізніша назва Sirius не означає, що 2014 року існувала інша траса. Протокол показує успіх Mercedes, а історія — ранню помилку Росберга, його повернення й командний титул."
     },
     "year": "2014",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race-results.yml",
+    "historical_sources": [
+      "https://www.skysports.com/f1/news/9514310/2014-russian-gp-lewis-hamilton-cruises-to-sochi-win-but-rosberg-recovers-to-second",
+      "https://www.motorsport.com/f1/news/hamilton-won-the-first-ever-russian-gp/457488/"
+    ],
+    "historical_source_locator": "2014 Sky Sports and Motorsport.com race reports: Rosberg lap-one flat spot, recovery, Mercedes constructors' crown; later Sirius naming.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "lusail",
@@ -110,11 +168,19 @@
       "uk": "Гамільтон виграє перший Гран-прі Катару"
     },
     "description": {
-      "en": "Lewis Hamilton won Qatar's inaugural Formula 1 Grand Prix at Lusail in 2021. The desert circuit was already familiar to motorcycle racing fans before it became part of the F1 calendar.",
-      "uk": "Льюїс Гамільтон виграв перший Гран-прі Катару Формули-1 на трасі Лусаїл 2021 року. До появи в календарі F1 цей автодром уже був добре знайомий шанувальникам мотоперегонів."
+      "en": "Lewis Hamilton controlled the first Qatar Grand Prix at Lusail in 2021, but the fight for third was shaped by tyre risk. Max Verstappen recovered from a grid penalty to finish second. Fernando Alonso chose a one-stop strategy for Alpine even as punctures struck drivers attempting long stints, including Valtteri Bottas and Lando Norris. Sergio Pérez was closing rapidly, but a late Virtual Safety Car after Nicholas Latifi stopped with tyre trouble eased the pressure. Alonso kept third, his first Formula 1 podium since 2014. The classification lists Hamilton, Verstappen and Alonso; the late drama was whether Alonso's tyres would last until the flag.",
+      "uk": "Льюїс Гамільтон контролював перший Гран-прі Катару в Лусаїлі 2021 року, але боротьбу за третє місце визначав ризик із шинами. Макс Ферстаппен після штрафу на старті прорвався на друге місце. Фернандо Алонсо на Alpine обрав один піт-стоп, хоча на довгих відрізках у кількох суперників, зокрема Валттері Боттаса й Ландо Норріса, пошкоджувалися шини. Серхіо Перес стрімко наздоганяв іспанця, але пізній режим віртуального автомобіля безпеки після зупинки Ніколаса Латіфі зменшив тиск. Алонсо втримав третє місце — перший подіум із 2014 року. Протокол називає призерів, а напруга останніх кіл була в тому, чи витримають шини."
     },
     "year": "2021",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+    "historical_sources": [
+      "https://www.bbc.co.uk/sport/formula1/59367052",
+      "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2021 Grandprix.com analysis: one-stop Alonso, punctures, Latifi-triggered VSC, Perez pursuit; classification separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "yeongam",
@@ -123,11 +189,19 @@
       "uk": "Алонсо перемагає в дощовому дебюті Кореї"
     },
     "description": {
-      "en": "Fernando Alonso won the inaugural Korean Grand Prix at Yeongam in 2010. Wet conditions and interrupted running gave the new circuit a dramatic introduction to the World Championship.",
-      "uk": "Фернандо Алонсо виграв дебютний Гран-прі Кореї в Йонамі 2010 року. Дощ і перерви перетворили перше знайомство автодрому з чемпіонатом світу на справжню драму."
+      "en": "The first Korean Grand Prix at Yeongam in 2010 began behind the safety car in heavy rain, was interrupted by a red flag and resumed in poor visibility. Red Bull had locked out the front row, but Mark Webber spun into the barrier and his car collected Nico Rosberg on its way back across the track. Sebastian Vettel still looked set for victory until his engine failed late in the race. Fernando Alonso inherited the lead and brought his Ferrari home ahead of Lewis Hamilton and Felipe Massa as darkness approached. The win put Alonso at the top of the championship standings. A result table shows a Ferrari victory; the race reports explain how both Red Bulls disappeared.",
+      "uk": "Перший Гран-прі Кореї в Йонамі 2010 року розпочався за автомобілем безпеки під зливою, зупинився через червоний прапор і поновився за поганої видимості. Red Bull зайняла весь перший ряд, але Марк Веббер розвернувся, ударився об бар’єр і, повертаючись на трасу, зачепив Ніко Росберга. Себастьян Феттель наближався до перемоги, поки наприкінці гонки не відмовив його двигун. Фернандо Алонсо отримав лідерство й довів Ferrari до фінішу попереду Льюїса Гамільтона та Феліпе Масси, коли вже сутеніло. Перемога вивела Алонсо на вершину чемпіонату. Таблиця фіксує успіх Ferrari, а репортажі пояснюють, як Red Bull втратила обидві машини."
     },
     "year": "2010",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml",
+    "historical_sources": [
+      "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html",
+      "https://www.grandprix.com/races/korean-gp-2010-race-notes-webber-spins-vettel-blows-up-alonso-wins-korean-gp.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2010 Grandprix.com period lap notes: red flag, Webber/Rosberg collision, Vettel engine failure; F1DB for classification.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "bugatti",
@@ -136,11 +210,19 @@
       "uk": "Бребем перемагає в Ле-Мані — але не на трасі 24 годин"
     },
     "description": {
-      "en": "Jack Brabham won the 1967 French Grand Prix on the Bugatti circuit at Le Mans. This was the shorter permanent layout, not the famous full 24 Hours of Le Mans route — an easy distinction for new fans to miss.",
-      "uk": "Джек Бребем виграв Гран-прі Франції 1967 року на трасі Bugatti в Ле-Мані. Це була коротша постійна конфігурація, а не знамените повне кільце «24 годин Ле-Мана» — важлива відмінність для нових уболівальників."
+      "en": "Le Mans is famous for its 24-hour race, but the 1967 French Grand Prix did not use that enormous circuit. Formula 1 raced on the shorter Bugatti layout, where Jack Brabham took victory. The venue shared a name and a setting with the endurance classic, not the same lap. That distinction matters: this was a single World Championship visit to a compact permanent course, not an F1 race around the full Le Mans roads.\n\nThe race itself offered a sharper story than the venue's name suggests. Jim Clark and Graham Hill put their new Lotus 49s at the front, but both stopped with final-drive failures. Dan Gurney's Eagle then fell out of contention with a fuel-system fault. Brabham and team-mate Denny Hulme finished first and second, with Jackie Stewart third. The contemporary report was scathing about the tight, stop-start layout: the French Grand Prix had been placed on a driving-school circuit rather than the long Sarthe course.",
+      "uk": "Ле-Ман відомий передусім добовою гонкою, але Гран-прі Франції 1967 року проходив не на її величезному кільці. Формула-1 змагалася на коротшій трасі Bugatti, де переміг Джек Бребем. Місце й назва були спільними з легендарним марафоном, а конфігурація — ні. Це важлива різниця: чемпіонат світу один раз приїхав на компактний постійний автодром, а не на повний маршрут «24 годин Ле-Мана».\n\nСама гонка мала гостріший сюжет, ніж підказує назва траси. Джим Кларк і Грем Гілл вивели нові Lotus 49 уперед, але обидва зійшли через поломки головної передачі. Згодом несправність паливної системи зупинила Eagle Дена Герні. Джек Бребем переміг, його напарник Денні Гальм став другим, а Джекі Стюарт — третім. У тогочасному репортажі тісну конфігурацію з частими розгонами й гальмуваннями різко критикували: Гран-прі Франції провели на навчальній трасі, а не на довгому кільці Сарт."
     },
     "year": "1967",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1967/races/05-france/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/french-gp-1967.html",
+      "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": " Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "mosport",
@@ -149,11 +231,18 @@
       "uk": "Ревсон перемагає в Канаді"
     },
     "description": {
-      "en": "Peter Revson won the 1973 Canadian Grand Prix at Mosport. Before Montréal became the event's familiar home, Canada's World Championship race also visited this hilly Ontario circuit.",
-      "uk": "Пітер Ревсон виграв Гран-прі Канади 1973 року на трасі Mosport. До того як звичним домом етапу став Монреаль, чемпіонат світу відвідував цей автодром серед пагорбів Онтаріо."
+      "en": "Peter Revson officially won the 1973 Canadian Grand Prix at Mosport, but the result followed a bewildering wet race. Changing conditions prompted tyre stops, then an accident brought out a pace car that gathered the wrong part of the field. Teams and officials struggled to establish who was leading. The contemporary report reconstructs the lap charts and discusses how the error hurt Emerson Fittipaldi. The classification records Revson's win; the race story is why the order was so difficult to establish in the first place.",
+      "uk": "Пітер Ревсон офіційно виграв Гран-прі Канади 1973 року на Mosport, але перед цим відбулася надзвичайно заплутана дощова гонка. Через зміну погоди команди міняли шини, а після аварії автомобіль безпеки зібрав за собою не ту частину пелотону. Навіть команди й судді не могли впевнено визначити лідера. Тогочасний репортаж відновлює порядок за таблицями кіл і пояснює, як помилка вплинула на Емерсона Фіттіпальді. Протокол фіксує перемогу Ревсона; історія гонки — про те, чому порядок машин виявився таким складним для визначення."
     },
     "year": "1973",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/14-canada/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1973/races/14-canada/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/november-1973/50/canadian-grand-prix-8/"
+    ],
+    "historical_source_locator": "1973 Canadian GP contemporary report: wet tyre stops, pace-car placement and lap-chart dispute",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "madring",
@@ -162,11 +251,18 @@
       "uk": "Новий мадридський розділ іспанських перегонів"
     },
     "description": {
-      "en": "The 2026 Spanish Grand Prix is recorded at Madring, with Kimi Antonelli first in the pinned F1DB race classification. This new circuit marks a different chapter from Spain's long Barcelona-era World Championship history.",
-      "uk": "У закріпленому архіві F1DB переможцем Гран-прі Іспанії 2026 року на Madring зазначений Кімі Антонеллі. Новий мадридський автодром відкрив інший розділ історії чемпіонату після багатьох сезонів у Барселоні."
+      "en": "Madring's inaugural Spanish Grand Prix in 2026 took place on a new Madrid layout, not the old Jarama circuit. Kimi Antonelli won for Mercedes, but pit-stop timing under a Virtual Safety Car changed the race. Pole-sitter Lando Norris had just passed the pit entry when the slowdown began, while rivals could stop under reduced speed. Norris stopped later and lost more time in the pits. Max Verstappen finished second and Norris third, separated by 0.738 seconds. The classification names Antonelli; the report explains why the early leader ended up chasing.",
+      "uk": "Перший Гран-прі Іспанії на Madring у 2026 році пройшов на новій мадридській трасі, а не на старому автодромі Харама. Кімі Антонеллі переміг за Mercedes, але вирішальним став момент піт-стопів під час віртуального автомобіля безпеки. Володар поулу Ландо Норріс уже минув в’їзд у бокси, коли оголосили уповільнення; суперники змогли зупинитися за нижчої швидкості. Норріс заїхав пізніше й додатково втратив час. Макс Ферстаппен фінішував другим, Норріс — третім, між ними було 0,738 секунди. Протокол називає Антонеллі; репортаж пояснює, чому ранній лідер опинився позаду."
     },
     "year": "2026",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2026/races/14-spain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2026/races/14-spain/race-results.yml",
+    "historical_sources": [
+      "https://www.grandprix.com/races/spanish-gp-2026-race-notes.html"
+    ],
+    "historical_source_locator": "13 September 2026 race notes: VSC pit-entry timing and Verstappen/Norris margin",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "sebring",
@@ -175,11 +271,17 @@
       "uk": "Прорив Брюса Макларена у Флориді"
     },
     "description": {
-      "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring. The Florida endurance-racing venue hosted a memorable Formula 1 championship visit before the US Grand Prix found more lasting homes.",
-      "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу. Флоридський автодром, відомий гонками на витривалість, прийняв пам’ятний етап Формули-1 ще до появи триваліших американських домівок Гран-прі."
+      "en": "At Sebring in 1959, the race winner and the new world champion were different men. Bruce McLaren took the United States Grand Prix for Cooper, but Jack Brabham's fourth place was enough to secure the drivers' title. Brabham's car ran short of fuel near the finish, and he pushed it to the line. The classification records McLaren's victory; the image that endures is a championship contender getting his car home by sheer effort.",
+      "uk": "У Себрингу 1959 року переможець гонки й новий чемпіон світу були різними людьми. Брюс Макларен виграв Гран-прі США на Cooper, але Джеку Бребему вистачило четвертого місця для титулу. Біля фінішу в його машині закінчилося пальне, і він штовхав її до лінії. Протокол фіксує перемогу Макларена, а найвиразніший образ цього дня — претендент на чемпіонство, який власними силами доводить автомобіль до фінішу."
     },
     "year": "1959",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/09-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "detroit",
@@ -188,11 +290,19 @@
       "uk": "Вотсон проривається в Детройті"
     },
     "description": {
-      "en": "John Watson won the first Detroit Grand Prix in 1982. The downtown street course added an American city-centre challenge to Formula 1's calendar, with concrete barriers never far away.",
-      "uk": "Джон Вотсон виграв перший Гран-прі Детройта 1982 року. Міська траса в центрі американського автомобільного міста додала до календаря Формули-1 нове випробування, де бетонні бар’єри були зовсім поруч."
+      "en": "John Watson started Detroit's inaugural 1982 Grand Prix from seventeenth. The race was stopped early and resumed as a two-part contest; tyre choices and mechanical trouble kept changing the order. Watson fought through traffic, passing Cheever, Lauda and Pironi before catching Keke Rosberg, whose Williams had gearbox problems. By lap 37 Watson led on the road, and he eventually won ahead of Eddie Cheever and Didier Pironi. The race ended after 62 laps at the two-hour limit, short of its scheduled distance. The grid and result alone cannot convey how Watson turned a difficult street circuit into the setting for one of his greatest recoveries.",
+      "uk": "Джон Вотсон стартував у першому Гран-прі Детройта 1982 року сімнадцятим. Гонку рано зупинили й поновили як змагання у двох частинах; вибір шин і технічні проблеми постійно змінювали порядок. Вотсон прорвався крізь пелотон, випередив Чівера, Лауду й Піроні, а потім наздогнав Кеке Росберга, у Williams якого виникли проблеми з коробкою передач. На 37-му колі Вотсон уже лідирував на трасі й зрештою переміг. Едді Чівер фінішував другим, Дідьє Піроні — третім. Через двогодинний ліміт проїхали 62 кола, менше запланованого. Стартова й фінішна позиції не передають, як Вотсон прорвався вузькими міськими вулицями."
     },
     "year": "1982",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+      "https://www.detroitgp.com/event-info/recaps/formula-1"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "1982 Motor Sport period report and Detroit GP historical recap: two-part race, Watson P17, lap-37 lead, two-hour limit.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "zeltweg",
@@ -201,11 +311,19 @@
       "uk": "Єдина перемога Лоренцо Бандіні"
     },
     "description": {
-      "en": "Lorenzo Bandini won the 1964 Austrian Grand Prix at Zeltweg, his only World Championship race victory. The event ran on an airfield course, decades before the modern Spielberg circuit became Austria's F1 landmark.",
-      "uk": "Лоренцо Бандіні виграв Гран-прі Австрії 1964 року в Цельтвезі — свою єдину перемогу на етапі чемпіонату світу. Гонка відбулася на аеродромній трасі задовго до появи сучасного автодрому в Шпільберзі."
+      "en": "Austria's 1964 World Championship Grand Prix ran on an airfield, not on the permanent Spielberg circuit familiar today. The rough Zeltweg surface punished cars throughout the afternoon. Lorenzo Bandini brought his Ferrari home first for his only Formula 1 championship victory, ahead of Richie Ginther and Bob Anderson. The result was a career landmark for Bandini and a reminder of how improvised some early Grand Prix venues could be.\n\nThe period report describes the mechanical chain behind Bandini's win: Surtees retired with broken rear suspension, Clark's Lotus lost a driveshaft, and Gurney surrendered the lead when a front suspension mounting failed. Bandini kept his Ferrari V6 running on the punishing concrete while faster challengers fell away. Ginther was second and Anderson third, despite trouble in Anderson's own driveline.",
+      "uk": "Гран-прі Австрії 1964 року відбувся на аеродромі, а не на постійному автодромі в Шпільберзі, знайомому сьогодні. Нерівне покриття Цельтвега безжально випробовувало машини. Лоренцо Бандіні привів Ferrari до своєї єдиної перемоги в чемпіонаті Формули-1, випередивши Річі Гінтера й Боба Андерсона. Для Бандіні це був головний гоночний тріумф, а для історії спорту — нагадування, наскільки незвичними бували ранні майданчики Гран-прі.\n\nТогочасний репортаж відновлює технічну послідовність перемоги Бандіні: Сертіс зійшов через поломку задньої підвіски, Lotus Кларка втратив піввісь, а Герні поступився лідерством після відмови кріплення передньої підвіски. Ferrari V6 Бандіні витримала нерівний бетон, поки швидші суперники вибували. Гінтер став другим, Андерсон — третім, хоча й його машина мала проблеми з приводом."
     },
     "year": "1964",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1964/races/07-austria/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/brief-history-austrian-grand-prix/",
+      "https://www.motorsportmagazine.com/archive/article/october-1964/39/austrian-grand-prix-4/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport October 1964 period report: Surtees rear suspension, Clark driveshaft, Gurney front mounting and Bandini's V6 Ferrari survival.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "mugello",
@@ -214,11 +332,19 @@
       "uk": "Гамільтон перемагає на дебютному Гран-прі Тоскани"
     },
     "description": {
-      "en": "Lewis Hamilton won the 2020 Tuscan Grand Prix at Mugello. The fast, flowing Italian circuit made a rare Formula 1 championship appearance in an unusually rearranged season.",
-      "uk": "Льюїс Гамільтон виграв Гран-прі Тоскани 2020 року в Муджелло. Швидкий і плавний італійський автодром отримав рідкісний шанс прийняти етап чемпіонату світу в незвично перебудованому сезоні."
+      "en": "Mugello's first championship Grand Prix in 2020 was repeatedly interrupted. An opening-lap collision brought out the safety car; a pile-up on the main straight at the restart caused the first red flag. At the next standing start Lewis Hamilton took the lead from Mercedes team-mate Valtteri Bottas. Later Lance Stroll crashed at the fast Arrabbiata section, bringing a second stoppage and one final standing start. Hamilton held on to win, Bottas finished second, and Alex Albon passed Daniel Ricciardo late to claim his first Formula 1 podium. The result is a Mercedes one-two, but the real story is how the repeated restarts reshaped the fight behind them.",
+      "uk": "Перший заліковий Гран-прі в Муджелло 2020 року постійно переривався. Аварія на першому колі викликала автомобіль безпеки, а масове зіткнення на головній прямій під час рестарту — перший червоний прапор. Після нового старту з місця Льюїс Гамільтон випередив напарника по Mercedes Валттері Боттаса. Згодом Ленс Стролл розбив машину у швидкісній секції Arrabbiata: гонку знову зупинили й провели ще один старт. Гамільтон утримав лідерство, Боттас став другим, а Алекс Албон наприкінці обігнав Даніеля Ріккардо й уперше піднявся на подіум. Протокол показує дубль Mercedes, але справжня історія — як повторні старти змінили боротьбу позаду."
     },
     "year": "2020",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/09-tuscany/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/09-tuscany/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/",
+      "https://www.motorsport.com/f1/news/tuscan-gp-race-report-hamilton-bottas/4874458/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2020 Motorsport.com race report: two separate red-flag causes and Albon passing Ricciardo; official result separate.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "phoenix",
@@ -227,11 +353,17 @@
       "uk": "Сенна й Алезі оживляють Фінікс"
     },
     "description": {
-      "en": "Ayrton Senna won the 1990 United States Grand Prix in Phoenix. His fight with young Jean Alesi is remembered as a rare bright moment on the Arizona street circuit.",
-      "uk": "Айртон Сенна виграв Гран-прі США 1990 року у Фініксі. Його боротьба з молодим Жаном Алезі стала одним із найяскравіших епізодів історії міської траси в Аризоні."
+      "en": "Jean Alesi gave the 1990 United States Grand Prix in Phoenix an unexpected leader. The young Frenchman swept his Tyrrell into first place and held off the established stars for 34 laps. Ayrton Senna eventually caught him, but even a pass did not settle the duel immediately: Alesi fought back before Senna made the winning move stick. Senna won and Alesi finished second. The story is not just who won, but how hard the newcomer made him work for it.",
+      "uk": "Жан Алезі подарував Гран-прі США 1990 року у Фініксі несподіваного лідера. Молодий француз вивів Tyrrell на перше місце й утримував його 34 кола. Айртон Сенна зрештою наздогнав суперника, але навіть обгін не завершив дуель: Алезі відповів контратакою, перш ніж Сенна остаточно закріпився попереду. Сенна переміг, Алезі став другим. Ця історія не лише про ім’я переможця, а й про те, як дорого новачок змусив його заплатити за перше місце."
     },
     "year": "1990",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/april-1990/5/phoenix-revivial/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "pescara",
@@ -240,11 +372,18 @@
       "uk": "Мосс підкорює найдовшу трасу чемпіонату"
     },
     "description": {
-      "en": "Stirling Moss won the 1957 Pescara Grand Prix on the extraordinary public-road circuit in Italy. Its roughly 25-kilometre lap is the longest layout ever used for a Formula 1 World Championship race.",
-      "uk": "Стірлінг Мосс виграв Гран-прі Пескари 1957 року на незвичній італійській трасі звичайними дорогами. Коло завдовжки приблизно 25 кілометрів залишається найдовшим в історії гонок чемпіонату світу Формули-1."
+      "en": "The 1957 Pescara Grand Prix was only eighteen laps long, yet Stirling Moss needed nearly three hours to win it. One lap of the Italian public-road course stretched for roughly 25 kilometres, far beyond anything on today's calendar. The distance between corners and the sheer length of the route shaped the race as much as the finishing order. Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.\n\nThe period report records a decisive mechanical sequence: Musso's Ferrari split its oil tank on lap ten, leaving oil on the road before its engine seized. Fangio slid on that oil and damaged a rear wheel against the kerbstones, then lost time returning for repairs. Moss could even stop to replenish oil and still win by more than three minutes. The extraordinary lap length magnified each delay.",
+      "uk": "Гран-прі Пескари 1957 року тривав лише вісімнадцять кіл, але Стірлінгу Моссу знадобилося майже три години для перемоги. Одне коло італійськими дорогами простягалося приблизно на 25 кілометрів — незрівнянно більше, ніж на сучасних трасах. Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок. Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола.\n\nТогочасний репортаж описує вирішальну послідовність поломок: на десятому колі в Ferrari Муссо тріснув масляний бак, олива потрапила на дорогу, а двигун заклинило. Фанхіо послизнувся на цій оливі, пошкодив заднє колесо об бордюр і втратив час на поверненні до боксів. Мосс навіть зупинявся, щоб долити оливу, але переміг із перевагою понад три хвилини. Довжина кола збільшувала ціну кожної затримки."
     },
     "year": "1957",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport September 1957 period report: Musso oil tank rupture on lap ten, Fangio wheel damage on oil and Moss oil stop despite large winning margin.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "montjuic",
@@ -253,11 +392,17 @@
       "uk": "Скорочена гонка трагічного вікенду"
     },
     "description": {
-      "en": "Jochen Mass won the 1975 Spanish Grand Prix at Montjuïc in Barcelona. The race was stopped after a fatal accident, leaving an enduring reminder of the safety failures of that era.",
-      "uk": "Йохен Масс виграв Гран-прі Іспанії 1975 року на трасі Монжуїк у Барселоні. Гонку зупинили після смертельної аварії, і цей вікенд залишився болісним нагадуванням про проблеми безпеки тієї епохи."
+      "en": "The 1975 Spanish Grand Prix at Montjuïc cannot be remembered as an ordinary victory for Jochen Mass. Safety concerns had already overshadowed the weekend when a car crashed into the spectator area and people were killed. Officials stopped the race, and reduced points were awarded. Lella Lombardi's sixth place became historically significant, but neither the points nor the podium should push the victims out of the account. This is a story about a race and a grave failure of safety.",
+      "uk": "Гран-прі Іспанії 1975 року на Монжуїку не можна згадувати як звичайну перемогу Йохена Масса. Ще до старту вікенд супроводжували суперечки про безпеку, а під час гонки автомобіль вилетів у зону глядачів і люди загинули. Перегони зупинили, а очки нарахували в зменшеному обсязі. Шосте місце Лелли Ломбарді стало історичним, але ні очки, ні подіум не повинні затіняти пам’ять про загиблих. Це історія гонки та тяжкого провалу безпеки."
     },
     "year": "1975",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1975/races/04-spain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/june-1975/36/the-spanish-grand-prix-catastrophic/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "monsanto",
@@ -266,11 +411,18 @@
       "uk": "Мосс перемагає в лісопарку Лісабона"
     },
     "description": {
-      "en": "Stirling Moss won the 1959 Portuguese Grand Prix at Monsanto in Lisbon. For one championship weekend, roads through a city park became a Formula 1 circuit.",
-      "uk": "Стірлінг Мосс виграв Гран-прі Португалії 1959 року на трасі Монсанту в Лісабоні. На один вікенд чемпіонату світу дороги міського лісопарку перетворилися на трасу Формули-1."
+      "en": "Lisbon's Monsanto Park hosted the 1959 Portuguese Grand Prix on roads that were usually part of the city, not a permanent racecourse. Stirling Moss drove a privately entered Cooper to victory and finished a lap ahead of the other classified runners. That margin tells you how commanding his afternoon was. The park did not become a regular Formula 1 venue, but for one weekend its roads belonged to a championship race that Moss controlled.\n\nMoss took pole, led all 62 laps and eventually lapped even Masten Gregory in second place; Dan Gurney finished third. Jack Brabham, still a championship rival, crashed while trying to lap a slower car and escaped injury. The contemporary account also describes cobbled crossings, blind bends and steep changes of elevation. This was not a featureless street procession: Moss made a difficult public-road course look deceptively manageable.",
+      "uk": "Лісабонський парк Монсанту прийняв Гран-прі Португалії 1959 року на дорогах, які зазвичай були частиною міста, а не постійного автодрому. Стірлінг Мосс на приватному Cooper переміг, випередивши інших класифікованих пілотів на коло. Цей розрив добре показує, наскільки впевнено він провів гонку. Парк не став постійною домівкою Формули-1, але на один вікенд його дороги перетворилися на трасу чемпіонату світу.\n\nМосс здобув поул, пролідирував усі 62 кола й зрештою обігнав на коло навіть Мастена Грегорі, який фінішував другим; третім став Ден Герні. Джек Бребем, один із суперників у чемпіонаті, розбив машину під час спроби обігнати колового, але не постраждав. Тогочасний репортаж згадує бруківку, сліпі повороти й круті перепади висот. Це не була безлика процесія міськими вулицями: Мосс змусив складну дорожню трасу виглядати майже простою."
     },
     "year": "1959",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/07-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/07-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": " Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "valencia",
@@ -279,11 +431,19 @@
       "uk": "Неймовірний домашній прорив Алонсо"
     },
     "description": {
-      "en": "Fernando Alonso won the 2012 European Grand Prix on Valencia's streets after starting eleventh. The Spanish driver's comeback gave the port-side city circuit one of its defining Formula 1 memories.",
-      "uk": "Фернандо Алонсо виграв Гран-прі Європи 2012 року на вулицях Валенсії, стартувавши одинадцятим. Його прорив подарував міській трасі біля порту один із найвідоміших моментів її історії."
+      "en": "Fernando Alonso started the 2012 European Grand Prix in Valencia from eleventh, while Sebastian Vettel disappeared into the distance from pole. Alonso fought through the field before a safety car erased Vettel's advantage. At the restart the Ferrari passed Romain Grosjean; then Vettel's Red Bull stopped with an alternator failure. Grosjean later retired with a similar problem, leaving Alonso to manage his tyres and the lead. Kimi Räikkönen finished second, while Michael Schumacher claimed his only podium after returning to Formula 1. The result shows a home victory; the turning points were Alonso's overtakes, the safety-car reset and the failures that removed the cars ahead.",
+      "uk": "Фернандо Алонсо стартував у Гран-прі Європи 2012 року у Валенсії одинадцятим, а Себастьян Феттель із поулу швидко відривався. Алонсо пробивався вперед, поки автомобіль безпеки не знищив перевагу лідера. Після рестарту Ferrari випередила Ромена Грожана, а згодом Red Bull Феттеля зупинився через несправність генератора. Пізніше з подібної причини зійшов і Грожан. Алонсо залишилося берегти шини та лідерство. Кімі Ряйкконен фінішував другим, а Міхаель Шумахер здобув свій єдиний подіум після повернення у Формулу-1. Протокол показує домашню перемогу, а вирішальними стали обгони Алонсо, рестарт і поломки машин попереду."
     },
     "year": "2012",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/",
+      "https://www.bbc.co.uk/sport/formula1/18569752"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2012 BBC period report and Grandprix.com alternator report: Alonso passing Grosjean after safety car, Vettel/Grosjean failures.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "portimao",
@@ -292,11 +452,19 @@
       "uk": "Гамільтон встановлює новий рекорд перемог"
     },
     "description": {
-      "en": "Lewis Hamilton won the 2020 Portuguese Grand Prix at Portimão for his 92nd Formula 1 victory, moving past Michael Schumacher's previous record. The Algarve circuit hosted a major milestone on its championship debut.",
-      "uk": "Льюїс Гамільтон виграв Гран-прі Португалії 2020 року в Портімані, здобувши 92-гу перемогу у Формулі-1 та перевершивши попередній рекорд Міхаеля Шумахера. Дебют Алгарве в чемпіонаті став історичним."
+      "en": "Light rain made the opening laps of the 2020 Portuguese Grand Prix at Portimão unexpectedly slippery. Lewis Hamilton and Valtteri Bottas struggled to warm their medium tyres, while Carlos Sainz used the grip of his soft-tyred McLaren to take the lead on lap two. As conditions improved, the Mercedes pair caught him. Hamilton passed Bottas for the lead on lap 20 and went on to take his 92nd Formula 1 victory, surpassing Michael Schumacher's previous record. Bottas finished second and Max Verstappen third. The record is the headline, but the changing grip and Sainz's brief lead explain why the outcome did not look inevitable at the start.",
+      "uk": "Невеликий дощ на старті Гран-прі Португалії 2020 року зробив перші кола в Портімані слизькими. Льюїс Гамільтон і Валттері Боттас не могли швидко прогріти шини середньої жорсткості, а Карлос Сайнс на McLaren із м’якими шинами вирвався в лідери вже на другому колі. Коли зчеплення покращилося, Mercedes наздогнали його. На 20-му колі Гамільтон випередив Боттаса й довів гонку до своєї 92-ї перемоги у Формулі-1, перевершивши рекорд Міхаеля Шумахера. Боттас став другим, Макс Ферстаппен — третім. Рекорд залишився головним заголовком, але мінливе зчеплення й коротке лідерство Сайнса пояснюють, чому результат не здавався неминучим."
     },
     "year": "2020",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/",
+      "https://www.grandprix.com/races/portuguese-gp-2020-race-analysis.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "2020 Grandprix.com race analysis: Sainz leads lap two; Hamilton overtakes Bottas lap 20; 92nd win independently reported.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "nivelles",
@@ -305,11 +473,19 @@
       "uk": "Фіттіпальді перемагає на недовговічній бельгійській трасі"
     },
     "description": {
-      "en": "Emerson Fittipaldi won the 1972 Belgian Grand Prix at Nivelles. The flat Belgian circuit hosted the championship only briefly, a contrast with the much older and more dramatic Spa-Francorchamps.",
-      "uk": "Емерсон Фіттіпальді виграв Гран-прі Бельгії 1972 року в Нівелі. Рівнинний автодром ненадовго став домівкою чемпіонату — на відміну від значно старішої та рельєфнішої Спа-Франкоршам."
+      "en": "Belgium's Grand Prix returned in 1972 on a flat new circuit at Nivelles rather than the old, fast Spa road course. Emerson Fittipaldi took the victory after passing Clay Regazzoni early in the race. The switch of venue was about more than scenery: it reflected a sport wrestling with the dangers of its older circuits. Nivelles never became a beloved fixture, but its brief Formula 1 chapter captures a moment when safety was changing the map.\n\nFittipaldi had pole but lost the lead at the start. Clay Regazzoni led the opening eight laps; the Lotus driver moved past on lap nine and pulled away. François Cevert finished second and Denny Hulme third, while Chris Amon set the fastest lap without reaching the podium. Jackie Stewart was absent on medical advice, so Cevert carried Tyrrell's race alone. The result is not simply a victory on a safer circuit: it was a race shaped by an early pass and a very different field from the previous Belgian Grand Prix at Spa.",
+      "uk": "Гран-прі Бельгії повернувся 1972 року на нову рівнинну трасу Нівель замість старого швидкісного кільця Спа. Емерсон Фіттіпальді переміг, обійшовши Клея Регаццоні на початку гонки. Зміна місця означала більше, ніж інший краєвид: Формула-1 шукала відповідь на небезпеки своїх історичних трас. Нівель так і не став улюбленим постійним етапом, але його коротка історія показує, як питання безпеки змінювали географію чемпіонату.\n\nФіттіпальді стартував із поулу, але втратив лідерство на старті. Перші вісім кіл попереду їхав Клей Регаццоні; на дев'ятому пілот Lotus вийшов уперед і почав відриватися. Франсуа Север фінішував другим, Денні Гальм — третім, а Кріс Еймон показав найшвидше коло, так і не потрапивши на подіум. Джекі Стюарт пропустив етап за рекомендацією лікарів, тому Север сам представляв Tyrrell у гонці. За сухим результатом стоять ранній обгін і зовсім інший склад боротьби, ніж на попередньому бельгійському Гран-прі у Спа."
     },
     "year": "1972",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1972/races/05-belgium/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1972/races/05-belgium/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/july-1972/34/the-belgian-formula-one-race/",
+      "https://www.grandprix.com/races/belgian-gp-1972.html"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": " Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "pedralbes",
@@ -318,11 +494,18 @@
       "uk": "Фанхіо перемагає в іспанському фіналі"
     },
     "description": {
-      "en": "Juan Manuel Fangio won the 1951 Spanish Grand Prix at Barcelona's Pedralbes street circuit, securing his first Formula 1 World Championship. The city's racing history predates the modern Catalunya circuit by decades.",
-      "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Іспанії 1951 року на міській трасі Педральбес у Барселоні та здобув свій перший титул чемпіона світу. Гоночна історія міста почалася задовго до сучасної Каталуньї."
+      "en": "The 1951 Spanish Grand Prix on Barcelona's Pedralbes streets decided the drivers' championship. Alberto Ascari took pole for Ferrari, but tyre problems undermined his race. Juan Manuel Fangio moved ahead in an Alfa Romeo and won, with José Froilán González second and Giuseppe Farina third. The victory secured Fangio's first world title. This was a fast city-road course, decades before the modern Catalunya circuit. The classification shows the podium; the period report explains how Ferrari's tyre troubles helped shape the title decider.\n\nAscari's qualifying speed did not survive the tyre demands of race day. Ferrari's rear tyres began to fail almost immediately, forcing stops that took its championship contender out of the lead fight. Fangio passed Ascari early, then controlled the race in his Alfa Romeo. González recovered second for Ferrari and Farina finished third. The decisive contrast was not simply Alfa Romeo versus Ferrari horsepower: one team's tyre trouble changed the title arithmetic.",
+      "uk": "Гран-прі Іспанії 1951 року на вулицях Педральбеса в Барселоні вирішив долю чемпіонства. Альберто Аскарі здобув поул на Ferrari, але проблеми з шинами зіпсували його гонку. Хуан-Мануель Фанхіо вийшов уперед на Alfa Romeo й переміг, другим став Хосе-Фройлан Гонсалес, третім — Джузеппе Фаріна. Ця перемога принесла Фанхіо перший титул. Тоді гонку проводили на швидких міських дорогах, задовго до появи сучасної Каталуньї. Протокол показує подіум, а тогочасний репортаж пояснює, як труднощі Ferrari вплинули на вирішальний етап.\n\nШвидкість Аскарі в кваліфікації не витримала випробування гоночними шинами. Задні покришки Ferrari почали руйнуватися майже відразу, змушуючи пілотів зупинятися й позбавляючи претендента на титул шансів боротися за лідерство. Фанхіо обігнав Аскарі на початку гонки й далі контролював її на Alfa Romeo. Гонсалес повернув Ferrari друге місце, Фаріна став третім. Вирішальною була не лише потужність Alfa Romeo проти Ferrari: проблеми з гумою змінили хід чемпіонської боротьби."
     },
     "year": "1951",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1951/races/08-spain/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1951/races/08-spain/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/november-1951/35/gran-premio-de-espana/"
+    ],
+    "historical_source_locator": "1951 Spanish GP contemporary report: Ascari pole, Ferrari tyres and Fangio title Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "riverside",
@@ -331,11 +514,18 @@
       "uk": "Мосс перемагає в каліфорнійській пустелі"
     },
     "description": {
-      "en": "Stirling Moss won the 1960 United States Grand Prix at Riverside. The California road course hosted just one World Championship Grand Prix, showing how far America's F1 venues shifted across the decades.",
-      "uk": "Стірлінг Мосс виграв Гран-прі США 1960 року в Ріверсайді. Каліфорнійський автодром прийняв лише один заліковий етап чемпіонату світу — ще один приклад мінливої американської географії Формули-1."
+      "en": "Riverside staged only one World Championship United States Grand Prix, in 1960, and Stirling Moss won it for Rob Walker's team. The California circuit's short Formula 1 history conceals a lively race: Jack Brabham fought back after trouble, while Moss stayed in command at the front. The result sheet records a single winner. The fuller story shows how the American Grand Prix was still searching for a lasting home and how much happened during its brief visit.\n\nBrabham actually led at the start, but petrol overflowed from his Cooper's tank onto the hot exhaust and ignited. Two stops to diagnose and cure the problem let Moss take command. Gurney and Bonnier also lost ground to mechanical faults; Ireland and McLaren completed the podium, while Brabham recovered to fourth. The race changed through repairs and retirements, not a simple lights-to-flag procession.",
+      "uk": "Ріверсайд прийняв лише один заліковий Гран-прі США — у 1960 році, коли Стірлінг Мосс переміг за команду Роба Вокера. За короткою історією каліфорнійської траси ховається насичена гонка: Джек Бребем повертався в боротьбу після проблем, а Мосс утримував лідерство. Протокол називає одного переможця. Повніша історія показує, як американський Гран-прі ще шукав постійну домівку і скільки подій умістив один візит.\n\nНасправді на старті лідирував Бребем, але пальне з бака його Cooper потрапляло на гарячий вихлоп і спалахувало. Дві зупинки для пошуку й усунення причини дозволили Моссу вийти вперед. Герні та Бонньє теж втратили шанси через технічні проблеми; Айрленд і Макларен доповнили подіум, а Бребем повернувся на четверте місце. Гонку змінили ремонти й сходи, а не безперервне лідерство від старту до фінішу."
     },
     "year": "1960",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1960/races/10-united-states/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1960/races/10-united-states/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport December 1960 period report: Brabham fuel overflow fires and two stops, Moss lead, Gurney/Bonnier troubles and Ireland/McLaren podium.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "anderstorp",
@@ -344,11 +534,18 @@
       "uk": "Шестиколісний Tyrrell перемагає у Швеції"
     },
     "description": {
-      "en": "Jody Scheckter won the 1976 Swedish Grand Prix at Anderstorp in the remarkable six-wheeled Tyrrell P34. Few Formula 1 victories illustrate the sport's experimental spirit so vividly.",
-      "uk": "Джоді Шектер виграв Гран-прі Швеції 1976 року в Андерсторпі на незвичному шестиколісному Tyrrell P34. Мало які перемоги так яскраво нагадують про експерименти інженерів Формули-1."
+      "en": "Anderstorp in 1976 gave Formula 1 its only victory by a six-wheeled car. Jody Scheckter drove the Tyrrell P34 with four small front wheels. Mario Andretti's Lotus had shown winning pace but retired with engine trouble, and Tyrrell finished first and second with Scheckter ahead of Patrick Depailler. Niki Lauda was third. This was not just an odd-looking car in a photograph: an unusual engineering idea had won a championship Grand Prix, even though the concept never became the sport's standard.",
+      "uk": "Андерсторп 1976 року подарував Формулі-1 єдину перемогу шестиколісної машини. Джоді Шектер керував Tyrrell P34 із чотирма маленькими передніми колесами. Lotus Маріо Андретті демонстрував швидкість, але вибув через несправність двигуна, і Tyrrell здобула дубль: Шектер випередив Патріка Депайє. Третім став Нікі Лауда. Це не просто дивна машина на старому фото: незвична інженерна ідея виграла етап чемпіонату, хоча згодом таке рішення не стало стандартом Формули-1."
     },
     "year": "1976",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/07-sweden/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/07-sweden/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/the-practical-joke-that-won-a-gp-and-the-other-six-wheeled-cars-that-f1-banned/"
+    ],
+    "historical_source_locator": "1976 Swedish GP retrospective: P34 design, Andretti retirement and Tyrrell one-two",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "bremgarten",
@@ -357,11 +554,18 @@
       "uk": "Перемога Фанхіо серед швейцарського лісу"
     },
     "description": {
-      "en": "Juan Manuel Fangio won the 1954 Swiss Grand Prix at Bremgarten. The old wooded road circuit belonged to a very different age of Formula 1, before modern permanent venues became the standard.",
-      "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Швейцарії 1954 року в Бремгартені. Старе дорожнє кільце серед лісів належало зовсім іншій епосі Формули-1, ще до поширення сучасних постійних автодромів."
+      "en": "Bremgarten's wooded roads hosted the Swiss Grand Prix for the last time in 1954. José Froilán González put his Ferrari on pole, but Juan Manuel Fangio took his Mercedes to victory and secured another world title. The trees and narrow road belonged to an era before today's permanent circuits. The official classification explains who finished where; the wider story is of a championship settled on a course Formula 1 would not return to.\n\nFangio was already clear at the end of the opening lap. Behind him, Moss briefly moved ahead of González, while Mike Hawthorn worked his way through the field before a sticking throttle and then an oil-pump failure ended his challenge. Moss also retired with oil-pump trouble. González recovered second place and Hans Herrmann completed the podium in another Mercedes. Fangio's victory settled the title with races still to run; Bremgarten was not a last-round decider.",
+      "uk": "Лісові дороги Бремгартена востаннє прийняли Гран-прі Швейцарії у 1954 році. Хосе Фройлан Гонсалес здобув поул на Ferrari, але Хуан-Мануель Фанхіо привів Mercedes до перемоги й забезпечив собі ще один титул чемпіона світу. Дерева й вузька дорога нагадують про час до сучасних постійних автодромів. Протокол пояснює фінішний порядок, а ширша історія — як чемпіонат вирішився на трасі, куди Формула-1 вже не повернулася.\n\nФанхіо відірвався вже на першому колі. Позаду Мосс ненадовго випередив Гонсалеса, а Майк Готорн проривався крізь пелотон, поки заїдання дроселя, а згодом поломка масляного насоса не зупинили його Ferrari. Через несправність масляного насоса зійшов і Мосс. Гонсалес повернув собі друге місце, а Ганс Геррманн привіз ще один Mercedes на подіум. Ця перемога забезпечила Фанхіо титул за кілька етапів до кінця сезону, а не у фінальній гонці."
     },
     "year": "1954",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/07-switzerland/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/07-switzerland/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1954-swiss-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": " Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "east-london",
@@ -370,11 +574,18 @@
       "uk": "Грем Гілл здобуває титул"
     },
     "description": {
-      "en": "Graham Hill won the 1962 South African Grand Prix at East London and secured his first World Championship. The seaside circuit hosted one of the defining title deciders of Formula 1's early 1960s.",
-      "uk": "Грем Гілл виграв Гран-прі Південної Африки 1962 року в Іст-Лондоні та здобув свій перший чемпіонський титул. Приморська траса прийняла один із вирішальних фіналів початку 1960-х."
+      "en": "The final Grand Prix of 1962 took place at East London in South Africa, with Graham Hill and Jim Clark still fighting for the drivers' title. Clark's Lotus retired, and Hill won the race to become world champion for the first time. The seaside circuit was the setting for two completely different endings: a triumph for Hill and a mechanical disappointment for Clark. A result table gives the champion's name; the race explains how the title changed hands.\n\nClark had taken pole and led for 61 laps. The Lotus then began leaking oil: the contemporary account traces the failure to a missing locking washer and a bolt that worked loose. Hill could not catch Clark while the car was healthy; he inherited the lead only when the Lotus stopped. Bruce McLaren and Tony Maggs followed his BRM home. That mechanical detail matters more than a generic tale of pressure: the championship turned when a dominant car failed.",
+      "uk": "Останній Гран-прі 1962 року відбувся в південноафриканському Іст-Лондоні, де Грем Гілл і Джим Кларк ще боролися за титул. Lotus Кларка зійшов, а Гілл переміг і вперше став чемпіоном світу. Приморська траса подарувала дві протилежні розв’язки: тріумф Гілла й технічне розчарування Кларка. Таблиця називає чемпіона, а перебіг гонки пояснює, як визначився титул.\n\nКларк стартував із поулу й лідирував 61 коло. Потім Lotus почав втрачати мастило: у тогочасному описі причиною названо відсутню стопорну шайбу й болт, що викрутився. Поки машина Кларка працювала справно, Гілл не міг його наздогнати; він очолив гонку лише після сходу Lotus. Позаду BRM фінішували Брюс Макларен і Тоні Меггс. Ця технічна подробиця важливіша за абстрактну «напругу боротьби»: титул вирішила поломка автомобіля, що впевнено лідирував."
     },
     "year": "1962",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1962/races/09-south-africa/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1962/races/09-south-africa/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/articles/single-seaters/f1/51-1962-south-african-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": " Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "jacarepagua",
@@ -383,11 +594,19 @@
       "uk": "Прост перемагає, поки надії Сенни тануть"
     },
     "description": {
-      "en": "Alain Prost won the 1988 Brazilian Grand Prix at Jacarepaguá in Rio de Janeiro. The circuit hosted Brazilian Formula 1 racing outside Interlagos, including this opening chapter of the famous Prost–Senna McLaren era.",
-      "uk": "Ален Прост виграв Гран-прі Бразилії 1988 року на трасі Жакарепагуа в Ріо-де-Жанейро. Цей автодром приймав Формулу-1 поза Інтерлагосом і став сценою одного з перших етапів знаменитої епохи Проста й Сенни в McLaren."
+      "en": "Alain Prost won the 1988 Brazilian Grand Prix at Jacarepaguá, but the opening race of his McLaren partnership with Ayrton Senna was no one-two. Senna took pole at home, encountered problems before the start and switched cars after the formation lap. He continued racing but was disqualified for the change. Prost brought the new McLaren home first, ahead of Gerhard Berger and Nelson Piquet. The classification records the winner and disqualification; the story is the contrast between Senna's qualifying pace and a race undone by a rule-bound car change.\n\nThe trouble began on the parade lap, when Senna's gear selector jammed in first. The start was delayed, and he left the pit lane in McLaren's spare car. He fought back through the field, but the switch had happened after the point allowed by the regulations, so officials showed him the black flag. Prost, who had qualified third, won ahead of Berger and Piquet. Senna's disqualification was a rules decision, not a mechanical retirement or a loss of pace.",
+      "uk": "Ален Прост виграв Гран-прі Бразилії 1988 року на Жакарепагуа, але перша гонка його партнерства з Айртоном Сенною в McLaren не завершилася дублем. Сенна здобув поул удома, зіткнувся з проблемами перед стартом і пересів в іншу машину після прогрівочного кола. Він продовжив гонку, але був дискваліфікований за заміну. Прост довів новий McLaren до перемоги, випередивши Герхарда Бергера й Нельсона Піке. Протокол фіксує переможця й дискваліфікацію; історія — про контраст між швидкістю Сенни в кваліфікації та невдачею через правила.\n\nПроблема виникла ще на прогрівочному колі: коробку передач Сенни заклинило на першій передачі. Старт відклали, і бразилець виїхав із піт-лейну на запасному McLaren. Він відігравав позиції, але змінив машину вже після дозволеного правилами моменту, тож судді показали йому чорний прапор. Прост, який кваліфікувався третім, переміг Бергера й Піке. Дискваліфікація Сенни була наслідком порушення процедури, а не сходом через поломку чи нестачею швидкості."
     },
     "year": "1988",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/01-brazil/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1988/races/01-brazil/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1988-brazilian-grand-prix/",
+      "https://www.grandprix.com/races/brazilian-gp-1988.html"
+    ],
+    "historical_source_locator": "1988 Brazilian GP period report: Senna's pole, chassis change and Prost victory Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "mont-tremblant",
@@ -396,11 +615,18 @@
       "uk": "Галм перемагає серед пагорбів Лаврентійських гір"
     },
     "description": {
-      "en": "Denny Hulme won the 1968 Canadian Grand Prix at Mont-Tremblant. Before the race settled in Montréal, the World Championship explored a scenic Quebec circuit surrounded by the Laurentian hills.",
-      "uk": "Денні Галм виграв Гран-прі Канади 1968 року в Мон-Трамблані. До переїзду гонки в Монреаль чемпіонат світу відвідував мальовничу трасу Квебеку серед Лаврентійських гір."
+      "en": "Chris Amon led much of the 1968 Canadian Grand Prix at Mont-Tremblant in his Ferrari, despite clutch trouble. Late in the race the final drive failed, and a first Formula 1 victory slipped away. Denny Hulme inherited the lead and won for McLaren, with Bruce McLaren second. The classification shows a McLaren one-two, but the contemporary account shows how close Amon came to a different ending. This was the 1968 McLaren result, not the separate Ferrari one-two at Mont-Tremblant in 1970.\n\nAmon lost the use of his clutch early but kept the Ferrari ahead, at one stage more than a minute clear. Repeated gear changes without the clutch damaged the final drive, and the car came into the pits on lap 71. Hulme inherited a victory that the classification cannot explain on its own; Bruce McLaren finished second and Pedro Rodríguez third. The account also records safety changes to the narrow circuit before the race, a reminder that the venue itself was under scrutiny.",
+      "uk": "Кріс Еймон довго лідирував на Ferrari в Гран-прі Канади 1968 року в Мон-Трамблані, попри несправність зчеплення. Наприкінці гонки відмовила головна передача, і шанс на першу перемогу у Формулі-1 зник. Лідерство перейшло до Денні Галма, який переміг за McLaren; другим став Брюс Макларен. Протокол показує дубль McLaren, але тогочасний репортаж нагадує, як близько Еймон був до іншого фіналу. Це результат 1968 року, а не окремий дубль Ferrari на цій трасі у 1970-му.\n\nЕймон рано залишився без зчеплення, але втримував Ferrari попереду й певний час мав перевагу понад хвилину. Постійні перемикання передач без зчеплення пошкодили головну передачу, і на 71-му колі машина заїхала в бокси. Гальм успадкував перемогу, причин якої не побачиш у самому протоколі; Брюс Макларен фінішував другим, Педро Родрігес — третім. Репортаж також описує зміни безпеки на вузькій трасі перед гонкою: сам автодром теж перебував під пильною увагою."
     },
     "year": "1968",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/10-canada/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1968/races/10-canada/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/"
+    ],
+    "historical_source_locator": "1968 Canadian GP contemporary report: Amon clutch and final-drive failure, McLaren one-two Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "caesars-palace",
@@ -409,11 +635,19 @@
       "uk": "Фінал чемпіонату на парковці казино"
     },
     "description": {
-      "en": "Michele Alboreto won the 1982 Caesars Palace Grand Prix, while Keke Rosberg secured the World Championship. The Las Vegas casino car-park course was a very different circuit from the modern Strip Grand Prix.",
-      "uk": "Мікеле Альборето виграв Гран-прі Caesars Palace 1982 року, а Кеке Росберг здобув титул чемпіона світу. Траса на парковці казино в Лас-Вегасі зовсім не схожа на сучасний Гран-прі на Стріпі."
+      "en": "The 1982 Caesars Palace Grand Prix finished the Formula 1 season on a temporary circuit in a Las Vegas casino car park. Michele Alboreto won for Tyrrell, with John Watson second and Eddie Cheever third. Keke Rosberg finished fifth, enough to become world champion despite not winning the race. This was not the modern Las Vegas Strip layout. The finishing order and the championship outcome tell two different stories from the same improbable venue.\n\nThe Renaults locked out the front row, but Arnoux retired with engine trouble and Prost slowed on deteriorating tyres. Alboreto, who had qualified third, passed Prost to take his first Grand Prix victory; Watson recovered from a poor start to second. Rosberg's cautious fifth place secured the drivers' title, while Ferrari won the constructors' championship without scoring in this race. Neither championship was awarded to the race winner, and this car-park course must not be confused with the modern Strip layout.",
+      "uk": "Гран-прі Caesars Palace 1982 року завершив сезон Формули-1 на тимчасовій трасі, прокладеній парковкою казино в Лас-Вегасі. Мікеле Альборето переміг на Tyrrell, Джон Вотсон став другим, Едді Чівер — третім. Кеке Росберг фінішував п’ятим, і цього вистачило для чемпіонського титулу, хоча гонку він не виграв. Це була не сучасна траса вздовж Стріпу. Фінішний порядок і підсумок чемпіонату розповідають дві різні історії того самого незвичного місця.\n\nRenault зайняла весь перший ряд, але Арну зійшов через несправність двигуна, а Прост сповільнився через зношені шини. Альборето, який кваліфікувався третім, випередив Проста й здобув першу перемогу в Гран-прі; Вотсон після невдалого старту прорвався на друге місце. Обережного п'ятого місця Росбергу вистачило для титулу, а Ferrari виграла Кубок конструкторів, не набравши очок у цій гонці. Жоден із цих титулів не дістався переможцю етапу, а парковку казино не слід плутати із сучасною трасою вздовж Стріпу."
     },
     "year": "1982",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/16-caesars-palace/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/16-caesars-palace/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/database/races/1982-las-vegas-grand-prix/",
+      "https://www.motorsportmagazine.com/archive/article/november-1982/43/las-vegas-grand-prix/"
+    ],
+    "historical_review_status": "pending_independent_claim_review",
+    "historical_source_locator": "Motor Sport November 1982 period report: Renault front row, Arnoux engine, Prost tyres, Alboreto first win, Watson recovery, Rosberg fifth and Ferrari constructors' title.",
+    "human_approval": false,
+    "publication_allowed": false
   },
   {
     "id": "clermont-ferrand",
@@ -422,10 +656,17 @@
       "uk": "Стюарт перемагає на гірських дорогах"
     },
     "description": {
-      "en": "Jackie Stewart won the 1969 French Grand Prix at Clermont-Ferrand. The twisting public-road circuit in the Auvergne hills offered a far more natural landscape than most modern purpose-built Formula 1 tracks.",
-      "uk": "Джекі Стюарт виграв Гран-прі Франції 1969 року в Клермон-Феррані. Звивисте дорожнє кільце серед пагорбів Оверні мало набагато природніший рельєф, ніж більшість сучасних спеціально збудованих автодромів."
+      "en": "Jackie Stewart won the 1969 French Grand Prix at Clermont-Ferrand, but the home crowd had another fight to follow. His Matra ran clear while team-mate Jean-Pierre Beltoise battled Jacky Ickx for second. Beltoise passed late and completed a Matra one-two. The long, undulating road circuit in the Auvergne hills rewarded rhythm and concentration. The classification lists Stewart first and Beltoise second; the period report reveals the late duel that kept the race alive behind the dominant leader.\n\nBeltoise's second place was anything but routine. He was seventh at the end of the opening lap, had climbed to third behind Ickx by lap 14, and passed the Belgian only on the final lap. Stewart, meanwhile, was almost a minute ahead at the finish. The two Matras shared a podium, but they had lived through very different races: one controlled from the front, the other decided in the last moments.",
+      "uk": "Джекі Стюарт виграв Гран-прі Франції 1969 року в Клермон-Феррані, але глядачі мали ще одну боротьбу позаду лідера. Його Matra впевнено відірвалася, а напарник Жан-П’єр Бельтуаз змагався з Жакі Іксом за друге місце. Бельтуаз обігнав суперника наприкінці й забезпечив Matra дубль. Довге хвилясте кільце серед пагорбів Оверні вимагало ритму й уваги. У протоколі Стюарт перший, Бельтуаз другий; тогочасний репортаж розкриває пізню дуель, яка зберігала інтригу позаду переможця.\n\nДруге місце Бельтуаза не було легкою прогулянкою. Після першого кола він ішов сьомим, до 14-го піднявся на третє місце за Іксом і випередив бельгійця лише на останньому колі. Стюарт тим часом фінішував майже на хвилину попереду. Дві Matra опинилися на подіумі, але їхні гонки були зовсім різними: одна — під контролем лідера, друга — з розв'язкою в останні миті."
     },
     "year": "1969",
-    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1969/races/05-france/race-results.yml"
+    "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1969/races/05-france/race-results.yml",
+    "historical_sources": [
+      "https://www.motorsportmagazine.com/archive/article/august-1969/16/french-grand-prix-4/"
+    ],
+    "historical_source_locator": "1969 French GP contemporary report: Stewart's lead and Beltoise–Ickx duel Expanded EN/UK: contemporary race chronology and historical context checked against linked report(s); classification retained separately; independent claim approval pending.",
+    "historical_review_status": "pending_independent_claim_review",
+    "human_approval": false,
+    "publication_allowed": false
   }
 ]

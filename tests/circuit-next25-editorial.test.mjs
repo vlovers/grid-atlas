@@ -2,6 +2,37 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const data=JSON.parse(readFileSync('docs/editorial/circuit-experience-v3/next25-research-leads.json','utf8'));
+// Exact reviewed research leads; not a blanket publisher or publication allowlist.
+const periodResearchUrls = new Set([
+  "https://www.skysports.com/f1/news/12472/10318490/mercedes-explain-lewis-hamiltons-power-problems-in-european-gp",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
+  "https://www.fia.com/news/fia-statement-treatment-tyres-2023-fia-formula-1-qatar-grand-prix-update",
+  "https://www.skysports.com/f1/news/12980042/qatar-gp-fia-enforces-three-pit-stop-rule-for-race-amid-safety-concerns-over-tyres",
+  "https://www.aljazeera.com/sports/2015/11/1/rosberg-consolidates-second-place-with-mexico-gp-win",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/verstappen-resists-leclerc-for-hard-earned-2022-miami-gp-win-race-report/",
+  "https://www.motorsport.com/f1/news/f1-las-vegas-gp-verstappen-survives-penalty-damage-to-take-18th-win-of-2023/10548816/",
+  "https://www.motorsportmagazine.com/database/championships/2000-f1-world-championship/",
+  "https://www.motorsportmagazine.com/archive/article/december-1989/17/insanity-rules/",
+  "https://www.motorsportmagazine.com/archive/article/november-1983/46/grand-prix-europe-2/",
+  "https://www.motorsportmagazine.com/archive/article/november-1980/52/the-us-grand-prix/",
+  "https://www.motorsportmagazine.com/archive/article/august-1964/58/xvii-british-grand-prix/",
+  "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/50/47-2017-azerbaijan-gp-ricciardo-comes-through-chaos-to-reign-supreme/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
+  "https://www.motorsportmagazine.com/database/races/2023-qatar-grand-prix/",
+  "https://www.bbc.co.uk/sport/articles/c0klxx859neo",
+  "https://www.theguardian.com/sport/2023/nov/19/formula-one-las-vegas-grand-prix-report-max-verstappen",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-portuguese-grand-prix-race-report-hamilton-wins-to-take-record-92nd-f1-win/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-tuscan-grand-prix-report-hamilton-wins-double-red-flag-race-in-mugello/",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/",
+  "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html",
+  "https://www.motorsportmagazine.com/articles/single-seaters/f1/heartbreak-for-norris-hands-hamilton-his-100th-f1-win-2021-russian-gp-report/",
+  "https://www.grandprix.com/races/united-states-gp-1961.html",
+  "https://www.motorsportmagazine.com/archive/article/february-1967/14/grand-prix-of-south-africa-2/",
+  "https://www.motorsportmagazine.com/archive/article/august-1971/27/the-4th-grand-prix-of-france/",
+  "https://imsdotcom.azureedge.net/events/indy500/history/rain-delays",
+  "https://www.motorsportmagazine.com/archive/article/may-1976/52/the-us-grand-prix-west/",
+  "https://www.motorsportmagazine.com/archive/article/may-1977/57/the-united-states-grand-prix-west/"
+]);
 test('25 next circuit candidates keep bilingual leads out of public publication',()=>{
  assert.equal(data.status,'research_only');
  assert.equal(data.publication,'blocked');
@@ -22,7 +53,7 @@ test('25 next circuit candidates keep bilingual leads out of public publication'
   assert.ok(circuit.story_leads.filter(s=>s.status==='research_question_not_historical_article').length<=4);
   assert.ok(circuit.story_leads.filter(s=>s.status==='source_checked_research_draft').every(s=>s.narrative?.en.length>120&&s.narrative?.uk.length>120&&s.sources.length>0));
   for(const story of circuit.story_leads){
-    assert.ok(story.sources.every(s=>{ const host=new URL(s).hostname; return host==='www.formula1.com' || (circuit.candidate_slug==='fuji' && host==='www.motorsportmagazine.com') || (circuit.candidate_slug==='kyalami' && host==='www.autosport.com') || (circuit.candidate_slug==='long-beach' && host==='gplb.com') || (circuit.candidate_slug==='detroit-street' && host==='www.detroitgp.com') || (circuit.candidate_slug==='phoenix-street' && host==='www.fia.com') || (circuit.candidate_slug==='watkins-glen' && host==='www.ebay.com') || (circuit.candidate_slug==='paul-ricard' && host==='www.circuitpaulricard.com') || (circuit.candidate_slug==='donington-park' && host==='www.crash.net') || (circuit.candidate_slug==='korea-international' && host==='en.yna.co.kr') || (circuit.candidate_slug==='buddh' && host==='news.sky.com'); }),circuit.candidate_slug);
+    assert.ok(story.sources.every(s=>{ const host=new URL(s).hostname; return periodResearchUrls.has(s) || host==='www.formula1.com' || (circuit.candidate_slug==='fuji' && host==='www.motorsportmagazine.com') || (circuit.candidate_slug==='kyalami' && host==='www.autosport.com') || (circuit.candidate_slug==='long-beach' && host==='gplb.com') || (circuit.candidate_slug==='detroit-street' && host==='www.detroitgp.com') || (circuit.candidate_slug==='phoenix-street' && host==='www.fia.com') || (circuit.candidate_slug==='watkins-glen' && host==='www.ebay.com') || (circuit.candidate_slug==='paul-ricard' && host==='www.circuitpaulricard.com') || (circuit.candidate_slug==='donington-park' && host==='www.crash.net') || (circuit.candidate_slug==='korea-international' && host==='en.yna.co.kr') || (circuit.candidate_slug==='buddh' && host==='news.sky.com'); }),circuit.candidate_slug);
     for(const locale of ['en','uk']){
       assert.ok(story.title[locale].trim().length>=6);
       assert.ok(story.editorial_direction[locale].trim().length>=30);

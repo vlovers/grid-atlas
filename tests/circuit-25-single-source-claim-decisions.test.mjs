@@ -9,7 +9,7 @@ test('25 claim-level evidence decisions cover five single-source circuit dossier
  for(const id of ids){
   assert.deepEqual(records.filter(m=>m[1]===id).map(m=>Number(m[2])),[1,2,3,4,5]);
  }
- assert.equal((md.match(/Evidence status:\*\* \`requires_independent_corroboration\`/g)??[]).length,25);
+ assert.equal((md.match(/Evidence status:\*\* `requires_independent_corroboration`/g)??[]).length,25);
  assert.equal((md.match(/Targeted next check:/g)??[]).length,25);
  assert.equal((md.match(/Release:\*\* blocked/g)??[]).length,25);
  assert.match(md,/publication_allowed=false/);

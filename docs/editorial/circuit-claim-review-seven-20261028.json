@@ -14,24 +14,24 @@
       "claims": [
         {
           "claim_id": "first-win",
-          "en_excerpt": "Ayrton Senna took his first Formula 1 World Championship race win",
-          "uk_excerpt": "Айртон Сенна здобув свою першу перемогу",
+          "en_excerpt": "This was Senna's first Formula 1 World Championship victory",
+          "uk_excerpt": "Це була перша перемога Сенни в чемпіонаті світу",
           "evidence_route": "candidate-results",
           "review_question": "Confirm first career championship victory, identity and event in original results and chronology.",
           "status": "unverified"
         },
         {
           "claim_id": "rain",
-          "en_excerpt": "Heavy rain made the Portuguese Grand Prix",
-          "uk_excerpt": "Сильний дощ перетворив Гран-прі Португалії",
+          "en_excerpt": "Rain turned the 1985 Portuguese Grand Prix into a test of control",
+          "uk_excerpt": "Злива перетворила Гран-прі Португалії 1985 року на випробування керування",
           "evidence_route": "candidate-context",
           "review_question": "Locate an explicit weather passage; a classification file does not establish rainfall.",
           "status": "unverified"
         },
         {
           "claim_id": "reputation",
-          "en_excerpt": "the control that would define his reputation",
-          "uk_excerpt": "ранній доказ його майстерності керування",
+          "en_excerpt": "standing water caught out rivals, including Alain Prost",
+          "uk_excerpt": "вода на трасі ставала проблемою для суперників, зокрема Алена Проста",
           "evidence_route": "editorial-judgment",
           "review_question": "Distinguish a retrospective interpretation from a verifiable race fact; soften if unsupported.",
           "status": "unverified"
@@ -46,24 +46,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "Fernando Alonso won Formula 1's inaugural Singapore Grand Prix in 2008",
-          "uk_excerpt": "Фернандо Алонсо виграв перший Гран-прі Сінгапуру 2008 року",
+          "en_excerpt": "Fernando Alonso won for Renault after an early stop",
+          "uk_excerpt": "Фернандо Алонсо виграв за Renault після раннього піт-стопу",
           "evidence_route": "candidate-results",
           "review_question": "Check race winner, event year and first-edition claim separately.",
           "status": "unverified"
         },
         {
           "claim_id": "night-first",
-          "en_excerpt": "Marina Bay introduced night racing to the championship",
-          "uk_excerpt": "Марина-Бей відкрила епоху нічних гонок Формули-1",
+          "en_excerpt": "Singapore's first night Grand Prix in 2008 produced a result",
+          "uk_excerpt": "Перший нічний Гран-прі Сінгапуру 2008 року отримав продовження",
           "evidence_route": "candidate-context",
           "review_question": "Find exact evidence for first championship night race; avoid confusing event and venue.",
           "status": "unverified"
         },
         {
           "claim_id": "crash-investigation",
-          "en_excerpt": "the race later became inseparable from the Renault crash scandal",
-          "uk_excerpt": "ця подія стала невіддільною від скандалу навколо аварії Renault",
+          "en_excerpt": "In 2009 an FIA investigation established that Alonso's team-mate Nelson Piquet Jr had crashed deliberately",
+          "uk_excerpt": "У 2009 році розслідування FIA встановило, що напарник Алонсо Нельсон Піке-молодший навмисно спричинив аварію",
           "evidence_route": "candidate-context",
           "review_question": "Verify investigation timeline and attribution; avoid implying allegations were established during the race.",
           "status": "unverified"
@@ -78,24 +78,24 @@
       "claims": [
         {
           "claim_id": "winner-title",
-          "en_excerpt": "Alain Prost won the 1986 Australian Grand Prix at Adelaide and claimed the championship",
-          "uk_excerpt": "Ален Прост виграв Гран-прі Австралії 1986 року в Аделаїді та став чемпіоном світу",
+          "en_excerpt": "Prost won the race and the championship",
+          "uk_excerpt": "Прост виграв гонку й титул",
           "evidence_route": "candidate-results",
           "review_question": "Confirm race result and championship outcome independently; race-result rows alone are not official season standings.",
           "status": "unverified"
         },
         {
           "claim_id": "tyre",
-          "en_excerpt": "Nigel Mansell's tyre failure",
-          "uk_excerpt": "Прокол шини Найджела Менселла",
+          "en_excerpt": "Then his left-rear tyre failed at speed",
+          "uk_excerpt": "Потім на швидкості зруйнувалася його ліва задня шина",
           "evidence_route": "candidate-context",
           "review_question": "Check whether the evidence supports the more specific Ukrainian 'puncture' versus English 'tyre failure'.",
           "status": "unverified"
         },
         {
           "claim_id": "superlative",
-          "en_excerpt": "one of Formula 1's most dramatic title deciders",
-          "uk_excerpt": "одну з найдраматичніших розв’язок в історії Формули-1",
+          "en_excerpt": "it cannot convey how abruptly a season turned in the final miles",
+          "uk_excerpt": "але не передає, як раптово змінився весь сезон",
           "evidence_route": "editorial-judgment",
           "review_question": "Decide whether the superlative is appropriate opinion rather than a sourced measurable claim.",
           "status": "unverified"
@@ -110,24 +110,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "John Watson won the 1982 Belgian Grand Prix at Zolder",
-          "uk_excerpt": "Джон Вотсон виграв Гран-прі Бельгії 1982 року в Зольдері",
+          "en_excerpt": "John Watson won for McLaren ahead of Keke Rosberg",
+          "uk_excerpt": "Джон Вотсон на McLaren переміг Кеке Росберга",
           "evidence_route": "candidate-results",
           "review_question": "Verify winner and venue against the 1982 classification.",
           "status": "unverified"
         },
         {
           "claim_id": "fatal-qualifying",
-          "en_excerpt": "Gilles Villeneuve's fatal qualifying accident",
-          "uk_excerpt": "загибель Жиля Вільнева під час кваліфікації",
+          "en_excerpt": "death of Gilles Villeneuve in Saturday qualifying",
+          "uk_excerpt": "загибелі Жиля Вільньова в суботній кваліфікації",
           "evidence_route": "candidate-context",
           "review_question": "Verify session, date, circumstances and sensitive wording with a dedicated historical account.",
           "status": "unverified"
         },
         {
           "claim_id": "framing",
-          "en_excerpt": "a painful reminder that Formula 1 history is not only about winners",
-          "uk_excerpt": "болісне нагадування, що історія Формули-1 складається не лише з перемог",
+          "en_excerpt": "The classification describes Sunday's race; the loss that preceded it is a separate, painful part",
+          "uk_excerpt": "Протокол описує недільний результат; трагедія напередодні — окрема й болюча частина",
           "evidence_route": "editorial-judgment",
           "review_question": "Check respectful tone without presenting the editorial framing as independently verified.",
           "status": "unverified"
@@ -230,24 +230,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "Jochen Mass won the 1975 Spanish Grand Prix at Montjuïc",
-          "uk_excerpt": "Йохен Масс виграв Гран-прі Іспанії 1975 року на трасі Монжуїк",
+          "en_excerpt": "ordinary victory for Jochen Mass",
+          "uk_excerpt": "звичайну перемогу Йохена Масса",
           "evidence_route": "candidate-results",
           "review_question": "Confirm winner and circuit against the classification.",
           "status": "unverified"
         },
         {
           "claim_id": "stoppage",
-          "en_excerpt": "The race was stopped after a fatal accident",
-          "uk_excerpt": "Гонку зупинили після смертельної аварії",
+          "en_excerpt": "Officials stopped the race, and reduced points were awarded",
+          "uk_excerpt": "Перегони зупинили, а очки нарахували в зменшеному обсязі",
           "evidence_route": "candidate-context",
-          "review_question": "Verify race stoppage, fatalities, chronology and precise casualty language from independent reporting.",
+          "review_question": "Independently verify the fatal spectator accident, subsequent race stoppage and reduced points; classification alone does not establish the full chronology.",
           "status": "unverified"
         },
         {
           "claim_id": "safety",
-          "en_excerpt": "the safety failures of that era",
-          "uk_excerpt": "проблеми безпеки тієї епохи",
+          "en_excerpt": "a grave failure of safety",
+          "uk_excerpt": "тяжкого провалу безпеки",
           "evidence_route": "editorial-judgment",
           "review_question": "Identify specific documented safety failures rather than relying on a broad retrospective judgment.",
           "status": "unverified"
