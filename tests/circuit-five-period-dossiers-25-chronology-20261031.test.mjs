@@ -12,7 +12,7 @@ const byId = new Map(files.flatMap((name) =>
   JSON.parse(readFileSync(new URL(name, root), 'utf8')).circuits.map((c) => [c.circuit_id, c])));
 const anchors = {
   aintree: [['lap 26', '26-му колі'], ['Behra', 'Бера'], ['lap 69', '69-му колі'], ['Hawthorn', 'Готорн'], ['clutch', 'зчеплення']],
-  avus: [['two 30-lap heats', 'два заїзди по 30'], ['1.9 seconds', '1,9 секунди'], ['rev counter', 'тахометр'], ['transfer gears', 'шестерні'], ['second lap', 'другому колі']],
+  avus: [['two heats', 'два заїзди по 30'], ['1.9 seconds', '1,9 секунди'], ['rev counter', 'тахометр'], ['transfer gears', 'шестерні'], ['second lap', 'другому колі']],
   dijon: [['lap 46', '46-му колі'], ['0.240 seconds', '0,240 секунди'], ['right leg', 'права нога'], ['lap 53', '53-му колі'], ['lap 24', '24-му колі']],
   montjuic: [['five people', "п'ятеро людей"], ['4.5', '4,5'], ['0.5', '0,5'], ['lap 28', '28-му колі'], ['pole', 'поул']],
   nivelles: [['lap nine', 'дев\'ятому колі'], ['lap 31', '31-му колі'], ['lap 58', '58-му колі'], ['Carlos Pace', 'Карлоса Паче'], ['lap 66', '66-му колі']],
