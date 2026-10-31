@@ -52,7 +52,7 @@ test('Anderstorp distinguishes the lead change, retirement, podium margin and re
   assert.match(patrese.narrative.en, /0\.086 seconds/);
   assert.match(peterson.narrative.uk, /заміна шини/i);
   assert.match(ferrari.narrative.en, /Michelin/);
-  assert.match(andretti.narrative.en, /46 laps/);
+  assert.match(andretti.narrative.en, /46 (?:officially completed )?laps/);
   assert.match(andretti.narrative.uk, /до поломки/);
 });
 
