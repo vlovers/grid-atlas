@@ -19,8 +19,8 @@ const evidence = {
   jarama: {
     year: 1981,
     historical: 'archive/article/august-1981/102/spanish-grand-prix-8',
-    en: ['turbo power', 'clutch problem', 'backmarker', 'third gear', '1.240 seconds'],
-    uk: ['турбодвигуна', 'зі зчепленням', 'коловим', 'третьою передачею', '1,240 секунди'],
+    en: ['turbocharged V6', 'clutch dragged', 'Laffite attacked Reutemann', 'third gear', '1.240 seconds'],
+    uk: ['турбований V6', 'зчеплення його', 'Лаффіт атакував Ройтеманна', 'третьою передачею', '1,240 секунди'],
   },
   jerez: {
     year: 1986,
