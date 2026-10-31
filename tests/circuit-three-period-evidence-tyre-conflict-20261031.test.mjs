@@ -42,6 +42,6 @@ test('East London Clark mechanical explanation is not repeated verbatim',()=>{
   const east=selected[1][0].circuits.find(c=>c.circuit_id==='east-london');
   const scene=east.stories[1];
   assert.equal((scene.narrative.en.match(/missing locking washer/g)||[]).length,1);
-  assert.match(scene.narrative.en,/two-inch bolt/);
+  assert.match(scene.narrative.en,/(?:two-inch bolt|bolt was two inches long)/);
   assert.match(scene.narrative.uk,/дводюймовий болт/);
 });

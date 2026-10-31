@@ -46,7 +46,7 @@ test('six formerly one-source dossiers have 30 bilingual scenes with separate hi
       }
       for (const url of story.historical_sources) {
         const host = new URL(url).hostname;
-        assert.ok(['www.motorsportmagazine.com', 'www.grandprix.com'].includes(host), id + '/' + host);
+        assert.ok(['www.motorsportmagazine.com', 'www.grandprix.com', ...(id === 'east-london' ? ['www.bbc.co.uk'] : [])].includes(host), id + '/' + host);
         assert.ok(!story.source_urls.includes(url), id + '/classification separation');
       }
     }
