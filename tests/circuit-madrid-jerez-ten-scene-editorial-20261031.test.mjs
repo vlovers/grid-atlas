@@ -29,8 +29,8 @@ test('Madring winner margin is distinct from P2/P3 gap and layout measurements',
   const s = circuits[0].stories;
   assert.match(s[1].narrative.en, /Virtual Safety Car/);
   assert.match(s[1].narrative.uk, /віртуального автомобіля безпеки/);
-  assert.match(s[2].narrative.en, /4\\.351 seconds/);
-  assert.match(s[2].narrative.en, /0\\.738 seconds/);
+  assert.match(s[2].narrative.en, /4\.351 seconds/);
+  assert.match(s[2].narrative.en, /0\.738 seconds/);
   assert.match(s[4].narrative.en, /550 metres/);
   assert.match(s[4].narrative.en, /24%/);
   assert.match(s[4].narrative.uk, /550 метрів/);
@@ -39,7 +39,7 @@ test('Madring winner margin is distinct from P2/P3 gap and layout measurements',
 test('Jerez distinguishes on-track lead changes, late tyre stop and retirement', () => {
   const s = circuits[1].stories;
   assert.match(s[0].narrative.en, /lap 39/);
-  assert.match(s[0].narrative.en, /0\\.014 seconds/);
+  assert.match(s[0].narrative.en, /0\.014 seconds/);
   assert.match(s[1].narrative.uk, /39-му колі/);
   assert.match(s[2].narrative.en, /Prost slipped into second/);
   assert.match(s[4].narrative.en, /39 completed laps/);
