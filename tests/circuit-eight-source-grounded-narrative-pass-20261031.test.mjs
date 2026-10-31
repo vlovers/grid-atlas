@@ -38,7 +38,7 @@ test('Argentina 1995 keeps the 71/72-lap source disagreement unresolved in both 
   assert.match(chapter.article.en, /71 laps.*72 laps/s);
   assert.match(chapter.article.en, /period timing or stewards' documentation/);
   assert.match(chapter.article.uk, /71 коло.*72 кола/s);
-  assert.match(chapter.article.uk, /первинного хронометражу/);
+  assert.match(chapter.article.uk, /протоколів хронометражу/);
 });
 
 test('Nivelles and Mont-Tremblant retain report-specific chronology, not just podiums', () => {

@@ -52,7 +52,7 @@ test('Madring VSC sequence has independent race narrative and official result pr
   assert.ok(!madrid.source_urls.some((url) => url.includes('/1294/madrid/race-result')));
   assert.ok(madrid.source_urls.includes('https://www.grandprix.com/races/spanish-gp-2026-race-notes.html'));
   assert.ok(madrid.pending_review.some((note) => note.includes('Claim locator') && note.includes('not human approval')));
-  assert.match(madrid.article.en, /Norris came home third, 0\.738 seconds behind Verstappen/);
+  assert.match(madrid.article.en, /Norris another 0\.738 seconds behind Verstappen/);
   assert.match(madrid.article.uk, /Норріс — ще за 0,738 секунди позаду Макса/);
   assert.equal(madrid.human_approval, false);
   assert.equal(madrid.publication_allowed, false);
