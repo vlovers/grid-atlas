@@ -35,9 +35,9 @@ test('eight historical chapters remain bilingual, source-linked and unpublished'
 
 test('Argentina 1995 keeps the 71/72-lap source disagreement unresolved in both locales', () => {
   const chapter = chapters.get('buenos-aires');
-  assert.match(chapter.article.en, /71-lap classification.*72-lap account/s);
-  assert.match(chapter.article.en, /primary timing or steward documentation/);
-  assert.match(chapter.article.uk, /71 коло.*72 колами/s);
+  assert.match(chapter.article.en, /71 laps.*72 laps/s);
+  assert.match(chapter.article.en, /period timing or stewards' documentation/);
+  assert.match(chapter.article.uk, /71 коло.*72 кола/s);
   assert.match(chapter.article.uk, /первинного хронометражу/);
 });
 
