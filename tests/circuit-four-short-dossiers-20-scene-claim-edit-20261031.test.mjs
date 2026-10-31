@@ -27,8 +27,8 @@ test("20 short EN/UK research scenes retain period-specific evidence and fail-cl
       for (const [i, scene] of circuit.stories.entries()) {
         count++;
         assert.ok(scene.narrative.en.includes(anchors[circuit.circuit_id][i]), circuit.circuit_id + " " + i);
-        assert.ok(scene.narrative.en.trim().split(/\\s+/).length >= 80);
-        assert.ok(scene.narrative.uk.trim().split(/\\s+/).length >= 65);
+        assert.ok(scene.narrative.en.trim().split(/\s+/).length >= 80);
+        assert.ok(scene.narrative.uk.trim().split(/\s+/).length >= 65);
         assert.equal(scene.publication, "blocked");
         assert.equal(scene.independent_approval, false);
         assert.ok(scene.historical_sources.some(url => url.includes("motorsportmagazine.com")));
