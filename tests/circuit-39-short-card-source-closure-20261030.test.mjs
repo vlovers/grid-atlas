@@ -57,8 +57,8 @@ test('all 73 short circuit stories have distinct narrative provenance and remain
     assert.ok(card.description.uk.length >= 250, card.id + '/uk');
     assert.ok(card.historical_sources?.length >= 1, card.id + '/narrative');
     assert.ok(card.source.startsWith('https://'), card.id + '/classification');
-    assert.notEqual(card.human_approval, true, card.id);
-    assert.notEqual(card.publication_allowed, true, card.id);
+    assert.equal(card.human_approval, false, card.id);
+    assert.equal(card.publication_allowed, false, card.id);
   }
   for (const id of newlySourced) {
     const card = cards.find(x => x.id === id);
