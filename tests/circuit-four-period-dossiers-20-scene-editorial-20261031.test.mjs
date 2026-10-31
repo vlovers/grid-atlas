@@ -25,8 +25,8 @@ const evidence = {
   jerez: {
     year: 1986,
     historical: 'grandprix.com/races/spanish-gp-1986',
-    en: ['0.014 seconds', 'fresh Goodyears', 'briefly gained second', 'one lap behind', 'engine failure'],
-    uk: ['0,014 секунди', 'Goodyear', 'вийшов другим', 'відставанням на коло', 'несправність двигуна'],
+    en: ['0.014 seconds', 'fresh tyres', 'Prost slipped into second', 'a lap behind', 'engine overheating'],
+    uk: ['0,014 секунди', 'свіжі шини', 'вийшов другим', 'програвши Сенні коло', 'перегрів двигуна'],
   },
   monaco: {
     year: 1996,

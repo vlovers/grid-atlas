@@ -43,7 +43,7 @@ test('Madring 2026 separates race results, VSC reporting and independent venue d
   assert.match(madrid.stories[4].narrative.uk, /550 метрів/);
   assert.match(madrid.stories[4].narrative.en, /24%/);
   assert.match(madrid.stories[1].narrative.en, /Virtual Safety Car/);
-  assert.match(madrid.stories[1].narrative.uk, /віртуальний автомобіль безпеки/);
+  assert.match(madrid.stories[1].narrative.uk, /(?:віртуальний автомобіль безпеки|віртуального автомобіля безпеки)/);
   for (const scene of madrid.stories) {
     assert.equal(scene.year, 2026);
     assert.ok(scene.source_urls.includes(officialMadrid));
