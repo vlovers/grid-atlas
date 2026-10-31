@@ -66,12 +66,12 @@ test('ten distinct next25 race leads have bilingual event context and independen
     const story=circuit.story_leads.find(s=>s.title.en===title);
     assert.ok(story,slug+'/'+title);
     for(const lang of ['en','uk']){
-      assert.equal(story.narrative[lang].split(/\\n\\s*\\n/).filter(Boolean).length,2,slug+'/'+lang+' paragraphs');
-      assert.ok(story.narrative[lang].trim().split(/\\s+/).length>=70,slug+'/'+lang+' substantive text');
+      assert.equal(story.narrative[lang].split(/\n\s*\n/).filter(Boolean).length,2,slug+'/'+lang+' paragraphs');
+      assert.ok(story.narrative[lang].trim().split(/\s+/).length>=70,slug+'/'+lang+' substantive text');
       assert.ok(story.editorial_direction[lang].length>=65,slug+'/'+lang+' specific review question');
     }
     assert.match(story.narrative.uk,/[А-ЯІЇЄҐа-яіїєґ]/u);
-    assert.ok(story.sources.some(url=>new URL(url).hostname.replace(/^www\\./,'').endsWith(domain)),slug+' independent report');
+    assert.ok(story.sources.some(url=>new URL(url).hostname.replace(/^www\./,'').endsWith(domain)),slug+' independent report');
     assert.ok(story.sources.some(url=>new URL(url).hostname.endsWith('formula1.com')),slug+' official source');
     assert.notEqual(story.status,'approved');
     assert.equal(circuit.publication,'unpublished');
