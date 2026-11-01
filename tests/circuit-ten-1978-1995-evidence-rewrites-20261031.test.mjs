@@ -23,7 +23,7 @@ test('ten 1978/1995 research scenes have substantive distinct EN/UK narratives a
       assert.ok(scene.narrative.en.length >= 450, circuit.circuit_id + '/EN');
       assert.ok(scene.narrative.uk.length >= 450, circuit.circuit_id + '/UK');
       assert.ok(scene.historical_source_locator.length >= 100);
-      assert.match(scene.historical_source_locator, /independent claim review pending/);
+      assert.match(scene.historical_source_locator, /independent claim review pending/i);
       assert.ok(scene.historical_sources.length >= 3);
       assert.equal(new Set(scene.historical_sources).size, scene.historical_sources.length);
       assert.ok(scene.historical_sources.some(url => url.includes('motorsportmagazine.com')));

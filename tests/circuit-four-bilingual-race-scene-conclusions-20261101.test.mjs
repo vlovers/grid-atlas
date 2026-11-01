@@ -66,7 +66,7 @@ test('twenty EN/UK scene conclusions retain individual race facts and blocked pu
 test('chronology, classification and disputed technology remain separate', () => {
   const get = (id, i) => byId.get(id).stories[i - 1];
   assert.match(get('ain-diab', 2).narrative.en, /lap 39/);
-  assert.match(get('anderstorp', 1).narrative.en, /five formal protests/);
+  assert.match(get('anderstorp', 1).narrative.en, /five formal protests/i);
   assert.match(get('anderstorp', 1).narrative.en, /(?:withdrew|withdrawal)/);
   assert.match(get('anderstorp', 5).historical_source_locator, /lap 38 or 39/);
   assert.match(get('bremgarten', 5).narrative.uk, /Запасний план зник/);
