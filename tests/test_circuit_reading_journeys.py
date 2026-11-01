@@ -23,10 +23,14 @@ class CircuitReadingJourneysTests(unittest.TestCase):
             self.assertRegex(item["source"], r"^https://")
         self.assertIn("const entries = [...facts, ...nextFacts, ...finalFacts]", SOURCE)
 
-    def test_reader_links_are_derived_from_exact_unambiguous_races(self):
+    def test_private_reader_helpers_preserve_exact_links_without_bypassing_trusted_publication(self):
         renderer = (ED / "circuit-narrative.tsx").read_text(encoding="utf-8")
-        self.assertIn("<CircuitMoments circuitId={circuit.external_id}", PAGE)
-        self.assertIn("history={history}", PAGE)
+        self.assertNotIn("CircuitMoments", PAGE)
+        self.assertNotIn("circuit-narrative", PAGE)
+        self.assertIn("getOptionalPublishedCircuitArticle(id, lang)", PAGE)
+        self.assertIn("publishedArticle && <CircuitReviewedArticle", PAGE)
+        self.assertIn("href={`/races/${race.race_id}`}", PAGE)
+        self.assertIn("href={`/drivers/${winner.driver_id}`}", PAGE)
         helper = (ED / "circuit-public-moments.ts").read_text(encoding="utf-8")
         self.assertIn("uniqueRaceInYear(history, moment.raceYear)", renderer)
         self.assertIn("race.season_year !== year", helper)
@@ -59,7 +63,10 @@ class CircuitReadingJourneysTests(unittest.TestCase):
                 for locale in ("en","uk"):
                     self.assertGreater(len(corner[locale].strip()), 65)
                 self.assertTrue(corner["source"].startswith("https://"))
-        self.assertIn("<CircuitCornerGuide circuitId={circuit.external_id}", PAGE)
+        # Preserve all bilingual research without restoring the old AI-only
+        # fallback whose own disclosure says independent approval is pending.
+        self.assertNotIn("CircuitCornerGuide", PAGE)
+        self.assertNotIn("legacyNamedCircuitIds", PAGE)
 
     def test_archive_only_stories_are_not_mislabeled_corner_history(self):
         renderer = (ED / "circuit-corner-guide.tsx").read_text(encoding="utf-8")
