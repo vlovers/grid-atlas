@@ -43,9 +43,9 @@ test('public endpoint is off by default, read-only and enforces structural evide
   assert.match(api, /CIRCUIT_EDITORIAL_READ_ENABLED !== '1'/);
   assert.match(api, /@Get\('circuits\/:id\/article'\)/);
   assert.doesNotMatch(api, /@Post|@Put|@Patch|@Delete|media_assets/);
-  assert.match(api, /c\.status <> 'verified'/);
-  assert.match(api, /c\.review_method <> 'human'/);
-  assert.match(api, /lower\(btrim\(c\.reviewer\)\) = lower\(btrim\(a\.author\)\)/);
+  assert.match(api, /FROM circuit_editorial_public_articles/);
+  assert.doesNotMatch(api, /FROM circuit_editorial_articles/);
+  assert.match(api, /private, no-store, max-age=0/);
   assert.match(api, /articleSections/);
   assert.match(api, /createHash\('sha256'\)/);
   assert.match(api, /delete rows\[0\]\.review_revision_sha256/);
@@ -87,13 +87,14 @@ test('trusted actor boundary pins migration and binds review identity to session
   assert.doesNotMatch(actorBoundary, /GRANT\s+grid_circuit_(reviewer|publisher)\s+TO/i);
 });
 
-test('role bootstrap has no automatic membership and gives staging no approval columns', () => {
-  assert.match(grants, /CREATE ROLE grid_circuit_stager NOLOGIN/);
-  assert.match(grants, /CREATE ROLE grid_circuit_reviewer NOLOGIN/);
-  assert.match(grants, /CREATE ROLE grid_circuit_publisher NOLOGIN/);
-  assert.match(grants, /CREATE ROLE grid_circuit_reader NOLOGIN/);
-  assert.match(grants, /GRANT SELECT ON public\.circuit_editorial_articles/);
-  assert.match(grants, /GRANT INSERT ON public\.content_sources/);
+test('trusted migration is checksummed and bootstrap grants only protected operations to reviewers', () => {
+  const path = 'packages/database/migrations/0016_circuit_trusted_publication.sql';
+  const trusted = readFileSync(join(root, path), 'utf8');
+  assert.equal(contract['0016_circuit_trusted_publication.sql'], createHash('sha256').update(trusted).digest('hex'));
+  assert.match(trusted, /SECURITY DEFINER/);
+  assert.match(trusted, /search_path = pg_catalog, %I, pg_temp/);
+  assert.match(grants, /GRANT EXECUTE ON FUNCTION circuit_editorial_review/);
+  assert.match(grants, /GRANT SELECT ON circuit_editorial_public_articles TO grid_circuit_reader/);
+  assert.doesNotMatch(grants, /GRANT UPDATE[^;]+TO grid_circuit_reviewer/);
   assert.doesNotMatch(grants, /^GRANT\s+grid_circuit_\w+\s+TO\s+\w+/im);
-  assert.doesNotMatch(grants, /GRANT\s+UPDATE\([^)]*review_revision_sha256[^)]*\)\s+ON\s+public\.circuit_editorial_articles\s+TO\s+grid_circuit_stager/i);
 });

@@ -1,3 +1,7 @@
+# Current security contract
+
+Issue #396 supersedes the metadata/role-only approval notes below. See the [trusted publication operations and threat model](../engineering/circuit-publication-396.md). Migrations0013–0015 remain immutable history;0016 revokes their asserted approvals and requires protected receipts. Both public flags remain off.
+
 # Circuit editorial publication boundary — 29 October 2026
 
 This is an **engineering boundary, not publication approval**. It does not import the 165

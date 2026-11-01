@@ -1,79 +1,50 @@
--- DBA-only optional bootstrap, run after migration 0015 in a dedicated database.
--- Never run as the application account. This file grants NO membership to logins.
--- Verify schema name, inherited privileges and individual session_user identities.
+-- DBA-only, run after0016. Repeatable. Does not provision individual identities.
+-- search_path selects the installation schema (public by default).
+\set ON_ERROR_STOP on
+SELECT current_schema() AS circuit_schema \gset
 BEGIN;
 DO $$
+DECLARE group_name TEXT;
 BEGIN
-  CREATE ROLE grid_circuit_stager NOLOGIN;
-EXCEPTION WHEN duplicate_object THEN NULL;
-END $$;
-DO $$
-BEGIN
-  CREATE ROLE grid_circuit_reviewer NOLOGIN;
-EXCEPTION WHEN duplicate_object THEN NULL;
-END $$;
-DO $$
-BEGIN
-  CREATE ROLE grid_circuit_publisher NOLOGIN;
-EXCEPTION WHEN duplicate_object THEN NULL;
-END $$;
-DO $$
-BEGIN
-  CREATE ROLE grid_circuit_reader NOLOGIN;
-EXCEPTION WHEN duplicate_object THEN NULL;
-END $$;
-
-
-DO $
-BEGIN
-  IF EXISTS (SELECT 1 FROM pg_roles
-    WHERE rolname IN ('grid_circuit_stager','grid_circuit_reviewer',
-      'grid_circuit_publisher','grid_circuit_reader') AND rolcanlogin) THEN
-    RAISE EXCEPTION 'circuit group roles must remain NOLOGIN';
+  FOREACH group_name IN ARRAY ARRAY['grid_circuit_stager','grid_circuit_reviewer','grid_circuit_publisher','grid_circuit_reader'] LOOP
+    IF NOT EXISTS(SELECT 1 FROM pg_catalog.pg_roles WHERE rolname=group_name) THEN
+      EXECUTE format('CREATE ROLE %I NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS',group_name);
+    END IF;
+    IF EXISTS(SELECT 1 FROM pg_catalog.pg_roles WHERE rolname=group_name AND
+      (rolcanlogin OR rolsuper OR rolcreatedb OR rolcreaterole OR rolreplication OR rolbypassrls))
+      OR EXISTS(SELECT 1 FROM pg_catalog.pg_auth_members m JOIN pg_catalog.pg_roles r ON r.oid=m.member WHERE r.rolname=group_name) THEN
+      RAISE EXCEPTION 'unsafe circuit group role attributes or inherited membership: %',group_name;
+    END IF;
+  END LOOP;
+  IF EXISTS(SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_roles r ON r.oid=c.relowner
+    WHERE c.relnamespace=current_schema()::regnamespace AND r.rolname LIKE 'grid_circuit_%') THEN
+    RAISE EXCEPTION 'circuit capability roles must not own installation objects';
   END IF;
-END $;
-
-GRANT USAGE ON SCHEMA public TO grid_circuit_stager,
-  grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
-
--- Read-only API credentials: no approval or mutation capability.
-GRANT SELECT ON public.circuit_editorial_articles,public.circuit_editorial_claims,
-  public.circuit_editorial_evidence,public.circuit_editorial_article_claims,
-  public.content_sources TO grid_circuit_reader;
-
--- Untrusted importer: INSERT-only on new content, plus minimal UPDATE columns
--- required by existing invalidation triggers. Migration 0015 rejects attempts
--- to mark claims verified, evidence supported or articles published.
-GRANT SELECT ON public.historical_circuits,public.external_identities,
-  public.data_sources,public.content_sources,
-  public.circuit_editorial_articles,public.circuit_editorial_claims,
-  public.circuit_editorial_evidence,public.circuit_editorial_article_claims
-  TO grid_circuit_stager;
-GRANT INSERT ON public.content_sources,public.circuit_editorial_articles,
-  public.circuit_editorial_claims,public.circuit_editorial_evidence,
-  public.circuit_editorial_article_claims TO grid_circuit_stager;
-GRANT UPDATE(status,reviewer,reviewed_at,published_at)
-  ON public.circuit_editorial_articles TO grid_circuit_stager;
-GRANT UPDATE(status,reviewer,reviewed_at)
-  ON public.circuit_editorial_claims TO grid_circuit_stager;
-
--- A named reviewer can verify evidence and claims and set a review digest.
--- This is NOT proof of human work: membership must be granted only after
--- external identity verification and a documented review process.
-GRANT SELECT ON public.circuit_editorial_articles,public.circuit_editorial_claims,
-  public.circuit_editorial_evidence,public.circuit_editorial_article_claims,
-  public.content_sources TO grid_circuit_reviewer,grid_circuit_publisher;
-GRANT UPDATE(status,reviewer,reviewed_at)
-  ON public.circuit_editorial_claims TO grid_circuit_reviewer;
-GRANT UPDATE(supports)
-  ON public.circuit_editorial_evidence TO grid_circuit_reviewer;
-GRANT UPDATE(status,reviewer,reviewed_at,published_at,review_revision_sha256)
-  ON public.circuit_editorial_articles TO grid_circuit_reviewer;
-GRANT UPDATE(status,reviewer,reviewed_at,published_at)
-  ON public.circuit_editorial_articles TO grid_circuit_publisher;
+END $$;
+REVOKE CREATE ON SCHEMA :"circuit_schema" FROM PUBLIC,grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
+GRANT USAGE ON SCHEMA :"circuit_schema" TO grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
+-- Remove the old0015 broad grants, including column grants, before new grants.
+REVOKE ALL ON ALL TABLES IN SCHEMA :"circuit_schema" FROM grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
+REVOKE UPDATE(status,reviewer,reviewed_at,published_at,review_revision_sha256) ON circuit_editorial_articles
+  FROM grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher;
+REVOKE UPDATE(status,reviewer,reviewed_at) ON circuit_editorial_claims FROM grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher;
+REVOKE UPDATE(supports) ON circuit_editorial_evidence FROM grid_circuit_reviewer;
+REVOKE ALL ON ALL FUNCTIONS IN SCHEMA :"circuit_schema" FROM grid_circuit_stager,grid_circuit_reviewer,grid_circuit_publisher,grid_circuit_reader;
+GRANT SELECT ON historical_circuits,external_identities,data_sources,content_sources,
+  circuit_editorial_articles,circuit_editorial_claims,circuit_editorial_evidence,circuit_editorial_article_claims TO grid_circuit_stager;
+GRANT INSERT ON content_sources,circuit_editorial_articles,circuit_editorial_claims,
+  circuit_editorial_evidence,circuit_editorial_article_claims TO grid_circuit_stager;
+GRANT UPDATE(title,body_markdown,author,status) ON circuit_editorial_articles TO grid_circuit_stager;
+GRANT UPDATE(statement,status) ON circuit_editorial_claims TO grid_circuit_stager;
+GRANT UPDATE(locator) ON circuit_editorial_evidence TO grid_circuit_stager;
+GRANT DELETE ON circuit_editorial_evidence,circuit_editorial_article_claims TO grid_circuit_stager;
+GRANT EXECUTE ON FUNCTION circuit_editorial_actor(TEXT),circuit_editorial_in_trusted_operation() TO grid_circuit_stager;
+GRANT EXECUTE ON FUNCTION circuit_editorial_inspect(BIGINT) TO grid_circuit_reviewer,grid_circuit_publisher;
+GRANT EXECUTE ON FUNCTION circuit_editorial_review(BIGINT,TEXT) TO grid_circuit_reviewer;
+GRANT EXECUTE ON FUNCTION circuit_editorial_publish(BIGINT,BIGINT,TEXT),circuit_editorial_withdraw(BIGINT) TO grid_circuit_publisher;
+GRANT SELECT ON circuit_editorial_public_articles TO grid_circuit_reader;
+GRANT EXECUTE ON FUNCTION circuit_editorial_public_payload(BIGINT) TO grid_circuit_reader;
 COMMIT;
-
--- Memberships are deliberately absent. A DBA must explicitly GRANT a role
--- to each unique, authenticated PostgreSQL LOGIN; NEVER grant these roles
--- to shared service accounts, PUBLIC or the import worker. Do not enable
--- CIRCUIT_EDITORIAL_READ_ENABLED without independent human review.
+-- No GRANT membership and no human identity is asserted here. A DBA must verify
+-- each person, register their individual role OID/name+canonical principal, then
+-- grant only the required capability. Shared service logins never review/publish.

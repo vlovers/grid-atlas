@@ -9,7 +9,7 @@ test('25 UK/EN editorial dispositions remain review-only and each names its own 
  for(const id of ids)assert.deepEqual(records.filter(x=>x[1]===id).map(x=>Number(x[2])),[1,2,3,4,5]);
  const parts=text.split(/^### [a-z-]+:[1-5] — .+$/m).slice(1);
  for(const part of parts){
-  assert.match(part,/\*\*Disposition:\*\* \`(KEEP_CORE|MERGE_CORE|MERGE_RESULT|MERGE_CONTEXT|MERGE_INCIDENT|SUPPORTING_SCENE|CONDITIONAL_HUMAN_ANGLE|CONDITIONAL_TECHNICAL_ANGLE)\`/);
+  assert.match(part,/\*\*Disposition:\*\* `(KEEP_CORE|MERGE_CORE|MERGE_RESULT|MERGE_CONTEXT|MERGE_INCIDENT|SUPPORTING_SCENE|CONDITIONAL_HUMAN_ANGLE|CONDITIONAL_TECHNICAL_ANGLE)`/);
   assert.match(part,/Required external corroboration:/);
   assert.match(part,/Editorial guardrail:/);
   assert.match(part,/Historical approval:\*\* false; \*\*publication:\*\* blocked/);
