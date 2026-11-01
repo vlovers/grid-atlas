@@ -33,8 +33,8 @@ const expected = {
   "bugatti": [
     "The 4.422-kilometre Bugatti loop used",
     "Hulme still had to fight",
-    "During practice BRM reassigned the",
-    "Clark moved to the front",
+    "so BRM reassigned that car to Stewart",
+    "Clark took the lead on lap five",
     "Irwin's H16 BRM began leaking"
   ],
   "riverside": [
