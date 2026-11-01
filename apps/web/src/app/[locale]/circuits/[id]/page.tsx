@@ -1,10 +1,7 @@
-import { CircuitBiography, CircuitMoments, hasPublicCircuitMoments } from '@/components/editorial/circuit-narrative';
 import { MediaCollection } from '@/components/media/collection';
 import { LicensedMedia } from '@/components/media/licensed-media';
 import { selectMediaCollection, type MediaAsset } from '@/components/media/registry';
 import mediaPublication from '@/components/media/publication.json';
-import { cornerGuideFor } from '@/components/editorial/circuit-corner-model';
-import { CircuitCornerGuide, legacyNamedCircuitIds } from '@/components/editorial/circuit-corner-guide';
 import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gallery';
 import { EditorialHero, EditorialTabs, SourceAttribution, ArchiveDisclosure } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
@@ -78,30 +75,33 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const coverArtwork = selectCircuitCoverArtwork(layouts);
   const approvedPhoto = selectMediaCollection(mediaPublication.assets as MediaAsset[], { type: 'circuit', id: circuit.external_id })[0];
   const circuitPath = `/circuits/${id}`;
-  const hasCorners = legacyNamedCircuitIds.includes(circuit.external_id) || Boolean(cornerGuideFor(circuit.external_id, layouts.map(layout => layout.external_layout_id)));
-  const hasMoments = hasPublicCircuitMoments(circuit.external_id);
   return <><SeoBreadcrumbs locale={locale} crumbs={crumbs.map((crumb, index) => index === crumbs.length - 1 ? { ...crumb, path: pageHref(circuitPath, page) } : crumb)} description={description} /><section className={`page ${styles.dossier}`} data-testid="circuit-dossier">
     <EditorialHero title={circuit.name} eyebrow={uk ? 'ТРАСА / ІСТОРІЯ ФОРМУЛИ-1' : 'THE CIRCUIT / FORMULA 1 HISTORY'}
       context={<><span>{identities[0]?.fields.country}</span><span>{circuit.first_season ?? '—'}–{circuit.last_season ?? '—'}</span></>}
-      lead={<><p>{uk ? 'Історії поворотів, пам’ятні гонки та конфігурації різних епох.' : 'The stories behind the corners, memorable races and layouts across the eras.'}</p>{leaders.length > 0 && <p data-testid="circuit-win-leader">{uk ? 'Найбільше перемог у результатах F1DB' : 'Most wins in the F1DB results'}: {leaders.map((driver,index) => <span key={driver.id}>{index > 0 && ' · '}<Link href={`/drivers/${driver.id}`}>{driver.name}</Link></span>)} · {maxWins}</p>}</>}
+      lead={<><p>{uk ? 'Конфігурації різних епох та результати Гран-прі з архіву F1DB.' : 'Historic layouts and Grand Prix results from the pinned F1DB archive.'}</p>{leaders.length > 0 && <p data-testid="circuit-win-leader">{uk ? 'Найбільше перемог у результатах F1DB' : 'Most wins in the F1DB results'}: {leaders.map((driver,index) => <span key={driver.id}>{index > 0 && ' · '}<Link href={`/drivers/${driver.id}`}>{driver.name}</Link></span>)} · {maxWins}</p>}</>}
       media={approvedPhoto ? <LicensedMedia assets={mediaPublication.assets as MediaAsset[]} assetId={approvedPhoto.id} subject={{ type: 'circuit', id: circuit.external_id }} label={circuit.name} locale={lang} presentation="hero" /> : coverArtwork ? <CircuitCover circuitArtwork={coverArtwork} title={circuit.name} locale={lang} /> : <div className={styles.noOutline}><p>{uk ? 'Дослідіть Гран-прі цієї траси' : 'Explore the Grands Prix at this circuit'}</p><a href="#circuit-history">{circuit.races} GP ↓</a></div>}
       statistics={[{ label: t('grandsPrix'), value: circuit.races }, { label: uk ? 'Конфігурації' : 'Layouts', value: layouts.length }, { label: t('seasons'), value: new Set(history.map(race => race.season_year)).size }]} />
     <SourceAttribution locale={lang} />
     <EditorialTabs label={uk ? 'Розділи траси' : 'Circuit sections'} items={[
-      { id: 'circuit-biography', label: uk ? 'Історія траси' : 'Circuit history' },
+      { id: 'circuit-biography', label: uk ? 'Архівні відомості' : 'Archive identity' },
       ...(publishedArticle ? [{ id: 'circuit-reviewed-article', label: uk ? 'Редакційна стаття' : 'Editorial article' }] : []),
-      ...(hasCorners ? [{ id: 'circuit-corners', label: uk ? 'Повороти' : 'Corners' }] : []),
-      ...(hasMoments ? [{ id: 'circuit-moments', label: uk ? 'Легендарні моменти' : 'Memorable moments' }] : []),
       { id: 'circuit-layouts', label: uk ? 'Зміни траси' : 'Changing layouts' },
       { id: 'circuit-photos', label: uk ? 'Фотоархів' : 'Image archive' },
       { id: 'circuit-history', label: uk ? 'Усі Гран-прі' : 'All Grands Prix' },
     ]} />
-    <section id="circuit-biography" tabIndex={-1}><CircuitBiography circuitId={circuit.external_id} locale={lang} />
+    <section id="circuit-biography" tabIndex={-1}><div data-testid="circuit-biography">
+      <h2>{uk ? 'Архівні відомості' : 'Archive identity'}</h2>
+      <p>{uk ? 'Відомості про трасу, конфігурації та результати наведено за закріпленим випуском F1DB.' :
+        'Circuit identity, layouts and results follow the pinned F1DB release.'}</p>
+    </div>
       {identities[0] && <IdentityFacts identity={identities[0]} locale={lang} />}
     </section>
     {publishedArticle && <CircuitReviewedArticle article={publishedArticle} locale={lang} />}
-    {hasCorners && <section id="circuit-corners" tabIndex={-1}><CircuitCornerGuide circuitId={circuit.external_id} locale={lang} availableLayouts={layouts.map(layout => layout.external_layout_id)} /></section>}
-    {hasMoments && <section id="circuit-moments" tabIndex={-1}><CircuitMoments circuitId={circuit.external_id} locale={lang} history={history} /></section>}
+    {reviewed && !publishedArticle && <p data-testid="circuit-article-status">
+      {reviewed.status === 'unavailable'
+        ? (uk ? 'Редакційна стаття тимчасово недоступна. Архівні відомості можна дослідити нижче.' : 'The editorial article is temporarily unavailable. Explore the archive records below.')
+        : (uk ? 'Опублікованої редакційної статті ще немає. Нижче наведено архівні відомості.' : 'A published editorial article is not available yet. Explore the archive records below.')}
+    </p>}
     <section id="circuit-layouts" tabIndex={-1}>
       <CircuitExperience layouts={layouts} events={technicalEvents} locale={lang} />
       <ArchiveDisclosure label={uk ? 'Порівняти всі контури' : 'Compare all outlines'} count={layouts.length}><CircuitLayoutGallery layouts={layouts} title={circuit.name} locale={lang} /></ArchiveDisclosure>

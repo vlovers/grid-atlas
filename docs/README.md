@@ -43,3 +43,5 @@ This directory contains **current operating documentation**, **historical implem
 See [open issue triage](issue-triage-2026-10.md) for the 12 issue acceptance decisions and [repository hygiene audit](repository-hygiene-2026-10.md) for identified cleanup work and deliberately retained historical material.
 
 Circuit editorial operators: [trusted publication security and runbook](engineering/circuit-publication-396.md) (default-off; no human approval implied).
+
+Circuit reader integration: [verified states and synthetic screenshots](design/circuit-publication-396/README.md).

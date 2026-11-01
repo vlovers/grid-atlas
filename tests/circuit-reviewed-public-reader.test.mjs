@@ -9,7 +9,7 @@ const source = path => readFileSync(new URL(path, root), 'utf8');
 const evidence = { url: 'https://example.org/circuit', title: 'Synthetic archive', publisher: 'Fixture', author: null,
   accessed_on: '2026-10-29', locator: 'paragraph 2' };
 const valid = () => ({ id: '4', locale: 'en', slug: 'test-circuit', title: 'Synthetic circuit',
-  body_markdown: '## Weekend\\n\\nSynthetic claim A.\\n\\nSynthetic claim B.',
+  body_markdown: '## Weekend\n\nSynthetic claim A.\n\nSynthetic claim B.',
   published_at: '2026-10-29T04:00:00Z', references: [{ url: evidence.url, title: evidence.title, publisher: evidence.publisher }],
   claims: [{ id: '1', statement: 'Synthetic claim A.', evidence: [evidence] },
     { id: '2', statement: 'Synthetic claim B.', evidence: [evidence] }],
@@ -46,4 +46,14 @@ test('reader stays disabled without explicit web and API release switches', () =
   assert.match(component, /rel="noopener noreferrer"/);
   assert.doesNotMatch(component, /dangerouslySetInnerHTML|editorialDraftArticles|circuit-candidates|<img/);
   assert.doesNotMatch(page, /editorialDraftArticles|CIRCUIT_EDITORIAL_UI_ENABLED !== '0'/);
+});
+
+
+test('public circuit page never falls back to AI-only legacy summaries or unapproved manuscript registries', () => {
+  const page = source('apps/web/src/app/[locale]/circuits/[id]/page.tsx');
+  assert.doesNotMatch(page, /circuit-narrative|CircuitBiography|CircuitMoments|hasPublicCircuitMoments|circuit-corner-guide|CircuitCornerGuide|cornerGuideFor/);
+  assert.doesNotMatch(page, /circuit-candidates|circuit-history-stories|circuit-release|circuit-public-moments/);
+  assert.match(page, /circuit-article-status/);
+  assert.match(page, /temporarily unavailable/);
+  assert.match(page, /pinned F1DB release/);
 });
