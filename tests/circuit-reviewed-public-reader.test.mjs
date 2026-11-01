@@ -57,3 +57,15 @@ test('public circuit page never falls back to AI-only legacy summaries or unappr
   assert.match(page, /temporarily unavailable/);
   assert.match(page, /pinned F1DB release/);
 });
+
+test('circuit page keeps a source-backed archive journey without resurrecting unreviewed content', () => {
+  const page = source('apps/web/src/app/[locale]/circuits/[id]/page.tsx');
+  const css = source('apps/web/src/app/[locale]/circuits/[id]/circuit.module.css');
+  assert.match(page, /orderedRaces = \[\.\.\.history\]/);
+  assert.match(page, /raceJourney/);
+  assert.match(page, /id="circuit-race-journey"/);
+  assert.match(page, /href=\{`\/races\/\$\{race\.race_id\}`\}/);
+  assert.match(page, /earliest, a middle and its latest recorded Grand Prix/);
+  assert.match(css, /journeyGrid/);
+  assert.match(css, /max-width: 800px/);
+});
