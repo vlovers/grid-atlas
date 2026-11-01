@@ -54,7 +54,7 @@ test('five historical dossiers have 25 readable bilingual scenes and two indepen
 
 test('disputed historical details remain explicit and do not silently rewrite the official result', () => {
   const spa = source.circuits.find((circuit) => circuit.circuit_id === 'spa-francorchamps');
-  assert.match(spa.stories[1].narrative.en, /accounts differ on the exact lap/);
+  assert.match(spa.stories[1].narrative.en, /accounts describe Surtees retaking the lead but disagree on the exact lap/);
   assert.match(spa.stories[1].narrative.uk, /розходяться щодо точного кола/);
   const zolder = source.circuits.find((circuit) => circuit.circuit_id === 'zolder');
   assert.match(zolder.stories[3].narrative.en, /Tyrrell's later exclusion/);

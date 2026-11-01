@@ -33,7 +33,7 @@ const expectedRewrites = new Map([
   ['montjuic:1', ['Montjuïc barriers', 'огорожах Монжуїка']],
   ['pedralbes:5', ['clutch trouble', 'зі зчепленням']],
   ['spa-francorchamps:1', ['Jackie Stewart', 'Джекі Стюарт']],
-  ['reims:3', ['did not finish', 'не дістався']],
+  ['reims:3', ['Only Fangio and Kling reached the finish', 'До фінішу дісталися лише']],
 ]);
 
 test('all 33 expansion research dossiers keep 165 bilingual scenes with separate historical leads and closed publication', () => {

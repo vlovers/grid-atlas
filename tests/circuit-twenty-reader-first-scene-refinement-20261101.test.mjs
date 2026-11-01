@@ -39,7 +39,7 @@ const edited = {
     [3, "Porto's cobbles", 'бруківку й трамвайні колії'],
     [4, 'did not pass him', 'не випередила його'],
   ],
-  sebring: [[4, 'By pushing the stranded Cooper', 'Доштовхавши зупинений Cooper']],
+  sebring: [[4, "His fourth place secured the drivers' championship", 'Його четверте місце забезпечило']],
   monaco: [
     [1, 'Attrition opened the door', 'Паніс сам дістався'],
     [2, 'The final margin records', 'Фінішний розрив показує'],

@@ -31,8 +31,8 @@ const expected = {
   sebring: {
     year: 1959,
     report: 'grandprix.com/races/united-states-gp-1959-2',
-    en: ['42-lap', '0.6 seconds', 'contact', 'pushing the stranded Cooper', 'Rob Walker Cooper'],
-    uk: ['42 кола', '0,6 секунди', 'контакту', 'Доштовхавши зупинений Cooper', 'Роба Вокера'],
+    en: ['42-lap', '0.6 seconds', 'contact', "fourth place secured the drivers' championship", 'Rob Walker Cooper'],
+    uk: ['42 кола', '0,6 секунди', 'контакту', 'Його четверте місце забезпечило', 'Роба Вокера'],
   },
 };
 
