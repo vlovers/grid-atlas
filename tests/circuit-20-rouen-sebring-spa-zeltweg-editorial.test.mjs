@@ -22,7 +22,7 @@ test('20 EN/UK research scenes retain distinct historical anchors and fail-close
       assert.ok(scene.historical_sources.length >= 2, id + ':' + scene.story_index);
       for (const [locale, anchor] of [['en', expected[index][0]], ['uk', expected[index][1]]]) {
         assert.ok(scene.narrative[locale].includes(anchor), id + ':' + scene.story_index + ':' + locale);
-        assert.ok(scene.narrative[locale].trim().split(/\\s+/).length >= (locale === 'en' ? 65 : 55));
+        assert.ok(scene.narrative[locale].trim().split(/\s+/).length >= (locale === 'en' ? 65 : 55));
       }
     });
     for (const locale of ['en', 'uk']) {
