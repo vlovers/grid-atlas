@@ -23,7 +23,7 @@ test('20 bilingual scenes separate race classifications from independent histori
       total++;
       assert.ok(scene.narrative.en.length >= 400 && scene.narrative.uk.length >= 400, id);
       assert.match(scene.historical_source_locator, /(?:classification|F1 result).*independent claim review pending/i, id);
-      const domains = new Set(scene.historical_sources.map((url) => new URL(url).hostname.replace(/^www\\./, '')));
+      const domains = new Set(scene.historical_sources.map((url) => new URL(url).hostname.replace(/^www\./, '')));
       assert.ok(domains.size >= 2, id + '/independent historical domains');
       assert.ok(scene.source_urls.every((url) => url.includes('formula1.com/en/results/')));
       assert.equal(scene.historical_review_status, 'pending_independent_claim_review');
