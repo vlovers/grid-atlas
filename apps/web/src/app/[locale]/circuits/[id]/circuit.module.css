@@ -30,3 +30,12 @@
 .dossier form .actions { margin-top: .7rem; }
 .dossier form input { flex: 1 1 min(100%, 16rem); min-width: 0; }
 .dossier details > summary { min-height: 44px; cursor: pointer; align-content: center; }
+
+/* A race-led reading path uses only archive records and remains readable at 320px. */
+.journeyGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.75rem, 2vw, 1.5rem); margin-block: 1.5rem 2.5rem; }
+.journeyCard { min-width: 0; padding: 1.25rem; border: 1px solid var(--line); border-radius: .75rem; }
+.journeyCard > span { color: var(--muted); font: .8rem/1.5 var(--font-mono); }
+.journeyCard h3 { font-size: clamp(1.15rem, 1.7vw, 1.5rem); line-height: 1.35; overflow-wrap: anywhere; }
+.journeyCard p { overflow-wrap: anywhere; }
+.journeyCard p span { display: block; }
+@media (max-width: 800px) { .journeyGrid { grid-template-columns: 1fr; } }
