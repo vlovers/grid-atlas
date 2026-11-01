@@ -28,7 +28,9 @@ jobs:
     env:
       DATABASE_URL: postgresql://grid_atlas:integration_only@localhost:5432/grid_atlas
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
       - name: Install PostgreSQL client
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Test lineage identity preflight guards

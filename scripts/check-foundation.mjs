@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs';
+import { assertWorkflowActionsPinned } from './check-workflow-action-pins.mjs';
 
 const required = [
   'README.md', 'package.json', 'pnpm-workspace.yaml', '.env.example',
@@ -13,4 +14,5 @@ const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
 if (!pkg.private || !pkg.packageManager?.startsWith('pnpm@')) {
   throw new Error('Workspace must be private and pin pnpm');
 }
-console.log('Foundation files validated');
+const workflowCount = assertWorkflowActionsPinned();
+console.log('Foundation files validated; ' + workflowCount + ' workflows use immutable actions');

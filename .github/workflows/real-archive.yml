@@ -86,8 +86,10 @@ jobs:
       DATABASE_URL: postgresql://grid_atlas:integration_only@127.0.0.1:5432/grid_atlas
       GRID_ATLAS_NEXT_DIST_DIR: .next-test
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24'
       - name: Install pinned toolchain
@@ -111,7 +113,7 @@ jobs:
             --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
             --output /tmp/grid-atlas-circuit-content-batch01.json
       - name: Upload unpublished 25-circuit content pack
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: unpublished-circuit-content-batch01
           path: /tmp/grid-atlas-circuit-content-batch01.json
@@ -127,7 +129,7 @@ jobs:
             --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt \
             --output /tmp/grid-atlas-cross-era-identities.json
       - name: Upload unpublished identity audit
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: unpublished-cross-era-identity-audit
           path: /tmp/grid-atlas-cross-era-identities.json
@@ -142,7 +144,7 @@ jobs:
           python3 scripts/prepare_bulk_driver_cohort.py --archive /tmp/grid-atlas-f1db/f1db-json-splitted.zip --checksums /tmp/grid-atlas-f1db/checksums_sha256.txt --output /tmp/grid-atlas-bulk-fifty
           python3 -m unittest discover -s tests -p 'test_bulk_driver_cohort.py' -v
       - name: Upload 50-driver research pack
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: unpublished-driver-research-fifty
           path: /tmp/grid-atlas-bulk-fifty/
@@ -189,7 +191,7 @@ jobs:
         run: pnpm exec playwright test --config playwright.real-archive.config.ts
       - name: Upload full coverage audit and browser screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: encyclopedia-coverage-and-screenshots
           path: |
@@ -198,7 +200,7 @@ jobs:
           retention-days: 14
       - name: Upload real archive browser failure evidence
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: real-archive-browser-failure
           path: test-results/
