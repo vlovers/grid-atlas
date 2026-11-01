@@ -45,6 +45,7 @@ test('all 33 expansion research dossiers keep 165 bilingual scenes with separate
   const independentLinks = new Set();
   for (const dossier of dossiers) {
     assert.equal(dossier.stories.length, 5, dossier.circuit_id);
+    assert.equal(new Set(dossier.stories.map(story => story.historical_source_locator)).size, 5, dossier.circuit_id + '/scene-specific locators');
     for (const story of dossier.stories) {
       const key = dossier.circuit_id + ':' + story.story_index;
       assert.ok(story.source_urls.some(url => url.includes('formula1.com/en/results/')), key + '/classification');
@@ -59,7 +60,8 @@ test('all 33 expansion research dossiers keep 165 bilingual scenes with separate
       if (newResearchLeads.has(dossier.circuit_id)) {
         newScenes++;
         assert.equal(story.historical_evidence_scope, 'race_context_lead_not_scene_claim_verified', key);
-        assert.match(story.historical_source_locator, /Motor Sport|Grandprix\.com/i, key + '/specific historical locator');
+        assert.ok(story.historical_source_locator.length >= 70, key + '/specific historical locator');
+        assert.ok(new Set(story.historical_sources.map(url => new URL(url).hostname)).size >= 2, key + '/independent publishers');
       }
       const anchors = expectedRewrites.get(key);
       if (anchors) {
