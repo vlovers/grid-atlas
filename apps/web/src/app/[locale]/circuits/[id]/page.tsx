@@ -111,14 +111,14 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     </p>}
     {raceJourney.length > 0 && <section id="circuit-race-journey" tabIndex={-1} aria-labelledby="circuit-race-journey-title">
       <h2 id="circuit-race-journey-title">{uk ? 'Гонки різних епох' : 'Races across eras'}</h2>
-      <p>{uk ? 'Три точки входу до архіву: перша, одна з середини переліку та остання зафіксована гонка на цій трасі. Це добірка за датами, а не рейтинг найважливіших подій.' :
-        'Three ways into the archive: its earliest, a middle and its latest recorded Grand Prix. Selected by archive order, not by editorial importance.'}</p>
+      <p>{uk ? 'Переглянь гонки з різних періодів історії траси. Події вибрано за порядком в архіві, а не за редакційною оцінкою їхньої важливості.' :
+        'Explore recorded Grands Prix from different eras of the circuit. The selection follows archive order, not an editorial ranking of importance.'}</p>
       <div className={styles.journeyGrid}>{raceJourney.map((race, index) => <article className={styles.journeyCard} key={race.race_id}>
         <span>{index === 0 ? (uk ? 'Перша в архіві' : 'Earliest recorded') :
           index === raceJourney.length - 1 ? (uk ? 'Остання в архіві' : 'Latest recorded') :
           (uk ? 'Між епохами' : 'Between eras')}</span>
         <h3><Link href={`/races/${race.race_id}`}>{race.season_year} · {race.race_name}</Link></h3>
-        <p>{uk ? 'Переможець за результатами архіву' : 'Winner in the recorded results'}: {race.winners.length
+        <p>{uk ? 'Переможці за результатами архіву' : 'Winners in the recorded results'}: {race.winners.length
           ? race.winners.map(winner => <span key={`${winner.driver_id}:${winner.constructor_id}`}><Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> · <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></span>)
           : (uk ? 'немає запису' : 'not recorded')}</p>
       </article>)}</div>
