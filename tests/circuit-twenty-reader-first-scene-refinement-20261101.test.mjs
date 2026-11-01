@@ -16,9 +16,9 @@ const dossiers = files.flatMap(file =>
 );
 const edited = {
   aida: [
-    [1, 'The zero beside Senna', 'Нуль кіл у протоколі'],
-    [2, "Hill's climb back into second", 'Гілл повернувся на другу позицію'],
-    [3, "Jordan's breakthrough came", 'Перший подіум Jordan'],
+    [1, "Senna's zero completed laps", 'Нуль пройдених кіл'],
+    [2, 'Berger inherited second', 'Бергер став другим'],
+    [3, "Jordan's first podium depended", 'Jordan здобула перший подіум'],
   ],
   dallas: [
     [2, "The report separates Rosberg's pass", 'Репортаж розділяє три'],

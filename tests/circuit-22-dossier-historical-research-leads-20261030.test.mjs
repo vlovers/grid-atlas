@@ -28,7 +28,7 @@ const expectedRewrites = new Map([
   ['avus:1', ['two heats', 'два заїзди']],
   ['ain-diab:3', ['lap 39', '39-му колі']],
   ['ain-diab:5', ['engine failed', 'двигун']],
-  ['dijon:1', ['lap 46', '46-му колі']],
+  ['dijon:1', ['first 46 laps', 'перші 46 кіл']],
   ['dijon:2', ['engine hesitated', 'двигун']],
   ['montjuic:1', ['Montjuïc barriers', 'огорожах Монжуїка']],
   ['pedralbes:5', ['clutch trouble', 'зі зчепленням']],
