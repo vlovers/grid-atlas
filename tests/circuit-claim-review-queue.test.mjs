@@ -63,6 +63,13 @@ test('priority queue ranks source concentration and contextual evidence without 
     queue.entries.filter(item => item.flags.includes('bilingual_numeral_difference')).length);
   assert.equal(queue.summary.race_year_review_candidates,
     queue.entries.filter(item => item.flags.includes('race_source_year_mismatch')).length);
+  assert.equal(queue.summary.cross_year_source_review_candidates,
+    queue.entries.filter(item => item.flags.includes('cross_year_result_source_requires_context')).length);
+  for (const item of queue.entries) {
+    const resultYears = item.source_urls.flatMap(url => [...url.matchAll(/\/en\/results\/(\d{4})\/races\/\d+\//g)].map(match => Number(match[1])));
+    assert.equal(item.flags.includes('cross_year_result_source_requires_context'),
+      resultYears.some(year => year !== item.year), item.key);
+  }
   const nivelles = queue.entries.find(item => item.key === 'nivelles:2');
   assert.ok(nivelles);
   assert.deepEqual(nivelles.numerical_comparison, { only_en: [], only_uk: [] },

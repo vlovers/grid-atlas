@@ -41,3 +41,5 @@ This directory contains **current operating documentation**, **historical implem
 5. An old issue, a passing CI run, and a published release are different statuses. Verify each independently.
 
 See [open issue triage](issue-triage-2026-10.md) for the 12 issue acceptance decisions and [repository hygiene audit](repository-hygiene-2026-10.md) for identified cleanup work and deliberately retained historical material.
+
+Circuit editorial operators: [trusted publication security and runbook](engineering/circuit-publication-396.md) (default-off; no human approval implied).
