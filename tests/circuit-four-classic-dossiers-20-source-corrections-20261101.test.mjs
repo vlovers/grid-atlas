@@ -4,7 +4,7 @@ import test from 'node:test';
 
 const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json', import.meta.url), 'utf8'));
 const anchors = {
-  pedralbes: [['Schell led the opening lap', 'Шелл очолив перше коло'], ['six laps left', 'шість кіл'], ['twelve laps remaining', 'дванадцять кіл'], ['Mieres and Kling a lap behind', "М'єрес і Клінг поступилися"], ['Harry Schell, not Ascari', 'Найшвидше коло насправді встановив Гаррі Шелл']],
+  pedralbes: [['Schell led the opening lap', 'Шелл очолив перше коло'], ['six laps left', 'шість кіл'], ['twelve laps remaining', 'дванадцять кіл'], ['Mieres and Kling a lap behind', "М'єрес і Клінг поступилися"], ['Schell set the fastest lap', 'Найшвидше коло насправді встановив Гаррі Шелл']],
   pescara: [['Musso led the first lap', 'Муссо очолював гонку'], ['On lap ten', 'На десятому колі'], ['Jean Behra\'s Maserati had already stopped', 'Maserati Жана Бери зупинилася'], ['bodywork coming loose', 'розхитувався кузов'], ['precautionary oil stop', 'профілактичну зупинку']],
   porto: [['period report calls the leaking liquid fuel', 'репортаж називає рідину пальним'], ['by lap 33', '33-му колі'], ['opening six laps', 'шести початкових кіл'], ['opening lap', 'першому колі'], ['51st lap', '51-ше коло']],
   reims: [['lap thirteen', 'тринадцятому колі'], ['61st lap', '61-ше коло'], ['stopped in smoke near Thillois', 'зупинився в диму'], ['eased the Thillois hairpin', 'пом\'якшили шпильку Thillois'], ['ran out of fuel on the final straight', 'закінчилося пальне']],

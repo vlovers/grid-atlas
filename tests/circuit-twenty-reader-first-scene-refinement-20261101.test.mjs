@@ -32,12 +32,12 @@ const edited = {
   ],
   anderstorp: [[5, 'The Cosworth failure increased', 'Ще до поломки Cosworth']],
   rouen: [
-    [2, 'Starting eleventh', 'Стартувавши одинадцятим'],
+    [2, 'From eleventh on the grid', 'Стартувавши одинадцятим'],
     [5, 'The order matters', 'Послідовність важлива'],
   ],
   porto: [
     [3, "Porto's cobbles", 'бруківку й трамвайні колії'],
-    [4, 'did not pass him', 'не випередила його'],
+    [4, 'never found a way past', 'не знайшла нагоди для обгону'],
   ],
   sebring: [[4, "His fourth place secured the drivers' championship", 'Його четверте місце забезпечило']],
   monaco: [

@@ -19,8 +19,8 @@ const expected = {
   porto: {
     year: 1960,
     report: 'grandprix.com/races/portuguese-gp-1960',
-    en: ['world championship', 'Cooper one-two', 'damaging his Lotus', 'Phil Hill', 'direction of the circuit'],
-    uk: ['чемпіонський титул', 'дубль', 'пошкодив Lotus', 'Філ Гілл', 'проти напрямку руху'],
+    en: ['secured the title', 'Cooper one-two', 'damaging his Lotus', 'Phil Hill', 'direction of the circuit'],
+    uk: ['достроково здобув титул', 'дубль', 'пошкодив Lotus', 'Філ Гілл', 'проти напрямку руху'],
   },
   rouen: {
     year: 1962,
