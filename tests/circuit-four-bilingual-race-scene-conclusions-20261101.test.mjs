@@ -7,11 +7,11 @@ const data = JSON.parse(readFileSync(file, 'utf8'));
 const byId = new Map(data.circuits.map((c) => [c.circuit_id, c]));
 const anchors = {
   'ain-diab': [
-    ['damaged nose', 'пошкодженим носом'],
-    ['gap to the winner', 'Відставання від переможця'],
-    ['0.8-second finishing gap', 'Розрив у 0,8'],
+    ['damaged nose', 'пошкоджений ніс'],
+    ['gap to the winner', 'Готорн виграв чемпіонат'],
+    ['0.8-second finishing gap', 'розрив у 0,8'],
     ['regain his lap', 'повернути коло'],
-    ["Brooks's engine failed", 'поломки двигуна Брукса'],
+    ["Brooks had briefly retaken", 'Брукс ще повернув позицію'],
   ],
   anderstorp: [
     ["BT46B's only Grand Prix victory", 'Єдина перемога BT46B'],
