@@ -7,14 +7,14 @@ const byId = new Map(guides.map((guide) => [guide.id, guide]));
 const ids = [
   'fuji', 'miami', 'sepang', 'kyalami', 'adelaide', 'melbourne', 'las-vegas',
   'sirius', 'lusail', 'yeongam', 'detroit', 'phoenix', 'valencia', 'buddh',
-  'long-beach', 'bremgarten', 'watkins-glen', 'magny-cours',
+  'long-beach', 'bremgarten', 'watkins-glen', 'magny-cours', 'estoril',
 ];
 
-test('all 78 guides and 166 sections remain present after 18 bilingual history rewrites', () => {
+test('all 78 guides and 166 sections remain present after 19 bilingual history rewrites', () => {
   assert.equal(guides.length, 78);
   assert.equal(byId.size, 78);
   assert.equal(guides.reduce((count, guide) => count + guide.sections.length, 0), 166);
-  assert.equal(new Set(ids).size, 18);
+  assert.equal(new Set(ids).size, 19);
   for (const guide of guides) {
     assert.ok(guide.sections.length >= 2, guide.id);
     for (const section of guide.sections) {
@@ -24,7 +24,7 @@ test('all 78 guides and 166 sections remain present after 18 bilingual history r
   }
 });
 
-test('18 formerly generic sections now tell specific EN/UK race stories with historical reports', () => {
+test('19 formerly generic sections now tell specific EN/UK race stories with historical reports', () => {
   const oldLabels = /^(Start with the race record|Start with the debut result|Why a debut can be memorable|Street circuit versus permanent track|Follow the race beyond the winner|One city, one different layout|Connect the race to the season|Decode the venue's identity)$/;
   for (const id of ids) {
     const section = byId.get(id)?.sections[1];
