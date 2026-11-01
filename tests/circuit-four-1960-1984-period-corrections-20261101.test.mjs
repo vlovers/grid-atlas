@@ -32,7 +32,7 @@ test('Zolder distinguishes retrospective Senna points and Prost electrical fault
 test('Nivelles records lap 76 versus 77 discrepancy without claiming exact lap',()=>{
  const s=get('nivelles')[4];
  assert.match(s.historical_source_locator,/lap 76; Grandprix.com says lap 77/);
- assert.match(s.narrative.en,/late in the race/);
+ assert.match(s.narrative.en,/Matra's V12 began to starve of fuel/);
 });
 test('East London keeps mechanical title loss separate from local point',()=>{
  assert.match(get('east-london')[1].narrative.en,/locking washer/);

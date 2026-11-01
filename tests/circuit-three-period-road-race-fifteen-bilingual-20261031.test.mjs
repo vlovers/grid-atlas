@@ -8,7 +8,7 @@ const claims={
     "Musso led the first lap",
     "left-rear wheel",
     "Gregory's loosening bodywork",
-    "loose scuttle",
+    "bodywork coming loose",
     "Brooks's overheating car"
   ],
   "porto": [
