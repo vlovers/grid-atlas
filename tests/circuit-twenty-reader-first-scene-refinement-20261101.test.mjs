@@ -32,7 +32,7 @@ const edited = {
   ],
   anderstorp: [[5, 'The Cosworth failure increased', 'Ще до поломки Cosworth']],
   rouen: [
-    [2, 'From eleventh on the grid', 'Стартувавши одинадцятим'],
+    [2, 'Starting eleventh', 'З одинадцятого місця на старті'],
     [5, 'The order matters', 'Послідовність важлива'],
   ],
   porto: [
