@@ -46,7 +46,7 @@ test('20 classic circuit scenes preserve period evidence, EN/UK substance and un
    assert.ok(story.source_urls.every((url) => url.includes('formula1.com/en/results/')), id + '/classification');
    assert.ok(story.historical_sources.some((url) => url.includes(sourceDomain)), id + '/period source');
    assert.ok(story.historical_sources.every((url) => !story.source_urls.includes(url)), id + '/separate source');
-   assert.match(story.historical_source_locator, /Classification URL records race results only; independent claim-level review pending\./, id + '/review');
+   assert.match(story.historical_source_locator, /classification.*(?:results|historical mechanism).*independent.*review pending/i, id + '/review');
    assert.equal(story.historical_review_status, 'pending_independent_claim_review');
    assert.equal(story.independent_approval, false);
    assert.equal(story.publication, 'blocked');

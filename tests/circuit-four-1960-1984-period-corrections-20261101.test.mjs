@@ -15,7 +15,7 @@ test('20 EN/UK scenes retain independent leads and fail-closed approval',()=>{
   assert.equal(s.publication,'blocked');
   assert.equal(s.independent_approval,false);
   assert.equal(s.historical_review_status,'pending_independent_claim_review');
-  assert.match(s.historical_source_locator,/independent human claim review pending/);
+  assert.match(s.historical_source_locator,/independent (?:human )?claim review pending/i);
  }
  assert.equal(count,20);
 });

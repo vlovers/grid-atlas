@@ -38,7 +38,7 @@ const expected = {
     "Irwin's H16 BRM began leaking"
   ],
   "riverside": [
-    "Brabham led the first four",
+    "The period report traced both fires",
     "Dan Gurney had also chased",
     "Moss's 1:54.4 pole lap was",
     "The course also crossed an",

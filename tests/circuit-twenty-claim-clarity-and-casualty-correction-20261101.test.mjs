@@ -27,7 +27,8 @@ test('20 edited race scenes retain EN/UK, independent leads and publication bloc
 });
 test('Montjuic reporting identifies four deaths and does not imply Stommelen died',()=>{
  const scenes=get('montjuic').stories;
- assert.match(scenes[0].narrative.en,/Stommelen survived the crash; four people/);
+ assert.match(scenes[0].narrative.en,/Stommelen survived/);
+ assert.match(scenes[0].narrative.en,/four confirmed fatalities/);
  assert.match(scenes[0].narrative.uk,/Штоммелен вижив/);
  assert.match(scenes[1].narrative.en,/crash killed four bystanders/);
  assert.doesNotMatch(scenes[1].narrative.en,/Stommelen's fatal accident/);
