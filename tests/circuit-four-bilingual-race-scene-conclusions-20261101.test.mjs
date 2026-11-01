@@ -68,7 +68,7 @@ test('chronology, classification and disputed technology remain separate', () =>
   assert.match(get('ain-diab', 2).narrative.en, /lap 39/);
   assert.match(get('anderstorp', 1).narrative.en, /five formal protests/);
   assert.match(get('anderstorp', 1).narrative.en, /(?:withdrew|withdrawal)/);
-  assert.match(get('anderstorp', 5).historical_source_locator, /lap-38\/lap-39/);
+  assert.match(get('anderstorp', 5).historical_source_locator, /lap 38 or 39/);
   assert.match(get('bremgarten', 5).narrative.uk, /Запасний план зник/);
   assert.match(get('clermont-ferrand', 4).narrative.en, /injured hand from his practice crash/);
   assert.match(get('clermont-ferrand', 5).narrative.en, /separate stone hazard/);
