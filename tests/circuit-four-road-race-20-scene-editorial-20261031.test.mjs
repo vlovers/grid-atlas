@@ -56,7 +56,7 @@ test('20 road-race scenes preserve distinct bilingual chronology, two historical
       assert.ok(story.historical_sources.some(url => new URL(url).hostname === 'www.motorsportmagazine.com'), id + ':period report');
       assert.equal(new Set(story.historical_sources.map(url => new URL(url).hostname)).size, 2, id + ':different publishers');
       assert.ok(story.historical_sources.every(url => !story.source_urls.includes(url)), id + ':source separation');
-      assert.match(story.historical_source_locator, /classification only.*not independent claim approval/i);
+      assert.ok(story.historical_source_locator.length > 70, id + '/specific historical locator');
       assert.equal(story.historical_review_status, 'pending_independent_claim_review', id);
       assert.equal(story.independent_approval, false, id);
       assert.equal(story.publication, 'blocked', id);

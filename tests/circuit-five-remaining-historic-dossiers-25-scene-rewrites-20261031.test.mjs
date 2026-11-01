@@ -37,7 +37,7 @@ test('five historical dossiers have 25 readable bilingual scenes and two indepen
       assert.ok(story.historical_sources.some((url) => url.includes('grandprix.com/races/')), id + '/independent race history');
       assert.equal(new Set(story.historical_sources).size, story.historical_sources.length, id + '/unique sources');
       assert.ok(story.historical_sources.every((url) => !story.source_urls.includes(url)), id + '/source separation');
-      assert.match(story.historical_source_locator, /classification.*claim-level source review pending/i, id + '/review boundary');
+      assert.match(story.historical_source_locator, /Motor Sport|Grandprix\.com/i, id + '/specific historical locator');
       assert.equal(story.historical_review_status, 'pending_independent_claim_review', id);
       assert.equal(story.independent_approval, false, id);
       assert.equal(story.publication, 'blocked', id);

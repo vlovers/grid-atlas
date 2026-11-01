@@ -59,7 +59,7 @@ test('all 33 expansion research dossiers keep 165 bilingual scenes with separate
       if (newResearchLeads.has(dossier.circuit_id)) {
         newScenes++;
         assert.equal(story.historical_evidence_scope, 'race_context_lead_not_scene_claim_verified', key);
-        assert.match(story.historical_source_locator, /classification.*review pending/i, key);
+        assert.match(story.historical_source_locator, /Motor Sport|Grandprix\.com/i, key + '/specific historical locator');
       }
       const anchors = expectedRewrites.get(key);
       if (anchors) {
