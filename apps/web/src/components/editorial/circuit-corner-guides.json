@@ -527,10 +527,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml"
       },
       {
-        "label": "Connect the race to the season",
-        "en": "A single Grand Prix result becomes much more meaningful when followed by the full season standings: it explains why a winning afternoon could also settle a world title.",
-        "uk": "Окремий результат стає набагато цікавішим поруч із підсумками сезону: так видно, чому перемога в одній гонці могла одночасно визначити чемпіона світу.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race.yml"
+        "label": "An early stop and a fourth crown · 2013",
+        "en": "Vettel started on pole at Buddh in 2013 but pitted for tyres after only two laps, rejoining in traffic. His pace carried him back to the front, while Webber's alternator failure removed the other Red Bull. Vettel won his fourth straight drivers' title and the team secured a fourth consecutive constructors' crown. Rosberg finished second; Grosjean rose from seventeenth to third. The race was more than a championship celebration: it demanded a recovery after an unusually early stop.",
+        "uk": "Феттель стартував із поулу в Будді 2013 року, але вже після двох кіл змінив шини й повернувся у трафік. Темпу вистачило, щоб знову очолити гонку, а відмова генератора зупинила другого пілота Red Bull Веббера. Феттель здобув четвертий поспіль титул, команда — четвертий Кубок конструкторів. Росберг став другим, а Грожан піднявся із сімнадцятого місця на третє. Це було не лише святкування титулу: перемога вимагала прориву після незвично раннього піт-стопу.",
+        "source": "https://www.bbc.co.uk/sport/formula1/24691160"
       }
     ]
   },
@@ -595,10 +595,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race-results.yml"
       },
       {
-        "label": "Decode the venue's identity",
-        "en": "The archive ID, the event name and the city's name are not always identical. Use the race record to connect the different labels without inventing a separate circuit.",
-        "uk": "Ідентифікатор в архіві, назва Гран-прі та назва міста не завжди збігаються. Протокол допомагає поєднати ці позначення, не створюючи вигадану окрему трасу.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2014/races/16-russia/race.yml"
+        "label": "Rosberg's Turn 2 lock-up and recovery · 2014",
+        "en": "At the inaugural Russian Grand Prix, Rosberg attacked Hamilton into Turn 2, locked his tyres and pitted at the end of the opening lap. He recovered to second behind Hamilton, with Bottas third. That Mercedes one-two secured the team's first constructors' championship. The venue's later Sirius archive name does not create a second 2014 circuit: the opening-corner mistake and comeback happened at Sochi Olympic Park.",
+        "uk": "На першому Гран-прі Росії Росберг атакував Гамільтона перед другим поворотом, заблокував колеса й уже наприкінці першого кола заїхав у бокси. Він прорвався на друге місце позаду Гамільтона; третім став Боттас. Цей дубль приніс Mercedes перший Кубок конструкторів. Пізніша архівна назва Sirius не означає іншої траси 2014 року: помилка на старті та повернення Росберга відбулися в олімпійському парку Сочі.",
+        "source": "https://www.skysports.com/f1/news/9514310/2014-russian-gp-lewis-hamilton-cruises-to-sochi-win-but-rosberg-recovers-to-second"
       }
     ]
   },
@@ -612,10 +612,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml"
       },
       {
-        "label": "Start with the debut result",
-        "en": "A first F1 appearance is not the same thing as a circuit's construction date or first motorsport event. Keep those milestones separate when telling its story.",
-        "uk": "Перший етап Формули-1 — не те саме, що дата будівництва траси або перші автоспортивні змагання. Ці віхи варто розрізняти.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race.yml"
+        "label": "Alonso gambled on one stop · 2021",
+        "en": "Hamilton won Lusail's first F1 Grand Prix, but the late suspense belonged to Alonso. Alpine kept him on a one-stop strategy while long tyre stints caused punctures for Bottas and Norris. Pérez was closing on the final podium place when a late Virtual Safety Car reduced the pressure. Alonso finished third, his first F1 podium since 2014. The result names the top three; the tyre gamble explains the fight for the last podium spot.",
+        "uk": "Гамільтон виграв перший Гран-прі Формули-1 у Лусаїлі, але наприкінці найбільша інтрига була навколо Алонсо. Alpine залишила його на стратегії з одним піт-стопом, хоча через довгі відрізки шини пошкоджувалися у Боттаса й Норріса. Перес наздоганяв іспанця, доки пізній режим віртуального автомобіля безпеки не зменшив тиск. Алонсо став третім — уперше на подіумі з 2014 року. Результат називає призерів, а шинний ризик пояснює боротьбу за останнє місце на подіумі.",
+        "source": "https://www.bbc.co.uk/sport/formula1/59367052"
       }
     ]
   },
@@ -629,10 +629,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race-results.yml"
       },
       {
-        "label": "Why a debut can be memorable",
-        "en": "Track the classified finishers and compare the opening Korean Grand Prix with subsequent editions. A short-lived calendar venue can still host notable racing.",
-        "uk": "Простеж фінішну класифікацію та порівняй перший корейський Гран-прі з наступними. Навіть автодром із короткою історією в календарі може подарувати пам’ятні перегони.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/17-korea/race.yml"
+        "label": "Rain and two Red Bull retirements · 2010",
+        "en": "Yeongam's debut race began behind the Safety Car in heavy rain and was interrupted by a red flag. Webber spun into the barrier and collected Rosberg; Vettel later lost a likely win when his engine failed. Alonso inherited the lead and won for Ferrari ahead of Hamilton and Massa as darkness approached. The result table cannot explain why both Red Bulls disappeared from a race they had started on the front row.",
+        "uk": "Дебютна гонка в Йонамі почалася за автомобілем безпеки під зливою та переривалася червоним прапором. Веббер розвернувся, вдарився об бар'єр і зачепив Росберга; згодом Феттель утратив шанс на перемогу через відмову двигуна. Алонсо отримав лідерство й переміг на Ferrari попереду Гамільтона та Масси, коли вже сутеніло. Сам протокол не пояснює, чому обидві машини Red Bull, що стартували з першого ряду, зникли з боротьби.",
+        "source": "https://www.the-independent.com/sport/motor-racing/dramatic-win-sees-alonso-claim-summit-2115287.html"
       }
     ]
   },
@@ -697,10 +697,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race-results.yml"
       },
       {
-        "label": "Street circuit versus permanent track",
-        "en": "Compare Detroit's city-centre racing with permanent venues. Barriers and ordinary streets change the experience, but exact corner-name histories still need direct documentation.",
-        "uk": "Порівняй перегони в центрі Детройта з постійними автодромами. Бар’єри й звичайні вулиці змінюють характер етапу, але історію назв поворотів треба підтверджувати окремо.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/07-detroit/race.yml"
+        "label": "Watson came from seventeenth · 1982",
+        "en": "Watson started Detroit's first Grand Prix seventeenth and worked through a stop-start race on the downtown streets. He passed several front-runners and moved ahead of Rosberg, whose Williams was suffering gearbox trouble. Watson won after 62 laps, with Cheever second and Pironi third; the two-hour limit ended the race before its scheduled distance. The period report, rather than the result sheet alone, tells the story of the recovery.",
+        "uk": "Вотсон стартував сімнадцятим на першому Гран-прі Детройта й проривався вперед у гонці, яку переривали на міських вулицях. Він випередив кількох лідерів, зокрема Росберга, чий Williams мав проблеми з коробкою передач. Вотсон переміг після 62 кіл, Чівер став другим, Піроні — третім; двогодинний ліміт зупинив гонку раніше запланованої дистанції. Історію прориву пояснює тогочасний репортаж, а не лише таблиця фінішу.",
+        "source": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
       }
     ]
   },
@@ -731,10 +731,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race-results.yml"
       },
       {
-        "label": "Follow the race beyond the winner",
-        "en": "The classification confirms Senna's victory. For the details of specific on-track passes, supplement it with race footage or an independent event report.",
-        "uk": "Протокол підтверджує перемогу Сенни. Для деталей конкретних обгонів потрібні відео гонки або незалежний опис перебігу подій.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1990/races/01-united-states/race.yml"
+        "label": "Alesi refused to surrender the lead · 1990",
+        "en": "Alesi led the 1990 Phoenix opener in his Tyrrell until Senna caught him. When the McLaren passed into the first corner, Alesi immediately counterattacked around the outside at the next turn and reclaimed the lead. Senna had to overtake again before he could secure victory; Alesi finished second. The duel made the temporary street circuit memorable for more than its finishing order.",
+        "uk": "Алезі лідирував на відкритті сезону 1990 року у Фініксі на Tyrrell, доки його не наздогнав Сенна. Коли McLaren обігнав його в першому повороті, Алезі негайно відповів атакою зовнішньою траєкторією в наступному віражі й повернув перше місце. Сенні довелося обганяти вдруге, перш ніж він зміг перемогти; Алезі фінішував другим. Саме ця дуель зробила тимчасову міську трасу пам'ятною не лише завдяки результату.",
+        "source": "https://www.motorsportmagazine.com/archive/article/april-1990/5/phoenix-revivial/"
       }
     ]
   },
@@ -782,10 +782,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race-results.yml"
       },
       {
-        "label": "One city, one different layout",
-        "en": "Valencia's former street circuit was not Barcelona's Catalunya track, even though both hosted Grands Prix in Spain. Historical identity matters more than country labels.",
-        "uk": "Колишня міська траса Валенсії — не барселонська Каталунья, хоча обидві приймали етапи в Іспанії. Історичний ідентифікатор важливіший за назву країни.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/08-europe/race.yml"
+        "label": "Alonso climbed from eleventh · 2012",
+        "en": "Alonso started Valencia's 2012 European Grand Prix eleventh and fought forward while Vettel led comfortably. A Safety Car erased the gap; after the restart Alonso passed Grosjean, and Vettel later retired with an alternator failure. Grosjean also stopped with a similar problem. Alonso won at home, Räikkönen took second and Schumacher third. His victory was a recovery shaped by overtakes and retirements, not a pole-to-flag drive.",
+        "uk": "Алонсо стартував одинадцятим на Гран-прі Європи 2012 року у Валенсії й проривався вперед, поки Феттель упевнено лідирував. Автомобіль безпеки скоротив відрив; після рестарту Алонсо обігнав Грожана, а згодом Феттель зійшов через відмову генератора. Грожан також зупинився з подібною проблемою. Алонсо виграв удома, Ряйкконен став другим, Шумахер — третім. Це був прорив завдяки обгонам і сходам суперників, а не перемога з поулу.",
+        "source": "https://www.motorsportmagazine.com/articles/single-seaters/f1/fernando-alonsos-greatest-drive-2012-european-grand-prix/"
       }
     ]
   },
@@ -833,10 +833,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/16-japan/race-results.yml"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/16-japan/race-results.yml"
+        "label": "Rain, tyres and a title · 1976",
+        "en": "Lauda stopped after two laps in heavy rain, unwilling to race on with visibility so poor. Hunt stayed out and looked set for the championship, but his left-front tyre failed late and forced a stop. He recovered to third, enough to beat Lauda to the title by one point, while Andretti won the Grand Prix for Lotus. The classification identifies the winner; the contemporary race report explains why the title belonged to someone else.",
+        "uk": "Лауда зупинився після двох кіл під сильною зливою: за такої видимості він не хотів ризикувати. Гант продовжив гонку, але наприкінці пошкодження лівої передньої шини змусило його заїхати в бокси. Він повернувся на третє місце — цього вистачило, щоб випередити Лауду в чемпіонаті на одне очко. Сам Гран-прі виграв Андретті на Lotus. Протокол називає переможця, а тогочасний репортаж пояснює, чому титул дістався іншому пілоту.",
+        "source": "https://www.motorsportmagazine.com/archive/article/december-1976/34/japanese-grand-prix-4/"
       }
     ]
   },
@@ -867,10 +867,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/05-miami/race-results.yml"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/05-miami/race-results.yml"
+        "label": "The first race turned at Turn 1 and lap 9",
+        "en": "Leclerc started Miami's inaugural 2022 Grand Prix on pole, but Verstappen took second from Sainz at the start and passed the Ferrari leader on lap nine. A later Safety Car, triggered after contact between Norris and Gasly, closed the field again. Verstappen held Leclerc off after the restart. The stadium supplied the backdrop; the first-lap move, lap-nine pass and restart defence decided the race.",
+        "uk": "Леклер стартував із поулу на першому Гран-прі Маямі 2022 року, але Ферстаппен одразу випередив Сайнса, а на дев'ятому колі відібрав лідерство у Ferrari. Після контакту Норріса й Гаслі на трасу виїхав автомобіль безпеки, і суперники знову зібралися разом. На рестарті Ферстаппен утримав Леклера позаду. Стадіон був декорацією, а гонку вирішили стартова атака, обгін на дев'ятому колі й захист після нейтралізації.",
+        "source": "https://www.bbc.co.uk/sport/formula1/61373963"
       }
     ]
   },
@@ -918,10 +918,10 @@
         "source": "https://www.formula1.com/en/latest/article/1999-oral-history-part-3-stewart-spring-a-surprise-schumacher-returns-and.6N2mWADjGWFHQHB75kl23B"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://www.formula1.com/en/latest/article/1999-oral-history-part-3-stewart-spring-a-surprise-schumacher-returns-and.6N2mWADjGWFHQHB75kl23B"
+        "label": "Schumacher returned to help Irvine · 1999",
+        "en": "Schumacher came back from a broken leg and took pole at Sepang's first Grand Prix, but the Ferrari plan was built around Irvine's championship bid. Schumacher let his team-mate through and defended against the McLarens; Irvine won. Both Ferraris were initially excluded over bargeboard dimensions, then reinstated after an FIA appeal. The result sheet shows the restored one-two; contemporary reporting supplies the team orders and the post-race dispute.",
+        "uk": "Шумахер повернувся після перелому ноги й здобув поул на першому Гран-прі Сепанга, але стратегія Ferrari працювала на титульні шанси Ірвайна. Міхаель пропустив напарника вперед і стримував McLaren; переміг Ірвайн. Спочатку обидві Ferrari виключили через розміри аеродинамічних елементів, та після апеляції FIA дубль відновили. У підсумковому протоколі є результат після апеляції; командну тактику й суперечку пояснюють репортажі.",
+        "source": "https://www.motorsportmagazine.com/articles/single-seaters/f1/farce-1999-title-decider/"
       }
     ]
   },
@@ -976,10 +976,10 @@
         "source": "https://www.formula1.com/en/results/1967/races/244/south-africa/race-result"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://www.formula1.com/en/results/1967/races/244/south-africa/race-result"
+        "label": "A privateer's fuel stop decided 1967",
+        "en": "John Love's older Cooper-Climax unexpectedly led the 1967 South African Grand Prix after the favourites encountered trouble. But the engine was consuming too much fuel, and Love had to stop with six laps left. Pedro Rodríguez moved ahead and claimed his first championship win; Love finished second. The race turned in the pits, not through a last-lap overtake, and the period report provides the explanation missing from the result table.",
+        "uk": "Джон Лав на старішому Cooper-Climax несподівано очолив Гран-прі Південної Африки 1967 року, коли фаворити зіткнулися з проблемами. Але двигун витрачав забагато пального, тож за шість кіл до фінішу Лав мусив зупинитися. Педро Родрігес вийшов уперед і здобув першу перемогу в чемпіонаті, а Лав фінішував другим. Усе вирішилося в боксах, а не під час обгону на останньому колі; цю причину розкриває тогочасний репортаж.",
+        "source": "https://www.motorsportmagazine.com/archive/article/february-1967/14/grand-prix-of-south-africa-2/"
       }
     ]
   },
@@ -1044,10 +1044,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml"
+        "label": "The tyre failures that changed the 1986 title",
+        "en": "Rosberg's tyre trouble came first. Then Mansell, still on course for the championship, suffered a violent left-rear failure. Williams called Piquet in for fresh tyres as a precaution, leaving Prost ahead. The McLaren driver still had to manage his fuel to reach the finish, but he won both the race and the title. Adelaide's finale was a chain of separate tyre and strategy decisions, not one simple overtaking move.",
+        "uk": "Спочатку проблеми із шинами виникли в Росберга. Потім у Менселла, який усе ще йшов до титулу, на швидкості зруйнувалася ліва задня шина. Williams з міркувань безпеки покликала Піке на заміну гуми, і попереду залишився Прост. Пілоту McLaren ще довелося економити пальне, але він виграв і гонку, і чемпіонат. Фінал в Аделаїді вирішив ланцюг шинних і стратегічних подій, а не один обгін.",
+        "source": "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/"
       }
     ]
   },
@@ -1109,13 +1109,13 @@
         "label": "A city park becomes a racetrack",
         "en": "Albert Park uses public roads in Melbourne. The 1996 debut included Martin Brundle's dramatic first-lap accident, which a finishing table alone cannot convey.",
         "uk": "Альберт-Парк використовує звичайні дороги Мельбурна. Під час дебюту 1996 року стався видовищний інцидент Мартіна Брандла, якого не передасть таблиця фінішу.",
-        "source": "https://www.formula1.com/en/racing/2026/australia"
+        "source": "https://www.formula1.com/en/results/1996/races/638/australia/race-result"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://www.formula1.com/en/racing/2026/australia"
+        "label": "Villeneuve almost won on debut · 1996",
+        "en": "The first Melbourne Grand Prix began with Brundle's spectacular opening-lap crash and a restart; he escaped injury and returned in the spare Jordan. Rookie Villeneuve had taken pole and led his Williams team-mate Hill, but an oil leak forced him to slow. Hill won and Villeneuve finished second. The finishing order conceals how close the newcomer came to winning at his first attempt.",
+        "uk": "Перший Гран-прі Мельбурна почався видовищною аварією Брандла на старті й рестартом: пілот не постраждав та повернувся у запасному Jordan. Дебютант Вільнев здобув поул і випереджав напарника по Williams Гілла, доки витік оливи не змусив його сповільнитися. Гілл переміг, а Вільнев став другим. За порядком фінішу не видно, наскільки близько новачок був до перемоги в першій гонці.",
+        "source": "https://www.grandprix.com/races/australian-gp-1996.html"
       }
     ]
   },
@@ -1146,10 +1146,10 @@
         "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/21-las-vegas/race-results.yml"
       },
       {
-        "label": "Start with the race record",
-        "en": "Read the source classification for the named event, then follow the linked driver or season. The results verify recorded positions, not the full explanation of a circuit's character.",
-        "uk": "Переглянь класифікацію згаданого етапу, а потім відкрий профіль пілота чи сезон. Результати підтверджують позиції, але не всю історію характеру траси.",
-        "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/21-las-vegas/race-results.yml"
+        "label": "A last-lap pass on the Strip · 2023",
+        "en": "The Strip circuit's first Grand Prix was not a replay of Caesars Palace. Verstappen received a five-second penalty for forcing Leclerc wide early on, but later regained the lead. Pérez looked set to finish second until Leclerc overtook him on the final lap. Verstappen won ahead of Leclerc and Pérez. The modern street layout earned its own story, separate from the old casino-car-park venue.",
+        "uk": "Перший Гран-прі на трасі вздовж Стріпа не повторював історію Caesars Palace. Ферстаппен отримав п'ятисекундний штраф за витіснення Леклера на початку гонки, але згодом повернув лідерство. Перес майже втримав друге місце, та Леклер обігнав його на останньому колі. Переміг Ферстаппен, позаду фінішували Леклер і Перес. Нова міська траса отримала власну історію, окрему від старої парковки казино.",
+        "source": "https://www.theguardian.com/sport/2023/nov/19/formula-one-las-vegas-grand-prix-report-max-verstappen"
       }
     ]
   },
