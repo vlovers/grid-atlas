@@ -11,7 +11,7 @@ Source PR: #395, branch `feat/circuit-six-single-source-narratives-20261029`. Da
 - **160** pinned layout SVG manifest entries exist; this is not an audit of every year's corner naming or a photo rights clearance.
 - **33** expansion research dossiers contain **165** bilingual scenes, all source-linked and blocked from publication; **165/165** list historical leads from at least two publisher domains, but those links have not been independently adjudicated claim-by-claim.
 - **0/165** expansion scenes have independent approval; **165/165** are still pending claim review.
-- This run rewrote **18** application guide sections in EN/UK (36 language texts) and repaired **7** Aida/Dallas research scenes to preserve period-report details and regression checks. These are editorial changes, not approvals.
+- This run rewrote **19** application guide sections in EN/UK (36 language texts) and repaired **7** Aida/Dallas research scenes to preserve period-report details and regression checks. These are editorial changes, not approvals.
 
 ## Complete circuit inventory
 
@@ -39,7 +39,7 @@ Source PR: #395, branch `feat/circuit-six-single-source-narratives-20261029`. Da
 | `dijon` | next20 | 2 | yes | — |
 | `donington` | next20 | 2 | — | — |
 | `east-london` | final33 | 2 | yes | — |
-| `estoril` | next20 | 3 | — | — |
+| `estoril` | next20 | 3 | — | yes |
 | `fuji` | next20 | 2 | — | yes |
 | `hockenheimring` | extra20 | 2 | — | — |
 | `hungaroring` | extra20 | 4 | — | — |
