@@ -20,7 +20,7 @@ test('20 period-report scenes retain bilingual text, independent evidence leads 
       checked++;
       for (const lang of ['en', 'uk']) assert.ok(scene.narrative[lang].length >= 350, id + '/' + scene.story_index + '/' + lang);
       assert.match(scene.historical_source_locator, /Period Motor Sport race report:.*Second historical publication:.*Official F1 race result supports classification only; independent claim review pending/);
-      const domains = new Set(scene.historical_sources.map(url => new URL(url).hostname.replace(/^www\\./, '')));
+      const domains = new Set(scene.historical_sources.map(url => new URL(url).hostname.replace(/^www\./, '')));
       assert.ok(domains.has('motorsportmagazine.com'));
       assert.ok(domains.has('grandprix.com'));
       assert.equal(scene.independent_approval, false);
@@ -42,7 +42,7 @@ test('Aintree 1957 Salvadori is classified fifth despite split gearbox, not a re
 test('AVUS 1959 distinguishes two heats, heat-two challengers and official aggregate margin', () => {
   const scenes = first.circuits.find(c => c.circuit_id === 'avus').stories;
   assert.match(scenes[0].narrative.en, /McLaren briefly led/);
-  assert.match(scenes[1].narrative.en, /1\\.9-second margin combines both heats/);
+  assert.match(scenes[1].narrative.en, /1\.9-second margin combines both heats/);
   assert.match(scenes[2].narrative.uk, /Макларен спершу лідирував/);
 });
 
