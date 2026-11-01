@@ -12,15 +12,15 @@ test('five dossiers preserve 25 bilingual scenes and fail-closed review gates', 
       assert.equal(s.publication, 'blocked');
       assert.equal(s.independent_approval, false);
       assert.equal(s.historical_review_status, 'pending_independent_claim_review');
-      assert.ok(new Set(s.historical_sources.map(u => new URL(u).hostname.replace(/^www\\./, ''))).size >= 2);
-      for (const l of ['en','uk']) assert.ok(s.narrative[l].split(/\\s+/).length >= 60, `${id} ${s.story_index} ${l}`);
+      assert.ok(new Set(s.historical_sources.map(u => new URL(u).hostname.replace(/^www\./, ''))).size >= 2);
+      for (const l of ['en','uk']) assert.ok(s.narrative[l].split(/\s+/).length >= 60, `${id} ${s.story_index} ${l}`);
     }
   }
 });
 test('historical source discrepancies remain explicit', () => {
   const s = (id,i) => byId.get(id).stories[i-1];
   assert.match(s('east-london',2).historical_source_locator,/61 completed laps/);
-  assert.match(s('jarama',2).historical_source_locator,/0\\.220s.*0\\.211s/);
+  assert.match(s('jarama',2).historical_source_locator,/0\.220s.*0\.211s/);
   assert.match(s('jerez',1).narrative.en,/pressure loss/);
   assert.match(s('monaco',3).narrative.en,/actual finishers/);
   assert.match(s('madring',5).historical_source_locator,/design cap/);
