@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "kind": "circuit_editorial_claim_review",
+  "stage": "evidence_review",
+  "publication_status": "unpublished",
+  "revision_approval": null,
+  "policy": "Source links are research locators, not reviewed publication permission. All claims require independent human verification.",
+  "circuits": [
+    {
+      "id": "silverstone",
+      "claims": [
+        {
+          "id": "sil-1950-opening",
+          "statement": "The inaugural Formula 1 World Championship race was held at Silverstone on 13 May 1950.",
+          "sources": [
+            {
+              "url": "https://www.silverstone.co.uk/about/history-grand-prix",
+              "locator": "1950 section; Championship's first race"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "sil-1950-winner",
+          "statement": "Giuseppe Farina won at Silverstone in 1950 for Alfa Romeo.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1950/races",
+              "locator": "Great Britain, round 1 race result"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "sil-origin",
+          "statement": "Silverstone had been an RAF airfield before its motor-racing role.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+              "locator": "When was the track built?"
+            }
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "monaco",
+      "claims": [
+        {
+          "id": "mon-1929",
+          "statement": "Monaco's first Grand Prix was held in 1929.",
+          "sources": [
+            {
+              "url": "https://acm.mc/archives-gpf1/81e-formula-1-grand-prix-de-monaco/fan-experience/palmares/",
+              "locator": "1er Grand Prix; 14 avril 1929"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "mon-first-winner",
+          "statement": "The first Monaco Grand Prix was won by the driver entered as Williams.",
+          "sources": [
+            {
+              "url": "https://acm.mc/archives-gpf1/81e-formula-1-grand-prix-de-monaco/fan-experience/palmares/",
+              "locator": "1929 palmarès; winner Williams"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "mon-1950",
+          "statement": "Juan Manuel Fangio won the World Championship Monaco Grand Prix in 1950.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1950/races/95/monaco/race-result",
+              "locator": "Winner classification"
+            }
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "spa-francorchamps",
+      "claims": [
+        {
+          "id": "spa-road",
+          "statement": "The original Spa circuit used public roads and was around 15 km long.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/information/belgium-circuit-de-spa-francorchamps.3LltuYaAXVRU8iezEsjzGw",
+              "locator": "When was the track built?"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "spa-1950",
+          "statement": "Juan Manuel Fangio won the 1950 Belgian Grand Prix.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1950/races/98/belgium/race-result",
+              "locator": "1950 Belgian Grand Prix classification"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "spa-redesign",
+          "statement": "The shorter Spa route opened in 1979; Formula 1 returned in 1983.",
+          "sources": [
+            {
+              "url": "https://www.spagrandprix.com/en/the-circuit",
+              "locator": "History timeline 1979 and 1983"
+            }
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "monza",
+      "claims": [
+        {
+          "id": "moz-built",
+          "statement": "Monza was built in 1922, initially combining a road circuit with banked speed-course sections.",
+          "sources": [
+            {
+              "url": "https://www.monzanet.it/en/history/",
+              "locator": "1922–1928 section"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "moz-first-gp",
+          "statement": "The Italian Grand Prix at Monza was held on 10 September 1922, after the circuit's 3 September inauguration.",
+          "sources": [
+            {
+              "url": "https://www.monzanet.it/en/history/",
+              "locator": "1922 inauguration and Grand Prix timeline"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "moz-1950",
+          "statement": "Giuseppe Farina won the 1950 Italian World Championship Grand Prix at Monza.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1950/races/100/italy/race-result",
+              "locator": "Winner classification"
+            }
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "suzuka",
+      "claims": [
+        {
+          "id": "suz-1962",
+          "statement": "Suzuka opened in 1962 with a figure-eight layout designed by John Hugenholtz.",
+          "sources": [
+            {
+              "url": "https://global.honda/en/F1/circuit/suzuka/introduction/",
+              "locator": "Circuit introduction; construction and designer"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "suz-1987",
+          "statement": "Suzuka first hosted the Formula 1 Japanese Grand Prix in 1987, when Mansell's qualifying crash ended his title challenge.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/information/japan-suzuka-international-racing-course.2XjOiKgIHRRBVVpp5N3S5t",
+              "locator": "When was its first Grand Prix?"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "id": "suz-1988",
+          "statement": "Ayrton Senna won the Japanese Grand Prix in 1988 and clinched his first world championship.",
+          "sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1988/races/541/japan/race-result",
+              "locator": "1988 Japan race classification"
+            },
+            {
+              "url": "https://global.honda/en/F1/circuit/suzuka/",
+              "locator": "1988: A Miraculous Comeback"
+            }
+          ],
+          "status": "pending"
+        }
+      ]
+    }
+  ]
+}
