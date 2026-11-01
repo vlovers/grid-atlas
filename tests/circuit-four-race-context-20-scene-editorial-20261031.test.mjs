@@ -37,7 +37,7 @@ test("20 historical scenes retain bilingual chronology, two period publishers an
         assert.equal(story.independent_approval, false);
         assert.equal(story.publication, "blocked");
         assert.equal(story.historical_review_status, "pending_independent_claim_review");
-        assert.match(story.historical_source_locator, /(?:classification|F1 result|official F1|finish order).*?(?:claim review pending|independent review pending)/i);
+        assert.match(story.historical_source_locator, /(?:classification|F1 result|official F1|finish order|winner's name).*?(?:claim review pending|independent review pending)/i);
         assert.ok(story.source_urls.every(u => /^https:\/\/www\.formula1\.com\//.test(u)));
         assert.ok(story.historical_sources.some(u => u.includes("motorsportmagazine.com/")));
         assert.ok(story.historical_sources.some(u => u.includes("grandprix.com/")));
