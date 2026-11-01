@@ -72,8 +72,11 @@ async function stage(client,bundle,identitySource='f1db') {
           [e.source_url,e.title,e.publisher,e.author??null,e.accessed_on]);
         let sourceId=created.rows[0]?.id;
         if(!sourceId) {
+          // The article INSERT already holds0016's transaction-wide writer
+          // lock. SERIALIZABLE also rejects a source inserted after our snapshot.
+          // A read-only provenance check needs no source UPDATE/row-lock grant.
           const old=await client.query(
-            'SELECT id::text,title,publisher,author,accessed_on::text AS accessed_on FROM content_sources WHERE source_url=$1 FOR SHARE',
+            'SELECT id::text,title,publisher,author,accessed_on::text AS accessed_on FROM content_sources WHERE source_url=$1',
             [e.source_url]);
           if(old.rowCount!==1 || old.rows[0].title!==e.title ||
             old.rows[0].publisher!==e.publisher || old.rows[0].author!==(e.author??null) ||

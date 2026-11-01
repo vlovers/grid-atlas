@@ -168,8 +168,8 @@ Executed on Node24.21.0 / PostgreSQL17 (disposable container, localhost55471):
 | `pnpm typecheck` | PASS |
 | `pnpm test` |512/512 PASS |
 | `python3 -m unittest discover -s tests -v` |434/434 PASS |
-| `pnpm test:integration` |91 PASS,1 existing skip (92 total) |
-| Targeted `node --test apps/api/test/circuit-editorial*.integration.cjs` |47/47 PASS |
+| `pnpm test:integration` |92 PASS,1 existing skip (93 total) |
+| Targeted `node --test apps/api/test/circuit-editorial*.integration.cjs` |48/48 PASS |
 | `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build` |PASS; existing CSS compatibility warnings |
 | `bash packages/database/scripts/test-versioned-migrations.sh` |PASS on a separate empty disposable database |
 
@@ -180,3 +180,5 @@ Concurrency tests observe the actual pending PostgreSQL advisory lock before
 releasing the competing transaction; they exercise both write orders. Real TCP
 LOGIN subjects are used, with aliases mapped to one canonical synthetic principal.
 No production credentials or real human approvals are used. The full existing browser regression suite passed546/546 locally (desktop/mobile Chromium plus WebKit route checks). The original pinned F1DB import also passed in a separate disposable database. Final CI results are attached to the PR head; these are not deployment or human editorial approval.
+
+Reader integration additionally verified exact source reuse across EN/UK with an INSERT/SELECT-only stager. The old `FOR SHARE` provenance read required unnecessary source UPDATE rights; it now relies on the existing transaction-wide writer lock and SERIALIZABLE snapshot conflict checks. Conflicting provenance and duplicate locale imports still roll back.

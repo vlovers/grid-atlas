@@ -413,3 +413,20 @@ test('broad business-table writers cannot move primary identities away from prot
   await rejected(f.actors.writer.query('UPDATE circuit_editorial_articles SET id=DEFAULT WHERE id=$1', [d.article_id]), /primary identity is immutable/);
   await rejected(f.actors.writer.query('UPDATE circuit_editorial_claims SET id=DEFAULT WHERE id=$1', [d.claim_id]), /primary identity is immutable/);
 });
+
+test('least-privilege staging reuses exact source provenance across locales without source UPDATE privileges', async () => {
+  const d = await f.draft(); const uk = structuredClone(d.bundle); uk.locale = 'uk';
+  uk.title = 'Синтетичний український чернетковий матеріал';
+  uk.claims[0].statement = 'Синтетичне твердження для перевірки повторного використання джерела.';
+  uk.body_markdown = '## Контекст\n\n' + uk.claims[0].statement;
+  assert.equal((await f.db.query("SELECT has_table_privilege($1,'content_sources','UPDATE') AS allowed", [f.roles.writer])).rows[0].allowed, false);
+  const c = await f.actors.writer.connect();
+  try {
+    const conflicting = structuredClone(uk); conflicting.claims[0].evidence[0].title = 'Conflicting provenance';
+    await rejected(stage(c, conflicting, 'synthetic-circuit-security'), /conflicting source provenance/);
+    const staged = await stage(c, uk, 'synthetic-circuit-security');
+    assert.equal(staged.status, 'draft'); assert.equal(staged.published, false);
+    assert.equal((await read(d.circuit_id, 'uk')).status, 404);
+    assert.equal((await f.db.query('SELECT count(*)::int AS n FROM content_sources WHERE source_url=$1', [d.bundle.claims[0].evidence[0].source_url])).rows[0].n, 1);
+  } finally { c.release(); }
+});
