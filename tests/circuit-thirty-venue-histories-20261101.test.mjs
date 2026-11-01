@@ -46,7 +46,7 @@ test('Madring 2026 distinguishes winner gap from second-to-third gap', () => {
   assert.match(s.uk, /4,351.*0,738/);
   assert.match(s.source, /reuters\.com/);
   assert.match(s.comparison_source, /formula1\.com\/en\/results\/2026/);
-  assert.doesNotMatch(s.en, /0\.738-second winning margin(?!\s*\.)/);
+  assert.match(s.en, /not a 0\.738-second winning margin/);
 });
 
 test('sensitive source conflicts are not silently collapsed into confident numbers', () => {
