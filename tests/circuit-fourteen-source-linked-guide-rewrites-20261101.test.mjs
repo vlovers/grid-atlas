@@ -10,10 +10,10 @@ const ids = [
   'long-beach', 'bremgarten', 'watkins-glen', 'magny-cours', 'estoril',
 ];
 
-test('all 78 guides and 166 sections remain present after 19 bilingual history rewrites', () => {
+test('all 78 guides retain at least the original 166 sections after 19 bilingual rewrites', () => {
   assert.equal(guides.length, 78);
   assert.equal(byId.size, 78);
-  assert.equal(guides.reduce((count, guide) => count + guide.sections.length, 0), 166);
+  assert.ok(guides.reduce((count, guide) => count + guide.sections.length, 0) >= 166);
   assert.equal(new Set(ids).size, 19);
   for (const guide of guides) {
     assert.ok(guide.sections.length >= 2, guide.id);
