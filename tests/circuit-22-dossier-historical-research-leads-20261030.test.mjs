@@ -32,7 +32,7 @@ const expectedRewrites = new Map([
   ['dijon:2', ['engine hesitated', 'двигун']],
   ['montjuic:1', ['Montjuïc barriers', 'огорожах Монжуїка']],
   ['pedralbes:5', ['clutch trouble', 'зі зчепленням']],
-  ['spa-francorchamps:1', ['Jackie Stewart', 'Джекі Стюарта']],
+  ['spa-francorchamps:1', ['Jackie Stewart', 'Джекі Стюарт']],
   ['reims:3', ['did not finish', 'не дістався']],
 ]);
 
