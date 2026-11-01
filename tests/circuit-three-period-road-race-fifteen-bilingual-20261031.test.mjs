@@ -19,11 +19,11 @@ const claims={
     "three cylinders"
   ],
   "monaco": [
-    "Panis had already overtaken",
+    "Those passes on Brundle",
     "borrowed Schumacher helmet",
-    "Herbert made no decisive pass",
+    "Unlike Panis",
     "more than half a second",
-    "Jean Alesi then led"
+    "The sequence was cruel"
   ]
 };
 test('15 period-linked bilingual scenes retain distinct causal chronology and fail-closed publication',()=>{
