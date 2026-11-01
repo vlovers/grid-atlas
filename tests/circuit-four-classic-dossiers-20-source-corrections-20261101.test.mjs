@@ -19,7 +19,7 @@ test('20 classic-road-race scenes correct claims in both languages and remain pu
       total++;
       for (const [lang, anchor] of [['en', expected[i][0]], ['uk', expected[i][1]]]) {
         assert.ok(scene.narrative[lang].includes(anchor), id + '/' + (i + 1) + '/' + lang);
-        assert.ok(scene.narrative[lang].trim().split(/\\s+/).length >= (lang === 'en' ? 65 : 55));
+        assert.ok(scene.narrative[lang].trim().split(/\s+/).length >= (lang === 'en' ? 65 : 55));
       }
       assert.equal(scene.independent_approval, false);
       assert.equal(scene.publication, 'blocked');
