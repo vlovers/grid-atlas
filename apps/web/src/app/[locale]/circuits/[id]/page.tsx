@@ -71,6 +71,12 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const leaders = [...wins.values()].filter(driver => driver.races.size === maxWins).sort((a,b) => a.name.localeCompare(b.name)).slice(0,3);
   const filtered = history.filter(race => !q || `${race.season_year} ${race.race_name} ${race.winners.map(winner => winner.driver_name).join(' ')}`.toLocaleLowerCase(lang).includes(q.toLocaleLowerCase(lang)));
   const visible = filtered.slice(offset, offset + CIRCUIT_PAGE_SIZE);
+  // Archive-derived reading path: exact recorded races only, never invented editorials.
+  const orderedRaces = [...history].sort((a, b) => a.season_year - b.season_year || a.round - b.round);
+  const journeyCandidates = [orderedRaces[0], orderedRaces[Math.floor((orderedRaces.length - 1) / 2)], orderedRaces.at(-1)];
+  const raceJourney = journeyCandidates.filter((race, index, all): race is CircuitHistory =>
+    Boolean(race) && all.findIndex(candidate => candidate?.race_id === race?.race_id) === index);
+
   const { crumbs, description } = await entitySeo('circuits', id, locale);
   const coverArtwork = selectCircuitCoverArtwork(layouts);
   const approvedPhoto = selectMediaCollection(mediaPublication.assets as MediaAsset[], { type: 'circuit', id: circuit.external_id })[0];
@@ -85,6 +91,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     <EditorialTabs label={uk ? 'Розділи траси' : 'Circuit sections'} items={[
       { id: 'circuit-biography', label: uk ? 'Архівні відомості' : 'Archive identity' },
       ...(publishedArticle ? [{ id: 'circuit-reviewed-article', label: uk ? 'Редакційна стаття' : 'Editorial article' }] : []),
+      ...(raceJourney.length ? [{ id: 'circuit-race-journey', label: uk ? 'Гонки різних епох' : 'Races across eras' }] : []),
       { id: 'circuit-layouts', label: uk ? 'Зміни траси' : 'Changing layouts' },
       { id: 'circuit-photos', label: uk ? 'Фотоархів' : 'Image archive' },
       { id: 'circuit-history', label: uk ? 'Усі Гран-прі' : 'All Grands Prix' },
@@ -102,6 +109,20 @@ export default async function CircuitPage({ params, searchParams }: Props) {
         ? (uk ? 'Редакційна стаття тимчасово недоступна. Архівні відомості можна дослідити нижче.' : 'The editorial article is temporarily unavailable. Explore the archive records below.')
         : (uk ? 'Опублікованої редакційної статті ще немає. Нижче наведено архівні відомості.' : 'A published editorial article is not available yet. Explore the archive records below.')}
     </p>}
+    {raceJourney.length > 0 && <section id="circuit-race-journey" tabIndex={-1} aria-labelledby="circuit-race-journey-title">
+      <h2 id="circuit-race-journey-title">{uk ? 'Гонки різних епох' : 'Races across eras'}</h2>
+      <p>{uk ? 'Три точки входу до архіву: перша, одна з середини переліку та остання зафіксована гонка на цій трасі. Це добірка за датами, а не рейтинг найважливіших подій.' :
+        'Three ways into the archive: its earliest, a middle and its latest recorded Grand Prix. Selected by archive order, not by editorial importance.'}</p>
+      <div className={styles.journeyGrid}>{raceJourney.map((race, index) => <article className={styles.journeyCard} key={race.race_id}>
+        <span>{index === 0 ? (uk ? 'Перша в архіві' : 'Earliest recorded') :
+          index === raceJourney.length - 1 ? (uk ? 'Остання в архіві' : 'Latest recorded') :
+          (uk ? 'Між епохами' : 'Between eras')}</span>
+        <h3><Link href={`/races/${race.race_id}`}>{race.season_year} · {race.race_name}</Link></h3>
+        <p>{uk ? 'Переможець за результатами архіву' : 'Winner in the recorded results'}: {race.winners.length
+          ? race.winners.map(winner => <span key={`${winner.driver_id}:${winner.constructor_id}`}><Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> · <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></span>)
+          : (uk ? 'немає запису' : 'not recorded')}</p>
+      </article>)}</div>
+    </section>}
     <section id="circuit-layouts" tabIndex={-1}>
       <CircuitExperience layouts={layouts} events={technicalEvents} locale={lang} />
       <ArchiveDisclosure label={uk ? 'Порівняти всі контури' : 'Compare all outlines'} count={layouts.length}><CircuitLayoutGallery layouts={layouts} title={circuit.name} locale={lang} /></ArchiveDisclosure>
