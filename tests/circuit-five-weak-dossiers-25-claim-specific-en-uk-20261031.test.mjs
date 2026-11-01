@@ -34,7 +34,7 @@ const expected = {
     "The 4.422-kilometre Bugatti loop used",
     "Hulme still had to fight",
     "so BRM reassigned that car to Stewart",
-    "Clark took the lead on lap five",
+    "The same driveline weakness struck both cars",
     "Irwin's H16 BRM began leaking"
   ],
   "riverside": [

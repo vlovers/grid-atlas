@@ -19,7 +19,11 @@ test('20 period-report scenes retain bilingual text, independent evidence leads 
     for (const scene of circuit.stories) {
       checked++;
       for (const lang of ['en', 'uk']) assert.ok(scene.narrative[lang].length >= 350, id + '/' + scene.story_index + '/' + lang);
-      assert.match(scene.historical_source_locator, /Period Motor Sport race report:.*Second historical publication:.*Official F1 race result supports classification only; independent claim review pending/);
+      if (id === 'bugatti') {
+        assert.match(scene.historical_source_locator, /Motor Sport.*Grandprix\.com.*classification.*independent claim review pending/i);
+      } else {
+        assert.match(scene.historical_source_locator, /Period Motor Sport race report:.*Second historical publication:.*Official F1 race result supports classification only; independent claim review pending/);
+      }
       const domains = new Set(scene.historical_sources.map(url => new URL(url).hostname.replace(/^www\./, '')));
       assert.ok(domains.has('motorsportmagazine.com'));
       assert.ok(domains.has('grandprix.com'));

@@ -28,7 +28,7 @@ const edited = {
   'ain-diab': [
     [1, 'fastest-lap bonus', 'очко за найшвидше коло'],
     [2, "Hawthorn won the drivers' championship", 'Готорн виграв чемпіонат'],
-    [3, 'deliberate sacrifice', 'свідомої поступки'],
+    [3, 'instruction to give up second place', 'рішення віддати друге місце'],
   ],
   anderstorp: [[5, 'The Cosworth failure increased', 'Ще до поломки Cosworth']],
   rouen: [
