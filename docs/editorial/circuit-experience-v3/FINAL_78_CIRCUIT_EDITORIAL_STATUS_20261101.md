@@ -114,3 +114,11 @@ Source PR: #395, branch `feat/circuit-six-single-source-narratives-20261029`. Da
 ## Integrity
 
 No human approval was invented, no draft release was published, no photographs were added, and no PR was merged. This report does not claim a complete 78-circuit editorial release.
+
+## 2 November 2026 — release-readiness clarification
+
+The inventory above is a **coverage index, not a completion certificate**. To close the circuit-content work, each of the 78 rows requires a checked EN/UK story, separately evidenced historical context, and configuration-specific corner coverage or an explicit documented gap. The 33 expansion dossiers and their 165 scenes require claim-level independent verification; merely listing two domains is not verification. No historical claim may be marked independently approved by an automated editorial pass.
+
+**Source-conflict decision rule:** retain both cited values for Argentina 1995 and label the cause unresolved until a primary timing document or equivalent adjudicates it. For Madring, distinguish FIA result gaps from journalistic explanations of race strategy. For Aida 1995, leave tyre-set counts disputed rather than inferring them from the finishing order.
+
+**Release gate:** keep `human_approval: false` and `publication_allowed: false` until a real reviewer signs off; confirm the exact final PR head and all required CI checks after the last content commit. Photo licenses and historical corner nomenclature remain independent blockers.
