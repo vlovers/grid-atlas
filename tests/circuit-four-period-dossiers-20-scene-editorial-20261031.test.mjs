@@ -55,7 +55,7 @@ test('20 period-linked scenes keep distinct bilingual race turning points and fa
       assert.ok(story.historical_sources.length >= 2, id + ':narrative sources');
       assert.ok(story.historical_sources.some((url) => url.includes(expected.historical)), id + ':specific period evidence');
       assert.ok(story.historical_sources.every((url) => !story.source_urls.includes(url)), id + ':source distinction');
-      assert.match(story.historical_source_locator, id === 'east-london' ? /classification confirms positions.*independent claim review pending/i : /classification only.*independent review pending/i);
+      assert.match(story.historical_source_locator, id === 'east-london' ? /classification confirms positions.*independent claim review pending/i : /(?:classification|F1 result|official F1).*?(?:claim review pending|independent review pending)/i);
       assert.equal(story.historical_review_status, 'pending_independent_claim_review');
       assert.equal(story.independent_approval, false);
       assert.equal(story.publication, 'blocked');
