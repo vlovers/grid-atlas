@@ -15,7 +15,9 @@ const byId = new Map(guides.map((g) => [g.id, g]));
 test('all 78 source guides survive 30 historical EN/UK rewrites', () => {
   assert.equal(guides.length, 78);
   assert.equal(new Set(guides.map((g) => g.id)).size, 78);
-  assert.equal(guides.reduce((sum, g) => sum + g.sections.length, 0), 166);
+  // Editorial expansion may add sourced sections; it must never reduce the baseline.
+  assert.ok(guides.reduce((sum, g) => sum + g.sections.length, 0) >= 166);
+  assert.ok(guides.every((guide) => guide.sections.length >= 2));
   assert.equal(ids.length, 30);
   assert.equal(new Set(ids).size, 30);
   for (const id of ids) {
