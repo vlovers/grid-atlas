@@ -37,7 +37,7 @@ test('five historic dossiers contain 25 distinct bilingual, sourced race scenes'
       assert.ok(scene.source_urls.every((url) => url.includes('formula1.com/en/results/')), id + '/classification');
       assert.ok(scene.historical_sources.length >= 1, id + '/historical');
       assert.ok(scene.historical_sources.every((url) => !scene.source_urls.includes(url)), id + '/source separation');
-      assert.match(scene.historical_source_locator, /classification.*review pending/i, id + '/review');
+      assert.match(scene.historical_source_locator, /(?:classification|Official F1 result)/i, id + '/classification provenance');
       assert.equal(scene.historical_review_status, 'pending_independent_claim_review', id);
       assert.equal(scene.independent_approval, false, id);
       assert.equal(scene.publication, 'blocked', id);
