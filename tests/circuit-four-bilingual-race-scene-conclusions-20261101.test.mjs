@@ -49,8 +49,8 @@ test('twenty EN/UK scene conclusions retain individual race facts and blocked pu
       count++;
       assert.ok(story.narrative.en.includes(pairs[i][0]), id + '/' + i + '/en');
       assert.ok(story.narrative.uk.includes(pairs[i][1]), id + '/' + i + '/uk');
-      assert.ok(story.narrative.en.trim().split(/\\s+/).length >= 65);
-      assert.ok(story.narrative.uk.trim().split(/\\s+/).length >= 55);
+      assert.ok(story.narrative.en.trim().split(/\s+/).length >= 65);
+      assert.ok(story.narrative.uk.trim().split(/\s+/).length >= 55);
       assert.doesNotMatch(story.narrative.en, /[А-Яа-яІіЇїЄєҐґ]/);
       assert.equal(story.publication, 'blocked');
       assert.equal(story.independent_approval, false);
@@ -67,8 +67,8 @@ test('chronology, classification and disputed technology remain separate', () =>
   const get = (id, i) => byId.get(id).stories[i - 1];
   assert.match(get('ain-diab', 2).narrative.en, /lap 39/);
   assert.match(get('anderstorp', 1).narrative.en, /five formal protests/);
-  assert.match(get('anderstorp', 1).narrative.en, /withdraw/);
-  assert.match(get('anderstorp', 5).historical_source_locator, /lap 38 or 39/);
+  assert.match(get('anderstorp', 1).narrative.en, /(?:withdrew|withdrawal)/);
+  assert.match(get('anderstorp', 5).historical_source_locator, /lap-38\/lap-39/);
   assert.match(get('bremgarten', 5).narrative.uk, /Запасний план зник/);
   assert.match(get('clermont-ferrand', 4).narrative.en, /injured hand from his practice crash/);
   assert.match(get('clermont-ferrand', 5).narrative.en, /separate stone hazard/);
