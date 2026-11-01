@@ -13,7 +13,7 @@ const expected = {
     "The 50-lap Can-Am race on",
     "Rosberg had started only eighth.",
     "Mansell's 1:37.041 qualifying lap had",
-    "Prost's second contact with a",
+    "Motor Sport's report distinguishes Prost's second wall contact",
     "Only Arnoux finished on the"
   ],
   "caesars-palace": [

@@ -17,13 +17,13 @@ const dossiers = files.flatMap(file =>
 const edited = {
   aida: [
     [1, "Senna's zero completed laps", 'Нуль пройдених кіл'],
-    [2, 'Berger inherited second', 'Бергер став другим'],
-    [3, "Jordan's first podium depended", 'Jordan здобула перший подіум'],
+    [2, "Berger's promotion", 'Бергер отримав друге місце'],
+    [3, "Brundle's late overheating", 'Пізній перегрів McLaren'],
   ],
   dallas: [
-    [2, "The report separates Rosberg's pass", 'Репортаж розділяє три'],
+    [2, "Rosberg had started only eighth.", 'Росберг стартував лише восьмим.'],
     [3, 'Before the heat-exhaustion images', 'До драматичних кадрів'],
-    [5, 'For Osella', 'Для Osella'],
+    [5, 'Fifth place earned Ghinzani', 'П\'яте місце принесло Гіндзані'],
   ],
   'ain-diab': [
     [1, 'fastest-lap bonus', 'очко за найшвидше коло'],
