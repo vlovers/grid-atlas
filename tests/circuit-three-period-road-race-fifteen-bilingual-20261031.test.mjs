@@ -5,15 +5,15 @@ const base=new URL('../docs/editorial/circuit-experience-v3/',import.meta.url);
 const docs=['EXPANSION_3_ALL_ELEVEN_RESEARCH_DRAFTS.json','EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json'].map(name=>JSON.parse(readFileSync(new URL(name,base),'utf8')));
 const claims={
   "pescara": [
-    "Moss passed Musso on lap two",
+    "Musso led the first lap",
     "left-rear wheel",
     "Gregory's loosening bodywork",
-    "shaking bodywork",
+    "loose scuttle",
     "Brooks's overheating car"
   ],
   "porto": [
     "Brabham had run wide",
-    "McLaren's race was steadier",
+    "McLaren was third behind Surtees",
     "mechanics",
     "straw bales",
     "three cylinders"
