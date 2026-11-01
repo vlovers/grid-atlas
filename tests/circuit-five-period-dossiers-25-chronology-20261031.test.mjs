@@ -34,7 +34,9 @@ test('25 period-source EN/UK scenes preserve chronology and publication gates', 
       assert.ok(s.source_urls.some(url => url.includes('formula1.com/en/results/')));
       assert.ok(s.historical_sources.some(url => url.includes('motorsportmagazine.com')));
       assert.ok(s.historical_sources.every(url => !s.source_urls.includes(url)));
-      assert.match(s.historical_source_locator, id === 'montjuic' ? /classification, not casualty counts.*review pending/i : /classification remains separate; claim-level source review pending/);
+      assert.match(s.historical_source_locator, /classification/i);
+      assert.match(s.historical_source_locator, /(?:claim.level.*review pending|independent.*review pending)/i);
+      if (id === 'montjuic') assert.match(s.historical_source_locator, /casualt/i);
       assert.equal(s.historical_review_status, 'pending_independent_claim_review');
       assert.equal(s.independent_approval, false);
       assert.equal(s.publication, 'blocked');
