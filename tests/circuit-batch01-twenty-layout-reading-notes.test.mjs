@@ -23,6 +23,8 @@ test('first 20 circuit notes are unique, historically scoped and bilingual', () 
     assert.match(entry.copy.uk, /[ІіЇїЄєҐґА-Яа-я]/, entry.circuit_id);
     assert.doesNotMatch(entry.copy.en, /[ІіЇїЄєҐґА-Яа-я]/, entry.circuit_id);
     assert.match(entry.evidence_url, /^https:\/\//, entry.circuit_id);
+    assert.ok(entry.evidence_urls.includes(entry.evidence_url), entry.circuit_id);
+    assert.ok(entry.evidence_urls.every(url => /^https:\/\//.test(url)), entry.circuit_id);
     assert.ok(entry.landmarks.length > 0, entry.circuit_id);
     for (const landmark of entry.landmarks) {
       assert.ok(landmark.name.trim().length >= 5, entry.circuit_id);
