@@ -1,0 +1,1489 @@
+{
+  "schema_version": 1,
+  "kind": "twenty_editorial_chapter_compositions",
+  "status": "unapproved_research_only",
+  "human_approval": false,
+  "publication_allowed": false,
+  "chapters": [
+    {
+      "circuit_id": "dijon",
+      "title": {
+        "en": "The afternoon that gave France two unforgettable stories",
+        "uk": "День, який подарував Франції дві незабутні історії"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "A victory that changed Renault's story",
+            "uk": "Перемога, яка змінила історію Renault"
+          },
+          "prose": {
+            "en": "Jean-Pierre Jabouille won the 1979 French Grand Prix for Renault. That fact sits at the centre of Dijon’s story: a French driver, a French team and a victory whose importance extends beyond the top line of the result. The claim that this was the first turbo-powered Formula 1 World Championship victory needs a separate historical source, not just the finishing order.",
+            "uk": "Жан-П'єр Жабуй виграв Гран-прі Франції 1979 року за Renault. У центрі історії Діжона — французький пілот, французька команда й перемога, значення якої виходить за межі протоколу. Твердження про першу перемогу турбомотора в чемпіонаті світу потрібно підтвердити окремим історичним джерелом, а не лише фінішним порядком."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Two names that survived the finish",
+            "uk": "Два імені, які запам'яталися після фінішу"
+          },
+          "prose": {
+            "en": "Gilles Villeneuve finished second and René Arnoux third, only 0.240 seconds apart. A results table can establish that gap. It cannot show why the fight became famous; for their changes of position and any contact, a period account or footage is indispensable.",
+            "uk": "Жиль Вільньов фінішував другим, Рене Арну — третім. Між ними було лише 0,240 секунди. Протокол підтверджує цей розрив, але не передає причину слави їхньої боротьби. Щоб описати обгони й можливі зіткнення коліс, потрібен репортаж тих років або відеозапис."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "A Renault on either side of the drama",
+            "uk": "Два Renault — дві різні історії"
+          },
+          "prose": {
+            "en": "Jabouille's first place and Arnoux's third put two Renault drivers on the podium, yet their finishing positions tell different stories. One crossed the line as winner; the other was caught in a battle for second. This contrast belongs in one connected chapter, not two isolated result cards.",
+            "uk": "Жабуй переміг, а Арну став третім — двоє пілотів Renault піднялися на подіум, але після зовсім різних гонок. Один перетнув фініш переможцем, інший опинився у боротьбі за друге місце. Це два боки однієї історії, а не привід створювати ще дві однакові картки результатів."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "The rest of the field was still racing",
+            "uk": "Позаду трійки теж ішла гонка"
+          },
+          "prose": {
+            "en": "Alan Jones was fourth for Williams-Ford. His result matters for the full picture, even if the front three draw most of the attention. Rather than inventing a chase, the article should show his verified place in the classification and reserve further detail for an event report.",
+            "uk": "Алан Джонс посів четверте місце на Williams-Ford. Його результат важливий для повної картини гонки, навіть якщо вся увага дісталася першій трійці. Замість вигаданої погоні достатньо показати підтверджене місце у протоколі; деталі можна додати після перевірки репортажу."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Lauda's unfinished afternoon",
+            "uk": "Гонка Лауди обірвалася"
+          },
+          "prose": {
+            "en": "Niki Lauda did not reach the finish in his Brabham-Alfa Romeo. In a race remembered for Renault's victory, that retirement forms part of the event’s wider story, but the results alone are not enough to name the failure or explain its cause.",
+            "uk": "Нікі Лауда не дістався фінішу на Brabham-Alfa Romeo. Поки Renault святкувала перемогу, для нього гонка закінчилася раніше. Це частина ширшої картини Діжона, однак із протоколу не можна встановити причину сходу або назвати несправну деталь."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "jarama",
+      "title": {
+        "en": "Five cars and barely a second",
+        "uk": "П'ять машин і трохи більше секунди"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Five cars, one extraordinary finish",
+            "uk": "П'ять машин — один незвичайний фініш"
+          },
+          "prose": {
+            "en": "Gilles Villeneuve won the 1981 Spanish Grand Prix at Jarama. Jacques Laffite, John Watson, Carlos Reutemann and Elio de Angelis followed, all within 1.240 seconds of the winner. This compressed finish is the story; the reasons Villeneuve kept the lead must come from a race account, not an invented lap-by-lap duel.",
+            "uk": "Жиль Вільньов виграв Гран-прі Іспанії 1981 року на Харамі. Позаду нього фінішували Жак Лаффіт, Джон Вотсон, Карлос Ройтеманн та Еліо де Анджеліс — усі в межах 1,240 секунди від переможця. Саме цей тісний фініш і є історією. Як Вільньову вдалося втримати позицію, має пояснити репортаж, а не вигадана дуель за колами."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Just two tenths for Laffite",
+            "uk": "Лаффіту забракло двох десятих"
+          },
+          "prose": {
+            "en": "Jacques Laffite finished second, 0.220 seconds behind the Ferrari. It is a striking number at the end of a Grand Prix. It describes the margin at the line, not how often he attempted to pass or how close he stayed on earlier laps.",
+            "uk": "Жак Лаффіт фінішував другим, програвши Ferrari лише 0,220 секунди. Для фіналу Гран-прі це разючий розрив. Але він показує тільки відстань на фініші, а не кількість спроб обгону й не те, наскільки близько пілоти їхали протягом усієї дистанції."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Watson in the middle of the train",
+            "uk": "Вотсон посеред щільної групи"
+          },
+          "prose": {
+            "en": "John Watson took third, 0.580 seconds behind Villeneuve. McLaren's podium belongs to the same remarkable finish, and it becomes more meaningful alongside the four gaps than as a standalone summary of third place.",
+            "uk": "Джон Вотсон став третім — за 0,580 секунди після Вільньова. Подіум McLaren — частина того самого незвичайного фінішу. Про нього цікавіше розповісти поруч із часовими розривами всієї п'ятірки, а не як окрему історію про третє місце."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Reutemann misses the podium",
+            "uk": "Ройтеманн залишається за крок від подіуму"
+          },
+          "prose": {
+            "en": "Carlos Reutemann was fourth, 1.010 seconds from victory. A narrow final gap can make the result feel cruel, but it is not proof that the Williams had a last-corner chance to overtake. The finishing order is certain; the racing action needs its own evidence.",
+            "uk": "Карлос Ройтеманн фінішував четвертим — через 1,010 секунди після переможця. Такий малий розрив додає драматизму, але не доводить, що Williams мала шанс обігнати когось в останньому повороті. Фінішний порядок відомий; події на трасі потребують окремих свідчень."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "De Angelis completes the picture",
+            "uk": "Де Анджеліс завершує картину"
+          },
+          "prose": {
+            "en": "Elio de Angelis was fifth, 1.240 seconds behind the winning Ferrari. His finish completes the five-car picture: one win, four pursuers and a tiny range of gaps. Keeping all five together is clearer than five nearly identical podium-and-points stories.",
+            "uk": "Еліо де Анджеліс став п'ятим, поступившись переможцю 1,240 секунди. Саме його результат завершує картину: один переможець, четверо переслідувачів і зовсім невеликі часові розриви. Разом ці п'ять місць говорять більше, ніж п'ять майже однакових текстів про очки й позиції."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "jerez",
+      "title": {
+        "en": "Fourteen thousandths between victory and second",
+        "uk": "Чотирнадцять тисячних між перемогою і другим місцем"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Fourteen thousandths",
+            "uk": "Чотирнадцять тисячних"
+          },
+          "prose": {
+            "en": "Ayrton Senna won the 1986 Spanish Grand Prix at Jerez by 0.014 seconds over Nigel Mansell. The gap was almost nothing; the victory was entirely real. To describe Mansell's closing charge or the choices that produced this finish, use contemporary reporting rather than reading strategy into the stopwatch.",
+            "uk": "Айртон Сенна переміг Найджела Менселла на Гран-прі Іспанії 1986 року в Хересі з перевагою лише 0,014 секунди. Розрив був майже невидимим, але перемога — цілком реальною. Щоб пояснити останні кола та рішення команд, потрібен репортаж того часу, а не здогади за секундоміром."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Mansell's second place was no ordinary second",
+            "uk": "Друге місце Менселла — не звичайне друге місце"
+          },
+          "prose": {
+            "en": "Nigel Mansell crossed the line almost alongside Senna and was classified second. It is tempting to retell the same finish as two separate dramatic stories. A stronger chapter gives each driver's perspective while keeping the 0.014-second result in one coherent scene.",
+            "uk": "Найджел Менселл перетнув фініш майже поруч із Сенною, але залишився другим. Спокуса очевидна: розповісти той самий фініш як дві різні драми. Сильніший матеріал дає місце обом пілотам, але залишає розрив у 0,014 секунди частиною однієї цілісної сцени."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "The third car was much farther back",
+            "uk": "Третя машина була значно далі"
+          },
+          "prose": {
+            "en": "Alain Prost finished third, 21.552 seconds behind the winner. The margin sets the astonishing first-two finish in context. It does not, by itself, explain whether Prost had tyre, traffic or mechanical problems.",
+            "uk": "Ален Прост став третім, програвши переможцю 21,552 секунди. Ця різниця допомагає відчути, наскільки незвичайною була боротьба двох лідерів. Але вона не пояснює, чи мав Прост проблеми з шинами, трафіком або технікою."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Another McLaren in the classification",
+            "uk": "Ще один McLaren у протоколі"
+          },
+          "prose": {
+            "en": "Keke Rosberg came home fourth, a lap behind. That is useful context for McLaren's race as a whole, but a fourth-place result alone is not an independent historical turning point. Fold it into the race account unless a separate episode is documented.",
+            "uk": "Кеке Росберг фінішував четвертим, програвши коло. Це корисна деталь для історії McLaren у Хересі, однак сама позиція ще не є історичним переломним моментом. Її варто вплести в розповідь про гонку, якщо окрему подію не підтверджено джерелом."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Different endings for the Williams drivers",
+            "uk": "Різні фінали для двох Williams"
+          },
+          "prose": {
+            "en": "While Mansell chased victory, Nelson Piquet did not finish in the other Williams. Their contrast is easy to see in the official results; the reason for Piquet's retirement needs an event-specific report before it becomes part of the narrative.",
+            "uk": "Поки Менселл боровся за перемогу, Нельсон Піке на іншому Williams не дістався фінішу. Цей контраст видно в офіційних результатах. А ось причину сходу Піке потрібно шукати в репортажі про гонку, перш ніж включати її до сюжету."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1986/races/499/spain/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "sebring",
+      "title": {
+        "en": "Two winners, only one world champion",
+        "uk": "Два переможці, але лише один чемпіон світу"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "A race winner and a world champion",
+            "uk": "Переможець гонки й чемпіон світу"
+          },
+          "prose": {
+            "en": "Bruce McLaren won the 1959 United States Grand Prix at Sebring. Jack Brabham, who finished fourth, took the World Championship. These two outcomes should open the story together: the man who won the final race was not the man who won the season.",
+            "uk": "Брюс Макларен виграв Гран-прі США 1959 року в Себрингу. А чемпіоном світу став Джек Бребем, який фінішував четвертим. Обидва підсумки варто показати поруч із самого початку: переможець останньої гонки не був переможцем усього сезону."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Six tenths separated the leading Coopers",
+            "uk": "Шість десятих між двома Cooper"
+          },
+          "prose": {
+            "en": "Maurice Trintignant finished second, 0.6 seconds behind McLaren. That makes the front of the classification unusually close, but the exact movements of the closing laps require a contemporary account. A narrow margin should invite the reader into the story, not substitute for its evidence.",
+            "uk": "Моріс Трентіньян фінішував другим, відставши від Макларена на 0,6 секунди. Фініш лідерів вийшов незвичайно щільним. Проте події останніх кіл потрібно відтворювати за репортажем: малий розрив має зацікавити читача, а не підміняти докази."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Brooks still had a stake in the title",
+            "uk": "Брукс теж боровся за титул"
+          },
+          "prose": {
+            "en": "Tony Brooks was third in a Ferrari. For a full championship explanation, his points position and the era's dropped-results rules matter more than the race gap alone. Those calculations must be verified before publishing a hypothetical title scenario.",
+            "uk": "Тоні Брукс став третім на Ferrari. Щоб пояснити його місце в боротьбі за титул, потрібно врахувати очки та тодішні правила відкидання результатів — це важливіше за сам відрив у гонці. Будь-які сценарії чемпіонства слід перевірити математично до публікації."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Brabham's finish deserves a scene of its own",
+            "uk": "Фініш Бребема заслуговує на окрему сцену"
+          },
+          "prose": {
+            "en": "Brabham was classified fourth and became champion. The famous account of him pushing his fuel-starved car belongs here only after checking a contemporary source for the exact circumstances. The classification alone cannot tell how far he pushed or precisely where the car stopped.",
+            "uk": "Бребем посів четверте місце й став чемпіоном. Відома історія про те, як він штовхав машину після закінчення пального, доречна саме тут — але її деталі потрібно звірити з репортажем того часу. Протокол не повідомляє ні відстані, ні точного місця зупинки."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Moss's campaign ends early",
+            "uk": "Сезон Мосса закінчується достроково"
+          },
+          "prose": {
+            "en": "Stirling Moss retired early from the Sebring race, while Brabham reached the classification that gave him the title. The retirement and championship outcome are connected, but claiming that one alone mathematically decided everything requires the full 1959 points rules and pre-race standings.",
+            "uk": "Стірлінг Мосс рано зійшов із дистанції у Себрингу, тоді як Бребем фінішував на місці, якого вистачило для титулу. Ці події пов'язані, але стверджувати, що один схід сам вирішив долю чемпіонату, можна лише після перевірки таблиці очок і правил сезону 1959 року."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_RACE_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/179/united-states/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "anderstorp",
+      "title": {
+        "en": "The machine that made everyone look twice",
+        "uk": "Машина, на яку всі озиралися"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Lauda and the unusual Brabham",
+            "uk": "Лауда й незвичайний Brabham"
+          },
+          "prose": {
+            "en": "Niki Lauda won the 1978 Swedish Grand Prix for Brabham-Alfa Romeo over 70 laps. This was also the race associated with the fan-equipped BT46B, a technical story worth telling alongside the result. The classification confirms who won; a technical history is needed before explaining what the fan did and why the car became controversial.",
+            "uk": "Нікі Лауда виграв Гран-прі Швеції 1978 року на Brabham-Alfa Romeo, подолавши 70 кіл. Цю гонку також пам'ятають через BT46B із вентилятором — інженерну історію, яку варто розповісти поруч із перемогою. Протокол підтверджує результат, але як саме працював вентилятор і чому машина викликала суперечки, потрібно перевірити за окремими технічними джерелами."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Eighty-six thousandths for second",
+            "uk": "Вісімдесят шість тисячних за друге місце"
+          },
+          "prose": {
+            "en": "Riccardo Patrese was second in his Arrows, just 0.086 seconds ahead of Ronnie Peterson's Lotus. It was a remarkably small gap behind Lauda's victory. Yet the number records the finish only: it cannot tell us when either driver attacked or whether they raced side by side.",
+            "uk": "Ріккардо Патрезе став другим на Arrows, випередивши Lotus Ронні Петерсона лише на 0,086 секунди. Позаду переможця Лауди боротьба за позиції завершилася з мізерним розривом. Та число описує тільки фініш: воно не показує, коли хтось атакував і чи їхали пілоти пліч-о-пліч."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Peterson on a Swedish podium",
+            "uk": "Петерсон на шведському подіумі"
+          },
+          "prose": {
+            "en": "Ronnie Peterson took third at his home Grand Prix. That gives the Anderstorp story a local face: a Swedish driver on the podium, even as the headline victory went to Lauda. Any description of how spectators reacted belongs to period reporting rather than an imagined crowd scene.",
+            "uk": "Ронні Петерсон посів третє місце на домашньому Гран-прі. Так історія Андерсторпа отримала свого шведського героя на подіумі, хоча перемога дісталася Лауді. Реакцію трибун можна описувати лише за репортажами того часу, а не вигадувати для красивої сцени."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Ferrari misses the front",
+            "uk": "Ferrari далеко від лідерів"
+          },
+          "prose": {
+            "en": "Gilles Villeneuve and Carlos Reutemann finished ninth and tenth for Ferrari, each a lap behind the winner. Their results deserve a place in the full race picture, but two finishing positions are not enough to construct a story of team turmoil or driving errors.",
+            "uk": "Жиль Вільньов і Карлос Ройтеманн фінішували дев'ятим і десятим за Ferrari, обоє програвши коло. Ці місця важливі для повної картини гонки, але двох рядків протоколу недостатньо, щоб вигадувати кризу команди або помилки пілотів."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Two Lotus cars, different endings",
+            "uk": "Два Lotus — різні підсумки"
+          },
+          "prose": {
+            "en": "Mario Andretti retired after 46 laps, while Lotus team-mate Ronnie Peterson finished third. It is a clean contrast within one team: one car did not reach the flag, the other stood on the podium. The cause of Andretti's retirement needs a separate race report.",
+            "uk": "Маріо Андретті зійшов після 46 кіл, а його напарник по Lotus Ронні Петерсон фінішував третім. В однієї команди вийшли два зовсім різні результати: одна машина не дісталася фінішу, інша принесла подіум. Причину сходу Андретті потрібно уточнити за репортажем."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1978/races/398/sweden/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "bremgarten",
+      "title": {
+        "en": "Fangio's Mercedes and the Swiss finale",
+        "uk": "Mercedes Фанхіо та швейцарська гонка"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Fangio wins in Switzerland",
+            "uk": "Фанхіо перемагає у Швейцарії"
+          },
+          "prose": {
+            "en": "Juan Manuel Fangio won the 1954 Swiss Grand Prix in a Mercedes-Benz, completing 66 laps. Bremgarten's place in his season is worth exploring, but a single race classification does not explain how this victory affected the championship points. That context belongs to the season standings.",
+            "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Швейцарії 1954 року на Mercedes-Benz, подолавши 66 кіл. Місце Бремгартена в його сезоні справді цікаве, проте з одного протоколу неможливо зрозуміти, як перемога вплинула на боротьбу за титул. Для цього потрібна таблиця чемпіонату."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "González brings Ferrari home second",
+            "uk": "Гонсалес привозить Ferrari другою"
+          },
+          "prose": {
+            "en": "José Froilán González finished second for Ferrari, 57.8 seconds behind Fangio. Both completed the full 66 laps. It is a strong result for Ferrari, but their final gap does not by itself establish a race-long duel.",
+            "uk": "Хосе-Фройлан Гонсалес став другим на Ferrari, відставши від Фанхіо на 57,8 секунди. Обидва подолали всі 66 кіл. Для Ferrari це вагомий результат, однак фінішний відрив сам по собі не доводить, що вони боролися між собою всю дистанцію."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Another Mercedes on the podium",
+            "uk": "Ще один Mercedes на подіумі"
+          },
+          "prose": {
+            "en": "Hans Herrmann completed the podium for Mercedes-Benz, one lap behind winning team-mate Fangio. Two cars from one marque stood among the first three. To tell the wider story of the company's return to Grand Prix racing, the race result must be paired with a historical source.",
+            "uk": "Ганс Геррманн замкнув подіум на Mercedes-Benz, програвши коло своєму напарнику Фанхіо. Дві машини марки потрапили до першої трійки. А щоб розповісти ширшу історію повернення Mercedes до Гран-прі, протокол потрібно доповнити історичними джерелами."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Maserati fills the next places",
+            "uk": "Maserati займає наступні місця"
+          },
+          "prose": {
+            "en": "Roberto Mieres finished fourth, ahead of Sergio Mantovani and Ken Wharton in Maserati machinery. Three nearby rows in the result offer a useful snapshot of the constructor's afternoon, not evidence of a three-way battle. An event report would be needed to add racing action.",
+            "uk": "Роберто М'єрес став четвертим, випередивши Серджо Мантовані й Кена Вортона на машинах Maserati. Три сусідні позиції допомагають побачити результат марки, але не доводять, що між цими пілотами точилася потрійна дуель. Для подробиць потрібен репортаж."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Moss does not reach the finish",
+            "uk": "Мосс не дістається фінішу"
+          },
+          "prose": {
+            "en": "Stirling Moss's Maserati retired after 21 laps, long before Fangio completed his winning 66. The contrast gives the classification a second thread, but the cause of the retirement remains a question until a contemporary account is consulted.",
+            "uk": "Стірлінг Мосс зійшов на Maserati після 21 кола, задовго до того, як Фанхіо завершив усі 66. Такий контраст додає історії гонки ще один штрих, але причину сходу не варто називати без перевірки джерел того часу."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "title": {
+        "en": "Argentina welcomes Formula 1 back",
+        "uk": "Аргентина знову зустрічає Формулу-1"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Hill wins as Argentina returns",
+            "uk": "Гілл перемагає після повернення Аргентини"
+          },
+          "prose": {
+            "en": "Damon Hill won the 1995 Argentine Grand Prix for Williams-Renault, completing 71 laps. The event marked Buenos Aires's return to the championship calendar. The result provides the winner; the venue's absence and return need separate calendar evidence.",
+            "uk": "Деймон Гілл виграв Гран-прі Аргентини 1995 року на Williams-Renault, подолавши 71 коло. Так Буенос-Айрес повернувся до календаря чемпіонату. Протокол називає переможця, а історію перерви й повернення траси слід звірити з календарями попередніх сезонів."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Alesi finishes seven seconds back",
+            "uk": "Алезі фінішує за сім секунд"
+          },
+          "prose": {
+            "en": "Jean Alesi came home second for Ferrari, 7.136 seconds behind Hill. That margin brings the front of the race into focus, but it cannot tell us if Alesi was closing in or falling away over the final laps.",
+            "uk": "Жан Алезі привів Ferrari до другого місця, відставши від Гілла на 7,136 секунди. Цей розрив допомагає уявити фініш, але не пояснює, чи Алезі наближався до лідера на останніх колах, чи навпаки втрачав час."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Schumacher takes third",
+            "uk": "Шумахер стає третім"
+          },
+          "prose": {
+            "en": "Michael Schumacher finished third in his Benetton-Renault, 32.888 seconds behind the Williams winner. The reigning champion's position forms part of the opening 1995 season story, but a full comparison of title rivals requires the standings, not just this one finishing order.",
+            "uk": "Міхаель Шумахер став третім на Benetton-Renault, програвши переможцю на Williams 32,888 секунди. Результат чинного чемпіона — частина історії початку сезону 1995 року, але порівнювати претендентів на титул потрібно за таблицею, а не за однією гонкою."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Two Benettons in the first four",
+            "uk": "Два Benetton у першій четвірці"
+          },
+          "prose": {
+            "en": "Johnny Herbert finished fourth, a lap behind the winner, alongside Schumacher's third-place result for Benetton-Renault. Together these positions show the team's classified strength at Buenos Aires; they do not reveal pit strategy or internal rivalry.",
+            "uk": "Джонні Герберт став четвертим, програвши переможцю коло. Разом із третім місцем Шумахера це означало дві машини Benetton-Renault у першій четвірці. Та протокол не розповідає ані про стратегію піт-стопів, ані про стосунки всередині команди."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Coulthard's race ends early",
+            "uk": "Култгард сходить завчасно"
+          },
+          "prose": {
+            "en": "David Coulthard retired the other Williams-Renault after 16 laps as team-mate Hill went on to win. Few comparisons are clearer in the results: the same constructor had a winner and an early retirement. The reason for Coulthard's exit is a separate research question.",
+            "uk": "Девід Култгард зійшов на другому Williams-Renault після 16 кіл, тоді як його напарник Гілл згодом переміг. Контраст очевидний: одна машина команди виграла, інша рано залишила гонку. Причину сходу Култгарда потрібно дослідити окремо."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "title": {
+        "en": "A last French Grand Prix at Charade",
+        "uk": "Останній французький Гран-прі на Шараді"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Stewart wins at Charade",
+            "uk": "Стюарт виграє на Шараді"
+          },
+          "prose": {
+            "en": "Jackie Stewart won the 1972 French Grand Prix in his Tyrrell-Ford after 38 laps. That makes him the central figure in Charade's race story. Claims about the difficulty, danger or shape of the circuit need a period map and first-hand reporting, not just the result.",
+            "uk": "Джекі Стюарт виграв Гран-прі Франції 1972 року на Tyrrell-Ford, подолавши 38 кіл. Саме він — центральна постать історії гонки на Шараді. Але складність, небезпеку чи особливості поворотів потрібно описувати за картою тієї епохи й репортажами, а не тільки за протоколом."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Fittipaldi follows Stewart home",
+            "uk": "Фіттіпальді фінішує за Стюартом"
+          },
+          "prose": {
+            "en": "Emerson Fittipaldi was second in his Lotus-Ford, 27.7 seconds behind Stewart. Both reached the flag on the lead lap. Their wider role in the 1972 championship makes for a richer story, provided the points and title stakes are checked against season records.",
+            "uk": "Емерсон Фіттіпальді став другим на Lotus-Ford, відставши від Стюарта на 27,7 секунди. Обидва завершили гонку в колі лідера. Їхня боротьба в чемпіонаті 1972 року могла б зробити розповідь глибшою, але очки й турнірний контекст необхідно звірити з даними сезону."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Amon brings Matra third",
+            "uk": "Амон привозить Matra на третє місце"
+          },
+          "prose": {
+            "en": "Chris Amon completed the podium for Matra, 4.2 seconds behind Fittipaldi. The difference shows that second and third finished relatively close. It does not establish when or how either driver attacked; that detail needs an account of the race.",
+            "uk": "Кріс Амон замкнув подіум за кермом Matra, програвши Фіттіпальді 4,2 секунди. Розрив показує, що другий і третій фінішували порівняно близько. Та він не пояснює, коли й як хтось атакував — для цього потрібен опис перебігу гонки."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Cevert adds fourth for Tyrrell",
+            "uk": "Север приносить Tyrrell четверте місце"
+          },
+          "prose": {
+            "en": "François Cevert finished fourth in the other Tyrrell-Ford, 49.3 seconds behind winning team-mate Stewart. The pair's finishes are best read together: a victory and a fourth place for the same team, without inventing a coordinated strategy from their positions.",
+            "uk": "Франсуа Север став четвертим на іншому Tyrrell-Ford, поступившись переможцю й напарнику Стюарту 49,3 секунди. Обидва результати варто показати поруч: перемога і четверте місце для однієї команди, без вигадок про спільну тактику заради результату."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Lauda's brief appearance",
+            "uk": "Коротка гонка Лауди"
+          },
+          "prose": {
+            "en": "Niki Lauda's March-Ford retired after four laps. He appears in this race as a young driver whose afternoon ended early, not yet as the champion he would later become. A retirement reason needs to be drawn from a period source, not guessed from the lap count.",
+            "uk": "Нікі Лауда зійшов на March-Ford після чотирьох кіл. У цій гонці він — молодий пілот, чий виступ швидко завершився, а не ще той чемпіон, яким стане згодом. Причину сходу треба шукати в джерелах того часу, а не вгадувати за кількістю кіл."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_REWRITTEN_ANDERSTORP_CLERMONT_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/307/france/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "east-london",
+      "title": {
+        "en": "A title decided at the end of December",
+        "uk": "Титул, який вирішився наприкінці грудня"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "The last race, the first crown",
+            "uk": "Остання гонка — перший титул"
+          },
+          "prose": {
+            "en": "The season had reached its final afternoon, and Graham Hill still had one job to do. On 29 December 1962, at South Africa's Prince George Circuit, the BRM driver completed 82 laps and won. Jim Clark, the rival who could still stand between him and the championship, was listed as a retirement after 61 laps. Hill left East London with more than a Grand Prix trophy: the first world title of his career. One finishing order captures a change that would shape both men's stories for years.",
+            "uk": "Сезон дійшов до останнього вечора, а Грему Гіллу залишалося зробити найголовніше. 29 грудня 1962 року на трасі Принс-Джордж у Південній Африці пілот BRM подолав 82 кола й переміг. Його суперник Джим Кларк зійшов після 61 кола. Гілл залишив Іст-Лондон не лише з трофеєм за перемогу: він здобув перший титул чемпіона світу. У протоколі це просто два результати. В історії Формули-1 — мить, що змінила кар'єри обох."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Sixty-one laps were not enough",
+            "uk": "Шістдесяти одного кола не вистачило"
+          },
+          "prose": {
+            "en": "Jim Clark's name sits far down the 1962 South African Grand Prix classification, beside 61 laps and a retirement. That small line can be painfully misleading. Clark came to the season finale with a championship at stake; Hill finished the race, Clark did not. Before inventing the sound of a failing engine or the exact corner where his hopes ended, the story must return to a contemporary race report. What the record already shows is stark enough: a title contender never saw the chequered flag.",
+            "uk": "У протоколі Гран-прі Південної Африки 1962 року ім'я Джима Кларка стоїть далеко від подіуму: 61 коло й схід. Цей сухий рядок приховує цілий сезон боротьби. Кларк приїхав на фінал із шансом на титул, але до картатого прапора не дістався. Не потрібно вигадувати звук несправного мотора чи поворот, де все скінчилося. Навіть без цих деталей правда промовиста: претендент на чемпіонство не побачив фінішу."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Half a second between the Coopers",
+            "uk": "Пів секунди між двома Cooper"
+          },
+          "prose": {
+            "en": "While Hill celebrated his victory, Bruce McLaren and Tony Maggs gave Cooper another reason to remember East London. They finished second and third, separated by just half a second. McLaren was 49.8 seconds behind the winner; Maggs 50.3. The gap tells us nothing about the number of overtakes they attempted. It does, however, offer a wonderfully sharp final image: two Cooper cars crossing the line almost together, behind a champion whose afternoon had already made history.",
+            "uk": "Поки Гілл святкував перемогу, Брюс Макларен і Тоні Меггс принесли Cooper ще один привід запам'ятати Іст-Лондон. Вони стали другим і третім — між ними було лише пів секунди. Макларен програв переможцю 49,8 секунди, Меггс — 50,3. Ці цифри не розкажуть про всі обгони. Але фінішну картину передають чудово: два Cooper майже поруч, а попереду — пілот, який щойно став чемпіоном світу."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Brabham was closer than fourth sounds",
+            "uk": "Четверте місце Бребема було зовсім поруч"
+          },
+          "prose": {
+            "en": "Jack Brabham finished fourth at East London. On paper that looks like a quiet result, somewhere outside the podium photographs. Look at the clock instead: Maggs was only 3.5 seconds ahead after 82 laps. A handful of seconds separated third and fourth at the end of a long Grand Prix. Brabham had not found a podium, but he was much closer to it than the bare position suggests.",
+            "uk": "Джек Бребем став четвертим в Іст-Лондоні. У таблиці це виглядає скромно: за межами подіуму, за межами головних фотографій. Та варто подивитися на час. Після 82 кіл до третього місця Тоні Меггса залишилося лише 3,5 секунди. Бребем не здобув подіум, але був набагато ближче до нього, ніж здається з одного рядка результатів. Від третього місця його відділяли секунди, а не кола — невелика, але промовиста деталь цього фіналу."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "A home point beyond the title drama",
+            "uk": "Домашнє очко поза чемпіонською драмою"
+          },
+          "prose": {
+            "en": "The headlines belonged to Hill and Clark, but not everyone at East London was racing for a world championship. South African Neville Lederle brought his Lotus-Climax home sixth. Under the points system in use that year, sixth place earned a single championship point. For Lederle, the result gave his home Grand Prix a place in his own F1 record. History is full of such quieter finishes; they deserve space beside the famous ones.",
+            "uk": "Головні заголовки дісталися Гіллу й Кларку. Але не всі в Іст-Лондоні билися за титул чемпіона світу. Південноафриканець Невілл Ледерле фінішував шостим на Lotus-Climax. За правилами того року шосте місце давало одне очко. Так домашній Гран-прі залишив слід і в його особистій історії Формули-1. Великі чемпіонати складаються не тільки з перемог зірок — у них є місце й для таких тихих фінішів."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "monaco",
+      "title": {
+        "en": "The day Monaco refused to follow the script",
+        "uk": "День, коли Монако відмовилося грати за сценарієм"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "The winner nobody could have written in advance",
+            "uk": "Переможець, якого ніхто не вписав би наперед"
+          },
+          "prose": {
+            "en": "The 1996 Monaco Grand Prix kept taking names off the list. Michael Schumacher completed no racing laps. Damon Hill was out after 40. Others disappeared before the finish. And there, after 75 laps, was Olivier Panis at the top of the classification in a Ligier-Mugen Honda. David Coulthard followed, Johnny Herbert took third. Monaco had produced a winner whose name would forever be tied to this extraordinary Sunday. It was not a victory that needed embellishment; the order itself was startling.",
+            "uk": "Гран-прі Монако 1996 року наче викреслював із протоколу одне гучне ім'я за іншим. Міхаель Шумахер не завершив жодного гоночного кола. Деймон Гілл зійшов після сорока. Інші теж не дісталися фінішу. А після 75 кіл першим у результатах стояв Олів'є Паніс на Ligier-Mugen Honda. За ним — Девід Култгард і Джонні Герберт. Монако подарувало переможця, чиє ім'я назавжди пов'язали з цим незвичайним днем. Тут навіть не потрібно нічого прикрашати."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Four seconds from an unlikely victory",
+            "uk": "Чотири секунди від неймовірної перемоги"
+          },
+          "prose": {
+            "en": "David Coulthard crossed the Monaco finish line 4.828 seconds behind Olivier Panis. In an ordinary Grand Prix, second place might be a footnote. Not this one. With so many cars missing from the final running order, simply reaching the flag was part of the achievement. Coulthard had been close enough for the timekeepers to measure the gap in seconds, but Panis would keep the winner's trophy. Their two names are best read together, at the end of the same improbable race.",
+            "uk": "Девід Култгард перетнув фініш у Монако через 4,828 секунди після Олів'є Паніса. У звичайній гонці друге місце легко загубилося б за історією переможця. Але не цього разу. Коли стільки машин не доїхали до кінця, сам фініш уже багато означав. Култгард опинився лише за кілька секунд від перемоги, та кубок дістався Панісу. Їхні імена краще звучать разом — у фіналі однієї неймовірної гонки."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "A Sauber on Monaco's podium",
+            "uk": "Sauber на подіумі Монако"
+          },
+          "prose": {
+            "en": "Look again at Monaco's 1996 top three: Ligier, McLaren, Sauber. Johnny Herbert brought the Sauber-Ford home third, 37.503 seconds behind Panis. It was the sort of podium that makes a reader look twice at the result sheet. Yet Herbert's third place was real, earned on the same afternoon that defeated so many favourites. Behind the famous streets and glamorous setting, the classification records a very unusual combination of teams.",
+            "uk": "Придивіться до першої трійки Монако 1996 року: Ligier, McLaren, Sauber. Джонні Герберт привів Sauber-Ford третім, програвши Панісу 37,503 секунди. Побачивши такий подіум, хочеться ще раз перевірити таблицю. Та третє місце Герберта — цілком реальний підсумок дня, коли чимало фаворитів не доїхали. За знайомими вулицями Монако ховався один із найнесподіваніших фінішних порядків."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Zero laps for Schumacher",
+            "uk": "Нуль кіл для Шумахера"
+          },
+          "prose": {
+            "en": "Michael Schumacher arrived at Monaco as one of Formula 1's biggest names. His official 1996 race line is brutally short: zero completed laps, no finish. The record does not need a dramatic invented speech. Put that line beside Panis's 75 laps and victory, and the contrast says enough. One driver's Grand Prix ended before a completed lap; another found the most memorable win of his career.",
+            "uk": "Міхаель Шумахер приїхав до Монако одним із найгучніших імен Формули-1. Його рядок у протоколі 1996 року безжально короткий: нуль завершених кіл, сходження з дистанції. Не потрібно вигадувати драматичні слова в радіоефірі. Достатньо поставити поруч 75 кіл Паніса та його перемогу. Для одного пілота гонка закінчилася, не встигнувши по-справжньому початися. Для іншого вона стала незабутньою."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Hill's forty laps",
+            "uk": "Сорок кіл Гілла"
+          },
+          "prose": {
+            "en": "Damon Hill's Williams-Renault completed 40 laps of Monaco's 1996 race. Then his name joined the list of retirements. The final result gives no hint of what it felt like inside the cockpit, and we will not pretend it does. But it shows how dramatically the Grand Prix changed: a driver many expected to matter at the front vanished from the contest, while Olivier Panis went on to win. Sometimes the most revealing part of a result is not who finished first, but who never finished at all.",
+            "uk": "Деймон Гілл подолав на Williams-Renault сорок кіл Гран-прі Монако 1996 року. Потім його ім'я опинилося серед тих, хто зійшов. Протокол не розповідає, що пілот відчував у кокпіті, і ми не будемо це вигадувати. Але він показує, як змінилася гонка: один із головних претендентів зник із боротьби, а Олів'є Паніс поїхав до перемоги. Іноді історію перегонів найкраще пояснює не переможець, а ті, хто так і не дістався фінішу."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1996/races/643/monaco/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "mosport",
+      "title": {
+        "en": "Canada's first championship afternoon",
+        "uk": "Перший чемпіонатний день Канади"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Canada enters the championship",
+            "uk": "Канада входить до чемпіонату"
+          },
+          "prose": {
+            "en": "On 27 August 1967, the Formula 1 World Championship raced in Canada. Mosport hosted the country's first championship Grand Prix, and Jack Brabham became its winner after 90 laps. The new name on the calendar was not just a change of scenery: Canadian fans could see the world's leading single-seater championship on home ground. Brabham's victory is the starting point, but the larger story is about a country joining the sport's expanding map.",
+            "uk": "27 серпня 1967 року чемпіонат світу Формули-1 уперше провів Гран-прі Канади. Першою трасою став Моспорт, а переможцем після 90 кіл — Джек Бребем. Нова назва в календарі була не просто зміною декорацій: канадські вболівальники отримали змогу побачити чемпіонат на власній землі. Перемога Бребема відкриває цю історію, але її справжній масштаб — у появі Канади на карті Формули-1."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "A perfect pair of Brabhams",
+            "uk": "Два Brabham на вершині"
+          },
+          "prose": {
+            "en": "First Jack Brabham, then Denny Hulme. The 1967 Canadian Grand Prix ended with two Brabham-Repco cars ahead of everyone else. Hulme was 61.9 seconds behind the winner, but he had done enough to finish second. For a team bearing the name of the man who won, that was an unusually tidy result. Mosport's first F1 race therefore began with a one-two whose names told almost the entire podium story.",
+            "uk": "Перший — Джек Бребем. Другий — Денні Гальм. Гран-прі Канади 1967 року завершився двома Brabham-Repco попереду решти. Гальм програв переможцю 61,9 секунди, але втримав друге місце. Для команди, що носила ім'я свого переможця, це був особливий підсумок. Так перший чемпіонатний Гран-прі Моспорту подарував дубль, який варто запам'ятати. Ця подробиця доповнює картину гонки, не змінюючи підтверджених результатів та місць пілотів на фініші."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "The Eagle among the leaders",
+            "uk": "Eagle серед лідерів"
+          },
+          "prose": {
+            "en": "Dan Gurney finished third at Mosport in an Eagle-Weslake, a lap behind Jack Brabham. The first two places belonged to Brabham-Repco; the third brought a different constructor into the picture. It makes for a more interesting podium than a simple list of three names. Gurney's achievement also invites a separate look at the Eagle project, a story that deserves more than a guess based on the brand printed beside his result.",
+            "uk": "Ден Герні став третім у Моспорті на Eagle-Weslake, програвши коло Джеку Бребему. Перші два місця дісталися Brabham-Repco, а третє — зовсім іншому конструктору. Подіум вийшов цікавішим за простий перелік імен. Результат Герні також відкриває двері до історії Eagle — але її потрібно розповідати за джерелами, а не здогадуватися лише за назвою машини в протоколі."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Clark's day ends at sixty-nine",
+            "uk": "Шістдесят дев'ять кіл Кларка"
+          },
+          "prose": {
+            "en": "Jim Clark did not finish the first Canadian World Championship Grand Prix. His Lotus-Ford was recorded with 69 laps, while Brabham completed all 90 on the way to victory. In a field full of major names, even a champion could end up outside the finishers. The reason Clark stopped belongs to the period race account; the contrast in the official results is already sharp enough to carry this short chapter.",
+            "uk": "Джим Кларк не дістався фінішу першого канадського Гран-прі чемпіонату світу. Його Lotus-Ford подолав 69 кіл, тоді як Бребем пройшов усі 90 й переміг. У гонці, де зібралося стільки відомих імен, навіть чемпіон міг залишитися без фінішу. Причину сходу Кларка треба перевірити за репортажем тих років; уже сам контраст результатів промовистий. Ця подробиця доповнює картину гонки, не змінюючи підтверджених результатів та місць пілотів на фініші."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "A Canadian name, a disqualification",
+            "uk": "Канадське ім'я та дискваліфікація"
+          },
+          "prose": {
+            "en": "Eppie Wietzes's appearance at Mosport adds a less celebrated Canadian thread to the 1967 race. He completed 69 laps in a Lotus-Ford, but the official record marks him as disqualified. That is the result; the reason for the ruling requires a separate historical source. We should not assign blame or invent a scandal. His name belongs in the account of Canada's first F1 championship visit, even without a finish to celebrate.",
+            "uk": "Участь Еппі Вітцеса додає до гонки в Моспорті 1967 року ще одну канадську історію — менш відому, але не менш вартісну уваги. На Lotus-Ford він подолав 69 кіл, та в офіційних результатах отримав дискваліфікацію. Це факт; причину рішення потрібно встановити окремо. Не варто вигадувати скандал або чиїсь мотиви. Його ім'я все одно є частиною першого чемпіонатного Гран-прі Канади."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1967/races/251/canada/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "montjuic",
+      "title": {
+        "en": "A tragedy that cannot be reduced to points",
+        "uk": "Трагедія, яку неможливо звести до очок"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "The day racing stopped being the story",
+            "uk": "День, коли гонка перестала бути головним"
+          },
+          "prose": {
+            "en": "The 1975 Spanish Grand Prix at Montjuïc cannot be told as an ordinary race. During the event, a car left the circuit and spectators were killed. The race was stopped early, after 29 laps in the official classification. Jochen Mass was declared the winner, but no finishing order can be the centre of this story. It must begin with the loss of life, the safety concerns surrounding the venue and the responsibility to remember what happened without turning it into spectacle.",
+            "uk": "Гран-прі Іспанії 1975 року в Монжуїку неможливо розповісти як звичайну гонку. Під час заїзду машина вилетіла за межі траси, загинули глядачі. Гонку зупинили достроково; офіційна класифікація містить 29 кіл. Переможцем оголосили Йохена Масса, але фінішний порядок тут не може бути центром історії. Вона має починатися із загибелі людей, питань безпеки та пам'яті про трагедію — без перетворення чужого горя на видовище."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "A victory worth half the usual points",
+            "uk": "Перемога за половину звичайних очок"
+          },
+          "prose": {
+            "en": "Jochen Mass appears first in the 1975 Spanish Grand Prix results, but the points column tells us something was profoundly unusual. Instead of nine points for a win under that season's system, he received 4.5. The race had ended before the required distance. That number matters because it points away from the celebration and back toward the tragic reason this Grand Prix was cut short.",
+            "uk": "Йохен Масс стоїть першим у результатах Гран-прі Іспанії 1975 року. Але поруч із його ім'ям незвичне число: 4,5 очка замість дев'яти, які тоді давали за перемогу. Гонку завершили раніше за передбачену дистанцію. Ця цифра важлива не через арифметичну рідкість. Вона повертає увагу до трагічних обставин, через які Гран-прі не довели до кінця. Ця подробиця доповнює картину гонки, не змінюючи підтверджених результатів та місць пілотів на фініші."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Lella Lombardi and the half-point",
+            "uk": "Лелла Ломбарді й половина очка"
+          },
+          "prose": {
+            "en": "Lella Lombardi finished sixth at Montjuïc in 1975 and received half a championship point. It remains a landmark in the history of women in Formula 1. But it happened in the same race in which spectators lost their lives. Both truths belong on the page. A thoughtful account can recognize Lombardi's place in the sport without treating a fatal accident as a clever footnote to her achievement.",
+            "uk": "Лелла Ломбарді фінішувала шостою в Монжуїку 1975 року й отримала половину очка чемпіонату. Це важлива сторінка історії жінок у Формулі-1. Але той самий Гран-прі забрав життя глядачів. Обидві правди мають бути поруч. Можна віддати належне досягненню Ломбарді й водночас не перетворювати смертельну аварію на ефектну примітку до спортивного рекорду. Ця подробиця доповнює картину гонки, не змінюючи підтверджених результатів та місць пілотів на фініші."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Second place at a stopped Grand Prix",
+            "uk": "Друге місце в зупиненій гонці"
+          },
+          "prose": {
+            "en": "Jacky Ickx was classified second behind Jochen Mass at Montjuïc, with 1.1 seconds separating them in the results. Normally, that would be the beginning of a story about a close finish. Here, it is not. The Grand Prix was stopped following a fatal accident, and the gap must never be described as proof of a last-lap duel. The classification is part of the historical record; the lives lost are the reason it requires care.",
+            "uk": "Жакі Ікс став другим за Йохеном Массом у Монжуїку, з відставанням 1,1 секунди в протоколі. Зазвичай це могло б стати початком розповіді про напружений фініш. Але не тут. Гонку зупинили після смертельної аварії, і цей розрив не можна видавати за доказ дуелі на останньому колі. Класифікація залишається частиною історії, та загибель людей вимагає особливої точності й стриманості."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Lauda's race ends at zero",
+            "uk": "Для Лауди все скінчилося на нулі"
+          },
+          "prose": {
+            "en": "Niki Lauda completed no racing laps at the 1975 Spanish Grand Prix. In an ordinary weekend, that result could lead an account of a Ferrari driver's disappointment. At Montjuïc, it belongs only in the wider record of a day overshadowed by far more serious events. The sporting disappointment was real; it was not the tragedy that defined this Grand Prix.",
+            "uk": "Нікі Лауда не завершив жодного гоночного кола Гран-прі Іспанії 1975 року. За звичайних обставин такий результат Ferrari міг би стати окремою драмою. Але в Монжуїку це лише одна з деталей дня, затьмареного набагато тяжчими подіями. Спортивна невдача справді була, та не вона визначила, як пам'ятатимуть цей Гран-прі. Ця подробиця доповнює картину гонки, не змінюючи підтверджених результатів та місць пілотів на фініші."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_VIVID_READER_STORIES_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1975/races/347/spain/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "monsanto",
+      "title": {
+        "en": "One brief summer in Lisbon",
+        "uk": "Одне коротке літо в Лісабоні"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Moss wins in Lisbon",
+            "uk": "Мосс перемагає в Лісабоні"
+          },
+          "prose": {
+            "en": "Sixty-two laps through Monsanto Park, and Stirling Moss had done it. His Cooper-Climax won the 1959 Portuguese Grand Prix while the next two finishers were already a lap behind. This wasn't a quiet victory on a familiar permanent circuit. Formula 1 had come to a park in Lisbon, and Moss left with the trophy.",
+            "uk": "Шістдесят два кола парком Монсанту — і Стірлінг Мосс переміг. Його Cooper-Climax виграв Гран-прі Португалії 1959 року, а двоє наступних пілотів фінішували з відставанням на коло. Формула-1 приїхала не на звичний стаціонарний автодром, а до парку в Лісабоні. Саме тут Мосс забрав свій трофей."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Second place, one lap back",
+            "uk": "Друге місце — з відставанням на коло"
+          },
+          "prose": {
+            "en": "Masten Gregory took second in another Cooper-Climax. But the number that tells the story isn't his position: it's the lap he lost to Moss. Two cars with the same constructor and engine label, separated by an entire tour of Monsanto Park. A finishing sheet cannot explain every reason why, but it makes the scale of the win unmistakable.",
+            "uk": "Мастен Грегорі став другим на іншому Cooper-Climax. Але найцікавіша тут не сама позиція, а коло, яке він програв Моссу. Дві машини з однаковою назвою конструктора й двигуна, а між ними — ціле коло парком Монсанту. Протокол не пояснить усіх причин, зате масштаб перемоги видно одразу."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Ferrari joins the podium",
+            "uk": "Ferrari теж на подіумі"
+          },
+          "prose": {
+            "en": "Dan Gurney brought his Ferrari home third, also a lap behind Moss. The podium in Lisbon now had two Coopers and a Ferrari. Nobody needs to invent a last-corner battle to make that interesting. It is a snapshot of a season in which the familiar red cars shared the front with a very different kind of challenger.",
+            "uk": "Ден Герні привів Ferrari до третього місця, теж із відставанням на коло від Мосса. Так подіум у Лісабоні склали два Cooper і одна Ferrari. Не треба вигадувати дуель в останньому повороті, щоб це звучало цікаво. Перед нами мить із сезону, коли звичні червоні машини ділили перші місця з новими суперниками."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "An Aston Martin in sixth",
+            "uk": "Aston Martin на шостому місці"
+          },
+          "prose": {
+            "en": "Look past the famous names at the front and there is a surprise: Roy Salvadori, sixth, driving an Aston Martin. The marque is remembered for many kinds of racing, but here it sits in a 1959 Formula 1 result. Salvadori finished three laps behind Moss. His sixth place opens a different doorway into the history of the sport.",
+            "uk": "За гучними іменами на початку протоколу ховається несподіванка: шостим фінішував Рой Сальвадорі на Aston Martin. Цю марку знають за різними перегонами, але тут вона є в результатах Формули-1 1959 року. Сальвадорі програв Моссу три кола. Його фініш відкриває ще одну цікаву сторінку історії."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Two Coopers, opposite afternoons",
+            "uk": "Два Cooper — зовсім різні дні"
+          },
+          "prose": {
+            "en": "Jack Brabham's race lasted 23 laps. Stirling Moss, also in a Cooper-Climax, completed 62 and won. Put those two numbers side by side and the difference is striking. One machine was gone before halfway; the other carried its driver to victory. Whatever caused Brabham's retirement, it needs a proper race report before it becomes part of the tale.",
+            "uk": "Гонка Джека Бребема тривала лише 23 кола. Стірлінг Мосс, теж на Cooper-Climax, пройшов 62 і переміг. Поставте ці числа поруч — контраст разючий. Одна машина зійшла ще до середини дистанції, інша привезла пілота до перемоги. А причину сходу Бребема треба з'ясувати окремо, перш ніж додавати її до історії."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "title": {
+        "en": "McLaren's day in Quebec",
+        "uk": "День McLaren у Квебеку"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Hulme at the front in Quebec",
+            "uk": "Гальм перший у Квебеку"
+          },
+          "prose": {
+            "en": "Ninety laps. Denny Hulme covered every one of them and won the 1968 Canadian Grand Prix for McLaren-Ford. At Mont-Tremblant the next finisher was a lap behind. There are days when the winner's name is only one part of the story; this was also a day when the McLaren team made the podium its own.",
+            "uk": "Дев'яносто кіл. Денні Гальм пройшов кожне з них і виграв Гран-прі Канади 1968 року за McLaren-Ford. У Мон-Тремблані наступний пілот фінішував із відставанням на коло. Але ім'я переможця — лише частина історії: команда McLaren того дня зайняла два найвищі місця на подіумі."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "The founder finishes second",
+            "uk": "Засновник команди стає другим"
+          },
+          "prose": {
+            "en": "Behind Hulme came Bruce McLaren, the man whose surname was written on both cars. He finished second, one lap behind his team-mate. It is a detail that gives the result a human face: the founder of the team standing on the podium with the driver who had just won for him.",
+            "uk": "За Гальмом фінішував Брюс Макларен — людина, чиє прізвище було написане на обох машинах. Він став другим, програвши напарнику коло. У цьому результаті є щось особливе: засновник команди піднявся на подіум поруч із пілотом, який щойно приніс їй перемогу. Такі дні надовго залишаються в історії команди."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Rodríguez keeps BRM in the picture",
+            "uk": "Родрігес залишає BRM на подіумі"
+          },
+          "prose": {
+            "en": "Two McLarens took the first two places. The third belonged to Pedro Rodríguez in a BRM, two laps behind Hulme. That gap was large, but the podium place was his. When the leading team's afternoon looks almost perfect, the third name is easy to forget. Mont-Tremblant's result is a reminder not to.",
+            "uk": "Два McLaren зайняли перші місця. Третім став Педро Родрігес на BRM, програвши Гальму два кола. Відставання було великим, але подіум він здобув. Коли одна команда забирає майже всю увагу, третє ім'я легко загубити. Результат Мон-Тремблана нагадує, що цього робити не варто."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Hill reaches the finish",
+            "uk": "Гілл доїжджає до фінішу"
+          },
+          "prose": {
+            "en": "Graham Hill finished fourth at Mont-Tremblant, four laps behind Hulme. Around him, the classification was crowded with retirements. His Lotus-Ford was not fighting for victory by the time the result was settled, but it was still there at the end. In a race like this, the finishers tell only half the story; the missing names tell the rest.",
+            "uk": "Грем Гілл став четвертим у Мон-Тремблані, програвши Гальму чотири кола. Поруч із його ім'ям у протоколі — довгий список сходів. Його Lotus-Ford не боролася за перемогу на фініші, зате дісталася до нього. У таких гонках ті, хто доїхав, розповідають лише половину історії. Решта — у списку тих, хто зійшов."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Amon stops after seventy-two",
+            "uk": "Для Амона все скінчилося на 72-му колі"
+          },
+          "prose": {
+            "en": "Chris Amon completed 72 laps in his Ferrari and never reached the flag. Hulme went on to finish 90 and win. On the results sheet, those numbers are separated by a few rows; for the drivers they meant completely different afternoons. What stopped Amon needs to be established before anyone turns his retirement into a technical thriller.",
+            "uk": "Кріс Амон пройшов на Ferrari 72 кола, але фінішу не побачив. Гальм подолав усі 90 і переміг. У протоколі ці числа стоять за кілька рядків одне від одного; для пілотів вони означали зовсім різні дні. Що саме зупинило Амона, слід перевірити, перш ніж перетворювати його схід на технічний детектив."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "nivelles",
+      "title": {
+        "en": "The Belgian Grand Prix beyond Spa",
+        "uk": "Бельгійський Гран-прі поза Спа"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Fittipaldi takes the Belgian GP",
+            "uk": "Фіттіпальді виграє Гран-прі Бельгії"
+          },
+          "prose": {
+            "en": "The Belgian Grand Prix did not always mean Spa. In 1972 the race came to Nivelles, where Emerson Fittipaldi covered 85 laps in his Lotus-Ford and won. His nearest rival finished more than 26 seconds behind. One unfamiliar venue, one clear winner — and a chapter of Belgian Grand Prix history that is easy to overlook.",
+            "uk": "Гран-прі Бельгії не завжди означав Спа. У 1972 році гонка приїхала до Нівеля, де Емерсон Фіттіпальді пройшов 85 кіл на Lotus-Ford і переміг. Найближчий суперник відстав більш ніж на 26 секунд. Незвична для багатьох назва траси, переконливий переможець — і сторінка бельгійської історії, про яку легко забути."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Cevert comes home second",
+            "uk": "Север фінішує другим"
+          },
+          "prose": {
+            "en": "François Cevert brought his Tyrrell-Ford home second, 26.6 seconds behind Fittipaldi. There was no last-metre mystery in that final gap. But second place still meant six championship points in 1972, and it put Cevert between the winning Lotus and Denny Hulme's McLaren on the podium.",
+            "uk": "Франсуа Север став другим на Tyrrell-Ford, програвши Фіттіпальді 26,6 секунди. Фінішний розрив не залишив загадки про переможця. Але друге місце приносило шість очок у сезоні 1972 року. На подіумі Север опинився між Lotus переможця та McLaren Денні Гальма. Це був вагомий результат."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Three teams on the podium",
+            "uk": "Три команди на подіумі"
+          },
+          "prose": {
+            "en": "Lotus first. Tyrrell second. McLaren third. Denny Hulme completed the Nivelles podium 58.1 seconds behind Fittipaldi. The top three represented three different constructors, a small but appealing way to see the variety in this Grand Prix. The race result is enough to tell that part of the story.",
+            "uk": "Lotus — перший. Tyrrell — другий. McLaren — третій. Денні Гальм замкнув подіум Нівеля, програвши Фіттіпальді 58,1 секунди. Три перші місця дісталися трьом різним конструкторам. Маленька деталь, яка добре показує різноманітність тієї гонки — і для неї достатньо самого протоколу."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Hailwood just outside the photograph",
+            "uk": "Гейлвуд — за крок від фотографії"
+          },
+          "prose": {
+            "en": "Mike Hailwood finished fourth in a Surtees-Ford. Denny Hulme was 13.9 seconds ahead; the podium photograph went on without Hailwood. Fourth place is not defeat, but it rarely gets the same attention as third. His result gives the Nivelles story a little extra depth beyond the names holding the trophies.",
+            "uk": "Майк Гейлвуд фінішував четвертим на Surtees-Ford. До третього місця Денні Гальма бракувало 13,9 секунди — і фотографію подіуму зробили без нього. Четверте місце не означає поразки, але його рідко помічають так само, як третє. Результат Гейлвуда додає історії Нівеля ще один штрих."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "One point for Amon",
+            "uk": "Одне очко для Амона"
+          },
+          "prose": {
+            "en": "Chris Amon finished sixth for Matra, a lap behind Fittipaldi. Today sixth place can sound like an ordinary points finish. In 1972 it was worth exactly one championship point — the last point-paying place. Sometimes the scoring system tells you as much about an era as the cars do.",
+            "uk": "Кріс Амон фінішував шостим на Matra, програвши Фіттіпальді коло. Сьогодні шосте місце здається звичайним результатом в очковій зоні. У 1972 році за нього давали рівно одне очко — останнє залікове місце. Іноді правила нарахування очок розповідають про епоху не менше, ніж самі машини."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "porto",
+      "title": {
+        "en": "A Grand Prix in the streets",
+        "uk": "Гран-прі посеред міських вулиць"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Brabham wins on the streets of Porto",
+            "uk": "Бребем перемагає на вулицях Порту"
+          },
+          "prose": {
+            "en": "Fifty-five laps around Porto's Boavista circuit, and Jack Brabham was first. The 1960 Portuguese Grand Prix ran through public streets, not a purpose-built modern venue. Behind the winning Cooper-Climax came another Cooper and then a Lotus. Porto offered a very different stage for a familiar championship name.",
+            "uk": "П'ятдесят п'ять кіл вулицями Порту — і Джек Бребем фінішував першим. Гран-прі Португалії 1960 року проходив трасою Боавішта, прокладеною звичайними міськими дорогами. За переможним Cooper-Climax приїхали ще один Cooper, а тоді Lotus. Порту став незвичною сценою для знайомого чемпіонського імені."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "McLaren makes it a Cooper one-two",
+            "uk": "Макларен приносить Cooper дубль"
+          },
+          "prose": {
+            "en": "Bruce McLaren was second, 57.970 seconds behind Brabham. Both drove Cooper-Climax machinery, and both finished all 55 laps. The team had the first two names on the results sheet. That is the story: not a made-up duel between garage neighbours, but a one-two on the streets of Porto.",
+            "uk": "Брюс Макларен став другим, програвши Бребему 57,970 секунди. Обидва виступали на Cooper-Climax й обидва подолали 55 кіл. Дві перші сходинки протоколу дісталися цим машинам. Ось і вся важлива картина: не вигадана дуель сусідів по гаражу, а дубль на вулицях Порту."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Clark takes third",
+            "uk": "Кларк здобуває третє місце"
+          },
+          "prose": {
+            "en": "Jim Clark brought his Lotus-Climax home third, 113.230 seconds behind Brabham. His name would become one of Formula 1's most famous, but on this day it sat in the third line of the podium. A result from an early stage of a great career can be compelling without pretending everyone already knew what lay ahead.",
+            "uk": "Джим Кларк привів Lotus-Climax до третього місця, поступившись Бребему 113,230 секунди. Згодом його ім'я стане одним із найвідоміших у Формулі-1, але цього дня воно стояло на третьому рядку подіуму. Ранній результат великої кар'єри цікавий і без вигадок, ніби всі вже знали його майбутнє."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Von Trips follows the Lotus",
+            "uk": "Фон Тріпс фінішує слідом за Lotus"
+          },
+          "prose": {
+            "en": "Wolfgang von Trips was fourth for Ferrari, 5.580 seconds behind Clark. He missed the podium, but his finishing time makes a useful detail in the shape of the race: two Coopers at the front, then Lotus, then Ferrari. The final margin tells us who was closest at the flag, not every move they made along the way.",
+            "uk": "Вольфганг фон Тріпс став четвертим на Ferrari, програвши Кларку 5,580 секунди. Подіум залишився попереду, але його результат доповнює картину гонки: два Cooper на чолі, за ними Lotus і Ferrari. Фінішний розрив показує, хто був ближче наприкінці, а не кожен маневр на дистанції."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Moss's name ends with a disqualification",
+            "uk": "Ім'я Мосса — поруч із дискваліфікацією"
+          },
+          "prose": {
+            "en": "Stirling Moss completed 50 laps of the 1960 Portuguese Grand Prix, yet the official classification does not give him a finishing place. It says disqualified. That single word invites questions, but it is not an invitation to invent wrongdoing or motive. Whatever happened on the Porto streets deserves a contemporary account before the story reaches its conclusion.",
+            "uk": "Стірлінг Мосс подолав 50 кіл Гран-прі Португалії 1960 року, однак у фінішній класифікації не отримав місця. Поруч із його ім'ям — дискваліфікація. Одне слово породжує багато запитань, але не дозволяє вигадувати порушення чи мотиви. Те, що сталося на вулицях Порту, варто відтворити за репортажем того часу."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_HUMAN_VOICE_MONTSANTO_PORTO_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1960/races/185/portugal/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "pedralbes",
+      "title": {
+        "en": "The champion does not win the finale",
+        "uk": "Чемпіон не виграє фінал"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Ferrari's last word in 1954",
+            "uk": "Останнє слово Ferrari у 1954-му"
+          },
+          "prose": {
+            "en": "The season belonged to Juan Manuel Fangio, but its final Grand Prix belonged to Mike Hawthorn. At Pedralbes in Barcelona, the Ferrari driver covered 80 laps and crossed the line first. Luigi Musso followed in a Maserati, with Fangio third for Mercedes-Benz, a lap behind. It is a reminder that winning a championship and winning its final race are two different stories. Barcelona closed the year with a red car in front.",
+            "uk": "Сезон належав Хуану-Мануелю Фанхіо, але остання гонка — Майку Готорну. У Барселоні на трасі Педральбес пілот Ferrari подолав 80 кіл і фінішував першим. За ним приїхав Луїджі Муссо на Maserati, а Фанхіо на Mercedes-Benz став третім із відставанням на коло. Чемпіон світу й переможець фінального Гран-прі — не завжди одна людина. Рік завершився червоною машиною попереду."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Musso between two giants",
+            "uk": "Муссо між двома гігантами"
+          },
+          "prose": {
+            "en": "Look at the podium again. Hawthorn in a Ferrari. Fangio in a Mercedes. And between them, Luigi Musso in a Maserati. He finished 73.2 seconds behind the winner but stayed on the lead lap. His second place may be less famous than the two names around it, yet it was his car that separated them at the chequered flag. Sometimes the middle step deserves a longer look.",
+            "uk": "Придивіться до подіуму. Готорн на Ferrari. Фанхіо на Mercedes. А між ними — Луїджі Муссо на Maserati. Він програв переможцю 73,2 секунди, але завершив усі 80 кіл. Його друге місце згадують рідше, ніж імена двох інших призерів, хоча саме його машина розділила їх на фініші. Іноді варто уважніше подивитися на середню сходинку подіуму."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Fangio does not win everything",
+            "uk": "Навіть Фанхіо вигравав не все"
+          },
+          "prose": {
+            "en": "Juan Manuel Fangio had already written his name across the 1954 season. Yet at Pedralbes the Mercedes-Benz came home third, one lap behind Mike Hawthorn. It makes the final result more interesting, not less: the driver who would be remembered as champion was not the driver celebrating the day's victory. The championship table tells one story. A single race can tell another.",
+            "uk": "Хуан-Мануель Фанхіо вже вписав своє ім'я в сезон 1954 року. Проте в Педральбесі Mercedes-Benz фінішував лише третім, програвши переможцю Майку Готорну коло. Через це фінал стає ще цікавішим: чемпіон сезону й переможець конкретної гонки виявилися різними людьми. Турнірна таблиця розповідає одну історію. Окремий Гран-прі іноді — зовсім іншу."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "The names just off the podium",
+            "uk": "Ті, хто залишився за подіумом"
+          },
+          "prose": {
+            "en": "Roberto Mieres took fourth for Maserati, and Karl Kling's Mercedes-Benz finished fifth. Their positions sit quietly beneath the three names in the photographs. But a Grand Prix is bigger than its trophies. Those two cars made it to the end, both one lap down, and completed the leading five on the streets of Barcelona. Not every part of a race needs a dramatic invention to matter.",
+            "uk": "Роберто М'єрес став четвертим на Maserati, а Карл Клінг привів Mercedes-Benz на п'яте місце. Їхні імена тихо стоять під трійкою призерів у протоколі. Але гонка не закінчується там, де закінчуються кубки. Обидві машини дісталися фінішу з відставанням на коло й доповнили першу п'ятірку в Барселоні. Не кожній деталі потрібна вигадана драма, щоб вона мала значення."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "The Lancia that started at the front",
+            "uk": "Lancia, що стартувала попереду всіх"
+          },
+          "prose": {
+            "en": "The starting grid at Pedralbes held a surprise: Alberto Ascari put his Lancia on pole position. By the end he had completed only ten laps and was listed as a retirement. Beside the finishing order, that starting-grid record changes how this race reads. The car that had been fastest in qualifying did not last the distance; Hawthorn's Ferrari won instead. One weekend, two very different answers to the question of speed.",
+            "uk": "Стартова решітка Педральбеса приховує несподіванку: Альберто Аскарі здобув поул на Lancia. Та в гонці він проїхав лише десять кіл і зійшов. Якщо поставити поруч кваліфікацію та фініш, історія змінюється. Найшвидша машина суботи не дісталася до кінця, а перемогла Ferrari Готорна. Один вікенд, два зовсім різні випробування швидкості."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1954/races/134/spain/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "pescara",
+      "title": {
+        "en": "Eighteen laps across an enormous landscape",
+        "uk": "Вісімнадцять кіл величезною трасою"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "Eighteen laps that lasted three hours",
+            "uk": "Вісімнадцять кіл завдовжки майже три години"
+          },
+          "prose": {
+            "en": "Eighteen laps. It sounds like a sprint until you see the clock: Stirling Moss needed almost three hours to win the 1957 Pescara Grand Prix. The Vanwall driver crossed the line after 2 hours, 59 minutes and 22.7 seconds. Pescara's enormous road circuit made each lap a journey in itself. Here, a low lap count does not mean a short afternoon.",
+            "uk": "Вісімнадцять кіл. Звучить як коротка гонка — аж поки не подивишся на годинник. Стірлінгу Моссу знадобилося майже три години, щоб виграти Гран-прі Пескари 1957 року. На Vanwall він фінішував із часом 2 години 59 хвилин 22,7 секунди. Величезна дорожня траса перетворювала кожне коло на окрему подорож. Тут мала кількість кіл зовсім не означала короткої гонки."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Three minutes behind Moss",
+            "uk": "Три хвилини позаду Мосса"
+          },
+          "prose": {
+            "en": "Juan Manuel Fangio finished second at Pescara. The striking detail is the gap: 193.9 seconds behind winner Stirling Moss. More than three minutes, yet both drivers completed the same 18 laps. Fangio stood on the second step of the podium, but Moss had built a lead that could not be mistaken for a photo finish.",
+            "uk": "Хуан-Мануель Фанхіо став другим у Пескарі. Найбільше вражає відставання: 193,9 секунди від переможця Стірлінга Мосса. Понад три хвилини — хоча обидва подолали однакові 18 кіл. Фанхіо піднявся на другу сходинку подіуму, але перевагу Мосса неможливо сплутати з перемогою на останніх сантиметрах."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Third place, nearly seven minutes back",
+            "uk": "Третє місце — майже сім хвилин позаду"
+          },
+          "prose": {
+            "en": "Harry Schell completed all 18 laps in his Maserati and finished third. He was 406.8 seconds behind Moss — almost seven minutes. That sounds extraordinary to modern ears. But Pescara was no ordinary circuit, and its finishing gaps deserve to be read in the scale of its long lap, not measured against the rhythm of a modern street race.",
+            "uk": "Гаррі Шелл подолав усі 18 кіл на Maserati й став третім. Від Мосса його відділяло 406,8 секунди — майже сім хвилин. Для сучасного вболівальника цифра звучить неймовірно. Але Пескара була незвичайною трасою. Її результати треба сприймати в масштабі величезного кола, а не порівнювати зі звичним ритмом сучасної міської гонки."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Gregory finishes fourth on the long road",
+            "uk": "Грегорі четвертий на довгій дорозі"
+          },
+          "prose": {
+            "en": "Masten Gregory brought another Maserati to fourth place, 496.5 seconds behind Moss. Nine lines of arithmetic could never explain the full experience of driving Pescara; the classification shows only where the drivers ended up. Yet there is something compelling in seeing Gregory alongside Fangio and Schell among the handful who completed the winner's full 18 laps.",
+            "uk": "Мастен Грегорі привів ще одну Maserati на четверте місце, програвши Моссу 496,5 секунди. Жоден стовпчик цифр не передасть усього відчуття від гонки на Пескарі: протокол показує лише підсумок. Але є щось вражаюче в тому, що Грегорі разом із Фанхіо й Шеллом подолав усі 18 кіл цієї величезної траси."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "A team-mate's race lasts one lap",
+            "uk": "Для напарника все скінчилося за коло"
+          },
+          "prose": {
+            "en": "The Vanwall story at Pescara had two extremes. Stirling Moss won after 18 laps; Tony Brooks was listed as a retirement after just one. Same constructor, same Grand Prix, utterly different results. The reason Brooks stopped deserves its own source, but the contrast is already clear. A team can leave one race carrying both a victory and an unfinished afternoon.",
+            "uk": "Історія Vanwall у Пескарі мала два полюси. Стірлінг Мосс виграв після 18 кіл, а Тоні Брукс зійшов уже після першого. Один конструктор, одна гонка — зовсім різні підсумки. Причину сходу Брукса потрібно встановити за окремими джерелами, але контраст видно й так. Одна команда може привезти з Гран-прі і перемогу, і недописану історію."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "rouen",
+      "title": {
+        "en": "Porsche's remarkable afternoon",
+        "uk": "Незвичайний день Porsche"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "The day Porsche reached the top",
+            "uk": "День, коли Porsche піднялася на вершину"
+          },
+          "prose": {
+            "en": "At Rouen in 1962, Dan Gurney crossed the finish line first in a Porsche. He had completed 54 laps of the French Grand Prix, and the next driver was already a lap behind. The result is remarkable enough without an invented last-corner battle. One driver, one Porsche and a victory that stands out in the marque's Formula 1 history.",
+            "uk": "У Руані 1962 року Ден Герні перетнув фініш першим на Porsche. Він подолав 54 кола Гран-прі Франції, а наступний пілот програв ціле коло. Результат і без вигаданої дуелі в останньому повороті заслуговує на увагу. Один гонщик, одна Porsche й перемога, що посіла особливе місце в історії марки у Формулі-1."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Maggs finishes in the distance",
+            "uk": "Меггс фінішує далеко позаду"
+          },
+          "prose": {
+            "en": "Tony Maggs came home second for Cooper-Climax at Rouen, one lap behind Gurney. Second place still meant six points under the 1962 system. It was a fine reward for reaching the flag, though the winner had been beyond his reach at the finish. The gap tells a quieter story than a desperate chase — and that can be just as revealing.",
+            "uk": "Тоні Меггс став другим у Руані на Cooper-Climax, програвши Герні коло. За правилами 1962 року друге місце приносило шість очок. Гарна винагорода за фініш, хоча переможець опинився далеко попереду. Тут немає потреби вигадувати відчайдушну погоню. Іноді спокійніший результат говорить про гонку не менше."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Three constructors on the podium",
+            "uk": "Три конструктори на подіумі"
+          },
+          "prose": {
+            "en": "Porsche first. Cooper second. BRM third. Richie Ginther brought the BRM home two laps behind Gurney, completing a podium shared by three different constructors. These names make Rouen feel like a crossroads in Formula 1 history, where different ideas and machines ended up on the same steps of the podium.",
+            "uk": "Porsche — перша. Cooper — друга. BRM — третя. Річі Гінтер привів BRM до фінішу з відставанням на два кола від Герні, і подіум розділили три різні конструктори. У цьому є особлива краса старої Формули-1: машини з різними історіями та підходами зустрілися на тих самих сходинках."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "One victory, a lasting name",
+            "uk": "Одна перемога — пам'ять на роки"
+          },
+          "prose": {
+            "en": "Dan Gurney's triumph at Rouen deserves more than a number beside the Porsche name. It is a moment where the race result opens into a larger constructor story. The meaning of the word 'only' matters here: a championship win as an F1 constructor is not the same as every Porsche victory in every category. Tell the precise story, and it becomes more interesting, not less.",
+            "uk": "Перемога Дена Герні в Руані — більше ніж число біля назви Porsche. За цим результатом стоїть ціла історія конструктора. Тут особливо важлива точність: перемога у чемпіонатному Гран-прі як конструктор Формули-1 — не те саме, що всі перемоги Porsche в усіх автоспортивних категоріях. Що точніше розповісти цю історію, то цікавішою вона стає."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Clark's thirty-three laps",
+            "uk": "Тридцять три кола Кларка"
+          },
+          "prose": {
+            "en": "Jim Clark did not finish the 1962 French Grand Prix. His Lotus-Climax was listed with 33 laps, while Gurney's Porsche reached the chequered flag after 54. That contrast is part of Rouen's afternoon, but the result cannot tell us exactly why Clark stopped. Leave the cause to a period report and let the known outcome stand on its own.",
+            "uk": "Джим Кларк не дістався фінішу Гран-прі Франції 1962 року. На Lotus-Climax він подолав 33 кола, тоді як Porsche Герні проїхала всі 54. Цей контраст — частина історії Руана, але протокол не розповідає, чому саме Кларк зупинився. Причину варто шукати в репортажі того часу, а відомий підсумок промовляє сам за себе."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1962/races/199/france/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    },
+    {
+      "circuit_id": "zeltweg",
+      "title": {
+        "en": "The day an airfield became Formula 1",
+        "uk": "День, коли аеродром став Формулою-1"
+      },
+      "chapter_sections": [
+        {
+          "source_story_index": 1,
+          "heading": {
+            "en": "A Grand Prix on an airfield",
+            "uk": "Гран-прі просто на аеродромі"
+          },
+          "prose": {
+            "en": "Before Austria had the Formula 1 circuit familiar to later generations, there was Zeltweg Airfield. On 23 August 1964, Lorenzo Bandini won the Austrian Grand Prix for Ferrari after 105 laps. The setting alone makes the race different: an airfield transformed into a World Championship venue. One weekend, a place usually associated with aircraft became the backdrop to a Ferrari victory.",
+            "uk": "Ще до появи австрійської траси, знайомої наступним поколінням уболівальників, був аеродром Цельтвег. 23 серпня 1964 року Лоренцо Бандіні виграв тут Гран-прі Австрії на Ferrari після 105 кіл. Саме місце робить цю гонку особливою: аеродром перетворили на трасу чемпіонату світу. На один вікенд простір, звичний для літаків, став сценою перемоги Ferrari."
+          }
+        },
+        {
+          "source_story_index": 2,
+          "heading": {
+            "en": "Six seconds from a victory",
+            "uk": "Шість секунд від перемоги"
+          },
+          "prose": {
+            "en": "Richie Ginther finished second in a BRM, only 6.180 seconds behind Bandini. Across 105 laps that sounds tantalizingly close. But a final gap does not reveal every passing attempt or the order of pit stops. What we do know is simple and striking: after more than two hours, Ferrari and BRM were separated by just over six seconds.",
+            "uk": "Річі Гінтер став другим на BRM, програвши Бандіні лише 6,180 секунди. Після 105 кіл це звучить майже неймовірно близько. Та фінішний розрив не розповість про всі спроби обгону чи піт-стопи. Відомо головне: після більш ніж двох годин гонки Ferrari й BRM розділяли трохи більше шести секунд."
+          }
+        },
+        {
+          "source_story_index": 3,
+          "heading": {
+            "en": "Anderson's unlikely podium",
+            "uk": "Несподіваний подіум Андерсона"
+          },
+          "prose": {
+            "en": "Bob Anderson took third in a Brabham-Climax, three laps behind Bandini. It was not a close finish for victory. It was, however, a place on a Formula 1 World Championship podium, shared with Ferrari and BRM. The result gives Zeltweg another name to remember beyond the winner, and an invitation to explore Anderson's career beyond this one afternoon.",
+            "uk": "Боб Андерсон став третім на Brabham-Climax, програвши Бандіні три кола. За перемогу він не боровся до останніх метрів. Але це було місце на подіумі чемпіонату світу — поруч із Ferrari та BRM. Тож у Цельтвега є ще одне ім'я, яке варто згадати, і ще одна кар'єра, в яку хочеться зазирнути глибше."
+          }
+        },
+        {
+          "source_story_index": 4,
+          "heading": {
+            "en": "Another BRM among the finishers",
+            "uk": "Ще одна BRM серед лідерів"
+          },
+          "prose": {
+            "en": "Tony Maggs finished fourth, also three laps behind Bandini. Together with Ginther's second place, that put two BRM cars in the top four. The podium photograph shows only one of them. The classification reveals the wider team result — and how different a race can look once you glance beyond the first three names.",
+            "uk": "Тоні Меггс фінішував четвертим, також програвши Бандіні три кола. Разом із другим місцем Гінтера це дало BRM дві машини в першій четвірці. На фотографії подіуму буде лише одна з них. Повний протокол показує ширшу картину — і наскільки інакше виглядає гонка, якщо подивитися далі за три перші імена."
+          }
+        },
+        {
+          "source_story_index": 5,
+          "heading": {
+            "en": "Ferrari's other car goes no farther",
+            "uk": "Інша Ferrari не доїжджає"
+          },
+          "prose": {
+            "en": "John Surtees completed eight laps in his Ferrari before retiring. Team-mate Bandini went on to finish 105 and win. In one garage, Zeltweg produced opposite results: an early retirement and a Grand Prix victory. The reason Surtees stopped is another story still to source, but the contrast is already part of the historical record.",
+            "uk": "Джон Сертіс подолав на Ferrari вісім кіл і зійшов. Його напарник Бандіні пройшов усі 105 та переміг. У межах однієї команди Цельтвег подарував протилежні результати: ранній схід і перемогу в Гран-прі. Причину сходу Сертіса потрібно ще підтвердити, але сам контраст уже залишився в історичному протоколі."
+          }
+        }
+      ],
+      "source_documents": [
+        "TWENTY_READER_STORIES_PEDRALBES_ZELTWEG_20261029.json"
+      ],
+      "source_urls": [
+        "https://www.formula1.com/en/results/1964/races/221/austria/race-result"
+      ],
+      "chapter_status": "structured_reading_draft_not_final_prose",
+      "human_approval": false,
+      "publication_allowed": false,
+      "editorial_note": "Five researched scenes arranged as a chapter-outline; next edit should smooth transitions, remove repetition and independently substantiate historically significant claims."
+    }
+  ]
+}
