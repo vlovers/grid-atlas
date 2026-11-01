@@ -34,7 +34,7 @@ keyboard section/source navigation, reduced motion,320px at200%, no client JS
 errors, UI-off/no API request, API-off, private draft/legacy Monza fallback,
 503/malformed response, literal HTML/script escaping, no-store and withdrawal
 followed by reload and actual client navigation are covered. These checks are
-wired into the existing web CI. The full baseline browser regression is546 tests;
+wired into the existing web CI. Full Python discovery passed434/434; the78-story audit and the pinned-archive25-brief research generator also passed. Their legacy public-render assertions were updated to require the trusted boundary while retaining every bilingual/provenance content check. The full baseline browser regression is546 tests;
 its current branch run and exact-head GitHub CI are recorded on the PR.
 
 The harness starts actual Nest/PostgreSQL and production Next servers, owns a
