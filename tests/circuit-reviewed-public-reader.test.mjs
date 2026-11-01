@@ -65,7 +65,7 @@ test('circuit page keeps a source-backed archive journey without resurrecting un
   assert.match(page, /raceJourney/);
   assert.match(page, /id="circuit-race-journey"/);
   assert.match(page, /href=\{`\/races\/\$\{race\.race_id\}`\}/);
-  assert.match(page, /earliest, a middle and its latest recorded Grand Prix/);
+  assert.match(page, /Explore recorded Grands Prix from different eras of the circuit/);
   assert.match(css, /journeyGrid/);
   assert.match(css, /max-width: 800px/);
 });
