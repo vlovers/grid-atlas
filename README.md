@@ -59,6 +59,17 @@ prove that its schema matches the API. Diagnose deep-route dependencies with
 `node scripts/doctor-archive.mjs --api-origin http://127.0.0.1:3001`.
 See [archive recovery and environment troubleshooting](docs/delivery/archive-recovery.md).
 
+## Circuit editorial publication
+
+Circuit text publication is disabled by default. The trusted workflow uses
+individually authenticated PostgreSQL subjects, protected exact-revision receipts,
+separate staging/review/publication privileges and transactional revocation.
+Migration0016 preserves existing manuscripts while revoking old metadata-only
+approvals. No migration enrolls an editor or publishes content. See the
+[security model, migration and operator runbook](docs/engineering/circuit-publication-396.md).
+Dependent PR359 supplies the separately gated bilingual reader; PR395 manuscripts
+remain unapproved research. Production human review and release approval are separate.
+
 ## Checks
 
 ```sh

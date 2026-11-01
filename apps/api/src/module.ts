@@ -6,6 +6,7 @@ import { ExplorerController } from './explorer.controller';
 import { ExplorerPagesController } from './explorer-pages.controller';
 import { TimeMachineController } from './time-machine.controller';
 import { EditorialController } from './editorial.controller';
+import { CircuitEditorialController } from './circuit-editorial.controller';
 
 import { DB } from './tokens';
 import { apiConfig } from './config';
@@ -20,6 +21,7 @@ import { ApiRuntime, ReadinessController } from './runtime';
     ExplorerPagesController,
     TimeMachineController,
     EditorialController,
+    CircuitEditorialController,
   ],
   providers: [
     {

@@ -12,6 +12,6 @@ test('three event-limited circuit studies retain two languages, independent cont
   assert.match(block,/Claim boundaries:/);
  }
  assert.match(body,/\*\*Publication allowed: false\.\*\*/);
- assert.match(body,/Do not alter \`circuit-release\.json\`/);
+ assert.match(body,/Do not alter `circuit-release\.json`/);
  assert.match(body,/motorsportmagazine\.com/);
 });
