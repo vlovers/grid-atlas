@@ -74,7 +74,8 @@ test('seven missing historic circuits surface bilingual unnumbered route studies
   const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
   const component = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
   const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
-  assert.match(component, /historicRoutes\.circuits\.find/);
+  assert.match(component, /const historicRoute = null/);
+  assert.doesNotMatch(component, /const historicRoute = historicRoutes\.circuits\.find/);
   assert.match(component, /historical route sections, not numbered corners/i);
   assert.match(component, /Historical source \(not number verification\)/);
   for (const id of pending) {
