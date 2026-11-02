@@ -199,7 +199,10 @@
     "mont-tremblant-2001-change": "https://doczz.net/doc/1115046/the-link-2001-08---motorsport-club-of-ottawa",
     "nivelles-period-layout": "https://www.racingcircuits.info/europe/belgium/nivelles-baulers.html",
     "nivelles-historic-photos": "https://www.circuitsofthepast.com/nivelles-baulers-circuit-then-and-now/",
-    "nivelles-period-count": "https://lapledger.org/circuits/nivelles"
+    "nivelles-period-count": "https://lapledger.org/circuits/nivelles",
+    "bremgarten-period-analysis": "https://www.auto-motor-und-sport.de/formel-1/bremgarten-rennstrecke-zahlen-fakten-aktuelle-bilder/",
+    "bremgarten-period-reconstruction": "https://www.watson.ch/sport/unvergessen/222120372-formel-1-gp-im-bremgartenwald-als-die-koenigsklasse-in-der-schwez-war",
+    "bremgarten-1954-result": "https://lapledger.org/races/1954/7"
   },
   "guides": [
     {
@@ -17834,6 +17837,277 @@
             "nivelles-period-layout",
             "nivelles-historic-photos",
             "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "bremgarten",
+      "layout_id": "bremgarten-1",
+      "numbering_year": 1954,
+      "names_as_of": 1954,
+      "numbered_turns": 13,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB bremgarten-1 has 13 turns. These 13 entries are period-based sequence-reading slots, not an authenticated one-to-one FIA numbering: some named complexes cover several physical corners, and the straight after Tenni is NOT a distinct bend. No individual numbered apex assignments are certified.",
+      "sections": [
+        {
+          "id": "bremgarten-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Bethlehem / Betlehem approach"
+          ],
+          "explanation": {
+            "en": "After the start-finish area, the old road headed towards the Bethlehem bend. It was a flowing approach rather than the first corner of a modern stop-start circuit. The forest route's limited visibility made it essential to settle the car before the rapid change in road elevation.",
+            "uk": "Після стартово-фінішної ділянки історична дорога вела до вигину Bethlehem. Це був плавний підхід, а не перший поворот сучасної траси з різкими зупинками. Обмежений огляд лісового маршруту вимагав стабілізувати болід перед швидкою зміною висоти."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Kiesgrube / Quarry descent"
+          ],
+          "explanation": {
+            "en": "The road dropped steeply towards Kiesgrube, the gravel-pit section. Historic accounts describe this downhill approach as one of the course's major changes of level. Its roadside hazards were part of the challenge even before the cars reached the climbing bends that followed.",
+            "uk": "Дорога круто спускалася до Kiesgrube — ділянки біля гравійного кар'єру. Історичні описи називають цей спуск одним із помітних перепадів висот кола. Небезпечні узбіччя ускладнювали пілотування ще до наступних поворотів на підйомі."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Eichholz / Eicholz right"
+          ],
+          "explanation": {
+            "en": "A sharper right-hand corner at Eichholz followed the descent. Drivers needed to slow and rotate the car before the next climbing and then fast, winding forest roads. Historical spellings vary between Eichholz and Eicholz, so the guide keeps both instead of inventing a new name.",
+            "uk": "Після спуску на пілотів чекав гостріший правий Eichholz. Потрібно було загальмувати й повернути машину перед наступними підйомами та швидкими лісовими дугами. Історичні джерела по-різному пишуть назву — Eichholz або Eicholz, тому збережено обидва варіанти."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Jorden section entry"
+          ],
+          "explanation": {
+            "en": "The road accelerated into the Jorden sequence, a collection of fast bends rather than one simple ninety-degree corner. A driver could lose time through the whole series by misjudging the first change of direction. The track's woodland and uneven light made those mistakes especially difficult to recover.",
+            "uk": "Маршрут прискорювався до зв'язки Jorden — серії швидких віражів, а не одного прямокутного повороту. Помилка на першій перекладці забирала швидкість на всій секції. Ліс і нерівномірне освітлення робили виправлення траєкторії особливо складним."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Jordenrampe"
+          ],
+          "explanation": {
+            "en": "Jordenrampe marked a left-hand change of direction within the rapid middle course. The historic road at this point has been substantially transformed since the last Formula 1 race in 1954, so a present-day satellite image cannot establish the precise historical apex.",
+            "uk": "Jordenrampe позначав ліву зміну напрямку в швидкій середній частині кола. Дорога тут суттєво змінилася після останнього Гран-прі Формули-1 у 1954 році, тож сучасний супутниковий знімок не встановлює точний історичний апекс."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Eymatt first sweep"
+          ],
+          "explanation": {
+            "en": "Eymatt was a right-hand sequence with an inconsistent radius; historical accounts describe it as effectively two bends. The first part required the driver to anticipate the tightening line rather than judge the entire corner from the initial radius alone.",
+            "uk": "Eymatt був правою зв'язкою зі змінним радіусом; історичні описи фактично розділяють його на дві дуги. У першій частині пілот мав передбачити звуження траєкторії, а не оцінювати весь поворот лише за початковим радіусом."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Eymatt second sweep"
+          ],
+          "explanation": {
+            "en": "The second part of the Eymatt right brought the car towards Tenni. Because the radius changed, carrying extra speed early could spoil the transition and leave the car badly placed for the following turn. Treating Eymatt as a single, uniformly curved bend misses this challenge.",
+            "uk": "Друга частина правого Eymatt вела до Tenni. Через зміну радіуса надлишкова швидкість на початку могла зіпсувати перехід і положення боліда перед наступним поворотом. Описувати Eymatt однією рівномірною дугою означає втратити цю особливість."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Tenni-Kurve"
+          ],
+          "explanation": {
+            "en": "The right-hand Tenni corner commemorates Italian motorcycle racer Omobono Tenni, who died there in 1948. The road entered deeper shadow near the apex as open land gave way to forest. That sudden change in light compounded the difficulty of a fast curve with a changing radius.",
+            "uk": "Правий поворот Tenni названо на честь італійського мотогонщика Омобоно Тенни, який загинув тут у 1948 році. Біля апекса відкрита місцевість переходила в густіший ліс, і освітлення раптово слабшало. Така зміна світла ускладнювала швидку дугу зі змінним радіусом."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Long run after Tenni"
+          ],
+          "explanation": {
+            "en": "After Tenni came a relatively long straight, often described as approximately 700–750 metres. It was one of the rare opportunities for sustained acceleration on a circuit better known for its constant bending. Forest trees still stood close as the course climbed towards its final sector.",
+            "uk": "Після Tenni починалася порівняно довга пряма, яку джерела оцінюють приблизно у 700–750 метрів. Це була рідкісна нагода довго розганятися на трасі з майже безперервними дугами. Дерева залишалися поруч, а дорога йшла на підйом до фінальної секції."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Woodland rise"
+          ],
+          "explanation": {
+            "en": "The final woodland stretch climbed through a succession of quick bends. Drivers moved between sunlit gaps and heavy shade, which made accurate sightlines a problem even when the corner radius itself was not particularly tight. The historic roadway is only partly preserved today.",
+            "uk": "Остання лісова частина підіймалася серією швидких віражів. Пілоти постійно переходили від освітлених прогалин до густої тіні, тому точний огляд ставав проблемою навіть у не надто тісних поворотах. Історична дорога нині збереглася лише частково."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Glasbrunnen sector"
+          ],
+          "explanation": {
+            "en": "Glasbrunnen and its ramp were named landmarks in the last forest sector. The road was winding and enclosed rather than an open modern sequence with broad run-off. The available sources identify this area, but do not resolve which exact F1DB numbered slot belongs to each separate apex.",
+            "uk": "Glasbrunnen та його підйом були відомими орієнтирами останнього лісового сектору. Дорога звивалася між деревами, а не проходила відкритою сучасною трасою з широкими зонами вильоту. Джерела підтверджують назву ділянки, але не встановлюють точний номер кожного апекса у F1DB."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Forsthaus-Kurve"
+          ],
+          "explanation": {
+            "en": "Forsthaus was the important right-angle bend towards the end of the lap. It followed the flowing woodland roads and therefore required a strong adjustment in speed and steering. The old location and much of the start-finish area are now covered by industrial development.",
+            "uk": "Forsthaus був важливим прямокутним поворотом наприкінці кола. Після швидких лісових дуг він вимагав значної зміни швидкості й траєкторії. Історичне місце цього віражу та значну частину стартово-фінішної зони тепер займає промислова забудова."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bremgarten-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Return past the pits"
+          ],
+          "explanation": {
+            "en": "A gentle final curve carried the cars back towards the pits and finishing line. The pit lane was unusually separated from the racing road for that era. On this last Swiss championship visit in 1954, Juan Manuel Fangio won for Mercedes and secured his second drivers' title.",
+            "uk": "Плавна фінальна дуга повертала боліди до боксів і фінішної лінії. Для своєї епохи піт-лейн незвично відділявся від гоночної дороги. Під час останнього чемпіонатного Гран-прі Швейцарії 1954 року Хуан-Мануель Фанхіо переміг за Mercedes і здобув другий титул."
+          },
+          "sources": [
+            "bremgarten-period-analysis",
+            "bremgarten-period-reconstruction",
+            "bremgarten-1954-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
