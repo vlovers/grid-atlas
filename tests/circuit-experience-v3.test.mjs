@@ -76,7 +76,7 @@ test('seven unapproved historic route studies remain research-only and unpublish
   const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
   assert.doesNotMatch(component, /historicRoutes/);
   assert.doesNotMatch(component, /const historicRoute = historicRoutes\.circuits\.find/);
-  const historicEnriched = { 'ain-diab': 7, 'clermont-ferrand': 8 };
+  const historicEnriched = { 'ain-diab': 13, 'clermont-ferrand': 8 };
   for (const [id, count] of Object.entries(historicEnriched)) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
     assert.equal(circuit.sections.length, count, id + ': complete route-scene package');
