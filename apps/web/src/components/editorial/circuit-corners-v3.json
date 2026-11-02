@@ -18,7 +18,11 @@
     "suzuka-names": "https://www.formula1.com/en/latest/article/tremayne-from-senna-vs-prost-to-130r-why-suzuka-is-so-special-for-f1-fans.3nEHghWwsKcnf7pcbhqgQt",
     "interlagos-map": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
     "interlagos-names": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
-    "interlagos-history": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/"
+    "interlagos-history": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/",
+    "hungaroring-map": "https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
+    "hungaroring-names": "https://www.formula1.com/en/latest/article/hamilton-amongst-f1-stars-honoured-as-hungaroring-announces-corner-names-to-celebrate-40th-anniversary.7Mrnph7CvCryI89FwHjYD9",
+    "zandvoort-map": "https://www.fia.com/system/files/decision-document/2025_dutch_grand_prix_-_event_notes_-_circuit_map_pit_lane_map_emergency_exit_map_quarantine_zone_and_red_zones_.pdf",
+    "zandvoort-names": "https://www.circuitzandvoort.nl/en/corners/"
   },
   "guides": [
     {
@@ -1748,6 +1752,502 @@
           "sources": [
             "interlagos-map",
             "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "hungaroring",
+      "layout_id": "hungaroring-3",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "hungaroring-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Piquet",
+          "aliases": [],
+          "explanation": {
+            "en": "The opening right-hand hairpin is the principal braking opportunity after the main straight. Named in 2026 for Nelson Piquet, it recalls his extraordinary outside pass on Ayrton Senna in 1986. Brake straight, then preserve a clean exit for the downhill second corner.",
+            "uk": "Перша права шпилька — головна зона гальмування після стартової прямої. У 2026 році її назвали на честь Нельсона Піке, згадавши видовищний обгін Айртона Сенни зовнішньою траєкторією у 1986-му. Після гальмування важливо чисто вийти до другого повороту на спуску."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Hamilton",
+          "aliases": [],
+          "explanation": {
+            "en": "The long downhill left rewards patience rather than an early throttle stamp. The 2026 name honours Lewis Hamilton, who has eight Hungarian Grand Prix victories. A wide entry can buy a smooth exit, but only if the car remains settled before the next kink.",
+            "uk": "Затяжний лівий на спуску винагороджує терпіння, а не надто ранній газ. Назва 2026 року вшановує Льюїса Гамільтона, восьмиразового переможця Гран-прі Угорщини. Ширший вхід може допомогти розгону, якщо болід залишається стабільним перед наступним перегином."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Spring",
+          "aliases": [],
+          "explanation": {
+            "en": "This gentle right-hand rise is less about a dramatic braking point than positioning for the fast Turn 4. Its official 2026 name refers to the Valley of the Three Springs where the Hungaroring sits. Carry momentum, but do not sacrifice the next entry.",
+            "uk": "Цей плавний правий підйом важливий передусім для розташування боліда перед швидким четвертим поворотом. Офіційна назва 2026 року нагадує про Долину трьох джерел, де розташований Хунгароринг. Потрібно зберегти швидкість, не зіпсувавши наступний вхід."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Mansell",
+          "aliases": [],
+          "explanation": {
+            "en": "The fast left at Turn 4 asks for a precise commitment over the crest; running wide can cost the lap. It was named in 2026 for Nigel Mansell, winner from twelfth on the grid in 1989. That famous comeback is the reason for the honour, not a claim that his decisive pass happened here.",
+            "uk": "Швидкий лівий четвертий поворот потребує точної траєкторії на гребені підйому: широкий вихід може зіпсувати коло. У 2026-му його назвали на честь Найджела Менселла, який переміг після старту з дванадцятого місця у 1989 році. Це вшанування гонщика, а не твердження, що вирішальний обгін стався саме тут."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Mogyorod",
+          "aliases": [],
+          "explanation": {
+            "en": "The medium-speed right-hander begins a tightly connected middle-sector rhythm. Its 2026 name comes from the nearby municipality of Mogyoród. The useful line is the one that prepares the car for the slow chicane immediately afterwards, rather than maximising speed at this single apex.",
+            "uk": "Середньошвидкісний правий поворот починає щільний ритм середнього сектору. Назва 2026 року походить від сусіднього містечка Модьород. Найкраща траєкторія готує машину до повільної шикани одразу далі, а не лише забезпечує найбільшу швидкість на одному апексі."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Driving Center",
+          "aliases": [],
+          "explanation": {
+            "en": "The first half of the slow right-left chicane forces the driver to scrub off speed and rotate the car sharply. Its shared 2026 name honours the Hungaroring Driving Center, a training facility opened in 1998. Attacking the first kerb too hard can compromise the left-hand exit.",
+            "uk": "Перша частина повільної шикани праворуч-ліворуч змушує різко скинути швидкість і повернути болід. Спільна назва 2026 року вшановує Hungaroring Driving Center, навчальний центр, відкритий у 1998-му. Надто агресивний наїзд на перший поребрик може зіпсувати лівий вихід."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Driving Center",
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand second half of the chicane completes the slowest direction-change sequence of the middle sector. Both Turns 6 and 7 share the official Driving Center name. A clean exit matters more than a heroic first apex because Turn 8 arrives with the car still recovering balance.",
+            "uk": "Ліва друга частина шикани завершує найповільнішу перекладку середнього сектору. Повороти 6 і 7 мають спільну офіційну назву Driving Center. Чистий вихід важливіший за ризикований перший апекс, адже восьмий поворот починається, коли болід ще відновлює баланс."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Buda",
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 8 begins a brisk series of connected bends. The 2026 Buda name forms a pair with Pest at Turn 9, referring to the historic halves of Budapest. Steering smoothly here is essential: an untidy exit pushes the car off line before the immediate right-hander.",
+            "uk": "Лівий восьмий поворот починає швидку серію пов'язаних віражів. Назва Buda, затверджена у 2026 році, утворює пару з Pest у дев'ятому й нагадує про історичні частини Будапешта. Плавне кермування потрібне, щоб не опинитися поза траєкторією перед наступним правим."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Pest",
+          "aliases": [],
+          "explanation": {
+            "en": "The right-hand Turn 9 follows Buda without a long recovery straight. Its official 2026 name represents Pest, the other historic half of the host city. The key is to unwind the steering early enough to carry speed through the next fast bend without sliding the rear tyres.",
+            "uk": "Правий дев'ятий поворот іде одразу після Buda без довгої прямої для перепочинку. Офіційна назва 2026 року представляє Пешт, іншу історичну частину міста. Важливо вчасно випрямити кермо й перенести швидкість у наступну швидку дугу без ковзання задніх шин."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Danube",
+          "aliases": [],
+          "explanation": {
+            "en": "A quick left-hand kink rewards confidence and a stable car more than late braking. Named Danube in 2026 after the river flowing through Budapest, it links the Buda/Pest pair to the faster Turn 11. The driver is still managing the accumulated load of the preceding direction changes.",
+            "uk": "Швидкий лівий перегин потребує впевненості й стабільності боліда більше, ніж пізнього гальмування. У 2026 році його назвали Danube на честь Дунаю, що протікає через Будапешт. Пілот усе ще контролює навантаження після кількох послідовних змін напрямку."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Alesi",
+          "aliases": [],
+          "explanation": {
+            "en": "This fast right-hander carries the name Jean Alesi, formally adopted in 2026 after years of informal use. The association comes from Alesi's 1995 practice crash here. With the car loaded laterally, a clean line matters more than a sudden correction before the slower Turn 12.",
+            "uk": "Швидкий правий поворот названо на честь Жана Алезі: назву офіційно затвердили у 2026-му після багатьох років неформального вжитку. Вона нагадує про аварію Алезі на тренуванні 1995 року. Під боковим навантаженням плавна траєкторія важливіша за різке коригування перед повільнішим дванадцятим."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Schumacher",
+          "aliases": [],
+          "explanation": {
+            "en": "Heavy braking for the right-hand Turn 12 begins the technical final sector. The 2026 name honours Michael Schumacher, a four-time Hungarian Grand Prix winner who clinched his fourth title here in 2001. Drivers must rotate the car decisively without overheating the tyres before Turn 13.",
+            "uk": "Сильне гальмування перед правим дванадцятим поворотом відкриває технічний фінальний сектор. Назва 2026 року вшановує Міхаеля Шумахера, чотириразового переможця Гран-прі Угорщини, який у 2001-му забезпечив собі четвертий титул. Потрібно швидко розвернути машину й не перегріти шини перед тринадцятим."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Senna",
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate left-hand hairpin slows the car before the long final right. Its 2026 name honours Ayrton Senna, who took pole at the inaugural 1986 Hungarian Grand Prix. Drivers need a tidy exit: forcing the car too far wide here ruins the setup for the final corner.",
+            "uk": "Передостання ліва шпилька сповільнює болід перед довгим останнім правим. Назва 2026 року вшановує Айртона Сенну, який здобув поул на першому Гран-прі Угорщини 1986 року. Акуратний вихід вирішальний: надто широкий розгін псує підхід до фінального повороту."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hungaroring-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Szisz",
+          "aliases": [],
+          "explanation": {
+            "en": "The long final right-hand corner dictates the speed carried onto the pit straight. Its 2026 name honours Ferenc Szisz, the Hungarian-born winner of the first Grand Prix in France in 1906. Patience on the throttle prevents wheelspin and pays off all the way to Turn 1.",
+            "uk": "Довгий останній правий поворот визначає швидкість на стартовій прямій. У 2026 році його назвали на честь Ференца Сіса, уродженця Угорщини й переможця першого Гран-прі у Франції 1906 року. Терпляче дозування газу запобігає пробуксовці й допомагає аж до першого повороту."
+          },
+          "sources": [
+            "hungaroring-map",
+            "hungaroring-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zandvoort",
+      "layout_id": "zandvoort-5",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "zandvoort-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Tarzanbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "At the end of the pit straight, Tarzan is a broad 180-degree right-hander and a prime overtaking spot. The tale of a gardener nicknamed Tarzan bargaining for the name is local folklore, not a proven naming record. The pit exit was moved to the corner's exit for the modern revival.",
+            "uk": "Наприкінці стартової прямої Tarzan — широка права дуга на 180 градусів і головне місце для обгонів. Історія про садівника на прізвисько Тарзан, який нібито виміняв назву, є місцевою легендою, а не доведеним фактом. До сучасного повернення Ф1 виїзд із боксів перенесли на вихід повороту."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Gerlachbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "This partly blind right-hander remembers Wim Gerlach, who died here in a sports-car race in 1957. The circuit widened the corner and introduced a punishing double kerb during its modernisation. Drivers commit before seeing the exit, so a hesitant steering correction can be costly.",
+            "uk": "Цей частково сліпий правий поворот названо на честь Віма Герлаха, який загинув тут у гонці спортивних автомобілів 1957 року. Під час модернізації трасу розширили й додали жорсткий подвійний поребрик. Пілоти входять ще до того, як побачать вихід, тому нерішуче коригування керма коштує часу."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Hugenholtzbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is a banked left-hand bowl rebuilt for Formula 1's return, with banking reaching about 18 degrees. It honours former circuit director Hans Hugenholtz, who did not design Zandvoort itself. Different lines are possible, but the exit up the dune matters more than an eye-catching entry.",
+            "uk": "Третій поворот — профільована ліва чаша, перебудована до повернення Формули-1, з нахилом до приблизно 18 градусів. Назва вшановує колишнього директора автодрому Ганса Гугенгольца, який не проєктував сам Зандворт. Тут можливі різні траєкторії, але вихід на підйом важливіший за ефектний вхід."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Hunserug",
+          "aliases": [],
+          "explanation": {
+            "en": "Hunserug is a very fast right-hand rise over a dune ridge, conceived partly through the suggestion of Cas Hunse. Its name means Hunse's ridge. The car is light over the crest, so the driver needs to hold a steady line while preparing for Slotemakerbocht.",
+            "uk": "Hunserug — дуже швидкий правий підйом через гребінь дюни, маршрут якого частково запропонував Кас Гунсе. Назва означає «хребет Гунсе». На вершині болід розвантажується, тому потрібно втримати стабільну траєкторію перед Slotemakerbocht."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Slotemakerbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "This fast left-hand bend was renamed for Rob Slotemaker after his fatal touring-car crash in 1979. The entry flows from Hunserug, but the next approach is partly blind. The driver must resist drifting too wide because the faster Scheivlak sequence follows immediately.",
+            "uk": "Цей швидкий лівий віраж назвали на честь Роба Слотемакера після його смертельної аварії в туринговій гонці 1979 року. Вхід продовжує розгін із Hunserug, але наступна ділянка частково сліпа. Не можна надто широко виходити: попереду ще швидша секція Scheivlak."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Scheivlak",
+          "aliases": [],
+          "explanation": {
+            "en": "The first numbered part of Scheivlak begins a very fast right-hand sequence over the dunes. The name comes from an old local boundary in the dune landscape. Despite renewed gravel and safety fences in 2020, the demanding downhill geometry remains a test of commitment.",
+            "uk": "Перша пронумерована частина Scheivlak відкриває дуже швидку праву секцію серед дюн. Назва походить від старого місцевого кордону в дюнному ландшафті. Попри оновлення гравію й огорож у 2020 році, складна геометрія на спуску досі вимагає рішучості."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Scheivlak",
+          "aliases": [],
+          "explanation": {
+            "en": "The second numbered right-hand arc continues Scheivlak with the car already under sustained lateral load. Both Turns 6 and 7 share the historic name rather than having invented individual titles. The exit sets up Mastersbocht, so keeping the tyres planted is essential.",
+            "uk": "Друга пронумерована права дуга продовжує Scheivlak, коли болід уже перебуває під тривалим боковим навантаженням. Повороти 6 і 7 мають спільну історичну назву, а не вигадані окремі імена. Вихід готує Mastersbocht, тож важливо зберегти зчеплення шин."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Mastersbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "Mastersbocht is the fast right-hander where the modern lap turns back towards the infield instead of following the older dune route. The circuit's official history describes the late-1990s redesign; the precise origin of the Masters name is less certain. Track-limit kerbs punish an optimistic exit.",
+            "uk": "Mastersbocht — швидкий правий поворот, де сучасне коло повертає до внутрішньої частини траси замість старого маршруту дюнами. Офіційна історія автодрому описує перебудову кінця 1990-х, але точне походження назви Masters менш певне. Поребрики суворо карають за надто широкий вихід."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 has no current official personal name; Renaultbocht is a former sponsor-era label. This technical right-hander was added in the late 1990s and follows the high-speed Mastersbocht. Braking while positioning for the next bend is more important than chasing a single apex.",
+            "uk": "Дев'ятий поворот не має чинного офіційного персонального імені; Renaultbocht — колишня спонсорська назва. Цей технічний правий віраж додали наприкінці 1990-х після швидкого Mastersbocht. Важливіше правильно гальмувати й підготувати наступний поворот, ніж атакувати один апекс."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is often called Bocht Zonder Naam, literally the corner without a name, and was previously linked to the Vodafone sponsor. Built in 1999, it offers several lines after the technical ninth corner. A clean exit creates speed before the Hans Ernst braking zone.",
+            "uk": "Десятий часто називають Bocht Zonder Naam — «поворот без назви»; раніше його пов'язували зі спонсором Vodafone. Побудований у 1999 році, він дозволяє різні траєкторії після технічного дев'ятого. Чистий вихід дає швидкість перед гальмуванням у Hans Ernst."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Hans Ernst Chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the hard-braking right-hand entry to the Hans Ernst Chicane. Originally called Nissanbocht, the complex now honours the former circuit director who helped revive Zandvoort. A driver may attempt an overtake here, but too much kerb can unsettle the car for the left-hand exit.",
+            "uk": "Одинадцятий — правий вхід із сильним гальмуванням до шикани Hans Ernst. Раніше комплекс називався Nissanbocht, тепер він вшановує колишнього директора, який допоміг відродити Зандворт. Тут можна атакувати, але надто високий поребрик розбалансовує болід перед лівим виходом."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Hans Ernst Chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 12 completes the Hans Ernst Chicane. The second half was widened during the 2020 works to allow more racing lines. The crucial task is to unwind the steering and accelerate without wasting the speed gained in the first half of the chicane.",
+            "uk": "Лівий дванадцятий завершує шикану Hans Ernst. Під час робіт 2020 року другу частину розширили, щоб дозволити більше траєкторій. Головне — вчасно випрямити кермо й прискоритися, не змарнувавши швидкість, збережену на вході в шикану."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 has no universally established personal name. The right-hander was built in 1989 in the Pulleveld area and now determines how quickly the car can approach the final banking. Drivers protect the exit, because a small loss here persists down the following straight.",
+            "uk": "Тринадцятий не має загальновизнаної персональної назви. Правий поворот побудували у 1989 році в місцевості Pulleveld, і нині він визначає швидкість підходу до останнього банкінгу. Пілоти бережуть вихід, адже невелика втрата тут тягнеться далі на прямій."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "zandvoort-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Arie Luyendykbocht",
+          "aliases": [],
+          "explanation": {
+            "en": "The last right-hander honours Arie Luyendyk, the Dutch two-time Indianapolis 500 winner. Once known as Bos Uit, it was rebuilt with banking of up to about 18 degrees in 2020. Drivers carry high speed onto the pit straight, setting up a slipstream and a possible attack at Tarzan.",
+            "uk": "Останній правий віраж названо на честь Арі Луєндика, дворазового нідерландського переможця Indianapolis 500. Колись він звався Bos Uit, а у 2020 році отримав банкінг із нахилом до приблизно 18 градусів. Висока швидкість на прямій створює сліпстрим і шанс атакувати в Tarzan."
+          },
+          "sources": [
+            "zandvoort-map",
+            "zandvoort-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
