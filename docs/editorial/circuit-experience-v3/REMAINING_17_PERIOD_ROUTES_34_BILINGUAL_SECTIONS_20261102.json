@@ -1040,9 +1040,22 @@
             "url": "https://www.motorsportmagazine.com/database/races/1982-detroit-grand-prix/",
             "claim": "Contemporary route reporting establishes 1982 context, not an official per-apex indexed key",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "period_layout_comparison",
+            "url": "https://www.gdecarli.it/php2/circuit.php?var1=797&var2=2",
+            "claim": "Historic track archive separately illustrates 1982 Detroit and 1983–1988 revisions; a later map must not replace the initial 1982 layout.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "period_length_discrepancy",
+            "url": "https://www.motorsportmagazine.com/database/races/1982-detroit-grand-prix/",
+            "claim": "Motor Sport race database lists Detroit at 2.493 miles while the RacingCircuits.info 1982 layout entry gives 2.590 miles; comparison requires source-level reconciliation.",
+            "supports_apex_numbering": false
           }
         ],
-        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
+        "layout_length_discrepancy": "RacingCircuits.info labels its 1982 map 2.590 mi / 4.168 km, while Motor Sport's race-database entry reports 2.493 miles; retain distinct source claims without silently changing the layout mapping."
       }
     },
     {
@@ -1388,9 +1401,22 @@
             "url": "https://www.italiasiamonoi.it/story/gran-premio-di-pescara-del-1957",
             "claim": "Independent Italian history also identifies Villa Raspa, Spoltore, Cappelle sul Tavo and Via Vestina, not verified FIA apex numbers",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "historic_route_crosscheck",
+            "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "claim": "Local historic account describes north Pescara start, inland Via del Circuito, Villa Raspa and Spoltore, Cappelle, Montesilvano and Adriatic coastal return, agreeing on route geography without sequential turn numbers.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "period_chicane_caveat",
+            "url": "https://www.p300.it/f1-gp-pescara-1957-lultima-volta-del-circus-in-abruzzo/?lang=en",
+            "claim": "Secondary historical reconstruction reports a chicane added for the 1957 event; do not transpose maps from earlier Coppa Acerbo years without checking the 1957 modification.",
+            "supports_apex_numbering": false
           }
         ],
-        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
+        "layout_version_caveat": "Maps of pre-1957 Coppa Acerbo must not be assumed identical to the one-off 1957 Formula 1 championship configuration; contemporary event modification evidence needs independent mapping."
       }
     },
     {
@@ -1831,8 +1857,21 @@
             "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
             "claim": "Period report describes airfield concrete and route complexity but supplies no certified apex numbering",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "historical_layout_count",
+            "url": "https://www.lapledger.org/races/1959/9",
+            "claim": "F1DB's explicitly labelled 1959 sebring-1 configuration measures 8.36 km and records 17 bends. This does not establish 1959 independent apex numbering.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "modern_layout_exclusion",
+            "url": "https://trackmotorsport.app/tracks/sebring-international-raceway/",
+            "claim": "Modern Sebring driving-guide turn numbers refer to a materially shorter 3.74 mile layout and must not be projected onto the 8.36 km 1959 route.",
+            "supports_apex_numbering": false
           }
-        ]
+        ],
+        "layout_version_caveat": "Do not transfer today's numbered Sebring corners into the 1959 airfield configuration solely because both records cite 17 bends."
       }
     }
   ]
