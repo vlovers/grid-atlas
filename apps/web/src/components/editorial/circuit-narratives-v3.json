@@ -1020,6 +1020,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "indianapolis",
+      "biography": {
+        "title": {
+          "en": "Inside the oval, then onto its banking",
+          "uk": "Усередині овалу — і знову на банкінг"
+        },
+        "text": {
+          "en": "From 2000 to 2007, Formula 1 raced clockwise on a 13-turn road course inside the Indianapolis Motor Speedway, opposite the direction of the oval races. The lap combined tight infield corners with a high-speed final banked turn leading onto the historic front straight. That banking created extraordinary tyre loads in 2005, making Turn 13 a central part of the sport's most notorious six-car Grand Prix. The F1 course is distinct from the four-turn oval used in World Championship Indianapolis 500 races of 1950–1960.",
+          "uk": "У 2000–2007 роках Формула-1 їздила за годинниковою стрілкою дорожньою трасою з 13 поворотами всередині Indianapolis Motor Speedway — у протилежному напрямку до перегонів овалом. Коло поєднувало тісні внутрішні віражі з швидкісним профільованим фінальним поворотом перед історичною головною прямою. Саме банкінг створив надзвичайне навантаження на шини у 2005 році, зробивши тринадцятий поворот центром сумнозвісної гонки шести болідів. Маршрут Формули-1 відрізняється від чотириповоротного овалу чемпіонатних Indianapolis 500 1950–1960 років."
+        },
+        "source": "https://www.indianapolismotorspeedway.com/history/formula-one",
+        "locator": "IMS official F1 history, clockwise 13-turn course 2000–2007"
+      },
+      "moments": [
+        {
+          "id": "indianapolis-2005-1",
+          "year": 2005,
+          "title": {
+            "en": "Only six cars race after the Michelin withdrawal",
+            "uk": "Лише шість машин стартують після відмови Michelin"
+          },
+          "text": {
+            "en": "Michelin warned its seven teams that their tyres could not safely withstand the loads at banked Turn 13. After the formation lap those teams withdrew, leaving six Bridgestone-equipped cars to contest the 2005 United States Grand Prix. Michael Schumacher won ahead of Rubens Barrichello and Tiago Monteiro, but the result was overshadowed by the safety crisis.",
+            "uk": "Michelin попередила сім своїх команд, що шини не витримають навантажень у профільованому тринадцятому повороті. Після прогрівочного кола ці команди відмовилися від старту, залишивши лише шість болідів на Bridgestone у Гран-прі США 2005 року. Міхаель Шумахер переміг перед Рубенсом Баррікелло та Тьягу Монтейру, але результат затьмарила криза безпеки."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2005/races/779/united-states/race-result",
+          "locator": "F1 official 2005 result note, six starters",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "indianapolis-2007-2",
+          "year": 2007,
+          "title": {
+            "en": "Hamilton beats Alonso in F1's last Indianapolis race",
+            "uk": "Гамільтон перемагає Алонсо в останній гонці Формули-1 в Індіанаполісі"
+          },
+          "text": {
+            "en": "Lewis Hamilton won the 2007 United States Grand Prix at Indianapolis from pole, holding off McLaren team mate Fernando Alonso by 1.518 seconds. Felipe Massa finished third. It was Formula 1's final World Championship race at the Speedway, closing an eight-season chapter on the infield-and-banking road course.",
+            "uk": "Льюїс Гамільтон виграв Гран-прі США 2007 року в Індіанаполісі з поулу, випередивши напарника по McLaren Фернандо Алонсо на 1.518 секунди. Феліпе Масса став третім. Це була остання чемпіонатна гонка Формули-1 на автодромі, яка завершила восьмисезонну історію внутрішньої дорожньої траси з банкінгом."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2007/races/814/united-states/race-result",
+          "locator": "2007 F1 official race classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
