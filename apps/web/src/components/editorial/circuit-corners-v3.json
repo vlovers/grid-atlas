@@ -28,7 +28,11 @@
     "melbourne-map": "https://www.fia.com/system/files/decision-document/2025_melbourne_event_-_circuit_map_-_melbourne_2025_0.pdf",
     "melbourne-names": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa.19zPlhKhMbTaVNFIPKAAMa",
     "mexico-city-map": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone_area.pdf",
-    "mexico-city-names": "https://www.formula1.com/en/latest/article/the-risk-perspective-how-f1-drivers-engineers-and-strategists-tackle-the-mexico-city-grand-prix.B8P8xr5i1sPDgQOmL7hzs"
+    "mexico-city-names": "https://www.formula1.com/en/latest/article/the-risk-perspective-how-f1-drivers-engineers-and-strategists-tackle-the-mexico-city-grand-prix.B8P8xr5i1sPDgQOmL7hzs",
+    "catalunya-map": "https://www.fia.com/system/files/decision-document/2025_barcelona_event_-_circuit_map_-_barcelona_2025_0.pdf",
+    "catalunya-names": "https://www.formula1.com/en/latest/article/circuit-de-barcelona-catalunya-to-feature-new-configuration-for-2023-spanish.6ZQgemg7eOlAJbBtu56PHE",
+    "montreal-map": "https://www.fia.com/system/files/decision-document/2025_canadian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_ers_battery_containment_area_red_zones.pdf",
+    "montreal-names": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
   },
   "guides": [
     {
@@ -3151,6 +3155,502 @@
           "sources": [
             "mexico-city-map",
             "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "catalunya",
+      "layout_id": "catalunya-6",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "catalunya-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long pit straight ends at the first right-hander, the circuit's main overtaking opportunity. Braking late is tempting, but the car must be positioned for the immediate left-hand Turn 2 rather than running wide.",
+            "uk": "Довга стартова пряма закінчується першим правим поворотом — головним місцем для обгонів. Пізнє гальмування спокушає, але болід потрібно поставити для наступного лівого другого віражу, а не вивести за межі траєкторії."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand second turn completes the opening chicane-like change of direction. Drivers accelerate while still steering, so a clean exit is vital before the long, tyre-loading sweep of Turn 3.",
+            "uk": "Лівий другий завершує початкову перекладку, схожу на шикану. Пілоти прискорюються ще з повернутим кермом, тому чистий вихід критично важливий перед довгою дугою третього, що сильно навантажує шини."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is Barcelona's famous long right-hand sweep, a major test of the front-left tyre. The car stays under lateral load for several seconds; sliding here can hurt the tyres for the rest of the lap.",
+            "uk": "Третій — знаменита довга права дуга Барселони, серйозне випробування для передньої лівої шини. Болід кілька секунд перебуває під боковим навантаженням, а ковзання тут може погіршити стан гуми на решту кола."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 continues the flowing first half of the lap with another long right-hander. A patient entry preserves grip, while the exit immediately leads to a tricky downhill braking approach for Turn 5.",
+            "uk": "Четвертий продовжує плавну першу половину кола ще одним затяжним правим віражем. Терплячий вхід зберігає зчеплення, а вихід одразу веде до підступного гальмування на спуску перед п'ятим."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The downhill left-hand Turn 5 invites drivers to brake too late. Camber can forgive a slightly missed apex, but pushing wide makes it harder to set up the following acceleration and direction change.",
+            "uk": "Лівий п'ятий на спуску провокує занадто пізнє гальмування. Поперечний нахил частково пробачає неточний апекс, але широкий вихід ускладнює наступний розгін і зміну напрямку."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is a gentle transition on the way to the tighter middle-sector combination. It is easy to overlook, yet the car's placement here determines whether the next left-right sequence can be taken smoothly.",
+            "uk": "Шостий — плавний перехід до тіснішої зв'язки середнього сектору. Його легко недооцінити, проте розташування боліда саме тут визначає, наскільки плавно вдасться пройти наступну перекладку ліворуч-праворуч."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 7 begins a short, technical change of direction. Drivers balance kerb use against stability; attacking too aggressively can upset the car before the quick right-hand Turn 8.",
+            "uk": "Лівий сьомий починає коротку технічну перекладку. Пілоти шукають баланс між використанням поребриків і стабільністю: надто агресивна атака розбалансовує машину перед швидким правим восьмим."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 completes the left-right sequence and points the car uphill towards the fast Turn 9. The exit matters because any loss of momentum is carried onto the following acceleration zone.",
+            "uk": "Восьмий завершує зв'язку ліворуч-праворуч і спрямовує болід угору до швидкого дев'ятого. Вихід вирішальний, адже будь-яка втрата темпу переходить на наступну зону розгону."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is a fast right-hander over a rise, one of Barcelona's most demanding commitment corners. Drivers need confidence in the front end; an untidy exit can compromise speed on the following straight.",
+            "uk": "Дев'ятий — швидкий правий на підйомі, один із найскладніших поворотів Барселони. Потрібна впевненість у передній осі; неточний вихід може коштувати швидкості на наступній прямій."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 10 is a heavy-braking hairpin after the back straight. Its shape has changed across Barcelona's history, so a 2025 corner guide must not be pasted onto the earlier, tighter versions without checking the year.",
+            "uk": "Ліва шпилька десятого — зона сильного гальмування після задньої прямої. Її форму змінювали протягом історії Барселони, тому опис конфігурації 2025 року не можна переносити на старіші тісні варіанти без перевірки року."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 begins the winding final part of the lap. Drivers need to rotate the car cleanly rather than carry too much entry speed, because the next corner follows with little room to reset the line.",
+            "uk": "Одинадцятий відкриває звивисту фінальну частину кола. Потрібно чисто розвернути болід, а не гнатися за швидкістю на вході, адже наступний віраж починається майже без простору для виправлення траєкторії."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The twelfth turn continues the medium-speed final-sector rhythm. A smooth line protects the front tyres and sets up the much faster last pair of corners that replaced the old chicane route in 2023.",
+            "uk": "Дванадцятий продовжує середньошвидкісний ритм останнього сектору. Плавна траєкторія береже передні шини й готує значно швидшу останню пару віражів, яка замінила маршрут зі старою шиканою у 2023 році."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is now a fast final-sector sweep rather than the approach to the old slow chicane. The 2023 redesign restored a flowing finish, so drivers need a stable car and precise placement before Turn 14.",
+            "uk": "Тринадцятий тепер швидка фінальна дуга, а не підхід до старої повільної шикани. Перебудова 2023 року повернула плавне завершення кола, тому потрібні стабільний болід і точна траєкторія перед чотирнадцятим."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "catalunya-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last Turn 14 leads directly onto the long pit straight. Since the 2023 removal of the slow chicane, exit speed is even more important; a small slide here costs time all the way to Turn 1.",
+            "uk": "Останній чотирнадцятий веде прямо на довгу стартову пряму. Після видалення повільної шикани у 2023 році швидкість виходу стала ще важливішою: невелике ковзання тут коштує часу аж до першого повороту."
+          },
+          "sources": [
+            "catalunya-map",
+            "catalunya-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "montreal",
+      "layout_id": "montreal-6",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "montreal-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The opening right-hand Turn 1 begins a tight change of direction after the pit straight. Braking and positioning must be judged together, because the second turn immediately follows and the barriers leave little room for mistakes.",
+            "uk": "Перший правий відкриває тісну перекладку після стартової прямої. Гальмування й положення боліда потрібно розраховувати разом: другий іде одразу, а бар'єри залишають мало простору для помилок."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the left-hand exit from the opening sequence. Drivers try to straighten the steering and accelerate early, knowing that the next heavy braking zone arrives after a relatively short blast.",
+            "uk": "Другий — лівий вихід із початкової зв'язки. Пілоти намагаються раніше випрямити кермо й прискоритися, знаючи, що наступна серйозна зона гальмування почнеться після порівняно короткого розгону."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is the right-hand entry to a brisk chicane-like section. Montreal rewards accurate kerb use, but climbing too far over the first kerb can bounce the car off line before Turn 4.",
+            "uk": "Третій — правий вхід до швидкої зв'язки, схожої на шикану. У Монреалі важливо точно використовувати поребрики, але надмірний наїзд на перший може підкинути болід і зіпсувати траєкторію перед четвертим."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 4 completes the quick change of direction. The car needs to be stable on exit because the following acceleration zone is an important part of Montreal's stop-and-go rhythm.",
+            "uk": "Лівий четвертий завершує швидку перекладку. Болід має бути стабільним на виході, адже наступна зона розгону — важлива частина характерного для Монреаля ритму «гальмування — прискорення»."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is a faster bend between two technical combinations. It looks less dramatic than the hairpin or final chicane, yet a poor line can reduce the speed carried towards the next braking zone.",
+            "uk": "П'ятий — швидша дуга між двома технічними зв'язками. Вона здається менш видовищною за шпильку чи фінальну шикану, але невдала траєкторія зменшує швидкість перед наступним гальмуванням."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 starts another slower change of direction. Drivers must brake with the car settled and avoid a late dive that leaves no room for the following corner or for a rival alongside.",
+            "uk": "Шостий починає ще одну повільнішу перекладку. Потрібно гальмувати на стабільному боліді й не пірнати надто пізно, інакше не залишиться місця для наступного віражу або суперника поруч."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 completes the second chicane-like sequence and opens a useful acceleration run. A clean exit is worth more than attacking the kerb, because the car must gain speed before the next quick pair.",
+            "uk": "Сьомий завершує другу зв'язку й відкриває важливий розгін. Чистий вихід корисніший за агресивну атаку поребрика: боліду потрібно набрати швидкість перед наступною швидкою парою віражів."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is the first part of another quick direction change. The driver balances speed against the kerb's ability to unsettle the chassis, with the following Turn 9 demanding an immediate response.",
+            "uk": "Восьмий — перша частина чергової швидкої перекладки. Пілот балансує швидкість і ризик розхитати шасі на поребрику, адже дев'ятий одразу потребує нової зміни напрямку."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 completes the fast chicane before the long run to the hairpin. A tidy exit matters because the car is accelerating towards one of the heaviest braking zones on the circuit.",
+            "uk": "Дев'ятий завершує швидку шикану перед довгим підходом до шпильки. Акуратний вихід важливий, адже болід прискорюється до однієї з найсильніших зон гальмування на трасі."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Hairpin",
+          "aliases": [],
+          "explanation": {
+            "en": "The Turn 10 hairpin is a signature Montreal overtaking and traction challenge. Cars arrive quickly, brake very hard and rotate at low speed; wheelspin on exit is costly because a long straight follows.",
+            "uk": "Шпилька десятого — одна з головних зон обгонів і перевірка тяги в Монреалі. Боліди під'їжджають швидко, різко гальмують і розвертаються на малій швидкості; пробуксовка на виході дорого коштує перед довгою прямою."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the gentle transition after the hairpin on the approach to the fast straight. The driver wants to preserve the acceleration gained from Turn 10 rather than introduce unnecessary steering corrections.",
+            "uk": "Одинадцятий — плавний перехід після шпильки на підході до швидкої прямої. Пілот прагне зберегти розгін, отриманий із десятого, замість зайвих коригувань керма, що забирають швидкість."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 lies on the fast approach to the final chicane. Although it is less conspicuous than the Wall of Champions, stable car placement here is essential before the sharp braking for Turns 13–14.",
+            "uk": "Дванадцятий розташований на швидкому підході до фінальної шикани. Він менш відомий за Стіну чемпіонів, проте стабільне положення боліда тут критично важливе перед різким гальмуванням до поворотів 13–14."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first half of the final chicane, Turn 13, invites late braking after the long straight. A driver must clear the kerb without launching the car off line, because the Wall of Champions waits beyond the next apex.",
+            "uk": "Перша частина фінальної шикани, тринадцятий, провокує пізнє гальмування після довгої прямої. Потрібно подолати поребрик, не підкинувши болід із траєкторії: за наступним апексом чекає Стіна чемпіонів."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "montreal-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 completes the final chicane beside the Wall of Champions, named after crashes by Damon Hill, Michael Schumacher and Jacques Villeneuve in 1999. The wall is not the corner's formal name; the smallest exit error can end a race.",
+            "uk": "Чотирнадцятий завершує фінальну шикану біля Стіни чемпіонів, названої після аварій Деймона Гілла, Міхаеля Шумахера та Жака Вільньова у 1999 році. Стіна — не офіційна назва повороту; найменша помилка на виході може завершити гонку."
+          },
+          "sources": [
+            "montreal-map",
+            "montreal-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
