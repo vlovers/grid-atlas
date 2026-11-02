@@ -97,6 +97,20 @@ test('seven unapproved historic route studies remain research-only and unpublish
     assert.ok(record.sections.every(section => section.turn_numbers === null));
     assert.equal(isCircuitEditionApproved(id), false);
   }
+  for (const id of ['dallas', 'detroit', 'pescara', 'porto']) {
+    const record = research.circuits.find(c => c.circuit_id === id);
+    const review = record.layout_evidence_review;
+    assert.equal(record.independent_numbering_verified, false);
+    assert.ok(review.evidence.length >= 2);
+    assert.ok(review.evidence.every(item => item.supports_apex_numbering === false && /^https:\/\//.test(item.url)));
+    assert.ok(record.sections.every(item => item.turn_numbers === null));
+    assert.match(review.media_rights, /linked only/);
+    assert.equal(isCircuitEditionApproved(id), false);
+  }
+  assert.equal(research.circuits.find(c => c.circuit_id === 'dallas').layout_evidence_review.archive_turn_count, 23);
+  assert.equal(research.circuits.find(c => c.circuit_id === 'porto').layout_evidence_review.archive_turn_count, 19);
+  assert.ok(research.circuits.find(c => c.circuit_id === 'dallas').layout_evidence_review.evidence.some(item => item.claim.includes('24')));
+  assert.ok(research.circuits.find(c => c.circuit_id === 'porto').layout_evidence_review.evidence.some(item => item.claim.includes('14')));
   const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('51')));
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('more than 50')));
