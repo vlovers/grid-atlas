@@ -1173,6 +1173,108 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "biography": {
+        "title": {
+          "en": "A British Grand Prix in the hills of Kent",
+          "uk": "Британський Гран-прі серед пагорбів Кенту"
+        },
+        "text": {
+          "en": "Brands Hatch was never just a flat ribbon of asphalt. Its Grand Prix loop dropped from Paddock Hill, climbed towards Surtees and disappeared into the woods before returning to the main straight. Formula 1 raced on several versions of this circuit until 1986. The original Dingle Dell chicane was still there in the final championship visit; the smoother Sheene Curve did not appear until 2003. The nine named sections of the 1986 lap should therefore be read as a historical reconstruction, not a copy of today's circuit guide.",
+          "uk": "Брендс-Гетч ніколи не був просто рівною смугою асфальту. Коло Гран-прі спускалося від Paddock Hill, підіймалося до Surtees, зникало серед дерев і поверталося на головну пряму. Формула-1 виступала тут на різних конфігураціях до 1986 року. Під час останнього чемпіонатного візиту ще існувала стара шикана Dingle Dell; плавніша Sheene Curve з'явилася лише у 2003-му. Тому дев'ять названих ділянок кола 1986 року — історична реконструкція, а не копія сучасного путівника."
+        },
+        "source": "https://oversteer48.com/brands-hatch-corner-names/",
+        "locator": "Grand Prix corner order and historical Dingle Dell / Sheene comparison"
+      },
+      "moments": [
+        {
+          "id": "brands-hatch-1985-mansell-first",
+          "year": 1985,
+          "title": {
+            "en": "Mansell finally wins at home",
+            "uk": "Менселл нарешті перемагає вдома"
+          },
+          "text": {
+            "en": "At the 1985 European Grand Prix at Brands Hatch, Nigel Mansell claimed his first Formula 1 World Championship victory for Williams. He had started third, behind pole-sitter Ayrton Senna and Nelson Piquet. The result mattered beyond one Sunday: a driver often remembered for near-misses finally had a championship win, in front of his home crowd. The official race classification identifies Brands Hatch as the venue, not Silverstone.",
+            "uk": "На Гран-прі Європи 1985 року в Брендс-Гетчі Найджел Менселл здобув першу перемогу в чемпіонаті світу Формули-1 за Williams. Він стартував третім після володаря поулу Айртона Сенни та Нельсона Піке. Це був не просто результат одного вікенду: гонщик, якому часто не щастило, нарешті переміг перед домашніми вболівальниками. Офіційний протокол називає місцем гонки саме Брендс-Гетч, а не Сільверстоун."
+          },
+          "source": "https://www.formula1.com/en/results/1985/races/495/europe/race-result",
+          "locator": "1985 European GP race classification, venue and winner",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "brands-hatch-1986-last-f1",
+          "year": 1986,
+          "title": {
+            "en": "The final Formula 1 visit",
+            "uk": "Останній візит Формули-1"
+          },
+          "text": {
+            "en": "The 1986 British Grand Prix was the last World Championship Formula 1 race at Brands Hatch. Nelson Piquet started from pole, but Williams team-mate Nigel Mansell won over 75 laps, with Piquet second and Alain Prost third. It was a final championship chapter for the steep Kent circuit, not a race on the later 2003 Sheene Curve layout. The official results also record Mansell's fastest race lap.",
+            "uk": "Гран-прі Великої Британії 1986 року став останньою чемпіонатною гонкою Формули-1 у Брендс-Гетчі. Нельсон Піке стартував із поулу, але за 75 кіл переміг його напарник по Williams Найджел Менселл; Піке фінішував другим, Ален Прост — третім. Це був фінальний розділ історії крутої траси Кенту, а не гонка на пізнішій конфігурації з Sheene Curve. Офіційний протокол також фіксує найшвидше коло Менселла."
+          },
+          "source": "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result",
+          "locator": "1986 British GP official race result",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "donington",
+      "biography": {
+        "title": {
+          "en": "One Formula 1 weekend, one unforgettable lap",
+          "uk": "Один вікенд Формули-1 та незабутнє коло"
+        },
+        "text": {
+          "en": "Donington Park hosted a single Formula 1 World Championship Grand Prix in 1993, on the longer circuit with the Melbourne Loop. Its first half runs downhill through Hollywood and Craner Curves before climbing through McLeans and Coppice. The last section slows into the Esses, Melbourne Hairpin and Goddards. This is not the shorter National layout via Roberts. The official circuit owner counts twelve turns; the familiar named guide sometimes groups the two bends of the Esses as one section, so the number-to-name mapping remains a documented reconstruction pending independent period-map review.",
+          "uk": "Донінгтон-Парк приймав лише один чемпіонатний Гран-прі Формули-1 — у 1993 році, на довшій конфігурації з Melbourne Loop. Перша половина кола спускається через Hollywood і Craner Curves, а потім підіймається до McLeans та Coppice. Наприкінці боліди сповільнюються в The Esses, Melbourne Hairpin і Goddards. Це не коротший маршрут National через Roberts. Організатор рахує дванадцять поворотів, хоча деякі путівники об'єднують два вигини шикани в одну названу секцію. Тому точна прив'язка номерів залишається реконструкцією до незалежної перевірки історичної карти."
+        },
+        "source": "https://www.donington-park.co.uk/about/circuit-layouts",
+        "locator": "Official GP layout length and 12-turn count"
+      },
+      "moments": [
+        {
+          "id": "donington-1993-opening-lap",
+          "year": 1993,
+          "title": {
+            "en": "From fifth to first in a single lap",
+            "uk": "Із п'ятого місця на перше за одне коло"
+          },
+          "text": {
+            "en": "Ayrton Senna qualified fourth for the 1993 European Grand Prix, then slipped to fifth at the first corner on a wet track. By the end of that same opening lap he had overtaken the cars ahead and taken the lead. His outside move past Karl Wendlinger through the Craner section became one of the defining images of the race. This was the long Donington Grand Prix circuit, not the National shortcut.",
+            "uk": "Айртон Сенна кваліфікувався четвертим на Гран-прі Європи 1993 року, а на мокрому старті відкотився на п'яте місце. До завершення того самого першого кола він обігнав суперників попереду й очолив гонку. Його атака Карла Вендлінгера зовнішньою траєкторією в секції Craner стала одним із символів перегонів. Події відбувалися на довгій трасі Гран-прі Донінгтона, а не на короткому маршруті National."
+          },
+          "source": "https://www.formula1.com/en/latest/article/he-was-walking-on-water-sennas-magical-donington-lap-of-the-gods-remembered.2cYFK0Zr1J9z8fypFxnZRi",
+          "locator": "Formula 1 2023 retrospective, Senna first lap",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "donington-1993-finish",
+          "year": 1993,
+          "title": {
+            "en": "The finish proves it was more than one lap",
+            "uk": "Фініш доводить, що справа не лише в одному колі"
+          },
+          "text": {
+            "en": "Senna went on to win the 76-lap European Grand Prix by 83.199 seconds over Damon Hill, while pole-sitter Alain Prost finished third a lap down. Those figures from Formula 1's official classification make the scale of his performance clear. The opening lap supplied the legend, but the changing weather and tyre decisions shaped the race that followed. Donington never hosted another World Championship Formula 1 Grand Prix.",
+            "uk": "Сенна виграв Гран-прі Європи завдовжки 76 кіл із перевагою 83,199 секунди над Деймоном Гіллом, а володар поулу Ален Прост став третім із відставанням у коло. Ці цифри з офіційного протоколу Формули-1 показують масштаб виступу. Легенду створило перше коло, але подальшу гонку визначали мінлива погода й рішення щодо шин. Донінгтон більше не приймав чемпіонатних етапів Формули-1."
+          },
+          "source": "https://www.formula1.com/en/results/1993/races/592/europe/race-result",
+          "locator": "1993 European GP official race classification",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
