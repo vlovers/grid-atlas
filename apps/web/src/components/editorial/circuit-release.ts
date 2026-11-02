@@ -13,7 +13,7 @@ export function circuitEditionDigest(circuitId: string) {
   })).digest('hex');
 }
 
-/** Research-only, provisional-numbering and incomplete editions must not be approved. */
+/** AI/source checks are evidence, not independent approval of individual turn mappings. */
 export function hasPublicationReadyCornerGuide(circuitId: string) {
   const guide = candidateCornerGuides.find(entry => entry.circuit_id === circuitId);
   if (!guide || guide.review_status !== 'independent_review_approved') return false;
@@ -22,7 +22,7 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
   if (numbers.length !== guide.numbered_turns || new Set(numbers).size !== guide.numbered_turns) return false;
   if (numbers.some(number => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
   if (guide.sections.some(section =>
-    !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status) ||
+    section.confirmation_status !== 'independently_verified' ||
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
     section.sources.length < 2 || section.sources.some(key => !Object.hasOwn(candidateCornerSources, key))
   )) return false;
