@@ -92,7 +92,11 @@
     "valencia-2012-fia": "https://www.fia.com/event-2012-european-grand-prix",
     "valencia-lap": "https://en.wikipedia.org/wiki/Valencia_Street_Circuit",
     "valencia-layout": "https://lapledger.org/circuits/valencia",
-    "madring-2026-corner-breakdown": "https://sport.sky.it/formula-1/2026/09/08/f1-gp-spagna-madrid-madring-foto"
+    "madring-2026-corner-breakdown": "https://sport.sky.it/formula-1/2026/09/08/f1-gp-spagna-madrid-madring-foto",
+    "fuji-2008-result": "https://www.formula1.com/en/results/2008/races/840/japan/race-result",
+    "fuji-layout": "https://lapledger.org/circuits/fuji",
+    "fuji-course-names": "https://grasshopper.d2.r-cms.jp/mcgp/fsw/",
+    "fuji-official-venue": "https://fujispeedway.jp/"
   },
   "guides": [
     {
@@ -10378,6 +10382,320 @@
             "valencia-2012-fia",
             "valencia-lap",
             "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "fuji",
+      "layout_id": "fuji-2",
+      "numbering_year": 2008,
+      "names_as_of": 2008,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "fuji-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long 1.475-kilometre pit straight ends in heavy braking for Fuji's first corner. A late attack is tempting, but a wide exit compromises the following changes of direction.",
+            "uk": "Довга стартова пряма Фудзі завдовжки 1.475 кілометра завершується сильним гальмуванням перед першим поворотом. Пізня атака приваблює, але широкий вихід псує наступні перекладки."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second bend redirects the car soon after the slow opener. A tidy line here is needed before the faster named Coca-Cola section.",
+            "uk": "Другий віраж швидко змінює напрямок після повільного першого. Чиста траєкторія потрібна перед швидшою ділянкою, відомою як Coca-Cola Corner."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The Coca-Cola Corner area is a faster part of the opening sector. Drivers carry momentum through the bend rather than treating it as another stop-start hairpin.",
+            "uk": "Ділянка Coca-Cola Corner швидша за початкову шпильку. Пілоти намагаються зберегти інерцію в дузі, а не проходити її як черговий повільний віраж."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 continues the quicker opening section and positions the car for the tighter middle of the lap. Small corrections here can disturb the following entry.",
+            "uk": "Четвертий продовжує швидшу початкову частину й готує болід до тіснішої середини кола. Зайві корекції тут ускладнюють наступний вхід."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fifth bend is part of the approach to Fuji's slow hairpin. Drivers must begin thinking about braking balance instead of chasing maximum corner speed.",
+            "uk": "П'ятий належить до підходу до повільної шпильки Фудзі. Потрібно вже думати про баланс під час гальмування, а не лише про максимальну швидкість у дузі."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The Hairpin section is one of the slowest places on the circuit. Rotating the car cleanly is crucial before accelerating towards the more open middle sector.",
+            "uk": "Секція Hairpin — одна з найповільніших на трасі. Важливо чисто розвернути машину перед розгоном до відкритішої середньої частини кола."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 follows the hairpin as the road opens up. Drivers aim to recover speed without overworking the rear tyres on acceleration.",
+            "uk": "Сьомий іде після шпильки, коли дорога стає відкритішою. Пілоти повертають швидкість, намагаючись не перегріти задні шини під час розгону."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The eighth bend continues the flowing middle section before the long-radius 300R area. Keeping the car balanced matters more than a single sharp steering input.",
+            "uk": "Восьмий продовжує плавну середню частину перед довгою дугою 300R. Баланс боліда важливіший за один різкий рух кермом."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The 300R section is named for its approximate corner radius. It asks drivers to hold a stable high-speed line before the much slower Dunlop complex.",
+            "uk": "Секція 300R названа за приблизним радіусом дуги. Пілоти тримають стабільну швидкісну траєкторію перед значно повільнішою зв'язкою Dunlop."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The Dunlop complex sharply interrupts the high-speed rhythm. Heavy braking and accurate placement are essential before the direction changes in the final sector.",
+            "uk": "Зв'язка Dunlop різко перериває швидкісний ритм. Потрібні сильне гальмування й точне положення машини перед перекладками останнього сектору."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is part of the technical sequence after Dunlop, where successive changes of direction limit the room for an aggressive exit.",
+            "uk": "Одинадцятий належить до технічної секції після Dunlop, де послідовні зміни напрямку майже не залишають простору для агресивного виходу."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The twelfth bend continues the compact post-Dunlop combination. Smooth steering helps avoid wasting grip before the slower corners closer to the finish.",
+            "uk": "Дванадцятий продовжує тісну зв'язку після Dunlop. Плавна робота кермом допомагає не втратити зчеплення перед повільнішими поворотами ближче до фінішу."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is a recognised landmark in Fuji's final technical sector. Drivers must prepare the car for another linked change rather than rush the apex.",
+            "uk": "Тринадцятий — помітний орієнтир технічного фінального сектору Фудзі. Потрібно підготувати машину до наступної перекладки, а не поспішати до апекса."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 keeps the car in the winding final sequence. Tyre traction and precise positioning matter because the last two bends arrive quickly.",
+            "uk": "Чотирнадцятий продовжує звивисту завершальну секцію. Зчеплення й точне положення боліда важливі, адже два останні повороти наближаються швидко."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate bend sets up the final corner and the exceptionally long main straight. A rushed entry here can cost speed over the next kilometre.",
+            "uk": "Передостанній віраж готує фінальний поворот і надзвичайно довгу стартову пряму. Поспішний вхід може коштувати швидкості протягом наступного кілометра."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "fuji-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last corner opens onto Fuji's famous long straight. Getting the steering straight and applying power cleanly is vital before the next lap's major braking zone.",
+            "uk": "Останній поворот виводить на знамениту довгу пряму Фудзі. Важливо випрямити кермо й плавно додати газ перед головною зоною гальмування наступного кола."
+          },
+          "sources": [
+            "fuji-layout",
+            "fuji-course-names",
+            "fuji-2008-result",
+            "fuji-official-venue"
           ],
           "confirmation_status": "source_checked_ai"
         }
