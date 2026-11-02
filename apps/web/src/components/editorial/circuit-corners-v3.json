@@ -96,7 +96,11 @@
     "fuji-2008-result": "https://www.formula1.com/en/results/2008/races/840/japan/race-result",
     "fuji-layout": "https://lapledger.org/circuits/fuji",
     "fuji-course-names": "https://grasshopper.d2.r-cms.jp/mcgp/fsw/",
-    "fuji-official-venue": "https://fujispeedway.jp/"
+    "fuji-official-venue": "https://fujispeedway.jp/",
+    "indianapolis-official-history": "https://www.indianapolismotorspeedway.com/history/formula-one",
+    "indianapolis-layout": "https://lapledger.org/circuits/indianapolis",
+    "indianapolis-2005-tyre": "https://www.autosport.com/f1/news/michelin-rule-out-tyre-malfunction-at-indy-5329070/5329070/",
+    "indianapolis-turn-details": "https://rnt-motorsports.com/circuits/indianapolis-motor-speedway/"
   },
   "guides": [
     {
@@ -10696,6 +10700,263 @@
             "fuji-course-names",
             "fuji-2008-result",
             "fuji-official-venue"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "indianapolis",
+      "layout_id": "indianapolis-2",
+      "numbering_year": 2007,
+      "names_as_of": 2007,
+      "numbered_turns": 13,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "indianapolis-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The F1 road course begins with a tight right turn after the long front straight. Cars arrive at speed from the banking, making braking and positioning crucial.",
+            "uk": "Коло Формули-1 починається тісним правим віражем після довгої головної прямої. Боліди підходять із банкінгу на великій швидкості, тому гальмування й положення машини вирішальні."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 quickly changes direction to the left inside the Speedway. A car that goes too deep at Turn 1 loses the clean line here.",
+            "uk": "Другий швидко змінює напрямок ліворуч усередині автодрому. Якщо болід занадто широко зайшов у перший, чиста траєкторія тут уже втрачена."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The third bend opens into a longer sweep through the infield. Drivers must balance speed against the tighter change of direction that follows.",
+            "uk": "Третій відкриває довшу дугу всередині овалу. Пілоти балансують швидкість із підготовкою до тіснішої зміни напрямку далі."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 tightens the infield rhythm after the preceding sweep. The best line is the one that positions the car for the faster Turn 5.",
+            "uk": "Четвертий звужує ритм внутрішньої секції після попередньої дуги. Найкраща траєкторія готує болід до швидшого п'ятого повороту."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A quicker kink at Turn 5 gives the car a short chance to build speed. Drivers must already prepare for the longer Turn 6.",
+            "uk": "Швидший перегин п'ятого дозволяє ненадовго набрати темп. Пілоти вже мають готуватися до довшого шостого віражу."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is a long left-hand arc through the infield. It loads the tyres for longer than the preceding kinks and rewards a smooth steering trace.",
+            "uk": "Шостий — довга ліва дуга у внутрішній частині. Вона довше навантажує шини, ніж попередні перегини, і винагороджує плавну роботу кермом."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The seventh bend continues the linked infield sequence. Its widening exit helps the car regain speed, but an early throttle can push it off line.",
+            "uk": "Сьомий продовжує зв'язку всередині овалу. Вихід дозволяє набрати швидкість, проте надто ранній газ може винести машину з оптимальної траєкторії."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 connects the flowing infield section with the much slower paired hairpins ahead. Drivers must switch from carrying speed to precise braking.",
+            "uk": "Восьмий поєднує плавну внутрішню секцію з набагато повільнішими подвійними шпильками. Потрібно перейти від збереження швидкості до точного гальмування."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first tight hairpin of the infield's slow pair is Turn 9. It demands rotation at low speed rather than the high-speed confidence needed on the banking.",
+            "uk": "Дев'ятий — перша тісна шпилька повільної пари всередині автодрому. Тут потрібен розворот на малій швидкості, а не сміливість швидкісного банкінгу."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second tight hairpin, Turn 10, follows with little room to reset the car. A clean exit matters because the course begins to open up again.",
+            "uk": "Десятий — друга тісна шпилька, що йде майже без перепочинку. Чистий вихід важливий, адже далі траса знову стає швидшою."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 leads away from the slow infield complex towards the oval section. Drivers need to unwind the steering and begin building speed.",
+            "uk": "Одинадцятий виводить із повільної внутрішньої зв'язки в напрямку овалу. Потрібно випрямити кермо й почати розгін."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 prepares the transition from the infield road course to the famous banked oval corner. Positioning the car correctly is vital before sustained high speed.",
+            "uk": "Дванадцятий готує перехід із внутрішньої дорожньої секції до знаменитого профільованого повороту овалу. Точне положення боліда вирішальне перед тривалою високою швидкістю."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "indianapolis-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 uses the steeply banked first corner of the Indianapolis oval in reverse. Its extreme tyre loading became central to the 2005 Michelin safety crisis and six-car race.",
+            "uk": "Тринадцятий проходить профільованим першим поворотом овалу Індіанаполіса у зворотному напрямку. Надзвичайне навантаження на шини стало причиною кризи Michelin 2005 року й гонки лише шести болідів."
+          },
+          "sources": [
+            "indianapolis-official-history",
+            "indianapolis-layout",
+            "indianapolis-2005-tyre",
+            "indianapolis-turn-details"
           ],
           "confirmation_status": "source_checked_ai"
         }
