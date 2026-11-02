@@ -59,3 +59,29 @@ test('historic layouts, named corners and media rights are kept separate',()=>{
   assert.ok(data.sources['madring-map'].startsWith('https://www.fia.com/'));
   assert.ok(![...expected.keys()].some(id=>data.guides.find(g=>g.circuit_id===id).diagram));
 });
+
+
+test('three new biographies and six race moments remain bilingual, sourced and unapproved',()=>{
+  const narratives=read('../apps/web/src/components/editorial/circuit-narratives-v3.json');
+  const ids=new Set();
+  for(const id of expected.keys()){
+    const entry=narratives.entries.find(x=>x.circuit_id===id);
+    assert.ok(entry,id+':missing biography');
+    assert.ok(entry.biography.title.en && entry.biography.title.uk);
+    assert.ok(entry.biography.text.en.trim().split(/\\s+/).length>=45,id+':bio EN');
+    assert.ok(entry.biography.text.uk.trim().split(/\\s+/).length>=40,id+':bio UK');
+    assert.match(entry.biography.source,/^https:\\/\\//);
+    assert.equal(entry.moments.length,2,id+':two distinct moments');
+    for(const moment of entry.moments){
+      assert.ok(!ids.has(moment.id),moment.id+':duplicate');
+      ids.add(moment.id);
+      assert.ok(Number.isInteger(moment.year));
+      assert.ok(moment.title.en && moment.title.uk);
+      assert.ok(moment.text.en.trim().split(/\\s+/).length>=35,moment.id+':EN');
+      assert.ok(moment.text.uk.trim().split(/\\s+/).length>=30,moment.id+':UK');
+      assert.match(moment.source,/^https:\\/\\//);
+      assert.equal(moment.review_status,'independent_review_pending');
+    }
+  }
+  assert.equal(ids.size,6);
+});
