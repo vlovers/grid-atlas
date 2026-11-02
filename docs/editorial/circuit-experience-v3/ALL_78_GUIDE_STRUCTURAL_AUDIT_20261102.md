@@ -94,3 +94,28 @@ A guide section can describe a race or a group of turns. These counts do not est
 
 Before calling all circuits complete: review every historical claim and source; inventory every corner against period-correct layout maps; review EN/UK translations; approve 165 research scenes; clear media rights. This audit grants no approvals.
 
+
+## Outstanding seven — explicit historical-numbering gate (2026-11-02)
+
+The 69 guides integrated directly in `apps/web/src/components/editorial/circuit-corners-v3.json` contain 977 individual bilingual research entries at commit `964e69d8`. Two separate inherited guide bindings (Monaco, Spa) add 38 entries. Hence **71/78 candidate circuit guides**, **1015 candidate entries**, **7 circuits without integrated turn-by-turn guides**. Research coverage is not publication approval or historical apex validation. Recompute these counts after subsequent commits.
+
+| Circuit ID | F1 era/layout | Existing research | Release-blocking evidence gap |
+|---|---|---|---|
+| `ain-diab` | 1958 / `ain-diab-1` | `REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json` (two bilingual geographic sections); F1DB records 18 turns | No authenticated 1958 per-apex numbered reference. Do not assign invented proper corner names. |
+| `clermont-ferrand` | 1972 / `clermont-ferrand-1` | `REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json`; F1DB records 48 turns | A dated period map and the 48-turn F1DB count are not a validated 1:1 numbering crosswalk; other sources may count bends differently. |
+| `dallas` | 1984 / `dallas-1` | `DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json` | F1DB records 23 turns, while the research describes 13 distinct driving complexes. A complex is not an official numbered turn. |
+| `detroit` | 1982 / `detroit-1` | `DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json` | Need map-based period crosswalk; do not silently substitute another Detroit GP year or a present-day street grid. |
+| `pescara` | 1957 / `pescara-1` | `PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json` | Historical villages, roads, and route order do not establish individual certified turn numbers on the 1957 long circuit. |
+| `porto` | 1958–1960 / `porto-1` | `PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json` | Reconcile the circuit as raced in the relevant season; landmark names alone do not give a year-specific apex key. |
+| `sebring` | 1959 / `sebring-1` | `SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json` (ten bilingual sections); F1DB records 17 turns | An original race report covers driving sections, but does not independently number every apex; modern Sebring numbers cannot be applied to 1959. |
+
+### Required checks before closing each guide
+
+1. Pin the year and exact F1DB layout ID; identify any variation between source map and F1 race route.
+2. Match every proposed numbered apex to a period-correct, independently traceable map. If not possible, retain unnumbered descriptive route sections and `historical_numbering_unverified`; **never imply F1DB count proves an ordered FIA numbering key**.
+3. Give independently authored, readable EN and UK explanations for each confirmed turn, with claim-level provenance. Keep unverified names `null`; comparative place names may be explained only as non-canonical landmarks.
+4. Verify map/photo licence and attribution independently. Historical event flyers, period map PDFs and proprietary diagrams are external evidence links unless lawful reuse rights are established. Existing F1DB SVG attribution does not license other imagery.
+5. Confirm the UI renders the correct historical period and clearly distinguishes numbered certified turns from provisional route-reading positions; test all source links, responsive layouts, translation coverage, and publication gate.
+6. Require independent editorial review and completed CI for the exact PR HEAD. No release or merging while queued/failed.
+
+**Current outcome:** the seven gaps are explicitly inventoried and research material linked, but **no additional integrated turn guides or approvals are claimed by this audit**.
