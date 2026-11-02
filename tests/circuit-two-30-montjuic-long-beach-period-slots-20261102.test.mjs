@@ -29,11 +29,11 @@ test('30 individual bilingual historical study slots preserve period layouts wit
       assert.equal(turn.numbers.length, 1, turn.id);
       assert.equal(turn.confirmation_status, 'historical_numbering_unverified', turn.id);
       assert.ok(turn.aliases.length === 1, turn.id);
-      assert.ok(turn.explanation.en.trim().split(/\\s+/).length >= 17, turn.id + ':en');
-      assert.ok(turn.explanation.uk.trim().split(/\\s+/).length >= 15, turn.id + ':uk');
+      assert.ok(turn.explanation.en.trim().split(' ').length >= 17, turn.id + ':en');
+      assert.ok(turn.explanation.uk.trim().split(' ').length >= 15, turn.id + ':uk');
       assert.match(turn.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/, turn.id);
       assert.equal(turn.sources.length, 3, turn.id);
-      for (const key of turn.sources) assert.match(data.sources[key], /^https:\\/\\//, key);
+      for (const key of turn.sources) assert.ok(data.sources[key].startsWith('https://'), key);
       en.add(turn.explanation.en);
       uk.add(turn.explanation.uk);
     }
