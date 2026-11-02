@@ -193,3 +193,22 @@ test('publication gate rejects duplicate section identifiers and non-HTTPS prove
     candidateCornerSources[sourceKey] = oldSource;
   }
 });
+
+test('duplicate circuit IDs and out-of-range layout years cannot receive publication approval', async () => {
+  const { hasPublicationReadyCornerGuide } = await import('../apps/web/src/components/editorial/circuit-release.ts');
+  const guide = candidateCornerGuides.find(item => item.circuit_id === 'silverstone');
+  assert.ok(guide);
+  const year = guide.numbering_year;
+  try {
+    candidateCornerGuides.push(guide);
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'duplicate guide IDs must fail closed');
+    candidateCornerGuides.pop();
+    guide.numbering_year = 1949;
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'pre-championship year must not be accepted');
+    guide.numbering_year = 2101;
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'future unsupported year must not be accepted');
+  } finally {
+    if (candidateCornerGuides.at(-1) === guide) candidateCornerGuides.pop();
+    guide.numbering_year = year;
+  }
+});
