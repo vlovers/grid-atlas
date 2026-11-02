@@ -6,13 +6,16 @@ import { isCircuitEditionApproved, circuitEditionDigest } from '../apps/web/src/
 import { renderCircuitReview, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
 
 test('numbered turns are complete and never confused with distinct named sections', () => {
-  assert.equal(candidateCornerGuides.length,8);
+  assert.ok(candidateCornerGuides.length >= 16, 'do not regress already sourced circuit guides');
+  assert.equal(new Set(candidateCornerGuides.map(guide => guide.circuit_id)).size, candidateCornerGuides.length, 'no duplicate circuit guides');
   for (const guide of candidateCornerGuides) {
     const turns = numberedCorners(guide);
     assert.deepEqual(turns.map(turn => turn.number),Array.from({length:guide.numbered_turns},(_,index)=>index+1));
     assert.ok(turns.every(turn => turn.layout_id === guide.layout_id && turn.sources.length >= 2));
   }
-  assert.deepEqual(candidateCornerGuides.map(guide=>guide.circuit_id).sort(),['austin','bahrain','interlagos','monaco','monza','silverstone','spa-francorchamps','suzuka']);
+  for (const id of ['austin','bahrain','interlagos','monaco','monza','silverstone','spa-francorchamps','suzuka']) {
+    assert.ok(candidateCornerGuides.some(guide => guide.circuit_id === id), id + ': legacy guide missing');
+  }
   const monaco = candidateCornerGuides.find(guide=>guide.circuit_id==='monaco');
   const turns = numberedCorners(monaco);
   assert.equal(turns.length,19);
