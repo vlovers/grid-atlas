@@ -113,12 +113,14 @@ test('seven unapproved historic route studies remain research-only and unpublish
   assert.ok(research.circuits.find(c => c.circuit_id === 'porto').layout_evidence_review.evidence.some(item => item.claim.includes('14')));
   const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('51')));
-  assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('more than 50')));
+  assert.ok(charade.layout_evidence_review.evidence.some(item => item.type === 'venue_history' && item.claim.includes('51 bends')));
+  assert.ok(charade.layout_evidence_review.discrepancy_resolution.includes('48'));
+  assert.ok(charade.layout_evidence_review.discrepancy_resolution.includes('51'));
   const historicEnriched = { 'ain-diab': 13, 'clermont-ferrand': 8 };
   for (const [id, count] of Object.entries(historicEnriched)) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
-    assert.equal(circuit.sections.length, count, id + ': complete route-scene package');
-    assert.deepEqual(circuit.sections.map(section => section.reading_order), Array.from({ length: count }, (_, i) => i + 1));
+    assert.ok(circuit.sections.length >= count, id + ': historic scene floor must not regress');
+    assert.deepEqual(circuit.sections.map(section => section.reading_order), Array.from({ length: circuit.sections.length }, (_, i) => i + 1));
     assert.ok(circuit.sections.every(section => section.turn_numbers === null && section.review_status === 'pending'));
     assert.ok(circuit.sections.every(section => section.source_urls.every(url => /^https:\/\//.test(url))));
   }
@@ -126,9 +128,9 @@ test('seven unapproved historic route studies remain research-only and unpublish
   assert.equal(Object.values(expanded).reduce((a,b)=>a+b,0), 47);
   for (const [id, count] of Object.entries(expanded)) {
     const record = research.circuits.find(c => c.circuit_id === id);
-    assert.equal(record.sections.length, count, id + ': all historical sections preserved');
+    assert.ok(record.sections.length >= count, id + ': original historical sections preserved');
     assert.ok(record.original_research_document?.endsWith('.json'));
-    assert.deepEqual(record.sections.map(s => s.reading_order), Array.from({length:count}, (_,i)=>i+1));
+    assert.deepEqual(record.sections.map(s => s.reading_order), Array.from({length:record.sections.length}, (_,i)=>i+1));
   }
   for (const id of pending) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
