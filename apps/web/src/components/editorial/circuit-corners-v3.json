@@ -69,7 +69,19 @@
     "hockenheimring-race": "https://www.formula1.com/en/racing/2019/germany",
     "paul-ricard-map": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf",
     "paul-ricard-names": "https://www.formula1.com/en/racing/2019/france",
-    "paul-ricard-race": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf"
+    "paul-ricard-race": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf",
+    "buddh-map": "https://www.fia.com/sites/default/files/external_archive/node3786/16-india-circuit-print.pdf",
+    "buddh-names": "https://www.fia.com/news/2013-indian-grand-prix-preview",
+    "buddh-race": "https://www.formula1.com/en/results/2013/races/894/india/race-result",
+    "yeongam-map": "https://www.fia.com/sites/default/files/external_archive/node3784/14-korea-circuit-print.pdf",
+    "yeongam-names": "https://www.fia.com/news/2013-korean-grand-prix-preview",
+    "yeongam-race": "https://www.fia.com/events/fia-formula-one-world-championship/season-2013/2013-korean-grand-prix-circuit-map",
+    "sepang-map": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
+    "sepang-names": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
+    "sepang-race": "https://www.formula1.com/en/results/2017/races/973/malaysia/race-result",
+    "sirius-map": "https://www.fia.com/sites/default/files/decision-document/2021%20Russian%20Grand%20Prix%20-%20Circuit%20Map.pdf",
+    "sirius-names": "https://www.formula1.com/en/racing/2021/russia",
+    "sirius-race": "https://www.formula1.com/en/latest/article/hamilton-takes-100th-f1-victory-after-late-rain-shower-denies-long-time.4pIst5Rju75ZKdmtcfIJpE.4pIst5Rju75ZKdmtcfIJpE"
   },
   "guides": [
     {
@@ -7883,6 +7895,1252 @@
             "paul-ricard-map",
             "paul-ricard-names",
             "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "buddh",
+      "layout_id": "buddh-1",
+      "numbering_year": 2013,
+      "names_as_of": 2013,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "buddh-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Heavy braking opens the lap at a slow corner after the pit straight. A clean exit matters because the next two bends form a linked acceleration sequence.",
+            "uk": "Після стартової прямої коло починається сильним гальмуванням перед повільним віражем. Чистий вихід важливий, адже наступні два повороти утворюють зв'язку для розгону."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 redirects the car almost immediately after the opener. A driver who runs wide at Turn 1 has little time to restore the ideal line.",
+            "uk": "Другий поворот майже відразу змінює напрямок після першого. Якщо пілот широко вийшов із початкового віражу, часу повернутися на оптимальну траєкторію майже немає."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is the slow launch onto the circuit's longest straight. The 2013 FIA preview places DRS detection before it and activation 350 metres after it.",
+            "uk": "Третій поворот — повільний вихід на найдовшу пряму. За даними FIA 2013 року, точка вимірювання DRS була перед ним, а активація — через 350 метрів після нього."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long straight ends at Turn 4 in another major braking zone. Braking accuracy matters more than a desperate late lunge when the next corners arrive close together.",
+            "uk": "Довга пряма завершується четвертим поворотом із потужним гальмуванням. Точність важливіша за ризиковану пізню атаку, бо наступні віражі розташовані дуже близько."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 begins the winding middle section after the hairpin. It asks the driver to shift from straight-line speed to rapid placement between successive bends.",
+            "uk": "П'ятий відкриває звивисту середню частину після шпильки. Пілоту доводиться перейти від швидкості на прямій до точного розташування боліда між послідовними поворотами."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 changes direction again without a long recovery straight. Smooth steering here protects tyre grip for the following quick corner.",
+            "uk": "Шостий знову змінює напрямок без довгої прямої для перепочинку. Плавна робота кермом зберігає зчеплення шин перед наступним швидким віражем."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 continues the rhythm of the technical sector. Its exit positions the car for the following bends, so an isolated fast apex can cost time later.",
+            "uk": "Сьомий продовжує ритм технічного сектору. Вихід визначає положення машини перед наступними віражами, тому виграш на одному апексі може обернутися втратою далі."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 leads into another fast direction change. The car is still carrying speed from the preceding bends, making a stable platform more useful than abrupt correction.",
+            "uk": "Восьмий веде до чергової швидкої перекладки. Болід зберігає темп попередніх віражів, тому стабільність корисніша за різкі виправлення траєкторії."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 feeds the sweeping multi-apex complex that defines Buddh's middle sector. Drivers must anticipate the sustained lateral load rather than treat the next corner as isolated.",
+            "uk": "Дев'ятий виводить до довгої багатoапексної секції, яка визначає середній сектор Buddh. Потрібно заздалегідь готуватися до тривалого бокового навантаження, а не сприймати наступний віраж окремо."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 begins the famous long, banked, multi-apex sweep. The FIA's 2013 preview singles it out as a key technical challenge despite the circuit's high average speed.",
+            "uk": "Десятий відкриває знамениту довгу профільовану дугу з кількома апексами. У прев'ю FIA 2013 року її назвали головним технічним випробуванням попри високу середню швидкість кола."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is another numbered portion of the sustained high-speed complex. The tyres remain loaded while the driver must resist the temptation to tighten the line abruptly.",
+            "uk": "Одинадцятий — наступна пронумерована частина довгої швидкісної секції. Шини залишаються під навантаженням, а пілот має уникати різкого звуження траєкторії."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 finishes the extended sweeping group and releases the car toward a more angular section. A clean exit matters after several seconds of continuous cornering.",
+            "uk": "Дванадцятий завершує довгу плавну зв'язку й виводить болід до більш ламаної частини. Чистий вихід особливо важливий після кількох секунд безперервного проходження дуги."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 interrupts the flowing middle sector with a sharper change of direction. Drivers need to settle the car before the next kink instead of carrying excess speed.",
+            "uk": "Тринадцятий перериває плавний середній сектор різкішою зміною напрямку. Потрібно стабілізувати машину перед наступним перегином, а не зберігати зайву швидкість."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 continues the final technical sequence and sets the approach to Turn 15. It rewards placing the car early rather than making a last-second steering correction.",
+            "uk": "Чотирнадцятий продовжує завершальну технічну зв'язку й готує підхід до п'ятнадцятого. Виграє той, хто завчасно правильно розмістив болід, а не виправляє траєкторію в останню мить."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is the last significant bend before the final acceleration. In 2013 the FIA located the second DRS detection point just after this turn.",
+            "uk": "П'ятнадцятий — останній помітний віраж перед фінальним розгоном. У 2013 році FIA розмістила другу точку вимірювання DRS одразу після нього."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "buddh-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 completes the lap and sends the car onto the pit straight. The second DRS activation was 36 metres after this turn in the 2013 event plan.",
+            "uk": "Шістнадцятий завершує коло й виводить на стартову пряму. За схемою FIA 2013 року, друга зона активації DRS починалася через 36 метрів після нього."
+          },
+          "sources": [
+            "buddh-map",
+            "buddh-names",
+            "buddh-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "yeongam",
+      "layout_id": "yeongam-1",
+      "numbering_year": 2013,
+      "names_as_of": 2013,
+      "numbered_turns": 18,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "yeongam-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 is a slow right-angle corner after the pit straight, close to the pit exit. The 2013 pit-exit realignment changed how cars rejoined near this braking area.",
+            "uk": "Перший — повільний прямокутний віраж після стартової прямої, поруч із виїздом із боксів. У 2013 році перебудова піт-екзиту змінила повернення машин біля цієї зони гальмування."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 follows immediately after the first bend and releases the cars onto an exceptionally long straight. The exit is more valuable than a tiny gain on entry.",
+            "uk": "Другий іде майже відразу за першим і відкриває надзвичайно довгу пряму. Чистий розгін на виході цінніший за невеликий виграш на вході."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is the big braking test at the end of that straight. The FIA noted that cars spent roughly fifteen seconds at full throttle between Turns 2 and 3.",
+            "uk": "Третій — головна перевірка гальм після довгої прямої. FIA зазначала, що між другим і третім поворотами боліди рухалися на повному газу приблизно п'ятнадцять секунд."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is a very slow change of direction after the long-straight hairpin. In 2013 the FIA specified a raised kerb at its apex to discourage cutting.",
+            "uk": "Четвертий — дуже повільна зміна напрямку після шпильки наприкінці прямої. У 2013 році FIA передбачила підвищений поребрик на апексі проти зрізання."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 bends the car back through the tight early complex. Accurate positioning is important because Turn 6 follows without a meaningful straight to reset.",
+            "uk": "П'ятий повертає болід у тісній початковій зв'язці. Точне розташування важливе, адже шостий настає без помітної прямої для стабілізації."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 finishes the slow group and begins the climb toward the faster middle sector. The driver wants traction early to avoid losing speed across the next sweep.",
+            "uk": "Шостий завершує повільну групу й відкриває розгін до швидшого середнього сектору. Потрібно рано знайти зчеплення, щоб не втратити швидкість у наступній дузі."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is a fast change of direction on the approach to the upper part of the circuit. Steering inputs must stay smooth as the road begins to sweep.",
+            "uk": "Сьомий — швидка зміна напрямку на підході до верхньої частини траси. Кермо потрібно рухати плавно, коли дорога починає описувати широку дугу."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 continues the high-speed middle sequence. For 2013 the FIA reported a concrete verge at its apex, a detail that matters when comparing period onboards.",
+            "uk": "Восьмий продовжує швидкісну середню зв'язку. FIA повідомляла про бетонне узбіччя біля його апексу в 2013 році — важливу деталь для порівняння архівних онбордів."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 changes the car's direction before the next tightening bend. The 2013 organisers installed a raised kerb here, making aggressive cutting less attractive.",
+            "uk": "Дев'ятий змінює напрямок перед наступним тіснішим віражем. У 2013 році тут встановили підвищений поребрик, щоб зменшити спокусу зрізати траєкторію."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is a slower bend at the end of the fast sequence. The 2013 FIA preview records a change to the artificial grass at its exit.",
+            "uk": "Десятий — повільніший поворот наприкінці швидкої зв'язки. У прев'ю FIA 2013 року зазначено зміну штучної трави на його виході."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the broad, sustained bend that starts the next part of the lap. The FIA's 2013 work added asphalt to the outside verge, changing the runoff context.",
+            "uk": "Одинадцятий — широка затяжна дуга на початку наступної частини кола. У 2013 році FIA зафіксувала асфальтування зовнішнього узбіччя, що змінило зону виїзду за межі траси."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 tightens the long sweep and leads toward a narrow sequence of bends. Drivers must balance speed with a stable exit before the next direction change.",
+            "uk": "Дванадцятий звужує довгу дугу й веде до тіснішої зв'язки. Пілоту потрібно поєднати швидкість зі стабільним виходом перед наступною зміною напрямку."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the first of several closely spaced late-sector corners. The FIA added an apex kerb and extended the asphalt verge at its exit in 2013.",
+            "uk": "Тринадцятий відкриває групу тісно розташованих віражів наприкінці кола. У 2013 році FIA додала поребрик на апексі та розширила асфальтоване узбіччя на виході."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 immediately redirects the car again. The raised apex kerb specified for 2013 is a reminder that the shortest geometric path is not always a legal racing line.",
+            "uk": "Чотирнадцятий майже відразу змінює напрямок. Підвищений поребрик на апексі, передбачений у 2013 році, нагадує: найкоротший геометричний шлях не завжди дозволена гоночна траєкторія."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 completes another short linked section. Its exit was among the places where the FIA recorded replacement of artificial grass ahead of the 2013 race.",
+            "uk": "П'ятнадцятий завершує чергову коротку зв'язку. Його вихід був серед ділянок, де FIA зафіксувала заміну штучної трави перед гонкою 2013 року."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 begins the final run back toward the start line. The second DRS detection point sat 60 metres before this turn in the 2013 event plan.",
+            "uk": "Шістнадцятий відкриває завершальний шлях до стартової прямої. У схемі 2013 року друга точка вимірювання DRS містилася за 60 метрів до нього."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is part of the last flowing group rather than a separate heavy braking zone. A tidy line helps keep the car accelerating through the final sector.",
+            "uk": "Сімнадцятий належить до останньої плавної зв'язки, а не до окремої сильної зони гальмування. Чиста траєкторія допомагає зберегти розгін у фінальному секторі."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yeongam-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 completes the lap and opens the main straight. The 2013 FIA plan placed the second DRS activation point 95 metres after it.",
+            "uk": "Вісімнадцятий завершує коло й відкриває головну пряму. За схемою FIA 2013 року, друга активація DRS починалася через 95 метрів після нього."
+          },
+          "sources": [
+            "yeongam-map",
+            "yeongam-names",
+            "yeongam-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "sepang",
+      "layout_id": "sepang-1",
+      "numbering_year": 2017,
+      "names_as_of": 2017,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "sepang-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first corner is a tight hairpin after the pit straight, demanding a long braking phase. Its wide entry can invite side-by-side racing but compromises the following bend.",
+            "uk": "Перший — тісна шпилька після стартової прямої з довгим гальмуванням. Широкий вхід дозволяє боротися поруч, але легко зіпсувати наступний віраж."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the slow continuation of Sepang's opening double-corner complex. Good traction here matters because Turn 3 begins a long accelerating sweep.",
+            "uk": "Другий — повільне продовження початкової подвійної зв'язки Сепанга. Зчеплення на виході важливе, бо третій відкриває довгу дугу з розгоном."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is a fast, flowing bend rather than another stop-start hairpin. Drivers build speed toward the next major braking area at Turn 4.",
+            "uk": "Третій — швидка плавна дуга, а не ще одна шпилька з повною зупинкою темпу. Пілоти нарощують швидкість перед наступним серйозним гальмуванням у четвертому."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is a sharp braking corner at the end of the first fast run. The FIA's 2017 map shows the speed dropping dramatically before acceleration resumes.",
+            "uk": "Четвертий — різкий поворот після першого швидкого відрізка. На схемі FIA 2017 року видно суттєве зниження швидкості перед новим розгоном."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 begins the flowing left-right pair in the middle of the lap. Carrying momentum without sliding is crucial because the car changes direction immediately.",
+            "uk": "П'ятий відкриває плавну пару лівого й правого віражів у середині кола. Потрібно зберігати інерцію без ковзання, адже машина відразу змінює напрямок."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 completes that fast linked pair. The FIA listed additional tyre-barrier protection here for the final Malaysian Grand Prix in 2017.",
+            "uk": "Шостий завершує швидку пов'язану пару. Перед останнім Гран-прі Малайзії 2017 року FIA зазначила додатковий захист шинними бар'єрами саме тут."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 starts another quick sequence, with the car still carrying speed from the previous section. The exit sets up the following bend rather than a long straight.",
+            "uk": "Сьомий відкриває ще одну швидку зв'язку, коли болід зберігає швидкість попередньої секції. Вихід готує наступний віраж, а не довгу пряму."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 completes the second fast paired section. Drivers need a stable line as the track prepares to tighten considerably at the next corner.",
+            "uk": "Восьмий завершує другу швидку пару. Потрібно втримати стабільну траєкторію, адже наступний поворот буде значно повільнішим."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is a slow, tight hairpin interrupting the fast middle sector. Braking too late here can cost the entire acceleration phase toward Turn 10.",
+            "uk": "Дев'ятий — повільна тісна шпилька, яка перериває швидкий середній сектор. Надто пізнє гальмування може зіпсувати весь розгін до десятого."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 begins a flowing uphill sequence after the hairpin. Steering must be measured because the road keeps changing direction through the next two bends.",
+            "uk": "Десятий відкриває плавну зв'язку на підйомі після шпильки. Кермо потрібно повертати виважено, бо дорога ще кілька разів змінює напрямок."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is a slower bend within the late middle sector. Drivers must settle the car before accelerating into the faster Turn 12.",
+            "uk": "Одинадцятий — повільніший віраж наприкінці середнього сектору. Пілоту потрібно стабілізувати болід перед розгоном у швидший дванадцятий."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is a faster flowing bend that starts the approach to Sepang's final high-load sequence. Smooth tyre management matters in Malaysia's heat.",
+            "uk": "Дванадцятий — швидша плавна дуга перед фінальною секцією з великими навантаженнями. За малайзійської спеки плавна робота з шинами особливо важлива."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 carries substantial speed into the next long bend. The car remains under lateral load and the driver must prepare the line for Turn 14.",
+            "uk": "Тринадцятий проходять на значній швидкості перед наступною довгою дугою. Болід залишається під боковим навантаженням, а пілот готує траєкторію для чотирнадцятого."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 releases the car onto the long back straight. The first DRS activation in 2017 was 104 metres after this turn, rewarding a clean exit.",
+            "uk": "Чотирнадцятий виводить на довгу задню пряму. У 2017 році перша зона активації DRS починалася через 104 метри після нього, винагороджуючи чистий вихід."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sepang-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is the final heavy-braking hairpin between Sepang's two long straights. In 2017 the second DRS activation was 28 metres after its exit.",
+            "uk": "П'ятнадцятий — остання шпилька з сильним гальмуванням між двома довгими прямими Сепанга. У 2017 році друга активація DRS починалася через 28 метрів після виходу."
+          },
+          "sources": [
+            "sepang-map",
+            "sepang-names",
+            "sepang-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "sirius",
+      "layout_id": "sirius-1",
+      "numbering_year": 2021,
+      "names_as_of": 2021,
+      "numbered_turns": 18,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "sirius-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 is a fast kink on the approach to the first real braking zone. The 2021 FIA map places the first DRS activation before it.",
+            "uk": "Перший — швидкий перегин перед першою серйозною зоною гальмування. На схемі FIA 2021 року перша активація DRS розташована ще до нього."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is Sochi's main early overtaking point after the long straight. The official F1 guide highlights its grandstand and the view of cars braking here.",
+            "uk": "Другий — головне місце для ранніх обгонів у Сочі після довгої прямої. Офіційний путівник F1 радить трибуну звідси за краєвид на гальмування болідів."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is the extraordinary 750-metre constant-radius left-hander around the Olympic Park fountain. It sustains lateral load much longer than a conventional corner.",
+            "uk": "Третій — незвичайна ліва дуга сталого радіуса завдовжки приблизно 750 метрів навколо фонтана Олімпійського парку. Бокове навантаження тут триває значно довше, ніж у звичайному повороті."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 ends the long left-hand arc with a sharper change of direction. Drivers need to settle the car after the sustained load through Turn 3.",
+            "uk": "Четвертий завершує довгу ліву дугу різкішою зміною напрямку. Після тривалого навантаження в третьому повороті машину потрібно стабілізувати."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 starts the angular section of the Olympic Park route. The FIA's first sector boundary in 2021 sat 76 metres before this bend.",
+            "uk": "П'ятий відкриває ламану частину маршруту Олімпійського парку. У 2021 році межа першого сектору FIA була за 76 метрів до нього."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 redirects the car after the first of the park's tight changes of direction. A clean exit is necessary before the following faster bend.",
+            "uk": "Шостий змінює напрямок після першої тісної перекладки паркової частини. Чистий вихід потрібен перед наступним швидшим віражем."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is a sharp change at the far side of the upper loop. The driver must trade entry speed for a stable line toward Turn 8.",
+            "uk": "Сьомий — різкий поворот на дальньому боці верхньої петлі. Пілоту доводиться жертвувати швидкістю входу заради стабільної траєкторії до восьмого."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 begins the next fast section, where the road straightens only briefly. Positioning matters because Turn 9 follows almost immediately.",
+            "uk": "Восьмий відкриває наступну швидшу секцію, де дорога випрямляється лише ненадовго. Положення боліда важливе, бо дев'ятий настає майже відразу."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 links the approach to the following braking point. It is not a long rest: drivers must already prepare for Turn 10.",
+            "uk": "Дев'ятий пов'язує підхід до наступного гальмування. Це не довга пауза: пілот уже має готуватися до десятого."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 ends the short upper-sector straight. In 2021 the FIA placed the second DRS detection 72 metres before it and activation 70 metres after.",
+            "uk": "Десятий завершує коротку пряму верхнього сектору. У 2021 році друга точка вимірювання DRS була за 72 метри до нього, а активація — через 70 метрів після."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is a fast bend along the outer side of the circuit. Cars accelerate toward the next braking area while maintaining a gentle steering angle.",
+            "uk": "Одинадцятий — швидка дуга вздовж зовнішнього боку траси. Боліди розганяються до наступного гальмування, зберігаючи невеликий кут повороту керма."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is a gentle change before the tight late-sector corners. The 2021 FIA second sector boundary lay 224 metres before Turn 13.",
+            "uk": "Дванадцятий — плавний перегин перед тісними поворотами останнього сектору. У 2021 році межа другого сектору FIA містилася за 224 метри до тринадцятого."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is a sharper braking corner at the bottom of the long outer run. Drivers must rotate the car cleanly before the next tight direction change.",
+            "uk": "Тринадцятий — різкіший віраж із гальмуванням наприкінці довгого зовнішнього відрізка. Потрібно чисто розвернути машину перед наступною тісною перекладкою."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 immediately changes direction after Turn 13. The closely spaced pair rewards careful placement rather than chasing maximum speed at the first apex.",
+            "uk": "Чотирнадцятий майже відразу змінює напрямок після тринадцятого. Тісна пара винагороджує точне розташування боліда, а не максимальну швидкість на першому апексі."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 continues the narrow technical section near the start of the final loop. Drivers must keep the car under control before the faster exit bends.",
+            "uk": "П'ятнадцятий продовжує вузьку технічну секцію біля початку фінальної петлі. Потрібно втримати болід під контролем перед швидшими віражами на виході."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 redirects the car again as the last sector opens out. The driver must build speed while preserving the line for the following corner.",
+            "uk": "Шістнадцятий знову змінює напрямок, коли останній сектор починає розкриватися. Пілот нарощує швидкість і водночас готує траєкторію наступного повороту."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is the penultimate bend in the Olympic Park lap. A tidy exit sets the car up for the last right-angle corner and the pit straight.",
+            "uk": "Сімнадцятий — передостанній віраж кола Олімпійського парку. Чистий вихід готує болід до останнього прямокутного повороту й стартової прямої."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "sirius-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 completes the circuit with a tight final change of direction. The 2021 FIA first DRS detection point was 72 metres after it.",
+            "uk": "Вісімнадцятий завершує коло тісною останньою зміною напрямку. У 2021 році перша точка вимірювання DRS FIA розташовувалася через 72 метри після нього."
+          },
+          "sources": [
+            "sirius-map",
+            "sirius-names",
+            "sirius-race"
           ],
           "confirmation_status": "source_checked_ai"
         }
