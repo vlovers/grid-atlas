@@ -26,7 +26,9 @@
     "baku-map": "https://www.fia.com/system/files/decision-document/2025_baku_event_-_circuit_map_-_baku_2025.pdf",
     "baku-names": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-baku-city-circuit.320UGBNQu2ALdgAtax1gRn.320UGBNQu2ALdgAtax1gRn",
     "melbourne-map": "https://www.fia.com/system/files/decision-document/2025_melbourne_event_-_circuit_map_-_melbourne_2025_0.pdf",
-    "melbourne-names": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa.19zPlhKhMbTaVNFIPKAAMa"
+    "melbourne-names": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa.19zPlhKhMbTaVNFIPKAAMa",
+    "mexico-city-map": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone_area.pdf",
+    "mexico-city-names": "https://www.formula1.com/en/latest/article/the-risk-perspective-how-f1-drivers-engineers-and-strategists-tackle-the-mexico-city-grand-prix.B8P8xr5i1sPDgQOmL7hzs"
   },
   "guides": [
     {
@@ -2850,6 +2852,305 @@
           "sources": [
             "melbourne-map",
             "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "mexico-city",
+      "layout_id": "mexico-city-3",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 17,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "mexico-city-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The exceptionally long pit straight ends in heavy braking for the first corner. Mexico City's thin air reduces effective aerodynamic grip, so a late braking attempt must still leave room for the rapid second and third turns.",
+            "uk": "Надзвичайно довга стартова пряма закінчується сильним гальмуванням перед першим поворотом. Розріджене повітря Мехіко зменшує ефективне аеродинамічне зчеплення, тому пізня атака має залишити місце для швидких другого й третього віражів."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the middle change of direction in the opening combination. The driver cannot treat it as an isolated corner: the car must be placed to clear Turn 3 without jumping too aggressively over the kerbs.",
+            "uk": "Другий — середня зміна напрямку в початковій зв'язці. Його не можна проходити окремо від сусідніх: болід потрібно поставити так, щоб чисто подолати третій і не розбалансувати машину надто агресивним наїздом на поребрики."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The third turn completes the opening sequence and launches the car down another acceleration zone. Getting the rear tyres to grip is especially valuable because the next heavy braking point is some distance away.",
+            "uk": "Третій завершує початкову зв'язку й випускає болід на наступний розгін. Зчеплення задніх шин тут особливо важливе, адже до наступної серйозної зони гальмування ще потрібно подолати чималу відстань."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 interrupts the second straight with another major braking zone. The corner is part of a linked sequence, so chasing a spectacularly late apex can compromise the following change of direction.",
+            "uk": "Четвертий перериває другу пряму ще однією важливою зоною гальмування. Поворот входить до зв'язки, тому спроба пройти апекс надто пізно може зіпсувати наступну зміну напрямку."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fifth turn follows the previous braking point almost immediately. Smooth steering and a compact line are essential; any slide at this speed makes the approach to the slower sixth corner more awkward.",
+            "uk": "П'ятий іде майже одразу після попереднього гальмування. Потрібні плавне кермування й компактна траєкторія: будь-яке ковзання ускладнює підхід до повільнішого шостого повороту."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The sixth turn is the tightest part of the early technical sequence, requiring a clear rotation before acceleration. The next section becomes faster, so wheelspin here can leave the driver carrying a deficit into the Esses.",
+            "uk": "Шостий — найтісніша частина ранньої технічної секції, де потрібно добре розвернути машину перед розгоном. Далі починаються швидші віражі, тому пробуксовка тут створить втрату швидкості на підході до есків."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 begins Mexico City's flowing high-speed middle sector. With less downforce available in the thin air, drivers must build confidence gradually rather than assume the car will stick as it would at sea level.",
+            "uk": "Сьомий відкриває плавний швидкісний середній сектор Мехіко. Через меншу притискну силу в розрідженому повітрі пілотам потрібно обережно нарощувати темп, а не очікувати такого самого зчеплення, як на рівні моря."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 continues the rapid series of direction changes. The car is already loaded from the preceding bend, so an unnecessary steering correction can overheat the tyres before the next apex.",
+            "uk": "Восьмий продовжує швидку серію перекладок. Болід уже навантажений після попередньої дуги, тому зайве коригування керма може перегріти шини перед наступним апексом."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is another element of the high-speed Esses. The goal is not a perfect isolated apex but a line that carries the car cleanly into Turn 10 while preserving the limited grip available at altitude.",
+            "uk": "Дев'ятий — ще одна частина швидкісних есків. Мета не ідеальний окремий апекс, а траєкторія, яка чисто веде до десятого й зберігає обмежене зчеплення на великій висоті."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 keeps the steering rhythm moving through the fast middle section. Drivers avoid excessive kerb use because a bouncing car is difficult to place for the final change of direction in this sequence.",
+            "uk": "Десятий підтримує ритм кермування в швидкому середньому секторі. Пілоти уникають надмірного наїзду на поребрики: болід, який підстрибує, важко точно розмістити перед останньою перекладкою цієї зв'язки."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the last part of the fast sequence before the long run to the stadium sector. A stable exit lets the driver exploit the straight; a slide can ruin speed well beyond this single corner.",
+            "uk": "Одинадцятий завершує швидку зв'язку перед довгим розгоном до стадіонної секції. Стабільний вихід дозволяє використати пряму, тоді як ковзання забирає швидкість далеко за межами одного повороту."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 marks the entry into Foro Sol, the stadium section added to the modern Grand Prix layout. The cars slow sharply as spectators look down from the stands; this route replaces part of the old full Peraltada.",
+            "uk": "Дванадцятий відкриває Foro Sol — стадіонну секцію сучасної конфігурації Гран-прі. Боліди різко сповільнюються перед трибунами; цей маршрут замінив частину старої повної дуги Peraltada."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The thirteenth turn continues the tight stadium entry. The car has little aerodynamic assistance at this speed, so mechanical grip and patience matter more than the headline straight-line speed Mexico is known for.",
+            "uk": "Тринадцятий продовжує тісний вхід до стадіону. На такій швидкості аеродинаміка допомагає мало, тому механічне зчеплення й терпіння важливіші за рекордні швидкості, якими славиться Мехіко."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is part of the slow Foro Sol sequence, where tyres already heated by the middle-sector Esses can struggle for grip. The challenge is to rotate the car without sliding towards the close barriers.",
+            "uk": "Чотирнадцятий належить до повільної секції Foro Sol, де шини після швидкісних есків можуть втрачати зчеплення через перегрів. Потрібно розвернути болід без ковзання до близьких бар'єрів."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 follows within the stadium complex and demands another compact change of direction. There is little value in carrying extra entry speed if the car cannot be straightened for the remaining corners.",
+            "uk": "П'ятнадцятий іде всередині стадіонної зв'язки й вимагає ще однієї компактної перекладки. Зайва швидкість на вході не допоможе, якщо машину не вдасться вчасно випрямити перед останніми поворотами."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate Turn 16 is deceptively difficult, with limited grip and a nearby wall. Drivers must resist opening the throttle too early, because a poor exit makes the final sweep and the long main straight slower.",
+            "uk": "Передостанній шістнадцятий підступний через невисоке зчеплення й близьку стіну. Не можна надто рано відкривати газ: невдалий вихід уповільнить фінальну дугу й довгу стартову пряму."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mexico-city-t17",
+          "numbers": [
+            17
+          ],
+          "name": "Curva Peraltada / Mansell",
+          "aliases": [],
+          "explanation": {
+            "en": "The final Turn 17 uses only the surviving part of the historic Peraltada, now also associated with Nigel Mansell. The full banked curve of earlier eras no longer forms the modern F1 lap; a clean exit determines speed down the pit straight.",
+            "uk": "Останній сімнадцятий використовує лише збережену частину історичної Peraltada, яку також пов'язують з ім'ям Найджела Менселла. Повна профільована дуга минулих епох більше не входить до сучасного кола Ф1; чистий вихід визначає швидкість на стартовій прямій."
+          },
+          "sources": [
+            "mexico-city-map",
+            "mexico-city-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
