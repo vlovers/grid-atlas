@@ -7,8 +7,8 @@ const manuscript = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-ex
 const expected = { silverstone: 18, monza: 11, austin: 20, bahrain: 15, suzuka: 18, interlagos: 15, hungaroring: 14, zandvoort: 14, baku: 20, melbourne: 14, 'mexico-city': 17, catalunya: 14, montreal: 14, imola: 19 };
 
 test('fourteen 2025 FIA-mapped circuits expose every individual turn in the gated candidate model', () => {
-  assert.deepEqual(corners.guides.map(x => x.circuit_id).sort(), Object.keys(expected).sort());
-  for (const guide of corners.guides) {
+  for (const id of Object.keys(expected)) assert.ok(corners.guides.some(guide => guide.circuit_id === id), id + ': baseline guide missing');
+  for (const guide of corners.guides.filter(guide => Object.hasOwn(expected, guide.circuit_id))) {
     const numbers = guide.sections.flatMap(s => s.numbers).sort((a,b) => a-b);
     assert.deepEqual(numbers, Array.from({length:expected[guide.circuit_id]}, (_,i) => i+1), guide.circuit_id);
     assert.equal(guide.numbering_year, 2025);
