@@ -2091,6 +2091,57 @@
           "source_check": "AI research 2026-11-02; human review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "phoenix",
+      "biography": {
+        "title": {
+          "en": "The Grand Prix drawn onto a city grid",
+          "uk": "Гран-прі на сітці міських вулиць"
+        },
+        "text": {
+          "en": "Formula 1 raced through downtown Phoenix from 1989 to 1991. Jefferson and Washington Streets supplied long straights, while ordinary intersections and temporary concrete walls defined the corners. Construction of a basketball arena forced a major eastern-route redesign for 1991: the shorter phoenix-2 layout must not inherit the 1989–90 turn order. The fifteen-turn figure comes from the pinned F1DB record; no authenticated numbered FIA apex chart has yet been located.",
+          "uk": "Формула-1 змагалася в центрі Фінікса з 1989 до 1991 року. Jefferson і Washington Street утворювали довгі прямі, а звичайні перехрестя та тимчасові бетонні бар’єри — повороти. Будівництво баскетбольної арени змусило суттєво змінити східну частину маршруту 1991 року: коротша конфігурація phoenix-2 не може успадковувати порядок поворотів 1989–1990 років. Число 15 походить із зафіксованих даних F1DB; автентичної пронумерованої карти FIA поки не знайдено."
+        },
+        "source": "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
+        "locator": "Historical layout and 1991 redesign; independent fact and map review pending"
+      },
+      "moments": [
+        {
+          "id": "phoenix-1990-alesi-senna",
+          "year": 1990,
+          "title": {
+            "en": "Alesi challenges Senna on the old route",
+            "uk": "Алезі кидає виклик Сенні на старій конфігурації"
+          },
+          "text": {
+            "en": "Jean Alesi led the early laps in his Tyrrell and fought Ayrton Senna before Senna won the 1990 United States Grand Prix. That duel belongs to the original phoenix-1 street layout, not the shortened course introduced the following year.",
+            "uk": "Жан Алезі лідирував на початку гонки на Tyrrell і боровся з Айртоном Сенною, який зрештою виграв Гран-прі США 1990 року. Ця дуель відбулася на початковій вуличній конфігурації phoenix-1, а не на скороченій трасі наступного сезону."
+          },
+          "criterion": "historic_race_battle",
+          "source": "https://www.formula1.com/en/results/1990/races/64/united-states/race-result",
+          "locator": "1990 classification and period-race narrative; lap-by-lap sequence requires independent review",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source cross-check 2026-11-02; no human approval"
+        },
+        {
+          "id": "phoenix-1991-last-us-gp",
+          "year": 1991,
+          "title": {
+            "en": "Senna wins on the redesigned final layout",
+            "uk": "Сенна перемагає на останній оновленій конфігурації"
+          },
+          "text": {
+            "en": "Ayrton Senna won the 10 March 1991 race on the revised Phoenix circuit, ahead of Alain Prost and Nelson Piquet. The 81-lap event was the city's last Formula 1 Grand Prix; its result should be tied to phoenix-2, not the two earlier races on phoenix-1.",
+            "uk": "Айртон Сенна виграв гонку 10 березня 1991 року на перебудованій трасі Фінікса, випередивши Алена Проста й Нельсона Піке. Перегони на 81 коло стали останнім Гран-прі Формули-1 у місті; їхній результат належить конфігурації phoenix-2, а не попереднім двом гонкам на phoenix-1."
+          },
+          "criterion": "historical_venue_or_race_milestone",
+          "source": "https://www.formula1.com/en/results/1991/races/559/united-states/race-result",
+          "locator": "Official F1 1991 classification; circuit redesign from RacingCircuits",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source cross-check 2026-11-02; no human approval"
+        }
+      ]
     }
   ]
 }
