@@ -281,9 +281,10 @@ test('private historical review serves real EN and UK pages only behind the gene
   const { once } = await import('node:events');
   const child = fork(new URL('../scripts/preview-circuit-v3.mjs', import.meta.url), ['--acknowledge-unreviewed-draft', '--port', '0'], { stdio: ['ignore', 'ignore', 'pipe', 'ipc'] });
   try {
+    const startup = AbortSignal.timeout(10_000);
     const [message] = await Promise.race([
-      once(child, 'message'),
-      once(child, 'exit').then(([code]) => { throw new Error('Review server exited before startup: ' + code); })
+      once(child, 'message', { signal: startup }),
+      once(child, 'exit', { signal: startup }).then(([code]) => { throw new Error('Review server exited before startup: ' + code); })
     ]);
     const enUrl = new URL(message.url);
     assert.equal(enUrl.hostname, '127.0.0.1');
@@ -300,7 +301,10 @@ test('private historical review serves real EN and UK pages only behind the gene
     const badToken = new URL('/review/invalid/en', enUrl);
     assert.equal((await fetch(badToken)).status, 404);
   } finally {
-    child.kill('SIGTERM');
-    if (child.exitCode === null && child.signalCode === null) await once(child, 'exit');
+    if (child.exitCode === null && child.signalCode === null) {
+      const exited = once(child, 'exit', { signal: AbortSignal.timeout(5_000) });
+      child.kill('SIGTERM');
+      try { await exited; } catch { child.kill('SIGKILL'); }
+    }
   }
 });
