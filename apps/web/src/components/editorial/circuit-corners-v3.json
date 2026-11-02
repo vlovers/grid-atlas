@@ -206,7 +206,10 @@
     "monsanto-1959-report": "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
     "monsanto-1959-layout": "https://www.motorsportmagazine.com/database/circuits/monsanto/",
     "pedralbes-f1-history": "https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF",
-    "pedralbes-period-layout": "https://www.motorsportmagazine.com/database/circuits/pedralbes/"
+    "pedralbes-period-layout": "https://www.motorsportmagazine.com/database/circuits/pedralbes/",
+    "caesars-1981-82-layout": "https://www.racingcircuits.info/north-america/usa/caesars-palace.html",
+    "caesars-period-circuit-history": "https://www.motorsportmagazine.com/database/circuits/caesars-palace/",
+    "caesars-secondary-turn-sequence": "https://f1.fandom.com/wiki/Caesars_Palace_Circuit"
   },
   "guides": [
     {
@@ -18419,6 +18422,297 @@
           "sources": [
             "pedralbes-f1-history",
             "pedralbes-period-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "layout_id": "caesars-palace-1",
+      "numbering_year": 1982,
+      "names_as_of": 1982,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB 14-turn 1981–82 GP layout; the turn-by-turn sequence derives from a SECONDARY fan-authored description, cross-checked for layout and period against RacingCircuits.info and Motor Sport. No authenticated period FIA numbered map; each 1–14 apex position remains unverified. All labels are editorial descriptions, NOT historic named corners.",
+      "sections": [
+        {
+          "id": "caesars-palace-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Opening left turnaround"
+          ],
+          "explanation": {
+            "en": "The pit straight ended in a broad left hairpin that turned almost back on itself. Its radius opened as cars travelled around it, encouraging an early commitment but punishing a driver who reached for the throttle before the car was facing down the next short straight.",
+            "uk": "Пряма боксів закінчувалася широкою лівою шпилькою, яка майже розвертала трасу назад. Радіус поступово збільшувався, тож можна було раніше починати розгін, але передчасний газ до завершення розвороту псував вихід на коротку пряму."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "First shallow left kink"
+          ],
+          "explanation": {
+            "en": "The second numbered bend was a relatively small leftward kink between two short straights. On a level circuit without hills or useful distant landmarks, drivers had to judge its position from barriers and road markings rather than a distinctive natural feature.",
+            "uk": "Другий віраж був невеликим лівим перегином між двома короткими прямими. На рівній трасі без пагорбів і помітних природних орієнтирів пілоти визначали точку входу за бар'єрами та розміткою, а не за виразними деталями ландшафту."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "First large right hairpin"
+          ],
+          "explanation": {
+            "en": "A broad right-hand turnaround followed the second kink. It forced the car into a much larger steering arc than the preceding bend, but the layout offered little visual variety. Getting the car rotated without sliding mattered more than simply attacking the first apex.",
+            "uk": "Після другого перегину починався широкий правий розворот. Він вимагав значно більшої зміни напрямку, ніж попередній віраж, хоча візуально секції були дуже схожими. Важливіше було розвернути болід без ковзання, ніж агресивно атакувати перший апекс."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Right-hand kink to the inner loop"
+          ],
+          "explanation": {
+            "en": "The fourth bend was a moderate rightward change after another short straight. It linked the first right hairpin with the left-hand double-apex complex ahead. A driver who drifted out too far here would be badly positioned for the next long rotation.",
+            "uk": "Четвертий поворот був помірним правим перегином після ще однієї короткої прямої. Він поєднував першу праву шпильку з наступною довгою подвійною лівою дугою. Занадто широкий вихід залишав болід у невдалому положенні для наступного розвороту."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Double-apex left: entry"
+          ],
+          "explanation": {
+            "en": "The fifth numbered portion began the large left-hand double-apex complex in the heart of the temporary circuit. It was tempting to treat the first apex as the end of the job, but the road still had more than another ninety degrees to turn.",
+            "uk": "П'ята частина починала велику ліву дугу з двома апексами в середині тимчасової траси. Перший апекс міг створювати ілюзію завершеного маневру, але попереду залишалася ще значна частина довгого повороту."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Double-apex left: exit"
+          ],
+          "explanation": {
+            "en": "The sixth numbered portion completed that long left-hand loop. A patient second apex kept the car from sliding across the track and helped build speed towards the following shallow kink. The paired bends belonged to one continuous complex rather than two unrelated braking zones.",
+            "uk": "Шоста частина завершувала довгу ліву зв'язку. Терпляче проходження другого апекса допомагало не зісковзнути на зовнішній край і краще розігнатися до наступного плавного перегину. Обидва номери були частинами однієї дуги, а не незалежними зонами гальмування."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Left kink between turnarounds"
+          ],
+          "explanation": {
+            "en": "Turn 7 was another small leftward kink after the double-apex complex. This is one of several places where the layout looked deceptively repetitive. Its purpose in a lap description is to prepare the car for the next large right turn, not to invent a famous name for an ordinary bend.",
+            "uk": "Сьомий поворот був ще одним невеликим лівим перегином після подвійної дуги. Це одна з ділянок, де конфігурація здавалася майже однаковою. Її роль у колі — підготувати машину до наступного великого правого розвороту, а не вигадувати особливу назву."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Second right turnaround"
+          ],
+          "explanation": {
+            "en": "Turn 8 was another major right-hand hairpin-like sweep, turning the car approximately half a circle. Its similarity to the earlier right turnaround helps explain why drivers complained that there were few visual reference points across the flat casino-ground course.",
+            "uk": "Восьмий поворот був ще одним великим правим розворотом приблизно на пів кола. Схожість із попередньою правою шпилькою пояснює скарги пілотів на брак орієнтирів на рівній трасі біля казино."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Last right into the infield exit"
+          ],
+          "explanation": {
+            "en": "The ninth bend continued right but tightened the angle substantially less than the preceding hairpin. It was the last right-hand change in the inner part of the Grand Prix layout before the sharp left exit. A smooth transition was worth more than extra entry speed.",
+            "uk": "Дев'ятий віраж також повертав праворуч, але значно менше, ніж попередня шпилька. Це була остання права зміна напрямку у внутрішній частині траси перед різким лівим виходом. Плавний перехід давав більше користі, ніж надлишкова швидкість на вході."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Tight left out of the inner complex"
+          ],
+          "explanation": {
+            "en": "A tight left turn, considerably more than a square corner, ended the infield's long series of switchbacks. Once the car was rotated, the route began a sequence of easier left kinks that led towards the back straight. This distinction separates the complicated interior from the faster outer return.",
+            "uk": "Тісний лівий розворот, більший за звичайні дев'яносто градусів, завершував довгу серію внутрішніх перекладок. Після нього маршрут переходив до плавніших лівих перегинів у напрямку задньої прямої. Так відділялася технічна середина від швидшого повернення."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "First outward left kink"
+          ],
+          "explanation": {
+            "en": "Turn 11 was the first shallow left on the way out of the inner loop. Drivers could begin to recover speed, but the course still followed barriers across a featureless plot rather than a recognisable city boulevard.",
+            "uk": "Одинадцятий поворот був першим плавним лівим на виході з внутрішньої петлі. Пілоти починали відновлювати швидкість, але траса й далі проходила між бар'єрами на майже порожній ділянці, а не впізнаваним міським проспектом."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Middle outward left kink"
+          ],
+          "explanation": {
+            "en": "The twelfth turn added another modest left change between short acceleration sections. Together with Turns 11 and 13 it formed a sweeping outward route. A small steering mistake could carry downstream, although none of these kinks was a stand-alone hairpin.",
+            "uk": "Дванадцятий віраж додавав ще одну помірну ліву зміну напрямку між короткими розгонами. Разом з одинадцятим і тринадцятим він утворював плавне повернення назовні. Навіть невелика помилка могла вплинути на наступні дуги, хоча жодна не була окремою шпилькою."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Final outward kink and pit entry"
+          ],
+          "explanation": {
+            "en": "The thirteenth left kink preceded the back straight. The pit entrance diverged near this point, while the pit lane continued around the outside of the last corner. That routing was separate from the racing line and needs to be shown accurately on any historical diagram.",
+            "uk": "Тринадцятий лівий перегин передував задній прямій. Поблизу відгалужувався в'їзд у бокси, а сам піт-лейн огинав зовні останній поворот. Це окремий маршрут від гоночної траєкторії, який важливо точно показувати на історичній схемі."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "caesars-palace-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Last left onto the pit straight"
+          ],
+          "explanation": {
+            "en": "The fourteenth turn was a substantial left-hander bringing the cars back onto the main straight. It completed the 1981–82 anticlockwise Grand Prix layout. The later Champ Car oval omitted the interior loops, so a picture of that oval cannot serve as a guide to this final corner.",
+            "uk": "Чотирнадцятий поворот був значним лівим віражем, що повертав боліди на головну пряму. Він завершував конфігурацію Гран-прі 1981–1982 років проти годинникової стрілки. Пізніший овал Champ Car не мав внутрішніх петель, тому його схема не підходить для пояснення цього повороту."
+          },
+          "sources": [
+            "caesars-1981-82-layout",
+            "caesars-period-circuit-history",
+            "caesars-secondary-turn-sequence"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
