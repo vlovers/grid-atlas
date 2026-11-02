@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "Seven historical route candidate gaps remain unpublished. Ain-Diab and Charade count discrepancies and Charade photo-numbering confusion documented; no historical apex mapping certified.",
+  "coverage_note": "Research-only records for seven missing historical corner guides: 68 sections carry source-role annotations. Classification and race-result sources support event details, not historical geometric apex locations. Independent mapping remains incomplete.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -26,7 +26,17 @@
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "label": {
@@ -42,7 +52,17 @@
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -59,7 +79,21 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -76,7 +110,21 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -93,7 +141,21 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -110,7 +172,21 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -127,7 +203,21 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 8,
@@ -145,7 +235,25 @@
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.grandprix.com/races/morocco-gp-1958.html",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 9,
@@ -163,7 +271,25 @@
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.grandprix.com/races/morocco-gp-1958.html",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 10,
@@ -182,7 +308,25 @@
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/"
           ],
           "review_status": "pending",
-          "claim_review_note": "F1 official classification: 29 completed laps. Motor Sport retrospective: blow-up on lap 31. Contemporary period report narrates failure but does not resolve turn location. Verify lap-count convention before publishing a precise retirement lap."
+          "claim_review_note": "F1 official classification: 29 completed laps. Motor Sport retrospective: blow-up on lap 31. Contemporary period report narrates failure but does not resolve turn location. Verify lap-count convention before publishing a precise retirement lap.",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/84-1958-moroccan-gp/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 11,
@@ -200,7 +344,25 @@
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.grandprix.com/races/morocco-gp-1958.html",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 12,
@@ -218,7 +380,25 @@
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.grandprix.com/races/morocco-gp-1958.html",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 13,
@@ -236,7 +416,25 @@
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://www.grandprix.com/races/morocco-gp-1958.html",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "evidence_scope": "1958 race-order scenes from contemporary Motor Sport, official F1 race classification and independent Grandprix retrospective. None is proof of a numbered apex or image rights.",
@@ -421,7 +619,17 @@
           "source_urls": [
             "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "label": {
@@ -437,7 +645,17 @@
           "source_urls": [
             "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -454,7 +672,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -471,7 +703,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -488,7 +734,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -505,7 +765,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -522,7 +796,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 8,
@@ -539,7 +827,21 @@
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
             "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+                "role": "period_report_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "evidence_scope": "The venue history explicitly names historical road landmarks, but 48-vs-51 turn count remains unresolved; race incidents have no certified numbered apex. Review pending.",
@@ -600,7 +902,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 2,
@@ -618,7 +938,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -636,7 +974,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -654,7 +1010,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -672,7 +1046,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -690,7 +1082,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -708,7 +1118,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 8,
@@ -726,7 +1154,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 9,
@@ -744,7 +1190,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 10,
@@ -762,7 +1226,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 11,
@@ -780,7 +1262,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 12,
@@ -798,7 +1298,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 13,
@@ -816,7 +1334,25 @@
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
             "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+                "role": "community_secondary_unverified"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+                "role": "race_context_not_apex_mapping"
+              },
+              {
+                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
@@ -868,7 +1404,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 2,
@@ -885,7 +1435,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -902,7 +1466,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -919,7 +1497,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -936,7 +1528,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -953,7 +1559,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -970,7 +1590,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 8,
@@ -987,7 +1621,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 9,
@@ -1004,7 +1652,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 10,
@@ -1021,7 +1683,21 @@
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
@@ -1286,7 +1962,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 2,
@@ -1303,7 +1993,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -1320,7 +2024,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -1337,7 +2055,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -1354,7 +2086,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -1371,7 +2117,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -1388,7 +2148,21 @@
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
             "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+                "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
@@ -1487,7 +2261,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 2,
@@ -1504,7 +2292,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -1521,7 +2323,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -1538,7 +2354,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -1555,7 +2385,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -1572,7 +2416,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -1589,7 +2447,21 @@
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
@@ -1697,7 +2569,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 2,
@@ -1715,7 +2605,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 3,
@@ -1733,7 +2641,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 4,
@@ -1751,7 +2677,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 5,
@@ -1769,7 +2713,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 6,
@@ -1787,7 +2749,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 7,
@@ -1805,7 +2785,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 8,
@@ -1823,7 +2821,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 9,
@@ -1841,7 +2857,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         },
         {
           "reading_order": 10,
@@ -1859,7 +2893,25 @@
             "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
             "https://lapledger.org/races/1959/9"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "provenance_scope": {
+            "source_roles": [
+              {
+                "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+                "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+                "role": "race_classification_only"
+              },
+              {
+                "url": "https://lapledger.org/races/1959/9",
+                "role": "historical_context_unverified_apex_mapping"
+              }
+            ],
+            "geometric_anchor_verified": false,
+            "numbered_apex_verified": false
+          }
         }
       ],
       "original_research_document": "SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json",
