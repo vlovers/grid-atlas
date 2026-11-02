@@ -76,6 +76,15 @@ test('seven unapproved historic route studies remain research-only and unpublish
   const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
   assert.doesNotMatch(component, /historicRoutes/);
   assert.doesNotMatch(component, /const historicRoute = historicRoutes\.circuits\.find/);
+  const morocco = research.circuits.find(c => c.circuit_id === 'ain-diab');
+  const brooks = morocco.sections.find(section => section.label.en === "When Brooks's Vanwall failed");
+  assert.ok(brooks?.description.en.includes('29 completed laps'));
+  assert.ok(brooks?.description.en.includes('lap 31'));
+  assert.ok(brooks?.description.uk.includes('29 завершених кіл'));
+  assert.ok(brooks?.claim_review_note.includes('Verify lap-count convention'));
+  assert.equal(brooks.turn_numbers, null);
+  assert.ok(brooks.source_urls.some(url => url.includes('formula1.com/en/results/1958')));
+  assert.ok(brooks.source_urls.some(url => url.includes('motorsportmagazine.com/articles')));
   const historicEnriched = { 'ain-diab': 13, 'clermont-ferrand': 8 };
   for (const [id, count] of Object.entries(historicEnriched)) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
