@@ -4,6 +4,7 @@ import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { startReview } from './preview-story-review.mjs';
 import { candidateCircuitNarratives, candidateCornerGuides, candidateCornerSources } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import historicRoutes from '../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json' with { type: 'json' };
 
 const root = new URL('../', import.meta.url);
 const corners = { guides: candidateCornerGuides, sources: candidateCornerSources };
@@ -33,7 +34,10 @@ export function renderCircuitReview(locale, base) {
     return `<section id="${entry.circuit_id}"><h2>${escape(entry.biography.title[locale])}</h2><p>${escape(entry.biography.text[locale])}</p><a href="${escape(entry.biography.source)}">${uk ? 'Джерело' : 'Source'} ↗</a>
       ${guide ? `<h3>${uk ? 'Дослідіть повороти' : 'Explore the corners'} · ${guide.numbered_turns}</h3><p>${escape(guide.layout_id)} · FIA ${guide.numbering_year} / F1.com ${guide.names_as_of}</p>${diagram}<nav aria-label="${uk ? 'Повороти за порядком' : 'Corners in lap order'}">${guide.sections.flatMap(section => section.numbers.map(number => `<a href="#${section.id}">T${number}</a>`)).join('')}</nav><div class="grid">${guide.sections.map(section => `<article id="${section.id}" tabindex="-1"><small>T${section.numbers.join(' / ')}</small><h3>${escape(section.name ?? (uk ? 'Без окремої назви' : 'No individual name'))}</h3>${section.explanation ? `<p>${escape(section.explanation[locale])}</p>` : ''}<p>${section.aliases.map(escape).join(' · ')}</p>${section.sources.map(id => `<a href="${escape(corners.sources[id])}">${escape(id)} ↗</a>`).join(' · ')}</article>`).join('')}</div>` : ''}
       <h3>${uk ? 'Легендарні моменти — кандидати' : 'Memorable moments — candidates'}</h3><div class="grid">${entry.moments.map(moment => `<article><small>${moment.year} · ${escape(moment.criterion)}</small><h3>${escape(moment.title[locale])}</h3><p>${escape(moment.text[locale])}</p><a href="${escape(moment.source)}">Formula 1 · ${escape(moment.locator)} ↗</a></article>`).join('')}</div></section>`;
-  }).join('')}</body></html>`;
+  }).join('')}
+  <section id="historic-route-review"><h2>${uk ? 'Історичні маршрути — на перевірці' : 'Historical routes — awaiting review'}</h2><p>${uk ? 'Це дослідницькі ділянки, НЕ офіційно пронумеровані повороти. Матеріал не схвалено до публікації.' : 'These are research route sections, NOT officially numbered turns. No publication approval has been granted.'}</p>
+  ${historicRoutes.circuits.filter(circuit => ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'].includes(circuit.circuit_id)).map(circuit => `<section id="study-${escape(circuit.circuit_id)}"><h3>${escape(circuit.circuit_id)} · ${escape(circuit.period)} · ${escape(circuit.layout_id)}</h3><p>${uk ? 'Нумерацію апексів не підтверджено' : 'Apex numbering has not been verified'} · ${circuit.sections.length} ${uk ? 'дослідницьких ділянок' : 'research sections'}</p><div class="grid">${circuit.sections.map(section => `<article><small>${uk ? 'Ділянка' : 'Section'} ${section.reading_order}</small><h3>${escape(section.label[locale])}</h3><p>${escape(section.description[locale])}</p>${section.source_urls.filter(url => /^https:\/\//.test(url)).map(url => `<a target="_blank" rel="noopener noreferrer" href="${escape(url)}">${uk ? 'Історичне джерело (не доказ номера)' : 'Historical source (not turn-number evidence)'} ↗</a>`).join(' · ')}</article>`).join('')}</div></section>`).join('')}
+  </section></body></html>`;
 }
 
 export const startCircuitReview = options => startReview({ ...options, render: renderCircuitReview });
