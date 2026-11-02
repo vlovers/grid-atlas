@@ -48,7 +48,10 @@
     "shanghai-map": "https://www.fia.com/system/files/decision-document/2025_chinese_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
     "shanghai-names": "https://www.formula1.com/en/racing/2025/china",
     "marina-bay-map": "https://www.fia.com/system/files/decision-document/2025_singapore_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_and_quarantine_zone.pdf",
-    "marina-bay-names": "https://www.formula1.com/en/latest/article/singapore-grand-prix-set-to-feature-revised-track-layout-in-2023.6KsrU6hQw3hxrVJ6zKeJ74"
+    "marina-bay-names": "https://www.formula1.com/en/latest/article/singapore-grand-prix-set-to-feature-revised-track-layout-in-2023.6KsrU6hQw3hxrVJ6zKeJ74",
+    "jeddah-2025-race": "https://www.formula1.com/en/latest/article/piastri-clinches-victory-in-saudi-arabia-from-verstappen-and-leclerc-as.1XBezBwUfLfjOayPSKNs41",
+    "miami-2025-race": "https://api.fia.com/news/f1-piastri-wins-miami-grand-prix-ahead-norris-and-russell",
+    "marina-bay-2023-race": "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX"
   },
   "guides": [
     {
@@ -4026,7 +4029,8 @@
           },
           "sources": [
             "jeddah-map",
-            "jeddah-names"
+            "jeddah-names",
+            "jeddah-2025-race"
           ],
           "confirmation_status": "source_checked_ai"
         },
@@ -5059,7 +5063,8 @@
           },
           "sources": [
             "miami-map",
-            "miami-names"
+            "miami-names",
+            "miami-2025-race"
           ],
           "confirmation_status": "source_checked_ai"
         },
@@ -6007,7 +6012,8 @@
           },
           "sources": [
             "marina-bay-map",
-            "marina-bay-names"
+            "marina-bay-names",
+            "marina-bay-2023-race"
           ],
           "confirmation_status": "source_checked_ai"
         },
