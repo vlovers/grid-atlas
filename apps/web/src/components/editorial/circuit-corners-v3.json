@@ -88,7 +88,10 @@
     "madring-map": "https://www.fia.com/documents/circuit-maps",
     "madring-names": "https://www.formula1.com/en/latest/article/why-madrids-la-monumental-corner-lives-up-to-its-name.2tbqkIagDDXxFRR48YH4Ih",
     "madring-layout": "https://www.formula1.com/en/racing/2027/spain",
-    "madring-turn-details": "https://es.motorsport.com/f1/news/nombre-curvas-vueltas-longitud-dise%C3%B1o-definitivo-madring-circuito-madrid-2026/10716759/"
+    "madring-turn-details": "https://es.motorsport.com/f1/news/nombre-curvas-vueltas-longitud-dise%C3%B1o-definitivo-madring-circuito-madrid-2026/10716759/",
+    "valencia-2012-fia": "https://www.fia.com/event-2012-european-grand-prix",
+    "valencia-lap": "https://en.wikipedia.org/wiki/Valencia_Street_Circuit",
+    "valencia-layout": "https://lapledger.org/circuits/valencia"
   },
   "guides": [
     {
@@ -9892,6 +9895,466 @@
             "madring-names",
             "madring-layout",
             "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "valencia",
+      "layout_id": "valencia-1",
+      "numbering_year": 2012,
+      "names_as_of": 2012,
+      "numbered_turns": 25,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "valencia-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first bend is a fast kink immediately after the short pit straight, not the first serious braking point. The opening rhythm matters before Turn 2.",
+            "uk": "Перший віраж — швидкий перегин одразу після короткої стартової прямої, а не головна зона гальмування. Він задає ритм перед другим поворотом."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Heavy braking begins for the slow right-hand Turn 2 near Grau Metro station. A driver who runs wide will struggle with the left that follows.",
+            "uk": "Перед повільним правим другим поворотом біля станції метро Grau потрібно сильно гальмувати. Широкий вихід ускладнює наступний лівий віраж."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 reverses direction left at the end of the opening right-left combination. Clean traction matters as the car accelerates along the curved next stretch.",
+            "uk": "Третій змінює напрямок ліворуч після початкової правої-лівої зв'язки. Чисте зчеплення потрібне для розгону на наступному вигнутому відрізку."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand entry to the Neptune Hotel chicane is Turn 4. Precision matters because there is almost no time to settle the car before Turn 5.",
+            "uk": "Четвертий відкриває лівою дугою шикану біля Neptune Hotel. Точність вирішальна, адже перед п'ятим майже немає часу стабілізувати болід."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The right-hand second half of the Neptune Hotel chicane runs close to the wall. A small steering error can erase the speed gained on entry.",
+            "uk": "П'ятий — права частина шикани біля Neptune Hotel, де траєкторія проходить близько до стіни. Невелика помилка перекреслює виграш на вході."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is the first of two quick kinks after the hotel chicane. Drivers begin accelerating but must already think about the bridge braking zone.",
+            "uk": "Шостий — перший із двох швидких перегинів після шикани біля готелю. Боліди розганяються, але попереду вже гальмування перед мостом."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 continues the kinked approach to Valencia's signature swing bridge. The driver must place the car accurately before the much slower Turn 8.",
+            "uk": "Сьомий продовжує вигнутий підхід до знаменитого розвідного мосту Валенсії. Потрібно точно розмістити машину перед значно повільнішим восьмим."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is among the slowest bends of the lap and feeds onto the swing-bridge section. A cautious, clean exit is safer than attacking the walls.",
+            "uk": "Восьмий — один із найповільніших віражів кола, який веде на розвідний міст. Обережний чистий вихід тут кращий за ризиковану атаку біля стін."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The bridge section includes Turn 9 as the cars cross the harbour connection. Unlike a conventional permanent circuit, the roadway itself was part of the spectacle.",
+            "uk": "Дев'ятий належить до проходження мостової ділянки через гавань. На відміну від звичайного автодрому, сама міська дорога тут була частиною видовища."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 slows the car again immediately after the swing bridge. The exit is vital because a long acceleration and DRS stretch follows.",
+            "uk": "Десятий знову різко сповільнює болід одразу після мосту. Вихід надзвичайно важливий, адже далі починається довгий розгін із зоною DRS."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The eleventh bend is part of the kinked high-speed run away from the bridge. Drivers need stability while building speed towards the next chicane.",
+            "uk": "Одинадцятий — частина швидкого вигнутого відрізка після мосту. Пілотам потрібна стабільність під час розгону до наступної шикани."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 starts a second-gear right-left chicane after a fast straight. The heavy braking is an opportunity to attack, but Turn 13 follows immediately.",
+            "uk": "Дванадцятий відкриває повільну праву-ліву шикану після швидкої прямої. На сильному гальмуванні можна атакувати, але тринадцятий іде майже відразу."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 completes the chicane to the left. Drivers need a tidy exit to avoid losing momentum before the medium-speed Turn 14.",
+            "uk": "Тринадцятий завершує шикану ліворуч. Чистий вихід потрібен, щоб не втратити темп перед середньошвидкісним чотирнадцятим."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The medium-speed right at Turn 14 separates the chicane from another short DRS run. It rewards carrying speed without running onto the dusty outer line.",
+            "uk": "Середньошвидкісний правий чотирнадцятий відділяє шикану від коротшого відрізка з DRS. Важливо зберегти швидкість і не виїхати на запилену зовнішню лінію."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is the first of two left-hand kinks in the next acceleration zone. Its main challenge is keeping the car stable for the second change.",
+            "uk": "П'ятнадцятий — перший із двох лівих перегинів у зоні розгону. Головне втримати машину стабільною перед наступною зміною траєкторії."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second left-hand kink, Turn 16, sets up the approach to the slow museum hairpin. Drivers prepare to trade straight-line speed for braking grip.",
+            "uk": "Шістнадцятий — другий лівий перегин перед повільною шпилькою біля музею. Пілоти готуються змінити швидкість на прямій на ефективне гальмування."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The tight right-hand Turn 17 sits by the Museu de les Ciències Príncipe Felipe. It was a notable overtaking point on an otherwise difficult-to-pass circuit.",
+            "uk": "Тісний правий сімнадцятий проходив біля Museu de les Ciències Príncipe Felipe. На трасі, де було важко обганяти, він залишався важливою можливістю для атаки."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 starts the faster sweeping sequence after the museum hairpin. Its exit determines how comfortably the car can attack the linked bends ahead.",
+            "uk": "Вісімнадцятий відкриває швидшу плавну секцію після шпильки біля музею. Вихід визначає, наскільки впевнено можна пройти наступні пов'язані віражі."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 is one of the demanding right-hand sweeps in the fast final sequence. Drivers aim for a stable line rather than abrupt corrections near the barriers.",
+            "uk": "Дев'ятнадцятий — одна зі складних правих дуг швидкої завершальної секції. Біля бар'єрів потрібна стабільна траєкторія без різких корекцій."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t20",
+          "numbers": [
+            20
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The following right-hander at Turn 20 continues the high-speed test. A poor entry can make the next part of the winding harbour route more difficult.",
+            "uk": "Наступний правий двадцятий продовжує швидкісне випробування. Невдалий вхід ускладнює подальшу звивисту частину маршруту вздовж гавані."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t21",
+          "numbers": [
+            21
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 21 continues the late-lap succession of bends rather than a long uninterrupted straight. The driver must preserve tyre grip for the final hairpin.",
+            "uk": "Двадцять перший продовжує серію віражів наприкінці кола замість довгої рівної прямої. Потрібно зберегти зчеплення до фінальної шпильки."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t22",
+          "numbers": [
+            22
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 22 sits in the winding approach to the last braking zone. Keeping the car accurately positioned is more useful than chasing a single isolated apex.",
+            "uk": "Двадцять другий належить до звивистого підходу до останнього гальмування. Точне положення боліда важливіше за спробу виграти один окремий апекс."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t23",
+          "numbers": [
+            23
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The next bend keeps the car moving through the harbour-side final sector. Drivers must leave themselves space to adjust the line for the last two turns.",
+            "uk": "Наступний віраж продовжує завершальний сектор уздовж гавані. Пілотам потрібно залишити простір для корекції траєкторії перед останніми двома поворотами."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t24",
+          "numbers": [
+            24
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 24 prepares the final slow corner. An aggressive line here can force a compromised entry into Turn 25 and cost speed onto the pit straight.",
+            "uk": "Двадцять четвертий готує останній повільний поворот. Надто агресивна траєкторія може зіпсувати вхід у двадцять п'ятий і розгін на стартову пряму."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "valencia-t25",
+          "numbers": [
+            25
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last left-hand hairpin is slow and traction-sensitive. The following run to the finish is short, so wheelspin on exit is especially costly.",
+            "uk": "Остання ліва шпилька повільна й дуже залежить від зчеплення. До фінішу залишається короткий відрізок, тому пробуксовка на виході особливо болюча."
+          },
+          "sources": [
+            "valencia-2012-fia",
+            "valencia-lap",
+            "valencia-layout"
           ],
           "confirmation_status": "source_checked_ai"
         }
