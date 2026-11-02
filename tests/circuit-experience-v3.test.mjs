@@ -124,6 +124,12 @@ test('seven unapproved historic route studies remain research-only and unpublish
   assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\\.590 mi/);
   assert.match(research.circuits.find(c => c.circuit_id === 'pescara').layout_evidence_review.layout_version_caveat, /1957/);
   assert.match(research.circuits.find(c => c.circuit_id === 'sebring').layout_evidence_review.layout_version_caveat, /1959/);
+  assert.ok(ainDiab.layout_evidence_review.evidence.some(item => item.type === 'independent_historical_corner_count' && item.claim.includes('18 corners') && item.supports_apex_numbering === false));
+  assert.match(ainDiab.layout_evidence_review.count_reconciliation, /15/);
+  const portoRoute = research.circuits.find(c => c.circuit_id === 'porto').layout_evidence_review;
+  assert.equal(portoRoute.route_order_confirmed.length, 6);
+  assert.match(portoRoute.route_order_scope, /not FIA corners/);
+  assert.ok(portoRoute.evidence.some(item => item.type === 'contemporary_route_order' && item.supports_apex_numbering === false));
   const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('51')));
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.type === 'venue_history' && item.claim.includes('51 bends')));
