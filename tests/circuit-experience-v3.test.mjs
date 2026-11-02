@@ -242,3 +242,36 @@ test('private preview never represents unverified historical study positions as 
   assert.match(uk, /Попередні дослідницькі позиції \(не схема FIA\)/);
   assert.match(en, /Historical routes — awaiting review/);
 });
+
+test('private historical review HTTP transport stays localhost-only, tokenized and noindex', async () => {
+  const { once } = await import('node:events');
+  const { request } = await import('node:http');
+  const server = startCircuitReview({ acknowledged: true, port: 0 });
+  try {
+    if (!server.listening) await once(server, 'listening');
+    const port = server.address().port;
+    const fetchLocal = (pathname, host = `127.0.0.1:${port}`) => new Promise((resolve, reject) => {
+      const req = request({ hostname: '127.0.0.1', port, method: 'GET', path: pathname, headers: { Host: host } }, res => {
+        let body = '';
+        res.setEncoding('utf8');
+        res.on('data', chunk => { body += chunk; });
+        res.on('end', () => resolve({ status: res.statusCode, headers: res.headers, body }));
+      });
+      req.on('error', reject);
+      req.end();
+    });
+    const rejected = await fetchLocal('/review/not-a-token/en');
+    assert.equal(rejected.status, 404);
+    const wrongHost = await fetchLocal('/review/not-a-token/en', 'evil.example');
+    assert.equal(wrongHost.status, 404);
+    assert.equal(rejected.headers['cache-control'], 'no-store');
+    assert.match(rejected.headers['x-robots-tag'], /noindex/);
+    assert.match(rejected.headers['content-security-policy'], /default-src 'none'/);
+    const html = renderCircuitReview('en', '/review/test');
+    assert.match(html, /id="study-sebring-section-10"/);
+    assert.match(html, /id="study-dallas-section-13"/);
+    assert.match(html, /id="study-ain-diab-section-13"/);
+  } finally {
+    await new Promise((resolve, reject) => server.close(error => error ? reject(error) : resolve()));
+  }
+});
