@@ -14,8 +14,8 @@ const expected = new Map([
 ]);
 
 test('five new guides contribute 79 unique, bilingual, numbered corners mapped to F1DB layouts', () => {
-  assert.equal(data.guides.length, 11);
-  assert.equal(data.guides.reduce((n, guide) => n + guide.numbered_turns, 0), 176);
+  assert.equal(data.guides.length, 14);
+  assert.equal(data.guides.reduce((n, guide) => n + guide.numbered_turns, 0), 223);
   const allIds = data.guides.map(guide => guide.circuit_id);
   assert.equal(new Set(allIds).size, allIds.length);
   for (const [id, [layout, count]] of expected) {
