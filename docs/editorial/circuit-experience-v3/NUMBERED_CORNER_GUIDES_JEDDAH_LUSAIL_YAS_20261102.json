@@ -1,0 +1,1054 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "review_status": "independent_review_pending",
+  "publication_authorized": false,
+  "media_policy": "FIA maps cited as links only, no image republication; F1DB layout SVG under CC-BY-4.0 with author credit",
+  "guides": [
+    {
+      "circuit_id": "jeddah",
+      "layout_id": "jeddah-1",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 27,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_saudi_arabian_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
+        "names": "https://www.formula1.com/en/latest/article/when-is-the-2025-saudi-arabian-grand-prix-and-how-can-i-watch-it.4jqmkwtlYXQgpgp2Pf4VK9"
+      },
+      "sections": [
+        {
+          "id": "jeddah-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first braking point comes quickly after the short run from the start. In 2025 Verstappen cut this apex while battling Piastri; the ensuing five-second penalty became central to the race result.",
+            "uk": "Перша зона гальмування настає швидко після старту. У 2025 році Ферстаппен зрізав апекс у боротьбі з Піастрі; п'ятисекундний штраф згодом вплинув на підсумок гонки."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second corner completes the opening direction change. A driver who attacks Turn 1 too deeply risks a poor line here, losing momentum before the circuit's faster waterfront sequence.",
+            "uk": "Другий поворот завершує стартову перекладку. Надто глибока атака першого залишає невдалу траєкторію тут і забирає швидкість перед швидшою прибережною секцією."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 marks the shift away from the slow opening combination. The driver begins building speed between the walls, so a clean steering input matters more than dramatic kerb use.",
+            "uk": "Третій поворот переводить коло від повільної стартової зв'язки до швидкого ритму. Між бар'єрами пілот набирає темп, тому плавний рух кермом важливіший за агресивний наїзд на поребрик."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is part of the early rapid sequence, with little time to settle the chassis between bends. The next apex must be considered before choosing how much road to use at the exit.",
+            "uk": "Четвертий входить до ранньої швидкої серії, де болід майже не встигає стабілізуватися. Перед вибором ширини виходу потрібно врахувати розташування наступного апексу."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 5 the barriers make precise positioning essential. Rather than treating the corner alone, the driver tries to preserve the flow of the next linked change of direction.",
+            "uk": "У п'ятому бар'єри змушують особливо точно розташовувати машину. Замість окремої атаки на віраж пілот зберігає ритм для наступної пов'язаної зміни напрямку."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The sixth numbered bend continues Jeddah's sinuous first sector. A small slide here has a larger cost because there is no long recovery straight before the next steering input.",
+            "uk": "Шостий продовжує звивистий перший сектор Джидди. Навіть невелике ковзання дорого коштує, адже перед наступним поворотом немає довгої прямої, щоб повернути втрачений темп."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 rewards trust in the car's high-speed balance. The driver commits between concrete walls while keeping enough room to adjust for the next bend rather than chasing a single isolated apex.",
+            "uk": "Сьомий винагороджує впевненість у балансі боліда на високій швидкості. Між бетонними стінами потрібно залишити запас для наступної дуги, а не шукати один ідеальний апекс."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The eighth bend arrives before the car has fully relaxed from Turn 7. Smooth load transfer helps prevent a steering correction from becoming a slide along this narrow coastal circuit.",
+            "uk": "Восьмий починається ще до повної стабілізації машини після сьомого. Плавне перенесення навантаження допомагає уникнути ковзання на вузькій прибережній трасі."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 extends the first-sector chain of fast direction changes. The driver's sightline and placement matter as much as outright speed, since the next corner appears almost immediately.",
+            "uk": "Дев'ятий продовжує швидку послідовність першого сектору. Видимість і положення боліда тут не менш важливі за швидкість: наступний поворот виникає майже відразу."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 10, keeping the tyres from scrubbing across the surface is part of maintaining lap speed. The driver aims for a calm transition into the next rapid bend, not a sharp correction.",
+            "uk": "У десятому важливо не змушувати шини зайве ковзати по асфальту. Пілот прагне спокійної перекладки до наступного швидкого віражу, а не різкого виправлення траєкторії."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 continues the narrow fast sequence with little margin at the edge of the racing line. An overambitious entry can make the following corner harder even without touching a wall.",
+            "uk": "Одинадцятий продовжує тісну швидку зв'язку з мінімальним запасом на краю траєкторії. Надто сміливий вхід ускладнює наступний поворот, навіть якщо бар'єр не зачеплено."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The twelfth bend completes the approach towards Jeddah's distinctive banked Turn 13. The driver must place the car for the longer loaded arc ahead instead of optimising this apex in isolation.",
+            "uk": "Дванадцятий готує вхід до знаменитого профільованого тринадцятого. Пілоту потрібно правильно розмістити болід перед довгою навантаженою дугою, а не оптимізувати цей апекс окремо."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the banked corner that gives this section its character. The banking supports a fast line, but sustained lateral load and the wall outside demand precision; it is not an officially established personal-name corner.",
+            "uk": "Тринадцятий — профільована дуга, що визначає характер секції. Банкінг дозволяє швидку траєкторію, але тривале бокове навантаження й зовнішня стіна вимагають точності; підтвердженої іменної назви тут немає."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The exit from the banked arc carries the car into Turn 14. The key is not to unwind the steering too suddenly, because the circuit continues to ask for fast changes of direction.",
+            "uk": "Вихід із профільованої дуги веде до чотирнадцятого. Кермо не варто випрямляти надто різко: траса й далі вимагає швидких змін напрямку."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is another rapid bend in the coastal middle sector. Drivers try to preserve a settled platform so that the next change of direction does not begin with the tyres already sliding.",
+            "uk": "П'ятнадцятий — ще один швидкий віраж середнього прибережного сектору. Пілоти утримують стабільний баланс, щоб наступна перекладка не починалася з ковзання шин."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The sixteenth corner links directly into the following high-speed sequence. A tidy line is worth more than taking excessive kerb: the walls make recovery from a destabilised car especially difficult.",
+            "uk": "Шістнадцятий безпосередньо переходить у наступну швидкісну секцію. Чиста траєкторія важливіша за агресивний поребрик: між стінами важко врятувати розбалансований болід."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is important in the official 2025 map because the first DRS detection point sits at its exit. That operational marker is not a corner name, but it helps locate this part of the lap.",
+            "uk": "Сімнадцятий важливий на схемі FIA 2025 року: на його виході розташована перша точка вимірювання DRS. Це службовий орієнтир, а не назва повороту, проте він допомагає знайти ділянку кола."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 keeps the car under load as the fast middle sector continues. The driver aims to leave the tyres and steering settled for Turn 19, after which the first DRS activation zone begins.",
+            "uk": "У вісімнадцятому болід залишається під навантаженням у швидкому середньому секторі. Потрібно підготувати стабільний вихід до дев'ятнадцятого, після якого починається перша зона активації DRS."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The exit of Turn 19 marks the start of the first DRS activation zone on the 2025 FIA diagram. A clean exit therefore matters beyond the corner itself, carrying speed into the next acceleration section.",
+            "uk": "На схемі FIA 2025 року після дев'ятнадцятого починається перша зона активації DRS. Тому чистий вихід важливий не лише для самого віражу: він визначає швидкість на наступному розгоні."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t20",
+          "numbers": [
+            20
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 20 belongs to the long, fast stretch after the first DRS activation point. The corner is best understood as part of a sequence: any unnecessary steering correction consumes speed before the next bend.",
+            "uk": "Двадцятий лежить на довгій швидкій ділянці після першої точки активації DRS. Це частина зв'язки: кожне зайве коригування керма забирає швидкість перед наступним віражем."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t21",
+          "numbers": [
+            21
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 21 the driver continues carrying high speed along the barriers. The following Turn 22 is also a DRS detection landmark, so positioning and traffic through this section influence the run towards the finish.",
+            "uk": "У двадцять першому пілот зберігає високу швидкість між бар'єрами. Наступний двадцять другий також є орієнтиром вимірювання DRS, тому положення машин впливає на подальший розгін до фінішу."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t22",
+          "numbers": [
+            22
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The official 2025 map places the second DRS detection point on the entry to Turn 22. That makes this bend a useful reference when explaining how a pursuing car prepares its attack later on the lap.",
+            "uk": "На офіційній схемі 2025 року друга точка вимірювання DRS розташована перед двадцять другим поворотом. Це зручний орієнтир для пояснення того, як переслідувач готує атаку наприкінці кола."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t23",
+          "numbers": [
+            23
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 23 begins the closing fast section. With little space between walls, a driver who runs wide risks spoiling the next apex and the acceleration that leads towards the final braking zone.",
+            "uk": "Двадцять третій відкриває завершальну швидку секцію. Між стінами широкий вихід загрожує наступному апексу й розгону до останньої серйозної зони гальмування."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t24",
+          "numbers": [
+            24
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 24 is another quick change of direction before the final approach. Drivers preserve momentum here because the second DRS activation begins at the entry to Turn 25 on the FIA map.",
+            "uk": "Двадцять четвертий — швидка перекладка перед фінальною частиною. Пілоти бережуть темп, адже за схемою FIA друга зона активації DRS починається перед двадцять п'ятим."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t25",
+          "numbers": [
+            25
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The 2025 FIA map places DRS activation two at the entry to Turn 25. This fast numbered bend is therefore part of the overtaking preparation, not an isolated slow corner.",
+            "uk": "На схемі FIA 2025 року друга зона активації DRS починається перед двадцять п'ятим. Цей швидкий віраж належить до підготовки обгону, а не є окремою повільною шпилькою."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t26",
+          "numbers": [
+            26
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 26 carries the cars towards the final hairpin. After so many high-speed bends, the driver must prepare for a sharp change in braking demand and choose a line that preserves stability.",
+            "uk": "Двадцять шостий веде до фінальної шпильки. Після численних швидких дуг потрібно підготуватися до значно сильнішого гальмування й обрати траєкторію, що збереже стабільність."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jeddah-t27",
+          "numbers": [
+            27
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 27 is the decisive final hairpin before the main straight. Braking and traction both matter: the third DRS detection is at its exit, while activation begins 240 metres farther along the straight.",
+            "uk": "Двадцять сьомий — вирішальна остання шпилька перед стартовою прямою. Важливі і гальмування, і розгін: третя точка вимірювання DRS стоїть на виході, а активація починається за 240 метрів."
+          },
+          "sources": [
+            "jeddah-map",
+            "jeddah-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "lusail",
+      "layout_id": "lusail-1",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
+        "names": "https://www.formula1.com/en/racing/2025/qatar"
+      },
+      "sections": [
+        {
+          "id": "lusail-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The main straight, more than a kilometre long, ends at Turn 1. This is the clearest heavy-braking overtaking chance on a lap otherwise dominated by fast flowing corners.",
+            "uk": "Понад кілометрова стартова пряма закінчується першим поворотом. Це найочевидніша зона гальмування для обгону на колі, де переважають плавні швидкі дуги."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 follows the opening braking zone and starts to rebuild the lap's rhythm. A driver who overshoots the first corner arrives here with less road available for acceleration.",
+            "uk": "Другий поворот відновлює ритм після стартового гальмування. Той, хто занадто широко пройшов перший, отримує тут менше простору для правильного розгону."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The third numbered bend is part of Lusail's opening flowing complex. Rather than braking heavily at every apex, drivers carry speed through linked steering inputs and manage the tyres' lateral load.",
+            "uk": "Третій входить до початкової плавної зв'язки Лусаїла. Замість сильного гальмування перед кожним апексом пілоти зберігають швидкість у послідовних перекладках і контролюють бокове навантаження шин."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 continues the fast opening sequence. Its exit has to prepare the car for Turn 5; an aggressive correction here can spoil the approach to the next sector boundary.",
+            "uk": "Четвертий продовжує швидку стартову серію. На виході потрібно підготувати болід до п'ятого: різке коригування траєкторії ускладнить підхід до межі наступного сектору."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is the last numbered bend before the first sector split on the 2025 FIA map. The timing line lies 80 metres before Turn 6, so this exit shapes the start of the next sector.",
+            "uk": "П'ятий — останній поворот перед першою секторною відміткою на схемі FIA 2025 року. Лінія стоїть за 80 метрів до шостого, тому вихід із п'ятого визначає початок наступного сектору."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 starts a fresh group of linked bends after the first sector split. The driver has to balance corner speed against the need to place the car cleanly for the following direction changes.",
+            "uk": "Шостий відкриває нову групу пов'язаних віражів після межі першого сектору. Потрібно поєднати швидкість у дузі з точним положенням боліда перед наступними змінами напрямку."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 follows closely enough that the previous exit still matters. Lusail was originally built for motorcycle racing, and this flowing sequence rewards a continuous line rather than repeated stop-start acceleration.",
+            "uk": "Сьомий розташований настільки близько, що вихід із попереднього визначає траєкторію. Лусаїл спершу будували для мотоперегонів, тому плавна зв'язка винагороджує безперервну лінію, а не часті розгони й гальмування."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 carries the driver further through the fast middle sector. The challenge is keeping a settled platform while changing direction, since even a small slide can affect the next numbered bend.",
+            "uk": "Восьмий веде далі швидким середнім сектором. Завдання — зберегти баланс під час зміни напрямку, адже навіть невелике ковзання вплине на наступний віраж."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 continues the long rhythm of medium- and high-speed corners. Tyre temperature matters here: repeated lateral loading can make the car less willing to hold the intended line.",
+            "uk": "Дев'ятий продовжує тривалу серію середньо- й швидкісних дуг. Тут важлива температура шин: повторне бокове навантаження може погіршити здатність боліда тримати потрібну траєкторію."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is another fast link in the middle sector, not a conventional street-circuit hairpin. Drivers aim for minimum scrub and a clean exit into Turn 11 rather than one late braking manoeuvre.",
+            "uk": "Десятий — ще одна швидка ланка середнього сектору, а не типова міська шпилька. Пілоти мінімізують ковзання й готують чистий вхід в одинадцятий замість одного пізнього гальмування."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 completes the approach towards the second sector boundary. On the 2025 FIA plan the split is 75 metres before Turn 12, making this exit important for the timing transition.",
+            "uk": "Одинадцятий завершує підхід до межі другого сектору. На схемі FIA 2025 року лінія стоїть за 75 метрів до дванадцятого, тому вихід впливає на перехід між секторами."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 opens the long closing sequence of Lusail's flowing corners. The driver needs stable aerodynamic grip and a consistent line, because several more bends follow without a full straight-line reset.",
+            "uk": "Дванадцятий відкриває довгу фінальну зв'язку плавних поворотів Лусаїла. Потрібні стабільне аеродинамічне зчеплення й послідовна траєкторія: попереду ще кілька дуг без довгої прямої."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is part of the demanding final run, where the car remains loaded from one bend to the next. The quickest lap is built by avoiding a slide that would compromise Turn 14.",
+            "uk": "Тринадцятий входить до складної завершальної серії, де навантаження переходить з одного віражу на інший. Найкращий час дає відсутність ковзання, яке зіпсувало б чотирнадцятий."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 14, drivers continue the fast final-sector rhythm rather than slowing for a separate hairpin. The following Turn 15 also determines how the car approaches the last corner.",
+            "uk": "У чотирнадцятому пілоти зберігають швидкий ритм фінального сектору, а не гальмують перед окремою шпилькою. Наступний п'ятнадцятий визначає підхід до останнього віражу."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 prepares the entry to the last corner. The FIA's 2025 DRS detection marker sits 40 metres after this turn, but that marker is an operational point, not a corner name.",
+            "uk": "П'ятнадцятий готує вхід до останнього повороту. На схемі FIA 2025 року точка вимірювання DRS стоїть за 40 метрів після нього, проте це службова позначка, а не назва віражу."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "lusail-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final Turn 16 determines the launch onto Lusail's kilometre-long main straight. A tidy exit matters greatly: the 2025 FIA map places DRS activation 305 metres after the corner.",
+            "uk": "Останній шістнадцятий визначає розгін на кілометрову стартову пряму. Чистий вихід особливо важливий: схема FIA 2025 року розташовує активацію DRS за 305 метрів після повороту."
+          },
+          "sources": [
+            "lusail-map",
+            "lusail-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "yas-marina",
+      "layout_id": "yas-marina-2",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_abu_dhabi_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
+        "names": "https://www.formula1.com/en/racing/2025/abu-dhabi"
+      },
+      "sections": [
+        {
+          "id": "yas-marina-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 begins the modern Yas Marina lap with a fast direction change after the pit straight. Drivers need confidence in the front end before the sweeping sequence that follows.",
+            "uk": "Перший відкриває сучасне коло Яс-Марини швидкою зміною напрямку після стартової прямої. Пілоту потрібна впевненість у передній осі перед наступною плавною зв'язкою."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 forms part of the quick opening sweep. A settled car and small steering corrections preserve speed through the sequence; treating this as a separate heavy-braking corner would misrepresent the layout.",
+            "uk": "Другий входить до швидкої початкової дуги. Стабільний болід і невеликі рухи кермом зберігають темп; описувати його як окрему сильну зону гальмування було б неправильно."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 completes the opening high-speed changes before the more measured approach to the next braking zone. The line here should position the car for Turn 4 without a sudden correction.",
+            "uk": "Третій завершує початкові швидкі перекладки перед повільнішою частиною. Траєкторія має підготувати четвертий поворот без різкого виправлення положення машини."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is the transition towards the tight Turn 5 hairpin. Rather than chasing maximum speed through this bend, drivers prepare the braking line and the car's balance for the slow corner ahead.",
+            "uk": "Четвертий — перехід до тісної шпильки п'ятого. Замість максимальної швидкості в цій дузі пілоти готують траєкторію гальмування й баланс для повільного повороту попереду."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is the hairpin created in the 2021 Yas Marina redesign, replacing the older chicane-and-hairpin combination. A clean exit starts the first long straight, with DRS activation 260 metres beyond the corner on the 2025 map.",
+            "uk": "П'ятий — шпилька після перебудови Яс-Марини 2021 року, яка замінила стару комбінацію шикани й шпильки. Чистий вихід відкриває першу довгу пряму; за схемою 2025 року DRS активується через 260 метрів."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first long straight ends in Turn 6, a heavy-braking opportunity. Overtaking is possible here, but a car that arrives too deep risks a compromised line through the immediately following Turn 7.",
+            "uk": "Перша довга пряма завершується шостим — сильною зоною гальмування. Тут можна обганяти, але надто глибокий вхід зіпсує траєкторію через наступний сьомий поворот."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 completes the slower change of direction after the straight. The exit is crucial because the second DRS detection is 50 metres later and the next acceleration zone begins soon afterward.",
+            "uk": "Сьомий завершує повільнішу перекладку після прямої. Вихід особливо важливий: друга точка вимірювання DRS розташована за 50 метрів, а незабаром починається новий розгін."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is the transition after the second long straight towards the reworked hotel and marina sector. Drivers must reset their braking and steering rhythm after sustained acceleration.",
+            "uk": "Восьмий переводить коло після другої довгої прямої до перебудованої секції біля готелю й марини. Після тривалого розгону пілоти змінюють ритм гальмування та кермування."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is the sweeping, banked corner introduced in the 2021 redesign in place of the old sequence of right-angle turns. It allows a more continuous line and changes how drivers approach the final sector.",
+            "uk": "Дев'ятий — довга профільована дуга, створена під час перебудови 2021 року замість старої серії прямокутних віражів. Вона дозволяє плавнішу траєкторію й змінює підхід до останнього сектору."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 begins the tighter final-sector section around Yas Marina's hotel complex. The driver leaves the sweeping part of the lap and must keep the car accurately positioned between the barriers.",
+            "uk": "Десятий відкриває тіснішу фінальну секцію біля готельного комплексу Яс-Марини. Після плавної швидкої частини пілот має точно розташовувати болід між бар'єрами."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 follows in the hotel-side sequence, where one poor exit can disrupt the next bend. A smooth steering transition is more useful than attacking a single kerb and losing balance.",
+            "uk": "Одинадцятий іде в готельній зв'язці, де невдалий вихід псує наступну дугу. Плавна перекладка корисніша за агресивний наїзд на один поребрик із втратою балансу."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is another linked bend in the final complex. Drivers need to manage front grip and keep the car on line because the circuit continues to turn rather than offering a long straight to recover.",
+            "uk": "Дванадцятий — ще один пов'язаний віраж останньої секції. Потрібно берегти зчеплення передніх шин і тримати траєкторію: довгої прямої для відновлення темпу тут немає."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 carries the car through the hotel-side rhythm. The key is placing the car for the next numbered bend, not trying to gain all the time at one apex and running out of room.",
+            "uk": "Тринадцятий продовжує ритм біля готелю. Головне — підготувати наступний віраж, а не намагатися відіграти весь час на одному апексі й залишитися без простору."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is part of the final series where repeated steering inputs can overheat the tyres. A driver who keeps the car composed here has a better chance of a clean exit through Turn 15.",
+            "uk": "Чотирнадцятий входить до завершальної серії, де постійні рухи кермом можуть перегрівати шини. Спокійний болід тут дає більше шансів чисто пройти п'ятнадцятий."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 leads into the last part of the hotel complex. The driver should avoid unnecessary sliding because the final corner and the run to the start-finish line are approaching.",
+            "uk": "П'ятнадцятий веде до останньої частини готельної секції. Важливо уникнути зайвого ковзання: попереду останній поворот і розгін до лінії старту-фінішу."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "yas-marina-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 finishes the 2025 Yas Marina lap. Clean traction on exit determines the speed onto the pit straight; older onboard footage may show a different final-sector approach from before the 2021 redesign.",
+            "uk": "Шістнадцятий завершує коло Яс-Марини 2025 року. Чисте зчеплення на виході визначає швидкість на стартовій прямій; старі онборди до перебудови 2021 року показують інший підхід."
+          },
+          "sources": [
+            "yas-marina-map",
+            "yas-marina-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    }
+  ]
+}
