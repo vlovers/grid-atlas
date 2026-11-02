@@ -4,9 +4,9 @@ import test from 'node:test';
 
 const corners = JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-corners-v3.json', import.meta.url), 'utf8'));
 const manuscript = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/NUMBERED_CORNER_GUIDES_AUSTIN_BAHRAIN_20261102.json', import.meta.url), 'utf8'));
-const expected = { silverstone: 18, monza: 11, austin: 20, bahrain: 15, suzuka: 18, interlagos: 15 };
+const expected = { silverstone: 18, monza: 11, austin: 20, bahrain: 15, suzuka: 18, interlagos: 15, hungaroring: 14, zandvoort: 14, baku: 20, melbourne: 14, 'mexico-city': 17 };
 
-test('six 2025 FIA-mapped circuits expose every individual turn in the gated candidate model', () => {
+test('eleven 2025 FIA-mapped circuits expose every individual turn in the gated candidate model', () => {
   assert.deepEqual(corners.guides.map(x => x.circuit_id).sort(), Object.keys(expected).sort());
   for (const guide of corners.guides) {
     const numbers = guide.sections.flatMap(s => s.numbers).sort((a,b) => a-b);
