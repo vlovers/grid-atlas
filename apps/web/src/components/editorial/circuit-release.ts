@@ -29,7 +29,7 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
     new Set(section.sources).size < 2 || section.sources.some(key =>
       !Object.hasOwn(candidateCornerSources, key) ||
-      !/^https:\\/\\//.test(candidateCornerSources[key])
+      !candidateCornerSources[key]?.startsWith('https://')
     )
   )) return false;
   return true;
