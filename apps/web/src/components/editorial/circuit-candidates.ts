@@ -13,15 +13,15 @@ const inherited = [monaco, spa] as RawCircuit[];
 export const candidateCornerSources = corners.sources;
 export const candidateCornerGuides = [...inherited.map(raw => {
   const binding = corners.bindings.find(item => item.circuit_id === raw.circuit_id)!;
-  const groups = new Map<string, typeof raw.turns>();
-  for (const turn of raw.turns) {
-    const key = turn.shared_segment ?? `t${turn.number}`;
-    groups.set(key, [...(groups.get(key) ?? []), turn]);
-  }
-  return { ...binding, review_status: 'independent_review_pending', sections: [...groups.values()].map(turns => ({
-    id: `${raw.circuit_id}-t${turns[0].number}`, numbers: turns.map(turn => turn.number),
-    name: turns[0].name?.split(' — ')[0] ?? null, aliases: ('aliases_by_number' in binding ? (binding.aliases_by_number as Record<string, string[]>)[String(turns[0].number)] : undefined) ?? [], explanation: turns[0].story,
-    sources: [`${raw.circuit_id}-map`, `${raw.circuit_id}-names`], confirmation_status: 'source_checked_ai',
+  // Keep a separate section and focus target for every numbered bend.
+  // Shared names are repeated deliberately; prose and anchors are not.
+  return { ...binding, review_status: 'independent_review_pending', sections: raw.turns.map(turn => ({
+    id: `${raw.circuit_id}-t${turn.number}`, numbers: [turn.number],
+    name: turn.name?.split(' — ')[0] ?? null,
+    aliases: ('aliases_by_number' in binding ? (binding.aliases_by_number as Record<string, string[]>)[String(turn.number)] : undefined) ?? [],
+    explanation: turn.story,
+    sources: [`${raw.circuit_id}-map`, `${raw.circuit_id}-names`],
+    confirmation_status: 'source_checked_ai',
   })) };
 }), ...corners.guides];
 
