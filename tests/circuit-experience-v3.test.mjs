@@ -355,7 +355,7 @@ test('all 68 historical route sections separate race classifications from geogra
     assert.equal(section.provenance_scope.numbered_apex_verified, false);
     assert.deepEqual(section.provenance_scope.source_roles.map(role => role.url), section.source_urls);
     for (const source of section.provenance_scope.source_roles) {
-      if (/formula1\\.com\\/en\\/results\\//.test(source.url)) {
+      if (source.url.includes('formula1.com/en/results/')) {
         assert.equal(source.role, 'race_classification_only');
       }
     }
