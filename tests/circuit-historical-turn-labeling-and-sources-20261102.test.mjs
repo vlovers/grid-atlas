@@ -27,6 +27,8 @@ test('historical candidate numbering stays explicitly provisional, including AI-
   assert.match(component, /!\['source_checked_ai', 'independently_verified'\]\.includes\(section\.confirmation_status\)/);
   assert.match(component, /provisional study positions — not verified turn numbers/);
   assert.match(component, /Comparative landmarks, not verified corner names/);
+  assert.match(component, /Historical study positions in route order/);
+  assert.match(component, /mapping unverified/);
   assert.match(component, /not authenticated historical apex numbers or locations/i);
 });
 
