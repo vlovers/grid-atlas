@@ -104,7 +104,11 @@
     "magny-cours-map": "https://www.trophee-endurance.fr/wp-content/uploads/2021/10/Circuit_PlanCircuit.pdf",
     "magny-cours-names": "https://www.circuitmagnycours.com/en/guide-decouvrez-le-circuit-de-nevers-magny-cours/",
     "magny-cours-history": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
-    "magny-cours-race": "https://www.formula1.com/en/latest/article/france-2004-how-ferrari-stole-victory-from-renault-with-a-secret-4-stop-plan.7yXeHIzXx8e8JEyBC401ET.7yXeHIzXx8e8JEyBC401ET"
+    "magny-cours-race": "https://www.formula1.com/en/latest/article/france-2004-how-ferrari-stole-victory-from-renault-with-a-secret-4-stop-plan.7yXeHIzXx8e8JEyBC401ET.7yXeHIzXx8e8JEyBC401ET",
+    "jerez-1997-layout": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/jerez-2.svg",
+    "jerez-venue-history": "https://circuitodejerez.com/en/circuito/",
+    "jerez-1997-result": "https://www.formula1.com/en/results/1997/races/670/europe/race-result",
+    "jerez-historic-map": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_1994-2003.png"
   },
   "guides": [
     {
@@ -11277,6 +11281,286 @@
             "magny-cours-map",
             "magny-cours-names",
             "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "jerez",
+      "layout_id": "jerez-2",
+      "numbering_year": 1997,
+      "names_as_of": 1997,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "jerez-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Expo 92",
+          "aliases": [],
+          "explanation": {
+            "en": "The opening bend begins the clockwise lap after the pit straight. The name Expo 92 recalls the 1992 world exposition in Seville. Braking and a tidy exit matter because the next right-hand section arrives before the car has much time to settle.",
+            "uk": "Перший віраж відкриває коло за годинниковою стрілкою після стартової прямої. Назва Expo 92 нагадує про всесвітню виставку 1992 року в Севільї. Важливо точно загальмувати й вийти з повороту, адже наступна права секція починається дуже швидко."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Michelin",
+          "aliases": [],
+          "explanation": {
+            "en": "Michelin follows the opening corner and is another established landmark in the circuit's early sector. The tyre-maker's name is used on later venue guides, but a 1997-era nameplate has not been independently authenticated. The driver must preserve enough balance for the linked bends ahead.",
+            "uk": "Michelin іде після першого повороту й залишається відомим орієнтиром початкового сектору. Назва шинного виробника є в пізніших путівниках, але табличку саме 1997 року ще не підтверджено незалежно. Пілот має зберегти баланс для наступних пов'язаних віражів."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 continues the opening run without a separately established proper name in the reviewed period sources. The line is influenced by the previous bend, so this should not be described as a stand-alone braking hairpin. Exact historic apex placement awaits a period-numbered FIA map.",
+            "uk": "Третій поворот продовжує початкову секцію; в перевірених матеріалах епохи для нього немає окремої підтвердженої назви. Траєкторія залежить від попереднього віражу, тому називати його самостійною шпилькою некоректно. Точне розташування апекса потребує пронумерованої карти того часу."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fourth numbered bend connects the early flowing part of the lap to the approach towards Sito Pons. Rather than claiming an unverified direction or unique name, the guide records its role in setting up the next section. A period onboard would be needed for precise braking references.",
+            "uk": "Четвертий пронумерований віраж поєднує плавну початкову частину кола з підходом до Sito Pons. Замість неперевіреної заяви про напрямок чи назву тут зафіксовано його роль у підготовці наступної секції. Для точних орієнтирів гальмування потрібен історичний онборд."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Sito Pons",
+          "aliases": [],
+          "explanation": {
+            "en": "Sito Pons is a long, flowing section named for the Spanish motorcycle champion. The circuit's 1992 redesign replaced a more complicated earlier sequence here, so the 1986–1990 F1 lap is not interchangeable with the 1997 layout. Carrying speed matters, but the following Dry Sack braking point dominates the approach.",
+            "uk": "Sito Pons — довга плавна секція, названа на честь іспанського мотогонщика-чемпіона. Перебудова 1992 року замінила тут складнішу стару зв'язку, тому коло Формули-1 1986–1990 років не можна плутати з маршрутом 1997-го. Швидкість важлива, але попереду вирішальне гальмування перед Dry Sack."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Dry Sack",
+          "aliases": [],
+          "explanation": {
+            "en": "Dry Sack is the key slow corner after the faster approach. Here Schumacher and Villeneuve collided while contesting the 1997 championship, and the circuit operator identifies the location by this historical name. The battle is evidence for the corner's role, not permission to project later renamings backwards.",
+            "uk": "Dry Sack — ключовий повільний поворот після швидшого підходу. Саме тут Шумахер і Вільньов зіткнулися в боротьбі за титул 1997 року; організатор прямо називає місце цією історичною назвою. Цей епізод пояснює значення віражу, але не дозволяє переносити пізніші перейменування в минуле."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 follows the major Dry Sack braking event and returns the lap to a linked technical rhythm. Its precise 1997 direction and individual name are not separately documented in the cited venue history. The editorial guide therefore keeps the number while withholding a false proper name.",
+            "uk": "Сьомий поворот іде після сильного гальмування в Dry Sack і повертає коло до пов'язаного технічного ритму. Точний напрямок і власну назву для конфігурації 1997 року джерела окремо не підтверджують. Тому редакційний довідник зберігає номер, але не вигадує назву."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The eighth bend is part of the middle circuit rather than a new named hairpin. A good line depends on the surrounding corners, but the reviewed sources do not establish a precise braking marker for the 1997 race. This distinction is intentional: a later motorcycle guide is not an F1-era map.",
+            "uk": "Восьмий віраж належить до середньої частини траси, а не до окремої названої шпильки. Траєкторія залежить від сусідніх поворотів, проте перевірені джерела не встановлюють точного орієнтира гальмування для гонки 1997 року. Пізніший мотоциклетний путівник не замінює карту Формули-1 тієї епохи."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is often associated with named corners on present-day Jerez guides, but those labels can post-date the Formula 1 event. The 1997 route must be read before later tributes and sponsor names are assigned. This entry preserves the turn number while leaving the historical proper name unresolved.",
+            "uk": "Дев'ятий поворот часто пов'язують із назвами із сучасних путівників Хереса, але ці підписи могли з'явитися вже після Формули-1. Маршрут 1997 року слід розглядати окремо від пізніших присвят і спонсорських назв. Тут збережено номер, а історичну власну назву залишено непідтвердженою."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Peluqui",
+          "aliases": [],
+          "explanation": {
+            "en": "Peluqui is a named part of the technical run towards the final complex on the modern circuit. Its association with this position is a research lead, not proof that every 1997 marshal map used the same label. The lap's tighter middle section rewards measured steering rather than abrupt corrections.",
+            "uk": "Peluqui — відома названа ділянка технічного підходу до фінального комплексу сучасної траси. Прив'язка до цього номера є дослідницьким орієнтиром, а не доказом, що кожна карта маршалів 1997 року містила такий підпис. Тісніші віражі вимагають плавного кермування замість різких виправлень."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The 1994 safety changes inserted the Ayrton Senna chicane in the Crivillé–Ferrari area, so the 1997 F1 lap included a slow-down absent from the earlier configuration. Turn 11 begins the historically modified final-sector area, but its individual period name remains unconfirmed in a numbered primary map.",
+            "uk": "Після змін безпеки 1994 року в районі Crivillé–Ferrari з'явилася шикана Ayrton Senna, тому коло Формули-1 1997 року мало уповільнення, якого не було в старій конфігурації. Одинадцятий відкриває змінену фінальну ділянку, але його окрему назву на пронумерованій карті епохи ще не підтверджено."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 belongs to the historically revised approach around the Senna chicane. It should not inherit a modern motorcycle corner label merely because the circuit outline looks similar. The key technical issue is negotiating the additional direction change while preserving a clean exit into the remaining final bends.",
+            "uk": "Дванадцятий належить до перебудованого підходу біля шикани Senna. Не можна автоматично переносити на нього сучасну мотоциклетну назву лише через схожий контур траси. Головне технічне завдання — пройти додаткову зміну напрямку й зберегти чистий вихід до останніх віражів."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The thirteenth numbered bend continues the final-sector sequence affected by the 1994 chicane installation. This is exactly where a period-specific plan is essential: modern maps may count the additional bends differently. The guide does not claim a separate official name or a surveyed apex position here.",
+            "uk": "Тринадцятий пронумерований віраж продовжує фінальну зв'язку, змінену після встановлення шикани у 1994 році. Саме тут потрібна схема конкретної епохи: сучасні карти можуть інакше рахувати додаткові віражі. Довідник не заявляє окремої офіційної назви чи точно виміряного апекса."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is on the final approach towards the main straight in the 1997 configuration. Some later venue guides call nearby corners Ferrari or use rider tribute names, but their exact period-to-number mapping is not established here. The driver must prepare the car for the last acceleration zone.",
+            "uk": "Чотирнадцятий розташований на фінальному підході до головної прямої у конфігурації 1997 року. Пізніші путівники називають сусідні віражі Ferrari або іменами мотогонщиків, але точну відповідність номера й назви для тієї епохи тут не доведено. Пілот готує болід до останнього розгону."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "jerez-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last numbered turn launches the car onto the pit straight and completes the 1997 European Grand Prix lap. Later names such as Jorge Lorenzo cannot be silently applied to this historic race. Exit speed matters here because the driver carries it down the straight before braking for Expo 92.",
+            "uk": "Останній пронумерований поворот виводить болід на стартову пряму й завершує коло Гран-прі Європи 1997 року. Пізніші назви на кшталт Jorge Lorenzo не можна без пояснення переносити на історичну гонку. Швидкість виходу важлива, бо її пілот зберігає до гальмування перед Expo 92."
+          },
+          "sources": [
+            "jerez-1997-layout",
+            "jerez-venue-history",
+            "jerez-historic-map"
           ],
           "confirmation_status": "source_checked_ai"
         }

@@ -1122,6 +1122,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "jerez",
+      "biography": {
+        "title": {
+          "en": "The chicane that separates two Jerez eras",
+          "uk": "Шикана, що розділила дві епохи Хереса"
+        },
+        "text": {
+          "en": "Jerez's Formula 1 story cannot be told with a single modern motorcycle map. The early 1986–1990 course included a tighter sequence later replaced near Sito Pons, while the 1994 safety work added the Ayrton Senna chicane near Crivillé and Ferrari. The 1997 European Grand Prix therefore used the 4.428 km, 15-turn historical F1 layout, distinct from both the earlier Spanish Grands Prix and today's motorcycle numbering. Names bestowed after 1997 must be dated rather than retroactively applied.",
+          "uk": "Історію Формули-1 в Хересі не можна показати однією сучасною мотоциклетною картою. У 1986–1990 роках маршрут мав тіснішу зв'язку, яку згодом змінили біля Sito Pons, а роботи з безпеки 1994 року додали шикану Ayrton Senna поблизу Crivillé та Ferrari. Тож Гран-прі Європи 1997 року відбувся на історичній конфігурації Формули-1 довжиною 4,428 км із 15 поворотами, відмінній і від ранніх Гран-прі Іспанії, і від сучасної мотоциклетної нумерації. Пізніші назви потрібно датувати, а не переносити в минуле."
+        },
+        "source": "https://circuitodejerez.com/en/circuito/",
+        "locator": "Circuito de Jerez official history, 1994 Senna chicane and 1997 European GP"
+      },
+      "moments": [
+        {
+          "id": "jerez-1997-title-collision",
+          "year": 1997,
+          "title": {
+            "en": "The title fight reaches Dry Sack",
+            "uk": "Боротьба за титул доходить до Dry Sack"
+          },
+          "text": {
+            "en": "Michael Schumacher and Jacques Villeneuve collided at Dry Sack as Villeneuve tried to pass during the 1997 European Grand Prix. Schumacher's Ferrari stopped, while Villeneuve continued to finish third and claim the championship. The circuit operator identifies Dry Sack as the scene of the contact; it was not the Senna chicane farther around the lap.",
+            "uk": "Міхаель Шумахер і Жак Вільньов зіткнулися в Dry Sack, коли Вільньов намагався обігнати суперника під час Гран-прі Європи 1997 року. Ferrari Шумахера зупинилася, а Вільньов продовжив гонку, фінішував третім і здобув титул. Організатор підтверджує, що зіткнення сталося саме в Dry Sack, а не в шикані Senna далі на колі."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://circuitodejerez.com/en/circuito/",
+          "locator": "Official circuit history, Schumacher–Villeneuve incident at Dry Sack in 1997",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "jerez-1997-mclaren-finish",
+          "year": 1997,
+          "title": {
+            "en": "Häkkinen's first win closes the European Grand Prix",
+            "uk": "Перша перемога Гаккінена завершує Гран-прі Європи"
+          },
+          "text": {
+            "en": "Mika Häkkinen took his first Formula 1 victory in the 1997 European Grand Prix, with McLaren team mate David Coulthard second and newly crowned champion Jacques Villeneuve third. The finish is easy to overlook beside the title collision, but the official classification records a McLaren one-two at the last F1 race Jerez hosted.",
+            "uk": "Міка Гаккінен здобув першу перемогу у Формулі-1 на Гран-прі Європи 1997 року, а його напарник по McLaren Девід Култгард став другим. Новоспечений чемпіон Жак Вільньов фінішував третім. Цей фініш часто губиться за історією зіткнення претендентів, хоча офіційний протокол фіксує дубль McLaren в останній гонці Формули-1 у Хересі."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/1997/races/670/europe/race-result",
+          "locator": "Official F1 1997 European Grand Prix race classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
