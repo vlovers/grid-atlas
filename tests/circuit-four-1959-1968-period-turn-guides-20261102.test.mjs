@@ -26,11 +26,11 @@ test('27 bilingual historic turn entries use period-specific layouts and never c
       assert.equal(s.name,null,s.id);
       assert.equal(s.aliases.length,1,s.id);
       assert.equal(s.confirmation_status,'historical_numbering_unverified',s.id);
-      assert.ok(s.explanation.en.trim().split(/\\s+/).length>=20,s.id+':en');
-      assert.ok(s.explanation.uk.trim().split(/\\s+/).length>=16,s.id+':uk');
+      assert.ok(s.explanation.en.trim().split(/\s+/).length>=20,s.id+':en');
+      assert.ok(s.explanation.uk.trim().split(/\s+/).length>=16,s.id+':uk');
       assert.match(s.explanation.uk,/[А-Яа-яІіЇїЄєҐґ]/,s.id);
       assert.equal(s.sources.length,3,s.id);
-      for(const key of s.sources) assert.match(corners.sources[key],/^https:\\/\\//,s.id+':'+key);
+      for(const key of s.sources) assert.match(corners.sources[key],/^https:\/\//,s.id+':'+key);
       en.add(s.explanation.en);uk.add(s.explanation.uk);
     }
     assert.equal(en.size,count,id+': distinct EN descriptions');
@@ -43,11 +43,11 @@ test('four bilingual biographies and eight separate historical episodes remain c
     const entry=narratives.entries.find(n=>n.circuit_id===id);
     assert.ok(entry,id);
     assert.ok(entry.biography.text.en.length>120 && entry.biography.text.uk.length>100,id);
-    assert.match(entry.biography.source,/^https:\\/\\//);
+    assert.match(entry.biography.source,/^https:\/\//);
     assert.equal(entry.moments.length,2);
     for(const m of entry.moments){
       assert.equal(m.review_status,'independent_review_pending');
-      assert.match(m.source,/^https:\\/\\//);
+      assert.match(m.source,/^https:\/\//);
       assert.ok(m.title.en && m.title.uk && m.text.en && m.text.uk);
     }
   }
