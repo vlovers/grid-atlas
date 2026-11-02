@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "Research-only bilingual route sections. Ain-Diab, Charade and Sebring now include claim-specific historical layout evidence and unresolved apex-numbering limits. No numbered corner crosswalk, licensing approval or publication authorization is asserted.",
+  "coverage_note": "All seven missing historical candidate turn guides have evidence reviews or route studies. For Dallas, Detroit, Pescara and Porto, sources establish period-specific course landmarks but NOT a certified per-apex numbering key. No publication approval or photo/map rights granted.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -795,7 +795,33 @@
           "review_status": "pending"
         }
       ],
-      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json"
+      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
+      "layout_evidence_review": {
+        "archive_turn_count": 23,
+        "period_layout_year": 1984,
+        "crosswalk_status": "complexes_vs_archive_turn_count_unverified_apex_numbers",
+        "evidence": [
+          {
+            "type": "archived_layout",
+            "url": "https://www.lapledger.org/circuits/dallas",
+            "claim": "Pinned F1DB dallas-1 identifies 23 bends in the 1984 configuration; the page's summary says 24, an unresolved count inconsistency",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "historic_race_reporting",
+            "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "claim": "Contemporary Dallas race coverage supports the one-year Fair Park setting, not per-apex numbering",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "route_study",
+            "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
+            "claim": "Historical illustration is comparative route evidence only; 13 research driving complexes cannot stand for all 23 individual corners",
+            "supports_apex_numbering": false
+          }
+        ],
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+      }
     },
     {
       "circuit_id": "detroit",
@@ -974,7 +1000,33 @@
           "review_status": "pending"
         }
       ],
-      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json"
+      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
+      "layout_evidence_review": {
+        "archive_turn_count": null,
+        "period_layout_year": 1982,
+        "crosswalk_status": "1982_layout_distinct_unverified_apex_numbers",
+        "evidence": [
+          {
+            "type": "period_specific_layout",
+            "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+            "claim": "Distinct map for 1982, not the modified 1983–88 or 2023 circuits; map is linked only",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_driving_report",
+            "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "claim": "Atwater and Woodbridge approaches, hairpin, Jefferson tramlines, tunnel and riverfront sequence described; no certified numbers",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "period_report_comparison",
+            "url": "https://www.motorsportmagazine.com/database/races/1982-detroit-grand-prix/",
+            "claim": "Contemporary route reporting establishes 1982 context, not an official per-apex indexed key",
+            "supports_apex_numbering": false
+          }
+        ],
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+      }
     },
     {
       "circuit_id": "jacarepagua",
@@ -1302,7 +1354,27 @@
           "review_status": "pending"
         }
       ],
-      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json"
+      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
+      "layout_evidence_review": {
+        "archive_turn_count": null,
+        "period_layout_year": 1957,
+        "crosswalk_status": "long_road_route_unverified_apex_numbers",
+        "evidence": [
+          {
+            "type": "contemporary_race_report",
+            "url": "https://www.motorsportmagazine.com/database/races/1957-pescara-grand-prix/",
+            "claim": "1957 route runs from Pescara through Montani and Spoltore, Cappelle and Montesilvano before returning along the Adriatic; no indexed turn mapping",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "local_history",
+            "url": "https://www.italiasiamonoi.it/story/gran-premio-di-pescara-del-1957",
+            "claim": "Independent Italian history also identifies Villa Raspa, Spoltore, Cappelle sul Tavo and Via Vestina, not verified FIA apex numbers",
+            "supports_apex_numbering": false
+          }
+        ],
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+      }
     },
     {
       "circuit_id": "phoenix",
@@ -1470,7 +1542,33 @@
           "review_status": "pending"
         }
       ],
-      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json"
+      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
+      "layout_evidence_review": {
+        "archive_turn_count": 19,
+        "period_layout_year": 1958,
+        "crosswalk_status": "1958_1960_route_source_not_numbered_apex_map",
+        "evidence": [
+          {
+            "type": "period_driving_report",
+            "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "claim": "1958 lap begins at sea front, double-left tramline crossing, climbs Avenida da Boavista and cobbled roadway before narrow return streets; no numbered corner chart",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "period_layout",
+            "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "claim": "1952–1960 historical circuit layout is different from 2005–2015 revival; no certified one-to-one numbering",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "archived_layout",
+            "url": "https://www.lapledger.org/circuits/porto",
+            "claim": "F1DB porto-1 records 19 turns whereas summary displays 14; retain inconsistency instead of flattening counts",
+            "supports_apex_numbering": false
+          }
+        ],
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+      }
     },
     {
       "circuit_id": "riverside",
