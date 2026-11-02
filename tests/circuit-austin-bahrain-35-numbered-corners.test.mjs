@@ -19,7 +19,11 @@ test('Austin and Bahrain have a numbered, individual bilingual entry for every 2
       assert.ok(corner.name.uk.trim().length >= 8);
       assert.ok(corner.explanation.en.trim().split(/\s+/).length >= 27, guide.circuit_id+':'+corner.number+':en');
       assert.ok(corner.explanation.uk.trim().split(/\s+/).length >= 20, guide.circuit_id+':'+corner.number+':uk');
-      assert.equal(corner.is_official_named_corner, false);
+      assert.equal(corner.is_official_named_corner, guide.circuit_id === 'bahrain' && corner.number === 1);
+      if (corner.is_official_named_corner) {
+        assert.equal(corner.name.en, 'Michael Schumacher Corner');
+        assert.match(corner.explanation.en, /2014/);
+      }
       assert.ok(corner.source_urls.includes(guide.numbering_source_url));
       assert.equal(corner.publication_status, 'research_pending_independent_review');
     }
