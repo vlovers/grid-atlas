@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import test from 'node:test';
+const data=JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-corners-v3.json',import.meta.url),'utf8'));
+const stories=JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-narratives-v3.json',import.meta.url),'utf8'));
+const manifest=JSON.parse(readFileSync(new URL('../apps/web/src/components/circuit-layout-manifest.json',import.meta.url),'utf8'));
+const expected=[['aida','aida-1',1995,13],['anderstorp','anderstorp-1',1978,8]];
+test('21 individual bilingual period-specific turn guides have sources and no fabricated period FIA certification',()=>{
+for(const [id,layout,year,count] of expected){const g=data.guides.find(x=>x.circuit_id===id);assert.ok(g);assert.equal(g.layout_id,layout);assert.ok(manifest.some(m=>m.layout_id===layout));assert.equal(g.numbering_year,year);assert.equal(g.numbered_turns,count);assert.equal(g.sections.length,count);assert.deepEqual(g.sections.flatMap(x=>x.numbers),Array.from({length:count},(_,i)=>i+1));assert.equal(g.review_status,'independent_review_pending');assert.ok(!g.diagram);assert.ok(g.numbering_basis.length>40);for(const kind of ['map','names','race'])assert.match(data.sources[id+'-'+kind],/^https:\/\//);const en=new Set(),uk=new Set();for(const s of g.sections){assert.equal(s.numbers.length,1);assert.deepEqual(s.sources,[id+'-map',id+'-names',id+'-race']);assert.ok(s.explanation.en.trim().split(/\s+/).length>=18,s.id+':en');assert.ok(s.explanation.uk.trim().split(/\s+/).length>=13,s.id+':uk');assert.match(s.explanation.uk,/[А-Яа-яІіЇїЄєҐґ]/);en.add(s.explanation.en);uk.add(s.explanation.uk);if(id==='anderstorp'){assert.equal(s.name,null);assert.equal(s.confirmation_status,'historical_numbering_unverified');}}assert.equal(en.size,count);assert.equal(uk.size,count);const n=stories.entries.find(x=>x.circuit_id===id);assert.ok(n);assert.ok(n.moments.every(m=>m.review_status==='independent_review_pending'));}}
+);

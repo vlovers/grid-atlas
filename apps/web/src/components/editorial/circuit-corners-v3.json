@@ -124,7 +124,13 @@
     "watkins-glen-map": "https://www.lapledger.org/circuits/watkins-glen",
     "watkins-glen-names": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
     "watkins-glen-era": "https://www.formulaonehistory.com/circuits/watkins-glen/",
-    "watkins-glen-race": "https://www.formula1.com/en/results/1980/races/93/usa-east/race-result"
+    "watkins-glen-race": "https://www.formula1.com/en/results/1980/races/93/usa-east/race-result",
+    "aida-map": "https://www.gt-world-challenge-asia.com/documents/notice/1118/Okayama%2BDraft%2BBreifing%2Bslides%2B27.08.25%2BPD_JPN_SP%2BFINAL.pdf",
+    "aida-names": "https://www.okayama-international-circuit.jp/guide/se.html",
+    "aida-race": "https://www.formula1.com/en/results/1995/races/635/pacific/race-result",
+    "anderstorp-map": "https://commons.wikimedia.org/wiki/File:Scandinavian_Raceway_1978.svg",
+    "anderstorp-names": "https://www.press.bmwgroup.com/global/article/attachment/T0000370EN/487",
+    "anderstorp-race": "https://www.formula1.com/en/results/1978/races/398/sweden/race-result"
   },
   "guides": [
     {
@@ -12488,6 +12494,422 @@
             "watkins-glen-race"
           ],
           "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "aida",
+      "layout_id": "aida-1",
+      "numbering_year": 1995,
+      "names_as_of": 2026,
+      "numbered_turns": 13,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "2025 GT World Challenge Asia numbered 1–13 organiser map; period 1994–95 continuity not independently confirmed",
+      "sections": [
+        {
+          "id": "aida-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first corner follows the slightly downhill main straight and is a heavy-braking point. It is important to settle the car here, because Williams and the quick Moss S sequence arrive with very little recovery time.",
+            "uk": "Перший поворот завершує стартову пряму з невеликим спуском і вимагає сильного гальмування. Тут важливо стабілізувати машину, адже Williams і швидка зв'язка Moss S починаються майже без паузи."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Williams Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "The venue names this bend for British racer Jonathan Williams. The driver's job is to carry a tidy line into Moss S, not simply maximise entry speed and lose the position needed for the next changes of direction.",
+            "uk": "Організатор назвав віраж на честь британського гонщика Джонатана Вільямса. Потрібно зберегти зручну траєкторію для Moss S, а не просто атакувати вхід і втратити положення перед наступними перекладками."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Moss S",
+          "aliases": [],
+          "explanation": {
+            "en": "This first numbered part of the Esses honours Stirling Moss, winner of sixteen Formula 1 Grands Prix. A clean initial direction change matters because the following two numbered elements are tightly linked.",
+            "uk": "Перша пронумерована частина есків вшановує Стірлінга Мосса, переможця шістнадцяти Гран-прі Формули-1. Чистий початок перекладки важливий, бо дві наступні пронумеровані частини тісно пов'язані."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Moss S",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is the middle of the shared Moss S name, not a separately named official corner. Drivers reverse steering under load and need to keep the chassis composed for the final change of direction.",
+            "uk": "Четвертий поворот — середина спільної секції Moss S, а не окремий офіційно названий віраж. Пілот перекладає кермо під навантаженням і має втримати машину стабільною перед завершальною зміною напрямку."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Moss S",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 finishes the Moss S combination. An early slide or a poor exit line carries a penalty into Attwood Curve, making the last movement of the Esses just as important as the first.",
+            "uk": "П'ятий поворот завершує зв'язку Moss S. Раннє ковзання або погана траєкторія виходу заважають пройти Attwood Curve, тому остання перекладка не менш важлива за першу."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Attwood Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "Named for Richard Attwood, the 1970 Le Mans winner, this sweeping section leads towards the Hairpin. The venue identifies Attwood as one of the circuit's high points, adding an elevation component to the driving challenge.",
+            "uk": "Дугу названо на честь Річарда Етвуда, переможця Ле-Мана 1970 року. Вона веде до шпильки, а організатор відносить Attwood до високих точок автодрому, тому рельєф додає складності проходженню."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Hairpin",
+          "aliases": [],
+          "explanation": {
+            "en": "The tight Hairpin forces a sharp speed reduction after the flowing first half. The 2025 race-control briefing marks the entry to Turn 7 as a contact hot spot, and the exit must prepare the downhill approach to Revolver.",
+            "uk": "Тісна шпилька різко сповільнює боліди після плавнішої першої половини кола. У брифінгу дирекції гонки 2025 року вхід у T7 названо місцем частих контактів, а вихід готує спуск до Revolver."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Revolver Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "Revolver is a key rotation point before the longer acceleration. The 2025 organiser briefing singles out Turn 8 for track-limits monitoring, so an overambitious line can cost the lap even without contact.",
+            "uk": "Revolver — важливий віраж перед довшим розгоном. Брифінг організатора 2025 року окремо вказує на контроль меж траси в T8, тому надто смілива траєкторія може коштувати кола навіть без контакту."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Piper Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "Named after David Piper, this bend begins the compact closing sector. Drivers must avoid carrying excessive entry speed into a sequence that soon includes the slow Redman and Hobbs corners.",
+            "uk": "Поворот названо на честь Девіда Пайпера й він відкриває компактну фінальну секцію. Надмірна швидкість на вході завадить пройти подальші повільні Redman і Hobbs."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Redman Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "Brian Redman gives his name to the first part of a tight double-hairpin combination. The car must rotate without sliding too far, because the next named bend arrives immediately.",
+            "uk": "Першу частину тісної подвійної шпильки названо на честь Браяна Редмана. Болід має розвернутися без зайвого ковзання, адже наступний іменований віраж починається майже відразу."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Hobbs Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "The second part of the double hairpin honours David Hobbs. The official circuit profile places Hobbs at the highest point of the track, 275 metres above sea level, making a controlled exit especially important.",
+            "uk": "Друга частина подвійної шпильки вшановує Девіда Гоббса. За офіційним профілем це найвища точка траси — 275 метрів над рівнем моря, тому контрольований вихід особливо важливий."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Mike Knight Corner",
+          "aliases": [],
+          "explanation": {
+            "en": "The late-lap bend remembers British driver Mike Knight. The pit entry is nearby, so a driver finishing a timed lap and one entering the pits will choose different approaches through this part of the circuit.",
+            "uk": "Пізній віраж вшановує британського гонщика Майка Найта. Поруч розташований в'їзд у бокси, тому на швидкому колі та під час заїзду на піт-лейн траєкторії тут відрізняються."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "aida-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final bend opens onto a roughly 600-metre main straight that descends gently. Poor traction on exit has consequences all the way to Turn 1, so the driver needs a clean launch more than an aggressive final apex.",
+            "uk": "Останній віраж відкриває стартову пряму завдовжки близько 600 метрів із невеликим спуском. Погане зчеплення на виході позначається аж до T1, тому чистий розгін важливіший за агресивний фінальний апекс."
+          },
+          "sources": [
+            "aida-map",
+            "aida-names",
+            "aida-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "anderstorp",
+      "layout_id": "anderstorp-1",
+      "numbering_year": 1978,
+      "names_as_of": 2026,
+      "numbered_turns": 8,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "1978 F1DB eight-turn layout; 1978 Norra map; names from 2007 BMW map, not numbered FIA 1978",
+      "sections": [
+        {
+          "id": "anderstorp-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Startkurvan"
+          ],
+          "explanation": {
+            "en": "The Startkurvan bend appears in historical descriptions of the Swedish circuit. The exact 1978 number is not authenticated; its importance lies in preserving momentum on a lap with long straights and sweeping corners.",
+            "uk": "Startkurvan згадується в історичних описах шведської траси. Точний номер 1978 року не підтверджено; тут важливо зберігати швидкість на колі з довгими прямими й затяжними дугами."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Opel"
+          ],
+          "explanation": {
+            "en": "Opel is a broad named bend on the later BMW map of Scandinavian Raceway. The map proves the name's use in 2007, but it cannot establish that the 1978 apex had exactly the same geometry.",
+            "uk": "Opel — широка іменована дуга на пізнішій схемі BMW. Карта підтверджує використання назви у 2007 році, але не доводить тотожності геометрії апексу конфігурації 1978-го."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Hansen"
+          ],
+          "explanation": {
+            "en": "Hansen links the infield towards the long-radius Karusell in historical descriptions. Smooth steering is valuable here because a mistake on a flat circuit with relatively few corners is hard to recover.",
+            "uk": "Hansen в історичних описах з'єднує внутрішню секцію із затяжним Karusell. Плавне кермування важливе: на пласкій трасі з невеликою кількістю поворотів помилку важко компенсувати."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Karusell"
+          ],
+          "explanation": {
+            "en": "The sweeping Karusell gives the circuit its flowing character. The driver spends a long time under lateral load, and sliding too early can spoil the exit and the acceleration that follows.",
+            "uk": "Затяжний Karusell визначає плавний характер автодрому. Болід довго перебуває під боковим навантаженням, а раннє ковзання псує вихід і подальший розгін."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Södra"
+          ],
+          "explanation": {
+            "en": "Södra appears in the 2007 BMW track diagram as part of the winding section. This candidate guide does not claim that its number was identical in the 1978 Swedish Grand Prix.",
+            "uk": "Södra позначено на схемі BMW 2007 року як частину звивистої секції. Цей кандидатний путівник не стверджує, що номер був таким самим на Гран-прі Швеції 1978-го."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Utsvängd"
+          ],
+          "explanation": {
+            "en": "The Utsvängd section lies on the route towards the airfield straight in later circuit diagrams. Exit speed matters because the runway gives drivers a long acceleration zone with few chances to recover a slow launch.",
+            "uk": "Секція Utsvängd розташована на шляху до аеродромної прямої на пізніших схемах. Швидкість виходу важлива: довга зона розгону майже не залишає шансів компенсувати повільний старт."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Norra revision"
+          ],
+          "explanation": {
+            "en": "Norra is the essential period-specific warning: it was modified for the 1978 Swedish Grand Prix. Earlier maps cannot be used as if the corner's entry, apex and exit remained unchanged.",
+            "uk": "Norra — головне історичне застереження: його змінили до Гран-прі Швеції 1978 року. Старі карти не можна використовувати так, ніби вхід, апекс і вихід залишилися незмінними."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "anderstorp-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Läktar"
+          ],
+          "explanation": {
+            "en": "Läktar is recorded on the later BMW map near the start-side section. Anderstorp's unusual pit-lane position means that reconstructing 1978 turn numbers from a modern start-line photograph would be especially unreliable.",
+            "uk": "Läktar позначено на пізнішій схемі BMW біля стартової частини траси. Через незвичне розташування піт-лейну Андерсторпа реконструювати номери 1978 року за сучасним фото стартової лінії особливо ненадійно."
+          },
+          "sources": [
+            "anderstorp-map",
+            "anderstorp-names",
+            "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
         }
       ]
     }

@@ -1377,6 +1377,91 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "aida",
+      "biography": {
+        "title": {
+          "en": "Two Pacific Grands Prix in the hills",
+          "uk": "Два Тихоокеанські Гран-прі серед пагорбів"
+        },
+        "text": {
+          "en": "TI Circuit Aida hosted Formula 1 in 1994 and 1995 before later taking the name Okayama International Circuit. Its thirteen turns honour several generations of racing drivers.",
+          "uk": "TI Circuit Aida приймала Формулу-1 у 1994 та 1995 роках, а згодом отримала назву Okayama International Circuit. Тринадцять її поворотів вшановують гонщиків різних поколінь."
+        },
+        "source": "https://www.okayama-international-circuit.jp/guide/se.html",
+        "locator": "Official venue history and corner names"
+      },
+      "moments": [
+        {
+          "id": "aida-1994",
+          "year": 1994,
+          "title": {
+            "en": "Senna's pole, Schumacher's victory",
+            "uk": "Поул Сенни, перемога Шумахера"
+          },
+          "text": {
+            "en": "Senna started on pole but retired without completing a lap; Schumacher won the inaugural Pacific Grand Prix.",
+            "uk": "Сенна стартував із поулу, але зійшов, не завершивши кола; Шумахер виграв перший Тихоокеанський Гран-прі."
+          },
+          "criterion": "race_turning_point",
+          "source": "https://www.formula1.com/en/results/1994/races/606/pacific/race-result",
+          "locator": "1994 Pacific Grand Prix results and grid",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked, not approved"
+        },
+        {
+          "id": "aida-1995",
+          "year": 1995,
+          "title": {
+            "en": "Schumacher wins the last Pacific GP",
+            "uk": "Шумахер виграє останній Тихоокеанський Гран-прі"
+          },
+          "text": {
+            "en": "Schumacher won again in 1995, ahead of Coulthard and Hill, as the circuit hosted its final Formula 1 race.",
+            "uk": "Шумахер знову переміг 1995 року, випередивши Култгарда та Гілла, під час останньої гонки Формули-1 на цій трасі."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1995/races/635/pacific/race-result",
+          "locator": "1995 Pacific Grand Prix result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked, not approved"
+        }
+      ]
+    },
+    {
+      "circuit_id": "anderstorp",
+      "biography": {
+        "title": {
+          "en": "Runway, long curves and the changed Norra",
+          "uk": "Аеродромна пряма, затяжні дуги й змінений Norra"
+        },
+        "text": {
+          "en": "Scandinavian Raceway combined a runway straight with long sweeping corners and an unusually placed pit lane. Norra changed for 1978, the year of the final Swedish Grand Prix.",
+          "uk": "Scandinavian Raceway поєднувала аеродромну пряму, затяжні дуги й незвично розташований піт-лейн. Norra змінили до 1978 року, коли відбувся останній Гран-прі Швеції."
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:Scandinavian_Raceway_1978.svg",
+        "locator": "1978 historic configuration"
+      },
+      "moments": [
+        {
+          "id": "anderstorp-1978",
+          "year": 1978,
+          "title": {
+            "en": "The fan car's single Grand Prix victory",
+            "uk": "Єдина перемога боліда з вентилятором"
+          },
+          "text": {
+            "en": "Niki Lauda won in the Brabham BT46B, 34.019 seconds ahead of Riccardo Patrese.",
+            "uk": "Нікі Лауда переміг на Brabham BT46B, випередивши Ріккардо Патрезе на 34,019 секунди."
+          },
+          "criterion": "engineering_milestone",
+          "source": "https://www.formula1.com/en/results/1978/races/398/sweden/race-result",
+          "locator": "1978 Swedish Grand Prix official classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked, not approved"
+        }
+      ]
     }
   ]
 }
