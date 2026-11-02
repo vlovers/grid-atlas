@@ -18,13 +18,19 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
   const guide = candidateCornerGuides.find(entry => entry.circuit_id === circuitId);
   if (!guide || guide.review_status !== 'independent_review_approved') return false;
   if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
+  if (!guide.layout_id?.trim() || !Number.isInteger(guide.numbering_year)) return false;
+  const ids = guide.sections.map(section => section.id);
+  if (ids.some(id => !id?.trim()) || new Set(ids).size !== ids.length) return false;
   const numbers = guide.sections.flatMap(section => section.numbers);
   if (numbers.length !== guide.numbered_turns || new Set(numbers).size !== guide.numbered_turns) return false;
   if (numbers.some(number => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
   if (guide.sections.some(section =>
     section.confirmation_status !== 'independently_verified' ||
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
-    section.sources.length < 2 || section.sources.some(key => !Object.hasOwn(candidateCornerSources, key))
+    new Set(section.sources).size < 2 || section.sources.some(key =>
+      !Object.hasOwn(candidateCornerSources, key) ||
+      !/^https:\\/\\//.test(candidateCornerSources[key])
+    )
   )) return false;
   return true;
 }
