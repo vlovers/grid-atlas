@@ -6,12 +6,13 @@ import { isCircuitEditionApproved, circuitEditionDigest } from '../apps/web/src/
 import { renderCircuitReview, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
 
 test('numbered turns are complete and never confused with distinct named sections', () => {
-  assert.equal(candidateCornerGuides.length,4);
+  assert.equal(candidateCornerGuides.length,6);
   for (const guide of candidateCornerGuides) {
     const turns = numberedCorners(guide);
     assert.deepEqual(turns.map(turn => turn.number),Array.from({length:guide.numbered_turns},(_,index)=>index+1));
     assert.ok(turns.every(turn => turn.layout_id === guide.layout_id && turn.sources.length >= 2));
   }
+  assert.deepEqual(candidateCornerGuides.map(guide=>guide.circuit_id).sort(),['austin','bahrain','monaco','monza','silverstone','spa-francorchamps']);
   const monaco = candidateCornerGuides.find(guide=>guide.circuit_id==='monaco');
   const turns = numberedCorners(monaco);
   assert.equal(turns.length,19);
