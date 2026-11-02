@@ -1326,6 +1326,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "watkins-glen",
+      "biography": {
+        "title": {
+          "en": "The Boot, the Esses and a vanished safety chicane",
+          "uk": "Boot, Esses і зникла шикана безпеки"
+        },
+        "text": {
+          "en": "Watkins Glen hosted twenty Formula 1 championship Grands Prix between 1961 and 1980, but the course changed during that span. The longer Boot extension arrived in 1971; a safety chicane was installed in the uphill Esses in 1975 after François Cevert's fatal practice accident in 1973. The Scheckter Chicane was still present for the last F1 visit in 1980. It is not the Inner Loop bus stop added in 1992, long after Formula 1 had left. The 1980 eleven-turn sequence is a period-aware reconstruction from F1DB and historical track accounts; individual numbers still require an authenticated contemporary map.",
+          "uk": "Воткінс-Глен прийняв двадцять чемпіонатних Гран-прі Формули-1 з 1961 до 1980 року, але маршрут змінювався. Довге розширення Boot з'явилося у 1971-му; після загибелі Франсуа Севера на тренуванні 1973 року у швидких Esses встановили шикану безпеки в 1975-му. Scheckter Chicane залишалася на трасі під час останнього візиту Формули-1 у 1980 році. Це не Inner Loop, який збудували лише у 1992-му. Послідовність одинадцяти поворотів реконструйовано за F1DB та історичними джерелами, а точні номери ще потребують автентичної карти епохи."
+        },
+        "source": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
+        "locator": "Watkins Glen layout history, 1975 Esses chicane and 1984 removal"
+      },
+      "moments": [
+        {
+          "id": "watkins-glen-1979-villeneuve",
+          "year": 1979,
+          "title": {
+            "en": "Villeneuve masters the Glen",
+            "uk": "Вільньов підкорює Воткінс-Глен"
+          },
+          "text": {
+            "en": "Gilles Villeneuve won the 1979 United States Grand Prix East at Watkins Glen for Ferrari, completing 59 laps and finishing 48.787 seconds ahead of René Arnoux. Didier Pironi was third. The race belonged to the full Grand Prix layout with the Boot and the Scheckter Chicane, not to the modern course with the 1992 Inner Loop. The official Formula 1 result anchors the order and gap.",
+            "uk": "Жиль Вільньов виграв Гран-прі США Схід 1979 року у Воткінс-Глені за Ferrari, подолавши 59 кіл і випередивши Рене Арну на 48,787 секунди. Дідьє Піроні став третім. Гонка проходила повним колом із Boot та Scheckter Chicane, а не сучасною конфігурацією з Inner Loop 1992 року. Офіційний результат Формули-1 підтверджує порядок і відрив."
+          },
+          "source": "https://www.formula1.com/en/results/1979/races/421/usa-east/race-result",
+          "locator": "1979 USA East official result",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "watkins-glen-1980-last-f1",
+          "year": 1980,
+          "title": {
+            "en": "The last Formula 1 race at the Glen",
+            "uk": "Останній Гран-прі Формули-1 у Глені"
+          },
+          "text": {
+            "en": "The 1980 United States Grand Prix East was Formula 1's last championship visit to Watkins Glen. Alan Jones won for Williams over 59 laps, with team-mate Carlos Reutemann 4.210 seconds behind and Didier Pironi third. The fast, bumpy circuit still used the Scheckter Chicane in the Esses. Financial and safety concerns helped bring the long run of Formula 1 races at this New York venue to an end.",
+            "uk": "Гран-прі США Схід 1980 року став останнім чемпіонатним візитом Формули-1 до Воткінс-Глена. Алан Джонс переміг за Williams після 59 кіл, його напарник Карлос Ройтеманн відстав на 4,210 секунди, а Дідьє Піроні став третім. На швидкій нерівній трасі ще існувала Scheckter Chicane у зв'язці Esses. Фінансові проблеми й питання безпеки сприяли завершенню тривалої історії Формули-1 на цьому автодромі Нью-Йорка."
+          },
+          "source": "https://www.formula1.com/en/results/1980/races/93/usa-east/race-result",
+          "locator": "1980 USA East official result",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
