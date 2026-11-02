@@ -209,7 +209,10 @@
     "pedralbes-period-layout": "https://www.motorsportmagazine.com/database/circuits/pedralbes/",
     "caesars-1981-82-layout": "https://www.racingcircuits.info/north-america/usa/caesars-palace.html",
     "caesars-period-circuit-history": "https://www.motorsportmagazine.com/database/circuits/caesars-palace/",
-    "caesars-secondary-turn-sequence": "https://f1.fandom.com/wiki/Caesars_Palace_Circuit"
+    "caesars-secondary-turn-sequence": "https://f1.fandom.com/wiki/Caesars_Palace_Circuit",
+    "jacarepagua-1984-numbered-map": "https://d24udp600h4lxn.cloudfront.net/dea/live/media/03-lotus-senna-uk-v9-web/03-lotus-senna-uk-v9-web.pdf",
+    "jacarepagua-period-route": "https://www.livegp.it/news/186408930822/f1-flashback-c-era-una-volta-il-circuito-di-jacarepagua",
+    "jacarepagua-1978-layout": "https://www.gdecarli.it/php2/circuit.php?var1=121&var2=2"
   },
   "guides": [
     {
@@ -18715,6 +18718,215 @@
             "caesars-secondary-turn-sequence"
           ],
           "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "layout_id": "jacarepagua-1",
+      "numbering_year": 1984,
+      "names_as_of": 1984,
+      "numbered_turns": 11,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "A numbered 1–11 Jacarepaguá map for the 1984 Brazilian Grand Prix, printed in a 2023 De Agostini historical magazine, with ten named points. Secondary period-route descriptions corroborate ordering. Map is linked as evidence only, never copied, licensed or embedded. Turn 10 has no distinct name on this map. Verify layout compatibility with other F1 race years before approval.",
+      "sections": [
+        {
+          "id": "jacarepagua-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Molykote",
+          "aliases": [],
+          "explanation": {
+            "en": "The first numbered corner, Molykote, is the rightward turnaround at the end of the pit straight. The name came from an automotive lubricant brand. Drivers needed to complete the slow rotation without losing the launch speed for the short run towards Carlos Pace.",
+            "uk": "Перший нумерований поворот Molykote — правий розворот наприкінці прямої боксів. Його назва походить від марки автомобільних мастил. Пілотам потрібно було завершити повільний розворот без втрати швидкості перед коротким розгоном до Carlos Pace."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Carlos Pace",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2, Carlos Pace, is the left-hand section after Molykote. It demands strong braking and precise steering before the route starts opening out into faster bends. In the 1984 Brazilian Grand Prix, Prost passed Arnoux on the inside at this named corner.",
+            "uk": "Другий поворот Carlos Pace — ліва секція після Molykote. Тут потрібні сильне гальмування й точне кермування перед швидшими дугами далі. На Гран-прі Бразилії 1984 року Прост обійшов Арну по внутрішній траєкторії саме в цьому іменному повороті."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Suspiro",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3, Suspiro, is a sweeping left-hand portion of the fast outer approach. The historic route offered little escape space and a demanding sequence of surface undulations. A driver who arrived poorly positioned could lose control before the following Nonato section.",
+            "uk": "Третій поворот Suspiro — широка ліва дуга на швидкому зовнішньому відрізку. Історичний маршрут мав мало простору для вильоту й складні нерівності покриття. Пілот, який обрав невдалу траєкторію, ризикував втратити контроль перед наступною секцією Nonato."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Nonato",
+          "aliases": [],
+          "explanation": {
+            "en": "Nonato, numbered Turn 4 on the 1984 map, continued the technical section after Suspiro. The approach was not fully visible and demanded a controlled speed before the sharp braking towards Norte. Its job on the lap was to prepare the hairpin, not to reward one isolated fast apex.",
+            "uk": "Nonato позначений четвертим номером на схемі 1984 року й продовжував технічну секцію після Suspiro. Підхід проглядався не повністю, тому швидкість потрібно було контролювати перед різким гальмуванням до Norte. Головне завдання — підготувати шпильку, а не пройти окремий апекс якнайшвидше."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Norte",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5, Norte, was the low-speed left-hand turnaround at the far western end of the circuit. The following long straight meant traction on exit mattered more than a late attack on entry. The familiar name identifies a real historic part of the F1 layout, not the modern Interlagos circuit.",
+            "uk": "П'ятий поворот Norte — повільний лівий розворот на західному краю траси. Перед довгою прямою важливішим було зчеплення на виході, ніж пізня атака на вході. Історична назва належить трасі Формули-1 у Ріо, а не сучасному Інтерлагосу."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Sul",
+          "aliases": [],
+          "explanation": {
+            "en": "Sul, Turn 6, was another left-hand turnaround after the long Junção straight at the opposite end of the layout. Heavy braking brought the car down to a slower speed; the exit then set up the more technical eastern half of the lap.",
+            "uk": "Sul, шостий поворот, був ще одним лівим розворотом після довгої прямої Junção на протилежному боці траси. Сильне гальмування зменшувало швидкість перед повільнішою дугою, а вихід готував технічнішу східну частину кола."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Girão",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7, Girão, made a broad direction change as the cars returned into the eastern infield. Rather than brake as late as possible, drivers needed to keep the car positioned for Morette immediately afterwards. The named bend forms part of a connected sequence.",
+            "uk": "Сьомий поворот Girão змінював напрямок на вході до східної внутрішньої секції. Замість надто пізнього гальмування потрібно було правильно розмістити болід перед наступним Morette. Іменний віраж був частиною безперервної зв'язки."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Morette",
+          "aliases": [],
+          "explanation": {
+            "en": "Morette, Turn 8, was a right-hand bend in the eastern part of Jacarepaguá. It followed Girão and led towards the more open Lagoa curve. The driver had to balance speed through two distinct corners rather than force a single aggressive apex.",
+            "uk": "Morette, восьмий поворот, був правою дугою у східній частині Жакарепагуа. Він ішов після Girão й вів до відкритішого Lagoa. Пілоту потрібно було збалансувати швидкість у двох різних віражах, а не агресивно атакувати один апекс."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Lagoa",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9, Lagoa, sat at the top of the eastern loop, where the car swept around before the return towards the pits. The 1984 numbered diagram shows its own apex rather than merging it with Morette. That distinction matters when mapping incidents to precise parts of the circuit.",
+            "uk": "Дев'ятий поворот Lagoa розташовувався у верхній частині східної петлі, де болід огинав довгу дугу перед поверненням до боксів. Нумерована схема 1984 року показує окремий апекс, а не зливає його з Morette. Це важливо для точної прив'язки гоночних подій."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
+        },
+        {
+          "id": "jacarepagua-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The tenth numbered bend was a left-hand change at the bottom of the Lagoa return, leading back towards the finishing sector. The 1984 map marks the number but does not print a distinct corner name. The guide therefore leaves the official name empty rather than inventing one.",
+            "uk": "Десятий нумерований поворот був лівою зміною напрямку після повернення від Lagoa до фінішного сектору. На схемі 1984 року позначено номер, але немає окремої підписаної назви. Тому офіційне ім'я залишено порожнім, а не вигадано."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_unlabelled"
+        },
+        {
+          "id": "jacarepagua-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Vitória",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11, Vitória, is the final right-hand bend before the start-finish stretch. It completes Jacarepaguá's anticlockwise Grand Prix lap. The official diagram places it beside the pits, which makes it a natural reference when reading late-race passes and the run to the line.",
+            "uk": "Одинадцятий поворот Vitória — фінальна права дуга перед стартово-фінішним відрізком. Він завершує коло Гран-прі Жакарепагуа проти годинникової стрілки. На історичній схемі його показано біля боксів, тому це важливий орієнтир для опису фінішних атак."
+          },
+          "sources": [
+            "jacarepagua-1984-numbered-map",
+            "jacarepagua-period-route",
+            "jacarepagua-1978-layout"
+          ],
+          "confirmation_status": "period_numbered_map_checked"
         }
       ]
     }
