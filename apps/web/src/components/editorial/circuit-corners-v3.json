@@ -81,7 +81,14 @@
     "sepang-race": "https://www.formula1.com/en/results/2017/races/973/malaysia/race-result",
     "sirius-map": "https://www.fia.com/sites/default/files/decision-document/2021%20Russian%20Grand%20Prix%20-%20Circuit%20Map.pdf",
     "sirius-names": "https://www.formula1.com/en/racing/2021/russia",
-    "sirius-race": "https://www.formula1.com/en/latest/article/hamilton-takes-100th-f1-victory-after-late-rain-shower-denies-long-time.4pIst5Rju75ZKdmtcfIJpE.4pIst5Rju75ZKdmtcfIJpE"
+    "sirius-race": "https://www.formula1.com/en/latest/article/hamilton-takes-100th-f1-victory-after-late-rain-shower-denies-long-time.4pIst5Rju75ZKdmtcfIJpE.4pIst5Rju75ZKdmtcfIJpE",
+    "las-vegas-map": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_event_notes_-_circuit_map_v2_pit_lane_drawing_emergency_map_exits_quarantine_zone_and_red_zones.pdf",
+    "las-vegas-names": "https://www.f1lasvegasgp.com/2025/07/the-las-vegas-strip-circuit-turn-by-turn-guide/",
+    "las-vegas-history": "https://www.formula1.com/en/racing/2024/las-vegas",
+    "madring-map": "https://www.fia.com/documents/circuit-maps",
+    "madring-names": "https://www.formula1.com/en/latest/article/why-madrids-la-monumental-corner-lives-up-to-its-name.2tbqkIagDDXxFRR48YH4Ih",
+    "madring-layout": "https://www.formula1.com/en/racing/2027/spain",
+    "madring-turn-details": "https://es.motorsport.com/f1/news/nombre-curvas-vueltas-longitud-dise%C3%B1o-definitivo-madring-circuito-madrid-2026/10716759/"
   },
   "guides": [
     {
@@ -9141,6 +9148,750 @@
             "sirius-map",
             "sirius-names",
             "sirius-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "las-vegas",
+      "layout_id": "las-vegas-1",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 17,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "las-vegas-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A short run from the grid ends at a tight left hairpin. Drivers must brake with cold tyres at night and avoid sacrificing the immediate right-hand exit.",
+            "uk": "Короткий розгін від старту закінчується тісною лівою шпилькою. У нічній прохолоді важливо точно загальмувати й не зіпсувати вихід до наступного правого віражу."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The right-hand second bend unwinds the first hairpin. Its exit matters because the car begins gathering speed through the opening plaza sequence.",
+            "uk": "Другий правий віраж розкриває початкову шпильку. Чистий вихід допомагає набрати швидкість у першій зв'язці біля комплексу боксів."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A flowing left keeps the car accelerating through the former parking-lot section. The driver must leave room for the next change of direction.",
+            "uk": "Плавний лівий третій поворот дозволяє продовжити розгін колишньою парковкою. Важливо залишити місце для наступної зміни напрямку."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final right in the plaza complex releases the cars onto Koval Lane. Traction here determines speed for much of the following straight.",
+            "uk": "Четвертий правий завершує зв'язку біля паддоку й виводить на Koval Lane. Зчеплення на виході визначає швидкість на значній частині наступної прямої."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At the end of Koval Lane, drivers brake hard for a left turn near Westchester Drive. It is a major chance to attack after a long acceleration zone.",
+            "uk": "Наприкінці Koval Lane пілоти сильно гальмують перед лівим віражем біля Westchester Drive. Після довгого розгону тут з'являється можливість для обгону."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long left beside the Sphere lets the car build speed before the tighter chicane. Its open entry contrasts with the precise braking required moments later.",
+            "uk": "Довга ліва дуга біля Sphere дозволяє набрати темп перед тісною шиканою. Відкритий вхід різко контрастує з точним гальмуванням, потрібним за мить."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 begins the slow chicane around the Sphere. A late lunge can gain a position, but only if the car is placed for the immediate reversal at Turn 8.",
+            "uk": "Сьомий відкриває повільну шикану навколо Sphere. Пізня атака може принести позицію, але болід потрібно одразу підготувати до перекладки у восьмому."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second half of the Sphere chicane reverses direction in very little space. Drivers balance kerb use against the risk of unsettling the rear tyres.",
+            "uk": "Друга частина шикани біля Sphere змінює напрямок на дуже короткому відрізку. Пілоти обирають, наскільки атакувати поребрик, не зриваючи задні колеса."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Exiting Turn 9, the cars leave the Sphere behind and accelerate onto Sands Avenue. A tidy exit is worth more than one spectacular apex.",
+            "uk": "Після дев'ятого боліди залишають Sphere позаду й розганяються на Sands Avenue. Чистий вихід тут цінніший за ефектний, але неточний апекс."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "This fast bend along Sands Avenue is normally taken with little interruption to acceleration. Drivers aim to keep the car stable between close city barriers.",
+            "uk": "Швидкий десятий на Sands Avenue зазвичай майже не перериває розгін. Між міськими бар'єрами головне — стабільна траєкторія без зайвих рухів кермом."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Another quick change on Sands Avenue follows before the decisive braking for Turn 12. The car reaches high speed while the driver prepares to slow sharply.",
+            "uk": "Одинадцятий продовжує швидку секцію Sands Avenue перед вирішальним гальмуванням до дванадцятого. Болід іще набирає швидкість, а пілот уже готується різко сповільнитися."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The sharp left at Turn 12 feeds onto Las Vegas Boulevard. Verstappen and Russell collided here in 2023; the corner's exit is vital for the long Strip run.",
+            "uk": "Різкий лівий дванадцятий виводить на Las Vegas Boulevard. У 2023 році тут зіткнулися Ферстаппен і Рассел; вихід особливо важливий перед довгою прямою Стріпу."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is a shallow kink partway along the Strip, not a separate heavy-braking corner. Cars remain at very high speed beneath the city's lights.",
+            "uk": "Тринадцятий — легкий перегин посеред Стріпу, а не окрема зона сильного гальмування. Боліди проходять його на величезній швидкості під вогнями міста."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long Strip straight ends at a tight left and one of the clearest overtaking opportunities. Drivers must shed enormous speed before the following chicane.",
+            "uk": "Довга пряма Стріпу закінчується тісним лівим і однією з найкращих зон обгону. Перед наступною шиканою доводиться скидати величезну швидкість."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 quickly changes direction after the big braking event at Turn 14. The aim is not to win the apex alone but to leave the car balanced for Turn 16.",
+            "uk": "П'ятнадцятий майже одразу змінює напрямок після сильного гальмування у чотирнадцятому. Важливо не просто зрізати апекс, а підготувати машину до шістнадцятого."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final part of the chicane releases the car onto East Harmon Avenue. Wheelspin or a wide exit costs speed all along the next acceleration stretch.",
+            "uk": "Остання частина шикани виводить на East Harmon Avenue. Пробуксовка або широкий вихід забирають швидкість протягом усього наступного розгону."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "las-vegas-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A gentle, fast left kink completes the lap before the pit straight. The driver must keep the car settled while already looking towards Turn 1.",
+            "uk": "Плавний швидкий лівий перегин завершує коло перед стартовою прямою. Пілот тримає болід стабільним і вже дивиться на гальмування до першого повороту."
+          },
+          "sources": [
+            "las-vegas-map",
+            "las-vegas-names",
+            "las-vegas-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "madring",
+      "layout_id": "madring-1",
+      "numbering_year": 2026,
+      "names_as_of": 2026,
+      "numbered_turns": 22,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "madring-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The first tight left follows the short launch from the grid and becomes a heavy braking test. A clean exit is essential for the immediate second turn.",
+            "uk": "Перший тісний лівий іде після короткого стартового розгону й вимагає сильного гальмування. Чистий вихід потрібен для майже миттєвого другого віражу."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 redirects the car at the low point of the opening sector. Drivers must stabilise traction before the faster approach to the Hortaleza section.",
+            "uk": "Другий змінює напрямок у нижній частині початкового сектору. Пілотам потрібно стабілізувати тягу перед швидшим підходом до ділянки Hortaleza."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Curva de Hortaleza",
+          "aliases": [],
+          "explanation": {
+            "en": "Curva de Hortaleza takes its name from the Madrid district beside the course. This fast right-hander leads the cars towards the urban Ribera del Sena stretch.",
+            "uk": "Curva de Hortaleza названа на честь району Мадрида поряд із трасою. Швидкий правий віраж веде до міської ділянки Ribera del Sena."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fourth bend is a fast sweep along the urban approach rather than a hairpin. Its exit sets up the major braking zone at Turn 5.",
+            "uk": "Четвертий — швидка дуга на міському відрізку, а не шпилька. Вихід із неї готує головну зону гальмування перед п'ятим."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A very tight Turn 5 begins the chicane under a road overpass. The braking point is a natural place to attack, but the second half follows immediately.",
+            "uk": "Дуже тісний п'ятий відкриває шикану під автомобільним шляхопроводом. Тут зручно атакувати на гальмуванні, але друга частина зв'язки починається відразу."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 completes the slow overpass chicane. A driver who turns too sharply at Turn 5 may be forced into an awkward line and lose traction here.",
+            "uk": "Шостий завершує повільну шикану під шляхопроводом. Якщо надто різко зайти в п'ятий, тут доведеться виправляти траєкторію й втрачати зчеплення."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The road begins to rise towards the Cárcavas section. Turn 7 rewards a measured line because elevation changes make it harder to judge the next approach.",
+            "uk": "Дорога починає підніматися до секції Cárcavas. Сьомий винагороджує точну траєкторію, адже перепади висоти ускладнюють оцінку наступного підходу."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "This bend continues the climbing transition away from the exhibition-ground streets. Keeping the car settled matters as the road changes gradient.",
+            "uk": "Восьмий продовжує підйом від вулиць виставкового комплексу. Важливо зберігати баланс боліда, поки ухил дороги змінюється."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 links the uphill section with the approach to the faster northern part of Madring. An untidy exit makes the next sequence harder.",
+            "uk": "Дев'ятий поєднує підйом із підходом до швидшої північної частини Madring. Неточний вихід ускладнює наступну зв'язку."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is part of the transition towards the circuit's banked centrepiece. The driver must plan the line ahead rather than treat each bend in isolation.",
+            "uk": "Десятий належить до переходу до головної профільованої секції траси. Пілот має планувати траєкторію наперед, а не сприймати віражі окремо."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The approach to La Monumental brings the car into the most distinctive section of the lap. A stable entry is crucial before sustained lateral loading.",
+            "uk": "Одинадцятий підводить болід до La Monumental — найвпізнаванішої ділянки кола. Стабільний вхід потрібен перед тривалим боковим навантаженням."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t12",
+          "numbers": [
+            12
+          ],
+          "name": "La Monumental",
+          "aliases": [],
+          "explanation": {
+            "en": "La Monumental is a roughly 550-metre semicircular banked turn named in reference to Madrid's bullring tradition. Its 24 percent banking is a gradient, not 24 degrees.",
+            "uk": "La Monumental — напівкруглий профільований віраж завдовжки близько 550 метрів, назва якого відсилає до мадридської традиції арен для кориди. Нахил 24% — це не 24 градуси."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Immediately after the long banked arc, Turn 13 tightens sharply. Drivers must brake and change attitude quickly; it was designed as a potential passing point.",
+            "uk": "Одразу після довгої профільованої дуги тринадцятий різко звужується. Потрібно швидко гальмувати й змінювати баланс машини; цей віраж задумували як можливість для обгону."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 begins the fast linked bends of Valdebebas. The rhythm shifts from heavy braking to sustained speed, where a clean first line matters.",
+            "uk": "Чотирнадцятий відкриває швидку зв'язку Valdebebas. Ритм змінюється від сильного гальмування до тривалої швидкості, де важливий перший правильний апекс."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The middle of the Valdebebas Esses changes direction while the car is still loaded. A smooth steering input protects grip for Turn 16.",
+            "uk": "Середина швидкої зв'язки Valdebebas змінює напрямок під навантаженням. Плавний рух кермом допомагає зберегти зчеплення до шістнадцятого."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 finishes the rapid Valdebebas sequence. Drivers must prepare immediately for the much slower Turn 17 rather than overcommit to this final sweep.",
+            "uk": "Шістнадцятий завершує швидку зв'язку Valdebebas. Потрібно відразу готуватися до значно повільнішого сімнадцятого, а не ризикувати на останній дузі."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A hard braking zone at Turn 17 follows the fast sweep. It offers a passing chance, but a poor exit compromises the run towards the tunnel.",
+            "uk": "Після швидкої секції сімнадцятий вимагає сильного гальмування. Тут можна обганяти, але невдалий вихід псує розгін у напрямку тунелю."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t18",
+          "numbers": [
+            18
+          ],
+          "name": "Curva Norte",
+          "aliases": [],
+          "explanation": {
+            "en": "Curva Norte is named for the northern convention-centre area of IFEMA. It marks the return towards the exhibition grounds after the tunnel.",
+            "uk": "Curva Norte названа за північною частиною виставкового комплексу IFEMA. Вона позначає повернення до павільйонів після тунелю."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 begins the tighter final urban sequence, with walls close to the racing line. Drivers must leave room for the next right-angle changes.",
+            "uk": "Дев'ятнадцятий відкриває тіснішу завершальну міську секцію з бар'єрами біля траєкторії. Потрібно залишити простір для наступних різких поворотів."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t20",
+          "numbers": [
+            20
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A sharp Turn 20 threads the car between the IFEMA halls. Low-speed traction and a tidy line matter more than maximum entry speed.",
+            "uk": "Різкий двадцятий проводить болід між павільйонами IFEMA. На малій швидкості зчеплення й чиста траєкторія важливіші за максимально швидкий вхід."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t21",
+          "numbers": [
+            21
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 21 continues the final walled sequence. Drivers must rotate the car without sacrificing the last corner and the acceleration onto the pit straight.",
+            "uk": "Двадцять перший продовжує завершальну зв'язку між стінами. Потрібно розвернути болід, не зіпсувавши останній віраж і розгін на стартову пряму."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "madring-t22",
+          "numbers": [
+            22
+          ],
+          "name": "El Parque",
+          "aliases": [],
+          "explanation": {
+            "en": "El Parque, the final turn, takes its name from nearby Juan Carlos I Park. The exit is crucial because it opens the entire next lap's main straight.",
+            "uk": "El Parque — останній поворот, названий за сусіднім парком Хуана Карлоса I. Вихід вирішальний, бо відкриває всю головну пряму наступного кола."
+          },
+          "sources": [
+            "madring-map",
+            "madring-names",
+            "madring-layout",
+            "madring-turn-details"
           ],
           "confirmation_status": "source_checked_ai"
         }
