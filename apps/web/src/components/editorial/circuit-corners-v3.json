@@ -15,7 +15,9 @@
     "bahrain-map": "https://www.fia.com/system/files/decision-document/2025_bahrain_grand_prix_-_event_notes_-_circuit_map_v4.pdf",
     "bahrain-names": "https://global.honda/en/F1/circuit/bahrain-international-circuit/",
     "suzuka-map": "https://www.fia.com/system/files/decision-document/2025_japanese_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_and_red_zone.pdf",
-    "suzuka-names": "https://www.formula1.com/en/latest/article/tremayne-from-senna-vs-prost-to-130r-why-suzuka-is-so-special-for-f1-fans.3nEHghWwsKcnf7pcbhqgQt"
+    "suzuka-names": "https://www.formula1.com/en/latest/article/tremayne-from-senna-vs-prost-to-130r-why-suzuka-is-so-special-for-f1-fans.3nEHghWwsKcnf7pcbhqgQt",
+    "interlagos-map": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
+    "interlagos-names": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/"
   },
   "guides": [
     {
@@ -1480,6 +1482,271 @@
           "sources": [
             "suzuka-map",
             "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "interlagos",
+      "layout_id": "interlagos-2",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "interlagos-t1",
+          "numbers": [
+            1
+          ],
+          "name": "S do Senna",
+          "aliases": [],
+          "explanation": {
+            "en": "The opening left of S do Senna plunges downhill from the pit straight. The linked turns were created during the 1990 redesign with Ayrton Senna's input; the heavy braking zone remains the lap's clearest chance to attempt a pass.",
+            "uk": "Перший лівий поворот S do Senna стрімко спускається від стартової прямої. Зв'язку створили під час перебудови 1990 року за участі Айртона Сенни. Сильне гальмування досі дає один із найкращих шансів на обгін."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t2",
+          "numbers": [
+            2
+          ],
+          "name": "S do Senna",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 immediately swings right after the downhill first part of Senna S. Drivers who brake too late for Turn 1 can end up badly positioned here, losing the chance to accelerate cleanly through the following Curva do Sol.",
+            "uk": "Другий поворот одразу переводить болід праворуч після спуску першої частини Senna S. Ті, хто надто пізно загальмував перед першим, опиняються тут у невигідному положенні й втрачають розгін через наступний Curva do Sol."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Curva do Sol",
+          "aliases": [],
+          "explanation": {
+            "en": "Curva do Sol, the Curve of the Sun, is the long left that releases the car from Senna S. A smooth, fast exit matters because it opens the Reta Oposta, where rivals can use the slipstream before braking at Turn 4.",
+            "uk": "Curva do Sol — «Поворот Сонця» — довга ліва дуга після Senna S. Плавний швидкий вихід важливий, адже він відкриває Reta Oposta, де суперники можуть використати повітряний мішок перед гальмуванням у четвертому повороті."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Descida do Lago",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 starts the Descida do Lago section with a left at the end of Reta Oposta. It is a major overtaking zone: drivers must slow from a long straight without running so wide that they compromise the second left.",
+            "uk": "Четвертий поворот відкриває Descida do Lago лівим віражем після Reta Oposta. Це важлива зона обгонів: потрібно загальмувати після довгої прямої й не виїхати надто широко перед другим лівим поворотом."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Descida do Lago",
+          "aliases": [],
+          "explanation": {
+            "en": "The second left of Descida do Lago continues the descent before the road climbs towards Ferradura. Its name refers to the lake-side descent; the exit is about getting the car settled for the faster right-hand section ahead.",
+            "uk": "Друга ліва дуга Descida do Lago продовжує спуск перед підйомом до Ferradura. Назва нагадує про дорогу вниз до озера. На виході важливо стабілізувати болід для швидшої правої секції попереду."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Ferradura",
+          "aliases": [],
+          "explanation": {
+            "en": "Ferradura means horseshoe, a reference to the curved shape of this right-hand section. Turn 6 begins a faster sequence after the lake descent; drivers need to keep the car balanced through the second part rather than chase a single late apex.",
+            "uk": "Ferradura означає «підкова» — назва описує форму правої секції. Шостий поворот відкриває швидшу зв'язку після спуску до озера. Пілотам потрібно зберегти баланс до другої частини, а не атакувати один пізній апекс."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Ferradura",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 continues the right-hand Ferradura complex as the track changes elevation. The car is still carrying speed from Turn 6, so steering smoothly and preparing the approach to the tighter infield is more valuable than sliding wide.",
+            "uk": "Сьомий поворот продовжує праву зв'язку Ferradura на змінному рельєфі. Болід усе ще швидкий після шостого, тому плавне кермування й підготовка до тіснішої внутрішньої секції важливіші за ковзання на виході."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Laranjinha",
+          "aliases": [],
+          "explanation": {
+            "en": "Laranjinha, often translated as Little Orange, is a tighter right-hander in Interlagos's technical middle sector. Its name has competing local explanations, so the guide records the established name without asserting a single unverified origin.",
+            "uk": "Laranjinha, назву якого часто перекладають як «Маленький апельсин», — тісніший правий поворот технічної середньої секції Інтерлагоса. Походження назви пояснюють по-різному, тому довідник не видає одну неперевірену версію за факт."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Pinheirinho",
+          "aliases": [],
+          "explanation": {
+            "en": "Pinheirinho means Little Pine Tree and marks a slow left in the infield. The corner demands a tidy change of direction and controlled traction, because a wide exit leaves the car poorly positioned for the very tight right-hand Bico de Pato.",
+            "uk": "Pinheirinho означає «Маленька сосна» й позначає повільний лівий поворот усередині траси. Потрібні точна перекладка й контроль зчеплення: широкий вихід ускладнює підхід до дуже тісного правого Bico de Pato."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Bico de Pato",
+          "aliases": [],
+          "explanation": {
+            "en": "Bico de Pato means Duck's Bill, a name that fits the sharp right-hand hairpin. The slowest part of the middle sector requires strong rotation and patient throttle; an impatient exit can ruin the line into the following left-hand Mergulho.",
+            "uk": "Bico de Pato означає «Качиний дзьоб» — влучна назва різкої правої шпильки. У цій повільній частині середнього сектору потрібно розвернути болід і терпляче додати газ; поспішний вихід псує лінію до лівого Mergulho."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Mergulho",
+          "aliases": [],
+          "explanation": {
+            "en": "Mergulho translates as Dive, fitting the left-hand bend that drops away before Junção. The car gathers speed while the road falls, so drivers must anticipate the slower left ahead instead of arriving there with too much momentum.",
+            "uk": "Mergulho означає «Пірнання» — назва пасує лівій дузі, що спускається перед Junção. Болід набирає швидкість на схилі, тому пілот має заздалегідь готувати повільніший лівий віраж, а не під'їжджати до нього з надмірною швидкістю."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Junção",
+          "aliases": [],
+          "explanation": {
+            "en": "Junção means Junction and is the decisive slow left before Interlagos's long uphill acceleration. A clean exit is worth far more than a dramatic entry: poor traction here costs speed through the sweeping final section and onto the pit straight.",
+            "uk": "Junção означає «З'єднання» — це вирішальний повільний лівий перед довгим розгоном угору. Чистий вихід важливіший за ефектний вхід: втрата зчеплення тут забирає швидкість на всій фінальній дузі та стартовій прямій."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Curva do Café",
+          "aliases": [],
+          "explanation": {
+            "en": "Curva do Café begins the uphill, largely full-throttle run after Junção. The name recalls coffee, central to São Paulo's regional history. Drivers keep the car flowing through the left-hand sweep rather than treating it as a fresh slow braking point.",
+            "uk": "Curva do Café відкриває висхідний, майже повністю швидкісний відрізок після Junção. Назва нагадує про каву, важливу для історії регіону Сан-Паулу. Пілоти плавно проходять ліву дугу, а не сприймають її як нову повільну зону гальмування."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is part of the sustained uphill run towards the pit straight, often discussed with the Subida dos Boxes section. The car is already accelerating hard after Junção; a precise line matters more than searching for an invented individual corner name.",
+            "uk": "Чотирнадцятий поворот належить до тривалого підйому на стартову пряму, який часто описують разом із Subida dos Boxes. Після Junção болід уже інтенсивно прискорюється; точна траєкторія важливіша за вигадану окрему назву віражу."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "interlagos-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last numbered bend completes Interlagos's uphill sweep onto the start-finish straight. Drivers usually stay committed to acceleration, but a poor exit from Junção can still leave them vulnerable on the long climb to the braking zone at Turn 1.",
+            "uk": "Останній пронумерований перегин завершує підйом Інтерлагоса до стартової прямої. Пілоти здебільшого продовжують розгін, але невдалий вихід із Junção залишає їх уразливими на довгому підйомі до гальмування перед першим поворотом."
+          },
+          "sources": [
+            "interlagos-map",
+            "interlagos-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
