@@ -1530,6 +1530,57 @@
           "source_check": "AI crosschecked; independent editorial review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "adelaide",
+      "biography": {
+        "title": {
+          "en": "The season finale through Adelaide's streets",
+          "uk": "Фінал сезону на вулицях Аделаїди"
+        },
+        "text": {
+          "en": "From 1985 through 1995, Adelaide's 3.780-km Grand Prix route joined Victoria Park, city streets and the fast Dequetteville Terrace. The shorter modern Supercars course must not be confused with the sixteen-turn F1 circuit.",
+          "uk": "З 1985 до 1995 року траса Гран-прі Аделаїди завдовжки 3,780 км поєднувала Victoria Park, міські вулиці та швидку Dequetteville Terrace. Сучасну коротшу трасу Supercars не можна плутати із шістнадцятиповоротною конфігурацією Формули-1."
+        },
+        "source": "https://en.wikipedia.org/wiki/Adelaide_Street_Circuit",
+        "locator": "Grand Prix circuit history and full-course street sequence"
+      },
+      "moments": [
+        {
+          "id": "adelaide-1994",
+          "year": 1994,
+          "title": {
+            "en": "The title collision, Mansell's win",
+            "uk": "Зіткнення за титул і перемога Менселла"
+          },
+          "text": {
+            "en": "Schumacher and Hill both retired on lap 35 after their collision; Schumacher retained the championship, while Nigel Mansell won the race for Williams.",
+            "uk": "Шумахер і Гілл зійшли на 35-му колі після зіткнення; Шумахер зберіг чемпіонство, а гонку за Williams виграв Найджел Менселл."
+          },
+          "criterion": "championship_decider",
+          "source": "https://www.formula1.com/en/results/1994/races/620/australia/race-result",
+          "locator": "1994 Australian Grand Prix result and contemporary title account",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked; independent review pending"
+        },
+        {
+          "id": "adelaide-1995",
+          "year": 1995,
+          "title": {
+            "en": "Hill wins Adelaide's final F1 race",
+            "uk": "Гілл виграє останній Гран-прі Аделаїди"
+          },
+          "text": {
+            "en": "Damon Hill won the last Formula 1 Grand Prix held in Adelaide in 1995; Olivier Panis and Gianni Morbidelli completed the podium, both two laps behind.",
+            "uk": "Деймон Гілл виграв останній Гран-прі Формули-1 в Аделаїді 1995 року; Олів'є Паніс і Джанні Морбіделлі завершили подіум, відставши на два кола."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1995/races/637/australia/race-result",
+          "locator": "1995 Australian Grand Prix official result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked; independent review pending"
+        }
+      ]
     }
   ]
 }

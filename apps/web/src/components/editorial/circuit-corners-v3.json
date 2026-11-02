@@ -133,7 +133,10 @@
     "anderstorp-race": "https://www.formula1.com/en/results/1978/races/398/sweden/race-result",
     "jarama-map": "https://commons.wikimedia.org/wiki/File:Circuito_Permanente_del_Jarama_1980.svg",
     "jarama-names": "https://www.jarama.org/actualidad/noticias/el-circuito-del-jarama-race-celebra-su-50-aniversario-con-una-cena-de-gala",
-    "jarama-race": "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
+    "jarama-race": "https://www.formula1.com/en/results/1981/races/428/spain/race-result",
+    "adelaide-map": "https://commons.wikimedia.org/wiki/File:Adelaide_(long_route).svg",
+    "adelaide-history": "https://en.wikipedia.org/wiki/Adelaide_Street_Circuit",
+    "adelaide-race": "https://www.formula1.com/en/results/1995/races/637/australia/race-result"
   },
   "guides": [
     {
@@ -13202,6 +13205,337 @@
             "jarama-map",
             "jarama-names",
             "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "adelaide",
+      "layout_id": "adelaide-1",
+      "numbering_year": 1995,
+      "names_as_of": 1995,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "1985–1995 3.780km Grand Prix layout with sixteen F1DB turns; historical route and named segments supported, exact 1995 turn-to-apex numbering not certified by a period FIA map",
+      "sections": [
+        {
+          "id": "adelaide-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Senna Chicane · entry"
+          ],
+          "explanation": {
+            "en": "The opening chicane ends the roughly 500-metre Victoria Park pit straight. It gained Ayrton Senna's name after his death in 1994; on a 1995 lap, late braking here meant committing immediately to a second direction change.",
+            "uk": "Початкова шикана завершує приблизно 500-метрову стартову пряму у Victoria Park. Її назвали на честь Айртона Сенни після його загибелі 1994 року; на колі 1995-го пізнє гальмування одразу вимагало наступної перекладки."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Senna Chicane · exit"
+          ],
+          "explanation": {
+            "en": "The second movement of the opening chicane rewards a tidy exit rather than a heroic first apex. Walls and temporary kerbs limited recovery space, and the next fast left onto Wakefield Road arrived almost immediately.",
+            "uk": "Друга частина початкової шикани винагороджувала чистий вихід, а не надто сміливий перший апекс. Стіни й тимчасові поребрики залишали мало простору для виправлення, а попереду вже чекав швидкий лівий на Wakefield Road."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Wakefield Road left"
+          ],
+          "explanation": {
+            "en": "After the chicane, the circuit turned left and climbed gently along Wakefield Road. The car had to settle from the opening changes of direction before the more angular city-street section at East Terrace.",
+            "uk": "Після шикани траса повертала ліворуч і плавно підіймалася Wakefield Road. Машину потрібно було стабілізувати після початкових перекладок перед більш прямокутною міською секцією біля East Terrace."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "East Terrace approach"
+          ],
+          "explanation": {
+            "en": "The first of several right-angle street bends began the East Terrace section. The driver had to judge braking against close barriers, with little margin to widen the exit as on a permanent racing circuit.",
+            "uk": "Перший із кількох прямокутних міських віражів відкривав секцію East Terrace. Пілот мав точно розрахувати гальмування біля близьких бар'єрів, майже без можливості розширити вихід, як на стаціонарному автодромі."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "East Terrace transition"
+          ],
+          "explanation": {
+            "en": "This linked street corner kept the lap in the narrow urban rhythm. Rather than treating each bend in isolation, drivers had to leave room for the next ninety-degree change and preserve traction over imperfect road surfaces.",
+            "uk": "Цей міський віраж підтримував тісний ритм кола. Замість проходити кожен поворот окремо пілоти мусили залишати місце для наступної дев'яностоградусної зміни напрямку й берегти зчеплення на нерівному асфальті."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "East Terrace exit"
+          ],
+          "explanation": {
+            "en": "The final part of the East Terrace cluster prepared the faster parklands sweep. A driver who over-rotated the car in the city section would lose momentum before the open bends around the old fruit-market area.",
+            "uk": "Завершення зв'язки East Terrace готувало швидші дуги паркової частини. Пілот, який надто різко розвертав машину в міській секції, втрачав швидкість перед відкритішими віражами біля колишнього фруктового ринку."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Banana Bend approach"
+          ],
+          "explanation": {
+            "en": "The full Grand Prix route used a sweeping sequence that the venue history calls Banana Bend. The approach demanded a stable car because the next fast movement followed without a long straight to reset steering or tyres.",
+            "uk": "Повна траса Гран-прі проходила затяжною зв'язкою, яку історичні джерела називають Banana Bend. На підході потрібен стабільний болід, адже наступна швидка перекладка йшла без довгої прямої для відпочинку шин."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Banana Bend sweep"
+          ],
+          "explanation": {
+            "en": "This fast parklands sweeper carried the car towards Stag Turn. The later 2017 relocation of turns 7 and 8 belongs to the modern course and must not be projected onto the original 1985–95 Formula 1 route.",
+            "uk": "Ця швидка паркова дуга вела до Stag Turn. Пізніше перенесення сьомого й восьмого поворотів у 2017 році стосується сучасної траси й не може переноситися на первісний маршрут Формули-1 1985–95 років."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Stag Turn"
+          ],
+          "explanation": {
+            "en": "The historical circuit account explicitly identifies Stag Turn as Turn 9 on the full Grand Prix course. It led towards Rundle Road, later called Jones Straight, and linked the flowing park section to the fast run beyond.",
+            "uk": "Історичний опис траси прямо називає Stag Turn дев'ятим поворотом повної конфігурації Гран-прі. Він виводив до Rundle Road, пізніше Jones Straight, поєднуючи паркову секцію зі швидшим відрізком далі."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Rundle Road exit"
+          ],
+          "explanation": {
+            "en": "The lap continued along Rundle Road, named Jones Straight from 1987. The corner-to-straight transition rewarded clean acceleration, because even a modest exit error carried through a meaningful stretch before Brewery Bend.",
+            "uk": "Коло продовжувалося Rundle Road, яку з 1987 року називали Jones Straight. Перехід із повороту на пряму винагороджував чистий розгін, бо навіть невелика помилка на виході відчувалася аж до Brewery Bend."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Brewery Bend"
+          ],
+          "explanation": {
+            "en": "Brewery Bend was named for the Kent Town Brewery and opened onto Dequetteville Terrace. The fast right-hand sweep was important because it launched the cars towards the circuit's longest acceleration zone.",
+            "uk": "Brewery Bend отримав назву від пивоварні Kent Town Brewery й виводив на Dequetteville Terrace. Швидка права дуга була важливою, бо відкривала найдовшу зону розгону на трасі."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Brabham Straight braking"
+          ],
+          "explanation": {
+            "en": "The Dequetteville Terrace stretch, called Brabham Straight in Formula 1, ran for roughly 900 metres. Drivers approached its end at very high speed before braking hard for the Britannia Roundabout hairpin.",
+            "uk": "Ділянка Dequetteville Terrace, яку у Формулі-1 називали Brabham Straight, тягнулася приблизно на 900 метрів. Наприкінці пілоти підходили на дуже високій швидкості й різко гальмували перед шпилькою Britannia Roundabout."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Britannia hairpin"
+          ],
+          "explanation": {
+            "en": "The right-hand hairpin at Britannia Roundabout sent cars back towards Wakefield Road. It was a clear contrast to the long straight: a driver needed to rotate the car slowly without wasting traction on the return run.",
+            "uk": "Права шпилька біля Britannia Roundabout повертала боліди до Wakefield Road. Вона різко контрастувала з довгою прямою: потрібно було повільно розвернути машину й не втратити зчеплення на зворотному розгоні."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Wakefield return"
+          ],
+          "explanation": {
+            "en": "After the hairpin, the Grand Prix route returned towards the parklands. A left-hand change of direction set up a long right-hand curve, making the first exit line more important than a late and dramatic apex.",
+            "uk": "Після шпильки маршрут Гран-прі повертався до паркової зони. Ліва перекладка готувала довгу праву дугу, тому траєкторія виходу була важливішою за пізній ефектний апекс."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Victoria Park return sweep"
+          ],
+          "explanation": {
+            "en": "The long right-hand return curve brought the cars behind the pit area into Victoria Park. Drivers had to manage sustained lateral load while preparing for the final slow corner and the next lap's start.",
+            "uk": "Довга права дуга повертала боліди за піт-зоною у Victoria Park. Пілоти мусили контролювати тривале бокове навантаження й водночас готуватися до останнього повільного повороту та нового кола."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "adelaide-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [
+            "Racetrack Hairpin"
+          ],
+          "explanation": {
+            "en": "The final right-hand Racetrack Hairpin returned the cars to the pit straight. A clean exit mattered for the entire next lap; the exact 1995 numbering of the final complex still requires a contemporary numbered map.",
+            "uk": "Остання права шпилька Racetrack Hairpin виводила на стартову пряму. Чистий вихід впливав на все наступне коло; точна нумерація фінальної секції 1995 року ще потребує тогочасної пронумерованої карти."
+          },
+          "sources": [
+            "adelaide-map",
+            "adelaide-history",
+            "adelaide-race"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
