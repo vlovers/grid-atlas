@@ -275,3 +275,32 @@ test('private historical review HTTP transport stays localhost-only, tokenized a
     await new Promise((resolve, reject) => server.close(error => error ? reject(error) : resolve()));
   }
 });
+
+test('private historical review serves real EN and UK pages only behind the generated token', async () => {
+  const { fork } = await import('node:child_process');
+  const { once } = await import('node:events');
+  const child = fork(new URL('../scripts/preview-circuit-v3.mjs', import.meta.url), ['--acknowledge-unreviewed-draft', '--port', '0'], { stdio: ['ignore', 'ignore', 'pipe', 'ipc'] });
+  try {
+    const [message] = await Promise.race([
+      once(child, 'message'),
+      once(child, 'exit').then(([code]) => { throw new Error('Review server exited before startup: ' + code); })
+    ]);
+    const enUrl = new URL(message.url);
+    assert.equal(enUrl.hostname, '127.0.0.1');
+    const en = await fetch(enUrl);
+    assert.equal(en.status, 200);
+    assert.equal(en.headers.get('cache-control'), 'no-store');
+    assert.match(en.headers.get('x-robots-tag'), /noindex/);
+    const enHtml = await en.text();
+    assert.match(enHtml, /Historical routes — awaiting review/);
+    assert.match(enHtml, /id="study-sebring-section-10"/);
+    const uk = await fetch(new URL('uk', enUrl));
+    assert.equal(uk.status, 200);
+    assert.match(await uk.text(), /Нумерацію апексів не підтверджено/);
+    const badToken = new URL('/review/invalid/en', enUrl);
+    assert.equal((await fetch(badToken)).status, 404);
+  } finally {
+    child.kill('SIGTERM');
+    if (child.exitCode === null && child.signalCode === null) await once(child, 'exit');
+  }
+});
