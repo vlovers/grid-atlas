@@ -16,6 +16,8 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
     </div>;
   }
   const artwork = CIRCUIT_ARTWORK.get(guide.layout_id);
+  const mapSource = cornerSources[`${circuitId}-map`];
+  const hasFiaMap = /^https:\/\/www\.fia\.com\//.test(mapSource ?? '');
   return <div className={styles.section} data-testid="circuit-corner-guide">
     <h2 id="corner-guide-title">{uk ? 'Дослідіть повороти' : 'Explore the corners'}</h2>
     <p>{guide.numbered_turns} {uk ? 'пронумерованих поворотів' : 'numbered turns'} · {guide.layout_id}</p>
@@ -27,7 +29,7 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
       </figure>}
       <div><nav className={styles.turns} aria-label={uk ? 'Повороти за порядком кола' : 'Corners in lap order'}>{numberedCorners(guide).map(corner => <a key={corner.number} href={`#${corner.section_id}`} aria-label={`${corner.number} · ${corner.name ?? (uk ? 'Без окремої назви' : 'No individual name')}`}>{corner.number}</a>)}</nav>
         <p>{uk ? 'Оберіть номер, щоб дізнатися про назву. Кілька поворотів можуть утворювати одну іменовану секцію.' : 'Choose a number to explore its name. A named section can contain several numbered turns.'}</p>
-        <a className={styles.mapLink} href={cornerSources[`${circuitId}-map`]} target="_blank" rel="noopener noreferrer">{uk ? 'Відкрити схему FIA з номерами' : 'Open the numbered FIA map'} · {guide.numbering_year} ↗</a>
+        <a className={styles.mapLink} href={mapSource} target="_blank" rel="noopener noreferrer">{hasFiaMap ? (uk ? 'Відкрити схему FIA з номерами' : 'Open the numbered FIA map') : (uk ? 'Відкрити історичне джерело конфігурації' : 'Open the historical layout reference')} · {guide.numbering_year} ↗</a>
       </div>
     </div>
     <div className={styles.grid}>{guide.sections.map(section => <article className={styles.card} id={section.id} tabIndex={-1} key={section.id}>
@@ -36,6 +38,6 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
       {section.aliases.length > 0 && <p><small>{uk ? 'Інші та історичні назви' : 'Alternative and historical names'}: {section.aliases.join(' · ')}</small></p>}
       <a href={cornerSources[section.sources[1]]} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело про поворот' : 'Corner source'} ↗</a>
     </article>)}</div>
-    <details className={styles.note}><summary>{uk ? 'Джерела та історичні назви' : 'Sources & historical naming'}</summary><p>{uk ? 'Нумерація: офіційна схема FIA 2025. Назви й описи: джерела, зазначені біля кожної секції; якщо окремої підтвердженої назви немає, показано номер. Цей довідник стосується лише зазначеної конфігурації. Джерела перевірено за допомогою ШІ; незалежне редакційне схвалення ще не отримано.' : 'Numbering: official FIA 2025 map. Names and descriptions: see the source linked from each section; where no distinct name is established, the turn number is used. This guide applies only to the stated layout. Sources checked with AI; independent editorial approval remains pending.'}</p>{circuitId === 'monaco' && <p>{uk ? 'Число 18 у вступі статті F1.com про Монако суперечить нумерації FIA 1–19. № 17 збережено без окремої назви; Swimming Pool та Nouvelle Chicane охоплюють кілька номерів.' : 'The Monaco article’s introduction says 18, conflicting with FIA numbering 1–19. Turn 17 retains no individual name; Swimming Pool and Nouvelle Chicane span multiple numbers.'}</p>}</details>
+    <details className={styles.note}><summary>{uk ? 'Джерела та історичні назви' : 'Sources & historical naming'}</summary><p>{hasFiaMap ? (uk ? `Нумерація: схема FIA ${guide.numbering_year} року. Назви й описи: джерела біля кожної секції. Довідник стосується лише зазначеної конфігурації; незалежне редакційне схвалення ще не отримано.` : `Numbering: FIA ${guide.numbering_year} map. Names and descriptions: sources linked with each section. This guide applies only to the stated layout; independent editorial approval remains pending.`) : (uk ? `Історична конфігурація ${guide.numbering_year} року. Кількість і порядок поворотів реконструйовані за джерелами, але точна пронумерована схема FIA цієї епохи не підтверджена. Сучасні назви можуть відрізнятися; незалежна перевірка ще потрібна.` : `Historic ${guide.numbering_year} layout. Turn count and sequence are reconstructed from cited references, not authenticated against a period-numbered FIA map. Modern names may differ; independent review is still required.`)}</p>{circuitId === 'monaco' && <p>{uk ? 'Число 18 у вступі статті F1.com про Монако суперечить нумерації FIA 1–19. № 17 збережено без окремої назви; Swimming Pool та Nouvelle Chicane охоплюють кілька номерів.' : 'The Monaco article’s introduction says 18, conflicting with FIA numbering 1–19. Turn 17 retains no individual name; Swimming Pool and Nouvelle Chicane span multiple numbers.'}</p>}</details>
   </div>;
 }
