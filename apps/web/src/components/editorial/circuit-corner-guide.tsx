@@ -18,7 +18,7 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
   const artwork = CIRCUIT_ARTWORK.get(guide.layout_id);
   const mapSource = cornerSources[`${circuitId}-map`];
   const hasFiaMap = /^https:\/\/www\.fia\.com\//.test(mapSource ?? '');
-  const provisionalNumbering = guide.sections.some(section => section.confirmation_status === 'historical_numbering_unverified');
+  const provisionalNumbering = guide.sections.some(section => !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status));
   const historicalReference = guide.sections.flatMap(section => section.sources).map(key => cornerSources[key]).find(url => typeof url === 'string' && /^https:\/\//.test(url));
   const layoutReference = mapSource || historicalReference;
   return <div className={styles.section} data-testid="circuit-corner-guide">
