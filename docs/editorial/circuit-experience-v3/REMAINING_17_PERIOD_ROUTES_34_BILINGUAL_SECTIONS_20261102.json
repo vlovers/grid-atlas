@@ -168,20 +168,21 @@
         {
           "reading_order": 10,
           "label": {
-            "en": "The lap-thirty engine failure",
-            "uk": "Поломка двигуна приблизно на тридцятому колі"
+            "en": "When Brooks's Vanwall failed",
+            "uk": "Коли зламався Vanwall Брукса"
           },
           "description": {
-            "en": "Brooks's engine blew near the middle of the race, ending his defence against Hawthorn. The period account places the failure on lap 30; later retrospective chronologies may use a different completed-lap convention. The distinction matters more than pretending that the retirement happened at a known numbered apex.",
-            "uk": "Приблизно посеред гонки двигун Брукса відмовив, і він більше не міг стримувати Готорна. Репортаж того часу відносить поломку до 30-го кола; у пізніших хронологіях нумерація завершених кіл може відрізнятися. Важливіше зберегти цю відмінність, ніж вигадувати номер повороту, де стався схід."
+            "en": "Tony Brooks's Vanwall suffered an engine failure while he was pressuring Mike Hawthorn. The official F1 classification credits him with 29 completed laps, while Motor Sport's retrospective places the blow-up on lap 31. These records use different lap references and do not establish the exact corner of the retirement; the discrepancy remains open for editorial reconciliation.",
+            "uk": "Двигун Vanwall Тоні Брукса відмовив, коли той тиснув на Майка Готорна. Офіційна класифікація F1 зараховує Бруксу 29 завершених кіл, тоді як ретроспектива Motor Sport відносить поломку до 31-го кола. Ці записи використовують різні відліки, а точний поворот сходу не підтверджений. Розбіжність залишено для редакційної перевірки."
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
             "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
-            "https://www.grandprix.com/races/morocco-gp-1958.html"
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/84-1958-moroccan-gp/",
+            "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "claim_review_note": "F1 official classification: 29 completed laps. Motor Sport retrospective: blow-up on lap 31. Contemporary period report narrates failure but does not resolve turn location. Verify lap-count convention before publishing a precise retirement lap."
         },
         {
           "reading_order": 11,
