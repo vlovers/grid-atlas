@@ -1785,6 +1785,210 @@
           "source_check": "AI source check, 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "avus",
+      "biography": {
+        "title": {
+          "en": "Two straights, two ends, and the banking",
+          "uk": "Дві прямі, два розвороти й банкінг"
+        },
+        "text": {
+          "en": "The 1959 German Grand Prix was held on Berlin's AVUS rather than the Nürburgring. Its 8.3-kilometre layout consisted chiefly of two long parallel straights and two terminal bends, one of them a fearsome brick banking. The race was divided into two heats, and Tony Brooks won both. Later shortened AVUS configurations cannot supply the corner numbers for this event.",
+          "uk": "Гран-прі Німеччини 1959 року відбувся на берлінському AVUS, а не на Нюрбургрингу. Коло завдовжки 8,3 км складалося переважно з двох довгих паралельних прямих і двох розворотів, один із яких був страхітливим цегляним банкінгом. Гонку розділили на два заїзди, і Тоні Брукс виграв обидва. Пізніші скорочені конфігурації AVUS не підходять для нумерації поворотів 1959 року."
+        },
+        "source": "https://www.racingcircuits.info/europe/germany/avus.html",
+        "locator": "Period-specific F1DB layout and linked historical source; editorial draft"
+      },
+      "moments": [
+        {
+          "id": "avus-1959-heats",
+          "year": 1959,
+          "title": {
+            "en": "Brooks wins both heats",
+            "uk": "Брукс виграє обидва заїзди"
+          },
+          "text": {
+            "en": "The 1959 German Grand Prix used two separate heats because the banking raised tyre-life concerns. Tony Brooks took both victories and the aggregate win for Ferrari; a normal single-race lap chart would misrepresent the format.",
+            "uk": "Гран-прі Німеччини 1959 року провели у два окремі заїзди через побоювання щодо ресурсу шин на банкінгу. Тоні Брукс переміг у кожному й виграв загальний залік за Ferrari; звичайна схема однієї гонки спотворила б формат."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd",
+          "locator": "Formula One official race/history record for 1959; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        },
+        {
+          "id": "avus-1959-behra",
+          "year": 1959,
+          "title": {
+            "en": "A tragedy on the North banking",
+            "uk": "Трагедія на північному банкінгу"
+          },
+          "text": {
+            "en": "Jean Behra died in a supporting sports-car race at AVUS during the 1959 Grand Prix weekend. The accident happened at the steep northern banking, not during the Formula One championship race itself.",
+            "uk": "Жан Бера загинув у гонці спорткарів підтримки під час вікенду Гран-прі 1959 року на AVUS. Аварія сталася на крутому північному банкінгу, а не під час самої чемпіонатної гонки Формули-1."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd",
+          "locator": "Formula One official race/history record for 1959; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zeltweg",
+      "biography": {
+        "title": {
+          "en": "The one-year airfield Grand Prix",
+          "uk": "Єдиний чемпіонатний Гран-прі на аеродромі"
+        },
+        "text": {
+          "en": "Zeltweg's 1964 Grand Prix used a temporary military airfield layout, not the later Österreichring or today's Red Bull Ring. Its rough surface punished suspensions and drivetrains, producing an unusually high number of retirements. The four-corner F1DB outline is useful for layout identity but does not establish official period corner names.",
+          "uk": "Гран-прі 1964 року в Цельтвегу проходив тимчасовим маршрутом військового аеродрому, а не пізнішим Österreichring чи нинішнім Red Bull Ring. Нерівне покриття руйнувало підвіски й трансмісії та спричинило багато сходів. Контур F1DB із чотирма поворотами допомагає визначити конфігурацію, але не встановлює офіційних назв того часу."
+        },
+        "source": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+        "locator": "Period-specific F1DB layout and linked historical source; editorial draft"
+      },
+      "moments": [
+        {
+          "id": "zeltweg-1964-bandini",
+          "year": 1964,
+          "title": {
+            "en": "Bandini's only championship win",
+            "uk": "Єдина чемпіонатна перемога Бандіні"
+          },
+          "text": {
+            "en": "Lorenzo Bandini won the 1964 Austrian Grand Prix for Ferrari after a race of mechanical attrition. It was his first and only Formula One World Championship Grand Prix victory, on a circuit the series never used again.",
+            "uk": "Лоренцо Бандіні виграв Гран-прі Австрії 1964 року за Ferrari після гонки з численними технічними сходами. Це була його перша й єдина перемога в чемпіонатному Гран-прі Формули-1 на трасі, куди серія більше не поверталася."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/results/1964/races/221/austria/race-result",
+          "locator": "Formula One official race/history record for 1964; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        },
+        {
+          "id": "zeltweg-1964-failures",
+          "year": 1964,
+          "title": {
+            "en": "Bumps decide the race",
+            "uk": "Нерівності вирішують гонку"
+          },
+          "text": {
+            "en": "The airfield surface caused widespread mechanical trouble. John Surtees and Dan Gurney retired after running at the front, while Jim Clark also failed to finish. The circuit's shortcomings became inseparable from the history of the inaugural Austrian championship Grand Prix.",
+            "uk": "Покриття аеродрому спричинило численні поломки. Джон Сертіс і Ден Герні зійшли після боротьби попереду, Джим Кларк також не фінішував. Недоліки траси стали невіддільною частиною історії першого чемпіонатного Гран-прі Австрії."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+          "locator": "Formula One official race/history record for 1964; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        }
+      ]
+    },
+    {
+      "circuit_id": "reims",
+      "biography": {
+        "title": {
+          "en": "A slipstreaming circuit reshaped in the fifties",
+          "uk": "Траса сліпстриму, перебудована в п'ятдесятих"
+        },
+        "text": {
+          "en": "Reims-Gueux linked public roads across the Champagne countryside. The bypass of Gueux village and the 1953–54 changes at Muizon and Thillois produced the 8.302-kilometre Grand Prix layout used through 1966. The course was famous for long straights and close slipstream battles, but the names of five geographical bends do not automatically map to F1DB's seven recorded turns.",
+          "uk": "Реймс-Гу поєднував громадські дороги серед виноградників Шампані. Об'їзд села Гу та зміни 1953–1954 років у Muizon і Thillois сформували конфігурацію Гран-прі завдовжки 8,302 км, яку використовували до 1966-го. Траса славилася довгими прямими й боротьбою у сліпстримі, але п'ять географічних назв не можна автоматично прирівнювати до семи поворотів F1DB."
+        },
+        "source": "https://www.racingcircuits.info/europe/france/reims.html",
+        "locator": "Period-specific F1DB layout and linked historical source; editorial draft"
+      },
+      "moments": [
+        {
+          "id": "reims-1961-baghetti",
+          "year": 1961,
+          "title": {
+            "en": "Baghetti wins by one tenth",
+            "uk": "Багетті перемагає з відривом у десяту"
+          },
+          "text": {
+            "en": "Giancarlo Baghetti won the 1961 French Grand Prix at Reims by just 0.1 seconds over Dan Gurney. The finish illustrates how the long straights encouraged slipstream battles rather than isolated qualifying-style laps.",
+            "uk": "Джанкарло Багетті виграв Гран-прі Франції 1961 року в Реймсі з перевагою лише 0,1 секунди над Деном Герні. Цей фініш показує, як довгі прямі сприяли боротьбі у сліпстримі, а не поодиноким кваліфікаційним колам."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/results/1961/races/191/france/race-result",
+          "locator": "Formula One official race/history record for 1961; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        },
+        {
+          "id": "reims-1966-final",
+          "year": 1966,
+          "title": {
+            "en": "Brabham wins Reims' last F1 race",
+            "uk": "Бребем виграє останню гонку Ф1 у Реймсі"
+          },
+          "text": {
+            "en": "Jack Brabham won the 1966 French Grand Prix, the last Formula One World Championship round held at Reims. The result belongs to the revised 1954–72 course, not the older route through the village of Gueux.",
+            "uk": "Джек Бребем виграв Гран-прі Франції 1966 року — останній чемпіонатний етап Формули-1 у Реймсі. Результат належить зміненій конфігурації 1954–1972 років, а не старому маршруту через село Гу."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+          "locator": "Formula One official race/history record for 1966; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        }
+      ]
+    },
+    {
+      "circuit_id": "rouen",
+      "biography": {
+        "title": {
+          "en": "A wooded road circuit with a dangerous descent",
+          "uk": "Лісова дорожня траса з небезпечним спуском"
+        },
+        "text": {
+          "en": "Rouen-les-Essarts' 6.542-kilometre Grand Prix course ran through wooded public roads and steep elevation changes. Six Frères and the cobbled Nouveau Monde hairpin were landmarks of the older long layout. The later shorter route and Des Roches chicane cannot be used to reconstruct a 1968 lap.",
+          "uk": "Конфігурація Гран-прі Руана-лез-Ессар завдовжки 6,542 км проходила лісовими громадськими дорогами з різкими перепадами висоти. Six Frères і брукована шпилька Nouveau Monde були орієнтирами старого довгого маршруту. Пізніша коротша траса й шикана Des Roches не підходять для відтворення кола 1968 року."
+        },
+        "source": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+        "locator": "Period-specific F1DB layout and linked historical source; editorial draft"
+      },
+      "moments": [
+        {
+          "id": "rouen-1962-porsche",
+          "year": 1962,
+          "title": {
+            "en": "Gurney delivers Porsche's breakthrough",
+            "uk": "Герні приносить Porsche історичну перемогу"
+          },
+          "text": {
+            "en": "Dan Gurney won the 1962 French Grand Prix at Rouen in a Porsche, the marque's only World Championship Grand Prix victory as a constructor. The win belongs to the 6.542-kilometre configuration, not Rouen's original shorter circuit.",
+            "uk": "Ден Герні виграв Гран-прі Франції 1962 року в Руані на Porsche — єдину перемогу марки в чемпіонатному Гран-прі як конструктора. Вона належить конфігурації завдовжки 6,542 км, а не початковому коротшому маршруту."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/results/1962/races/199/france/race-result",
+          "locator": "Formula One official race/history record for 1962; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        },
+        {
+          "id": "rouen-1968-ickx",
+          "year": 1968,
+          "title": {
+            "en": "Ickx wins a tragic final Grand Prix",
+            "uk": "Ікс виграє трагічний останній Гран-прі"
+          },
+          "text": {
+            "en": "Jacky Ickx won the wet 1968 French Grand Prix at Rouen for Ferrari. The weekend was overshadowed by Jo Schlesser's fatal crash at Six Frères; the racing result and the tragedy must be reported separately and accurately.",
+            "uk": "Жакі Ікс виграв дощовий Гран-прі Франції 1968 року в Руані за Ferrari. Вікенд затьмарила смертельна аварія Жо Шлессера в Six Frères; спортивний результат і трагедію потрібно описувати окремо й точно."
+          },
+          "criterion": "period_race_milestone",
+          "source": "https://www.formula1.com/en/results/1968/races/260/french/race-result",
+          "locator": "Formula One official race/history record for 1968; independent verification pending",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source review, 2026-11-02; not human approved"
+        }
+      ]
     }
   ]
 }

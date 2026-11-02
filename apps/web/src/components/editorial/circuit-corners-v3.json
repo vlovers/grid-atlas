@@ -152,7 +152,21 @@
     "zolder-period-outline": "https://www.lapledger.org/circuits/zolder",
     "zolder-1984-result": "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
     "zolder-period-overview": "https://perencz.hu/f1/circuit/zolder/info/",
-    "zolder-names-modern": "https://www.speedsport-magazine.com/circuits/belgium/zolder"
+    "zolder-names-modern": "https://www.speedsport-magazine.com/circuits/belgium/zolder",
+    "avus-1959-period-layout": "https://www.racingcircuits.info/europe/germany/avus.html",
+    "avus-1959-f1-history": "https://www.formula1.com/en/latest/article/moments-in-time-the-german-grand-prix.2FaVX5yf48IUr6cLe1Lnyd",
+    "avus-1959-result": "https://www.formula1.com/en/results/1959/races/174/germany/race-result",
+    "zeltweg-1964-period-context": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE",
+    "zeltweg-1964-result": "https://www.formula1.com/en/results/1964/races/221/austria/race-result",
+    "zeltweg-1964-f1-history": "https://www.formula1.com/en/latest/article/the-austrian-grand-prix-did-you-know-.6dT60Pmcvwx0V0uIV7T9IR",
+    "reims-1954-1966-period-layout": "https://www.racingcircuits.info/europe/france/reims.html",
+    "reims-1961-result": "https://www.formula1.com/en/results/1961/races/191/france/race-result",
+    "reims-1966-grid": "https://www.formula1.com/en/results/1966/races/237/france/starting-grid",
+    "reims-1966-history": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+    "rouen-1962-result": "https://www.formula1.com/en/results/1962/races/199/france/race-result",
+    "rouen-1968-result": "https://www.formula1.com/en/results/1968/races/260/french/race-result",
+    "rouen-f1-history": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+    "rouen-period-layout": "https://www.motorsportmagazine.com/archive/article/august-1962/54/48th-french-grand-prix/"
   },
   "guides": [
     {
@@ -14520,6 +14534,590 @@
             "zolder-1984-result",
             "zolder-period-overview",
             "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "avus",
+      "layout_id": "avus-1",
+      "numbering_year": 1959,
+      "names_as_of": 1959,
+      "numbered_turns": 4,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB avus-1 8.300 km / four-turn count, 1959. The period circuit had two named terminal bends; splitting them into four numbered apexes is a provisional editorial interpretation, not a verified FIA 1959 corner chart.",
+      "sections": [
+        {
+          "id": "avus-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Nordkurve · approach"
+          ],
+          "explanation": {
+            "en": "The brick banking at the northern end was the opposite of an ordinary flat hairpin: drivers approached a wall-like curve at extraordinary speed. Nordkurve means northern bend; no period source certifies this proposed apex number.",
+            "uk": "Цегляний віраж на північному кінці був протилежністю звичайної плоскої шпильки: машини наближалися до крутої стіни на величезній швидкості. Nordkurve означає «північний поворот»; номер апексу ще не засвідчено."
+          },
+          "sources": [
+            "avus-1959-period-layout",
+            "avus-1959-f1-history",
+            "avus-1959-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "avus-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Nordkurve · banking exit"
+          ],
+          "explanation": {
+            "en": "The exit from the steep North Turn sent the car back towards a long straight. The 1959 race was split into two heats partly because of concern about tyre endurance on the banking; this subdivision is not a historic official turn label.",
+            "uk": "Вихід із крутого північного віражу виводив болід на довгу пряму. Гонку 1959 року розділили на два заїзди, зокрема через побоювання щодо витривалості шин на банкінгу; цей поділ не є офіційною історичною назвою."
+          },
+          "sources": [
+            "avus-1959-period-layout",
+            "avus-1959-f1-history",
+            "avus-1959-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "avus-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Südkurve · braking approach"
+          ],
+          "explanation": {
+            "en": "At the opposite end of the parallel straights the flat southern loop reversed the direction of travel. Südkurve literally means southern bend. It must not be confused with the later, repeatedly shortened AVUS southern hairpins.",
+            "uk": "На протилежному кінці паралельних прямих плоска південна дуга розвертала рух. Südkurve буквально означає «південний поворот». Її не можна плутати з пізнішими, неодноразово скороченими південними шпильками AVUS."
+          },
+          "sources": [
+            "avus-1959-period-layout",
+            "avus-1959-f1-history",
+            "avus-1959-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "avus-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Südkurve · return exit"
+          ],
+          "explanation": {
+            "en": "The southern turnaround was the one substantial reduction in speed after the long blast down AVUS. A tidy exit mattered because the following straight offered little chance to recover lost momentum; the fourth apex remains provisional.",
+            "uk": "Південний розворот був головним місцем зниження швидкості після довгої прямої AVUS. Чистий вихід був важливий, бо наступна пряма майже не залишала можливостей надолужити втрачений темп; четвертий апекс попередній."
+          },
+          "sources": [
+            "avus-1959-period-layout",
+            "avus-1959-f1-history",
+            "avus-1959-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zeltweg",
+      "layout_id": "zeltweg-1",
+      "numbering_year": 1964,
+      "names_as_of": 1964,
+      "numbered_turns": 4,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB zeltweg-1 3.186 km four-turn airfield layout, 1964. The four slots are descriptive, not certified FIA corner numbers; no individual period corner names or 1964 numbered FIA map located. Never transfer Österreichring/Spielberg names.",
+      "sections": [
+        {
+          "id": "zeltweg-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Airfield bend · opening sector"
+          ],
+          "explanation": {
+            "en": "The first proposed corner slot belongs to a temporary course built on an active airfield rather than a permanent road circuit. Its rough, nearly level surface made car control as important as speed; no historic name is verified.",
+            "uk": "Перший умовний поворот належить тимчасовій трасі на аеродромі, а не стаціонарному автодрому. Шорстке майже рівне покриття робило контроль боліда не менш важливим за швидкість; історичну назву не підтверджено."
+          },
+          "sources": [
+            "zeltweg-1964-period-context",
+            "zeltweg-1964-result",
+            "zeltweg-1964-f1-history"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zeltweg-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Runway connector · second bend"
+          ],
+          "explanation": {
+            "en": "The second numbered slot records another change of direction between airfield stretches. The 1964 meeting became notorious for mechanical failures on the uneven surface, but sources do not identify a unique named apex here.",
+            "uk": "Другий номер позначає ще одну зміну напрямку між ділянками аеродрому. Гонка 1964 року запам'яталася технічними відмовами на нерівному покритті, однак джерела не визначають тут окремого названого апексу."
+          },
+          "sources": [
+            "zeltweg-1964-period-context",
+            "zeltweg-1964-result",
+            "zeltweg-1964-f1-history"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zeltweg-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Runway-side bend · third sector"
+          ],
+          "explanation": {
+            "en": "On this simple four-corner course the straights carried most of the lap's speed. The third study slot highlights the challenge of keeping a stable line across rough concrete, not a claim about exact 1964 geometry.",
+            "uk": "На цій простій трасі з чотирма віражами основна швидкість припадала на прямі. Третій умовний номер підкреслює складність стабільної траєкторії на грубому бетоні, а не стверджує точну геометрію 1964 року."
+          },
+          "sources": [
+            "zeltweg-1964-period-context",
+            "zeltweg-1964-result",
+            "zeltweg-1964-f1-history"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zeltweg-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Final airfield bend · return to pits"
+          ],
+          "explanation": {
+            "en": "The last proposed bend returned cars towards the pit area for another lap of the airfield. Lorenzo Bandini won the only championship Grand Prix held here; neither that result nor a modern aerial view verifies this corner's numbering.",
+            "uk": "Останній умовний віраж повертав боліди до зони боксів перед новим колом аеродрому. Лоренцо Бандіні виграв єдиний чемпіонатний Гран-прі тут; ні результат, ні сучасний аерознімок не підтверджують нумерації."
+          },
+          "sources": [
+            "zeltweg-1964-period-context",
+            "zeltweg-1964-result",
+            "zeltweg-1964-f1-history"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "reims",
+      "layout_id": "reims-2",
+      "numbering_year": 1966,
+      "names_as_of": 1966,
+      "numbered_turns": 7,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB reims-2 8.302 km / seven-turn 1954–1966 configuration. Period road names and named bends are documented, but exact seven apex-to-number correspondences lack a period FIA numbered map. The sequence below is an editorial reading aid, not a certified 1966 turn-by-turn chart.",
+      "sections": [
+        {
+          "id": "reims-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Pit-straight departure · study slot"
+          ],
+          "explanation": {
+            "en": "The old pit buildings stood beside an exceptionally fast public-road course. This first numbered study slot follows the departure from the pit-straight area, but the exact first 1966 apex must be established from a contemporary numbered plan.",
+            "uk": "Старі бокси стояли біля надзвичайно швидкої траси з громадських доріг. Перший умовний номер стосується виїзду з району стартової прямої, але точний перший апекс 1966 року потребує історичної пронумерованої схеми."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "La Hovette · comparative landmark"
+          ],
+          "explanation": {
+            "en": "La Hovette marks the area where Reims was altered to bypass the village of Gueux. The extension changed the lap after the early 1950s, so assigning a number from the old village route would be misleading.",
+            "uk": "La Hovette позначає місце, де маршрут Реймса змінили, щоб оминути село Гу. Подовження траси змінило коло після початку 1950-х, тому переносити сюди номер зі старого маршруту через село не можна."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Annie Bousquet memorial area"
+          ],
+          "explanation": {
+            "en": "The Annie Bousquet name commemorates the Franco-Austrian driver killed near the Muizon approach in a 1956 sports-car race. It is a historical memorial reference, not proof that this exact numbered apex carried the name in 1966.",
+            "uk": "Назва Annie Bousquet вшановує франко-австрійську гонщицю, яка загинула біля підходу до Muizon під час спортивної гонки 1956 року. Це історична меморіальна назва, а не доказ її відповідності конкретному апексу 1966 року."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Muizon · hairpin complex"
+          ],
+          "explanation": {
+            "en": "The Muizon end of the circuit was rebuilt in 1953 and reprofiled for 1954. Its slow change of direction interrupted long full-throttle running; the seven-turn F1DB count does not by itself show where one apex ends and the next begins.",
+            "uk": "Кінець траси біля Muizon перебудували у 1953 році й змінили профіль до 1954-го. Повільна зміна напрямку переривала довгий розгін; сім поворотів у F1DB самі по собі не визначають межі кожного апексу."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "RN31 approach · high-speed transition"
+          ],
+          "explanation": {
+            "en": "The long RN31 section made slipstreaming a central part of racing at Reims. This proposed slot represents the transition out of that high-speed stretch, rather than a newly invented named corner or verified braking marker.",
+            "uk": "Довга ділянка RN31 робила сліпстрим важливою частиною перегонів у Реймсі. Умовний номер позначає перехід після швидкісного відрізка, а не вигаданий іменний поворот чи підтверджену точку гальмування."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Thillois · reprofiled bend"
+          ],
+          "explanation": {
+            "en": "Thillois was another major landmark reshaped before the 1954 season to carry more speed. Its name comes from the nearby village, not a sponsor; the precise alignment to this proposed turn number remains unverified.",
+            "uk": "Thillois — ще один важливий орієнтир, профіль якого змінили перед сезоном 1954 року для вищої швидкості. Назва походить від сусіднього села, а не спонсора; точна відповідність цьому номеру не перевірена."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "reims-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Return to the historic pit straight"
+          ],
+          "explanation": {
+            "en": "The final proposed study slot leads back towards the surviving grandstands and pits. Reims last hosted championship Formula One in 1966, when Jack Brabham won; this fact does not establish an official seventh-corner name.",
+            "uk": "Останній умовний номер веде назад до збережених трибун і боксів. Востаннє чемпіонатна Формула-1 приїжджала в Реймс 1966 року, коли переміг Джек Бребем; цей факт не встановлює офіційної назви сьомого повороту."
+          },
+          "sources": [
+            "reims-1954-1966-period-layout",
+            "reims-1961-result",
+            "reims-1966-grid"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "rouen",
+      "layout_id": "rouen-2",
+      "numbering_year": 1968,
+      "names_as_of": 1968,
+      "numbered_turns": 12,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB rouen-2 6.542 km / twelve-turn Grand Prix layout used 1955–1968. Local named bends are historically attested, but their assignment to all twelve numbered apexes is provisional without a contemporary FIA map. The post-1972 shorter circuit and post-1974 Des Roches chicane are excluded.",
+      "sections": [
+        {
+          "id": "rouen-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Six Frères · downhill entry"
+          ],
+          "explanation": {
+            "en": "Six Frères was a fast downhill section on the wooded Rouen roads. The name is a local landmark, not an instruction to number six turns; its high-speed character made the lack of run-off particularly serious.",
+            "uk": "Six Frères — швидкісний спуск лісовою дорогою Руана. Це місцева назва, а не вказівка на шість поворотів; висока швидкість і брак зон вильоту робили ділянку особливо небезпечною."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Six Frères · continuing descent"
+          ],
+          "explanation": {
+            "en": "The second proposed apex slot follows the continuing downhill movement towards the valley. Jo Schlesser's fatal 1968 accident occurred in the Six Frères area; the later Des Roches chicane did not exist in that Grand Prix.",
+            "uk": "Другий умовний апекс продовжує спуск у долину. Смертельна аварія Жо Шлессера 1968 року сталася в районі Six Frères; пізнішої шикани Des Roches на тому Гран-прі ще не було."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Nouveau Monde · braking approach"
+          ],
+          "explanation": {
+            "en": "Nouveau Monde, named after a nearby hamlet, was the famous tight hairpin at the bottom of the descent. Approaching it required shedding speed after the fast wooded bends; the exact apex split is provisional.",
+            "uk": "Nouveau Monde, названий за сусіднім хутором, був знаменитою тісною шпилькою внизу спуску. Перед нею доводилося скидати швидкість після швидких лісових дуг; точний поділ апексів попередній."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Nouveau Monde · cobbled hairpin"
+          ],
+          "explanation": {
+            "en": "The cobbled surface at the Nouveau Monde hairpin distinguished Rouen from a smooth modern circuit. Low-speed rotation and traction mattered here, but the cobbles were later replaced and must not be mistaken for the 1968 surface.",
+            "uk": "Бруківка на шпильці Nouveau Monde відрізняла Руан від гладкого сучасного автодрому. Тут важили розворот і зчеплення на малій швидкості, але згодом бруківку замінили — не можна плутати покриття різних років."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Sanson · uphill study landmark"
+          ],
+          "explanation": {
+            "en": "Sanson is one of the named landmarks on the climbing side of Rouen. The uphill road demanded momentum after the hairpin; a modern road photograph cannot establish the precise 1968 number of this bend.",
+            "uk": "Sanson — один із названих орієнтирів на підйомі Руана. Після шпильки важливо було зберігати темп на схилі; сучасне фото дороги не підтверджує точний номер цього віражу у 1968 році."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Beauval · wooded climb"
+          ],
+          "explanation": {
+            "en": "Beauval belongs to the sequence climbing away from Nouveau Monde. The bends were framed by trees and changing sightlines, so drivers had to judge the road beyond the immediate apex rather than rely on broad modern run-off.",
+            "uk": "Beauval належить до зв'язки підйому від Nouveau Monde. Дерева й мінливий огляд змушували пілотів оцінювати дорогу за найближчим апексом, а не покладатися на широкі сучасні зони безпеки."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "L'Étoile · road junction landmark"
+          ],
+          "explanation": {
+            "en": "L'Étoile, literally 'the star', is a named part of the Rouen road network. The label identifies a local landmark; whether it corresponded to exactly one F1DB-numbered bend in 1968 still needs a period plan.",
+            "uk": "L'Étoile, буквально «зірка», — назва ділянки дорожньої мережі Руана. Вона позначає місцевий орієнтир; чи відповідав він одному пронумерованому віражу F1DB у 1968 році, має показати історична схема."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Grésil · crest and rising road"
+          ],
+          "explanation": {
+            "en": "Grésil stood near the higher part of the course, after the long climb from the valley. Elevation made the circuit more than a chain of flat hairpins; this proposed number is not a certified 1968 apex label.",
+            "uk": "Grésil розташовувався поблизу вищої частини траси після довгого підйому з долини. Перепад висот робив коло складнішим за набір плоских шпильок; умовний номер не є підтвердженим позначенням 1968 року."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Scierie · named road bend"
+          ],
+          "explanation": {
+            "en": "Scierie is a named section of the historical course; the French word refers to a sawmill. Drivers needed to keep the car balanced as the road returned towards the pit-side portion of the lap; exact numbering is pending.",
+            "uk": "Scierie — названий відрізок історичного кола; французьке слово означає «лісопилка». Пілотам потрібно було тримати баланс на поверненні до ділянки біля боксів; точна нумерація ще перевіряється."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Paradis · late-lap landmark"
+          ],
+          "explanation": {
+            "en": "Paradis, meaning 'paradise', is another period place-name associated with Rouen. Its presence on named-corner lists does not settle the subdivision of the 6.542-kilometre lap into twelve numbered turns.",
+            "uk": "Paradis, тобто «рай», — ще одна місцева назва, пов'язана з Руаном. Її наявність у переліках поворотів не визначає поділ кола завдовжки 6,542 км на дванадцять пронумерованих віражів."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Return section · approach to pits"
+          ],
+          "explanation": {
+            "en": "The return towards the pit area combined fast public roads with limited room for mistakes. The 1968 Grand Prix used the longer pre-motorway layout; using the shorter 1972 route here would place the approach incorrectly.",
+            "uk": "Повернення до боксів поєднувало швидкі громадські дороги з мінімальним простором для помилки. Гран-прі 1968 року проходив довшим маршрутом до перебудови через автомагістраль; схема 1972 року тут не підходить."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "rouen-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Pit-side closing movement"
+          ],
+          "explanation": {
+            "en": "The final proposed slot closes the old Grand Prix lap by the pit facilities. Jacky Ickx won the wet 1968 race, but that result must not be treated as evidence for a numbered corner map or a modern chicane.",
+            "uk": "Останній умовний номер завершує старе коло біля боксів. Жакі Ікс виграв дощову гонку 1968 року, але її результат не є доказом нумерації поворотів чи існування сучасної шикани."
+          },
+          "sources": [
+            "rouen-period-layout",
+            "rouen-f1-history",
+            "rouen-1968-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
