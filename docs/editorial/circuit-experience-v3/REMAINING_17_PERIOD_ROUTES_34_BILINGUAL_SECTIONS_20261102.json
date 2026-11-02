@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "All 17 circuits have two unique historical, bilingual route sections; this does NOT assert every individual turn is mapped.",
+  "coverage_note": "Five historical routes now reuse their existing individual EN/UK research sections (47 total) with unnumbered route order, not verified corner-to-apex assignments. Other circuits retain preliminary sections. This does NOT grant release approval.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -213,38 +213,241 @@
       "independent_numbering_verified": false,
       "sections": [
         {
+          "reading_order": 1,
           "label": {
-            "en": "Fair Park asphalt deterioration",
-            "uk": "Руйнування асфальту Fair Park"
+            "en": "Start, paddock-side sweep",
+            "uk": "Старт і дуга біля паддоку"
           },
           "description": {
-            "en": "Dallas was built from temporary roads around Fair Park in oppressive summer heat. The asphalt broke apart during the weekend; a seemingly ordinary bend could suddenly change grip as the surface crumbled, affecting braking and corner exits.",
-            "uk": "Даллас проклали тимчасовими дорогами навколо Fair Park у виснажливу літню спеку. Асфальт руйнувався протягом вікенду, тому навіть звичайний поворот раптово втрачав зчеплення, змінюючи гальмування й розгін."
+            "en": "The short pit straight ran alongside the paddock before a sweeping right-hand opening corner. In 1984 the circuit was assembled inside Fair Park, with concrete barriers close to the racing line. The exit fed a set of gentle turns rather than a long acceleration zone.",
+            "uk": "Коротка стартова пряма проходила поруч із паддоком і вела до широкої першої правої дуги. У 1984 році трасу побудували всередині Fair Park, обмеживши гоночну лінію бетонними бар'єрами. На виході на пілотів чекала серія плавних віражів, а не довга пряма."
           },
-          "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
           "review_status": "pending"
         },
         {
+          "reading_order": 2,
           "label": {
-            "en": "Tight parking-area chicanes",
-            "uk": "Тісні шикани біля парковок"
+            "en": "Outside Cotton Bowl",
+            "uk": "Уздовж Cotton Bowl"
           },
           "description": {
-            "en": "The temporary circuit repeatedly interrupted short straights with tight direction changes. Its 1984 Grand Prix layout requires its own period map: later Fair Park events did not necessarily use the same sequences or corner positions.",
-            "uk": "На тимчасовій трасі короткі прямі постійно переривалися тісними перекладками. Для конфігурації Гран-прі 1984 року потрібна окрема історична карта: пізніші перегони у Fair Park не обов'язково використовували ті самі зв'язки."
+            "en": "After the opening sweep, the route bent gently left near the Cotton Bowl stadium. The crucial historical detail is the temporary route through the fairground: these bends were not permanent race-track corners, so their surface quality depended on how the event roads held up.",
+            "uk": "Після першої дуги маршрут плавно повертав ліворуч поблизу стадіону Cotton Bowl. Важливо пам'ятати, що це були тимчасові дороги виставкового комплексу, а не повороти постійного автодрому. Якість покриття залежала від того, як асфальт витримував гоночний вікенд."
           },
-          "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Left into the avenue",
+            "uk": "Лівий виїзд на алею"
+          },
+          "description": {
+            "en": "A sharper left took the cars onto one of the grounds' main avenues. This abrupt change from gentle bends to a square street corner illustrates why the Fair Park course was awkward to link into a smooth lap, particularly as rubber and asphalt broke apart in the heat.",
+            "uk": "Різкіший лівий поворот виводив боліди на одну з головних алей комплексу. Перехід від плавних дуг до прямокутного міського віражу пояснює, чому з'єднати все коло в одну плавну траєкторію було непросто, особливо коли спека руйнувала асфальт."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Right into temporary section",
+            "uk": "Правий вхід у тимчасову секцію"
+          },
+          "description": {
+            "en": "At the end of the short avenue the circuit turned right into a section created for the race. The surface was not a long-established Grand Prix facility. Drivers had to learn a newly assembled layout while the intense Texas sun and the practice sessions changed its grip.",
+            "uk": "Наприкінці короткої алеї траса повертала праворуч на спеціально облаштовану гоночну ділянку. Це не був давно освоєний автодром: пілоти вивчали новий маршрут, а техаська спека та заїзди протягом вікенду змінювали зчеплення з асфальтом."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 5,
+          "label": {
+            "en": "Decreasing-radius left arc",
+            "uk": "Ліва дуга зі звуженням радіуса"
+          },
+          "description": {
+            "en": "The temporary section included a sequence of leftward arcs whose radius tightened. That makes it a corner to plan ahead: too much speed early in the bend could leave the car with nowhere clean to go before the next abrupt right.",
+            "uk": "Тимчасова секція містила ліві дуги зі щоразу меншим радіусом. Тут важливо було планувати траєкторію наперед: надмірна швидкість на початку могла залишити болід без чистого виходу перед наступним різким правим поворотом."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 6,
+          "label": {
+            "en": "Square right after the arc",
+            "uk": "Прямокутний правий після дуги"
+          },
+          "description": {
+            "en": "The tightening left section ended with a sharp right-angle right. Its importance comes from the contrast in rhythm: after carrying the car through a continuous curve, the driver had to rotate it decisively for a very short run to an even tighter left.",
+            "uk": "Після лівої дуги зі зменшенням радіуса одразу починався різкий прямокутний правий поворот. Контраст ритму був помітним: після плавної дуги потрібно швидко розвернути болід і підготуватися до ще тіснішого лівого віражу."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 7,
+          "label": {
+            "en": "Very tight left hairpin",
+            "uk": "Дуже тісна ліва шпилька"
+          },
+          "description": {
+            "en": "A tight left hairpin followed almost immediately and directed the cars onto a perimeter road. The short distance between the right and left forced drivers to sacrifice one entry for the next exit, a recurring feature of the Fair Park street course.",
+            "uk": "Майже відразу після правого повороту йшла дуже тісна ліва шпилька, яка виводила на дорогу вздовж межі комплексу. Коротка відстань між віражами змушувала пожертвувати швидкістю одного входу заради кращого виходу з наступного."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 8,
+          "label": {
+            "en": "Right-left parking-lot jog",
+            "uk": "Права-ліва зв'язка до парковки"
+          },
+          "description": {
+            "en": "After a short acceleration zone the lap made a right-left jog into a parking area. This was a much slower and more angular sequence than a natural flowing circuit. The paired direction changes were another place where loose surface material could punish an untidy line.",
+            "uk": "Після короткого розгону коло проходило праву-ліву зв'язку до парковки. Ця секція була значно повільнішою й незграбнішою за природні швидкісні дуги. У послідовних змінах напрямку крихке покриття особливо ускладнювало неточну траєкторію."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 9,
+          "label": {
+            "en": "Tighter return chicane",
+            "uk": "Тісніша зворотна шикана"
+          },
+          "description": {
+            "en": "Another left-right chicane returned the cars to the perimeter road. A useful way to read the lap is to compare the two nearby chicanes: the first changed direction around an open parking area, while the return sequence was tighter and demanded a larger reduction in speed.",
+            "uk": "Ще одна ліва-права шикана повертала машини на дорогу вздовж комплексу. Важливо розрізняти дві сусідні зв'язки: перша змінювала напрямок біля відкритої парковки, а друга була тіснішою й вимагала сильнішого сповільнення."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 10,
+          "label": {
+            "en": "Fast double-apex left",
+            "uk": "Швидка подвійна ліва дуга"
+          },
+          "description": {
+            "en": "Following a longer straight, a broader double-apex left made up one of the faster portions of the circuit. The corner offered a brief change of character after the stop-start fairground sections, though the 1984 surface deterioration meant even a smooth-looking arc was not necessarily predictable.",
+            "uk": "Після довшої прямої широкий лівий поворот із двома апексами ставав однією зі швидших ділянок траси. Це була коротка зміна ритму після повільних секцій виставкового комплексу, однак руйнування покриття у 1984 році робило навіть плавні дуги непередбачуваними."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 11,
+          "label": {
+            "en": "Tight chicane by the next lot",
+            "uk": "Тісна шикана біля наступної парковки"
+          },
+          "description": {
+            "en": "A tight right-left chicane interrupted another parking-area straight. Instead of treating it as merely one more numbered turn, the story should describe how repetitive braking and acceleration worked the tyres and made the layout physically demanding in the heat.",
+            "uk": "Ще одну пряму між парковками переривала тісна права-ліва шикана. Важливо бачити за нею не просто черговий номер повороту, а повторення гальмувань і розгонів, які навантажували шини й виснажували пілотів у спеку."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 12,
+          "label": {
+            "en": "Broad left before the final complex",
+            "uk": "Широка ліва перед фінішною секцією"
+          },
+          "description": {
+            "en": "The next broad left was followed by a shorter straight and a more abrupt leftward kink and hairpin combination. This transition illustrates the course's uneven rhythm: one wide sweeping corner could be followed immediately by a near-stop and a fresh acceleration.",
+            "uk": "За наступною широкою лівою дугою йшла коротка пряма, а потім різкіша комбінація лівого перегину та шпильки. Це добре показує нерівний ритм траси: після плавного повороту водій майже відразу мусив гальмувати до дуже малої швидкості."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 13,
+          "label": {
+            "en": "Final sweep and pit approach",
+            "uk": "Фінальна дуга та підхід до боксів"
+          },
+          "description": {
+            "en": "The final sweeping corner directed cars back towards the start and pit area. The 1984 Grand Prix was the only Formula 1 championship race on this course; later racing at Fair Park used altered layouts. Its closing sequence must not be copied from diagrams of those later versions.",
+            "uk": "Фінальна широка дуга повертала машини до стартової зони та боксів. Гран-прі 1984 року був єдиною чемпіонатною гонкою Формули-1 на цьому маршруті. Пізніші змагання у Fair Park використовували змінені конфігурації, тому фінальну секцію не можна переносити з їхніх схем."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
+            "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
+            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
           ],
           "review_status": "pending"
         }
-      ]
+      ],
+      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json"
     },
     {
       "circuit_id": "detroit",
@@ -253,38 +456,177 @@
       "independent_numbering_verified": false,
       "sections": [
         {
+          "reading_order": 1,
           "label": {
-            "en": "Riverfront tunnel and tram tracks",
-            "uk": "Тунель на набережній та трамвайні колії"
+            "en": "Riverside starting area",
+            "uk": "Стартова зона біля річки"
           },
           "description": {
-            "en": "Detroit's original course threaded through the riverfront and downtown, crossing tram tracks and passing through a tunnel. Those were real driving hazards, not generic street-circuit imagery; the 1982 route differed from later reworked city layouts.",
-            "uk": "Перший маршрут Детройта проходив набережною й центром міста, перетинав трамвайні колії та вів через тунель. Це були реальні труднощі, а не узагальнений опис міської траси; конфігурація 1982 року відрізнялася від пізніших перебудов."
+            "en": "The original Detroit Grand Prix began beside the river, near the Renaissance Center. This 1982 waterfront start should not be confused with the later modern IndyCar track, even though parts of the same downtown road network were reused.",
+            "uk": "Перше коло Гран-прі Детройта починалося біля річки, поряд із комплексом Renaissance Center. Цей стартовий відрізок 1982 року не можна плутати з пізнішою трасою IndyCar, хоча деякі міські дороги згодом використовували знову."
           },
-          "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
           "review_status": "pending"
         },
         {
+          "reading_order": 2,
           "label": {
-            "en": "Low-speed downtown grid corners",
-            "uk": "Повільні віражі міської сітки"
+            "en": "Sweeping opening left",
+            "uk": "Широкий початковий лівий"
           },
           "description": {
-            "en": "John Watson won the inaugural Detroit race from seventeenth on the grid. The succession of square city corners helps explain why positioning a car for an overtake was difficult, but exact numerical mapping still needs the contemporary event diagram.",
-            "uk": "Джон Вотсон виграв дебютну гонку Детройта зі сімнадцятого місця на старті. Послідовність прямокутних міських поворотів пояснює, чому для обгону було складно правильно розмістити болід, але точна нумерація потребує схеми тієї епохи."
+            "en": "Just after the start the route swept left through a broad hairpin-like double bend marked by temporary concrete blocks. The race report describes this as two corners in one; that does not prove a specific official turn-number assignment.",
+            "uk": "Одразу після старту маршрут переходив у широку ліву дугу, схожу на подвійну шпильку, обмежену тимчасовими бетонними блоками. Репортаж описує її як два повороти в одному, але цього недостатньо для встановлення офіційних номерів віражів."
           },
-          "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Atwater Street return",
+            "uk": "Повернення на Atwater Street"
+          },
+          "description": {
+            "en": "The course returned along Atwater Street before a pair of square right-hand city turns. Drivers went from a more open waterfront approach into narrow streets bounded by buildings and hard barriers, with little tolerance for a misplaced line.",
+            "uk": "Траса поверталася вулицею Atwater Street, після чого йшла пара прямокутних правих поворотів. Пілоти переходили від відкритішої набережної до тісних міських вулиць між будівлями та жорсткими бар'єрами, де було мало місця для помилки."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Woodbridge approach",
+            "uk": "Підхід до Woodbridge"
+          },
+          "description": {
+            "en": "A right-hand turn led onto Woodbridge Street, past a church, and towards a very tight left hairpin. Street names are useful historical identifiers, but they should be linked to the 1982 map rather than projected onto today's downtown street race.",
+            "uk": "Правий поворот виводив на Woodbridge Street повз церкву до дуже тісної лівої шпильки. Історичні назви вулиць допомагають відновити маршрут, але їх слід звіряти зі схемою 1982 року, а не переносити на сучасні міські перегони."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 5,
+          "label": {
+            "en": "Tight left and direction changes",
+            "uk": "Ліва шпилька й перекладки"
+          },
+          "description": {
+            "en": "After a tight left hairpin, the course changed direction right and then left in rapid succession. The driver could not treat those bends as three independent braking points; a poor hairpin exit directly affected the next two changes of direction.",
+            "uk": "Після тісної лівої шпильки траса швидко змінювала напрямок праворуч, а потім знову ліворуч. Це не три незалежні зони гальмування: помилка на виході зі шпильки відразу впливала на дві наступні перекладки."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 6,
+          "label": {
+            "en": "Larned Street segment",
+            "uk": "Ділянка Larned Street"
+          },
+          "description": {
+            "en": "A succession of square city corners delivered the cars onto Larned Street for a longer straight. The contemporary report makes clear how repeated stop-start turns and changing road surfaces interrupted the rhythm despite the comparatively straight urban grid.",
+            "uk": "Послідовність прямокутних міських віражів виводила машини на довшу пряму Larned Street. Тогочасний репортаж показує, як постійні гальмування, розгони та зміни дорожнього покриття руйнували ритм, хоча міська сітка вулиць здається простою."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 7,
+          "label": {
+            "en": "Jefferson Boulevard and tramlines",
+            "uk": "Jefferson Boulevard і трамвайні колії"
+          },
+          "description": {
+            "en": "The route reached Jefferson Boulevard through another set of right-angle turns. A double left crossed tram tracks before a narrow underpass; the surface transitions and fixed urban objects demanded attention beyond the racing line itself.",
+            "uk": "Маршрут виходив на Jefferson Boulevard через чергову серію прямокутних поворотів. Подвійна ліва дуга перетинала трамвайні колії перед вузьким проїздом під мостом. Переходи між покриттями та нерухомі міські перешкоди вимагали уваги не менше, ніж власне траєкторія."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 8,
+          "label": {
+            "en": "Underpass to riverside",
+            "uk": "Під мостом до набережної"
+          },
+          "description": {
+            "en": "The cars went beneath a narrow bridge slot and headed back towards the riverfront. On a temporary city circuit, the enclosed section restricted visibility and escape room in ways that cannot be represented by a modern, featureless outline.",
+            "uk": "Боліди проходили вузьким проїздом під мостом і прямували назад до набережної. На тимчасовій міській трасі закритий простір обмежував огляд і можливість виправити помилку — цього не видно на звичайному сучасному контурі."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 9,
+          "label": {
+            "en": "Curved riverside tunnel",
+            "uk": "Вигнутий тунель біля річки"
+          },
+          "description": {
+            "en": "A tightening left led into a three-lane tunnel that curved right and climbed out to another short straight. This was a distinctive part of the 1982 Formula 1 route, not proof that the current nine-turn Detroit downtown course follows the same geometry.",
+            "uk": "Ліва дуга зі зменшенням радіуса вела в трисмуговий тунель, який вигинався праворуч і виходив на коротку пряму. Це була характерна частина маршруту Формули-1 1982 року, але вона не доводить, що сучасна дев'ятиповоротна траса Детройта має ту саму геометрію."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 10,
+          "label": {
+            "en": "Riverfront Esses and pit chicane",
+            "uk": "Прибережні ески та шикана боксів"
+          },
+          "description": {
+            "en": "Near the end of the lap, a tight S-bend returned the cars to the riverside road. A slow chicane at the pit entrance prevented a completely flat-out run across the finishing line. These details help explain why the downtown lap felt so much slower and rougher than an uncomplicated street-grid map suggests.",
+            "uk": "Ближче до завершення кола тісна S-подібна зв'язка повертала машини до дороги вздовж річки. Повільна шикана біля в'їзду в бокси не дозволяла пройти фінішний відрізок на повному газу. Такі деталі пояснюють, чому міське коло було значно повільнішим і складнішим, ніж здається за простою картою вулиць."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
           ],
           "review_status": "pending"
         }
-      ]
+      ],
+      "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json"
     },
     {
       "circuit_id": "jacarepagua",
@@ -493,38 +835,126 @@
       "independent_numbering_verified": false,
       "sections": [
         {
+          "reading_order": 1,
           "label": {
-            "en": "Spoltore highland roads",
-            "uk": "Гірські дороги біля Спольторе"
+            "en": "Piazza Duca degli Abruzzi start",
+            "uk": "Старт біля Piazza Duca degli Abruzzi"
           },
           "description": {
-            "en": "Pescara's giant road circuit climbed inland past villages such as Spoltore before returning towards the Adriatic. Drivers had to learn an exceptional length of changing road, not a compact collection of modern numbered corners.",
-            "uk": "Величезний дорожній маршрут Пескари підіймався через села, зокрема Спольторе, а потім повертав до Адріатики. Пілотам потрібно було запам'ятати надзвичайно довгу змінну дорогу, а не компактну групу сучасних нумерованих віражів."
+            "en": "The great road circuit began around Pescara's northern urban streets, close to what is now Piazza Duca degli Abruzzi. A modern boulevard is not a substitute for a dated 1957 circuit diagram, but the place explains why a World Championship lap could begin in everyday city traffic space.",
+            "uk": "Величезне дорожнє коло починалося в північній частині Пескари поблизу сучасної Piazza Duca degli Abruzzi. Нинішній міський проспект не замінює схему 1957 року, але допомагає зрозуміти, як чемпіонатне коло могло починатися серед звичайної міської забудови."
           },
-          "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
           "review_status": "pending"
         },
         {
+          "reading_order": 2,
           "label": {
-            "en": "Flying Kilometre to the coast",
-            "uk": "«Летючий кілометр» до узбережжя"
+            "en": "Via del Circuito inland run",
+            "uk": "Виїзд углиб через Via del Circuito"
           },
           "description": {
-            "en": "The celebrated Flying Kilometre formed a rapid part of the return towards Montesilvano. Stirling Moss won the 1957 Grand Prix over only eighteen laps, which reflects the extraordinary circuit length rather than a short race.",
-            "uk": "Знаменитий «летючий кілометр» був швидкою частиною маршруту до Монтезільвано. Стірлінг Мосс виграв Гран-прі 1957 року лише за вісімнадцять кіл — наслідок неймовірної довжини кола, а не короткої гонки."
+            "en": "From the city the route turned inland towards the countryside along what is now known as Via del Circuito. The crucial change was from built-up Pescara to country roads: the driving challenge grew from a compact town approach into long runs bordered by unpredictable roadside conditions.",
+            "uk": "З міста маршрут звертав углиб до сільської місцевості вздовж дороги, відомої сьогодні як Via del Circuito. Головна зміна полягала в переході від щільної забудови Пескари до заміських доріг, де швидкі відрізки поєднувалися з непередбачуваними узбіччями."
           },
-          "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Villa Raspa and climbing roads",
+            "uk": "Villa Raspa та дороги на підйомі"
+          },
+          "description": {
+            "en": "Past Villa Raspa the course entered the hills behind Pescara. This was not an isolated set of identical corners: drivers climbed through village roads and changing elevation, which made memorising the entire twenty-five-kilometre lap a much bigger task than learning a compact permanent circuit.",
+            "uk": "Після Villa Raspa траса входила в пагорби за Пескарою. Тут не було серії однакових віражів: пілоти долали сільські дороги з перепадами висот. Запам'ятати все коло завдовжки понад двадцять п'ять кілометрів було набагато складніше, ніж короткий стаціонарний автодром."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Spoltore hilltop",
+            "uk": "Пагорби Spoltore"
+          },
+          "description": {
+            "en": "Spoltore was one of the high points of the immense route. The hills created a mixture of faster bends and slower village passages, where the view of the road ahead could change quickly. Modern turn numbers would require a contemporary diagram, not assumptions from the current street grid.",
+            "uk": "Спольторе було одним із найвищих пунктів величезного маршруту. Пагорби поєднували швидші дуги з повільнішими проїздами через населені пункти, де огляд дороги постійно змінювався. Для точної нумерації потрібна історична схема, а не припущення за нинішньою мережею вулиць."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 5,
+          "label": {
+            "en": "Cappelle sul Tavo transition",
+            "uk": "Поворот маршруту біля Cappelle sul Tavo"
+          },
+          "description": {
+            "en": "The tortuous inland section eventually reached Cappelle sul Tavo. Here the character of the lap changed again: the route left the hills and headed towards long, fast roads leading back to the Adriatic coast. This explains why average speed alone says little about the variety of Pescara's corners.",
+            "uk": "Звивиста внутрішня ділянка зрештою виходила до Cappelle sul Tavo. Тут характер кола знову змінювався: маршрут залишав пагорби й прямував довгими швидкісними дорогами назад до узбережжя Адріатики. Тому середня швидкість майже не передає різноманітності поворотів Пескари."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 6,
+          "label": {
+            "en": "Flying Kilometre towards Montesilvano",
+            "uk": "«Летючий кілометр» до Montesilvano"
+          },
+          "description": {
+            "en": "The famous Flying Kilometre lay along the rapid run towards Montesilvano. Its name evokes the extraordinary speeds achieved on an ordinary road, but the dangers were real: fencing, spectators and roadside buildings could not provide the protections expected of a modern Grand Prix facility.",
+            "uk": "Знаменитий «летючий кілометр» пролягав на швидкому підході до Монтезільвано. Назва нагадує про неймовірні швидкості на звичайній дорозі, але ризики були цілком реальними: огорожі, глядачі й будинки обабіч шляху не забезпечували захисту сучасного автодрому."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 7,
+          "label": {
+            "en": "Coastal return towards Pescara",
+            "uk": "Прибережне повернення до Пескари"
+          },
+          "description": {
+            "en": "From Montesilvano the route turned south onto the Adriatic road and headed back towards Pescara. After the long inland loop, this coastal return completed a remarkably large triangular circuit. Comparing it with today's town streets requires caution because later road alterations changed the landmarks.",
+            "uk": "Від Монтезільвано маршрут звертав на південь уздовж Адріатичної дороги й повертався до Пескари. Після довгої внутрішньої петлі цей прибережний відтинок завершував величезне трикутне коло. Порівнювати його з нинішніми вулицями слід обережно через пізніші дорожні зміни."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
           ],
           "review_status": "pending"
         }
-      ]
+      ],
+      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json"
     },
     {
       "circuit_id": "phoenix",
@@ -573,38 +1003,126 @@
       "independent_numbering_verified": false,
       "sections": [
         {
+          "reading_order": 1,
           "label": {
-            "en": "Avenida da Boavista tramlines",
-            "uk": "Трамвайні колії Avenida da Boavista"
+            "en": "Seafront start and double left",
+            "uk": "Старт біля моря й подвійний лівий"
           },
           "description": {
-            "en": "The Boavista street circuit used an uphill avenue with tram tracks running along the road. Drivers had to account for cobbles, rails and abrupt turns: the route was very different from the park roads of Monsanto or the permanent circuit at Estoril.",
-            "uk": "Міська траса Боавішта використовувала висхідний проспект із трамвайними коліями. Пілотам заважали бруківка, рейки й різкі віражі: це був зовсім інший маршрут, ніж паркові дороги Монсанту чи стаціонарний Ешторіл."
+            "en": "The Boavista start area led into a broad open space and a double-left turn across tram tracks. This was a real street circuit: avoiding rail lines and uneven patches was part of choosing a line, not a picturesque detail added after the race.",
+            "uk": "Старт у Боавішті вів до широкого відкритого простору й подвійного лівого повороту через трамвайні колії. Це була справжня міська траса: об'їзд рейок і нерівностей впливав на траєкторію, а не служив мальовничою деталлю репортажу."
           },
-          "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/"
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
           "review_status": "pending"
         },
         {
+          "reading_order": 2,
           "label": {
-            "en": "Winding descent towards the coast",
-            "uk": "Звивистий спуск до узбережжя"
+            "en": "Avenida da Boavista climb",
+            "uk": "Підйом Avenida da Boavista"
           },
           "description": {
-            "en": "A faster descent eventually returned the cars towards the seafront and a shorter finishing section. Contemporary sources differ over whether liquid involved in a 1960 incident was oil or fuel, so the description should not erase that uncertainty.",
-            "uk": "Швидший звивистий спуск повертав машини до узбережжя й коротшого фінального відтинку. Історичні джерела розходяться щодо того, чи в одному з інцидентів 1960 року йшлося про оливу чи пальне, тож опис не повинен приховувати цю невизначеність."
+            "en": "The long, uphill Avenida da Boavista had tram lines down its middle and carried the cars on one carriageway. The road offered sustained acceleration but no purpose-built run-off; the ordinary urban surfaces and street furniture made this very different from a permanent Grand Prix straight.",
+            "uk": "Довга Avenida da Boavista підіймалася вгору, а трамвайні рейки проходили її серединою; боліди користувалися одним із проїздів. Тут можна було довго розганятися, але спеціальних зон вильоту не було. Звичайний асфальт і міські перешкоди робили цю пряму несхожою на стаціонарний автодром."
           },
-          "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/"
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Sharp left onto cobbles",
+            "uk": "Різкий лівий на бруківку"
+          },
+          "description": {
+            "en": "After roughly two kilometres the race route turned sharply left onto another climbing street surfaced with cobbles. Drivers had to judge braking while changing from one type of road surface to another; the tram tracks beside the route could influence the safest line.",
+            "uk": "Приблизно через два кілометри маршрут різко звертав ліворуч на ще одну висхідну вулицю з бруківкою. Пілотам доводилося обирати точку гальмування під час зміни покриття, а трамвайні колії поруч впливали на безпечну траєкторію."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Narrow side street",
+            "uk": "Вузька бічна вулиця"
+          },
+          "description": {
+            "en": "The uphill cobbled road eventually levelled before a left into a narrow side street between houses and shops. This was the classic hazard of an old town circuit: a driver could approach at substantial speed and find the road suddenly reduced to a much tighter corridor.",
+            "uk": "Після підйому брукована дорога вирівнювалася, а потім повертала ліворуч у вузьку бічну вулицю між будинками та крамницями. Типова небезпека старого міського автодрому: після швидкого підходу простір раптово стискався до тісного коридору."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 5,
+          "label": {
+            "en": "Right-left transition to descent",
+            "uk": "Права-ліва зв'язка перед спуском"
+          },
+          "description": {
+            "en": "A right-left sweep connected the upper streets to the next part of the lap. The corners linked together instead of providing separate long braking zones, so the quality of the first exit determined how well a driver could approach the fast descent.",
+            "uk": "Права-ліва зв'язка з'єднувала верхні вулиці з наступною частиною кола. Повороти переходили один в одного без довгих прямих між ними, тому якість першого виходу впливала на підхід до швидкого спуску."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 6,
+          "label": {
+            "en": "Fast winding descent",
+            "uk": "Швидкий звивистий спуск"
+          },
+          "description": {
+            "en": "The winding descent back towards the sea had a smoother surface but brought much higher speeds. The contemporary race report describes this section as especially rewarding for a skilled driver. It contrasted sharply with the tram-lined cobbles on the uphill sections.",
+            "uk": "Звивистий спуск назад до моря мав рівніше покриття, але дозволяв значно вищу швидкість. Тогочасний репортаж описує цю секцію як особливо вимогливу до майстерності пілота. Вона різко контрастувала з бруківкою та рейками на підйомах."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 7,
+          "label": {
+            "en": "Tramline crossing and finishing straight",
+            "uk": "Перетин колій перед фінішем"
+          },
+          "description": {
+            "en": "Near the seafront another double-left turn crossed tram lines and cobbles before the short finishing straight. The circuit made road-surface choices matter twice in a lap: a driver could not treat the final approach like a modern, uniformly paved final corner.",
+            "uk": "Поблизу набережної ще один подвійний лівий перетинав трамвайні колії та бруківку перед короткою фінішною прямою. Вибір траєкторії на нерівному покритті був важливим і на початку, і наприкінці кола; цей вихід не можна оцінювати як сучасний рівний фінальний поворот."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "https://www.motorsportmagazine.com/database/circuits/oporto/"
           ],
           "review_status": "pending"
         }
-      ]
+      ],
+      "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json"
     },
     {
       "circuit_id": "riverside",
@@ -653,38 +1171,187 @@
       "independent_numbering_verified": false,
       "sections": [
         {
+          "reading_order": 1,
           "label": {
-            "en": "Old airfield concrete sections",
-            "uk": "Старі бетонні ділянки аеродрому"
+            "en": "Concrete runway start",
+            "uk": "Початок на бетонній смузі"
           },
           "description": {
-            "en": "Sebring's 1959 United States Grand Prix ran on a former airfield circuit whose concrete slabs and seams gave a unique driving feel. A modern endurance-course corner list must not be used uncritically for the championship layout of that season.",
-            "uk": "Гран-прі США 1959 року в Себрингу проходив трасою колишнього аеродрому, де бетонні плити та стики створювали особливі відчуття за кермом. Сучасний перелік поворотів автодрому для гонок на витривалість не можна без перевірки переносити на конфігурацію того сезону."
+            "en": "The Grand Prix lap began along a concrete runway on Sebring's former airfield. Drivers had a short acceleration before the first artificial corner. That concrete surface and the absence of conventional permanent-circuit landmarks made braking references harder to recognise.",
+            "uk": "Коло Гран-прі починалося бетонною смугою колишнього аеродрому Себринг. Після короткого розгону пілоти під'їжджали до першого штучно позначеного повороту. Бетон і відсутність звичних орієнтирів стаціонарної траси ускладнювали вибір точки гальмування."
           },
-          "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
           ],
           "review_status": "pending"
         },
         {
+          "reading_order": 2,
           "label": {
-            "en": "Brabham's fuel-empty finish",
-            "uk": "Фініш Бребема без пального"
+            "en": "First left by tyre tubs",
+            "uk": "Перший лівий між шинними бар'єрами"
           },
           "description": {
-            "en": "Jack Brabham ran out of fuel near the finish and pushed his Cooper across the line, while Bruce McLaren won. That famous moment belongs to the original airfield Grand Prix course and must not be assigned a current numbered corner without evidence.",
-            "uk": "У Джека Бребема закінчилося пальне перед фінішем, і він штовхав Cooper через лінію, поки перемогу здобув Брюс Макларен. Цей знаменитий епізод належить до старого аеродромного маршруту й не повинен отримувати сучасний номер повороту без доказів."
+            "en": "A left-hand corner marked by rubber tubs interrupted the early runway section. The tubs supplied an artificial boundary on an otherwise open airfield, so the lap demanded careful visual judgement rather than following permanent grass verges or a deep gravel trap.",
+            "uk": "Лівий поворот, позначений гумовими бочками, переривав початкову ділянку злітної смуги. Штучні обмежувачі визначали траєкторію на відкритому полі, тому водіям доводилося уважно оцінювати лінію без звичних узбіч чи гравійних зон."
           },
-          "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Second left and surface change",
+            "uk": "Другий лівий і зміна покриття"
+          },
+          "description": {
+            "en": "A second tub-marked left followed almost immediately. Here the cars crossed from concrete to tarmac, a transition that made the grip feel different even before the next braking area. A later Sebring corner-name list cannot certify an identical 1959 apex.",
+            "uk": "Майже відразу йшов другий лівий, також позначений гумовими бочками. Тут боліди переходили з бетону на асфальт, тож відчуття зчеплення змінювалося ще до наступної зони гальмування. Сучасний список назв не доводить тотожності апексів 1959 року."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Short approach to the Esses",
+            "uk": "Короткий підхід до Esses"
+          },
+          "description": {
+            "en": "A brief straight brought the cars to the Esses, one of the few genuinely intricate parts of the huge airfield lap. Drivers needed to prepare for a linked series of steering changes rather than a single isolated turn.",
+            "uk": "Коротка пряма вела до Esses — однієї з небагатьох справді технічних частин величезного аеродромного кола. Пілотам потрібно було готуватися до кількох пов'язаних перекладок керма, а не до одного окремого повороту."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 5,
+          "label": {
+            "en": "Esses direction changes",
+            "uk": "Перекладки в Esses"
+          },
+          "description": {
+            "en": "The Esses demanded a fast rhythm of direction changes and made a useful contrast to the featureless open runways. The contemporary report identifies them as a notable driving challenge but does not supply a numbered apex map for every change.",
+            "uk": "У зв'язці Esses потрібно було швидко змінювати напрямок, що різко контрастувало з майже порожніми просторами злітних смуг. Тогочасний репортаж виділяє цю секцію як складну, але не дає нумерованої карти кожного окремого апекса."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 6,
+          "label": {
+            "en": "Sharp hairpin",
+            "uk": "Тісна шпилька"
+          },
+          "description": {
+            "en": "After another short straight, a sharp hairpin forced substantial braking and low-speed rotation. Its exit mattered because the next run between the hangars was much longer, rewarding drivers who could get on the power cleanly.",
+            "uk": "Після ще однієї короткої прямої на пілотів чекала тісна шпилька із сильним гальмуванням і розворотом на малій швидкості. Вихід був важливим перед значно довшою прямою між ангарами, де ранній чистий розгін давав перевагу."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 7,
+          "label": {
+            "en": "Long straight between hangars",
+            "uk": "Довга пряма між ангарами"
+          },
+          "description": {
+            "en": "The course accelerated down a longer straight between aircraft hangars. The airfield's built environment finally provided strong visual landmarks, but the straight was only a link to another sharp right-left combination, not a numbered racing corner itself.",
+            "uk": "Маршрут прискорювався довшою прямою між авіаційними ангарами. Будівлі нарешті давали чіткі візуальні орієнтири, але пряма лише з'єднувала ділянки перед наступною різкою правою-лівою зв'язкою й не була окремим поворотом."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 8,
+          "label": {
+            "en": "Sharp right-left at far end",
+            "uk": "Різка права-ліва зв'язка"
+          },
+          "description": {
+            "en": "A sharp right followed immediately by a left brought the lap off the long hangar straight and back towards the concrete perimeter. The braking decision needed to account for both bends; the first apex could not be treated as a stand-alone overtaking target.",
+            "uk": "Різкий правий, за яким майже відразу йшов лівий, виводив із довгої прямої між ангарами назад до бетонного периметра. Потрібно було гальмувати з урахуванням обох віражів: перший апекс не був незалежною точкою для атаки."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 9,
+          "label": {
+            "en": "Two tub-marked right-handers",
+            "uk": "Два праві з гумовими маркерами"
+          },
+          "description": {
+            "en": "Along the concrete perimeter, two right-hand turns were again marked by rubber tubs. Their surface and artificial boundaries brought the lap back to its runway character, where little fixed scenery helped drivers measure braking distance.",
+            "uk": "Уздовж бетонного периметра ще два правих повороти позначали гумовими бочками. Покриття й штучні межі повертали характер злітної смуги, де майже не було постійних орієнтирів для оцінки відстані гальмування."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "reading_order": 10,
+          "label": {
+            "en": "Wide 180-degree final turn",
+            "uk": "Широкий фінальний розворот на 180 градусів"
+          },
+          "description": {
+            "en": "A wide-radius 180-degree turn returned the cars behind the pits to the finishing line. Contemporary reporting places it about 200 yards before the start line. It completed the 1959 course; later Sebring configurations must not be substituted for this old airfield exit.",
+            "uk": "Широкий розворот приблизно на 180 градусів повертав боліди позаду боксів до фінішної прямої. Тогочасний репортаж розміщує його приблизно за 200 ярдів до лінії старту. Так завершувалося коло 1959 року, і пізніші конфігурації не можна переносити на цей вихід."
+          },
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "https://lapledger.org/races/1959/9"
           ],
           "review_status": "pending"
         }
-      ]
+      ],
+      "original_research_document": "SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json"
     }
   ]
 }
