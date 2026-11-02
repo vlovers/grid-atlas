@@ -1,5 +1,6 @@
 import { CircuitNumberedDiagram } from './circuit-numbered-diagram';
 import legacyGuides from './circuit-corner-guides.json';
+import historicRoutes from '../../../../../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json' with { type: 'json' };
 import { CIRCUIT_ARTWORK } from '@/components/circuit-layout-registry';
 import { cornerGuideFor, cornerSources, numberedCorners } from './circuit-corner-model';
 import styles from './circuit-corner-guide.module.css';
@@ -11,7 +12,17 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
   const uk = locale === 'uk';
   if (!guide) {
     const existing = legacyNamedCircuitIds.includes(circuitId) ? legacyGuides.find(item => item.id === circuitId) : null;
-    return <div className={styles.section} data-testid="circuit-corner-guide"><h2>{uk ? 'Дослідіть повороти' : 'Explore the corners'}</h2>{existing ? <div className={styles.grid}>{existing.sections.map(section => <article className={styles.card} key={section.label}><h3>{section.label}</h3><p>{section[locale]}</p><a href={section.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело' : 'Source'} ↗</a></article>)}</div> : <p>{uk ? 'Довідник назв поворотів для цієї траси ще не підготовлено.' : 'A corner-name guide is not available for this circuit yet.'}</p>}
+    const historicRoute = historicRoutes.circuits.find(item => item.circuit_id === circuitId);
+    return <div className={styles.section} data-testid="circuit-corner-guide"><h2>{uk ? 'Дослідіть повороти' : 'Explore the corners'}</h2>{existing ? <div className={styles.grid}>{existing.sections.map(section => <article className={styles.card} key={section.label}><h3>{section.label}</h3><p>{section[locale]}</p><a href={section.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело' : 'Source'} ↗</a></article>)}</div> : historicRoute ? <>
+      <p>{uk ? 'Історичні ділянки маршруту, а не пронумеровані повороти. Незалежної перевірки відповідності кожному апексу ще немає.' : 'Historical route sections, not numbered corners. Individual apex mapping has not been independently verified.'}</p>
+      <p><small>{historicRoute.period} · {historicRoute.layout_id}</small></p>
+      <div className={styles.grid}>{historicRoute.sections.map(section => <article className={styles.card} key={section.reading_order}>
+        <span className={styles.counter}>{uk ? 'Ділянка' : 'Section'} {section.reading_order}</span>
+        <h3>{section.label[locale]}</h3><p>{section.description[locale]}</p>
+        {section.source_urls.filter(url => /^https:\/\//.test(url)).map(url => <a key={url} href={url} target="_blank" rel="noopener noreferrer">{uk ? 'Історичне джерело (не доказ номера)' : 'Historical source (not number verification)'} ↗</a>)}
+      </article>)}</div>
+      <details className={styles.note}><summary>{uk ? 'Точність та права' : 'Accuracy and rights'}</summary><p>{uk ? 'Це дослідницький матеріал для зазначеної історичної конфігурації. Нумерацію та назви поворотів не встановлено; схеми й фотографії з джерел не копіювалися. Редакційне схвалення очікується.' : 'Research for the stated historic layout only. Turn numbering and names are not established; external maps and photographs have not been copied. Independent editorial approval is pending.'}</p></details>
+    </> : <p>{uk ? 'Довідник назв поворотів для цієї траси ще не підготовлено.' : 'A corner-name guide is not available for this circuit yet.'}</p>}
       {existing && <details className={styles.note}><summary>{uk ? 'Джерела назв' : 'Naming sources'}</summary><p>{uk ? 'Раніше опубліковані огляди, перевірені за допомогою ШІ. Незалежне редакційне схвалення ще не отримано. Сучасні назви не переносяться автоматично на історичні конфігурації.' : 'Existing AI-reviewed summaries. Independent editorial approval remains pending. Modern names do not automatically apply to historical layouts.'}</p></details>}
     </div>;
   }
