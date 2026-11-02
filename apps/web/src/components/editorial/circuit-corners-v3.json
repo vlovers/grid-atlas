@@ -13,7 +13,9 @@
     "austin-map": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_map_red_zones_map.pdf",
     "austin-names": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-of-the-americas.3OjhBbugiQRmN4FnlpBtBc",
     "bahrain-map": "https://www.fia.com/system/files/decision-document/2025_bahrain_grand_prix_-_event_notes_-_circuit_map_v4.pdf",
-    "bahrain-names": "https://global.honda/en/F1/circuit/bahrain-international-circuit/"
+    "bahrain-names": "https://global.honda/en/F1/circuit/bahrain-international-circuit/",
+    "suzuka-map": "https://www.fia.com/system/files/decision-document/2025_japanese_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_and_red_zone.pdf",
+    "suzuka-names": "https://www.formula1.com/en/latest/article/tremayne-from-senna-vs-prost-to-130r-why-suzuka-is-so-special-for-f1-fans.3nEHghWwsKcnf7pcbhqgQt"
   },
   "guides": [
     {
@@ -1162,6 +1164,322 @@
           "sources": [
             "bahrain-map",
             "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "suzuka",
+      "layout_id": "suzuka-2",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 18,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "suzuka-t1",
+          "numbers": [
+            1
+          ],
+          "name": "First Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "The first corner is a fast right that bends away from the pit straight. Its wide entry tempts drivers into carrying speed, but the following second right tightens the line and makes an overambitious opening costly.",
+            "uk": "Перший поворот — швидка права дуга після стартової прямої. Широкий вхід спокушає зберегти швидкість, але наступний правий віраж звужує траєкторію, тому надто сміливий початок кола легко коштує часу."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Second Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "The second right tightens the long opening complex and sends the cars towards Suzuka's climbing Esses. It is not a separate straight-line braking point: balance here determines how smoothly the car can change direction at Turn 3.",
+            "uk": "Другий правий поворот звужує довгу початкову дугу й веде до висхідної зв'язки Esses. Це не окрема зона гальмування після прямої: баланс тут визначає, наскільки плавно болід перекладеться у третьому повороті."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t3",
+          "numbers": [
+            3
+          ],
+          "name": "S Curves",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 starts the famous uphill S Curves with a quick left. The section is not about isolated apexes: a poor entry pushes the car out of position for the right-hand Turn 4 and every subsequent change of direction.",
+            "uk": "Третій поворот відкриває знамениту висхідну зв'язку S Curves швидким рухом ліворуч. Тут важливі не окремі апекси: помилка на вході залишає болід у поганому положенні перед правим четвертим і всіма наступними перекладками."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t4",
+          "numbers": [
+            4
+          ],
+          "name": "S Curves",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 reverses the car to the right as the road continues climbing. Smooth weight transfer is essential; forcing a sharp steering correction can overwork the tyres and make the next left-hand apex harder to reach.",
+            "uk": "У четвертому повороті болід перекладається праворуч, поки дорога продовжує підійматися. Важливо плавно переносити навантаження: різке коригування керма перевантажує шини й ускладнює наступний лівий апекс."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t5",
+          "numbers": [
+            5
+          ],
+          "name": "S Curves",
+          "aliases": [],
+          "explanation": {
+            "en": "The third part of the Esses, Turn 5, takes the car left again. Suzuka's first sector rewards drivers who anticipate the following right rather than spending all their grip chasing one spectacularly fast corner.",
+            "uk": "П'ятий поворот — третя частина Esses, яка знову веде ліворуч. Перший сектор Сузуки винагороджує тих, хто заздалегідь готує наступну праву дугу, а не витрачає все зчеплення на один ефектний віраж."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t6",
+          "numbers": [
+            6
+          ],
+          "name": "S Curves",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 completes the fast S Curves with a right-hand change. A clean exit positions the car for Dunlop's long uphill left; the driver needs to preserve tyre grip rather than slide out of the final part of the sequence.",
+            "uk": "Шостий поворот завершує швидку S-подібну зв'язку правою перекладкою. Чистий вихід готує довгий лівий підйом Dunlop. Пілотові важливо зберегти зчеплення, а не ковзати назовні в останній частині секції."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Dunlop Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "Dunlop is the sweeping uphill left that follows the Esses, named for the tyre company. The car remains under lateral load as the track rises; getting the line right matters because the fast first Degner is next.",
+            "uk": "Dunlop — затяжний лівий підйом після Esses, названий на честь шинної компанії. Болід залишається під боковим навантаженням, поки траса здіймається вгору. Точна траєкторія важлива, адже далі починається швидкий перший Degner."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Degner 1",
+          "aliases": [],
+          "explanation": {
+            "en": "The first Degner is a fast right-hander named for motorcycle racer Ernst Degner. It arrives after the climbing first sector, with gravel close enough to punish a wide exit; the second Degner immediately asks for a tighter line.",
+            "uk": "Перший Degner — швидкий правий віраж, названий на честь мотогонщика Ернста Дегнера. Після висхідного першого сектору гравій поруч карає за широкий вихід, а другий Degner одразу вимагає тіснішої траєкторії."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Degner 2",
+          "aliases": [],
+          "explanation": {
+            "en": "Degner 2 is the tighter right-hand follow-up. The driver must slow and rotate the car without sacrificing the exit under the figure-eight crossover; a mistake at Degner 1 can make this corner particularly awkward.",
+            "uk": "Другий Degner — тісніший правий віраж після першого. Пілот має сповільнитися й повернути болід, не зіпсувавши вихід під перехрестям траси. Помилка в першому Degner робить цю ділянку особливо складною."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is a short right-hand kink near Suzuka's crossover bridge. It does not have a consistently established distinct name in the sources used here; its practical job is to position the car for heavy braking into the slow Hairpin.",
+            "uk": "Десятий поворот — короткий правий перегин біля мосту, де маршрут Сузуки перетинає сам себе. У використаних джерелах немає усталеної окремої назви; його головне завдання — підготувати болід до сильного гальмування перед повільною шпилькою."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Hairpin",
+          "aliases": [],
+          "explanation": {
+            "en": "Suzuka's Hairpin is a very slow left after the crossover. It contrasts sharply with the fast Esses and Degners; drivers can attempt a pass under braking, but a clean exit is vital for the acceleration towards 200R.",
+            "uk": "Hairpin — дуже повільна ліва шпилька після перехрестя траси. Вона різко контрастує зі швидкими Esses і Degner. Тут можна атакувати на гальмуванні, але чистий вихід життєво важливий для розгону до 200R."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t12",
+          "numbers": [
+            12
+          ],
+          "name": "200R",
+          "aliases": [],
+          "explanation": {
+            "en": "The long right-hand 200R follows the Hairpin and takes its name from the corner's approximate radius. Drivers build speed through the sweep while preparing for the double-apex Spoon; overworking the tyres here hurts the next, slower entry.",
+            "uk": "Довга права дуга 200R після Hairpin отримала назву від приблизного радіуса повороту. Пілоти набирають швидкість у плавному віражі й готуються до двоапексного Spoon; надмірне ковзання тут заважає наступному повільнішому входу."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Spoon Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the first left-hand part of Spoon Curve, whose broad double-apex shape resembles a spoon. Braking and positioning here decide whether the driver can keep a tidy line through the second left at Turn 14.",
+            "uk": "Тринадцятий поворот — перша ліва частина Spoon Curve, широка двоапексна форма якого нагадує ложку. Гальмування й розташування боліда тут визначають, чи вдасться чисто пройти другий лівий у чотирнадцятому."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Spoon Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "The second left of Spoon is the launch onto Suzuka's long back straight. Patience with the throttle is rewarded: a poor exit loses speed for a long time before the famous 130R arrives.",
+            "uk": "Друга ліва дуга Spoon відкриває довгу задню пряму Сузуки. Терпіння з газом винагороджується: невдалий вихід забирає швидкість на великому відрізку до знаменитого 130R."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t15",
+          "numbers": [
+            15
+          ],
+          "name": "130R",
+          "aliases": [],
+          "explanation": {
+            "en": "The legendary 130R is a very fast left named for its original radius of roughly 130 metres. Its geometry was revised after serious accidents; the modern 2025 corner must not be presented as identical to the earlier version.",
+            "uk": "Легендарний 130R — дуже швидкий лівий поворот, названий за початковим радіусом близько 130 метрів. Після серйозних аварій геометрію змінили; сучасний віраж 2025 року не можна видавати за незмінну стару конфігурацію."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t16",
+          "numbers": [
+            16
+          ],
+          "name": "Casio Triangle",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 starts the Casio Triangle chicane with a sharp right after the long high-speed run through 130R. Heavy braking creates an overtaking chance; the Senna–Prost collision in 1989 made this complex part of F1 history.",
+            "uk": "Шістнадцятий поворот відкриває шикану Casio Triangle різким правим після швидкісного 130R. Сильне гальмування створює шанс для обгону; зіткнення Сенни й Проста 1989 року зробило цю зв'язку частиною історії Формули-1."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t17",
+          "numbers": [
+            17
+          ],
+          "name": "Casio Triangle",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is the left-hand half of the Casio Triangle. Drivers must change direction quickly without bouncing across the kerbs; the quality of the exit shapes their speed through the final right-hand Turn 18.",
+            "uk": "Сімнадцятий поворот — ліва частина Casio Triangle. Пілотам потрібно швидко перекласти болід, не підстрибуючи на поребриках. Якість виходу визначає швидкість у фінальному правому вісімнадцятому повороті."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "suzuka-t18",
+          "numbers": [
+            18
+          ],
+          "name": "Final Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "The final right-hander connects the Casio Triangle to Suzuka's pit straight. It is not another slow hairpin: getting the car settled and accelerating cleanly here is crucial before the next lap's fast opening right.",
+            "uk": "Остання права дуга з'єднує Casio Triangle зі стартовою прямою Сузуки. Це не ще одна повільна шпилька: стабільність і чистий розгін важливі перед швидким першим правим поворотом наступного кола."
+          },
+          "sources": [
+            "suzuka-map",
+            "suzuka-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
