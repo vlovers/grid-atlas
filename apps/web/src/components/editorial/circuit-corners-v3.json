@@ -32,7 +32,9 @@
     "catalunya-map": "https://www.fia.com/system/files/decision-document/2025_barcelona_event_-_circuit_map_-_barcelona_2025_0.pdf",
     "catalunya-names": "https://www.formula1.com/en/latest/article/circuit-de-barcelona-catalunya-to-feature-new-configuration-for-2023-spanish.6ZQgemg7eOlAJbBtu56PHE",
     "montreal-map": "https://www.fia.com/system/files/decision-document/2025_canadian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_ers_battery_containment_area_red_zones.pdf",
-    "montreal-names": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3"
+    "montreal-names": "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
+    "imola-map": "https://www.fia.com/system/files/decision-document/2025_imola_event_-_circuit_map_-_imola_2025_0.pdf",
+    "imola-names": "https://www.autodromoimola.it/downloads/f1/F1_IMOLA_2025_pricelist_v1.pdf"
   },
   "guides": [
     {
@@ -3651,6 +3653,339 @@
           "sources": [
             "montreal-map",
             "montreal-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "imola",
+      "layout_id": "imola-3",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 19,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "imola-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 is a shallow, flat-out kink on the long run from the pits. It is a numbered bend on the FIA map, not the first apex of the Tamburello chicane, which begins at Turn 2.",
+            "uk": "Перший — плавний перегин, який проходять на повному газу після боксів. На схемі FIA він має власний номер, але не є першим апексом шикани Tamburello: вона починається з другого повороту."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Variante Tamburello",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the left-hand entry to the modern Tamburello chicane. The fast bend of the pre-1995 circuit was replaced after the tragedies of 1994; today's braking and kerb line must not be confused with the old flat-out approach.",
+            "uk": "Другий — лівий вхід до сучасної шикани Tamburello. Швидку дугу конфігурації до 1995 року замінили після трагедій 1994-го; нинішні гальмування й поребрики не можна плутати зі старим проходженням на повному газу."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Variante Tamburello",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 switches the car right in the middle of Tamburello. A driver who attacks the first kerb too hard may arrive here with an unsettled chassis, losing speed before the final part of the chicane.",
+            "uk": "Третій переводить болід праворуч у середині Tamburello. Пілот, який надто агресивно атакує перший поребрик, може опинитися тут на нестабільній машині й втратити швидкість перед виходом із шикани."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Variante Tamburello",
+          "aliases": [],
+          "explanation": {
+            "en": "The fourth numbered turn completes Tamburello and releases the car onto the next fast run. The crucial skill is unwinding the steering without bouncing off the exit kerb; Variante Villeneuve follows soon afterwards.",
+            "uk": "Четвертий завершує Tamburello й відкриває наступний швидкий відрізок. Найважливіше вчасно випрямити кермо й не підстрибнути на вихідному поребрику: попереду вже чекає Variante Villeneuve."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Variante Villeneuve",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 begins Variante Villeneuve with a quick left-hand change. The complex honours Gilles Villeneuve, and its modern chicane form belongs to the safety-conscious layout after 1994 rather than the original high-speed route.",
+            "uk": "П'ятий відкриває Variante Villeneuve швидкою перекладкою ліворуч. Комплекс названо на честь Жиля Вільньова, а сучасна форма шикани належить до безпечнішої конфігурації після 1994 року, а не до старого швидкісного маршруту."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Variante Villeneuve",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is the tighter right-hand half of Variante Villeneuve. Drivers brake and rotate the car while preparing for Tosa almost immediately; an untidy exit can erase the speed carried through the opening chicane.",
+            "uk": "Шостий — тісніша права частина Variante Villeneuve. Пілоти гальмують і розвертають болід, майже відразу готуючись до Tosa; неточний вихід може знищити швидкість, збережену в початковій шикані."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Tosa",
+          "aliases": [],
+          "explanation": {
+            "en": "Tosa is the slow left-hand hairpin at Turn 7, one of Imola's clearest passing opportunities. Heavy braking leads into a climb, so drivers must prioritise traction on exit rather than carry too much speed into the apex.",
+            "uk": "Tosa — повільна ліва шпилька сьомого повороту, одне з найкращих місць для обгону в Імолі. Після сильного гальмування починається підйом, тому на виході важливіше зчеплення, ніж надмірна швидкість на апексі."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is a fast kink on the uphill run from Tosa to Piratella. It rarely draws attention on its own, but the driver must keep the car composed before the much more demanding blind left-hander ahead.",
+            "uk": "Восьмий — швидкий перегин на підйомі від Tosa до Piratella. Сам по собі він рідко привертає увагу, проте болід потрібно втримати стабільним перед значно складнішим сліпим лівим віражем попереду."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Piratella",
+          "aliases": [],
+          "explanation": {
+            "en": "Piratella at Turn 9 is a quick left-hand corner with a blind exit and a downhill run afterwards. Drivers need confidence in the front axle, but going wide can breach track limits and spoil the approach to Acque Minerali.",
+            "uk": "Piratella у дев'ятому — швидкий лівий поворот зі сліпим виходом і подальшим спуском. Потрібна впевненість у передній осі, але широкий вихід може порушити межі траси й зіпсувати підхід до Acque Minerali."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is the fast transition away from Piratella towards the Acque Minerali braking zone. The car is descending, so the driver must settle its balance before committing to the technical sequence of Turns 11–13.",
+            "uk": "Десятий — швидкий перехід від Piratella до зони гальмування Acque Minerali. Болід спускається, тому пілот має стабілізувати його баланс перед технічною зв'язкою поворотів 11–13."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Acque Minerali",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 opens the Acque Minerali complex with a quicker right-hand bend. The name recalls the mineral-water springs of the area; drivers carry speed downhill but must already prepare for the much tighter second right.",
+            "uk": "Одинадцятий відкриває Acque Minerali швидшим правим віражем. Назва нагадує про місцеві джерела мінеральної води; пілоти зберігають швидкість на спуску, але вже готуються до значно тіснішого другого правого."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Acque Minerali",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is the slower right-hand heart of Acque Minerali, where braking and kerb choice are particularly demanding. Carrying too much speed into this apex can push the car wide and ruin the uphill exit.",
+            "uk": "Дванадцятий — повільніше праве ядро Acque Minerali, де особливо складно вибрати гальмування й поребрик. Надлишкова швидкість на вході може винести болід широко та зіпсувати розгін на підйомі."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Acque Minerali",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 completes Acque Minerali with a left-hand change as the track climbs away. Drivers need to release the steering smoothly, preserving acceleration towards the Gresini/Variante Alta chicane.",
+            "uk": "Тринадцятий завершує Acque Minerali лівою перекладкою на виході з підйомом. Потрібно плавно випрямити кермо й зберегти розгін до шикани Gresini/Variante Alta."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Variante Alta / Gresini",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is the right-hand entry to the high Variante Alta chicane, renamed in honour of Imola-born motorcycle racer and team manager Fausto Gresini in 2022. The heavy kerbs can save time but also bounce the car towards the barriers.",
+            "uk": "Чотирнадцятий — правий вхід до високої шикани Variante Alta, яку у 2022 році назвали на честь уродженця Імоли, мотогонщика й керівника команди Фаусто Грезіні. Високі поребрики допомагають виграти час, але можуть підкинути болід до бар'єрів."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Variante Alta / Gresini",
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 15 completes the Gresini chicane. Drivers must straighten the car early and avoid excessive kerb bounce, because the next downhill section leads towards the decisive braking at Rivazza.",
+            "uk": "Лівий п'ятнадцятий завершує шикану Gresini. Потрібно рано випрямити болід і уникнути підстрибування на поребрику, адже наступний спуск веде до вирішального гальмування перед Rivazza."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 is a fast kink on the downhill run from Variante Alta to Rivazza. The driver is gathering speed, but the next corner requires a difficult braking phase on a descending approach.",
+            "uk": "Шістнадцятий — швидкий перегин на спуску від Variante Alta до Rivazza. Болід набирає швидкість, однак наступний поворот вимагає складного гальмування на дорозі, що йде вниз."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t17",
+          "numbers": [
+            17
+          ],
+          "name": "Rivazza",
+          "aliases": [],
+          "explanation": {
+            "en": "The first Rivazza left-hander at Turn 17 is a downhill braking trap. Drivers arrive quickly and can easily brake too late; gravel beyond the corner makes a small mistake much more expensive than at a modern asphalt-runoff venue.",
+            "uk": "Перший лівий Rivazza у сімнадцятому — пастка гальмування на спуску. Боліди під'їжджають швидко, і легко загальмувати запізно; гравій за поворотом робить невелику помилку дорожчою, ніж на трасах з асфальтовими зонами безпеки."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t18",
+          "numbers": [
+            18
+          ],
+          "name": "Rivazza",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 is the second left of Rivazza and the real launch point for Imola's long pit straight. A driver who sacrifices a little entry speed to get traction on exit may gain more time over the entire following acceleration.",
+            "uk": "Вісімнадцятий — другий лівий Rivazza й справжня точка розгону на довгу стартову пряму Імоли. Пілот, який трохи пожертвує швидкістю на вході заради зчеплення на виході, може виграти більше часу протягом усього наступного розгону."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "imola-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 is the shallow right-hand kink after Rivazza, normally taken flat as the cars accelerate past the pits. It is counted on the 2025 FIA map but should not be mistaken for an extra slow corner.",
+            "uk": "Дев'ятнадцятий — плавний правий перегин після Rivazza, який зазвичай проходять на повному газу під час розгону повз бокси. На схемі FIA 2025 він має номер, але його не слід плутати з додатковим повільним віражем."
+          },
+          "sources": [
+            "imola-map",
+            "imola-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
