@@ -14,7 +14,8 @@
       "review_status": "independent_review_pending",
       "sources": {
         "map": "https://www.fia.com/system/files/decision-document/2025_miami_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_zone_emergency_exits_and_red_zones_.pdf",
-        "names": "https://www.formula1.com/en/racing/2025/miami"
+        "names": "https://www.formula1.com/en/racing/2025/miami",
+        "race": "https://api.fia.com/news/f1-piastri-wins-miami-grand-prix-ahead-norris-and-russell"
       },
       "sections": [
         {
@@ -30,7 +31,8 @@
           },
           "sources": [
             "miami-map",
-            "miami-names"
+            "miami-names",
+            "miami-2025-race"
           ],
           "confirmation_status": "source_checked_ai"
         },
