@@ -15,10 +15,13 @@ export function circuitEditionDigest(circuitId: string) {
 
 /** AI/source checks are evidence, not independent approval of individual turn mappings. */
 export function hasPublicationReadyCornerGuide(circuitId: string) {
-  const guide = candidateCornerGuides.find(entry => entry.circuit_id === circuitId);
-  if (!guide || guide.review_status !== 'independent_review_approved') return false;
+  // Ambiguous circuit IDs must never resolve to whichever guide happens to be first.
+  const matches = candidateCornerGuides.filter(entry => entry.circuit_id === circuitId);
+  if (matches.length !== 1) return false;
+  const [guide] = matches;
+  if (guide.review_status !== 'independent_review_approved') return false;
   if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
-  if (!guide.layout_id?.trim() || !Number.isInteger(guide.numbering_year)) return false;
+  if (!guide.layout_id?.trim() || !Number.isInteger(guide.numbering_year) || guide.numbering_year < 1950 || guide.numbering_year > 2100) return false;
   const ids = guide.sections.map(section => section.id);
   if (ids.some(id => !id?.trim()) || new Set(ids).size !== ids.length) return false;
   const numbers = guide.sections.flatMap(section => section.numbers);
