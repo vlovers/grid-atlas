@@ -510,6 +510,108 @@
           "source_check": "AI source comparison, 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "biography": {
+        "title": {
+          "en": "From the forest to the stadium",
+          "uk": "Від лісу до стадіону"
+        },
+        "text": {
+          "en": "Hockenheim once sent Formula 1 cars racing deep into the forest on long straights interrupted by chicanes. The 2002 redesign cut that journey short and brought the lap back towards the Motodrom, with the Parabolika and Spitzkehre creating new overtaking challenges. The 2019 German Grand Prix showed how unpredictable the shortened circuit could still be when rain arrived.",
+          "uk": "Колись Гоккенгайм відправляв боліди Формули-1 далеко в ліс довгими прямими, перерваними шиканами. Перебудова 2002 року скоротила маршрут і повернула коло ближче до Motodrom, а Parabolika та Spitzkehre створили нові можливості для обгонів. Гран-прі Німеччини 2019 року показав, наскільки непередбачуваною залишається скорочена траса під дощем."
+        },
+        "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
+        "locator": "F1 race report and dated FIA circuit map"
+      },
+      "moments": [
+        {
+          "id": "hockenheimring-2019-1",
+          "year": 2019,
+          "title": {
+            "en": "Five stops, one improbable victory",
+            "uk": "П'ять зупинок — одна неймовірна перемога"
+          },
+          "text": {
+            "en": "Max Verstappen endured wheelspin at the start and even spun through a full circle as grip changed, yet Red Bull's repeated tyre decisions kept him in contention. He made five pit stops and won the rain-soaked German Grand Prix. The race rewarded teams willing to react to the weather rather than trust a fixed strategy.",
+            "uk": "Макс Ферстаппен пробуксував на старті й навіть розвернувся на повне коло, коли зчеплення змінювалося, але рішення Red Bull щодо шин залишили його в боротьбі. Він зробив п'ять піт-стопів і переміг у дощовому Гран-прі Німеччини. Гонка винагородила команди, які реагували на погоду, а не трималися незмінної стратегії."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
+          "locator": "F1 race report / race event",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02, independent review pending"
+        },
+        {
+          "id": "hockenheimring-2019-2",
+          "year": 2019,
+          "title": {
+            "en": "Vettel climbs from twentieth to second",
+            "uk": "Феттель піднімається з двадцятого на друге місце"
+          },
+          "text": {
+            "en": "Sebastian Vettel had started last after qualifying trouble at his home race. While other favourites crashed or lost control on the wet surface, he steadily worked forward and gained seven positions in the final fifteen laps. He finished second behind Verstappen, with Daniil Kvyat taking a surprise third for Toro Rosso.",
+            "uk": "Себастьян Феттель стартував останнім після проблем у кваліфікації домашньої гонки. Поки інші фаворити потрапляли в аварії або втрачали контроль на мокрій трасі, він поступово пробивався вперед і відіграв сім позицій за останні п'ятнадцять кіл. Феттель фінішував другим за Ферстаппеном, а Даніїл Квят несподівано став третім за Toro Rosso."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
+          "locator": "F1 race report / race event",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02, independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "paul-ricard",
+      "biography": {
+        "title": {
+          "en": "Mistral, Signes and the many faces of Paul Ricard",
+          "uk": "Mistral, Signes і численні обличчя Поль-Рікара"
+        },
+        "text": {
+          "en": "Paul Ricard has hosted Formula 1 in several very different configurations. The modern French Grand Prix lap includes a chicane interrupting the Mistral straight, the fast Signes corner and the long Beausset sweep. The distinctive striped run-off areas may make the circuit look forgiving, but the 2019 FIA notes show how closely pit-lane geometry and track limits were managed.",
+          "uk": "Поль-Рікар приймав Формулу-1 на кількох дуже різних конфігураціях. Сучасне коло Гран-прі Франції містить шикану посеред прямої Mistral, швидкий Signes і довгу дугу Beausset. Характерні смугасті зони вильоту можуть створювати враження поблажливої траси, але документи FIA 2019 року показують, наскільки ретельно контролювали геометрію піт-лейну й межі кола."
+        },
+        "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
+        "locator": "F1 race report and dated FIA circuit map"
+      },
+      "moments": [
+        {
+          "id": "paul-ricard-2019-1",
+          "year": 2019,
+          "title": {
+            "en": "Mercedes controls the French Grand Prix",
+            "uk": "Mercedes контролює Гран-прі Франції"
+          },
+          "text": {
+            "en": "Lewis Hamilton converted pole into a commanding victory at Paul Ricard, finishing more than eighteen seconds ahead of team-mate Valtteri Bottas. Charles Leclerc came third and threatened Bottas late in the race. It was Mercedes' eighth consecutive win of the 2019 season, a demonstration of how complete its advantage had become.",
+            "uk": "Льюїс Гамільтон перетворив поул на впевнену перемогу на Поль-Рікарі, випередивши напарника Валттері Боттаса більш ніж на вісімнадцять секунд. Шарль Леклер фінішував третім і наприкінці гонки наблизився до Боттаса. Це була восьма поспіль перемога Mercedes у сезоні 2019 року — свідчення величезної переваги команди."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
+          "locator": "F1 race report / race event",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02, independent review pending"
+        },
+        {
+          "id": "paul-ricard-2019-2",
+          "year": 2019,
+          "title": {
+            "en": "The last-lap fight at the Mistral chicane",
+            "uk": "Боротьба останнього кола біля шикани Mistral"
+          },
+          "text": {
+            "en": "Lando Norris struggled with hydraulic trouble late in the race, leaving his McLaren vulnerable to Daniel Ricciardo. Ricciardo attacked around the outside of Turn 8 on the final lap, ran wide and forced Norris off track on rejoining. The stewards investigated the incident, a reminder that Paul Ricard's generous asphalt does not erase the rules of racing.",
+            "uk": "Наприкінці гонки Ландо Норріс зіткнувся з проблемами гідравліки, і його McLaren став вразливим для атаки Даніеля Ріккардо. На останньому колі Ріккардо спробував обійти суперника зовні восьмого повороту, виїхав за межі траси й витіснив Норріса під час повернення. Стюарди розслідували епізод — широкі асфальтові зони Поль-Рікара не скасовують правил боротьби."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
+          "locator": "F1 race report / race event",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02, independent review pending"
+        }
+      ]
     }
   ]
 }
