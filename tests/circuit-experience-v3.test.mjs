@@ -147,3 +147,21 @@ test('seven unapproved historic route studies remain research-only and unpublish
     assert.equal(isCircuitEditionApproved(id), false, id + ': no publication approval');
   }
 });
+
+test('source-checked AI turn mappings alone can never unlock publication', async () => {
+  const { hasPublicationReadyCornerGuide } = await import('../apps/web/src/components/editorial/circuit-release.ts');
+  const guide = candidateCornerGuides.find(item => item.circuit_id === 'silverstone');
+  assert.ok(guide);
+  const originalStatus = guide.review_status;
+  const originalSections = guide.sections.map(section => section.confirmation_status);
+  try {
+    guide.review_status = 'independent_review_approved';
+    for (const section of guide.sections) section.confirmation_status = 'source_checked_ai';
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'AI source checks are not independent turn mapping verification');
+    for (const section of guide.sections) section.confirmation_status = 'historical_numbering_unverified';
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'historical route research must remain unpublished');
+  } finally {
+    guide.review_status = originalStatus;
+    guide.sections.forEach((section, index) => { section.confirmation_status = originalSections[index]; });
+  }
+});
