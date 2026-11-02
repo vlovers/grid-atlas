@@ -148,7 +148,11 @@
     "dijon-venue-history": "https://www.circuit-dijon-prenois.com/en/history-of-the-racetrack-en/",
     "dijon-period-layout": "https://lapledger.org/circuits/dijon",
     "dijon-named-corners-map": "https://driver61.com/wp-content/uploads/2020/10/Dijon-Prenois-Track-Map-Driver61.pdf",
-    "dijon-1984-result": "https://www.formula1.com/en/results/1984/races/470/france/race-result"
+    "dijon-1984-result": "https://www.formula1.com/en/results/1984/races/470/france/race-result",
+    "zolder-period-outline": "https://www.lapledger.org/circuits/zolder",
+    "zolder-1984-result": "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
+    "zolder-period-overview": "https://perencz.hu/f1/circuit/zolder/info/",
+    "zolder-names-modern": "https://www.speedsport-magazine.com/circuits/belgium/zolder"
   },
   "guides": [
     {
@@ -14190,6 +14194,332 @@
             "dijon-period-layout",
             "dijon-named-corners-map",
             "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zolder",
+      "layout_id": "zolder-2",
+      "numbering_year": 1984,
+      "names_as_of": 1984,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB 1975–1982 and 1984 4.262km fifteen-turn Grand Prix layout. Names in this candidate are explicitly comparative modern geographical labels, not claimed to be 1984 official names. Period FIA numbered map unavailable; each apex-number and name alignment is unverified.",
+      "sections": [
+        {
+          "id": "zolder-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Eerste · opening left"
+          ],
+          "explanation": {
+            "en": "The first bend on the Zolder lap is associated with the name Eerste, literally 'first'. Cars arrived from the pit straight needing a precise change of direction; modern name lists do not prove the numbering of the 1984 15-turn layout.",
+            "uk": "Перший віраж Золдера пов'язаний із назвою Eerste — буквально «перший». Після стартової прямої пілотам потрібна точна зміна напрямку; сучасні списки назв не доводять нумерації 15 поворотів конфігурації 1984 року."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Sterrewacht · approach"
+          ],
+          "explanation": {
+            "en": "The Sterrewacht area follows the opening bend and begins the canal-side sequence. Its name refers to an observatory; a driver has to carry speed without running out of room for the next direction change. The apex numbering remains provisional.",
+            "uk": "Ділянка Sterrewacht йде після першого повороту й відкриває зв'язку біля каналу. Назва відсилає до обсерваторії; потрібно зберігати швидкість, залишаючи місце для наступної перекладки. Номер апексу попередній."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Sterrewacht · second arc"
+          ],
+          "explanation": {
+            "en": "A second movement through the observatory-side complex asks for stable steering rather than a separate long acceleration. Zolder's short intervals between bends magnify a small mistake here; this split is a reconstruction, not an official period turn label.",
+            "uk": "Другий рух у зв'язці біля обсерваторії вимагає стабільного кермування, а не окремого довгого розгону. На Золдері короткі відстані між віражами збільшують наслідки помилки; поділ реконструйований, а не офіційний."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Kanaalbocht · entry"
+          ],
+          "explanation": {
+            "en": "Kanaalbocht takes its name from the nearby Albert Canal. The canal-side part of the lap was a distinct geographical landmark, but the exact historical division into numbered apexes needs a contemporary map rather than a modern ten-corner guide.",
+            "uk": "Kanaalbocht названий за сусіднім каналом Альберта. Ділянка біля каналу була впізнаваним орієнтиром, однак точний історичний поділ на номери потребує схеми того часу, а не сучасного путівника з десятьма поворотами."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Kanaalbocht · exit"
+          ],
+          "explanation": {
+            "en": "The second movement of the canal complex rewards a tidy exit towards the following bend. With little room to reset the car, steering corrections carry forward; whether this counted as a separate 1984 corner is still unverified.",
+            "uk": "Друга частина зв'язки біля каналу винагороджує чистий вихід до наступного віражу. Місця для стабілізації боліда мало, тож зайві коригування впливають на подальшу траєкторію; окремий номер у 1984 році не підтверджений."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Bianchi area · approach"
+          ],
+          "explanation": {
+            "en": "The corner now known for Lucien Bianchi is a reference point before the faster back section. Its commemorative name belongs to the venue's history, but a present-day map cannot establish when that exact label was applied to the 1984 racing line.",
+            "uk": "Поворот, відомий нині на честь Люсьєна Б'янкі, слугує орієнтиром перед швидшою задньою секцією. Меморіальна назва належить історії траси, але сучасна карта не доводить, коли саме її застосували до траєкторії 1984 року."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Back-section transition"
+          ],
+          "explanation": {
+            "en": "This part of the 4.262-kilometre historical lap connected the canal-side bends with the central braking sections. Unlike a modern layout map, the period route cannot be reduced to ten numbered corners without losing the original subdivisions.",
+            "uk": "Ця частина історичного кола завдовжки 4,262 км з'єднувала повороти біля каналу із центральними зонами гальмування. На відміну від сучасної карти, старий маршрут не можна звести до десяти номерів, не втративши первісного поділу."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Central change of direction · entry"
+          ],
+          "explanation": {
+            "en": "A change of direction in Zolder's middle sector forces the driver to manage braking and kerb placement together. The original 1984 layout had fifteen recorded turns, so the modern sequence of chicanes must not be silently projected backwards.",
+            "uk": "Зміна напрямку в середній секції Золдера вимагала одночасно контролювати гальмування та положення щодо поребриків. У конфігурації 1984 року було зафіксовано п'ятнадцять поворотів, тому сучасні шикани не можна без перевірки переносити назад."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Central change of direction · exit"
+          ],
+          "explanation": {
+            "en": "The next movement of the central complex is most useful as a reminder that a chicane is driven as one connected task. A fast first apex means little if it leaves the car off line for the second; the numbered split remains provisional.",
+            "uk": "Наступний рух центральної зв'язки нагадує, що шикана проходиться як єдине завдання. Швидкий перший апекс мало допоможе, якщо машина опиниться не на тій траєкторії перед другим; нумерація лишається попередньою."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Butte section"
+          ],
+          "explanation": {
+            "en": "The rising middle part of Zolder is associated in modern guides with Butte, a term for a mound or hill. The change in elevation adds another variable to braking and traction; the 1984 placement of this name has not been independently certified.",
+            "uk": "Підйом у середній частині Золдера в сучасних описах пов'язують із Butte — пагорбом. Перепад висоти додає складності гальмуванню та зчепленню; використання цієї назви саме для апексу 1984 року незалежно не засвідчене."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Terlamen · entry"
+          ],
+          "explanation": {
+            "en": "Terlamenbocht is the circuit's well-known long right-hand bend, carrying the older name of the venue. Entering a sustained arc demands patience and tyre grip rather than one dramatic late-braking manoeuvre; the exact numbered entry is under review.",
+            "uk": "Terlamenbocht — відома довга права дуга, що зберігає давню назву автодрому. Для входу в затяжний віраж потрібні терпіння та зчеплення шин, а не лише пізнє гальмування; точний номер входу ще перевіряється."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Terlamen · loaded arc"
+          ],
+          "explanation": {
+            "en": "Through the continuing Terlamen arc the car stays under lateral load, and an early slide can carry into the next section. The historical F1 circuit used a different length and corner count from today's track, so this subdivision is not an official name.",
+            "uk": "У продовженні дуги Terlamen болід довго перебуває під боковим навантаженням, а раннє ковзання може зіпсувати наступну секцію. Історична траса Ф1 мала іншу довжину й кількість поворотів, тому цей поділ не є офіційною назвою."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Bolderberg area"
+          ],
+          "explanation": {
+            "en": "The Bolderberg name comes from the nearby locality and is associated with a tighter hairpin in modern guides. Braking and traction would be the key demands of such a feature, but its precise 1984 number and geometry require a period chart.",
+            "uk": "Назва Bolderberg походить від сусідньої місцевості; у сучасних путівниках її пов'язують із тісною шпилькою. Для такого віражу головні гальмування й розгін, однак номер і геометрію 1984 року потрібно підтвердити історичною схемою."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Rindt-side transition"
+          ],
+          "explanation": {
+            "en": "The Jochen Rindt name is used for a later bend in modern Zolder guides. It recalls the Austrian world champion, but assigning that label to this exact 1984 apex without a contemporary numbered map would be misleading.",
+            "uk": "Ім'я Йохена Ріндта використовують для одного з пізніших віражів у сучасних описах Золдера. Воно вшановує австрійського чемпіона світу, але прив'язувати цю назву до конкретного апексу 1984 року без історичної схеми було б оманливо."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "zolder-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Final approach to the pits"
+          ],
+          "explanation": {
+            "en": "The closing section returned cars to the pit straight where acceleration mattered for the next lap. Michele Alboreto won the last F1 race at Zolder in 1984; the present Jacky Ickx chicane must not be assumed identical to the period finale.",
+            "uk": "Завершальна секція повертала машини на стартову пряму, де розгін визначав початок наступного кола. Мікеле Альборето виграв останній Гран-прі Ф1 у Золдері 1984 року; сучасну шикану Jacky Ickx не можна вважати тотожною тодішньому фіналу."
+          },
+          "sources": [
+            "zolder-period-outline",
+            "zolder-1984-result",
+            "zolder-period-overview",
+            "zolder-names-modern"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
