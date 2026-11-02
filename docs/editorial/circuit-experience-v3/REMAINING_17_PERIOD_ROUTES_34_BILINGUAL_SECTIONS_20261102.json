@@ -527,16 +527,22 @@
           "review_status": "pending"
         }
       ],
-      "evidence_scope": "Route landmarks and documented race history only; no numbered apex mapping or publication approval.",
+      "evidence_scope": "The venue history explicitly names historical road landmarks, but 48-vs-51 turn count remains unresolved; race incidents have no certified numbered apex. Review pending.",
       "layout_evidence_review": {
         "archive_turn_count": 48,
         "period_layout_year": 1972,
-        "crosswalk_status": "corner_count_disagreement_unverified_apex_numbers",
+        "crosswalk_status": "historical_51_vs_f1db_48_unverified_apex_numbers",
         "evidence": [
           {
-            "type": "archive_layout",
-            "url": "https://lapledger.org/circuits/charade",
-            "claim": "Pinned F1DB clermont-ferrand-1 is 8.055 km and counts 48 bends; secondary page headline counts 51",
+            "type": "pinned_archive_count",
+            "url": "https://www.lapledger.org/circuits/clermont-ferrand",
+            "claim": "Pinned F1DB historical layout clermont-ferrand-1 counts 48 turns; this is not the same counting convention as the venue's historic 51-bend narrative",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "venue_history",
+            "url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "claim": "Charade circuit operator's historical retrospective explicitly states 51 bends and names Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat, Champeaux, Ferme, Petit Pont and Marlboro; it does not provide a certified sequential 1972 FIA apex index",
             "supports_apex_numbering": false
           },
           {
@@ -544,14 +550,9 @@
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
             "claim": "1972 period journalist describes more than 50 corners, but does not establish official apex numbers",
             "supports_apex_numbering": false
-          },
-          {
-            "type": "official_f1_retrospective",
-            "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
-            "claim": "Long five-mile volcanic road circuit distinct from modern short Charade layout",
-            "supports_apex_numbering": false
           }
-        ]
+        ],
+        "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes."
       }
     },
     {
