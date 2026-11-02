@@ -183,7 +183,12 @@
     "long-beach-period-race": "https://www.formula1.com/en/results/1983/races/453/france/race-result",
     "buenos-aires-1995-layout": "https://lapledger.org/circuits/buenos-aires",
     "buenos-aires-1995-names": "https://es.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_y_Juan_G%C3%A1lvez",
-    "buenos-aires-1995-result": "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
+    "buenos-aires-1995-result": "https://www.formula1.com/en/results/1995/races/622/argentina/race-result",
+    "riverside-1960-report": "https://www.motorsportmagazine.com/database/races/1960-united-states-grand-prix/",
+    "riverside-1960-layout": "https://www.racingcircuits.info/north-america/usa/riverside.html",
+    "bugatti-1967-f1": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+    "bugatti-1967-report": "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
+    "nivelles-history": "https://perencz.hu/f1/circuit/nivelles/info/"
   },
   "guides": [
     {
@@ -16569,6 +16574,465 @@
             "buenos-aires-1995-layout",
             "buenos-aires-1995-names",
             "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "riverside",
+      "layout_id": "riverside-1",
+      "numbering_year": 1960,
+      "names_as_of": 1960,
+      "numbered_turns": 9,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB historical riverside-1 turn count; editorial ordered slots. Period sources support landmarks but NOT an authenticated turn-by-turn numbering match. Never display these numbers as certified historical FIA positions.",
+      "sections": [
+        {
+          "id": "riverside-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Uphill opening road"
+          ],
+          "explanation": {
+            "en": "The opening bend begins the uphill section of Riverside's original desert road course. Its broad geometry rewards an early, balanced direction change before the sweeping bends that follow; the identification as Turn 1 is a study slot, not an independently authenticated 1960 FIA label.",
+            "uk": "Початкова дуга веде на підйом історичного автодрому Ріверсайд у каліфорнійській пустелі. Широка геометрія вимагає плавної зміни напрямку перед наступними швидкими віражами. Позначення «перший поворот» поки є дослідницьким номером, а не підтвердженим написом карти FIA 1960 року."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Early right-left sweeps"
+          ],
+          "explanation": {
+            "en": "The early sweep continues through a fast change of direction, where drivers must keep the car settled rather than attack a single sharp apex. Period accounts describe the undulating course but do not settle the exact boundary between the numbered bends.",
+            "uk": "Початкова швидка зв'язка продовжується зміною напрямку, де важливіше втримати баланс, ніж агресивно атакувати один апекс. Репортажі епохи описують хвилясту трасу, але не встановлюють точну межу між нумерованими віражами."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Climbing Esses"
+          ],
+          "explanation": {
+            "en": "The winding climb through Riverside's early Esses links several steering inputs together. Carrying excessive speed into one bend leaves the next arrival awkward, an important distinction from the long straights elsewhere on the circuit.",
+            "uk": "Звивистий підйом крізь ранні ески Ріверсайда поєднує кілька перекладок керма. Надлишкова швидкість в одній дузі ускладнює наступну, на відміну від довгих прямих на інших частинах кола."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Fast right-left-right changes"
+          ],
+          "explanation": {
+            "en": "The climbing sequence offers quick, almost flat-out right-left-right changes in the contemporary description. This slot captures that flowing rhythm, while its exact 1960 numbered apex remains to be matched to a period drawing.",
+            "uk": "Історичний опис згадує швидкі, майже повногазові праві-ліві-праві перекладки на підйомі. Ця секція передає їхній ритм, але відповідність конкретному номеру на карті 1960 року ще потребує перевірки."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "High-point double-apex right"
+          ],
+          "explanation": {
+            "en": "Near the highest part of the course the driver faced a slower double-apex right-hander. The reduced speed and repeated rotation contrasted with the quicker climb, making the exit important for the straights beyond.",
+            "uk": "Поблизу найвищої точки траси на пілотів чекав повільніший правий поворот із двома апексами. Сповільнення та подвійний розворот контрастували зі швидким підйомом, тому вихід мав значення для наступних прямих."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "V-shaped infield section"
+          ],
+          "explanation": {
+            "en": "Two long straights linked the upper course to the infield and then back out. A fast half-circle turn at the bottom of this V-shaped section asked drivers to maintain momentum through sustained lateral load, not repeated stop-start braking.",
+            "uk": "Дві довгі прямі вели з верхньої частини кола до внутрішньої секції й назад. Швидкий розворот приблизно на 180 градусів у нижній точці V-подібного відтинку вимагав утримати швидкість під тривалим боковим навантаженням."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Long tightening right"
+          ],
+          "explanation": {
+            "en": "The long right-hand arc tightened late, so judging the early entry by the first radius alone was misleading. The important braking and steering decision came as the road curved more sharply towards an immediate left.",
+            "uk": "Довга права дуга наприкінці раптово ставала тіснішою, тому оцінювати вхід лише за її початковим радіусом було небезпечно. Головне рішення щодо гальмування та кермування наставало перед різкішим вигином і негайним лівим поворотом."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Immediate left transition"
+          ],
+          "explanation": {
+            "en": "An immediate left-hand change followed Riverside's tightening right. The linked pair demanded a controlled transition rather than two separate all-out entries, and the second exit positioned the car to return towards the long start-finish run.",
+            "uk": "Одразу після правої дуги, що звужувалася, йшла перекладка ліворуч. Пов'язана пара вимагала контрольованого переходу, а не двох незалежних атак. Вихід готував машину до повернення на довгий стартово-фінішний відрізок."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "riverside-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Return towards pit straight"
+          ],
+          "explanation": {
+            "en": "The final broad turn returned the car to the lengthy straight past the pits. The contemporary 1960 report highlights a long half-circle before the fast opening bends; its relationship to the modern nine-turn label must be verified with a dated map.",
+            "uk": "Фінальна широка дуга повертала болід на довгу пряму повз бокси. Репортаж 1960 року описує великий півкруг перед швидкими початковими віражами, але його точну відповідність сучасному дев'ятому номеру слід звірити з датованою картою."
+          },
+          "sources": [
+            "riverside-1960-report",
+            "riverside-1960-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "bugatti",
+      "layout_id": "bugatti-1",
+      "numbering_year": 1967,
+      "names_as_of": 1967,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB historical bugatti-1 turn count; editorial ordered slots. Period sources support landmarks but NOT an authenticated turn-by-turn numbering match. Never display these numbers as certified historical FIA positions.",
+      "sections": [
+        {
+          "id": "bugatti-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Shared Le Mans pit straight"
+          ],
+          "explanation": {
+            "en": "The 1967 Formula 1 lap began on the Le Mans pit straight shared with the endurance circuit. It then approached the Dunlop bend; the modern Dunlop chicane did not yet exist, so modern onboard footage cannot be used as direct proof of the old first-sector geometry.",
+            "uk": "Коло Формули-1 1967 року починалося на прямій боксів Ле-Мана, спільній із трасою на витривалість. Далі був поворот Dunlop, але сучасної шикани там тоді не існувало, тому новий онборд не може безпосередньо підтверджувати геометрію старого першого сектору."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Dunlop Curve"
+          ],
+          "explanation": {
+            "en": "The Dunlop sweep carried cars away from the main straight on the short Bugatti route. Drivers did not continue down the full Sarthe circuit: the Grand Prix layout turned inward before Tertre Rouge, breaking sharply from the famous twenty-four-hour race geography.",
+            "uk": "Дуга Dunlop відводила боліди від головної прямої коротким маршрутом Bugatti. Пілоти не продовжували довгу трасу Sarthe: коло Гран-прі повертало всередину до Tertre Rouge, різко відділяючись від маршруту «24 годин Ле-Мана»."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "La Chapelle"
+          ],
+          "explanation": {
+            "en": "Near La Chapelle the Bugatti course made its decisive turn away from the endurance circuit. This branch explains why the 1967 French Grand Prix should be shown with its own layout rather than a cropped map of the much longer Sarthe circuit.",
+            "uk": "Біля La Chapelle маршрут Bugatti остаточно відгалужувався від довгої траси на витривалість. Саме тому Гран-прі Франції 1967 року слід показувати окремою конфігурацією, а не обрізаною схемою набагато довшого Sarthe."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Bugatti infield bends"
+          ],
+          "explanation": {
+            "en": "The tighter interior bends began to replace the fast public-road character of the full Le Mans circuit. A driver had to trade entry speed for controlled rotation; contemporary reports criticised the school-circuit character of this new Grand Prix venue.",
+            "uk": "Тісні внутрішні віражі змінювали швидкісний характер довгого маршруту Ле-Мана. Пілотам доводилося жертвувати швидкістю входу заради точного розвороту, а тогочасні репортажі критикували характер нової траси як надто схожий на навчальний автодром."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Le Musée"
+          ],
+          "explanation": {
+            "en": "Le Musée was a distinct left-hand bend in the Bugatti infield, approached in a lower gear than the fast Dunlop sweep. Its local name is documented, but assigning this bend exactly to the fifth numbered F1DB apex remains a provisional research mapping.",
+            "uk": "Le Musée — окремий лівий віраж внутрішньої секції Bugatti, який проходили на нижчій передачі, ніж швидкий Dunlop. Місцева назва відома, але точна відповідність п'ятому номеру F1DB залишається попередньою дослідницькою прив'язкою."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Infield transition"
+          ],
+          "explanation": {
+            "en": "The infield continued through successive direction changes rather than one fast straight. Car balance mattered between closely spaced bends, and pictures of the modern motorcycle Grand Prix cannot be assumed to show the identical 1967 kerbs or apex positions.",
+            "uk": "Внутрішня секція продовжувалася послідовними перекладками, а не однією швидкою прямою. Баланс боліда мав значення між близькими віражами, а сучасні фото мотогонок не доводять, що поребрики та апекси залишилися такими самими, як у 1967 році."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Garage Vert"
+          ],
+          "explanation": {
+            "en": "Garage Vert was another slow infield corner, traditionally described as a second-gear bend. A clean exit helped launch the car onto the following back straight, making traction more important than merely diving late into the apex.",
+            "uk": "Garage Vert був іще одним повільним поворотом внутрішньої секції, який у репортажах описували як віраж другої передачі. Чистий вихід допомагав розігнатися на наступну задню пряму, тому тяга була важливішою за пізній ризикований вхід."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Back straight"
+          ],
+          "explanation": {
+            "en": "After Garage Vert the cars accelerated along the Bugatti back straight. That rapid section contrasted with the stop-start bends inside the driving-school loop; its exact subdivision into the historical fourteen numbered turns is not independently authenticated.",
+            "uk": "Після Garage Vert боліди розганялися задньою прямою Bugatti. Швидкий відрізок контрастував із повільними віражами внутрішнього навчального кільця, однак точний поділ конфігурації на чотирнадцять номерів поки не підтверджений незалежною картою."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Chemin aux Bœufs"
+          ],
+          "explanation": {
+            "en": "Chemin aux Bœufs was originally a leftward kink rather than the modern left-right chicane. Confusing the two would place a driver into a manoeuvre that did not exist at the 1967 Grand Prix.",
+            "uk": "Chemin aux Bœufs спочатку був лівим перегином, а не сучасною ліво-правою шиканою. Змішування цих варіантів створює в описі маневр, якого не існувало на Гран-прі 1967 року."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Return from back straight"
+          ],
+          "explanation": {
+            "en": "The route kept its speed through the section after the Chemin aux Bœufs kink, before turning towards the finishing complex. A modern course map may show extra chicane geometry and must be dated before any corner number is attached.",
+            "uk": "Після перегину Chemin aux Bœufs маршрут зберігав швидкість до підходу до фінішної секції. Сучасна схема може містити додаткову геометрію шикани, тож її потрібно датувати перед перенесенням номерів поворотів."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "S Bleu first movement"
+          ],
+          "explanation": {
+            "en": "The first part of the S Bleu brought a quicker direction change before the last connection to the pits. Drivers needed to position the car for the following bend; the complex is a named place, not evidence of a unique historical label for each apex.",
+            "uk": "Перша частина S Bleu вимагала швидкої перекладки перед завершальним підходом до боксів. Пілотам потрібно було правильно розмістити машину для наступного віражу. Назва комплексу не доводить існування окремого історичного імені для кожного апекса."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "S Bleu second movement"
+          ],
+          "explanation": {
+            "en": "The second movement of the S Bleu continued the short-course rhythm, guiding the cars towards Raccordement. Its exact 1967 division into numbered turns should be read against a contemporary map, not inferred solely from modern television graphics.",
+            "uk": "Друга перекладка S Bleu продовжувала ритм короткого кільця й спрямовувала боліди до Raccordement. Точний поділ на номери у 1967 році слід перевіряти за історичною схемою, а не виводити лише із сучасної телевізійної графіки."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Raccordement"
+          ],
+          "explanation": {
+            "en": "Raccordement linked the Bugatti infield to the Le Mans pit straight. The final approach demanded a controlled exit because momentum carried across the line; the historical geometry was not necessarily the same as today's permanent-circuit connection.",
+            "uk": "Raccordement з'єднував внутрішню частину Bugatti зі стартовою прямою Ле-Мана. На виході потрібно було зберегти контроль, адже набрана швидкість переносилася через лінію фінішу. Історична геометрія могла відрізнятися від сучасного стаціонарного з'єднання."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "bugatti-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Shared pit-straight return"
+          ],
+          "explanation": {
+            "en": "The final return onto the shared pit straight completed a compact lap radically different from the 24 Hours of Le Mans. The final F1DB number is preserved as a provisional ordering slot, not presented as a separately authenticated named corner.",
+            "uk": "Фінальне повернення на спільну пряму боксів завершувало коротке коло, зовсім не схоже на трасу «24 годин Ле-Мана». Останній номер F1DB збережено як попередній орієнтир порядку, а не як окремо підтверджений іменний поворот."
+          },
+          "sources": [
+            "bugatti-1967-f1",
+            "bugatti-1967-report"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
