@@ -20,8 +20,8 @@ test('Magny-Cours 2003–2008 F1 layout has seventeen individually researched EN
   assert.deepEqual(guide.sections.flatMap(s => s.numbers), Array.from({length:17},(_,i)=>i+1));
   assert.equal(new Set(guide.sections.map(s=>s.id)).size, 17);
   for (const s of guide.sections) {
-    assert.ok(s.explanation.en.trim().split(/\\s+/).length >= 28, s.id + ':en');
-    assert.ok(s.explanation.uk.trim().split(/\\s+/).length >= 22, s.id + ':uk');
+    assert.ok(s.explanation.en.trim().split(/\s+/).length >= 28, s.id + ':en');
+    assert.ok(s.explanation.uk.trim().split(/\s+/).length >= 22, s.id + ':uk');
     assert.match(s.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
     assert.doesNotMatch(s.explanation.en, /[А-Яа-яІіЇїЄєҐґ]/);
     assert.deepEqual(s.sources, ['magny-cours-map','magny-cours-names','magny-cours-history']);
