@@ -180,7 +180,10 @@
     "montjuic-period-race": "https://www.formula1.com/en/results/1975/races/347/spain/race-result",
     "long-beach-period-layout": "https://www.flyinglap.com.br/long-beach/",
     "long-beach-period-names": "https://www.racearchive.net/circuits/long-beach",
-    "long-beach-period-race": "https://www.formula1.com/en/results/1983/races/453/france/race-result"
+    "long-beach-period-race": "https://www.formula1.com/en/results/1983/races/453/france/race-result",
+    "buenos-aires-1995-layout": "https://lapledger.org/circuits/buenos-aires",
+    "buenos-aires-1995-names": "https://es.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_y_Juan_G%C3%A1lvez",
+    "buenos-aires-1995-result": "https://www.formula1.com/en/results/1995/races/622/argentina/race-result"
   },
   "guides": [
     {
@@ -16175,6 +16178,397 @@
             "long-beach-period-layout",
             "long-beach-period-names",
             "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "layout_id": "buenos-aires-4",
+      "numbering_year": 1995,
+      "names_as_of": 1995,
+      "numbered_turns": 19,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB buenos-aires-4: 4.259 km / 19 turns, 1995–1998. Circuito No. 6 with 1995 Senna S; historical names derive from later secondary circuit descriptions, not an authenticated 1995 FIA apex chart. Exact turn-to-name assignments remain unverified; study slots are provisional.",
+      "sections": [
+        {
+          "id": "buenos-aires-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Main straight / Fangio reference — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The start-finish straight is associated with Juan Manuel Fangio in the venue's local naming tradition. It identifies the approach to the 1995 lap, but does not certify where the first numbered apex begins.",
+            "uk": "Стартова пряма пов'язана з Хуаном-Мануелем Фанхіо в місцевій традиції назв. Вона допомагає зорієнтуватися на колі 1995 року, але не встановлює точне місце першого пронумерованого апекса."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Curva 1 / early braking — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The first major change of direction after the straight was a central reference in descriptions of the shorter Buenos Aires configurations. The 1995 Senna-S extension requires its own period numbering.",
+            "uk": "Перший значний поворот після прямої був важливим орієнтиром коротких конфігурацій Буенос-Айреса. Варіант із Senna S 1995 року потребує окремої історичної нумерації."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Confitería sector — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Confitería is a longstanding local corner name, linked to the facilities around the circuit rather than to a driver. Its exact place among the nineteen F1DB bends remains to be verified.",
+            "uk": "Confitería — давня місцева назва повороту, пов'язана з об'єктами автодрому, а не з гонщиком. Її точне місце серед дев'ятнадцяти віражів F1DB ще треба підтвердити."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Mixed-section entry — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Circuit No. 6 is remembered for combining a faster stretch with a technical mixed section. This proposed slot describes that contrast without imposing a modern numbered map on the 1995 layout.",
+            "uk": "Circuito №6 поєднував швидшу ділянку з технічною зв'язкою. Умовний номер передає цей контраст, не переносячи сучасну пронумеровану схему на конфігурацію 1995 року."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Viborita / first direction change — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The local name Viborita evokes the snake-like succession of bends. It is a useful route landmark, but the first change of direction cannot be assigned a 1995 turn number from a later track guide.",
+            "uk": "Місцева назва Viborita нагадує про змієподібну послідовність віражів. Це корисний орієнтир, але номер першої перекладки 1995 року не можна брати з пізнішого путівника."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Viborita / linked bend — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "A driver must think about the next change of direction while passing through the linked Viborita section. Its nickname describes a complex, not necessarily one individually numbered apex.",
+            "uk": "Під час проходження зв'язки Viborita пілот має вже готувати наступну зміну напрямку. Ця назва описує комплекс, а не обов'язково один окремий пронумерований апекс."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Ombú / local landmark — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Ombú is a named part of the historic mixed sector, recalling the local tree name. Its use in a guide is geographical evidence, not independent proof of this seventh apex number.",
+            "uk": "Ombú — названа частина історичної технічної секції; назва походить від місцевого дерева. У путівнику це географічний орієнтир, а не доказ номера сьомого апекса."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Cajón / adjoining section — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Cajón appears alongside Ombú in descriptions of the mixed section. Some secondary diagrams even interchange their labels, so a numbered 1995 assignment would be premature.",
+            "uk": "Cajón згадується поруч з Ombú в описах технічної секції. Деякі вторинні схеми навіть плутають ці підписи, тому закріплювати номер повороту 1995 року передчасно."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Tobogán / downhill approach — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Tobogán name refers to a pronounced descent in the circuit's historic vocabulary. Elevation and braking make this a memorable feature, although its 1995 numbered apex boundary is not established.",
+            "uk": "Назва Tobogán відсилає до виразного спуску в історичній термінології автодрому. Рельєф і гальмування роблять його впізнаваним, але межу пронумерованого апекса 1995 року не встановлено."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Tobogán / exit transition — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Exiting a downhill section asks the driver to manage traction as the road settles. The 1995 Grand Prix used a specific short layout, not the long lake circuit of earlier Argentine races.",
+            "uk": "Після спуску пілот має контролювати зчеплення під час вирівнювання дороги. Гран-прі 1995 року проходив окремою короткою конфігурацією, а не довгою трасою навколо озера з попередніх сезонів."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Horquilla Parga / braking landmark — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Horquilla Parga is the well-known hairpin landmark on the autodrome's shorter routes. The name honours Alfredo Parga, but the proposed number here is not authenticated against a 1995 FIA map.",
+            "uk": "Horquilla Parga — відомий орієнтир-шпилька на коротших маршрутах автодрому. Назва вшановує Альфредо Паргу, але запропонований тут номер не звірено з картою FIA 1995 року."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Horquilla Parga / exit — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The hairpin's exit would shape acceleration towards the next section of a short lap. Historical descriptions distinguish the shorter Parga hairpin from an older, longer hairpin removed in 1995.",
+            "uk": "Вихід зі шпильки визначав розгін до наступної ділянки короткого кола. Історичні описи розрізняють коротшу шпильку Parga та давнішу довгу, яку прибрали 1995 року."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Senna S / new 1995 feature — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Senna S was added for the 1995 Formula One return. It commemorates Ayrton Senna; using a pre-1995 circuit map would omit this change of direction entirely.",
+            "uk": "Senna S додали перед поверненням Формули-1 у 1995 році. Зв'язка вшановує Айртона Сенну; на схемі до 1995 року цієї зміни напрямку взагалі немає."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Senna S / second element — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "An S-shaped complex contains linked steering inputs, so treating the entire Senna S as one corner can mislead a turn-by-turn reader. Its exact subdivision in F1DB's nineteen-bend count remains unverified.",
+            "uk": "S-подібна зв'язка містить кілька пов'язаних перекладок, тому називати всю Senna S одним поворотом оманливо. Її точний поділ у підрахунку дев'ятнадцяти віражів F1DB не підтверджено."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Short-circuit return — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Grand Prix configuration looped back through the compact parts of the venue rather than taking the much longer lake extension. That distinction is essential when comparing 1981 and 1995 footage.",
+            "uk": "Конфігурація Гран-прі поверталася через компактну частину автодрому, а не виходила на значно довший маршрут навколо озера. Це важливо для порівняння відео 1981 та 1995 років."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [
+            "Technical exit / tyre traction — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "In the shorter layout, several direction changes leave limited time to settle the car before accelerating again. The individual apex at this study number is still unidentified in period documents.",
+            "uk": "На короткій трасі між кількома перекладками майже немає часу стабілізувати болід перед розгоном. Конкретний апекс цього умовного номера досі не визначено за історичними документами."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [
+            "Final mixed-sector transition — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The transition out of the mixed section matters for carrying speed back towards the main straight. A modern Circuito No. 6 diagram cannot establish its exact 1995 turn number.",
+            "uk": "Перехід із технічної секції важливий для швидкості повернення до стартової прямої. Сучасна схема Circuito №6 не встановлює його точний номер у 1995 році."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [
+            "Approach to finish — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The final approach is a reminder that the 1995 race had a restart and a disputed lap count in period reporting. Formula1.com's classification records 71 laps for Damon Hill, not evidence of a numbered corner.",
+            "uk": "Фінальна ділянка нагадує, що гонка 1995 року мала рестарт, а історичні звіти розходяться в кількості кіл. Офіційна класифікація Formula1.com фіксує 71 коло Деймона Гілла, але це не доказ номера повороту."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "buenos-aires-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [
+            "Final archival slot / nineteen bends — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "F1DB describes the 1995–1998 Buenos Aires edition as a 4.259 km circuit with nineteen bends. This last numbered entry completes that archive count only; a contemporary numbered apex chart remains outstanding.",
+            "uk": "F1DB описує конфігурацію Буенос-Айреса 1995–1998 років як трасу 4,259 км із дев'ятнадцятьма поворотами. Останній номер завершує лише архівний підрахунок; історичну схему апексів із нумерацією ще треба знайти."
+          },
+          "sources": [
+            "buenos-aires-1995-layout",
+            "buenos-aires-1995-names",
+            "buenos-aires-1995-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
