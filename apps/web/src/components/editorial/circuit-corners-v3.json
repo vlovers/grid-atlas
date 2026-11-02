@@ -174,7 +174,13 @@
     "east-london-period-map": "https://www.thechicane.com/2011/07/16/track-map-of-the-past-prince-george-circuit/",
     "east-london-corner-walkthrough": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
     "east-london-1962-result": "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result",
-    "east-london-1965-result": "https://www.formula1.com/en/results/1965/races/225/monaco/race-result"
+    "east-london-1965-result": "https://www.formula1.com/en/results/1965/races/225/monaco/race-result",
+    "montjuic-period-layout": "https://paddock.thracing.de/?id=17&page=track",
+    "montjuic-period-names": "https://commons.wikimedia.org/wiki/File:Montju%C3%AFc_circuit.svg",
+    "montjuic-period-race": "https://www.formula1.com/en/results/1975/races/347/spain/race-result",
+    "long-beach-period-layout": "https://www.flyinglap.com.br/long-beach/",
+    "long-beach-period-names": "https://www.racearchive.net/circuits/long-beach",
+    "long-beach-period-race": "https://www.formula1.com/en/results/1983/races/453/france/race-result"
   },
   "guides": [
     {
@@ -15547,6 +15553,628 @@
             "east-london-corner-walkthrough",
             "east-london-1962-result",
             "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "montjuic",
+      "layout_id": "montjuic-1",
+      "numbering_year": 1975,
+      "names_as_of": 1975,
+      "numbered_turns": 12,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB montjuic-1, 3.791 km / 12 turns, 1969–1975. The 1975 fan reconstruction lists named streets and landmarks, not a period FIA numbered apex chart. Study slots are provisional; straights are never asserted to be corners.",
+      "sections": [
+        {
+          "id": "montjuic-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Avinguda de l'Estadi / starting area — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Avinguda de l'Estadi served as a recognisable reference on the hillside route. It is a road section, not proof of an official Turn 1 name; a period numbered apex plan is still missing.",
+            "uk": "Avinguda de l'Estadi була впізнаваним орієнтиром гірського маршруту. Це ділянка дороги, а не доказ офіційної назви повороту №1; історичної схеми з нумерацією апексів досі немає."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Rasante / crest — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Rasante describes a crest in the old circuit's changing elevation. The approach matters to a driver because the road beyond a rise is harder to read; its exact 1975 apex number is not authenticated.",
+            "uk": "Rasante позначає гребінь на трасі зі змінним рельєфом. Після підйому пілотові важче бачити продовження дороги; точний номер апекса 1975 року не підтверджено."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Angle de Miramar — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Angle de Miramar landmark recalls the sharp directional changes on the park roads. It is a historical route name in the reconstruction, not a verified assignment of the third F1DB bend.",
+            "uk": "Орієнтир Angle de Miramar нагадує про різкі зміни напрямку на паркових дорогах. Це назва ділянки в реконструкції, а не підтверджене зіставлення з третім поворотом F1DB."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Rosaleda — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Rosaleda points to the gardens rather than a sponsor or a driver. The narrow roadside setting made the contrast between racing speed and public-park infrastructure especially stark.",
+            "uk": "Rosaleda пов'язана із садами, а не зі спонсором чи гонщиком. Вузька дорога поруч із парком особливо виразно показувала контраст між швидкістю болідів та міською інфраструктурою."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Font del Gat — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Font del Gat is a place-name linked to the Montjuïc park. The corner sequence around this landmark belongs to the historic hill route; modern street geometry cannot establish its 1975 turn number.",
+            "uk": "Font del Gat — місцева назва в парку Монжуїк. Зв'язка біля цього орієнтира належить до історичного маршруту; сучасна геометрія вулиць не визначає її номер у 1975 році."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Teatre Grec — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Teatre Grec landmark comes from the open-air theatre on Montjuïc. Drivers raced beside civic landmarks, not purpose-built run-off areas; that distinction is essential when reading the old map.",
+            "uk": "Назва Teatre Grec походить від відкритого театру на Монжуїку. Пілоти їхали поруч із міськими пам'ятками, а не спеціальними зонами вильоту; це важливо для розуміння старої схеми."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Vies / railway area — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The route guide marks a Vies section near transport infrastructure. It should be treated as a geographical cue only: the reconstructed numbered slot is not a period FIA-certified corner.",
+            "uk": "У путівнику маршрутом позначено ділянку Vies поблизу транспортної інфраструктури. Це лише географічний орієнтир: умовний номер не є підтвердженим FIA поворотом тієї епохи."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Guàrdia Urbana — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Guàrdia Urbana refers to the municipal police landmark on the route. It helps locate the street-racing environment, but it does not prove that a single numbered apex carried that name.",
+            "uk": "Guàrdia Urbana відсилає до міської поліції та її орієнтира на маршруті. Це допомагає уявити міську трасу, але не доводить, що окремий пронумерований апекс мав таку назву."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Recta de les Fonts — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Recta de les Fonts was a straight, not an individually named corner. Its inclusion here is a comparative study marker, and an editor must replace this slot after locating a period turn-by-turn diagram.",
+            "uk": "Recta de les Fonts була прямою, а не окремим іменним поворотом. Тут вона є лише орієнтиром для дослідження; після знаходження історичної схеми поворотів цей номер треба уточнити."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "La Pèrgola — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "La Pèrgola is another distinctive Montjuïc place-name along the park course. The 1975 Grand Prix was stopped early after a fatal accident; that event must not be pinned to this proposed apex without location evidence.",
+            "uk": "La Pèrgola — ще один характерний топонім на парковій трасі Монжуїка. Гран-прі 1975 року зупинили після смертельної аварії, але без доказів не можна прив'язувати її до цього умовного апекса."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Poble Espanyol — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Poble Espanyol refers to the architectural attraction on the hillside. The proximity of such public landmarks explains the circuit's unusual setting, not the official numbering of its bends.",
+            "uk": "Poble Espanyol відсилає до архітектурного комплексу на схилі. Близькість міських пам'яток пояснює незвичне розташування траси, але не встановлює офіційну нумерацію її поворотів."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "montjuic-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Sant Jordi / return — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Sant Jordi marks the return towards the stadium-side portion of the lap in the route reconstruction. The 1975 classification gave Lella Lombardi half a point for sixth, but the result cannot verify this final apex.",
+            "uk": "Sant Jordi позначає повернення до ділянки біля стадіону в реконструкції маршруту. За шосте місце у 1975 році Лелла Ломбарді отримала пів очка, але результат перегонів не підтверджує цей останній апекс."
+          },
+          "sources": [
+            "montjuic-period-layout",
+            "montjuic-period-names",
+            "montjuic-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "long-beach",
+      "layout_id": "long-beach-3",
+      "numbering_year": 1983,
+      "names_as_of": 1983,
+      "numbered_turns": 18,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB long-beach-3, 3.275 km / 18 turns, 1983 only. Historical descriptions distinguish the 1983 Hyatt/Seaside Way route from 1982 and 1976–81; no contemporary FIA numbered map has been authenticated. Numbered slots are NOT proven apex-to-landmark matches.",
+      "sections": [
+        {
+          "id": "long-beach-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Shoreline Drive / waterfront start — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Shoreline Drive provided the long waterfront acceleration that defined Long Beach. The start was moved for 1983, so its first numbered bend cannot be inherited from a 1976 map.",
+            "uk": "Shoreline Drive давала довгий розгін уздовж узбережжя. До 1983 року старт перенесли, тому номер першого повороту не можна переносити зі схеми 1976 року."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Linden Avenue kink — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The 1982 revision introduced a kink on Shoreline Drive near Linden Avenue. That change matters when comparing old onboard footage; this study number is not a certified 1983 apex.",
+            "uk": "Перебудова 1982 року додала вигин на Shoreline Drive біля Linden Avenue. Це важливо під час порівняння старих відео; цей умовний номер не є підтвердженим апексом 1983 року."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Waterfront braking approach — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The harbour-side straight made braking judgement a defining part of the lap. Which 1983 bend should receive this number remains open until a numbered period map is found.",
+            "uk": "Пряма вздовж гавані робила вибір точки гальмування важливою частиною кола. Який саме віраж 1983 року відповідає цьому номеру, стане відомо лише з історичної пронумерованої схеми."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "City-grid change of direction — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Long Beach mixed fast waterfront running with tight urban turns. This provisional slot illustrates that contrast without claiming a documented fourth-turn street name.",
+            "uk": "Лонг-Біч поєднував швидку прибережну ділянку з тісними міськими віражами. Умовний номер показує цей контраст, не вигадуючи назву четвертого повороту."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Convention-centre approaches — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The street route ran around the convention-centre district, where walls limited the usable width. The exact apex sequence changed between the 1981 and 1983 versions.",
+            "uk": "Маршрут проходив біля конференц-центру, де стіни обмежували ширину дороги. Точна послідовність апексів змінилася між конфігураціями 1981 та 1983 років."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Hyatt garage complex / entry — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "For 1983 the former Ocean Boulevard start was replaced by a route through the Hyatt hotel garage complex. This is a layout landmark, not a confirmed Turn 6 designation.",
+            "uk": "У 1983 році колишню стартову пряму Ocean Boulevard замінили маршрутом через комплекс гаража готелю Hyatt. Це орієнтир конфігурації, а не підтверджена назва шостого повороту."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Hyatt garage complex / middle — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The new hotel-side section added slow changes of direction that were absent from earlier Grand Prix footage. Its precise subdivision into F1DB's eighteen turns needs independent mapping.",
+            "uk": "Нова ділянка біля готелю додала повільні перекладки, яких не було на старих записах Гран-прі. Її точний поділ на вісімнадцять поворотів F1DB потребує незалежної звірки."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Hyatt garage complex / exit — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "A clean exit from the added 1983 hotel complex mattered for the following street section. This is a contextual reading cue; no period source assigns the eighth numbered apex here.",
+            "uk": "Чистий вихід із доданого 1983 року готельного комплексу був важливим перед наступною міською ділянкою. Це контекстний орієнтир; історичне джерело не закріплює тут восьмий апекс."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Seaside Way — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The 1983 revision introduced a straight on Seaside Way. Unlike a corner, the street name describes a connecting run, so this study slot must not be presented as a named bend.",
+            "uk": "Перебудова 1983 року додала пряму Seaside Way. На відміну від повороту, назва вулиці позначає сполучну ділянку, тому цей умовний номер не можна подавати як іменний віраж."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Street braking after Seaside Way — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Acceleration along Seaside Way led into another urban braking challenge. Without the contemporary numbered diagram the exact turn boundary is uncertain, despite the known route change.",
+            "uk": "Розгін на Seaside Way завершувався новим міським гальмуванням. Без історичної пронумерованої схеми межа відповідного повороту невідома, хоча зміну маршруту підтверджено."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Concrete-wall transition — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Concrete walls, not broad run-off, defined the street-course margin for error. This slot is about that driving constraint rather than a claimed eleventh-turn location.",
+            "uk": "Бетонні стіни, а не широкі зони вильоту, визначали запас для помилки. Цей номер описує особливість керування, а не встановлене місце одинадцятого повороту."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Tight city-corner rhythm — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The Grand Prix layout forced repeated low-speed rotation between city blocks. The historical turn count is known, but a source-backed name for this individual numbered bend is not.",
+            "uk": "Конфігурація Гран-прі вимагала частих повільних перекладок між міськими кварталами. Історична кількість поворотів відома, але підтвердженої назви саме цього номера немає."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Short acceleration zone — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Between the tight street sections, brief bursts of acceleration made exit traction valuable. This reading slot is deliberately unassigned to a specific 1983 apex.",
+            "uk": "Між тісними міськими секціями короткі розгони робили зчеплення на виході особливо важливим. Цей дослідницький номер навмисно не прив'язаний до конкретного апекса 1983 року."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Approach to eastern end — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The eastern end of the old course changed when the earlier west hairpin was bypassed. Modern IndyCar corner numbering is not a substitute for the 1983 Formula One plan.",
+            "uk": "Східна частина старої траси змінилася, коли попередню західну шпильку об'їхали іншим шляхом. Сучасна нумерація IndyCar не замінює схему Формули-1 1983 року."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Harbour street turn — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The circuit's waterfront location made it memorable, but the road geometry was repeatedly revised. A provisional slot should not turn a nearby street label into an official corner name.",
+            "uk": "Розташування біля гавані робило трасу впізнаваною, але геометрію доріг неодноразово змінювали. Умовний номер не можна перетворювати на офіційну назву за сусідньою вулицею."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [
+            "Late-lap traction section — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "Late in a street lap, a slow exit could expose a car along the next straight. The historic 1983 apex-to-number correspondence is still a research task.",
+            "uk": "Наприкінці кола повільний вихід із віражу міг зробити болід вразливим на наступній прямій. Відповідність апексів номерам у 1983 році ще потрібно дослідити."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [
+            "Return to Shoreline Drive — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The lap ultimately returned towards Shoreline Drive. John Watson won from 22nd on the grid in 1983, a race result that should not be mistaken for evidence of this slot's location.",
+            "uk": "Коло поверталося до Shoreline Drive. Джон Вотсон виграв 1983 року з 22-го місця на старті, але результат перегонів не доводить розташування цього умовного номера."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "long-beach-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [
+            "Final study slot / start-finish return — comparative landmark; apex unverified"
+          ],
+          "explanation": {
+            "en": "The 1983 lap comprised eighteen F1DB-counted bends over 3.275 km. This final slot completes that archival count, not an independently verified official turn-by-turn map.",
+            "uk": "Коло 1983 року мало вісімнадцять поворотів за підрахунком F1DB на дистанції 3,275 км. Останній номер завершує архівний підрахунок, а не незалежно перевірену офіційну карту поворотів."
+          },
+          "sources": [
+            "long-beach-period-layout",
+            "long-beach-period-names",
+            "long-beach-period-race"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
