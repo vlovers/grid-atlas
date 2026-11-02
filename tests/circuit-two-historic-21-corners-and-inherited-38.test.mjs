@@ -80,3 +80,21 @@ test('historical UI must not falsely label every map as an official 2025 FIA dia
   assert.match(ui, /Historic \$\{guide\.numbering_year\} layout/);
   assert.doesNotMatch(ui, /Numbering: official FIA 2025 map/);
 });
+
+test('Brands Hatch and Donington have four source-linked EN/UK historical race stories', () => {
+  const data = load('../apps/web/src/components/editorial/circuit-narratives-v3.json');
+  for (const id of specs.keys()) {
+    const entry = data.entries.find(e => e.circuit_id === id);
+    assert.ok(entry, id);
+    assert.ok(entry.biography.text.en.trim().split(/\s+/).length >= 55);
+    assert.ok(entry.biography.text.uk.trim().split(/\s+/).length >= 50);
+    assert.match(entry.biography.source, /^https:\/\//);
+    assert.equal(entry.moments.length, 2);
+    for (const moment of entry.moments) {
+      assert.ok(moment.text.en.trim().split(/\s+/).length >= 45);
+      assert.ok(moment.text.uk.trim().split(/\s+/).length >= 40);
+      assert.match(moment.source, /^https:\/\//);
+      assert.equal(moment.review_status, 'independent_review_pending');
+    }
+  }
+});
