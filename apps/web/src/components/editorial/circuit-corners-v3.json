@@ -116,7 +116,11 @@
     "donington-map": "https://www.donington-park.co.uk/about/circuit-layouts",
     "donington-names": "https://saloneevents.co.uk/how-to-drive-donington-circuit/",
     "donington-era": "https://www.donington-park.co.uk/about/circuit-layouts",
-    "donington-race": "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
+    "donington-race": "https://www.formula1.com/en/results/1993/races/592/europe/race-result",
+    "estoril-map": "https://www.lapledger.org/circuits/estoril",
+    "estoril-names": "https://porschecarshistory.com/wp-content/old/lib/magazines/autosport/1995/AS21.09.95.pdf",
+    "estoril-era": "https://perencz.hu/f1/circuit/estoril/info/",
+    "estoril-race": "https://www.formula1.com/en/results/1995/races/633/portugal/race-result"
   },
   "guides": [
     {
@@ -11996,6 +12000,264 @@
             "donington-names",
             "donington-era",
             "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "estoril",
+      "layout_id": "estoril-2",
+      "numbering_year": 1995,
+      "names_as_of": 1995,
+      "numbered_turns": 13,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "1995 period Autosport/Tyrrell lap commentary and F1DB 1994-1996 thirteen-turn count; exact turn-to-apex numbering still awaiting period FIA map",
+      "sections": [
+        {
+          "id": "estoril-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Curva 1",
+          "aliases": [],
+          "explanation": {
+            "en": "In his 1995 lap notes, Mark Blundell described the first bend as extremely quick and bumpy on entry. That is a very different task from the slow first corners at many modern circuits: the car needs composure before the second sweep.",
+            "uk": "У нотатках про коло 1995 року Марк Бланделл описував перший віраж як дуже швидкий, із нерівним покриттям на вході. На відміну від повільних перших поворотів багатьох сучасних трас, тут важливо стабілізувати болід перед наступною дугою."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is described in the period driver account as a flat-out continuation of Turn 1. It should not be given an invented sponsor or memorial name. A smooth line matters because the first much slower hairpin is approaching.",
+            "uk": "Другий поворот у свідченні пілота тієї епохи названо продовженням першого, яке проходять без скидання газу. Вигадувати спонсорську чи меморіальну назву не можна. Плавна траєкторія готує першу значно повільнішу шпильку."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Curva 3",
+          "aliases": [],
+          "explanation": {
+            "en": "The third bend is the first slow hairpin after the rapid opening pair. Blundell's contemporary description puts it in third gear, illustrating the sudden change in rhythm. A wide exit can undermine the short approach to the next tight corner.",
+            "uk": "Третій поворот — перша повільна шпилька після двох швидких початкових дуг. У свідченні Бланделла 1995 року її проходили на третій передачі, що показує різку зміну ритму. Широкий вихід ускладнює підхід до наступного тісного віражу."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t4",
+          "numbers": [
+            4
+          ],
+          "name": "VIP",
+          "aliases": [],
+          "explanation": {
+            "en": "The second hairpin follows after only a short straight and was labelled VIP on period Estoril diagrams. The 1995 driver account describes another low-gear braking event. A clean rotation is essential before the car reaches the faster interior section.",
+            "uk": "Друга шпилька починається після короткої прямої; на історичних схемах Ешторіла її підписували VIP. У нотатках пілота 1995 року це ще одна зона гальмування на низькій передачі. Чистий розворот готує швидшу внутрішню секцію."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fifth numbered change belongs to the transition from the opening hairpins towards the circuit's interior. A 1995 diagram labels nearby Curva 5, but it does not establish a unique commemorative name. Drivers need to keep the car balanced for the following double-apex left.",
+            "uk": "П'ятий пронумерований вигин поєднує початкові шпильки з внутрішньою частиною автодрому. На схемі 1995 року поруч є підпис Curva 5, але окремої меморіальної назви він не доводить. Пілоту потрібно зберегти баланс перед подвійною лівою дугою."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Parabólica Interior",
+          "aliases": [],
+          "explanation": {
+            "en": "Blundell described Turn 6 as a double-apex left-hander where the car could understeer and then oversteer. Period maps call the interior bend Parabólica Interior. This is not the long final Parabólica onto the main straight, despite the shared word.",
+            "uk": "Бланделл описував шостий поворот як подвійну ліву дугу, де болід міг спочатку недостатньо, а потім надмірно повертати. Історичні схеми називають внутрішню секцію Parabólica Interior. Це не довга фінальна Parabólica перед головною прямою, попри схожу назву."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Curva 7",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 takes the lap out of the interior complex towards a much slower, tighter section. Contemporary diagrams mark Curva 7, but its exact relationship to later motorcycle numbering must be checked before copying modern apex coordinates.",
+            "uk": "Сьомий поворот виводить болід із внутрішньої секції до значно повільнішої технічної частини. Історичні схеми позначають Curva 7, але точну відповідність пізнішій мотоциклетній нумерації потрібно перевірити перед перенесенням сучасних координат апекса."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The late-1990s Estoril layout included a deliberately slow left-hand sequence, criticised by drivers for breaking the circuit's flow. This numbered entry is part of that technical middle-to-final transition, but its exact 1995 apex is not independently pinned to a period FIA map.",
+            "uk": "Наприкінці епохи Формули-1 в Ешторілі була навмисно повільна ліва зв'язка, яку пілоти критикували за втрату ритму. Цей номер належить до технічного переходу середньої та фінальної частин, але точний апекс 1995 року ще не прив'язаний до карти FIA тієї епохи."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 sits in the slower part of the revised 1994–1996 course, not in the original fast 1985 configuration. Drivers had to manage traction on an uphill exit after the tight left. Modern chicane names and corner numbers are not automatically period evidence.",
+            "uk": "Дев'ятий поворот належить до повільнішої секції перебудованого маршруту 1994–1996 років, а не до швидкої конфігурації 1985-го. Після тісного лівого віражу важливо контролювати тягу на підйомі. Сучасні назви шикани та номери не є автоматичним доказом для тієї епохи."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The next numbered bend continues the technical section after the safety-era layout changes. Period driver commentary emphasises the need to avoid wheelspin while climbing away from a first-gear left. Without a period-numbered plan, its individual proper name remains unassigned.",
+            "uk": "Наступний пронумерований віраж продовжує технічну секцію після змін конфігурації задля безпеки. У свідченнях пілотів наголошено на ризику пробуксовки під час підйому після повільного лівого повороту. Без історичної пронумерованої схеми окрему власну назву залишено непідтвердженою."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 returns the car towards the faster closing part of the lap. The 1995 account describes a medium-speed left before the long final right. The exact modern-to-historic turn correspondence is still under review, so no later sponsor label is attached.",
+            "uk": "Одинадцятий поворот повертає болід до швидшої фінальної частини кола. У нотатках 1995 року згадано середньошвидкісний лівий перед довгим останнім правим. Точну відповідність сучасної та історичної нумерації ще перевіряють, тому пізніший спонсорський підпис не додано."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate numbered bend prepares the approach to Estoril's signature final Parabólica. Its importance lies in the line carried into the long loaded right-hander, not in an unverified individual nickname. A contemporary FIA map would be needed to certify this number-to-apex match.",
+            "uk": "Передостанній пронумерований віраж готує вхід до знаменитої фінальної Parabólica. Важливіша траєкторія перед довгою навантаженою правою дугою, ніж непідтверджене окреме прізвисько. Для точної відповідності номера й апекса потрібна карта FIA відповідного року."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "estoril-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Parabólica",
+          "aliases": [],
+          "explanation": {
+            "en": "The final Parabólica is the long right-hand corner that releases the car onto Estoril's main straight. Blundell described spending several seconds progressively accelerating through it. A clean, patient line carries speed down the straight, and this historic shape should not be confused with later reprofiling.",
+            "uk": "Остання Parabólica — довга права дуга, яка виводить болід на головну пряму Ешторіла. Бланделл описував кілька секунд поступового прискорення всередині повороту. Терпляча чиста траєкторія дає швидкість на прямій, а історичну геометрію не слід плутати з пізнішою перебудовою."
+          },
+          "sources": [
+            "estoril-map",
+            "estoril-names",
+            "estoril-era",
+            "estoril-race"
           ],
           "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
         }
