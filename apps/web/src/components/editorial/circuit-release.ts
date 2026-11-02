@@ -13,8 +13,25 @@ export function circuitEditionDigest(circuitId: string) {
   })).digest('hex');
 }
 
+/** Research-only, provisional-numbering and incomplete editions must not be approved. */
+export function hasPublicationReadyCornerGuide(circuitId: string) {
+  const guide = candidateCornerGuides.find(entry => entry.circuit_id === circuitId);
+  if (!guide || guide.review_status !== 'independent_review_approved') return false;
+  if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
+  const numbers = guide.sections.flatMap(section => section.numbers);
+  if (numbers.length !== guide.numbered_turns || new Set(numbers).size !== guide.numbered_turns) return false;
+  if (numbers.some((number, index) => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
+  if (guide.sections.some(section =>
+    !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status) ||
+    !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
+    section.sources.length < 2 || section.sources.some(key => !candidateCornerSources[key])
+  )) return false;
+  return true;
+}
+
 /** No runtime flag can publish research. Maintainers must review an exact bilingual edition. */
 export function isCircuitEditionApproved(circuitId: string) {
+  if (!hasPublicationReadyCornerGuide(circuitId)) return false;
   const editions = (publication.editions as Edition[]).filter(edition => edition.circuit_id === circuitId);
   if (editions.length !== 1) return false;
   const [edition] = editions;
