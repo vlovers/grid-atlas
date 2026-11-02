@@ -57,7 +57,13 @@
     "mugello-race": "https://www.formula1.com/en/racing/2020/tuscany",
     "portimao-map": "https://www.fia.com/sites/default/files/doc_1_-_2020_portuguese_grand_prix_-_circuit_map_0.pdf",
     "portimao-names": "https://www.fiawec.com/en/news/portimao-the-track-explained/7057",
-    "portimao-race": "https://www.formula1.com/en/latest/article/fia-revises-track-limits-restrictions-at-portimao-after-125-lap-times.2J11eQhEoUSxcsU0EfN7eq"
+    "portimao-race": "https://www.formula1.com/en/latest/article/fia-revises-track-limits-restrictions-at-portimao-after-125-lap-times.2J11eQhEoUSxcsU0EfN7eq",
+    "istanbul-map": "https://www.fia.com/sites/default/files/2021_turkish_grand_prix_-_preview_0.pdf",
+    "istanbul-names": "https://www.formula1.com/en/latest/article/5-reasons-were-excited-f1-is-going-back-to-istanbul-park-including-the.2pD5aqM9MhnT5iHsLXEkHS.2pD5aqM9MhnT5iHsLXEkHS",
+    "istanbul-race": "https://www.formula1.com/en/racing/2020/turkey",
+    "nurburgring-map": "https://www.fia.com/sites/default/files/decision-document/2020%20Eifel%20Grand%20Prix%20-%20Circuit%20Map.pdf",
+    "nurburgring-names": "https://www.formula1.com/en/racing/2020/germany",
+    "nurburgring-race": "https://www.formula1.com/en/results/2020/races/1055/eifel/fastest-laps"
   },
   "guides": [
     {
@@ -6733,6 +6739,548 @@
             "portimao-map",
             "portimao-names",
             "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "istanbul",
+      "layout_id": "istanbul-1",
+      "numbering_year": 2021,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "istanbul-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 plunges left from the pit straight, inviting drivers to brake while the road drops away. Formula 1 has compared its dramatic change of elevation to Laguna Seca's Corkscrew; the exit must prepare the longer Turn 2.",
+            "uk": "Перший поворот різко спускається ліворуч від стартової прямої й змушує гальмувати на схилі. Формула-1 порівнювала перепад висот із Corkscrew у Лагуна-Сека; вихід має підготувати довший другий віраж."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is a long, fast right-hand curve after the first-corner descent. Rather than chasing a sharp apex, the driver builds speed gradually while keeping the car balanced for the next technical group.",
+            "uk": "Другий — довга швидка права дуга після спуску першого повороту. Замість різкої атаки апексу пілот поступово набирає швидкість і тримає баланс перед наступною технічною групою."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 begins the tighter linked sequence in the first sector. A car that enters too quickly loses the freedom to change direction for Turn 4, so positioning matters more than an isolated peak speed.",
+            "uk": "Третій відкриває тіснішу зв'язку першого сектору. Надто швидкий вхід позбавляє можливості правильно перекласти болід у четвертому, тому положення машини важливіше за окремий рекорд швидкості."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 continues the first-sector direction changes without a long recovery straight. The driver has to settle the car and avoid scrubbing speed that will be needed through the next bend.",
+            "uk": "Четвертий продовжує перекладки першого сектору без довгої прямої для перепочинку. Потрібно стабілізувати машину й не втрачати швидкість зайвим ковзанням перед наступним віражем."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 closes another tight part of the early sequence. The 2021 FIA preview notes a double-kerb addition at its exit, making the period-specific kerb layout relevant when comparing onboard laps.",
+            "uk": "П'ятий завершує ще одну тісну частину початкової зв'язки. У матеріалах FIA за 2021 рік зазначено додатковий подвійний поребрик на виході, тому при порівнянні онбордів важлива конфігурація конкретного року."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 keeps the rhythm flowing through the middle of Istanbul Park's first half. A driver who runs too wide must correct the car just as the following corner arrives, which makes tidy steering more valuable than bravado.",
+            "uk": "Шостий підтримує ритм середньої частини першої половини Istanbul Park. Після широкого виходу доведеться виправляти траєкторію вже перед наступним віражем, тому точне кермування корисніше за надмірну сміливість."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is the final setup before the celebrated Turn 8 complex. The driver must leave the car settled and correctly placed, because the next sustained left-hander keeps the tyres loaded for a long time.",
+            "uk": "Сьомий — остання підготовка перед знаменитим восьмим. Болід потрібно стабілізувати й правильно розташувати: наступна затяжна ліва дуга довго тримає шини під навантаженням."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is Istanbul Park's signature multi-apex left-hander, one numbered corner rather than four separate turns. Its sustained lateral load and uneven downhill line test tyres, neck muscles and commitment; the corner remained a highlight of F1's 2020 return.",
+            "uk": "Восьмий — візитівка Istanbul Park: багатoапексна ліва дуга, яку нумерують як один поворот, а не чотири. Тривале бокове навантаження й нерівний спуск перевіряють шини, фізичну витривалість та сміливість; саме він став символом повернення F1 у 2020 році."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 follows the heavy loading of Turn 8 and begins the transition towards the back-straight run. The 2021 FIA preview places a DRS detection point shortly before it, so its location also matters for understanding overtaking strategy.",
+            "uk": "Дев'ятий іде після сильного навантаження у восьмому й починає перехід до задньої прямої. У схемі FIA 2021 року точка вимірювання DRS стоїть незадовго до нього, тому положення віражу важливе й для тактики обгонів."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 links the preceding bend to the rising back-straight kink. Drivers need to carry speed without compromising the line for Turn 11, the feature often nicknamed 'Faux Rouge' by fans.",
+            "uk": "Десятий з'єднує попередню дугу з перегином задньої прямої на підйомі. Потрібно зберегти швидкість і підготувати траєкторію для одинадцятого, який уболівальники часто жартома називають Faux Rouge."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Faux Rouge",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the uphill kink on Istanbul's back straight, informally nicknamed Faux Rouge for its resemblance to Spa's Eau Rouge. It is not an official renamed corner; the 2021 FIA map places the first DRS activation before it.",
+            "uk": "Одинадцятий — перегин задньої прямої на підйомі, який неофіційно прозвали Faux Rouge за схожість з Eau Rouge у Спа. Це не затверджена нова назва; схема FIA 2021 року розміщує початок першої зони DRS перед ним."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is the heavy braking point at the end of the long run. The 2010 collision between Red Bull team-mates Sebastian Vettel and Mark Webber occurred during the battle approaching this part of the lap; a late move must still preserve the next corner.",
+            "uk": "Дванадцятий — сильне гальмування наприкінці довгого розгону. Зіткнення напарників Red Bull Себастьяна Феттеля й Марка Веббера у 2010 році сталося під час боротьби на підході до цієї ділянки; пізня атака має залишати простір для наступного віражу."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the middle part of the slow closing combination. It is easy to sacrifice the final exit by trying to gain too much at this apex, so drivers aim for a balanced car and a clear line into Turn 14.",
+            "uk": "Тринадцятий — середня частина повільної фінальної зв'язки. Надто агресивна атака цього апексу псує останній вихід, тому пілоти прагнуть балансу й чистої траєкторії до чотирнадцятого."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "istanbul-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 completes the slow last complex and opens the pit straight. The 2021 FIA preview records a new double kerb at its exit; clean traction here matters for the entire following acceleration and the second DRS zone.",
+            "uk": "Чотирнадцятий завершує повільну останню зв'язку й відкриває стартову пряму. У 2021 році FIA зафіксувала новий подвійний поребрик на виході; чисте прискорення важливе для всієї наступної прямої та другої зони DRS."
+          },
+          "sources": [
+            "istanbul-map",
+            "istanbul-names",
+            "istanbul-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "nurburgring",
+      "layout_id": "nurburgring-4",
+      "numbering_year": 2020,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "nurburgring-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Haug-Haken",
+          "aliases": [],
+          "explanation": {
+            "en": "The modern Grand Prix lap starts with a tight right-hand hairpin named for Norbert Haug. It is the principal braking opportunity after the pit straight; drivers must leave room for the following Mercedes Arena sequence.",
+            "uk": "Сучасне коло Гран-прі починається тісною правою шпилькою Haug-Haken, названою на честь Норберта Гауга. Це головна зона гальмування після стартової прямої; потрібно залишити простір для наступної зв'язки Mercedes Arena."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Mercedes Arena",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 begins the compact Mercedes Arena section added in the early 2000s. The opening change of direction is about placing the car for the next two bends rather than treating each apex as a separate braking event.",
+            "uk": "Другий відкриває компактну секцію Mercedes Arena, додану на початку 2000-х. Перша перекладка має правильно розташувати болід для двох наступних віражів, а не бути окремою атакою на гальмуванні."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Mercedes Arena",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 continues the Mercedes Arena sequence with little recovery distance. Steering balance matters here because an over-eager entry makes the following exit corner harder to negotiate.",
+            "uk": "Третій продовжує зв'язку Mercedes Arena майже без відстані для стабілізації. Баланс кермування вирішальний: надто сміливий вхід ускладнить завершальний поворот секції."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Mercedes Arena",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 completes the Arena group and releases the car towards a faster part of the lap. A smooth exit is more valuable than cutting aggressively across the inner kerb.",
+            "uk": "Четвертий завершує Mercedes Arena й виводить машину до швидшої частини кола. Плавний вихід корисніший за агресивне зрізання внутрішнього поребрика."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 begins the next flowing group after the Arena. The FIA's 2020 sector boundary lies 90 metres before it, a useful fixed landmark when matching the lap to official timing rather than to a generic modern track map.",
+            "uk": "П'ятий відкриває наступну плавну групу після Arena. На схемі FIA 2020 року межа сектору лежить за 90 метрів до нього — корисний орієнтир для зіставлення кола з офіційним хронометражем."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 changes the car's direction before the downhill run to the Dunlop hairpin. The driver must control the exit because the road soon drops towards one of the slowest points of the lap.",
+            "uk": "Шостий змінює напрямок перед спуском до шпильки Dunlop. Пілоту потрібно контролювати вихід, адже невдовзі дорога падає до одного з найповільніших місць кола."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Dunlop-Kehre",
+          "aliases": [],
+          "explanation": {
+            "en": "The Dunlop hairpin is the low point of the modern Grand Prix circuit and a major braking zone. A clean exit is crucial because the car accelerates uphill towards the high-speed Michael-Schumacher-S.",
+            "uk": "Шпилька Dunlop-Kehre лежить у низькій частині сучасної траси й вимагає сильного гальмування. Чистий вихід важливий, бо далі болід прискорюється вгору до швидкої зв'язки Michael-Schumacher-S."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Michael-Schumacher-S",
+          "aliases": [],
+          "explanation": {
+            "en": "The first part of Michael-Schumacher-S asks for a fast, committed direction change after the uphill acceleration. The section honours the German champion, but the FIA counts its two bends separately as Turns 8 and 9.",
+            "uk": "Перша частина Michael-Schumacher-S вимагає швидкої впевненої перекладки після розгону на підйомі. Секція вшановує німецького чемпіона, але FIA нумерує її дві дуги окремо — як восьмий і дев'ятий повороти."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Michael-Schumacher-S",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 completes the high-speed Schumacher S. A small slide here affects the following straight, so drivers value a settled car and a clean line more than an aggressive kerb strike.",
+            "uk": "Дев'ятий завершує швидку зв'язку Schumacher S. Навіть невелике ковзання впливає на наступну пряму, тому стабільний болід і чиста траєкторія важливіші за агресивну атаку поребрика."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 links the fast Schumacher section to the next slower complex. The driver must judge the transition carefully; an awkward exit forces a correction just before the important Turn 11 acceleration.",
+            "uk": "Десятий з'єднує швидку секцію Schumacher з повільнішою наступною групою. Потрібно точно пройти перехід: незручний вихід змусить виправляти траєкторію перед важливим розгоном з одинадцятого."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the key exit onto the back straight. The 2020 FIA map places the first DRS activation 55 metres after it, so an early, tidy throttle application can decide whether an overtaking attempt develops.",
+            "uk": "Одинадцятий визначає вихід на задню пряму. За схемою FIA 2020 року перша активація DRS починається через 55 метрів після нього, тому раннє чисте прискорення може вирішити долю обгону."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is a fast sweep along the run towards the final chicane. It is less about a new heavy braking point and more about maintaining speed and positioning the car for the much slower Turns 13–14.",
+            "uk": "Дванадцятий — швидка дуга на підході до фінальної шикани. Тут важливіше зберегти швидкість і правильно розташувати болід для повільніших тринадцятого та чотирнадцятого, ніж шукати нову зону сильного гальмування."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t13",
+          "numbers": [
+            13
+          ],
+          "name": "NGK/Veedol chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 begins the final chicane, known through different sponsorship eras as NGK or Veedol. The driver brakes heavily and must avoid taking so much kerb that the car cannot change direction for Turn 14.",
+            "uk": "Тринадцятий відкриває фінальну шикану, відому в різні спонсорські епохи як NGK або Veedol. Пілот сильно гальмує й не має надто різко атакувати поребрик, щоб встигнути перекласти болід у чотирнадцятому."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t14",
+          "numbers": [
+            14
+          ],
+          "name": "NGK/Veedol chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 completes the chicane and points the car towards the final Coca-Cola bend. A controlled exit is vital: the last corner comes quickly, and poor traction here compounds the loss on the pit straight.",
+            "uk": "Чотирнадцятий завершує шикану й спрямовує машину до фінальної дуги Coca-Cola. Контрольований вихід вирішальний: останній поворот настає швидко, а погане зчеплення збільшує втрату часу на стартовій прямій."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "nurburgring-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Coca-Cola-Kurve",
+          "aliases": [],
+          "explanation": {
+            "en": "Coca-Cola-Kurve is the final right-hand corner onto the Nürburgring pit straight. The sponsor-derived name belongs to the modern Grand Prix circuit, not to the historic Nordschleife; early throttle application rewards a patient entry.",
+            "uk": "Coca-Cola-Kurve — останній правий поворот перед стартовою прямою Нюрбургрингу. Назва походить від спонсора й належить сучасній трасі Гран-прі, а не історичній Nordschleife; ранній розгін винагороджує терплячий вхід."
+          },
+          "sources": [
+            "nurburgring-map",
+            "nurburgring-names",
+            "nurburgring-race"
           ],
           "confirmation_status": "source_checked_ai"
         }
