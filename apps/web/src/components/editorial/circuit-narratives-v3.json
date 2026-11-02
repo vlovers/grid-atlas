@@ -1462,6 +1462,40 @@
           "source_check": "AI checked, not approved"
         }
       ]
+    },
+    {
+      "circuit_id": "jarama",
+      "biography": {
+        "title": {
+          "en": "The little circuit that turned defence into an art",
+          "uk": "Маленька траса, де захист став мистецтвом"
+        },
+        "text": {
+          "en": "Jarama's tight turns and single meaningful straight made passing difficult. The 1981 Grand Prix used a pre-1990 layout and the final bend still carried the Tunnel name, decades before the María de Villota dedication.",
+          "uk": "Тісні повороти Харами й одна справді довга пряма ускладнювали обгони. Гран-прі 1981 року проходив конфігурацією до перебудови 1990-х, а останній віраж тоді ще називали тунельним, задовго до присвяти Марії де Вільйоті."
+        },
+        "source": "https://www.jarama.org/actualidad/noticias/el-circuito-del-jarama-race-celebra-su-50-aniversario-con-una-cena-de-gala",
+        "locator": "Jarama-RACE 50th anniversary corner list and 2017 renaming"
+      },
+      "moments": [
+        {
+          "id": "jarama-1981",
+          "year": 1981,
+          "title": {
+            "en": "Five cars within 1.24 seconds",
+            "uk": "П'ять машин за 1,24 секунди"
+          },
+          "text": {
+            "en": "Gilles Villeneuve won the final Spanish Grand Prix at Jarama, holding off Laffite, Watson, Reutemann and de Angelis; the first five finished within 1.24 seconds.",
+            "uk": "Жиль Вільнев виграв останній Гран-прі Іспанії на Харамі, стримавши Лаффіта, Вотсона, Ройтеманна й де Анджеліса; першу п'ятірку розділили 1,24 секунди."
+          },
+          "criterion": "race_turning_point",
+          "source": "https://www.formula1.com/en/results/1981/races/428/spain/race-result",
+          "locator": "Official Formula 1 1981 Spanish Grand Prix classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI checked; independent editorial approval pending"
+        }
+      ]
     }
   ]
 }

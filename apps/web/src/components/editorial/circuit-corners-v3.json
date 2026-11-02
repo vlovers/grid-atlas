@@ -130,7 +130,10 @@
     "aida-race": "https://www.formula1.com/en/results/1995/races/635/pacific/race-result",
     "anderstorp-map": "https://commons.wikimedia.org/wiki/File:Scandinavian_Raceway_1978.svg",
     "anderstorp-names": "https://www.press.bmwgroup.com/global/article/attachment/T0000370EN/487",
-    "anderstorp-race": "https://www.formula1.com/en/results/1978/races/398/sweden/race-result"
+    "anderstorp-race": "https://www.formula1.com/en/results/1978/races/398/sweden/race-result",
+    "jarama-map": "https://commons.wikimedia.org/wiki/File:Circuito_Permanente_del_Jarama_1980.svg",
+    "jarama-names": "https://www.jarama.org/actualidad/noticias/el-circuito-del-jarama-race-celebra-su-50-aniversario-con-una-cena-de-gala",
+    "jarama-race": "https://www.formula1.com/en/results/1981/races/428/spain/race-result"
   },
   "guides": [
     {
@@ -12908,6 +12911,297 @@
             "anderstorp-map",
             "anderstorp-names",
             "anderstorp-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "jarama",
+      "layout_id": "jarama-2",
+      "numbering_year": 1981,
+      "names_as_of": 1981,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "1980–1989 historical layout drawing + F1DB fourteen-turn count + organiser's retrospective named sequence; exact number-to-apex mapping provisional",
+      "sections": [
+        {
+          "id": "jarama-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Nuvolari"
+          ],
+          "explanation": {
+            "en": "Nuvolari is the gentle opening bend in the venue's published sequence, named for Tazio Nuvolari. Its precise number on the 1981 Grand Prix layout remains a reconstruction because the surviving period diagram has no turn numbers.",
+            "uk": "Nuvolari — полога початкова дуга в опублікованому переліку організатора, названа на честь Таціо Нуволарі. Точний номер на схемі Гран-прі 1981 року поки реконструйований, бо історична карта не містить нумерації."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Fangio"
+          ],
+          "explanation": {
+            "en": "The next named corner, Fangio, is a tight right-hander honouring five-time champion Juan Manuel Fangio. Jarama's short intervals between bends made the approach especially important for positioning the car.",
+            "uk": "Наступний іменований віраж Fangio — тісний правий поворот на честь п'ятиразового чемпіона Хуана-Мануеля Фанхіо. Короткі проміжки між віражами Харами робили правильний підхід особливо важливим."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Varzi"
+          ],
+          "explanation": {
+            "en": "Varzi is described by the circuit as an extremely fast bend and honours Achille Varzi. A driver carrying the wrong line here would have little room to recover before the double Le Mans complex.",
+            "uk": "Організатор описує Varzi як надзвичайно швидку дугу на честь Акілле Варці. Невдала траєкторія тут залишала обмаль місця для виправлення перед подвійною зв'язкою Le Mans."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Le Mans entry"
+          ],
+          "explanation": {
+            "en": "The Le Mans section takes its name from the French endurance-racing city. This first candidate number describes the entry to the double bend; the period map has not independently confirmed the exact split into two apexes.",
+            "uk": "Секція Le Mans названа на честь французького міста перегонів на витривалість. Цей попередній номер описує вхід у подвійну дугу; історична карта ще не підтвердила точний поділ на два апекси."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Le Mans exit"
+          ],
+          "explanation": {
+            "en": "The second part of the double Le Mans sequence rewards a tidy line from the first apex. This is a descriptive subdivision, not a claim that the venue officially gave each part its own separate name.",
+            "uk": "Друга частина подвійного Le Mans винагороджує чисту траєкторію з першого апексу. Це описовий поділ, а не твердження, що організатор надав кожній частині окрему офіційну назву."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Farina"
+          ],
+          "explanation": {
+            "en": "Farina commemorates Giuseppe 'Nino' Farina, Formula 1's first World Champion. It follows Le Mans in the organiser's named sequence; its 1981 turn number has not been established by a contemporaneous numbered chart.",
+            "uk": "Farina вшановує Джузеппе «Ніно» Фаріну, першого чемпіона світу Формули-1. У переліку організатора віраж іде після Le Mans; його номер 1981 року не підтверджено тогочасною пронумерованою картою."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Pegaso"
+          ],
+          "explanation": {
+            "en": "Pegaso recalls the Spanish automotive marque and the venue describes a distinctive climb through this sector. The driver needed to balance throttle and steering on the uphill approach instead of treating it as a straight.",
+            "uk": "Pegaso нагадує про іспанську автомобільну марку, а організатор згадує характерний підйом у цій секції. Пілот мусив поєднувати газ і кермування, а не сприймати підйом як пряму."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Ascari"
+          ],
+          "explanation": {
+            "en": "This bend is named for Alberto Ascari, the double Formula 1 champion. It belongs to Jarama's compact middle section, where carrying momentum between corners mattered more than attempting an isolated late-braking manoeuvre.",
+            "uk": "Віраж названо на честь Альберто Аскарі, дворазового чемпіона Формули-1. У тісній середній секції Харами збереження швидкості між поворотами було важливішим за окрему спробу пізнього гальмування."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Portago"
+          ],
+          "explanation": {
+            "en": "The Marqués de Portago corner honours Spanish racer Alfonso de Portago. The venue confirms its position in the historical sequence of names, but the assignment of this individual F1DB turn number is provisional.",
+            "uk": "Поворот Marqués de Portago вшановує іспанського гонщика Альфонсо де Портаго. Організатор підтверджує місце в історичній послідовності назв, але прив'язка до цього номера F1DB залишається попередньою."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Bugatti descent"
+          ],
+          "explanation": {
+            "en": "The Bugatti section descends through a notable change of elevation and recalls the racing marque. Braking balance on a downhill approach is more demanding than the flat outline suggests; the numbered split needs verification.",
+            "uk": "Секція Bugatti спускається через помітний перепад висоти й названа на честь гоночної марки. Баланс під час гальмування на спуску складніший, ніж здається за пласкою схемою; поділ за номерами потребує перевірки."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Bugatti exit"
+          ],
+          "explanation": {
+            "en": "This second candidate number follows the descent through Bugatti and prepares the line for Pegio. The venue describes Bugatti as one named section; dividing it into two turns is a research hypothesis, not an official numbering.",
+            "uk": "Цей другий попередній номер іде після спуску Bugatti й готує траєкторію до Pegio. Організатор називає Bugatti однією секцією; поділ на два повороти є дослідницькою гіпотезою, а не офіційною нумерацією."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Pegio"
+          ],
+          "explanation": {
+            "en": "Pegio is a technical bend near the end of Jarama's named sequence. Later safety modifications changed parts of the circuit, so a modern photograph cannot by itself validate the exact 1981 apex or kerb position.",
+            "uk": "Pegio — технічний віраж ближче до кінця історичного переліку Харами. Пізніші зміни безпеки вплинули на трасу, тому сучасне фото саме по собі не доводить точне розташування апексу чи поребрика 1981 року."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Monza"
+          ],
+          "explanation": {
+            "en": "Monza is named after the Italian circuit and precedes the last bend in the venue's sequence. Jarama offered little overtaking space, as Villeneuve demonstrated when he defended the lead for most of the 1981 race.",
+            "uk": "Monza названа на честь італійського автодрому й передує останньому віражу в переліку організатора. Харама залишала мало місця для обгонів, що показав Вільнев, захищаючи лідерство більшу частину гонки 1981 року."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "jarama-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Tunnel corner"
+          ],
+          "explanation": {
+            "en": "The final corner was known as the Tunnel bend during the Formula 1 era. The venue renamed it María de Villota only in 2017, so that later name must not be presented as a 1981 Grand Prix-era label.",
+            "uk": "Останній поворот у часи Формули-1 називали віражем біля тунелю. Організатор перейменував його на María de Villota лише 2017 року, тому цю пізнішу назву не можна подавати як назву епохи Гран-прі 1981-го."
+          },
+          "sources": [
+            "jarama-map",
+            "jarama-names",
+            "jarama-race"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
