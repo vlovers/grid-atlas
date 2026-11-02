@@ -969,6 +969,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "fuji",
+      "biography": {
+        "title": {
+          "en": "Two Fuji eras, one mountain backdrop",
+          "uk": "Дві епохи Фудзі на тлі однієї гори"
+        },
+        "text": {
+          "en": "Fuji Speedway hosted Japan's first World Championship Grand Prix in 1976 on an eight-turn historical course. Formula 1 returned in 2007–2008 after a major rebuild, this time on a 16-turn 4.563-kilometre layout. The 1.475-kilometre straight remained a defining feature, but the technical final sector made the modern lap very different from the wet championship decider of 1976. Corner numbers and sponsor names must be tied to the correct era.",
+          "uk": "Fuji Speedway приймав перший чемпіонатний Гран-прі Японії у 1976 році на історичній конфігурації з вісьмома поворотами. Формула-1 повернулася у 2007–2008 роках після великої перебудови, вже на маршруті з 16 поворотами завдовжки 4.563 кілометра. Пряма на 1.475 кілометра залишилася визначальною рисою, але технічний останній сектор зробив сучасне коло зовсім іншим, ніж під час дощового фіналу 1976 року. Назви й номери поворотів потрібно прив'язувати до епохи."
+        },
+        "source": "https://lapledger.org/circuits/fuji",
+        "locator": "F1DB-derived historic layouts and 2007–2008 F1 configuration"
+      },
+      "moments": [
+        {
+          "id": "fuji-1976-1",
+          "year": 1976,
+          "title": {
+            "en": "Andretti wins the race, Hunt wins the title",
+            "uk": "Андретті виграє гонку, Гант — чемпіонат"
+          },
+          "text": {
+            "en": "The 1976 Japanese Grand Prix began in torrential rain. Niki Lauda withdrew after two laps, judging the conditions too dangerous, while James Hunt recovered from tyre trouble to finish third and secure the championship by one point. The race itself was won by Mario Andretti for Lotus, a result often overshadowed by the title drama.",
+            "uk": "Гран-прі Японії 1976 року стартував під зливою. Нікі Лауда зійшов після двох кіл, вважаючи умови надто небезпечними, а Джеймс Гант після проблем із шинами фінішував третім і здобув титул із перевагою в одне очко. Саму гонку виграв Маріо Андретті на Lotus — цей результат часто губиться за драмою чемпіонату."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/9-thrilling-title-deciding-finales-from-f1-history.57lx35G8vIsWRCOL5LV6cF.57lx35G8vIsWRCOL5LV6cF",
+          "locator": "1976 Fuji title decider and Mario Andretti race winner",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "fuji-2008-2",
+          "year": 2008,
+          "title": {
+            "en": "Alonso wins the final Fuji Grand Prix",
+            "uk": "Алонсо виграє останній Гран-прі Фудзі"
+          },
+          "text": {
+            "en": "In 2008, Fuji staged its final Formula 1 race. Fernando Alonso won for Renault ahead of Robert Kubica and Kimi Räikkönen, while Lewis Hamilton, who had taken pole, finished twelfth. The event belongs to the modern 16-turn configuration, not the old eight-turn circuit from the 1970s.",
+            "uk": "У 2008 році Фудзі востаннє приймав Формулу-1. Фернандо Алонсо переміг за Renault перед Робертом Кубіцею та Кімі Райкконеном, а Льюїс Гамільтон, який здобув поул, фінішував дванадцятим. Ця гонка належить до сучасної конфігурації з 16 поворотами, а не до старого маршруту 1970-х із вісьмома."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2008/races/840/japan/race-result",
+          "locator": "2008 official race classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
