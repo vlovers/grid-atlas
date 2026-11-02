@@ -18,8 +18,8 @@ test('seventeen historical route studies preserve and expand bilingual research 
     for (const section of circuit.sections) {
       assert.ok(section.label.en.length >= 12);
       assert.ok(section.label.uk.length >= 12);
-      assert.ok(section.description.en.trim().split(/\\s+/).length >= 29, circuit.circuit_id + ':en');
-      assert.ok(section.description.uk.trim().split(/\\s+/).length >= 23, circuit.circuit_id + ':uk');
+      assert.ok(section.description.en.trim().split(/\s+/).length >= 29, circuit.circuit_id + ':en');
+      assert.ok(section.description.uk.trim().split(/\s+/).length >= 23, circuit.circuit_id + ':uk');
       assert.equal(section.turn_numbers, null, 'research order is not an apex number');
       assert.equal(section.review_status, 'pending');
       assert.ok(section.source_urls.length >= 1 && section.source_urls.every(url => url.startsWith('https://')));
