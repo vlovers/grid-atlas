@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "status": "research_pending_turn_by_turn_number_reconciliation",
+  "release_authorized": false,
+  "image_rights_approved": false,
+  "coverage_note": "All 17 circuits have two unique historical, bilingual route sections; this does NOT assert every individual turn is mapped.",
+  "circuits": [
+    {
+      "circuit_id": "ain-diab",
+      "layout_id": "ain-diab-1",
+      "period": "1958",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Coastal highway towards Azemmour",
+            "uk": "Прибережне шосе до Аземмура"
+          },
+          "description": {
+            "en": "The long public-road sweep towards Azemmour carried Grand Prix cars through an exposed coastal landscape. It was not a permanent circuit; the difference between open highway and tighter forest roads gave drivers contrasting braking and steering demands.",
+            "uk": "Довга ділянка шосе в напрямку Аземмура проходила відкритим узбережжям. Це був не стаціонарний автодром: швидка дорога біля моря змінювалася тіснішими проїздами серед лісу, тому пілотам доводилося перебудовувати ритм гальмування й кермування."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Sidi Abderrahman forest roads",
+            "uk": "Лісові дороги Сіді Абдеррахман"
+          },
+          "description": {
+            "en": "Part of Ain-Diab's 18-corner lap ran through the Sidi Abderrahman forest. Roadside trees and the changing road character mattered much more than any later invented corner nickname; this section belongs to the 1958 Moroccan Grand Prix layout.",
+            "uk": "Частина кола Айн-Діаб із вісімнадцятьма поворотами проходила лісом Сіді Абдеррахман. Дерева обабіч дороги й змінний характер покриття були важливішими за будь-які пізніше вигадані назви; йдеться саме про конфігурацію Гран-прі Марокко 1958 року."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "bremgarten",
+      "layout_id": "bremgarten-1",
+      "period": "1954",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Forest-lined high-speed road",
+            "uk": "Швидка дорога крізь ліс"
+          },
+          "description": {
+            "en": "Bremgarten was a demanding public-road circuit through woods outside Bern, with little separation between fast corners and the surrounding trees. Fangio's 1954 Swiss Grand Prix victory came on that dangerous historic lap, not on a modern permanent track.",
+            "uk": "Бремгартен проходив лісовими дорогами біля Берна, де швидкі віражі майже не були відділені від дерев. Перемога Фанхіо на Гран-прі Швейцарії 1954 року відбулася саме на цьому небезпечному історичному колі, а не на сучасному стаціонарному автодромі."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Undulating woodland bends",
+            "uk": "Хвилясті віражі серед дерев"
+          },
+          "description": {
+            "en": "The road rose and fell as it threaded through the forest. To explain the individual turns convincingly, the numbered 1954 diagram must be matched against the route; present-day roads alone cannot establish which bend carried each historical turn number.",
+            "uk": "Дорога піднімалася й опускалася, петляючи серед дерев. Для точного опису кожного повороту потрібна нумерована схема 1954 року: сучасні дороги самі по собі не доводять, який віраж мав той чи інший історичний номер."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "bugatti",
+      "layout_id": "bugatti-1",
+      "period": "1967",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Bugatti loop, not the Sarthe road course",
+            "uk": "Коло Bugatti, а не довгий Sarthe"
+          },
+          "description": {
+            "en": "The French Grand Prix in 1967 used the short permanent Bugatti circuit at Le Mans. Its slow bends created a very different race from the long public-road sections of the 24 Hours, so an endurance-race map would mislead a reader of this Formula 1 event.",
+            "uk": "У 1967 році Гран-прі Франції проводили коротким стаціонарним колом Bugatti в Ле-Мані. Його повільні віражі створювали зовсім інші перегони, ніж довгі дороги «24 годин Ле-Мана», тож схема гонки на витривалість лише заплутає читача Формули-1."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Tight infield direction changes",
+            "uk": "Тісні перекладки внутрішньої секції"
+          },
+          "description": {
+            "en": "Jack Brabham won the 1967 Grand Prix after mechanical problems struck the newer Lotus cars. The compact loop had repeated low-speed direction changes rather than the famous Mulsanne Straight; period photographs must be identified before being attached to these corners.",
+            "uk": "Джек Бребем виграв Гран-прі 1967 року після технічних проблем нових болідів Lotus. На компактному кільці було багато повільних перекладок замість знаменитої прямої Mulsanne; перед додаванням фото до поворотів необхідно встановити, яку трасу на ньому показано."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "layout_id": "caesars-palace-1",
+      "period": "1981–1982",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Parking-area opening complex",
+            "uk": "Початкова секція на парковці"
+          },
+          "description": {
+            "en": "The first three turns and the pit straight occupied the Caesars Palace casino parking area. The circuit then stretched onto undeveloped land, so calling every turn a bend between parked cars misrepresents the actual 1981–82 Grand Prix route.",
+            "uk": "Перші три повороти та пряма боксів проходили парковкою Caesars Palace. Далі траса виходила на незабудовану ділянку, тож описувати кожен віраж як маневр між припаркованими машинами — перекручувати конфігурацію 1981–1982 років."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Flat desert temporary section",
+            "uk": "Рівна тимчасова секція в пустелі"
+          },
+          "description": {
+            "en": "The flat surrounding ground offered few natural landmarks, and successive tight changes of direction tested concentration. The circuit was not the later oval used by other series and not the modern Strip street track.",
+            "uk": "Рівнинна місцевість майже не давала природних орієнтирів, а послідовність тісних віражів випробовувала увагу. Це був не пізніший овал інших серій і не сучасна міська траса вздовж Стріпу."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "layout_id": "clermont-ferrand-1",
+      "period": "1972",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Charade's volcanic hillside roads",
+            "uk": "Вулканічні схили Charade"
+          },
+          "description": {
+            "en": "The 1972 French Grand Prix took place on a long road course winding through volcanic hills. The changing elevation and exposed shoulders made stones a genuine risk, not background scenery, for drivers committed to carrying speed through consecutive bends.",
+            "uk": "Гран-прі Франції 1972 року проходив довгим дорожнім маршрутом вулканічними пагорбами. Перепади висот і відкриті узбіччя робили камінці реальною загрозою, а не частиною пейзажу, коли пілоти намагалися зберегти швидкість у зв'язках віражів."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Amon's puncture on the road loop",
+            "uk": "Прокол Еймона на дорожньому колі"
+          },
+          "description": {
+            "en": "Chris Amon led from pole until a puncture forced a stop, allowing Jackie Stewart through to victory. The event is a useful example of how Charade's rough road edges influenced the actual race, though it does not certify a particular numbered bend.",
+            "uk": "Кріс Еймон лідирував із поулу, але прокол змусив його заїхати в бокси, і перемогу здобув Джекі Стюарт. Це показує, як узбіччя Charade впливали на хід гонки, проте саме по собі не доводить номер конкретного повороту."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "dallas",
+      "layout_id": "dallas-1",
+      "period": "1984",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Fair Park asphalt deterioration",
+            "uk": "Руйнування асфальту Fair Park"
+          },
+          "description": {
+            "en": "Dallas was built from temporary roads around Fair Park in oppressive summer heat. The asphalt broke apart during the weekend; a seemingly ordinary bend could suddenly change grip as the surface crumbled, affecting braking and corner exits.",
+            "uk": "Даллас проклали тимчасовими дорогами навколо Fair Park у виснажливу літню спеку. Асфальт руйнувався протягом вікенду, тому навіть звичайний поворот раптово втрачав зчеплення, змінюючи гальмування й розгін."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Tight parking-area chicanes",
+            "uk": "Тісні шикани біля парковок"
+          },
+          "description": {
+            "en": "The temporary circuit repeatedly interrupted short straights with tight direction changes. Its 1984 Grand Prix layout requires its own period map: later Fair Park events did not necessarily use the same sequences or corner positions.",
+            "uk": "На тимчасовій трасі короткі прямі постійно переривалися тісними перекладками. Для конфігурації Гран-прі 1984 року потрібна окрема історична карта: пізніші перегони у Fair Park не обов'язково використовували ті самі зв'язки."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "detroit",
+      "layout_id": "detroit-1",
+      "period": "1982",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Riverfront tunnel and tram tracks",
+            "uk": "Тунель на набережній та трамвайні колії"
+          },
+          "description": {
+            "en": "Detroit's original course threaded through the riverfront and downtown, crossing tram tracks and passing through a tunnel. Those were real driving hazards, not generic street-circuit imagery; the 1982 route differed from later reworked city layouts.",
+            "uk": "Перший маршрут Детройта проходив набережною й центром міста, перетинав трамвайні колії та вів через тунель. Це були реальні труднощі, а не узагальнений опис міської траси; конфігурація 1982 року відрізнялася від пізніших перебудов."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Low-speed downtown grid corners",
+            "uk": "Повільні віражі міської сітки"
+          },
+          "description": {
+            "en": "John Watson won the inaugural Detroit race from seventeenth on the grid. The succession of square city corners helps explain why positioning a car for an overtake was difficult, but exact numerical mapping still needs the contemporary event diagram.",
+            "uk": "Джон Вотсон виграв дебютну гонку Детройта зі сімнадцятого місця на старті. Послідовність прямокутних міських поворотів пояснює, чому для обгону було складно правильно розмістити болід, але точна нумерація потребує схеми тієї епохи."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "layout_id": "jacarepagua-1",
+      "period": "1989",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Rio de Janeiro permanent circuit",
+            "uk": "Стаціонарна траса Ріо-де-Жанейро"
+          },
+          "description": {
+            "en": "Jacarepaguá was Rio's Grand Prix venue, not the Interlagos circuit in São Paulo. Its permanent road-course bends were central to the 1989 Brazilian Grand Prix, when Nigel Mansell won on his Ferrari debut despite pre-race doubts about the gearbox.",
+            "uk": "Жакарепагуа була трасою Гран-прі у Ріо, а не Інтерлагосом у Сан-Паулу. Повороти стаціонарного кільця стали сценою Гран-прі Бразилії 1989 року, коли Найджел Менселл переміг у дебюті за Ferrari попри сумніви щодо коробки передач."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Historically distinct Rio layout",
+            "uk": "Окрема історична схема Ріо"
+          },
+          "description": {
+            "en": "An outline from the demolished Rio venue cannot be replaced with a current São Paulo circuit map. Any corner name or number should be matched to the Grand Prix-era configuration rather than inferred from a generic Brazilian racing article.",
+            "uk": "Контур зниклого автодрому Ріо не можна замінити сучасною схемою Сан-Паулу. Будь-яку назву чи номер потрібно звіряти з конфігурацією років проведення Гран-прі, а не виводити зі звичайної статті про бразильські перегони."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "monsanto",
+      "layout_id": "monsanto-1",
+      "period": "1959",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Lisbon park-road climbs",
+            "uk": "Підйоми паркових доріг Лісабона"
+          },
+          "description": {
+            "en": "The 1959 Portuguese Grand Prix went through Lisbon's Monsanto park roads, combining changes of elevation and mixed surface conditions. It should not be confused with the Boavista street race in Porto or later Portuguese races at Estoril.",
+            "uk": "Гран-прі Португалії 1959 року проходив парковими дорогами Монсанту в Лісабоні, поєднуючи підйоми й різні типи покриття. Не можна плутати цей маршрут із міською трасою Боавішта в Порту або пізнішими гонками в Ешторілі."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Moss on the park circuit",
+            "uk": "Мосс на парковому кільці"
+          },
+          "description": {
+            "en": "Stirling Moss mastered the Monsanto circuit in 1959. The event deserves a route-specific history of the park rather than a copy of another Portuguese corner guide; street geography alone still cannot determine individual historical turn numbers.",
+            "uk": "Стірлінг Мосс впевнено подолав Монсанту у 1959 році. Ця гонка потребує окремої історії паркової траси, а не копії довідника іншого португальського автодрому; сама географія вулиць ще не встановлює історичну нумерацію."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "layout_id": "mont-tremblant-1",
+      "period": "1968",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Laurentian hillside gradients",
+            "uk": "Підйоми й спуски Лаврентійських гір"
+          },
+          "description": {
+            "en": "Mont-Tremblant's Canadian Grand Prix loop climbed and fell through the Laurentian landscape. Blind rises demanded precise car placement, a contrast with the comparatively flat island circuit at Montréal that took over later Canadian Grands Prix.",
+            "uk": "Маршрут Гран-прі Мон-Тремблан підіймався й спускався серед Лаврентійських гір. Сліпі гребені вимагали точного розташування боліда, на відміну від значно рівнішого острівного автодрому Монреаля, який згодом приймав канадські Гран-прі."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Amon's lost lead",
+            "uk": "Втрачене лідерство Еймона"
+          },
+          "description": {
+            "en": "In 1968 Chris Amon led until his Ferrari failed, allowing Denny Hulme to win. The race narrative should connect that turning point to the correct hillside course, not claim an unsupported corner number for the retirement.",
+            "uk": "У 1968 році Кріс Еймон лідирував, доки не зламалася його Ferrari, і перемогу здобув Денні Г'юм. Цю подію потрібно прив'язувати саме до гірської траси, не вигадуючи номер повороту, де сталася відмова."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "nivelles",
+      "layout_id": "nivelles-1",
+      "period": "1972–1974",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Wide permanent Belgian circuit",
+            "uk": "Широке стаціонарне бельгійське кільце"
+          },
+          "description": {
+            "en": "Nivelles was deliberately different from the long public-road course at Spa. Its wide, comparatively modern corners offered a safer setting for the Belgian Grand Prix in the early 1970s, but modern Spa names have no place on this circuit.",
+            "uk": "Нівель навмисно відрізнявся від довгих доріг старого Спа. Його широкі, на той час сучасні повороти створювали безпечніше місце для Гран-прі Бельгії на початку 1970-х, але назви сучасного Спа до цього автодрому не належать."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.grandprix.com/races/belgian-gp-1972.html"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "1972 Fittipaldi victory",
+            "uk": "Перемога Фіттіпальді 1972 року"
+          },
+          "description": {
+            "en": "Emerson Fittipaldi won the 1972 Belgian race at Nivelles. When readers compare Belgian Grand Prix seasons, the venue switch is the main historical fact: a race named for the same country could use a completely different layout.",
+            "uk": "Емерсон Фіттіпальді переміг у Гран-прі Бельгії 1972 року саме в Нівелі. Порівнюючи сезони, важливо бачити зміну місця проведення: гонка з тією самою назвою країни могла відбутися на цілком іншому маршруті."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.grandprix.com/races/belgian-gp-1972.html"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "pedralbes",
+      "layout_id": "pedralbes-1",
+      "period": "1951",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Broad Barcelona city avenues",
+            "uk": "Широкі міські проспекти Барселони"
+          },
+          "description": {
+            "en": "Pedralbes used Barcelona's broad public avenues, not the modern permanent Catalunya circuit. The 1951 Spanish Grand Prix closed the championship season on these streets, where Juan Manuel Fangio clinched his first title.",
+            "uk": "Педральбес використовував широкі міські проспекти Барселони, а не сучасний стаціонарний автодром Каталунья. Гран-прі Іспанії 1951 року завершив сезон на цих вулицях, де Хуан-Мануель Фанхіо виборов свій перший титул."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "1954 street-layout era",
+            "uk": "Міська конфігурація 1954 року"
+          },
+          "description": {
+            "en": "The circuit hosted later Formula 1 racing before disappearing from the championship. A turn list must identify which year's street layout it describes; the Barcelona name alone is not permission to import Turn 1 or Campsa labels from Catalunya.",
+            "uk": "Тут проводили й пізніші гонки Формули-1, перш ніж траса зникла з чемпіонату. Список поворотів має називати рік конкретного міського маршруту; спільна назва Барселони не дозволяє переносити сюди Turn 1 чи Campsa з Каталуньї."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "pescara",
+      "layout_id": "pescara-1",
+      "period": "1957",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Spoltore highland roads",
+            "uk": "Гірські дороги біля Спольторе"
+          },
+          "description": {
+            "en": "Pescara's giant road circuit climbed inland past villages such as Spoltore before returning towards the Adriatic. Drivers had to learn an exceptional length of changing road, not a compact collection of modern numbered corners.",
+            "uk": "Величезний дорожній маршрут Пескари підіймався через села, зокрема Спольторе, а потім повертав до Адріатики. Пілотам потрібно було запам'ятати надзвичайно довгу змінну дорогу, а не компактну групу сучасних нумерованих віражів."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Flying Kilometre to the coast",
+            "uk": "«Летючий кілометр» до узбережжя"
+          },
+          "description": {
+            "en": "The celebrated Flying Kilometre formed a rapid part of the return towards Montesilvano. Stirling Moss won the 1957 Grand Prix over only eighteen laps, which reflects the extraordinary circuit length rather than a short race.",
+            "uk": "Знаменитий «летючий кілометр» був швидкою частиною маршруту до Монтезільвано. Стірлінг Мосс виграв Гран-прі 1957 року лише за вісімнадцять кіл — наслідок неймовірної довжини кола, а не короткої гонки."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "phoenix",
+      "layout_id": "phoenix-1",
+      "period": "1989–1990",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Jefferson Street and opening right",
+            "uk": "Jefferson Street і початковий правий"
+          },
+          "description": {
+            "en": "The 1989–90 lap started on Jefferson Street and reached a right-hander onto 1st Street. Alesi took the lead at the opening corner in 1990; his fight with Senna belongs to this original layout, not the revised 1991 street course.",
+            "uk": "Коло 1989–1990 років починалося на Jefferson Street і вело до правого повороту на 1st Street. У 1990 році Алезі вийшов у лідери на першому повороті; його боротьба із Сенною належить до цієї початкової схеми, а не зміненої траси 1991 року."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Civic Plaza downtown loop",
+            "uk": "Міська петля навколо Civic Plaza"
+          },
+          "description": {
+            "en": "The original course swung around the Civic Plaza district using 5th Street, Monroe and 3rd Street before rejoining Washington Street. This loop was removed for 1991, so any period corner map must not mix the two Phoenix layouts.",
+            "uk": "Початковий маршрут огинав район Civic Plaza через 5th Street, Monroe та 3rd Street, повертаючись на Washington Street. У 1991 році цю петлю прибрали, тому історична карта поворотів не може змішувати дві конфігурації Фінікса."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "porto",
+      "layout_id": "porto-1",
+      "period": "1958–1960",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Avenida da Boavista tramlines",
+            "uk": "Трамвайні колії Avenida da Boavista"
+          },
+          "description": {
+            "en": "The Boavista street circuit used an uphill avenue with tram tracks running along the road. Drivers had to account for cobbles, rails and abrupt turns: the route was very different from the park roads of Monsanto or the permanent circuit at Estoril.",
+            "uk": "Міська траса Боавішта використовувала висхідний проспект із трамвайними коліями. Пілотам заважали бруківка, рейки й різкі віражі: це був зовсім інший маршрут, ніж паркові дороги Монсанту чи стаціонарний Ешторіл."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Winding descent towards the coast",
+            "uk": "Звивистий спуск до узбережжя"
+          },
+          "description": {
+            "en": "A faster descent eventually returned the cars towards the seafront and a shorter finishing section. Contemporary sources differ over whether liquid involved in a 1960 incident was oil or fuel, so the description should not erase that uncertainty.",
+            "uk": "Швидший звивистий спуск повертав машини до узбережжя й коротшого фінального відтинку. Історичні джерела розходяться щодо того, чи в одному з інцидентів 1960 року йшлося про оливу чи пальне, тож опис не повинен приховувати цю невизначеність."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "riverside",
+      "layout_id": "riverside-1",
+      "period": "1960",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "California permanent road course",
+            "uk": "Стаціонарна траса в Каліфорнії"
+          },
+          "description": {
+            "en": "Riverside's one Formula 1 World Championship Grand Prix was held in 1960. The permanent road course ran through open California terrain, a very different environment from later street venues on the American calendar.",
+            "uk": "Єдиний чемпіонатний Гран-прі Формули-1 у Ріверсайді відбувся в 1960 році. Стаціонарне дорожнє кільце проходило відкритою каліфорнійською місцевістю, зовсім не схожою на пізніші міські траси календаря США."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "1960 race and fuel-fire changes",
+            "uk": "Гонка 1960 року й проблеми з пальним"
+          },
+          "description": {
+            "en": "The race changed shape as fuel-related incidents affected leading cars, allowing Stirling Moss to win. To place those incidents at a particular corner would require a period report or diagram with that location, not speculation from the result alone.",
+            "uk": "Перебіг гонки змінився через інциденти, пов'язані з пальним, серед машин лідерів, і переміг Стірлінг Мосс. Щоб прив'язати ці події до конкретного повороту, потрібен репортаж чи схема з точним місцем, а не здогад із підсумкового протоколу."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "sebring",
+      "layout_id": "sebring-1",
+      "period": "1959",
+      "independent_numbering_verified": false,
+      "sections": [
+        {
+          "label": {
+            "en": "Old airfield concrete sections",
+            "uk": "Старі бетонні ділянки аеродрому"
+          },
+          "description": {
+            "en": "Sebring's 1959 United States Grand Prix ran on a former airfield circuit whose concrete slabs and seams gave a unique driving feel. A modern endurance-course corner list must not be used uncritically for the championship layout of that season.",
+            "uk": "Гран-прі США 1959 року в Себрингу проходив трасою колишнього аеродрому, де бетонні плити та стики створювали особливі відчуття за кермом. Сучасний перелік поворотів автодрому для гонок на витривалість не можна без перевірки переносити на конфігурацію того сезону."
+          },
+          "reading_order": 1,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+          ],
+          "review_status": "pending"
+        },
+        {
+          "label": {
+            "en": "Brabham's fuel-empty finish",
+            "uk": "Фініш Бребема без пального"
+          },
+          "description": {
+            "en": "Jack Brabham ran out of fuel near the finish and pushed his Cooper across the line, while Bruce McLaren won. That famous moment belongs to the original airfield Grand Prix course and must not be assigned a current numbered corner without evidence.",
+            "uk": "У Джека Бребема закінчилося пальне перед фінішем, і він штовхав Cooper через лінію, поки перемогу здобув Брюс Макларен. Цей знаменитий епізод належить до старого аеродромного маршруту й не повинен отримувати сучасний номер повороту без доказів."
+          },
+          "reading_order": 2,
+          "turn_numbers": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/"
+          ],
+          "review_status": "pending"
+        }
+      ]
+    }
+  ]
+}
