@@ -1275,6 +1275,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "estoril",
+      "biography": {
+        "title": {
+          "en": "Two Estoril laps, two different eras",
+          "uk": "Два кола Ешторіла — дві різні епохи"
+        },
+        "text": {
+          "en": "Estoril hosted Formula 1 from 1984 through 1996, but its lap was not frozen in time. The 1984–1993 course had eleven bends in F1DB, while the 1994–1996 revision is recorded with thirteen. A contemporary 1995 Autosport lap guide by driver Mark Blundell describes the bumps, fast opening sweeps, double-apex interior left and slow technical section before the final Parabólica. These are period observations, not permission to reproduce the magazine's copyrighted map or to assume modern motorcycle numbering was used in 1995.",
+          "uk": "Ешторіл приймав Формулу-1 з 1984 до 1996 року, але конфігурація змінювалася. У F1DB для маршруту 1984–1993 років зазначено одинадцять поворотів, а для версії 1994–1996 років — тринадцять. У журналі Autosport 1995 року пілот Марк Бланделл описав нерівності, швидкі початкові дуги, подвійний внутрішній лівий віраж і повільну технічну секцію перед фінальною Parabólica. Це свідчення епохи, а не дозвіл копіювати захищену авторським правом карту журналу чи переносити на 1995 рік сучасну мотоциклетну нумерацію."
+        },
+        "source": "https://porschecarshistory.com/wp-content/old/lib/magazines/autosport/1995/AS21.09.95.pdf",
+        "locator": "Autosport 21 September 1995, page 32, Mark Blundell's lap of Estoril"
+      },
+      "moments": [
+        {
+          "id": "estoril-1994-williams-one-two",
+          "year": 1994,
+          "title": {
+            "en": "Hill and Coulthard finish one-two",
+            "uk": "Дубль Гілла й Култгарда"
+          },
+          "text": {
+            "en": "The 1994 Portuguese Grand Prix was the first Formula 1 race on the revised Estoril layout recorded by F1DB. Damon Hill won for Williams, with team-mate David Coulthard just 0.603 seconds behind and Mika Häkkinen third. That close finish belongs to the thirteen-turn era, not to the eleven-turn route used for Senna's first victory in 1985. The official race classification supplies the finishing order and margin.",
+            "uk": "Гран-прі Португалії 1994 року став першим етапом Формули-1 на перебудованій конфігурації Ешторіла за даними F1DB. Деймон Гілл переміг за Williams, його напарник Девід Култгард відстав лише на 0,603 секунди, а Міка Гаккінен став третім. Цей щільний фініш належить до епохи тринадцяти поворотів, а не до одинадцятиповоротного маршруту першої перемоги Сенни 1985 року. Порядок і відрив підтверджує офіційний протокол."
+          },
+          "source": "https://www.formula1.com/en/results/1994/races/617/portugal/race-result",
+          "locator": "1994 Portugal official race classification",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "estoril-1995-coulthard-breakthrough",
+          "year": 1995,
+          "title": {
+            "en": "Coulthard turns pole into his first win",
+            "uk": "Култгард перетворює поул на першу перемогу"
+          },
+          "text": {
+            "en": "In September 1995, David Coulthard put his Williams on pole at Estoril and then won the Portuguese Grand Prix, his first Formula 1 victory. Michael Schumacher finished second, 7.248 seconds behind, with Damon Hill third. The result came on the thirteen-turn 1994–1996 layout described in the contemporary Autosport preview, whose driving notes explain why bumps and corner-to-straight compromises mattered that weekend.",
+            "uk": "У вересні 1995 року Девід Култгард здобув поул в Ешторілі й виграв Гран-прі Португалії — свою першу перемогу у Формулі-1. Міхаель Шумахер фінішував другим із відставанням 7,248 секунди, Деймон Гілл — третім. Гонка відбулася на тринадцятиповоротній конфігурації 1994–1996 років, описаній у тогочасному Autosport. Нотатки пілота пояснюють, чому нерівності й компроміс між швидкістю в поворотах та на прямих були важливими."
+          },
+          "source": "https://www.formula1.com/en/results/1995/races/633/portugal/race-result",
+          "locator": "1995 Portugal official race classification and winner",
+          "criterion": "source_selected_historical_milestone",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
