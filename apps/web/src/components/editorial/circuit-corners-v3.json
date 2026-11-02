@@ -108,7 +108,15 @@
     "jerez-1997-layout": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/jerez-2.svg",
     "jerez-venue-history": "https://circuitodejerez.com/en/circuito/",
     "jerez-1997-result": "https://www.formula1.com/en/results/1997/races/670/europe/race-result",
-    "jerez-historic-map": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_1994-2003.png"
+    "jerez-historic-map": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_1994-2003.png",
+    "brands-hatch-map": "https://www.lapledger.org/circuits/brands-hatch",
+    "brands-hatch-names": "https://oversteer48.com/brands-hatch-corner-names/",
+    "brands-hatch-era": "https://www.abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+    "brands-hatch-race": "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result",
+    "donington-map": "https://www.donington-park.co.uk/about/circuit-layouts",
+    "donington-names": "https://saloneevents.co.uk/how-to-drive-donington-circuit/",
+    "donington-era": "https://www.donington-park.co.uk/about/circuit-layouts",
+    "donington-race": "https://www.formula1.com/en/results/1993/races/592/europe/race-result"
   },
   "guides": [
     {
@@ -11563,6 +11571,433 @@
             "jerez-historic-map"
           ],
           "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "layout_id": "brands-hatch-2",
+      "numbering_year": 1986,
+      "names_as_of": 2026,
+      "numbered_turns": 9,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB historic layout count; named-section order crosschecked against circuit sources, not an independently authenticated period FIA numbered map",
+      "sections": [
+        {
+          "id": "brands-hatch-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Paddock Hill Bend",
+          "aliases": [],
+          "explanation": {
+            "en": "Paddock Hill drops away from the start straight into a steep right-hander. Its paddock-side setting explains the name; braking while the road falls demands a settled car, because the compression at the bottom can widen the exit.",
+            "uk": "Paddock Hill різко спускається від стартової прямої в правий поворот. Назва пов'язана із сусіднім паддоком. Гальмувати на спаді складно: внизу підвіска стискається, а болід може винести назовні."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Druids",
+          "aliases": [],
+          "explanation": {
+            "en": "The climb from Paddock Hill leads to the tight right-hand Druids hairpin. The origin of its name is disputed, so folklore about ancient druids should not be presented as a fact. A patient exit matters before the downhill run.",
+            "uk": "Після Paddock Hill траса підіймається до тісної правої шпильки Druids. Походження назви спірне, тому легенди про давніх друїдів не слід видавати за факт. На виході важливо терпляче дозувати газ."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Graham Hill Bend",
+          "aliases": [],
+          "explanation": {
+            "en": "The next left-hander drops away towards Cooper Straight and honours the double world champion Graham Hill. The corner's shape has changed since the Formula 1 years, so the modern apex and kerbs must not be projected onto the 1986 race.",
+            "uk": "Наступний лівий поворот спускається до Cooper Straight й ушановує дворазового чемпіона Ґрема Гілла. Геометрію згодом змінювали, тому сучасні апекс і поребрики не можна переносити на гонку 1986 року."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Surtees",
+          "aliases": [],
+          "explanation": {
+            "en": "Surtees is the climbing left-hander that sends the Grand Prix lap away from the shorter Indy circuit. It honours John Surtees, champion on both motorcycles and in Formula 1. A clean exit sets up the faster woodland section.",
+            "uk": "Surtees — лівий поворот на підйомі, після якого коло Гран-прі відділяється від короткої траси Indy. Назва вшановує Джона Сертіса, чемпіона мотогонок і Формули-1. Чистий вихід готує швидку лісову частину."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Hawthorn Bend",
+          "aliases": [],
+          "explanation": {
+            "en": "After the descent along Pilgrims Drop, Hawthorn Bend arrives as a fast right-hander. Sources disagree on whether the name originally referred to Mike Hawthorn or a nearby farm; that uncertainty is retained. Speed and road camber make the approach unforgiving.",
+            "uk": "Після спуску Pilgrims Drop починається швидкий правий Hawthorn Bend. Джерела розходяться: назва могла походити від Майка Готорна або сусідньої ферми. Невизначеність збережено. Швидкість і поперечний нахил дороги ускладнюють вхід."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Westfield Bend",
+          "aliases": [],
+          "explanation": {
+            "en": "Westfield is another quick right-hander, named for woodland near the circuit. The track falls towards Dingle Dell after the apex; a wide exit leaves the car badly placed for the old chicane that followed during the 1986 Grand Prix.",
+            "uk": "Westfield — ще один швидкий правий віраж, названий за сусіднім лісом. Після апекса дорога спускається до Dingle Dell; надто широкий вихід заважав підготуватися до старої шикани, яка існувала під час Гран-прі 1986 року."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Dingle Dell",
+          "aliases": [
+            "Sheene Curve (replacement from 2003; NOT 1986)"
+          ],
+          "explanation": {
+            "en": "In 1986 this was the original Dingle Dell chicane, not the faster Sheene Curve seen on today's maps. The chicane was removed and reprofiled in 2003, when the replacement was named for Barry Sheene. A modern turn-seven photograph would misrepresent the historic corner.",
+            "uk": "У 1986 році тут була стара шикана Dingle Dell, а не швидша Sheene Curve із сучасних схем. У 2003 році шикану прибрали й перебудували, а новий віраж назвали на честь Баррі Шина. Сучасне фото сьомого повороту спотворює історичну конфігурацію."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Stirling's Bend",
+          "aliases": [],
+          "explanation": {
+            "en": "The wooded Grand Prix loop bends left at Stirling's before returning towards the stadium section. The origin of the name is uncertain: a nearby farm is one proposed explanation, rather than a securely established tribute to Stirling Moss. The exit leads towards Clearways.",
+            "uk": "Лісова частина кола повертає ліворуч у Stirling's перед поверненням до стадіонної секції. Походження назви невизначене: одна з версій пов'язує її з сусідньою фермою, а не з доведеною присвятою Стірлінгу Моссу. Вихід веде до Clearways."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "brands-hatch-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Clark Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "Clark Curve closes the Grand Prix lap with a right-hand run onto the pit straight. It honours Jim Clark, twice Formula 1 world champion. Clearways is a nearby named section, but the nine-turn historic count does not prove a separately numbered Clearways corner.",
+            "uk": "Clark Curve завершує коло Гран-прі правою дугою на стартову пряму. Назва вшановує дворазового чемпіона Джима Кларка. Clearways — сусідня названа ділянка, але історичний підрахунок дев'яти поворотів не доводить її окремого номера."
+          },
+          "sources": [
+            "brands-hatch-map",
+            "brands-hatch-names",
+            "brands-hatch-era",
+            "brands-hatch-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "donington",
+      "layout_id": "donington-1",
+      "numbering_year": 1993,
+      "names_as_of": 2026,
+      "numbered_turns": 12,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB historic layout count; named-section order crosschecked against circuit sources, not an independently authenticated period FIA numbered map",
+      "sections": [
+        {
+          "id": "donington-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Redgate",
+          "aliases": [],
+          "explanation": {
+            "en": "Redgate is the long right-hander after the pit straight, where a premature turn-in leaves the car struggling to finish the bend. In 1993 the changing grip made restraint valuable before the rapid descent into Hollywood and Craner.",
+            "uk": "Redgate — затяжний правий поворот після стартової прямої. Якщо повернути кермо надто рано, болід важко втримати до виходу. У мінливу погоду 1993 року стриманість допомагала перед швидким спуском до Hollywood і Craner."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Hollywood",
+          "aliases": [],
+          "explanation": {
+            "en": "Hollywood is a flowing right-hand sweep that starts the downhill sequence. The driver should prepare the next left through Craner rather than treating this as an isolated apex. Its name is a local circuit landmark, not a reference to California.",
+            "uk": "Hollywood — плавна права дуга на початку спуску. Пілот готує наступний лівий віраж Craner, а не атакує окремий апекс. Це місцевий орієнтир траси, а не посилання на каліфорнійський Голлівуд."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Craner Curves",
+          "aliases": [],
+          "explanation": {
+            "en": "The fast downhill left at Craner makes the car light as the road falls away. Ayrton Senna's outside move on Karl Wendlinger here during the wet opening lap of 1993 shows why commitment and balance mattered more than a simple late-braking trick.",
+            "uk": "Швидкий лівий Craner проходить на спуску, де болід розвантажується. Зовнішній обгін Карла Вендлінгера Айртоном Сенною на мокрому першому колі 1993 року показує, чому баланс і сміливість були важливішими за просте пізнє гальмування."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Old Hairpin",
+          "aliases": [],
+          "explanation": {
+            "en": "Despite its name, the Old Hairpin is a relatively quick right-hander at the foot of the Craner descent. Braking begins as the car is still settling, and the exit climbs away towards Starkey's Bridge. The name should not imply a modern first-gear hairpin.",
+            "uk": "Попри назву, Old Hairpin — досить швидкий правий віраж унизу спуску Craner. Гальмування починається, коли болід ще стабілізується, а вихід веде вгору до Starkey's Bridge. Назва не означає сучасну повільну шпильку на першій передачі."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Starkey's Bridge",
+          "aliases": [],
+          "explanation": {
+            "en": "The lap rises through a slight left-hand bend at Starkey's Bridge. It is a transition rather than a heavy braking point, so excessive steering only disturbs the car before Schwantz Curve. The bridge name is a geographic circuit marker.",
+            "uk": "Коло підіймається через плавний лівий вигин Starkey's Bridge. Це перехідна ділянка, а не місце сильного гальмування, тому зайві рухи кермом лише розхитують машину перед Schwantz Curve. Назва пов'язана з мостом на трасі."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Schwantz Curve",
+          "aliases": [],
+          "explanation": {
+            "en": "Schwantz Curve is a rapid left that immediately precedes the braking approach to McLeans. The present-day tribute name is associated with motorcycle champion Kevin Schwantz; its exact use on a 1993 F1 map still needs period confirmation. The sequence itself is unchanged in character.",
+            "uk": "Schwantz Curve — швидка ліва дуга перед гальмуванням до McLeans. Сучасна назва вшановує моточемпіона Кевіна Шванца, але її використання саме на карті Формули-1 1993 року ще потребує підтвердження. Характер швидкої зв'язки зрозумілий і без пізнішого підпису."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t7",
+          "numbers": [
+            7
+          ],
+          "name": "McLeans",
+          "aliases": [],
+          "explanation": {
+            "en": "McLeans is a right-hand corner reached after the quick Schwantz section. A small crest can unsettle the exit, so the driver needs to finish braking and rotate the car without being dragged into the outside gravel. The climb continues towards Coppice.",
+            "uk": "McLeans — правий поворот після швидкої секції Schwantz. Невеликий гребінь може розвантажити болід на виході, тому важливо вчасно завершити гальмування й не вилетіти в гравій. Далі підйом продовжується до Coppice."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Coppice",
+          "aliases": [],
+          "explanation": {
+            "en": "Coppice is a blind, climbing double right-hander. The first apex is hard to see from the approach, and the second part determines speed onto the long straight. An early turn-in can force a correction just as the driver wants to accelerate.",
+            "uk": "Coppice — подвійний правий поворот на підйомі зі сліпим входом. Перший апекс погано видно, а друга частина визначає швидкість на довгій прямій. Надто ранній поворот керма змушує виправляти траєкторію саме під час розгону."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t9",
+          "numbers": [
+            9
+          ],
+          "name": "The Esses",
+          "aliases": [
+            "Fogarty Esses (modern label; 1993 usage unverified)"
+          ],
+          "explanation": {
+            "en": "The first change of direction at the Esses interrupts the long fast run after Coppice. The entry is a sharper left that demands substantial braking before the Melbourne extension. Modern guides often call the complex Fogarty Esses; that name is not assumed for 1993.",
+            "uk": "Перша зміна напрямку в The Esses перериває довгий швидкий розгін після Coppice. Тісний лівий вхід вимагає сильного гальмування перед петлею Melbourne. Сучасні довідники називають зв'язку Fogarty Esses, але цю назву не перенесено автоматично на 1993 рік."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t10",
+          "numbers": [
+            10
+          ],
+          "name": "The Esses",
+          "aliases": [
+            "Fogarty Esses (modern label; 1993 usage unverified)"
+          ],
+          "explanation": {
+            "en": "The second part of the chicane turns right and releases the car towards the Melbourne Loop. The driver must avoid cutting the line too aggressively, because a poor exit costs control before the downhill braking zone. This shares a complex name with the preceding numbered bend.",
+            "uk": "Друга частина шикани повертає праворуч і виводить болід до Melbourne Loop. Не варто надто агресивно зрізати траєкторію: поганий вихід ускладнює контроль перед гальмуванням на спуску. Назва зв'язки спільна з попереднім пронумерованим віражем."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Melbourne Hairpin",
+          "aliases": [],
+          "explanation": {
+            "en": "The Melbourne Hairpin is the slow right-hand 180-degree turn in the Grand Prix extension. Its downhill, off-camber approach invites mistakes under braking. Senna's pass on Alain Prost near the end of the opening lap in 1993 belongs to this slower final part of Donington.",
+            "uk": "Melbourne Hairpin — повільна права шпилька на 180 градусів у розширенні траси Гран-прі. Спуск і несприятливий нахил провокують помилки під час гальмування. Обгін Алена Проста Сенною наприкінці першого кола 1993 року належить саме цій повільній фінальній частині."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "donington-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Goddards",
+          "aliases": [],
+          "explanation": {
+            "en": "Goddards is the final left-hand hairpin after a short uphill approach. A crest complicates braking, while the exit decides the run onto the pit straight. The 1993 Grand Prix used this Melbourne Loop finish, not the shorter National route via Roberts.",
+            "uk": "Goddards — остання ліва шпилька після короткого підйому. Гребінь ускладнює гальмування, а вихід визначає розгін на стартову пряму. У 1993 році Формула-1 використовувала фінал через Melbourne Loop, а не коротший маршрут National через Roberts."
+          },
+          "sources": [
+            "donington-map",
+            "donington-names",
+            "donington-era",
+            "donington-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
         }
       ]
     }
