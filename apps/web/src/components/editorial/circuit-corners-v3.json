@@ -192,7 +192,11 @@
     "phoenix-map": "https://commons.wikimedia.org/wiki/File:Phoenix_Grand_Prix_Route_-_1991.svg",
     "phoenix-route-1991": "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
     "phoenix-f1-1991": "https://www.formula1.com/en/results/1991/races/559/united-states/race-result",
-    "phoenix-f1db-layout": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/phoenix.yml"
+    "phoenix-f1db-layout": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/phoenix.yml",
+    "mont-tremblant-operator": "https://www.pistemonttremblant.com/en/infos/caracteristique-techniques-circuit/",
+    "mont-tremblant-numbering-map": "https://historicracinggroup.com/resources/Track_Maps/Circuit-Mont-Tremblant.pdf",
+    "mont-tremblant-driving": "https://www.rennsport.ca/driving-mont-tremblant",
+    "mont-tremblant-2001-change": "https://doczz.net/doc/1115046/the-link-2001-08---motorsport-club-of-ottawa"
   },
   "guides": [
     {
@@ -17365,6 +17369,319 @@
             "phoenix-f1db-layout"
           ],
           "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "layout_id": "mont-tremblant-1",
+      "numbering_year": 2001,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "Modern 15-turn named course documented by operator, driving guide and numbered map. Full layout dates to 1965, but 2001 resurfacing / Namerow & Paddock Bend redesign prevents automatic certification of 1968–1970 F1 apex positions. Numbering is modern comparative, not period FIA numbering.",
+      "sections": [
+        {
+          "id": "mont-tremblant-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Opening downhill right"
+          ],
+          "explanation": {
+            "en": "The front straight falls away before Turn 1 and the car then climbs steeply towards a crest. Drivers choose a line that keeps the chassis settled through the elevation change, because the next two corners belong to the same flowing sequence.",
+            "uk": "Стартова пряма спускається перед першим поворотом, а далі болід різко підіймається до гребеня. Потрібно втримати стабільність під час перепаду висот, адже наступні два повороти утворюють одну швидку зв'язку."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Crest at the top"
+          ],
+          "explanation": {
+            "en": "Turn 2 is counted at the crest where the road starts dropping again. The car can become light over the top, so a harsh correction risks spoiling the downhill entry to Turn 3. The nearby pit exit also needs attention in modern sessions.",
+            "uk": "Другий поворот позначає гребінь, після якого дорога знову йде вниз. На вершині болід розвантажується, тому різка корекція може зіпсувати вхід до третього віражу. На сучасних заїздах тут також важливий виїзд із боксів."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Le Diable descent"
+          ],
+          "explanation": {
+            "en": "The third corner is a fast right on the downhill run after the crest. Its exit sets the braking distance for the tighter Esses. Carrying too much speed into Turn 3 leaves little time to position the car for the next right-left pair.",
+            "uk": "Третій поворот — швидка права дуга на спуску після гребеня. Вихід визначає, скільки місця залишиться для гальмування перед тіснішими Esses. Надмірна швидкість тут псує підготовку до наступної правої-лівої зв'язки."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Esses: first right"
+          ],
+          "explanation": {
+            "en": "Turn 4 begins the tight Esses with a right-angle right. Its late apex is a setup for Turn 5, not an isolated target. Braking and rotation must finish early enough to avoid forcing the car wide through the second half.",
+            "uk": "Четвертий поворот відкриває тісні Esses прямокутним правим віражем. Пізній апекс потрібен для підготовки до п'ятого, а не сам по собі. Гальмування та розворот треба завершити вчасно, щоб не вилетіти широко в другій частині."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Esses: second left"
+          ],
+          "explanation": {
+            "en": "The left-hand Turn 5 arrives almost immediately after the right at Turn 4. Drivers must preserve their line through this linked pair, then accelerate onto the short run before the fast Turn 6; an early burst of throttle can spoil the exit.",
+            "uk": "Лівий п'ятий поворот починається майже відразу після правого четвертого. Потрібно зберегти траєкторію через обидві дуги й лише тоді розганятися до швидкого шостого: надто ранній газ легко псує вихід."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Fast left sweeper"
+          ],
+          "explanation": {
+            "en": "Turn 6 is a fast left-hand sweeper after the Esses. In modern driving guidance, it is a place to carry speed smoothly rather than throw the car at one apex. Wind and a downhill approach to the next bend add to the challenge.",
+            "uk": "Шостий поворот — швидка ліва дуга після Esses. Сучасні інструкції наголошують на плавному збереженні швидкості, а не на різкій атаці одного апекса. Вітер і спуск до наступного віражу додатково ускладнюють керування."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Blind off-camber right"
+          ],
+          "explanation": {
+            "en": "Turn 7 is a fast downhill right with an off-camber, difficult-to-see apex. Drivers prepare the speed before turning because a late lift or sudden steering correction can unsettle the rear of the car; the following short straight leads to the Carousel.",
+            "uk": "Сьомий поворот — швидкий правий на спуску зі зворотним ухилом і погано видимим апексом. Швидкість потрібно визначити до входу: різке скидання газу чи ривок кермом можуть розхитати задню вісь. Далі коротка пряма веде до Carousel."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Carousel"
+          ],
+          "explanation": {
+            "en": "The long right-hand Turn 8 bends through roughly half a circle. Drivers choose a continuous line or a later second apex while balancing speed and tyre load. A good exit matters because the longest acceleration section of the circuit follows.",
+            "uk": "Восьмий поворот Carousel — довга права дуга приблизно на пів кола. Пілоти можуть обрати суцільну траєкторію або пізніший другий апекс, контролюючи швидкість і навантаження на шини. Вихід важливий перед найдовшим розгоном."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "The Hump"
+          ],
+          "explanation": {
+            "en": "Turn 9 is a small kink near the crest of the back-straight hump. The car gets light as the road rises and drops, making its lateral position unusually important even though the steering angle seems modest. This landmark is known as The Hump.",
+            "uk": "Дев'ятий поворот — невеликий перегин на гребені задньої прямої, відомий як The Hump. На підйомі й спуску болід стає легшим, тому його положення на дорозі важливе навіть за невеликого кута повороту керма."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Right after the hump"
+          ],
+          "explanation": {
+            "en": "Turn 10 is a relatively fast right after the descent from The Hump. The exit must not use all the road because the car needs to return to the right to approach the following left. Its line is a compromise between immediate speed and Turn 11 positioning.",
+            "uk": "Десятий поворот — досить швидкий правий після спуску з The Hump. Не варто використовувати всю ширину дороги на виході, бо машину потрібно повернути праворуч перед наступним лівим. Траєкторія — компроміс між швидкістю та підготовкою до одинадцятого."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "The Gulch"
+          ],
+          "explanation": {
+            "en": "The off-camber left Turn 11 is often called The Gulch. It follows closely after Turn 10 and leads into the steep uphill braking area. The driver balances the car through the left while already planning the blind bridge corner ahead.",
+            "uk": "Одинадцятий поворот The Gulch — лівий віраж зі зворотним ухилом. Він іде невдовзі після десятого й виводить до крутого підйому з гальмуванням. Пілот утримує баланс у лівій дузі, вже готуючи сліпий поворот під мостом."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Bridge Turn"
+          ],
+          "explanation": {
+            "en": "Turn 12 turns left under the bridge after a sharp uphill braking zone. The approach hides the apex until late, and the rising road changes the braking feel. Drivers need patience with the throttle so the car can accelerate cleanly towards the Kink.",
+            "uk": "Дванадцятий поворот Bridge Turn веде ліворуч під мостом після сильного гальмування на підйомі. Апекс видно пізно, а ухил змінює відчуття гальм. Потрібно терпляче додавати газ, щоб чисто розігнатися до Kink."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "The Kink"
+          ],
+          "explanation": {
+            "en": "Turn 13 is a right-hand kink after the bridge section. It is less of a heavy braking point than a preparation for the slow Namerow hairpin: the car needs to finish the bend in position for the next uphill approach.",
+            "uk": "Тринадцятий поворот The Kink — правий перегин після мосту. Це радше підготовка до повільної шпильки Namerow, ніж окрема сильна зона гальмування: болід має завершити дугу в правильному положенні перед наступним підйомом."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "Namerow Hairpin"
+          ],
+          "explanation": {
+            "en": "Turn 14, Namerow, is a tight right-hand hairpin approached uphill before the road falls away. A slow, controlled rotation helps set up the following Paddock Bend. The corner and its runoff were altered during the circuit's later renovation, so a modern apex cannot automatically be mapped onto the 1968 race.",
+            "uk": "Чотирнадцятий поворот Namerow — тісна права шпилька після гальмування на підйомі, за яким дорога спадає. Повільний контрольований розворот готує Paddock Bend. Під час пізнішої реконструкції шпильку й зони безпеки змінили, тому сучасний апекс не можна без перевірки переносити на гонку 1968 року."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving",
+            "mont-tremblant-2001-change"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        },
+        {
+          "id": "mont-tremblant-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Paddock Bend"
+          ],
+          "explanation": {
+            "en": "Turn 15 is the left-hand Paddock Bend that leads onto the start-finish straight. Its relationship to Namerow is crucial for a fast exit. Contemporary 2001 renovation accounts say this bend changed noticeably, making it an especially sensitive landmark when comparing modern laps with the Formula 1 era.",
+            "uk": "П'ятнадцятий поворот Paddock Bend — ліва дуга на виході до стартової прямої. Для швидкого розгону її потрібно проходити разом із попереднім Namerow. Звіти про реконструкцію 2001 року вказують, що геометрія Paddock Bend суттєво змінилася, тому порівняння з епохою Формули-1 потребує обережності."
+          },
+          "sources": [
+            "mont-tremblant-numbering-map",
+            "mont-tremblant-operator",
+            "mont-tremblant-driving",
+            "mont-tremblant-2001-change"
+          ],
+          "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
         }
       ]
     }
