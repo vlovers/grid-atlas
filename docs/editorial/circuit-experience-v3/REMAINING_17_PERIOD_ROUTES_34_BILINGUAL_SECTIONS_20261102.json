@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "All seven missing historical candidate turn guides have evidence reviews or route studies. For Dallas, Detroit, Pescara and Porto, sources establish period-specific course landmarks but NOT a certified per-apex numbering key. No publication approval or photo/map rights granted.",
+  "coverage_note": "Seven historical route candidate gaps remain unpublished. Ain-Diab and Charade count discrepancies and Charade photo-numbering confusion documented; no historical apex mapping certified.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -262,8 +262,16 @@
             "url": "https://www.motorsportmagazine.com/database/races/1958-moroccan-grand-prix/",
             "claim": "Circuit unchanged from non-championship 1957 event; road surface improved for 1958",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "archive_summary_conflict",
+            "url": "https://www.lapledger.org/circuits/ain-diab",
+            "claim": "Same archive page lists top-level Ain-Diab 15 turns and F1DB layout ain-diab-1 18 turns; preserve count disagreement",
+            "supports_apex_numbering": false
           }
-        ]
+        ],
+        "summary_turn_count": 15,
+        "count_discrepancy": "F1DB layout ain-diab-1 lists 18 turns; Lap Ledger top-level circuit summary lists 15. Neither count supplies authenticated numbered apex locations."
       }
     },
     {
@@ -550,9 +558,17 @@
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
             "claim": "1972 period journalist describes more than 50 corners, but does not establish official apex numbers",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "photo_position_index_not_turn_numbers",
+            "url": "https://www.the-fastlane.co.uk/racingcircuits/archives/Charade/1.html",
+            "claim": "Historic photo walkthrough numbers such as #001 and #009 are photographic camera positions, not turns; orange markers are kilometre landmarks. Explicitly reject reuse as a 1972 apex index.",
+            "supports_apex_numbering": false
           }
         ],
-        "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes."
+        "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes.",
+        "photo_index_is_turn_numbering": false,
+        "count_discrepancy": "F1DB clermont-ferrand-1 lists 48; circuit operator historic account lists 51. Photo-walk numbers are camera locations, not a means of reconciling the difference."
       }
     },
     {
