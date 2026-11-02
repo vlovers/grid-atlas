@@ -1460,6 +1460,23 @@
           "locator": "1978 Swedish Grand Prix official classification",
           "review_status": "independent_review_pending",
           "source_check": "AI checked, not approved"
+        },
+        {
+          "id": "anderstorp-1977",
+          "year": 1977,
+          "title": {
+            "en": "Laffite gives Ligier its breakthrough",
+            "uk": "Лаффіт приносить Ligier історичний прорив"
+          },
+          "text": {
+            "en": "Jacques Laffite won the 1977 Swedish Grand Prix in the Ligier-Matra, finishing 8.449 seconds ahead of Jochen Mass and ahead of Carlos Reutemann.",
+            "uk": "Жак Лаффіт виграв Гран-прі Швеції 1977 року на Ligier-Matra, випередивши Йохена Масса на 8,449 секунди, а третім став Карлос Ройтеманн."
+          },
+          "criterion": "team_breakthrough",
+          "source": "https://www.formula1.com/en/results/1977/races/381/sweden/race-result",
+          "locator": "Official F1 1977 Swedish Grand Prix classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI crosschecked; independent editorial review pending"
         }
       ]
     },
@@ -1494,6 +1511,23 @@
           "locator": "Official Formula 1 1981 Spanish Grand Prix classification",
           "review_status": "independent_review_pending",
           "source_check": "AI checked; independent editorial approval pending"
+        },
+        {
+          "id": "jarama-1974",
+          "year": 1974,
+          "title": {
+            "en": "Lauda's first Grand Prix victory",
+            "uk": "Перша перемога Лауди в Гран-прі"
+          },
+          "text": {
+            "en": "Niki Lauda won the 1974 Spanish Grand Prix at Jarama for Ferrari, 35.610 seconds ahead of teammate Clay Regazzoni, beginning a career total of 25 Formula 1 victories.",
+            "uk": "Нікі Лауда здобув першу перемогу в Формулі-1 на Гран-прі Іспанії 1974 року в Харамі, випередивши напарника по Ferrari Клея Регаццоні на 35,610 секунди."
+          },
+          "criterion": "first_career_victory",
+          "source": "https://www.formula1.com/en/results/1974/races/332/spain/race-result",
+          "locator": "Official F1 1974 Spanish Grand Prix classification; F1 historical retrospective",
+          "review_status": "independent_review_pending",
+          "source_check": "AI crosschecked; independent editorial review pending"
         }
       ]
     }
