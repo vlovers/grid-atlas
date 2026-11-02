@@ -1581,6 +1581,210 @@
           "source_check": "AI checked; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "aintree",
+      "biography": {
+        "title": {
+          "en": "Grand Prix racing beside the Grand National",
+          "uk": "Гран-прі поруч із перегонами Grand National"
+        },
+        "text": {
+          "en": "Aintree opened its three-mile motor circuit in 1954 inside the famous horse-racing venue. Five British Grands Prix followed between 1955 and 1962; names such as Tatts and Becher's came from the neighbouring racecourse, not modern sponsors.",
+          "uk": "Тримильний автомобільний маршрут Ейнтрі відкрили 1954 року на території знаменитого іподрому. У 1955–1962 роках тут провели п'ять Гран-прі Великої Британії; назви Tatts і Becher's походили від сусідніх об'єктів кінних перегонів, а не від сучасних спонсорів."
+        },
+        "source": "https://www.aintree.org.uk/history/",
+        "locator": "Aintree's Grand Prix Legacy; 1955 and 1957 milestones"
+      },
+      "moments": [
+        {
+          "id": "aintree-1955",
+          "year": 1955,
+          "title": {
+            "en": "Moss finally wins a championship Grand Prix",
+            "uk": "Мосс нарешті виграє чемпіонатний Гран-прі"
+          },
+          "text": {
+            "en": "Stirling Moss beat Mercedes team-mate Juan Manuel Fangio at Aintree for his first World Championship Grand Prix victory. The Mercedes cars filled the first four places.",
+            "uk": "Стірлінг Мосс випередив напарника по Mercedes Хуана-Мануеля Фанхіо й здобув свою першу перемогу в чемпіонатному Гран-прі. Боліди Mercedes посіли всі чотири перші місця."
+          },
+          "criterion": "first_win",
+          "source": "https://www.aintree.org.uk/history/",
+          "locator": "1955: Stirling Moss's first victory; Mercedes 1–2–3–4",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        },
+        {
+          "id": "aintree-1962",
+          "year": 1962,
+          "title": {
+            "en": "Clark leads the last Aintree Grand Prix",
+            "uk": "Кларк лідирує в останньому Гран-прі Ейнтрі"
+          },
+          "text": {
+            "en": "Jim Clark won the last championship British Grand Prix held at Aintree, finishing 49.2 seconds ahead of John Surtees. The next British Grand Prix moved away from this horse-racing venue.",
+            "uk": "Джим Кларк виграв останній чемпіонатний Гран-прі Великої Британії в Ейнтрі, випередивши Джона Сертіса на 49,2 секунди. Наступний британський Гран-прі вже не проводили на цьому іподромі."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1962/races/200/great-britain/race-result",
+          "locator": "Official 1962 British Grand Prix race result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "kyalami",
+      "biography": {
+        "title": {
+          "en": "The fast old Kyalami before the rebuild",
+          "uk": "Швидка стара К'яламі до перебудови"
+        },
+        "text": {
+          "en": "The original clockwise Kyalami joined a long downhill straight with Crowthorne, Barbeque, Jukskei, Sunset and the Esses. Its nine-turn F1DB configuration is not the 1992–93 rebuilt course; names that survived the rebuild do not make the layouts interchangeable.",
+          "uk": "Стара К'яламі за годинниковою стрілкою поєднувала довгу пряму на спуску з Crowthorne, Barbeque, Jukskei, Sunset та Esses. Дев'ятиповоротна конфігурація F1DB — не перебудована траса 1992–1993 років; збереження окремих назв не робить маршрути однаковими."
+        },
+        "source": "https://en.wikipedia.org/wiki/Kyalami",
+        "locator": "Original layout 1961–1988; revised layout 1989 onward"
+      },
+      "moments": [
+        {
+          "id": "kyalami-1975",
+          "year": 1975,
+          "title": {
+            "en": "Scheckter wins in front of his home crowd",
+            "uk": "Шектер перемагає вдома"
+          },
+          "text": {
+            "en": "South African driver Jody Scheckter won the 1975 South African Grand Prix for Tyrrell, 3.740 seconds ahead of Carlos Reutemann. It was the local hero's home-race triumph on the old fast course.",
+            "uk": "Південноафриканець Джоді Шектер виграв домашній Гран-прі 1975 року за Tyrrell, випередивши Карлоса Ройтеманна на 3,740 секунди. Це була перемога місцевого героя на старій швидкісній трасі."
+          },
+          "criterion": "home_win",
+          "source": "https://www.formula1.com/en/results/1975/races/346/south-africa/race-result",
+          "locator": "Official 1975 South African Grand Prix race result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        },
+        {
+          "id": "kyalami-1985",
+          "year": 1985,
+          "title": {
+            "en": "Mansell wins the final old-layout F1 visit",
+            "uk": "Менселл виграє останній візит Ф1 на стару трасу"
+          },
+          "text": {
+            "en": "Nigel Mansell won the 1985 South African Grand Prix for Williams. It was the last Formula 1 World Championship race on the original Kyalami configuration before the venue was rebuilt.",
+            "uk": "Найджел Менселл виграв Гран-прі ПАР 1985 року за Williams. Це був останній чемпіонатний Гран-прі Формули-1 на старій конфігурації К'яламі перед перебудовою автодрому."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1985/races",
+          "locator": "1985 South Africa race winner and date; compare original/rebuilt venue history",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "dijon",
+      "biography": {
+        "title": {
+          "en": "A short, hilly lap with a long memory",
+          "uk": "Коротке горбисте коло з довгою пам'яттю"
+        },
+        "text": {
+          "en": "Dijon-Prenois grew from 3.289 to 3.801 kilometres in 1977, adding the Parabolique. Its elevation changes and fast curves made the short circuit demanding; the 1974 version must not be confused with the layout used in 1979 and 1984.",
+          "uk": "У 1977 році Діжон-Пренуа подовжили з 3,289 до 3,801 км, додавши Parabolique. Перепади висоти та швидкі дуги зробили коротку трасу складною; конфігурацію 1974 року не можна плутати з маршрутом 1979 і 1984 років."
+        },
+        "source": "https://www.circuit-dijon-prenois.com/en/history-of-the-racetrack-en/",
+        "locator": "1977 extension and Parabolique construction"
+      },
+      "moments": [
+        {
+          "id": "dijon-1979",
+          "year": 1979,
+          "title": {
+            "en": "Jabouille wins; Villeneuve and Arnoux steal the show",
+            "uk": "Жабуй перемагає, Вільньов і Арну вражають"
+          },
+          "text": {
+            "en": "Jean-Pierre Jabouille took Renault's win at the 1979 French Grand Prix, while Gilles Villeneuve and René Arnoux fought fiercely for second. Villeneuve finished 0.240 seconds ahead of Arnoux.",
+            "uk": "Жан-П'єр Жабуй приніс Renault перемогу на Гран-прі Франції 1979 року, а Жиль Вільньов і Рене Арну запекло боролися за друге місце. Вільньов випередив Арну на 0,240 секунди."
+          },
+          "criterion": "close_finish",
+          "source": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+          "locator": "Official 1979 French Grand Prix result; P2 and P3 time gaps",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        },
+        {
+          "id": "dijon-1984",
+          "year": 1984,
+          "title": {
+            "en": "Lauda closes Dijon's F1 chapter",
+            "uk": "Лауда завершує історію Ф1 у Діжоні"
+          },
+          "text": {
+            "en": "Niki Lauda won the 1984 French Grand Prix at Dijon, 7.154 seconds ahead of Patrick Tambay. It was the circuit's final Formula 1 World Championship Grand Prix.",
+            "uk": "Нікі Лауда виграв Гран-прі Франції 1984 року в Діжоні, випередивши Патріка Тамбе на 7,154 секунди. Це був останній чемпіонатний Гран-прі Формули-1 на цій трасі."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1984/races/470/france/race-result",
+          "locator": "Official 1984 French Grand Prix race result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "zolder",
+      "biography": {
+        "title": {
+          "en": "Zolder's difficult place in Belgian Grand Prix history",
+          "uk": "Складне місце Золдера в історії Гран-прі Бельгії"
+        },
+        "text": {
+          "en": "Zolder hosted ten championship Belgian Grands Prix from 1973 to 1984, often standing in for the old Spa road course. Its 4.262-kilometre 1984 layout had fifteen turns in F1DB; the present shorter ten-corner circuit should not be substituted for it.",
+          "uk": "У 1973–1984 роках Золдер прийняв десять чемпіонатних Гран-прі Бельгії, часто замінюючи стару дорожню трасу Спа. Конфігурація 1984 року завдовжки 4,262 км має п'ятнадцять поворотів у F1DB; її не можна замінювати сучасним коротшим маршрутом із десятьма поворотами."
+        },
+        "source": "https://www.lapledger.org/circuits/zolder",
+        "locator": "F1DB zolder-2 1975–1984 layout and race history"
+      },
+      "moments": [
+        {
+          "id": "zolder-1982",
+          "year": 1982,
+          "title": {
+            "en": "A race overshadowed by Villeneuve's death",
+            "uk": "Гонка в тіні загибелі Вільньова"
+          },
+          "text": {
+            "en": "Gilles Villeneuve died after a crash during qualifying for the 1982 Belgian Grand Prix at Zolder. John Watson won the race the following day; the sporting result cannot be separated from the weekend's tragedy.",
+            "uk": "Жиль Вільньов загинув після аварії під час кваліфікації Гран-прі Бельгії 1982 року в Золдері. Наступного дня гонку виграв Джон Вотсон; спортивний результат неможливо відокремити від трагедії того вікенду."
+          },
+          "criterion": "historic_tragedy",
+          "source": "https://www.formula1.com/en/results/1982/races/441/belgian-grand-prix/race-result",
+          "locator": "Official 1982 race result; venue history separately supports qualifying fatality",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        },
+        {
+          "id": "zolder-1984",
+          "year": 1984,
+          "title": {
+            "en": "Alboreto wins the final Zolder Grand Prix",
+            "uk": "Альборето виграє останній Гран-прі Золдера"
+          },
+          "text": {
+            "en": "Michele Alboreto won from pole for Ferrari at Zolder in 1984, ahead of Derek Warwick and René Arnoux. It was the last World Championship Belgian Grand Prix held at this venue.",
+            "uk": "Мікеле Альборето виграв Гран-прі Золдера 1984 року з поулу за Ferrari, випередивши Дерека Ворвіка й Рене Арну. Це був останній чемпіонатний Гран-прі Бельгії на цій трасі."
+          },
+          "criterion": "last_race",
+          "source": "https://www.formula1.com/en/results/1984/races/468/belgium/race-result",
+          "locator": "Official 1984 Belgian Grand Prix race result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source check, 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
