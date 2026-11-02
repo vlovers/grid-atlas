@@ -4,9 +4,9 @@ import test from 'node:test';
 
 const corners = JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-corners-v3.json', import.meta.url), 'utf8'));
 const manuscript = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/NUMBERED_CORNER_GUIDES_AUSTIN_BAHRAIN_20261102.json', import.meta.url), 'utf8'));
-const expected = { silverstone: 18, monza: 11, austin: 20, bahrain: 15, suzuka: 18 };
+const expected = { silverstone: 18, monza: 11, austin: 20, bahrain: 15, suzuka: 18, interlagos: 15 };
 
-test('five 2025 FIA-mapped circuits expose every individual turn in the gated candidate model', () => {
+test('six 2025 FIA-mapped circuits expose every individual turn in the gated candidate model', () => {
   assert.deepEqual(corners.guides.map(x => x.circuit_id).sort(), Object.keys(expected).sort());
   for (const guide of corners.guides) {
     const numbers = guide.sections.flatMap(s => s.numbers).sort((a,b) => a-b);
@@ -49,6 +49,17 @@ test('Suzuka has 18 separately authored numbered sections and no fabricated T10 
   assert.equal(suzuka.sections[14].name, '130R');
   assert.equal(suzuka.sections[15].name, 'Casio Triangle');
   assert.ok(suzuka.sections.every(s => s.numbers.length === 1));
+});
+
+test('Interlagos has 15 individually sourced bends and no invented names for its final uphill sweep', () => {
+  const interlagos = corners.guides.find(g => g.circuit_id === 'interlagos');
+  assert.equal(interlagos.layout_id, 'interlagos-2');
+  assert.equal(interlagos.sections.length, 15);
+  assert.equal(interlagos.sections[9].name, 'Bico de Pato');
+  assert.equal(interlagos.sections[11].name, 'Junção');
+  assert.equal(interlagos.sections[13].name, null);
+  assert.equal(interlagos.sections[14].name, null);
+  assert.match(corners.sources['interlagos-names'], /f1sp_2025_media_kit/);
 });
 
 test('Austin/Bahrain research is actually mapped into candidate UI, without invented named corners', () => {
