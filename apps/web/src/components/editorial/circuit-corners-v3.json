@@ -188,7 +188,11 @@
     "riverside-1960-layout": "https://www.racingcircuits.info/north-america/usa/riverside.html",
     "bugatti-1967-f1": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
     "bugatti-1967-report": "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
-    "nivelles-history": "https://perencz.hu/f1/circuit/nivelles/info/"
+    "nivelles-history": "https://perencz.hu/f1/circuit/nivelles/info/",
+    "phoenix-map": "https://commons.wikimedia.org/wiki/File:Phoenix_Grand_Prix_Route_-_1991.svg",
+    "phoenix-route-1991": "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
+    "phoenix-f1-1991": "https://www.formula1.com/en/results/1991/races/559/united-states/race-result",
+    "phoenix-f1db-layout": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/circuits/phoenix.yml"
   },
   "guides": [
     {
@@ -17033,6 +17037,332 @@
           "sources": [
             "bugatti-1967-f1",
             "bugatti-1967-report"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "phoenix",
+      "layout_id": "phoenix-2",
+      "numbering_year": 1991,
+      "names_as_of": 1991,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB pinned phoenix-2 layout: 1991 only, 3.721 km, 15 reported turns. Fifteen bilingual study positions follow historically documented streets, but are NOT independently matched to fifteen period-numbered apexes. Some reading positions describe straights or compound corners. The 1989–1990 phoenix-1 layout is different. Wikimedia's 1991 route image and RacingCircuits history are NOT an authenticated FIA numbered map.",
+      "sections": [
+        {
+          "id": "phoenix-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Jefferson / 1st Street"
+          ],
+          "explanation": {
+            "en": "The 1991 lap left Jefferson Street at a right-angle junction with 1st Street. This opening turn belonged to the revised arena-side route, not the earlier detour around the old fire station. Its precise period corner number is not authenticated.",
+            "uk": "Коло 1991 року залишало Jefferson Street на прямокутному правому повороті до 1st Street. Це початок зміненого маршруту біля майбутньої арени, а не старий об’їзд пожежної частини. Точний історичний номер апекса не підтверджено."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "1st Street / Jackson Street"
+          ],
+          "explanation": {
+            "en": "Cars ran farther south on 1st Street in 1991 before turning left onto Jackson Street. That extra block pattern was part of the redesign forced by construction of the basketball arena; the 1989–90 map cannot identify this bend.",
+            "uk": "У 1991 році боліди їхали далі на південь 1st Street, а потім повертали ліворуч на Jackson Street. Цю частину змінили через будівництво баскетбольної арени; карта 1989–1990 років не підходить для ідентифікації віражу."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Jackson / 3rd Street"
+          ],
+          "explanation": {
+            "en": "After the short Jackson Street run, the revised route turned left to head north along 3rd Street. In a downtown grid, street intersections were the main braking references; this is a geographical reading, not a certified T3 assignment.",
+            "uk": "Після короткої ділянки Jackson Street новий маршрут повертав ліворуч і йшов на північ 3rd Street. У міській сітці перехрестя слугували орієнтирами гальмування; це географічний опис, а не підтверджений номер T3."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "3rd Street / Madison"
+          ],
+          "explanation": {
+            "en": "The northbound section on 3rd Street met Madison Street, sending the 1991 cars east. This right-angle change replaced part of the original Civic Plaza loop and is a useful landmark when comparing the two Phoenix outlines.",
+            "uk": "Північна ділянка 3rd Street виводила на Madison Street, де боліди 1991 року прямували на схід. Цей прямокутний поворот замінив частину старої петлі біля Civic Plaza й допомагає порівнювати дві конфігурації Фінікса."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Madison eastern approach"
+          ],
+          "explanation": {
+            "en": "Madison Street carried the cars toward the new eastern reversal. The braking approach mattered because the route soon doubled back through a tight change of direction; this approach is a study landmark, not proof of an additional separately numbered bend.",
+            "uk": "Madison Street вела боліди до нового східного розвороту. Підхід до гальмування був важливим через різку зміну напрямку попереду; сама ділянка є дослідницьким орієнтиром, а не доказом існування окремо пронумерованого повороту."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Eastern hairpin / return"
+          ],
+          "explanation": {
+            "en": "At the eastern end, the 1991 route made a sharp leftward reversal before joining Jefferson again. Historical accounts describe a compound change of direction rather than a single simple street corner; the split into archival turn numbers remains unresolved.",
+            "uk": "На східному кінці маршруту 1991 року був різкий лівий розворот перед поверненням на Jefferson. Історичні описи говорять про складну зміну напрямку, а не один простий міський кут; поділ на архівні номери ще не встановлено."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Jefferson westbound curve"
+          ],
+          "explanation": {
+            "en": "The cars rejoined Jefferson Street heading west, alongside a section that had carried the earlier route in a different direction. The curved street geometry is distinctive, but it cannot be treated as an individually numbered 1991 apex without a period chart.",
+            "uk": "Боліди поверталися на Jefferson Street у західному напрямку, поряд із ділянкою, якою попередня конфігурація йшла інакше. Плавна кривизна вулиці впізнавана, але без карти епохи її не можна вважати окремо пронумерованим апексом."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Diagonal cut from Jefferson"
+          ],
+          "explanation": {
+            "en": "Instead of looping around Civic Plaza as in 1989–90, the revised circuit cut away from Jefferson toward Washington through a diagonal connection. The change shortened the lap and removed several old corners, so the layouts must never share one numbered guide.",
+            "uk": "Замість петлі навколо Civic Plaza, як у 1989–1990 роках, оновлена траса зрізала шлях від Jefferson до Washington діагональним проїздом. Це скоротило коло й прибрало кілька старих віражів, тому спільна нумерація для обох схем неприпустима."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Diagonal / Washington exit"
+          ],
+          "explanation": {
+            "en": "The diagonal connection fed the cars onto Washington Street through a quick leftward transition. Contemporary recollections describe a faster passage than the discarded Civic Plaza section; this description identifies the 1991 route but not an official numbered corner.",
+            "uk": "Діагональний проїзд виводив боліди на Washington Street через швидку ліву зміну напрямку. Спогади учасників описують цю ділянку як швидшу за прибрану петлю Civic Plaza; це прив’язка до маршруту 1991 року, а не офіційний номер повороту."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Washington Street westbound"
+          ],
+          "explanation": {
+            "en": "Washington Street formed the long westbound acceleration section. Drivers used the broad city avenue before braking for the western block of turns; a straight is included here only as a reading marker, not falsely presented as a named corner.",
+            "uk": "Washington Street утворювала довгу пряму для розгону на захід. Пілоти використовували широкий міський проспект перед гальмуванням до західного блоку віражів; пряма наведена лише як орієнтир маршруту, а не як вигаданий іменований поворот."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Washington / 3rd Avenue"
+          ],
+          "explanation": {
+            "en": "Near the western end of Washington, the route turned right to head north on 3rd Avenue. The corner followed a long run along the avenue and began the compact block that eventually returned the cars to the start-finish side of downtown.",
+            "uk": "Біля західного кінця Washington маршрут повертав праворуч і йшов на північ 3rd Avenue. Поворот завершував довгий розгін проспектом і відкривав компактний квартальний блок, який згодом повертав боліди до стартової частини центру міста."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "3rd Avenue / Adams Street"
+          ],
+          "explanation": {
+            "en": "From 3rd Avenue, the old western loop continued left along Adams Street. This portion was retained when the eastern half changed in 1991; it helps distinguish a real surviving road junction from features shown only on the 1989–90 plan.",
+            "uk": "Із 3rd Avenue західна петля продовжувалася ліворуч уздовж Adams Street. Ця частина збереглася після перебудови східної половини в 1991 році й допомагає відрізняти справжнє старе перехрестя від ділянок, що залишилися лише на схемі 1989–1990 років."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [
+            "Adams / 5th Avenue"
+          ],
+          "explanation": {
+            "en": "The westbound Adams Street segment led into a left turn down 5th Avenue. Closely spaced urban junctions made braking and traction more important than high-speed cornering here; exact historical turn-to-apex labels are still awaiting a period numbered map.",
+            "uk": "Західна ділянка Adams Street приводила до лівого повороту вниз 5th Avenue. На близько розташованих міських перехрестях гальмування й тяга були важливішими за швидкі дуги; точну прив’язку історичних номерів до апексів ще треба підтвердити."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [
+            "5th Avenue / Washington"
+          ],
+          "explanation": {
+            "en": "The cars turned from 5th Avenue back toward the westbound part of Washington Street. This short connection set up the final reversal near 6th and 7th Avenues; the street sequence is supported by historical route research, unlike a claimed FIA T14 label.",
+            "uk": "З 5th Avenue боліди повертали на західну ділянку Washington Street. Короткий перехід готував фінальний розворот біля 6th і 7th Avenues; послідовність вулиць підтверджена історичним описом, на відміну від припущення про офіційний номер T14."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "phoenix-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [
+            "Western hairpin / Jefferson return"
+          ],
+          "explanation": {
+            "en": "At the western end, the course looped left through a tight multi-apex return toward Jefferson and the pits. Historical descriptions warn that this reversal was not a perfect semicircle; whether its several apexes occupy one or more of F1DB's fifteen turn slots remains unverified.",
+            "uk": "На західному кінці траса робила тісний багатoапексний лівий розворот до Jefferson і боксів. Історичні описи застерігають, що це не було ідеальне півколо; невідомо, скільки з п’ятнадцяти архівних позицій F1DB припадає на окремі апекси розвороту."
+          },
+          "sources": [
+            "phoenix-map",
+            "phoenix-route-1991",
+            "phoenix-f1-1991",
+            "phoenix-f1db-layout"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
