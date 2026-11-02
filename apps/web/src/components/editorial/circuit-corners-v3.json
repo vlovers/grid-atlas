@@ -166,7 +166,15 @@
     "rouen-1962-result": "https://www.formula1.com/en/results/1962/races/199/france/race-result",
     "rouen-1968-result": "https://www.formula1.com/en/results/1968/races/260/french/race-result",
     "rouen-f1-history": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
-    "rouen-period-layout": "https://www.motorsportmagazine.com/archive/article/august-1962/54/48th-french-grand-prix/"
+    "rouen-period-layout": "https://www.motorsportmagazine.com/archive/article/august-1962/54/48th-french-grand-prix/",
+    "mosport-venue-history": "https://canadiantiremotorsportpark.com/pages/history",
+    "mosport-period-venue-study": "https://www.racingcircuits.info/north-america/canada/mosport-park.html",
+    "mosport-1977-result": "https://www.formula1.com/en/results/1977/races/389/canada/race-result",
+    "mosport-numbered-modern-map": "https://challengecupseries.com/wp-content/uploads/2016/05/201505MosportTrackMap.pdf",
+    "east-london-period-map": "https://www.thechicane.com/2011/07/16/track-map-of-the-past-prince-george-circuit/",
+    "east-london-corner-walkthrough": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
+    "east-london-1962-result": "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result",
+    "east-london-1965-result": "https://www.formula1.com/en/results/1965/races/225/monaco/race-result"
   },
   "guides": [
     {
@@ -15118,6 +15126,427 @@
             "rouen-period-layout",
             "rouen-f1-history",
             "rouen-1968-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "mosport",
+      "layout_id": "mosport-1",
+      "numbering_year": 1977,
+      "names_as_of": 1977,
+      "numbered_turns": 10,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB mosport-1 3.957km ten-turn layout for 1967–1977. The venue documents Moss Corner 5a/5b from its 1960 design; a 2015 numbered circuit map and later safety/widening changes cannot independently certify each 1977 apex number. Modern names are geographic comparators, not all claimed contemporary official 1977 labels.",
+      "sections": [
+        {
+          "id": "mosport-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Turn 1 · fast opening right"
+          ],
+          "explanation": {
+            "en": "Mosport begins with a fast right-hand corner after the pit straight. The natural elevation and limited run-off made precision essential in the Grand Prix era; the modern turn number is not independently certified for 1977.",
+            "uk": "Коло Моспорту починається швидким правим поворотом після прямої боксів. Природний перепад висоти й малі зони безпеки вимагали точності за часів Гран-прі; сучасний номер не засвідчено окремо для 1977 року."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Clayton Corner · sweeping left"
+          ],
+          "explanation": {
+            "en": "Clayton is the long left-hand arc following the opening right. It loads the tyres while the car follows the terrain rather than a flat engineered platform; the name is preserved as a comparison with the modern circuit map.",
+            "uk": "Clayton — довга ліва дуга після першого правого віражу. Шини працюють під навантаженням на природному рельєфі, а не на рівному штучному майданчику; назву подано для порівняння із сучасною картою."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Quebec Corner · sweeping right"
+          ],
+          "explanation": {
+            "en": "Quebec completes Mosport's fast opening right-left-right rhythm. The important task is maintaining momentum without forcing the car wide before the slower middle sector; period name-to-number alignment remains to be independently checked.",
+            "uk": "Quebec завершує швидкий початковий ритм праворуч-ліворуч-праворуч. Головне — зберегти темп, не винісши болід надто широко перед повільнішою середньою секцією; історичну відповідність номера й назви ще перевіряють."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Turn 4 · setup for Moss Corner"
+          ],
+          "explanation": {
+            "en": "The gentler left before Moss Corner is about positioning, not a dramatic late-braking attack. A poor exit leaves the car misplaced for the two-part right-hand complex that follows; the 1977 apex split is provisional.",
+            "uk": "Плавніший лівий перед Moss Corner потрібен для правильної позиції, а не для ефектної атаки на гальмуванні. Невдалий вихід псує вхід у наступну подвійну праву зв'язку; поділ апексів 1977 року попередній."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Moss Corner · two-part right"
+          ],
+          "explanation": {
+            "en": "Moss Corner honours Stirling Moss, who recommended replacing the original single-radius hairpin with two right-hand movements while the track was being designed. The venue calls them 5a and 5b, so this guide does not invent a separate official 1977 Turn 6.",
+            "uk": "Moss Corner вшановує Стірлінга Мосса, який ще під час проєктування запропонував замінити одну шпильку двома правими дугами. Автодром називає їх 5a і 5b, тому тут не вигадано окремого офіційного повороту 6 для 1977 року."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Andretti Straight · first gentle kink"
+          ],
+          "explanation": {
+            "en": "The long back straight is now known as Mario Andretti Straightaway and contains subtle changes of direction. This proposed sixth slot describes its first kink; the later commemorative straight name must not be presented as proven 1977 terminology.",
+            "uk": "Довга задня пряма нині має назву Mario Andretti Straightaway і містить плавні зміни напрямку. Умовний шостий номер описує перший вигин; пізнішу меморіальну назву не можна видавати за підтверджену термінологію 1977 року."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Andretti Straight · second gentle kink"
+          ],
+          "explanation": {
+            "en": "A second mild change of direction on the back straight can look insignificant on a schematic. At Mosport's speeds and elevations, however, line choice determines the approach to the quick Esses; this is a provisional historical numbering match.",
+            "uk": "Другий плавний вигин задньої прямої здається незначним на схемі. Однак на швидкостях і перепадах Моспорту траєкторія визначає підхід до швидких есків; історична відповідність номера залишається попередньою."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "The Esses · right-hand entry"
+          ],
+          "explanation": {
+            "en": "The right-hand first movement of the Esses arrives after the long back straight. The car needs to be placed for the immediate left that follows, so a fast entry is worthless if it compromises the connected exit.",
+            "uk": "Перший правий рух есків починається після довгої задньої прямої. Болід треба поставити під наступний лівий віраж, тож швидкий вхід нічого не дає, якщо зіпсовано вихід зі зв'язки."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "The Esses · left-hand exit"
+          ],
+          "explanation": {
+            "en": "The second movement of the Esses reverses the steering and feeds the approach to the last corner. On this fast old circuit the whole pair is one connected decision, not two unrelated braking events.",
+            "uk": "Другий рух есків змінює напрямок і веде до останнього повороту. На швидкому старому автодромі вся пара є одним зв'язаним завданням, а не двома незалежними зонами гальмування."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "mosport-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "White's Corner · final right"
+          ],
+          "explanation": {
+            "en": "White's Corner closes the lap with a right-hander back onto the pit straight. A tidy exit carries speed into Turn 1 on the next lap; the name is documented on later maps but its exact 1977 use requires period confirmation.",
+            "uk": "White's Corner завершує коло правим віражем на пряму боксів. Чистий вихід дає швидкість перед першим поворотом наступного кола; назва є на пізніших картах, але її точне вживання у 1977 році ще треба підтвердити."
+          },
+          "sources": [
+            "mosport-venue-history",
+            "mosport-period-venue-study",
+            "mosport-1977-result",
+            "mosport-numbered-modern-map"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "east-london",
+      "layout_id": "east-london-1",
+      "numbering_year": 1965,
+      "names_as_of": 1965,
+      "numbered_turns": 9,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB east-london-1 3.920km nine-turn championship layout (1962–1965). A modern driving guide counts eight named corners, treating the Esses as one complex, while F1DB records nine turns. This candidate splits the Esses into two study slots to preserve nine entries; this is not a verified 1965 FIA numbering chart.",
+      "sections": [
+        {
+          "id": "east-london-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Potters Pass · fast first bend"
+          ],
+          "explanation": {
+            "en": "Potters Pass is the fast opening right-hander on the East London lap. Its name comes from the local road landmark, not a sponsor; the high-speed entry sets up the kink before the first heavy braking zone.",
+            "uk": "Potters Pass — швидкий перший правий віраж кола в Іст-Лондоні. Назва походить від місцевого дорожнього орієнтира, а не спонсора; швидкий вхід готує вигин перед першою серйозною зоною гальмування."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Rifle Bend · range-side kink"
+          ],
+          "explanation": {
+            "en": "Rifle Bend takes its name from the nearby rifle range. It is a rapid kink between Potters Pass and the next hairpin; the reference to the range describes the location, not an activity during a race.",
+            "uk": "Rifle Bend названо за сусіднім стрільбищем. Це швидкий вигин між Potters Pass і наступною шпилькою; назва позначає місце, а не стрільбу під час перегонів."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Cocobana · first hairpin"
+          ],
+          "explanation": {
+            "en": "Cocobana is a slow right-hand hairpin after the quick opening bends. Braking is severe compared with the preceding sector, and a good exit is important for the seafront run that follows.",
+            "uk": "Cocobana — повільна права шпилька після швидких початкових віражів. Тут гальмування значно інтенсивніше, ніж у попередній секції, а чистий вихід важливий для подальшої прямої вздовж моря."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Butts Bend · beach-straight end"
+          ],
+          "explanation": {
+            "en": "Butts Bend comes after the seafront Beach Straight and marks the transition towards the tighter infield. The name refers to a local landmark; treating the coastal straight itself as a numbered corner would be misleading.",
+            "uk": "Butts Bend йде після прибережної прямої Beach Straight і переводить коло до тіснішої внутрішньої секції. Назва пов'язана з місцевим орієнтиром; саму пряму помилково було б називати окремим поворотом."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "The Esses · first direction change"
+          ],
+          "explanation": {
+            "en": "The Esses, also called the Complex, begins a sequence of quicker direction changes in the infield. The modern lap guide groups them under one number, but this candidate separates the first movement to represent F1DB's nine-turn total.",
+            "uk": "The Esses, або Complex, відкриває зв'язку швидких перекладок у внутрішній секції. Сучасний довідник об'єднує їх під одним номером, а тут перший рух виділено умовно, щоб узгодити дев'ять поворотів F1DB."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "The Esses · second direction change"
+          ],
+          "explanation": {
+            "en": "The second study slot within the Esses represents the reversal needed before Cox's Corner. It is not asserted as an official 1965 Turn 6; the split remains an editorial reconstruction pending a contemporary numbered map.",
+            "uk": "Другий умовний номер у зв'язці Esses позначає зворотну перекладку перед Cox's Corner. Це не твердження про офіційний шостий поворот 1965 року; поділ лишається реконструкцією до появи історичної пронумерованої схеми."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Cox's Corner · infield exit"
+          ],
+          "explanation": {
+            "en": "Cox's Corner is a slower left-hander near the end of the infield complex. A driver must finish the preceding direction changes before turning here, or the car will be unsettled for the faster sweep that follows.",
+            "uk": "Cox's Corner — повільніший лівий віраж наприкінці внутрішньої зв'язки. Пілот має завершити попередні перекладки до входу, інакше болід буде нестабільним перед наступною швидкою дугою."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "The Sweep · back-straight setup"
+          ],
+          "explanation": {
+            "en": "The Sweep is a broad right-hand arc leading onto the back straight. Carrying speed out of it matters because there is only a short opportunity to accelerate before the final heavy braking zone.",
+            "uk": "The Sweep — широка права дуга, що веде на задню пряму. Збереження швидкості на виході важливе, бо перед фінальним сильним гальмуванням часу на розгін небагато."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "east-london-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Beacon Bend · last hairpin"
+          ],
+          "explanation": {
+            "en": "Beacon Bend is the final tight right-hand hairpin before the main straight. Its exit sets the speed for the long run back to Potters Pass; the proposed ninth number differs from some modern eight-corner lists.",
+            "uk": "Beacon Bend — остання тісна права шпилька перед головною прямою. Вихід визначає швидкість на довгому розгоні до Potters Pass; умовний дев'ятий номер відрізняється від деяких сучасних списків із восьми поворотів."
+          },
+          "sources": [
+            "east-london-period-map",
+            "east-london-corner-walkthrough",
+            "east-london-1962-result",
+            "east-london-1965-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }

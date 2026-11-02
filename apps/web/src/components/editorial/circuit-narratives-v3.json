@@ -1989,6 +1989,108 @@
           "source_check": "AI source review, 2026-11-02; not human approved"
         }
       ]
+    },
+    {
+      "circuit_id": "mosport",
+      "biography": {
+        "title": {
+          "en": "Mosport's fast hills and Moss's two-part corner",
+          "uk": "Швидкі пагорби Моспорту й подвійний поворот Мосса"
+        },
+        "text": {
+          "en": "Mosport opened in 1961 on rolling Ontario terrain. Stirling Moss advised the designers to replace a single-radius hairpin with the linked right-hand turns 5a and 5b, later known as Moss Corner. Formula One raced here from 1967 to 1977, when Jody Scheckter won the final Canadian Grand Prix at the venue. Later widening and resurfacing mean modern map geometry is only a comparison, not a certified period diagram.",
+          "uk": "Моспорт відкрився 1961 року на пагорбах Онтаріо. Стірлінг Мосс порадив конструкторам замінити одну шпильку зв'язкою правих віражів 5a і 5b, які згодом отримали його ім'я. Формула-1 виступала тут із 1967 до 1977 року, коли Джоді Шектер виграв останній місцевий Гран-прі Канади. Пізніші розширення й оновлення асфальту означають, що сучасна карта є лише порівнянням, а не підтвердженою історичною схемою."
+        },
+        "source": "https://canadiantiremotorsportpark.com/pages/history",
+        "locator": "Venue history and period result cross-reference; human review pending"
+      },
+      "moments": [
+        {
+          "id": "mosport-moss-design",
+          "year": 1961,
+          "title": {
+            "en": "Moss changes the hairpin before opening",
+            "uk": "Мосс змінює шпильку до відкриття"
+          },
+          "text": {
+            "en": "During construction Stirling Moss proposed a two-part right-hand corner in place of a single-radius hairpin. The venue records that the resulting turns 5a and 5b became Moss Corner; this is design history, not evidence that every modern turn number was used in 1977.",
+            "uk": "Під час будівництва Стірлінг Мосс запропонував подвійну праву зв'язку замість шпильки одного радіуса. Автодром підтверджує, що повороти 5a і 5b стали Moss Corner; це історія проєктування, а не доказ усієї сучасної нумерації для 1977 року."
+          },
+          "criterion": "historical_venue_or_race_milestone",
+          "source": "https://canadiantiremotorsportpark.com/pages/history",
+          "locator": "Period-specific source for 1961; not independent publication approval",
+          "review_status": "independent_review_pending",
+          "source_check": "AI research 2026-11-02; human review pending"
+        },
+        {
+          "id": "mosport-1977-scheckter",
+          "year": 1977,
+          "title": {
+            "en": "Scheckter wins Mosport's last F1 round",
+            "uk": "Шектер виграє останній етап Ф1 у Моспорті"
+          },
+          "text": {
+            "en": "Jody Scheckter won the 1977 Canadian Grand Prix at Mosport in the Wolf-Ford, ahead of Patrick Depailler and Jochen Mass. The following Canadian championship rounds moved to Montreal, ending Mosport's Formula One period.",
+            "uk": "Джоді Шектер виграв Гран-прі Канади 1977 року в Моспорті на Wolf-Ford, випередивши Патріка Депає та Йохена Масса. Наступні чемпіонатні етапи Канади переїхали до Монреаля, завершивши епоху Формули-1 у Моспорті."
+          },
+          "criterion": "historical_venue_or_race_milestone",
+          "source": "https://www.formula1.com/en/results/1977/races/389/canada/race-result",
+          "locator": "Period-specific source for 1977; not independent publication approval",
+          "review_status": "independent_review_pending",
+          "source_check": "AI research 2026-11-02; human review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "east-london",
+      "biography": {
+        "title": {
+          "en": "The coastal circuit that decided a title",
+          "uk": "Прибережна траса, де вирішився титул"
+        },
+        "text": {
+          "en": "The Prince George Circuit in East London used a 3.920-kilometre coastal course for three World Championship South African Grands Prix between 1962 and 1965. Potters Pass, Rifle Bend and the two slow hairpins gave the lap its character. Modern guides often count eight named corners, while F1DB records nine turns; the split must be reviewed against a 1960s map before publication.",
+          "uk": "Prince George Circuit в Іст-Лондоні використовував прибережне коло завдовжки 3,920 км для трьох чемпіонатних Гран-прі ПАР у 1962–1965 роках. Potters Pass, Rifle Bend і дві повільні шпильки визначали характер траси. Сучасні довідники часто налічують вісім названих поворотів, тоді як F1DB фіксує дев'ять; цей поділ треба звірити з картою 1960-х перед публікацією."
+        },
+        "source": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
+        "locator": "Venue history and period result cross-reference; human review pending"
+      },
+      "moments": [
+        {
+          "id": "east-london-1962-title",
+          "year": 1962,
+          "title": {
+            "en": "Graham Hill clinches his first title",
+            "uk": "Грем Гілл здобуває перший титул"
+          },
+          "text": {
+            "en": "Graham Hill won the 1962 South African Grand Prix at East London and secured the World Championship after Jim Clark retired. The decisive race was on the short Prince George layout, not the longer pre-war public-road circuit.",
+            "uk": "Грем Гілл виграв Гран-прі ПАР 1962 року в Іст-Лондоні й здобув чемпіонський титул після сходу Джима Кларка. Вирішальна гонка проходила короткою конфігурацією Prince George, а не довгими довоєнними дорогами."
+          },
+          "criterion": "historical_venue_or_race_milestone",
+          "source": "https://www.formula1.com/en/results/1962/races/204/south-africa/race-result",
+          "locator": "Period-specific source for 1962; not independent publication approval",
+          "review_status": "independent_review_pending",
+          "source_check": "AI research 2026-11-02; human review pending"
+        },
+        {
+          "id": "east-london-1965-clark",
+          "year": 1965,
+          "title": {
+            "en": "Clark wins the New Year's Day race",
+            "uk": "Кларк перемагає в новорічній гонці"
+          },
+          "text": {
+            "en": "Jim Clark won the South African Grand Prix held at East London on 1 January 1965 for Lotus-Climax. John Surtees and Graham Hill completed the podium; this was the last World Championship Grand Prix held at the venue.",
+            "uk": "Джим Кларк виграв Гран-прі ПАР 1 січня 1965 року в Іст-Лондоні за Lotus-Climax. Джон Сертіс і Грем Гілл доповнили подіум; це був останній чемпіонатний Гран-прі на цій трасі."
+          },
+          "criterion": "historical_venue_or_race_milestone",
+          "source": "https://www.formula1.com/en/results/1965/races/225/monaco/race-result",
+          "locator": "Period-specific source for 1965; not independent publication approval",
+          "review_status": "independent_review_pending",
+          "source_check": "AI research 2026-11-02; human review pending"
+        }
+      ]
     }
   ]
 }
