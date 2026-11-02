@@ -63,7 +63,13 @@
     "istanbul-race": "https://www.formula1.com/en/racing/2020/turkey",
     "nurburgring-map": "https://www.fia.com/sites/default/files/decision-document/2020%20Eifel%20Grand%20Prix%20-%20Circuit%20Map.pdf",
     "nurburgring-names": "https://www.formula1.com/en/racing/2020/germany",
-    "nurburgring-race": "https://www.formula1.com/en/results/2020/races/1055/eifel/fastest-laps"
+    "nurburgring-race": "https://www.formula1.com/en/results/2020/races/1055/eifel/fastest-laps",
+    "hockenheimring-map": "https://www.fia.com/sites/default/files/doc_1_-_2019_german_grand_prix_-_circuit_map.pdf",
+    "hockenheimring-names": "https://api.fia.com/sites/default/files/2019_german_gp_preview_0.pdf",
+    "hockenheimring-race": "https://www.formula1.com/en/racing/2019/germany",
+    "paul-ricard-map": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf",
+    "paul-ricard-names": "https://www.formula1.com/en/racing/2019/france",
+    "paul-ricard-race": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf"
   },
   "guides": [
     {
@@ -7281,6 +7287,602 @@
             "nurburgring-map",
             "nurburgring-names",
             "nurburgring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "layout_id": "hockenheimring-4",
+      "numbering_year": 2019,
+      "names_as_of": 2026,
+      "numbered_turns": 17,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "hockenheimring-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Nordkurve",
+          "aliases": [],
+          "explanation": {
+            "en": "The Nordkurve opens the shortened Hockenheim lap as a fast right-hand bend. Its exit speed matters because the circuit now turns towards the Parabolika instead of heading deep into the old forest section.",
+            "uk": "Nordkurve відкриває скорочене коло Гоккенгайма швидкою правою дугою. Швидкість виходу важлива, адже сучасна траса веде до Parabolika, а не далеко в стару лісову секцію."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is a sharp braking point on the approach to the Parabolika complex. The 2019 FIA preview lists it among the circuit's major stops; a driver who goes too deep compromises the next linked corner.",
+            "uk": "Другий — зона різкого гальмування на підході до комплексу Parabolika. FIA у 2019 році відносила його до головних гальмувань траси; надто широкий вхід псує наступний пов'язаний віраж."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 continues the compact change of direction after the first hard stop. The car needs to rotate cleanly without losing the momentum that will soon be carried onto the long acceleration section.",
+            "uk": "Третій продовжує компактну перекладку після першого сильного гальмування. Болід потрібно чисто розвернути, не втративши темп перед довгою ділянкою розгону."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is the exit of the early technical group towards the Parabolika. The 2019 FIA map places a DRS detection point at its exit, making traction here important to the following overtaking opportunity.",
+            "uk": "Четвертий завершує ранню технічну зв'язку перед Parabolika. На схемі FIA 2019 року точка вимірювання DRS стоїть на його виході, тому зчеплення тут важливе для наступної атаки."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Parabolika",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is part of the long accelerating Parabolika run. The name reflects the broad, sweeping shape of this modern section, which replaced much of the old forest journey in the 2002 redesign.",
+            "uk": "П'ятий належить до довгої розгінної ділянки Parabolika. Назва відображає широку плавну форму сучасної секції, яка після перебудови 2002 року замінила значну частину старого лісового маршруту."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Spitzkehre",
+          "aliases": [],
+          "explanation": {
+            "en": "The Spitzkehre hairpin at Turn 6 is one of the heaviest braking points in Formula 1. The FIA's 2019 preview describes slowing from roughly 330 to 70 km/h; getting the car rotated and accelerating cleanly is vital for the return straight.",
+            "uk": "Шпилька Spitzkehre у шостому повороті — одне з найсильніших гальмувань Формули-1. За даними FIA 2019 року швидкість падає приблизно з 330 до 70 км/год; потрібно розвернути болід і чисто розігнатися на зворотну пряму."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is a quick change of direction after the hairpin as the car gathers speed again. Its line matters mainly because the next Turn 8 demands another significant braking input.",
+            "uk": "Сьомий — швидка зміна напрямку після шпильки, коли болід знову набирає швидкість. Траєкторія важлива насамперед через наступний восьмий, який вимагає нового серйозного гальмування."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is another heavy-braking bend on the run back towards the Motodrom. The 2019 FIA preview highlights it among Hockenheim's major stops; drivers need to brake without sacrificing the next change of direction.",
+            "uk": "Восьмий — ще один поворот із сильним гальмуванням на шляху до Motodrom. FIA у 2019 році виділяла його серед головних зон уповільнення; потрібно загальмувати, не зіпсувавши наступну перекладку."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 forms the middle of the linked return section. A tidy line helps keep the car stable as the circuit turns again, rather than treating this as a separate isolated corner.",
+            "uk": "Дев'ятий утворює середину пов'язаної зворотної секції. Чиста траєкторія допомагає стабілізувати болід перед наступним віражем, а не проходити цей поворот як окремий ізольований елемент."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 continues the direction changes after the second braking zone. The driver must be patient with the throttle because the car is still loaded when it reaches the next sweeping bend.",
+            "uk": "Десятий продовжує перекладки після другої зони гальмування. З газом потрібно бути терплячим: болід ще перебуває під навантаженням перед наступною довгою дугою."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is a longer sweep leading towards the stadium approach. Its exit determines the car's position for the faster Turn 12 and the decisive slow Sachskurve that follows.",
+            "uk": "Одинадцятий — довша дуга на підході до стадіонної частини. Вихід визначає положення боліда перед швидшим дванадцятим і вирішальною повільною Sachskurve далі."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 brings the car towards the Motodrom's tight braking point. The FIA's 2019 second sector boundary sits shortly before it, a useful marker when matching the official map to race footage.",
+            "uk": "Дванадцятий веде до тісної зони гальмування Motodrom. Межа другого сектору FIA 2019 року розташована незадовго до нього — корисний орієнтир для зіставлення схеми з кадрами гонки."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Sachskurve",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the slow, banked Sachskurve in the Motodrom stadium. The 2019 FIA preview names it as a major braking point; spectators can watch cars rotate slowly before the final stadium bends.",
+            "uk": "Тринадцятий — повільна профільована Sachskurve у стадіонній секції Motodrom. FIA у 2019 році називала його важливою зоною гальмування; глядачі бачать, як боліди повільно розвертаються перед останніми віражами."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 begins the tightly linked stadium exit after Sachskurve. The driver cannot simply accelerate flat out: the next change of direction arrives almost immediately.",
+            "uk": "Чотирнадцятий відкриває тісну стадіонну зв'язку після Sachskurve. Не можна просто натиснути газ до упору: наступна зміна напрямку настає майже відразу."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 keeps the car turning through the Motodrom. Smooth weight transfer is essential because the final two bends arrive in quick succession and the pit straight rewards a clean exit.",
+            "uk": "П'ятнадцятий продовжує поворот у Motodrom. Плавне перенесення навантаження важливе, адже останні дві дуги йдуть поспіль, а стартова пряма винагороджує чистий вихід."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 is the penultimate part of the stadium complex. A driver who runs too wide here loses the ideal line for the final Südkurve and can carry that deficit all the way down the pit straight.",
+            "uk": "Шістнадцятий — передостання частина стадіонної зв'язки. Надто широкий вихід псує лінію фінальної Südkurve й може коштувати швидкості на всій стартовій прямій."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "hockenheimring-t17",
+          "numbers": [
+            17
+          ],
+          "name": "Südkurve",
+          "aliases": [],
+          "explanation": {
+            "en": "The Südkurve completes Hockenheim's lap with a right-hand bend onto the pit straight. Its name literally means southern curve, fitting the stadium's geography; early traction matters more than an extravagant entry.",
+            "uk": "Südkurve завершує коло Гоккенгайма правою дугою на стартову пряму. Назва буквально означає «південний поворот» і відповідає розташуванню стадіонної секції; раннє зчеплення важливіше за ефектний вхід."
+          },
+          "sources": [
+            "hockenheimring-map",
+            "hockenheimring-names",
+            "hockenheimring-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "paul-ricard",
+      "layout_id": "paul-ricard-3",
+      "numbering_year": 2019,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "paul-ricard-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 starts the technical opening section after the long pit straight. The FIA installed special bollards and rejoining instructions for the first two bends in 2019, so a missed apex could not simply become a faster shortcut.",
+            "uk": "Перший відкриває технічну секцію після довгої стартової прямої. У 2019 році FIA встановила спеціальні боларди та правила повернення на трасу для перших двох віражів, щоб помилка не перетворювалася на вигідне зрізання."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 immediately changes direction after the first bend. The tight sequence and its 2019 escape-road bollards made precise positioning essential, especially when cars arrived side by side at the start.",
+            "uk": "Другий майже відразу змінює напрямок після першого. Тісна зв'язка й боларди на шляху повернення у 2019 році вимагали точності, особливо коли боліди заходили поруч на старті."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 begins another low-speed linked combination. The driver needs a clean initial rotation because the following left at Turn 4 and the exit towards Turn 5 come before there is room to reset the car.",
+            "uk": "Третій відкриває ще одну повільну пов'язану зв'язку. Потрібно чисто розвернути болід, адже наступний лівий четвертий і вихід до п'ятого настають раніше, ніж машина встигне стабілізуватися."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is the left-hand middle of the early technical complex. The 2019 event notes placed a bollard at its inside apex to discourage cutting, making the legal racing line as important as raw speed.",
+            "uk": "Четвертий — лівий середній віраж ранньої технічної зв'язки. У 2019 році біля внутрішнього апексу встановили болард проти зрізання, тому правильна траєкторія була не менш важливою за швидкість."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 completes the opening slower group before the track begins to open up. The FIA's 2019 sector-one timing point was just after it, helping separate the technical first sequence from the faster run ahead.",
+            "uk": "П'ятий завершує повільнішу початкову групу перед швидшою частиною кола. У 2019 році межа першого сектору FIA лежала відразу після нього, відділяючи технічну зв'язку від розгону."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 bends the car into the approach towards the Mistral section. Its importance lies in setting the line and preserving traction for the long acceleration zone rather than in a single dramatic braking move.",
+            "uk": "Шостий повертає болід на підхід до секції Mistral. Тут головне підготувати траєкторію й зберегти зчеплення перед довгим розгоном, а не виконати один видовищний маневр на гальмуванні."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 releases the car onto the Mistral straight. In the 2019 FIA preview the first DRS detection was 75 metres before it and activation 170 metres after, tying this exit directly to overtaking tactics.",
+            "uk": "Сьомий виводить болід на пряму Mistral. У схемі FIA 2019 року перша точка вимірювання DRS була за 75 метрів до нього, а активація — через 170 метрів після, тож вихід напряму впливав на тактику обгону."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Mistral chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 begins the chicane that interrupts the otherwise enormous Mistral straight. The first braking input is critical: carrying too much speed into the opening part leaves the car poorly placed for the exit at Turn 9.",
+            "uk": "Восьмий відкриває шикану, яка перериває величезну пряму Mistral. Перше гальмування вирішальне: надмірна швидкість на вході залишає болід у невигідному положенні перед виходом із дев'ятого."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Mistral chicane",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 completes the Mistral chicane and returns the car to high-speed running. Drivers need to unwind the steering cleanly because the next named landmark is the very fast Signes corner.",
+            "uk": "Дев'ятий завершує шикану Mistral і повертає болід до швидкісного руху. Потрібно плавно випрямити кермо, адже наступний відомий орієнтир — дуже швидкий Signes."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Signes",
+          "aliases": [],
+          "explanation": {
+            "en": "Signes is the fast right-hand Turn 10 at the end of the second Mistral acceleration. The FIA preview singled it out as one of Paul Ricard's defining high-speed challenges, where aerodynamic confidence matters more than a late-braking gamble.",
+            "uk": "Signes — швидкий правий десятий поворот наприкінці другого розгону Mistral. FIA називала його одним із головних швидкісних випробувань Поль-Рікара, де аеродинамічна впевненість важливіша за ризиковане пізнє гальмування."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Beausset",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is the long, multi-apex Beausset section after Signes. The sustained bend loads the tyres for several seconds, and a patient line is needed before the circuit tightens again.",
+            "uk": "Одинадцятий — довга багатoапексна секція Beausset після Signes. Затяжна дуга кілька секунд навантажує шини, тому потрібна терпляча траєкторія перед наступним звуженням маршруту."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 begins the technical closing group after Beausset. Drivers must shift from sustained high-speed loading to shorter, more precise steering inputs, while keeping the car positioned for the next bend.",
+            "uk": "Дванадцятий відкриває технічну фінальну групу після Beausset. Пілот переходить від тривалого швидкісного навантаження до коротших точних рухів керма, зберігаючи положення для наступного віражу."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 continues the slower final-sector sequence. The car must be rotated without sliding wide because the pit-entry area and final corners are approaching rapidly.",
+            "uk": "Тринадцятий продовжує повільнішу зв'язку останнього сектору. Болід потрібно розвернути без широкого ковзання, адже вхід до боксів і фінальні повороти вже близько."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is the penultimate corner and, from 2019, the location of the revised pit entry on the right. The layout change matters to race footage: an older onboard shows a different pit-lane approach.",
+            "uk": "Чотирнадцятий — передостанній поворот, біля якого у 2019 році праворуч перенесли в'їзд до боксів. Зміна важлива для архівних кадрів: на старіших онбордах підхід до піт-лейну інший."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "paul-ricard-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 completes the lap and launches the car onto the pit straight. The second DRS activation in 2019 was 115 metres after this corner, so a clean exit mattered for both lap time and overtaking.",
+            "uk": "П'ятнадцятий завершує коло й відкриває стартову пряму. У 2019 році друга зона активації DRS починалася через 115 метрів після нього, тому чистий вихід впливав і на час кола, і на обгони."
+          },
+          "sources": [
+            "paul-ricard-map",
+            "paul-ricard-names",
+            "paul-ricard-race"
           ],
           "confirmation_status": "source_checked_ai"
         }
