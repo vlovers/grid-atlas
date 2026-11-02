@@ -816,6 +816,159 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "las-vegas",
+      "biography": {
+        "title": {
+          "en": "Two very different Las Vegas Grands Prix",
+          "uk": "Два зовсім різні Гран-прі Лас-Вегаса"
+        },
+        "text": {
+          "en": "Las Vegas returned to Formula 1 in 2023 on a new street circuit through the Strip, more than four decades after the Caesars Palace parking-lot races. Its 17 corners mix slow changes of direction around the Sphere with a long flat-out run past the hotels. The venue's identity is the city itself, but the crucial racing challenge is braking for Turn 14 after the long Strip straight.",
+          "uk": "У 2023 році Формула-1 повернулася до Лас-Вегаса на нову міську трасу вздовж Стріпу — більш ніж через сорок років після перегонів на парковці Caesars Palace. Її 17 поворотів поєднують повільні перекладки біля Sphere з довгим розгоном повз готелі. Обличчя автодрому — саме місто, але головне гоночне випробування чекає на гальмуванні перед чотирнадцятим поворотом."
+        },
+        "source": "https://www.formula1.com/en/racing/2024/las-vegas",
+        "locator": "2024 circuit guide and event history"
+      },
+      "moments": [
+        {
+          "id": "las-vegas-2023-1",
+          "year": 2023,
+          "title": {
+            "en": "Leclerc takes second back on the final lap",
+            "uk": "Леклер повертає друге місце на останньому колі"
+          },
+          "text": {
+            "en": "The first race on the Strip became a three-way contest between Verstappen, Leclerc and Pérez. Verstappen won despite an early penalty, but Leclerc delivered the last surprise: he passed Pérez into Turn 14 on the final lap to claim second place. The circuit's biggest braking zone settled the final podium order.",
+            "uk": "Перша гонка на Стріпі перетворилася на боротьбу Ферстаппена, Леклера й Переса. Ферстаппен переміг попри ранній штраф, але останнє слово залишилося за Леклером: на фінальному колі він обійшов Переса перед чотирнадцятим поворотом і став другим. Найпотужніше гальмування траси визначило порядок на подіумі."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/verstappen-beats-leclerc-and-perez-to-victory-in-action-packed-las-vegas.czJOEppYohzdjCwIugjwN",
+          "locator": "2023 race report final-lap Turn 14 pass",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "las-vegas-2025-2",
+          "year": 2025,
+          "title": {
+            "en": "Victory at Turn 1, then a double disqualification",
+            "uk": "Лідерство в першому повороті й подвійна дискваліфікація"
+          },
+          "text": {
+            "en": "Norris started the 2025 Las Vegas Grand Prix on pole but ran deep at Turn 1, allowing Verstappen into the lead. Verstappen won, and the classification changed again hours later: both McLaren cars were disqualified after their skid-block wear failed the technical limit. Russell and Antonelli inherited second and third.",
+            "uk": "Норріс стартував із поулу в Лас-Вегасі 2025 року, але широко зайшов у перший поворот і пропустив Ферстаппена. Той переміг, а після фінішу результати знову змінилися: обидва McLaren дискваліфікували через надмірне зношення планок днища. Друге й третє місця отримали Расселл та Антонеллі."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/verstappen-beats-norris-for-dominant-las-vegas-gp-victory-as-piastri.6u1Op0SO7YQa2bwJOq8DVI.6u1Op0SO7YQa2bwJOq8DVI",
+          "locator": "2025 race report and post-race disqualification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "madring",
+      "biography": {
+        "title": {
+          "en": "A new Madrid circuit built around La Monumental",
+          "uk": "Нова траса Мадрида навколо La Monumental"
+        },
+        "text": {
+          "en": "Madring brought the Spanish Grand Prix back to Madrid in 2026, using exhibition-ground roads, a northern purpose-built section and two tunnels. Its 22 turns are unlike Jarama's old Formula 1 layout. The signature Turn 12, La Monumental, sweeps through roughly 550 metres of banking at up to 24 percent gradient; the percentage describes road slope, not degrees. Slower city corners and a fast Valdebebas sequence complete the contrast.",
+          "uk": "Madring повернув Гран-прі Іспанії до Мадрида у 2026 році. Маршрут поєднав дороги виставкового комплексу, нову північну секцію та два тунелі. Його 22 повороти не мають нічого спільного зі старою конфігурацією Харами. Головний дванадцятий поворот La Monumental простягається приблизно на 550 метрів із нахилом до 24 відсотків — саме відсотків, а не градусів. Контраст створюють повільні міські віражі та швидка зв'язка Valdebebas."
+        },
+        "source": "https://www.formula1.com/en/latest/article/why-madrids-la-monumental-corner-lives-up-to-its-name.2tbqkIagDDXxFRR48YH4Ih",
+        "locator": "F1 2026 technical overview of Turn 12"
+      },
+      "moments": [
+        {
+          "id": "madring-2026-1",
+          "year": 2026,
+          "title": {
+            "en": "Norris claims the first Madring pole",
+            "uk": "Норріс здобуває перший поул Madring"
+          },
+          "text": {
+            "en": "In the first qualifying session at Madring, Norris produced a late lap of 1:31.824 to beat Antonelli and Verstappen. The result offered the first real competitive benchmark for a circuit whose unusual banking and rapid elevation changes had previously been known mostly from plans and simulations.",
+            "uk": "У першій кваліфікації на Madring Норріс наприкінці сесії проїхав коло за 1:31.824 і випередив Антонеллі та Ферстаппена. Цей результат став першим справжнім гоночним орієнтиром для траси, чий банкінг і перепади висот раніше були відомі переважно за проєктами та симуляціями."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/norris-denies-antonelli-pole-position-for-spanish-gp-in-closely-fought-qualifying-in-madrid.5AqJXaE8s1sLfv8dJVLqty",
+          "locator": "12 September 2026 qualifying report",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "madring-2026-2",
+          "year": 2026,
+          "title": {
+            "en": "A Virtual Safety Car decides the debut",
+            "uk": "Віртуальна машина безпеки вирішує дебютну гонку"
+          },
+          "text": {
+            "en": "Norris led much of the inaugural Madrid race, but Stroll's retirement brought out a Virtual Safety Car at a damaging moment for McLaren's strategy. Antonelli gained track position and won ahead of Verstappen and Norris. The winning gap was 4.351 seconds; Norris was another 0.738 seconds behind Verstappen.",
+            "uk": "Норріс довго лідирував у дебютному Гран-прі Мадрида, але сходження Стролла викликало режим віртуальної машини безпеки в невдалий момент для стратегії McLaren. Антонеллі здобув позицію й переміг перед Ферстаппеном і Норрісом. Перевага переможця становила 4.351 секунди, а Норріс відстав від Ферстаппена ще на 0.738 секунди."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
+          "locator": "13 September 2026 race report and classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "valencia",
+      "biography": {
+        "title": {
+          "en": "The harbour circuit with a moving bridge",
+          "uk": "Траса в гавані з розвідним мостом"
+        },
+        "text": {
+          "en": "Valencia's temporary 5.419-kilometre street course hosted five European Grands Prix between 2008 and 2012. Its 25 corners traced the harbour and crossed a swing bridge, mixing fast kinked straights with tight chicanes and a final hairpin. Although the streets often made overtaking difficult, the 2012 finale overturned that reputation with a dramatic home win for Alonso. The track must not be confused with the permanent Circuit Ricardo Tormo.",
+          "uk": "Тимчасова міська траса Валенсії завдовжки 5.419 кілометра приймала п'ять Гран-прі Європи у 2008–2012 роках. Її 25 поворотів огинали гавань і перетинали розвідний міст, поєднуючи швидкі вигнуті прямі з тісними шиканами та останньою шпилькою. Обганяти тут часто було важко, але фінальна гонка 2012 року запам'яталася драматичною домашньою перемогою Алонсо. Цю трасу не можна плутати зі стаціонарним Circuit Ricardo Tormo."
+        },
+        "source": "https://www.fia.com/event-2012-european-grand-prix",
+        "locator": "FIA 2012 event preview; course characteristics"
+      },
+      "moments": [
+        {
+          "id": "valencia-2011-1",
+          "year": 2011,
+          "title": {
+            "en": "All 24 starters reach the finish",
+            "uk": "Усі 24 учасники доїжджають до фінішу"
+          },
+          "text": {
+            "en": "Vettel won the 2011 European Grand Prix ahead of Alonso and Webber, but the unusual statistic was deeper in the classification: all 24 starters were classified as finishers. At a street circuit where walls punished mistakes, the absence of retirements was an exceptional outcome.",
+            "uk": "Феттель виграв Гран-прі Європи 2011 року перед Алонсо та Веббером, але незвична цифра ховалася нижче в протоколі: усіх 24 учасників класифікували на фініші. Для міської траси, де стіни карають за помилки, відсутність сходжень стала винятковим результатом."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2011/races/35/europe/race-result",
+          "locator": "2011 complete 24-car race classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "valencia-2012-2",
+          "year": 2012,
+          "title": {
+            "en": "Alonso wins from eleventh in Valencia's farewell",
+            "uk": "Алонсо перемагає з одинадцятого місця у прощальній Валенсії"
+          },
+          "text": {
+            "en": "Alonso started the final Valencia Grand Prix from eleventh and worked forward as Vettel dominated the early laps. Vettel's retirement and the shifting order opened the way for Alonso's home victory, with Räikkönen second and Schumacher third. It became the circuit's last Formula 1 race.",
+            "uk": "Алонсо стартував в останньому Гран-прі Валенсії одинадцятим і поступово проривався вперед, поки Феттель контролював початок гонки. Сходження Феттеля й зміни позицій відкрили шлях до домашньої перемоги Алонсо; Райкконен став другим, Шумахер — третім. Це був останній етап Формули-1 на трасі."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2012/races/17/europe/race-result",
+          "locator": "2012 official classification and historical context",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
