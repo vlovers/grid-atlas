@@ -17,11 +17,28 @@ test('four 2025 FIA-mapped circuits expose every individual turn in the gated ca
     assert.match(corners.sources[guide.circuit_id+'-names'], /^https:\/\//);
     for (const section of guide.sections) {
       assert.ok(section.explanation?.en?.trim(), guide.circuit_id+':'+section.id+':en');
+      assert.ok(section.explanation.en.trim().split(/\s+/).length >= 22, guide.circuit_id+':'+section.id+':en-short');
+      assert.ok(section.explanation.uk.trim().split(/\s+/).length >= 18, guide.circuit_id+':'+section.id+':uk-short');
       assert.ok(section.explanation?.uk?.trim(), guide.circuit_id+':'+section.id+':uk');
       assert.equal(section.confirmation_status, 'source_checked_ai');
       assert.deepEqual(section.sources, [guide.circuit_id+'-map',guide.circuit_id+'-names']);
     }
   }
+});
+
+test('Silverstone and Monza have distinct numbered narratives with period-aware named complexes', () => {
+  for (const id of ['silverstone','monza']) {
+    const guide = corners.guides.find(g => g.circuit_id === id);
+    assert.equal(guide.sections.length, expected[id]);
+    assert.ok(guide.sections.every(section => section.numbers.length === 1));
+    assert.equal(new Set(guide.sections.map(section => section.explanation.en)).size, expected[id]);
+    assert.equal(new Set(guide.sections.map(section => section.explanation.uk)).size, expected[id]);
+  }
+  const silverstone = corners.guides.find(g => g.circuit_id === 'silverstone');
+  assert.ok(silverstone.sections.filter(s => s.name === 'Maggotts–Becketts–Chapel').length === 5);
+  assert.ok(silverstone.sections.filter(s => s.name === 'Club').length === 2);
+  const monza = corners.guides.find(g => g.circuit_id === 'monza');
+  assert.ok(monza.sections.filter(s => s.name === 'Variante Ascari').length === 3);
 });
 
 test('Austin/Bahrain research is actually mapped into candidate UI, without invented named corners', () => {
