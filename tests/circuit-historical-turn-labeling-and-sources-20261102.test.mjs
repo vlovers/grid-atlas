@@ -32,6 +32,8 @@ test('historical candidate numbering stays explicitly provisional, including AI-
 
 test('historical candidate links never render undefined hrefs or claim an FIA numbered map', () => {
   assert.match(component, /layoutReference && <a/);
+  assert.match(component, /\[mapSource, historicalReference\]\.find/);
+  assert.match(component, /section\.sources\.slice\(1\)/);
   assert.match(component, /hasFiaMap && !provisionalNumbering/);
   assert.match(component, /Historical source \(not number verification\)/);
   assert.doesNotMatch(component, /href=\{mapSource\}/);
