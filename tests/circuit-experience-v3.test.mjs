@@ -226,6 +226,8 @@ test('private bilingual preview includes seven historical route studies but no i
   for (const id of ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']) {
     assert.ok(en.includes('study-' + id), id + ': EN study missing');
     assert.ok(uk.includes('study-' + id), id + ': UK study missing');
+    assert.ok(en.includes('href="#study-' + id + '"'), id + ': navigation missing');
+    assert.ok(en.includes('id="study-' + id + '-section-1"'), id + ': first section anchor missing');
   }
   assert.match(en, /These are research route sections, NOT officially numbered turns/);
   assert.match(uk, /Нумерацію апексів не підтверджено/);
