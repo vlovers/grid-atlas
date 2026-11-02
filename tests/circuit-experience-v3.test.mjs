@@ -69,15 +69,13 @@ test('private review uses existing opt-in transport, shows noindex and names all
 });
 
 
-test('seven missing historic circuits surface bilingual unnumbered route studies without false apex claims', async () => {
+test('seven unapproved historic route studies remain research-only and unpublished', async () => {
   const { readFileSync } = await import('node:fs');
   const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
   const component = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
   const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
   assert.doesNotMatch(component, /historicRoutes/);
   assert.doesNotMatch(component, /const historicRoute = historicRoutes\.circuits\.find/);
-  assert.match(component, /historical route sections, not numbered corners/i);
-  assert.match(component, /Historical source \(not number verification\)/);
   for (const id of pending) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
     assert.ok(circuit, id + ': missing historical route');
