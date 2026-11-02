@@ -85,6 +85,21 @@ test('seven unapproved historic route studies remain research-only and unpublish
   assert.equal(brooks.turn_numbers, null);
   assert.ok(brooks.source_urls.some(url => url.includes('formula1.com/en/results/1958')));
   assert.ok(brooks.source_urls.some(url => url.includes('motorsportmagazine.com/articles')));
+  for (const [id, count, year] of [['ain-diab', 18, 1958], ['clermont-ferrand', 48, 1972], ['sebring', 17, 1959]]) {
+    const record = research.circuits.find(c => c.circuit_id === id);
+    const review = record?.layout_evidence_review;
+    assert.equal(record.independent_numbering_verified, false);
+    assert.equal(review.archive_turn_count, count);
+    assert.equal(review.period_layout_year, year);
+    assert.match(review.crosswalk_status, /unverified_apex_numbers|not_apex_numbers/);
+    assert.ok(review.evidence.length >= 2);
+    assert.ok(review.evidence.every(item => /^https:\/\//.test(item.url) && item.supports_apex_numbering === false && item.claim.length > 40));
+    assert.ok(record.sections.every(section => section.turn_numbers === null));
+    assert.equal(isCircuitEditionApproved(id), false);
+  }
+  const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
+  assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('51')));
+  assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('more than 50')));
   const historicEnriched = { 'ain-diab': 13, 'clermont-ferrand': 8 };
   for (const [id, count] of Object.entries(historicEnriched)) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
