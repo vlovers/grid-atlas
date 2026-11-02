@@ -196,7 +196,10 @@
     "mont-tremblant-operator": "https://www.pistemonttremblant.com/en/infos/caracteristique-techniques-circuit/",
     "mont-tremblant-numbering-map": "https://historicracinggroup.com/resources/Track_Maps/Circuit-Mont-Tremblant.pdf",
     "mont-tremblant-driving": "https://www.rennsport.ca/driving-mont-tremblant",
-    "mont-tremblant-2001-change": "https://doczz.net/doc/1115046/the-link-2001-08---motorsport-club-of-ottawa"
+    "mont-tremblant-2001-change": "https://doczz.net/doc/1115046/the-link-2001-08---motorsport-club-of-ottawa",
+    "nivelles-period-layout": "https://www.racingcircuits.info/europe/belgium/nivelles-baulers.html",
+    "nivelles-historic-photos": "https://www.circuitsofthepast.com/nivelles-baulers-circuit-then-and-now/",
+    "nivelles-period-count": "https://lapledger.org/circuits/nivelles"
   },
   "guides": [
     {
@@ -17682,6 +17685,157 @@
             "mont-tremblant-2001-change"
           ],
           "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "nivelles",
+      "layout_id": "nivelles-1",
+      "numbering_year": 1972,
+      "names_as_of": 1974,
+      "numbered_turns": 7,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB seven-turn convention; sources describe a Big Loop of three bends, a left, two flowing chicanes and a final 180-degree turn. Other secondary sources report 8 or 10 corners. The 1–7 assignments are editorial study order, not an independently authenticated FIA race-era map.",
+      "sections": [
+        {
+          "id": "nivelles-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Big Loop — segment 1"
+          ],
+          "explanation": {
+            "en": "The circuit opened with a wide rightward curve rather than an abrupt stop. This first part of the Big Loop was gently banked by the terrain, and the unusually generous run-off made the venue feel very different from the wooded, narrow Spa road circuit it replaced on the Belgian Grand Prix calendar.",
+            "uk": "Коло починалося широкою правою дугою, а не різкою зоною гальмування. Це була перша частина Big Loop, де рельєф створював невеликий ухил. Величезні зони безпеки різко відрізняли Нівель від вузьких лісових доріг старого Спа, який він замінив у календарі Гран-прі Бельгії."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Big Loop — segment 2"
+          ],
+          "explanation": {
+            "en": "The second bend continued the Big Loop as a broad arc. Although many photographs make Nivelles look flat, the early complex crossed subtle gradients. The key challenge was to keep a consistent line through a long radius, not to hit one sharp braking point.",
+            "uk": "Другий віраж продовжував Big Loop широкою дугою. Хоча на фотографіях Нівель здається рівним, початкова зв'язка проходила через невеликі перепади висот. Головним завданням була стабільна траєкторія у довгому радіусі, а не один різкий момент гальмування."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Big Loop — segment 3"
+          ],
+          "explanation": {
+            "en": "The third part completed the roughly 300-degree Big Loop. The corner grouping matters: some guides count this sweeping complex differently, which helps explain why published totals range between seven and ten turns. This entry follows the seven-turn F1DB convention, not a certified FIA 1972 number.",
+            "uk": "Третя частина завершувала Big Loop, який сумарно охоплював приблизно 300 градусів. Цю дугу в різних довідниках рахують неоднаково, тому загальна кількість поворотів коливається від семи до десяти. Тут використано схему підрахунку F1DB із сімома віражами, а не підтверджену карту FIA 1972 року."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Left after Big Loop"
+          ],
+          "explanation": {
+            "en": "After the extended opening loop the course turned through a left-hand right-angle bend, redirecting the cars towards the pit and paddock side. It was a clear change from the open sweep: accurate braking and rotation mattered more than sustained high-speed lateral load.",
+            "uk": "Після довгої початкової дуги траса повертала ліворуч приблизно під прямим кутом у напрямку зони боксів і паддоку. Це був різкий контраст зі швидкою зв'язкою: точність гальмування та розвороту важила більше, ніж тривале бокове навантаження."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "First flowing chicane"
+          ],
+          "explanation": {
+            "en": "The first of two flowing middle-course chicanes changed direction without the tight walls of a street circuit. Drivers could place the car relatively freely, but an awkward first apex could spoil the second part of the sequence.",
+            "uk": "Перша з двох плавних шикан середньої секції вимагала швидкої зміни напрямку без тісних стін міської траси. Пілоти мали більше простору, але неточний перший апекс усе одно псував другу частину зв'язки."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Second flowing chicane"
+          ],
+          "explanation": {
+            "en": "A second medium-speed direction-change complex followed. This was not the high-speed, blind-road challenge of the old Spa course; Nivelles instead asked drivers to preserve momentum through deliberately open, forgiving curves.",
+            "uk": "За першою йшла друга зв'язка середньої швидкості. На відміну від старого Спа, тут не було сліпих швидкісних доріг серед лісу. Нівель вимагав зберігати темп у широких і відносно поблажливих дугах, де важила плавність."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "nivelles-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Final 180-degree bend"
+          ],
+          "explanation": {
+            "en": "The final slow 180-degree bend brought the lap back towards the main straight. Exit traction mattered because it established speed for the whole straight. The course was broad and modern for its time, yet the lap still punished a driver who rushed the final turnaround.",
+            "uk": "Остання повільна дуга приблизно на 180 градусів повертала боліди до головної прямої. Зчеплення на виході визначало швидкість на всьому наступному розгоні. Попри ширину й сучасність траси, занадто поспішний розворот тут коштував часу."
+          },
+          "sources": [
+            "nivelles-period-layout",
+            "nivelles-historic-photos",
+            "nivelles-period-count"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
         }
       ]
     }
