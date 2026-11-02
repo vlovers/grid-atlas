@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "review_status": "independent_review_pending",
+  "publication_authorized": false,
+  "media_policy": "FIA/F1 copyrighted maps referenced by link only; F1DB white-outline SVGs separately licensed CC-BY-4.0, credit Jules Roy",
+  "guides": [
+    {
+      "circuit_id": "shanghai",
+      "layout_id": "shanghai-1",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 16,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_chinese_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
+        "names": "https://www.formula1.com/en/racing/2025/china"
+      },
+      "sections": [
+        {
+          "id": "shanghai-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 starts Shanghai's signature ever-tightening right-hand spiral. Drivers arrive at speed but cannot treat the first apex as a normal hairpin: steering and braking demands build as the corner continues into Turn 2.",
+            "uk": "Перший відкриває знамениту спіраль Шанхаю, що дедалі звужується праворуч. Пілоти входять швидко, але це не звичайна шпилька: кермування й гальмування ускладнюються аж до другого повороту."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 continues the tightening opening right-hander. The car must slow while still turning, and a driver who forces the line too early risks losing the front end before the leftward change at Turn 3.",
+            "uk": "Другий продовжує початкову праву дугу зі зменшенням радіуса. Болід сповільнюється з повернутим кермом; надто рання атака траєкторії загрожує зносом передньої осі перед лівим третім."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 finally changes direction left after the prolonged opening right. It is a slow, technical transition where the driver needs to rotate the car and avoid sacrificing the exit through Turn 4.",
+            "uk": "Третій нарешті переводить болід ліворуч після довгої правої спіралі. Це повільний технічний перехід, де потрібно розвернути машину й не зіпсувати вихід через четвертий."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 completes the slow opening complex and starts the run towards the next faster section. Traction matters more than an aggressive apex because the driver wants to build speed as soon as the steering opens.",
+            "uk": "Четвертий завершує повільну стартову зв'язку й відкриває розгін до швидшої секції. Зчеплення важливіше за агресивний апекс: пілот прагне додати газ, щойно випрямляється кермо."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is a fast change of direction between the opening complex and the Turn 6 braking zone. The FIA's first sector split lies 150 metres before Turn 6, so the exit helps set up the next sector.",
+            "uk": "П'ятий — швидкий перехід між стартовою зв'язкою та гальмуванням перед шостим. На схемі FIA межа першого сектору розташована за 150 метрів до шостого, тому вихід готує наступну частину кола."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is a slow right-hand hairpin and a recognised passing opportunity. Daniel Ricciardo's decisive move on Valtteri Bottas in the 2018 Chinese Grand Prix showed how a late but controlled braking attack can work here.",
+            "uk": "Шостий — повільна права шпилька й відоме місце для обгонів. Вирішальна атака Даніеля Ріккардо на Валттері Боттаса у Гран-прі Китаю 2018 року показала ціну пізнього, але контрольованого гальмування."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 begins Shanghai's high-load sweeping pair. The car carries far more speed than at Turn 6, so drivers need aerodynamic stability and confidence in the front tyres rather than an isolated late-braking move.",
+            "uk": "Сьомий відкриває швидку пару дуг із великим боковим навантаженням. Болід проходить його значно швидше за шостий, тому потрібні аеродинамічна стабільність і довіра до передніх шин, а не пізнє гальмування."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 follows directly as another high-g bend. Repeated lateral load can overheat the tyres; a small correction here may spoil the car's position for the slower changes that follow.",
+            "uk": "Восьмий одразу продовжує швидкісну зв'язку з великим перевантаженням. Повторне бокове навантаження нагріває шини, а невелика корекція може зіпсувати положення боліда перед повільнішими поворотами."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 changes the rhythm after the fast pair. The driver must bring the car into a tighter line without losing balance, because the next numbered corner follows almost immediately.",
+            "uk": "Дев'ятий змінює ритм після швидкої пари. Пілоту потрібно звузити траєкторію без втрати балансу, адже наступний поворот починається майже відразу."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 completes the linked change of direction after Turn 9. A clean exit is useful for the short acceleration towards the next braking point; sliding here costs more than the corner alone.",
+            "uk": "Десятий завершує перекладку після дев'ятого. Чистий вихід допомагає на короткому розгоні до наступного гальмування; ковзання тут коштує часу не лише в самому віражі."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 begins the technical entry to Shanghai's long back-straight complex. Drivers brake and rotate the car carefully, knowing that the following Turns 12 and 13 determine how early they can accelerate.",
+            "uk": "Одинадцятий відкриває технічний підхід до довгої задньої прямої Шанхаю. Пілоти обережно гальмують і розвертають болід, адже повороти 12 та 13 визначають момент початку розгону."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is the slower entry into the tightening-and-opening final spiral. The 2025 FIA map places the first DRS detection on this turn, making it a useful tactical landmark as well as a driving challenge.",
+            "uk": "Дванадцятий — повільніший вхід до фінальної спіралі, яка потім розкривається. На схемі FIA 2025 року тут стоїть перша точка вимірювання DRS, тож це і тактичний орієнтир, і складний віраж."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 opens into a long right-hand acceleration curve leading to the enormous back straight. A clean throttle application is critical: FIA's first DRS activation begins 375 metres after this corner.",
+            "uk": "Тринадцятий розкривається в довгу праву дугу з розгоном на величезну задню пряму. Плавний газ вирішальний: за схемою FIA перша активація DRS починається за 375 метрів після цього віражу."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is the heavy-braking hairpin after Shanghai's roughly 1.2-kilometre back straight. This is a prime overtaking place, but a late attack must leave the car positioned for the following left-hand Turn 15.",
+            "uk": "Чотирнадцятий — шпилька із сильним гальмуванням після приблизно 1,2-кілометрової задньої прямої. Це головне місце для обгону, але пізня атака має залишити болід на правильній траєкторії перед лівим п'ятнадцятим."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is the quick left-hand transition out of the Turn 14 hairpin. The driver wants to straighten the car and accelerate without running wide, because the final corner is approaching.",
+            "uk": "П'ятнадцятий — швидка ліва перекладка після шпильки чотирнадцятого. Пілот прагне випрямити машину й розігнатися без широкого виходу, адже попереду останній поворот."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "shanghai-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 is the final bend onto the main straight. The FIA map places the second DRS detection 35 metres before it and activation 98 metres after; a clean exit is crucial for the next lap's opening spiral.",
+            "uk": "Шістнадцятий — останній віраж перед стартовою прямою. За схемою FIA друга точка вимірювання DRS стоїть за 35 метрів до нього, а активація — за 98 метрів після; чистий вихід готує наступне коло."
+          },
+          "sources": [
+            "shanghai-map",
+            "shanghai-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "marina-bay",
+      "layout_id": "marina-bay-4",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 19,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_singapore_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_and_quarantine_zone.pdf",
+        "names": "https://www.formula1.com/en/latest/article/singapore-grand-prix-set-to-feature-revised-track-layout-in-2023.6KsrU6hQw3hxrVJ6zKeJ74"
+      },
+      "sections": [
+        {
+          "id": "marina-bay-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 opens the Marina Bay lap with heavy braking after the pit straight. The tight right-hand entry is a classic start-lap congestion point, and a late attack must still leave room for the immediate second corner.",
+            "uk": "Перший відкриває коло Марина-Бей сильним гальмуванням після стартової прямої. Тісний правий вхід часто створює затор на старті; пізня атака має залишити простір для другого."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the middle change of direction in Singapore's opening combination. Drivers need to keep the car balanced between walls because a wide line can compromise the final part at Turn 3.",
+            "uk": "Другий — середня перекладка стартової зв'язки Сінгапуру. Між стінами важливо втримати баланс: широкий вихід може зіпсувати завершальний третій поворот."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 completes the opening low-speed combination. The driver tries to straighten the exit and build traction, but the barriers make it easy to lose time by carrying too much speed into the apex.",
+            "uk": "Третій завершує повільнішу стартову зв'язку. Пілот випрямляє вихід і додає газ, але бар'єри не прощають надмірної швидкості на апексі."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 begins the next run through Singapore's city streets. The 2025 FIA map locates the first DRS detection point at this corner, so its position is useful for understanding the following acceleration zone.",
+            "uk": "Четвертий відкриває наступну міську секцію. На схемі FIA 2025 року тут розташована перша точка вимірювання DRS, тож поворот допомагає зрозуміти подальшу зону розгону."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is a key exit onto a longer acceleration section. The FIA's first DRS activation begins 48 metres after the corner, making a tidy line and early traction more valuable than a spectacular entry.",
+            "uk": "П'ятий відкриває довший розгін. Перша активація DRS за схемою FIA починається через 48 метрів після повороту, тому чиста траєкторія й раннє зчеплення важливіші за ефектний вхід."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 lies on the faster run towards the next major braking zone. The driver keeps the car stable and positions it for Turn 7, where the circuit changes pace sharply again.",
+            "uk": "Шостий лежить на швидшому підході до наступної серйозної зони гальмування. Пілот стабілізує машину й готує сьомий, де ритм кола знову різко змінюється."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is a substantial braking point after the fast section. The first sector split on the 2025 map is 150 metres before it; the corner itself demands a clean rotation without running into the outside barrier.",
+            "uk": "Сьомий — значна зона гальмування після швидкого відрізка. Межа першого сектору на схемі 2025 року стоїть за 150 метрів до нього; потрібно точно розвернути болід і не торкнутися зовнішнього бар'єра."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 follows the heavy braking at Turn 7 and requires a quick change of direction. Drivers must preserve the car's balance through the tight city geometry rather than treating the previous corner in isolation.",
+            "uk": "Восьмий іде після сильного гальмування сьомого й потребує швидкої перекладки. У тісній міській геометрії потрібно берегти баланс, а не проходити попередній поворот окремо від решти зв'язки."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 continues the technical city-centre sequence. A controlled entry helps the driver keep the car away from the walls while setting up the next bend, which has produced dramatic race incidents.",
+            "uk": "Дев'ятий продовжує технічну зв'язку центру міста. Контрольований вхід допомагає не зачепити стіни й підготувати наступний віраж, де траплялися драматичні гоночні епізоди."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is remembered for George Russell's final-lap crash in the 2023 Singapore Grand Prix, which ended his podium challenge. The corner is a reminder that even a small error between the walls can decide a race.",
+            "uk": "Десятий пам'ятають через аварію Джорджа Расселла на останньому колі Гран-прі Сінгапуру 2023 року, що позбавила його подіуму. Тут навіть невелика помилка між стінами може вирішити гонку."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 links the middle city section into the following bends. The driver needs a patient line: the track offers little room for a large correction once the car has committed between barriers.",
+            "uk": "Одинадцятий пов'язує середню міську секцію з наступними віражами. Потрібна терпляча траєкторія: між бар'єрами майже немає простору для великого виправлення після входу."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 prepares the approach to the slow Turn 13 area. The FIA map places the second DRS detection 102 metres before Turn 13, so the exit from this bend helps set up a later acceleration opportunity.",
+            "uk": "Дванадцятий готує підхід до повільнішої ділянки тринадцятого. Друга точка вимірювання DRS на схемі FIA стоїть за 102 метри до тринадцятого, тож вихід допомагає підготувати наступний розгін."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is the tight hairpin near the river crossing, demanding low-speed rotation after a more flowing approach. The 2025 FIA map places the second DRS activation 78 metres beyond this corner.",
+            "uk": "Тринадцятий — тісна шпилька біля річкового переходу, де після плавнішого підходу потрібно розвернути болід на малій швидкості. Друга активація DRS за схемою 2025 року починається за 78 метрів після нього."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 leads onto the longer straight created by Singapore's 2023 layout change. The 2025 FIA map places the third DRS activation 100 metres after it; the old 23-corner layout cannot be numbered the same way.",
+            "uk": "Чотирнадцятий відкриває довшу пряму, створену під час перебудови Сінгапуру 2023 року. Третя активація DRS починається за 100 метрів після нього; стару конфігурацію з 23 поворотами не можна нумерувати так само."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 follows the new straight that replaced the old waterfront sequence in 2023. Drivers must adapt from sustained acceleration back to the barriers and slower, more precise final-sector steering.",
+            "uk": "П'ятнадцятий іде після нової прямої, яка у 2023 році замінила стару прибережну зв'язку. Після тривалого розгону пілоти повертаються до бар'єрів і точнішого кермування фінального сектору."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 continues the closing city section, where the walls remain close and exits are short. The car needs a stable platform because a mistake here carries into the following numbered bend.",
+            "uk": "Шістнадцятий продовжує фінальну міську секцію, де стіни близько, а виходи короткі. Потрібен стабільний болід: помилка тут переходить у наступний поворот."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is part of the final linked sequence. The FIA's third DRS detection is 105 metres after its apex, making this corner an important tactical reference before the run towards the line.",
+            "uk": "Сімнадцятий входить до завершальної зв'язки. Третя точка вимірювання DRS за схемою FIA стоїть за 105 метрів після апексу, тож це важливий тактичний орієнтир перед фінішем."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 brings the car through the penultimate change of direction. Drivers must avoid sliding wide between the walls and prepare for the final bend, where the main straight's exit speed is decided.",
+            "uk": "Вісімнадцятий проводить болід через передостанню перекладку. Між стінами не можна ковзнути широко; потрібно підготувати останній віраж, від якого залежить швидкість на стартовій прямій."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "marina-bay-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 ends the 2025 Marina Bay lap. The FIA map locates the fourth DRS activation at its exit; unlike older Singapore layouts, this 19-turn configuration must be read with its post-2023 numbering.",
+            "uk": "Дев'ятнадцятий завершує коло Марина-Бей 2025 року. Четверта активація DRS на схемі FIA розташована на виході; на відміну від старих маршрутів, ця конфігурація має нумерацію після 2023 року."
+          },
+          "sources": [
+            "marina-bay-map",
+            "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    }
+  ]
+}
