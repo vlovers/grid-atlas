@@ -36,10 +36,11 @@ test('pending research cannot appear through matching layouts or a fabricated ru
   } finally { delete process.env.GRID_ATLAS_CIRCUIT_PREVIEW; }
 });
 
-test('five circuit collections have at least five genuine sourced research stories, with no 2026 retrospective', () => {
-  assert.equal(candidateCircuitNarratives.length,5);
+test('original five collections keep five sourced stories while new historical guides add two or more', () => {
+  const original = new Set(['monaco','spa-francorchamps','monza','suzuka','silverstone']);
+  assert.ok(candidateCircuitNarratives.length>=11);
   for(const circuit of candidateCircuitNarratives) {
-    assert.ok(circuit.moments.length>=5);
+    assert.ok(circuit.moments.length >= (original.has(circuit.circuit_id) ? 5 : 2), circuit.circuit_id);
     assert.equal(new Set(circuit.moments.map(moment=>moment.id)).size,circuit.moments.length);
     for(const moment of circuit.moments) {
       assert.ok(moment.year<2026);
