@@ -24,7 +24,7 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
   if (guide.sections.some(section =>
     !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status) ||
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
-    section.sources.length < 2 || section.sources.some(key => !candidateCornerSources[key])
+    section.sources.length < 2 || section.sources.some(key => !Object.hasOwn(candidateCornerSources, key))
   )) return false;
   return true;
 }
