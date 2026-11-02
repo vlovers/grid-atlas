@@ -322,3 +322,15 @@ test('private historical review serves real EN and UK pages only behind the gene
     }
   }
 });
+
+test('private historical preview presents source disagreements and map rights to reviewers', () => {
+  for (const locale of ['en', 'uk']) {
+    const html = renderCircuitReview(locale, '/review/test');
+    assert.match(html, /historical_51_vs_f1db_48_unverified_apex_numbers/);
+    assert.match(html, /complexes_vs_archive_turn_count_unverified_apex_numbers/);
+    assert.match(html, /Route landmark order \(not turn numbers\)|Послідовність маршрутних орієнтирів/);
+    assert.match(html, /Do not copy external maps or photographs|Зовнішні карти та фотографії/);
+    assert.match(html, /https:\/\/www\.motorsportmagazine\.com/);
+    assert.match(html, /count discrepancy/);
+  }
+});
