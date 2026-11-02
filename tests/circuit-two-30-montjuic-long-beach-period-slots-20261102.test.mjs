@@ -59,3 +59,18 @@ test('both new historical guides remain fail-closed for publication', async () =
     assert.equal(isCircuitEditionApproved(id), false, id);
   }
 });
+
+test('historical SVG attribution is explicit and external map images are not imported', () => {
+  for (const [, layout] of editions) {
+    const asset = layouts.find(x => x.layout_id === layout);
+    assert.equal(asset.license, 'CC-BY-4.0', layout);
+    assert.equal(asset.author, 'Jules Roy', layout);
+    assert.ok(asset.source_url.includes('github.com/f1db/f1db/'), layout);
+  }
+  for (const id of ['montjuic', 'long-beach', 'buenos-aires']) {
+    const guide = data.guides.find(x => x.circuit_id === id);
+    assert.ok(guide, id);
+    assert.ok(guide.sections.every(x => x.name === null && x.confirmation_status === 'historical_numbering_unverified'), id);
+    assert.ok(guide.sections.every(x => x.sources.every(key => data.sources[key].startsWith('https://'))), id);
+  }
+});
