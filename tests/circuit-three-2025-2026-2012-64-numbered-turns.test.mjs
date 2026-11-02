@@ -57,5 +57,5 @@ test('historic layouts, named corners and media rights are kept separate',()=>{
   assert.equal(data.guides.find(g=>g.circuit_id==='madring').sections[11].name,'La Monumental');
   assert.ok(data.sources['las-vegas-map'].startsWith('https://www.fia.com/'));
   assert.ok(data.sources['madring-map'].startsWith('https://www.fia.com/'));
-  assert.ok(!expected.keys().some(id=>data.guides.find(g=>g.circuit_id===id).diagram));
+  assert.ok(![...expected.keys()].some(id=>data.guides.find(g=>g.circuit_id===id).diagram));
 });
