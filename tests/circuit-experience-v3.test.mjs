@@ -165,3 +165,31 @@ test('source-checked AI turn mappings alone can never unlock publication', async
     guide.sections.forEach((section, index) => { section.confirmation_status = originalSections[index]; });
   }
 });
+
+test('publication gate rejects duplicate section identifiers and non-HTTPS provenance', async () => {
+  const { hasPublicationReadyCornerGuide } = await import('../apps/web/src/components/editorial/circuit-release.ts');
+  const { candidateCornerSources } = await import('../apps/web/src/components/editorial/circuit-candidates.ts');
+  const guide = candidateCornerGuides.find(item => item.circuit_id === 'silverstone');
+  assert.ok(guide && guide.sections.length > 1);
+  const oldReview = guide.review_status;
+  const oldStatuses = guide.sections.map(section => section.confirmation_status);
+  const oldId = guide.sections[1].id;
+  const sourceKey = guide.sections[0].sources[0];
+  const oldSource = candidateCornerSources[sourceKey];
+  try {
+    guide.review_status = 'independent_review_approved';
+    guide.sections.forEach(section => { section.confirmation_status = 'independently_verified'; });
+    guide.sections[1].id = guide.sections[0].id;
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'duplicate section IDs block release');
+    guide.sections[1].id = oldId;
+    candidateCornerSources[sourceKey] = 'http://example.invalid/provisional-map';
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'non-HTTPS provenance blocks release');
+    candidateCornerSources[sourceKey] = '';
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'empty evidence link blocks release');
+  } finally {
+    guide.review_status = oldReview;
+    guide.sections.forEach((section, index) => { section.confirmation_status = oldStatuses[index]; });
+    guide.sections[1].id = oldId;
+    candidateCornerSources[sourceKey] = oldSource;
+  }
+});
