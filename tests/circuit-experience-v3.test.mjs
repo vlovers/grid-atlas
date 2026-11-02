@@ -20,8 +20,14 @@ test('numbered turns are complete and never confused with distinct named section
   const turns = numberedCorners(monaco);
   assert.equal(turns.length,19);
   assert.equal(turns.find(turn=>turn.number===17).name,null);
-  assert.equal(turns[9].section_id,turns[10].section_id);
-  assert.equal(turns[12].section_id,turns[15].section_id);
+  // Shared complex names must remain shared, but each bend now has its own focus target and copy.
+  assert.equal(turns[9].name, turns[10].name);
+  assert.equal(turns[12].name, turns[15].name);
+  assert.notEqual(turns[9].section_id, turns[10].section_id);
+  assert.notEqual(turns[12].section_id, turns[15].section_id);
+  assert.equal(new Set(turns.map(turn => turn.section_id)).size, 19);
+  const spa = candidateCornerGuides.find(guide => guide.circuit_id === 'spa-francorchamps');
+  assert.equal(new Set(numberedCorners(spa).map(turn => turn.section_id)).size, 19);
 });
 
 test('pending research cannot appear through matching layouts or a fabricated runtime flag', () => {
