@@ -144,7 +144,11 @@
     "kyalami-period-map": "https://racedatahub.com/en/f1/circuits/kyalami",
     "kyalami-period-history": "https://en.wikipedia.org/wiki/Kyalami",
     "kyalami-venue-names": "https://www.kyalamigrandprixcircuit.com/about-kyalami/",
-    "kyalami-1985-result": "https://www.formula1.com/en/results/1985/races"
+    "kyalami-1985-result": "https://www.formula1.com/en/results/1985/races",
+    "dijon-venue-history": "https://www.circuit-dijon-prenois.com/en/history-of-the-racetrack-en/",
+    "dijon-period-layout": "https://lapledger.org/circuits/dijon",
+    "dijon-named-corners-map": "https://driver61.com/wp-content/uploads/2020/10/Dijon-Prenois-Track-Map-Driver61.pdf",
+    "dijon-1984-result": "https://www.formula1.com/en/results/1984/races/470/france/race-result"
   },
   "guides": [
     {
@@ -13923,6 +13927,269 @@
             "kyalami-period-history",
             "kyalami-venue-names",
             "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "dijon",
+      "layout_id": "dijon-2",
+      "numbering_year": 1984,
+      "names_as_of": 1984,
+      "numbered_turns": 12,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "1977–1984 3.801km 12-turn F1DB layout; named modern sections and period geometry verified but exact 1984 FIA numbered apex map not found; all name-to-number assignments provisional, not certified official names.",
+      "sections": [
+        {
+          "id": "dijon-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Double Droite de Villeroy · entry"
+          ],
+          "explanation": {
+            "en": "The opening right-hand movement at Villeroy arrives after the start line. Its name means a double right, so the driver must resist treating the first apex as the entire corner; the exact 1984 numbered split is not certified.",
+            "uk": "Перший рух праворуч у Villeroy починається після стартової лінії. Назва означає подвійну праву дугу, тож пілот не може вважати перший апекс усім поворотом; точний поділ номерів у 1984 році не засвідчений."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Double Droite de Villeroy · exit"
+          ],
+          "explanation": {
+            "en": "The second right-hand arc of Villeroy is about unwinding the steering without losing the line for the following Esses. Its modern name is documented, but the period F1DB turn number is a provisional match rather than a 1984 FIA designation.",
+            "uk": "Друга права дуга Villeroy вимагає вчасно випрямити кермо, не зіпсувавши підхід до наступних есків. Сучасна назва задокументована, але номер повороту F1DB для історичного кола — лише попередня відповідність, а не позначення FIA 1984 року."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "S des Sablières · entry"
+          ],
+          "explanation": {
+            "en": "The Sablières sequence changes direction rapidly and interrupts the acceleration after Villeroy. The name refers to the sand or gravel pits associated with the area; a tidy first movement leaves space for the reversal.",
+            "uk": "Зв'язка Sablières швидко змінює напрямок і перериває розгін після Villeroy. Назва пов'язана з місцевими піщаними чи гравійними розробками; акуратний перший рух залишає місце для зворотної перекладки."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "S des Sablières · exit"
+          ],
+          "explanation": {
+            "en": "The second movement through the Sablières S demands balance while the tyres are still loaded. Drivers must avoid a wide exit before the next faster curve; the subdivision into separate numbered turns remains an editorial reconstruction.",
+            "uk": "Друга частина S des Sablières потребує балансу, коли шини ще навантажені після попереднього руху. Важливо не виїхати надто широко перед наступною швидшою дугою; поділ на окремі номери є редакційною реконструкцією."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Courbe des Gorgeolies"
+          ],
+          "explanation": {
+            "en": "The flowing Gorgeolies curve links the Esses to the more committed part of the lap. At Dijon, the short lap makes preserving momentum valuable; a small correction in a fast bend costs time without offering a long straight to recover it.",
+            "uk": "Плавна дуга Gorgeolies з'єднує ески з більш швидкісною частиною кола. На короткому Діжоні збереження темпу особливо важливе: навіть невелике коригування в швидкому віражі забирає час, який ніде надолужити."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Virage de la Combe"
+          ],
+          "explanation": {
+            "en": "The Combe corner sits in Dijon's hilly sequence and asks the driver to judge a changing sightline. The course's elevation is central to its character, but a modern driving map cannot prove the 1984 turn-to-apex number on its own.",
+            "uk": "Поворот Combe розташований у горбистій секції Діжона, де пілоту доводиться оцінювати траєкторію за мінливим оглядом. Перепади висоти визначають характер траси, але сучасна карта сама по собі не доводить номер апексу 1984 року."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Parabolique · approach"
+          ],
+          "explanation": {
+            "en": "The Parabolique was created when Dijon was lengthened from 3.289 to 3.801 kilometres in 1977. Its approach builds the speed and commitment needed for a sustained curve; the older 1974 circuit must never be used to number this feature.",
+            "uk": "Parabolique з'явився після подовження Діжона з 3,289 до 3,801 км у 1977 році. На підході пілот готується до затяжної дуги на швидкості; конфігурацію 1974 року не можна використовувати для нумерації цієї секції."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Parabolique · sustained arc"
+          ],
+          "explanation": {
+            "en": "The long Parabolique arc makes the car work under continuous lateral load rather than a single sharp turn. The corner's existence on the 1984 layout is documented by the venue; the boundary between individual F1DB turns is still under review.",
+            "uk": "Довга дуга Parabolique створює тривале бокове навантаження, а не один короткий поворот керма. Автодром підтверджує існування цього віражу на трасі 1984 року, але межі окремих поворотів F1DB ще потребують перевірки."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Gauche de la Bretelle"
+          ],
+          "explanation": {
+            "en": "The Bretelle left-hand section follows the extended part of the circuit. A driver who carries excessive speed into the first left can spoil the second movement, so the important decision is how to position the car for the following bend.",
+            "uk": "Ліва секція Bretelle йде після подовженої частини траси. Надлишкова швидкість на першому лівому віражі псує наступну перекладку, тому головне — правильно поставити болід перед другим рухом."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [
+            "Double Gauche de la Bretelle"
+          ],
+          "explanation": {
+            "en": "The double-left at Bretelle is a sequence, not a single hairpin. Keeping a stable radius through both parts matters more than clipping one aggressive apex; the proposed historical turn number must be checked against a period numbered plan.",
+            "uk": "Подвійний лівий Bretelle — це зв'язка, а не одна шпилька. Стабільний радіус у двох частинах важливіший за надто агресивний окремий апекс; запропонований історичний номер потребує перевірки за схемою того часу."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [
+            "Courbe de Pouas · entry"
+          ],
+          "explanation": {
+            "en": "Pouas is a long, quick right-hand curve that leads towards the main straight. Its entry demands commitment but not reckless steering: the car stays loaded for a long time, and an early slide can ruin the exit.",
+            "uk": "Pouas — довга швидка права дуга, що веде до головної прямої. Вхід вимагає рішучості, але не різкого кермування: машина довго залишається під навантаженням, а раннє ковзання псує вихід."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "dijon-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [
+            "Courbe de Pouas · exit"
+          ],
+          "explanation": {
+            "en": "The last part of Pouas rewards a smooth throttle application as the car straightens for the run past the pits. In 1984 Niki Lauda won the final F1 race at Dijon, but that result alone does not verify the exact division of Pouas into numbered apexes.",
+            "uk": "Остання частина Pouas винагороджує плавний газ, коли болід випрямляється перед прямою повз бокси. У 1984 році Нікі Лауда виграв останній Гран-прі Ф1 у Діжоні, але результат гонки не підтверджує точного поділу Pouas на пронумеровані апекси."
+          },
+          "sources": [
+            "dijon-venue-history",
+            "dijon-period-layout",
+            "dijon-named-corners-map",
+            "dijon-1984-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
