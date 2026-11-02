@@ -19,6 +19,8 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
   const matches = candidateCornerGuides.filter(entry => entry.circuit_id === circuitId);
   if (matches.length !== 1) return false;
   const [guide] = matches;
+  // JSON imports expose literal keys; review provenance is indexed by runtime source IDs.
+  const sourceRegistry: Record<string, string> = candidateCornerSources;
   if (guide.review_status !== 'independent_review_approved') return false;
   if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
   if (!guide.layout_id?.trim() || !Number.isInteger(guide.numbering_year) || guide.numbering_year < 1950 || guide.numbering_year > 2100) return false;
@@ -31,8 +33,8 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
     section.confirmation_status !== 'independently_verified' ||
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
     new Set(section.sources).size < 2 || section.sources.some(key =>
-      !Object.hasOwn(candidateCornerSources, key) ||
-      !candidateCornerSources[key]?.startsWith('https://')
+      !Object.hasOwn(sourceRegistry, key) ||
+      !sourceRegistry[key]?.startsWith('https://')
     )
   )) return false;
   return true;
