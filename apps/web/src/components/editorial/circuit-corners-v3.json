@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_on": "2026-10-27",
+  "checked_on": "2026-11-02",
   "sources": {
     "monaco-names": "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
     "monaco-map": "https://www.fia.com/system/files/decision-document/2025_monaco_event_-_circuit_map_-_monaco_2025_revised_0.pdf",
@@ -9,7 +9,11 @@
     "monza-names": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
     "monza-map": "https://www.fia.com/system/files/decision-document/2025_monza_event_-_circuit_map_-_monza_2025_0.pdf",
     "spa-francorchamps-map": "https://www.fia.com/system/files/decision-document/2025_spa_francorchamps_event_-_circuit_map_-_spa_francorchamps_2025.pdf",
-    "spa-francorchamps-names": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs"
+    "spa-francorchamps-names": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-names.1o6cyXf5F6q9VFFcgMqTqs",
+    "austin-map": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_map_red_zones_map.pdf",
+    "austin-names": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-of-the-americas.3OjhBbugiQRmN4FnlpBtBc",
+    "bahrain-map": "https://www.fia.com/system/files/decision-document/2025_bahrain_grand_prix_-_event_notes_-_circuit_map_v4.pdf",
+    "bahrain-names": "https://global.honda/en/F1/circuit/bahrain-international-circuit/"
   },
   "guides": [
     {
@@ -384,6 +388,623 @@
           "sources": [
             "monza-map",
             "monza-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "austin",
+      "layout_id": "austin-1",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 20,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "austin-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The approach climbs steeply from the pit straight into a broad, slow left turn. That height change helps drivers brake late, but several cars can choose different lines: the successful overtake is the one that also leaves space to accelerate downhill.",
+            "uk": "Після стартової прямої боліди круто підіймаються до широкої повільної шпильки ліворуч. Підйом допомагає пізніше гальмувати, але ширина дозволяє обирати різні траєкторії. Вдалий обгін потребує не лише входу, а й чистого виходу на спуск."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A quick right-hand sweep takes the car away from the summit of Turn 1. Drivers want a clean, stable line because the first of the fast Esses follows almost immediately; carrying too much width here can spoil the next entry.",
+            "uk": "Швидка права дуга веде вниз від вершини першого повороту. Пілотам потрібна чиста й стабільна траєкторія, адже майже одразу починається серія швидких змін напрямку. Занадто широкий вихід може зіпсувати вхід до наступної зв'язки."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 starts the Silverstone-inspired sequence with a fast left. Steering inputs are linked, not isolated: an ambitious line through this first apex can leave the car badly positioned for Turn 4.",
+            "uk": "Третій поворот відкриває швидку зв'язку, характер якої нагадує Сільверстоун, з різкого руху ліворуч. Тут кожна траєкторія впливає на наступну: надто сміливий перший апекс може залишити болід у незручному положенні перед четвертим віражем."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The car swings right through Turn 4 while the rapid direction changes continue. The driver is not aiming for one isolated fastest corner; keeping the chassis settled gives the next left bend a better entry.",
+            "uk": "У четвертому повороті болід швидко перекладається праворуч, а зміни напрямку не припиняються. Головне не виграти одну окрему дугу, а втримати машину стабільною, щоб краще увійти в наступний лівий віраж."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 carries the rhythm back to the left. Small steering corrections and tyre scrub accumulate through this section, so drivers try to minimise sliding as they prepare for the next right-hand change.",
+            "uk": "П'ятий поворот повертає ритм зв'язки ліворуч. Кожне зайве коригування керма і ковзання шин накопичують втрати, тому пілоти намагаються пройти його плавно й підготувати наступну зміну напрямку праворуч."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The rapid first group ends with a right-hand change at Turn 6. What matters is the position of the car for the continuing series of bends, rather than merely clipping the kerb at the last possible moment.",
+            "uk": "Перша група швидких поворотів завершується перекладкою праворуч у шостому. Важливіше розташування боліда для наступних віражів, ніж спроба будь-що зачепити поребрик в останній момент."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 continues the first-sector sequence with another quick left. The racing line is constrained by the approach to Turn 8, and a car that slides wide must make a larger correction immediately.",
+            "uk": "Сьомий поворот продовжує зв'язку швидким рухом ліворуч. Траєкторію визначає близькість восьмого віражу: якщо болід ковзне надто широко, пілотові відразу доведеться різко виправляти лінію."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 8 the driver switches back to the right without a long straight to reset the car. This is why the Austin Esses reward rhythm and balance more than maximum speed through each individual apex.",
+            "uk": "У восьмому повороті пілот знову переводить болід праворуч без довгої прямої для стабілізації. Саме тому швидка секція Остіна винагороджує ритм і баланс, а не спробу пройти кожен окремий апекс на максимально можливій швидкості."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 leads the car back left and sets up the faster kink at Turn 10. Keeping the tyres from overheating through the preceding direction changes helps the driver maintain confidence here.",
+            "uk": "Дев'ятий поворот переводить машину ліворуч перед швидким перегином десятого. Якщо пілот не перегрів шини попередніми різкими перекладками, тут легше втримати потрібну траєкторію й швидкість."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A fast right-hand kink carries the lap towards the slower Turn 11. The contrast is important: drivers leave a high-speed sequence and must promptly prepare for heavy braking and a traction-sensitive hairpin.",
+            "uk": "Швидкий правий перегин веде до значно повільнішого одинадцятого повороту. Контраст різкий: після швидкісної зв'язки потрібно відразу готуватися до сильного гальмування й шпильки, де вирішальним стає зчеплення на виході."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "This slow left-hand hairpin is the launch point for the long back straight. Getting the steering unwound and applying throttle cleanly can be more valuable than attacking the entry; wheelspin costs speed for the entire straight.",
+            "uk": "Повільна ліва шпилька відкриває довгу задню пряму. Вчасно випрямити кермо й чисто додати газ часто вигідніше, ніж ризиковано атакувати вхід. Пробуксовка забирає швидкість протягом усієї наступної прямої."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fastest approach of the lap ends in heavy braking for a sharp left at Turn 12. It is a major overtaking opportunity, but carrying excessive speed into the corner can leave the car poorly placed for the technical sequence immediately afterward.",
+            "uk": "Найшвидший підхід кола завершується сильним гальмуванням перед різким лівим дванадцятим поворотом. Тут часто можна атакувати суперника, але надлишкова швидкість на вході псує положення боліда для тісної технічної зв'язки одразу після нього."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 starts the tightly packed stadium-inspired sequence. The driver needs to rotate the car accurately without sacrificing the route through the following bends; an aggressive first apex rarely helps if it ruins Turn 14.",
+            "uk": "Тринадцятий поворот відкриває тісну стадіонну секцію. Пілоту потрібно точно розвернути болід, не зіпсувавши шлях через наступні віражі. Агресивний перший апекс не дасть переваги, якщо після нього доведеться боротися з чотирнадцятим поворотом."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "A short transition inside the stadium complex places a sustained load on the tyres while the line bends through Turn 14. The difficult task is to keep the car settled so the exit towards Turn 15 remains possible.",
+            "uk": "Короткий перехід усередині стадіонної секції створює тривале навантаження на шини в чотирнадцятому повороті. Найважче втримати болід спокійним, щоб залишити собі зручний вихід до п'ятнадцятого."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 completes the awkward, slower stadium combination. Instead of forcing the car into one late apex, drivers try to straighten their exit and prepare for the much faster, continuous right-hand arc beginning at Turn 16.",
+            "uk": "П'ятнадцятий поворот завершує повільнішу й непросту стадіонну зв'язку. Замість надто пізнього апексу пілоти прагнуть випрямити вихід і підготуватися до значно швидшої тривалої правої дуги, що починається з шістнадцятого."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 begins a sustained right-hand sweep counted as three turns on the official map. The car stays under lateral load for several seconds; speed and steering balance have to be managed across the entire arc.",
+            "uk": "Шістнадцятий поворот починає довгу праву дугу, яку на офіційній схемі поділено на три номери. Болід кілька секунд залишається під боковим навантаженням; швидкість і баланс кермування потрібно контролювати на всій протяжності секції."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second numbered part of the long right-hand arc offers no real reset for the car. Tyre grip and line discipline matter because excessive sliding here carries consequences all the way to Turn 18 and the fast change at Turn 19.",
+            "uk": "Середня частина довгої правої дуги майже не дає машині перепочити. Зчеплення й точність траєкторії важливі, адже зайве ковзання відчуватиметься до вісімнадцятого повороту й швидкої зміни напрямку в дев'ятнадцятому."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 is the final numbered portion of Austin's sweeping right-hand complex. The exit must position the car for the quick left at Turn 19; chasing an extra fraction of speed can push the car off line just when the direction changes.",
+            "uk": "Вісімнадцятий поворот завершує довгу праву секцію Остіна. Потрібно вивести болід у правильне положення перед швидким лівим дев'ятнадцятим. Спроба виграти мить надмірною швидкістю може відправити машину за межі оптимальної траєкторії саме під час перекладки."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate corner is a quick, slightly downhill left that tempts drivers to carry too much speed. Tyres have worked hard through the preceding right-hand arc; a wide exit here can mean lost time or a track-limits violation.",
+            "uk": "Передостанній поворот — швидкий лівий із невеликим спуском, який провокує надто сміливий вхід. Шини вже зазнали великого навантаження у попередній правій дузі. Широкий вихід може коштувати часу або призвести до порушення меж траси."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "austin-t20",
+          "numbers": [
+            20
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The last corner slows the car sharply before the pit straight. Smooth traction is crucial: an over-eager throttle application can spin the rear tyres and ruin acceleration all the way to the uphill first corner on the next lap.",
+            "uk": "Останній поворот різко сповільнює болід перед стартовою прямою. Плавне прискорення тут вирішальне: надто ранній газ може викликати пробуксовку задніх коліс і зіпсувати розгін аж до підйому перед першим поворотом наступного кола."
+          },
+          "sources": [
+            "austin-map",
+            "austin-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "bahrain",
+      "layout_id": "bahrain-1",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "bahrain-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Michael Schumacher Corner",
+          "aliases": [
+            "Turn 1"
+          ],
+          "explanation": {
+            "en": "The first hairpin has been named for Michael Schumacher since 2014, honouring the winner of Bahrain's inaugural 2004 Grand Prix. Cars arrive from the long pit straight under heavy braking; an attack here must leave room for the immediate change of direction through Turn 2.",
+            "uk": "Із 2014 року першу шпильку названо на честь Міхаеля Шумахера, переможця дебютного Гран-прі Бахрейну 2004 року. Після довгої стартової прямої боліди різко гальмують; під час обгону потрібно залишити місце для миттєвої перекладки у другому повороті."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 changes direction left as the cars begin accelerating out of the first hairpin. Getting the rear tyres hooked up and holding a compact line is essential before the gentle right-hand kink that follows.",
+            "uk": "Другий поворот змінює напрямок ліворуч, коли боліди вже починають розгін після шпильки. Важливо не втратити зчеплення задніх шин і зберегти компактну траєкторію перед плавним правим перегином далі."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The gentle right-hand Turn 3 completes the first-corner combination. The exit is particularly important because the cars accelerate down a long straight towards the next substantial braking zone at Turn 4.",
+            "uk": "Плавний правий третій поворот завершує початкову зв'язку. Особливо важливий вихід, адже далі боліди довго розганяються до наступної серйозної зони гальмування перед четвертим поворотом."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is a broad right-hander approached after a fast straight. More than one line is possible, so cars can run side by side, but the exit falls away and rewards a controlled throttle application.",
+            "uk": "Четвертий поворот — широкий правий віраж після швидкої прямої. Тут можливі різні траєкторії й боротьба колесо в колесо, однак дорога на виході спускається, тому важливо дозувати газ і не втратити контроль."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 begins a much faster left-right-left group. The important skill is smooth weight transfer: attacking its first apex too sharply makes the next two changes of direction harder.",
+            "uk": "П'ятий поворот починає значно швидшу зв'язку ліворуч-праворуч-ліворуч. Головне — плавно переносити навантаження: надто різкий вхід у перший апекс ускладнює дві наступні перекладки."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The middle bend of the Esses turns right while the car is still settling from Turn 5. Drivers need steering precision and stable aero balance rather than a separate heavy braking event.",
+            "uk": "Середня частина швидкої зв'язки повертає праворуч, поки болід ще стабілізується після п'ятого повороту. Тут потрібні точне кермування та аеродинамічний баланс, а не окрема сильна зона гальмування."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 finishes the fast sequence to the left and sets up the braking approach to Turn 8. An untidy exit costs precious positioning at the next slow hairpin.",
+            "uk": "Сьомий поворот завершує швидку зв'язку ліворуч і готує підхід до гальмування перед восьмим. Неточний вихід залишить болід у невигідному положенні перед наступною повільною шпилькою."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "After the fast changes of direction, Turn 8 forces the cars to slow sharply for a tight right. Drivers need to rotate the car at low speed while setting up traction for the uphill run to the demanding Turn 9–10 section.",
+            "uk": "Після швидких перекладок восьмий поворот різко сповільнює боліди перед тісним правим віражем. Потрібно розвернути машину на малій швидкості й підготувати тягу для підйому до складної секції 9–10."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 begins the linked left-hand approach to Turn 10. The car is still steering when the driver starts braking for the following, tighter left; this overlap can unload and lock the inside-front tyre.",
+            "uk": "Дев'ятий поворот відкриває пов'язану ліву зв'язку з десятим. Пілот починає гальмувати до наступного тіснішого лівого віражу, коли кермо ще повернуте. Через це внутрішнє переднє колесо може розвантажуватися й блокуватися."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 is reached while the car is already changing direction. Drivers must manage front-wheel lock-ups and then straighten the exit quickly because the following acceleration zone rewards clean traction.",
+            "uk": "До десятого повороту болід підходить уже під час зміни напрямку. Пілоту потрібно уникнути блокування переднього колеса й швидко випрямити машину на виході, адже наступний розгін винагороджує чисте зчеплення."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 starts a flowing section after the straight beyond Turn 10. Drivers carry considerably more speed through this left than through the hairpins, making aerodynamic stability especially important.",
+            "uk": "Одинадцятий поворот відкриває плавну швидкісну секцію після прямої за десятим. Ліву дугу проходять значно швидше, ніж шпильки раніше на колі, тож особливо важлива аеродинамічна стабільність."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The circuit switches into a flowing right-hand Turn 12. Keeping the car planted at speed matters more than late braking, and the exit prepares drivers for the more measured Turn 13.",
+            "uk": "Траса переходить у плавний швидкий дванадцятий поворот праворуч. Головне втримати болід на дорозі під навантаженням, а не гальмувати якнайпізніше. Вихід готує підхід до стриманішого тринадцятого повороту."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is a right-hand corner at the end of the flowing middle complex. Drivers balance speed and steering before accelerating down a long straight; running wide here can undermine the entire following run.",
+            "uk": "Тринадцятий поворот праворуч завершує плавнішу середню секцію. Пілоти балансують швидкість і кермування перед довгою прямою. Надто широкий вихід може коштувати швидкості на всьому наступному відрізку."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long run ends in strong braking for Turn 14, the main final right-hander. Drivers want to avoid rear-wheel slip while rotating the car, because the exit leads almost immediately into the final kink.",
+            "uk": "Довга пряма закінчується сильним гальмуванням перед чотирнадцятим поворотом, головним фінальним правим віражем. Важливо не допустити ковзання задніх шин під час розвороту, адже вихід майже відразу переходить в останній перегин."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "bahrain-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is a shallow right-hand kink that is effectively part of the run out of Turn 14. Drivers already want the car straight and accelerating cleanly onto the pit straight rather than forcing another aggressive apex.",
+            "uk": "П'ятнадцятий поворот — невеликий правий перегин, фактично частина виходу з чотирнадцятого. Пілоти прагнуть якнайшвидше випрямити машину й чисто розігнатися на стартову пряму, а не шукати ще один агресивний апекс."
+          },
+          "sources": [
+            "bahrain-map",
+            "bahrain-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
