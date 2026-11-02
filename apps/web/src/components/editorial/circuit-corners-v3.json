@@ -51,7 +51,13 @@
     "marina-bay-names": "https://www.formula1.com/en/latest/article/singapore-grand-prix-set-to-feature-revised-track-layout-in-2023.6KsrU6hQw3hxrVJ6zKeJ74",
     "jeddah-2025-race": "https://www.formula1.com/en/latest/article/piastri-clinches-victory-in-saudi-arabia-from-verstappen-and-leclerc-as.1XBezBwUfLfjOayPSKNs41",
     "miami-2025-race": "https://api.fia.com/news/f1-piastri-wins-miami-grand-prix-ahead-norris-and-russell",
-    "marina-bay-2023-race": "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX"
+    "marina-bay-2023-race": "https://www.formula1.com/en/latest/article/sainz-holds-off-norris-and-fast-charging-mercedes-pair-to-take-sensational.16sNsRUz2MAFyXxSE3RdwX",
+    "mugello-map": "https://www.fia.com/sites/default/files/doc_1_-_2020_mugello_event_-_circuit_map_-_mugello_2.pdf",
+    "mugello-names": "https://discovermugello.it/service/autodromo-del-mugello/",
+    "mugello-race": "https://www.formula1.com/en/racing/2020/tuscany",
+    "portimao-map": "https://www.fia.com/sites/default/files/doc_1_-_2020_portuguese_grand_prix_-_circuit_map_0.pdf",
+    "portimao-names": "https://www.fiawec.com/en/news/portimao-the-track-explained/7057",
+    "portimao-race": "https://www.formula1.com/en/latest/article/fia-revises-track-limits-restrictions-at-portimao-after-125-lap-times.2J11eQhEoUSxcsU0EfN7eq"
   },
   "guides": [
     {
@@ -6167,6 +6173,566 @@
           "sources": [
             "marina-bay-map",
             "marina-bay-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "mugello",
+      "layout_id": "mugello-1",
+      "numbering_year": 2020,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "mugello-t1",
+          "numbers": [
+            1
+          ],
+          "name": "San Donato",
+          "aliases": [],
+          "explanation": {
+            "en": "The long uphill pit straight ends at San Donato, the first major braking zone. Its wide hairpin gives rivals room to try a move, but a late dive must still leave a stable exit for Luco.",
+            "uk": "Довга стартова пряма з підйомом завершується сильним гальмуванням перед San Donato. Широка шпилька дає простір для атаки, але після пізнього входу треба втримати болід для наступного Luco."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t2",
+          "numbers": [
+            2
+          ],
+          "name": "Luco",
+          "aliases": [],
+          "explanation": {
+            "en": "Luco is the first change of direction after the opening hairpin. The driver must move the car across the road without wasting the momentum needed for Poggio Secco.",
+            "uk": "Luco — перша перекладка після початкової шпильки. Пілоту потрібно перевести болід через трасу без зайвої втрати швидкості перед Poggio Secco."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Poggio Secco",
+          "aliases": [],
+          "explanation": {
+            "en": "The right-hand Poggio Secco closes the opening technical combination. Its exit matters because the road starts to flow faster towards the Materassi and Borgo San Lorenzo pair.",
+            "uk": "Правий Poggio Secco завершує початкову технічну зв'язку. Вихід важливий, бо далі дорога прискорюється до пари Materassi та Borgo San Lorenzo."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Materassi",
+          "aliases": [],
+          "explanation": {
+            "en": "Materassi begins the next left-right sequence and bears a historic local racing name. A smooth first steering input is more valuable than forcing the car across the kerb before Borgo San Lorenzo.",
+            "uk": "Materassi відкриває наступну зв'язку ліворуч-праворуч і має історичну назву, пов'язану з місцевими перегонами. Плавний перший рух керма корисніший за різку атаку поребрика перед Borgo San Lorenzo."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Borgo San Lorenzo",
+          "aliases": [],
+          "explanation": {
+            "en": "This bend takes its name from the nearby Tuscan town. It finishes the early linked corners and points the car towards the fast downhill Casanova–Savelli section, where balance becomes more important.",
+            "uk": "Поворот названо на честь сусіднього тосканського міста. Він завершує ранню зв'язку й веде до швидкісного спуску Casanova–Savelli, де особливо важливий баланс боліда."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Casanova",
+          "aliases": [],
+          "explanation": {
+            "en": "Casanova starts the rapid downhill pair with Savelli. The descent transfers load while the car changes direction, so the driver needs a settled entry rather than a last-second correction.",
+            "uk": "Casanova починає швидку пару зі Savelli на спуску. Під час зміни напрямку навантаження перерозподіляється, тому потрібен стабільний вхід без останньої різкої корекції."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Savelli",
+          "aliases": [],
+          "explanation": {
+            "en": "Savelli follows Casanova almost immediately and completes the descending combination. The line through this corner determines how confidently the driver can commit to the first Arrabbiata bend.",
+            "uk": "Savelli йде майже відразу після Casanova й завершує спадну зв'язку. Обрана тут траєкторія визначає, наскільки впевнено пілот зможе атакувати першу дугу Arrabbiata."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Arrabbiata 1",
+          "aliases": [],
+          "explanation": {
+            "en": "The first Arrabbiata is a very fast, loaded sweep where the circuit's hills magnify every steering correction. The Italian name evokes anger, fitting the ferocity of the corner rather than identifying a numbered modern sponsor.",
+            "uk": "Перша Arrabbiata — дуже швидка дуга під навантаженням, де рельєф підсилює наслідки кожної корекції керма. Італійська назва нагадує про лють і добре передає характер віражу."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Arrabbiata 2",
+          "aliases": [],
+          "explanation": {
+            "en": "The second Arrabbiata continues the high-speed challenge as the track climbs. The driver has to trust the car's grip through the crest while already preparing for the slower Scarperia.",
+            "uk": "Друга Arrabbiata продовжує швидкісне випробування на підйомі. Пілот має довіряти зчепленню на гребені, водночас готуючись до повільнішого Scarperia."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t10",
+          "numbers": [
+            10
+          ],
+          "name": "Scarperia",
+          "aliases": [],
+          "explanation": {
+            "en": "Named after the Tuscan town, Scarperia slows the rhythm after the Arrabbiata pair. Braking and positioning here determine the entry into Palagio, so attacking a single apex in isolation can cost time.",
+            "uk": "Scarperia отримала назву від тосканського міста й уповільнює ритм після двох Arrabbiata. Гальмування та розташування боліда визначають вхід у Palagio, тому ізольована атака апексу може коштувати часу."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t11",
+          "numbers": [
+            11
+          ],
+          "name": "Palagio",
+          "aliases": [],
+          "explanation": {
+            "en": "Palagio is the linked change of direction after Scarperia. It rewards a car that rotates cleanly and keeps enough road for the acceleration towards the next substantial braking zone at Correntaio.",
+            "uk": "Palagio — пов'язана перекладка після Scarperia. Тут виграє болід, який чисто повертає та залишає достатньо простору для розгону до наступної серйозної зони гальмування перед Correntaio."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Correntaio",
+          "aliases": [],
+          "explanation": {
+            "en": "Correntaio is a slower, tightening bend that breaks up Mugello's flowing middle sector. Drivers need patience before applying power, because a rushed exit leaves the car awkwardly placed for Biondetti.",
+            "uk": "Correntaio — повільніший тісний віраж, який перериває плавний ритм середнього сектору Муджелло. Пілотам потрібне терпіння з газом: поспішний вихід ускладнює підхід до Biondetti."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Biondetti 1",
+          "aliases": [],
+          "explanation": {
+            "en": "The first part of the Biondetti chicane asks for an immediate change of direction. Its name commemorates Italian racer Clemente Biondetti; the important driving task is setting up the second half, not winning the first kerb.",
+            "uk": "Перша частина шикани Biondetti вимагає миттєвої зміни напрямку. Назва вшановує італійського гонщика Клементе Біондетті; головне завдання — підготувати другу частину, а не просто швидше пройти перший поребрик."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Biondetti 2",
+          "aliases": [],
+          "explanation": {
+            "en": "The second Biondetti bend completes the quick chicane and sends the car towards Bucine. A tidy exit is vital: a slide here can force the driver to enter the long final corner off line.",
+            "uk": "Друга дуга Biondetti завершує швидку шикану й веде до Bucine. Чистий вихід вирішальний: ковзання тут змусить пілота входити в довгий фінальний віраж не за оптимальною траєкторією."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "mugello-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Bucine",
+          "aliases": [],
+          "explanation": {
+            "en": "Bucine is the long final right-hander that releases cars onto Mugello's kilometre-long main straight. Its exit is a lap-defining traction test: losing a little speed here is costly for the entire following acceleration.",
+            "uk": "Bucine — довга фінальна права дуга перед кілометровою стартовою прямою Муджелло. Вихід визначає розгін: навіть невелика втрата швидкості тут дорого коштуватиме протягом усієї наступної прямої."
+          },
+          "sources": [
+            "mugello-map",
+            "mugello-names",
+            "mugello-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "portimao",
+      "layout_id": "portimao-1",
+      "numbering_year": 2020,
+      "names_as_of": 2026,
+      "numbered_turns": 15,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "portimao-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 follows nearly a kilometre of straight-line acceleration and a downhill braking approach. The right-hand corner rises on exit; during the 2020 Grand Prix weekend its track limits became a major talking point.",
+            "uk": "Перший поворот іде після майже кілометрового розгону та гальмування на спуску. Правий віраж піднімається на виході; під час Гран-прі 2020 року його межі стали важливою темою для пілотів."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is a fast right-hand sweep across the undulating ground. The car must stay settled because the following Turn 3 is slower, making the transition from speed to braking unusually abrupt.",
+            "uk": "Другий — швидка права дуга на хвилястому рельєфі. Болід має залишатися стабільним, адже третій поворот повільніший і перехід від швидкості до гальмування виходить різким."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 tightens the first group into a slower right-hand corner. The driver must rotate the car without running wide, then prepare for the first left-hand bend at Turn 4.",
+            "uk": "Третій звужує початкову зв'язку до повільнішого правого віражу. Пілоту потрібно розвернути болід без широкого виходу, а потім підготувати перший лівий поворот — четвертий."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 climbs left towards a new crest and controls speed onto the next short straight. In 2020 the FIA changed the way track limits were enforced here after many practice laps were deleted.",
+            "uk": "Четвертий піднімається ліворуч до нового гребеня й визначає швидкість на короткій прямій. У 2020 році FIA змінила правила контролю меж траси тут після численних анульованих кіл на тренуваннях."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is the downhill hairpin at the end of that short straight. Heavy braking and a clean, patient exit are essential before the road climbs again; a desperate late move can ruin traction.",
+            "uk": "П'ятий — шпилька на спуску наприкінці короткої прямої. Потрібні сильне гальмування й терплячий чистий вихід перед наступним підйомом; надто пізня атака може зіпсувати зчеплення."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 bends left while climbing away from the hairpin. It is a transition rather than a separate stop-start braking event, and the car's position here sets up the following right-hand pair.",
+            "uk": "Шостий повертає ліворуч на підйомі після шпильки. Це перехід, а не окрема зона різкого гальмування; положення боліда визначає підхід до наступної пари правих віражів."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is the first of two right-hand bends after the uphill left. Drivers must avoid overcommitting to the initial apex because the tighter and more prominent Turn 8 follows immediately.",
+            "uk": "Сьомий — перший із двох правих віражів після лівого підйому. Не варто надто сміливо атакувати початковий апекс, адже одразу після нього йде виразніший восьмий поворот."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 crests before the circuit falls away again. Lewis Hamilton described the unusual sensation of looking at the sky on exit and not seeing what lies beyond the hill; it is a test of confidence and line memory.",
+            "uk": "Восьмий виходить на гребінь перед новим спуском. Льюїс Гамільтон описував незвичне відчуття, коли на виході бачиш небо й не знаєш, що за пагорбом; тут потрібні впевненість і пам'ять траєкторії."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 continues the descent through a flowing bend. The driver needs to manage the car's changing load rather than treat the corner as a flat section on a circuit diagram.",
+            "uk": "Дев'ятий продовжує спуск плавною дугою. Пілот має контролювати зміну навантаження, а не сприймати віраж як пласку лінію на схемі автодрому."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 starts the blind double-right combination after another climb. The initial steering choice is crucial because Turn 11 arrives before the driver can fully reset the car.",
+            "uk": "Десятий відкриває сліпу подвійну праву зв'язку після нового підйому. Перша траєкторія вирішальна, бо одинадцятий настає раніше, ніж болід встигне повністю стабілізуватися."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 completes the double-right over the crest. Hamilton singled out the difficulty of judging where the corner appears; the following descent punishes a driver who exits too far off line.",
+            "uk": "Одинадцятий завершує подвійну праву зв'язку за гребенем. Гамільтон окремо згадував складність визначення його положення; наступний спуск карає за надто широкий вихід."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is a fast bend taken with little interruption to the car's momentum. The FIA WEC circuit guide describes it as flat out; the driver's main job is to keep the car stable for the slower turns ahead.",
+            "uk": "Дванадцятий — швидка дуга майже без втрати темпу. Довідник FIA WEC описує його як поворот, що проходять на повному газі; головне втримати стабільність перед повільнішими віражами далі."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 begins the slower final technical group. Braking, direction change and traction must be balanced so that the car reaches Turn 14 without a costly correction.",
+            "uk": "Тринадцятий відкриває повільнішу фінальну технічну групу. Гальмування, перекладку та тягу потрібно узгодити, щоб дістатися чотирнадцятого без зайвих корекцій."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 completes the slower pair and leads towards the long final sweep. A damaged drain cover here delayed 2020 qualifying, a reminder that the circuit's dramatic terrain is only part of its story.",
+            "uk": "Чотирнадцятий завершує повільнішу пару й веде до довгої фінальної дуги. Пошкоджена кришка дренажу тут затримала кваліфікацію 2020 року — нагадування, що історія траси не обмежується її рельєфом."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "portimao-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Galp",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15, commonly called Galp, is a long accelerating right-hander onto the pit straight. The 2020 track-limits ruling made its exit particularly sensitive: a wide line could invalidate both the current and the following lap.",
+            "uk": "П'ятнадцятий, відомий як Galp, — довга права дуга з розгоном на стартову пряму. Рішення щодо меж траси у 2020 році зробило вихід особливо важливим: широкий проїзд міг анулювати поточне й наступне коло."
+          },
+          "sources": [
+            "portimao-map",
+            "portimao-names",
+            "portimao-race"
           ],
           "confirmation_status": "source_checked_ai"
         }
