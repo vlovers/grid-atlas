@@ -343,3 +343,23 @@ test('private historical preview presents source disagreements and map rights to
     assert.match(html, /count discrepancy/);
   }
 });
+
+test('all 68 historical route sections separate race classifications from geographic evidence', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ids = new Set(['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']);
+  const sections = data.circuits.filter(c => ids.has(c.circuit_id)).flatMap(c => c.sections);
+  assert.equal(sections.length, 68);
+  for (const section of sections) {
+    assert.equal(section.provenance_scope.geometric_anchor_verified, false);
+    assert.equal(section.provenance_scope.numbered_apex_verified, false);
+    assert.deepEqual(section.provenance_scope.source_roles.map(role => role.url), section.source_urls);
+    for (const source of section.provenance_scope.source_roles) {
+      if (/formula1\\.com\\/en\\/results\\//.test(source.url)) {
+        assert.equal(source.role, 'race_classification_only');
+      }
+    }
+  }
+  assert.match(renderCircuitReview('en','/review/test'), /Race classification — not a map/);
+  assert.match(renderCircuitReview('uk','/review/test'), /Класифікація гонки — не карта/);
+});
