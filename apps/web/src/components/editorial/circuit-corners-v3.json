@@ -202,7 +202,11 @@
     "nivelles-period-count": "https://lapledger.org/circuits/nivelles",
     "bremgarten-period-analysis": "https://www.auto-motor-und-sport.de/formel-1/bremgarten-rennstrecke-zahlen-fakten-aktuelle-bilder/",
     "bremgarten-period-reconstruction": "https://www.watson.ch/sport/unvergessen/222120372-formel-1-gp-im-bremgartenwald-als-die-koenigsklasse-in-der-schwez-war",
-    "bremgarten-1954-result": "https://lapledger.org/races/1954/7"
+    "bremgarten-1954-result": "https://lapledger.org/races/1954/7",
+    "monsanto-1959-report": "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+    "monsanto-1959-layout": "https://www.motorsportmagazine.com/database/circuits/monsanto/",
+    "pedralbes-f1-history": "https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF",
+    "pedralbes-period-layout": "https://www.motorsportmagazine.com/database/circuits/pedralbes/"
   },
   "guides": [
     {
@@ -18108,6 +18112,313 @@
             "bremgarten-period-analysis",
             "bremgarten-period-reconstruction",
             "bremgarten-1954-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "monsanto",
+      "layout_id": "monsanto-1",
+      "numbering_year": 1959,
+      "names_as_of": 1959,
+      "numbered_turns": 9,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "Nine ordered research descriptions use the period Motor Sport route report. F1DB counts nine turns, but the report describes combined bends and a crossing; study slots 1–9 are NOT independently authenticated one-to-one numbered apex positions.",
+      "sections": [
+        {
+          "id": "monsanto-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Brow beyond the start"
+          ],
+          "explanation": {
+            "en": "Гребінь після старту",
+            "uk": "The start ran slightly uphill but immediately crossed a brow into a steep descent. The road fell away before the first strong turn, leaving drivers to judge the braking point while the car was changing vertical load."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Off-camber left and cobbled crossing"
+          ],
+          "explanation": {
+            "en": "Лівий зі зворотним ухилом і бруківкою",
+            "uk": "At the foot of the descent a left-hand bend with adverse camber crossed a main road surfaced with cobbles. This was not a normal smooth racing kerb: grip and car balance changed just where the cornering load was highest."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Long right hairpin onto dual carriageway"
+          ],
+          "explanation": {
+            "en": "Довга права шпилька до широкої дороги",
+            "uk": "A long right-hand hairpin joined one side of the concrete dual-carriageway towards Lisbon. The exit mattered more than an aggressive entry because almost a kilometre of uphill acceleration followed before the course left that main road."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Exit road and tightening right"
+          ],
+          "explanation": {
+            "en": "З'їзд із дороги й права дуга, що звужується",
+            "uk": "After the uphill straight the circuit turned right onto an exit road, passed through a cutting and then entered a sweeping right-hander. The radius tightened as the bend developed, so drivers could not rely on the speed suggested by its first, open part."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Sharp right at the end of the sweep"
+          ],
+          "explanation": {
+            "en": "Різкий правий наприкінці дуги",
+            "uk": "The sweeping right finished in a much sharper right-hand change, nearly a hairpin. A driver arriving too quickly from the long curve risked running out of road exactly when the track demanded the largest reduction in speed."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Woodland descent and rapid right"
+          ],
+          "explanation": {
+            "en": "Лісовий спуск і швидкий правий",
+            "uk": "A short straight through the trees began to fall, leading to a fast right-hand bend. The road enclosed the view and offered few run-off opportunities, bringing the character of everyday park roads back into the Grand Prix lap."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Climbing left and fast right"
+          ],
+          "explanation": {
+            "en": "Лівий на підйомі та швидкий правий",
+            "uk": "The road climbed sharply through a left and then levelled into a fast right-hand curve. This sequence rewarded a settled chassis after the preceding descent; abrupt steering inputs could make the car unstable over the changes in gradient."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Slow left at the crossroads"
+          ],
+          "explanation": {
+            "en": "Повільний лівий на перехресті",
+            "uk": "The flowing section ended in a slower left turn at a crossroads. Drivers went from sustained speed to a compact city-road corner; the corner was followed by only a brief level run before a more dramatic downhill section."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "monsanto-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "Dropping left and double-right finish"
+          ],
+          "explanation": {
+            "en": "Лівий на різкому спуску й подвійний правий фініш",
+            "uk": "The final sequence plunged downhill into a fast left that fell away from the driver, followed by a climbing double right onto the start-finish line. The combination made the end of the lap physically demanding rather than a simple straight return."
+          },
+          "sources": [
+            "monsanto-1959-report",
+            "monsanto-1959-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "pedralbes",
+      "layout_id": "pedralbes-1",
+      "numbering_year": 1954,
+      "names_as_of": 1954,
+      "numbered_turns": 6,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "Six-turn F1DB 1951–54 convention. Formula1.com identifies Turn 1 around Parc de Cervantes; slots 2–6 are NOT authenticated historical numbered apex positions and need a dated turn map.",
+      "sections": [
+        {
+          "id": "pedralbes-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Cervantes park hairpin"
+          ],
+          "explanation": {
+            "en": "Шпилька біля парку Сервантеса",
+            "uk": "Turn 1 wrapped around the area of the Parc de Cervantes, on the broad city-road circuit used for the 1951 and 1954 Spanish Grands Prix. Formula 1's own history identifies this as the opening hairpin; it was not the first bend of the modern Catalunya circuit."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
+          ],
+          "confirmation_status": "period_turn_location_source_checked"
+        },
+        {
+          "id": "pedralbes-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Exit onto the western avenues"
+          ],
+          "explanation": {
+            "en": "Вихід на західні проспекти",
+            "uk": "Beyond the hairpin, the circuit ran along broad Barcelona avenues with much more room than most contemporary street tracks. The relationship between the bend and the long straight made exit speed important, but a certified numbered 1954 corner chart is not available here."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "pedralbes-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Diagonal approach"
+          ],
+          "explanation": {
+            "en": "Підхід до Avenida Diagonal",
+            "uk": "The fast street layout used part of the unusually long Avenida Diagonal. The sequence between its major straights must be read against the 1951 or 1954 route rather than copied from the shorter four-corner circuit of the late 1940s."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "pedralbes-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Palace-side sweeping roads"
+          ],
+          "explanation": {
+            "en": "Широкі віражі біля палацу",
+            "uk": "The circuit passed the former royal palace of Pedralbes and used open, sweeping city-road corners. They permitted higher cornering speeds than a narrow inner-city course, making the unprotected urban edges part of the risk."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "pedralbes-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Long straight and braking zone"
+          ],
+          "explanation": {
+            "en": "Довга пряма й зона гальмування",
+            "uk": "A straight of roughly 1.2 miles gave the circuit an unusually fast character for a street Grand Prix. How drivers braked after this sustained acceleration mattered more than later generic turn labels. The source does not independently identify the fifth numbered apex."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "pedralbes-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Return to the finishing boulevard"
+          ],
+          "explanation": {
+            "en": "Повернення до фінішного проспекту",
+            "uk": "The final portion brought the cars back towards the long finishing boulevard. Pedralbes had six turns in the 1951 and 1954 Formula 1 configurations, but the last five entries here remain historical reading cues rather than individually certified numbered apex locations."
+          },
+          "sources": [
+            "pedralbes-f1-history",
+            "pedralbes-period-layout"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
