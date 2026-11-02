@@ -323,6 +323,15 @@ test('private historical review serves real EN and UK pages only behind the gene
   }
 });
 
+test('private evidence links are rendered only for HTTPS sources', async () => {
+  const { readFileSync } = await import('node:fs');
+  const renderer = readFileSync(new URL('../scripts/preview-circuit-v3.mjs', import.meta.url), 'utf8');
+  assert.match(renderer, /typeof item\.url === 'string' && item\.url\.startsWith\('https:\/\/'\)/);
+  const en = renderCircuitReview('en', '/review/test');
+  assert.match(en, /Map review, discrepancies and sources/);
+  assert.match(en, /Open source/);
+});
+
 test('private historical preview presents source disagreements and map rights to reviewers', () => {
   for (const locale of ['en', 'uk']) {
     const html = renderCircuitReview(locale, '/review/test');
