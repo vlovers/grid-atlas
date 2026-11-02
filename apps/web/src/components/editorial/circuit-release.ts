@@ -20,7 +20,7 @@ export function hasPublicationReadyCornerGuide(circuitId: string) {
   if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
   const numbers = guide.sections.flatMap(section => section.numbers);
   if (numbers.length !== guide.numbered_turns || new Set(numbers).size !== guide.numbered_turns) return false;
-  if (numbers.some((number, index) => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
+  if (numbers.some(number => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
   if (guide.sections.some(section =>
     !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status) ||
     !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
