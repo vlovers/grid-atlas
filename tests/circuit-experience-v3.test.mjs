@@ -234,3 +234,11 @@ test('private bilingual preview includes seven historical route studies but no i
   assert.match(en, /Historical source \(not turn-number evidence\)/);
   assert.match(en, /noindex,nofollow,noarchive/);
 });
+
+test('private preview never represents unverified historical study positions as FIA maps', () => {
+  const en = renderCircuitReview('en', '/review/test');
+  const uk = renderCircuitReview('uk', '/review/test');
+  assert.match(en, /Provisional study positions \(not an FIA map\)/);
+  assert.match(uk, /Попередні дослідницькі позиції \(не схема FIA\)/);
+  assert.match(en, /Historical routes — awaiting review/);
+});
