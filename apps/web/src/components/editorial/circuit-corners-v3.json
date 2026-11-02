@@ -22,7 +22,11 @@
     "hungaroring-map": "https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
     "hungaroring-names": "https://www.formula1.com/en/latest/article/hamilton-amongst-f1-stars-honoured-as-hungaroring-announces-corner-names-to-celebrate-40th-anniversary.7Mrnph7CvCryI89FwHjYD9",
     "zandvoort-map": "https://www.fia.com/system/files/decision-document/2025_dutch_grand_prix_-_event_notes_-_circuit_map_pit_lane_map_emergency_exit_map_quarantine_zone_and_red_zones_.pdf",
-    "zandvoort-names": "https://www.circuitzandvoort.nl/en/corners/"
+    "zandvoort-names": "https://www.circuitzandvoort.nl/en/corners/",
+    "baku-map": "https://www.fia.com/system/files/decision-document/2025_baku_event_-_circuit_map_-_baku_2025.pdf",
+    "baku-names": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-baku-city-circuit.320UGBNQu2ALdgAtax1gRn.320UGBNQu2ALdgAtax1gRn",
+    "melbourne-map": "https://www.fia.com/system/files/decision-document/2025_melbourne_event_-_circuit_map_-_melbourne_2025_0.pdf",
+    "melbourne-names": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa.19zPlhKhMbTaVNFIPKAAMa"
   },
   "guides": [
     {
@@ -2248,6 +2252,604 @@
           "sources": [
             "zandvoort-map",
             "zandvoort-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "baku",
+      "layout_id": "baku-1",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 20,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "baku-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The long main straight ends in a tight first corner, one of Baku's best overtaking chances. Slipstream can help a challenger arrive alongside, but cold tyres make front locking a real risk.",
+            "uk": "Довга стартова пряма завершується тісним першим поворотом — одним із найкращих місць для обгону в Баку. Сліпстрим допомагає наздогнати суперника, але холодні шини підвищують ризик блокування передніх коліс."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second slow street corner arrives before a useful acceleration zone. A driver who overcommits at Turn 1 may already be badly positioned here; a clean exit matters more than a dramatic kerb strike.",
+            "uk": "Другий повільний міський поворот відкриває ділянку розгону. Після надто агресивної атаки першого віражу болід може опинитися на невдалій траєкторії; чистий вихід важливіший за ефектний наїзд на поребрик."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Another major braking point follows the acceleration from Turn 2. The city barriers narrow the choices available to a passing driver, making precise judgement of braking distance essential.",
+            "uk": "Після розгону від другого повороту знову потрібно сильно гальмувати. Міські бар'єри обмежують вибір траєкторії під час атаки, тому точний розрахунок гальмівної дистанції особливо важливий."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 completes another angular section of the opening city grid. The temptation is to attack the entry, but the next sequence arrives quickly and a poor exit can erase any gain.",
+            "uk": "Четвертий поворот завершує ще одну різку зміну напрямку на міських вулицях. Хочеться агресивно атакувати вхід, проте наступна зв'язка починається швидко, і невдалий вихід легко знищить перевагу."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The approach to Turn 5 forces drivers to leave the earlier straight-line rhythm behind. This tighter street section rewards a compact line that keeps the car clear of the walls before Turn 6.",
+            "uk": "Підхід до п'ятого повороту змушує забути ритм довших прямих. У тіснішій міській секції виграє компактна траєкторія, яка залишає місце між болідом і стінами перед шостим віражем."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is the second part of the tight middle-sector change of direction. Drivers need to finish rotating the car before opening the throttle; clipping a wall here can compromise the climb towards the Old Town.",
+            "uk": "Шостий поворот завершує тісну перекладку середнього сектору. Потрібно закінчити розворот боліда до відкриття газу: контакт зі стіною може зіпсувати подальший підхід до Старого міста."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 prepares the narrow historic quarter. There is little margin to recover from a wide exit, because the famous castle passage starts immediately afterwards and the track becomes especially constrained.",
+            "uk": "Сьомий поворот готує вхід до історичного кварталу. Після широкого виходу майже немає простору для виправлення помилки: відразу починається знаменита вузька секція біля старовинних мурів."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The entry to the Castle section is the circuit's signature pinch point. At Turns 8–9 the usable road narrows to about 7.6 metres, so precision and patience matter far more than an overtaking attempt.",
+            "uk": "Вхід до Castle section — найтісніше місце кола. У поворотах 8–9 корисна ширина дороги звужується приблизно до 7,6 метра, тому точність і терпіння важливіші за спробу обгону."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 continues the steep, narrow passage beside the Old Town walls. The car is still committed from Turn 8, leaving almost no room for a correction; a brush with the barrier can end the lap.",
+            "uk": "Дев'ятий продовжує крутий вузький проїзд біля мурів Старого міста. Болід ще перебуває в траєкторії восьмого, тож місця для виправлення майже немає; навіть легкий контакт із бар'єром може завершити коло."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The Castle section begins to open out at Turn 10, but the road is still bordered by unforgiving walls. Drivers must smoothly transition from the cramped climb towards the next, faster urban section.",
+            "uk": "У десятому повороті Castle section починає розширюватися, але вздовж дороги досі стоять жорсткі бар'єри. Пілоти плавно переходять від тісного підйому до швидшої міської частини траси."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 follows the Old Town climb, where steering corrections can cost momentum. The important job is to settle the car after the castle walls rather than chase a risky isolated apex.",
+            "uk": "Одинадцятий іде після підйому Старим містом, де кожне зайве коригування керма забирає швидкість. Головне — стабілізувати болід після вузької секції, а не ризикувати заради окремого апексу."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "At Turn 12 the lap begins to flow more freely again. Drivers can recover speed, but the next city corners still require accurate positioning and a disciplined distance from the barriers.",
+            "uk": "У дванадцятому коло знову стає плавнішим. Можна набрати швидкість, однак наступні міські віражі все ще вимагають точного розташування боліда й уважного контролю відстані до бар'єрів."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 is part of the faster transition away from the historic quarter. Keeping the steering smooth matters because the car is building speed before another demanding braking sequence later in the sector.",
+            "uk": "Тринадцятий належить до швидшого переходу від історичного кварталу. Плавне кермування важливе, адже болід набирає швидкість перед складнішим гальмуванням далі в секторі."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 carries the car towards Baku's notoriously awkward fifteenth corner. Drivers need to place the car early: arriving off line makes the following unsighted braking zone much harder.",
+            "uk": "Чотирнадцятий веде до підступного п'ятнадцятого повороту Баку. Болід потрібно завчасно поставити на правильну траєкторію: невдале положення значно ускладнює наступне гальмування з обмеженою видимістю."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is an unsighted left-hander reached while the car is angled slightly right under braking. F1's circuit guide identifies it as one of the hardest corners; missing the apex can send a driver into the run-off or a wall.",
+            "uk": "П'ятнадцятий — сліпий лівий віраж, до якого гальмують, коли болід ще трохи спрямований праворуч. Офіційний путівник F1 називає його одним із найскладніших: помилка з апексом може закінчитися виїздом у зону безпеки або контактом зі стіною."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 16 is a decisive launch point for the long, fast run home. Drivers must avoid wheelspin on exit, because lost acceleration here persists through the following kinks and towards the main straight.",
+            "uk": "Лівий шістнадцятий — вирішальна точка розгону на довгу швидку дорогу до фінішу. Важливо уникнути пробуксовки: втрачена тут швидкість відчуватиметься через наступні перегини аж до стартової прямої."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is a fast kink rather than a conventional slow braking corner. The car is accelerating hard from Turn 16, so stable steering inputs and confidence between the barriers matter more than an aggressive kerb attack.",
+            "uk": "Сімнадцятий — швидкий перегин, а не звичайний повільний віраж із сильним гальмуванням. Болід активно розганяється після шістнадцятого, тому стабільне кермування між бар'єрами важливіше за агресивний наїзд на поребрик."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The eighteenth numbered bend continues Baku's rapid approach to the seafront straight. Drivers generally preserve momentum through this sequence, with the walls leaving little tolerance for sudden corrections.",
+            "uk": "Вісімнадцятий продовжує швидкий підхід до прибережної прямої Баку. Пілоти намагаються не втрачати темп у зв'язці, а близькі стіни майже не залишають простору для різких виправлень."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 is the last substantial directional change before the flat-out run. A tidy line here helps the car settle for the final kink and the enormous acceleration zone that follows.",
+            "uk": "Дев'ятнадцятий — остання помітна зміна напрямку перед швидкісним відрізком. Чиста траєкторія допомагає стабілізувати болід перед фінальним перегином і величезною зоною розгону."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "baku-t20",
+          "numbers": [
+            20
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 20 completes the lap's fast final bends and releases the cars onto Baku's extraordinary main straight. A small mistake can cost speed for more than two kilometres, making exit discipline crucial.",
+            "uk": "Двадцятий завершує швидкі фінальні віражі й випускає боліди на надзвичайно довгу стартову пряму Баку. Невелика помилка може коштувати швидкості протягом понад двох кілометрів, тому чистий вихід тут особливо важливий."
+          },
+          "sources": [
+            "baku-map",
+            "baku-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "melbourne",
+      "layout_id": "melbourne-2",
+      "numbering_year": 2025,
+      "names_as_of": 2026,
+      "numbered_turns": 14,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "melbourne-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The opening right-hand bend comes straight after the start-finish run. A good lap needs a controlled braking entry and an exit that keeps the car positioned for the immediate left-hand second turn.",
+            "uk": "Перший правий поворот починається після стартової прямої. Для швидкого кола потрібні контрольоване гальмування й вихід, який залишає болід у правильному положенні перед майже миттєвим лівим другим віражем."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The left-hand Turn 2 completes the opening change of direction. Drivers accelerate early but must not run wide, because the next long approach ends in one of Albert Park's biggest braking zones.",
+            "uk": "Лівий другий завершує початкову перекладку. Пілоти рано починають розгін, але не можуть дозволити широкий вихід: наступна довга ділянка закінчується однією з головних зон гальмування Альберт-Парку."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is a major overtaking and braking point. Martin Brundle's spectacular opening-lap crash in the first Melbourne Grand Prix in 1996 occurred here, a reminder that the narrow approach can punish crowded starts.",
+            "uk": "Третій — важлива зона гальмування й обгонів. Саме тут на першому колі дебютного Гран-прі Мельбурна 1996 року сталася видовищна аварія Мартіна Брандла: тісний підхід особливо небезпечний у щільному стартовому пелотоні."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fourth turn follows the heavy braking at Turn 3 and demands a rapid change of direction. The best line avoids wasting the car's balance before the flowing park-road section ahead.",
+            "uk": "Четвертий іде одразу після сильного гальмування третього й вимагає швидкої зміни напрямку. Найкраща траєкторія не розхитує болід перед плавнішою секцією паркових доріг попереду."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is a faster bend that rewards a responsive front axle. Melbourne's temporary road surface gains grip through the weekend, so confidence in this corner can change between Friday practice and the race.",
+            "uk": "П'ятий — швидший віраж, де потрібна чутлива передня вісь. Тимчасове покриття Мельбурна набирає зчеплення протягом вікенду, тому впевненість у цьому повороті може змінюватися від п'ятничних тренувань до гонки."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The braking zone at Turn 6 interrupts the faster run and begins another linked sequence. Drivers need to place the car carefully on the park road, leaving enough room for the next directional change.",
+            "uk": "Гальмування перед шостим перериває швидкий відрізок і починає нову зв'язку. На парковій дорозі потрібно точно розташувати болід, залишивши достатньо місця для наступної зміни напрямку."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 follows immediately after the slower sixth corner. The exit is the important part: the driver wants the steering straightened and the car stable before the long acceleration that now defines this sector.",
+            "uk": "Сьомий іде майже відразу після повільнішого шостого. Найважливіший вихід: пілот прагне випрямити кермо й стабілізувати болід перед довгим розгоном, який тепер визначає цей сектор."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fast Turn 8 leads onto the high-speed section created when the old Turns 9–10 chicane was removed for 2022. Historical onboard laps before that redesign cannot be compared turn-for-turn with today's numbering.",
+            "uk": "Швидкий восьмий веде до секції, яка стала значно швидшою після видалення старої шикани 9–10 у 2022 році. Історичні онборди до перебудови не можна порівнювати поворот за поворотом із сучасною нумерацією."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 on the post-2022 map is part of the much faster approach to the sweeping high-speed sequence. It is not the old slow ninth corner, which disappeared with the 2022 layout change.",
+            "uk": "Дев'ятий на схемі після 2022 року належить до значно швидшого підходу до швидкісної зв'язки. Це не старий повільний дев'ятий поворот: його прибрали під час перебудови 2022 року."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 completes a fast change of direction that tests aero stability and tyre confidence. The driver's line through the previous corner determines whether the car stays composed at this speed.",
+            "uk": "Десятий завершує швидку перекладку, яка перевіряє аеродинамічну стабільність і зчеплення шин. Траєкторія попереднього повороту визначає, чи залишиться болід спокійним на такій швидкості."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The next braking area arrives at Turn 11 after the high-speed sweep. Drivers must shift rapidly from aerodynamic grip to mechanical grip while preparing for the tight final part of the lap.",
+            "uk": "Наступна зона гальмування починається перед одинадцятим після швидкісної дуги. Пілотам потрібно швидко перейти від аеродинамічного зчеплення до механічного й підготувати тісну фінальну частину кола."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 continues the technical end of the lap, with a quick change of direction after Turn 11. A rushed entry can push the car off line before the last pair of corners.",
+            "uk": "Дванадцятий продовжує технічне завершення кола швидкою зміною напрямку після одинадцятого. Поспішний вхід може вивести болід із траєкторії перед останньою парою поворотів."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The penultimate Turn 13 requires a measured braking and rotation phase. Drivers who chase entry speed too aggressively risk a poor exit and lose the chance to accelerate smoothly out of the final bend.",
+            "uk": "Передостанній тринадцятий вимагає виваженого гальмування й розвороту. Надто агресивна атака на вході псує вихід і позбавляє можливості плавно розігнатися після фінального віражу."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "melbourne-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final Turn 14 sets the speed onto Albert Park's start-finish straight. On a surface that can be slippery early in the weekend, getting the power down cleanly is more valuable than a dramatic late apex.",
+            "uk": "Останній чотирнадцятий визначає швидкість на стартовій прямій Альберт-Парку. На покритті, яке на початку вікенду буває слизьким, чистий розгін корисніший за ефектний надто пізній апекс."
+          },
+          "sources": [
+            "melbourne-map",
+            "melbourne-names"
           ],
           "confirmation_status": "source_checked_ai"
         }
