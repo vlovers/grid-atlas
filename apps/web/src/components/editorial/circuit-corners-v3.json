@@ -136,7 +136,15 @@
     "jarama-race": "https://www.formula1.com/en/results/1981/races/428/spain/race-result",
     "adelaide-map": "https://commons.wikimedia.org/wiki/File:Adelaide_(long_route).svg",
     "adelaide-history": "https://en.wikipedia.org/wiki/Adelaide_Street_Circuit",
-    "adelaide-race": "https://www.formula1.com/en/results/1995/races/637/australia/race-result"
+    "adelaide-race": "https://www.formula1.com/en/results/1995/races/637/australia/race-result",
+    "aintree-period-history": "https://www.aintree.org.uk/history/",
+    "aintree-period-map": "https://lapledger.org/circuits/aintree",
+    "aintree-corner-names": "https://yorkshireferret.blogspot.com/2016/02/",
+    "aintree-1962-result": "https://www.formula1.com/en/results/1962/races/200/great-britain/race-result",
+    "kyalami-period-map": "https://racedatahub.com/en/f1/circuits/kyalami",
+    "kyalami-period-history": "https://en.wikipedia.org/wiki/Kyalami",
+    "kyalami-venue-names": "https://www.kyalamigrandprixcircuit.com/about-kyalami/",
+    "kyalami-1985-result": "https://www.formula1.com/en/results/1985/races"
   },
   "guides": [
     {
@@ -13536,6 +13544,385 @@
             "adelaide-map",
             "adelaide-history",
             "adelaide-race"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "aintree",
+      "layout_id": "aintree-1",
+      "numbering_year": 1962,
+      "names_as_of": 1962,
+      "numbered_turns": 8,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB eight-turn 1955–1962 Grand Prix layout; period bend names are documented but matching each named bend to the numbered F1DB turn is not independently certified. Names retained as provisional aliases only.",
+      "sections": [
+        {
+          "id": "aintree-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Waterway"
+          ],
+          "explanation": {
+            "en": "The opening sweep led cars away from the horse-racing grandstands and towards the canal side of Aintree. Waterway's name belongs to that landscape; the exact correspondence to F1DB turn number 1 is provisional.",
+            "uk": "Початкова дуга відводила машини від трибун іподрому в бік каналу. Назва Waterway походить від цієї місцевості; відповідність першому номеру повороту у F1DB поки попередня."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Anchor Crossing"
+          ],
+          "explanation": {
+            "en": "After the canal-side approach, the route crossed the racecourse near Anchor Crossing. It was not a modern closed permanent facility: ordinary crossings and the horse-racing grounds shaped the racing line, and the historical turn-number match needs checking.",
+            "uk": "Після ділянки біля каналу траса перетинала іподром поблизу Anchor Crossing. Це не був сучасний повністю ізольований автодром: переходи й територія кінних перегонів визначали маршрут, а відповідність номера ще потрібно перевірити."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Cottage"
+          ],
+          "explanation": {
+            "en": "Cottage was a left-hand bend on the far side of the Grand National course. The approach from the crossing rewarded accurate placement before the closely spaced Country and Village corners; this turn assignment remains a period-map hypothesis.",
+            "uk": "Cottage був лівим віражем на дальньому боці іподрому Grand National. Після перетину траси важливо було точно поставити болід перед близькими Country та Village; прив'язка цього повороту до номера лишається гіпотезою."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Country"
+          ],
+          "explanation": {
+            "en": "The Country bend was another left in Aintree's compact infield sequence. On a flat circuit with few elevation cues, drivers had to recognise their braking marks by the scenery and preserve the line for Village; the numbered apex is unverified.",
+            "uk": "Country був ще одним лівим віражем у щільній внутрішній секції Ейнтрі. На пласкій трасі з небагатьма перепадами висоти орієнтирами слугували деталі місцевості, а вихід готував Village; номер апексу не підтверджений."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Village"
+          ],
+          "explanation": {
+            "en": "Village turned the cars back towards the longer run to Becher's. Its name referred to the neighbouring settlement rather than a sponsor. A clean exit mattered because the next part of the lap allowed much more acceleration.",
+            "uk": "Village повертав машини в напрямку довшого розгону до Becher's. Назва походила від сусіднього поселення, а не спонсора. Чистий вихід був важливим, бо далі боліди могли значно сильніше прискоритися."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Becher's"
+          ],
+          "explanation": {
+            "en": "Becher's took its name from the famous Grand National fence nearby. The bend opened the run onto Railway Straight, so the driver balanced a late apex against the need to unwind the steering early; the historical numbering remains provisional.",
+            "uk": "Becher's отримав назву від знаменитої перешкоди кінних перегонів Grand National неподалік. Поворот відкривав вихід на Railway Straight: пілот шукав баланс між пізнім апексом і раннім випрямленням керма; нумерація попередня."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Melling Crossing"
+          ],
+          "explanation": {
+            "en": "At the far end of Railway Straight the course crossed Melling Road and changed direction. Braking after the long fast section was a very different task from the slower infield bends; the source does not certify this as official turn 7.",
+            "uk": "Наприкінці Railway Straight маршрут перетинав Melling Road і змінював напрямок. Гальмування після довгого швидкісного відрізка сильно відрізнялося від повільних віражів усередині іподрому; джерело не засвідчує офіційний номер 7."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "aintree-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Tatts"
+          ],
+          "explanation": {
+            "en": "Tatts brought the cars back to the grandstand straight and took its name from the Tattersalls horse-racing enclosure. In 1962 Jim Clark led every lap of the last World Championship Grand Prix held here; the turn-number association still needs a period diagram.",
+            "uk": "Tatts повертав боліди на пряму перед трибунами; назва пов'язана з сектором іподрому Tattersalls. У 1962 році Джим Кларк лідирував у всіх колах останнього чемпіонатного Гран-прі тут; номер потребує історичної схеми."
+          },
+          "sources": [
+            "aintree-period-map",
+            "aintree-period-history",
+            "aintree-corner-names",
+            "aintree-1962-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        }
+      ]
+    },
+    {
+      "circuit_id": "kyalami",
+      "layout_id": "kyalami-1",
+      "numbering_year": 1985,
+      "names_as_of": 1985,
+      "numbered_turns": 9,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB original nine-turn 1967–1985 layout, not the 1992–93 thirteen-turn rebuild or modern sixteen-turn venue; named original features are documented but period FIA turn-number chart has not been located.",
+      "sections": [
+        {
+          "id": "kyalami-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [
+            "Crowthorne"
+          ],
+          "explanation": {
+            "en": "Crowthorne was the heavy-braking first corner at the bottom of the original circuit's long downhill pit straight. The rebuilt 1992–93 venue removed this section; its name must not be transferred to that later configuration.",
+            "uk": "Crowthorne був першим поворотом із сильним гальмуванням унизу довгої стартової прямої старої траси. Під час перебудови до 1992–1993 років цю ділянку прибрали; назву не можна переносити на нову конфігурацію."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [
+            "Barbeque"
+          ],
+          "explanation": {
+            "en": "Barbeque followed Crowthorne on the old fast clockwise lap. It was part of the downhill-to-infield transition, where an early steering correction could unsettle the car before Jukskei; this is the historical bend, not the later venue's modern turn numbering.",
+            "uk": "Barbeque йшов після Crowthorne на старому швидкому колі за годинниковою стрілкою. Це був перехід від спуску до внутрішньої секції, де зайве коригування керма могло завадити перед Jukskei; це історичний віраж, а не сучасний номер."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [
+            "Jukskei"
+          ],
+          "explanation": {
+            "en": "Jukskei Sweep was a flowing part of the original Kyalami course, named after the local Jukskei area and watercourse. Its long arc favoured momentum over a single sharp braking point; the 1989 rebuilding significantly altered this part of the route.",
+            "uk": "Jukskei Sweep був плавною ділянкою старої траси К'яламі, названою за місцевістю та водотоком Jukskei. Довга дуга винагороджувала збереження швидкості, а не різке гальмування; перебудова 1989 року суттєво змінила цю частину маршруту."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [
+            "Sunset"
+          ],
+          "explanation": {
+            "en": "Sunset Bend carried cars through a sustained high-speed arc on the old layout. Unlike Crowthorne and Barbeque, the name survived the later rebuild, but the modern geometry and numbered turns cannot be used as evidence for the 1985 apex.",
+            "uk": "Sunset Bend був затяжною швидкою дугою старої конфігурації. На відміну від Crowthorne й Barbeque, назва збереглася після перебудови, але сучасна геометрія та нумерація не доводять положення апексу 1985 року."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [
+            "Clubhouse"
+          ],
+          "explanation": {
+            "en": "Clubhouse Bend took its name from the nearby circuit buildings and was one of the original track's enduring landmarks. Drivers needed to keep the car balanced before the faster direction changes at the Esses; later versions retain a bend with this name.",
+            "uk": "Clubhouse Bend назвали на честь сусідніх будівель автодрому; це один із давніх орієнтирів К'яламі. Пілотам потрібно було втримати баланс перед швидкими перекладками Esses; у пізніших версіях поворот із такою назвою зберігся."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [
+            "Esses entry"
+          ],
+          "explanation": {
+            "en": "The first part of the old Esses changed direction quickly and punished abrupt weight transfer. Treating this as one isolated apex would spoil the next bend, so the driver's attention was on the whole two-part sequence rather than one curb.",
+            "uk": "Перша частина старої зв'язки Esses вимагала швидкої зміни напрямку й не пробачала різкого перенесення ваги. Якщо проходити її як окремий апекс, наступний віраж ставав незручним, тому пілоти працювали з усією зв'язкою."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [
+            "Esses exit"
+          ],
+          "explanation": {
+            "en": "The second part of the Esses reversed the steering while the tyres were still loaded from the first bend. A tidy exit was vital because the lap then climbed towards Leeukop; these historical two turns must not inherit modern numbering.",
+            "uk": "Друга частина Esses змінювала напрямок, коли шини ще були навантажені після першого віражу. Чистий вихід був потрібний перед підйомом до Leeukop; ці два історичні повороти не можна нумерувати за сучасною картою."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [
+            "Leeukop"
+          ],
+          "explanation": {
+            "en": "Leeukop was the tight right-hand hairpin that launched cars towards the long main straight. The name refers to the nearby Lion's Head hill; this corner was removed when the circuit was reconstructed, so its place belongs only to the old lap.",
+            "uk": "Leeukop був тісною правою шпилькою, що виводила машини до довгої головної прямої. Назва відсилає до сусіднього пагорба «Левова голова»; під час перебудови поворот прибрали, тож він належить лише старому колу."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
+          ],
+          "confirmation_status": "historical_numbering_unverified"
+        },
+        {
+          "id": "kyalami-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [
+            "The Kink"
+          ],
+          "explanation": {
+            "en": "The Kink was the slight change of direction along Kyalami's celebrated long straight. Though barely a braking corner, it counted among the original layout's nine bends; drivers were already preparing for the downhill run to Crowthorne.",
+            "uk": "The Kink був легким перегином на знаменитій довгій прямій К'яламі. Хоча він майже не вимагав гальмування, його рахували серед дев'яти поворотів старої конфігурації; попереду вже починався спуск до Crowthorne."
+          },
+          "sources": [
+            "kyalami-period-map",
+            "kyalami-period-history",
+            "kyalami-venue-names",
+            "kyalami-1985-result"
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
