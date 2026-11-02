@@ -268,10 +268,17 @@
             "url": "https://www.lapledger.org/circuits/ain-diab",
             "claim": "Same archive page lists top-level Ain-Diab 15 turns and F1DB layout ain-diab-1 18 turns; preserve count disagreement",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "independent_historical_corner_count",
+            "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+            "claim": "Motor Sport's October 2026 historical reconstruction explicitly counts 18 corners on the 4.7-mile 1957–1958 coast-road/Azemmour-road course through Sidi Abderrahman forest, independently supporting the F1DB layout's 18-count (not its numbered turn positions).",
+            "supports_apex_numbering": false
           }
         ],
         "summary_turn_count": 15,
-        "count_discrepancy": "F1DB layout ain-diab-1 lists 18 turns; Lap Ledger top-level circuit summary lists 15. Neither count supplies authenticated numbered apex locations."
+        "count_discrepancy": "F1DB layout ain-diab-1 lists 18 turns; Lap Ledger top-level circuit summary lists 15. Neither count supplies authenticated numbered apex locations.",
+        "count_reconciliation": "Two sources support the layout's 18 bends: F1DB ain-diab-1 and the October 2026 Motor Sport historical study. The Lap Ledger aggregate summary still states 15. Count confidence improves, but an exact sequential apex crosswalk remains unavailable."
       }
     },
     {
@@ -1608,9 +1615,24 @@
             "url": "https://www.lapledger.org/circuits/porto",
             "claim": "F1DB porto-1 records 19 turns whereas summary displays 14; retain inconsistency instead of flattening counts",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_route_order",
+            "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+            "claim": "The contemporary 1958 circuit walk follows starting pits, a double-left tramline crossing, uphill Avenida da Boavista, sharp left to another cobbled tramline road, left into narrow streets, descending winding road and a final double-left by the seafront; this is route order, not an authenticated turn-number map.",
+            "supports_apex_numbering": false
           }
         ],
-        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
+        "route_order_confirmed": [
+          "Start/pits and tramline double-left",
+          "Uphill Avenida da Boavista",
+          "Sharp left to cobbled tramline road",
+          "Left into narrow built-up street",
+          "Winding descent to seafront",
+          "Final double-left tramline crossing and finish"
+        ],
+        "route_order_scope": "Contemporary 1958 route progression verified; position labels are narrative landmarks, not FIA corners and must not be assigned numbers 1–19 without a separate period keyed plan."
       }
     },
     {
