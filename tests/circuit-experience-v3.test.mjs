@@ -76,6 +76,14 @@ test('seven unapproved historic route studies remain research-only and unpublish
   const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
   assert.doesNotMatch(component, /historicRoutes/);
   assert.doesNotMatch(component, /const historicRoute = historicRoutes\.circuits\.find/);
+  const expanded = {dallas:13, detroit:10, pescara:7, porto:7, sebring:10};
+  assert.equal(Object.values(expanded).reduce((a,b)=>a+b,0), 47);
+  for (const [id, count] of Object.entries(expanded)) {
+    const record = research.circuits.find(c => c.circuit_id === id);
+    assert.equal(record.sections.length, count, id + ': all historical sections preserved');
+    assert.ok(record.original_research_document?.endsWith('.json'));
+    assert.deepEqual(record.sections.map(s => s.reading_order), Array.from({length:count}, (_,i)=>i+1));
+  }
   for (const id of pending) {
     const circuit = research.circuits.find(c => c.circuit_id === id);
     assert.ok(circuit, id + ': missing historical route');
