@@ -116,6 +116,14 @@ test('seven unapproved historic route studies remain research-only and unpublish
   assert.equal(ainDiab.layout_evidence_review.summary_turn_count, 15);
   assert.ok(ainDiab.layout_evidence_review.count_discrepancy.includes('15'));
   assert.ok(ainDiab.layout_evidence_review.count_discrepancy.includes('18'));
+  for (const id of ['detroit', 'pescara', 'sebring']) {
+    const review = research.circuits.find(c => c.circuit_id === id).layout_evidence_review;
+    assert.ok(review.evidence.some(entry => entry.type.includes('layout') || entry.type.includes('route') || entry.type.includes('chicane')));
+    assert.ok(review.evidence.every(entry => entry.supports_apex_numbering === false));
+  }
+  assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\\.590 mi/);
+  assert.match(research.circuits.find(c => c.circuit_id === 'pescara').layout_evidence_review.layout_version_caveat, /1957/);
+  assert.match(research.circuits.find(c => c.circuit_id === 'sebring').layout_evidence_review.layout_version_caveat, /1959/);
   const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.claim.includes('51')));
   assert.ok(charade.layout_evidence_review.evidence.some(item => item.type === 'venue_history' && item.claim.includes('51 bends')));
