@@ -12,7 +12,8 @@ export function CircuitCornerGuide({ circuitId, locale, availableLayouts = [] }:
   const uk = locale === 'uk';
   if (!guide) {
     const existing = legacyNamedCircuitIds.includes(circuitId) ? legacyGuides.find(item => item.id === circuitId) : null;
-    const historicRoute = historicRoutes.circuits.find(item => item.circuit_id === circuitId);
+    // The route register is research-only. Never expose its unfinished claims on public pages.
+    const historicRoute = null as (typeof historicRoutes.circuits)[number] | null;
     return <div className={styles.section} data-testid="circuit-corner-guide"><h2>{uk ? 'Дослідіть повороти' : 'Explore the corners'}</h2>{existing ? <div className={styles.grid}>{existing.sections.map(section => <article className={styles.card} key={section.label}><h3>{section.label}</h3><p>{section[locale]}</p><a href={section.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело' : 'Source'} ↗</a></article>)}</div> : historicRoute ? <>
       <p>{uk ? 'Історичні ділянки маршруту, а не пронумеровані повороти. Незалежної перевірки відповідності кожному апексу ще немає.' : 'Historical route sections, not numbered corners. Individual apex mapping has not been independently verified.'}</p>
       <p><small>{historicRoute.period} · {historicRoute.layout_id}</small></p>
