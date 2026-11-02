@@ -100,7 +100,11 @@
     "indianapolis-official-history": "https://www.indianapolismotorspeedway.com/history/formula-one",
     "indianapolis-layout": "https://lapledger.org/circuits/indianapolis",
     "indianapolis-2005-tyre": "https://www.autosport.com/f1/news/michelin-rule-out-tyre-malfunction-at-indy-5329070/5329070/",
-    "indianapolis-turn-details": "https://rnt-motorsports.com/circuits/indianapolis-motor-speedway/"
+    "indianapolis-turn-details": "https://rnt-motorsports.com/circuits/indianapolis-motor-speedway/",
+    "magny-cours-map": "https://www.trophee-endurance.fr/wp-content/uploads/2021/10/Circuit_PlanCircuit.pdf",
+    "magny-cours-names": "https://www.circuitmagnycours.com/en/guide-decouvrez-le-circuit-de-nevers-magny-cours/",
+    "magny-cours-history": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+    "magny-cours-race": "https://www.formula1.com/en/latest/article/france-2004-how-ferrari-stole-victory-from-renault-with-a-secret-4-stop-plan.7yXeHIzXx8e8JEyBC401ET.7yXeHIzXx8e8JEyBC401ET"
   },
   "guides": [
     {
@@ -10957,6 +10961,322 @@
             "indianapolis-layout",
             "indianapolis-2005-tyre",
             "indianapolis-turn-details"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "magny-cours",
+      "layout_id": "magny-cours-3",
+      "numbering_year": 2008,
+      "names_as_of": 2008,
+      "numbered_turns": 17,
+      "review_status": "independent_review_pending",
+      "sections": [
+        {
+          "id": "magny-cours-t1",
+          "numbers": [
+            1
+          ],
+          "name": "Grande Courbe",
+          "aliases": [],
+          "explanation": {
+            "en": "The lap starts with Grande Courbe, a fast opening left that asks the driver to commit before the car is fully settled from the straight. The name simply means the big curve. A wide exit makes the transition into the following left kink less tidy.",
+            "uk": "Коло починається швидкою лівою Grande Courbe, де пілот має впевнено повернути ще до повної стабілізації боліда після прямої. Назва буквально означає «велика дуга». Занадто широкий вихід ускладнює наступний плавний лівий перегин."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is the shallow left-hand transition between Grande Courbe and the long right at Estoril. It is not documented as a separate named landmark in the operator's guide. The useful task is to place the car so the tyres can cope with the sustained right-hand load ahead.",
+            "uk": "Другий поворот — плавний лівий перехід між Grande Courbe і затяжним правим Estoril. В офіційному путівнику він не має окремої підтвердженої назви. Пілот має правильно розташувати болід перед тривалим навантаженням у наступній правій дузі."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Estoril",
+          "aliases": [],
+          "explanation": {
+            "en": "Estoril is the long right-hand arc that defines the first sector and launches the run towards Adelaide. Its name recalls the Portuguese Grand Prix venue. A driver who turns in too aggressively must correct the line while accelerating, losing speed along the following fast stretch.",
+            "uk": "Estoril — затяжна права дуга першого сектору, що відкриває розгін у бік Adelaide. Назва нагадує про португальську трасу Гран-прі. Надто різкий вхід змушує виправляти траєкторію вже під газом і забирає швидкість на наступній швидкісній ділянці."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Golf",
+          "aliases": [],
+          "explanation": {
+            "en": "Golf is the fast bend on the run from Estoril to the Adelaide braking zone. The track operator uses this landmark name, but it is not a second hairpin. Cars are still building speed, so the important choice is a clean approach that leaves the braking platform stable for Turn 5.",
+            "uk": "Golf — швидкий перегин на відрізку між Estoril і гальмуванням перед Adelaide. Організатор використовує цю назву, але це не ще одна шпилька. Боліди продовжують розгін, тому головне — рівний підхід і стабільна машина перед п'ятим поворотом."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t5",
+          "numbers": [
+            5
+          ],
+          "name": "Adélaïde",
+          "aliases": [],
+          "explanation": {
+            "en": "The Adelaide hairpin ends the fast first-sector run with one of the circuit's strongest braking events. It borrows the name of Australia's former Grand Prix city circuit. A late dive can win a position, but the slow right-hand rotation must leave enough traction for the acceleration that follows.",
+            "uk": "Шпилька Adélaïde завершує швидку першу частину кола одним із найсильніших гальмувань. Назву взято від колишньої австралійської траси Гран-прі. Пізня атака може принести позицію, але повільний розворот праворуч має залишити зчеплення для наступного розгону."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 is the change of direction immediately after the Adelaide hairpin, before the Nürburgring sequence. The venue's numbered plan shows it separately but does not supply a unique historical name. Drivers should not treat the hairpin exit and this approach as two unrelated lines.",
+            "uk": "Шостий поворот змінює напрямок одразу після шпильки Adelaide, перед зв'язкою Nürburgring. На пронумерованій схемі це окремий віраж без підтвердженої власної назви. Вихід зі шпильки та підхід сюди потрібно проходити як одну пов'язану траєкторію."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Nürburgring",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 begins the Nürburgring chicane, whose name honours the German circuit. The first change of direction is quick enough to punish an unstable car; aiming only for this apex can leave the driver stranded for the second half at Turn 8.",
+            "uk": "Сьомий поворот починає шикану Nürburgring, названу на честь німецького автодрому. Перша швидка перекладка карає за нестабільність боліда: якщо думати лише про цей апекс, для другої частини у восьмому повороті залишиться незручна траєкторія."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Nürburgring",
+          "aliases": [],
+          "explanation": {
+            "en": "The second half of Nürburgring reverses the steering after Turn 7. This is one named chicane spread over two numbered bends, not a new corner with a different invented name. A controlled kerb crossing is more valuable than sliding wide before the braking for 180°.",
+            "uk": "Друга частина Nürburgring змінює напрямок після сьомого повороту. Це одна названа шикана з двома номерами, а не новий віраж із вигаданим ім'ям. Контрольований проїзд поребрика корисніший за ковзання перед гальмуванням до 180°."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t9",
+          "numbers": [
+            9
+          ],
+          "name": "180°",
+          "aliases": [],
+          "explanation": {
+            "en": "The slow left-hand 180° hairpin is named for the approximate change in direction it demands. It interrupts the faster Nürburgring–Imola rhythm and asks the driver to rotate the car patiently, then build traction rather than forcing the throttle at the apex.",
+            "uk": "Повільна ліва шпилька 180° названа за приблизним кутом розвороту траси. Вона перериває швидший ритм між Nürburgring та Imola. Пілоту потрібно терпляче розвернути машину й поступово набрати тягу, а не різко натиснути газ на апексі."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "After 180°, Turn 10 begins the bumpy linking portion towards Imola. The circuit operator identifies this numbered section without a separate established name. The driving problem is keeping the car balanced as speed rises and the road begins to bend again.",
+            "uk": "Після 180° десятий поворот відкриває нерівну перехідну ділянку в напрямку Imola. На схемі організатора цей номер не має окремої усталеної назви. Потрібно зберегти баланс боліда під час розгону й нової зміни напрямку."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 continues the approach to the Imola chicane, where the next two bends must be read as a connected high-speed event. No independent proper name is claimed for this numbered corner. A poor line here leaves the driver correcting the car just before the demanding chicane.",
+            "uk": "Одинадцятий продовжує підхід до шикани Imola, де наступні два віражі потрібно проходити як єдину швидкісну зв'язку. Для цього номера не заявлено окремої власної назви. Помилка тут змусить пілота виправляти машину перед складною шиканою."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t12",
+          "numbers": [
+            12
+          ],
+          "name": "Imola",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 is the opening part of the Imola chicane, named for the Italian circuit. It is taken much faster than Adelaide or 180°, so confidence in the car's lateral grip matters. The entry must already prepare the reverse change at Turn 13.",
+            "uk": "Дванадцятий поворот відкриває шикану Imola, названу на честь італійського автодрому. Її проходять значно швидше за Adelaide чи 180°, тому важлива впевненість у боковому зчепленні. Вхід має одразу підготувати зворотну перекладку в тринадцятому."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t13",
+          "numbers": [
+            13
+          ],
+          "name": "Imola",
+          "aliases": [],
+          "explanation": {
+            "en": "The second numbered bend of Imola completes the fast right-left combination. The shared name belongs to the complex rather than to two unrelated corners. Drivers need to finish the change of direction cleanly because the heavy braking for Château d'Eau follows almost immediately.",
+            "uk": "Друга частина Imola завершує швидку праву-ліву зв'язку. Спільна назва стосується комплексу, а не двох незалежних поворотів. Пілотам потрібно чисто завершити перекладку, адже майже відразу починається сильне гальмування перед Château d'Eau."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t14",
+          "numbers": [
+            14
+          ],
+          "name": "Château d’Eau",
+          "aliases": [],
+          "explanation": {
+            "en": "Château d'Eau, literally 'water tower', is the tighter right-hand corner after Imola. The circuit operator identifies it as Turn 14. Drivers must shed speed while the car has barely recovered from the chicane, then make the exit tidy enough to reach the final Lycée sequence.",
+            "uk": "Château d'Eau буквально означає «водонапірна вежа» — це тісніший правий поворот після Imola. Організатор позначає його номером 14. Болід потрібно сповільнити, щойно завершивши шикану, і акуратно вийти до фінальної секції Lycée."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t15",
+          "numbers": [
+            15
+          ],
+          "name": "Lycée",
+          "aliases": [],
+          "explanation": {
+            "en": "The Lycée hairpin is the final major braking and overtaking opportunity on the lap. The French word refers to a secondary school; the venue uses the name for this slow corner. An overambitious entry can ruin the short, technical run through the two-part chicane that follows.",
+            "uk": "Шпилька Lycée — остання серйозна зона гальмування та можливість обгону на колі. Французьке слово означає старшу школу; саме так організатор називає цей повільний віраж. Надто сміливий вхід зіпсує коротку технічну зв'язку з двох наступних поворотів."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t16",
+          "numbers": [
+            16
+          ],
+          "name": "Complexe du Lycée",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 starts the Complexe du Lycée chicane after the hairpin. The first steering change is slow enough that kerb use and traction become decisive. This is not the old pre-2003 ending: the Grand Prix layout was revised at Château d'Eau and Lycée in 2003.",
+            "uk": "Шістнадцятий поворот починає шикану Complexe du Lycée після шпильки. Перша перекладка достатньо повільна, тому важливі поребрики та тяга. Це вже не старий фінал кола: у 2003 році конфігурацію Гран-прі змінили біля Château d'Eau та Lycée."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "magny-cours-t17",
+          "numbers": [
+            17
+          ],
+          "name": "Complexe du Lycée",
+          "aliases": [],
+          "explanation": {
+            "en": "The final numbered bend completes the Lycée complex and launches the car onto the pit straight. It shares its name with Turn 16 because both form one chicane. A neat exit matters more than forcing the last kerb; the car carries the resulting speed into Grande Courbe.",
+            "uk": "Останній пронумерований віраж завершує комплекс Lycée й виводить болід на стартову пряму. Він має спільну назву із шістнадцятим, адже разом вони утворюють шикану. Чистий вихід важливіший за агресивну атаку останнього поребрика: здобута швидкість переноситься до Grande Courbe."
+          },
+          "sources": [
+            "magny-cours-map",
+            "magny-cours-names",
+            "magny-cours-history"
           ],
           "confirmation_status": "source_checked_ai"
         }

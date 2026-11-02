@@ -1071,6 +1071,57 @@
           "source_check": "AI source comparison 2026-11-02; independent review pending"
         }
       ]
+    },
+    {
+      "circuit_id": "magny-cours",
+      "biography": {
+        "title": {
+          "en": "A lap of borrowed circuit names",
+          "uk": "Коло з назвами інших автодромів"
+        },
+        "text": {
+          "en": "Magny-Cours turned a lap into a small atlas of motorsport. Estoril, Adelaide, Nürburgring and Imola are names borrowed from other racing venues, while the tight 180° describes its own geometry. The 2003 redesign reshaped Château d'Eau and Lycée, so the 17-turn layout of the final Formula 1 years cannot be treated as identical to the one Mansell raced in 1991. The venue's numbered plan and historical notes together make those distinctions visible.",
+          "uk": "Маньї-Кур перетворив коло на невеликий атлас автоспорту. Estoril, Adelaide, Nürburgring та Imola — назви інших гоночних трас, а тісний 180° описує власну геометрію. Перебудова 2003 року змінила Château d'Eau та Lycée, тому конфігурацію з 17 поворотами останніх років Формули-1 не можна вважати тотожною маршруту, яким Менселл їхав у 1991 році. Пронумерована схема й історія автодрому допомагають побачити ці відмінності."
+        },
+        "source": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+        "locator": "Circuit operator history: 1992 and 2003 Grand Prix layout revisions"
+      },
+      "moments": [
+        {
+          "id": "magny-cours-2004-strategy",
+          "year": 2004,
+          "title": {
+            "en": "Four stops beat three",
+            "uk": "Чотири піт-стопи перемагають три"
+          },
+          "text": {
+            "en": "Fernando Alonso led for Renault, but Ferrari changed Michael Schumacher's fuel strategy to four short stints. The lighter car ran quickly enough in clean air to make an extra pit stop and still take victory. It was a strategic duel on a circuit where the Adelaide hairpin offered a more obvious overtaking point than most other corners.",
+            "uk": "Фернандо Алонсо лідирував на Renault, але Ferrari змінила паливну стратегію Міхаеля Шумахера на чотири короткі відрізки. Легший болід їхав настільки швидко на вільній трасі, що додатковий піт-стоп не завадив перемозі. Це була тактична боротьба на автодромі, де шпилька Adelaide давала очевидніший шанс для обгону, ніж більшість інших поворотів."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/france-2004-how-ferrari-stole-victory-from-renault-with-a-secret-4-stop-plan.7yXeHIzXx8e8JEyBC401ET.7yXeHIzXx8e8JEyBC401ET",
+          "locator": "F1 Strategic Masterstrokes: 2004 French Grand Prix four-stop plan",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        },
+        {
+          "id": "magny-cours-2008-finale",
+          "year": 2008,
+          "title": {
+            "en": "Massa wins the last French Grand Prix at Magny-Cours",
+            "uk": "Масса виграє останній Гран-прі Франції в Маньї-Курі"
+          },
+          "text": {
+            "en": "Felipe Massa won the 2008 French Grand Prix ahead of Ferrari team mate Kimi Räikkönen, with Jarno Trulli third for Toyota. It became the last Formula 1 World Championship race at Magny-Cours after eighteen consecutive seasons there. The result closes the story of the 2003-specification 17-turn layout used in the venue's final six Grands Prix.",
+            "uk": "Феліпе Масса виграв Гран-прі Франції 2008 року перед напарником по Ferrari Кімі Ряйкконеном, а Ярно Труллі став третім на Toyota. Це була остання чемпіонатна гонка Формули-1 в Маньї-Курі після вісімнадцяти сезонів поспіль. Результат завершує історію конфігурації з 17 поворотами зразка 2003 року, яку використовували в останніх шести Гран-прі автодрому."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/2008/races/832/france/race-result",
+          "locator": "Official F1 2008 French Grand Prix race result",
+          "review_status": "independent_review_pending",
+          "source_check": "AI source comparison 2026-11-02; independent review pending"
+        }
+      ]
     }
   ]
 }
