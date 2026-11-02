@@ -33,7 +33,8 @@ test('Miami and Spielberg contribute 29 unique individual FIA-2025 numbered turn
     for (const s of guide.sections) {
       assert.equal(s.numbers.length, 1);
       assert.equal(s.confirmation_status, 'source_checked_ai');
-      assert.deepEqual(s.sources, [id+'-map',id+'-names']);
+      assert.deepEqual(s.sources.slice(0, 2), [id+'-map',id+'-names']);
+      for (const key of s.sources) assert.ok(candidate.sources[key], s.id + ': unknown citation ' + key);
       assert.ok(s.explanation.en.trim().split(/\s+/).length >= 25, s.id+':en');
       assert.ok(s.explanation.uk.trim().split(/\s+/).length >= 18, s.id+':uk');
       assert.match(s.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
