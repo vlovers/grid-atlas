@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "Five historical routes now reuse their existing individual EN/UK research sections (47 total) with unnumbered route order, not verified corner-to-apex assignments. Other circuits retain preliminary sections. This does NOT grant release approval.",
+  "coverage_note": "Research-only bilingual route sections. Ain-Diab, Charade and Sebring now include claim-specific historical layout evidence and unresolved apex-numbering limits. No numbered corner crosswalk, licensing approval or publication authorization is asserted.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -239,7 +239,32 @@
           "review_status": "pending"
         }
       ],
-      "evidence_scope": "1958 race-order scenes from contemporary Motor Sport, official F1 race classification and independent Grandprix retrospective. None is proof of a numbered apex or image rights."
+      "evidence_scope": "1958 race-order scenes from contemporary Motor Sport, official F1 race classification and independent Grandprix retrospective. None is proof of a numbered apex or image rights.",
+      "layout_evidence_review": {
+        "archive_turn_count": 18,
+        "period_layout_year": 1958,
+        "crosswalk_status": "route_outline_only_unverified_apex_numbers",
+        "evidence": [
+          {
+            "type": "period_layout_reconstruction",
+            "url": "https://www.gdecarli.it/php2/circuit.php?var1=642&var2=2",
+            "claim": "Route drawing labelled 1957–1958; no historically certified sequential turn-number key",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "historic_circuit_geography",
+            "url": "https://www.motorsportmagazine.com/database/circuits/ain-diab/",
+            "claim": "Public roads near Casablanca, Azemmour road and Sidi Abderrahman coastal forest route",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "period_race_report",
+            "url": "https://www.motorsportmagazine.com/database/races/1958-moroccan-grand-prix/",
+            "claim": "Circuit unchanged from non-championship 1957 event; road surface improved for 1958",
+            "supports_apex_numbering": false
+          }
+        ]
+      }
     },
     {
       "circuit_id": "bremgarten",
@@ -502,7 +527,32 @@
           "review_status": "pending"
         }
       ],
-      "evidence_scope": "Route landmarks and documented race history only; no numbered apex mapping or publication approval."
+      "evidence_scope": "Route landmarks and documented race history only; no numbered apex mapping or publication approval.",
+      "layout_evidence_review": {
+        "archive_turn_count": 48,
+        "period_layout_year": 1972,
+        "crosswalk_status": "corner_count_disagreement_unverified_apex_numbers",
+        "evidence": [
+          {
+            "type": "archive_layout",
+            "url": "https://lapledger.org/circuits/charade",
+            "claim": "Pinned F1DB clermont-ferrand-1 is 8.055 km and counts 48 bends; secondary page headline counts 51",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_report",
+            "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "claim": "1972 period journalist describes more than 50 corners, but does not establish official apex numbers",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "official_f1_retrospective",
+            "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+            "claim": "Long five-mile volcanic road circuit distinct from modern short Charade layout",
+            "supports_apex_numbering": false
+          }
+        ]
+      }
     },
     {
       "circuit_id": "dallas",
@@ -1649,7 +1699,26 @@
           "review_status": "pending"
         }
       ],
-      "original_research_document": "SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json"
+      "original_research_document": "SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json",
+      "layout_evidence_review": {
+        "archive_turn_count": 17,
+        "period_layout_year": 1959,
+        "crosswalk_status": "historical_route_sections_not_apex_numbers",
+        "evidence": [
+          {
+            "type": "archive_layout",
+            "url": "https://perencz.hu/f1/circuit/sebring/info/",
+            "claim": "Historical 1959 F1DB-derived outline, with CC BY 4.0 Jules Roy attribution; outline does not map certified numbers",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_report",
+            "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "claim": "Period report describes airfield concrete and route complexity but supplies no certified apex numbering",
+            "supports_apex_numbering": false
+          }
+        ]
+      }
     }
   ]
 }
