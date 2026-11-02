@@ -14,6 +14,7 @@ Three bilingual biographies and six source-linked historical moments were also a
 
 ## Review boundaries
 
+- **Las Vegas map verification:** On the FIA 2025 circuit map the **blue 1–17 labels are corner numbers**; the yellow boxed 1–22 labels belong to the FIA marshal-light legend, **not** to corners. A direct map/promoter cross-check corrected the directional descriptions of T2, T3 and T5. The 2025 map and the promoter's 2024 turn-by-turn article are separate dated sources.
 - **Las Vegas** is the modern Strip circuit, not the 1981–1982 Caesars Palace venue. **Madring** is the 2026 22-turn layout, not the obsolete 2024 proposed 20-turn plan or the older Jarama circuit. **Valencia** is the 2008–2012 harbour circuit, not Circuit Ricardo Tormo.
 - The Madrid FIA URL currently points to the official **document index**, not a pinned exact PDF. An editor must retrieve the 10 September 2026 Doc 6 map and compare the numbered geometry before publication. The 22-turn count is separately supported by F1's current circuit guide and dated 2026 coverage.
 - For Valencia, the FIA 2012 preview establishes the event and broad track characteristics; the detailed 1–25 sequence is supported by period-derived and secondary lap descriptions rather than an individually inspected FIA turn map. Turns 18–24 particularly require a higher-resolution dated map and editorial fact check. Do not describe the whole guide as FIA-map-verified.
