@@ -34,7 +34,8 @@ test('Shanghai and post-2023 Singapore add 35 complete bilingual FIA 2025 turn g
       assert.equal(section.name,null,'no unsupported proper name');
       assert.equal(section.numbers.length,1);
       assert.equal(section.confirmation_status,'source_checked_ai');
-      assert.deepEqual(section.sources,[id+'-map',id+'-names']);
+      assert.deepEqual(section.sources.slice(0, 2),[id+'-map',id+'-names']);
+      for (const key of section.sources) assert.ok(model.sources[key], section.id + ': unknown citation ' + key);
       assert.ok(section.explanation.en.trim().split(/\s+/).length>=25,section.id+':en');
       assert.ok(section.explanation.uk.trim().split(/\s+/).length>=18,section.id+':uk');
       assert.match(section.explanation.uk,/[А-Яа-яІіЇїЄєҐґ]/);
