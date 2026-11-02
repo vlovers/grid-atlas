@@ -219,3 +219,16 @@ test('duplicate circuit IDs and out-of-range layout years cannot receive publica
     guide.numbering_year = year;
   }
 });
+
+test('private bilingual preview includes seven historical route studies but no invented corner numbers', () => {
+  const en = renderCircuitReview('en', '/review/test');
+  const uk = renderCircuitReview('uk', '/review/test');
+  for (const id of ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']) {
+    assert.ok(en.includes('study-' + id), id + ': EN study missing');
+    assert.ok(uk.includes('study-' + id), id + ': UK study missing');
+  }
+  assert.match(en, /These are research route sections, NOT officially numbered turns/);
+  assert.match(uk, /Нумерацію апексів не підтверджено/);
+  assert.match(en, /Historical source \(not turn-number evidence\)/);
+  assert.match(en, /noindex,nofollow,noarchive/);
+});
