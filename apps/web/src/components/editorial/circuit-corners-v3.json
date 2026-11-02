@@ -120,7 +120,11 @@
     "estoril-map": "https://www.lapledger.org/circuits/estoril",
     "estoril-names": "https://porschecarshistory.com/wp-content/old/lib/magazines/autosport/1995/AS21.09.95.pdf",
     "estoril-era": "https://perencz.hu/f1/circuit/estoril/info/",
-    "estoril-race": "https://www.formula1.com/en/results/1995/races/633/portugal/race-result"
+    "estoril-race": "https://www.formula1.com/en/results/1995/races/633/portugal/race-result",
+    "watkins-glen-map": "https://www.lapledger.org/circuits/watkins-glen",
+    "watkins-glen-names": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
+    "watkins-glen-era": "https://www.formulaonehistory.com/circuits/watkins-glen/",
+    "watkins-glen-race": "https://www.formula1.com/en/results/1980/races/93/usa-east/race-result"
   },
   "guides": [
     {
@@ -12258,6 +12262,230 @@
             "estoril-names",
             "estoril-era",
             "estoril-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        }
+      ]
+    },
+    {
+      "circuit_id": "watkins-glen",
+      "layout_id": "watkins-glen-3",
+      "numbering_year": 1980,
+      "names_as_of": 1980,
+      "numbered_turns": 11,
+      "review_status": "independent_review_pending",
+      "numbering_basis": "F1DB 1975-1980 11-turn Grand Prix count, period Scheckter Chicane and Boot sources; numbered positions are editorial reconstruction pending a period FIA map",
+      "sections": [
+        {
+          "id": "watkins-glen-t1",
+          "numbers": [
+            1
+          ],
+          "name": "The 90",
+          "aliases": [],
+          "explanation": {
+            "en": "The opening right-hander is nicknamed the 90 for its approximately right-angle change of direction. The car brakes from the pit straight before climbing into the Esses. That simple geometric name is older than the later safety chicanes elsewhere on the course.",
+            "uk": "Перший правий поворот називають The 90 через майже прямокутну зміну напрямку. Болід гальмує після стартової прямої, а далі підіймається до Esses. Ця геометрична назва старша за пізніші шикани безпеки на інших ділянках траси."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t2",
+          "numbers": [
+            2
+          ],
+          "name": "The Esses",
+          "aliases": [],
+          "explanation": {
+            "en": "The uphill Esses begin with a quick change of direction between barriers. In 1980 the section did not match today's uninterrupted sweep: a safety chicane interrupted the sequence after its introduction in 1975. Period-specific steering lines matter here.",
+            "uk": "Швидка зв'язка Esses починається зміною напрямку на підйомі між бар'єрами. У 1980 році вона не збігалася із сучасною безперервною дугою: з 1975 року тут стояла шикана безпеки. Траєкторії потрібно описувати саме для історичного маршруту."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t3",
+          "numbers": [
+            3
+          ],
+          "name": "Scheckter Chicane",
+          "aliases": [
+            "Scheckter Chicane (1975–1980; not 1992 Inner Loop)"
+          ],
+          "explanation": {
+            "en": "The first change at the Scheckter Chicane forced Formula 1 cars to slow within the fast Esses. The chicane was installed in 1975 after safety concerns following François Cevert's fatal 1973 practice accident. It was named for driver Jody Scheckter, who advocated the change.",
+            "uk": "Перша перекладка Scheckter Chicane змушувала боліди Формули-1 сповільнюватися всередині швидких Esses. Шикану встановили у 1975 році після проблем із безпекою, пов'язаних із загибеллю Франсуа Севера на тренуванні 1973 року. Назва вшановує Джоді Шектера, який підтримував цю зміну."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t4",
+          "numbers": [
+            4
+          ],
+          "name": "Scheckter Chicane",
+          "aliases": [
+            "Scheckter Chicane (1975–1980; not 1992 Inner Loop)"
+          ],
+          "explanation": {
+            "en": "The second part of the Scheckter Chicane returned the car to the uphill Esses. The driver had to finish the rapid direction change without losing the line for the back straight. This historical chicane was later removed; it is not the 1992 Inner Loop bus stop.",
+            "uk": "Друга частина Scheckter Chicane повертала болід до Esses на підйомі. Пілот мусив завершити швидку перекладку, не втративши траєкторію перед задньою прямою. Історичну шикану згодом прибрали; це не Inner Loop, який з'явився лише у 1992 році."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t5",
+          "numbers": [
+            5
+          ],
+          "name": "The Loop",
+          "aliases": [],
+          "explanation": {
+            "en": "The sweeping right at the end of the back straight led towards the Boot on the long Grand Prix course. In 1980 it was simply part of the older Loop sequence, without the later 1992 Inner Loop bus-stop chicane immediately before it.",
+            "uk": "Швидка права дуга наприкінці задньої прямої вела до Boot на довгому колі Гран-прі. У 1980 році вона належала до старої секції Loop, без шикани Inner Loop, яку встановили лише у 1992-му."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t6",
+          "numbers": [
+            6
+          ],
+          "name": "Boot entry / Laces",
+          "aliases": [],
+          "explanation": {
+            "en": "The course drops into the Boot, a hillside extension whose outline resembles a boot. The entry changes the lap from the fast upper circuit into a descending wooded section. The nickname describes the whole loop rather than an independently verified name for every apex.",
+            "uk": "Траса спускається в Boot — розширення на схилі, контур якого нагадує чобіт. Вхід переводить болід зі швидкої верхньої частини до лісової секції на спуску. Прізвисько описує всю петлю, а не підтверджену окрему назву кожного апекса."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t7",
+          "numbers": [
+            7
+          ],
+          "name": "Toe of the Boot",
+          "aliases": [],
+          "explanation": {
+            "en": "The Toe is the lower part of the Boot loop, where the circuit turns and begins to work back uphill. Its name comes from the shape of the extended route. A patient line through the lower corner matters before the following climb.",
+            "uk": "Toe — нижня частина петлі Boot, де дорога повертає й починає знову підійматися. Назва походить від форми розширеного маршруту. Терпляча траєкторія в нижньому віражі допомагає підготувати наступний підйом."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t8",
+          "numbers": [
+            8
+          ],
+          "name": "Heel of the Boot",
+          "aliases": [],
+          "explanation": {
+            "en": "The Heel sits on the returning portion of the Boot, where the car climbs out of the lower loop. The boot-shaped nickname explains the geography, not a memorial to a driver. Changing gradient and camber make the exit more demanding than the outline suggests.",
+            "uk": "Heel розташований на зворотній частині Boot, де болід виходить із нижньої петлі на підйом. Назва пояснює форму траси, а не вшановує пілота. Зміна ухилу й поперечного нахилу робить вихід складнішим, ніж здається на схемі."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Boot exit",
+          "aliases": [],
+          "explanation": {
+            "en": "The return from the Boot rejoins the upper circuit through a bend near a crest. In the 1980 configuration this was still part of the full Grand Prix course, unlike the shorter route used by some American series. Its individual historic proper name remains unconfirmed.",
+            "uk": "Повернення з Boot з'єднується з верхньою частиною траси через вигин поблизу гребеня. У конфігурації 1980 року це залишалося частиною повного кола Гран-прі, на відміну від коротшого маршруту деяких американських серій. Окрему історичну назву віражу ще не підтверджено."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The fast penultimate left comes after the Boot rejoins the main course. Cars carry substantial speed as the road falls away, so a clean exit is needed before the final corner. A modern turn label is not evidence of the 1980 FIA numbering.",
+            "uk": "Швидкий передостанній лівий поворот починається після повернення з Boot на основну трасу. Боліди зберігають велику швидкість на спуску, тому чистий вихід важливий перед останнім віражем. Сучасний номер не доводить нумерацію FIA 1980 року."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
+          ],
+          "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
+        },
+        {
+          "id": "watkins-glen-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The final left leads onto the pit straight and completes the full Watkins Glen Grand Prix lap. It is tempting to carry too much speed, but traction on exit determines the run to the 90. The 1980 race was the circuit's final Formula 1 championship visit.",
+            "uk": "Останній лівий виводить на стартову пряму й завершує повне коло Гран-прі Воткінс-Глена. Надмірна швидкість на вході заважає розгону до The 90. Гонка 1980 року стала останнім чемпіонатним візитом Формули-1 на цю трасу."
+          },
+          "sources": [
+            "watkins-glen-map",
+            "watkins-glen-names",
+            "watkins-glen-era",
+            "watkins-glen-race"
           ],
           "confirmation_status": "historical_turn_mapping_ai_checked_independent_review_pending"
         }
