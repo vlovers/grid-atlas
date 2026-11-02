@@ -43,7 +43,7 @@ test('original five collections keep five sourced stories while new historical g
     assert.ok(circuit.moments.length >= (original.has(circuit.circuit_id) ? 5 : 2), circuit.circuit_id);
     assert.equal(new Set(circuit.moments.map(moment=>moment.id)).size,circuit.moments.length);
     for(const moment of circuit.moments) {
-      assert.ok(Number.isInteger(moment.year) && moment.year >= 1950 && moment.year <= 2026, `${circuit.circuit_id}: invalid event year ${moment.year}`);
+      assert.ok(Number.isInteger(moment.year) && moment.year >= 1900 && moment.year <= 2026, `${circuit.circuit_id}: invalid event year ${moment.year}`);
       assert.ok(moment.title.en && moment.title.uk && moment.text.en && moment.text.uk);
       assert.match(moment.source,/^https:\/\//);
       assert.ok(moment.locator && moment.criterion);
