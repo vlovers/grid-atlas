@@ -67,3 +67,28 @@ test('private review uses existing opt-in transport, shows noindex and names all
   assert.match(html,/Без окремої назви/);
   assert.doesNotMatch(html,/stroke-width:8!important/);
 });
+
+
+test('seven missing historic circuits surface bilingual unnumbered route studies without false apex claims', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const component = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
+  const pending = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
+  assert.match(component, /historicRoutes\.circuits\.find/);
+  assert.match(component, /historical route sections, not numbered corners/i);
+  assert.match(component, /Historical source \(not number verification\)/);
+  for (const id of pending) {
+    const circuit = research.circuits.find(c => c.circuit_id === id);
+    assert.ok(circuit, id + ': missing historical route');
+    assert.ok(!candidateCornerGuides.some(g => g.circuit_id === id), id + ': a numbered guide must not be inferred from unnumbered research');
+    assert.equal(circuit.independent_numbering_verified, false);
+    assert.ok(circuit.sections.length >= 2);
+    for (const section of circuit.sections) {
+      assert.ok(section.label.en.trim() && section.label.uk.trim(), id + ': bilingual title');
+      assert.ok(section.description.en.trim() && section.description.uk.trim(), id + ': bilingual copy');
+      assert.equal(section.turn_numbers, null, id + ': no fabricated turn mapping');
+      assert.ok(section.source_urls.length >= 1 && section.source_urls.every(url => /^https:\/\//.test(url)));
+    }
+    assert.equal(isCircuitEditionApproved(id), false, id + ': no publication approval');
+  }
+});
