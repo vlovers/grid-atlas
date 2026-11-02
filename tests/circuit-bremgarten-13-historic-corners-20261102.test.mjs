@@ -9,7 +9,7 @@ test('Bremgarten 1954 contains thirteen bilingual, sourced historic reading entr
  assert.equal(guide.numbering_year,1954);
  assert.equal(guide.sections.length,13);
  assert.equal(guide.numbered_turns,13);
- assert.match(guide.numbering_basis,/NOT an authenticated/);
+ assert.match(guide.numbering_basis,/not an authenticated/i);
  assert.deepEqual(guide.sections.flatMap(s=>s.numbers), Array.from({length:13},(_,i)=>i+1));
  assert.ok(guide.sections.some(s=>s.aliases.some(a=>a.includes('Tenni'))));
  assert.ok(guide.sections.some(s=>s.aliases.some(a=>a.includes('Forsthaus'))));
