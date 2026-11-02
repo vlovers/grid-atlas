@@ -76,7 +76,7 @@ test('inherited Monaco and Spa keep 38 individual, unique descriptions and ancho
 test('historical UI must not falsely label every map as an official 2025 FIA diagram', () => {
   const ui = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
   assert.match(ui, /hasFiaMap/);
-  assert.match(ui, /Open the historical layout reference/);
+  assert.match(ui, /Open historical evidence \(not a numbered map\)/);
   assert.match(ui, /Historic \$\{guide\.numbering_year\} layout/);
   assert.doesNotMatch(ui, /Numbering: official FIA 2025 map/);
 });
