@@ -52,12 +52,25 @@ export const historicalCornerEvidenceWorklist = historicalCornerClaimTriage.map(
   const route = candidateUnnumberedHistoricalRoutes.find(item => item.circuit_id === claim.circuit_id)!;
   const passageMissing = claim.pinpoint_status === 'claim_specific_passage_missing';
   const complexGeometry = original.feature_kind !== 'single_bend';
+  // Keep the original claim-specific bilingual evidence gap. A generic P1
+  // instruction loses the distinction between the 15 Dallas diagram inferences.
+  const gap = passageMissing && original.source_locator_gap &&
+    typeof original.source_locator_gap === 'object' &&
+    'en' in original.source_locator_gap && 'uk' in original.source_locator_gap
+    ? {
+      en: String(original.source_locator_gap.en),
+      uk: String(original.source_locator_gap.uk),
+    }
+    : null;
   return {
     ...claim,
     historical_period: route.period,
     geometry_scope: original.feature_kind,
     source_roles: original.source_roles,
     source_passage_found: !passageMissing,
+    claim_specific_source_gap: gap,
+    // A located locator is not proof that the passage was independently authenticated.
+    source_passage_independently_authenticated: false as const,
     numbered_map_crosswalk_verified: false as const,
     geometric_anchor_verified: false as const,
     independent_human_review_completed: false as const,
@@ -70,8 +83,8 @@ export const historicalCornerEvidenceWorklist = historicalCornerClaimTriage.map(
       : complexGeometry ? 'P2_disambiguate_complex_or_sector' as const
       : 'P3_crosswalk_single_bend' as const,
     review_request: passageMissing ? {
-      en: 'Locate the claim-specific source passage; then obtain a dated numbered map for the exact historical layout. Do not publish or copy third-party media.',
-      uk: 'Знайти уривок джерела саме для цього твердження; потім отримати датовану нумеровану схему точної історичної конфігурації. Не публікувати й не копіювати сторонні медіа.',
+      en: (gap?.en ?? 'Locate the claim-specific source passage.') + ' Then obtain a dated numbered map for the exact historical layout. Do not publish or copy third-party media.',
+      uk: (gap?.uk ?? 'Знайти уривок джерела саме для цього твердження.') + ' Потім отримати датовану нумеровану схему точної історичної конфігурації. Не публікувати й не копіювати сторонні медіа.',
     } : complexGeometry ? {
       en: 'Confirm whether the historic name or description denotes a complex, sector or several bends before mapping any individual apex. Obtain an independently reviewed period numbered chart.',
       uk: 'Уточнити, чи історична назва або опис означає зв’язку, сектор або кілька поворотів, перш ніж прив’язувати окремі апекси. Потрібна незалежно перевірена нумерована схема епохи.',
@@ -88,6 +101,9 @@ export const historicalCornerEvidenceWorklistByCircuit = historicalCornerClaimTr
     ...circuit,
     historical_period: claims[0]?.historical_period ?? null,
     priority_1_missing_passage: claims.filter(item => item.priority === 'P1_find_claim_passage').length,
+    priority_1_with_bilingual_specific_gaps: claims.filter(item =>
+      item.priority === 'P1_find_claim_passage' &&
+      Boolean(item.claim_specific_source_gap?.en && item.claim_specific_source_gap?.uk)).length,
     priority_2_complex_geometry: claims.filter(item => item.priority === 'P2_disambiguate_complex_or_sector').length,
     priority_3_single_bend_crosswalk: claims.filter(item => item.priority === 'P3_crosswalk_single_bend').length,
     media_rights_approved: false as const,
