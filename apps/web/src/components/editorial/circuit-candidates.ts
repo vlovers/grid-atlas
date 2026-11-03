@@ -3,6 +3,7 @@ import monaco from '../../../../../docs/editorial/circuit-experience-v3/monaco-t
 import spa from '../../../../../docs/editorial/circuit-experience-v3/spa-turns-v1.json' with { type: 'json' };
 import corners from './circuit-corners-v3.json' with { type: 'json' };
 import narratives from './circuit-narratives-v3.json' with { type: 'json' };
+import periodRoutes from '../../../../../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json' with { type: 'json' };
 
 type RawCircuit = { circuit_id: string; intro: { en: string; uk: string }; turns: {
   number: number; name: string | null; shared_segment: string | null; story: { en: string; uk: string };
@@ -32,3 +33,32 @@ export const candidateCircuitNarratives = [...inherited.map(raw => ({
     source: moment.sources[0], locator: `Upstream research / ${moment.id}`, criterion: 'source_selected_historical_milestone',
     review_status: 'independent_review_pending', source_check: 'Inherited source-backed research; not publication approval' })),
 })), ...narratives.entries];
+
+/**
+ * Seven unnumbered period-route studies already researched in the editorial dossier.
+ * These are geographical reading sequences, NOT additional turn guides: no
+ * historical apex-number crosswalk or individual corner-name approval exists.
+ * Keep them out of candidateCornerGuides and the publication digest until each
+ * numbered apex can be matched to a dated source for its exact layout.
+ */
+const unnumberedRouteIds = new Set([
+  'ain-diab', 'clermont-ferrand', 'dallas', 'detroit', 'pescara', 'porto', 'sebring',
+]);
+export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
+  .filter(route => unnumberedRouteIds.has(route.circuit_id))
+  .map(route => ({
+    circuit_id: route.circuit_id,
+    layout_id: route.layout_id,
+    review_status: 'independent_review_pending' as const,
+    numbered_apex_verified: false as const,
+    sections: route.sections.map(section => ({
+      reading_order: section.reading_order,
+      label: section.label,
+      explanation: section.description,
+      official_turn_numbers: null,
+      source_urls: section.source_urls,
+      source_roles: section.provenance_scope.source_roles,
+      geometric_anchor_verified: false as const,
+      numbered_apex_verified: false as const,
+    })),
+  }));
