@@ -56,6 +56,7 @@ test('five source-bound historical features preserve the distinction between thr
       assert.ok(entry.source_urls.includes(spec.primary));
       assert.ok(entry.source_urls.includes(spec.result));
       assert.ok(entry.source_roles.some(role => role.url === spec.result && role.role === 'official_formula1_result_classification_not_corner_geometry'));
+      assert.ok(entry.source_locator?.length > 45, entry.label.en);
       assert.equal(entry.source_roles.length, entry.source_urls.length);
       assert.ok(entry.source_roles.every(role => entry.source_urls.includes(role.url) && role.role));
       assert.equal(entry.media_rights.external_reference_only, true);
