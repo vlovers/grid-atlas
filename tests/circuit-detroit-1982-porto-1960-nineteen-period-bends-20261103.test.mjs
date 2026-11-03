@@ -11,6 +11,10 @@ const periodReports = {
   detroit: 'https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/',
   porto: 'https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/',
 };
+const officialResults = {
+  detroit: 'https://www.formula1.com/en/results/1982/races/443/detroit/race-result',
+  porto: 'https://www.formula1.com/en/results/1960/races/185/portugal/race-result',
+};
 const expected = {
   detroit: { layout: 'detroit-1', period: '1982', count: 17, parents: [2, 2, 3, 4, 5, 5, 5, 6, 6, 7, 7, 7, 7, 9, 9, 10, 10] },
   porto: { layout: 'porto-1', period: '1958–1960', count: 2, parents: [1, 3] },
@@ -45,6 +49,8 @@ test('Detroit 1982 and Porto 1960 preserve 19 distinct bilingual period-report b
       assert.ok(bend.explanation.uk.trim().split(/\s+/).length >= 30, bend.label.uk);
       assert.match(bend.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
       assert.ok(bend.source_urls.includes(periodReports[id]));
+      assert.ok(bend.source_urls.includes(officialResults[id]));
+      assert.ok(bend.source_roles.some(role => role.url === officialResults[id] && role.role === 'official_formula1_result_classification_not_corner_geometry'));
       assert.ok(bend.source_roles.some(role => role.url === periodReports[id] && role.role.startsWith('contemporary_')));
       assert.equal(bend.media_rights.external_reference_only, true);
       assert.equal(bend.media_rights.third_party_map_reuse_approved, false);
