@@ -65,7 +65,7 @@ test('1984 Dallas and 1982 Detroit references do not silently substitute other c
 test('period-specific bilingual context never promotes geographical landmarks to certified corners', () => {
   const expected = [
     ['clermont-ferrand', 5, /1989 short circuit/, /1989 року/],
-    ['pescara', 6, /1934/, /1934 року/],
+    ['pescara', 6, /1934/, /1934 році/],
     ['porto', 2, /2005 revival/, /2005 року/],
   ];
   for (const [id, order, en, uk] of expected) {
