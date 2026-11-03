@@ -42,7 +42,7 @@ test('historical map source identity rejects insecure URLs and embedded credenti
     'not a URL',
   ];
   for (const url of invalid) {
-    assert.throws(() => canonicalHistoricalMapSourcePage(url), { name: 'Error' }, url);
+    assert.throws(() => canonicalHistoricalMapSourcePage(url), (error) => error instanceof Error, url);
   }
   assert.equal(
     canonicalHistoricalMapSourcePage('https://www.gdecarli.it/php2/riviste.php?var3=1984&utm_source=a'),
