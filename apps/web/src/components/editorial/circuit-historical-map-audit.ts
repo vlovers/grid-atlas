@@ -1,5 +1,6 @@
 import { dallas1984MagazineMapLeads, dallas1984DirectionDispute } from './circuit-dallas-1984-source-audit.ts';
 import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
+import { canonicalHistoricalCountSourcePage } from './circuit-historical-counts.ts';
 
 /** References to inspect, never copies of third-party artwork or approval receipts.
  * A modern venue page and a Formula 1 classification cannot establish 1950s–1980s apex numbers.
@@ -189,6 +190,11 @@ export const historicalMapRightsReviewByCircuit = candidateUnnumberedHistoricalR
     period_map_version_leads: route.circuit_id === 'dallas' ? dallas1984MagazineMapLeads : [],
     direction_dispute: route.circuit_id === 'dallas' ? dallas1984DirectionDispute : null,
     source_references: references.length,
+    // Count canonical pages, not URL variants or multiple claims from one page.
+    // This is a provenance diagnostic, NEVER an independent FIA-map approval.
+    distinct_source_pages: new Set(references.map(item => canonicalHistoricalCountSourcePage(item.source_url))).size,
+    duplicate_source_pages: references.length -
+      new Set(references.map(item => canonicalHistoricalCountSourcePage(item.source_url))).size,
     recorded_license_pages: references.filter(item => item.recorded_asset_license !== null).length,
     independently_authenticated_period_numbered_maps: 0,
     numbered_apex_crosswalk_verified: false as const,
