@@ -4332,8 +4332,8 @@
             "uk": "Назва описує S-подібну зв'язку біля Каппелле-суль-Таво; місцевий автор не зміг встановити, яку саме з двох сусідніх подвійних кривих називали так історично."
           },
           "explanation": {
-            "en": "A local account recalls the Esse di Cappelle as a crowd-gathering and difficult S-bend on the village approach. The author explicitly leaves its exact location unresolved between two nearby double curves. Treat it as a named complex, not one uniquely located 1957 FIA-numbered corner.",
-            "uk": "Місцевий нарис згадує Esse di Cappelle як складну S-подібну зв'язку на під'їзді до селища, де збиралися глядачі. Автор прямо залишає невизначеним її точне місце між двома сусідніми подвійними віражами. Це іменована зв'язка, а не один однозначно локалізований поворот FIA 1957 року."
+            "en": "The 2019 local account calls the difficult S-shaped complex on the Spoltore approach 'La Esse di Cappelle' and remembers spectators gathering there. Crucially, the author cannot decide between the double bend beside the entrance monument and the double bend in the centre of Cappelle sul Tavo. The name is documented, but its precise 1957 geometry, apex count and official numbering are not.",
+            "uk": "Місцевий нарис 2019 року називає складну S-подібну зв'язку на під'їзді від Спольторе «La Esse di Cappelle» і згадує глядачів, які збиралися там. Водночас автор не може визначити, чи йдеться про подвійний віраж біля пам'ятного знака на в'їзді, чи про подвійну криву в центрі Каппелле-суль-Таво. Назву засвідчено, але точну геометрію 1957 року, кількість апексів і офіційну нумерацію — ні."
           },
           "source_urls": [
             "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
@@ -4349,10 +4349,7 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator_gap": {
-            "en": "The linked 40mila local-history page could not be reopened for a verifiable passage in this review. The reported choice between two nearby Cappelle S-bends remains unresolved; obtain an accessible archival passage and authenticated period map.",
-            "uk": "Під час цієї перевірки не вдалося відкрити матеріал 40mila для звірення конкретного уривка. Невизначеність між двома сусідніми S-подібними зв'язками біля Каппелле зберігається; потрібні доступний архівний текст і підтверджена схема відповідної епохи."
-          }
+          "source_locator": "40mila.it, 'A Pescara si vince ... correndo! Coppa Acerbo: aneddoti e curiosità' (4 September 2019), section 'La Esse di Cappelle': the author explicitly recalls the named S-complex but cannot tell whether it is the double bend beside the entrance monument or the double bend in the village centre. Local naming evidence only; neither location nor any 1957 FIA apex number is authenticated."
         }
       ],
       "period_bend_studies": [
@@ -4470,15 +4467,16 @@
           "name_origin": null,
           "geometry_kind": "single_bend",
           "explanation": {
-            "en": "After the long fast road towards Montesilvano, the historical route turned south onto the Adriatic coast road for the return to Pescara. Both a contemporary race report and an Italian circuit history identify this change of direction. Neither source certifies its precise apex position, an official corner name, or its number on a 1957 FIA plan.",
-            "uk": "Після довгої швидкісної дороги до Montesilvano історичний маршрут повертав на південь, на прибережну Via Adriatica, для повернення до Пескари. Цю зміну напрямку описують і тогочасний репортаж, і італійська історія траси. Жодне джерело не підтверджує точне місце апекса, офіційну назву чи номер на схемі FIA 1957 року."
+            "en": "After the long fast road towards Montesilvano, the historical route turned south onto the Adriatic coast road for the return to Pescara. Both a contemporary race report and an Italian circuit history identify this change of direction. Neither source certifies its precise apex position, an official corner name, or its number on a 1957 FIA plan. A 2019 local recollection places the final turn opposite Montesilvano station, roughly a kilometre after the timed Flying Kilometre. This sharpens the geographic landmark but does not independently authenticate a 1957 apex coordinate.",
+            "uk": "Після довгої швидкісної дороги до Montesilvano історичний маршрут повертав на південь, на прибережну Via Adriatica, для повернення до Пескари. Цю зміну напрямку описують і тогочасний репортаж, і італійська історія траси. Жодне джерело не підтверджує точне місце апекса, офіційну назву чи номер на схемі FIA 1957 року. Місцевий спогад 2019 року розміщує завершальний поворот навпроти станції Монтезільвано, приблизно за кілометр після вимірюваної ділянки «Летючого кілометра». Це уточнює орієнтир, але не є незалежним підтвердженням координат апекса 1957 року."
           },
           "numbering_year": null,
           "official_turn_number": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
             "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
-            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+            "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/"
           ],
           "source_roles": [
             {
@@ -4492,6 +4490,10 @@
             {
               "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
               "role": "official_formula1_result_classification_not_corner_geometry"
+            },
+            {
+              "url": "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
+              "role": "local_2019_flying_kilometre_montesilvano_station_final_turn_context_not_1957_apex_number"
             }
           ],
           "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
@@ -4504,7 +4506,7 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport (September 1957), opening route description: road meets Via Adriatica at Montesilvano; FormulaPassion (2012), route description: turn south along the coast."
+          "source_locator": "Motor Sport (September 1957), opening route description: road meets Via Adriatica at Montesilvano; FormulaPassion (2012), route description: turn south along the coast. 40mila.it (4 September 2019), 'Il Chilometro Lanciato': local recollection places the final turn opposite Montesilvano station, roughly one kilometre beyond the measured speed section; not a surveyed 1957 apex."
         },
         {
           "reading_order": 4,

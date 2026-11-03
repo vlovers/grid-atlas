@@ -15,7 +15,7 @@ const expected = [
   ['clermont-ferrand', 11, 11, 0, 11],
   ['dallas', 16, 1, 15, 0],
   ['detroit', 17, 17, 0, 0],
-  ['pescara', 6, 5, 1, 2],
+  ['pescara', 6, 6, 0, 2],
   ['porto', 7, 7, 0, 0],
   ['sebring', 8, 8, 0, 0],
 ];
@@ -28,8 +28,8 @@ test('all 66 historic claims have bilingual, fail-closed source triage', () => {
     item.circuit_id, item.total_claims, item.claim_passages_identified,
     item.claim_passages_missing, item.named_features,
   ]), expected);
-  assert.equal(historicalCornerClaimTriageByCircuit.reduce((n,c) => n+c.claim_passages_identified,0),50);
-  assert.equal(historicalCornerClaimTriageByCircuit.reduce((n,c) => n+c.claim_passages_missing,0),16);
+  assert.equal(historicalCornerClaimTriageByCircuit.reduce((n,c) => n+c.claim_passages_identified,0),51);
+  assert.equal(historicalCornerClaimTriageByCircuit.reduce((n,c) => n+c.claim_passages_missing,0),15);
   for(const claim of historicalCornerClaimTriage) {
     assert.ok(claim.label.en && claim.label.uk);
     assert.equal(claim.numbered_apex_verified,false);
@@ -50,7 +50,7 @@ test('all 66 historic claims have bilingual, fail-closed source triage', () => {
   }
 });
 
-test('Pescara has one specifically located retrospective name and one unresolved S-complex', () => {
+test('Pescara has two located retrospective names but an unresolved S-complex geometry', () => {
   const names=historicalCornerClaimTriage.filter(c=>c.circuit_id==='pescara'&&c.research_kind==='named_feature');
   assert.equal(names.length,2);
   const death=names.find(c=>c.label.en==='Curva della Morte');
@@ -58,8 +58,9 @@ test('Pescara has one specifically located retrospective name and one unresolved
   assert.ok(death&&esse);
   assert.equal(death.pinpoint_status,'claim_passage_identified_unreviewed');
   assert.match(death.source_locator,/GPKingdom.*4 December 2024.*Spoltore/);
-  assert.equal(esse.pinpoint_status,'claim_specific_passage_missing');
-  assert.match(esse.source_locator_gap.en,/two nearby Cappelle S-bends/);
-  assert.match(esse.source_locator_gap.uk,/двома сусідніми/);
+  assert.equal(esse.pinpoint_status,'claim_passage_identified_unreviewed');
+  assert.equal(esse.source_locator_gap,null);
+  assert.match(esse.source_locator,/40mila\.it.*4 September 2019.*La Esse di Cappelle/);
+  assert.match(esse.source_locator,/entrance monument.*village centre/);
   assert.equal(hasPublicationReadyCornerGuide('pescara'),false);
 });

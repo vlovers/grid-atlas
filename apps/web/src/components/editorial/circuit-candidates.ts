@@ -49,6 +49,7 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
   .map(route => ({
     circuit_id: route.circuit_id,
     layout_id: route.layout_id,
+    period: route.period,
     review_status: 'independent_review_pending' as const,
     numbered_apex_verified: false as const,
     route_scope: 'route_scope' in route ? route.route_scope : null,
