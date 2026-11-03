@@ -34,6 +34,10 @@ export const historicalCornerCountObservations: readonly CountObservation[] = [
 /** A canonical page key, not a claim of source independence or historical authenticity. */
 export function canonicalHistoricalCountSourcePage(rawUrl: string): string {
   const url = new URL(rawUrl);
+  // Reject insecure and credential-bearing provenance, matching the map audit.
+  if (url.protocol !== 'https:' || url.username || url.password || url.port) {
+    throw new Error('Historical count source must be HTTPS without credentials or a custom port');
+  }
   const host = url.hostname.toLowerCase().replace(/^www\./, '');
   const path = url.pathname.replace(/\/+$/, '') || '/';
   return host + path;
