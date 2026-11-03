@@ -133,3 +133,19 @@ test('Dallas provisional and definitive magazine leads cannot be confused with a
   assert.equal(audit.historical_map_and_media_audit.direction_dispute.unresolved, true);
   assert.equal(hasPublicationReadyCornerGuide('dallas'), false);
 });
+
+test('count source identity rejects insecure URLs, credentials and nonstandard ports', () => {
+  const invalid = [
+    'http://lapledger.org/circuits/dallas',
+    'https://user:password@lapledger.org/circuits/dallas',
+    'https://user@lapledger.org/circuits/dallas',
+    'https://lapledger.org:8443/circuits/dallas',
+    'javascript:alert(1)',
+    'not a URL',
+  ];
+  for (const url of invalid) {
+    assert.throws(() => canonicalHistoricalCountSourcePage(url), error => error instanceof Error, url);
+  }
+  assert.equal(canonicalHistoricalCountSourcePage('https://www.lapledger.org/circuits/dallas?utm_source=research'),
+    canonicalHistoricalCountSourcePage('https://lapledger.org/circuits/dallas/'));
+});
