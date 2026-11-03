@@ -1,4 +1,5 @@
 import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
+import { canonicalHistoricalMapSourcePage } from './circuit-historical-map-audit.ts';
 
 /** Research observations, NEVER official FIA apex numbering. F1DB values on
  * Lap Ledger are derivative data, not independent corroboration. */
@@ -33,14 +34,10 @@ export const historicalCornerCountObservations: readonly CountObservation[] = [
 ];
 /** A canonical page key, not a claim of source independence or historical authenticity. */
 export function canonicalHistoricalCountSourcePage(rawUrl: string): string {
-  const url = new URL(rawUrl);
-  // Reject insecure and credential-bearing provenance, matching the map audit.
-  if (url.protocol !== 'https:' || url.username || url.password || url.port) {
-    throw new Error('Historical count source must be HTTPS without credentials or a custom port');
-  }
-  const host = url.hostname.toLowerCase().replace(/^www\./, '');
-  const path = url.pathname.replace(/\/+$/, '') || '/';
-  return host + path;
+  // Use the same document identity rules as the map audit. Archive selectors
+  // (e.g. gdecarli var1..var5) distinguish actual historical documents;
+  // tracking parameters never create additional independent evidence.
+  return canonicalHistoricalMapSourcePage(rawUrl);
 }
 
 export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistoricalRoutes.map(route => {
