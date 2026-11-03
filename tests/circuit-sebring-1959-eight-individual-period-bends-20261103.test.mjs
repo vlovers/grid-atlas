@@ -58,7 +58,7 @@ test('historical bend studies do not masquerade as 1959 FIA-numbered corners', (
   assert.ok(route);
   assert.equal(route.sections.length, 10);
   assert.equal(route.period_bend_studies.length, 8);
-  assert.equal(candidateUnnumberedNamedBendStudies.length, 9); // Charade remains separate.
+  assert.equal(candidateUnnumberedNamedBendStudies.length, 11); // Charade remains separate.
   assert.equal(candidateCornerGuides.some(guide => guide.circuit_id === 'sebring'), false);
   assert.equal(hasPublicationReadyCornerGuide('sebring'), false);
   assert.ok(candidateUnnumberedPeriodBendStudies.every(bend => bend.official_turn_number === null));
