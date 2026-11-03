@@ -1021,7 +1021,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "single_bend",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old 8.055 km lap sequence (Manson after the opening climb)."
         },
         {
           "reading_order": 2,
@@ -1046,7 +1047,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "route_sector",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 \"Grand 8 et super descente\" for the historic descent."
         },
         {
           "reading_order": 3,
@@ -1071,7 +1073,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "named_feature_unresolved",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (Belvédère / Grand balcon)."
         },
         {
           "reading_order": 4,
@@ -1096,7 +1099,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 for the Jumeaux on the Gravenoire descent."
         },
         {
           "reading_order": 5,
@@ -1121,7 +1125,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "named_feature_unresolved",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (after Jumeaux)."
         },
         {
           "reading_order": 6,
@@ -1146,7 +1151,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "route_sector",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", closing sequence before Ferme."
         },
         {
           "reading_order": 7,
@@ -1171,7 +1177,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #46 \"À la Ferme, on évite de trop ouvrir !\", left-right S-bend; #23 for old-lap order."
         },
         {
           "reading_order": 8,
@@ -1196,7 +1203,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "single_bend",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #16 \"La vie secrète du Petit Pont\" (stream and bridge); #23 for old-lap order."
         },
         {
           "reading_order": 9,
@@ -1218,7 +1226,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "single_bend",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", hairpin after Petit Pont; name origin not established."
         },
         {
           "reading_order": 10,
@@ -1243,15 +1252,19 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", pif-paf, curve and descent after Marlboro."
         },
         {
           "reading_order": 11,
           "name": "Rosier",
-          "name_origin": null,
+          "name_origin": {
+            "en": "The circuit operator explicitly identifies the final bend as bearing the name of Louis Rosier, who helped propose the original Charade route before his death in 1956.",
+            "uk": "Автодром прямо зазначає, що завершальний поворот названо на честь Луї Розьє, який допоміг запропонувати первісний маршрут Charade до своєї загибелі 1956 року."
+          },
           "explanation": {
-            "en": "The official venue history places Rosier near the end of the old eight-kilometre lap, after the Thèdes descent and before the start-finish line. The same venue recalls Louis Rosier's role in the circuit's conception, but does not explicitly establish that the bend was named for him.",
-            "uk": "Офіційна історія автодрому розташовує Rosier наприкінці старого восьмикілометрового кола, після спуску Тед і перед лінією старту-фінішу. Автодром також згадує участь Луї Розьє у створенні траси, але прямо не підтверджує, що віраж назвали на його честь."
+            "en": "Rosier is the final named bend before the start-finish line on the historic eight-kilometre course. The venue explicitly says this bend bears Louis Rosier's name and records his role in proposing the original circuit. This establishes the namesake, not a certified 1972 FIA turn number.",
+            "uk": "Rosier — останній іменований поворот перед лінією старту-фінішу на історичній восьмикілометровій трасі. Автодром прямо підтверджує, що віраж носить ім’я Луї Розьє, та описує його участь у створенні маршруту. Це підтверджує походження назви, але не офіційний номер повороту FIA 1972 року."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1265,7 +1278,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "single_bend",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #40 \"Louis Rosier, père spirituel de Charade pour l’éternité\" (explicit namesake); #23 for the final-bend position."
         }
       ]
     },
@@ -1775,7 +1789,9 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "evidence_kind": "contemporary_report_specific_bend",
+          "source_locator": "Motor Sport, Alan Henry, \"1984 Dallas Grand Prix race report\", Race section, final paragraph on Mansell losing drive through the last corner before the finish."
         },
         {
           "reading_order": 2,
@@ -1823,7 +1839,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Paddock-side opening right: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Перший правий біля паддоку: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 3,
@@ -1871,7 +1892,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Cotton Bowl approach left: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Лівий на підході до Cotton Bowl: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 4,
@@ -1919,7 +1945,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Sharper left onto the fairground avenue: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Різкий лівий на алею комплексу: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 5,
@@ -1967,7 +1998,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Right into the temporary inner section: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Правий у тимчасову внутрішню секцію: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 6,
@@ -2015,7 +2051,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Tightening left-hand arc: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Ліва дуга зі зменшенням радіуса: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 7,
@@ -2063,7 +2104,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Square right after the tightening arc: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Прямокутний правий після дуги: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 8,
@@ -2111,7 +2157,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Inner-section left hairpin: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Ліва шпилька внутрішньої секції: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 9,
@@ -2159,7 +2210,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Right entry to the parking-area jog: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Правий вхід у зв'язку біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 10,
@@ -2207,7 +2263,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Left exit from the parking-area jog: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Лівий вихід зі зв'язки біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 11,
@@ -2255,7 +2316,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Left entry to the return chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Лівий вхід у зворотну шикану: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 12,
@@ -2303,7 +2369,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Right exit from the return chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Правий вихід зі зворотної шикани: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 13,
@@ -2351,7 +2422,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Faster double-apex left: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Швидший лівий із двома апексами: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 14,
@@ -2399,7 +2475,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Right entry to the final parking chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Правий вхід в останню шикану біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 15,
@@ -2447,7 +2528,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Left exit from the final parking chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Лівий вихід з останньої шикани біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         },
         {
           "reading_order": 16,
@@ -2495,7 +2581,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk"
+          "evidence_limit": "directional sequence from period/venue narrative; not a period FIA-numbered apex crosswalk",
+          "evidence_kind": "historical_layout_visual_reconstruction_not_apex_verified",
+          "source_locator_gap": {
+            "en": "Broad left before the closing complex: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
+            "uk": "Широкий лівий перед завершальною секцією: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
+          }
         }
       ]
     },
