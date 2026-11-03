@@ -53,6 +53,8 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
     numbered_apex_verified: false as const,
     route_scope: 'route_scope' in route ? route.route_scope : null,
     media_rights: 'media_rights' in route ? route.media_rights : null,
+    named_bend_studies: 'named_bend_studies' in route && Array.isArray(route.named_bend_studies)
+      ? route.named_bend_studies : [],
     sections: route.sections.map(section => ({
       section_kind: 'section_kind' in section ? section.section_kind : 'route_geography',
       reading_order: section.reading_order,
@@ -74,3 +76,9 @@ export const candidateUnnumberedGeographicRoutes = candidateUnnumberedHistorical
   ...route,
   sections: route.sections.filter(section => section.section_kind === 'route_geography'),
 }));
+
+/** Venue-attested names on the historical route, without certified period apex numbers.
+ * These never enter candidateCornerGuides or the publication projection. */
+export const candidateUnnumberedNamedBendStudies = candidateUnnumberedHistoricalRoutes.flatMap(route =>
+  route.named_bend_studies.map(bend => ({ ...bend, circuit_id: route.circuit_id, layout_id: route.layout_id })),
+);
