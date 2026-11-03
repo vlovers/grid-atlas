@@ -22,16 +22,36 @@ export const historicalCornerCountObservations: readonly CountObservation[] = [
   { circuit_id:'detroit', layout_id:'detroit-1', period:'1982', turns:24, basis:'f1db_layout_attribute', source_url:'https://lapledger.org/circuits/detroit', locator:'Every layout / F1DB detroit-1 / 4.168 km / 24 turns / 1982', source_family:'f1db_derivative', caveat:{en:'1982 original layout only; not verified FIA apex numbers.',uk:'Лише початкова конфігурація 1982 року; не перевірені номери FIA.'}},
   { circuit_id:'detroit', layout_id:'detroit-2', period:'1983–1988', turns:22, basis:'f1db_layout_attribute', source_url:'https://lapledger.org/circuits/detroit', locator:'F1DB detroit-2 / 4.023 km / 22 turns / 1983–1988', source_family:'f1db_derivative', caveat:{en:'Different later route; exclude from 1982 count.',uk:'Інший пізніший маршрут; виключити з підрахунку 1982 року.'}},
   { circuit_id:'detroit', layout_id:'detroit-2', period:'1983–1988', turns:17, basis:'page_headline', source_url:'https://lapledger.org/circuits/detroit', locator:'Page headline / current 4.023 km / Turns 17', source_family:'secondary_summary', caveat:{en:'Headline describes latest layout, not 1982.',uk:'Заголовок описує пізнішу конфігурацію, не 1982 рік.'}},
+
+  // These three 1950s circuits previously had NO count observations. A
+  // secondary headline and its F1DB row on the same page are not two witnesses.
+  { circuit_id:'pescara', layout_id:'pescara-1', period:'1957', turns:24, basis:'f1db_layout_attribute', source_url:'https://lapledger.org/circuits/pescara', locator:'Every layout / F1DB pescara-1 / 25.579 km / 24 turns / 1957; page headline also says 24', source_family:'f1db_derivative', caveat:{en:'A derivative database count, not a 1957 numbered apex map. Same-page agreement is not independent verification.',uk:'Похідна кількість із бази даних, не нумерована схема апексів 1957 року. Збіг на одній сторінці не є незалежною перевіркою.'}},
+  { circuit_id:'porto', layout_id:'porto-1', period:'1958–1960', turns:19, basis:'f1db_layout_attribute', source_url:'https://www.lapledger.org/circuits/porto', locator:'Every layout / F1DB porto-1 / 7.406 km / 19 turns / 1958–1960', source_family:'f1db_derivative', caveat:{en:'F1DB counts 19 on the period layout, without an authenticated FIA turn-by-turn map.',uk:'F1DB наводить 19 поворотів історичної конфігурації, але без перевіреної нумерованої карти FIA.'}},
+  { circuit_id:'porto', layout_id:'porto-1', period:'1958–1960', turns:14, basis:'page_headline', source_url:'https://www.lapledger.org/circuits/porto', locator:'Page headline / Turns 14, versus F1DB layout porto-1 19 on this same page', source_family:'secondary_summary', caveat:{en:'Same publisher and page as the 19-turn F1DB row; conflicting counting conventions, not independent sources.',uk:'Той самий видавець і сторінка, що й рядок F1DB із 19 поворотами; різні правила підрахунку, не незалежні джерела.'}},
+  { circuit_id:'sebring', layout_id:'sebring-1', period:'1959', turns:17, basis:'f1db_layout_attribute', source_url:'https://lapledger.org/circuits/sebring', locator:'Every layout / F1DB sebring-1 / 8.36 km / 17 turns / 1959', source_family:'f1db_derivative', caveat:{en:'F1DB layout count for the 1959 airfield circuit, not the numbered turns of the later 3.7-mile course.',uk:'Кількість F1DB для аеродромної траси 1959 року, не нумерація поворотів пізнішого 3,7-мильного маршруту.'}},
+  { circuit_id:'sebring', layout_id:'sebring-1', period:'1959', turns:12, basis:'page_headline', source_url:'https://lapledger.org/circuits/sebring', locator:'Page headline / Turns 12, while same-page F1DB sebring-1 row reports 17', source_family:'secondary_summary', caveat:{en:'The page contradicts its own period-layout count; neither figure certifies 1959 FIA apex numbering.',uk:'Заголовок сторінки суперечить рядку історичної конфігурації; жодне число не підтверджує нумерацію апексів FIA 1959 року.'}},
 ];
 export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistoricalRoutes.map(route => {
   const observations = historicalCornerCountObservations.filter(x => x.circuit_id === route.circuit_id);
   const same = observations.filter(x => x.layout_id === route.layout_id && x.period === route.period);
   const other = observations.filter(x => x.layout_id !== route.layout_id || x.period !== route.period);
   const values = [...new Set(same.map(x => x.turns))].sort((a,b) => a-b);
+  // Group by actual source page, not by source_family. A headline and its
+  // derivative F1DB row can carry different family labels but share a publisher.
+  const sourcePages = [...new Set(same.map(x => x.source_url))];
+  const samePageConflicts = sourcePages.flatMap(source_url => {
+    const reported_counts = [...new Set(same.filter(x => x.source_url === source_url)
+      .map(x => x.turns))].sort((a,b) => a-b);
+    return reported_counts.length > 1 ? [{ source_url, reported_counts }] : [];
+  });
   return {
     circuit_id: route.circuit_id, layout_id: route.layout_id, historical_period: route.period,
     observations, same_layout_observations: same, excluded_other_era_observations: other,
     competing_same_layout_counts: values,
+    distinct_source_pages: sourcePages.length,
+    same_page_count_conflicts: samePageConflicts,
+    // Even two different websites cannot substitute for a dated, reviewed map.
+    count_authenticated_against_period_numbered_map: false as const,
     count_disagreement_unresolved: values.length > 1,
     no_count_comparison_available: values.length === 0,
     independently_authenticated_numbered_map: false as const,
