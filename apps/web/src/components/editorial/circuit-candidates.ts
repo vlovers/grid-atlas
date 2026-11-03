@@ -55,6 +55,8 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
     media_rights: 'media_rights' in route ? route.media_rights : null,
     named_bend_studies: 'named_bend_studies' in route && Array.isArray(route.named_bend_studies)
       ? route.named_bend_studies : [],
+    period_bend_studies: 'period_bend_studies' in route && Array.isArray(route.period_bend_studies)
+      ? route.period_bend_studies : [],
     sections: route.sections.map(section => ({
       section_kind: 'section_kind' in section ? section.section_kind : 'route_geography',
       reading_order: section.reading_order,
@@ -81,4 +83,10 @@ export const candidateUnnumberedGeographicRoutes = candidateUnnumberedHistorical
  * These never enter candidateCornerGuides or the publication projection. */
 export const candidateUnnumberedNamedBendStudies = candidateUnnumberedHistoricalRoutes.flatMap(route =>
   route.named_bend_studies.map(bend => ({ ...bend, circuit_id: route.circuit_id, layout_id: route.layout_id })),
+);
+
+/** Individually described historical bends from a period report. The sequence
+ * is not a FIA turn-number map and is never part of the publication digest. */
+export const candidateUnnumberedPeriodBendStudies = candidateUnnumberedHistoricalRoutes.flatMap(route =>
+  route.period_bend_studies.map(bend => ({ ...bend, circuit_id: route.circuit_id, layout_id: route.layout_id })),
 );
