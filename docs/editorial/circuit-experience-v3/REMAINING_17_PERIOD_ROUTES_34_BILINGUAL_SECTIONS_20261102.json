@@ -1681,7 +1681,56 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 13,
+          "historical_layout_id": "dallas-1",
+          "period": "1984",
+          "label": {
+            "en": "Final corner before the Dallas finish line",
+            "uk": "Останній поворот перед фінішем у Далласі"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The contemporary 1984 race report places a distinct final corner immediately before the finish. Nigel Mansell struck a wall and lost drive while passing through it late in the race, then tried to push his Lotus toward the line. This identifies a historical bend, not an independently certified FIA apex number.",
+            "uk": "Репортаж гонки 1984 року описує окремий останній поворот безпосередньо перед фінішем. Наприкінці дистанції Найджел Менселл зачепив стіну й утратив тягу, проходячи його, а потім спробував штовхати Lotus до лінії. Це свідчення про історичний віраж, але не незалежно підтверджений номер апекса FIA."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.racingcircuits.info/north-america/usa/dallas.html",
+            "https://www.formula1.com/en/results/1984/races/474/dallas/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+              "role": "contemporary_1984_final_corner_mansell_incident_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/dallas.html",
+              "role": "historical_layout_reference_not_numbered_1984_fia_map"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1984/races/474/dallas/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "detroit",
