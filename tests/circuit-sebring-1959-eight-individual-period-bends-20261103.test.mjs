@@ -13,12 +13,13 @@ const periodMap = 'https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.
 const expectedParents = [2, 3, 6, 8, 8, 9, 9, 10];
 
 test('eight separate 1959 Sebring bends have original bilingual period-source narratives', () => {
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 8);
-  assert.deepEqual(candidateUnnumberedPeriodBendStudies.map(bend => bend.reading_order), [1, 2, 3, 4, 5, 6, 7, 8]);
-  assert.deepEqual(candidateUnnumberedPeriodBendStudies.map(bend => bend.parent_route_section_order), expectedParents);
+  const sebringBends = candidateUnnumberedPeriodBendStudies.filter(bend => bend.circuit_id === 'sebring');
+  assert.equal(sebringBends.length, 8);
+  assert.deepEqual(sebringBends.map(bend => bend.reading_order), [1, 2, 3, 4, 5, 6, 7, 8]);
+  assert.deepEqual(sebringBends.map(bend => bend.parent_route_section_order), expectedParents);
   const en = new Set();
   const uk = new Set();
-  for (const bend of candidateUnnumberedPeriodBendStudies) {
+  for (const bend of sebringBends) {
     assert.equal(bend.circuit_id, 'sebring');
     assert.equal(bend.layout_id, 'sebring-1');
     assert.equal(bend.historical_layout_id, 'sebring-1');
