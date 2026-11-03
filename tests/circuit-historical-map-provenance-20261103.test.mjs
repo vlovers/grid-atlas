@@ -79,6 +79,10 @@ test('Dallas provisional and definitive magazine leads cannot be confused with a
   assert.equal(dallas1984DirectionDispute.official_turn_directions_verified, false);
   const dallas = historicalMapRightsReviewByCircuit.find(x => x.circuit_id === 'dallas');
   assert.equal(dallas.source_references, 5);
+  const catalog = dallas.references.find(x => x.source_role === 'period_magazine_map_catalog_not_scans');
+  assert.equal(catalog.source_published_year, null); // 1984 is the magazine issue year, not the catalog's publication date.
+  assert.equal(new Set(dallas1984MagazineMapLeads.map(x => x.catalog_url)).size, 1); // Two leads, one catalog page.
+
   assert.deepEqual(dallas.period_map_version_leads, dallas1984MagazineMapLeads);
   assert.deepEqual(dallas.direction_dispute, dallas1984DirectionDispute);
   assert.equal(dallas.independently_authenticated_period_numbered_maps, 0);

@@ -75,7 +75,7 @@ export const historicalMapReferenceAudit = [
   {
     circuit_id: "dallas", layout_id: "dallas-1", period: "1984",
     source_url: "https://www.gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1984&var4=", source_role: "period_magazine_map_catalog_not_scans",
-    source_published_year: 1984, recorded_asset_license: null,
+    source_published_year: null, recorded_asset_license: null,
     limitation: { en: "Rombo 9 (28 February 1984, p. 13) catalogs a definitive map, while Rombo 12 (20 March 1984, p. 12) catalogs a provisional map. The actual magazine pages have not been inspected.", uk: "Rombo 9 (28 лютого 1984, с. 13) містить у каталозі остаточну схему, а Rombo 12 (20 березня 1984, с. 12) — попередню. Самі сторінки журналів не перевірені." },
     independently_authenticated_period_numbered_map: false, imported_media_asset: false, media_reuse_approved: false,
   },
