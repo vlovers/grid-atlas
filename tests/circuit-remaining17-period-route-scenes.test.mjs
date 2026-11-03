@@ -30,5 +30,6 @@ test('seventeen historical route studies preserve and expand bilingual research 
 test('unverified historical research remains explicitly outside the publication gate', () => {
   assert.equal(data.release_authorized, false);
   assert.equal(data.image_rights_approved, false);
-  assert.match(data.coverage_note, /Independent mapping remains incomplete/);
+  assert.match(data.coverage_note, /None establishes an independently authenticated period FIA turn-number-to-apex crosswalk/);
+  assert.match(data.coverage_note, /Race results are not geometric evidence/);
 });
