@@ -30,11 +30,11 @@ test('seven outstanding historical routes expose 68 bilingual source-linked sect
       assert.equal(section.geometric_anchor_verified, false);
       assert.equal(section.numbered_apex_verified, false);
       assert.ok(section.label.en && section.label.uk, route.circuit_id);
-      assert.ok(section.explanation.en.trim().split(/\\s+/).length >= 14, route.circuit_id);
-      assert.ok(section.explanation.uk.trim().split(/\\s+/).length >= 12, route.circuit_id);
+      assert.ok(section.explanation.en.trim().split(/\s+/).length >= 14, route.circuit_id);
+      assert.ok(section.explanation.uk.trim().split(/\s+/).length >= 12, route.circuit_id);
       assert.match(section.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
       assert.ok(section.source_urls.length > 0);
-      for (const url of section.source_urls) assert.match(url, /^https:\\/\\//);
+      for (const url of section.source_urls) assert.match(url, /^https:\/\//);
       assert.ok(section.source_roles.length > 0);
       for (const role of section.source_roles) {
         assert.ok(section.source_urls.includes(role.url));
