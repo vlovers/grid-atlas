@@ -2059,7 +2059,723 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 2,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "First arc of the riverside left sweep",
+            "uk": "Перший вигин лівої дуги біля річки"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "From the riverfront start, the road began a long leftward sweep through a temporary parking-area course. The contemporary reporter described this opening hairpin as two connected corners, rather than one simple apex. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Від старту біля річки дорога починала довгу ліву дугу тимчасовою трасою на паркувальному майданчику. Репортер 1982 року описав початкову шпильку як два з'єднані повороти, а не один апекс. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "parent_route_section_order": 2,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Second arc completing the opening hairpin",
+            "uk": "Друга дуга початкової шпильки"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The second part of the long left hairpin turned the cars back toward a road parallel to the start. Concrete blocks shaped the temporary return, so this is a distinct directional element but not an independently mapped FIA number. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Друга частина довгої лівої шпильки повертала машини на дорогу, паралельну стартовій ділянці. Тимчасовий розворот формували бетонні блоки, тож це окремий елемент траєкторії, але не підтверджений номер FIA. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 3,
+          "parent_route_section_order": 3,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right turn leaving Atwater Street",
+            "uk": "Правий поворот з Atwater Street"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After the run along Atwater Street, the 1982 report identifies a ninety-degree right into a side street. It is the first of two successive square rights, important for distinguishing this route from later Detroit revisions. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Після руху Atwater Street репортаж 1982 року визначає прямокутний правий поворот у бічну вулицю. Це перший із двох послідовних правих віражів, важливий для відокремлення первісної конфігурації від пізніших змін. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 4,
+          "parent_route_section_order": 4,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right turn into Woodbridge Street",
+            "uk": "Правий поворот на Woodbridge Street"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A second ninety-degree right brought the cars onto Woodbridge Street, where the route passed a church before its tighter hairpin. This street junction is a period-described bend, not a corner name taken from a modern Detroit map. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Другий прямокутний правий поворот виводив машини на Woodbridge Street, де маршрут проходив повз церкву перед тіснішою шпилькою. Цей перетин описано в джерелі епохи, а не запозичено з сучасної карти Детройта. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 5,
+          "parent_route_section_order": 5,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Tight left hairpin beyond the church",
+            "uk": "Тісна ліва шпилька після церкви"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "Beyond the church, a very tight left hairpin used part of a divided roadway. The period report places several immediate direction changes after it; the hairpin must not be merged with those following bends. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "За церквою дуже тісна ліва шпилька займала частину дороги з розділеними смугами. Репортаж розташовує відразу після неї кілька змін напрямку, тому саму шпильку не слід об'єднувати з наступними віражами. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 6,
+          "parent_route_section_order": 5,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right immediately after the Woodbridge hairpin",
+            "uk": "Правий одразу після шпильки Woodbridge"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The tight left hairpin was followed immediately by a right-hand turn, before another left. This quick reversal is described explicitly in the 1982 lap narrative, but its precise apex has not been georeferenced. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Одразу після тісної лівої шпильки йшов правий поворот, а за ним ще один лівий. Цю швидку зміну напрямку прямо згадано в описі кола 1982 року, проте точне положення апекса не встановлено. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 7,
+          "parent_route_section_order": 5,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Left following the hairpin exit right",
+            "uk": "Лівий після правого на виході зі шпильки"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A further left completed the right-left sequence after the Woodbridge hairpin and led toward another main street. It is counted here as a reported directional bend, not assigned a retrospective official turn number. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Ще один лівий завершував праву-ліву зв'язку після шпильки на Woodbridge та виводив до іншої головної вулиці. Тут його враховано як описаний у репортажі віраж без вигаданого офіційного номера. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 8,
+          "parent_route_section_order": 6,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Left from the short straight into a side street",
+            "uk": "Лівий з короткої прямої у бічну вулицю"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After a brief straight, the route turned left down a smaller street. The contemporary account describes this movement separately from the next crossroads, making it a useful historical reading point despite uncertain modern coordinates. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Після короткої прямої маршрут повертав ліворуч у меншу вулицю. Сучасний події опис відокремлює цей маневр від наступного перехрестя, тому він корисний для історичного читання навіть без точних сучасних координат. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 9,
+          "parent_route_section_order": 6,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right at the crossroads onto Larned Street",
+            "uk": "Правий на перехресті до Larned Street"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "At the next crossroads the cars turned right onto Larned Street and entered a longer straight. This is a named street destination, not a verified proper name for the bend itself; the original geometry remains under review. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "На наступному перехресті машини звертали праворуч на Larned Street і виходили на довшу пряму. Назва позначає вулицю призначення, а не підтверджене власне ім'я повороту; первісну геометрію ще перевіряють. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 10,
+          "parent_route_section_order": 7,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Left leaving the Larned straight",
+            "uk": "Лівий на виході з прямої Larned"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The longish Larned Street section ended in a left turn followed by a right, transferring the course toward Jefferson Boulevard. Separating the two bends preserves the contemporary route sequence without pretending to know their FIA numbering. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Довша ділянка Larned Street закінчувалася лівим поворотом, за яким ішов правий, переводячи трасу до Jefferson Boulevard. Розділення віражів зберігає послідовність репортажу без удаваного знання їхньої нумерації FIA. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 11,
+          "parent_route_section_order": 7,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right completing the move onto Jefferson",
+            "uk": "Правий для виходу на Jefferson"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After the left from Larned, a right-hand turn brought the route onto the broad Jefferson Boulevard carriageway. The period description makes this a separate corner before the tramline double-left farther along the boulevard. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Після лівого з Larned правий поворот виводив маршрут на широку проїзну частину Jefferson Boulevard. Опис тієї епохи відокремлює його від подвійного лівого біля трамвайних колій далі бульваром. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 12,
+          "parent_route_section_order": 7,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "First left across Jefferson tramlines",
+            "uk": "Перший лівий через колії на Jefferson"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The Jefferson approach ended in a double-left over tram tracks before the underpass. This first left is separated from the second because the contemporary report explicitly identifies two leftward changes, not one broad bend. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Під'їзд Jefferson завершувався подвійним лівим через трамвайні колії перед підземним проїздом. Перший лівий відокремлено від другого, адже репортаж прямо називає дві зміни напрямку, а не один широкий поворот. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 13,
+          "parent_route_section_order": 7,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Second left toward the narrow underpass",
+            "uk": "Другий лівий до вузького проїзду"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The second left of the Jefferson double-left directed cars into a narrow opening under a bridge. The tram tracks and abrupt change of road width are documented period hazards, not evidence of an authenticated numbered apex. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Другий лівий у зв'язці Jefferson спрямовував машини у вузький отвір під мостом. Трамвайні колії та раптове звуження дороги зафіксовані як небезпеки епохи, але не доводять існування підтвердженого номера апекса. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 14,
+          "parent_route_section_order": 9,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Tightening left into the riverfront tunnel",
+            "uk": "Лівий зі звуженням радіуса перед тунелем"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After the underpass and a short straight toward the river, the course entered a tightening left into a tunnel. The reporter treats this as a distinct approach before the tunnel's right-hand curve, so the two should not be collapsed. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Після проїзду під мостом і короткої прямої до річки траса входила в лівий поворот зі зменшенням радіуса перед тунелем. Репортер відокремлює цей підхід від правої дуги в тунелі, тож їх не слід зливати. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 15,
+          "parent_route_section_order": 9,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Right-hand curve inside the tunnel",
+            "uk": "Права дуга всередині тунелю"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The tunnel itself followed a right-hand curve across three lanes. This bend is described as part of the 1982 riverside route; it should not be confused with tunnel geometry from any subsequent Detroit street-circuit configuration. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Сам тунель проходив правою дугою завширшки у три смуги. Цей віраж описано як частину прибережного маршруту 1982 року; його не можна ототожнювати з геометрією тунелів пізніших конфігурацій Детройта. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 16,
+          "parent_route_section_order": 10,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "First change of the tight riverside Esses",
+            "uk": "Перша зміна напрямку тісних Esses біля річки"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A very tight S-shaped bend followed the tunnel exit and led toward the river-edge road. The first direction change is a separate study slot, but the period account does not supply an individual proper name or FIA number. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Після виходу з тунелю йшла дуже тісна S-подібна зв'язка до дороги вздовж річки. Першу зміну напрямку виділено окремою дослідницькою позицією, проте джерело не подає ані власної назви, ані номера FIA. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 17,
+          "parent_route_section_order": 10,
+          "historical_layout_id": "detroit-1",
+          "period": "1982",
+          "label": {
+            "en": "Second change of the tight riverside Esses",
+            "uk": "Друга зміна напрямку тісних Esses біля річки"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The second change completed the tight riverside S-bend before the cars returned toward the starting area. Its existence as part of a complex is described in the period report, while precise handedness and apex coordinates remain unresolved. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Друга зміна напрямку завершувала тісну S-подібну зв'язку біля річки перед поверненням до стартової ділянки. Її існування як частини комплексу описане в репортажі, а точний напрямок і координати апекса залишаються невизначеними. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+              "role": "contemporary_1982_explicit_street_by_street_direction_sequence_not_fia_numbering"
+            },
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "jacarepagua",
@@ -2983,7 +3699,93 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 1,
+          "historical_layout_id": "porto-1",
+          "period": "1958–1960",
+          "label": {
+            "en": "Opening bottleneck past the pits",
+            "uk": "Початкове звуження після боксів"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "At the start of the 1960 race, Brabham used a wide line at the first bottleneck after the pits to take the lead onto Avenida da Boavista. The report locates this bend in the opening sequence, without supplying a certified corner number. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "На старті гонки 1960 року Бребем пройшов перше звуження після боксів широкою траєкторією й очолив пелотон на Avenida da Boavista. Репортаж розміщує цей віраж на початку кола, але не подає підтвердженого номера повороту. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+              "role": "contemporary_1960_race_report_bend_and_incident_not_fia_numbering"
+            },
+            {
+              "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "parent_route_section_order": 3,
+          "historical_layout_id": "porto-1",
+          "period": "1958–1960",
+          "label": {
+            "en": "Sharp left from tramlines into the twisty streets",
+            "uk": "Різкий лівий з колій у звивисті вулиці"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The contemporary report identifies a sharp left after the tramline section as the entrance to narrower winding streets. Brabham ran wide here early in the race, and Surtees later missed his braking after a fuel leak made his pedals slippery. This is a source-backed reading position only; the exact historical apex remains unverified.",
+            "uk": "Репортаж тієї епохи визначає різкий лівий після ділянки з трамвайними коліями як вхід до вузьких звивистих вулиць. Бребем тут виїхав широко на початку гонки, а пізніше Сертіз помилився з гальмуванням через слизькі педалі після витоку пального. Це лише дослідницька позиція за джерелом; точне положення історичного апекса ще не підтверджено."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+              "role": "contemporary_1960_race_report_bend_and_incident_not_fia_numbering"
+            },
+            {
+              "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+              "role": "historical_layout_reference_not_period_numbered_fia_apex_map"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "riverside",
