@@ -18,8 +18,8 @@ test('all 66 historical features retain source-specific roles and explicit pinpo
   const bends = candidateHistoricalCornerReviewQueue.filter(item => item.research_kind === 'period_bend');
   assert.equal(named.length, 13);
   assert.equal(bends.length, 53);
-  assert.equal(bends.filter(item => item.source_locator !== null).length, 5);
-  assert.equal(bends.filter(item => item.source_locator === null).length, 48);
+  assert.equal(bends.filter(item => item.source_locator !== null).length, 37);
+  assert.equal(bends.filter(item => item.source_locator === null).length, 16);
   for (const item of candidateHistoricalCornerReviewQueue) {
     assert.ok(remaining.includes(item.circuit_id));
     assert.equal(item.source_roles.length > 0, true);
@@ -28,6 +28,12 @@ test('all 66 historical features retain source-specific roles and explicit pinpo
     assert.equal(item.publication_allowed, false);
   }
   for (const item of named) assert.equal(item.source_locator, null);
+  for (const [id, count] of [['detroit', 17], ['porto', 7], ['sebring', 8]]) {
+    const located = bends.filter(item => item.circuit_id === id);
+    assert.equal(located.length, count, id);
+    assert.ok(located.every(item => item.source_locator?.startsWith('Motor Sport, ')), id);
+    assert.ok(located.every(item => !/FIA (turn|number)/.test(item.source_locator)), id);
+  }
   const pescara = named.filter(item => item.circuit_id === 'pescara');
   assert.equal(pescara.length, 2);
   for (const item of pescara) {

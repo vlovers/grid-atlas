@@ -7,13 +7,13 @@ This is a **review handoff for the existing Draft PR #395**, not a new BATCH_01/
 | Ain-Diab 1958 | 13 | 1 | 0 | 1 | No |
 | Clermont-Ferrand / Charade 1972 | 8 | 0 | 11 | 0 | No |
 | Dallas 1984 | 13 | 16 | 0 | 0 | No |
-| Detroit 1982 | 10 | 17 | 0 | 0 | No |
+| Detroit 1982 | 10 | 17 | 0 | 17 | No |
 | Pescara 1957 | 7 | 4 | 2 | 4 | No |
-| Porto 1958–1960 | 7 | 7 | 0 | 0 | No |
-| Sebring 1959 | 10 | 8 | 0 | 0 | No |
-| **Total** | **68** | **53** | **13** | **5** | **0** |
+| Porto 1958–1960 | 7 | 7 | 0 | 7 | No |
+| Sebring 1959 | 10 | 8 | 0 | 8 | No |
+| **Total** | **68** | **53** | **13** | **37** | **0** |
 
-Of 53 individually described bends, **48 still lack a claim-specific locator** (page, paragraph, or explicitly identified passage). A linked report is not a pinpoint citation, and a race classification is not evidence of corner geometry. The 13 named features are separate research entries, not additional numbered FIA corners.
+Of 53 individually described bends, **16 still lack a claim-specific locator** (page, paragraph, or explicitly identified passage). This update adds **32 source-specific narrative pointers** for Detroit (17), Porto (7) and Sebring (8), checked against the original Motor Sport route walks; these pointers do not authenticate an FIA-numbered apex. A linked report is not a pinpoint citation, and a race classification is not evidence of corner geometry. The 13 named features are separate research entries, not additional numbered FIA corners.
 
 ## Period and source conflicts that remain open
 
@@ -27,7 +27,7 @@ Of 53 individually described bends, **48 still lack a claim-specific locator** (
 
 ## Engineering safeguards
 
-The review queue now preserves **primary name evidence vs supplementary layout context** as different URL roles. In particular, the second sources for Pescara's two named features are not automatically labelled as independent confirmation of the names. Missing claim locators are explicit `null` values, not invented citations.
+The review queue now preserves **primary name evidence vs supplementary layout context** as different URL roles. In particular, the second sources for Pescara's two named features are not automatically labelled as independent confirmation of the names. Missing claim locators are explicit `null` values, not invented citations. The new 32 locators identify passages within existing period reports rather than pretending that these reports include FIA corner numbers.
 
 The publication gate additionally requires a dated numbered-map source key matching the layout/year, a human-reviewed turn-to-apex crosswalk, and a reference to that map on **every** turn. Existing candidates do not contain such a receipt; flipping `review_status` and per-turn statuses alone cannot publish them. Exact-edition human approval remains a separate requirement.
 
