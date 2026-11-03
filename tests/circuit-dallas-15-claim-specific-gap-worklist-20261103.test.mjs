@@ -36,7 +36,7 @@ test('Dallas: all 15 unlocated diagram reconstructions retain distinct actionabl
     assert.equal(claim.media_rights_approved, false);
     assert.equal(claim.media_policy, 'external_links_only_no_media_reuse');
   }
-  const finalCorner = dallas.find(item => item.source_research_order === 1);
+  const finalCorner = dallas.find(item => item.review_id === 'dallas:period:1');
   assert.ok(finalCorner);
   assert.equal(finalCorner.source_passage_found, true);
   assert.equal(finalCorner.source_passage_independently_authenticated, false);
