@@ -32,6 +32,24 @@ test('map source identities preserve content-selecting archival parameters, not 
     canonicalHistoricalMapSourcePage('https://lapledger.org/circuits/dallas/'));
 });
 
+test('historical map source identity rejects insecure URLs and embedded credentials', () => {
+  const invalid = [
+    'http://www.gdecarli.it/php2/riviste.php?var3=1984',
+    'https://user:password@gdecarli.it/php2/riviste.php?var3=1984',
+    'https://user@gdecarli.it/php2/riviste.php?var3=1984',
+    'https://gdecarli.it:8443/php2/riviste.php?var3=1984',
+    'javascript:alert(1)',
+    'not a URL',
+  ];
+  for (const url of invalid) {
+    assert.throws(() => canonicalHistoricalMapSourcePage(url), { name: 'Error' }, url);
+  }
+  assert.equal(
+    canonicalHistoricalMapSourcePage('https://www.gdecarli.it/php2/riviste.php?var3=1984&utm_source=a'),
+    canonicalHistoricalMapSourcePage('https://gdecarli.it/php2/riviste.php?var3=1984'),
+  );
+});
+
 test('18 period-specific references cover seven incomplete routes without laundering race results into maps', () => {
   assert.equal(historicalMapReferenceAudit.length, 18);
   assert.equal(historicalMapRightsReviewByCircuit.length, 7);
