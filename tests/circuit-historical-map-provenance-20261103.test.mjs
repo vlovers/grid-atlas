@@ -43,6 +43,11 @@ test('18 period-specific references cover seven incomplete routes without launde
   }
   for (const route of historicalMapRightsReviewByCircuit) {
     assert.ok(route.source_references >= 2);
+    assert.equal(route.source_references, route.references.length);
+    assert.equal(route.distinct_source_pages,
+      new Set(route.references.map(x => canonicalHistoricalCountSourcePage(x.source_url))).size);
+    assert.equal(route.duplicate_source_pages, route.source_references - route.distinct_source_pages);
+    assert.equal(route.duplicate_source_pages, 0);
     assert.equal(route.independently_authenticated_period_numbered_maps, 0);
     assert.equal(route.imported_media_assets, 0);
     assert.equal(route.media_reuse_approved, false);
