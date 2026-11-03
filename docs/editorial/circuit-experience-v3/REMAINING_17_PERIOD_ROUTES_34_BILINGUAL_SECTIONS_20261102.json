@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_on": "2026-11-02",
+  "checked_on": "2026-11-03",
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
@@ -640,7 +640,8 @@
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -648,6 +649,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -695,7 +700,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
-            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -707,6 +713,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
                 "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -727,7 +737,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
-            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -739,6 +750,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
                 "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -753,13 +768,14 @@
             "uk": "Belvédère та Jumeaux"
           },
           "description": {
-            "en": "Belvédère and Jumeaux appear in the circuit operator's recollection of the original long loop. They were landmarks in a continuous succession of bends, not an invitation to treat a modern, shorter Charade map as the 1972 Grand Prix route.",
-            "uk": "Belvédère та Jumeaux згадані в історичному описі довгого кільця Charade від організаторів траси. Це орієнтири в безперервній послідовності віражів, а не підстава переносити сучасну коротку схему на Гран-прі 1972 року."
+            "en": "Belvédère and Jumeaux appear in the circuit operator's recollection of the original long loop. They were landmarks in a continuous succession of bends, not an invitation to treat a modern, shorter Charade map as the 1972 Grand Prix route. The long 1969–88 Charade course retained the mountain loop; the 1989 short circuit bypassed the Gravenoire section. A modern diagram therefore cannot certify the numbering of these 1972 landmarks.",
+            "uk": "Belvédère та Jumeaux згадані в історичному описі довгого кільця Charade від організаторів траси. Це орієнтири в безперервній послідовності віражів, а не підстава переносити сучасну коротку схему на Гран-прі 1972 року. Довга конфігурація Charade 1969–1988 років зберігала гірську петлю, а скорочена траса 1989 року оминула ділянку Gravenoire. Отже, сучасна схема не може підтвердити нумерацію цих орієнтирів станом на 1972 рік."
           },
           "turn_numbers": null,
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
-            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -771,6 +787,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
                 "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -791,7 +811,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
-            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -803,6 +824,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
                 "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -823,7 +848,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
-            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "https://www.racingcircuits.info/europe/france/charade.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -835,6 +861,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
                 "role": "period_report_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/france/charade.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -934,29 +964,24 @@
             "uk": "Старт і дуга біля паддоку"
           },
           "description": {
-            "en": "The short pit straight ran alongside the paddock before a sweeping right-hand opening corner. In 1984 the circuit was assembled inside Fair Park, with concrete barriers close to the racing line. The exit fed a set of gentle turns rather than a long acceleration zone.",
-            "uk": "Коротка стартова пряма проходила поруч із паддоком і вела до широкої першої правої дуги. У 1984 році трасу побудували всередині Fair Park, обмеживши гоночну лінію бетонними бар'єрами. На виході на пілотів чекала серія плавних віражів, а не довга пряма."
+            "en": "The short pit straight ran alongside the paddock before a sweeping right-hand opening corner. In 1984 the circuit was assembled inside Fair Park, with concrete barriers close to the racing line. The exit fed a set of gentle turns rather than a long acceleration zone. The 1984 Grand Prix layout threaded the fairgrounds near the Cotton Bowl; the shorter 1988 Trans-Am course is a different configuration and cannot establish an apex here.",
+            "uk": "Коротка стартова пряма проходила поруч із паддоком і вела до широкої першої правої дуги. У 1984 році трасу побудували всередині Fair Park, обмеживши гоночну лінію бетонними бар'єрами. На виході на пілотів чекала серія плавних віражів, а не довга пряма. Конфігурація Гран-прі 1984 року проходила територією ярмарку біля стадіону Cotton Bowl. Коротша траса Trans-Am 1988 року була іншою конфігурацією й не може підтвердити розташування цього апекса."
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -976,24 +1001,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1013,24 +1033,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1050,24 +1065,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1087,24 +1097,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1124,24 +1129,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1161,24 +1161,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1193,29 +1188,24 @@
             "uk": "Права-ліва зв'язка до парковки"
           },
           "description": {
-            "en": "After a short acceleration zone the lap made a right-left jog into a parking area. This was a much slower and more angular sequence than a natural flowing circuit. The paired direction changes were another place where loose surface material could punish an untidy line.",
-            "uk": "Після короткого розгону коло проходило праву-ліву зв'язку до парковки. Ця секція була значно повільнішою й незграбнішою за природні швидкісні дуги. У послідовних змінах напрямку крихке покриття особливо ускладнювало неточну траєкторію."
+            "en": "After a short acceleration zone the lap made a right-left jog into a parking area. This was a much slower and more angular sequence than a natural flowing circuit. The paired direction changes were another place where loose surface material could punish an untidy line. The historical venue account identifies several chicanes on the 1984 course, but does not supply an FIA-certified turn-by-turn number crosswalk; this right-left sequence remains a geographic reading, not a numbered corner.",
+            "uk": "Після короткого розгону коло проходило праву-ліву зв'язку до парковки. Ця секція була значно повільнішою й незграбнішою за природні швидкісні дуги. У послідовних змінах напрямку крихке покриття особливо ускладнювало неточну траєкторію. Історія автодрому підтверджує кілька шикан на трасі 1984 року, але не дає завіреної FIA відповідності номерів кожному повороту. Ця зв'язка праворуч-ліворуч лишається географічним описом, а не нумерованим віражем."
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1235,24 +1225,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1272,24 +1257,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1309,24 +1289,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1346,24 +1321,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1383,24 +1353,19 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
             "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
-            "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2"
+            "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://f1.fandom.com/wiki/Dallas_Grand_Prix_Circuit",
-                "role": "community_secondary_unverified"
-              },
-              {
                 "url": "https://www.motorsportmagazine.com/database/races/1984-dallas-grand-prix/",
                 "role": "race_context_not_apex_mapping"
               },
               {
-                "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1466,7 +1431,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1476,8 +1441,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1492,13 +1457,13 @@
             "uk": "Широкий початковий лівий"
           },
           "description": {
-            "en": "Just after the start the route swept left through a broad hairpin-like double bend marked by temporary concrete blocks. The race report describes this as two corners in one; that does not prove a specific official turn-number assignment.",
-            "uk": "Одразу після старту маршрут переходив у широку ліву дугу, схожу на подвійну шпильку, обмежену тимчасовими бетонними блоками. Репортаж описує її як два повороти в одному, але цього недостатньо для встановлення офіційних номерів віражів."
+            "en": "Just after the start the route swept left through a broad hairpin-like double bend marked by temporary concrete blocks. The race report describes this as two corners in one; that does not prove a specific official turn-number assignment. The 1982 opening left turned through roughly 180 degrees and tightened towards Atwater Street. The revised 1983–88 course must not be used to assign a modern number to this first-year bend.",
+            "uk": "Одразу після старту маршрут переходив у широку ліву дугу, схожу на подвійну шпильку, обмежену тимчасовими бетонними блоками. Репортаж описує її як два повороти в одному, але цього недостатньо для встановлення офіційних номерів віражів. Перший лівий віраж конфігурації 1982 року розвертав трасу приблизно на 180 градусів і звужувався перед виходом на Atwater Street. Схему зміненої траси 1983–1988 років не можна використовувати для присвоєння номера цьому повороту."
           },
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1508,8 +1473,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1530,7 +1495,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1540,8 +1505,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1556,13 +1521,13 @@
             "uk": "Підхід до Woodbridge"
           },
           "description": {
-            "en": "A right-hand turn led onto Woodbridge Street, past a church, and towards a very tight left hairpin. Street names are useful historical identifiers, but they should be linked to the 1982 map rather than projected onto today's downtown street race.",
-            "uk": "Правий поворот виводив на Woodbridge Street повз церкву до дуже тісної лівої шпильки. Історичні назви вулиць допомагають відновити маршрут, але їх слід звіряти зі схемою 1982 року, а не переносити на сучасні міські перегони."
+            "en": "A right-hand turn led onto Woodbridge Street, past a church, and towards a very tight left hairpin. Street names are useful historical identifiers, but they should be linked to the 1982 map rather than projected onto today's downtown street race. The especially tight 1982 hairpin was redesigned before the 1983 Grand Prix, so its position and geometry must be read on the first-year map, not the later Detroit layout.",
+            "uk": "Правий поворот виводив на Woodbridge Street повз церкву до дуже тісної лівої шпильки. Історичні назви вулиць допомагають відновити маршрут, але їх слід звіряти зі схемою 1982 року, а не переносити на сучасні міські перегони. Особливо тісну шпильку конфігурації 1982 року переробили до Гран-прі 1983 року. Тому її розташування й геометрію слід перевіряти за картою першого року, а не за пізнішою схемою Детройта."
           },
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1572,8 +1537,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1594,7 +1559,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1604,8 +1569,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1626,7 +1591,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1636,8 +1601,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1658,7 +1623,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1668,8 +1633,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1690,7 +1655,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1700,8 +1665,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1722,7 +1687,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1732,8 +1697,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -1754,7 +1719,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-            "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit"
+            "https://www.racingcircuits.info/north-america/usa/detroit.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -1764,8 +1729,8 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.detroitgp.com/event-info/about-the-detroit-street-circuit",
-                "role": "historical_context_unverified_apex_mapping"
+                "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2044,7 +2009,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2056,6 +2022,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2076,7 +2046,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2088,6 +2059,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2108,7 +2083,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2120,6 +2096,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2140,7 +2120,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2152,6 +2133,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2172,7 +2157,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2184,6 +2170,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2198,13 +2188,14 @@
             "uk": "«Летючий кілометр» до Montesilvano"
           },
           "description": {
-            "en": "The famous Flying Kilometre lay along the rapid run towards Montesilvano. Its name evokes the extraordinary speeds achieved on an ordinary road, but the dangers were real: fencing, spectators and roadside buildings could not provide the protections expected of a modern Grand Prix facility.",
-            "uk": "Знаменитий «летючий кілометр» пролягав на швидкому підході до Монтезільвано. Назва нагадує про неймовірні швидкості на звичайній дорозі, але ризики були цілком реальними: огорожі, глядачі й будинки обабіч шляху не забезпечували захисту сучасного автодрому."
+            "en": "The famous Flying Kilometre lay along the rapid run towards Montesilvano. Its name evokes the extraordinary speeds achieved on an ordinary road, but the dangers were real: fencing, spectators and roadside buildings could not provide the protections expected of a modern Grand Prix facility. The Flying Kilometre was a measured high-speed stretch on the return leg, not a uniquely numbered corner. A separate chicane installed before the pits in 1934 must not be conflated with this straight.",
+            "uk": "Знаменитий «летючий кілометр» пролягав на швидкому підході до Монтезільвано. Назва нагадує про неймовірні швидкості на звичайній дорозі, але ризики були цілком реальними: огорожі, глядачі й будинки обабіч шляху не забезпечували захисту сучасного автодрому. «Летючий кілометр» був вимірюваною швидкісною ділянкою на зворотному відрізку кола, а не окремим нумерованим поворотом. Його не слід плутати з шиканою, облаштованою перед боксами у 1934 році."
           },
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2216,6 +2207,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2236,7 +2231,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara",
-            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/"
+            "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2248,6 +2244,10 @@
               {
                 "url": "https://www.storieeluoghidabruzzo.it/la-coppa-acerbo/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2360,7 +2360,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2372,6 +2373,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2386,13 +2391,14 @@
             "uk": "Підйом Avenida da Boavista"
           },
           "description": {
-            "en": "The long, uphill Avenida da Boavista had tram lines down its middle and carried the cars on one carriageway. The road offered sustained acceleration but no purpose-built run-off; the ordinary urban surfaces and street furniture made this very different from a permanent Grand Prix straight.",
-            "uk": "Довга Avenida da Boavista підіймалася вгору, а трамвайні рейки проходили її серединою; боліди користувалися одним із проїздів. Тут можна було довго розганятися, але спеціальних зон вильоту не було. Звичайний асфальт і міські перешкоди робили цю пряму несхожою на стаціонарний автодром."
+            "en": "The long, uphill Avenida da Boavista had tram lines down its middle and carried the cars on one carriageway. The road offered sustained acceleration but no purpose-built run-off; the ordinary urban surfaces and street furniture made this very different from a permanent Grand Prix straight. Boavista is the name of the avenue and circuit district, not evidence for a distinct officially numbered corner. The 1958–60 Grand Prix route also must not be confused with the shorter 2005 revival.",
+            "uk": "Довга Avenida da Boavista підіймалася вгору, а трамвайні рейки проходили її серединою; боліди користувалися одним із проїздів. Тут можна було довго розганятися, але спеціальних зон вильоту не було. Звичайний асфальт і міські перешкоди робили цю пряму несхожою на стаціонарний автодром. Boavista — назва проспекту й району, а не доказ існування окремого офіційно нумерованого повороту. Конфігурацію Гран-прі 1958–1960 років також не можна плутати зі скороченою трасою відроджених перегонів 2005 року."
           },
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2404,6 +2410,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2424,7 +2434,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2436,6 +2447,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2456,7 +2471,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2468,6 +2484,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2488,7 +2508,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2500,6 +2521,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2520,7 +2545,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2532,6 +2558,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
@@ -2552,7 +2582,8 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
-            "https://www.motorsportmagazine.com/database/circuits/oporto/"
+            "https://www.motorsportmagazine.com/database/circuits/oporto/",
+            "https://www.statsf1.com/en/circuit-porto.aspx"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -2564,6 +2595,10 @@
               {
                 "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
                 "role": "historical_context_unverified_apex_mapping"
+              },
+              {
+                "url": "https://www.statsf1.com/en/circuit-porto.aspx",
+                "role": "historical_layout_reference_not_numbered_fia_map"
               }
             ],
             "geometric_anchor_verified": false,
