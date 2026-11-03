@@ -52,8 +52,8 @@ test('twenty new Dallas 1984 and Porto 1958–60 individual bends have unique or
       assert.equal(bend.review_status, 'independent_review_pending');
       assert.match(bend.evidence_limit, /not a period FIA-numbered apex crosswalk/);
       assert.ok(bend.label.en && bend.label.uk);
-      assert.ok(bend.explanation.en.trim().split(/\\s+/).length >= 30, bend.label.en);
-      assert.ok(bend.explanation.uk.trim().split(/\\s+/).length >= 28, bend.label.uk);
+      assert.ok(bend.explanation.en.trim().split(/\s+/).length >= 30, bend.label.en);
+      assert.ok(bend.explanation.uk.trim().split(/\s+/).length >= 28, bend.label.uk);
       assert.match(bend.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
       assert.ok(bend.source_urls.includes(spec.contemporary));
       assert.ok(bend.source_urls.includes(spec.periodMap));
