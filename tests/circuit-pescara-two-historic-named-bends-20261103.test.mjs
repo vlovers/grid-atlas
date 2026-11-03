@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { candidateCornerGuides, candidateUnnumberedNamedBendStudies } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import { candidateCornerGuides, candidateUnnumberedNamedBendStudies, candidateUnnumberedPeriodBendStudies } from '../apps/web/src/components/editorial/circuit-candidates.ts';
 import { hasPublicationReadyCornerGuide } from '../apps/web/src/components/editorial/circuit-release.ts';
 
 const localHistory = 'https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/';
@@ -37,4 +37,26 @@ test('regional names and the Cappelle S complex do not create a numbered 1957 gu
   assert.equal(candidateCornerGuides.some(guide => guide.circuit_id === 'pescara'), false);
   assert.equal(hasPublicationReadyCornerGuide('pescara'), false);
   assert.equal(candidateUnnumberedNamedBendStudies.length, 13);
+});
+
+test('historical named features are typed: five bends, four complexes, two sectors, two unresolved', () => {
+  const types = new Map([
+    ['single_bend', 5],
+    ['multi_bend_complex', 4],
+    ['route_sector', 2],
+    ['named_feature_unresolved', 2],
+  ]);
+  assert.equal(candidateUnnumberedNamedBendStudies.length, 13);
+  for (const [type, count] of types) {
+    assert.equal(candidateUnnumberedNamedBendStudies.filter(entry => entry.feature_kind === type).length, count, type);
+  }
+  for (const entry of candidateUnnumberedNamedBendStudies) {
+    assert.equal(entry.period_name_independently_verified, false);
+    assert.equal(entry.geometric_anchor_verified, false);
+    assert.equal(entry.numbered_apex_verified, false);
+    assert.equal(entry.official_turn_number, null);
+    assert.equal(entry.publication_allowed, false);
+  }
+  assert.equal(candidateUnnumberedPeriodBendStudies.length, 8);
+  assert.ok(candidateUnnumberedPeriodBendStudies.every(entry => entry.name === null && entry.official_turn_number === null));
 });
