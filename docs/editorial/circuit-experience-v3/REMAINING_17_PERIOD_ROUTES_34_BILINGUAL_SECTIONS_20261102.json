@@ -500,7 +500,53 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 1,
+          "historical_layout_id": "ain-diab-1",
+          "layout_id": "ain-diab-1",
+          "period": "1958",
+          "label": {
+            "en": "Opening corner of the 1958 Moroccan Grand Prix",
+            "uk": "Перший поворот Гран-прі Марокко 1958 року"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A Motor Sport retrospective places Stirling Moss and Phil Hill at the first corner immediately after the 1958 start. That establishes an opening bend in the race narrative, not its handedness or a numbered position on an original FIA drawing. The coast-road and forest layout remained the 1957 configuration, but the exact first apex still requires a dated map.",
+            "uk": "Ретроспективний матеріал Motor Sport описує, як Стірлінг Мосс і Філ Гілл боролися біля першого повороту одразу після старту 1958 року. Це підтверджує початковий віраж у перебігу гонки, але не його напрямок і не номер на оригінальній схемі FIA. Конфігурація прибережних та лісових доріг залишалася від 1957 року, проте точне місце першого апекса ще потребує датованої карти."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+              "role": "historical_retrospective_first_corner_not_fia_apex_number"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "bremgarten",
@@ -4193,6 +4239,204 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false
+        }
+      ],
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 2,
+          "historical_layout_id": "pescara-1",
+          "layout_id": "pescara-1",
+          "period": "1957",
+          "label": {
+            "en": "Westward turn from the Adriatic road",
+            "uk": "Поворот на захід з Адріатичної дороги"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A historical Italian route description places a turn inland, towards the west, after the opening stretch along the former Via Nazionale Adriatica. This junction changed the lap from a town-road run into the long climb towards Villa Raspa and Spoltore. The account supports the direction of travel, but supplies neither a 1957 FIA corner number nor a surveyed apex.",
+            "uk": "Італійський історичний опис маршруту вказує на поворот углиб суходолу, на захід, після початкової ділянки колишньої Via Nazionale Adriatica. Саме тут міська дорога переходила у довгий підйом до Villa Raspa та Spoltore. Джерело підтверджує напрям руху, але не дає ані номера повороту FIA за 1957 рік, ані точної координати апекса."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+            "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+            },
+            {
+              "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "parent_route_section_order": 4,
+          "historical_layout_id": "pescara-1",
+          "layout_id": "pescara-1",
+          "period": "1957",
+          "label": {
+            "en": "Foothill corners on the approach to Spoltore",
+            "uk": "Серія поворотів на підході до Спольторе"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "multi_bend_complex",
+          "explanation": {
+            "en": "Denis Jenkinson watched practice from the foothills leading towards Spoltore and described Maserati drivers throwing their cars through the corners there. The report establishes a real sequence of bends and the difficult road surface, but it does not enumerate them. This is one documented bend complex, not an invented set of separately numbered 1957 turns.",
+            "uk": "Під час тренування Деніс Дженкінсон спостерігав із передгір'їв на підході до Spoltore й описував, як пілоти Maserati проходили там низку поворотів. Репортаж підтверджує існування зв'язки та складне дорожнє покриття, але не перелічує окремі апекси. Це один задокументований комплекс, а не вигаданий набір пронумерованих поворотів 1957 року."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+            "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+            },
+            {
+              "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 3,
+          "parent_route_section_order": 7,
+          "historical_layout_id": "pescara-1",
+          "layout_id": "pescara-1",
+          "period": "1957",
+          "label": {
+            "en": "Montesilvano turn south onto Via Adriatica",
+            "uk": "Поворот у Монтезільвано на південь до Via Adriatica"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After the long fast road towards Montesilvano, the historical route turned south onto the Adriatic coast road for the return to Pescara. Both a contemporary race report and an Italian circuit history identify this change of direction. Neither source certifies its precise apex position, an official corner name, or its number on a 1957 FIA plan.",
+            "uk": "Після довгої швидкісної дороги до Montesilvano історичний маршрут повертав на південь, на прибережну Via Adriatica, для повернення до Пескари. Цю зміну напрямку описують і тогочасний репортаж, і італійська історія траси. Жодне джерело не підтверджує точне місце апекса, офіційну назву чи номер на схемі FIA 1957 року."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+            "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+            },
+            {
+              "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 4,
+          "parent_route_section_order": 1,
+          "historical_layout_id": "pescara-1",
+          "layout_id": "pescara-1",
+          "period": "1957",
+          "label": {
+            "en": "Corners before the Pescara pit area",
+            "uk": "Зв'язка поворотів перед боксами Пескари"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "multi_bend_complex",
+          "explanation": {
+            "en": "The 1957 race report says Horace Gould went straight into straw bales at the corners before the pits on the opening lap. This identifies a group of bends near the lap's urban end, not one certified corner. The text does not state how many apexes the group contained or whether a pre-war artificial chicane was unchanged in 1957.",
+            "uk": "У репортажі Гран-прі 1957 року сказано, що Горас Ґулд на першому колі поїхав прямо в солом'яні тюки на поворотах перед боксами. Це свідчення про групу віражів наприкінці міської частини кола, а не один підтверджений поворот. Джерело не встановлює кількість апексів і не доводить, що довоєнна штучна шикана залишилася незмінною у 1957 році."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+            "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+            "https://www.formula1.com/en/results/1957/races/156/pescara/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+            },
+            {
+              "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
+              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
+              "role": "official_formula1_result_classification_not_corner_geometry"
+            }
+          ],
+          "evidence_limit": "A source-backed geographical reading only; not a period FIA-numbered apex crosswalk.",
+          "media_rights": {
+            "external_reference_only": true,
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
         }
       ]
     },
