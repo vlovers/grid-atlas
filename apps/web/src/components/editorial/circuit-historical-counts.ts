@@ -31,6 +31,14 @@ export const historicalCornerCountObservations: readonly CountObservation[] = [
   { circuit_id:'sebring', layout_id:'sebring-1', period:'1959', turns:17, basis:'f1db_layout_attribute', source_url:'https://lapledger.org/circuits/sebring', locator:'Every layout / F1DB sebring-1 / 8.36 km / 17 turns / 1959', source_family:'f1db_derivative', caveat:{en:'F1DB layout count for the 1959 airfield circuit, not the numbered turns of the later 3.7-mile course.',uk:'Кількість F1DB для аеродромної траси 1959 року, не нумерація поворотів пізнішого 3,7-мильного маршруту.'}},
   { circuit_id:'sebring', layout_id:'sebring-1', period:'1959', turns:12, basis:'page_headline', source_url:'https://lapledger.org/circuits/sebring', locator:'Page headline / Turns 12, while same-page F1DB sebring-1 row reports 17', source_family:'secondary_summary', caveat:{en:'The page contradicts its own period-layout count; neither figure certifies 1959 FIA apex numbering.',uk:'Заголовок сторінки суперечить рядку історичної конфігурації; жодне число не підтверджує нумерацію апексів FIA 1959 року.'}},
 ];
+/** A canonical page key, not a claim of source independence or historical authenticity. */
+export function canonicalHistoricalCountSourcePage(rawUrl: string): string {
+  const url = new URL(rawUrl);
+  const host = url.hostname.toLowerCase().replace(/^www\./, '');
+  const path = url.pathname.replace(/\/+$/, '') || '/';
+  return host + path;
+}
+
 export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistoricalRoutes.map(route => {
   const observations = historicalCornerCountObservations.filter(x => x.circuit_id === route.circuit_id);
   const same = observations.filter(x => x.layout_id === route.layout_id && x.period === route.period);
@@ -38,11 +46,13 @@ export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistorica
   const values = [...new Set(same.map(x => x.turns))].sort((a,b) => a-b);
   // Group by actual source page, not by source_family. A headline and its
   // derivative F1DB row can carry different family labels but share a publisher.
-  const sourcePages = [...new Set(same.map(x => x.source_url))];
-  const samePageConflicts = sourcePages.flatMap(source_url => {
-    const reported_counts = [...new Set(same.filter(x => x.source_url === source_url)
-      .map(x => x.turns))].sort((a,b) => a-b);
-    return reported_counts.length > 1 ? [{ source_url, reported_counts }] : [];
+  // URLs with/without www, query parameters, fragments and trailing slashes
+  // refer to the same publisher page, not independent historical witnesses.
+  const sourcePages = [...new Set(same.map(x => canonicalHistoricalCountSourcePage(x.source_url)))];
+  const samePageConflicts = sourcePages.flatMap(source_page => {
+    const related = same.filter(x => canonicalHistoricalCountSourcePage(x.source_url) === source_page);
+    const reported_counts = [...new Set(related.map(x => x.turns))].sort((a,b) => a-b);
+    return reported_counts.length > 1 ? [{ source_url: related[0].source_url, source_page, reported_counts }] : [];
   });
   return {
     circuit_id: route.circuit_id, layout_id: route.layout_id, historical_period: route.period,

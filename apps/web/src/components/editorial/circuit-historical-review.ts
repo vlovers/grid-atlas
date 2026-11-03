@@ -1,5 +1,6 @@
 import { candidateHistoricalCornerReviewQueue, candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
 import { historicalCornerCountReviewByCircuit } from './circuit-historical-counts.ts';
+import { historicalMapRightsReviewByCircuit } from './circuit-historical-map-audit.ts';
 
 /** Research-only claim triage; a located passage is not an FIA apex receipt. */
 export const historicalCornerClaimTriage = candidateHistoricalCornerReviewQueue.map(claim => {
@@ -99,9 +100,11 @@ export const historicalCornerEvidenceWorklist = historicalCornerClaimTriage.map(
 export const historicalCornerEvidenceWorklistByCircuit = historicalCornerClaimTriageByCircuit.map(circuit => {
   const claims = historicalCornerEvidenceWorklist.filter(item => item.circuit_id === circuit.circuit_id);
   const countReview = historicalCornerCountReviewByCircuit.find(item => item.circuit_id === circuit.circuit_id)!;
+  const mapReview = historicalMapRightsReviewByCircuit.find(item => item.circuit_id === circuit.circuit_id)!;
   return {
     ...circuit,
     corner_count_reconciliation: countReview,
+    historical_map_and_media_audit: mapReview,
     historical_period: claims[0]?.historical_period ?? null,
     priority_1_missing_passage: claims.filter(item => item.priority === 'P1_find_claim_passage').length,
     priority_1_with_bilingual_specific_gaps: claims.filter(item =>
