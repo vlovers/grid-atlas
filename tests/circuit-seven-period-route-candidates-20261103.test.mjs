@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { candidateCornerGuides, candidateUnnumberedHistoricalRoutes } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import { candidateCornerGuides, candidateUnnumberedHistoricalRoutes, candidateUnnumberedGeographicRoutes } from '../apps/web/src/components/editorial/circuit-candidates.ts';
 import { hasPublicationReadyCornerGuide, isCircuitEditionApproved } from '../apps/web/src/components/editorial/circuit-release.ts';
 
 // These source-linked route readings must never be counted as 68 certified turns.
@@ -49,5 +49,48 @@ test('unnumbered route studies do not inflate integrated turn-guide counts or by
     assert.equal(candidateCornerGuides.some(guide => guide.circuit_id === id), false, id);
     assert.equal(hasPublicationReadyCornerGuide(id), false, id);
     assert.equal(isCircuitEditionApproved(id), false, id);
+  }
+});
+
+test('68 historical sections distinguish 55 route descriptions from 13 non-geometric context passages', () => {
+  const expectedGeographic = new Map([
+    ['ain-diab', 2], ['clermont-ferrand', 6], ['dallas', 13],
+    ['detroit', 10], ['pescara', 7], ['porto', 7], ['sebring', 10],
+  ]);
+  assert.equal(candidateUnnumberedGeographicRoutes.length, 7);
+  let geographic = 0;
+  let raceHistory = 0;
+  let layoutContext = 0;
+  for (const route of candidateUnnumberedHistoricalRoutes) {
+    assert.ok(route.route_scope?.en && route.route_scope?.uk, route.circuit_id);
+    assert.match(route.route_scope.uk, /[А-Яа-яІіЇїЄєҐґ]/);
+    assert.equal(route.media_rights?.external_reference_only, true);
+    assert.equal(route.media_rights?.third_party_map_reuse_approved, false);
+    assert.equal(route.media_rights?.third_party_photo_reuse_approved, false);
+    const geographical = candidateUnnumberedGeographicRoutes.find(entry => entry.circuit_id === route.circuit_id);
+    assert.ok(geographical, route.circuit_id);
+    assert.equal(geographical.sections.length, expectedGeographic.get(route.circuit_id));
+    for (const section of route.sections) {
+      assert.equal(section.official_turn_numbers, null);
+      assert.equal(section.numbered_apex_verified, false);
+      if (section.section_kind === 'route_geography') geographic++;
+      else if (section.section_kind === 'race_history') raceHistory++;
+      else if (section.section_kind === 'layout_context') layoutContext++;
+      else assert.fail(`Unexpected historical section kind: ${section.section_kind}`);
+    }
+  }
+  assert.equal(geographic, 55);
+  assert.equal(raceHistory, 11);
+  assert.equal(layoutContext, 2);
+  assert.equal(geographic + raceHistory + layoutContext, 68);
+});
+
+test('1958 Morocco results link is canonical and never treated as a numbered turn map', () => {
+  const route = candidateUnnumberedHistoricalRoutes.find(entry => entry.circuit_id === 'ain-diab');
+  assert.ok(route);
+  for (const section of route.sections) {
+    for (const url of section.source_urls) assert.doesNotMatch(url, /morocco%20/i);
+    for (const source of section.source_roles) assert.doesNotMatch(source.url, /morocco%20/i);
+    assert.equal(section.geometric_anchor_verified, false);
   }
 });
