@@ -66,7 +66,7 @@ test('Detroit 1982 and Porto 1960 preserve 19 distinct bilingual period-report b
 });
 
 test('all period-report bends remain unnumbered and unpublished', () => {
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 48); // 8 Sebring + 17 Detroit + 7 Porto + 16 Dallas.
+  assert.equal(candidateUnnumberedPeriodBendStudies.length, 53); // 8 Sebring + 17 Detroit + 7 Porto + 16 Dallas + 4 Pescara + 1 Ain-Diab.
   assert.ok(candidateUnnumberedPeriodBendStudies.every(bend =>
     bend.official_turn_number === null && bend.numbered_apex_verified === false && bend.publication_allowed === false
   ));
