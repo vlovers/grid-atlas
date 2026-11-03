@@ -949,7 +949,213 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "named_bend_studies": [
+        {
+          "reading_order": 1,
+          "name": "Manson",
+          "name_origin": {
+            "en": "The name refers to the Manson locality on the volcanic hillside.",
+            "uk": "Назва пов’язана з місцевістю Мансон на вулканічному схилі."
+          },
+          "explanation": {
+            "en": "After the start, the old course climbed for roughly 600 metres to the Manson curve. It set up the plunge towards Gravenoire, making exit balance more important than treating this as an isolated modern corner.",
+            "uk": "Після старту стара траса піднімалася приблизно 600 метрів до дуги Мансон. Вона готувала стрімкий спуск до Гравенуара, тому баланс боліда на виході був важливішим за окремий сучасний номер повороту."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "name": "Gravenoire",
+          "name_origin": {
+            "en": "The name comes from the Gravenoire volcanic hillside and descent.",
+            "uk": "Назва походить від вулканічного схилу та спуску Гравенуар."
+          },
+          "explanation": {
+            "en": "The long Charade lap descended past volcanic cliffs towards the Gravenoire section. The original route ran beside steep drops, unlike the shorter circuit introduced in 1989; this name identifies the historic descent, not one verified numbered apex.",
+            "uk": "На довгому колі Charade траса спускалася повз вулканічні скелі до ділянки Гравенуар. Історична дорога пролягала біля урвищ, на відміну від скороченої конфігурації 1989 року. Назва позначає спуск, а не один підтверджений нумерований апекс."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 3,
+          "name": "Belvédère",
+          "name_origin": {
+            "en": "The venue also calls this viewpoint the Grand Balcon, or great balcony.",
+            "uk": "Автодром також називає цей оглядовий орієнтир Grand Balcon — «великий балкон»."
+          },
+          "explanation": {
+            "en": "Belvédère followed the Charade pass on the old mountain loop. The name evokes a viewpoint above the surrounding terrain; its position belongs to the pre-1989 road course, and the operator's historical description does not establish a unique FIA turn number.",
+            "uk": "Belvédère йшов після перевалу Charade на старій гірській петлі. Назва нагадує про оглядовий майданчик над навколишньою місцевістю. Це орієнтир конфігурації до 1989 року, але історичний опис автодрому не встановлює окремого номера FIA."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 4,
+          "name": "Jumeaux",
+          "name_origin": {
+            "en": "Jumeaux literally means twins in French; the original naming decision is not documented.",
+            "uk": "Jumeaux французькою буквально означає «близнюки»; обставини появи назви не задокументовані."
+          },
+          "explanation": {
+            "en": "The operator places the Jumeaux bends within the Gravenoire descent, between volcanic rock and a drop towards Royat. They form a named sequence rather than a licence to assign one modern number to every change of direction.",
+            "uk": "За описом автодрому віражі Jumeaux лежали на спуску Гравенуар між вулканічною скелею та урвищем у бік Руая. Це поіменована зв’язка, але вона не дає підстав присвоювати сучасний номер кожній зміні напрямку."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 5,
+          "name": "Carrière",
+          "name_origin": {
+            "en": "Carrière is French for quarry; whether a specific quarry gave the bend its name still needs confirmation.",
+            "uk": "Carrière французькою означає «кар’єр»; зв’язок назви з конкретним кар’єром ще потрібно підтвердити."
+          },
+          "explanation": {
+            "en": "The old route reached Carrière after Belvédère and Jumeaux and before the banking near the road to Royat. This relative sequence is recorded by the venue, but the available prose is not a numbered map of individual apexes.",
+            "uk": "На старому колі Carrière йшов після Belvédère та Jumeaux і перед віражем із нахилом полотна поблизу дороги на Руая. Таку послідовність підтверджує автодром, але текстовий опис не замінює нумеровану карту окремих апексів."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 6,
+          "name": "Champeaux",
+          "name_origin": {
+            "en": "The name refers to the nearby Champeaux locality.",
+            "uk": "Назва походить від сусідньої місцевості Шампо."
+          },
+          "explanation": {
+            "en": "Champeaux marked the start of the old lap's demanding closing section, before the Ferme S-bends and Petit Pont. Its role in the historic sequence is clear, but the shortened post-1989 connection must not be projected onto the 1972 Grand Prix route.",
+            "uk": "Champeaux позначав початок складної фінальної частини старого кола перед S-подібною зв’язкою Ferme та Petit Pont. Його місце в історичній послідовності зрозуміле, але нову перемичку після 1989 року не можна переносити на трасу Гран-прі 1972 року."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 7,
+          "name": "Ferme",
+          "name_origin": {
+            "en": "Ferme means farm; the circuit operator says the S-bends faced a farm.",
+            "uk": "Ferme означає «ферма»; автодром пояснює, що S-подібна зв’язка проходила навпроти ферми."
+          },
+          "explanation": {
+            "en": "The Ferme section was a left-right S-bend on the old eight-kilometre circuit. The venue illustrates Graham Hill negotiating it in the 1969 French Grand Prix, making the historical name and period credible without proving the number of either apex.",
+            "uk": "Ferme була ліво-правою S-подібною зв’язкою на старій восьмикілометровій трасі. Автодром показує, як Грем Гілл проходив її на Гран-прі Франції 1969 року. Це підтверджує назву й епоху, але не офіційні номери обох апексів."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 8,
+          "name": "Petit Pont",
+          "name_origin": {
+            "en": "Petit Pont means small bridge; the Artière stream passes beneath it.",
+            "uk": "Petit Pont означає «малий міст»; під ним протікає струмок Артьєр."
+          },
+          "explanation": {
+            "en": "The descent to Petit Pont came after the Ferme S-bends and preceded a short climb. The named bridge and stream provide unusually tangible evidence for the origin of a Charade corner name, although the 1972 apex number remains unverified.",
+            "uk": "Спуск до Petit Pont ішов після S-подібної зв’язки Ferme й перед коротким підйомом. Міст і струмок дають конкретне підтвердження походження назви віражу Charade, хоча номер його апекса в 1972 році досі не перевірений."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 9,
+          "name": "Marlboro hairpin",
+          "name_origin": null,
+          "explanation": {
+            "en": "The venue's retrospective places the Marlboro hairpin after the climb beyond Petit Pont on the old long circuit. The name is historically attested in that sequence, but its naming origin and a period FIA apex number have not been independently established.",
+            "uk": "В історичному описі автодрому шпилька Marlboro розташована після підйому за Petit Pont на старій довгій трасі. Назва засвідчена для цієї послідовності, але її походження та номер апекса FIA відповідної епохи ще не підтверджені."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "dallas",
