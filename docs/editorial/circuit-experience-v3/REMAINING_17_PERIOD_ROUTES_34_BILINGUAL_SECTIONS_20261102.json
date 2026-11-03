@@ -1154,6 +1154,49 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false
+        },
+        {
+          "reading_order": 10,
+          "name": "Thèdes",
+          "name_origin": {
+            "en": "The label comes from the nearby Thèdes locality; the exact period naming of each change of direction in the S and curve remains unverified.",
+            "uk": "Назва пов’язана із сусідньою місцевістю Тед; точні назви окремих віражів S-подібної зв’язки й дуги в той період не підтверджені."
+          },
+          "explanation": {
+            "en": "Beyond the Marlboro hairpin, the original long Charade loop ran through the Thèdes section. The circuit's own historical account describes an S-shaped change of direction, a further curve and the descent here. These are a linked complex, not a certified single FIA-numbered apex.",
+            "uk": "Після шпильки Marlboro старе довге коло Шарада проходило ділянку Тед. Власний історичний огляд автодрому описує тут S-подібну перекладку, наступну дугу й спуск. Це пов'язана секція, а не один підтверджений поворот із номером FIA."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 11,
+          "name": "Rosier",
+          "name_origin": null,
+          "explanation": {
+            "en": "The official venue history places Rosier near the end of the old eight-kilometre lap, after the Thèdes descent and before the start-finish line. The same venue recalls Louis Rosier's role in the circuit's conception, but does not explicitly establish that the bend was named for him.",
+            "uk": "Офіційна історія автодрому розташовує Rosier наприкінці старого восьмикілометрового кола, після спуску Тед і перед лінією старту-фінішу. Автодром також згадує участь Луї Розьє у створенні траси, але прямо не підтверджує, що віраж назвали на його честь."
+          },
+          "source_urls": [
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+          ],
+          "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
+          "historical_layout_id": "clermont-ferrand-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
         }
       ]
     },
