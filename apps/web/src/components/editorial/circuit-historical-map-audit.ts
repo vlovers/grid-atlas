@@ -1,10 +1,28 @@
 import { dallas1984MagazineMapLeads, dallas1984DirectionDispute } from './circuit-dallas-1984-source-audit.ts';
 import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
-import { canonicalHistoricalCountSourcePage } from './circuit-historical-counts.ts';
 
 /** References to inspect, never copies of third-party artwork or approval receipts.
  * A modern venue page and a Formula 1 classification cannot establish 1950s–1980s apex numbers.
  */
+/** Canonical document identity for map provenance. Most query strings are
+ * tracking parameters, but gdecarli.it/php2 uses var1..var5 to SELECT the
+ * actual archival page: dropping those would merge different maps.
+ * This key is only a de-duplication aid, not independent authentication.
+ */
+export function canonicalHistoricalMapSourcePage(rawUrl: string): string {
+  const url = new URL(rawUrl);
+  const host = url.hostname.toLowerCase().replace(/^www\\./, '');
+  const path = url.pathname.replace(/\\/+$/, '') || '/';
+  const selectors = host === 'gdecarli.it' && path.startsWith('/php2/')
+    ? [...url.searchParams.entries()]
+      .filter(([key, value]) => /^var[1-5]$/.test(key) && value.trim().length > 0)
+      .sort(([left, leftValue], [right, rightValue]) =>
+        left.localeCompare(right) || leftValue.localeCompare(rightValue))
+    : [];
+  const query = new URLSearchParams(selectors).toString();
+  return host + path + (query ? '?' + query : '');
+}
+
 export const historicalMapReferenceAudit = [
   {
     circuit_id: "ain-diab", layout_id: "ain-diab-1", period: "1958",
@@ -192,9 +210,9 @@ export const historicalMapRightsReviewByCircuit = candidateUnnumberedHistoricalR
     source_references: references.length,
     // Count canonical pages, not URL variants or multiple claims from one page.
     // This is a provenance diagnostic, NEVER an independent FIA-map approval.
-    distinct_source_pages: new Set(references.map(item => canonicalHistoricalCountSourcePage(item.source_url))).size,
+    distinct_source_pages: new Set(references.map(item => canonicalHistoricalMapSourcePage(item.source_url))).size,
     duplicate_source_pages: references.length -
-      new Set(references.map(item => canonicalHistoricalCountSourcePage(item.source_url))).size,
+      new Set(references.map(item => canonicalHistoricalMapSourcePage(item.source_url))).size,
     recorded_license_pages: references.filter(item => item.recorded_asset_license !== null).length,
     independently_authenticated_period_numbered_maps: 0,
     numbered_apex_crosswalk_verified: false as const,
