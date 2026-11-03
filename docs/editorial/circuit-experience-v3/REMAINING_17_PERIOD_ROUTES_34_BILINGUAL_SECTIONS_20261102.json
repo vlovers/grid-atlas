@@ -4321,7 +4321,8 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "single_bend",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator": "GPKingdom, Alessio Evangelista (4 December 2024), section 'La targa che omaggia il Circuito di Pescara': paragraph identifying the Spoltore–Cappelle bend as 'La Curva della Morte'. Retrospective name evidence only, not an authenticated 1957 FIA apex."
         },
         {
           "reading_order": 2,
@@ -4347,7 +4348,11 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
-          "period_name_independently_verified": false
+          "period_name_independently_verified": false,
+          "source_locator_gap": {
+            "en": "The linked 40mila local-history page could not be reopened for a verifiable passage in this review. The reported choice between two nearby Cappelle S-bends remains unresolved; obtain an accessible archival passage and authenticated period map.",
+            "uk": "Під час цієї перевірки не вдалося відкрити матеріал 40mila для звірення конкретного уривка. Невизначеність між двома сусідніми S-подібними зв'язками біля Каппелле зберігається; потрібні доступний архівний текст і підтверджена схема відповідної епохи."
+          }
         }
       ],
       "period_bend_studies": [

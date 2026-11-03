@@ -138,6 +138,7 @@ export const candidateHistoricalCornerReviewQueue = [
       role: index === 0 ? feature.source_role : 'supplementary_route_context_not_independent_name_or_number_verification',
     })),
     source_locator: 'source_locator' in feature && typeof feature.source_locator === 'string' ? feature.source_locator : null,
+    source_locator_gap: 'source_locator_gap' in feature ? feature.source_locator_gap : null,
     name_origin: 'name_origin' in feature ? feature.name_origin : null,
     official_turn_number: null,
     geometric_anchor_verified: false as const,
