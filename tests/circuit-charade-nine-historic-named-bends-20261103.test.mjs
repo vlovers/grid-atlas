@@ -5,11 +5,11 @@ import { hasPublicationReadyCornerGuide } from '../apps/web/src/components/edito
 
 const expectedNames = [
   'Manson', 'Gravenoire', 'Belvédère', 'Jumeaux', 'Carrière',
-  'Champeaux', 'Ferme', 'Petit Pont', 'Marlboro hairpin',
+  'Champeaux', 'Ferme', 'Petit Pont', 'Marlboro hairpin', 'Thèdes', 'Rosier',
 ];
 const venue = 'https://www.charade.fr/galerie-photos/charade-dans-le-retro/';
 
-test('nine individually written Charade 1972 named bends retain official venue provenance and bilingual copy', () => {
+test('eleven individually written Charade historic named bends retain official venue provenance and bilingual copy', () => {
   assert.equal(candidateUnnumberedNamedBendStudies.length, expectedNames.length);
   assert.deepEqual(candidateUnnumberedNamedBendStudies.map(bend => bend.name), expectedNames);
   const enStories = new Set();
@@ -32,14 +32,14 @@ test('nine individually written Charade 1972 named bends retain official venue p
     assert.match(bend.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
     enStories.add(bend.explanation.en);
     ukStories.add(bend.explanation.uk);
-    if (bend.name === 'Marlboro hairpin') assert.equal(bend.name_origin, null);
+    if (['Marlboro hairpin', 'Rosier'].includes(bend.name)) assert.equal(bend.name_origin, null);
     else {
       assert.ok(bend.name_origin?.en && bend.name_origin?.uk, bend.name);
       assert.match(bend.name_origin.uk, /[А-Яа-яІіЇїЄєҐґ]/);
     }
   }
-  assert.equal(enStories.size, 9);
-  assert.equal(ukStories.size, 9);
+  assert.equal(enStories.size, 11);
+  assert.equal(ukStories.size, 11);
 });
 
 test('historic venue names do not imply a numbered FIA map or bypass publication gate', () => {
