@@ -90,3 +90,71 @@ export const candidateUnnumberedNamedBendStudies = candidateUnnumberedHistorical
 export const candidateUnnumberedPeriodBendStudies = candidateUnnumberedHistoricalRoutes.flatMap(route =>
   route.period_bend_studies.map(bend => ({ ...bend, circuit_id: route.circuit_id, layout_id: route.layout_id })),
 );
+
+
+/**
+ * Route order is NOT insertion order: Dallas's closing bend was researched
+ * first, while Porto and Pescara received later additions for earlier parts
+ * of the lap. Preserve source research_order, but derive a stable route reading
+ * order from the parent geographical section. Neither ordinal is a FIA number.
+ */
+export const candidateUnnumberedPeriodBendsInLapOrder = candidateUnnumberedHistoricalRoutes.flatMap(route =>
+  [...route.period_bend_studies]
+    .sort((a, b) => a.parent_route_section_order - b.parent_route_section_order || a.reading_order - b.reading_order)
+    .map((bend, index) => ({
+      ...bend,
+      circuit_id: route.circuit_id,
+      layout_id: route.layout_id,
+      source_research_order: bend.reading_order,
+      lap_study_order: index + 1,
+      lap_study_label: {
+        en: 'Route study ' + (index + 1) + ' (not an FIA turn number)',
+        uk: 'Дослідницька позиція ' + (index + 1) + ' (не номер повороту FIA)',
+      },
+      official_turn_number: null as const,
+      numbered_apex_verified: false as const,
+      publication_allowed: false as const,
+    })),
+);
+
+/**
+ * One fail-closed editorial review queue for 53 period bend descriptions and
+ * 13 named historical features. It is not a public guide or a review receipt.
+ * Race classifications are preserved as context, never as apex-map evidence.
+ */
+export const candidateHistoricalCornerReviewQueue = [
+  ...candidateUnnumberedNamedBendStudies.map(feature => ({
+    review_id: feature.circuit_id + ':named:' + feature.reading_order,
+    research_kind: 'named_feature' as const,
+    circuit_id: feature.circuit_id,
+    layout_id: feature.layout_id,
+    feature_kind: feature.feature_kind,
+    label: { en: feature.name, uk: feature.name },
+    explanation: feature.explanation,
+    source_roles: feature.source_urls.map(url => ({ url, role: feature.source_role })),
+    official_turn_number: null as const,
+    geometric_anchor_verified: false as const,
+    numbered_apex_verified: false as const,
+    independent_review_pending: true as const,
+    media_rights_approved: false as const,
+    publication_allowed: false as const,
+  })),
+  ...candidateUnnumberedPeriodBendsInLapOrder.map(bend => ({
+    review_id: bend.circuit_id + ':period:' + bend.source_research_order,
+    research_kind: 'period_bend' as const,
+    circuit_id: bend.circuit_id,
+    layout_id: bend.layout_id,
+    feature_kind: bend.geometry_kind,
+    label: bend.label,
+    explanation: bend.explanation,
+    source_roles: bend.source_roles,
+    lap_study_order: bend.lap_study_order,
+    source_research_order: bend.source_research_order,
+    official_turn_number: null as const,
+    geometric_anchor_verified: false as const,
+    numbered_apex_verified: false as const,
+    independent_review_pending: true as const,
+    media_rights_approved: false as const,
+    publication_allowed: false as const,
+  })),
+];
