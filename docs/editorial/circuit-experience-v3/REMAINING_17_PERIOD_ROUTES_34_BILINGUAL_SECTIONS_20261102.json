@@ -4,7 +4,7 @@
   "status": "research_pending_turn_by_turn_number_reconciliation",
   "release_authorized": false,
   "image_rights_approved": false,
-  "coverage_note": "Research-only records for seven missing historical corner guides: 68 sections carry source-role annotations. Classification and race-result sources support event details, not historical geometric apex locations. Independent mapping remains incomplete.",
+  "coverage_note": "Seven historical circuits retain 68 bilingual research sections: 55 geographical route descriptions and 13 separate layout/race-history context sections. None establishes an independently authenticated period FIA turn-number-to-apex crosswalk. Race results are not geometric evidence; external maps and photographs are not cleared for reuse.",
   "circuits": [
     {
       "circuit_id": "ain-diab",
@@ -36,7 +36,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "label": {
@@ -62,7 +63,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -77,7 +79,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -87,13 +89,14 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               }
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "layout_context"
         },
         {
           "reading_order": 4,
@@ -108,7 +111,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -118,13 +121,14 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               }
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "layout_context"
         },
         {
           "reading_order": 5,
@@ -139,7 +143,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -149,13 +153,14 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               }
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 6,
@@ -170,7 +175,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -180,13 +185,14 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               }
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 7,
@@ -201,7 +207,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result"
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result"
           ],
           "review_status": "pending",
           "provenance_scope": {
@@ -211,13 +217,14 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               }
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 8,
@@ -232,7 +239,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
           "review_status": "pending",
@@ -243,7 +250,7 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -253,7 +260,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 9,
@@ -268,7 +276,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
           "review_status": "pending",
@@ -279,7 +287,7 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -289,7 +297,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 10,
@@ -303,7 +312,7 @@
           },
           "turn_numbers": null,
           "source_urls": [
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.motorsportmagazine.com/articles/single-seaters/f1/84-1958-moroccan-gp/",
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/"
           ],
@@ -312,7 +321,7 @@
           "provenance_scope": {
             "source_roles": [
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -326,7 +335,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 11,
@@ -341,7 +351,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
           "review_status": "pending",
@@ -352,7 +362,7 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -362,7 +372,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 12,
@@ -377,7 +388,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
           "review_status": "pending",
@@ -388,7 +399,7 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -398,7 +409,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 13,
@@ -413,7 +425,7 @@
           "turn_numbers": null,
           "source_urls": [
             "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
-            "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+            "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
             "https://www.grandprix.com/races/morocco-gp-1958.html"
           ],
           "review_status": "pending",
@@ -424,7 +436,7 @@
                 "role": "period_report_unverified_apex_mapping"
               },
               {
-                "url": "https://www.formula1.com/en/results/1958/races/168/morocco%20/race-result",
+                "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
                 "role": "race_classification_only"
               },
               {
@@ -434,7 +446,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         }
       ],
       "evidence_scope": "1958 race-order scenes from contemporary Motor Sport, official F1 race classification and independent Grandprix retrospective. None is proof of a numbered apex or image rights.",
@@ -477,6 +490,16 @@
         "summary_turn_count": 15,
         "count_discrepancy": "F1DB layout ain-diab-1 lists 18 turns; Lap Ledger top-level circuit summary lists 15. Neither count supplies authenticated numbered apex locations.",
         "count_reconciliation": "Two sources support the layout's 18 bends: F1DB ain-diab-1 and the October 2026 Motor Sport historical study. The Lap Ledger aggregate summary still states 15. Count confidence improves, but an exact sequential apex crosswalk remains unavailable."
+      },
+      "route_scope": {
+        "en": "1958 championship layout. Only the coastal approach and Sidi Abderrahman forest passages are geographical route descriptions here; the championship finale belongs to race history, not to invented corner numbers.",
+        "uk": "Конфігурація чемпіонату 1958 року. Географічні описи тут стосуються лише прибережного підходу й лісових доріг Сіді Абдеррахман; розв'язка чемпіонату належить до історії гонки, а не до вигаданих номерів поворотів."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -629,7 +652,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "label": {
@@ -655,7 +679,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         },
         {
           "reading_order": 3,
@@ -686,7 +711,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -717,7 +743,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -748,7 +775,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -779,7 +807,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -810,7 +839,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 8,
@@ -841,7 +871,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "race_history"
         }
       ],
       "evidence_scope": "The venue history explicitly names historical road landmarks, but 48-vs-51 turn count remains unresolved; race incidents have no certified numbered apex. Review pending.",
@@ -878,6 +909,16 @@
         "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes.",
         "photo_index_is_turn_numbering": false,
         "count_discrepancy": "F1DB clermont-ferrand-1 lists 48; circuit operator historic account lists 51. Photo-walk numbers are camera locations, not a means of reconciling the difference."
+      },
+      "route_scope": {
+        "en": "1972 long Charade road loop, not the later shortened permanent circuit. Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat and Champeaux are route landmarks; race incidents are separate historical context, not mapped apexes.",
+        "uk": "Довге дорожнє коло Шарад 1972 року, а не пізніший скорочений стаціонарний автодром. Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat і Champeaux — орієнтири маршруту; гоночні інциденти подано окремо, без прив'язки до непідтверджених апексів."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -920,7 +961,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 2,
@@ -956,7 +998,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -992,7 +1035,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -1028,7 +1072,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -1064,7 +1109,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -1100,7 +1146,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -1136,7 +1183,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 8,
@@ -1172,7 +1220,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 9,
@@ -1208,7 +1257,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 10,
@@ -1244,7 +1294,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 11,
@@ -1280,7 +1331,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 12,
@@ -1316,7 +1368,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 13,
@@ -1352,7 +1405,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         }
       ],
       "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
@@ -1381,6 +1435,16 @@
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+      },
+      "route_scope": {
+        "en": "The single 1984 Fair Park Grand Prix configuration. The thirteen reading sections describe bends, linked direction changes and approach roads, not thirteen independently authenticated FIA turn numbers or proper names.",
+        "uk": "Єдина конфігурація Гран-прі 1984 року в районі Fair Park. Тринадцять дослідницьких секцій описують дуги, зв'язки поворотів і під'їзні ділянки, а не тринадцять незалежно підтверджених номерів чи власних назв поворотів FIA."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -1418,7 +1482,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 2,
@@ -1449,7 +1514,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -1480,7 +1546,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -1511,7 +1578,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -1542,7 +1610,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -1573,7 +1642,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -1604,7 +1674,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 8,
@@ -1635,7 +1706,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 9,
@@ -1666,7 +1738,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 10,
@@ -1697,7 +1770,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         }
       ],
       "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
@@ -1739,6 +1813,16 @@
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
         "layout_length_discrepancy": "RacingCircuits.info labels its 1982 map 2.590 mi / 4.168 km, while Motor Sport's race-database entry reports 2.493 miles; retain distinct source claims without silently changing the layout mapping."
+      },
+      "route_scope": {
+        "en": "The original 1982 Detroit layout, before the 1983–1988 revision. Riverside, Atwater, Woodbridge, Larned and Jefferson are geographic street references, not evidence for numbered apexes; modern Detroit GP maps cannot verify this layout.",
+        "uk": "Первісна конфігурація Детройта 1982 року до змін 1983–1988 років. Riverside, Atwater, Woodbridge, Larned і Jefferson — географічні орієнтири вулиць, а не підтвердження номерів апексів; сучасні карти Гран-прі Детройта не доводять їхнє розташування на трасі 1982 року."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -1976,7 +2060,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 2,
@@ -2007,7 +2092,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -2038,7 +2124,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -2069,7 +2156,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -2100,7 +2188,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -2131,7 +2220,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -2162,7 +2252,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         }
       ],
       "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
@@ -2198,6 +2289,16 @@
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
         "layout_version_caveat": "Maps of pre-1957 Coppa Acerbo must not be assumed identical to the one-off 1957 Formula 1 championship configuration; contemporary event modification evidence needs independent mapping."
+      },
+      "route_scope": {
+        "en": "The 1957 public-road Pescara circuit, following the inland hills and coastal return. Named towns and the Flying Kilometre identify broad route landmarks; they are not individually numbered corner names.",
+        "uk": "Публічні дороги Пескари 1957 року з проходженням пагорбів і поверненням уздовж узбережжя. Назви містечок і Flying Kilometre позначають великі орієнтири маршруту, а не індивідуально пронумеровані повороти."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -2275,7 +2376,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 2,
@@ -2306,7 +2408,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -2337,7 +2440,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -2368,7 +2472,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -2399,7 +2504,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -2430,7 +2536,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -2461,7 +2568,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         }
       ],
       "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
@@ -2505,6 +2613,16 @@
           "Final double-left tramline crossing and finish"
         ],
         "route_order_scope": "Contemporary 1958 route progression verified; position labels are narrative landmarks, not FIA corners and must not be assigned numbers 1–19 without a separate period keyed plan."
+      },
+      "route_scope": {
+        "en": "The 1958–1960 Formula One Boavista route, not the later touring-car street layout. Avenida da Boavista, cobbles and tram crossings are contextual landmarks; no exact FIA-era turn-number crosswalk has been authenticated.",
+        "uk": "Маршрут Формули-1 в Боавішті 1958–1960 років, а не пізніша міська конфігурація для кузовних перегонів. Avenida da Boavista, бруківка й трамвайні колії — контекстні орієнтири; точну відповідність історичних номерів поворотів не підтверджено."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     },
     {
@@ -2587,7 +2705,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 2,
@@ -2623,7 +2742,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 3,
@@ -2659,7 +2779,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 4,
@@ -2695,7 +2816,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 5,
@@ -2731,7 +2853,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 6,
@@ -2767,7 +2890,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 7,
@@ -2803,7 +2927,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 8,
@@ -2839,7 +2964,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 9,
@@ -2875,7 +3001,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         },
         {
           "reading_order": 10,
@@ -2911,7 +3038,8 @@
             ],
             "geometric_anchor_verified": false,
             "numbered_apex_verified": false
-          }
+          },
+          "section_kind": "route_geography"
         }
       ],
       "original_research_document": "SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json",
@@ -2946,6 +3074,16 @@
           }
         ],
         "layout_version_caveat": "Do not transfer today's numbered Sebring corners into the 1959 airfield configuration solely because both records cite 17 bends."
+      },
+      "route_scope": {
+        "en": "The 1959 Formula One airport-road layout, not today's Sebring 12 Hours configuration. Runways, the Esses, hairpin and long straight are route features; a straight or a group of bends is not a single certified numbered corner.",
+        "uk": "Аеродромно-дорожня конфігурація Формули-1 1959 року, а не сучасне коло «12 годин Себринга». Злітні смуги, Esses, шпилька й довга пряма — елементи маршруту; пряма або зв'язка не є одним підтвердженим пронумерованим поворотом."
+      },
+      "numbered_apex_verified": false,
+      "media_rights": {
+        "external_reference_only": true,
+        "third_party_map_reuse_approved": false,
+        "third_party_photo_reuse_approved": false
       }
     }
   ]
