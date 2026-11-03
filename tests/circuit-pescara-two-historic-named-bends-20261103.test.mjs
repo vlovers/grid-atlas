@@ -15,8 +15,8 @@ test('two historic Pescara bend names are bilingual research with source-specifi
   assert.ok(entries[1].source_urls.includes(localHistory));
   assert.equal(entries[0].source_role, 'regional_retrospective_historical_bend_name_period_1957_unverified');
   assert.equal(entries[1].source_role, 'local_historical_account_named_s_complex_exact_location_disputed');
-  assert.match(entries[1].explanation.en, /exact location unresolved/);
-  assert.match(entries[1].explanation.uk, /невизначеним/);
+  assert.match(entries[1].explanation.en, /cannot decide between the double bend/);
+  assert.match(entries[1].explanation.uk, /не може визначити/);
   for (const bend of entries) {
     assert.equal(bend.layout_id, 'pescara-1');
     assert.equal(bend.historical_layout_id, 'pescara-1');
