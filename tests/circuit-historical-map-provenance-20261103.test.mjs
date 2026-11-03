@@ -149,3 +149,19 @@ test('count source identity rejects insecure URLs, credentials and nonstandard p
   assert.equal(canonicalHistoricalCountSourcePage('https://www.lapledger.org/circuits/dallas?utm_source=research'),
     canonicalHistoricalCountSourcePage('https://lapledger.org/circuits/dallas/'));
 });
+
+
+test('count and map provenance agree on historical archive document identity', () => {
+  const archive1984 = 'https://www.gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1984&utm_source=editorial';
+  const reordered = 'https://gdecarli.it/php2/riviste.php?var3=1984&var2=1&var1=2#page';
+  const archive1985 = 'https://gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1985';
+  assert.equal(canonicalHistoricalCountSourcePage(archive1984), canonicalHistoricalCountSourcePage(reordered));
+  assert.notEqual(canonicalHistoricalCountSourcePage(archive1984), canonicalHistoricalCountSourcePage(archive1985));
+  for (const url of [archive1984, reordered, archive1985]) {
+    assert.equal(canonicalHistoricalCountSourcePage(url), canonicalHistoricalMapSourcePage(url));
+  }
+  assert.equal(new Set([
+    'https://lapledger.org/circuits/dallas?source=f1db',
+    'https://www.lapledger.org/circuits/dallas/#turns',
+  ].map(canonicalHistoricalCountSourcePage)).size, 1);
+});
