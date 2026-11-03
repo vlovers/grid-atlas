@@ -3325,7 +3325,393 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "period_bend_studies": [
+        {
+          "reading_order": 1,
+          "parent_route_section_order": 2,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "First tub-marked left",
+            "uk": "Перший лівий із гумовими маркерами"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The first distinct left-hand bend arrived after a brief acceleration on the concrete airfield runway. Rubber tubs defined the edge of the racing line rather than permanent kerbs. The period report places this bend before a second left and the change to tarmac.",
+            "uk": "Перший окремий лівий поворот починався після короткого розгону бетонною смугою аеродрому. Край траєкторії позначали гумові бочки, а не постійні поребрики. Репортаж тієї епохи розташовує цей віраж перед другим лівим і переходом на асфальт."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "parent_route_section_order": 3,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Second tub-marked left",
+            "uk": "Другий лівий із гумовими маркерами"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "A second separate left followed soon after the first, still guided by movable rubber tubs. The contemporary account specifically places the concrete-to-tarmac transition here, making the surface change the distinctive feature of this bend rather than any modern Sebring corner name.",
+            "uk": "Невдовзі після першого йшов другий окремий лівий, також окреслений пересувними гумовими бочками. Тогочасний опис саме тут фіксує перехід із бетону на асфальт, тому ключова особливість віражу — зміна покриття, а не сучасна назва повороту Себринга."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 3,
+          "parent_route_section_order": 6,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Hairpin after the Esses",
+            "uk": "Шпилька після Esses"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "After the linked Esses and another short straight, drivers reached a distinctly sharp hairpin. The contemporary writer identifies the hairpin but gives it no period number or unique proper name. A clean exit mattered before the much longer acceleration between the hangars.",
+            "uk": "Після зв'язки Esses та ще однієї короткої прямої пілоти потрапляли в окрему круту шпильку. Автор тогочасного репортажу називає тип повороту, але не дає йому номера чи власної назви. Чистий вихід був важливим перед довгим розгоном між ангарами."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 4,
+          "parent_route_section_order": 8,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Right at the end of the hangar straight",
+            "uk": "Правий наприкінці прямої між ангарами"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The long straight between the aircraft hangars ended in a sharp right-hand turn. This was the first part of a right-left sequence, not a free-standing modern numbered corner. The source records its direction and order but does not provide a numbered 1959 apex diagram.",
+            "uk": "Довга пряма між авіаційними ангарами завершувалася різким правим поворотом. Це була перша частина правої-лівої зв'язки, а не окремий сучасний пронумерований віраж. Джерело фіксує напрямок і порядок, але не містить нумерованої схеми апексів 1959 року."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 5,
+          "parent_route_section_order": 8,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Left following the hangar right",
+            "uk": "Лівий після правого біля ангарів"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "Immediately after the sharp right came a distinct left-hand turn directing the cars back toward the concrete perimeter. The two changes of direction are separately described in the contemporary report, although their exact coordinates and official 1959 turn numbers remain unverified.",
+            "uk": "Одразу після різкого правого йшов окремий лівий, який повертав машини до бетонного периметра аеродрому. У тогочасному репортажі ці дві зміни напрямку згадані окремо, але їхні точні координати й офіційні номери поворотів 1959 року залишаються непідтвердженими."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 6,
+          "parent_route_section_order": 9,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "First perimeter right by rubber tubs",
+            "uk": "Перший правий на периметрі біля гумових бочок"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "Back on the concrete perimeter, the route passed the first of two right-hand bends marked with rubber tubs. The period source confirms that there were two distinct rights in this sequence. It does not identify this first right with any current Sebring named corner.",
+            "uk": "Повернувшись на бетонний периметр, траса проходила перший із двох правих поворотів, позначених гумовими бочками. Тогочасне джерело підтверджує два окремі праві віражі в цій послідовності, але не ототожнює перший із жодним сучасним іменованим поворотом Себринга."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 7,
+          "parent_route_section_order": 9,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Second perimeter right by rubber tubs",
+            "uk": "Другий правий на периметрі біля гумових бочок"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "The second tub-marked right continued the run along the concrete perimeter toward the pit-side end of the lap. It is a separate directional change in the period description, not another name for the preceding bend. No FIA number or precise mapped apex is claimed.",
+            "uk": "Другий правий, також позначений гумовими бочками, продовжував рух бетонним периметром до зони боксів. У тогочасному описі це окрема зміна напрямку, а не друга назва попереднього віражу. Номер FIA чи точне положення апекса тут не стверджуються."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 8,
+          "parent_route_section_order": 10,
+          "historical_layout_id": "sebring-1",
+          "period": "1959",
+          "label": {
+            "en": "Wide-radius final 180-degree bend",
+            "uk": "Фінальний розворот на 180 градусів широкого радіуса"
+          },
+          "name": null,
+          "name_origin": null,
+          "geometry_kind": "single_bend",
+          "explanation": {
+            "en": "Roughly two hundred yards before the start line, a broad 180-degree bend returned the cars to the beginning of the lap. The contemporary report describes its radius and position relative to the line, but neither its official number nor a modern corner-name equivalence is established.",
+            "uk": "Приблизно за двісті ярдів до лінії старту широкий розворот на 180 градусів повертав машини до початку кола. Репортаж епохи описує його радіус і положення відносно лінії, але не підтверджує ані офіційного номера, ані відповідності сучасній назві повороту."
+          },
+          "numbering_year": null,
+          "official_turn_number": null,
+          "source_urls": [
+            "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+            "https://www.formula1.com/en/results/1959/races/177/united-states/race-result"
+          ],
+          "source_roles": [
+            {
+              "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+              "role": "contemporary_1960_route_sequence_individual_direction_changes"
+            },
+            {
+              "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+              "role": "later_2010_historical_layout_illustration_not_numbered_1959_fia_chart"
+            },
+            {
+              "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+              "role": "official_race_result_not_corner_geometry"
+            }
+          ],
+          "media_rights": {
+            "external_reference_only": true,
+            "linked_historical_map_license": "CC BY-SA 3.0 / Oliver Pohlmann; no asset copied",
+            "third_party_map_reuse_approved": false,
+            "third_party_photo_reuse_approved": false
+          },
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     }
   ]
 }
