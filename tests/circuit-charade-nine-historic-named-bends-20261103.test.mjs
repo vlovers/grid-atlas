@@ -33,7 +33,7 @@ test('eleven individually written Charade historic named bends retain official v
     assert.match(bend.explanation.uk, /[А-Яа-яІіЇїЄєҐґ]/);
     enStories.add(bend.explanation.en);
     ukStories.add(bend.explanation.uk);
-    if (['Marlboro hairpin', 'Rosier'].includes(bend.name)) assert.equal(bend.name_origin, null);
+    if (bend.name === 'Marlboro hairpin') assert.equal(bend.name_origin, null);
     else {
       assert.ok(bend.name_origin?.en && bend.name_origin?.uk, bend.name);
       assert.match(bend.name_origin.uk, /[А-Яа-яІіЇїЄєҐґ]/);
