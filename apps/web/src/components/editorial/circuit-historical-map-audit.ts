@@ -1,3 +1,4 @@
+import { dallas1984MagazineMapLeads, dallas1984DirectionDispute } from './circuit-dallas-1984-source-audit.ts';
 import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
 
 /** References to inspect, never copies of third-party artwork or approval receipts.
@@ -63,6 +64,27 @@ export const historicalMapReferenceAudit = [
     independently_authenticated_period_numbered_map: false,
     imported_media_asset: false,
     media_reuse_approved: false,
+  },
+  {
+    circuit_id: "dallas", layout_id: "dallas-1", period: "1984",
+    source_url: "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2", source_role: "retrospective_layout_version_comparison",
+    source_published_year: null, recorded_asset_license: null,
+    limitation: { en: "The later reconstruction distinguishes the red raced 1984 route from green proposals with a different start line and calls the raced route anticlockwise; not a numbered period FIA map.", uk: "Пізніша реконструкція відрізняє червоний маршрут перегонів від зелених проєктів з іншою стартовою лінією та називає напрям проти годинникової стрілки; це не нумерована карта FIA епохи." },
+    independently_authenticated_period_numbered_map: false, imported_media_asset: false, media_reuse_approved: false,
+  },
+  {
+    circuit_id: "dallas", layout_id: "dallas-1", period: "1984",
+    source_url: "https://www.gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1984&var4=", source_role: "period_magazine_map_catalog_not_scans",
+    source_published_year: 1984, recorded_asset_license: null,
+    limitation: { en: "Rombo 9 (28 February 1984, p. 13) catalogs a definitive map, while Rombo 12 (20 March 1984, p. 12) catalogs a provisional map. The actual magazine pages have not been inspected.", uk: "Rombo 9 (28 лютого 1984, с. 13) містить у каталозі остаточну схему, а Rombo 12 (20 березня 1984, с. 12) — попередню. Самі сторінки журналів не перевірені." },
+    independently_authenticated_period_numbered_map: false, imported_media_asset: false, media_reuse_approved: false,
+  },
+  {
+    circuit_id: "dallas", layout_id: "dallas-1", period: "1984",
+    source_url: "https://lapledger.org/circuits/dallas", source_role: "derivative_direction_claim_in_conflict",
+    source_published_year: null, recorded_asset_license: null,
+    limitation: { en: "The derivative page labels Dallas clockwise, contradicting the anticlockwise reconstruction. Neither claim authenticates the 1984 race direction or individual apex orientations.", uk: "Похідна сторінка називає напрям за годинниковою стрілкою, на відміну від реконструкції. Жодне твердження не підтверджує напрям перегонів 1984 року чи окремих апексів." },
+    independently_authenticated_period_numbered_map: false, imported_media_asset: false, media_reuse_approved: false,
   },
   {
     circuit_id: "detroit", layout_id: "detroit-1", period: "1982",
@@ -164,6 +186,8 @@ export const historicalMapRightsReviewByCircuit = candidateUnnumberedHistoricalR
     layout_id: route.layout_id,
     period: route.period,
     references,
+    period_map_version_leads: route.circuit_id === 'dallas' ? dallas1984MagazineMapLeads : [],
+    direction_dispute: route.circuit_id === 'dallas' ? dallas1984DirectionDispute : null,
     source_references: references.length,
     recorded_license_pages: references.filter(item => item.recorded_asset_license !== null).length,
     independently_authenticated_period_numbered_maps: 0,
