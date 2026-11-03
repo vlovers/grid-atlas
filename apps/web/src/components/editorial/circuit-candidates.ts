@@ -137,7 +137,8 @@ export const candidateHistoricalCornerReviewQueue = [
       url,
       role: index === 0 ? feature.source_role : 'supplementary_route_context_not_independent_name_or_number_verification',
     })),
-    source_locator: null,
+    source_locator: 'source_locator' in feature && typeof feature.source_locator === 'string' ? feature.source_locator : null,
+    name_origin: 'name_origin' in feature ? feature.name_origin : null,
     official_turn_number: null,
     geometric_anchor_verified: false as const,
     numbered_apex_verified: false as const,
@@ -157,6 +158,11 @@ export const candidateHistoricalCornerReviewQueue = [
     // A report URL alone is not a pinpoint citation for an individual bend.
     source_locator: 'source_locator' in bend && typeof bend.source_locator === 'string'
       ? bend.source_locator : null,
+    // A reconstructed diagram is not a bend-specific citation. Preserve the
+    // missing locator and the bilingual adjudication request instead of
+    // fabricating a numbered apex or treating a generic race report as proof.
+    evidence_kind: 'evidence_kind' in bend ? bend.evidence_kind : 'historical_report_or_layout_research',
+    source_locator_gap: 'source_locator_gap' in bend ? bend.source_locator_gap : null,
     lap_study_order: bend.lap_study_order,
     source_research_order: bend.source_research_order,
     official_turn_number: null,
