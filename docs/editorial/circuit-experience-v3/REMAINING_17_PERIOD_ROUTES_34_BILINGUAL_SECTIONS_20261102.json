@@ -528,7 +528,7 @@
           "source_roles": [
             {
               "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
-              "role": "historical_retrospective_first_corner_not_fia_apex_number"
+              "role": "motor_sport_2026_retrospective_1958_first_corner_not_handedness_or_number"
             },
             {
               "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
@@ -544,7 +544,8 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "source_locator": "Motor Sport (September 2026), 1958 race retrospective: Moss and Phil Hill lead the field to the first corner; no direction or numbered apex given."
         }
       ]
     },
@@ -4269,11 +4270,11 @@
           "source_roles": [
             {
               "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
-              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+              "role": "contemporary_1957_general_route_context_not_exact_westward_turn"
             },
             {
               "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
-              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+              "role": "italian_historical_route_westward_junction_not_numbered_apex"
             },
             {
               "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
@@ -4289,7 +4290,8 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "source_locator": "FormulaPassion (2012), route description: from the former Via Nazionale Adriatica the course turns west toward Villa Raspa; Motor Sport (1957) confirms only the general inland sequence."
         },
         {
           "reading_order": 2,
@@ -4318,11 +4320,11 @@
           "source_roles": [
             {
               "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
-              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+              "role": "contemporary_1957_foothill_spoltore_plural_corners_not_apex_count"
             },
             {
               "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
-              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+              "role": "italian_historical_route_spoltore_context_only"
             },
             {
               "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
@@ -4338,7 +4340,8 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "source_locator": "Denis Jenkinson, Motor Sport (September 1957), qualifying: trackside observations in the foothills approaching Spoltore, explicitly plural corners."
         },
         {
           "reading_order": 3,
@@ -4367,11 +4370,11 @@
           "source_roles": [
             {
               "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
-              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+              "role": "contemporary_1957_montesilvano_to_via_adriatica_junction_not_apex_number"
             },
             {
               "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
-              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+              "role": "italian_historical_route_southward_turn_at_montesilvano"
             },
             {
               "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
@@ -4387,7 +4390,8 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "source_locator": "Motor Sport (September 1957), opening route description: road meets Via Adriatica at Montesilvano; FormulaPassion (2012), route description: turn south along the coast."
         },
         {
           "reading_order": 4,
@@ -4416,11 +4420,11 @@
           "source_roles": [
             {
               "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
-              "role": "contemporary_1957_race_report_route_and_corner_groups_not_fia_numbering"
+              "role": "contemporary_1957_horace_gould_at_pre_pit_corners_not_apex_count"
             },
             {
               "url": "https://www.formulapassion.it/motorsport/storia/f1-il-circuito-di-pescara-la-coppa-acerbo",
-              "role": "italian_historical_route_account_not_period_fia_numbered_map"
+              "role": "italian_historical_route_context_not_pre_pit_apex_map"
             },
             {
               "url": "https://www.formula1.com/en/results/1957/races/156/pescara/race-result",
@@ -4436,7 +4440,8 @@
           "geometric_anchor_verified": false,
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
-          "publication_allowed": false
+          "publication_allowed": false,
+          "source_locator": "Denis Jenkinson, Motor Sport (September 1957), race opening lap: Horace Gould at the corners before the pits; no exact apex count."
         }
       ]
     },
