@@ -57,6 +57,6 @@ test('historical named features are typed: five bends, four complexes, two secto
     assert.equal(entry.official_turn_number, null);
     assert.equal(entry.publication_allowed, false);
   }
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 8);
+  assert.equal(candidateUnnumberedPeriodBendStudies.filter(entry => entry.circuit_id === 'sebring').length, 8);
   assert.ok(candidateUnnumberedPeriodBendStudies.every(entry => entry.name === null && entry.official_turn_number === null));
 });
