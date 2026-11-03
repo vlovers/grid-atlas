@@ -2548,7 +2548,57 @@
         "external_reference_only": true,
         "third_party_map_reuse_approved": false,
         "third_party_photo_reuse_approved": false
-      }
+      },
+      "named_bend_studies": [
+        {
+          "reading_order": 1,
+          "name": "Curva della Morte",
+          "name_origin": {
+            "en": "The Italian nickname means 'Bend of Death'; a regional retrospective attributes it to the danger of the Spoltore–Cappelle section, without documenting when it entered use.",
+            "uk": "Італійське прізвисько означає «Поворот смерті»; регіональний огляд пов'язує його з небезпекою ділянки Спольторе—Каппелле, але не встановлює дату появи назви."
+          },
+          "explanation": {
+            "en": "A regional history identifies a particularly hazardous bend on the road linking Spoltore and Cappelle as Curva della Morte. This is useful evidence of a locally remembered name, not a numbered 1957 Grand Prix apex. Its precise placement on a period FIA chart remains unverified.",
+            "uk": "Регіональна історична публікація називає особливо небезпечний віраж на дорозі між Спольторе й Каппелле Curva della Morte. Це свідчення місцевої пам'яті про назву, а не пронумерований апекс Гран-прі 1957 року. Точне місце на схемі FIA тієї епохи не підтверджене."
+          },
+          "source_urls": [
+            "https://gpkingdom.it/39104/il-leggendario-circuito-di-pescara/",
+            "https://www.racingcircuits.info/europe/italy/pescara.html"
+          ],
+          "source_role": "regional_retrospective_historical_bend_name_period_1957_unverified",
+          "historical_layout_id": "pescara-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "name": "Esse di Cappelle",
+          "name_origin": {
+            "en": "The name describes an S-shaped set of bends near Cappelle sul Tavo; the local author could not determine which of two nearby double bends bore the historic nickname.",
+            "uk": "Назва описує S-подібну зв'язку біля Каппелле-суль-Таво; місцевий автор не зміг встановити, яку саме з двох сусідніх подвійних кривих називали так історично."
+          },
+          "explanation": {
+            "en": "A local account recalls the Esse di Cappelle as a crowd-gathering and difficult S-bend on the village approach. The author explicitly leaves its exact location unresolved between two nearby double curves. Treat it as a named complex, not one uniquely located 1957 FIA-numbered corner.",
+            "uk": "Місцевий нарис згадує Esse di Cappelle як складну S-подібну зв'язку на під'їзді до селища, де збиралися глядачі. Автор прямо залишає невизначеним її точне місце між двома сусідніми подвійними віражами. Це іменована зв'язка, а не один однозначно локалізований поворот FIA 1957 року."
+          },
+          "source_urls": [
+            "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
+            "https://www.lanciamarino.it/sito/index.php/en/cenni-storici/circuits/36-circuito-di-pescara"
+          ],
+          "source_role": "local_historical_account_named_s_complex_exact_location_disputed",
+          "historical_layout_id": "pescara-1",
+          "numbering_year": null,
+          "official_turn_number": null,
+          "geometric_anchor_verified": false,
+          "numbered_apex_verified": false,
+          "review_status": "independent_review_pending",
+          "publication_allowed": false
+        }
+      ]
     },
     {
       "circuit_id": "phoenix",
