@@ -2,7 +2,7 @@ import { dallas1984MagazineMapLeads, dallas1984DirectionClaims, dallas1984Direct
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { canonicalHistoricalCountSourcePage, historicalCornerCountReviewByCircuit } from '../apps/web/src/components/editorial/circuit-historical-counts.ts';
-import { historicalMapReferenceAudit, historicalMapRightsReviewByCircuit } from '../apps/web/src/components/editorial/circuit-historical-map-audit.ts';
+import { canonicalHistoricalMapSourcePage, historicalMapReferenceAudit, historicalMapRightsReviewByCircuit } from '../apps/web/src/components/editorial/circuit-historical-map-audit.ts';
 import { historicalCornerEvidenceWorklistByCircuit } from '../apps/web/src/components/editorial/circuit-historical-review.ts';
 import { hasPublicationReadyCornerGuide } from '../apps/web/src/components/editorial/circuit-release.ts';
 
@@ -22,6 +22,16 @@ test('publisher page variants cannot inflate independent evidence counts', () =>
   }
 });
 
+test('map source identities preserve content-selecting archival parameters, not tracking variants', () => {
+  const catalog = 'https://www.gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1984&var4=';
+  assert.equal(canonicalHistoricalMapSourcePage(catalog),
+    canonicalHistoricalMapSourcePage('https://gdecarli.it/php2/riviste.php?var3=1984&var2=1&var1=2&utm_source=research'));
+  assert.notEqual(canonicalHistoricalMapSourcePage(catalog),
+    canonicalHistoricalMapSourcePage('https://gdecarli.it/php2/riviste.php?var1=2&var2=1&var3=1985'));
+  assert.equal(canonicalHistoricalMapSourcePage('https://www.lapledger.org/circuits/dallas?source=f1db#layout'),
+    canonicalHistoricalMapSourcePage('https://lapledger.org/circuits/dallas/'));
+});
+
 test('18 period-specific references cover seven incomplete routes without laundering race results into maps', () => {
   assert.equal(historicalMapReferenceAudit.length, 18);
   assert.equal(historicalMapRightsReviewByCircuit.length, 7);
@@ -29,7 +39,7 @@ test('18 period-specific references cover seven incomplete routes without launde
   // Keep the cardinality tied to the actual records, and guard against a
   // duplicate URL being counted as independent provenance.
   assert.equal(new Set(historicalMapReferenceAudit.map(x => x.source_url)).size, historicalMapReferenceAudit.length);
-  assert.equal(new Set(historicalMapReferenceAudit.map(x => canonicalHistoricalCountSourcePage(x.source_url))).size,
+  assert.equal(new Set(historicalMapReferenceAudit.map(x => canonicalHistoricalMapSourcePage(x.source_url))).size,
     historicalMapReferenceAudit.length);
   assert.equal(historicalMapReferenceAudit.filter(x=>x.source_role==='official_race_result_not_geometry').length, 6);
   assert.equal(historicalMapReferenceAudit.filter(x=>x.recorded_asset_license!==null).length, 1);
@@ -45,7 +55,7 @@ test('18 period-specific references cover seven incomplete routes without launde
     assert.ok(route.source_references >= 2);
     assert.equal(route.source_references, route.references.length);
     assert.equal(route.distinct_source_pages,
-      new Set(route.references.map(x => canonicalHistoricalCountSourcePage(x.source_url))).size);
+      new Set(route.references.map(x => canonicalHistoricalMapSourcePage(x.source_url))).size);
     assert.equal(route.duplicate_source_pages, route.source_references - route.distinct_source_pages);
     assert.equal(route.duplicate_source_pages, 0);
     assert.equal(route.independently_authenticated_period_numbered_maps, 0);
