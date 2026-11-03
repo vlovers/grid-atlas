@@ -8,6 +8,11 @@ import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
  */
 export function canonicalHistoricalMapSourcePage(rawUrl: string): string {
   const url = new URL(rawUrl);
+  // Provenance references must not accept an insecure or credential-bearing
+  // variant of a trusted publisher URL as the same authenticated document.
+  if (url.protocol !== 'https:' || url.username || url.password || url.port) {
+    throw new Error('Historical map source must be an HTTPS URL without credentials or a custom port');
+  }
   const host = url.hostname.toLowerCase().replace(/^www\./, '');
   const path = url.pathname.replace(/\/+$/, '') || '/';
   const selectors = host === 'gdecarli.it' && path.startsWith('/php2/')
