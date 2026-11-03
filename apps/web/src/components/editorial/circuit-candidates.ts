@@ -131,7 +131,13 @@ export const candidateHistoricalCornerReviewQueue = [
     feature_kind: feature.feature_kind,
     label: { en: feature.name, uk: feature.name },
     explanation: feature.explanation,
-    source_roles: feature.source_urls.map(url => ({ url, role: feature.source_role })),
+    // The primary article may attest the name; additional route links do not
+    // automatically corroborate that name or provide a numbered period map.
+    source_roles: feature.source_urls.map((url, index) => ({
+      url,
+      role: index === 0 ? feature.source_role : 'supplementary_route_context_not_independent_name_or_number_verification',
+    })),
+    source_locator: null,
     official_turn_number: null,
     geometric_anchor_verified: false as const,
     numbered_apex_verified: false as const,
@@ -148,6 +154,9 @@ export const candidateHistoricalCornerReviewQueue = [
     label: bend.label,
     explanation: bend.explanation,
     source_roles: bend.source_roles,
+    // A report URL alone is not a pinpoint citation for an individual bend.
+    source_locator: 'source_locator' in bend && typeof bend.source_locator === 'string'
+      ? bend.source_locator : null,
     lap_study_order: bend.lap_study_order,
     source_research_order: bend.source_research_order,
     official_turn_number: null,
