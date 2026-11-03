@@ -76,7 +76,7 @@ test('twenty new Dallas 1984 and Porto 1958–60 individual bends have unique or
 });
 
 test('historic bend studies never silently upgrade 1984 Dallas or 1958 Porto to official numbered guides', () => {
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 48);
+  assert.equal(candidateUnnumberedPeriodBendStudies.length, 53);
   for (const bend of candidateUnnumberedPeriodBendStudies) {
     assert.equal(bend.official_turn_number, null);
     assert.equal(bend.numbered_apex_verified, false);
