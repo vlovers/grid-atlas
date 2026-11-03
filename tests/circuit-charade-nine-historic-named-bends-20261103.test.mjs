@@ -10,11 +10,12 @@ const expectedNames = [
 const venue = 'https://www.charade.fr/galerie-photos/charade-dans-le-retro/';
 
 test('eleven individually written Charade historic named bends retain official venue provenance and bilingual copy', () => {
-  assert.equal(candidateUnnumberedNamedBendStudies.length, expectedNames.length);
-  assert.deepEqual(candidateUnnumberedNamedBendStudies.map(bend => bend.name), expectedNames);
+  const charade = candidateUnnumberedNamedBendStudies.filter(bend => bend.circuit_id === 'clermont-ferrand');
+  assert.equal(charade.length, expectedNames.length);
+  assert.deepEqual(charade.map(bend => bend.name), expectedNames);
   const enStories = new Set();
   const ukStories = new Set();
-  for (const [index, bend] of candidateUnnumberedNamedBendStudies.entries()) {
+  for (const [index, bend] of charade.entries()) {
     assert.equal(bend.reading_order, index + 1);
     assert.equal(bend.circuit_id, 'clermont-ferrand');
     assert.equal(bend.layout_id, 'clermont-ferrand-1');
