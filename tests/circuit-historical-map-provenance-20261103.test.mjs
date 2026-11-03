@@ -25,7 +25,12 @@ test('publisher page variants cannot inflate independent evidence counts', () =>
 test('18 period-specific references cover seven incomplete routes without laundering race results into maps', () => {
   assert.equal(historicalMapReferenceAudit.length, 18);
   assert.equal(historicalMapRightsReviewByCircuit.length, 7);
-  assert.equal(new Set(historicalMapReferenceAudit.map(x=>x.source_url)).size, 15);
+  // Three Dallas source leads were added after the initial 15-reference audit.
+  // Keep the cardinality tied to the actual records, and guard against a
+  // duplicate URL being counted as independent provenance.
+  assert.equal(new Set(historicalMapReferenceAudit.map(x => x.source_url)).size, historicalMapReferenceAudit.length);
+  assert.equal(new Set(historicalMapReferenceAudit.map(x => canonicalHistoricalCountSourcePage(x.source_url))).size,
+    historicalMapReferenceAudit.length);
   assert.equal(historicalMapReferenceAudit.filter(x=>x.source_role==='official_race_result_not_geometry').length, 6);
   assert.equal(historicalMapReferenceAudit.filter(x=>x.recorded_asset_license!==null).length, 1);
   for (const source of historicalMapReferenceAudit) {
