@@ -57,7 +57,9 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
       explanation: section.description,
       official_turn_numbers: null,
       source_urls: section.source_urls,
-      source_roles: section.provenance_scope.source_roles,
+      source_roles: 'provenance_scope' in section && section.provenance_scope
+        ? section.provenance_scope.source_roles
+        : section.source_urls.map(url => ({ url, role: 'historical_context_not_apex_mapping' })),
       geometric_anchor_verified: false as const,
       numbered_apex_verified: false as const,
     })),
