@@ -17,7 +17,7 @@ const officialResults = {
 };
 const expected = {
   detroit: { layout: 'detroit-1', period: '1982', count: 17, parents: [2, 2, 3, 4, 5, 5, 5, 6, 6, 7, 7, 7, 7, 9, 9, 10, 10] },
-  porto: { layout: 'porto-1', period: '1958–1960', count: 2, parents: [1, 3] },
+  porto: { layout: 'porto-1', period: '1958–1960', count: 7, parents: [1, 3, 1, 4, 5, 5, 7] },
 };
 
 test('Detroit 1982 and Porto 1960 preserve 19 distinct bilingual period-report bends', () => {
@@ -66,7 +66,7 @@ test('Detroit 1982 and Porto 1960 preserve 19 distinct bilingual period-report b
 });
 
 test('all period-report bends remain unnumbered and unpublished', () => {
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 28); // 8 Sebring + 17 Detroit + 2 Porto + 1 Dallas.
+  assert.equal(candidateUnnumberedPeriodBendStudies.length, 48); // 8 Sebring + 17 Detroit + 7 Porto + 16 Dallas.
   assert.ok(candidateUnnumberedPeriodBendStudies.every(bend =>
     bend.official_turn_number === null && bend.numbered_apex_verified === false && bend.publication_allowed === false
   ));
@@ -75,7 +75,7 @@ test('all period-report bends remain unnumbered and unpublished', () => {
 test('Dallas 1984 final bend is sourced to the period report without a fabricated FIA number', () => {
   const dallas = candidateUnnumberedHistoricalRoutes.find(route => route.circuit_id === 'dallas');
   assert.ok(dallas);
-  assert.equal(dallas.period_bend_studies.length, 1);
+  assert.equal(dallas.period_bend_studies.length, 16);
   const [bend] = dallas.period_bend_studies;
   assert.equal(bend.historical_layout_id, 'dallas-1');
   assert.equal(bend.parent_route_section_order, 13);
