@@ -18,8 +18,8 @@ test('all 66 historical features retain source-specific roles and explicit pinpo
   const bends = candidateHistoricalCornerReviewQueue.filter(item => item.research_kind === 'period_bend');
   assert.equal(named.length, 13);
   assert.equal(bends.length, 53);
-  assert.equal(bends.filter(item => item.source_locator !== null).length, 37);
-  assert.equal(bends.filter(item => item.source_locator === null).length, 16);
+  assert.equal(bends.filter(item => item.source_locator !== null).length, 38);
+  assert.equal(bends.filter(item => item.source_locator === null).length, 15);
   for (const item of candidateHistoricalCornerReviewQueue) {
     assert.ok(remaining.includes(item.circuit_id));
     assert.equal(item.source_roles.length > 0, true);
@@ -27,7 +27,8 @@ test('all 66 historical features retain source-specific roles and explicit pinpo
     assert.equal(item.numbered_apex_verified, false);
     assert.equal(item.publication_allowed, false);
   }
-  for (const item of named) assert.equal(item.source_locator, null);
+  assert.equal(named.filter(item => item.source_locator !== null).length, 11);
+  assert.equal(named.filter(item => item.source_locator === null).length, 2);
   for (const [id, count] of [['detroit', 17], ['porto', 7], ['sebring', 8]]) {
     const located = bends.filter(item => item.circuit_id === id);
     assert.equal(located.length, count, id);
