@@ -51,7 +51,10 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
     layout_id: route.layout_id,
     review_status: 'independent_review_pending' as const,
     numbered_apex_verified: false as const,
+    route_scope: 'route_scope' in route ? route.route_scope : null,
+    media_rights: 'media_rights' in route ? route.media_rights : null,
     sections: route.sections.map(section => ({
+      section_kind: 'section_kind' in section ? section.section_kind : 'route_geography',
       reading_order: section.reading_order,
       label: section.label,
       explanation: section.description,
@@ -64,3 +67,10 @@ export const candidateUnnumberedHistoricalRoutes = periodRoutes.circuits
       numbered_apex_verified: false as const,
     })),
   }));
+
+/** Only geographic reading sections belong to the route itself; race episodes
+ * and layout notes are preserved separately, never counted as corner evidence. */
+export const candidateUnnumberedGeographicRoutes = candidateUnnumberedHistoricalRoutes.map(route => ({
+  ...route,
+  sections: route.sections.filter(section => section.section_kind === 'route_geography'),
+}));
