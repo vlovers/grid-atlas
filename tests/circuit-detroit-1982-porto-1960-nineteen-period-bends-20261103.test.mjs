@@ -66,8 +66,27 @@ test('Detroit 1982 and Porto 1960 preserve 19 distinct bilingual period-report b
 });
 
 test('all period-report bends remain unnumbered and unpublished', () => {
-  assert.equal(candidateUnnumberedPeriodBendStudies.length, 27); // 8 Sebring + 17 Detroit + 2 Porto.
+  assert.equal(candidateUnnumberedPeriodBendStudies.length, 28); // 8 Sebring + 17 Detroit + 2 Porto + 1 Dallas.
   assert.ok(candidateUnnumberedPeriodBendStudies.every(bend =>
     bend.official_turn_number === null && bend.numbered_apex_verified === false && bend.publication_allowed === false
   ));
+});
+
+test('Dallas 1984 final bend is sourced to the period report without a fabricated FIA number', () => {
+  const dallas = candidateUnnumberedHistoricalRoutes.find(route => route.circuit_id === 'dallas');
+  assert.ok(dallas);
+  assert.equal(dallas.period_bend_studies.length, 1);
+  const [bend] = dallas.period_bend_studies;
+  assert.equal(bend.historical_layout_id, 'dallas-1');
+  assert.equal(bend.parent_route_section_order, 13);
+  assert.equal(bend.geometry_kind, 'single_bend');
+  assert.equal(bend.official_turn_number, null);
+  assert.equal(bend.numbered_apex_verified, false);
+  assert.equal(bend.publication_allowed, false);
+  assert.ok(bend.explanation.en.includes('Nigel Mansell'));
+  assert.ok(bend.explanation.uk.includes('Найджел Менселл'));
+  assert.ok(bend.source_urls.includes('https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/'));
+  assert.ok(bend.source_urls.includes('https://www.formula1.com/en/results/1984/races/474/dallas/race-result'));
+  assert.equal(candidateCornerGuides.some(guide => guide.circuit_id === 'dallas'), false);
+  assert.equal(hasPublicationReadyCornerGuide('dallas'), false);
 });
