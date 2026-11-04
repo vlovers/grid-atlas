@@ -69,3 +69,18 @@ test('Porto, Sebring and Pescara period counts are research-only and page confli
     assert.equal(hasPublicationReadyCornerGuide(route.circuit_id), false);
   }
 });
+
+// A publisher/page count must never be mistaken for an authenticated period map.
+test('publisher diversity is tracked separately from authenticated map witnesses', () => {
+  const by = id => reviews.find(x => x.circuit_id === id);
+  for (const route of reviews) {
+    const hosts = new Set(route.same_layout_observations.map(x => new URL(x.source_url).hostname.toLowerCase().replace(/^www\./, '')));
+    assert.equal(route.distinct_source_publishers, hosts.size);
+    assert.ok(route.distinct_source_publishers <= route.distinct_source_pages);
+    assert.equal(route.independent_period_map_witnesses, 0);
+    assert.equal(route.publication_allowed, false);
+  }
+  assert.equal(by('dallas').distinct_source_publishers, 2);
+  assert.equal(by('porto').distinct_source_publishers, 1);
+  assert.equal(by('sebring').distinct_source_publishers, 1);
+});
