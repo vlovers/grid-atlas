@@ -50,7 +50,10 @@ export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistorica
   // URLs with/without www, query parameters, fragments and trailing slashes
   // refer to the same publisher page, not independent historical witnesses.
   const sourcePages = [...new Set(same.map(x => canonicalHistoricalCountSourcePage(x.source_url)))];
-  // Multiple pages from one publisher are not independent corroboration.\n  // Derivative F1DB mirrors also remain derivative even across domains.\n  const distinctSourcePublishers = [...new Set(same.map(x => new URL(x.source_url).hostname.toLowerCase().replace(/^www\\./, '')))];\n  const samePageConflicts = sourcePages.flatMap(source_page => {
+  // Multiple pages from one publisher are not independent corroboration.
+  // Derivative F1DB mirrors also remain derivative even across domains.
+  const distinctSourcePublishers = [...new Set(same.map(x => new URL(x.source_url).hostname.toLowerCase().replace(/^www\./, '')))];
+  const samePageConflicts = sourcePages.flatMap(source_page => {
     const related = same.filter(x => canonicalHistoricalCountSourcePage(x.source_url) === source_page);
     const reported_counts = [...new Set(related.map(x => x.turns))].sort((a,b) => a-b);
     return reported_counts.length > 1 ? [{ source_url: related[0].source_url, source_page, reported_counts }] : [];
@@ -59,7 +62,9 @@ export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistorica
     circuit_id: route.circuit_id, layout_id: route.layout_id, historical_period: route.period,
     observations, same_layout_observations: same, excluded_other_era_observations: other,
     competing_same_layout_counts: values,
-    distinct_source_pages: sourcePages.length,\n    distinct_source_publishers: distinctSourcePublishers.length,\n    independent_period_map_witnesses: 0 as const,
+    distinct_source_pages: sourcePages.length,
+    distinct_source_publishers: distinctSourcePublishers.length,
+    independent_period_map_witnesses: 0 as const,
     same_page_count_conflicts: samePageConflicts,
     // Even two different websites cannot substitute for a dated, reviewed map.
     count_authenticated_against_period_numbered_map: false as const,
