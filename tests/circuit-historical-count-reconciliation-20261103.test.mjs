@@ -84,3 +84,25 @@ test('publisher diversity is tracked separately from authenticated map witnesses
   assert.equal(by('porto').distinct_source_publishers, 1);
   assert.equal(by('sebring').distinct_source_publishers, 1);
 });
+
+// A database-derived count and a secondary headline from the same page must
+// remain competing observations, not corroborating numbered period maps.
+test('same-page conflicts retain distinct evidence roles and do not certify historical turns', () => {
+  const by = id => reviews.find(x => x.circuit_id === id);
+  for (const id of ['dallas', 'ain-diab', 'clermont-ferrand', 'porto', 'sebring']) {
+    const route = by(id);
+    const conflictingPages = route.same_page_count_conflicts;
+    assert.equal(conflictingPages.length, 1, id);
+    const conflict = conflictingPages[0];
+    const related = route.same_layout_observations.filter(x =>
+      x.source_url.replace(/^https:\/\/www\\./, 'https://').split(/[?#]/)[0].replace(/\\/$/, '') ===
+      conflict.source_page.split(/[?#]/)[0].replace(/\\/$/, '')
+    );
+    assert.ok(related.length >= 2, id);
+    assert.ok(related.some(x => x.source_family === 'f1db_derivative'), id);
+    assert.ok(related.some(x => x.source_family === 'secondary_summary'), id);
+    assert.equal(route.independent_period_map_witnesses, 0, id);
+    assert.equal(route.per_apex_crosswalk_verified, false, id);
+    assert.equal(route.media_reuse_approved, false, id);
+  }
+});
