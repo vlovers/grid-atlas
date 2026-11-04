@@ -390,6 +390,8 @@ test('all 66 historical bend and name studies are visible in private bilingual r
   assert.equal(candidateUnnumberedPeriodBendsInLapOrder.every(item => item.numbered_apex_verified === false), true);
   const html = renderCircuitReview('en', '/review/test');
   assert.match(html, /Detailed historical bend and name review/);
+  assert.match(html, /bend \/ name studies to review/);
+  assert.match(html, /locator gaps/);
   assert.match(html, /bend-review-dallas-period-/);
   assert.match(html, /bend-review-clermont-ferrand-named-/);
   const { readFileSync } = await import('node:fs');
