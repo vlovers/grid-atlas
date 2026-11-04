@@ -59,6 +59,16 @@ prove that its schema matches the API. Diagnose deep-route dependencies with
 `node scripts/doctor-archive.mjs --api-origin http://127.0.0.1:3001`.
 See [archive recovery and environment troubleshooting](docs/delivery/archive-recovery.md).
 
+## Circuit editorial branch status
+
+The historical circuit manuscripts in PR #395 are **research drafts**, not approved or
+published content. The separately gated bilingual circuit reader is tracked in
+PR #398 (superseding the earlier PR #359 reference); a green CI result does not
+constitute editorial approval. Individual historical turn identities, period
+layouts, bilingual claims, and media permissions require evidence review before
+release. See `docs/editorial/circuit-experience-v3/` for research and acceptance
+gates. Do not treat BATCH_01/02 layout notes as independently verified sources.
+
 ## Checks
 
 ```sh
