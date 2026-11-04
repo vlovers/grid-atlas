@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { historicalCornerCountObservations as observations, historicalCornerCountReviewByCircuit as reviews } from '../apps/web/src/components/editorial/circuit-historical-counts.ts';
+import { canonicalHistoricalCountSourcePage, historicalCornerCountObservations as observations, historicalCornerCountReviewByCircuit as reviews } from '../apps/web/src/components/editorial/circuit-historical-counts.ts';
 import { historicalCornerEvidenceWorklistByCircuit } from '../apps/web/src/components/editorial/circuit-historical-review.ts';
 import { hasPublicationReadyCornerGuide } from '../apps/web/src/components/editorial/circuit-release.ts';
 
@@ -111,4 +111,26 @@ test('same-page conflicts retain distinct evidence roles and do not certify hist
     assert.equal(route.per_apex_crosswalk_verified, false, id);
     assert.equal(route.media_reuse_approved, false, id);
   }
+});
+
+
+test('count evidence uses the map-audit document identity and rejects unsafe URLs', () => {
+  const canonical = canonicalHistoricalCountSourcePage;
+  assert.equal(canonical('https://www.lapledger.org/circuits/dallas/?utm_source=review#map'),
+    canonical('https://lapledger.org/circuits/dallas'));
+  assert.notEqual(
+    canonical('https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2'),
+    canonical('https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=3'),
+    'different archive selectors must not collapse into a single historical map'
+  );
+  assert.equal(
+    canonical('https://gdecarli.it/php2/circuit.php?var2=2&var1=1993&utm_campaign=a'),
+    canonical('https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2'),
+    'selector ordering and tracking parameters must not create extra documents'
+  );
+  for (const url of [
+    'http://lapledger.org/circuits/dallas',
+    'https://user:pass@lapledger.org/circuits/dallas',
+    'https://lapledger.org:8443/circuits/dallas',
+  ]) assert.throws(() => canonical(url), /HTTPS URL without credentials or a custom port/);
 });
