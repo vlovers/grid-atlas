@@ -94,9 +94,15 @@ test('same-page conflicts retain distinct evidence roles and do not certify hist
     const conflictingPages = route.same_page_count_conflicts;
     assert.equal(conflictingPages.length, 1, id);
     const conflict = conflictingPages[0];
+    const canonicalPage = value => {
+      const url = new URL(value);
+      // Ignore URL tracking, trailing slashes and the optional www host alias.
+      const host = url.hostname.toLowerCase().replace(/^www\./, '');
+      const pathname = url.pathname.replace(/\/+$/, '') || '/';
+      return host + pathname;
+    };
     const related = route.same_layout_observations.filter(x =>
-      x.source_url.replace(/^https:\/\/www\\./, 'https://').split(/[?#]/)[0].replace(/\\/$/, '') ===
-      conflict.source_page.split(/[?#]/)[0].replace(/\\/$/, '')
+      canonicalPage(x.source_url) === canonicalPage(conflict.source_page)
     );
     assert.ok(related.length >= 2, id);
     assert.ok(related.some(x => x.source_family === 'f1db_derivative'), id);
