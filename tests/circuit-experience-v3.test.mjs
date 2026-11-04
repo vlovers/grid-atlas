@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { candidateCornerGuides, candidateCircuitNarratives } from '../apps/web/src/components/editorial/circuit-candidates.ts';
 import { cornerGuideFor, numberedCorners } from '../apps/web/src/components/editorial/circuit-corner-model.ts';
 import { isCircuitEditionApproved, circuitEditionDigest } from '../apps/web/src/components/editorial/circuit-release.ts';
-import { renderCircuitReview, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
+import { renderCircuitReview, renderHistoricalBendQueue, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
 
 test('numbered turns are complete and never confused with distinct named sections', () => {
   assert.ok(candidateCornerGuides.length >= 16, 'do not regress already sourced circuit guides');
@@ -362,4 +362,37 @@ test('all 68 historical route sections separate race classifications from geogra
   }
   assert.match(renderCircuitReview('en','/review/test'), /Race classification — not a map/);
   assert.match(renderCircuitReview('uk','/review/test'), /Класифікація гонки — не карта/);
+});
+
+test('all 66 historical bend and name studies are visible in private bilingual review only', async () => {
+  const { candidateHistoricalCornerReviewQueue, candidateUnnumberedPeriodBendsInLapOrder } = await import('../apps/web/src/components/editorial/circuit-candidates.ts');
+  const ids = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
+  assert.equal(candidateHistoricalCornerReviewQueue.length, 66);
+  assert.equal(candidateHistoricalCornerReviewQueue.filter(item => item.research_kind === 'named_feature').length, 13);
+  assert.equal(candidateHistoricalCornerReviewQueue.filter(item => item.research_kind === 'period_bend').length, 53);
+  for (const id of ids) {
+    const relevant = candidateHistoricalCornerReviewQueue.filter(item => item.circuit_id === id);
+    const en = renderHistoricalBendQueue(id, 'en');
+    const uk = renderHistoricalBendQueue(id, 'uk');
+    assert.ok(relevant.length > 0, id + ': missing bend research');
+    assert.match(en, /not certified turn numbers or an FIA map/);
+    assert.match(uk, /не сертифіковані номери поворотів/);
+    assert.match(en, /Publication blocked/);
+    assert.match(uk, /Публікацію заборонено/);
+    assert.equal((en.match(/<article id="bend-review-/g) ?? []).length, relevant.length, id + ': complete EN review');
+    assert.equal((uk.match(/<article id="bend-review-/g) ?? []).length, relevant.length, id + ': complete UK review');
+    for (const item of relevant) {
+      assert.equal(item.official_turn_number, null, id + ': publication numbers remain absent');
+      assert.equal(item.publication_allowed, false, id + ': unpublished research');
+      assert.ok(en.includes(item.review_id.replaceAll(':', '-')), id + ': entry anchor absent');
+    }
+  }
+  assert.equal(candidateUnnumberedPeriodBendsInLapOrder.every(item => item.numbered_apex_verified === false), true);
+  const html = renderCircuitReview('en', '/review/test');
+  assert.match(html, /Detailed historical bend and name review/);
+  assert.match(html, /bend-review-dallas-period-/);
+  assert.match(html, /bend-review-clermont-ferrand-named-/);
+  const { readFileSync } = await import('node:fs');
+  const publicComponent = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
+  assert.doesNotMatch(publicComponent, /candidateHistoricalCornerReviewQueue|renderHistoricalBendQueue/);
 });
