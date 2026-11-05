@@ -766,3 +766,40 @@ test('two Commons candidates carry attribution and rights records without activa
     assert.match(html, locale === 'en' ? /Media candidate provenance and rights review/ : /Джерела зображень на перевірці/);
   }
 });
+
+test('all seven unreleased historic circuits have source-linked media candidates with closed rights gates', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ids = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
+  const all = ids.flatMap(id => data.circuits.find(circuit => circuit.circuit_id === id).licensed_media_research_candidates);
+  assert.equal(all.length, 9);
+  assert.equal(new Set(all.map(item => item.id)).size, 9);
+  assert.ok(all.every(item => item.commons_file_page.startsWith('https://commons.wikimedia.org/wiki/File:')));
+  assert.ok(all.every(item => item.author && item.declared_license && item.source_provenance && item.editorial_note));
+  assert.ok(all.every(item =>
+    item.rights_review_complete === false &&
+    item.asset_downloaded === false &&
+    item.original_file_hash_sha256 === null &&
+    item.repository_intake_approved === false &&
+    item.public_render_allowed === false &&
+    item.not_official_numbered_map === true
+  ));
+  const newOnes = all.filter(item => 'independent_history_geometry_review_complete' in item);
+  assert.equal(newOnes.length, 7);
+  assert.ok(newOnes.every(item => item.independent_history_geometry_review_complete === false &&
+    item.third_party_attribution_review_complete === false));
+  const ain = all.find(item => item.id === 'ain-diab-pittenger-2008-route-reconstruction');
+  assert.match(ain.editorial_note, /pit road position was guessed/);
+  const porto = all.find(item => item.id === 'porto-boavista-1958-public-domain-svg');
+  assert.match(porto.declared_license, /PD-self/);
+  const dallas = all.filter(item => item.id.startsWith('dallas-'));
+  assert.equal(dallas.length, 2);
+  assert.ok(dallas.every(item => item.geometry_role.includes('not_')));
+  for (const locale of ['en','uk']) {
+    const html = renderCircuitReview(locale, '/review/test');
+    assert.ok(html.includes('sebring-1959-pohlmann-circuit-map'));
+    assert.ok(html.includes('charade-amon-1972-archival-photo'));
+    assert.ok(html.includes('dallas-rosberg-williams-1984-photo'));
+    assert.ok(html.includes('porto-boavista-1958-public-domain-svg'));
+  }
+});
