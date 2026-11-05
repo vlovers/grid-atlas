@@ -485,11 +485,42 @@
             "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
             "claim": "Motor Sport's October 2026 historical reconstruction explicitly counts 18 corners on the 4.7-mile 1957–1958 coast-road/Azemmour-road course through Sidi Abderrahman forest, independently supporting the F1DB layout's 18-count (not its numbered turn positions).",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "period_1957_to_1958_layout_continuity",
+            "url": "https://www.motorsportmagazine.com/database/races/1958-moroccan-grand-prix/",
+            "claim": "Contemporary Grand Prix report says the 1958 circuit was unchanged from 1957 while road surface and facilities were improved; no historical turn-number index supplied.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "venue_summary_vs_historic_road_circuit_type",
+            "url": "https://www.lapledger.org/circuits/ain-diab",
+            "claim": "Lap Ledger top-level metadata calls the venue permanent, but source descriptions consistently identify a public-road coastal route. Do not publish 'permanent circuit' based only on that summary classification.",
+            "supports_apex_numbering": false
           }
         ],
         "summary_turn_count": 15,
         "count_discrepancy": "F1DB layout ain-diab-1 lists 18 turns; Lap Ledger top-level circuit summary lists 15. Neither count supplies authenticated numbered apex locations.",
-        "count_reconciliation": "Two sources support the layout's 18 bends: F1DB ain-diab-1 and the October 2026 Motor Sport historical study. The Lap Ledger aggregate summary still states 15. Count confidence improves, but an exact sequential apex crosswalk remains unavailable."
+        "count_reconciliation": "Two sources support the layout's 18 bends: F1DB ain-diab-1 and the October 2026 Motor Sport historical study. The Lap Ledger aggregate summary still states 15. Count confidence improves, but an exact sequential apex crosswalk remains unavailable.",
+        "period_1957_1958_comparison": {
+          "source_url": "https://www.motorsportmagazine.com/database/races/1958-moroccan-grand-prix/",
+          "supported_claim": "Contemporary account says the 1958 championship course was unchanged from the 1957 non-championship race, although road surface and amenities were improved.",
+          "layout_continuity_reported": true,
+          "surface_upgrades_reported": true,
+          "individual_apex_numbering_in_either_year_verified": false,
+          "period_map_checked": false,
+          "source_scope": "contemporary_event_report_not_per_bend_survey"
+        },
+        "archival_count_semantics": {
+          "layout_source": "https://www.lapledger.org/circuits/ain-diab",
+          "f1db_layout_id": "ain-diab-1",
+          "f1db_layout_turns": 18,
+          "venue_summary_turns": 15,
+          "additional_historical_reconstruction_url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+          "additional_historical_reconstruction_turns": 18,
+          "count_scope_note": "Two independent publications support the eighteen-bend description, but the archive venue headline gives fifteen. Neither enumerates certified period turn IDs; count disagreement remains visible.",
+          "certified_apex_numbers": 0
+        }
       },
       "route_scope": {
         "en": "1958 championship layout. Only the coastal approach and Sidi Abderrahman forest passages are geographical route descriptions here; the championship finale belongs to race history, not to invented corner numbers.",
@@ -549,10 +580,24 @@
         }
       ],
       "editorial_reader_preview": {
-        "en": "Ain-Diab appeared almost overnight. In six weeks Morocco's automobile club turned public roads near Casablanca into a 4.7-mile lap: a fast coast road, the highway towards Azemmour and stretches through the Sidi Abderrahman forest. In October 1958 that one-off World Championship stage became the finale of Stirling Moss and Mike Hawthorn's title fight. Moss won the race; Hawthorn took the championship. Stuart Lewis-Evans suffered the crash that would cost him his life. It is a powerful story, but it does not turn an 18-corner summary into a map of eighteen verified apex positions.",
-        "uk": "Айн-Діаб виник майже за одну ніч. За шість тижнів автомобільний клуб Марокко перетворив звичайні дороги біля Касабланки на коло завдовжки близько 4,7 милі: швидку прибережну трасу, шосе в напрямку Аземмура та ділянки серед лісу Сіді Абдеррахман. У жовтні 1958 року цей автодром став ареною останнього раунду боротьби Стірлінга Мосса й Майка Готорна за титул. Мосс виграв гонку, Готорн — чемпіонат. Стюарт Льюїс-Еванс потрапив в аварію, наслідки якої стали смертельними. Це сильна історія, але цифра «18 поворотів» ще не дає карти з вісімнадцятьма перевіреними апексами.",
+        "en": "Casablanca's Ain-Diab was a road race, not a conventional permanent autodrome. In six weeks the organisers prepared a roughly 7.6-kilometre route across the coast road, the Azemmour highway and the Sidi Abderrahman forest. It hosted a non-championship race in 1957; when Formula 1 returned for the 1958 title finale, contemporary reporting says the course was unchanged, though its surface and facilities had improved. Stirling Moss won, but Mike Hawthorn's second place secured the championship. The event also carried tragedy: Stuart Lewis-Evans suffered fatal burns. Later accounts describe 18 bends, while one archive headline says 15 — neither gives a certified FIA map with sequential apex numbers.",
+        "uk": "Айн-Діаб поблизу Касабланки був гонкою звичайними дорогами, а не стаціонарним автодромом. За шість тижнів організатори підготували приблизно 7,6-кілометровий маршрут уздовж узбережжя, шосе на Аземмур і через ліс Сіді Абдеррахман. У 1957 році тут пройшла позачемпіонатна гонка; перед фіналом сезону Формули-1 1958 року, як писали сучасники, конфігурація не змінилася, хоча покриття та інфраструктуру поліпшили. Стірлінг Мосс виграв гонку, але друге місце Майка Готорна принесло йому титул. Той день затьмарила трагедія Стюарта Льюїса-Еванса. Пізніші описи називають 18 вигинів, а один архівний заголовок — 15; жодне число не дає перевіреної карти FIA з номерами апексів.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
-        "editorial_status": "research_only"
+        "editorial_status": "research_only",
+        "event_sources": [
+          {
+            "url": "https://www.motorsportmagazine.com/database/races/1958-moroccan-grand-prix/",
+            "scope": "1957_1958_same_layout_and_surface_work"
+          },
+          {
+            "url": "https://www.formula1.com/en/results/1958/races/168/morocco/race-result",
+            "scope": "1958_race_classification_only"
+          },
+          {
+            "url": "https://www.lapledger.org/circuits/ain-diab",
+            "scope": "conflicting_venue_15_layout_18_turn_counts"
+          }
+        ]
       }
     },
     {
@@ -5140,6 +5185,12 @@
             "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
             "claim": "Motor Sport's 1957 report attributes chicanes to modifications made over many years; this does not isolate an exact 1957 apex position.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "esse_di_cappelle_two_unresolved_candidate_sites",
+            "url": "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
+            "claim": "The local writer explicitly cannot identify whether Esse di Cappelle was the entrance-monument double bend or the village-centre double bend; no numbered or surveyed 1957 site may be selected from this account.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -5151,6 +5202,25 @@
           "grand_prix_1957_configuration": "Motor Sport circuit database describes a chicane before the pits for the 1934–1961 layout. The 1957 report says multiple chicanes were introduced over the years and does not establish that the first pit chicane originated in 1957.",
           "separate_1957_modification_certain": false,
           "exact_1957_chicane_apex_verified": false
+        },
+        "local_place_name_adjudication": {
+          "source_url": "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
+          "two_candidate_esse_sites": [
+            {
+              "site": "double bend beside the entrance monument to Cappelle sul Tavo",
+              "source_attests": "candidate, not selected",
+              "historical_number": null
+            },
+            {
+              "site": "double bend within the village centre of Cappelle sul Tavo",
+              "source_attests": "candidate, not selected",
+              "historical_number": null
+            }
+          ],
+          "source_author_explicitly_unsure": true,
+          "precise_1957_esse_site_verified": false,
+          "independent_period_name_attestation": false,
+          "copyright_approval_for_external_photo_or_map": false
         }
       },
       "route_scope": {
@@ -5172,8 +5242,8 @@
             "uk": "Італійське прізвисько означає «Поворот смерті»; регіональний огляд пов'язує його з небезпекою ділянки Спольторе—Каппелле, але не встановлює дату появи назви."
           },
           "explanation": {
-            "en": "A regional history identifies a particularly hazardous bend on the road linking Spoltore and Cappelle as Curva della Morte. This is useful evidence of a locally remembered name, not a numbered 1957 Grand Prix apex. Its precise placement on a period FIA chart remains unverified.",
-            "uk": "Регіональна історична публікація називає особливо небезпечний віраж на дорозі між Спольторе й Каппелле Curva della Morte. Це свідчення місцевої пам'яті про назву, а не пронумерований апекс Гран-прі 1957 року. Точне місце на схемі FIA тієї епохи не підтверджене."
+            "en": "A later regional story remembers a treacherous bend on the road between Spoltore and Cappelle as Curva della Morte — the 'Bend of Death'. It is a vivid local nickname, not a coordinate or an official 1957 FIA turn label. The source does not establish who coined it, the first year it was used, or an independently surveyed apex.",
+            "uk": "У пізнішому регіональному нарисі небезпечний віраж на дорозі між Спольторе та Каппелле згадують як Curva della Morte — «Поворот смерті». Це промовисте місцеве прізвисько, а не координата чи офіційний номер FIA 1957 року. Джерело не встановлює, хто придумав назву, коли її почали вживати і де саме лежав апекс."
           },
           "source_urls": [
             "https://gpkingdom.it/39104/il-leggendario-circuito-di-pescara/",
@@ -5196,7 +5266,8 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "period_name_evidence_type": "modern_regional_retrospective_only"
           }
         },
         {
@@ -5207,8 +5278,8 @@
             "uk": "Назва описує S-подібну зв'язку біля Каппелле-суль-Таво; місцевий автор не зміг встановити, яку саме з двох сусідніх подвійних кривих називали так історично."
           },
           "explanation": {
-            "en": "The 2019 local account calls the difficult S-shaped complex on the Spoltore approach 'La Esse di Cappelle' and remembers spectators gathering there. Crucially, the author cannot decide between the double bend beside the entrance monument and the double bend in the centre of Cappelle sul Tavo. The name is documented, but its precise 1957 geometry, apex count and official numbering are not.",
-            "uk": "Місцевий нарис 2019 року називає складну S-подібну зв'язку на під'їзді від Спольторе «La Esse di Cappelle» і згадує глядачів, які збиралися там. Водночас автор не може визначити, чи йдеться про подвійний віраж біля пам'ятного знака на в'їзді, чи про подвійну криву в центрі Каппелле-суль-Таво. Назву засвідчено, але точну геометрію 1957 року, кількість апексів і офіційну нумерацію — ні."
+            "en": "After Spoltore the old road ran towards Cappelle sul Tavo, where spectators remembered a difficult S-shaped passage called Esse di Cappelle. The local historian could not decide whether the name referred to the double bend near the town entrance monument or a second double bend in the village centre. Both possible sites matter to the story; choosing either as the sole 1957 corner would invent a certainty the source does not provide.",
+            "uk": "Після Спольторе стара дорога вела до Каппелле-суль-Таво, де глядачі пам’ятали непросту S-подібну зв’язку Esse di Cappelle. Місцевий історик не міг визначити, чи називали так подвійний віраж біля пам’ятного знака на в’їзді, чи інший подвійний віраж у центрі селища. Обидва місця важливі для історії; вибрати одне як єдиний підтверджений поворот 1957 року означало б вигадати точність, якої немає в джерелі."
           },
           "source_urls": [
             "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
@@ -5231,7 +5302,9 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "exact_two_candidate_locations_unresolved": true,
+            "period_name_evidence_type": "2019_local_recollection_not_contemporary_1957_attestation"
           }
         }
       ],
