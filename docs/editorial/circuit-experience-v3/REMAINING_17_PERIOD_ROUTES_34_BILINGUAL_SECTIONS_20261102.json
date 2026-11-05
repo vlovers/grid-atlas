@@ -1930,6 +1930,12 @@
             "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
             "claim": "Historic map bibliography separately identifies a definitive circuit diagram in Rombo #9 (150), 28 February 1984 p13, and a provisional map in Rombo #12 (153), 20 March p12. A published date alone is not proof either was used without changes on race day.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1983_to_1984_plan_version_bibliography",
+            "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "claim": "Archival bibliography records a 5 Sep 1983 first proposal, 14/16/19 Feb 1984 pre-race map/construction coverage, a 28 Feb labelled definitive and a 20 Mar labelled provisional plan. The archive also identifies an alternate early finish-line position and warns its raced route drawing is approximate. No original map bytes or permissions were reviewed here.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -1982,7 +1988,80 @@
             "image_reuse_rights_approved": false
           }
         ],
-        "period_map_priority": "Acquire/check original Feb 28 1984 Rombo p13 definitive plan against actual July 8 race and the Mar 20 provisional publication before assigning any bend position. G. de Carli labels its own red raced route map approximate. Copyright clearance and per-apex crosswalk both outstanding."
+        "period_map_priority": "Acquire/check original Feb 28 1984 Rombo p13 definitive plan against actual July 8 race and the Mar 20 provisional publication before assigning any bend position. G. de Carli labels its own red raced route map approximate. Copyright clearance and per-apex crosswalk both outstanding.",
+        "historical_plan_bibliography": [
+          {
+            "published": "1983-09-05",
+            "publication": "Rombo 36 (125), p. 12",
+            "stage": "first_proposal",
+            "archivist_label": "Prima proposta",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          },
+          {
+            "published": "1984-02-14",
+            "publication": "Autosprint 7/1984, p. 26",
+            "stage": "pre_race_diagram",
+            "archivist_label": "Circuito del GP Dallas 1984",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          },
+          {
+            "published": "1984-02-16",
+            "publication": "Grand Prix International, English 74/1984, p. 10",
+            "stage": "construction_work_with_map",
+            "archivist_label": "I lavori proseguono (con mappa)",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          },
+          {
+            "published": "1984-02-19",
+            "publication": "Grand Prix International, Italian 74/1984, p. 10",
+            "stage": "construction_work_with_map",
+            "archivist_label": "I lavori proseguono (con mappa)",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          },
+          {
+            "published": "1984-02-28",
+            "publication": "Rombo 9 (150), p. 13",
+            "stage": "labelled_definitive",
+            "archivist_label": "Circuito definitivo del GP Dallas 1984",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          },
+          {
+            "published": "1984-03-20",
+            "publication": "Rombo 12 (153), p. 12",
+            "stage": "labelled_provisional_after_definitive",
+            "archivist_label": "Circuito provvisorio (after 'definitivo' appeared)",
+            "map_content_examined": false,
+            "comparison_to_race_day_completed": false,
+            "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "third_party_map_reuse_approved": false,
+            "period_fia_numbering_verified": false
+          }
+        ],
+        "finish_line_version_warning": {
+          "archival_index_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+          "detail": "G. de Carli distinguishes green initial-design routes with a different position for the finish line from an approximate red reconstruction of the 1984 F1 GP course. Maps are labelled by the archivist, not authenticated scanned FIA drawings.",
+          "historical_version_reconciliation_complete": false
+        }
       },
       "route_scope": {
         "en": "The single 1984 Fair Park Grand Prix configuration. The thirteen reading sections describe bends, linked direction changes and approach roads, not thirteen independently authenticated FIA turn numbers or proper names.",
