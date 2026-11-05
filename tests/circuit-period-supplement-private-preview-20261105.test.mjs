@@ -38,3 +38,65 @@ test('preview keeps exactly 78 circuit identities while exposing supplements onl
     }
   }
 });
+
+import adjudication from '../docs/editorial/circuit-experience-v3/SEVEN_PERIOD_ROUTES_21_CLAIM_ADJUDICATION_20261105.json' with { type: 'json' };
+
+test('all 21 historical review questions remain bilingual, unique and fail-closed', () => {
+  const expectedTypes = ['layout_era', 'geometry', 'race_event'];
+  const ids = new Set();
+  assert.equal(adjudication.record_count, 21);
+  assert.equal(adjudication.records.length, 21);
+  assert.equal(adjudication.independent_human_approval, false);
+  assert.equal(adjudication.media_rights_approved, false);
+  assert.equal(adjudication.publication_allowed, false);
+  assert.equal(adjudication.pinned_identity_preserved, true);
+
+  for (const circuitId of originalHistoricIds) {
+    const records = adjudication.records.filter(record => record.circuit_id === circuitId);
+    assert.deepEqual(records.map(record => record.claim_type).sort(), [...expectedTypes].sort(), circuitId);
+    assert.equal(new Set(records.map(record => record.layout_id)).size, 1, circuitId);
+    for (const record of records) {
+      assert.equal(record.review_id, circuitId + ':' + record.claim_type);
+      assert.ok(!ids.has(record.review_id), 'duplicate ' + record.review_id);
+      ids.add(record.review_id);
+      assert.ok(record.period, record.review_id);
+      assert.ok(record.source_leads.length > 0, record.review_id);
+      assert.equal(record.source_scope, 'candidate_leads_only_not_adjudicated', record.review_id);
+      for (const locale of ['en', 'uk']) {
+        assert.ok(record.review_question[locale]?.length > 40, record.review_id + '/' + locale);
+      }
+      for (const gate of [
+        'period_map_authenticated',
+        'numbered_apex_verified',
+        'media_rights_approved',
+        'independent_human_approval',
+        'publication_allowed',
+      ]) {
+        assert.equal(record[gate], false, record.review_id + '/' + gate);
+      }
+    }
+  }
+  assert.equal(ids.size, 21);
+});
+
+test('source passage observations are research, never human or geometry approval', () => {
+  const observed = adjudication.records.filter(record => record.source_passage_observation);
+  assert.equal(observed.length, adjudication.source_passage_observations);
+  for (const record of observed) {
+    const observation = record.source_passage_observation;
+    assert.ok(record.source_leads.includes(observation.url), record.review_id);
+    assert.ok(observation.locator?.length > 20, record.review_id);
+    assert.ok(observation.scope?.length > 10, record.review_id);
+    assert.ok(observation.observation_en?.length > 40, record.review_id);
+    assert.ok(observation.observation_uk?.length > 40, record.review_id);
+    assert.equal(observation.claim_scope_reviewed, true, record.review_id);
+    assert.equal(observation.not_human_signoff, true, record.review_id);
+    assert.equal(observation.independent_corroboration_complete, false, record.review_id);
+    assert.equal(observation.period_numbered_map_authenticated, false, record.review_id);
+  }
+  // A contemporary race account or a named bend is not an authenticated FIA apex key.
+  for (const record of adjudication.records.filter(record => record.claim_type === 'geometry')) {
+    assert.equal(record.numbered_apex_verified, false, record.review_id);
+    assert.equal(record.period_map_authenticated, false, record.review_id);
+  }
+});
