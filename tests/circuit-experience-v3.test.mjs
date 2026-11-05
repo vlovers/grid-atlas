@@ -596,3 +596,31 @@ test('Charade 1972 bridge removal and route name are not invented numbered turns
   assert.match(circuit.sections.find(s => s.reading_order === 6).description.en, /Royat/);
   assert.ok(circuit.layout_evidence_review.evidence.every(x => x.supports_apex_numbering === false));
 });
+
+test('Charade Rosier hairpin is named in a 1972 eyewitness account but not given a FIA turn number', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const charade = research.circuits.find(c => c.circuit_id === 'clermont-ferrand');
+  const rosier = charade.named_bend_studies.find(b => b.name === 'Rosier');
+  const thedes = charade.named_bend_studies.find(b => b.name === 'Thèdes');
+  const named = charade.layout_evidence_review.period_1972_confirmed_named_landmark;
+  assert.equal(named.name, 'Rosier hairpin');
+  assert.equal(named.historical_name_attested_in_1972, true);
+  assert.equal(named.official_turn_number, null);
+  assert.equal(named.location_kind, 'route_order_only_not_surveyed_apex');
+  assert.equal(named.preceding_locality, 'Thèdes');
+  assert.equal(rosier.name_evidence_assessment.period_attestation_year, 1972);
+  assert.equal(rosier.name_evidence_assessment.first_ever_use_date_unknown, true);
+  assert.equal(rosier.name_evidence_assessment.period_specific_original_naming_year_verified, false);
+  assert.equal(rosier.name_evidence_assessment.single_numbered_turn_verified, false);
+  assert.equal(rosier.period_name_independently_verified, false);
+  assert.equal(rosier.contemporary_1972_account.period_name_documented, true);
+  assert.equal(thedes.contemporary_1972_account.period_locality_documented, true);
+  for (const item of [rosier, thedes]) {
+    assert.equal(item.numbered_apex_verified, false);
+    assert.equal(item.geometric_anchor_verified, false);
+    assert.equal(item.publication_allowed, false);
+    assert.ok(item.source_urls.some(url => url.includes('/august-1972/50/5th-grand-prix-of-france/')));
+    assert.ok(item.explanation.en.length > 100 && item.explanation.uk.length > 100);
+  }
+});
