@@ -598,7 +598,29 @@
             "scope": "conflicting_venue_15_layout_18_turn_counts"
           }
         ]
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "ain-diab-pittenger-2008-route-reconstruction",
+          "kind": "schematic_map",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Ain-Diab.svg",
+          "author": "Will Pittenger",
+          "date": "2008-07-29",
+          "declared_license": "CC BY-SA 3.0 Unported",
+          "source_provenance": "Author's 2008 reconstruction from modern imagery; Commons original-work and license declaration.",
+          "confidence": "source_license_declared_geometry_explicitly_unreliable",
+          "geometry_role": "modern_imagery_based_approximation_not_1958_map",
+          "editorial_note": "Author explicitly says the route may be inaccurate and pit road position was guessed. Never assign historical apex coordinates or claim 1958 certification.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     },
     {
       "circuit_id": "bremgarten",
@@ -1659,7 +1681,29 @@
         "uk": "У Charade краєвид був частиною небезпеки. Старе восьмикілометрове коло звивалося вулканічними пагорбами, підіймалося до Manson, падало через Gravenoire й проходило віражі, що запам’яталися як Jumeaux, Ferme та Petit Pont. На Гран-прі Франції 1972 року Кріс Еймон утратив перевагу через прокол, а переміг Джекі Стюарт. Історичні назви оживляють маршрут, але не показують, де лежали всі 48 архівних вигинів, і не знімають суперечки з цифрою 51. Навіть число 10 у матеріалі автодрому про Ferme означає пост маршалів, а не номер повороту.",
         "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
         "editorial_status": "research_only"
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "charade-amon-1972-archival-photo",
+          "kind": "archival_photo",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:1972_French_Grand_Prix_Amon_(5225621751).jpg",
+          "author": "ZANTAFIO56 (Marc Le Beller)",
+          "date": "1972-07-02",
+          "declared_license": "CC BY-SA 2.0 Generic (Flickr licensing checked on Commons, 13 Jun 2019)",
+          "source_provenance": "Author Flickr item 5225621751; Wikimedia Commons file and FlickreviewR 2 historical licensing verification.",
+          "confidence": "date_and_license_declared_bend_location_not_identified",
+          "geometry_role": "1972_french_grand_prix_period_photo_not_apex_map",
+          "editorial_note": "Shows Chris Amon at the 1972 French Grand Prix. The photo alone does not identify an individual Charade bend, Rosier hairpin, or a precise shooting position.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     },
     {
       "circuit_id": "dallas",
@@ -3348,7 +3392,49 @@
         "uk": "У Далласі трасу Формули-1 проклали просто серед павільйонів Fair Park: бетонні стіни, коротка пряма біля боксів і низка віражів між виставковими спорудами. Спекотний вікенд 1984 року запам’ятався асфальтом, який руйнувався, та виснажливою спробою Найджела Менселла доштовхати Lotus до фінішу після втрати тяги в останньому повороті. Проблема в тому, що нам відомі різні версії цього кола: місцевий анонс описував план завдовжки 2,58 милі, а фактичну трасу виміряли в 2,424 милі. Пізніші реконструкції теж визнають невизначеність розташування шикан. Історію гонки вже можна розповісти, але назвати кожен вигин на малюнку перевіреним поворотом FIA — ні.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
         "editorial_status": "research_only"
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "dallas-mansell-lotus-1984-photo",
+          "kind": "archival_photo",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Mansell_Lotus_95T_Dallas_1984_F1.jpg",
+          "author": "twm1340 (Flickr)",
+          "date": "1984-07-08",
+          "declared_license": "CC BY-SA 2.0 Generic (Flickr licensing confirmed on Commons, 9 Jan 2008)",
+          "source_provenance": "Original Flickr photo 2154863105; Commons photograph of Nigel Mansell's Lotus 95T at Dallas.",
+          "confidence": "1984_event_attested_exact_photo_location_not_verified",
+          "geometry_role": "1984_dallas_event_photo_not_raced_chicane_or_apex_map",
+          "editorial_note": "Do not use the image as evidence of the precise final bend, Mansell pushing the car, or route geometry. Source's 2008 upload timestamp is not the photographic event date.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        },
+        {
+          "id": "dallas-rosberg-williams-1984-photo",
+          "kind": "archival_photo",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Keke_Rosberg_Williams_FW09_1984_Dallas_F1.jpg",
+          "author": "twm1340 (Flickr); color corrected version on Commons",
+          "date": "1984-07-08",
+          "declared_license": "CC BY-SA 2.0 Generic (Flickr licensing confirmed on Commons, 10 Jan 2008)",
+          "source_provenance": "Original Flickr photo 2157252430; Commons description identifies 1984 Dallas race-winning Keke Rosberg Williams FW09.",
+          "confidence": "event_and_subject_described_color_correction_provenance_needs_review",
+          "geometry_role": "1984_dallas_event_winning_car_not_turn_numbering",
+          "editorial_note": "The Commons current image includes later color correction. Check alteration disclosure and attribution chain; it cannot settle July 1984 chicane or finish-line geometry.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     },
     {
       "circuit_id": "detroit",
@@ -4676,7 +4762,29 @@
             "scope": "organizer_1982_17_turn_count"
           }
         ]
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "detroit-1982-street-map-pittenger",
+          "kind": "schematic_map",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Downtown_Detroit_Street_Circuit_(1982).svg",
+          "author": "Will Pittenger; 1982-specific derived version",
+          "date": "2012-06-03",
+          "declared_license": "CC BY-SA 3.0 Unported",
+          "source_provenance": "Commons 1982-specific derivative of Downtown Detroit Street Circuit.svg, attribution to Will Pittenger.",
+          "confidence": "1982_variant_claimed_not_independently_matched_to_fia_turn_map",
+          "geometry_role": "1982_route_overview_not_numbered_apex_map",
+          "editorial_note": "Explicitly 1982 variant; must not substitute the 1983–88 revision or current IndyCar circuit. Compare against 1982 race report before drawing turn-by-turn conclusions.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     },
     {
       "circuit_id": "jacarepagua",
@@ -6329,7 +6437,29 @@
         "uk": "У Боавішті трамвайні рейки були частиною гоночної траєкторії. У 1958 році боліди перетинали колії на подвійній лівій дузі, мчали вгору Avenida da Boavista, звертали на бруківку й протискалися між будинками перед швидким спуском до Атлантики. Навіть там, де дорога здавалася гладкою, доводилося обирати: об’їхати рейки й вибоїни чи пройти просто через них. Інший репортаж розповідає про маневр Бребема у звуженні на старті 1960 року. Це чудовий епізод, але не доказ точної нумерованої конфігурації 1958-го.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
         "editorial_status": "research_only"
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "porto-boavista-1958-public-domain-svg",
+          "kind": "schematic_map",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Boavista_(Oporto)_1958.svg",
+          "author": "Will Pittenger (base); uploaded by Алексей Гоманков",
+          "date": "2022-11-26",
+          "declared_license": "PD-self (public domain dedication stated by copyright holder on Commons)",
+          "source_provenance": "2022 version based on earlier Boavista (Oporto).svg; Commons credits Will Pittenger and uploader separately.",
+          "confidence": "license_declared_1958_title_not_independent_certified_apex_validation",
+          "geometry_role": "1958_boavista_circuit_overview_not_fia_numbered_guide",
+          "editorial_note": "Verify derivative/base-file provenance and 1958 tramline route against a contemporary report; PD declaration does not establish historic turn geometry.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     },
     {
       "circuit_id": "riverside",
@@ -7256,7 +7386,29 @@
             "scope": "brabham_pushes_car_after_running_out_of_fuel_and_clinches_title"
           }
         ]
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "sebring-1959-pohlmann-circuit-map",
+          "kind": "schematic_map",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Circuit_Sebring_1959.svg",
+          "author": "Oliver Pohlmann",
+          "date": "2010-02-07",
+          "declared_license": "CC BY-SA 3.0 Unported (dual-licence information on Commons page should be checked)",
+          "source_provenance": "Pohlmann's 2010 original Inkscape drawing, explicitly captioned Sebring 1959 on Commons.",
+          "confidence": "copyright_holder_license_declared_no_1959_fia_turn_number_key",
+          "geometry_role": "1959_airfield_layout_overview_not_modern_sebring_map",
+          "editorial_note": "Historic full-airfield layout only; must not project present-day 17 numbered Sebring corners onto the 1959 Formula 1 route.",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "not_official_numbered_map": true,
+          "independent_history_geometry_review_complete": false,
+          "third_party_attribution_review_complete": false
+        }
+      ]
     }
   ]
 }
