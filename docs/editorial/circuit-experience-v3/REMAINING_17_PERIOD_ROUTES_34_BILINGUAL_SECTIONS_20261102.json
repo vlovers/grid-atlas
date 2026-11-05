@@ -4285,10 +4285,24 @@
         }
       ],
       "editorial_reader_preview": {
-        "en": "Detroit did not offer drivers the comfort of a purpose-built circuit. The lap began beside the river, curled through a parking-area hairpin, and threaded past Woodbridge, Larned and Jefferson before dropping beneath a bridge and entering a curved tunnel. Then came the sharp riverside Esses and one last slow chicane before the finish. The 1982 report reads almost like directions through a city at rush hour — except that every wrong judgement ended beside a concrete wall. It gives us a remarkably detailed journey around the lap, but it never assigns authenticated FIA numbers to those turns.",
-        "uk": "Детройт не давав пілотам жодного затишку стаціонарного автодрому. Коло починалося біля річки, закручувалося у шпильку на парковці, проходило вулицями Woodbridge, Larned і Jefferson, пірнало під міст і виводило до вигнутого тунелю. Далі — різка зв’язка біля набережної та повільна шикана перед фінішем. Репортаж 1982 року читається майже як маршрут містом у годину пік, тільки помилка тут закінчувалася біля бетонної стіни. Він детально пояснює шлях, але не дає перевірених номерів поворотів FIA.",
+        "en": "In Detroit, the route felt less like a racetrack than a wrong turn through the city. The 1982 lap began at the riverfront, twisted through a temporary car-park hairpin, passed Atwater, Woodbridge and Jefferson, dived through a tunnel and returned via the riverside Esses. John Watson started seventeenth and still won the inaugural race — a reminder that surviving this unforgiving maze mattered as much as outright speed. The organiser describes 17 turns; F1DB counts 24 bends for its 1982 layout. Those figures cannot be turned into a certified turn-by-turn map without an independently checked period plan.",
+        "uk": "У Детройті маршрут більше нагадував неправильний поворот міськими кварталами, ніж звичайний автодром. Коло 1982 року починалося біля річки, закручувалося на тимчасовій парковці, проходило Atwater, Woodbridge та Jefferson, пірнало в тунель і поверталося зв’язкою Esses. Джон Вотсон стартував сімнадцятим і все одно виграв першу гонку — тут уміння пережити міський лабіринт важило не менше за чисту швидкість. Організатор називає 17 поворотів, а F1DB рахує 24 вигини конфігурації 1982 року. Без незалежно перевіреної історичної схеми ці числа не можна перетворювати на нумерацію кожного повороту.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
-        "editorial_status": "research_only"
+        "editorial_status": "research_only",
+        "event_sources": [
+          {
+            "url": "https://www.formula1.com/en/results/1982/races/443/detroit/race-result",
+            "scope": "1982_winner_and_race_date_only"
+          },
+          {
+            "url": "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh",
+            "scope": "watson_start_position_17_and_detroit_race_history"
+          },
+          {
+            "url": "https://www.detroitgp.com/event-info/recaps/formula-1",
+            "scope": "organizer_1982_17_turn_count"
+          }
+        ]
       }
     },
     {
@@ -6750,10 +6764,20 @@
         }
       ],
       "editorial_reader_preview": {
-        "en": "On Sebring's huge airfield, the difficult part was sometimes simply knowing where to brake. Rubber tubs stood in for permanent corner markers, the surface changed between concrete and tarmac, and the lap wound through Esses and a hairpin before a long straight between hangars. At the far end came a sharp right-left, two more right-handers, then a broad 180-degree turn toward the pits. The 1959 eyewitness account makes these details vivid. It does not, however, turn the eight recognisable bends in this account into a verified 17-number map of the Grand Prix layout.",
-        "uk": "На величезному аеродромі Себринга найважчим інколи було просто знайти місце для гальмування. Замість постійних орієнтирів стояли гумові бочки, бетон змінювався асфальтом, а маршрут проходив зв’язкою Esses і шпилькою перед довгою прямою між ангарами. На її кінці чекали різкий правий-лівий, ще два праві повороти й широка дуга на 180 градусів до боксів. Очевидці 1959 року описали це напрочуд живо. Проте вісім упізнаваних віражів у репортажі — ще не підтверджена схема з 17 номерами поворотів.",
+        "en": "On 12 December 1959, a wartime airfield hosted a World Championship finale. Sebring's runway became a maze of tub-marked corners: two early lefts, changing concrete and tarmac, the Esses, a hairpin, a dash between hangars and a wide 180-degree sweep back to the pits. Bruce McLaren won, but Jack Brabham produced the enduring image: his Cooper ran out of fuel near the end and he pushed it across the line to clinch his first title. The contemporary account lets us follow the lap's character and direction changes, not verify each of F1DB's 17 numbered bend positions.",
+        "uk": "12 грудня 1959 року колишній військовий аеродром приймав фінал чемпіонату світу. У Себрингу злітні смуги перетворилися на лабіринт поворотів, позначених гумовими бочками: два ранні ліві, перехід із бетону на асфальт, зв’язка Esses, шпилька, розгін між ангарами й широка дуга на 180 градусів до боксів. Переміг Брюс Макларен, але головний кадр гонки залишив Джек Бребем: пальне закінчилося майже перед фінішем, і він доштовхав Cooper до лінії, здобувши свій перший титул. Репортаж того часу допомагає пройти коло подумки, проте не підтверджує номери всіх 17 вигинів F1DB.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
-        "editorial_status": "research_only"
+        "editorial_status": "research_only",
+        "event_sources": [
+          {
+            "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "scope": "official_race_date_winner_and_brabham_p4"
+          },
+          {
+            "url": "https://www.formula1.com/en/latest/article/moments-in-time-united-states-special.2KYqYutdoSJMnSXtrEIuwr",
+            "scope": "brabham_pushes_car_after_running_out_of_fuel_and_clinches_title"
+          }
+        ]
       }
     }
   ]
