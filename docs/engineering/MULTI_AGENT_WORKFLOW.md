@@ -83,3 +83,23 @@ Decision required for merge, editorial acceptance or publication:
 ```
 
 This is a human/agent coordination protocol and does not automatically enforce branch protection, editorial rights, locks or releases.
+
+
+## Documentation map and maintenance contract
+
+Use this short map before creating new governance prose; link to the authoritative document instead of copying its rules into a second file:
+
+| Decision or evidence | Source of truth | Update trigger |
+| --- | --- | --- |
+| Agent scope and allowed operations | [AGENTS.md](../../AGENTS.md) | Changes to agent permissions, branch/worktree coordination or repository-specific commands |
+| Definition of completion | [Definition of Done](DEFINITION_OF_DONE.md) | New required checks, evidence or acceptance conditions |
+| Independent review and blocked findings | [Review Policy](REVIEW_POLICY.md) | Review ownership, severity classification or re-review policy changes |
+| Release authorization and rollback | [Release Checklist](RELEASE_CHECKLIST.md) | Release gates, operational recovery or deployment procedure changes |
+| Historical content and publication | [Editorial Release Pipeline](../editorial/APPROVED_RELEASE_PIPELINE.md) | Source approval, bilingual publication status or media-rights policy changes |
+| Project-level documentation entry point | [Documentation index](../README.md) | A document is added, renamed, moved or retired |
+
+A governance-only change must include a **documentation impact** line in its PR: list each affected source-of-truth document and say `updated`, `not affected + reason` or `blocked`. A link's existence is not evidence that its policy has been reviewed; verify the target and its current branch version. Do not silently update product/editorial content merely to satisfy this map.
+
+### Evidence and stale-link review
+
+For each changed Markdown link, verify the destination on the actual PR head. Relative links should resolve inside the repository; external references should identify the authoritative service and be marked unverified if not checked. Record the exact full head SHA used for link validation, the command or inspection method, and failures. After a rebase or a new commit, previous link-check evidence applies only if the changed paths and references are demonstrably unaffected. CI success is not an independent editorial or security approval.
