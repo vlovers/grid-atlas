@@ -29,6 +29,7 @@ export function renderHistoricalBendQueue(circuitId, locale) {
     const localSources = item.source_roles.filter(source => typeof source.url === 'string' && source.url.startsWith('https://'));
     return `<article id="${escape(anchor)}" tabindex="-1"><small>${role}</small>
       <h3>${escape(title)}</h3><p>${escape(item.explanation?.[locale] ?? '')}</p>
+      ${item.research_kind === 'named_feature' && item.name_evidence_assessment ? `<p><strong>${uk ? 'Походження назви' : 'Name origin'}:</strong> ${escape(item.name_origin?.[locale] ?? (uk ? 'Невідоме — не припускати' : 'Unknown — do not guess'))}. <small>${escape(item.name_evidence_assessment.classification)} · ${uk ? 'Потребує незалежного підтвердження' : 'Independent review pending'}</small></p>` : ''}
       <p><strong>${uk ? 'Статус' : 'Status'}:</strong> ${uk ? 'Потрібна незалежна перевірка джерела і точної точки на схемі' : 'Independent source and map-location review required'}</p>
       ${item.source_locator ? `<p><strong>${uk ? 'Місце в джерелі' : 'Source locator'}:</strong> ${escape(item.source_locator)}</p>` : ''}
       ${item.source_locator_gap ? `<p><strong>${uk ? 'Прогалина в доказах' : 'Evidence gap'}:</strong> ${escape(typeof item.source_locator_gap === 'string' ? item.source_locator_gap : item.source_locator_gap[locale] ?? JSON.stringify(item.source_locator_gap))}</p>` : ''}
