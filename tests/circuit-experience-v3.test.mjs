@@ -475,3 +475,42 @@ test('four historically scoped EN/UK reader openings remain review-only and visi
   assert.match(renderCircuitReview('en', '/review/test'), /Editorial opening — draft/);
   assert.match(renderCircuitReview('uk', '/review/test'), /Редакторський вступ — чернетка/);
 });
+
+test('seven unfinished circuits have readable paired openings with no publication approval', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ids = ['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring'];
+  const en = renderCircuitReview('en', '/review/test');
+  const uk = renderCircuitReview('uk', '/review/test');
+  for (const id of ids) {
+    const circuit = research.circuits.find(entry => entry.circuit_id === id);
+    assert.equal(circuit.editorial_reader_preview.editorial_status, 'research_only', id);
+    assert.match(circuit.editorial_reader_preview.source_url, /^https:\/\//);
+    for (const [locale, html] of [['en', en], ['uk', uk]]) {
+      const opening = circuit.editorial_reader_preview[locale];
+      assert.ok(opening.length > 300, id + ':' + locale + ' opening too short');
+      assert.ok(html.includes(opening.slice(0, 20)), id + ':' + locale + ' opening missing from private preview');
+    }
+  }
+});
+
+test('13 historical name studies preserve origin uncertainty and remain unapproved', async () => {
+  const { candidateHistoricalCornerReviewQueue } = await import('../apps/web/src/components/editorial/circuit-candidates.ts');
+  const named = candidateHistoricalCornerReviewQueue.filter(entry => entry.research_kind === 'named_feature');
+  assert.equal(named.length, 13);
+  for (const feature of named) {
+    const assessment = feature.name_evidence_assessment;
+    assert.ok(assessment, feature.review_id);
+    assert.equal(assessment.single_numbered_turn_verified, false);
+    assert.equal(assessment.period_specific_original_naming_year_verified, false);
+    assert.equal(assessment.needs_independent_human_review, true);
+    assert.equal(feature.publication_allowed, false);
+  }
+  const byName = name => named.find(entry => entry.label.en === name).name_evidence_assessment;
+  assert.equal(byName('Ferme').classification, 'venue_explicit_farm_name_origin');
+  assert.equal(byName('Rosier').classification, 'venue_explicit_louis_rosier_namesake');
+  assert.equal(byName('Jumeaux').classification, 'literal_translation_only_name_origin_unknown');
+  assert.equal(byName('Esse di Cappelle').classification, 'local_nickname_ambiguous_bend_location');
+  assert.match(renderHistoricalBendQueue('clermont-ferrand', 'en'), /Name origin/);
+  assert.match(renderHistoricalBendQueue('pescara', 'uk'), /Походження назви/);
+});
