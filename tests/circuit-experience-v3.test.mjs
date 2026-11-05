@@ -562,3 +562,34 @@ test('Detroit and Sebring reader openings cite official races without using resu
     assert.equal(circuit.layout_evidence_review.evidence.some(entry => entry.supports_apex_numbering === true), false);
   }
 });
+
+test('Dallas definitive and provisional 1984 map leads remain unreviewed and unpublished', async () => {
+  const { readFileSync } = await import('node:fs');
+  const d = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const circuit = d.circuits.find(c => c.circuit_id === 'dallas');
+  const leads = circuit.layout_evidence_review.contemporary_map_identification_leads;
+  assert.deepEqual(leads.map(x => x.date), ['1984-02-28','1984-03-20']);
+  assert.match(leads[0].publication, /Rombo.*150.*13/);
+  assert.match(leads[1].publication, /Rombo.*153.*12/);
+  assert.ok(leads.every(x => x.map_bytes_reviewed === false && x.period_fia_numbering_verified === false &&
+    x.image_reuse_rights_approved === false));
+  assert.match(circuit.layout_evidence_review.period_map_priority, /actual July 8 race/);
+  assert.equal(circuit.editorial_decision.certified_turn_numbers, 0);
+  assert.equal(circuit.editorial_decision.publication_allowed, false);
+});
+
+test('Charade 1972 bridge removal and route name are not invented numbered turns', async () => {
+  const { readFileSync } = await import('node:fs');
+  const d = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const circuit = d.circuits.find(c => c.circuit_id === 'clermont-ferrand');
+  const changes = circuit.layout_evidence_review.pre_1972_event_changes;
+  assert.equal(changes.reported_changes.length, 4);
+  assert.equal(changes.unlocated_hairpin, true);
+  assert.equal(changes.apex_numbers_identified, false);
+  assert.equal(changes.do_not_equate_with_named_marlboro_hairpin, true);
+  assert.equal(changes.do_not_project_1989_shortened_layout_backwards, true);
+  assert.match(circuit.layout_evidence_review.contemporary_1972_bend_count_statement.verbatim_count_claim, /more than 50/);
+  assert.match(circuit.sections.find(s => s.reading_order === 2).description.en, /left-front puncture/);
+  assert.match(circuit.sections.find(s => s.reading_order === 6).description.en, /Royat/);
+  assert.ok(circuit.layout_evidence_review.evidence.every(x => x.supports_apex_numbering === false));
+});
