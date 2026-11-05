@@ -141,6 +141,7 @@ export const candidateHistoricalCornerReviewQueue = [
     source_locator: 'source_locator' in feature && typeof feature.source_locator === 'string' ? feature.source_locator : null,
     source_locator_gap: 'source_locator_gap' in feature ? feature.source_locator_gap : null,
     name_origin: 'name_origin' in feature ? feature.name_origin : null,
+    name_evidence_assessment: 'name_evidence_assessment' in feature ? feature.name_evidence_assessment : null,
     official_turn_number: null,
     geometric_anchor_verified: false as const,
     numbered_apex_verified: false as const,
@@ -165,6 +166,11 @@ export const candidateHistoricalCornerReviewQueue = [
     // fabricating a numbered apex or treating a generic race report as proof.
     evidence_kind: 'evidence_kind' in bend ? bend.evidence_kind : 'historical_report_or_layout_research',
     source_locator_gap: 'source_locator_gap' in bend ? bend.source_locator_gap : null,
+    // Keep the epistemic classification attached to each provisional Dallas bend.
+    claim_classification: 'claim_classification' in bend ? bend.claim_classification : null,
+    evidence_limit_bilingual: 'evidence_limit_bilingual' in bend ? bend.evidence_limit_bilingual : null,
+    period_bend_existence_attested: 'period_bend_existence_attested' in bend ? bend.period_bend_existence_attested : null,
+    exact_apex_position_attested: 'exact_apex_position_attested' in bend ? bend.exact_apex_position_attested : false,
     lap_study_order: bend.lap_study_order,
     source_research_order: bend.source_research_order,
     official_turn_number: null,

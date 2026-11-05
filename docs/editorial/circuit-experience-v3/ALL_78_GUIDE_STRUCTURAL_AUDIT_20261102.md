@@ -119,3 +119,36 @@ The 69 guides integrated directly in `apps/web/src/components/editorial/circuit-
 6. Require independent editorial review and completed CI for the exact PR HEAD. No release or merging while queued/failed.
 
 **Current outcome:** the seven gaps are explicitly inventoried and research material linked, but **no additional integrated turn guides or approvals are claimed by this audit**.
+
+
+## 2026-11-05 editorial evidence decision — Dallas as-raced bend claims
+
+This appendix updates the **research** count from the original 2026-11-02 snapshot; it does not alter historical approval or revise old worklist figures. At the 2026-11-05 review, the seven unmatched layouts have **68 bilingual route sections, 53 individual period-bend research records and 13 named-feature research records**. These are overlapping types of study, not **134 verified corners**.
+
+### Dallas Fair Park, 1984 — claim-by-claim disposition
+
+- **1/16 bend claims — period report attests a specific bend:** the final corner before the finish, where Nigel Mansell lost drive. Motor Sport race report identifies *the final corner*, but neither an independent numbered FIA apex nor a surveyed position.
+- **15/16 bend claims — provisional reconstructed geometry:** direction and relative lap position in the existing exploratory model do **not** have a period source pinpointing that individual bend. These remain diagram-derived hypotheses, not verified facts. Their EN/UK copy must not be published as a numbered turn guide.
+- **0/16** independently mapped apex coordinates or confirmed period FIA numbers.
+- **Four separate landmarks** in the March 1984 *D Magazine* preview (Food and Fiber Pavilion; hairpin behind Fair Park Music Hall; Fine Arts Museum straight; Pennsylvania Avenue near a roller coaster) describe the **planned** route. The anticipated **2.58 mi** is different from the **2.424 mi** raced layout. Do not use the early description to certify any July turn location.
+- **Count conventions do not agree:** F1DB 23 individual bends; RacingCircuits.info describes 12 main corners plus additional chicanes; Lap Ledger headline says 24. No source here provides a 1:1 authoritative numbered crosswalk.
+- A separate historic reconstruction explicitly warns that **chicane locations remain uncertain** without better aerial evidence. The reconstruction and photographs are external sources; image availability does not imply republication rights.
+
+**Verification queue:** obtain an original dated as-raced map, contemporary aerial or legible full-lap race footage with independently checked location anchors; attach per-bend timestamp/page and trace the entire course against `dallas-1`. A later reference to the *existence* of a chicane does not prove the exact position or corner number. All 16 keep `official_turn_number: null` and `publication_allowed: false`.
+
+**Claim-level source leads (not licensing approvals):**
+- [Contemporary race narrative — Motor Sport](https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/)
+- [Historic Fair Park analysis — RacingCircuits.info](https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html)
+- [Original March 1984 planned-route preview — D Magazine](https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/)
+- [Historic reconstruction acknowledging uncertain chicane positions — The Fastlane](https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html)
+
+This editorial ruling is **not** an independent human approval, a geometric mapping or an authorization to publish.
+
+
+### Charade 1972 — Ferme and marshal-post numbering trap
+
+A dedicated [Charade venue history (#46)](https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/) confirms the original 8.055 km Ferme sequence was an **S: left then right**, opposite a farm, followed by the descent towards Petit Pont. The description is specific to the old circuit and therefore supports the geographic sequence without creating a certified 1972 FIA apex number.
+
+Crucially, that venue text also gives **marshal post #10** on the pre-1989 layout and posts **#16/#17** after the 1989 revision. **Those are marshals' posts, not corner numbers**. Any image showing these signs must not be treated as an official numbered bend chart. Historic photo station numbers are also not bend IDs. The dedicated venue section about Petit Pont discusses later changes to runoff: **do not backdate** post-1989 safety geometry to the 1972 French GP.
+
+Review status: Ferme's venue-sourced bend type and name origin have stronger evidence; **independent placement of every 1972 apex, the 48 vs 51 counting convention, exact map rights and publication authorization remain unresolved**.

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261105-02-final-unique-evidence",
+  "source_release": "F1DB v2026.17.0",
+  "status": "research_only",
+  "scope": "Two additional unique event crosschecks; duplicate rechecks live in the prior batch files. All publication gates remain closed.",
+  "publication_allowed": false,
+  "independent_human_approval": false,
+  "media_rights_approved": false,
+  "count": 2,
+  "records": [
+    {
+      "claim_id": "hockenheimring:2018",
+      "circuit_id": "hockenheimring",
+      "event_year": 2018,
+      "source_url": "https://www.fia.com/news/f1-hamilton-wins-14th-vettel-crashes-out-german-grand-prix",
+      "source_role": "fia_race_report",
+      "claim_specific_review_note_en": "Vettel crashes while leading on lap 52 during rain; do not infer an unverified specific corner from general race narrative.",
+      "claim_specific_review_note_uk": "Феттель вибув з лідерства на 52-му колі під дощем; не додавати назву повороту без окремого підтвердження.",
+      "independent_human_approval": false,
+      "publication_allowed": false,
+      "media_rights_approved": false,
+      "verification_status": "research_lead_crosscheck"
+    },
+    {
+      "claim_id": "barcelona-catalunya:2001",
+      "circuit_id": "barcelona-catalunya",
+      "event_year": 2001,
+      "source_url": "https://www.formula1.com/en/latest/article/do-you-remember-hakkinens-dramatic-last-lap-retirement-in-spain.5KrvEuDAHppTbmEDbiFXOn",
+      "source_role": "official_historical_retrospective",
+      "claim_specific_review_note_en": "Häkkinen loses drive on final lap; official F1 retrospective is the same publisher, not an independent corroboration.",
+      "claim_specific_review_note_uk": "Гаккінен утратив привід на останньому колі; другий матеріал F1 не є незалежним підтвердженням.",
+      "independent_human_approval": false,
+      "publication_allowed": false,
+      "media_rights_approved": false,
+      "verification_status": "research_lead_crosscheck"
+    }
+  ]
+}
