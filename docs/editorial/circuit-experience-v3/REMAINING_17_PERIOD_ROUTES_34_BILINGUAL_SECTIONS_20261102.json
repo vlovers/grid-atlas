@@ -1729,9 +1729,42 @@
             "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=2",
             "claim": "Historical illustration is comparative route evidence only; 13 research driving complexes cannot stand for all 23 individual corners",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "march_1984_pre_race_landmark_route",
+            "url": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+            "claim": "March 1984 preview names Food and Fiber Pavilion, hairpin behind Fair Park Music Hall, Fine Arts Museum straight and Pennsylvania Avenue by a roller coaster; future tense and 2.58-mile prediction limit its use to planned-route geography, not raced apex numbering.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "raced_main_corner_chicane_convention",
+            "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+            "claim": "The historical Dallas 1984 route is 2.424 miles with 12 main corners and several chicanes, not interchangeable with F1DB 23-bend individual count.",
+            "supports_apex_numbering": false
           }
         ],
-        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred"
+        "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
+        "layout_count_conventions": [
+          {
+            "source": "F1DB dallas-1",
+            "count": 23,
+            "meaning": "Individual bends in the pinned layout; not certified FIA number labels",
+            "source_url": "https://www.lapledger.org/circuits/dallas"
+          },
+          {
+            "source": "RacingCircuits.info 1984",
+            "count": 12,
+            "meaning": "Main corners plus several additional chicanes; this is a different counting convention",
+            "source_url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html"
+          }
+        ],
+        "pre_race_vs_raced_length": {
+          "planned_miles": 2.58,
+          "planned_source": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+          "raced_miles": 2.424,
+          "raced_source": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+          "meaning": "March 1984 local preview describes planned route and estimated lap length; July 1984 raced layout is documented as 2.424 miles. Do not treat the preview as a period-certified raced map."
+        }
       },
       "route_scope": {
         "en": "The single 1984 Fair Park Grand Prix configuration. The thirteen reading sections describe bends, linked direction changes and approach roads, not thirteen independently authenticated FIA turn numbers or proper names.",
@@ -1791,7 +1824,7 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "evidence_kind": "contemporary_report_specific_bend",
-          "source_locator": "Motor Sport, Alan Henry, \"1984 Dallas Grand Prix race report\", Race section, final paragraph on Mansell losing drive through the last corner before the finish."
+          "source_locator": "Motor Sport, Alan Henry, Dallas GP race report (archive edition August 1984), Race section final paragraph before results: Mansell lost drive while sweeping through the final corner before the finish; no official corner number supplied."
         },
         {
           "reading_order": 2,
@@ -2588,7 +2621,78 @@
             "uk": "Широкий лівий перед завершальною секцією: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
           }
         }
-      ]
+      ],
+      "planned_route_waypoints": [
+        {
+          "reading_order": 1,
+          "label": {
+            "en": "Food and Fiber Pavilion",
+            "uk": "Павільйон Food and Fiber"
+          },
+          "context": {
+            "en": "A March 1984 Dallas preview expected the cars to pass the pavilion early in the lap. A planned-route landmark only: the exact corner position on the raced layout is not certified.",
+            "uk": "У березневому матеріалі 1984 року очікували, що боліди проїжджатимуть повз павільйон на початку кола. Це орієнтир запланованого маршруту, а не підтверджений номер повороту на фактичній трасі."
+          },
+          "source_locator": "D Magazine, Eric Miller, March 1 1984, opening route preview (first paragraphs).",
+          "source_url": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+          "source_period": "pre_race_plan_march_1984",
+          "raced_layout_correspondence_verified": false,
+          "official_turn_number": null,
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 2,
+          "label": {
+            "en": "Hairpin behind Fair Park Music Hall",
+            "uk": "Шпилька за Fair Park Music Hall"
+          },
+          "context": {
+            "en": "The pre-race local preview explicitly anticipated a hairpin behind Music Hall. Its presence in the plan is supported, but the exact raced apex and its FIA number are not.",
+            "uk": "Місцевий анонс перед гонкою прямо згадує шпильку за Music Hall. Її наявність у плані підтверджена, але точний апекс на гоночній схемі та номер FIA — ні."
+          },
+          "source_locator": "D Magazine, March 1 1984, route preview paragraph naming the hairpin behind Music Hall.",
+          "source_url": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+          "source_period": "pre_race_plan_march_1984",
+          "raced_layout_correspondence_verified": false,
+          "official_turn_number": null,
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 3,
+          "label": {
+            "en": "Fine Arts Museum straight",
+            "uk": "Пряма повз Музей образотворчого мистецтва"
+          },
+          "context": {
+            "en": "The preview places a straight alongside the Fine Arts Museum after the Music Hall hairpin. It establishes a route landmark in an advance description, not a numbered bend.",
+            "uk": "Анонс розташовує пряму повз Музей образотворчого мистецтва після шпильки біля Music Hall. Це попередній дорожній орієнтир, а не пронумерований поворот."
+          },
+          "source_locator": "D Magazine, March 1 1984, same planned-route description.",
+          "source_url": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+          "source_period": "pre_race_plan_march_1984",
+          "raced_layout_correspondence_verified": false,
+          "official_turn_number": null,
+          "publication_allowed": false
+        },
+        {
+          "reading_order": 4,
+          "label": {
+            "en": "Pennsylvania Avenue by the roller coaster",
+            "uk": "Pennsylvania Avenue повз американські гірки"
+          },
+          "context": {
+            "en": "The advance route description anticipated a fast section on Pennsylvania Avenue beside a roller coaster. Whether this projected segment exactly matches the raced 1984 geometry remains unverified.",
+            "uk": "Попередній опис передбачав швидку ділянку Pennsylvania Avenue поруч з американськими гірками. Точне збігання цієї запланованої ділянки з геометрією гонки 1984 року ще не перевірено."
+          },
+          "source_locator": "D Magazine, March 1 1984, planned-route paragraph ending with Pennsylvania Avenue.",
+          "source_url": "https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/",
+          "source_period": "pre_race_plan_march_1984",
+          "raced_layout_correspondence_verified": false,
+          "official_turn_number": null,
+          "publication_allowed": false
+        }
+      ],
+      "period_waypoint_review_note": "All four D Magazine waypoints come from a March 1984 planned-route preview. The actual July race used a 2.424-mile configuration, versus the preview's 2.58 miles. Do not assert a 1:1 correspondence with the 16 provisional bend studies or F1DB turn slots."
     },
     {
       "circuit_id": "detroit",
