@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { required, verifyGovernance } from '../scripts/check-governance.mjs';
@@ -39,4 +39,16 @@ test('fails missing PR review contract', () => withFixture(root => {
 test('fails escaping links', () => withFixture(root => {
   writeFileSync(join(root, 'CLAUDE.md'), '# Claude\n\nFollow [AGENTS.md](AGENTS.md) and [external](../../outside.md)\n');
   assert.match(verifyGovernance(root).join('\n'), /link escapes repository/);
+}));
+
+test('fails symlink link escaping repository', () => withFixture(root => {
+  const outside = mkdtempSync(join(tmpdir(), 'grid-governance-outside-'));
+  try {
+    writeFileSync(join(outside, 'outside.md'), '# Private external file');
+    symlinkSync(join(outside, 'outside.md'), join(root, 'external.md'));
+    writeFileSync(join(root, 'CLAUDE.md'), '# Claude\n\n[AGENTS.md](AGENTS.md) and [external](external.md)\n');
+    assert.match(verifyGovernance(root).join('\n'), /link escapes repository via symlink/);
+  } finally {
+    rmSync(outside, { recursive: true, force: true });
+  }
 }));
