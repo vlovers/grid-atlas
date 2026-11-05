@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { downloadCommonsOriginal } from './commons-original-download.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const output = join(root, '.grid-atlas', 'media-review');
@@ -51,8 +52,9 @@ for (const item of pinned.entries) {
       if (offline) throw Error('No verified cached original (' + e.message + ')', { cause: e });
       // Exact pinned filename; do not guess image URLs, use web page link for attribution.
       const url = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/' + encodeURIComponent(title);
-      let response = await fetch(url, { headers: { 'User-Agent': 'GridAtlasMediaReview/1.0 (local noncommercial research)' }, redirect: 'follow', signal: AbortSignal.timeout(25000) });
-      if (!response.ok) throw Error('Commons download HTTP ' + response.status, { cause: e });
+      const response = await downloadCommonsOriginal(url, {
+        onRetry: ({ status, retry, delay }) => console.error('RETRY', id, 'HTTP', status, 'attempt', retry + 1, 'after', delay, 'ms'),
+      });
       if (!['upload.wikimedia.org', 'commons.wikimedia.org'].includes(new URL(response.url).hostname)) throw Error('Unexpected download origin', { cause: e });
       bytes = Buffer.from(await response.arrayBuffer());
       const hash = verify(bytes);
