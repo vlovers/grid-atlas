@@ -23,12 +23,14 @@ export async function downloadCommonsOriginal(url, { fetchImpl = fetch, wait = s
     const seconds = header !== null && /^\d+$/.test(header.trim()) ? Number(header.trim()) : null;
     const date = header === null || seconds !== null ? NaN : Date.parse(header);
     const requested = seconds !== null ? seconds * 1000 : Number.isFinite(date) ? date - now() : backoff[attempt];
-    const delay = Math.max(1000, requested);
+    // Retry-After is a minimum, never a reason to hammer a throttled origin.
+    // Commons may return0/a past HTTP date before issuing a longer delay.
+    const delay = Math.max(backoff[attempt], requested);
     await response.body?.cancel();
-    // At most four20s requests and120s total waiting per original fit within
-    // the existing20-minute workflow for all five files. Never retry earlier
+    // At most four20s requests and180s total waiting per original fit within
+    // the25-minute workflow for all five files. Never retry earlier
     // than a server-requested delay; fail closed if it exceeds the budget.
-    if (!Number.isFinite(delay) || waited + delay > 120000) {
+    if (!Number.isFinite(delay) || waited + delay > 180000) {
       throw new Error(error.message + '; Retry-After exceeds bounded retry budget');
     }
     waited += delay;

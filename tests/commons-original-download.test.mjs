@@ -27,12 +27,12 @@ test('429 and transient server errors retry the exact original and preserve resp
 });
 
 test('Retry-After seconds and HTTP dates are honored without early requests', async () => {
-  const h = harness([reply(429, '30'), reply(503, 'Thu, 05 Nov 2026 00:00:45 GMT'), reply(200)]);
+  const h = harness([reply(429, '30'), reply(503, 'Thu, 05 Nov 2026 00:00:50 GMT'), reply(200)]);
   let time = Date.parse('2026-11-05T00:00:00Z');
   h.options.now = () => time;
   h.options.wait = async delay => { h.waits.push(delay); time += delay; };
   await downloadCommonsOriginal(url, h.options);
-  assert.deepEqual(h.waits, [30000, 15000]);
+  assert.deepEqual(h.waits, [30000, 45000], 'both server minimum and increasing backoff apply');
 });
 
 test('persistent throttling and excessive Retry-After remain failures within the fixed budget', async () => {
@@ -40,7 +40,7 @@ test('persistent throttling and excessive Retry-After remain failures within the
   await assert.rejects(downloadCommonsOriginal(url, h.options), /HTTP 429/);
   assert.equal(h.calls.length, 4);
   assert.deepEqual(h.waits, [15000, 45000, 60000]);
-  for (const value of ['121', '9999999999999999999999999999999999999999999999999999999999999999999999999999', 'Thu, 05 Nov 2026 00:10:00 GMT']) {
+  for (const value of ['181', '9999999999999999999999999999999999999999999999999999999999999999999999999999', 'Thu, 05 Nov 2026 00:10:00 GMT']) {
     const throttled = harness([reply(429, value)]);
     await assert.rejects(downloadCommonsOriginal(url, throttled.options), /bounded retry budget/);
     assert.equal(throttled.calls.length, 1);
@@ -49,13 +49,19 @@ test('persistent throttling and excessive Retry-After remain failures within the
 });
 
 test('cumulative retry waits cannot exceed the budget and expired headers cannot spin', async () => {
-  const h = harness([reply(429, '90'), reply(429, '60')]);
+  const h = harness([reply(429, '120'), reply(429, '90')]);
   await assert.rejects(downloadCommonsOriginal(url, h.options), /bounded retry budget/);
-  assert.deepEqual(h.waits, [90000]);
+  assert.deepEqual(h.waits, [120000]);
   assert.equal(h.calls.length, 2);
   const invalid = harness([reply(429, 'not-a-date'), reply(429, 'Wed, 04 Nov 2026 00:00:00 GMT'), reply(200)]);
   await downloadCommonsOriginal(url, invalid.options);
-  assert.deepEqual(invalid.waits, [15000, 1000]);
+  assert.deepEqual(invalid.waits, [15000, 45000]);
+});
+
+test('actual Commons short-then-long Retry-After pattern waits rather than exhausting attempts immediately', async () => {
+  const h = harness([reply(429, '0'), reply(429, '120'), reply(200)]);
+  await downloadCommonsOriginal(url, h.options);
+  assert.deepEqual(h.waits, [15000, 120000]);
 });
 
 test('authorization, missing files and network failures are never converted into success', async () => {

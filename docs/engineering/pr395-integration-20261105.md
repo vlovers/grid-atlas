@@ -64,7 +64,7 @@ required host execution because the sandbox rejects localhost connect/listen.
 | `pnpm check` | PASS; all17 workflows retain immutable action pins |
 | `pnpm lint` | PASS |
 | `pnpm typecheck` | PASS |
-| `pnpm test` | PASS864/864, no skips (includes Commons retry regressions) |
+| `pnpm test` | PASS865/865, no skips (includes Commons retry regressions) |
 | `python3 -m unittest discover -s tests -v` | PASS462/462 |
 | `GRID_ATLAS_NEXT_DIST_DIR=.next-test pnpm build` | PASS; existing CSS compatibility warnings |
 | `pnpm test:integration` | PASS92, existing opt-in publisher test skipped1 (93 total) |
@@ -101,9 +101,10 @@ Chromium browser tests supplied the recorded runtime and screenshot evidence.
 On integration commit `dd86c6b8`, Foundation CI and editorial preflight passed,
 but Commons job126962803181 failed after2/5 downloads with HTTP429. This reproduces
 the existing main failure in job125011105948. The network helper now retries only
-429/502/503/504, at most four attempts with20s per request and120s cumulative wait.
+429/502/503/504, at most four attempts with20s per request and180s cumulative wait.
 It honors Retry-After seconds/HTTP dates, never retries before a server delay and
-fails when that delay exceeds its fixed budget. Missing/unauthorized files and
+fails when that delay exceeds its fixed budget. Increasing backoff is also a
+minimum even when Retry-After is zero/past. Missing/unauthorized files and
 network failure remain errors. Retry diagnostics are recorded in CI logs.
 
 Original-target/final-origin validation, SHA1/size/JPEG/SHA256 checks and rights
@@ -112,7 +113,10 @@ rights approval is substituted. Independent AI review found no retry blocker;
 unit tests cover persistent throttling, cumulative budget and advancing date-clock
 semantics. Real transport succeeded on the second local invocation with verified
 cache reuse; remote persistent throttling still fails closed and is not a green
-check until the final workflow actually succeeds.
+check until the final workflow actually succeeds. Job126968726764 exposed the
+real zero/past-then120s response pattern; its regression now prevents rapid retry
+exhaustion. The explicitly increased25-minute workflow limit contains the worst-case
+five-file transport budget of21m40s while preserving every verification/failure gate.
 
 ## Remaining release and research limitations
 
