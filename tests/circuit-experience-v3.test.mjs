@@ -803,3 +803,56 @@ test('all seven unreleased historic circuits have source-linked media candidates
     assert.ok(html.includes('porto-boavista-1958-public-domain-svg'));
   }
 });
+
+test('large editorial batch upgrades twenty paired route sections across ten classic circuits', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ids = ['bremgarten','bugatti','caesars-palace','jacarepagua','monsanto','mont-tremblant',
+    'nivelles','pedralbes','phoenix','riverside'];
+  const selected = ids.map(id => data.circuits.find(c => c.circuit_id === id));
+  assert.ok(selected.every(Boolean));
+  assert.equal(selected.reduce((count,circuit) => count + circuit.sections.length,0),20);
+  const en = renderCircuitReview('en', '/review/batch-20');
+  const uk = renderCircuitReview('uk', '/review/batch-20');
+  for (const circuit of selected) {
+    assert.equal(circuit.sections.length, 2, circuit.circuit_id);
+    const opening = circuit.editorial_reader_preview;
+    assert.equal(opening.editorial_status, 'research_only');
+    assert.equal(opening.publication_allowed, false);
+    assert.match(opening.source_url, /^https:\/\//);
+    for (const [locale, html] of [['en', en], ['uk', uk]]) {
+      assert.ok(opening[locale].length > 300, circuit.circuit_id + ':opening:' + locale);
+      assert.ok(html.includes(opening[locale].slice(0, 20)), circuit.circuit_id + ':preview:' + locale);
+    }
+    for (const section of circuit.sections) {
+      assert.equal(section.publication_allowed, false, circuit.circuit_id);
+      assert.equal(section.independently_verified_numbered_turns, false, circuit.circuit_id);
+      assert.equal(section.turn_numbers, null, circuit.circuit_id);
+      assert.ok(section.description.en.length > 350, circuit.circuit_id + ':en');
+      assert.ok(section.description.uk.length > 350, circuit.circuit_id + ':uk');
+      assert.ok(section.label.en.length > 12 && section.label.uk.length > 12, circuit.circuit_id + ':labels');
+      assert.ok(section.source_urls.every(url => url.startsWith('https://')));
+      for (const [locale,html] of [['en',en],['uk',uk]]) {
+        assert.ok(html.includes(section.description[locale].slice(0,20)), circuit.circuit_id + ':section:' + locale);
+      }
+    }
+  }
+  assert.equal(data.circuits.filter(x => x.editorial_reader_preview).length, 17);
+});
+
+test('20-scene legacy provenance fallback is read-only and does not certify FIA corners', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const selected = data.circuits.filter(x => x.sections.length === 2);
+  assert.equal(selected.length, 10);
+  for (const circuit of selected) {
+    for (const section of circuit.sections) {
+      assert.equal(section.provenance_scope, undefined);
+      assert.ok(section.source_urls.length >= 1);
+      assert.match(section.source_scope_note, /not any named or numbered FIA apex/);
+    }
+  }
+  const html = renderCircuitReview('en', '/review/batch-20');
+  assert.ok((html.match(/Historical source \(not turn-number evidence\)/g) ?? []).length >= 20);
+  assert.doesNotMatch(html, /undefined/);
+});
