@@ -222,7 +222,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+        "locator": "Grand Prix Circuit 1984 / TransAm Circuit 1988 layout tabs and Circuit History, 'Brief revival attempt' section",
+        "observation_en": "The venue history distinguishes the 1984 Grand Prix course (2.424 miles / 3.901 km) from a shortened 1988 Trans-Am course (1.200 miles / 1.931 km). The latter must not be used as the as-raced 1984 route.",
+        "observation_uk": "Історія траси відокремлює маршрут Гран-прі 1984 року (2,424 милі / 3,901 км) від скороченого маршруту Trans-Am 1988 року (1,200 милі / 1,931 км). Схему 1988 року не можна підміняти конфігурацією Гран-прі 1984-го.",
+        "scope": "secondary_venue_history_distinct_1984_and_1988_layouts_not_period_authenticated_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "dallas:geometry",
@@ -244,7 +257,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
+        "locator": "Circuit History, paragraph beginning 'The resulting layout wound its way through the 277-acre State Fairgrounds'",
+        "observation_en": "The circuit history describes twelve main corners plus several chicanes on the 1984 course. This is a source-specific classification of main corners, not a verified count of every apex or an FIA numbered turn key.",
+        "observation_uk": "Історія траси описує дванадцять основних поворотів і кілька шикан на маршруті 1984 року. Це класифікація основних поворотів конкретного джерела, а не підтверджена кількість усіх апексів чи офіційна нумерація FIA.",
+        "scope": "secondary_source_main_corners_plus_chicanes_not_fia_turn_numbering",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "dallas:race_event",
@@ -391,7 +417,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+        "locator": "Layout tabs 'Circuito di Pescara 1934-61' and 'Circuito di Pescara 1924-33'; Circuit History paragraphs on 1934 chicane and 1957 GP",
+        "observation_en": "The historical layout index separates the 1924–33 course (25.554 km) from the 1934–61 course (25.578 km); its history records a chicane introduced in 1934. The 1957 championship event belongs to the later era, not the pre-1934 route.",
+        "observation_uk": "Індекс історичних конфігурацій розділяє трасу 1924–1933 років (25,554 км) і маршрут 1934–1961 років (25,578 км); у 1934 році додали шикану. Чемпіонатний Гран-прі 1957 року належить до пізнішої епохи, а не до маршруту до 1934 року.",
+        "scope": "secondary_layout_era_index_not_authentication_of_1957_as_raced_corner_key",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "pescara:geometry",
@@ -414,7 +453,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+        "locator": "Circuit Overview, village of Spoltore and seaside straight; Circuit History, 1934 bus-stop chicane before pits",
+        "observation_en": "The overview identifies the long seaside straight and the high point near Spoltore, while the history records a bus-stop-style chicane before the pits added in 1934. These landmarks establish broad course geography but do not authenticate individual 1957 numbered apexes.",
+        "observation_uk": "Огляд описує довгу пряму вздовж моря та найвищу точку біля Спольторе, а історія згадує шикану типу bus-stop перед боксами, додану 1934 року. Це орієнтири маршруту, а не автентичні номери окремих поворотів 1957 року.",
+        "scope": "secondary_named_geography_and_1934_chicane_not_numbered_1957_apex_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "pescara:race_event",
@@ -472,7 +524,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+        "locator": "Circuit description and year selectors 1950–51, 1952–60, 2005–15",
+        "observation_en": "The circuit database distinguishes early 1950–51, 1952–60 and modern 2005–15 eras; its history states the post-2005 revival used a shortened version. The 1958 and 1960 Formula 1 events must not be reconstructed from the modern shortened course.",
+        "observation_uk": "База трас відокремлює періоди 1950–1951, 1952–1960 і 2005–2015 років; історія зазначає, що після 2005 року використовували скорочений маршрут. Гран-прі Формули-1 1958 та 1960 років не можна відтворювати за сучасною коротшою схемою.",
+        "scope": "secondary_era_selection_and_shortened_modern_layout_not_1958_period_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "porto:geometry",
@@ -494,7 +559,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.motorsportmagazine.com/database/circuits/oporto/",
+        "locator": "Circuit description, paragraph describing tramlines, cobblestones, fish-drying factory and fast/slow corners",
+        "observation_en": "The circuit history describes a Boavista street course with tramlines, cobblestones and a fish-drying factory near the lap end. These are period-relevant geography cues but no numbered turn list or authenticated corner-by-corner map is provided.",
+        "observation_uk": "Історія описує міський маршрут Боавішта з трамвайними коліями, бруківкою та фабрикою сушіння риби наприкінці кола. Це географічні орієнтири епохи, але джерело не надає автентичної покрокової схеми з номерами поворотів.",
+        "scope": "secondary_course_geography_not_period_numbered_turn_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_public_circuit_history_online",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "porto:race_event",
@@ -611,6 +689,6 @@
       }
     }
   ],
-  "source_passage_observations": 10,
-  "claim_review_status": "research_leads_plus_10_checked_period_passages_no_human_approval"
+  "source_passage_observations": 16,
+  "claim_review_status": "research_leads_plus_16_checked_passages_no_human_approval"
 }
