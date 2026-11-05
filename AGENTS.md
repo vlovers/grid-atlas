@@ -13,6 +13,9 @@ Bilingual UK/EN source-backed historical F1 archive. Pinned F1DB, source provena
 5. Independent reviewer assesses original diff, acceptance criteria, correctness, regressions, safety, compatibility and test value; resolve blockers.
 6. Document evidence, handoff SHA, outstanding limitations and next action. Never auto-merge or deploy/publish without approval.
 
+## Parallel-agent delivery
+Follow [Multi-agent delivery protocol](docs/engineering/MULTI_AGENT_WORKFLOW.md): coordinate claimed circuit IDs and shared schemas, isolate Git worktrees, stage source-backed UK/EN editorial approval separately from code checks, and record SHA-pinned evidence. Prefer complete substantial batches; do not create duplicate micro-PRs or publish candidate claims as reviewed.
+
 ## Relevant verification
 - `pnpm check`
 - `pnpm lint`
