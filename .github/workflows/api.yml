@@ -17,6 +17,10 @@ on:
       - 'packages/database/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 jobs:
