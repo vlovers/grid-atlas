@@ -691,3 +691,42 @@ test('Charade 11 named landmarks have substantive paired prose without backdatin
   assert.match(named.find(x => x.name === 'Marlboro hairpin').explanation.en, /does not establish when/);
   assert.equal(route.every(entry => entry.numbered_apex_verified === false), true);
 });
+
+test('Ain-Diab 1957-to-1958 continuity and count disagreement never imply FIA apex locations', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ain = data.circuits.find(x => x.circuit_id === 'ain-diab');
+  const review = ain.layout_evidence_review;
+  assert.equal(review.period_1957_1958_comparison.layout_continuity_reported, true);
+  assert.equal(review.period_1957_1958_comparison.surface_upgrades_reported, true);
+  assert.equal(review.period_1957_1958_comparison.individual_apex_numbering_in_either_year_verified, false);
+  assert.equal(review.archival_count_semantics.f1db_layout_turns, 18);
+  assert.equal(review.archival_count_semantics.venue_summary_turns, 15);
+  assert.equal(review.archival_count_semantics.certified_apex_numbers, 0);
+  assert.equal(ain.editorial_reader_preview.editorial_status, 'research_only');
+  assert.match(ain.editorial_reader_preview.en, /road race, not a conventional permanent autodrome/);
+  assert.ok(ain.editorial_reader_preview.event_sources.every(x => x.url.startsWith('https://')));
+});
+
+test('Pescara Esse di Cappelle ambiguity preserves both suggested sites and prohibits apex selection', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const pescara = data.circuits.find(x => x.circuit_id === 'pescara');
+  const adjudication = pescara.layout_evidence_review.local_place_name_adjudication;
+  assert.equal(adjudication.two_candidate_esse_sites.length, 2);
+  assert.equal(adjudication.source_author_explicitly_unsure, true);
+  assert.equal(adjudication.precise_1957_esse_site_verified, false);
+  assert.equal(adjudication.independent_period_name_attestation, false);
+  assert.ok(adjudication.two_candidate_esse_sites.every(x => x.historical_number === null));
+  const esse = pescara.named_bend_studies.find(x => x.name === 'Esse di Cappelle');
+  assert.equal(esse.name_evidence_assessment.exact_two_candidate_locations_unresolved, true);
+  assert.equal(esse.numbered_apex_verified, false);
+  assert.equal(esse.publication_allowed, false);
+  assert.ok(esse.explanation.en.length > 200 && esse.explanation.uk.length > 200);
+  const en = renderCircuitReview('en', '/review/test');
+  const uk = renderCircuitReview('uk', '/review/test');
+  assert.match(en, /two possible Esse di Cappelle sites — unresolved/);
+  assert.match(uk, /два можливі місця Esse di Cappelle/);
+  assert.match(en, /entrance monument/);
+  assert.match(en, /village centre/);
+});
