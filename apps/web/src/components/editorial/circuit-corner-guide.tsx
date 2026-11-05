@@ -1,5 +1,5 @@
 import { CircuitNumberedDiagram } from './circuit-numbered-diagram';
-import legacyGuides from './circuit-corner-guides.json';
+import legacyGuides from './archive-summaries/circuit-corner-guides.json';
 import { CIRCUIT_ARTWORK } from '@/components/circuit-layout-registry';
 import { cornerGuideFor, cornerSources, numberedCorners } from './circuit-corner-model';
 import styles from './circuit-corner-guide.module.css';

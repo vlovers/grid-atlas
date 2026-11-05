@@ -47,8 +47,8 @@ export const historicalCornerCountReviewByCircuit = candidateUnnumberedHistorica
   const values = [...new Set(same.map(x => x.turns))].sort((a,b) => a-b);
   // Group by actual source page, not by source_family. A headline and its
   // derivative F1DB row can carry different family labels but share a publisher.
-  // URLs with/without www, query parameters, fragments and trailing slashes
-  // refer to the same publisher page, not independent historical witnesses.
+  // Known publisher aliases/tracking variants are one page. Content-selecting
+  // queries remain distinct. Original URLs, locators and evidence roles survive.
   const sourcePages = [...new Set(same.map(x => canonicalHistoricalCountSourcePage(x.source_url)))];
   // Multiple pages from one publisher are not independent corroboration.
   // Derivative F1DB mirrors also remain derivative even across domains.

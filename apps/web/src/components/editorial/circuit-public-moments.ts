@@ -1,6 +1,6 @@
-import facts from './circuit-extra-stories.json' with { type: 'json' };
-import nextFacts from './circuit-next20-stories.json' with { type: 'json' };
-import finalFacts from './circuit-final33-stories.json' with { type: 'json' };
+import facts from './archive-summaries/circuit-extra-stories.json' with { type: 'json' };
+import nextFacts from './archive-summaries/circuit-next20-stories.json' with { type: 'json' };
+import finalFacts from './archive-summaries/circuit-final33-stories.json' with { type: 'json' };
 
 type LocalizedText = { en: string; uk: string };
 export type PublicCircuitStory = {

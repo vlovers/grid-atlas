@@ -21,7 +21,9 @@ class CircuitReadingJourneysTests(unittest.TestCase):
                 self.assertGreater(len(item["description"][locale].strip()), 70)
                 self.assertTrue(item["title"][locale].strip())
             self.assertRegex(item["source"], r"^https://")
-        self.assertIn("const entries = [...facts, ...nextFacts, ...finalFacts]", SOURCE)
+        self.assertIn("getPublicCircuitStory(circuitId)", SOURCE)
+        helper = (ED / "circuit-public-moments.ts").read_text(encoding="utf-8")
+        self.assertIn("archive-summaries/circuit-extra-stories.json", helper)
 
     def test_reader_links_are_derived_from_exact_unambiguous_races(self):
         renderer = (ED / "circuit-narrative.tsx").read_text(encoding="utf-8")

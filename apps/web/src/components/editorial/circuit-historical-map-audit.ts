@@ -1,9 +1,9 @@
 import { dallas1984MagazineMapLeads, dallas1984DirectionDispute } from './circuit-dallas-1984-source-audit.ts';
 import { candidateUnnumberedHistoricalRoutes } from './circuit-candidates.ts';
 
-/** Canonical document identity for map provenance. Most query strings are
- * tracking parameters, but gdecarli.it/php2 uses var1..var5 to SELECT the
- * actual archival page: dropping those would merge different maps.
+/** Comparison key, deliberately NOT a navigable URL or an evidence locator.
+ * Keep original URLs/locators in the observations. Unknown query parameters,
+ * including repeated/empty selectors, can select different documents.
  * This key is only a de-duplication aid, not independent authentication.
  */
 export function canonicalHistoricalMapSourcePage(rawUrl: string): string {
@@ -13,14 +13,25 @@ export function canonicalHistoricalMapSourcePage(rawUrl: string): string {
   if (url.protocol !== 'https:' || url.username || url.password || url.port) {
     throw new Error('Historical map source must be an HTTPS URL without credentials or a custom port');
   }
-  const host = url.hostname.toLowerCase().replace(/^www\./, '');
-  const path = url.pathname.replace(/\/+$/, '') || '/';
-  const selectors = host === 'gdecarli.it' && path.startsWith('/php2/')
-    ? [...url.searchParams.entries()]
-      .filter(([key, value]) => /^var[1-5]$/.test(key) && value.trim().length > 0)
-      .sort(([left, leftValue], [right, rightValue]) =>
-        left.localeCompare(right) || leftValue.localeCompare(rightValue))
-    : [];
+  const bareHost = url.hostname.toLowerCase().replace(/^www\./, '');
+  // Only these audited publishers have established www/slash aliases here.
+  const knownAliases = ['lapledger.org', 'gdecarli.it'].includes(bareHost);
+  const host = knownAliases ? bareHost : url.hostname.toLowerCase();
+  const path = knownAliases ? url.pathname.replace(/\/+$/, '') || '/' : url.pathname;
+  const archive = host === 'gdecarli.it' && path.startsWith('/php2/');
+  const selectors = [...url.searchParams.entries()].filter(([key, value]) => {
+    if (/^utm_/i.test(key) || ['fbclid', 'gclid', 'dclid', 'msclkid'].includes(key)) return false;
+    if (host === 'lapledger.org' && key === 'source' && value === 'f1db') return false;
+    // The existing GdeCarli catalogue uses empty var fields as omitted filters.
+    if (archive && /^var[1-5]$/.test(key) && value === '') return false;
+    return true;
+  });
+  // Only the known, distinct archive selectors have order-insensitive semantics.
+  // Repeated selectors retain their order; unknown selectors are never discarded.
+  if (archive && selectors.every(([key]) => /^var[1-5]$/.test(key)) &&
+      new Set(selectors.map(([key]) => key)).size === selectors.length) {
+    selectors.sort(([left], [right]) => left.localeCompare(right));
+  }
   const query = new URLSearchParams(selectors).toString();
   return host + path + (query ? '?' + query : '');
 }

@@ -16792,7 +16792,7 @@
       "names_as_of": 1967,
       "numbered_turns": 14,
       "review_status": "independent_review_pending",
-      "numbering_basis": "F1DB historical bugatti-1 turn count; editorial ordered slots. Period sources support landmarks but NOT an authenticated turn-by-turn numbering match. Never display these numbers as certified historical FIA positions.",
+      "numbering_basis": "Pinned F1DB bugatti-1 layout attribute reports 14 turns / 4.185 km, but the 1967 race reports 8 turns / 4.422 km. These 14 editorial study positions are NOT an authenticated 1967 turn-by-turn numbering match. Preserve both source observations; exact historical alignment requires independent review.",
       "sections": [
         {
           "id": "bugatti-t1",
@@ -17060,7 +17060,15 @@
           ],
           "confirmation_status": "historical_numbering_unverified"
         }
-      ]
+      ],
+      "configuration_scope": "modern_comparison_only",
+      "archive_layout_turn_count": 14,
+      "archive_race_turn_count": 8,
+      "study_position_count": 14,
+      "configuration_caveat": {
+        "en": "14 research positions; the 1967 race record has 8 turns. Current layout metadata cannot certify the historical course.",
+        "uk": "14 дослідницьких позицій; у записі гонки 1967 року — 8 поворотів. Сучасні дані конфігурації не підтверджують історичний маршрут."
+      }
     },
     {
       "circuit_id": "phoenix",
@@ -17699,7 +17707,12 @@
           ],
           "confirmation_status": "modern_numbering_verified_historical_alignment_pending"
         }
-      ]
+      ],
+      "configuration_scope": "modern_comparison_only",
+      "configuration_caveat": {
+        "en": "Modern 2001 comparison only; not a verified map of the 1968 or 1970 F1 course, despite the shared F1DB layout identifier.",
+        "uk": "Лише сучасне порівняння 2001 року, не перевірена карта траси F1 1968 чи 1970 року, попри спільний ідентифікатор F1DB."
+      }
     },
     {
       "circuit_id": "nivelles",

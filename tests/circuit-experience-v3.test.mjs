@@ -197,12 +197,20 @@ test('publication gate rejects duplicate section identifiers and non-HTTPS prove
   const oldId = guide.sections[1].id;
   const sourceKey = guide.sections[0].sources[0];
   const oldSource = candidateCornerSources[sourceKey];
+  const oldNumberingEvidence = guide.numbering_evidence;
   try {
     guide.review_status = 'independent_review_approved';
     guide.sections.forEach(section => { section.confirmation_status = 'independently_verified'; });
+    guide.numbering_evidence = {
+      source_key: sourceKey, layout_id: guide.layout_id, year: guide.numbering_year,
+      evidence_kind: 'dated_numbered_circuit_map', apex_crosswalk_verified: true,
+      independently_reviewed_by: 'synthetic-test-only-reviewer',
+    };
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), true, 'synthetic in-memory baseline reaches every tested guard');
     guide.sections[1].id = guide.sections[0].id;
     assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'duplicate section IDs block release');
     guide.sections[1].id = oldId;
+    assert.equal(hasPublicationReadyCornerGuide('silverstone'), true);
     candidateCornerSources[sourceKey] = 'http://example.invalid/provisional-map';
     assert.equal(hasPublicationReadyCornerGuide('silverstone'), false, 'non-HTTPS provenance blocks release');
     candidateCornerSources[sourceKey] = '';
@@ -212,6 +220,8 @@ test('publication gate rejects duplicate section identifiers and non-HTTPS prove
     guide.sections.forEach((section, index) => { section.confirmation_status = oldStatuses[index]; });
     guide.sections[1].id = oldId;
     candidateCornerSources[sourceKey] = oldSource;
+    if (oldNumberingEvidence === undefined) delete guide.numbering_evidence;
+    else guide.numbering_evidence = oldNumberingEvidence;
   }
 });
 
