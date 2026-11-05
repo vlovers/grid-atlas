@@ -1741,6 +1741,12 @@
             "url": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
             "claim": "The historical Dallas 1984 route is 2.424 miles with 12 main corners and several chicanes, not interchangeable with F1DB 23-bend individual count.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "later_reconstruction_chicane_uncertainty",
+            "url": "https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html",
+            "claim": "The historical reconstruction explicitly warns that locations of the chicanes are uncertain without better aerial photographs. Its diagram cannot authenticate each provisional apex.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -1764,6 +1770,14 @@
           "raced_miles": 2.424,
           "raced_source": "https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html",
           "meaning": "March 1984 local preview describes planned route and estimated lap length; July 1984 raced layout is documented as 2.424 miles. Do not treat the preview as a period-certified raced map."
+        },
+        "chicane_geometry_uncertainty": {
+          "url": "https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html",
+          "claim": "The historical reconstruction explicitly warns that locations of the chicanes are uncertain without better aerial photographs. Its diagram cannot authenticate each provisional apex.",
+          "historical_period": "1984",
+          "visual_evidence_kind": "later_historical_reconstruction",
+          "supports_apex_numbering": false,
+          "reuse_permission_confirmed": false
         }
       },
       "route_scope": {
@@ -1824,7 +1838,16 @@
           "review_status": "independent_review_pending",
           "publication_allowed": false,
           "evidence_kind": "contemporary_report_specific_bend",
-          "source_locator": "Motor Sport, Alan Henry, Dallas GP race report (archive edition August 1984), Race section final paragraph before results: Mansell lost drive while sweeping through the final corner before the finish; no official corner number supplied."
+          "source_locator": "Motor Sport, Alan Henry, Dallas GP race report (archive edition August 1984), Race section final paragraph before results: Mansell lost drive while sweeping through the final corner before the finish; no official corner number supplied.",
+          "claim_classification": "contemporary_period_report_specific_bend",
+          "period_bend_existence_attested": true,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "Motor Sport's 1984 report explicitly describes the last corner where Mansell lost drive. Its apex location and an FIA number are not independently attested.",
+            "uk": "Репортаж Motor Sport за 1984 рік прямо описує останній поворот, де Менселл утратив тягу. Точне розташування апекса та номер FIA незалежно не підтверджені."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 2,
@@ -1877,7 +1900,16 @@
           "source_locator_gap": {
             "en": "Paddock-side opening right: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Перший правий біля паддоку: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 3,
@@ -1930,7 +1962,16 @@
           "source_locator_gap": {
             "en": "Cotton Bowl approach left: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Лівий на підході до Cotton Bowl: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 4,
@@ -1983,7 +2024,16 @@
           "source_locator_gap": {
             "en": "Sharper left onto the fairground avenue: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Різкий лівий на алею комплексу: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 5,
@@ -2036,7 +2086,16 @@
           "source_locator_gap": {
             "en": "Right into the temporary inner section: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Правий у тимчасову внутрішню секцію: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 6,
@@ -2089,7 +2148,16 @@
           "source_locator_gap": {
             "en": "Tightening left-hand arc: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Ліва дуга зі зменшенням радіуса: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 7,
@@ -2142,7 +2210,16 @@
           "source_locator_gap": {
             "en": "Square right after the tightening arc: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Прямокутний правий після дуги: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 8,
@@ -2195,7 +2272,16 @@
           "source_locator_gap": {
             "en": "Inner-section left hairpin: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Ліва шпилька внутрішньої секції: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 9,
@@ -2248,7 +2334,16 @@
           "source_locator_gap": {
             "en": "Right entry to the parking-area jog: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Правий вхід у зв'язку біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 10,
@@ -2301,7 +2396,16 @@
           "source_locator_gap": {
             "en": "Left exit from the parking-area jog: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Лівий вихід зі зв'язки біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 11,
@@ -2354,7 +2458,16 @@
           "source_locator_gap": {
             "en": "Left entry to the return chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Лівий вхід у зворотну шикану: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 12,
@@ -2407,7 +2520,16 @@
           "source_locator_gap": {
             "en": "Right exit from the return chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Правий вихід зі зворотної шикани: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 13,
@@ -2460,7 +2582,16 @@
           "source_locator_gap": {
             "en": "Faster double-apex left: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Швидший лівий із двома апексами: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 14,
@@ -2513,7 +2644,16 @@
           "source_locator_gap": {
             "en": "Right entry to the final parking chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Правий вхід в останню шикану біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 15,
@@ -2566,7 +2706,16 @@
           "source_locator_gap": {
             "en": "Left exit from the final parking chicane: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Лівий вихід з останньої шикани біля парковки: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         },
         {
           "reading_order": 16,
@@ -2619,7 +2768,16 @@
           "source_locator_gap": {
             "en": "Broad left before the closing complex: RacingCircuits describes the 1984 Fair Park layout and its chicanes, but does not individually identify or number this apex. The Motor Sport race report supplies race context, not a bend-specific route locator. A dated 1984 numbered chart and independent diagram-to-bend adjudication are still required.",
             "uk": "Широкий лівий перед завершальною секцією: RacingCircuits описує конфігурацію Fair Park 1984 року та її шикани, але не ідентифікує і не нумерує цей апекс окремо. Репортаж Motor Sport підтверджує перебіг гонки, а не точне місце віражу. Потрібні датована нумерована схема 1984 року й незалежне зіставлення з конкретним поворотом."
-          }
+          },
+          "claim_classification": "provisional_geometry_hypothesis_requires_raced_map",
+          "period_bend_existence_attested": false,
+          "exact_apex_position_attested": false,
+          "turn_number_attested": false,
+          "evidence_limit_bilingual": {
+            "en": "The available 1984 layout reconstruction does not securely locate individual chicane apexes. This bend is a provisional diagram-derived research hypothesis, not an independently corroborated place on the raced course.",
+            "uk": "Наявна реконструкція конфігурації 1984 року не дає змоги достовірно визначити положення окремих апексів шикан. Цей віраж — попередня гіпотеза за схемою, а не незалежно підтверджена точка гоночної траси."
+          },
+          "media_reuse_allowed": false
         }
       ],
       "planned_route_waypoints": [
@@ -2692,7 +2850,15 @@
           "publication_allowed": false
         }
       ],
-      "period_waypoint_review_note": "All four D Magazine waypoints come from a March 1984 planned-route preview. The actual July race used a 2.424-mile configuration, versus the preview's 2.58 miles. Do not assert a 1:1 correspondence with the 16 provisional bend studies or F1DB turn slots."
+      "period_waypoint_review_note": "All four D Magazine waypoints come from a March 1984 planned-route preview. The actual July race used a 2.424-mile configuration, versus the preview's 2.58 miles. Do not assert a 1:1 correspondence with the 16 provisional bend studies or F1DB turn slots.",
+      "editorial_decision": {
+        "confirmed_bend_events": 1,
+        "provisional_geometry_claims": 15,
+        "certified_apex_coordinates": 0,
+        "certified_turn_numbers": 0,
+        "publication_allowed": false,
+        "next_evidence_needed": "Independent dated 1984 as-raced numbered map or original aerial/film stills with validated turn-by-turn geospatial matching and usage rights."
+      }
     },
     {
       "circuit_id": "detroit",
