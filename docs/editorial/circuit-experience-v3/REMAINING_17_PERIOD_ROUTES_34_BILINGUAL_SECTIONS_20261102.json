@@ -3233,10 +3233,30 @@
             "url": "https://www.motorsportmagazine.com/database/races/1982-detroit-grand-prix/",
             "claim": "Motor Sport race database lists Detroit at 2.493 miles while the RacingCircuits.info 1982 layout entry gives 2.590 miles; comparison requires source-level reconciliation.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1982_full_lap_direction_sequence",
+            "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+            "claim": "Contemporary first-hand route walkthrough explicitly follows the riverfront left, Atwater and Woodbridge, Larned, Jefferson/tramlines, tunnel, esses and pit chicane. This supports unnumbered order, not precise FIA apex numbering.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
-        "layout_length_discrepancy": "RacingCircuits.info labels its 1982 map 2.590 mi / 4.168 km, while Motor Sport's race-database entry reports 2.493 miles; retain distinct source claims without silently changing the layout mapping."
+        "layout_length_discrepancy": "RacingCircuits.info labels its 1982 map 2.590 mi / 4.168 km, while Motor Sport's race-database entry reports 2.493 miles; retain distinct source claims without silently changing the layout mapping.",
+        "circuit_walk_attribution": {
+          "source_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+          "year": 1982,
+          "attests_geographical_lap_order": true,
+          "attests_certified_fia_turn_numbers": false,
+          "route_order": [
+            "Riverfront start and two-part left in car park",
+            "Atwater, right-angle turn, Woodbridge and tight left",
+            "Side streets to Larned and Jefferson",
+            "Double-left tramline crossing and bridge underpass",
+            "Right-curving riverfront tunnel",
+            "Riverside esses and pit-entry chicane"
+          ]
+        }
       },
       "route_scope": {
         "en": "The original 1982 Detroit layout, before the 1983–1988 revision. Riverside, Atwater, Woodbridge, Larned and Jefferson are geographic street references, not evidence for numbered apexes; modern Detroit GP maps cannot verify this layout.",
@@ -3295,7 +3315,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: opening riverfront car-park hairpin described as two connected left bends."
+          "source_locator": "Motor Sport, July 1982, circuit walk: opening riverfront car-park hairpin described as two connected left bends.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 2,
@@ -3343,7 +3365,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: second part of the opening two-bend left hairpin."
+          "source_locator": "Motor Sport, July 1982, circuit walk: second part of the opening two-bend left hairpin.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 3,
@@ -3391,7 +3415,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: Atwater Street return and first 90-degree right."
+          "source_locator": "Motor Sport, July 1982, circuit walk: Atwater Street return and first 90-degree right.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 4,
@@ -3439,7 +3465,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: second 90-degree right entering Woodbridge Street."
+          "source_locator": "Motor Sport, July 1982, circuit walk: second 90-degree right entering Woodbridge Street.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 5,
@@ -3487,7 +3515,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: very tight left hairpin beyond the church."
+          "source_locator": "Motor Sport, July 1982, circuit walk: very tight left hairpin beyond the church.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 6,
@@ -3535,7 +3565,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: immediate right following the Woodbridge hairpin."
+          "source_locator": "Motor Sport, July 1982, circuit walk: immediate right following the Woodbridge hairpin.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 7,
@@ -3583,7 +3615,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: left after the hairpin exit right, heading across to the next street."
+          "source_locator": "Motor Sport, July 1982, circuit walk: left after the hairpin exit right, heading across to the next street.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 8,
@@ -3631,7 +3665,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: left from the short straight down a side street."
+          "source_locator": "Motor Sport, July 1982, circuit walk: left from the short straight down a side street.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 9,
@@ -3679,7 +3715,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: right at the crossroads onto Larned Street."
+          "source_locator": "Motor Sport, July 1982, circuit walk: right at the crossroads onto Larned Street.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 10,
@@ -3727,7 +3765,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: left at the end of the Larned Street straight."
+          "source_locator": "Motor Sport, July 1982, circuit walk: left at the end of the Larned Street straight.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 11,
@@ -3775,7 +3815,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: right onto Jefferson Boulevard after the Larned left."
+          "source_locator": "Motor Sport, July 1982, circuit walk: right onto Jefferson Boulevard after the Larned left.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 12,
@@ -3823,7 +3865,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: first part of Jefferson Boulevard double-left over tramlines."
+          "source_locator": "Motor Sport, July 1982, circuit walk: first part of Jefferson Boulevard double-left over tramlines.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 13,
@@ -3871,7 +3915,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: second part of Jefferson double-left towards the underpass."
+          "source_locator": "Motor Sport, July 1982, circuit walk: second part of Jefferson double-left towards the underpass.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 14,
@@ -3919,7 +3965,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: tightening left at riverfront into the tunnel."
+          "source_locator": "Motor Sport, July 1982, circuit walk: tightening left at riverfront into the tunnel.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 15,
@@ -3967,7 +4015,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: right-hand curve through the three-lane tunnel."
+          "source_locator": "Motor Sport, July 1982, circuit walk: right-hand curve through the three-lane tunnel.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 16,
@@ -4015,7 +4065,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: first direction change of tight riverfront Esses."
+          "source_locator": "Motor Sport, July 1982, circuit walk: first direction change of tight riverfront Esses.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         },
         {
           "reading_order": 17,
@@ -4063,7 +4115,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, July 1982, circuit walk: second direction change of riverfront Esses before pit-entry chicane."
+          "source_locator": "Motor Sport, July 1982, circuit walk: second direction change of riverfront Esses before pit-entry chicane.",
+          "claim_evidence_scope": "contemporary_1982_circuit_walk_direction_sequence_only",
+          "attested_route_sequence": true
         }
       ]
     },
@@ -4562,10 +4616,30 @@
             "url": "https://www.p300.it/f1-gp-pescara-1957-lultima-volta-del-circus-in-abruzzo/?lang=en",
             "claim": "Secondary historical reconstruction reports a chicane added for the 1957 event; do not transpose maps from earlier Coppa Acerbo years without checking the 1957 modification.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "pre_1957_chicane_chronology",
+            "url": "https://www.racingcircuits.info/europe/italy/pescara.html",
+            "claim": "RacingCircuits.info dates Pescara's artificial bus-stop chicane before the pits to 1934. Do not mistake a 1957-specific safety discussion for proof that the first pit chicane was new in 1957.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_1957_chicane_history",
+            "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+            "claim": "Motor Sport's 1957 report attributes chicanes to modifications made over many years; this does not isolate an exact 1957 apex position.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
-        "layout_version_caveat": "Maps of pre-1957 Coppa Acerbo must not be assumed identical to the one-off 1957 Formula 1 championship configuration; contemporary event modification evidence needs independent mapping."
+        "layout_version_caveat": "The Pescara pit-side bus-stop chicane is documented from 1934, and the 1957 contemporary report describes chicanes added across different years. A possible 1957-specific change must be demonstrated independently from a dated period map; neither the first chicane nor its precise 1957 geometry can simply be declared newly installed for that race.",
+        "chicane_chronology": {
+          "prior_chicane_evidenced_1934": true,
+          "prior_chicane_source": "https://www.racingcircuits.info/europe/italy/pescara.html",
+          "period_report_source": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
+          "grand_prix_1957_configuration": "Motor Sport circuit database describes a chicane before the pits for the 1934–1961 layout. The 1957 report says multiple chicanes were introduced over the years and does not establish that the first pit chicane originated in 1957.",
+          "separate_1957_modification_certain": false,
+          "exact_1957_chicane_apex_verified": false
+        }
       },
       "route_scope": {
         "en": "The 1957 public-road Pescara circuit, following the inland hills and coastal return. Named towns and the Flying Kilometre identify broad route landmarks; they are not individually numbered corner names.",
@@ -4837,7 +4911,12 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Denis Jenkinson, Motor Sport (September 1957), race opening lap: Horace Gould at the corners before the pits; no exact apex count."
+          "source_locator": "Denis Jenkinson, Motor Sport (September 1957), race opening lap: Horace Gould at the corners before the pits; no exact apex count.",
+          "period_chicane_origin_note": {
+            "en": "The chicane before the pits was documented from 1934; historic alterations continued. The available evidence does not establish a newly built first pit chicane in 1957 or certify its individual apexes.",
+            "uk": "Шикана перед боксами документується щонайменше з 1934 року, а історичні зміни тривали. Наявні джерела не підтверджують, що першу шикану перед боксами збудували саме 1957 року, і не визначають координати її окремих апексів."
+          },
+          "exact_1957_chicane_geometry_verified": false
         }
       ]
     },
@@ -5176,6 +5255,12 @@
             "url": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
             "claim": "The contemporary 1958 circuit walk follows starting pits, a double-left tramline crossing, uphill Avenida da Boavista, sharp left to another cobbled tramline road, left into narrow streets, descending winding road and a final double-left by the seafront; this is route order, not an authenticated turn-number map.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "year_specific_1960_opening_bottleneck",
+            "url": "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+            "claim": "Brabham's opening bottleneck maneuver is a 1960 race incident, distinct from the independent 1958 route walk; later narrative evidence does not automatically validate earlier numbered apex geometry.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -5187,7 +5272,14 @@
           "Winding descent to seafront",
           "Final double-left tramline crossing and finish"
         ],
-        "route_order_scope": "Contemporary 1958 route progression verified; position labels are narrative landmarks, not FIA corners and must not be assigned numbers 1–19 without a separate period keyed plan."
+        "route_order_scope": "Contemporary 1958 route progression verified; position labels are narrative landmarks, not FIA corners and must not be assigned numbers 1–19 without a separate period keyed plan.",
+        "period_report_year_scope": {
+          "course_walk_year": 1958,
+          "source": "https://www.motorsportmagazine.com/archive/article/october-1958/31/vii-grande/",
+          "opening_bottleneck_narrative_year": 1960,
+          "source_1960": "https://www.motorsportmagazine.com/archive/article/september-1960/14/portuguese-grand-prix-5/",
+          "cannot_assume_all_race_incidents_reflect_both_years": true
+        }
       },
       "route_scope": {
         "en": "The 1958–1960 Formula One Boavista route, not the later touring-car street layout. Avenida da Boavista, cobbles and tram crossings are contextual landmarks; no exact FIA-era turn-number crosswalk has been authenticated.",
@@ -5246,7 +5338,13 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, September 1960, race start: Brabham takes a wide line through the bottleneck past the pits onto Avenida da Boavista."
+          "source_locator": "Motor Sport, September 1960, race start: Brabham takes a wide line through the bottleneck past the pits onto Avenida da Boavista.",
+          "event_evidence_year": 1960,
+          "route_configuration_reconciliation_pending": true,
+          "evidence_limit_bilingual": {
+            "en": "The bottleneck and Brabham's start-line move are described for the 1960 race. Do not present the incident as 1958 evidence or infer an unchanged numbered apex without comparing period maps.",
+            "uk": "Звуження й маневр Бребема на старті описані для гонки 1960 року. Не можна видавати цей епізод за джерело 1958 року або вважати нумерований апекс незмінним без порівняння історичних схем."
+          }
         },
         {
           "reading_order": 2,
@@ -5989,9 +6087,22 @@
             "url": "https://trackmotorsport.app/tracks/sebring-international-raceway/",
             "claim": "Modern Sebring driving-guide turn numbers refer to a materially shorter 3.74 mile layout and must not be projected onto the 8.36 km 1959 route.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1959_airfield_report_individual_bends",
+            "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+            "claim": "Period report explicitly describes lefts by rubber tubs, hairpin, hangar right-left, two perimeter rights and wide final 180-degree turn; eight research descriptions are not an authenticated 17-turn numbered map.",
+            "supports_apex_numbering": false
           }
         ],
-        "layout_version_caveat": "Do not transfer today's numbered Sebring corners into the 1959 airfield configuration solely because both records cite 17 bends."
+        "layout_version_caveat": "Do not transfer today's numbered Sebring corners into the 1959 airfield configuration solely because both records cite 17 bends.",
+        "period_report_bend_sequence": {
+          "source": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+          "race_year": 1959,
+          "individually_described_direction_changes": 8,
+          "individually_numbered_apexes": 0,
+          "notes": "Eight report-derived bending points can be described in source order without asserting they exhaust F1DB's 17 bend count or correspond 1:1 to a numbered 1959 map."
+        }
       },
       "route_scope": {
         "en": "The 1959 Formula One airport-road layout, not today's Sebring 12 Hours configuration. Runways, the Esses, hairpin and long straight are route features; a straight or a group of bends is not a single certified numbered corner.",
@@ -6051,7 +6162,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: first tub-marked left after the concrete runway start."
+          "source_locator": "Motor Sport, January 1960, course description: first tub-marked left after the concrete runway start.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 2,
@@ -6100,7 +6213,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: second tub-marked left before the concrete-to-tarmac transition."
+          "source_locator": "Motor Sport, January 1960, course description: second tub-marked left before the concrete-to-tarmac transition.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 3,
@@ -6149,7 +6264,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: sharp hairpin after the Esses and a short straight."
+          "source_locator": "Motor Sport, January 1960, course description: sharp hairpin after the Esses and a short straight.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 4,
@@ -6198,7 +6315,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: right at the end of the long straight between hangars."
+          "source_locator": "Motor Sport, January 1960, course description: right at the end of the long straight between hangars.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 5,
@@ -6247,7 +6366,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: left immediately after the hangar-straight right."
+          "source_locator": "Motor Sport, January 1960, course description: left immediately after the hangar-straight right.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 6,
@@ -6296,7 +6417,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: first of two tub-marked rights on the concrete perimeter."
+          "source_locator": "Motor Sport, January 1960, course description: first of two tub-marked rights on the concrete perimeter.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 7,
@@ -6345,7 +6468,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: second tub-marked perimeter right returning behind the pits."
+          "source_locator": "Motor Sport, January 1960, course description: second tub-marked perimeter right returning behind the pits.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         },
         {
           "reading_order": 8,
@@ -6394,7 +6519,9 @@
           "numbered_apex_verified": false,
           "review_status": "independent_review_pending",
           "publication_allowed": false,
-          "source_locator": "Motor Sport, January 1960, course description: wide-radius final 180-degree turn behind the pits."
+          "source_locator": "Motor Sport, January 1960, course description: wide-radius final 180-degree turn behind the pits.",
+          "claim_evidence_scope": "contemporary_1959_route_walk_unumbered_direction_change",
+          "period_direction_change_attested": true
         }
       ]
     }
