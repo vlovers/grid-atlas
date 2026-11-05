@@ -9,8 +9,9 @@ import historicRoutes from '../docs/editorial/circuit-experience-v3/REMAINING_17
 const root = new URL('../', import.meta.url);
 const corners = { guides: candidateCornerGuides, sources: candidateCornerSources };
 const narratives = { entries: candidateCircuitNarratives };
-const historicIds = new Set(['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']);
-const historicReview = historicRoutes.circuits.filter(circuit => historicIds.has(circuit.circuit_id));
+// Render the entire unpublished research collection, including the ten later-added
+// historical routes. The preview is opt-in/noindex and cannot grant publication.
+const historicReview = historicRoutes.circuits;
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 /** Review 66 individual historical bend/name studies; these are never FIA turn IDs. */
 export function renderHistoricalBendQueue(circuitId, locale) {

@@ -36,7 +36,7 @@ test('sensitive events and distinct historical layouts remain distinguishable', 
     ['fuji', /Andretti.*won/, /виграв Маріо Андретті/],
     ['marina-bay', /investigation/, /розслідування/],
     ['las-vegas', /different layout/, /іншою конфігурацією/],
-    ['zolder', /Saturday qualifying/, /суботній кваліфікації/],
+    ['zolder', /qualifying accident on Saturday/, /суботній кваліфікації/],
   ]) {
     assert.match(byId.get(id).description.en, en, id + '/en');
     assert.match(byId.get(id).description.uk, uk, id + '/uk');

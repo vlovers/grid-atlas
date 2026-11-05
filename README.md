@@ -61,14 +61,15 @@ See [archive recovery and environment troubleshooting](docs/delivery/archive-rec
 
 ## Circuit editorial publication
 
-Circuit text publication is disabled by default. The trusted workflow uses
-individually authenticated PostgreSQL subjects, protected exact-revision receipts,
-separate staging/review/publication privileges and transactional revocation.
-Migration0016 preserves existing manuscripts while revoking old metadata-only
-approvals. No migration enrolls an editor or publishes content. See the
-[security model, migration and operator runbook](docs/engineering/circuit-publication-396.md).
-Dependent PR359 supplies the separately gated bilingual reader; PR395 manuscripts
-remain unapproved research. Production human review and release approval are separate.
+Circuit text publication is disabled by default. Research manuscripts and
+candidate corner guides are not publication approvals, even when their tests pass.
+Publication requires independent claim-level review, exact-revision approval,
+and separate media-rights clearance; no automated editor signature may grant them.
+See the existing [editorial release pipeline](docs/editorial/APPROVED_RELEASE_PIPELINE.md)
+and [verification policy](docs/editorial-verification.md) for the documented
+review and publication gates. Any proposed circuit-specific database privileges
+or migrations must be checked against the merged schema and reviewed separately;
+draft PR descriptions are not proof of an installed publication mechanism.
 
 ## Checks
 

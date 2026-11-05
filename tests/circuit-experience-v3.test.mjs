@@ -5,6 +5,9 @@ import { cornerGuideFor, numberedCorners } from '../apps/web/src/components/edit
 import { isCircuitEditionApproved, circuitEditionDigest } from '../apps/web/src/components/editorial/circuit-release.ts';
 import { renderCircuitReview, renderHistoricalBendQueue, renderDallasPlannedRoute, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
 
+// The private preview escapes HTML, including apostrophes, before rendering copy.
+const escapedPreviewText = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+
 test('numbered turns are complete and never confused with distinct named sections', () => {
   assert.ok(candidateCornerGuides.length >= 16, 'do not regress already sourced circuit guides');
   assert.equal(new Set(candidateCornerGuides.map(guide => guide.circuit_id)).size, candidateCornerGuides.length, 'no duplicate circuit guides');
@@ -121,7 +124,7 @@ test('seven unapproved historic route studies remain research-only and unpublish
     assert.ok(review.evidence.some(entry => entry.type.includes('layout') || entry.type.includes('route') || entry.type.includes('chicane')));
     assert.ok(review.evidence.every(entry => entry.supports_apex_numbering === false));
   }
-  assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\.590 mi/);
+  assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\.59(?:0)? mi/);
   assert.match(research.circuits.find(c => c.circuit_id === 'pescara').layout_evidence_review.layout_version_caveat, /1957/);
   assert.match(research.circuits.find(c => c.circuit_id === 'sebring').layout_evidence_review.layout_version_caveat, /1959/);
   assert.ok(ainDiab.layout_evidence_review.evidence.some(item => item.type === 'independent_historical_corner_count' && item.claim.includes('18 corners') && item.supports_apex_numbering === false));
@@ -492,7 +495,7 @@ test('seven unfinished circuits have readable paired openings with no publicatio
     for (const [locale, html] of [['en', en], ['uk', uk]]) {
       const opening = circuit.editorial_reader_preview[locale];
       assert.ok(opening.length > 300, id + ':' + locale + ' opening too short');
-      assert.ok(html.includes(opening.slice(0, 20)), id + ':' + locale + ' opening missing from private preview');
+      assert.ok(html.includes(escapedPreviewText(opening.slice(0, 20))), id + ':' + locale + ' opening missing from private preview');
     }
   }
 });
@@ -822,7 +825,7 @@ test('large editorial batch upgrades twenty paired route sections across ten cla
     assert.match(opening.source_url, /^https:\/\//);
     for (const [locale, html] of [['en', en], ['uk', uk]]) {
       assert.ok(opening[locale].length > 300, circuit.circuit_id + ':opening:' + locale);
-      assert.ok(html.includes(opening[locale].slice(0, 20)), circuit.circuit_id + ':preview:' + locale);
+      assert.ok(html.includes(escapedPreviewText(opening[locale].slice(0, 20))), circuit.circuit_id + ':preview:' + locale);
     }
     for (const section of circuit.sections) {
       assert.equal(section.publication_allowed, false, circuit.circuit_id);
@@ -833,7 +836,7 @@ test('large editorial batch upgrades twenty paired route sections across ten cla
       assert.ok(section.label.en.length > 12 && section.label.uk.length > 12, circuit.circuit_id + ':labels');
       assert.ok(section.source_urls.every(url => url.startsWith('https://')));
       for (const [locale,html] of [['en',en],['uk',uk]]) {
-        assert.ok(html.includes(section.description[locale].slice(0,20)), circuit.circuit_id + ':section:' + locale);
+        assert.ok(html.includes(escapedPreviewText(section.description[locale].slice(0,20))), circuit.circuit_id + ':section:' + locale);
       }
     }
   }

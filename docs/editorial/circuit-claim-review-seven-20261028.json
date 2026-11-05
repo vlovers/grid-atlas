@@ -22,8 +22,8 @@
         },
         {
           "claim_id": "rain",
-          "en_excerpt": "Rain turned the 1985 Portuguese Grand Prix into a test of control",
-          "uk_excerpt": "Злива перетворила Гран-прі Португалії 1985 року на випробування керування",
+          "en_excerpt": "At Estoril in 1985, the rain was not merely a backdrop",
+          "uk_excerpt": "В Ешторілі 1985 року дощ був не декорацією, а головним випробуванням",
           "evidence_route": "candidate-context",
           "review_question": "Locate an explicit weather passage; a classification file does not establish rainfall.",
           "status": "unverified"
@@ -46,16 +46,16 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "Fernando Alonso had pitted early",
-          "uk_excerpt": "Фернандо Алонсо рано заїхав у бокси",
+          "en_excerpt": "Alonso's win remains in the official classification",
+          "uk_excerpt": "У протоколі переможцем лишився Алонсо",
           "evidence_route": "candidate-results",
           "review_question": "Confirm winner in classification; confirm early stop in the race account, not in result rows.",
           "status": "unverified"
         },
         {
           "claim_id": "night-first",
-          "en_excerpt": "Singapore's inaugural night Grand Prix in 2008 looked like an improbable Renault win",
-          "uk_excerpt": "Перший нічний Гран-прі Сінгапуру 2008 року спершу виглядав як несподівана перемога Renault",
+          "en_excerpt": "Fernando Alonso's 2008 Singapore victory looked astonishing on the night",
+          "uk_excerpt": "Увечері Гран-прі Сінгапуру 2008 року перемога Фернандо Алонсо здавалася",
           "evidence_route": "candidate-context",
           "review_question": "Confirm the inaugural night-race context from a contemporary source independently of the race classification.",
           "status": "unverified"
@@ -110,16 +110,16 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "John Watson won for McLaren ahead of Keke Rosberg",
-          "uk_excerpt": "Джон Вотсон на McLaren переміг Кеке Росберга",
+          "en_excerpt": "on Sunday John Watson won a race",
+          "uk_excerpt": "у неділю Джон Вотсон виграв гонку",
           "evidence_route": "candidate-results",
           "review_question": "Verify winner and venue against the 1982 classification.",
           "status": "unverified"
         },
         {
           "claim_id": "fatal-qualifying",
-          "en_excerpt": "death of Gilles Villeneuve in Saturday qualifying",
-          "uk_excerpt": "загибелі Жиля Вільньова в суботній кваліфікації",
+          "en_excerpt": "Gilles Villeneuve died after a qualifying accident on Saturday",
+          "uk_excerpt": "У суботу після аварії в кваліфікації загинув Жиль Вільньов",
           "evidence_route": "candidate-context",
           "review_question": "Verify session, date, circumstances and sensitive wording with a dedicated historical account.",
           "status": "unverified"
@@ -230,24 +230,24 @@
       "claims": [
         {
           "claim_id": "winner",
-          "en_excerpt": "ordinary victory for Jochen Mass",
-          "uk_excerpt": "звичайну перемогу Йохена Масса",
+          "en_excerpt": "Jochen Mass was classified the winner",
+          "uk_excerpt": "Переможцем оголосили Йохена Масса",
           "evidence_route": "candidate-results",
           "review_question": "Confirm winner and circuit against the classification.",
           "status": "unverified"
         },
         {
           "claim_id": "stoppage",
-          "en_excerpt": "Officials stopped the race, and reduced points were awarded",
-          "uk_excerpt": "Перегони зупинили, а очки нарахували в зменшеному обсязі",
+          "en_excerpt": "The race continued briefly and was then stopped after 29 laps",
+          "uk_excerpt": "Гонка ще тривала кілька кіл, після чого її зупинили на 29-му колі",
           "evidence_route": "candidate-context",
           "review_question": "Independently verify the fatal spectator accident, subsequent race stoppage and reduced points; classification alone does not establish the full chronology.",
           "status": "unverified"
         },
         {
           "claim_id": "safety",
-          "en_excerpt": "a grave failure of safety",
-          "uk_excerpt": "тяжкого провалу безпеки",
+          "en_excerpt": "The drivers arrived for the 1975 Spanish Grand Prix at Montjuïc already worried about the circuit's guardrails",
+          "uk_excerpt": "Пілоти приїхали на Гран-прі Іспанії 1975 року в Монжуїку вже стурбовані станом захисних огорож",
           "evidence_route": "editorial-judgment",
           "review_question": "Identify specific documented safety failures rather than relying on a broad retrospective judgment.",
           "status": "unverified"
