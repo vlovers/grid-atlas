@@ -856,3 +856,26 @@ test('20-scene legacy provenance fallback is read-only and does not certify FIA 
   assert.ok((html.match(/Historical source \(not turn-number evidence\)/g) ?? []).length >= 20);
   assert.doesNotMatch(html, /undefined/);
 });
+
+test('twenty scoped official-and-historical provenance records cover the ten rewritten venues without approving media', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const ids = ['bremgarten','bugatti','caesars-palace','jacarepagua','monsanto','mont-tremblant',
+    'nivelles','pedralbes','phoenix','riverside'];
+  const refs = ids.flatMap(id => {
+    const circuit = data.circuits.find(c => c.circuit_id === id);
+    assert.equal(circuit.editorial_reader_preview.event_sources.length, 2, id);
+    return circuit.editorial_reader_preview.event_sources;
+  });
+  assert.equal(refs.length, 20);
+  assert.equal(new Set(refs.map(x => x.url)).size, 20);
+  assert.ok(refs.every(x => x.url.startsWith('https://') && x.claim_scope.length > 24));
+  assert.ok(refs.every(x => x.numbered_apex_mapping_approved === false &&
+    x.license_to_reuse_source_media === false &&
+    x.editorial_release_approved === false));
+  assert.ok(refs.filter(x => x.url.includes('formula1.com/en/results/')).length >= 8);
+  const nivelles = data.circuits.find(x => x.circuit_id === 'nivelles');
+  assert.ok(nivelles.editorial_reader_preview.event_sources.some(x => x.url.includes('fia.com/')));
+  const porto = data.circuits.find(x => x.circuit_id === 'porto');
+  assert.equal(porto.editorial_reader_preview.editorial_status, 'research_only');
+});
