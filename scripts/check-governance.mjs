@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFileSync, statSync } from 'node:fs';
+import { readFileSync, realpathSync, statSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,12 +25,12 @@ function within(root, target) {
 
 export function verifyGovernance(root) {
   const errors = [];
-  root = resolve(root);
+  root = realpathSync(resolve(root));
   for (const path of required) {
     let contents;
     try {
       const file = resolve(root, path);
-      if (!within(root, file) || !statSync(file).isFile()) throw new Error('not a file');
+      if (!within(root, realpathSync(file)) || !statSync(file).isFile()) throw new Error('not a file');
       contents = readFileSync(file, 'utf8');
     } catch {
       errors.push(`${path}: missing or unreadable`);
@@ -60,6 +60,10 @@ export function verifyGovernance(root) {
         continue;
       }
       try {
+        if (!within(root, realpathSync(target))) {
+          errors.push(`${path}: link escapes repository via symlink: ${href}`);
+          continue;
+        }
         const stat = statSync(target);
         if (!stat.isFile() && !stat.isDirectory()) throw new Error('not file or dir');
       } catch {
