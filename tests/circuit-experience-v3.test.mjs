@@ -624,3 +624,20 @@ test('Charade Rosier hairpin is named in a 1972 eyewitness account but not given
     assert.ok(item.explanation.en.length > 100 && item.explanation.uk.length > 100);
   }
 });
+
+test('private Dallas review preserves 15 provisional geometry warnings and one attested final bend', async () => {
+  const { candidateHistoricalCornerReviewQueue } = await import('../apps/web/src/components/editorial/circuit-candidates.ts');
+  const dallas = candidateHistoricalCornerReviewQueue.filter(entry => entry.circuit_id === 'dallas' && entry.research_kind === 'period_bend');
+  assert.equal(dallas.length, 16);
+  assert.equal(dallas.filter(item => item.claim_classification === 'provisional_geometry_hypothesis_requires_raced_map').length, 15);
+  assert.equal(dallas.filter(item => item.claim_classification === 'contemporary_period_report_specific_bend').length, 1);
+  assert.ok(dallas.every(item => item.evidence_limit_bilingual.en && item.evidence_limit_bilingual.uk));
+  assert.ok(dallas.every(item => item.exact_apex_position_attested === false && item.publication_allowed === false));
+  for (const locale of ['en','uk']) {
+    const markup = renderHistoricalBendQueue('dallas', locale);
+    assert.equal((markup.match(/provisional_geometry_hypothesis_requires_raced_map/g) ?? []).length, 15);
+    assert.equal((markup.match(/contemporary_period_report_specific_bend/g) ?? []).length, 1);
+    assert.equal((markup.match(locale === 'en' ? /Historical evidence warning/g : /Історичне застереження/g) ?? []).length, 16);
+    assert.match(markup, /FIA/);
+  }
+});
