@@ -630,37 +630,54 @@
       "sections": [
         {
           "label": {
-            "en": "Forest-lined high-speed road",
+            "en": "The road through the trees",
             "uk": "Швидка дорога крізь ліс"
           },
           "description": {
-            "en": "Bremgarten was a demanding public-road circuit through woods outside Bern, with little separation between fast corners and the surrounding trees. Fangio's 1954 Swiss Grand Prix victory came on that dangerous historic lap, not on a modern permanent track.",
-            "uk": "Бремгартен проходив лісовими дорогами біля Берна, де швидкі віражі майже не були відділені від дерев. Перемога Фанхіо на Гран-прі Швейцарії 1954 року відбулася саме на цьому небезпечному історичному колі, а не на сучасному стаціонарному автодромі."
+            "en": "Roads outside Bern became a Grand Prix circuit without becoming a purpose-built autodrome. Bremgarten's fast corners disappeared into the forest and the next crest could hide what lay beyond it. There was no broad modern runoff to soften a mistake. When Fangio won the 1954 Swiss Grand Prix in his Mercedes, those were the roads he had to master, not the clean kerbs and gravel traps of a later generation. The race result confirms his victory; the forest-road route needs its own period map.",
+            "uk": "Дороги біля Берна перетворилися на трасу Гран-прі, так і не ставши сучасним автодромом. Швидкі віражі Бремгартена зникали між деревами, а за наступним пагорбом не завжди було видно, куди веде асфальт. Широких зон вильоту, які пробачали б помилку, не було. Саме на цих дорогах Фанхіо виграв Гран-прі Швейцарії 1954 року на Mercedes, а не на трасі з бордюрами й гравійними пастками. Результат гонки підтверджений; послідовність окремих вигинів потребує історичної схеми."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/"
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/",
+            "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Undulating woodland bends",
+            "en": "A lap that modern maps cannot reconstruct",
             "uk": "Хвилясті віражі серед дерев"
           },
           "description": {
-            "en": "The road rose and fell as it threaded through the forest. To explain the individual turns convincingly, the numbered 1954 diagram must be matched against the route; present-day roads alone cannot establish which bend carried each historical turn number.",
-            "uk": "Дорога піднімалася й опускалася, петляючи серед дерев. Для точного опису кожного повороту потрібна нумерована схема 1954 року: сучасні дороги самі по собі не доводять, який віраж мав той чи інший історичний номер."
+            "en": "Bremgarten changed elevation repeatedly as the circuit wound through the woodland. That made the lap more than a sequence of left and right arrows: a driver had to read grip, sightlines and the narrowing road at the same time. A contemporary account of the 1954 race describes the challenge, but neither a classification table nor an unlabelled course outline certifies a numbered apex. We retain the landscape and driving character without pretending to know where every historic turn sign stood.",
+            "uk": "Бремгартен постійно підіймався і спускався, петляючи лісом. Тому коло було не просто чергою лівих і правих стрілок: пілот одночасно оцінював зчеплення, огляд і ширину дороги. Репортаж про гонку 1954 року передає цю складність, але ані підсумковий протокол, ані схема без підписів не підтверджують нумерацію апексів. Ми зберігаємо історію дороги й характер їзди, не удаючи, ніби знаємо точне місце кожного тодішнього покажчика повороту."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/"
+            "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/",
+            "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "The last Formula 1 World Championship race at Bremgarten took place on 22 August 1954. Juan Manuel Fangio won in a Mercedes-Benz, ahead of José Froilán González. The result sheet gives names and finishing positions; the place itself tells a different story. Forest roads near Bern formed a fast, uneven course with trees standing far closer than drivers would tolerate today. Its bends cannot safely be rebuilt from a present-day satellite view or assigned FIA numbers from a race result.",
+        "uk": "Останній чемпіонатний Гран-прі Формули-1 у Бремгартені пройшов 22 серпня 1954 року. Хуан-Мануель Фанхіо переміг на Mercedes-Benz, випередивши Хосе-Фройлана Гонсалеса. Протокол пояснює результат, але сама траса розповідає іншу історію. Лісові дороги біля Берна складали швидке нерівне коло, а дерева стояли так близько, як сьогодні ніхто не дозволив би. Відновити кожен поворот із сучасного супутникового знімка або пронумерувати його за результатами гонки неможливо.",
+        "source_url": "https://www.formula1.com/en/results/1954/races/132/switzerland/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1954,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "bugatti",
@@ -670,37 +687,54 @@
       "sections": [
         {
           "label": {
-            "en": "Bugatti loop, not the Sarthe road course",
+            "en": "Not the circuit of the 24 Hours",
             "uk": "Коло Bugatti, а не довгий Sarthe"
           },
           "description": {
-            "en": "The French Grand Prix in 1967 used the short permanent Bugatti circuit at Le Mans. Its slow bends created a very different race from the long public-road sections of the 24 Hours, so an endurance-race map would mislead a reader of this Formula 1 event.",
-            "uk": "У 1967 році Гран-прі Франції проводили коротким стаціонарним колом Bugatti в Ле-Мані. Його повільні віражі створювали зовсім інші перегони, ніж довгі дороги «24 годин Ле-Мана», тож схема гонки на витривалість лише заплутає читача Формули-1."
+            "en": "The 1967 French Grand Prix stayed at Le Mans but did not follow the vast road course familiar from endurance racing. The Bugatti loop kept the Formula 1 cars on a shorter permanent circuit, away from the long Mulsanne run. That distinction matters more than a shared place name: a photograph of the 24 Hours may show completely different corners from the ones Jack Brabham raced. The official result confirms the venue as Bugatti Au Mans and Brabham's win.",
+            "uk": "Гран-прі Франції 1967 року відбувся в Ле-Мані, але не на величезному дорожньому маршруті, знайомому з перегонів на витривалість. Коротке стаціонарне кільце Bugatti не використовувало довгий відрізок Mulsanne. Різниця важливіша за спільну назву міста: фото з «24 годин» може показувати зовсім інші повороти, ніж ті, які проходив Джек Бребем. Офіційний протокол підтверджує місце Bugatti Au Mans і його перемогу."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
+            "https://www.formula1.com/en/results/1967/races/248/france/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Tight infield direction changes",
+            "en": "Slow corners, a decisive result",
             "uk": "Тісні перекладки внутрішньої секції"
           },
           "description": {
-            "en": "Jack Brabham won the 1967 Grand Prix after mechanical problems struck the newer Lotus cars. The compact loop had repeated low-speed direction changes rather than the famous Mulsanne Straight; period photographs must be identified before being attached to these corners.",
-            "uk": "Джек Бребем виграв Гран-прі 1967 року після технічних проблем нових болідів Lotus. На компактному кільці було багато повільних перекладок замість знаменитої прямої Mulsanne; перед додаванням фото до поворотів необхідно встановити, яку трасу на ньому показано."
+            "en": "Repeated low-speed changes of direction made the Bugatti Grand Prix feel unlike the flat-out sections of the Sarthe road circuit. Brabham and Hulme finished first and second in 1967, while Jim Clark's Lotus retired. The result gives the race a clear dramatic spine without placing any of those events at an invented bend. To publish a corner-by-corner guide we still need a map of the actual 1967 Bugatti configuration, not a modern Le Mans schematic.",
+            "uk": "Численні повільні перекладки робили Гран-прі на Bugatti зовсім не схожим на швидкі дороги великої траси Сарт. У 1967 році Бребем і Г’юм фінішували першим та другим, а Lotus Джима Кларка вибув. Ці події вже створюють історію гонки, але жодну з них не варто прив’язувати до вигаданого повороту. Для повного довідника потрібна схема саме конфігурації Bugatti 1967 року, а не сучасний план Ле-Мана."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+            "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
+            "https://www.formula1.com/en/results/1967/races/248/france/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Le Mans means a long straight and a famous 24-hour race to most fans. Formula 1's French Grand Prix of 1967 was something else entirely. It ran on the short Bugatti circuit, with its compact sequence of corners, and Jack Brabham beat team-mate Denny Hulme to the win. An image of the old Sarthe road course would tell the wrong story here. This is a rare example of one famous venue holding two very different kinds of circuit.",
+        "uk": "Для більшості фанатів Ле-Ман — це довга пряма й легендарна добова гонка. Але Гран-прі Франції Формули-1 1967 року проходив зовсім інакше. Пілоти їхали коротким кільцем Bugatti з компактною низкою поворотів, а Джек Бребем переміг напарника Денні Г’юма. Схема великої траси Сарт тут розповіла б неправдиву історію. Це рідкісний приклад, коли одна відома локація приховує два зовсім різні автодроми.",
+        "source_url": "https://www.formula1.com/en/results/1967/races/248/france/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1967,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "caesars-palace",
@@ -710,37 +744,54 @@
       "sections": [
         {
           "label": {
-            "en": "Parking-area opening complex",
+            "en": "The casino was only the start",
             "uk": "Початкова секція на парковці"
           },
           "description": {
-            "en": "The first three turns and the pit straight occupied the Caesars Palace casino parking area. The circuit then stretched onto undeveloped land, so calling every turn a bend between parked cars misrepresents the actual 1981–82 Grand Prix route.",
-            "uk": "Перші три повороти та пряма боксів проходили парковкою Caesars Palace. Далі траса виходила на незабудовану ділянку, тож описувати кожен віраж як маневр між припаркованими машинами — перекручувати конфігурацію 1981–1982 років."
+            "en": "It is easy to picture the entire Caesars Palace Grand Prix as cars circling painted parking spaces. In reality, the pits and opening corners occupied the casino parking area while the rest of the temporary circuit extended onto adjoining undeveloped land. There were few natural landmarks, and one slow sequence followed another. The route was neither the later temporary oval nor the modern Las Vegas Strip street circuit, so media and historical corner names must be tied to 1981–82.",
+            "uk": "Уявити Caesars Palace як боліди, що нескінченно кружляють між розміткою парковки, дуже легко. Насправді бокси й початкові віражі займали парковку казино, а решта тимчасової траси виходила на сусідню незабудовану ділянку. Природних орієнтирів майже не було, зате одна повільна зв’язка змінювала іншу. Це не пізніший тимчасовий овал і не сучасна траса вздовж Лас-Вегас-Стріп, тому схеми та історичні назви потрібно прив’язувати до 1981–1982 років."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/"
+            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/",
+            "https://www.formula1.com/en/results/1982/races/452/caesar%27s-palace/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Flat desert temporary section",
+            "en": "A world title in the desert",
             "uk": "Рівна тимчасова секція в пустелі"
           },
           "description": {
-            "en": "The flat surrounding ground offered few natural landmarks, and successive tight changes of direction tested concentration. The circuit was not the later oval used by other series and not the modern Strip street track.",
-            "uk": "Рівнинна місцевість майже не давала природних орієнтирів, а послідовність тісних віражів випробовувала увагу. Це був не пізніший овал інших серій і не сучасна міська траса вздовж Стріпу."
+            "en": "The last Formula 1 visit to the original Caesars Palace course was on 25 September 1982. Michele Alboreto won in a Tyrrell; John Watson was second and Eddie Cheever third. Keke Rosberg came home fifth, enough to secure the drivers' championship. The result is firmly documented, while the exact numbered positions of the circuit's tight corners are not. The finishing order should lead the story, not be used as an excuse to manufacture a track map.",
+            "uk": "Останній візит Формули-1 на первісну трасу Caesars Palace відбувся 25 вересня 1982 року. Мікеле Альборето переміг на Tyrrell, Джон Вотсон став другим, Едді Чівер — третім. Кеке Росберг фінішував п’ятим, і цього вистачило для чемпіонського титулу. Підсумок гонки добре задокументований, а точне положення пронумерованих віражів — ні. Саме результат має вести розповідь, а не ставати приводом вигадувати карту."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/"
+            "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/",
+            "https://www.formula1.com/en/results/1982/races/452/caesar%27s-palace/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Las Vegas hosted Formula 1 long before the night-time Strip Grand Prix. In 1981 and 1982 the cars raced around Caesars Palace on a temporary course that began on the casino parking area and reached into the surrounding undeveloped ground. In the final 1982 race Michele Alboreto won for Tyrrell; Keke Rosberg finished fifth and became world champion. That is a much stranger and more interesting piece of Las Vegas history than simply saying the race happened in a car park.",
+        "uk": "Лас-Вегас приймав Формулу-1 задовго до нічного Гран-прі на Стріпі. У 1981 і 1982 роках машини їздили тимчасовим маршрутом біля Caesars Palace: старт на парковці казино, а далі — незабудована земля довкола. В останній гонці 1982 року Мікеле Альборето переміг за Tyrrell, а Кеке Росберг посів п’яте місце й став чемпіоном світу. Ця історія значно цікавіша, ніж просто сказати, що боліди ганяли парковкою.",
+        "source_url": "https://www.formula1.com/en/results/1982/races/452/caesar%27s-palace/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1982,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "clermont-ferrand",
@@ -4794,37 +4845,54 @@
       "sections": [
         {
           "label": {
-            "en": "Rio de Janeiro permanent circuit",
+            "en": "Rio, not São Paulo",
             "uk": "Стаціонарна траса Ріо-де-Жанейро"
           },
           "description": {
-            "en": "Jacarepaguá was Rio's Grand Prix venue, not the Interlagos circuit in São Paulo. Its permanent road-course bends were central to the 1989 Brazilian Grand Prix, when Nigel Mansell won on his Ferrari debut despite pre-race doubts about the gearbox.",
-            "uk": "Жакарепагуа була трасою Гран-прі у Ріо, а не Інтерлагосом у Сан-Паулу. Повороти стаціонарного кільця стали сценою Гран-прі Бразилії 1989 року, коли Найджел Менселл переміг у дебюті за Ferrari попри сумніви щодо коробки передач."
+            "en": "The Grand Prix circuit at Jacarepaguá belonged to Rio de Janeiro, not to the Interlagos hills of São Paulo. Its permanent road layout had its own corners, rhythm and racing history. On 26 March 1989 Nigel Mansell won here on his first start for Ferrari, with Alain Prost finishing second. The location and classification are confirmed in the official Formula 1 archive. An Interlagos diagram would be wrong even if the article heading simply said 'Brazilian Grand Prix'.",
+            "uk": "Гран-прі на Жакарепагуа проходив у Ріо-де-Жанейро, а не на пагорбах Інтерлагоса в Сан-Паулу. Стаціонарна траса мала власні повороти, ритм і спортивну історію. 26 березня 1989 року Найджел Менселл виграв тут свій перший старт за Ferrari, а Ален Прост фінішував другим. Місце й результат підтверджує офіційний архів Формули-1. Схема Інтерлагоса була б помилкою, навіть якщо над статтею просто написати «Гран-прі Бразилії»."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html"
+            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html",
+            "https://www.formula1.com/en/results/1989/races/543/brazil/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Historically distinct Rio layout",
+            "en": "A lost circuit worth keeping distinct",
             "uk": "Окрема історична схема Ріо"
           },
           "description": {
-            "en": "An outline from the demolished Rio venue cannot be replaced with a current São Paulo circuit map. Any corner name or number should be matched to the Grand Prix-era configuration rather than inferred from a generic Brazilian racing article.",
-            "uk": "Контур зниклого автодрому Ріо не можна замінити сучасною схемою Сан-Паулу. Будь-яку назву чи номер потрібно звіряти з конфігурацією років проведення Гран-прі, а не виводити зі звичайної статті про бразильські перегони."
+            "en": "Jacarepaguá later disappeared from Rio's landscape. That is part of why old photographs and accurate route drawings matter: a visitor cannot simply walk the Grand Prix-era layout to understand where drivers turned. In 1978 Emerson Fittipaldi took second for Copersucar; in 1989 the final F1 race belonged to Mansell's Ferrari. Those race facts can be sourced independently, but none of them certifies a modern turn-number overlay on the demolished circuit.",
+            "uk": "Жакарепагуа згодом зникла з ландшафту Ріо. Саме тому старі фотографії й правильні схеми такі важливі: сьогодні відвідувач не може просто пройти колишньою трасою й побачити, де повертали боліди. У 1978-му Емерсон Фіттіпальді став другим за Copersucar, а фінальна гонка F1 у 1989-му завершилася перемогою Менселла на Ferrari. Ці результати мають окремі джерела, але жоден не підтверджує сучасну нумерацію віражів знищеного автодрому."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html"
+            "https://f1i.com/magazine/32700-brazil-1989-il-leone-roars-to-win-on-ferrari-debut.html",
+            "https://www.formula1.com/en/results/1989/races/543/brazil/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Before Brazilian Grands Prix returned to São Paulo, Rio de Janeiro had its own Formula 1 home. Jacarepaguá hosted the series in 1978 and then from 1981 through 1989. Its last championship race became the start of Nigel Mansell's Ferrari career: he won on his debut for the team, ahead of Alain Prost. The circuit itself has since disappeared, which makes preserving its distinct Rio identity especially important. It should never inherit an Interlagos corner guide.",
+        "uk": "До повернення Гран-прі Бразилії в Сан-Паулу Формула-1 мала власний дім у Ріо-де-Жанейро. Жакарепагуа приймала гонку 1978 року, а потім щороку з 1981-го до 1989-го. Останній чемпіонатний етап тут став початком кар’єри Найджела Менселла у Ferrari: він переміг у дебютній гонці за команду, випередивши Алена Проста. Самого автодрому вже немає, тому особливо важливо не втратити його окрему історію й не підмінити її поворотами Інтерлагоса.",
+        "source_url": "https://www.formula1.com/en/results/1989/races/543/brazil/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1989,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "monsanto",
@@ -4834,37 +4902,54 @@
       "sections": [
         {
           "label": {
-            "en": "Lisbon park-road climbs",
+            "en": "Above Lisbon, not in Porto",
             "uk": "Підйоми паркових доріг Лісабона"
           },
           "description": {
-            "en": "The 1959 Portuguese Grand Prix went through Lisbon's Monsanto park roads, combining changes of elevation and mixed surface conditions. It should not be confused with the Boavista street race in Porto or later Portuguese races at Estoril.",
-            "uk": "Гран-прі Португалії 1959 року проходив парковими дорогами Монсанту в Лісабоні, поєднуючи підйоми й різні типи покриття. Не можна плутати цей маршрут із міською трасою Боавішта в Порту або пізнішими гонками в Ешторілі."
+            "en": "Monsanto's 1959 Grand Prix route threaded through park roads in the hills above Lisbon. There were climbs, blind turns beneath trees and stretches where the surface changed from tarmac to concrete or cobbles. It had almost nothing in common with the seafront tram tracks of Boavista, used for the previous year's Portuguese Grand Prix. A good route guide must keep these two venues separate: the national race title is the same, but the driving conditions and landscape are not.",
+            "uk": "Маршрут Монсанту 1959 року проходив парковими дорогами на пагорбах над Лісабоном. Тут були підйоми, сліпі віражі між деревами й ділянки, де асфальт змінювався бетоном або бруківкою. З приморськими трамвайними рейками Боавішти, де проводили попередній португальський Гран-прі, він майже не мав нічого спільного. Хороший довідник має чітко розділяти ці локації: назва гонки одна, а дороги та умови зовсім різні."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+            "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Moss on the park circuit",
+            "en": "Moss had no equal here",
             "uk": "Мосс на парковому кільці"
           },
           "description": {
-            "en": "Stirling Moss mastered the Monsanto circuit in 1959. The event deserves a route-specific history of the park rather than a copy of another Portuguese corner guide; street geography alone still cannot determine individual historical turn numbers.",
-            "uk": "Стірлінг Мосс впевнено подолав Монсанту у 1959 році. Ця гонка потребує окремої історії паркової траси, а не копії довідника іншого португальського автодрому; сама географія вулиць ще не встановлює історичну нумерацію."
+            "en": "Stirling Moss started the 1959 Portuguese Grand Prix from pole and won in the Rob Walker Cooper. Masten Gregory finished second, one lap down; Dan Gurney took third. Moss's own racing biography remembers the day as his sole championship grand slam. It is a wonderful way into the story of Monsanto, but it is still only a result and a lap of driving history. A precise named-corner guide requires a period-specific numbered map and independently checked positions.",
+            "uk": "Стірлінг Мосс стартував із поулу Гран-прі Португалії 1959 року й переміг на Cooper команди Роба Вокера. Мастен Грегорі став другим із відставанням на коло, Ден Герні — третім. У власній історії Мосса цей день згадують як його єдиний чемпіонатний grand slam. Чудовий початок розповіді про Монсанту, але це ще не карта віражів: для точної нумерації потрібна історична схема й незалежна перевірка місць кожного повороту."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/"
+            "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+            "https://www.formula1.com/en/results/1959/races/175/portugal/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Portugal's 1959 Grand Prix did not take place on the streets of Porto. It climbed into the green hills of Monsanto above Lisbon: park roads, fast blind bends, cobbled stretches and even concrete dual carriageway. Stirling Moss dominated from pole and won by a full lap, with Masten Gregory second. His own history recalls the race as a grand slam, but the event still needs to be understood as a very particular Lisbon route, not a generic Portuguese street circuit.",
+        "uk": "Гран-прі Португалії 1959 року проходив не вулицями Порту. Маршрут піднімався зеленими пагорбами Монсанту над Лісабоном: паркові дороги, швидкі сліпі віражі, бруківка й навіть бетонна багатосмугова ділянка. Стірлінг Мосс домінував після поулу й переміг із перевагою в ціле коло над Мастеном Грегорі. У власній історії Мосса цей виступ згадано як grand slam, але його треба розповідати через особливості саме лісового маршруту Лісабона, а не абстрактного міського Гран-прі.",
+        "source_url": "https://www.formula1.com/en/results/1959/races/175/portugal/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1959,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "mont-tremblant",
@@ -4874,37 +4959,54 @@
       "sections": [
         {
           "label": {
-            "en": "Laurentian hillside gradients",
+            "en": "Blind crests in the Laurentians",
             "uk": "Підйоми й спуски Лаврентійських гір"
           },
           "description": {
-            "en": "Mont-Tremblant's Canadian Grand Prix loop climbed and fell through the Laurentian landscape. Blind rises demanded precise car placement, a contrast with the comparatively flat island circuit at Montréal that took over later Canadian Grands Prix.",
-            "uk": "Маршрут Гран-прі Мон-Тремблан підіймався й спускався серед Лаврентійських гір. Сліпі гребені вимагали точного розташування боліда, на відміну від значно рівнішого острівного автодрому Монреаля, який згодом приймав канадські Гран-прі."
+            "en": "Mont-Tremblant's hills changed what drivers could see as much as how fast they could go. A crest hid the next braking point, and the road dropped again before there was time to relax. The 1968 Canadian Grand Prix was run on this Laurentian layout, not on the later Montreal island circuit. Even a modern map of Mont-Tremblant cannot automatically prove the period's individual corner numbers; the route geometry must be matched to a dated Grand Prix configuration.",
+            "uk": "Пагорби Мон-Тремблана змінювали не тільки швидкість, а й те, що пілот бачив попереду. За гребенем ховалося наступне гальмування, а дорога знову падала вниз, не даючи перепочинку. Гран-прі Канади 1968 року проходив саме на цьому маршруті в Лаврентійських горах, а не на пізнішій острівній трасі Монреаля. Навіть сучасна схема Мон-Тремблана не підтверджує нумерацію поворотів того часу: потрібне зіставлення з конфігурацією конкретної гонки."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/"
+            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/",
+            "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Amon's lost lead",
+            "en": "Amon's race slipped away",
             "uk": "Втрачене лідерство Еймона"
           },
           "description": {
-            "en": "In 1968 Chris Amon led until his Ferrari failed, allowing Denny Hulme to win. The race narrative should connect that turning point to the correct hillside course, not claim an unsupported corner number for the retirement.",
-            "uk": "У 1968 році Кріс Еймон лідирував, доки не зламалася його Ferrari, і перемогу здобув Денні Г'юм. Цю подію потрібно прив'язувати саме до гірської траси, не вигадуючи номер повороту, де сталася відмова."
+            "en": "Chris Amon gave Ferrari real hope at Mont-Tremblant in 1968. He had led, but a mechanical failure ended his race after 72 laps. Denny Hulme took the victory, Bruce McLaren finished second and Pedro Rodríguez was third. It was a cruel ending for Amon on one of the calendar's most demanding hillside circuits. The finishing order and retirement are documented; a claim that the Ferrari failed at a certain numbered hairpin would still be speculation without a period-localised report.",
+            "uk": "Кріс Еймон подарував Ferrari надію в Мон-Тремблані 1968 року. Він лідирував, але технічна відмова обірвала гонку після 72 кіл. Денні Г’юм здобув перемогу, Брюс Макларен фінішував другим, Педро Родрігес — третім. Для Еймона це був болісний фінал на одній із найскладніших гірських трас календаря. Результат і схід підтверджені джерелами, але твердження, що Ferrari зупинилася біля певної пронумерованої шпильки, без історичного репортажу залишилося б вигадкою."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/"
+            "https://www.motorsportmagazine.com/archive/article/november-1968/38/canadian-grand-prix-15/",
+            "https://www.formula1.com/en/results/1968/races/264/canada/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Mont-Tremblant was a Canadian Grand Prix on a hillside, not an island. The Laurentian circuit rose and fell between blind crests and changing corners, twice hosting the World Championship in 1968 and 1970. In 1968 Chris Amon led for Ferrari until the car failed; Denny Hulme won for McLaren. Two years later Jacky Ickx won for Ferrari. Those contrasting results belong to the same mountain setting, which must not be replaced with a Montreal circuit diagram.",
+        "uk": "Мон-Тремблан був канадським Гран-прі на схилі гори, а не на острові. Траса в Лаврентійських горах підіймалася й падала між сліпими гребенями та різкими змінами напрямку. Чемпіонат приїжджав сюди у 1968 та 1970 роках. У 1968-му Кріс Еймон лідирував за Ferrari, поки машина не відмовила; переміг Денні Г’юм за McLaren. Через два роки виграв Джекі Ікс на Ferrari. Обидві гонки належать до гірського маршруту, який не можна замінювати схемою Монреаля.",
+        "source_url": "https://www.formula1.com/en/results/1968/races/264/canada/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1968,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "nivelles",
@@ -4914,37 +5016,54 @@
       "sections": [
         {
           "label": {
-            "en": "Wide permanent Belgian circuit",
+            "en": "A very different Belgian Grand Prix",
             "uk": "Широке стаціонарне бельгійське кільце"
           },
           "description": {
-            "en": "Nivelles was deliberately different from the long public-road course at Spa. Its wide, comparatively modern corners offered a safer setting for the Belgian Grand Prix in the early 1970s, but modern Spa names have no place on this circuit.",
-            "uk": "Нівель навмисно відрізнявся від довгих доріг старого Спа. Його широкі, на той час сучасні повороти створювали безпечніше місце для Гран-прі Бельгії на початку 1970-х, але назви сучасного Спа до цього автодрому не належать."
+            "en": "Where the old Spa sent drivers racing along dangerous public roads, Nivelles presented a wide purpose-built circuit. It hosted the Belgian Grand Prix on 4 June 1972, and the experience felt far closer to a new-generation autodrome than to a long Ardennes road loop. The switch was a fundamental change in both rhythm and safety philosophy. Naming a Nivelles bend after a famous corner at Spa would only disguise that history; its period layout needs independent evidence.",
+            "uk": "Старий Спа вів пілотів небезпечними дорогами загального користування, а Нівель пропонував широке стаціонарне кільце. Саме тут 4 червня 1972 року пройшов Гран-прі Бельгії, більше схожий на перегони нового покоління, ніж на довгий маршрут Арденнами. Змінився і ритм їзди, і підхід до безпеки. Назвати віраж Нівеля на честь знаменитого повороту Спа означало б приховати цю відмінність; для його історичної схеми потрібні власні докази."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.grandprix.com/races/belgian-gp-1972.html"
+            "https://www.grandprix.com/races/belgian-gp-1972.html",
+            "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "1972 Fittipaldi victory",
+            "en": "Twice a Belgian winner",
             "uk": "Перемога Фіттіпальді 1972 року"
           },
           "description": {
-            "en": "Emerson Fittipaldi won the 1972 Belgian race at Nivelles. When readers compare Belgian Grand Prix seasons, the venue switch is the main historical fact: a race named for the same country could use a completely different layout.",
-            "uk": "Емерсон Фіттіпальді переміг у Гран-прі Бельгії 1972 року саме в Нівелі. Порівнюючи сезони, важливо бачити зміну місця проведення: гонка з тією самою назвою країни могла відбутися на цілком іншому маршруті."
+            "en": "Emerson Fittipaldi won at Nivelles in 1972 for Lotus, ahead of François Cevert and Denny Hulme. The Belgian Grand Prix returned to this circuit in 1974 and Fittipaldi won again, then driving for McLaren. Two visits and two wins make a memorable story for a track that rarely appears in modern F1 conversations. FIA's historic Belgian Grand Prix venue record confirms both years; it does not give licence to fabricate named or numbered turns.",
+            "uk": "Емерсон Фіттіпальді виграв у Нівелі 1972 року на Lotus, випередивши Франсуа Севера та Денні Г’юма. Гран-прі Бельгії повернувся сюди в 1974-му, і Фіттіпальді переміг знову — вже за McLaren. Два приїзди й дві перемоги створюють яскраву історію автодрому, який сьогодні згадують нечасто. Історичні матеріали FIA підтверджують обидва роки, але не дають права домальовувати назви чи номери віражів."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.grandprix.com/races/belgian-gp-1972.html"
+            "https://www.grandprix.com/races/belgian-gp-1972.html",
+            "https://www.formula1.com/en/results/1972/races/306/belgium/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "In the early 1970s the Belgian Grand Prix had to find a home beyond the old high-speed roads of Spa. Nivelles offered broad modern-looking corners and generous space, a stark change from the Ardennes road circuit. Emerson Fittipaldi won here in 1972, and again when the Grand Prix returned in 1974. Two Belgian victories on the same Nivelles layout do not make its bends interchangeable with modern Spa. This is a short-lived venue with its own important place in the championship story.",
+        "uk": "На початку 1970-х Гран-прі Бельгії шукав дім за межами старих швидкісних доріг Спа. Нівель запропонував широкі, на той час сучасні повороти й більше простору — різкий контраст з арденнським дорожнім кільцем. Емерсон Фіттіпальді переміг тут у 1972 році й знову після повернення гонки в 1974-му. Дві перемоги в Бельгії на тій самій трасі не роблять її віражі взаємозамінними з сучасним Спа. Це недовговічний автодром зі своєю важливою історією.",
+        "source_url": "https://www.formula1.com/en/results/1972/races/306/belgium/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1972,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "pedralbes",
@@ -4954,37 +5073,54 @@
       "sections": [
         {
           "label": {
-            "en": "Broad Barcelona city avenues",
+            "en": "A city built for speed",
             "uk": "Широкі міські проспекти Барселони"
           },
           "description": {
-            "en": "Pedralbes used Barcelona's broad public avenues, not the modern permanent Catalunya circuit. The 1951 Spanish Grand Prix closed the championship season on these streets, where Juan Manuel Fangio clinched his first title.",
-            "uk": "Педральбес використовував широкі міські проспекти Барселони, а не сучасний стаціонарний автодром Каталунья. Гран-прі Іспанії 1951 року завершив сезон на цих вулицях, де Хуан-Мануель Фанхіо виборов свій перший титул."
+            "en": "Pedralbes was carved out of Barcelona's wide avenues, not a purpose-built circuit. The 1951 and 1954 Grand Prix course used part of the enormous Avenida Diagonal and swept past the former royal palace. A long straight of roughly 1.2 miles dominated a 3.9-mile lap, leaving only six corners in the official historical description. The hairpin curved around Parc de Cervantes. Those landmarks are useful route evidence; they are not permission to borrow a modern Catalunya turn-number chart.",
+            "uk": "Педральбес проклали широкими проспектами Барселони, а не на спеціально збудованому автодромі. Маршрут Гран-прі 1951 і 1954 років охоплював частину величезної Avenida Diagonal і проходив повз колишній королівський палац. На колі завдовжки 3,9 милі була пряма приблизно на 1,2 милі, а в історичному описі Формули-1 згадано лише шість поворотів. Шпилька огинала Parc de Cervantes. Ці орієнтири допомагають відновити маршрут, але не дозволяють позичати нумерацію сучасної Каталуньї."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/"
+            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/",
+            "https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "1954 street-layout era",
+            "en": "Two finales, two winners",
             "uk": "Міська конфігурація 1954 року"
           },
           "description": {
-            "en": "The circuit hosted later Formula 1 racing before disappearing from the championship. A turn list must identify which year's street layout it describes; the Barcelona name alone is not permission to import Turn 1 or Campsa labels from Catalunya.",
-            "uk": "Тут проводили й пізніші гонки Формули-1, перш ніж траса зникла з чемпіонату. Список поворотів має називати рік конкретного міського маршруту; спільна назва Барселони не дозволяє переносити сюди Turn 1 чи Campsa з Каталуньї."
+            "en": "Pedralbes staged the Spanish Grand Prix at the end of both the 1951 and 1954 World Championship seasons. Fangio won the first in his Alfa Romeo and clinched his maiden title; Mike Hawthorn won the second for Ferrari. Those separate races define the circuit's place in Formula 1 history, while the long straight and broad city roads explain its driving character. We can document the winners without claiming the exact surface of every corner stayed identical between the two editions.",
+            "uk": "Педральбес приймав фінальні Гран-прі Іспанії сезонів 1951 та 1954 років. Перший виграв Фанхіо на Alfa Romeo, здобувши дебютний титул, другий — Майк Готорн за Ferrari. Саме ці дві гонки визначили місце траси в історії Формули-1, а довга пряма й широкі міські дороги пояснюють характер їзди. Переможців можна назвати впевнено, але немає підстав стверджувати, що покриття кожного віражу було незмінним між двома сезонами."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/"
+            "https://www.motorsportmagazine.com/archive/article/november-1954/32/viii-gran-premio-de-espana-and-xii-gran-premio-pena-rhin/",
+            "https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Before Barcelona-Catalunya there was Pedralbes: an audacious street circuit built from broad avenues in Barcelona. Its 3.9 miles included a straight of roughly 1.2 miles and only six corners by the official Formula 1 historical description. Two championship finales were raced here. Juan Manuel Fangio won in 1951 on his way to his first title, while Mike Hawthorn won the 1954 Spanish Grand Prix for Ferrari. Modern Catalunya turn names would be utterly out of place on this city route.",
+        "uk": "До автодрому Барселона-Каталунья існував Педральбес — смілива міська траса, складена з широких проспектів Барселони. На її 3,9 милі припадали приблизно 1,2 милі прямої й лише шість поворотів, за історичним описом Формули-1. Тут завершувалися два чемпіонатні сезони. У 1951 році Хуан-Мануель Фанхіо переміг на шляху до першого титулу, а в 1954-му Гран-прі Іспанії виграв Майк Готорн за Ferrari. Назви віражів сучасної Каталуньї до цієї міської траси не мають стосунку.",
+        "source_url": "https://www.formula1.com/en/latest/article/from-pedralbes-to-catalunya-a-short-history-of-the-5-venues-to-have-hosted.3VMs6iFXohT6vY7cLAGfgF",
+        "editorial_status": "research_only",
+        "historical_year": 1954,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "pescara",
@@ -5720,37 +5856,52 @@
       "sections": [
         {
           "label": {
-            "en": "Jefferson Street and opening right",
+            "en": "Through the middle of downtown",
             "uk": "Jefferson Street і початковий правий"
           },
           "description": {
-            "en": "The 1989–90 lap started on Jefferson Street and reached a right-hander onto 1st Street. Alesi took the lead at the opening corner in 1990; his fight with Senna belongs to this original layout, not the revised 1991 street course.",
-            "uk": "Коло 1989–1990 років починалося на Jefferson Street і вело до правого повороту на 1st Street. У 1990 році Алезі вийшов у лідери на першому повороті; його боротьба із Сенною належить до цієї початкової схеми, а не зміненої траси 1991 року."
+            "en": "The first Phoenix Formula 1 layout opened on Jefferson Street and turned right onto 1st Street. It then threaded through the Civic Plaza district by way of 5th Street, Monroe and 3rd Street before rejoining Washington Street. Every intersection had a real street name, but not necessarily a period-authenticated FIA corner number. The geography matters because the 1991 redesign removed part of the original loop, leaving two distinct Grand Prix-era maps.",
+            "uk": "Перша траса Формули-1 у Фініксі починалася на Jefferson Street і повертала праворуч на 1st Street. Далі маршрут проходив кварталами Civic Plaza через 5th Street, Monroe та 3rd Street і повертався до Washington Street. Кожне перехрестя мало справжню назву вулиці, але не обов’язково підтверджений номер повороту FIA того часу. Ця географія важлива: для 1991 року частину початкової петлі прибрали, створивши дві різні історичні конфігурації."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
             "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "Civic Plaza downtown loop",
+            "en": "Alesi versus Senna, on the earlier loop",
             "uk": "Міська петля навколо Civic Plaza"
           },
           "description": {
-            "en": "The original course swung around the Civic Plaza district using 5th Street, Monroe and 3rd Street before rejoining Washington Street. This loop was removed for 1991, so any period corner map must not mix the two Phoenix layouts.",
-            "uk": "Початковий маршрут огинав район Civic Plaza через 5th Street, Monroe та 3rd Street, повертаючись на Washington Street. У 1991 році цю петлю прибрали, тому історична карта поворотів не може змішувати дві конфігурації Фінікса."
+            "en": "Jean Alesi's fearless 1990 challenge to Ayrton Senna is inseparable from the original Phoenix street route. Alesi seized the lead at the start, and the two swapped positions before Senna won. A year later the Grand Prix used a revised layout around downtown Phoenix, with the Civic Plaza section removed. The result and street sequence are distinct historical evidence: neither alone establishes the complete numbered corner-by-corner sequence for both years.",
+            "uk": "Сміливий виклик Жана Алезі Айртону Сенні у 1990 році неможливо відділити від початкової траси Фінікса. Алезі вийшов уперед на старті, пілоти обмінялися позиціями, а зрештою переміг Сенна. Уже наступного року Гран-прі провели зміненим маршрутом, з якого прибрали частину Civic Plaza. Результат гонки й послідовність вулиць — різні типи історичних доказів: жоден окремо не дає повної перевіреної нумерації для обох років."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
             "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Formula 1's original Phoenix Grand Prix was a downtown street race, not a permanent oval. From 1989 to 1990 the lap ran through Jefferson Street, 1st Street and the Civic Plaza district before returning toward Washington Street. In 1990 Jean Alesi startled the field by challenging Ayrton Senna, who eventually won. The street layout changed for 1991, so that famous duel belongs to the earlier city loop. Any corner map that mixes these eras would mislead readers.",
+        "uk": "Перший Гран-прі Формули-1 у Фініксі був міською гонкою, а не стаціонарним овалом. У 1989–1990 роках боліди проходили Jefferson Street, 1st Street і квартали довкола Civic Plaza, повертаючись до Washington Street. У 1990-му Жан Алезі здивував усіх боротьбою з Айртоном Сенною, який зрештою переміг. Для 1991 року маршрут змінили, тому знаменита дуель належить саме до ранньої міської петлі. Карта, що змішує ці епохи, заплутала б читача.",
+        "source_url": "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
+        "editorial_status": "research_only",
+        "historical_year": 1990,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "porto",
@@ -6469,37 +6620,54 @@
       "sections": [
         {
           "label": {
-            "en": "California permanent road course",
+            "en": "The California finale",
             "uk": "Стаціонарна траса в Каліфорнії"
           },
           "description": {
-            "en": "Riverside's one Formula 1 World Championship Grand Prix was held in 1960. The permanent road course ran through open California terrain, a very different environment from later street venues on the American calendar.",
-            "uk": "Єдиний чемпіонатний Гран-прі Формули-1 у Ріверсайді відбувся в 1960 році. Стаціонарне дорожнє кільце проходило відкритою каліфорнійською місцевістю, зовсім не схожою на пізніші міські траси календаря США."
+            "en": "Riverside's permanent road course brought the Formula 1 championship to open California terrain in November 1960. This was not an urban street event and not an Indianapolis-style oval: the circuit had genuine changes of direction and a dry landscape beyond the road. The official calendar records the American Grand Prix there on 20 November, when Stirling Moss won. A route illustration for another Riverside era still requires independent comparison before it can represent the 1960 lap.",
+            "uk": "Стаціонарне кільце Ріверсайда привезло чемпіонат Формули-1 на відкриті каліфорнійські дороги в листопаді 1960 року. Це не міська гонка й не овал на зразок Індіанаполіса: автодром мав повноцінні віражі, а за полотном простягався сухий ландшафт. Офіційний календар підтверджує Гран-прі США 20 листопада й перемогу Стірлінга Мосса. Навіть схему іншої епохи Ріверсайда потрібно окремо звіряти, перш ніж показувати її як маршрут 1960 року."
           },
           "reading_order": 1,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/",
+            "https://www.formula1.com/en/results/1960/races/187/united-states/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         },
         {
           "label": {
-            "en": "1960 race and fuel-fire changes",
+            "en": "Moss's victory, without invented incident corners",
             "uk": "Гонка 1960 року й проблеми з пальним"
           },
           "description": {
-            "en": "The race changed shape as fuel-related incidents affected leading cars, allowing Stirling Moss to win. To place those incidents at a particular corner would require a period report or diagram with that location, not speculation from the result alone.",
-            "uk": "Перебіг гонки змінився через інциденти, пов'язані з пальним, серед машин лідерів, і переміг Стірлінг Мосс. Щоб прив'язати ці події до конкретного повороту, потрібен репортаж чи схема з точним місцем, а не здогад із підсумкового протоколу."
+            "en": "At Riverside in 1960, Stirling Moss won in a Lotus-Climax, followed by Innes Ireland in another Lotus and Bruce McLaren's Cooper. The classification documents that order and the one-off Grand Prix venue. Some race reports discuss fuel and other problems for rival cars, but the finishing table cannot identify the exact bend where any such incident occurred. The historical story deserves its own verified narrative; a corner marker should be added only where a period-specific location source exists.",
+            "uk": "У Ріверсайді 1960 року Стірлінг Мосс переміг на Lotus-Climax, другим став Іннес Айрленд на іншому Lotus, третім — Брюс Макларен на Cooper. Протокол підтверджує цей порядок і саму трасу. У репортажах згадують проблеми з пальним та інші негаразди суперників, але підсумковий список не показує, біля якого саме віражу стався будь-який інцидент. Історія гонки заслуговує на точну розповідь; маркери поворотів варто додавати тільки після окремої перевірки їхнього місця."
           },
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/"
+            "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/",
+            "https://www.formula1.com/en/results/1960/races/187/united-states/race-result"
           ],
-          "review_status": "pending"
+          "review_status": "pending",
+          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "independently_verified_numbered_turns": false,
+          "publication_allowed": false
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "The 1960 United States Grand Prix ended the championship on a California road circuit, not in a city centre or at Indianapolis. Riverside's dry open setting framed Stirling Moss's victory in a Lotus, with Innes Ireland second and Bruce McLaren third. It was the only World Championship Formula 1 race at Riverside. That makes this particular road-course layout worth preserving on its own, rather than filling its missing corners with labels from other Californian tracks.",
+        "uk": "Гран-прі США 1960 року завершив чемпіонат на каліфорнійському дорожньому автодромі, а не в міському центрі чи Індіанаполісі. Сухий відкритий краєвид Ріверсайда став тлом перемоги Стірлінга Мосса на Lotus; другим був Іннес Айрленд, третім — Брюс Макларен. Це єдиний чемпіонатний етап Формули-1 у Ріверсайді. Тому саме його історичний маршрут варто зберегти окремо, а не заповнювати прогалини назвами з інших каліфорнійських трас.",
+        "source_url": "https://www.formula1.com/en/results/1960/races/187/united-states/race-result",
+        "editorial_status": "research_only",
+        "historical_year": 1960,
+        "source_role": "race_result_or_period_historical_context_not_per_apex_map",
+        "publication_allowed": false
+      }
     },
     {
       "circuit_id": "sebring",
