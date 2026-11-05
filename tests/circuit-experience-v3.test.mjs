@@ -473,6 +473,9 @@ test('four historically scoped EN/UK reader openings remain review-only and visi
     }
   }
   assert.match(renderCircuitReview('en', '/review/test'), /Editorial opening — draft/);
+  assert.match(renderCircuitReview('en', '/review/test'), /Period map leads — not a verified map/);
+  assert.match(renderCircuitReview('en', '/review/test'), /1972 pre-race modifications/);
+  assert.match(renderCircuitReview('uk', '/review/test'), /Архівні схеми для перевірки/);
   assert.match(renderCircuitReview('uk', '/review/test'), /Редакторський вступ — чернетка/);
 });
 
