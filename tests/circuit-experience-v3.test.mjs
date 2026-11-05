@@ -664,3 +664,30 @@ test('Dallas six historical layout-plan references are archival leads, not licen
       /Хронологія планів і схем — не готові карти/);
   }
 });
+
+test('Charade 11 named landmarks have substantive paired prose without backdating period name attestations', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const circuit = data.circuits.find(x => x.circuit_id === 'clermont-ferrand');
+  const named = circuit.named_bend_studies;
+  const route = circuit.layout_evidence_review.venue_11_landmark_route_order;
+  assert.equal(named.length, 11);
+  assert.equal(route.length, 11);
+  assert.deepEqual(route.map(x => x.name), named.map(x => x.name));
+  assert.deepEqual(named.map(x => x.reading_order), Array.from({length: 11}, (_, index) => index + 1));
+  for (const feature of named) {
+    assert.ok(feature.explanation.en.length > 180, feature.name + ':en');
+    assert.ok(feature.explanation.uk.length > 180, feature.name + ':uk');
+    assert.equal(feature.name_evidence_assessment.venue_historical_route_attested, true);
+    assert.equal(feature.name_evidence_assessment.numbered_apex_crosswalk_available, false);
+    assert.equal(feature.official_turn_number, null);
+    assert.equal(feature.publication_allowed, false);
+    const isPeriod = feature.name === 'Rosier';
+    assert.equal(feature.name_evidence_assessment.period_1972_source_specific_name_attested, isPeriod);
+    assert.equal(feature.name_evidence_assessment.retroactive_period_name_risk, !isPeriod);
+    assert.ok(feature.source_urls.some(url => url.includes('charade.fr/galerie-photos/charade-dans-le-retro/')));
+  }
+  assert.match(named.find(x => x.name === 'Ferme').explanation.en, /marshal post 10/);
+  assert.match(named.find(x => x.name === 'Marlboro hairpin').explanation.en, /does not establish when/);
+  assert.equal(route.every(entry => entry.numbered_apex_verified === false), true);
+});
