@@ -82,10 +82,16 @@ test('all 21 historical review questions remain bilingual, unique and fail-close
 test('source passage observations are research, never human or geometry approval', () => {
   const observed = adjudication.records.filter(record => record.source_passage_observation);
   assert.equal(observed.length, adjudication.source_passage_observations);
+  assert.equal(adjudication.source_passage_observations, 21);
+  assert.equal(observed.length, adjudication.records.length);
+  assert.equal(new Set(observed.map(record => record.review_id)).size, 21);
   for (const record of observed) {
     const observation = record.source_passage_observation;
     assert.ok(record.source_leads.includes(observation.url), record.review_id);
     assert.ok(observation.locator?.length > 20, record.review_id);
+    assert.match(observation.url, /^https:\/\//, record.review_id);
+    assert.match(observation.accessed_utc_date, /^\d{4}-\d{2}-\d{2}$/, record.review_id);
+    assert.ok(observation.review_method?.length > 10, record.review_id);
     assert.ok(observation.scope?.length > 10, record.review_id);
     assert.ok(observation.observation_en?.length > 40, record.review_id);
     assert.ok(observation.observation_uk?.length > 40, record.review_id);
@@ -99,4 +105,14 @@ test('source passage observations are research, never human or geometry approval
     assert.equal(record.numbered_apex_verified, false, record.review_id);
     assert.equal(record.period_map_authenticated, false, record.review_id);
   }
+});
+
+
+test('publication registry has no approvals for unpublished historic route candidates', async () => {
+  const { default: publication } = await import('../apps/web/src/components/editorial/circuit-release.json', { with: { type: 'json' } });
+  assert.equal(publication.schema_version, 1);
+  assert.deepEqual(publication.editions, []);
+  assert.equal(adjudication.publication_allowed, false);
+  assert.equal(adjudication.independent_human_approval, false);
+  assert.equal(adjudication.media_rights_approved, false);
 });
