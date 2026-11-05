@@ -7,6 +7,19 @@
 
 **Scope and non-goals:**
 
+## Multi-agent batch and editorial coordination
+
+- Batch owner, integrator, independent reviewer, editorial approver:
+- Parent Issue / circuit IDs and years / feature outcome:
+- Related or superseded PRs; dependency order:
+- Reserved files, data contracts and route/schema ownership:
+- Target branch + exact base/head SHA for review:
+- [ ] One coherent, verifiable delivery rather than artificial micro-PRs
+- [ ] Conflicting edits reconciled and evidence refreshed after material rebases
+- [ ] Candidate claims and unverified media remain explicitly unpublished
+
+See [multi-agent protocol](../docs/engineering/MULTI_AGENT_WORKFLOW.md).
+
 ## Verification evidence (actual results, not assumptions)
 
 | Check | PASS / FAIL / N/A / NOT RUN | Command, run link, environment, reason |
