@@ -981,11 +981,18 @@
             "url": "https://www.the-fastlane.co.uk/racingcircuits/archives/Charade/1.html",
             "claim": "Historic photo walkthrough numbers such as #001 and #009 are photographic camera positions, not turns; orange markers are kilometre landmarks. Explicitly reject reuse as a 1972 apex index.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "venue_dedicated_ferme_account",
+            "url": "https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/",
+            "claim": "Operator history verifies Ferme's left-right S, farm etymology and pre-1989 marshal post #10; marshal-post numbers are not turn numbers.",
+            "supports_apex_numbering": false
           }
         ],
         "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes.",
         "photo_index_is_turn_numbering": false,
-        "count_discrepancy": "F1DB clermont-ferrand-1 lists 48; circuit operator historic account lists 51. Photo-walk numbers are camera locations, not a means of reconciling the difference."
+        "count_discrepancy": "F1DB clermont-ferrand-1 lists 48; circuit operator historic account lists 51. Photo-walk numbers are camera locations, not a means of reconciling the difference.",
+        "marshal_post_numbering_is_apex_numbering": false
       },
       "route_scope": {
         "en": "1972 long Charade road loop, not the later shortened permanent circuit. Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat and Champeaux are route landmarks; race incidents are separate historical context, not mapped apexes.",
@@ -1162,11 +1169,12 @@
             "uk": "Ferme означає «ферма»; автодром пояснює, що S-подібна зв’язка проходила навпроти ферми."
           },
           "explanation": {
-            "en": "The Ferme section was a left-right S-bend on the old eight-kilometre circuit. The venue illustrates Graham Hill negotiating it in the 1969 French Grand Prix, making the historical name and period credible without proving the number of either apex.",
-            "uk": "Ferme була ліво-правою S-подібною зв’язкою на старій восьмикілометровій трасі. Автодром показує, як Грем Гілл проходив її на Гран-прі Франції 1969 року. Це підтверджує назву й епоху, але не офіційні номери обох апексів."
+            "en": "On the old 8.055 km Charade route, the Ferme S swung left then immediately right above lower Champeaux before the descent to Petit Pont. A farm stood opposite the bends and gave the place its name. The venue's historical account also mentions marshal post 10 here — a marshal-post number, not a numbered racing corner.",
+            "uk": "На старому маршруті Charade завдовжки 8,055 км зв’язка Ferme спочатку повертала ліворуч, а відразу потім праворуч над нижньою частиною Шампо перед спуском до Petit Pont. Навпроти стояла ферма, від якої й походить назва. Історія автодрому згадує тут пост маршалів № 10 — це номер поста, а не гоночного повороту."
           },
           "source_urls": [
-            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/"
           ],
           "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
           "historical_layout_id": "clermont-ferrand-1",
@@ -1178,7 +1186,9 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #46 \"À la Ferme, on évite de trop ouvrir !\", left-right S-bend; #23 for old-lap order."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro #46\", section \"À la Ferme, on évite de trop ouvrir !\": original 8.055 km course, descending left-right S facing the farm near Champeaux; marshal-post #10 in pre-1989 layout is NOT FIA turn #10.",
+          "non_turn_number_warning": "Marshal post #10 before 1989 and posts #16/#17 after 1989 are NOT bend numbers; the venue explicitly refers to observation/emergency posts.",
+          "venue_source_independently_checked": true
         },
         {
           "reading_order": 8,
@@ -1204,7 +1214,8 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #16 \"La vie secrète du Petit Pont\" (stream and bridge); #23 for old-lap order."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\" #16 \"La vie secrète du Petit Pont\" and #27 \"Le paddock dans tous ses états\": bridge over Artière stream; site modifications in 1989 and later must not be back-projected onto 1972 geometry.",
+          "period_layout_caveat": "Post-1989 run-off and safety updates cannot be assumed present on the 1972 long course; exact 1972 apex position remains unverified."
         },
         {
           "reading_order": 9,
