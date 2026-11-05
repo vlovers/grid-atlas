@@ -1435,9 +1435,11 @@
             "venue_or_period_name_independently_approved": false,
             "origin_authoritatively_attested": true,
             "single_numbered_turn_verified": false,
-            "period_specific_original_naming_year_verified": true,
+            "period_specific_original_naming_year_verified": false,
             "needs_independent_human_review": true,
-            "period_name_evidence_year": 1972
+            "period_name_evidence_year": 1972,
+            "period_attestation_year": 1972,
+            "first_ever_use_date_unknown": true
           },
           "contemporary_1972_account": {
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
