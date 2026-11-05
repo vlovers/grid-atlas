@@ -730,3 +730,39 @@ test('Pescara Esse di Cappelle ambiguity preserves both suggested sites and proh
   assert.match(en, /entrance monument/);
   assert.match(en, /village centre/);
 });
+
+test('Pescara historic 24-bend archive count is not silently confused with four documented candidates', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const pescara = data.circuits.find(circuit => circuit.circuit_id === 'pescara');
+  assert.equal(pescara.layout_evidence_review.archive_turn_count, 24);
+  assert.equal(pescara.layout_evidence_review.archive_count_basis.historical_layout_id, 'pescara-1');
+  assert.equal(pescara.layout_evidence_review.archive_count_basis.numbered_apex_map_verified, false);
+  assert.equal(pescara.period_bend_studies.length, 4);
+  const pit = pescara.period_bend_studies.find(x => x.reading_order === 4);
+  assert.equal(pit.period_photo_evidence.numbered_apex_verified, false);
+  assert.equal(pit.period_photo_evidence.photo_republication_approved, false);
+  assert.equal(pit.period_photo_evidence.assertion_scope, '1957_pit_chicane_existential_and_near_grandstands_only');
+});
+
+test('two Commons candidates carry attribution and rights records without activating public media', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const media = data.circuits.find(circuit => circuit.circuit_id === 'pescara').licensed_media_research_candidates;
+  assert.equal(media.length, 2);
+  assert.deepEqual(media.map(asset => asset.kind), ['schematic_map','archival_photo']);
+  assert.ok(media.every(asset => asset.commons_file_page.startsWith('https://commons.wikimedia.org/wiki/File:')));
+  assert.ok(media.every(asset => asset.rights_review_complete === false &&
+    asset.repository_intake_approved === false &&
+    asset.public_render_allowed === false &&
+    asset.asset_downloaded === false &&
+    asset.original_file_hash_sha256 === null));
+  assert.match(media[0].declared_license, /PD-author/);
+  assert.match(media[1].declared_license, /PD-Italy/);
+  for (const locale of ['en','uk']) {
+    const html = renderCircuitReview(locale, '/review/test');
+    assert.match(html, /pescara-track-outline-2005/);
+    assert.match(html, /pescara-moss-1957-pit-chicane/);
+    assert.match(html, locale === 'en' ? /Media candidate provenance and rights review/ : /Джерела зображень на перевірці/);
+  }
+});
