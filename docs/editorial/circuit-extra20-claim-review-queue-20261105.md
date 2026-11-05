@@ -198,3 +198,27 @@ These are **review questions, not confirmed facts**. For each card, record an ex
 - **UK питання:** Чи відокремлено відмову команд Michelin після формувального кола від подальших дисциплінарних рішень?
 - **Review boundary:** Use exact decision dates; six starters do not prove tyre failure mechanism.
 - **Acceptance:** capture source title, dated passage/section, supported claim, conflicting evidence if any, and matching EN/UK correction; leave release flags closed.
+
+
+## Verified source-level findings — 2026-11-05 09:00 Europe/Kyiv
+
+These findings were checked against live official Formula 1 pages, rather than merely counted as URL references. **They verify only the narrowly stated facts**, not the entire story, chronology of every manoeuvre, turn geometry, media rights, or human approval.
+
+### Sepang — Malaysian Grand Prix, 17 October 1999
+
+- **Confirmed by F1 editorial retrospective:** Eddie Irvine won the inaugural Malaysian Grand Prix, but Ferrari was initially disqualified over its bargeboards; an appeal heard the following week restored the victory. Evidence: https://www.formula1.com/en/latest/article/the-malaysian-grand-prix-did-you-know-.1SsyzCaENkaNRPGJzC0OJG
+- **Confirmed by F1 retrospective:** Michael Schumacher finished second and helped Irvine's championship campaign on his return. Evidence: https://www.formula1.com/en/latest/article/do-you-remember-schumachas-stunning-malaysia-comeback.5DKHwLoLqfVjZlTklC4nTD
+- **EN wording boundary:** 'initially disqualified, subsequently reinstated after appeal' is supported; do not write that Ferrari was permanently disqualified or that the original race winner was changed.
+- **UK wording boundary:** «спочатку дискваліфікували, після апеляції результат відновили»; не плутати початкове рішення стюардів з остаточною класифікацією.
+- **Still open:** exact appeal reasoning and detailed bargeboard measurement require the official stewards/appeal documents. This retrospective is not a substitute for the original legal decision.
+
+### Indianapolis — United States Grand Prix, 19 June 2005
+
+- **Confirmed by F1 official race classification:** Six drivers completed classified racing: Michael Schumacher, Rubens Barrichello, Tiago Monteiro, Narain Karthikeyan, Christijan Albers, Patrick Friesacher. Schumacher won after 73 laps. Source: https://www.formula1.com/en/results/2005/races/779/united-states/race-result
+- **Confirmed by the classification's explicit note:** All seven Michelin teams withdrew after the formation lap on tyre-related safety grounds. The non-classified drivers have zero race laps in the result. Source: same official classification.
+- **Confirmed by F1 official grid:** Jarno Trulli started from pole in the qualifying order; this does not mean he started the competitive race. Source: https://www.formula1.com/en/results/2005/races/779/united-states/starting-grid
+- **EN wording boundary:** distinguish the 20-car qualifying grid, formation-lap withdrawals and six race starters; avoid claiming 14 cars retired during the race.
+- **UK wording boundary:** відрізняти стартову решітку з 20 болідів, зняття після прогрівочного кола й шість машин у самій гонці; не називати 14 знятих болідів «сходами під час гонки».
+- **Still open:** exact sequence of proposals, Michelin tyre failures, corner banking geometry and the roles of individual officials need contemporary reporting or FIA records; a classification alone does not establish causality.
+
+Both entries remain `pending_independent_claim_review`; `human_approval=false` and `publication_allowed=false` must not change. No external media assets have been copied or approved.
