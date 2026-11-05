@@ -641,3 +641,26 @@ test('private Dallas review preserves 15 provisional geometry warnings and one a
     assert.match(markup, /FIA/);
   }
 });
+
+test('Dallas six historical layout-plan references are archival leads, not licensed/verified apex maps', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const review = research.circuits.find(c => c.circuit_id === 'dallas').layout_evidence_review;
+  const leads = review.historical_plan_bibliography;
+  assert.equal(leads.length, 6);
+  assert.deepEqual(leads.map(x => x.published), [
+    '1983-09-05','1984-02-14','1984-02-16','1984-02-19','1984-02-28','1984-03-20'
+  ]);
+  assert.ok(leads.every(x => x.map_content_examined === false &&
+    x.comparison_to_race_day_completed === false &&
+    x.period_fia_numbering_verified === false &&
+    x.third_party_map_reuse_approved === false));
+  assert.equal(review.finish_line_version_warning.historical_version_reconciliation_complete, false);
+  for (const locale of ['en','uk']) {
+    const html = renderCircuitReview(locale, '/review/test');
+    assert.match(html, /Rombo 9 \(150\)/);
+    assert.match(html, /Rombo 12 \(153\)/);
+    assert.match(html, locale === 'en' ? /Period plan chronology — maps not verified/ :
+      /Хронологія планів і схем — не готові карти/);
+  }
+});
