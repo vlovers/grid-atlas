@@ -999,6 +999,12 @@
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
             "claim": "Firsthand 1972 GP report describes removal of a suspect bridge at an unidentified tight hairpin, creation of a catch-net runoff and minor starting-area widening; the central shortcut was still a shelved proposal. The source gives no historic FIA apex number and does not identify the bridge as the later named Marlboro hairpin.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_1972_rosier_hairpin_named",
+            "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "claim": "Denis Jenkinson explicitly names Rosier hairpin as the final named bend leading to the start/finish line on the 1972 long circuit after a right-hand swerve descending from Thèdes; a specific period name/sequence is attested but not a certified numbered apex.",
+            "supports_apex_numbering": false
           }
         ],
         "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes.",
@@ -1024,6 +1030,15 @@
           "verbatim_count_claim": "more than 50 corners",
           "specific_sequential_turn_numbers": false,
           "relationship_to_archive_48": "different counting conventions; no 1:1 crosswalk"
+        },
+        "period_1972_confirmed_named_landmark": {
+          "name": "Rosier hairpin",
+          "before_start_finish": true,
+          "preceding_locality": "Thèdes",
+          "contemporary_report_url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+          "location_kind": "route_order_only_not_surveyed_apex",
+          "historical_name_attested_in_1972": true,
+          "official_turn_number": null
         }
       },
       "route_scope": {
@@ -1352,11 +1367,12 @@
             "uk": "Назва пов’язана із сусідньою місцевістю Тед; точні назви окремих віражів S-подібної зв’язки й дуги в той період не підтверджені."
           },
           "explanation": {
-            "en": "Beyond the Marlboro hairpin, the original long Charade loop ran through the Thèdes section. The circuit's own historical account describes an S-shaped change of direction, a further curve and the descent here. These are a linked complex, not a certified single FIA-numbered apex.",
-            "uk": "Після шпильки Marlboro старе довге коло Шарада проходило ділянку Тед. Власний історичний огляд автодрому описує тут S-подібну перекладку, наступну дугу й спуск. Це пов'язана секція, а не один підтверджений поворот із номером FIA."
+            "en": "The original 1972 lap passed the village of Thèdes late in the lap: a climb from the valley behind the pits was followed by a right-hand swerve and a descent towards the Rosier hairpin. Denis Jenkinson's contemporary account confirms that broad geography independently of the operator's modern retrospective. It does not say every change of direction here carried the name Thèdes, or assign historic FIA corner numbers.",
+            "uk": "Наприкінці кола 1972 року пілоти проходили повз село Thèdes: після підйому з долини за боксами їх чекала права дуга і спуск до шпильки Rosier. Репортаж Дениса Дженкінсона того часу незалежно підтверджує цю послідовність, описану також у пізнішій історії автодрому. Але він не доводить, що кожен віраж тут називався Thèdes, і не присвоює поворотам номери FIA."
           },
           "source_urls": [
-            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
           "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
           "historical_layout_id": "clermont-ferrand-1",
@@ -1368,7 +1384,7 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", pif-paf, curve and descent after Marlboro.",
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", pif-paf, curve and descent after Marlboro. Motor Sport, Denis Jenkinson, 1972 report, opening lap: climb by the village of Thedes, right-hand swerve and descent to Rosier hairpin.",
           "name_evidence_assessment": {
             "classification": "locality_name_indicated",
             "venue_or_period_name_independently_approved": false,
@@ -1376,6 +1392,16 @@
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
             "needs_independent_human_review": true
+          },
+          "contemporary_1972_account": {
+            "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "attribution": "Denis Jenkinson, Motor Sport, 1972 French Grand Prix race report, start and first lap",
+            "event_year": 1972,
+            "attests_original_long_route": true,
+            "attests_sequential_apex_number": false,
+            "attests_surveyed_position": false,
+            "attested_phrase": "climb by the village of Thedes, then plunge through a right-hand swerve to Rosier hairpin",
+            "period_locality_documented": true
           }
         },
         {
@@ -1386,11 +1412,12 @@
             "uk": "Автодром прямо зазначає, що завершальний поворот названо на честь Луї Розьє, який допоміг запропонувати первісний маршрут Charade до своєї загибелі 1956 року."
           },
           "explanation": {
-            "en": "Rosier is the final named bend before the start-finish line on the historic eight-kilometre course. The venue explicitly says this bend bears Louis Rosier's name and records his role in proposing the original circuit. This establishes the namesake, not a certified 1972 FIA turn number.",
-            "uk": "Rosier — останній іменований поворот перед лінією старту-фінішу на історичній восьмикілометровій трасі. Автодром прямо підтверджує, що віраж носить ім’я Луї Розьє, та описує його участь у створенні маршруту. Це підтверджує походження назви, але не офіційний номер повороту FIA 1972 року."
+            "en": "On Charade's original long lap, Rosier was the hairpin immediately before the start/finish line. Denis Jenkinson named it in his account of the 1972 race, placing it after the descent from Thèdes; the circuit operator separately explains that it honours driver Louis Rosier. Its historical name and broad lap position therefore have two distinct types of evidence. Neither establishes a numbered FIA apex or precise survey coordinates.",
+            "uk": "На первісному довгому колі Charade Rosier була шпилькою безпосередньо перед лінією старту-фінішу. Деніс Дженкінсон назвав її в репортажі з гонки 1972 року й розташував після спуску від Thèdes; сам автодром окремо пояснює, що назва вшановує пілота Луї Розьє. Отже, історичне вживання назви та місце у загальній послідовності підтверджені різними джерелами. Це все ще не номер FIA й не точні координати апекса."
           },
           "source_urls": [
-            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
+            "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/"
           ],
           "source_role": "official_venue_historical_named_bend_not_numbered_fia_map",
           "historical_layout_id": "clermont-ferrand-1",
@@ -1402,14 +1429,25 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #40 \"Louis Rosier, père spirituel de Charade pour l’éternité\" (explicit namesake); #23 for the final-bend position.",
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #40 \"Louis Rosier, père spirituel de Charade pour l’éternité\" (explicit namesake); #23 for the final-bend position. Motor Sport, Denis Jenkinson, 1972 report, start/first lap: Thèdes descent and Rosier hairpin leading to start/finish.",
           "name_evidence_assessment": {
             "classification": "venue_explicit_louis_rosier_namesake",
             "venue_or_period_name_independently_approved": false,
             "origin_authoritatively_attested": true,
             "single_numbered_turn_verified": false,
-            "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "period_specific_original_naming_year_verified": true,
+            "needs_independent_human_review": true,
+            "period_name_evidence_year": 1972
+          },
+          "contemporary_1972_account": {
+            "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "attribution": "Denis Jenkinson, Motor Sport, 1972 French Grand Prix race report, start and first lap",
+            "event_year": 1972,
+            "attests_original_long_route": true,
+            "attests_sequential_apex_number": false,
+            "attests_surveyed_position": false,
+            "attested_phrase": "Rosier hairpin leading to the start/finish line after the descent from Thèdes",
+            "period_name_documented": true
           }
         }
       ],
