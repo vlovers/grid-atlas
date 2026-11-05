@@ -141,6 +141,7 @@ export const candidateHistoricalCornerReviewQueue = [
     source_locator: 'source_locator' in feature && typeof feature.source_locator === 'string' ? feature.source_locator : null,
     source_locator_gap: 'source_locator_gap' in feature ? feature.source_locator_gap : null,
     name_origin: 'name_origin' in feature ? feature.name_origin : null,
+    name_evidence_assessment: 'name_evidence_assessment' in feature ? feature.name_evidence_assessment : null,
     official_turn_number: null,
     geometric_anchor_verified: false as const,
     numbered_apex_verified: false as const,
