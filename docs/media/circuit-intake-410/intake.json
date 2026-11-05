@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "lane": "research_only",
+  "human_approval": false,
+  "publication_allowed": false,
+  "media_rights_approved": false,
+  "source": {
+    "slug": "f1db",
+    "release": "v2026.17.0",
+    "artifact": "f1db-json-splitted.zip",
+    "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8"
+  },
+  "entries": [
+    {
+      "circuit_id": "monaco",
+      "reference_race_id": "1064",
+      "layout_id": "monaco-6",
+      "reference_year": 2022,
+      "candidate_ids": [
+        "research-circuit410-monaco-layout",
+        "research-circuit410-monaco-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "silverstone",
+      "reference_race_id": "1007",
+      "layout_id": "silverstone-8",
+      "reference_year": 2019,
+      "candidate_ids": [
+        "research-circuit410-silverstone-layout",
+        "research-circuit410-silverstone-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "monza",
+      "reference_race_id": "1141",
+      "layout_id": "monza-7",
+      "reference_year": 2025,
+      "candidate_ids": [
+        "research-circuit410-monza-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "suzuka",
+      "reference_race_id": "993",
+      "layout_id": "suzuka-2",
+      "reference_year": 2018,
+      "candidate_ids": [
+        "research-circuit410-suzuka-layout",
+        "research-circuit410-suzuka-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "reference_race_id": "1138",
+      "layout_id": "spa-francorchamps-4",
+      "reference_year": 2025,
+      "candidate_ids": [
+        "research-circuit410-spa-francorchamps-layout",
+        "research-circuit410-spa-francorchamps-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "interlagos",
+      "reference_race_id": "1146",
+      "layout_id": "interlagos-2",
+      "reference_year": 2025,
+      "candidate_ids": [
+        "research-circuit410-interlagos-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "montreal",
+      "reference_race_id": "963",
+      "layout_id": "montreal-6",
+      "reference_year": 2017,
+      "candidate_ids": [
+        "research-circuit410-montreal-layout",
+        "research-circuit410-montreal-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "bahrain",
+      "reference_race_id": "1129",
+      "layout_id": "bahrain-1",
+      "reference_year": 2025,
+      "candidate_ids": [
+        "research-circuit410-bahrain-layout",
+        "research-circuit410-bahrain-photo"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "reference_race_id": "429",
+      "layout_id": "brands-hatch-2",
+      "reference_year": 1986,
+      "candidate_ids": [
+        "research-circuit410-brands-hatch-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "donington",
+      "reference_race_id": "535",
+      "layout_id": "donington-1",
+      "reference_year": 1993,
+      "candidate_ids": [
+        "research-circuit410-donington-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "bugatti",
+      "reference_race_id": "155",
+      "layout_id": "bugatti-1",
+      "reference_year": 1967,
+      "candidate_ids": [
+        "research-circuit410-bugatti-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": [
+        "layout_event_metadata_conflict"
+      ]
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "reference_race_id": "171",
+      "layout_id": "mont-tremblant-1",
+      "reference_year": 1968,
+      "candidate_ids": [
+        "research-circuit410-mont-tremblant-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": [
+        "modern_comparison_not_period_evidence"
+      ]
+    },
+    {
+      "circuit_id": "aida",
+      "reference_race_id": "579",
+      "layout_id": "aida-1",
+      "reference_year": 1995,
+      "candidate_ids": [
+        "research-circuit410-aida-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "ain-diab",
+      "reference_race_id": "75",
+      "layout_id": "ain-diab-1",
+      "reference_year": 1958,
+      "candidate_ids": [
+        "research-circuit410-ain-diab-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "reference_race_id": "214",
+      "layout_id": "clermont-ferrand-1",
+      "reference_year": 1972,
+      "candidate_ids": [
+        "research-circuit410-clermont-ferrand-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "dallas",
+      "reference_race_id": "397",
+      "layout_id": "dallas-1",
+      "reference_year": 1984,
+      "candidate_ids": [
+        "research-circuit410-dallas-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "detroit",
+      "reference_race_id": "364",
+      "layout_id": "detroit-1",
+      "reference_year": 1982,
+      "candidate_ids": [
+        "research-circuit410-detroit-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "pescara",
+      "reference_race_id": "63",
+      "layout_id": "pescara-1",
+      "reference_year": 1957,
+      "candidate_ids": [
+        "research-circuit410-pescara-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "porto",
+      "reference_race_id": "92",
+      "layout_id": "porto-1",
+      "reference_year": 1960,
+      "candidate_ids": [
+        "research-circuit410-porto-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    },
+    {
+      "circuit_id": "sebring",
+      "reference_race_id": "84",
+      "layout_id": "sebring-1",
+      "reference_year": 1959,
+      "candidate_ids": [
+        "research-circuit410-sebring-layout"
+      ],
+      "geometry_scope": "identifier_only_not_period_geometry",
+      "caveats": []
+    }
+  ]
+}
