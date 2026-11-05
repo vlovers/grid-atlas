@@ -1,6 +1,6 @@
 name: Agent governance contract
-# PR checks run for every change, including code-only PRs; path filters can leave
-# required checks pending forever and allow governance checks to be skipped.
+# Required PR checks must run even for code-only changes. Avoid path filters
+# that could leave required checks pending, but cancel superseded PR runs.
 on:
   pull_request:
   push:
@@ -8,6 +8,10 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  # Never cancel a main push or an explicitly requested manual verification.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   governance:
     runs-on: ubuntu-latest
