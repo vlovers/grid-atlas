@@ -3306,7 +3306,7 @@
       ],
       "original_research_document": "DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json",
       "layout_evidence_review": {
-        "archive_turn_count": null,
+        "archive_turn_count": 24,
         "period_layout_year": 1982,
         "crosswalk_status": "1982_layout_distinct_unverified_apex_numbers",
         "evidence": [
@@ -3345,10 +3345,22 @@
             "url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
             "claim": "Contemporary first-hand route walkthrough explicitly follows the riverfront left, Atwater and Woodbridge, Larned, Jefferson/tramlines, tunnel, esses and pit chicane. This supports unnumbered order, not precise FIA apex numbering.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1982_official_race_promoter_turn_count",
+            "url": "https://www.detroitgp.com/event-info/recaps/formula-1",
+            "claim": "Detroit Grand Prix event operator's Formula 1 recap describes the 6 June 1982 race on a 2.59-mile, 17-turn circuit; contemporary Motor Sport's street-by-street walk describes direction changes but does not number each one.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "1982_f1db_layout_bend_count",
+            "url": "https://lapledger.org/circuits/detroit",
+            "claim": "Pinned F1DB detroit-1 explicitly gives 4.168 km and 24 turns; the same page's generic headline says 17 turns. The layout count and headline use incompatible scopes or conventions and cannot be reconciled as a 1:1 apex key.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
-        "layout_length_discrepancy": "RacingCircuits.info labels its 1982 map 2.590 mi / 4.168 km, while Motor Sport's race-database entry reports 2.493 miles; retain distinct source claims without silently changing the layout mapping.",
+        "layout_length_discrepancy": "Detroit Grand Prix promoter reports the actual 1982 course as 2.59 mi and 17 turns; F1DB detroit-1 is 4.168 km with 24 bends. Motor Sport's 1982 race database gives 2.493 mi. Preserve each publisher's figures and turn-counting convention; do not manufacture 24 signed FIA apex positions from a 17-turn event description.",
         "circuit_walk_attribution": {
           "source_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
           "year": 1982,
@@ -3362,6 +3374,52 @@
             "Right-curving riverfront tunnel",
             "Riverside esses and pit-entry chicane"
           ]
+        },
+        "turn_count_source_comparison": [
+          {
+            "source": "F1DB detroit-1 / Lap Ledger layout",
+            "count": 24,
+            "unit": "archival individual bends",
+            "url": "https://lapledger.org/circuits/detroit",
+            "authenticated_1982_fia_numbers": false
+          },
+          {
+            "source": "Detroit Grand Prix promoter's official F1 historical recap",
+            "count": 17,
+            "unit": "1982 organizer-reported course turns",
+            "url": "https://www.detroitgp.com/event-info/recaps/formula-1",
+            "authenticated_1982_fia_numbers": false
+          },
+          {
+            "source": "Lap Ledger venue summary",
+            "count": 17,
+            "unit": "venue-level headline not specific to detroit-1",
+            "url": "https://lapledger.org/circuits/detroit",
+            "authenticated_1982_fia_numbers": false
+          }
+        ],
+        "length_source_comparison": [
+          {
+            "source": "Detroit Grand Prix promoter F1 recap",
+            "value_miles": 2.59,
+            "url": "https://www.detroitgp.com/event-info/recaps/formula-1"
+          },
+          {
+            "source": "F1DB detroit-1 historic layout",
+            "value_km": 4.168,
+            "url": "https://lapledger.org/circuits/detroit"
+          },
+          {
+            "source": "Motor Sport database 1982 race page",
+            "value_miles": 2.493,
+            "url": "https://www.motorsportmagazine.com/database/races/1982-detroit-grand-prix/"
+          }
+        ],
+        "independent_historical_count_adjudication": {
+          "status": "publisher_count_conflict_unresolved",
+          "organizer_turns": 17,
+          "f1db_layout_bends": 24,
+          "certified_fia_turn_number_crosswalk": false
         }
       },
       "route_scope": {
@@ -6233,6 +6291,18 @@
             "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
             "claim": "Period report explicitly describes lefts by rubber tubs, hairpin, hangar right-left, two perimeter rights and wide final 180-degree turn; eight research descriptions are not an authenticated 17-turn numbered map.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "official_formula1_1959_event_date",
+            "url": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+            "claim": "Formula 1 official results identify Sebring GP as 12 December 1959; winner Bruce McLaren. The race classification is not a track geometry or numbered-apex source.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "secondary_reference_date_error",
+            "url": "https://perencz.hu/f1/circuit/sebring/info/",
+            "claim": "The otherwise useful diagram/credit page mistakenly dates Sebring's 1959 Formula 1 World Championship race to 28 March. Use official results for event chronology and keep the linked outline strictly as a geometric research lead.",
+            "supports_apex_numbering": false
           }
         ],
         "layout_version_caveat": "Do not transfer today's numbered Sebring corners into the 1959 airfield configuration solely because both records cite 17 bends.",
@@ -6242,6 +6312,21 @@
           "individually_described_direction_changes": 8,
           "individually_numbered_apexes": 0,
           "notes": "Eight report-derived bending points can be described in source order without asserting they exhaust F1DB's 17 bend count or correspond 1:1 to a numbered 1959 map."
+        },
+        "event_date_authority": {
+          "date": "1959-12-12",
+          "source": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+          "authority": "Formula 1 official race-result date",
+          "winner": "Bruce McLaren",
+          "race_year": 1959,
+          "archive_layout": "sebring-1",
+          "not_numbered_apex_evidence": true
+        },
+        "incorrect_secondary_source_claim": {
+          "url": "https://perencz.hu/f1/circuit/sebring/info/",
+          "issue": "Page claims the 1959 F1 United States Grand Prix at Sebring took place on 28 March 1959; official Formula 1 results date the GP 12 December 1959. Its race-date prose must not be reused as historical event evidence.",
+          "contradicted_by": "https://www.formula1.com/en/results/1959/races/177/united-states/race-result",
+          "do_not_reproduce_march_date": true
         }
       },
       "route_scope": {
