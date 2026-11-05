@@ -64,6 +64,18 @@ Allowed states: `planned` → `claimed` → `research candidate` → `in review`
 - Database mutation tests: use independently verified disposable PostgreSQL; never connect to production or copy credentials to logs.
 - Publication/deployment uncertainty: inspect authoritative origin/GitHub state before any retry; no automatic push/merge/release.
 
+
+## Evidence artifacts, retention and redaction
+
+For each engineering or editorial batch, the parent Issue ledger and final PR handoff must identify the **artifact owner**, exact tested base/head SHA, commands and exit status, environment, CI run URL, artifact identifier/location, retention or expiry date, and reproduction steps. Separate generated screenshots and browser traces from source-to-claim matrices, media-rights decisions and accepted UK/EN editorial records. A CI artifact proves only what the recorded check actually executed; a source citation or image download is not proof of editorial acceptance or licensing.
+
+- Keep sanitized, minimal evidence. Never attach credentials, session tokens, private browser storage, unredacted user data, production database exports, private source material, or sensitive full traces to Issues, PRs, Actions artifacts or screenshots. Review generated files before upload; redact or omit uncertain material rather than publishing it.
+- Record which artifact is authoritative and its retention window. When an artifact expires, is deleted, is inaccessible, or belongs to a stale SHA, mark its evidence **UNAVAILABLE / STALE** and reproduce the check on the current head before relying on it. Do not relabel a missing artifact as PASS based on an old summary.
+- Preserve a durable, sanitized source/provenance register and the editorial acceptance decision independently of short-lived CI logs. Candidate dossiers and unapproved media stay unpublished even when tests are green.
+- On interrupted work, recover the parent Issue, branch and worktree ownership, current PR base/head, artifact status, unresolved review findings and editorial gates before continuing. Do not blindly rerun imports, CI or publication to replace missing evidence.
+
+The required handoff below is the minimum; append artifact owner, location/run ID, retention/expiry, redaction status and reproduction command when evidence exists, or explicitly mark **NOT RUN / NOT RETAINED** with a reason.
+
 ## Required PR handoff
 
 ```markdown
