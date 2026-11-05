@@ -143,3 +143,12 @@ This appendix updates the **research** count from the original 2026-11-02 snapsh
 - [Historic reconstruction acknowledging uncertain chicane positions — The Fastlane](https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html)
 
 This editorial ruling is **not** an independent human approval, a geometric mapping or an authorization to publish.
+
+
+### Charade 1972 — Ferme and marshal-post numbering trap
+
+A dedicated [Charade venue history (#46)](https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/) confirms the original 8.055 km Ferme sequence was an **S: left then right**, opposite a farm, followed by the descent towards Petit Pont. The description is specific to the old circuit and therefore supports the geographic sequence without creating a certified 1972 FIA apex number.
+
+Crucially, that venue text also gives **marshal post #10** on the pre-1989 layout and posts **#16/#17** after the 1989 revision. **Those are marshals' posts, not corner numbers**. Any image showing these signs must not be treated as an official numbered bend chart. Historic photo station numbers are also not bend IDs. The dedicated venue section about Petit Pont discusses later changes to runoff: **do not backdate** post-1989 safety geometry to the 1972 French GP.
+
+Review status: Ferme's venue-sourced bend type and name origin have stronger evidence; **independent placement of every 1972 apex, the 48 vs 51 counting convention, exact map rights and publication authorization remain unresolved**.
