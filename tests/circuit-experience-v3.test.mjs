@@ -469,7 +469,7 @@ test('four historically scoped EN/UK reader openings remain review-only and visi
     assert.ok(opening.source_url.startsWith('https://'));
     for (const locale of ['en','uk']) {
       assert.ok(opening[locale].length > 300, id + ':' + locale);
-      assert.ok(renderCircuitReview(locale, '/review/test').includes(opening[locale].slice(0, 55)), id + ':' + locale);
+      assert.ok(renderCircuitReview(locale, '/review/test').includes(opening[locale].slice(0, 55).replaceAll('&', '&amp;').replaceAll("'", '&#39;')), id + ':' + locale);
     }
   }
   assert.match(renderCircuitReview('en', '/review/test'), /Editorial opening — draft/);
