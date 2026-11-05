@@ -13,7 +13,7 @@
 - Parent Issue / circuit IDs and years / feature outcome:
 - Related or superseded PRs; dependency order:
 - Reserved files, data contracts and route/schema ownership:
-- Target branch + exact base/head SHA for review:
+- Target branch, exact base SHA and head SHA for review:
 - [ ] One coherent, verifiable delivery rather than artificial micro-PRs
 - [ ] Conflicting edits reconciled and evidence refreshed after material rebases
 - [ ] Candidate claims and unverified media remain explicitly unpublished
