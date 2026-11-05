@@ -1039,7 +1039,108 @@
           "location_kind": "route_order_only_not_surveyed_apex",
           "historical_name_attested_in_1972": true,
           "official_turn_number": null
-        }
+        },
+        "venue_11_landmark_route_order": [
+          {
+            "reading_order": 1,
+            "name": "Manson",
+            "feature_kind": "single_bend",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 2,
+            "name": "Gravenoire",
+            "feature_kind": "route_sector",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 3,
+            "name": "Belvédère",
+            "feature_kind": "named_feature_unresolved",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 4,
+            "name": "Jumeaux",
+            "feature_kind": "multi_bend_complex",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 5,
+            "name": "Carrière",
+            "feature_kind": "named_feature_unresolved",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 6,
+            "name": "Champeaux",
+            "feature_kind": "route_sector",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 7,
+            "name": "Ferme",
+            "feature_kind": "multi_bend_complex",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 8,
+            "name": "Petit Pont",
+            "feature_kind": "single_bend",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 9,
+            "name": "Marlboro hairpin",
+            "feature_kind": "single_bend",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 10,
+            "name": "Thèdes",
+            "feature_kind": "multi_bend_complex",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": false,
+            "numbered_apex_verified": false
+          },
+          {
+            "reading_order": 11,
+            "name": "Rosier",
+            "feature_kind": "single_bend",
+            "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+            "source_locator": "#23 Long comme… une belle histoire / original 8.055-km sequence",
+            "historical_name_1972_period_attested": true,
+            "numbered_apex_verified": false
+          }
+        ]
       },
       "route_scope": {
         "en": "1972 long Charade road loop, not the later shortened permanent circuit. Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat and Champeaux are route landmarks; race incidents are separate historical context, not mapped apexes.",
@@ -1060,8 +1161,8 @@
             "uk": "Назва пов’язана з місцевістю Мансон на вулканічному схилі."
           },
           "explanation": {
-            "en": "After the start, the old course climbed for roughly 600 metres to the Manson curve. It set up the plunge towards Gravenoire, making exit balance more important than treating this as an isolated modern corner.",
-            "uk": "Після старту стара траса піднімалася приблизно 600 метрів до дуги Мансон. Вона готувала стрімкий спуск до Гравенуара, тому баланс боліда на виході був важливішим за окремий сучасний номер повороту."
+            "en": "The 600-metre climb after the start delivered cars to the Manson curve before the road fell towards Gravenoire. It was an early warning of how the long Charade lap constantly traded climbing for downhill commitment; the venue names the landmark but not a numbered 1972 apex.",
+            "uk": "Після старту боліди піднімалися приблизно 600 метрів до дуги Manson, а далі дорога падала до Gravenoire. Уже тут довге коло Charade змушувало змінювати ритм між підйомом і спуском; автодром підтверджує орієнтир, але не його номер апекса FIA 1972 року."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1083,7 +1184,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1094,8 +1200,8 @@
             "uk": "Назва походить від вулканічного схилу та спуску Гравенуар."
           },
           "explanation": {
-            "en": "The long Charade lap descended past volcanic cliffs towards the Gravenoire section. The original route ran beside steep drops, unlike the shorter circuit introduced in 1989; this name identifies the historic descent, not one verified numbered apex.",
-            "uk": "На довгому колі Charade траса спускалася повз вулканічні скелі до ділянки Гравенуар. Історична дорога пролягала біля урвищ, на відміну від скороченої конфігурації 1989 року. Назва позначає спуск, а не один підтверджений нумерований апекс."
+            "en": "After Manson came the descent around Gravenoire's volcanic flank. The venue's historic lap account places this section before Belvédère and the Jumeaux; it is a hillside sector, not proof that the whole descent was a single named corner.",
+            "uk": "Після Manson починався спуск уздовж вулканічного схилу Gravenoire. Історичний опис автодрому ставить цю ділянку перед Belvédère та Jumeaux: це гірський сектор, а не доказ, що весь спуск був одним іменованим поворотом."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1117,7 +1223,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1128,8 +1239,8 @@
             "uk": "Автодром також називає цей оглядовий орієнтир Grand Balcon — «великий балкон»."
           },
           "explanation": {
-            "en": "Belvédère followed the Charade pass on the old mountain loop. The name evokes a viewpoint above the surrounding terrain; its position belongs to the pre-1989 road course, and the operator's historical description does not establish a unique FIA turn number.",
-            "uk": "Belvédère йшов після перевалу Charade на старій гірській петлі. Назва нагадує про оглядовий майданчик над навколишньою місцевістю. Це орієнтир конфігурації до 1989 року, але історичний опис автодрому не встановлює окремого номера FIA."
+            "en": "Belvédère, also recalled as the Grand Balcon, followed the Gravenoire descent on the original long lap. Its name evokes a viewpoint across the mountains, but the venue's route recollection does not assign this landmark one individually numbered 1972 racing apex.",
+            "uk": "Після спуску Gravenoire на старому довгому колі з’являвся Belvédère, який також називали Grand Balcon. Назва нагадує про панорамну точку серед гір, але опис маршруту не встановлює окремого пронумерованого апекса за 1972 рік."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1151,7 +1262,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1162,8 +1278,8 @@
             "uk": "Jumeaux французькою буквально означає «близнюки»; обставини появи назви не задокументовані."
           },
           "explanation": {
-            "en": "The operator places the Jumeaux bends within the Gravenoire descent, between volcanic rock and a drop towards Royat. They form a named sequence rather than a licence to assign one modern number to every change of direction.",
-            "uk": "За описом автодрому віражі Jumeaux лежали на спуску Гравенуар між вулканічною скелею та урвищем у бік Руая. Це поіменована зв’язка, але вона не дає підстав присвоювати сучасний номер кожній зміні напрямку."
+            "en": "The venue remembers the Jumeaux as a pair of bends on the Gravenoire side, between Belvédère and Carrière. Their French name translates as 'twins', but that translation alone does not reveal who first used the name or how each bend was numbered during the 1972 Grand Prix.",
+            "uk": "Автодром згадує Jumeaux як пару віражів на боці Gravenoire, між Belvédère та Carrière. Французька назва означає «близнюки», проте сам переклад не пояснює, хто вперше так назвав повороти й як кожен із них нумерували у 1972 році."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1185,7 +1301,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1196,8 +1317,8 @@
             "uk": "Carrière французькою означає «кар’єр»; зв’язок назви з конкретним кар’єром ще потрібно підтвердити."
           },
           "explanation": {
-            "en": "The old route reached Carrière after Belvédère and Jumeaux and before the banking near the road to Royat. This relative sequence is recorded by the venue, but the available prose is not a numbered map of individual apexes.",
-            "uk": "На старому колі Carrière йшов після Belvédère та Jumeaux і перед віражем із нахилом полотна поблизу дороги на Руая. Таку послідовність підтверджує автодром, але текстовий опис не замінює нумеровану карту окремих апексів."
+            "en": "In the official account of the original eight-kilometre course, Carrière followed the Jumeaux and preceded the extraordinary banking near the Royat road. The word means 'quarry' in French, but no cited period document proves which quarry, if any, gave this particular stretch its name.",
+            "uk": "На первісному восьмикілометровому маршруті Carrière йшла після Jumeaux перед незвичайним нахиленим віражем біля дороги на Royat. Французькою назва означає «кар’єр», але наявні джерела не доводять, який саме кар’єр — якщо він узагалі був — дав їй ім’я."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1219,7 +1340,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1230,8 +1356,8 @@
             "uk": "Назва походить від сусідньої місцевості Шампо."
           },
           "explanation": {
-            "en": "Champeaux marked the start of the old lap's demanding closing section, before the Ferme S-bends and Petit Pont. Its role in the historic sequence is clear, but the shortened post-1989 connection must not be projected onto the 1972 Grand Prix route.",
-            "uk": "Champeaux позначав початок складної фінальної частини старого кола перед S-подібною зв’язкою Ferme та Petit Pont. Його місце в історичній послідовності зрозуміле, але нову перемичку після 1989 року не можна переносити на трасу Гран-прі 1972 року."
+            "en": "Champeaux signalled the busy closing part of the long Charade lap, after the banking and return climb. The Ferme S and Petit Pont came next. This is a locality in the road sequence, not a certificate that every small change of direction here had a separate Charade corner name.",
+            "uk": "Champeaux позначала початок насиченої завершальної частини довгого кола після нахиленого віражу та зворотного підйому. Далі були зв’язка Ferme й Petit Pont. Це місцевість у послідовності маршруту, а не підтвердження, що кожен малий вигин дороги мав окрему історичну назву."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1253,7 +1379,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1264,8 +1395,8 @@
             "uk": "Ferme означає «ферма»; автодром пояснює, що S-подібна зв’язка проходила навпроти ферми."
           },
           "explanation": {
-            "en": "On the old 8.055 km Charade route, the Ferme S swung left then immediately right above lower Champeaux before the descent to Petit Pont. A farm stood opposite the bends and gave the place its name. The venue's historical account also mentions marshal post 10 here — a marshal-post number, not a numbered racing corner.",
-            "uk": "На старому маршруті Charade завдовжки 8,055 км зв’язка Ferme спочатку повертала ліворуч, а відразу потім праворуч над нижньою частиною Шампо перед спуском до Petit Pont. Навпроти стояла ферма, від якої й походить назва. Історія автодрому згадує тут пост маршалів № 10 — це номер поста, а не гоночного повороту."
+            "en": "Near Champeaux, the old road linked a left bend straight into a right: the Ferme S. A farm stood opposite the sequence and explains the name, according to Charade's own dedicated history. That source also mentions marshal post 10 — an observation post, not a 1972 FIA turn number.",
+            "uk": "Біля Champeaux стара дорога з’єднувала лівий віраж одразу з правим — так утворювалася S-подібна зв’язка Ferme. Навпроти стояла ферма, від якої, за спеціальним історичним матеріалом Charade, й походить назва. Там згадано пост маршалів № 10 — це спостережний пункт, а не поворот FIA 1972 року."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
@@ -1290,7 +1421,12 @@
             "origin_authoritatively_attested": true,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1301,8 +1437,8 @@
             "uk": "Petit Pont означає «малий міст»; під ним протікає струмок Артьєр."
           },
           "explanation": {
-            "en": "The descent to Petit Pont came after the Ferme S-bends and preceded a short climb. The named bridge and stream provide unusually tangible evidence for the origin of a Charade corner name, although the 1972 apex number remains unverified.",
-            "uk": "Спуск до Petit Pont ішов після S-подібної зв’язки Ferme й перед коротким підйомом. Міст і струмок дають конкретне підтвердження походження назви віражу Charade, хоча номер його апекса в 1972 році досі не перевірений."
+            "en": "From Ferme the old course dropped to Petit Pont before a brief rise towards the Marlboro hairpin. The small bridge crosses the Artière waterway, an unusually tangible clue to the place name. The venue also records later safety changes here; modern runoff must not be backdated to the 1972 race.",
+            "uk": "Від Ferme старе коло спускалося до Petit Pont, а потім коротко піднімалося до шпильки Marlboro. Малий міст перетинає струмок Артьєр — рідкісний випадок, коли назву можна буквально побачити на місцевості. Автодром згадує й пізніші зміни безпеки: сучасну зону вильоту не можна переносити на гонку 1972 року."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1325,7 +1461,12 @@
             "origin_authoritatively_attested": true,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1333,8 +1474,8 @@
           "name": "Marlboro hairpin",
           "name_origin": null,
           "explanation": {
-            "en": "The venue's retrospective places the Marlboro hairpin after the climb beyond Petit Pont on the old long circuit. The name is historically attested in that sequence, but its naming origin and a period FIA apex number have not been independently established.",
-            "uk": "В історичному описі автодрому шпилька Marlboro розташована після підйому за Petit Pont на старій довгій трасі. Назва засвідчена для цієї послідовності, але її походження та номер апекса FIA відповідної епохи ще не підтверджені."
+            "en": "After Petit Pont, a short climb led into the hairpin called Marlboro in the venue's retrospective. Its road position is clear in that account, but the report of the 1972 French Grand Prix does not establish when this commercial-looking name first entered use. Nor does it prove that a bridge removed before the 1972 event stood at this hairpin.",
+            "uk": "Після Petit Pont короткий підйом виводив до шпильки, яку в пізнішій історії автодрому названо Marlboro. Її місце в загальному маршруті зрозуміле, однак репортаж Гран-прі 1972 року не пояснює, коли з’явилася ця назва. Так само він не доводить, що демонтований перед тією гонкою міст стояв саме тут."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/"
@@ -1356,7 +1497,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           }
         },
         {
@@ -1367,8 +1513,8 @@
             "uk": "Назва пов’язана із сусідньою місцевістю Тед; точні назви окремих віражів S-подібної зв’язки й дуги в той період не підтверджені."
           },
           "explanation": {
-            "en": "The original 1972 lap passed the village of Thèdes late in the lap: a climb from the valley behind the pits was followed by a right-hand swerve and a descent towards the Rosier hairpin. Denis Jenkinson's contemporary account confirms that broad geography independently of the operator's modern retrospective. It does not say every change of direction here carried the name Thèdes, or assign historic FIA corner numbers.",
-            "uk": "Наприкінці кола 1972 року пілоти проходили повз село Thèdes: після підйому з долини за боксами їх чекала права дуга і спуск до шпильки Rosier. Репортаж Дениса Дженкінсона того часу незалежно підтверджує цю послідовність, описану також у пізнішій історії автодрому. Але він не доводить, що кожен віраж тут називався Thèdes, і не присвоює поворотам номери FIA."
+            "en": "The long lap climbed beside the village of Thèdes and then turned downhill towards Rosier. Denis Jenkinson's eyewitness 1972 race report independently describes the approach and the right-hand swerve. The venue's later account adds a pif-paf and curve; neither text defines exact FIA numbers for all those movements.",
+            "uk": "На довгому колі машини підіймалися біля села Thèdes, а потім повертали вниз до Rosier. Репортаж Дениса Дженкінсона з гонки 1972 року незалежно описує під’їзд і праву дугу. Пізніший текст автодрому додає pif-paf та ще одну криву; жодне джерело не визначає точних номерів FIA для всіх цих рухів."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
@@ -1391,7 +1537,12 @@
             "origin_authoritatively_attested": false,
             "single_numbered_turn_verified": false,
             "period_specific_original_naming_year_verified": false,
-            "needs_independent_human_review": true
+            "needs_independent_human_review": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": false,
+            "retroactive_period_name_risk": true,
+            "numbered_apex_crosswalk_available": false
           },
           "contemporary_1972_account": {
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
@@ -1412,8 +1563,8 @@
             "uk": "Автодром прямо зазначає, що завершальний поворот названо на честь Луї Розьє, який допоміг запропонувати первісний маршрут Charade до своєї загибелі 1956 року."
           },
           "explanation": {
-            "en": "On Charade's original long lap, Rosier was the hairpin immediately before the start/finish line. Denis Jenkinson named it in his account of the 1972 race, placing it after the descent from Thèdes; the circuit operator separately explains that it honours driver Louis Rosier. Its historical name and broad lap position therefore have two distinct types of evidence. Neither establishes a numbered FIA apex or precise survey coordinates.",
-            "uk": "На первісному довгому колі Charade Rosier була шпилькою безпосередньо перед лінією старту-фінішу. Деніс Дженкінсон назвав її в репортажі з гонки 1972 року й розташував після спуску від Thèdes; сам автодром окремо пояснює, що назва вшановує пілота Луї Розьє. Отже, історичне вживання назви та місце у загальній послідовності підтверджені різними джерелами. Це все ще не номер FIA й не точні координати апекса."
+            "en": "The last named hairpin before Charade's start-finish line was Rosier. Denis Jenkinson called it that in his contemporary 1972 report; the operator independently explains it was named after Louis Rosier, a driver who helped inspire the circuit. We know the name and where it belongs in the lap, not its precise surveyed apex or an authenticated turn number.",
+            "uk": "Останньою іменованою шпилькою перед старт-фінішною прямою Charade була Rosier. Деніс Дженкінсон уживав цю назву в репортажі 1972 року, а автодром окремо пояснює її зв’язок із Луї Розьє — гонщиком, який допоміг задумати трасу. Ми знаємо назву й місце віражу в послідовності кола, але не точні координати апекса та підтверджений номер FIA."
           },
           "source_urls": [
             "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
@@ -1439,7 +1590,12 @@
             "needs_independent_human_review": true,
             "period_name_evidence_year": 1972,
             "period_attestation_year": 1972,
-            "first_ever_use_date_unknown": true
+            "first_ever_use_date_unknown": true,
+            "venue_historical_route_attested": true,
+            "venue_route_source_locator": "Circuit de Charade / Charade dans le rétro #23, original 8.055 km named-landmark sequence",
+            "period_1972_source_specific_name_attested": true,
+            "retroactive_period_name_risk": false,
+            "numbered_apex_crosswalk_available": false
           },
           "contemporary_1972_account": {
             "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
