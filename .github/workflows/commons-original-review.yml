@@ -2,12 +2,23 @@ name: Commons originals research preview
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     paths:
       - '.github/workflows/commons-original-review.yml'
       - 'scripts/preview-commons-originals.mjs'
       - 'docs/media/commons-original-evidence.json'
       - 'docs/media/verified-original-observations.json'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/commons-original-review.yml'
+      - 'scripts/preview-commons-originals.mjs'
+      - 'docs/media/commons-original-evidence.json'
+      - 'docs/media/verified-original-observations.json'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
