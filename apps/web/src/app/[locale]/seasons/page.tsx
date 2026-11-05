@@ -34,7 +34,7 @@ export default async function Seasons() {
         <nav className={styles.eraJump} aria-label={a.decade}>{decades.map(({ decade }) => <a href={`#decade-${decade}`} key={decade}>{decade}{locale === 'uk' ? '-ті' : 's'}</a>)}</nav>
         {decades.map(({ decade, years }) => <section id={`decade-${decade}`} className={styles.decade} key={decade} aria-labelledby={`decade-title-${decade}`}>
           <h3 id={`decade-title-${decade}`}>{decade}<small>{years.length} {t('seasons')}</small></h3>
-          <div className={styles.yearLinks}>{years.map(year => <Link key={year} href={`/seasons/${year}`}>{year}<span aria-hidden="true">↗</span></Link>)}</div>
+          <div className={styles.yearLinks}>{years.map(year => <Link key={year} href={`/seasons/${year}`} prefetch={false}>{year}<span aria-hidden="true">↗</span></Link>)}</div>
         </section>)}
       </section>
     </> : <p>{t('noSeasons')}</p>}

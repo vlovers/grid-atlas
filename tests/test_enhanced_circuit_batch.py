@@ -38,7 +38,7 @@ class EnhancedCircuitBatchTests(unittest.TestCase):
         values=json.loads(DATA.read_text(encoding="utf8"))
         by_id={item["id"]:item for item in values}
         exact_results={
-            "interlagos":"/en/results/1973/races/315/brazil/race-result",
+            "interlagos":"/en/results/1975/races/345/brazil/race-result",
             "zandvoort":"/en/results/1952/races/115/netherlands/race-result",
             "buenos-aires":"/en/results/1955/races/135/argentina/race-result",
             "kyalami":"/en/results/1967/races/244/south-africa/race-result",
@@ -46,6 +46,10 @@ class EnhancedCircuitBatchTests(unittest.TestCase):
         }
         for circuit_id, path in exact_results.items():
             self.assertEqual(urlsplit(by_id[circuit_id]["source"]).path, path)
+        self.assertEqual(
+            urlsplit(by_id["interlagos"]["background_source_url"]).path,
+            "/en/results/1973/races/315/brazil/race-result",
+        )
         for item in values:
             path=urlsplit(item["source"]).path
             self.assertNotEqual(path,"/en/racing/2026/bahrain")

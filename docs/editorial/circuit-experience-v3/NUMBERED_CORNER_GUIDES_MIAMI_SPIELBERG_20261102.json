@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "review_status": "independent_review_pending",
+  "publication_authorized": false,
+  "media_policy": "External FIA map links only; F1DB circuit SVG author Jules Roy, CC-BY-4.0, unchanged",
+  "guides": [
+    {
+      "circuit_id": "miami",
+      "layout_id": "miami-1",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 19,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_miami_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_zone_emergency_exits_and_red_zones_.pdf",
+        "names": "https://www.formula1.com/en/racing/2025/miami",
+        "race": "https://api.fia.com/news/f1-piastri-wins-miami-grand-prix-ahead-norris-and-russell"
+      },
+      "sections": [
+        {
+          "id": "miami-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 is a major braking opportunity after the start-finish straight. In the 2025 race, Verstappen locked up while leading and Norris tried to draw alongside before the opening sequence became crowded.",
+            "uk": "Перший — важлива зона гальмування після стартової прямої. У гонці 2025 року Ферстаппен заблокував колесо, а Норріс спробував зрівнятися з ним перед тісною початковою зв'язкою."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names",
+            "miami-2025-race"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "The second bend follows almost immediately, so a late move into Turn 1 can leave the car out of position. Drivers must regain a stable line rather than simply accelerate at any cost.",
+            "uk": "Другий починається майже відразу, тому пізня атака першого може залишити машину на невдалій траєкторії. Потрібно відновити стабільну лінію, а не прискорюватися за будь-яку ціну."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 finishes the opening sequence and begins the transition towards Miami's faster sweep. A driver who has kept the car tidy through the first two corners can build speed here.",
+            "uk": "Третій завершує початкову зв'язку й переводить коло до швидшої дуги Маямі. Хто чисто пройшов перші два, може раніше набирати швидкість саме тут."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 starts a flowing section rather than a conventional slow street corner. The challenge is to maintain a stable front end while preparing for the next direction change in quick succession.",
+            "uk": "Четвертий відкриває плавну швидкісну секцію, а не типову повільну міську шпильку. Потрібно втримати передню вісь стабільною перед швидкою наступною зміною напрямку."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 continues the high-speed opening rhythm. It rewards a clean, progressive steering input, because excessive tyre scrub makes it harder to keep the car planted through the following bends.",
+            "uk": "П'ятий продовжує швидкий ритм початку кола. Плавний рух кермом важливий: зайве ковзання шин ускладнить утримання боліда в наступних дугах."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 links into the next sweeping change. The car spends little time travelling straight, so drivers manage lateral load across the whole sequence rather than treating each apex as a separate event.",
+            "uk": "Шостий переходить у наступну плавну перекладку. Болід майже не їде прямо, тому пілоти керують боковим навантаженням усієї зв'язки, а не кожним апексом окремо."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 is part of the extended flowing first sector. A small mistake at the previous bend can push the car off line here, where recovering without losing speed is difficult.",
+            "uk": "Сьомий входить до довгої плавної секції першого сектору. Невелика помилка попереднього віражу може виштовхнути болід із траєкторії, а повернути швидкість тут складно."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 brings the early high-speed sequence towards its end. The driver wants a controlled exit that preserves momentum into the following portion of the lap instead of an unnecessary steering correction.",
+            "uk": "Восьмий наближає до завершення ранньої швидкої зв'язки. Пілот прагне контрольованого виходу зі збереженням темпу, а не зайвого коригування керма перед наступною частиною кола."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t9",
+          "numbers": [
+            9
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is the transition after the flowing opening bends. The change of rhythm matters: the car must remain balanced as the circuit leads towards the heavier braking opportunity at Turn 11.",
+            "uk": "Дев'ятий — перехід після плавних стартових віражів. Зміна ритму важлива: болід має залишатися стабільним на підході до сильнішого гальмування перед одинадцятим."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 sets up the run into the slower Turn 11. Drivers cannot use the entire road indiscriminately on exit; they need to position the car for the next major braking and traction zone.",
+            "uk": "Десятий готує підхід до повільнішого одинадцятого. Не можна бездумно використати всю ширину дороги на виході: потрібне правильне положення перед наступною зоною гальмування й розгону."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t11",
+          "numbers": [
+            11
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 11 is a recognised overtaking point at Miami. The driver slows sharply, rotates the car and tries to launch cleanly into the next section; an ambitious inside attack can cost exit traction.",
+            "uk": "Одинадцятий — відоме місце для обгонів у Маямі. Пілот сильно сповільнюється, розвертає машину й намагається чисто прискоритися; смілива атака зсередини може коштувати зчеплення на виході."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t12",
+          "numbers": [
+            12
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 12 starts the approach towards Miami's unusual elevated section. A stable exit matters because the road soon rises and changes direction around the stadium's access roads and flyovers.",
+            "uk": "Дванадцятий відкриває підхід до незвичної ділянки з перепадами висот. Важливий стабільний вихід: далі дорога піднімається й змінює напрямок біля під'їздів до стадіону та естакад."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t13",
+          "numbers": [
+            13
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 13 begins the elevation-change sequence that distinguishes this temporary circuit. The approach is not level, so the driver must prepare for the uphill chicane at Turns 14 and 15.",
+            "uk": "Тринадцятий починає секцію перепадів висот, що вирізняє тимчасову трасу. Підхід не плаский, тому потрібно підготуватися до шикани на підйомі в поворотах 14 і 15."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t14",
+          "numbers": [
+            14
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 14 is the uphill entry to Miami's slow chicane. The crest can lighten the car just when steering precision is needed; taking too much kerb risks disturbing the line for Turn 15.",
+            "uk": "Чотирнадцятий — вхід на підйомі до повільної шикани Маямі. На гребені болід розвантажується саме тоді, коли потрібна точність; надто агресивний поребрик псує п'ятнадцятий."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t15",
+          "numbers": [
+            15
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 15 is the second part of the chicane, after the uphill approach. The road drops away on exit, so drivers must wait for a settled car before accelerating through the following bend.",
+            "uk": "П'ятнадцятий — друга частина шикани після підйому. На виході дорога спускається, тому перед розгоном через наступний віраж потрібно стабілізувати машину."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t16",
+          "numbers": [
+            16
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 16 completes the uneven chicane complex under the flyovers. A clean exit matters disproportionately because the following long straight gives every small traction advantage time to grow.",
+            "uk": "Шістнадцятий завершує нерівну зв'язку під естакадами. Чистий вихід особливо важливий: наступна довга пряма збільшує кожну невелику перевагу в розгоні."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t17",
+          "numbers": [
+            17
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 17 is the major braking zone after Miami's long back straight and one of its best passing places. Drivers can attack late, but a deep entry compromises the slower final sequence.",
+            "uk": "Сімнадцятий — головна зона гальмування після довгої задньої прямої й одне з найкращих місць для обгону. Пізня атака можлива, але надто глибокий вхід псує повільнішу фінальну зв'язку."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t18",
+          "numbers": [
+            18
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 18 follows the heavy braking at Turn 17. The driver must quickly reorient the car and preserve the racing line, because the last corner determines acceleration back onto the main straight.",
+            "uk": "Вісімнадцятий іде одразу після сильного гальмування сімнадцятого. Потрібно швидко змінити напрямок і зберегти траєкторію: останній віраж визначає розгін на стартову пряму."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "miami-t19",
+          "numbers": [
+            19
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 19 is the final bend of the 5.412-kilometre Miami lap. Smooth throttle application is more valuable than a dramatic apex: the car needs maximum exit speed for the long start-finish run.",
+            "uk": "Дев'ятнадцятий завершує коло Маямі завдовжки 5,412 км. Плавний газ корисніший за ефектний апекс: боліду потрібна максимальна швидкість виходу на довгу стартову пряму."
+          },
+          "sources": [
+            "miami-map",
+            "miami-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    },
+    {
+      "circuit_id": "spielberg",
+      "layout_id": "spielberg-3",
+      "numbering_year": 2025,
+      "names_as_of": 2025,
+      "numbered_turns": 10,
+      "review_status": "independent_review_pending",
+      "sources": {
+        "map": "https://www.fia.com/system/files/decision-document/2025_spielberg_event_-_circuit_map_-_spielberg_2025.pdf",
+        "names": "https://www.formula1.com/en/racing/2025/austria"
+      },
+      "sections": [
+        {
+          "id": "spielberg-t1",
+          "numbers": [
+            1
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 1 is a medium-speed right after the start-finish straight and the first major braking point. A clean exit matters because the next uphill acceleration zone is long and steep.",
+            "uk": "Перший — середньошвидкісний правий після стартової прямої й перша серйозна зона гальмування. Чистий вихід важливий через довгий крутий розгін на підйомі далі."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t2",
+          "numbers": [
+            2
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 2 is a shallow kink on the uphill straight, usually taken at full throttle. The FIA still numbers it, but engineers often treat the run as one continuous acceleration zone towards Turn 3.",
+            "uk": "Другий — плавний перегин на висхідній прямій, який зазвичай проходять на повному газу. FIA дає йому номер, хоча інженери часто вважають цю ділянку безперервним розгоном до третього."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t3",
+          "numbers": [
+            3
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 3 is the tight uphill right-hander and one of Spielberg's clearest overtaking opportunities. Braking begins after a long climb; drivers need a good exit for the next acceleration run.",
+            "uk": "Третій — тісний правий віраж наприкінці підйому й одне з найкращих місць для обгонів у Шпільберзі. Після довгого розгону важливо загальмувати й чисто вийти на наступну пряму."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t4",
+          "numbers": [
+            4
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 4 is another sharp right-hand braking zone after the following straight. The approach is bumpy, so locking a tyre or running wide can spoil the transition into the downhill half of the lap.",
+            "uk": "Четвертий — ще одна різка права зона гальмування після прямої. Підхід нерівний, тому блокування колеса чи широкий вихід псують перехід до другої половини кола на спуску."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t5",
+          "numbers": [
+            5
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 5 is a fast kink as the circuit begins to descend. It is usually not a heavy-braking corner, but it sets the car's position for the more committed bends that follow.",
+            "uk": "П'ятий — швидкий перегин на початку спуску. Зазвичай він не потребує сильного гальмування, проте визначає положення боліда перед складнішими швидкісними дугами далі."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t6",
+          "numbers": [
+            6
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 6 asks for a more deliberate line as the downhill section gathers pace. The driver needs to keep the tyres planted while preparing the next change of direction through Turn 7.",
+            "uk": "Шостий вимагає точнішої траєкторії, коли швидкісна секція на спуску набирає темп. Пілот має втримати зчеплення й підготувати наступну перекладку через сьомий."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t7",
+          "numbers": [
+            7
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 7 belongs to the fast downhill sequence and rewards confidence in the car's balance. A slide here can ruin the following bend, where the circuit continues to fall away.",
+            "uk": "Сьомий входить до швидкої секції на спуску й винагороджує впевненість у балансі машини. Ковзання тут псує наступну дугу, де траса й далі спускається."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t8",
+          "numbers": [
+            8
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 8 is a gentle, often flat-out bend before the more demanding final corners. The FIA map numbers it even though drivers may not treat it as a separate braking event.",
+            "uk": "Восьмий — плавний перегин перед складнішими фінальними поворотами, який часто проходять без скидання газу. На схемі FIA він має номер, хоча окремого гальмування зазвичай немає."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t9",
+          "numbers": [
+            9
+          ],
+          "name": "Rindt",
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 9 is the fast Rindt right-hander, named for Jochen Rindt, Austria's first Formula 1 world champion. It demands commitment near the track edge and careful preparation for the final Turn 10.",
+            "uk": "Дев'ятий — швидкий правий Rindt, названий на честь Йохена Ріндта, першого австрійського чемпіона Формули-1. Він вимагає сміливості біля межі траси й точного підходу до останнього десятого."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        },
+        {
+          "id": "spielberg-t10",
+          "numbers": [
+            10
+          ],
+          "name": null,
+          "aliases": [],
+          "explanation": {
+            "en": "Turn 10 finishes the short Red Bull Ring lap with a fast right-hand exit. The driver wants clean traction onto the pit straight; the 2025 FIA map places the final DRS activation 106 metres after the corner.",
+            "uk": "Десятий завершує коротке коло Red Bull Ring швидким правим виходом. Потрібне чисте зчеплення на стартовій прямій; за схемою FIA 2025 року остання зона DRS починається через 106 метрів."
+          },
+          "sources": [
+            "spielberg-map",
+            "spielberg-names"
+          ],
+          "confirmation_status": "source_checked_ai"
+        }
+      ]
+    }
+  ]
+}

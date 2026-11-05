@@ -157,3 +157,13 @@ The circuit pages have 160 pinned SVG layout outlines from F1DB v2026.17.0, cred
 The 23 October [Visual Storytelling V2 sprint](docs/design/visual-storytelling-v2/README.md) unifies driver/constructor participation calendars, adjacent-season changes and exact race evidence. Image archives on driver, constructor and circuit pages use the existing independent rights gate; no real photographic asset is approved. See the [current sprint audit and release blockers](docs/sprint-audit-2026-10-23.md) and [approved imagery workflow](docs/media/approved-imagery-workflow.md).
 
 The [unified archive experience](docs/design/unified-archive/README.md) extends the existing editorial design across catalogues, seasons, circuits and race records. The media foundation now binds historical context and explicit AI provenance to independent approval; it does not publish a photographic pilot.
+
+## Circuit editorial branch status
+
+The historical circuit manuscripts in PR #395 are **research drafts**, not approved or
+published content. The separately gated bilingual circuit reader is tracked in
+PR #398 (superseding the earlier PR #359 reference); a green CI result does not
+constitute editorial approval. Individual historical turn identities, period
+layouts, bilingual claims, and media permissions require evidence review before
+release. See `docs/editorial/circuit-experience-v3/` for research and acceptance
+gates. Do not treat BATCH_01/02 layout notes as independently verified sources.
