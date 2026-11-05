@@ -719,8 +719,8 @@
             "uk": "Прокол Еймона на дорожньому колі"
           },
           "description": {
-            "en": "Chris Amon led from pole until a puncture forced a stop, allowing Jackie Stewart through to victory. The event is a useful example of how Charade's rough road edges influenced the actual race, though it does not certify a particular numbered bend.",
-            "uk": "Кріс Еймон лідирував із поулу, але прокол змусив його заїхати в бокси, і перемогу здобув Джекі Стюарт. Це показує, як узбіччя Charade впливали на хід гонки, проте саме по собі не доводить номер конкретного повороту."
+            "en": "Chris Amon led much of the 1972 French Grand Prix in his Matra, until a left-front puncture forced a pit stop around lap 20. Jackie Stewart took the lead; Amon charged back to finish third. On Charade's narrow hillside roads, stones thrown from the edges were a threat to tyres and to drivers. The contemporary report confirms these race events, but it does not locate the puncture at any individually numbered corner.",
+            "uk": "Кріс Еймон довго лідирував на Гран-прі Франції 1972 року за кермом Matra, аж поки приблизно на 20-му колі прокол лівої передньої шини не змусив його зупинитися. Джекі Стюарт вийшов уперед, а Еймон прорвався назад до третього місця. На вузьких дорогах Charade камінці з узбіч загрожували і шинам, і пілотам. Репортаж того часу підтверджує ці події, але не прив’язує прокол до певного пронумерованого віражу."
           },
           "reading_order": 2,
           "turn_numbers": null,
@@ -858,8 +858,8 @@
             "uk": "Carrière та віраж біля Royat"
           },
           "description": {
-            "en": "The original course continued past Carrière and a banked section near the Royat road. These details give the mountain lap a distinct personality, but the period route still needs a separately authenticated chart before every bend can be numbered.",
-            "uk": "Старе коло проходило повз Carrière та віраж із нахилом полотна біля дороги на Royat. Такі деталі роблять гірський маршрут упізнаваним, але для нумерації кожного повороту все одно потрібна окремо підтверджена схема того часу."
+            "en": "After Carrière, the old loop reached a banked section by the road to Royat, according to Charade's own historic route description. That banking was a real part of the old eight-kilometre course, not the modern four-kilometre circuit. The source establishes the route landmark; it neither proves why the road section was named Royat nor supplies a 1972 FIA apex number.",
+            "uk": "Після Carrière стара траса виходила до нахиленої ділянки біля дороги на Royat — саме так її описує історія автодрому Charade. Цей віраж із нахилом був частиною довгого восьмикілометрового кола, а не сучасної чотирикілометрової траси. Джерело підтверджує орієнтир на маршруті, але не доводить походження назви Royat і не дає номера апекса FIA за 1972 рік."
           },
           "turn_numbers": null,
           "source_urls": [
@@ -993,12 +993,38 @@
             "url": "https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/",
             "claim": "Operator history verifies Ferme's left-right S, farm etymology and pre-1989 marshal post #10; marshal-post numbers are not turn numbers.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "contemporary_1972_safety_changes",
+            "url": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+            "claim": "Firsthand 1972 GP report describes removal of a suspect bridge at an unidentified tight hairpin, creation of a catch-net runoff and minor starting-area widening; the central shortcut was still a shelved proposal. The source gives no historic FIA apex number and does not identify the bridge as the later named Marlboro hairpin.",
+            "supports_apex_numbering": false
           }
         ],
         "discrepancy_resolution": "Retain F1DB 48 as archive count and venue-history 51 as a competing physical bend description; do not invent three additional corners or index 1972 FIA apexes.",
         "photo_index_is_turn_numbering": false,
         "count_discrepancy": "F1DB clermont-ferrand-1 lists 48; circuit operator historic account lists 51. Photo-walk numbers are camera locations, not a means of reconciling the difference.",
-        "marshal_post_numbering_is_apex_numbering": false
+        "marshal_post_numbering_is_apex_numbering": false,
+        "pre_1972_event_changes": {
+          "period_source": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+          "race_date": "1972-07-02",
+          "reported_changes": [
+            "An unsafe bridge at a tight hairpin had been removed before the 1972 event.",
+            "A runoff area with catch nets had been constructed.",
+            "Start-area road widened slightly.",
+            "Proposed central link road halving the long course was discussed but not built for the 1972 GP."
+          ],
+          "unlocated_hairpin": true,
+          "apex_numbers_identified": false,
+          "do_not_equate_with_named_marlboro_hairpin": true,
+          "do_not_project_1989_shortened_layout_backwards": true
+        },
+        "contemporary_1972_bend_count_statement": {
+          "source": "https://www.motorsportmagazine.com/archive/article/august-1972/50/5th-grand-prix-of-france/",
+          "verbatim_count_claim": "more than 50 corners",
+          "specific_sequential_turn_numbers": false,
+          "relationship_to_archive_48": "different counting conventions; no 1:1 crosswalk"
+        }
       },
       "route_scope": {
         "en": "1972 long Charade road loop, not the later shortened permanent circuit. Manson, Gravenoire, Belvédère, Jumeaux, Carrière, Royat and Champeaux are route landmarks; race incidents are separate historical context, not mapped apexes.",
@@ -1858,6 +1884,12 @@
             "url": "https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html",
             "claim": "The historical reconstruction explicitly warns that locations of the chicanes are uncertain without better aerial photographs. Its diagram cannot authenticate each provisional apex.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1984_period_definitive_vs_provisional_map_leads",
+            "url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "claim": "Historic map bibliography separately identifies a definitive circuit diagram in Rombo #9 (150), 28 February 1984 p13, and a provisional map in Rombo #12 (153), 20 March p12. A published date alone is not proof either was used without changes on race day.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -1889,7 +1921,28 @@
           "visual_evidence_kind": "later_historical_reconstruction",
           "supports_apex_numbering": false,
           "reuse_permission_confirmed": false
-        }
+        },
+        "contemporary_map_identification_leads": [
+          {
+            "publication": "Rombo (Italian magazine), issue 9 (150), page 13",
+            "date": "1984-02-28",
+            "source_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "archivist_description": "Definitive circuit of Dallas GP 1984",
+            "map_bytes_reviewed": false,
+            "period_fia_numbering_verified": false,
+            "image_reuse_rights_approved": false
+          },
+          {
+            "publication": "Rombo (Italian magazine), issue 12 (153), page 12",
+            "date": "1984-03-20",
+            "source_url": "https://www.gdecarli.it/php2/circuit.php?var1=1993&var2=1",
+            "archivist_description": "Provisional circuit, despite definitive plan having been published",
+            "map_bytes_reviewed": false,
+            "period_fia_numbering_verified": false,
+            "image_reuse_rights_approved": false
+          }
+        ],
+        "period_map_priority": "Acquire/check original Feb 28 1984 Rombo p13 definitive plan against actual July 8 race and the Mar 20 provisional publication before assigning any bend position. G. de Carli labels its own red raced route map approximate. Copyright clearance and per-apex crosswalk both outstanding."
       },
       "route_scope": {
         "en": "The single 1984 Fair Park Grand Prix configuration. The thirteen reading sections describe bends, linked direction changes and approach roads, not thirteen independently authenticated FIA turn numbers or proper names.",
@@ -2968,7 +3021,7 @@
         "certified_apex_coordinates": 0,
         "certified_turn_numbers": 0,
         "publication_allowed": false,
-        "next_evidence_needed": "Independent dated 1984 as-raced numbered map or original aerial/film stills with validated turn-by-turn geospatial matching and usage rights."
+        "next_evidence_needed": "Access dated Rombo #9 (150), 28 Feb 1984 p13 definitive diagram, compare Rombo #12 (153), 20 Mar 1984 p12 provisional diagram, and verify actual July raced route from contemporaneous footage/aerial. Obtain rights clearance and separate independent per-apex assessment before assigning any FIA numbers."
       },
       "editorial_reader_preview": {
         "en": "Dallas built a Formula 1 circuit inside Fair Park, with concrete walls, a short pit straight and bends threaded around the fairground. The searing 1984 weekend is remembered for the asphalt breaking up and Nigel Mansell's exhausted attempt to push his Lotus towards the finish after losing drive at the final corner. The trouble is that there are several ways to draw this lap: an advance local preview describes a 2.58-mile plan, while the raced course was recorded at 2.424 miles. Some later reconstructions admit uncertainty about chicane locations. We can tell the story of the race now, but cannot honestly label each drawn kink as a verified FIA-numbered turn.",
