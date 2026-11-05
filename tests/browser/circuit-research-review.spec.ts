@@ -25,6 +25,56 @@ for (const locale of ['en', 'uk'] as const) {
     await expect(page.locator('[data-candidate-position]')).toHaveCount(1015);
     await expect(page.locator('[data-route-section]')).toHaveCount(68);
     await expect(page.locator('[data-historical-study]')).toHaveCount(66);
+    // Ten further period dossiers supplement the original 78 circuit identities;
+    // their 20 historical sections are research, never certified FIA apex maps.
+    await expect(page.locator('[data-period-supplement]')).toHaveCount(10);
+    await expect(page.locator('[data-period-supplement-section]')).toHaveCount(20);
+    const supplementalIds = [
+      'bremgarten', 'bugatti', 'caesars-palace', 'jacarepagua', 'monsanto',
+      'mont-tremblant', 'nivelles', 'pedralbes', 'phoenix', 'riverside',
+    ];
+    for (const id of supplementalIds) {
+      const link = page.locator(`nav a[href="#period-supplement-${id}"]`);
+      await expect(link).toHaveCount(1);
+      await link.focus();
+      await page.keyboard.press('Enter');
+      await expect(page).toHaveURL(new RegExp(`#period-supplement-${id}import { fork, type ChildProcess } from 'node:child_process';
+import { test, expect } from '@playwright/test';
+
+let server: ChildProcess;
+let reviewUrl: string;
+
+test.beforeAll(async () => {
+  server = fork('scripts/preview-circuit-v3.mjs', ['--acknowledge-unreviewed-draft', '--port', '0'], { stdio: ['ignore', 'ignore', 'pipe', 'ipc'] });
+  reviewUrl = await new Promise<string>((resolve, reject) => {
+    server.once('message', message => resolve((message as { url: string }).url));
+    server.once('error', reject);
+    server.once('exit', code => reject(new Error(`Private preview exited: ${code}`)));
+  });
+});
+test.afterAll(() => { server?.kill('SIGTERM'); });
+
+for (const locale of ['en', 'uk'] as const) {
+  test(`${locale}: all 78 private circuit reviews preserve source and numbering boundaries`, async ({ page, request }, testInfo) => {
+    const url = reviewUrl.replace(/\/en$/, `/${locale}`);
+    const response = await page.goto(url);
+    expect(response?.headers()['cache-control']).toBe('no-store');
+    expect(response?.headers()['x-robots-tag']).toContain('noindex');
+    await expect(page.locator('html')).toHaveAttribute('lang', locale);
+    await expect(page.locator('[data-circuit-review]')).toHaveCount(78);
+    await expect(page.locator('[data-candidate-position]')).toHaveCount(1015);
+    await expect(page.locator('[data-route-section]')).toHaveCount(68);
+));
+      const supplement = page.locator(`[data-period-supplement][id="period-supplement-${id}"]`);
+      await expect(supplement.locator('h3')).toBeInViewport();
+      await expect(supplement.locator('[data-period-supplement-section]')).toHaveCount(2);
+      await expect(supplement).toContainText(locale === 'en'
+        ? 'Period-layout research. Apex numbering'
+        : 'Дослідження історичної конфігурації. Нумерація апексів');
+      await expect(supplement.locator('img, svg')).toHaveCount(0);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    }
+
     await expect(page.locator('button, form, input')).toHaveCount(0);
     await expect(page.getByText(locale === 'en' ? 'UNPUBLISHED DRAFT · NOT APPROVED' : 'НЕОПУБЛІКОВАНА ЧЕРНЕТКА · НЕ СХВАЛЕНО', { exact: true })).toBeVisible();
     const integrity = await page.evaluate(() => {

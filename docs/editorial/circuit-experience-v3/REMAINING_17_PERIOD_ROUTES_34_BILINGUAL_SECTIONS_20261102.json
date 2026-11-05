@@ -6013,10 +6013,11 @@
           "reading_order": 2,
           "turn_numbers": null,
           "source_urls": [
-            "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html"
+            "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
+            "https://www.motorsportmagazine.com/archive/article/april-1990/5/phoenix-revivial/"
           ],
           "review_status": "pending",
-          "source_scope_note": "Race result and narrative confirm event context and described route features, not any named or numbered FIA apex.",
+          "source_scope_note": "RacingCircuits documents street geography and the 1991 layout change; David Tremayne's period Motor Sport race report covers Alesi challenging Senna in 1990, not apex coordinates or an FIA numbering map.",
           "independently_verified_numbered_turns": false,
           "publication_allowed": false
         }
@@ -6040,6 +6041,13 @@
           {
             "url": "https://www.racingcircuits.info/north-america/usa/phoenix-street-circuit.html",
             "claim_scope": "1989–90 and 1991 street-layout variation",
+            "numbered_apex_mapping_approved": false,
+            "license_to_reuse_source_media": false,
+            "editorial_release_approved": false
+          },
+          {
+            "url": "https://www.motorsportmagazine.com/archive/article/april-1990/5/phoenix-revivial/",
+            "claim_scope": "Contemporary 1990 United States Grand Prix race narrative: Alesi's opening lead, battle with Senna and eventual Senna victory; not a period turn map",
             "numbered_apex_mapping_approved": false,
             "license_to_reuse_source_media": false,
             "editorial_release_approved": false
