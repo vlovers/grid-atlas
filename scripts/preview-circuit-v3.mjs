@@ -29,6 +29,8 @@ export function renderHistoricalBendQueue(circuitId, locale) {
     const localSources = item.source_roles.filter(source => typeof source.url === 'string' && source.url.startsWith('https://'));
     return `<article id="${escape(anchor)}" tabindex="-1"><small>${role}</small>
       <h3>${escape(title)}</h3><p>${escape(item.explanation?.[locale] ?? '')}</p>
+      ${kind === 'bend' && item.claim_classification ? `<p><strong>${uk ? 'Тип доказу' : 'Evidence classification'}:</strong> ${escape(item.claim_classification)}</p>` : ''}
+      ${kind === 'bend' && item.evidence_limit_bilingual ? `<p class="warning"><strong>${uk ? 'Історичне застереження' : 'Historical evidence warning'}:</strong> ${escape(item.evidence_limit_bilingual[locale] ?? '')}</p>` : ''}
       ${item.research_kind === 'named_feature' && item.name_evidence_assessment ? `<p><strong>${uk ? 'Походження назви' : 'Name origin'}:</strong> ${escape(item.name_origin?.[locale] ?? (uk ? 'Невідоме — не припускати' : 'Unknown — do not guess'))}. <small>${escape(item.name_evidence_assessment.classification)} · ${uk ? 'Потребує незалежного підтвердження' : 'Independent review pending'}</small></p>` : ''}
       <p><strong>${uk ? 'Статус' : 'Status'}:</strong> ${uk ? 'Потрібна незалежна перевірка джерела і точної точки на схемі' : 'Independent source and map-location review required'}</p>
       ${item.source_locator ? `<p><strong>${uk ? 'Місце в джерелі' : 'Source locator'}:</strong> ${escape(item.source_locator)}</p>` : ''}
