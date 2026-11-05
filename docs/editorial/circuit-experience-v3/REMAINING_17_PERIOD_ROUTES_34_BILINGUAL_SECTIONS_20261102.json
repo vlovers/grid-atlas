@@ -5146,7 +5146,7 @@
       ],
       "original_research_document": "PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json",
       "layout_evidence_review": {
-        "archive_turn_count": null,
+        "archive_turn_count": 24,
         "period_layout_year": 1957,
         "crosswalk_status": "long_road_route_unverified_apex_numbers",
         "evidence": [
@@ -5191,6 +5191,18 @@
             "url": "https://www.40mila.it/2019/09/04/pescara-si-vince-correndo-coppa-acerbo-aneddoti-e-curiosita/",
             "claim": "The local writer explicitly cannot identify whether Esse di Cappelle was the entrance-monument double bend or the village-centre double bend; no numbered or surveyed 1957 site may be selected from this account.",
             "supports_apex_numbering": false
+          },
+          {
+            "type": "1957_period_photo_pit_chicane",
+            "url": "https://commons.wikimedia.org/wiki/File:1957_Pescara_GP_-_Stirling_Moss.jpg",
+            "claim": "Reproduction from 1957 Quattroruote captioned as Stirling Moss driving the chicane before the grandstands; independent visual period evidence of chicane existence, not verified 1957 apex numbering. Commons claims Italian and US public domain; jurisdictional and image-origin review still required.",
+            "supports_apex_numbering": false
+          },
+          {
+            "type": "f1db_1957_pescara_24_bend_count",
+            "url": "https://www.lapledger.org/circuits/pescara",
+            "claim": "Pinned F1DB Pescara-1 historic 1957 layout counts 24 bends; the seven route sections and four separately researched bend descriptions cannot be mistaken for exhaustive corner coverage.",
+            "supports_apex_numbering": false
           }
         ],
         "media_rights": "External historic maps and archive photos are linked only; no right to embed or redistribute inferred",
@@ -5221,6 +5233,26 @@
           "precise_1957_esse_site_verified": false,
           "independent_period_name_attestation": false,
           "copyright_approval_for_external_photo_or_map": false
+        },
+        "archive_count_basis": {
+          "source_url": "https://www.lapledger.org/circuits/pescara",
+          "historical_layout_id": "pescara-1",
+          "f1db_bend_count": 24,
+          "numbered_apex_map_verified": false,
+          "means": "Pescara-1 1957 archival bend count; seven broad route sections and four individual candidate bends do not cover all 24 bends."
+        },
+        "period_1957_photo_chicane": {
+          "source_url": "https://commons.wikimedia.org/wiki/File:1957_Pescara_GP_-_Stirling_Moss.jpg",
+          "original_publication": "Quattroruote, September 1957, no. 9, p. 107",
+          "caption_assertion": "Stirling Moss in his Vanwall on the chicane before the grandstands on 18 August 1957",
+          "photo_year": 1957,
+          "photo_venue": "Pescara",
+          "identifies_chicane_before_grandstands": true,
+          "apex_geometry_verified": false,
+          "official_turn_number": null,
+          "license_at_source": "PD-Italy; PD-1996",
+          "photo_artist_identified": false,
+          "republication_approved": false
         }
       },
       "route_scope": {
@@ -5514,10 +5546,17 @@
           "publication_allowed": false,
           "source_locator": "Denis Jenkinson, Motor Sport (September 1957), race opening lap: Horace Gould at the corners before the pits; no exact apex count.",
           "period_chicane_origin_note": {
-            "en": "The chicane before the pits was documented from 1934; historic alterations continued. The available evidence does not establish a newly built first pit chicane in 1957 or certify its individual apexes.",
-            "uk": "Шикана перед боксами документується щонайменше з 1934 року, а історичні зміни тривали. Наявні джерела не підтверджують, що першу шикану перед боксами збудували саме 1957 року, і не визначають координати її окремих апексів."
+            "en": "The chicane before the pits was documented from 1934; historic alterations continued. The available evidence does not establish a newly built first pit chicane in 1957 or certify its individual apexes. A contemporary photograph reproduced from Quattroruote shows Moss passing the chicane before the grandstands during the 1957 GP; it supports the feature's existence that day but not an exact turn number.",
+            "uk": "Шикана перед боксами документується щонайменше з 1934 року, а історичні зміни тривали. Наявні джерела не підтверджують, що першу шикану перед боксами збудували саме 1957 року, і не визначають координати її окремих апексів. Сучасна гонці світлина, відтворена з Quattroruote, показує Мосса на шикані перед трибунами під час Гран-прі 1957 року. Це підтверджує існування зв’язки того дня, але не її точний номер."
           },
-          "exact_1957_chicane_geometry_verified": false
+          "exact_1957_chicane_geometry_verified": false,
+          "period_photo_evidence": {
+            "source_url": "https://commons.wikimedia.org/wiki/File:1957_Pescara_GP_-_Stirling_Moss.jpg",
+            "assertion_scope": "1957_pit_chicane_existential_and_near_grandstands_only",
+            "source_publication": "Quattroruote 9/1957 p107",
+            "numbered_apex_verified": false,
+            "photo_republication_approved": false
+          }
         }
       ],
       "editorial_reader_preview": {
@@ -5525,7 +5564,45 @@
         "uk": "Пескара була не просто довгою прямою з кількома поворотами. Коло 1957 року починалося на звичайних міських вулицях, піднімалося в пагорби Абруццо, проходило селами, спускалося до Монтесільвано й поверталося вздовж моря. Найпростіше тут повторити красиву, але неточну історію про шикану: перед боксами вона існувала щонайменше з 1934 року, а репортаж 1957-го згадує зміни, зроблені в різні роки. Зводити все до «нової шикани 1957 року» означало б спотворити трасу, якою їхав Мосс.",
         "source_url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
         "editorial_status": "research_only"
-      }
+      },
+      "licensed_media_research_candidates": [
+        {
+          "id": "pescara-track-outline-2005",
+          "kind": "schematic_map",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:Pescara_track.jpg",
+          "author": "Jiří Žemlička",
+          "date": "2005-07-21",
+          "declared_license": "PD-author; author's worldwide dedication and alternate unrestricted grant",
+          "source_provenance": "Commons description links source to Czech Wikipedia; current Commons file page reviewed",
+          "confidence": "license_declared_on_source",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "geometry_role": "schematic_non_numbered_historical_route",
+          "not_official_numbered_map": true,
+          "editorial_note": "A low resolution schematic cannot verify chicane updates, exact bend count or 1957 apex labels."
+        },
+        {
+          "id": "pescara-moss-1957-pit-chicane",
+          "kind": "archival_photo",
+          "commons_file_page": "https://commons.wikimedia.org/wiki/File:1957_Pescara_GP_-_Stirling_Moss.jpg",
+          "author": "unknown",
+          "date": "1957-08-18",
+          "declared_license": "PD-Italy / PD-1996, as tagged by Commons; rights and photo classification require review for target jurisdictions",
+          "source_provenance": "Quattroruote September 1957 issue 9 page 107; photograph re-uploaded to Commons 2025-01-18",
+          "confidence": "commons_pd_tags_require_independent_review",
+          "rights_review_complete": false,
+          "asset_downloaded": false,
+          "original_file_hash_sha256": null,
+          "repository_intake_approved": false,
+          "public_render_allowed": false,
+          "geometry_role": "historical_1957_pit_chicane_event_not_numbered_map",
+          "not_official_numbered_map": true,
+          "editorial_note": "The photo supports the existence of the chicane before grandstands in August 1957 but no lap-wide apex mapping. Do not interpret tagged Italian PD as blanket global approval."
+        }
+      ]
     },
     {
       "circuit_id": "phoenix",
