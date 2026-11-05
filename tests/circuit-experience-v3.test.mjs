@@ -458,3 +458,20 @@ test('period-source evidence keeps Detroit, Porto, Pescara and Sebring historica
     assert.ok(byId(id).layout_evidence_review.evidence.every(source => source.supports_apex_numbering === false));
   }
 });
+
+test('four historically scoped EN/UK reader openings remain review-only and visible in private preview', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  for (const id of ['detroit','pescara','porto','sebring']) {
+    const circuit = research.circuits.find(x => x.circuit_id === id);
+    const opening = circuit.editorial_reader_preview;
+    assert.equal(opening.editorial_status, 'research_only');
+    assert.ok(opening.source_url.startsWith('https://'));
+    for (const locale of ['en','uk']) {
+      assert.ok(opening[locale].length > 300, id + ':' + locale);
+      assert.ok(renderCircuitReview(locale, '/review/test').includes(opening[locale].slice(0, 55)), id + ':' + locale);
+    }
+  }
+  assert.match(renderCircuitReview('en', '/review/test'), /Editorial opening — draft/);
+  assert.match(renderCircuitReview('uk', '/review/test'), /Редакторський вступ — чернетка/);
+});
