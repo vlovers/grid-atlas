@@ -514,3 +514,31 @@ test('13 historical name studies preserve origin uncertainty and remain unapprov
   assert.match(renderHistoricalBendQueue('clermont-ferrand', 'en'), /Name origin/);
   assert.match(renderHistoricalBendQueue('pescara', 'uk'), /Походження назви/);
 });
+
+test('Detroit 1982 official count and F1DB per-bend count remain distinct from FIA numbering', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const detroit = research.circuits.find(c => c.circuit_id === 'detroit');
+  const review = detroit.layout_evidence_review;
+  assert.equal(review.archive_turn_count, 24);
+  assert.equal(review.independent_historical_count_adjudication.organizer_turns, 17);
+  assert.equal(review.independent_historical_count_adjudication.f1db_layout_bends, 24);
+  assert.equal(review.independent_historical_count_adjudication.certified_fia_turn_number_crosswalk, false);
+  assert.ok(review.turn_count_source_comparison.some(source => source.source.includes('promoter') && source.count === 17));
+  assert.ok(review.turn_count_source_comparison.some(source => source.source.includes('F1DB') && source.count === 24));
+  assert.ok(review.evidence.every(source => source.supports_apex_numbering === false));
+});
+
+test('Sebring 1959 date is verified by F1 results and contradictory layout-page prose is flagged', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const review = research.circuits.find(c => c.circuit_id === 'sebring').layout_evidence_review;
+  assert.equal(review.event_date_authority.date, '1959-12-12');
+  assert.equal(review.event_date_authority.winner, 'Bruce McLaren');
+  assert.equal(review.event_date_authority.not_numbered_apex_evidence, true);
+  assert.equal(review.incorrect_secondary_source_claim.do_not_reproduce_march_date, true);
+  assert.match(review.incorrect_secondary_source_claim.issue, /28 March 1959/);
+  assert.match(review.incorrect_secondary_source_claim.issue, /12 December 1959/);
+  assert.equal(review.period_report_bend_sequence.individually_numbered_apexes, 0);
+  assert.ok(review.evidence.every(source => source.supports_apex_numbering === false));
+});
