@@ -68,7 +68,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+        "locator": "Opening race-report paragraph after title: unchanged circuit since 1957, improved road surface and amenities",
+        "observation_en": "The contemporary 1958 report explicitly says the circuit was unchanged from 1957 while the surface and amenities were improved. This supports continuity of the broad route, not the position or official number of any individual bend.",
+        "observation_uk": "Репортаж 1958 року прямо зазначає, що конфігурацію порівняно з 1957 роком не змінювали, хоча покриття та інфраструктуру поліпшили. Це підтверджує сталість загального маршруту, але не розташування чи офіційний номер окремого повороту.",
+        "scope": "period_report_route_continuity_not_corner_by_corner_authentication",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_online_period_report_or_circuit_history",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "ain-diab:race_event",
@@ -164,7 +177,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/europe/france/charade.html",
+        "locator": "Layout selectors 'Grand Prix Circuit 1969-88' and 'Grand Prix Circuit 1989 to date'; Circuit History, paragraph on 1969 pit-lane change",
+        "observation_en": "The circuit history distinguishes the 8.055 km 1969–88 mountain course used for the 1972 French GP from the shortened 4.050 km circuit dating from 1989; the 1969 pit lane was separated by Armco. Neither layout selector authenticates a numbered 1972 apex key or resolves differing corner-count conventions.",
+        "observation_uk": "Історія траси відокремлює гірський маршрут 1969–1988 років завдовжки 8,055 км, на якому відбувся Гран-прі Франції 1972 року, від скороченої траси 4,050 км з 1989 року; 1969 року піт-лейн відділили бар'єром Armco. Жодна схема не підтверджує нумерацію апексів 1972 року чи різні правила підрахунку поворотів.",
+        "scope": "secondary_era_geometry_not_authenticated_numbered_1972_corner_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_online_period_report_or_circuit_history",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "clermont-ferrand:race_event",
@@ -360,7 +386,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.racingcircuits.info/north-america/usa/detroit.html",
+        "locator": "Layout selectors 'Grand Prix Circuit 1982' and 'Grand Prix Circuit 1983-88'; Circuit History 'A lap of the F1 course'",
+        "observation_en": "The circuit guide distinguishes the 1982 street layout (4.168 km) from the 1983–88 version (4.023 km) and traces the first course through Atwater, St. Antoine and Jefferson. Its descriptive sequence is not a period-certified numbered apex list.",
+        "observation_uk": "Довідник відокремлює міську конфігурацію 1982 року (4,168 км) від маршруту 1983–1988 років (4,023 км) та описує початок кола через Atwater, St. Antoine і Jefferson. Опис послідовності вулиць не є офіційно засвідченим переліком пронумерованих апексів.",
+        "scope": "secondary_street_sequence_and_layout_era_not_period_numbered_apex_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_online_period_report_or_circuit_history",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "detroit:race_event",
@@ -629,7 +668,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+        "locator": "Opening description of the Sebring aerodrome/road course, immediately before qualifying narrative",
+        "observation_en": "The contemporary 1959 GP report describes a 5.2-mile mixed runway/road course. This anchors the race to the original airfield-era route; later chicane modifications must be reviewed separately rather than projected backward onto 1959.",
+        "observation_uk": "Репортаж про Гран-прі 1959 року описує маршрут завдовжки 5,2 милі, що поєднував злітно-посадкові смуги й дороги. Це прив'язує гонку до історичної аеродромної конфігурації; пізніші зміни шикан не можна переносити на 1959 рік.",
+        "scope": "contemporary_1959_race_layout_description_not_post_1966_geometry",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_online_period_report_or_circuit_history",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "sebring:geometry",
@@ -651,7 +703,20 @@
       "numbered_apex_verified": false,
       "media_rights_approved": false,
       "independent_human_approval": false,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "source_passage_observation": {
+        "url": "https://www.motorsportmagazine.com/archive/article/january-1960/16/the-first-grand-prix-of-the-united-states/",
+        "locator": "Race report first lap-description paragraph: two tub-marked lefts, esses, hairpin, hangar straight, two tub-marked rights and 180-degree final bend",
+        "observation_en": "The 1959 eyewitness lap description gives a sequence of artificial tub-marked corners, esses, a hairpin and a final broad 180-degree turn. It establishes qualitative lap order but provides neither an FIA numbered apex map nor exact turn-count conventions.",
+        "observation_uk": "Опис кола очевидцем 1959 року подає послідовність штучно позначених поворотів, ески, шпильку та широкий завершальний розворот на 180 градусів. Це якісний порядок ділянок, але не офіційна схема FIA з номерами апексів і не підтверджений спосіб підрахунку поворотів.",
+        "scope": "contemporary_lap_order_not_official_numbered_apex_map",
+        "accessed_utc_date": "2026-11-05",
+        "review_method": "researcher_read_online_period_report_or_circuit_history",
+        "claim_scope_reviewed": true,
+        "not_human_signoff": true,
+        "independent_corroboration_complete": false,
+        "period_numbered_map_authenticated": false
+      }
     },
     {
       "review_id": "sebring:race_event",
@@ -689,6 +754,6 @@
       }
     }
   ],
-  "source_passage_observations": 16,
-  "claim_review_status": "research_leads_plus_16_checked_passages_no_human_approval"
+  "source_passage_observations": 21,
+  "claim_review_status": "research_leads_plus_21_checked_passages_no_human_approval_or_numbered_apex_authentication"
 }
