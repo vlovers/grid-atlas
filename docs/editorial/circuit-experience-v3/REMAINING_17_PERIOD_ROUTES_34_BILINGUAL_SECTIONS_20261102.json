@@ -547,7 +547,13 @@
           "publication_allowed": false,
           "source_locator": "Motor Sport (September 2026), 1958 race retrospective: Moss and Phil Hill lead the field to the first corner; no direction or numbered apex given."
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "Ain-Diab appeared almost overnight. In six weeks Morocco's automobile club turned public roads near Casablanca into a 4.7-mile lap: a fast coast road, the highway towards Azemmour and stretches through the Sidi Abderrahman forest. In October 1958 that one-off World Championship stage became the finale of Stirling Moss and Mike Hawthorn's title fight. Moss won the race; Hawthorn took the championship. Stuart Lewis-Evans suffered the crash that would cost him his life. It is a powerful story, but it does not turn an 18-corner summary into a map of eighteen verified apex positions.",
+        "uk": "Айн-Діаб виник майже за одну ніч. За шість тижнів автомобільний клуб Марокко перетворив звичайні дороги біля Касабланки на коло завдовжки близько 4,7 милі: швидку прибережну трасу, шосе в напрямку Аземмура та ділянки серед лісу Сіді Абдеррахман. У жовтні 1958 року цей автодром став ареною останнього раунду боротьби Стірлінга Мосса й Майка Готорна за титул. Мосс виграв гонку, Готорн — чемпіонат. Стюарт Льюїс-Еванс потрапив в аварію, наслідки якої стали смертельними. Це сильна історія, але цифра «18 поворотів» ще не дає карти з вісімнадцятьма перевіреними апексами.",
+        "source_url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+        "editorial_status": "research_only"
+      }
     },
     {
       "circuit_id": "bremgarten",
@@ -1029,7 +1035,15 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old 8.055 km lap sequence (Manson after the opening climb)."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old 8.055 km lap sequence (Manson after the opening climb).",
+          "name_evidence_assessment": {
+            "classification": "locality_name_indicated",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 2,
@@ -1055,7 +1069,15 @@
           "publication_allowed": false,
           "feature_kind": "route_sector",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 \"Grand 8 et super descente\" for the historic descent."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 \"Grand 8 et super descente\" for the historic descent.",
+          "name_evidence_assessment": {
+            "classification": "volcanic_place_name_indicated",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 3,
@@ -1081,7 +1103,15 @@
           "publication_allowed": false,
           "feature_kind": "named_feature_unresolved",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (Belvédère / Grand balcon)."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (Belvédère / Grand balcon).",
+          "name_evidence_assessment": {
+            "classification": "viewpoint_alias_documented",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 4,
@@ -1107,7 +1137,15 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 for the Jumeaux on the Gravenoire descent."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 old-course sequence; #26 for the Jumeaux on the Gravenoire descent.",
+          "name_evidence_assessment": {
+            "classification": "literal_translation_only_name_origin_unknown",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 5,
@@ -1133,7 +1171,15 @@
           "publication_allowed": false,
           "feature_kind": "named_feature_unresolved",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (after Jumeaux)."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", old-course sequence (after Jumeaux).",
+          "name_evidence_assessment": {
+            "classification": "literal_translation_only_place_origin_unverified",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 6,
@@ -1159,7 +1205,15 @@
           "publication_allowed": false,
           "feature_kind": "route_sector",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", closing sequence before Ferme."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", closing sequence before Ferme.",
+          "name_evidence_assessment": {
+            "classification": "locality_name_indicated",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 7,
@@ -1188,7 +1242,15 @@
           "period_name_independently_verified": false,
           "source_locator": "Circuit de Charade, \"Charade dans le rétro #46\", section \"À la Ferme, on évite de trop ouvrir !\": original 8.055 km course, descending left-right S facing the farm near Champeaux; marshal-post #10 in pre-1989 layout is NOT FIA turn #10.",
           "non_turn_number_warning": "Marshal post #10 before 1989 and posts #16/#17 after 1989 are NOT bend numbers; the venue explicitly refers to observation/emergency posts.",
-          "venue_source_independently_checked": true
+          "venue_source_independently_checked": true,
+          "name_evidence_assessment": {
+            "classification": "venue_explicit_farm_name_origin",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": true,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 8,
@@ -1215,7 +1277,15 @@
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
           "source_locator": "Circuit de Charade, \"Charade dans le rétro\" #16 \"La vie secrète du Petit Pont\" and #27 \"Le paddock dans tous ses états\": bridge over Artière stream; site modifications in 1989 and later must not be back-projected onto 1972 geometry.",
-          "period_layout_caveat": "Post-1989 run-off and safety updates cannot be assumed present on the 1972 long course; exact 1972 apex position remains unverified."
+          "period_layout_caveat": "Post-1989 run-off and safety updates cannot be assumed present on the 1972 long course; exact 1972 apex position remains unverified.",
+          "name_evidence_assessment": {
+            "classification": "venue_explicit_bridge_name_origin",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": true,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 9,
@@ -1238,7 +1308,15 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", hairpin after Petit Pont; name origin not established."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", hairpin after Petit Pont; name origin not established.",
+          "name_evidence_assessment": {
+            "classification": "historic_feature_name_origin_unknown",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 10,
@@ -1264,7 +1342,15 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", pif-paf, curve and descent after Marlboro."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #23 \"Long comme… une belle histoire\", pif-paf, curve and descent after Marlboro.",
+          "name_evidence_assessment": {
+            "classification": "locality_name_indicated",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 11,
@@ -1290,9 +1376,23 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #40 \"Louis Rosier, père spirituel de Charade pour l’éternité\" (explicit namesake); #23 for the final-bend position."
+          "source_locator": "Circuit de Charade, \"Charade dans le rétro\", #40 \"Louis Rosier, père spirituel de Charade pour l’éternité\" (explicit namesake); #23 for the final-bend position.",
+          "name_evidence_assessment": {
+            "classification": "venue_explicit_louis_rosier_namesake",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": true,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         }
-      ]
+      ],
+      "editorial_reader_preview": {
+        "en": "At Charade, the scenery was part of the danger. The original eight-kilometre lap wound around volcanic hills, climbed towards Manson and dropped through Gravenoire before passing bends remembered as Jumeaux, Ferme and Petit Pont. In the 1972 French Grand Prix Chris Amon's pace was undone by a puncture and Jackie Stewart took the win. These old-place names make the route feel real; they do not tell us where all 48 archive bends were, let alone resolve the alternative claim of 51. Even the number 10 in Charade's historical account of Ferme means a marshal post, not a numbered turn.",
+        "uk": "У Charade краєвид був частиною небезпеки. Старе восьмикілометрове коло звивалося вулканічними пагорбами, підіймалося до Manson, падало через Gravenoire й проходило віражі, що запам’яталися як Jumeaux, Ferme та Petit Pont. На Гран-прі Франції 1972 року Кріс Еймон утратив перевагу через прокол, а переміг Джекі Стюарт. Історичні назви оживляють маршрут, але не показують, де лежали всі 48 архівних вигинів, і не знімають суперечки з цифрою 51. Навіть число 10 у матеріалі автодрому про Ferme означає пост маршалів, а не номер повороту.",
+        "source_url": "https://www.charade.fr/galerie-photos/charade-dans-le-retro/",
+        "editorial_status": "research_only"
+      }
     },
     {
       "circuit_id": "dallas",
@@ -2869,6 +2969,12 @@
         "certified_turn_numbers": 0,
         "publication_allowed": false,
         "next_evidence_needed": "Independent dated 1984 as-raced numbered map or original aerial/film stills with validated turn-by-turn geospatial matching and usage rights."
+      },
+      "editorial_reader_preview": {
+        "en": "Dallas built a Formula 1 circuit inside Fair Park, with concrete walls, a short pit straight and bends threaded around the fairground. The searing 1984 weekend is remembered for the asphalt breaking up and Nigel Mansell's exhausted attempt to push his Lotus towards the finish after losing drive at the final corner. The trouble is that there are several ways to draw this lap: an advance local preview describes a 2.58-mile plan, while the raced course was recorded at 2.424 miles. Some later reconstructions admit uncertainty about chicane locations. We can tell the story of the race now, but cannot honestly label each drawn kink as a verified FIA-numbered turn.",
+        "uk": "У Далласі трасу Формули-1 проклали просто серед павільйонів Fair Park: бетонні стіни, коротка пряма біля боксів і низка віражів між виставковими спорудами. Спекотний вікенд 1984 року запам’ятався асфальтом, який руйнувався, та виснажливою спробою Найджела Менселла доштовхати Lotus до фінішу після втрати тяги в останньому повороті. Проблема в тому, що нам відомі різні версії цього кола: місцевий анонс описував план завдовжки 2,58 милі, а фактичну трасу виміряли в 2,424 милі. Пізніші реконструкції теж визнають невизначеність розташування шикан. Історію гонки вже можна розповісти, але назвати кожен вигин на малюнку перевіреним поворотом FIA — ні.",
+        "source_url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+        "editorial_status": "research_only"
       }
     },
     {
@@ -4683,7 +4789,15 @@
           "publication_allowed": false,
           "feature_kind": "single_bend",
           "period_name_independently_verified": false,
-          "source_locator": "GPKingdom, Alessio Evangelista (4 December 2024), section 'La targa che omaggia il Circuito di Pescara': paragraph identifying the Spoltore–Cappelle bend as 'La Curva della Morte'. Retrospective name evidence only, not an authenticated 1957 FIA apex."
+          "source_locator": "GPKingdom, Alessio Evangelista (4 December 2024), section 'La targa che omaggia il Circuito di Pescara': paragraph identifying the Spoltore–Cappelle bend as 'La Curva della Morte'. Retrospective name evidence only, not an authenticated 1957 FIA apex.",
+          "name_evidence_assessment": {
+            "classification": "retrospective_regional_nickname_dating_unverified",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         },
         {
           "reading_order": 2,
@@ -4710,7 +4824,15 @@
           "publication_allowed": false,
           "feature_kind": "multi_bend_complex",
           "period_name_independently_verified": false,
-          "source_locator": "40mila.it, 'A Pescara si vince ... correndo! Coppa Acerbo: aneddoti e curiosità' (4 September 2019), section 'La Esse di Cappelle': the author explicitly recalls the named S-complex but cannot tell whether it is the double bend beside the entrance monument or the double bend in the village centre. Local naming evidence only; neither location nor any 1957 FIA apex number is authenticated."
+          "source_locator": "40mila.it, 'A Pescara si vince ... correndo! Coppa Acerbo: aneddoti e curiosità' (4 September 2019), section 'La Esse di Cappelle': the author explicitly recalls the named S-complex but cannot tell whether it is the double bend beside the entrance monument or the double bend in the village centre. Local naming evidence only; neither location nor any 1957 FIA apex number is authenticated.",
+          "name_evidence_assessment": {
+            "classification": "local_nickname_ambiguous_bend_location",
+            "venue_or_period_name_independently_approved": false,
+            "origin_authoritatively_attested": false,
+            "single_numbered_turn_verified": false,
+            "period_specific_original_naming_year_verified": false,
+            "needs_independent_human_review": true
+          }
         }
       ],
       "period_bend_studies": [
