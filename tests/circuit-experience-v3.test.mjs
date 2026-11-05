@@ -427,3 +427,34 @@ test('Dallas 1984 planned landmarks are clearly distinct from the raced turn map
     assert.ok(renderCircuitReview(locale, '/review/test').includes('2.424'));
   }
 });
+
+test('period-source evidence keeps Detroit, Porto, Pescara and Sebring historically separated', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const byId = id => research.circuits.find(c => c.circuit_id === id);
+  const pescara = byId('pescara');
+  assert.equal(pescara.layout_evidence_review.chicane_chronology.prior_chicane_evidenced_1934, true);
+  assert.equal(pescara.layout_evidence_review.chicane_chronology.separate_1957_modification_certain, false);
+  assert.equal(pescara.layout_evidence_review.chicane_chronology.exact_1957_chicane_apex_verified, false);
+  assert.equal(pescara.period_bend_studies.find(x => x.reading_order === 4).exact_1957_chicane_geometry_verified, false);
+  const porto = byId('porto');
+  assert.equal(porto.layout_evidence_review.period_report_year_scope.course_walk_year, 1958);
+  assert.equal(porto.layout_evidence_review.period_report_year_scope.opening_bottleneck_narrative_year, 1960);
+  assert.equal(porto.period_bend_studies.find(x => x.reading_order === 1).event_evidence_year, 1960);
+  assert.equal(porto.period_bend_studies.find(x => x.reading_order === 1).route_configuration_reconciliation_pending, true);
+  const detroit = byId('detroit');
+  assert.equal(detroit.layout_evidence_review.circuit_walk_attribution.year, 1982);
+  assert.equal(detroit.layout_evidence_review.circuit_walk_attribution.route_order.length, 6);
+  assert.equal(detroit.layout_evidence_review.circuit_walk_attribution.attests_certified_fia_turn_numbers, false);
+  assert.equal(detroit.period_bend_studies.length, 17);
+  assert.ok(detroit.period_bend_studies.every(x => x.attested_route_sequence && x.numbered_apex_verified === false));
+  const sebring = byId('sebring');
+  assert.equal(sebring.layout_evidence_review.period_report_bend_sequence.race_year, 1959);
+  assert.equal(sebring.layout_evidence_review.period_report_bend_sequence.individually_described_direction_changes, 8);
+  assert.equal(sebring.layout_evidence_review.period_report_bend_sequence.individually_numbered_apexes, 0);
+  assert.equal(sebring.period_bend_studies.length, 8);
+  assert.ok(sebring.period_bend_studies.every(x => x.period_direction_change_attested && x.numbered_apex_verified === false));
+  for (const id of ['detroit','pescara','porto','sebring']) {
+    assert.ok(byId(id).layout_evidence_review.evidence.every(source => source.supports_apex_numbering === false));
+  }
+});
