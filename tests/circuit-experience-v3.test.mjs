@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { candidateCornerGuides, candidateCircuitNarratives } from '../apps/web/src/components/editorial/circuit-candidates.ts';
 import { cornerGuideFor, numberedCorners } from '../apps/web/src/components/editorial/circuit-corner-model.ts';
 import { isCircuitEditionApproved, circuitEditionDigest } from '../apps/web/src/components/editorial/circuit-release.ts';
-import { renderCircuitReview, renderHistoricalBendQueue, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
+import { renderCircuitReview, renderHistoricalBendQueue, renderDallasPlannedRoute, startCircuitReview } from '../scripts/preview-circuit-v3.mjs';
 
 test('numbered turns are complete and never confused with distinct named sections', () => {
   assert.ok(candidateCornerGuides.length >= 16, 'do not regress already sourced circuit guides');
@@ -397,4 +397,33 @@ test('all 66 historical bend and name studies are visible in private bilingual r
   const { readFileSync } = await import('node:fs');
   const publicComponent = readFileSync(new URL('../apps/web/src/components/editorial/circuit-corner-guide.tsx', import.meta.url), 'utf8');
   assert.doesNotMatch(publicComponent, /candidateHistoricalCornerReviewQueue|renderHistoricalBendQueue/);
+});
+
+test('Dallas 1984 planned landmarks are clearly distinct from the raced turn map', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const dallas = research.circuits.find(c => c.circuit_id === 'dallas');
+  assert.equal(dallas.period_bend_studies.length, 16);
+  assert.equal(dallas.planned_route_waypoints.length, 4);
+  assert.equal(dallas.layout_evidence_review.pre_race_vs_raced_length.planned_miles, 2.58);
+  assert.equal(dallas.layout_evidence_review.pre_race_vs_raced_length.raced_miles, 2.424);
+  assert.ok(dallas.planned_route_waypoints.every(x =>
+    x.source_period === 'pre_race_plan_march_1984' &&
+    x.raced_layout_correspondence_verified === false &&
+    x.official_turn_number === null &&
+    x.publication_allowed === false &&
+    x.source_url.startsWith('https://')
+  ));
+  assert.equal(dallas.period_bend_studies.filter(x => !x.source_locator || x.source_locator_gap).length, 15, 'keep unsourced apex claims unresolved');
+  assert.equal(dallas.layout_evidence_review.layout_count_conventions.find(x => x.count === 12)?.source, 'RacingCircuits.info 1984');
+  assert.equal(dallas.layout_evidence_review.layout_count_conventions.find(x => x.count === 23)?.source, 'F1DB dallas-1');
+  for (const locale of ['en', 'uk']) {
+    const html = renderDallasPlannedRoute(dallas, locale);
+    assert.ok(html.includes('2.58') && html.includes('2.424'));
+    assert.equal((html.match(/<li>/g) ?? []).length, 4);
+    assert.ok(html.includes('Fair Park Music Hall'));
+    assert.ok(html.includes('dmagazine.com'));
+    assert.match(html, locale === 'en' ? /Not certified corners/ : /Це не сертифіковані повороти/);
+    assert.ok(renderCircuitReview(locale, '/review/test').includes('2.424'));
+  }
 });
