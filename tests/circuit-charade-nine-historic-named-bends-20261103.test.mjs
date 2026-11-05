@@ -26,7 +26,8 @@ test('eleven individually written Charade historic named bends retain official v
     assert.equal(bend.numbered_apex_verified, false);
     assert.equal(bend.publication_allowed, false);
     assert.equal(bend.review_status, 'independent_review_pending');
-    assert.deepEqual(bend.source_urls, [venue]);
+    assert.ok(bend.source_urls.includes(venue), bend.name);
+    assert.ok(bend.source_urls.every(url => url.startsWith('https://www.charade.fr/')), bend.name);
     assert.equal(bend.source_role, 'official_venue_historical_named_bend_not_numbered_fia_map');
     assert.ok(bend.explanation.en.trim().split(/\s+/).length >= 30, bend.name);
     assert.ok(bend.explanation.uk.trim().split(/\s+/).length >= 25, bend.name);

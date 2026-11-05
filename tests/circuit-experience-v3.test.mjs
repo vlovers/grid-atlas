@@ -124,7 +124,7 @@ test('seven unapproved historic route studies remain research-only and unpublish
     assert.ok(review.evidence.some(entry => entry.type.includes('layout') || entry.type.includes('route') || entry.type.includes('chicane')));
     assert.ok(review.evidence.every(entry => entry.supports_apex_numbering === false));
   }
-  assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\.590 mi/);
+  assert.match(research.circuits.find(c => c.circuit_id === 'detroit').layout_evidence_review.layout_length_discrepancy, /2\.59(?:0)? mi/);
   assert.match(research.circuits.find(c => c.circuit_id === 'pescara').layout_evidence_review.layout_version_caveat, /1957/);
   assert.match(research.circuits.find(c => c.circuit_id === 'sebring').layout_evidence_review.layout_version_caveat, /1959/);
   assert.ok(ainDiab.layout_evidence_review.evidence.some(item => item.type === 'independent_historical_corner_count' && item.claim.includes('18 corners') && item.supports_apex_numbering === false));

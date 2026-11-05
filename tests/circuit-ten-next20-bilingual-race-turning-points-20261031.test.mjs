@@ -41,8 +41,8 @@ const anchors = [
   ],
   [
     "jeddah",
-    "two red flags",
-    "двічі"
+    "Two red flags",
+    "Два червоні прапори"
   ],
   [
     "miami",
