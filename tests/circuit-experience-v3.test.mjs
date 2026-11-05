@@ -542,3 +542,23 @@ test('Sebring 1959 date is verified by F1 results and contradictory layout-page 
   assert.equal(review.period_report_bend_sequence.individually_numbered_apexes, 0);
   assert.ok(review.evidence.every(source => source.supports_apex_numbering === false));
 });
+
+test('Detroit and Sebring reader openings cite official races without using results for apex numbering', async () => {
+  const { readFileSync } = await import('node:fs');
+  const research = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json', import.meta.url), 'utf8'));
+  const find = id => research.circuits.find(circuit => circuit.circuit_id === id);
+  const detroit = find('detroit');
+  const sebring = find('sebring');
+  assert.match(detroit.editorial_reader_preview.en, /John Watson started seventeenth/);
+  assert.match(detroit.editorial_reader_preview.uk, /Джон Вотсон стартував сімнадцятим/);
+  assert.match(sebring.editorial_reader_preview.en, /12 December 1959/);
+  assert.match(sebring.editorial_reader_preview.uk, /12 грудня 1959 року/);
+  for (const circuit of [detroit, sebring]) {
+    assert.equal(circuit.editorial_reader_preview.editorial_status, 'research_only');
+    assert.ok(circuit.editorial_reader_preview.event_sources.length >= 2);
+    assert.ok(circuit.editorial_reader_preview.event_sources.every(entry =>
+      entry.url.startsWith('https://') && !entry.scope.includes('apex_numbering')
+    ));
+    assert.equal(circuit.layout_evidence_review.evidence.some(entry => entry.supports_apex_numbering === true), false);
+  }
+});
