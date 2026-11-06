@@ -18,7 +18,9 @@ export async function ArchiveFeatures({ kind, fallback, locale }: { kind: keyof 
   const previews = await Promise.all(selected.map(async entity => ({ entity,
     result: await Promise.allSettled([getData<Profile>(`/api/${kind}/${entity.id}`)]),
   })));
-  // These cards are already server-rendered. Avoid speculative RSC requests for every\n  // featured profile on archive pages; WebKit can reject them during rapid navigation.\n  return <section className={styles.features} aria-labelledby="archive-featured" data-testid="archive-features">
+  // These cards are already server-rendered. Avoid speculative RSC requests for every
+  // featured profile on archive pages; WebKit can reject them during rapid navigation.
+  return <section className={styles.features} aria-labelledby="archive-featured" data-testid="archive-features">
     <SectionHeading kicker={t.index} title={t.selected} note={t.selectedNote} id="archive-featured" />
     <div className={styles.featureGrid}>{previews.map(({ entity, result }, index) => {
       const profile = result[0].status === 'fulfilled' ? result[0].value[0] as Profile | undefined : undefined;
