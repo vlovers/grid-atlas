@@ -18,18 +18,18 @@ export async function ArchiveFeatures({ kind, fallback, locale }: { kind: keyof 
   const previews = await Promise.all(selected.map(async entity => ({ entity,
     result: await Promise.allSettled([getData<Profile>(`/api/${kind}/${entity.id}`)]),
   })));
-  return <section className={styles.features} aria-labelledby="archive-featured" data-testid="archive-features">
+  // These cards are already server-rendered. Avoid speculative RSC requests for every\n  // featured profile on archive pages; WebKit can reject them during rapid navigation.\n  return <section className={styles.features} aria-labelledby="archive-featured" data-testid="archive-features">
     <SectionHeading kicker={t.index} title={t.selected} note={t.selectedNote} id="archive-featured" />
     <div className={styles.featureGrid}>{previews.map(({ entity, result }, index) => {
       const profile = result[0].status === 'fulfilled' ? result[0].value[0] as Profile | undefined : undefined;
       return <article className={styles.feature} key={entity.id}>
         <p className={styles.label}>{String(index + 1).padStart(2, '0')} / {entity.external_id}</p>
-        <h3><Link href={`/${kind}/${entity.id}`}>{entity.name}</Link></h3>
+        <h3><Link href={`/${kind}/${entity.id}`} prefetch={false}>{entity.name}</Link></h3>
         {profile ? <><p className={styles.featureYears}>{profile.first_season ?? '—'}{profile.last_season !== profile.first_season && `—${profile.last_season ?? '—'}`}</p>
           <dl><div><dt>{t.races}</dt><dd>{entity.races ?? profile.races ?? '—'}</dd></div>
             {entity.wins !== undefined && <div><dt>{t.wins}</dt><dd>{entity.wins}</dd></div>}</dl></> : null}
         {result.some(row => row.status === 'rejected') && <p role="status" className={styles.note}>{t.unavailable}</p>}
-        <Link href={`/${kind}/${entity.id}`}>{t.open} ↗</Link>
+        <Link href={`/${kind}/${entity.id}`} prefetch={false}>{t.open} ↗</Link>
       </article>;
     })}</div>
   </section>;
