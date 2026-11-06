@@ -46,7 +46,9 @@ test('original five collections keep five sourced stories while new historical g
   const original = new Set(['monaco','spa-francorchamps','monza','suzuka','silverstone']);
   assert.ok(candidateCircuitNarratives.length>=11);
   for(const circuit of candidateCircuitNarratives) {
-    assert.ok(circuit.moments.length >= (original.has(circuit.circuit_id) ? 5 : 2), circuit.circuit_id);
+    const publicSummaryOnly = circuit.moments.length <= 1 && circuit.biography.locator?.startsWith('Existing bilingual public summary;');
+    assert.ok(circuit.moments.length >= (original.has(circuit.circuit_id) ? 5 : publicSummaryOnly ? 0 : 2), circuit.circuit_id);
+    if (publicSummaryOnly) assert.equal(isCircuitEditionApproved(circuit.circuit_id), false, circuit.circuit_id);
     assert.equal(new Set(circuit.moments.map(moment=>moment.id)).size,circuit.moments.length);
     for(const moment of circuit.moments) {
       assert.ok(Number.isInteger(moment.year) && moment.year >= 1900 && moment.year <= 2026, `${circuit.circuit_id}: invalid event year ${moment.year}`);
