@@ -24,15 +24,13 @@ test('all 78 circuit identities have a distinct public bilingual story', () => {
   }
 });
 
-test('all circuit pages show archive facts and source-linked story entry', () => {
+test('all circuit pages show source-linked story entry without duplicate archive overview', () => {
   const page = read('apps/web/src/app/[locale]/circuits/[id]/page.tsx');
   const biography = read('apps/web/src/components/editorial/circuit-narrative.tsx');
-  const brief = read('apps/web/src/components/editorial/circuit-archive-brief.tsx');
-  assert.match(page, /<CircuitArchiveBrief externalId=\{circuit\.external_id\}/);
   assert.match(page, /<CircuitBiography circuitId=\{circuit\.external_id\}/);
   assert.match(biography, /const previous = getPublicCircuitStory\(circuitId\)/);
   assert.match(biography, /<h3>\{previous\.title\[locale\]\}<\/h3>/);
   assert.match(biography, /href="#circuit-moments"/);
-  assert.doesNotMatch(brief, /if \(!FIRST_CIRCUIT_BATCH\.has\(externalId\)\) return null/);
+  assert.doesNotMatch(page, /CircuitArchiveBrief/);
   assert.match(biography, /isCircuitEditionApproved\(circuitId\)/);
 });
