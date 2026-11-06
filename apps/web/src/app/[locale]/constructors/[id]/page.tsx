@@ -13,6 +13,7 @@ import mediaPublication from '@/components/media/publication.json';
 import type { MediaAsset } from '@/components/media/registry';
 import styles from './constructor.module.css';
 import { storyCopy } from '@/components/stories/copy';
+import { EntityStoryLinks } from '@/components/stories/entity-story-links';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { notFound } from 'next/navigation';
@@ -78,6 +79,7 @@ export default async function ConstructorProfile({ params, searchParams }: Props
       actions={<><a href={selectedSeason ? "#constructor-season" : "#constructor-archive"}>{e.seasons} ↓</a>{firstRecordedSeason && <Link href={`/explorer/constructors/${id}?year=${firstRecordedSeason.year}`}>{e.atlas} ↗</Link>}</>}
       statistics={[{ label: t('seasons'), value: format(team.seasons) }, { label: t('races'), value: format(team.races) }, { label: t('wins'), value: format(team.wins) }, { label: t('driverPodiums'), value: format(team.podium_finishes) }]} scope={e.recordScope} />
     <SourceAttribution locale={locale} />
+    <EntityStoryLinks kind="constructor" externalId={team.external_id} locale={locale} />
     <ArchiveHighlights locale={locale} title={locale === 'uk' ? 'Віхи конструктора' : 'Constructor milestones'} description={locale === 'uk' ? 'Перші результати та найуспішніші сезони за архівними протоколами.' : 'Early results and strongest recorded seasons, from the archive.'} items={[
       ...(career?.milestones.first_appearance ? [{ id: 'debut', eyebrow: locale === 'uk' ? 'ПЕРША УЧАСТЬ' : 'FIRST APPEARANCE', title: career.milestones.first_appearance.race.name, detail: String(career.milestones.first_appearance.race.year), href: `/${locale}/races/${career.milestones.first_appearance.race.id}` }] : []),
       ...(career?.milestones.first_win ? [{ id: 'first-win', eyebrow: locale === 'uk' ? 'ПЕРША ПЕРЕМОГА' : 'FIRST WIN', title: career.milestones.first_win.race.name, detail: String(career.milestones.first_win.race.year), href: `/${locale}/races/${career.milestones.first_win.race.id}` }] : []),

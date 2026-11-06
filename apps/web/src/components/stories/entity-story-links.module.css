@@ -1,0 +1,11 @@
+.section { margin-block: clamp(2.5rem, 5vw, 5rem); }
+.intro { max-width: 70ch; margin-bottom: 1.5rem; }
+.eyebrow, .year { color: var(--accent-ink); font: .7rem/1.6 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.intro h2 { font: 500 clamp(2rem, 4vw, 4rem)/1.08 var(--font-display); margin: .5rem 0 1rem; }
+.intro > p:last-child { color: var(--muted); line-height: 1.7; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.grid li { min-width: 0; display: flex; flex-direction: column; padding: clamp(1rem, 2vw, 2rem); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.grid h3 { font: 500 clamp(1.4rem, 2vw, 2rem)/1.15 var(--font-display); margin: .75rem 0; overflow-wrap: anywhere; }
+.grid h3 a:hover, .read:hover { text-decoration: underline; text-underline-offset: .2rem; }
+.grid li > p { font-size: .9rem; line-height: 1.65; color: var(--muted); }
+.read { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; padding-top: 1rem; margin-top: auto; color: var(--accent-ink); }
