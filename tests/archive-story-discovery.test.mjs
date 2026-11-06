@@ -18,7 +18,7 @@ test('archive story cards link to the existing editorial moment route, never dri
   assert.match(storyRoute, /export default async function EditorialMoment/);
   for (const source of [journeys, entity]) {
     assert.match(source, /\/stories\/moments\/\$\{story\.slug\}/);
-    assert.doesNotMatch(source, /href=\{\`\/stories\/\$\{story\.slug\}\`\}/);
+    assert.equal(source.includes('/stories/${story.slug}'), false);
     assert.match(source, /isAiReviewedStory\(/);
     assert.match(source, /story\[locale\]\.title/);
     assert.match(source, /story\[locale\]\.summary/);
