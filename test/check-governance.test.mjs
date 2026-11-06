@@ -53,15 +53,14 @@ test('fails symlink link escaping repository', () => withFixture(root => {
   }
 }));
 
-
 test('fails percent-encoded traversal in a governance link', () => withFixture(root => {
-  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\\n\\n[AGENTS.md](AGENTS.md) [escape](%2e%2e/%2e%2e/outside.md)\\n');
-  assert.match(verifyGovernance(root).join('\\n'), /link escapes repository/);
+  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\n\n[AGENTS.md](AGENTS.md) [escape](%2e%2e/%2e%2e/outside.md)\n');
+  assert.match(verifyGovernance(root).join('\n'), /link escapes repository/);
 }));
 
 test('fails malformed percent escapes rather than accepting unverifiable links', () => withFixture(root => {
-  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\\n\\n[AGENTS.md](AGENTS.md) [invalid](%ZZ.md)\\n');
-  assert.match(verifyGovernance(root).join('\\n'), /invalid relative link %ZZ.md/);
+  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\n\n[AGENTS.md](AGENTS.md) [invalid](%ZZ.md)\n');
+  assert.match(verifyGovernance(root).join('\n'), /invalid relative link %ZZ.md/);
 }));
 
 test('fails symlinked required review policy outside repository', () => withFixture(root => {
@@ -69,15 +68,15 @@ test('fails symlinked required review policy outside repository', () => withFixt
   try {
     const policy = join(root, 'docs/engineering/REVIEW_POLICY.md');
     rmSync(policy);
-    writeFileSync(join(outside, 'REVIEW_POLICY.md'), '# External policy\\n\\nUntrusted content.\\n');
+    writeFileSync(join(outside, 'REVIEW_POLICY.md'), '# External policy\n\nUntrusted content.\n');
     symlinkSync(join(outside, 'REVIEW_POLICY.md'), policy);
-    assert.match(verifyGovernance(root).join('\\n'), /REVIEW_POLICY.md: missing or unreadable/);
+    assert.match(verifyGovernance(root).join('\n'), /REVIEW_POLICY.md: missing or unreadable/);
   } finally {
     rmSync(outside, { recursive: true, force: true });
   }
 }));
 
 test('fails a missing local link with a fragment without discarding its path', () => withFixture(root => {
-  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\\n\\n[AGENTS.md](AGENTS.md) [missing](unknown.md#section)\\n');
-  assert.match(verifyGovernance(root).join('\\n'), /broken local link unknown.md#section/);
+  writeFileSync(join(root, 'CLAUDE.md'), '# Claude\n\n[AGENTS.md](AGENTS.md) [missing](unknown.md#section)\n');
+  assert.match(verifyGovernance(root).join('\n'), /broken local link unknown.md#section/);
 }));
