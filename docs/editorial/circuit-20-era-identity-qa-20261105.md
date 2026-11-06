@@ -136,3 +136,24 @@ This section records **narrow, directly inspected source claims**, not an approv
 | `clermont-ferrand` / 1972 | [Formula 1 1972 results](https://www.formula1.com/en/results/1972/races), season index event row | 2 July 1972; Jackie Stewart; 38 laps, French GP. | EN: The 1972 French GP index records Stewart's victory; it does not prove the Clermont-Ferrand period road-course geometry. UK: Індекс Гран-прі Франції 1972 року фіксує перемогу Стюарта, але не підтверджує геометрію тогочасної дорожньої траси Клермон-Феррана. |
 
 **Cumulative coverage (this review document only):** **20/20** rows now have at least one directly inspected Formula 1 event-level result or season-index observation, including the earlier contemporary *Motor Sport* report for Bugatti. This is **not 20 independently corroborated historical layouts**: **0/20** period geometries independently authenticated, **0/26** media candidates rights-cleared, **0/20** editorial approvals. The 2025 Belgium/Brazil index entries especially do not establish an exact venue-to-layout binding. All earlier progress counts above are dated snapshots and must not be interpreted as current counts. All 20 rows still require dated course evidence and claim-by-claim human review. `human_approval=false`; `publication_allowed=false`.
+
+
+## Cross-PR historical turn-guide handoff — 2026-11-06 (review-only)
+
+This section cross-references the seven unnumbered historic routes in [Draft PR #395](https://github.com/vlovers/grid-atlas/pull/395), particularly `docs/editorial/circuit-experience-v3/20261103_SEVEN_HISTORIC_ROUTES_REVIEW_GATE.md` at `abdcdf98a`. It is a **cross-PR acceptance checklist**, not new historical evidence. The 20-row event-results audit above cannot close a numbered-corner gate.
+
+| F1DB identity / period | PR #395 unresolved distinction | Required next artifact before a numbered guide |
+| --- | --- | --- |
+| `ain-diab` / 1958 | Archive 18 bends vs a secondary 15-bend summary; neither is an FIA-numbered sequence | Dated 1958 event plan with identifiable source edition, numbered turn-to-map crosswalk and explicit resolution of the 18/15 conflict |
+| `clermont-ferrand` / 1972 | Archive 48 turns vs operator's 51 bends; named features are not 1972 FIA indices | Period route diagram plus separate evidence for each name and any claimed number; do not infer numbers from photo position labels |
+| `dallas` / 1984 | Archive 23 turns vs 13 route-complex descriptions; 16 bend studies have no claim-specific locator in the PR #395 gate | 1984-specific diagram and pinpoint citations for all 16 descriptions; do not borrow the 1988 Trans-Am layout |
+| `detroit` / 1982 | Period road descriptions and later 1983–88 geometry are distinct; lengths differ | 1982 dated plan and per-turn crosswalk; the 17 report passage pointers support route narration, not apex numbers |
+| `pescara` / 1957 | Inland/coastal route and reported event chicane cannot be certified from older Coppa Acerbo plans | 1957 dated course plan, independent identification of chicane and source-located names, without substituting an earlier route |
+| `porto` / 1958–1960 | Period street narrative, 19-turn archive count and 2005 revival are different evidence types | Event-year Boavista plan, turn-to-apex evidence and separately documented source for the seven described bends |
+| `sebring` / 1959 | Original airfield course is not the modern circuit; eight described bends lack numbered-map authority | 1959 GP plan with provenance and explicit numbered crosswalk; do not repurpose a modern or generic endurance outline |
+
+**Quantitative boundary, sourced to PR #395's dated gate:** 68 EN/UK route sections, 53 individual bend studies, 13 named-feature studies, 37 bend studies with passage locators, **16 without passage locators**, and **0/7 approved numbered apex maps**. These are *candidate research counts*, not verified or publishable corner coverage. A locator is not proof that an FIA numbering scheme existed.
+
+**Handoff order:** first obtain claim-specific locators for Dallas's 16 studies; next resolve Ain-Diab/Charade count conflicts and Dallas/Detroit/Pescara/Porto/Sebring year-specific diagrams; then prepare human-reviewed turn-to-apex crosswalks. If a period numbered map cannot be obtained, retain an unnumbered historical reading guide rather than generating numbers. For every proposed source, record document title, publisher/author, publication date, exact page/figure, race year, route variant, and reproduction rights *separately*. A historical plan may be linked as evidence without permission to copy it.
+
+**Status:** no new maps authenticated, no new rights established, no approvals granted by this cross-reference. `human_approval=false`; `publication_allowed=false`. Do not promote this handoff or the event-results table to production copy.
