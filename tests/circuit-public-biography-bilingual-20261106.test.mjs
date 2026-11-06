@@ -12,6 +12,7 @@ test('unapproved circuit history renders only the existing public bilingual summ
   assert.match(narrative, /<p>\{previous\.description\[locale\]\}<\/p>/);
   assert.match(narrative, /<ReviewDetails locale=\{locale\} \/>/);
   assert.match(narrative, /href="#circuit-moments"/);
+  assert.match(narrative, /featuredStoryIsBiography && moment\.id/);
   assert.doesNotMatch(stories, /from ['"].*circuit-candidates/);
 });
 

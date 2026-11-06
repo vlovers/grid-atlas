@@ -73,13 +73,15 @@ test('archive race links require one unambiguous event in the given year', () =>
   assert.match(component, /uniqueRaceInYear\(history, moment\.raceYear\)/);
 });
 
-test('public short-story fallback neither duplicates the biography nor bypasses approval', () => {
+test('public short-story biography and moment evidence do not repeat the same paragraph or bypass approval', () => {
   assert.deepEqual(release.editions, [], 'no independent longform editions approved');
   assert.match(component, /getPublicCircuitStory\(circuitId\)/);
   assert.match(component, /isCircuitEditionApproved\(circuitId\)/);
   assert.match(component, /existing\?\.moments\.map/);
   assert.match(component, /href="#circuit-moments"/);
-  assert.doesNotMatch(component, /previous\.description\[locale\]/);
+  assert.match(component, /previous\.description\[locale\]/);
+  assert.match(component, /const featuredStoryIsBiography = Boolean\(featured && !existing && !isCircuitEditionApproved\(circuitId\)\)/);
+  assert.match(component, /!\(featuredStoryIsBiography && moment\.id ===/);
   assert.match(component, /noopener noreferrer/);
 });
 
