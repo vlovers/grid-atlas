@@ -157,3 +157,54 @@ This section cross-references the seven unnumbered historic routes in [Draft PR 
 **Handoff order:** first obtain claim-specific locators for Dallas's 16 studies; next resolve Ain-Diab/Charade count conflicts and Dallas/Detroit/Pescara/Porto/Sebring year-specific diagrams; then prepare human-reviewed turn-to-apex crosswalks. If a period numbered map cannot be obtained, retain an unnumbered historical reading guide rather than generating numbers. For every proposed source, record document title, publisher/author, publication date, exact page/figure, race year, route variant, and reproduction rights *separately*. A historical plan may be linked as evidence without permission to copy it.
 
 **Status:** no new maps authenticated, no new rights established, no approvals granted by this cross-reference. `human_approval=false`; `publication_allowed=false`. Do not promote this handoff or the event-results table to production copy.
+
+
+## Claim-specific Dallas / Charade review packet — 2026-11-06 (27 existing records)
+
+**Correction to the previous cross-PR summary:** PR #395's more specific `20261103_DALLAS_15_BILINGUAL_EVIDENCE_GAPS_AND_COUNT_CONFLICT.md` and `20261103_DALLAS_CHARADE_27_CLAIM_PINPOINT_AUDIT.md` distinguish **16 Dallas study bends in total, 1 contemporary report-located final corner, and 15 still missing claim-specific passages**. The earlier broad gate's “16 without passage locators” is superseded for this Dallas subset by the later claim-level audit. This correction does not create evidence or validate a numbered apex.
+
+### Fifteen Dallas research claims requiring individual passage evidence
+
+The labels below are existing *research labels*, not authenticated course features or official FIA names. Preserve the stable claim IDs and parent section numbers; a parent section is not an apex number.
+
+| Existing claim ID | EN research label | UK research label | Route section | Required review decision |
+| --- | --- | --- | ---: | --- |
+| `dallas:period:2` | Paddock-side opening right | Перший правий біля паддоку | 1 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:3` | Cotton Bowl approach left | Лівий на підході до Cotton Bowl | 2 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:4` | Sharper left onto the fairground avenue | Різкий лівий на алею комплексу | 3 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:5` | Right into the temporary inner section | Правий у тимчасову внутрішню секцію | 4 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:6` | Tightening left-hand arc | Ліва дуга зі зменшенням радіуса | 5 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:7` | Square right after the tightening arc | Прямокутний правий після дуги | 6 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:8` | Inner-section left hairpin | Ліва шпилька внутрішньої секції | 7 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:9` | Right entry to the parking-area jog | Правий вхід у зв'язку біля парковки | 8 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:10` | Left exit from the parking-area jog | Лівий вихід зі зв'язки біля парковки | 8 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:11` | Left entry to the return chicane | Лівий вхід у зворотну шикану | 9 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:12` | Right exit from the return chicane | Правий вихід зі зворотної шикани | 9 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:13` | Faster double-apex left | Швидший лівий із двома апексами | 10 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:14` | Right entry to the final parking chicane | Правий вхід в останню шикану біля парковки | 11 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:15` | Left exit from the final parking chicane | Лівий вихід з останньої шикани біля парковки | 11 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:16` | Broad left before the closing complex | Широкий лівий перед завершальною секцією | 12 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+
+The sixteenth claim, `dallas:period:1`, describes the **final corner**. Alan Henry's August 1984 *Motor Sport* report identifies a final corner in the account of Mansell's loss of drive; this is **one source-located bend description, not a certified turn index**. The 15 claims above have no matching individual report passage in the cited PR #395 audit. The archive's 23-turn attribute, RacingCircuits' 12 main corners plus chicanes, and these 16 study records are different counting conventions; do not map them by ordinal position.
+
+### Eleven Charade named-feature review decisions
+
+These names are taken from the existing PR #395 claim audit. Venue-archive section locators establish **name/sector context**, not 1972 FIA apex numbers. Do not convert a sector or multi-bend complex into a single turn.
+
+| Existing named feature | Charade venue archive section(s) | Recorded feature type | Review boundary |
+| --- | --- | --- | --- |
+| Manson | #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Gravenoire | #23, #26 | route_sector | Retain as route_sector; no certified 1972 FIA turn index |
+| Belvédère | #23 | named_feature_unresolved | Retain as named_feature_unresolved; no certified 1972 FIA turn index |
+| Jumeaux | #23, #26 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Carrière | #23 | named_feature_unresolved | Retain as named_feature_unresolved; no certified 1972 FIA turn index |
+| Champeaux | #23 | route_sector | Retain as route_sector; no certified 1972 FIA turn index |
+| Ferme | #46, #23 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Petit Pont | #16, #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Marlboro hairpin | #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Thèdes | #23 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Rosier | #40, #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+
+**Charade naming nuance:** PR #395's audit reports that the venue archive's section #40 explicitly connects the Rosier bend name to Louis Rosier. That is evidence for the *name origin*, not proof of a 1972 FIA-numbered corner. The 51 historic directional changes described by the venue and the archive's 48-turn attribute remain distinct observations.
+
+**Review outcome for these 27 records:** 15 Dallas claims lack individual passage locators, 1 Dallas final-corner claim has a report passage, and 11 Charade named features have venue-archive locators. **0/27** has an independently authenticated FIA numbered-apex crosswalk in the cited audit; **0/27** is approved for publication. These figures are a cross-PR inventory, not a fresh external-source verification. No images or maps were copied; rights remain unapproved. `human_approval=false`; `publication_allowed=false`.
