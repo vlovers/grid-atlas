@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "observed_on": "2026-10-28",
-  "purpose": "Post-merge source-diversity triage for all 33 expansion dossiers. This is a heuristic audit, not independent claim verification.",
+  "observed_on": "2026-10-30",
+  "purpose": "Offline source triage for all 33 expansion dossiers. This counts source_urls (official results and prior editorial links) only; historical_sources are separate research leads and are NOT claim-level verification.",
   "summary": {
     "research_circuits": 33,
     "research_stories": 165,
-    "total_story_source_references": 177,
-    "distinct_source_urls": 39,
-    "single_source_circuits": 27,
+    "total_story_source_references": 184,
+    "distinct_source_urls": 41,
+    "single_source_circuits": 26,
     "publication_ready": 0
   },
-  "review_priority": "Single-source five-story dossiers first; verify every distinct historical assertion, event-specific source scope, EN/UK translation, historical layout and rights before publication.",
+  "review_priority": "The original 27 one-source dossiers now have separate historical research leads, but all 165 scenes still need claim-by-claim adjudication, EN/UK review, layout/year verification and rights clearance. This classification-source count is not a human approval.",
   "circuits": [
     {
       "circuit_id": "aida",
@@ -157,9 +157,10 @@
       "circuit_id": "caesars-palace",
       "research_file": "EXPANSION_1_AINTREE_AVUS_CAESARS_RESEARCH_DRAFTS.json",
       "story_count": 5,
-      "unique_source_urls": 3,
+      "unique_source_urls": 4,
       "source_urls": [
         "https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh",
+        "https://www.formula1.com/en/results/1981/races/436/caesars-palace/race-result",
         "https://www.formula1.com/en/results/1981/races",
         "https://www.formula1.com/en/results/1982/races/452/caesar%27s-palace/race-result"
       ],
@@ -297,14 +298,15 @@
       "circuit_id": "madring",
       "research_file": "EXPANSION_2_REMAINING_FIVE_RESEARCH_DRAFTS.json",
       "story_count": 5,
-      "unique_source_urls": 1,
+      "unique_source_urls": 2,
       "source_urls": [
-        "https://www.formula1.com/en/racing/2026/spain"
+        "https://www.formula1.com/en/racing/2026/spain",
+        "https://www.formula1.com/en/results/2026/races/1294/spain/race-result"
       ],
       "distinct_story_years": [
         2026
       ],
-      "source_diversity_flag": "single_source_for_five_stories",
+      "source_diversity_flag": "multiple_sources_not_independent_fact_check",
       "claim_review": "pending",
       "bilingual_line_edit": "pending",
       "independent_approval": false,

@@ -22,8 +22,8 @@
             "uk": "Поул Сенни й жодного гоночного кола"
           },
           "narrative": {
-            "en": "Ayrton Senna came to the first Pacific Grand Prix at Aida with pole position. But his result sheet records zero completed race laps: a Saturday advantage had vanished almost as soon as Sunday began. That contrast makes Aida's 1994 debut more than a footnote in Schumacher's season.",
-            "uk": "Айртон Сенна здобув поул на першому Гран-прі Тихого океану в Аїді. Але в протоколі гонки навпроти його імені — жодного завершеного кола. Перевага суботи зникла майже одразу в неділю, і саме цей контраст робить дебют Аїди значно цікавішим за звичайний рядок календаря."
+            "en": "Senna's zero completed laps at the 1994 Pacific Grand Prix tell only the end of the story. He started from pole, but Schumacher edged ahead into the opening corner. Mika Häkkinen then struck Senna's Williams from behind; the ensuing collision also involved Ferrari's Nicola Larini. Ferrari's Nicola Larini was replacing the injured Jean Alesi, and neither he nor Senna completed a lap. The first-corner sequence comes from contemporary race accounts and Senna's later description, not from a classification table. A pole position was lost before the race had properly begun.",
+            "uk": "Нуль пройдених кіл у протоколі Сенни на Гран-прі Тихого океану 1994 року не пояснює, що сталося. Він стартував із поулу, але Шумахер випередив його перед першим поворотом. Після контакту з Мікою Гаккіненом Williams Сенни розвернуло, а в зіткнення потрапив і Ferrari Ларіні. Нікола Ларіні заміняв травмованого Жана Алезі; обидва гонщики вибули ще до завершення першого кола. Послідовність ударів описують тогочасні репортажі та слова Сенни, а не таблиця фінішу. Суботня перевага зникла за кілька секунд недільної гонки."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1994/awards/pole-positions",
@@ -31,7 +31,15 @@
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/june-1994/12/benetton-at-the-double/",
+            "https://www.grandprix.com/races/pacific-gp-1994.html",
+            "https://www.motorsport.com/f1/news/ayrton-senna-pacific-1994-benetton-doubts/4781548/"
+          ],
+          "historical_source_locator": "Grandprix.com Pacific GP 1994 and Motor Sport June 1994 describe Schumacher's start and the first-corner chain reaction. Motorsport.com retrospective quotes Senna and Häkkinen on the contact and Larini's involvement. Official F1 classification confirms zero completed laps, not the contact sequence; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 2,
@@ -41,15 +49,22 @@
             "uk": "Шумахер виграє перший Гран-прі Тихого океану"
           },
           "narrative": {
-            "en": "Michael Schumacher won the 1994 race for Benetton-Ford. Gerhard Berger finished second, 75.3 seconds behind, and Rubens Barrichello took third. The gaps tell a vivid story of how decisively Schumacher controlled the inaugural event.",
-            "uk": "Міхаель Шумахер виграв гонку 1994 року за Benetton-Ford. Герхард Бергер фінішував другим із відставанням 75,3 секунди, а Рубенс Баррікелло став третім. Різниця на фініші промовистіша за будь-яку загальну фразу про домінування."
+            "en": "Schumacher dominated Aida's inaugural 1994 race, but second place changed hands repeatedly. Hill spun while attacking Häkkinen, recovered through the field and climbed back to second before his Williams transmission failed. Häkkinen stalled at his pit stop and later retired with hydraulic trouble. Berger's promotion to second was therefore a story of rivals disappearing, not of a late pass on Schumacher. Barrichello completed the podium for Jordan. The official result confirms Berger and Barrichello behind the winner; contemporary reporting is needed to reconstruct Hill's recovery and the sequence of retirements.",
+            "uk": "Шумахер контролював першу гонку в Аїді 1994 року, але друге місце постійно змінювало власника. Гілла розвернуло під час атаки на Гаккінена, та він повернувся в боротьбу й піднявся другим, перш ніж зламалася трансмісія Williams. Гаккінен заглух на піт-стопі, а згодом зійшов через гідравліку. Бергер отримав друге місце після сходу суперників, а Баррікелло став третім на Jordan. Протокол показує остаточний подіум, проте не пояснює ні повернення Гілла, ні послідовності поломок. Саме ці епізоди змінили гонку позаду лідера."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1994/races/606/pacific/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/june-1994/12/benetton-at-the-double/",
+            "https://www.grandprix.com/races/pacific-gp-1994.html"
+          ],
+          "historical_source_locator": "Grandprix.com Pacific GP 1994 recounts Hill's recovery to P2 before transmission failure and Berger's promotion; Motor Sport June 1994 cross-checks the race. Official F1 classification confirms finishing positions, not why they changed; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 3,
@@ -59,15 +74,22 @@
             "uk": "Баррікелло на подіумі"
           },
           "narrative": {
-            "en": "Behind Schumacher and Berger, Rubens Barrichello brought his Jordan-Hart home in third in 1994, a lap down. Aida's inaugural podium therefore joined three very different teams: Benetton, Ferrari and Jordan. The supporting cast deserves its own chapter, not just a mention beneath the winner.",
-            "uk": "Позаду Шумахера й Бергера Рубенс Баррікелло привів Jordan-Hart до третього місця в 1994 році, програвши коло. Отже, на першому подіумі Аїди стояли представники трьох різних команд: Benetton, Ferrari та Jordan. Це окрема історія, а не лише примітка під іменем переможця."
+            "en": "Jordan had never previously stood on a Formula 1 podium before Barrichello finished third at Aida in 1994. The result was not straightforward: his Jordan-Hart stalled during a pit stop, while Brundle's McLaren remained a threat. Brundle's late overheating followed debris obstructing airflow to the Peugeot engine, and he retired after 67 completed laps. Barrichello eventually finished a lap behind Schumacher, but ahead of every other surviving challenger to third. The classification proves the podium and retirement; the stalled stop and cooling problem need the period accounts to explain why this particular Jordan breakthrough was so precarious.",
+            "uk": "Для Jordan це був перший подіум у Формулі-1: Баррікелло фінішував третім в Аїді 1994 року. Та результат не був гарантований — його Jordan-Hart заглух під час піт-стопу, а Брандл на McLaren продовжував тиснути. Пізній перегрів McLaren почався після того, як сміття перекрило потік повітря до двигуна Peugeot; Брандл зійшов після 67 кіл. Баррікелло програв Шумахеру коло, проте втримав місце на подіумі. Протокол підтверджує фініш і схід, а тогочасні репортажі пояснюють, чому для Jordan цей результат до останнього залишався під загрозою."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1994/races/606/pacific/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/june-1994/12/benetton-at-the-double/",
+            "https://www.grandprix.com/races/pacific-gp-1994.html"
+          ],
+          "historical_source_locator": "Grandprix.com Pacific GP 1994 describes Barrichello's stalled pit stop and Brundle's overheating; Motor Sport June 1994 is a second historical lead. Official F1 classification records Jordan's P3 and McLaren's retirement, not the cooling blockage; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 4,
@@ -77,8 +99,8 @@
             "uk": "Той самий переможець, інший Benetton"
           },
           "narrative": {
-            "en": "Aida returned in October 1995, and Schumacher won again. This time the official classification names his car as Benetton-Renault rather than the Benetton-Ford of 1994. Two wins at the same venue hide an important change in the team's machinery.",
-            "uk": "У жовтні 1995 року Аїда повернулася до календаря, і Шумахер знову переміг. Але тепер у протоколі зазначено Benetton-Renault, а не Benetton-Ford, як у 1994-му. За двома перемогами одного пілота стоїть важлива зміна техніки його команди."
+            "en": "Schumacher's 1995 Aida victory was built around the final pit-stop cycle. Schumacher led Coulthard by 21 seconds before the final pit stop and still led by roughly four seconds after his out-lap. The win secured his second drivers' championship, despite late trouble selecting lower gears. Contemporary accounts attribute part of Benetton's advantage to fresh tyres, but they disagree on the inventory: Grandprix.com reports four unused sets, Autosport three. The strategic advantage is supported by reporting; the precise number of sets remains unresolved.",
+            "uk": "Перемогу Шумахера в Аїді 1995 року вирішила боротьба навколо останньої хвилі піт-стопів. Перед останнім піт-стопом Шумахер випереджав Култгарда на 21 секунду, а після цього останнього піт-стопу й кола виїзду зберіг близько чотирьох секунд переваги. Ця перемога принесла йому другий чемпіонський титул, хоча наприкінці виникли труднощі з перемиканням на нижчі передачі. Тогочасні репортажі пов'язують перевагу Benetton зі свіжими шинами, але розходяться в їхній кількості: Grandprix.com пише про чотири невикористані комплекти, Autosport — про три. Стратегічна перевага підтверджена джерелами; точне число комплектів залишається спірним."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1994/races/606/pacific/race-result",
@@ -86,7 +108,15 @@
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.grandprix.com/races/pacific-gp-1995.html",
+            "https://www.motorsportmagazine.com/archive/article/december-1995/14/pacific-grand-prix/",
+            "https://www.autosport.com/general/news/grand-prix-gold-pacific-1995-5079213/5079213/"
+          ],
+          "historical_source_locator": "Exact tyre count disputed: Grandprix.com Pacific GP 1995 reports four unused fresh sets; Autosport Grand Prix Gold (Pacific 1995) reports three. Both describe a decisive tyre advantage around the pit stops; official F1 classification confirms the win, not tyre stock. Count unresolved; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 5,
@@ -96,15 +126,23 @@
             "uk": "Два Williams позаду переможця"
           },
           "narrative": {
-            "en": "David Coulthard finished second and Damon Hill third for Williams-Renault in the 1995 Pacific Grand Prix. Schumacher still won by nearly fifteen seconds. The result creates an accessible starting point for exploring why having two cars on the podium did not mean Williams had won the afternoon.",
-            "uk": "У Гран-прі Тихого океану 1995 року Девід Култгард і Деймон Гілл привели два Williams-Renault на друге й третє місця. Але Шумахер усе одно переміг із перевагою майже у 15 секунд. Це чудова відправна точка для історії про те, чому навіть два боліди на подіумі не означають перемогу команди."
+            "en": "Coulthard put Williams on pole at the 1995 Pacific Grand Prix, but Schumacher overturned that qualifying advantage through race pace and pit-stop timing. Coulthard and Hill still finished second and third, giving Williams two podium places without a victory. The official result records Schumacher's 14.920-second margin over Coulthard; it does not establish the tyre strategy behind it. Grandprix.com reports four unused fresh-tyre sets for Benetton; Autosport reports three. Both describe a strategic advantage, but the exact inventory remains disputed. That unresolved detail belongs in the source notes, not as a settled explanation of Williams' defeat.",
+            "uk": "Култгард здобув поул на Гран-прі Тихого океану 1995 року, але Шумахер відіграв кваліфікаційну перевагу Williams темпом у гонці та часом піт-стопів. Култгард і Гілл усе ж фінішували другим і третім: команда отримала два місця на подіумі, але не перемогу. Офіційний результат фіксує відрив Шумахера від Култгарда у 14,920 секунди, проте не пояснює шинної стратегії. Grandprix.com пише про чотири невикористані свіжі комплекти шин Benetton, а Autosport — про три. Обидва джерела описують стратегічну перевагу, проте точна кількість залишається спірною. Це невирішене питання слід залишити у примітках до джерел, а не подавати як встановлену причину поразки Williams."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1995/races/635/pacific/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.grandprix.com/races/pacific-gp-1995.html",
+            "https://www.motorsportmagazine.com/archive/article/december-1995/14/pacific-grand-prix/",
+            "https://www.autosport.com/general/news/grand-prix-gold-pacific-1995-5079213/5079213/"
+          ],
+          "historical_source_locator": "Exact tyre count disputed: Grandprix.com Pacific GP 1995 and Autosport Grand Prix Gold explain Coulthard's pole, Schumacher's tyre-saving strategy and the pit-stop swing. Their four-versus-three fresh-set discrepancy remains unresolved. Official F1 classification confirms the 14.920-second margin, not tyre allocation; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         }
       ]
     },
@@ -119,8 +157,8 @@
             "uk": "Один спекотний день у Fair Park"
           },
           "narrative": {
-            "en": "Formula 1 raced at Dallas Fair Park only once, on 8 July 1984. The official F1 retrospective describes extreme heat, bumps and a track surface that began breaking up. What had been designed as a spectacle became a physical test of the drivers and their machines.",
-            "uk": "Формула-1 приїхала до далласького Fair Park лише раз — 8 липня 1984 року. В історичному матеріалі F1 згадують виснажливу спеку, нерівності та покриття, яке почало руйнуватися. Гонка, задумана як велике шоу, перетворилася на випробування для людей і машин."
+            "en": "The inaugural Dallas Grand Prix was threatened before the cars even lined up. The 50-lap Can-Am race on Saturday had further damaged Fair Park's heat-weakened surface, prompting overnight repairs; the Sunday Formula 1 warm-up was cancelled while crews worked. Drivers eventually raced between concrete barriers on patched asphalt in temperatures reported above 105°F. The race went ahead, but repairs did not erase the underlying danger: deteriorating pavement continued to shape how drivers approached corners and survived the afternoon.",
+            "uk": "Перший Гран-прі Далласа опинився під загрозою ще до старту. Спека та суботня гонка Can-Am пошкодили асфальт у Fair Park, тому покриття ремонтували вночі; недільну розминку Формули-1 скасували, поки працювали ремонтні бригади. Пілоти зрештою стартували між бетонними бар'єрами на латаній трасі за температури понад 40 °C. Гонку вдалося провести, але ремонт не усунув небезпеки: руйнування асфальту й далі впливало на проходження поворотів і боротьбу за фініш."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1984/races/474/dallas/race-result",
@@ -128,7 +166,14 @@
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.grandprix.com/races/united-states-gp-1984-2.html"
+          ],
+          "historical_source_locator": "Motor Sport August 1984 report: heat, cancelled warm-up and emergency Fair Park surface repairs. Formula 1 classification confirms result only; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 2,
@@ -138,15 +183,22 @@
             "uk": "Росберг витримує й перемагає"
           },
           "narrative": {
-            "en": "Keke Rosberg won the 1984 Dallas Grand Prix in a Williams-Honda, with René Arnoux second for Ferrari, 22.464 seconds behind. In conditions remembered for their brutality, simply keeping the car going became part of the achievement. The result is as much about endurance as outright speed.",
-            "uk": "Кеке Росберг виграв Гран-прі Далласа 1984 року на Williams-Honda, а Рене Арну на Ferrari поступився йому 22,464 секунди. У гонці, яку пам'ятають через надзвичайно важкі умови, довести болід до фінішу було вже значною частиною успіху. Це історія не лише про швидкість, а й про витривалість."
+            "en": "Rosberg had started only eighth. At Dallas he had to reclaim the lead during a race of repeated reversals. Mansell led the first 35 laps from pole before Rosberg overtook him; Prost then went ahead on lap 49. Prost's later contact with the wall damaged his McLaren, returning the lead to Rosberg, who brought his Williams-Honda home. Arnoux's Ferrari failed to leave the dummy grid normally, yet he recovered from the back to finish second. The classification gives Rosberg the victory; period reports establish the changing order and the incidents that produced it.",
+            "uk": "Росберг стартував лише восьмим. У Далласі йому кілька разів довелося повертати собі лідерство. Менселл утримував перше місце з поулу протягом 35 кіл, доки Росберг його не обігнав; на 49-му колі вперед вийшов Прост. Згодом контакт Проста зі стіною пошкодив McLaren, і Росберг знову очолив гонку та довів Williams-Honda до фінішу. Ferrari Арну не змогла нормально рушити з попередньої решітки, проте він прорвався з хвоста пелотону на друге місце. Протокол фіксує перемогу Росберга, а тогочасні репортажі пояснюють зміни лідера та причини цих перестановок."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1984/races/474/dallas/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.grandprix.com/races/united-states-gp-1984-2.html"
+          ],
+          "historical_source_locator": "Motor Sport August 1984 report: Rosberg passes Mansell, Prost takes lead on lap 49, then loses it after wheel damage. Formula 1 classification confirms result only; independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 3,
@@ -156,8 +208,8 @@
             "uk": "Останні метри Менселла"
           },
           "narrative": {
-            "en": "Nigel Mansell's Lotus stopped near the finish in Dallas. As Formula 1's own retrospective recalls, he tried to push the car and collapsed from exhaustion. In the official classification he is listed sixth, having covered 64 laps. That final image became one of the race's defining memories.",
-            "uk": "Lotus Найджела Менселла зупинився неподалік фінішу в Далласі. Як згадує офіційний історичний матеріал Формули-1, пілот спробував штовхати болід і знепритомнів від виснаження. У протоколі він шостий із 64 пройденими колами. Ця сцена стала одним із головних спогадів про гонку."
+            "en": "Before the heat-exhaustion images made Dallas famous, Mansell had taken his first Formula 1 pole. Mansell's 1:37.041 qualifying lap had put his Lotus alongside team-mate de Angelis on the front row. He led the first 35 race laps, but his car lost drive near the finish. Mansell tried to push it across the line and collapsed in the heat as Ghinzani passed. Official classification credits Mansell with 64 completed laps and sixth place, versus Ghinzani's 65 laps and fifth. Those figures do not mean Mansell pushed his car over the finish line; the scene itself is documented by contemporary accounts.",
+            "uk": "До драматичних кадрів виснаженого Менселла в Далласі був його перший поул у Формулі-1: коло за 1:37,041 поставило його Lotus поруч із машиною напарника де Анджеліса на першому ряду. Менселл лідирував 35 кіл, але біля фінішу автомобіль утратив привід. Він спробував доштовхати Lotus до лінії та знепритомнів від спеки, поки повз проїхав Гіндзані. Шосте місце Менселла в офіційній класифікації означає 64 завершені кола, а Гіндзані — 65 кіл і п'яте. Ці цифри не означають, що Менселл перетнув фінішну лінію, штовхаючи машину: сам епізод відтворюють тогочасні репортажі."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1984/races/474/dallas/race-result",
@@ -165,7 +217,14 @@
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.grandprix.com/races/united-states-gp-1984-2.html"
+          ],
+          "historical_source_locator": "Motor Sport contemporary Dallas report and later Roebuck retrospective: Mansell push and collapse; Formula 1 classification records 64 completed laps and P6, not crossing the line. Independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 4,
@@ -175,15 +234,22 @@
             "uk": "Обидва McLaren сходять"
           },
           "narrative": {
-            "en": "Neither McLaren-TAG driver reached the finish in Dallas: Alain Prost retired after 56 laps and Niki Lauda after 60. Rather than telling the 1984 season only through its best-known title fight, Dallas shows how a single punishing race could temporarily scramble the usual expectations.",
-            "uk": "Жоден пілот McLaren-TAG не дістався фінішу в Далласі: Ален Прост зійшов після 56 кіл, Нікі Лауда — після 60. Якщо згадувати сезон 1984-го лише через боротьбу за титул, легко пропустити такі дні, коли одна виснажлива гонка ламала звичний порядок сил."
+            "en": "Prost briefly put McLaren in front at Dallas by taking the lead on lap 49, but the opportunity disappeared against the barriers. His second contact with a wall damaged a wheel and ended his race on lap 59. Four laps later Lauda struck the same section of the circuit and also retired. Neither McLaren reached the finish, leaving Rosberg's Williams-Honda to win. Motor Sport's report distinguishes Prost's second wall contact from Lauda's later impact at the same section. The results list both retirements, but cannot establish their causes or the lap-by-lap sequence.",
+            "uk": "Прост ненадовго вивів McLaren у лідери Далласа, очоливши гонку на 49-му колі, але шанс на перемогу зник біля бар'єрів. Під час другого контакту зі стіною він пошкодив колесо й завершив виступ на 59-му колі. Через чотири кола Лауда вдарився в бар'єр на тій самій ділянці траси й також зійшов. Жоден McLaren не фінішував, а переміг Росберг на Williams-Honda. Протокол підтверджує обидва сходи; їхню послідовність і причини встановлює тогочасний репортаж Motor Sport, а не сама таблиця результатів."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1984/races/474/dallas/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.grandprix.com/races/united-states-gp-1984-2.html"
+          ],
+          "historical_source_locator": "Motor Sport August 1984: Prost takes lead on lap 49, later contacts wall again, Lauda stops separately. The period narrative's lap-59 incident is distinct from Formula 1 classification's 56 completed laps. Independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         },
         {
           "story_index": 5,
@@ -193,15 +259,22 @@
             "uk": "Несподіване п'яте місце Osella"
           },
           "narrative": {
-            "en": "Piercarlo Ghinzani finished fifth for Osella-Alfa Romeo, two laps behind the winner. On an afternoon when many bigger names retired, his result stands out among the survivors. Dallas invites readers to look past the podium and notice the people whose best stories hide farther down the classification.",
-            "uk": "П'єркарло Гіндзані фінішував п'ятим на Osella-Alfa Romeo, відставши від переможця на два кола. У день, коли багато відоміших пілотів зійшли, цей результат особливо помітний. Даллас нагадує: цікаві історії часто приховані не на подіумі, а трохи нижче в протоколі."
+            "en": "Only Arnoux finished on the winner's lap at Dallas. Ghinzani's fifth place was a rare points finish for Osella, secured as Mansell's Lotus stopped short of the line. Mansell attempted to push his car, but Ghinzani passed and finished fifth while the Lotus was classified sixth. Fifth place earned Ghinzani two championship points under the 1984 scoring system, despite finishing two laps behind Rosberg. His result does not show that Osella had front-running pace: it shows that the car endured a race in which the heat, broken pavement and late retirements changed the finishing order.",
+            "uk": "П'яте місце Гіндзані в Далласі стало рідкісним очковим фінішем для Osella. Воно визначилося, коли Lotus Менселла зупинився перед лінією: поки Менселл намагався штовхати машину, Гіндзані проїхав повз і фінішував п'ятим, а Lotus класифікували шостим. П'яте місце принесло Гіндзані два очки за системою 1984 року, хоча він відстав від Росберга на два кола. Це не свідчить про швидкість Osella на рівні лідерів: машина витримала гонку, в якій спека, розбитий асфальт і пізні сходи змінили порядок фінішу."
           },
           "source_urls": [
             "https://www.formula1.com/en/results/1984/races/474/dallas/race-result"
           ],
           "research_status": "source_linked_editorial_draft",
           "independent_approval": false,
-          "publication": "blocked"
+          "publication": "blocked",
+          "historical_sources": [
+            "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+            "https://www.grandprix.com/races/united-states-gp-1984-2.html"
+          ],
+          "historical_source_locator": "Motor Sport Dallas report: Ghinzani passes the stopped Mansell; Formula 1 classification confirms P5/65 laps versus P6/64 laps and two championship points. Independent claim review pending.",
+          "historical_review_status": "pending_independent_claim_review",
+          "historical_evidence_scope": "race_context_lead_not_scene_claim_verified"
         }
       ]
     }

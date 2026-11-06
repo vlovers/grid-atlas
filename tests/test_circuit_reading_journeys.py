@@ -71,11 +71,19 @@ class CircuitReadingJourneysTests(unittest.TestCase):
             guide["id"] for guide in guides
             if all("/f1db/f1db/blob/" in item["source"] for item in guide["sections"])
         ]
-        self.assertTrue(purely_archival, "the archive-only coverage must remain explicitly differentiated")
-        self.assertIn("pescara", purely_archival)
-        self.assertNotIn("brands-hatch", purely_archival)
-        self.assertNotIn("paul-ricard", purely_archival)
-        self.assertNotIn("donington", purely_archival)
+        # Earlier coverage deliberately had archive-only filler. The source-led
+        # editorial batches have now replaced it; never require filler to return.
+        self.assertFalse(purely_archival, "no circuit should regress to classification-only corner filler")
+        for guide in guides:
+            self.assertTrue(
+                any("/f1db/f1db/blob/" not in item["source"] for item in guide["sections"]),
+                guide["id"] + ": requires a race report or independent venue source",
+            )
+            for item in guide["sections"]:
+                self.assertNotEqual(item["label"], "Start with the race record")
+                self.assertNotEqual(item["label"], "How to explore this historic venue")
+        # The renderer still distinguishes a sourced race story from a
+        # verified, individually named corner guide.
 
     def test_year_extraction_does_not_invent_race_ids(self):
         years = [int(match.group(0)) for match in re.finditer(r"\b(?:19|20)\d{2}\b", "1973–1975")]

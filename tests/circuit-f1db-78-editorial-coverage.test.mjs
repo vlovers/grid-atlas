@@ -22,12 +22,11 @@ test('78 pinned circuit identities each have a distinct bilingual short content 
   assert.equal(audit.summary.publication_ready_circuits, 0);
 });
 
-test('short entries are 20+20+33+3+2 without counting duplicates as extra circuits', () => {
+test('78 original short-entry sources remain stable as new full biographies are added', () => {
   const paths = [
     ['apps/web/src/components/editorial/circuit-extra-stories.json', 20],
     ['apps/web/src/components/editorial/circuit-next20-stories.json', 20],
     ['apps/web/src/components/editorial/circuit-final33-stories.json', 33],
-    ['apps/web/src/components/editorial/circuit-narratives-v3.json', 3],
   ];
   const sourceIds = new Map();
   for (const [path, count] of paths) {
@@ -39,6 +38,17 @@ test('short entries are 20+20+33+3+2 without counting duplicates as extra circui
       assert.ok(!sourceIds.has(id), id);
       sourceIds.set(id, path);
     }
+  }
+  const narrativePath = 'apps/web/src/components/editorial/circuit-narratives-v3.json';
+  const narrativeEntries = read(narrativePath).entries;
+  const originalNarrativeIds = new Set(audit.circuits.filter(c => c.short_bilingual_content_source === narrativePath).map(c => c.circuit_id));
+  assert.equal(originalNarrativeIds.size, 3);
+  assert.ok(narrativeEntries.length >= originalNarrativeIds.size);
+  assert.equal(new Set(narrativeEntries.map(e => e.circuit_id)).size, narrativeEntries.length);
+  for (const id of originalNarrativeIds) {
+    assert.ok(!sourceIds.has(id), id + ': original narrative should not duplicate short entry');
+    assert.ok(narrativeEntries.some(e => e.circuit_id === id), id + ': missing original short entry');
+    sourceIds.set(id, narrativePath);
   }
   for (const id of ['monaco', 'spa-francorchamps']) {
     assert.ok(!sourceIds.has(id));

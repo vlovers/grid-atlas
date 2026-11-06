@@ -40,7 +40,8 @@ test('risk-ranked circuit index and source links are accessible and bounded', ()
   assert.ok(circuitIndex);
   assert.equal((circuitIndex.match(/<a href="#circuit-/g) ?? []).length, 33);
   assert.equal((html.match(/class="back"><a href="#circuit-index"/g) ?? []).length, 165);
-  assert.equal((html.match(/rel="noopener noreferrer"/g) ?? []).length, 177);
+  assert.equal((html.match(/rel="noopener noreferrer"/g) ?? []).length,
+    queue.entries.reduce((sum, entry) => sum + entry.source_urls.length, 0));
   const headings = [...html.matchAll(/<section class="circuit" id="circuit-([a-z0-9-]+)"/g)]
     .map(match => match[1]);
   const expected = [...new Set(queue.entries.map(item => item.circuit_id))];
@@ -48,7 +49,7 @@ test('risk-ranked circuit index and source links are accessible and bounded', ()
   for (const id of headings) {
     assert.ok(html.includes('href="#circuit-' + id + '"'), id);
   }
-  assert.match(html, /27 single-source dossiers/);
+  assert.match(html, new RegExp(queue.summary.single_source_dossiers + ' single-source dossiers'));
   assert.match(html, /Sentence candidates \(not independently verified claims\)/);
 });
 

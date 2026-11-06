@@ -24,10 +24,11 @@ export function CircuitBiography({ circuitId, locale }: { circuitId: string; loc
   const existing = legacyCircuitHistory[circuitId]?.[locale];
   const biography = approved ? candidate?.biography : existing ? { title: { en: existing.title, uk: existing.title }, text: { en: existing.introduction, uk: existing.introduction }, source: existing.moments[0]?.url } : undefined;
   const previous = getPublicCircuitStory(circuitId);
+  const existingStoryIntro = previous?.description[locale].match(/^.+?[.!?](?:\s|$)/u)?.[0]?.trim() ?? previous?.description[locale];
   const uk = locale === 'uk';
   return <div data-testid="circuit-biography"><h2>{uk ? 'Історія траси' : 'Circuit history'}</h2>
     {biography ? <><h3>{biography.title[locale]}</h3><p>{biography.text[locale]}</p><a href={biography.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело · Formula 1' : 'Source · Formula 1'} ↗</a><ReviewDetails locale={locale} /></>
-      : previous ? <p>{uk ? 'Коротку історію з посиланням на джерело зібрано в розділі «Легендарні моменти» нижче.' : 'Find this circuit’s short, source-linked story in Memorable moments below.'} <a href="#circuit-moments">{uk ? 'Перейти до історії ↓' : 'Jump to the story ↓'}</a></p>
+      : previous ? <><h3>{previous.title[locale]}</h3><p>{existingStoryIntro}</p><p><a href="#circuit-moments">{uk ? 'Повна історія та джерела ↓' : 'Read the full story and sources ↓'}</a></p></>
         : <p>{uk ? 'Окремий нарис історії цієї траси ще не підготовлено. Нижче можна дослідити її конфігурації та Гран-прі.' : 'A dedicated circuit history is not available yet. Explore its layouts and Grands Prix below.'}</p>}
   </div>;
 }
