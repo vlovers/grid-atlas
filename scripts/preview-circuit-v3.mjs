@@ -10,7 +10,9 @@ const root = new URL('../', import.meta.url);
 const corners = { guides: candidateCornerGuides, sources: candidateCornerSources };
 const narratives = { entries: candidateCircuitNarratives };
 const historicIds = new Set(['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']);
-const historicReview = historicRoutes.circuits.filter(circuit => historicIds.has(circuit.circuit_id));
+const historicReview = historicRoutes.circuits;
+// All 17 unpublished period-route drafts belong in the private review, not just
+// the seven routes awaiting individual period bend identification.
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 /** Review 66 individual historical bend/name studies; these are never FIA turn IDs. */
 export function renderHistoricalBendQueue(circuitId, locale) {
