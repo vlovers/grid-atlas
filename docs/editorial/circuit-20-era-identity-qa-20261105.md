@@ -1,0 +1,210 @@
+# Twenty-circuit era-identity QA handoff — 2026-11-05
+
+**Scope:** read-only cross-check of 20 research entries in [PR #411](https://github.com/vlovers/grid-atlas/pull/411), exact commit `de70e10e227dbda33b9537f0dbb31ccdc468700b`, against pinned F1DB v2026.17.0 identifiers. Baseline `main` `392683c3af21587a858f2e1933ad1a20b81e79e2`. This is a review worklist, **not** independent historical validation, media approval, geometry reconstruction, or a public article. No source documents were independently authenticated during this pass. Research files are not merged into main.
+
+**Publication controls:** `human_approval=false`; `publication_allowed=false`. 20 circuit entries, 20 SVG proposals, 6 photo candidates; 0 approved images, 0 independent rights clearances. The recorded circuit/layout/race bindings are archival identity assertions only. Do not infer numbered corners, survey-grade outlines, contemporary track features, or an F1-event photograph from them.
+
+| # | F1DB circuit ID | Reference race year | Archive layout ID | Media evidence | Specific review before publication |
+| ---: | --- | ---: | --- | --- | --- |
+| 1 | `monaco` | 2022 | `monaco-6` | photo 2022 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: venue and capture year are not F1 event evidence |
+| 2 | `silverstone` | 2019 | `silverstone-8` | photo 2019 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: venue and capture year are not F1 event evidence |
+| 3 | `monza` | 2025 | `monza-7` | SVG only | Confirm event-year layout against dated race evidence; identifier alone is not period geometry |
+| 4 | `suzuka` | 2018 | `suzuka-2` | photo 2018 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: Capture2018-08-26 is venue context, not evidence of the2018 F1 race or numbered geometry. |
+| 5 | `spa-francorchamps` | 2025 | `spa-francorchamps-4` | photo 2005 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: Photo dated2005; selected2025 layout must not be inferred from this image. |
+| 6 | `interlagos` | 2025 | `interlagos-2` | SVG only | Confirm event-year layout against dated race evidence; identifier alone is not period geometry |
+| 7 | `montreal` | 2017 | `montreal-6` | photo 2017 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: venue and capture year are not F1 event evidence |
+| 8 | `bahrain` | 2025 | `bahrain-1` | photo 2021 | Confirm event-year layout against dated race evidence; identifier alone is not period geometry; photo: Creator field United Autosports conflicts with EXIF Author/Copyright JEP; context is2021 WEC, not2025 F1. |
+| 9 | `brands-hatch` | 1986 | `brands-hatch-2` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 10 | `donington` | 1993 | `donington-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 11 | `bugatti` | 1967 | `bugatti-1` | SVG only | Resolve event-vs-layout turns and length conflict before period claims |
+| 12 | `mont-tremblant` | 1968 | `mont-tremblant-1` | SVG only | Find 1968/1970 period plan; 2001 comparison is not evidence |
+| 13 | `aida` | 1995 | `aida-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 14 | `ain-diab` | 1958 | `ain-diab-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 15 | `clermont-ferrand` | 1972 | `clermont-ferrand-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 16 | `dallas` | 1984 | `dallas-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 17 | `detroit` | 1982 | `detroit-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 18 | `pescara` | 1957 | `pescara-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 19 | `porto` | 1960 | `porto-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+| 20 | `sebring` | 1959 | `sebring-1` | SVG only | Find a dated period race plan, distinguish event course from later outline |
+
+## Required evidence and QA workflow
+
+1. **Archive identity:** independently check the exact race ID, year, circuit ID and layout ID against the pinned release, retaining raw event/layout discrepancies; never overwrite one observation with another.
+2. **Period geometry:** use a dated race programme, contemporary organizer/FIA circuit plan or independently reliable period report for that year; a modern plan or archive SVG does not prove historical corner positions or numbering. Mark unavailable evidence as unavailable.
+3. **Photo context:** the six photos are *venue-only candidates*. Inspect exact Commons file-page revision, original author/EXIF conflicts, capture date and rights chain independently. Never claim a photo shows the selected Grand Prix merely because the year matches.
+4. **Bilingual review:** review EN and UK captions separately for implied geometry, era, event, licensing, and confidence. A translated assertion is not independent corroboration.
+5. **Application safety:** verify no candidate URL, caption or research note appears in production HTML, RSC payload, client bundles or metadata. The isolated loopback preview in PR #411 is not a public production route.
+6. **Revocation:** test withdrawal, stale fingerprint and incorrect circuit/race/layout context with memory-only synthetic approvals; never write synthetic approvals to `publication.json`.
+7. **Human handoff:** capture dated primary/independent evidence and an explicit reviewer decision for each claim and each media asset. Keep all publication switches false until actual authorized approval.
+
+## Known conflicts from the source observations (not independently resolved)
+
+- **Bugatti 1967:** event record 8 turns / 4.422 km versus layout attribute 14 turns / 4.185 km. These must remain separate claims.
+- **Mont-Tremblant 1968:** a 2001 comparison cannot establish 1968/1970 geometry.
+- **Spa-Francorchamps:** photo captured in 2005, selected archive layout is 2025; not proof of the 2025 event.
+- **Suzuka:** 2018-08-26 venue photo is not proof of the 2018 F1 race or numbered turns.
+- **Bahrain:** source creator United Autosports conflicts with EXIF author/copyright JEP; photo is 2021 WEC context, not 2025 F1.
+
+**Provenance:** [research intake](https://github.com/vlovers/grid-atlas/blob/de70e10e227dbda33b9537f0dbb31ccdc468700b/docs/media/circuit-intake-410/intake.json), [source observations](https://github.com/vlovers/grid-atlas/blob/de70e10e227dbda33b9537f0dbb31ccdc468700b/docs/media/circuit-intake-410/source-observations.json), [20-circuit report](https://github.com/vlovers/grid-atlas/blob/de70e10e227dbda33b9537f0dbb31ccdc468700b/docs/media/circuit-intake-410/REPORT.md). No additional source licenses or permissions are asserted here.
+
+## Bilingual claim-review queue — 20 event-specific acceptance questions
+
+These are **questions to verify**, not validated facts or publication-ready captions. The English and Ukrainian questions intentionally retain the same evidence boundaries. A reviewer must record the dated primary source, exact document locator, independently corroborating source where available, and a decision for **each** row; no question below confers permission to publish or authenticates geometry.
+
+| F1DB circuit | Evidence blocker tags | English: question to resolve | Українською: питання для перевірки |
+| --- | --- | --- | --- |
+| `monaco` | `period-map;photo-event` | Find the 2022 official event map and compare the course version; an image dated 2022 is not proof of race-day capture. | Знайти офіційну схему етапу 2022 року й звірити версію конфігурації; дата фото 2022 року не доводить зйомку під час Гран-прі. |
+| `silverstone` | `period-map;photo-event` | Identify the official 2019 Grand Prix circuit diagram and separately establish the photograph's actual event context. | Встановити офіційну схему Гран-прі 2019 року й окремо перевірити, яку саме подію показує фото. |
+| `monza` | `period-map` | Verify the 2025 race's configuration from event-specific documentation, not the archive layout ID alone. | Звірити конфігурацію гонки 2025 року за документами конкретного етапу, а не лише за ID в архіві. |
+| `suzuka` | `period-map;photo-event` | Find an event-dated 2018 course reference; the 26 August venue photo does not establish the Formula 1 race or numbered turns. | Знайти схему траси, датовану етапом 2018 року; фото від 26 серпня не доводить зйомку Формули-1 чи нумерацію поворотів. |
+| `spa-francorchamps` | `period-map;photo-era` | Compare the 2025 event course with its own official source; keep the 2005 photograph explicitly outside 2025 event evidence. | Звірити конфігурацію етапу 2025 року з офіційним джерелом; фото 2005 року не використовувати як доказ події 2025-го. |
+| `interlagos` | `period-map` | Check the 2025 event-specific circuit description before attributing any corner geometry to the archive outline. | Перевірити опис конфігурації етапу 2025 року, перш ніж пов'язувати геометрію поворотів з архівним контуром. |
+| `montreal` | `period-map;photo-event` | Locate the 2017 event course documentation; verify the photograph's venue and capture context separately. | Знайти документацію конфігурації етапу 2017 року; окремо перевірити місце й контекст зйомки фото. |
+| `bahrain` | `creator-conflict;photo-event;period-map` | Reconcile United Autosports versus JEP attribution at the exact file revision; the 2021 WEC image cannot represent the 2025 F1 race. | Уточнити розбіжність авторства United Autosports і JEP для точної ревізії файлу; знімок WEC 2021 року не представляє гонку Ф1 2025-го. |
+| `brands-hatch` | `period-map;variant` | Seek the 1986 Grand Prix programme or organizer's period map and confirm which course variant was used. | Знайти програму Гран-прі 1986 року або схему організатора того часу та підтвердити варіант траси. |
+| `donington` | `period-map;variant` | Find the 1993 European Grand Prix event plan and distinguish its race course from modern Donington diagrams. | Знайти схему Гран-прі Європи 1993 року й відрізнити конфігурацію гонки від сучасних схем Донінгтона. |
+| `bugatti` | `metadata-conflict;period-map` | Resolve the 1967 event 8-turn/4.422-km record against the 14-turn/4.185-km layout attribute without silently choosing either. | З'ясувати суперечність між записом гонки 1967 року (8 поворотів, 4,422 км) і атрибутом конфігурації (14 поворотів, 4,185 км), не підміняючи один запис іншим. |
+| `mont-tremblant` | `period-map;anachronism` | Obtain 1968 and 1970 period maps independently; a 2001 comparison must not authenticate either historical race layout. | Окремо знайти схеми 1968 та 1970 років; порівняння 2001 року не підтверджує жодну історичну конфігурацію. |
+| `aida` | `period-map;turn-numbers` | Confirm the 1995 Pacific Grand Prix course with a contemporary event map before asserting named or numbered corners. | Підтвердити конфігурацію Гран-прі Тихого океану 1995 року за схемою того часу до згадок про назви чи номери поворотів. |
+| `ain-diab` | `period-map;turn-numbers` | Find a 1958 Moroccan Grand Prix route plan and document whether corner names or numbering existed in that source. | Знайти план маршруту Гран-прі Марокко 1958 року й зафіксувати, чи містить джерело назви або нумерацію поворотів. |
+| `clermont-ferrand` | `period-map;variant` | Locate the 1972 French Grand Prix course map; distinguish period road-course geometry from later venue changes. | Знайти схему Гран-прі Франції 1972 року; відокремити тодішню геометрію дорожньої траси від пізніших змін. |
+| `dallas` | `period-map;street-course` | Check the 1984 Grand Prix street-course plan; avoid inferring precise bends from later city maps. | Перевірити план міської траси Гран-прі 1984 року; не виводити точні повороти з пізніших мап міста. |
+| `detroit` | `period-map;street-course` | Confirm the 1982 Grand Prix street-course variant using a period plan, not a later Detroit layout. | Підтвердити варіант міської траси Гран-прі 1982 року за планом того часу, а не за пізнішою конфігурацією Детройта. |
+| `pescara` | `period-map;road-course` | Find a 1957 Grand Prix route plan and corroborate its road-course identity before introducing individual corner claims. | Знайти план маршруту Гран-прі 1957 року й підтвердити історичну трасу до опису окремих поворотів. |
+| `porto` | `period-map;street-course` | Locate the 1960 Portuguese Grand Prix route and distinguish it from other Porto street-racing configurations. | Знайти маршрут Гран-прі Португалії 1960 року й відрізнити його від інших міських конфігурацій Порту. |
+| `sebring` | `period-map;variant` | Check the 1959 United States Grand Prix event layout against a period course plan; do not substitute a later endurance-race map. | Звірити конфігурацію Гран-прі США 1959 року зі схемою того часу; не підміняти її пізнішою схемою перегонів на витривалість. |
+
+**Decision record required per row:** `source_document`, `event_year`, `document_date`, `exact_locator`, `claim_supported_or_disputed`, `independent_corroboration_or_unavailable`, `reviewer`, `review_date`, `EN_review`, `UK_review`. Until that evidence exists, treat every question as **unresolved**. These tags are editorial triage, not factual classifications of the venue.
+
+## Independent source pass — 2026-11-05, 20:00 Europe/Kyiv (partial, 2 of 20)
+
+This section records **narrow, directly inspected source claims**, not an approval of the 20-row intake. Source pages were read during this pass; their race-result assertions are not a substitute for dated course drawings. A period eyewitness narrative and a modern official results database provide different kinds of evidence. The remaining 18 circuit rows retain **unresolved** status; no inference is made from the existence of an external link.
+
+| Circuit / claim | Source inspected and exact locator | What the source supports | What it does **not** support | EN / UK editorial constraint |
+| --- | --- | --- | --- | --- |
+| `bugatti` · 1967 race circuit length and setting | Denis Jenkinson's contemporary 1967 French GP report, republished by *Motor Sport*: [1967 French Grand Prix race report](https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/), opening account of the newly built Bugatti school circuit | The reporter explicitly describes a **4.422-km** Bugatti course using the Le Mans pit/start area and car-park hairpins. The [official F1 1967 results index](https://www.formula1.com/en/results/1967/races) separately lists the French GP on **2 July 1967**, winner **Jack Brabham**, **80 laps**. | Neither source inspected here independently certifies the archive layout attribute **4.185 km / 14 turns**, nor an exact numbered-corner map. The reported 4.422 km does **not** resolve why the archive layout differs; retain both observations. | EN: “The period race report describes a 4.422-km Bugatti course; archive layout metadata differs and remains under review.” UK: “У репортажі того часу описано трасу Bugatti завдовжки 4,422 км; архівні атрибути конфігурації відрізняються й потребують перевірки.” **Research wording only; not publication-approved.** |
+| `mont-tremblant` · 1968 Canadian GP event identity | [Official Formula 1 1968 Canadian GP race result](https://www.formula1.com/en/results/1968/races/264/canada/race-result), page heading and race-result table | The results page identifies **Mont-Tremblant, 22 September 1968**, **90 laps** for winner **Denny Hulme** (McLaren Ford). This independently supports the event/venue/date/result association, subject to normal database limitations. | The result table contains **no authenticated 1968 circuit drawing, numbered turns or proof that a 2001 outline matches the 1968 or 1970 event**. The 1970 geometry remains separately unresolved. | EN: “Formula 1 records the 1968 Canadian GP at Mont-Tremblant; the period course shape still requires a dated plan.” UK: “За даними Формули-1, Гран-прі Канади 1968 року відбувся на Mont-Tremblant; форму траси того часу ще потрібно звірити з датованим планом.” **Research wording only; not publication-approved.** |
+
+**Review state:** 2/20 circuits have at least one externally inspected, narrow event-level claim; **0/20 period geometries authenticated**, **0/26 media candidates cleared**, **0/20 rows editorially approved**. This is not a completeness score for all historical claims. Do not promote these source notes to public EN/UK copy without independent claim-level and human review. `human_approval=false`; `publication_allowed=false`.
+
+
+## Independent source pass — 2026-11-05, 21:00 Europe/Kyiv (six additional event identities)
+
+**Scope:** six more directly inspected Formula 1 race-result pages. These establish narrow event identities and classification rows, **not** independently surveyed period geometry, corner names/numbers, race-day photos, or licensing. This is one continuation of the existing 20-row review package, not six public stories. No media or publication controls change.
+
+| Circuit / event | Exact official F1 result page | Narrow observed event claim | Evidence still missing / EN and UK research-only wording |
+| --- | --- | --- | --- |
+| `dallas` / 1984 | [Dallas 1984 race result](https://www.formula1.com/en/results/1984/races/474/dallas/race-result), heading and P1 row | **8 July 1984**, **Dallas Fair Park**, Keke Rosberg (Williams Honda), **67 laps**. | Period street-course plan and numbered bends **not established**. EN: “Formula 1 records Rosberg's 1984 win at Dallas Fair Park; the street-course geometry needs a period plan.” UK: “За даними Формули-1, Росберг переміг 1984 року на Dallas Fair Park; геометрію міської траси потрібно перевірити за планом того часу.” |
+| `detroit` / 1982 | [Detroit 1982 race result](https://www.formula1.com/en/results/1982/races/443/detroit/race-result), heading and P1 row | **6 June 1982**, **Detroit Street Circuit**, John Watson (McLaren Ford), **62 laps**. | Do not substitute later Detroit layouts. EN: “Formula 1 records Watson's 1982 Detroit victory; the exact street-course variant is unverified here.” UK: “Формула-1 фіксує перемогу Вотсона в Детройті 1982 року; точний варіант міської траси тут не підтверджено.” |
+| `sebring` / 1959 | [United States 1959 race result](https://www.formula1.com/en/results/1959/races/177/united-states/race-result), heading and P1 row | **12 December 1959**, **Sebring Raceway**, Bruce McLaren (Cooper Climax), **42 laps**. | An endurance-course map from another year is not the 1959 F1 event plan. EN: “The official results place the 1959 US Grand Prix at Sebring; the period route remains to be checked.” UK: “Офіційні результати вказують Себрінг як місце Гран-прі США 1959 року; маршрут того часу ще потрібно перевірити.” |
+| `porto` / 1960 | [Portugal 1960 race result](https://www.formula1.com/en/results/1960/races/185/portugal/race-result), heading and P1 row | **14 August 1960**, **Circuit da Boavista**, Jack Brabham (Cooper Climax), **55 laps**. | No proof of numbered corners or equivalence with another Porto city circuit. EN: “The 1960 Portuguese Grand Prix result names Circuit da Boavista; its period route requires separate evidence.” UK: “У результатах Гран-прі Португалії 1960 року зазначено Circuit da Boavista; маршрут того часу потребує окремого підтвердження.” |
+| `ain-diab` / 1958 | [Morocco 1958 race result](https://www.formula1.com/en/results/1958/races/168/morocco/race-result), heading and P1 row | **19 October 1958**, **Ain-Diab Circuit**, Stirling Moss (Vanwall), **53 laps**. | Result table cannot validate a 1958 street/road plan or bend numbering. EN: “The official results identify Ain-Diab as the 1958 Moroccan Grand Prix venue; the course drawing remains unverified.” UK: “Офіційні результати називають Ain-Diab місцем Гран-прі Марокко 1958 року; схему траси ще не підтверджено.” |
+| `donington` / 1993 | [European 1993 race result](https://www.formula1.com/en/results/1993/races/592/europe/race-result), heading and P1 row | **11 April 1993**, **Donington Park**, Ayrton Senna (McLaren Ford), **76 laps**. | Do not derive turn names/geometry from a modern Donington map. EN: “Formula 1 records Senna's 1993 European Grand Prix victory at Donington Park; a dated course plan is still needed.” UK: “Формула-1 фіксує перемогу Сенни на Гран-прі Європи 1993 року в Донінгтон-Парку; потрібен датований план конфігурації.” |
+
+**Source quality note:** these six pages are all from the *same official Formula 1 results database* and therefore do **not** count as six independent archival provenance chains. They corroborate event/date/winner identity within that database, not physical route geometry. In particular, the separate [Donington 1993 overall qualifying page](https://www.formula1.com/en/results/1993/races/592/europe/qualifying) displays a different timing dataset from [qualifying 1](https://www.formula1.com/en/results/1993/races/592/europe/qualifying/1); no qualifying time is imported into this review without resolving that distinction. No result-page claim is treated as a primary period course map.
+
+**Updated bounded progress:** **8/20** entries now have at least one directly inspected narrow event-level source claim (previous two + these six); **0/20** period geometries authenticated; **0/26** media candidates cleared; **0/20** editorial approvals. The other 12 entries still await direct independent source inspection. All EN/UK formulations above are review-only. `human_approval=false`; `publication_allowed=false`.
+
+
+## Independent source pass — 2026-11-05, 22:00 Europe/Kyiv (three additional event identities)
+
+**Scope:** three more exact Formula 1 race-result pages inspected independently of the PR #411 intake. These are event/classification checks, **not** historical layout surveys, independent provenance chains, rights reviews, or approval of any proposed corner numbering. Formula1.com is a single database source; three result pages do not constitute three independent sources. The research remains private/draft.
+
+| Circuit / event | Exact inspected official source | Narrow supported observation | Evidence gap and EN / UK review-only wording |
+| --- | --- | --- | --- |
+| `brands-hatch` / 1986 | [British GP 1986 result](https://www.formula1.com/en/results/1986/races/506/great-britain/race-result), event heading and P1 row | **13 July 1986**, **Brands Hatch Circuit**, Nigel Mansell (Williams Honda), **75 laps**. | No dated course plan or authenticated 1986 bend numbering inspected. EN: “The official 1986 British Grand Prix results identify Brands Hatch and Mansell's win; the period circuit variant requires a separate plan.” UK: “Офіційні результати Гран-прі Великої Британії 1986 року вказують Brands Hatch і перемогу Менселла; конфігурацію того часу потрібно звірити з окремим планом.” |
+| `aida` / 1995 | [Pacific GP 1995 result](https://www.formula1.com/en/results/1995/races/635/pacific/race-result), event heading and P1 row | **22 October 1995**, **TI Circuit Aida**, Michael Schumacher (Benetton Renault), **83 laps**. | No period plan or corner-numbering authority inspected. EN: “Formula 1 records Schumacher's 1995 Pacific Grand Prix victory at TI Circuit Aida; its race-year layout still needs a dated course plan.” UK: “Формула-1 фіксує перемогу Шумахера на Гран-прі Тихого океану 1995 року на TI Circuit Aida; конфігурацію цього року ще потрібно перевірити за датованою схемою.” |
+| `pescara` / 1957 | [Pescara GP 1957 result](https://www.formula1.com/en/results/1957/races/156/pescara/race-result), event heading and P1 row | **18 August 1957**, **Pescara Circuit**, Stirling Moss (Vanwall), **18 laps**. | No independently dated 1957 road-course route or bend names inspected. EN: “The official 1957 Pescara Grand Prix classification lists Moss as winner; the historical road route remains to be authenticated separately.” UK: “Офіційна класифікація Гран-прі Пескари 1957 року називає Мосса переможцем; історичний дорожній маршрут потребує окремого підтвердження.” |
+
+**Bounded progress:** **11/20** circuit rows now have at least one directly inspected, narrow event-level source claim; **9/20** remain without a directly inspected claim in this handoff. **0/20** period geometries independently authenticated, **0/26** media candidates rights-cleared, **0/20** editorial approvals. Event-year identity and result classification are not period geometry. Nothing here is approved for publication: `human_approval=false`, `publication_allowed=false`.
+
+
+## Independent source pass — 2026-11-05, 23:00 Europe/Kyiv (nine remaining event-level checks)
+
+**Method and scope:** inspected official Formula 1 individual race-result pages or season-result indices for the nine remaining entries. An index is explicitly weaker than an event-specific course plan; the 2025 index can establish a recorded GP/date/result but does **not**, by itself, prove the named archive circuit ID or layout ID. No period maps, corner numbering, photo permissions or independent archival provenance were authenticated. Each row remains a *research-only* claim, not a publication decision.
+
+| F1DB circuit / year | Directly inspected F1 source and locator | Narrow supported result or index observation | EN / UK bounded research wording |
+| --- | --- | --- | --- |
+| `monaco` / 2022 | [Formula 1 2022 results](https://www.formula1.com/en/results/2022/races/1112/monaco/race-result), event heading and winner row | 29 May 2022; Sergio Pérez; 64 classified winning laps. | EN: Formula 1 lists Pérez as winner of the 2022 Monaco GP; a dated course plan is still required. UK: За даними Формули-1, Перес переміг на Гран-прі Монако 2022 року; датовану схему конфігурації ще потрібно перевірити. |
+| `silverstone` / 2019 | [Formula 1 2019 results](https://www.formula1.com/en/results/2019/races/1009/great_britain/race-result), event heading and winner row | 14 July 2019; Lewis Hamilton; 52 laps. | EN: The 2019 British GP classification records Hamilton's win at Silverstone, not a surveyed circuit plan. UK: Класифікація Гран-прі Великої Британії 2019 року фіксує перемогу Гамільтона в Сільверстоуні, а не підтверджує точну схему траси. |
+| `monza` / 2025 | [Formula 1 2025 results](https://www.formula1.com/en/results/2025/races/1268/italy/race-result), event heading and winner row | 7 September 2025; Max Verstappen; 53 laps. | EN: The official 2025 Italian GP result identifies Monza and Verstappen's win; exact corner geometry remains unverified. UK: Офіційні результати Гран-прі Італії 2025 року вказують Монцу й перемогу Ферстаппена; точну геометрію поворотів не підтверджено. |
+| `suzuka` / 2018 | [Formula 1 2018 results](https://www.formula1.com/en/results/2018/races/995/japan/race-result), event heading and winner row | 7 October 2018; Lewis Hamilton; 53 laps. | EN: The 2018 Japanese GP result places Hamilton's victory at Suzuka; an August venue photo is not race-day evidence. UK: Результати Гран-прі Японії 2018 року фіксують перемогу Гамільтона на Сузуці; серпневе фото автодрому не доводить зйомку в день гонки. |
+| `spa-francorchamps` / 2025 | [Formula 1 2025 results](https://www.formula1.com/en/results/2025/races), season index event row | Belgian GP listed for 27 July 2025 in season results index; no geometry derived. | EN: The 2025 season index records the Belgian GP, but a 2005 Spa photo cannot document the 2025 race configuration. UK: Календар результатів 2025 року містить Гран-прі Бельгії, проте фото Спа 2005 року не підтверджує конфігурацію гонки 2025-го. |
+| `interlagos` / 2025 | [Formula 1 2025 results](https://www.formula1.com/en/results/2025/races), season index event row | Brazilian GP listed for 9 November 2025 in season results index; no geometry derived. | EN: The 2025 results index records the Brazilian GP; the Interlagos layout and corner numbering need event-specific evidence. UK: Індекс результатів 2025 року містить Гран-прі Бразилії; конфігурацію Інтерлагоса й нумерацію поворотів потрібно звірити за документами етапу. |
+| `montreal` / 2017 | [Formula 1 2017 results](https://www.formula1.com/en/results/2017/races), season index event row | 11 June 2017; Lewis Hamilton; 70 laps, Canadian GP. | EN: The 2017 Canadian GP results identify Hamilton's victory; they do not authenticate a period track plan or the candidate photograph. UK: Результати Гран-прі Канади 2017 року фіксують перемогу Гамільтона, але не підтверджують схему траси чи походження фото. |
+| `bahrain` / 2025 | [Formula 1 2025 results](https://www.formula1.com/en/results/2025/races), season index event row | 13 April 2025; Oscar Piastri; 57 laps. | EN: Formula 1 records Piastri's 2025 Bahrain win; the 2021 WEC photo and disputed creator metadata remain unrelated and unresolved. UK: Формула-1 фіксує перемогу Піастрі в Бахрейні 2025 року; фото WEC 2021 року й суперечливі метадані авторства залишаються окремими невирішеними питаннями. |
+| `clermont-ferrand` / 1972 | [Formula 1 1972 results](https://www.formula1.com/en/results/1972/races), season index event row | 2 July 1972; Jackie Stewart; 38 laps, French GP. | EN: The 1972 French GP index records Stewart's victory; it does not prove the Clermont-Ferrand period road-course geometry. UK: Індекс Гран-прі Франції 1972 року фіксує перемогу Стюарта, але не підтверджує геометрію тогочасної дорожньої траси Клермон-Феррана. |
+
+**Cumulative coverage (this review document only):** **20/20** rows now have at least one directly inspected Formula 1 event-level result or season-index observation, including the earlier contemporary *Motor Sport* report for Bugatti. This is **not 20 independently corroborated historical layouts**: **0/20** period geometries independently authenticated, **0/26** media candidates rights-cleared, **0/20** editorial approvals. The 2025 Belgium/Brazil index entries especially do not establish an exact venue-to-layout binding. All earlier progress counts above are dated snapshots and must not be interpreted as current counts. All 20 rows still require dated course evidence and claim-by-claim human review. `human_approval=false`; `publication_allowed=false`.
+
+
+## Cross-PR historical turn-guide handoff — 2026-11-06 (review-only)
+
+This section cross-references the seven unnumbered historic routes in [Draft PR #395](https://github.com/vlovers/grid-atlas/pull/395), particularly `docs/editorial/circuit-experience-v3/20261103_SEVEN_HISTORIC_ROUTES_REVIEW_GATE.md` at `abdcdf98a`. It is a **cross-PR acceptance checklist**, not new historical evidence. The 20-row event-results audit above cannot close a numbered-corner gate.
+
+| F1DB identity / period | PR #395 unresolved distinction | Required next artifact before a numbered guide |
+| --- | --- | --- |
+| `ain-diab` / 1958 | Archive 18 bends vs a secondary 15-bend summary; neither is an FIA-numbered sequence | Dated 1958 event plan with identifiable source edition, numbered turn-to-map crosswalk and explicit resolution of the 18/15 conflict |
+| `clermont-ferrand` / 1972 | Archive 48 turns vs operator's 51 bends; named features are not 1972 FIA indices | Period route diagram plus separate evidence for each name and any claimed number; do not infer numbers from photo position labels |
+| `dallas` / 1984 | Archive 23 turns vs 13 route-complex descriptions; 16 bend studies have no claim-specific locator in the PR #395 gate | 1984-specific diagram and pinpoint citations for all 16 descriptions; do not borrow the 1988 Trans-Am layout |
+| `detroit` / 1982 | Period road descriptions and later 1983–88 geometry are distinct; lengths differ | 1982 dated plan and per-turn crosswalk; the 17 report passage pointers support route narration, not apex numbers |
+| `pescara` / 1957 | Inland/coastal route and reported event chicane cannot be certified from older Coppa Acerbo plans | 1957 dated course plan, independent identification of chicane and source-located names, without substituting an earlier route |
+| `porto` / 1958–1960 | Period street narrative, 19-turn archive count and 2005 revival are different evidence types | Event-year Boavista plan, turn-to-apex evidence and separately documented source for the seven described bends |
+| `sebring` / 1959 | Original airfield course is not the modern circuit; eight described bends lack numbered-map authority | 1959 GP plan with provenance and explicit numbered crosswalk; do not repurpose a modern or generic endurance outline |
+
+**Quantitative boundary, sourced to PR #395's dated gate:** 68 EN/UK route sections, 53 individual bend studies, 13 named-feature studies, 37 bend studies with passage locators, **16 without passage locators**, and **0/7 approved numbered apex maps**. These are *candidate research counts*, not verified or publishable corner coverage. A locator is not proof that an FIA numbering scheme existed.
+
+**Handoff order:** first obtain claim-specific locators for Dallas's 16 studies; next resolve Ain-Diab/Charade count conflicts and Dallas/Detroit/Pescara/Porto/Sebring year-specific diagrams; then prepare human-reviewed turn-to-apex crosswalks. If a period numbered map cannot be obtained, retain an unnumbered historical reading guide rather than generating numbers. For every proposed source, record document title, publisher/author, publication date, exact page/figure, race year, route variant, and reproduction rights *separately*. A historical plan may be linked as evidence without permission to copy it.
+
+**Status:** no new maps authenticated, no new rights established, no approvals granted by this cross-reference. `human_approval=false`; `publication_allowed=false`. Do not promote this handoff or the event-results table to production copy.
+
+
+## Claim-specific Dallas / Charade review packet — 2026-11-06 (27 existing records)
+
+**Correction to the previous cross-PR summary:** PR #395's more specific `20261103_DALLAS_15_BILINGUAL_EVIDENCE_GAPS_AND_COUNT_CONFLICT.md` and `20261103_DALLAS_CHARADE_27_CLAIM_PINPOINT_AUDIT.md` distinguish **16 Dallas study bends in total, 1 contemporary report-located final corner, and 15 still missing claim-specific passages**. The earlier broad gate's “16 without passage locators” is superseded for this Dallas subset by the later claim-level audit. This correction does not create evidence or validate a numbered apex.
+
+### Fifteen Dallas research claims requiring individual passage evidence
+
+The labels below are existing *research labels*, not authenticated course features or official FIA names. Preserve the stable claim IDs and parent section numbers; a parent section is not an apex number.
+
+| Existing claim ID | EN research label | UK research label | Route section | Required review decision |
+| --- | --- | --- | ---: | --- |
+| `dallas:period:2` | Paddock-side opening right | Перший правий біля паддоку | 1 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:3` | Cotton Bowl approach left | Лівий на підході до Cotton Bowl | 2 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:4` | Sharper left onto the fairground avenue | Різкий лівий на алею комплексу | 3 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:5` | Right into the temporary inner section | Правий у тимчасову внутрішню секцію | 4 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:6` | Tightening left-hand arc | Ліва дуга зі зменшенням радіуса | 5 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:7` | Square right after the tightening arc | Прямокутний правий після дуги | 6 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:8` | Inner-section left hairpin | Ліва шпилька внутрішньої секції | 7 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:9` | Right entry to the parking-area jog | Правий вхід у зв'язку біля парковки | 8 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:10` | Left exit from the parking-area jog | Лівий вихід зі зв'язки біля парковки | 8 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:11` | Left entry to the return chicane | Лівий вхід у зворотну шикану | 9 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:12` | Right exit from the return chicane | Правий вихід зі зворотної шикани | 9 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:13` | Faster double-apex left | Швидший лівий із двома апексами | 10 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:14` | Right entry to the final parking chicane | Правий вхід в останню шикану біля парковки | 11 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:15` | Left exit from the final parking chicane | Лівий вихід з останньої шикани біля парковки | 11 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+| `dallas:period:16` | Broad left before the closing complex | Широкий лівий перед завершальною секцією | 12 | Find a 1984-specific pinpoint for this exact bend; otherwise retain as unverified reconstruction |
+
+The sixteenth claim, `dallas:period:1`, describes the **final corner**. Alan Henry's August 1984 *Motor Sport* report identifies a final corner in the account of Mansell's loss of drive; this is **one source-located bend description, not a certified turn index**. The 15 claims above have no matching individual report passage in the cited PR #395 audit. The archive's 23-turn attribute, RacingCircuits' 12 main corners plus chicanes, and these 16 study records are different counting conventions; do not map them by ordinal position.
+
+### Eleven Charade named-feature review decisions
+
+These names are taken from the existing PR #395 claim audit. Venue-archive section locators establish **name/sector context**, not 1972 FIA apex numbers. Do not convert a sector or multi-bend complex into a single turn.
+
+| Existing named feature | Charade venue archive section(s) | Recorded feature type | Review boundary |
+| --- | --- | --- | --- |
+| Manson | #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Gravenoire | #23, #26 | route_sector | Retain as route_sector; no certified 1972 FIA turn index |
+| Belvédère | #23 | named_feature_unresolved | Retain as named_feature_unresolved; no certified 1972 FIA turn index |
+| Jumeaux | #23, #26 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Carrière | #23 | named_feature_unresolved | Retain as named_feature_unresolved; no certified 1972 FIA turn index |
+| Champeaux | #23 | route_sector | Retain as route_sector; no certified 1972 FIA turn index |
+| Ferme | #46, #23 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Petit Pont | #16, #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Marlboro hairpin | #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+| Thèdes | #23 | multi_bend_complex | Retain as multi_bend_complex; no certified 1972 FIA turn index |
+| Rosier | #40, #23 | single_bend | Retain as single_bend; no certified 1972 FIA turn index |
+
+**Charade naming nuance:** PR #395's audit reports that the venue archive's section #40 explicitly connects the Rosier bend name to Louis Rosier. That is evidence for the *name origin*, not proof of a 1972 FIA-numbered corner. The 51 historic directional changes described by the venue and the archive's 48-turn attribute remain distinct observations.
+
+**Review outcome for these 27 records:** 15 Dallas claims lack individual passage locators, 1 Dallas final-corner claim has a report passage, and 11 Charade named features have venue-archive locators. **0/27** has an independently authenticated FIA numbered-apex crosswalk in the cited audit; **0/27** is approved for publication. These figures are a cross-PR inventory, not a fresh external-source verification. No images or maps were copied; rights remain unapproved. `human_approval=false`; `publication_allowed=false`.
