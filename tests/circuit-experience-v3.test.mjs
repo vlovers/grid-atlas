@@ -833,7 +833,7 @@ test('large editorial batch upgrades twenty paired route sections across ten cla
       assert.ok(section.label.en.length > 12 && section.label.uk.length > 12, circuit.circuit_id + ':labels');
       assert.ok(section.source_urls.every(url => url.startsWith('https://')));
       for (const [locale,html] of [['en',en],['uk',uk]]) {
-        assert.ok(html.includes(section.description[locale].slice(0,20)), circuit.circuit_id + ':section:' + locale);
+        assert.ok(html.includes(section.description[locale].slice(0,20).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;')), circuit.circuit_id + ':section:' + locale);
       }
     }
   }
