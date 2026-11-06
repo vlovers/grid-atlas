@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/navigation';
 
-/** First Content Factory cohort, selected by the pinned F1DB v2026.17.0 race-record audit.
- * All figures below are derived from the live archive API, not from unapproved editorial text.
+/** Original first editorial cohort. The public archive overview now works for all circuits.
+ * All displayed figures come from the live archive API, not unapproved candidate research.
  */
 export const FIRST_CIRCUIT_BATCH = new Set([
   'monza', 'monaco', 'silverstone', 'spa-francorchamps', 'montreal',
@@ -21,8 +21,10 @@ type Props = {
 };
 
 export function CircuitArchiveBrief({ externalId, locale, raceRecords, firstSeason, lastSeason, layoutCount }: Props) {
-  if (!FIRST_CIRCUIT_BATCH.has(externalId)) return null;
   const uk = locale === 'uk';
+  // The archive overview is factual and does not depend on editorial publication approval.
+  // Keep externalId as an explicit identity parameter for future source-specific expansions.
+  void externalId;
   const yearRange = firstSeason === null ? '—' : firstSeason === lastSeason
     ? String(firstSeason) : `${firstSeason}–${lastSeason ?? '—'}`;
   return <section aria-labelledby="circuit-archive-brief-title" data-testid="circuit-content-factory-brief">

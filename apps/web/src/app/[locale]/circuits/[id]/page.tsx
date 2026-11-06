@@ -11,6 +11,7 @@ import { ArchiveTable } from '@/components/editorial/archive-table';
 import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
 import { selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
 import { CircuitCover } from '@/components/editorial/circuit-cover';
+import { CircuitArchiveBrief } from '@/components/editorial/circuit-archive-brief';
 import { IdentityFacts, type IdentityDetails } from '@/components/identity-facts';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
@@ -90,6 +91,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
       { id: 'circuit-history', label: uk ? 'Усі Гран-прі' : 'All Grands Prix' },
     ]} />
     <section id="circuit-biography" tabIndex={-1}><CircuitBiography circuitId={circuit.external_id} locale={lang} />
+      <CircuitArchiveBrief externalId={circuit.external_id} locale={lang} raceRecords={circuit.races} firstSeason={circuit.first_season} lastSeason={circuit.last_season} layoutCount={layouts.length} />
       {identities[0] && <IdentityFacts identity={identities[0]} locale={lang} />}
     </section>
     {hasCorners && <section id="circuit-corners" tabIndex={-1}><CircuitCornerGuide circuitId={circuit.external_id} locale={lang} availableLayouts={layouts.map(layout => layout.external_layout_id)} /></section>}
