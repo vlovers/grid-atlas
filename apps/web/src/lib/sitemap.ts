@@ -6,7 +6,7 @@ const limit = 100;
 /** Enumerate existing public records, including every API page. Fail closed on
  * incomplete/invalid responses instead of publishing a misleading partial map. */
 export async function sitemapPaths(read: Read): Promise<string[]> {
-  const paths = new Set(['/', '/drivers', '/constructors', '/circuits', '/seasons', '/lineage', '/sources', '/stories']);
+  const paths = new Set(['/', '/drivers', '/constructors', '/circuits', '/seasons', '/lineage', '/sources', '/stories', '/time-machine']);
   const addId = (kind: string, id: unknown) => {
     if (typeof id !== 'string' || !/^[1-9][0-9]*$/.test(id) || Number(id) > 2147483647) throw new Error('Invalid sitemap record ID');
     paths.add(`/${kind}/${id}`);

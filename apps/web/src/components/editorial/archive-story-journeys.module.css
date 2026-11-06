@@ -1,0 +1,14 @@
+.section { margin-block: clamp(2.5rem, 5vw, 5rem); }
+.heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, .7fr); align-items: end; gap: 1rem 3rem; margin-bottom: 1.5rem; }
+.eyebrow, .year { font: .7rem/1.6 var(--font-mono); color: var(--accent-ink); letter-spacing: .08em; text-transform: uppercase; }
+.heading h2 { font: 500 clamp(2rem, 4vw, 4rem)/1.06 var(--font-display); margin: .3rem 0 0; }
+.heading > p { color: var(--muted); line-height: 1.65; max-width: 42ch; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.story { display: flex; flex-direction: column; min-width: 0; padding: clamp(1.2rem, 2.2vw, 2rem); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.story h3 { font: 500 clamp(1.35rem, 2vw, 2rem)/1.15 var(--font-display); margin: .8rem 0; overflow-wrap: anywhere; }
+.story h3 a:hover, .read:hover, .all:hover { text-decoration: underline; text-underline-offset: .25rem; }
+.story > p { color: var(--muted); line-height: 1.65; font-size: .9rem; }
+.read { margin-top: auto; padding-top: 1.2rem; min-height: 44px; display: inline-flex; align-items: center; gap: .5rem; color: var(--accent-ink); }
+.all { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; margin-top: 1rem; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .heading { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
