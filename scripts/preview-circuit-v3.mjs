@@ -9,7 +9,6 @@ import historicRoutes from '../docs/editorial/circuit-experience-v3/REMAINING_17
 const root = new URL('../', import.meta.url);
 const corners = { guides: candidateCornerGuides, sources: candidateCornerSources };
 const narratives = { entries: candidateCircuitNarratives };
-const historicIds = new Set(['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']);
 const historicReview = historicRoutes.circuits;
 // All 17 unpublished period-route drafts belong in the private review, not just
 // the seven routes awaiting individual period bend identification.
