@@ -30,9 +30,9 @@ export function ArchiveStoryJourneys({ kind, locale }: { kind: Kind; locale: Loc
     </div>
     <div className={styles.grid}>{stories.map(story => <article className={styles.story} key={story.slug}>
       <span className={styles.year}>{story.year}</span>
-      <h3><Link href={`/stories/${story.slug}`}>{story[locale].title}</Link></h3>
+      <h3><Link href={`/stories/moments/${story.slug}`}>{story[locale].title}</Link></h3>
       <p>{story[locale].summary}</p>
-      <Link className={styles.read} href={`/stories/${story.slug}`}>{uk ? 'Читати історію' : 'Read the story'} <span aria-hidden="true">↗</span></Link>
+      <Link className={styles.read} href={`/stories/moments/${story.slug}`}>{uk ? 'Читати історію' : 'Read the story'} <span aria-hidden="true">↗</span></Link>
     </article>)}</div>
     <Link className={styles.all} href="/stories">{uk ? 'Усі опубліковані історії' : 'All published stories'} <span aria-hidden="true">↗</span></Link>
   </section>;
