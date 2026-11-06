@@ -56,7 +56,7 @@ test('Charade: 11 named historical features have section locators; Rosier namesa
   assert.match(rosier.source_locator, /#40.*Louis Rosier/);
   assert.match(rosier.name_origin?.en ?? '', /Louis Rosier/);
   assert.match(rosier.name_origin?.uk ?? '', /Луї Розьє/);
-  assert.match(rosier.explanation.en, /explicitly says/);
-  assert.match(rosier.explanation.uk, /прямо підтверджує/);
+  assert.match(rosier.explanation.en, /operator independently explains/);
+  assert.match(rosier.explanation.uk, /Розьє|архів|джерел/);
   assert.equal(hasPublicationReadyCornerGuide('clermont-ferrand'), false);
 });

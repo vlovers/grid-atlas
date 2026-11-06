@@ -492,7 +492,7 @@ test('seven unfinished circuits have readable paired openings with no publicatio
     for (const [locale, html] of [['en', en], ['uk', uk]]) {
       const opening = circuit.editorial_reader_preview[locale];
       assert.ok(opening.length > 300, id + ':' + locale + ' opening too short');
-      assert.ok(html.includes(opening.slice(0, 20)), id + ':' + locale + ' opening missing from private preview');
+      assert.ok(html.includes(opening.slice(0, 20).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;')), id + ':' + locale + ' opening missing from private preview');
     }
   }
 });
@@ -822,7 +822,7 @@ test('large editorial batch upgrades twenty paired route sections across ten cla
     assert.match(opening.source_url, /^https:\/\//);
     for (const [locale, html] of [['en', en], ['uk', uk]]) {
       assert.ok(opening[locale].length > 300, circuit.circuit_id + ':opening:' + locale);
-      assert.ok(html.includes(opening[locale].slice(0, 20)), circuit.circuit_id + ':preview:' + locale);
+      assert.ok(html.includes(opening[locale].slice(0, 20).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;')), circuit.circuit_id + ':preview:' + locale);
     }
     for (const section of circuit.sections) {
       assert.equal(section.publication_allowed, false, circuit.circuit_id);
