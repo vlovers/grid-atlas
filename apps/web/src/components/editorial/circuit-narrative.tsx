@@ -27,7 +27,7 @@ export function CircuitBiography({ circuitId, locale }: { circuitId: string; loc
   const uk = locale === 'uk';
   return <div data-testid="circuit-biography"><h2>{uk ? 'Історія траси' : 'Circuit history'}</h2>
     {biography ? <><h3>{biography.title[locale]}</h3><p>{biography.text[locale]}</p><a href={biography.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело · Formula 1' : 'Source · Formula 1'} ↗</a><ReviewDetails locale={locale} /></>
-      : previous ? <p>{uk ? 'Коротку історію з посиланням на джерело зібрано в розділі «Легендарні моменти» нижче.' : 'Find this circuit’s short, source-linked story in Memorable moments below.'} <a href="#circuit-moments">{uk ? 'Перейти до історії ↓' : 'Jump to the story ↓'}</a></p>
+      : previous ? <><h3>{previous.title[locale]}</h3><p>{previous.description[locale]}</p><p><a href="#circuit-moments">{uk ? 'Джерело та контекст події ↓' : 'Event source and context ↓'}</a></p><ReviewDetails locale={locale} /></>
         : <p>{uk ? 'Окремий нарис історії цієї траси ще не підготовлено. Нижче можна дослідити її конфігурації та Гран-прі.' : 'A dedicated circuit history is not available yet. Explore its layouts and Grands Prix below.'}</p>}
   </div>;
 }
