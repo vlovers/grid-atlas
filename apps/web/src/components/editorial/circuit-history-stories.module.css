@@ -34,3 +34,13 @@
 .sourceType { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: .2rem .55rem; font-size: .75rem; line-height: 1.4; color: var(--muted); overflow-wrap: anywhere; }
 .momentCard details p { max-width: 55ch; line-height: 1.5; }
 .momentCard details a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+
+/* A single featured event reads as an editorial evidence panel, not a sparse 3-column card. */
+.singleMomentGrid { grid-template-columns: minmax(0, 1fr); max-width: 72ch; }
+.momentMeta { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; }
+.momentCard { gap: .4rem; }
+.momentCard h3 { margin-block: .35rem; }
+.momentEvidence { width: 100%; border-top: 1px solid var(--line); margin-top: .7rem; padding-top: .45rem; }
+.momentEvidence summary { cursor: pointer; min-height: 44px; align-content: center; }
+.momentEvidence a { overflow-wrap: anywhere; }
+@media (max-width: 650px) { .singleMomentGrid { max-width: none; } }

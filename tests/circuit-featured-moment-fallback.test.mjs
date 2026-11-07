@@ -73,13 +73,15 @@ test('archive race links require one unambiguous event in the given year', () =>
   assert.match(component, /uniqueRaceInYear\(history, moment\.raceYear\)/);
 });
 
-test('public short-story fallback neither duplicates the biography nor bypasses approval', () => {
+test('public short-story biography and moment evidence do not repeat the same paragraph or bypass approval', () => {
   assert.deepEqual(release.editions, [], 'no independent longform editions approved');
   assert.match(component, /getPublicCircuitStory\(circuitId\)/);
   assert.match(component, /isCircuitEditionApproved\(circuitId\)/);
   assert.match(component, /existing\?\.moments\.map/);
   assert.match(component, /href="#circuit-moments"/);
-  assert.doesNotMatch(component, /previous\.description\[locale\]/);
+  assert.match(component, /previous\.description\[locale\]/);
+  assert.match(component, /const featuredStoryIsBiography = Boolean\(featured && !existing && !approved\)/);
+  assert.match(component, /!\(featuredStoryIsBiography && moment\.id ===/);
   assert.match(component, /noopener noreferrer/);
 });
 
@@ -95,6 +97,7 @@ test('all 73 public stories expose honest source types in both languages', () =>
     assert.ok(uk.badge && uk.description && uk.linkLabel, story.id);
     assert.notEqual(en.description, uk.description, story.id);
   }
+  // Existing main summaries stay separate from research URL/prose revisions.
   assert.deepEqual(byKind, { 'f1db-results': 53, 'formula1-results': 5, 'formula1-circuit-guide': 8, 'formula1-feature': 7, 'formula1-event-page': 0, other: 0 });
   assert.equal(circuitStorySourceKind('https://example.org/not-reviewed'), 'other');
   assert.equal(circuitStorySourceKind('https://github.com/f1db/f1db/blob/main/src/data/seasons/1950/races/01-britain/race-results.yml'), 'other');
@@ -125,18 +128,21 @@ test('seven prioritized circuit stories have scoped contextual references, not a
   }
   assert.equal(getCircuitContextEvidence('melbourne'), undefined);
   assert.equal(getCircuitContextEvidence('not-a-circuit'), undefined);
-  assert.match(component, /featured && !existing && !isCircuitEditionApproved\(circuitId\)/);
+  assert.match(component, /featured && !existing && !approved/);
   assert.match(component, /contextEvidence\.scope\[locale\]/);
   assert.match(component, /href=\{contextEvidence\.url\}/);
   assert.deepEqual(release.editions, [], 'context sources are not editorial approvals');
 });
 
-test('Melbourne 1996 cites a relevant historical article, not a current-season event page', () => {
-  const story = getPublicCircuitStory('melbourne');
+test('Melbourne 1996 links its exact race result and retains the historical feature as background', () => {
+  const research = JSON.parse(readFileSync(new URL('../apps/web/src/components/editorial/circuit-extra-stories.json', import.meta.url), 'utf8'));
+  const story = research.find(item => item.id === 'melbourne');
   assert.ok(story);
+  assert.notEqual(getPublicCircuitStory('melbourne').source, story.source, 'research edits do not replace the public source');
   assert.equal(story.year, '1996');
-  assert.equal(circuitStorySourceKind(story.source), 'formula1-feature');
-  assert.match(story.source, /celebrating-30-years-of-melbourne-magic/);
+  assert.equal(circuitStorySourceKind(story.source), 'formula1-results');
+  assert.equal(story.source, 'https://www.formula1.com/en/results/1996/races/638/australia/race-result');
+  assert.match(story.background_source_url, /celebrating-30-years-of-melbourne-magic/);
   assert.doesNotMatch(story.source, /\/racing\/2026\//);
 });
 

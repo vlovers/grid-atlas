@@ -3,22 +3,105 @@ import { readFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { startReview } from './preview-story-review.mjs';
-import { candidateCircuitNarratives, candidateCornerGuides, candidateCornerSources } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import { candidateCircuitNarratives, candidateCornerGuides, candidateCornerSources, candidateHistoricalCornerReviewQueue } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import historicRoutes from '../docs/editorial/circuit-experience-v3/REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json' with { type: 'json' };
 
 const root = new URL('../', import.meta.url);
 const corners = { guides: candidateCornerGuides, sources: candidateCornerSources };
 const narratives = { entries: candidateCircuitNarratives };
+const historicIds = new Set(['ain-diab','clermont-ferrand','dallas','detroit','pescara','porto','sebring']);
+const historicReview = historicRoutes.circuits.filter(circuit => historicIds.has(circuit.circuit_id));
+// The other ten period dossiers complement existing guides; they are not ten extra F1 circuits.
+const supplementalHistoricReview = historicRoutes.circuits.filter(circuit => !historicIds.has(circuit.circuit_id));
+// Guides can exist without a biography. Missing prose must not hide their review.
+const reviewEntries = corners.guides.map(guide => narratives.entries.find(entry => entry.circuit_id === guide.circuit_id) ?? {
+  circuit_id: guide.circuit_id,
+  biography: null,
+  moments: [],
+});
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+/** Review 66 individual historical bend/name studies; these are never FIA turn IDs. */
+export function renderHistoricalBendQueue(circuitId, locale) {
+  const uk = locale === 'uk';
+  const studies = candidateHistoricalCornerReviewQueue.filter(study => study.circuit_id === circuitId);
+  if (!studies.length) return '';
+  const named = studies.filter(item => item.research_kind === 'named_feature');
+  const bends = studies.filter(item => item.research_kind === 'period_bend')
+    .sort((a, b) => a.lap_study_order - b.lap_study_order);
+  const renderItem = (item, kind) => {
+    const anchor = 'bend-review-' + item.review_id.replaceAll(':', '-');
+    const title = item.label?.[locale] ?? item.label?.en ?? '';
+    const role = uk
+      ? (kind === 'named' ? 'Історична назва — не пронумерований апекс' : 'Позиція дослідження — не номер повороту FIA')
+      : (kind === 'named' ? 'Historical name — not a numbered apex' : 'Research position — not an FIA turn number');
+    const localSources = item.source_roles.filter(source => typeof source.url === 'string' && source.url.startsWith('https://'));
+    return `<article id="${escape(anchor)}" data-historical-study="${kind}" tabindex="-1"><small>${role}</small>
+      <h3>${escape(title)}</h3><p>${escape(item.explanation?.[locale] ?? '')}</p>
+      <p><strong>${uk ? 'Статус' : 'Status'}:</strong> ${uk ? 'Потрібна незалежна перевірка джерела і точної точки на схемі' : 'Independent source and map-location review required'}</p>
+      ${item.source_locator ? `<p><strong>${uk ? 'Місце в джерелі' : 'Source locator'}:</strong> ${escape(item.source_locator)}</p>` : ''}
+      ${item.source_locator_gap ? `<p><strong>${uk ? 'Прогалина в доказах' : 'Evidence gap'}:</strong> ${escape(typeof item.source_locator_gap === 'string' ? item.source_locator_gap : item.source_locator_gap[locale] ?? JSON.stringify(item.source_locator_gap))}</p>` : ''}
+      <ul>${localSources.map(source => `<li><a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${uk ? 'Відкрити джерело' : 'Open source'} ↗</a> <small>${escape(source.role)}</small></li>`).join('')}</ul>
+      <small>${uk ? 'Номер FIA: відсутній · Публікацію заборонено · Медіаправа не схвалено' : 'FIA number: none · Publication blocked · Media rights not approved'}</small>
+    </article>`;
+  };
+  return `<details class="warning"><summary>${uk ? 'Детальна перевірка історичних віражів і назв' : 'Detailed historical bend and name review'} · ${studies.length}</summary>
+    <p>${uk ? 'Це додаткові дослідницькі записи, не сертифіковані номери поворотів і не карта FIA.' : 'These are research records, not certified turn numbers or an FIA map.'}</p>
+    ${named.length ? `<h4>${uk ? 'Історичні назви' : 'Historical names'} · ${named.length}</h4><div class="grid">${named.map(item => renderItem(item, 'named')).join('')}</div>` : ''}
+    ${bends.length ? `<h4>${uk ? 'Окремі віражі за джерелами' : 'Individual bends in source order'} · ${bends.length}</h4><div class="grid">${bends.map(item => renderItem(item, 'bend')).join('')}</div>` : ''}
+  </details>`;
+}
+
+
+/** Pre-race Dallas descriptions are useful route clues, but not the raced map. */
+export function renderDallasPlannedRoute(circuit, locale) {
+  if (circuit.circuit_id !== 'dallas' || !circuit.planned_route_waypoints?.length) return '';
+  const uk = locale === 'uk';
+  const length = circuit.layout_evidence_review?.pre_race_vs_raced_length;
+  return `<details class="warning"><summary>${uk ? 'Даллас: орієнтири плану березня 1984' : 'Dallas: March 1984 planned-route landmarks'} · ${circuit.planned_route_waypoints.length}</summary>
+    <p>${uk ? 'Анонсована довжина' : 'Pre-race projected length'}: ${escape(length?.planned_miles ?? '')} ${uk ? 'милі' : 'miles'}; ${uk ? 'довжина маршруту гонки' : 'raced circuit length'}: ${escape(length?.raced_miles ?? '')} ${uk ? 'милі' : 'miles'}. ${uk ? 'Дві цифри не підтверджують, що план і фактична траса однакові.' : 'The two figures do not establish that the planned and raced courses were identical.'}</p>
+    <ol>${circuit.planned_route_waypoints.map(waypoint => `<li><strong>${escape(waypoint.label[locale])}</strong><p>${escape(waypoint.context[locale])}</p><small>${escape(waypoint.source_locator)}</small><p><a href="${escape(waypoint.source_url)}" target="_blank" rel="noopener noreferrer">${uk ? 'Джерело березня 1984' : 'March 1984 source'} ↗</a></p></li>`).join('')}</ol>
+    <p>${uk ? 'Це не сертифіковані повороти; номерів FIA і дозволу на публікацію немає.' : 'Not certified corners: no FIA numbers or publication approval.'}</p>
+  </details>`;
+}
+
+
+/** Ten separate period dossiers remain private research, distinct from the 78 circuit identities. */
+export function renderHistoricalSupplement(locale) {
+  const uk = locale === 'uk';
+  if (historicRoutes.release_authorized !== false || historicRoutes.image_rights_approved !== false ||
+      supplementalHistoricReview.some(route => route.editorial_reader_preview?.editorial_status !== 'research_only' ||
+        route.editorial_reader_preview?.publication_allowed === true)) {
+    throw new Error('Historical supplement is not approved for publication');
+  }
+  const nav = supplementalHistoricReview.map(route =>
+    `<a href="#period-supplement-${escape(route.circuit_id)}">${escape(route.circuit_id)}</a>`).join('');
+  const dossiers = supplementalHistoricReview.map(route => {
+    const intro = route.editorial_reader_preview;
+    const introSource = typeof intro?.source_url === 'string' && intro.source_url.startsWith('https://')
+      ? `<a href="${escape(intro.source_url)}" target="_blank" rel="noopener noreferrer">${uk ? 'Джерело для перевірки' : 'Review source'} ↗</a>`
+      : `<small>${uk ? 'Джерело вступу потребує перевірки' : 'Opening source requires review'}</small>`;
+    const sections = route.sections.map(section => {
+      const sources = (section.source_urls ?? [])
+        .filter(url => typeof url === 'string' && url.startsWith('https://'))
+        .map(url => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${uk ? 'Джерело — не схема поворотів' : 'Source — not a turn map'} ↗</a>`).join(' · ');
+      return `<article data-period-supplement-section id="period-supplement-${escape(route.circuit_id)}-section-${section.reading_order}" tabindex="-1"><small>${uk ? 'Розділ' : 'Section'} ${section.reading_order} · ${escape(route.period)}</small><h4>${escape(section.label[locale])}</h4><p>${escape(section.description[locale])}</p><p>${sources}</p></article>`;
+    }).join('');
+    return `<section id="period-supplement-${escape(route.circuit_id)}" data-period-supplement><h3>${escape(route.circuit_id)} · ${escape(route.period)} · ${escape(route.layout_id)}</h3><p class="warning">${uk ? 'Дослідження історичної конфігурації. Нумерація апексів, переклади й права на зображення не схвалені.' : 'Period-layout research. Apex numbering, translations and image rights are not approved.'}</p><p>${escape(intro?.[locale] ?? '')}</p><p>${introSource}</p><div class="grid">${sections}</div></section>`;
+  }).join('');
+  return `<section id="period-supplements"><h2>${uk ? 'Додаткові історичні досьє — не нові траси' : 'Additional period dossiers — not additional circuits'}</h2><p>${uk ? 'Це десять паралельних історичних матеріалів до вже перелічених трас, а не нові підтверджені карти поворотів.' : 'Ten parallel historical studies of circuits already counted above; not new authenticated turn maps.'}</p><nav aria-label="${uk ? 'Додаткові досьє' : 'Supplemental dossiers'}">${nav}</nav>${dossiers}</section>`;
+}
 
 export function renderCircuitReview(locale, base) {
   const uk = locale === 'uk';
   return `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>UNPUBLISHED · Circuit V3 review</title><style>
-  *{box-sizing:border-box}html{background:#090b0d;color:#f0ece4;font:17px/1.8 system-ui}body{max-width:1200px;margin:auto;padding:24px}a{color:#ed8278}h1,h2,h3{font-family:Georgia,serif;line-height:1.2;overflow-wrap:anywhere}h1{font-size:clamp(2.5rem,6vw,5rem)}h2{font-size:2.5rem}h3{font-size:1.6rem}.warning{padding:18px;border:2px solid #d6bc8a}nav{display:flex;flex-wrap:wrap;gap:16px}a,summary{min-height:44px;align-content:center}a:focus-visible,summary:focus-visible,article:target{outline:3px solid #d6bc8a;outline-offset:4px}section{margin-block:3rem;border-top:1px solid #34383b;padding-top:2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:2rem}.grid article{border-top:1px solid #34383b;padding-top:1rem;scroll-margin-top:24px}.diagramViewport{overflow-x:auto;max-width:100%;padding-block:12px}.diagram{position:relative;width:620px;min-width:620px;max-width:620px;aspect-ratio:1;margin:2rem auto;background:#141719}.diagram>svg{width:100%;height:100%}.diagram>a{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #d6bc8a;background:#141719;color:#f0ece4;text-decoration:none;font-size:14px;border-radius:50%}.diagram line{stroke:#d6bc8a;stroke-width:1.5}small{color:#a9adb0}summary{cursor:pointer}article p{max-width:75ch}</style></head><body>
+  *{box-sizing:border-box}html{background:#090b0d;color:#f0ece4;font:17px/1.8 system-ui;overflow-wrap:anywhere}body{max-width:1200px;margin:auto;padding:24px}a{color:#ed8278}h1,h2,h3{font-family:Georgia,serif;line-height:1.2;overflow-wrap:anywhere}h1{font-size:clamp(2.5rem,6vw,5rem)}h2{font-size:2.5rem}h3{font-size:1.6rem}.warning{padding:18px;border:2px solid #d6bc8a}nav{display:flex;flex-wrap:wrap;gap:16px}a,summary{min-height:44px;align-content:center}a:focus-visible,summary:focus-visible,article:target{outline:3px solid #d6bc8a;outline-offset:4px}section{margin-block:3rem;border-top:1px solid #34383b;padding-top:2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:2rem}.grid article{border-top:1px solid #34383b;padding-top:1rem;scroll-margin-top:24px}.diagramViewport{overflow-x:auto;max-width:100%;padding-block:12px}.diagram{position:relative;width:620px;min-width:620px;max-width:620px;aspect-ratio:1;margin:2rem auto;background:#141719}.diagram>svg{width:100%;height:100%}.diagram>a{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #d6bc8a;background:#141719;color:#f0ece4;text-decoration:none;font-size:14px;border-radius:50%}.diagram line{stroke:#d6bc8a;stroke-width:1.5}small{color:#a9adb0}summary{cursor:pointer}article p{max-width:75ch}</style></head><body>
   <div class="warning"><strong>${uk ? 'НЕОПУБЛІКОВАНА ЧЕРНЕТКА · НЕ СХВАЛЕНО' : 'UNPUBLISHED DRAFT · NOT APPROVED'}</strong><p>${uk ? 'Локальний перегляд нових сюжетів і назв. Перевірка джерел за допомогою ШІ не є незалежним людським схваленням. Цей інтерфейс не публікує й не підписує тексти.' : 'Local review of new stories and names. AI source checking is not independent human approval. This interface cannot publish or sign content.'}</p></div>
-  <nav><a href="${base}/uk">Українська</a><a href="${base}/en">English</a>${narratives.entries.map(entry => `<a href="#${entry.circuit_id}">${escape(entry.circuit_id)}</a>`).join('')}</nav>
+  <nav><a href="${base}/uk">Українська</a><a href="${base}/en">English</a>${reviewEntries.map(entry => `<a href="#${entry.circuit_id}">${escape(entry.circuit_id)}</a>`).join('')}${historicReview.map(circuit => `<a href="#study-${escape(circuit.circuit_id)}">${escape(circuit.circuit_id)}</a>`).join('')}</nav>
   <h1>Circuit Experience V3</h1>
-  ${narratives.entries.map(entry => {
+  ${reviewEntries.map(entry => {
     const guide = corners.guides.find(item => item.circuit_id === entry.circuit_id);
+    const provisional = guide.sections.some(section => !['source_checked_ai', 'independently_verified'].includes(section.confirmation_status));
+    const position = provisional ? (uk ? 'Позиція ' : 'Study ') : 'T';
     let diagram = '';
     if (guide?.diagram) {
       // Only the repository-audited, exact local artwork can be embedded, never a downloaded FIA map.
@@ -30,10 +113,20 @@ export function renderCircuitReview(locale, base) {
         return `<a href="#${section.id}" style="left:${point.label[0]/5}%;top:${point.label[1]/5}%" aria-label="${point.number} · ${escape(section.name ?? (uk ? 'Без окремої назви' : 'No individual name'))}">${point.number}</a>`;
       }).join('')}</div></div><small>Jules Roy · <a href="https://github.com/f1db/f1db/tree/v2026.17.0">F1DB v2026.17.0</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · ${uk ? 'Додано приблизні маркери за схемою FIA 2025; це ілюстрація, не геодезична карта.' : 'Approximate annotations added using the FIA 2025 map; illustration, not a surveyed map.'}</small>`;
     }
-    return `<section id="${entry.circuit_id}"><h2>${escape(entry.biography.title[locale])}</h2><p>${escape(entry.biography.text[locale])}</p><a href="${escape(entry.biography.source)}">${uk ? 'Джерело' : 'Source'} ↗</a>
-      ${guide ? `<h3>${uk ? 'Дослідіть повороти' : 'Explore the corners'} · ${guide.numbered_turns}</h3><p>${escape(guide.layout_id)} · FIA ${guide.numbering_year} / F1.com ${guide.names_as_of}</p>${diagram}<nav aria-label="${uk ? 'Повороти за порядком' : 'Corners in lap order'}">${guide.sections.flatMap(section => section.numbers.map(number => `<a href="#${section.id}">T${number}</a>`)).join('')}</nav><div class="grid">${guide.sections.map(section => `<article id="${section.id}" tabindex="-1"><small>T${section.numbers.join(' / ')}</small><h3>${escape(section.name ?? (uk ? 'Без окремої назви' : 'No individual name'))}</h3>${section.explanation ? `<p>${escape(section.explanation[locale])}</p>` : ''}<p>${section.aliases.map(escape).join(' · ')}</p>${section.sources.map(id => `<a href="${escape(corners.sources[id])}">${escape(id)} ↗</a>`).join(' · ')}</article>`).join('')}</div>` : ''}
+    return `<section id="${entry.circuit_id}" data-circuit-review="${entry.circuit_id}"><h2>${escape(entry.biography?.title[locale] ?? entry.circuit_id)}</h2>${entry.biography ? `<p>${escape(entry.biography.text[locale])}</p><a href="${escape(entry.biography.source)}">${uk ? 'Джерело' : 'Source'} ↗</a>` : `<p>${uk ? 'Біографію траси ще не підготовлено. Дослідження поворотів доступне нижче.' : 'A circuit biography has not been prepared. Corner research is available below.'}</p>`}
+      ${guide ? `<h3>${uk ? 'Дослідіть повороти' : 'Explore the corners'} · ${guide.numbered_turns}</h3><p>${escape(guide.layout_id)} · ${provisional ? (uk ? 'Попередні дослідницькі позиції (не схема FIA)' : 'Provisional study positions (not an FIA map)') : `${guide.numbering_year} · ${uk ? 'Нумерація очікує незалежної перевірки' : 'Numbering pending independent review'}`}</p>${guide.numbering_basis ? `<p>${escape(guide.numbering_basis)}</p>` : ''}${guide.configuration_caveat ? `<p class="warning">${escape(guide.configuration_caveat[locale])}</p>` : ''}${diagram}<nav aria-label="${provisional ? (uk ? 'Позиції дослідження за маршрутом' : 'Study positions in route order') : (uk ? 'Повороти за порядком' : 'Corners in lap order')}">${guide.sections.flatMap(section => section.numbers.map(number => `<a href="#${section.id}">${position}${number}</a>`)).join('')}</nav><div class="grid">${guide.sections.map(section => `<article id="${section.id}" data-candidate-position tabindex="-1"><small>${position}${section.numbers.join(' / ')}</small><h3>${escape(section.name ?? (uk ? 'Без окремої назви' : 'No individual name'))}${provisional && section.name ? (uk ? ' (прив’язка не підтверджена)' : ' (mapping unverified)') : ''}</h3>${section.explanation ? `<p>${escape(section.explanation[locale])}</p>` : ''}<p>${section.aliases.length && provisional ? (uk ? 'Орієнтири для порівняння — не перевірені назви: ' : 'Comparative landmarks — not verified names: ') : ''}${section.aliases.map(escape).join(' · ')}</p>${section.sources.map(id => `<a href="${escape(corners.sources[id])}">${escape(id)} ↗</a>`).join(' · ')}</article>`).join('')}</div>` : ''}
       <h3>${uk ? 'Легендарні моменти — кандидати' : 'Memorable moments — candidates'}</h3><div class="grid">${entry.moments.map(moment => `<article><small>${moment.year} · ${escape(moment.criterion)}</small><h3>${escape(moment.title[locale])}</h3><p>${escape(moment.text[locale])}</p><a href="${escape(moment.source)}">Formula 1 · ${escape(moment.locator)} ↗</a></article>`).join('')}</div></section>`;
-  }).join('')}</body></html>`;
+  }).join('')}
+  <section id="historic-route-review"><h2>${uk ? 'Історичні маршрути — на перевірці' : 'Historical routes — awaiting review'}</h2><p>${uk ? 'Це дослідницькі ділянки, НЕ офіційно пронумеровані повороти. Матеріал не схвалено до публікації.' : 'These are research route sections, NOT officially numbered turns. No publication approval has been granted.'}</p>
+  <nav aria-label="${uk ? 'Неперевірені історичні маршрути' : 'Unreviewed historical routes'}">${historicReview.map(circuit => {
+    const queue = candidateHistoricalCornerReviewQueue.filter(item => item.circuit_id === circuit.circuit_id);
+    const missingLocators = queue.filter(item => !item.source_locator || item.source_locator_gap).length;
+    return `<a href="#study-${escape(circuit.circuit_id)}">${escape(circuit.circuit_id)} · ${queue.length} ${uk ? 'віражів / назв для перевірки' : 'bend / name studies to review'} · ${missingLocators} ${uk ? 'прогалин цитування' : 'locator gaps'}</a>`;
+  }).join('')}</nav>
+  ${historicReview.map(circuit => `<section id="study-${escape(circuit.circuit_id)}" data-circuit-review="${escape(circuit.circuit_id)}"><h3>${escape(circuit.circuit_id)} · ${escape(circuit.period)} · ${escape(circuit.layout_id)}</h3><p>${uk ? 'Нумерацію апексів не підтверджено' : 'Apex numbering has not been verified'} · ${circuit.sections.length} ${uk ? 'дослідницьких ділянок' : 'research sections'}</p><details class="warning"><summary>${uk ? 'Перевірка карти, розбіжності та джерела' : 'Map review, discrepancies and sources'}</summary><p><strong>${uk ? 'Статус прив’язки' : 'Mapping status'}:</strong> ${escape(circuit.layout_evidence_review?.crosswalk_status ?? 'pending')}</p><p><strong>${uk ? 'Відлік F1DB' : 'F1DB turn count'}:</strong> ${circuit.layout_evidence_review?.archive_turn_count ?? (uk ? 'не записано' : 'not recorded')} · ${uk ? 'Не є перевіреною нумерацією апексів' : 'Not authenticated apex numbering'}</p>${['count_discrepancy','count_reconciliation','discrepancy_resolution','layout_length_discrepancy','layout_version_caveat','route_order_scope'].filter(key => circuit.layout_evidence_review?.[key]).map(key => `<p><strong>${escape(key.replaceAll('_',' '))}:</strong> ${escape(circuit.layout_evidence_review[key])}</p>`).join('')}${circuit.layout_evidence_review?.route_order_confirmed ? `<p>${uk ? 'Послідовність маршрутних орієнтирів (не номери поворотів)' : 'Route landmark order (not turn numbers)'}</p><ol>${circuit.layout_evidence_review.route_order_confirmed.map(item => `<li>${escape(item)}</li>`).join('')}</ol>` : ''}<ul>${(circuit.layout_evidence_review?.evidence ?? []).map(item => `<li><strong>${escape(item.type)}</strong>: ${escape(item.claim)} ${typeof item.url === 'string' && item.url.startsWith('https://') ? `<a target="_blank" rel="noopener noreferrer" href="${escape(item.url)}">${uk ? 'Відкрити джерело' : 'Open source'} ↗</a>` : `<small>${uk ? 'Неперевірене посилання — відкриття вимкнено' : 'Invalid source URL — link disabled'}</small>`}</li>`).join('')}</ul><p>${uk ? 'Зовнішні карти та фотографії не дозволено копіювати без окремої перевірки прав.' : 'Do not copy external maps or photographs without separate licensing review.'}</p></details>${renderDallasPlannedRoute(circuit, locale)}${renderHistoricalBendQueue(circuit.circuit_id, locale)}<div class="grid">${circuit.sections.map(section => `<article id="study-${escape(circuit.circuit_id)}-section-${section.reading_order}" data-route-section tabindex="-1"><small>${uk ? 'Ділянка' : 'Section'} ${section.reading_order}</small><h3>${escape(section.label[locale])}</h3><p>${escape(section.description[locale])}</p>${section.provenance_scope.source_roles.filter(item => typeof item.url === 'string' && item.url.startsWith('https://')).map(item => `<a target="_blank" rel="noopener noreferrer" href="${escape(item.url)}">${escape(item.role === 'race_classification_only' ? (uk ? 'Класифікація гонки — не карта' : 'Race classification — not a map') : item.role === 'community_secondary_unverified' ? (uk ? 'Вторинне джерело — потребує звірки' : 'Secondary source — verify independently') : (uk ? 'Історичне джерело (не доказ номера)' : 'Historical source (not turn-number evidence)'))} ↗</a>`).join(' · ')}</article>`).join('')}</div></section>`).join('')}
+  </section>
+  ${renderHistoricalSupplement(locale)}
+  </body></html>`;
 }
 
 export const startCircuitReview = options => startReview({ ...options, render: renderCircuitReview });

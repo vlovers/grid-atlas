@@ -1,0 +1,7 @@
+# Aida / Anderstorp — 21 candidate numbered corners (2026-11-02)
+
+Research only; no publication approval or new images.
+
+- Aida: the GT World Challenge Asia 2025 briefing contains a numbered 1–13 organiser map, and the venue's Japanese guide explains the names Williams, Moss S, Attwood, Piper, Redman, Hobbs and Mike Knight. F1 raced the 3.703-km layout in 1994–95; continuity of the numbered 2025 apex positions with 1995 remains pending independent review. Sources: https://www.gt-world-challenge-asia.com/documents/notice/1118/Okayama%2BDraft%2BBreifing%2Bslides%2B27.08.25%2BPD_JPN_SP%2BFINAL.pdf ; https://www.okayama-international-circuit.jp/guide/se.html ; https://www.formula1.com/en/results/1995/races/635/pacific/race-result.
+- Anderstorp: F1DB's 1978 configuration has eight turns; Norra was modified for 1978. The 2007 BMW media map supplies names but not authenticated 1978 turn numbering, so every number-to-name mapping is explicitly provisional and the canonical name field stays null. Sources: https://commons.wikimedia.org/wiki/File:Scandinavian_Raceway_1978.svg ; https://www.press.bmwgroup.com/global/article/attachment/T0000370EN/487 ; https://www.formula1.com/en/results/1978/races/398/sweden/race-result.
+- Media: no map/PDF/image has been copied. The existing F1DB SVG outlines retain Jules Roy attribution and CC BY 4.0. Publicly accessible event PDFs and websites are linked only, not relicensed. Independent checks of historical numbering, names, EN/UK and rights remain mandatory.

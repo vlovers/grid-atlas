@@ -26,7 +26,7 @@ test('all 165 research stories receive deterministic review tasks, without appro
   assert.equal(queue.independent_approval, false);
   assert.equal(queue.summary.circuits, 33);
   assert.equal(queue.summary.stories, 165);
-  assert.equal(queue.summary.single_source_dossiers, 27);
+  assert.equal(queue.summary.single_source_dossiers, original.summary.single_source_circuits);
   assert.equal(queue.summary.publication_ready, 0);
   assert.equal(queue.summary.independently_verified, 0);
   assert.equal(queue.entries.length, 165);
@@ -55,7 +55,7 @@ test('priority queue ranks source concentration and contextual evidence without 
     assert.ok(queue.entries[i - 1].risk_score >= queue.entries[i].risk_score);
   }
   const singleSource = queue.entries.filter(item => item.flags.includes('single_source_dossier'));
-  assert.equal(singleSource.length, 135);
+  assert.equal(singleSource.length, original.summary.single_source_circuits * 5);
   assert.ok(singleSource.every(item => item.risk_score >= 5));
   assert.equal(queue.summary.classification_only_stories,
     queue.entries.filter(item => item.flags.includes('classification_only_sources')).length);

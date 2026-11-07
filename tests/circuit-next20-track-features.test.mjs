@@ -50,8 +50,10 @@ test('non-corners and multi-turn features cannot be silently published as single
 
 test('Montreal 1999 narrative no longer undercounts crashes at the Wall of Champions', () => {
   const event = dossier.circuits.find((c) => c.circuit_id === 'gilles-villeneuve').moments.find((m) => m.year === 1999);
-  assert.match(event.narrative.en, /Ralf Schumacher and Ricardo Zonta/);
-  assert.match(event.narrative.uk, /Ральф Шумахер і Рікардо Зонта/);
+  assert.match(event.narrative.en, /Ricardo Zonta.*during the race/);
+  assert.match(event.narrative.en, /Ralf Schumacher.*qualifying/);
+  assert.match(event.narrative.uk, /Рікардо Зонта.*гонки/);
+  assert.match(event.narrative.uk, /Ральф Шумахер.*кваліфікації/);
   assert.ok(event.sources.some((url) => url.includes('what-is-the-wall-of-champions')));
   assert.equal(event.review_status, 'source_checked_research_draft');
   assert.equal(dossier.publication, 'blocked_pending_independent_historical_review');

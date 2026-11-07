@@ -27,6 +27,8 @@
 .dossier { overflow-wrap: break-word; }
 .dossier h2 { font-size: clamp(2rem, 3vw, 3.5rem); line-height: 1.16; letter-spacing: 0; }
 .noOutline { align-content: center; padding: 2rem; border-top: 2px solid var(--accent); background: var(--surface); }
+.cornerStatus, .sourceNote { border-block: 1px solid var(--line); padding-block: clamp(1.5rem, 3vw, 3rem); }
+.cornerStatus > a { display: inline-block; padding-block: .6rem; min-height: 44px; }
 .dossier form .actions { margin-top: .7rem; }
 .dossier form input { flex: 1 1 min(100%, 16rem); min-width: 0; }
 .dossier details > summary { min-height: 44px; cursor: pointer; align-content: center; }

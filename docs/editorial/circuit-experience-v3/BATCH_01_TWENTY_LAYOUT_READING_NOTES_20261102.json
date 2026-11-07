@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "package": "circuit-78-batch-01",
+  "basis": "historical layout interpretation and named sections; not a turn-by-turn map",
+  "review_status": "pending_independent_en_uk_claim_review",
+  "publication_authorized": false,
+  "image_rights_authorized": false,
+  "checked_on": "2026-11-02",
+  "entries": [
+    {
+      "circuit_id": "adelaide",
+      "layout_scope": "1986",
+      "copy": {
+        "en": "The 1986 season finale at Adelaide was decided by tyre trouble, but that drama belongs to a temporary street circuit, not the later Melbourne Grand Prix venue. The city roads, close walls and repeated changes of pace shaped how drivers approached every lap. Follow the race sequence before attributing a modern turn number: this dossier has not independently mapped Adelaide's historical corners.",
+        "uk": "Останню гонку сезону 1986 року в Аделаїді вирішили проблеми з шинами. Але події розгорталися на тимчасовій міській трасі, а не в Мельбурні, де згодом проводили Гран-прі Австралії. Вузькі дороги й бар'єри впливали на ритм кола. Перш ніж називати номер конкретного повороту, потрібно звірити схему саме 1986 року."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "City street barriers",
+          "turn_numbers": null,
+          "era": "1986",
+          "provenance_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Tyre-deciding final race",
+          "turn_numbers": null,
+          "era": "1986",
+          "provenance_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/"
+      ]
+    },
+    {
+      "circuit_id": "aida",
+      "layout_scope": "1994–1995",
+      "copy": {
+        "en": "Do not mistake Aida for Suzuka: the Pacific Grand Prix ran on a tight hillside course in Okayama. Period corner references include Moss S, Attwood Corner and the Hair Pin, but the names alone do not establish turn numbering for an F1 lap. The restricted passing space helps explain why Senna's first-corner collision in 1994 was so consequential.",
+        "uk": "Аїду не варто плутати із Сузукою: Гран-прі Тихого океану проводили на тісній трасі серед пагорбів Окаями. Історичні назви ділянок — Moss S, Attwood Corner і Hair Pin, проте самі назви ще не встановлюють нумерації поворотів у Формулі-1. Обмежений простір для обгонів пояснює, чому зіткнення Сенни на старті гонки 1994 року мало такі наслідки."
+      },
+      "evidence_url": "https://www.gdecarli.it/php2/circuit.php?var1=620&var2=2",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Moss S",
+          "turn_numbers": null,
+          "era": "1994–1995",
+          "provenance_url": "https://www.gdecarli.it/php2/circuit.php?var1=620&var2=2",
+          "review_status": "pending"
+        },
+        {
+          "name": "Attwood Corner",
+          "turn_numbers": null,
+          "era": "1994–1995",
+          "provenance_url": "https://www.gdecarli.it/php2/circuit.php?var1=620&var2=2",
+          "review_status": "pending"
+        },
+        {
+          "name": "Hair Pin",
+          "turn_numbers": null,
+          "era": "1994–1995",
+          "provenance_url": "https://www.gdecarli.it/php2/circuit.php?var1=620&var2=2",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.gdecarli.it/php2/circuit.php?var1=620&var2=2"
+      ]
+    },
+    {
+      "circuit_id": "ain-diab",
+      "layout_scope": "1958",
+      "copy": {
+        "en": "The Moroccan championship finale used coastal public roads at Ain-Diab rather than a permanent modern Grand Prix facility. The long course passed near Casablanca and the Sidi Abderrahman area. The decisive story is Moss winning the race while Hawthorn secured the title; no modern corner-name list should be backfilled into the 1958 road layout without a period map.",
+        "uk": "Фінал чемпіонату 1958 року в Марокко відбувся на дорогах загального користування біля узбережжя Айн-Діаб, а не на сучасному стаціонарному автодромі. Маршрут пролягав поблизу Касабланки та району Сіді Абдеррахман. Мосс виграв гонку, проте титул здобув Готорн. Не можна переносити на цю схему вигадані сучасні назви поворотів без карти тієї епохи."
+      },
+      "evidence_url": "https://perencz.hu/f1/circuit/ain-diab/info/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Casablanca coastal road",
+          "turn_numbers": null,
+          "era": "1958",
+          "provenance_url": "https://perencz.hu/f1/circuit/ain-diab/info/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://perencz.hu/f1/circuit/ain-diab/info/"
+      ]
+    },
+    {
+      "circuit_id": "aintree",
+      "layout_scope": "1955–1962",
+      "copy": {
+        "en": "Aintree's Formula 1 lap shared its landscape with a horse-racing course. Period landmarks such as Bechers and Tatts reflect that unusual setting; the railway-side straight was another distinctive part of the drive. The famous Moss–Brooks shared Vanwall victory in 1957 happened on this Grand Prix loop, not on the shorter club circuit used in later years.",
+        "uk": "Коло Формули-1 в Ейнтрі проходило територією поряд з іподромом. Історичні орієнтири Bechers і Tatts нагадують про це сусідство, а пряма біля залізниці була ще однією особливістю маршруту. Знамениту спільну перемогу Мосса й Брукса на Vanwall у 1957 році здобули на повному колі Гран-прі, а не на коротшій клубній конфігурації пізніших років."
+      },
+      "evidence_url": "https://www.f1-fansite.com/f1-circuits/aintree-circuit-layout-records/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Bechers",
+          "turn_numbers": null,
+          "era": "1955–1962",
+          "provenance_url": "https://www.f1-fansite.com/f1-circuits/aintree-circuit-layout-records/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Tatts Corner",
+          "turn_numbers": null,
+          "era": "1955–1962",
+          "provenance_url": "https://www.f1-fansite.com/f1-circuits/aintree-circuit-layout-records/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Railway-side straight",
+          "turn_numbers": null,
+          "era": "1955–1962",
+          "provenance_url": "https://www.f1-fansite.com/f1-circuits/aintree-circuit-layout-records/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.f1-fansite.com/f1-circuits/aintree-circuit-layout-records/",
+        "https://www.motorsportmagazine.com/special-article/stirling-moss/32/1957-british-gp/"
+      ]
+    },
+    {
+      "circuit_id": "anderstorp",
+      "layout_scope": "1973–1978",
+      "copy": {
+        "en": "Anderstorp's long runway straight led towards Norra Kurvan, a section repeatedly modified during the Swedish Grand Prix years. A chicane changed the approach in the mid-1970s, and the corner was tightened again for 1978. Therefore the Tyrrell six-wheeler's 1976 victory and the fan car's 1978 win must not be illustrated with an undated, supposedly universal corner sequence.",
+        "uk": "Довга пряма Андерсторпа проходила колишньою злітною смугою та вела до Norra Kurvan — ділянки, яку неодноразово змінювали за часів Гран-прі Швеції. У середині 1970-х підхід до повороту перебудували через шикану, а до 1978 року віраж знову зробили повільнішим. Тож перемогу шестиколісного Tyrrell у 1976-му й тріумф боліда з вентилятором у 1978-му не можна пояснювати однією недатованою схемою."
+      },
+      "evidence_url": "https://www.racingcircuits.info/europe/sweden/anderstorp.html",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Runway straight",
+          "turn_numbers": null,
+          "era": "1973–1978",
+          "provenance_url": "https://www.racingcircuits.info/europe/sweden/anderstorp.html",
+          "review_status": "pending"
+        },
+        {
+          "name": "Norra Kurvan",
+          "turn_numbers": null,
+          "era": "1973–1978",
+          "provenance_url": "https://www.racingcircuits.info/europe/sweden/anderstorp.html",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.racingcircuits.info/europe/sweden/anderstorp.html"
+      ]
+    },
+    {
+      "circuit_id": "austin",
+      "layout_scope": "modern Grand Prix layout",
+      "copy": {
+        "en": "Austin rewards drivers who plan several corners ahead. The climb to Turn 1 creates a dramatic braking point; the fast Esses after Turn 2 then demand a rhythm rather than isolated apex attacks. Farther round, the Turn 11 hairpin sets up the back straight. These are separate jobs on the same lap, and mixing them into one vague description hides what makes the circuit difficult.",
+        "uk": "В Остіні потрібно думати на кілька поворотів наперед. Підйом до першого повороту створює видовищну зону гальмування, а швидка зв'язка після другого вимагає ритму, а не окремих атак на кожен апекс. Далі повільний одинадцятий поворот визначає розгін на задній прямій. Це різні завдання протягом одного кола, які не варто зводити до загальної фрази про «технічну трасу»."
+      },
+      "evidence_url": "https://www.formula1.com/en/latest/article/helpful-information-when-visiting-the-circuit-of-the-americas-for-the-united.5UtPkhyGELJbdGWg6vHE8O",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Turn 1",
+          "turn_numbers": [
+            1
+          ],
+          "era": "modern Grand Prix layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/helpful-information-when-visiting-the-circuit-of-the-americas-for-the-united.5UtPkhyGELJbdGWg6vHE8O",
+          "review_status": "pending"
+        },
+        {
+          "name": "Fast Esses",
+          "turn_numbers": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "era": "modern Grand Prix layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/helpful-information-when-visiting-the-circuit-of-the-americas-for-the-united.5UtPkhyGELJbdGWg6vHE8O",
+          "review_status": "pending"
+        },
+        {
+          "name": "Turn 11 hairpin",
+          "turn_numbers": [
+            11
+          ],
+          "era": "modern Grand Prix layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/helpful-information-when-visiting-the-circuit-of-the-americas-for-the-united.5UtPkhyGELJbdGWg6vHE8O",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.formula1.com/en/latest/article/helpful-information-when-visiting-the-circuit-of-the-americas-for-the-united.5UtPkhyGELJbdGWg6vHE8O"
+      ]
+    },
+    {
+      "circuit_id": "avus",
+      "layout_scope": "1959",
+      "copy": {
+        "en": "AVUS was almost the opposite of a twisting Grand Prix circuit: two long parallel straights and an extreme brick-banked northern curve. The banking reached roughly 43 degrees, with serious tyre-loading consequences. The 1959 German Grand Prix ran as two heats. Distinguish this North Curve from the support-race crash and do not assign modern circuit turn counts to the historical banking without source confirmation.",
+        "uk": "AVUS майже не нагадував звивисту трасу Гран-прі: дві довгі паралельні прямі поєднувала крута північна профільована дуга з цегляним покриттям. Її нахил сягав приблизно 43 градусів і створював велике навантаження на шини. Гран-прі Німеччини 1959 року проводили у двох заїздах. Важливо не плутати North Curve з аварією в гонці підтримки й не вигадувати сучасну нумерацію історичних віражів."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-history-tragic-1959-german-grand-prix-avus/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "North Curve",
+          "turn_numbers": null,
+          "era": "1959",
+          "provenance_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-history-tragic-1959-german-grand-prix-avus/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-history-tragic-1959-german-grand-prix-avus/"
+      ]
+    },
+    {
+      "circuit_id": "bahrain",
+      "layout_scope": "Grand Prix layout",
+      "copy": {
+        "en": "Turn 10 at Sakhir is demanding because braking begins while the car is already changing direction through Turn 9. A locked inside-front tyre is often a symptom of that awkward weight transfer, not simply an inexplicable driver error. The contrast with the heavy braking into Turn 1 and the quicker Esses later in the lap gives Bahrain its distinctive alternation of stop-start and flowing corners.",
+        "uk": "Десятий поворот Сахіра складний тим, що гальмування починається, коли болід уже змінює напрямок у дев'ятому. Блокування внутрішнього переднього колеса часто пояснюється перерозподілом навантаження, а не просто помилкою пілота. Контраст із сильним гальмуванням перед першим поворотом і швидшими зв'язками далі створює особливий ритм Бахрейну: повільні віражі чергуються з плавними швидкісними ділянками."
+      },
+      "evidence_url": "https://www.formula1.com/en/latest/article/why-we-love-the-bahrain-grand-prix.1JqYl7oOyjwpL6ct3wSRIo.1JqYl7oOyjwpL6ct3wSRIo",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Turn 9 approach",
+          "turn_numbers": [
+            9
+          ],
+          "era": "Grand Prix layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/why-we-love-the-bahrain-grand-prix.1JqYl7oOyjwpL6ct3wSRIo.1JqYl7oOyjwpL6ct3wSRIo",
+          "review_status": "pending"
+        },
+        {
+          "name": "Turn 10",
+          "turn_numbers": [
+            10
+          ],
+          "era": "Grand Prix layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/why-we-love-the-bahrain-grand-prix.1JqYl7oOyjwpL6ct3wSRIo.1JqYl7oOyjwpL6ct3wSRIo",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.formula1.com/en/latest/article/why-we-love-the-bahrain-grand-prix.1JqYl7oOyjwpL6ct3wSRIo.1JqYl7oOyjwpL6ct3wSRIo"
+      ]
+    },
+    {
+      "circuit_id": "baku",
+      "layout_scope": "modern city layout",
+      "copy": {
+        "en": "Baku's first corner follows an unusually long acceleration zone and invites late braking, yet the Old Town sequence is a completely different challenge. Turns 8–10 climb through a narrow passage beside the historic walls. The same car that feels comfortable on the straight can be hard to place between the barriers here. These turn numbers refer to the modern city circuit only.",
+        "uk": "Перший поворот Баку розташований після дуже довгого розгону й провокує пізнє гальмування. Але у Старому місті на пілотів чекає зовсім інше завдання: повороти 8–10 ведуть вузьким підйомом уздовж історичних мурів. Болід, який добре почувається на прямій, тут непросто точно розмістити між бар'єрами. Ця нумерація стосується лише сучасної міської траси."
+      },
+      "evidence_url": "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Turn 1",
+          "turn_numbers": [
+            1
+          ],
+          "era": "modern city layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE",
+          "review_status": "pending"
+        },
+        {
+          "name": "Old Town passage",
+          "turn_numbers": [
+            8,
+            9,
+            10
+          ],
+          "era": "modern city layout",
+          "provenance_url": "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.formula1.com/en/latest/article/what-makes-the-azerbaijan-grand-prix-special-and-why-you-should-see-it.2czMvJTBkvIcOOEiDJEtlE"
+      ]
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "layout_scope": "historic Grand Prix loop",
+      "copy": {
+        "en": "Paddock Hill Bend drops away from the pit straight; Druids then tightens the rhythm at the top of the hill. Those bends also feature on shorter Brands Hatch configurations, but the Formula 1 Grand Prix loop continued through Surtees towards the wooded Hawthorn section. An Indy-circuit diagram cannot stand in for a full British Grand Prix lap.",
+        "uk": "Paddock Hill Bend різко спускається від стартової прямої, а шпилька Druids уповільнює боліди на вершині пагорба. Ці повороти є й у коротших конфігураціях Брендс-Гетча, але коло Гран-прі продовжувалося після Surtees у лісову частину до Hawthorn Bend. Схема короткого Indy Circuit не може замінити повне коло історичного Гран-прі Великої Британії."
+      },
+      "evidence_url": "https://www.brandshatch.co.uk/grandstands",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Paddock Hill Bend",
+          "turn_numbers": null,
+          "era": "historic Grand Prix loop",
+          "provenance_url": "https://www.brandshatch.co.uk/grandstands",
+          "review_status": "pending"
+        },
+        {
+          "name": "Druids Hairpin",
+          "turn_numbers": null,
+          "era": "historic Grand Prix loop",
+          "provenance_url": "https://www.brandshatch.co.uk/grandstands",
+          "review_status": "pending"
+        },
+        {
+          "name": "Hawthorn Bend",
+          "turn_numbers": null,
+          "era": "historic Grand Prix loop",
+          "provenance_url": "https://www.brandshatch.co.uk/grandstands",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.brandshatch.co.uk/grandstands",
+        "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf"
+      ]
+    },
+    {
+      "circuit_id": "bremgarten",
+      "layout_scope": "1954",
+      "copy": {
+        "en": "Bremgarten's Swiss Grand Prix followed wooded roads near Bern, where the course's enclosed setting was part of the driving challenge. Fangio clinched his second championship there in 1954. Period route evidence is essential before attaching precise names or modern turn numbers to a corner; a modern map of the district is not proof of the F1 lap.",
+        "uk": "Гран-прі Швейцарії на Бремгартені проходив лісовими дорогами неподалік Берна, і сама закритість маршруту була частиною складності пілотування. У 1954 році Фанхіо здобув тут свій другий чемпіонський титул. Щоб називати конкретні повороти або їхні номери, потрібна схема того часу: сучасна карта району не доводить, яким саме було коло Формули-1."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Forested public-road section",
+          "turn_numbers": null,
+          "era": "1954",
+          "provenance_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/41-1954-swiss-gp/"
+      ]
+    },
+    {
+      "circuit_id": "buddh",
+      "layout_scope": "2011–2013 F1 layout",
+      "copy": {
+        "en": "Buddh's wide Turn 3 was designed to offer several possible racing lines before a long acceleration zone. The fast, banked multi-apex Turns 10–12 make a very different demand: keeping the car stable under continuous lateral load. Those landmarks belong to the Formula 1 configuration and should not be borrowed uncritically from the separate motorcycle layout.",
+        "uk": "Широкий третій поворот Buddh спроєктували так, щоб пілоти могли обирати різні траєкторії перед довгим розгоном. Швидка профільована зв'язка поворотів 10–12 ставить інше завдання: втримати болід під тривалим боковим навантаженням. Ці орієнтири належать до конфігурації Формули-1 2011–2013 років, і їх не слід без перевірки переносити з окремої мотоциклетної схеми."
+      },
+      "evidence_url": "https://www.racingcircuits.info/asia/india/buddh-international-circuit.html",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Wide Turn 3",
+          "turn_numbers": [
+            3
+          ],
+          "era": "2011–2013 F1 layout",
+          "provenance_url": "https://www.racingcircuits.info/asia/india/buddh-international-circuit.html",
+          "review_status": "pending"
+        },
+        {
+          "name": "Banked Turns 10–12",
+          "turn_numbers": [
+            10,
+            11,
+            12
+          ],
+          "era": "2011–2013 F1 layout",
+          "provenance_url": "https://www.racingcircuits.info/asia/india/buddh-international-circuit.html",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.racingcircuits.info/asia/india/buddh-international-circuit.html"
+      ]
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "layout_scope": "1955 and 1995 — distinct eras",
+      "copy": {
+        "en": "Buenos Aires cannot be reduced to a single timeless corner map. The punishing heat of the 1955 Argentine Grand Prix belongs to one era, whereas the restarted 1995 race belongs to a later configuration and a different set of cars. The 1995 lap-count discrepancy across contemporary and official records must remain visible rather than being hidden behind a confidently labelled generic turn diagram.",
+        "uk": "Буенос-Айрес не можна описувати однією позачасовою схемою поворотів. Виснажлива спека Гран-прі Аргентини 1955 року належить до однієї епохи, а гонка 1995 року з рестартом — до іншої конфігурації та зовсім інших машин. Розбіжність у кількості кіл між офіційним протоколом і тогочасним описом 1995 року потрібно показувати відкрито, а не маскувати впевнено підписаною універсальною схемою."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/archive/article/february-1955/15/the-argentine-grand-prix/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "1955 Grand Prix route",
+          "turn_numbers": null,
+          "era": "1955",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/february-1955/15/the-argentine-grand-prix/",
+          "review_status": "pending"
+        },
+        {
+          "name": "1995 Grand Prix route",
+          "turn_numbers": null,
+          "era": "1995",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/february-1955/15/the-argentine-grand-prix/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/archive/article/february-1955/15/the-argentine-grand-prix/",
+        "https://www.motorsportmagazine.com/archive/article/may-1995/22/argentine-grand-prix-2/",
+        "https://www.formula1.com/en/results/1995/races"
+      ]
+    },
+    {
+      "circuit_id": "bugatti",
+      "layout_scope": "1967",
+      "copy": {
+        "en": "The 1967 French Grand Prix was raced on the short Bugatti circuit at Le Mans, not the much longer Circuit de la Sarthe used for the 24 Hours. The tight permanent loop changed both lap rhythm and race tactics. Any reader comparing F1 footage with endurance-racing images should first check that the displayed circuit is actually Bugatti, not the famous public-road endurance layout.",
+        "uk": "Гран-прі Франції 1967 року проводили на короткому автодромі Bugatti в Ле-Мані, а не на значно довшому Circuit de la Sarthe, відомому за перегонами «24 години Ле-Мана». Тісне стаціонарне коло створювало інший ритм і вимагало іншої тактики. Порівнюючи кадри Формули-1 зі світлинами перегонів на витривалість, насамперед варто перевірити, чи на них справді Bugatti, а не знаменитий дорожній маршрут."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Bugatti short circuit",
+          "turn_numbers": null,
+          "era": "1967",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/archive/article/august-1967/36/the-53rd-grand-prix-of-france/"
+      ]
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "layout_scope": "1981–1982",
+      "copy": {
+        "en": "Caesars Palace was not the modern Las Vegas Strip course. Turns 1–3 and the pit straight occupied the casino car park, while much of the remaining temporary track crossed adjacent undeveloped ground. The largely flat setting and repetitive turns made orientation difficult. Its 1981 and 1982 title finales belong to this particular circuit, not to a later street-race layout.",
+        "uk": "Caesars Palace — не сучасна траса вздовж Лас-Вегас-Стріп. Повороти 1–3 і пряма біля боксів проходили територією парковки казино, а значна частина тимчасового маршруту — сусідньою незабудованою ділянкою. Рівнинний рельєф і схожі один на одного повороти ускладнювали орієнтування. Чемпіонські фінали 1981 та 1982 років належать саме цій трасі, а не пізнішій міській конфігурації."
+      },
+      "evidence_url": "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Parking-lot Turns 1–3",
+          "turn_numbers": [
+            1,
+            2,
+            3
+          ],
+          "era": "1981–1982",
+          "provenance_url": "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Adjacent undeveloped land",
+          "turn_numbers": null,
+          "era": "1981–1982",
+          "provenance_url": "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.mclaren.com/racing/heritage/1982-caesars-palace-gp/"
+      ]
+    },
+    {
+      "circuit_id": "catalunya",
+      "layout_scope": "2023 onward",
+      "copy": {
+        "en": "The final part of the Barcelona-Catalunya lap changed when Formula 1 abandoned the slow chicane for the faster Turns 13–14 in 2023. That matters far beyond two corners: drivers now need stability through the last sweep and a strong exit onto the long pit straight. Older onboard laps cannot be used as if they showed the same final-sector geometry.",
+        "uk": "Остання частина кола Барселони-Каталуньї змінилася, коли у 2023 році Формула-1 відмовилася від повільної шикани на користь швидких поворотів 13–14. Це впливає не лише на два віражі: пілотам потрібна стабільність у фінальній дузі та чистий розгін на довгу стартову пряму. Старі записи з кокпіта не можна показувати так, наче геометрія останнього сектору залишилася незмінною."
+      },
+      "evidence_url": "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Fast Turns 13–14",
+          "turn_numbers": [
+            13,
+            14
+          ],
+          "era": "2023 onward",
+          "provenance_url": "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8",
+          "review_status": "pending"
+        },
+        {
+          "name": "Former final chicane",
+          "turn_numbers": null,
+          "era": "before 2023",
+          "provenance_url": "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8"
+      ]
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "layout_scope": "1972",
+      "copy": {
+        "en": "Charade's Clermont-Ferrand road circuit wound across volcanic terrain rather than a modern flat motorsport park. Loose stones from the road edges were not a minor detail: in 1972 Chris Amon's puncture ended his lead and changed the French Grand Prix. A period map and source-specific corner names are needed before assigning a modern sequence to this long historic road course.",
+        "uk": "Історична траса Charade біля Клермон-Феррана звивалася дорогами вулканічного ландшафту, а не рівним сучасним автодромом. Камінці, що потрапляли на асфальт з узбіч, були реальною проблемою: у 1972 році прокол позбавив Кріса Еймона лідерства й змінив перебіг Гран-прі Франції. Для точної нумерації віражів цього довгого дорожнього маршруту потрібна карта відповідного року."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Charade public-road loop",
+          "turn_numbers": null,
+          "era": "1972",
+          "provenance_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/80-1972-french-gp/"
+      ]
+    },
+    {
+      "circuit_id": "dallas",
+      "layout_scope": "1984",
+      "copy": {
+        "en": "Dallas's one Formula 1 weekend was held on temporary roads around Fair Park. Heat and a breaking asphalt surface turned the corners into moving hazards: the available grip changed as the weekend progressed. The useful guide is not an invented list of glamorous corner names but a period-specific explanation of the barriers, patched sections and the race that Rosberg eventually won.",
+        "uk": "Єдиний вікенд Формули-1 у Далласі проходив тимчасовими дорогами навколо Fair Park. Спека й асфальт, який руйнувався, перетворювали повороти на непередбачувані ділянки: зчеплення змінювалося протягом вікенду. Читачеві потрібен не вигаданий список ефектних назв, а пояснення бар'єрів, відремонтованих відтинків дороги й гонки, яку зрештою виграв Росберг."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Fair Park temporary roads",
+          "turn_numbers": null,
+          "era": "1984",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/"
+      ]
+    },
+    {
+      "circuit_id": "detroit",
+      "layout_scope": "1982 layout",
+      "copy": {
+        "en": "Detroit's opening Formula 1 layout used tight downtown streets along the river, with a succession of right-angle turns, a hairpin, tram-line crossings and a tunnel. The 1982 race report describes how those landmarks punctuated the lap; later revisions mean its sequence must be dated. Watson's win from seventeenth on the grid is more striking once the difficulty of overtaking on those streets is understood.",
+        "uk": "Перший маршрут Формули-1 у Детройті пролягав тісними вулицями центру біля річки: прямокутні віражі чергувалися зі шпилькою, переїздами через трамвайні колії й тунелем. Репортаж про гонку 1982 року пояснює, як ці орієнтири змінювали ритм кола; пізніші перебудови вимагають датувати схему. Перемога Вотсона зі сімнадцятого місця виглядає ще дивовижнішою, якщо врахувати складність обгонів на цих вулицях."
+      },
+      "evidence_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Riverfront start area",
+          "turn_numbers": null,
+          "era": "1982",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Downtown tunnel",
+          "turn_numbers": null,
+          "era": "1982",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+          "review_status": "pending"
+        },
+        {
+          "name": "Tight hairpin",
+          "turn_numbers": null,
+          "era": "1982",
+          "provenance_url": "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.motorsportmagazine.com/archive/article/july-1982/43/the-grand-prix-of-detroit/"
+      ]
+    },
+    {
+      "circuit_id": "dijon",
+      "layout_scope": "1979",
+      "copy": {
+        "en": "Dijon-Prenois witnessed two different races within the same 1979 French Grand Prix. Jabouille took Renault's first turbo-powered win, while Villeneuve and Arnoux fought wheel to wheel for second through the late corners. Describe the duelling lines and their place on the circuit without confusing the spectacular fight for second with the race winner.",
+        "uk": "У Діжон-Пренуа Гран-прі Франції 1979 року ніби складався з двох різних історій. Жабуй приніс Renault першу перемогу турбомотора, а Вільньов та Арну боролися колесо в колесо за друге місце в останніх поворотах. Варто показувати їхні траєкторії й розташування віражів на колі, не плутаючи видовищну боротьбу за другу позицію з переможцем перегонів."
+      },
+      "evidence_url": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+      "corner_numbering_status": "not_independently_approved",
+      "image_status": "no_new_images",
+      "review_status": "pending",
+      "landmarks": [
+        {
+          "name": "Final-sector duel",
+          "turn_numbers": null,
+          "era": "1979",
+          "provenance_url": "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+          "review_status": "pending"
+        }
+      ],
+      "evidence_urls": [
+        "https://www.formula1.com/en/results/1979/races/414/france/race-result",
+        "https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/"
+      ]
+    }
+  ],
+  "limitations": {
+    "turn_by_turn_complete": false,
+    "meaning": "Names are evidence leads, not independently approved individual corner positions. `turn_numbers: null` means no supported number assigned.",
+    "media": "No photos added; no new licence approval",
+    "publication": "Unpublished review material only; do not import into live circuit release."
+  }
+}
