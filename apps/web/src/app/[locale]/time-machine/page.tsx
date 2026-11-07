@@ -1,5 +1,6 @@
 import { EditorialSelect } from '@/components/editorial/select';
 import type { Metadata } from "next";
+import { routeMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -36,9 +37,10 @@ const validId = (value: unknown): value is string =>
   /^[1-9][0-9]{0,18}$/.test(value) &&
   BigInt(value) <= 9223372036854775807n;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("UI");
-  return { title: t("timeMachineTitle"), description: t("timeMachineLead") };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "UI" });
+  return { ...routeMetadata(locale, "/time-machine"), title: t("timeMachineTitle"), description: t("timeMachineLead") };
 }
 
 function formatCount(value: number, locale: string) {
