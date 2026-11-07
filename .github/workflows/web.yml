@@ -7,6 +7,8 @@ on:
       - 'packages/database/**'
       - 'tests/browser/**'
       - 'playwright.config.ts'
+      - 'playwright.circuit-publication.config.ts'
+      - 'tests/circuit-publication/**'
       - 'eslint.config.mjs'
       - 'package.json'
       - 'pnpm-lock.yaml'
@@ -21,6 +23,8 @@ on:
       - 'packages/database/**'
       - 'tests/browser/**'
       - 'playwright.config.ts'
+      - 'playwright.circuit-publication.config.ts'
+      - 'tests/circuit-publication/**'
       - 'eslint.config.mjs'
       - 'package.json'
       - 'pnpm-lock.yaml'
@@ -35,7 +39,7 @@ permissions:
 jobs:
   web:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     services:
       postgres:
         image: postgres:17-alpine
@@ -75,6 +79,8 @@ jobs:
         run: pnpm exec playwright test
       - name: Test local media desk and gallery in Chromium and WebKit
         run: pnpm exec playwright test --config apps/web/src/components/media/preview/playwright.config.ts
+      - name: Test trusted circuit reader against PostgreSQL and both release switches
+        run: pnpm exec playwright test --config playwright.circuit-publication.config.ts
       - name: Upload browser failure evidence
         if: failure()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

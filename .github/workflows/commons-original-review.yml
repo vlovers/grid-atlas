@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/commons-original-review.yml'
       - 'scripts/preview-commons-originals.mjs'
+      - 'scripts/commons-original-download.mjs'
+      - 'tests/commons-original-download.test.mjs'
       - 'docs/media/commons-original-evidence.json'
       - 'docs/media/verified-original-observations.json'
   push:
@@ -13,6 +15,8 @@ on:
     paths:
       - '.github/workflows/commons-original-review.yml'
       - 'scripts/preview-commons-originals.mjs'
+      - 'scripts/commons-original-download.mjs'
+      - 'tests/commons-original-download.test.mjs'
       - 'docs/media/commons-original-evidence.json'
       - 'docs/media/verified-original-observations.json'
 
@@ -26,7 +30,7 @@ permissions:
 jobs:
   verify-original-photographs:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
