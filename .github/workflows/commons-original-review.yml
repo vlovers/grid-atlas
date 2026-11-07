@@ -2,16 +2,7 @@ name: Commons originals research preview
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - '.github/workflows/commons-original-review.yml'
-      - 'scripts/preview-commons-originals.mjs'
-      - 'scripts/commons-original-download.mjs'
-      - 'tests/commons-original-download.test.mjs'
-      - 'docs/media/commons-original-evidence.json'
-      - 'docs/media/verified-original-observations.json'
   push:
-    branches: [main]
     paths:
       - '.github/workflows/commons-original-review.yml'
       - 'scripts/preview-commons-originals.mjs'
