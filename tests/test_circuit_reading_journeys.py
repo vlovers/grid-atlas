@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ED = ROOT / "apps/web/src/components/editorial"
 SOURCE = (ED / "circuit-extra-stories.tsx").read_text(encoding="utf-8")
-PAGE = (ROOT / "apps/web/src/app/[locale]/circuits/[id]/page.tsx").read_text(encoding="utf-8")
+PAGE = (ED / "circuit-production-page.tsx").read_text(encoding="utf-8")
 
 class CircuitReadingJourneysTests(unittest.TestCase):
     def test_all_73_capsules_unique_and_bilingual(self):
@@ -21,12 +21,18 @@ class CircuitReadingJourneysTests(unittest.TestCase):
                 self.assertGreater(len(item["description"][locale].strip()), 70)
                 self.assertTrue(item["title"][locale].strip())
             self.assertRegex(item["source"], r"^https://")
-        self.assertIn("const entries = [...facts, ...nextFacts, ...finalFacts]", SOURCE)
+        self.assertIn("getPublicCircuitStory(circuitId)", SOURCE)
+        helper = (ED / "circuit-public-moments.ts").read_text(encoding="utf-8")
+        self.assertIn("archive-summaries/circuit-extra-stories.json", helper)
 
-    def test_reader_links_are_derived_from_exact_unambiguous_races(self):
+    def test_private_reader_helpers_preserve_exact_links_without_bypassing_trusted_publication(self):
         renderer = (ED / "circuit-narrative.tsx").read_text(encoding="utf-8")
-        self.assertIn("<CircuitMoments circuitId={circuit.external_id}", PAGE)
-        self.assertIn("history={history}", PAGE)
+        self.assertIn("CircuitMoments", PAGE)
+        self.assertIn("circuit-narrative", PAGE)
+        self.assertIn("getOptionalPublishedCircuitArticle(id, lang)", PAGE)
+        self.assertIn("publishedArticle && <CircuitReviewedArticle", PAGE)
+        self.assertIn("href={`/races/${race.race_id}`}", PAGE)
+        self.assertIn("href={`/drivers/${winner.driver_id}`}", PAGE)
         helper = (ED / "circuit-public-moments.ts").read_text(encoding="utf-8")
         self.assertIn("uniqueRaceInYear(history, moment.raceYear)", renderer)
         self.assertIn("race.season_year !== year", helper)
@@ -59,7 +65,10 @@ class CircuitReadingJourneysTests(unittest.TestCase):
                 for locale in ("en","uk"):
                     self.assertGreater(len(corner[locale].strip()), 65)
                 self.assertTrue(corner["source"].startswith("https://"))
-        self.assertIn("<CircuitCornerGuide circuitId={circuit.external_id}", PAGE)
+        # Preserve all bilingual research without restoring the old AI-only
+        # fallback whose own disclosure says independent approval is pending.
+        self.assertNotIn("CircuitCornerGuide", PAGE)
+        self.assertNotIn("legacyNamedCircuitIds", PAGE)
 
     def test_archive_only_stories_are_not_mislabeled_corner_history(self):
         renderer = (ED / "circuit-corner-guide.tsx").read_text(encoding="utf-8")
@@ -71,11 +80,19 @@ class CircuitReadingJourneysTests(unittest.TestCase):
             guide["id"] for guide in guides
             if all("/f1db/f1db/blob/" in item["source"] for item in guide["sections"])
         ]
-        self.assertTrue(purely_archival, "the archive-only coverage must remain explicitly differentiated")
-        self.assertIn("pescara", purely_archival)
-        self.assertNotIn("brands-hatch", purely_archival)
-        self.assertNotIn("paul-ricard", purely_archival)
-        self.assertNotIn("donington", purely_archival)
+        # Earlier coverage deliberately had archive-only filler. The source-led
+        # editorial batches have now replaced it; never require filler to return.
+        self.assertFalse(purely_archival, "no circuit should regress to classification-only corner filler")
+        for guide in guides:
+            self.assertTrue(
+                any("/f1db/f1db/blob/" not in item["source"] for item in guide["sections"]),
+                guide["id"] + ": requires a race report or independent venue source",
+            )
+            for item in guide["sections"]:
+                self.assertNotEqual(item["label"], "Start with the race record")
+                self.assertNotEqual(item["label"], "How to explore this historic venue")
+        # The renderer still distinguishes a sourced race story from a
+        # verified, individually named corner guide.
 
     def test_year_extraction_does_not_invent_race_ids(self):
         years = [int(match.group(0)) for match in re.finditer(r"\b(?:19|20)\d{2}\b", "1973–1975")]

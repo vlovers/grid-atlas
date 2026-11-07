@@ -8,6 +8,8 @@
  */
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { candidateCornerGuides } from '../apps/web/src/components/editorial/circuit-candidates.ts';
+import { isCircuitEditionApproved } from '../apps/web/src/components/editorial/circuit-release.ts';
 
 const root = resolve(import.meta.dirname, '..');
 const load = (path) => JSON.parse(readFileSync(resolve(root, path), 'utf8'));
@@ -15,7 +17,6 @@ const worklist = load('docs/editorial/circuit-experience-v3/F1DB_78_RELEASE_WORK
 const model = load('apps/web/src/components/editorial/circuit-corners-v3.json');
 const shortGuides = load('apps/web/src/components/editorial/circuit-corner-guides.json');
 const layouts = load('apps/web/src/components/circuit-layout-manifest.json');
-const release = load('apps/web/src/components/editorial/circuit-release.json');
 
 const args = process.argv.slice(2);
 const unknown = args.filter(x => x !== '--strict' && !/^--batch=[1-4]$/.test(x));
@@ -29,10 +30,9 @@ const ordered = [...worklist.circuits].sort((a, b) => a.circuit_id.localeCompare
 const expected = [20, 20, 20, 18];
 const offset = batch === null ? 0 : expected.slice(0, batch - 1).reduce((a, b) => a + b, 0);
 const selected = batch === null ? ordered : ordered.slice(offset, offset + expected[batch - 1]);
-const guideMap = new Map(model.guides.map(x => [x.circuit_id, x]));
+const guideMap = new Map(candidateCornerGuides.map(x => [x.circuit_id, x]));
 const shortMap = new Map(shortGuides.map(x => [x.id, x]));
 const assetIds = new Set(layouts.map(x => x.layout_id));
-const approved = new Set((release.editions ?? []).filter(x => x.publication_allowed === true && x.human_approval === true).map(x => x.circuit_id));
 
 const rows = selected.map(circuit => {
   const id = circuit.circuit_id;
@@ -53,14 +53,14 @@ const rows = selected.map(circuit => {
     if (guide.sections.some(s => s.numbers.length !== 1)) issues.push('grouped_corners_not_individual');
     if (guide.sections.some(s => !s.explanation?.en?.trim() || !s.explanation?.uk?.trim())) issues.push('corner_bilingual_explanation_missing');
     if (guide.sections.some(s => !s.sources?.length || s.sources.some(key => !model.sources[key]))) issues.push('corner_source_missing');
-    if (guide.review_status !== 'approved') issues.push('independent_corner_review_pending');
+    if (guide.review_status !== 'independent_review_approved') issues.push('independent_corner_review_pending');
   }
   if (circuit.independent_claim_check !== 'approved') issues.push('independent_claim_review_pending');
   if (circuit.historical_layout_check !== 'approved') issues.push('historical_layout_review_pending');
   if (circuit.turn_names_and_numbers_check !== 'approved') issues.push('corner_historical_names_review_pending');
   if (circuit.photo_rights_check !== 'approved') issues.push('media_rights_review_pending');
   if (circuit.bilingual_line_edit !== 'approved') issues.push('bilingual_editorial_review_pending');
-  if (!approved.has(id) || circuit.publication !== 'approved') issues.push('publication_approval_absent');
+  if (!isCircuitEditionApproved(id) || circuit.publication !== 'approved') issues.push('publication_approval_absent');
   // Browser/mobile E2E is a runtime gate: this static script cannot certify it.
   issues.push('runtime_browser_mobile_validation_not_evidenced');
   return { circuit_id: id, status: issues.length ? 'IN_PROGRESS' : 'COMPLETE',

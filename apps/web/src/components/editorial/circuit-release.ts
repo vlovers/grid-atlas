@@ -13,8 +13,59 @@ export function circuitEditionDigest(circuitId: string) {
   })).digest('hex');
 }
 
+/** AI/source checks are evidence, not independent approval of individual turn mappings. */
+export function hasPublicationReadyCornerGuide(circuitId: string) {
+  // Ambiguous circuit IDs must never resolve to whichever guide happens to be first.
+  const matches = candidateCornerGuides.filter(entry => entry.circuit_id === circuitId);
+  if (matches.length !== 1) return false;
+  const [guide] = matches;
+  // JSON imports expose literal keys; review provenance is indexed by runtime source IDs.
+  const sourceRegistry: Record<string, string> = candidateCornerSources;
+  if (guide.review_status !== 'independent_review_approved') return false;
+  // Two generic source URLs are not proof that every numbered apex belongs
+  // to the stated historic layout. Approval requires a separately reviewed,
+  // dated numbered map and an explicit human-checked turn-to-apex crosswalk.
+  // None of the current research candidates has this receipt.
+  const numberingEvidence = (guide as unknown as { numbering_evidence?: {
+    source_key?: string;
+    layout_id?: string;
+    year?: number;
+    evidence_kind?: string;
+    apex_crosswalk_verified?: boolean;
+    independently_reviewed_by?: string;
+  } }).numbering_evidence;
+  const mapKey = numberingEvidence?.source_key ?? '';
+  if (!numberingEvidence ||
+    numberingEvidence.evidence_kind !== 'dated_numbered_circuit_map' ||
+    numberingEvidence.layout_id !== guide.layout_id ||
+    numberingEvidence.year !== guide.numbering_year ||
+    numberingEvidence.apex_crosswalk_verified !== true ||
+    !numberingEvidence.independently_reviewed_by?.trim() ||
+    !Object.hasOwn(sourceRegistry, mapKey) ||
+    !sourceRegistry[mapKey]?.startsWith('https://') ||
+    guide.sections.some(section => !section.sources.includes(mapKey))
+  ) return false;
+  if (!Number.isInteger(guide.numbered_turns) || guide.numbered_turns < 1) return false;
+  if (!guide.layout_id?.trim() || !Number.isInteger(guide.numbering_year) || guide.numbering_year < 1950 || guide.numbering_year > 2100) return false;
+  const ids = guide.sections.map(section => section.id);
+  if (ids.some(id => !id?.trim()) || new Set(ids).size !== ids.length) return false;
+  const numbers = guide.sections.flatMap(section => section.numbers);
+  if (numbers.length !== guide.numbered_turns || new Set(numbers).size !== guide.numbered_turns) return false;
+  if (numbers.some(number => !Number.isInteger(number) || number < 1 || number > guide.numbered_turns)) return false;
+  if (guide.sections.some(section =>
+    section.confirmation_status !== 'independently_verified' ||
+    !section.explanation?.en?.trim() || !section.explanation?.uk?.trim() ||
+    new Set(section.sources).size < 2 || section.sources.some(key =>
+      !Object.hasOwn(sourceRegistry, key) ||
+      !sourceRegistry[key]?.startsWith('https://')
+    )
+  )) return false;
+  return true;
+}
+
 /** No runtime flag can publish research. Maintainers must review an exact bilingual edition. */
 export function isCircuitEditionApproved(circuitId: string) {
+  if (!hasPublicationReadyCornerGuide(circuitId)) return false;
   const editions = (publication.editions as Edition[]).filter(edition => edition.circuit_id === circuitId);
   if (editions.length !== 1) return false;
   const [edition] = editions;

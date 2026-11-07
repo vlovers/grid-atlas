@@ -18,24 +18,25 @@ function ReviewDetails({ locale }: { locale: Locale }) {
     : 'Short summaries of the cited sources, checked with AI. Independent editorial approval remains pending. Race links appear only when the archive identifies exactly one event for the year; stories spanning several years are not linked to a single race.'}</p></details>;
 }
 
-export function CircuitBiography({ circuitId, locale }: { circuitId: string; locale: Locale }) {
+export function CircuitBiography({ circuitId, locale, allowExpandedEdition = true }: { circuitId: string; locale: Locale; allowExpandedEdition?: boolean }) {
   const candidate = circuitNarratives.find(entry => entry.circuit_id === circuitId);
-  const approved = isCircuitEditionApproved(circuitId);
+  const approved = allowExpandedEdition && isCircuitEditionApproved(circuitId);
   const existing = legacyCircuitHistory[circuitId]?.[locale];
   const biography = approved ? candidate?.biography : existing ? { title: { en: existing.title, uk: existing.title }, text: { en: existing.introduction, uk: existing.introduction }, source: existing.moments[0]?.url } : undefined;
   const previous = getPublicCircuitStory(circuitId);
   const uk = locale === 'uk';
   return <div data-testid="circuit-biography"><h2>{uk ? 'Історія траси' : 'Circuit history'}</h2>
     {biography ? <><h3>{biography.title[locale]}</h3><p>{biography.text[locale]}</p><a href={biography.source} target="_blank" rel="noopener noreferrer">{uk ? 'Джерело · Formula 1' : 'Source · Formula 1'} ↗</a><ReviewDetails locale={locale} /></>
-      : previous ? <p>{uk ? 'Коротку історію з посиланням на джерело зібрано в розділі «Легендарні моменти» нижче.' : 'Find this circuit’s short, source-linked story in Memorable moments below.'} <a href="#circuit-moments">{uk ? 'Перейти до історії ↓' : 'Jump to the story ↓'}</a></p>
+      : previous ? <><h3>{previous.title[locale]}</h3><p>{previous.description[locale]}</p><p><a href="#circuit-moments">{uk ? 'Джерело та контекст події ↓' : 'Event source and context ↓'}</a></p><ReviewDetails locale={locale} /></>
         : <p>{uk ? 'Окремий нарис історії цієї траси ще не підготовлено. Нижче можна дослідити її конфігурації та Гран-прі.' : 'A dedicated circuit history is not available yet. Explore its layouts and Grands Prix below.'}</p>}
   </div>;
 }
 
-export function CircuitMoments({ circuitId, locale, history }: { circuitId: string; locale: Locale; history: Race[] }) {
+export function CircuitMoments({ circuitId, locale, history, allowExpandedEdition = true }: { circuitId: string; locale: Locale; history: Race[]; allowExpandedEdition?: boolean }) {
   const existing = legacyCircuitHistory[circuitId]?.[locale];
   const featured = getPublicCircuitStory(circuitId);
-  const moments = isCircuitEditionApproved(circuitId)
+  const approved = allowExpandedEdition && isCircuitEditionApproved(circuitId);
+  const moments = approved
     ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments.map(moment => ({
         id: moment.id, yearLabel: String(moment.year), raceYear: moment.year,
         title: moment.title, text: moment.text, source: moment.source, locator: moment.locator,
@@ -51,17 +52,21 @@ export function CircuitMoments({ circuitId, locale, history }: { circuitId: stri
         title: featured.title, text: featured.description, source: featured.source, locator: featured.year,
       }] : undefined);
   const uk = locale === 'uk';
-  const contextEvidence = featured && !existing && !isCircuitEditionApproved(circuitId)
+  const contextEvidence = featured && !existing && !approved
     ? getCircuitContextEvidence(circuitId) : undefined;
+  // The public short story is already the biography lead; keep evidence and race links
+  // in the moment card without repeating its exact paragraph.
+  const featuredStoryIsBiography = Boolean(featured && !existing && !approved);
   return <div data-testid="circuit-moments"><h2>{uk ? 'Легендарні моменти' : 'Memorable moments'}</h2>
-    {moments ? <div className={styles.momentGrid}>{moments.map(moment => {
+    {moments ? <div className={`${styles.momentGrid} ${moments.length === 1 ? styles.singleMomentGrid : ''} `}>{moments.map(moment => {
       const race = uniqueRaceInYear(history, moment.raceYear);
       const sourcePresentation = circuitStorySourcePresentation(moment.source, locale);
       return <article className={styles.momentCard} key={moment.id} data-moment-id={moment.id}>
-        <span className={styles.year}>{moment.yearLabel}</span><span className={styles.sourceType}>{sourcePresentation.badge}</span><h3>{moment.title[locale]}</h3><p>{moment.text[locale]}</p>
+        <div className={styles.momentMeta}><span className={styles.year}>{moment.yearLabel}</span><span className={styles.sourceType}>{sourcePresentation.badge}</span></div><h3>{moment.title[locale]}</h3>
+        {!(featuredStoryIsBiography && moment.id === `${circuitId}-featured`) && <p>{moment.text[locale]}</p>}
         {race && <><Link href={`/races/${race.race_id}`}>{uk ? 'Гонка' : 'Race'} · {race.race_date ?? race.season_year} ↗</Link>
           <p><small>{uk ? 'Переможці гонки' : 'Race winners'}: {race.winners.map((winner, index) => <span key={`${winner.driver_id}:${winner.constructor_id}`}>{index > 0 && ' · '}<Link href={`/drivers/${winner.driver_id}`}>{winner.driver_name}</Link> / <Link href={`/constructors/${winner.constructor_id}`}>{winner.constructor_name}</Link></span>)}</small></p></>}
-        <details><summary>{uk ? 'Що підтверджує джерело?' : 'What does the source support?'}</summary><p>{sourcePresentation.description}</p><a href={moment.source} target="_blank" rel="noopener noreferrer">{sourcePresentation.linkLabel} · {moment.locator} ↗</a>
+        <details className={styles.momentEvidence}><summary>{uk ? 'Джерела та контекст' : 'Sources and context'}</summary><p>{sourcePresentation.description}</p><a href={moment.source} target="_blank" rel="noopener noreferrer">{sourcePresentation.linkLabel} · {moment.locator} ↗</a>
           {contextEvidence && <p><strong>{uk ? 'Додатковий контекст:' : 'Additional context:'}</strong> {contextEvidence.scope[locale]} <a href={contextEvidence.url} target="_blank" rel="noopener noreferrer">{uk ? 'Читати матеріал' : 'Read supporting account'} ↗</a></p>}</details>
       </article>;
     })}</div> : <p>{uk ? 'Окремої добірки визначних подій поки немає. Усі відомі результати доступні нижче.' : 'A dedicated selection of significant moments is not available yet. Browse all available results below.'}</p>}

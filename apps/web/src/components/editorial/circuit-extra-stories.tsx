@@ -1,24 +1,13 @@
 import { Link } from '@/i18n/navigation';
-import facts from './circuit-extra-stories.json';
-import nextFacts from './circuit-next20-stories.json';
-import finalFacts from './circuit-final33-stories.json';
+import { getPublicCircuitStory } from './circuit-public-moments';
 import styles from './circuit-history-stories.module.css';
 
-type Entry = {
-  id: string;
-  title: { en: string; uk: string };
-  description: { en: string; uk: string };
-  year: string;
-  source: string;
-};
 type Race = {
   race_id: string;
   season_year: number;
   race_name: string;
   winners: { driver_id: string; driver_name: string }[];
 };
-const entries = [...facts, ...nextFacts, ...finalFacts] as Entry[];
-const byId = new Map(entries.map(entry => [entry.id, entry]));
 const firstMentionedYear = (value: string) => {
   const year = value.match(/\b(19|20)\d{2}\b/);
   return year ? Number(year[0]) : null;
@@ -27,7 +16,7 @@ const firstMentionedYear = (value: string) => {
 export function CircuitExtraStories({
   circuitId, locale, history = [],
 }: { circuitId: string; locale: 'en' | 'uk'; history?: Race[] }) {
-  const item = byId.get(circuitId);
+  const item = getPublicCircuitStory(circuitId);
   if (!item) return null;
   const uk = locale === 'uk';
   const year = firstMentionedYear(item.year);

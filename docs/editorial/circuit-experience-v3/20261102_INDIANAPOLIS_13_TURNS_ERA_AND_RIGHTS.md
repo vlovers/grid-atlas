@@ -1,0 +1,10 @@
+# Indianapolis: 13-turn 2007 F1 road course and two dated race stories
+
+**2 November 2026 — candidate content, independent review pending.** Direct additions to the existing editorial JSON model and Node test, not a new generic audit.
+
+- `indianapolis-2` is the clockwise 2000–2007 F1 infield-and-banking course with **13 numbered corners**. `indianapolis-1` is the separate four-turn oval from the 1950–1960 World Championship Indianapolis 500 era. Do not apply F1 Turn 13 to the oval's numbered corner labels.
+- [Indianapolis Motor Speedway official F1 history](https://www.indianapolismotorspeedway.com/history/formula-one) confirms the 13-turn F1 layout, years and direction; [F1DB historical inventory](https://lapledger.org/circuits/indianapolis) distinguishes both outlines. A [historic lap guide](https://rnt-motorsports.com/circuits/indianapolis-motor-speedway/) gives individual corner descriptions. **The exact 2007 FIA map was not retrieved**, so this is not labelled as independent FIA-map verification.
+- [Michelin's 2005 Turn 13 investigation](https://www.autosport.com/f1/news/michelin-rule-out-tyre-malfunction-at-indy-5329070/5329070/) and [F1's official 2005 result](https://www.formula1.com/en/results/2005/races/779/united-states/race-result) support the six-car event. [F1's 2007 classification](https://www.formula1.com/en/results/2007/races/814/united-states/race-result) supports Hamilton ahead of Alonso by 1.518 seconds.
+- Every one of the 13 turns has distinct original EN/UK prose and linked source keys. `name: null` is deliberate because unofficial nicknames for infield hairpins are not independently verified proper names. Two bilingual race moments and a circuit biography are separately sourced.
+- No new photo, diagram, FIA PDF or branding asset was copied. Existing F1DB SVG `indianapolis-2` remains attributed to Jules Roy, CC BY 4.0; external official sources do not grant image-republication rights. No turn-coordinate overlay was invented.
+- Regression: `tests/circuit-indianapolis-2007-thirteen-turns-and-2005-history.test.mjs`. CI and independent editorial review remain required before merge/publication.

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261105-03-extra-unique-claims",
+  "source_release": "F1DB v2026.17.0",
+  "status": "research_only",
+  "publication_allowed": false,
+  "independent_human_approval": false,
+  "media_rights_approved": false,
+  "count": 3,
+  "records": [
+    {
+      "claim_id": "interlagos:2007",
+      "circuit_id": "interlagos",
+      "event_year": 2007,
+      "source_url": "https://www.autosport.com/general/news/the-complete-2007-brazilian-gp-review-5078616/5078616/",
+      "source_role": "contemporary_full_race_analysis",
+      "claim_specific_review_note_en": "Räikkönen wins title after 17-point deficit with two rounds remaining; 2007 points system must be used, not modern scoring.",
+      "claim_specific_review_note_uk": "Райкконен відіграв 17 очок за останні два етапи; рахувати за регламентом 2007 року, а не сучасною системою.",
+      "independent_human_approval": false,
+      "publication_allowed": false,
+      "media_rights_approved": false,
+      "verification_status": "research_lead_crosscheck"
+    },
+    {
+      "claim_id": "barcelona-catalunya:2006",
+      "circuit_id": "barcelona-catalunya",
+      "event_year": 2006,
+      "source_url": "https://www.motorsportmagazine.com/database/races/2006-spanish-grand-prix/",
+      "source_role": "historical_race_database",
+      "claim_specific_review_note_en": "Alonso wins Spain 2006 from pole; source demonstrates results, not race tactics or turn-specific details.",
+      "claim_specific_review_note_uk": "Алонсо виграв домашню гонку з поула; протокол не підтверджує тактику чи конкретні повороти.",
+      "independent_human_approval": false,
+      "publication_allowed": false,
+      "media_rights_approved": false,
+      "verification_status": "research_lead_crosscheck"
+    },
+    {
+      "claim_id": "albert-park:2009",
+      "circuit_id": "albert-park",
+      "event_year": 2009,
+      "source_url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2009-australian-grand-prix-report/",
+      "source_role": "contemporary_race_report",
+      "claim_specific_review_note_en": "Brawn GP first-race one-two; Barrichello's recovery and Vettel/Kubica collision must be distinguished from a dominant 1-2 throughout.",
+      "claim_specific_review_note_uk": "Brawn GP здобула дубль у дебюті; Баррікелло повернувся вперед після проблем на старті, тому дубль не означає лідерства обох увесь заїзд.",
+      "independent_human_approval": false,
+      "publication_allowed": false,
+      "media_rights_approved": false,
+      "verification_status": "research_lead_crosscheck"
+    }
+  ]
+}

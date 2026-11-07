@@ -1,0 +1,7 @@
+# Jarama 1981 — 14 provisional individually written turn entries
+
+Research only. The period 1980–1989 layout is documented by the public-domain drawing from AlexJ: https://commons.wikimedia.org/wiki/File:Circuito_Permanente_del_Jarama_1980.svg. The venue's own 2017 anniversary history provides the **ordered** names Nuvolari, Fangio, Varzi, Le Mans, Farina, Pegaso, Ascari, Portago, Bugatti, Pegio, Monza and Tunnel: https://www.jarama.org/actualidad/noticias/el-circuito-del-jarama-race-celebra-su-50-aniversario-con-una-cena-de-gala. The 1981 result is independently confirmed at https://www.formula1.com/en/results/1981/races/428/spain/race-result.
+
+**Numbering caveat:** F1DB records 14 bends for the 1981 layout, but neither the period map nor the venue's retrospective name list provides a numbered 1981 FIA corner chart. The two-part splits of Le Mans and Bugatti are provisional editorial reconstructions. All fourteen canonical name fields remain null, with historical labels held as aliases, and all confirmation flags remain historical_numbering_unverified. The Tunnel bend became María de Villota in 2017, not in 1981.
+
+No maps, photos or FIA PDFs were copied. The linked historic drawing is marked public domain by its creator, but its licence is not used to infer permission for any other asset. The existing F1DB outline retains Jules Roy's CC BY 4.0 attribution. Independent period-map, numbering and translation review remains required before publication.

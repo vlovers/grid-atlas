@@ -1,0 +1,154 @@
+# 78 circuit guides — structural audit, 2026-11-02
+
+This audit measures repository coverage only. It does not certify facts, corner geometry, historical layouts, link availability, translations, or image rights.
+
+- Circuit records: 78/78.
+- Guide sections: 166.
+- Records with fewer than three sections: 70.
+- Sections missing EN/UK/source: 0.
+
+A guide section can describe a race or a group of turns. These counts do not establish full corner-by-corner coverage.
+
+| Circuit | Sections |
+|---|---:|
+| silverstone | 3 |
+| monza | 3 |
+| spa-francorchamps | 2 |
+| suzuka | 3 |
+| monaco | 4 |
+| hungaroring | 4 |
+| zandvoort | 2 |
+| montreal | 2 |
+| interlagos | 2 |
+| bahrain | 2 |
+| baku | 2 |
+| austin | 2 |
+| imola | 2 |
+| jeddah | 2 |
+| mexico-city | 2 |
+| yas-marina | 2 |
+| marina-bay | 2 |
+| catalunya | 2 |
+| spielberg | 2 |
+| shanghai | 2 |
+| istanbul | 2 |
+| mugello | 2 |
+| portimao | 2 |
+| nurburgring | 2 |
+| hockenheimring | 2 |
+| aida | 2 |
+| reims | 2 |
+| rouen | 2 |
+| buddh | 2 |
+| porto | 2 |
+| jerez | 2 |
+| dallas | 2 |
+| sirius | 2 |
+| lusail | 2 |
+| yeongam | 2 |
+| bugatti | 2 |
+| mosport | 2 |
+| sebring | 2 |
+| detroit | 2 |
+| zeltweg | 2 |
+| phoenix | 2 |
+| pescara | 2 |
+| montjuic | 2 |
+| valencia | 2 |
+| anderstorp | 2 |
+| avus | 2 |
+| fuji | 2 |
+| dijon | 2 |
+| miami | 2 |
+| jarama | 2 |
+| zolder | 2 |
+| sepang | 2 |
+| madring | 2 |
+| estoril | 3 |
+| kyalami | 2 |
+| aintree | 2 |
+| monsanto | 2 |
+| ain-diab | 2 |
+| adelaide | 2 |
+| nivelles | 2 |
+| pedralbes | 2 |
+| riverside | 2 |
+| melbourne | 2 |
+| donington | 2 |
+| las-vegas | 2 |
+| long-beach | 2 |
+| bremgarten | 2 |
+| east-london | 2 |
+| paul-ricard | 2 |
+| magny-cours | 3 |
+| jacarepagua | 2 |
+| brands-hatch | 3 |
+| watkins-glen | 2 |
+| indianapolis | 2 |
+| buenos-aires | 2 |
+| mont-tremblant | 2 |
+| caesars-palace | 2 |
+| clermont-ferrand | 2 |
+
+## Release gate
+
+Before calling all circuits complete: review every historical claim and source; inventory every corner against period-correct layout maps; review EN/UK translations; approve 165 research scenes; clear media rights. This audit grants no approvals.
+
+
+## Outstanding seven — explicit historical-numbering gate (2026-11-02)
+
+The 69 guides integrated directly in `apps/web/src/components/editorial/circuit-corners-v3.json` contain 977 individual bilingual research entries at commit `964e69d8`. Two separate inherited guide bindings (Monaco, Spa) add 38 entries. Hence **71/78 candidate circuit guides**, **1015 candidate entries**, **7 circuits without integrated turn-by-turn guides**. Research coverage is not publication approval or historical apex validation. Recompute these counts after subsequent commits.
+
+| Circuit ID | F1 era/layout | Existing research | Release-blocking evidence gap |
+|---|---|---|---|
+| `ain-diab` | 1958 / `ain-diab-1` | `REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json` (two bilingual geographic sections); F1DB records 18 turns | No authenticated 1958 per-apex numbered reference. Do not assign invented proper corner names. |
+| `clermont-ferrand` | 1972 / `clermont-ferrand-1` | `REMAINING_17_PERIOD_ROUTES_34_BILINGUAL_SECTIONS_20261102.json`; F1DB records 48 turns | A dated period map and the 48-turn F1DB count are not a validated 1:1 numbering crosswalk; other sources may count bends differently. |
+| `dallas` | 1984 / `dallas-1` | `DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json` | F1DB records 23 turns, while the research describes 13 distinct driving complexes. A complex is not an official numbered turn. |
+| `detroit` | 1982 / `detroit-1` | `DALLAS_DETROIT_1982_1984_23_HISTORICAL_SECTIONS_20261102.json` | Need map-based period crosswalk; do not silently substitute another Detroit GP year or a present-day street grid. |
+| `pescara` | 1957 / `pescara-1` | `PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json` | Historical villages, roads, and route order do not establish individual certified turn numbers on the 1957 long circuit. |
+| `porto` | 1958–1960 / `porto-1` | `PESCARA_PORTO_CAESARS_19_HISTORIC_ROUTE_SCENES_20261102.json` | Reconcile the circuit as raced in the relevant season; landmark names alone do not give a year-specific apex key. |
+| `sebring` | 1959 / `sebring-1` | `SEBRING_1959_TEN_PERIOD_ROUTE_SECTIONS_20261102.json` (ten bilingual sections); F1DB records 17 turns | An original race report covers driving sections, but does not independently number every apex; modern Sebring numbers cannot be applied to 1959. |
+
+### Required checks before closing each guide
+
+1. Pin the year and exact F1DB layout ID; identify any variation between source map and F1 race route.
+2. Match every proposed numbered apex to a period-correct, independently traceable map. If not possible, retain unnumbered descriptive route sections and `historical_numbering_unverified`; **never imply F1DB count proves an ordered FIA numbering key**.
+3. Give independently authored, readable EN and UK explanations for each confirmed turn, with claim-level provenance. Keep unverified names `null`; comparative place names may be explained only as non-canonical landmarks.
+4. Verify map/photo licence and attribution independently. Historical event flyers, period map PDFs and proprietary diagrams are external evidence links unless lawful reuse rights are established. Existing F1DB SVG attribution does not license other imagery.
+5. Confirm the UI renders the correct historical period and clearly distinguishes numbered certified turns from provisional route-reading positions; test all source links, responsive layouts, translation coverage, and publication gate.
+6. Require independent editorial review and completed CI for the exact PR HEAD. No release or merging while queued/failed.
+
+**Current outcome:** the seven gaps are explicitly inventoried and research material linked, but **no additional integrated turn guides or approvals are claimed by this audit**.
+
+
+## 2026-11-05 editorial evidence decision — Dallas as-raced bend claims
+
+This appendix updates the **research** count from the original 2026-11-02 snapshot; it does not alter historical approval or revise old worklist figures. At the 2026-11-05 review, the seven unmatched layouts have **68 bilingual route sections, 53 individual period-bend research records and 13 named-feature research records**. These are overlapping types of study, not **134 verified corners**.
+
+### Dallas Fair Park, 1984 — claim-by-claim disposition
+
+- **1/16 bend claims — period report attests a specific bend:** the final corner before the finish, where Nigel Mansell lost drive. Motor Sport race report identifies *the final corner*, but neither an independent numbered FIA apex nor a surveyed position.
+- **15/16 bend claims — provisional reconstructed geometry:** direction and relative lap position in the existing exploratory model do **not** have a period source pinpointing that individual bend. These remain diagram-derived hypotheses, not verified facts. Their EN/UK copy must not be published as a numbered turn guide.
+- **0/16** independently mapped apex coordinates or confirmed period FIA numbers.
+- **Four separate landmarks** in the March 1984 *D Magazine* preview (Food and Fiber Pavilion; hairpin behind Fair Park Music Hall; Fine Arts Museum straight; Pennsylvania Avenue near a roller coaster) describe the **planned** route. The anticipated **2.58 mi** is different from the **2.424 mi** raced layout. Do not use the early description to certify any July turn location.
+- **Count conventions do not agree:** F1DB 23 individual bends; RacingCircuits.info describes 12 main corners plus additional chicanes; Lap Ledger headline says 24. No source here provides a 1:1 authoritative numbered crosswalk.
+- A separate historic reconstruction explicitly warns that **chicane locations remain uncertain** without better aerial evidence. The reconstruction and photographs are external sources; image availability does not imply republication rights.
+
+**Verification queue:** obtain an original dated as-raced map, contemporary aerial or legible full-lap race footage with independently checked location anchors; attach per-bend timestamp/page and trace the entire course against `dallas-1`. A later reference to the *existence* of a chicane does not prove the exact position or corner number. All 16 keep `official_turn_number: null` and `publication_allowed: false`.
+
+**Claim-level source leads (not licensing approvals):**
+- [Contemporary race narrative — Motor Sport](https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/)
+- [Historic Fair Park analysis — RacingCircuits.info](https://www.racingcircuits.info/north-america/usa/dallas-fair-park.html)
+- [Original March 1984 planned-route preview — D Magazine](https://www.dmagazine.com/publications/d-magazine/1984/march/sports-the-great-race/)
+- [Historic reconstruction acknowledging uncertain chicane positions — The Fastlane](https://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/DallasFairPark.html)
+
+This editorial ruling is **not** an independent human approval, a geometric mapping or an authorization to publish.
+
+
+### Charade 1972 — Ferme and marshal-post numbering trap
+
+A dedicated [Charade venue history (#46)](https://www.charade.fr/actualites-charade/charade-dans-le-retro-46/) confirms the original 8.055 km Ferme sequence was an **S: left then right**, opposite a farm, followed by the descent towards Petit Pont. The description is specific to the old circuit and therefore supports the geographic sequence without creating a certified 1972 FIA apex number.
+
+Crucially, that venue text also gives **marshal post #10** on the pre-1989 layout and posts **#16/#17** after the 1989 revision. **Those are marshals' posts, not corner numbers**. Any image showing these signs must not be treated as an official numbered bend chart. Historic photo station numbers are also not bend IDs. The dedicated venue section about Petit Pont discusses later changes to runoff: **do not backdate** post-1989 safety geometry to the 1972 French GP.
+
+Review status: Ferme's venue-sourced bend type and name origin have stronger evidence; **independent placement of every 1972 apex, the 48 vs 51 counting convention, exact map rights and publication authorization remain unresolved**.

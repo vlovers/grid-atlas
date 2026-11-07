@@ -9,7 +9,7 @@ import { CircuitLayoutGallery } from '@/components/editorial/circuit-layout-gall
 import { EditorialHero, EditorialTabs, SourceAttribution, ArchiveDisclosure } from '@/components/editorial/primitives';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { CircuitExperience, type CircuitLayout, type CircuitTechnicalEvent } from '@/components/circuit-experience';
-import { selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
+import { CIRCUIT_ARTWORK, selectCircuitCoverArtwork } from '@/components/circuit-layout-registry';
 import { CircuitCover } from '@/components/editorial/circuit-cover';
 import { IdentityFacts, type IdentityDetails } from '@/components/identity-facts';
 import { getTranslations } from 'next-intl/server';
@@ -22,6 +22,8 @@ import SeoBreadcrumbs from '@/components/seo-breadcrumbs';
 import { getData } from '@/lib/api';
 import { catalogueParams, pageHref, validId, type CatalogueParams } from '@/lib/catalogue';
 import styles from './circuit.module.css';
+import { CircuitProductionPage } from '@/components/editorial/circuit-production-page';
+import { isCircuitReaderBatch, circuitReaderDescription } from '@/components/editorial/circuit-reader-cohort';
 
 export const dynamic = 'force-dynamic';
 const CIRCUIT_PAGE_SIZE = 25;
@@ -40,7 +42,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
   const suffix = page > 1 ? ` · ${locale === 'uk' ? 'Сторінка' : 'Page'} ${page}` : '';
   return { ...routeMetadata(locale, pageHref(`/circuits/${id}`, page), Boolean(q) || (page > 1 && offset >= circuit.races)),
-    title: `${title}${suffix}`, description: `${description}${suffix}` };
+    title: `${title}${suffix}`, description: `${isCircuitReaderBatch(circuit.external_id) ? circuitReaderDescription(circuit.name, locale) : description}${suffix}` };
 }
 
 export default async function CircuitPage({ params, searchParams }: Props) {
@@ -51,14 +53,15 @@ export default async function CircuitPage({ params, searchParams }: Props) {
   const uk = lang === 'uk';
   const { page, q } = catalogueParams(await searchParams);
   const offset = (page - 1) * CIRCUIT_PAGE_SIZE;
-  const [[circuit], history, identities, layouts, technicalEvents] = await Promise.all([
-    getData<Circuit>(`/api/circuits/${id}`),
+  const [circuit] = await getData<Circuit>(`/api/circuits/${id}`);
+  if (!circuit) notFound();
+  if (isCircuitReaderBatch(circuit.external_id)) return <CircuitProductionPage circuit={circuit} id={id} locale={locale} query={await searchParams} />;
+  const [history, identities, layouts, technicalEvents] = await Promise.all([
     getData<CircuitHistory>(`/api/circuits/${id}/history`),
     getData<IdentityDetails>(`/api/circuits/${id}/identity`),
     getData<CircuitLayout>(`/api/circuits/${id}/layouts`),
     getData<CircuitTechnicalEvent>(`/api/circuits/${id}/technical-history`),
   ]);
-  if (!circuit) notFound();
   const wins = new Map<string, { id: string; name: string; races: Set<string> }>();
   for (const race of history) for (const winner of race.winners) {
     const driver = wins.get(winner.driver_id) ?? { id: winner.driver_id, name: winner.driver_name, races: new Set<string>() };
@@ -95,7 +98,7 @@ export default async function CircuitPage({ params, searchParams }: Props) {
     {hasCorners && <section id="circuit-corners" tabIndex={-1}><CircuitCornerGuide circuitId={circuit.external_id} locale={lang} availableLayouts={layouts.map(layout => layout.external_layout_id)} /></section>}
     {hasMoments && <section id="circuit-moments" tabIndex={-1}><CircuitMoments circuitId={circuit.external_id} locale={lang} history={history} /></section>}
     <section id="circuit-layouts" tabIndex={-1}>
-      <CircuitExperience layouts={layouts} events={technicalEvents} locale={lang} />
+      <CircuitExperience layouts={layouts} events={technicalEvents} locale={lang} archiveArtwork={layouts.flatMap(layout => { const artwork = CIRCUIT_ARTWORK.get(layout.external_layout_id); return artwork ? [artwork] : []; })} />
       <ArchiveDisclosure label={uk ? 'Порівняти всі контури' : 'Compare all outlines'} count={layouts.length}><CircuitLayoutGallery layouts={layouts} title={circuit.name} locale={lang} /></ArchiveDisclosure>
     </section>
     <section id="circuit-photos" tabIndex={-1} aria-label={uk ? 'Фотоархів траси' : 'Circuit image archive'}>

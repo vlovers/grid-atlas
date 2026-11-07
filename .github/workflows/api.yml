@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'apps/web/src/components/editorial/**'
       - 'scripts/smoke-deployment.mjs'
       - 'packages/database/**'
       - 'pnpm-workspace.yaml'

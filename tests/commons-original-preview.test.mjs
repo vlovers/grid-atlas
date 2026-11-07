@@ -23,7 +23,7 @@ test('real photo preview is local research-only and checks pinned original bytes
 test('offline preview rejects absent originals without any network access',()=>{
  const cwd=mkdtempSync(join(tmpdir(),'grid-atlas-review-'));
  try {
-  for (const p of ['scripts/preview-commons-originals.mjs','docs/media/commons-original-evidence.json','docs/media/verified-original-observations.json']){
+  for (const p of ['scripts/preview-commons-originals.mjs','scripts/commons-original-download.mjs','docs/media/commons-original-evidence.json','docs/media/verified-original-observations.json']){
    const dest=join(cwd,p);mkdirSync(dirname(dest),{recursive:true});writeFileSync(dest,readFileSync(p));
   }
   const result=spawnSync(process.execPath,[join(cwd,'scripts/preview-commons-originals.mjs'),'--offline'],{cwd,encoding:'utf8'});

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
-import { publicCircuitStories } from '../apps/web/src/components/editorial/circuit-public-moments.ts';
+const researchStories = ['extra', 'next20', 'final33'].flatMap(name => JSON.parse(readFileSync(new URL(`../apps/web/src/components/editorial/circuit-${name}-stories.json`, import.meta.url), 'utf8')));
 import { getCircuitContextEvidence } from '../apps/web/src/components/editorial/circuit-context-evidence.ts';
 
 const queue = JSON.parse(readFileSync(new URL('../docs/editorial/circuit-claim-review-seven-20261028.json', import.meta.url), 'utf8'));
@@ -9,7 +9,7 @@ const release = JSON.parse(readFileSync(new URL('../apps/web/src/components/edit
 const expectedIds = ['adelaide', 'aida', 'estoril', 'marina-bay', 'montjuic', 'rouen', 'zolder'];
 const evidenceRoutes = new Set(['candidate-results', 'candidate-context', 'needs-new-evidence', 'editorial-judgment']);
 
-test('seven sensitive public summaries have 24 exact bilingual claim excerpts awaiting review', () => {
+test('seven sensitive research summaries have 24 exact bilingual claim excerpts awaiting review', () => {
   assert.equal(queue.schema_version, 1);
   assert.equal(queue.approval_state, 'not-approved');
   assert.equal(queue.reviewer_identity, null);
@@ -18,7 +18,7 @@ test('seven sensitive public summaries have 24 exact bilingual claim excerpts aw
   const ids = new Set();
   let claimCount = 0;
   for (const row of queue.stories) {
-    const story = publicCircuitStories.find(item => item.id === row.circuit_id);
+    const story = researchStories.find(item => item.id === row.circuit_id);
     assert.ok(story, row.circuit_id);
     assert.equal(row.year, story.year, row.circuit_id);
     assert.equal(row.primary_source, story.source, row.circuit_id);
