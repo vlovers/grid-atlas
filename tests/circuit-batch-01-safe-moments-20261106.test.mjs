@@ -13,9 +13,8 @@ test('all 20 first-batch candidates have bilingual histories and sourced moments
     const entry = matches[0];
     assert.ok(entry.biography.text.en && entry.biography.text.uk);
     assert.ok(entry.biography.source.startsWith('https://'));
-    if (/^\d{4}$/.test(story.year)) {
-      assert.ok(entry.moments.length > 0, story.id);
-    }
+    assert.ok(entry.moments.length >= 2, story.id + ': first batch requires two separate source-backed moments');
+    assert.equal(new Set(entry.moments.map(moment => moment.id)).size, entry.moments.length, story.id);
     for (const moment of entry.moments) {
       assert.ok(moment.title.en && moment.title.uk && moment.text.en && moment.text.uk, story.id);
       assert.ok(moment.source.startsWith('https://'), story.id);

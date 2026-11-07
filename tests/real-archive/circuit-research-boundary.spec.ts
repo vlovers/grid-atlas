@@ -22,8 +22,12 @@ for (const locale of ['en', 'uk'] as const) {
       if (draft && existing && draft.description[locale] !== existing.description[locale]) {
         // Assert exact prose after HTML entity decoding through the real browser.
         await page.goto(`/${locale}/circuits/${circuit.id}`);
-        await expect(page.getByTestId('circuit-moments')).toContainText(existing.description[locale]);
+        await expect(page.getByTestId('circuit-moments')).toBeVisible();
+        await expect(page.getByTestId('circuit-corner-guide')).toHaveCount(0);
         await expect(page.locator('body')).not.toContainText(draft.description[locale]);
+        await expect(page.getByTestId('circuit-biography')).toContainText(existing.description[locale]);
+        await expect(page.getByTestId('circuit-moments')).not.toContainText(existing.description[locale]);
+        await expect(page.getByTestId('circuit-moments').locator('a[href="' + existing.source + '"]')).toHaveCount(1);
       }
       const article = await request.get(`http://127.0.0.1:3350/api/circuits/${circuit.id}/article?locale=${locale}`);
       expect(article.status()).toBe(404);

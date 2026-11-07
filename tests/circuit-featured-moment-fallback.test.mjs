@@ -80,7 +80,7 @@ test('public short-story biography and moment evidence do not repeat the same pa
   assert.match(component, /existing\?\.moments\.map/);
   assert.match(component, /href="#circuit-moments"/);
   assert.match(component, /previous\.description\[locale\]/);
-  assert.match(component, /const featuredStoryIsBiography = Boolean\(featured && !existing && !isCircuitEditionApproved\(circuitId\)\)/);
+  assert.match(component, /const featuredStoryIsBiography = Boolean\(featured && !existing && !approved\)/);
   assert.match(component, /!\(featuredStoryIsBiography && moment\.id ===/);
   assert.match(component, /noopener noreferrer/);
 });
@@ -128,7 +128,7 @@ test('seven prioritized circuit stories have scoped contextual references, not a
   }
   assert.equal(getCircuitContextEvidence('melbourne'), undefined);
   assert.equal(getCircuitContextEvidence('not-a-circuit'), undefined);
-  assert.match(component, /featured && !existing && !isCircuitEditionApproved\(circuitId\)/);
+  assert.match(component, /featured && !existing && !approved/);
   assert.match(component, /contextEvidence\.scope\[locale\]/);
   assert.match(component, /href=\{contextEvidence\.url\}/);
   assert.deepEqual(release.editions, [], 'context sources are not editorial approvals');

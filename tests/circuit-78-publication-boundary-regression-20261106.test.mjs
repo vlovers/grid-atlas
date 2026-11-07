@@ -52,7 +52,7 @@ test('circuit pages keep a public history and race links but gate unapproved lon
   assert.match(biography, /getPublicCircuitStory\(circuitId\)/);
   assert.match(biography, /isCircuitEditionApproved\(circuitId\)/);
   assert.match(biography, /const biography = approved \? candidate\?\.biography/);
-  assert.match(biography, /const moments = isCircuitEditionApproved\(circuitId\)/);
+  assert.match(biography, /const moments = approved/);
   assert.match(biography, /uniqueRaceInYear\(history, moment\.raceYear\)/);
   assert.match(biography, /<ReviewDetails locale=\{locale\}/);
   assert.match(release, /hasPublicationReadyCornerGuide\(circuitId\)/);

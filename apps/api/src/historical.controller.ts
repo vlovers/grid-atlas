@@ -420,13 +420,14 @@ export class HistoricalController {
     const circuitId = integer(id, 0, 1, 2147483647, 'id');
     const { rows: found } = await this.db.query('SELECT id FROM historical_circuits WHERE id=$1', [circuitId]);
     if (!found.length) throw new NotFoundException('Circuit not found');
-    const { rows } = await this.db.query(`SELECT r.id::text AS race_id,
+    const { rows } = await this.db.query(`SELECT r.id::text AS race_id, ei.external_id AS external_race_id,
       r.season_year, r.round, r.official_name AS race_name,
       f.layout_id::text, l.external_layout_id, f.course_length_km::text,
       f.turns, f.laps, f.distance_km::text, f.scheduled_laps,
       f.scheduled_distance_km::text, f.direction,
       f.source_locator, sr.release_tag, sr.sha256 AS release_sha256, f.content_hash
       FROM historical_races r JOIN historical_race_circuit_facts f ON f.race_id=r.id
+      LEFT JOIN external_identities ei ON ei.id=r.external_identity_id AND ei.entity_kind='race'
       LEFT JOIN historical_circuit_layouts l ON l.id=f.layout_id
       JOIN source_releases sr ON sr.id=f.release_id
       WHERE r.circuit_id=$1

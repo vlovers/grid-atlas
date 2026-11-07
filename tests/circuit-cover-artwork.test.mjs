@@ -21,14 +21,15 @@ test('all cover options originate in the pinned licensed local SVG manifest', ()
   }
 });
 
-test('cover selects only layouts returned by the current circuit API', () => {
+test('legacy artwork lookup stays identity-bound while circuit reader requires independent publication', () => {
   const source = file('apps/web/src/components/circuit-layout-registry.ts');
   assert.match(source, /CIRCUIT_ARTWORK\.get\(layout\.external_layout_id\)/);
   assert.match(source, /eligible\.find\(entry => entry\.layout\.effective\)/);
   assert.match(source, /\?\.artwork \?\? null/);
-  const page = file('apps/web/src/app/[locale]/circuits/[id]/page.tsx');
-  assert.match(page, /selectCircuitCoverArtwork\(layouts\)/);
-  assert.match(page, /circuitArtwork=\{coverArtwork\}/);
+  const page = file('apps/web/src/components/editorial/circuit-production-page.tsx');
+  assert.match(page, /readCircuitPublication\(circuit.external_id, layouts, readerEvents\)/);
+  assert.match(page, /assets=\{publication\}/);
+  assert.doesNotMatch(page, /selectCircuitCoverArtwork|CircuitCover|CircuitLayoutGallery|circuit-layout-manifest/);
 });
 
 test('cover provides bilingual alt text, attribution and fallback decorative art', () => {

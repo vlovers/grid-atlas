@@ -468,11 +468,24 @@
           "uk": "Два Нюрбургринги під однією назвою"
         },
         "text": {
-          "en": "The Nürburgring name spans two very different Formula 1 worlds. The immense Nordschleife was replaced in the championship by the modern Grand Prix circuit, which opened in 1984 and later gained the Mercedes Arena extension. The 2020 Eifel Grand Prix used the 5.148-kilometre, fifteen-corner layout; its numbered bends must never be projected back onto the old northern loop.",
-          "uk": "Назва Нюрбургринг охоплює два зовсім різні світи Формули-1. Величезну Nordschleife в чемпіонаті змінила сучасна траса Гран-прі, відкрита у 1984 році й пізніше розширена секцією Mercedes Arena. Гран-прі Айфеля 2020 року використовував конфігурацію завдовжки 5,148 км із п'ятнадцятьма поворотами; їхню нумерацію не можна переносити на стару північну петлю."
+          "en": "In the Eifel mountains, the Nürburgring name spans two very different Formula 1 worlds. The immense Nordschleife opened in 1927. The modern Grand Prix circuit opened in 1984, returning championship racing to the venue on a shorter, separate course. It later gained the Mercedes Arena extension.\n\nThe modern lap falls towards the Dunlop-Kehre hairpin and climbs back through faster corners before its slow final right-hander. That rhythm is its own driving challenge, rather than a miniature version of the northern loop. The 2020 Eifel Grand Prix used the 5.148-kilometre, fifteen-corner layout; its numbered bends must never be projected back onto the old Nordschleife.",
+          "uk": "В Айфельських горах назва Нюрбургринг охоплює два зовсім різні світи Формули-1. Величезна Nordschleife відкрилася у 1927 році. Сучасна траса Гран-прі почала працювати у 1984-му, повернувши чемпіонатні перегони на коротший окремий маршрут. Згодом вона отримала розширення Mercedes Arena.\n\nСучасне коло спускається до шпильки Dunlop-Kehre й підіймається через швидші віражі до повільного останнього правого повороту. Цей ритм створює власний виклик для пілота, а не зменшену копію північної петлі. Гран-прі Айфеля 2020 року використовував конфігурацію завдовжки 5,148 км із п’ятнадцятьма поворотами; їхню нумерацію не можна переносити на стару Nordschleife."
         },
-        "source": "https://www.formula1.com/en/latest/article/hamilton-takes-record-equalling-91st-victory-at-eifel-gp-as-ricciardo-claims.5z1UB37DlpHwKWM9GBM90M",
-        "locator": "Formula 1 race history and dated FIA layout"
+        "source": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+        "locator": "Where is it?; track construction; first modern Grand Prix; modern downhill/uphill lap",
+        "supporting_sources": [
+          {
+            "url": "https://www.nuerburgring.de/news/jubilaeum-40-jahre-grand-prix-strecke?locale=en",
+            "locator": "Grand Prix circuit anniversary:1984 opening and2002 Arena extension from4.542km to5.148km",
+            "scope": "Grand Prix circuit development; separate from Nordschleife"
+          },
+          {
+            "url": "https://www.fia.com/sites/default/files/decision-document/2020%20Eifel%20Grand%20Prix%20-%20Circuit%20Map.pdf",
+            "locator": "2020 Eifel Grand Prix Circuit Map",
+            "scope": "Dated 2020 configuration only; independent map-to-apex review pending"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -488,9 +501,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/hamilton-takes-record-equalling-91st-victory-at-eifel-gp-as-ricciardo-claims.5z1UB37DlpHwKWM9GBM90M",
-          "locator": "F1 race report / dated race event",
+          "locator": "11 October2020 F1 race report: Bottas locks up at Turn1 on lap13; Hamilton91st victory; MickSchumacher helmet presentation",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison, 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         },
         {
           "id": "nurburgring-2020-2",
@@ -504,10 +517,11 @@
             "uk": "Даніель Ріккардо фінішував третім, стримавши Серхіо Переса після пізнього рестарту. Це був його перший подіум після перемоги в Монако 2018 року й перший подіум заводської команди Renault із 2011-го. Холодний день в Айфелі став святом для колективу, який кілька років відновлювався."
           },
           "criterion": "source_selected_historical_milestone",
-          "source": "https://www.formula1.com/en/latest/article/ricciardo-eifel-gp-podium-feels-like-the-first-all-over-again.2QvdFK14X45Dlf1aOXDM7L.2QvdFK14X45Dlf1aOXDM7L",
-          "locator": "F1 race report / dated race event",
+          "source": "https://www.formula1.com/en/latest/article/ricciardo-eifel-gp-podium-feels-like-the-first-all-over-again.2QvdFK14X45Dlf1aOXDM7L",
+          "locator": "11 October 2020 report: Ricciardo third after late Safety Car; first Renault constructor podium since2011; first Ricciardo podium since Monaco2018",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison, 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "original_source": "https://www.formula1.com/en/latest/article/ricciardo-eifel-gp-podium-feels-like-the-first-all-over-again.2QvdFK14X45Dlf1aOXDM7L.2QvdFK14X45Dlf1aOXDM7L"
         }
       ]
     },
@@ -519,11 +533,19 @@
           "uk": "Від лісу до стадіону"
         },
         "text": {
-          "en": "Hockenheim once sent Formula 1 cars racing deep into the forest on long straights interrupted by chicanes. The 2002 redesign cut that journey short and brought the lap back towards the Motodrom, with the Parabolika and Spitzkehre creating new overtaking challenges. The 2019 German Grand Prix showed how unpredictable the shortened circuit could still be when rain arrived.",
-          "uk": "Колись Гоккенгайм відправляв боліди Формули-1 далеко в ліс довгими прямими, перерваними шиканами. Перебудова 2002 року скоротила маршрут і повернула коло ближче до Motodrom, а Parabolika та Spitzkehre створили нові можливості для обгонів. Гран-прі Німеччини 2019 року показав, наскільки непередбачуваною залишається скорочена траса під дощем."
+          "en": "Hockenheim began as a local motorcycle-racing project in 1932. Its first Formula 1 Grand Prix came in 1970, when Jochen Rindt won for Lotus. The venue’s identity joined two contrasting experiences: flat-out journeys through the forest and the spectators packed around the Motodrom stadium section.\n\nThe 2002 redesign cut the forest journey short while retaining the stadium and start-finish area. Parabolika leads towards the Spitzkehre hairpin, turning straight-line speed into a braking contest before the lap returns to the grandstands. The circuit’s old long straights and modern hairpin belong to different routes; a famous name on a map does not make their geometry interchangeable.",
+          "uk": "Гоккенгайм почався як місцевий проєкт мотоперегонів у 1932 році. Перший Гран-прі Формули-1 відбувся тут у 1970-му й завершився перемогою Йохена Ріндта за Lotus. Характер автодрому поєднував два протилежні світи: швидкісні подорожі лісом і переповнені трибуни стадіонної секції Motodrom.\n\nПеребудова 2002 року скоротила лісову частину, зберігши стадіон та стартово-фінішну зону. Parabolika веде до шпильки Spitzkehre, де швидкість прямої переходить у боротьбу на гальмуванні, перш ніж коло повертається до трибун. Старі довгі прямі й сучасна шпилька належать різним маршрутам: знайома назва на схемі не робить їхню геометрію взаємозамінною."
         },
-        "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
-        "locator": "F1 race report and dated FIA circuit map"
+        "source": "https://www.hockenheimring.de/en/info/hockenheimring/history/",
+        "locator": "1930–1932 origins; Since 1970 Formula 1; 1999–2003 rebuilding",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi",
+            "locator": "2014 retrospective with Hermann Tilke: Parabolika, Spitzkehre and retained Motodrom",
+            "scope": "2002 redesign and corner identities, not prior-period apex numbering"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -539,9 +561,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
-          "locator": "F1 race report / race event",
+          "locator": "28 July 2019 F1 report: five Verstappen pit stops; Vettel 20th to second; Kvyat third",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02, independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         },
         {
           "id": "hockenheimring-2019-2",
@@ -556,9 +578,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/verstappen-storms-to-sensational-win-in-extraordinary-rain-hit-german-gp.4tqxtGz9gKxhlk9KCf0uZZ",
-          "locator": "F1 race report / race event",
+          "locator": "28 July 2019 F1 report: five Verstappen pit stops; Vettel 20th to second; Kvyat third",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02, independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         }
       ]
     },
@@ -570,11 +592,24 @@
           "uk": "Mistral, Signes і численні обличчя Поль-Рікара"
         },
         "text": {
-          "en": "Paul Ricard has hosted Formula 1 in several very different configurations. The modern French Grand Prix lap includes a chicane interrupting the Mistral straight, the fast Signes corner and the long Beausset sweep. The distinctive striped run-off areas may make the circuit look forgiving, but the 2019 FIA notes show how closely pit-lane geometry and track limits were managed.",
-          "uk": "Поль-Рікар приймав Формулу-1 на кількох дуже різних конфігураціях. Сучасне коло Гран-прі Франції містить шикану посеред прямої Mistral, швидкий Signes і довгу дугу Beausset. Характерні смугасті зони вильоту можуть створювати враження поблажливої траси, але документи FIA 2019 року показують, наскільки ретельно контролювали геометрію піт-лейну й межі кола."
+          "en": "Near Le Castellet in southern France, Paul Ricard built a circuit that began racing in 1970. Jean-Pierre Beltoise and Henri Pescarolo advised on its design; Jackie Stewart won its first Formula 1 Grand Prix in 1971. Fast, medium and slow corners later made the venue a busy testing base.\n\nPaul Ricard has hosted Formula 1 in several very different configurations. The modern French Grand Prix lap interrupts the Mistral straight with a chicane before the fast Signes right-hander and the long Beausset sweep. Those familiar names identify parts of a lap, not a single timeless circuit: the short-course era and the 2018 return require their own period records.",
+          "uk": "Поблизу Ле-Кастелле на півдні Франції Поль Рікар збудував автодром, де перегони почалися у 1970 році. Жан-П’єр Бельтуаз та Анрі Пескароло консультували проєктувальників; перший Гран-прі Формули-1 тут у 1971-му виграв Джекі Стюарт. Поєднання швидких, середніх і повільних поворотів згодом зробило трасу популярною базою тестів.\n\nПоль-Рікар приймав Формулу-1 на кількох дуже різних конфігураціях. Сучасне коло Гран-прі Франції перериває пряму Mistral шиканою перед швидким правим Signes і довгою дугою Beausset. Знайомі назви позначають ділянки кола, а не незмінну трасу: епоха короткого маршруту й повернення 2018 року потребують власних історичних записів."
         },
-        "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
-        "locator": "F1 race report and dated FIA circuit map"
+        "source": "https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt",
+        "locator": "When was the track built?; first Grand Prix; circuit characteristics",
+        "supporting_sources": [
+          {
+            "url": "https://www.circuitpaulricard.com/fr/circuit/histoire",
+            "locator": "1970 creation; 1971 F1; 1999 High Tech Test Track; 2018 F1 return",
+            "scope": "Opening, testing history and separate F1 eras"
+          },
+          {
+            "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+            "locator": "Section5 Circuit Paul Ricard: Mistral chicane, shortened course after1986, 2018 return",
+            "scope": "Distinct Formula1 configurations and named Signes corner"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -590,9 +625,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
-          "locator": "F1 race report / race event",
+          "locator": "23 June 2019 F1 report: Hamilton/Bottas/Leclerc result and last-lap Norris/Ricciardo incident",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02, independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         },
         {
           "id": "paul-ricard-2019-2",
@@ -607,9 +642,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/french-grand-prix-2019-race-report-highlights.3mzNIi3AfrxEBA5vQpaViC",
-          "locator": "F1 race report / race event",
+          "locator": "23 June 2019 F1 report: Hamilton/Bottas/Leclerc result and last-lap Norris/Ricciardo incident",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02, independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         }
       ]
     },
@@ -719,15 +754,27 @@
       "circuit_id": "sepang",
       "biography": {
         "title": {
-          "en": "Heat, speed and a farewell",
-          "uk": "Спека, швидкість і прощання"
+          "en": "Heat and two straights outside Kuala Lumpur",
+          "uk": "Спека та дві прямі поблизу Куала-Лумпура"
         },
         "text": {
-          "en": "Sepang's two long straights were separated by a demanding sequence of fast corners and slow hairpins. The tropical heat and humidity made the tyres and cooling systems part of every race strategy. When Formula 1 said goodbye in 2017, the FIA preview highlighted how difficult it was to balance downforce for the sweeping middle sector against straight-line speed.",
-          "uk": "Дві довгі прямі Сепанга розділяли швидкі зв'язки й повільні шпильки. Тропічна спека та вологість робили роботу шин і охолодження важливою частиною стратегії. Коли Формула-1 прощалася з трасою у 2017 році, FIA підкреслювала складність компромісу між притискною силою в середньому секторі та швидкістю на прямих."
+          "en": "Sepang opened in 1999 as Malaysia’s purpose-built Grand Prix venue. Two long straights frame a lap of sweeping corners and slow hairpins, with tropical heat testing drivers, tyres and cooling systems. Downforce that helps through the fast middle sector costs speed on the straights. The 2016 works resurfaced the circuit and changed several corners, including the final hairpin’s camber; the outline alone cannot describe that change in driving. The 2017 Malaysian Grand Prix brought the venue’s first nineteen-season championship chapter to an end.",
+          "uk": "Сепанг відкрився 1999 року як спеціально збудований малайзійський автодром для Гран-прі. Дві довгі прямі обрамляють коло зі швидкими зв’язками та повільними шпильками, а тропічна спека випробовує пілотів, шини й охолодження. Притискна сила допомагає в середньому секторі, але забирає швидкість на прямих. Під час робіт 2016 року замінили покриття та змінили кілька поворотів, зокрема поперечний нахил фінальної шпильки: одного обрису недостатньо, щоб описати нове відчуття від керування. Гран-прі Малайзії 2017 року завершив першу дев’ятнадцятирічну чемпіонатну епоху автодрому."
         },
         "source": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
-        "locator": "FIA circuit-year preview or Formula 1 race page"
+        "locator": "Page 1 / heat, cooling and downforce compromise; page 2 / 1999–2017 Malaysian Grand Prix chapter",
+        "supporting_sources": [
+          {
+            "url": "https://www.sepangcircuit.com/celebrating-25-years-of-passion",
+            "locator": "1999 – Sepang International Circuit; 2016 resurfacing",
+            "scope": "Opening and 2016 works"
+          },
+          {
+            "url": "https://studiodromo.it/portfolio/sepang-international-circuit/",
+            "locator": "The brief / complete resurfacing and redesigned final corner in 2016",
+            "scope": "First-hand design account of camber change; not a dated numbered map"
+          }
+        ]
       },
       "moments": [
         {
@@ -738,14 +785,14 @@
             "uk": "Перемога Ферстаппена у вікенд дня народження"
           },
           "text": {
-            "en": "Max Verstappen took the lead from Lewis Hamilton on lap four and won the final Malaysian Grand Prix in 2017. The win came a day after his twentieth birthday. Daniel Ricciardo finished third, while Sebastian Vettel recovered to fourth from the back of the grid, giving the departing circuit a lively farewell.",
-            "uk": "Макс Ферстаппен обійшов Льюїса Гамільтона на четвертому колі та виграв останній Гран-прі Малайзії у 2017 році. Перемога сталася наступного дня після його двадцятиріччя. Даніель Ріккардо фінішував третім, а Себастьян Феттель прорвався з кінця решітки на четверте місце."
+            "en": "Max Verstappen passed Lewis Hamilton on lap four and won the 2017 Malaysian Grand Prix, the final event of Malaysia’s 1999–2017 championship run. It came a day after his twentieth birthday. Daniel Ricciardo was third, with Sebastian Vettel recovering from the back of the grid to fourth.",
+            "uk": "Макс Ферстаппен обійшов Льюїса Гамільтона на четвертому колі та виграв Гран-прі Малайзії 2017 року, який завершив чемпіонатну серію 1999–2017 років. Це сталося наступного дня після його двадцятиріччя. Даніель Ріккардо був третім, а Себастьян Феттель прорвався з кінця решітки на четверте місце."
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/race-verstappen-victorious-as-vettel-storms-to-fourth.1MPgC9AY9m664Kwm2SeioY.1MPgC9AY9m664Kwm2SeioY",
-          "locator": "Dated FIA/F1 race preview, report or classification",
+          "locator": "1 October 2017 race report / birthday, lap-four pass and final order; farewell refers to the 1999–2017 Malaysian GP chapter",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         },
         {
           "id": "sepang-2009-2",
@@ -760,9 +807,9 @@
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
-          "locator": "Dated FIA/F1 race preview, report or classification",
+          "locator": "Page 2 / Fast Facts / Button’s 2009 half-points win: 31 official laps, below 75% distance",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         }
       ]
     },
@@ -1029,11 +1076,24 @@
           "uk": "Усередині овалу — і знову на банкінг"
         },
         "text": {
-          "en": "From 2000 to 2007, Formula 1 raced clockwise on a 13-turn road course inside the Indianapolis Motor Speedway, opposite the direction of the oval races. The lap combined tight infield corners with a high-speed final banked turn leading onto the historic front straight. That banking created extraordinary tyre loads in 2005, making Turn 13 a central part of the sport's most notorious six-car Grand Prix. The F1 course is distinct from the four-turn oval used in World Championship Indianapolis 500 races of 1950–1960.",
-          "uk": "У 2000–2007 роках Формула-1 їздила за годинниковою стрілкою дорожньою трасою з 13 поворотами всередині Indianapolis Motor Speedway — у протилежному напрямку до перегонів овалом. Коло поєднувало тісні внутрішні віражі з швидкісним профільованим фінальним поворотом перед історичною головною прямою. Саме банкінг створив надзвичайне навантаження на шини у 2005 році, зробивши тринадцятий поворот центром сумнозвісної гонки шести болідів. Маршрут Формули-1 відрізняється від чотириповоротного овалу чемпіонатних Indianapolis 500 1950–1960 років."
+          "en": "The Indianapolis Motor Speedway opened in 1909; the brick surface laid that year gave it the Brickyard name. The oval venue took a different direction when its infield road course welcomed Formula 1. From 2000 to 2007, Formula 1 raced clockwise on a 13-turn road course inside the Indianapolis Motor Speedway, opposite the direction of the oval races. The lap combined tight infield corners with a high-speed final banked turn leading onto the historic front straight. That banking created extraordinary tyre loads in 2005, making Turn 13 a central part of the sport's most notorious six-car Grand Prix. The F1 course is distinct from the four-turn oval used in World Championship Indianapolis 500 races of 1950–1960.",
+          "uk": "Indianapolis Motor Speedway відкрився у 1909 році; цегляне покриття того року дало йому прізвисько Brickyard. Традиція овалу отримала інший напрямок, коли внутрішній дорожній маршрут прийняв Формулу-1. У 2000–2007 роках Формула-1 їздила за годинниковою стрілкою дорожньою трасою з 13 поворотами всередині Indianapolis Motor Speedway — у протилежному напрямку до перегонів овалом. Коло поєднувало тісні внутрішні віражі з швидкісним профільованим фінальним поворотом перед історичною головною прямою. Саме банкінг створив надзвичайне навантаження на шини у 2005 році, зробивши тринадцятий поворот центром сумнозвісної гонки шести болідів. Маршрут Формули-1 відрізняється від чотириповоротного овалу чемпіонатних Indianapolis 500 1950–1960 років."
         },
         "source": "https://www.indianapolismotorspeedway.com/history/formula-one",
-        "locator": "IMS official F1 history, clockwise 13-turn course 2000–2007"
+        "locator": "IMS official F1 history, clockwise 13-turn course 2000–2007",
+        "supporting_sources": [
+          {
+            "url": "https://www.indianapolismotorspeedway.com/news-multimedia/news/2025/12/04/12-04-bricks-t2-video",
+            "locator": "IMS originally paved in spring1909; autumn1909 brick paving and Brickyard nickname",
+            "scope": "Venue origins and name; no image reuse rights implied"
+          },
+          {
+            "url": "https://www.formula1.com/en/results/1950/races/96/indianapolis-500/race-result",
+            "locator": "1950 Indianapolis500 World Championship result",
+            "scope": "Oval-era championship inclusion; not the2000–2007 road course"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -1051,7 +1111,14 @@
           "source": "https://www.formula1.com/en/results/2005/races/779/united-states/race-result",
           "locator": "F1 official 2005 result note, six starters",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.indianapolismotorspeedway.com/history/formula-one",
+              "locator": "2005 Michelin-equipped cars withdraw after the formation lap",
+              "scope": "Withdrawal context, beyond the official classification"
+            }
+          ]
         },
         {
           "id": "indianapolis-2007-2",
@@ -1068,7 +1135,7 @@
           "source": "https://www.formula1.com/en/results/2007/races/814/united-states/race-result",
           "locator": "2007 F1 official race classification",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         }
       ]
     },
@@ -1080,11 +1147,24 @@
           "uk": "Коло з назвами інших автодромів"
         },
         "text": {
-          "en": "Magny-Cours turned a lap into a small atlas of motorsport. Estoril, Adelaide, Nürburgring and Imola are names borrowed from other racing venues, while the tight 180° describes its own geometry. The 2003 redesign reshaped Château d'Eau and Lycée, so the 17-turn layout of the final Formula 1 years cannot be treated as identical to the one Mansell raced in 1991. The venue's numbered plan and historical notes together make those distinctions visible.",
-          "uk": "Маньї-Кур перетворив коло на невеликий атлас автоспорту. Estoril, Adelaide, Nürburgring та Imola — назви інших гоночних трас, а тісний 180° описує власну геометрію. Перебудова 2003 року змінила Château d'Eau та Lycée, тому конфігурацію з 17 поворотами останніх років Формули-1 не можна вважати тотожною маршруту, яким Менселл їхав у 1991 році. Пронумерована схема й історія автодрому допомагають побачити ці відмінності."
+          "en": "Magny-Cours grew from Jean Bernigaud’s motor-stadium project near Nevers: karting began in 1960 and a car circuit followed in 1961. After reconstruction, Formula 1 arrived in 1991. Magny-Cours turned a lap into a small atlas of motorsport. Estoril, Adelaide, Nürburgring and Imola are names borrowed from other racing venues, while the tight 180° describes its own geometry. The 2003 redesign reshaped Château d'Eau and Lycée, so the 17-turn layout of the final Formula 1 years cannot be treated as identical to the one Mansell raced in 1991. The venue's numbered plan and historical notes together make those distinctions visible.",
+          "uk": "Маньї-Кур виріс із проєкту моторного стадіону Жана Берніго поблизу Невера: картинг почався у 1960 році, а автомобільна траса з’явилася у 1961-му. Після перебудови Формула-1 приїхала сюди у 1991 році. Маньї-Кур перетворив коло на невеликий атлас автоспорту. Estoril, Adelaide, Nürburgring та Imola — назви інших гоночних трас, а тісний 180° описує власну геометрію. Перебудова 2003 року змінила Château d'Eau та Lycée, тому конфігурацію з 17 поворотами останніх років Формули-1 не можна вважати тотожною маршруту, яким Менселл їхав у 1991 році. Пронумерована схема й історія автодрому допомагають побачити ці відмінності."
         },
         "source": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
-        "locator": "Circuit operator history: 1992 and 2003 Grand Prix layout revisions"
+        "locator": "Official venue history: 1959 project; 1960 karting; 1961 car circuit; 1991 F1; 1992 and 2003 changes",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo.4jWYb4usZay2AK6geWksCo",
+            "locator": "Section 7, Magny-Cours: borrowed Estoril, Nürburgring, Imola and Adelaide corners",
+            "scope": "Corner names and their circuit references"
+          },
+          {
+            "url": "https://www.circuitmagnycours.com/en/guide-decouvrez-le-circuit-de-nevers-magny-cours/",
+            "locator": "Key bends: Estoril, Adelaide, 180°, Imola, Château d’Eau, Lycée",
+            "scope": "Modern driving sequence; not evidence for 1991 numbering"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -1095,14 +1175,14 @@
             "uk": "Чотири піт-стопи перемагають три"
           },
           "text": {
-            "en": "Fernando Alonso led for Renault, but Ferrari changed Michael Schumacher's fuel strategy to four short stints. The lighter car ran quickly enough in clean air to make an extra pit stop and still take victory. It was a strategic duel on a circuit where the Adelaide hairpin offered a more obvious overtaking point than most other corners.",
-            "uk": "Фернандо Алонсо лідирував на Renault, але Ferrari змінила паливну стратегію Міхаеля Шумахера на чотири короткі відрізки. Легший болід їхав настільки швидко на вільній трасі, що додатковий піт-стоп не завадив перемозі. Це була тактична боротьба на автодромі, де шпилька Adelaide давала очевидніший шанс для обгону, ніж більшість інших поворотів."
+            "en": "Fernando Alonso led for Renault, but Ferrari changed Michael Schumacher's fuel strategy to four pit stops. The lighter car ran quickly enough in clean air to make an extra pit stop and still take victory. It was a strategic duel on a circuit where the Adelaide hairpin offered a more obvious overtaking point than most other corners.",
+            "uk": "Фернандо Алонсо лідирував на Renault, але Ferrari змінила паливну стратегію Міхаеля Шумахера на чотири піт-стопи. Легший болід їхав настільки швидко на вільній трасі, що додатковий піт-стоп не завадив перемозі. Це була тактична боротьба на автодромі, де шпилька Adelaide давала очевидніший шанс для обгону, ніж більшість інших поворотів."
           },
           "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/latest/article/france-2004-how-ferrari-stole-victory-from-renault-with-a-secret-4-stop-plan.7yXeHIzXx8e8JEyBC401ET.7yXeHIzXx8e8JEyBC401ET",
           "locator": "F1 Strategic Masterstrokes: 2004 French Grand Prix four-stop plan",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         },
         {
           "id": "magny-cours-2008-finale",
@@ -1119,7 +1199,14 @@
           "source": "https://www.formula1.com/en/results/2008/races/832/france/race-result",
           "locator": "Official F1 2008 French Grand Prix race result",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+              "locator": "2003 track modifications; Formula 1 1991–2008",
+              "scope": "Configuration and final-visit context, beyond the result table"
+            }
+          ]
         }
       ]
     },
@@ -1335,11 +1422,24 @@
           "uk": "Boot, Esses і зникла шикана безпеки"
         },
         "text": {
-          "en": "Watkins Glen hosted twenty Formula 1 championship Grands Prix between 1961 and 1980, but the course changed during that span. The longer Boot extension arrived in 1971; a safety chicane was installed in the uphill Esses in 1975 after François Cevert's fatal practice accident in 1973. The Scheckter Chicane was still present for the last F1 visit in 1980. It is not the Inner Loop bus stop added in 1992, long after Formula 1 had left. The 1980 eleven-turn sequence is a period-aware reconstruction from F1DB and historical track accounts; individual numbers still require an authenticated contemporary map.",
-          "uk": "Воткінс-Глен прийняв двадцять чемпіонатних Гран-прі Формули-1 з 1961 до 1980 року, але маршрут змінювався. Довге розширення Boot з'явилося у 1971-му; після загибелі Франсуа Севера на тренуванні 1973 року у швидких Esses встановили шикану безпеки в 1975-му. Scheckter Chicane залишалася на трасі під час останнього візиту Формули-1 у 1980 році. Це не Inner Loop, який збудували лише у 1992-му. Послідовність одинадцяти поворотів реконструйовано за F1DB та історичними джерелами, а точні номери ще потребують автентичної карти епохи."
+          "en": "Racing reached the village of Watkins Glen in New York in 1948 through Cameron Argetsinger’s road-race project. A permanent circuit followed in 1956, and Formula 1 arrived in 1961. The fast, wooded hilltop became an autumn fixture for the championship. Watkins Glen hosted twenty Formula 1 championship Grands Prix between 1961 and 1980, but the course changed during that span. The longer Boot extension arrived in 1971; a safety chicane was installed in the uphill Esses in 1975 after François Cevert's fatal practice accident in 1973. The Esses safety chicane was still present for the last F1 visit in 1980. It is not the Inner Loop bus stop added in 1992, long after Formula 1 had left. Individual historical corner numbers still require an authenticated contemporary map.",
+          "uk": "Перегони прийшли до містечка Воткінс-Глен у штаті Нью-Йорк у 1948 році завдяки дорожньому проєкту Кемерона Арджетсінгера. Постійний автодром з’явився у 1956-му, а Формула-1 приїхала у 1961-му. Швидкісне коло на лісистому пагорбі стало осінньою традицією чемпіонату. Воткінс-Глен прийняв двадцять чемпіонатних Гран-прі Формули-1 з 1961 до 1980 року, але маршрут змінювався. Довге розширення Boot з'явилося у 1971-му; після загибелі Франсуа Севера на тренуванні 1973 року у швидких Esses встановили шикану безпеки в 1975-му. Шикана безпеки в Esses залишалася на трасі під час останнього візиту Формули-1 у 1980 році. Це не Inner Loop, який збудували лише у 1992-му. Точні історичні номери поворотів ще потребують автентичної карти епохи."
         },
-        "source": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
-        "locator": "Watkins Glen layout history, 1975 Esses chicane and 1984 removal"
+        "source": "https://www.theglen.com/about/",
+        "locator": "Our history: 1948 road racing; 1956 permanent circuit; 1961–1980 Formula 1; 1992 Inner Loop",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/moments-in-time-united-states-special.2KYqYutdoSJMnSXtrEIuwr",
+            "locator": "Watkins Glen, 20 races, 1961–1980",
+            "scope": "Fast wooded circuit and extension before the 1971 Grand Prix"
+          },
+          {
+            "url": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
+            "locator": "A permanent circuit emerges; Circuit closes but gains salvation from Corning",
+            "scope": "Secondary corroboration: Boot shape/name, 1975 Esses chicane and its 1984 removal; no numbered-apex authentication"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -1350,14 +1450,21 @@
             "uk": "Вільньов підкорює Воткінс-Глен"
           },
           "text": {
-            "en": "Gilles Villeneuve won the 1979 United States Grand Prix East at Watkins Glen for Ferrari, completing 59 laps and finishing 48.787 seconds ahead of René Arnoux. Didier Pironi was third. The race belonged to the full Grand Prix layout with the Boot and the Scheckter Chicane, not to the modern course with the 1992 Inner Loop. The official Formula 1 result anchors the order and gap.",
-            "uk": "Жиль Вільньов виграв Гран-прі США Схід 1979 року у Воткінс-Глені за Ferrari, подолавши 59 кіл і випередивши Рене Арну на 48,787 секунди. Дідьє Піроні став третім. Гонка проходила повним колом із Boot та Scheckter Chicane, а не сучасною конфігурацією з Inner Loop 1992 року. Офіційний результат Формули-1 підтверджує порядок і відрив."
+            "en": "Gilles Villeneuve won the 1979 United States Grand Prix East at Watkins Glen for Ferrari, completing 59 laps and finishing 48.787 seconds ahead of René Arnoux. Didier Pironi was third. The race belonged to the full Grand Prix layout with the Boot and the Esses safety chicane, not to the modern course with the 1992 Inner Loop. The official Formula 1 result anchors the order and gap.",
+            "uk": "Жиль Вільньов виграв Гран-прі США Схід 1979 року у Воткінс-Глені за Ferrari, подолавши 59 кіл і випередивши Рене Арну на 48,787 секунди. Дідьє Піроні став третім. Гонка проходила повним колом із Boot та шиканою безпеки в Esses, а не сучасною конфігурацією з Inner Loop 1992 року. Офіційний результат Формули-1 підтверджує порядок і відрив."
           },
           "source": "https://www.formula1.com/en/results/1979/races/421/usa-east/race-result",
           "locator": "1979 USA East official result",
           "criterion": "source_selected_historical_milestone",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
+              "locator": "A permanent circuit emerges; Circuit closes but gains salvation from Corning",
+              "scope": "Secondary corroboration: Boot shape/name, 1975 Esses chicane and its 1984 removal; no numbered-apex authentication"
+            }
+          ]
         },
         {
           "id": "watkins-glen-1980-last-f1",
@@ -1367,14 +1474,26 @@
             "uk": "Останній Гран-прі Формули-1 у Глені"
           },
           "text": {
-            "en": "The 1980 United States Grand Prix East was Formula 1's last championship visit to Watkins Glen. Alan Jones won for Williams over 59 laps, with team-mate Carlos Reutemann 4.210 seconds behind and Didier Pironi third. The fast, bumpy circuit still used the Scheckter Chicane in the Esses. Financial and safety concerns helped bring the long run of Formula 1 races at this New York venue to an end.",
-            "uk": "Гран-прі США Схід 1980 року став останнім чемпіонатним візитом Формули-1 до Воткінс-Глена. Алан Джонс переміг за Williams після 59 кіл, його напарник Карлос Ройтеманн відстав на 4,210 секунди, а Дідьє Піроні став третім. На швидкій нерівній трасі ще існувала Scheckter Chicane у зв'язці Esses. Фінансові проблеми й питання безпеки сприяли завершенню тривалої історії Формули-1 на цьому автодромі Нью-Йорка."
+            "en": "The 1980 United States Grand Prix East was Formula 1's last championship visit to Watkins Glen. Alan Jones won for Williams over 59 laps, with team-mate Carlos Reutemann 4.210 seconds behind and Didier Pironi third. The fast, bumpy circuit still used the Esses safety chicane in the Esses. Its Formula 1 chapter ended here; the venue’s subsequent bankruptcy and revival belong to the circuit’s wider racing history.",
+            "uk": "Гран-прі США Схід 1980 року став останнім чемпіонатним візитом Формули-1 до Воткінс-Глена. Алан Джонс переміг за Williams після 59 кіл, його напарник Карлос Ройтеманн відстав на 4,210 секунди, а Дідьє Піроні став третім. На швидкій нерівній трасі ще існувала шикана безпеки в Esses у зв'язці Esses. Тут завершилася історія Формули-1 на автодромі; подальші банкрутство й відродження належать до ширшої гоночної історії цього місця."
           },
           "source": "https://www.formula1.com/en/results/1980/races/93/usa-east/race-result",
           "locator": "1980 USA East official result",
           "criterion": "source_selected_historical_milestone",
           "review_status": "independent_review_pending",
-          "source_check": "AI source comparison 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.racingcircuits.info/north-america/usa/watkins-glen.html",
+              "locator": "A permanent circuit emerges; Circuit closes but gains salvation from Corning",
+              "scope": "Secondary corroboration: Boot shape/name, 1975 Esses chicane and its 1984 removal; no numbered-apex authentication"
+            },
+            {
+              "url": "https://www.theglen.com/about/",
+              "locator": "Change at TheGlen: F1 through1980, bankruptcy and1984 return",
+              "scope": "Venue history after Formula1"
+            }
+          ]
         }
       ]
     },
@@ -1641,11 +1760,19 @@
           "uk": "Швидка стара К'яламі до перебудови"
         },
         "text": {
-          "en": "The original clockwise Kyalami joined a long downhill straight with Crowthorne, Barbeque, Jukskei, Sunset and the Esses. Its nine-turn F1DB configuration is not the 1992–93 rebuilt course; names that survived the rebuild do not make the layouts interchangeable.",
-          "uk": "Стара К'яламі за годинниковою стрілкою поєднувала довгу пряму на спуску з Crowthorne, Barbeque, Jukskei, Sunset та Esses. Дев'ятиповоротна конфігурація F1DB — не перебудована траса 1992–1993 років; збереження окремих назв не робить маршрути однаковими."
+          "en": "Kyalami opened in 1961 in Midrand, between Johannesburg and Pretoria, and joined the Formula 1 World Championship in 1967. The original clockwise Kyalami joined a long downhill straight with Crowthorne, Barbeque, Jukskei, Sunset and the Esses. The original course is not the rebuilt, anticlockwise circuit used in 1992–93; names that survived the rebuild do not make the layouts interchangeable. The change in direction after the original course was redeveloped is a particularly clear warning against carrying an old corner number onto the modern venue.",
+          "uk": "К’яламі відкрилася у 1961 році в Мідранді між Йоганнесбургом і Преторією та увійшла до чемпіонату світу Формули-1 у 1967-му. Стара К'яламі за годинниковою стрілкою поєднувала довгу пряму на спуску з Crowthorne, Barbeque, Jukskei, Sunset та Esses. Початковий маршрут — не перебудована траса 1992–1993 років із рухом проти годинникової стрілки; збереження окремих назв не робить маршрути однаковими. Зміна напрямку після перебудови особливо виразно показує, чому старий номер повороту не можна переносити на сучасний автодром."
         },
-        "source": "https://en.wikipedia.org/wiki/Kyalami",
-        "locator": "Original layout 1961–1988; revised layout 1989 onward"
+        "source": "https://www.kyalamigrandprixcircuit.com/about-kyalami/",
+        "locator": "The beginning1961; F1 era1967–1985; Circuit changes1989; Modern Grand Prix and rebuild1992–1993",
+        "supporting_sources": [
+          {
+            "url": "https://www.racingcircuits.info/africa/south-africa/kyalami.html",
+            "locator": "Remodelled circuit debuts: old Crowthorne/Barbeque removed; Jukskei–Sunset area reused; 1992 extension",
+            "scope": "Secondary corroboration of old named features and geometry distinction; apex mapping unapproved"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
@@ -1663,7 +1790,7 @@
           "source": "https://www.formula1.com/en/results/1975/races/346/south-africa/race-result",
           "locator": "Official 1975 South African Grand Prix race result",
           "review_status": "independent_review_pending",
-          "source_check": "AI source check, 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         },
         {
           "id": "kyalami-1985",
@@ -1677,10 +1804,17 @@
             "uk": "Найджел Менселл виграв Гран-прі ПАР 1985 року за Williams. Це був останній чемпіонатний Гран-прі Формули-1 на старій конфігурації К'яламі перед перебудовою автодрому."
           },
           "criterion": "last_race",
-          "source": "https://www.formula1.com/en/results/1985/races",
-          "locator": "1985 South Africa race winner and date; compare original/rebuilt venue history",
+          "source": "https://www.formula1.com/en/results/1985/races/496/south-africa/race-result",
+          "locator": "19 October 1985 official classification: Mansell, Williams Honda, 75 laps; operator history for final original-course F1 season",
           "review_status": "independent_review_pending",
-          "source_check": "AI source check, 2026-11-02; independent review pending"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.kyalamigrandprixcircuit.com/about-kyalami/",
+              "locator": "F1 era1967–1985; modern Grands Prix1992–1993",
+              "scope": "Original-course versus rebuilt-course visit distinction"
+            }
+          ]
         }
       ]
     },
@@ -2147,65 +2281,183 @@
       "circuit_id": "interlagos",
       "biography": {
         "title": {
-          "en": "The Brazilian circuit that delivers home triumphs",
-          "uk": "Інтерлагос: домашні перемоги й атмосфера трибун"
+          "en": "A city, two reservoirs and a climb to the line",
+          "uk": "Місто, два водосховища й підйом до фінішу"
         },
         "text": {
-          "en": "In 1973 Emerson Fittipaldi won the first championship Brazilian Grand Prix at Interlagos; he won again in 1974, before Carlos Pace took the 1975 race.",
-          "uk": "1973 року Емерсон Фіттіпальді переміг на першому заліковому Гран-прі Бразилії в Інтерлагосі. Він виграв і в 1974-му, а 1975 року перемогу здобув Карлос Паче."
+          "en": "Interlagos grew from plans for a resort between São Paulo’s Guarapiranga and Billings reservoirs. The circuit finally opened in 1940; Formula 1’s championship arrived in 1973, just as Emerson Fittipaldi was making Brazil a force in the sport. The long original course gave way to a much shorter route in 1990. Its character still comes from the land: the Senna S leads downhill towards the winding infield, before the lap climbs back towards the start. Fittipaldi’s victories belong to the long-course era; the compact modern lap tells a different part of the same story.",
+          "uk": "Інтерлагос виріс із задуму курорту між водосховищами Гуарапіранга та Біллінгс у Сан-Паулу. Автодром відкрили 1940 року, а чемпіонат Формули-1 приїхав сюди в 1973-му, коли Емерсон Фіттіпальді вже зробив Бразилію помітною силою в автоспорті. У 1990 році довге первісне коло замінили значно коротшим маршрутом. Його характер досі визначає рельєф: після S Сенни траса спускається до звивистої внутрішньої частини, а наприкінці піднімається до старту. Перемоги Фіттіпальді належать епосі довгого кола; компактний сучасний маршрут розповідає іншу частину тієї самої історії."
         },
-        "source": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "source": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+        "locator": "When was the track built?; When was its first Grand Prix?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://prefeitura.sp.gov.br/web/autodromodeinterlagos/historia",
+            "locator": "O embrião; A inauguração / 12 de maio de 1940",
+            "scope": "Reservoir setting, resort origins and opening; not a numbered modern map"
+          },
+          {
+            "url": "https://autodromodeinterlagos.prefeitura.sp.gov.br/circuito",
+            "locator": "Opening paragraph / redesenhada em 1990",
+            "scope": "1990 redesign only; inconsistent length and corner totals on this page are not adopted"
+          }
+        ]
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "interlagos-1973-home-beginning",
+          "year": 1973,
+          "title": {
+            "en": "Fittipaldi gives the first championship race a home winner",
+            "uk": "Фіттіпальді приносить домашню перемогу на чемпіонатному дебюті"
+          },
+          "text": {
+            "en": "Emerson Fittipaldi won the first World Championship Brazilian Grand Prix at Interlagos for Lotus. He repeated the win in 1974; Carlos Pace’s victory in 1975 then made it three home successes in the venue’s first three championship races.",
+            "uk": "Емерсон Фіттіпальді на Lotus виграв перший заліковий Гран-прі Бразилії в Інтерлагосі. Він повторив успіх у 1974-му, а перемога Карлоса Паче 1975 року завершила серію з трьох домашніх тріумфів у перших трьох чемпіонатних гонках автодрому."
+          },
+          "criterion": "home_win",
+          "source": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+          "locator": "When was its first Grand Prix? / 1973, 1974 and 1975",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "interlagos-1991-senna-gearbox",
+          "year": 1991,
+          "title": {
+            "en": "Senna carries a failing gearbox to his first home win",
+            "uk": "Сенна долає проблеми з коробкою заради першої домашньої перемоги"
+          },
+          "text": {
+            "en": "Ayrton Senna’s McLaren began losing gears with victory in reach. He brought it home using sixth gear as Riccardo Patrese closed in, finally winning in Brazil after years of frustration at his home Grand Prix.",
+            "uk": "Коли перемога була вже близько, McLaren Айртона Сенни почав втрачати передачі. Він довів машину до фінішу на шостій передачі, поки Ріккардо Патрезе скорочував відставання. Так завершилися роки невдач Сенни на домашньому Гран-прі."
+          },
+          "criterion": "home_win",
+          "source": "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+          "locator": "Senna overcomes gearbox gremlins to do his duty, Interlagos, 1991",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        }
+      ]
     },
     {
       "circuit_id": "montreal",
       "biography": {
         "title": {
-          "en": "From Expo island to the Wall of Champions",
-          "uk": "Від острова Expo до «Стіни чемпіонів»"
+          "en": "An island road with a wall at the end",
+          "uk": "Острівна дорога зі стіною наприкінці"
         },
         "text": {
-          "en": "The island was created for Expo 67. Gilles Villeneuve scored his first F1 victory at its inaugural Grand Prix in 1978; the final chicane's wall later earned its nickname after incidents involving champions in 1999.",
-          "uk": "Острів створили для Expo 67. Жиль Вільнев здобув свою першу перемогу у Формулі-1 на дебютному Гран-прі тут у 1978 році. Стіна біля останньої шикани отримала відоме прізвисько після інцидентів за участю чемпіонів у 1999-му."
+          "en": "Montreal’s Grand Prix circuit uses the roads of Île Notre-Dame, the artificial island created for Expo 67 in the St Lawrence River. Its first championship race came in 1978. The pit complex moved to the opposite end of the course for 1988, so a lap from the opening era does not begin where a modern lap does. Long accelerations, heavy braking and chicanes give the circuit its stop-start rhythm. At the final chicane, the Wall of Champions recalls the accidents of Damon Hill, Jacques Villeneuve and Michael Schumacher during the 1999 weekend.",
+          "uk": "Траса Гран-прі Монреаля проходить дорогами острова Нотр-Дам, створеного на річці Святого Лаврентія для Expo 67. Першу чемпіонатну гонку тут провели 1978 року. Перед Гран-прі 1988-го бокси перенесли на протилежний кінець кола, тому старт давнього маршруту не збігається із сучасним. Довгі розгони, різкі гальмування й шикани задають ритм із постійною зміною темпу. Біля останньої шикани «Стіна чемпіонів» нагадує про аварії Деймона Гілла, Жака Вільнева та Міхаеля Шумахера у вікенд 1999 року."
         },
         "source": "https://www.formula1.com/en/information/canada-circuit-de-gilles-villeneuve-montreal.3ootdKogPeMEGqcNpleNrN",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.motorsportmagazine.com/archive/article/july-1988/22/a-welcome-return/",
+            "locator": "Montreal, June 12 / opening paragraphs describing the new pit position",
+            "scope": "Contemporary first-hand report of the 1988 pit relocation; not approval of historical apex numbering"
+          },
+          {
+            "url": "https://www.fia.com/file/81886/download",
+            "locator": "2019 Canadian Grand Prix preview, page 1 / island location, chicanes, heavy braking, traction",
+            "scope": "Physical character of the 2019 course, not a period turn map for 1978"
+          }
+        ]
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "montreal-1978-villeneuve-first-win",
+          "year": 1978,
+          "title": {
+            "en": "A first victory on the island",
+            "uk": "Перша перемога на острові"
+          },
+          "text": {
+            "en": "Gilles Villeneuve won the inaugural Montreal Grand Prix for Ferrari. It was his first Formula 1 victory, at the venue that would later carry his name.",
+            "uk": "Жиль Вільнев на Ferrari виграв дебютний Гран-прі Монреаля. Це була його перша перемога у Формулі-1 — на автодромі, який згодом отримав його ім’я."
+          },
+          "criterion": "first_win",
+          "source": "https://www.formula1.com/en/information/canada-circuit-de-gilles-villeneuve-montreal.3ootdKogPeMEGqcNpleNrN",
+          "locator": "When was its first Grand Prix? / 1978",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "montreal-2011-button-comeback",
+          "year": 2011,
+          "title": {
+            "en": "Button’s long way to the lead",
+            "uk": "Довга дорога Баттона до лідерства"
+          },
+          "text": {
+            "en": "Rain stopped the race for more than two hours, and Jenson Button had to recover from last place. After six visits to the pits, including a penalty, the McLaren driver passed Sebastian Vettel on the final lap to win.",
+            "uk": "Дощ зупинив гонку більш ніж на дві години, а Дженсону Баттону довелося прориватися з останнього місця. Після шести заїздів у бокси, включно зі штрафом, пілот McLaren обійшов Себастьяна Феттеля на останньому колі й переміг."
+          },
+          "criterion": "comeback",
+          "source": "https://www.formula1.com/en/latest/article/f1s-best-drives-9-buttons-against-the-odds-canadian-comeback.5KWCMW2CEMQwbtzJcAA8Jh",
+          "locator": "Race narrative / red flag, recovery and final lap",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        }
+      ]
     },
     {
       "circuit_id": "hungaroring",
       "biography": {
         "title": {
-          "en": "The race born behind the Iron Curtain",
-          "uk": "Гран-прі, що з'явився за залізною завісою"
+          "en": "A rhythm in the hills outside Budapest",
+          "uk": "Ритм пагорбів поблизу Будапешта"
         },
         "text": {
-          "en": "Built in just nine months, the Hungaroring hosted its first F1 race in 1986. Nelson Piquet overtook Ayrton Senna around the outside in a famous move on his way to victory.",
-          "uk": "Хунгароринг збудували лише за дев’ять місяців. Першу гонку Формули-1 він прийняв у 1986-му: Нельсон Піке здійснив знаменитий обгін Айртона Сенни зовнішньою траєкторією на шляху до перемоги."
+          "en": "Hungary considered reviving a Budapest park course before choosing a purpose-built circuit near Mogyoród. The Hungaroring opened Formula 1’s door behind the Iron Curtain in 1986. Its short straights and linked bends reward a driver who can carry one clean corner into the next. The course has changed: an early chicane disappeared in 1989, and the 2003 revision lengthened the main straight and reshaped the opening corner. Piquet’s inaugural victory belongs to an earlier configuration, but the need to find a rhythm has endured.",
+          "uk": "Угорщина розглядала відновлення паркової траси в Будапешті, але обрала новий автодром поблизу Модьорода. У 1986 році Хунгароринг відкрив Формулі-1 шлях за залізну завісу. Короткі прямі та зв’язки віражів винагороджують пілота, який може плавно перенести швидкість з одного повороту в наступний. Маршрут змінювався: ранню шикану прибрали 1989 року, а перебудова 2003-го подовжила головну пряму та змінила перший поворот. Дебютна перемога Піке належить давнішій конфігурації, проте потреба знайти ритм залишилася."
         },
         "source": "https://www.formula1.com/en/information/hungary-hungaroring-budapest.3Sz0BTKiIf7ov9bnezZ5dU",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://hungaroring.hu/site/en/about-us/history-of-the-track",
+            "locator": "History of the Track / paragraphs on 1989 and 2003 rebuilds",
+            "scope": "Layout revisions; construction-duration claims differ between operator and F1, so no exact duration is asserted"
+          }
+        ]
       },
       "moments": [
         {
-          "id": "hungaroring-1986-public-summary",
+          "id": "hungaroring-1986-piquet-outside",
           "year": 1986,
           "title": {
-            "en": "The race born behind the Iron Curtain",
-            "uk": "Гран-прі, що з'явився за залізною завісою"
+            "en": "Piquet goes the long way round",
+            "uk": "Піке обирає зовнішню траєкторію"
           },
           "text": {
-            "en": "Built in just nine months, the Hungaroring hosted its first F1 race in 1986. Nelson Piquet overtook Ayrton Senna around the outside in a famous move on his way to victory.",
-            "uk": "Хунгароринг збудували лише за дев’ять місяців. Першу гонку Формули-1 він прийняв у 1986-му: Нельсон Піке здійснив знаменитий обгін Айртона Сенни зовнішньою траєкторією на шляху до перемоги."
+            "en": "Nelson Piquet took the lead from Ayrton Senna with a celebrated pass around the outside. The Williams driver went on to win the first Formula 1 Grand Prix at the Hungaroring.",
+            "uk": "Нельсон Піке відібрав лідерство в Айртона Сенни знаменитим обгоном зовнішньою траєкторією. Пілот Williams довів гонку до перемоги на першому Гран-прі Формули-1 в Хунгарорингу."
           },
-          "criterion": "existing_public_short_story_reference",
+          "criterion": "inaugural_race",
           "source": "https://www.formula1.com/en/information/hungary-hungaroring-budapest.3Sz0BTKiIf7ov9bnezZ5dU",
-          "locator": "Public short story / 1986; claim-level source review pending",
+          "locator": "When was its first Grand Prix? / Piquet and Senna",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "hungaroring-2006-button-breakthrough",
+          "year": 2006,
+          "title": {
+            "en": "Rain opens Button’s account",
+            "uk": "Дощ відкриває лік перемог Баттона"
+          },
+          "text": {
+            "en": "An engine-change penalty left Jenson Button fourteenth on the grid. In changing wet conditions he worked forward, then inherited the lead when Fernando Alonso retired. Button’s first Grand Prix win also rewarded Honda’s return as a full works team.",
+            "uk": "Штраф за заміну двигуна відкинув Дженсона Баттона на чотирнадцяте місце на старті. На мінливій мокрій трасі він прорвався вперед і перебрав лідерство після сходу Фернандо Алонсо. Перша перемога Баттона стала нагородою і за повернення повністю заводської команди Honda."
+          },
+          "criterion": "first_win",
+          "source": "https://global.honda/en/F1/machine/2006_HondaRA106/",
+          "locator": "Round 13 Hungary / engine penalty, wet race and first victory",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         }
       ]
     },
@@ -2213,49 +2465,125 @@
       "circuit_id": "zandvoort",
       "biography": {
         "title": {
-          "en": "Sand dunes and a Ferrari clean sweep",
-          "uk": "Дюни та тріумф Ferrari"
+          "en": "A narrow path through the dunes",
+          "uk": "Вузький шлях крізь дюни"
         },
         "text": {
-          "en": "The Dutch circuit opened in 1948 among coastal sand dunes. At its first World Championship Grand Prix in 1952, Alberto Ascari led a Ferrari 1–2–3.",
-          "uk": "Нідерландську трасу відкрили 1948 року серед прибережних піщаних дюн. На першому заліковому Гран-прі 1952 року Альберто Аскарі очолив переможний фініш Ferrari на перших трьох місцях."
+          "en": "Opened in 1948 among the North Sea dunes, Zandvoort carries the feel of a road following its landscape. Its narrow, undulating course makes commitment count. Successive safety changes altered the old Grand Prix lap, and the return in 2021 brought a striking new sight: steep banking at Hugenholtzbocht and the final Arie Luyendijkbocht. The names honour former circuit director John Hugenholtz and Indianapolis 500 winner Arie Luyendyk. The banking adds a new chapter to a circuit whose first championship visits looked very different.",
+          "uk": "Відкритий 1948 року серед дюн Північного моря Зандворт зберігає відчуття дороги, що слідує рельєфу. Його вузький хвилястий маршрут вимагає рішучості. Послідовні зміни заради безпеки перетворили давнє коло Гран-прі, а повернення 2021 року принесло виразну новинку — крутий банкінг у Hugenholtzbocht і фінальному Arie Luyendijkbocht. Назви вшановують колишнього директора автодрому Джона Гугенгольца та переможця Indianapolis 500 Арі Лейєндайка. Банкінг додає новий розділ історії автодрому, який під час перших чемпіонатних візитів мав інший вигляд."
         },
-        "source": "https://www.formula1.com/en/results/1952/races/115/netherlands/race-result",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "source": "https://www.formula1.com/en/information/netherlands-zandvoort-circuit-zandvoort.6XdtPTIMZzx5wLKP9mm7Ev",
+        "locator": "When was the track built?; What’s the circuit like? / dunes and undulations only",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/first-look-images-of-zandvoorts-new-banked-corners-revealed.5BXXjRKQadkAX35ZOIWR2F",
+            "locator": "27 February 2020 / completed banked corners and name dedications",
+            "scope": "Hugenholtz and Luyendyk names; not the incorrect Tarzan banking statement in the older general information page"
+          },
+          {
+            "url": "https://www.fia.com/sites/default/files/2021_dutch_grand_prix_-_preview.pdf",
+            "locator": "Page 1 introduction; page 2 Fast Facts / configuration history",
+            "scope": "Actual 2021 return and distinction from earlier Grand Prix configurations"
+          }
+        ]
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "zandvoort-1952-ferrari-sweep",
+          "year": 1952,
+          "title": {
+            "en": "Ferrari fills the podium at the championship debut",
+            "uk": "Ferrari займає весь подіум чемпіонатного дебюту"
+          },
+          "text": {
+            "en": "Alberto Ascari won the first World Championship Dutch Grand Prix. Giuseppe Farina and Luigi Villoresi followed him home, giving Ferrari the first three places.",
+            "uk": "Альберто Аскарі виграв перший чемпіонатний Гран-прі Нідерландів. Джузеппе Фаріна та Луїджі Віллорезі фінішували слідом, забезпечивши Ferrari перші три місця."
+          },
+          "criterion": "inaugural_race",
+          "source": "https://www.formula1.com/en/results/1952/races/115/netherlands/race-result",
+          "locator": "Official race classification / positions 1–3",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "zandvoort-1985-lauda-final-win",
+          "year": 1985,
+          "title": {
+            "en": "Lauda keeps Prost behind",
+            "uk": "Лауда втримує Проста позаду"
+          },
+          "text": {
+            "en": "Niki Lauda started tenth and finished just 0.232 seconds ahead of McLaren team mate Alain Prost. His twenty-fifth victory became his last in Formula 1, closing Zandvoort’s original championship era with a close team duel.",
+            "uk": "Нікі Лауда стартував десятим і фінішував лише на 0,232 секунди попереду напарника по McLaren Алена Проста. Двадцять п’ята перемога стала для нього останньою у Формулі-1, завершивши першу чемпіонатну епоху Зандворта щільною боротьбою напарників."
+          },
+          "criterion": "last_win",
+          "source": "https://www.formula1.com/en/latest/article/5-great-moments-in-dutch-grand-prix-history.1qk1UHqC4b58bMIJT5FjPc",
+          "locator": "Section 4 / Niki Lauda takes final F1 win after close dice with team mate Prost (1985)",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        }
+      ]
     },
     {
       "circuit_id": "melbourne",
       "biography": {
         "title": {
-          "en": "A public park becomes an F1 circuit",
-          "uk": "Міський парк перетворюється на трасу Формули-1"
+          "en": "A lake, park roads and a faster second life",
+          "uk": "Озеро, паркові дороги й нове швидке коло"
         },
         "text": {
-          "en": "Albert Park uses roads around a Melbourne public park. When it first hosted F1 in 1996, Martin Brundle's spectacular opening-lap crash became a defining image of the race.",
-          "uk": "Альберт-Парк проходить дорогами навколо громадського парку Мельбурна. Під час дебютного Гран-прі Формули-1 1996 року видовищна аварія Мартіна Брандла на першому колі стала одним із найвідоміших епізодів гонки."
+          "en": "Albert Park brings Formula 1 onto Melbourne’s lakeside roads, with a temporary race setting assembled around a public park. It replaced Adelaide as the Australian Grand Prix venue in 1996. Fast changes of direction ask for confidence as the surface gains grip through the weekend. The major revision first raced in 2022 removed the back-straight chicane, widened several corners and resurfaced the course. The old high-speed pair became the new turns nine and ten; modern corner numbers therefore cannot be applied unchanged to a lap from the 1990s.",
+          "uk": "Альберт-Парк виводить Формулу-1 на дороги біля мельбурнського озера: тимчасову гоночну інфраструктуру збирають навколо громадського парку. У 1996 році він замінив Аделаїду як місце Гран-прі Австралії. Швидкі зміни напрямку вимагають упевненості, а зчеплення зростає протягом вікенду. Під час великої перебудови, вперше використаної в гонці 2022 року, прибрали шикану на дальній прямій, розширили кілька поворотів і замінили покриття. Колишня швидкісна зв’язка стала дев’ятим і десятим поворотами, тому сучасна нумерація не описує коло 1990-х без змін."
         },
-        "source": "https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "source": "https://www.formula1.com/en/latest/article/why-the-albert-park-changes-should-add-up-to-a-thrilling-racing-spectacle.5XY84WeuRvqgKRkRGSjGKb",
+        "locator": "7 April 2022 / resurfacing, removed chicane and former turns 11–12 becoming 9–10",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk",
+            "locator": "1996 – Starting with a bang",
+            "scope": "1996 move from Adelaide to Melbourne"
+          },
+          {
+            "url": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa",
+            "locator": "What’s the circuit like to drive?",
+            "scope": "Temporary park setting, evolving surface and fast changes of direction"
+          }
+        ]
       },
       "moments": [
         {
-          "id": "melbourne-1996-public-summary",
+          "id": "melbourne-1996-first-race",
           "year": 1996,
           "title": {
-            "en": "A public park becomes an F1 circuit",
-            "uk": "Міський парк перетворюється на трасу Формули-1"
+            "en": "Hill wins after an alarming beginning",
+            "uk": "Гілл перемагає після тривожного початку"
           },
           "text": {
-            "en": "Albert Park uses roads around a Melbourne public park. When it first hosted F1 in 1996, Martin Brundle's spectacular opening-lap crash became a defining image of the race.",
-            "uk": "Альберт-Парк проходить дорогами навколо громадського парку Мельбурна. Під час дебютного Гран-прі Формули-1 1996 року видовищна аварія Мартіна Брандла на першому колі стала одним із найвідоміших епізодів гонки."
+            "en": "Martin Brundle escaped a violent opening-lap crash and took the restart in Jordan’s spare car. Jacques Villeneuve had taken pole on debut, but an oil leak slowed his Williams and team mate Damon Hill became Melbourne’s first Formula 1 winner.",
+            "uk": "Мартін Брандл вибрався з важкої аварії на першому колі та вийшов на повторний старт у запасній машині Jordan. Жак Вільнев здобув поул у дебюті, але витік оливи сповільнив його Williams. Першим переможцем Формули-1 у Мельбурні став напарник Деймон Гілл."
           },
-          "criterion": "existing_public_short_story_reference",
+          "criterion": "inaugural_race",
           "source": "https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk",
-          "locator": "Public short story / 1996; claim-level source review pending",
+          "locator": "1996 – Starting with a bang",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "melbourne-2002-webber-debut",
+          "year": 2002,
+          "title": {
+            "en": "Webber makes fifth feel like a victory",
+            "uk": "П’яте місце Веббера з відчуттям перемоги"
+          },
+          "text": {
+            "en": "An opening-corner collision eliminated several cars, while Michael Schumacher went on to win. Behind him, Australian debutant Mark Webber brought his Minardi home fifth and celebrated with team owner Paul Stoddart in front of the home crowd.",
+            "uk": "Аварія в першому повороті вивела з боротьби кілька машин, а перемогу згодом здобув Міхаель Шумахер. Позаду нього австралійський дебютант Марк Веббер довів Minardi до п’ятого місця й відсвяткував із керівником команди Полом Стоддартом перед домашніми трибунами."
+          },
+          "criterion": "home_debut",
+          "source": "https://www.formula1.com/en/latest/article/celebrating-30-years-of-melbourne-magic-with-10-top-f1-moments-from-albert.3l0thY5aUGU47L9bS2TNFk",
+          "locator": "2002 – Start chaos and Webber’s home heroics",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         }
       ]
     },
@@ -2263,33 +2591,69 @@
       "circuit_id": "bahrain",
       "biography": {
         "title": {
-          "en": "A Grand Prix carved out of desert",
-          "uk": "Гран-прі посеред пустелі"
+          "en": "A desert circuit with more than one identity",
+          "uk": "Пустельний автодром із кількома обличчями"
         },
         "text": {
-          "en": "The Bahrain International Circuit was built from 2002 and hosted its first F1 Grand Prix in 2004. Michael Schumacher won ahead of Ferrari team-mate Rubens Barrichello.",
-          "uk": "Будівництво міжнародного автодрому Бахрейну розпочали 2002 року, а перший Гран-прі Формули-1 відбувся у 2004-му. Міхаель Шумахер переміг, випередивши напарника по Ferrari Рубенса Баррікелло."
+          "en": "Construction began in Sakhir in December 2002, giving Hermann Tilke a desert canvas for Bahrain’s first Grand Prix in 2004. Heavy braking and traction shape the lap, while wind and changing temperatures complicate the set-up. The Grand Prix course is only one version: Formula 1 used the longer Endurance layout in 2010 and the Outer circuit for the 2020 Sakhir Grand Prix. In 2014 the venue named its first corner after Michael Schumacher, the inaugural winner. Three routes give one desert site three different racing challenges.",
+          "uk": "Будівництво в Сахірі почалося у грудні 2002 року: Герман Тільке отримав пустельний майданчик для першого Гран-прі Бахрейну 2004-го. Характер кола визначають різкі гальмування й розгін, а вітер і зміни температури ускладнюють налаштування. Конфігурація Гран-прі — лише одна з версій: у 2010 році Формула-1 використала довший маршрут Endurance, а для Гран-прі Сахіру 2020-го — Outer. У 2014 році перший поворот назвали на честь переможця дебютної гонки Міхаеля Шумахера. Три маршрути дають одному пустельному автодрому три різні гоночні характери."
         },
         "source": "https://www.formula1.com/en/information/bahrain-international-circuit.2CaIdaOTCgQ3Yfnb37NmSS",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; When was its first Grand Prix?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/racing/2020/bahrain",
+            "locator": "What’s the circuit like? / two 2020 courses and 2010 Endurance exception",
+            "scope": "Separate configurations and event names; not one interchangeable course"
+          },
+          {
+            "url": "https://www.formula1.com/en/latest/article/bahrain-to-name-first-corner-after-schumacher.uGWCv5Gk0wOb15L1zMrc0",
+            "locator": "2 March 2014 / opening announcement and tenth-anniversary paragraph",
+            "scope": "Schumacher corner dedication and first night-race context"
+          }
+        ]
       },
       "moments": [
         {
-          "id": "bahrain-2004-public-summary",
+          "id": "bahrain-2004-ferrari-debut",
           "year": 2004,
           "title": {
-            "en": "A Grand Prix carved out of desert",
-            "uk": "Гран-прі посеред пустелі"
+            "en": "Ferrari leads Bahrain’s first Grand Prix",
+            "uk": "Ferrari очолює перший Гран-прі Бахрейну"
           },
           "text": {
-            "en": "The Bahrain International Circuit was built from 2002 and hosted its first F1 Grand Prix in 2004. Michael Schumacher won ahead of Ferrari team-mate Rubens Barrichello.",
-            "uk": "Будівництво міжнародного автодрому Бахрейну розпочали 2002 року, а перший Гран-прі Формули-1 відбувся у 2004-му. Міхаель Шумахер переміг, випередивши напарника по Ferrari Рубенса Баррікелло."
+            "en": "Michael Schumacher won the inaugural Bahrain Grand Prix ahead of Ferrari team mate Rubens Barrichello. A new venue joined the championship, but the result continued Ferrari’s powerful start to 2004.",
+            "uk": "Міхаель Шумахер виграв дебютний Гран-прі Бахрейну перед напарником по Ferrari Рубенсом Баррікелло. До чемпіонату приєднався новий автодром, а результат продовжив потужний початок сезону Ferrari."
           },
-          "criterion": "existing_public_short_story_reference",
+          "criterion": "inaugural_race",
           "source": "https://www.formula1.com/en/information/bahrain-international-circuit.2CaIdaOTCgQ3Yfnb37NmSS",
-          "locator": "Public short story / 2004; claim-level source review pending",
+          "locator": "When was its first Grand Prix? / Ferrari one-two in 2004",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.formula1.com/en/results/2004/races/755/bahrain/race-result",
+              "locator": "Official race classification / Schumacher and Barrichello, 4 April 2004",
+              "scope": "Race result and constructor identities"
+            }
+          ]
+        },
+        {
+          "id": "bahrain-2014-desert-duel",
+          "year": 2014,
+          "title": {
+            "en": "Hamilton and Rosberg race under the lights",
+            "uk": "Гамільтон і Росберг змагаються під прожекторами"
+          },
+          "text": {
+            "en": "Lewis Hamilton and Nico Rosberg fought wheel to wheel for Mercedes. A late Safety Car erased Hamilton’s advantage, but he held off his team mate to win by just over a second. Sergio Pérez finished third for Force India.",
+            "uk": "Льюїс Гамільтон і Ніко Росберг боролися колесо в колесо на Mercedes. Пізній автомобіль безпеки знищив перевагу Гамільтона, проте він стримав напарника й переміг із відривом трохи більш як секунда. Серхіо Перес став третім на Force India."
+          },
+          "criterion": "team_duel",
+          "source": "https://www.fia.com/news/hamilton-wins-thrilling-bahrain-gp",
+          "locator": "6 April 2014 race report / closing duel and final classification",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         }
       ]
     },
@@ -2297,33 +2661,57 @@
       "circuit_id": "shanghai",
       "biography": {
         "title": {
-          "en": "Purpose-built for Formula 1's Chinese debut",
-          "uk": "Створена для китайського дебюту Формули-1"
+          "en": "Long straights, longer corners",
+          "uk": "Довгі прямі та ще довші віражі"
         },
         "text": {
-          "en": "The Shanghai International Circuit hosted China's first Formula 1 World Championship Grand Prix in 2004; Rubens Barrichello won for Ferrari.",
-          "uk": "Міжнародний автодром Шанхая прийняв перший заліковий Гран-прі Китаю Формули-1 у 2004 році. Переміг Рубенс Баррікелло на Ferrari."
+          "en": "Shanghai’s circuit rose from marshland in the Jiading district, with work beginning in 2003 before China’s championship debut in 2004. The tightening opening right-hander and the long curve feeding the back straight make patience part of a fast lap. High-speed changes of direction ask a different question of the car before the long straight ends in heavy braking. Its layout evokes the Chinese character “shang”. Resurfacing before the 2025 event added grip to a layout whose long corners still make tyre management central.",
+          "uk": "Шанхайський автодром виріс на болотистій місцевості району Цзядін: роботи почалися 2003 року, перед чемпіонатним дебютом Китаю у 2004-му. Правий віраж, що поступово звужується на початку кола, та довгий поворот перед дальньою прямою роблять терпіння частиною швидкості. Швидкісні зміни напрямку по-іншому випробовують болід, а довга пряма завершується різким гальмуванням. Обрис маршруту нагадує китайський ієрогліф «шан». Нове покриття перед гонкою 2025 року додало зчеплення, але довгі віражі й надалі вимагали дбайливої роботи з шинами."
         },
         "source": "https://www.formula1.com/en/information/china-shanghai-international-circuit-shanghai.7ESK3ZQ5DHqihx3DpPZKWL",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-shanghai-international.1b0f0ghbsPMRsHJoHTt6eB.1b0f0ghbsPMRsHJoHTt6eB",
+            "locator": "What’s the circuit like to drive? / resurfacing ahead of the 2025 event",
+            "scope": "2025 surface change; no invented layout reconfiguration"
+          }
+        ]
       },
       "moments": [
         {
-          "id": "shanghai-2004-public-summary",
+          "id": "shanghai-2004-barrichello-debut",
           "year": 2004,
           "title": {
-            "en": "Purpose-built for Formula 1's Chinese debut",
-            "uk": "Створена для китайського дебюту Формули-1"
+            "en": "Barrichello wins the first Chinese Grand Prix",
+            "uk": "Баррікелло виграє перший Гран-прі Китаю"
           },
           "text": {
-            "en": "The Shanghai International Circuit hosted China's first Formula 1 World Championship Grand Prix in 2004; Rubens Barrichello won for Ferrari.",
-            "uk": "Міжнародний автодром Шанхая прийняв перший заліковий Гран-прі Китаю Формули-1 у 2004 році. Переміг Рубенс Баррікелло на Ferrari."
+            "en": "Rubens Barrichello gave Ferrari victory at China’s first World Championship Grand Prix. Jenson Button and Kimi Räikkönen completed the podium as Shanghai joined Bahrain among the new venues of 2004.",
+            "uk": "Рубенс Баррікелло приніс Ferrari перемогу на першому чемпіонатному Гран-прі Китаю. Дженсон Баттон і Кімі Ряйкконен доповнили подіум, а Шанхай разом із Бахрейном увійшов до нових автодромів сезону 2004 року."
           },
-          "criterion": "existing_public_short_story_reference",
-          "source": "https://www.formula1.com/en/information/china-shanghai-international-circuit-shanghai.7ESK3ZQ5DHqihx3DpPZKWL",
-          "locator": "Public short story / 2004; claim-level source review pending",
+          "criterion": "inaugural_race",
+          "source": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-shanghai-international.1b0f0ghbsPMRsHJoHTt6eB.1b0f0ghbsPMRsHJoHTt6eB",
+          "locator": "When was China’s first Grand Prix? / inaugural 2004 podium",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "shanghai-2018-ricciardo-overtakes",
+          "year": 2018,
+          "title": {
+            "en": "Fresh tyres give Ricciardo his chance",
+            "uk": "Свіжі шини дають Ріккардо шанс"
+          },
+          "text": {
+            "en": "Red Bull stopped both cars for soft tyres during a Safety Car period. Daniel Ricciardo turned that advantage into decisive passes on Lewis Hamilton, Sebastian Vettel and Valtteri Bottas, winning ahead of Bottas and Kimi Räikkönen.",
+            "uk": "Red Bull перевзула обидві машини в м’які шини під час виїзду автомобіля безпеки. Даніель Ріккардо перетворив перевагу на вирішальні обгони Льюїса Гамільтона, Себастьяна Феттеля та Валттері Боттаса й переміг перед Боттасом і Кімі Ряйкконеном."
+          },
+          "criterion": "strategy_and_overtaking",
+          "source": "https://www.formula1.com/en/latest/article/race-ricciardo-wins-wild-race-in-china-for-red-bull.4K2iUY8jyMGiOsyOcqEQwO",
+          "locator": "15 April 2018 race report / Safety Car tyre change and passes for the lead",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
         }
       ]
     },
@@ -2331,65 +2719,179 @@
       "circuit_id": "imola",
       "biography": {
         "title": {
-          "en": "The Italian Grand Prix that became San Marino",
-          "uk": "Італійський Гран-прі, що став Сан-Марино"
+          "en": "The river, the hills and a changed lap",
+          "uk": "Річка, пагорби та змінене коло"
         },
         "text": {
-          "en": "Imola hosted the Italian Grand Prix in 1980, then the San Marino Grand Prix from 1981. Its 1994 race forced a profound safety reckoning in Formula 1.",
-          "uk": "У 1980 році Імола прийняла Гран-прі Італії, а з 1981-го — Гран-прі Сан-Марино. Трагічний вікенд 1994 року змусив Формулу-1 переглянути підхід до безпеки."
+          "en": "Imola opened in 1953 beside the Santerno River in Emilia-Romagna. Its fast anti-clockwise lap climbs and falls through corners such as Piratella and Acque Minerali, with little sense of a modern blank-slate circuit. The 1980 Italian Grand Prix brought it into the championship before the San Marino name arrived in 1981. After the deaths of Roland Ratzenberger and Ayrton Senna in 1994, Tamburello and Villeneuve became slower chicanes. Further work after 2006 opened the end of the lap, so the course of Alonso’s 2005 battle is distinct from the configuration used on Formula 1’s 2020 return.",
+          "uk": "Імола відкрилася 1953 року біля річки Сантерно в Емілії-Романьї. Швидке коло проти годинникової стрілки піднімається та спускається через Piratella й Acque Minerali, зберігаючи характер траси, вписаної в місцевість. Гран-прі Італії 1980 року ввів її до чемпіонату, а 1981-го з’явилася назва Сан-Марино. Після загибелі Роланда Ратценбергера та Айртона Сенни у 1994 році Tamburello й Villeneuve перетворили на повільніші шикани. Подальші роботи після 2006-го зробили кінець кола вільнішим. Тому маршрут боротьби Алонсо у 2005 році відрізняється від конфігурації повернення Формули-1 у 2020-му."
         },
         "source": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "Where is it?; When was the track built?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.autodromoimola.it/en/history/",
+            "locator": "Introduction; 1980; 1994; 1995",
+            "scope": "Santerno setting, first championship race and specific 1995 safety changes; accident causes are not asserted"
+          }
+        ]
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "imola-1980-italian-debut",
+          "year": 1980,
+          "title": {
+            "en": "Piquet wins Imola’s first championship race",
+            "uk": "Піке виграє чемпіонатний дебют Імоли"
+          },
+          "text": {
+            "en": "Nelson Piquet won the 1980 Italian Grand Prix for Brabham. Imola’s first World Championship race carried Italy’s national title; from 1981 the venue’s annual race became the San Marino Grand Prix.",
+            "uk": "Нельсон Піке на Brabham виграв Гран-прі Італії 1980 року. Перша чемпіонатна гонка Імоли мала назву національного Гран-прі, а з 1981-го щорічна подія автодрому стала Гран-прі Сан-Марино."
+          },
+          "criterion": "inaugural_race",
+          "source": "https://www.autodromoimola.it/en/history/",
+          "locator": "1980 / 14 September, Piquet in a Brabham; San Marino from following year",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "imola-2005-alonso-defends",
+          "year": 2005,
+          "title": {
+            "en": "Alonso holds off Schumacher",
+            "uk": "Алонсо стримує Шумахера"
+          },
+          "text": {
+            "en": "Fernando Alonso kept Michael Schumacher behind to win the San Marino Grand Prix by 0.215 seconds. Renault’s rising title contender and Ferrari’s reigning champion turned the closing stages into one of Imola’s defining duels.",
+            "uk": "Фернандо Алонсо втримав Міхаеля Шумахера позаду й виграв Гран-прі Сан-Марино з перевагою 0,215 секунди. Претендент на титул із Renault та чинний чемпіон із Ferrari перетворили кінцівку на один із визначних поєдинків Імоли."
+          },
+          "criterion": "close_finish",
+          "source": "https://www.formula1.com/en/latest/article/watch-fernando-alonso-relives-his-epic-2005-imola-battle-with-michael.2eKUG2HHc63dbUULVVzQqb",
+          "locator": "17 April 2021 retrospective / 2005 battle and 0.215s margin",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        }
+      ]
     },
     {
       "circuit_id": "spielberg",
       "biography": {
         "title": {
-          "en": "From the fearsome Österreichring to Red Bull Ring",
-          "uk": "Від грізного Österreichring до Red Bull Ring"
+          "en": "Three circuit names in the Styrian hills",
+          "uk": "Три назви автодрому серед штирійських пагорбів"
         },
         "text": {
-          "en": "The original Österreichring opened in 1969 and hosted F1 from 1970; it was dramatically shortened in the mid-1990s to become the A1-Ring. The name stayed in Austria, but the challenge changed.",
-          "uk": "Перший Österreichring відкрили 1969 року, а Формула-1 приїхала 1970-го. У середині 1990-х маршрут суттєво скоротили й перетворили на A1-Ring: назва регіону та атмосфера залишилися, а характер кола змінився."
+          "en": "The Österreichring opened in 1969 in the Styrian hills, replacing the nearby Zeltweg airfield venue. Formula 1 arrived in 1970. A radical shortening over the winter of 1995–96 created the A1-Ring, which welcomed the championship back in 1997; the site later became the Red Bull Ring. The shorter course trades the old high-speed sweep for uphill accelerations and a quick downhill sequence. Rindt, named for Austria’s first Formula 1 champion, remains a memorable bend on that later lap. The same hills frame two different stories: the sweeping Österreichring and the compact modern circuit.",
+          "uk": "Österreichring відкрився 1969 року серед штирійських пагорбів, замінивши сусідню аеродромну трасу Цельтвег. Формула-1 приїхала 1970-го. Радикальне скорочення взимку 1995–1996 років створило A1-Ring, куди чемпіонат повернувся у 1997-му; згодом автодром став Red Bull Ring. Коротше коло замінило давні швидкісні дуги розгонами вгору та швидкою зв’язкою на спуску. Поворот Rindt, названий на честь першого австрійського чемпіона Формули-1, є помітною частиною пізнішого маршруту. Ті самі пагорби обрамляють дві різні історії: розлогий Österreichring і компактний сучасний автодром."
         },
         "source": "https://www.formula1.com/en/information/austria-red-bull-ring-spielberg.1s7EC2bGta7o1thZkVPbbq",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; When was its first Grand Prix?; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE.1bMN4ItxdyDaQEObiJ3tGE",
+            "locator": "Ickx leads Ferrari one-two on first F1 visit to the Osterreichring, 1970",
+            "scope": "First Österreichring championship visit; distinct from the 1964 Zeltweg airfield race"
+          },
+          {
+            "url": "https://www.redbullring.com/en/history/",
+            "locator": "1969 opening; 1996 opening of A1 Ring; 1997 return",
+            "scope": "Venue development; erroneous 0.125s margin in operator’s separate 1982 paragraph is not used"
+          }
+        ]
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "spielberg-1982-de-angelis-rosberg",
+          "year": 1982,
+          "title": {
+            "en": "Five hundredths separate Lotus and Williams",
+            "uk": "П’ять сотих розділяють Lotus і Williams"
+          },
+          "text": {
+            "en": "Elio de Angelis held off Keke Rosberg by 0.050 seconds at the Österreichring. The Lotus driver’s first Grand Prix victory came after a final-lap chase by Rosberg’s Williams on the long, fast course.",
+            "uk": "Еліо де Анджеліс випередив Кеке Росберга на Österreichring на 0,050 секунди. Перша перемога пілота Lotus прийшла після переслідування Williams Росберга на останньому колі довгого швидкісного маршруту."
+          },
+          "criterion": "close_finish",
+          "source": "https://www.formula1.com/en/latest/article/moments-in-time-the-austrian-grand-prix.1bMN4ItxdyDaQEObiJ3tGE.1bMN4ItxdyDaQEObiJ3tGE",
+          "locator": "De Angelis holds off Rosberg in thrilling finale, Osterreichring, 1982",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        },
+        {
+          "id": "spielberg-1997-a1-ring-return",
+          "year": 1997,
+          "title": {
+            "en": "Villeneuve wins on the shortened circuit",
+            "uk": "Вільнев перемагає на скороченій трасі"
+          },
+          "text": {
+            "en": "Jacques Villeneuve won Formula 1’s first race at the A1-Ring. Austria had returned to the calendar with a very different lap from the Österreichring, while local favourite Gerhard Berger used the weekend to announce his retirement.",
+            "uk": "Жак Вільнев виграв першу гонку Формули-1 на A1-Ring. Австрія повернулася до календаря з колом, суттєво відмінним від Österreichring, а місцевий улюбленець Герхард Бергер оголосив у цей вікенд про завершення кар’єри."
+          },
+          "criterion": "layout_return",
+          "source": "https://www.formula1.com/en/information/austria-red-bull-ring-spielberg.1s7EC2bGta7o1thZkVPbbq",
+          "locator": "When was its first Grand Prix? / A1-Ring arrival in 1997",
+          "review_status": "independent_review_pending",
+          "source_check": "AI comparison with opened primary source, 2026-11-07; independent historical and translation review pending"
+        }
+      ]
     },
     {
       "circuit_id": "catalunya",
       "biography": {
         "title": {
-          "en": "Mansell and Senna, wheel to wheel",
-          "uk": "Менселл і Сенна: колесо в колесо"
+          "en": "Barcelona’s long apprenticeship",
+          "uk": "Барселона: довга школа швидкості"
         },
         "text": {
-          "en": "Built for Barcelona's 1992 Olympic development, Catalunya made a spectacular F1 debut in 1991: Nigel Mansell and Ayrton Senna raced side by side down the straight before Mansell won.",
-          "uk": "Каталунью збудували в рамках підготовки Барселони до Олімпіади-1992. Дебют Формули-1 1991 року подарував знамениту дуель Менселла й Сенни пліч-о-пліч на прямій — переміг Менселл."
+          "en": "Built outside Barcelona for the city’s Olympic development, Catalunya began racing in 1991. Formula 1 arrived two weeks after its touring-car debut. Slow corners and long, loaded curves made it a familiar testing ground, where balance matters throughout the lap.\n\nThe circuit has changed with the cars. A chicane interrupted the approach to the final corner from 2007; Formula 1 bypassed it again in 2023, restoring the fast finish to the lap. That distinction matters when comparing Mansell’s inaugural victory with Verstappen’s breakthrough in 2016: neither race belongs to the latest configuration.",
+          "uk": "Каталунью поблизу Барселони збудували в межах олімпійського розвитку міста; перегони почалися у 1991 році. Формула-1 приїхала через два тижні після кузовного дебюту. Повільні віражі й довгі навантажені дуги зробили трасу звичним місцем тестів, де баланс важливий протягом усього кола.\n\nМаршрут змінювався разом із болідами. Від 2007 року перед останнім поворотом існувала шикана; у 2023-му Формула-1 знову обійшла її, повернувши швидке завершення кола. Ця різниця важлива для порівняння першої перемоги Менселла тут із проривом Ферстаппена 2016 року: жодна з цих гонок не належить до найновішої конфігурації."
         },
         "source": "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "When was the track built?; first Grand Prix; What’s the circuit like?",
+        "supporting_sources": [
+          {
+            "url": "https://www.formula1.com/en/latest/article/circuit-de-barcelona-catalunya-to-feature-new-configuration-for-2023-spanish.6ZQgemg7eOlAJbBtu56PHE",
+            "locator": "27 February 2023: introduction in 2007 and bypass in 2023",
+            "scope": "Final-sector configuration, not historical apex numbering"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
-          "id": "catalunya-1991-public-summary",
+          "id": "catalunya-1991-first-grand-prix",
           "year": 1991,
           "title": {
-            "en": "Mansell and Senna, wheel to wheel",
-            "uk": "Менселл і Сенна: колесо в колесо"
+            "en": "Mansell wins the circuit’s first Grand Prix",
+            "uk": "Менселл виграє перший Гран-прі траси"
           },
           "text": {
-            "en": "Built for Barcelona's 1992 Olympic development, Catalunya made a spectacular F1 debut in 1991: Nigel Mansell and Ayrton Senna raced side by side down the straight before Mansell won.",
-            "uk": "Каталунью збудували в рамках підготовки Барселони до Олімпіади-1992. Дебют Формули-1 1991 року подарував знамениту дуель Менселла й Сенни пліч-о-пліч на прямій — переміг Менселл."
+            "en": "Nigel Mansell and Ayrton Senna ran side by side along the straight during Catalunya’s 1991 Formula 1 debut. Mansell went on to win. The scene gave a new circuit an immediate place in the championship’s visual memory, before years of testing made its corners so familiar to the paddock.",
+            "uk": "Під час дебюту Формули-1 на Каталуньї у 1991 році Найджел Менселл та Айртон Сенна мчали прямою пліч-о-пліч. Згодом Менселл переміг. Цей епізод одразу вписав новий автодром у візуальну пам’ять чемпіонату — задовго до того, як багаторічні тести зробили його повороти знайомими всьому паддоку."
           },
-          "criterion": "existing_public_short_story_reference",
+          "criterion": "source_selected_historical_milestone",
           "source": "https://www.formula1.com/en/information/spain-circuit-de-barcelona-catalunya-barcelona.6F5mWJGRuYkQ1XPX48pl8",
-          "locator": "Public short story / 1991; claim-level source review pending",
+          "locator": "When was its first Grand Prix? — 1991 debut and Mansell–Senna straight-line duel",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
+        },
+        {
+          "id": "catalunya-2016-verstappen-first-win",
+          "year": 2016,
+          "title": {
+            "en": "A teenager holds off Ferrari",
+            "uk": "Юний дебютант Red Bull стримує Ferrari"
+          },
+          "text": {
+            "en": "On his first race weekend for Red Bull, eighteen-year-old Max Verstappen won the 2016 Spanish Grand Prix. After the Mercedes drivers collided on the opening lap, he resisted Kimi Räikkönen’s pressure to become Formula 1’s youngest winner. The familiar testing venue had supplied a wholly unfamiliar name at the top of the result.",
+            "uk": "У свій перший гоночний вікенд за Red Bull вісімнадцятирічний Макс Ферстаппен виграв Гран-прі Іспанії 2016 року. Після зіткнення пілотів Mercedes на першому колі він витримав тиск Кімі Ряйкконена й став наймолодшим переможцем Формули-1. Знайомий тестовий автодром подарував цілком нове ім’я на чолі протоколу."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
+          "locator": "15 May 2016 race report: Red Bull debut, opening-lap collision and Räikkönen battle",
+          "review_status": "independent_review_pending",
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         }
       ]
     },
@@ -2397,49 +2899,143 @@
       "circuit_id": "mexico-city",
       "biography": {
         "title": {
-          "en": "The capital city circuit named for two brothers",
-          "uk": "Столична траса, названа на честь двох братів"
+          "en": "A circuit above the city’s thin air",
+          "uk": "Траса у розрідженому повітрі Мехіко"
         },
         "text": {
-          "en": "Mexico City's circuit was completed in 1959 and later named for racing brothers Ricardo and Pedro Rodríguez. Jim Clark won its first World Championship Grand Prix in 1963.",
-          "uk": "Автодром Мехіко збудували 1959 року й згодом назвали на честь братів-гонщиків Рікардо та Педро Родрігесів. Перший заліковий Гран-прі 1963 року виграв Джим Кларк."
+          "en": "Mexico City’s circuit grew from the internal roads of the Magdalena Mixiuhca sports park in 1959. Today’s name honours the Rodríguez brothers, Ricardo and Pedro, whose careers are inseparable from Mexico’s racing history.\n\nAltitude gives the venue a character quite unlike a seaside circuit: the lap sits more than two kilometres above sea level. The 2015 return also changed its most recognisable ending. Instead of following the old Peraltada in full, the Grand Prix route winds through the former Foro Sol baseball stadium. A modern stadium map cannot explain the line driven through that final curve in the earlier eras.",
+          "uk": "Траса Мехіко виросла з внутрішніх доріг спортивного парку Magdalena Mixiuhca у 1959 році. Нинішня назва вшановує братів Родрігесів — Рікардо й Педро, чиї кар’єри невіддільні від гоночної історії Мексики.\n\nВисота надає автодрому зовсім іншого характеру, ніж приморській трасі: коло лежить більш ніж за два кілометри над рівнем моря. Повернення 2015 року змінило й найвпізнаваніший фінал. Замість повного проходження старої Peraltada маршрут Гран-прі петляє колишнім бейсбольним стадіоном Foro Sol. Сучасна схема стадіону не пояснює траєкторію останнього віражу давніших епох."
         },
         "source": "https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "locator": "Track construction, 1962/1963 distinction, altitude and stadium route",
+        "supporting_sources": [
+          {
+            "url": "https://ahr.mx/historia",
+            "locator": "Official venue history: construction in 1959, Rodríguez brothers and F1 return reconstruction",
+            "scope": "Venue origin and name; no individual corner-number approval"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
-      "moments": []
+      "moments": [
+        {
+          "id": "mexico-city-1963-first-championship-race",
+          "year": 1963,
+          "title": {
+            "en": "Clark wins the first championship visit",
+            "uk": "Кларк виграє перший заліковий візит"
+          },
+          "text": {
+            "en": "Jim Clark won Mexico’s first World Championship Grand Prix in 1963. Formula 1 cars had raced here the previous year, but that meeting was outside the championship. Keeping those two debuts separate preserves the venue’s history without turning a non-championship appearance into a championship result.",
+            "uk": "Джим Кларк виграв перший Гран-прі Мексики у заліку чемпіонату світу в 1963 році. Боліди Формули-1 змагалися тут і роком раніше, проте та гонка була незаліковою. Розмежування двох дебютів зберігає історію автодрому й не перетворює незаліковий виступ на результат чемпіонату."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM",
+          "locator": "When was its first Grand Prix? — non-championship 1962 versus Clark’s 1963 victory",
+          "review_status": "independent_review_pending",
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1963/races/213/mexico/race-result",
+              "locator": "27 October1963 official result: JimClark, LotusClimax, 65laps",
+              "scope": "Winner and championship-race classification"
+            }
+          ]
+        },
+        {
+          "id": "mexico-city-2015-return-rosberg",
+          "year": 2015,
+          "title": {
+            "en": "Rosberg leads the return through the stadium",
+            "uk": "Росберг очолює повернення через стадіон"
+          },
+          "text": {
+            "en": "Nico Rosberg won Formula 1’s 2015 return to Mexico ahead of Mercedes team-mate Lewis Hamilton. A late Safety Car compressed the field, and Valtteri Bottas passed Daniil Kvyat at the restart to take third. The rebuilt venue now carried the cars through the stadium on their way to the finish.",
+            "uk": "Ніко Росберг виграв повернення Формули-1 до Мексики у 2015 році, випередивши напарника по Mercedes Льюїса Гамільтона. Пізній сейфті-кар ущільнив пелотон, а на рестарті Валттері Боттас обійшов Даніїла Квята й здобув третє місце. На перебудованому автодромі боліди тепер проходили стадіоном дорогою до фінішу."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/rosberg-defeats-hamilton-in-tense-mexican-grand-prix.1j9K8z2cC8MB9EIuMR4lv9",
+          "locator": "1 November 2015 race report: Mercedes one-two, Safety Car and Bottas restart pass",
+          "review_status": "independent_review_pending",
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM",
+              "locator": "What’s the circuit like? — stadium bypass of Peraltada",
+              "scope": "2015-return configuration context"
+            }
+          ]
+        }
+      ]
     },
     {
       "circuit_id": "buenos-aires",
       "biography": {
         "title": {
-          "en": "Fangio conquers the Argentine heat",
-          "uk": "Фанхіо перемагає аргентинську спеку"
+          "en": "One city, several Grand Prix circuits",
+          "uk": "Одне місто — кілька маршрутів Гран-прі"
         },
         "text": {
-          "en": "At Buenos Aires in 1955, Juan Manuel Fangio won a gruelling three-hour Argentine Grand Prix for Mercedes-Benz — one of his most celebrated home victories.",
-          "uk": "У Буенос-Айресі 1955 року Хуан-Мануель Фанхіо виграв виснажливий тригодинний Гран-прі Аргентини за кермом Mercedes-Benz — одну зі своїх найвідоміших домашніх перемог."
+          "en": "Buenos Aires opened its permanent autodrome on 9 March 1952, following an initiative supported by Argentine drivers including Juan Manuel Fangio. Today it honours Oscar and Juan Gálvez, brothers whose successes helped shape Argentina’s touring-car tradition. Its Formula 1 history crosses several distinct configurations, so the venue name alone cannot identify a lap.\n\nThe 1998 course was a compact, bumpy circuit with few easy overtaking opportunities. A contemporary Atlas F1 preview traces the run through Confitería and the final Horquilla hairpin, where acceleration had to follow heavy braking. That period account describes the route driven in the 1990s; it does not authenticate every historical corner number or explain all the names’ origins.",
+          "uk": "Постійний автодром Буенос-Айреса відкрився 9 березня 1952 року за ініціативи, яку підтримали аргентинські пілоти, зокрема Хуан-Мануель Фанхіо. Нині він ушановує Оскара та Хуана Гальвесів — братів, чиї успіхи формували аргентинську традицію кузовних перегонів. Історія Формули-1 тут охоплює кілька різних конфігурацій, тож сама назва місця ще не визначає маршрут кола.\n\nТраса 1998 року була компактною, нерівною й не давала багато простих нагод для обгону. Тогочасний огляд Atlas F1 описує проходження Confitería та фінальної шпильки Horquilla, де розгін починався після сильного гальмування. Це свідчення про маршрут дев’яностих, а не підтвердження кожного історичного номера чи походження всіх назв."
         },
-        "source": "https://www.formula1.com/en/results/1955/races/135/argentina/race-result",
-        "locator": "Existing bilingual public summary; extended historical dossier pending independent editorial review"
+        "source": "https://buenosaires.gob.ar/gcaba_historico/gobierno/autodromo-oscar-y-juan-galvez",
+        "locator": "Official city venue history: opening 9 March 1952; driver initiative; Gálvez brothers",
+        "supporting_sources": [
+          {
+            "url": "https://www.atlasf1.com/98/arg/preview/galvin.html",
+            "locator": "10–12 April 1998, Max Galvin: circuit introduction and A lap of the Autodromo",
+            "scope": "Contemporary 1998 driving account and named features; no authenticated apex chart"
+          },
+          {
+            "url": "https://github.com/f1db/f1db/releases/tag/v2026.17.0",
+            "locator": "Pinned circuit layout records, buenos-aires-1 through buenos-aires-4",
+            "scope": "Source-reported configuration identities; not independent historical map verification"
+          }
+        ],
+        "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
       },
       "moments": [
         {
-          "id": "buenos-aires-1955-public-summary",
+          "id": "buenos-aires-1955-fangio-home-win",
           "year": 1955,
           "title": {
-            "en": "Fangio conquers the Argentine heat",
-            "uk": "Фанхіо перемагає аргентинську спеку"
+            "en": "Fangio stays at the wheel in the heat",
+            "uk": "Фанхіо не залишає керма у спеку"
           },
           "text": {
-            "en": "At Buenos Aires in 1955, Juan Manuel Fangio won a gruelling three-hour Argentine Grand Prix for Mercedes-Benz — one of his most celebrated home victories.",
-            "uk": "У Буенос-Айресі 1955 року Хуан-Мануель Фанхіо виграв виснажливий тригодинний Гран-прі Аргентини за кермом Mercedes-Benz — одну зі своїх найвідоміших домашніх перемог."
+            "en": "Juan Manuel Fangio won the 1955 Argentine Grand Prix for Mercedes-Benz after 96 laps and just over three hours. In the intense heat, many rivals shared their cars with relief drivers, as the rules then permitted. Fangio drove the entire distance himself, turning a home victory into an extraordinary test of endurance.",
+            "uk": "Хуан-Мануель Фанхіо виграв Гран-прі Аргентини 1955 року за Mercedes-Benz після 96 кіл і трохи більш ніж трьох годин боротьби. У сильну спеку багато суперників передавали машини іншим пілотам, як дозволяли тодішні правила. Фанхіо сам подолав усю дистанцію, перетворивши домашню перемогу на виняткове випробування витривалості."
           },
-          "criterion": "existing_public_short_story_reference",
-          "source": "https://www.formula1.com/en/results/1955/races/135/argentina/race-result",
-          "locator": "Public short story / 1955; claim-level source review pending",
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/latest/article/from-mansell-mania-to-senna-in-sao-paulo-the-most-emotional-home-wins-in-f1.35DuMXCpWFukDHWqZGaJdB",
+          "locator": "Juan Manuel Fangio, Argentine Grand Prix, 1955 — heat and no relief driver",
           "review_status": "independent_review_pending",
-          "source_check": "Existing public summary, not an independently verified expanded edition"
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending",
+          "supporting_sources": [
+            {
+              "url": "https://www.formula1.com/en/results/1955/races/135/argentina/race-result",
+              "locator": "16 January 1955 race result: winner, Mercedes-Benz, 96 laps, 3:00:38.600",
+              "scope": "Classification and shared-drive notation"
+            }
+          ]
+        },
+        {
+          "id": "buenos-aires-1998-schumacher-victory",
+          "year": 1998,
+          "title": {
+            "en": "Ferrari answers McLaren in Buenos Aires",
+            "uk": "Ferrari відповідає McLaren у Буенос-Айресі"
+          },
+          "text": {
+            "en": "Michael Schumacher won the 1998 Argentine Grand Prix for Ferrari, with Mika Häkkinen second for McLaren and Eddie Irvine third in the other Ferrari. Schumacher completed 72 laps and finished 22.899 seconds ahead. The result gives the later Buenos Aires era its own cast and machinery, far removed from Fangio’s Mercedes-Benz in 1955.",
+            "uk": "Міхаель Шумахер виграв Гран-прі Аргентини 1998 року за Ferrari. Міка Гаккінен став другим на McLaren, а Едді Ірвайн — третім на іншій Ferrari. Шумахер подолав 72 кола й випередив суперника на 22,899 секунди. Цей результат показує власних героїв і техніку пізнішої епохи Буенос-Айреса, далекої від Mercedes-Benz Фанхіо 1955 року."
+          },
+          "criterion": "source_selected_historical_milestone",
+          "source": "https://www.formula1.com/en/results/1998/races/673/argentina/race-result",
+          "locator": "12 April 1998 official classification: Schumacher, Häkkinen, Irvine; 72 laps; +22.899 seconds",
+          "review_status": "independent_review_pending",
+          "source_check": "AI primary-source comparison 2026-11-07; independent human historical and translation review pending"
         }
       ]
     }

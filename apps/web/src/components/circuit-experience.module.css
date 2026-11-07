@@ -90,3 +90,15 @@
 
 /* Follow the text size as well as viewport width, including 200% zoom. */
 @container (max-width: 18em) { .measurements { grid-template-columns: minmax(0, 1fr); } }
+.eventContext { border-left: 3px solid var(--gold); padding: 1.25rem; background: var(--surface); margin-block: 1.5rem; min-width: 0; }
+.eventContext h3 { margin-top: 0; }
+.eventContext p { color: var(--muted); max-width: 70ch; line-height: 1.7; }
+.trackFallback strong { color: var(--ink); display: block; font: 500 clamp(1.4rem, 2.5vw, 2rem)/1.25 var(--font-display); }
+.trackFallback p { color: var(--muted); font: .95rem/1.8 var(--font-sans); max-width: 55ch; }
+
+.shell > .trackNote { min-height: 0; align-self: start; padding: 1.25rem; }
+.trackNote .trackFallback { max-width: 48ch; text-align: left; }
+
+.readerShell .eventTable thead th { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+.readerShell .eventTable :is(th,td):first-child { min-width: 4.5rem; }
+.readerShell .eventTable .provenance { max-width: 22rem; }

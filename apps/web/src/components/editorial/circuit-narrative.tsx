@@ -18,9 +18,9 @@ function ReviewDetails({ locale }: { locale: Locale }) {
     : 'Short summaries of the cited sources, checked with AI. Independent editorial approval remains pending. Race links appear only when the archive identifies exactly one event for the year; stories spanning several years are not linked to a single race.'}</p></details>;
 }
 
-export function CircuitBiography({ circuitId, locale }: { circuitId: string; locale: Locale }) {
+export function CircuitBiography({ circuitId, locale, allowExpandedEdition = true }: { circuitId: string; locale: Locale; allowExpandedEdition?: boolean }) {
   const candidate = circuitNarratives.find(entry => entry.circuit_id === circuitId);
-  const approved = isCircuitEditionApproved(circuitId);
+  const approved = allowExpandedEdition && isCircuitEditionApproved(circuitId);
   const existing = legacyCircuitHistory[circuitId]?.[locale];
   const biography = approved ? candidate?.biography : existing ? { title: { en: existing.title, uk: existing.title }, text: { en: existing.introduction, uk: existing.introduction }, source: existing.moments[0]?.url } : undefined;
   const previous = getPublicCircuitStory(circuitId);
@@ -32,10 +32,11 @@ export function CircuitBiography({ circuitId, locale }: { circuitId: string; loc
   </div>;
 }
 
-export function CircuitMoments({ circuitId, locale, history }: { circuitId: string; locale: Locale; history: Race[] }) {
+export function CircuitMoments({ circuitId, locale, history, allowExpandedEdition = true }: { circuitId: string; locale: Locale; history: Race[]; allowExpandedEdition?: boolean }) {
   const existing = legacyCircuitHistory[circuitId]?.[locale];
   const featured = getPublicCircuitStory(circuitId);
-  const moments = isCircuitEditionApproved(circuitId)
+  const approved = allowExpandedEdition && isCircuitEditionApproved(circuitId);
+  const moments = approved
     ? circuitNarratives.find(entry => entry.circuit_id === circuitId)?.moments.map(moment => ({
         id: moment.id, yearLabel: String(moment.year), raceYear: moment.year,
         title: moment.title, text: moment.text, source: moment.source, locator: moment.locator,
@@ -51,11 +52,11 @@ export function CircuitMoments({ circuitId, locale, history }: { circuitId: stri
         title: featured.title, text: featured.description, source: featured.source, locator: featured.year,
       }] : undefined);
   const uk = locale === 'uk';
-  const contextEvidence = featured && !existing && !isCircuitEditionApproved(circuitId)
+  const contextEvidence = featured && !existing && !approved
     ? getCircuitContextEvidence(circuitId) : undefined;
   // The public short story is already the biography lead; keep evidence and race links
   // in the moment card without repeating its exact paragraph.
-  const featuredStoryIsBiography = Boolean(featured && !existing && !isCircuitEditionApproved(circuitId));
+  const featuredStoryIsBiography = Boolean(featured && !existing && !approved);
   return <div data-testid="circuit-moments"><h2>{uk ? 'Легендарні моменти' : 'Memorable moments'}</h2>
     {moments ? <div className={`${styles.momentGrid} ${moments.length === 1 ? styles.singleMomentGrid : ''} `}>{moments.map(moment => {
       const race = uniqueRaceInYear(history, moment.raceYear);
