@@ -11,10 +11,6 @@ on:
       - 'docs/media/commons-original-evidence.json'
       - 'docs/media/verified-original-observations.json'
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-
 permissions:
   contents: read
 
