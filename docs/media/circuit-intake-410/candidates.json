@@ -1,0 +1,1476 @@
+{
+  "schema_version": 2,
+  "lane": "candidates",
+  "assets": [
+    {
+      "id": "research-circuit410-monaco-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2022,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monaco-6.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monaco-6.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monaco-6.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monaco-6.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:3bd0588420d18bed43b00d50eccdca3abe5d3210",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "5a1b85b9d1e72a39621330eb2f13b976fab15e22a179bd9fc5feee4e1ee8cd25",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for monaco; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для monaco; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with monaco; source context requires review.",
+        "uk": "Кандидатна схема траси monaco; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "monaco-6",
+        "race_ids": [
+          "1064"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monaco-6.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-silverstone-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "silverstone"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2019,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/silverstone-8.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/silverstone-8.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/silverstone-8.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/silverstone-8.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:259e3438d6838a54e2438fcef974a4b204502798",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "d5290da974cfbad2882e1f5f718787e1ad744c57f1cccad94d8b1be5dbe2ce48",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for silverstone; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для silverstone; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with silverstone; source context requires review.",
+        "uk": "Кандидатна схема траси silverstone; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "silverstone-8",
+        "race_ids": [
+          "1007"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/silverstone-8.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-monza-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "monza"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2025,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monza-7.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monza-7.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monza-7.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monza-7.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:6e7627762834771a1b08f365958620066715b5b3",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "d4eb51afe7ada2c778d75ae067a68ebb944d8e41d92042b81e3845c13f09a79a",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for monza; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для monza; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with monza; source context requires review.",
+        "uk": "Кандидатна схема траси monza; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "monza-7",
+        "race_ids": [
+          "1141"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/monza-7.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-suzuka-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "suzuka"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2018,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/suzuka-2.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/suzuka-2.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/suzuka-2.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/suzuka-2.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:6287f2579bcd761b72139175f0bd7ef73e2f3a70",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "82feb82f0c53d7bcad7e0c5f615b83430ac5bd5dacdadcaa4ed8e92527c1e37f",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for suzuka; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для suzuka; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with suzuka; source context requires review.",
+        "uk": "Кандидатна схема траси suzuka; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "suzuka-2",
+        "race_ids": [
+          "993"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/suzuka-2.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-spa-francorchamps-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "spa-francorchamps"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2025,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/spa-francorchamps-4.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/spa-francorchamps-4.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/spa-francorchamps-4.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/spa-francorchamps-4.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:bda2dad95ce0fede152ce9a97e4589f0d75f6601",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "982ea090d3f3cfa6ad3cc48dfa9fa0fabd36e81eb68e1b6c080c2a1f62199c0b",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for spa-francorchamps; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для spa-francorchamps; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with spa-francorchamps; source context requires review.",
+        "uk": "Кандидатна схема траси spa-francorchamps; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "spa-francorchamps-4",
+        "race_ids": [
+          "1138"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/spa-francorchamps-4.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-interlagos-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "interlagos"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2025,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/interlagos-2.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/interlagos-2.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/interlagos-2.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/interlagos-2.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:7ff281c80b415df225e9f39759399897f803a3b4",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "74575b7c9dc9343b54a0877d3e152aec64c6e4e2c88de06b20ebbe72035dd84a",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for interlagos; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для interlagos; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with interlagos; source context requires review.",
+        "uk": "Кандидатна схема траси interlagos; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "interlagos-2",
+        "race_ids": [
+          "1146"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/interlagos-2.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-montreal-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "montreal"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2017,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/montreal-6.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/montreal-6.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/montreal-6.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/montreal-6.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:c8bdec56fccbdd1313cd4d360db559b32873c497",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "d6543d5f43b236b8a8934901a3203614f5ca673b1a36feade9206f844e8e798e",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for montreal; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для montreal; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with montreal; source context requires review.",
+        "uk": "Кандидатна схема траси montreal; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "montreal-6",
+        "race_ids": [
+          "963"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/montreal-6.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-bahrain-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "bahrain"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2025,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bahrain-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bahrain-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bahrain-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bahrain-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:4dec1ba2babbb591d6f897cac607b7e3d0f11e22",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "7b12940c05a4e5db825eb2c7c86589ba62a22c850428d7f519800c525417e101",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for bahrain; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для bahrain; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with bahrain; source context requires review.",
+        "uk": "Кандидатна схема траси bahrain; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "bahrain-1",
+        "race_ids": [
+          "1129"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bahrain-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-brands-hatch-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "brands-hatch"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1986,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/brands-hatch-2.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/brands-hatch-2.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/brands-hatch-2.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/brands-hatch-2.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:d56c435ff109c20dd44057e06dc4674fbe6015b9",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "485cd5460bedbfb2b606bbf7a869ee85643215db625f0a8efd079a9d1668385b",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for brands-hatch; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для brands-hatch; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with brands-hatch; source context requires review.",
+        "uk": "Кандидатна схема траси brands-hatch; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "brands-hatch-2",
+        "race_ids": [
+          "429"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/brands-hatch-2.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-donington-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "donington"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1993,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/donington-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/donington-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/donington-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/donington-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:5c0efc379932e7e68329347681a079843e6a0701",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "82f1dcd10eb85234320a39d3ba3b32a4b1c239b9929f984c8c278369759508fc",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for donington; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для donington; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with donington; source context requires review.",
+        "uk": "Кандидатна схема траси donington; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "donington-1",
+        "race_ids": [
+          "535"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/donington-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-bugatti-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "bugatti"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1967,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bugatti-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bugatti-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bugatti-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bugatti-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:9619df215e7d24eb60a050c9d182c4fa84fb7848",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "20ea12ce6c4589231f0155be382b50e17f586fb3ada759114adeaa748e5b00eb",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for bugatti; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для bugatti; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with bugatti; source context requires review.",
+        "uk": "Кандидатна схема траси bugatti; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "bugatti-1",
+        "race_ids": [
+          "155"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/bugatti-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-mont-tremblant-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "mont-tremblant"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1968,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/mont-tremblant-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/mont-tremblant-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/mont-tremblant-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/mont-tremblant-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:635df43d8b15de834f26232d6580a8834136133d",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "d416743f9fa70a559d7e6ae97d72fdc81d7b46ae279fad6d75cbb0a005123c4d",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for mont-tremblant; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для mont-tremblant; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with mont-tremblant; source context requires review.",
+        "uk": "Кандидатна схема траси mont-tremblant; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "mont-tremblant-1",
+        "race_ids": [
+          "171"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/mont-tremblant-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-aida-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "aida"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1995,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/aida-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/aida-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/aida-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/aida-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:344ab7604722100963279dc99cdf18c538d2ad83",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "5a84a7725a1a6149f9b58ca2d7a4456eeac22dcdb1ed3ce85928270881b8dc97",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for aida; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для aida; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with aida; source context requires review.",
+        "uk": "Кандидатна схема траси aida; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "aida-1",
+        "race_ids": [
+          "579"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/aida-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-ain-diab-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "ain-diab"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1958,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/ain-diab-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/ain-diab-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/ain-diab-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/ain-diab-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:6d55ee8a5715166a930c09f66fe47e35996e8037",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "ceb47d9f3cdbe4d0c8e265b5e29b130f65911d74b187edc494063eaad22daebd",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for ain-diab; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для ain-diab; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with ain-diab; source context requires review.",
+        "uk": "Кандидатна схема траси ain-diab; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "ain-diab-1",
+        "race_ids": [
+          "75"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/ain-diab-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-clermont-ferrand-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "clermont-ferrand"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1972,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/clermont-ferrand-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/clermont-ferrand-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/clermont-ferrand-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/clermont-ferrand-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:14dffd56b3e5d286dc4d235a90fc2a9d9d232c8b",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "484638e9028cb69a7d5561eaa392c5ce7db7d89fb6816acf734994acf170e06b",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for clermont-ferrand; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для clermont-ferrand; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with clermont-ferrand; source context requires review.",
+        "uk": "Кандидатна схема траси clermont-ferrand; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "clermont-ferrand-1",
+        "race_ids": [
+          "214"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/clermont-ferrand-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-dallas-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "dallas"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1984,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/dallas-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/dallas-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/dallas-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/dallas-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:1c2c2aadd37480b07ffedc47cf2a5a8843d1b645",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "5ef546c134a80737516490a5176dcc41b328657cf4e216450195c12d8d49a6ab",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for dallas; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для dallas; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with dallas; source context requires review.",
+        "uk": "Кандидатна схема траси dallas; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "dallas-1",
+        "race_ids": [
+          "397"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/dallas-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-detroit-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "detroit"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1982,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/detroit-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/detroit-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/detroit-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/detroit-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:03f783ab15b19de015c2e215b1d36c0259a6e77a",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "3d36be2df73316bc6105ab8bd09904ba1f8eeef19ede153b840aeb4d0fe50c55",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for detroit; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для detroit; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with detroit; source context requires review.",
+        "uk": "Кандидатна схема траси detroit; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "detroit-1",
+        "race_ids": [
+          "364"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/detroit-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-pescara-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "pescara"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1957,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/pescara-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/pescara-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/pescara-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/pescara-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:13a6ee9a768a9bd38fa690f5a232281805b05b6a",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "f3214aec9a8de1d151be8a868ec9e91357974b368f0e95a7d3f181853b4f18ce",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for pescara; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для pescara; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with pescara; source context requires review.",
+        "uk": "Кандидатна схема траси pescara; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "pescara-1",
+        "race_ids": [
+          "63"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/pescara-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-porto-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "porto"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1960,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/porto-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/porto-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/porto-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/porto-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:8a7d69a414c3638d38262cc03c01702305146a9c",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "49a5ff140284098dba8f66dc3ca5ddc593fdab54104eaf2a627bc011103e7b4d",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for porto; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для porto; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with porto; source context requires review.",
+        "uk": "Кандидатна схема траси porto; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "porto-1",
+        "race_ids": [
+          "92"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/porto-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-sebring-layout",
+      "subject": {
+        "type": "circuit",
+        "id": "sebring"
+      },
+      "kind": "circuit-diagram",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 1959,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/sebring-1.svg"
+      },
+      "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/sebring-1.svg",
+      "file_page_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/sebring-1.svg",
+      "creator": "Jules Roy",
+      "attribution": "Jules Roy · CC BY 4.0 · https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/sebring-1.svg",
+      "license": {
+        "identifier": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/svg+xml",
+        "width": 500,
+        "height": 500
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "f1db:v2026.17.0:git-blob:9358dd5fff7e8b4cbbbfd2d23a4cca6695aebad0",
+      "inspected_on": "2026-11-05",
+      "content_sha256": "aeee7dc653ff555f7ff3013481adbc6bea4b7bd7587640c5dd5fe5bee5538f9d",
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for sebring; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для sebring; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate circuit diagram associated with sebring; source context requires review.",
+        "uk": "Кандидатна схема траси sebring; контекст джерела потребує перевірки."
+      },
+      "layout": {
+        "id": "sebring-1",
+        "race_ids": [
+          "84"
+        ],
+        "source_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/assets/circuits/white-outline/sebring-1.svg",
+        "source_revision": "f1db:v2026.17.0"
+      }
+    },
+    {
+      "id": "research-circuit410-spa-francorchamps-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "spa-francorchamps"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2005,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Spa_Francorchamps_d%C3%A9tails.jpg&oldid=1168626220"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Spa_Francorchamps_d%C3%A9tails.jpg&oldid=1168626220",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Spa_Francorchamps_d%C3%A9tails.jpg&oldid=1168626220",
+      "creator": "LINOTTE Auguste",
+      "attribution": "LINOTTE Auguste · CC BY-SA 3.0 · https://commons.wikimedia.org/w/index.php?title=File:Spa_Francorchamps_d%C3%A9tails.jpg&oldid=1168626220",
+      "license": {
+        "identifier": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently.",
+          "ShareAlike conditions apply to adaptations."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 3008,
+        "height": 2000
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1168626220",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for spa-francorchamps; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для spa-francorchamps; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with spa-francorchamps; source context requires review.",
+        "uk": "Фотокандидат для spa-francorchamps; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-circuit410-montreal-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "montreal"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2017,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_Gilles_Villeneuve,_%C3%8Ele_de_Notre_Dame,_Montreal_(34523379263).jpg&oldid=1137123824"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_Gilles_Villeneuve,_%C3%8Ele_de_Notre_Dame,_Montreal_(34523379263).jpg&oldid=1137123824",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_Gilles_Villeneuve,_%C3%8Ele_de_Notre_Dame,_Montreal_(34523379263).jpg&oldid=1137123824",
+      "creator": "pedrik",
+      "attribution": "pedrik · CC BY 2.0 · https://commons.wikimedia.org/w/index.php?title=File:Circuit_Gilles_Villeneuve,_%C3%8Ele_de_Notre_Dame,_Montreal_(34523379263).jpg&oldid=1137123824",
+      "license": {
+        "identifier": "CC BY 2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 5836,
+        "height": 3890
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1137123824",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for montreal; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для montreal; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with montreal; source context requires review.",
+        "uk": "Фотокандидат для montreal; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-circuit410-suzuka-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "suzuka"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2018,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Suzuka-Circuit_Musashi-Chicane.jpg&oldid=1211324646"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Suzuka-Circuit_Musashi-Chicane.jpg&oldid=1211324646",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Suzuka-Circuit_Musashi-Chicane.jpg&oldid=1211324646",
+      "creator": "Wata0929",
+      "attribution": "Wata0929 · CC BY-SA 4.0 · https://commons.wikimedia.org/w/index.php?title=File:Suzuka-Circuit_Musashi-Chicane.jpg&oldid=1211324646",
+      "license": {
+        "identifier": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently.",
+          "ShareAlike conditions apply to adaptations."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 1920,
+        "height": 1080
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1211324646",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for suzuka; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для suzuka; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with suzuka; source context requires review.",
+        "uk": "Фотокандидат для suzuka; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-circuit410-silverstone-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "silverstone"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2019,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Silverstone_Racing_Circuit.jpg&oldid=1042021018"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Silverstone_Racing_Circuit.jpg&oldid=1042021018",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Silverstone_Racing_Circuit.jpg&oldid=1042021018",
+      "creator": "Harvey Milligan",
+      "attribution": "Harvey Milligan · CC BY-SA 4.0 · https://commons.wikimedia.org/w/index.php?title=File:Silverstone_Racing_Circuit.jpg&oldid=1042021018",
+      "license": {
+        "identifier": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently.",
+          "ShareAlike conditions apply to adaptations."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 4032,
+        "height": 3024
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1042021018",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for silverstone; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для silverstone; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with silverstone; source context requires review.",
+        "uk": "Фотокандидат для silverstone; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-circuit410-bahrain-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "bahrain"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2021,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Bahrain_International_Circuit.jpg&oldid=1048266418"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Bahrain_International_Circuit.jpg&oldid=1048266418",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Bahrain_International_Circuit.jpg&oldid=1048266418",
+      "creator": "United Autosports",
+      "attribution": "United Autosports · CC BY-SA 2.0 · https://commons.wikimedia.org/w/index.php?title=File:Bahrain_International_Circuit.jpg&oldid=1048266418",
+      "license": {
+        "identifier": "CC BY-SA 2.0",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "restrictions": [
+          "Retain source, creator and license notices; identify any changes.",
+          "Assess source authority, third-party rights and intended use independently.",
+          "ShareAlike conditions apply to adaptations."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 5472,
+        "height": 3648
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1048266418",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for bahrain; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для bahrain; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with bahrain; source context requires review.",
+        "uk": "Фотокандидат для bahrain; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    },
+    {
+      "id": "research-circuit410-monaco-photo",
+      "subject": {
+        "type": "circuit",
+        "id": "monaco"
+      },
+      "kind": "photograph",
+      "ai_generated": null,
+      "historical_context": {
+        "year": 2022,
+        "description": "Source-bound intake candidate; venue, era and intended use require independent review.",
+        "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg&oldid=1165226849"
+      },
+      "source_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg&oldid=1165226849",
+      "file_page_url": "https://commons.wikimedia.org/w/index.php?title=File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg&oldid=1165226849",
+      "creator": "crash71100",
+      "attribution": "crash71100 · CC0 · https://commons.wikimedia.org/w/index.php?title=File:Circuit_de_Monaco_-_Virage_de_Sainte-D%C3%A9vote_(54763577980).jpg&oldid=1165226849",
+      "license": {
+        "identifier": "CC0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "restrictions": [
+          "CC0 source declaration does not impose a copyright attribution condition; verify the dedicator authority and third-party rights.",
+          "Grid Atlas project policy retains creator/source credit as a courtesy, not a CC0 license condition."
+        ]
+      },
+      "image": {
+        "mime": "image/jpeg",
+        "width": 8000,
+        "height": 6000
+      },
+      "status": "candidate",
+      "review": null,
+      "delivery": {
+        "local_path": null,
+        "remote_url": null
+      },
+      "source_revision": "commons-description-oldid:1165226849",
+      "inspected_on": "2026-11-05",
+      "content_sha256": null,
+      "modifications": "None in this batch; external originals are not downloaded or modified.",
+      "rights_note": "Source-declared terms only; independent human rights/identity decision remains pending.",
+      "alt": {
+        "en": "Research source for monaco; identity and reuse review pending.",
+        "uk": "Дослідницьке джерело для monaco; перевірка ідентичності й використання триває."
+      },
+      "caption": {
+        "en": "Candidate photograph associated with monaco; source context requires review.",
+        "uk": "Фотокандидат для monaco; контекст джерела потребує перевірки."
+      },
+      "layout": null
+    }
+  ]
+}
