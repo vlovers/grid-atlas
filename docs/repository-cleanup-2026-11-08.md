@@ -192,3 +192,12 @@ python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANC
 A detailed handoff comment was added to #407 before closure. Do **not** delete its branch until #416 is integrated and its contents are present in `main`. This eliminates a duplicate review path without discarding the remaining reviewed CI delivery.
 
 The PR count decreased from 14 to **13** following closure (subject to concurrent changes). #416 remains draft pending owner/integrator review despite green checks.
+
+## Product Issue cleanup — 8 November 2026
+
+- **Issue #134 closed as `not_planned` / superseded** (with explanation). It was a one-off October Phase 1 editorial redesign delivery brief. Merged #205 delivered the editorial homepage, driver/constructor dossier foundations, typography and responsive acceptance evidence. The broader ongoing visual review remains under #152 and #195; media approval remains under #290. Closure is **not** a claim of final owner approval of every visual goal.
+- Issue #155 still describes a historical stacked PR #153/#154 worktree arrangement and includes large current-product UX acceptance criteria. Treat it as potentially superseded but **do not close** until the newer Explorer/Time Machine tests and screenshot acceptance are reconciled. There are current browser test suites for Explorer/Time Machine/History Atlas, but test-file presence alone does not prove every criterion.
+- Issues #275/#283 retain precise historical Chromium/WebKit 200%-text overflow failures. Preserve until current equivalent regression and both-engine CI evidence are inspected.
+- Editorial Issues #107/#133/#278 and media #290 remain open because independent human approval is not implied by archived drafts or merged display templates.
+
+After closing #134, the open non-PR issue count becomes **19**, subject to concurrent work. PR queue is **13** after closing legacy #407, with #416 preserved for integration. Neither cleanup changes `main` or publishes any candidate content.
