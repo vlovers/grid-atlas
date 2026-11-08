@@ -68,12 +68,17 @@ def audit(repo, selected=None):
         entries.append(entry)
     return {"repository": repo, "base": base, "entries": entries}
 
-def apply(manifest):
+def apply(manifest, max_delete=10):
     repo = validate_repo(manifest["repository"])
     current = api(f"repos/{repo}")
     if manifest["base"] != current["default_branch"]:
         raise RuntimeError("Default branch changed; stop.")
     open_heads = list_heads(repo)
+    candidates = [row for row in manifest["entries"] if row.get("status") == "candidate"]
+    if len(candidates) > max_delete:
+        raise RuntimeError(f"{len(candidates)} deletions exceed --max-delete={max_delete}; review a smaller manifest")
+    if len({row["name"] for row in candidates}) != len(candidates):
+        raise RuntimeError("Duplicate candidate names in manifest")
     deleted, skipped = [], []
     for row in manifest["entries"]:
         if row.get("status") != "candidate":
@@ -108,6 +113,7 @@ def main():
     parser.add_argument("--manifest", type=Path, default=Path("/tmp/grid-atlas-branch-cleanup-manifest.json"))
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
+    parser.add_argument("--max-delete", type=int, default=10, help="Hard cap per apply invocation (default 10)")
     parser.add_argument("--only", action="append", help="Inspect one name; repeat as needed")
     args = parser.parse_args()
     repo = validate_repo(args.repo)
@@ -119,7 +125,9 @@ def main():
         manifest = json.loads(args.manifest.read_text())
         if manifest["repository"] != repo:
             parser.error("Manifest repository mismatch")
-        report = apply(manifest)
+        if args.max_delete < 1 or args.max_delete > 20:
+            parser.error("--max-delete must be between 1 and 20")
+        report = apply(manifest, max_delete=args.max_delete)
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
         report = audit(repo, set(args.only) if args.only else None)
