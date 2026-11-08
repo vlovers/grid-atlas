@@ -201,3 +201,7 @@ The PR count decreased from 14 to **13** following closure (subject to concurren
 - Editorial Issues #107/#133/#278 and media #290 remain open because independent human approval is not implied by archived drafts or merged display templates.
 
 After closing #134, the open non-PR issue count becomes **19**, subject to concurrent work. PR queue is **13** after closing legacy #407, with #416 preserved for integration. Neither cleanup changes `main` or publishes any candidate content.
+
+## Base-SHA pinning hardening (8 November)
+
+The manifest now records the exact `base_sha` of `main` at inventory time. The tool aborts if `main` changes during inventory, between inventory and deletion, or during the apply loop. This is intentionally strict: if concurrent PRs merge, regenerate and re-review the manifest rather than continuing with stale cleanup assumptions. The existing per-branch SHA and open-PR head/base checks still apply. Test coverage includes the stale-main rejection case. Previous manifests lacking `base_sha` **cannot** be used to delete branches; they must be regenerated. GitHub REST ref deletion remains non-atomic, so no deletion should occur during concurrent branch modifications.
