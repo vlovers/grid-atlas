@@ -142,3 +142,26 @@ A review comment was added to #407 documenting this requirement. Likewise #400 h
 
 The 39 divergent branches in this batch include Senna historical claims, period race arcs, media-licensing evidence and lineage research. Their Git history does not demonstrate editorial approval or public release. Never delete historical source registers or review evidence as generic generated files. Avoid GitHub Actions reruns while housekeeping is in progress.
 
+
+## Executable branch cleanup, review required
+
+A conservative utility is now available at [`scripts/cleanup-merged-branches.py`](../scripts/cleanup-merged-branches.py). It uses the already expected authenticated `gh` CLI, GitHub's paginated branch/PR APIs and commit ancestry comparison. Its default behavior is **read-only** and writes a JSON report outside the repository. Neither this utility nor this audit claims that the remaining branches have been fully classified.
+
+```sh
+gh auth status
+# Review a small, known cohort first (no deletion):
+python3 scripts/cleanup-merged-branches.py --only beta/encyclopedia --only feat/history-atlas-v1
+# Inventory all remote branches: may hit GitHub API rate limits, no Actions workflows:
+python3 scripts/cleanup-merged-branches.py
+cat /tmp/grid-atlas-branch-cleanup-manifest.json
+```
+
+Only after review of the manifest, cross-checking closed PRs, other worktrees and source-data preservation, an authorized maintainer may explicitly opt in:
+
+```sh
+python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANCESTORS
+```
+
+**Warnings:** DELETE refs in GitHub REST is not transactional and has no atomic SHA lease; the script checks SHA immediately before deletion but cannot eliminate all races. Do not use it during concurrent branch updates, or with manifest candidates that have not been separately checked for dependencies. It never deletes protected branches, the default branch or open PR heads, and stops for shifted SHA or non-ancestor commits. The `--apply` operation is irreversible in the normal UI and must be performed only after an independent decision. Do not treat "zero ahead commits" as proof that there are no valuable tags, worktrees, linked issues or content-dependency expectations.
+
+**Audit code status:** source has been added on a draft PR; it has **not** yet been exercised against GitHub by this assistant or covered by a dedicated test suite. Review security/behavior before running destructive mode.
