@@ -164,4 +164,10 @@ python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANC
 
 **Warnings:** DELETE refs in GitHub REST is not transactional and has no atomic SHA lease; the script checks SHA immediately before deletion but cannot eliminate all races. Do not use it during concurrent branch updates, or with manifest candidates that have not been separately checked for dependencies. It never deletes protected branches, the default branch or open PR heads, and stops for shifted SHA or non-ancestor commits. The `--apply` operation is irreversible in the normal UI, is capped at 10 targets by default (maximum allowed `--max-delete 20`), and must be performed only after an independent decision. Do not treat "zero ahead commits" as proof that there are no valuable tags, worktrees, linked issues or content-dependency expectations.
 
-**Audit code status:** source and four mock-only safety tests have been added on a draft PR. Run `python3 -m unittest tests/test_cleanup_merged_branches.py` (or the existing unittest discovery command). These tests do not perform any real GitHub deletes. A live dry-run and independent review are still required before any destructive operation.
+**Audit code status:** source and five mock-only safety tests have been added on a draft PR. Run `python3 -m unittest tests/test_cleanup_merged_branches.py` (or the existing unittest discovery command). These tests do not perform any real GitHub deletes. Cleanup now also protects the **base branch** of any open stacked pull request, not only its head. A live dry-run and independent review are still required before any destructive operation.
+
+## Safety follow-up — 8 November
+
+- Final check on prior head `c9c957487edd2ac1f8ed91473d9fe97f9380d76e`: Foundation CI **passed**. Newer cleanup-script commits require their own checks.
+- Hardened the script to protect both head **and base** branches of open PRs, including stacked review branches; extended mock tests accordingly.
+- The attempted independent runtime test from this session could not retrieve repository source because direct access to `raw.githubusercontent.com` failed DNS resolution. This is **not** evidence of test failure or success. GitHub CI is the available check; no manual deletion was attempted.
