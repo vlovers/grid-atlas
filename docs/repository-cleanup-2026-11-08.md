@@ -49,3 +49,38 @@
 The connected GitHub operations used for this audit can list, compare and update refs but do not expose remote ref deletion. **No remote branches were deleted.** Similarly, GitHub Actions retention/artifact deletion is not available in these operations; no action artifacts were purged. No local checkout, full test suite, dependency vulnerability scan or production smoke test was executed in this pass.
 
 See [repository hygiene snapshot of 22 October](repository-hygiene-2026-10.md), [documentation entry points](README.md), and [release gates](roadmap/README.md) for context. These historic documents are not current completion certificates.
+
+## Follow-up verification — PR overlap and branch ancestry (8 November)
+
+### Exact changed-path overlaps
+
+- **Governance #400 vs #415:** both modify the same seven paths: `.github/PULL_REQUEST_TEMPLATE.md`, `.github/workflows/ci.yml`, `AGENTS.md`, `docs/README.md`, `docs/engineering/MULTI_AGENT_WORKFLOW.md`, `scripts/check-governance.mjs`, `test/check-governance.test.mjs`. #415 is a current-main forward-port candidate, **not yet proof** of complete patch equivalence. Preserve both until a file-by-file comparison and one accepted merge.
+- **CI #407 vs #416:** overlapping `api.yml`, `real-archive.yml`, `web.yml`; #407 additionally changes `commons-original-review.yml`. The Commons-only change must not be lost if #416 is chosen. Do not merge both without a merged change plan.
+- **Circuit content #403 vs #406:** both modify `apps/web/src/components/editorial/circuit-next20-stories.json`. #406 also overlaps historical test files changed in #408. Establish a tested integration order and retain claim-specific evidence.
+- **Reader #398:** modifies `web.yml`, `docs/README.md`, public circuit reader components, the API reader test server and browser tests; review together with the CI and documentation PRs rather than treating it as independently conflict-free.
+- **Audit #417:** touches `docs/README.md` also changed in #400/#415/#398. Rebase/resolve deliberately after selecting governance and reader integrations.
+
+### Sampled branch ancestry: 10 branches
+
+Compared GitHub `main...branch` against `main` at `338394f726b83189d112ffa3f71eb49eb75d1aa9`. **Only `status=behind` and `ahead_by=0` establish ancestry-safe deletion**, not absence of relevant PR dependencies.
+
+| Branch | Compare status | Ahead | Decision |
+| --- | --- | ---: | --- |
+| `feat/history-atlas-v1` | behind | 0 | Candidate to delete after SHA lease / dependency recheck |
+| `beta/encyclopedia` | behind | 0 | Candidate to delete after SHA lease / dependency recheck |
+| `feat/f1db-driver-identities` | diverged | 4 | Retain pending squash/patch equivalence |
+| `feat/driver-profiles` | diverged | 3 | Retain pending squash/patch equivalence |
+| `content/senna-source-dossier` | diverged | 2 | Retain source material until proven ported |
+| `docs/senna-biography-draft-en` | diverged | 1 | Retain unpublished manuscript until proven ported |
+| `feat/circuit-graphics-v3` | diverged | 20 | Retain pending design/asset evidence comparison |
+| `feat/circuit-experience-v2` | diverged | 9 | Retain pending patch equivalence |
+| `audit/circuit-78-completion-gates-20261102` | diverged | 1 | Retain audit/provenance |
+| `chore/foundation-01` | diverged | 1 | Retain pending patch equivalence |
+
+This sample **does not generalize** to the other 385 baseline branches. Neither of the two safe candidates was deleted, because the connected GitHub tool does not expose DELETE refs. At next opportunity obtain a fresh branch SHA, verify it is not a PR head or dependent base, then delete with an explicit lease and log the result.
+
+### Verification performed
+
+- #417 latest checked `foundation` check completed **successfully**; this is not a full application acceptance or release check.
+- Current `main` remained `338394f726b83189d112ffa3f71eb49eb75d1aa9` during follow-up.
+- No merge, force push, mass deletion or CI rerun was made during follow-up.
