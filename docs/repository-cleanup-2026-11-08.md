@@ -230,3 +230,30 @@ Those ahead counts are Git ancestry, **not proof of missing user-visible content
 - PRs #415 and #416 are **ready for review**, not independently approved or merged. Preserve their branches.
 - Docs/README and cleanup tool fixes remain only in #417, not `main`.
 
+
+## Further 75-ref ancestry review — 8 November 2026
+
+Compared 75 `feat/` branches covering circuit reader, Commons research, constructor/driver UX, editorial waves and F1DB import against unchanged `main` SHA `338394f726b83189d112ffa3f71eb49eb75d1aa9`.
+
+- **11 with `ahead_by=0` / `status=behind`** (candidates only):
+  - `feat/circuit-production-reader-20261105`
+  - `feat/circuit-research-batch-audit-pipeline`
+  - `feat/constructor-circuit-archive-overviews`
+  - `feat/constructor-driver-career-chronicles`
+  - `feat/driver-archive-biographical-overviews`
+  - `feat/editorial-bulk-50-driver-cohort`
+  - `feat/editorial-cohort-release-readiness`
+  - `feat/editorial-driver-biography-evidence-wave2`
+  - `feat/editorial-driver-biography-wave3`
+  - `feat/editorial-nine-champions-story-copy`
+  - `feat/f1db-importer-foundation`
+- **64 diverged** with one or more ahead commits (patch equivalence and provenance review required). In particular `feat/editorial-content-factory-batch01-20261024` had 166 ahead, `feat/editorial-five-driver-research-pack` 76, `feat/content-factory-circuits-batch01-20261025` 50, `feat/circuit-reviewed-public-reader-20261029` 49, and `feat/circuits-reader-journeys-v2-20261025` 40. These are not blanket-deletion candidates.
+- Two of the 75, `feat/driver-profiles` and `feat/f1db-driver-identities`, were included in the original 10-ref sample and are **not double counted**.
+
+**Cumulative count correction:** earlier 60-ref continuation repeated `docs/senna-biography-draft-en` from the original 10-ref sample. Thus the corrected earlier cumulative unique count was **151**, rather than 152. With 73 genuinely new refs from this 75-ref pass, the current documented sample is **224 unique legacy branches**: **22 zero-ahead candidates** and **202 with divergent history**. The remaining branches have **not** all been checked; total remote branch count at this checkpoint was still 396, including `main` and active PR heads.
+
+Zero-ahead is merely a Git ancestry signal. Require a fresh ref SHA, review of active worktrees/PR bases, source citation dependencies, and per-run deletion cap before any removal. **No remote branches were deleted.**
+
+### Test checkpoint
+
+Foundation CI for PR #417 head `a0a49d42aa03a06c71212d9fbd425b2851f5275d` completed successfully before this audit-only commit. The latest head requires a fresh status observation. No workflow was manually rerun.
