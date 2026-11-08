@@ -179,3 +179,16 @@ python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANC
 - The active PR queue therefore moved from **15 to 14** after closure, assuming no concurrent new PR. The separate count of genuine open Issues remains 20.
 - **CI #407 vs #416 still unresolved:** two workflows match exactly, but `real-archive.yml` differs and Commons workflow changes exist only in #407. Keep both until changes are reconciled; do not mark either as redundant without porting.
 - **PR #417** previous head `696eeea5839ea43c910886d670b73566de9fca76` passed its Foundation CI. That workflow runs `python3 -m unittest discover -s tests -v`, which includes the new mock-only branch cleanup test module. This constitutes CI validation on that SHA, not a live deletion test or production verification.
+
+## CI PR #407/#416 resolution — 8 November 2026
+
+**Verified and executed:** PR #407 was closed **unmerged** as superseded by #416, after exact comparison of all four workflow paths:
+
+- `api.yml`, `web.yml`: identical blobs in both PR heads.
+- `commons-original-review.yml`: the #407 version is byte-identical to `main` (blob `21a9fc0d0a30ab2047101fae12a64ed7b56040d8`). There is **no Commons delta to port**; an earlier triage warning that #407 had a unique Commons change is now resolved.
+- `real-archive.yml`: #416 adds fallback on an empty direct-download file, beyond #407's fallback on a failed HTTP command. All other lines are identical.
+- #416 head `df27252d13c1b4ccbbba6a50c8d2e445aae43cb0`: Foundation, API, Web and Archive checks were all **successful** when inspected. This verifies the #416 PR head checks only, not a merge or production deployment.
+
+A detailed handoff comment was added to #407 before closure. Do **not** delete its branch until #416 is integrated and its contents are present in `main`. This eliminates a duplicate review path without discarding the remaining reviewed CI delivery.
+
+The PR count decreased from 14 to **13** following closure (subject to concurrent changes). #416 remains draft pending owner/integrator review despite green checks.
