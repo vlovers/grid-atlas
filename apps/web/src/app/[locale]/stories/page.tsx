@@ -40,14 +40,14 @@ export default async function Stories({ params }: Props) {
             <div className={styles.editorialFeatureArt} aria-hidden="true"><MotorsportArt kind={visual?.kind ?? 'velocity'} tone={visual?.tone ?? 'coral'} /></div>
             <div className={styles.editorialFeatureCopy}>
             <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {story.year}</span>
-            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}><a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a></h3>
+            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}>{isAiReviewedStory(story.slug) ? <a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a> : copy.title}</h3>
             <p style={{ lineHeight: 1.65, margin: 0 }}>{copy.summary}</p>
-            <p className={styles.editorialFeatureLink}><a href={`/${locale}/stories/moments/${story.slug}`}>{isAiReviewedStory(story.slug) ? (uk ? 'Читати історію' : 'Read story') : (uk ? 'Відкрити чернетку' : 'Open draft')} →</a></p>
+            {isAiReviewedStory(story.slug) && <p className={styles.editorialFeatureLink}><a href={`/${locale}/stories/moments/${story.slug}`}>{uk ? 'Читати історію' : 'Read story'} →</a></p>}
             </div>
           </li>;
         })}
       </ol>
     </section>
-    <details className={styles.provenance}><summary>{uk ? 'Джерела та пояснення' : 'Sources and reading notes'}</summary><p>{uk ? 'Історичні тексти додаються лише після окремого редакційного схвалення кожної мови. Статус чернетки позначено біля її посилання.' : 'Historical writing requires separate editorial approval for each language. Draft links identify their status.'}</p><p>{uk ? 'Записи результатів не є підтвердженням контрактів або офіційних стартів. Прогалини не доводять відсутності участі. Історію конструкторів та заявників досліджуйте окремо.' : 'Result entries do not establish contracts or official starts. Missing records do not prove nonparticipation. Constructor and entrant identities remain distinct.'}</p><a href={`/${locale}/sources`}>{uk ? 'Походження даних' : 'Data provenance'} ↗</a></details>
+    <details className={styles.provenance}><summary>{uk ? 'Джерела та пояснення' : 'Sources and reading notes'}</summary><p>{uk ? 'Повні тексти доступні лише після перевірки ШІ обох мовних версій. Неперевірені історії залишаються анонсами без посилання; перевірка ШІ не є людським редакційним схваленням.' : 'Full articles are linked only after AI review of both language versions. Unreviewed stories remain unlinked previews; AI review does not constitute human editorial approval.'}</p><p>{uk ? 'Записи результатів не є підтвердженням контрактів або офіційних стартів. Прогалини не доводять відсутності участі. Історію конструкторів та заявників досліджуйте окремо.' : 'Result entries do not establish contracts or official starts. Missing records do not prove nonparticipation. Constructor and entrant identities remain distinct.'}</p><a href={`/${locale}/sources`}>{uk ? 'Походження даних' : 'Data provenance'} ↗</a></details>
   </div>;
 }

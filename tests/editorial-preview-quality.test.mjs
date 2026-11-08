@@ -26,7 +26,8 @@ test('ten editorial race scenes have distinct, bilingual reader-first summaries'
 
 test('editorial stories stay separate from published archival pilot journeys', () => {
   const page = readFileSync('apps/web/src/app/[locale]/stories/moments/[slug]/page.tsx', 'utf8');
-  assert.match(page, /index: isAiReviewedStory\(slug\)/);
+  assert.match(page, /if \(!story \|\| !isAiReviewedStory\(slug\)\) notFound\(\)/);
+  assert.match(page, /robots: \{ index: true, follow: true \}/);
   const registry = readFileSync('apps/web/src/components/stories/editorial-publication.ts', 'utf8');
   assert.match(registry, /reviewedEditions: readonly ReviewedEdition\[\] = \[/);
   assert.match(registry, /enSha256/);

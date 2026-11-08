@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { SectionHeading, SourceAttribution } from '@/components/editorial/primitives';
 import { ArchiveFeatures } from '@/components/editorial/archive-features';
+import { ArchiveStoryJourneys } from '@/components/editorial/archive-story-journeys';
 import { CircuitCatalogueFeatures } from '@/components/editorial/circuit-catalogue-features';
 import { archiveCopy } from '@/components/editorial/archive-copy';
 import { atlasCopy } from '@/components/atlas/copy';
@@ -36,6 +37,7 @@ export default async function Catalogue({ path, title, description, searchParams
     <header className={styles.heading} data-testid="editorial-hero"><div><p className="eyebrow">{a.index} / GRID ATLAS</p><h1>{title}</h1></div><p className="lead">{description}</p></header>
     <SourceAttribution locale={locale as 'uk' | 'en'} />
     {page === 1 && !q && records.length > 0 && <Suspense fallback={<p role="status">{a.loading}</p>}>{kind === 'circuits' ? <CircuitCatalogueFeatures fallback={records} locale={locale as 'uk' | 'en'} /> : <ArchiveFeatures kind={kind} fallback={records} locale={locale as 'uk' | 'en'} />}</Suspense>}
+    {page === 1 && !q && kind !== 'circuits' && <ArchiveStoryJourneys kind={kind} locale={locale as 'uk' | 'en'} />}
     <SectionHeading id="complete-index" kicker={a.index} title={a.archive} />
     <form className={`catalogue-search ${styles.search}`} action={cataloguePath} role="search">
       <label htmlFor="catalogue-query">{t('searchLabel')}</label>
