@@ -33,7 +33,8 @@ test('driver and constructor associations use canonical external identities, not
   assert.match(people, /"michael-schumacher"/);
   assert.match(entity, /ferrari:/);
   assert.match(entity, /mclaren:/);
-  assert.match(entity, /'brawn-gp':/);
+  assert.match(entity, /\bbrawn: \['brawn-2009'\]/);
+  assert.doesNotMatch(entity, /'brawn-gp':/);
   assert.doesNotMatch(entity, /\.name\s*===\s*externalId/);
 });
 
