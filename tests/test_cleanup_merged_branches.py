@@ -50,7 +50,7 @@ class BranchCleanupTests(unittest.TestCase):
                 module.apply(manifest)
 
     def test_apply_skips_changed_sha(self):
-        manifest = {"repository": "vlovers/grid-atlas", "base": "main", "entries": [
+        manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
             {"name": "feat/merged", "sha": "old", "status": "candidate"}
         ]}
         def api(path, method="GET"):
@@ -70,7 +70,7 @@ class BranchCleanupTests(unittest.TestCase):
                 module.apply(manifest)
 
     def test_apply_deletes_only_verified_unchanged_ancestor(self):
-        manifest = {"repository": "vlovers/grid-atlas", "base": "main", "entries": [
+        manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
             {"name": "feat/merged", "sha": "old", "status": "candidate"},
             {"name": "feat/not-approved", "sha": "unique", "status": "retain"}
         ]}
