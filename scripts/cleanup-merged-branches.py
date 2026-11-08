@@ -44,19 +44,28 @@ def ref_info(repo, name):
 def compare(repo, base, sha):
     return api(f"repos/{repo}/compare/{quote(base, safe='')}...{sha}")
 
-def list_heads(repo):
-    return {p["head"]["ref"] for p in paged(repo, "pulls?state=open") if (p.get("head") or {}).get("repo") and (p.get("head") or {})["repo"].get("full_name") == repo}
+def list_referenced_branches(repo):
+    """Protect both the head AND base of every open PR in this repository."""
+    referenced = set()
+    for pr in paged(repo, "pulls?state=open"):
+        head = pr.get("head") or {}
+        base = pr.get("base") or {}
+        if (head.get("repo") or {}).get("full_name") == repo and head.get("ref"):
+            referenced.add(head["ref"])
+        if (base.get("repo") or {}).get("full_name") == repo and base.get("ref"):
+            referenced.add(base["ref"])
+    return referenced
 
 def audit(repo, selected=None):
     repository = api(f"repos/{repo}")
     base = repository["default_branch"]
-    heads = list_heads(repo)
+    heads = list_referenced_branches(repo)
     entries = []
     for branch in paged(repo, "branches"):
         name, sha = branch["name"], branch["commit"]["sha"]
         if selected is not None and name not in selected:
             continue
-        reason = "active_pr" if name in heads else "default" if name == base else "protected" if branch.get("protected") else None
+        reason = "pr_head_or_base" if name in heads else "default" if name == base else "protected" if branch.get("protected") else None
         entry = {"name": name, "sha": sha, "protected": bool(branch.get("protected"))}
         if reason:
             entry.update(status="retain", reason=reason)
@@ -73,7 +82,7 @@ def apply(manifest, max_delete=10):
     current = api(f"repos/{repo}")
     if manifest["base"] != current["default_branch"]:
         raise RuntimeError("Default branch changed; stop.")
-    open_heads = list_heads(repo)
+    open_heads = list_referenced_branches(repo)
     candidates = [row for row in manifest["entries"] if row.get("status") == "candidate"]
     if len(candidates) > max_delete:
         raise RuntimeError(f"{len(candidates)} deletions exceed --max-delete={max_delete}; review a smaller manifest")
