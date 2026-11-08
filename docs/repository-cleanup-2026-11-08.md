@@ -108,3 +108,37 @@ Additionally `feat/history-atlas-v1` was confirmed earlier, giving **eight uniqu
 The remainder include potentially valuable unmerged source and manuscript commits (e.g. `content/circuits-20-completion-audit-20261027` ahead by 95, `content/consolidation-v1-20261026` ahead by 37, and `content/circuits-next25-editorial-20261027` ahead by 36). Treat as preservation candidates rather than garbage, pending patch comparison.
 
 This verification does **not** authorize deleting these branches while a human or Codex worktree may use them. Re-check live SHA, associated closed PR / open worktrees, and active consumers immediately before deletion. No branches were deleted in this continuation.
+
+## Further ancestry and CI-overlap review — 8 November
+
+Forty **additional distinct historical branches** were checked against `main`: 39 diverged and one, `content/verified-circuit-2021-research-batch`, is `behind` with **zero ahead commits**. It is a deletion candidate, subject to a fresh ref SHA and dependency check. The three batches contain 10 + 45 + 40 comparisons; one `beta/encyclopedia` overlap means **94 distinct legacy branches** in total. Nine unique zero-ahead candidate branches have now been identified:
+
+- `feat/history-atlas-v1`
+- `beta/encyclopedia`
+- `beta/historical-integrity`
+- `content/champion-chapter-evidence-gates`
+- `content/circuit-expansion-3-final-eleven-20261027`
+- `content/constructor-2025-evidence-batch`
+- `content/coverage-and-senna-consolidation`
+- `content/integrate-five-driver-1988-research`
+- `content/verified-circuit-2021-research-batch`
+
+**Counts:** 94 unique legacy branch names evaluated; 9 candidates and 85 branches with nonzero ahead commits. This is not yet a full 396-branch classification and no branches were deleted.
+
+### Exact CI-port blob comparison
+
+Comparing #407 against #416 by blob SHA:
+
+| Workflow | Blob equality | Integration decision |
+| --- | --- | --- |
+| `.github/workflows/api.yml` | Identical | Integrate once |
+| `.github/workflows/web.yml` | Identical | Integrate once |
+| `.github/workflows/real-archive.yml` | Different | Review the actual YAML diff before selecting #416 |
+| `.github/workflows/commons-original-review.yml` | Only #407 touches this | Preserve #407's Commons scope; it is not included in #416 |
+
+A review comment was added to #407 documenting this requirement. Likewise #400 has an earlier comparison comment against #415. Both are **keep-open-until-integrated**, not safe-to-close purely due to overlap.
+
+### Retention guidance
+
+The 39 divergent branches in this batch include Senna historical claims, period race arcs, media-licensing evidence and lineage research. Their Git history does not demonstrate editorial approval or public release. Never delete historical source registers or review evidence as generic generated files. Avoid GitHub Actions reruns while housekeeping is in progress.
+
