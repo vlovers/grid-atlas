@@ -17,7 +17,7 @@ export function publishedArchiveJourneys(kind: Kind) {
   });
 }
 
-/** Editorially reviewed links only; never expose draft manuscripts or unapproved routes. */
+/** AI-reviewed story links only; never expose drafts or imply human editorial approval. */
 export function ArchiveStoryJourneys({ kind, locale }: { kind: Kind; locale: Locale }) {
   const stories = publishedArchiveJourneys(kind);
   if (!stories.length) return null;
@@ -26,7 +26,7 @@ export function ArchiveStoryJourneys({ kind, locale }: { kind: Kind; locale: Loc
     <div className={styles.heading}>
       <div><p className={styles.eyebrow}>{uk ? 'Історії архіву' : 'From the archive'}</p>
         <h2 id="archive-journeys-title">{uk ? 'За цифрами — історії' : 'Beyond the statistics'}</h2></div>
-      <p>{uk ? 'Відкрийте суперництва, несподівані перемоги та поворотні сезони через перевірені історії.' : 'Explore rivalries, unlikely victories and turning-point seasons through reviewed stories.'}</p>
+      <p>{uk ? 'Відкрийте суперництва, несподівані перемоги та поворотні сезони в історіях, перевірених ШІ.' : 'Explore rivalries, unlikely victories and turning-point seasons through AI-reviewed stories.'}</p>
     </div>
     <div className={styles.grid}>{stories.map(story => <article className={styles.story} key={story.slug}>
       <span className={styles.year}>{story.year}</span>
