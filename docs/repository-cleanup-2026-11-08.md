@@ -171,3 +171,11 @@ python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANC
 - Final check on prior head `c9c957487edd2ac1f8ed91473d9fe97f9380d76e`: Foundation CI **passed**. Newer cleanup-script commits require their own checks.
 - Hardened the script to protect both head **and base** branches of open PRs, including stacked review branches; extended mock tests accordingly.
 - The attempted independent runtime test from this session could not retrieve repository source because direct access to `raw.githubusercontent.com` failed DNS resolution. This is **not** evidence of test failure or success. GitHub CI is the available check; no manual deletion was attempted.
+
+## PR queue consolidation — 8 November 2026
+
+- **PR #400 closed unmerged as superseded by #415.** The seven changed paths were reviewed: four blobs were byte-identical, and the remaining three in #415 retained every nonempty trimmed line from the older #400 versions. No substantive earlier line was lost in this comparison; the later PR also adds documentation-impact guidance. This does **not** mean #415 was merged, approved, or tested here.
+- Closed #400 with a detailed handoff comment. Its branch remains present and must not be deleted before #415's integration is confirmed.
+- The active PR queue therefore moved from **15 to 14** after closure, assuming no concurrent new PR. The separate count of genuine open Issues remains 20.
+- **CI #407 vs #416 still unresolved:** two workflows match exactly, but `real-archive.yml` differs and Commons workflow changes exist only in #407. Keep both until changes are reconciled; do not mark either as redundant without porting.
+- **PR #417** previous head `696eeea5839ea43c910886d670b73566de9fca76` passed its Foundation CI. That workflow runs `python3 -m unittest discover -s tests -v`, which includes the new mock-only branch cleanup test module. This constitutes CI validation on that SHA, not a live deletion test or production verification.
