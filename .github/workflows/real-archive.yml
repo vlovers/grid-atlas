@@ -108,8 +108,8 @@ jobs:
       - name: Fetch pinned archive with published checksum
         run: |
           mkdir -p /tmp/grid-atlas-f1db
-          curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
-          curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+          curl --fail --location --retry 8 --retry-all-errors --retry-delay 5 --retry-max-time 240 --connect-timeout 20 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
+          curl --fail --location --retry 8 --retry-all-errors --retry-delay 5 --retry-max-time 240 --connect-timeout 20 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
       - name: Verify 78 bilingual circuit narratives and generate 25 archival briefs
         run: |
           python3 -m unittest discover -s tests -p 'test_content_factory_circuits.py' -v
