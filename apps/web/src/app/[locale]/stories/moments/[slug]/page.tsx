@@ -24,7 +24,7 @@ function resolve(slug: string) { return editorialStoryPreviews.find(item => item
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const story = resolve(slug);
-  if ((locale !== 'uk' && locale !== 'en') || !story) notFound();
+  if ((locale !== 'uk' && locale !== 'en') || !story || !isAiReviewedStory(slug)) notFound();
   return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: isAiReviewedStory(slug), follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
 }
 
@@ -34,7 +34,7 @@ export default async function EditorialMoment({ params }: Props) {
   const { locale, slug } = await params;
   if (locale !== 'uk' && locale !== 'en') notFound();
   const story = resolve(slug);
-  if (!story) notFound();
+  if (!story || !isAiReviewedStory(slug)) notFound();
   const published = isAiReviewedStory(slug);
   const uk = locale === 'uk';
   const copy = story[locale];
