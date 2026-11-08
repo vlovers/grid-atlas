@@ -45,7 +45,7 @@ def compare(repo, base, sha):
     return api(f"repos/{repo}/compare/{quote(base, safe='')}...{sha}")
 
 def list_heads(repo):
-    return {p["head"]["ref"] for p in paged(repo, "pulls?state=open") if p.get("head", {}).get("repo", {}).get("full_name") == repo}
+    return {p["head"]["ref"] for p in paged(repo, "pulls?state=open") if (p.get("head") or {}).get("repo") and (p.get("head") or {})["repo"].get("full_name") == repo}
 
 def audit(repo, selected=None):
     repository = api(f"repos/{repo}")
@@ -105,7 +105,7 @@ def apply(manifest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", default="vlovers/grid-atlas")
-    parser.add_argument("--manifest", type=Path, default=Path("branch-cleanup-manifest.json"))
+    parser.add_argument("--manifest", type=Path, default=Path("/tmp/grid-atlas-branch-cleanup-manifest.json"))
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
     parser.add_argument("--only", action="append", help="Inspect one name; repeat as needed")
