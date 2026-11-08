@@ -19,7 +19,8 @@ This directory contains **current operating documentation**, **historical implem
 | Unpublished F1 rivalry stories | [Ten EN/UK rivalry reading journeys](editorial/rivalry-arcs/README.md) — relationship-led research drafts, not public or approved articles |
 | Unpublished landmark race stories | [Race turning points: 20 bilingual three-act manuscripts](editorial/race-arcs/README.md) — source-backed research, not published race pages |
 | Unified catalogue and archive templates | [Unified archive implementation](design/unified-archive/README.md) and [media context/provenance](media/library-v1-foundation.md) |
-| Live-state repository cleanup snapshot (8 November 2026) | [Branch/PR/Issue inventory and cleanup gates](repository-cleanup-2026-11-08.md) — a dated snapshot, not proof of completed cleanup |\n| Historical sprint status and visual evidence | [23 October audit](sprint-audit-2026-10-23.md) and [Visual Storytelling V2](design/visual-storytelling-v2/README.md) — historical evidence only |
+| Live-state repository cleanup snapshot (8 November 2026) | [Branch/PR/Issue inventory and cleanup gates](repository-cleanup-2026-11-08.md) — a dated snapshot, not proof of completed cleanup |
+| Historical sprint status and visual evidence | [23 October audit](sprint-audit-2026-10-23.md) and [Visual Storytelling V2](design/visual-storytelling-v2/README.md) — historical evidence only |
 | Media licensing and SVG attribution | [Approved imagery workflow](media/approved-imagery-workflow.md), [media registry](media/README.md) and [historical SVG provenance](media/historical-circuit-svg-provenance.md) |
 | Deployment and operational safety | [Operations](operations/phase-1.md) |
 | Production circuit history reader | [EN/UK reader, twenty-circuit acceptance and live publication boundaries](design/circuit-production-reader/README.md) — implementation and test evidence, not historical/media approval |
@@ -41,6 +42,6 @@ This directory contains **current operating documentation**, **historical implem
 4. When moving Markdown, update relative links and run the docs link audit. Keep root README short and route readers here.
 5. An old issue, a passing CI run, and a published release are different statuses. Verify each independently.
 
-See [open issue triage](issue-triage-2026-10.md) for the 12 issue acceptance decisions and [repository hygiene audit](repository-hygiene-2026-10.md) for identified cleanup work and deliberately retained historical material.
+For historical context, see the [October issue triage snapshot](issue-triage-2026-10.md) and [October repository hygiene snapshot](repository-hygiene-2026-10.md). These are **not** the current open-issue or branch inventory; use the [8 November reconciliation](repository-cleanup-2026-11-08.md), and verify GitHub before each write.
 
 Circuit editorial operators: [trusted publication security and runbook](engineering/circuit-publication-396.md) (default-off; no human approval implied).
