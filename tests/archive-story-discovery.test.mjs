@@ -54,3 +54,14 @@ test('bilingual layouts are responsive and do not alter circuit publication', ()
   assert.match(sitemap, /'\/time-machine'/);
   assert.doesNotMatch(entity, /circuit-release|independent_review_pending/);
 });
+
+test('archive and entity story copy identifies AI review without claiming human approval', () => {
+  assert.match(journeys, /through AI-reviewed stories\./);
+  assert.match(journeys, /в історіях, перевірених ШІ\./);
+  assert.match(entity, /AI-reviewed stories associated with this profile\./);
+  assert.match(entity, /Історії, перевірені ШІ та пов’язані з цією сторінкою\./);
+  for (const source of [journeys, entity]) {
+    assert.doesNotMatch(source, /Reviewed editorial stories associated with this profile\./);
+    assert.doesNotMatch(source, /через перевірені історії\./);
+  }
+});
