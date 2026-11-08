@@ -66,3 +66,11 @@ test('archive and entity story copy identifies AI review without claiming human 
     assert.doesNotMatch(source, /через перевірені історії\./);
   }
 });
+
+test('unreviewed editorial manuscripts are not directly served or indexed', () => {
+  assert.match(storyRoute, /if \(\(locale !== 'uk' && locale !== 'en'\) \|\| !story \|\| !isAiReviewedStory\(slug\)\) notFound\(\)/);
+  assert.match(storyRoute, /if \(!story \|\| !isAiReviewedStory\(slug\)\) notFound\(\)/);
+  assert.match(storyRoute, /robots: \{ index: isAiReviewedStory\(slug\), follow: true \}/);
+  assert.match(storyRoute, /const chapters = draftArticle\(slug, locale\)/);
+  assert.ok(storyRoute.indexOf('if (!story || !isAiReviewedStory(slug)) notFound()') < storyRoute.indexOf('const chapters = draftArticle(slug, locale)'));
+});
