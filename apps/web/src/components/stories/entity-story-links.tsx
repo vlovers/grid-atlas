@@ -34,7 +34,7 @@ export function EntityStoryLinks({ kind, externalId, locale }: { kind: Kind; ext
     <div className={styles.intro}>
       <p className={styles.eyebrow}>{uk ? 'Історії архіву' : 'Archive stories'}</p>
       <h2 id="entity-stories-title">{uk ? 'За межами протоколу' : 'Beyond the race results'}</h2>
-      <p>{uk ? 'Перевірені редакційні історії, пов’язані з цією сторінкою. Зв’язок тематичний і не підтверджує контрактів чи спадковості команд.' : 'Reviewed editorial stories associated with this profile. These thematic links do not establish contracts or team continuity.'}</p>
+      <p>{uk ? 'Історії, перевірені ШІ та пов’язані з цією сторінкою. Зв’язок тематичний і не підтверджує контрактів чи спадковості команд.' : 'AI-reviewed stories associated with this profile. These thematic links do not establish contracts or team continuity.'}</p>
     </div>
     <ul className={styles.grid}>{stories.map(story => <li key={story.slug}>
       <span className={styles.year}>{story.year}</span>
