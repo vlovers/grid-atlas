@@ -1,4 +1,5 @@
 import { editorialStoryPreviews } from './editorial-previews';
+import { isAiReviewedStory } from './editorial-publication';
 /** Curated thematic links; not claims of direct historical causation. */
 const relatedSlugs: Record<string, readonly string[]> = {
   "lauda-hunt-1976": [
@@ -54,5 +55,5 @@ const relatedSlugs: Record<string, readonly string[]> = {
 };
 export function relatedEditorialMoments(slug: string) {
   const keys = relatedSlugs[slug] ?? [];
-  return keys.flatMap(key => { const item = editorialStoryPreviews.find(story => story.slug === key); return item ? [item] : []; });
+  return keys.flatMap(key => { const item = editorialStoryPreviews.find(story => story.slug === key); return item && isAiReviewedStory(item.slug) ? [item] : []; });
 }

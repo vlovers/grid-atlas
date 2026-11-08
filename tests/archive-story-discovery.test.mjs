@@ -12,6 +12,7 @@ const constructor = read(root + 'app/[locale]/constructors/[id]/page.tsx');
 const catalogue = read(root + 'components/catalogue.tsx');
 const storyRoute = read(root + 'app/[locale]/stories/moments/[slug]/page.tsx');
 const storyHub = read(root + 'app/[locale]/stories/page.tsx');
+const relatedStories = read(root + 'components/stories/editorial-related.ts');
 const sitemap = read(root + 'lib/sitemap.ts');
 const people = read(root + 'components/stories/editorial-people.ts');
 
@@ -80,4 +81,11 @@ test('story hub never links directly to an unpublished manuscript', () => {
   assert.match(storyHub, /isAiReviewedStory\(story\.slug\) \? <a href=/);
   assert.match(storyHub, /isAiReviewedStory\(story\.slug\) && <p className=\{styles\.editorialFeatureLink\}>/);
   assert.doesNotMatch(storyHub, /Відкрити чернетку|Open draft/);
+});
+
+test('related-story recommendations only link AI-reviewed manuscripts', () => {
+  assert.match(relatedStories, /isAiReviewedStory\(item\.slug\)/);
+  assert.match(relatedStories, /item && isAiReviewedStory\(item\.slug\) \? \[item\] : \[\]/);
+  assert.match(storyHub, /AI review does not constitute human editorial approval/);
+  assert.match(storyHub, /перевірка ШІ не є людським редакційним схваленням/);
 });
