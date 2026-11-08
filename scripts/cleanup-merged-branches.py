@@ -59,6 +59,7 @@ def list_referenced_branches(repo):
 def audit(repo, selected=None):
     repository = api(f"repos/{repo}")
     base = repository["default_branch"]
+    base_sha = ref_info(repo, base)["commit"]["sha"]
     heads = list_referenced_branches(repo)
     entries = []
     for branch in paged(repo, "branches"):
@@ -75,13 +76,17 @@ def audit(repo, selected=None):
                          reason=result.get("status", "unknown"),
                          ahead_by=result.get("ahead_by"), behind_by=result.get("behind_by"))
         entries.append(entry)
-    return {"repository": repo, "base": base, "entries": entries}
+    if ref_info(repo, base)["commit"]["sha"] != base_sha:
+        raise RuntimeError("Default branch moved during inventory; discard the manifest and rerun")
+    return {"repository": repo, "base": base, "base_sha": base_sha, "entries": entries}
 
 def apply(manifest, max_delete=10):
     repo = validate_repo(manifest["repository"])
     current = api(f"repos/{repo}")
     if manifest["base"] != current["default_branch"]:
         raise RuntimeError("Default branch changed; stop.")
+    if ref_info(repo, current["default_branch"])["commit"]["sha"] != manifest.get("base_sha"):
+        raise RuntimeError("Default branch SHA changed since inventory; regenerate and review the manifest")
     open_heads = list_referenced_branches(repo)
     candidates = [row for row in manifest["entries"] if row.get("status") == "candidate"]
     if len(candidates) > max_delete:
@@ -112,6 +117,8 @@ def apply(manifest, max_delete=10):
         if ref_info(repo, name)["commit"]["sha"] != expected:
             skipped.append([name, "branch moved on final check"])
             continue
+        if ref_info(repo, current["default_branch"])["commit"]["sha"] != manifest["base_sha"]:
+            raise RuntimeError("Default branch changed during cleanup; stop before further deletion")
         api(f"repos/{repo}/git/refs/heads/{quote(name, safe='/')}", method="DELETE")
         deleted.append({"name": name, "sha": expected})
     return {"deleted": deleted, "skipped": skipped}
