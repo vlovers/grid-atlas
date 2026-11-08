@@ -111,7 +111,7 @@ This verification does **not** authorize deleting these branches while a human o
 
 ## Further ancestry and CI-overlap review — 8 November
 
-Forty **additional distinct historical branches** were checked against `main`: 39 diverged and one, `content/verified-circuit-2021-research-batch`, is `behind` with **zero ahead commits**. It is a deletion candidate, subject to a fresh ref SHA and dependency check. The three batches contain 10 + 45 + 40 comparisons; one `beta/encyclopedia` overlap means **94 distinct legacy branches** in total. Nine unique zero-ahead candidate branches have now been identified:
+Forty **additional distinct historical branches** were checked against `main`: 39 diverged and one, `content/verified-circuit-2021-research-batch`, is `behind` with **zero ahead commits**. It is a deletion candidate, subject to a fresh ref SHA and dependency check. The three batches contain 10 + 45 + 40 comparisons; three repeated names (`beta/encyclopedia`, `chore/foundation-01`, `content/senna-source-dossier`) mean **92 distinct legacy branches** in total. Nine unique zero-ahead candidate branches have now been identified:
 
 - `feat/history-atlas-v1`
 - `beta/encyclopedia`
@@ -123,7 +123,7 @@ Forty **additional distinct historical branches** were checked against `main`: 3
 - `content/integrate-five-driver-1988-research`
 - `content/verified-circuit-2021-research-batch`
 
-**Counts:** 94 unique legacy branch names evaluated; 9 candidates and 85 branches with nonzero ahead commits. This is not yet a full 396-branch classification and no branches were deleted.
+**Counts:** 92 unique legacy branch names evaluated; 9 candidates and 83 branches with nonzero ahead commits. This is not yet a full 396-branch classification and no branches were deleted.
 
 ### Exact CI-port blob comparison
 
