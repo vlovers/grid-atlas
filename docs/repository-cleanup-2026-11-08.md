@@ -257,3 +257,19 @@ Zero-ahead is merely a Git ancestry signal. Require a fresh ref SHA, review of a
 ### Test checkpoint
 
 Foundation CI for PR #417 head `a0a49d42aa03a06c71212d9fbd425b2851f5275d` completed successfully before this audit-only commit. The latest head requires a fresh status observation. No workflow was manually rerun.
+
+## Additional 78-reference feature scan — 8 November 2026
+
+At `main` SHA `338394f726b83189d112ffa3f71eb49eb75d1aa9`, compared **78 further previously unclassified feature branch refs** from the historical UI/Explorer (HX), lineage, media, web/API foundation and seasonal UX cohorts. The earlier verified `feat/history-atlas-v1` was intentionally excluded to avoid double counting.
+
+- **Three new zero-ahead branches (`behind`):**
+  - `feat/interactive-history-batch2`
+  - `feat/media-batch-290-20261028`
+  - `feat/media-storytelling-reboot`
+- **75 branches** have nonzero ahead commits and require patch-equivalence/source-preservation review. This includes the HX01–HX11 graph implementation branches, lineage evidence and media rights research: none is automatically safe for deletion.
+- **Cumulative manual ancestry review:** 302 distinct historical branches inspected: **25** are zero-ahead candidates, **277** have nonzero ahead commits. Total remote branches observed: 396, including `main`, live PR branches and the audit branch. Remaining branch names are not yet all classified; the above 302 refers to sampled historical non-PR refs, not 302 safely deletable branches.
+- PR #417 `a0a49d42aa03a06c71212d9fbd425b2851f5275d` passed Foundation CI at the start of this continuation. The latest audit-only commit needs its own check status.
+
+### Decision and handoff
+
+Do not delete any of these 25 branches automatically from this agent. The GitHub connector does not expose DELETE ref, and outside worktree/agent ownership cannot be proven from remote Git history alone. The read-only manifest tool is available; use a maintenance window after independently verifying open PR head/base refs, linked branch consumers, protected rulesets, and fresh `main`/candidate SHAs. Review evidence and human editorial/media approval records before pruning historical refs. Avoid splitting this work into additional micro-PRs.
