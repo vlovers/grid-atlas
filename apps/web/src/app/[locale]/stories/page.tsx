@@ -40,9 +40,9 @@ export default async function Stories({ params }: Props) {
             <div className={styles.editorialFeatureArt} aria-hidden="true"><MotorsportArt kind={visual?.kind ?? 'velocity'} tone={visual?.tone ?? 'coral'} /></div>
             <div className={styles.editorialFeatureCopy}>
             <span className={styles.eyebrow}>{String(index + 1).padStart(2, '0')} / {story.year}</span>
-            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}><a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a></h3>
+            <h3 style={{ fontSize: '1.5rem', lineHeight: 1.2, margin: 0 }}>{isAiReviewedStory(story.slug) ? <a href={`/${locale}/stories/moments/${story.slug}`}>{copy.title} <span aria-hidden="true">↗</span></a> : copy.title}</h3>
             <p style={{ lineHeight: 1.65, margin: 0 }}>{copy.summary}</p>
-            <p className={styles.editorialFeatureLink}><a href={`/${locale}/stories/moments/${story.slug}`}>{isAiReviewedStory(story.slug) ? (uk ? 'Читати історію' : 'Read story') : (uk ? 'Відкрити чернетку' : 'Open draft')} →</a></p>
+            {isAiReviewedStory(story.slug) && <p className={styles.editorialFeatureLink}><a href={`/${locale}/stories/moments/${story.slug}`}>{uk ? 'Читати історію' : 'Read story'} →</a></p>}
             </div>
           </li>;
         })}
