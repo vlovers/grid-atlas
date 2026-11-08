@@ -89,7 +89,7 @@ This sample **does not generalize** to the other 385 baseline branches. Neither 
 
 Fresh listing shows **396 branches total** (the preceding 395-branch snapshot predates the audit branch for #417). Of these, **15 are open PR heads**, including #417. The active `main` SHA remained `338394f726b83189d112ffa3f71eb49eb75d1aa9` during this check.
 
-This continuation tested **45 distinct additional branch names** using GitHub compare `main...branch`. Six are `behind` with `ahead_by=0` (listed below). The remaining **39** diverged from `main`; their distinct commit ancestry is not proof that the patch is absent, but they must not be deleted without patch-equivalence and evidence review.
+This continuation tested **45 distinct additional branch names** using GitHub compare `main...branch`. Seven are `behind` with `ahead_by=0` (listed below). The remaining **38** diverged from `main`; their distinct commit ancestry is not proof that the patch is absent, but they must not be deleted without patch-equivalence and evidence review.
 
 ### Confirmed ancestry-safe deletion candidates from this batch
 
@@ -103,7 +103,7 @@ This continuation tested **45 distinct additional branch names** using GitHub co
 | `content/coverage-and-senna-consolidation` | 0 | behind |
 | `content/integrate-five-driver-1988-research` | 0 | behind |
 
-**Correction:** Seven, not six, branch names in the three 15-branch comparison groups have zero ahead commits. Additionally `feat/history-atlas-v1` was confirmed earlier, giving **eight unique candidates** across both passes. `beta/encyclopedia` is repeated from the earlier sample and is not counted twice.
+Additionally `feat/history-atlas-v1` was confirmed earlier, giving **eight unique candidates** across both passes. `beta/encyclopedia` is repeated from the earlier sample and is not counted twice.
 
 The remainder include potentially valuable unmerged source and manuscript commits (e.g. `content/circuits-20-completion-audit-20261027` ahead by 95, `content/consolidation-v1-20261026` ahead by 37, and `content/circuits-next25-editorial-20261027` ahead by 36). Treat as preservation candidates rather than garbage, pending patch comparison.
 
