@@ -34,6 +34,6 @@ export function ArchiveStoryJourneys({ kind, locale }: { kind: Kind; locale: Loc
       <p>{story[locale].summary}</p>
       <Link className={styles.read} href={`/stories/moments/${story.slug}`}>{uk ? 'Читати історію' : 'Read the story'} <span aria-hidden="true">↗</span></Link>
     </article>)}</div>
-    <Link className={styles.all} href="/stories">{uk ? 'Усі опубліковані історії' : 'All published stories'} <span aria-hidden="true">↗</span></Link>
+    <Link className={styles.all} href="/stories">{uk ? 'Переглянути всі історії' : 'Browse all stories'} <span aria-hidden="true">↗</span></Link>
   </section>;
 }

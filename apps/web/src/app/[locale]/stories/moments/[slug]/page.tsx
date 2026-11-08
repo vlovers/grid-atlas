@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const story = resolve(slug);
   if ((locale !== 'uk' && locale !== 'en') || !story || !isAiReviewedStory(slug)) notFound();
-  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: isAiReviewedStory(slug), follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
+  return { title: `${story[locale].title} — Grid Atlas`, description: story[locale].summary, robots: { index: true, follow: true }, alternates: { languages: { en: `/en/stories/moments/${slug}`, uk: `/uk/stories/moments/${slug}` } } };
 }
 
 /** Deliberately separate from the existing /stories/[slug] driver routes.
@@ -35,7 +35,6 @@ export default async function EditorialMoment({ params }: Props) {
   if (locale !== 'uk' && locale !== 'en') notFound();
   const story = resolve(slug);
   if (!story || !isAiReviewedStory(slug)) notFound();
-  const published = isAiReviewedStory(slug);
   const uk = locale === 'uk';
   const copy = story[locale];
   const related = relatedEditorialMoments(slug);
@@ -52,8 +51,8 @@ export default async function EditorialMoment({ params }: Props) {
     <article>
       <header className={styles.editorialHero}>
         <div className={styles.editorialHeroArt}>{photo ? <Image src={photo.src} alt="" fill sizes="(max-width: 760px) 100vw, 1040px" className={styles.editorialPhotoBackdrop} /> : <MotorsportArt kind={artKind} tone={artTone} />}</div>
-        <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {published ? (uk ? 'ІСТОРІЯ' : 'FEATURE') : (uk ? 'РЕДАКЦІЙНИЙ АНОНС' : 'EDITORIAL PREVIEW')}</p>
-        <span className={styles.aiReviewedLabel}>{published ? 'AI-reviewed' : (uk ? 'AI-перевірка джерел · чернетка' : 'AI source-check · draft')}</span>
+        <p className={styles.eyebrow}>GRID ATLAS / {story.year} / {uk ? 'ІСТОРІЯ' : 'FEATURE'}</p>
+        <span className={styles.aiReviewedLabel}>AI-reviewed</span>
         <h1 style={{ maxWidth: 'none' }}>{copy.title}</h1>
         <p className={styles.editorialHeroMotif}>{visual?.motif[locale]}</p>
         <p className={styles.lead}>{copy.summary}</p>
@@ -64,7 +63,7 @@ export default async function EditorialMoment({ params }: Props) {
         <a href="#story-races">{uk ? 'Гонки та результати' : 'Races & results'}</a>
       </nav>
       {chapters && <section aria-labelledby="research-chapters" style={{ marginTop: 64, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{published ? (uk ? 'РОЗГОРНУТА ІСТОРІЯ' : 'LONG READ') : (uk ? 'РОЗГОРНУТА ІСТОРІЯ / РЕДАКЦІЙНА ЧЕРНЕТКА' : 'LONG READ / EDITORIAL DRAFT')}</p>
+        <p className={styles.eyebrow}>{uk ? 'РОЗГОРНУТА ІСТОРІЯ' : 'LONG READ'}</p>
         <h2 id="research-chapters">{uk ? 'Історія в деталях' : 'The story in depth'}</h2>
         
         <div className={styles.editorialChapters}>
@@ -135,10 +134,9 @@ export default async function EditorialMoment({ params }: Props) {
             <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{uk ? 'Протокол F1 ↗' : 'F1 classification ↗'}</a>
           </li>)}
         </ul>
-        <p className={styles.note}>{published ? (uk ? 'Дані з офіційних протоколів Формули-1.' : 'Results from official Formula 1 classifications.') : (uk ? 'Дані з офіційного протоколу. Редакційна перевірка всього тексту триває.' : 'Official classification data. The full manuscript still awaits editorial review.')}</p>
+        <p className={styles.note}>{uk ? 'Дані з офіційних протоколів Формули-1.' : 'Results from official Formula 1 classifications.'}</p>
       </section>}
       {slug in editorialReaderQuestions && <details className={styles.provenance} aria-labelledby="reader-questions" style={{ marginTop: 56, borderTop: '1px solid var(--line)', paddingTop: 32 }}>
-        <p className={styles.eyebrow}>{uk ? 'ЗАПИТАННЯ ЧИТАЧІВ' : 'READER QUESTIONS'}</p>
         <summary id="reader-questions">{uk ? 'Що варто знати' : 'What to know'}</summary>
         {editorialReaderQuestions[slug as keyof typeof editorialReaderQuestions].map((item, index) => <details key={index} className={styles.provenance}>
           <summary>{item[locale].question}</summary>
@@ -154,10 +152,6 @@ export default async function EditorialMoment({ params }: Props) {
           </li>)}
         </ul>
       </section>
-      {!published && <details className={styles.provenance} style={{ marginTop: 48 }}>
-        <summary id="preview-status">{uk ? 'Статус матеріалу' : 'Article status'}</summary>
-        <p className={styles.note}>{uk ? 'Стаття проходить фінальну перевірку джерел; публікацію ще не затверджено.' : 'Source review is still in progress; publication has not yet been approved.'}</p>
-      </details>}
       <details className={styles.provenance} style={{ marginTop: 28 }}>
         <summary>{uk ? 'Історичні джерела цієї статті' : 'Historical sources for this story'}</summary>
         <ul>{(editorialEvidenceLinks[slug] ?? []).map((source, index) => <li key={source.url}>

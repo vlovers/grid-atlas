@@ -72,7 +72,7 @@ test('archive and entity story copy identifies AI review without claiming human 
 test('unreviewed editorial manuscripts are not directly served or indexed', () => {
   assert.match(storyRoute, /if \(\(locale !== 'uk' && locale !== 'en'\) \|\| !story \|\| !isAiReviewedStory\(slug\)\) notFound\(\)/);
   assert.match(storyRoute, /if \(!story \|\| !isAiReviewedStory\(slug\)\) notFound\(\)/);
-  assert.match(storyRoute, /robots: \{ index: isAiReviewedStory\(slug\), follow: true \}/);
+  assert.match(storyRoute, /robots: \\{ index: true, follow: true \\}/);
   assert.match(storyRoute, /const chapters = draftArticle\(slug, locale\)/);
   assert.ok(storyRoute.indexOf('if (!story || !isAiReviewedStory(slug)) notFound()') < storyRoute.indexOf('const chapters = draftArticle(slug, locale)'));
 });
@@ -88,4 +88,13 @@ test('related-story recommendations only link AI-reviewed manuscripts', () => {
   assert.match(relatedStories, /item && isAiReviewedStory\(item\.slug\) \? \[item\] : \[\]/);
   assert.match(storyHub, /AI review does not constitute human editorial approval/);
   assert.match(storyHub, /перевірка ШІ не є людським редакційним схваленням/);
+});
+
+
+test('story article uses valid details summary order and no unreachable draft branches', () => {
+  assert.match(storyRoute, /<details className=\{styles\.provenance\} aria-labelledby="reader-questions"[^>]*>\s*<summary id="reader-questions">/);
+  assert.doesNotMatch(storyRoute, /const published =/);
+  assert.doesNotMatch(storyRoute, /!published/);
+  assert.match(journeys, /Browse all stories/);
+  assert.match(journeys, /Переглянути всі історії/);
 });
