@@ -27,17 +27,23 @@ class BranchCleanupTests(unittest.TestCase):
             raise AssertionError(path)
         def paged(repo, resource):
             return branches if resource == "branches" else []
-        with patch.object(module, "api", side_effect=api), patch.object(module, "paged", side_effect=paged), patch.object(module, "list_heads", return_value={"feat/active"}):
+        with patch.object(module, "api", side_effect=api), patch.object(module, "paged", side_effect=paged), patch.object(module, "list_referenced_branches", return_value={"feat/active"}):
             entries = {item["name"]: item for item in module.audit("vlovers/grid-atlas")["entries"]}
         for name in ("main", "feat/active", "release/locked", "feat/unmerged"):
             self.assertEqual(entries[name]["status"], "retain")
         self.assertEqual(entries["feat/merged"]["status"], "candidate")
 
+    def test_open_pr_head_and_base_are_protected(self):
+        pull = {"head": {"ref": "feature", "repo": {"full_name": "vlovers/grid-atlas"}},
+                "base": {"ref": "integration", "repo": {"full_name": "vlovers/grid-atlas"}}}
+        with patch.object(module, "paged", return_value=[pull]):
+            self.assertEqual(module.list_referenced_branches("vlovers/grid-atlas"), {"feature", "integration"})
+
     def test_apply_rejects_excess_targets_before_deletes(self):
         manifest = {"repository": "vlovers/grid-atlas", "base": "main", "entries": [
             {"name": f"feat/{i}", "sha": str(i), "status": "candidate"} for i in range(11)
         ]}
-        with patch.object(module, "api", return_value={"default_branch": "main"}), patch.object(module, "list_heads", return_value=set()):
+        with patch.object(module, "api", return_value={"default_branch": "main"}), patch.object(module, "list_referenced_branches", return_value=set()):
             with self.assertRaisesRegex(RuntimeError, "exceed"):
                 module.apply(manifest)
 
@@ -48,7 +54,7 @@ class BranchCleanupTests(unittest.TestCase):
         def api(path, method="GET"):
             self.assertNotEqual(method, "DELETE")
             return {"default_branch": "main"}
-        with patch.object(module, "api", side_effect=api), patch.object(module, "list_heads", return_value=set()), patch.object(module, "ref_info", return_value={"protected": False, "commit": {"sha": "updated"}}):
+        with patch.object(module, "api", side_effect=api), patch.object(module, "list_referenced_branches", return_value=set()), patch.object(module, "ref_info", return_value={"protected": False, "commit": {"sha": "updated"}}):
             report = module.apply(manifest)
         self.assertEqual(report["deleted"], [])
         self.assertEqual(len(report["skipped"]), 1)
@@ -64,7 +70,7 @@ class BranchCleanupTests(unittest.TestCase):
                 deletes.append(path)
                 return {}
             return {"default_branch": "main"}
-        with patch.object(module, "api", side_effect=api), patch.object(module, "list_heads", return_value=set()), patch.object(module, "ref_info", return_value={"protected": False, "commit": {"sha": "old"}}), patch.object(module, "compare", return_value={"status": "behind", "ahead_by": 0}):
+        with patch.object(module, "api", side_effect=api), patch.object(module, "list_referenced_branches", return_value=set()), patch.object(module, "ref_info", return_value={"protected": False, "commit": {"sha": "old"}}), patch.object(module, "compare", return_value={"status": "behind", "ahead_by": 0}):
             report = module.apply(manifest)
         self.assertEqual(len(report["deleted"]), 1)
         self.assertEqual(deletes, ["repos/vlovers/grid-atlas/git/refs/heads/feat/merged"])
