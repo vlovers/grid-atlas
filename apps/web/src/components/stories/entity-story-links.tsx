@@ -11,7 +11,7 @@ type Locale = 'en' | 'uk';
 const constructorStorySlugs: Record<string, readonly string[]> = {
   ferrari: ['schumacher-ferrari-1996-2000', 'massa-2008', 'villeneuve-arnoux-1979'],
   mclaren: ['lauda-hunt-1976', 'senna-prost-1988-89', 'button-canada-2011'],
-  'brawn-gp': ['brawn-2009'],
+  brawn: ['brawn-2009'],
   'bmw-sauber': ['kubica-bmw-2008'],
   'toro-rosso': ['vettel-monza-2008'],
   'racing-point': ['perez-sakhir-2020'],
