@@ -58,14 +58,15 @@ test('all ten stories have reading paths, scenes and related links', () => {
   }
 });
 
-test('draft route is linked, noindexed and renders full manuscripts', () => {
+test('only AI-reviewed editorial manuscripts are directly served and indexed', () => {
   assert.ok(hub.includes('/stories/moments/'));
-  assert.ok(detail.includes('index: isAiReviewedStory(slug)'));
-  assert.ok(detail.includes('notFound()'));
+  assert.ok(detail.includes("!isAiReviewedStory(slug)) notFound()"));
+  assert.ok(detail.includes('robots: { index: true, follow: true }'));
   assert.ok(detail.includes('draftArticle(slug, locale)'));
   assert.ok(detail.includes('chapters.map('));
   assert.ok(detail.includes('relatedEditorialMoments(slug)'));
-  assert.ok(detail.includes('Source review is still in progress; publication has not yet been approved.'));
+  assert.ok(detail.indexOf('!isAiReviewedStory(slug)) notFound()') < detail.indexOf('draftArticle(slug, locale)'));
+  assert.ok(!detail.includes('Source review is still in progress; publication has not yet been approved.'));
 });
 
 test('all story subjects and race coordinates are complete and consistently mapped', () => {
