@@ -47,7 +47,7 @@ class BranchCleanupTests(unittest.TestCase):
         ]}
         with patch.object(module, "api", return_value={"default_branch": "main"}), patch.object(module, "list_referenced_branches", return_value=set()), patch.object(module, "ref_info", return_value={"commit": {"sha": "base"}}):
             with self.assertRaisesRegex(RuntimeError, "exceed"):
-                module.apply(manifest)
+                module.apply(manifest, {f"feat/{i}" for i in range(11)})
 
     def test_apply_skips_changed_sha(self):
         manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
@@ -60,6 +60,15 @@ class BranchCleanupTests(unittest.TestCase):
             report = module.apply(manifest)
         self.assertEqual(report["deleted"], [])
         self.assertEqual(len(report["skipped"]), 1)
+
+    def test_apply_requires_explicit_candidate_allowlist(self):
+        manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
+            {"name": "feat/merged", "sha": "old", "status": "candidate"},
+            {"name": "feat/other", "sha": "other", "status": "candidate"},
+        ]}
+        with patch.object(module, "api", return_value={"default_branch": "main"}), patch.object(module, "ref_info", return_value={"commit": {"sha": "base"}}), patch.object(module, "list_referenced_branches", return_value=set()):
+            with self.assertRaisesRegex(RuntimeError, "approved"):
+                module.apply(manifest, {"feat/not-in-manifest"})
 
     def test_apply_refuses_stale_main_before_delete(self):
         manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
