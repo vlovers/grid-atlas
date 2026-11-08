@@ -286,7 +286,7 @@ test('long-form narrative appears before the reference-heavy panels on all edito
   assert.ok(detail.indexOf('href="#research-chapters"') < storyStart);
   assert.ok(detail.includes('href="#story-races"'));
   assert.equal(detail.split('aria-labelledby="research-chapters"').length - 1, 1);
-  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unapproved draft must stay noindexed');
+  assert.ok(detail.includes('!isAiReviewedStory(slug)) notFound()'), 'unreviewed manuscripts must be inaccessible');
   const styles = read(directory + 'release.module.css');
   assert.ok(styles.includes('.editorialReadingPaths'));
   assert.ok(styles.includes('.editorialReadingPrimary'));
@@ -320,8 +320,8 @@ test('article chapters do not inject generic reflections after every scene', () 
 test('story pages prioritise racing narratives over generic life lessons and editor-only queues', () => {
   assert.ok(detail.includes('aria-labelledby="research-chapters"'));
   assert.ok(detail.includes('aria-labelledby="reader-questions"'));
-  assert.ok(detail.includes('id="preview-status"'), 'Draft provenance remains accessible in a disclosure');
-  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unapproved drafts must remain noindexed');
+  assert.ok(!detail.includes('id="preview-status"'), 'unreviewed manuscripts must not render draft status');
+  assert.ok(detail.includes('!isAiReviewedStory(slug)) notFound()'), 'unreviewed manuscripts must be inaccessible');
   for (const hidden of [
     'editorialTakeaways', 'editorialReflection', 'editorialFactCheckPrompts',
     'story-takeaways', 'story-reflection', 'Editorial fact-check queue',
@@ -375,8 +375,8 @@ test('every editorial claim is traceable and unpublished copy cannot masquerade 
       assert.equal(entry.reviewChecklist.reviewerSignoff, false, entry.id + ' cannot imply human approval');
     }
   }
-  assert.ok(detail.includes('index: isAiReviewedStory(slug)'), 'unpublished static stories must remain noindexed');
-  assert.ok(detail.includes('AI source-check · draft'), 'draft label remains for invalidated editions');
+  assert.ok(detail.includes('!isAiReviewedStory(slug)) notFound()'), 'unreviewed manuscripts must be inaccessible');
+  assert.ok(!detail.includes('AI source-check · draft'), 'draft label is unreachable on reviewed-only route');
 });
 
 
@@ -386,8 +386,8 @@ test('static AI-reviewed publication remains unapproved until hash-bound bilingu
   assert.ok(registry.includes('edition.enSha256 === editionDigest(slug, \'en\')'), 'changing English chapters must revoke the edition');
   assert.ok(registry.includes('edition.ukSha256 === editionDigest(slug, \'uk\')'), 'changing Ukrainian chapters must revoke the edition');
   assert.ok(registry.includes('edition.reviewRevision') && registry.includes('edition.evidenceRevision'), 'publication needs audit revisions');
-  assert.ok(detail.includes('robots: { index: isAiReviewedStory(slug)'), 'robots status follows the reviewed edition');
-  assert.ok(detail.includes("published ? 'AI-reviewed'"), 'AI-reviewed label only on reviewed edition');
+  assert.ok(detail.includes('robots: { index: true, follow: true }'), 'only reviewed editions can reach indexable metadata');
+  assert.ok(detail.includes('className={styles.aiReviewedLabel}>AI-reviewed'), 'AI-reviewed label appears only after route guard');
 });
 
 
