@@ -5,8 +5,8 @@
 ## Verified repository inventory
 
 - **395 remote branches**, from four paginated GitHub branch-list responses (100 + 100 + 100 + 95). There are substantially more branches than currently open PRs.
-- **14 open pull requests**: #395, #398, #400, #402, #403, #405, #406, #407, #408, #411, #412, #413, #415, #416.
-- **21 open issues** (non-PR) after closing time-boxed issue #145 as superseded; GitHub's issues endpoint combines issues with PRs, so do not double-count them.
+- **14 open pull requests at initial inspection** (before this audit PR #417): #395, #398, #400, #402, #403, #405, #406, #407, #408, #411, #412, #413, #415, #416.
+- **21 open issues** (non-PR) at initial inspection, **20 remaining** after closing time-boxed issue #145 as superseded; GitHub's issues endpoint combines issues with PRs, so do not double-count them.
 - CI history has repeated workflow runs. The latest examined set of five primary checks for PR #413 at 2026-11-08 14:14 UTC succeeded; that does **not** establish green CI for all 14 PRs or `main`.
 - `README.md` states public beta is in preparation, external hosting has not been deployed by this work, and circuit publication is disabled by default. F1DB is pinned to `v2026.17.0`.
 - Current open governance work overlaps: #400 and #415. Do not merge both blindly or create a third conflicting governance implementation. #407 and #416 also both touch CI; require a file-overlap review.
