@@ -273,3 +273,34 @@ At `main` SHA `338394f726b83189d112ffa3f71eb49eb75d1aa9`, compared **78 further 
 ### Decision and handoff
 
 Do not delete any of these 25 branches automatically from this agent. The GitHub connector does not expose DELETE ref, and outside worktree/agent ownership cannot be proven from remote Git history alone. The read-only manifest tool is available; use a maintenance window after independently verifying open PR head/base refs, linked branch consumers, protected rulesets, and fresh `main`/candidate SHAs. Review evidence and human editorial/media approval records before pruning historical refs. Avoid splitting this work into additional micro-PRs.
+
+## Final near-complete manual branch cohorts — 8 November 2026
+
+At `main` SHA `338394f726b83189d112ffa3f71eb49eb75d1aa9`, checked an additional **80 historical refs** across:
+- `feat/senna-*`, Time Machine, SEO, media, UK/EN, F1DB, various historical UI (19 comparisons);
+- `fix/` content/provenance/media/browser repairs (20);
+- `integration/`, `research/`, `review/`, `security/` and `test/` (20);
+- remaining `test/` refs (8);
+- skipped earlier `feat/circuit-*` cohort (13, including one previously checked `feat/circuit-graphics-v3`).
+
+**Zero-ahead refs surfaced in this cohort** (candidate-only; one duplicate follows):
+1. `feat/verified-season-facts-contract`
+2. `fix/driver-result-row-labels`
+3. `integration/boxbox-162-current-main`
+4. `integration/pr395-main-20261105`
+5. `feat/circuit-decade-history-navigation`
+6. `feat/circuit-editorial-forward-port-pr401-20261105`
+7. `feat/interactive-history-batch2` **was already counted in the earlier 78-ref cohort** — do not count twice.
+
+**Deduplicated enumeration:** In this 80-ref pass, the newly found `behind` branches are **six**. There were 19 + 20 + 20 + 8 + 13 = **80 compare calls**, including one prior duplicate `feat/circuit-graphics-v3`. Therefore **79 distinct additional refs** and **six newly identified zero-ahead candidates**; the remaining 73 new refs have divergent histories. Earlier cumulative tally was 302 distinct / 25 zero ahead / 277 divergent. The *current reconciled manual count* is therefore **381 distinct historical refs**, **31 zero-ahead candidates** and **350 divergent refs**.
+
+**Important coverage qualification:** The repository had 396 branches, with 13 open PR head branches and `main`. This leaves 382 non-PR, non-main refs at this snapshot. Manual comparisons cover **381/382** by our reconciled count; there may be one unaccounted historical ref, or a historical sample was double counted. This ledger does **not** assert 100% audit completion until a complete manifest has been generated and deduplicated by branch name. The script has that capability but has not been run against GitHub with `gh` in this session. No branch or source artifacts deleted.
+
+Among current newly compared divergent refs, `security/workflow-pin-guard-reconcile-20261027` is ahead by 59 commits, and `feat/circuit-editorial-publication-boundary-20261029` is ahead by 43. Never treat these as archival trash without reviewing patch-equivalence and unpublished evidence retention.
+
+### Exit criteria for #417
+
+- Automated read-only inventory across **all** remote branches, recording exact `main` SHA and open PR head/base refs, with output stored outside the repository.
+- Cross-check all candidate branches against PRs, worktrees and dependency owners. Prepare batches of at most 10 and record live SHA before any deletion.
+- Ensure an independent review of cleanup utility tests and safe use. The script includes a deliberate opt-in for deletion but no deletion has been executed here.
+- Preserve source provenance, media rights evidence, reviewed-vs-unreviewed publication flags and release gates.
