@@ -20,6 +20,10 @@
 
 See [multi-agent protocol](../docs/engineering/MULTI_AGENT_WORKFLOW.md).
 
+## Documentation impact (governance-only changes)
+
+- Source-of-truth documents affected: list each as `updated`, `not affected + reason`, or `blocked` (see the multi-agent protocol).
+
 ## Verification evidence (actual results, not assumptions)
 
 | Check | PASS / FAIL / N/A / NOT RUN | Command, run link, environment, reason |
