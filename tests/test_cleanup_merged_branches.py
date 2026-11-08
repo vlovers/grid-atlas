@@ -57,7 +57,7 @@ class BranchCleanupTests(unittest.TestCase):
             self.assertNotEqual(method, "DELETE")
             return {"default_branch": "main"}
         with patch.object(module, "api", side_effect=api), patch.object(module, "list_referenced_branches", return_value=set()), patch.object(module, "ref_info", side_effect=lambda repo, name: {"protected": False, "commit": {"sha": "base" if name == "main" else "updated"}}):
-            report = module.apply(manifest)
+            report = module.apply(manifest, {"feat/merged"})
         self.assertEqual(report["deleted"], [])
         self.assertEqual(len(report["skipped"]), 1)
 
@@ -76,7 +76,7 @@ class BranchCleanupTests(unittest.TestCase):
         ]}
         with patch.object(module, "api", return_value={"default_branch": "main"}), patch.object(module, "ref_info", return_value={"commit": {"sha": "changed"}}):
             with self.assertRaisesRegex(RuntimeError, "SHA changed"):
-                module.apply(manifest)
+                module.apply(manifest, {"feat/merged"})
 
     def test_apply_deletes_only_verified_unchanged_ancestor(self):
         manifest = {"repository": "vlovers/grid-atlas", "base": "main", "base_sha": "base", "entries": [
@@ -90,7 +90,7 @@ class BranchCleanupTests(unittest.TestCase):
                 return {}
             return {"default_branch": "main"}
         with patch.object(module, "api", side_effect=api), patch.object(module, "list_referenced_branches", return_value=set()), patch.object(module, "ref_info", side_effect=lambda repo, name: {"protected": False, "commit": {"sha": "base" if name == "main" else "old"}}), patch.object(module, "compare", return_value={"status": "behind", "ahead_by": 0}):
-            report = module.apply(manifest)
+            report = module.apply(manifest, {"feat/merged"})
         self.assertEqual(len(report["deleted"]), 1)
         self.assertEqual(deletes, ["repos/vlovers/grid-atlas/git/refs/heads/feat/merged"])
 
