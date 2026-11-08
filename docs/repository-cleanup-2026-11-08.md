@@ -84,3 +84,27 @@ This sample **does not generalize** to the other 385 baseline branches. Neither 
 - #417 latest checked `foundation` check completed **successfully**; this is not a full application acceptance or release check.
 - Current `main` remained `338394f726b83189d112ffa3f71eb49eb75d1aa9` during follow-up.
 - No merge, force push, mass deletion or CI rerun was made during follow-up.
+
+## Batch branch ancestry review — 8 November 2026, continuation
+
+Fresh listing shows **396 branches total** (the preceding 395-branch snapshot predates the audit branch for #417). Of these, **15 are open PR heads**, including #417. The active `main` SHA remained `338394f726b83189d112ffa3f71eb49eb75d1aa9` during this check.
+
+This continuation tested **45 distinct additional branch names** using GitHub compare `main...branch`. Six are `behind` with `ahead_by=0` (listed below). The remaining **39** diverged from `main`; their distinct commit ancestry is not proof that the patch is absent, but they must not be deleted without patch-equivalence and evidence review.
+
+### Confirmed ancestry-safe deletion candidates from this batch
+
+| Branch | Ahead of main | Classification |
+| --- | ---: | --- |
+| `beta/encyclopedia` | 0 | behind |
+| `beta/historical-integrity` | 0 | behind |
+| `content/champion-chapter-evidence-gates` | 0 | behind |
+| `content/circuit-expansion-3-final-eleven-20261027` | 0 | behind |
+| `content/constructor-2025-evidence-batch` | 0 | behind |
+| `content/coverage-and-senna-consolidation` | 0 | behind |
+| `content/integrate-five-driver-1988-research` | 0 | behind |
+
+**Correction:** Seven, not six, branch names in the three 15-branch comparison groups have zero ahead commits. Additionally `feat/history-atlas-v1` was confirmed earlier, giving **eight unique candidates** across both passes. `beta/encyclopedia` is repeated from the earlier sample and is not counted twice.
+
+The remainder include potentially valuable unmerged source and manuscript commits (e.g. `content/circuits-20-completion-audit-20261027` ahead by 95, `content/consolidation-v1-20261026` ahead by 37, and `content/circuits-next25-editorial-20261027` ahead by 36). Treat as preservation candidates rather than garbage, pending patch comparison.
+
+This verification does **not** authorize deleting these branches while a human or Codex worktree may use them. Re-check live SHA, associated closed PR / open worktrees, and active consumers immediately before deletion. No branches were deleted in this continuation.
