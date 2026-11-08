@@ -36,8 +36,8 @@ const anchors = [
   ],
   [
     "baku",
-    "17th",
-    "17-те"
+    "seventeenth",
+    "сімнадцяте"
   ],
   [
     "jeddah",
@@ -51,8 +51,8 @@ const anchors = [
   ],
   [
     "las-vegas",
-    "different layout",
-    "іншою конфігурацією"
+    "not the old Caesars Palace car-park circuit",
+    "не стара траса на парковці Caesars Palace"
   ]
 ];
 

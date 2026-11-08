@@ -7,7 +7,7 @@ const evidence = new Map([
   ['ain-diab', ['Brooks', 'Lewis-Evans', 'Брукс', 'Льюїса-Еванса']],
   ['aintree', ['lap 69', 'Brooks', '69-му', 'Брукса']],
   ['avus', ['two heats', 'sports-car support race', 'двома заїздами', 'спортивних автомобілів']],
-  ['brands-hatch', ['CV joint', 'lap 23', 'шарнір', '23-му']],
+  ['brands-hatch', ['broken joint', 'lap 23', 'шарнір', '23-му']],
   ['istanbul', ['Liuzzi', 'Turn 8', 'Ліуцці', 'восьмому']],
   ['long-beach', ['lap 77', 'differing recollections', '77-му', 'свідчення']],
   ['marina-bay', ['World Motor Sport Council', 'Alonso', 'Всесвітньої ради', 'Алонсо']],

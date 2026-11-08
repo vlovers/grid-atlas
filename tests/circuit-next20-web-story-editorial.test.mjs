@@ -35,7 +35,7 @@ test('sensitive events and distinct historical layouts remain distinguishable', 
     ['avus', /two heats/, /двома заїздами/],
     ['fuji', /Andretti.*won/, /виграв Маріо Андретті/],
     ['marina-bay', /investigation/, /розслідування/],
-    ['las-vegas', /different layout/, /іншою конфігурацією/],
+    ['las-vegas', /not the old Caesars Palace car-park circuit/, /не стара траса на парковці Caesars Palace/],
     ['zolder', /Saturday qualifying/, /суботній кваліфікації/],
   ]) {
     assert.match(byId.get(id).description.en, en, id + '/en');
