@@ -11,6 +11,7 @@ const driver = read(root + 'components/driver/driver-showcase.tsx');
 const constructor = read(root + 'app/[locale]/constructors/[id]/page.tsx');
 const catalogue = read(root + 'components/catalogue.tsx');
 const storyRoute = read(root + 'app/[locale]/stories/moments/[slug]/page.tsx');
+const storyHub = read(root + 'app/[locale]/stories/page.tsx');
 const sitemap = read(root + 'lib/sitemap.ts');
 const people = read(root + 'components/stories/editorial-people.ts');
 
@@ -73,4 +74,10 @@ test('unreviewed editorial manuscripts are not directly served or indexed', () =
   assert.match(storyRoute, /robots: \{ index: isAiReviewedStory\(slug\), follow: true \}/);
   assert.match(storyRoute, /const chapters = draftArticle\(slug, locale\)/);
   assert.ok(storyRoute.indexOf('if (!story || !isAiReviewedStory(slug)) notFound()') < storyRoute.indexOf('const chapters = draftArticle(slug, locale)'));
+});
+
+test('story hub never links directly to an unpublished manuscript', () => {
+  assert.match(storyHub, /isAiReviewedStory\(story\.slug\) \? <a href=/);
+  assert.match(storyHub, /isAiReviewedStory\(story\.slug\) && <p className=\{styles\.editorialFeatureLink\}>/);
+  assert.doesNotMatch(storyHub, /Відкрити чернетку|Open draft/);
 });
