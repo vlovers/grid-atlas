@@ -80,7 +80,7 @@ def audit(repo, selected=None):
         raise RuntimeError("Default branch moved during inventory; discard the manifest and rerun")
     return {"repository": repo, "base": base, "base_sha": base_sha, "entries": entries}
 
-def apply(manifest, max_delete=10):
+def apply(manifest, approved, max_delete=10):
     repo = validate_repo(manifest["repository"])
     current = api(f"repos/{repo}")
     if manifest["base"] != current["default_branch"]:
@@ -88,14 +88,16 @@ def apply(manifest, max_delete=10):
     if ref_info(repo, current["default_branch"])["commit"]["sha"] != manifest.get("base_sha"):
         raise RuntimeError("Default branch SHA changed since inventory; regenerate and review the manifest")
     open_heads = list_referenced_branches(repo)
-    candidates = [row for row in manifest["entries"] if row.get("status") == "candidate"]
+    candidates = [row for row in manifest["entries"] if row.get("status") == "candidate" and row.get("name") in approved]
+    if not approved or set(approved) != {row["name"] for row in candidates}:
+        raise RuntimeError("Every approved branch must match exactly one manifest candidate")
     if len(candidates) > max_delete:
         raise RuntimeError(f"{len(candidates)} deletions exceed --max-delete={max_delete}; review a smaller manifest")
     if len({row["name"] for row in candidates}) != len(candidates):
         raise RuntimeError("Duplicate candidate names in manifest")
     deleted, skipped = [], []
     for row in manifest["entries"]:
-        if row.get("status") != "candidate":
+        if row.get("status") != "candidate" or row.get("name") not in approved:
             continue
         name, expected = row["name"], row["sha"]
         if name == current["default_branch"] or name in open_heads:
@@ -131,6 +133,7 @@ def main():
     parser.add_argument("--confirm", default="")
     parser.add_argument("--max-delete", type=int, default=10, help="Hard cap per apply invocation (default 10)")
     parser.add_argument("--only", action="append", help="Inspect one name; repeat as needed")
+    parser.add_argument("--approve-branch", action="append", help="Explicitly approve one candidate for deletion; repeat for each branch")
     args = parser.parse_args()
     repo = validate_repo(args.repo)
     if args.apply:
@@ -143,7 +146,9 @@ def main():
             parser.error("Manifest repository mismatch")
         if args.max_delete < 1 or args.max_delete > 20:
             parser.error("--max-delete must be between 1 and 20")
-        report = apply(manifest, max_delete=args.max_delete)
+        if not args.approve_branch or len(set(args.approve_branch)) != len(args.approve_branch):
+            parser.error("--apply requires unique explicit --approve-branch for every intended deletion")
+        report = apply(manifest, set(args.approve_branch), max_delete=args.max_delete)
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
         report = audit(repo, set(args.only) if args.only else None)
