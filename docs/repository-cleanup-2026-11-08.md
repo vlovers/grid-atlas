@@ -205,3 +205,28 @@ After closing #134, the open non-PR issue count becomes **19**, subject to concu
 ## Base-SHA pinning hardening (8 November)
 
 The manifest now records the exact `base_sha` of `main` at inventory time. The tool aborts if `main` changes during inventory, between inventory and deletion, or during the apply loop. This is intentionally strict: if concurrent PRs merge, regenerate and re-review the manifest rather than continuing with stale cleanup assumptions. The existing per-branch SHA and open-PR head/base checks still apply. Test coverage includes the stale-main rejection case. Previous manifests lacking `base_sha` **cannot** be used to delete branches; they must be regenerated. GitHub REST ref deletion remains non-atomic, so no deletion should occur during concurrent branch modifications.
+
+## Larger historical branch review — 8 November 2026
+
+Verified **60 additional distinct branch refs** from the `docs/`, `editorial/`, and `feat/` cohorts against the unchanged `main` commit `338394f726b83189d112ffa3f71eb49eb75d1aa9`. Of those, **58 are diverged with nonzero unique history**, and **two are behind with zero ahead commits**:
+
+- `editorial/three-source-verified-circuit-stories-20261028` — `behind`, ahead 0.
+- `feat/approved-editorial-release-pipeline` — `behind`, ahead 0.
+
+**Updated cumulative ancestry sample:** **152 distinct historical branches** checked (earlier 92 + these 60), of which **11** are zero-ahead deletion candidates and **141** diverge with at least one ahead commit. No branch deletion occurred. Active PR heads and bases must be excluded from any real cleanup independently of ancestry.
+
+Notable preservation risks in this batch:
+
+- `editorial/people-who-changed-f1-20261025` — 262 ahead commits;
+- `editorial/circuit-33-reader-journeys-20261028` — 44 ahead commits;
+- `feat/boxbox-inspired-facts-v1` — 25 ahead commits;
+- numerous `docs/senna-*` and `editorial/20-*` branches have unmerged research history.
+
+Those ahead counts are Git ancestry, **not proof of missing user-visible content** after possible squash merges. They are reasons to perform patch-equivalence and provenance review, not reasons to delete.
+
+### Current integration check
+
+- PR #417 at `9d608170d4acaf25bd77272fba78fcc92644bd17` completed Foundation CI successfully. Newer commits must have their own checks verified.
+- PRs #415 and #416 are **ready for review**, not independently approved or merged. Preserve their branches.
+- Docs/README and cleanup tool fixes remain only in #417, not `main`.
+
