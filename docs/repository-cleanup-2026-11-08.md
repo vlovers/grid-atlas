@@ -159,7 +159,8 @@ cat /tmp/grid-atlas-branch-cleanup-manifest.json
 Only after review of the manifest, cross-checking closed PRs, other worktrees and source-data preservation, an authorized maintainer may explicitly opt in:
 
 ```sh
-python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANCESTORS
+python3 scripts/cleanup-merged-branches.py --apply --confirm DELETE-VERIFIED-ANCESTORS \
+  --approve-branch beta/encyclopedia
 ```
 
 **Warnings:** DELETE refs in GitHub REST is not transactional and has no atomic SHA lease; the script checks SHA immediately before deletion but cannot eliminate all races. Do not use it during concurrent branch updates, or with manifest candidates that have not been separately checked for dependencies. It never deletes protected branches, the default branch or open PR heads, and stops for shifted SHA or non-ancestor commits. The `--apply` operation is irreversible in the normal UI, is capped at 10 targets by default (maximum allowed `--max-delete 20`), and must be performed only after an independent decision. Do not treat "zero ahead commits" as proof that there are no valuable tags, worktrees, linked issues or content-dependency expectations.
@@ -302,3 +303,9 @@ Among current newly compared divergent refs, `security/workflow-pin-guard-reconc
 - Cross-check all candidate branches against PRs, worktrees and dependency owners. Prepare batches of at most 10 and record live SHA before any deletion.
 - Ensure an independent review of cleanup utility tests and safe use. The script includes a deliberate opt-in for deletion but no deletion has been executed here.
 - Preserve source provenance, media rights evidence, reviewed-vs-unreviewed publication flags and release gates.
+
+## Explicit delete-target approval (8 November, final instrument guard)
+
+The tool now requires a **per-branch `--approve-branch` allowlist** in destructive mode, in addition to an existing manifest, explicit `--apply --confirm`, max-10 default/max-20 hard cap, PR head/base exclusions, SHA lease-style checks and exact `main` SHA pinning. The single example above is illustrative **only**, not permission to delete that branch. A full manifest cannot accidentally delete all candidates just because they have zero ahead commits. This control requires fresh independent dependency and worktree review before entering any names. Mock tests include missing/not-in-manifest candidate rejection; latest branch CI must be checked.
+
+**Live full scan limitation:** the connected GitHub API exposes 396 branch refs, but GitHub does not provide a bulk commit-ancestry classification endpoint through this connection. The high-volume parallel comparison attempt exceeded the connector's per-call operation quota; local `git` failed DNS resolving `github.com`. The full `gh`-based manifest **has not been executed** here. Avoid claiming 382/382 refs classified. The existing manual sample is a bounded, dated review. Follow the documented read-only `gh` command in an authenticated maintenance environment for a definitive inventory.
