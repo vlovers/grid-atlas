@@ -69,6 +69,10 @@ on:
       - 'docs/media/pilot-identities.json'
       - '.github/workflows/real-archive.yml'
   workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 permissions:
   contents: read
 jobs:
@@ -102,10 +106,23 @@ jobs:
           pnpm install --frozen-lockfile
           sudo apt-get update && sudo apt-get install -y postgresql-client
       - name: Fetch pinned archive with published checksum
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           mkdir -p /tmp/grid-atlas-f1db
-          curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/checksums_sha256.txt -o /tmp/grid-atlas-f1db/checksums_sha256.txt
-          curl --fail --location --retry 3 --retry-delay 2 https://github.com/f1db/f1db/releases/download/v2026.17.0/f1db-json-splitted.zip -o /tmp/grid-atlas-f1db/f1db-json-splitted.zip
+          for asset in checksums_sha256.txt f1db-json-splitted.zip; do
+            target="/tmp/grid-atlas-f1db/$asset"
+            url="https://github.com/f1db/f1db/releases/download/v2026.17.0/$asset"
+            if ! curl --fail --location --retry 2 --retry-all-errors --retry-delay 3 --connect-timeout 20 --max-time 90 "$url" -o "$target"; then
+              rm -f "$target"
+              echo "::warning::Direct F1DB release download failed for $asset; trying GitHub Releases API"
+              gh release download v2026.17.0 --repo f1db/f1db --pattern "$asset" --dir /tmp/grid-atlas-f1db --clobber
+            fi
+            test -s "$target" || { echo "::error::Missing or empty pinned F1DB asset: $asset"; exit 1; }
+          done
+          cd /tmp/grid-atlas-f1db
+          grep -F 'f1db-json-splitted.zip' checksums_sha256.txt | sha256sum --check --status
       - name: Verify 78 bilingual circuit narratives and generate 25 archival briefs
         run: |
           python3 -m unittest discover -s tests -p 'test_content_factory_circuits.py' -v
