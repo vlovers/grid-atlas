@@ -114,9 +114,9 @@ jobs:
           for asset in checksums_sha256.txt f1db-json-splitted.zip; do
             target="/tmp/grid-atlas-f1db/$asset"
             url="https://github.com/f1db/f1db/releases/download/v2026.17.0/$asset"
-            if ! curl --fail --location --retry 2 --retry-all-errors --retry-delay 3 --connect-timeout 20 --max-time 90 "$url" -o "$target"; then
+            if ! curl --fail --location --retry 2 --retry-all-errors --retry-delay 3 --connect-timeout 20 --max-time 90 "$url" -o "$target" || ! test -s "$target"; then
               rm -f "$target"
-              echo "::warning::Direct F1DB release download failed for $asset; trying GitHub Releases API"
+              echo "::warning::Direct F1DB release download failed or was empty for $asset; trying GitHub Releases API"
               gh release download v2026.17.0 --repo f1db/f1db --pattern "$asset" --dir /tmp/grid-atlas-f1db --clobber
             fi
             test -s "$target" || { echo "::error::Missing or empty pinned F1DB asset: $asset"; exit 1; }
