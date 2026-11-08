@@ -21,6 +21,10 @@ jobs:
           node-version: '24'
       - name: Validate foundation
         run: npm run check
+      - name: Verify agent governance contract
+        run: |
+          node --test test/check-governance.test.mjs
+          node scripts/check-governance.mjs
       - name: Install workspace dependencies for localization tests
         run: |
           corepack enable && corepack prepare pnpm@10.18.3 --activate
