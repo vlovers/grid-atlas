@@ -1,6 +1,6 @@
-# Thirteen more F1 circuit stories — paired EN/UK research drafts
+# Nineteen F1 circuit stories — paired EN/UK research drafts
 
-**Prepared 2026-11-09 · Research only · continuation of PR #412.** This document complements `circuit-seven-historic-reader-drafts-20261106.md`: together they cover the 20 subjects in `circuit-next20-reader-hooks-20261106.json`. The paragraphs below are original editorial drafts, **not newly independently verified claims**. Race results and contemporary accounts linked in the hook registry are leads for checking each assertion; they do not authenticate layouts, turn numbering, images or rights. **`human_approval=false`; `publication_allowed=false`** for every entry. No public data or site code is changed.
+**Prepared 2026-11-09 · Research only · continuation of PR #412.** This document covers the other nineteen subjects in `circuit-next20-reader-hooks-20261106.json` after Ain-Diab, which already has its own draft in `circuit-seven-historic-reader-drafts-20261106.md`. The other six entries in that earlier file are additional historical routes, outside the 20-hook list. The paragraphs below are original editorial drafts, **not newly independently verified claims**. Race results and contemporary accounts linked in the hook registry are leads for checking each assertion; they do not authenticate layouts, turn numbering, images or rights. **`human_approval=false`; `publication_allowed=false`** for every entry. No public data or site code is changed.
 
 ## Aintree · 1957 — A win shared across two drivers
 
@@ -270,7 +270,7 @@ The editorial treatment should be restrained: give the verified sequence, source
 
 ---
 
-## Review gate for all 13 entries
+## Review gate for all 19 entries
 
 - Each named person, result, event chronology and championship implication requires a pinpoint source check; the source URLs and archive race references are held in `circuit-next20-reader-hooks-20261106.json`.
 - EN and UK must be independently edited for factual implications, transliteration, tone and context.
