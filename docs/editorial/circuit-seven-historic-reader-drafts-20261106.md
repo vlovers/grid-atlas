@@ -6,6 +6,10 @@
 
 ## `ain-diab` — 1958
 
+**Reader opening (EN):** Moss won the 1958 Moroccan Grand Prix. Hawthorn took the title. The afternoon at Ain-Diab cannot be reduced to either result: the fatal injuries suffered by Stuart Lewis-Evans cast a shadow over both.
+
+**Читачеві (UK):** Мосс виграв Гран-прі Марокко 1958 року, а чемпіоном став Готорн. Та того дня була й трагедія: Стюарт Льюїс-Еванс дістав смертельні травми. Цю історію не можна звести лише до таблиці очок.
+
 **EN — Ain-Diab: a championship finale on a course still under review**
 
 The 1958 Moroccan Grand Prix brought Formula 1 to Ain-Diab. The official classification records Stirling Moss as the winner after 53 laps. That result fixes the race in the championship record; it does not tell us how every bend was numbered.
@@ -23,6 +27,10 @@ The surviving research does not yet reconcile the competing 11-, 15- and 18-bend
 **Historical geometry / turn-numbering review:** [PR #395 seven-route gate](https://github.com/vlovers/grid-atlas/blob/abdcdf98a799f26a65c10f978267e4220a1eee83/docs/editorial/circuit-experience-v3/20261103_SEVEN_ROUTE_TURN_IDENTITY_ACCEPTANCE_GATE.md). **Release:** unapproved.
 
 ## `clermont-ferrand` — 1972
+
+**Reader opening (EN):** Before the modern short circuit, Charade sent Formula 1 around a long mountain-road course. Stewart's 1972 victory belongs to that earlier landscape, not a present-day corner map.
+
+**Читачеві (UK):** До появи сучасної короткої траси Формула-1 мчала довгим гірським маршрутом Шараду. Перемога Стюарта 1972 року належить саме цій старій конфігурації, а не схемі сьогоднішнього автодрому.
 
 **EN — Charade: the old mountain-road circuit is not the modern short lap**
 
@@ -42,6 +50,10 @@ Historical venue material preserves names such as Manson, Gravenoire and Rosier,
 
 ## `dallas` — 1984
 
+**Reader opening (EN):** Dallas hosted one Formula 1 Grand Prix around Fair Park, and Rosberg won it. Behind the classification was a difficult street race remembered also for Mansell's struggle near the last corner.
+
+**Читачеві (UK):** Даллас прийняв один Гран-прі Формули-1 навколо Fair Park, і переміг Росберг. За протоколом стояла складна міська гонка, яку пам'ятають також через епізод Менселла біля останнього повороту.
+
 **EN — Dallas: one Grand Prix, several ways of counting the bends**
 
 The 1984 Dallas Grand Prix was held around Fair Park, where Keke Rosberg won for Williams-Honda. The race record lists 67 laps. Contemporary reporting also describes Nigel Mansell's struggle at the final corner, one of the few specific bends anchored to a located passage.
@@ -59,6 +71,10 @@ A historical circuit account describes twelve main corners plus chicanes, while 
 **Historical geometry / turn-numbering review:** [PR #395 seven-route gate](https://github.com/vlovers/grid-atlas/blob/abdcdf98a799f26a65c10f978267e4220a1eee83/docs/editorial/circuit-experience-v3/20261103_SEVEN_ROUTE_TURN_IDENTITY_ACCEPTANCE_GATE.md). **Release:** unapproved.
 
 ## `detroit` — 1982
+
+**Reader opening (EN):** Formula 1's first Detroit winner was John Watson. The city streets gave the 1982 race its character: this was no permanent autodrome and no simple lap to reconstruct from later maps.
+
+**Читачеві (UK):** Першим переможцем Гран-прі Детройта став Джон Вотсон. У 1982 році гонку визначали міські вулиці — не постійний автодром і не маршрут, який можна точно відновити за пізнішими схемами.
 
 **EN — Detroit: the first-year street circuit deserves its own map**
 
@@ -78,6 +94,10 @@ That account must not be treated as a numbered plan. Detroit's subsequent race c
 
 ## `pescara` — 1957
 
+**Reader opening (EN):** Moss won at Pescara in 1957 on an extraordinary road circuit. Its scale invites a journey through the places along the route, even while individual historic bends remain hard to locate.
+
+**Читачеві (UK):** Мосс виграв у Пескарі 1957 року на незвичайному дорожньому маршруті. Хочеться пройтися його історичними місцями, навіть якщо точне розташування деяких поворотів досі не встановлено.
+
 **EN — Pescara: a road race that cannot be reconstructed from an older map alone**
 
 The official classification places Stirling Moss first in the 1957 Pescara Grand Prix, after 18 laps. The circuit's long road-route history makes it tempting to borrow earlier Coppa Acerbo diagrams, but those belong to different events and potentially different arrangements.
@@ -96,6 +116,10 @@ The research identifies named local features and a reported event-specific chica
 
 ## `porto` — 1960
 
+**Reader opening (EN):** In 1960, Jack Brabham won a Grand Prix through Porto's Boavista streets. The tramlines and city roads are part of what made that race unlike a permanent-circuit weekend.
+
+**Читачеві (UK):** У 1960 році Джек Бребем переміг на вулицях Boavista у Порту. Трамвайні колії й міські дороги робили цю гонку зовсім не схожою на звичайний вікенд на постійному автодромі.
+
 **EN — Porto: the Boavista streets need a year-specific reading**
 
 The 1960 Portuguese Grand Prix was held on Circuit da Boavista, with Jack Brabham winning after 55 laps. Period route descriptions mention the street sequence and tramline crossings, details that give the course a distinct character without requiring an invented corner chart.
@@ -113,6 +137,10 @@ The archive's turn count and the city's later racing revival are not substitutes
 **Historical geometry / turn-numbering review:** [PR #395 seven-route gate](https://github.com/vlovers/grid-atlas/blob/abdcdf98a799f26a65c10f978267e4220a1eee83/docs/editorial/circuit-experience-v3/20261103_SEVEN_ROUTE_TURN_IDENTITY_ACCEPTANCE_GATE.md). **Release:** unapproved.
 
 ## `sebring` — 1959
+
+**Reader opening (EN):** In December 1959, Bruce McLaren won the United States Grand Prix on Sebring's airfield-derived circuit. The race deserves its own historical route, not a modern plan mistaken for the past.
+
+**Читачеві (UK):** У грудні 1959 року Брюс Макларен виграв Гран-прі США на трасі, що виросла з аеродромних доріг Себрінга. Цей маршрут варто розглядати в його епосі, не підміняючи сучасною схемою.
 
 **EN — Sebring: Formula 1 on the original airfield route**
 
