@@ -18,6 +18,7 @@ import { catalogueParams, pageHref, type CatalogueParams } from '@/lib/catalogue
 import styles from '@/app/[locale]/circuits/[id]/circuit.module.css';
 import { circuitReaderDescription } from './circuit-reader-cohort';
 import { CircuitBiography, CircuitMoments } from './circuit-narrative';
+import { CircuitResultStatistics } from './circuit-result-statistics';
 
 const CIRCUIT_PAGE_SIZE = 25;
 type Circuit = { id: string; name: string; external_id: string; races: number; first_season: number | null; last_season: number | null };
@@ -38,18 +39,13 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
   const reviewed = process.env.CIRCUIT_EDITORIAL_UI_ENABLED === '1'
     ? await getOptionalPublishedCircuitArticle(id, lang) : null;
   const publishedArticle = reviewed?.status === 'available' ? reviewed.value : null;
-  const wins = new Map<string, { id: string; name: string; races: Set<string> }>();
-  for (const race of history) for (const winner of race.winners) {
-    const driver = wins.get(winner.driver_id) ?? { id: winner.driver_id, name: winner.driver_name, races: new Set<string>() };
-    driver.races.add(race.race_id); wins.set(winner.driver_id, driver);
-  }
-  const maxWins = Math.max(0, ...[...wins.values()].map(driver => driver.races.size));
-  const leaders = [...wins.values()].filter(driver => driver.races.size === maxWins).sort((a,b) => a.name.localeCompare(b.name)).slice(0,3);
   const filtered = history.filter(race => !q || `${race.season_year} ${race.race_name} ${race.winners.map(winner => winner.driver_name).join(' ')}`.toLocaleLowerCase(lang).includes(q.toLocaleLowerCase(lang)));
   const visible = filtered.slice(offset, offset + CIRCUIT_PAGE_SIZE);
   const reading = circuitReadingModel(history, layouts, technicalEvents,
     query.race === undefined ? undefined : typeof query.race === 'string' ? query.race : 'invalid');
   const readerEvents = reading.records.flatMap(record => record.event ? [record.event] : []);
+  const maxWins = reading.driverWins[0]?.wins ?? 0;
+  const leaders = reading.driverWins.filter(driver => driver.wins === maxWins).slice(0, 3);
 
   const { crumbs } = await entitySeo('circuits', id, locale);
   const publication = await readCircuitPublication(circuit.external_id, layouts, readerEvents);
@@ -69,6 +65,7 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
       { id: 'circuit-race-journey', label: uk ? 'Гонки різних епох' : 'Races across eras' },
       { id: 'circuit-corners', label: uk ? 'Назви поворотів' : 'Corner names' },
       { id: 'circuit-layouts', label: uk ? 'Зміни траси' : 'Changing layouts' },
+      { id: 'circuit-statistics', label: uk ? 'Пілоти й конструктори' : 'Drivers & constructors' },
       ...(publication.some(asset => asset.kind !== 'circuit-diagram') ? [{ id: 'circuit-photos', label: uk ? 'Фотоархів' : 'Image archive' }] : []),
       { id: 'circuit-history', label: uk ? 'Усі Гран-прі' : 'All Grands Prix' },
       { id: 'circuit-sources', label: uk ? 'Джерела й межі' : 'Sources & limits' },
@@ -77,6 +74,10 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
       {!publishedArticle && <CircuitBiography circuitId={circuit.external_id} locale={lang} allowExpandedEdition={false} />}
       <CircuitRecordIntroduction model={reading} name={circuit.name} locale={lang} />
       {identities[0] && <details open><summary>{uk ? 'Ідентичність у джерелі' : 'Identity in the source'}</summary><IdentityFacts identity={identities[0]} locale={lang} /></details>}
+      <details data-testid="circuit-evidence-gaps"><summary>{uk ? 'Відомості, що потребують додаткових джерел' : 'Facts requiring additional sources'}</summary>
+        <p>{uk ? 'Дата відкриття та сучасний стан траси не вказані в імпортованому записі F1DB. Остання гонка в архіві не означає закриття траси або її остаточний вихід із Формули-1.' : 'Opening date and present-day circuit status are not supplied by the imported F1DB record. The last archived race does not establish closure or a final departure from Formula 1.'}</p>
+        <p>{uk ? 'Кількість секторів, ширина траси, перепад висот, найдовша пряма, зони гальмування й місця для обгонів не встановлені для кожної історичної конфігурації. Без джерела для конкретної епохи ці дані залишаються невідомими.' : 'Sector counts, track width, elevation change, longest straight, braking zones and overtaking locations are not established for every historic layout. These details remain unknown without evidence for the specific period.'}</p>
+      </details>
     </section>
     {publishedArticle && <CircuitReviewedArticle article={publishedArticle} locale={lang} />}
     {!publishedArticle && <p data-testid="circuit-article-status">
@@ -98,6 +99,7 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
         initialRaceId={reading.selected?.event?.race_id ?? 'unavailable'} approvedDiagrams={publication.filter(asset => asset.kind === 'circuit-diagram' &&
           asset.layout?.id === reading.selected?.layout?.external_layout_id && asset.layout!.race_ids.includes(reading.selected?.event?.external_race_id ?? ''))} />
     </section>
+    <CircuitResultStatistics model={reading} locale={lang} />
     {publication.some(asset => asset.kind !== 'circuit-diagram') && <section id="circuit-photos" tabIndex={-1} aria-label={uk ? 'Фотоархів траси' : 'Circuit image archive'}>
       <MediaCollection assets={publication} subject={{ type: 'circuit', id: circuit.external_id }} label={circuit.name} locale={lang} />
     </section>}
@@ -120,7 +122,7 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
     <section id="circuit-sources" tabIndex={-1} aria-labelledby="circuit-sources-title" className={styles.sourceNote}>
       <h2 id="circuit-sources-title">{uk ? 'Звідки починається розповідь' : 'Where the story starts'}</h2>
       <p>{uk ? 'Ідентичності, результати та параметри гонок — із закріпленого випуску F1DB v2026.17.0. Вони не підтверджують причини подій, назви поворотів або точну геометрію. Спільні автомобілі можуть мати кількох переможців; відсутній запис не доводить, що гонки не було. Дані за 2026 рік попередні.' : 'Identities, results and race measurements follow the pinned F1DB release v2026.17.0. They do not establish causes, corner names or exact geometry. Shared drives may have several winning drivers; a missing record does not prove that a race never happened. The 2026 records remain provisional.'}</p>
-      <p>{uk ? 'Схеми й фотографії потребують окремого одобрення прав; наявність файлу або ліцензійної позначки не є таким одобренням. Джерела редакційних тверджень наведено біля самих тверджень, коли статтю опубліковано.' : 'Diagrams and photographs require individual rights approval; an available file or a license label does not grant that approval. Published editorial claims carry their own source links alongside the text.'}</p>
+      <p>{uk ? 'Схеми й фотографії потребують окремої перевірки прав; наявність файлу або ліцензійної позначки не є таким схваленням. Джерела редакційних тверджень наведено біля самих тверджень, коли статтю опубліковано.' : 'Diagrams and photographs require individual rights approval; an available file or a license label does not grant that approval. Published editorial claims carry their own source links alongside the text.'}</p>
       <Link href="/sources">{t('sourcesTitle')} ↗</Link>
     </section>
   </section></>;

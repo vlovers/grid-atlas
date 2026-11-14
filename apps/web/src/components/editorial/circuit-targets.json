@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "source": {
+    "release": "v2026.17.0",
+    "artifact": "f1db-json-splitted.zip",
+    "sha256": "0f1717eaebae646b7ced9ca96f6be3282c1c1d435d0a9d75f2c00f40feb7d2a8"
+  },
+  "selection": "Earliest 72 distinct canonical circuit identities by first recorded race date, then race ID, then circuit ID. All other pages are retained.",
+  "targets": [
+    {
+      "circuit_id": "silverstone",
+      "first_race_id": "1",
+      "first_race_date": "1950-05-13"
+    },
+    {
+      "circuit_id": "monaco",
+      "first_race_id": "2",
+      "first_race_date": "1950-05-21"
+    },
+    {
+      "circuit_id": "indianapolis",
+      "first_race_id": "3",
+      "first_race_date": "1950-05-30"
+    },
+    {
+      "circuit_id": "bremgarten",
+      "first_race_id": "4",
+      "first_race_date": "1950-06-04"
+    },
+    {
+      "circuit_id": "spa-francorchamps",
+      "first_race_id": "5",
+      "first_race_date": "1950-06-18"
+    },
+    {
+      "circuit_id": "reims",
+      "first_race_id": "6",
+      "first_race_date": "1950-07-02"
+    },
+    {
+      "circuit_id": "monza",
+      "first_race_id": "7",
+      "first_race_date": "1950-09-03"
+    },
+    {
+      "circuit_id": "nurburgring",
+      "first_race_id": "13",
+      "first_race_date": "1951-07-29"
+    },
+    {
+      "circuit_id": "pedralbes",
+      "first_race_id": "15",
+      "first_race_date": "1951-10-28"
+    },
+    {
+      "circuit_id": "rouen",
+      "first_race_id": "19",
+      "first_race_date": "1952-07-06"
+    },
+    {
+      "circuit_id": "zandvoort",
+      "first_race_id": "22",
+      "first_race_date": "1952-08-17"
+    },
+    {
+      "circuit_id": "buenos-aires",
+      "first_race_id": "24",
+      "first_race_date": "1953-01-18"
+    },
+    {
+      "circuit_id": "aintree",
+      "first_race_id": "47",
+      "first_race_date": "1955-07-16"
+    },
+    {
+      "circuit_id": "pescara",
+      "first_race_id": "63",
+      "first_race_date": "1957-08-18"
+    },
+    {
+      "circuit_id": "porto",
+      "first_race_id": "73",
+      "first_race_date": "1958-08-24"
+    },
+    {
+      "circuit_id": "ain-diab",
+      "first_race_id": "75",
+      "first_race_date": "1958-10-19"
+    },
+    {
+      "circuit_id": "avus",
+      "first_race_id": "81",
+      "first_race_date": "1959-08-02"
+    },
+    {
+      "circuit_id": "monsanto",
+      "first_race_id": "82",
+      "first_race_date": "1959-08-23"
+    },
+    {
+      "circuit_id": "sebring",
+      "first_race_id": "84",
+      "first_race_date": "1959-12-12"
+    },
+    {
+      "circuit_id": "riverside",
+      "first_race_id": "94",
+      "first_race_date": "1960-11-20"
+    },
+    {
+      "circuit_id": "watkins-glen",
+      "first_race_id": "102",
+      "first_race_date": "1961-10-08"
+    },
+    {
+      "circuit_id": "east-london",
+      "first_race_id": "111",
+      "first_race_date": "1962-12-29"
+    },
+    {
+      "circuit_id": "mexico-city",
+      "first_race_id": "120",
+      "first_race_date": "1963-10-27"
+    },
+    {
+      "circuit_id": "brands-hatch",
+      "first_race_id": "126",
+      "first_race_date": "1964-07-11"
+    },
+    {
+      "circuit_id": "zeltweg",
+      "first_race_id": "128",
+      "first_race_date": "1964-08-23"
+    },
+    {
+      "circuit_id": "clermont-ferrand",
+      "first_race_id": "135",
+      "first_race_date": "1965-06-27"
+    },
+    {
+      "circuit_id": "kyalami",
+      "first_race_id": "151",
+      "first_race_date": "1967-01-02"
+    },
+    {
+      "circuit_id": "bugatti",
+      "first_race_id": "155",
+      "first_race_date": "1967-07-02"
+    },
+    {
+      "circuit_id": "mosport",
+      "first_race_id": "158",
+      "first_race_date": "1967-08-27"
+    },
+    {
+      "circuit_id": "jarama",
+      "first_race_id": "163",
+      "first_race_date": "1968-05-12"
+    },
+    {
+      "circuit_id": "mont-tremblant",
+      "first_race_id": "171",
+      "first_race_date": "1968-09-22"
+    },
+    {
+      "circuit_id": "montjuic",
+      "first_race_id": "175",
+      "first_race_date": "1969-05-04"
+    },
+    {
+      "circuit_id": "hockenheimring",
+      "first_race_id": "192",
+      "first_race_date": "1970-08-02"
+    },
+    {
+      "circuit_id": "spielberg",
+      "first_race_id": "193",
+      "first_race_date": "1970-08-16"
+    },
+    {
+      "circuit_id": "paul-ricard",
+      "first_race_id": "202",
+      "first_race_date": "1971-07-04"
+    },
+    {
+      "circuit_id": "nivelles",
+      "first_race_id": "213",
+      "first_race_date": "1972-06-04"
+    },
+    {
+      "circuit_id": "interlagos",
+      "first_race_id": "222",
+      "first_race_date": "1973-02-11"
+    },
+    {
+      "circuit_id": "zolder",
+      "first_race_id": "225",
+      "first_race_date": "1973-05-20"
+    },
+    {
+      "circuit_id": "anderstorp",
+      "first_race_id": "227",
+      "first_race_date": "1973-06-17"
+    },
+    {
+      "circuit_id": "dijon",
+      "first_race_id": "244",
+      "first_race_date": "1974-07-07"
+    },
+    {
+      "circuit_id": "long-beach",
+      "first_race_id": "267",
+      "first_race_date": "1976-03-28"
+    },
+    {
+      "circuit_id": "fuji",
+      "first_race_id": "280",
+      "first_race_date": "1976-10-24"
+    },
+    {
+      "circuit_id": "jacarepagua",
+      "first_race_id": "299",
+      "first_race_date": "1978-01-29"
+    },
+    {
+      "circuit_id": "montreal",
+      "first_race_id": "313",
+      "first_race_date": "1978-10-08"
+    },
+    {
+      "circuit_id": "imola",
+      "first_race_id": "340",
+      "first_race_date": "1980-09-14"
+    },
+    {
+      "circuit_id": "caesars-palace",
+      "first_race_id": "357",
+      "first_race_date": "1981-10-17"
+    },
+    {
+      "circuit_id": "detroit",
+      "first_race_id": "364",
+      "first_race_date": "1982-06-06"
+    },
+    {
+      "circuit_id": "dallas",
+      "first_race_id": "397",
+      "first_race_date": "1984-07-08"
+    },
+    {
+      "circuit_id": "estoril",
+      "first_race_id": "404",
+      "first_race_date": "1984-10-21"
+    },
+    {
+      "circuit_id": "adelaide",
+      "first_race_id": "420",
+      "first_race_date": "1985-11-03"
+    },
+    {
+      "circuit_id": "jerez",
+      "first_race_id": "422",
+      "first_race_date": "1986-04-13"
+    },
+    {
+      "circuit_id": "hungaroring",
+      "first_race_id": "431",
+      "first_race_date": "1986-08-10"
+    },
+    {
+      "circuit_id": "suzuka",
+      "first_race_id": "451",
+      "first_race_date": "1987-11-01"
+    },
+    {
+      "circuit_id": "phoenix",
+      "first_race_id": "473",
+      "first_race_date": "1989-06-04"
+    },
+    {
+      "circuit_id": "magny-cours",
+      "first_race_id": "507",
+      "first_race_date": "1991-07-07"
+    },
+    {
+      "circuit_id": "catalunya",
+      "first_race_id": "514",
+      "first_race_date": "1991-09-29"
+    },
+    {
+      "circuit_id": "donington",
+      "first_race_id": "535",
+      "first_race_date": "1993-04-11"
+    },
+    {
+      "circuit_id": "aida",
+      "first_race_id": "550",
+      "first_race_date": "1994-04-17"
+    },
+    {
+      "circuit_id": "melbourne",
+      "first_race_id": "582",
+      "first_race_date": "1996-03-10"
+    },
+    {
+      "circuit_id": "sepang",
+      "first_race_id": "645",
+      "first_race_date": "1999-10-17"
+    },
+    {
+      "circuit_id": "bahrain",
+      "first_race_id": "716",
+      "first_race_date": "2004-04-04"
+    },
+    {
+      "circuit_id": "shanghai",
+      "first_race_id": "729",
+      "first_race_date": "2004-09-26"
+    },
+    {
+      "circuit_id": "istanbul",
+      "first_race_id": "745",
+      "first_race_date": "2005-08-21"
+    },
+    {
+      "circuit_id": "valencia",
+      "first_race_id": "797",
+      "first_race_date": "2008-08-24"
+    },
+    {
+      "circuit_id": "marina-bay",
+      "first_race_id": "800",
+      "first_race_date": "2008-09-28"
+    },
+    {
+      "circuit_id": "yas-marina",
+      "first_race_id": "820",
+      "first_race_date": "2009-11-01"
+    },
+    {
+      "circuit_id": "yeongam",
+      "first_race_id": "837",
+      "first_race_date": "2010-10-24"
+    },
+    {
+      "circuit_id": "buddh",
+      "first_race_id": "856",
+      "first_race_date": "2011-10-30"
+    },
+    {
+      "circuit_id": "austin",
+      "first_race_id": "877",
+      "first_race_date": "2012-11-18"
+    },
+    {
+      "circuit_id": "sirius",
+      "first_race_id": "913",
+      "first_race_date": "2014-10-12"
+    },
+    {
+      "circuit_id": "baku",
+      "first_race_id": "943",
+      "first_race_date": "2016-06-19"
+    },
+    {
+      "circuit_id": "mugello",
+      "first_race_id": "1027",
+      "first_race_date": "2020-09-13"
+    }
+  ],
+  "excluded": [
+    {
+      "circuit_id": "portimao",
+      "first_race_id": "1030",
+      "first_race_date": "2020-10-25",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    },
+    {
+      "circuit_id": "lusail",
+      "first_race_id": "1055",
+      "first_race_date": "2021-11-21",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    },
+    {
+      "circuit_id": "jeddah",
+      "first_race_id": "1056",
+      "first_race_date": "2021-12-05",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    },
+    {
+      "circuit_id": "miami",
+      "first_race_id": "1062",
+      "first_race_date": "2022-05-08",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    },
+    {
+      "circuit_id": "las-vegas",
+      "first_race_id": "1100",
+      "first_race_date": "2023-11-19",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    },
+    {
+      "circuit_id": "madring",
+      "first_race_id": "1163",
+      "first_race_date": "2026-09-13",
+      "reason": "First recorded race is later than the 72nd identity; existing page retained."
+    }
+  ]
+}

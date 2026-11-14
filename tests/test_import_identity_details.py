@@ -12,7 +12,7 @@ from import_seasons import ASSET
 
 
 class IdentityDetailsTests(unittest.TestCase):
-    def fixture(self, **changes):
+    def fixture(self, circuit_changes=None, **changes):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
         root = Path(temp.name)
@@ -24,7 +24,7 @@ class IdentityDetailsTests(unittest.TestCase):
             for name, rows in {
                 'seasons': [{'year': 1950}], 'countries': [{'id': 'test', 'name': 'Test Country'}],
                 'drivers': [driver], 'constructors': [{'id': 'constructor', 'countryId': 'test'}],
-                'circuits': [{'id': 'circuit', 'placeName': 'Test City', 'length': 9.9, 'turns': 99}],
+                'circuits': [{'id': 'circuit', 'placeName': 'Test City', 'length': 9.9, 'turns': 99, **(circuit_changes or {})}],
             }.items():
                 bundle.writestr(f'f1db-{name}.json', json.dumps(rows))
         checksums = root / 'checksums.txt'
@@ -58,3 +58,30 @@ class IdentityDetailsTests(unittest.TestCase):
         checksum.write_text('0' * 64 + '  ' + ASSET)
         with self.assertRaisesRegex(ValueError, 'mismatch'):
             read_details(archive, checksum)
+
+    def test_circuit_coordinates_and_previous_names_preserve_source_values(self):
+        rows, _ = read_details(*self.fixture(circuit_changes={
+            'latitude': 0, 'longitude': -180, 'direction': 'ANTI_CLOCKWISE',
+            'previousNames': ['Old Name', 'Earlier Name']}))
+        fields = json.loads(rows[2][-1])
+        self.assertEqual(fields['latitude'], 0)
+        self.assertEqual(fields['longitude'], -180)
+        self.assertEqual(fields['direction'], 'ANTI_CLOCKWISE')
+        self.assertEqual(fields['previous_names'], 'Old Name · Earlier Name')
+        self.assertNotIn('length', fields)
+        self.assertNotIn('turns', fields)
+
+    def test_invalid_circuit_coordinates_and_names_rejected(self):
+        for changes in [{'latitude': True}, {'latitude': 90.01}, {'longitude': -180.1},
+                        {'latitude': '0'}, {'latitude': float('nan')},
+                        {'longitude': float('inf')}, {'previousNames': 'Old Name'},
+                        {'previousNames': ['']}, {'previousNames': [5]}]:
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                read_details(*self.fixture(circuit_changes=changes))
+
+    def test_missing_names_and_coordinates_remain_unknown(self):
+        rows, _ = read_details(*self.fixture(circuit_changes={
+            'latitude': None, 'longitude': None, 'previousNames': []}))
+        fields = json.loads(rows[2][-1])
+        for key in ['latitude', 'longitude', 'previous_names']:
+            self.assertNotIn(key, fields)

@@ -1,10 +1,7 @@
-/** Exact first release batch. Adding another circuit requires its own acceptance. */
-export const CIRCUIT_READER_BATCH = [
-  'interlagos', 'montreal', 'hungaroring', 'zandvoort', 'melbourne',
-  'bahrain', 'shanghai', 'sepang', 'imola', 'spielberg',
-  'catalunya', 'paul-ricard', 'mexico-city', 'hockenheimring', 'nurburgring',
-  'magny-cours', 'watkins-glen', 'buenos-aires', 'kyalami', 'indianapolis',
-] as const;
+import targets from './circuit-targets.json' with { type: 'json' };
+
+/** Engineering scope only: membership never grants editorial or media approval. */
+export const CIRCUIT_READER_BATCH = targets.targets.map(row => row.circuit_id);
 export function isCircuitReaderBatch(id: string) {
   return (CIRCUIT_READER_BATCH as readonly string[]).includes(id);
 }

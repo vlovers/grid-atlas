@@ -20,7 +20,7 @@ for (const locale of ['en', 'uk'] as const) {
       for (const language of ['en', 'uk']) await expect(page.locator(`link[rel="alternate"][hreflang="${language}"]`)).toHaveAttribute('href', `http://127.0.0.1:3351/${language}/${kind}/${identity.id}`);
       const description = await page.locator('meta[name="description"]').getAttribute('content');
       expect(description).toBeTruthy();
-      if (kind === 'circuits') expect(description).toContain(locale === 'en' ? 'historical layout illustrations' : 'зафіксовані конфігурації');
+      if (kind === 'circuits') expect(description).toContain(locale === 'en' ? 'period-specific layout records' : 'записи конфігурацій різних епох');
       if (kind !== 'circuits') {
         const seasons = (await (await request.get(`${api}/${kind}/${identity.id}/seasons`)).json()).data;
         const desc = await page.getByTestId('profile-record-graphic').locator('desc').textContent();
@@ -29,7 +29,9 @@ for (const locale of ['en', 'uk'] as const) {
         const table = page.getByTestId('circuit-history-table');
         await expect(table).toBeVisible();
         await expect(table.locator('tbody tr')).toHaveCount(25);
-        await expect(page.getByTestId('editorial-hero').locator('img')).toHaveAttribute('src', /\/circuit-layouts\/silverstone-[0-9]+\.svg$/);
+        // An upstream SVG file is not an independently cleared publication asset.
+        await expect(page.getByTestId('editorial-hero').locator('img')).toHaveCount(0);
+        await expect(page.getByTestId('circuit-record-cover').locator('svg')).toHaveAttribute('role', 'img');
       }
       for (const width of [1440, 834, 390]) {
         await page.setViewportSize({ width, height: 1000 });
