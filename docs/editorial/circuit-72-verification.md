@@ -93,9 +93,10 @@ the side-by-side name/count presentation. No global table styling changed.
 - No approved third-party photo/diagram assets in `media/publication.json`.
   Original season graphics provide a rights-safe cover for all targets. They
   do not substitute for geographic layout diagrams or historical photographs.
-- Pole flags, fastest-lap times, qualifying records and per-layout lap records
-  are absent from the current imported result schema. The UI states this;
-  winning-race aggregates are not substituted for those records.
+- Fastest-lap times, qualifying records and per-layout lap records remain absent.
+  A [subsequent source-flag import](../data-sources/circuit-result-flags.md) adds
+  recorded pole and fastest-lap classifications, separately from timing records.
+  Winning-race aggregates and fastest-lap flags are not circuit lap records.
 - Genuine independent EN/UK review, enrolled PostgreSQL subjects and protected
   exact-revision publication receipts are absent. The default-off switches and
   publication functions were preserved; no human identity or approval is forged.

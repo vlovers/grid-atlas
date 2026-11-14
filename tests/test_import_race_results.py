@@ -31,7 +31,26 @@ class RaceResultsTests(unittest.TestCase):
         a,c=self.fixture([self.row()])
         rows,digest=read_results(a,c)
         self.assertEqual(len(rows),1)
-        self.assertIn("ON CONFLICT (race_id, position_display_order) DO NOTHING",build_sql(rows,digest))
+        sql=build_sql(rows,digest)
+        self.assertIn("ON CONFLICT (race_id, position_display_order) DO UPDATE SET",sql)
+        self.assertIn('Existing result identity differs',sql)
+        update=sql.split('DO UPDATE SET')[1].split('WHERE')[0]
+        self.assertNotIn('points=',update)
+        self.assertNotIn('driver_id=',update)
+        self.assertIsNone(rows[0][11])
+        self.assertIsNone(rows[0][12])
+
+    def test_flags_preserve_false_true_and_unknown_with_exact_record_digest(self):
+        item=self.row(polePosition=False,fastestLap=True)
+        rows,_=read_results(*self.fixture([item]))
+        self.assertEqual(rows[0][11:13],(False,True))
+        self.assertEqual(rows[0][13],'f1db-races-race-results.json#raceId=1&positionDisplayOrder=1')
+        self.assertEqual(rows[0][14],hashlib.sha256(json.dumps(item,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest())
+
+    def test_flag_strings_numbers_and_arrays_are_rejected(self):
+        for value in ['false',0,1,[],{}]:
+            with self.subTest(value=value),self.assertRaisesRegex(ValueError,'flag'):
+                read_results(*self.fixture([self.row(polePosition=value)]))
 
     def test_duplicate_rejected(self):
         a,c=self.fixture([self.row(),self.row(driverId="fagioli")])

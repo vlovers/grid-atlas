@@ -4,6 +4,9 @@ export type CircuitRaceRecord = {
   race_id: string; season_year: number; round: number; race_date: string | null; race_name: string;
   recorded_drivers: number; recorded_constructors: number; winner_entries: number;
   winners: { driver_id: string; driver_name: string; constructor_id: string; constructor_name: string }[];
+  result_entries?: number; pole_flags_recorded?: number; fastest_lap_flags_recorded?: number;
+  pole_sitters?: CircuitRaceRecord['winners']; fastest_lap_drivers?: CircuitRaceRecord['winners'];
+  classification_sources?: { source_locator: string; content_hash: string; release_tag: string; release_sha256: string }[];
 };
 
 /** Join exact event identities. An available modern layout is never a period fallback. */
@@ -31,19 +34,29 @@ export function circuitReadingModel(history: readonly CircuitRaceRecord[], layou
   const journey = candidates.length > 6 ? [...candidates.slice(0, 2), ...candidates.slice(Math.floor(candidates.length / 2) - 1, Math.floor(candidates.length / 2) + 1), ...candidates.slice(-2)] : candidates;
   const driverWins = new Map<string, { id: string; name: string; races: Set<string> }>();
   const constructorWins = new Map<string, { id: string; name: string; races: Set<string> }>();
-  for (const { race } of records) for (const winner of race.winners) {
+  const driverPoles: typeof driverWins = new Map(), constructorPoles: typeof driverWins = new Map();
+  const driverFastestLaps: typeof driverWins = new Map(), constructorFastestLaps: typeof driverWins = new Map();
+  for (const { race } of records) for (const [classified, drivers, constructors] of [
+    [race.winners, driverWins, constructorWins],
+    [race.pole_sitters ?? [], driverPoles, constructorPoles],
+    [race.fastest_lap_drivers ?? [], driverFastestLaps, constructorFastestLaps],
+  ] as const) for (const winner of classified) {
     for (const [map, id, name] of [
-      [driverWins, winner.driver_id, winner.driver_name],
-      [constructorWins, winner.constructor_id, winner.constructor_name],
+      [drivers, winner.driver_id, winner.driver_name],
+      [constructors, winner.constructor_id, winner.constructor_name],
     ] as const) {
       const entry = map.get(id) ?? { id, name, races: new Set<string>() };
       entry.races.add(race.race_id); map.set(id, entry);
     }
   }
-  const rank = (map: typeof driverWins) => [...map.values()].map(row => ({ id: row.id, name: row.name, wins: row.races.size }))
-    .sort((a, b) => b.wins - a.wins || a.name.localeCompare(b.name, 'en') || a.id.localeCompare(b.id));
+  const rank = (map: typeof driverWins) => [...map.values()].map(row => ({ id: row.id, name: row.name, count: row.races.size }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'en') || a.id.localeCompare(b.id));
+  const coverage = (key: 'pole_flags_recorded' | 'fastest_lap_flags_recorded') => records.filter(({ race }) =>
+    (race.result_entries ?? 0) > 0 && race[key] === race.result_entries).length;
   return { records, chapters, journey, years: [...new Set(records.map(record => record.race.season_year))],
     driverWins: rank(driverWins), constructorWins: rank(constructorWins),
+    poles: { drivers: rank(driverPoles), constructors: rank(constructorPoles), coveredRaces: coverage('pole_flags_recorded') },
+    fastestLaps: { drivers: rank(driverFastestLaps), constructors: rank(constructorFastestLaps), coveredRaces: coverage('fastest_lap_flags_recorded') },
     selected: requestedRace ? records.find(record => record.race.race_id === requestedRace) ?? null : records.at(-1) ?? null,
     unknownRace: Boolean(requestedRace && !records.some(record => record.race.race_id === requestedRace)) };
 }

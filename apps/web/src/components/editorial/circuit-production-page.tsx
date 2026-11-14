@@ -44,8 +44,8 @@ export async function CircuitProductionPage({ circuit, id, locale, query }: Prop
   const reading = circuitReadingModel(history, layouts, technicalEvents,
     query.race === undefined ? undefined : typeof query.race === 'string' ? query.race : 'invalid');
   const readerEvents = reading.records.flatMap(record => record.event ? [record.event] : []);
-  const maxWins = reading.driverWins[0]?.wins ?? 0;
-  const leaders = reading.driverWins.filter(driver => driver.wins === maxWins).slice(0, 3);
+  const maxWins = reading.driverWins[0]?.count ?? 0;
+  const leaders = reading.driverWins.filter(driver => driver.count === maxWins).slice(0, 3);
 
   const { crumbs } = await entitySeo('circuits', id, locale);
   const publication = await readCircuitPublication(circuit.external_id, layouts, readerEvents);
