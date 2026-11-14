@@ -107,8 +107,25 @@ test('win statistics count shared drivers individually and each constructor once
   const races = [{ ...history[0], winners: [...shared, shared[0]] },
     { ...history[1], winners: [shared[0]] }, { ...history[0], winners: shared }];
   const model = circuitReadingModel(races, layouts, events);
-  assert.deepEqual(model.driverWins, [{ id: 'a', name: 'Alpha', wins: 2 }, { id: 'b', name: 'Beta', wins: 1 }]);
-  assert.deepEqual(model.constructorWins, [{ id: 'c', name: 'Car', wins: 2 }]);
+  assert.deepEqual(model.driverWins, [{ id: 'a', name: 'Alpha', count: 2 }, { id: 'b', name: 'Beta', count: 1 }]);
+  assert.deepEqual(model.constructorWins, [{ id: 'c', name: 'Car', count: 2 }]);
   assert.deepEqual(circuitReadingModel([], [], []).constructorWins, []);
   assert.deepEqual(circuitReadingModel(history, layouts, events).driverWins, []);
+});
+
+test('pole and fastest-lap flags retain ties, deduplicate constructors and report incomplete coverage', () => {
+  const a = { driver_id: 'a', driver_name: 'Alpha', constructor_id: 'c', constructor_name: 'Car' };
+  const b = { driver_id: 'b', driver_name: 'Beta', constructor_id: 'c', constructor_name: 'Car' };
+  const races = [{ ...history[0], result_entries: 2, pole_flags_recorded: 2, fastest_lap_flags_recorded: 2,
+    pole_sitters: [a], fastest_lap_drivers: [a, b, a] },
+  { ...history[1], result_entries: 2, pole_flags_recorded: 2, fastest_lap_flags_recorded: 0,
+    pole_sitters: [b], fastest_lap_drivers: [] }];
+  const model = circuitReadingModel(races, layouts, events);
+  assert.deepEqual(model.poles.drivers, [{ id: 'a', name: 'Alpha', count: 1 }, { id: 'b', name: 'Beta', count: 1 }]);
+  assert.deepEqual(model.poles.constructors, [{ id: 'c', name: 'Car', count: 2 }]);
+  assert.equal(model.poles.coveredRaces, 2);
+  assert.equal(model.fastestLaps.coveredRaces, 1);
+  assert.equal(model.fastestLaps.drivers.length, 2);
+  assert.deepEqual(model.fastestLaps.constructors, [{ id: 'c', name: 'Car', count: 1 }]);
+  assert.equal(circuitReadingModel(history, layouts, events).poles.coveredRaces, 0);
 });

@@ -212,6 +212,35 @@ test('circuit history exposes shared-car winners without inventing a single winn
   assert.equal(history[0].recorded_constructors, 1);
   assert.equal(history[0].winner_entries, 2);
   assert.equal(history[0].winners.length, 2);
+  assert.equal(history[0].result_entries, 2);
+  assert.equal(history[0].pole_flags_recorded, 0);
+  assert.equal(history[0].fastest_lap_flags_recorded, 0);
+  assert.deepEqual(history[0].pole_sitters, []);
+  assert.deepEqual(history[0].fastest_lap_drivers, []);
   assert.deepEqual(await get('circuits/2/history'), []);
   assert.equal((await fetch(`${base}/api/circuits/invalid/history`)).status, 400);
+});
+
+test('circuit classifications expose source flags and ties while retaining unknown coverage', async () => {
+  try {
+    await db.query(`UPDATE historical_race_results SET pole_position=(driver_id=1),
+      fastest_lap=CASE WHEN driver_id=1 THEN true ELSE NULL END,flags_release_id=1,
+      flags_source_locator='synthetic/result/'||position_display_order,flags_content_hash=repeat('b',64)
+      WHERE race_id=1`);
+    let [race] = await get('circuits/1/history');
+    assert.equal(race.pole_flags_recorded, 2);
+    assert.equal(race.fastest_lap_flags_recorded, 1);
+    assert.equal(race.pole_sitters.length, 1);
+    assert.equal(race.fastest_lap_drivers.length, 1);
+    assert.equal(race.classification_sources.length, 1);
+    assert.equal(race.classification_sources[0].content_hash, 'b'.repeat(64));
+    await db.query('UPDATE historical_race_results SET fastest_lap=true WHERE race_id=1');
+    [race] = await get('circuits/1/history');
+    assert.equal(race.fastest_lap_drivers.length, 2);
+    assert.equal(race.fastest_lap_flags_recorded, 2);
+    assert.equal(race.classification_sources.length, 2);
+  } finally {
+    await db.query(`UPDATE historical_race_results SET pole_position=NULL,fastest_lap=NULL,
+      flags_release_id=NULL,flags_source_locator=NULL,flags_content_hash=NULL WHERE race_id=1`);
+  }
 });

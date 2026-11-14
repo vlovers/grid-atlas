@@ -443,12 +443,29 @@ export class HistoricalController {
       COUNT(DISTINCT rr.driver_id)::int AS recorded_drivers,
       COUNT(DISTINCT rr.constructor_id)::int AS recorded_constructors,
       COUNT(DISTINCT rr.driver_id) FILTER (WHERE rr.position_number = 1)::int AS winner_entries,
+      COUNT(rr.id)::int AS result_entries,
+      COUNT(rr.pole_position)::int AS pole_flags_recorded,
+      COUNT(rr.fastest_lap)::int AS fastest_lap_flags_recorded,
+      COALESCE(json_agg(DISTINCT jsonb_build_object(
+        'driver_id', d.id::text, 'driver_name', d.display_name,
+        'constructor_id', c.id::text, 'constructor_name', c.display_name
+      )) FILTER (WHERE rr.pole_position IS TRUE), '[]'::json) AS pole_sitters,
+      COALESCE(json_agg(DISTINCT jsonb_build_object(
+        'driver_id', d.id::text, 'driver_name', d.display_name,
+        'constructor_id', c.id::text, 'constructor_name', c.display_name
+      )) FILTER (WHERE rr.fastest_lap IS TRUE), '[]'::json) AS fastest_lap_drivers,
+      COALESCE(jsonb_agg(DISTINCT jsonb_build_object(
+        'source_locator', rr.flags_source_locator, 'content_hash', rr.flags_content_hash,
+        'release_tag', flags_release.release_tag, 'release_sha256', flags_release.sha256
+      )) FILTER (WHERE rr.flags_release_id IS NOT NULL AND
+        (rr.pole_position IS TRUE OR rr.fastest_lap IS TRUE)), '[]'::jsonb) AS classification_sources,
       COALESCE(json_agg(DISTINCT jsonb_build_object(
         'driver_id', d.id::text, 'driver_name', d.display_name,
         'constructor_id', c.id::text, 'constructor_name', c.display_name
       )) FILTER (WHERE rr.position_number = 1), '[]'::json) AS winners
       FROM historical_races r
       LEFT JOIN historical_race_results rr ON rr.race_id = r.id
+      LEFT JOIN source_releases flags_release ON flags_release.id=rr.flags_release_id
       LEFT JOIN historical_drivers d ON d.id = rr.driver_id
       LEFT JOIN historical_constructors c ON c.id = rr.constructor_id
       WHERE r.circuit_id = $1
