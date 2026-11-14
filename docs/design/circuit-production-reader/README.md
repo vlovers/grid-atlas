@@ -1,11 +1,22 @@
-# First twenty: production reader implementation
+# Circuit production reader
+
+The reader now covers the [72 canonical targets](../../editorial/circuit-72-completion.md)
+selected by first recorded race date in pinned F1DB. The six later identities keep
+their existing pages. The expansion reuses the first-twenty implementation below,
+adds distinct driver/constructor winning-race tables and source-reported
+coordinates, direction and historical names, and explicitly describes missing
+technical and identity evidence. It grants no editorial or media approval.
+See the [current verification and publication blockers](../../editorial/circuit-72-verification.md).
+
+## Original twenty-circuit integration evidence
 
 The exact [twenty-circuit batch](COHORT.md) now has expanded English/Ukrainian
 candidate histories and forty source-linked historical moments. The actual
 production circuit routes have a coordinated reader with exact-event layout
 selection, era navigation, result/driver/constructor links, source details,
 original season illustrations and protected published-article support.
-Other 58 circuits retain their existing page presentation.
+At that integration checkpoint, the other 58 retained their previous presentation;
+the 72-target expansion above supersedes that presentation scope.
 
 ## Integration and boundaries
 

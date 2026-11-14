@@ -16,10 +16,18 @@ const labels = {
   second_nationality: ['Друга національність за джерелом', 'Second source-reported nationality'],
   country: ['Країна за джерелом', 'Source-reported country'], place_name: ['Розташування', 'Location'],
   circuit_type: ['Тип траси за джерелом', 'Source-reported circuit type'],
+  previous_names: ['Попередні назви за джерелом', 'Source-reported previous names'],
+  latitude: ['Широта за джерелом', 'Source-reported latitude'],
+  longitude: ['Довгота за джерелом', 'Source-reported longitude'],
+  direction: ['Напрямок за джерелом', 'Source-reported direction'],
 } as const;
 const circuitTypes: Record<string, [string, string]> = {
-  STREET: ['Вулична', 'Street'], ROAD: ['Стаціонарна', 'Road'],
+  STREET: ['Вулична', 'Street'], ROAD: ['Дорожня', 'Road'],
   RACE: ['Стаціонарна', 'Race'], HYBRID: ['Комбінована', 'Hybrid'],
+};
+const directions: Record<string, [string, string]> = {
+  CLOCKWISE: ['За годинниковою стрілкою', 'Clockwise'],
+  ANTI_CLOCKWISE: ['Проти годинникової стрілки', 'Anticlockwise'],
 };
 
 /** Only allowlisted source fields; no empty rows or inferred historical validity. */
@@ -33,7 +41,8 @@ export function IdentityFacts({ identity, locale }: { identity: IdentityDetails;
         const value = identity.fields[key];
         if (value === undefined || value === null || value === '') return null;
         return <div key={key}><dt>{label[index]}</dt><dd>{key === 'circuit_type'
-          ? circuitTypes[String(value)]?.[index] ?? value : value}</dd></div>;
+          ? circuitTypes[String(value)]?.[index] ?? value
+          : key === 'direction' ? directions[String(value)]?.[index] ?? value : value}</dd></div>;
       })}
     </dl>
     <p>{locale === 'uk'

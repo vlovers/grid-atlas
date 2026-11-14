@@ -29,7 +29,21 @@ export function circuitReadingModel(history: readonly CircuitRaceRecord[], layou
     .filter((record, index, all): record is (typeof records)[number] => Boolean(record) && all.findIndex(item => item?.race.race_id === record!.race.race_id) === index)
     .sort((a, b) => a.race.season_year - b.race.season_year || a.race.round - b.race.round);
   const journey = candidates.length > 6 ? [...candidates.slice(0, 2), ...candidates.slice(Math.floor(candidates.length / 2) - 1, Math.floor(candidates.length / 2) + 1), ...candidates.slice(-2)] : candidates;
+  const driverWins = new Map<string, { id: string; name: string; races: Set<string> }>();
+  const constructorWins = new Map<string, { id: string; name: string; races: Set<string> }>();
+  for (const { race } of records) for (const winner of race.winners) {
+    for (const [map, id, name] of [
+      [driverWins, winner.driver_id, winner.driver_name],
+      [constructorWins, winner.constructor_id, winner.constructor_name],
+    ] as const) {
+      const entry = map.get(id) ?? { id, name, races: new Set<string>() };
+      entry.races.add(race.race_id); map.set(id, entry);
+    }
+  }
+  const rank = (map: typeof driverWins) => [...map.values()].map(row => ({ id: row.id, name: row.name, wins: row.races.size }))
+    .sort((a, b) => b.wins - a.wins || a.name.localeCompare(b.name, 'en') || a.id.localeCompare(b.id));
   return { records, chapters, journey, years: [...new Set(records.map(record => record.race.season_year))],
+    driverWins: rank(driverWins), constructorWins: rank(constructorWins),
     selected: requestedRace ? records.find(record => record.race.race_id === requestedRace) ?? null : records.at(-1) ?? null,
     unknownRace: Boolean(requestedRace && !records.some(record => record.race.race_id === requestedRace)) };
 }

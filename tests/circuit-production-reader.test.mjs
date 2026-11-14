@@ -9,6 +9,7 @@ import { readCircuitPublication } from '../apps/web/src/components/media/circuit
 import { CIRCUIT_READER_BATCH, isCircuitReaderBatch } from '../apps/web/src/components/editorial/circuit-reader-cohort.ts';
 import { mediaFingerprint } from '../apps/web/src/components/media/registry.ts';
 import fixture from '../apps/api/test/support/circuit-reader-media.cjs';
+import targets from '../apps/web/src/components/editorial/circuit-targets.json' with { type: 'json' };
 
 const layouts = [{ id: '1', external_layout_id: 'fixture-old', length_km: '4.185', turns: 14 }, { id: '2', external_layout_id: 'fixture-new', length_km: '3.1', turns: 12 }];
 const history = [{ race_id: '1', season_year: 1967, round: 1, winners: [] }, { race_id: '2', season_year: 1970, round: 2, winners: [] }];
@@ -91,8 +92,23 @@ test('approved local media works for both repository-root and apps/web productio
   } finally { await rm(folder, { recursive: true, force: true }); }
 });
 
-test('reader scope is exactly the requested twenty and does not enroll the other fifty-eight', () => {
-  assert.deepEqual([...CIRCUIT_READER_BATCH], ['interlagos', 'montreal', 'hungaroring', 'zandvoort', 'melbourne', 'bahrain', 'shanghai', 'sepang', 'imola', 'spielberg', 'catalunya', 'paul-ricard', 'mexico-city', 'hockenheimring', 'nurburgring', 'magny-cours', 'watkins-glen', 'buenos-aires', 'kyalami', 'indianapolis']);
+test('reader scope covers 72 canonical targets and retains the six other pages on their existing route', () => {
+  assert.equal(CIRCUIT_READER_BATCH.length, 72);
+  assert.equal(new Set(CIRCUIT_READER_BATCH).size, 72);
+  assert.deepEqual([...CIRCUIT_READER_BATCH], targets.targets.map(row => row.circuit_id));
   assert.equal(CIRCUIT_READER_BATCH.every(isCircuitReaderBatch), true);
-  for (const id of ['monza', 'silverstone', 'dallas', '', 'Interlagos']) assert.equal(isCircuitReaderBatch(id), false);
+  for (const id of ['monza', 'silverstone', 'dallas', 'mugello']) assert.equal(isCircuitReaderBatch(id), true);
+  for (const id of [...targets.excluded.map(row => row.circuit_id), '', 'Interlagos']) assert.equal(isCircuitReaderBatch(id), false);
+});
+
+test('win statistics count shared drivers individually and each constructor once per race', () => {
+  const shared = [{ driver_id: 'a', driver_name: 'Alpha', constructor_id: 'c', constructor_name: 'Car' },
+    { driver_id: 'b', driver_name: 'Beta', constructor_id: 'c', constructor_name: 'Car' }];
+  const races = [{ ...history[0], winners: [...shared, shared[0]] },
+    { ...history[1], winners: [shared[0]] }, { ...history[0], winners: shared }];
+  const model = circuitReadingModel(races, layouts, events);
+  assert.deepEqual(model.driverWins, [{ id: 'a', name: 'Alpha', wins: 2 }, { id: 'b', name: 'Beta', wins: 1 }]);
+  assert.deepEqual(model.constructorWins, [{ id: 'c', name: 'Car', wins: 2 }]);
+  assert.deepEqual(circuitReadingModel([], [], []).constructorWins, []);
+  assert.deepEqual(circuitReadingModel(history, layouts, events).driverWins, []);
 });

@@ -10,6 +10,7 @@ import datetime
 import hashlib
 import io
 import json
+import math
 import os
 from pathlib import Path
 import subprocess
@@ -22,7 +23,9 @@ FIELDS = {
                "permanentNumber": "permanent_number", "dateOfBirth": "date_of_birth",
                "dateOfDeath": "date_of_death", "placeOfBirth": "place_of_birth"},
     "constructor": {"fullName": "full_name"},
-    "circuit": {"fullName": "full_name", "placeName": "place_name", "type": "circuit_type"},
+    "circuit": {"fullName": "full_name", "placeName": "place_name", "type": "circuit_type",
+                "direction": "direction", "latitude": "latitude", "longitude": "longitude",
+                "previousNames": "previous_names"},
 }
 
 
@@ -56,7 +59,17 @@ def read_details(archive, checksums):
                     value = row.get(source)
                     if value is None:
                         continue
-                    if target == "permanent_number":
+                    if target in ("latitude", "longitude"):
+                        bound = 90 if target == "latitude" else 180
+                        if type(value) not in (int, float) or not math.isfinite(value) or not -bound <= value <= bound:
+                            raise ValueError(f"Invalid {target}: {key}")
+                    elif target == "previous_names":
+                        if not isinstance(value, list) or any(not isinstance(name, str) or not name.strip() for name in value):
+                            raise ValueError(f"Invalid {target}: {key}")
+                        if not value:
+                            continue
+                        value = ' · '.join(value)
+                    elif target == "permanent_number":
                         if not isinstance(value, str) or not value.isascii() or not value.isdigit() or not 0 <= int(value) <= 99:
                             raise ValueError(f"Invalid {target}: {key}")
                     elif not isinstance(value, str) or not value.strip():

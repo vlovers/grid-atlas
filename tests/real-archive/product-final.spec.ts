@@ -64,8 +64,11 @@ for(const locale of ['en','uk']as const){
   const event=events.find((e:{season_year:number})=>e.season_year===1987);expect(event).toBeTruthy();
   await page.goto(`/${locale}/circuits/${circuit.id}`);
   const experience=page.getByTestId('circuit-experience'),records=experience.getByTestId('circuit-event-data');
-  await expect(records).not.toHaveAttribute('open');
+  // The reader opens the exact selected event, while keeping keyboard disclosure.
+  await expect(records).toHaveAttribute('open','');
   await records.locator(':scope > summary').focus();await page.keyboard.press('Enter');
+  await expect(records).not.toHaveAttribute('open');
+  await page.keyboard.press('Enter');
   await expect(records.getByRole('table')).toBeVisible();
   await chooseCircuitOption(experience.getByTestId('circuit-year-select'), '1987');
   await expect(records).toHaveAttribute('open','');
