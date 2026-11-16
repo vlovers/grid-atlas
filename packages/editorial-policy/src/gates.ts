@@ -86,6 +86,13 @@ export function sourceGate(item: ContentItem): GateResult {
 
 type ClaimCheck = { failures: Finding[]; unverifiable: Finding[] };
 
+/** Returns a description when EN and UK name different archive entities, otherwise null. */
+function entitySetsDiffer(ctx: PolicyContext, en: string, uk: string): string | null {
+  const a = new Set(ctx.entities(en, 'en')), b = new Set(ctx.entities(uk, 'uk'));
+  const onlyEn = [...a].filter(k => !b.has(k)), onlyUk = [...b].filter(k => !a.has(k));
+  return onlyEn.length || onlyUk.length ? `only EN: [${onlyEn.join(', ')}]; only UK: [${onlyUk.join(', ')}]` : null;
+}
+
 /** Checks one claim's evidence deterministically. Never trusts the verification label alone. */
 export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext): ClaimCheck {
   const failures: Finding[] = [], unverifiable: Finding[] = [];
@@ -120,9 +127,15 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       const actual = typeof found === 'object' ? found.value : found;
       const mentions = typeof found === 'object' ? found.mentions : [];
       // A scoped record (e.g. a race belongs to one circuit and one season) may only back claims about that scope.
+      // Unscoped values fail closed: without a scope nothing ties the record to the claim's subject.
       const scope = typeof found === 'object' ? found.scope : undefined;
-      if (scope && !scope.includes(`${claim.entity?.type}:${claim.entity?.id}`))
+      if (!scope?.length) { fail('dataset_record_unscoped', `${ref.record}.${ref.field} carries no scope.`); continue; }
+      if (!scope.includes(`${claim.entity?.type}:${claim.entity?.id}`))
         { fail('dataset_record_out_of_scope', `${ref.record} belongs to ${scope.join(', ')}, not ${claim.entity?.type}:${claim.entity?.id}.`); continue; }
+      // A record scoped to a season backs only a sentence that states that season.
+      const seasons = scope.filter(s => s.startsWith('season:')).map(s => s.slice(7));
+      if (seasons.length && !seasons.some(year => numberTokens(claim.statement?.en ?? '').includes(year)))
+        { fail('dataset_season_not_stated', `${ref.record} is from ${seasons.join('/')}, which the statement does not state.`); continue; }
       const [recordKind] = ref.record.split(':');
       if (recordKind === 'race') races.add(ref.record);
       if (evidence.value === undefined || evidence.value === null || String(evidence.value).trim() === '')
@@ -150,6 +163,10 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const backedEntities = new Set(supportingText.flatMap(text => [...ctx.entities(text, 'en'), ...ctx.entities(text, 'uk')]));
   for (const locale of LOCALES) for (const key of new Set(ctx.entities(claim.statement?.[locale] ?? '', locale)))
     if (!backedEntities.has(key)) fail('claim_entity_unsupported', `"${key}" (${locale}) is not named by any supporting evidence.`);
+  // Both languages must name the same entities. A recogniser that cannot read one language
+  // (e.g. no reviewed Ukrainian name table) therefore fails closed for any claim naming someone.
+  const differ = entitySetsDiffer(ctx, claim.statement?.en ?? '', claim.statement?.uk ?? '');
+  if (differ) fail('claim_entities_differ_across_locales', differ);
 
   if (claim.claim_type === 'quotation') {
     const quoted = (claim.statement?.en ?? '').match(/"([^"]{8,})"|“([^”]{8,})”/);
@@ -220,6 +237,8 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
     }));
     for (const locale of LOCALES) for (const key of new Set(ctx.entities(block.body?.[locale] ?? '', locale))) if (!named.has(key))
       f.push({ code: 'block_entity_unclaimed', target: `${block.block_id}.${locale}`, message: `"${key}" in the text is not named by any cited claim.` });
+    const differ = entitySetsDiffer(ctx, block.body?.en ?? '', block.body?.uk ?? '');
+    if (differ) f.push({ code: 'block_entities_differ_across_locales', target: block.block_id, message: differ });
   }
   const quarantined = [...new Set(u.map(finding => finding.target))];
   const status: GateStatus = f.length ? 'fail' : u.length ? 'unverifiable' : 'pass';
