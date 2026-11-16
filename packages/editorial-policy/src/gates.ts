@@ -4,8 +4,8 @@ import type {
   PolicyContext, SourceEvidence, SourceSnapshot,
 } from './model.ts';
 import {
-  boilerplateHits, cyrillicShare, hasPlaceholder, looksLikeInstruction, normalizeText, numberTokens,
-  paragraphs, significantNumbers, similarity,
+  boilerplateHits, containsPhrase, cyrillicShare, hasPlaceholder, looksLikeInstruction, numberTokens,
+  paragraphs, registrableDomain, significantNumbers, similarity,
 } from './text.ts';
 
 const LOCALES: Locale[] = ['en', 'uk'];
@@ -19,8 +19,9 @@ const isHttps = (value: unknown) => {
 };
 const isSourceEvidence = (e: object): e is SourceEvidence => 'source_id' in e;
 const publisherKey = (source: SourceSnapshot) => {
-  try { return new URL(source.url).hostname.replace(/^www\./, ''); } catch { return source.publisher; }
+  try { return registrableDomain(new URL(source.url).hostname); } catch { return source.publisher.trim().toLowerCase(); }
 };
+const time = (value: string | null | undefined) => (value ? Date.parse(value) : Number.NaN);
 /** Two agent records are the same actor if either the identity or the execution matches. */
 export const sameActor = (a: AgentRef | null, b: AgentRef | null) =>
   Boolean(a && b && (a.id === b.id || a.run_id === b.run_id));
@@ -60,10 +61,15 @@ export function schemaGate(item: ContentItem): GateResult {
   return result('schema', f);
 }
 
-/** Integrity of stored source snapshots. Instruction-like text is surfaced, never obeyed. */
+/**
+ * Integrity of stored source snapshots. Instruction-like text is surfaced, never obeyed.
+ * The writer may not capture the sources it cites: otherwise it could write the evidence too.
+ */
 export function sourceGate(item: ContentItem): GateResult {
   const f: Finding[] = [], w: Finding[] = [];
   for (const source of item.sources) {
+    if (sameActor(source.retrieved_by ?? null, item.authorship.writer))
+      f.push({ code: 'source_captured_by_writer', target: source.source_id, message: 'Sources must be captured by a research/retrieval actor, not the writer.' });
     if (!isHttps(source.url)) f.push({ code: 'source_url_invalid', target: source.source_id, message: 'Source URL must be an absolute https URL.' });
     if (!nonEmpty(source.title) || !nonEmpty(source.publisher)) f.push({ code: 'source_metadata_missing', target: source.source_id, message: 'Source title and publisher are required.' });
     if (!nonEmpty(source.text) || sha256(source.text) !== source.content_sha256)
@@ -87,6 +93,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
 
   const supportingText: string[] = [];
   const publishers = new Set<string>();
+  const citedSources: SourceSnapshot[] = [];
   let datasetSupport = 0;
   for (const evidence of claim.evidence ?? []) {
     if (isSourceEvidence(evidence)) {
@@ -94,12 +101,14 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       if (!source) { fail('citation_unregistered', `Cites unregistered source "${evidence.source_id}" (no stored snapshot).`); continue; }
       if (!nonEmpty(source.text) || sha256(source.text) !== source.content_sha256) { fail('citation_snapshot_invalid', 'Cited snapshot fails integrity.'); continue; }
       if (!nonEmpty(evidence.excerpt) || evidence.excerpt.trim().length < MIN_EXCERPT) { fail('excerpt_too_short', 'Evidence excerpt is missing or too short to support a claim.'); continue; }
-      if (!normalizeText(source.text).includes(normalizeText(evidence.excerpt))) { fail('excerpt_not_in_source', `Excerpt does not occur in the stored copy of ${source.source_id}.`); continue; }
+      if (!containsPhrase(source.text, evidence.excerpt)) { fail('excerpt_not_in_source', `Excerpt does not occur (on word boundaries) in the stored copy of ${source.source_id}.`); continue; }
       if (!nonEmpty(evidence.locator)) fail('locator_missing', 'Evidence needs a precise locator.');
       supportingText.push(evidence.excerpt);
       publishers.add(publisherKey(source));
+      citedSources.push(source);
     } else {
       const ref = evidence.dataset_ref;
+      if (!ref || typeof ref !== 'object') throw new TypeError(`claim ${claim.claim_id}: evidence is neither a source excerpt nor a dataset reference`);
       if (ref.release !== ctx.pinned_dataset_release) { fail('dataset_release_outdated', `References ${ref.dataset} ${ref.release}; pinned release is ${ctx.pinned_dataset_release}.`); continue; }
       const actual = ctx.dataset(ref);
       if (actual === undefined || actual === null) { fail('dataset_record_missing', `No ${ref.record}.${ref.field} in the pinned dataset.`); continue; }
@@ -111,31 +120,40 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
     }
   }
 
-  // Every number the claim states must be visible in its supporting evidence.
+  // Every numeral the claim states, in either language, must be visible in its supporting evidence.
   const supported = new Set(supportingText.flatMap(numberTokens));
-  for (const n of numberTokens(claim.statement?.en ?? '')) if (!supported.has(n)) fail('claim_number_unsupported', `"${n}" does not appear in any supporting evidence.`);
+  for (const locale of LOCALES) for (const n of new Set(numberTokens(claim.statement?.[locale] ?? '')))
+    if (!supported.has(n)) fail('claim_number_unsupported', `"${n}" (${locale}) does not appear in any supporting evidence.`);
 
   if (claim.claim_type === 'quotation') {
     const quoted = (claim.statement?.en ?? '').match(/"([^"]{8,})"|“([^”]{8,})”/);
     const text = quoted?.[1] ?? quoted?.[2];
-    if (!text || !supportingText.some(s => normalizeText(s).includes(normalizeText(text))))
+    if (!text || !supportingText.some(s => containsPhrase(s, text)))
       fail('quotation_unsupported', 'Quoted words must appear verbatim in a cited excerpt.');
   }
 
   const sufficient = claim.importance === 'critical' ? datasetSupport > 0 || publishers.size >= 2 : datasetSupport > 0 || publishers.size >= 1;
   const v = claim.verification;
+  // Verified and disputed outcomes are both publishable states, so both need a complete,
+  // current, chronologically possible verification record.
+  const requireRecord = () => {
+    if (!v || v.method === 'none' || !v.verifier || !nonEmpty(v.verified_at) || Number.isNaN(time(v.verified_at)))
+      { fail('verification_incomplete', 'Verification needs a method, verifier and valid timestamp.'); return; }
+    if (v.claim_sha256 !== claimDigest(claim)) fail('verification_stale', 'Claim changed after it was verified.');
+    for (const source of citedSources) if (!(time(source.retrieved_at) <= time(v.verified_at)))
+      fail('verified_before_retrieval', `Verification predates retrieval of ${source.source_id}.`);
+  };
   switch (v?.status) {
     case 'verified':
       if (!sufficient) quarantine('evidence_insufficient', claim.importance === 'critical'
         ? 'Critical claim needs a dataset record or two independent publishers.' : 'Claim needs at least one valid piece of evidence.');
-      if (v.method === 'none' || !v.verifier || !nonEmpty(v.verified_at)) fail('verification_incomplete', 'Verified claims need a method, verifier and timestamp.');
-      if (v.claim_sha256 !== claimDigest(claim)) fail('verification_stale', 'Claim changed after it was verified.');
+      requireRecord();
       if (v.method === 'dataset_comparison' && !datasetSupport) fail('verification_method_mismatch', 'Dataset comparison claimed without a dataset reference.');
       break;
     case 'disputed':
       if (claim.presentation !== 'conflict_disclosed' || publishers.size + datasetSupport < 2)
         quarantine('dispute_undisclosed', 'Disputed claims publish only as a disclosed conflict backed by two positions.');
-      else if (v.claim_sha256 !== claimDigest(claim)) fail('verification_stale', 'Claim changed after the dispute was recorded.');
+      else requireRecord();
       break;
     case 'insufficient_evidence': quarantine('evidence_insufficient', 'Verifier found insufficient evidence.'); break;
     case 'stale': fail('verification_stale', 'Verification is stale; re-verify.'); break;
@@ -157,14 +175,14 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
     f.push(...check.failures); u.push(...check.unverifiable);
   }
   for (const block of item.blocks) {
+    // Every published block is factual prose in this archive: it must rest on at least one claim.
+    if (!block.claim_ids.length) f.push({ code: 'uncited_block', target: block.block_id, message: 'Block cites no claims.' });
     const backing = new Set(block.claim_ids.flatMap(id => {
       const claim = claims.get(id);
-      return claim ? [...numberTokens(claim.statement.en), ...numberTokens(String(claim.value ?? ''))] : [];
+      return claim ? [...numberTokens(claim.statement.en), ...numberTokens(claim.statement.uk), ...numberTokens(String(claim.value ?? ''))] : [];
     }));
-    for (const n of numberTokens(block.body?.en ?? '')) if (!backing.has(n))
-      f.push({ code: 'block_number_unclaimed', target: block.block_id, message: `"${n}" in the text is not backed by any cited claim.` });
-    if (!block.claim_ids.length && numberTokens(block.body?.en ?? '').length)
-      f.push({ code: 'uncited_factual_content', target: block.block_id, message: 'Block states facts but cites no claims.' });
+    for (const locale of LOCALES) for (const n of new Set(numberTokens(block.body?.[locale] ?? ''))) if (!backing.has(n))
+      f.push({ code: 'block_number_unclaimed', target: `${block.block_id}.${locale}`, message: `"${n}" in the text is not backed by any cited claim.` });
   }
   const quarantined = [...new Set(u.map(finding => finding.target))];
   const status: GateStatus = f.length ? 'fail' : u.length ? 'unverifiable' : 'pass';
@@ -180,7 +198,7 @@ export function independenceGate(item: ContentItem): GateResult {
   else if (sameActor(writer, fact_checker)) f.push({ code: 'self_fact_check', target: 'item', message: 'Writer and fact-checker are the same actor or run.' });
   for (const claim of item.claims) {
     const verifier = claim.verification?.verifier ?? null;
-    if (claim.verification?.status === 'verified' && verifier) {
+    if ((claim.verification?.status === 'verified' || claim.verification?.status === 'disputed') && verifier) {
       if (sameActor(writer, verifier)) f.push({ code: 'self_verification', target: claim.claim_id, message: 'Claim verified by its writer.' });
       if (!verifierRoles.has(verifier.role)) f.push({ code: 'verifier_role_invalid', target: claim.claim_id, message: `Role "${verifier.role}" cannot verify claims.` });
     }
@@ -188,6 +206,7 @@ export function independenceGate(item: ContentItem): GateResult {
   const review = item.editorial_review;
   if (review && sameActor(writer, review.reviewer)) f.push({ code: 'self_editorial_review', target: 'item', message: 'Writer reviewed their own text.' });
   if (localizer && sameActor(localizer, fact_checker)) f.push({ code: 'localizer_is_fact_checker', target: 'item', message: 'Localization and fact-check must be separate runs.' });
+  if (localizer && sameActor(localizer, writer)) f.push({ code: 'self_localization', target: 'item', message: 'The writer cannot validate its own translation.' });
   return result('independence', f);
 }
 
@@ -205,6 +224,8 @@ export function editorialGate(item: ContentItem, ctx: PolicyContext): GateResult
     }
     for (const link of block.links) if (!ctx.known_routes.has(link)) f.push({ code: 'broken_internal_link', target: block.block_id, message: `Unknown archive route ${link}.` });
   }
+  for (const claim of item.claims) for (const locale of LOCALES)
+    if (hasPlaceholder(claim.statement?.[locale] ?? '')) f.push({ code: 'placeholder', target: `${claim.claim_id}.${locale}`, message: 'Unfinished or placeholder claim text.' });
   const own = item.blocks.map(block => ({ id: block.block_id, text: block.body?.en ?? '' }));
   for (let i = 0; i < own.length; i++) {
     for (let j = i + 1; j < own.length; j++) if (similarity(own[i].text, own[j].text) >= DUPLICATE_THRESHOLD)
@@ -246,10 +267,12 @@ export function mediaProblems(asset: MediaUse, item: ContentItem, ctx: PolicyCon
   if (!nonEmpty(id) || !isHttps(asset.license?.url)) problems.push('license_undocumented');
   else if (!ctx.license_allowlist.includes(id)) problems.push('license_not_allowed');
   const evidence = item.sources.find(source => source.source_id === asset.license?.evidence_source_id);
-  if (!evidence || sha256(evidence.text) !== evidence.content_sha256 || !nonEmpty(id) || !normalizeText(evidence.text).includes(normalizeText(id)))
+  if (!evidence || sha256(evidence.text) !== evidence.content_sha256 || !nonEmpty(id) || !containsPhrase(evidence.text, id))
     problems.push('license_evidence_missing');
   if (nonEmpty(id) && /^CC-BY/i.test(id) && !nonEmpty(asset.attribution)) problems.push('attribution_missing');
   if (nonEmpty(id) && /-ND\b/i.test(id) && nonEmpty(asset.modifications)) problems.push('derivative_not_permitted');
+  // A caller's allowlist cannot make a non-commercial licence acceptable.
+  if (nonEmpty(id) && /-NC\b/i.test(id)) problems.push('restricted_use');
   if (asset.restrictions.some(r => /non-?commercial|editorial(?:[- ]use)?[- ]only|no[- ]derivatives|all rights reserved/i.test(r))) problems.push('restricted_use');
   if (!/^[a-f0-9]{64}$/.test(asset.file_sha256 ?? '')) problems.push('file_hash_missing');
   return problems;

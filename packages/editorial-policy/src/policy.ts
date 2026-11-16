@@ -27,6 +27,20 @@ export function riskTier(item: ContentItem, quarantinedClaims: readonly string[]
  * its own: every gate re-derives its verdict from evidence and hashes.
  */
 export function evaluatePublication(item: ContentItem, ctx: PolicyContext): PublicationDecision {
+  try {
+    return evaluate(item, ctx);
+  } catch (error) {
+    // Malformed input is a failed gate, never an unhandled path that a caller might treat as "no objection".
+    return {
+      policy_version: POLICY_VERSION, item_id: String(item?.item_id ?? ''), dataset_release: String(item?.dataset_release ?? ''),
+      evaluated_at: ctx.evaluated_at, item_sha256: safeDigest(item), tier: 'C', outcome: 'FAIL',
+      gates: [{ gate: 'schema', status: 'fail', warnings: [], findings: [{ code: 'malformed_input', target: 'item', message: error instanceof Error ? error.message : String(error) }] }],
+      quarantined: { claims: [], media: [] }, publishable_media: [],
+    };
+  }
+}
+
+function evaluate(item: ContentItem, ctx: PolicyContext): PublicationDecision {
   const schema = schemaGate(item);
   const base = { policy_version: POLICY_VERSION, item_id: item.item_id, dataset_release: item.dataset_release, evaluated_at: ctx.evaluated_at };
   if (schema.status !== 'pass') {

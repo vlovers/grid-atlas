@@ -45,7 +45,7 @@ Statuses describe evidence, never effort. A status only advances when the eviden
 5. Known uncertainty recorded in the text and the data.
 6. Major history covered in proportion to the venue: obscure one-race venues stay short; Monaco, Monza or Silverstone get depth. No padding to hit a length.
 7. Original, specific prose: no generic corner text ("requires precision and concentration"), no stacked boilerplate, no near-duplicates of other circuits.
-8. English and Ukrainian complete, natural and independently audited. Ukrainian is written, not transliterated word for word. Years, decimals and turn numbers stay numerals in both languages so they can be checked.
+8. English and Ukrainian complete, natural and independently audited. Ukrainian is written, not transliterated word for word. Years, decimals and turn numbers stay numerals in both languages so they can be checked; write full years ("1982", not "'82") and integers without thousands separators.
 9. Unsupported claims removed or explicitly qualified.
 10. Every non-trivial claim traces to evidence (verbatim excerpt from a stored source, or a pinned dataset record).
 11. Independent review passes under the publication policy.

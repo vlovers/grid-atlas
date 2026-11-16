@@ -7,6 +7,33 @@ export function normalizeText(text: string): string {
     .replace(/[‐-―−]/g, '-').replace(/\s+/g, ' ').trim();
 }
 
+const WORD = /[\p{L}\p{N}]/u;
+/**
+ * True when `needle` occurs in `haystack` (both normalized) on whole-word boundaries, so a
+ * truncated excerpt cannot change meaning: "shortened to 4" does not match "shortened to 4.2",
+ * and "1961" does not match "19612".
+ */
+export function containsPhrase(haystack: string, needle: string): boolean {
+  const h = normalizeText(haystack), n = normalizeText(needle);
+  if (!n) return false;
+  for (let at = h.indexOf(n); at !== -1; at = h.indexOf(n, at + 1)) {
+    const before = h[at - 1] ?? '', after = h[at + n.length] ?? '', afterNext = h[at + n.length + 1] ?? '';
+    if (WORD.test(n[0]) && WORD.test(before)) continue;
+    if (WORD.test(n.at(-1)!) && WORD.test(after)) continue;
+    if (/\d/.test(n.at(-1)!) && /[.,]/.test(after) && /\d/.test(afterNext)) continue;
+    return true;
+  }
+  return false;
+}
+
+const SECOND_LEVEL = new Set(['co.uk', 'org.uk', 'ac.uk', 'gov.uk', 'me.uk', 'com.au', 'net.au', 'org.au', 'co.jp', 'co.nz', 'com.br', 'co.za', 'com.mx', 'com.ar', 'co.in', 'com.cn', 'com.ua', 'org.ua']);
+/** Approximate registrable domain, so en.example.org and de.example.org count as one publisher. */
+export function registrableDomain(hostname: string): string {
+  const labels = hostname.toLowerCase().replace(/\.$/, '').split('.');
+  const lastTwo = labels.slice(-2).join('.');
+  return labels.length > 2 && SECOND_LEVEL.has(lastTwo) ? labels.slice(-3).join('.') : lastTwo;
+}
+
 /** Digit groups (years, counts, lengths). "3.337" and "3,337" both normalize to "3.337". */
 export function numberTokens(text: string): string[] {
   return (text.normalize('NFKC').match(/\d+(?:[.,]\d+)?/g) ?? []).map(token => token.replace(',', '.'));

@@ -74,7 +74,21 @@ Gates: **schema → factual → source → independence → editorial → locali
 
 Risk tiers: **A** structured claims backed only by the pinned dataset; **B** evidence-backed editorial; **C** anything quarantined — never auto-published, and repeated AI review cannot promote it. `assertPublishable()` re-runs the policy and refuses any supplied decision that differs, so a forged or stale PASS cannot publish.
 
-Deterministic limits worth stating plainly: the policy proves that cited words exist in a stored source, that numbers are evidenced, that dataset values match, and that roles were separate. It cannot prove that an excerpt *semantically* supports a non-numeric claim; that judgement belongs to the independent fact-check agent and is the main residual risk. Evidence sufficiency (two independent publishers for critical claims) limits it.
+### Limitations: how incorrect history could still pass
+
+The policy proves that cited words exist (on word boundaries) in a stored source, that every numeral in claims and prose — in both languages — is evidenced, that dataset values match the pinned release, that verification post-dates retrieval, and that writer, sources, verifier, reviewer and localizer are separate actors and runs. It does **not** prove:
+
+1. **Semantic support.** An excerpt can contain the right words and numbers yet not support the claim ("Senna did not win in 1984" supports "1984" and "Senna"). Only the fact-check agent judges meaning. Mitigation in B: verifier must quote the decisive sentence, a second verifier from a different model family for critical claims, and adversarial negation checks.
+2. **Prose ↔ claim binding for names and events.** Numbers in prose must come from cited claims; names, places, causes and adjectives are not bound. A block can cite a true claim and state a different driver. Mitigation in B: entity-mention binding (every linked or capitalised entity in prose must appear in a cited claim) and claim-to-sentence alignment.
+3. **Authentic sources.** A snapshot is internally consistent (hash) and not captured by the writer, but the policy cannot tell whether its text really came from that URL. Mitigation in B: snapshots only from a deterministic fetcher (not an LLM) recording HTTP status, final URL and response hash, plus re-fetch or archive.org cross-check by the verifier.
+4. **Independence of evidence.** Two registrable domains may copy one origin (e.g. both from Wikipedia); `registrableDomain` uses a small suffix list. Mitigation: source-lineage tags and a publisher reputation/derivation registry.
+5. **Independence of agents.** Separation is by `id` and `run_id` recorded by the pipeline. Two runs of the same model share its blind spots, and the records are only as trustworthy as the orchestrator writing them. Mitigation in C: the orchestrator, not agents, stamps actors; recommend different model families for writer and fact-checker.
+6. **Trusted context.** `PolicyContext` (dataset lookup, known routes, licence allowlist, CI receipt) must be built by the publisher from trusted inputs; a caller that supplies a permissive context defeats the gates. Mitigation in C: context constructed inside the release engine only.
+7. **F1DB itself.** Dataset agreement proves agreement with F1DB v2026.17.0, not truth; F1DB errors pass as tier A. Mitigation: record known F1DB/source discrepancies as disputed claims.
+8. **Heuristic text checks.** Duplicate detection (5-word shingle Jaccard ≥ 0.6) misses paraphrase; boilerplate needs two stock phrases; UK quality is only checked for completeness, script and number parity, not fluency.
+9. **Known false positives (fail closed).** Thousands separators differ between languages ("27,665" vs "27 665") and fail parity — house style is to write integers without separators. Abbreviated years ("'82") fail. Blocks with no factual content must still cite a claim.
+
+The dry run stays fail-closed: none of these limitations can turn existing unverified content into a PASS.
 
 ## 3. What Milestone A delivers
 
@@ -82,6 +96,7 @@ Deterministic limits worth stating plainly: the policy proves that cited words e
 |---|---|
 | `packages/editorial-policy/` | Provider-neutral model, canonical hashing, text checks, gates, decision function. Pure TypeScript, no I/O, runs under Node 24 type stripping. |
 | `tests/editorial-policy-gates.test.mjs` | 23 deterministic tests: unsupported claims, fabricated citations, disputes, outdated dataset references, stale verification, broken links, UK completeness, media rights/restrictions, duplicates, placeholders/boilerplate, failed/self review, confidence ignored, technical receipts, forged decisions, prompt injection. |
+| `tests/editorial-policy-bypass.test.mjs` | 12 adversarial tests from the PR #421 review: uncited blocks, truncated excerpts, Ukrainian-only numerals, writer-captured sources, same-publisher subdomains, disputes without a verifier, self-localization, NC licences, malformed input, verification before retrieval, placeholder claims. Each failed before the fix. |
 | `scripts/export-circuit-archive-facts.mjs` | Read-only (`READ ONLY` transaction) export of pinned circuit facts. |
 | `scripts/circuit-content-gap-matrix.mjs` | Builds the 78-circuit, 160-layout, 2,550-turn and 382-block matrices and runs the policy over all existing circuit content (dry run). `--check` keeps committed artifacts honest in CI. |
 | `tests/circuit-completion-matrix.test.mjs` | Matrix reproducibility and status invariants. |

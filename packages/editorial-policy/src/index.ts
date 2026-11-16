@@ -5,4 +5,4 @@ export {
   sameActor, schemaGate, sourceGate, technicalGate,
 } from './gates.ts';
 export { assertPublishable, evaluatePublication, PublicationRefused, riskTier } from './policy.ts';
-export { boilerplateHits, cyrillicShare, hasPlaceholder, looksLikeInstruction, normalizeText, numberTokens, significantNumbers, similarity } from './text.ts';
+export { boilerplateHits, containsPhrase, registrableDomain, cyrillicShare, hasPlaceholder, looksLikeInstruction, normalizeText, numberTokens, significantNumbers, similarity } from './text.ts';
