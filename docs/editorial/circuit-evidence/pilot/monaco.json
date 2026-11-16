@@ -1,0 +1,797 @@
+{
+ "circuit_id": "monaco",
+ "completeness": {
+  "circuit_id": "monaco",
+  "name": "Circuit de Monaco",
+  "pilot": true,
+  "layouts": 6,
+  "sections_with_editorial_text": 4,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "absent",
+   "formula1_history": "absent",
+   "defining_moments": "draft:2",
+   "layout_evolution": "absent",
+   "corners": "grouped_sections_only",
+   "important_races": "draft",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "absent",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 18,
+  "claims_by_type": {
+   "statistic": 0,
+   "dated_event": 4,
+   "measurement": 0,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 14
+  },
+  "claims_unaligned_uk": 2,
+  "dataset_checks": {
+   "supported": 0,
+   "conflict": 0,
+   "unmatched": 0
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 0,
+   "passages_cover_numbers": 10,
+   "passages_partial": 2,
+   "no_passage_in_live_sources": 4,
+   "cited_sources_unavailable": 0,
+   "no_cited_sources": 2
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 2,
+   "live": 2
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 103,
+   "layouts_with_guide": 0,
+   "named_in_guide": 0,
+   "names_found_in_cited_source": 0,
+   "names_not_in_cited_text": 0,
+   "names_sources_unavailable": 0,
+   "turns_queued": 103
+  },
+  "quality": {
+   "blocks": 9,
+   "shallow": 2,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 0
+  },
+  "evidence_lead_rate": 0.556,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "monaco:legacy_introduction#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:legacy_introduction",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The Monaco Grand Prix began in 1929, long before the Formula 1 World Championship.",
+   "uk": "Історія Гран-прі Монако почалася в 1929 році — задовго до чемпіонату світу Формули-1.",
+   "status": "no_cited_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "monaco:legacy_introduction#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:legacy_introduction",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its narrow streets reward precision and punish small mistakes.",
+   "uk": "Вузькі вулиці винагороджують точність і майже не пробачають помилок.",
+   "status": "no_cited_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "monaco:legacy_moment:0#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:legacy_moment:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Antony Noghès organised Monaco’s first Grand Prix, establishing a street-racing tradition older than the World Championship.",
+   "uk": "Антоні Ноге організував перший Гран-прі Монако, започаткувавши традицію вуличних перегонів, старшу за чемпіонат світу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d91c353083cc",
+     "passage_sha256": "bd117733a60de3e6ca21e115593f7ba3b64a16d0727a882a868d951c20769f02",
+     "offset": 1021,
+     "length": 195,
+     "numbers_covered": true,
+     "names_matched": [
+      "Antony"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:legacy_moment:1#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:legacy_moment:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Formula 1 records no passing moves at the 2003 Grand Prix — a striking example of how difficult overtaking can be on these streets.",
+   "uk": null,
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d91c353083cc",
+     "passage_sha256": "746c15a3b257ee6eb622630cbb175cb760581a5f14ca0f75647a248d651468eb",
+     "offset": 1677,
+     "length": 124,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 10
+    },
+    {
+     "source_id": "src-d91c353083cc",
+     "passage_sha256": "7019dcec0ea10550688575eab0a91a07115a5206eb901a31578dff834dc1aab7",
+     "offset": 0,
+     "length": 480,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:0#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Sainte Dévote is Monaco's opening right-hander, named after the nearby chapel of the principality's patron saint.",
+   "uk": "Sainte Dévote — перший правий поворот Монако, названий на честь каплиці покровительки князівства неподалік.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "6effe51e25b2dc2bcf2dbb8c80bf446cae8e021783ba415e2daf644ed82e97a9",
+     "offset": 941,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sainte"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "4a866455563068cc7d0aae76f1adc17031fa3bf840b72d9b9c04b02a66e2fad9",
+     "offset": 696,
+     "length": 244,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sainte"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:0#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Cars arrive from the narrow start straight into a tight braking zone with barriers close by.",
+   "uk": "Боліди під'їжджають вузькою стартовою прямою до тісної зони гальмування, оточеної бар'єрами.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "67dfb139300ed4ff4e18bd4f757c6c746f1b7dac948b3ba48b04aca31d8a807d",
+     "offset": 3184,
+     "length": 142,
+     "numbers_covered": true,
+     "names_matched": [
+      "Cars"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "5544504ded26f1df6647c5741bf1f40d011baf8395a467398925025d0647b309",
+     "offset": 7819,
+     "length": 145,
+     "numbers_covered": true,
+     "names_matched": [
+      "Cars"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:0#s3",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "On the first lap, a small error here can block the pack; a clean exit starts the climb towards Beau Rivage.",
+   "uk": "На першому колі навіть невелика помилка може заблокувати пелотон; чистий вихід починає підйом до Beau Rivage.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "ac57606681a0a90385e884b4f94cea7ef77b757cab6d5ecba87b96ef2e2d1125",
+     "offset": 0,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Beau",
+      "Rivage"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "721bc33c4feec3f4f9276e7937062df3b068dba7c76ed0c9f4323593c5857dcd",
+     "offset": 497,
+     "length": 153,
+     "numbers_covered": true,
+     "names_matched": [
+      "Beau",
+      "Rivage"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:1#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Monaco's hotel hairpin forces cars into an exceptionally tight left turn, where steering lock matters more than outright speed.",
+   "uk": "Шпилька біля готелю в Монако змушує боліди проходити надзвичайно тісний лівий поворот, де кут повороту керма важливіший за швидкість.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "ea167b2f9513cec3646a02a81a9ebf0f2fb2609079dfe2d90864d595512524b7",
+     "offset": 1965,
+     "length": 140,
+     "numbers_covered": true,
+     "names_matched": [
+      "Monaco's"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:1#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name has changed with the building beside it: Station, Loews, Grand Hotel and Fairmont have all been used.",
+   "uk": "Її назва змінювалася разом із готелем: Station, Loews, Grand Hotel і Fairmont.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "910489a987aadb61547207ac430ce8c8c1866c42034a9073e46fbbb0f83c804a",
+     "offset": 3528,
+     "length": 121,
+     "numbers_covered": true,
+     "names_matched": [
+      "Loews",
+      "Hotel",
+      "Fairmont"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "cd97def0860b250424e903401c58b75c4e0f3c55f34021c745a1e81113cbf912",
+     "offset": 3327,
+     "length": 200,
+     "numbers_covered": true,
+     "names_matched": [
+      "Station",
+      "Hotel"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:1#s3",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The geometry explains why overtaking here is difficult even when cars are close.",
+   "uk": "Саме геометрія пояснює, чому тут так складно обганяти навіть на малій відстані.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "monaco:corner_group:2#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Named after a nearby bar, which itself took its name from a Mediterranean fish, La Rascasse is a reminder that Monaco's corner names come from daily life as well as racing legends.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "9b99af0c6f09fed5764f3e15939c17c2ffa8eceace7dfebccbd3e18dbc7457bd",
+     "offset": 6952,
+     "length": 173,
+     "numbers_covered": true,
+     "names_matched": [
+      "Named",
+      "Mediterranean"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "6effe51e25b2dc2bcf2dbb8c80bf446cae8e021783ba415e2daf644ed82e97a9",
+     "offset": 941,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Named"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:3#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:3",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The final corner honours the organiser of Monaco's inaugural 1929 Grand Prix.",
+   "uk": "Останній поворот вшановує організатора першого Гран-прі Монако 1929 року.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "64f1308c4d2647560e468995e50ff7d192f925ac75ab78b1cff99922fa2137d7",
+     "offset": 7584,
+     "length": 234,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "ea167b2f9513cec3646a02a81a9ebf0f2fb2609079dfe2d90864d595512524b7",
+     "offset": 1965,
+     "length": 140,
+     "numbers_covered": false,
+     "names_matched": [
+      "Monaco's"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:3#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The city's racing tradition is remembered in the layout itself.",
+   "uk": "Так історія заснування гонки зберігається просто на схемі траси.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "monaco:corner_group:4#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Monaco's tunnel leads to a very fast approach and sharp braking for Nouvelle Chicane.",
+   "uk": "Тунель Монако веде до дуже швидкого під'їзду й різкого гальмування перед Nouvelle Chicane.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "49c3c28481e0d8f943e2ab357a0dfe9a110223d934b4623ad1dad22585dd5a25",
+     "offset": 5175,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nouvelle",
+      "Chicane"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "721bc33c4feec3f4f9276e7937062df3b068dba7c76ed0c9f4323593c5857dcd",
+     "offset": 497,
+     "length": 153,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nouvelle",
+      "Chicane"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:4#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The transition from shadow to daylight adds to the challenge, while barriers leave little margin for a poorly judged attack.",
+   "uk": "Перехід від тіні до денного світла ускладнює завдання, а бар'єри майже не залишають місця для помилкової атаки.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "monaco:corner_group:5#s1",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The original Monaco route ran more directly from Tabac towards the final section.",
+   "uk": "Початковий маршрут Монако проходив від Tabac до фінальної секції пряміше.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "46b01899c08749d7344e7f1c14895d4ff135fc3e2b4ef174231e9deadcc3a598",
+     "offset": 5832,
+     "length": 175,
+     "numbers_covered": true,
+     "names_matched": [
+      "Monaco",
+      "Tabac"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "0c533b815a3b278f8759dbfd5a5ff82a1f21e4cb223220c086cd1bb4398d8db0",
+     "offset": 6278,
+     "length": 213,
+     "numbers_covered": true,
+     "names_matched": [
+      "Tabac"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:5#s2",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:5",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Changes in 1973 created the Swimming Pool complex beside the new nautical stadium, adding quick chicanes where there had been a simpler run.",
+   "uk": "Зміни 1973 року створили комплекс Swimming Pool біля нового водного стадіону: там, де раніше був простіший проїзд, з'явилися швидкі шикани.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "0c533b815a3b278f8759dbfd5a5ff82a1f21e4cb223220c086cd1bb4398d8db0",
+     "offset": 6278,
+     "length": 213,
+     "numbers_covered": true,
+     "names_matched": [
+      "Swimming",
+      "Pool"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-d4dcbc1ba584",
+     "passage_sha256": "ff82ede3e2e6d46a96ef8ae0fd5968730f49862d31455cbbf40016ea1c812f9c",
+     "offset": 6125,
+     "length": 152,
+     "numbers_covered": false,
+     "names_matched": [
+      "Swimming",
+      "Pool"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "monaco:corner_group:5#s3",
+   "circuit_id": "monaco",
+   "block_id": "monaco:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Onboard laps from earlier decades therefore tell a different story of the harbour-side section.",
+   "uk": "Тому старі онборди показують іншу припортову частину кола.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  }
+ ],
+ "corner_names": [],
+ "corner_queue": [
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-1",
+   "seasons": "1950-1950",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-2",
+   "seasons": "1955-1972",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-3",
+   "seasons": "1973-1975",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-4",
+   "seasons": "1976-1985",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-5",
+   "seasons": "1986-2002",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "monaco",
+   "layout_id": "monaco-6",
+   "seasons": "2003-2026",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  }
+ ],
+ "quality": [
+  {
+   "block_id": "monaco:corner_group:3",
+   "circuit_id": "monaco",
+   "kind": "corner_group",
+   "en_words": 22,
+   "uk_words": 18,
+   "sentences": 2,
+   "specificity": 0.182,
+   "lexical_diversity": 0.864,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "monaco:corner_group:4",
+   "circuit_id": "monaco",
+   "kind": "corner_group",
+   "en_words": 34,
+   "uk_words": 30,
+   "sentences": 2,
+   "specificity": 0.059,
+   "lexical_diversity": 0.853,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "src-d4dcbc1ba584",
+   "url": "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
+   "normalized": "https://formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "monaco:corner_group:0",
+    "monaco:corner_group:1",
+    "monaco:corner_group:2",
+    "monaco:corner_group:3",
+    "monaco:corner_group:4",
+    "monaco:corner_group:5"
+   ],
+   "circuits": [
+    "monaco"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
+    "source_id": "src-d4dcbc1ba584",
+    "checked_at": "2026-11-16T11:26:01.787Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/latest/article/explained-how-every-monaco-corner-got-its-name.5ClYqWmfpeUpsRJA6mDNaX",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "47bca29fdfb0e012b8db606d8c2e74aa36350e692b7a95e936825fc4b7df88e7",
+    "text_chars": 8548
+   }
+  },
+  {
+   "source_id": "src-d91c353083cc",
+   "url": "https://www.formula1.com/en/racing/2023/monaco",
+   "normalized": "https://formula1.com/en/racing/2023/monaco",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "monaco:legacy_moment:0",
+    "monaco:legacy_moment:1"
+   ],
+   "circuits": [
+    "monaco"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/racing/2023/monaco",
+    "source_id": "src-d91c353083cc",
+    "checked_at": "2026-11-16T11:26:05.026Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/racing/2023/monaco",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "93d623b873759797dcbb2bf25fdda2482baaa7c23694a6a3c74a3f5b0007c1f4",
+    "text_chars": 3496
+   }
+  }
+ ]
+}

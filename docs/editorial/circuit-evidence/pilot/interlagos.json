@@ -1,0 +1,2272 @@
+{
+ "circuit_id": "interlagos",
+ "completeness": {
+  "circuit_id": "interlagos",
+  "name": "Autódromo José Carlos Pace",
+  "pilot": true,
+  "layouts": 2,
+  "sections_with_editorial_text": 7,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "mentioned_in_draft",
+   "formula1_history": "draft",
+   "defining_moments": "draft:2",
+   "layout_evolution": "absent",
+   "corners": "one_layout_drafted:15/41",
+   "important_races": "draft",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "mentioned_in_draft",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 74,
+  "claims_by_type": {
+   "statistic": 11,
+   "dated_event": 14,
+   "measurement": 0,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 49
+  },
+  "claims_unaligned_uk": 9,
+  "dataset_checks": {
+   "supported": 2,
+   "conflict": 0,
+   "unmatched": 0
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 2,
+   "passages_cover_numbers": 28,
+   "passages_partial": 1,
+   "no_passage_in_live_sources": 12,
+   "cited_sources_unavailable": 31,
+   "no_cited_sources": 0
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 8,
+   "live": 6,
+   "live_pdf_no_text": 2
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 41,
+   "layouts_with_guide": 1,
+   "named_in_guide": 13,
+   "names_found_in_cited_source": 0,
+   "names_not_in_cited_text": 0,
+   "names_sources_unavailable": 13,
+   "turns_queued": 26
+  },
+  "quality": {
+   "blocks": 28,
+   "shallow": 5,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 0
+  },
+  "evidence_lead_rate": 0.405,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "interlagos:short_summary#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:short_summary",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "In 1973 Emerson Fittipaldi won the first championship Brazilian Grand Prix at Interlagos; he won again in 1974, before Carlos Pace took the 1975 race.",
+   "uk": null,
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:222",
+       "field": "winner"
+      }
+     ],
+     "detail": "1973: Emerson Fittipaldi matches F1DB winner."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-326d3a0df9bf",
+     "passage_sha256": "44d17a5528d6d072be2d68f0e47a9d1f61c989cdc6b0e5e613231d7a4b63e0e1",
+     "offset": 0,
+     "length": 761,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brazilian",
+      "Carlos",
+      "Pace"
+     ],
+     "score": 24
+    },
+    {
+     "source_id": "src-326d3a0df9bf",
+     "passage_sha256": "d58b63cec6fbf4e5b2afc5ce8eb56de3db4019ca50125fb70c7b84fda5270cc7",
+     "offset": 803,
+     "length": 927,
+     "numbers_covered": false,
+     "names_matched": [
+      "Emerson",
+      "Fittipaldi",
+      "Carlos",
+      "Pace"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Interlagos already knew what a Brazilian victory sounded like.",
+   "uk": "Інтерлагос уже знав, як звучить домашня перемога: Емерсон Фіттіпальді виграв тут перший заліковий Гран-прі Бразилії 1973 року й повторив успіх у 1974-му.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "96f7c8a8e58751e2f0f53e8d92630e82a92a80b31c7ffc1eee4f463def5b41fa",
+     "offset": 0,
+     "length": 478,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos",
+      "Brazilian"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "59962bc433321d7a04324d8a1376af4042bd1cc5f82bbab7efa4055315d55f0d",
+     "offset": 761,
+     "length": 178,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos",
+      "Brazilian"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Emerson Fittipaldi won the first World Championship Brazilian Grand Prix here in 1973 and returned to win in 1974.",
+   "uk": "Але в січні 1975-го трибуни стежили за іншим бразильцем — Карлосом Паче на Brabham.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d2bb5883a897",
+     "passage_sha256": "d1faccf376cabf503281fbc5e9f69c1b7d0266354208aebe7d810a4cd37d5b32",
+     "offset": 0,
+     "length": 754,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brazilian"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-326d3a0df9bf",
+     "passage_sha256": "44d17a5528d6d072be2d68f0e47a9d1f61c989cdc6b0e5e613231d7a4b63e0e1",
+     "offset": 0,
+     "length": 761,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brazilian"
+     ],
+     "score": 13
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "But in January 1975 the grandstands were watching a different home contender: Carlos Pace in a Brabham.",
+   "uk": "Найшвидшим був Жан-П'єр Жар'є: його Shadow відірвався від суперників, поки на 32-му колі не підвела паливна система.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "96f7c8a8e58751e2f0f53e8d92630e82a92a80b31c7ffc1eee4f463def5b41fa",
+     "offset": 0,
+     "length": 478,
+     "numbers_covered": true,
+     "names_matched": [
+      "January",
+      "Pace"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "9c64a253d438a1d3dc43b77237c5f4687ff0515307543baa3f52076eeb95b8a3",
+     "offset": 12239,
+     "length": 281,
+     "numbers_covered": false,
+     "names_matched": [
+      "But",
+      "Carlos",
+      "Pace"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s4",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Jean-Pierre Jarier's Shadow had been the quickest car and pulled clear, until trouble with its fuel system ended his race on lap 32.",
+   "uk": "Паче очолив гонку, та попереду ще був фініш, а позаду наближався McLaren Фіттіпальді.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d2bb5883a897",
+     "passage_sha256": "3385099ca852cb849623924521db1626d5ba4a03cbd735ad9149f0827db82377",
+     "offset": 796,
+     "length": 1135,
+     "numbers_covered": true,
+     "names_matched": [
+      "Jean-Pierre",
+      "Shadow"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "05278a4d33bc184e4e5eabe6f64c1fc72dfa8566910cc28416767cd35e5fef7e",
+     "offset": 5174,
+     "length": 272,
+     "numbers_covered": false,
+     "names_matched": [
+      "Jean-Pierre",
+      "Jarier's",
+      "Shadow"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s5",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Pace inherited the lead, but he still had to keep Fittipaldi's closing McLaren behind him.",
+   "uk": "Карлос утримав перевагу й здобув свою єдину перемогу у Формулі-1.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "e643a4c14bc299631048c389909e72568032a5638b414827a1d12539c7dfac2e",
+     "offset": 13052,
+     "length": 219,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pace",
+      "Fittipaldi's",
+      "McLaren"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "613ec91fea30344b54f66e2c7f2e839855428d555f4bdc5ece1542133fea2eac",
+     "offset": 17516,
+     "length": 270,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pace",
+      "Fittipaldi's",
+      "McLaren"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s6",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "He did, taking his only Formula 1 victory with Fittipaldi second and Jochen Mass third.",
+   "uk": "Фіттіпальді став другим, Йохен Масс — третім.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-d2bb5883a897",
+     "passage_sha256": "3385099ca852cb849623924521db1626d5ba4a03cbd735ad9149f0827db82377",
+     "offset": 796,
+     "length": 1135,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fittipaldi",
+      "Jochen",
+      "Mass"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "863688694e4ef75ecb35f78a924955a4242b7ed7043573fb3d53c5e56764d91c",
+     "offset": 2744,
+     "length": 339,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fittipaldi"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s7",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The result is a Brazilian one-two in the classification; the story is about a race that looked destined for Jarier before the crowd got its ending.",
+   "uk": "Протокол показує бразильський дубль; перебіг гонки нагадує, наскільки іншим міг бути цей день.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "5eb353638a7e8d0705ba7a8b8f49e2b9360399d1bd0032fb8ffbbd788fec92b9",
+     "offset": 14952,
+     "length": 240,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brazilian",
+      "Jarier"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "482ca81201b7257da48c9da5228f400145ac32a9c44e35632ea6864824492b6f",
+     "offset": 12836,
+     "length": 215,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brazilian",
+      "Jarier"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s8",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Pace did not inherit an easy victory: once Jarier was out, Fittipaldi remained close enough to make the finish a real contest.",
+   "uk": "Перемога не дісталася Паче автоматично: після сходу Жар'є Фіттіпальді залишався досить близько, щоб тиснути до фінішу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "f9e198a44a53a127528783921b8e53896bb2435548724c9a9b392aed80e525f7",
+     "offset": 3617,
+     "length": 305,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pace",
+      "Jarier",
+      "Fittipaldi"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "passage_sha256": "05278a4d33bc184e4e5eabe6f64c1fc72dfa8566910cc28416767cd35e5fef7e",
+     "offset": 5174,
+     "length": 272,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pace",
+      "Jarier",
+      "Fittipaldi"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s9",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The two Brazilians on the podium represented very different paths to this particular afternoon — an established champion chasing and a local winner collecting his only championship Grand Prix triumph.",
+   "uk": "На подіумі опинилися два бразильці з різними історіями — чемпіон, який наздоганяв, і переможець, для якого цей Гран-прі став єдиним у кар'єрі.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:narrative_biography",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Interlagos grew from plans for a resort between São Paulo’s Guarapiranga and Billings reservoirs.",
+   "uk": "Інтерлагос виріс із задуму курорту між водосховищами Гуарапіранга та Біллінгс у Сан-Паулу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "b364de5189e654a6697f17f2be6d4fd4f4cf7d0b8e43b06f6f3b852d11e764c3",
+     "offset": 1110,
+     "length": 246,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "a3b5388ba313c733c35ded2a8146c2d27e368f5b44af8d3b46ee7aa0282b1538",
+     "offset": 360,
+     "length": 162,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The circuit finally opened in 1940; Formula 1’s championship arrived in 1973, just as Emerson Fittipaldi was making Brazil a force in the sport.",
+   "uk": "Автодром відкрили 1940 року, а чемпіонат Формули-1 приїхав сюди в 1973-му, коли Емерсон Фіттіпальді вже зробив Бразилію помітною силою в автоспорті.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "d7a4924786032e8bcad10b6c40314a8b42a5cae3a96a9c3a7baed6f40babe4d1",
+     "offset": 699,
+     "length": 131,
+     "numbers_covered": false,
+     "names_matched": [
+      "Emerson",
+      "Fittipaldi",
+      "Brazil"
+     ],
+     "score": 18
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "1fd90d49d7f495fb514548e543de5a27fefedf1e35aadeb434526487ecbd984e",
+     "offset": 0,
+     "length": 359,
+     "numbers_covered": false,
+     "names_matched": [
+      "Brazil"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The long original course gave way to a much shorter route in 1990.",
+   "uk": "У 1990 році довге первісне коло замінили значно коротшим маршрутом.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "b364de5189e654a6697f17f2be6d4fd4f4cf7d0b8e43b06f6f3b852d11e764c3",
+     "offset": 1110,
+     "length": 246,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s4",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:narrative_biography",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its character still comes from the land: the Senna S leads downhill towards the winding infield, before the lap climbs back towards the start.",
+   "uk": "Його характер досі визначає рельєф: після S Сенни траса спускається до звивистої внутрішньої частини, а наприкінці піднімається до старту.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "1e2f31e74a3314a3e41a5872a7b390a26ae79a98b0faa49a51eef2c9ec377c01",
+     "offset": 1357,
+     "length": 215,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "91d5af60a22f13c1d470fbc9e25a5ce03f4dc766d522bc581b79c5c6cab5d928",
+     "offset": 2146,
+     "length": 150,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s5",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:narrative_biography",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Fittipaldi’s victories belong to the long-course era; the compact modern lap tells a different part of the same story.",
+   "uk": "Перемоги Фіттіпальді належать епосі довгого кола; компактний сучасний маршрут розповідає іншу частину тієї самої історії.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1973-home-beginning#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:moment:interlagos-1973-home-beginning",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Emerson Fittipaldi won the first World Championship Brazilian Grand Prix at Interlagos for Lotus.",
+   "uk": "Емерсон Фіттіпальді на Lotus виграв перший заліковий Гран-прі Бразилії в Інтерлагосі.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "d7a4924786032e8bcad10b6c40314a8b42a5cae3a96a9c3a7baed6f40babe4d1",
+     "offset": 699,
+     "length": 131,
+     "numbers_covered": true,
+     "names_matched": [
+      "Emerson",
+      "Fittipaldi",
+      "Interlagos"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "c34d8418dfa3144ad1f6f5f1b9faea60c712e4a906f67b33e9297873e89dc3de",
+     "offset": 831,
+     "length": 149,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fittipaldi",
+      "Brazilian"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1973-home-beginning#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:moment:interlagos-1973-home-beginning",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "He repeated the win in 1974; Carlos Pace’s victory in 1975 then made it three home successes in the venue’s first three championship races.",
+   "uk": "Він повторив успіх у 1974-му, а перемога Карлоса Паче 1975 року завершила серію з трьох домашніх тріумфів у перших трьох чемпіонатних гонках автодрому.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:252",
+       "field": "winner"
+      }
+     ],
+     "detail": "1975: José Carlos Pace matches F1DB winner."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "c34d8418dfa3144ad1f6f5f1b9faea60c712e4a906f67b33e9297873e89dc3de",
+     "offset": 831,
+     "length": 149,
+     "numbers_covered": true,
+     "names_matched": [
+      "Carlos"
+     ],
+     "score": 18
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "1fd90d49d7f495fb514548e543de5a27fefedf1e35aadeb434526487ecbd984e",
+     "offset": 0,
+     "length": 359,
+     "numbers_covered": false,
+     "names_matched": [
+      "Carlos"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1991-senna-gearbox#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:moment:interlagos-1991-senna-gearbox",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Ayrton Senna’s McLaren began losing gears with victory in reach.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-35a1f5021090",
+     "passage_sha256": "c4c973f13b4155459d640350a533d82b5398ed18141bae19a4f1918fef6d9831",
+     "offset": 725,
+     "length": 225,
+     "numbers_covered": true,
+     "names_matched": [
+      "McLaren"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-35a1f5021090",
+     "passage_sha256": "3a5d5e80c9f470f194e50122feb7c9a0ea577dba9d570f5a4bb2d7cb82e0158b",
+     "offset": 0,
+     "length": 402,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ayrton"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1991-senna-gearbox#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:moment:interlagos-1991-senna-gearbox",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "He brought it home using sixth gear as Riccardo Patrese closed in, finally winning in Brazil after years of frustration at his home Grand Prix.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-35a1f5021090",
+     "passage_sha256": "c4c973f13b4155459d640350a533d82b5398ed18141bae19a4f1918fef6d9831",
+     "offset": 725,
+     "length": 225,
+     "numbers_covered": true,
+     "names_matched": [
+      "Riccardo",
+      "Patrese"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-35a1f5021090",
+     "passage_sha256": "b3b3f5038ebf8fb114a08830d96c684d307d57cb066ebc0ce1a349a0b7d1bc96",
+     "offset": 4500,
+     "length": 190,
+     "numbers_covered": true,
+     "names_matched": [
+      "Riccardo",
+      "Patrese"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t1#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The opening left of S do Senna plunges downhill from the pit straight.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t1#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The linked turns were created during the 1990 redesign with Ayrton Senna's input; the heavy braking zone remains the lap's clearest chance to attempt a pass.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t2#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 2 immediately swings right after the downhill first part of Senna S.",
+   "uk": "Другий поворот одразу переводить болід праворуч після спуску першої частини Senna S.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t2#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Drivers who brake too late for Turn 1 can end up badly positioned here, losing the chance to accelerate cleanly through the following Curva do Sol.",
+   "uk": "Ті, хто надто пізно загальмував перед першим, опиняються тут у невигідному положенні й втрачають розгін через наступний Curva do Sol.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t3#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Curva do Sol, the Curve of the Sun, is the long left that releases the car from Senna S.",
+   "uk": "Curva do Sol — «Поворот Сонця» — довга ліва дуга після Senna S.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t3#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t3",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "A smooth, fast exit matters because it opens the Reta Oposta, where rivals can use the slipstream before braking at Turn 4.",
+   "uk": "Плавний швидкий вихід важливий, адже він відкриває Reta Oposta, де суперники можуть використати повітряний мішок перед гальмуванням у четвертому повороті.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t4#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 4 starts the Descida do Lago section with a left at the end of Reta Oposta.",
+   "uk": "Четвертий поворот відкриває Descida do Lago лівим віражем після Reta Oposta.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t4#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It is a major overtaking zone: drivers must slow from a long straight without running so wide that they compromise the second left.",
+   "uk": "Це важлива зона обгонів: потрібно загальмувати після довгої прямої й не виїхати надто широко перед другим лівим поворотом.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t5#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The second left of Descida do Lago continues the descent before the road climbs towards Ferradura.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t5#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name refers to the lake-side descent; the exit is about getting the car settled for the faster right-hand section ahead.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t6#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Ferradura means horseshoe, a reference to the curved shape of this right-hand section.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t6#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t6",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 6 begins a faster sequence after the lake descent; drivers need to keep the car balanced through the second part rather than chase a single late apex.",
+   "uk": null,
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t7#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 7 continues the right-hand Ferradura complex as the track changes elevation.",
+   "uk": "Сьомий поворот продовжує праву зв'язку Ferradura на змінному рельєфі.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t7#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The car is still carrying speed from Turn 6, so steering smoothly and preparing the approach to the tighter infield is more valuable than sliding wide.",
+   "uk": "Болід усе ще швидкий після шостого, тому плавне кермування й підготовка до тіснішої внутрішньої секції важливіші за ковзання на виході.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t8#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Laranjinha, often translated as Little Orange, is a tighter right-hander in Interlagos's technical middle sector.",
+   "uk": "Laranjinha, назву якого часто перекладають як «Маленький апельсин», — тісніший правий поворот технічної середньої секції Інтерлагоса.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t8#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name has competing local explanations, so the guide records the established name without asserting a single unverified origin.",
+   "uk": "Походження назви пояснюють по-різному, тому довідник не видає одну неперевірену версію за факт.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t9#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Pinheirinho means Little Pine Tree and marks a slow left in the infield.",
+   "uk": "Pinheirinho означає «Маленька сосна» й позначає повільний лівий поворот усередині траси.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t9#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The corner demands a tidy change of direction and controlled traction, because a wide exit leaves the car poorly positioned for the very tight right-hand Bico de Pato.",
+   "uk": "Потрібні точна перекладка й контроль зчеплення: широкий вихід ускладнює підхід до дуже тісного правого Bico de Pato.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t10#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Bico de Pato means Duck's Bill, a name that fits the sharp right-hand hairpin.",
+   "uk": "Bico de Pato означає «Качиний дзьоб» — влучна назва різкої правої шпильки.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t10#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The slowest part of the middle sector requires strong rotation and patient throttle; an impatient exit can ruin the line into the following left-hand Mergulho.",
+   "uk": "У цій повільній частині середнього сектору потрібно розвернути болід і терпляче додати газ; поспішний вихід псує лінію до лівого Mergulho.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t11#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Mergulho translates as Dive, fitting the left-hand bend that drops away before Junção.",
+   "uk": "Mergulho означає «Пірнання» — назва пасує лівій дузі, що спускається перед Junção.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t11#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The car gathers speed while the road falls, so drivers must anticipate the slower left ahead instead of arriving there with too much momentum.",
+   "uk": "Болід набирає швидкість на схилі, тому пілот має заздалегідь готувати повільніший лівий віраж, а не під'їжджати до нього з надмірною швидкістю.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t12#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t12",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Junção means Junction and is the decisive slow left before Interlagos's long uphill acceleration.",
+   "uk": "Junção означає «З'єднання» — це вирішальний повільний лівий перед довгим розгоном угору.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t12#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t12",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A clean exit is worth far more than a dramatic entry: poor traction here costs speed through the sweeping final section and onto the pit straight.",
+   "uk": "Чистий вихід важливіший за ефектний вхід: втрата зчеплення тут забирає швидкість на всій фінальній дузі та стартовій прямій.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t13",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Curva do Café begins the uphill, largely full-throttle run after Junção.",
+   "uk": "Curva do Café відкриває висхідний, майже повністю швидкісний відрізок після Junção.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t13",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The name recalls coffee, central to São Paulo's regional history.",
+   "uk": "Назва нагадує про каву, важливу для історії регіону Сан-Паулу.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t13",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers keep the car flowing through the left-hand sweep rather than treating it as a fresh slow braking point.",
+   "uk": "Пілоти плавно проходять ліву дугу, а не сприймають її як нову повільну зону гальмування.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t14#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t14",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 14 is part of the sustained uphill run towards the pit straight, often discussed with the Subida dos Boxes section.",
+   "uk": "Чотирнадцятий поворот належить до тривалого підйому на стартову пряму, який часто описують разом із Subida dos Boxes.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t14#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t14",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The car is already accelerating hard after Junção; a precise line matters more than searching for an invented individual corner name.",
+   "uk": "Після Junção болід уже інтенсивно прискорюється; точна траєкторія важливіша за вигадану окрему назву віражу.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t15#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t15",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The last numbered bend completes Interlagos's uphill sweep onto the start-finish straight.",
+   "uk": "Останній пронумерований перегин завершує підйом Інтерлагоса до стартової прямої.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t15#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner:interlagos-t15",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Drivers usually stay committed to acceleration, but a poor exit from Junção can still leave them vulnerable on the long climb to the braking zone at Turn 1.",
+   "uk": "Пілоти здебільшого продовжують розгін, але невдалий вихід із Junção залишає їх уразливими на довгому підйомі до гальмування перед першим поворотом.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Senna S links the opening bends of Interlagos and sends cars downhill towards the next straight.",
+   "uk": "Senna S поєднує перші повороти Інтерлагоса й веде боліди вниз до наступної прямої.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "91d5af60a22f13c1d470fbc9e25a5ce03f4dc766d522bc581b79c5c6cab5d928",
+     "offset": 2146,
+     "length": 150,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "a3b5388ba313c733c35ded2a8146c2d27e368f5b44af8d3b46ee7aa0282b1538",
+     "offset": 360,
+     "length": 162,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The first braking zone offers overtaking chances, but the car must then switch direction quickly while the road falls away.",
+   "uk": "Перше гальмування створює нагоду для обгону, але одразу після нього треба швидко змінити напрямок на спуску.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A compromised exit leaves the driver vulnerable along the following acceleration zone.",
+   "uk": "Поганий вихід робить пілота вразливим на наступній ділянці розгону.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The final section at Interlagos climbs steeply from the infield towards the pit straight.",
+   "uk": "Остання секція Інтерлагоса круто підіймається від внутрішньої частини траси до стартової прямої.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "a3b5388ba313c733c35ded2a8146c2d27e368f5b44af8d3b46ee7aa0282b1538",
+     "offset": 360,
+     "length": 162,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 3
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "d7a4924786032e8bcad10b6c40314a8b42a5cae3a96a9c3a7baed6f40babe4d1",
+     "offset": 699,
+     "length": 131,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers need a clean exit from the preceding left-hander to build speed up the hill.",
+   "uk": "Пілоту потрібен чистий вихід із попереднього лівого повороту, щоб набрати швидкість на підйомі.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "1e2f31e74a3314a3e41a5872a7b390a26ae79a98b0faa49a51eef2c9ec377c01",
+     "offset": 1357,
+     "length": 215,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "passage_sha256": "b364de5189e654a6697f17f2be6d4fd4f4cf7d0b8e43b06f6f3b852d11e764c3",
+     "offset": 1110,
+     "length": 246,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The long, loaded acceleration zone can decide whether an attacker reaches the first braking point close enough to challenge on the next lap.",
+   "uk": "Довгий розгін під навантаженням визначає, чи зможе переслідувач атакувати в першій зоні гальмування наступного кола.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "After the Senna S, Curva do Sol is a long left-hander that rewards carrying speed onto the Reta Oposta back straight.",
+   "uk": "Після Senna S довгий лівий Curva do Sol дозволяє набрати швидкість перед зворотною прямою Reta Oposta.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Curva",
+      "Sol",
+      "Reta",
+      "Oposta"
+     ],
+     "score": 16
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "6c6822c34b30a8b5a221d9ce90ae4094e52e7c360cb78b8bac04139ab91d2484",
+     "offset": 1726,
+     "length": 234,
+     "numbers_covered": true,
+     "names_matched": [
+      "Curva",
+      "Sol"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name means Curve of the Sun.",
+   "uk": "Його назва означає «Поворот Сонця».",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Curve",
+      "Sun"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The key is to avoid drifting too wide: a clean exit is worth time all the way to the next braking zone.",
+   "uk": "Головне — не виїхати надто широко: чистий вихід дає перевагу аж до наступної зони гальмування.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "At the end of the Reta Oposta, cars brake for the left-hand Descida do Lago sequence.",
+   "uk": "Наприкінці Reta Oposta боліди гальмують перед лівою зв'язкою Descida do Lago — «Спуском до озера».",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Reta",
+      "Oposta"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "eb92ef43cc64d36d6ff889cca138a81607abe5003dc582e190506fb5e695b268",
+     "offset": 2124,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [
+      "Descida",
+      "Lago"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The name means Descent to the Lake, a reminder of the terrain around Interlagos.",
+   "uk": "Назва нагадує про рельєф Інтерлагоса.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "eb92ef43cc64d36d6ff889cca138a81607abe5003dc582e190506fb5e695b268",
+     "offset": 2124,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [
+      "Descent",
+      "Lake"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b2ce95903ffd5a832ef993daa46e6fbd3825e8c9774edca6ca91a5b9f7699be0",
+     "offset": 0,
+     "length": 300,
+     "numbers_covered": true,
+     "names_matched": [
+      "Interlagos"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "This is a passing opportunity, but a driver who overshoots the first left can lose the line through the second.",
+   "uk": "Тут можна обганяти, але надто пізнє гальмування перед першим лівим віражем псує траєкторію другого.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The sweeping right-hand Ferradura, or Horseshoe, feeds into another tightening right-hander, Laranjinha.",
+   "uk": "Широкий правий Ferradura, тобто «Підкова», переходить у наступний правий Laranjinha, який поступово звужується.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ferradura",
+      "Horseshoe"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "df3491c0b076d0158d57dcb30a345d09410ef67bb3967c7e2e92919cda18af0c",
+     "offset": 2845,
+     "length": 178,
+     "numbers_covered": true,
+     "names_matched": [
+      "Laranjinha"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "These linked bends begin the infield's technical rhythm.",
+   "uk": "Ці повороти починають технічну частину кола.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Instead of attacking each apex separately, drivers balance the car and protect the line for the slower corners that follow.",
+   "uk": "Замість атаки кожного апекса окремо пілоти зберігають баланс боліда й готують траєкторію до повільніших віражів.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Pinheirinho is a tight left-hand turn followed by the even tighter right-hand Bico de Pato, or Duck's Bill.",
+   "uk": "Pinheirinho — тісний лівий поворот, за яким іде ще тісніший правий Bico de Pato, або «Качиний дзьоб».",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "1d5e458b507f35dba3e2e74e4f5495ab546b3aa5d4fdeb32cf6e7ca1c3c9b0a0",
+     "offset": 3512,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [
+      "Bico",
+      "Pato",
+      "Duck's",
+      "Bill"
+     ],
+     "score": 14
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "16909192e54910b5e76aa9d48e40e873dc00eb257b06ee32c420290a0e7c0943",
+     "offset": 3236,
+     "length": 156,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pinheirinho"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "They force drivers to slow down and rotate the car through opposite directions.",
+   "uk": "Пілотам доводиться сповільнитися й швидко змінити напрямок руху.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A rushed entry makes it harder to put the power down on the way out.",
+   "uk": "Поспішний вхід у зв'язку ускладнює розгін на виході.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The fast downhill left of Mergulho leads to the slower left-hand Junção.",
+   "uk": "Швидкий лівий спуск Mergulho веде до повільнішого лівого Junção.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7a134b5501e6f1fd0c1e4911c586ac0bb74be835f2b384ca40b0ff599280d732",
+     "offset": 5057,
+     "length": 165,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "598c703de6b2174377c4922f76b586a2e7e437ad42e061e5146282a19c15616f",
+     "offset": 3804,
+     "length": 68,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mergulho"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Getting Junção right is crucial: its exit begins the long uphill acceleration towards the finish line.",
+   "uk": "Правильний вихід із Junção особливо важливий: саме тут починається довгий розгін угору до фінішної прямої.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7a134b5501e6f1fd0c1e4911c586ac0bb74be835f2b384ca40b0ff599280d732",
+     "offset": 5057,
+     "length": 165,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "dddb59795c19a89d8a24c345a928c3446c9c632c4e84db2226c35d617175d204",
+     "offset": 3024,
+     "length": 211,
+     "numbers_covered": true,
+     "names_matched": [
+      "Getting"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Sacrificing a little entry speed can pay back over the entire climb.",
+   "uk": "Невелика втрата швидкості на вході може окупитися на всьому підйомі.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "After Junção, the track climbs through a series of fast left-hand sweeps towards the start-finish straight.",
+   "uk": "Після Junção траса підіймається серією швидких лівих дуг до стартової прямої.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7a134b5501e6f1fd0c1e4911c586ac0bb74be835f2b384ca40b0ff599280d732",
+     "offset": 5057,
+     "length": 165,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "32dea7d65927b52678b3cdfd9421c8d9b581491ecaf2d96de89617f5adf7d5cb",
+     "offset": 4089,
+     "length": 43,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Subida dos Boxes means Climb to the Pits, while Arquibancadas refers to the grandstands.",
+   "uk": "Subida dos Boxes означає «Підйом до боксів», а Arquibancadas — «Трибуни».",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7556c2293d9cf7b03541147b7527e4a24f57a542bdf7f92b55d605517b0985dc",
+     "offset": 4986,
+     "length": 70,
+     "numbers_covered": true,
+     "names_matched": [
+      "Subida",
+      "Boxes",
+      "Pits"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "d29a99dd60a7cb5e0418d169c764e525120efb8cf9ee5a27de457485aa273e62",
+     "offset": 1418,
+     "length": 72,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pits"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers aim to stay flat out and build momentum for the next run into the Senna S.",
+   "uk": "Пілоти намагаються не скидати газ і набрати якомога більше швидкості перед наступним гальмуванням у Senna S.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Senna"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "9fb862b2260533fa31a41966eef0d18346007b0e9865ac363dbe32b1d7bec6d4",
+     "offset": 1961,
+     "length": 162,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 5
+    }
+   ]
+  }
+ ],
+ "corner_names": [
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t1",
+   "numbers": [
+    1
+   ],
+   "name": "S do Senna",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t2",
+   "numbers": [
+    2
+   ],
+   "name": "S do Senna",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t3",
+   "numbers": [
+    3
+   ],
+   "name": "Curva do Sol",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t4",
+   "numbers": [
+    4
+   ],
+   "name": "Descida do Lago",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t5",
+   "numbers": [
+    5
+   ],
+   "name": "Descida do Lago",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t6",
+   "numbers": [
+    6
+   ],
+   "name": "Ferradura",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t7",
+   "numbers": [
+    7
+   ],
+   "name": "Ferradura",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t8",
+   "numbers": [
+    8
+   ],
+   "name": "Laranjinha",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t9",
+   "numbers": [
+    9
+   ],
+   "name": "Pinheirinho",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t10",
+   "numbers": [
+    10
+   ],
+   "name": "Bico de Pato",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t11",
+   "numbers": [
+    11
+   ],
+   "name": "Mergulho",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t12",
+   "numbers": [
+    12
+   ],
+   "name": "Junção",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-2",
+   "section_id": "interlagos-t13",
+   "numbers": [
+    13
+   ],
+   "name": "Curva do Café",
+   "numbering_year": 2025,
+   "layout_seasons": "1990-2026",
+   "cited_sources": 2,
+   "live_sources": 0,
+   "status": "cited_sources_unavailable",
+   "period": "within_layout_seasons"
+  }
+ ],
+ "corner_queue": [
+  {
+   "circuit_id": "interlagos",
+   "layout_id": "interlagos-1",
+   "seasons": "1973-1980",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  }
+ ],
+ "quality": [
+  {
+   "block_id": "interlagos:corner:interlagos-t6",
+   "circuit_id": "interlagos",
+   "kind": "corner_section",
+   "en_words": 41,
+   "uk_words": 30,
+   "sentences": 2,
+   "specificity": 0.024,
+   "lexical_diversity": 0.854,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "interlagos:corner:interlagos-t11",
+   "circuit_id": "interlagos",
+   "kind": "corner_section",
+   "en_words": 37,
+   "uk_words": 32,
+   "sentences": 2,
+   "specificity": 0.054,
+   "lexical_diversity": 0.919,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "interlagos:corner:interlagos-t12",
+   "circuit_id": "interlagos",
+   "kind": "corner_section",
+   "en_words": 40,
+   "uk_words": 29,
+   "sentences": 2,
+   "specificity": 0.05,
+   "lexical_diversity": 0.875,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "interlagos:corner_group:0",
+   "circuit_id": "interlagos",
+   "kind": "corner_group",
+   "en_words": 49,
+   "uk_words": 38,
+   "sentences": 3,
+   "specificity": 0.041,
+   "lexical_diversity": 0.837,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "interlagos:corner_group:1",
+   "circuit_id": "interlagos",
+   "kind": "corner_group",
+   "en_words": 52,
+   "uk_words": 40,
+   "sentences": 3,
+   "specificity": 0.019,
+   "lexical_diversity": 0.827,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "src-326d3a0df9bf",
+   "url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
+   "normalized": "https://formula1.com/en/results/1973/races/315/brazil/race-result",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "interlagos:short_summary",
+    "interlagos:long_history_draft"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
+    "source_id": "src-326d3a0df9bf",
+    "checked_at": "2026-11-16T11:23:12.752Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "29cc22bbd8d50d8d50e6bcafc7180c318d922b4a5c4160d14195e180d2da9350",
+    "text_chars": 2024
+   }
+  },
+  {
+   "source_id": "src-35a1f5021090",
+   "url": "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+   "normalized": "https://formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "interlagos:moment:interlagos-1991-senna-gearbox"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+    "source_id": "src-35a1f5021090",
+    "checked_at": "2026-11-16T11:23:12.940Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "7f2ad624a8cb1f6813b02abd440634678ab03dd44ef0499c2dba5f6b727a2b81",
+    "text_chars": 8740
+   }
+  },
+  {
+   "source_id": "src-42e2fe1c7c1f",
+   "url": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+   "normalized": "https://formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "interlagos:narrative_biography",
+    "interlagos:moment:interlagos-1973-home-beginning",
+    "interlagos:corner_group:0",
+    "interlagos:corner_group:1"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+    "source_id": "src-42e2fe1c7c1f",
+    "checked_at": "2026-11-16T11:23:29.726Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "0177cd58cb711a949f4a6221e7685f245998b589ddd9b8c551a62afee6053202",
+    "text_chars": 2343
+   }
+  },
+  {
+   "source_id": "src-636e356b4110",
+   "url": "https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/",
+   "normalized": "https://motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "interlagos:long_history_draft"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/",
+    "source_id": "src-636e356b4110",
+    "checked_at": "2026-11-16T11:22:52.827Z",
+    "http_status": 200,
+    "final_url": "https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "dfe5f39889aa147a27b483b83de41bb02ee54da21c8869095e31a60968826c45",
+    "text_chars": 21973
+   }
+  },
+  {
+   "source_id": "src-ad9cf78c4f4d",
+   "url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
+   "normalized": "https://fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
+   "host": "fia.com",
+   "class": "fia_official",
+   "cited_by": [
+    "interlagos:corner:interlagos-t1",
+    "interlagos:corner:interlagos-t2",
+    "interlagos:corner:interlagos-t3",
+    "interlagos:corner:interlagos-t4",
+    "interlagos:corner:interlagos-t5",
+    "interlagos:corner:interlagos-t6",
+    "interlagos:corner:interlagos-t7",
+    "interlagos:corner:interlagos-t8",
+    "interlagos:corner:interlagos-t9",
+    "interlagos:corner:interlagos-t10",
+    "interlagos:corner:interlagos-t11",
+    "interlagos:corner:interlagos-t12",
+    "interlagos:corner:interlagos-t13",
+    "interlagos:corner:interlagos-t14",
+    "interlagos:corner:interlagos-t15"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
+    "source_id": "src-ad9cf78c4f4d",
+    "checked_at": "2026-11-16T11:26:17.571Z",
+    "http_status": 200,
+    "final_url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
+    "content_type": "application/pdf",
+    "outcome": "live_pdf_no_text",
+    "bytes_sha256": "d0a51c2a80f1e456dc16c2c746f992d199995c2145e607ac41f5230285ffbdcc",
+    "bytes": 3714010
+   }
+  },
+  {
+   "source_id": "src-d2bb5883a897",
+   "url": "https://www.formula1.com/en/results/1975/races/345/brazil/race-result",
+   "normalized": "https://formula1.com/en/results/1975/races/345/brazil/race-result",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "interlagos:long_history_draft"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/results/1975/races/345/brazil/race-result",
+    "source_id": "src-d2bb5883a897",
+    "checked_at": "2026-11-16T11:25:58.511Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/results/1975/races/345/brazil/race-result",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "fb97b48247309e280b5484b8457fd89099511298826a3b6d7f4fd2a9890b0de2",
+    "text_chars": 2235
+   }
+  },
+  {
+   "source_id": "src-eab4b8e4cfe6",
+   "url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+   "normalized": "https://mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+   "host": "mercedesamgf1.com",
+   "class": "other",
+   "cited_by": [
+    "interlagos:corner_group:2",
+    "interlagos:corner_group:3",
+    "interlagos:corner_group:4",
+    "interlagos:corner_group:5",
+    "interlagos:corner_group:6",
+    "interlagos:corner_group:7"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+    "source_id": "src-eab4b8e4cfe6",
+    "checked_at": "2026-11-16T11:22:04.404Z",
+    "http_status": 200,
+    "final_url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "ecbea0b3b0fb43d9799f70ab1f9e8b6be795decd05d7cd18682fa6738afa2460",
+    "text_chars": 6037
+   }
+  },
+  {
+   "source_id": "src-f471275d7099",
+   "url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
+   "normalized": "https://fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
+   "host": "fia.com",
+   "class": "fia_official",
+   "cited_by": [
+    "interlagos:corner:interlagos-t1",
+    "interlagos:corner:interlagos-t2",
+    "interlagos:corner:interlagos-t3",
+    "interlagos:corner:interlagos-t4",
+    "interlagos:corner:interlagos-t5",
+    "interlagos:corner:interlagos-t6",
+    "interlagos:corner:interlagos-t7",
+    "interlagos:corner:interlagos-t8",
+    "interlagos:corner:interlagos-t9",
+    "interlagos:corner:interlagos-t10",
+    "interlagos:corner:interlagos-t11",
+    "interlagos:corner:interlagos-t12",
+    "interlagos:corner:interlagos-t13",
+    "interlagos:corner:interlagos-t14",
+    "interlagos:corner:interlagos-t15"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
+    "source_id": "src-f471275d7099",
+    "checked_at": "2026-11-16T11:27:47.384Z",
+    "http_status": 200,
+    "final_url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
+    "content_type": "application/pdf",
+    "outcome": "live_pdf_no_text",
+    "bytes_sha256": "f4adcd0845a53c79295e5e59a2f59c16d6fe819a494beb3dc4b40349549fdd66",
+    "bytes": 1025844
+   }
+  }
+ ]
+}

@@ -1,0 +1,767 @@
+{
+ "circuit_id": "dallas",
+ "completeness": {
+  "circuit_id": "dallas",
+  "name": "Fair Park",
+  "pilot": true,
+  "layouts": 1,
+  "sections_with_editorial_text": 3,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "absent",
+   "formula1_history": "draft",
+   "defining_moments": "absent",
+   "layout_evolution": "not_applicable",
+   "corners": "grouped_sections_only",
+   "important_races": "absent",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "absent",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 17,
+  "claims_by_type": {
+   "statistic": 4,
+   "dated_event": 7,
+   "measurement": 0,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 6
+  },
+  "claims_unaligned_uk": 3,
+  "dataset_checks": {
+   "supported": 1,
+   "conflict": 0,
+   "unmatched": 0
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 1,
+   "passages_cover_numbers": 12,
+   "passages_partial": 3,
+   "no_passage_in_live_sources": 1,
+   "cited_sources_unavailable": 0,
+   "no_cited_sources": 0
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 2,
+   "live": 2
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 23,
+   "layouts_with_guide": 0,
+   "named_in_guide": 0,
+   "names_found_in_cited_source": 0,
+   "names_not_in_cited_text": 0,
+   "names_sources_unavailable": 0,
+   "turns_queued": 23
+  },
+  "quality": {
+   "blocks": 4,
+   "shallow": 0,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 0
+  },
+  "evidence_lead_rate": 0.765,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "dallas:short_summary#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:short_summary",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Keke Rosberg won the 1984 Dallas Grand Prix.",
+   "uk": "Кеке Росберг виграв Гран-прі Далласа 1984 року.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:397",
+       "field": "winner"
+      }
+     ],
+     "detail": "1984: Keijo Erik Rosberg matches F1DB winner."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "d4f73b7d942487626999fea3a7ede5d5480aa2b230f9e8481f44d3ecd1e52ee4",
+     "offset": 0,
+     "length": 152,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
+     "numbers_covered": false,
+     "names_matched": [
+      "Keke",
+      "Rosberg"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:short_summary#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:short_summary",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Formula 1's one-off visit brought the championship to a temporary Texan street circuit, where punishing summer heat became part of the event's reputation.",
+   "uk": "Разовий етап на тимчасовій міській трасі в Техасі запам’ятався не лише гонкою, а й виснажливою літньою спекою.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "d4f73b7d942487626999fea3a7ede5d5480aa2b230f9e8481f44d3ecd1e52ee4",
+     "offset": 0,
+     "length": 152,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Dallas had one Formula 1 Grand Prix, and the Texas summer made sure nobody forgot it.",
+   "uk": "У Далласі Формула-1 провела лише один Гран-прі, але техаське літо зробило його незабутнім.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "c74767a246bb4aabe31929868ebebabd5808f440c7d73bba0ee6f775007710cb",
+     "offset": 18241,
+     "length": 282,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dallas",
+      "Texas"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
+     "offset": 18958,
+     "length": 256,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1984 the temporary Fair Park course was breaking up as the heat punished drivers and machinery.",
+   "uk": "У 1984 році асфальт тимчасової траси у Фейр-Парку руйнувався, а спека виснажувала пілотів і техніку.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "4d429ab795206efc93b1e0c9e1792cde4dc54ccec8cdc541ed0136cd049b3692",
+     "offset": 416,
+     "length": 283,
+     "numbers_covered": false,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
+     "numbers_covered": false,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Nigel Mansell started from pole but did not take the victory; Keke Rosberg survived the conditions to win for Williams.",
+   "uk": "Найджел Менселл стартував із поулу, та перемогу здобув Кеке Росберг на Williams.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nigel",
+      "Mansell",
+      "Keke",
+      "Rosberg",
+      "Williams"
+     ],
+     "score": 15
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nigel",
+      "Mansell",
+      "Williams"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The classification gives Rosberg first place, but the story of Dallas is also about a circuit surface that struggled to survive its own race.",
+   "uk": "У протоколі залишилося його перше місце, а в історії траси — покриття, яке ледве витримало власну гонку.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
+     "offset": 104,
+     "length": 311,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg",
+      "Dallas"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "2cbd35c122371725e9ea245207873111263d56c86e24725e86ac5e6cdaacd6ea",
+     "offset": 3820,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg",
+      "Dallas"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s5",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A Can-Am race had damaged the surface further, so Sunday warm-up was cancelled while workers patched it.",
+   "uk": "Після суботньої гонки Can-Am покриття стало ще гіршим, тому недільну розминку скасували заради термінового ремонту.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "96eba92fa1e89669c185e315df69c63e94078b11344d6ccba36b33849f7a9048",
+     "offset": 9393,
+     "length": 379,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sunday"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "21b41d3344dac2a744daa63444a8fda498cfd4555f09147ac92d6100120afe2a",
+     "offset": 11762,
+     "length": 330,
+     "numbers_covered": true,
+     "names_matched": [
+      "Can-Am"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s6",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Mansell actually led the first 35 laps before Rosberg passed him; Prost later led too, only to retire after hitting a wall.",
+   "uk": "Менселл утримував лідерство перші 35 кіл, поки його не випередив Росберг; згодом попереду опинився Прост, але після удару об стіну зійшов.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Rosberg",
+      "Prost"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
+     "numbers_covered": false,
+     "names_matched": [
+      "Mansell",
+      "Prost"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s7",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Rosberg inherited first again.",
+   "uk": "Росберг знову став першим.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "ced187a7fb2f2d957d3c4fe928a552d4823be442e3562a003c0ea8c7c6930eec",
+     "offset": 15743,
+     "length": 294,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
+     "offset": 104,
+     "length": 311,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s8",
+   "circuit_id": "dallas",
+   "block_id": "dallas:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "René Arnoux recovered from the back of the grid to finish second, and an exhausted Mansell collapsed while trying to push his stricken Lotus towards the finish.",
+   "uk": "Рене Арну прорвався з хвоста пелотону на друге місце, а виснажений Менселл знепритомнів, намагаючись доштовхати пошкоджений Lotus до фінішу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
+     "numbers_covered": true,
+     "names_matched": [
+      "Arnoux",
+      "Mansell",
+      "Lotus"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "fd083bc87e3fca125785d784334568ffdf84a0ce40701264a20d912aa6544790",
+     "offset": 17462,
+     "length": 209,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Lotus"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:0",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1984 Dallas Grand Prix took Formula 1 onto a temporary course around Fair Park, where concrete walls lined streets that were never designed as a permanent racing facility.",
+   "uk": null,
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
+     "offset": 18958,
+     "length": 256,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dallas",
+      "Fair"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
+     "numbers_covered": false,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 11
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:0",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Keke Rosberg won for Williams-Honda in oppressive Texas heat.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "981d81d5a389f04548c67a5b1116c4a4843b5f12b205e2ab2a0c7e81d94487fc",
+     "offset": 10523,
+     "length": 212,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg",
+      "Williams-Honda"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "c74767a246bb4aabe31929868ebebabd5808f440c7d73bba0ee6f775007710cb",
+     "offset": 18241,
+     "length": 282,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg",
+      "Texas"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:0",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Dallas held one World Championship Grand Prix; it is distinct from both the earlier Watkins Glen events and later US street races.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
+     "offset": 18958,
+     "length": 256,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Before the 1984 Dallas start, the asphalt was already breaking apart after practice and support racing in extreme heat.",
+   "uk": "Перед стартом Гран-прі Далласа 1984 року асфальт уже руйнувався після тренувань і гонок підтримки у сильну спеку.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "e8bfc9d9d469b408902a8fd30f766fd1ee7dbdc071dd71c89a7e5aaa04cd0f01",
+     "offset": 0,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
+     "offset": 104,
+     "length": 311,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Workers patched the course overnight and the morning warm-up was cancelled.",
+   "uk": "Покриття латали вночі, а ранкову розминку скасували.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "During the Grand Prix, drivers had to avoid loose surface and concrete barriers while managing tyre wear and temperatures.",
+   "uk": "Під час гонки пілоти оминали крихкі ділянки дороги й бетонні бар'єри та боролися з перегрівом шин.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "75bffba5bca339c2287a1a8ccd3c8d9a1721928bb2ef860ec8e5efcd5c1ced4c",
+     "offset": 5677,
+     "length": 235,
+     "numbers_covered": true,
+     "names_matched": [
+      "During"
+     ],
+     "score": 3
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "21d881f71c1d07b187ae6fbb6053985b58feaf0ef5380cf53e2f8a7d0b688a83",
+     "offset": 8800,
+     "length": 253,
+     "numbers_covered": true,
+     "names_matched": [
+      "During"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:corner_group:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Rosberg's victory came in a race shaped by the condition of the road itself.",
+   "uk": "Перемога Росберга відбулася в умовах, коли стан асфальту впливав на сам перебіг перегонів.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
+     "offset": 104,
+     "length": 311,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg's"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "981d81d5a389f04548c67a5b1116c4a4843b5f12b205e2ab2a0c7e81d94487fc",
+     "offset": 10523,
+     "length": 212,
+     "numbers_covered": true,
+     "names_matched": [
+      "Rosberg's"
+     ],
+     "score": 4
+    }
+   ]
+  }
+ ],
+ "corner_names": [],
+ "corner_queue": [
+  {
+   "circuit_id": "dallas",
+   "layout_id": "dallas-1",
+   "seasons": "1984-1984",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  }
+ ],
+ "quality": [],
+ "sources": [
+  {
+   "source_id": "src-8a871b52a0a3",
+   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+   "normalized": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+   "host": "github.com",
+   "class": "f1db_dataset",
+   "cited_by": [
+    "dallas:short_summary",
+    "dallas:long_history_draft"
+   ],
+   "circuits": [
+    "dallas"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+    "source_id": "src-8a871b52a0a3",
+    "checked_at": "2026-11-16T11:22:44.212Z",
+    "http_status": 200,
+    "final_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "383865dbf1a0c6cd26217c87fade9bb25fadbf577178b8d81fc860f2887c43be",
+    "text_chars": 9620
+   }
+  },
+  {
+   "source_id": "src-9f338fcb269b",
+   "url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+   "normalized": "https://motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "dallas:long_history_draft",
+    "dallas:corner_group:0",
+    "dallas:corner_group:1"
+   ],
+   "circuits": [
+    "dallas"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+    "source_id": "src-9f338fcb269b",
+    "checked_at": "2026-11-16T11:23:31.858Z",
+    "http_status": 200,
+    "final_url": "https://www.motorsportmagazine.com/archive/article/august-1984/22/dallas-grand-prix/",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "59158d1d1f162dfab38b1e6b9a487056d30b1467187a3274f0c2f10acafccc7b",
+    "text_chars": 22443
+   }
+  }
+ ]
+}

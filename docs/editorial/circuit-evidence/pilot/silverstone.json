@@ -1,0 +1,3572 @@
+{
+ "circuit_id": "silverstone",
+ "completeness": {
+  "circuit_id": "silverstone",
+  "name": "Silverstone Circuit",
+  "pilot": true,
+  "layouts": 8,
+  "sections_with_editorial_text": 4,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "absent",
+   "formula1_history": "absent",
+   "defining_moments": "draft:7",
+   "layout_evolution": "absent",
+   "corners": "one_layout_drafted:18/109",
+   "important_races": "draft",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "absent",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 87,
+  "claims_by_type": {
+   "statistic": 5,
+   "dated_event": 17,
+   "measurement": 0,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 65
+  },
+  "claims_unaligned_uk": 36,
+  "dataset_checks": {
+   "supported": 1,
+   "conflict": 0,
+   "unmatched": 0
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 0,
+   "passages_cover_numbers": 70,
+   "passages_partial": 5,
+   "no_passage_in_live_sources": 11,
+   "cited_sources_unavailable": 0,
+   "no_cited_sources": 1
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 5,
+   "live": 4,
+   "live_pdf_no_text": 1
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 109,
+   "layouts_with_guide": 1,
+   "named_in_guide": 18,
+   "names_found_in_cited_source": 18,
+   "names_not_in_cited_text": 0,
+   "names_sources_unavailable": 0,
+   "turns_queued": 91
+  },
+  "quality": {
+   "blocks": 39,
+   "shallow": 9,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 0
+  },
+  "evidence_lead_rate": 0.805,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "silverstone:narrative_biography#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The first World Championship race took place here in May 1950.",
+   "uk": "Перша гонка чемпіонату світу відбулася тут у травні 1950 року.",
+   "status": "passages_cover_numbers",
+   "dataset": [
+    {
+     "kind": "first_race",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:silverstone",
+       "field": "first_season"
+      }
+     ],
+     "detail": "First championship race 1950 matches F1DB."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "cf5f1ff01c8add23bc3cf15e9440d240d25642679c95c23c657892934e10ab4d",
+     "offset": 845,
+     "length": 252,
+     "numbers_covered": true,
+     "names_matched": [
+      "May"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "4f6634aa2167cc19b195dd3eb4737d9367ea3fd2bd7ea76ba8046542a60cd736",
+     "offset": 1688,
+     "length": 281,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:narrative_biography#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:narrative_biography",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Silverstone’s story connects that Alfa Romeo victory with home heroes, rain and late-race battles.",
+   "uk": "Історія Сільверстоуна пов’язує перемогу Alfa Romeo з домашніми героями, дощем і боротьбою наприкінці гонок.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "df43c04c48cf42dfb24a10c0ee46e82bb502ae0095e56e62a30da89494f07305",
+     "offset": 1098,
+     "length": 173,
+     "numbers_covered": true,
+     "names_matched": [
+      "Alfa",
+      "Romeo"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "b12cb7916a3d6ad41970f2918fcf3b4a6e4a63489d705766df1ce5c0b802e860",
+     "offset": 627,
+     "length": 217,
+     "numbers_covered": true,
+     "names_matched": [
+      "Silverstone’s"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1950#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:moment:silverstone-1950",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Farina led an Alfa Romeo podium sweep.",
+   "uk": "Фаріна очолив потрійний успіх Alfa Romeo.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "df43c04c48cf42dfb24a10c0ee46e82bb502ae0095e56e62a30da89494f07305",
+     "offset": 1098,
+     "length": 173,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farina",
+      "Alfa",
+      "Romeo"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "2070027c2731678b37d6a6192fc8e6e0d9a164cd9ae88534f0cef3b63cfdd199",
+     "offset": 1272,
+     "length": 168,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farina",
+      "Alfa"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1987#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:moment:silverstone-1987",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Mansell caught Piquet and passed him at Stowe.",
+   "uk": "Менселл наздогнав Піке й обігнав його в Stowe.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "607f356dde9dbeab7508e6787f9101959ddbc2a5e961f72abaae4e029e31aeeb",
+     "offset": 3127,
+     "length": 286,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Piquet",
+      "Stowe"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "d9d1fe23b558639d5fc4416712868d245c7ee7da5654f2a3c6fbc2f5ac407242",
+     "offset": 2936,
+     "length": 190,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Piquet"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1991#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:moment:silverstone-1991",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Winner Mansell carried the stranded Senna back to the pits.",
+   "uk": "Переможець Менселл підвіз Сенну до боксів.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "05af91f4f8314f921974cfd336ad29df32a7054351d6691466f3187dc1a71dcd",
+     "offset": 3548,
+     "length": 217,
+     "numbers_covered": true,
+     "names_matched": [
+      "Winner",
+      "Mansell",
+      "Senna"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "e34476ca7d7f195798492e80d38e3e56b74e2a7faf1160d5894651f589d4aa36",
+     "offset": 3766,
+     "length": 193,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Senna"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1998#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:moment:silverstone-1998",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Schumacher won while taking his penalty on the final lap.",
+   "uk": "Шумахер переміг, відбуваючи штраф на останньому колі.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "0bea8f60831c3d8b6eaa448e4b2bd3c1abcfe52b9f908df9c38f6cd9fa9ccad7",
+     "offset": 5336,
+     "length": 181,
+     "numbers_covered": true,
+     "names_matched": [
+      "Schumacher"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "ac8911628e9796c03c2a73afd7ac2cabe574fb6533738608afe1e51ae89c332f",
+     "offset": 4696,
+     "length": 118,
+     "numbers_covered": true,
+     "names_matched": [
+      "Schumacher"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-2008#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:moment:silverstone-2008",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Hamilton claimed his first Silverstone win in wet conditions.",
+   "uk": "Гемілтон здобув першу перемогу на Сільверстоуні під дощем.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "8520dbd328d67bf6407aa76cb9719cee5c07209752b29438e44409a28651c373",
+     "offset": 7220,
+     "length": 241,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton",
+      "Silverstone"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "7f65302a32e66d801277eafd32bbcd9152c66ead61bdc4b587679333fd6c6d4a",
+     "offset": 6363,
+     "length": 268,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton",
+      "Silverstone"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:legacy_introduction#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_introduction",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Silverstone grew out of an RAF airfield to host the opening race of the new Formula 1 World Championship.",
+   "uk": "Сільверстоун виріс із військового аеродрому RAF і прийняв перший етап нового чемпіонату світу Формули-1.",
+   "status": "no_cited_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:legacy_moment:0#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_moment:0",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "On 13 May, Giuseppe Farina won the inaugural Formula 1 World Championship Grand Prix in an Alfa Romeo.",
+   "uk": "13 травня Джузеппе Фаріна виграв перший етап чемпіонату світу Формули-1 за кермом Alfa Romeo.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-5fae26c9d32a",
+     "passage_sha256": "0ba3c19370db8b4657f70186275a8145cf257b1c3521b55de6faa95c622892a9",
+     "offset": 712,
+     "length": 110,
+     "numbers_covered": true,
+     "names_matched": [
+      "May"
+     ],
+     "score": 14
+    },
+    {
+     "source_id": "src-5fae26c9d32a",
+     "passage_sha256": "403b8b65e9cccf2396d75f89eaaf7656e6b0a33cceda93b8da4531fa5d902c29",
+     "offset": 823,
+     "length": 97,
+     "numbers_covered": false,
+     "names_matched": [
+      "Giuseppe",
+      "Farina",
+      "Alfa",
+      "Romeo"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:legacy_moment:1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_moment:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Nigel Mansell chased down Nelson Piquet, then passed his Williams team-mate at Stowe with three laps remaining.",
+   "uk": "Найджел Менселл наздогнав Нельсона Піке та обігнав напарника по Williams у повороті Stowe за три кола до фінішу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "607f356dde9dbeab7508e6787f9101959ddbc2a5e961f72abaae4e029e31aeeb",
+     "offset": 3127,
+     "length": 286,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell",
+      "Piquet",
+      "Stowe"
+     ],
+     "score": 16
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "passage_sha256": "d9d1fe23b558639d5fc4416712868d245c7ee7da5654f2a3c6fbc2f5ac407242",
+     "offset": 2936,
+     "length": 190,
+     "numbers_covered": false,
+     "names_matched": [
+      "Mansell",
+      "Nelson",
+      "Piquet"
+     ],
+     "score": 14
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Abbey opens the modern lap as a very fast right-hander.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey"
+     ],
+     "score": 3
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name recalls Luffield Abbey, whose remains stood nearby; a driver needs a settled car here because the shallow left at Farm arrives almost immediately.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield",
+      "Abbey"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "eaaedf3086f59b08e6ab5c40f3b5e11042e5236d1ce4d5735ed4cd37d068bd1b",
+     "offset": 2785,
+     "length": 154,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield",
+      "Abbey"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t2#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Farm is the gentle left bend after Abbey, not the old straight that once carried the same name.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1009,
+     "length": 186,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farm"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t2#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A farm near the original route supplied the name; the present corner keeps the car flowing towards heavy braking at Village.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t3#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The first major braking point is Village, a tight right-hander named after Silverstone village.",
+   "uk": "Перше сильне гальмування — перед тісним правим Village, названим на честь села Сільверстоун.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village",
+      "Silverstone"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "7ff758e9d83013b11fdadf021d436795bbfb263e0540363ed5ccd54ada053d00",
+     "offset": 4864,
+     "length": 239,
+     "numbers_covered": true,
+     "names_matched": [
+      "Silverstone"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t3#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers must slow the car without drifting wide, because the following left hairpin at The Loop is too close for an untidy exit.",
+   "uk": "Пілотам потрібно втримати машину на вузькій траєкторії: одразу після виходу починається ліва шпилька The Loop.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "00e6c03c20f4899ff3d9f2167d4e9ce6fa9eb6e2a85b56c7c53548b508380104",
+     "offset": 1627,
+     "length": 175,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Loop"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6a2d3bb0f61f505f37ecc29329b8aba00d6e8e98b9acd3f208ef4ed447d27d49",
+     "offset": 1503,
+     "length": 123,
+     "numbers_covered": true,
+     "names_matched": [
+      "Loop"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t4#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Loop describes its own shape: the slow left hairpin curls back on itself.",
+   "uk": "Назва The Loop описує форму повільної лівої шпильки, яка розвертає трасу назад.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6a2d3bb0f61f505f37ecc29329b8aba00d6e8e98b9acd3f208ef4ed447d27d49",
+     "offset": 1503,
+     "length": 123,
+     "numbers_covered": true,
+     "names_matched": [
+      "Loop"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "00e6c03c20f4899ff3d9f2167d4e9ce6fa9eb6e2a85b56c7c53548b508380104",
+     "offset": 1627,
+     "length": 175,
+     "numbers_covered": true,
+     "names_matched": [
+      "Loop"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t4#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A good lap sacrifices some entry speed to turn the car early and launch cleanly through Aintree onto Wellington Straight.",
+   "uk": "Швидке коло часто вимагає пожертвувати швидкістю на вході, щоб раніше повернути болід і чисто розігнатися через Aintree на Wellington Straight.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d04284f16e5b20db4c35afe4670686f4e7eccf6d93129374bce4b2ca8158ed20",
+     "offset": 2453,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Aintree",
+      "Wellington",
+      "Straight"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "58590e56d8fe13f48f8c700739ea3cdb7477818677b59d42e392207e988c6dec",
+     "offset": 2122,
+     "length": 132,
+     "numbers_covered": true,
+     "names_matched": [
+      "Wellington",
+      "Straight"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t5#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Aintree is a quick left that opens the run onto Wellington Straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d04284f16e5b20db4c35afe4670686f4e7eccf6d93129374bce4b2ca8158ed20",
+     "offset": 2453,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Aintree",
+      "Wellington",
+      "Straight"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "58590e56d8fe13f48f8c700739ea3cdb7477818677b59d42e392207e988c6dec",
+     "offset": 2122,
+     "length": 132,
+     "numbers_covered": true,
+     "names_matched": [
+      "Wellington",
+      "Straight"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t5#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It honours the former British Grand Prix venue near Liverpool; the exit matters because the next chance to brake hard comes only at Brooklands.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d04284f16e5b20db4c35afe4670686f4e7eccf6d93129374bce4b2ca8158ed20",
+     "offset": 2453,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "British",
+      "Brooklands"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "f348d11e4b7bbe0e2d209f3fdb6c547a3963b7563de38a8d653f3468fe64381a",
+     "offset": 1803,
+     "length": 224,
+     "numbers_covered": true,
+     "names_matched": [
+      "British",
+      "Liverpool"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t6#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Brooklands, a left-hander after Wellington Straight, commemorates Britain's pioneering racing venue.",
+   "uk": "Лівий Brooklands після Wellington Straight вшановує один із найстаріших британських автодромів.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d04284f16e5b20db4c35afe4670686f4e7eccf6d93129374bce4b2ca8158ed20",
+     "offset": 2453,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brooklands",
+      "Wellington",
+      "Straight"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "58590e56d8fe13f48f8c700739ea3cdb7477818677b59d42e392207e988c6dec",
+     "offset": 2122,
+     "length": 132,
+     "numbers_covered": true,
+     "names_matched": [
+      "Wellington",
+      "Straight"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t6#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers arrive from a long acceleration zone and have to judge the braking point while setting up the extended right-hand Luffield that follows.",
+   "uk": "Після довгого розгону пілотам потрібно точно обрати точку гальмування й одразу підготувати траєкторію для затяжного правого Luffield.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2940,
+     "length": 143,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Luffield"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Luffield"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t7#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The long right-hander Luffield carries another reminder of the medieval abbey.",
+   "uk": "Затяжний правий Luffield теж нагадує про середньовічне абатство.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "eaaedf3086f59b08e6ab5c40f3b5e11042e5236d1ce4d5735ed4cd37d068bd1b",
+     "offset": 2785,
+     "length": 154,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2940,
+     "length": 143,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t7#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "It was once divided into two named bends; on the current lap the challenge is patience on the throttle so the car can accelerate towards Woodcote.",
+   "uk": "Колись його поділяли на два окремі повороти; тепер головне — терпляче дозувати газ, щоб без пробуксовки прискоритися до Woodcote.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2940,
+     "length": 143,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "8ae1a39232feafac2d181ba5bfdd25fce284371d606b1b987e8def4a2da475df",
+     "offset": 905,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Woodcote is a fast right sweep that used to finish the Grand Prix lap.",
+   "uk": "Woodcote — швидка права дуга, яка раніше завершувала коло Гран-прі.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3470,
+     "length": 149,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name comes from Woodcote Park, associated with the Royal Automobile Club.",
+   "uk": "Назва походить від Woodcote Park, пов'язаного з Королівським автомобільним клубом.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote",
+      "Royal",
+      "Automobile",
+      "Club"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3470,
+     "length": 149,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote",
+      "Park"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Today it leads the car towards Copse rather than the chequered flag.",
+   "uk": "Сьогодні цей віраж веде до Copse, а не до фінішного прапора.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "e8c82c50c1c97d20777d17d78fd0e5cf71ee327f5879e235b62f375b70f809e6",
+     "offset": 3620,
+     "length": 196,
+     "numbers_covered": true,
+     "names_matched": [
+      "Copse"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Copse is a high-speed right-hander named for nearby woodland.",
+   "uk": "Copse — швидкий правий віраж, названий за сусідніми гаями.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "e8c82c50c1c97d20777d17d78fd0e5cf71ee327f5879e235b62f375b70f809e6",
+     "offset": 3620,
+     "length": 196,
+     "numbers_covered": true,
+     "names_matched": [
+      "Copse"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The approach rewards commitment, but a small mistake here can compromise the Maggotts–Becketts–Chapel sequence.",
+   "uk": "Він вимагає сміливості, але навіть невелика помилка псує вхід у зв'язку Maggotts–Becketts–Chapel.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t9",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 2021 Hamilton–Verstappen collision made this corner central to a title fight.",
+   "uk": "Зіткнення Гамільтона й Ферстаппена 2021 року зробило його частиною боротьби за титул.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": false,
+     "names_matched": [
+      "Hamilton"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t10",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 10 is the first left-hand change of direction in Silverstone's celebrated five-turn sequence.",
+   "uk": "Десятий поворот — перша ліва перекладка знаменитої п'ятиповоротної зв'язки Сільверстоуна.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": false,
+     "names_matched": [
+      "Silverstone's"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Maggotts part recalls nearby Maggot Moor.",
+   "uk": "Частина назви Maggotts походить від сусіднього Maggot Moor.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "4eec104d7bd8c929ca68b2130ebb0f1bce31d127dfb284518ca68833361240aa",
+     "offset": 4117,
+     "length": 94,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Moor"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Carrying too much speed into the opening bend leaves little room to prepare the next rapid reversal.",
+   "uk": "Надмірна швидкість на вході майже не залишає простору для наступної швидкої зміни напрямку.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t11#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t11",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 11 immediately swings the car right within the Maggotts–Becketts–Chapel complex.",
+   "uk": "В одинадцятому повороті болід одразу перекладається праворуч усередині Maggotts–Becketts–Chapel.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": false,
+     "names_matched": [
+      "Maggotts",
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": false,
+     "names_matched": [
+      "Maggotts",
+      "Becketts"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t11#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "This is not a separate braking zone: the driver is managing weight transfer and the line into the following left while the tyres remain heavily loaded.",
+   "uk": "Це не окрема зона сильного гальмування: пілот контролює перенесення навантаження й готує наступний лівий віраж, поки шини залишаються сильно навантаженими.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t12#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t12",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 12 sends the car left again through the historic sequence.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t12#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t12",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Becketts and Chapel recall the medieval chapel associated with Thomas Becket; the numbered bend is one link in a continuous rhythm, not a place to attack an isolated apex.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c1d71c1572fb61329923e1d21c8557e3ad125c392ea26c9c38c1dd03700d7060",
+     "offset": 4212,
+     "length": 230,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel",
+      "Thomas",
+      "Becket"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t13#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t13",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "At Turn 13 the car flicks right before the final left-hand exit of the complex.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t13#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t13",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Becketts name recalls the old chapel; the real driving challenge is to preserve enough balance to avoid losing speed onto Hangar Straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t14#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t14",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 14 is the final left in the Maggotts–Becketts–Chapel sequence.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 14
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": false,
+     "names_matched": [
+      "Maggotts",
+      "Becketts"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t14#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t14",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Chapel recalls the medieval building cleared for the wartime airfield; the exit matters enormously because any lost speed follows the car all along Hangar Straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Straight"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t15",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Stowe follows Hangar Straight as a fast right-hander with a demanding braking approach.",
+   "uk": "Stowe — швидкий правий віраж після Hangar Straight із непростим гальмуванням.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Straight"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t15",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The name comes from nearby Stowe School.",
+   "uk": "Його назвали на честь сусідньої школи Stowe.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "7ff758e9d83013b11fdadf021d436795bbfb263e0540363ed5ccd54ada053d00",
+     "offset": 4864,
+     "length": 239,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe",
+      "School"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d219ae2b264428163dd386fe5ccd06cb002aa17e74914812db24113d22030393",
+     "offset": 4680,
+     "length": 183,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t15",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Michael Schumacher crashed here in 1999, a reminder that the corner has consequences beyond its deceptively simple outline.",
+   "uk": "Саме тут у 1999 році потрапив в аварію Міхаель Шумахер: контур повороту здається простим, але помилки мають серйозні наслідки.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d219ae2b264428163dd386fe5ccd06cb002aa17e74914812db24113d22030393",
+     "offset": 4680,
+     "length": 183,
+     "numbers_covered": true,
+     "names_matched": [
+      "Michael",
+      "Schumacher"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t16",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Vale is the slower left-hand approach to Club after Stowe.",
+   "uk": "Vale — повільніший лівий підхід до Club після Stowe.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club"
+     ],
+     "score": 3
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d219ae2b264428163dd386fe5ccd06cb002aa17e74914812db24113d22030393",
+     "offset": 4680,
+     "length": 183,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t16",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name has competing explanations: a small dip in the otherwise flat circuit or the surrounding Aylesbury Vale district.",
+   "uk": "Походження назви пояснюють по-різному: невеликим пониженням рельєфу або назвою округи Aylesbury Vale.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "772360fffc73792d7dfcbbe7b6a64e0eabbe8a5ba26198b48ebfe713a433e394",
+     "offset": 5377,
+     "length": 121,
+     "numbers_covered": true,
+     "names_matched": [
+      "Aylesbury",
+      "Vale"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "fd5d9ed2dc999ab1cbbd36d6de606292daf531dd8a141948d8c0d7336a152d56",
+     "offset": 5104,
+     "length": 272,
+     "numbers_covered": true,
+     "names_matched": [
+      "Vale"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t16",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers brake and position the car for the final two-part corner.",
+   "uk": "Тут пілоти гальмують і розташовують болід перед фінальною двочастинною дугою.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "00e6c03c20f4899ff3d9f2167d4e9ce6fa9eb6e2a85b56c7c53548b508380104",
+     "offset": 1627,
+     "length": 175,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c1d71c1572fb61329923e1d21c8557e3ad125c392ea26c9c38c1dd03700d7060",
+     "offset": 4212,
+     "length": 230,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t17",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 17 begins Club with a left-hand change of direction after Vale.",
+   "uk": "Сімнадцятий поворот починає Club лівою перекладкою після Vale.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "fd5d9ed2dc999ab1cbbd36d6de606292daf531dd8a141948d8c0d7336a152d56",
+     "offset": 5104,
+     "length": 272,
+     "numbers_covered": false,
+     "names_matched": [
+      "Vale"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6acd61446c940c99d2028468e86f78034f5e8f830a9954888739cbf11dce9529",
+     "offset": 5499,
+     "length": 86,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t17",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The name honours the Royal Automobile Club's London clubhouse.",
+   "uk": "Назва вшановує лондонську будівлю Королівського автомобільного клубу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Royal",
+      "Automobile"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6acd61446c940c99d2028468e86f78034f5e8f830a9954888739cbf11dce9529",
+     "offset": 5499,
+     "length": 86,
+     "numbers_covered": true,
+     "names_matched": [
+      "London"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t17",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "This first part is about placing the car so that the final right-hand exit can be accelerated cleanly.",
+   "uk": "На першій частині важливо правильно розташувати машину, щоб чисто прискоритися з останньої правої дуги.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t18#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t18",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 18 completes Club and the lap with a right-hand exit onto Hamilton Straight.",
+   "uk": "Вісімнадцятий поворот завершує Club правою дугою з виходом на Hamilton Straight.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": false,
+     "names_matched": [
+      "Hamilton",
+      "Straight"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6acd61446c940c99d2028468e86f78034f5e8f830a9954888739cbf11dce9529",
+     "offset": 5499,
+     "length": 86,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t18#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner:silverstone-t18",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Club remembers the Royal Automobile Club, whose role in Silverstone's early history is also reflected in the British Grand Prix trophy.",
+   "uk": "Назва нагадує про Королівський автомобільний клуб, роль якого в ранній історії Сільверстоуна відображена й у трофеї Гран-прі Великої Британії.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club",
+      "Royal",
+      "Automobile",
+      "Silverstone's",
+      "British"
+     ],
+     "score": 16
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "46c6e1e61c92e1702f439219149c0f2aa3c1b684dda95e18b08d91765d02c722",
+     "offset": 5586,
+     "length": 191,
+     "numbers_covered": true,
+     "names_matched": [
+      "British"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Maggotts begins a rapid left-right sequence where the car changes direction several times before the run onto Hangar Straight.",
+   "uk": "Maggotts відкриває швидку зв'язку лівих і правих поворотів, де машина кілька разів змінює напрямок перед прямою Hangar.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Straight"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Becketts and Chapel take their names from local history, including a medieval chapel associated with Thomas Becket.",
+   "uk": "Назви Becketts і Chapel пов'язані з місцевою історією, зокрема середньовічною каплицею Томаса Бекета.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c1d71c1572fb61329923e1d21c8557e3ad125c392ea26c9c38c1dd03700d7060",
+     "offset": 4212,
+     "length": 230,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel",
+      "Thomas",
+      "Becket"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Watch an onboard: a poor line through the first change of direction costs speed all the way to the straight.",
+   "uk": "На відео з боліда видно: невдала траєкторія на початку зв'язки забирає швидкість аж до прямої.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Copse is the fast right-hander after Silverstone's old pit straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-2b444c96193c",
+     "passage_sha256": "d01331d5d86c4877cd47c3ce30ef904303e7686557d7173c27761e8308ed4571",
+     "offset": 1030,
+     "length": 189,
+     "numbers_covered": true,
+     "names_matched": [
+      "Silverstone's"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-2b444c96193c",
+     "passage_sha256": "b859bd2db67cb8b88f3e5ce258a013af85a30eec46e9d72967738fb341084a8f",
+     "offset": 523,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Silverstone's"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers need a precise entry because the next challenge is the Maggotts–Becketts–Chapel sequence.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-2b444c96193c",
+     "passage_sha256": "3dcb46b51c17b4fd35a1b111e8ef0544321f67d64a49793f4e98c4bacaabb8ec",
+     "offset": 3690,
+     "length": 239,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-2b444c96193c",
+     "passage_sha256": "0a95db7268908a4edac53b780278e37efe6421984ee1d509684050b53f0dec62",
+     "offset": 4026,
+     "length": 206,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The corner is named for nearby woodland; in 2021, contact between Hamilton and Verstappen here became a major moment in the title fight.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:2#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Named after the nearby Stowe School, this corner follows Hangar Straight.",
+   "uk": "Поворот названий на честь сусідньої школи Stowe й розташований після Hangar Straight.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Named",
+      "Straight"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:2#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It is a place to observe heavy braking after sustained speed.",
+   "uk": "Тут добре видно інтенсивне гальмування після довгого швидкого відрізка.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Abbey opens the lap at high speed before Village forces heavy braking.",
+   "uk": "Abbey відкриває коло на великій швидкості, але перед Village доводиться різко гальмувати.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Loop then turns cars towards Wellington Straight.",
+   "uk": "Далі The Loop розвертає боліди до Wellington Straight.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "58590e56d8fe13f48f8c700739ea3cdb7477818677b59d42e392207e988c6dec",
+     "offset": 2122,
+     "length": 132,
+     "numbers_covered": true,
+     "names_matched": [
+      "Wellington",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "843916f075f7b7b6e170fe1f25604a62867f8473a7866165ad4c2e59fc4243c8",
+     "offset": 2255,
+     "length": 197,
+     "numbers_covered": true,
+     "names_matched": [
+      "Wellington",
+      "Straight"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A late move into Village must still leave room for the slow left that follows.",
+   "uk": "Пізня атака у Village має залишити місце для наступного повільного лівого.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The Arena extension introduced Abbey, Farm, Village, The Loop and Aintree into the Grand Prix lap in 2010.",
+   "uk": "Розширення Arena 2010 року додало до кола Гран-прі Abbey, Farm, Village, The Loop та Aintree.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1009,
+     "length": 186,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farm"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "f348d11e4b7bbe0e2d209f3fdb6c547a3963b7563de38a8d653f3468fe64381a",
+     "offset": 1803,
+     "length": 224,
+     "numbers_covered": false,
+     "names_matched": [
+      "Aintree"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Older footage begins with a different sequence, so comparing corner numbers across eras without a layout year can be misleading.",
+   "uk": "На старих записах початок кола інший, тому порівнювати номери поворотів без року конфігурації оманливо.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The new route also places the heavy Village braking zone near the start of the lap.",
+   "uk": "Новий маршрут також розташував сильну зону гальмування Village поблизу початку кола.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Abbey is a rapid right-hander named for the nearby remains of Luffield Abbey.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey",
+      "Luffield"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "eaaedf3086f59b08e6ab5c40f3b5e11042e5236d1ce4d5735ed4cd37d068bd1b",
+     "offset": 2785,
+     "length": 154,
+     "numbers_covered": true,
+     "names_matched": [
+      "Abbey",
+      "Luffield"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Farm follows as a gentle left, its name inherited from a former straight beside a farm.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1009,
+     "length": 186,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farm"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "8ae1a39232feafac2d181ba5bfdd25fce284371d606b1b987e8def4a2da475df",
+     "offset": 905,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [
+      "Farm"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:5",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "These two bends reward a smooth opening line rather than heavy braking.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "8ae1a39232feafac2d181ba5bfdd25fce284371d606b1b987e8def4a2da475df",
+     "offset": 905,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2940,
+     "length": 143,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Village, named after the nearby settlement, is the first major braking zone.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c837341e90c16945f2dc29d65365e68815f4ff2bc5f0f7ae03235dea39b21052",
+     "offset": 1292,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "Village"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Loop is the slowest bend on the circuit, while Aintree recalls the British Grand Prix venue in Liverpool.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "f348d11e4b7bbe0e2d209f3fdb6c547a3963b7563de38a8d653f3468fe64381a",
+     "offset": 1803,
+     "length": 224,
+     "numbers_covered": true,
+     "names_matched": [
+      "Aintree",
+      "British",
+      "Liverpool"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d04284f16e5b20db4c35afe4670686f4e7eccf6d93129374bce4b2ca8158ed20",
+     "offset": 2453,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Aintree",
+      "British"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Getting the car rotated through the slow middle corner is essential for the acceleration that follows.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Brooklands is named for Britain's pioneering motor-racing circuit, while Luffield recalls the local abbey.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "eaaedf3086f59b08e6ab5c40f3b5e11042e5236d1ce4d5735ed4cd37d068bd1b",
+     "offset": 2785,
+     "length": 154,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brooklands",
+      "Luffield"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Woodcote takes its name from the Royal Automobile Club's estate.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote",
+      "Royal",
+      "Automobile"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3470,
+     "length": 149,
+     "numbers_covered": true,
+     "names_matched": [
+      "Woodcote"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The braking into Brooklands and the long right through Luffield set up the faster sweep of Woodcote.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "eaaedf3086f59b08e6ab5c40f3b5e11042e5236d1ce4d5735ed4cd37d068bd1b",
+     "offset": 2785,
+     "length": 154,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brooklands",
+      "Luffield"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2940,
+     "length": 143,
+     "numbers_covered": true,
+     "names_matched": [
+      "Luffield"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Copse is a very fast right-hander named for the small wooded areas nearby.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "e8c82c50c1c97d20777d17d78fd0e5cf71ee327f5879e235b62f375b70f809e6",
+     "offset": 3620,
+     "length": 196,
+     "numbers_covered": true,
+     "names_matched": [
+      "Copse"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A precise entry is crucial because the Maggotts–Becketts sequence arrives almost immediately afterwards.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "2bd737be0a138ed2530bb6eb961e6c57db98c3de42f131f2aaf2c12b7f61df41",
+     "offset": 492,
+     "length": 126,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:8",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 2021 Hamilton–Verstappen collision made this corner a central scene in that season's title fight.",
+   "uk": null,
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": false,
+     "names_matched": [
+      "Hamilton"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "These five changes of direction form one continuous high-speed sequence.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Maggotts takes its name from nearby Maggot Moor; Becketts and Chapel refer to the medieval chapel associated with Thomas Becket.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c1d71c1572fb61329923e1d21c8557e3ad125c392ea26c9c38c1dd03700d7060",
+     "offset": 4212,
+     "length": 230,
+     "numbers_covered": true,
+     "names_matched": [
+      "Becketts",
+      "Chapel",
+      "Thomas",
+      "Becket"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "c994184123af7d372a581a19d8403916c86fd047175a71e66712a5bb4885fd5c",
+     "offset": 3909,
+     "length": 207,
+     "numbers_covered": true,
+     "names_matched": [
+      "Maggotts",
+      "Becketts",
+      "Chapel"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A small error at the first apex can cost speed onto Hangar Straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1009,
+     "length": 186,
+     "numbers_covered": true,
+     "names_matched": [
+      "Straight"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "At the end of Hangar Straight, Stowe demands commitment followed by careful control of the exit.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d84cebbbe1eaf6b88d15e6719886eb73458cc78898776f4db8864ae079997a44",
+     "offset": 4443,
+     "length": 144,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hangar",
+      "Straight"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Straight"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its name comes from the nearby Stowe School.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "7ff758e9d83013b11fdadf021d436795bbfb263e0540363ed5ccd54ada053d00",
+     "offset": 4864,
+     "length": 239,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe",
+      "School"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d219ae2b264428163dd386fe5ccd06cb002aa17e74914812db24113d22030393",
+     "offset": 4680,
+     "length": 183,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:10",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The long approach makes it a natural place for a braking-zone attack, but running wide compromises the following Vale section.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "772360fffc73792d7dfcbbe7b6a64e0eabbe8a5ba26198b48ebfe713a433e394",
+     "offset": 5377,
+     "length": 121,
+     "numbers_covered": true,
+     "names_matched": [
+      "Vale"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "fd5d9ed2dc999ab1cbbd36d6de606292daf531dd8a141948d8c0d7336a152d56",
+     "offset": 5104,
+     "length": 272,
+     "numbers_covered": true,
+     "names_matched": [
+      "Vale"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Vale is the dip after Stowe; its name evokes a valley.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "fd5d9ed2dc999ab1cbbd36d6de606292daf531dd8a141948d8c0d7336a152d56",
+     "offset": 5104,
+     "length": 272,
+     "numbers_covered": true,
+     "names_matched": [
+      "Vale"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "d219ae2b264428163dd386fe5ccd06cb002aa17e74914812db24113d22030393",
+     "offset": 4680,
+     "length": 183,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stowe"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The final Club complex recalls the Royal Automobile Club.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ccbe585c311f6182d0e38766c9121f7e44fa36ce5d4eedf00356d6b260aaeeca",
+     "offset": 3084,
+     "length": 198,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club",
+      "Royal",
+      "Automobile"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "6acd61446c940c99d2028468e86f78034f5e8f830a9954888739cbf11dce9529",
+     "offset": 5499,
+     "length": 86,
+     "numbers_covered": true,
+     "names_matched": [
+      "Club"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:corner_group:11",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Drivers must change direction through Vale and then carry a clean line through the two-part Club exit to build speed onto Hamilton Straight.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "662e6bbcdbe5f615b0c5a8e981f42d3ecb6305518a189bb556139432477903ed",
+     "offset": 619,
+     "length": 285,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Hamilton",
+      "Straight"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "passage_sha256": "ef476933d09ac2b18001a8a750f44b05d7908eef694fca8c85bbab4237400612",
+     "offset": 4588,
+     "length": 91,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers",
+      "Straight"
+     ],
+     "score": 6
+    }
+   ]
+  }
+ ],
+ "corner_names": [
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t1",
+   "numbers": [
+    1
+   ],
+   "name": "Abbey",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t2",
+   "numbers": [
+    2
+   ],
+   "name": "Farm",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t3",
+   "numbers": [
+    3
+   ],
+   "name": "Village",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t4",
+   "numbers": [
+    4
+   ],
+   "name": "The Loop",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t5",
+   "numbers": [
+    5
+   ],
+   "name": "Aintree",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t6",
+   "numbers": [
+    6
+   ],
+   "name": "Brooklands",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t7",
+   "numbers": [
+    7
+   ],
+   "name": "Luffield",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t8",
+   "numbers": [
+    8
+   ],
+   "name": "Woodcote",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t9",
+   "numbers": [
+    9
+   ],
+   "name": "Copse",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t10",
+   "numbers": [
+    10
+   ],
+   "name": "Maggotts–Becketts–Chapel",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t11",
+   "numbers": [
+    11
+   ],
+   "name": "Maggotts–Becketts–Chapel",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t12",
+   "numbers": [
+    12
+   ],
+   "name": "Maggotts–Becketts–Chapel",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t13",
+   "numbers": [
+    13
+   ],
+   "name": "Maggotts–Becketts–Chapel",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t14",
+   "numbers": [
+    14
+   ],
+   "name": "Maggotts–Becketts–Chapel",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t15",
+   "numbers": [
+    15
+   ],
+   "name": "Stowe",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t16",
+   "numbers": [
+    16
+   ],
+   "name": "Vale",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t17",
+   "numbers": [
+    17
+   ],
+   "name": "Club",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-8",
+   "section_id": "silverstone-t18",
+   "numbers": [
+    18
+   ],
+   "name": "Club",
+   "numbering_year": 2025,
+   "layout_seasons": "2010-2026",
+   "cited_sources": 2,
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  }
+ ],
+ "corner_queue": [
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-1",
+   "seasons": "1950-1973",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-2",
+   "seasons": "1975-1985",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-3",
+   "seasons": "1987-1990",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-4",
+   "seasons": "1991-1993",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-5",
+   "seasons": "1994-1995",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-6",
+   "seasons": "1996-1996",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "silverstone",
+   "layout_id": "silverstone-7",
+   "seasons": "1997-2009",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  }
+ ],
+ "quality": [
+  {
+   "block_id": "silverstone:narrative_biography",
+   "circuit_id": "silverstone",
+   "kind": "narrative_biography",
+   "en_words": 25,
+   "uk_words": 24,
+   "sentences": 2,
+   "specificity": 0.24,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:moment:silverstone-1950",
+   "circuit_id": "silverstone",
+   "kind": "defining_moment",
+   "en_words": 7,
+   "uk_words": 6,
+   "sentences": 1,
+   "specificity": 0.286,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:moment:silverstone-1987",
+   "circuit_id": "silverstone",
+   "kind": "defining_moment",
+   "en_words": 8,
+   "uk_words": 8,
+   "sentences": 1,
+   "specificity": 0.25,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:moment:silverstone-1991",
+   "circuit_id": "silverstone",
+   "kind": "defining_moment",
+   "en_words": 10,
+   "uk_words": 6,
+   "sentences": 1,
+   "specificity": 0.2,
+   "lexical_diversity": 0.9,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:moment:silverstone-1998",
+   "circuit_id": "silverstone",
+   "kind": "defining_moment",
+   "en_words": 10,
+   "uk_words": 7,
+   "sentences": 1,
+   "specificity": 0,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:moment:silverstone-2008",
+   "circuit_id": "silverstone",
+   "kind": "defining_moment",
+   "en_words": 9,
+   "uk_words": 8,
+   "sentences": 1,
+   "specificity": 0.111,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:legacy_introduction",
+   "circuit_id": "silverstone",
+   "kind": "legacy_history",
+   "en_words": 19,
+   "uk_words": 14,
+   "sentences": 1,
+   "specificity": 0.263,
+   "lexical_diversity": 0.895,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:corner:silverstone-t2",
+   "circuit_id": "silverstone",
+   "kind": "corner_section",
+   "en_words": 39,
+   "uk_words": 29,
+   "sentences": 2,
+   "specificity": 0.051,
+   "lexical_diversity": 0.795,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "silverstone:corner_group:2",
+   "circuit_id": "silverstone",
+   "kind": "corner_group",
+   "en_words": 22,
+   "uk_words": 21,
+   "sentences": 2,
+   "specificity": 0.182,
+   "lexical_diversity": 0.955,
+   "flags": [
+    "shallow:short"
+   ],
+   "en_uk": []
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "src-05a991b7be3a",
+   "url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
+   "normalized": "https://fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
+   "host": "fia.com",
+   "class": "fia_official",
+   "cited_by": [
+    "silverstone:corner:silverstone-t1",
+    "silverstone:corner:silverstone-t2",
+    "silverstone:corner:silverstone-t3",
+    "silverstone:corner:silverstone-t4",
+    "silverstone:corner:silverstone-t5",
+    "silverstone:corner:silverstone-t6",
+    "silverstone:corner:silverstone-t7",
+    "silverstone:corner:silverstone-t8",
+    "silverstone:corner:silverstone-t9",
+    "silverstone:corner:silverstone-t10",
+    "silverstone:corner:silverstone-t11",
+    "silverstone:corner:silverstone-t12",
+    "silverstone:corner:silverstone-t13",
+    "silverstone:corner:silverstone-t14",
+    "silverstone:corner:silverstone-t15",
+    "silverstone:corner:silverstone-t16",
+    "silverstone:corner:silverstone-t17",
+    "silverstone:corner:silverstone-t18"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
+    "source_id": "src-05a991b7be3a",
+    "checked_at": "2026-11-16T11:22:04.382Z",
+    "http_status": 200,
+    "final_url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
+    "content_type": "application/pdf",
+    "outcome": "live_pdf_no_text",
+    "bytes_sha256": "5ef9d024c0a6b29af78595cf712d25e496638234a781882f66194d8d1e0597b9",
+    "bytes": 412401
+   }
+  },
+  {
+   "source_id": "src-2b444c96193c",
+   "url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+   "normalized": "https://formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "silverstone:corner_group:1"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+    "source_id": "src-2b444c96193c",
+    "checked_at": "2026-11-16T11:22:57.422Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/latest/article/whats-in-a-name-the-history-behind-silverstones-iconic-corners.4Q3miKVCXBkz5rKtyYnL5z",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "75930f607450073581b917c0b00bf9fa3cf517202433bd8e2c059a9b3532b73e",
+    "text_chars": 6073
+   }
+  },
+  {
+   "source_id": "src-426220cb7ae6",
+   "url": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+   "normalized": "https://formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "silverstone:narrative_biography",
+    "silverstone:moment:silverstone-1950",
+    "silverstone:moment:silverstone-1987",
+    "silverstone:moment:silverstone-1991",
+    "silverstone:moment:silverstone-1998",
+    "silverstone:moment:silverstone-2008",
+    "silverstone:legacy_moment:1"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+    "source_id": "src-426220cb7ae6",
+    "checked_at": "2026-11-16T11:23:27.998Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/latest/article/from-wet-weather-mastery-to-last-lap-shocks-10-of-the-most-memorable-wins-at.3CKqgTx7juBp8nglWBgffT.3CKqgTx7juBp8nglWBgffT",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "6ff6b6092c972fa4a86f5b60cd3a31e79424d5afb9494521366c814604b76eee",
+    "text_chars": 10667
+   }
+  },
+  {
+   "source_id": "src-5fae26c9d32a",
+   "url": "https://www.formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+   "normalized": "https://formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "silverstone:legacy_moment:0"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+    "source_id": "src-5fae26c9d32a",
+    "checked_at": "2026-11-16T11:24:03.884Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/information/great-britain-silverstone-circuit.2DtFVI1FjkYgLVdGhbAIv0",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "1300ffa80111a2c634203684dbc573edb4c138104be2c16ed151f8fc4045a3db",
+    "text_chars": 2317
+   }
+  },
+  {
+   "source_id": "src-fc0276b0cbbd",
+   "url": "https://www.formula1.com/en/latest/article/explained-how-every-silverstone-corner-got-its-name.idMlxFC2gfN2ApcPmifxN",
+   "normalized": "https://formula1.com/en/latest/article/explained-how-every-silverstone-corner-got-its-name.idMlxFC2gfN2ApcPmifxN",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "silverstone:corner:silverstone-t1",
+    "silverstone:corner:silverstone-t2",
+    "silverstone:corner:silverstone-t3",
+    "silverstone:corner:silverstone-t4",
+    "silverstone:corner:silverstone-t5",
+    "silverstone:corner:silverstone-t6",
+    "silverstone:corner:silverstone-t7",
+    "silverstone:corner:silverstone-t8",
+    "silverstone:corner:silverstone-t9",
+    "silverstone:corner:silverstone-t10",
+    "silverstone:corner:silverstone-t11",
+    "silverstone:corner:silverstone-t12",
+    "silverstone:corner:silverstone-t13",
+    "silverstone:corner:silverstone-t14",
+    "silverstone:corner:silverstone-t15",
+    "silverstone:corner:silverstone-t16",
+    "silverstone:corner:silverstone-t17",
+    "silverstone:corner:silverstone-t18",
+    "silverstone:corner_group:0",
+    "silverstone:corner_group:2",
+    "silverstone:corner_group:3",
+    "silverstone:corner_group:4",
+    "silverstone:corner_group:5",
+    "silverstone:corner_group:6",
+    "silverstone:corner_group:7",
+    "silverstone:corner_group:8",
+    "silverstone:corner_group:9",
+    "silverstone:corner_group:10",
+    "silverstone:corner_group:11"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/latest/article/explained-how-every-silverstone-corner-got-its-name.idMlxFC2gfN2ApcPmifxN",
+    "source_id": "src-fc0276b0cbbd",
+    "checked_at": "2026-11-16T11:26:38.028Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/latest/article/explained-how-every-silverstone-corner-got-its-name.idMlxFC2gfN2ApcPmifxN",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "feaef48fbe75a5b04222b0d4d17ddda1d35689261498d6e4d6f3e48eb37b967e",
+    "text_chars": 6502
+   }
+  }
+ ]
+}

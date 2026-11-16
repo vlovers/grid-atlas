@@ -1,0 +1,1713 @@
+{
+ "circuit_id": "lusail",
+ "completeness": {
+  "circuit_id": "lusail",
+  "name": "Lusail International Circuit",
+  "pilot": true,
+  "layouts": 1,
+  "sections_with_editorial_text": 3,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "absent",
+   "formula1_history": "draft",
+   "defining_moments": "absent",
+   "layout_evolution": "not_applicable",
+   "corners": "one_layout_drafted:16/16",
+   "important_races": "absent",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "absent",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 51,
+  "claims_by_type": {
+   "statistic": 4,
+   "dated_event": 24,
+   "measurement": 4,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 19
+  },
+  "claims_unaligned_uk": 4,
+  "dataset_checks": {
+   "supported": 3,
+   "conflict": 0,
+   "unmatched": 3
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 2,
+   "passages_cover_numbers": 24,
+   "passages_partial": 9,
+   "no_passage_in_live_sources": 16,
+   "cited_sources_unavailable": 0,
+   "no_cited_sources": 0
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 5,
+   "live": 4,
+   "live_pdf_no_text": 1
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 16,
+   "layouts_with_guide": 1,
+   "named_in_guide": 0,
+   "names_found_in_cited_source": 0,
+   "names_not_in_cited_text": 0,
+   "names_sources_unavailable": 0,
+   "turns_queued": 0
+  },
+  "quality": {
+   "blocks": 20,
+   "shallow": 6,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 0
+  },
+  "evidence_lead_rate": 0.51,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "lusail:short_summary#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:short_summary",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Lewis Hamilton won Qatar's inaugural Formula 1 Grand Prix at Lusail in 2021.",
+   "uk": "Льюїс Гамільтон виграв перший Гран-прі Катару Формули-1 на трасі Лусаїл 2021 року.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1055",
+       "field": "winner"
+      }
+     ],
+     "detail": "2021: Lewis Carl Davidson Hamilton matches F1DB winner."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": false,
+     "names_matched": [
+      "Lewis",
+      "Hamilton"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
+     "offset": 0,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:short_summary#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:short_summary",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The desert circuit was already familiar to motorcycle racing fans before it became part of the F1 calendar.",
+   "uk": "До появи в календарі F1 цей автодром уже був добре знайомий шанувальникам мотоперегонів.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
+     "offset": 0,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Lewis Hamilton controlled the first Qatar Grand Prix at Lusail in 2021, but the fight for third was shaped by tyre risk.",
+   "uk": "Льюїс Гамільтон контролював перший Гран-прі Катару в Лусаїлі 2021 року, але боротьбу за третє місце визначав ризик із шинами.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "7eba1843f4a604734271a76d136e440684bd1ec243b577e15fc38f69eec9e4ea",
+     "offset": 0,
+     "length": 223,
+     "numbers_covered": true,
+     "names_matched": [
+      "Lewis",
+      "Hamilton",
+      "Qatar"
+     ],
+     "score": 15
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "562abf65f29c1a1a622477ed7414d8b322513fa22f306afb2a2bf0c6ac98232a",
+     "offset": 0,
+     "length": 300,
+     "numbers_covered": false,
+     "names_matched": [
+      "Lewis",
+      "Hamilton",
+      "Qatar"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Max Verstappen recovered from a grid penalty to finish second.",
+   "uk": "Макс Ферстаппен після штрафу на старті прорвався на друге місце.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "2d7a1b95e41b4b0190a3e218d56ada2b919b00ac86b297cc299b06838a8d2c55",
+     "offset": 288,
+     "length": 65,
+     "numbers_covered": true,
+     "names_matched": [
+      "Max",
+      "Verstappen"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "eda738dc2ff8485756ee50dba193ce343cc390aad3eeec29995d9322ae1a69dd",
+     "offset": 301,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [
+      "Verstappen"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Fernando Alonso chose a one-stop strategy for Alpine even as punctures struck drivers attempting long stints, including Valtteri Bottas and Lando Norris.",
+   "uk": "Фернандо Алонсо на Alpine обрав один піт-стоп, хоча на довгих відрізках у кількох суперників, зокрема Валттері Боттаса й Ландо Норріса, пошкоджувалися шини.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fernando",
+      "Alonso",
+      "Alpine",
+      "Valtteri",
+      "Bottas",
+      "Lando",
+      "Norris"
+     ],
+     "score": 21
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "d1e332387cea89feb07b944a464afcc460968441f3bf80ec8310885611aa5001",
+     "offset": 807,
+     "length": 271,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fernando",
+      "Alonso",
+      "Alpine",
+      "Bottas",
+      "Lando",
+      "Norris"
+     ],
+     "score": 18
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Sergio Pérez was closing rapidly, but a late Virtual Safety Car after Nicholas Latifi stopped with tyre trouble eased the pressure.",
+   "uk": "Серхіо Перес стрімко наздоганяв іспанця, але пізній режим віртуального автомобіля безпеки після зупинки Ніколаса Латіфі зменшив тиск.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
+     "offset": 628,
+     "length": 276,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sergio",
+      "Virtual",
+      "Safety",
+      "Car"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "22faebb838589d9024c04ad88dc096da55a3d01721f23aab8c7aced15bd50567",
+     "offset": 2256,
+     "length": 189,
+     "numbers_covered": true,
+     "names_matched": [
+      "Virtual",
+      "Safety",
+      "Car",
+      "Latifi"
+     ],
+     "score": 11
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s5",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Alonso kept third, his first Formula 1 podium since 2014.",
+   "uk": "Алонсо втримав третє місце — перший подіум із 2014 року.",
+   "status": "passages_cover_numbers",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2014: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "c9a6ac5459d48e7b9200faf10ce62c8c2c93aebf56507a5a0a6959b707c586d4",
+     "offset": 3530,
+     "length": 74,
+     "numbers_covered": true,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "94abf8ca6f1b53e5c447537176625eb76fddcbb7cfbb197d37febd2deec004d8",
+     "offset": 523,
+     "length": 104,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 11
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s6",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The classification lists Hamilton, Verstappen and Alonso; the late drama was whether Alonso's tyres would last until the flag.",
+   "uk": "Протокол називає призерів, а напруга останніх кіл була в тому, чи витримають шини.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
+     "offset": 628,
+     "length": 276,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton",
+      "Verstappen",
+      "Alonso"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "d1e332387cea89feb07b944a464afcc460968441f3bf80ec8310885611aa5001",
+     "offset": 807,
+     "length": 271,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton",
+      "Verstappen",
+      "Alonso"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s7",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Alonso's podium was a gamble on tyre life, not simply the consequence of starting well.",
+   "uk": "Подіум Алонсо був ставкою на ресурс шин, а не просто наслідком вдалого старту.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "c9a6ac5459d48e7b9200faf10ce62c8c2c93aebf56507a5a0a6959b707c586d4",
+     "offset": 3530,
+     "length": 74,
+     "numbers_covered": true,
+     "names_matched": [
+      "Alonso's"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s8",
+   "circuit_id": "lusail",
+   "block_id": "lusail:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The punctures elsewhere and the late neutralisation explain why the final laps felt so uncertain, even though Hamilton's victory was secure.",
+   "uk": "Проколи в суперників і пізня нейтралізація пояснюють, чому останні кола були такими напруженими, хоча перемога Гамільтона вже не викликала сумнівів.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "114a5f96bdf57010808460e33731d19b658ec1892d8c98c5989ea42cde7cec1b",
+     "offset": 554,
+     "length": 252,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton's"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "805dd4c1ecefd6a962a299280f5f437bbdc4e70eb06b11c206cd0ca5d5137edd",
+     "offset": 246,
+     "length": 41,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton's"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t1#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The main straight, more than a kilometre long, ends at Turn 1.",
+   "uk": "Понад кілометрова стартова пряма закінчується першим поворотом.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "32b588dc1b331be55353b4805f865279ba044758f239bf65e2fc3d3a1e10be92",
+     "offset": 1640,
+     "length": 142,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 7
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t1#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "This is the clearest heavy-braking overtaking chance on a lap otherwise dominated by fast flowing corners.",
+   "uk": "Це найочевидніша зона гальмування для обгону на колі, де переважають плавні швидкі дуги.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t2#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 2 follows the opening braking zone and starts to rebuild the lap's rhythm.",
+   "uk": "Другий поворот відновлює ритм після стартового гальмування.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "c7e08bc253462daba52712a40806607d18c8bb3a111fe67a584bd22e5c1796a1",
+     "offset": 2374,
+     "length": 121,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t2#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A driver who overshoots the first corner arrives here with less road available for acceleration.",
+   "uk": "Той, хто занадто широко пройшов перший, отримує тут менше простору для правильного розгону.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t3#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The third numbered bend is part of Lusail's opening flowing complex.",
+   "uk": "Третій входить до початкової плавної зв'язки Лусаїла.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t3#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Rather than braking heavily at every apex, drivers carry speed through linked steering inputs and manage the tyres' lateral load.",
+   "uk": "Замість сильного гальмування перед кожним апексом пілоти зберігають швидкість у послідовних перекладках і контролюють бокове навантаження шин.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t4#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 4 continues the fast opening sequence.",
+   "uk": "Четвертий продовжує швидку стартову серію.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "18bbd2d41f13bd520edef2a376599a83911a2ec8287f2c1d686cf8dc1dec2249",
+     "offset": 2004,
+     "length": 192,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t4#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Its exit has to prepare the car for Turn 5; an aggressive correction here can spoil the approach to the next sector boundary.",
+   "uk": "На виході потрібно підготувати болід до п'ятого: різке коригування траєкторії ускладнить підхід до межі наступного сектору.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t5#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t5",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 5 is the last numbered bend before the first sector split on the 2025 FIA map.",
+   "uk": "П'ятий — останній поворот перед першою секторною відміткою на схемі FIA 2025 року.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t5#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t5",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The timing line lies 80 metres before Turn 6, so this exit shapes the start of the next sector.",
+   "uk": "Лінія стоїть за 80 метрів до шостого, тому вихід із п'ятого визначає початок наступного сектору.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t6#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t6",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 6 starts a fresh group of linked bends after the first sector split.",
+   "uk": "Шостий відкриває нову групу пов'язаних віражів після межі першого сектору.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t6#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The driver has to balance corner speed against the need to place the car cleanly for the following direction changes.",
+   "uk": "Потрібно поєднати швидкість у дузі з точним положенням боліда перед наступними змінами напрямку.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t7#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 7 follows closely enough that the previous exit still matters.",
+   "uk": "Сьомий розташований настільки близько, що вихід із попереднього визначає траєкторію.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t7#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Lusail was originally built for motorcycle racing, and this flowing sequence rewards a continuous line rather than repeated stop-start acceleration.",
+   "uk": "Лусаїл спершу будували для мотоперегонів, тому плавна зв'язка винагороджує безперервну лінію, а не часті розгони й гальмування.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "f4d5326cc6a901a6b08b2193018067e9198531e073565595637a27a43bf63838",
+     "offset": 1463,
+     "length": 176,
+     "numbers_covered": true,
+     "names_matched": [
+      "Lusail"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [
+      "Lusail"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t8#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t8",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 8 carries the driver further through the fast middle sector.",
+   "uk": "Восьмий веде далі швидким середнім сектором.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t8#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The challenge is keeping a settled platform while changing direction, since even a small slide can affect the next numbered bend.",
+   "uk": "Завдання — зберегти баланс під час зміни напрямку, адже навіть невелике ковзання вплине на наступний віраж.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t9#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t9",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 9 continues the long rhythm of medium- and high-speed corners.",
+   "uk": "Дев'ятий продовжує тривалу серію середньо- й швидкісних дуг.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t9#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Tyre temperature matters here: repeated lateral loading can make the car less willing to hold the intended line.",
+   "uk": "Тут важлива температура шин: повторне бокове навантаження може погіршити здатність боліда тримати потрібну траєкторію.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t10#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t10",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 10 is another fast link in the middle sector, not a conventional street-circuit hairpin.",
+   "uk": "Десятий — ще одна швидка ланка середнього сектору, а не типова міська шпилька.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "8843d5413695fb5cb05f363b4a8f7a61ad0dc823a9c7f88a65037b776bc70297",
+     "offset": 1262,
+     "length": 175,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t10#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t10",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Drivers aim for minimum scrub and a clean exit into Turn 11 rather than one late braking manoeuvre.",
+   "uk": "Пілоти мінімізують ковзання й готують чистий вхід в одинадцятий замість одного пізнього гальмування.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": false,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t11#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t11",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 11 completes the approach towards the second sector boundary.",
+   "uk": "Одинадцятий завершує підхід до межі другого сектору.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t11#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t11",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "On the 2025 FIA plan the split is 75 metres before Turn 12, making this exit important for the timing transition.",
+   "uk": "На схемі FIA 2025 року лінія стоїть за 75 метрів до дванадцятого, тому вихід впливає на перехід між секторами.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 5
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t12#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t12",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 12 opens the long closing sequence of Lusail's flowing corners.",
+   "uk": "Дванадцятий відкриває довгу фінальну зв'язку плавних поворотів Лусаїла.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t12#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t12",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The driver needs stable aerodynamic grip and a consistent line, because several more bends follow without a full straight-line reset.",
+   "uk": "Потрібні стабільне аеродинамічне зчеплення й послідовна траєкторія: попереду ще кілька дуг без довгої прямої.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t13#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t13",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 13 is part of the demanding final run, where the car remains loaded from one bend to the next.",
+   "uk": "Тринадцятий входить до складної завершальної серії, де навантаження переходить з одного віражу на інший.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 6
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t13#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t13",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The quickest lap is built by avoiding a slide that would compromise Turn 14.",
+   "uk": "Найкращий час дає відсутність ковзання, яке зіпсувало б чотирнадцятий.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t14#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t14",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "At Turn 14, drivers continue the fast final-sector rhythm rather than slowing for a separate hairpin.",
+   "uk": "У чотирнадцятому пілоти зберігають швидкий ритм фінального сектору, а не гальмують перед окремою шпилькою.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t14#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t14",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The following Turn 15 also determines how the car approaches the last corner.",
+   "uk": "Наступний п'ятнадцятий визначає підхід до останнього віражу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t15#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t15",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Turn 15 prepares the entry to the last corner.",
+   "uk": "П'ятнадцятий готує вхід до останнього повороту.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t15#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t15",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The FIA's 2025 DRS detection marker sits 40 metres after this turn, but that marker is an operational point, not a corner name.",
+   "uk": "На схемі FIA 2025 року точка вимірювання DRS стоїть за 40 метрів після нього, проте це службова позначка, а не назва віражу.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 6
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t16#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t16",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The final Turn 16 determines the launch onto Lusail's kilometre-long main straight.",
+   "uk": "Останній шістнадцятий визначає розгін на кілометрову стартову пряму.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t16#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner:lusail-t16",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "A tidy exit matters greatly: the 2025 FIA map places DRS activation 305 metres after the corner.",
+   "uk": "Чистий вихід особливо важливий: схема FIA 2025 року розташовує активацію DRS за 305 метрів після повороту.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 5
+    },
+    {
+     "source_id": "src-46370b2f5cef",
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:0",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Hamilton won Qatar's first Formula 1 Grand Prix at Lusail in 2021, but the last podium place was decided by tyre management.",
+   "uk": null,
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1055",
+       "field": "winner"
+      }
+     ],
+     "detail": "2021: Lewis Carl Davidson Hamilton matches F1DB winner."
+    },
+    {
+     "kind": "first_race",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "First championship race 2021 matches F1DB."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
+     "offset": 0,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    },
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": false,
+     "names_matched": [
+      "Hamilton"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Alonso stayed on a one-stop strategy as long stints caused punctures elsewhere.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": true,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Pérez closed in, only for a late Virtual Safety Car to ease the pressure.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:0",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Alonso held third for his first podium since 2014.",
+   "uk": null,
+   "status": "passages_partial",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2014: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Hamilton won Lusail's first F1 Grand Prix, but the late suspense belonged to Alonso.",
+   "uk": "Гамільтон виграв перший Гран-прі Формули-1 у Лусаїлі, але наприкінці найбільша інтрига була навколо Алонсо.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "562abf65f29c1a1a622477ed7414d8b322513fa22f306afb2a2bf0c6ac98232a",
+     "offset": 0,
+     "length": 300,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
+     "offset": 628,
+     "length": 276,
+     "numbers_covered": false,
+     "names_matched": [
+      "Hamilton",
+      "Alonso"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Alpine kept him on a one-stop strategy while long tyre stints caused punctures for Bottas and Norris.",
+   "uk": "Alpine залишила його на стратегії з одним піт-стопом, хоча через довгі відрізки шини пошкоджувалися у Боттаса й Норріса.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "9bb90b3f8c5230e523675614ffa359222f750f35e201def891f02349223e1219",
+     "offset": 3642,
+     "length": 279,
+     "numbers_covered": true,
+     "names_matched": [
+      "Alpine",
+      "Norris"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "8a330288294cf03946ea4e8a8e989778c26c1254827c8acd3cfe10f6907b5c13",
+     "offset": 3137,
+     "length": 191,
+     "numbers_covered": true,
+     "names_matched": [
+      "Bottas"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Pérez was closing on the final podium place when a late Virtual Safety Car reduced the pressure.",
+   "uk": "Перес наздоганяв іспанця, доки пізній режим віртуального автомобіля безпеки не зменшив тиск.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
+     "offset": 628,
+     "length": 276,
+     "numbers_covered": true,
+     "names_matched": [
+      "Virtual",
+      "Safety",
+      "Car"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "96fecc8eede8b8206e58d5cfaa2a3c2467497a0abf9a6680c2de68950e07e69c",
+     "offset": 4254,
+     "length": 239,
+     "numbers_covered": true,
+     "names_matched": [
+      "Virtual",
+      "Safety",
+      "Car"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Alonso finished third, his first F1 podium since 2014.",
+   "uk": "Алонсо став третім — уперше на подіумі з 2014 року.",
+   "status": "passages_partial",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2014: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "94abf8ca6f1b53e5c447537176625eb76fddcbb7cfbb197d37febd2deec004d8",
+     "offset": 523,
+     "length": 104,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "96fecc8eede8b8206e58d5cfaa2a3c2467497a0abf9a6680c2de68950e07e69c",
+     "offset": 4254,
+     "length": 239,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s5",
+   "circuit_id": "lusail",
+   "block_id": "lusail:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The result names the top three; the tyre gamble explains the fight for the last podium spot.",
+   "uk": "Результат називає призерів, а шинний ризик пояснює боротьбу за останнє місце на подіумі.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  }
+ ],
+ "corner_names": [],
+ "corner_queue": [],
+ "quality": [
+  {
+   "block_id": "lusail:corner:lusail-t2",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 29,
+   "uk_words": 20,
+   "sentences": 2,
+   "specificity": 0.034,
+   "lexical_diversity": 0.931,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "lusail:corner:lusail-t3",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 31,
+   "uk_words": 24,
+   "sentences": 2,
+   "specificity": 0.032,
+   "lexical_diversity": 0.968,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "lusail:corner:lusail-t6",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 34,
+   "uk_words": 23,
+   "sentences": 2,
+   "specificity": 0.029,
+   "lexical_diversity": 0.853,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "lusail:corner:lusail-t7",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 31,
+   "uk_words": 27,
+   "sentences": 2,
+   "specificity": 0.032,
+   "lexical_diversity": 1,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "lusail:corner:lusail-t8",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 32,
+   "uk_words": 21,
+   "sentences": 2,
+   "specificity": 0.031,
+   "lexical_diversity": 0.875,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "lusail:corner:lusail-t9",
+   "circuit_id": "lusail",
+   "kind": "corner_section",
+   "en_words": 29,
+   "uk_words": 22,
+   "sentences": 2,
+   "specificity": 0.034,
+   "lexical_diversity": 0.931,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "src-2e17b165b057",
+   "url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
+   "normalized": "https://fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
+   "host": "fia.com",
+   "class": "fia_official",
+   "cited_by": [
+    "lusail:corner:lusail-t1",
+    "lusail:corner:lusail-t2",
+    "lusail:corner:lusail-t3",
+    "lusail:corner:lusail-t4",
+    "lusail:corner:lusail-t5",
+    "lusail:corner:lusail-t6",
+    "lusail:corner:lusail-t7",
+    "lusail:corner:lusail-t8",
+    "lusail:corner:lusail-t9",
+    "lusail:corner:lusail-t10",
+    "lusail:corner:lusail-t11",
+    "lusail:corner:lusail-t12",
+    "lusail:corner:lusail-t13",
+    "lusail:corner:lusail-t14",
+    "lusail:corner:lusail-t15",
+    "lusail:corner:lusail-t16"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
+    "source_id": "src-2e17b165b057",
+    "checked_at": "2026-11-16T11:22:55.406Z",
+    "http_status": 200,
+    "final_url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
+    "content_type": "application/pdf",
+    "outcome": "live_pdf_no_text",
+    "bytes_sha256": "55e8419df2c7977259f95e1645907d42f367254e6693f65e2f025df19d8b4cf2",
+    "bytes": 410454
+   }
+  },
+  {
+   "source_id": "src-46370b2f5cef",
+   "url": "https://www.formula1.com/en/racing/2025/qatar",
+   "normalized": "https://formula1.com/en/racing/2025/qatar",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "lusail:corner:lusail-t1",
+    "lusail:corner:lusail-t2",
+    "lusail:corner:lusail-t3",
+    "lusail:corner:lusail-t4",
+    "lusail:corner:lusail-t5",
+    "lusail:corner:lusail-t6",
+    "lusail:corner:lusail-t7",
+    "lusail:corner:lusail-t8",
+    "lusail:corner:lusail-t9",
+    "lusail:corner:lusail-t10",
+    "lusail:corner:lusail-t11",
+    "lusail:corner:lusail-t12",
+    "lusail:corner:lusail-t13",
+    "lusail:corner:lusail-t14",
+    "lusail:corner:lusail-t15",
+    "lusail:corner:lusail-t16"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/racing/2025/qatar",
+    "source_id": "src-46370b2f5cef",
+    "checked_at": "2026-11-16T11:23:37.270Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/racing/2025/qatar",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "ad4bcf14ca6cc1eee3c4d4cf76f22afca81df3009b920c49df8a70104caee17e",
+    "text_chars": 3615
+   }
+  },
+  {
+   "source_id": "src-4f4029399294",
+   "url": "https://www.bbc.co.uk/sport/formula1/59367052",
+   "normalized": "https://bbc.co.uk/sport/formula1/59367052",
+   "host": "bbc.co.uk",
+   "class": "publication",
+   "cited_by": [
+    "lusail:long_history_draft",
+    "lusail:corner_group:1"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.bbc.co.uk/sport/formula1/59367052",
+    "source_id": "src-4f4029399294",
+    "checked_at": "2026-11-16T11:22:06.432Z",
+    "http_status": 200,
+    "final_url": "https://www.bbc.co.uk/sport/formula1/59367052",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "3ea0a20da2c6fa84858276213666ce658ed9a4dbd182b40db2450d045bc3bb14",
+    "text_chars": 8765
+   }
+  },
+  {
+   "source_id": "src-bc638cbca6a3",
+   "url": "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html",
+   "normalized": "https://grandprix.com/races/qatar-gp-2021-race-analysis.html",
+   "host": "grandprix.com",
+   "class": "publication",
+   "cited_by": [
+    "lusail:long_history_draft"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html",
+    "source_id": "src-bc638cbca6a3",
+    "checked_at": "2026-11-16T11:29:53.478Z",
+    "http_status": 200,
+    "final_url": "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "f36504e02241d59efdf69ad7f9c43ad5f975fdad93d9bdb5845d8c495d50f7c3",
+    "text_chars": 4914
+   }
+  },
+  {
+   "source_id": "src-cf227b1fbbf6",
+   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+   "normalized": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+   "host": "github.com",
+   "class": "f1db_dataset",
+   "cited_by": [
+    "lusail:short_summary",
+    "lusail:long_history_draft",
+    "lusail:corner_group:0"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+    "source_id": "src-cf227b1fbbf6",
+    "checked_at": "2026-11-16T11:23:12.770Z",
+    "http_status": 200,
+    "final_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/20-qatar/race-results.yml",
+    "content_type": "text/html",
+    "outcome": "live",
+    "text_sha256": "7d3217a3394590a7764757b23c94fc946fb098f87b908f851a615ab15b8db2b8",
+    "text_chars": 7527
+   }
+  }
+ ]
+}

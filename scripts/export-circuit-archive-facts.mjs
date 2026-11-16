@@ -30,7 +30,10 @@ race AS (
     (SELECT json_agg(DISTINCT de.external_id) FROM historical_race_results x JOIN historical_drivers dr ON dr.id = x.driver_id
        JOIN external_identities de ON de.id = dr.external_identity_id WHERE x.race_id = r.id AND x.pole_position) AS pole,
     (SELECT json_agg(DISTINCT de.external_id) FROM historical_race_results x JOIN historical_drivers dr ON dr.id = x.driver_id
-       JOIN external_identities de ON de.id = dr.external_identity_id WHERE x.race_id = r.id AND x.fastest_lap) AS fastest_lap
+       JOIN external_identities de ON de.id = dr.external_identity_id WHERE x.race_id = r.id AND x.fastest_lap) AS fastest_lap,
+    (SELECT json_agg(json_build_object('position', x.position_number, 'driver', de.external_id) ORDER BY x.position_number, de.external_id)
+       FROM historical_race_results x JOIN historical_drivers dr ON dr.id = x.driver_id
+       JOIN external_identities de ON de.id = dr.external_identity_id WHERE x.race_id = r.id AND x.position_number BETWEEN 1 AND 3) AS podium
   FROM historical_races r JOIN external_identities ei ON ei.id = r.external_identity_id
   JOIN historical_race_circuit_facts f ON f.race_id = r.id)
 SELECT json_build_object(
@@ -49,9 +52,14 @@ SELECT json_build_object(
       'races', (SELECT COALESCE(json_agg(json_build_object(
           'race_id', r.race_external_id, 'season', r.season_year, 'round', r.round, 'date', r.race_date, 'name', r.official_name,
           'has_results', r.has_results, 'winners', COALESCE(r.winners, '[]'), 'winning_constructors', COALESCE(r.winning_constructors, '[]'),
-          'pole', COALESCE(r.pole, '[]'), 'fastest_lap', COALESCE(r.fastest_lap, '[]')) ORDER BY r.race_date), '[]')
+          'pole', COALESCE(r.pole, '[]'), 'fastest_lap', COALESCE(r.fastest_lap, '[]'), 'podium', COALESCE(r.podium, '[]')) ORDER BY r.race_date), '[]')
         FROM race r WHERE r.circuit_id = c.id)
-    ) ORDER BY c.circuit_id) FROM circ c)
+    ) ORDER BY c.circuit_id) FROM circ c),
+  -- Identity tables let prose checks recognise people and teams by their F1DB slug.
+  'drivers', (SELECT json_object_agg(e.external_id, d.display_name ORDER BY e.external_id)
+    FROM historical_drivers d JOIN external_identities e ON e.id = d.external_identity_id),
+  'constructors', (SELECT json_object_agg(e.external_id, c.display_name ORDER BY e.external_id)
+    FROM historical_constructors c JOIN external_identities e ON e.id = c.external_identity_id)
 )`;
 
 // Separate -c commands run in one session; only the SELECT produces output.
