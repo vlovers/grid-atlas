@@ -60,3 +60,30 @@ test('M1. a statement the dataset contradicts fails whatever its sources', () =>
   assert.notEqual(decision.outcome, 'PASS');
   assert.ok(codes(decision).includes('dataset_contradiction'));
 });
+
+// Round-5 review (#421 H1 remainder): adding a weak source must not switch off canonical-block binding,
+// tier A is reserved for canonical claims, and block prose itself is checked for dataset contradictions.
+test('H1 remainder. a canonical claim that also cites a source still binds its block', () => {
+  const item = datasetOnly('Fixture Driver won the 1961 race.', 'Перегони 1961 року виграв Fixture Driver.');
+  item.claims[1].evidence.push({ source_id: 's-a', excerpt: 'Fixture Driver won that first race in 1961', locator: 'para 2' });
+  verify(item, item.claims[1], datasetVerifier, 'dataset_comparison');
+  item.blocks[0].body = { en: 'Fixture Driver lost the 1961 race to a rival.', uk: 'Перегони 1961 року виграв Fixture Driver.' };
+  const decision = run(seal(item));
+  assert.notEqual(decision.outcome, 'PASS');
+  assert.ok(codes(decision).includes('block_not_canonical'));
+});
+
+test('tier A is only for items whose claims are all canonical', () => {
+  const prose = run(validItem()); // prose winner claim with two publishers
+  assert.equal(prose.outcome, 'PASS');
+  assert.equal(prose.tier, 'B');
+});
+
+test('block prose that the dataset contradicts fails', () => {
+  const item = validItem();
+  const decision = run(item, { datasetConflicts: claim => (/lost/.test(claim.statement?.en ?? '') ? ['block contradicts F1DB'] : []) });
+  assert.equal(decision.outcome, 'PASS', 'no contradiction in the fixture prose');
+  item.blocks[0].body.en = item.blocks[0].body.en.replace('Fixture Driver won that first race.', 'Fixture Driver lost that first race.');
+  const contradicted = run(seal(item), { datasetConflicts: claim => (/lost/.test(claim.statement?.en ?? '') ? ['block contradicts F1DB'] : []) });
+  assert.ok(codes(contradicted).includes('block_dataset_contradiction'));
+});
