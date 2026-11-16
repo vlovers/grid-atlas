@@ -4,11 +4,13 @@ import type {
   PolicyContext, SourceEvidence, SourceSnapshot,
 } from './model.ts';
 import {
-  boilerplateHits, containsPhrase, cyrillicShare, hasPlaceholder, looksLikeInstruction, numberTokens,
+  boilerplateHits, containsPhrase, cyrillicShare, hasNonAsciiDigits, hasPlaceholder, looksLikeInstruction, numberTokens,
   paragraphs, registrableDomain, significantNumbers, similarity,
 } from './text.ts';
 
 const LOCALES: Locale[] = ['en', 'uk'];
+/** Claim types for which agreement with the pinned dataset is sufficient evidence on its own. */
+const STRUCTURED_CLAIMS = new Set(['structured_statistic', 'date', 'layout_fact']);
 const MIN_EXCERPT = 20;
 const DUPLICATE_THRESHOLD = 0.6;
 
@@ -22,9 +24,10 @@ const publisherKey = (source: SourceSnapshot) => {
   try { return registrableDomain(new URL(source.url).hostname); } catch { return source.publisher.trim().toLowerCase(); }
 };
 const time = (value: string | null | undefined) => (value ? Date.parse(value) : Number.NaN);
-/** Two agent records are the same actor if either the identity or the execution matches. */
+const actorKey = (value: unknown) => String(value ?? '').normalize('NFKC').trim().toLowerCase();
+/** Two agent records are the same actor if either the identity or the execution matches (case/space-insensitive). */
 export const sameActor = (a: AgentRef | null, b: AgentRef | null) =>
-  Boolean(a && b && (a.id === b.id || a.run_id === b.run_id));
+  Boolean(a && b && (actorKey(a.id) === actorKey(b.id) || actorKey(a.run_id) === actorKey(b.run_id)));
 
 function result(gate: GateName, findings: Finding[], warnings: Finding[] = [], whenFailing: GateStatus = 'fail'): GateResult {
   return { gate, status: findings.length ? whenFailing : 'pass', findings, warnings };
@@ -94,7 +97,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const supportingText: string[] = [];
   const publishers = new Set<string>();
   const citedSources: SourceSnapshot[] = [];
-  let datasetSupport = 0;
+  let datasetSupport = 0, datasetCorroboration = 0;
   for (const evidence of claim.evidence ?? []) {
     if (isSourceEvidence(evidence)) {
       const source = sources.get(evidence.source_id);
@@ -110,13 +113,20 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       const ref = evidence.dataset_ref;
       if (!ref || typeof ref !== 'object') throw new TypeError(`claim ${claim.claim_id}: evidence is neither a source excerpt nor a dataset reference`);
       if (ref.release !== ctx.pinned_dataset_release) { fail('dataset_release_outdated', `References ${ref.dataset} ${ref.release}; pinned release is ${ctx.pinned_dataset_release}.`); continue; }
-      const actual = ctx.dataset(ref);
-      if (actual === undefined || actual === null) { fail('dataset_record_missing', `No ${ref.record}.${ref.field} in the pinned dataset.`); continue; }
-      if (claim.value !== undefined && claim.value !== null && String(claim.value).trim() !== String(actual).trim())
-        { fail('dataset_value_mismatch', `Claim value "${claim.value}" differs from dataset value "${actual}".`); continue; }
-      // The record key (e.g. "race:1988-brazil") is part of what the dataset attests.
-      supportingText.push(String(actual), ref.record);
-      datasetSupport++;
+      const found = ctx.dataset(ref);
+      if (found === undefined || found === null) { fail('dataset_record_missing', `No ${ref.record}.${ref.field} in the pinned dataset.`); continue; }
+      const actual = typeof found === 'object' ? found.value : found;
+      const mentions = typeof found === 'object' ? found.mentions : [];
+      if (evidence.value === undefined || evidence.value === null || String(evidence.value).trim() === '')
+        { fail('dataset_value_missing', 'Dataset evidence must state the value it relies on.'); continue; }
+      if (String(evidence.value).trim() !== String(actual).trim())
+        { fail('dataset_value_mismatch', `Evidence value "${evidence.value}" differs from dataset value "${actual}".`); continue; }
+      // The record must be about what the sentence says: its value (or a dataset-supplied name for it) is stated.
+      if (![String(actual), ...mentions].some(form => containsPhrase(claim.statement?.en ?? '', form)))
+        { fail('dataset_value_not_stated', `Statement does not state ${ref.record}.${ref.field} ("${actual}").`); continue; }
+      supportingText.push(String(actual));
+      // Dataset agreement suffices only for structured claims; narrative claims still need sources.
+      if (STRUCTURED_CLAIMS.has(claim.claim_type)) datasetSupport++; else datasetCorroboration++;
     }
   }
 
@@ -139,7 +149,8 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const requireRecord = () => {
     if (!v || v.method === 'none' || !v.verifier || !nonEmpty(v.verified_at) || Number.isNaN(time(v.verified_at)))
       { fail('verification_incomplete', 'Verification needs a method, verifier and valid timestamp.'); return; }
-    if (v.claim_sha256 !== claimDigest(claim)) fail('verification_stale', 'Claim changed after it was verified.');
+    if (v.claim_sha256 !== claimDigest(claim, item.sources)) fail('verification_stale', 'Claim or a cited snapshot changed after it was verified.');
+    if (!(time(v.verified_at) <= time(ctx.evaluated_at))) fail('verified_in_future', 'Verification is dated after this evaluation.');
     for (const source of citedSources) if (!(time(source.retrieved_at) <= time(v.verified_at)))
       fail('verified_before_retrieval', `Verification predates retrieval of ${source.source_id}.`);
   };
@@ -151,7 +162,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       if (v.method === 'dataset_comparison' && !datasetSupport) fail('verification_method_mismatch', 'Dataset comparison claimed without a dataset reference.');
       break;
     case 'disputed':
-      if (claim.presentation !== 'conflict_disclosed' || publishers.size + datasetSupport < 2)
+      if (claim.presentation !== 'conflict_disclosed' || publishers.size + datasetSupport + datasetCorroboration < 2)
         quarantine('dispute_undisclosed', 'Disputed claims publish only as a disclosed conflict backed by two positions.');
       else requireRecord();
       break;
@@ -168,6 +179,8 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
   const f: Finding[] = [], u: Finding[] = [];
   const claims = new Map(item.claims.map(claim => [claim.claim_id, claim]));
   const cited = new Set(item.blocks.flatMap(block => block.claim_ids));
+  if (item.dataset_release !== ctx.pinned_dataset_release)
+    f.push({ code: 'item_dataset_release_mismatch', target: 'item', message: `Item targets ${item.dataset_release}; pinned release is ${ctx.pinned_dataset_release}.` });
   for (const id of cited) {
     const claim = claims.get(id);
     if (!claim) continue; // schema gate reports it
@@ -179,7 +192,8 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
     if (!block.claim_ids.length) f.push({ code: 'uncited_block', target: block.block_id, message: 'Block cites no claims.' });
     const backing = new Set(block.claim_ids.flatMap(id => {
       const claim = claims.get(id);
-      return claim ? [...numberTokens(claim.statement.en), ...numberTokens(claim.statement.uk), ...numberTokens(String(claim.value ?? ''))] : [];
+      // Only statement numbers are backing: they are the ones checkClaim proves against evidence.
+      return claim ? [...numberTokens(claim.statement.en), ...numberTokens(claim.statement.uk)] : [];
     }));
     for (const locale of LOCALES) for (const n of new Set(numberTokens(block.body?.[locale] ?? ''))) if (!backing.has(n))
       f.push({ code: 'block_number_unclaimed', target: `${block.block_id}.${locale}`, message: `"${n}" in the text is not backed by any cited claim.` });
@@ -194,13 +208,22 @@ export function independenceGate(item: ContentItem): GateResult {
   const f: Finding[] = [];
   const { writer, fact_checker, localizer } = item.authorship;
   const verifierRoles = new Set(['fact_check', 'automated_verifier', 'human']);
+  const role = (actor: AgentRef | null, allowed: string[], code: string, label: string) => {
+    if (actor && !allowed.includes(actor.role)) f.push({ code, target: 'item', message: `${label} has role "${actor.role}".` });
+  };
   if (!fact_checker) f.push({ code: 'fact_checker_missing', target: 'item', message: 'No independent fact-checker recorded.' });
   else if (sameActor(writer, fact_checker)) f.push({ code: 'self_fact_check', target: 'item', message: 'Writer and fact-checker are the same actor or run.' });
+  role(fact_checker, ['fact_check', 'human'], 'fact_checker_role_invalid', 'Fact-checker');
+  role(localizer, ['localization', 'human'], 'localizer_role_invalid', 'Localizer');
+  role(item.editorial_review?.reviewer ?? null, ['editorial_review', 'human'], 'reviewer_role_invalid', 'Editorial reviewer');
   for (const claim of item.claims) {
     const verifier = claim.verification?.verifier ?? null;
     if ((claim.verification?.status === 'verified' || claim.verification?.status === 'disputed') && verifier) {
       if (sameActor(writer, verifier)) f.push({ code: 'self_verification', target: claim.claim_id, message: 'Claim verified by its writer.' });
       if (!verifierRoles.has(verifier.role)) f.push({ code: 'verifier_role_invalid', target: claim.claim_id, message: `Role "${verifier.role}" cannot verify claims.` });
+      // A fact-check verdict must come from the item's recorded fact-checker, not any agent claiming the role.
+      if (verifier.role === 'fact_check' && !sameActor(verifier, fact_checker)) f.push({ code: 'verifier_not_recorded_fact_checker', target: claim.claim_id, message: 'Verifier is not the recorded fact-checker.' });
+      if (sameActor(verifier, localizer)) f.push({ code: 'localizer_verified_claim', target: claim.claim_id, message: 'The localizer cannot verify claims.' });
     }
   }
   const review = item.editorial_review;
@@ -219,13 +242,17 @@ export function editorialGate(item: ContentItem, ctx: PolicyContext): GateResult
       const text = block.body?.[locale] ?? '';
       if (!nonEmpty(text)) continue; // localization gate reports it
       if (hasPlaceholder(text)) f.push({ code: 'placeholder', target: `${block.block_id}.${locale}`, message: 'Unfinished or placeholder text.' });
+      if (hasNonAsciiDigits(text)) f.push({ code: 'non_ascii_digits', target: `${block.block_id}.${locale}`, message: 'Digits outside 0–9 cannot be checked against evidence.' });
       const hits = boilerplateHits(text, locale);
       if (hits.length >= 2) f.push({ code: 'boilerplate', target: `${block.block_id}.${locale}`, message: `Generic phrasing: ${hits.join(', ')}.` });
     }
     for (const link of block.links) if (!ctx.known_routes.has(link)) f.push({ code: 'broken_internal_link', target: block.block_id, message: `Unknown archive route ${link}.` });
   }
-  for (const claim of item.claims) for (const locale of LOCALES)
-    if (hasPlaceholder(claim.statement?.[locale] ?? '')) f.push({ code: 'placeholder', target: `${claim.claim_id}.${locale}`, message: 'Unfinished or placeholder claim text.' });
+  for (const claim of item.claims) for (const locale of LOCALES) {
+    const text = claim.statement?.[locale] ?? '';
+    if (hasPlaceholder(text)) f.push({ code: 'placeholder', target: `${claim.claim_id}.${locale}`, message: 'Unfinished or placeholder claim text.' });
+    if (hasNonAsciiDigits(text)) f.push({ code: 'non_ascii_digits', target: `${claim.claim_id}.${locale}`, message: 'Digits outside 0–9 cannot be checked against evidence.' });
+  }
   const own = item.blocks.map(block => ({ id: block.block_id, text: block.body?.en ?? '' }));
   for (let i = 0; i < own.length; i++) {
     for (let j = i + 1; j < own.length; j++) if (similarity(own[i].text, own[j].text) >= DUPLICATE_THRESHOLD)
@@ -264,15 +291,19 @@ export function mediaProblems(asset: MediaUse, item: ContentItem, ctx: PolicyCon
   const problems: string[] = [];
   if (!isHttps(asset.source_url) || !nonEmpty(asset.creator)) problems.push('provenance_unknown');
   const id = asset.license?.identifier ?? null;
-  if (!nonEmpty(id) || !isHttps(asset.license?.url)) problems.push('license_undocumented');
-  else if (!ctx.license_allowlist.includes(id)) problems.push('license_not_allowed');
+  // "CC BY NC 4.0", "cc-by-nc-4.0" → "CC-BY-NC-4.0" before any licence rule is applied.
+  const license = nonEmpty(id) ? id.trim().toUpperCase().replace(/[\s_]+/g, '-') : '';
+  if (!license || !isHttps(asset.license?.url)) problems.push('license_undocumented');
+  else if (!ctx.license_allowlist.map(x => x.toUpperCase()).includes(license)) problems.push('license_not_allowed');
   const evidence = item.sources.find(source => source.source_id === asset.license?.evidence_source_id);
-  if (!evidence || sha256(evidence.text) !== evidence.content_sha256 || !nonEmpty(id) || !containsPhrase(evidence.text, id))
+  // The licence statement must come from the asset's own page, not any page that mentions the licence.
+  if (!evidence || sha256(evidence.text) !== evidence.content_sha256 || !nonEmpty(id) || !containsPhrase(evidence.text, id)
+    || !nonEmpty(asset.source_url) || evidence.url !== asset.source_url)
     problems.push('license_evidence_missing');
-  if (nonEmpty(id) && /^CC-BY/i.test(id) && !nonEmpty(asset.attribution)) problems.push('attribution_missing');
-  if (nonEmpty(id) && /-ND\b/i.test(id) && nonEmpty(asset.modifications)) problems.push('derivative_not_permitted');
+  if (/^CC-BY/.test(license) && !nonEmpty(asset.attribution)) problems.push('attribution_missing');
+  if (/-ND\b/.test(license) && nonEmpty(asset.modifications)) problems.push('derivative_not_permitted');
   // A caller's allowlist cannot make a non-commercial licence acceptable.
-  if (nonEmpty(id) && /-NC\b/i.test(id)) problems.push('restricted_use');
+  if (/-NC\b/.test(license)) problems.push('restricted_use');
   if (asset.restrictions.some(r => /non-?commercial|editorial(?:[- ]use)?[- ]only|no[- ]derivatives|all rights reserved/i.test(r))) problems.push('restricted_use');
   if (!/^[a-f0-9]{64}$/.test(asset.file_sha256 ?? '')) problems.push('file_hash_missing');
   return problems;

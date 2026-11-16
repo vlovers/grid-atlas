@@ -34,9 +34,44 @@ export function registrableDomain(hostname: string): string {
   return labels.length > 2 && SECOND_LEVEL.has(lastTwo) ? labels.slice(-3).join('.') : lastTwo;
 }
 
-/** Digit groups (years, counts, lengths). "3.337" and "3,337" both normalize to "3.337". */
+const EN_NUMBER: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+  thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20,
+  thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90,
+};
+const EN_COUNTED = 'laps?|races?|grands? prix|wins?|victories|victory|seconds?|points?|corners?|turns?|bends?|cars?|times|years?|titles?|podiums?|poles?|drivers?|kilometres?|kilometers?|miles?|metres?|meters?|positions?|places?|rounds?|hours?|minutes?|starts?|teams?|layouts?|configurations?|chicanes?|seasons?|championships?';
+const EN_WORD_NUMBER = new RegExp(`\\b(${Object.keys(EN_NUMBER).join('|')})(?:\\s+(?:more|fewer|consecutive|straight|successive|different|separate|other|of the))?\\s+(?:${EN_COUNTED})\\b`, 'gi');
+
+const UK_NUMBER: [RegExp, number][] = ([
+  ['одн(?:а|е|ого|ій|им|у)|один', 1], ['дв(?:а|і|ох|ом|ома)', 2], ['тр(?:и|ьох|ьом|ьома)', 3], ['чотир(?:и|ьох|ьом|ма)', 4],
+  ['п[\'’]ят(?:ь|и|ьох)', 5], ['ш(?:ість|ести|істьох)', 6], ['с(?:ім|еми|ьомох|імох)', 7], ['в(?:ісім|осьми|ісьмох)', 8],
+  ['дев[\'’]ят(?:ь|и)', 9], ['десят(?:ь|и)', 10], ['одинадцят(?:ь|и)', 11], ['дванадцят(?:ь|и)', 12], ['тринадцят(?:ь|и)', 13],
+  ['чотирнадцят(?:ь|и)', 14], ['п[\'’]ятнадцят(?:ь|и)', 15], ['шістнадцят(?:ь|и)', 16], ['сімнадцят(?:ь|и)', 17],
+  ['вісімнадцят(?:ь|и)', 18], ['дев[\'’]ятнадцят(?:ь|и)', 19], ['двадцят(?:ь|и)', 20], ['тридцят(?:ь|и)', 30],
+] as [string, number][]).map(([stem, value]) => [new RegExp(`(?<![\\p{L}])(?:${stem})\\s+(?:кол|гон|перег|перемог|секунд|очк|поворот|віраж|машин|автомобіл|бол[іо]д|раз|рок|літ|титул|пілот|кілометр|миль|метр|хвилин|годин|місц|етап|подіум|поул|старт|команд|сезон|конфігурац)\\p{L}*`, 'giu'), value]);
+
+/**
+ * Number words that count something ("won by four laps", "чотири кола") as numerals, so they
+ * face the same evidence and EN/UK checks as digits. Idioms like "one of the greatest" are not
+ * counts and are left alone.
+ */
+export function spelledNumbers(text: string): string[] {
+  const out: string[] = [];
+  for (const m of text.normalize('NFC').matchAll(EN_WORD_NUMBER)) out.push(String(EN_NUMBER[m[1].toLowerCase()]));
+  for (const [pattern, value] of UK_NUMBER) {
+    const count = [...text.normalize('NFC').matchAll(pattern)].length;
+    for (let i = 0; i < count; i++) out.push(String(value));
+  }
+  return out;
+}
+
+/** Digits outside 0–9 (Arabic-Indic, Devanagari, fullwidth after NFKC…) cannot be checked, so they are rejected. */
+export const hasNonAsciiDigits = (text: string) => /(?![0-9])\p{Nd}/u.test(text.normalize('NFKC'));
+
+/** Digit groups (years, counts, lengths) plus counted number words. "3.337" and "3,337" both normalize to "3.337". */
 export function numberTokens(text: string): string[] {
-  return (text.normalize('NFKC').match(/\d+(?:[.,]\d+)?/g) ?? []).map(token => token.replace(',', '.'));
+  const digits = (text.normalize('NFKC').match(/[0-9]+(?:[.,][0-9]+)?/g) ?? []).map(token => token.replace(',', '.'));
+  return [...digits, ...spelledNumbers(text)];
 }
 
 /**
@@ -48,9 +83,12 @@ export function significantNumbers(text: string): string[] {
   return [...new Set(numberTokens(text).filter(token => token.includes('.') || Number(token) >= 21))].sort();
 }
 
-const PLACEHOLDER = /\b(?:todo|tbd|tbc|fixme|lorem ipsum|xxx+)\b|\[(?:citation needed|source|placeholder|insert[^\]]*)\]|\{\{[^}]*\}\}|<placeholder>|\.\.\.\s*$|…\s*$/i;
+// "xxxx" (four or more) so the Roman numeral XXX is not a placeholder.
+const PLACEHOLDER = /\b(?:todo|tbd|tbc|fixme|lorem ipsum|x{4,})\b|\[(?:citation needed|source|placeholder|insert[^\]]*|джерело|потрібне джерело|уточнити[^\]]*)\]|\{\{[^}]*\}\}|<placeholder>|\.\.\.\s*$|…\s*$/iu;
+// Ukrainian editor markers are matched only in capitals: "зробити" is an ordinary verb.
+const PLACEHOLDER_UK_MARKER = /(?<![\p{L}])(?:ЗРОБИТИ|ДОПИСАТИ|УТОЧНИТИ|ПЕРЕВІРИТИ)(?![\p{L}])/u;
 
-export function hasPlaceholder(text: string): boolean { return PLACEHOLDER.test(text); }
+export function hasPlaceholder(text: string): boolean { return PLACEHOLDER.test(text) || PLACEHOLDER_UK_MARKER.test(text); }
 
 /** Stock phrases that mark generic machine prose. Matching any two in one block fails it. */
 export const BOILERPLATE_EN = [

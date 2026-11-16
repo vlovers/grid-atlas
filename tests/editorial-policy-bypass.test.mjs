@@ -19,7 +19,7 @@ test('B2. a truncated excerpt cannot support a different number ("4" from "4.2")
   const claim = item.claims[0];
   claim.statement = { en: 'The road course was shortened to 4 kilometres before the first championship race in 1961.', uk: 'Перед першою заліковою гонкою 1961 року дорожню трасу скоротили до 4 кілометрів.' };
   claim.evidence[0].excerpt = 'original road course was shortened to 4';
-  verify(claim);
+  verify(item, claim);
   item.blocks[0].body.en = item.blocks[0].body.en.replace('4.2', '4');
   item.blocks[0].body.uk = item.blocks[0].body.uk.replace('4.2', '4');
   const decision = run(seal(item));
@@ -36,7 +36,7 @@ test('B3. Ukrainian numerals must also be evidenced (small numbers are not exemp
 
   const claimDrift = validItem();
   claimDrift.claims[1].statement.uk = 'Перегони 1961 року виграв Fixture Driver з 2 кіл переваги.';
-  verify(claimDrift.claims[1], { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'run-v1' }, 'dataset_comparison');
+  verify(claimDrift, claimDrift.claims[1], { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'run-v1' }, 'dataset_comparison');
   assert.ok(codes(run(seal(claimDrift))).includes('claim_number_unsupported'));
 });
 
@@ -52,7 +52,7 @@ test('B5. two subdomains of one publisher are not two independent publishers', (
   const item = validItem();
   item.sources[0] = snapshot('s-a', 'https://en.example.org/fixture-a', 'Example', item.sources[0].text);
   item.sources[1] = snapshot('s-b', 'https://de.example.org/fixture-b', 'Example', item.sources[1].text);
-  verify(item.claims[0]);
+  verify(item, item.claims[0]);
   const decision = run(seal(item));
   assert.equal(decision.outcome, 'UNVERIFIABLE');
   assert.ok(codes(decision).includes('evidence_insufficient'));
@@ -61,7 +61,7 @@ test('B5. two subdomains of one publisher are not two independent publishers', (
 test('B6. a disclosed dispute still needs an identified verifier', () => {
   const item = validItem();
   item.claims[0].presentation = 'conflict_disclosed';
-  verify(item.claims[0]);
+  verify(item, item.claims[0]);
   item.claims[0].verification = { ...item.claims[0].verification, status: 'disputed', verifier: null, method: 'none' };
   const decision = run(seal(item));
   assert.notEqual(decision.outcome, 'PASS');
@@ -102,7 +102,7 @@ test('B10. verification recorded before the cited source was retrieved is reject
 test('B11. placeholder text inside claim statements is rejected', () => {
   const item = validItem();
   item.claims[0].statement.en = 'TODO: confirm. ' + item.claims[0].statement.en;
-  verify(item.claims[0]);
+  verify(item, item.claims[0]);
   assert.ok(codes(run(seal(item))).includes('placeholder'));
 });
 

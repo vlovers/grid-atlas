@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import type { Claim, ContentItem } from './model.ts';
+import type { Claim, ContentItem, SourceSnapshot } from './model.ts';
 
 /** Deterministic JSON: object keys sorted recursively, undefined dropped. */
 export function canonicalJson(value: unknown): string {
@@ -13,9 +13,16 @@ export function canonicalJson(value: unknown): string {
 
 export const sha256 = (text: string) => createHash('sha256').update(text, 'utf8').digest('hex');
 
-/** Digest of what a claim asserts and cites, excluding its verification record. */
-export function claimDigest(claim: Claim): string {
-  return sha256(canonicalJson({ ...claim, verification: undefined }));
+/**
+ * Digest of what a claim asserts and the exact bytes it cites, excluding its verification
+ * record. Swapping a cited snapshot for different text changes it, so a verification cannot
+ * outlive the evidence it was made against.
+ */
+export function claimDigest(claim: Claim, sources: readonly SourceSnapshot[]): string {
+  const cited = new Set((claim.evidence ?? []).flatMap(e => ('source_id' in e ? [e.source_id] : [])));
+  const snapshots = sources.filter(s => cited.has(s.source_id)).map(s => ({ source_id: s.source_id, content_sha256: s.content_sha256 }))
+    .sort((a, b) => (a.source_id < b.source_id ? -1 : 1));
+  return sha256(canonicalJson({ claim: { ...claim, verification: undefined }, snapshots }));
 }
 
 /**

@@ -16,16 +16,21 @@ export const SOURCE_A = 'The circuit hosted its first championship race in 1961 
 export const SOURCE_B = 'Organisers shortened the road course before the 1961 race, leaving a lap of 4.2 kilometres.';
 export const LICENSE_PAGE = 'This file is licensed under the Creative Commons Attribution 4.0 International license. Identifier: CC-BY-4.0.';
 
-const dataset = new Map([[`f1db|${PINNED}|race:1961-fixture|winner`, 'Fixture Driver']]);
-const lookup = ref => dataset.get(`${ref.dataset}|${ref.release}|${ref.record}|${ref.field}`);
+const dataset = new Map([
+  [`f1db|${PINNED}|race:1961-fixture|winner`, { value: 'fixture-driver', mentions: ['Fixture Driver'] }],
+  [`f1db|${PINNED}|race:1961-fixture|season`, 1961],
+]);
+export const lookup = ref => dataset.get(`${ref.dataset}|${ref.release}|${ref.record}|${ref.field}`);
+export const datasetVerifier = { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'run-v1', version: '1' };
 
-export function verify(claim, by = checker, method = 'source_excerpt_match') {
-  claim.verification = { status: 'verified', method, verifier: by, verified_at: '2026-11-16T01:00:00Z', claim_sha256: claimDigest(claim) };
+/** Records a verification bound to the claim and the snapshots it cites in `item`. */
+export function verify(item, claim, by = checker, method = 'source_excerpt_match') {
+  claim.verification = { status: 'verified', method, verifier: by, verified_at: '2026-11-16T01:00:00Z', claim_sha256: claimDigest(claim, item.sources) };
   return claim;
 }
 
 export function validItem() {
-  const history = verify({
+  const history = {
     claim_id: 'c-history', entity: { type: 'circuit', id: 'fixture-ring' }, claim_type: 'historical_event', importance: 'critical',
     statement: { en: 'The road course was shortened to 4.2 kilometres before the first championship race in 1961.', uk: 'Перед першою заліковою гонкою 1961 року дорожню трасу скоротили до 4.2 кілометра.' },
     presentation: 'asserted',
@@ -34,14 +39,17 @@ export function validItem() {
       { source_id: 's-b', excerpt: 'shortened the road course before the 1961 race', locator: 'para 1' },
     ],
     verification: null,
-  });
+  };
   history.evidence.push({ source_id: 's-a', excerpt: 'first championship race in 1961', locator: 'para 1' });
-  verify(history);
-  const winner = verify({
+  const winner = {
     claim_id: 'c-winner', entity: { type: 'race', id: '1961-fixture' }, claim_type: 'structured_statistic', importance: 'critical',
     statement: { en: 'Fixture Driver won the 1961 race.', uk: 'Перегони 1961 року виграв Fixture Driver.' }, value: 'Fixture Driver', presentation: 'asserted',
-    evidence: [{ dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'winner' } }], verification: null,
-  }, { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'run-v1', version: '1' }, 'dataset_comparison');
+    evidence: [
+      { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'winner' }, value: 'fixture-driver' },
+      { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'season' }, value: 1961 },
+    ],
+    verification: null,
+  };
   const item = {
     item_id: 'circuit:fixture-ring:history', entity: { type: 'circuit', id: 'fixture-ring' }, dataset_release: PINNED,
     blocks: [{
@@ -66,6 +74,8 @@ export function validItem() {
     authorship: { writer, fact_checker: checker, localizer },
     editorial_review: null,
   };
+  verify(item, history);
+  verify(item, winner, datasetVerifier, 'dataset_comparison');
   return seal(item);
 }
 

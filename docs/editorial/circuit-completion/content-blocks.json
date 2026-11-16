@@ -253,7 +253,7 @@
   "triage": "FACT-CHECK",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "aintree",
@@ -1674,7 +1674,7 @@
   "triage": "FACT-CHECK",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "hockenheimring",
@@ -3263,7 +3263,7 @@
   "triage": "FACT-CHECK",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "montreal",
@@ -5210,7 +5210,7 @@
   "triage": "EXPAND",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "zandvoort",

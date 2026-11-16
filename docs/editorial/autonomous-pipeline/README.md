@@ -76,7 +76,16 @@ Risk tiers: **A** structured claims backed only by the pinned dataset; **B** evi
 
 ### Limitations: how incorrect history could still pass
 
-The policy proves that cited words exist (on word boundaries) in a stored source, that every numeral in claims and prose — in both languages — is evidenced, that dataset values match the pinned release, that verification post-dates retrieval, and that writer, sources, verifier, reviewer and localizer are separate actors and runs. It does **not** prove:
+The policy (v1.2.0) proves that:
+
+- cited words exist, on word boundaries, in a stored source, and a verification is bound to the exact snapshot bytes it was made against;
+- every ASCII numeral, and every counted number word ("four laps", "чотири кола"), in claims and prose, in both languages, appears in evidence; other digit scripts are rejected outright;
+- each dataset reference states a value that equals the pinned release *and* that the claim's sentence names;
+- dataset agreement alone suffices only for structured claim types;
+- verification post-dates retrieval and precedes evaluation;
+- writer, source capture, verifier, reviewer and localizer are separate actors, in permitted roles.
+
+It does **not** prove:
 
 1. **Semantic support.** An excerpt can contain the right words and numbers yet not support the claim ("Senna did not win in 1984" supports "1984" and "Senna"). Only the fact-check agent judges meaning. Mitigation in B: verifier must quote the decisive sentence, a second verifier from a different model family for critical claims, and adversarial negation checks.
 2. **Prose ↔ claim binding for names and events.** Numbers in prose must come from cited claims; names, places, causes and adjectives are not bound. A block can cite a true claim and state a different driver. Mitigation in B: entity-mention binding (every linked or capitalised entity in prose must appear in a cited claim) and claim-to-sentence alignment.
@@ -97,6 +106,7 @@ The dry run stays fail-closed: none of these limitations can turn existing unver
 | `packages/editorial-policy/` | Provider-neutral model, canonical hashing, text checks, gates, decision function. Pure TypeScript, no I/O, runs under Node 24 type stripping. |
 | `tests/editorial-policy-gates.test.mjs` | 23 deterministic tests: unsupported claims, fabricated citations, disputes, outdated dataset references, stale verification, broken links, UK completeness, media rights/restrictions, duplicates, placeholders/boilerplate, failed/self review, confidence ignored, technical receipts, forged decisions, prompt injection. |
 | `tests/editorial-policy-bypass.test.mjs` | 12 adversarial tests from the PR #421 review: uncited blocks, truncated excerpts, Ukrainian-only numerals, writer-captured sources, same-publisher subdomains, disputes without a verifier, self-localization, NC licences, malformed input, verification before retrieval, placeholder claims. Each failed before the fix. |
+| `tests/editorial-policy-review2.test.mjs` | 12 regressions from the independent reviewer's findings: unchecked `value` backing, non-ASCII digits, counted number words (H1); unrelated or wrong-name dataset records (H2); snapshot swap after verification (M1); licence page not the asset's (M2); future-dated verification (M3); actor case/role checks, item release, spaced licence names, Ukrainian placeholders (LOW). |
 | `scripts/export-circuit-archive-facts.mjs` | Read-only (`READ ONLY` transaction) export of pinned circuit facts. |
 | `scripts/circuit-content-gap-matrix.mjs` | Builds the 78-circuit, 160-layout, 2,550-turn and 382-block matrices and runs the policy over all existing circuit content (dry run). `--check` keeps committed artifacts honest in CI. |
 | `tests/circuit-completion-matrix.test.mjs` | Matrix reproducibility and status invariants. |

@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.1.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.2.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };
@@ -35,7 +35,12 @@ export type EntityRef = { type: 'circuit' | 'layout' | 'corner' | 'driver' | 'co
 export type DatasetRef = { dataset: 'f1db'; release: string; record: string; field: string };
 
 export type SourceEvidence = { source_id: string; excerpt: string; locator: string };
-export type DatasetEvidence = { dataset_ref: DatasetRef };
+/**
+ * A dataset record plus the value the claim asserts for it. The value must equal the
+ * dataset's value and must be stated (as the value or a dataset-supplied mention) in the
+ * claim's English statement, so a record cannot back a claim about something else.
+ */
+export type DatasetEvidence = { dataset_ref: DatasetRef; value: string | number };
 export type Evidence = SourceEvidence | DatasetEvidence;
 
 export type SourceKind = 'dataset' | 'official' | 'operator' | 'historian' | 'publication' | 'archive' | 'reference' | 'other';
@@ -56,7 +61,7 @@ export type Verification = {
   method: VerificationMethod;
   verifier: AgentRef | null;
   verified_at: string | null;
-  /** claimDigest() of the claim at verification time; any later edit makes the verification stale. */
+  /** claimDigest() at verification time: the claim plus the hashes of the snapshots it cites. Editing either makes it stale. */
   claim_sha256: string | null;
   notes?: string;
   /** Recorded for diagnostics only. The policy never reads it. */
@@ -75,7 +80,7 @@ export type Claim = {
   claim_type: ClaimType;
   importance: ClaimImportance;
   statement: Localized;
-  /** Structured value, compared with the dataset when evidence includes a dataset reference. */
+  /** Display value only. It is never evidence and never backs numbers in prose; dataset values live on DatasetEvidence. */
   value?: string | number | null;
   presentation: ClaimPresentation;
   evidence: Evidence[];
@@ -138,7 +143,13 @@ export type TechnicalReceipt = {
   commit_sha: string;
 };
 
-export type DatasetLookup = (ref: DatasetRef) => string | number | null | undefined;
+/**
+ * A dataset value, optionally with the surface forms by which prose may name it (e.g. the
+ * value "carlos-pace" with mentions ["Carlos Pace", "Pace"]). Mentions come from the trusted
+ * dataset index, never from the claim.
+ */
+export type DatasetValue = string | number | { value: string | number; mentions: string[] };
+export type DatasetLookup = (ref: DatasetRef) => DatasetValue | null | undefined;
 
 export type PolicyContext = {
   pinned_dataset_release: string;
