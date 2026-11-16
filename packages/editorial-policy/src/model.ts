@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.5.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.6.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };
@@ -162,10 +162,24 @@ export type DatasetLookup = (ref: DatasetRef) => DatasetValue | null | undefined
  */
 export type EntityRecognizer = (text: string, locale: Locale) => string[];
 
+/**
+ * Trusted renderer of canonical statements from dataset evidence (e.g. winner + season →
+ * "Alain Prost won the 1985 race."). Returns null when it has no template for the evidence or
+ * no reviewed wording for the locale. Supplied by the publisher, never by an agent.
+ */
+export type StructuredRenderer = (evidence: readonly DatasetEvidence[], locale: Locale) => string | null;
+
 export type PolicyContext = {
   pinned_dataset_release: string;
   dataset: DatasetLookup;
   entities: EntityRecognizer;
+  /**
+   * Dataset evidence is sufficient on its own only for a structured claim whose EN and UK
+   * statements are exactly the canonical renderings of that evidence. Free prose — including every
+   * existing draft sentence — needs independent source evidence however well the dataset agrees.
+   * Without a renderer, no claim is verified by the dataset alone.
+   */
+  renderStructured?: StructuredRenderer;
   /** Locale-free internal routes that exist in the archive. */
   known_routes: ReadonlySet<string>;
   /** Already-published or sibling texts, for near-duplicate detection. */

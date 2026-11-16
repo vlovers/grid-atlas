@@ -94,8 +94,21 @@ export function seal(item) {
 const NAMES = [['fixture-driver', ['Fixture Driver']], ['ayrton-senna', ['Ayrton Senna', 'Senna', 'Айртон Сенна', 'Сенна']]];
 export const entities = text => NAMES.filter(([, forms]) => forms.some(form => containsPhrase(text, form))).map(([key]) => key);
 
+/**
+ * Trusted canonical renderer: winner + season of one race → one fixed sentence per language.
+ * Any other combination of evidence has no canonical wording (null).
+ */
+export const renderStructured = (evidence, locale) => {
+  const fields = Object.fromEntries(evidence.map(e => [e.dataset_ref.field, e]));
+  if (evidence.length !== 2 || !fields.winner || !fields.season || fields.winner.dataset_ref.record !== fields.season.dataset_ref.record) return null;
+  const winner = lookup(fields.winner.dataset_ref), season = lookup(fields.season.dataset_ref);
+  if (!winner || !season) return null;
+  const name = winner.mentions[0];
+  return locale === 'en' ? `${name} won the ${season.value} race.` : `Перегони ${season.value} року виграв ${name}.`;
+};
+
 export const context = (item, overrides = {}) => ({
-  pinned_dataset_release: PINNED, dataset: lookup, entities, known_routes: new Set(['/races/1']), corpus: [],
+  pinned_dataset_release: PINNED, dataset: lookup, entities, renderStructured, known_routes: new Set(['/races/1']), corpus: [],
   license_allowlist: ['CC0-1.0', 'CC-BY-4.0', 'CC-BY-SA-4.0', 'PUBLIC-DOMAIN'],
   technical_receipt: { item_sha256: itemDigest(item), build: 'passed', tests: 'passed', rendered_locales: ['en', 'uk'], seo_metadata: true, commit_sha: 'f'.repeat(40) },
   evaluated_at: '2026-11-16T02:00:00Z', ...overrides,
