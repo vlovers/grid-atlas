@@ -20,7 +20,6 @@ export type DatasetCheck = {
 const YEAR = /\b(19[5-9]\d|20[0-2]\d)\b/g;
 const WIN = /\b(?:won|wins?|winning|winner|victory|victorious|triumph(?:ed)?)\b/i;
 const NOT_A_RACE_WIN = /\b(?:title|championship crown|world champion(?:ship)?|drivers'? championship|constructors'? championship|race of champions|non-championship|le mans|sportscar|formula (?:2|two|3|three|5000)|indycar|cart|motorcycle)\b/i;
-const NEGATION = /\b(?:not|never|no|failed to|denied|missed|lost)\b/i;
 const RACE_WORDS = /\b(?:grand prix|race|won|victory|pole|fastest lap|podium|lap \d|grid)\b/i;
 
 const yearsIn = (text: string) => [...new Set([...text.matchAll(YEAR)].map(m => Number(m[1])))];
@@ -52,37 +51,51 @@ export function checkCandidate(candidate: ClaimCandidate, index: F1dbIndex): Dat
   const nearestYear = (at: number) => yearPositions.reduce<{ year: number; at: number } | null>((best, y) =>
     !best || Math.abs(y.at - at) < Math.abs(best.at - at) ? y : best, null)?.year ?? null;
 
+  const CLAUSE_BREAK = /[;:—–]|,\s(?:but|while|whereas|although|when|and|a year|after|before)\s|,\s/g;
   const raceCheck = (kind: 'race_winner' | 'pole' | 'fastest_lap', field: 'winner' | 'pole' | 'fastest_lap', pick: (r: ArchiveRace) => string[], verb: RegExp) => {
-    if (NEGATION.test(text) || !mentionedSlugs.size || !yearPositions.length) return;
+    if (!mentionedSlugs.size || !yearPositions.length) return;
     const seen = new Set<number>();
     // Each asserting verb ("Pace won", "took pole") is checked against the year nearest to it, and
     // only the drivers named in its own clause shortly before it count as the asserted subject.
     for (const m of text.matchAll(new RegExp(verb.source, 'gi'))) {
       const at = m.index ?? 0;
-      const year = nearestYear(at);
+      const breaks = [...text.matchAll(CLAUSE_BREAK)].map(x => ({ start: x.index ?? 0, end: (x.index ?? 0) + x[0].length }));
+      const clauseStart = Math.max(0, ...breaks.filter(b => b.end <= at).map(b => b.end));
+      const clauseEnd = Math.min(text.length, ...breaks.filter(b => b.start >= at + m[0].length).map(b => b.start));
+      const clause = text.slice(clauseStart, clauseEnd);
+      // Negation and non-race wording only disqualify their own clause, not the whole sentence.
+      if (/\b(?:not|never|failed to|denied|missed)\b/i.test(clause) || NOT_A_RACE_WIN.test(clause)) continue;
+      const clauseYears = yearPositions.filter(y => y.at >= clauseStart && y.at < clauseEnd);
+      const year = clauseYears.length ? clauseYears.reduce((b, y) => (Math.abs(y.at - at) < Math.abs(b.at - at) ? y : b)).year : nearestYear(at);
       if (year === null || seen.has(year)) continue;
-      seen.add(year);
       const races = index.racesIn(circuit.circuit_id, year).filter(r => r.has_results);
       if (!races.length) continue;
-      const clauseStart = Math.max(0, ...[...text.slice(0, at).matchAll(/[;:—–]|,\s(?:but|while|whereas|although|when)\s/g)].map(x => (x.index ?? 0) + x[0].length));
       // Active voice names the subject before the verb ("Pace won"); passive voice after it ("won by Pace").
       const passive = /^(?:won by|victory went to|went to)\b/i.test(m[0]);
-      const window = passive ? text.slice(at + m[0].length, at + m[0].length + 40).split(/[;:,—–]/)[0] : text.slice(Math.max(clauseStart, at - 60), at);
-      const subject = new Set([...index.mentionedDrivers(window).values()].flat());
+      const infinitive = /^to\s/i.test(m[0]);
+      // "needed to win", "hoped to win" state an intention, not a result.
+      if (infinitive && /\b(?:needs?|needed|needing|wants?|wanted|hoped?|hoping|tried|trying|aimed?|aiming|chance|bid|attempt|going|set out|failed|expected|able)\s+$/i.test(text.slice(Math.max(0, at - 25), at))) continue;
+      // Infinitive forms ("Piquet passed Senna on the way to victory", "beat X to victory") credit the
+      // clause's first-named driver, so the whole clause before the verb is read, not just 60 characters.
+      const window = passive ? text.slice(at + m[0].length, Math.min(clauseEnd, at + m[0].length + 40))
+        : text.slice(infinitive ? clauseStart : Math.max(clauseStart, at - 60), at);
+      const named = [...index.mentionedDrivers(window).values()];
+      const subject = new Set((infinitive ? named.slice(0, 1) : named).flat());
+      if (!subject.size) continue; // nobody is credited by this verb; another verb may credit someone
+      seen.add(year);
       const truth = new Set(races.flatMap(pick));
-      const hits = [...mentionedSlugs].filter(slug => truth.has(slug));
       const refs = races.map(r => ref(`race:${r.race_id}`, field));
       const expected = [...truth].map(slug => index.driverName(slug)).join(' / ') || 'none recorded';
+      const right = [...subject].filter(slug => truth.has(slug));
       const wrong = [...subject].filter(slug => !truth.has(slug));
-      const subjectHit = [...subject].some(slug => truth.has(slug));
-      // A conflict needs one unambiguous race and an asserted subject of whom none matches.
-      if (races.length === 1 && wrong.length && !subjectHit)
-        checks.push({ kind, status: 'conflict', refs, detail: `${year}: sentence credits ${wrong.map(s => index.driverName(s)).join(', ')}; F1DB ${field} is ${expected}.` });
-      else if (hits.length) checks.push({ kind, status: 'supported', refs, detail: `${year}: ${hits.map(s => index.driverName(s)).join(' / ')} matches F1DB ${field}.` });
-      else checks.push({ kind, status: 'unmatched', refs, detail: races.length > 1 ? `${year}: ${races.length} races at this circuit; cannot attribute.` : `${year}: no named driver is credited; F1DB ${field} is ${expected}.` });
+      // Support and conflict are both judged on the asserted subject only, never on bystanders.
+      if (races.length > 1) checks.push({ kind, status: 'unmatched', refs, detail: `${year}: ${races.length} races at this circuit; cannot attribute.` });
+      else if (right.length) checks.push({ kind, status: 'supported', refs, detail: `${year}: ${right.map(s => index.driverName(s)).join(' / ')} matches F1DB ${field}.` });
+      else checks.push({ kind, status: 'conflict', refs, detail: `${year}: sentence credits ${wrong.map(s => index.driverName(s)).join(', ')}; F1DB ${field} is ${expected}.` });
     }
   };
-  if (WIN.test(text) && !NOT_A_RACE_WIN.test(text)) raceCheck('race_winner', 'winner', r => r.winners, /\b(?:won by|victory went to|won|wins|triumphed|took (?:the |his |her |a )?(?:\w+ )?(?:victory|win)|claimed (?:the |his |her |a )?(?:\w+ )?(?:victory|win))\b/);
+  if (WIN.test(text)) raceCheck('race_winner', 'winner', r => r.winners,
+    /\b(?:won by|victory went to|won|wins|triumphed|was victorious|was the (?:\d{4} )?winner|to (?:victory|win)|took (?:the |his |her |a )?(?:\w+ )?(?:victory|win)|claimed (?:the |his |her |a )?(?:\w+ )?(?:victory|win))\b/);
   if (/\bpole(?: position)?\b/i.test(text)) raceCheck('pole', 'pole', r => r.pole, /\b(?:took|claimed|started from|secured|won|set) (?:the |his |her )?pole\b|\bon pole\b/);
   if (/\bfastest lap\b/i.test(text)) raceCheck('fastest_lap', 'fastest_lap', r => r.fastest_lap, /\b(?:set|recorded|took|claimed) (?:the )?fastest lap\b/);
 

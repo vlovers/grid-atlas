@@ -98,8 +98,9 @@
    "passages": [
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": false,
      "names_matched": [
       "Lewis",
@@ -110,7 +111,8 @@
     {
      "source_id": "src-cf227b1fbbf6",
      "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
-     "offset": -1,
+     "offset": 0,
+     "length": 151,
      "numbers_covered": true,
      "names_matched": [],
      "score": 8
@@ -131,15 +133,17 @@
     {
      "source_id": "src-cf227b1fbbf6",
      "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
-     "offset": -1,
+     "offset": 0,
+     "length": 151,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
     },
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -160,7 +164,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "7eba1843f4a604734271a76d136e440684bd1ec243b577e15fc38f69eec9e4ea",
-     "offset": -1,
+     "offset": 0,
+     "length": 223,
      "numbers_covered": true,
      "names_matched": [
       "Lewis",
@@ -172,7 +177,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "562abf65f29c1a1a622477ed7414d8b322513fa22f306afb2a2bf0c6ac98232a",
-     "offset": -1,
+     "offset": 0,
+     "length": 300,
      "numbers_covered": false,
      "names_matched": [
       "Lewis",
@@ -197,7 +203,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "2d7a1b95e41b4b0190a3e218d56ada2b919b00ac86b297cc299b06838a8d2c55",
-     "offset": -1,
+     "offset": 288,
+     "length": 65,
      "numbers_covered": true,
      "names_matched": [
       "Max",
@@ -208,7 +215,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "eda738dc2ff8485756ee50dba193ce343cc390aad3eeec29995d9322ae1a69dd",
-     "offset": 312,
+     "offset": 301,
+     "length": 103,
      "numbers_covered": true,
      "names_matched": [
       "Verstappen"
@@ -230,8 +238,9 @@
    "passages": [
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": true,
      "names_matched": [
       "Fernando",
@@ -247,7 +256,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "d1e332387cea89feb07b944a464afcc460968441f3bf80ec8310885611aa5001",
-     "offset": -1,
+     "offset": 807,
+     "length": 271,
      "numbers_covered": true,
      "names_matched": [
       "Fernando",
@@ -275,7 +285,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
-     "offset": -1,
+     "offset": 628,
+     "length": 276,
      "numbers_covered": true,
      "names_matched": [
       "Sergio",
@@ -288,7 +299,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "22faebb838589d9024c04ad88dc096da55a3d01721f23aab8c7aced15bd50567",
-     "offset": -1,
+     "offset": 2256,
+     "length": 189,
      "numbers_covered": true,
      "names_matched": [
       "Virtual",
@@ -328,7 +340,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "c9a6ac5459d48e7b9200faf10ce62c8c2c93aebf56507a5a0a6959b707c586d4",
-     "offset": -1,
+     "offset": 3530,
+     "length": 74,
      "numbers_covered": true,
      "names_matched": [
       "Alonso"
@@ -338,7 +351,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "94abf8ca6f1b53e5c447537176625eb76fddcbb7cfbb197d37febd2deec004d8",
-     "offset": 536,
+     "offset": 523,
+     "length": 104,
      "numbers_covered": false,
      "names_matched": [
       "Alonso"
@@ -361,7 +375,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
-     "offset": -1,
+     "offset": 628,
+     "length": 276,
      "numbers_covered": true,
      "names_matched": [
       "Hamilton",
@@ -373,7 +388,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "d1e332387cea89feb07b944a464afcc460968441f3bf80ec8310885611aa5001",
-     "offset": -1,
+     "offset": 807,
+     "length": 271,
      "numbers_covered": true,
      "names_matched": [
       "Hamilton",
@@ -398,7 +414,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "c9a6ac5459d48e7b9200faf10ce62c8c2c93aebf56507a5a0a6959b707c586d4",
-     "offset": -1,
+     "offset": 3530,
+     "length": 74,
      "numbers_covered": true,
      "names_matched": [
       "Alonso's"
@@ -421,7 +438,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "114a5f96bdf57010808460e33731d19b658ec1892d8c98c5989ea42cde7cec1b",
-     "offset": -1,
+     "offset": 554,
+     "length": 252,
      "numbers_covered": true,
      "names_matched": [
       "Hamilton's"
@@ -431,7 +449,8 @@
     {
      "source_id": "src-bc638cbca6a3",
      "passage_sha256": "805dd4c1ecefd6a962a299280f5f437bbdc4e70eb06b11c206cd0ca5d5137edd",
-     "offset": -1,
+     "offset": 246,
+     "length": 41,
      "numbers_covered": true,
      "names_matched": [
       "Hamilton's"
@@ -454,15 +473,17 @@
     {
      "source_id": "src-46370b2f5cef",
      "passage_sha256": "32b588dc1b331be55353b4805f865279ba044758f239bf65e2fc3d3a1e10be92",
-     "offset": 1745,
+     "offset": 1640,
+     "length": 142,
      "numbers_covered": true,
      "names_matched": [],
      "score": 7
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -495,15 +516,17 @@
     {
      "source_id": "src-46370b2f5cef",
      "passage_sha256": "c7e08bc253462daba52712a40806607d18c8bb3a111fe67a584bd22e5c1796a1",
-     "offset": 2487,
+     "offset": 2374,
+     "length": 121,
      "numbers_covered": true,
      "names_matched": [],
      "score": 4
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -559,8 +582,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -568,7 +592,8 @@
     {
      "source_id": "src-46370b2f5cef",
      "passage_sha256": "18bbd2d41f13bd520edef2a376599a83911a2ec8287f2c1d686cf8dc1dec2249",
-     "offset": 2113,
+     "offset": 2004,
+     "length": 192,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -588,8 +613,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -609,16 +635,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -687,7 +715,8 @@
     {
      "source_id": "src-46370b2f5cef",
      "passage_sha256": "f4d5326cc6a901a6b08b2193018067e9198531e073565595637a27a43bf63838",
-     "offset": 1568,
+     "offset": 1463,
+     "length": 176,
      "numbers_covered": true,
      "names_matched": [
       "Lusail"
@@ -696,8 +725,9 @@
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [
       "Lusail"
@@ -767,8 +797,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 4
@@ -776,7 +807,8 @@
     {
      "source_id": "src-46370b2f5cef",
      "passage_sha256": "8843d5413695fb5cb05f363b4a8f7a61ad0dc823a9c7f88a65037b776bc70297",
-     "offset": 1363,
+     "offset": 1262,
+     "length": 175,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -796,8 +828,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": false,
      "names_matched": [
       "Drivers"
@@ -831,16 +864,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": false,
      "names_matched": [],
      "score": 5
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -860,8 +895,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 4
@@ -893,16 +929,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 6
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -922,16 +960,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -951,16 +991,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": true,
      "names_matched": [],
      "score": 4
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -980,16 +1022,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -1009,16 +1053,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "4c9d38f809653686f49ce99b0dc8f8f4adfbbd08c36a8a050ff334886c2f7c9b",
-     "offset": -1,
+     "passage_sha256": "5118870d46bd94370da867b5d2e2e6694e7ceb67e9d53d4dd4293e2af7b11aac",
+     "offset": 574,
+     "length": 442,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -1038,16 +1084,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": false,
      "names_matched": [],
      "score": 6
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -1067,8 +1115,9 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -1088,16 +1137,18 @@
    "passages": [
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "9fea9517112131d168809b73e7ac9fd0fd3e6c53637fcdd3c04e15ad1fbabfb5",
-     "offset": -1,
+     "passage_sha256": "ce4957bef59029d164699c9489ad291da1c078955b40ceff6112f612dac5f618",
+     "offset": 2496,
+     "length": 881,
      "numbers_covered": false,
      "names_matched": [],
      "score": 5
     },
     {
      "source_id": "src-46370b2f5cef",
-     "passage_sha256": "db1f6840afe2b61bf9841ab5f89e9241f951c7bb4d80ca6928d5aec3bc0a21b5",
-     "offset": -1,
+     "passage_sha256": "07aac08475ebd939ad380c291999a334162f343c4cceaa9d33a3c98421f44a94",
+     "offset": 0,
+     "length": 573,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -1145,15 +1196,17 @@
     {
      "source_id": "src-cf227b1fbbf6",
      "passage_sha256": "80a17c2481db51bb8eb9896e74f9281998a079c0045df4a535dd5af527ad4751",
-     "offset": -1,
+     "offset": 0,
+     "length": 151,
      "numbers_covered": true,
      "names_matched": [],
      "score": 8
     },
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": false,
      "names_matched": [
       "Hamilton"
@@ -1175,8 +1228,9 @@
    "passages": [
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": true,
      "names_matched": [
       "Alonso"
@@ -1224,8 +1278,9 @@
    "passages": [
     {
      "source_id": "src-cf227b1fbbf6",
-     "passage_sha256": "969d42583f4dca774cfccf8e92e2f5697a0aa6114ff9690d2d933cef45809e50",
-     "offset": -1,
+     "passage_sha256": "90400e825ab2076cf3b84f350a79b9a945f93806f8d66d252d000de5ec3507dc",
+     "offset": 337,
+     "length": 6270,
      "numbers_covered": false,
      "names_matched": [
       "Alonso"
@@ -1248,7 +1303,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "562abf65f29c1a1a622477ed7414d8b322513fa22f306afb2a2bf0c6ac98232a",
-     "offset": -1,
+     "offset": 0,
+     "length": 300,
      "numbers_covered": true,
      "names_matched": [
       "Hamilton"
@@ -1258,7 +1314,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
-     "offset": -1,
+     "offset": 628,
+     "length": 276,
      "numbers_covered": false,
      "names_matched": [
       "Hamilton",
@@ -1282,7 +1339,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "9bb90b3f8c5230e523675614ffa359222f750f35e201def891f02349223e1219",
-     "offset": 3698,
+     "offset": 3642,
+     "length": 279,
      "numbers_covered": true,
      "names_matched": [
       "Alpine",
@@ -1293,7 +1351,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "8a330288294cf03946ea4e8a8e989778c26c1254827c8acd3cfe10f6907b5c13",
-     "offset": 3190,
+     "offset": 3137,
+     "length": 191,
      "numbers_covered": true,
      "names_matched": [
       "Bottas"
@@ -1316,7 +1375,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
-     "offset": -1,
+     "offset": 628,
+     "length": 276,
      "numbers_covered": true,
      "names_matched": [
       "Virtual",
@@ -1328,7 +1388,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "96fecc8eede8b8206e58d5cfaa2a3c2467497a0abf9a6680c2de68950e07e69c",
-     "offset": 4312,
+     "offset": 4254,
+     "length": 239,
      "numbers_covered": true,
      "names_matched": [
       "Virtual",
@@ -1367,7 +1428,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "94abf8ca6f1b53e5c447537176625eb76fddcbb7cfbb197d37febd2deec004d8",
-     "offset": 536,
+     "offset": 523,
+     "length": 104,
      "numbers_covered": false,
      "names_matched": [
       "Alonso"
@@ -1377,7 +1439,8 @@
     {
      "source_id": "src-4f4029399294",
      "passage_sha256": "96fecc8eede8b8206e58d5cfaa2a3c2467497a0abf9a6680c2de68950e07e69c",
-     "offset": 4312,
+     "offset": 4254,
+     "length": 239,
      "numbers_covered": false,
      "names_matched": [
       "Alonso"

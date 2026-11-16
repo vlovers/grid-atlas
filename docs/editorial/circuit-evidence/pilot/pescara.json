@@ -31,15 +31,15 @@
   },
   "claims_unaligned_uk": 0,
   "dataset_checks": {
-   "supported": 3,
+   "supported": 4,
    "conflict": 0,
    "unmatched": 0
   },
   "factcheck_status": {
    "dataset_conflict": 0,
-   "dataset_supported": 2,
+   "dataset_supported": 3,
    "passages_cover_numbers": 8,
-   "passages_partial": 3,
+   "passages_partial": 2,
    "no_passage_in_live_sources": 3,
    "cited_sources_unavailable": 0,
    "no_cited_sources": 0
@@ -66,7 +66,7 @@
    "generic": 0,
    "en_uk_issues": 0
   },
-  "evidence_lead_rate": 0.625,
+  "evidence_lead_rate": 0.688,
   "content_complete": false
  },
  "tasks": [
@@ -98,7 +98,8 @@
     {
      "source_id": "src-98f89c9b20b2",
      "passage_sha256": "c4788ac9ff892632af54568063b68b34fb3ec194fccc5360dc101b16a53548bd",
-     "offset": -1,
+     "offset": 0,
+     "length": 153,
      "numbers_covered": true,
      "names_matched": [
       "Pescara"
@@ -107,8 +108,9 @@
     },
     {
      "source_id": "src-98f89c9b20b2",
-     "passage_sha256": "6223f7d9df9808f571ebfdffa9793449b5024f032a439d266b5660fbae1dcd73",
-     "offset": -1,
+     "passage_sha256": "732c1588fbd2f2c4dd27cf4e4f91f8d8bceca4dfc87c40cab9be57a3f5e2a961",
+     "offset": 339,
+     "length": 4987,
      "numbers_covered": false,
      "names_matched": [
       "Stirling",
@@ -131,8 +133,9 @@
    "passages": [
     {
      "source_id": "src-98f89c9b20b2",
-     "passage_sha256": "6223f7d9df9808f571ebfdffa9793449b5024f032a439d266b5660fbae1dcd73",
-     "offset": -1,
+     "passage_sha256": "732c1588fbd2f2c4dd27cf4e4f91f8d8bceca4dfc87c40cab9be57a3f5e2a961",
+     "offset": 339,
+     "length": 4987,
      "numbers_covered": true,
      "names_matched": [],
      "score": 7
@@ -140,7 +143,8 @@
     {
      "source_id": "src-98f89c9b20b2",
      "passage_sha256": "c4788ac9ff892632af54568063b68b34fb3ec194fccc5360dc101b16a53548bd",
-     "offset": -1,
+     "offset": 0,
+     "length": 153,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -155,13 +159,28 @@
    "importance": "critical",
    "en": "The 1957 Pescara Grand Prix was only eighteen laps long, yet Stirling Moss needed nearly three hours to win it.",
    "uk": "Гран-прі Пескари 1957 року тривав лише вісімнадцять кіл, але Стірлінгу Моссу знадобилося майже три години для перемоги.",
-   "status": "passages_partial",
-   "dataset": [],
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:63",
+       "field": "winner"
+      }
+     ],
+     "detail": "1957: Stirling Craufurd Moss matches F1DB winner."
+    }
+   ],
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "288621bfb2c9658f9ef20def000cab7951c2a2737155f2c9859c418daa6bcae9",
-     "offset": -1,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": false,
      "names_matched": [
       "Pescara",
@@ -171,8 +190,9 @@
     },
     {
      "source_id": "src-98f89c9b20b2",
-     "passage_sha256": "6223f7d9df9808f571ebfdffa9793449b5024f032a439d266b5660fbae1dcd73",
-     "offset": -1,
+     "passage_sha256": "732c1588fbd2f2c4dd27cf4e4f91f8d8bceca4dfc87c40cab9be57a3f5e2a961",
+     "offset": 339,
+     "length": 4987,
      "numbers_covered": false,
      "names_matched": [
       "Stirling",
@@ -195,8 +215,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "7f2e83db4e4aa558a31e7f10c2cc0c8bab935de4b0f927af837961c6ffe13729",
-     "offset": 8802,
+     "passage_sha256": "901561b6d88fbc49f5e92d5546c2d13e058141e6fd443c0a03569c537428e38d",
+     "offset": 8746,
+     "length": 378,
      "numbers_covered": true,
      "names_matched": [
       "One"
@@ -205,8 +226,9 @@
     },
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "e40972f8abcf0aabb3dd8cb4b7df0f53c20ffd5d739e8fda409a7fd738e55c7d",
-     "offset": 495,
+     "passage_sha256": "804a6ed9141d132c5e15364e1bab708913cbc15a19234674906dd963fc433627",
+     "offset": 490,
+     "length": 407,
      "numbers_covered": false,
      "names_matched": [
       "One"
@@ -240,8 +262,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "e2df265449f570a9b6a52319d876b255f6f96972f044803fc6d6fe21395d37ab",
-     "offset": -1,
+     "passage_sha256": "299095f1c13fc46706cdd3b2d29f0aaf3fbeaee40bd68c9bbf078d66c78c7c12",
+     "offset": 3066,
+     "length": 413,
      "numbers_covered": false,
      "names_matched": [
       "Pescara"
@@ -251,7 +274,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "84ba0a6f0b75c999c5d099e7738ac8027a2f9278a85b173b13a5fd0b1f8f11ec",
-     "offset": 1651,
+     "offset": 1642,
+     "length": 221,
      "numbers_covered": true,
      "names_matched": [
       "Pescara"
@@ -274,7 +298,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "47de8fec089888e6f8ffecc5d06670d51aab30b687a06cbca8ebacc51d039000",
-     "offset": 16599,
+     "offset": 16494,
+     "length": 209,
      "numbers_covered": true,
      "names_matched": [
       "Ferrari"
@@ -283,8 +308,9 @@
     },
     {
      "source_id": "src-98f89c9b20b2",
-     "passage_sha256": "6223f7d9df9808f571ebfdffa9793449b5024f032a439d266b5660fbae1dcd73",
-     "offset": -1,
+     "passage_sha256": "732c1588fbd2f2c4dd27cf4e4f91f8d8bceca4dfc87c40cab9be57a3f5e2a961",
+     "offset": 339,
+     "length": 4987,
      "numbers_covered": true,
      "names_matched": [
       "Ferrari"
@@ -306,8 +332,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "fca13225c569391a2553b18b618544be3ffe1a91debb5da3db171420ba848262",
-     "offset": -1,
+     "passage_sha256": "c3001e9f52e011a0b1f261628d00b8790b495c192e2f22fd0a66d2cd033fcaeb",
+     "offset": 16172,
+     "length": 321,
      "numbers_covered": true,
      "names_matched": [
       "Fangio"
@@ -317,7 +344,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "4627572f1f6d20dfb1474c8586c56e9e4e41a041d095291d1fef2e72ee8b4394",
-     "offset": 16809,
+     "offset": 16704,
+     "length": 267,
      "numbers_covered": true,
      "names_matched": [
       "Fangio"
@@ -339,8 +367,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "288621bfb2c9658f9ef20def000cab7951c2a2737155f2c9859c418daa6bcae9",
-     "offset": -1,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": true,
      "names_matched": [
       "Moss"
@@ -349,8 +378,9 @@
     },
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "6ef3189bccbf188f65f384983c376495a6de637dc749f52e776c26ad6c343759",
-     "offset": -1,
+     "passage_sha256": "b2217abeedb550ebfc9acf8d125474f0bfef4e29095781da3c45ae7a5893eed5",
+     "offset": 20127,
+     "length": 1277,
      "numbers_covered": true,
      "names_matched": [
       "Moss"
@@ -398,8 +428,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "e40972f8abcf0aabb3dd8cb4b7df0f53c20ffd5d739e8fda409a7fd738e55c7d",
-     "offset": 495,
+     "passage_sha256": "804a6ed9141d132c5e15364e1bab708913cbc15a19234674906dd963fc433627",
+     "offset": 490,
+     "length": 407,
      "numbers_covered": false,
      "names_matched": [
       "Pescara"
@@ -408,8 +439,9 @@
     },
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "288621bfb2c9658f9ef20def000cab7951c2a2737155f2c9859c418daa6bcae9",
-     "offset": -1,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": false,
      "names_matched": [
       "Pescara"
@@ -431,16 +463,18 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "6ef3189bccbf188f65f384983c376495a6de637dc749f52e776c26ad6c343759",
-     "offset": -1,
+     "passage_sha256": "b2217abeedb550ebfc9acf8d125474f0bfef4e29095781da3c45ae7a5893eed5",
+     "offset": 20127,
+     "length": 1277,
      "numbers_covered": false,
      "names_matched": [],
      "score": 7
     },
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "288621bfb2c9658f9ef20def000cab7951c2a2737155f2c9859c418daa6bcae9",
-     "offset": -1,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": false,
      "names_matched": [],
      "score": 5
@@ -460,8 +494,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "6ef3189bccbf188f65f384983c376495a6de637dc749f52e776c26ad6c343759",
-     "offset": -1,
+     "passage_sha256": "b2217abeedb550ebfc9acf8d125474f0bfef4e29095781da3c45ae7a5893eed5",
+     "offset": 20127,
+     "length": 1277,
      "numbers_covered": true,
      "names_matched": [
       "One"
@@ -471,7 +506,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "84ba0a6f0b75c999c5d099e7738ac8027a2f9278a85b173b13a5fd0b1f8f11ec",
-     "offset": 1651,
+     "offset": 1642,
+     "length": 221,
      "numbers_covered": true,
      "names_matched": [
       "One"
@@ -507,8 +543,9 @@
    "passages": [
     {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "288621bfb2c9658f9ef20def000cab7951c2a2737155f2c9859c418daa6bcae9",
-     "offset": -1,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": false,
      "names_matched": [
       "Moss",
@@ -519,7 +556,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "84ba0a6f0b75c999c5d099e7738ac8027a2f9278a85b173b13a5fd0b1f8f11ec",
-     "offset": 1651,
+     "offset": 1642,
+     "length": 221,
      "numbers_covered": false,
      "names_matched": [
       "Pescara"
@@ -542,7 +580,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "37d70a8e0ff39884709d6d113e051b04072477ad7061f9cc1ad6c9cf94084f31",
-     "offset": 12318,
+     "offset": 12243,
+     "length": 173,
      "numbers_covered": true,
      "names_matched": [
       "Musso",
@@ -554,7 +593,8 @@
     {
      "source_id": "src-a2df826858d1",
      "passage_sha256": "f688b08c8097095b9ac9de0aa4b4b7a22aecfb1083d15c70fc482cffb66d6325",
-     "offset": 15774,
+     "offset": 15675,
+     "length": 213,
      "numbers_covered": true,
      "names_matched": [
       "Musso",

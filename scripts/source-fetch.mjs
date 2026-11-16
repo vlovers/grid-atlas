@@ -37,26 +37,57 @@ const status = existsSync(STATUS) ? JSON.parse(readFileSync(STATUS, 'utf8')) : {
 if (retry) registry = registry.filter(r => retry.includes(status[r.source_id]?.outcome));
 registry = registry.slice(0, limit);
 
+/**
+ * robots.txt per RFC 9309: user-agent lines form a group until the first rule line; the most
+ * specific group (ours, else "*") applies; the longest matching Allow/Disallow wins (Allow on ties).
+ * 4xx → no restrictions; 5xx or unreachable → full disallow. Crawl-delay is honoured.
+ */
 const robots = new Map();
-async function allowed(url) {
-  const { origin, pathname } = new URL(url);
-  if (!robots.has(origin)) {
-    let rules = [];
-    try {
-      const r = await fetch(`${origin}/robots.txt`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
-      if (r.ok) {
-        let applies = false;
-        for (const line of (await r.text()).split('\n')) {
-          const [k, ...v] = line.split(':'); const key = k.trim().toLowerCase(); const value = v.join(':').trim();
-          if (key === 'user-agent') applies = value === '*' || /gridatlas/i.test(value);
-          else if (applies && key === 'disallow' && value) rules.push(value);
-        }
-      }
-    } catch { /* unreachable robots.txt: proceed, as crawlers conventionally do */ }
-    robots.set(origin, rules);
+async function robotsFor(origin) {
+  if (robots.has(origin)) return robots.get(origin);
+  let policy = { rules: [], delay: 0, disallowAll: false };
+  try {
+    const r = await fetch(`${origin}/robots.txt`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
+    if (r.status >= 500) policy.disallowAll = true;
+    else if (r.ok) policy = parseRobots(await r.text());
+  } catch { policy.disallowAll = true; }
+  robots.set(origin, policy);
+  return policy;
+}
+
+export function parseRobots(text) {
+  const groups = [];
+  let current = null, inAgents = false;
+  for (const raw of text.split('\n')) {
+    const line = raw.replace(/#.*/, '').trim();
+    const sep = line.indexOf(':');
+    if (sep < 0) continue;
+    const key = line.slice(0, sep).trim().toLowerCase(), value = line.slice(sep + 1).trim();
+    if (key === 'user-agent') {
+      if (!inAgents) { current = { agents: [], rules: [], delay: 0 }; groups.push(current); inAgents = true; }
+      current.agents.push(value.toLowerCase());
+    } else if (current) {
+      inAgents = false;
+      if ((key === 'allow' || key === 'disallow') && value) current.rules.push({ allow: key === 'allow', path: value });
+      if (key === 'crawl-delay' && Number(value) > 0) current.delay = Number(value);
+    }
   }
-  const target = pathname + new URL(url).search;
-  return !robots.get(origin).some(rule => robotsRule(rule).test(target));
+  const ours = groups.filter(g => g.agents.some(a => a.includes('gridatlas')));
+  const chosen = ours.length ? ours : groups.filter(g => g.agents.includes('*'));
+  return { rules: chosen.flatMap(g => g.rules), delay: Math.max(0, ...chosen.map(g => g.delay)), disallowAll: false };
+}
+
+export function robotsAllows(policy, target) {
+  if (policy.disallowAll) return false;
+  const matches = policy.rules.filter(rule => robotsRule(rule.path).test(target));
+  if (!matches.length) return true;
+  const longest = Math.max(...matches.map(m => m.path.length));
+  return matches.filter(m => m.path.length === longest).some(m => m.allow);
+}
+
+async function allowed(url) {
+  const { origin, pathname, search } = new URL(url);
+  return robotsAllows(await robotsFor(origin), pathname + search);
 }
 
 /** robots.txt path rule → anchored RegExp: "*" matches any run, a trailing "$" anchors the end. */
@@ -68,20 +99,35 @@ function robotsRule(rule) {
 
 const lastHit = new Map();
 async function politeFetch(url) {
-  const host = new URL(url).host;
-  const wait = (lastHit.get(host) ?? 0) + delayMs - Date.now();
+  const { host, origin } = new URL(url);
+  const crawlDelay = (robots.get(origin)?.delay ?? 0) * 1000;
+  const wait = (lastHit.get(host) ?? 0) + Math.max(delayMs, crawlDelay) - Date.now();
   if (wait > 0) await new Promise(r => setTimeout(r, wait));
   lastHit.set(host, Date.now());
-  return fetch(url, { redirect: 'follow', headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,application/pdf;q=0.8,*/*;q=0.5' }, signal: AbortSignal.timeout(30000) });
+  return fetch(url, { redirect: 'manual', headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,application/pdf;q=0.8,*/*;q=0.5' }, signal: AbortSignal.timeout(30000) });
+}
+
+/** Follow up to 5 redirects manually, applying robots.txt (and spacing) to every hop's origin. */
+async function fetchWithRobots(url) {
+  let current = url;
+  for (let hop = 0; hop <= 5; hop++) {
+    if (!(await allowed(current))) return { robotsBlocked: true, url: current };
+    const response = await politeFetch(current);
+    const location = response.headers.get('location');
+    if (response.status >= 300 && response.status < 400 && location) { current = new URL(location, current).toString(); continue; }
+    return { response, url: current };
+  }
+  throw new Error('too_many_redirects');
 }
 
 async function check(record) {
   const row = { url: record.url, source_id: record.source_id, checked_at: new Date().toISOString() };
   try {
-    if (!(await allowed(record.url))) return { ...row, outcome: 'robots_disallowed' };
-    const response = await politeFetch(record.url);
+    const result = await fetchWithRobots(record.url);
+    if (result.robotsBlocked) return { ...row, outcome: 'robots_disallowed', final_url: result.url };
+    const response = result.response;
     const type = response.headers.get('content-type') ?? '';
-    Object.assign(row, { http_status: response.status, final_url: response.url, content_type: type.split(';')[0] });
+    Object.assign(row, { http_status: response.status, final_url: result.url, content_type: type.split(';')[0] });
     // 401/403 (and vendor codes like 475) mean the publisher refuses automated access — not a dead link.
     if (!response.ok) return { ...row, outcome: response.status === 404 || response.status === 410 ? 'gone'
       : response.status === 429 ? 'rate_limited' : [401, 403, 451, 475].includes(response.status) ? 'access_denied' : 'http_error' };

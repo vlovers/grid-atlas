@@ -15,7 +15,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import {
   F1dbIndex, assessCorpus, buildRegistry, buildTask, checkCandidate, checkExistingNames, cornerResearchQueue,
-  extractClaims, loadCorpus, sourceId,
+  extractClaims, loadCorpus, normalizeWhitespace, sourceId,
 } from '../packages/editorial-evidence/src/index.ts';
 import { sha256 } from '../packages/editorial-policy/src/index.ts';
 
@@ -60,10 +60,11 @@ const tasks = claims.map(c => {
   const block = blocksById.get(c.block_id);
   const task = buildTask(c, checks.get(c.claim_id), docsFor(block), block.cited_urls.length);
   // Store a locator, not the third-party sentence: source, passage hash and character offset.
+  // Locator: offset and length in the whitespace-normalised snapshot text, plus the hash of that exact span.
   task.passages = task.passages.map(p => {
     const doc = docsFor(block).find(d => d.source_id === p.source_id);
-    const raw = p.text.replace(/…$/, '');
-    return { source_id: p.source_id, passage_sha256: sha256(raw), offset: doc ? doc.text.indexOf(raw) : -1, numbers_covered: p.numbers_covered, names_matched: p.names_matched, score: p.score };
+    const offset = doc ? normalizeWhitespace(doc.text).indexOf(p.raw) : -1;
+    return { source_id: p.source_id, passage_sha256: sha256(p.raw), offset, length: p.raw.length, numbers_covered: p.numbers_covered, names_matched: p.names_matched, score: p.score };
   });
   return task;
 });

@@ -57,14 +57,22 @@ export class F1dbIndex {
   racesIn(circuitId: string, season: number) { return this.circuits.get(circuitId)?.races.filter(race => race.season === season) ?? []; }
   layout(id: string) { return this.layouts.get(id)?.layout; }
 
-  /** Driver slugs whose surname appears capitalised as a whole word in the text. */
+  /**
+   * Driver slugs whose surname appears capitalised as a whole word in the text. When a first name
+   * precedes the surname ("Ralf Schumacher", "Damon Hill"), only drivers with that first name are kept.
+   */
   mentionedDrivers(text: string): Map<string, string[]> {
     const found = new Map<string, string[]>();
     // Normalise first so decomposed accents do not split a name into two tokens.
-    for (const token of text.normalize('NFC').match(/\p{Lu}[\p{L}]+/gu) ?? []) {
+    const tokens = [...text.normalize('NFC').matchAll(/\p{Lu}[\p{L}'’-]*\p{L}|\p{Lu}\p{L}/gu)].map(m => m[0]);
+    tokens.forEach((token, i) => {
       const slugs = this.surnames.get(fold(token));
-      if (slugs) found.set(token, slugs);
-    }
+      if (!slugs) return;
+      const first = i > 0 ? fold(tokens[i - 1]) : '';
+      const narrowed = slugs.filter(slug => fold(slug.split('-')[0]) === first);
+      const key = narrowed.length ? `${tokens[i - 1]} ${token}` : token;
+      found.set(key, narrowed.length ? narrowed : slugs);
+    });
     return found;
   }
 
@@ -92,41 +100,49 @@ export class F1dbIndex {
     if (ref.dataset !== 'f1db' || ref.release !== this.release) return undefined;
     const [kind, ...rest] = ref.record.split(':');
     const id = rest.join(':');
-    // Driver values are slugs; prose may name them only by the dataset's own surface forms.
-    const join = (slugs: string[]): DatasetValue | null => (slugs.length
-      ? { value: [...slugs].sort().join(' / '), mentions: slugs.flatMap(slug => this.driverMentions(slug)) } : null);
+    // Every value carries the scope of its record, so the policy can refuse a record about
+    // another circuit, race or season. Driver values are slugs, named in prose only by the
+    // dataset's own surface forms.
+    const scoped = (value: string | number | null | undefined, scope: string[], mentions: string[] = []): DatasetValue | null | undefined =>
+      value === undefined ? undefined : value === null ? null : { value, mentions, scope };
+    const drivers = (slugs: string[], scope: string[]) =>
+      slugs.length ? scoped([...slugs].sort().join(' / '), scope, slugs.flatMap(slug => this.driverMentions(slug))) : null;
     if (kind === 'circuit') {
       const c = this.circuits.get(id);
       if (!c) return undefined;
       const seasons = c.races.map(race => race.season);
+      const scope = [`circuit:${id}`];
       switch (ref.field) {
-        case 'first_season': return Math.min(...seasons);
-        case 'last_season': return Math.max(...seasons);
-        case 'race_count': return c.races.length;
-        case 'country': return (c.fields.country as string) ?? null;
-        case 'place': return (c.fields.place_name as string) ?? null;
+        case 'first_season': return scoped(Math.min(...seasons), scope);
+        case 'last_season': return scoped(Math.max(...seasons), scope);
+        case 'race_count': return scoped(c.races.length, scope);
+        case 'country': return scoped((c.fields.country as string) ?? null, scope);
+        case 'place': return scoped((c.fields.place_name as string) ?? null, scope);
         default: return undefined;
       }
     }
     if (kind === 'race') {
-      const r = this.races.get(id)?.race;
-      if (!r) return undefined;
+      const entry = this.races.get(id);
+      if (!entry) return undefined;
+      const r = entry.race;
+      const scope = [`race:${id}`, `circuit:${entry.circuit.circuit_id}`, `season:${r.season}`];
       switch (ref.field) {
-        case 'winner': return join(r.winners);
-        case 'pole': return join(r.pole);
-        case 'fastest_lap': return join(r.fastest_lap);
-        case 'date': return r.date;
-        case 'season': return r.season;
-        case 'second': return join(r.podium.filter(p => p.position === 2).map(p => p.driver));
-        case 'third': return join(r.podium.filter(p => p.position === 3).map(p => p.driver));
+        case 'winner': return drivers(r.winners, scope);
+        case 'pole': return drivers(r.pole, scope);
+        case 'fastest_lap': return drivers(r.fastest_lap, scope);
+        case 'date': return scoped(r.date, scope);
+        case 'season': return scoped(r.season, scope);
+        case 'second': return drivers(r.podium.filter(p => p.position === 2).map(p => p.driver), scope);
+        case 'third': return drivers(r.podium.filter(p => p.position === 3).map(p => p.driver), scope);
         default: return undefined;
       }
     }
     if (kind === 'layout') {
-      const l = this.layouts.get(id)?.layout;
-      if (!l) return undefined;
-      if (ref.field === 'length_km') return Number(l.length_km);
-      if (ref.field === 'turns') return l.turns;
+      const entry = this.layouts.get(id);
+      if (!entry) return undefined;
+      const scope = [`layout:${id}`, `circuit:${entry.circuit.circuit_id}`];
+      if (ref.field === 'length_km') return scoped(Number(entry.layout.length_km), scope);
+      if (ref.field === 'turns') return scoped(entry.layout.turns, scope);
       return undefined;
     }
     return undefined;

@@ -19,25 +19,62 @@ export type CornerNameCandidate = {
 
 export type CornerNameDecision = { accepted: boolean; status: 'named_source_backed' | 'rejected'; reasons: string[] };
 
-/** Turn reference forms: "Turn 7", "T7", "turn seven" is not accepted (ambiguous in maps). */
-const turnPattern = (turn: number) => new RegExp(`(?<![\\p{L}\\p{N}])(?:turns?|t|corner|curva|virage|kurve|curve|поворот(?:и|у)?)\\s?${turn}(?![\\p{N}])`, 'iu');
+const TURN_WORDS = '(?:turns?|t|corner|curva|virage|kurve|curve|поворот(?:и|у)?)';
+/** A reference to exactly this turn number: not "Turn 7.5", "Turn 7a" or "Turn 71". */
+const turnPattern = (turn: number) => new RegExp(`(?<![\\p{L}\\p{N}])${TURN_WORDS}\\s?${turn}(?![\\p{N}\\p{L}]|[.,]\\p{N})`, 'giu');
+// Non-global, so .test() carries no lastIndex state between calls.
+const ANY_TURN_ONCE = new RegExp(`(?<![\\p{L}\\p{N}])${TURN_WORDS}\\s?\\d+`, 'iu');
+const GENERIC = /^(?:turns?|t|corner|curve|bend|hairpin|chicane|straight|kink|esses|поворот|шикана)?\s*\d*[a-z]?$/iu;
+const NEGATED = /\b(?:not|isn't|is no longer|no longer|formerly|previously|once called|wrongly|mistakenly|ex-)\b|не\s/iu;
+const MAX_GAP = 40;
 
+/**
+ * Accept a corner name only when the stored source itself ties it to this turn: name and turn
+ * reference in the same sentence, at most 40 characters apart, with no other turn reference or
+ * negation between them; and the source text attests the period year, which must be a season in
+ * which this layout was raced (not merely inside its first–last range).
+ */
 export function acceptCornerName(c: CornerNameCandidate, snapshot: { source_id: string; text: string; content_sha256: string } | undefined,
   layoutSeasons: readonly number[]): CornerNameDecision {
   const reasons: string[] = [];
-  if (!c.name?.trim() || /^(turn|t)\s?\d+$/i.test(c.name.trim())) reasons.push('not_a_name');
+  const name = c.name ?? '';
+  if (/\p{Cf}/u.test(name) || /\p{Cf}/u.test(c.excerpt ?? '')) reasons.push('invalid_characters');
+  if (!name.trim() || GENERIC.test(name.trim())) reasons.push('not_a_name');
   if (!snapshot || snapshot.source_id !== c.source_id) reasons.push('source_snapshot_missing');
   else if (sha256(snapshot.text) !== snapshot.content_sha256) reasons.push('source_snapshot_integrity');
   else if (!containsPhrase(snapshot.text, c.excerpt)) reasons.push('excerpt_not_in_source');
-  if (!containsPhrase(c.excerpt ?? '', c.name ?? '')) reasons.push('name_not_in_excerpt');
-  if (!turnPattern(c.turn).test(c.excerpt ?? '')) reasons.push('turn_number_not_in_excerpt');
   if (!c.locator?.trim()) reasons.push('locator_missing');
-  if (!layoutSeasons.length) reasons.push('layout_unknown');
+
+  // Link the name to the turn inside one sentence of the excerpt.
+  const linked = sentencesOf(c.excerpt ?? '').some(sentence => {
+    const nameAt = indexOfPhrase(sentence, name);
+    if (nameAt < 0) return false;
+    return [...sentence.matchAll(turnPattern(c.turn))].some(t => {
+      const turnAt = t.index ?? 0;
+      const [from, to] = turnAt < nameAt ? [turnAt + t[0].length, nameAt] : [nameAt + name.length, turnAt];
+      const between = sentence.slice(from, to);
+      return to - from <= MAX_GAP && !ANY_TURN_ONCE.test(between) && !NEGATED.test(between);
+    });
+  });
+  if (!containsPhrase(c.excerpt ?? '', name)) reasons.push('name_not_in_excerpt');
+  else if (!new RegExp(turnPattern(c.turn).source, 'iu').test(c.excerpt ?? '')) reasons.push('turn_number_not_in_excerpt');
+  else if (!linked) reasons.push('name_not_linked_to_turn');
+
+  if (!Number.isInteger(c.source_period_year)) reasons.push('source_period_invalid');
   else {
-    const first = Math.min(...layoutSeasons), last = Math.max(...layoutSeasons);
-    if (!(c.source_period_year >= first && c.source_period_year <= last)) reasons.push('source_period_outside_layout_seasons');
+    if (!layoutSeasons.length) reasons.push('layout_unknown');
+    else if (!layoutSeasons.includes(c.source_period_year)) reasons.push('source_period_outside_layout_seasons');
+    // The period comes from the source, not from the candidate: the year must appear in the stored text.
+    if (snapshot && !new RegExp(`(?<!\\d)${c.source_period_year}(?!\\d)`).test(snapshot.text)) reasons.push('source_period_not_in_source');
   }
   return reasons.length ? { accepted: false, status: 'rejected', reasons } : { accepted: true, status: 'named_source_backed', reasons: [] };
+}
+
+const sentencesOf = (text: string) => text.split(/(?<=[.!?;])\s+/).filter(Boolean);
+function indexOfPhrase(text: string, phrase: string): number {
+  if (!phrase.trim()) return -1;
+  const at = text.toLowerCase().indexOf(phrase.toLowerCase());
+  return at >= 0 && containsPhrase(text, phrase) ? at : -1;
 }
 
 export type ExistingNameCheck = {

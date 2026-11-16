@@ -3,10 +3,10 @@
   "circuits": 78,
   "blocks": 1566,
   "claims": 4177,
-  "dataset_supported": 134,
+  "dataset_supported": 147,
   "dataset_conflicts": 0,
   "dataset_unmatched": 25,
-  "claims_with_lead": 2229,
+  "claims_with_lead": 2234,
   "claims_verified": 0,
   "sources_cited": 539,
   "sources_live": 498,
@@ -191,7 +191,7 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
@@ -1377,8 +1377,8 @@
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 3,
-    "passages_cover_numbers": 27,
+    "dataset_supported": 4,
+    "passages_cover_numbers": 26,
     "passages_partial": 6,
     "no_passage_in_live_sources": 11,
     "cited_sources_unavailable": 0,
@@ -1650,15 +1650,15 @@
    },
    "claims_unaligned_uk": 4,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 0,
+    "dataset_supported": 1,
     "passages_cover_numbers": 26,
-    "passages_partial": 11,
+    "passages_partial": 10,
     "no_passage_in_live_sources": 22,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -1686,7 +1686,7 @@
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.441,
+   "evidence_lead_rate": 0.458,
    "content_complete": false
   },
   {
@@ -1720,14 +1720,14 @@
    },
    "claims_unaligned_uk": 9,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
-    "passages_cover_numbers": 28,
+    "dataset_supported": 2,
+    "passages_cover_numbers": 27,
     "passages_partial": 20,
     "no_passage_in_live_sources": 19,
     "cited_sources_unavailable": 0,
@@ -1797,8 +1797,8 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 2,
-    "passages_cover_numbers": 36,
-    "passages_partial": 18,
+    "passages_cover_numbers": 35,
+    "passages_partial": 19,
     "no_passage_in_live_sources": 22,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -1826,7 +1826,7 @@
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.487,
+   "evidence_lead_rate": 0.474,
    "content_complete": false
   },
   {
@@ -2000,7 +2000,7 @@
    },
    "claims_unaligned_uk": 9,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 1,
     "conflict": 0,
     "unmatched": 0
    },
@@ -2140,14 +2140,14 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 2,
-    "passages_cover_numbers": 25,
+    "dataset_supported": 3,
+    "passages_cover_numbers": 24,
     "passages_partial": 9,
     "no_passage_in_live_sources": 14,
     "cited_sources_unavailable": 0,
@@ -2560,14 +2560,14 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
-    "passages_cover_numbers": 28,
+    "dataset_supported": 2,
+    "passages_cover_numbers": 27,
     "passages_partial": 5,
     "no_passage_in_live_sources": 20,
     "cited_sources_unavailable": 0,
@@ -3957,15 +3957,15 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 3,
+    "supported": 4,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 2,
+    "dataset_supported": 3,
     "passages_cover_numbers": 8,
-    "passages_partial": 3,
+    "passages_partial": 2,
     "no_passage_in_live_sources": 3,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -3992,7 +3992,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.625,
+   "evidence_lead_rate": 0.688,
    "content_complete": false
   },
   {
@@ -4236,15 +4236,15 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
-    "passages_cover_numbers": 23,
-    "passages_partial": 8,
+    "dataset_supported": 3,
+    "passages_cover_numbers": 22,
+    "passages_partial": 7,
     "no_passage_in_live_sources": 7,
     "cited_sources_unavailable": 3,
     "no_cited_sources": 0
@@ -4271,7 +4271,7 @@
     "generic": 0,
     "en_uk_issues": 2
    },
-   "evidence_lead_rate": 0.571,
+   "evidence_lead_rate": 0.595,
    "content_complete": false
   },
   {
@@ -4305,14 +4305,14 @@
    },
    "claims_unaligned_uk": 4,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
-    "passages_cover_numbers": 14,
+    "dataset_supported": 2,
+    "passages_cover_numbers": 13,
     "passages_partial": 3,
     "no_passage_in_live_sources": 16,
     "cited_sources_unavailable": 0,
@@ -4374,15 +4374,15 @@
    },
    "claims_unaligned_uk": 3,
    "dataset_checks": {
-    "supported": 2,
+    "supported": 5,
     "conflict": 0,
     "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 2,
-    "passages_cover_numbers": 21,
-    "passages_partial": 12,
+    "dataset_supported": 5,
+    "passages_cover_numbers": 20,
+    "passages_partial": 10,
     "no_passage_in_live_sources": 18,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -4409,7 +4409,7 @@
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.434,
+   "evidence_lead_rate": 0.472,
    "content_complete": false
   },
   {
@@ -4512,14 +4512,14 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 4,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 3,
-    "passages_cover_numbers": 28,
+    "dataset_supported": 2,
+    "passages_cover_numbers": 29,
     "passages_partial": 13,
     "no_passage_in_live_sources": 8,
     "cited_sources_unavailable": 8,
@@ -4582,7 +4582,7 @@
    },
    "claims_unaligned_uk": 11,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
     "unmatched": 1
    },
@@ -5070,15 +5070,15 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
     "unmatched": 2
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
+    "dataset_supported": 2,
     "passages_cover_numbers": 33,
-    "passages_partial": 9,
+    "passages_partial": 8,
     "no_passage_in_live_sources": 15,
     "cited_sources_unavailable": 8,
     "no_cited_sources": 0
@@ -5105,7 +5105,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.515,
+   "evidence_lead_rate": 0.53,
    "content_complete": false
   },
   {
@@ -5349,15 +5349,15 @@
    },
    "claims_unaligned_uk": 0,
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
+    "dataset_supported": 2,
     "passages_cover_numbers": 14,
-    "passages_partial": 8,
+    "passages_partial": 7,
     "no_passage_in_live_sources": 8,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -5384,7 +5384,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.484,
+   "evidence_lead_rate": 0.516,
    "content_complete": false
   },
   {
@@ -5425,8 +5425,8 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 4,
-    "passages_cover_numbers": 28,
-    "passages_partial": 5,
+    "passages_cover_numbers": 27,
+    "passages_partial": 6,
     "no_passage_in_live_sources": 18,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -5453,7 +5453,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.582,
+   "evidence_lead_rate": 0.564,
    "content_complete": false
   }
  ]

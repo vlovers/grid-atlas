@@ -98,7 +98,8 @@
     {
      "source_id": "src-8a871b52a0a3",
      "passage_sha256": "d4f73b7d942487626999fea3a7ede5d5480aa2b230f9e8481f44d3ecd1e52ee4",
-     "offset": -1,
+     "offset": 0,
+     "length": 152,
      "numbers_covered": true,
      "names_matched": [
       "Dallas"
@@ -107,8 +108,9 @@
     },
     {
      "source_id": "src-8a871b52a0a3",
-     "passage_sha256": "71d9d05da4734d096dea8a9f13df3051fc59a9ece1cfceb9f20c29dc7a177e8e",
-     "offset": -1,
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
      "numbers_covered": false,
      "names_matched": [
       "Keke",
@@ -132,15 +134,17 @@
     {
      "source_id": "src-8a871b52a0a3",
      "passage_sha256": "d4f73b7d942487626999fea3a7ede5d5480aa2b230f9e8481f44d3ecd1e52ee4",
-     "offset": -1,
+     "offset": 0,
+     "length": 152,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
     },
     {
      "source_id": "src-8a871b52a0a3",
-     "passage_sha256": "71d9d05da4734d096dea8a9f13df3051fc59a9ece1cfceb9f20c29dc7a177e8e",
-     "offset": -1,
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
      "numbers_covered": true,
      "names_matched": [],
      "score": 3
@@ -161,7 +165,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "c74767a246bb4aabe31929868ebebabd5808f440c7d73bba0ee6f775007710cb",
-     "offset": -1,
+     "offset": 18241,
+     "length": 282,
      "numbers_covered": false,
      "names_matched": [
       "Dallas",
@@ -172,7 +177,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
-     "offset": -1,
+     "offset": 18958,
+     "length": 256,
      "numbers_covered": true,
      "names_matched": [
       "Dallas"
@@ -195,7 +201,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "4d429ab795206efc93b1e0c9e1792cde4dc54ccec8cdc541ed0136cd049b3692",
-     "offset": 422,
+     "offset": 416,
+     "length": 283,
      "numbers_covered": false,
      "names_matched": [
       "Fair",
@@ -205,8 +212,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "70355cff829aeed18d9d68f060c778fb9df344c35fd62e6822dc8190e7981d6f",
-     "offset": 8408,
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
      "numbers_covered": false,
      "names_matched": [
       "Fair",
@@ -229,8 +237,9 @@
    "passages": [
     {
      "source_id": "src-8a871b52a0a3",
-     "passage_sha256": "71d9d05da4734d096dea8a9f13df3051fc59a9ece1cfceb9f20c29dc7a177e8e",
-     "offset": -1,
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
      "numbers_covered": true,
      "names_matched": [
       "Nigel",
@@ -243,8 +252,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "a4100904f7fb54c9a33e67c19d8edfb4d150a1e5b3dd95d80eba4ad3b4973714",
-     "offset": -1,
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
      "numbers_covered": true,
      "names_matched": [
       "Nigel",
@@ -269,7 +279,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
-     "offset": 110,
+     "offset": 104,
+     "length": 311,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg",
@@ -280,7 +291,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "2cbd35c122371725e9ea245207873111263d56c86e24725e86ac5e6cdaacd6ea",
-     "offset": -1,
+     "offset": 3820,
+     "length": 238,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg",
@@ -303,8 +315,9 @@
    "passages": [
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "f16721c6d4a03d45d9e63f228a950348852c9783867f2f4328cb23f4434d60ea",
-     "offset": 9440,
+     "passage_sha256": "96eba92fa1e89669c185e315df69c63e94078b11344d6ccba36b33849f7a9048",
+     "offset": 9393,
+     "length": 379,
      "numbers_covered": true,
      "names_matched": [
       "Sunday"
@@ -313,8 +326,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "930faab2449d10ed490781e4ff847b10232950af9acabdbd15924fd9c40ba0bc",
-     "offset": -1,
+     "passage_sha256": "21b41d3344dac2a744daa63444a8fda498cfd4555f09147ac92d6100120afe2a",
+     "offset": 11762,
+     "length": 330,
      "numbers_covered": true,
      "names_matched": [
       "Can-Am"
@@ -336,8 +350,9 @@
    "passages": [
     {
      "source_id": "src-8a871b52a0a3",
-     "passage_sha256": "71d9d05da4734d096dea8a9f13df3051fc59a9ece1cfceb9f20c29dc7a177e8e",
-     "offset": -1,
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
      "numbers_covered": true,
      "names_matched": [
       "Mansell",
@@ -348,8 +363,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "a4100904f7fb54c9a33e67c19d8edfb4d150a1e5b3dd95d80eba4ad3b4973714",
-     "offset": -1,
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
      "numbers_covered": false,
      "names_matched": [
       "Mansell",
@@ -373,7 +389,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "ced187a7fb2f2d957d3c4fe928a552d4823be442e3562a003c0ea8c7c6930eec",
-     "offset": -1,
+     "offset": 15743,
+     "length": 294,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg"
@@ -383,7 +400,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
-     "offset": 110,
+     "offset": 104,
+     "length": 311,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg"
@@ -405,8 +423,9 @@
    "passages": [
     {
      "source_id": "src-8a871b52a0a3",
-     "passage_sha256": "71d9d05da4734d096dea8a9f13df3051fc59a9ece1cfceb9f20c29dc7a177e8e",
-     "offset": -1,
+     "passage_sha256": "a5408b63f04c4edd123ce24c955622690459ae53bed6c111503e9319e08932f4",
+     "offset": 338,
+     "length": 8068,
      "numbers_covered": true,
      "names_matched": [
       "Arnoux",
@@ -418,7 +437,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "fd083bc87e3fca125785d784334568ffdf84a0ce40701264a20d912aa6544790",
-     "offset": 17536,
+     "offset": 17462,
+     "length": 209,
      "numbers_covered": true,
      "names_matched": [
       "Mansell",
@@ -442,7 +462,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
-     "offset": -1,
+     "offset": 18958,
+     "length": 256,
      "numbers_covered": false,
      "names_matched": [
       "Dallas",
@@ -452,8 +473,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "70355cff829aeed18d9d68f060c778fb9df344c35fd62e6822dc8190e7981d6f",
-     "offset": 8408,
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
      "numbers_covered": false,
      "names_matched": [
       "Fair",
@@ -477,7 +499,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "981d81d5a389f04548c67a5b1116c4a4843b5f12b205e2ab2a0c7e81d94487fc",
-     "offset": 10572,
+     "offset": 10523,
+     "length": 212,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg",
@@ -488,7 +511,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "c74767a246bb4aabe31929868ebebabd5808f440c7d73bba0ee6f775007710cb",
-     "offset": -1,
+     "offset": 18241,
+     "length": 282,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg",
@@ -512,7 +536,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
-     "offset": -1,
+     "offset": 18958,
+     "length": 256,
      "numbers_covered": true,
      "names_matched": [
       "Dallas"
@@ -521,8 +546,9 @@
     },
     {
      "source_id": "src-9f338fcb269b",
-     "passage_sha256": "a4100904f7fb54c9a33e67c19d8edfb4d150a1e5b3dd95d80eba4ad3b4973714",
-     "offset": -1,
+     "passage_sha256": "ea0b13cee3c1bd134ae5f045a99daab2e2454bf1e919af8e26a08a27f3eb771f",
+     "offset": 19215,
+     "length": 3052,
      "numbers_covered": true,
      "names_matched": [],
      "score": 8
@@ -543,7 +569,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "e8bfc9d9d469b408902a8fd30f766fd1ee7dbdc071dd71c89a7e5aaa04cd0f01",
-     "offset": -1,
+     "offset": 0,
+     "length": 103,
      "numbers_covered": true,
      "names_matched": [
       "Dallas"
@@ -553,7 +580,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
-     "offset": 110,
+     "offset": 104,
+     "length": 311,
      "numbers_covered": false,
      "names_matched": [
       "Dallas"
@@ -588,7 +616,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "75bffba5bca339c2287a1a8ccd3c8d9a1721928bb2ef860ec8e5efcd5c1ced4c",
-     "offset": 5706,
+     "offset": 5677,
+     "length": 235,
      "numbers_covered": true,
      "names_matched": [
       "During"
@@ -598,7 +627,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "21d881f71c1d07b187ae6fbb6053985b58feaf0ef5380cf53e2f8a7d0b688a83",
-     "offset": 8841,
+     "offset": 8800,
+     "length": 253,
      "numbers_covered": true,
      "names_matched": [
       "During"
@@ -621,7 +651,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "7583c211444eaf7d2c0a669386e67403047b7a3b681fa634f6259696420a5f65",
-     "offset": 110,
+     "offset": 104,
+     "length": 311,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg's"
@@ -631,7 +662,8 @@
     {
      "source_id": "src-9f338fcb269b",
      "passage_sha256": "981d81d5a389f04548c67a5b1116c4a4843b5f12b205e2ab2a0c7e81d94487fc",
-     "offset": 10572,
+     "offset": 10523,
+     "length": 212,
      "numbers_covered": true,
      "names_matched": [
       "Rosberg's"

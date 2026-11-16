@@ -121,7 +121,11 @@ test('fact-check verdicts are re-checked by the policy, never trusted', () => {
     blocks: [{ block_id: 'b', kind: 'history', body: { en: cand.en, uk: cand.uk }, claim_ids: [cand.claim_id], links: [] }], claims: [selfCheck], sources: [snap], media: [],
     authorship: { writer: legacyWriter('drafts'), fact_checker: legacyWriter('drafts'), localizer: null }, editorial_review: null },
   { ...ctx, known_routes: new Set(), corpus: [], license_allowlist: [], technical_receipt: null });
-  assert.ok(decision.gates.flatMap(g => g.findings).some(f => f.code === 'self_verification'));
+  // The writer as fact-checker is rejected by the policy; the Ukrainian name "Пасе" also keeps it from verifying.
+  assert.ok(decision.gates.flatMap(g => g.findings).some(f => f.code === 'self_fact_check'));
+  assert.notEqual(decision.outcome, 'PASS');
+  // verdictToClaim itself refuses a checker that is the recorded legacy writer of the sentence's file.
+  assert.throws(() => verdictToClaim({ ...cand, provenance: { file: 'drafts' } }, { ...verdict('x'), checker: legacyWriter('drafts') }, [snap]));
 });
 
 test('passage finder locates candidate passages but marks number coverage honestly', () => {
@@ -174,7 +178,7 @@ test('snapshot-derived artifacts store hashes and offsets, never third-party tex
   const tasks = JSON.parse(readFileSync('docs/editorial/circuit-evidence/factcheck-tasks.json', 'utf8'));
   const status = JSON.parse(readFileSync('docs/editorial/circuit-evidence/source-status.json', 'utf8'));
   for (const t of tasks) for (const p of t.passages) {
-    assert.deepEqual(Object.keys(p).sort(), ['names_matched', 'numbers_covered', 'offset', 'passage_sha256', 'score', 'source_id']);
+    assert.deepEqual(Object.keys(p).sort(), ['length', 'names_matched', 'numbers_covered', 'offset', 'passage_sha256', 'score', 'source_id']);
     assert.ok(status[p.source_id]?.text_sha256, `${p.source_id} has a recorded snapshot hash`);
   }
   for (const row of Object.values(status)) assert.ok(!('text' in row));

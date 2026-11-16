@@ -13,7 +13,11 @@ import type { AgentRef, Claim, ClaimType, DatasetEvidence, SourceEvidence, Sourc
 import { sentences, type ClaimCandidate } from './claims.ts';
 import type { DatasetCheck } from './dataset-check.ts';
 
-export type Passage = { source_id: string; url: string; text: string; numbers_covered: boolean; names_matched: string[]; score: number };
+/** `raw` is the full sentence as it occurs in the whitespace-normalised source text; `text` may be truncated for display. */
+export type Passage = { source_id: string; url: string; text: string; raw: string; numbers_covered: boolean; names_matched: string[]; score: number };
+
+/** Whitespace normalisation used for passage offsets (sentences() collapses whitespace the same way). */
+export const normalizeWhitespace = (text: string) => text.replace(/\s+/g, ' ').trim();
 export type FactCheckTask = {
   claim_id: string; circuit_id: string; block_id: string; claim_type: ClaimCandidate['claim_type']; importance: ClaimCandidate['importance'];
   en: string; uk: string | null;
@@ -38,7 +42,7 @@ export function findPassages(en: string, docs: readonly { source_id: string; url
     const matched = names.filter(name => containsPhrase(s, name));
     const overlap = [...contentWords(s)].filter(w => words.has(w)).length;
     if (!covered.length && !matched.length) continue;
-    scored.push({ source_id: doc.source_id, url: doc.url, text: s.length > MAX_PASSAGE ? `${s.slice(0, MAX_PASSAGE)}…` : s,
+    scored.push({ source_id: doc.source_id, url: doc.url, text: s.length > MAX_PASSAGE ? `${s.slice(0, MAX_PASSAGE)}…` : s, raw: s,
       numbers_covered: covered.length === numbers.length, names_matched: matched, score: covered.length * 3 + matched.length * 2 + overlap });
   }
   return scored.sort((a, b) => b.score - a.score).slice(0, 2);
@@ -81,19 +85,51 @@ export const legacyWriter = (file: string): AgentRef => ({ id: `legacy:${file}`,
  * claim is verified: excerpts must occur in `sources`, numbers must be evidenced, the checker must
  * differ from the writer, and the verification is bound to the snapshots' hashes.
  */
-export function verdictToClaim(candidate: ClaimCandidate, verdict: FactCheckVerdict, sources: readonly SourceSnapshot[]): Claim {
+export function verdictToClaim(candidate: ClaimCandidate, verdict: FactCheckVerdict, sources: readonly SourceSnapshot[],
+  ukNameTable: ReadonlyMap<string, string> = new Map()): Claim {
   if (verdict.claim_id !== candidate.claim_id) throw new Error(`verdict ${verdict.claim_id} does not belong to ${candidate.claim_id}`);
+  const writer = legacyWriter(candidate.provenance.file);
+  if (verdict.checker?.id === writer.id || verdict.checker?.run_id === writer.run_id) throw new Error('the legacy writer of this text cannot check it');
+  // A sentence is a structured statistic only if nothing beyond names, years and race vocabulary remains;
+  // otherwise its narrative ("after a dramatic late duel in the rain") needs sources, not just the dataset.
+  const type = candidate.claim_type === 'statistic' && !isPureStatistic(candidate.en) ? 'historical_event' : TYPE[candidate.claim_type];
   const claim: Claim = {
-    claim_id: candidate.claim_id, entity: { type: 'circuit', id: candidate.circuit_id }, claim_type: TYPE[candidate.claim_type], importance: candidate.importance,
+    claim_id: candidate.claim_id, entity: { type: 'circuit', id: candidate.circuit_id }, claim_type: type, importance: candidate.importance,
     statement: { en: candidate.en, uk: candidate.uk ?? '' },
     presentation: verdict.verdict === 'disputed' ? 'conflict_disclosed' : 'asserted',
     evidence: [...verdict.evidence, ...verdict.dataset_evidence],
     verification: { status: 'unverified', method: 'none', verifier: null, verified_at: null, claim_sha256: null },
   };
-  const status = ({ supported: 'verified', contradicted: 'rejected', insufficient: 'insufficient_evidence', disputed: 'disputed' } as const)[verdict.verdict];
+  let status = ({ supported: 'verified', contradicted: 'rejected', insufficient: 'insufficient_evidence', disputed: 'disputed' } as const)[verdict.verdict] as Claim['verification']['status'];
+  let notes = verdict.notes;
+  // Ukrainian proper names cannot yet be bound to archive entities. Until a reviewed EN→UK name table
+  // covers them, a claim whose Ukrainian text names anyone is quarantined rather than verified.
+  const unbound = unresolvedUkNames(candidate.uk ?? '', ukNameTable);
+  if ((status === 'verified' || status === 'disputed') && unbound.length) {
+    status = 'insufficient_evidence';
+    notes = `${notes ? `${notes}; ` : ''}uk_names_unbound: ${unbound.join(', ')}`;
+  }
   claim.verification = {
     status, method: verdict.dataset_evidence.length && !verdict.evidence.length ? 'dataset_comparison' : 'independent_retrieval',
-    verifier: verdict.checker, verified_at: verdict.checked_at, claim_sha256: claimDigest(claim, sources), notes: verdict.notes,
+    verifier: verdict.checker, verified_at: verdict.checked_at, claim_sha256: claimDigest(claim, sources), notes,
   };
   return claim;
+}
+
+const STAT_WORDS = new Set(['the', 'a', 'an', 'in', 'at', 'of', 'for', 'from', 'on', 'to', 'and', 'his', 'her', 'their', 'its', 'here', 'there',
+  'race', 'grand', 'prix', 'gp', 'won', 'win', 'wins', 'winning', 'victory', 'took', 'claimed', 'secured', 'started', 'pole', 'position', 'fastest',
+  'lap', 'set', 'ahead', 'by', 'with', 'was', 'winner', 'first', 'second', 'third', 'finished', 'place', 'year', 'season', 'edition', 'round',
+  'championship', 'world', 'formula', 'one', 'f1', 's', 'it', 'this', 'that', 'event']);
+
+/** True when, after removing names, numbers and race vocabulary, no narrative content remains. */
+export function isPureStatistic(en: string): boolean {
+  const rest = en.normalize('NFC').replace(/\b\p{Lu}[\p{L}'’-]*/gu, ' ').replace(/\d+(?:[.,]\d+)?/g, ' ')
+    .toLowerCase().split(/[^\p{L}]+/u).filter(Boolean).filter(w => !STAT_WORDS.has(w));
+  return rest.length === 0;
+}
+
+/** Capitalised Cyrillic words after the first word of the sentence that the reviewed name table cannot resolve. */
+export function unresolvedUkNames(uk: string, table: ReadonlyMap<string, string>): string[] {
+  const words = [...uk.normalize('NFC').matchAll(/\p{Lu}[\p{Script=Cyrillic}'’ʼ-]+/gu)].filter(m => (m.index ?? 0) > 0).map(m => m[0]);
+  return [...new Set(words.filter(w => !table.has(w)))];
 }

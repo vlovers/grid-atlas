@@ -98,8 +98,9 @@
    "passages": [
     {
      "source_id": "src-7489b82575d9",
-     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
-     "offset": -1,
+     "passage_sha256": "a140c62890cb658954cd31317b73cc98950b23e1aa5f01907484239c305e7eb2",
+     "offset": 345,
+     "length": 7785,
      "numbers_covered": false,
      "names_matched": [
       "Nigel",
@@ -110,7 +111,8 @@
     {
      "source_id": "src-7489b82575d9",
      "passage_sha256": "2587313ed47062f4642b9b78ef61966dc5481ca4fd599d402900031eeb0ceebf",
-     "offset": -1,
+     "offset": 0,
+     "length": 159,
      "numbers_covered": true,
      "names_matched": [],
      "score": 4
@@ -143,7 +145,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "b4250c4d98311274596f51e972ef4f66d1e27d450f1b4585b46ffcad409f7690",
-     "offset": 17813,
+     "offset": 17705,
+     "length": 149,
      "numbers_covered": true,
      "names_matched": [
       "Nigel"
@@ -153,7 +156,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "34b5268fcfd93f2d9a47da2c3f466c49982080c581172f77f789cdc28bf70905",
-     "offset": 749,
+     "offset": 744,
+     "length": 266,
      "numbers_covered": true,
      "names_matched": [
       "Mansell's"
@@ -176,7 +180,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "8cb7cd91ddd4cae3175f4386276c12d335a93d23c5b9cf9dce046ae5e04bd5e2",
-     "offset": 2933,
+     "offset": 2914,
+     "length": 189,
      "numbers_covered": true,
      "names_matched": [
       "Williams"
@@ -186,7 +191,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "e2d16b804c28fad8d72819dcbbb66117a4149a585a10aabfd9d0ecce3652494c",
-     "offset": -1,
+     "offset": 7970,
+     "length": 194,
      "numbers_covered": true,
      "names_matched": [
       "Williams"
@@ -209,7 +215,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "47592d8cd962836a6df9ee7de356ec41ab8adb44ee4d6f96b9009929f4afd7ae",
-     "offset": 12040,
+     "offset": 11971,
+     "length": 161,
      "numbers_covered": true,
      "names_matched": [
       "Then"
@@ -219,7 +226,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "0773798c72159be396e7ae07646b4aad704f8042158c5695d73939a8af93c683",
-     "offset": 16643,
+     "offset": 16545,
+     "length": 154,
      "numbers_covered": true,
      "names_matched": [
       "Then"
@@ -241,8 +249,9 @@
    "passages": [
     {
      "source_id": "src-00f752b98688",
-     "passage_sha256": "5353005320343875f830512034d1b08e99d9663c8972c66a0332580eda3ff907",
-     "offset": -1,
+     "passage_sha256": "570b4636cbf2db91aa9ef85fe0e971022aa9834e85befd5055ed6f245d92c466",
+     "offset": 4445,
+     "length": 397,
      "numbers_covered": true,
      "names_matched": [
       "For",
@@ -255,7 +264,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
-     "offset": -1,
+     "offset": 14493,
+     "length": 198,
      "numbers_covered": true,
      "names_matched": [
       "For",
@@ -279,8 +289,9 @@
    "passages": [
     {
      "source_id": "src-f1165736bdf8",
-     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
-     "offset": -1,
+     "passage_sha256": "cc18602104ff1c6ea2ca22f6d341767171285a916324761cacf5f8418cc8b0b9",
+     "offset": 2912,
+     "length": 1365,
      "numbers_covered": true,
      "names_matched": [
       "Jacques",
@@ -290,8 +301,9 @@
     },
     {
      "source_id": "src-7489b82575d9",
-     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
-     "offset": -1,
+     "passage_sha256": "a140c62890cb658954cd31317b73cc98950b23e1aa5f01907484239c305e7eb2",
+     "offset": 345,
+     "length": 7785,
      "numbers_covered": true,
      "names_matched": [
       "Jacques",
@@ -315,7 +327,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
-     "offset": -1,
+     "offset": 14493,
+     "length": 198,
      "numbers_covered": false,
      "names_matched": [
       "Piquet",
@@ -325,8 +338,9 @@
     },
     {
      "source_id": "src-f1165736bdf8",
-     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
-     "offset": -1,
+     "passage_sha256": "cc18602104ff1c6ea2ca22f6d341767171285a916324761cacf5f8418cc8b0b9",
+     "offset": 2912,
+     "length": 1365,
      "numbers_covered": true,
      "names_matched": [
       "Piquet",
@@ -349,8 +363,9 @@
    "passages": [
     {
      "source_id": "src-f1165736bdf8",
-     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
-     "offset": -1,
+     "passage_sha256": "cc18602104ff1c6ea2ca22f6d341767171285a916324761cacf5f8418cc8b0b9",
+     "offset": 2912,
+     "length": 1365,
      "numbers_covered": true,
      "names_matched": [
       "Williams",
@@ -361,8 +376,9 @@
     },
     {
      "source_id": "src-7489b82575d9",
-     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
-     "offset": -1,
+     "passage_sha256": "a140c62890cb658954cd31317b73cc98950b23e1aa5f01907484239c305e7eb2",
+     "offset": 345,
+     "length": 7785,
      "numbers_covered": true,
      "names_matched": [
       "Williams",
@@ -387,7 +403,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
-     "offset": -1,
+     "offset": 14493,
+     "length": 198,
      "numbers_covered": true,
      "names_matched": [
       "Mansell"
@@ -397,7 +414,8 @@
     {
      "source_id": "src-00f752b98688",
      "passage_sha256": "e48d9e30bd6d8b0d5b5947cc1b97b65f6cbf392ba7d4025c84f8f7867d2a35f0",
-     "offset": -1,
+     "offset": 1120,
+     "length": 307,
      "numbers_covered": true,
      "names_matched": [
       "Mansell"
@@ -420,7 +438,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "bbc931f4bb2ad81a75caf25c4686fc7011098823f6700ca227563633522f389e",
-     "offset": -1,
+     "offset": 0,
+     "length": 288,
      "numbers_covered": true,
      "names_matched": [
       "Brands",
@@ -431,7 +450,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "a9dcd6a87bb54472bd9bbded55e877fe28ce49c88215e5d0116061642cd6bf9e",
-     "offset": 306,
+     "offset": 289,
+     "length": 116,
      "numbers_covered": true,
      "names_matched": [
       "Brands",
@@ -454,8 +474,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Paddock",
@@ -467,7 +488,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "c12873f48ac644418acc26394f5cd4341373842bd55956235b199104af6a5723",
-     "offset": 1029,
+     "offset": 976,
+     "length": 178,
      "numbers_covered": true,
      "names_matched": [
       "Paddock",
@@ -490,8 +512,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "45a19275a803c723cd796e4018ffbfaea09a2fb283f2d17727d49fc2860aa83d",
-     "offset": -1,
+     "passage_sha256": "6964db57dfa18a71c3ac8034cb4977cfe7ee43a20a921c570746f63d56af818f",
+     "offset": 11133,
+     "length": 644,
      "numbers_covered": false,
      "names_matched": [],
      "score": 5
@@ -499,7 +522,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
-     "offset": 1620,
+     "offset": 1565,
+     "length": 98,
      "numbers_covered": false,
      "names_matched": [],
      "score": 4
@@ -520,7 +544,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "ad45b444431f9b4d28af840c13f8f4f8190ee8b8c83e0ebc8c2d77326cc74cd5",
-     "offset": -1,
+     "offset": 8538,
+     "length": 128,
      "numbers_covered": false,
      "names_matched": [
       "Dingle",
@@ -532,8 +557,9 @@
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": false,
      "names_matched": [
       "Sheene",
@@ -568,8 +594,9 @@
    "passages": [
     {
      "source_id": "src-54ea5a239722",
-     "passage_sha256": "c34d27101ab670baacfc05d01597a4b80a394577ff9927598caef7f618ed9462",
-     "offset": -1,
+     "passage_sha256": "d90a685ad2402b6f2ffba93e35b8209f8ca351104c4ba66c6ef77fbc6bf8d72b",
+     "offset": 0,
+     "length": 824,
      "numbers_covered": true,
      "names_matched": [
       "Brands",
@@ -579,8 +606,9 @@
     },
     {
      "source_id": "src-54ea5a239722",
-     "passage_sha256": "4532dff70330446c63a29a61295b5ab272d4e27a7d0d5c567c9170a0595829a6",
-     "offset": -1,
+     "passage_sha256": "0d8120f9087c63fe85396c5f405accabad2ada9c4878a8748b9436526228e7e1",
+     "offset": 866,
+     "length": 1228,
      "numbers_covered": false,
      "names_matched": [
       "Nigel",
@@ -604,8 +632,9 @@
    "passages": [
     {
      "source_id": "src-54ea5a239722",
-     "passage_sha256": "4532dff70330446c63a29a61295b5ab272d4e27a7d0d5c567c9170a0595829a6",
-     "offset": -1,
+     "passage_sha256": "0d8120f9087c63fe85396c5f405accabad2ada9c4878a8748b9436526228e7e1",
+     "offset": 866,
+     "length": 1228,
      "numbers_covered": true,
      "names_matched": [
       "Ayrton",
@@ -642,8 +671,9 @@
    "passages": [
     {
      "source_id": "src-54ea5a239722",
-     "passage_sha256": "c34d27101ab670baacfc05d01597a4b80a394577ff9927598caef7f618ed9462",
-     "offset": -1,
+     "passage_sha256": "d90a685ad2402b6f2ffba93e35b8209f8ca351104c4ba66c6ef77fbc6bf8d72b",
+     "offset": 0,
+     "length": 824,
      "numbers_covered": true,
      "names_matched": [
       "Brands",
@@ -666,8 +696,9 @@
    "passages": [
     {
      "source_id": "src-7a1feae23a6c",
-     "passage_sha256": "a466a18c0cc8a8790739d8de78db89f622988055156c05c0319116b36ea97bda",
-     "offset": -1,
+     "passage_sha256": "8182f59619b725d0c05483eb8b8df6a9f53da330554c3450b1ff1e860edfcf1e",
+     "offset": 0,
+     "length": 794,
      "numbers_covered": true,
      "names_matched": [
       "British",
@@ -678,8 +709,9 @@
     },
     {
      "source_id": "src-7a1feae23a6c",
-     "passage_sha256": "b23d18db846e65de5dd383bc648d95308e39e5502c3d036a3ffbc910192e3674",
-     "offset": -1,
+     "passage_sha256": "b790a2ae56b24f4ffab546cd3e0c148a1a7f54ebf56d29a7903759b045597234",
+     "offset": 836,
+     "length": 1061,
      "numbers_covered": false,
      "names_matched": [],
      "score": 3
@@ -699,8 +731,9 @@
    "passages": [
     {
      "source_id": "src-7a1feae23a6c",
-     "passage_sha256": "b23d18db846e65de5dd383bc648d95308e39e5502c3d036a3ffbc910192e3674",
-     "offset": -1,
+     "passage_sha256": "b790a2ae56b24f4ffab546cd3e0c148a1a7f54ebf56d29a7903759b045597234",
+     "offset": 836,
+     "length": 1061,
      "numbers_covered": true,
      "names_matched": [
       "Nelson",
@@ -742,8 +775,9 @@
    "passages": [
     {
      "source_id": "src-7a1feae23a6c",
-     "passage_sha256": "a466a18c0cc8a8790739d8de78db89f622988055156c05c0319116b36ea97bda",
-     "offset": -1,
+     "passage_sha256": "8182f59619b725d0c05483eb8b8df6a9f53da330554c3450b1ff1e860edfcf1e",
+     "offset": 0,
+     "length": 794,
      "numbers_covered": true,
      "names_matched": [],
      "score": 6
@@ -775,8 +809,9 @@
    "passages": [
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
-     "offset": -1,
+     "passage_sha256": "8e5878cb58ced33487d2785451a4fe2f5031b0561b1c6eae6a79cd6703262f50",
+     "offset": 0,
+     "length": 978,
      "numbers_covered": true,
      "names_matched": [
       "Paddock",
@@ -786,8 +821,9 @@
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Paddock",
@@ -822,8 +858,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Paddock",
@@ -835,7 +872,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "05016b3db44e170c30f9117deb0d4708becb47a134da72fa80384888b10933b1",
-     "offset": 5307,
+     "offset": 5213,
+     "length": 139,
      "numbers_covered": true,
      "names_matched": [
       "Hill",
@@ -883,7 +921,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
-     "offset": 1620,
+     "offset": 1565,
+     "length": 98,
      "numbers_covered": true,
      "names_matched": [
       "Graham",
@@ -893,8 +932,9 @@
     },
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
-     "offset": -1,
+     "passage_sha256": "8e5878cb58ced33487d2785451a4fe2f5031b0561b1c6eae6a79cd6703262f50",
+     "offset": 0,
+     "length": 978,
      "numbers_covered": true,
      "names_matched": [
       "Hill"
@@ -916,16 +956,18 @@
    "passages": [
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
-     "offset": -1,
+     "passage_sha256": "8e5878cb58ced33487d2785451a4fe2f5031b0561b1c6eae6a79cd6703262f50",
+     "offset": 0,
+     "length": 978,
      "numbers_covered": true,
      "names_matched": [],
      "score": 8
     },
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "30a406a2bd41927cc56c2f4b39d0f1aeb202221d3dcfaf750c953940364ecfa5",
-     "offset": -1,
+     "passage_sha256": "10fedddde6e8ded195710a83b5da347b4c221b003b2c4518564aef9c0fe7be22",
+     "offset": 1559,
+     "length": 1172,
      "numbers_covered": true,
      "names_matched": [],
      "score": 8
@@ -945,8 +987,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Surtees",
@@ -957,7 +1000,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "d737ef2ead8832fc3b64a7ef55dec3d41dab0e89e207041cf63127badd0462bb",
-     "offset": -1,
+     "offset": 5868,
+     "length": 111,
      "numbers_covered": true,
      "names_matched": [
       "Surtees",
@@ -981,7 +1025,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "eb75a3b78d39b9914d64afc65b999bee2e3c4294e0cfaf0b270649e810d61470",
-     "offset": 1720,
+     "offset": 1664,
+     "length": 137,
      "numbers_covered": true,
      "names_matched": [
       "John",
@@ -992,7 +1037,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
-     "offset": 1620,
+     "offset": 1565,
+     "length": 98,
      "numbers_covered": true,
      "names_matched": [],
      "score": 5
@@ -1024,8 +1070,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Hawthorn",
@@ -1036,7 +1083,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "901def3efb3701b5c28614aff17eb27874212dd309d574827f14cb7e00f2fd1b",
-     "offset": -1,
+     "offset": 7378,
+     "length": 85,
      "numbers_covered": true,
      "names_matched": [
       "Hawthorn",
@@ -1060,7 +1108,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "fe4ab740329fb22f5648f0f3e94c4d9ee28f9f64b0bdf4d0c8879af6bb8ed4ba",
-     "offset": -1,
+     "offset": 1961,
+     "length": 159,
      "numbers_covered": true,
      "names_matched": [
       "Sources",
@@ -1072,7 +1121,8 @@
     {
      "source_id": "src-70014ca97d1a",
      "passage_sha256": "4006364d06fddee14005813af07961266ab2858b790fd2e03c0a5154869cdf7f",
-     "offset": 4655,
+     "offset": 4481,
+     "length": 44,
      "numbers_covered": true,
      "names_matched": [
       "Sources"
@@ -1095,7 +1145,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "dcd59020c5eab1df09d17973e8a3ea3c57551e78dea160159692ae2844f46982",
-     "offset": 7908,
+     "offset": 7790,
+     "length": 122,
      "numbers_covered": true,
      "names_matched": [
       "Speed"
@@ -1105,7 +1156,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "91c169052425fa507d6522730a228697b3a4c9a039c69571c8f80224af7a3545",
-     "offset": 9834,
+     "offset": 9692,
+     "length": 116,
      "numbers_covered": true,
      "names_matched": [
       "Speed"
@@ -1128,7 +1180,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "5008df447ea9ba50d7adf6adc40cbcc6603d8c75eb7a78921f4c8438e115df04",
-     "offset": 2182,
+     "offset": 2121,
+     "length": 128,
      "numbers_covered": true,
      "names_matched": [
       "Westfield"
@@ -1137,8 +1190,9 @@
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Westfield"
@@ -1161,7 +1215,8 @@
     {
      "source_id": "src-e3bdf178ff3c",
      "passage_sha256": "6e2c94f155b50cb0f68e7f36da6876a34bec3f6f243071dd9b51e2e4c517a347",
-     "offset": 653,
+     "offset": 616,
+     "length": 145,
      "numbers_covered": false,
      "names_matched": [
       "Dingle",
@@ -1171,8 +1226,9 @@
     },
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
-     "offset": -1,
+     "passage_sha256": "8e5878cb58ced33487d2785451a4fe2f5031b0561b1c6eae6a79cd6703262f50",
+     "offset": 0,
+     "length": 978,
      "numbers_covered": true,
      "names_matched": [],
      "score": 7
@@ -1193,7 +1249,8 @@
     {
      "source_id": "src-e3bdf178ff3c",
      "passage_sha256": "6e2c94f155b50cb0f68e7f36da6876a34bec3f6f243071dd9b51e2e4c517a347",
-     "offset": 653,
+     "offset": 616,
+     "length": 145,
      "numbers_covered": false,
      "names_matched": [
       "Dingle",
@@ -1206,7 +1263,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "ad45b444431f9b4d28af840c13f8f4f8190ee8b8c83e0ebc8c2d77326cc74cd5",
-     "offset": -1,
+     "offset": 8538,
+     "length": 128,
      "numbers_covered": false,
      "names_matched": [
       "Dingle",
@@ -1231,8 +1289,9 @@
    "passages": [
     {
      "source_id": "src-e3bdf178ff3c",
-     "passage_sha256": "b5682aac3cff758ffa2e476e284a12b980c19b148617a27bb0c0ab6aa701af91",
-     "offset": -1,
+     "passage_sha256": "38f5006e93ed18ae29b8e354cd386b827caaa9ff6b9291677b87c026a8220607",
+     "offset": 0,
+     "length": 615,
      "numbers_covered": true,
      "names_matched": [
       "Barry",
@@ -1243,7 +1302,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "de306ce1b5b67ccc2bf981f27edbeb808a0f9289380c8d6846103d7692e469da",
-     "offset": 2312,
+     "offset": 2250,
+     "length": 69,
      "numbers_covered": false,
      "names_matched": [
       "Barry",
@@ -1278,8 +1338,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Stirling's"
@@ -1289,7 +1350,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "c998cf8309b64b9021f0cdc0e9bb8e4c1b9558bcbd5452cb78ff3e933a8f2a6d",
-     "offset": -1,
+     "offset": 9458,
+     "length": 117,
      "numbers_covered": true,
      "names_matched": [
       "Stirling's"
@@ -1312,7 +1374,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "6171e43aa22008f04f98eb399177c73977afc4679c1937c9e0bcd4955f65a690",
-     "offset": 2481,
+     "offset": 2418,
+     "length": 173,
      "numbers_covered": true,
      "names_matched": [
       "Stirling",
@@ -1322,8 +1385,9 @@
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Stirling"
@@ -1346,7 +1410,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "1811c7c6754efd703ef4fa7c5c822349734754e255839e29401edc67145f5d7d",
-     "offset": 6080,
+     "offset": 5980,
+     "length": 130,
      "numbers_covered": true,
      "names_matched": [
       "Clearways"
@@ -1355,8 +1420,9 @@
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Clearways"
@@ -1378,8 +1444,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Clark",
@@ -1390,7 +1457,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
-     "offset": 2656,
+     "offset": 2592,
+     "length": 64,
      "numbers_covered": true,
      "names_matched": [
       "Clark",
@@ -1414,7 +1482,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
-     "offset": 2656,
+     "offset": 2592,
+     "length": 64,
      "numbers_covered": true,
      "names_matched": [
       "Jim",
@@ -1424,8 +1493,9 @@
     },
     {
      "source_id": "src-70014ca97d1a",
-     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
-     "offset": -1,
+     "passage_sha256": "8e5878cb58ced33487d2785451a4fe2f5031b0561b1c6eae6a79cd6703262f50",
+     "offset": 0,
+     "length": 978,
      "numbers_covered": true,
      "names_matched": [
       "Jim",
@@ -1448,8 +1518,9 @@
    "passages": [
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
-     "offset": -1,
+     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
+     "offset": 406,
+     "length": 508,
      "numbers_covered": true,
      "names_matched": [
       "Clearways"
@@ -1459,7 +1530,8 @@
     {
      "source_id": "src-1d5e90abd23f",
      "passage_sha256": "f214ba4cffd1f1348a0473145edc82be5d89b65a9b78f6110988139f69e87126",
-     "offset": 7008,
+     "offset": 6899,
+     "length": 162,
      "numbers_covered": true,
      "names_matched": [
       "Clearways"
@@ -1494,7 +1566,8 @@
     {
      "source_id": "src-8bb1c2866347",
      "passage_sha256": "cfa1d481023175f56d8f8f7b94133da7c598f9a3778fc2f2f26897f5a31d504f",
-     "offset": 1578,
+     "offset": 1542,
+     "length": 160,
      "numbers_covered": true,
      "names_matched": [
       "Watch",
@@ -1505,7 +1578,8 @@
     {
      "source_id": "src-8bb1c2866347",
      "passage_sha256": "ba827d8991f73d96b3cada048b3bef521875722b52604a18af46bb6f944823fe",
-     "offset": 462,
+     "offset": 447,
+     "length": 71,
      "numbers_covered": true,
      "names_matched": [
       "Watch"
