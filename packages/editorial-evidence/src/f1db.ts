@@ -2,7 +2,7 @@
  * Read-only index over the committed pinned-F1DB circuit export. It answers DatasetRef
  * lookups for the editorial policy and recognises drivers/constructors in prose.
  */
-import type { DatasetRef, DatasetValue } from '../../editorial-policy/src/index.ts';
+import type { DatasetEvidence, DatasetRef, DatasetValue } from '../../editorial-policy/src/index.ts';
 
 export type ArchiveRace = {
   race_id: string; season: number; round: number; date: string; name: string; has_results: boolean;
@@ -19,6 +19,7 @@ export type Archive = {
 const SUFFIXES = new Set(['jr', 'sr', 'ii', 'iii']);
 /** Accent- and case-insensitive key: "Räikkönen" and slug "raikkonen" meet at "raikkonen". */
 export const fold = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const escapeRe = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 /** Surname as it appears in prose, from the F1DB slug: "elio-de-angelis" → "Angelis", "nelson-piquet-jr" → "Piquet". */
 export function surnameFromSlug(slug: string): string {
   const parts = slug.split('-').filter(part => !SUFFIXES.has(part));
@@ -38,8 +39,10 @@ export class F1dbIndex {
   readonly archive: Archive;
   /** Every token of every driver slug ("carlos", "pace"): words that may be part of a driver's name. */
   private readonly nameTokens = new Set<string>();
-  /** Reviewed Ukrainian surface form → driver slug. Empty until the reviewed name table exists. */
+  /** Reviewed Ukrainian surface form → entity key (driver slug, "ambiguous:<surname>" or "constructor:<slug>"). Empty until the reviewed table exists. */
   private readonly ukNames: ReadonlyMap<string, string>;
+  /** Constructor display and slug names → "constructor:<slug>". */
+  private readonly constructorNames: [string, string][] = [];
 
   constructor(archive: Archive, ukNames: ReadonlyMap<string, string> = new Map()) {
     this.archive = archive;
@@ -47,6 +50,9 @@ export class F1dbIndex {
     this.drivers = archive.drivers;
     this.ukNames = ukNames;
     for (const slug of Object.keys(archive.drivers)) for (const part of slug.split('-')) if (part.length > 1) this.nameTokens.add(part);
+    for (const [slug, display] of Object.entries(archive.constructors ?? {})) {
+      for (const name of new Set([display, this.slugName(slug)])) if (name.length >= 3) this.constructorNames.push([name, `constructor:${slug}`]);
+    }
     for (const circuit of archive.circuits) {
       this.circuits.set(circuit.circuit_id, circuit);
       for (const race of circuit.races) this.races.set(race.race_id, { race, circuit });
@@ -90,22 +96,57 @@ export class F1dbIndex {
    * so the policy's cross-language entity check fails closed for every claim that names someone.
    */
   entities = (text: string, locale: 'en' | 'uk' = 'en'): string[] => {
-    const latin = [...this.mentionedDrivers(text).values()].flat();
-    if (locale === 'en') return [...new Set(latin)];
-    const lower = text.normalize('NFC').toLowerCase();
-    const cyrillic = [...this.ukNames].filter(([form]) => new RegExp(`(?<![\\p{L}])${form.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}])`, 'u').test(lower)).map(([, slug]) => slug);
-    return [...new Set([...latin, ...cyrillic])];
+    const keys: string[] = [];
+    // A bare surname shared by several drivers ("Hill", "Schumacher") is its own entity,
+    // "ambiguous:<surname>", so evidence naming one Hill can never back a claim about another.
+    let rest = text.normalize('NFC');
+    for (const [mention, slugs] of this.mentionedDrivers(text)) {
+      keys.push(...(slugs.length > 1 && !mention.includes(' ') ? [`ambiguous:${fold(mention)}`] : slugs));
+      // A full driver name ("Alain Prost", "Jack Brabham") is not also a mention of the team named after him.
+      if (mention.includes(' ')) rest = rest.replaceAll(mention, ' ');
+    }
+    // Constructors by name ("Ferrari", "Red Bull"), case-sensitive so "red" or "brabham" in prose are not teams.
+    // A bare "Prost" or "Hill" matches both the driver and the team: deliberately ambiguous, so it fails closed.
+    for (const [name, key] of this.constructorNames) if (new RegExp(`(?<![\\p{L}])${escapeRe(name)}(?![\\p{L}])`, 'u').test(rest)) keys.push(key);
+    if (locale === 'uk') {
+      const lower = text.normalize('NFC').toLowerCase();
+      for (const [form, key] of this.ukNames) if (new RegExp(`(?<![\\p{L}])${escapeRe(form.toLowerCase())}(?![\\p{L}])`, 'u').test(lower)) keys.push(key);
+    }
+    return [...new Set(keys)];
   };
+
+  /**
+   * Trusted canonical renderer for the editorial policy (StructuredRenderer). Only the winner and
+   * season of one race with a single winner have a canonical wording; Ukrainian needs the driver's
+   * reviewed Ukrainian name. Everything else returns null, so it needs sources.
+   */
+  renderStructured = (evidence: readonly DatasetEvidence[], locale: 'en' | 'uk'): string | null => {
+    const byField = new Map(evidence.map(e => [e.dataset_ref.field, e]));
+    const winner = byField.get('winner'), season = byField.get('season');
+    if (evidence.length !== 2 || !winner || !season || winner.dataset_ref.record !== season.dataset_ref.record) return null;
+    const race = this.races.get(winner.dataset_ref.record.replace(/^race:/, ''))?.race;
+    if (!race || race.winners.length !== 1 || winner.dataset_ref.release !== this.release) return null;
+    const slug = race.winners[0];
+    if (locale === 'en') return `${this.slugName(slug)} won the ${race.season} race.`;
+    const uk = [...this.ukNames].find(([, key]) => key === slug)?.[0];
+    return uk ? `Перегони ${race.season} року виграв ${uk}.` : null;
+  };
+
+  private slugName(slug: string) {
+    return slug.split('-').filter(p => !SUFFIXES.has(p)).map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
+  }
 
   /** True when the word could be (part of) a driver's name in F1DB. */
   isDriverNameWord = (word: string): boolean => this.nameTokens.has(fold(word.replace(/['’]s$/u, '')));
 
   driverName(slug: string) { return this.drivers[slug] ?? slug; }
 
-  /** Trusted surface forms for a driver: F1DB display name, slug name ("Carlos Pace") and surname. */
+  /**
+   * Trusted surface forms for a driver: F1DB display name and slug name ("Carlos Pace"). A bare
+   * surname is not a mention of a specific driver: "Hill" is not evidence for Graham Hill.
+   */
   driverMentions(slug: string): string[] {
-    const fromSlug = slug.split('-').filter(p => !SUFFIXES.has(p)).map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
-    return [...new Set([this.driverName(slug), fromSlug, surnameFromSlug(slug)])];
+    return [...new Set([this.driverName(slug), this.slugName(slug)])];
   }
 
   /**

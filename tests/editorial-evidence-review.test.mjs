@@ -9,7 +9,7 @@ import { checkClaim, sha256 } from '../packages/editorial-policy/src/index.ts';
 
 const archive = JSON.parse(readFileSync('docs/editorial/circuit-completion/archive/f1db-v2026.17.0-circuit-facts.json', 'utf8'));
 const index = new F1dbIndex(archive);
-const UK_TABLE = new Map([['Прост', 'alain-prost'], ['Сенна', 'ayrton-senna'], ['Сенни', 'ayrton-senna']]);
+const UK_TABLE = new Map([['Ален Прост', 'alain-prost'], ['Айртон Сенна', 'ayrton-senna'], ['Сенна', 'ambiguous:senna'], ['сенна', 'ambiguous:senna']]);
 const indexUk = new F1dbIndex(archive, UK_TABLE);
 const name = w => index.isDriverNameWord(w);
 const race = (circuit, season) => archive.circuits.find(c => c.circuit_id === circuit).races.find(r => r.season === season);
@@ -41,14 +41,14 @@ test('HIGH 1. narrative "won" sentences are not dataset-only statistics', () => 
 
 test('HIGH 2 / N2. the policy requires EN and UK to name the same driver; without a name table it fails closed', () => {
   const verdictFor = c => verdictToClaim(c, winnerVerdict(c, race('monaco', 1985), 'alain-prost', 1985), [], name);
-  const ctxUk = { ...ctx, entities: indexUk.entities };
+  const ctxUk = { ...ctx, entities: indexUk.entities, renderStructured: indexUk.renderStructured };
   const codes = (claim, context) => checkClaim(claim, item, context).failures.map(f => f.code);
   // No reviewed table: any claim naming someone fails, whatever the Ukrainian says.
-  assert.ok(codes(verdictFor(cand('monaco', 'Prost won the 1985 race.', 'Перегони 1985 року виграв Прост.')), ctx).includes('claim_entities_differ_across_locales'));
+  assert.ok(codes(verdictFor(cand('monaco', 'Alain Prost won the 1985 race.', 'Перегони 1985 року виграв Ален Прост.')), ctx).includes('claim_entities_differ_across_locales'));
   // With the table: the right name passes; a different name fails in any position or case.
-  assert.deepEqual(codes(verdictFor(cand('monaco', 'Prost won the 1985 race.', 'Перегони 1985 року виграв Прост.')), ctxUk), []);
+  assert.deepEqual(codes(verdictFor(cand('monaco', 'Alain Prost won the 1985 race.', 'Перегони 1985 року виграв Ален Прост.')), ctxUk), []);
   for (const uk of ['Сенна виграв перегони 1985 року.', 'Перегони 1985 року виграв сенна.', 'Перегони 1985 року виграв Сенна.']) {
-    assert.ok(codes(verdictFor(cand('monaco', 'Prost won the 1985 race.', uk)), ctxUk).includes('claim_entities_differ_across_locales'), uk);
+    assert.ok(codes(verdictFor(cand('monaco', 'Alain Prost won the 1985 race.', uk)), ctxUk).includes('claim_entities_differ_across_locales'), uk);
   }
 });
 
@@ -63,7 +63,8 @@ test('N3. teams, pole, margins and possessives keep a sentence off the dataset-o
     assert.equal(isPureStatistic(text, name), false, text);
   }
   assert.equal(isPureStatistic('Alain Prost won the 1985 Grand Prix.', name), true);
-  assert.ok(index.entities("Senna's 1985 win").includes('ayrton-senna'), 'possessive resolves to the driver');
+  assert.ok(index.entities("Senna's 1985 win").includes('ambiguous:senna'), 'a bare shared surname is ambiguous, not a specific driver');
+  assert.ok(index.entities("Ayrton Senna's 1985 win").includes('ayrton-senna'), 'a possessive full name resolves to the driver');
 });
 
 test('LOW. the legacy writer of the sentence cannot check it', () => {
@@ -134,4 +135,28 @@ test('MEDIUM 6. passage locators resolve in the whitespace-normalised snapshot t
     const text = normalizeWhitespace(readFileSync(`.grid-atlas/source-snapshots/${status[p.source_id].text_sha256}.txt`, 'utf8'));
     assert.equal(sha256(text.slice(p.offset, p.offset + p.length)), p.passage_sha256);
   }
+});
+
+// Round 3: the dataset alone verifies only canonical statements (policy v1.6.0); shared surnames are
+// ambiguous entities; constructors are recognised. Real archive, synthetic reviewed-name-table stand-in.
+test('round 3. only the canonical rendering is verified by the dataset; extra years, wrong Hills and wrong teams are not', () => {
+  const table = new Map([['Ален Прост', 'alain-prost'], ['Грем Хілл', 'graham-hill'], ['Деймон Хілл', 'damon-hill'], ['Міхаель Шумахер', 'michael-schumacher']]);
+  const idx = new F1dbIndex(archive, table);
+  const context = { ...ctx, entities: idx.entities, renderStructured: idx.renderStructured };
+  const outcome = (circuit, en, uk, r, extra = []) => {
+    const c = cand(circuit, en, uk);
+    const claim = verdictToClaim(c, { ...winnerVerdict(c, r, r.winners.join(' / '), r.season), dataset_evidence: [{ dataset_ref: ref(r, 'winner'), value: r.winners.join(' / ') }, { dataset_ref: ref(r, 'season'), value: r.season }, ...extra] }, [], idx.isDriverNameWord);
+    const result = checkClaim(claim, item, context);
+    return [...result.failures, ...result.unverifiable].map(f => f.code);
+  };
+  assert.deepEqual(outcome('monaco', 'Alain Prost won the 1988 race.', 'Перегони 1988 року виграв Ален Прост.', race('monaco', 1988)), []);
+  const extraYear = outcome('monaco', 'Alain Prost won the 1988 race, the 1950 race.', 'Перегони 1988 року виграв Ален Прост.', race('monaco', 1988),
+    [{ dataset_ref: { dataset: 'f1db', release: 'v2026.17.0', record: 'circuit:monaco', field: 'first_season' }, value: 1950 }]);
+  assert.ok(extraYear.includes('evidence_insufficient'), extraYear.join());
+  const wrongHill = outcome('suzuka', 'Graham Hill won the 1996 race.', 'Перегони 1996 року виграв Грем Хілл.', race('suzuka', 1996));
+  assert.ok(wrongHill.includes('claim_entity_unsupported') && wrongHill.includes('dataset_value_not_stated'), wrongHill.join());
+  const wrongTeam = outcome('monaco', "Michael Schumacher's Jordan won the 2001 race.", 'Перегони 2001 року виграв Міхаель Шумахер.', race('monaco', 2001));
+  assert.ok(wrongTeam.includes('claim_entity_unsupported'), wrongTeam.join());
+  assert.deepEqual(idx.entities('Hill won with Ferrari.').sort(), ['ambiguous:hill', 'constructor:ferrari', 'constructor:hill']);
+  assert.deepEqual(idx.entities('Alain Prost won.'), ['alain-prost'], 'a full driver name is not also the team named after him');
 });

@@ -70,9 +70,16 @@ Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, 
 - Dataset checks prove agreement with F1DB for winners, poles, fastest laps, years, first races, lengths and turn counts. They do not prove narrative causes, quotes, adjectives or unnamed people.
 - Dataset records are bound to their scope. A race record backs only claims about that race's circuit whose sentence states that race's season, and one claim cannot combine records of two races. Records without a scope are rejected.
 
-A sentence counts as a dataset-only statistic only if nothing remains beyond recognised driver names, the year and a narrow set of race words (`isPureStatistic`). Teams ("with Ferrari"), pole, laps, margins, places and any narrative ("after a dramatic late duel in the rain") all need sources too.
+**The dataset alone verifies only canonical statements (policy v1.6.0).** A claim is verified by F1DB without sources only if its EN and UK text are exactly the trusted renderer's wording for the cited records. Today that means winner + season of a single-winner race: "Alain Prost won the 1988 race." / "Перегони 1988 року виграв Ален Прост." (`F1dbIndex.renderStructured`; the Ukrainian side needs the reviewed name table).
+
+Every existing draft sentence is free prose, so it needs independent source evidence however well it agrees with the dataset. Three review rounds showed that pattern rules cannot prove free prose against a dataset: extra years, shared surnames and wrong teams kept slipping through. `isPureStatistic` now only types sentences for routing.
+
+Entity recognition:
+- A bare shared surname ("Hill", "Schumacher", "Senna") is its own entity, `ambiguous:<surname>`, so evidence about one Hill never backs a claim about another.
+- Dataset mentions are full names only.
+- Constructors are recognised ("with Ferrari" needs evidence naming Ferrari). A full driver name is not also counted as the team named after him.
 - Passage leads are retrieval hits, not support. A lead becomes evidence only through a fact-check verdict that the editorial policy accepts.
-- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. The editorial policy (v1.5.0) requires a claim and its block to name the same entities in EN and UK. Ukrainian names are recognised only through a reviewed EN→UK name table, which does not exist yet. Until it does, every claim that names someone fails `claim_entities_differ_across_locales`: fail-closed, whatever position or case the Ukrainian name takes. Meaning is not compared.
+- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. The editorial policy (since v1.5.0) requires a claim and its block to name the same entities in EN and UK. Ukrainian names are recognised only through a reviewed EN→UK name table, which does not exist yet. Until it does, every claim that names someone fails `claim_entities_differ_across_locales`: fail-closed, whatever position or case the Ukrainian name takes. Meaning is not compared.
 - `verdictToClaim` refuses a checker that is the recorded legacy writer of the sentence's own file.
 - Snapshot hashes prove integrity, not that the text is what the URL serves today. Re-fetching and archive cross-checks are planned.
 - PDF sources (42, mostly FIA circuit maps and documents) are live but unread; until text extraction is added, claims relying only on them stay without leads.

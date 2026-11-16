@@ -42,7 +42,7 @@ test('F1DB index: accent-insensitive surnames, trusted mentions and dataset look
   const race = archive.circuits.find(c => c.circuit_id === 'interlagos').races.find(r => r.season === 1975);
   const winner = index.lookup({ dataset: 'f1db', release: 'v2026.17.0', record: `race:${race.race_id}`, field: 'winner' });
   assert.equal(winner.value, 'carlos-pace');
-  assert.ok(winner.mentions.includes('Carlos Pace') && winner.mentions.includes('Pace'));
+  assert.ok(winner.mentions.includes('Carlos Pace') && !winner.mentions.includes('Pace'), 'full names only: a bare surname is not a specific driver');
   assert.equal(index.lookup({ dataset: 'f1db', release: 'v2000.0.0', record: `race:${race.race_id}`, field: 'winner' }), undefined, 'other releases are refused');
 });
 
@@ -88,11 +88,11 @@ test('end to end: a real F1DB fact verified by the automated dataset verifier sa
   const ref = field => ({ dataset: 'f1db', release: 'v2026.17.0', record: `race:${race.race_id}`, field });
   const claim = {
     claim_id: 'interlagos-1975-winner', entity: { type: 'race', id: race.race_id }, claim_type: 'structured_statistic', importance: 'critical',
-    statement: { en: 'Carlos Pace won the 1975 Brazilian Grand Prix.', uk: 'Гран-прі Бразилії 1975 року виграв Карлос Пасе.' }, presentation: 'asserted',
+    statement: { en: 'Carlos Pace won the 1975 race.', uk: 'Перегони 1975 року виграв Карлос Пасе.' }, presentation: 'asserted',
     evidence: [{ dataset_ref: ref('winner'), value: 'carlos-pace' }, { dataset_ref: ref('season'), value: 1975 }], verification: null,
   };
   claim.verification = { status: 'verified', method: 'dataset_comparison', verifier: { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'v1' }, verified_at: '2026-11-16T00:00:00Z', claim_sha256: claimDigest(claim, []) };
-  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: indexUk.entities, evaluated_at: '2026-11-17T00:00:00Z' };
+  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: indexUk.entities, renderStructured: indexUk.renderStructured, evaluated_at: '2026-11-17T00:00:00Z' };
   const item = { sources: [], authorship: { writer: legacyWriter('x') } };
   assert.deepEqual(checkClaim(claim, item, ctx), { failures: [], unverifiable: [] });
   const wrong = { ...claim, statement: { ...claim.statement, en: 'Jarier won the 1975 Brazilian Grand Prix.' } };
