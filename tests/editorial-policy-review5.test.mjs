@@ -9,6 +9,7 @@ const datasetOnly = (en, uk) => {
   const item = validItem();
   item.blocks = [{ block_id: 'b-stat', kind: 'statistic', body: { en, uk }, claim_ids: ['c-winner'], links: [] }];
   item.claims[1].statement = { en, uk };
+  item.claims[1].evidence = item.claims[1].evidence.filter(e => 'dataset_ref' in e); // dataset evidence only
   verify(item, item.claims[1], datasetVerifier, 'dataset_comparison');
   return seal(item);
 };
@@ -40,4 +41,22 @@ test('without a trusted renderer nothing is verified by the dataset alone', () =
 test('a canonical English statement with free Ukrainian prose is not canonical', () => {
   const decision = run(datasetOnly('Fixture Driver won the 1961 race.', 'Fixture Driver блискуче виграв перегони 1961 року.'));
   assert.notEqual(decision.outcome, 'PASS');
+});
+
+// Round-4 review of PR #422 (H1, M1).
+test('H1. a block resting on a dataset-only claim must state exactly that claim', () => {
+  for (const en of ['Fixture Driver won the 1961 Fixture Grand Prix.', 'Fixture Driver lost the 1961 race to a rival.']) {
+    const item = datasetOnly('Fixture Driver won the 1961 race.', 'Перегони 1961 року виграв Fixture Driver.');
+    item.blocks[0].body = { en, uk: 'Перегони 1961 року виграв Fixture Driver.' };
+    const decision = run(seal(item));
+    assert.notEqual(decision.outcome, 'PASS', en);
+    assert.ok(codes(decision).includes('block_not_canonical'), en);
+  }
+});
+
+test('M1. a statement the dataset contradicts fails whatever its sources', () => {
+  const item = validItem(); // c-winner has dataset and independent source evidence
+  const decision = run(item, { datasetConflicts: claim => (claim.claim_id === 'c-winner' ? ['1961: F1DB winner is someone else'] : []) });
+  assert.notEqual(decision.outcome, 'PASS');
+  assert.ok(codes(decision).includes('dataset_contradiction'));
 });

@@ -12,7 +12,7 @@ export const snapshot = (source_id, url, publisher, text) => ({
   source_id, url, title: `Fixture ${source_id}`, publisher, kind: 'publication', published_on: '1990-01-01',
   retrieved_at: '2026-11-16T00:00:00Z', retrieved_by: researcher, content_sha256: sha256(text), text,
 });
-export const SOURCE_A = 'The circuit hosted its first championship race in 1961 after the original road course was shortened to 4.2 kilometres.';
+export const SOURCE_A = 'The circuit hosted its first championship race in 1961 after the original road course was shortened to 4.2 kilometres. Fixture Driver won that first race in 1961.';
 export const SOURCE_B = 'Organisers shortened the road course before the 1961 race, leaving a lap of 4.2 kilometres.';
 export const LICENSE_PAGE = 'This file is licensed under the Creative Commons Attribution 4.0 International license. Identifier: CC-BY-4.0.';
 
@@ -51,6 +51,8 @@ export function validItem() {
     statement: { en: 'Fixture Driver won the 1961 race.', uk: 'Перегони 1961 року виграв Fixture Driver.' }, value: 'Fixture Driver', presentation: 'asserted',
     evidence: [
       { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'winner' }, value: 'fixture-driver' },
+      // Independent source as well: free prose about the winner needs sources, not only the dataset.
+      { source_id: 's-a', excerpt: 'Fixture Driver won that first race in 1961', locator: 'para 2' },
       { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'season' }, value: 1961 },
     ],
     verification: null,

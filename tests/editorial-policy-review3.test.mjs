@@ -8,7 +8,7 @@ import { codes, context, datasetVerifier, run, seal, validItem, verify } from '.
 test('HIGH 1a. a structured claim citing only the season record cannot name a different winner', () => {
   const item = validItem();
   item.claims[1].statement = { en: 'Ayrton Senna won the 1961 race.', uk: 'Перегони 1961 року виграв Айртон Сенна.' };
-  item.claims[1].evidence = item.claims[1].evidence.filter(e => e.dataset_ref.field === 'season');
+  item.claims[1].evidence = item.claims[1].evidence.filter(e => e.dataset_ref?.field === 'season');
   item.blocks[0].body.en = item.blocks[0].body.en.replace('Fixture Driver won', 'Ayrton Senna won');
   item.blocks[0].body.uk = item.blocks[0].body.uk.replace('Fixture Driver виграв', 'Айртон Сенна виграв');
   verify(item, item.claims[1], datasetVerifier, 'dataset_comparison');
