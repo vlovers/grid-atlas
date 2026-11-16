@@ -1,10 +1,10 @@
 import { claimDigest, itemDigest, sha256 } from './canonical.ts';
 import type {
-  AgentRef, Claim, ContentItem, Finding, GateName, GateResult, GateStatus, Locale, MediaUse,
+  AgentRef, Claim, ContentItem, DatasetEvidence, Finding, GateName, GateResult, GateStatus, Locale, MediaUse,
   PolicyContext, SourceEvidence, SourceSnapshot,
 } from './model.ts';
 import {
-  boilerplateHits, containsPhrase, cyrillicShare, hasNonAsciiDigits, hasPlaceholder, looksLikeInstruction, numberTokens,
+  boilerplateHits, containsPhrase, cyrillicShare, hasNonAsciiDigits, hasPlaceholder, looksLikeInstruction, normalizeText, numberTokens,
   paragraphs, registrableDomain, significantNumbers, similarity,
 } from './text.ts';
 
@@ -106,6 +106,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const publishers = new Set<string>();
   const citedSources: SourceSnapshot[] = [];
   let datasetSupport = 0, datasetCorroboration = 0;
+  const datasetEvidence: DatasetEvidence[] = [];
   const races = new Set<string>();
   for (const evidence of claim.evidence ?? []) {
     if (isSourceEvidence(evidence)) {
@@ -146,9 +147,18 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       if (![String(actual), ...mentions].some(form => containsPhrase(claim.statement?.en ?? '', form)))
         { fail('dataset_value_not_stated', `Statement does not state ${ref.record}.${ref.field} ("${actual}").`); continue; }
       supportingText.push(String(actual), ...mentions);
-      // Dataset agreement suffices only for structured claims; narrative claims still need sources.
-      if (STRUCTURED_CLAIMS.has(claim.claim_type)) datasetSupport++; else datasetCorroboration++;
+      datasetEvidence.push(evidence);
     }
+  }
+  // Dataset agreement alone suffices only for a structured claim stated in the canonical wording
+  // the trusted renderer produces for exactly this evidence, in both languages. Anything else —
+  // extra years, other drivers, teams, any narrative — is free prose that needs independent sources.
+  if (datasetEvidence.length) {
+    const canonical = STRUCTURED_CLAIMS.has(claim.claim_type) && ctx.renderStructured !== undefined && LOCALES.every(locale => {
+      const rendered = ctx.renderStructured!(datasetEvidence, locale);
+      return rendered !== null && normalizeText(rendered) === normalizeText(claim.statement?.[locale] ?? '');
+    });
+    if (canonical) datasetSupport = datasetEvidence.length; else datasetCorroboration = datasetEvidence.length;
   }
 
   // One race per claim: a winner from one race and a year from another cannot be combined.
