@@ -7,6 +7,7 @@ This directory contains **current operating documentation**, **historical implem
 | Need | Canonical entry point |
 | --- | --- |
 | Install, run and test | [Root README](../README.md) |
+| Engineering governance and agent coordination | [Multi-agent workflow](engineering/MULTI_AGENT_WORKFLOW.md), [Definition of Done](engineering/DEFINITION_OF_DONE.md), [Review Policy](engineering/REVIEW_POLICY.md) and [Release Checklist](engineering/RELEASE_CHECKLIST.md) |
 | Current system boundaries | [Architecture](architecture/overview.md) and [migrations](architecture/migrations.md) |
 | Product status and known release gates | [Product status](product/stable-experience-roadmap.md) and [beta audit](beta-audit.md) |
 | Historical data and provenance | [Data-source register](data-sources/README.md) |
