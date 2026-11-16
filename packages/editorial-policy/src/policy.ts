@@ -4,21 +4,17 @@ import {
 } from './gates.ts';
 import { POLICY_VERSION, type ContentItem, type GateResult, type Outcome, type PolicyContext, type PublicationDecision, type RiskTier } from './model.ts';
 
-/** Claim types that may never be asserted from editorial sources alone at tier A. */
-const STRUCTURED_TYPES = new Set(['structured_statistic', 'date', 'layout_fact']);
-
 /**
- * Tier A: every cited claim is structured and backed by the pinned dataset.
+ * Tier A: every cited claim is a canonical structured statement (the trusted renderer's exact
+ * wording for its dataset records), so every block is canonical text too.
  * Tier C: anything quarantined (unverifiable claims, undisclosed disputes, required media without rights).
  * Tier B: everything else — editorial content that must clear the full evidence policy.
  */
-export function riskTier(item: ContentItem, quarantinedClaims: readonly string[], requiredMediaBlocked: boolean): RiskTier {
+export function riskTier(item: ContentItem, quarantinedClaims: readonly string[], requiredMediaBlocked: boolean, canonicalClaims: readonly string[] = []): RiskTier {
   if (quarantinedClaims.length || requiredMediaBlocked) return 'C';
-  const cited = new Set(item.blocks.flatMap(block => block.claim_ids));
-  const claims = item.claims.filter(claim => cited.has(claim.claim_id));
-  const structured = claims.length > 0 && claims.every(claim =>
-    STRUCTURED_TYPES.has(claim.claim_type) && claim.evidence.some(evidence => 'dataset_ref' in evidence));
-  return structured ? 'A' : 'B';
+  const cited = [...new Set(item.blocks.flatMap(block => block.claim_ids))];
+  const canonical = new Set(canonicalClaims);
+  return cited.length > 0 && cited.every(id => canonical.has(id)) ? 'A' : 'B';
 }
 
 /**
@@ -58,7 +54,7 @@ function evaluate(item: ContentItem, ctx: PolicyContext): PublicationDecision {
     { gate: media.gate, status: media.status, findings: media.findings, warnings: media.warnings },
     technicalGate(item, ctx),
   ];
-  const tier = riskTier(item, factual.quarantined, media.requiredBlocked);
+  const tier = riskTier(item, factual.quarantined, media.requiredBlocked, factual.canonicalClaims);
   let outcome: Outcome;
   if (gates.some(gate => gate.status === 'fail')) outcome = 'FAIL';
   else if (gates.some(gate => gate.status === 'unverifiable') || tier === 'C') outcome = 'UNVERIFIABLE';

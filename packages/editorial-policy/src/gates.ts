@@ -84,7 +84,7 @@ export function sourceGate(item: ContentItem): GateResult {
   return result('source', f, w);
 }
 
-type ClaimCheck = { failures: Finding[]; unverifiable: Finding[]; datasetOnly?: boolean };
+type ClaimCheck = { failures: Finding[]; unverifiable: Finding[]; canonical?: boolean };
 
 /** Returns a description when EN and UK name different archive entities, otherwise null. */
 function entitySetsDiffer(ctx: PolicyContext, en: string, uk: string): string | null {
@@ -153,8 +153,9 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   // Dataset agreement alone suffices only for a structured claim stated in the canonical wording
   // the trusted renderer produces for exactly this evidence, in both languages. Anything else —
   // extra years, other drivers, teams, any narrative — is free prose that needs independent sources.
+  let canonical = false;
   if (datasetEvidence.length) {
-    const canonical = STRUCTURED_CLAIMS.has(claim.claim_type) && ctx.renderStructured !== undefined && LOCALES.every(locale => {
+    canonical = STRUCTURED_CLAIMS.has(claim.claim_type) && ctx.renderStructured !== undefined && LOCALES.every(locale => {
       const rendered = ctx.renderStructured!(datasetEvidence, locale);
       return rendered !== null && normalizeText(rendered) === normalizeText(claim.statement?.[locale] ?? '');
     });
@@ -217,35 +218,40 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
     case 'rejected': fail('claim_rejected', 'Rejected claims must be removed from the text.'); break;
     default: fail('verification_missing', 'Claim has not been independently verified.');
   }
-  // Verified by the dataset alone (canonical statement, no sources): its block must say exactly that.
-  return { failures, unverifiable, datasetOnly: datasetSupport > 0 && publishers.size === 0 };
+  // A canonical statement — whatever sources are also cited — binds its block to exactly that wording,
+  // and is the only kind of claim that can make an item tier A.
+  return { failures, unverifiable, canonical };
 }
 
 /** All cited claims verified; every number in the prose is backed by a cited claim. */
-export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult & { quarantined: string[] } {
+export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult & { quarantined: string[]; canonicalClaims: string[] } {
   const f: Finding[] = [], u: Finding[] = [];
   const claims = new Map(item.claims.map(claim => [claim.claim_id, claim]));
   const cited = new Set(item.blocks.flatMap(block => block.claim_ids));
   if (item.dataset_release !== ctx.pinned_dataset_release)
     f.push({ code: 'item_dataset_release_mismatch', target: 'item', message: `Item targets ${item.dataset_release}; pinned release is ${ctx.pinned_dataset_release}.` });
-  const datasetOnly = new Set<string>();
+  const canonicalClaims = new Set<string>();
   for (const id of cited) {
     const claim = claims.get(id);
     if (!claim) continue; // schema gate reports it
     const check = checkClaim(claim, item, ctx);
     f.push(...check.failures); u.push(...check.unverifiable);
-    if (check.datasetOnly) datasetOnly.add(id);
+    if (check.canonical) canonicalClaims.add(id);
   }
   for (const block of item.blocks) {
     // Every published block is factual prose in this archive: it must rest on at least one claim.
     if (!block.claim_ids.length) f.push({ code: 'uncited_block', target: block.block_id, message: 'Block cites no claims.' });
-    // A block resting on a dataset-only claim is canonical text: it must be exactly its claims' statements,
-    // so free prose ("…won the 2020 Bahrain Grand Prix", "…lost the race") cannot ride on a canonical claim.
-    if (block.claim_ids.some(id => datasetOnly.has(id))) for (const locale of LOCALES) {
+    // A block resting on a canonical claim is canonical text — whatever sources the claim also cites:
+    // it must be exactly its claims' statements, so free prose cannot ride on a canonical claim.
+    if (block.claim_ids.some(id => canonicalClaims.has(id))) for (const locale of LOCALES) {
       const expected = block.claim_ids.map(id => claims.get(id)?.statement?.[locale] ?? '').join(' ');
       if (normalizeText(block.body?.[locale] ?? '') !== normalizeText(expected))
-        f.push({ code: 'block_not_canonical', target: `${block.block_id}.${locale}`, message: 'A block resting on dataset-only claims must state exactly those claims.' });
+        f.push({ code: 'block_not_canonical', target: `${block.block_id}.${locale}`, message: 'A block resting on canonical claims must state exactly those claims.' });
     }
+    // The prose itself must not contradict the dataset (not only the claims it cites).
+    for (const conflict of ctx.datasetConflicts?.({ claim_id: block.block_id, entity: item.entity, claim_type: 'historical_event', importance: 'critical',
+      statement: block.body, presentation: 'asserted', evidence: [], verification: { status: 'unverified', method: 'none', verifier: null, verified_at: null, claim_sha256: null } }) ?? [])
+      f.push({ code: 'block_dataset_contradiction', target: block.block_id, message: conflict });
     const backing = new Set(block.claim_ids.flatMap(id => {
       const claim = claims.get(id);
       // Only statement numbers are backing: they are the ones checkClaim proves against evidence.
@@ -265,7 +271,7 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
   }
   const quarantined = [...new Set(u.map(finding => finding.target))];
   const status: GateStatus = f.length ? 'fail' : u.length ? 'unverifiable' : 'pass';
-  return { gate: 'factual', status, findings: [...f, ...u], warnings: [], quarantined };
+  return { gate: 'factual', status, findings: [...f, ...u], warnings: [], quarantined, canonicalClaims: [...canonicalClaims] };
 }
 
 /** The verifier, editorial reviewer and localizer must be different actors from the writer. */

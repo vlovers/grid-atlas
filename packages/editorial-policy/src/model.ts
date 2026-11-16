@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.7.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.8.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };

@@ -13,7 +13,7 @@ export const snapshot = (source_id, url, publisher, text) => ({
   retrieved_at: '2026-11-16T00:00:00Z', retrieved_by: researcher, content_sha256: sha256(text), text,
 });
 export const SOURCE_A = 'The circuit hosted its first championship race in 1961 after the original road course was shortened to 4.2 kilometres. Fixture Driver won that first race in 1961.';
-export const SOURCE_B = 'Organisers shortened the road course before the 1961 race, leaving a lap of 4.2 kilometres.';
+export const SOURCE_B = 'Organisers shortened the road course before the 1961 race, leaving a lap of 4.2 kilometres. That first race in 1961 was won by Fixture Driver.';
 export const LICENSE_PAGE = 'This file is licensed under the Creative Commons Attribution 4.0 International license. Identifier: CC-BY-4.0.';
 
 const RACE_SCOPE = ['race:1961-fixture', 'circuit:fixture-ring', 'season:1961'];
@@ -48,11 +48,12 @@ export function validItem() {
   history.evidence.push({ source_id: 's-a', excerpt: 'first championship race in 1961', locator: 'para 1' });
   const winner = {
     claim_id: 'c-winner', entity: { type: 'race', id: '1961-fixture' }, claim_type: 'structured_statistic', importance: 'critical',
-    statement: { en: 'Fixture Driver won the 1961 race.', uk: 'Перегони 1961 року виграв Fixture Driver.' }, value: 'Fixture Driver', presentation: 'asserted',
+    statement: { en: 'Fixture Driver won that first race in 1961.', uk: 'Fixture Driver виграв ту першу гонку 1961 року.' }, value: 'Fixture Driver', presentation: 'asserted',
     evidence: [
       { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'winner' }, value: 'fixture-driver' },
       // Independent source as well: free prose about the winner needs sources, not only the dataset.
       { source_id: 's-a', excerpt: 'Fixture Driver won that first race in 1961', locator: 'para 2' },
+      { source_id: 's-b', excerpt: 'That first race in 1961 was won by Fixture Driver', locator: 'para 2' },
       { dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'season' }, value: 1961 },
     ],
     verification: null,
@@ -82,7 +83,7 @@ export function validItem() {
     editorial_review: null,
   };
   verify(item, history);
-  verify(item, winner, datasetVerifier, 'dataset_comparison');
+  verify(item, winner); // prose claim: verified by the recorded fact-checker against two publishers
   return seal(item);
 }
 
