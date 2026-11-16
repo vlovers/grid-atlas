@@ -99,6 +99,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const publishers = new Set<string>();
   const citedSources: SourceSnapshot[] = [];
   let datasetSupport = 0, datasetCorroboration = 0;
+  const races = new Set<string>();
   for (const evidence of claim.evidence ?? []) {
     if (isSourceEvidence(evidence)) {
       const source = sources.get(evidence.source_id);
@@ -118,6 +119,12 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       if (found === undefined || found === null) { fail('dataset_record_missing', `No ${ref.record}.${ref.field} in the pinned dataset.`); continue; }
       const actual = typeof found === 'object' ? found.value : found;
       const mentions = typeof found === 'object' ? found.mentions : [];
+      // A scoped record (e.g. a race belongs to one circuit and one season) may only back claims about that scope.
+      const scope = typeof found === 'object' ? found.scope : undefined;
+      if (scope && !scope.includes(`${claim.entity?.type}:${claim.entity?.id}`))
+        { fail('dataset_record_out_of_scope', `${ref.record} belongs to ${scope.join(', ')}, not ${claim.entity?.type}:${claim.entity?.id}.`); continue; }
+      const [recordKind] = ref.record.split(':');
+      if (recordKind === 'race') races.add(ref.record);
       if (evidence.value === undefined || evidence.value === null || String(evidence.value).trim() === '')
         { fail('dataset_value_missing', 'Dataset evidence must state the value it relies on.'); continue; }
       if (String(evidence.value).trim() !== String(actual).trim())
@@ -130,6 +137,9 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       if (STRUCTURED_CLAIMS.has(claim.claim_type)) datasetSupport++; else datasetCorroboration++;
     }
   }
+
+  // One race per claim: a winner from one race and a year from another cannot be combined.
+  if (races.size > 1) fail('dataset_records_inconsistent', `Claim combines records of ${races.size} races (${[...races].join(', ')}); split it.`);
 
   // Every numeral the claim states, in either language, must be visible in its supporting evidence.
   const supported = new Set(supportingText.flatMap(numberTokens));

@@ -16,9 +16,14 @@ export const SOURCE_A = 'The circuit hosted its first championship race in 1961 
 export const SOURCE_B = 'Organisers shortened the road course before the 1961 race, leaving a lap of 4.2 kilometres.';
 export const LICENSE_PAGE = 'This file is licensed under the Creative Commons Attribution 4.0 International license. Identifier: CC-BY-4.0.';
 
+const RACE_SCOPE = ['race:1961-fixture', 'circuit:fixture-ring', 'season:1961'];
+const OTHER_SCOPE = ['race:1962-elsewhere', 'circuit:other-ring', 'season:1962'];
 const dataset = new Map([
-  [`f1db|${PINNED}|race:1961-fixture|winner`, { value: 'fixture-driver', mentions: ['Fixture Driver'] }],
-  [`f1db|${PINNED}|race:1961-fixture|season`, 1961],
+  [`f1db|${PINNED}|race:1961-fixture|winner`, { value: 'fixture-driver', mentions: ['Fixture Driver'], scope: RACE_SCOPE }],
+  [`f1db|${PINNED}|race:1961-fixture|season`, { value: 1961, mentions: [], scope: RACE_SCOPE }],
+  [`f1db|${PINNED}|race:1963-fixture|season`, { value: 1963, mentions: [], scope: ['race:1963-fixture', 'circuit:fixture-ring', 'season:1963'] }],
+  [`f1db|${PINNED}|race:1962-elsewhere|winner`, { value: 'fixture-driver', mentions: ['Fixture Driver'], scope: OTHER_SCOPE }],
+  [`f1db|${PINNED}|race:1962-elsewhere|season`, { value: 1962, mentions: [], scope: OTHER_SCOPE }],
 ]);
 export const lookup = ref => dataset.get(`${ref.dataset}|${ref.release}|${ref.record}|${ref.field}`);
 export const datasetVerifier = { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'run-v1', version: '1' };

@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.3.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.4.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };
@@ -148,7 +148,11 @@ export type TechnicalReceipt = {
  * value "carlos-pace" with mentions ["Carlos Pace", "Pace"]). Mentions come from the trusted
  * dataset index, never from the claim.
  */
-export type DatasetValue = string | number | { value: string | number; mentions: string[] };
+/**
+ * `scope` lists the entity keys ("circuit:monaco", "race:406", "season:1985") the record belongs to.
+ * When present, the citing claim's entity must be one of them.
+ */
+export type DatasetValue = string | number | { value: string | number; mentions: string[]; scope?: string[] };
 export type DatasetLookup = (ref: DatasetRef) => DatasetValue | null | undefined;
 
 /**

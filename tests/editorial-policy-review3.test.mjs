@@ -71,3 +71,34 @@ test('LOW. zero-width characters cannot make two actor ids distinct', () => {
   item.authorship.fact_checker = { id: 'writer​-agent', role: 'fact_check', run_id: 'run-zw' };
   assert.ok(codes(run(seal(item))).includes('self_fact_check'));
 });
+
+// From the independent review of PR #422: dataset records must belong to the claim's subject.
+test('HIGH (#422 review). a record from another race or circuit cannot back the claim', () => {
+  const ref = (record, field) => ({ dataset: 'f1db', release: 'v2026.17.0', record, field });
+  const mixed = validItem();
+  mixed.claims[1].evidence = [{ dataset_ref: ref('race:1962-elsewhere', 'winner'), value: 'fixture-driver' }, { dataset_ref: ref('race:1961-fixture', 'season'), value: 1961 }];
+  verify(mixed, mixed.claims[1], datasetVerifier, 'dataset_comparison');
+  const decision = run(seal(mixed));
+  assert.notEqual(decision.outcome, 'PASS');
+  assert.ok(codes(decision).includes('dataset_record_out_of_scope'));
+
+  const otherCircuit = validItem();
+  otherCircuit.claims[1].entity = { type: 'circuit', id: 'fixture-ring' };
+  otherCircuit.claims[1].evidence = [{ dataset_ref: ref('race:1962-elsewhere', 'winner'), value: 'fixture-driver' }, { dataset_ref: ref('race:1962-elsewhere', 'season'), value: 1962 }];
+  otherCircuit.claims[1].statement = { en: 'Fixture Driver won here in 1962.', uk: 'Fixture Driver переміг тут 1962 року.' };
+  verify(otherCircuit, otherCircuit.claims[1], datasetVerifier, 'dataset_comparison');
+  assert.ok(codes(run(seal(otherCircuit))).includes('dataset_record_out_of_scope'));
+});
+
+test('HIGH (#422 review). one claim cannot combine records of two races', () => {
+  const ref = (record, field) => ({ dataset: 'f1db', release: 'v2026.17.0', record, field });
+  const item = validItem();
+  item.claims[1].entity = { type: 'circuit', id: 'fixture-ring' };
+  // Two races at the same circuit, both in scope: the 1961 winner cannot be paired with the 1963 season.
+  item.claims[1].statement = { en: 'Fixture Driver won here in 1963.', uk: 'Fixture Driver переміг тут 1963 року.' };
+  item.claims[1].evidence = [{ dataset_ref: ref('race:1961-fixture', 'winner'), value: 'fixture-driver' }, { dataset_ref: ref('race:1963-fixture', 'season'), value: 1963 }];
+  verify(item, item.claims[1], datasetVerifier, 'dataset_comparison');
+  const found = codes(run(seal(item)));
+  assert.ok(found.includes('dataset_records_inconsistent'));
+  assert.ok(!found.includes('dataset_record_out_of_scope'));
+});
