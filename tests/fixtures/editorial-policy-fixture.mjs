@@ -1,4 +1,4 @@
-import { claimDigest, evaluatePublication, itemDigest, sha256 } from '../../packages/editorial-policy/src/index.ts';
+import { claimDigest, containsPhrase, evaluatePublication, itemDigest, sha256 } from '../../packages/editorial-policy/src/index.ts';
 
 // Synthetic fixture: clearly fictional source text, never imported into the archive.
 export const PINNED = 'v2026.17.0';
@@ -85,8 +85,12 @@ export function seal(item) {
   return item;
 }
 
+/** Trusted bilingual name table, as the publisher would build from F1DB plus a reviewed UK glossary. */
+const NAMES = [['fixture-driver', ['Fixture Driver']], ['ayrton-senna', ['Ayrton Senna', 'Senna', 'Айртон Сенна', 'Сенна']]];
+export const entities = text => NAMES.filter(([, forms]) => forms.some(form => containsPhrase(text, form))).map(([key]) => key);
+
 export const context = (item, overrides = {}) => ({
-  pinned_dataset_release: PINNED, dataset: lookup, known_routes: new Set(['/races/1']), corpus: [],
+  pinned_dataset_release: PINNED, dataset: lookup, entities, known_routes: new Set(['/races/1']), corpus: [],
   license_allowlist: ['CC0-1.0', 'CC-BY-4.0', 'CC-BY-SA-4.0', 'PUBLIC-DOMAIN'],
   technical_receipt: { item_sha256: itemDigest(item), build: 'passed', tests: 'passed', rendered_locales: ['en', 'uk'], seo_metadata: true, commit_sha: 'f'.repeat(40) },
   evaluated_at: '2026-11-16T02:00:00Z', ...overrides,

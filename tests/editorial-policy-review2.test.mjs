@@ -53,7 +53,7 @@ test('H2a. an unrelated dataset record cannot support a narrative claim', () => 
   // Even when the dataset value is named, a narrative claim needs sources, not just the dataset.
   item.claims[2].statement = { en: 'A marshal was killed at the circuit in 1961, the year Fixture Driver won.', uk: '1961 року, коли переміг Fixture Driver, на трасі загинув маршал.' };
   item.claims[2].evidence.push({ dataset_ref: { dataset: 'f1db', release: PINNED, record: 'race:1961-fixture', field: 'season' }, value: 1961 });
-  verify(item, item.claims[2], datasetVerifier, 'source_excerpt_match');
+  verify(item, item.claims[2]); // recorded fact-checker, so only the sufficiency rule is under test
   const narrative = run(seal(item));
   assert.equal(narrative.outcome, 'UNVERIFIABLE');
   assert.ok(codes(narrative).includes('evidence_insufficient'));

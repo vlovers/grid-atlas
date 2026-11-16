@@ -24,7 +24,8 @@ const publisherKey = (source: SourceSnapshot) => {
   try { return registrableDomain(new URL(source.url).hostname); } catch { return source.publisher.trim().toLowerCase(); }
 };
 const time = (value: string | null | undefined) => (value ? Date.parse(value) : Number.NaN);
-const actorKey = (value: unknown) => String(value ?? '').normalize('NFKC').trim().toLowerCase();
+// Format characters (zero-width space/joiner, BOM…) cannot make two ids distinct.
+const actorKey = (value: unknown) => String(value ?? '').normalize('NFKC').replace(/\p{Cf}/gu, '').trim().toLowerCase();
 /** Two agent records are the same actor if either the identity or the execution matches (case/space-insensitive). */
 export const sameActor = (a: AgentRef | null, b: AgentRef | null) =>
   Boolean(a && b && (actorKey(a.id) === actorKey(b.id) || actorKey(a.run_id) === actorKey(b.run_id)));
@@ -124,7 +125,7 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
       // The record must be about what the sentence says: its value (or a dataset-supplied name for it) is stated.
       if (![String(actual), ...mentions].some(form => containsPhrase(claim.statement?.en ?? '', form)))
         { fail('dataset_value_not_stated', `Statement does not state ${ref.record}.${ref.field} ("${actual}").`); continue; }
-      supportingText.push(String(actual));
+      supportingText.push(String(actual), ...mentions);
       // Dataset agreement suffices only for structured claims; narrative claims still need sources.
       if (STRUCTURED_CLAIMS.has(claim.claim_type)) datasetSupport++; else datasetCorroboration++;
     }
@@ -134,6 +135,11 @@ export function checkClaim(claim: Claim, item: ContentItem, ctx: PolicyContext):
   const supported = new Set(supportingText.flatMap(numberTokens));
   for (const locale of LOCALES) for (const n of new Set(numberTokens(claim.statement?.[locale] ?? '')))
     if (!supported.has(n)) fail('claim_number_unsupported', `"${n}" (${locale}) does not appear in any supporting evidence.`);
+
+  // Every archive entity the claim names, in either language, must be named by its evidence.
+  const backedEntities = new Set(supportingText.flatMap(text => [...ctx.entities(text, 'en'), ...ctx.entities(text, 'uk')]));
+  for (const locale of LOCALES) for (const key of new Set(ctx.entities(claim.statement?.[locale] ?? '', locale)))
+    if (!backedEntities.has(key)) fail('claim_entity_unsupported', `"${key}" (${locale}) is not named by any supporting evidence.`);
 
   if (claim.claim_type === 'quotation') {
     const quoted = (claim.statement?.en ?? '').match(/"([^"]{8,})"|“([^”]{8,})”/);
@@ -197,6 +203,13 @@ export function factualGate(item: ContentItem, ctx: PolicyContext): GateResult &
     }));
     for (const locale of LOCALES) for (const n of new Set(numberTokens(block.body?.[locale] ?? ''))) if (!backing.has(n))
       f.push({ code: 'block_number_unclaimed', target: `${block.block_id}.${locale}`, message: `"${n}" in the text is not backed by any cited claim.` });
+    // Names in prose must be named by a cited claim, so "X won" cannot ride on a claim about Y.
+    const named = new Set(block.claim_ids.flatMap(id => {
+      const claim = claims.get(id);
+      return claim ? [...ctx.entities(claim.statement.en, 'en'), ...ctx.entities(claim.statement.uk, 'uk')] : [];
+    }));
+    for (const locale of LOCALES) for (const key of new Set(ctx.entities(block.body?.[locale] ?? '', locale))) if (!named.has(key))
+      f.push({ code: 'block_entity_unclaimed', target: `${block.block_id}.${locale}`, message: `"${key}" in the text is not named by any cited claim.` });
   }
   const quarantined = [...new Set(u.map(finding => finding.target))];
   const status: GateStatus = f.length ? 'fail' : u.length ? 'unverifiable' : 'pass';
@@ -221,8 +234,11 @@ export function independenceGate(item: ContentItem): GateResult {
     if ((claim.verification?.status === 'verified' || claim.verification?.status === 'disputed') && verifier) {
       if (sameActor(writer, verifier)) f.push({ code: 'self_verification', target: claim.claim_id, message: 'Claim verified by its writer.' });
       if (!verifierRoles.has(verifier.role)) f.push({ code: 'verifier_role_invalid', target: claim.claim_id, message: `Role "${verifier.role}" cannot verify claims.` });
-      // A fact-check verdict must come from the item's recorded fact-checker, not any agent claiming the role.
-      if (verifier.role === 'fact_check' && !sameActor(verifier, fact_checker)) f.push({ code: 'verifier_not_recorded_fact_checker', target: claim.claim_id, message: 'Verifier is not the recorded fact-checker.' });
+      // Only an automated verifier may skip the recorded fact-checker, and only for dataset comparison.
+      // Every source-based verdict (whatever role it declares) must come from the item's recorded fact-checker.
+      const automatedDataset = verifier.role === 'automated_verifier' && claim.verification.method === 'dataset_comparison';
+      if (!automatedDataset && !sameActor(verifier, fact_checker))
+        f.push({ code: 'verifier_not_recorded_fact_checker', target: claim.claim_id, message: 'Source-based verification must come from the recorded fact-checker.' });
       if (sameActor(verifier, localizer)) f.push({ code: 'localizer_verified_claim', target: claim.claim_id, message: 'The localizer cannot verify claims.' });
     }
   }

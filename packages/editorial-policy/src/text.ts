@@ -40,27 +40,53 @@ const EN_NUMBER: Record<string, number> = {
   thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90,
 };
 const EN_COUNTED = 'laps?|races?|grands? prix|wins?|victories|victory|seconds?|points?|corners?|turns?|bends?|cars?|times|years?|titles?|podiums?|poles?|drivers?|kilometres?|kilometers?|miles?|metres?|meters?|positions?|places?|rounds?|hours?|minutes?|starts?|teams?|layouts?|configurations?|chicanes?|seasons?|championships?';
-const EN_WORD_NUMBER = new RegExp(`\\b(${Object.keys(EN_NUMBER).join('|')})(?:\\s+(?:more|fewer|consecutive|straight|successive|different|separate|other|of the))?\\s+(?:${EN_COUNTED})\\b`, 'gi');
+const EN_EXTRA: Record<string, number> = { dozen: 12, hundred: 100 };
+const EN_TENS = 'twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety';
+const EN_UNITS = 'one|two|three|four|five|six|seven|eight|nine';
+// "twenty-one", "four", "a dozen", followed by at most two free words (never "of …") and a counted noun.
+const EN_WORD_NUMBER = new RegExp(
+  `\\b(?:(${EN_TENS})[-\\s](${EN_UNITS})|a\\s+(dozen|hundred)|(${[...Object.keys(EN_NUMBER), 'dozen', 'hundred'].join('|')}))` +
+  `(?:\\s+(?!of\\b)[\\p{L}-]+){0,2}?\\s+(?:${EN_COUNTED})\\b`, 'giu');
+const EN_ORDINAL: Record<string, number> = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10,
+  eleventh: 11, twelfth: 12, thirteenth: 13, fourteenth: 14, fifteenth: 15, sixteenth: 16, seventeenth: 17, eighteenth: 18, nineteenth: 19, twentieth: 20 };
+// Finishing/grid positions are facts ("finished fourth"); ordinary ordinals ("the first race") are not counted.
+const EN_POSITION = new RegExp(`\\b(?:finish(?:ed|ing)|placed|came(?:\\s+home)?|ended(?:\\s+up)?|qualif(?:ied|ying)|start(?:ed|ing)|classified|crossed\\s+the\\s+line)\\s+(?:in\\s+)?(${Object.keys(EN_ORDINAL).join('|')})\\b`, 'gi');
+const EN_TIMES: Record<string, number> = { twice: 2, thrice: 3 };
 
+const APOSTROPHES = "'’ʼ"; // apostrophe variants used in Ukrainian orthography
+const A = `[${APOSTROPHES}]`;
 const UK_NUMBER: [RegExp, number][] = ([
   ['одн(?:а|е|ого|ій|им|у)|один', 1], ['дв(?:а|і|ох|ом|ома)', 2], ['тр(?:и|ьох|ьом|ьома)', 3], ['чотир(?:и|ьох|ьом|ма)', 4],
-  ['п[\'’]ят(?:ь|и|ьох)', 5], ['ш(?:ість|ести|істьох)', 6], ['с(?:ім|еми|ьомох|імох)', 7], ['в(?:ісім|осьми|ісьмох)', 8],
-  ['дев[\'’]ят(?:ь|и)', 9], ['десят(?:ь|и)', 10], ['одинадцят(?:ь|и)', 11], ['дванадцят(?:ь|и)', 12], ['тринадцят(?:ь|и)', 13],
-  ['чотирнадцят(?:ь|и)', 14], ['п[\'’]ятнадцят(?:ь|и)', 15], ['шістнадцят(?:ь|и)', 16], ['сімнадцят(?:ь|и)', 17],
-  ['вісімнадцят(?:ь|и)', 18], ['дев[\'’]ятнадцят(?:ь|и)', 19], ['двадцят(?:ь|и)', 20], ['тридцят(?:ь|и)', 30],
-] as [string, number][]).map(([stem, value]) => [new RegExp(`(?<![\\p{L}])(?:${stem})\\s+(?:кол|гон|перег|перемог|секунд|очк|поворот|віраж|машин|автомобіл|бол[іо]д|раз|рок|літ|титул|пілот|кілометр|миль|метр|хвилин|годин|місц|етап|подіум|поул|старт|команд|сезон|конфігурац)\\p{L}*`, 'giu'), value]);
+  [`п${A}ят(?:ь|и|ьох)`, 5], ['ш(?:ість|ести|істьох)', 6], ['с(?:ім|еми|ьомох|імох)', 7], ['в(?:ісім|осьми|ісьмох)', 8],
+  [`дев${A}ят(?:ь|и)`, 9], ['десят(?:ь|и)', 10], ['одинадцят(?:ь|и)', 11], ['дванадцят(?:ь|и)', 12], ['тринадцят(?:ь|и)', 13],
+  ['чотирнадцят(?:ь|и)', 14], [`п${A}ятнадцят(?:ь|и)`, 15], ['шістнадцят(?:ь|и)', 16], ['сімнадцят(?:ь|и)', 17],
+  ['вісімнадцят(?:ь|и)', 18], [`дев${A}ятнадцят(?:ь|и)`, 19], ['двадцят(?:ь|и)', 20], ['тридцят(?:ь|и)', 30], ['сорок(?:а)?', 40],
+  [`п${A}ятдесят(?:и)?`, 50], ['шістдесят(?:и)?', 60], ['сімдесят(?:и)?', 70], ['вісімдесят(?:и)?', 80], [`дев${A}яност(?:о|а)`, 90], ['ст(?:о|а)', 100],
+] as [string, number][]).map(([stem, value]) => [new RegExp(`(?<![\\p{L}${APOSTROPHES}])(?:${stem})(?:\\s+\\p{L}+)?\\s+(?:кол|кіл|гон|перег|перемог|секунд|очк|поворот|віраж|машин|автомобіл|бол[іо]д|раз|рок|літ|титул|пілот|кілометр|миль|метр|хвилин|годин|місц|етап|подіум|поул|старт|команд|сезон|конфігурац)\\p{L}*`, 'giu'), value]);
+const UK_ORDINAL: [string, number][] = [['перш', 1], ['друг', 2], ['трет', 3], ['четверт', 4], [`п${A}ят`, 5], ['шост', 6], ['сьом', 7], ['восьм', 8], [`дев${A}ят`, 9], ['десят', 10]];
+const UK_POSITION = new RegExp(`(?:фінішува\\p{L}*|ста(?:в|ла|ли)|кваліфікува\\p{L}*|стартува\\p{L}*|приїха\\p{L}*)\\s+(?:лише\\s+|тільки\\s+)?(${UK_ORDINAL.map(([s]) => s).join('|')})(?:им|ою|ій|ою|ими)(?![\\p{L}])`, 'giu');
 
 /**
- * Number words that count something ("won by four laps", "чотири кола") as numerals, so they
- * face the same evidence and EN/UK checks as digits. Idioms like "one of the greatest" are not
- * counts and are left alone.
+ * Number words that state a count or a position ("won by four full laps", "a dozen races",
+ * "finished fourth", "twice", "п'ять кіл", "фінішував четвертим") as numerals, so they face the
+ * same evidence and EN/UK checks as digits. Idioms ("one of the greatest", "the first race",
+ * "одна з") are not counts and are left alone. Roman numerals are not interpreted (documented limit).
  */
 export function spelledNumbers(text: string): string[] {
+  const t = text.normalize('NFC');
   const out: string[] = [];
-  for (const m of text.normalize('NFC').matchAll(EN_WORD_NUMBER)) out.push(String(EN_NUMBER[m[1].toLowerCase()]));
-  for (const [pattern, value] of UK_NUMBER) {
-    const count = [...text.normalize('NFC').matchAll(pattern)].length;
-    for (let i = 0; i < count; i++) out.push(String(value));
+  for (const m of t.matchAll(EN_WORD_NUMBER)) {
+    const value = m[1] ? EN_NUMBER[m[1].toLowerCase()] + EN_NUMBER[m[2].toLowerCase()]
+      : m[3] ? EN_EXTRA[m[3].toLowerCase()] : EN_NUMBER[m[4].toLowerCase()] ?? EN_EXTRA[m[4].toLowerCase()];
+    out.push(String(value));
+  }
+  for (const m of t.matchAll(EN_POSITION)) out.push(String(EN_ORDINAL[m[1].toLowerCase()]));
+  for (const m of t.matchAll(/\b(twice|thrice)\b/gi)) out.push(String(EN_TIMES[m[1].toLowerCase()]));
+  for (const [pattern, value] of UK_NUMBER) for (let i = [...t.matchAll(pattern)].length; i > 0; i--) out.push(String(value));
+  for (const m of t.matchAll(UK_POSITION)) {
+    const stem = m[1].toLowerCase();
+    const hit = UK_ORDINAL.find(([s]) => new RegExp(`^${s}$`, 'u').test(stem));
+    if (hit) out.push(String(hit[1]));
   }
   return out;
 }

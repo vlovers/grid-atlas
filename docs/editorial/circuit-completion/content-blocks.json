@@ -565,7 +565,7 @@
   "triage": "FACT-CHECK",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "bahrain",
@@ -1004,7 +1004,7 @@
   "en_words": 609,
   "uk_words": 460,
   "triage": "FACT-CHECK",
-  "signals": "en_uk_number_mismatch:82/1982",
+  "signals": "en_uk_number_mismatch:82/90/1982",
   "policy_outcome": "FAIL",
   "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing number_mismatch technical_receipt_missing"
  },
@@ -2495,9 +2495,9 @@
   "en_words": 67,
   "uk_words": 53,
   "triage": "FACT-CHECK",
-  "signals": "",
+  "signals": "en_uk_number_mismatch:40",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing number_mismatch technical_receipt_missing"
  },
  {
   "circuit_id": "las-vegas",
@@ -3319,7 +3319,7 @@
   "triage": "EXPAND",
   "signals": "",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
  },
  {
   "circuit_id": "monza",
@@ -3996,9 +3996,9 @@
   "en_words": 56,
   "uk_words": 46,
   "triage": "FACT-CHECK",
-  "signals": "",
+  "signals": "en_uk_number_mismatch:25",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing number_mismatch technical_receipt_missing"
  },
  {
   "circuit_id": "portimao",
@@ -4281,9 +4281,9 @@
   "en_words": 165,
   "uk_words": 137,
   "triage": "FACT-CHECK",
-  "signals": "",
+  "signals": "en_uk_number_mismatch:100",
   "policy_outcome": "FAIL",
-  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing technical_receipt_missing"
+  "policy_blockers": "uncited_block block_number_unclaimed fact_checker_missing editorial_review_missing localizer_missing number_mismatch technical_receipt_missing"
  },
  {
   "circuit_id": "sepang",

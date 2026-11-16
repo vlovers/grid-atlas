@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.2.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.3.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };
@@ -151,15 +151,24 @@ export type TechnicalReceipt = {
 export type DatasetValue = string | number | { value: string | number; mentions: string[] };
 export type DatasetLookup = (ref: DatasetRef) => DatasetValue | null | undefined;
 
+/**
+ * Trusted recogniser of archive entities (drivers, constructors…) in text. Returns stable
+ * entity keys (e.g. F1DB slugs) for every name it finds. Built by the publisher from the
+ * pinned dataset and its bilingual name table — never supplied by an agent.
+ */
+export type EntityRecognizer = (text: string, locale: Locale) => string[];
+
 export type PolicyContext = {
   pinned_dataset_release: string;
   dataset: DatasetLookup;
+  entities: EntityRecognizer;
   /** Locale-free internal routes that exist in the archive. */
   known_routes: ReadonlySet<string>;
   /** Already-published or sibling texts, for near-duplicate detection. */
   corpus: readonly { item_id: string; text: string }[];
   license_allowlist: readonly string[];
   technical_receipt: TechnicalReceipt | null;
+  /** Trusted current time from the publisher. Decisions dated later than this are refused. */
   evaluated_at: string;
 };
 

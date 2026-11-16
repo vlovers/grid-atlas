@@ -120,7 +120,7 @@ for (const circuit of archive.circuits) circuit.layouts.forEach((layout, index) 
 // ---------- Existing content blocks: deterministic triage + policy dry run ----------
 const PIPELINE = { id: 'legacy-import', role: 'writer', run_id: 'legacy-import' };
 const ctx = {
-  pinned_dataset_release: PINNED, dataset: () => undefined, known_routes: new Set(), license_allowlist: [],
+  pinned_dataset_release: PINNED, dataset: () => undefined, entities: () => [], known_routes: new Set(), license_allowlist: [],
   technical_receipt: null, evaluated_at: archive.source.release, corpus: [],
 };
 const blocks = [];

@@ -80,6 +80,11 @@ function safeDigest(item: ContentItem): string {
  * the policy is re-run against the exact item, and the decision must match it field for field.
  */
 export function assertPublishable(item: ContentItem, ctx: PolicyContext, claimed: PublicationDecision): PublicationDecision {
+  // ctx.evaluated_at is the publisher's trusted clock; a decision cannot be dated in its future.
+  const claimedAt = Date.parse(claimed?.evaluated_at ?? ''), now = Date.parse(ctx.evaluated_at);
+  if (Number.isNaN(claimedAt) || Number.isNaN(now) || claimedAt > now) {
+    throw new PublicationRefused('Decision timestamp is invalid or later than the publisher clock', evaluatePublication(item, ctx));
+  }
   const actual = evaluatePublication(item, { ...ctx, evaluated_at: claimed.evaluated_at });
   if (actual.outcome !== 'PASS') throw new PublicationRefused(`Policy outcome is ${actual.outcome}`, actual);
   if (canonicalJson(actual) !== canonicalJson(claimed)) throw new PublicationRefused('Supplied decision does not match the policy result for this content', actual);
