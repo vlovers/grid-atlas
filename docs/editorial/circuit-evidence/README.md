@@ -13,13 +13,17 @@ Report: [`COMPLETENESS.md`](COMPLETENESS.md) · pipeline policy: [`../autonomous
 | 3. Deterministic F1DB verification: winners, poles, fastest laps, race years, first championship race (venue or layout), layout lengths, turn counts, race counts | `f1db.ts`, `dataset-check.ts` | `dataset-checks.json` |
 | 4. Source registry and structural checks (https, pinned F1DB URLs, results-page year vs text, tertiary sources) | `sources.ts` | `sources.json` — 539 cited URLs |
 | 5. Polite read-only fetch (robots.txt, one request per host at a time, ≥1.5 s spacing, identifying user agent, no LLM) | `scripts/source-fetch.mjs` | `source-status.json` (metadata + hashes); text only in git-ignored `.grid-atlas/source-snapshots/` |
-| 6. Independent fact-check tasks: candidate passages in the stored text of the sources each sentence already cites | `factcheck.ts` | `factcheck-tasks.json` (locators: source, passage SHA-256, offset — never third-party text) |
+| 6. Independent fact-check tasks: candidate passages in the stored text of the sources each sentence already cites | `factcheck.ts` | `factcheck-tasks.json` (locators: source, SHA-256 of the passage, and its offset and length in the whitespace-normalised snapshot text — never third-party text) |
 | 7. Verdict contract: a checker's verdict becomes a policy `Claim`; the editorial policy re-checks excerpts, numbers, entities, dataset values and independence | `factcheck.ts` → `packages/editorial-policy` | — |
-| 8. Corner names: existing names re-checked against their own cited text; new names accepted only with an excerpt naming the turn, from the layout's period | `corners.ts` | `corner-names.json`, `corner-research-queue.json` |
+| 8. Corner names: existing names re-checked against their own cited text. A new name is accepted only when, within one sentence of a stored excerpt and at most 40 characters apart, it appears next to that exact turn number, with no other turn and no negation in between. The source text must also state the period year, and that year must be a season in which the layout was raced | `corners.ts` | `corner-names.json`, `corner-research-queue.json` |
 | 9. Writing quality and EN/UK consistency | `quality.ts` | `quality.json` |
 | 10. Per-circuit completeness across the 12-section standard | `scripts/circuit-evidence-report.mjs` | `completeness.json`, `COMPLETENESS.md`, `pilot/*.json` |
 
-Regenerate: `node scripts/source-fetch.mjs` (network, local only) then `node scripts/circuit-evidence-report.mjs`. CI runs `--check`, which reproduces the snapshot-independent files byte for byte; snapshot-derived files are validated for internal consistency.
+Regenerate: `node scripts/source-fetch.mjs` (network, local only) then `node scripts/circuit-evidence-report.mjs`.
+
+What CI actually checks (through `pnpm test`, which the Foundation workflow runs):
+- `--check` reproduces the five snapshot-independent files byte for byte (`claims`, `dataset-checks`, `quality`, `sources`, `corner-research-queue`).
+- For the snapshot-derived files (`factcheck-tasks`, `corner-names`, `completeness`, `COMPLETENESS.md`, `pilot/*`), CI only checks structure: passage records hold locators only, and every cited source has a recorded snapshot hash. CI cannot recompute them, because the snapshots are not in the repository. Reproducing them needs a local fetch, and the live web can change between fetches.
 
 ## Baseline results (F1DB v2026.17.0)
 
@@ -27,36 +31,47 @@ Regenerate: `node scripts/source-fetch.mjs` (network, local only) then `node scr
 |---|---|
 | Claim candidates | 4,177 from 1,566 blocks |
 | **Verified claims** | **0** — no fact-check verdicts recorded yet |
-| Dataset checks | 134 supported, **0 conflicts**, 25 undecidable |
-| Seeded-error sensitivity | Swapping the confirmed winner for the real second-place finisher in every supported winner sentence: **83/85 (98%) detected** |
-| Claims with an evidence lead | 2,229 (53%): dataset support, or a cited passage containing every number and name |
-| Cited sources | 539: 445 live HTML, 42 live PDF (no text extraction yet), 11 thin/script-rendered, 30 access denied (publisher blocks automated access, mainly Autosport, Motorsport.com, RacingCircuits.info), 5 rate-limited, 3 unreachable, 3 robots-disallowed, 0 confirmed dead |
+| Dataset checks | 147 supported, **0 conflicts**, 25 undecidable |
+| Seeded-error sensitivity | Swapping the confirmed winner for the real second-place finisher in every sentence the checker already parses as a supported winner claim: **102/102 detected**. This only measures sentences the parser recognises; wording it does not parse is not measured. |
+| Held-out reviewer cases | 11/11 wording cases from the independent review (passive voice, "beat X to victory", "was the 1992 winner", surname collisions such as Ralf/Michael Schumacher and Damon/Graham Hill, clause-local negation, intention "needed to win") behave as expected (tests) |
+| Claims with an evidence lead | 2,244 (54%): dataset support, or a cited passage containing every number and name |
+| Cited sources | 539, re-fetched under RFC 9309 robots rules: 445 live HTML, 42 live PDF (no text extraction yet), 11 thin or script-rendered, 30 access denied (publishers blocking automated access, mainly Autosport, Motorsport.com and RacingCircuits.info), 6 rate-limited (grandprix.com), 4 robots-disallowed (one of them a host whose robots.txt is unreachable, which counts as disallowed), 1 unreachable, 0 confirmed dead |
 | Existing corner names | 218: 130 found in their own cited source text, 61 not shown by that text, 27 whose sources are PDFs/unavailable |
 | Turns queued for name research | 1,882 across all layouts (1,573 never researched + 309 incomplete) |
 | Writing flags | 456 blocks shallow (below the per-kind length floor or with few specifics), 5 repetitive, 71 with EN/UK issues |
 | Content complete | 0/78 |
 
-"0 conflicts" means the existing drafts agree with F1DB on every fact the dataset can decide. Conflict rules were tuned against this same corpus (six false positives found and fixed: a driver's personal "first win", a layout's first race, years in other clauses), so the zero is an in-sample figure; the seeded-error rate measures sensitivity.
+"0 conflicts" means the existing drafts agree with F1DB on every fact the checker can parse and the dataset can decide. The rules were tuned against this same corpus, so the zero is an in-sample figure. Eight false positives were found and fixed along the way:
+- a driver's personal "first win";
+- a layout's first race;
+- years in other clauses;
+- multi-year sentences;
+- "on the way to victory";
+- "needed to win".
+
+Support and conflict are judged only on the driver the sentence credits, never on others it mentions. A preceding first name narrows a surname ("Ralf Schumacher").
 
 ## Pilot batch (Stage C)
 
 Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, dataset checks, passage locators, source statuses, corner names and queue, and quality flags.
 
-| Circuit | Claims | Lead rate | Dataset ✓ | Sources live/cited | Names found/named | Turns queued | Main gap |
+| Circuit | Claims | Lead rate | Dataset ✓ | Sources reachable/cited (HTML+PDF) | Names found/named | Turns queued | Main gap |
 |---|---|---|---|---|---|---|---|
-| silverstone | 87 | 81% | 1 | 4/5 | 18/18 | 91 | No long history; 7 of 8 layouts without corner research |
-| interlagos | 74 | 41% | 2 | 6/8 | 0/13 (sources are PDFs) | 26 | 31 claims rely only on PDF sources — needs PDF text extraction |
-| brands-hatch | 53 | 64% | 1 | 9/11 | 8/9 | 18 | Origins absent |
-| lusail | 51 | 51% | 3 | 4/5 | 0 named (number-only) | 0 | No defining moments; legacy renderer |
+| silverstone | 87 | 80% | 1 | 5/5 | 18/18 | 91 | No long history; 7 of 8 layouts without corner research |
+| interlagos | 74 | 40% | 1 | 8/8 | 0/13 (sources are PDFs) | 26 | 31 claims rely only on PDF sources — needs PDF text extraction |
+| brands-hatch | 53 | 64% | 1 | 10/11 | 8/9 | 18 | Origins absent |
+| lusail | 51 | 51% | 3 | 5/5 | 0 named (number-only) | 0 | No defining moments; legacy renderer |
 | monaco | 18 | 56% | 0 | 2/2 | — (grouped guide only) | 103 | No long history; 6 layouts unresearched |
-| dallas | 17 | 77% | 1 | 2/2 | — | 23 | Single race; corners and moments absent |
-| pescara | 16 | 63% | 3 | 2/2 | — | 24 | 25 km road course; corners absent |
+| dallas | 17 | 76% | 1 | 2/2 | — | 23 | Single race; corners and moments absent |
+| pescara | 16 | 69% | 4 | 2/2 | — | 24 | 25 km road course; corners absent |
 
 ## What is and is not proven
 
 - Dataset checks prove agreement with F1DB for winners, poles, fastest laps, years, first races, lengths and turn counts. They do not prove narrative causes, quotes, adjectives or unnamed people.
+- Dataset records are bound to their scope. A race record backs only claims about that race's circuit, and one claim cannot combine records of two races. A sentence counts as a dataset-only statistic only if nothing beyond names, years and race vocabulary remains (`isPureStatistic`); anything narrative ("after a dramatic late duel in the rain") also needs sources.
 - Passage leads are retrieval hits, not support. A lead becomes evidence only through a fact-check verdict that the editorial policy accepts.
-- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. Cyrillic names are not yet bound to F1DB (requires a reviewed EN→UK name table) and meaning is not compared.
+- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. Cyrillic names are not yet bound to F1DB. Until a reviewed EN→UK name table exists, `verdictToClaim` quarantines (`insufficient_evidence`) any verdict whose Ukrainian sentence names someone, so no such claim can be verified. Meaning is not compared.
+- `verdictToClaim` refuses a checker that is the recorded legacy writer of the sentence's own file.
 - Snapshot hashes prove integrity, not that the text is what the URL serves today. Re-fetching and archive cross-checks are planned.
 - PDF sources (42, mostly FIA circuit maps and documents) are live but unread; until text extraction is added, claims relying only on them stay without leads.
 
