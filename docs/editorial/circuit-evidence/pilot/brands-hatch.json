@@ -1,0 +1,2124 @@
+{
+ "circuit_id": "brands-hatch",
+ "completeness": {
+  "circuit_id": "brands-hatch",
+  "name": "Brands Hatch",
+  "pilot": true,
+  "layouts": 2,
+  "sections_with_editorial_text": 7,
+  "sections": {
+   "introduction": "draft",
+   "essential_facts": "dataset_only",
+   "origins": "absent",
+   "formula1_history": "draft",
+   "defining_moments": "draft:2",
+   "layout_evolution": "mentioned_in_draft",
+   "corners": "one_layout_drafted:9/18",
+   "important_races": "draft",
+   "records_statistics": "dataset_only",
+   "legacy_present_day": "mentioned_in_draft",
+   "related_people": "dataset_only",
+   "sources_methodology": "cited"
+  },
+  "claims": 53,
+  "claims_by_type": {
+   "statistic": 6,
+   "dated_event": 14,
+   "measurement": 0,
+   "quotation": 0,
+   "interpretation": 0,
+   "narrative": 33
+  },
+  "claims_unaligned_uk": 13,
+  "dataset_checks": {
+   "supported": 1,
+   "conflict": 0,
+   "unmatched": 1
+  },
+  "factcheck_status": {
+   "dataset_conflict": 0,
+   "dataset_supported": 1,
+   "passages_cover_numbers": 33,
+   "passages_partial": 5,
+   "no_passage_in_live_sources": 12,
+   "cited_sources_unavailable": 2,
+   "no_cited_sources": 0
+  },
+  "claims_verified": 0,
+  "sources": {
+   "cited": 11,
+   "live": 9,
+   "live_pdf_no_text": 1
+  },
+  "source_structural_issues": 0,
+  "corners": {
+   "numbered_turns_all_layouts": 18,
+   "layouts_with_guide": 1,
+   "named_in_guide": 9,
+   "names_found_in_cited_source": 8,
+   "names_not_in_cited_text": 1,
+   "names_sources_unavailable": 0,
+   "turns_queued": 18
+  },
+  "quality": {
+   "blocks": 17,
+   "shallow": 3,
+   "repetitive": 0,
+   "generic": 0,
+   "en_uk_issues": 1
+  },
+  "evidence_lead_rate": 0.642,
+  "content_complete": false
+ },
+ "tasks": [
+  {
+   "claim_id": "brands-hatch:short_summary#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:short_summary",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Brands Hatch hosted the 1986 British Grand Prix, won by Nigel Mansell.",
+   "uk": "Брендс-Гетч прийняв Гран-прі Великої Британії 1986 року, який виграв Найджел Менселл.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:429",
+       "field": "winner"
+      }
+     ],
+     "detail": "1986: Nigel Ernest James Mansell matches F1DB winner."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-7489b82575d9",
+     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Nigel",
+      "Mansell"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-7489b82575d9",
+     "passage_sha256": "2587313ed47062f4642b9b78ef61966dc5481ca4fd599d402900031eeb0ceebf",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:short_summary#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:short_summary",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "This rolling English circuit was not simply another venue: its climbs and drops made the setting feel very different from a flat modern airfield track.",
+   "uk": "Перепади висот на трасі серед пагорбів Кенту робили її зовсім іншою за характером, ніж рівні сучасні автодроми.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Nigel Mansell's home race seemed to last only moments.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "b4250c4d98311274596f51e972ef4f66d1e27d450f1b4585b46ffcad409f7690",
+     "offset": 17813,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nigel"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "34b5268fcfd93f2d9a47da2c3f466c49982080c581172f77f789cdc28bf70905",
+     "offset": 749,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell's"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "His Williams stopped with a broken CV joint.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "8cb7cd91ddd4cae3175f4386276c12d335a93d23c5b9cf9dce046ae5e04bd5e2",
+     "offset": 2933,
+     "numbers_covered": true,
+     "names_matched": [
+      "Williams"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "e2d16b804c28fad8d72819dcbbb66117a4149a585a10aabfd9d0ecce3652494c",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Williams"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Then a red flag offered him another start — but the crash behind that stoppage had serious consequences for another driver.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "47592d8cd962836a6df9ee7de356ec41ab8adb44ee4d6f96b9009929f4afd7ae",
+     "offset": 12040,
+     "numbers_covered": true,
+     "names_matched": [
+      "Then"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "0773798c72159be396e7ae07646b4aad704f8042158c5695d73939a8af93c683",
+     "offset": 16643,
+     "numbers_covered": true,
+     "names_matched": [
+      "Then"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "For the restart he took the spare Williams prepared for Nelson Piquet.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "5353005320343875f830512034d1b08e99d9663c8972c66a0332580eda3ff907",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "For",
+      "Williams",
+      "Nelson",
+      "Piquet"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "For",
+      "Williams",
+      "Piquet"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s5",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The accident had a far graver consequence for Jacques Laffite, whose severe leg injuries ended his Formula 1 career.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-f1165736bdf8",
+     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Jacques",
+      "Laffite"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-7489b82575d9",
+     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Jacques",
+      "Laffite"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s6",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Piquet led the restart, but Mansell passed him on lap 23 after his team-mate missed a gear.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Piquet",
+      "Mansell"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-f1165736bdf8",
+     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Piquet",
+      "Mansell"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s7",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Their tyre stops did not settle the contest; the Williams drivers continued racing, eventually finishing first and second with Alain Prost a lap behind.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-f1165736bdf8",
+     "passage_sha256": "8fe346ffb9658e69e981f71110d29f39916137728bc165ee42c4fcc13eaf74b8",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Williams",
+      "Alain",
+      "Prost"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-7489b82575d9",
+     "passage_sha256": "2c5857b0256c46df2edc08150c02edf9954325cb1e7b70b4c7abaaafd25b7660",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Williams",
+      "Alain",
+      "Prost"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s8",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:long_history_draft",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The result was a home win for Mansell, but the restart that made it possible came from a crash that must not be treated as a convenient plot device.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "e48d9e30bd6d8b0d5b5947cc1b97b65f6cbf392ba7d4025c84f8f7867d2a35f0",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mansell"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:narrative_biography",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Brands Hatch was never just a flat ribbon of asphalt.",
+   "uk": "Брендс-Гетч ніколи не був просто рівною смугою асфальту.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bbc931f4bb2ad81a75caf25c4686fc7011098823f6700ca227563633522f389e",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brands",
+      "Hatch"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "a9dcd6a87bb54472bd9bbded55e877fe28ce49c88215e5d0116061642cd6bf9e",
+     "offset": 306,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brands",
+      "Hatch"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:narrative_biography",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its Grand Prix loop dropped from Paddock Hill, climbed towards Surtees and disappeared into the woods before returning to the main straight.",
+   "uk": "Коло Гран-прі спускалося від Paddock Hill, підіймалося до Surtees, зникало серед дерев і поверталося на головну пряму.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paddock",
+      "Hill",
+      "Surtees"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "c12873f48ac644418acc26394f5cd4341373842bd55956235b199104af6a5723",
+     "offset": 1029,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paddock",
+      "Hill"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Formula 1 raced on several versions of this circuit until 1986.",
+   "uk": "Формула-1 виступала тут на різних конфігураціях до 1986 року.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "45a19275a803c723cd796e4018ffbfaea09a2fb283f2d17727d49fc2860aa83d",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 5
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
+     "offset": 1620,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The original Dingle Dell chicane was still there in the final championship visit; the smoother Sheene Curve did not appear until 2003.",
+   "uk": "Під час останнього чемпіонатного візиту ще існувала стара шикана Dingle Dell; плавніша Sheene Curve з'явилася лише у 2003-му.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "ad45b444431f9b4d28af840c13f8f4f8190ee8b8c83e0ebc8c2d77326cc74cd5",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dingle",
+      "Dell",
+      "Sheene",
+      "Curve"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Sheene",
+      "Curve"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s5",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:narrative_biography",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The nine named sections of the 1986 lap should therefore be read as a historical reconstruction, not a copy of today's circuit guide.",
+   "uk": "Тому дев'ять названих ділянок кола 1986 року — історична реконструкція, а не копія сучасного путівника.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1985-mansell-first",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "At the 1985 European Grand Prix at Brands Hatch, Nigel Mansell claimed his first Formula 1 World Championship victory for Williams.",
+   "uk": "На Гран-прі Європи 1985 року в Брендс-Гетчі Найджел Менселл здобув першу перемогу в чемпіонаті світу Формули-1 за Williams.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-54ea5a239722",
+     "passage_sha256": "c34d27101ab670baacfc05d01597a4b80a394577ff9927598caef7f618ed9462",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brands",
+      "Hatch"
+     ],
+     "score": 15
+    },
+    {
+     "source_id": "src-54ea5a239722",
+     "passage_sha256": "4532dff70330446c63a29a61295b5ab272d4e27a7d0d5c567c9170a0595829a6",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Nigel",
+      "Mansell",
+      "Williams"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1985-mansell-first",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "He had started third, behind pole-sitter Ayrton Senna and Nelson Piquet.",
+   "uk": "Він стартував третім після володаря поулу Айртона Сенни та Нельсона Піке.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-54ea5a239722",
+     "passage_sha256": "4532dff70330446c63a29a61295b5ab272d4e27a7d0d5c567c9170a0595829a6",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ayrton",
+      "Senna",
+      "Nelson",
+      "Piquet"
+     ],
+     "score": 15
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1985-mansell-first",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The result mattered beyond one Sunday: a driver often remembered for near-misses finally had a championship win, in front of his home crowd.",
+   "uk": "Це був не просто результат одного вікенду: гонщик, якому часто не щастило, нарешті переміг перед домашніми вболівальниками.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1985-mansell-first",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The official race classification identifies Brands Hatch as the venue, not Silverstone.",
+   "uk": "Офіційний протокол називає місцем гонки саме Брендс-Гетч, а не Сільверстоун.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-54ea5a239722",
+     "passage_sha256": "c34d27101ab670baacfc05d01597a4b80a394577ff9927598caef7f618ed9462",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Brands",
+      "Hatch"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1986-last-f1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1986 British Grand Prix was the last World Championship Formula 1 race at Brands Hatch.",
+   "uk": "Гран-прі Великої Британії 1986 року став останньою чемпіонатною гонкою Формули-1 у Брендс-Гетчі.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-7a1feae23a6c",
+     "passage_sha256": "a466a18c0cc8a8790739d8de78db89f622988055156c05c0319116b36ea97bda",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "British",
+      "Brands",
+      "Hatch"
+     ],
+     "score": 19
+    },
+    {
+     "source_id": "src-7a1feae23a6c",
+     "passage_sha256": "b23d18db846e65de5dd383bc648d95308e39e5502c3d036a3ffbc910192e3674",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1986-last-f1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Nelson Piquet started from pole, but Williams team-mate Nigel Mansell won over 75 laps, with Piquet second and Alain Prost third.",
+   "uk": "Нельсон Піке стартував із поулу, але за 75 кіл переміг його напарник по Williams Найджел Менселл; Піке фінішував другим, Ален Прост — третім.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-7a1feae23a6c",
+     "passage_sha256": "b23d18db846e65de5dd383bc648d95308e39e5502c3d036a3ffbc910192e3674",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Nelson",
+      "Piquet",
+      "Williams",
+      "Nigel",
+      "Mansell",
+      "Alain",
+      "Prost"
+     ],
+     "score": 25
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1986-last-f1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "It was a final championship chapter for the steep Kent circuit, not a race on the later 2003 Sheene Curve layout.",
+   "uk": "Це був фінальний розділ історії крутої траси Кенту, а не гонка на пізнішій конфігурації з Sheene Curve.",
+   "status": "passages_partial",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2003: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-7a1feae23a6c",
+     "passage_sha256": "a466a18c0cc8a8790739d8de78db89f622988055156c05c0319116b36ea97bda",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:moment:brands-hatch-1986-last-f1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The official results also record Mansell's fastest race lap.",
+   "uk": "Офіційний протокол також фіксує найшвидше коло Менселла.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Paddock Hill drops away from the start straight into a steep right-hander.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paddock",
+      "Hill"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paddock",
+      "Hill"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its paddock-side setting explains the name; braking while the road falls demands a settled car, because the compression at the bottom can widen the exit.",
+   "uk": null,
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The climb from Paddock Hill leads to the tight right-hand Druids hairpin.",
+   "uk": "Після Paddock Hill траса підіймається до тісної правої шпильки Druids.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paddock",
+      "Hill",
+      "Druids"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "05016b3db44e170c30f9117deb0d4708becb47a134da72fa80384888b10933b1",
+     "offset": 5307,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hill",
+      "Druids"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The origin of its name is disputed, so folklore about ancient druids should not be presented as a fact.",
+   "uk": "Походження назви спірне, тому легенди про давніх друїдів не слід видавати за факт.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A patient exit matters before the downhill run.",
+   "uk": "На виході важливо терпляче дозувати газ.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t3#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The next left-hander drops away towards Cooper Straight and honours the double world champion Graham Hill.",
+   "uk": "Наступний лівий поворот спускається до Cooper Straight й ушановує дворазового чемпіона Ґрема Гілла.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
+     "offset": 1620,
+     "numbers_covered": true,
+     "names_matched": [
+      "Graham",
+      "Hill"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hill"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t3#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t3",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The corner's shape has changed since the Formula 1 years, so the modern apex and kerbs must not be projected onto the 1986 race.",
+   "uk": "Геометрію згодом змінювали, тому сучасні апекс і поребрики не можна переносити на гонку 1986 року.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    },
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "30a406a2bd41927cc56c2f4b39d0f1aeb202221d3dcfaf750c953940364ecfa5",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Surtees is the climbing left-hander that sends the Grand Prix lap away from the shorter Indy circuit.",
+   "uk": "Surtees — лівий поворот на підйомі, після якого коло Гран-прі відділяється від короткої траси Indy.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Surtees",
+      "Indy"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "d737ef2ead8832fc3b64a7ef55dec3d41dab0e89e207041cf63127badd0462bb",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Surtees",
+      "Indy"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "It honours John Surtees, champion on both motorcycles and in Formula 1.",
+   "uk": "Назва вшановує Джона Сертіса, чемпіона мотогонок і Формули-1.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "eb75a3b78d39b9914d64afc65b999bee2e3c4294e0cfaf0b270649e810d61470",
+     "offset": 1720,
+     "numbers_covered": true,
+     "names_matched": [
+      "John",
+      "Surtees"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "82ab3f80afcaa3398223a800f50c45a5ee6e953be6c9cc642cfff6786bfad9a3",
+     "offset": 1620,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A clean exit sets up the faster woodland section.",
+   "uk": "Чистий вихід готує швидку лісову частину.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "After the descent along Pilgrims Drop, Hawthorn Bend arrives as a fast right-hander.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hawthorn",
+      "Bend"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "901def3efb3701b5c28614aff17eb27874212dd309d574827f14cb7e00f2fd1b",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hawthorn",
+      "Bend"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Sources disagree on whether the name originally referred to Mike Hawthorn or a nearby farm; that uncertainty is retained.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "fe4ab740329fb22f5648f0f3e94c4d9ee28f9f64b0bdf4d0c8879af6bb8ed4ba",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sources",
+      "Mike",
+      "Hawthorn"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4006364d06fddee14005813af07961266ab2858b790fd2e03c0a5154869cdf7f",
+     "offset": 4655,
+     "numbers_covered": true,
+     "names_matched": [
+      "Sources"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t5",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Speed and road camber make the approach unforgiving.",
+   "uk": null,
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "dcd59020c5eab1df09d17973e8a3ea3c57551e78dea160159692ae2844f46982",
+     "offset": 7908,
+     "numbers_covered": true,
+     "names_matched": [
+      "Speed"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "91c169052425fa507d6522730a228697b3a4c9a039c69571c8f80224af7a3545",
+     "offset": 9834,
+     "numbers_covered": true,
+     "names_matched": [
+      "Speed"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t6#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t6",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Westfield is another quick right-hander, named for woodland near the circuit.",
+   "uk": "Westfield — ще один швидкий правий віраж, названий за сусіднім лісом.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "5008df447ea9ba50d7adf6adc40cbcc6603d8c75eb7a78921f4c8438e115df04",
+     "offset": 2182,
+     "numbers_covered": true,
+     "names_matched": [
+      "Westfield"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Westfield"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t6#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t6",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The track falls towards Dingle Dell after the apex; a wide exit leaves the car badly placed for the old chicane that followed during the 1986 Grand Prix.",
+   "uk": "Після апекса дорога спускається до Dingle Dell; надто широкий вихід заважав підготуватися до старої шикани, яка існувала під час Гран-прі 1986 року.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "passage_sha256": "6e2c94f155b50cb0f68e7f36da6876a34bec3f6f243071dd9b51e2e4c517a347",
+     "offset": 653,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dingle",
+      "Dell"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1986 this was the original Dingle Dell chicane, not the faster Sheene Curve seen on today's maps.",
+   "uk": "У 1986 році тут була стара шикана Dingle Dell, а не швидша Sheene Curve із сучасних схем.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "passage_sha256": "6e2c94f155b50cb0f68e7f36da6876a34bec3f6f243071dd9b51e2e4c517a347",
+     "offset": 653,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dingle",
+      "Dell",
+      "Sheene",
+      "Curve"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "ad45b444431f9b4d28af840c13f8f4f8190ee8b8c83e0ebc8c2d77326cc74cd5",
+     "offset": -1,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dingle",
+      "Dell",
+      "Sheene",
+      "Curve"
+     ],
+     "score": 12
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The chicane was removed and reprofiled in 2003, when the replacement was named for Barry Sheene.",
+   "uk": "У 2003 році шикану прибрали й перебудували, а новий віраж назвали на честь Баррі Шина.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "passage_sha256": "b5682aac3cff758ffa2e476e284a12b980c19b148617a27bb0c0ab6aa701af91",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Barry",
+      "Sheene"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "de306ce1b5b67ccc2bf981f27edbeb808a0f9289380c8d6846103d7692e469da",
+     "offset": 2312,
+     "numbers_covered": false,
+     "names_matched": [
+      "Barry",
+      "Sheene"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t7",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A modern turn-seven photograph would misrepresent the historic corner.",
+   "uk": "Сучасне фото сьомого повороту спотворює історичну конфігурацію.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The wooded Grand Prix loop bends left at Stirling's before returning towards the stadium section.",
+   "uk": "Лісова частина кола повертає ліворуч у Stirling's перед поверненням до стадіонної секції.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stirling's"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "c998cf8309b64b9021f0cdc0e9bb8e4c1b9558bcbd5452cb78ff3e933a8f2a6d",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stirling's"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The origin of the name is uncertain: a nearby farm is one proposed explanation, rather than a securely established tribute to Stirling Moss.",
+   "uk": "Походження назви невизначене: одна з версій пов'язує її з сусідньою фермою, а не з доведеною присвятою Стірлінгу Моссу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "6171e43aa22008f04f98eb399177c73977afc4679c1937c9e0bcd4955f65a690",
+     "offset": 2481,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stirling",
+      "Moss"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Stirling"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The exit leads towards Clearways.",
+   "uk": "Вихід веде до Clearways.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "1811c7c6754efd703ef4fa7c5c822349734754e255839e29401edc67145f5d7d",
+     "offset": 6080,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clearways"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clearways"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Clark Curve closes the Grand Prix lap with a right-hand run onto the pit straight.",
+   "uk": "Clark Curve завершує коло Гран-прі правою дугою на стартову пряму.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clark",
+      "Curve"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
+     "offset": 2656,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clark",
+      "Curve"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t9",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "It honours Jim Clark, twice Formula 1 world champion.",
+   "uk": "Назва вшановує дворазового чемпіона Джима Кларка.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
+     "offset": 2656,
+     "numbers_covered": true,
+     "names_matched": [
+      "Jim",
+      "Clark"
+     ],
+     "score": 14
+    },
+    {
+     "source_id": "src-70014ca97d1a",
+     "passage_sha256": "4fa69f2b5b20e7a8085346d8e84e5c898872e811e0b645169dded20f23830189",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Jim",
+      "Clark"
+     ],
+     "score": 11
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner:brands-hatch-t9",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Clearways is a nearby named section, but the nine-turn historic count does not prove a separately numbered Clearways corner.",
+   "uk": "Clearways — сусідня названа ділянка, але історичний підрахунок дев'яти поворотів не доводить її окремого номера.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "bc65b0355fa2d079acacbb5ab58066b1d016135c969f92b51f2912d1d840d352",
+     "offset": -1,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clearways"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "passage_sha256": "f214ba4cffd1f1348a0473145edc82be5d89b65a9b78f6110988139f69e87126",
+     "offset": 7008,
+     "numbers_covered": true,
+     "names_matched": [
+      "Clearways"
+     ],
+     "score": 4
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:0#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The opening downhill right-hander plunges away from the pit straight.",
+   "uk": "Перший правий поворот різко спускається зі стартової прямої.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:0#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:0",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Watch the cars compress at the bottom before climbing toward Druids: a small entry mistake can become a large exit problem.",
+   "uk": "Зверни увагу, як боліди стискає на дні схилу перед підйомом до Druids: невелика помилка на вході може дорого коштувати на виході.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-8bb1c2866347",
+     "passage_sha256": "cfa1d481023175f56d8f8f7b94133da7c598f9a3778fc2f2f26897f5a31d504f",
+     "offset": 1578,
+     "numbers_covered": true,
+     "names_matched": [
+      "Watch",
+      "Druids"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-8bb1c2866347",
+     "passage_sha256": "ba827d8991f73d96b3cada048b3bef521875722b52604a18af46bb6f944823fe",
+     "offset": 462,
+     "numbers_covered": true,
+     "names_matched": [
+      "Watch"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The hairpin at the top of the hill is one of the clearest braking and overtaking points.",
+   "uk": "Шпилька на вершині пагорба — одна з найзрозуміліших зон гальмування й обгонів.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It is a useful beginner's landmark: watch whether an attacking driver can still make a clean exit.",
+   "uk": "Новачкам варто дивитися не лише на атаку, а й на те, чи вдається пілоту чисто вийти з повороту.",
+   "status": "no_passage_in_live_sources",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:2#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "On the longer Grand Prix circuit, the route leaves the short Indy loop after Surtees and heads into the wooded section containing Hawthorn Bend.",
+   "uk": "На довшій конфігурації Grand Prix після Surtees траса виходить за межі короткого Indy-кільця до лісової секції з Hawthorn Bend.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:2#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:corner_group:2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "These landmarks are mapped by the circuit operator; they should not be retroactively assigned to every historic configuration.",
+   "uk": "Ці назви є на схемі оператора, але їх не можна автоматично переносити на всі історичні версії.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  }
+ ],
+ "corner_names": [
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t1",
+   "numbers": [
+    1
+   ],
+   "name": "Paddock Hill Bend",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t2",
+   "numbers": [
+    2
+   ],
+   "name": "Druids",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t3",
+   "numbers": [
+    3
+   ],
+   "name": "Graham Hill Bend",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t4",
+   "numbers": [
+    4
+   ],
+   "name": "Surtees",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t5",
+   "numbers": [
+    5
+   ],
+   "name": "Hawthorn Bend",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t6",
+   "numbers": [
+    6
+   ],
+   "name": "Westfield Bend",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t7",
+   "numbers": [
+    7
+   ],
+   "name": "Dingle Dell",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t8",
+   "numbers": [
+    8
+   ],
+   "name": "Stirling's Bend",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_not_in_cited_text",
+   "period": "within_layout_seasons"
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "section_id": "brands-hatch-t9",
+   "numbers": [
+    9
+   ],
+   "name": "Clark Curve",
+   "numbering_year": 1986,
+   "layout_seasons": "1976-1986",
+   "cited_sources": 4,
+   "live_sources": 4,
+   "status": "name_found_in_cited_source",
+   "period": "within_layout_seasons"
+  }
+ ],
+ "corner_queue": [
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-1",
+   "seasons": "1964-1974",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "status": "not_researched",
+   "known_source_urls": []
+  },
+  {
+   "circuit_id": "brands-hatch",
+   "layout_id": "brands-hatch-2",
+   "seasons": "1976-1986",
+   "turns_to_research": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "status": "research_incomplete",
+   "known_source_urls": [
+    "https://www.lapledger.org/circuits/brands-hatch",
+    "https://oversteer48.com/brands-hatch-corner-names/",
+    "https://www.abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+    "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result"
+   ]
+  }
+ ],
+ "quality": [
+  {
+   "block_id": "brands-hatch:moment:brands-hatch-1986-last-f1",
+   "circuit_id": "brands-hatch",
+   "kind": "defining_moment",
+   "en_words": 67,
+   "uk_words": 58,
+   "sentences": 4,
+   "specificity": 0.343,
+   "lexical_diversity": 0.851,
+   "flags": [],
+   "en_uk": [
+    "number_only_in_en:2003"
+   ]
+  },
+  {
+   "block_id": "brands-hatch:corner:brands-hatch-t1",
+   "circuit_id": "brands-hatch",
+   "kind": "corner_section",
+   "en_words": 37,
+   "uk_words": 27,
+   "sentences": 2,
+   "specificity": 0.027,
+   "lexical_diversity": 0.838,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "brands-hatch:corner_group:0",
+   "circuit_id": "brands-hatch",
+   "kind": "corner_group",
+   "en_words": 31,
+   "uk_words": 29,
+   "sentences": 2,
+   "specificity": 0.032,
+   "lexical_diversity": 0.871,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  },
+  {
+   "block_id": "brands-hatch:corner_group:1",
+   "circuit_id": "brands-hatch",
+   "kind": "corner_group",
+   "en_words": 34,
+   "uk_words": 29,
+   "sentences": 2,
+   "specificity": 0,
+   "lexical_diversity": 0.824,
+   "flags": [
+    "shallow:few_specifics"
+   ],
+   "en_uk": []
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "src-00f752b98688",
+   "url": "https://www.motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england/",
+   "normalized": "https://motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "brands-hatch:long_history_draft"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england/",
+    "source_id": "src-00f752b98688",
+    "checked_at": "2026-11-16T09:49:12.904Z",
+    "http_status": 200,
+    "final_url": "https://www.motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england/",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "1986 British Grand Prix race report - In the garden of England August 1986 - Motor Sport Magazine",
+    "text_sha256": "a8930e1e42ca8dd7a91a9697ab7ebfbdf7179153b07a00f2ee7a8486d1e9ee47",
+    "text_chars": 21509
+   }
+  },
+  {
+   "source_id": "src-1d5e90abd23f",
+   "url": "https://oversteer48.com/brands-hatch-corner-names/",
+   "normalized": "https://oversteer48.com/brands-hatch-corner-names",
+   "host": "oversteer48.com",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:narrative_biography",
+    "brands-hatch:corner:brands-hatch-t1",
+    "brands-hatch:corner:brands-hatch-t2",
+    "brands-hatch:corner:brands-hatch-t3",
+    "brands-hatch:corner:brands-hatch-t4",
+    "brands-hatch:corner:brands-hatch-t5",
+    "brands-hatch:corner:brands-hatch-t6",
+    "brands-hatch:corner:brands-hatch-t7",
+    "brands-hatch:corner:brands-hatch-t8",
+    "brands-hatch:corner:brands-hatch-t9"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://oversteer48.com/brands-hatch-corner-names/",
+    "source_id": "src-1d5e90abd23f",
+    "checked_at": "2026-11-16T09:49:12.913Z",
+    "http_status": 200,
+    "final_url": "https://oversteer48.com/brands-hatch-corner-names/",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "Brands Hatch Corner Names, Origins &amp; Driving Guide",
+    "text_sha256": "734de36d84780184c958daa5a8686fc2e83bb9230c24e50f9c651a2e079f6e6d",
+    "text_chars": 12018
+   }
+  },
+  {
+   "source_id": "src-54ea5a239722",
+   "url": "https://www.formula1.com/en/results/1985/races/495/europe/race-result",
+   "normalized": "https://formula1.com/en/results/1985/races/495/europe/race-result",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "brands-hatch:moment:brands-hatch-1985-mansell-first"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/results/1985/races/495/europe/race-result",
+    "source_id": "src-54ea5a239722",
+    "checked_at": "2026-11-16T09:50:56.200Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/results/1985/races/495/europe/race-result",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "SHELL OILS GRAND PRIX OF EUROPE - RACE RESULT",
+    "text_sha256": "3e49499d1f4fb400f76c08ce7884943bb7fd9eb9dea06c471e31b9b1a531981d",
+    "text_chars": 2420
+   }
+  },
+  {
+   "source_id": "src-70014ca97d1a",
+   "url": "https://www.lapledger.org/circuits/brands-hatch",
+   "normalized": "https://lapledger.org/circuits/brands-hatch",
+   "host": "lapledger.org",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:corner:brands-hatch-t1",
+    "brands-hatch:corner:brands-hatch-t2",
+    "brands-hatch:corner:brands-hatch-t3",
+    "brands-hatch:corner:brands-hatch-t4",
+    "brands-hatch:corner:brands-hatch-t5",
+    "brands-hatch:corner:brands-hatch-t6",
+    "brands-hatch:corner:brands-hatch-t7",
+    "brands-hatch:corner:brands-hatch-t8",
+    "brands-hatch:corner:brands-hatch-t9"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.lapledger.org/circuits/brands-hatch",
+    "source_id": "src-70014ca97d1a",
+    "checked_at": "2026-11-16T09:49:16.375Z",
+    "http_status": 200,
+    "final_url": "https://www.lapledger.org/circuits/brands-hatch",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "Brands Hatch — Lap Ledger",
+    "text_sha256": "7d329cb9cd9d89f44a67d73e435c748aa57053fd068dfcf90926b1b2e648f1bb",
+    "text_chars": 4699
+   }
+  },
+  {
+   "source_id": "src-7489b82575d9",
+   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+   "normalized": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+   "host": "github.com",
+   "class": "f1db_dataset",
+   "cited_by": [
+    "brands-hatch:short_summary",
+    "brands-hatch:long_history_draft"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+    "source_id": "src-7489b82575d9",
+    "checked_at": "2026-11-16T09:49:43.094Z",
+    "http_status": 200,
+    "final_url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "f1db/src/data/seasons/1986/races/09-great-britain/race-results.yml at v2026.17.0 · f1db/f1db · GitHub",
+    "text_sha256": "d4aab99a3ce37821eb2da256b4c829fcb14ba567d0a03db802edaf0cee40fff4",
+    "text_chars": 9302
+   }
+  },
+  {
+   "source_id": "src-7a1feae23a6c",
+   "url": "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result",
+   "normalized": "https://formula1.com/en/results/1986/races/506/great-britain/race-result",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "brands-hatch:moment:brands-hatch-1986-last-f1",
+    "brands-hatch:corner:brands-hatch-t1",
+    "brands-hatch:corner:brands-hatch-t2",
+    "brands-hatch:corner:brands-hatch-t3",
+    "brands-hatch:corner:brands-hatch-t4",
+    "brands-hatch:corner:brands-hatch-t5",
+    "brands-hatch:corner:brands-hatch-t6",
+    "brands-hatch:corner:brands-hatch-t7",
+    "brands-hatch:corner:brands-hatch-t8",
+    "brands-hatch:corner:brands-hatch-t9"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result",
+    "source_id": "src-7a1feae23a6c",
+    "checked_at": "2026-11-16T09:51:32.490Z",
+    "http_status": 200,
+    "final_url": "https://www.formula1.com/en/results/1986/races/506/great-britain/race-result",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "BRITISH GRAND PRIX - RACE RESULT",
+    "text_sha256": "205eb25c03cbfb9ce7a8fbec1656f6bc4a7b58fa81320494d28e7329d6498ace",
+    "text_chars": 2207
+   }
+  },
+  {
+   "source_id": "src-8bb1c2866347",
+   "url": "https://www.brandshatch.co.uk/grandstands",
+   "normalized": "https://brandshatch.co.uk/grandstands",
+   "host": "brandshatch.co.uk",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:corner_group:0",
+    "brands-hatch:corner_group:1"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.brandshatch.co.uk/grandstands",
+    "source_id": "src-8bb1c2866347",
+    "checked_at": "2026-11-16T09:49:12.924Z",
+    "http_status": 200,
+    "final_url": "https://www.brandshatch.co.uk/grandstands",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "Grandstands",
+    "text_sha256": "c4b4d24c0ab810cd727d54eb720b83a208fbea5110ed4097019ff9d5a41c4ff1",
+    "text_chars": 1750
+   }
+  },
+  {
+   "source_id": "src-c6d92c8cfae5",
+   "url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
+   "normalized": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
+   "host": "msvstatic.blob.core.windows.net",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:corner_group:2"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
+    "source_id": "src-c6d92c8cfae5",
+    "checked_at": "2026-11-16T09:49:12.929Z",
+    "http_status": 200,
+    "final_url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
+    "content_type": "application/pdf",
+    "outcome": "live_pdf_no_text",
+    "bytes_sha256": "7c2e16c6df031fb2c7b4e3afb1668c395c16186c0c4bf910c0234315fae584b9",
+    "bytes": 425081
+   }
+  },
+  {
+   "source_id": "src-de16aee2bac4",
+   "url": "https://www.autosport.com/f1/news/grand-prix-gold-british-gp-1986-5091205/5091205/",
+   "normalized": "https://autosport.com/f1/news/grand-prix-gold-british-gp-1986-5091205/5091205",
+   "host": "autosport.com",
+   "class": "publication",
+   "cited_by": [
+    "brands-hatch:long_history_draft"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.autosport.com/f1/news/grand-prix-gold-british-gp-1986-5091205/5091205/",
+    "source_id": "src-de16aee2bac4",
+    "checked_at": "2026-11-16T09:49:23.815Z",
+    "http_status": 403,
+    "final_url": "https://www.autosport.com/f1/news/grand-prix-gold-british-gp-1986-5091205/5091205/",
+    "content_type": "text/html",
+    "outcome": "access_denied"
+   }
+  },
+  {
+   "source_id": "src-e3bdf178ff3c",
+   "url": "https://www.abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+   "normalized": "https://abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+   "host": "abc.net.au",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:corner:brands-hatch-t1",
+    "brands-hatch:corner:brands-hatch-t2",
+    "brands-hatch:corner:brands-hatch-t3",
+    "brands-hatch:corner:brands-hatch-t4",
+    "brands-hatch:corner:brands-hatch-t5",
+    "brands-hatch:corner:brands-hatch-t6",
+    "brands-hatch:corner:brands-hatch-t7",
+    "brands-hatch:corner:brands-hatch-t8",
+    "brands-hatch:corner:brands-hatch-t9"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+    "source_id": "src-e3bdf178ff3c",
+    "checked_at": "2026-11-16T09:49:12.930Z",
+    "http_status": 200,
+    "final_url": "https://www.abc.net.au/news/2003-03-18/brands-hatch-renames-curve-after-sheene/1818564",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "Brands Hatch renames curve after Sheene - ABC News",
+    "text_sha256": "b9f1447e9e31b4b1002e28984081b29bcb439fc04d799089784a920ce72dd637",
+    "text_chars": 3247
+   }
+  },
+  {
+   "source_id": "src-f1165736bdf8",
+   "url": "https://www.grandprix.com/races/british-gp-1986.html",
+   "normalized": "https://grandprix.com/races/british-gp-1986.html",
+   "host": "grandprix.com",
+   "class": "publication",
+   "cited_by": [
+    "brands-hatch:long_history_draft"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": {
+    "url": "https://www.grandprix.com/races/british-gp-1986.html",
+    "source_id": "src-f1165736bdf8",
+    "checked_at": "2026-11-16T09:49:58.977Z",
+    "http_status": 200,
+    "final_url": "https://www.grandprix.com/races/british-gp-1986.html",
+    "content_type": "text/html",
+    "outcome": "live",
+    "title": "British GP, 1986 | Grandprix.com",
+    "text_sha256": "38cf09c3f12f493f071dd039273b07477020b3559cf4accd2f356c90a24c1ac9",
+    "text_chars": 4559
+   }
+  }
+ ]
+}

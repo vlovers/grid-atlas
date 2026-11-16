@@ -1,0 +1,69 @@
+# Circuit evidence (Milestone B)
+
+Evidence extraction and verification for the existing circuit content of all 78 circuits. **Nothing is rewritten, generated or published.** Every claim candidate is an exact sentence of an existing block, so good existing writing is preserved and only unsupported parts will later need revision.
+
+Report: [`COMPLETENESS.md`](COMPLETENESS.md) · pipeline policy: [`../autonomous-pipeline/README.md`](../autonomous-pipeline/README.md) · Stage A matrices: [`../circuit-completion/`](../circuit-completion/README.md)
+
+## Pipeline
+
+| Step | Code | Output |
+|---|---|---|
+| 1. Ingest every existing source verbatim (summaries, long drafts, narratives, moments, legacy TSX histories, 977 numbered + 266 grouped corner sections) | `packages/editorial-evidence/src/ingest.ts` | 1,566 blocks with file, JSON path and cited URLs |
+| 2. Claim candidates: one per English sentence, Ukrainian aligned by sentence index when counts match, typed (statistic, dated event, measurement, quotation, interpretation, narrative) | `claims.ts` | `claims.json` — 4,177 candidates with block and sentence SHA-256 |
+| 3. Deterministic F1DB verification: winners, poles, fastest laps, race years, first championship race (venue or layout), layout lengths, turn counts, race counts | `f1db.ts`, `dataset-check.ts` | `dataset-checks.json` |
+| 4. Source registry and structural checks (https, pinned F1DB URLs, results-page year vs text, tertiary sources) | `sources.ts` | `sources.json` — 539 cited URLs |
+| 5. Polite read-only fetch (robots.txt, one request per host at a time, ≥1.5 s spacing, identifying user agent, no LLM) | `scripts/source-fetch.mjs` | `source-status.json` (metadata + hashes); text only in git-ignored `.grid-atlas/source-snapshots/` |
+| 6. Independent fact-check tasks: candidate passages in the stored text of the sources each sentence already cites | `factcheck.ts` | `factcheck-tasks.json` (locators: source, passage SHA-256, offset — never third-party text) |
+| 7. Verdict contract: a checker's verdict becomes a policy `Claim`; the editorial policy re-checks excerpts, numbers, entities, dataset values and independence | `factcheck.ts` → `packages/editorial-policy` | — |
+| 8. Corner names: existing names re-checked against their own cited text; new names accepted only with an excerpt naming the turn, from the layout's period | `corners.ts` | `corner-names.json`, `corner-research-queue.json` |
+| 9. Writing quality and EN/UK consistency | `quality.ts` | `quality.json` |
+| 10. Per-circuit completeness across the 12-section standard | `scripts/circuit-evidence-report.mjs` | `completeness.json`, `COMPLETENESS.md`, `pilot/*.json` |
+
+Regenerate: `node scripts/source-fetch.mjs` (network, local only) then `node scripts/circuit-evidence-report.mjs`. CI runs `--check`, which reproduces the snapshot-independent files byte for byte; snapshot-derived files are validated for internal consistency.
+
+## Baseline results (F1DB v2026.17.0)
+
+| Measure | Result |
+|---|---|
+| Claim candidates | 4,177 from 1,566 blocks |
+| **Verified claims** | **0** — no fact-check verdicts recorded yet |
+| Dataset checks | 134 supported, **0 conflicts**, 25 undecidable |
+| Seeded-error sensitivity | Swapping the confirmed winner for the real second-place finisher in every supported winner sentence: **83/85 (98%) detected** |
+| Claims with an evidence lead | 2,229 (53%): dataset support, or a cited passage containing every number and name |
+| Cited sources | 539: 445 live HTML, 42 live PDF (no text extraction yet), 11 thin/script-rendered, 30 access denied (publisher blocks automated access, mainly Autosport, Motorsport.com, RacingCircuits.info), 5 rate-limited, 3 unreachable, 3 robots-disallowed, 0 confirmed dead |
+| Existing corner names | 218: 130 found in their own cited source text, 61 not shown by that text, 27 whose sources are PDFs/unavailable |
+| Turns queued for name research | 1,882 across all layouts (1,573 never researched + 309 incomplete) |
+| Writing flags | 456 blocks shallow (below the per-kind length floor or with few specifics), 5 repetitive, 71 with EN/UK issues |
+| Content complete | 0/78 |
+
+"0 conflicts" means the existing drafts agree with F1DB on every fact the dataset can decide. Conflict rules were tuned against this same corpus (six false positives found and fixed: a driver's personal "first win", a layout's first race, years in other clauses), so the zero is an in-sample figure; the seeded-error rate measures sensitivity.
+
+## Pilot batch (Stage C)
+
+Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, dataset checks, passage locators, source statuses, corner names and queue, and quality flags.
+
+| Circuit | Claims | Lead rate | Dataset ✓ | Sources live/cited | Names found/named | Turns queued | Main gap |
+|---|---|---|---|---|---|---|---|
+| silverstone | 87 | 81% | 1 | 4/5 | 18/18 | 91 | No long history; 7 of 8 layouts without corner research |
+| interlagos | 74 | 41% | 2 | 6/8 | 0/13 (sources are PDFs) | 26 | 31 claims rely only on PDF sources — needs PDF text extraction |
+| brands-hatch | 53 | 64% | 1 | 9/11 | 8/9 | 18 | Origins absent |
+| lusail | 51 | 51% | 3 | 4/5 | 0 named (number-only) | 0 | No defining moments; legacy renderer |
+| monaco | 18 | 56% | 0 | 2/2 | — (grouped guide only) | 103 | No long history; 6 layouts unresearched |
+| dallas | 17 | 77% | 1 | 2/2 | — | 23 | Single race; corners and moments absent |
+| pescara | 16 | 63% | 3 | 2/2 | — | 24 | 25 km road course; corners absent |
+
+## What is and is not proven
+
+- Dataset checks prove agreement with F1DB for winners, poles, fastest laps, years, first races, lengths and turn counts. They do not prove narrative causes, quotes, adjectives or unnamed people.
+- Passage leads are retrieval hits, not support. A lead becomes evidence only through a fact-check verdict that the editorial policy accepts.
+- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. Cyrillic names are not yet bound to F1DB (requires a reviewed EN→UK name table) and meaning is not compared.
+- Snapshot hashes prove integrity, not that the text is what the URL serves today. Re-fetching and archive cross-checks are planned.
+- PDF sources (42, mostly FIA circuit maps and documents) are live but unread; until text extraction is added, claims relying only on them stay without leads.
+
+## Next steps
+
+1. **PDF text extraction** for the 42 live PDFs (FIA maps carry corner numbering), stored in the same git-ignored snapshot store.
+2. **Reviewed EN→UK name table** for drivers, constructors and circuits, feeding the policy's entity recogniser so Ukrainian names are bound too (activation requirement from the PR #421 review).
+3. **Pilot fact-check run** on the 7 pilot circuits (316 claims): an independent checker (separate agent and run from any writer, recorded as `fact_checker`) returns verdicts through `verdictToClaim`; the policy accepts or rejects each. Measure acceptance rate, rejection reasons, and checker–policy disagreement.
+4. **Corner research for the pilot layouts** using `acceptCornerName`: period-dated numbered maps first (FIA, circuit operators), number-only where no evidence exists.
+5. **Revision** of only the sentences that fail (unsupported, contradicted, shallow) — never regeneration of supported text — then EN/UK review and a full policy dry run on the pilot items.
