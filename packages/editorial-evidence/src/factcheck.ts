@@ -86,13 +86,14 @@ export const legacyWriter = (file: string): AgentRef => ({ id: `legacy:${file}`,
  * differ from the writer, and the verification is bound to the snapshots' hashes.
  */
 export function verdictToClaim(candidate: ClaimCandidate, verdict: FactCheckVerdict, sources: readonly SourceSnapshot[],
-  ukNameTable: ReadonlyMap<string, string> = new Map()): Claim {
+  isDriverNameWord: (word: string) => boolean = () => false): Claim {
   if (verdict.claim_id !== candidate.claim_id) throw new Error(`verdict ${verdict.claim_id} does not belong to ${candidate.claim_id}`);
   const writer = legacyWriter(candidate.provenance.file);
   if (verdict.checker?.id === writer.id || verdict.checker?.run_id === writer.run_id) throw new Error('the legacy writer of this text cannot check it');
-  // A sentence is a structured statistic only if nothing beyond names, years and race vocabulary remains;
-  // otherwise its narrative ("after a dramatic late duel in the rain") needs sources, not just the dataset.
-  const type = candidate.claim_type === 'statistic' && !isPureStatistic(candidate.en) ? 'historical_event' : TYPE[candidate.claim_type];
+  // A sentence is a structured statistic only if nothing beyond driver names, years and race vocabulary
+  // remains; otherwise ("with Ferrari", "from pole", "after a duel in the rain") it needs sources too.
+  // EN/UK name agreement is enforced by the policy itself (claim_entities_differ_across_locales).
+  const type = candidate.claim_type === 'statistic' && !isPureStatistic(candidate.en, isDriverNameWord) ? 'historical_event' : TYPE[candidate.claim_type];
   const claim: Claim = {
     claim_id: candidate.claim_id, entity: { type: 'circuit', id: candidate.circuit_id }, claim_type: type, importance: candidate.importance,
     statement: { en: candidate.en, uk: candidate.uk ?? '' },
@@ -100,36 +101,30 @@ export function verdictToClaim(candidate: ClaimCandidate, verdict: FactCheckVerd
     evidence: [...verdict.evidence, ...verdict.dataset_evidence],
     verification: { status: 'unverified', method: 'none', verifier: null, verified_at: null, claim_sha256: null },
   };
-  let status = ({ supported: 'verified', contradicted: 'rejected', insufficient: 'insufficient_evidence', disputed: 'disputed' } as const)[verdict.verdict] as Claim['verification']['status'];
-  let notes = verdict.notes;
-  // Ukrainian proper names cannot yet be bound to archive entities. Until a reviewed EN→UK name table
-  // covers them, a claim whose Ukrainian text names anyone is quarantined rather than verified.
-  const unbound = unresolvedUkNames(candidate.uk ?? '', ukNameTable);
-  if ((status === 'verified' || status === 'disputed') && unbound.length) {
-    status = 'insufficient_evidence';
-    notes = `${notes ? `${notes}; ` : ''}uk_names_unbound: ${unbound.join(', ')}`;
-  }
+  const status = ({ supported: 'verified', contradicted: 'rejected', insufficient: 'insufficient_evidence', disputed: 'disputed' } as const)[verdict.verdict] as Claim['verification']['status'];
   claim.verification = {
     status, method: verdict.dataset_evidence.length && !verdict.evidence.length ? 'dataset_comparison' : 'independent_retrieval',
-    verifier: verdict.checker, verified_at: verdict.checked_at, claim_sha256: claimDigest(claim, sources), notes,
+    verifier: verdict.checker, verified_at: verdict.checked_at, claim_sha256: claimDigest(claim, sources), notes: verdict.notes,
   };
   return claim;
 }
 
-const STAT_WORDS = new Set(['the', 'a', 'an', 'in', 'at', 'of', 'for', 'from', 'on', 'to', 'and', 'his', 'her', 'their', 'its', 'here', 'there',
-  'race', 'grand', 'prix', 'gp', 'won', 'win', 'wins', 'winning', 'victory', 'took', 'claimed', 'secured', 'started', 'pole', 'position', 'fastest',
-  'lap', 'set', 'ahead', 'by', 'with', 'was', 'winner', 'first', 'second', 'third', 'finished', 'place', 'year', 'season', 'edition', 'round',
-  'championship', 'world', 'formula', 'one', 'f1', 's', 'it', 'this', 'that', 'event']);
+/**
+ * Words that a winner statistic may contain besides driver names and the year. Deliberately narrow:
+ * pole, laps, margins, teams and places are facts of their own, so their presence makes the
+ * sentence narrative (sources required), not a dataset-only statistic.
+ */
+const STAT_WORDS = new Set(['the', 'a', 'an', 'in', 'at', 'of', 'here', 'race', 'grand', 'prix', 'won', 'win', 'winner', 'victory',
+  'took', 'claimed', 'was', 'his', 'her', 'it', 'this', 'that', 'year', 'season', 'edition', 'event', 's']);
+const SENTENCE_WORDS = new Set(['the', 'in', 'at', 'grand', 'prix', 'formula', 'one', 'world', 'championship']);
 
-/** True when, after removing names, numbers and race vocabulary, no narrative content remains. */
-export function isPureStatistic(en: string): boolean {
-  const rest = en.normalize('NFC').replace(/\b\p{Lu}[\p{L}'’-]*/gu, ' ').replace(/\d+(?:[.,]\d+)?/g, ' ')
-    .toLowerCase().split(/[^\p{L}]+/u).filter(Boolean).filter(w => !STAT_WORDS.has(w));
+/** True when, after removing recognised driver names, years and race vocabulary, no other content remains. */
+export function isPureStatistic(en: string, isDriverNameWord: (word: string) => boolean = () => false): boolean {
+  const words = en.normalize('NFC').replace(/\d+(?:[.,]\d+)?/g, ' ').split(/[^\p{L}'’]+/u).filter(Boolean);
+  const rest = words.filter(w => {
+    const base = w.replace(/['’]s$/u, '');
+    if (/^\p{Lu}/u.test(base)) return !(isDriverNameWord(base) || SENTENCE_WORDS.has(base.toLowerCase()));
+    return !STAT_WORDS.has(base.toLowerCase());
+  });
   return rest.length === 0;
-}
-
-/** Capitalised Cyrillic words after the first word of the sentence that the reviewed name table cannot resolve. */
-export function unresolvedUkNames(uk: string, table: ReadonlyMap<string, string>): string[] {
-  const words = [...uk.normalize('NFC').matchAll(/\p{Lu}[\p{Script=Cyrillic}'’ʼ-]+/gu)].filter(m => (m.index ?? 0) > 0).map(m => m[0]);
-  return [...new Set(words.filter(w => !table.has(w)))];
 }

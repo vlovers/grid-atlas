@@ -47,8 +47,13 @@ async function robotsFor(origin) {
   if (robots.has(origin)) return robots.get(origin);
   let policy = { rules: [], delay: 0, disallowAll: false };
   try {
+    // robots.txt is spaced like any other request to the host; 429 or 5xx means "do not crawl".
+    const host = new URL(origin).host;
+    const wait = (lastHit.get(host) ?? 0) + delayMs - Date.now();
+    if (wait > 0) await new Promise(r => setTimeout(r, wait));
+    lastHit.set(host, Date.now());
     const r = await fetch(`${origin}/robots.txt`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
-    if (r.status >= 500) policy.disallowAll = true;
+    if (r.status >= 500 || r.status === 429) policy.disallowAll = true;
     else if (r.ok) policy = parseRobots(await r.text());
   } catch { policy.disallowAll = true; }
   robots.set(origin, policy);
@@ -137,11 +142,11 @@ async function check(record) {
     }
     const html = await response.text();
     const text = htmlToText(html);
-    const title = (html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] ?? '').replace(/\s+/g, ' ').trim().slice(0, 200);
     const hash = sha256(text);
     writeFileSync(join(SNAPSHOTS, `${hash}.txt`), text);
     const thin = text.length < 1500;
-    return { ...row, outcome: thin ? 'live_thin_or_scripted' : 'live', title, text_sha256: hash, text_chars: text.length };
+    // No page title or other third-party text is recorded: only hashes and sizes.
+    return { ...row, outcome: thin ? 'live_thin_or_scripted' : 'live', text_sha256: hash, text_chars: text.length };
   } catch (error) {
     return { ...row, outcome: 'unreachable', error: String(error?.cause?.code ?? error?.name ?? error).slice(0, 80) };
   }

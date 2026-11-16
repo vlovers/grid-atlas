@@ -12,6 +12,8 @@ import { checkClaim, claimDigest, evaluatePublication, sha256 } from '../package
 
 const archive = JSON.parse(readFileSync('docs/editorial/circuit-completion/archive/f1db-v2026.17.0-circuit-facts.json', 'utf8'));
 const index = new F1dbIndex(archive);
+// Stand-in for the reviewed EN→UK name table (synthetic test entries only).
+const indexUk = new F1dbIndex(archive, new Map([['Карлос Пасе', 'carlos-pace'], ['Пасе', 'carlos-pace']]));
 const corpus = loadCorpus('.');
 const claims = corpus.blocks.flatMap(extractClaims);
 const candidate = (circuit_id, en, uk = null) => ({ claim_id: 'test#s1', block_id: 'test', circuit_id, kind: 'test', provenance: {}, en, uk, alignment: uk ? 'sentence' : 'unaligned', claim_type: 'statistic', importance: 'critical', cited_urls: [] });
@@ -90,7 +92,7 @@ test('end to end: a real F1DB fact verified by the automated dataset verifier sa
     evidence: [{ dataset_ref: ref('winner'), value: 'carlos-pace' }, { dataset_ref: ref('season'), value: 1975 }], verification: null,
   };
   claim.verification = { status: 'verified', method: 'dataset_comparison', verifier: { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'v1' }, verified_at: '2026-11-16T00:00:00Z', claim_sha256: claimDigest(claim, []) };
-  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: index.entities, evaluated_at: '2026-11-17T00:00:00Z' };
+  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: indexUk.entities, evaluated_at: '2026-11-17T00:00:00Z' };
   const item = { sources: [], authorship: { writer: legacyWriter('x') } };
   assert.deepEqual(checkClaim(claim, item, ctx), { failures: [], unverifiable: [] });
   const wrong = { ...claim, statement: { ...claim.statement, en: 'Jarier won the 1975 Brazilian Grand Prix.' } };
@@ -105,7 +107,7 @@ test('fact-check verdicts are re-checked by the policy, never trusted', () => {
     retrieved_at: '2026-11-16T00:00:00Z', retrieved_by: { id: 'source-fetch', role: 'research', run_id: 'fetch-1' }, content_sha256: sha256(text), text };
   const cand = { ...candidate('interlagos', 'Pace took his only Formula One victory here in 1975.', 'Пасе здобув тут свою єдину перемогу у Формулі-1 1975 року.'), claim_type: 'dated_event' };
   const checker = { id: 'fact-checker', role: 'fact_check', run_id: 'fc-1' };
-  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: index.entities, evaluated_at: '2026-11-17T00:00:00Z' };
+  const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: indexUk.entities, evaluated_at: '2026-11-17T00:00:00Z' };
   const verdict = excerpt => ({ claim_id: cand.claim_id, verdict: 'supported', evidence: [{ source_id: 'src-test', excerpt, locator: 'para 1' }], dataset_evidence: [], checker, checked_at: '2026-11-16T01:00:00Z' });
   const item = by => ({ sources: [snap], authorship: { writer: legacyWriter('drafts'), fact_checker: by } });
 
@@ -181,6 +183,6 @@ test('snapshot-derived artifacts store hashes and offsets, never third-party tex
     assert.deepEqual(Object.keys(p).sort(), ['length', 'names_matched', 'numbers_covered', 'offset', 'passage_sha256', 'score', 'source_id']);
     assert.ok(status[p.source_id]?.text_sha256, `${p.source_id} has a recorded snapshot hash`);
   }
-  for (const row of Object.values(status)) assert.ok(!('text' in row));
+  for (const row of Object.values(status)) assert.ok(!('text' in row) && !('title' in row), 'no page text or titles');
   assert.ok(readFileSync('.gitignore', 'utf8').includes('.grid-atlas/source-snapshots/'));
 });

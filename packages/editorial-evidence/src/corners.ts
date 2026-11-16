@@ -39,7 +39,8 @@ export function acceptCornerName(c: CornerNameCandidate, snapshot: { source_id: 
   const reasons: string[] = [];
   const name = c.name ?? '';
   if (/\p{Cf}/u.test(name) || /\p{Cf}/u.test(c.excerpt ?? '')) reasons.push('invalid_characters');
-  if (!name.trim() || GENERIC.test(name.trim())) reasons.push('not_a_name');
+  // A "name" that itself contains a turn reference ("Turn 7 is not Copse") is not a name.
+  if (!name.trim() || GENERIC.test(name.trim()) || ANY_TURN_ONCE.test(name)) reasons.push('not_a_name');
   if (!snapshot || snapshot.source_id !== c.source_id) reasons.push('source_snapshot_missing');
   else if (sha256(snapshot.text) !== snapshot.content_sha256) reasons.push('source_snapshot_integrity');
   else if (!containsPhrase(snapshot.text, c.excerpt)) reasons.push('excerpt_not_in_source');
@@ -51,9 +52,14 @@ export function acceptCornerName(c: CornerNameCandidate, snapshot: { source_id: 
     if (nameAt < 0) return false;
     return [...sentence.matchAll(turnPattern(c.turn))].some(t => {
       const turnAt = t.index ?? 0;
-      const [from, to] = turnAt < nameAt ? [turnAt + t[0].length, nameAt] : [nameAt + name.length, turnAt];
-      const between = sentence.slice(from, to);
-      return to - from <= MAX_GAP && !ANY_TURN_ONCE.test(between) && !NEGATED.test(between);
+      // Turn first ("Turn 7 Copse", "Turn 7, known as Copse"): up to 40 characters, no other turn, no negation.
+      if (turnAt < nameAt) {
+        const between = sentence.slice(turnAt + t[0].length, nameAt);
+        return between.length <= MAX_GAP && !ANY_TURN_ONCE.test(between) && !NEGATED.test(between);
+      }
+      // Name first only as an explicit label: "Copse (Turn 7)". In "Turn 8 Maggotts, Turn 7 Copse"
+      // the text after Maggotts belongs to the next entry, so it does not label Maggotts.
+      return /^\s*[([]\s*$/.test(sentence.slice(nameAt + name.length, turnAt));
     });
   });
   if (!containsPhrase(c.excerpt ?? '', name)) reasons.push('name_not_in_excerpt');
@@ -64,8 +70,13 @@ export function acceptCornerName(c: CornerNameCandidate, snapshot: { source_id: 
   else {
     if (!layoutSeasons.length) reasons.push('layout_unknown');
     else if (!layoutSeasons.includes(c.source_period_year)) reasons.push('source_period_outside_layout_seasons');
-    // The period comes from the source, not from the candidate: the year must appear in the stored text.
-    if (snapshot && !new RegExp(`(?<!\\d)${c.source_period_year}(?!\\d)`).test(snapshot.text)) reasons.push('source_period_not_in_source');
+    // The period comes from the source, not from the candidate: the year must appear in the excerpt or
+    // within 300 characters of it in the stored text (not, say, in a copyright line elsewhere on the page).
+    if (snapshot) {
+      const at = snapshot.text.indexOf(c.excerpt ?? '');
+      const near = at < 0 ? '' : snapshot.text.slice(Math.max(0, at - 300), at + (c.excerpt ?? '').length + 300);
+      if (!new RegExp(`(?<!\\d)${c.source_period_year}(?!\\d)`).test(near)) reasons.push('source_period_not_in_source');
+    }
   }
   return reasons.length ? { accepted: false, status: 'rejected', reasons } : { accepted: true, status: 'named_source_backed', reasons: [] };
 }

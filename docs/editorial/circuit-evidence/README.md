@@ -31,11 +31,11 @@ What CI actually checks (through `pnpm test`, which the Foundation workflow runs
 |---|---|
 | Claim candidates | 4,177 from 1,566 blocks |
 | **Verified claims** | **0** — no fact-check verdicts recorded yet |
-| Dataset checks | 147 supported, **0 conflicts**, 25 undecidable |
-| Seeded-error sensitivity | Swapping the confirmed winner for the real second-place finisher in every sentence the checker already parses as a supported winner claim: **102/102 detected**. This only measures sentences the parser recognises; wording it does not parse is not measured. |
-| Held-out reviewer cases | 11/11 wording cases from the independent review (passive voice, "beat X to victory", "was the 1992 winner", surname collisions such as Ralf/Michael Schumacher and Damon/Graham Hill, clause-local negation, intention "needed to win") behave as expected (tests) |
-| Claims with an evidence lead | 2,244 (54%): dataset support, or a cited passage containing every number and name |
-| Cited sources | 539, re-fetched under RFC 9309 robots rules: 445 live HTML, 42 live PDF (no text extraction yet), 11 thin or script-rendered, 30 access denied (publishers blocking automated access, mainly Autosport, Motorsport.com and RacingCircuits.info), 6 rate-limited (grandprix.com), 4 robots-disallowed (one of them a host whose robots.txt is unreachable, which counts as disallowed), 1 unreachable, 0 confirmed dead |
+| Dataset checks | 143 supported, **0 conflicts**, 25 undecidable |
+| Seeded-error sensitivity | Swapping the confirmed winner for the real second-place finisher in every sentence the checker already parses as a supported winner claim: **97/97 detected**. This only measures sentences the parser recognises; wording it does not parse is not measured. |
+| Held-out reviewer cases | 15/15 wording cases from two independent reviews behave as expected (tests). They cover passive voice, "beat X to victory", "was the 1992 winner", surname collisions (Ralf/Michael Schumacher, Damon/Graham Hill), clause-local negation, intention ("needed to win"), appositive commas ("Mansell, driving a Williams, won") and possessives ("Mansell's 1992 victory"). |
+| Claims with an evidence lead | 2,242 (54%): dataset support, or a cited passage containing every number and name |
+| Cited sources | 539, re-fetched under RFC 9309 robots rules: 445 live non-PDF (444 HTML, 1 served as octet-stream), 42 live PDF (no text extraction yet), 11 thin or script-rendered, 30 access denied (publishers blocking automated access, mainly Autosport, Motorsport.com and RacingCircuits.info), 6 rate-limited (grandprix.com), 4 robots-disallowed (one of them a host whose robots.txt is unreachable, which counts as disallowed), 1 unreachable, 0 confirmed dead |
 | Existing corner names | 218: 130 found in their own cited source text, 61 not shown by that text, 27 whose sources are PDFs/unavailable |
 | Turns queued for name research | 1,882 across all layouts (1,573 never researched + 309 incomplete) |
 | Writing flags | 456 blocks shallow (below the per-kind length floor or with few specifics), 5 repetitive, 71 with EN/UK issues |
@@ -58,7 +58,7 @@ Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, 
 | Circuit | Claims | Lead rate | Dataset ✓ | Sources reachable/cited (HTML+PDF) | Names found/named | Turns queued | Main gap |
 |---|---|---|---|---|---|---|---|
 | silverstone | 87 | 80% | 1 | 5/5 | 18/18 | 91 | No long history; 7 of 8 layouts without corner research |
-| interlagos | 74 | 40% | 1 | 8/8 | 0/13 (sources are PDFs) | 26 | 31 claims rely only on PDF sources — needs PDF text extraction |
+| interlagos | 74 | 40% | 2 | 8/8 | 0/13 (sources are PDFs) | 26 | 31 claims rely only on PDF sources — needs PDF text extraction |
 | brands-hatch | 53 | 64% | 1 | 10/11 | 8/9 | 18 | Origins absent |
 | lusail | 51 | 51% | 3 | 5/5 | 0 named (number-only) | 0 | No defining moments; legacy renderer |
 | monaco | 18 | 56% | 0 | 2/2 | — (grouped guide only) | 103 | No long history; 6 layouts unresearched |
@@ -68,9 +68,11 @@ Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, 
 ## What is and is not proven
 
 - Dataset checks prove agreement with F1DB for winners, poles, fastest laps, years, first races, lengths and turn counts. They do not prove narrative causes, quotes, adjectives or unnamed people.
-- Dataset records are bound to their scope. A race record backs only claims about that race's circuit, and one claim cannot combine records of two races. A sentence counts as a dataset-only statistic only if nothing beyond names, years and race vocabulary remains (`isPureStatistic`); anything narrative ("after a dramatic late duel in the rain") also needs sources.
+- Dataset records are bound to their scope. A race record backs only claims about that race's circuit whose sentence states that race's season, and one claim cannot combine records of two races. Records without a scope are rejected.
+
+A sentence counts as a dataset-only statistic only if nothing remains beyond recognised driver names, the year and a narrow set of race words (`isPureStatistic`). Teams ("with Ferrari"), pole, laps, margins, places and any narrative ("after a dramatic late duel in the rain") all need sources too.
 - Passage leads are retrieval hits, not support. A lead becomes evidence only through a fact-check verdict that the editorial policy accepts.
-- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. Cyrillic names are not yet bound to F1DB. Until a reviewed EN→UK name table exists, `verdictToClaim` quarantines (`insufficient_evidence`) any verdict whose Ukrainian sentence names someone, so no such claim can be verified. Meaning is not compared.
+- Ukrainian text is checked for completeness, structure, significant numbers, and Latin-script names absent from the English. The editorial policy (v1.5.0) requires a claim and its block to name the same entities in EN and UK. Ukrainian names are recognised only through a reviewed EN→UK name table, which does not exist yet. Until it does, every claim that names someone fails `claim_entities_differ_across_locales`: fail-closed, whatever position or case the Ukrainian name takes. Meaning is not compared.
 - `verdictToClaim` refuses a checker that is the recorded legacy writer of the sentence's own file.
 - Snapshot hashes prove integrity, not that the text is what the URL serves today. Re-fetching and archive cross-checks are planned.
 - PDF sources (42, mostly FIA circuit maps and documents) are live but unread; until text extraction is added, claims relying only on them stay without leads.

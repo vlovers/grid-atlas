@@ -51,7 +51,9 @@ export function checkCandidate(candidate: ClaimCandidate, index: F1dbIndex): Dat
   const nearestYear = (at: number) => yearPositions.reduce<{ year: number; at: number } | null>((best, y) =>
     !best || Math.abs(y.at - at) < Math.abs(best.at - at) ? y : best, null)?.year ?? null;
 
-  const CLAUSE_BREAK = /[;:—–]|,\s(?:but|while|whereas|although|when|and|a year|after|before)\s|,\s/g;
+  // Clauses end at strong punctuation or a comma that introduces a new clause. A bare comma does not
+  // end one: "Mansell, driving a Williams, won" keeps Mansell as the subject of "won".
+  const CLAUSE_BREAK = /[;:—–]|,\s(?:but|while|whereas|although|when|and|a year|after|before|then)\s/g;
   const raceCheck = (kind: 'race_winner' | 'pole' | 'fastest_lap', field: 'winner' | 'pole' | 'fastest_lap', pick: (r: ArchiveRace) => string[], verb: RegExp) => {
     if (!mentionedSlugs.size || !yearPositions.length) return;
     const seen = new Set<number>();
@@ -80,7 +82,9 @@ export function checkCandidate(candidate: ClaimCandidate, index: F1dbIndex): Dat
       const window = passive ? text.slice(at + m[0].length, Math.min(clauseEnd, at + m[0].length + 40))
         : text.slice(infinitive ? clauseStart : Math.max(clauseStart, at - 60), at);
       const named = [...index.mentionedDrivers(window).values()];
-      const subject = new Set((infinitive ? named.slice(0, 1) : named).flat());
+      // "Mansell's 1992 victory": the possessor is the name immediately before the "'s".
+      const possessive = /^['’]s/.test(m[0]);
+      const subject = new Set((infinitive ? named.slice(0, 1) : possessive ? named.slice(-1) : named).flat());
       if (!subject.size) continue; // nobody is credited by this verb; another verb may credit someone
       seen.add(year);
       const truth = new Set(races.flatMap(pick));
@@ -95,7 +99,7 @@ export function checkCandidate(candidate: ClaimCandidate, index: F1dbIndex): Dat
     }
   };
   if (WIN.test(text)) raceCheck('race_winner', 'winner', r => r.winners,
-    /\b(?:won by|victory went to|won|wins|triumphed|was victorious|was the (?:\d{4} )?winner|to (?:victory|win)|took (?:the |his |her |a )?(?:\w+ )?(?:victory|win)|claimed (?:the |his |her |a )?(?:\w+ )?(?:victory|win))\b/);
+    /(?:['’]s (?:\d{4} )?(?:victory|win)\b)|\b(?:won by|victory went to|won|wins|triumphed|was victorious|was the (?:\d{4} )?winner|to (?:victory|win)|took (?:the |his |her |a )?(?:\w+ )?(?:victory|win)|claimed (?:the |his |her |a )?(?:\w+ )?(?:victory|win))\b/);
   if (/\bpole(?: position)?\b/i.test(text)) raceCheck('pole', 'pole', r => r.pole, /\b(?:took|claimed|started from|secured|won|set) (?:the |his |her )?pole\b|\bon pole\b/);
   if (/\bfastest lap\b/i.test(text)) raceCheck('fastest_lap', 'fastest_lap', r => r.fastest_lap, /\b(?:set|recorded|took|claimed) (?:the )?fastest lap\b/);
 

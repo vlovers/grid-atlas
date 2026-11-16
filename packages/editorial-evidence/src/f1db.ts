@@ -36,11 +36,17 @@ export class F1dbIndex {
   readonly drivers: Record<string, string>;
 
   readonly archive: Archive;
+  /** Every token of every driver slug ("carlos", "pace"): words that may be part of a driver's name. */
+  private readonly nameTokens = new Set<string>();
+  /** Reviewed Ukrainian surface form → driver slug. Empty until the reviewed name table exists. */
+  private readonly ukNames: ReadonlyMap<string, string>;
 
-  constructor(archive: Archive) {
+  constructor(archive: Archive, ukNames: ReadonlyMap<string, string> = new Map()) {
     this.archive = archive;
     this.release = archive.source.release;
     this.drivers = archive.drivers;
+    this.ukNames = ukNames;
+    for (const slug of Object.keys(archive.drivers)) for (const part of slug.split('-')) if (part.length > 1) this.nameTokens.add(part);
     for (const circuit of archive.circuits) {
       this.circuits.set(circuit.circuit_id, circuit);
       for (const race of circuit.races) this.races.set(race.race_id, { race, circuit });
@@ -64,7 +70,8 @@ export class F1dbIndex {
   mentionedDrivers(text: string): Map<string, string[]> {
     const found = new Map<string, string[]>();
     // Normalise first so decomposed accents do not split a name into two tokens.
-    const tokens = [...text.normalize('NFC').matchAll(/\p{Lu}[\p{L}'’-]*\p{L}|\p{Lu}\p{L}/gu)].map(m => m[0]);
+    // Possessives ("Senna's", "Senna’s") fold to the name itself.
+    const tokens = [...text.normalize('NFC').matchAll(/\p{Lu}[\p{L}'’-]*\p{L}|\p{Lu}\p{L}/gu)].map(m => m[0].replace(/['’]s$/u, ''));
     tokens.forEach((token, i) => {
       const slugs = this.surnames.get(fold(token));
       if (!slugs) return;
@@ -77,10 +84,21 @@ export class F1dbIndex {
   }
 
   /**
-   * EntityRecognizer for the editorial policy: driver slugs named in the text. Latin-script only —
-   * Ukrainian (Cyrillic) names need the reviewed EN→UK name table before they can be bound.
+   * EntityRecognizer for the editorial policy. English: driver slugs found by surname (Latin script).
+   * Ukrainian: only forms in the reviewed name table are recognised (case-insensitive), plus any
+   * Latin-script names kept in the Ukrainian text. With no table, Cyrillic names are not recognised,
+   * so the policy's cross-language entity check fails closed for every claim that names someone.
    */
-  entities = (text: string): string[] => [...new Set([...this.mentionedDrivers(text).values()].flat())];
+  entities = (text: string, locale: 'en' | 'uk' = 'en'): string[] => {
+    const latin = [...this.mentionedDrivers(text).values()].flat();
+    if (locale === 'en') return [...new Set(latin)];
+    const lower = text.normalize('NFC').toLowerCase();
+    const cyrillic = [...this.ukNames].filter(([form]) => new RegExp(`(?<![\\p{L}])${form.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}])`, 'u').test(lower)).map(([, slug]) => slug);
+    return [...new Set([...latin, ...cyrillic])];
+  };
+
+  /** True when the word could be (part of) a driver's name in F1DB. */
+  isDriverNameWord = (word: string): boolean => this.nameTokens.has(fold(word.replace(/['’]s$/u, '')));
 
   driverName(slug: string) { return this.drivers[slug] ?? slug; }
 

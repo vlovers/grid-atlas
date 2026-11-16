@@ -31,14 +31,14 @@
   },
   "claims_unaligned_uk": 9,
   "dataset_checks": {
-   "supported": 1,
+   "supported": 2,
    "conflict": 0,
    "unmatched": 0
   },
   "factcheck_status": {
    "dataset_conflict": 0,
-   "dataset_supported": 1,
-   "passages_cover_numbers": 29,
+   "dataset_supported": 2,
+   "passages_cover_numbers": 28,
    "passages_partial": 1,
    "no_passage_in_live_sources": 12,
    "cited_sources_unavailable": 31,
@@ -624,8 +624,22 @@
    "importance": "critical",
    "en": "He repeated the win in 1974; Carlos Pace’s victory in 1975 then made it three home successes in the venue’s first three championship races.",
    "uk": "Він повторив успіх у 1974-му, а перемога Карлоса Паче 1975 року завершила серію з трьох домашніх тріумфів у перших трьох чемпіонатних гонках автодрому.",
-   "status": "passages_cover_numbers",
-   "dataset": [],
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:252",
+       "field": "winner"
+      }
+     ],
+     "detail": "1975: José Carlos Pace matches F1DB winner."
+    }
+   ],
    "passages": [
     {
      "source_id": "src-42e2fe1c7c1f",
@@ -2039,7 +2053,6 @@
     "final_url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "1973 BRAZILIAN GRAND PRIX - RACE RESULT",
     "text_sha256": "29cc22bbd8d50d8d50e6bcafc7180c318d922b4a5c4160d14195e180d2da9350",
     "text_chars": 2024
    }
@@ -2065,7 +2078,6 @@
     "final_url": "https://www.formula1.com/en/latest/article/watch-heroic-drives-senna-piquet-button-brazil.1yYQZ4UG2JcBSjBYKhvUrb",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "WATCH: Senna&#x27;s stunner and 6 other epic Brazil performances",
     "text_sha256": "7f2ad624a8cb1f6813b02abd440634678ab03dd44ef0499c2dba5f6b727a2b81",
     "text_chars": 8740
    }
@@ -2094,7 +2106,6 @@
     "final_url": "https://www.formula1.com/en/information/brazil-autodromo-jose-carlos-pace-sao-paulo.5z2RfrmiTTfEP6Wnxv1yIW",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "Brazilian Grand Prix - F1 Race - Autodromo Jose Carlos Pace - Sao Paulo | Formula 1®",
     "text_sha256": "0177cd58cb711a949f4a6221e7685f245998b589ddd9b8c551a62afee6053202",
     "text_chars": 2343
    }
@@ -2120,7 +2131,6 @@
     "final_url": "https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "1975 Brazilian Grand Prix race report March 1975 - Motor Sport Magazine",
     "text_sha256": "dfe5f39889aa147a27b483b83de41bb02ee54da21c8869095e31a60968826c45",
     "text_chars": 21973
    }
@@ -2185,7 +2195,6 @@
     "final_url": "https://www.formula1.com/en/results/1975/races/345/brazil/race-result",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "1975 BRAZILIAN GRAND PRIX - RACE RESULT",
     "text_sha256": "fb97b48247309e280b5484b8457fd89099511298826a3b6d7f4fd2a9890b0de2",
     "text_chars": 2235
    }
@@ -2216,7 +2225,6 @@
     "final_url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
     "content_type": "text/html",
     "outcome": "live",
-    "title": "Mercedes-AMG F1: How the Corners at the F1 Sao Paulo Grand Prix at Interlagos Got Their Name - Mercedes-AMG PETRONAS F1 Team",
     "text_sha256": "ecbea0b3b0fb43d9799f70ab1f9e8b6be795decd05d7cd18682fa6738afa2460",
     "text_chars": 6037
    }
