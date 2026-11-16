@@ -5,7 +5,7 @@
  * input: the policy compares them, it never interprets them as instructions.
  */
 
-export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.6.0';
+export const POLICY_VERSION = 'grid-atlas-editorial-policy/1.7.0';
 
 export type Locale = 'en' | 'uk';
 export type Localized = { en: string; uk: string };
@@ -180,6 +180,12 @@ export type PolicyContext = {
    * Without a renderer, no claim is verified by the dataset alone.
    */
   renderStructured?: StructuredRenderer;
+  /**
+   * Trusted dataset contradiction check (e.g. "X won the 1988 race" when F1DB says Y). Any finding
+   * fails the claim regardless of its sources, so a checker cannot verify a contradicted statement by
+   * simply not citing the record that contradicts it.
+   */
+  datasetConflicts?: (claim: Claim) => string[];
   /** Locale-free internal routes that exist in the archive. */
   known_routes: ReadonlySet<string>;
   /** Already-published or sibling texts, for near-duplicate detection. */
