@@ -70,11 +70,15 @@ Dossiers in [`pilot/`](pilot/). Each contains the circuit's claims with status, 
 - Dataset checks prove agreement with F1DB for winners, poles, fastest laps, years, first races, lengths and turn counts. They do not prove narrative causes, quotes, adjectives or unnamed people.
 - Dataset records are bound to their scope. A race record backs only claims about that race's circuit whose sentence states that race's season, and one claim cannot combine records of two races. Records without a scope are rejected.
 
-**The dataset alone verifies only canonical statements (policy v1.6.0).** A claim is verified by F1DB without sources only if its EN and UK text are exactly the trusted renderer's wording for the cited records. Today that means winner + season of a single-winner race: "Alain Prost won the 1988 race." / "Перегони 1988 року виграв Ален Прост." (`F1dbIndex.renderStructured`; the Ukrainian side needs the reviewed name table).
+**The dataset alone verifies only canonical statements (policy v1.6.0).** A claim is verified by F1DB without sources only if its EN and UK text are exactly the trusted renderer's wording for the cited records. Today that means winner + season of a single-winner race at a circuit that held only one championship race that season (no canonical wording for Bahrain, Silverstone or Spielberg 2020, or Spielberg 2021): "Alain Prost won the 1988 race." / "Перегони 1988 року виграв Ален Прост." (`F1dbIndex.renderStructured`; the Ukrainian side needs the reviewed name table). A block resting on such a claim must state exactly that sentence (policy v1.7.0).
+
+Whatever its sources, a claim the dataset contradicts fails: `datasetConflicts(index)` is the policy's contradiction hook. Rendered names are unaccented slug names ("Kimi Raikkonen"), so accented prose is not canonical and goes through the sourced path. That is a limitation, not a bypass.
 
 Every existing draft sentence is free prose, so it needs independent source evidence however well it agrees with the dataset. Three review rounds showed that pattern rules cannot prove free prose against a dataset: extra years, shared surnames and wrong teams kept slipping through. `isPureStatistic` now only types sentences for routing.
 
 Entity recognition:
+- Full names are matched first ("Lewis Hamilton", "Jean-Pierre Jabouille", "José Froilán González"), so a first name is never read as another driver's surname. "Jr"/"Sr" selects the generation; without it, the unsuffixed driver. On all 1,163 single-winner race statements the recogniser returns exactly the winner.
+- Capitalised country and month words ("in Ireland", "in March 1970") are not read as surnames or teams, unless they directly follow a capitalised first name ("Innes Ireland").
 - A bare shared surname ("Hill", "Schumacher", "Senna") is its own entity, `ambiguous:<surname>`, so evidence about one Hill never backs a claim about another.
 - Dataset mentions are full names only.
 - Constructors are recognised ("with Ferrari" needs evidence naming Ferrari). A full driver name is not also counted as the team named after him.

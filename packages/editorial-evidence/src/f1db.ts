@@ -19,7 +19,11 @@ export type Archive = {
 const SUFFIXES = new Set(['jr', 'sr', 'ii', 'iii']);
 /** Accent- and case-insensitive key: "Räikkönen" and slug "raikkonen" meet at "raikkonen". */
 export const fold = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
-const escapeRe = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+/** Capitalised country and month words that collide with driver surnames; never read as bare surnames. */
+const NOT_SURNAMES = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December',
+  'Ireland', 'England', 'France', 'Brazil', 'Japan', 'Italy', 'Spain', 'Monaco', 'Austria', 'Germany', 'Belgium', 'Holland', 'Canada', 'Mexico', 'Argentina', 'Portugal']);
+const MONTHS = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
+const escapeRe =(text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 /** Surname as it appears in prose, from the F1DB slug: "elio-de-angelis" → "Angelis", "nelson-piquet-jr" → "Piquet". */
 export function surnameFromSlug(slug: string): string {
   const parts = slug.split('-').filter(part => !SUFFIXES.has(part));
@@ -43,13 +47,20 @@ export class F1dbIndex {
   private readonly ukNames: ReadonlyMap<string, string>;
   /** Constructor display and slug names → "constructor:<slug>". */
   private readonly constructorNames: [string, string][] = [];
+  /** Folded full name ("lewis hamilton") → driver slugs. */
+  private readonly fullNames = new Map<string, string[]>();
 
   constructor(archive: Archive, ukNames: ReadonlyMap<string, string> = new Map()) {
     this.archive = archive;
     this.release = archive.source.release;
     this.drivers = archive.drivers;
     this.ukNames = ukNames;
-    for (const slug of Object.keys(archive.drivers)) for (const part of slug.split('-')) if (part.length > 1) this.nameTokens.add(part);
+    for (const slug of Object.keys(archive.drivers)) {
+      for (const part of slug.split('-')) if (part.length > 1) this.nameTokens.add(part);
+      // Full-name key without generational suffixes: "nelson piquet" covers nelson-piquet and nelson-piquet-jr.
+      const key = slug.split('-').filter(p => !SUFFIXES.has(p)).join(' ');
+      this.fullNames.set(key, [...(this.fullNames.get(key) ?? []), slug]);
+    }
     for (const [slug, display] of Object.entries(archive.constructors ?? {})) {
       for (const name of new Set([display, this.slugName(slug)])) if (name.length >= 3) this.constructorNames.push([name, `constructor:${slug}`]);
     }
@@ -66,25 +77,49 @@ export class F1dbIndex {
   }
 
   circuit(id: string) { return this.circuits.get(id); }
+  circuitOfRace(raceId: string) { return this.races.get(raceId)?.circuit.circuit_id; }
   racesIn(circuitId: string, season: number) { return this.circuits.get(circuitId)?.races.filter(race => race.season === season) ?? []; }
   layout(id: string) { return this.layouts.get(id)?.layout; }
 
   /**
-   * Driver slugs whose surname appears capitalised as a whole word in the text. When a first name
-   * precedes the surname ("Ralf Schumacher", "Damon Hill"), only drivers with that first name are kept.
+   * Drivers named in the text. Full names are matched first ("Lewis Hamilton", "Jean-Pierre
+   * Jabouille", "José Froilán González"), so a first name is never read as another driver's surname.
+   * "Jr"/"Junior" after a name selects the junior driver; otherwise the senior one. Remaining
+   * capitalised words are matched as bare surnames, except country and month words ("Ireland",
+   * "March") that collide with surnames. Possessives ("Senna's") fold to the name.
+   * Keys are the matched text; values the candidate slugs (several for an ambiguous bare surname).
    */
   mentionedDrivers(text: string): Map<string, string[]> {
     const found = new Map<string, string[]>();
-    // Normalise first so decomposed accents do not split a name into two tokens.
-    // Possessives ("Senna's", "Senna’s") fold to the name itself.
-    const tokens = [...text.normalize('NFC').matchAll(/\p{Lu}[\p{L}'’-]*\p{L}|\p{Lu}\p{L}/gu)].map(m => m[0].replace(/['’]s$/u, ''));
-    tokens.forEach((token, i) => {
-      const slugs = this.surnames.get(fold(token));
-      if (!slugs) return;
-      const first = i > 0 ? fold(tokens[i - 1]) : '';
-      const narrowed = slugs.filter(slug => fold(slug.split('-')[0]) === first);
-      const key = narrowed.length ? `${tokens[i - 1]} ${token}` : token;
-      found.set(key, narrowed.length ? narrowed : slugs);
+    // Hyphenated given names split into parts so "Jean-Pierre" meets slug parts "jean", "pierre".
+    const words = [...text.normalize('NFC').matchAll(/\p{L}[\p{L}'’]*/gu)]
+      .map(m => ({ raw: m[0].replace(/['’]s$/u, ''), at: m.index ?? 0, end: (m.index ?? 0) + m[0].length }));
+    const adjacent = (a: { end: number }, b: { at: number }) => /^[\s\u00a0-]*$/.test(text.normalize('NFC').slice(a.end, b.at));
+    const used = new Set<number>();
+    for (let i = 0; i < words.length; i++) {
+      if (!/^\p{Lu}/u.test(words[i].raw)) continue;
+      for (let n = Math.min(5, words.length - i); n >= 2; n--) {
+        const span = words.slice(i, i + n);
+        if (!span.every((w, k) => k === 0 || adjacent(span[k - 1], w))) continue;
+        const slugs = this.fullNames.get(span.map(w => fold(w.raw)).join(' '));
+        if (!slugs) continue;
+        // "Jr"/"Sr" after the name selects that generation; without one, the unsuffixed driver.
+        const next = words[i + n];
+        const marker = next && adjacent(span[n - 1], next) ? next.raw.toLowerCase() : '';
+        const suffix = /^(?:jr|junior)$/.test(marker) ? 'jr' : /^(?:sr|senior)$/.test(marker) ? 'sr' : '';
+        const pick = slugs.filter(s => (s.match(/-(jr|sr|ii|iii)$/)?.[1] ?? '') === suffix);
+        found.set(span.map(w => w.raw).join(' '), pick.length ? pick : slugs);
+        for (let k = i; k < i + n + (suffix ? 1 : 0); k++) used.add(k);
+        break;
+      }
+    }
+    words.forEach((w, i) => {
+      if (used.has(i) || !/^\p{Lu}/u.test(w.raw)) return;
+      // "in Ireland" / "in March" are places and dates; "Innes Ireland" / "Stirling Ireland" are names.
+      const afterCapital = i > 0 && /^\p{Lu}/u.test(words[i - 1].raw) && adjacent(words[i - 1], w);
+      if (NOT_SURNAMES.has(w.raw) && !afterCapital) return;
+      const slugs = this.surnames.get(fold(w.raw));
+      if (slugs) found.set(w.raw, slugs);
     });
     return found;
   }
@@ -107,7 +142,13 @@ export class F1dbIndex {
     }
     // Constructors by name ("Ferrari", "Red Bull"), case-sensitive so "red" or "brabham" in prose are not teams.
     // A bare "Prost" or "Hill" matches both the driver and the team: deliberately ambiguous, so it fails closed.
-    for (const [name, key] of this.constructorNames) if (new RegExp(`(?<![\\p{L}])${escapeRe(name)}(?![\\p{L}])`, 'u').test(rest)) keys.push(key);
+    for (const [name, key] of this.constructorNames) {
+      // The March team versus "in March 1970": a month-named team is not matched in date context.
+      const pattern = MONTHS.has(name)
+        ? `(?<!\\b(?:in|on|of|early|late|mid|until|since)\\s)(?<![\\p{L}])${escapeRe(name)}(?![\\p{L}])(?!\\s+\\d)`
+        : `(?<![\\p{L}])${escapeRe(name)}(?![\\p{L}])`;
+      if (new RegExp(pattern, 'u').test(rest)) keys.push(key);
+    }
     if (locale === 'uk') {
       const lower = text.normalize('NFC').toLowerCase();
       for (const [form, key] of this.ukNames) if (new RegExp(`(?<![\\p{L}])${escapeRe(form.toLowerCase())}(?![\\p{L}])`, 'u').test(lower)) keys.push(key);
@@ -124,8 +165,11 @@ export class F1dbIndex {
     const byField = new Map(evidence.map(e => [e.dataset_ref.field, e]));
     const winner = byField.get('winner'), season = byField.get('season');
     if (evidence.length !== 2 || !winner || !season || winner.dataset_ref.record !== season.dataset_ref.record) return null;
-    const race = this.races.get(winner.dataset_ref.record.replace(/^race:/, ''))?.race;
+    const entry = this.races.get(winner.dataset_ref.record.replace(/^race:/, ''));
+    const race = entry?.race;
     if (!race || race.winners.length !== 1 || winner.dataset_ref.release !== this.release) return null;
+    // "the 2020 race" is only unambiguous if the circuit held one championship race that season.
+    if (this.racesIn(entry.circuit.circuit_id, race.season).length !== 1) return null;
     const slug = race.winners[0];
     if (locale === 'en') return `${this.slugName(slug)} won the ${race.season} race.`;
     const uk = [...this.ukNames].find(([, key]) => key === slug)?.[0];

@@ -4,7 +4,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { F1dbIndex, acceptCornerName, checkCandidate, isPureStatistic, normalizeWhitespace, verdictToClaim } from '../packages/editorial-evidence/src/index.ts';
+import { F1dbIndex, acceptCornerName, checkCandidate, datasetConflicts, isPureStatistic, normalizeWhitespace, verdictToClaim } from '../packages/editorial-evidence/src/index.ts';
 import { checkClaim, sha256 } from '../packages/editorial-policy/src/index.ts';
 
 const archive = JSON.parse(readFileSync('docs/editorial/circuit-completion/archive/f1db-v2026.17.0-circuit-facts.json', 'utf8'));
@@ -159,4 +159,39 @@ test('round 3. only the canonical rendering is verified by the dataset; extra ye
   assert.ok(wrongTeam.includes('claim_entity_unsupported'), wrongTeam.join());
   assert.deepEqual(idx.entities('Hill won with Ferrari.').sort(), ['ambiguous:hill', 'constructor:ferrari', 'constructor:hill']);
   assert.deepEqual(idx.entities('Alain Prost won.'), ['alain-prost'], 'a full driver name is not also the team named after him');
+});
+
+// Round 4: double-race seasons, dataset contradictions on the sourced path, spurious entities.
+test('round 4 H2. "the 2020 race" has no canonical rendering where the circuit held two races that season', () => {
+  for (const [circuit, season] of [['bahrain', 2020], ['silverstone', 2020], ['spielberg', 2020], ['spielberg', 2021]]) {
+    for (const r of archive.circuits.find(c => c.circuit_id === circuit).races.filter(x => x.season === season)) {
+      assert.equal(index.renderStructured([{ dataset_ref: ref(r, 'winner'), value: r.winners[0] }, { dataset_ref: ref(r, 'season'), value: season }], 'en'), null, `${circuit} ${season}`);
+    }
+  }
+  assert.equal(index.renderStructured([{ dataset_ref: ref(race('monaco', 1988), 'winner'), value: 'alain-prost' }, { dataset_ref: ref(race('monaco', 1988), 'season'), value: 1988 }], 'en'), 'Alain Prost won the 1988 race.');
+});
+
+test('round 4 M1. a sourced claim the dataset contradicts fails through the policy hook', () => {
+  const conflicts = datasetConflicts(index);
+  const claim = { claim_id: 'm1', entity: { type: 'circuit', id: 'monaco' }, statement: { en: 'Ayrton Senna won the 1988 race.', uk: '' } };
+  assert.equal(conflicts(claim).length, 1);
+  assert.deepEqual(conflicts({ ...claim, statement: { en: 'Alain Prost won the 1988 race.', uk: '' } }), []);
+  assert.equal(conflicts({ ...claim, entity: { type: 'race', id: race('monaco', 1988).race_id } }).length, 1, 'race entities map to their circuit');
+  const check = checkClaim({ ...claim, claim_type: 'historical_event', importance: 'critical', presentation: 'asserted', evidence: [],
+    verification: { status: 'unverified', method: 'none', verifier: null, verified_at: null, claim_sha256: null } }, item, { ...ctx, datasetConflicts: conflicts });
+  assert.ok(check.failures.some(f => f.code === 'dataset_contradiction'));
+});
+
+test('round 4 M2. every single-winner race statement names exactly its winner (no spurious keys)', () => {
+  let spurious = 0;
+  for (const circuit of archive.circuits) for (const r of circuit.races) {
+    if (r.winners.length !== 1) continue;
+    const name = r.winners[0].split('-').filter(p => !['jr', 'sr', 'ii', 'iii'].includes(p)).map(p => p[0].toUpperCase() + p.slice(1)).join(' ');
+    const keys = index.entities(`${name} won the ${r.season} race.`);
+    if (keys.length !== 1 || keys[0] !== r.winners[0]) spurious++;
+  }
+  assert.equal(spurious, 0);
+  assert.deepEqual(index.entities('Lewis Hamilton won.'), ['lewis-hamilton']);
+  assert.deepEqual(index.entities('Nelson Piquet Jr crashed.'), ['nelson-piquet-jr']);
+  assert.deepEqual(index.entities('In March 1970 the race in Ireland was won by March.'), ['constructor:march']);
 });

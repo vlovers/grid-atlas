@@ -7,7 +7,7 @@
  *   unmatched    the sentence has the shape of a dataset fact but the dataset cannot decide it
  * A supported check verifies only that component; the rest of the sentence still needs evidence.
  */
-import type { DatasetRef } from '../../editorial-policy/src/index.ts';
+import type { Claim, DatasetRef } from '../../editorial-policy/src/index.ts';
 import type { ClaimCandidate } from './claims.ts';
 import type { ArchiveRace, F1dbIndex } from './f1db.ts';
 
@@ -23,6 +23,22 @@ const NOT_A_RACE_WIN = /\b(?:title|championship crown|world champion(?:ship)?|dr
 const RACE_WORDS = /\b(?:grand prix|race|won|victory|pole|fastest lap|podium|lap \d|grid)\b/i;
 
 const yearsIn = (text: string) => [...new Set([...text.matchAll(YEAR)].map(m => Number(m[1])))];
+
+/**
+ * The policy's trusted `datasetConflicts` hook: every F1DB conflict in a claim's English statement,
+ * for claims about a circuit or a race (mapped to its circuit). A claim the dataset contradicts then
+ * fails even if its checker cited sources and left the contradicting record out.
+ */
+export function datasetConflicts(index: F1dbIndex) {
+  return (claim: Claim): string[] => {
+    const circuitId = claim.entity?.type === 'circuit' ? claim.entity.id
+      : claim.entity?.type === 'race' ? index.circuitOfRace(claim.entity.id) : undefined;
+    if (!circuitId) return [];
+    const candidate = { claim_id: claim.claim_id, block_id: '', circuit_id: circuitId, kind: 'policy', provenance: { file: '', json_path: '', sentence_index: 0, block_en_sha256: '', sentence_en_sha256: '' },
+      en: claim.statement?.en ?? '', uk: null, alignment: 'unaligned' as const, claim_type: 'statistic' as const, importance: 'critical' as const, cited_urls: [] };
+    return checkCandidate(candidate, index).filter(check => check.status === 'conflict').map(check => `${check.kind}: ${check.detail}`);
+  };
+}
 
 export function checkCandidate(candidate: ClaimCandidate, index: F1dbIndex): DatasetCheck[] {
   const circuit = index.circuit(candidate.circuit_id);

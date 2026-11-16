@@ -94,7 +94,7 @@ test('end to end: a real F1DB fact verified by the automated dataset verifier sa
   claim.verification = { status: 'verified', method: 'dataset_comparison', verifier: { id: 'f1db-verifier', role: 'automated_verifier', run_id: 'v1' }, verified_at: '2026-11-16T00:00:00Z', claim_sha256: claimDigest(claim, []) };
   const ctx = { pinned_dataset_release: 'v2026.17.0', dataset: index.lookup, entities: indexUk.entities, renderStructured: indexUk.renderStructured, evaluated_at: '2026-11-17T00:00:00Z' };
   const item = { sources: [], authorship: { writer: legacyWriter('x') } };
-  assert.deepEqual(checkClaim(claim, item, ctx), { failures: [], unverifiable: [] });
+  assert.deepEqual(checkClaim(claim, item, ctx), { failures: [], unverifiable: [], datasetOnly: true });
   const wrong = { ...claim, statement: { ...claim.statement, en: 'Jarier won the 1975 Brazilian Grand Prix.' } };
   wrong.verification = { ...claim.verification, claim_sha256: claimDigest(wrong, []) };
   const codes = checkClaim(wrong, item, ctx).failures.map(f => f.code);
