@@ -95,7 +95,7 @@ test('HIGH (#422 review). one claim cannot combine records of two races', () => 
   const item = validItem();
   item.claims[1].entity = { type: 'circuit', id: 'fixture-ring' };
   // Two races at the same circuit, both in scope: the 1961 winner cannot be paired with the 1963 season.
-  item.claims[1].statement = { en: 'Fixture Driver won here in 1963.', uk: 'Fixture Driver переміг тут 1963 року.' };
+  item.claims[1].statement = { en: 'Fixture Driver won here in 1961 and 1963.', uk: 'Fixture Driver переміг тут 1961 та 1963 років.' };
   item.claims[1].evidence = [{ dataset_ref: ref('race:1961-fixture', 'winner'), value: 'fixture-driver' }, { dataset_ref: ref('race:1963-fixture', 'season'), value: 1963 }];
   verify(item, item.claims[1], datasetVerifier, 'dataset_comparison');
   const found = codes(run(seal(item)));
