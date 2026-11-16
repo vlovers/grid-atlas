@@ -128,3 +128,13 @@ Compatibility: no migration, no change to `apps/`, no change to existing gates o
 ## Activation boundary
 
 Repository policy (`AGENTS.md`, `CLAUDE.md`, `docs/engineering/RELEASE_CHECKLIST.md`) still requires editorial approval for release, and the DB still enforces `review_method = 'human'`. Replacing per-item human approval with this policy needs, in order: maintainer sign-off on this policy, an amendment to those documents defining a policy PASS as editorial approval, the Milestone C migration, and an explicit authorization to switch the publisher on. Until then this package only evaluates and reports.
+
+### Open activation requirements (from three independent review rounds)
+
+No HIGH findings remain open. Before any publish path uses this policy:
+
+1. **Number vocabulary.** Close the remaining unparsed count/position forms found in review round 3: "was fourth", "took fourth place", "his sixth win", "three-time champion", "started from fourth", "won by a lap", "took pole"; Ukrainian "посів четверте місце", "двічі", "трикратним", "дюжину". Deterministic patterns are inherently incomplete, so the editorial reviewer must also confirm that every count and position in the prose is cited.
+2. **Production entity recogniser.** It must cover every F1DB driver and constructor, Ukrainian inflected forms through a reviewed EN→UK name table ("Айртон Сенна", "Айртона Сенни"…), and drivers who share a surname (Ayrton vs Bruno Senna, Hill, Schumacher, Villeneuve). It needs its own tests. With an empty or partial recogniser, name binding silently does nothing.
+3. **Role binding.** The policy proves that a claim's names and values are evidenced, not which record backs which role ("X won ahead of Y" with X and Y swapped). Editorial review remains responsible for this until claims are split one assertion per claim.
+4. **Decision freshness.** Add a maximum age for decisions accepted by `assertPublishable`.
+5. **Known fail-closed false positives** ("the two cars", "одного разу") must be tracked so writers are not pushed toward vaguer prose.
