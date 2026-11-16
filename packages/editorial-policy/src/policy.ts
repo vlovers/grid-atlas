@@ -1,0 +1,93 @@
+import { canonicalJson, itemDigest } from './canonical.ts';
+import {
+  editorialGate, factualGate, independenceGate, localizationGate, mediaGate, schemaGate, sourceGate, technicalGate,
+} from './gates.ts';
+import { POLICY_VERSION, type ContentItem, type GateResult, type Outcome, type PolicyContext, type PublicationDecision, type RiskTier } from './model.ts';
+
+/**
+ * Tier A: every cited claim is a canonical structured statement (the trusted renderer's exact
+ * wording for its dataset records), so every block is canonical text too.
+ * Tier C: anything quarantined (unverifiable claims, undisclosed disputes, required media without rights).
+ * Tier B: everything else — editorial content that must clear the full evidence policy.
+ */
+export function riskTier(item: ContentItem, quarantinedClaims: readonly string[], requiredMediaBlocked: boolean, canonicalClaims: readonly string[] = []): RiskTier {
+  if (quarantinedClaims.length || requiredMediaBlocked) return 'C';
+  const cited = [...new Set(item.blocks.flatMap(block => block.claim_ids))];
+  const canonical = new Set(canonicalClaims);
+  return cited.length > 0 && cited.every(id => canonical.has(id)) ? 'A' : 'B';
+}
+
+/**
+ * Deterministic publication decision. The same item and context always produce the same
+ * decision. No field written by an agent (labels, confidence, notes) can produce PASS on
+ * its own: every gate re-derives its verdict from evidence and hashes.
+ */
+export function evaluatePublication(item: ContentItem, ctx: PolicyContext): PublicationDecision {
+  try {
+    return evaluate(item, ctx);
+  } catch (error) {
+    // Malformed input is a failed gate, never an unhandled path that a caller might treat as "no objection".
+    return {
+      policy_version: POLICY_VERSION, item_id: String(item?.item_id ?? ''), dataset_release: String(item?.dataset_release ?? ''),
+      evaluated_at: ctx.evaluated_at, item_sha256: safeDigest(item), tier: 'C', outcome: 'FAIL',
+      gates: [{ gate: 'schema', status: 'fail', warnings: [], findings: [{ code: 'malformed_input', target: 'item', message: error instanceof Error ? error.message : String(error) }] }],
+      quarantined: { claims: [], media: [] }, publishable_media: [],
+    };
+  }
+}
+
+function evaluate(item: ContentItem, ctx: PolicyContext): PublicationDecision {
+  const schema = schemaGate(item);
+  const base = { policy_version: POLICY_VERSION, item_id: item.item_id, dataset_release: item.dataset_release, evaluated_at: ctx.evaluated_at };
+  if (schema.status !== 'pass') {
+    return { ...base, item_sha256: safeDigest(item), tier: 'C', outcome: 'FAIL', gates: [schema], quarantined: { claims: [], media: [] }, publishable_media: [] };
+  }
+  const factual = factualGate(item, ctx);
+  const media = mediaGate(item, ctx);
+  const gates: GateResult[] = [
+    schema,
+    { gate: factual.gate, status: factual.status, findings: factual.findings, warnings: factual.warnings },
+    sourceGate(item),
+    independenceGate(item),
+    editorialGate(item, ctx),
+    localizationGate(item),
+    { gate: media.gate, status: media.status, findings: media.findings, warnings: media.warnings },
+    technicalGate(item, ctx),
+  ];
+  const tier = riskTier(item, factual.quarantined, media.requiredBlocked, factual.canonicalClaims);
+  let outcome: Outcome;
+  if (gates.some(gate => gate.status === 'fail')) outcome = 'FAIL';
+  else if (gates.some(gate => gate.status === 'unverifiable') || tier === 'C') outcome = 'UNVERIFIABLE';
+  else if (gates.some(gate => gate.status === 'pending')) outcome = 'PENDING_TECHNICAL';
+  else outcome = 'PASS';
+  return {
+    ...base, item_sha256: itemDigest(item), tier, outcome, gates,
+    quarantined: { claims: factual.quarantined, media: media.quarantined },
+    publishable_media: outcome === 'PASS' ? media.publishable : [],
+  };
+}
+
+function safeDigest(item: ContentItem): string {
+  try { return itemDigest(item); } catch { return ''.padEnd(64, '0'); }
+}
+
+/**
+ * The only entry point a publisher may use. A caller-supplied decision is never trusted:
+ * the policy is re-run against the exact item, and the decision must match it field for field.
+ */
+export function assertPublishable(item: ContentItem, ctx: PolicyContext, claimed: PublicationDecision): PublicationDecision {
+  // ctx.evaluated_at is the publisher's trusted clock; a decision cannot be dated in its future.
+  const claimedAt = Date.parse(claimed?.evaluated_at ?? ''), now = Date.parse(ctx.evaluated_at);
+  if (Number.isNaN(claimedAt) || Number.isNaN(now) || claimedAt > now) {
+    throw new PublicationRefused('Decision timestamp is invalid or later than the publisher clock', evaluatePublication(item, ctx));
+  }
+  const actual = evaluatePublication(item, { ...ctx, evaluated_at: claimed.evaluated_at });
+  if (actual.outcome !== 'PASS') throw new PublicationRefused(`Policy outcome is ${actual.outcome}`, actual);
+  if (canonicalJson(actual) !== canonicalJson(claimed)) throw new PublicationRefused('Supplied decision does not match the policy result for this content', actual);
+  return actual;
+}
+
+export class PublicationRefused extends Error {
+  readonly decision: PublicationDecision;
+  constructor(message: string, decision: PublicationDecision) { super(message); this.name = 'PublicationRefused'; this.decision = decision; }
+}
