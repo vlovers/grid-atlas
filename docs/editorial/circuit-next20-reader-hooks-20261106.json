@@ -1,0 +1,416 @@
+{
+  "date": "2026-11-06",
+  "kind": "research_only_reader_hooks",
+  "source_pr": 395,
+  "source_ref": "abdcdf98a799f26a65c10f978267e4220a1eee83",
+  "source_path": "apps/web/src/components/editorial/circuit-next20-stories.json",
+  "independently_verified": false,
+  "human_approval": false,
+  "publication_allowed": false,
+  "editorial_note": "New short reader-facing hooks derived from existing unapproved EN/UK story drafts; not historical claim verification or release approval. Recheck source passages and translations before use.",
+  "entries": [
+    {
+      "id": "ain-diab",
+      "year": "1958",
+      "source_story_title": {
+        "en": "Moss wins the Moroccan finale",
+        "uk": "Мосс перемагає у фіналі в Марокко"
+      },
+      "hook": {
+        "en": "A race win was not enough for Moss to take the 1958 title; the finale also carried a tragedy beyond the championship table.",
+        "uk": "Перемоги в гонці Моссу не вистачило для титулу 1958 року; фінал також затьмарила трагедія, якої не видно в таблиці чемпіонату."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1958/races/11-morocco/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+        "https://www.grandprix.com/races/morocco-gp-1958.html"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "aintree",
+      "year": "1957",
+      "source_story_title": {
+        "en": "A shared British breakthrough",
+        "uk": "Спільний британський тріумф"
+      },
+      "hook": {
+        "en": "In 1957, a victory at Aintree came from an unusual decision: Moss finished the race in a car that Brooks had started.",
+        "uk": "У 1957 році перемогу в Ейнтрі принесло незвичне рішення: Мосс завершив гонку на машині, на якій стартував Брукс."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/05-great-britain/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/special-article/stirling-moss/32/1957-british-gp/",
+        "https://www.grandprix.com/races/british-gp-1957.html"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "avus",
+      "year": "1959",
+      "source_story_title": {
+        "en": "Berlin's extraordinary championship stop",
+        "uk": "Незвичний етап чемпіонату в Берліні"
+      },
+      "hook": {
+        "en": "The 1959 German Grand Prix moved from the Nürburgring to AVUS, where the circuit itself became part of the story.",
+        "uk": "Гран-прі Німеччини 1959 року переїхав із Нюрбургринга на AVUS, де сама конфігурація траси стала частиною історії."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/06-germany/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/september-1959/47/the-21st-german-grand-prix/",
+        "https://www.formulaonehistory.com/1959-german-grand-prix/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "brands-hatch",
+      "year": "1986",
+      "source_story_title": {
+        "en": "Mansell outpaces Piquet at Brands Hatch",
+        "uk": "Менселл випереджає Піке на Брендс-Гетч"
+      },
+      "hook": {
+        "en": "Mansell's 1986 British Grand Prix appeared to end at the start, but the race took a turn before the field could settle.",
+        "uk": "Гран-прі Великої Британії 1986 року для Менселла, здавалося, завершився на старті, але події швидко змінили перебіг гонки."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/august-1986/61/in-the-garden-of-england/",
+        "https://www.grandprix.com/races/british-gp-1986.html",
+        "https://www.autosport.com/f1/news/grand-prix-gold-british-gp-1986-5091205/5091205/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "dijon",
+      "year": "1979",
+      "source_story_title": {
+        "en": "The duel behind France's breakthrough",
+        "uk": "Дуель позаду історичного тріумфу Франції"
+      },
+      "hook": {
+        "en": "At Dijon in 1979, Renault's breakthrough and a fierce battle behind the leader became two stories from the same afternoon.",
+        "uk": "У Діжоні 1979 року прорив Renault і запекла боротьба позаду лідера стали двома історіями одного дня."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1979/races/08-france/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/august-1979/68/the-grand-prix-of-france/",
+        "https://www.grandprix.com/races/french-gp-1979.html"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "donington",
+      "year": "1993",
+      "source_story_title": {
+        "en": "Senna goes from fifth to first in one lap",
+        "uk": "Сенна: з п’ятого на перше за коло"
+      },
+      "hook": {
+        "en": "Senna's opening lap in the rain at Donington turned a difficult starting position into the defining image of the 1993 race.",
+        "uk": "Перший дощовий круг Сенни в Донінгтоні перетворив складну стартову позицію на головний образ гонки 1993 року."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1993/races/03-europe/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/from-senna-to-verstappen-f1s-greatest-wet-weather-drives/",
+        "https://www.racefans.net/2013/04/11/1993-european-grand-prix-donington-park-sennas-great-race/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "estoril",
+      "year": "1985",
+      "source_story_title": {
+        "en": "Senna wins through the downpour",
+        "uk": "Сенна перемагає крізь зливу"
+      },
+      "hook": {
+        "en": "A soaked Estoril gave Senna a first Formula 1 victory in a race where keeping the car on the road mattered as much as speed.",
+        "uk": "Залитий дощем Ешторіл приніс Сенні першу перемогу у Формулі-1 — у гонці, де втримати машину на трасі було не менш важливо, ніж їхати швидко."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1985/races/02-portugal/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/june-1985/22/portuguese-grand-prix-2/",
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/sennas-first-win/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "fuji",
+      "year": "1976",
+      "source_story_title": {
+        "en": "A championship decided in the rain",
+        "uk": "Титул, вирішений під дощем"
+      },
+      "hook": {
+        "en": "The rain at Fuji in 1976 made the championship finale a question of visibility, judgment and the risks drivers would accept.",
+        "uk": "Дощ у Фудзі 1976 року перетворив фінал чемпіонату на випробування видимості, рішень і ризику, на який погоджувалися пілоти."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1976/races/16-japan/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/december-1976/34/japanese-grand-prix-4/",
+        "https://www.f1-fansite.com/f1-result/results-1976-formula-1-grand-prix-of-japan/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "istanbul",
+      "year": "2006",
+      "source_story_title": {
+        "en": "Massa's first taste of victory",
+        "uk": "Перша перемога Феліпе Масси"
+      },
+      "hook": {
+        "en": "Massa's first victory in Turkey in 2006 unfolded alongside a championship battle that was being fought behind him.",
+        "uk": "Перша перемога Масси в Туреччині 2006 року відбулася на тлі боротьби за чемпіонство, що розгорталася позаду нього."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race-results.yml",
+      "historical_sources": [
+        "https://www.autosport.com/f1/news/massa-wins-as-alonso-beats-schumacher-4404019/4404019/",
+        "https://www.grandprix.com/races/turkish-gp-2006-race-incidents.html",
+        "https://www.autosport.com/general/news/the-complete-2006-turkish-gp-review-5077151/5077151/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "long-beach",
+      "year": "1977",
+      "source_story_title": {
+        "en": "Andretti triumphs on California's streets",
+        "uk": "Андретті тріумфує на вулицях Каліфорнії"
+      },
+      "hook": {
+        "en": "On the streets of Long Beach in 1977, Andretti's pursuit turned a long spell of leadership into a late-race contest.",
+        "uk": "На вулицях Лонг-Біч 1977 року переслідування Андретті перетворило тривале лідерство суперника на боротьбу до кінця."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1977/races/04-united-states-west/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/may-1977/57/the-united-states-grand-prix-west/",
+        "https://elpais.com/diario/1977/04/05/deportes/229039208_850215.html",
+        "https://www.motorsportmagazine.com/archive/article/november-1997/94/my-greatest-race-jody-scheckter/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "marina-bay",
+      "year": "2008",
+      "source_story_title": {
+        "en": "A night race with a complicated legacy",
+        "uk": "Нічна гонка зі складною спадщиною"
+      },
+      "hook": {
+        "en": "Singapore's first night race in 2008 cannot be told only through its result: the circumstances behind the victory matter.",
+        "uk": "Першу нічну гонку Сінгапуру 2008 року не можна пояснити лише протоколом: важливі й обставини, що стояли за перемогою."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2008/races/15-singapore/race-results.yml",
+      "historical_sources": [
+        "https://www.bbc.co.uk/sport/formula1/45459334",
+        "https://www.autosport.com/f1/news/the-full-verdict-from-the-fias-wmsc-4433046/4433046/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "yas-marina",
+      "year": "2010",
+      "source_story_title": {
+        "en": "Vettel's first championship",
+        "uk": "Перший титул Феттеля"
+      },
+      "hook": {
+        "en": "Four title contenders arrived at Abu Dhabi in 2010; the decisive race became a story of what happened both ahead and behind.",
+        "uk": "У фінал Абу-Дабі 2010 року приїхали четверо претендентів на титул; вирішальною стала боротьба і попереду, і позаду."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2010/races/19-abu-dhabi/race-results.yml",
+      "historical_sources": [
+        "https://www.racefans.net/2010/11/14/how-alonso-lost-the-championship-in-abu-dhabi/",
+        "https://www.grandprix.com/races/abu-dhabi-gp-2010-race-report-brilliant-vettel-takes-advantage-of-strategy-blunders.html",
+        "https://www.autosport.com/f1/news/ferrari-alonso-strategy-a-team-decision-4442049/4442049/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "austin",
+      "year": "2012",
+      "source_story_title": {
+        "en": "Hamilton takes the first Austin win",
+        "uk": "Гамільтон перемагає на дебюті Остіна"
+      },
+      "hook": {
+        "en": "Austin's first Formula 1 race in 2012 became a duel between the pole sitter and the driver who would take the first win.",
+        "uk": "Дебютний Гран-прі Формули-1 в Остіні 2012 року став дуеллю між володарем поулу й майбутнім переможцем."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2012/races/19-united-states/race-results.yml",
+      "historical_sources": [
+        "https://www.grandprix.com/races/united-states-gp-2012-race-notes-lewis-hamilton-wins-united-states-gp-in-austin.html",
+        "https://www.racefans.net/2012/11/18/2012-united-states-grand-prix-report/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "baku",
+      "year": "2017",
+      "source_story_title": {
+        "en": "Ricciardo wins an unpredictable street race",
+        "uk": "Ріккардо виграє непередбачувану міську гонку"
+      },
+      "hook": {
+        "en": "Ricciardo's 2017 Baku win began to look unlikely long before the chequered flag; interruptions reshaped the entire race.",
+        "uk": "Перемога Ріккардо в Баку 2017 року довго здавалася малоймовірною: зупинки й інциденти перевернули перебіг гонки."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2017/races/08-azerbaijan/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/50/47-2017-azerbaijan-gp-ricciardo-comes-through-chaos-to-reign-supreme/",
+        "https://api.fia.com/news/f1-ricciardo-wins-incident-packed-azerbaijan-gp-vettel-and-hamilton-miss-out-podium",
+        "https://racer.com/2017/06/25/ricciardo-wins-baku-thriller-as-vettel-hits-hamilton"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "jeddah",
+      "year": "2021",
+      "source_story_title": {
+        "en": "A tense championship fight by the Red Sea",
+        "uk": "Напружена боротьба за титул біля Червоного моря"
+      },
+      "hook": {
+        "en": "The first Saudi Arabian Grand Prix in 2021 brought the championship rivals together amid stoppages and disputed moments.",
+        "uk": "Перший Гран-прі Саудівської Аравії 2021 року звів суперників за титул у гонці із зупинками та суперечливими епізодами."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2021/races/21-saudi-arabia/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/hamilton-emerges-from-chaos-to-win-2021-saudi-arabian-gp-lap-by-lap/",
+        "https://www.autosport.com/f1/news/full-fia-stewards-verdict-on-verstappens-saudi-gp-f1-penalty/6854919/",
+        "https://www.motorsport.com/f1/news/verstappen-saudi-gp-penalty-hamilton/6854872/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "miami",
+      "year": "2022",
+      "source_story_title": {
+        "en": "Verstappen wins beside an NFL stadium",
+        "uk": "Ферстаппен перемагає біля футбольного стадіону"
+      },
+      "hook": {
+        "en": "Miami's debut in 2022 drew attention for its setting, but the first race was decided by the competition on track.",
+        "uk": "Дебют Маямі 2022 року привернув увагу місцем проведення, але результат першої гонки вирішила боротьба на трасі."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2022/races/05-miami/race-results.yml",
+      "historical_sources": [
+        "https://www.bbc.co.uk/sport/formula1/61373963"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "las-vegas",
+      "year": "2023",
+      "source_story_title": {
+        "en": "The Strip becomes a Grand Prix",
+        "uk": "Лас-Вегас-Стріп стає трасою Гран-прі"
+      },
+      "hook": {
+        "en": "The 2023 Las Vegas Grand Prix returned Formula 1 to the city on a route unlike the old Caesars Palace circuit.",
+        "uk": "Гран-прі Лас-Вегаса 2023 року повернув Формулу-1 до міста на маршруті, не схожому на стару трасу Caesars Palace."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2023/races/21-las-vegas/race-results.yml",
+      "historical_sources": [
+        "https://www.theguardian.com/sport/2023/nov/19/formula-one-las-vegas-grand-prix-report-max-verstappen",
+        "https://www.motorsport.com/f1/news/f1-las-vegas-gp-verstappen-survives-penalty-damage-to-take-18th-win-of-2023/10548816/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "adelaide",
+      "year": "1986",
+      "source_story_title": {
+        "en": "The tyre failure that changed the championship",
+        "uk": "Шина, яка змінила долю чемпіонату"
+      },
+      "hook": {
+        "en": "A single tyre failure in Adelaide in 1986 changed the championship story just when Mansell seemed close to the title.",
+        "uk": "Одна несправність шини в Аделаїді 1986 року змінила історію чемпіонату саме тоді, коли Менселл був близький до титулу."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/16-australia/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/1-1986-australian-gp/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "jarama",
+      "year": "1981",
+      "source_story_title": {
+        "en": "Villeneuve holds off four challengers",
+        "uk": "Вільньов стримує чотирьох суперників"
+      },
+      "hook": {
+        "en": "Villeneuve's 1981 Jarama victory was built on holding off a line of challengers rather than disappearing into the distance.",
+        "uk": "Перемога Вільньова в Харамі 1981 року трималася на стримуванні суперників, а не на великому відриві від них."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1981/races/07-spain/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/before-the-spanish-gp-turned-dull-f1s-lost-legend-and-his-thrilling-race-win/",
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/gilles-villeneuves-1981-spanish-caravan-he-won-with-a-dog-of-a-car/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    },
+    {
+      "id": "zolder",
+      "year": "1982",
+      "source_story_title": {
+        "en": "A race in the shadow of tragedy",
+        "uk": "Гонка в тіні трагедії"
+      },
+      "hook": {
+        "en": "The 1982 Belgian Grand Prix at Zolder cannot be separated from the loss of Gilles Villeneuve during qualifying.",
+        "uk": "Історію Гран-прі Бельгії 1982 року в Золдері неможливо відділити від загибелі Жиля Вільньова під час кваліфікації."
+      },
+      "source": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1982/races/05-belgium/race-results.yml",
+      "historical_sources": [
+        "https://www.motorsportmagazine.com/archive/article/june-1982/46/grote-prijs-van-belgie-3/"
+      ],
+      "review_status": "pending_independent_claim_review",
+      "human_approval": false,
+      "publication_allowed": false
+    }
+  ]
+}
