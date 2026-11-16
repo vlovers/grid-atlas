@@ -103,7 +103,7 @@ test('sitemap and robots are root endpoints with complete, unique localized publ
     return [...doc.querySelectorAll('loc')].map(node => node.textContent!);
   }, xml);
   expect(new Set(urls).size).toBe(urls.length);
-  expect(urls.length).toBe(248); // (8 roots + 107 drivers + 2 teams + 2 circuits + 2 seasons + 1 race + 2 entrants) × 2 locales
+  expect(urls.length).toBe(250); // (9 roots, including Time Machine, + 107 drivers + 2 teams + 2 circuits + 2 seasons + 1 race + 2 entrants) × 2 locales
   for (const locale of ['uk', 'en']) {
     for (const route of ['', '/stories', '/drivers/107', '/constructors/2', '/circuits/2', '/seasons/1951', '/races/1', '/entrants/2']) {
       expect(urls).toContain(`${origin}/${locale}${route}`);

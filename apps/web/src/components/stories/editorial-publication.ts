@@ -13,7 +13,7 @@ type ReviewedEdition = {
   reviewedAt: string;
 };
 
-// This registry is intentionally empty until full EN/UK manuscript review and release checks.
+// Each registered edition requires fixed EN/UK manuscript hashes and review metadata.
 export const reviewedEditions: readonly ReviewedEdition[] = [
   {
     "slug": "lauda-hunt-1976",

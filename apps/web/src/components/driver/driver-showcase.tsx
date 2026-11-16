@@ -4,6 +4,7 @@ import { RecordGraphic } from '@/components/editorial/record-graphic';
 import { ArchiveTable } from '@/components/editorial/archive-table';
 import { MediaCollection } from '@/components/media/collection';
 import { PublishedChapters } from '@/components/stories/published-chapters';
+import { EntityStoryLinks } from '@/components/stories/entity-story-links';
 import { releasePilot } from '@/components/stories/release-model';
 import { storyCopy } from '@/components/stories/copy';
 import { openingRecord, seasonStories } from '@/components/stories/story-model';
@@ -62,6 +63,7 @@ export function DriverShowcase({ driver, career, seasons, teams, article, editor
       statistics={[{ label: t.races, value: format(career?.summary.races) }, { label: t.wins, value: format(career?.summary.winning_races) },
         { label: t.podiums, value: format(career?.summary.podium_result_entries) }, { label: t.period, value: format(driver.seasons) }]} scope={t.scope} />
     <SourceAttribution locale={locale} />
+    <EntityStoryLinks kind="driver" externalId={driver.external_id} locale={locale} />
     <EditorialTabs label={t.chapters} items={[[t.biography, 'driver-biography'], [t.career, 'driver-career'], [t.teams, 'driver-teams'], [t.moments, 'driver-moments'], [e.classifications, 'driver-classifications'], [t.statistics, 'driver-archive']].map(([label, id]) => ({ label, id }))} />
 
 
