@@ -194,4 +194,9 @@ test('round 4 M2. every single-winner race statement names exactly its winner (n
   assert.deepEqual(index.entities('Lewis Hamilton won.'), ['lewis-hamilton']);
   assert.deepEqual(index.entities('Nelson Piquet Jr crashed.'), ['nelson-piquet-jr']);
   assert.deepEqual(index.entities('In March 1970 the race in Ireland was won by March.'), ['constructor:march']);
+  // Round 5 LOW: dataset mentions are slug names only, so a legal display name cannot back other drivers.
+  const hamilton = archive.circuits.flatMap(c => c.races).find(r => r.winners.length === 1 && r.winners[0] === 'lewis-hamilton');
+  const mention = index.lookup({ dataset: 'f1db', release: 'v2026.17.0', record: `race:${hamilton.race_id}`, field: 'winner' });
+  assert.deepEqual(mention.mentions, ['Lewis Hamilton']);
+  assert.deepEqual(mention.mentions.flatMap(m => index.entities(m)), ['lewis-hamilton']);
 });

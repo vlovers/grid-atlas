@@ -190,7 +190,9 @@ export class F1dbIndex {
    * surname is not a mention of a specific driver: "Hill" is not evidence for Graham Hill.
    */
   driverMentions(slug: string): string[] {
-    return [...new Set([this.driverName(slug), this.slugName(slug)])];
+    // Only the slug name ("Lewis Hamilton"). F1DB legal display names ("Lewis Carl Davidson Hamilton")
+    // contain other drivers' surnames and would let evidence back entities it never names.
+    return [this.slugName(slug)];
   }
 
   /**
